@@ -5870,66 +5870,59 @@
      "name": "Abnormal Labour",
      "hasNote": true,
      "title": "Abnormal labour and birth",
-     "framing": "<p><strong>Every route in this lecture gets a baby out when labour will not do it alone, and each one has a gate.</strong> The <strong>Bishop score</strong> gates induction, a <strong>fully dilated cervix with an engaged vertex</strong> gates an instrument, a <strong>low segment scar</strong> gates a trial of labour after cesarean, and in a postpartum hemorrhage (PPH) <strong>a firm or an atonic uterus</strong> decides the next step.</p>",
-     "keypoints": "<p>⭐ <strong>Uterine atony is the primary cause of PPH, and the rate is rising</strong> - so a firm uterus sends you looking for trauma instead. <strong>Abnormal FHR is the #1 reason for an operative vaginal delivery and the first sign of a uterine rupture.</strong> ⚠ <strong>Vacuum cannot rotate; forceps can.</strong> A <strong>previous C/S for dystocia</strong> lowers vaginal birth after cesarean success; a <strong>non-recurrent indication (breech)</strong> raises it. ⚠ <strong>Carboprost in asthma, ergonovine in hypertension.</strong></p>",
+     "framing": "<p><strong>The lecture walks the fixes in the order you reach for them when labour stalls:</strong> work out <strong>which of the 4 P's is the problem</strong> → induce or augment → help with an instrument → cesarean section. It ends on the two things that go wrong around birth: <strong>uterine rupture</strong> and <strong>postpartum hemorrhage</strong>.</p>",
+     "keypoints": "<p>⭐ <strong>Uterine atony is the #1 cause of PPH</strong> - so a <strong>firm</strong> uterus sends you looking for <strong>tears</strong> instead. <strong>Abnormal FHR is the #1 reason for forceps or vacuum, and the first sign of uterine rupture.</strong> <strong>Vacuum cannot rotate; forceps can.</strong> A <strong>previous C/S for dystocia</strong> lowers the odds of a VBAC; one for <strong>breech</strong> raises them. <strong>Bishop under 6 → ripen before you induce.</strong> <strong>Carboprost: not in asthma. Ergonovine: not in hypertension.</strong></p>",
      "blocks": [
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Bleeding after birth<br/>>500 mL spontaneous vaginal delivery · >1000 mL cesarean section (C/S)<br/>or ANY loss with cardiovascular instability\"] --> B[\"Maternal airway, breathing, circulation · resuscitate · GET HELP\"]\n    B --> C[\"Bimanual exam + fundal massage<br/>empty the bladder (consider indwelling Foley)\"]\n    C --> D{\"Is the uterus firm?\"}\n    D -->|\"Firm\"| E[\"Inspect for vaginal / cervical trauma\"]\n    D -->|\"Atonic\"| F[\"Uterotonic agents\"]\n    E --> G[\"Tranexamic acid\"]\n    F --> G\n    G --> H{\"Still bleeding?\"}\n    H -->|Yes| I[\"Consider disseminated intravascular coagulation (DIC) · tamponade (packing, Bakri balloon)<br/>embolization · compression sutures · artery ligation · hysterectomy<br/>GET MORE HELP\"]"
+       "t": "note",
+       "html": "<h5>1. Labour dystocia and the 4 P's</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Labour dystocia</strong> = <mark class=\"lo\"><strong>abnormally slow progress</strong> through labour</mark><ul><li><mark class=\"lo\">slow cervical dilatation = <strong>failure to progress</strong> · slow descent = <strong>failure to descend</strong></mark></li><li>the <strong>most common reason cited for a cesarean section (C/S)</strong></li><li>not the same as <strong>shoulder dystocia</strong>, which is an emergency (shoulder stuck behind the pubic bone)</li></ul></li><li>When labour is slow, go through the <mark class=\"lo\">4 P's</mark> and fix the ones you can:</li></ul>"
       },
       {
        "t": "table",
-       "lead": "<p><strong>Workup skeleton (PPH)</strong></p><p>- <strong>History</strong> - risk factors sorted by the 4 T's <strong>before delivery</strong>: <strong>60% of PPH have an identifiable risk factor</strong> · anemia in pregnancy, treated early</p><p>- <strong>Physical exam</strong> - stage by vitals: <strong>Stage 2 = postural hypotension (systolic blood pressure 80-100), heart rate (HR) >110</strong> · <strong>Stage 3 = systolic blood pressure <80, HR >120</strong> · <strong>uterine tone on bimanual</strong></p><p>- <strong>Investigations</strong> - ⚠ blood loss should ideally be <strong>measured</strong> (by weight the rate is closer to 10%) · consider DIC if bleeding persists</p><p>- <strong>Treatment / Management</strong> - <strong>prophylactic uterotonic in the 3rd stage</strong> (oxytocin 3 international units (IU) intravenous (IV) or 10 IU intramuscular (IM) · carbetocin 100 µg), then the tree above</p><p>- <strong>Follow-up</strong> - <mark class=\"lo\">iron deficiency anemia · ⚠ <strong>Sheehan's syndrome</strong> (pituitary infarction, poor lactation)</mark></p>",
        "cols": [
-        "",
-        "Dystocia → augmentation",
-        "Induction",
-        "Operative vaginal delivery",
-        "Cesarean section",
-        "Trial of labour after cesarean"
+        "P",
+        "What it is",
+        "<mark class=\"lo\">Can you change it?</mark>",
+        "How"
        ],
        "rows": [
         [
-         "<strong>What it is</strong>",
-         "<mark class=\"lo\"><strong>Abnormally slow progress</strong>: failure to progress (dilatation) or failure to descend</mark> · not <span class=\"wl\">shoulder dystocia</span>, which is an emergency",
-         "<mark class=\"lo\">Cervical ripening, then artificial rupture of membranes (ARM) with or without IV <span class=\"wl\">oxytocin</span></mark>",
-         "<mark class=\"lo\">Forceps or vacuum to <strong>expedite the 2nd stage</strong></mark>",
-         "<strong>Pfannenstiel (low transverse)</strong> is standard · midline for a crash, scar, obesity, bleeding disorder",
-         "Labour after a C/S; success = vaginal birth after cesarean, <strong>60-80%</strong>"
+         "<strong>Power</strong>",
+         "Contractions + pushing",
+         "<mark class=\"lo\"><strong>Yes</strong></mark>",
+         "Weak contractions: <mark class=\"lo\">artificial rupture of membranes (ARM), then IV oxytocin</mark> · weak pushing: oxytocin, coaching, pain relief"
         ],
         [
-         "<strong>Indications</strong>",
-         "Fix the modifiable P: <mark class=\"lo\"><strong>power</strong> (ARM, oxytocin, coaching, analgesia) · passenger (external cephalic version, rotate to occiput anterior) · psyche (continuous support) · <strong>passage cannot be altered</strong></mark>",
-         "<mark class=\"lo\">Any ↑ maternal or fetal risk: post dates · preeclampsia · diabetes mellitus · prelabour rupture of membranes · fetal growth restriction · twins · fetal demise</mark> · low risk at <strong>39 weeks (ARRIVE)</strong>",
-         "<mark class=\"lo\"><strong>Atypical / abnormal fetal heart rate (FHR) (#1)</strong> · occiput transverse / occiput posterior · must avoid Valsalva · exhaustion · prolonged 2nd stage</mark>",
-         "<mark class=\"lo\"><strong>Dystocia · abnormal FHR · previous C/S · malpresentation = 70%</strong></mark>",
-         "<mark class=\"lo\"><strong>1-2 prior low segment C/S</strong> · <strong>>18 months</strong> since · patient consents</mark>"
+         "<strong>Passage</strong>",
+         "The bony pelvis",
+         "<mark class=\"lo\"><strong>No</strong></mark>",
+         "Cannot be changed without breaking bone · symphysiotomy only in theory (last resort in severe shoulder dystocia)"
         ],
         [
-         "<strong>Gate</strong>",
-         "<mark class=\"lo\">Titrate oxytocin to contractions + cervical change</mark> · cannot track them → <strong>intrauterine pressure catheter</strong>",
-         "<mark class=\"lo\"><strong>Bishop <6 = unfavourable → ripen first</strong> (prostaglandin or Foley)</mark> · ~2 cm to allow ARM",
-         "Full dilation · engaged vertex · ruptured membranes · no cephalopelvic disproportion (CPD)",
-         "/",
-         "<strong>Urgent laparotomy within 30 min</strong> · operating room + anesthesia available"
+         "<strong>Passenger</strong>",
+         "Fetal presentation, position, size",
+         "<mark class=\"lo\"><strong>Presentation and position yes, size no</strong></mark>",
+         "Breech → external cephalic version (ECV), before labour · rotate (by hand or forceps) to occiput anterior · too big to fit → C/S for <strong>cephalopelvic disproportion (CPD)</strong>"
         ],
         [
-         "<strong>Contraindications</strong>",
-         "/",
-         "Previa, vasa previa, cord presentation · transverse lie · <strong>prior classical C/S</strong> · active herpes · invasive cervical cancer",
-         "<strong>Unengaged head</strong> · incomplete dilation · non-vertex, face, brow · CPD · fetal coagulopathy / demineralization · relative: <strong>>45° rotation (vacuum only)</strong>",
-         "/",
-         "<mark class=\"lo\"><strong>Classical or inverted T scar</strong> · hysterotomy / myomectomy entering the cavity · previous rupture</mark>"
-        ],
-        [
-         "<strong>Risks</strong>",
-         "Will not fit → C/S for <strong>CPD</strong>",
-         "Oxytocin → <strong>continuous fetal monitoring</strong>",
-         "Vacuum: <strong>cephalohematoma, subgaleal hemorrhage</strong> · forceps: <strong>more maternal lacerations, facial nerve palsy</strong>",
-         "<mark class=\"lo\">Endometritis 4-5% (35-40% without antibiotics) · <strong>venous thromboembolism 4x</strong> · previa 2-3x · <strong>accreta 5x</strong></mark>",
-         "<mark class=\"lo\"><strong>Scar separation 0.5%</strong> · <strong>true rupture 0.1%</strong>, first sign <strong>abnormal FHR</strong></mark>"
+         "<strong>Psyche</strong>",
+         "Support + emotional wellbeing",
+         "<mark class=\"lo\"><strong>Yes</strong></mark>",
+         "<mark class=\"lo\"><strong>Continuous support</strong> improves maternal and fetal outcomes</mark> · pain control as the patient wishes (not an epidural for everyone)"
         ]
        ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Induction of labour</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Indications</strong> - <mark class=\"lo\">any condition that raises the risk to mother or fetus</mark><ul><li>post dates · preeclampsia · diabetes · maternal disease (cardiac, renal, respiratory) · prelabour rupture of membranes · fetal growth restriction · placental abruption or insufficiency · twins · oligohydramnios · cholestasis of pregnancy · fetal anemia from alloimmunization · fetal demise</li><li>low risk at <strong>39 weeks</strong> (ARRIVE trial): fewer cesareans, less preeclampsia, fewer stillbirths</li></ul></li><li><strong>Contraindications</strong> (anything that rules out labour): placenta previa, vasa previa, cord presentation · transverse lie · <strong>prior classical C/S</strong> or major uterine surgery · active genital herpes · invasive cervical cancer</li><li><mark class=\"lo\"><strong>Pre-induction assessment</strong></mark><ul><li><mark class=\"lo\">confirm the due date · fetal position · estimated fetal weight · cervical exam · consent</mark></li><li>cervix scored by the <mark class=\"lo\"><strong>Bishop score</strong></mark>: <mark class=\"lo\"><strong>under 6 = unfavourable → ripen it first</strong></mark> · over 6 = favourable (shorter induction, more vaginal births)</li><li>also raise success: multiparity · ruptured membranes · lower BMI · taller height · smaller baby · no preeclampsia</li></ul></li><li><strong>Method, in two steps</strong><ul><li>① <mark class=\"lo\"><strong>Cervical ripening</strong></mark> to about 2 cm: <mark class=\"lo\"><strong>chemical</strong> = prostaglandins (Cervidil, Prostin gel, misoprostol) · <strong>mechanical</strong> = Foley catheter balloon</mark></li><li>② <strong>ARM</strong>, which may start labour on its own · if not, <strong>IV oxytocin</strong></li></ul></li></ul>"
       },
       {
        "t": "figure",
@@ -5937,132 +5930,52 @@
        "alt": "Bishop score.png",
        "w": 900,
        "h": 295,
-       "cap": "Bishop score: cervical dilation, effacement, consistency, position and fetal station each scored 0 to 3; a total under 6 is an unfavourable cervix that needs ripening before induction"
+       "cap": "Bishop score: dilation, effacement, consistency, position and station each scored; under 6 needs ripening"
       },
       {
-       "t": "figure",
-       "src": "assets/figures/48791b8b1abf.jpg",
-       "alt": "cesarean uterine incisions including T-extension and classical - lecture slide.png",
-       "w": 900,
-       "h": 649,
-       "cap": "Cesarean uterine incisions - low transverse is the standard, while a T-extension or a classical midline vertical scar rules out a trial of labour"
+       "t": "note",
+       "html": "<h5>3. Augmentation with oxytocin</h5>"
       },
       {
-       "t": "figure",
-       "src": "assets/figures/efa74e162d00.jpg",
-       "alt": "transcervical foley balloon for cervical ripening - lecture slide.png",
-       "w": 900,
-       "h": 830,
-       "cap": "Foley catheter balloon inflated inside the cervix for mechanical cervical ripening"
+       "t": "list",
+       "html": "<ul><li><strong>Indication</strong>: labour has started but is not progressing (dystocia)</li><li><mark class=\"lo\">ARM, then an <strong>oxytocin infusion titrated to a good contraction pattern and cervical change</strong></mark><ul><li>oxytocin can <mark class=\"lo\">start contractions, strengthen weak ones, and boost pushing</mark></li><li>contractions hard to measure → <strong>intrauterine pressure catheter</strong></li><li>on oxytocin → <strong>continuous fetal heart monitoring</strong>, with time between contractions for the fetus to recover</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Operative vaginal delivery</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><mark class=\"lo\"><strong>Forceps or vacuum</strong> to speed up the <strong>2nd stage</strong> (pushing)</mark></li><li><mark class=\"lo\"><strong>Indications</strong></mark><ul><li>fetal: <mark class=\"lo\"><strong>atypical or abnormal fetal heart rate (FHR) - the #1 reason</strong></mark> · head turned the wrong way (occiput transverse or posterior)</li><li>maternal: <mark class=\"lo\">must avoid straining (cerebrovascular or cardiac disease) · exhaustion or ineffective pushing</mark></li><li>labour: <mark class=\"lo\">prolonged 2nd stage</mark></li></ul></li><li><strong>Contraindications</strong><ul><li>absolute: <strong>unengaged head</strong> · <strong>cervix not fully dilated</strong> · not head-first (or face, brow) · CPD · fetal bleeding or bone disorder · any reason not to deliver vaginally</li><li>relative: poor head flexion · <strong>rotation over 45° (vacuum only)</strong> · head still mid-pelvis · prematurity</li></ul></li></ul>"
       },
       {
        "t": "table",
        "cols": [
-        "Instrument",
-        "Does",
-        "Stop if"
+        "",
+        "Vacuum",
+        "Forceps"
        ],
        "rows": [
         [
-         "<strong>Vacuum</strong>",
-         "Traction only - <strong>not for rotation</strong>, can correct deflexion",
-         "<strong>3 contractions · 3 pop-offs</strong> · >20 min and delivery not imminent"
+         "<strong>Can do</strong>",
+         "Traction only - <strong>cannot rotate</strong>",
+         "<strong>Traction, rotation, flexion, extension</strong>"
         ],
         [
-         "<strong>Forceps</strong>",
-         "<strong>Traction, rotation, flexion, extension</strong>",
-         "Cannot apply correctly · no descent with traction · 20 min and not imminent"
+         "<strong>Stop if</strong>",
+         "<strong>3 contractions · 3 pop-offs</strong> · 20 min without progress",
+         "Cannot apply them properly · no descent with traction · 20 min"
+        ],
+        [
+         "<strong>Typical harm</strong>",
+         "Baby's scalp: <strong>cephalohematoma, subgaleal hemorrhage</strong>, jaundice",
+         "Mother: <strong>more tears</strong> · baby: <strong>facial nerve palsy</strong>, eye injury"
         ]
        ]
       },
       {
-       "t": "table",
-       "cols": [
-        "4 T's",
-        "What bleeds",
-        "Risk factors that point to it"
-       ],
-       "rows": [
-        [
-         "<mark class=\"lo\"><strong>Tone</strong></mark>",
-         "<mark class=\"lo\"><strong><span class=\"wl\">Atony</span>, the primary cause</strong></mark>",
-         "Overdistention (polyhydramnios, multiples, macrosomia) · muscle exhaustion (prolonged labour, high parity, prolonged oxytocin, general anesthesia) · chorioamnionitis · fibroids, previa"
-        ],
-        [
-         "<mark class=\"lo\"><strong>Tissue</strong></mark>",
-         "Retained products",
-         "Membranes · succenturiate lobe · morbidly adherent placenta · clots"
-        ],
-        [
-         "<mark class=\"lo\"><strong>Trauma</strong></mark>",
-         "Lacerations, hematoma, rupture, inversion",
-         "Precipitous or operative delivery · previous uterine surgery · <strong>inversion: excessive cord traction</strong>"
-        ],
-        [
-         "<mark class=\"lo\"><strong>Thrombin</strong></mark>",
-         "Coagulopathy",
-         "von Willebrand disease, hemophilia A · DIC · HELLP (hemolysis, elevated liver enzymes, low platelets) · abruption · amniotic fluid embolism · therapeutic anticoagulation"
-        ]
-       ]
-      },
-      {
-       "t": "table",
-       "cols": [
-        "Drug",
-        "Role",
-        "Dose",
-        "Watch for"
-       ],
-       "rows": [
-        [
-         "<strong>Oxytocin</strong>",
-         "<mark class=\"lo\">Prophylaxis <strong>and</strong> 1st-line treatment</mark>",
-         "3 IU IV rapid · 10 IU IM · 20-40 IU/L infusion",
-         ">3 IU IV: ST depression, ↑ HR, ↓ blood pressure · water retention"
-        ],
-        [
-         "<strong>Carbetocin</strong>",
-         "Prophylaxis",
-         "100 µg slow IV or IM",
-         "Side effects like 5 IU oxytocin"
-        ],
-        [
-         "<strong>Ergonovine</strong>",
-         "2nd line",
-         "250 µg IM",
-         "<strong>Hypertension</strong> · HIV drugs, macrolides"
-        ],
-        [
-         "<strong>Carboprost (prostaglandin F2α)</strong>",
-         "2nd line",
-         "250 µg IM or intramyometrial, every 15 min, max 5",
-         "<strong>Bronchospasm in asthma</strong> · diarrhea"
-        ],
-        [
-         "<strong><span class=\"wl\">Misoprostol</span></strong>",
-         "Adjunct",
-         "200-400 µg sublingual or by mouth",
-         "Fever, shivering"
-        ],
-        [
-         "<strong><span class=\"wl\">Tranexamic acid</span></strong>",
-         "<mark class=\"lo\">Adjunct, <strong>all active PPH</strong></mark>",
-         "1 g IV over 30-60 s",
-         "Antifibrinolytic · no venous thromboembolism seen in trials"
-        ]
-       ]
-      },
-      {
-       "t": "note",
-       "html": "<p><strong>PPH:</strong> <mark class=\"lo\">>500 mL spontaneous vaginal delivery · >1000 mL C/S · or any loss with cardiovascular instability · <strong>early <24 hours</strong></mark>, late 24 hours-12 weeks · Canada 5.6 per 100 deliveries · a top 5 cause of maternal death.</p>"
-      },
-      {
-       "t": "note",
-       "html": "<p><strong>Uterine rupture presents as:</strong> <strong>abnormal FHR (first sign)</strong> · cessation of contractions · <strong>loss of presenting part</strong> · abdominal pain · vaginal bleeding · hematuria · maternal instability · fetal parts palpable.</p>"
-      },
-      {
-       "t": "note",
-       "html": "<p><strong>Newborn scalp:</strong> <strong>subgaleal hemorrhage spreads</strong> · <strong>cephalohematoma is cut off</strong> · caput succedaneum is a poorly defined serosanguinous subcutaneous collection.</p>"
+       "t": "list",
+       "html": "<ul><li>Newborn scalp collections: <strong>subgaleal hemorrhage spreads</strong> (dangerous) · <strong>cephalohematoma is cut off</strong> at the suture lines · caput succedaneum = swelling with a poorly defined edge</li></ul>"
       },
       {
        "t": "figure",
@@ -6070,13 +5983,149 @@
        "alt": "newborn scalp layers - caput cephalohematoma subgaleal hemorrhage - lecture slide.png",
        "w": 900,
        "h": 680,
-       "cap": "Newborn scalp layers - caput above the galea, cephalohematoma under the periosteum, subgaleal hemorrhage spreading beneath the galea"
+       "cap": "Newborn scalp layers: caput above the galea, cephalohematoma under the periosteum, subgaleal hemorrhage under the galea"
       },
       {
-       "t": "callout",
-       "kind": "tip",
-       "title": "Schulich Reviews",
-       "html": "<ul><li><strong>Labour dystocia is the most common reason cited for C/S</strong></li><li>Cord prolapse: <strong>overt</strong> = loops palpable/visible · <strong>occult</strong> = beside the presenting part · <strong>cord presentation</strong> = below the presenting part, before rupture of membranes · lowest in vertex, highest in transverse</li></ul>"
+       "t": "note",
+       "html": "<h5>5. Cesarean section</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><mark class=\"lo\"><strong>Indications</strong></mark><ul><li><mark class=\"lo\">the big four, <strong>70% of all C/S</strong>: <strong>dystocia · abnormal FHR · previous C/S · malpresentation</strong> (breech or transverse)</mark></li><li>others: abnormal placenta (previa, vasa previa, accreta) · blockage (fibroid, mass) · maternal infection (herpes, HIV) · twins or more · cervical cancer · fetal anomalies</li><li>breech is more likely with: uterine anomalies · pelvic tumours · previa · hydrocephalus or anencephaly · oligohydramnios · a lax uterus (many births, polyhydramnios, multiples) · previous breech</li><li><strong>cord prolapse</strong>: overt (cord seen or felt) · occult (beside the head) · cord presentation (below the head, before the waters break) · most likely in transverse lie, least in head-first</li></ul></li><li><strong>Incisions</strong><ul><li>skin: <strong>Pfannenstiel (low transverse)</strong> is standard · vertical midline for a crash section, obesity, an old scar, a bleeding disorder</li><li>uterus: <strong>low transverse</strong> is standard and <strong>allows a later trial of labour</strong> · a classical (vertical) or T-shaped scar does not</li></ul></li><li><mark class=\"lo\"><strong>Complications</strong></mark><ul><li><mark class=\"lo\">infection: endometritis 4-5% (<strong>35-40% without antibiotics</strong>) · wound infection</mark></li><li><mark class=\"lo\">bleeding: average loss 800-1000 mL · 1-2% need a transfusion</mark></li><li><mark class=\"lo\"><strong>blood clots (venous thromboembolism) 4× a vaginal birth</strong> · bladder injury ~1% · death 0.53 vs 0.04 per 1000</mark></li><li><mark class=\"lo\">next pregnancy: <strong>placenta previa 2-3×, placenta accreta 5×</strong></mark></li><li>injury to bowel, ureters, nerves · more pain, longer recovery · anesthetic risks</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/48791b8b1abf.jpg",
+       "alt": "cesarean uterine incisions including T-extension and classical - lecture slide.png",
+       "w": 900,
+       "h": 649,
+       "cap": "Uterine incisions: low transverse is standard; a T-extension or classical scar rules out a trial of labour"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Trial of labour after cesarean (TOLAC)</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>A trial of labour that succeeds = a <strong>vaginal birth after cesarean (VBAC)</strong>, <strong>60-80%</strong> of the time</li><li><mark class=\"lo\"><strong>Who can try</strong>: <strong>1-2 prior low transverse C/S</strong> · <strong>over 18 months</strong> since · <strong>emergency laparotomy available within 30 min</strong> · no contraindication to labour · the patient agrees</mark></li><li><mark class=\"lo\"><strong>Who cannot</strong>: <strong>classical or inverted-T scar</strong> · previous surgery entering the uterine cavity (hysterotomy, myomectomy) · <strong>previous uterine rupture</strong> · a contraindication to labour · the patient prefers a repeat C/S</mark></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "More likely to succeed",
+        "Less likely to succeed"
+       ],
+       "rows": [
+        [
+         "Previous vaginal birth or VBAC · favourable cervix · labour starts on its own · <strong>last C/S for a one-off reason (breech)</strong> · age under 40",
+         "<strong>Last C/S for dystocia</strong> · needs induction or augmentation · past 40 weeks · baby over 4000 g · BMI over 30 · hypertension"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><mark class=\"lo\"><strong>Benefits of a VBAC</strong>: shorter stay · fewer blood clots · less pain · less blood loss · fewer newborn breathing problems · lower risk of previa and accreta next time · fewer infections and hysterectomies</mark></li><li><mark class=\"lo\"><strong>Risks of TOLAC</strong>: <strong>scar separation 0.5%</strong> · <strong>true uterine rupture 0.1%</strong></mark></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Uterine rupture</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Mostly a scarred uterus</strong> in a TOLAC · rare without a scar (trauma, prolonged labour, oxytocin)</li><li>Risk factors: many previous births · uterine anomaly · older mother · dystocia · big baby · multiples · short gap between pregnancies</li><li><strong>Presents as</strong>: <strong>abnormal FHR (the first sign)</strong> · contractions stop · <strong>the presenting part is lost on exam</strong> · abdominal pain · vaginal bleeding · blood in urine · mother unstable · fetal parts felt through the abdomen</li><li>Outcome: fetal death or brain injury · maternal transfusion, hysterectomy, organ injury, death</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>8. Postpartum hemorrhage (PPH)</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><mark class=\"lo\"><strong>Definition</strong>: <strong>over 500 mL after a vaginal birth</strong> · <strong>over 1000 mL after a C/S</strong> · or any loss making the mother unstable</mark><ul><li><mark class=\"lo\"><strong>early = within 24 hours</strong> · late = 24 hours to 12 weeks</mark></li><li>5.6 per 100 deliveries in Canada · a top-5 cause of maternal death · <strong>60% have a risk factor you can spot before delivery</strong></li><li>severity: <strong>stage 2</strong> = systolic 80-100, heart rate over 110 · <strong>stage 3</strong> = systolic under 80, heart rate over 120</li></ul></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "<mark class=\"lo\">The 4 T's</mark>",
+        "What bleeds",
+        "Risk factors"
+       ],
+       "rows": [
+        [
+         "<mark class=\"lo\"><strong>Tone</strong></mark>",
+         "<mark class=\"lo\"><strong>Uterine atony - the #1 cause</strong></mark>",
+         "Overstretched (polyhydramnios, multiples, big baby) · tired muscle (long labour, many births, long oxytocin use, general anesthetic) · infection · fibroids, previa"
+        ],
+        [
+         "<mark class=\"lo\"><strong>Tissue</strong></mark>",
+         "Retained placenta or membranes",
+         "Extra placental lobe · placenta stuck to the wall · clots"
+        ],
+        [
+         "<mark class=\"lo\"><strong>Trauma</strong></mark>",
+         "Tears, hematoma, rupture, inversion",
+         "Fast or instrumental delivery · previous uterine surgery · <strong>inversion from pulling too hard on the cord</strong>"
+        ],
+        [
+         "<mark class=\"lo\"><strong>Thrombin</strong></mark>",
+         "Clotting failure",
+         "von Willebrand disease, hemophilia A · disseminated intravascular coagulation (DIC) · HELLP syndrome · abruption · amniotic fluid embolism · blood thinners"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><mark class=\"lo\"><strong>Complications</strong>: maternal death · iron deficiency anemia · <strong>Sheehan's syndrome</strong> (pituitary infarction → poor milk supply) · transfusion · clotting failure · organ damage from shock</mark></li><li><strong>Prevention</strong>: treat anemia in pregnancy · spot risk factors before delivery · <mark class=\"lo\">give a <strong>uterotonic in the 3rd stage</strong> (oxytocin or carbetocin)</mark> · act fast</li><li><mark class=\"lo\"><strong>Management</strong></mark> (\"ORDER\": oxygenate, restore volume, drugs, evaluate, remedy the cause):</li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Bleeding after birth<br/>>500 mL vaginal · >1000 mL cesarean<br/>or ANY loss with instability\"] --> B[\"Airway, breathing, circulation · resuscitate · GET HELP\"]\n    B --> C[\"Bimanual exam + fundal massage<br/>empty the bladder\"]\n    C --> D{\"Is the uterus firm?\"}\n    D -->|\"Firm\"| E[\"Look for vaginal / cervical tears\"]\n    D -->|\"Soft (atonic)\"| F[\"Uterotonic drugs\"]\n    E --> G[\"Tranexamic acid\"]\n    F --> G\n    G --> H{\"Still bleeding?\"}\n    H -->|Yes| I[\"Think DIC · balloon tamponade or packing<br/>embolization · compression sutures · artery ligation · hysterectomy<br/>GET MORE HELP\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "<mark class=\"lo\">Drug</mark>",
+        "Role",
+        "Dose",
+        "Watch for"
+       ],
+       "rows": [
+        [
+         "<strong>Oxytocin</strong>",
+         "<mark class=\"lo\">Prevention <strong>and</strong> first-line treatment</mark>",
+         "3 units IV fast · 10 units IM · 20-40 units/L infusion",
+         "Over 3 units IV: ST depression, fast heart, low blood pressure · water retention"
+        ],
+        [
+         "<strong>Carbetocin</strong>",
+         "Prevention",
+         "100 µg slow IV or IM",
+         "Like 5 units of oxytocin"
+        ],
+        [
+         "<strong>Ergonovine</strong>",
+         "Second line",
+         "250 µg IM",
+         "<mark class=\"lo\"><strong>Avoid in hypertension</strong></mark> · HIV drugs, macrolides"
+        ],
+        [
+         "<strong>Carboprost</strong> (prostaglandin F2α)",
+         "Second line",
+         "250 µg IM or into the uterus, every 15 min, max 5",
+         "<mark class=\"lo\"><strong>Avoid in asthma</strong> (bronchospasm)</mark> · diarrhea"
+        ],
+        [
+         "<strong>Misoprostol</strong>",
+         "Add-on",
+         "200-400 µg under the tongue or by mouth",
+         "Fever, shivering"
+        ],
+        [
+         "<strong>Tranexamic acid</strong>",
+         "<mark class=\"lo\">Add-on in <strong>every active PPH</strong></mark>",
+         "1 g IV",
+         "Stops clot breakdown · no extra clots seen in trials"
+        ]
+       ]
       }
      ]
     },

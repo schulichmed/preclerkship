@@ -29,6 +29,10 @@ IMG_EXT = u"png|jpe?g|gif|webp"
 FIG_LINE = re.compile(
     r"^\s*!\[\[\s*([^\]\|]+?\.(?:%s))\s*(?:\|\s*([^\]]*?)\s*)?\]\]\s*$" % IMG_EXT, re.I)
 
+# A section heading inside the chart. The outline notes walk a lecture in its
+# own order, one concept per section; "# Overview chart:" is the title, not one.
+HEAD_LINE = re.compile(r"^#{2,4}\s+\S")
+
 # written by tools/figures.py, which owns Pillow so the rebuild scripts do not
 FIGURES_PATH = "pom2/data/figures.json"
 FIGURES = {}
@@ -96,13 +100,38 @@ def para(lines):
 
 
 def bullets(lines):
-    items = []
+    """A markdown list, nested by indent: the outline notes hang the
+    indications, contraindications and complications of a procedure under it."""
+    items = []                       # (depth, html)
+    indents = []
     for l in lines:
-        t = l.strip()
-        t = re.sub(r"^[-*]\s+", "", t)
-        if t:
-            items.append(u"<li>%s</li>" % inline(t))
-    return u"<ul>%s</ul>" % u"".join(items)
+        if not l.strip():
+            continue
+        m = re.match(r"^(\s*)[-*]\s+(.*)$", l.expandtabs(4))
+        if not m:
+            continue
+        width = len(m.group(1))
+        while indents and width < indents[-1]:
+            indents.pop()
+        if not indents or width > indents[-1]:
+            indents.append(width)
+        items.append((len(indents) - 1, inline(m.group(2))))
+
+    out, depth = [u"<ul>"], 0
+    for i, (d, h) in enumerate(items):
+        d = min(d, depth + 1)        # an item cannot open two levels at once
+        if i and d > depth:
+            out[-1] = out[-1][:-len(u"</li>")] + u"<ul>"
+        while depth > d:
+            out.append(u"</ul></li>")
+            depth -= 1
+        depth = d
+        out.append(u"<li>%s</li>" % h)
+    while depth > 0:
+        out.append(u"</ul></li>")
+        depth -= 1
+    out.append(u"</ul>")
+    return u"".join(out)
 
 
 # ---------- block scanner ----------
@@ -137,6 +166,10 @@ def scan(region):
             out.append(("figure", [ln]))
             i += 1
             continue
+        if HEAD_LINE.match(ln):
+            out.append(("heading", [ln]))
+            i += 1
+            continue
         if not ln.strip():
             i += 1
             continue
@@ -145,8 +178,8 @@ def scan(region):
             t = lines[j]
             if not t.strip() or t.lstrip()[:1] in ("|", ">") or t.strip().startswith("```"):
                 break
-            if FIG_LINE.match(t) and j > i:
-                break                     # a figure ends the paragraph above it
+            if (FIG_LINE.match(t) or HEAD_LINE.match(t)) and j > i:
+                break                     # a figure or heading ends the paragraph above it
             j += 1
         out.append(("text", lines[i:j]))
         i = j
@@ -285,6 +318,12 @@ def chart_of(path):
             continue
 
         flush(); pending = None
+        if kind == "heading":
+            # written as PoM 1's notes write a section: an <h5>, which the
+            # page already styles and coverage.py already reads as a heading
+            text = re.sub(r"^#+\s*", "", lines[0].strip())
+            body.append({"t": "note", "html": u"<h5>%s</h5>" % inline(text)})
+            continue
         if kind == "figure":
             fig = parse_figure(lines[0])
             if fig:
