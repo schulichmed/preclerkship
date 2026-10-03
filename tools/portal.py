@@ -325,7 +325,11 @@ PRESENCE_SCRIPT = """<script>
   var URL_=%s,MINUTE=60000,timer=null,visitor=null;
   function rid(){return Math.random().toString(36).slice(2,12)+Date.now().toString(36);}
   try{visitor=localStorage.getItem("pc-visitor");if(!/^[a-z0-9]{8,40}$/.test(visitor||"")){visitor=rid();localStorage.setItem("pc-visitor",visitor);}}catch(e){visitor=rid();}
-  var tab=rid();
+  // one id per browser tab, kept in sessionStorage so a refresh or a click to
+  // another portal page is the same reader rather than a new one; the leaving
+  // beacon below cannot be relied on to clear the old id, since blockers drop it
+  var tab=null;
+  try{tab=sessionStorage.getItem("pc-tab");if(!/^[a-z0-9]{8,40}$/.test(tab||"")){tab=rid();sessionStorage.setItem("pc-tab",tab);}}catch(e){tab=rid();}
   function body(leaving){return JSON.stringify({site:"preclerkship",visitor:visitor,tab:tab,leaving:leaving});}
   function show(d){
     var el=document.getElementById("presence");
