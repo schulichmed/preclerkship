@@ -188,6 +188,14 @@
        "mermaid": "flowchart TD\n A[\"Child with polyuria, polydipsia, weight loss\"] --> B[\"Random plasma glucose<br/>+ urine dipstick for glucose/ketones\"]\n B --> C{\"Glucose ≥ 11.1 mmol/L?\"}\n C -->|No| D[\"Consider other causes<br/>Repeat testing if suspicion persists\"]\n C -->|Yes| E{\"Symptoms present?\"}\n E -->|\"YES — usual case\"| F[\"DIAGNOSIS MADE<br/>1 abnormal measurement is enough\"]\n E -->|No| G[\"Requires 2 abnormal measurements\"]\n F --> H{\"Vomiting, abdominal pain,<br/>hyperventilation, drowsiness?\"}\n G --> H\n H -->|Yes| I[\"Suspect diabetic ketoacidosis (DKA)<br/>arterial blood gas + serum/urine ketones<br/>→ emergent treatment\"]\n H -->|No| J[\"Medically stable:<br/>multidisciplinary education + insulin\"]"
       },
       {
+       "t": "figure",
+       "src": "assets/figures/df29ef5a396c.jpg",
+       "alt": "type 1 diabetes - lack of insulin pathway to symptoms and ketoacidosis.png",
+       "w": 900,
+       "h": 630,
+       "cap": "Lack of insulin: high glucose causes thirst and frequent urination, fat and protein breakdown cause weight loss, and ketone build-up causes acidosis, fast breathing and nausea"
+      },
+      {
        "t": "note",
        "html": "<p><strong>Workup skeleton</strong></p>"
       },
@@ -252,6 +260,14 @@
        ]
       },
       {
+       "t": "figure",
+       "src": "assets/figures/a392467bd1f1.jpg",
+       "alt": "basal-bolus insulin concept - mimicking the normal pancreas.png",
+       "w": 900,
+       "h": 497,
+       "cap": "Basal-bolus insulin copies the normal pancreas: a mealtime bolus at breakfast, lunch and supper, plus a steady basal dose given at bedtime"
+      },
+      {
        "t": "table",
        "lead": "<p><strong>Acute complication — <span class=\"wl\">hypoglycemia</span>.</strong> Symptoms come in <strong>two waves, and the order is the point</strong>:</p>",
        "cols": [
@@ -298,6 +314,22 @@
      "framing": "<p>Choose a preparation based on <strong>what the insulin is covering</strong> — a meal (bolus) or the fasting state (basal). <strong>Onset and duration are set by one thing: how fast monomers dissociate from the hexamer</strong>, since insulin binds its receptor <strong>only as a monomer</strong>. Anything that stabilizes the hexamer (zinc, protamine, self-aggregation, albumin binding) → slower onset, longer duration.</p>",
      "keypoints": "<p>⭐ <strong>Analogues are NOT more effective at lowering <span class=\"wl\">glycated hemoglobin (HbA1c)</span> than human insulin — they are safer and more convenient</strong> (faster onset, better postprandial match, lower variability, less nocturnal hypoglycemia). <strong>Only regular insulin can be given intravenously.</strong> <strong>Basal insulins must never be used in pumps</strong>, and <strong>most basal insulins must not be mixed</strong> with another insulin before injection. <strong>Insulin does not interfere with the absorption or metabolism of other drugs</strong> — but drugs that alter glucose metabolism (e.g. <span class=\"wl\">steroids</span> ↑ hepatic glucose production) change how well it works. Exogenous insulin is imperfect because <strong>physiological secretion is glucose-dependent</strong>, and that fine-tuning is lost.</p>",
      "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/9e07a8f660e2.jpg",
+       "alt": "insulin preparations.png",
+       "w": 900,
+       "h": 927,
+       "cap": "How each insulin behaves in the vial, under the skin and in the blood: the bigger the clump, the slower the absorption and the longer it lasts"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/2847f9b708cc.jpg",
+       "alt": "insulin action duration timeline.png",
+       "w": 900,
+       "h": 506,
+       "cap": "Insulin action over time: the normal pancreas, ultra-fast, fast-acting, regular human, neutral protamine Hagedorn and the three generations of basal analogues"
+      },
       {
        "t": "table",
        "cols": [
@@ -912,6 +944,14 @@
      "keypoints": "<p><strong><span class=\"wl\">GLP-1RAs</span> and <span class=\"wl\">SGLT2 inhibitors</span> are the agents with proven cardiovascular benefit</strong> — pick one in a patient with CV disease. The incretin agents are secretagogues too, but only the <strong>glucose-independent secretagogues (SUs, meglitinides) carry meaningful hypoglycemia risk</strong>, because they release insulin <em>independent</em> of glucose level; the incretins do not, because their secretion is <strong>glucose-dependent</strong>. <strong>Weight gain: TZDs, SUs, meglitinides. Weight loss: GLP-1RAs, SGLT2 inhibitors, (metformin).</strong> Two classes stop at <strong>eGFR < 30</strong>: <strong><span class=\"wl\">metformin</span></strong> (lactic acidosis) and <strong><span class=\"wl\">SGLT2 inhibitors</span></strong> (no filtered glucose to block).</p>",
      "blocks": [
       {
+       "t": "figure",
+       "src": "assets/figures/7e75da477a18.jpg",
+       "alt": "pharmacological regulation of glucose homeostasis.png",
+       "w": 900,
+       "h": 506,
+       "cap": "Where each glucose-lowering drug class acts: gut, beta cell, liver, muscle, fat and kidney"
+      },
+      {
        "t": "table",
        "cols": [
         "Group",
@@ -995,6 +1035,22 @@
          "<strong>Extracellular fluid volume contraction</strong> (↑ thirst, <span class=\"wl\">hypovolemia</span>, <span class=\"wl\">hypotension</span>) — caution with other diuretics<br><strong>↑ genitourinary infections</strong> (glucose in urinary tract)<br><strong>↓ bone density → ↑ fracture risk</strong><br><strong>Do NOT use if eGFR < 30 mL/min</strong> or severe hepatic disease"
         ]
        ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/cae3f0385d00.jpg",
+       "alt": "sulfonylurea mechanism - beta-cell k-atp channel.png",
+       "w": 492,
+       "h": 627,
+       "cap": "Sulfonylureas and meglitinides close the beta-cell potassium channel that adenosine triphosphate closes, so the cell depolarizes and releases insulin; diazoxide opens it"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/080ebf68c769.jpg",
+       "alt": "sglt2 inhibitors - glycosuria and natriuresis to cardiac and renal protection.png",
+       "w": 900,
+       "h": 850,
+       "cap": "Sodium-glucose cotransporter 2 inhibitors: glucose and sodium loss in the urine leads to heart and kidney protection"
       },
       {
        "t": "table",

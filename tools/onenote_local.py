@@ -21,6 +21,7 @@ Usage, from the repo root::
     python tools/onenote_local.py list "Principles of Medicine 2"
     python tools/onenote_local.py page "<page id>"           # one page, as text
     python tools/onenote_local.py page --find "hypothyroid"  # or by title match
+    python tools/onenote_local.py attachments "<page id>" out/  # its decks + slide pictures
 
 Requires Windows OneNote (Office 16) reachable as ``powershell.exe`` — true from
 WSL, which is where this runs. If the app is closed, COM starts it.
@@ -34,6 +35,7 @@ structure that separates her notes from the slides.
 from __future__ import annotations
 
 import argparse
+import base64
 import html
 import re
 import subprocess
@@ -190,6 +192,78 @@ def slide_text(page_xml: str) -> Iterator[str]:
             yield text
 
 
+def fetch_page_xml_with_images(page_id: str) -> str:
+    """Return one page's XML with its pictures inlined as base64.
+
+    ``GetPageContent``'s third argument 1 (``piBinaryData``) puts each picture's
+    bytes in a ``<one:Data>`` element. Without it a slide printout comes back as
+    OCR text alone, which is what ``fetch_page_xml`` wants and this does not.
+    """
+    fd, name = tempfile.mkstemp(prefix="onenote_local_bin_", suffix=".xml")
+    os.close(fd)
+    tmp = Path(name)
+    safe_id = page_id.replace("'", "''")
+    body = (
+        '$c=""; $on.GetPageContent(\'%s\',[ref]$c,1); '
+        '$c | Out-File -Encoding utf8 \'%s\'; "ok"'
+        % (safe_id, _windows_path(tmp).replace("'", "''"))
+    )
+    try:
+        _run_powershell(_com_preamble(body))
+        return tmp.read_text(encoding="utf-8-sig")
+    finally:
+        tmp.unlink(missing_ok=True)
+
+
+def _wsl_path(windows_path: str) -> Path:
+    """The Linux-side path of a Windows path, for copying OneNote's cache files."""
+    done = subprocess.run(["wslpath", "-u", windows_path], capture_output=True, text=True)
+    return Path(done.stdout.strip() if done.returncode == 0 else windows_path)
+
+
+def save_attachments(page_xml: str, out_dir: Path) -> list[Path]:
+    """Copy a page's attached files and its pictures into ``out_dir``.
+
+    A lecture usually arrives one of two ways. Inserted as a *printout*, each
+    slide is a ``<one:Image>``, saved here as ``image_NN.<ext>``. Attached as a
+    *file*, the deck is a ``<one:InsertedFile>`` whose bytes OneNote keeps in
+    its local cache (``pathCache``), saved here under its original name.
+
+    Returns
+    -------
+    list of Path
+        Every file written, in page order (files first, then pictures).
+    """
+    out_dir.mkdir(parents=True, exist_ok=True)
+    written: list[Path] = []
+    for tag in re.findall(r"<one:InsertedFile\b[^>]*>", page_xml):
+        cache = re.search(r'pathCache="([^"]+)"', tag)
+        name = re.search(r'preferredName="([^"]+)"', tag)
+        if not cache:
+            continue
+        src = _wsl_path(html.unescape(cache.group(1)))
+        dest = out_dir / Path(html.unescape(name.group(1)) if name else src.name).name
+        if src.exists():
+            dest.write_bytes(src.read_bytes())
+            written.append(dest)
+    images = re.findall(r'<one:Image\b([^>]*)>(.*?)</one:Image>', page_xml, re.S)
+    for index, (attrs, inner) in enumerate(images, 1):
+        data = re.search(r"<one:Data>(.*?)</one:Data>", inner, re.S)
+        if not data:
+            continue
+        kind = re.search(r'format="(\w+)"', attrs)
+        dest = out_dir / ("image_%02d.%s" % (index, kind.group(1) if kind else "png"))
+        dest.write_bytes(base64.b64decode(data.group(1)))
+        written.append(dest)
+    return written
+
+
+def _cmd_attachments(args: argparse.Namespace) -> int:
+    for path in save_attachments(fetch_page_xml_with_images(args.page_id), Path(args.out_dir)):
+        print(path)
+    return 0
+
+
 def _cmd_list(args: argparse.Namespace) -> int:
     for page in list_pages(args.notebook):
         print("%s :: %s :: %s" % (page.path, page.title, page.page_id))
@@ -246,6 +320,12 @@ def main(argv: list[str] | None = None) -> int:
                         help="also print the OCR text of the slide printouts")
     p_page.add_argument("--raw", action="store_true", help="dump the page XML")
     p_page.set_defaults(func=_cmd_page)
+
+    p_att = subs.add_parser("attachments",
+                            help="copy a page's attached decks and slide pictures out")
+    p_att.add_argument("page_id", help="page id from `list`")
+    p_att.add_argument("out_dir", help="directory to write them into")
+    p_att.set_defaults(func=_cmd_attachments)
 
     args = parser.parse_args(argv)
     try:

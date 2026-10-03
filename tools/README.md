@@ -317,6 +317,19 @@ under `--slides`. Those slides come through as **text**: OneNote has already run
 OCR over every image, so the words on the slides need no download and no image
 read, which is the one thing the Graph route made expensive.
 
+When the **pictures** are wanted instead, `attachments` copies them out:
+
+```bash
+python tools/onenote_local.py attachments "<page id>" out/
+```
+
+A deck reaches a page one of two ways, and it saves both. Attached as a file,
+the original PDF or `.pptx` sits in OneNote's local cache and is copied out
+under its own name; that is the clean copy to crop figures from, since her ink
+is drawn over the page rather than into the file. Inserted as a printout, each
+slide is an image, saved as `image_NN.png`. On 2026-10-02 this turned up five
+endocrine and repro decks that had never been in `Downloads`.
+
 Two notes on where it runs. It needs `powershell.exe` and Office 16, so it is a
 laptop tool, not a server one. And if COM is ever unavailable, OneNote's own
 automatic backups under
