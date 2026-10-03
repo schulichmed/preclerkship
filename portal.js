@@ -534,9 +534,23 @@
      have fallen back to text. Each node is marked with the theme it was drawn
      in, which is what redrawPathways reads; and if the theme moved on while
      the drawing was under way, the drawing is done again. */
+  /* A flowchart box the vault colours yellow with "classDef lo" is a learning
+     objective, the same as a highlight in the text, and it follows the text's
+     night look: gold on a dark amber box. Mermaid scopes a classDef to its own
+     SVG with !important, so the page's CSS cannot reach it; the source is
+     rewritten instead, just before it is drawn. */
+  var LO_NIGHT = "classDef lo fill:#3a3010,stroke:#c9a227,color:#ffd75e";
+  function themedSource(src, theme) {
+    return theme === "dark" ? src.replace(/classDef lo [^\n]*/g, LO_NIGHT) : src;
+  }
+
   function drawNodes(mermaid, nodes, root) {
     var theme = configure(mermaid);
-    nodes.forEach(function (n) { n.setAttribute("data-drawn", theme); });
+    nodes.forEach(function (n) {
+      n.setAttribute("data-drawn", theme);
+      var src = n.getAttribute("data-src");
+      if (src && !n.hasAttribute("data-processed")) n.textContent = themedSource(src, theme);
+    });
     function done() {
       revealOpen(root);
       if (currentTheme() !== theme) return redrawPathways();

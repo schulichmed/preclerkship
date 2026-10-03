@@ -100,6 +100,15 @@
         color:var(--on-q-mark);
         box-shadow:none;
     }
+    /* An objectives highlight: gold on a faint amber wash, about 11:1 on the
+       card, with the underline carrying the marker's edge. */
+    :root[data-theme="dark"] mark.lo{
+        background:rgba(255,200,0,.16);
+        color:#ffd75e;
+        box-shadow:inset 0 -1px 0 rgba(255,200,0,.55);
+    }
+    :root[data-theme="dark"] mark.lo :is(strong,b,em,i,u,a,span,.wl){color:#ffd75e !important;}
+    :root[data-theme="dark"] mark.lo .wl{border-bottom-color:rgba(255,215,94,.5);}
 }
 
 /* A block page opens on roughly 600px of chrome - switcher, masthead, tabs,
@@ -604,10 +613,11 @@ mark.hit{
 }
 
 /* What a lecture's learning objectives ask for, highlighted in its note. It is
-   meant to shout: a marker-pen yellow that is the same on both themes, because
-   on the dark one it is the brightest thing on the screen, which is the point.
-   Text on it is always dark, links and wikilinks included, and it survives a
-   print, since the PDF is what people take into a study session. */
+   meant to shout: a marker-pen yellow with dark text on it, links and
+   wikilinks included. The dark theme turns it into gold text on an amber wash
+   (with the other dark-theme rules, above), since a solid yellow block glares
+   on a dark page. A print always gets the marker, since the PDF is what people
+   take into a study session. */
 mark.lo{
     background:#ffe03d;
     color:#1d1700;
