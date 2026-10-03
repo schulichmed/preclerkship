@@ -7688,6 +7688,10 @@
        "html": "<ul><li><strong>Low supply is the most common reason to stop breastfeeding</strong> · it is either inadequate production or poor extraction</li></ul>"
       },
       {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Breastfeeding problem\"] --> B{\"What is the complaint?\"}\n    B -->|\"Not enough milk\"| C[\"Low supply - check the infant:<br/>fewer wet and dirty diapers · excess weight loss\"]\n    B -->|\"Painful, infected breast\"| H{\"Is there an abscess in the breast?\"}\n    C --> D{\"Is the problem getting milk OUT?<br/>watch the latch\"}\n    D -->|\"Yes - poor extraction\"| E[\"Poor latch · infrequent feeds · preterm or NICU · separation<br/>cleft palate, sucking or swallowing problems\"]\n    E --> F[\"Fix the latch · pump · supplement\"]\n    D -->|\"No - inadequate production\"| G[\"Retained placenta · Sheehan syndrome · PCOS, prolactinoma<br/>little breast growth in pregnancy · prior surgery · estrogen, decongestants\"]\n    G --> G2[\"Supplement · pump · drugs · lactation consultant\"]\n    H -->|\"No\"| I[\"MASTITIS - Staphylococcus aureus most common<br/>KEEP NURSING + manual pressure<br/>cloxacillin 500 mg four times daily, 7-10 days\"]\n    H -->|\"Yes\"| J[\"LACTATIONAL ABSCESS - mastitis that progressed<br/>incise and drain or needle aspirate<br/>+ analgesia, bra, emptying, antibiotics\"]"
+      },
+      {
        "t": "table",
        "cols": [
         "",
