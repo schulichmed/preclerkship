@@ -2099,6 +2099,12 @@ body.has-dialog{overflow:hidden;}
    reserve the space before the file arrives, not to fix the drawn size */
 .fig img{
     max-width:100%;
+    /* A figure is read beside the text, not instead of it. Unbounded, a tall
+       slide crop filled the screen; 360px keeps it an illustration, and the
+       zoom-in click opens it at full size. A width written in the vault
+       (![[x.png|300]]) still wins when it is smaller. */
+    max-height:360px;
+    width:auto;
     height:auto;
     display:block;
     margin:auto;
