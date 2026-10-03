@@ -7215,7 +7215,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><strong>Indications</strong> - <mark class=\"lo\">any condition that raises the risk to mother or fetus</mark><ul><li>post dates · preeclampsia · diabetes · maternal disease (cardiac, renal, respiratory) · prelabour rupture of membranes · fetal growth restriction · placental abruption or insufficiency · twins · oligohydramnios · cholestasis of pregnancy · fetal anemia from alloimmunization · fetal demise</li><li>low risk at <strong>39 weeks</strong> (ARRIVE trial): fewer cesareans, less preeclampsia, fewer stillbirths</li></ul></li><li><strong>Contraindications</strong> (anything that rules out labour): placenta previa, vasa previa, cord presentation · transverse lie · <strong>prior classical C/S</strong> or major uterine surgery · active genital herpes · invasive cervical cancer</li><li><mark class=\"lo\"><strong>Pre-induction assessment</strong></mark><ul><li><mark class=\"lo\">confirm the due date · fetal position · estimated fetal weight · cervical exam · consent</mark></li><li>cervix scored by the <mark class=\"lo\"><strong>Bishop score</strong></mark>: <mark class=\"lo\"><strong>under 6 = unfavourable → ripen it first</strong></mark> · over 6 = favourable (shorter induction, more vaginal births)</li><li>also raise success: multiparity · ruptured membranes · lower BMI · taller height · smaller baby · no preeclampsia</li></ul></li><li><strong>Method, in two steps</strong><ul><li>① <mark class=\"lo\"><strong>Cervical ripening</strong></mark> to about 2 cm: <mark class=\"lo\"><strong>chemical</strong> = prostaglandins (Cervidil, Prostin gel, misoprostol) · <strong>mechanical</strong> = Foley catheter balloon</mark></li><li>② <strong>ARM</strong>, which may start labour on its own · if not, <strong>IV oxytocin</strong></li></ul></li></ul>"
+       "html": "<ul><li><strong>Indications</strong> - <mark class=\"lo\">any condition that raises the risk to mother or fetus</mark><ul><li>post dates · preeclampsia · diabetes · maternal disease (cardiac, renal, respiratory) · rupture of membranes (PROM; the slide expands it as \"preterm rupture of membranes\", though PROM usually means prelabour rupture of membranes - check with the lecturer) · fetal growth restriction · placental abruption or insufficiency · twins · oligohydramnios · cholestasis of pregnancy · fetal anemia from alloimmunization · fetal demise</li><li>low risk at <strong>39 weeks</strong> (ARRIVE trial): fewer cesareans, less preeclampsia, fewer stillbirths</li></ul></li><li><strong>Contraindications</strong> (anything that rules out labour): placenta previa, vasa previa, cord presentation · transverse lie · <strong>prior classical C/S</strong> or major uterine surgery · active genital herpes · invasive cervical cancer</li><li><mark class=\"lo\"><strong>Pre-induction assessment</strong></mark><ul><li><mark class=\"lo\">confirm the due date · fetal position · estimated fetal weight · cervical exam · consent</mark></li><li>cervix scored by the <mark class=\"lo\"><strong>Bishop score</strong></mark>: <mark class=\"lo\"><strong>under 6 = unfavourable → ripen it first</strong></mark> · over 6 = favourable (shorter induction, more vaginal births)</li><li>also raise success: multiparity · ruptured membranes · lower BMI · taller height · smaller baby · no preeclampsia</li></ul></li><li><strong>Method, in two steps</strong><ul><li>① <mark class=\"lo\"><strong>Cervical ripening</strong></mark> to about 2 cm: <mark class=\"lo\"><strong>chemical</strong> = prostaglandins (Cervidil, Prostin gel, misoprostol) · <strong>mechanical</strong> = Foley catheter balloon</mark></li><li>② <strong>ARM</strong>, which may start labour on its own · if not, <strong>IV oxytocin</strong></li></ul></li></ul>"
       },
       {
        "t": "figure",
@@ -7346,7 +7346,7 @@
         [
          "<mark class=\"lo\"><strong>Tone</strong></mark>",
          "<mark class=\"lo\"><strong>Uterine atony - the #1 cause</strong></mark>",
-         "Overstretched (polyhydramnios, multiples, big baby) · tired muscle (long labour, many births, long oxytocin use, general anesthetic) · infection · fibroids, previa"
+         "Overstretched (polyhydramnios, multiples, big baby) · tired muscle (fast or long labour, many births, long oxytocin use, general anesthetic, anemia) · infection (prolonged rupture of membranes, chorioamnionitis) · fibroids, previa"
         ],
         [
          "<mark class=\"lo\"><strong>Tissue</strong></mark>",
@@ -7708,7 +7708,7 @@
       },
       {
        "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Breastfeeding problem\"] --> B{\"What is the complaint?\"}\n    B -->|\"Not enough milk\"| C[\"Low supply - check the infant:<br/>fewer wet and dirty diapers · excess weight loss\"]\n    B -->|\"Painful, infected breast\"| H{\"Is there an abscess in the breast?\"}\n    C --> D{\"Is the problem getting milk OUT?<br/>watch the latch\"}\n    D -->|\"Yes - poor extraction\"| E[\"Poor latch · infrequent feeds · preterm or NICU · separation<br/>cleft palate, sucking or swallowing problems\"]\n    E --> F[\"Fix the latch · pump · supplement\"]\n    D -->|\"No - inadequate production\"| G[\"Retained placenta · Sheehan syndrome · PCOS, prolactinoma<br/>little breast growth in pregnancy · prior surgery · estrogen, decongestants\"]\n    G --> G2[\"Supplement · pump · drugs · lactation consultant\"]\n    H -->|\"No\"| I[\"MASTITIS - Staphylococcus aureus most common<br/>KEEP NURSING + manual pressure<br/>cloxacillin 500 mg four times daily, 7-10 days\"]\n    H -->|\"Yes\"| J[\"LACTATIONAL ABSCESS - mastitis that progressed<br/>incise and drain or needle aspirate<br/>+ analgesia, bra, emptying, antibiotics\"]"
+       "mermaid": "flowchart TD\n    A[\"Breastfeeding problem\"] --> B{\"What is the complaint?\"}\n    B -->|\"Not enough milk\"| C[\"Low supply - check the infant:<br/>fewer wet and dirty diapers · excess weight loss\"]\n    B -->|\"Painful, infected breast\"| H{\"Is there an abscess in the breast?\"}\n    C --> D{\"Assess the problem - the latch<br/>is the problem getting milk OUT?\"}\n    D -->|\"Yes - poor extraction\"| E[\"Poor latch · infrequent feeds · preterm or NICU · separation<br/>cleft palate, sucking or swallowing problems\"]\n    E --> F[\"Augment: pumping · supplement feeding · drugs<br/>consider a lactation consultant\"]\n    D -->|\"No - inadequate production\"| G[\"Retained placenta · Sheehan syndrome · PCOS, prolactinoma<br/>little breast growth in pregnancy · prior surgery<br/>drugs: estrogen, decongestants, dopamine antagonist (slide wording - an agonist fits the physiology; check with the lecturer)\"]\n    G --> F\n    H -->|\"No\"| I[\"MASTITIS - Staphylococcus aureus most common<br/>KEEP NURSING + manual pressure<br/>cloxacillin 500 mg four times daily, 7-10 days\"]\n    H -->|\"Yes\"| J[\"LACTATIONAL ABSCESS - mastitis that progressed<br/>incise and drain or needle aspirate<br/>+ analgesia, bra, emptying, antibiotics\"]"
       },
       {
        "t": "table",
@@ -7722,7 +7722,7 @@
        "rows": [
         [
          "<strong>Causes</strong>",
-         "• Insufficient breast development in pregnancy · prior surgery/radiation<br>• Insulin resistance, ↑ androgens, <span class=\"wl\">polycystic ovarian syndrome</span>, <span class=\"wl\">prolactinoma</span><br>• <mark class=\"lo\"><strong>Retained placenta</strong> · <strong><span class=\"wl\">Sheehan</span></strong></mark><br>• Decongestants, <strong>estrogen</strong>",
+         "• Insufficient breast development in pregnancy · prior surgery/radiation<br>• Insulin resistance, ↑ androgens, <span class=\"wl\">polycystic ovarian syndrome</span>, <span class=\"wl\">prolactinoma</span><br>• <mark class=\"lo\"><strong>Retained placenta</strong> · <strong><span class=\"wl\">Sheehan</span></strong></mark><br>• Decongestants, <strong>estrogen</strong>, dopamine antagonist (the slide prints <em>antagonist</em>; an antagonist raises prolactin, so an agonist is likely meant - check with the lecturer)",
          "• <mark class=\"lo\"><strong>Poor latch</strong> · infrequent feeding</mark><br>• <span class=\"wl\">cleft palate</span>, sucking/swallowing disorders, neuromotor delay<br>• <mark class=\"lo\"><strong>Preterm</strong> · neonatal intensive care unit · <strong>separation of mother and infant</strong></mark>",
          "• Prior mastitis · blocked ducts<br>• <strong>Nipple cracking</strong> · breast pump<br>• <strong>Nipple cream (especially antifungal)</strong>",
          "• Mastitis that progressed<br>• <strong>Rare unless lactating</strong>"
@@ -7736,8 +7736,8 @@
         ],
         [
          "<strong>Treatment</strong>",
-         "Supplement · pump · drugs · <mark class=\"lo\"><strong>lactation consultant</strong></mark>",
-         "<strong>Fix the latch</strong> · pump · supplement",
+         "Assess the latch, then augment: pumping · supplement feeding · drugs · <mark class=\"lo\"><strong>lactation consultant</strong></mark>",
+         "Same: <strong>assess the latch</strong>, then pumping · supplement feeding · drugs · lactation consultant",
          "<strong>Keep nursing</strong> + manual pressure + <strong><span class=\"wl\">cloxacillin</span> 500 mg by mouth four times daily for 7-10 days</strong>",
          "<strong>Incise and drain / needle aspirate</strong> + analgesia, bra, emptying, antibiotics"
         ]
@@ -7908,7 +7908,7 @@
         ],
         [
          "<strong>Timing</strong>",
-         "onset day 3-10 · peak days 2-4 · <strong>self-limited, ~2 weeks</strong>",
+         "onset day 3-10 · peak days 2-4 (the slide gives both, and they do not agree - check with the lecturer) · <strong>self-limited, ~2 weeks</strong>",
          "major depression <strong>within 6 months</strong> · <strong>suspect if blues > 2 weeks, or severe in the first 2</strong>",
          "/"
         ],
@@ -7963,7 +7963,7 @@
          "<strong>Definition</strong>",
          "↑ bleeding <strong>> 24 h</strong> postpartum",
          "<strong>temperature > 38.0°C on any 2 of the first 10 days, excluding the first 24 h</strong> (oral, at least four times daily)",
-         "0.5-3 / 1000 pregnancies · <strong>greatest risk postpartum</strong>"
+         "0.5-3 / 1000 pregnancies · <strong>greatest risk postpartum</strong> (the same slide also says equal frequency in all three trimesters and postpartum - check with the lecturer)"
         ],
         [
          "<strong>Clue</strong>",
@@ -8155,7 +8155,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><mark class=\"lo\">5.4 million under-5 deaths a year, <strong>44% neonatal</strong> (2,532,000)</mark></li><li>Biggest neonatal slices: <mark class=\"lo\"><strong>preterm complications 15%</strong>, intrapartum events 11%, sepsis 7%</mark></li><li>Helping Babies Survive (American Academy of Pediatrics, World Health Organization, United States Agency for International Development)</li></ul>"
+       "html": "<ul><li><mark class=\"lo\">5.4 million under-5 deaths a year, <strong>44% neonatal</strong> (2,532,000)</mark></li><li>Biggest neonatal slices: <mark class=\"lo\"><strong>preterm complications 15%</strong>, intrapartum events 11%, sepsis 7%</mark></li><li>Helping Babies Survive (American Academy of Pediatrics, World Health Organization, United States Agency for International Development)<ul><li><strong>Helping Babies Breathe</strong>: ↓ early neonatal mortality <strong>47%</strong>, ↓ stillbirths <strong>24%</strong> · Essential Care for Every Baby (no breastmilk at all → <strong>7× more likely to die of infection</strong>) · <strong>Essential Care for Small Babies</strong>: skin-to-skin ↓ low-birthweight mortality <strong>36%</strong> · Improving Care for Mothers and Babies (quality improvement)</li></ul></li></ul>"
       }
      ]
     }
