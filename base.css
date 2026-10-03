@@ -150,11 +150,11 @@ a{
 .presence{
     display:flex;
     align-items:center;
-    gap:6px;
-    height:26px;
-    padding:0 10px;
+    gap:5px;
+    height:22px;
+    padding:0 8px;
     margin:0;
-    font-size:.7rem;
+    font-size:.62rem;
     color:var(--muted);
     background:var(--card-bg);
     border:1px solid var(--border);
@@ -164,8 +164,8 @@ a{
 
 .presence[hidden]{display:none;}
 .presence b{color:var(--text);font-weight:600;}
-.presence-live{display:inline-flex;align-items:center;gap:5px;}
-.presence-dot{width:6px;height:6px;border-radius:50%;background:#2e9d5b;box-shadow:0 0 0 2px rgba(46,157,91,.18);}
+.presence-live{display:inline-flex;align-items:center;gap:4px;}
+.presence-dot{width:5px;height:5px;border-radius:50%;background:#2e9d5b;box-shadow:0 0 0 2px rgba(46,157,91,.18);}
 
 /* on a phone the title fills the width, so the corner gets its own line */
 @media (max-width:640px){
