@@ -14,4 +14,11 @@ tag = "v1"
 new_sqlite_classes = ["Counter"]
 
 [vars]
+# Added to the stored count before it is shown. The counter went live on
+# 2026-10-02, five days after the portal did; Cloudflare Web Analytics had
+# recorded about 220 visits (sampled, so rounded to tens) on
+# schulichmed.github.io from 2026-09-28 to then. Visits, not browsers: a
+# reader who came on three days is three, so this overstates the people a
+# little. The stored count is browsers only and never includes it.
+VISITOR_BASELINE = "220"
 ALLOWED_ORIGINS = "https://schulichmed.github.io,http://localhost:8765,http://127.0.0.1:8765"

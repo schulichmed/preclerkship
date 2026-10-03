@@ -98,6 +98,9 @@ export default {
     // and a class of a few hundred readers pinging once a minute is a few
     // requests a second, far below what one object can serve.
     const stub = env.COUNTER.getByName("portal");
-    return reply(200, await stub.ping(p.visitor, p.tab, p.leaving === true), cors);
+    const counts = await stub.ping(p.visitor, p.tab, p.leaving === true);
+    // the visitors from before the counter existed; see VISITOR_BASELINE
+    counts.total += Number(env.VISITOR_BASELINE) || 0;
+    return reply(200, counts, cors);
   },
 };

@@ -12,8 +12,11 @@ that every page pings about once a minute while its tab is visible
 - **Online** counts open tabs heard from in the last 90 seconds. A tab that
   closes says so as it goes, so the number drops at once; one that is hidden
   stops pinging and drops out within 90 seconds.
-- The count starts at zero on the day it is deployed. Cloudflare Web Analytics
-  (the other script in the head) still has the history from before.
+- The counter went live on 2026-10-02. The readers before that are added on
+  as `VISITOR_BASELINE` in `wrangler.toml`: about 220, the visits Cloudflare
+  Web Analytics (the other script in the head) recorded since the portal went
+  up on 2026-09-28. Those are visits rather than browsers, so the shown total
+  slightly overstates people; the stored count is browsers only.
 
 Until it is deployed the pings fail quietly and the hub shows nothing in that
 corner, so the pages can go out first.
@@ -35,8 +38,8 @@ curl -s -X POST https://preclerkship-presence.schulichmed.workers.dev/ \
   -d '{"site":"preclerkship","visitor":"testvisitor1","tab":"testtab0001"}'
 ```
 
-The answer is `{"total": N, "online": M}`. That test adds one to the total
-for good, so run it once.
+The answer is `{"total": N, "online": M}`, where N includes the baseline.
+That test adds one to the total for good, so run it once.
 
 ## Cost
 
