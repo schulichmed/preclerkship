@@ -292,6 +292,12 @@ def test_main_without_key_exits_cleanly(tmp_path: Path, monkeypatch: pytest.Monk
     assert ig.main(["pathology of 1st"]) == 4
 
 
+def test_clean_markdown_drops_objective_highlights() -> None:
+    out = ig.clean_markdown("| Dx | ==**FPG ≥ 7.0**== · ==A1c== |")
+    assert "==" not in out
+    assert "**FPG ≥ 7.0**" in out
+
+
 def test_clean_markdown_line_breaks_keep_words_apart() -> None:
     out = ig.clean_markdown('D["ECTOPIC<br/>endometrium decidualized"] and a<br>b')
     assert "ECTOPIC endometrium" in out

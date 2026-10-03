@@ -76,7 +76,10 @@ def inline(s):
     s = re.sub(r"\*\*(.+?)\*\*(?!\*)", park, s, flags=re.S)
 
     def emphasise(t):
-        t = re.sub(r"==(.+?)==", r"<mark>\1</mark>", t, flags=re.S)
+        # ==text== is the vault's highlighter, and in a chart it means one
+        # thing only: this is what the lecture's learning objectives ask for.
+        # The class keeps it apart from the search's mark.hit.
+        t = re.sub(r"==(.+?)==", r'<mark class="lo">\1</mark>', t, flags=re.S)
         # intraword emphasis is real in these notes - ego*dystonic* is one word
         # on the page - so only a neighbouring star disqualifies a pair, not a
         # neighbouring letter

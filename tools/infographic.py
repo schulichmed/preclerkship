@@ -128,6 +128,7 @@ def clean_markdown(text: str) -> str:
     text = _QUOTE_PREFIX.sub("", text)
     text = _LINE_BREAK.sub(" ", text)  # else "ECTOPIC<br/>endometrium" fuses
     text = _HTML_TAG.sub("", text)
+    text = text.replace("==", "")  # the learning-objective highlighter
     text = _BLANK_RUN.sub("\n\n", text)
     return text.strip() + "\n"
 

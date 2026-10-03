@@ -21,6 +21,12 @@ together, and highlights what it found. Every word of the query must appear
 somewhere in the note, in any order, which is the bank's rule too: the two
 searches share one rule and one highlighter, kept in `portal.js`.
 
+A second highlighter, in marker-pen **yellow**, is the notes' own: it marks what
+each lecture's **learning objectives** ask for, taken from the objectives slide of
+this year's deck, since that is what the exam tests. It is written in the vault as
+Obsidian's `==highlight==` (and a `classDef lo` in a flowchart), so it shows in
+Obsidian too, and `charts_from_vault.py` turns it into `mark.lo`.
+
 **A block is a filter value, not a page.** That is the whole reason the bank is
 one page: the things people want near an exam - every question they have got
 wrong, a hundred questions across the term, weeks 7 to 11 - cannot be said on a

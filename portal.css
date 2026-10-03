@@ -603,6 +603,25 @@ mark.hit{
     padding:0 1px;
 }
 
+/* What a lecture's learning objectives ask for, highlighted in its note. It is
+   meant to shout: a marker-pen yellow that is the same on both themes, because
+   on the dark one it is the brightest thing on the screen, which is the point.
+   Text on it is always dark, links and wikilinks included, and it survives a
+   print, since the PDF is what people take into a study session. */
+mark.lo{
+    background:#ffe03d;
+    color:#1d1700;
+    border-radius:3px;
+    padding:1px 3px;
+    box-shadow:inset 0 -2px 0 #e0a800;
+    -webkit-box-decoration-break:clone;
+    box-decoration-break:clone;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+}
+mark.lo .wl,mark.lo strong,mark.lo em,mark.lo a{color:inherit;}
+mark.lo .wl{border-bottom-color:#9a7a00;}
+
 .fams{display:grid;gap:6px;}
 
 .fam-btn{
