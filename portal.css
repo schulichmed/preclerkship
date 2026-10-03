@@ -619,7 +619,11 @@ mark.lo{
     -webkit-print-color-adjust:exact;
     print-color-adjust:exact;
 }
-mark.lo .wl,mark.lo strong,mark.lo em,mark.lo a{color:inherit;}
+/* Important because the note's own rules (.ct td strong, .prose p strong,
+   .framing strong) set bold to the theme's text colour at the same
+   specificity and later in the file, which on the dark theme put white text
+   on the yellow. A search hit inside a highlight keeps its own colours. */
+mark.lo :is(strong,b,em,i,u,a,span,.wl){color:#1d1700 !important;}
 mark.lo .wl{border-bottom-color:#9a7a00;}
 
 .fams{display:grid;gap:6px;}
