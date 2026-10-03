@@ -163,22 +163,6 @@ year&rsquo;s lecture slides. Nothing has been uploaded into it yet.</p>
 </div>"""
 
 
-LO_KEY = u"""<section>
-<p class="panel-h">Highlighted</p>
-<p class="railnote"><mark class="lo">Highlighted</mark> text is what the lecture&rsquo;s
-learning objectives ask for, taken from the objectives slide of this year&rsquo;s deck.
-That is what the exam tests.</p>
-</section>
-
-"""
-
-
-def lo_key(course, slug):
-    """The key to the objectives highlighter, on a block whose notes carry any."""
-    p = os.path.join(course["slug"], "data", "notes", "%s.json" % slug)
-    return LO_KEY if 'class=\\"lo\\"' in io.open(p, encoding="utf-8").read() else u""
-
-
 def anki_panel(course, slug, weeks):
     """The Anki tab: the deck if one has been exported, else the empty state.
 
@@ -473,7 +457,7 @@ PAGE = u"""<!DOCTYPE html>
 </div>
 </section>
 
-{lokey}<section>
+<section>
 <p class="panel-h">Week</p>
 <div class="chips" id="note-week-chips"></div>
 </section>
@@ -659,7 +643,7 @@ def main():
                 theme=portal.THEME_SCRIPT, toggle=portal.THEME_BTN,
                 blocknav=blocknav(course, slug), questions=q, slug=slug,
                 anki=anki_panel(course, slug, weeks), ankitc=anki_tc(course, slug),
-                written=written, lectures=lectures, lokey=lo_key(course, slug),
+                written=written, lectures=lectures,
                 block_json=json.dumps(cfg, ensure_ascii=False))
             io.open(os.path.join(d, "%s.html" % slug), "w",
                     encoding="utf-8", newline="\n").write(html)

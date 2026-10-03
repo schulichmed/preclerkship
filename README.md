@@ -25,7 +25,7 @@ A second highlighter, in marker-pen **yellow**, is the notes' own: it marks what
 each lecture's **learning objectives** ask for, taken from the objectives slide of
 this year's deck, since that is what the exam tests. It is written in the vault as
 Obsidian's `==highlight==` (and a `classDef lo` in a flowchart), so it shows in
-Obsidian too, and `charts_from_vault.py` turns it into `mark.lo`.
+Obsidian too, and `charts_from_vault.py` turns it into `mark.lo`. Its key sits under the high-yield key at the top of the notes.
 
 **A block is a filter value, not a page.** That is the whole reason the bank is
 one page: the things people want near an exam - every question they have got

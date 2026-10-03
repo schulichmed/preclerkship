@@ -984,6 +984,10 @@ mark.lo .wl{border-bottom-color:#9a7a00;}
     line-height:1.6;
 }
 
+/* the notes' key: the high-yield line, and the objectives line under it */
+.fam-head p.fam-key{max-width:660px;color:var(--muted);font-size:.9rem;line-height:1.6;}
+.fam-head p.fam-key + p.fam-key{margin-top:6px;}
+
 .fam-empty{
     padding:22px;
     color:var(--muted);
