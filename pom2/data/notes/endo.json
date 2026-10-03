@@ -74,12 +74,16 @@
        ]
       },
       {
+       "t": "list",
+       "html": "<ul><li><strong>Fasting</strong> = no caloric intake for at least 8 hours · <strong>random</strong> = any time of day, regardless of the last meal</li><li><mark class=\"lo\"><strong>HbA1c is not used to diagnose suspected type 1 diabetes</strong></mark></li></ul>"
+      },
+      {
        "t": "note",
        "html": "<h5>4. Stages of type 1 diabetes</h5>"
       },
       {
        "t": "list",
-       "html": "<ul><li><mark class=\"lo\"><strong>Staged, all with beta-cell autoimmunity:</strong></mark> the number of working beta cells falls across the stages<ul><li><strong>Stage 1</strong> normoglycemia, pre-symptomatic</li><li><strong>Stage 2</strong> <span class=\"wl\">dysglycemia</span>, pre-symptomatic</li><li><strong>Stage 3</strong> <span class=\"wl\">diabetes</span>, symptomatic</li></ul></li></ul>"
+       "html": "<ul><li><mark class=\"lo\"><strong>Staged, all with beta-cell autoimmunity:</strong></mark> the number of working beta cells falls across the stages<ul><li><strong>Stage 1</strong> normoglycemia, pre-symptomatic</li><li><strong>Stage 2</strong> <span class=\"wl\">dysglycemia</span>, pre-symptomatic</li><li><strong>Stage 3</strong> <span class=\"wl\">dysglycemia</span>, <strong>symptomatic</strong></li><li>e.g. a child with anti-glutamic acid decarboxylase + anti-insulin antibodies and a fasting glucose of 6.5 mmol/L = <strong>stage 2</strong></li></ul></li></ul>"
       },
       {
        "t": "figure",
@@ -232,7 +236,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><strong>History</strong><ul><li><mark class=\"lo\"><strong>three classic early symptoms nearly every patient has</strong>: <strong><span class=\"wl\">polyuria</span></strong> (including <strong>nocturia / new bed-wetting</strong>), <strong>excessive thirst</strong>, <strong>weight loss despite unchanged or ↑ appetite</strong></mark></li><li>then screen for late/severe features: vomiting · abdominal pain · dehydration · hyperventilation · fatigue · ↓ level of consciousness</li></ul></li><li><strong>Physical exam</strong>: hydration status · weight loss · level of consciousness · <strong>Kussmaul breathing</strong> · acetone breath</li></ul>"
+       "html": "<ul><li><strong>History</strong><ul><li><mark class=\"lo\"><strong>three classic early symptoms nearly every patient has</strong>: <strong><span class=\"wl\">polyuria</span></strong> (including <strong>nocturia / new bed-wetting</strong>), <strong>excessive thirst</strong>, <strong>weight loss despite unchanged appetite</strong></mark></li><li>then screen for late/severe features: vomiting · abdominal pain · dehydration · <strong>hypovolemic shock</strong> · hyperventilation (acidosis) · drowsiness · coma</li></ul></li><li><strong>Physical exam</strong>: hydration status · weight loss · level of consciousness · <strong>Kussmaul breathing</strong> · acetone breath</li></ul>"
       },
       {
        "t": "figure",
@@ -266,18 +270,18 @@
          "≥ 11.1 mmol/L"
         ],
         [
-         "<span class=\"wl\">HbA1c</span>",
-         "<mark class=\"lo\">≥ 6.5% (adults)</mark>"
-        ],
-        [
-         "<strong>Random plasma glucose</strong>",
+         "<strong>Random plasma glucose</strong> + symptoms",
          "<mark class=\"lo\"><strong>≥ 11.1 mmol/L</strong></mark> ← the one that matters acutely"
         ]
        ]
       },
       {
        "t": "list",
-       "html": "<ul><li><strong>Investigations</strong><ul><li><strong>random plasma glucose ≥ 11.1</strong> · <strong><span class=\"wl\">urine dipstick</span> for glucose and ketones</strong></li><li><strong><span class=\"wl\">serum C-peptide</span></strong> (is she making any insulin?)</li><li><strong><span class=\"wl\">arterial blood gas</span> if <span class=\"wl\">diabetic ketoacidosis</span> (DKA) is suspected</strong></li><li>⚠ <strong>fasting plasma glucose (FPG) and glycated hemoglobin (A1c) are usually unnecessary here</strong> — the diagnosis is already clear</li></ul></li></ul>"
+       "html": "<ul><li><mark class=\"lo\"><strong>HbA1c is not one of the type 1 diagnostic criteria</strong></mark> — the deck lists only random (with symptoms), fasting and 2-hour glucose</li></ul>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Investigations</strong><ul><li><strong>random plasma glucose ≥ 11.1</strong> · <strong><span class=\"wl\">urine dipstick</span> for glucose and ketones</strong> (glycosuria + ketonuria)</li><li><strong><span class=\"wl\">serum C-peptide</span></strong> (is she making any insulin?)</li><li><strong><span class=\"wl\">arterial blood gas</span> if <span class=\"wl\">diabetic ketoacidosis</span> (DKA) is suspected</strong></li><li>⚠ <strong>fasting plasma glucose (FPG) and glycated hemoglobin (A1c) are usually unnecessary here</strong> — the diagnosis is already clear</li></ul></li></ul>"
       },
       {
        "t": "pathway",
@@ -302,11 +306,11 @@
         [
          "<mark class=\"lo\"><strong>Blood glucose monitoring</strong></mark>",
          "<strong>4× per day</strong> (before meals + bedtime) · <strong>every 2–3 hours during illness</strong> · occasional nocturnal values · <strong>whenever hypoglycemic symptoms occur</strong><br>Method: fingerprick meter or <strong><span class=\"wl\">continuous glucose monitor</span></strong>",
-         "<strong>< 18 years, type 1 diabetes</strong>: FPG <strong>4–8</strong>, post-prandial <strong>5–10</strong>, A1c <strong>< 7.5%</strong><br>Non-diabetic: FPG 3–6, A1c 4–6%<br><em>Targets can be loosened for children who cannot recognise hypoglycemia</em>"
+         "<strong>< 18 years, type 1 diabetes</strong>: FPG <strong>4–8</strong>, post-prandial <strong>5–10</strong>, A1c <strong>< 7.5%</strong><br>Non-diabetic: FPG 3–6, A1c 4–6%<br><em>Severe/excessive hypoglycemia or hypoglycemia unawareness → pre-prandial target 6–10 mmol/L and a higher A1c</em>"
         ],
         [
          "<mark class=\"lo\"><strong>Insulin administration</strong></mark>",
-         "<strong>Bolus</strong> (short/rapid-acting) + <strong>basal</strong> (intermediate/long-acting); <strong>sliding scale</strong> dosed to blood glucose and carbohydrate load",
+         "<strong>Bolus</strong> (short/rapid-acting) + <strong>basal</strong> (intermediate/long-acting); <strong>sliding scale</strong> dosed to blood glucose and carbohydrate load<br><strong>3 injections/day</strong> = NPH + fast-acting · <strong>4 injections/day</strong> = long-acting (glargine/detemir/degludec) + fast-acting · or a pump",
          "<strong>Dose is age-dependent</strong>: onset <strong>< 0.5</strong> · pre-puberty <strong>0.7–1.0</strong> · <strong>puberty 1.0–2.0 units/kg/day</strong>"
         ],
         [
@@ -316,8 +320,8 @@
         ],
         [
          "<mark class=\"lo\"><strong>Optimizing metabolic control</strong></mark>",
-         "<strong><span class=\"wl\">Pumps</span></strong>: better control, more reliable absorption, precise dosing, <strong>↓ hypoglycemia risk</strong>, flexibility with food, shift work and time zones",
-         "—"
+         "<strong><span class=\"wl\">Pumps</span></strong> (continuous subcutaneous insulin infusion, basal + bolus): better control, more reliable absorption, precise dosing, <strong>↓ hypoglycemia risk</strong>, ↓ long-term complications, flexibility with food, shift work and time zones<br><strong><span class=\"wl\">Continuous glucose monitor</span></strong>: interstitial glucose every 5 minutes · alerts when out of range or expected to be within 20 minutes",
+         "<mark class=\"lo\"><strong>Time in range = 3.9–10 mmol/L</strong></mark>: the <strong>same A1c of 7%</strong> can hide 19% or 71% time in range"
         ]
        ]
       },
@@ -345,7 +349,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><mark class=\"lo\"><strong>Intensive insulin therapy ↓ A1c and ↓ long-term microvascular complications but ↑ hypoglycemia</strong></mark><ul><li>the trade-off is now partly offset by <strong>pumps and continuous glucose monitors</strong></li></ul></li></ul>"
+       "html": "<ul><li><mark class=\"lo\"><strong>Intensive insulin therapy ↓ A1c and ↓ long-term microvascular complications but ↑ hypoglycemia</strong></mark><ul><li>A1c held at <strong>~7% intensive vs ~9% conventional</strong> over ~9 years</li><li>the trade-off is now partly offset by <strong>pumps and continuous glucose monitors</strong></li></ul></li></ul>"
       },
       {
        "t": "note",
@@ -371,7 +375,7 @@
         [
          "Features",
          "<mark class=\"lo\"><strong>Shakiness, sweating, anxiety, hunger, pallor</strong></mark>",
-         "Hunger, fatigue, <mark class=\"lo\"><strong>confusion, ↓ level of consciousness, convulsions, coma</strong></mark>"
+         "Hunger, drowsiness, <mark class=\"lo\"><strong>confusion, convulsions, coma</strong></mark>"
         ],
         [
          "Action",
@@ -393,7 +397,7 @@
      "hasNote": true,
      "title": "Insulin Preparations",
      "framing": "<p><strong>Choose a preparation based on what the insulin is covering</strong> — a meal (bolus) or the fasting state (basal). Every preparation works the same way once it reaches the receptor; they differ only in how fast they get there. The lecture runs structure → uses → the preparations → mechanism → adverse effects → practical points.</p>",
-     "keypoints": "<p>⭐ <strong>Analogues are NOT more effective at lowering HbA1c than human insulin — they are safer and more convenient</strong> (faster onset, better postprandial match, lower variability, less nocturnal hypoglycemia). <strong>Only regular insulin can be given intravenously.</strong> <strong>Basal insulins must never be used in pumps</strong>, and <strong>most basal insulins must not be mixed</strong> with another insulin before injection. <strong>Insulin does not interfere with the absorption or metabolism of other drugs</strong> — but drugs that alter glucose metabolism (e.g. <span class=\"wl\">steroids</span> ↑ hepatic glucose production) change how well it works. Exogenous insulin is imperfect because <strong>physiological secretion is glucose-dependent</strong>, and that fine-tuning is lost.</p>",
+     "keypoints": "<p>⭐ <strong>Analogues are NOT more effective at lowering HbA1c than human insulin — they are safer and more convenient</strong> (faster onset, better postprandial match, lower variability, less early-night hypoglycemia). <strong>Only regular insulin can be given intravenously.</strong> <strong>Basal insulins must never be used in pumps</strong>, and <strong>most basal insulins must not be mixed</strong> with another insulin before injection. <strong>Insulin does not interfere with the absorption or metabolism of other drugs</strong> — but drugs that alter glucose metabolism (e.g. <span class=\"wl\">steroids</span> ↑ hepatic glucose production) change how well it works. Exogenous insulin is imperfect because <strong>physiological secretion is glucose-dependent</strong>, and that fine-tuning is lost.</p>",
      "blocks": [
       {
        "t": "note",
@@ -464,7 +468,7 @@
         [
          "",
          "<span class=\"wl\">insulin glulisine</span>",
-         "Asparagine → lysine; lysine → glutamic acid",
+         "Asparagine → lysine; lysine → glutamic acid · <strong>zinc-free formulation</strong>",
          "<strong>5–15 min</strong>",
          "1 h",
          "3–5 h",
@@ -546,7 +550,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><strong>Rapid analogues vs regular human insulin</strong><ul><li>faster onset (5–15 min vs 30–60 min) · better match to the post-meal surge · lower variability · less nocturnal hypoglycemia</li><li><mark class=\"lo\"><strong>Analogues are NOT more effective at lowering <span class=\"wl\">glycated hemoglobin (HbA1c)</span> than human insulin — they are safer and more convenient</strong></mark></li></ul></li></ul>"
+       "html": "<ul><li><strong>Rapid analogues vs regular human insulin</strong><ul><li>faster onset (5–15 min vs 30–60 min) · better match to the post-meal surge · lower variability → <strong>less early-night hypoglycemia, fewer bedtime snacks</strong></li><li><mark class=\"lo\"><strong>Analogues are NOT more effective at lowering <span class=\"wl\">glycated hemoglobin (HbA1c)</span> than human insulin — they are safer and more convenient</strong></mark></li></ul></li></ul>"
       },
       {
        "t": "figure",
@@ -562,7 +566,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><strong>Identical for every preparation</strong> once the active monomer is reached<ul><li>insulin receptor activation → ↑ translocation of <strong>GLUT-4</strong> to the membrane (glucose uptake) · ↑ <strong>glycogen synthase</strong> · ↑ lipogenesis · ↑ cell growth/division</li><li><mark class=\"lo\">preparations differ <strong>only in pharmacokinetics, never in mechanism</strong></mark></li></ul></li><li><strong>Why exogenous insulin is imperfect</strong>: <strong>physiological secretion is glucose-dependent</strong>, and that fine-tuning is lost</li></ul>"
+       "html": "<ul><li><strong>Identical for every preparation</strong> once the active monomer is reached<ul><li>insulin receptor activation → ↑ translocation of <strong>GLUT-4</strong> to the membrane (glucose uptake) · ↑ <strong>glycogen synthase</strong> · ↑ lipogenesis · ↑ cell growth/division</li><li><mark class=\"lo\">preparations differ <strong>only in pharmacokinetics, never in mechanism</strong></mark></li></ul></li><li><strong>Overall actions</strong>: ↑ glycogen, fatty acid and protein synthesis · ↑ leptin · ↓ gluconeogenesis · ↓ hunger</li><li><strong>Why exogenous insulin is imperfect</strong>: <strong>physiological secretion is glucose-dependent</strong>, and that fine-tuning is lost</li></ul>"
       },
       {
        "t": "note",
@@ -780,7 +784,7 @@
      "hasNote": true,
      "title": "Diagnosing Type 2 Diabetes Mellitus (T2DM) and the Grey Zone",
      "framing": "<p><strong>Type 1 diabetes mellitus (T1DM) and T2DM share identical diagnostic thresholds</strong> — so the diagnostic work is (1) crossing the threshold, (2) deciding <strong>how many measurements</strong> you need, and (3) working out <strong>which type</strong> you are looking at. The lecture then turns to what else comes with T2DM, why it happens, who gets it, and how common it is.</p>",
-     "keypoints": "<p>⭐ the thresholds mark where <strong>retinopathy</strong> risk rises, not cardiovascular risk. <strong>Symptomatic → one measurement; asymptomatic → two.</strong> <strong>Do not diagnose during acute illness</strong> (myocardial infarction, sepsis, steroids) — suspect, then confirm on recovery. <strong>C-peptide and anti-GAD move in opposite directions</strong> between the two types: <em>low C-peptide + high anti-GAD = T1DM</em>. <strong>>90% of all diabetes is Type 2</strong>; <strong>589 million adults</strong> live with diabetes worldwide (<strong>~1 in 9</strong>), <strong>~43% of them undiagnosed</strong>, and <strong>~30% of Canadians</strong> have diabetes or prediabetes. Finally — <strong>a T2DM diagnosis is not necessarily permanent</strong>: weight loss, activity and diet can return glucose below the diabetic range, though it can recur, so <strong>keep checking a few times a year</strong>.</p>",
+     "keypoints": "<p>⭐ the thresholds mark where <strong>retinopathy</strong> risk rises, not cardiovascular risk. <strong>Symptomatic → one measurement; asymptomatic → two.</strong> <strong>Do not diagnose during acute illness</strong> (myocardial infarction, sepsis, steroids) — suspect, then confirm on recovery. <strong>C-peptide and anti-GAD move in opposite directions</strong> between the two types: <em>low C-peptide + high anti-GAD = T1DM</em>. <strong>>90% of all diabetes is Type 2</strong>; <strong>589 million adults</strong> live with diabetes worldwide (<strong>~1 in 9</strong>), <strong>~43% of them undiagnosed</strong>, and <strong>~30% of Canadians</strong> have diabetes or prediabetes. Finally — <strong>a T2DM diagnosis is not necessarily permanent</strong>: weight loss, activity and diet can return glucose below the diabetic range, though it can recur, so <strong>keep re-checking periodically</strong>.</p>",
      "blocks": [
       {
        "t": "note",
@@ -816,6 +820,12 @@
          "< 6.0",
          "<mark class=\"lo\"><strong>6.0–6.4%</strong></mark>",
          "<mark class=\"lo\"><strong>≥ 6.5%</strong></mark>"
+        ],
+        [
+         "Random plasma glucose",
+         "—",
+         "—",
+         "<strong>≥ 11.1 mmol/L</strong>"
         ]
        ]
       },
@@ -955,7 +965,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><strong>Genetic</strong>: mostly polygenic<ul><li><strong>90% monozygotic twin concordance</strong> · <strong>40% have an affected parent</strong> · 5–10% ↑ lifetime risk with a 1st-degree relative</li></ul></li><li><strong>Environmental</strong>: <strong>obesogenic foods</strong> (low fibre, high fat, high simple sugars) · <strong>\"portion creep\"</strong> · inactivity</li><li><mark class=\"lo\"><strong>Populations at particular risk:</strong> South and East Asian, Hispanic, Indigenous, African American, and <strong>women with previous <span class=\"wl\">gestational diabetes</span></strong></mark></li></ul>"
+       "html": "<ul><li><strong>Genetic</strong>: mostly polygenic<ul><li><strong>90% monozygotic twin concordance</strong> · <strong>40% have an affected parent</strong> · 5–10% ↑ lifetime risk with a 1st-degree relative</li></ul></li><li><strong>Environmental</strong>: <strong>obesogenic foods</strong> (low fibre, high fat, high refined sugars) · <strong>\"portion creep\"</strong> · inactivity · obesity · <strong>lower socio-economic status</strong></li><li><strong>Intrauterine</strong>: <strong>birth-weight extremes (both under- and overweight)</strong> · <strong>in-utero exposure to high glucose</strong> · prematurity</li><li><mark class=\"lo\"><strong>Populations at particular risk:</strong> Asian, South Asian, Hispanic, Indigenous, African American / African-descent, and <strong>women with previous <span class=\"wl\">gestational diabetes</span></strong></mark></li></ul>"
       },
       {
        "t": "note",
@@ -971,7 +981,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><strong>A T2DM diagnosis is not necessarily permanent</strong>: weight loss, activity and diet can return glucose below the diabetic range<ul><li>it can recur, so <strong>keep checking a few times a year</strong></li></ul></li></ul>"
+       "html": "<ul><li><strong>A T2DM diagnosis is not necessarily permanent</strong>: weight loss, activity and diet can return glucose below the diabetic range<ul><li>it can recur, so <strong>keep re-checking glucose / A1c periodically</strong></li></ul></li><li><strong>But not always reversible</strong>: with significant insulin deficiency, glucose stays high despite excellent lifestyle change — <strong>not all T2DM is due to being overweight and underactive</strong></li></ul>"
       }
      ]
     },
@@ -990,7 +1000,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><strong><span class=\"wl\">Diabetic ketoacidosis (DKA)</span></strong> = no insulin at all → <strong>unopposed lipolysis → ketone production → <span class=\"wl\">anion gap</span> metabolic <span class=\"wl\">acidosis</span></strong></li><li><strong>Causes</strong>: <strong>absolute insulin deficiency → <span class=\"wl\">type 1 diabetes (T1DM)</span></strong><ul><li><strong>illness</strong> — anything ① dehydrating or ② physically stressful (<span class=\"wl\">gastroenteritis</span>, <span class=\"wl\">myocardial infarction</span>, <span class=\"wl\">stroke</span>, <span class=\"wl\">sepsis</span>, <span class=\"wl\">pancreatitis</span>)</li><li><mark class=\"lo\"><strong>lack of insulin</strong> — 1st diagnosis of T1DM, forgetting / withholding / <strong>rationing</strong> insulin</mark>, <span class=\"wl\">insulin pump</span> malfunction</li><li><mark class=\"lo\"><strong>medications</strong> — <span class=\"wl\">steroids</span>, <strong><span class=\"wl\">sodium-glucose cotransporter 2 (SGLT2) inhibitors</span></strong>, cocaine</mark></li></ul></li><li><strong>Presents as</strong>: ⏰ <strong>evolves over HOURS</strong><ul><li><span class=\"wl\">polyuria</span> · <span class=\"wl\">polydipsia</span> · weight loss · <mark class=\"lo\"><strong>nausea, VOMITING, ABDOMINAL PAIN</strong></mark></li><li>progresses to lethargy and coma if untreated</li></ul></li><li><strong>Physical exam</strong>: <strong>toxic appearance</strong> · <span class=\"wl\">hypotension</span> + <span class=\"wl\">tachycardia</span> (shock) · dehydration (dry membranes, poor skin turgor) · <strong>acetone smell on breath</strong> · <strong><span class=\"wl\">Kussmal's breathing</span></strong></li><li><strong>Investigations</strong><ul><li><strong>↑ blood glucose (often > 15)</strong> · <strong>↑ serum and urine ketones</strong></li><li><strong>↑ <span class=\"wl\">anion gap</span> — follow it during treatment</strong> · <strong>↓ serum pH (<span class=\"wl\">acidosis</span>)</strong> · <strong>↓ <span class=\"wl\">serum bicarbonate</span></strong> (consumed) · ↑ plasma osmolality</li><li><strong>Na⁺ ↑ or ↓</strong> — high sugars falsely lower Na⁺, so <strong>correct for glucose</strong></li><li><strong>K⁺ ↑ or ↓</strong> — total body <strong>K⁺ is depleted</strong> even when serum looks normal</li><li>↑ <span class=\"wl\">creatinine</span> (dehydration)</li></ul></li></ul>"
+       "html": "<ul><li><strong><span class=\"wl\">Diabetic ketoacidosis (DKA)</span></strong> = no insulin at all → <strong>unopposed lipolysis → ketone production → <span class=\"wl\">anion gap</span> metabolic <span class=\"wl\">acidosis</span></strong></li><li><strong>Causes</strong>: <strong>absolute insulin deficiency → <span class=\"wl\">type 1 diabetes (T1DM)</span></strong><ul><li><strong>illness</strong> — anything ① dehydrating or ② physically stressful (<span class=\"wl\">gastroenteritis</span>, <span class=\"wl\">myocardial infarction</span>, <span class=\"wl\">stroke</span>, <span class=\"wl\">sepsis</span>, <span class=\"wl\">pancreatitis</span>)</li><li><mark class=\"lo\"><strong>lack of insulin</strong> — 1st diagnosis of T1DM, forgetting / withholding / <strong>rationing</strong> insulin</mark>, <span class=\"wl\">insulin pump</span> malfunction</li><li><mark class=\"lo\"><strong>medications</strong> — <span class=\"wl\">steroids</span>, <strong><span class=\"wl\">sodium-glucose cotransporter 2 (SGLT2) inhibitors</span></strong>, cocaine</mark></li></ul></li><li><strong>Presents as</strong>: ⏰ <strong>evolves over HOURS</strong><ul><li><span class=\"wl\">polyuria</span> · <span class=\"wl\">polydipsia</span> · weight loss · <mark class=\"lo\"><strong>nausea, VOMITING, ABDOMINAL PAIN</strong></mark></li><li>progresses to lethargy and coma if untreated</li></ul></li><li><strong>Physical exam</strong>: <strong>toxic appearance</strong> · <span class=\"wl\">hypotension</span> + <span class=\"wl\">tachycardia</span> (shock) · dehydration (dry membranes, poor skin turgor) · <strong>acetone smell on breath</strong> · <strong><span class=\"wl\">Kussmal's breathing</span></strong></li><li><strong>Investigations</strong><ul><li><strong>↑ blood glucose (often > 15)</strong> · <strong>↑ serum and urine ketones</strong></li><li><strong>↑ <span class=\"wl\">anion gap</span> — follow it during treatment</strong> · <strong>↓ serum pH (<span class=\"wl\">acidosis</span>)</strong> · <strong>↓ <span class=\"wl\">serum bicarbonate</span></strong> (consumed; pH may be ~7.0) · plasma osmolality <strong>mildly</strong> ↑</li><li><strong>Na⁺ ↑ or ↓</strong> — high sugars falsely lower Na⁺, so <strong>correct for glucose</strong></li><li><strong>K⁺ normal or ↓</strong> — total body <strong>K⁺ is depleted</strong> even when serum looks normal</li><li>↑ <span class=\"wl\">creatinine</span> (dehydration)</li></ul></li></ul>"
       },
       {
        "t": "note",
@@ -1051,7 +1061,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li>Both require <strong>emergent</strong> treatment; <strong>fluid deficits are very large</strong> — even larger in HHS<ul><li><mark class=\"lo\"><strong>① ABCs</strong> — airway, breathing, circulation</mark></li><li><strong>② Fluids</strong> — <mark class=\"lo\"><strong><span class=\"wl\">normal saline</span> first</strong></mark>, often <strong>many litres</strong> · <strong>add <span class=\"wl\">dextrose</span> once glucose falls</strong> so the insulin infusion can continue without causing hypoglycemia</li><li><strong>③ Insulin</strong> — <mark class=\"lo\"><strong>ALWAYS required in DKA</strong>, almost always in HHS</mark></li><li><strong>④ Monitoring every 1–2 hours</strong> — level of consciousness · <strong>Na⁺, K⁺, pH</strong> · <strong>glucose hourly on an insulin drip</strong> · volume status (<strong>especially elderly — watch for <span class=\"wl\">heart failure</span></strong>)</li></ul></li><li><strong>HHS: same protocol</strong> — these patients are older, so <strong>monitor volume status especially closely</strong></li></ul>"
+       "html": "<ul><li>Both require <strong>emergent</strong> treatment; <strong>fluid deficits are very large</strong> — even larger in HHS<ul><li><mark class=\"lo\"><strong>① ABCs</strong> — airway, breathing, circulation</mark></li><li><strong>② Fluids</strong> — <mark class=\"lo\"><strong><span class=\"wl\">normal saline</span> first</strong></mark>, often <strong>many litres</strong> · <mark class=\"lo\"><strong>add <span class=\"wl\">dextrose</span> once glucose reaches ~12–14 mmol/L</strong></mark> (5% dextrose in water with normal saline) so the insulin infusion can continue without causing hypoglycemia — <strong>normal glucose is not the immediate goal</strong></li><li><strong>③ Insulin</strong> — <mark class=\"lo\"><strong>ALWAYS required in DKA</strong>, almost always in HHS</mark></li><li><strong>④ Monitoring every 1–2 hours</strong> — level of consciousness · <strong>Na⁺, K⁺, pH</strong> · <strong>glucose hourly on an insulin drip</strong> · volume status (<strong>especially elderly — watch for <span class=\"wl\">heart failure</span></strong>)</li></ul></li><li><strong>HHS: same protocol</strong> — these patients are older, so <strong>monitor volume status especially closely</strong></li></ul>"
       },
       {
        "t": "callout",
@@ -1060,10 +1070,8 @@
        "html": "<p><strong>① Potassium.</strong> Total body K⁺ is depleted even when the initial <span class=\"wl\">serum potassium</span> looks normal — in DKA, <strong>low insulin has driven K⁺ extracellularly</strong>. Once you give fluid and insulin, <strong>K⁺ shifts back intracellularly and falls sharply</strong>, causing <strong><span class=\"wl\">arrhythmias</span> and death</strong>. <mark class=\"lo\"><strong><em>K⁺ replacement is often required during treatment.</em></strong></mark></p><p><strong>② Glucose falling too fast.</strong> Intravenous fluids and insulin will drop glucose. <strong>Add <span class=\"wl\">dextrose</span> to the fluids</strong> so insulin can keep running until the <strong>dehydration — and in DKA the acidosis — is corrected.</strong></p>"
       },
       {
-       "t": "callout",
-       "kind": "tip",
-       "title": "Schulich Reviews",
-       "html": "<ul><li><strong>Add dextrose once blood glucose reaches 12–14 mmol/L</strong> (5% dextrose in water with normal saline) → lower glucose slowly while the insulin drip keeps clearing ketones</li></ul>"
+       "t": "list",
+       "html": "<ul><li><strong>Then look for the cause</strong> — both emergencies should spark a search for the precipitant</li></ul>"
       },
       {
        "t": "note",
@@ -1071,7 +1079,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><strong>Type 1</strong>: <mark class=\"lo\"><strong>continue SOME insulin even when not eating</strong></mark> (lower-dose basal) · monitor glucose <strong>and urine ketones</strong> frequently</li><li><strong>Type 2</strong>: monitor glucose frequently<ul><li><mark class=\"lo\"><strong>STOP dehydrating medications during gastrointestinal upset — <span class=\"wl\">SGLT2 inhibitors</span>, <span class=\"wl\">diuretics</span>, <span class=\"wl\">metformin</span></strong></mark></li><li>the stress of illness raises sugars, so <strong>taking some insulin is appropriate</strong></li></ul></li></ul>"
+       "html": "<ul><li><strong>Type 1</strong>: <mark class=\"lo\"><strong>continue SOME insulin even when not eating</strong></mark> (lower-dose basal) · monitor glucose <strong>and urine ketones</strong> frequently</li><li><strong>Type 2</strong>: monitor glucose frequently<ul><li><mark class=\"lo\"><strong>STOP dehydrating medications during gastrointestinal upset — <span class=\"wl\">SGLT2 inhibitors</span>, <span class=\"wl\">diuretics</span>, <span class=\"wl\">metformin</span></strong></mark></li><li>the stress of illness raises sugars, so <strong>taking some insulin is appropriate</strong></li></ul></li><li><strong>Always ask why</strong> — common themes: <strong>withholding insulin to control weight (DKA)</strong> · withholding medication for <strong>financial reasons</strong> · uncertainty about sick-day rules · <strong>new medications, especially <span class=\"wl\">steroids</span></strong> · big body stresses (infection, myocardial infarction, stroke)</li></ul>"
       },
       {
        "t": "note",
@@ -1199,7 +1207,7 @@
      "hasNote": true,
      "title": "Glucose-Lowering Drugs in Type 2 Diabetes Mellitus (T2DM)",
      "framing": "<p><strong>Choose an agent based on which step of glucose metabolism is being manipulated</strong>, then narrow by hypoglycemia risk, effect on weight, and organ function. The lecture takes the drug groups in turn — sensitizers, secretagogues, then drugs that change absorption or excretion — and ends on choosing a second-line agent.</p>",
-     "keypoints": "<p>⭐ <strong><span class=\"wl\">GLP-1RAs</span> and <span class=\"wl\">SGLT2 inhibitors</span> are the agents with proven cardiovascular benefit</strong> — pick one in a patient with CV disease. The incretin agents are secretagogues too, but only the <strong>glucose-independent secretagogues (SUs, meglitinides) carry meaningful hypoglycemia risk</strong>, because they release insulin <em>independent</em> of glucose level; the incretins do not, because their secretion is <strong>glucose-dependent</strong>. <strong>Weight gain: TZDs, SUs, meglitinides. Weight loss: GLP-1RAs, SGLT2 inhibitors, (metformin).</strong> Two classes stop at <strong>eGFR < 30</strong>: <strong><span class=\"wl\">metformin</span></strong> (lactic acidosis) and <strong><span class=\"wl\">SGLT2 inhibitors</span></strong> (no filtered glucose to block).</p>",
+     "keypoints": "<p>⭐ <strong><span class=\"wl\">GLP-1RAs</span> and <span class=\"wl\">SGLT2 inhibitors</span> are the agents with proven cardiovascular benefit</strong> — pick one in a patient with CV disease. The incretin agents are secretagogues too, but only the <strong>glucose-independent secretagogues (SUs, meglitinides) carry meaningful hypoglycemia risk</strong>, because they release insulin <em>independent</em> of glucose level; the incretins do not, because their secretion is <strong>glucose-dependent</strong>. <strong>Weight gain: TZDs, SUs, meglitinides. Weight loss: GLP-1RAs, SGLT2 inhibitors, (metformin).</strong> Renal function matters twice: <strong><span class=\"wl\">metformin</span></strong> is excreted unchanged in urine (lactic acidosis if it accumulates), and <strong><span class=\"wl\">SGLT2 inhibitors</span></strong> lose efficacy as renal function falls.</p>",
      "blocks": [
       {
        "t": "note",
@@ -1207,7 +1215,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><strong>Lifestyle first</strong>: more exercise · less food — add a drug when that is not enough</li><li><strong>Ways to lower glucose</strong>: ↓ gastric emptying · delay carbohydrate digestion · ↓ glucose release and gluconeogenesis · ↑ renal glucose excretion · ↑ insulin sensitivity · ↑ insulin secretion · ↓ <span class=\"wl\">glucagon</span> release · give exogenous insulin</li></ul>"
+       "html": "<ul><li><strong>Therapeutic goals in T2DM</strong>: control symptoms · individualized glycemic control · <strong>avoid hypoglycemia</strong> · minimize acute and chronic complications · control associated risk factors</li><li><strong>Lifestyle first</strong>: more exercise · less food — add a drug when that is not enough</li><li><strong>Ways to lower glucose</strong>: ↓ gastric emptying · delay carbohydrate digestion · ↓ glucose release and gluconeogenesis · ↑ renal glucose excretion · ↑ insulin sensitivity · ↑ insulin secretion · ↓ <span class=\"wl\">glucagon</span> release · give exogenous insulin</li></ul>"
       },
       {
        "t": "figure",
@@ -1238,16 +1246,16 @@
         [
          "<u>Biguanides</u>",
          "<strong><span class=\"wl\">metformin</span></strong> (only one left on market)",
-         "<mark class=\"lo\">Activates <strong>AMP kinase</strong> (adenosine monophosphate-activated protein kinase)</mark><br>↓ gluconeogenesis, ↓ glycogenolysis<br>↑ hepatic insulin sensitivity<br>↓ conversion of lactate → glucose<br>Opposes <span class=\"wl\">glucagon</span>",
+         "<mark class=\"lo\">Activates <strong>AMP kinase</strong> (adenosine monophosphate-activated protein kinase)</mark><br>↓ gluconeogenesis, ↓ glycogenolysis<br>↑ hepatic insulin sensitivity<br>↓ conversion of lactate → glucose<br>Opposes <span class=\"wl\">glucagon</span> · ↑ glucose uptake · ↑ incretin release<br><strong>Not metabolized by the liver; excreted unchanged in urine</strong>",
          "<mark class=\"lo\"><strong>First-line for T2DM</strong></mark><br>↓ glycated hemoglobin (HbA1c) <strong>1.0%</strong> (highest)<br>Very safe, very effective, <strong>low cost ($)</strong><br><strong>Weight neutral</strong>, possible cardiovascular (CV) benefit<br>Combo-therapy friendly",
-         "Gastrointestinal (GI) disturbance (non-issue if <strong>titrated gradually</strong>)<br>↓ vitamin B12 absorption (monitor serum B12 in long-term use)<br><mark class=\"lo\"><strong><span class=\"wl\">lactic acidosis</span></strong> if ↓ hepatic function</mark><br><mark class=\"lo\"><strong>Do NOT use if estimated glomerular filtration rate (eGFR) < 30 mL/min</strong> (renally excreted → drug accumulation)</mark>"
+         "Gastrointestinal (GI) disturbance (non-issue if <strong>titrated gradually</strong>)<br>↓ vitamin B12 absorption (monitor serum B12 in long-term use)<br><mark class=\"lo\"><strong><span class=\"wl\">lactic acidosis</span></strong> (rare) when its <strong>pharmacokinetics change</strong> — e.g. dehydration / acute illness ↓ renal clearance</mark><br><mark class=\"lo\"><strong>Do NOT use if estimated glomerular filtration rate (eGFR) < 30 mL/min</strong> (renally excreted → drug accumulation)</mark>"
         ],
         [
          "<u>Thiazolidinediones (TZDs)</u>",
          "<span class=\"wl\">pioglitazone</span><br><span class=\"wl\">rosiglitazone</span>",
-         "<mark class=\"lo\">Act on <strong>peroxisome proliferator-activated receptor gamma (PPAR-γ)</strong></mark><br><strong>adipose</strong>: ↑ adipocyte number/size → ↓ circulating free fatty acids<br><strong>liver</strong>: ↓ glucose output<br><strong>skeletal muscle</strong>: ↑ glucose uptake<br>Gene transcription → <strong>slow onset (up to 3 months)</strong>",
+         "<mark class=\"lo\">Act on <strong>peroxisome proliferator-activated receptor gamma (PPAR-γ)</strong></mark><br><strong>adipose</strong>: ↑ adipocyte number/size → ↓ circulating free fatty acids<br><strong>liver</strong>: ↓ glucose output, ↓ ectopic lipid<br><strong>skeletal muscle</strong>: ↑ glucose uptake<br>↑ adiponectin · ↓ lipolysis<br>Gene transcription → <strong>slow onset (up to 3 months)</strong>",
          "↓ HbA1c 0.7–0.9%<br>Stable and efficacious once working<br><strong>No hypoglycemia risk</strong>",
-         "<strong>Weight gain</strong> (adipose expansion)<br><mark class=\"lo\"><strong>Edema</strong> (↑ renal Na⁺ channels) → <strong>contraindicated in <span class=\"wl\">heart failure</span></strong></mark><br>Many drug–drug interactions (DDIs) via cytochrome P450 (CYP) — not in <span class=\"wl\">liver failure</span><br><strong>↑ fracture risk</strong> (avoid in <span class=\"wl\">osteoporosis</span>)<br><strong>↑ bladder cancer risk</strong>"
+         "<strong>Weight gain</strong> (adipose expansion)<br><mark class=\"lo\"><strong>Edema</strong> (↑ renal Na⁺ channels) → <strong>contraindicated in <span class=\"wl\">heart failure</span></strong></mark><br>Many drug–drug interactions (DDIs) via cytochrome P450 (CYP) — not in <span class=\"wl\">liver failure</span><br><strong>↑ fracture risk</strong> (↓ bone mineral density; avoid in <span class=\"wl\">osteoporosis</span>)<br><strong>Bladder changes → contraindicated with <span class=\"wl\">bladder cancer</span></strong><br>Not the best choice in obesity"
         ]
        ]
       },
@@ -1279,10 +1287,10 @@
        "rows": [
         [
          "<u>Sulfonylureas (SUs)</u><br><strong>glucose-independent</strong> release",
-         "2nd generation preferred (↑ potency, ↓ toxicity)",
+         "glyburide, gliclazide, glimepiride (2nd generation preferred); tolbutamide, chlorpropamide",
          "<mark class=\"lo\"><strong>Inhibit adenosine triphosphate (ATP)-sensitive K⁺ channel</strong> (SUR1 + Kir6.2) on beta cells → depolarization → Ca²⁺ influx → insulin exocytosis</mark><br>Desensitizes over time = <strong>sulfonylurea secondary failure</strong><br>Mirror image: <strong>diazoxide opens</strong> the channel → ↓ insulin secretion",
          "↓ HbA1c 0.6–1.2%<br>Great efficacy (<strong>but not durable</strong>)<br>Oral, <strong>low cost ($)</strong>",
-         "<strong>Weight gain</strong> (↑ insulin)<br><mark class=\"lo\"><strong>Hypoglycemia</strong> — do NOT prescribe to ① elderly ② people living alone ③ people who drive for a living</mark><br>Many DDIs including <strong>alcohol</strong> (CYP)<br><mark class=\"lo\"><strong>↑ hypoglycemia in liver/kidney failure</strong></mark>"
+         "<strong>Weight gain</strong> (↑ insulin)<br><mark class=\"lo\"><strong>Hypoglycemia</strong> — do NOT prescribe to ① elderly ② people living alone ③ people who drive for a living</mark><br>Many DDIs including <strong>alcohol</strong> (CYP)<br><mark class=\"lo\"><strong>Contraindicated in renal and hepatic failure, and in pregnancy</strong></mark>"
         ],
         [
          "<u>Meglitinides (\"glinides\")</u><br><strong>glucose-independent</strong> release",
@@ -1293,24 +1301,24 @@
         ],
         [
          "<u>Glucagon-like peptide 1 (GLP-1) receptor agonists</u><br><em>incretin</em>, <strong>glucose-dependent</strong> release<br>Mimic <span class=\"wl\">GLP-1</span>",
-         "<span class=\"wl\">semaglutide</span> (oral form exists)",
+         "exenatide, liraglutide, dulaglutide, <span class=\"wl\">semaglutide</span> (oral form exists), lixisenatide",
          "<mark class=\"lo\"><strong>Promote insulin secretion in a glucose-dependent manner</strong></mark> → insulin released <strong>only</strong> when blood glucose is ↑ → <strong>greatly ↓ hypoglycemia risk</strong><br><strong>↑ GLP-1 ×10</strong>",
-         "↓ HbA1c 0.6–<strong>1.4%</strong> (greatest)<br><strong>Weight loss</strong> (↓ gastric emptying, ↑ satiety)<br><strong>1× per week</strong> dosing<br><strong>CV protection</strong>, ↓ lipids",
-         "GI side effects (<strong>dose-dependent</strong>, titrate)<br><strong>↑ risk of <span class=\"wl\">pancreatitis</span></strong> (mechanism unknown)<br><strong>Incredibly expensive ($$$$)</strong><br>Subcutaneous injection<br><mark class=\"lo\">Contraindicated in <strong><span class=\"wl\">pancreatic cancer</span></strong></mark>"
+         "↓ HbA1c 0.6–<strong>1.4%</strong> (greatest)<br><strong>Weight loss</strong> (↓ gastric emptying, ↑ satiety)<br>Subcutaneous <strong>daily, twice daily or weekly</strong><br><strong>Proven CV benefit</strong> (LEADER, SUSTAIN-6, PIONEER-6, REWIND, FLOW), ↓ lipids",
+         "GI side effects (<strong>dose-dependent</strong>, titrate)<br><strong>↑ risk of <span class=\"wl\">pancreatitis</span></strong> (mechanism unknown)<br><strong>Incredibly expensive ($$$$)</strong><br>Subcutaneous injection<br><mark class=\"lo\">Contraindicated in <strong><span class=\"wl\">medullary thyroid cancer</span>, multiple endocrine neoplasia type 2 and <span class=\"wl\">pancreatic cancer</span></strong></mark>"
         ],
         [
          "<u>Dipeptidyl peptidase-4 (DPP-4) inhibitors</u><br><em>incretin</em>, <strong>glucose-dependent</strong> release<br>Prolong endogenous <span class=\"wl\">GLP-1</span>",
-         "\"–gliptins\"",
+         "sitagliptin, saxagliptin, linagliptin, alogliptin (oral)",
          "Same <strong>glucose-dependent</strong> secretion → <strong>greatly ↓ hypoglycemia risk</strong><br><mark class=\"lo\">Block the enzyme that degrades GLP-1</mark> → <strong>↑ GLP-1 ×2–3</strong> only",
          "↓ HbA1c 0.5–0.7% (modest)<br><strong>Weight neutral</strong>, well tolerated<br>Potentially ↓ lipids",
-         "GI side effects (↓ compared with GLP-1 receptor agonists (GLP-1RAs))<br><strong>↑ risk of <span class=\"wl\">pancreatitis</span></strong> (mechanism unknown)<br>DPP-4 inhibitors specifically: <strong>↑ risk of upper respiratory tract infections</strong>"
+         "GI side effects (↓ compared with GLP-1 receptor agonists (GLP-1RAs))<br><strong>↑ risk of <span class=\"wl\">pancreatitis</span></strong> (mechanism unknown)<br>DPP-4 inhibitors specifically: <strong>↑ risk of upper respiratory tract infections</strong> (DPP-4 inhibition in the lungs)"
         ],
         [
          "<u>Dual GLP-1 / glucose-dependent insulinotropic peptide (GIP) agonist</u><br><em>incretin</em>, <strong>glucose-dependent</strong> release",
          "<span class=\"wl\">tirzepatide</span>",
          "<strong>Dual activation of GLP-1 AND GIP receptors</strong> (more so GIP)<br><strong>pancreas</strong>: ↑ β-cell function, ↓ <span class=\"wl\">glucagon</span><br><strong>brain</strong>: ↓ appetite, ↓ cravings<br><strong>stomach</strong>: ↓ gastric transit",
          "Broadest effects: ↓ blood pressure, ↓ liver fat &amp; fibrosis markers, ↓ albuminuria, ↑ insulin sensitivity<br><strong>Weight loss</strong> (↓ visceral and subcutaneous fat)",
-         "GI side effects<br><strong>↑ risk of <span class=\"wl\">pancreatitis</span></strong> (mechanism unknown)<br><strong>Incredibly expensive ($$$$)</strong><br>Subcutaneous injection"
+         "GI side effects<br><strong>↑ risk of <span class=\"wl\">pancreatitis</span></strong> (mechanism unknown)<br><strong>Incredibly expensive ($$$$)</strong><br>Weekly subcutaneous injection<br><strong>Interaction with oral contraceptives</strong>"
         ]
        ]
       },
@@ -1328,7 +1336,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><strong>Work outside the beta cell</strong> → <strong>no hypoglycemia risk</strong></li></ul>"
+       "html": "<ul><li><strong>Work outside the beta cell</strong> → <strong>low hypoglycemia risk as monotherapy</strong></li></ul>"
       },
       {
        "t": "table",
@@ -1344,15 +1352,15 @@
          "<u>α-Glucosidase inhibitors</u>",
          "<span class=\"wl\">acarbose</span> (only one in Canada)",
          "<mark class=\"lo\"><strong>Competitive inhibition of α-glucosidase</strong> on intestinal brush border → delays carbohydrate digestion</mark><br>→ blunts <strong>post-prandial glucose peak</strong>; slow rise instead<br>Competitive → <strong>must be taken with each meal</strong>",
-         "↓ HbA1c 0.7–0.8% (modest)<br><strong>Weight neutral</strong>, <strong>no hypoglycemia risk</strong><br><strong>Cannot be used as monotherapy</strong> — efficacy diet-dependent",
-         "GI side effects (<strong>flatulence, constipation</strong>)<br><strong>three times daily dosing</strong><br>Contraindicated in <strong><span class=\"wl\">irritable bowel syndrome</span>, <span class=\"wl\">inflammatory bowel disease</span>, obstruction</strong>"
+         "↓ HbA1c 0.7–0.8% (modest)<br><strong>Weight neutral</strong>, <strong>low hypoglycemia risk</strong> as monotherapy<br><strong>Adjuvant therapy only</strong> — less efficacious, works only when taken with meals",
+         "GI side effects (<strong>flatulence</strong>)<br><strong>three times daily dosing</strong><br>Contraindicated in <strong>chronic intestinal disorders</strong> (<span class=\"wl\">irritable bowel syndrome</span>, <span class=\"wl\">inflammatory bowel disease</span>, obstruction)"
         ],
         [
          "<u>Sodium-glucose cotransporter 2 (SGLT2) inhibitors</u>",
-         "\"gliflozins\"",
+         "canagliflozin, dapagliflozin, empagliflozin, ertugliflozin",
          "<mark class=\"lo\"><strong>Block Na⁺/glucose co-transporter in the <span class=\"wl\">proximal convoluted tubule</span></strong> → ↑ urinary glucose excretion (with Na⁺ and water)</mark><br><strong>Insulin-independent</strong> and <strong>independent of beta-cell function</strong>",
-         "↓ HbA1c 0.5–0.7%<br><strong>Weight loss</strong>, ↓ blood pressure, ↓ lipids<br><strong>CV and renal protection</strong> — delays progression of <span class=\"wl\">diabetic nephropathy</span><br>Low hypoglycemia risk",
-         "<strong>Extracellular fluid volume contraction</strong> (↑ thirst, <span class=\"wl\">hypovolemia</span>, <span class=\"wl\">hypotension</span>) — caution with other diuretics<br><mark class=\"lo\"><strong>↑ genitourinary infections</strong> (glucose in urinary tract)</mark><br><strong>↓ bone density → ↑ fracture risk</strong><br><mark class=\"lo\"><strong>Do NOT use if eGFR < 30 mL/min</strong> or severe hepatic disease</mark>"
+         "↓ HbA1c 0.5–0.7%<br><strong>Weight loss</strong>, ↓ blood pressure, ↓ lipids<br><strong>Proven cardio-renal benefit</strong> (EMPA-REG, DAPA-HF, CREDENCE, CANVAS, EMPA-KIDNEY) → <strong>heart failure, chronic kidney disease, high CV risk</strong><br>Low hypoglycemia risk",
+         "<strong>Extracellular fluid volume contraction</strong> (↑ thirst, <span class=\"wl\">hypovolemia</span>, <span class=\"wl\">hypotension</span>) — caution with other diuretics<br><mark class=\"lo\"><strong>↑ urinary tract and genital infections</strong> (glucose in urinary tract)</mark> · frequent urination<br><strong>↑ fracture risk</strong> · <strong>↑ amputation risk</strong><br><mark class=\"lo\"><strong>Efficacy depends on renal function — caution in renal dysfunction</strong></mark>, osteoporosis and with diuretics"
         ]
        ]
       },
@@ -1362,7 +1370,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><strong>Metformin is always first</strong>; add on according to the patient in front of you<ul><li><mark class=\"lo\"><strong><span class=\"wl\">GLP-1RAs</span> and <span class=\"wl\">SGLT2 inhibitors</span> are the agents with proven cardiovascular benefit</strong></mark> — pick one in a patient with cardiovascular disease</li></ul></li></ul>"
+       "html": "<ul><li><strong>Metformin is first-line</strong>; add on according to the patient in front of you<ul><li><mark class=\"lo\"><strong><span class=\"wl\">GLP-1RAs</span> and <span class=\"wl\">SGLT2 inhibitors</span> are the agents with proven cardiovascular benefit</strong></mark> — GLP-1 receptor agonists are <strong>first- or second-line</strong> in established cardiorenal disease; SGLT2 inhibitors for heart failure, chronic kidney disease or high cardiovascular risk</li><li><strong>Second-line</strong>: sulfonylureas / glinides (efficacy issues; reserved for patients with <strong>no established chronic disease</strong>) · tirzepatide · DPP-4 inhibitors</li><li><strong>Adjuvant</strong>: acarbose</li></ul></li></ul>"
       },
       {
        "t": "table",
@@ -1405,7 +1413,7 @@
          "<strong>$</strong>",
          "contraindicated",
          "contraindicated",
-         "↓ liver function"
+         "renal / hepatic failure, pregnancy"
         ],
         [
          "<span class=\"wl\">meglitinides</span>",
@@ -1425,7 +1433,7 @@
          "<strong>$$$$</strong>",
          "caution",
          "caution / contraindicated",
-         "<strong><span class=\"wl\">pancreatic cancer</span></strong>"
+         "<strong>medullary thyroid cancer, multiple endocrine neoplasia type 2, <span class=\"wl\">pancreatic cancer</span></strong>"
         ],
         [
          "<span class=\"wl\">DPP-4 inhibitors</span>",
@@ -1454,7 +1462,7 @@
          "<strong>loss</strong>",
          "$$$",
          "contraindicated",
-         "contraindicated",
+         "caution (efficacy falls)",
          "amputation history"
         ]
        ]
@@ -1463,7 +1471,7 @@
        "t": "callout",
        "kind": "tip",
        "title": "Schulich Reviews",
-       "html": "<ul><li><mark class=\"lo\"><strong>GLP-1RAs (and tirzepatide) are contraindicated with medullary thyroid cancer or multiple endocrine neoplasia type 2</strong></mark> — as well as pancreatic cancer</li><li>DPP-4 inhibitors: <strong>caution in heart failure — saxagliptin ↑ heart failure risk</strong></li></ul>"
+       "html": "<ul><li>DPP-4 inhibitors: <strong>caution in heart failure — saxagliptin ↑ heart failure risk</strong></li></ul>"
       }
      ]
     },
@@ -1474,7 +1482,7 @@
      "hasNote": true,
      "title": "Glycemic Goals of Care",
      "framing": "<p><strong>The target is never a single number</strong> — it is <mark class=\"lo\"><strong>a negotiation between preventing long-term complications and avoiding hypoglycemia now</strong></mark>. Tight control buys <strong>microvascular</strong> benefit; severe hypoglycemia carries <strong>↑ mortality</strong>. The lecture runs why targets matter → how glucose is measured → reading it from symptoms → setting the target.</p>",
-     "keypoints": "<p>⭐ <strong>severity of hypoglycemia is defined by whether the patient can treat it themselves</strong> — not by the glucose number. <strong>A1c is the best-validated marker</strong> of control but <strong>lags</strong>, so it never replaces glucose readings when you are actively changing therapy. <strong>CGM measures interstitial, not blood, glucose.</strong> Tight control helps <strong>microvascular</strong> outcomes most; the macrovascular gain is smaller and slower — and in T2DM, <strong>blood pressure control is what drives cardiovascular risk down</strong>.</p>",
+     "keypoints": "<p>⭐ <strong>severity of hypoglycemia is defined by whether the patient can treat it themselves</strong> — not by the glucose number. <strong>A1c is the best-validated marker</strong> of control but <strong>lags</strong>, so it never replaces glucose readings when you are actively changing therapy. <strong>CGM measures interstitial, not blood, glucose.</strong> Tight control helps <strong>microvascular</strong> outcomes most; macrovascular benefit is <strong>probably yes in T1DM, probably not in T2DM</strong>.</p>",
      "blocks": [
       {
        "t": "note",
@@ -1511,7 +1519,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li>Tight control helps <strong>microvascular</strong> outcomes most; the macrovascular gain is smaller and slower — in type 2, <strong>blood pressure control is what drives cardiovascular risk down</strong></li></ul>"
+       "html": "<ul><li>Tight control helps <strong>microvascular</strong> outcomes most; <mark class=\"lo\"><strong>macrovascular benefit: type 1 probably yes, type 2 probably not</strong></mark> — the cardiovascular benefit of empagliflozin or liraglutide in type 2 is not clearly mediated by better glycemia</li><li><strong>But tight control (A1c ~6.0%) ↑ severe hypoglycemia, which is linked to ↑ mortality</strong> — not ideal for older/frail patients, long diabetes duration, advanced coronary artery disease or prior severe hypoglycemia</li></ul>"
       },
       {
        "t": "figure",
@@ -1541,7 +1549,7 @@
          "Frequency must be individualized"
         ],
         [
-         "<strong><span class=\"wl\">CGM</span></strong>",
+         "<strong><span class=\"wl\">CGM</span></strong> or flash glucose monitoring",
          "<mark class=\"lo\"><strong>Interstitial fluid glucose</strong> — not blood</mark>",
          "Continuous, worn on body",
          "Gives pre-/post-meal and overnight data unavailable to fingersticks"
@@ -1558,7 +1566,7 @@
        "t": "callout",
        "kind": "warning",
        "title": "What falsely distorts an <span class=\"wl\">HbA1c</span>",
-       "html": "<p><strong>Erythropoiesis</strong> · <strong>altered hemoglobin</strong> (<span class=\"wl\">sickle cell disease</span>, <span class=\"wl\">thalassemias</span>) · <strong>altered glycation</strong> (<span class=\"wl\">chronic renal failure</span>) · <strong>erythrocyte destruction</strong> (<span class=\"wl\">splenectomy</span>, splenomegaly) · <strong>assay interference</strong> (<span class=\"wl\">hyperbilirubinemia</span>, <span class=\"wl\">hypertriglyceridemia</span>, alcohol or opiate use) · <strong>transfusions</strong>.</p>"
+       "html": "<p><strong>Falsely ↑</strong>: B12 / iron deficiency (↓ erythropoiesis) · <span class=\"wl\">chronic renal failure</span> (altered glycation) · <span class=\"wl\">splenectomy</span> · <span class=\"wl\">hyperbilirubinemia</span>, alcohol, chronic opiates (assay)</p><p><strong>Falsely ↓</strong>: erythropoietin / iron / B12 therapy, reticulocytosis, chronic liver disease · hemolysis — hemoglobinopathies, splenomegaly, rheumatoid arthritis, some drugs · <span class=\"wl\">hypertriglyceridemia</span> (assay)</p><p><strong>Variable</strong>: fetal hemoglobin, hemoglobinopathies (<span class=\"wl\">sickle cell disease</span>, <span class=\"wl\">thalassemias</span>), methemoglobin</p>"
       },
       {
        "t": "list",
@@ -1589,11 +1597,11 @@
        "rows": [
         [
          "Glucose in the <strong>\"double digit range\"</strong>",
-         "<strong>Glucose < 4.0 mmol/L</strong>"
+         "<strong>Glucose ≤ 4.0 mmol/L</strong> (on insulin or a secretagogue)"
         ],
         [
          "<span class=\"wl\">polyuria</span>, <span class=\"wl\">nocturia</span>, <span class=\"wl\">polydipsia</span>",
-         "<strong>May be asymptomatic — hypoglycemic unawareness in T1DM</strong>"
+         "<strong>May be asymptomatic — consider hypoglycemic unawareness</strong>"
         ],
         [
          "Weight loss, fatigue",
@@ -1611,7 +1619,7 @@
       },
       {
        "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Setting a glycated hemoglobin (A1c) target\"] --> B{\"Risk of hypoglycemia?\"}\n B -->|\"LOW risk, wants cardiovascular/renal/eye benefit\"| C[\"A1c ≤ 6.5%<br/>selected type 2 diabetes (T2DM)\"]\n B -->|\"Standard\"| D[\"A1c ≤ 7.0%<br/>most type 1 diabetes (T1DM) and T2DM\"]\n B -->|\"HIGH risk or limited benefit\"| E[\"A1c ≤ 8.5%<br/>elderly / frail\"]\n E --> F[\"Drivers: older/frail, long diabetes duration,<br/>advanced coronary artery disease, prior severe hypoglycemia,<br/>non-adherence, patient preference\"]\n C --> G[\"Drivers: younger age,<br/>established complications,<br/>patient preference\"]"
+       "mermaid": "flowchart TD\n A[\"Setting a glycated hemoglobin (A1c) target\"] --> B{\"Risk of hypoglycemia?\"}\n B -->|\"LOW risk, wants cardiovascular/renal/eye benefit\"| C[\"A1c ≤ 6.5%<br/>selected type 2 diabetes (T2DM)\"]\n B -->|\"Standard\"| D[\"A1c ≤ 7.0%<br/>most type 1 diabetes (T1DM) and T2DM\"]\n B -->|\"HIGH risk or limited benefit\"| E[\"A1c 7.1–8.5%<br/>frail / dementia / limited life expectancy\"]\n E --> F[\"Drivers: recurrent severe hypoglycemia or unawareness,<br/>dementia, seizure disorder, frailty, falls,<br/>functional dependence, life expectancy under ~2 years\"]\n C --> G[\"Drivers: young, long life expectancy,<br/>short duration, no structural complications yet,<br/>not on a drug that causes hypoglycemia\"]"
       },
       {
        "t": "table",
@@ -1629,12 +1637,17 @@
         [
          "<mark class=\"lo\"><strong>A1c ≤ 6.5%</strong></mark>",
          "🙍‍♂️ <mark class=\"lo\"><strong>T2DM at low risk of <span class=\"wl\">hypoglycemia</span></strong></mark>",
-         "Further ↓ risk of <strong>cardiovascular disease, <span class=\"wl\">chronic kidney disease</span> and retinopathy</strong>"
+         "Further ↓ risk of <strong><span class=\"wl\">chronic kidney disease</span> and retinopathy</strong>"
         ],
         [
-         "<mark class=\"lo\"><strong>A1c ≤ 8.5%</strong></mark>",
-         "👵🏻 <mark class=\"lo\"><strong>Elderly / frail</strong></mark>",
+         "<mark class=\"lo\"><strong>A1c 7.1–8.5%</strong></mark>",
+         "👵🏻 <mark class=\"lo\"><strong>Recurrent severe hypoglycemia / unawareness · limited life expectancy · frail elderly or dementia</strong></mark> (functionally dependent: <strong>7.1–8.0%</strong>)",
          "<mark class=\"lo\"><strong>Hypoglycemia is more dangerous than hyperglycemia here</strong></mark> (falls)"
+        ],
+        [
+         "<strong>No A1c</strong>",
+         "End of life",
+         "Just avoid symptomatic hyperglycemia and any hypoglycemia"
         ],
         [
          "<mark class=\"lo\">Fasting <strong>4.0–7.0 mmol/L</strong> · 2-hour post-meal <strong>5.0–10.0 mmol/L</strong></mark>",
