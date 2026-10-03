@@ -76,7 +76,10 @@ TEMPLATE = u"""<!DOCTYPE html>
 <div class="pom2-page">
 
 <div class="page-hero">
+<div class="hero-corner">
+{presence}
 {toggle}
+</div>
 <h1>Schulich Pre-clerkship.</h1>
 <p>
 A centralized, dynamic, up-to-date resource for all Schulich med students in
@@ -237,7 +240,8 @@ def main():
         base_css="base.css?v=" + portal.digest("base.css"),
         portal_css="portal.css?v=" + portal.digest("portal.css"),
         cf=portal.CF, cards=cards(), footer=portal.footer(),
-        theme=portal.THEME_SCRIPT, toggle=portal.THEME_BTN)
+        theme=portal.THEME_SCRIPT, toggle=portal.THEME_BTN,
+        presence=portal.PRESENCE_SLOT if portal.PRESENCE_URL else "")
     io.open("index.html", "w", encoding="utf-8", newline="\n").write(html)
     print("index.html: %d courses, %d built, %d questions, %d/%d lecture notes"
           % (len(portal.COURSES),

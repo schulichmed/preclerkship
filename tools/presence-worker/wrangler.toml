@@ -1,0 +1,17 @@
+# The visitor counter. Deploy from this folder with `npx wrangler deploy`.
+# No secrets: it stores random browser ids and nothing else. See README.md.
+name = "preclerkship-presence"
+main = "worker.js"
+compatibility_date = "2025-09-01"
+
+[[durable_objects.bindings]]
+name = "COUNTER"
+class_name = "Counter"
+
+# SQLite-backed, which is what the free plan allows
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Counter"]
+
+[vars]
+ALLOWED_ORIGINS = "https://schulichmed.github.io,http://localhost:8765,http://127.0.0.1:8765"

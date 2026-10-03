@@ -313,6 +313,51 @@ CF_TOKEN = "d66f0003318d42f1bd62e0a2c3e216af"
 CF = (f"<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' "
       f"data-cf-beacon='{{\"token\": \"{CF_TOKEN}\"}}'></script>") if CF_TOKEN else ""
 
+# The visitor counter in tools/presence-worker/. Every page pings it once a
+# minute while its tab is visible, so "online" counts readers anywhere in the
+# portal, not only on the hub; the hub alone has the #presence slot that shows
+# the answer. The slot stays hidden until a ping succeeds, so a counter that is
+# not deployed, or is down, leaves no broken number behind. Empty URL, no
+# script. It rides along with CF because CF is already in every page's head.
+PRESENCE_URL = "https://preclerkship-presence.schulichmed.workers.dev/"
+PRESENCE_SCRIPT = """<script>
+(function(){
+  var URL_=%s,MINUTE=60000,timer=null,visitor=null;
+  function rid(){return Math.random().toString(36).slice(2,12)+Date.now().toString(36);}
+  try{visitor=localStorage.getItem("pc-visitor");if(!/^[a-z0-9]{8,40}$/.test(visitor||"")){visitor=rid();localStorage.setItem("pc-visitor",visitor);}}catch(e){visitor=rid();}
+  var tab=rid();
+  function body(leaving){return JSON.stringify({site:"preclerkship",visitor:visitor,tab:tab,leaving:leaving});}
+  function show(d){
+    var el=document.getElementById("presence");
+    if(!el||typeof d.total!=="number")return;
+    el.querySelector("[data-online]").textContent=d.online.toLocaleString();
+    el.querySelector("[data-total]").textContent=d.total.toLocaleString();
+    el.hidden=false;
+  }
+  function ping(){
+    if(!window.fetch)return;
+    fetch(URL_,{method:"POST",headers:{"content-type":"application/json"},body:body(false)})
+      .then(function(r){return r.ok?r.json():null;}).then(function(d){if(d)show(d);}).catch(function(){});
+  }
+  function start(){if(!timer){ping();timer=setInterval(ping,MINUTE);}}
+  function stop(){if(timer){clearInterval(timer);timer=null;}}
+  document.addEventListener("visibilitychange",function(){document.hidden?stop():start();});
+  window.addEventListener("pagehide",function(){stop();if(navigator.sendBeacon)navigator.sendBeacon(URL_,body(true));});
+  window.addEventListener("pageshow",function(e){if(e.persisted&&!document.hidden)start();});
+  if(!document.hidden)start();
+})();
+</script>""" % json.dumps(PRESENCE_URL)
+if PRESENCE_URL:
+    CF += "\n" + PRESENCE_SCRIPT
+
+# The hub's corner readout, filled by PRESENCE_SCRIPT.
+PRESENCE_SLOT = (
+    '<p class="presence" id="presence" hidden>'
+    '<span class="presence-live"><span class="presence-dot" aria-hidden="true"></span>'
+    '<b data-online></b> online now</span>'
+    '<span class="presence-sep" aria-hidden="true">&middot;</span>'
+    '<span><b data-total></b> visitors</span></p>')
+
 
 # Where "All courses" points. Absolute, not relative: the portal is served from
 # more than one place, and the hub every page should return to is this one

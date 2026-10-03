@@ -42,12 +42,39 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../base.css?v=4dbe1e59">
+<link rel="stylesheet" href="../base.css?v=45fd75cd">
 <link rel="stylesheet" href="../portal.css?v=38ea9405">
 <style>
 :root{--q-accent:#6b5a2f;--q-accent-soft:#edebe6;--q-accent-ink:#584a27;}
 </style>
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d66f0003318d42f1bd62e0a2c3e216af"}'></script>
+<script>
+(function(){
+  var URL_="https://preclerkship-presence.schulichmed.workers.dev/",MINUTE=60000,timer=null,visitor=null;
+  function rid(){return Math.random().toString(36).slice(2,12)+Date.now().toString(36);}
+  try{visitor=localStorage.getItem("pc-visitor");if(!/^[a-z0-9]{8,40}$/.test(visitor||"")){visitor=rid();localStorage.setItem("pc-visitor",visitor);}}catch(e){visitor=rid();}
+  var tab=rid();
+  function body(leaving){return JSON.stringify({site:"preclerkship",visitor:visitor,tab:tab,leaving:leaving});}
+  function show(d){
+    var el=document.getElementById("presence");
+    if(!el||typeof d.total!=="number")return;
+    el.querySelector("[data-online]").textContent=d.online.toLocaleString();
+    el.querySelector("[data-total]").textContent=d.total.toLocaleString();
+    el.hidden=false;
+  }
+  function ping(){
+    if(!window.fetch)return;
+    fetch(URL_,{method:"POST",headers:{"content-type":"application/json"},body:body(false)})
+      .then(function(r){return r.ok?r.json():null;}).then(function(d){if(d)show(d);}).catch(function(){});
+  }
+  function start(){if(!timer){ping();timer=setInterval(ping,MINUTE);}}
+  function stop(){if(timer){clearInterval(timer);timer=null;}}
+  document.addEventListener("visibilitychange",function(){document.hidden?stop():start();});
+  window.addEventListener("pagehide",function(){stop();if(navigator.sendBeacon)navigator.sendBeacon(URL_,body(true));});
+  window.addEventListener("pageshow",function(e){if(e.persisted&&!document.hidden)start();});
+  if(!document.hidden)start();
+})();
+</script>
 </head>
 <body>
 

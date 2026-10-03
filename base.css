@@ -134,9 +134,43 @@ a{
 :root:not([data-theme="dark"]) .theme-btn .sun{display:none;}
 :root[data-theme="dark"] .theme-btn .moon{display:none;}
 
-/* on the hub, top right of the hero; on a block page, the right end of the
-   block nav */
-.page-hero .theme-btn{position:absolute;top:4px;right:0;}
+/* on the hub, top right of the hero beside the visitor counter; on a block
+   page, the right end of the block nav */
+.hero-corner{
+    position:absolute;
+    top:4px;
+    right:0;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+/* The visitor counter, filled by the presence script in tools/portal.py and
+   hidden until it has numbers. Same quiet pill as the toggle beside it. */
+.presence{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    height:30px;
+    padding:0 12px;
+    margin:0;
+    font-size:.78rem;
+    color:var(--muted);
+    background:var(--card-bg);
+    border:1px solid var(--border);
+    border-radius:999px;
+    white-space:nowrap;
+}
+
+.presence[hidden]{display:none;}
+.presence b{color:var(--text);font-weight:600;}
+.presence-live{display:inline-flex;align-items:center;gap:6px;}
+.presence-dot{width:7px;height:7px;border-radius:50%;background:#2e9d5b;box-shadow:0 0 0 3px rgba(46,157,91,.18);}
+
+/* on a phone the title fills the width, so the corner gets its own line */
+@media (max-width:640px){
+    .hero-corner{position:static;justify-content:flex-end;margin-bottom:16px;}
+}
 .blocknav .theme-btn{margin-left:auto;}
 
 @media print{
