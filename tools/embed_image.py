@@ -61,7 +61,10 @@ MAX_WIDTH = 900
 # Quality floor is where JPEG artefacts start showing on a radiograph; below
 # this, drop the width instead and re-try at good quality.
 QUALITY_STEPS = (85, 75, 65, 55)
-WIDTH_STEPS = (900, 750, 600, 480)
+# The steps above 900 are only reached by a caller that raises max_width,
+# which today is figures.py for the flowchart exports; everything else
+# defaults to 900 and never sees them.
+WIDTH_STEPS = (2400, 1800, 1400, 1200, 900, 750, 600, 480)
 
 VAULT = os.environ.get("POM2_VAULT", u"C:/Users/nsims/medwiki/01 - Lectures/99 - PoM 2")
 ATTACHMENTS = os.environ.get("POM2_ATTACHMENTS", "")

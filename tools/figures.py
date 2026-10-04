@@ -57,6 +57,26 @@ MANIFEST = cfv.FIGURES_PATH
 # a file on disk that the browser caches, not bytes inside the JSON.
 MAX_KB = 220
 
+# The upper-year flowcharts (Maggie Prenger's Obsidian canvas exports) are
+# 4000-10000px wide with small labels. At 900px their text is unreadable even
+# through "Open full size", so they ship wider. Named rather than detected by
+# source width: 47 slide crops and anatomy plates are just as wide and read
+# fine at 900, and re-encoding them would only cost bandwidth.
+FLOWCHARTS = {
+    "Approach to a Thyroid Nodule.png",
+    "Approach to Amenorrhea.png",
+    "Approach to CNS Infections (meningitis & encephalitis).png",
+    "Approach to Hypocalcemia and Hypercalcemia.png",
+    "Approach to Hypogonadism.png",
+    "Approach to Precocious Puberty.png",
+    "Calcium Homeostasis.png",
+    "Diagnosis of Adrenal Insufficiency.png",
+    "Prevention of Macrovascular Complications in DM.png",
+    "Thyroid Function Test Outcomes.png",
+}
+FLOWCHART_MAX_WIDTH = 2400
+FLOWCHART_MAX_KB = 700
+
 
 def embeds_in(region):
     """Every image embed that is alone on its line, in source order."""
@@ -141,7 +161,10 @@ def main():
     manifest, new, failed = {}, 0, 0
     for name, lectures in sorted(wanted(slugs).items()):
         try:
-            row, was_new = encode_asset(name, args.max_kb, args.max_width)
+            if name in FLOWCHARTS:
+                row, was_new = encode_asset(name, FLOWCHART_MAX_KB, FLOWCHART_MAX_WIDTH)
+            else:
+                row, was_new = encode_asset(name, args.max_kb, args.max_width)
         except SystemExit as exc:
             # resolve() raises this when the picture is not in the vault; one
             # missing file should not stop the other figures being written
