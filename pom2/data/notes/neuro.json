@@ -5887,31 +5887,781 @@
      "id": "neuro-w14-07",
      "num": "07",
      "name": "Approach to Altered Level of Consciousness",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Approach to altered level of consciousness",
+     "keypoints": "<p>⭐ <strong>Vegetative state is awake but not aware; locked-in syndrome is aware but cannot move - only the eyes and blink are left.</strong> <strong>Rule out the treatable causes (sugar, shock, drugs, infection, hematoma) before labelling a coma.</strong> <strong>Coma needs both hemispheres, both thalami, or the brainstem above the mid-pons.</strong> <strong>The gag/cough reflex is usually the last to go.</strong> <strong>The FOUR score works in an intubated patient; the GCS verbal score does not.</strong> <strong>Brain death = no brainstem reflexes + no breathing + no confounders.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Consciousness has two parts - being awake (alertness) and knowing it (awareness) - and the approach is about which part is lost, and why.</strong> <strong>First fix what is treatable, then examine the brainstem reflexes to place the patient on the spectrum from coma to brain death.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The approach to a patient with reduced responsiveness</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Patient with reduced responsiveness\"] --> B{\"Awake and aware,<br/>but unable to move or answer?\"}\n    B -->|Yes| C[\"COMA MIMIC<br/>locked-in syndrome · Guillain-Barré · myasthenia gravis<br/>neuromuscular blockade · akinetic mutism · psychogenic\"]\n    B -->|No| D[\"Look for the TREATABLE causes first<br/>shock or low blood pressure · low blood sugar · diabetic ketoacidosis<br/>hypertensive encephalopathy · drugs · encephalitis · abscess<br/>epidural or subdural hematoma\"]\n    D --> E[\"Examine: observation · brainstem reflexes · motor responses<br/>score with the Glasgow Coma Scale or the FOUR score\"]\n    E --> F{\"Any brainstem reflex, breathing effort<br/>or motor response?\"}\n    F -->|\"None, apnea test positive,<br/>no confounders\"| G[\"BRAIN DEATH\"]\n    F -->|Yes| H{\"Eyes open, sleep-wake cycles?\"}\n    H -->|No| I[\"COMA<br/>no eye opening · reflexes only\"]\n    H -->|Yes| J{\"Any sign of awareness?\"}\n    J -->|No| K[\"VEGETATIVE STATE<br/>(unresponsive wakefulness)\"]\n    J -->|Yes| L{\"Follows commands?\"}\n    L -->|No| M[\"MINIMALLY CONSCIOUS MINUS<br/>visual pursuit · localizes pain\"]\n    L -->|Yes| N[\"MINIMALLY CONSCIOUS PLUS\"]"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. What keeps us conscious</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Alertness (arousal)</strong>: wakefulness · vigilance · responding to stimuli</li><li><strong>Awareness (content)</strong>: everything the cortex does - sensation, attention, memory, executive function</li><li>Both are maintained by the <strong>ascending reticular activating system</strong><ul><li>the <strong>reticular formation in the upper <span class=\"wl\">pons</span> and <span class=\"wl\">midbrain</span></strong> → projects widely through the <strong><span class=\"wl\">thalamus</span></strong> (intralaminar nuclei) and <span class=\"wl\">hypothalamus</span> → <strong><span class=\"wl\">cerebral cortex</span></strong></li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/d016121aeabe.jpg",
+       "alt": "ascending reticular activating system - upper-year notes.jpg",
+       "w": 532,
+       "h": 384,
+       "cap": "Ascending reticular activating system: reticular formation in the upper pons and midbrain projecting through both thalami to the cortex"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Causes of altered consciousness</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Coma</span></strong> = complete loss of alertness and awareness · the system fails at one of three places:<ul><li><strong>both hemispheres (global cortical)</strong>: metabolic, toxic, hypoxic-ischemic, trauma, large bilateral lesions</li><li><strong>both thalami or the hypothalamus</strong>: <span class=\"wl\">stroke</span>, destructive lesions, tumour</li><li><strong>brainstem above the mid-pons</strong>: trauma, stroke, <strong><span class=\"wl\">herniation</span></strong></li></ul></li><li><strong>Other causes of an altered level of consciousness</strong>: <span class=\"wl\">syncope</span> · <span class=\"wl\">seizure</span> · <strong><span class=\"wl\">encephalopathy</span> or <span class=\"wl\">delirium</span></strong><ul><li>delirium: <strong>inattention</strong>, perseveration, distractibility · <strong>fluctuates, worse at night</strong> · disrupted sleep-wake cycle · hallucinations, delusions, agitation · sometimes autonomic overactivity and tremor</li></ul></li><li><strong>Coma mimics</strong> (aware and alert but cannot show it): <strong><span class=\"wl\">locked-in syndrome</span></strong> · severe neuromuscular disease (<span class=\"wl\">Guillain-Barré syndrome</span>, <span class=\"wl\">myasthenia gravis</span>) · neuromuscular blockade · <span class=\"wl\">akinetic mutism</span> · psychogenic unresponsiveness</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Examining the unconscious patient</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Observe</strong>: how much stimulation it takes to get a response · agitation · any communication · <strong>breathing pattern</strong> · spontaneous or <strong>asymmetric</strong> movement · yawning, sneezing, coughing, swallowing · <span class=\"wl\">fundoscopy</span> for <span class=\"wl\">papilledema</span></li><li><strong>Cranial nerve reflexes</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Reflex",
+        "In",
+        "Out",
+        "What to know"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Pupillary light</span></strong>",
+         "II",
+         "III (parasympathetic)",
+         "<strong>\"Blown\" dilated pupil</strong> = third nerve lost · a small pupil = sympathetic loss (<span class=\"wl\">Horner's syndrome</span>)"
+        ],
+        [
+         "<strong><span class=\"wl\">Oculocephalic</span></strong> (doll's eyes)",
+         "VIII",
+         "III, IV, VI",
+         "<strong>Only if the cervical spine is cleared</strong>"
+        ],
+        [
+         "<strong>Caloric (<span class=\"wl\">vestibulo-ocular</span>)</strong>",
+         "VIII",
+         "III, IV, VI",
+         "Cold water: in coma the eyes <strong>drift slowly toward the cold ear with no fast phase</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Corneal</span></strong>",
+         "V1",
+         "VII",
+         "Eyelids close (sources differ: medwiki says use saline to avoid abrasion, upper-year notes say cotton - check the slides)"
+        ],
+        [
+         "<strong><span class=\"wl\">Gag / cough</span></strong>",
+         "IX",
+         "X",
+         "Suction catheter down the breathing tube · <strong>often the last reflex lost</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Motor</strong>: tone · spontaneous movement · response to pain (central: sternal rub, trapezius squeeze, supraorbital pressure · peripheral: nail bed) · <strong>is it reproducible</strong>, not just a reflex? · reflexes and <span class=\"wl\">Babinski sign</span><ul><li>posturing: <strong><span class=\"wl\">decorticate</span> (flexor)</strong> · <strong><span class=\"wl\">decerebrate</span> (extensor)</strong> · <strong>triple flexion</strong> = a spinal reflex, needs no brainstem</li></ul></li><li><strong>Coma scales</strong>: <strong><span class=\"wl\">Glasgow Coma Scale</span></strong> (built for head injury; <strong>verbal score impossible if intubated</strong>) · <strong><span class=\"wl\">FOUR score</span></strong> (eyes, motor, brainstem reflexes, breathing - <strong>no verbal part, so it works when intubated</strong>)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Disorders of consciousness</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "State",
+        "Awake (eyes open, sleep-wake cycles)",
+        "Aware",
+        "Clues"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Coma</span></strong>",
+         "No",
+         "No",
+         "Reflexes only"
+        ],
+        [
+         "<strong><span class=\"wl\">Vegetative state</span></strong> (unresponsive wakefulness)",
+         "<strong>Yes</strong>",
+         "<strong>No</strong>",
+         "Cranial nerve reflexes kept · reflex responses to pain · <strong>does not track with the eyes</strong>, no communication · loses bowel and bladder control"
+        ],
+        [
+         "<strong><span class=\"wl\">Minimally conscious minus</span></strong>",
+         "Yes",
+         "Limited",
+         "Visual pursuit · localizes pain · appropriate smiling or crying"
+        ],
+        [
+         "<strong>Minimally conscious plus</strong>",
+         "Yes",
+         "Yes",
+         "<strong>Follows commands</strong>"
+        ],
+        [
+         "<strong>Emerged</strong>",
+         "Yes",
+         "Yes",
+         "Functional communication and use of objects"
+        ],
+        [
+         "<strong><span class=\"wl\">Locked-in syndrome</span></strong>",
+         "Yes",
+         "<strong>Fully</strong>",
+         "Cannot speak or move <strong>except the eyes and blinking</strong> (third nerve spared)"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/d10ed084a432.jpg",
+       "alt": "disorders of consciousness.png",
+       "w": 900,
+       "h": 330,
+       "cap": "Disorders of consciousness: coma, unresponsive wakefulness, minimally conscious minus and plus, emergence; locked-in syndrome off to the side"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Brain death</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>All of</strong>: a <strong>deep, unresponsive coma</strong> with no motor response on either side (spinal reflexes allowed) · <strong>no brainstem reflexes</strong> (gag, cough, corneal, pupillary, vestibulo-ocular) · <strong>no breathing effort on the apnea test</strong> · <strong>no confounding condition</strong> that could mimic it</li><li>Canadian guideline: a brain-based definition of death (2023)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/f5b6307dcff4.jpg",
+       "alt": "consciousness spectrum.png",
+       "w": 592,
+       "h": 509,
+       "cap": "Consciousness on two axes: arousal against awareness, with brain death, coma, vegetative state and minimally conscious state at the bottom left"
+      }
+     ]
     },
     {
      "id": "neuro-w14-08",
      "num": "08",
      "name": "Approach to Seizures",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Approach to seizures",
+     "keypoints": "<p>⭐ <strong>A single unprovoked seizure with a normal MRI and EEG is usually not treated (recurrence under 60%); a lesion, epileptiform discharges or a second unprovoked seizure makes it epilepsy, and treatment is recommended.</strong> <strong>Provoked seizure → fix the cause, no drug.</strong> <strong>Aura, asymmetric onset or a post-ictal deficit → focal → image the brain.</strong> <strong>Epilepsy = 2 unprovoked seizures over 24 hours apart.</strong> <strong>Drug-resistant = 2 appropriate drugs failed → epilepsy centre.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>After a first seizure the questions come in order: was it really a seizure, was it provoked, and how likely is another?</strong> <strong>The whole workup exists to estimate that last number - a recurrence risk of 60% or more is epilepsy, and that is when an antiseizure drug starts.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Seizure, epilepsy and how seizures are classified</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Seizure</span></strong> = a <strong>transient</strong> episode of signs or symptoms from abnormally excessive or synchronous neuronal activity</li><li><strong><span class=\"wl\">Epilepsy</span></strong> = an <strong>enduring predisposition</strong> to seizures (criteria in section 5)</li><li><strong>Classified by where it starts</strong> (International League Against Epilepsy)<ul><li><strong><span class=\"wl\">Focal</span></strong>: one area of the brain → localizable symptoms · <strong>aware</strong> (old \"simple partial\") or <strong>impaired awareness</strong> (old \"complex partial\") · motor or non-motor · can spread to a <strong>focal to bilateral tonic-clonic</strong> seizure</li><li><strong><span class=\"wl\">Generalized</span></strong>: the whole brain from the start · <strong>motor</strong>: <span class=\"wl\">tonic-clonic</span> (most common), tonic, clonic, atonic, myoclonic · <strong>non-motor</strong>: <strong>absence</strong> (specific changes on the electroencephalogram, EEG)</li><li><strong>unknown onset</strong>: unwitnessed or unclear</li></ul></li><li><strong>Why classify</strong>: <strong>focal seizures usually mean a brain lesion → imaging is required</strong> · primary generalized epilepsy has no focal lesion, so imaging is usually not needed · the type also guides the drug choice</li><li><strong>Clues that it was focal</strong>: an <strong>aura</strong> (rising epigastric feeling, déjà vu, forced memories) · <strong>asymmetric onset</strong> · <strong>deficits afterwards</strong> (<span class=\"wl\">postictal Todd's paresis</span>) · cortical signs: language problems, pronator drift, reflex asymmetry, weakness, visual field defect</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/ffd6bfcab153.jpg",
+       "alt": "focal vs. generalized vs. unkown onset seizures.png",
+       "w": 864,
+       "h": 504,
+       "cap": "Focal (60% of epilepsy), generalized (30%) and unknown onset (10%), with their secondary classifications"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. The approach to a first seizure</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Possible first seizure\"] --> B{\"Was it a seizure?<br/>first-hand account: witnesses, ambulance records<br/>onset · the event · the aftermath\"}\n    B -->|No| C[\"NON-EPILEPTIC EVENT<br/>look for another cause\"]\n    B -->|Yes| D{\"Needs urgent evaluation?<br/>fever · trauma · ongoing confusion or low consciousness<br/>persistent focal deficit\"}\n    D -->|Yes| E[\"URGENT workup\"]\n    D -->|No| F{\"Provoked?<br/>trauma · fever · glucose or sodium · alcohol\"}\n    E --> F\n    F -->|Yes| G[\"PROVOKED SEIZURE<br/>correct the cause · recurrence low<br/>NO antiseizure drug\"]\n    F -->|No| H[\"UNPROVOKED SEIZURE<br/>electrolytes · CT in the emergency department<br/>MRI · EEG\"]\n    H --> I{\"Lesion on MRI or epileptiform discharges on EEG?<br/>or a 2nd unprovoked seizure over 24 h apart?\"}\n    I -->|Yes| J[\"EPILEPSY: recurrence 60% or more<br/>RECOMMEND an antiseizure drug\"]\n    I -->|No| K[\"SINGLE UNPROVOKED SEIZURE<br/>recurrence under 60%: usually no drug<br/>discuss the options with the patient\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>History is the key test</strong><ul><li>the event: details of the onset, the rest of the seizure and the post-ictal state · <strong>in a true seizure the eyes are fixed</strong>, not roving side to side (unlike a psychogenic event)</li><li><strong>earlier events</strong> recognised only in hindsight (auras, staring spells) - these may mean it is not the first</li><li><strong>risk factors</strong>: febrile seizures or childhood epilepsy · significant head trauma · past meningitis or encephalitis · family history</li></ul></li><li><strong>Physical exam</strong> is often normal · look for <strong>tongue biting</strong> and injuries · <strong>ongoing confusion or a focal deficit is a red flag</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Provoked vs unprovoked</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Provoked",
+        "Unprovoked"
+       ],
+       "rows": [
+        [
+         "<strong>Definition</strong>",
+         "A <strong>transient factor</strong> lowers the threshold of an otherwise normal brain",
+         "<strong>No reversible factor</strong> - an \"enduring epileptogenic abnormality\""
+        ],
+        [
+         "<strong>Examples</strong>",
+         "Trauma · fever · <strong>glucose or sodium</strong> · alcohol",
+         "Genetic conditions · <strong>old stroke, old trauma, brain tumour</strong> · <span class=\"wl\">neurocysticercosis</span> scar"
+        ],
+        [
+         "<strong>Recurrence</strong>",
+         "<strong>Low once the cause is corrected</strong>",
+         "Higher - the brain itself is the problem"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Investigations</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Their job is to <strong>estimate the risk of recurrence</strong></li><li><strong>Bloodwork</strong> guided by the history · <strong><span class=\"wl\">electrolytes</span> always</strong></li><li><strong>Imaging</strong>: <strong>CT</strong> acutely in the emergency department · <strong>MRI is part of every first-seizure workup</strong> (look closely at the temporal lobes) · <strong>a structural lesion raises the recurrence risk</strong></li><li><strong><span class=\"wl\">EEG</span></strong> is required · <strong>epileptiform discharges raise the recurrence risk</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. When to start a drug, and epilepsy</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Situation",
+        "What to do"
+       ],
+       "rows": [
+        [
+         "Non-epileptic event or <strong>provoked</strong> seizure",
+         "<strong>Do not treat</strong> - treat the cause"
+        ],
+        [
+         "<strong>Single unprovoked</strong> seizure",
+         "<strong>Discuss the options</strong> with the patient"
+        ],
+        [
+         "<strong>Recurrent unprovoked seizures (epilepsy)</strong>",
+         "<strong>Recommend treatment</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Status epilepticus</span></strong>",
+         "<strong>Neurologic emergency</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Epilepsy</strong> is diagnosed by <strong>any one</strong> of:<ul><li><strong>2 unprovoked (or reflex) seizures more than 24 hours apart</strong></li><li><strong>1 unprovoked seizure + a recurrence risk of at least 60% over 10 years</strong> (a lesion on MRI, discharges on EEG)</li><li>an <strong>epilepsy syndrome</strong></li></ul></li><li><strong>Causes</strong>: <strong>structural</strong> (stroke, trauma, tumour, <span class=\"wl\">mesial temporal sclerosis</span>, developmental) · genetic · infectious (<span class=\"wl\">viral encephalitis</span>, <span class=\"wl\">bacterial meningitis</span>, neurocysticercosis) · metabolic (inborn errors) · immune (autoimmune, <span class=\"wl\">paraneoplastic</span>)</li><li><strong>Syndromes</strong> = a set pattern of seizure types, EEG, age of onset and course: <span class=\"wl\">childhood absence epilepsy</span> · <span class=\"wl\">juvenile myoclonic epilepsy</span> · <span class=\"wl\">benign Rolandic epilepsy</span> · <span class=\"wl\">West syndrome</span> · <span class=\"wl\">Dravet syndrome</span> · <span class=\"wl\">Lennox-Gastaut syndrome</span></li><li><strong>Comorbidities</strong>: non-epileptic seizures · <span class=\"wl\">depression</span>, <span class=\"wl\">anxiety</span> · attention deficit · <span class=\"wl\">migraine</span> · cognitive impairment · <strong><span class=\"wl\">sudden unexpected death in epilepsy</span> (SUDEP)</strong></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/0943d4fae85b.jpg",
+       "alt": "management of seizure.png",
+       "w": 900,
+       "h": 621,
+       "cap": "Unprovoked first seizure: discharges, a remote symptomatic cause or an epileptogenic lesion put the patient at intermediate or high risk"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Long-term management</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Antiseizure drugs</span></strong> either <strong>take the foot off the gas</strong> (less firing) or <strong>add a brake</strong> (more <span class=\"wl\">GABA</span>)</li><li><strong>Choosing</strong>: one drug vs several · treats a comorbidity too (headache, mood)? · side effects · adherence · levels, titration, switching · drug interactions · cost · <strong>pregnancy: teratogenicity</strong></li><li><strong>Drug-resistant epilepsy</strong> = <strong>2 appropriate, tolerated drugs have failed</strong> → refer to an <strong>epilepsy centre</strong><ul><li>continuous video-EEG to characterize the seizures · psychological testing · intracranial EEG</li><li>surgery: <strong>resect the mesial temporal lobe</strong> · responsive neurostimulation · vagus nerve stimulation</li></ul></li></ul>"
+      }
+     ]
     },
     {
      "id": "neuro-w14-09",
      "num": "09",
      "name": "Recovery in the Nervous System",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Recovery in the nervous system",
+     "keypoints": "<p>⭐ <strong>Central axons can regrow inside a peripheral nerve graft - so it is the central environment, not the neuron, that blocks regeneration.</strong> <strong>Peripheral regrowth needs a nearby stump, an intact Schwann cell tube, a clean cut and no ischemia or infection.</strong> <strong>Crush injury → traumatic neuroma.</strong> <strong>Facial nerve regrowth gone wrong → synkinesis, including tears while eating.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>A cut axon always loses its far end; whether it grows back depends on where it is.</strong> <strong>Peripheral axons can regrow along an empty Schwann cell tube if the conditions are right; central axons are held back by their surroundings, not by an inability to grow.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. What happens when an axon is cut</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Beyond the cut (distal)</strong>: <strong>Wallerian degeneration</strong> - the axon degenerates and is cleared<ul><li>starts <strong>days</strong> after the injury · the cytoskeleton breaks down, the membrane fails · <strong>macrophages</strong> eat the debris · myelin breaks into \"ovoids\"</li></ul></li><li><strong>Before the cut (proximal)</strong>: the stump and cell body <strong>swell</strong> · the cell body loses its Nissl substance (<strong>central chromatolysis</strong>) · the axon starts to <strong>sprout</strong> as it tries to regrow</li><li><strong>Support</strong>: <strong>Schwann cells multiply</strong>, clear debris and release growth factors and cytokines · the cell body releases <strong>trophic factors</strong></li><li>Damage can spread across synapses to the neurons upstream and downstream (<strong>trans-synaptic degeneration</strong>)</li><li>How the injury is graded (neurapraxia, axonotmesis, neurotmesis) and how strength returns in steps: see <span class=\"wl\">03 - Nerve Injury</span></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/1ed60f14030e.jpg",
+       "alt": "Wallerian degeneration and regrowth.png",
+       "w": 900,
+       "h": 769,
+       "cap": "After a cut: Wallerian degeneration of the distal axon, macrophages and Schwann cells clear the debris, then the axon regrows and is remyelinated"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Peripheral vs central regeneration</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Peripheral nervous system</span>",
+        "<span class=\"wl\">Central nervous system</span>"
+       ],
+       "rows": [
+        [
+         "<strong>What happens</strong>",
+         "Sprouts grow from the proximal stump <strong>along the empty distal Schwann cell tube</strong>",
+         "<strong>Axon extension is inhibited</strong>"
+        ],
+        [
+         "<strong>Helped by</strong>",
+         "<strong>Laminin, nerve growth factor</strong> and other factors from Schwann cells",
+         "—"
+        ],
+        [
+         "<strong>The key experiment</strong>",
+         "—",
+         "<strong>Central axons regrow into a peripheral nerve graft</strong> → the problem is the central environment, not the neuron"
+        ],
+        [
+         "<strong>What recovery relies on</strong>",
+         "Regrowth to the target",
+         "<strong>Plasticity</strong> (other circuits taking over) may matter more than regrowth"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Conditions for successful peripheral regeneration</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>The stumps are close</strong> - the proximal stump must reach the distal Schwann cell tube (stump-to-stump contact)</li><li><strong>An intact tube to follow</strong> (endoneurium preserved) - without one, regrowth goes off course</li><li><strong>A clean cut</strong> rather than a crush or a mangling injury</li><li><strong>No complications</strong> - no ischemia, no infection</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. When regeneration goes wrong</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Misguided, haphazard sprouting</strong> reaches the wrong target</li><li><strong><span class=\"wl\">Synkinesis</span></strong>: moving one muscle <strong>involuntarily moves another</strong><ul><li>common after <strong>facial nerve</strong> injury (muscles of facial expression) and in the <strong>extraocular muscles</strong></li><li>salivary fibres rewired to the <strong>lacrimal gland → tears while eating</strong></li></ul></li><li><strong><span class=\"wl\">Traumatic neuroma</span></strong>: the perineurium is torn, so regrowing axons <strong>escape and branch in a tangle</strong><ul><li><strong>more likely after crush or mangling injury</strong> than a clean cut · can cause <strong>chronic pain</strong></li><li><span class=\"wl\">Morton's neuroma</span> is a related example (more collagen and mixed tissue)</li></ul></li></ul>"
+      }
+     ]
     },
     {
      "id": "neuro-w14-10",
      "num": "10",
      "name": "Neurosurgical Emergencies",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Neurosurgical emergencies",
+     "keypoints": "<p>⭐ <strong>Mannitol shrinks brain with an intact blood-brain barrier; dexamethasone shrinks the swelling around a tumour by restoring a broken one.</strong> <strong>Epidural: lens, arterial, lucid interval - operate if symptomatic, over 1 cm or a child.</strong> <strong>Subdural: crescent, bridging veins, slower.</strong> <strong>A ruptured aneurysm must be secured or it re-bleeds.</strong> <strong>Hydrocephalus: drain now (external ventricular drain), shunt later.</strong> <strong>Saddle anesthesia + bladder or bowel loss = cauda equina emergency.</strong> <strong>No steroids for an abscess.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Most neurosurgical emergencies come down to raised intracranial pressure: something is taking up space inside a closed skull.</strong> <strong>The decision is what that something is - blood, tumour, swollen brain or trapped cerebrospinal fluid - because each is removed or shrunk a different way.</strong> Head injury grading, Glasgow Coma Scale scoring and the herniation types are in <span class=\"wl\">01 - Approach to Head Injuries</span>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Does this patient need a neurosurgeon?</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>The exam</strong>: <span class=\"wl\">Glasgow Coma Scale</span> (GCS) · <span class=\"wl\">cranial nerves</span> (pupils) · <strong>motor</strong>: <span class=\"wl\">pronator drift</span>, bulk, tone, power, <span class=\"wl\">reflexes</span> · <strong>sensory</strong>: light touch, pinprick, proprioception · cerebellar exam not essential</li><li><strong>Imaging</strong>: identify the lesion - hematoma, hemorrhage, mass, enlarged ventricles</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Raised intracranial pressure</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Normal</strong>: 7-20 cm water (5-15 mmHg) in adults · lower in children (3-7) and infants (1.5-6)</li><li><strong>Fixed box</strong>: brain + cerebrospinal fluid (CSF) + blood + any mass = a fixed volume · the skull first <strong>compensates by pushing out venous blood and CSF</strong>, then pressure <strong>rises steeply</strong> once a critical volume is passed</li><li><strong>Causes</strong><ul><li><strong>focal</strong>: tumour · hemorrhage (spontaneous or traumatic) · abscess · infarct</li><li><strong>generalized</strong>: <strong><span class=\"wl\">hydrocephalus</span></strong> · meningitis or encephalitis · brain swelling (edema)</li></ul></li><li><strong>Presents as</strong>: falling consciousness · headache and vomiting · <strong><span class=\"wl\">Cushing's triad</span></strong> (rising systolic pressure, slow heart rate, irregular breathing) · <span class=\"wl\">papilledema</span> only late · herniation (third nerve palsy most common; posterior cerebral artery infarct)<ul><li><strong>the raised-pressure headache is a major red flag</strong>: persistent, progressive, <strong>worse lying down, in the morning, and with coughing or straining</strong></li></ul></li><li><strong>Measuring it</strong>: lumbar puncture (<strong>risky if there is a mass - may cause herniation</strong>) or an intracranial monitor, with or without a ventricular drain</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Lowering the pressure: what is taking up the space?</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Raised intracranial pressure<br/>falling GCS · headache · vomiting · Cushing triad\"] --> B[\"Protect the airway if GCS is low<br/>cervical spine precautions in trauma\"]\n    B --> C{\"What is taking up the space?\"}\n    C -->|\"Blood volume\"| D[\"Head of the bed up · hyperventilate\"]\n    C -->|\"A blood clot (hematoma)\"| E[\"CRANIOTOMY<br/>remove the clot\"]\n    C -->|\"Tumour with swelling around it\"| F[\"DEXAMETHASONE<br/>restores the blood-brain barrier in tumour vessels<br/>→ the swelling shrinks\"]\n    C -->|\"Swollen or damaged brain\"| G[\"MANNITOL<br/>osmotic diuresis shrinks the brain<br/>works where the blood-brain barrier is intact\"]\n    C -->|\"Trapped CSF (hydrocephalus)\"| H[\"DIVERT THE CSF<br/>short term: external ventricular drain<br/>long term: shunt\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Mannitol</span></strong> vs <strong><span class=\"wl\">dexamethasone</span></strong>: mannitol needs an <strong>intact</strong> barrier to draw water out · dexamethasone <strong>repairs a broken</strong> barrier around a tumour</li><li><strong>Craniotomy</strong>: the clot is <strong>thick and jelly-like</strong>, so it cannot simply be suctioned out through a burr hole (sources differ: upper-year notes list \"burr holes or craniotomy\" for an epidural hematoma - check the slides)</li><li>CSF production can also be reduced with a diuretic (furosemide)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. The acute bleeds: which one, and what to do</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Bleed",
+        "Source",
+        "CT",
+        "Clues",
+        "Decision"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Epidural</span></strong>",
+         "<strong>Middle meningeal artery</strong>, under a skull fracture · younger patients (dura less stuck to skull)",
+         "<strong>Lens-shaped</strong> (convex)",
+         "<strong>Lucid interval → coma</strong> · GCS falls as pressure rises · <strong>blown pupil on the same side</strong>",
+         "<strong>Surgery if symptomatic, over 1 cm, or a child</strong> · only very small ones watched"
+        ],
+        [
+         "<strong><span class=\"wl\">Subdural</span></strong>",
+         "<strong>Bridging veins</strong> draining to the dural sinuses",
+         "<strong>Crescent</strong> (concave)",
+         "Venous, low pressure → <strong>slower</strong> · chronic form in the elderly",
+         "<strong>Usually surgery</strong> · may wait if small with little mass effect, or chronic and minimally symptomatic · outcome depends on the brain injury underneath"
+        ],
+        [
+         "<strong><span class=\"wl\">Subarachnoid</span></strong>",
+         "<strong>Ruptured <span class=\"wl\">aneurysm</span></strong> (or trauma)",
+         "Blood in the subarachnoid space · <strong>blood in the CSF on lumbar puncture</strong>",
+         "<strong><span class=\"wl\">Thunderclap headache</span></strong> · stiff neck · retinal hemorrhage · third nerve palsy",
+         "<strong>The aneurysm must be treated</strong> - high risk of re-rupture · don't drop the blood pressure too far early, but very high pressure risks a rebleed"
+        ],
+        [
+         "<strong>Lobar / <span class=\"wl\">intracerebral</span></strong>",
+         "Within the brain tissue",
+         "Well-defined, bright (hyperdense)",
+         "Depends on location",
+         "<strong>Surgery if consciousness falls or there is a focal deficit</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/304abe208c3c.jpg",
+       "alt": "epidural vs subdural hematoma CT - upper-year notes.jpg",
+       "w": 726,
+       "h": 420,
+       "cap": "CT: epidural hematoma is lens-shaped (convex), subdural hematoma is a crescent"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Masses on brain imaging</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Tumour</strong>: <strong>contrast-enhanced MRI</strong> is best (contrast CT if MRI unavailable) · <strong>enhancement suggests a high-grade tumour</strong> · surrounding swelling → <strong>dexamethasone</strong><ul><li><strong>metastases</strong> (the most common brain tumours): <strong>multiple</strong>, <strong>ring-enhancing</strong>, with swelling around them · usually from <strong>lung, breast, melanoma, kidney</strong></li></ul></li><li><strong>Brain abscess</strong>: think of it with <strong>fever</strong> · lumbar puncture is <strong>low-yield (no organism in over 80%) and can be harmful</strong> with a mass · <strong>surgery; no role for steroids</strong></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/47af9107ee08.jpg",
+       "alt": "ring-enhancing brain metastases MRI - upper-year notes.jpg",
+       "w": 278,
+       "h": 317,
+       "cap": "Contrast MRI: multiple ring-enhancing lesions, typical of metastases"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Hydrocephalus</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Hydrocephalus</span></strong> = CSF builds up in the ventricles → compresses the brain from the inside → ↑ pressure</li><li><strong>Can kill if untreated</strong> · <strong>acutely an <span class=\"wl\">external ventricular drain</span></strong>, <strong>long term a <span class=\"wl\">shunt</span></strong></li><li>Complication named in the sources: <strong>shunt infection</strong> (a risk factor for meningitis) · other shunt complications are not covered in either source - check the slides</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Spinal emergencies</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Back pain with weakness or numbness<br/>in both legs\"] --> B{\"Upper or lower motor neuron pattern?\"}\n    B -->|\"Upper: brisk reflexes, sensory level,<br/>bladder and bowel trouble\"| C[\"SPINAL CORD COMPRESSION<br/>(myelopathy) · tumour, disc, vertebral fracture\"]\n    B -->|\"Lower: saddle anesthesia, bladder and bowel loss,<br/>leg pain, flaccid weakness\"| D[\"CAUDA EQUINA SYNDROME<br/>EMERGENCY\"]\n    C --> E[\"URGENT MRI (gold standard)<br/>dexamethasone\"]\n    D --> F[\"URGENT MRI · steroids<br/>decompress within 48 hours\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Cord compression</span></strong>: thoracic lesions give upper motor neuron signs in <strong>both legs</strong>, a <strong>sensory level</strong> and possible bladder and bowel loss · <strong>complete injury = no rectal tone and no perianal sensation</strong> · cord syndromes: see <span class=\"wl\">08 - Spinal Cord</span></li><li><strong><span class=\"wl\">Cauda equina</span></strong>: roots below the cord (cord ends at L1) · <strong>both legs</strong>, <strong><span class=\"wl\">saddle anesthesia</span></strong>, <strong>loss of bowel or bladder control</strong>, lower motor neuron weakness</li><li>Management here (MRI, dexamethasone, surgery within 48 hours) comes from the medwiki condition notes, not the lecture note or the upper-year notes - check the slides</li></ul>"
+      }
+     ]
     },
     {
      "id": "neuro-w14-11",
      "num": "11",
      "name": "Neuroinfections",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Neuroinfections",
+     "keypoints": "<p>⭐ <strong>Never delay antibiotics for the CT or the lumbar puncture - cultures, then empiric treatment (ceftriaxone + vancomycin + dexamethasone in adults), and the CT only decides whether the tap is safe.</strong> <strong>Add ampicillin for Listeria in the elderly or immunocompromised; add acyclovir for seizures or focal signs.</strong> <strong>Neutrophils + low glucose = bacterial; lymphocytes + normal glucose = viral.</strong> <strong>Temporal lobe signs + red cells in the CSF → herpes encephalitis, confirmed by CSF PCR.</strong> <strong>Neonates: E. coli and group B strep - cefotaxime or gentamicin with ampicillin.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Suspected bacterial meningitis is a race: blood cultures, then antibiotics - never held back for the CT or the lumbar puncture.</strong> <strong>The CT only decides whether a lumbar puncture is safe; the cerebrospinal fluid (CSF) then tells bacterial from viral, and seizures, confusion or focal signs point to herpes encephalitis.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Infections of the central nervous system</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Four kinds of organism</strong>: <strong>bacterial</strong> (<span class=\"wl\">bacterial meningitis</span>, abscess) · <strong>viral</strong> (<span class=\"wl\">viral meningitis</span>, <span class=\"wl\">viral encephalitis</span>) · <strong>fungal</strong> (<span class=\"wl\">cryptococcus</span>) · <strong>protozoal / parasitic</strong> (<span class=\"wl\">neurocysticercosis</span>)</li><li><strong>Four places it can sit</strong>: <strong><span class=\"wl\">meningitis</span></strong> (the meninges) · <strong><span class=\"wl\">encephalitis</span></strong> (the brain tissue) · <strong>meningoencephalitis</strong> (meninges, then brain) · <strong>brain <span class=\"wl\">abscess</span></strong> (walled off in a capsule)</li><li><strong>Bacterial meningitis is the one not to miss</strong></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/61d33a48fa1f.jpg",
+       "alt": "central nervous system infections.png",
+       "w": 900,
+       "h": 463,
+       "cap": "Meningitis, encephalitis, meningoencephalitis and abscess: where in the brain each infection sits"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Bacterial meningitis: how it presents</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Classic triad</strong>: <strong>fever · stiff neck (<span class=\"wl\">nuchal rigidity</span>) · altered mental status</strong> - <strong>95% have at least 2 of the 3</strong>, so think of it with any one</li><li><strong>Adults</strong>: a preceding viral illness · <strong>looks very sick</strong> · headache · seizures · light sensitivity · nausea and vomiting · fever (may be absent in the elderly) · <strong>non-blanching meningococcal rash</strong><ul><li><strong>jolt accentuation</strong> (headache worse turning the head side to side): <strong>very sensitive</strong>, less specific</li><li><strong>Kernig's sign</strong> (resists knee extension with the hip flexed) and <strong>Brudzinski's sign</strong> (neck flexion makes the hips flex): <strong>less sensitive</strong>, unreliable in coma and young children</li></ul></li><li><strong>Young children</strong>: irritability, poor feeding · drowsiness · vomiting · convulsions · <strong>bulging fontanelle (late - raised pressure)</strong> · rash</li><li><strong>Risk factors</strong>: immunocompromise · chronic ear infection · diabetes · <strong>no spleen</strong> · alcohol use disorder · <strong>recent neurosurgery, CSF leak, shunt infection, penetrating head injury</strong></li><li><strong>Red flags for severity</strong>: breathing rate over 22 · systolic pressure under 100 · altered mental state</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. The approach to suspected meningitis</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Suspected meningitis<br/>fever · stiff neck · altered mental status\"] --> B[\"Blood cultures<br/>(before antibiotics if possible)\"]\n    B --> C{\"START EMPIRIC TREATMENT NOW<br/>which regimen? - by age\"}\n    C -->|\"Neonate, under 1 month\"| D[\"Cefotaxime + ampicillin<br/>or gentamicin + ampicillin\"]\n    C -->|\"Infant, 1-3 months\"| E[\"Cefotaxime + ampicillin<br/>+ vancomycin\"]\n    C -->|\"Child\"| F[\"Ceftriaxone or cefotaxime<br/>+ vancomycin\"]\n    C -->|\"Adult\"| G[\"Ceftriaxone + vancomycin + dexamethasone<br/>+ ampicillin if elderly or immunocompromised (Listeria)<br/>+ acyclovir if seizures or focal deficits (herpes)\"]\n    D --> H{\"CT before the lumbar puncture? (PUNISH)<br/>Papilledema · Unconscious or altered<br/>Neurologic deficit (focal) · Immunocompromised<br/>Seizure (new, within 1 week) · History of central nervous system disease\"}\n    E --> H\n    F --> H\n    G --> H\n    H -->|No| I[\"LUMBAR PUNCTURE\"]\n    H -->|Yes| J[\"CT head\"]\n    J --> K{\"Mass or hemorrhage?\"}\n    K -->|Yes| L[\"NEUROSURGERY<br/>no lumbar puncture\"]\n    K -->|No| I\n    I --> M[\"CSF: cells · glucose (with a blood glucose) · protein<br/>Gram stain and culture · herpes simplex virus (HSV) PCR<br/>opening pressure\"]\n    M --> N[\"Adjust treatment to the result\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Why the CT first</strong>: with an abscess or mass, a lumbar puncture can make the brain <strong>herniate</strong> · also consider it where <strong>neurocysticercosis</strong> is endemic</li><li><strong>Antibiotics delayed more than 6 hours after arrival in the emergency department → higher mortality</strong> (sources differ on order: the medwiki note lists cultures, then CT/lumbar puncture, then treatment; the upper-year notes start antibiotics straight after cultures - both say never wait for results - check the slides)</li><li>Lumbar puncture at <strong>L4/5</strong>, below the end of the cord · cell counts in <strong>tubes 1 and 4</strong> (in case the tap itself causes some bleeding)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Reading the cerebrospinal fluid</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Normal",
+        "<strong>Bacterial</strong>",
+        "<strong>Viral (aseptic)</strong>",
+        "<strong>Herpes encephalitis</strong>"
+       ],
+       "rows": [
+        [
+         "<strong>Opening pressure</strong>",
+         "Under 20 cm water",
+         "<strong>↑</strong>",
+         "Normal or mildly ↑",
+         "—"
+        ],
+        [
+         "<strong>Appearance</strong>",
+         "Clear",
+         "<strong>Cloudy or purulent</strong>",
+         "Clear",
+         "—"
+        ],
+        [
+         "<strong>White cells</strong>",
+         "0-5 (lymphocytes)",
+         "<strong>↑↑↑ 500-50,000, neutrophils</strong>",
+         "↑ over 5, <strong>lymphocytes</strong>",
+         "Moderate <strong>lymphocytes</strong> · <strong>red cells</strong>"
+        ],
+        [
+         "<strong>Protein</strong>",
+         "250-450 mg/L",
+         "<strong>↑↑↑</strong> 500-10,000",
+         "Normal or ↑ (under 1000)",
+         "↑"
+        ],
+        [
+         "<strong>Glucose</strong>",
+         "2.2-4.4 mmol/L",
+         "<strong>Low: CSF-to-blood ratio low</strong>",
+         "Normal or mildly low",
+         "Normal or mildly low"
+        ],
+        [
+         "<strong>Gram stain</strong>",
+         "Nothing",
+         "<strong>Usually positive</strong>",
+         "Nothing",
+         "Nothing · <strong>HSV PCR positive</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Glucose ratio</strong> (CSF ÷ blood, drawn together): normal over 0.6 · bacterial low (sources differ: medwiki gives under 0.3; the upper-year notes say under 0.6 is abnormal, under 0.31 in 70% of bacterial cases, and under 0.4 in their table - check the slides)</li><li>Protein units for bacterial and viral are written as mg/mL in the upper-year table but mg/L for normal - check the slides</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Organism",
+        "Peak age",
+        "Gram stain",
+        "Think of it when"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">E. coli</span></strong>",
+         "<strong>Neonates</strong>",
+         "Negative rods",
+         "—"
+        ],
+        [
+         "<strong><span class=\"wl\">Group B strep</span></strong>",
+         "<strong>Neonates</strong>",
+         "—",
+         "—"
+        ],
+        [
+         "<strong><span class=\"wl\">H. influenzae</span></strong>",
+         "Infants and children",
+         "Negative coccobacilli",
+         "<strong>Much rarer since the vaccine</strong> (early 1990s)"
+        ],
+        [
+         "<strong><span class=\"wl\">N. meningitidis</span></strong>",
+         "<strong>Adolescents and young adults</strong>",
+         "<strong>Negative diplococci</strong>",
+         "<strong>Rash</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">S. pneumoniae</span></strong>",
+         "<strong>Older adults</strong> and children",
+         "Positive cocci",
+         "<strong>Most common in adults and children</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Listeria</span></strong>",
+         "Elderly",
+         "—",
+         "Immunocompromised · alcohol · diabetes"
+        ],
+        [
+         "<strong><span class=\"wl\">S. aureus</span></strong>",
+         "—",
+         "—",
+         "Recent head trauma or neurosurgery"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Empiric treatment in adults</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Drug",
+        "Dose",
+        "Covers",
+        "Give"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Ceftriaxone</span></strong>",
+         "2 g intravenously (IV) every 12 h",
+         "H. influenzae · N. meningitidis · penicillin-sensitive S. pneumoniae · S. aureus (methicillin-sensitive)",
+         "<strong>Everyone</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Vancomycin</span></strong>",
+         "1 g IV every 8 h",
+         "<strong>Ceftriaxone-resistant S. pneumoniae</strong> · methicillin-resistant S. aureus",
+         "<strong>Everyone</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Ampicillin</span></strong>",
+         "2 g IV every 4 h",
+         "<strong>Listeria</strong>",
+         "<strong>Elderly or immunocompromised</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Acyclovir</span></strong>",
+         "10 mg/kg IV every 8 h",
+         "<strong>Herpes simplex</strong>",
+         "<strong>Seizures, focal deficits</strong>, suspected encephalitis"
+        ],
+        [
+         "<strong><span class=\"wl\">Dexamethasone</span></strong>",
+         "10 mg IV <strong>with the first antibiotic dose</strong>, then every 6 h for 4 days",
+         "—",
+         "↓ illness and death, <strong>most for S. pneumoniae</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Complications of bacterial meningitis</strong>: death · sepsis · seizures · raised pressure and <strong>brain swelling → herniation</strong> · cranial nerve palsies · hydrocephalus · vasculitis → <strong>stroke</strong> · cerebritis · abscess</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Viral (aseptic) meningitis</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Aseptic</span></strong> = meningitis with <strong>no bacteria grown</strong> · often <strong><span class=\"wl\">enteroviruses</span></strong></li><li>Fever · headache · <strong>mild</strong> meningeal signs · light sensitivity · rash · <strong>uncomfortable but nowhere near as sick</strong> - often managed at home</li><li><strong>Stop the antibiotics</strong> once the fluid is clearly viral · rest, fluids, pain relief · viral symptoms last 7-10 days, <strong>the headache can last weeks</strong> (warn the patient)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Herpes simplex encephalitis</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Encephalitis</span></strong> = infection of the brain tissue · <strong>mostly <span class=\"wl\">herpes simplex</span></strong>, which <strong>prefers the temporal lobes</strong></li><li><strong>Cortical features</strong> set it apart from meningitis: <strong>focal seizures</strong> · <strong>memory loss</strong> · <strong>aphasia</strong> · focal deficits (weakness, visual field loss) · behaviour change · fever and altered consciousness · rarely coma → herniation<ul><li><strong>fever + behaviour change + trouble understanding speech → think encephalitis</strong></li></ul></li><li><strong>Diagnosis</strong>: CT first (often normal; may show subtle low density in the temporal lobe) · <strong>MRI: temporal lobe signal change</strong> · lumbar puncture: <strong>HSV PCR in the CSF is the confirmatory test</strong> · EEG · biopsy rarely</li><li><strong>Treatment</strong>: <strong>IV <span class=\"wl\">acyclovir</span> 10 mg/kg every 8 h</strong> (ideal body weight) for <strong>14-21 days</strong> · <strong>start before the PCR result</strong> - earlier is better</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/f3c353c49f91.jpg",
+       "alt": "HSV encephalitis temporal lobe MRI - upper-year notes.jpg",
+       "w": 448,
+       "h": 251,
+       "cap": "MRI in herpes simplex encephalitis: bright signal in the temporal lobes"
+      }
+     ]
     }
    ]
   },
