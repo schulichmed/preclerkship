@@ -62,7 +62,6 @@
   function show(d){
     var el=document.getElementById("presence");
     if(!el||typeof d.total!=="number")return;
-    el.querySelector("[data-online]").textContent=d.online.toLocaleString();
     el.querySelector("[data-total]").textContent=d.total.toLocaleString();
     el.hidden=false;
   }
