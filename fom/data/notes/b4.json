@@ -92,7 +92,12 @@
      "id": "b4-w13-02",
      "num": "02",
      "name": "Classification of Different Microbes",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "05",
+      "name": "Microbiology Lab",
+      "key": "b4-w13-05"
+     }
     },
     {
      "id": "b4-w13-03",
@@ -362,13 +367,25 @@
         ]
        ]
       }
+     ],
+     "covers": [
+      {
+       "num": "04",
+       "name": "Adaptive Immunity",
+       "key": "b4-w13-04"
+      }
      ]
     },
     {
      "id": "b4-w13-04",
      "num": "04",
      "name": "Adaptive Immunity",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "03",
+      "name": "Innate Immunity Refresher",
+      "key": "b4-w13-03"
+     }
     },
     {
      "id": "b4-w13-05",
@@ -833,13 +850,35 @@
         ]
        ]
       }
+     ],
+     "covers": [
+      {
+       "num": "02",
+       "name": "Classification of Different Microbes",
+       "key": "b4-w13-02"
+      },
+      {
+       "num": "06",
+       "name": "Interpreting Microbiologic Investigations",
+       "key": "b4-w13-06"
+      },
+      {
+       "num": "08",
+       "name": "Some Important Gram-Positives",
+       "key": "b4-w13-08"
+      }
      ]
     },
     {
      "id": "b4-w13-06",
      "num": "06",
      "name": "Interpreting Microbiologic Investigations",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "05",
+      "name": "Microbiology Lab",
+      "key": "b4-w13-05"
+     }
     },
     {
      "id": "b4-w13-07",
@@ -900,7 +939,12 @@
      "id": "b4-w13-08",
      "num": "08",
      "name": "Some Important Gram-Positives",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "05",
+      "name": "Microbiology Lab",
+      "key": "b4-w13-05"
+     }
     },
     {
      "id": "b4-w13-09",
@@ -1055,6 +1099,16 @@
        "num": "12",
        "name": "Approach to Fever in Older Adults",
        "key": "b4-w13-12"
+      },
+      {
+       "num": "10",
+       "name": "Approach to the Assessment of a Patient with Fever",
+       "key": "b4-w13-10"
+      },
+      {
+       "num": "13",
+       "name": "Approach to the Assessment of a Pediatric Patient with Fever",
+       "key": "b4-w13-13"
       }
      ]
     },
@@ -1062,7 +1116,12 @@
      "id": "b4-w13-10",
      "num": "10",
      "name": "Approach to the Assessment of a Patient with Fever",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "09",
+      "name": "Approach to a Patient with Fever",
+      "key": "b4-w13-09"
+     }
     },
     {
      "id": "b4-w13-11",
@@ -1181,7 +1240,12 @@
      "id": "b4-w13-13",
      "num": "13",
      "name": "Approach to the Assessment of a Pediatric Patient with Fever",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "09",
+      "name": "Approach to a Patient with Fever",
+      "key": "b4-w13-09"
+     }
     },
     {
      "id": "b4-w13-14",
@@ -1688,7 +1752,12 @@
      "id": "b4-w14-01",
      "num": "01",
      "name": "Transmission of Infectious Agents",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "04",
+      "name": "Intro to Infection Control",
+      "key": "b4-w14-04"
+     }
     },
     {
      "id": "b4-w14-02",
@@ -2181,13 +2250,25 @@
        "title": "Schulich Reviews",
        "html": "<ul><li><strong>Anaerobes → metronidazole or clindamycin</strong> (go-to drugs); metronidazole covers anaerobes only, so it is paired with an aerobic agent (e.g. ceftriaxone + metronidazole for intra-abdominal)</li></ul>"
       }
+     ],
+     "covers": [
+      {
+       "num": "03",
+       "name": "Choosing Antibiotics Wisely Lecture 2",
+       "key": "b4-w14-03"
+      }
      ]
     },
     {
      "id": "b4-w14-03",
      "num": "03",
      "name": "Choosing Antibiotics Wisely Lecture 2",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "02",
+      "name": "Choosing Antibiotics Wisely Lecture 1",
+      "key": "b4-w14-02"
+     }
     },
     {
      "id": "b4-w14-04",
@@ -2357,19 +2438,36 @@
        "t": "pathway",
        "mermaid": "flowchart TD\n A[\"Increased transmission noted\"] --> B{\"Case threshold met?\"}\n B -->|\"No\"| C[\"Alert level 1: pre-outbreak<br/>fix gaps in routine practices\"]\n C -->|\"escalates\"| B\n B -->|\"Yes\"| D[\"Alert level 2: outbreak\"]\n D --> E[\"Notify senior leadership<br/>+ Middlesex-London Health Unit\"]\n D --> F[\"Stop admissions, cancel group activities,<br/>symptomatic staff home, close common areas\"]"
       }
+     ],
+     "covers": [
+      {
+       "num": "01",
+       "name": "Transmission of Infectious Agents",
+       "key": "b4-w14-01"
+      }
      ]
     },
     {
      "id": "b4-w14-05",
      "num": "05",
      "name": "Approach to Public Health and Outbreak Investigation",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "—",
+      "name": "In-Class - Outbreak Management and Antibiotics",
+      "key": "b4-w14-in-class-outbreak-management-and-antibiotics"
+     }
     },
     {
      "id": "b4-w14-06",
      "num": "06",
      "name": "New Vaccine Platforms",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "08",
+      "name": "Vaccine Hesitancy",
+      "key": "b4-w14-08"
+     }
     },
     {
      "id": "b4-w14-07",
@@ -2819,6 +2917,13 @@
         ]
        ]
       }
+     ],
+     "covers": [
+      {
+       "num": "06",
+       "name": "New Vaccine Platforms",
+       "key": "b4-w14-06"
+      }
      ]
     },
     {
@@ -3193,6 +3298,13 @@
        "t": "list",
        "html": "<h5>Healthcare-associated infections (HAI)</h5><ul><li>On any given day, <strong>1 in 31</strong> hospital patients has at least one HAI</li><li><strong>35–55% are preventable</strong> — highest for <strong>central line-associated bloodstream infections (CLABSI)</strong> and <strong>catheter-associated UTI (CAUTI)</strong>; lower for ventilator-associated pneumonia (VAP) and surgical site infection (SSI)</li><li>Each year <strong>8,000 Canadians die</strong> from hospital-acquired infections; 220,000 more are infected</li><li>Treatment costs more than prevention (<strong>$129 million/year</strong>) — prolonged stays, special control measures, costlier drugs, extensive surveillance (MRSA)</li></ul>"
       }
+     ],
+     "covers": [
+      {
+       "num": "05",
+       "name": "Approach to Public Health and Outbreak Investigation",
+       "key": "b4-w14-05"
+      }
      ]
     }
    ]
@@ -3356,7 +3468,12 @@
      "id": "b4-w15-03",
      "num": "03",
      "name": "Important Fungal Infections",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "08",
+      "name": "Pathology of Chronic Inflammation",
+      "key": "b4-w15-08"
+     }
     },
     {
      "id": "b4-w15-04",
@@ -4032,13 +4149,35 @@
        "t": "list",
        "html": "<h5>Workup and treatment</h5><ul><li>Needs clinical suspicion from history and exam</li><li>Ix: blood antibodies, biopsy, pathology stains for inflammatory markers, imaging, genetics</li><li>Tx: <strong>replace what is missing</strong> (levothyroxine, insulin) or <strong>suppress the immune response</strong> (rituximab)</li></ul>"
       }
+     ],
+     "covers": [
+      {
+       "num": "07",
+       "name": "Understanding Immunology Lab Test Results",
+       "key": "b4-w15-07"
+      },
+      {
+       "num": "09",
+       "name": "Autoimmunity",
+       "key": "b4-w15-09"
+      },
+      {
+       "num": "10",
+       "name": "A Generalist's Approach to Autoimmunity",
+       "key": "b4-w15-10"
+      }
      ]
     },
     {
      "id": "b4-w15-07",
      "num": "07",
      "name": "Understanding Immunology Lab Test Results",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "06",
+      "name": "Approach to Allergy",
+      "key": "b4-w15-06"
+     }
     },
     {
      "id": "b4-w15-08",
@@ -4242,25 +4381,52 @@
        "title": "Mucormycosis in diabetic ketoacidosis",
        "html": "<p><em>Rhizopus</em>/<em>Mucor</em> <strong>thrive in hyperglycemic, acidotic states</strong> and present rhinocerebrally (eyes, nose, sinus) in diabetics — treatment needs amphotericin B <strong>and surgery</strong>.</p>"
       }
+     ],
+     "covers": [
+      {
+       "num": "03",
+       "name": "Important Fungal Infections",
+       "key": "b4-w15-03"
+      },
+      {
+       "num": "11",
+       "name": "Herpes",
+       "key": "b4-w15-11"
+      }
      ]
     },
     {
      "id": "b4-w15-09",
      "num": "09",
      "name": "Autoimmunity",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "06",
+      "name": "Approach to Allergy",
+      "key": "b4-w15-06"
+     }
     },
     {
      "id": "b4-w15-10",
      "num": "10",
      "name": "A Generalist's Approach to Autoimmunity",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "06",
+      "name": "Approach to Allergy",
+      "key": "b4-w15-06"
+     }
     },
     {
      "id": "b4-w15-11",
      "num": "11",
      "name": "Herpes",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "08",
+      "name": "Pathology of Chronic Inflammation",
+      "key": "b4-w15-08"
+     }
     }
    ]
   }

@@ -509,6 +509,13 @@
        "title": "Schulich Reviews",
        "html": "<ul><li><strong>Reticulocyte count</strong> splits normocytic anemia: ↑ retics = ↑ turnover (bleeding, hemolysis) → hemolysis markers, look for bleeding; not ↑ = <strong>↓ production</strong> → marrow (aspirate/biopsy)</li></ul>"
       }
+     ],
+     "covers": [
+      {
+       "num": "07",
+       "name": "Hemoglobinopathies",
+       "key": "b3-w9-07"
+      }
      ]
     },
     {
@@ -798,13 +805,25 @@
        "title": "Schulich Reviews",
        "html": "<ul><li>Warm AIHA: idiopathic in 60%; <strong>steroids 1st line → splenectomy 2nd line</strong></li><li>Cold AIHA: <strong>steroids, splenectomy and immunosuppressants are not effective</strong> → treat the underlying cause</li></ul>"
       }
+     ],
+     "covers": [
+      {
+       "num": "10",
+       "name": "Pharmacological Treatment of Anemias",
+       "key": "b3-w9-10"
+      }
      ]
     },
     {
      "id": "b3-w9-07",
      "num": "07",
      "name": "Hemoglobinopathies",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "04",
+      "name": "Approach to Normocytic Anemia",
+      "key": "b3-w9-04"
+     }
     },
     {
      "id": "b3-w9-08",
@@ -876,7 +895,12 @@
      "id": "b3-w9-10",
      "num": "10",
      "name": "Pharmacological Treatment of Anemias",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "06",
+      "name": "Approach to Hemolytic Anemia",
+      "key": "b3-w9-06"
+     }
     }
    ]
   },
@@ -2291,6 +2315,13 @@
        "title": "Schulich Reviews",
        "html": "<ul><li>APL → DIC: malignant promyelocyte granules release <strong>procoagulant (tissue factor-related) and fibrinolytic</strong> activity (↑ t-PA/u-PA, annexin II)</li></ul>"
       }
+     ],
+     "covers": [
+      {
+       "num": "10",
+       "name": "In-Class",
+       "key": "b3-w11-10"
+      }
      ]
     },
     {
@@ -2457,7 +2488,12 @@
      "id": "b3-w11-10",
      "num": "10",
      "name": "In-Class",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "04",
+      "name": "Approach to Leukemia",
+      "key": "b3-w11-04"
+     }
     }
    ]
   },
@@ -2469,7 +2505,12 @@
      "id": "b3-w12-01",
      "num": "01",
      "name": "Adaptive Immunity",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "02",
+      "name": "Approach to Lymphadenopathy",
+      "key": "b3-w12-02"
+     }
     },
     {
      "id": "b3-w12-02",
@@ -2651,13 +2692,25 @@
        "t": "pathway",
        "mermaid": "flowchart TD\n A[\"Enlarged lymph node\"] --> B[\"Stable? ABC and vitals\"]\n B --> C[\"History: timing, B symptoms,<br/>exposures, drugs, family history\"]\n C --> D[\"Exam: site, size, character,<br/>drainage area, liver and spleen\"]\n D --> E{\"Red flags?<br/>supraclavicular, fixed, 2 cm or more,<br/>B symptoms, abnormal CBC or CXR\"}\n E -->|\"No\"| F[\"Likely reactive<br/>treat cause, reassess\"]\n F -->|\"Not resolving after 2 weeks of antibiotics\"| G\n E -->|\"Yes\"| G[\"Bloodwork + imaging\"]\n G --> H[\"Biopsy: histology, flow,<br/>stains, cultures\"]"
       }
+     ],
+     "covers": [
+      {
+       "num": "01",
+       "name": "Adaptive Immunity",
+       "key": "b3-w12-01"
+      }
      ]
     },
     {
      "id": "b3-w12-03",
      "num": "03",
      "name": "Anatomy of a Mediastinal Mass",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "06",
+      "name": "Multiple Myeloma",
+      "key": "b3-w12-06"
+     }
     },
     {
      "id": "b3-w12-04",
@@ -3294,6 +3347,13 @@
       {
        "t": "pathway",
        "mermaid": "flowchart TD\n A[\"Mediastinal mass\"] --> B[\"Stable?<br/>bilateral BP, pulsus paradoxus\"]\n B --> C[\"Tempo and mass effects<br/>SVC syndrome, Horner, stridor\"]\n C --> D[\"CT chest with contrast<br/>locate compartment\"]\n D --> E{\"Compartment?\"}\n E -->|\"Anterior\"| F[\"Thymoma, lymphoma,<br/>germ cell, thyroid, aorta\"]\n E -->|\"Middle\"| G[\"Nodes, cysts,<br/>esophagus, vessels\"]\n E -->|\"Posterior\"| H[\"Neurogenic, meningocele, spine\"]\n F --> I[\"Markers: AFP, β-hCG, LDH, anti-AChR\"]\n I --> J{\"Cyst, aneurysm or thymoma?\"}\n J -->|\"Yes\"| K[\"No biopsy: resect or manage\"]\n J -->|\"No\"| L[\"Biopsy + flow cytometry\"]"
+      }
+     ],
+     "covers": [
+      {
+       "num": "03",
+       "name": "Anatomy of a Mediastinal Mass",
+       "key": "b3-w12-03"
       }
      ]
     },

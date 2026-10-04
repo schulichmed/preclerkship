@@ -9,7 +9,12 @@
      "id": "b2-w5-01",
      "num": "01",
      "name": "An Introduction to Body Fluids Regulation",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "10",
+      "name": "Approach to Abnormal Test Results",
+      "key": "b2-w5-10"
+     }
     },
     {
      "id": "b2-w5-02",
@@ -616,13 +621,25 @@
        ],
        "lead": "<p><strong>Tools to appraise diagnostic and screening studies</strong></p>"
       }
+     ],
+     "covers": [
+      {
+       "num": "07",
+       "name": "Introduction to Laboratory Medicine",
+       "key": "b2-w5-07"
+      }
      ]
     },
     {
      "id": "b2-w5-07",
      "num": "07",
      "name": "Introduction to Laboratory Medicine",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "06",
+      "name": "Adult Screening - Diagnostic Pathway",
+      "key": "b2-w5-06"
+     }
     },
     {
      "id": "b2-w5-08",
@@ -749,6 +766,13 @@
       {
        "t": "pathway",
        "mermaid": "flowchart TD\n T[\"↓ BP, ↓ renal perfusion<br/>or ↑ extracellular K+\"] --> R[\"Renin from<br/>juxtaglomerular cells\"]\n N[\"ANP and BNP\"] -.->|\"inhibit\"| R\n AG[\"Angiotensinogen<br/>liver\"] --> A1[\"Angiotensin I\"]\n R --> A1\n A1 -->|\"ACE in lungs\"| A2[\"Angiotensin II\"]\n A2 --> AL[\"↑ Aldosterone\"]\n AL --> NA[\"↑ Na+ and water reabsorption\"]\n A2 --> VC[\"Vasoconstriction\"]\n A2 --> ADH[\"↑ ADH and thirst\"]\n NA --> ECF[\"↑ ECF volume\"]\n ADH --> ECF\n ECF --> BP[\"↑ BP<br/>osmolality restored\"]\n VC --> BP"
+      }
+     ],
+     "covers": [
+      {
+       "num": "01",
+       "name": "An Introduction to Body Fluids Regulation",
+       "key": "b2-w5-01"
       }
      ]
     },
@@ -1040,7 +1064,12 @@
      "id": "b2-w6-01",
      "num": "01",
      "name": "Introduction to Lumps and Bumps",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "02",
+      "name": "Approach to Neoplasia",
+      "key": "b2-w6-02"
+     }
     },
     {
      "id": "b2-w6-02",
@@ -1066,6 +1095,13 @@
       {
        "t": "pathway",
        "mermaid": "flowchart LR\n A[\"Normal epithelium\"] --> B[\"Dysplasia<br/>mild to severe\"] --> C[\"Carcinoma in situ<br/>full thickness,<br/>basement membrane intact\"] --> D[\"Malignant neoplasm<br/>through basement membrane\"] --> E[\"Metastasis\"]"
+      }
+     ],
+     "covers": [
+      {
+       "num": "01",
+       "name": "Introduction to Lumps and Bumps",
+       "key": "b2-w6-01"
       }
      ]
     },
@@ -1674,6 +1710,13 @@
        "t": "pathway",
        "mermaid": "flowchart LR\n S[\"Setting\"] --> P[\"Perception<br/>ask before telling\"] --> I[\"Invitation<br/>permission to share\"] --> K[\"Knowledge<br/>warning shot, small chunks\"] --> E[\"Empathy\"] --> S2[\"Strategy and summary\"]"
       }
+     ],
+     "covers": [
+      {
+       "num": "05",
+       "name": "Cancer From Macro to Molecular",
+       "key": "b2-w6-05"
+      }
      ]
     },
     {
@@ -1762,7 +1805,12 @@
      "id": "b2-w6-05",
      "num": "05",
      "name": "Cancer From Macro to Molecular",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "03",
+      "name": "Cancer Genetics",
+      "key": "b2-w6-03"
+     }
     },
     {
      "id": "b2-w6-06",
@@ -2260,13 +2308,25 @@
        "title": "Delirium or a fall may be the only sign",
        "html": "<p>In older adults an MI, appendicitis or hyperthyroidism can present as <strong>delirium, falls or functional decline</strong> with no chest pain, fever or classic features.</p>"
       }
+     ],
+     "covers": [
+      {
+       "num": "02",
+       "name": "Periodic Health Encounter for Older Adults",
+       "key": "b2-w7-02"
+      }
      ]
     },
     {
      "id": "b2-w7-02",
      "num": "02",
      "name": "Periodic Health Encounter for Older Adults",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "01",
+      "name": "Healthy Aging vs. Disease",
+      "key": "b2-w7-01"
+     }
     },
     {
      "id": "b2-w7-03",
@@ -2751,13 +2811,25 @@
        "t": "pathway",
        "mermaid": "flowchart LR\n D[\"Describe<br/>the symptoms\"] --> I[\"Investigate causes<br/>pain, drugs, constipation,<br/>urinary retention\"] --> C[\"Create a Tx plan<br/>non-drug first, then SSRI,<br/>antipsychotic last\"] --> E[\"Evaluate whether<br/>it worked\"]"
       }
+     ],
+     "covers": [
+      {
+       "num": "06",
+       "name": "Approach to Cognitive Decline",
+       "key": "b2-w7-06"
+      }
      ]
     },
     {
      "id": "b2-w7-06",
      "num": "06",
      "name": "Approach to Cognitive Decline",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "05",
+      "name": "Introduction to Cognitive Testing",
+      "key": "b2-w7-05"
+     }
     },
     {
      "id": "b2-w7-07",
@@ -3203,13 +3275,25 @@
         ]
        ]
       }
+     ],
+     "covers": [
+      {
+       "num": "10",
+       "name": "Introduction to Neurofunction",
+       "key": "b2-w7-10"
+      }
      ]
     },
     {
      "id": "b2-w7-10",
      "num": "10",
      "name": "Introduction to Neurofunction",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "09",
+      "name": "Interdisciplinary Teams & Community Resources for Older Adults",
+      "key": "b2-w7-09"
+     }
     },
     {
      "id": "b2-w7-11",
@@ -3279,19 +3363,34 @@
      "id": "b2-w8-02",
      "num": "02",
      "name": "Introduction to Basic and Clinical Pharmacology",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "05",
+      "name": "Principles of Clinical Pharmacology",
+      "key": "b2-w8-05"
+     }
     },
     {
      "id": "b2-w8-03",
      "num": "03",
      "name": "Pharmacodynamics",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "05",
+      "name": "Principles of Clinical Pharmacology",
+      "key": "b2-w8-05"
+     }
     },
     {
      "id": "b2-w8-04",
      "num": "04",
      "name": "Introduction to Pharmacokinetics",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "05",
+      "name": "Principles of Clinical Pharmacology",
+      "key": "b2-w8-05"
+     }
     },
     {
      "id": "b2-w8-05",
@@ -3591,6 +3690,23 @@
        "w": 269,
        "h": 203,
        "cap": "Repeated dosing reaches steady state after about 5 half-lives whatever the interval; halving the interval (same dose each time) raises the average level toward toxicity, doubling it lets troughs fall below the therapeutic line."
+      }
+     ],
+     "covers": [
+      {
+       "num": "02",
+       "name": "Introduction to Basic and Clinical Pharmacology",
+       "key": "b2-w8-02"
+      },
+      {
+       "num": "03",
+       "name": "Pharmacodynamics",
+       "key": "b2-w8-03"
+      },
+      {
+       "num": "04",
+       "name": "Introduction to Pharmacokinetics",
+       "key": "b2-w8-04"
       }
      ]
     },
@@ -4296,19 +4412,41 @@
        "t": "list",
        "html": "<h5>Industry and physicians</h5><ul><li>Historically, industry spent considerable effort and money to <strong>influence physician behaviour</strong></li><li>Guidances and codes of conduct now set clear boundaries between physicians and industry representatives</li><li>In Canada, industry has found marketing to physicians <strong>inefficient per sale</strong></li><li><strong>Direct-to-consumer advertising</strong>: a physician is less likely to refuse a patient's suggestion; <strong>not legal in Canada</strong></li></ul>"
       }
+     ],
+     "covers": [
+      {
+       "num": "09",
+       "name": "Canada's Healthcare System",
+       "key": "b2-w8-09"
+      },
+      {
+       "num": "10",
+       "name": "Safety, Effectiveness, and Adherence to Therapy",
+       "key": "b2-w8-10"
+      }
      ]
     },
     {
      "id": "b2-w8-09",
      "num": "09",
      "name": "Canada's Healthcare System",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "08",
+      "name": "Therapeutics Across the Lifespan",
+      "key": "b2-w8-08"
+     }
     },
     {
      "id": "b2-w8-10",
      "num": "10",
      "name": "Safety, Effectiveness, and Adherence to Therapy",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "08",
+      "name": "Therapeutics Across the Lifespan",
+      "key": "b2-w8-08"
+     }
     }
    ]
   }
