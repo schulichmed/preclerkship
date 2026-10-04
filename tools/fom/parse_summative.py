@@ -514,7 +514,7 @@ def main():
     roster = os.path.join(ROOT, "fom", "data", "notes")
     out, report = file_sections(weeks, roster)
     for doc in out.values():
-        coverage.mark_covered(doc)
+        coverage.mark_covered(doc, roster)
     for slug, doc in out.items():
         io.open(os.path.join(roster, "%s.json" % slug), "w",
                 encoding="utf-8", newline="\n").write(

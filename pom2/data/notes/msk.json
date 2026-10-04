@@ -9,49 +9,1797 @@
      "id": "msk-w7-01",
      "num": "01",
      "name": "Introduction to MSK Anatomy",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Introduction to MSK anatomy",
+     "keypoints": "<p>⭐ <strong>Upper motor neuron weakness = increased tone, brisk reflexes, Babinski present · lower motor neuron = normal or low tone, reduced reflexes</strong> · MSK weakness has <strong>no objective sensory loss</strong>. <strong>Weakness without pain is uncommon.</strong> <strong>Concentric shortens, eccentric lengthens, isometric doesn't move.</strong> <strong>Hilton's law</strong>: the nerve to the muscle is the nerve to the joint. Joint pain comes from the <strong>capsule, ligaments and bone</strong>, not the cartilage.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The vocabulary the rest of the musculoskeletal (MSK) block is built on.</strong> The one clinical question it sets up: when a patient says a limb is \"weak\", <strong>is it pain, muscle, nerve or spinal cord?</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Weakness: pain, muscle, or nerve?</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Weakness is a very common complaint whenever there is pain<ul><li><strong>pain with or without weakness is common</strong> · <strong>weakness without pain is not</strong>, which narrows the differential</li><li>true weakness can come from anywhere between the brain and the joint</li><li>a <strong>sensory problem points higher up</strong> (brain, nerve) · no sensory change → more likely muscle</li></ul></li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Patient says the limb is weak\"] --> B{\"Is it pain, true weakness, or both?\"}\n    B -->|\"Pain stops the effort\"| C[\"Looks weak because it hurts<br/>think joint, tendon, muscle\"]\n    B -->|\"True weakness\"| D{\"Objective sensory change?\"}\n    D -->|No| E[\"MUSCLE OR TENDON (MSK)<br/>e.g. ruptured Achilles, rotator cuff degeneration\"]\n    D -->|Yes| F{\"Tone and reflexes?\"}\n    F -->|\"Tone up, reflexes brisk, Babinski present\"| G[\"UPPER MOTOR NEURON<br/>brain or spinal cord\"]\n    F -->|\"Tone normal or low, reflexes reduced\"| H[\"LOWER MOTOR NEURON<br/>root or peripheral nerve\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "MSK weakness (partial or complete tear)",
+        "Lower motor neuron (peripheral nerve injury)",
+        "Upper motor neuron (stroke, spinal cord injury)"
+       ],
+       "rows": [
+        [
+         "<strong>Pain</strong>",
+         "Usually painful, may bruise",
+         "Painful (\"pinched nerve\") or painless",
+         "<strong>Often painless</strong> (stroke) · can be neuropathic"
+        ],
+        [
+         "<strong>Onset</strong>",
+         "Acute (Achilles rupture) or chronic (rotator cuff degeneration)",
+         "Acute or chronic",
+         "Often acute"
+        ],
+        [
+         "<strong>Sensation</strong>",
+         "<strong>No objective sensory loss</strong>",
+         "Sensory loss <strong>in the same nerve's territory</strong>",
+         "Sensory loss in the matching territory"
+        ],
+        [
+         "<strong>Weakness</strong>",
+         "Only that muscle (others may look weak from pain)",
+         "Any muscle that nerve supplies",
+         "<strong>More diffuse</strong> (e.g. hemiplegia)"
+        ],
+        [
+         "<strong>Reflexes</strong>",
+         "Lost only at the ruptured tendon",
+         "<strong>Reduced</strong>",
+         "<strong>Increased</strong> · tone up (spasticity) · Babinski present"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Degenerative vs inflammatory pattern</strong> of joint pain</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Degenerative",
+        "Inflammatory"
+       ],
+       "rows": [
+        [
+         "<strong>Pain with activity, better with rest</strong> · gradual onset · ± stiffness through the day · ± locking or instability · may be weak · swelling only secondary",
+         "<strong>Pain at rest</strong> · <strong>morning stiffness</strong> · swelling, warmth, redness · ± rash · malaise · fever, weight loss (especially infection) · acute or subacute onset"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Pattern for any MSK treatment plan</strong><ul><li>education</li><li>no red flags → <strong>non-drug first</strong>: relative rest · RICE (rest, ice, compression, elevation) · heat, cold, ultrasound, laser · acupuncture, yoga, massage · rehabilitation · gait aids, braces (orthoses)</li><li>then drugs or surgery if needed: <strong>topical (lowest dose) → injected → systemic</strong> (e.g. ibuprofen)</li><li>plan follow-up, contributing factors, activity restrictions</li></ul></li><li>Describe the impact at three levels: <strong>impairment</strong> (body structure or function) · <strong>activity limitation</strong> (tasks the person can't do) · <strong>participation restriction</strong> (life roles they can't fill)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Development: dermatomes and myotomes</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Paraxial mesoderm forms paired <strong>somites</strong>, each supplied by one spinal nerve<ul><li>the dermomyotome splits into a <strong>dermatome</strong> (→ skin) and a <strong>myotome</strong> (→ muscle)</li></ul></li><li><strong>Myotome</strong> = the muscles supplied by one root · myotomes fuse, so <strong>most muscles get more than one spinal segment</strong> (e.g. diaphragm C3-C5)</li><li><strong>Dermatome</strong> = the skin supplied by one root · neighbouring dermatomes overlap, so <strong>test the middle</strong> of a dermatome</li><li>Two separate skin maps: <strong>dermatome</strong> (one spinal nerve, e.g. <span class=\"wl\">C5</span>) vs <strong>peripheral nerve</strong> territory (one named nerve, e.g. <span class=\"wl\">axillary nerve</span>)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Somatic nervous system</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Carried by all spinal nerves and some cranial nerves<ul><li><strong>general sensory</strong> fibres: pain, proprioception, temperature, pressure, touch from skin, muscle and joints</li><li><strong>general motor</strong> fibres: to skeletal muscle</li></ul></li><li><strong>Who supplies what</strong><ul><li><strong>dorsal rami</strong> → deep back muscles + skin of the back</li><li><strong>ventral rami</strong> → everything else: back of the head, neck, upper limb, trunk wall, perineum, lower limb</li><li>cranial nerves → skin and muscles of the face</li></ul></li><li>Reflex arc: sensory neuron into the dorsal horn → motor neuron out to the muscle (review <span class=\"wl\">04 - Introduction to the Nervous System</span>)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/1402b3e2d4d6.jpg",
+       "alt": "somatic nerve pathway reflex arc - sensory in, motor out - upper-year notes.jpg",
+       "w": 705,
+       "h": 531,
+       "cap": "Reflex arc: the sensory neuron enters through the dorsal root ganglion, the motor neuron leaves through the ventral root to the muscle"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Muscle contractions and the kinetic chain</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Contraction",
+        "Muscle length",
+        "Example"
+       ],
+       "rows": [
+        [
+         "<strong>Isometric</strong>",
+         "<strong>No change</strong> in length",
+         "Plank · holding a shopping bag"
+        ],
+        [
+         "<strong>Isotonic - concentric</strong>",
+         "<strong>Shortens</strong>",
+         "Lifting a dumbbell in a curl"
+        ],
+        [
+         "<strong>Isotonic - eccentric</strong>",
+         "<strong>Lengthens</strong> while contracting",
+         "Lowering it slowly"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Open kinetic chain</strong>: the limb is <strong>free</strong> (biceps curl, bench press)</li><li><strong>Closed kinetic chain</strong>: the limb is <strong>fixed</strong> (push-up, walking, squatting) · more common in daily life · rotation at one joint forces the others to rotate, so biomechanics matter</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/e23e9954e09e.jpg",
+       "alt": "types of muscle contractions.png",
+       "w": 900,
+       "h": 440,
+       "cap": "Isometric (no length change) vs isotonic concentric (shortening) and eccentric (lengthening)"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Joints</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Laws of joints</strong><ul><li>any muscle that crosses a joint acts on that joint</li><li><strong>Hilton's law</strong>: the nerves supplying the muscles that move a joint also supply its sensation</li></ul></li><li><strong>Stability</strong> comes from 3 things: <strong>shape</strong> of the surfaces · <strong>ligaments</strong> · <strong>muscles</strong></li><li><strong>Synovial joints</strong> are the most common and are <strong>freely movable</strong><ul><li><strong>hyaline cartilage and synovium are poorly innervated</strong> · <strong>joint pain comes from the capsule, ligaments and bone</strong></li><li>ligaments = thickenings of the fibrous capsule where it needs reinforcing</li></ul></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Type",
+        "Axes",
+        "Movement",
+        "Example"
+       ],
+       "rows": [
+        [
+         "<strong>Plane</strong>",
+         "1",
+         "Gliding",
+         "Acromioclavicular joint"
+        ],
+        [
+         "<strong>Pivot</strong>",
+         "1",
+         "Rotation around the long axis",
+         "C1-C2 (atlas-axis) · radioulnar"
+        ],
+        [
+         "<strong>Hinge</strong>",
+         "1",
+         "Flexion, extension",
+         "Elbow"
+        ],
+        [
+         "<strong>Saddle</strong>",
+         "2",
+         "Flexion, extension, abduction, adduction, circumduction (more range than condyloid)",
+         "Thumb (carpometacarpal)"
+        ],
+        [
+         "<strong>Condyloid</strong>",
+         "2",
+         "Same as saddle",
+         "Knee (medwiki) · knuckle (metacarpophalangeal) (sources differ - check the slides)"
+        ],
+        [
+         "<strong>Ball-and-socket</strong>",
+         "Many",
+         "<strong>Largest range</strong>, including rotation",
+         "<span class=\"wl\">Shoulder</span> · hip"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/60a36deadd4b.jpg",
+       "alt": "types of synovial joints.png",
+       "w": 900,
+       "h": 676,
+       "cap": "The six synovial joint types: plane, pivot, hinge, saddle, condyloid, ball-and-socket"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. The skeleton and bony terms</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Anatomical position</strong>: standing upright, face, palms and toes forward</li><li><strong>Axial skeleton</strong>: skull (only freely movable joint = temporomandibular) · vertebral column (bigger lower down; coccyx not weight-bearing) · sternum · 12 pairs of ribs (lowest 2 floating)</li><li><strong>Appendicular skeleton</strong>: pectoral girdle (<span class=\"wl\">clavicle</span>, <span class=\"wl\">scapula</span>) → <span class=\"wl\">humerus</span> → radius, ulna → carpals → metacarpals → phalanges (thumb 2, other digits 3) · pelvic girdle → femur → patella (a sesamoid bone in a tendon) → tibia (weight-bearing), fibula → tarsals → metatarsals → phalanges<ul><li>the <span class=\"wl\">sacroiliac joint</span> barely moves · it hurts when it does (e.g. pregnancy)</li></ul></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Group",
+        "Terms"
+       ],
+       "rows": [
+        [
+         "<strong>Articulating bumps</strong>",
+         "head (rounded end on a neck) · condyle (rounded distal end) · facet (small flat surface)"
+        ],
+        [
+         "<strong>Attachment bumps</strong> (biggest → smallest)",
+         "<strong>trochanter</strong> (femur only) > <strong>tuberosity</strong> > <strong>tubercle</strong> · process · protuberance · epicondyle (beside a condyle) · crest > line · spine"
+        ],
+        [
+         "<strong>Depressions</strong>",
+         "groove · notch (edge) · fossa (shallow basin) · sulcus (narrow crevice)"
+        ],
+        [
+         "<strong>Holes</strong>",
+         "foramen (round) · fissure (slit) · meatus (canal)"
+        ],
+        [
+         "<strong>Other</strong>",
+         "ramus (flat branch at an angle) · neck · sinus (air-filled cavity)"
+        ]
+       ]
+      }
+     ]
     },
     {
      "id": "msk-w7-02.1",
      "num": "02.1",
      "name": "Anatomy of the Back & Neck",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Anatomy of the back and neck",
+     "keypoints": "<p>⭐ <strong>Anterior longitudinal ligament resists hyperextension; the narrow posterior longitudinal ligament resists hyperflexion</strong> (which is why discs bulge out beside it). <strong>Cervical = transverse foramina + bifid spines · thoracic = costal facets + long downward spines · lumbar = big bodies.</strong> <strong>C1 nods \"yes\", C2 turns \"no\"; no disc between them.</strong> <strong>Trapezius = cranial nerve XI · deep back muscles = dorsal rami.</strong> Erector spinae → lifting strains · transversospinalis → rotation strains.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Every structure here is a possible pain generator in the next lecture.</strong> Learn what makes each region's vertebrae different, which ligament stops which movement, and which back muscles a strain hits.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The vertebral column</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Jobs</strong>: protect the spinal cord · carry body weight · posture and movement (flexion, extension, lateral flexion, rotation)</li><li><strong>33 vertebrae</strong>: 7 cervical · 12 thoracic · 5 lumbar · 5 sacral (fused into the sacrum) · 4 coccygeal (fused into the coccyx)</li><li><strong>Curves</strong> absorb stress and protect the back</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Primary curves",
+        "Secondary curves"
+       ],
+       "rows": [
+        [
+         "<strong>Where</strong>",
+         "<strong>Thoracic and sacral</strong>",
+         "<strong>Cervical and lumbar</strong>"
+        ],
+        [
+         "<strong>When</strong>",
+         "Fetal period (flexed fetal position), kept for life",
+         "Early infancy, as the baby extends out of flexion"
+        ],
+        [
+         "<strong>Too much</strong>",
+         "<span class=\"wl\">Kyphosis</span> (thoracic)",
+         "<span class=\"wl\">Lordosis</span> (lumbar)"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><span class=\"wl\">Scoliosis</span> = an abnormal <strong>sideways</strong> curve</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. A typical vertebra</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Body</strong> (front): carries weight, <strong>gets bigger going down</strong></li><li><strong>Arch</strong> (back) = <strong>pedicles</strong> (join arch to body) + <strong>laminae</strong> (close it behind)<ul><li><strong>vertebral foramen</strong> = the hole for the cord, between body and arch</li><li><strong>spinous process</strong> (back) and <strong>transverse processes</strong> (sides) = muscle and ligament attachments</li><li><strong>4 articular processes</strong> → <strong>facet (<span class=\"wl\">zygapophyseal</span>) joints</strong> = plane synovial joints between neighbours</li></ul></li><li>The superior and inferior <strong>vertebral notches</strong> of neighbouring pedicles form the <strong>intervertebral foramen</strong>, where the <strong>spinal nerve exits</strong></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/73f91e7192f1.jpg",
+       "alt": "anatomy of a vertebra.png",
+       "w": 900,
+       "h": 334,
+       "cap": "Typical vertebra from above and from the side: body, pedicles, laminae, processes, vertebral foramen and intervertebral foramen"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. The intervertebral disc</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Between vertebral bodies, joined to them at the <strong>end plate</strong> (cartilage fused to the disc + a thin layer of porous bone)<ul><li><strong>anulus fibrosus</strong> = outer rings of fibrocartilage</li><li><strong>nucleus pulposus</strong> = inner gel, high water content</li></ul></li><li>Strong attachment, allows movement, absorbs shock · <strong>about 25% of the column's height</strong> · <strong>thickest in cervical and lumbar</strong> spine · <strong>no disc between C1 and C2</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Regional differences</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Cervical",
+        "Thoracic",
+        "Lumbar"
+       ],
+       "rows": [
+        [
+         "<strong>Body</strong>",
+         "Small",
+         "Heart-shaped, <strong>costal facets for ribs</strong>",
+         "<strong>Large</strong>, short heavy pedicles"
+        ],
+        [
+         "<strong>Vertebral foramen</strong>",
+         "<strong>Large</strong> (cervical enlargement of the cord)",
+         "<strong>Small, circular</strong>",
+         "Triangular, larger than thoracic"
+        ],
+        [
+         "<strong>Transverse process</strong>",
+         "Short, with <strong>transverse foramina</strong> (vertebral artery C6 up to C1; only the vein at C7)",
+         "Long, with facets for the rib tubercle",
+         "Long and slender (Kai) · short and wide (medwiki) (sources differ - check the slides)"
+        ],
+        [
+         "<strong>Spinous process</strong>",
+         "Short, <strong>bifid</strong> · <strong>C7 long = vertebra prominens</strong>",
+         "<strong>Long, slopes down</strong> over the next one",
+         "Short and stout"
+        ],
+        [
+         "<strong>Main movement</strong>",
+         "Flexion, extension",
+         "<strong>Rotation</strong>, some lateral flexion · facets and spines limit flexion and extension",
+         "Flexion, extension, some side bending, <strong>little rotation</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Atypical cervical vertebrae</strong><ul><li><strong>C1 (<span class=\"wl\">atlas</span>)</strong>: a ring - <strong>no body, no spinous process</strong> · lateral masses meet the occipital condyles → <strong>\"yes\" nod</strong></li><li><strong>C2 (<span class=\"wl\">axis</span>)</strong>: the <strong>dens</strong> projects up where C1's body would be → pivot joint → <strong>\"no\" rotation</strong></li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Ligaments</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Ligament",
+        "Where",
+        "Resists"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Anterior longitudinal</span></strong>",
+         "Broad, strong band on the front of bodies and discs, occiput to sacrum",
+         "<strong>Hyperextension</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Posterior longitudinal</span></strong>",
+         "<strong>Narrow</strong>, inside the canal on the back of the bodies",
+         "<strong>Hyperflexion</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Ligamentum flavum</span></strong>",
+         "Yellow, joins adjacent laminae",
+         "—"
+        ],
+        [
+         "<strong>Supraspinous</strong>",
+         "Tips of the spinous processes, C7 to sacrum",
+         "—"
+        ],
+        [
+         "<strong>Ligamentum nuchae</strong>",
+         "Continues the supraspinous above C7 to the skull · fills the neck curve",
+         "Attachment for neck and upper back muscles"
+        ],
+        [
+         "<strong>Interspinous · intertransverse</strong>",
+         "Between neighbouring spinous · transverse processes",
+         "—"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/1ceeed1f55bf.jpg",
+       "alt": "vertebral column ligaments - ALL, PLL, flavum, supraspinous, interspinous, nuchae - upper-year notes.jpg",
+       "w": 809,
+       "h": 513,
+       "cap": "Ligaments of the vertebral column on a sagittal section, with the same ligaments on MRI"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Muscles of the back</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Layer",
+        "Muscle",
+        "Action",
+        "Nerve"
+       ],
+       "rows": [
+        [
+         "<strong>Superficial (extrinsic)</strong>",
+         "<span class=\"wl\">Trapezius</span>",
+         "Elevates, depresses, retracts scapula · turns the glenoid up",
+         "<strong>Spinal accessory nerve (<span class=\"wl\">cranial nerve XI</span>)</strong>"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Latissimus dorsi</span>",
+         "Extends, adducts, medially rotates the humerus",
+         "<span class=\"wl\">Thoracodorsal</span>"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Levator scapulae</span>",
+         "Elevates scapula · turns the glenoid down",
+         "<span class=\"wl\">Dorsal scapular</span> + C3-C4"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Rhomboid major and minor</span>",
+         "Retract scapula, turn the glenoid down, hold it to the chest wall",
+         "Dorsal scapular"
+        ],
+        [
+         "<strong>Intermediate</strong>",
+         "Serratus posterior superior · inferior",
+         "Elevate · depress ribs · mainly proprioception",
+         "Intercostal nerves"
+        ],
+        [
+         "<strong>Deep (intrinsic)</strong>",
+         "<strong><span class=\"wl\">Erector spinae</span></strong> (iliocostalis lateral → longissimus → spinalis medial)",
+         "Both sides: <strong>extend spine and head</strong>, <strong>eccentrically control forward bending</strong> · one side: lateral flexion",
+         "<strong>Dorsal rami</strong>"
+        ],
+        [
+         "",
+         "Splenius capitis, cervicis",
+         "Both: extend head and neck · one: lateral flexion + rotation",
+         "Dorsal rami"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Transversospinalis</span> (semispinalis 4-6 segments · multifidus 2-4 · rotatores 1-2)",
+         "<strong>Rotation</strong> to the opposite side · stabilise · proprioception",
+         "Dorsal rami"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Why they matter for back pain</strong><ul><li><strong>erector spinae</strong>: strained <strong>lowering things to the floor</strong> (eccentric) or <strong>lifting them</strong> (concentric)</li><li><strong>transversospinalis</strong>: rotates each segment, so <strong>over-rotation tears it</strong> - a frequent cause</li><li>neck: trapezius (people hold tension here), levator scapulae, splenius</li></ul></li><li>Dorsal rami also become the <strong>skin nerves of the back and neck</strong></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/5cb484116eb9.jpg",
+       "alt": "back muscle layers - superficial, intermediate serratus posterior, deep - upper-year notes.jpg",
+       "w": 705,
+       "h": 437,
+       "cap": "Back muscles in three layers: superficial, intermediate (serratus posterior superior and inferior) and deep"
+      }
+     ]
     },
     {
      "id": "msk-w7-02.2",
      "num": "02.2",
      "name": "Clinical Approach to Mechanical Back & Neck Pain",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Clinical approach to mechanical back and neck pain",
+     "keypoints": "<p>⭐ <strong>No red flags and under 6 weeks → no imaging.</strong> <strong>Disc pain is worse with flexion; facet pain is worse with extension.</strong> Mechanical pain is <strong>worse with movement, better with rest, and never burning or tingling.</strong> <strong>Herniation = worse with cough or sneeze, sudden after lifting, younger patient.</strong> Whiplash: <strong>keep moving, no collar.</strong> Muscle pain is a <strong>diagnosis of exclusion</strong>.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Almost all back and neck pain is benign \"mechanical\" pain, and the work is to screen out the rare dangerous cause without over-investigating the common one.</strong> Ask about <strong>red flags every time</strong>; with none, an exact anatomical diagnosis is often unnecessary.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The approach</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Possible pain generators</strong>: paraspinal muscle and soft tissue · <span class=\"wl\">intervertebral disc</span> · facet (<span class=\"wl\">zygapophyseal</span>) joint · nerves in the spine · <span class=\"wl\">sacroiliac joint</span></li><li><strong>History</strong>: a full pain history (OLD CARS: onset, location, duration, character, alleviating/aggravating, radiation, severity, or <span class=\"wl\">SOCRATES</span>) <strong>plus red flags</strong></li><li><strong>Exam</strong>: the spine itself · contributing limb problems · a neurological exam · signs of red flags<ul><li>palpable landmarks: C7 (vertebra prominens) · acromion · spine and medial border of the scapula · ribs 6-12 · iliac crest · sacrum</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Red flags</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Category",
+        "Red flags",
+        "Think of"
+       ],
+       "rows": [
+        [
+         "<strong>Neurological</strong>",
+         "<strong>Progressive weakness or sensory change</strong> · <strong>saddle anesthesia</strong> · <strong>incontinence</strong> · erectile dysfunction · loss of hand dexterity · ataxic gait · abnormal reflexes",
+         "Cord or cauda equina compression"
+        ],
+        [
+         "<strong>Inflammatory</strong>",
+         "<strong>Morning stiffness</strong> · <strong>improves with exercise</strong> · pain in the 2nd half of the night · family history · rashes · eye symptoms",
+         "Spondyloarthropathy"
+        ],
+        [
+         "<strong>Neoplastic</strong>",
+         "Young age · <strong>severe night pain</strong>, no relief with rest · weight loss · night sweats · <strong>history of cancer</strong> · associated signs (e.g. blood in the urine)",
+         "Tumour, metastasis"
+        ],
+        [
+         "<strong>Infectious</strong>",
+         "Fever · sweats · <strong>IV drug use</strong> · <strong>immunosuppression</strong>",
+         "Osteomyelitis, discitis, abscess"
+        ],
+        [
+         "<strong>Fracture</strong>",
+         "Fall or trauma · <span class=\"wl\">osteoporosis</span> · previous fragility fracture",
+         "Fracture"
+        ],
+        [
+         "<strong>Vascular</strong>",
+         "Dizziness with neck movement, cranial nerve signs, drop attacks · limb pain with activity (claudication)",
+         "Vertebral artery insufficiency · vascular claudication"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Investigations: when (not) to image</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Most low back pain needs no imaging</strong><ul><li>soft-tissue causes often don't show</li><li><strong>can't separate symptomatic from asymptomatic changes</strong> - after a certain age everyone has them</li><li>it rarely changes management</li></ul></li><li><strong>Red flags → imaging is required</strong>, plus targeted tests (blood work and cultures for infection · other imaging for cancer · vascular imaging · electromyography for nerve problems)</li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Back or neck pain\"] --> B{\"Any red flags?\"}\n    B -->|Yes| C[\"Investigate the worry now<br/>X-ray: fracture, malignancy<br/>MRI: neurological compromise, infection, tumour<br/>+ targeted blood work or cultures\"]\n    B -->|No| D{\"Present under 6 weeks?\"}\n    D -->|Yes| E[\"NO IMAGING<br/>conservative care\"]\n    D -->|\"No - worse or no better after 6 weeks of conservative care\"| F[\"Image<br/>MRI is the best test<br/>CT only if MRI is contraindicated or unavailable\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Test",
+        "Best for"
+       ],
+       "rows": [
+        [
+         "<strong>X-ray</strong>",
+         "Cheap, quick screen of <strong>alignment and fractures</strong>"
+        ],
+        [
+         "<strong>CT</strong>",
+         "<strong>Bony detail</strong>, trauma"
+        ],
+        [
+         "<strong>MRI</strong>",
+         "<strong>Best for non-bony structures</strong> · most expensive, longest wait"
+        ],
+        [
+         "<strong>Bone scan</strong>",
+         "Disease in many places · \"hot\" vs \"cold\" lesions"
+        ],
+        [
+         "<strong>CT myelogram</strong>",
+         "Dye into the dural sac · only if MRI is contraindicated"
+        ],
+        [
+         "<strong>Image-guided injection</strong>",
+         "Diagnosis <strong>and</strong> treatment (pain gone after a facet injection = facet was the source)"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>After 6 weeks without red flags: an X-ray may be the starting point (medwiki) · X-ray only when looking for red-flag conditions, MRI preferred (Kai) (sources differ - check the slides)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Mechanical pain: what it looks like</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Definition</strong>: axial (spine) pain that is <strong>worse with movement and relieved by rest</strong><ul><li><strong>site</strong>: midline or just beside it, neck or back</li><li><strong>onset</strong>: anywhere from acute to chronic · usually built up by degeneration, then <strong>\"tweaked\"</strong> by stairs or a bad bend</li><li><strong>character</strong>: dull ache or sharp, stabbing · <strong>not burning or tingling</strong> (that is nerve pain)</li><li><strong>radiation</strong>: variable, but <strong>not to the tips of the limbs</strong></li><li><strong>red flags: none</strong> · imaging often <strong>normal</strong></li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Muscle pain and whiplash</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Three muscle problems</strong>: acute <strong>strain or spasm</strong> · <strong>repetitive strain</strong> (repetition, force, vibration, compression, awkward postures) · <strong>myofascial trigger points</strong> (tender knots that give a reproducible referred pattern)<ul><li>lumbar: <strong>erector spinae</strong> (strained lowering or lifting) · transversospinalis (rotation) · neck: trapezius, levator scapulae, splenius · sustained posture</li></ul></li><li><strong>No test proves it</strong> - a <strong>diagnosis of exclusion</strong></li><li><strong>Treatment (the template for most back pain)</strong>: rule out red flags → <strong>reassure</strong> (common, benign, self-limiting, excellent prognosis) → <strong>relative rest, not bed rest</strong> → ice or heat → topical or a short course of oral anti-inflammatories → physiotherapy for postural support</li><li><strong><span class=\"wl\">Whiplash associated disorder</span></strong>: neck symptoms after an <strong>acceleration-deceleration</strong> injury (car crash)<ul><li><strong>muscles most often</strong> (strains, partial tears) · less often facets > bone > cord</li><li><strong>under 5% still have severe symptoms at 2 years</strong></li><li>X-ray if fracture is a worry · MRI if neurological signs · otherwise <strong>keep moving, no collar</strong>, heat or ice, acetaminophen or NSAIDs (non-steroidal anti-inflammatory drugs), <strong>modest</strong> physiotherapy (aggressive programs can worsen it)</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Spondylosis: the degenerative cascade</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Spondylosis</span></strong> = spinal \"arthritis\" = <strong><span class=\"wl\">degenerative disc disease</span> + <span class=\"wl\">facet arthropathy</span></strong> with loss of disc height and thickened ligaments</li><li><strong>The cascade</strong>: repeated axial loading → end-plate damage → tears in the anulus → nucleus pushes into the tears (<strong>internal disc disruption</strong>) → disc dries, flattens → angles change, lumbar curve lost → facets overloaded: synovial thickening, cartilage loss, <strong>osteophytes (bone spurs)</strong>, lax capsule → <strong>slipping (degenerative spondylolisthesis)</strong> · thickened ligaments → <strong>less room for the nerves</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong>Disc pain (internal disc disruption)</strong>",
+        "<strong>Facet joint pain</strong>"
+       ],
+       "rows": [
+        [
+         "<strong>What</strong>",
+         "Nucleus pushes through tears in the anulus but <strong>stays inside it</strong>",
+         "Arthritis of the synovial facet joints"
+        ],
+        [
+         "<strong>How common</strong>",
+         "<strong>20-40% of back pain</strong>",
+         "Imaging changes <strong>don't match symptoms</strong> (everyone gets them)"
+        ],
+        [
+         "<strong>Pain</strong>",
+         "<strong>Axial > leg</strong>",
+         "Localised, may be one-sided · refers: <strong>headache</strong> from the neck · buttock or leg from the lumbar spine, rarely past the knee"
+        ],
+        [
+         "<strong>Worse with</strong>",
+         "<strong>FLEXION</strong> (bending forward squeezes the disc)",
+         "<strong>EXTENSION</strong> (bending back squeezes the facets) · eased by flexion"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "Conservative: therapy, exercise · NSAIDs, acetaminophen",
+         "<strong>Flexion-based</strong> physiotherapy · NSAIDs, acetaminophen · facet injection · <strong>medial branch block or radiofrequency ablation</strong> (the medial branch supplies the facet)"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/6ca25d038458.jpg",
+       "alt": "disc vs facet loading in flexion and extension - upper-year notes.jpg",
+       "w": 342,
+       "h": 196,
+       "cap": "Bending forward squeezes the disc; bending backward squeezes the facet joints"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/908d61b36f7e.jpg",
+       "alt": "referred pain by spinal level.png",
+       "w": 900,
+       "h": 1063,
+       "cap": "Referred pain maps from facet joints at each spinal level"
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Disc herniation and spondylolisthesis</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Disc herniation</span></strong>: disc material goes <strong>beyond</strong> the anulus<ul><li>causes <strong>both</strong> disc pain <strong>and</strong> nerve compression</li><li><strong>younger patients</strong> · <strong>sudden pain after lifting</strong> · <strong>worse with coughing or sneezing</strong></li><li>lumbar discs herniate <strong>posterolaterally</strong>, around the narrow posterior longitudinal ligament, <strong>towards the nerve roots</strong></li></ul></li><li><strong><span class=\"wl\">Degenerative spondylolisthesis</span></strong>: one vertebra <strong>slips</strong> on the next (usually forward) as spondylosis progresses</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/3c42673440dc.jpg",
+       "alt": "disc bulge, protrusion, extrusion and sequestration - upper-year notes.jpg",
+       "w": 438,
+       "h": 311,
+       "cap": "From normal disc to diffuse bulge, protrusion, extrusion and a free sequestered fragment"
+      }
+     ]
     },
     {
      "id": "msk-w7-03.1",
      "num": "03.1",
      "name": "Anatomy of the Back & Spinal Cord",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Anatomy of the back and spinal cord",
+     "keypoints": "<p>⭐ <strong>The cord ends at L1-L2 (conus medullaris) but the dural sac runs to S2 - so a lumbar puncture or epidural goes in at L3/L4 or L4/L5, into the cauda equina, not the cord.</strong> <strong>C1-C7 exit above their vertebra, C8 below C7, everything after below.</strong> <strong>Epidural space and subarachnoid space are real; subdural is potential.</strong> <strong>Ventral root = motor, dorsal root = sensory.</strong> <strong>C7 = middle finger, triceps · L5 = big toe extension · S1 = lateral foot, Achilles.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The spinal cord is shorter than the spine, and almost every clinical rule in this block follows from that:</strong> where it ends, which root a disc hits, where a needle can go safely, and why lumbar and cervical stenosis behave differently.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The spinal cord</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Part of the <strong>central nervous system</strong>, continuous with the medulla · a reflex centre and the pathway between body and brain</li><li>Runs from the <strong>foramen magnum to L1-L2</strong> in adults</li><li><strong>Not uniform in width</strong><ul><li><strong>cervical enlargement</strong> (C4-T1 cord levels) → <strong>brachial plexus</strong> (upper limb)</li><li><strong>lumbosacral enlargement</strong> (L1-S3 cord levels) → lumbar and sacral plexuses (lower limb)</li></ul></li><li><strong>The end of the cord</strong><ul><li><strong><span class=\"wl\">conus medullaris</span></strong> = the tapered tip, at L1-L2</li><li><strong><span class=\"wl\">filum terminale</span> (internum)</strong> = a thread of pia from the tip to the coccyx, anchoring the cord</li><li><strong><span class=\"wl\">cauda equina</span></strong> (\"horse's tail\") = the lumbar and sacral roots running down past the cord's end to their own foramina</li></ul></li><li><strong>Why it is short</strong>: in the embryo the cord fills the canal, but the spine grows faster, leaving the cord in the <strong>upper two-thirds</strong> (Kai) · medwiki says the cord is at full adult length at birth and spans the whole column then (sources differ - check the slides)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/18ba428a42d4.jpg",
+       "alt": "spinal cord enlargements and 31 pairs of spinal nerves - upper-year notes.jpg",
+       "w": 728,
+       "h": 532,
+       "cap": "The cord ends at L1-L2; cervical enlargement for the brachial plexus, lumbar enlargement for the lumbosacral plexus; 8 cervical, 12 thoracic, 5 lumbar, 5 sacral and 1 coccygeal nerves"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Spinal nerves and where they exit</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>31 pairs</strong>: 8 cervical · 12 thoracic · 5 lumbar · 5 sacral · 1 coccygeal</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Nerves",
+        "Exit the spine",
+        "Why it matters"
+       ],
+       "rows": [
+        [
+         "<strong>C1-C7</strong>",
+         "<strong>Above</strong> their own vertebra",
+         ""
+        ],
+        [
+         "<strong>C8</strong>",
+         "<strong>Below C7</strong> - there is no C8 vertebra",
+         "The switch point"
+        ],
+        [
+         "<strong>T1 downward</strong>",
+         "<strong>Below</strong> their own vertebra (under its pedicle)",
+         ""
+        ],
+        [
+         "<strong>Lower lumbar, sacral, coccygeal</strong>",
+         "Leave the cord high, <strong>travel down as the cauda equina</strong>, exit at their own foramen",
+         "The gap between cord segment and foramen grows going down"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Making a spinal nerve</strong><ul><li><strong>ventral (anterior) rootlets = motor</strong> (+ presynaptic autonomic fibres) · <strong>dorsal (posterior) rootlets = sensory</strong></li><li>rootlets → ventral and dorsal roots → join <strong>in the intervertebral foramen</strong> as a mixed spinal nerve</li><li>it splits into a <strong>dorsal ramus</strong> (skin and deep muscles of the back) and a <strong>ventral ramus</strong> (limbs and the rest of the trunk)</li></ul></li><li>Review the inside of the cord in <span class=\"wl\">04 - Introduction to the Nervous System</span></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Meninges and spaces</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Layer or space",
+        "What it is",
+        "Clinically"
+       ],
+       "rows": [
+        [
+         "<strong>Epidural space</strong>",
+         "<strong>Real</strong> space outside the dura · fat + internal venous plexus",
+         "<strong>Epidural</strong> anesthetic goes here"
+        ],
+        [
+         "<strong>Dura mater</strong> (\"tough mother\")",
+         "Tough outer layer · forms the <strong>dural sac down to S2</strong> · anchored to the coccyx (filum terminale externum) · continuous with the cranial dura",
+         "Pierced by spinal nerves"
+        ],
+        [
+         "<strong>Subdural space</strong>",
+         "<strong>Potential</strong> space",
+         "—"
+        ],
+        [
+         "<strong>Arachnoid mater</strong>",
+         "Delicate, no blood vessels · held against the dura by cerebrospinal fluid (CSF) pressure",
+         "—"
+        ],
+        [
+         "<strong>Subarachnoid space</strong>",
+         "<strong>Real</strong> space with <strong>CSF</strong> and the cord's vessels · enlarges below the cord as the <strong>lumbar cistern (L2 to S2)</strong>, holding the cauda equina",
+         "<strong>Lumbar puncture</strong>, spinal block"
+        ],
+        [
+         "<strong>Pia mater</strong>",
+         "Directly on the cord, roots and vessels · <strong>denticulate ligaments</strong> anchor the cord to the dural sac · continues as the filum terminale",
+         "—"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Epidural vs spinal block and lumbar puncture</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Both done at L3/L4 or L4/L5</strong> - <strong>below the end of the cord</strong>, so the floating cauda equina roots move away from the needle</li><li><strong><span class=\"wl\">Epidural</span></strong>: needle into the <strong>epidural space</strong>, around the dura · bathes the cauda equina roots as they leave the sac → <strong>numb below the level</strong> · widely used in <strong>labour</strong></li><li><strong>Spinal block / <span class=\"wl\">lumbar puncture</span></strong>: needle into the <strong>subarachnoid space</strong> · drug straight into CSF (onset ~5 minutes) or CSF sampled<ul><li>patient on their side with the trunk flexed</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/2064d3bc4df0.jpg",
+       "alt": "spinal vs. epidural.png",
+       "w": 900,
+       "h": 375,
+       "cap": "Epidural: needle stops in the epidural space; spinal block or lumbar puncture: needle enters the subarachnoid space and CSF"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Dermatomes, myotomes and root lesions</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Dermatome</strong> = skin supplied by one root · <strong>myotome</strong> = muscles supplied by one root</li><li>A root lesion gives <strong>sensory change in its dermatome, weakness in its myotome, and a reduced reflex</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Root",
+        "Dermatome (sensation)",
+        "Myotome (movement)",
+        "Reflex"
+       ],
+       "rows": [
+        [
+         "<strong>C5</strong>",
+         "Lateral shoulder to lateral elbow",
+         "<strong>Shoulder abduction</strong>, elbow flexion",
+         "Biceps, brachioradialis"
+        ],
+        [
+         "<strong>C6</strong>",
+         "Lateral forearm, <strong>thumb and index finger</strong>",
+         "Elbow flexion, <strong>wrist extension</strong>",
+         "Biceps, brachioradialis"
+        ],
+        [
+         "<strong>C7</strong>",
+         "<strong>Middle finger</strong>",
+         "<strong>Elbow extension</strong>",
+         "<strong>Triceps</strong>"
+        ],
+        [
+         "<strong>L4</strong>",
+         "Medial lower leg, <strong>medial malleolus</strong>",
+         "<strong>Ankle dorsiflexion</strong>",
+         "<strong>Patellar</strong>"
+        ],
+        [
+         "<strong>L5</strong>",
+         "<strong>Dorsum of the foot</strong> (1st-3rd web spaces)",
+         "<strong>Big toe extension</strong>",
+         "Hamstrings (often absent - compare sides)"
+        ],
+        [
+         "<strong>S1</strong>",
+         "<strong>Lateral foot and heel</strong>",
+         "<strong>Plantar flexion</strong>",
+         "<strong>Achilles</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>C8 and L3 are in the objectives but neither source lists them - check the slides</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/ca201f65c33a.jpg",
+       "alt": "cauda equina, conus medullaris, and filum terminale.png",
+       "w": 900,
+       "h": 685,
+       "cap": "The cord tapers to the conus medullaris at L1-L2; the filum terminale anchors it; the cauda equina roots run on below"
+      }
+     ]
     },
     {
      "id": "msk-w7-03.2",
      "num": "03.2",
      "name": "Clinical Approach to Non-Mechanical Back & Neck Pain",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Clinical approach to non-mechanical back and neck pain",
+     "keypoints": "<p>⭐ <strong>Saddle anesthesia + urinary retention or fecal incontinence = cauda equina syndrome → urgent MRI and decompression within 48 hours.</strong> <strong>Lumbar stenosis squeezes roots (neurogenic claudication, eased by bending forward); cervical stenosis squeezes the cord (clumsy hands, upper motor neuron signs).</strong> <strong>A disc hits the lower root: C4/5 → C5, L4/5 → L5.</strong> Radicular pain is <strong>eased by slackening the nerve</strong>. <strong>Inflammatory pain gets better with movement.</strong> Spondyl<strong>osis</strong> degenerates, spondyl<strong>olysis</strong> fractures, spondylo<strong>listhesis</strong> slips.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Non-mechanical pain is either a squeezed nerve - at the side (radiculopathy) or in the centre (stenosis, myelopathy, cauda equina) - or \"everything else\"</strong> (inflammatory, fracture, visceral, infection, tumour). Without red flags, start the same conservative care as for mechanical pain.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Triage: which group is this?</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Adult with back pain<br/>history + physical exam\"] --> N[\"Exclude non-spinal causes<br/>hip · visceral · vascular · systemic · viral\"]\n    A --> B{\"Red flags?\"}\n    B -->|\"Yes (under 1% in primary care)\"| C[\"SERIOUS SPINAL DISEASE<br/>fracture · metastasis · infection<br/>axial spondyloarthropathy · cauda equina<br/>investigate now\"]\n    B -->|No| D{\"Nerve pattern?<br/>leg pain in a dermatome or with walking\"}\n    D -->|\"Yes (5-10%)\"| E[\"Radicular pain, radiculopathy,<br/>spinal stenosis\"]\n    D -->|\"No (90-95%)\"| F[\"Non-specific low back pain<br/>acute or persistent\"]\n    E --> G[\"Advice + reassurance<br/>good prognosis · no immediate imaging\"]\n    F --> G"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Group",
+        "Non-drug",
+        "Drug"
+       ],
+       "rows": [
+        [
+         "<strong>Radicular pain</strong>",
+         "Exercise, physiotherapy",
+         "Neuropathic pain agents · opioids for rescue"
+        ],
+        [
+         "<strong>Acute non-specific</strong>",
+         "<strong>Stay active, no bed rest</strong> · physiotherapy",
+         "NSAIDs (non-steroidal anti-inflammatory drugs) · muscle relaxants · weak opioids"
+        ],
+        [
+         "<strong>Persistent non-specific</strong>",
+         "Exercise · psychological therapies · multidisciplinary care · physiotherapy",
+         "NSAIDs, cautiously"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><span class=\"wl\">Nerve compression</span> can come from <strong>anything that takes up space</strong>: disc, osteophyte, abscess, tumour, bleed, slipped vertebra</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Radiculopathy: compression at the side</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Definition</strong>: a <strong>spinal nerve root</strong> compressed in or around the <strong>intervertebral foramen</strong><ul><li><strong>degenerative causes are by far the most common</strong> (disc herniation, spondylosis)</li><li>others: trauma · tumour · infection · inflammation · cyst · osteoporotic fracture · sarcoidosis · diabetes · arteriovenous malformation</li></ul></li><li><strong>Presents as</strong><ul><li><strong>limb > neck or back</strong>, in a <strong>dermatome</strong></li><li><strong>burning, tingling, electric</strong> (neuropathic) · can be very severe</li><li><strong>eased by positions that slacken the nerve</strong> (arm overhead, legs curled)</li><li><strong>weakness and reduced reflexes in a myotome</strong> · sensory change</li></ul></li><li><strong>Where</strong>: lumbar - <strong>over 99% degenerative</strong>, mostly <strong>L5 and S1</strong> · cervical - mostly <strong>C7 and C6</strong>, from cervical spondylosis · thoracic herniation is rare</li><li><strong>Which root does the disc hit? The lower one - for different reasons</strong><ul><li><strong>cervical</strong>: nerves exit <strong>above</strong> their vertebra → <strong>C4/5 disc → C5</strong></li><li><strong>lumbar</strong>: the upper root has already left; a posterolateral disc hits the <strong>traversing</strong> root → <strong>L4/5 disc → L5</strong> (a far-lateral disc can catch the exiting L4)</li></ul></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Root",
+        "Sensation",
+        "Movement",
+        "Reflex"
+       ],
+       "rows": [
+        [
+         "<strong>C5</strong>",
+         "Lateral shoulder to elbow",
+         "Shoulder abduction, elbow flexion",
+         "Biceps, brachioradialis"
+        ],
+        [
+         "<strong>C6</strong>",
+         "Lateral forearm, thumb, index",
+         "Elbow flexion, <strong>wrist extension</strong>",
+         "Biceps, brachioradialis"
+        ],
+        [
+         "<strong>C7</strong>",
+         "<strong>Middle finger</strong>",
+         "<strong>Elbow extension</strong>",
+         "<strong>Triceps</strong>"
+        ],
+        [
+         "<strong>L4</strong>",
+         "Medial leg, medial malleolus",
+         "<strong>Dorsiflexion</strong>",
+         "<strong>Patellar</strong>"
+        ],
+        [
+         "<strong>L5</strong>",
+         "<strong>Dorsum of foot</strong>",
+         "<strong>Big toe extension</strong>",
+         "Hamstrings"
+        ],
+        [
+         "<strong>S1</strong>",
+         "<strong>Lateral foot, heel</strong>",
+         "<strong>Plantar flexion</strong>",
+         "<strong>Achilles</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Treatment</strong><ul><li><strong>conservative first</strong>: education, excellent prognosis · relative rest, ice or heat · topicals, NSAIDs, <strong>short course of opioids if severe</strong> · physiotherapy</li><li><strong>image</strong> if red flags, a non-degenerative cause is suspected, or the deficit is severe or progressing · electromyography shows how badly the nerve is affected</li><li>still failing → <strong>epidural steroid injection</strong> → <strong>surgical decompression</strong> (refractory pain, or a progressive or severe neurological deficit)</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/033a0e38a730.jpg",
+       "alt": "which nerve root a lumbar vs cervical disc herniation hits - upper-year notes.jpg",
+       "w": 840,
+       "h": 533,
+       "cap": "A paracentral L4/5 disc hits L5 while a far-lateral one hits L4; a C6/7 disc hits C7"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Central stenosis: lumbar roots vs cervical cord</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Spinal stenosis</strong> = a narrowed canal (disc, osteophyte, thickened ligament, tumour, degeneration)</li><li><strong>No cord below L1</strong> → lumbar stenosis squeezes <strong>roots</strong>, cervical stenosis squeezes the <strong>cord</strong> - so they behave and are treated differently</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong><span class=\"wl\">Lumbar stenosis</span></strong>",
+        "<strong>Cervical stenosis → <span class=\"wl\">myelopathy</span></strong>"
+       ],
+       "rows": [
+        [
+         "<strong>What is squeezed</strong>",
+         "<strong>Nerve roots</strong> (cauda equina)",
+         "<strong>Spinal cord</strong>"
+        ],
+        [
+         "<strong>Onset</strong>",
+         "Insidious",
+         "Atraumatic spinal cord injury picture"
+        ],
+        [
+         "<strong>Symptoms</strong>",
+         "<strong>Legs > back</strong>, both sides · burning, tingling · distal worse",
+         "<strong>Clumsy hands</strong>, <strong>wasted intrinsic hand muscles</strong> · arm tingling, distal worse · <strong>gait and balance problems</strong> · urinary incontinence (retention with overflow) · often a radiculopathy too"
+        ],
+        [
+         "<strong>Key sign</strong>",
+         "<strong>Neurogenic claudication</strong>: worse walking · <strong>relieved by bending forward</strong> (\"<strong>shopping cart sign</strong>\", walking uphill) and sitting (more slowly than vascular claudication)",
+         "<strong>Upper motor neuron signs below the level</strong>: spasticity, brisk reflexes, weakness"
+        ],
+        [
+         "<strong>Red flags</strong>",
+         "May have weakness or sensory change · <strong>no bladder or bowel problems</strong>",
+         "—"
+        ],
+        [
+         "<strong>Imaging</strong>",
+         "None, or non-urgent MRI (especially a surgical candidate)",
+         "<strong>MRI</strong>"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "Flexion-based activity, physiotherapy",
+         "<strong>Urgent neurosurgical or spine consult</strong> for decompression (unless very mild)"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Cauda equina syndrome</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The <strong>severe end of the lumbar stenosis spectrum</strong>: heavy compression of the lowest roots</li><li><strong>Presents as</strong>: weakness · <strong>saddle anesthesia</strong> · <strong>urinary retention</strong> · <strong>fecal incontinence</strong></li><li><strong>Urgent MRI</strong> · a <strong>neurosurgical emergency</strong> - <strong>outcomes much better if decompressed within 48 hours</strong> of onset</li><li>See <span class=\"wl\">cauda equina syndrome</span></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. \"Everything else\"</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Mechanical",
+        "<strong>Inflammatory</strong>"
+       ],
+       "rows": [
+        [
+         "<strong>Movement</strong>",
+         "Worse",
+         "<strong>Better</strong>"
+        ],
+        [
+         "<strong>Rest, night</strong>",
+         "Better with rest",
+         "<strong>Night pain in the 2nd half of the night</strong>"
+        ],
+        [
+         "<strong>Morning stiffness</strong>",
+         "—",
+         "<strong>Significant</strong>"
+        ],
+        [
+         "<strong>Also</strong>",
+         "—",
+         "<strong>Sacroiliac joints</strong> · ask about eyes, rashes, family history, enthesitis (inflamed tendon insertions), other joints"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Inflammatory</strong> → <strong><span class=\"wl\">seronegative spondyloarthropathies</span></strong>: <span class=\"wl\">ankylosing spondylitis</span> · <span class=\"wl\">psoriatic arthritis</span> · <span class=\"wl\">inflammatory bowel disease arthritis</span> · <span class=\"wl\">reactive arthritis</span></li><li><strong>Fractures</strong><ul><li><strong>osteoporotic <span class=\"wl\">compression fracture</span></strong>: elderly, on steroids · minor or no trauma · axial pain ± radiation · <strong>treat the pain and the osteoporosis</strong> (e.g. bisphosphonates)</li><li><strong><span class=\"wl\">spondylolysis</span></strong>: fracture of the <strong>pars interarticularis</strong> (between pedicle and lamina) · <strong>young athletes who extend the back</strong> (gymnastics, football, weightlifting) · can lead to spondylolisthesis</li></ul></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Term",
+        "Means"
+       ],
+       "rows": [
+        [
+         "<strong>Spondylosis</strong>",
+         "<strong>Degeneration</strong> - disc + facet arthritis"
+        ],
+        [
+         "<strong>Spondylolysis</strong>",
+         "<strong>Fracture</strong> of the pars interarticularis"
+        ],
+        [
+         "<strong>Spondylolisthesis</strong>",
+         "<strong>Slip</strong> of one vertebra on the next (degenerative, or from a spondylolysis)"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Cause",
+        "Examples",
+        "Red flags"
+       ],
+       "rows": [
+        [
+         "<strong>Visceral</strong>",
+         "Vascular: <span class=\"wl\">abdominal aortic aneurysm</span>, vertebral artery insufficiency, atypical cardiac pain · GI: peptic ulcer, pancreatitis · genitourinary: pyelonephritis, kidney stones, endometriosis",
+         "—"
+        ],
+        [
+         "<strong>Infection</strong>",
+         "<span class=\"wl\">Osteomyelitis</span> · discitis · epidural abscess",
+         "<strong>Fever, sweats, IV drug use, immunosuppression</strong>"
+        ],
+        [
+         "<strong>Neoplasm</strong>",
+         "Bone tumour · epidural or intradural mass · drop metastases · referred (e.g. renal cell, ovarian)",
+         "<strong>Young age, severe night pain, weight loss, night sweats, cancer history</strong>, blood in the urine"
+        ]
+       ]
+      }
+     ]
     },
     {
      "id": "msk-w7-04",
      "num": "04",
      "name": "Axial Spine Radiology",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Axial spine radiology",
+     "keypoints": "<p>⭐ <strong>Spondylolysis is seen on the oblique lumbar view as a collar on the Scottie dog; spondylolisthesis on the lateral as a step in the body corners.</strong> <strong>Odontoid view: C1's lateral masses must not overhang C2.</strong> <strong>Lateral cervical: four smooth lines.</strong> <strong>Absent pedicle on the AP = winking owl (lytic lesion).</strong> <strong>L5/S1 is normally narrower than L4/5</strong> - don't call it disease.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Know what normal looks like on each view, then the one view and the one sign for each abnormality the objectives name: fracture, spondylolysis and scoliosis.</strong> Built from the medwiki X-ray notes this lecture note embeds; the upper-year notes have no radiology section.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. When to X-ray the spine</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Lumbar</strong>: significant trauma · <strong>age under 20 or over 50</strong> · history of cancer, <span class=\"wl\">ankylosing spondylitis</span> or <span class=\"wl\">osteoporosis</span> · long-term steroids · <strong>back pain over 6 weeks without improvement</strong></li><li><strong>Thoracic</strong>: fall from over 3 metres · ejection from a car or motorbike · neurological deficit · after surgery · chronic conditions · cancer history with back pain</li><li><strong>Reading any view</strong>: vertebral bodies and spinous processes <strong>line up</strong> · disc spaces <strong>equal side to side</strong> and <strong>taller going down</strong> · body height steady or rising going down</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Cervical spine</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "View",
+        "Shows",
+        "Check",
+        "Pathology"
+       ],
+       "rows": [
+        [
+         "<strong>AP (front to back)</strong>",
+         "C3-C7",
+         "Equal joint spaces · spinous processes midline and in line",
+         "Compression fracture · spinous process fracture of the lower neck (clay-shoveler) · disc herniation"
+        ],
+        [
+         "<strong>Odontoid</strong>",
+         "<strong>The dens of C2</strong>",
+         "<strong>C1's lateral masses must not overhang C2's</strong>",
+         "<span class=\"wl\">Dens fracture</span> · C1 burst (Jefferson) fracture · transverse ligament injury · basilar invagination"
+        ],
+        [
+         "<strong>Lateral</strong>",
+         "<strong>The whole cervical spine</strong> · part of the <strong>trauma series</strong> (with chest and pelvis X-rays)",
+         "<strong>4 smooth lines</strong>: anterior vertebral · posterior vertebral · spinolaminar · posterior spinous",
+         "Compression, teardrop, hangman's, clay-shoveler fractures · facial, skull, airway injuries · osteoarthritis, spondylosis"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Thoracic spine</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "View",
+        "Check",
+        "Pathology"
+       ],
+       "rows": [
+        [
+         "<strong>AP</strong>",
+         "T1-T12 · bodies and spines aligned · ribs and costovertebral joints visible · <strong>pedicles widen going down</strong> · a straight left paravertebral line beside the aorta",
+         "Compression fracture · spondylolisthesis · <span class=\"wl\">scoliosis</span>"
+        ],
+        [
+         "<strong>Lateral</strong>",
+         "Front and back corners line up · <strong>body and disc height increase going down</strong>",
+         "<span class=\"wl\">Kyphosis</span> and <strong>wedge fracture</strong> · Paget's disease (\"picture frame\" vertebra) · ankylosing spondylitis (\"<span class=\"wl\">bamboo spine</span>\")"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Lumbar spine</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "View",
+        "Check",
+        "Pathology"
+       ],
+       "rows": [
+        [
+         "<strong>AP</strong>",
+         "Bodies and spines aligned · <strong>both pedicles present</strong>",
+         "Compression fracture (lost height) · scoliosis · lytic lesion (e.g. multiple myeloma): <strong>absent pedicle = \"<span class=\"wl\">winking owl</span>\"</strong>"
+        ],
+        [
+         "<strong>Lateral</strong>",
+         "T12-S1 · follow the body corners down · discs taller going down, <strong>but L5/S1 is normally narrower than L4/5</strong>",
+         "<span class=\"wl\">Chance</span>, compression and burst fractures · <strong><span class=\"wl\">spondylolisthesis</span></strong> · lytic lesions"
+        ],
+        [
+         "<strong>Oblique</strong>",
+         "<strong>Facets and pars interarticularis</strong> - the \"<strong>Scottie dog</strong>\"",
+         "<strong><span class=\"wl\">Spondylolysis</span> = a collar on the Scottie dog's neck</strong> (<span class=\"wl\">collar sign</span>)"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/c23fa54221bf.jpg",
+       "alt": "x-ray lateral view - lumbar spine.png",
+       "w": 900,
+       "h": 1223,
+       "cap": "Normal lateral lumbar spine: smooth alignment lines, exit foramina and disc spaces labelled"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/58bf29c72e3f.jpg",
+       "alt": "x-ray oblique view - lumbar spine.png",
+       "w": 900,
+       "h": 688,
+       "cap": "Oblique lumbar views: the \"Scottie dog\" outline, and a pars defect forming its collar"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Scoliosis series</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Captures the <strong>whole spine on one film</strong></li><li>The <strong>Cobb angle</strong> measures the curve · used to grade it and <strong>follow progression</strong></li><li>See <span class=\"wl\">scoliosis radiography</span></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. The objective's abnormalities at a glance</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Finding",
+        "Best view",
+        "What you see"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Compression (wedge) fracture</span></strong>",
+         "<strong>Lateral</strong> (also AP)",
+         "<strong>Loss of vertebral body height</strong>"
+        ],
+        [
+         "<strong>Spondylolysis</strong>",
+         "<strong>Oblique lumbar</strong>",
+         "<strong>Collar on the Scottie dog</strong> (pars defect)"
+        ],
+        [
+         "<strong>Spondylolisthesis</strong>",
+         "<strong>Lateral</strong>",
+         "Body corners step off - one vertebra slipped forward"
+        ],
+        [
+         "<strong>Scoliosis</strong>",
+         "<strong>AP</strong> · scoliosis series",
+         "Sideways curve · Cobb angle"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/ef0276578742.jpg",
+       "alt": "vertebral compression fracture (x-ray).png",
+       "w": 900,
+       "h": 475,
+       "cap": "Lateral X-ray: L1 compression fracture with loss of height compared with the normal T12 and L2 above and below"
+      }
+     ]
     },
     {
      "id": "msk-w7-05.1",
      "num": "05.1",
      "name": "Anatomy of the Proximal Upper Extremity",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Anatomy of the proximal upper extremity",
+     "keypoints": "<p>⭐ <strong>Surgical neck fracture → axillary nerve · mid-shaft fracture → radial nerve (it lies in the radial groove).</strong> <strong>The glenohumeral joint trades stability for range - it is held by the labrum, rotator cuff and ligaments, and dislocates anteroinferiorly.</strong> <strong>The coracoacromial arch stops upward displacement, and the cuff tendons run underneath it (impingement).</strong> <strong>Sternoclavicular joint: the clavicle fractures before the joint dislocates.</strong> Supraglenoid = biceps, infraglenoid = triceps.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The bones and joints of the shoulder girdle and arm, learned for what goes wrong with them:</strong> which landmark breaks, which nerve runs beside it, and what holds each joint together. The muscles, nerves and vessels are next week.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The pectoral girdle and its four joints</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Pectoral girdle</span></strong> = <strong><span class=\"wl\">clavicle</span> + <span class=\"wl\">scapula</span></strong>, joining the arm to the trunk</li><li><strong>Scapulohumeral rhythm</strong>: full shoulder movement needs the scapula to reposition the glenoid as the arm moves, giving the muscles a stable base</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Joint",
+        "Bones",
+        "Type",
+        "Held together by",
+        "Clinically"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Sternoclavicular</span></strong>",
+         "Medial clavicle + manubrium + 1st costal cartilage",
+         "Saddle synovial, works like a ball-and-socket · <strong>articular disc</strong> (shock absorber, stops medial dislocation)",
+         "Anterior and posterior sternoclavicular ligaments · interclavicular · <strong>costoclavicular</strong> (limits elevation)",
+         "<strong>The only joint linking the arm to the axial skeleton</strong> · <strong>dislocation is rare - the clavicle breaks first</strong> · 1 ligament torn = subluxation · both = dislocation"
+        ],
+        [
+         "<strong><span class=\"wl\">Acromioclavicular (AC)</span></strong>",
+         "Lateral clavicle + acromion",
+         "<strong>Plane</strong> synovial · wedge-shaped disc · weak capsule",
+         "<strong>Acromioclavicular ligament</strong> (superior) · <strong>coracoclavicular ligament</strong> = conoid (medial) + trapezoid (lateral)",
+         "<strong>Shoulder separation</strong>"
+        ],
+        [
+         "<strong>Scapulothoracic</strong>",
+         "Scapula on the chest wall",
+         "Functional, not a true joint",
+         "Muscles",
+         "Part of every shoulder movement"
+        ],
+        [
+         "<strong><span class=\"wl\">Glenohumeral</span></strong>",
+         "Humeral head + glenoid fossa",
+         "<strong>Ball-and-socket</strong>, multiaxial",
+         "Labrum · rotator cuff · ligaments (section 4)",
+         "<strong>Most mobile joint in the body</strong> · dislocation"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Which ligament carries the AC joint: the coracoclavicular, which suspends the scapula and arm from the clavicle (Kai) · the acromioclavicular, which gives most of the support (medwiki) (sources differ - check the slides)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/ae1d8c6d4844.jpg",
+       "alt": "pectoral girdle bones and its four joints - upper-year notes.jpg",
+       "w": 889,
+       "h": 592,
+       "cap": "Clavicle, scapula and humerus with the sternoclavicular, acromioclavicular, scapulothoracic and glenohumeral joints, and the same bones outlined on an X-ray"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Clavicle and scapula</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Clavicle</strong>: S-shaped (medial half convex forward, lateral half concave) · <strong>enlarged triangular sternal end</strong> · <strong>flat acromial end</strong></li><li><strong><span class=\"wl\">Scapula</span></strong>: triangular flat bone, essential for <strong>overhead</strong> movement</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Landmark",
+        "What it does"
+       ],
+       "rows": [
+        [
+         "<strong>Acromion</strong>",
+         "Meets the clavicle → AC joint"
+        ],
+        [
+         "<strong>Coracoid process</strong> (\"duck's beak\")",
+         "Big attachment point for muscles and ligaments"
+        ],
+        [
+         "<strong>Glenoid fossa</strong>",
+         "<strong>Shallow</strong> socket for the humeral head"
+        ],
+        [
+         "<strong>Supraglenoid · infraglenoid tubercle</strong>",
+         "Long head of <strong>biceps</strong> · long head of <strong>triceps</strong>"
+        ],
+        [
+         "<strong>Spine</strong>",
+         "Splits the back into the <strong>supraspinous</strong> and <strong>infraspinous fossae</strong> (homes of supraspinatus, infraspinatus)"
+        ],
+        [
+         "<strong>Subscapular fossa</strong>",
+         "The front surface, for subscapularis"
+        ],
+        [
+         "<strong>Suprascapular notch</strong>",
+         "Bridged by the transverse scapular ligament → a foramen for nerves and vessels"
+        ],
+        [
+         "<strong>Superior and inferior angles</strong>",
+         "Attachments and landmarks"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Humerus and the elbow end</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Proximal humerus</strong><ul><li><strong>head</strong> (meets the glenoid) · <strong>anatomical neck</strong> (just below the head)</li><li><strong>greater</strong> (lateral) and <strong>lesser</strong> (front) <strong>tubercles</strong> = insertions · between them the <strong>intertubercular (bicipital) groove</strong> for the <strong>long head of biceps</strong></li><li><strong>surgical neck</strong> = the narrowing below the tubercles, a <strong>common fracture site</strong></li><li><strong>deltoid tuberosity</strong> (mid-shaft) · <strong>radial (spiral) groove</strong> on the back of the shaft for the <strong>radial nerve</strong> and <strong>profunda brachii artery</strong></li></ul></li><li><strong>Distal humerus</strong><ul><li><strong>medial epicondyle</strong>: common <strong>flexor</strong> origin · <strong>ulnar nerve</strong> runs behind it</li><li><strong>lateral epicondyle</strong>: common <strong>extensor</strong> origin</li><li><strong>capitulum</strong> ↔ <strong>radial head</strong> (lateral) · <strong>trochlea</strong> ↔ <strong>trochlear notch of the ulna</strong> (medial)</li><li><strong>coronoid fossa</strong> takes the ulna's coronoid process in <strong>full flexion</strong> · <strong>olecranon fossa</strong> takes the olecranon in <strong>full extension</strong></li></ul></li><li><strong>Proximal forearm</strong>: radial head turns in the annular ligament · <strong>radial tuberosity</strong> (biceps) · <strong>olecranon</strong> (triceps) · <strong>coronoid process</strong> (brachialis)</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Fracture",
+        "At risk"
+       ],
+       "rows": [
+        [
+         "<strong>Surgical neck</strong> (low-energy fall onto the hand, elderly with osteoporosis)",
+         "<strong><span class=\"wl\">Axillary nerve</span></strong>"
+        ],
+        [
+         "<strong>Mid-shaft</strong> (direct blow)",
+         "<strong><span class=\"wl\">Radial nerve</span></strong> + profunda brachii (deep brachial) artery"
+        ],
+        [
+         "<strong>Distal humerus</strong>",
+         "Median nerve"
+        ],
+        [
+         "<strong>Medial epicondyle</strong>",
+         "Ulnar nerve"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/8fc26de1c12b.jpg",
+       "alt": "proximal humerus.png",
+       "w": 900,
+       "h": 656,
+       "cap": "Proximal humerus: head, anatomical and surgical necks, greater and lesser tubercles, intertubercular groove, deltoid tuberosity and radial groove"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. The glenohumeral joint</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Built for mobility</strong>: large head in a <strong>shallow</strong> glenoid · lax capsule · bursae · lots of articular cartilage</li><li><strong>Stabilisers</strong><ul><li><strong><span class=\"wl\">Glenoid labrum</span></strong>: fibrocartilage ring that <strong>deepens the socket</strong></li><li><strong>rotator cuff tendons</strong>: supraspinatus · infraspinatus · teres minor · subscapularis</li><li><strong>ligaments</strong></li></ul></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Ligament",
+        "Where",
+        "Job"
+       ],
+       "rows": [
+        [
+         "<strong>Glenohumeral</strong> (superior, middle, inferior)",
+         "Thickenings of the <strong>front of the capsule</strong>",
+         "Strengthen it anteriorly"
+        ],
+        [
+         "<strong>Coracohumeral</strong>",
+         "Base of the coracoid → greater tubercle",
+         "Strengthens the capsule <strong>superiorly</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Coracoacromial</span></strong>",
+         "Acromion → coracoid = the <strong>coracoacromial arch</strong>",
+         "<strong>Roof</strong> that stops the head moving <strong>up</strong> · so strong the humerus or clavicle breaks first"
+        ],
+        [
+         "<strong>Transverse humeral</strong>",
+         "Greater → lesser tubercle",
+         "Holds the biceps tendon in its groove"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The <strong>rotator cuff tendons pass under the arch</strong> · the gap <strong>narrows in full abduction</strong></li><li><strong>Bursae</strong> cut friction: <strong>subacromial</strong> (between acromion and cuff) · subscapular · Kai lists two, medwiki five (sources differ - check the slides)</li><li><strong>Axillary recess</strong>: a loose pouch of the inferior capsule that allows the range</li><li><strong>Blood supply</strong>: anterior and posterior circumflex humeral arteries · suprascapular artery · <strong>nerves (Hilton's law)</strong>: suprascapular, axillary, pectoral, musculocutaneous, subscapular, radial</li><li><strong>Clinically</strong><ul><li><strong>dislocation is usually anterior and inferior</strong> (the arch blocks upward; the capsule is weakest in front and below) → <strong>axillary nerve at risk</strong> · treated with immobilisation, then rotator cuff strengthening</li><li><strong>impingement</strong>: the <strong>supraspinatus tendon is pinched in the subacromial space</strong> · overuse stretches the static stabilisers → mild instability → cuff tires → secondary impingement</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/57e9c5b1567a.jpg",
+       "alt": "glenohumeral joint coronal view.png",
+       "w": 900,
+       "h": 665,
+       "cap": "Coronal section of the shoulder: labrum, axillary recess, long head of biceps tendon, supraspinatus and subdeltoid bursa"
+      }
+     ]
     },
     {
      "id": "msk-w7-05.2",
      "num": "05.2",
      "name": "Clinical Approach to Osteology and Joints of the Proximal Upper Extremity",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Clinical approach to the bones and joints of the shoulder",
+     "keypoints": "<p>⭐ <strong>Passive range of motion splits deep shoulder pain: lost in osteoarthritis and frozen shoulder (the X-ray tells them apart - osteophytes vs normal), preserved in inflammatory arthritis (with a weak cuff).</strong> <strong>Frozen shoulder: 20% of diabetics, normal X-ray.</strong> <strong>Traumatic instability is anterior and \"torn loose\" (surgery); atraumatic is multidirectional and \"born loose\" (physiotherapy).</strong> <strong>Posterior dislocation = seizure, alcohol, electrocution - missed on the AP view.</strong> <strong>AC arthritis: pain reaching across the chest, normal motion.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Two questions sort most of this lecture: is it the acromioclavicular (AC) joint or the glenohumeral joint, and is passive range of motion lost as well as active?</strong> Arthritis, instability and frozen shoulder each answer them differently. (Rotator cuff disease and biceps tendinopathy are in next week's notes.)</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The approach</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Shoulder pain or stiffness\"] --> B{\"Where, and what happened?\"}\n    B -->|\"Top of the shoulder, tender AC joint<br/>worse reaching across the chest\"| C[\"AC JOINT<br/>gradual = arthritis · injury = separation\"]\n    B -->|\"Slipped out or dislocated\"| D{\"Trauma?\"}\n    D -->|Yes| E[\"TRAUMATIC INSTABILITY<br/>usually anterior · torn loose<br/>reduce ± surgery\"]\n    D -->|No| F[\"ATRAUMATIC INSTABILITY<br/>multidirectional · born loose<br/>physiotherapy\"]\n    B -->|\"Deep aching or stiffness\"| G{\"Passive range of motion?\"}\n    G -->|\"Passive better than active\"| H[\"INFLAMMATORY ARTHRITIS<br/>weak rotator cuff<br/>symmetric joint space, erosions, osteopenia\"]\n    G -->|\"Passive lost as well\"| I{\"X-ray?\"}\n    I -->|\"Osteophytes, asymmetric joint space\"| J[\"OSTEOARTHRITIS<br/>rotator cuff strength good\"]\n    I -->|\"Normal\"| K[\"ADHESIVE CAPSULITIS<br/>diagnosis of exclusion\"]"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. AC joint problems</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Common and easy to sort out</strong> · frequent in cyclists</li><li><strong><span class=\"wl\">AC joint arthritis</span></strong> (wear and tear)<ul><li><strong>history</strong>: localised, gradual, activity-related (<strong>reaching across the chest</strong>)</li><li><strong>exam</strong>: small bump, tender, <strong>normal motion</strong>, weakness only from pain</li><li><strong>X-ray</strong>: asymmetric joint space loss → bone on bone · osteophytes · subchondral cysts and sclerosis</li><li><strong>treatment</strong>: education · <strong>activity modification (the main treatment)</strong> · ice, heat, steroid + local anesthetic injection · NSAIDs (non-steroidal anti-inflammatory drugs) · surgery last (resection arthroplasty)</li></ul></li><li><strong><span class=\"wl\">AC joint separation</span></strong><ul><li>a <strong>force on the tip of the shoulder</strong> tears the acromioclavicular ± coracoclavicular ligaments · <strong>40% of shoulder injuries</strong>, 10% of collision-sport injuries</li><li><strong>presents as</strong>: pain, tenderness, a \"<strong>piano key</strong>\" shoulder</li></ul></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Rockwood type",
+        "Injury",
+        "Treatment"
+       ],
+       "rows": [
+        [
+         "<strong>I</strong>",
+         "AC ligament sprain, alignment normal",
+         "<strong>Non-surgical</strong>: education, ice, NSAIDs, sling, early exercises"
+        ],
+        [
+         "<strong>II</strong>",
+         "AC torn, coracoclavicular sprained - <strong>subluxation</strong>, clavicle slightly up",
+         "Same · sling 3-7 days"
+        ],
+        [
+         "<strong>III</strong>",
+         "<strong>Both torn - dislocation</strong>, no joint contact",
+         "Same · sling 2-3 weeks"
+        ],
+        [
+         "<strong>IV</strong>",
+         "Clavicle displaced <strong>posteriorly</strong>",
+         "<strong>Surgery</strong> (open reduction, plate)"
+        ],
+        [
+         "<strong>V</strong>",
+         "Clavicle <strong>severely elevated</strong> (by its own width) · deltoid and trapezius detached",
+         "<strong>Surgery</strong>"
+        ],
+        [
+         "<strong>VI</strong>",
+         "Clavicle displaced <strong>inferiorly</strong> (under the coracoid)",
+         "Surgery for IV-VI (Kai) · medwiki names IV and V (sources differ - check the slides)"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/20d2b766684d.jpg",
+       "alt": "AC joint instability - Rockwood Classification.png",
+       "w": 900,
+       "h": 407,
+       "cap": "Rockwood types I-VI of acromioclavicular joint injury, from a sprain to posterior, superior and inferior displacement"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Glenohumeral arthritis</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Progressive pain, lost range of motion, lost function</strong> · tell the types apart by <strong>passive range</strong> and <strong>cuff strength</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong>Non-inflammatory (<span class=\"wl\">osteoarthritis</span>, post-traumatic)</strong>",
+        "<strong><span class=\"wl\">Inflammatory</span></strong> (rheumatoid, psoriatic, crystal)"
+       ],
+       "rows": [
+        [
+         "<strong>Pain</strong>",
+         "Deep aching",
+         "Deep aching"
+        ],
+        [
+         "<strong>Active motion</strong>",
+         "↓",
+         "↓"
+        ],
+        [
+         "<strong>Passive motion</strong>",
+         "<strong>↓ - osteophytes block it</strong>",
+         "<strong>Normal or better</strong> (no osteophytes)"
+        ],
+        [
+         "<strong>Rotator cuff strength</strong>",
+         "<strong>Good</strong>",
+         "<strong>Weak</strong>"
+        ],
+        [
+         "<strong>X-ray</strong>",
+         "<strong>Asymmetric</strong> joint space · osteophytes · subchondral cysts, sclerosis",
+         "<strong>Symmetric</strong> joint space · deformity · <strong>erosions</strong> · <strong>osteopenia</strong> (washed-out bone)"
+        ],
+        [
+         "<strong>Drugs</strong>",
+         "NSAIDs",
+         "Methotrexate · hydroxychloroquine · anti-TNF (tumour necrosis factor) antibodies"
+        ],
+        [
+         "<strong>Surgery</strong>",
+         "Arthroscopic debridement (younger patients, not curative, eases catching) → <strong>standard (anatomic) arthroplasty</strong>",
+         "<strong><span class=\"wl\">Reverse arthroplasty</span></strong>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>All: education · activity management · physiotherapy</li><li><strong>Joint replacement</strong>: ~85% good outcome · complications: infection, loosening, instability, fracture, progressive disease</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/d0eac1f05ac0.jpg",
+       "alt": "shoulder arthroplasty - standard vs. reverse (x-ray).png",
+       "w": 900,
+       "h": 433,
+       "cap": "X-rays of a normal shoulder, an anatomic (standard) replacement and a reverse replacement"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Instability</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Instability</span></strong> = the humeral head can't be kept centred in the glenoid · a spectrum: reduced → <strong>subluxed</strong> → <strong>dislocated</strong></li><li><strong>The ligaments and labrum matter most</strong> · they can tear or stretch · the labrum adds surface area and depth and acts as a bumper</li><li>Describe it by <strong>trauma, direction and degree</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong>Traumatic</strong>",
+        "<strong>Atraumatic</strong>"
+       ],
+       "rows": [
+        [
+         "<strong>Mechanism</strong>",
+         "\"<strong>Torn loose</strong>\"",
+         "\"<strong>Born loose</strong>\" - lax tissues, poor motor control"
+        ],
+        [
+         "<strong>Direction</strong>",
+         "<strong>One direction, mostly anterior</strong>",
+         "<strong>Multidirectional</strong>, often both shoulders"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "Reduction · <strong>surgery often</strong> (young or recurrent dislocators): labral repair, ~85% success",
+         "<strong>Physiotherapy and muscle control</strong>, not surgery · if needed, inferior capsular shift (~70%)"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Direction of dislocation</strong>: <strong>anterior over 90%</strong> (blow to an abducted, externally rotated arm, or a fall on an outstretched hand) · posterior 2-4% (<strong>epilepsy, alcohol, electrocution</strong>) · inferior under 1% (arm stuck overhead)</li><li><strong>Exam</strong>: apprehension and relocation test (anterior) · load and shift (anterior or posterior) · sulcus sign (inferior)</li><li><strong>X-ray</strong>: <strong>at least 2 views</strong> to see the direction · <strong>posterior dislocation is easy to miss on the front-to-back (AP) view</strong> - get a scapular Y-view · repeat after reduction · associated <span class=\"wl\">Bankart lesion</span>, <span class=\"wl\">Hill-Sachs lesion</span></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Adhesive capsulitis (frozen shoulder)</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Adhesive capsulitis</span></strong> = <strong>global loss of active and passive motion</strong> with no other shoulder disorder found · cause unknown<ul><li><strong>2% of adults · 20% of people with diabetes</strong> · usually in the 40s-50s</li><li>other links: thyroid disease, cardiac disease, cervical disc disease</li></ul></li><li><strong>Diagnosis of exclusion</strong>: <strong>X-ray is normal</strong> - use it and the trauma history to rule out arthritis, old fractures, heterotopic bone</li><li><strong>Stages</strong>: <strong>freezing</strong> (inflamed, painful) → <strong>frozen</strong> (stiff, scarred capsule) → <strong>thawing</strong></li><li><strong>Treatment</strong><ul><li><strong>education</strong>: self-limiting but slow (<strong>1-3 years</strong>) · 20-50% never fully lose pain or stiffness</li><li>pain relief (acetaminophen + ibuprofen)</li><li>physiotherapy is <strong>controversial</strong> - no good evidence, may inflame it early</li><li><strong>intra-articular steroid</strong> in the freezing stage: better than physiotherapy early, <strong>no difference at 1 year</strong> · <strong>hydrodistension</strong> (saline under pressure to break the capsule)</li><li>surgery (capsulectomy): faster return of motion, <strong>same by 2 years</strong></li></ul></li></ul>"
+      }
+     ]
     }
    ]
   },

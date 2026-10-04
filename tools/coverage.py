@@ -95,8 +95,38 @@ def headings_of(lec):
     return [re.sub(u"<[^>]+>", u"", h) for h in out]
 
 
-def mark_covered(roster):
+# Hand-checked coverage, read before the matcher runs. The matcher wants every
+# word of a lecture's name in a heading, so "Approach to Diagnostics" can never
+# find "ABCDE of ordering investigations"; a person reading the note can. One
+# file per course, {blank lecture id: host lecture id}, kept beside the notes
+# so a rebuild of the roster puts the pointers back.
+MANUAL = "coverage.json"
+
+
+def manual_covers(roster, notes_dir):
+    import io, json, os
+    p = os.path.join(notes_dir, MANUAL)
+    if not os.path.exists(p):
+        return
+    manual = json.load(io.open(p, encoding="utf-8"))
+    for w in roster["weeks"]:
+        by_id = dict((l["id"], l) for l in w["lectures"])
+        for lec in w["lectures"]:
+            host_id = manual.get(lec["id"])
+            if not host_id or lec.get("hasNote") or lec.get("coveredBy"):
+                continue
+            host = by_id.get(host_id)
+            if not host or not host.get("hasNote"):
+                continue
+            lec["coveredBy"] = {"num": host["num"], "name": host["name"], "key": host["id"]}
+            host.setdefault("covers", []).append(
+                {"num": lec["num"], "name": lec["name"], "key": lec["id"]})
+
+
+def mark_covered(roster, notes_dir=None):
     """Point every blank lecture at the note that already holds its material."""
+    if notes_dir:
+        manual_covers(roster, notes_dir)
     for w in roster["weeks"]:
         at = dict((l["id"], i) for i, l in enumerate(w["lectures"]))
         written = [l for l in w["lectures"] if l.get("hasNote")]

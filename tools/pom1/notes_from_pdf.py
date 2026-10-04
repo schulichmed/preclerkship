@@ -523,7 +523,7 @@ def main():
         print("%-52s %-7s %3d sections filed" % (pdf[:52], slug, filed))
 
     for roster in rosters.values():
-        coverage.mark_covered(roster)
+        coverage.mark_covered(roster, os.path.join(ROOT, "pom1", "data", "notes"))
 
     for slug, roster in rosters.items():
         p = os.path.join(ROOT, "pom1", "data", "notes", "%s.json" % slug)
