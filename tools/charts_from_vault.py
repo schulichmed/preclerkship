@@ -346,7 +346,7 @@ def chart_of(path):
 
 # ---------- fold into the roster ----------
 
-DRAFT_TEXT = ("Built from upper-year notes and the medwiki note. "
+DRAFT_TEXT = ("Built from upper-year notes. "
               "Not yet checked against this year's lecture slides.")
 
 

@@ -109,16 +109,50 @@
 
 <div class="tabs" role="tablist" aria-label="Notes or Anki">
 <button type="button" id="tab-notes" role="tab" aria-selected="true" aria-controls="panel-notes">Notes <span class="tc" id="tc-notes">55/55</span></button>
-<button type="button" id="tab-anki" role="tab" aria-selected="false" aria-controls="panel-anki">Anki</button>
+<button type="button" id="tab-anki" role="tab" aria-selected="false" aria-controls="panel-anki">Anki <span class="tc">310</span></button>
 <a class="tab-out" id="to-qbank" href="qbank.html#block=msk">Practice questions <span class="tc">201</span><span class="done" id="qb-done" hidden></span></a>
 </div>
 
 <div class="q-shell is-solo" id="panel-anki" role="tabpanel" aria-labelledby="tab-anki" hidden>
-<div class="tab-empty">
-<h2>The decks are not up yet.</h2>
-<p>This is where the PoM 2 Anki cards for weeks 7–11 will live, filed by week and
-lecture the way the notes are &mdash; Christina&rsquo;s deck, brought up to date against this
-year&rsquo;s lecture slides. Nothing has been uploaded into it yet.</p>
+<div class="deck">
+<div class="callout k-warning">
+<span class="ct">Draft</span>
+<p>Built from upper-year Christina&rsquo;s Anki deck. Not yet checked against this year&rsquo;s lecture slides.</p>
+</div>
+<div class="deck-head">
+<div class="deck-what">
+<h2>PoM 2, weeks 7–11</h2>
+<p class="deck-sum"><b>310</b> cards from <b>268</b> notes, across 11 lectures. <b>88</b> are marked high-yield.</p>
+<p class="deck-src">Christina&rsquo;s deck, the one the classes pass down, filed by week and lecture the way the notes are. The cards are hers as she wrote them; they have not been checked against this year&rsquo;s lecture slides yet.</p>
+</div>
+<a class="deck-dl" href="anki/msk.apkg" download>Download the deck <span class="sz">11 MB</span></a>
+</div>
+<div class="deck-how">
+<p><strong>To import it:</strong> open Anki on a computer, then <strong>File &rarr; Import</strong> and pick the file. It arrives as <code>PoM2::Block 3</code> with the week and lecture subdecks intact, so it sits beside whatever you already have rather than merging into it.</p>
+</div>
+<div class="deck-weeks">
+<section class="deck-week">
+<p class="panel-h">Week 10 <span class="tc">203</span></p>
+<ul class="deck-lecs">
+<li><span class="lc-n">04 - Acute Monoarthritis</span><span class="lc-c"><b>47</b> <span class="hy">&middot; 18 high-yield</span></span></li>
+<li><span class="lc-n">05 - MSK Infections</span><span class="lc-c"><b>25</b> <span class="hy">&middot; 6 high-yield</span></span></li>
+<li><span class="lc-n">06 - Osteoarthritis</span><span class="lc-c"><b>8</b> <span class="hy">&middot; 1 high-yield</span></span></li>
+<li><span class="lc-n">07 - Approach to Polyarthritis</span><span class="lc-c"><b>44</b> <span class="hy">&middot; 13 high-yield</span></span></li>
+<li><span class="lc-n">08 - Juvenile Idiopathic Arthritis</span><span class="lc-c"><b>25</b> <span class="hy">&middot; 3 high-yield</span></span></li>
+<li><span class="lc-n">09 - Connective Tissue Disorders</span><span class="lc-c"><b>44</b> <span class="hy">&middot; 23 high-yield</span></span></li>
+<li><span class="lc-n">11 - Body Pain</span><span class="lc-c"><b>10</b> <span class="hy">&middot; 2 high-yield</span></span></li>
+</ul>
+</section>
+<section class="deck-week">
+<p class="panel-h">Week 11 <span class="tc">107</span></p>
+<ul class="deck-lecs">
+<li><span class="lc-n">01 - Vasculitis</span><span class="lc-c"><b>46</b> <span class="hy">&middot; 13 high-yield</span></span></li>
+<li><span class="lc-n">02 - Rheumatology Investigations</span><span class="lc-c"><b>15</b> <span class="hy">&middot; 2 high-yield</span></span></li>
+<li><span class="lc-n">03 - Rheumatology Treatments</span><span class="lc-c"><b>32</b> <span class="hy">&middot; 4 high-yield</span></span></li>
+<li><span class="lc-n">04 - Pediatric Orthopedics</span><span class="lc-c"><b>14</b> <span class="hy">&middot; 3 high-yield</span></span></li>
+</ul>
+</section>
+</div>
 </div>
 </div>
 
@@ -168,7 +202,7 @@ saved in one go. Print it, annotate it, keep it.</p>
 </div>
 
 <script>
-window.QUIZ_BLOCK = {"slug": "msk", "n": 3, "name": "Musculoskeletal", "weeks": "7–11", "course": "PoM 2", "store": "nsq.v1.", "families": [{"key": "module", "name": "Course modules", "blurb": "The Elentra module knowledge checks and the concept checks on the lecture slides. Cases live under Meds 2029 instead, wherever they came from."}, {"key": "weekly", "name": "Weekly quizzes", "blurb": "The weekly quizzes, both the Microsoft Forms ones and the ones sat in Elentra. Kept whole as their own set, so a week's quiz can be drilled the way it was written."}, {"key": "workbook", "name": "Pre-Clerkship Workbook", "blurb": "The Pre-Clerkship Workbook (2023 edition), the student bank passed down through the Schulich classes of 2015-2025. It has a written key, but the key is peer-written and contains real errors. Every one found is flagged on the question."}, {"key": "meds2029", "name": "Meds 2029", "blurb": "Questions built from patient cases in the modules, DSSGs and in-class lectures, since exams tend to recycle similar cases."}, {"key": "reviews", "name": "Schulich Reviews", "blurb": "The Schulich Reviews sessions, run by upper years before each exam. Their own practice questions, keyed by the deck, plus questions written from their high-yield slides. Where a review disagrees with this year's lecture, the lecture wins and the question says so."}, {"key": "hipponotes", "name": "HippoNotes", "blurb": "The question banks at the back of the Meds 2025 HippoNotes (Academic Resources Team, May 2023) - one document per block, written by the class two years ahead. Peer-written like the Workbook, so the key is worth checking rather than trusting; the source groups by week only, with no per-lecture attribution."}], "qv": "0898ec31", "nv": "14a51464", "dir": "pom2", "contact": "schulichmedfriends@gmail.com", "report": "https://preclerkship-report.schulichmed.workers.dev/"};
+window.QUIZ_BLOCK = {"slug": "msk", "n": 3, "name": "Musculoskeletal", "weeks": "7–11", "course": "PoM 2", "store": "nsq.v1.", "families": [{"key": "module", "name": "Course modules", "blurb": "The Elentra module knowledge checks and the concept checks on the lecture slides. Cases live under Meds 2029 instead, wherever they came from."}, {"key": "weekly", "name": "Weekly quizzes", "blurb": "The weekly quizzes, both the Microsoft Forms ones and the ones sat in Elentra. Kept whole as their own set, so a week's quiz can be drilled the way it was written."}, {"key": "workbook", "name": "Pre-Clerkship Workbook", "blurb": "The Pre-Clerkship Workbook (2023 edition), the student bank passed down through the Schulich classes of 2015-2025. It has a written key, but the key is peer-written and contains real errors. Every one found is flagged on the question."}, {"key": "meds2029", "name": "Meds 2029", "blurb": "Questions built from patient cases in the modules, DSSGs and in-class lectures, since exams tend to recycle similar cases."}, {"key": "reviews", "name": "Schulich Reviews", "blurb": "The Schulich Reviews sessions, run by upper years before each exam. Their own practice questions, keyed by the deck, plus questions written from their high-yield slides. Where a review disagrees with this year's lecture, the lecture wins and the question says so."}, {"key": "hipponotes", "name": "HippoNotes", "blurb": "The question banks at the back of the Meds 2025 HippoNotes (Academic Resources Team, May 2023) - one document per block, written by the class two years ahead. Peer-written like the Workbook, so the key is worth checking rather than trusting; the source groups by week only, with no per-lecture attribution."}], "qv": "0898ec31", "nv": "80e119e2", "dir": "pom2", "contact": "schulichmedfriends@gmail.com", "report": "https://preclerkship-report.schulichmed.workers.dev/"};
 </script>
 <script src="../notes.js?v=2743f337"></script>
 <script src="../portal.js?v=8f0c6d06"></script>

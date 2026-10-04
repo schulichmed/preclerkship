@@ -13,6 +13,12 @@ Run from the repo root, with Anki open:
 
     python3 tools/build_anki.py pom2 endo "PoM2::Block 1"
 
+A fourth argument marks the deck as a draft, and the Anki tab shows it as a
+warning above the download - for a deck filed by lecture but not yet brought
+up to date against this year's slides:
+
+    python3 tools/build_anki.py pom2 msk "PoM2::Block 3" "Built from ..."
+
 Scheduling is stripped on the way out. The due dates in the collection are one
 person's review history; what is published is the cards, and whoever imports
 them starts their own. Re-running overwrites both outputs, which is the point -
@@ -91,9 +97,10 @@ def export(root, dest):
 
 
 def main():
-    if len(sys.argv) != 4:
-        sys.exit("usage: build_anki.py <course> <block> <deck name>")
+    if len(sys.argv) not in (4, 5):
+        sys.exit("usage: build_anki.py <course> <block> <deck name> [draft note]")
     course, block, root = sys.argv[1], sys.argv[2], sys.argv[3]
+    draft = sys.argv[4] if len(sys.argv) == 5 else None
 
     apkg = os.path.join(course, "anki", "%s.apkg" % block)
     size = export(root, apkg)
@@ -115,6 +122,8 @@ def main():
         "notes": tn, "cards": tc, "highyield": thy,
         "weeks": weeks,
     }
+    if draft:
+        man["draft"] = draft
 
     out = os.path.join(course, "data", "anki", "%s.json" % block)
     d = os.path.dirname(out)

@@ -163,6 +163,19 @@ year&rsquo;s lecture slides. Nothing has been uploaded into it yet.</p>
 </div>"""
 
 
+def deck_src(m):
+    """Where the deck came from - claiming the slide check only once it is done."""
+    if m.get("draft"):
+        return ('<p class="deck-src">Christina&rsquo;s deck, the one the classes pass '
+                'down, filed by week and lecture the way the notes are. The cards are '
+                'hers as she wrote them; they have not been checked against this '
+                'year&rsquo;s lecture slides yet.</p>')
+    return ('<p class="deck-src">Christina&rsquo;s deck, brought up to date. It is the '
+            'deck the classes pass down, re-exported against this year&rsquo;s lecture '
+            'slides &mdash; lectures that changed are updated and new ones are added, so '
+            'what you download matches the course as it is being taught now.</p>')
+
+
 def anki_panel(course, slug, weeks):
     """The Anki tab: the deck if one has been exported, else the empty state.
 
@@ -176,7 +189,14 @@ def anki_panel(course, slug, weeks):
     m = json.load(io.open(p, encoding="utf-8"))
 
     mb = "%.0f MB" % (m["bytes"] / 1048576.0)
-    out = ['<div class="deck">',
+    out = ['<div class="deck">']
+    # A draft deck says so before anything else, the way the notes tab does.
+    if m.get("draft"):
+        out += ['<div class="callout k-warning">',
+                '<span class="ct">Draft</span>',
+                '<p>%s</p>' % m["draft"].replace("'", "&rsquo;"),
+                '</div>']
+    out += [
            '<div class="deck-head">',
            '<div class="deck-what">',
            '<h2>%s, weeks %s</h2>' % (course["short"], weeks),
@@ -184,10 +204,7 @@ def anki_panel(course, slug, weeks):
            'across %d lectures. <b>%d</b> are marked high-yield.</p>'
            % (m["cards"], m["notes"],
               sum(len(w["lectures"]) for w in m["weeks"]), m["highyield"]),
-           '<p class="deck-src">Christina&rsquo;s deck, brought up to date. It is the '
-           'deck the classes pass down, re-exported against this year&rsquo;s lecture '
-           'slides &mdash; lectures that changed are updated and new ones are added, so '
-           'what you download matches the course as it is being taught now.</p>',
+           deck_src(m),
            '</div>',
            '<a class="deck-dl" href="%s" download>Download the deck '
            '<span class="sz">%s</span></a>' % (m["file"], mb),
