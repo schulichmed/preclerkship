@@ -346,6 +346,17 @@ def chart_of(path):
 
 # ---------- fold into the roster ----------
 
+DRAFT_TEXT = ("Built from upper-year notes and the medwiki note. "
+              "Not yet checked against this year's lecture slides.")
+
+
+def is_draft(chart):
+    """True when the chart opens with the vault's > [!warning] Draft callout."""
+    blocks = chart.get("blocks") or []
+    return bool(blocks) and blocks[0].get("t") == "callout" \
+        and blocks[0].get("kind") == "warning" and blocks[0].get("title") == "Draft"
+
+
 def load_figures():
     """The figure manifest, or nothing - a chart with no pictures needs none."""
     if not os.path.exists(FIGURES_PATH):
@@ -359,7 +370,7 @@ def main(slugs):
         p = "pom2/data/notes/%s.json" % slug
         doc = json.load(io.open(p, encoding="utf-8"))
         folder = os.path.join(VAULT, BLOCK_FOLDER[slug])
-        found = 0
+        found = drafts = 0
         for w in doc["weeks"]:
             wd = os.path.join(folder, "Week %d" % w["n"])
             for lec in w["lectures"]:
@@ -373,8 +384,18 @@ def main(slugs):
                     lec["hasNote"] = False
                     continue
                 lec["hasNote"] = True
+                if is_draft(ch):
+                    ch["blocks"] = ch["blocks"][1:]
+                    drafts += 1
                 lec.update(ch)
                 found += 1
+        # One banner at the top of the notes tab, not a copy on every note.
+        # The callouts stay in the vault, where they mark which notes still
+        # need checking against this year's slides.
+        if drafts:
+            doc["draft"] = DRAFT_TEXT
+        else:
+            doc.pop("draft", None)
         io.open(p, "w", encoding="utf-8", newline="\n").write(
             json.dumps(doc, indent=1, ensure_ascii=False))
         total = sum(len(w["lectures"]) for w in doc["weeks"])

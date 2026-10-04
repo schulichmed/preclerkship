@@ -25,6 +25,7 @@
   var BLOCK = window.QUIZ_BLOCK;
 
   var WEEKS = [];
+  var NOTES_DRAFT = "";    // the block-wide draft warning, when the block has one
   var WK = Object.create(null);   // lecture id -> week key
   var week = "all";
   var booted = false;
@@ -673,6 +674,14 @@
         "That is what the exam tests."));
       head.appendChild(key);
     }
+    /* a block charted before its lectures were taught says so once, here,
+       rather than repeating the same warning on top of every note */
+    if (NOTES_DRAFT) {
+      var dr = el("div", "callout k-warning");
+      dr.appendChild(el("span", "ct", "Draft"));
+      dr.appendChild(el("p", null, NOTES_DRAFT));
+      head.appendChild(dr);
+    }
     frag.appendChild(head);
 
     WEEKS.forEach(function (w) {
@@ -748,6 +757,7 @@
 
   function start(data) {
     WEEKS = (data && data.weeks) || [];
+    NOTES_DRAFT = (data && typeof data.draft === "string") ? data.draft : "";
     assignKeys();
     WEEKS.forEach(function (w) {
       (w.lectures || []).forEach(function (l) { WK[l.key] = weekKey(w); });
