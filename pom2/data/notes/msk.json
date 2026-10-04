@@ -8584,55 +8584,1296 @@
      "id": "msk-w11-01",
      "num": "01",
      "name": "Vasculitis",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Vasculitis",
+     "keypoints": "<p>⭐ Suspected giant cell arteritis (over 50, new headache, jaw claudication, very high ESR and CRP) → <strong>high-dose steroids now, biopsy after</strong> · <strong>rule out infection before immunosuppressing</strong> · normal ESR and CRP make giant cell arteritis very unlikely · a negative temporal artery biopsy does not rule it out · large = giant cell and Takayasu, medium = polyarteritis nodosa and Kawasaki, small = the ANCA trio and Henoch-Schönlein purpura · order ANCA only when small vessel vasculitis is suspected.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Vasculitis is inflammation of the blood vessel wall, and the patient feels sick all over.</strong> The lecture asks two things: <strong>when to suspect it</strong> in a vague multi-system illness, and <strong>how to tell the types apart by the size of vessel they hit</strong>, with giant cell arteritis as the emergency you cannot miss.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. What inflamed vessels do</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Mechanism</strong>: the immune system attacks the endothelial cells of the vessel wall, directly or as bystander damage<ul><li>wall thickens → <strong>less blood downstream</strong> → can block completely → <strong>ischemia</strong> and clots</li><li>damaged wall can balloon out → <strong>aneurysm</strong>, which can rupture</li></ul></li><li><strong>Presents as</strong><ul><li><strong>systemically unwell</strong>: fever, weight loss, fatigue, fast pulse, diffuse aches</li><li><strong>pain</strong> from many sources: nerve infarction, sore joints, leg ulcers, gut ischemia (abdominal pain), heart (chest pain), limbs (claudication)</li><li><strong>organ-specific symptoms</strong> - almost any organ, so examine head to toe</li><li>some types are <strong>uniformly fatal if untreated</strong></li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/482e233bead0.jpg",
+       "alt": "artery damage in vasculitis - upper-year notes.jpg",
+       "w": 300,
+       "h": 574,
+       "cap": "A normal artery, then narrowing from inflammation, total occlusion, and an aneurysm with clot"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Primary vs secondary</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Primary</strong> = no cause found (autoimmune), over 20 disorders, sorted by vessel size</li><li><strong>Secondary</strong> = driven by something else - look for it first:<ul><li><strong>infection</strong>: hepatitis B and C, HIV, COVID-19 · bacterial (pneumococcus, mycobacteria, <em>Staphylococcus aureus</em>) · fungal</li><li><strong>drugs and toxins</strong>: antibiotics, antihypertensives, thionamides, allergic reactions · <strong>cocaine cut with levamisole</strong></li><li><strong>cancer</strong>: blood cancers (lymphoma, leukemia) · paraneoplastic</li><li><strong>connective tissue disease</strong>: <span class=\"wl\">lupus</span>, <span class=\"wl\">rheumatoid arthritis</span>, <span class=\"wl\">Sjogren's syndrome</span></li></ul></li><li><strong>Infection matters most to exclude</strong>: it is common, it mimics vasculitis, and <strong>immunosuppressing an infection makes it much worse</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Classification by vessel size</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Vessel size",
+        "Examples",
+        "Notes from the lecture"
+       ],
+       "rows": [
+        [
+         "<strong>Large</strong>",
+         "<span class=\"wl\">giant cell arteritis</span> · <span class=\"wl\">Takayasu arteritis</span>",
+         "Giant cell arteritis is the <strong>most common vasculitis</strong>"
+        ],
+        [
+         "<strong>Medium</strong>",
+         "Classic <span class=\"wl\">polyarteritis nodosa</span> · <span class=\"wl\">Kawasaki disease</span> · <span class=\"wl\">Behcet's disease</span>",
+         "Kawasaki disease is one of the two most common in children"
+        ],
+        [
+         "<strong>Small, ANCA-associated</strong>",
+         "<span class=\"wl\">granulomatosis with polyangiitis</span> (formerly Wegener's) · <span class=\"wl\">microscopic polyangiitis</span> · <span class=\"wl\">eosinophilic granulomatosis with polyangiitis</span> (formerly Churg-Strauss)",
+         "Granulomatosis with polyangiitis is the <strong>most common small vessel vasculitis</strong>"
+        ],
+        [
+         "<strong>Small, others</strong>",
+         "Cryoglobulinemia · cutaneous leukocytoclastic vasculitis · <span class=\"wl\">Henoch-Schönlein purpura</span>",
+         "Cutaneous leukocytoclastic vasculitis can stand alone or be part of another type · Henoch-Schönlein purpura is the other common childhood one"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. When to suspect it, and the workup</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Suspect</strong> when someone is:<ul><li>chronically unwell with fever, chills or weight loss · several organs involved · <strong><span class=\"wl\">purpura</span></strong></li><li>very sick with multi-organ failure · <strong>lung bleeding plus kidney failure</strong></li><li>and <strong>no infection or cancer has been found</strong></li></ul></li><li>Diagnosis is hard: rare, many types, vague symptoms that can take years, mimics common diseases</li><li><strong>History and exam are critical</strong>; tests confirm. <strong>Biopsy of involved tissue is the best proof</strong> - pick the least invasive site<ul><li>skin and nodules · temporal artery · sinus or nasal cartilage (easy, often negative) · kidney · sural nerve (sensory only) · lung or brain only as a last resort</li></ul></li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Unwell, several organs involved,<br/>purpura or lung + kidney disease\"] --> B[\"Head-to-toe history and exam\"]\n    B --> C[\"Basic labs: blood count, creatinine,<br/>liver enzymes, inflammatory markers,<br/>urinalysis + chest x-ray\"]\n    C --> D{\"Infection or cancer<br/>found?\"}\n    D -->|Yes| E[\"Secondary vasculitis or a mimic:<br/>treat the cause\"]\n    D -->|No| F[\"Urgent rheumatology referral<br/>± other services for involved organs\"]\n    F --> G[\"Biopsy the least invasive involved tissue<br/>ANCA only if small vessel disease suspected\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Inflammation (non-specific)</strong>: high erythrocyte sedimentation rate (ESR) and C-reactive protein (CRP) · normocytic anemia · high platelets (reactive) · low albumin (chronic)</li><li><strong>Silent organ damage</strong> - kidneys and lungs may give no symptoms: <strong>creatinine · blood and protein in the urine · chest x-ray</strong> (nodules in granulomatosis with polyangiitis)</li><li><strong>Rule out infection</strong>: white cell count · blood, urine, sputum cultures (include fungal and mycobacterial) · liver enzymes · hepatitis B and C serology (hepatitis C → cryoglobulins, low complement) · HIV · syphilis</li><li><strong>Rule out cancer</strong>: age-appropriate screening up to date · serum protein electrophoresis for myeloma</li><li><strong>Look for connective tissue disease</strong> (Kai): rheumatoid factor, antinuclear antibody, anti-double-stranded DNA, extractable nuclear antigens</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/58827f0be11c.jpg",
+       "alt": "organ involvement in vasculitis - upper-year notes.jpg",
+       "w": 527,
+       "h": 606,
+       "cap": "What vasculitis can do to each organ, from stroke and vision loss to purpura and glomerulonephritis"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Giant cell arteritis</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Who</strong>: <strong>over 50</strong> (average about 72) · women more than men · Northern European descent · <strong>often with <span class=\"wl\">polymyalgia rheumatica</span></strong></li><li><strong>Which vessels</strong>: large arteries and branches, cranial most often (temporal, occipital, ophthalmic) · also subclavian, iliac and femoral arteries, aorta</li><li><strong>Presents as</strong><ul><li><strong>new headache · temple and scalp tenderness · jaw claudication</strong> (jaw pain on chewing) · tongue claudication</li><li><strong>vision</strong>: transient blurring or a \"curtain\" coming down, <strong>double vision, sudden vision loss</strong> (15-20%) · stroke</li><li>systemic: fever (can be a fever of unknown origin), fatigue, weight loss, anemia</li><li>large-vessel: arm and leg claudication, chest pain</li></ul></li><li><strong>Exam</strong>: tender, swollen, rope-like temporal artery · swollen optic disc (chalky white) · weak pulses, bruits, blood pressure differences between arms</li><li><strong>Investigations</strong><ul><li><strong>ESR and CRP very high</strong> - raised in about 98% with cranial disease; <strong>if both are normal, giant cell arteritis is very unlikely</strong></li><li>normocytic anemia, reactive thrombocytosis, white count usually normal</li><li><strong>temporal artery biopsy</strong>: inflammation with giant cells is <strong>100% specific</strong>, but <strong>skip lesions mean a negative biopsy does not rule it out</strong> · take 3-5 cm · do it within 2 weeks of starting steroids</li><li>temporal artery ultrasound in specialised centres (\"halo sign\")</li></ul></li><li><strong>Vision loss</strong> = anterior ischemic optic neuropathy (the posterior ciliary arteries feeding the optic nerve head) · <strong>sudden loss is almost always permanent</strong></li><li><strong>Management</strong> - a relative <strong>emergency</strong>:<ul><li><strong>start high-dose prednisone (40-60 mg a day) at once - do not wait for the biopsy</strong></li><li>urgent temporal artery biopsy · rheumatology referral · ophthalmology if vision is affected (IV steroids may be needed) · consider low-dose aspirin</li><li>hold the dose until well and markers normal, then taper slowly over 2 years or more</li><li>protect bone (calcium, vitamin D, bisphosphonate) and stomach (proton pump inhibitor)</li><li>should improve dramatically; <strong>not at least 80% better after 5 days → rethink the diagnosis</strong></li><li>long-term: 2-4× risk of heart attack and stroke · aortic aneurysm or dissection</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. ANCA-associated vasculitis</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Anti-neutrophil cytoplasmic antibodies (ANCA) attack granule proteins inside neutrophils · rare (20-30 per million) · <strong>fatal untreated, relapses common even when treated</strong></li><li><strong>Presents as</strong> (any organ, so very varied)<ul><li><strong>sinonasal</strong>: bloody crusty discharge, sinus pain, <strong>saddle nose</strong> in granulomatosis with polyangiitis</li><li><strong>eye</strong>: mass behind the eye → double vision</li><li><strong>lungs</strong>: shortness of breath (nodules, severe adult-onset asthma, clots) · <strong>lung bleeding</strong> (coughing blood)</li><li><strong>kidneys</strong>: high creatinine, blood and protein in urine</li><li>inflammatory arthritis · <strong>mononeuritis multiplex</strong> (numbness and weakness in separate nerves) · skin: purpura, urticarial vasculitis that scars and does not blanch, ulcers</li></ul></li><li><strong>ANCA test</strong>: <strong>only order if small vessel vasculitis is suspected</strong> (not covered by the Ontario Health Insurance Plan) · details in <span class=\"wl\">02 - Rheumatology Investigations</span></li><li><strong>Biopsy</strong>: first-line in single-organ disease · skin purpura → punch biopsy in primary care · ulcers → excisional biopsy by a surgeon · other tissues (sinus mass, lung nodule, kidney if active urine sediment, sural nerve if neuropathy) → refer</li><li><strong>Where to send them</strong><ul><li><strong>unstable</strong> (lung bleeding, severe breathlessness, acute kidney failure) → <strong>admit to hospital</strong></li><li>stable but serious (active urine sediment with normal creatinine = possible rapidly progressive glomerulonephritis) → <strong>urgent specialist referral</strong></li><li>everyone → <strong>urgent rheumatology referral</strong></li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Treating cutaneous vasculitis</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Acetaminophen does <strong>not</strong> treat it · no evidence for cannabinoids</li><li>First line for non-severe skin disease: topical therapy (sources differ: the medwiki note says topical minoxidil, Kai says a topical corticosteroid - check the slides)</li><li><strong>Non-steroidal anti-inflammatory drugs (NSAIDs)</strong> if no contraindication · <strong>colchicine</strong> 0.6 mg twice daily (adjust for kidney function; main side effect diarrhea) for skin and joints</li><li><strong>Oral steroids</strong> work very well but carry side effects: only if other agents fail, infection is excluded and skin disease is severe - prednisone 30 mg for a week, then down 5 mg every 5 days</li><li><strong>Methotrexate</strong> is too slow for acute symptoms; for non-resolving, scarring or severe skin disease</li></ul>"
+      }
+     ]
     },
     {
      "id": "msk-w11-02",
      "num": "02",
      "name": "Rheumatology Investigations",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Rheumatology investigations",
+     "keypoints": "<p>⭐ <strong>A negative ANA makes lupus very unlikely, but a positive ANA rules nothing in</strong> - so never follow it with anti-DNA or ENA when it is negative, and never repeat it · rheumatoid factor is non-specific and used for prognosis; <strong>anti-CCP is the specific one</strong> · HLA-B27 is common in healthy people · only gout is diagnosed by a single test (crystals in joint fluid) · ANCA only when vasculitis is suspected.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>No rheumatic disease is diagnosed by a blood test alone - there must be clinical features too.</strong> The only exception is <strong>gout</strong>, proven by finding uric acid crystals in joint fluid. The lecture is about <strong>which test to order for which suspicion, and when not to order it</strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Approach: pick the test from the clinical picture</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Patient with possible<br/>rheumatologic disease\"] --> B[\"History and exam:<br/>which pattern is it?\"]\n    B --> C{\"Acute hot<br/>single joint?\"}\n    C -->|Yes| D[\"Aspirate the joint:<br/>cell count, culture, crystals\"]\n    C -->|No| E{\"Symmetric small-joint<br/>polyarthritis?\"}\n    E -->|Yes| F[\"Rheumatoid factor + anti-CCP<br/>+ ESR and CRP\"]\n    E -->|No| G{\"Inflammatory back pain,<br/>enthesitis, uveitis?\"}\n    G -->|Yes| H[\"HLA-B27 + ESR and CRP<br/>+ sacroiliac imaging\"]\n    G -->|No| I{\"Multi-system: rash, ulcers,<br/>low counts, kidney?\"}\n    I -->|Yes| J[\"ANA first\"]\n    J --> K{\"ANA positive?\"}\n    K -->|No| L[\"Connective tissue disease very unlikely:<br/>STOP - no anti-DNA, no ENA\"]\n    K -->|\"Yes, and still suspected\"| M[\"Specialist adds anti-DNA,<br/>ENA, complement\"]\n    I -->|\"Vasculitis suspected\"| N[\"ANCA only now\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Order a test only for a clinical suspicion</strong> - many are positive in healthy people, and an unneeded positive misleads and wastes money</li><li>Abbreviations in the tree: erythrocyte sedimentation rate (ESR) · C-reactive protein (CRP) · anti-cyclic citrullinated peptide (anti-CCP) · human leukocyte antigen B27 (HLA-B27) · antinuclear antibody (ANA) · extractable nuclear antigens (ENA) · anti-neutrophil cytoplasmic antibody (ANCA)</li><li>Many tests are also done for <strong>safety</strong> - which organs are involved, and is it safe to start a drug (blood count, creatinine, liver enzymes, hepatitis B and C)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Inflammatory markers: ESR and CRP</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Non-specific</strong> - raised in any inflammation, so they never make a diagnosis</li><li><strong>Where they help</strong><ul><li><span class=\"wl\">giant cell arteritis</span> and <span class=\"wl\">polymyalgia rheumatica</span>: <strong>very high</strong>; normal values make giant cell arteritis very unlikely</li><li><span class=\"wl\">rheumatoid arthritis</span>: may be raised · seronegative spondyloarthritis: raised</li><li><span class=\"wl\">juvenile idiopathic arthritis</span>: raised in active polyarticular and systemic disease, <strong>usually normal in oligoarticular disease</strong></li></ul></li><li><strong>Do not treat a raised marker on its own</strong> - find the reason for it</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Rheumatoid arthritis: rheumatoid factor and anti-CCP</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Rheumatoid factor</span>",
+        "<span class=\"wl\">Anti-CCP</span>"
+       ],
+       "rows": [
+        [
+         "<strong>What it is</strong>",
+         "Antibody (usually IgM) against the Fc end of IgG - \"an antibody against an antibody\"",
+         "Antibody against citrullinated proteins, made during inflammation"
+        ],
+        [
+         "<strong>Sensitivity</strong>",
+         "30-50% of new and 70-85% of established rheumatoid arthritis",
+         "Positive in only a quarter to a half at diagnosis - <strong>a negative does not rule out</strong>"
+        ],
+        [
+         "<strong>Specificity</strong>",
+         "<strong>Poor</strong>: 5-20% of healthy people · Sjögren's, lupus, myositis, mixed connective tissue disease · hepatitis B and C, tuberculosis, syphilis, endocarditis · lung fibrosis, sarcoidosis · lymphoma",
+         "<strong>High (95-96%)</strong> - separates rheumatoid arthritis from other causes of a positive rheumatoid factor"
+        ],
+        [
+         "<strong>Use</strong>",
+         "<strong>Prognosis</strong>: positive → more aggressive, erosive disease with extra-articular features · <strong>do not follow titres</strong>",
+         "Predicts aggressive erosion · can appear years before arthritis · <strong>not covered by the Ontario Health Insurance Plan - only if rheumatoid arthritis is suspected; better to refer</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Connective tissue disease: ANA and what follows</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">ANA</span></strong> = screening test for lupus and other autoimmune connective tissue diseases<ul><li><strong>over 95% of lupus is ANA positive</strong> → <strong>a negative ANA practically rules lupus out</strong></li><li><strong>positive in up to 30% of healthy people</strong> - the commonest cause of a positive ANA is no cause at all → <strong>a positive never rules disease in</strong></li><li>reported as a titre (1/N): bigger N = stronger; strongly positive matters more than borderline</li><li><strong>do not repeat it</strong> - positive once is enough; repeat a negative only if new symptoms appear</li><li>in <span class=\"wl\">juvenile idiopathic arthritis</span> it is used for the <strong>uveitis risk</strong>, not for diagnosis</li></ul></li><li><strong><span class=\"wl\">Anti-double-stranded DNA</span></strong> - only if ANA positive and lupus suspected<ul><li>a type of ANA, so <strong>cannot be positive when ANA is negative</strong></li><li>fairly specific for lupus, positive in only about 50% · goes with more active disease and <strong>lupus nephritis</strong></li><li>outside labs may use kits that also pick up single-stranded DNA → false positives</li></ul></li><li><strong><span class=\"wl\">ENA panel</span></strong> - only after a positive ANA, best left to specialists</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Antibody",
+        "Goes with"
+       ],
+       "rows": [
+        [
+         "<strong>Anti-Ro (SSA)</strong>",
+         "Lupus with <strong>photosensitive rash</strong> · Sjögren's (with anti-La) · pregnancy: risk of <strong>congenital heart block</strong> (neonatal lupus)"
+        ],
+        [
+         "<strong>Anti-La (SSB)</strong>",
+         "Sjögren's - usually with anti-Ro"
+        ],
+        [
+         "<strong>Anti-Sm</strong>",
+         "<strong>Fairly specific for lupus</strong>"
+        ],
+        [
+         "<strong>Anti-RNP</strong>",
+         "Mixed connective tissue disease and lupus"
+        ],
+        [
+         "<strong>Anti-Scl-70</strong>",
+         "Scleroderma with interstitial lung disease"
+        ],
+        [
+         "<strong>Anti-Jo1</strong>",
+         "Dermatomyositis with interstitial lung disease"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Complement (C3, C4)</strong>: low in active lupus, especially lupus nephritis (used up by immune complexes) · <strong>specialist test - family physicians should not order it</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Spondyloarthritis and HLA-B27</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">HLA-B27</span></strong> present in over 90% of white and 50-80% of non-white people with <span class=\"wl\">ankylosing spondylitis</span></li><li>But <strong>8% of the general white population carry it</strong> → a gene alone is not disease (50-100× relative risk)</li><li>Order when the picture fits: inflammatory back pain, enthesitis, uveitis · in juvenile idiopathic arthritis, for <strong>enthesitis-related arthritis</strong></li><li>These conditions are \"seronegative\" - rheumatoid factor negative</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Vasculitis: ANCA</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Only order if you suspect <span class=\"wl\">systemic vasculitis</span></strong> - not covered by the Ontario Health Insurance Plan</li><li><strong>c-ANCA</strong> (cytoplasmic staining, anti-proteinase 3) → <span class=\"wl\">granulomatosis with polyangiitis</span> · more likely to mean real vasculitis</li><li><strong>p-ANCA</strong> (perinuclear staining, anti-myeloperoxidase) → <span class=\"wl\">microscopic polyangiitis</span>, <span class=\"wl\">eosinophilic granulomatosis with polyangiitis</span> · <strong>more false positives</strong></li><li><strong>Both c- and p-ANCA positive → think cocaine cut with levamisole</strong></li><li>Levels may follow disease activity, but only loosely</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/70ab9269ddf7.jpg",
+       "alt": "c-ANCA vs p-ANCA staining patterns - upper-year notes.jpg",
+       "w": 880,
+       "h": 320,
+       "cap": "c-ANCA stains granules across the neutrophil's cytoplasm; p-ANCA stains around the nucleus"
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Expected results by disease (Kai)</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Condition",
+        "Typical results"
+       ],
+       "rows": [
+        [
+         "<strong>Rheumatoid arthritis</strong>",
+         "Rheumatoid factor and anti-CCP may be positive · ESR and CRP may be up · normocytic anemia, normal-to-high platelets"
+        ],
+        [
+         "<strong>Lupus</strong>",
+         "ANA positive · anti-DNA or anti-Sm may be positive · <strong>low lymphocytes and platelets</strong> · low complement when active"
+        ],
+        [
+         "<strong>Seronegative spondyloarthritis</strong>",
+         "Rheumatoid factor negative · HLA-B27 often positive · ESR and CRP up"
+        ],
+        [
+         "<strong>Juvenile idiopathic arthritis</strong>",
+         "Oligoarticular: counts and ESR usually normal, ANA for uveitis risk · polyarticular: usually rheumatoid factor negative (5% positive), ANA positive in 40% · <strong>systemic: rheumatoid factor and ANA always negative</strong>"
+        ],
+        [
+         "<strong>Giant cell arteritis and polymyalgia rheumatica</strong>",
+         "<strong>ESR and CRP high</strong> · anemia · reactive thrombocytosis"
+        ]
+       ]
+      }
+     ]
     },
     {
      "id": "msk-w11-03",
      "num": "03",
      "name": "Rheumatology Treatments",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Rheumatology treatments",
+     "keypoints": "<p>⭐ <strong>Methotrexate (weekly, teratogenic, liver and blood monitoring) is the first DMARD, started early</strong> - triple therapy beats one drug · NSAIDs and steroids relieve symptoms but do not stop joint damage · hydroxychloroquine needs yearly eye exams and is safe in pregnancy · screen for tuberculosis before a TNF inhibitor · an acute hot joint is aspirated before anything is injected.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Two kinds of drug: ones that relieve symptoms (steroids, NSAIDs, acetaminophen) and ones that change the disease (DMARDs and biologics).</strong> In rheumatoid arthritis, joint damage happens early, so the lecture's message is <strong>start a disease-modifying drug early and aggressively</strong>, and use steroids only as a bridge.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Drug classes at a glance</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Class",
+        "Examples",
+        "Mechanism",
+        "Uses",
+        "Adverse effects"
+       ],
+       "rows": [
+        [
+         "<strong>Corticosteroids</strong>",
+         "<span class=\"wl\">prednisone</span> (by mouth) · intramuscular, IV, intra-articular",
+         "Non-specific: block pro-inflammatory proteins and cytokines (IL-1, IL-6, TNF-α), prostaglandins and leukotrienes, neutrophil migration",
+         "<strong>Fast</strong> - acute flares and organ-threatening disease · bridge while a DMARD starts",
+         "Many with long-term use (section 2)"
+        ],
+        [
+         "<strong>Non-selective NSAIDs</strong>",
+         "Ibuprofen · naproxen · meloxicam · diclofenac · indomethacin",
+         "Reversibly block COX-1 and COX-2 → fewer prostaglandins",
+         "Osteoarthritis, rheumatoid and psoriatic arthritis, ankylosing spondylitis, gout, pseudogout",
+         "Stomach (gastritis, ulcers) · kidney · heart and blood pressure · drug interactions"
+        ],
+        [
+         "<strong>COX-2 selective</strong>",
+         "Celecoxib",
+         "Block COX-2 only, sparing stomach-protecting prostaglandins",
+         "As above",
+         "<strong>Less GI toxicity</strong>; otherwise the same risks"
+        ],
+        [
+         "<strong>Acetaminophen</strong>",
+         "Acetaminophen",
+         "Analgesic, <strong>not anti-inflammatory</strong>",
+         "Osteoarthritis, mechanical back pain, regional pain",
+         "Minimal (3 g a day) · reduce in liver disease"
+        ],
+        [
+         "<strong>Opioids</strong>",
+         "—",
+         "—",
+         "<strong>Hardly used</strong> - do not treat inflammation",
+         "Cognition, constipation, dependence"
+        ],
+        [
+         "<strong>Conventional DMARDs</strong>",
+         "<span class=\"wl\">methotrexate</span> · <span class=\"wl\">hydroxychloroquine</span> · <span class=\"wl\">sulfasalazine</span> · <span class=\"wl\">leflunomide</span>",
+         "Non-specific immune suppression",
+         "<strong>Prevent joint damage</strong> in inflammatory arthritis",
+         "Section 4"
+        ],
+        [
+         "<strong>Biologics</strong>",
+         "TNF inhibitors · IL-1, IL-6 inhibitors · T-cell and B-cell agents",
+         "<strong>Target one molecule or cell</strong> in the inflammatory pathway",
+         "After conventional DMARDs fail",
+         "Infection (incl. tuberculosis) · section 5"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Abbreviations: non-steroidal anti-inflammatory drugs (NSAIDs) · disease-modifying anti-rheumatic drugs (DMARDs) · cyclooxygenase (COX) · tumour necrosis factor (TNF) · interleukin (IL) · gastrointestinal (GI)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/ab429337f8d0.jpg",
+       "alt": "COX pathway and NSAIDs - upper-year notes.jpg",
+       "w": 642,
+       "h": 429,
+       "cap": "Arachidonic acid feeds COX-1 (stomach, kidney, platelets) and COX-2 (inflammation, pain, fever); non-selective NSAIDs block both, coxibs only COX-2"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Steroids</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Dose depends on the problem</strong><ul><li><strong>High (about 1 mg/kg)</strong> - life- or organ-threatening: ANCA-associated vasculitis · lupus nephritis · myositis · <span class=\"wl\">giant cell arteritis</span></li><li><strong>Medium</strong> - flares without major organ involvement: rheumatoid arthritis flare 20-40 mg with taper as the DMARD starts · <span class=\"wl\">polymyalgia rheumatica</span> 15-20 mg for a month, then to 10 mg, then down 1 mg a month · acute gout 25-30 mg for 3 days, down 5 mg every 3 days</li><li><strong>Low (5 mg or less)</strong> - chronic use when nothing else works or is tolerated</li></ul></li><li><strong>Routes</strong>: by mouth (easy to taper) · intramuscular (lasts 3-4 weeks; useful if adherence is poor) · IV (\"pulse\" methylprednisolone for a rapid effect) · <strong>intra-articular</strong> when only a few joints are swollen, with fewer systemic effects</li><li><strong>Side effects of chronic use</strong>: appetite and weight gain · gastritis · mood change, psychosis · infection · Cushing's syndrome · acne · <strong>osteoporosis</strong> · <strong>avascular necrosis</strong> · hypertension · high blood sugar · cataracts and glaucoma · proximal muscle weakness · slow wound healing · thin skin</li><li><strong>Relative contraindications</strong> → use a steroid-sparing drug: diabetes · cardiovascular disease · osteoporosis · recurrent infections · glaucoma or cataract</li><li><strong>Protect bone</strong> if more than 7.5 mg is expected for over 3 months: calcium, vitamin D, anti-resorptive drug (Kai)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Joint aspiration and injection</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Informed consent</strong>: discuss the risks - infection (very small risk of septic arthritis) · bleeding · fat atrophy or skin lightening if too shallow · tendon rupture (very small) · some systemic absorption (worse sugar or blood pressure control) · post-injection flare (uncommon, settles)</li><li><strong>Relative contraindications</strong>: septic joint or suspicion of one · cellulitis or infection over the site · psoriasis covering the skin · <strong>prosthetic joint</strong> · severe low platelets or bleeding disorder · allergy to the local anesthetic</li><li><strong>Diagnostic aspiration</strong> - cell count, crystals, culture and Gram stain<ul><li><strong>over 50,000 cells → septic</strong> · over 2,000 → inflammatory · under 2,000 → non-inflammatory (osteoarthritis)</li><li>needle-shaped crystals → gout · rhomboid crystals → pseudogout</li><li><strong>an acute single hot joint always needs aspiration to rule out infection</strong></li></ul></li><li><strong>Therapeutic</strong>: draining fluid eases pain and swelling · steroid injection for inflammatory arthritis and osteoarthritis pain · hyaluronic acid for osteoarthritis</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Conventional DMARDs</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Why early</strong>: 90% of affected joints are involved in the first year, erosions in up to 93% within 2 years, half are work-disabled at 10 years → a <strong>window of opportunity</strong></li><li><strong>Principles</strong>: <strong>treat early</strong> (ideally within 3 months of symptoms) · <strong>treat aggressively</strong> (<strong>triple therapy</strong> beats one drug in early rheumatoid arthritis) · <strong>treat to target</strong> (no swollen joints, no pain, better function) · reassess activity every 1-3 months and <strong>adjust every 3-6 months</strong> if the target is not met</li><li><strong>Before starting</strong>: discuss side effects, interactions, contraindications · baseline bloodwork · most need <strong>monthly bloodwork</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Drug",
+        "Dose and onset",
+        "Key adverse effects",
+        "Monitoring",
+        "Pregnancy and notes"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Methotrexate</span></strong> - first choice",
+         "20-25 mg <strong>weekly</strong>, by mouth or under the skin · 6-8 weeks",
+         "Mouth ulcers, GI upset, hair loss, fatigue · <strong>liver toxicity, low blood counts, pneumonitis</strong> · infection",
+         "Baseline hepatitis B and C, chest x-ray · monthly counts, liver, creatinine",
+         "<strong>Teratogenic</strong> · folic acid cuts side effects · avoid alcohol · avoid sulfa antibiotics"
+        ],
+        [
+         "<strong><span class=\"wl\">Hydroxychloroquine</span></strong>",
+         "200-400 mg daily · <strong>6-12 weeks</strong> (slowest)",
+         "GI upset, rash, sun sensitivity, headache · <strong>retinal toxicity</strong> (rare)",
+         "<strong>Yearly eye exam</strong>, no blood monitoring",
+         "<strong>Safe in pregnancy</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Sulfasalazine</span></strong>",
+         "500-1000 mg a day, up to 2 g · 6-8 weeks",
+         "Headache, GI upset, rash · liver toxicity, low counts · reversible low sperm count",
+         "Screen G6PD deficiency · monthly bloodwork",
+         "<strong>Safe in pregnancy</strong> · <strong>not with a sulfa allergy</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Leflunomide</span></strong>",
+         "10-20 mg daily · 6-8 weeks",
+         "GI upset, <strong>hypertension</strong>, hair loss · liver toxicity, low counts, neuropathy, pneumonitis",
+         "Baseline blood pressure · monthly bloodwork",
+         "<strong>Teratogenic</strong> · cholestyramine washout to clear it"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>If the response is incomplete: switch methotrexate from mouth to injection · add leflunomide · consider a biologic</li><li>Less used: gold, azathioprine, cyclosporine, cyclophosphamide</li><li><strong>NSAIDs are not DMARDs</strong> - they ease pain and swelling but do not slow x-ray damage</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Biologics</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Like DMARDs, they suppress inflammation and prevent joint damage, but <strong>hit a specific target</strong>, work <strong>faster and a little stronger</strong>, and are <strong>expensive</strong> - so cheaper drugs come first to get coverage</li><li><strong>TNF inhibitors</strong>: <span class=\"wl\">adalimumab</span> · <span class=\"wl\">infliximab</span> (IV) · golimumab · certolizumab pegol · <span class=\"wl\">etanercept</span> (a decoy receptor) · onset 2 weeks to 3 months<ul><li><strong>Adverse effects</strong>: injection or infusion reactions · <strong>infections including tuberculosis</strong> (screen with chest x-ray or skin test first) · demyelination (multiple sclerosis) · worse heart failure · small cancer risk (skin, ? lymphoma) · drug-induced lupus</li><li><strong>Do not use with</strong>: active, recent or recurrent infection · heart failure class III-IV · active cancer · multiple sclerosis or a family history of it</li><li><strong>Hold</strong> if fever, infection, antibiotics or upcoming surgery</li></ul></li><li><strong>Others</strong>: <span class=\"wl\">anakinra</span> (IL-1) · <span class=\"wl\">tocilizumab</span> (IL-6) · <span class=\"wl\">abatacept</span> (blocks T-cell co-stimulation) · <span class=\"wl\">rituximab</span> (depletes B cells)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Children vs adults</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Juvenile idiopathic arthritis uses a <strong>stepwise ladder</strong> (Kai): NSAID → oral or injected steroid → second-line DMARD → biologic<ul><li><strong>intra-articular steroids</strong> are useful add-ons for problem joints · systemic steroids as a short bridge at onset</li><li>DMARDs: methotrexate, leflunomide, sulfasalazine · biologics: etanercept, infliximab, adalimumab, abatacept, tocilizumab</li></ul></li><li><strong>Systemic juvenile idiopathic arthritis is different</strong>: DMARDs largely do not work → high-dose steroids, then <strong>IL-1 (anakinra) or IL-6 (tocilizumab) blockade</strong></li><li>Plus physiotherapy, occupational therapy, education and eye screening for uveitis</li></ul>"
+      }
+     ]
     },
     {
      "id": "msk-w11-04",
      "num": "04",
      "name": "Pediatric Orthopedics",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Pediatric orthopedics",
+     "keypoints": "<p>⭐ <strong>A child's growth plate fails before the ligament - a \"sprain\" in a child may be a Salter-Harris I fracture</strong>, and every growth plate injury needs follow-up for 1-2 years · type II is the most common · Barlow pushes out, Ortolani clunks in, both useless after 3-6 months · Pavlik harness under 6 months · Ponseti for clubfoot · bow legs normal to 2, knock knees 3-7 · scoliosis rarely hurts, and surgery aims to stop progression.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Children's bones are not small adult bones: they bend, they have a growth plate that breaks first, and they remodel.</strong> The lecture runs from how children fracture, through growth plate injury, to the developmental problems you screen for: <strong>hip dysplasia, clubfoot, normal leg shapes and scoliosis</strong>. The limping child has its own lecture: <span class=\"wl\">09 - Child with a Limp</span>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. How children's bones differ</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>More porous and pliable</strong> → different fracture patterns and management</li><li><strong>Periosteum</strong> (outer bone-forming layer) is <strong>thicker and more active</strong> → adds width and <strong>heals fractures faster</strong></li><li><strong>Physis (growth plate)</strong> = cartilage at the ends of long bones<ul><li><strong>the weak point</strong> - more likely to fail than ligaments, so <strong>children fracture rather than sprain or dislocate</strong></li><li>injury can cause growth arrest</li></ul></li><li>Long bones grow by <strong>endochondral ossification</strong>: a cartilage model is replaced by bone from the primary centre (diaphysis) and secondary centres (epiphysis); the physis is replaced last</li><li><strong>Apophyses</strong> = bony bumps where tendons attach - sites of avulsion and overuse injury</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Pediatric fractures</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Mechanisms</strong>: falls from low height · sport · pedestrian struck · vehicle operator (such as all-terrain vehicles) · <strong>non-accidental injury</strong> in infants and toddlers</li><li>Most are single-limb and minor</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Fracture",
+        "What happens",
+        "Typical site"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Buckle</span></strong>",
+         "Cortex buckles on itself under compression - <strong>the most common</strong>",
+         "Distal radius metaphysis after a fall on an outstretched hand"
+        ],
+        [
+         "<strong><span class=\"wl\">Greenstick</span></strong>",
+         "Bone bends and breaks on one side only",
+         "Mid-shaft"
+        ],
+        [
+         "<strong><span class=\"wl\">Plastic deformation</span></strong>",
+         "Bone bows with no visible fracture line",
+         "—"
+        ],
+        [
+         "<strong><span class=\"wl\">Avulsion</span></strong>",
+         "Muscle pull tears off a piece of bone at an apophysis (an adult would tear the muscle)",
+         "Pelvis · 5th metatarsal · medial epicondyle · usually no orthopedic care needed"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/6523e8e0ff63.jpg",
+       "alt": "pediatric fracture types - buckle, greenstick, plastic deformation - upper-year notes.jpg",
+       "w": 577,
+       "h": 341,
+       "cap": "Three fractures only children get: buckle, greenstick and plastic deformation"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Healing is rarely the problem - getting the alignment right before it heals is</strong></li><li><strong>Remodelling</strong> (the skeleton restoring its own alignment) - <strong>accept it, don't expect it</strong><ul><li>helps: <strong>2 or more years of growth left</strong> · fracture <strong>near the physis</strong> (metaphysis remodels far better than diaphysis) · angulation <strong>in the plane of joint movement</strong></li><li>does not help: <strong>displaced intra-articular fractures</strong> · mid-shaft fractures with marked angulation or <strong>rotation</strong> · angulation out of the joint's plane</li></ul></li><li><strong>Closed reduction</strong> under a hematoma block or conscious sedation (most control) → <strong>well-moulded cast</strong> → <strong>x-ray after casting</strong> → timely follow-up<ul><li>reductions fail when not pre-planned (force direction, translation and angulation, hand position) or the cast is over-padded or too short</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Growth plate injuries: Salter-Harris</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Type",
+        "Fracture line",
+        "Notes"
+       ],
+       "rows": [
+        [
+         "<strong>I - Slipped</strong>",
+         "Straight through the physis",
+         "Only a widened growth plate on x-ray · <strong>often missed as a \"sprain\"</strong> · good prognosis"
+        ],
+        [
+         "<strong>II - Above</strong>",
+         "Through the physis and up into the metaphysis",
+         "<strong>Most common (about 75%)</strong> · distal radius · good prognosis"
+        ],
+        [
+         "<strong>III - Lower</strong>",
+         "Through the physis and down into the epiphysis",
+         "<strong>Intra-articular</strong> · needs anatomic reduction"
+        ],
+        [
+         "<strong>IV - Through</strong>",
+         "Metaphysis, physis and epiphysis",
+         "Intra-articular · <strong>risk of a bony bridge → angular deformity</strong> · lateral humeral condyle, distal tibia · open reduction"
+        ],
+        [
+         "<strong>V - Rammed</strong>",
+         "Crush of the physis",
+         "Rare · <strong>missed until growth arrest appears</strong> · worst prognosis"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>About <strong>10% develop growth disturbance</strong> - risk rises with: <strong>age</strong> (most important) · severity · higher type · forceful reduction · vascularity · open injury</li><li>Growth arrest → <strong>angulation or leg length discrepancy</strong>; treatment depends on growth remaining</li><li><strong>Every growth plate injury is serious</strong>: follow <strong>at least 1 year (preferably 2)</strong> and warn the family</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/405ceeafb95f.jpg",
+       "alt": "Salter-Harris classification - upper-year notes.jpg",
+       "w": 406,
+       "h": 538,
+       "cap": "Salter-Harris types I to V: through the physis, into the metaphysis, into the epiphysis, through all three, and a crush"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Elbow and overuse injuries</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Elbow ossification centres</strong> appear in order <strong>CRITOE</strong>: capitellum · radial head · internal (medial) epicondyle · trochlea · olecranon · external (lateral) epicondyle - <strong>a centre seen too early for the age suggests a fracture</strong> (ages differ: the medwiki note gives 1-3-5-7-9-11 years, Kai 3-5-7-9-11-13 - check the slides)</li><li>Call pediatric orthopedics for: <strong>a very swollen elbow</strong> (especially before ossification) · instability · displaced fracture · a dislocation that will not reduce congruently</li><li><strong>Apophysitis</strong> = overuse traction injury at a tendon attachment, adolescents, slow-onset activity pain<ul><li><span class=\"wl\">Osgood-Schlatter disease</span> (tibial tuberosity) · <span class=\"wl\">Sinding-Larsen disease</span> (lower patella) · <span class=\"wl\">Sever's disease</span> (heel)</li><li><strong>clinical diagnosis, no imaging</strong> · benign, settles within about 2 years · RICE (rest, ice, compression, elevation) and stay active · no orthopedic referral needed</li></ul></li><li>Also: stress fractures · <span class=\"wl\">osteochondritis dissecans</span> (bone under the cartilage loses its blood supply and a piece comes loose)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Developmental dysplasia of the hip</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>What</strong>: a shallow acetabulum, ranging from dysplasia to subluxation or dislocation · 1-6 per 1,000 births, left more often</li><li><strong>Risk factors</strong>: <strong>first-born · female · breech</strong> · family history (10×) · oligohydramnios · other packaging problems (torticollis, clubfoot, calcaneovalgus foot, scoliosis)</li><li><strong>Exam - all babies are screened</strong><ul><li><strong><span class=\"wl\">Barlow test</span></strong> - adduct and push back: a reduced hip slips <strong>out</strong></li><li><strong><span class=\"wl\">Ortolani test</span></strong> - abduct and lift: a dislocated hip clunks back <strong>in</strong></li><li>both <strong>unreliable after 3-6 months</strong> → look for limited abduction · <strong><span class=\"wl\">Galeazzi test</span></strong> (knee lower on the dislocated side) · painless waddling gait</li></ul></li><li><strong>Treatment by age</strong>: <strong>under 6 months → Pavlik harness</strong> · older → closed reduction and spica cast, or open reduction ± osteotomy</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Clubfoot</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Ankle in <strong>plantarflexion</strong>, heel and forefoot in <strong>varus</strong> (turned in and down) · familial, usually idiopathic · progressive and stiff if untreated</li><li><strong>Ponseti method</strong> (first line):<ul><li>① weekly manipulation and casting for 4-6 weeks</li><li>② percutaneous Achilles tendon lengthening (in clinic, local anesthetic)</li><li>③ cast for 3 weeks</li><li>④ abduction brace (\"boots and bar\"): full-time 3 months, then <strong>nights for 2-3 years</strong></li></ul></li><li>Posteromedial release surgery only for resistant or recurrent feet - extensive dissection, worse outcomes</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Normal variants</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>In-toeing and out-toeing</strong> - common referrals, usually normal</li><li><strong>Bow legs (<span class=\"wl\">genu varum</span>) normal from birth to 2</strong> · <strong>knock knees (<span class=\"wl\">genu valgum</span>) normal from 3 to 7</strong> → reassure</li><li><strong>Red flags</strong>: excessive or <strong>asymmetric</strong> · short stature · <strong>progressive bowing</strong> · persisting <strong>beyond 7-8</strong> · suspected underlying disease (nutrition, metabolic bone disease, skeletal dysplasia, trauma)</li><li><strong>Abnormal gait warning signs</strong>: asymmetry · progression · leg length difference · pain · deformity</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>8. Scoliosis</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Structural lateral curve plus rotation</strong> of the spine</li><li><strong>Types</strong>: <strong>idiopathic (most common - adolescent girls)</strong> · congenital (vertebral malformation) · neuromuscular (cerebral palsy, spina bifida, muscular dystrophy) · syndromic</li><li><strong>History</strong>: <strong>rarely painful</strong> · noticed by someone else · a <strong>rib hump</strong> · full neurological review, family history</li><li><strong>Exam</strong>: gait · skin signs over the spine (dimple, hair, lipoma, hemangioma) · <strong><span class=\"wl\">Adam's forward bend test</span></strong> - rib prominence on the convex side (absent in postural scoliosis) · full neurological exam</li><li><strong>X-ray</strong>: location, levels, direction, size (Cobb angle) · rule out congenital, trauma, tumour</li><li><strong>Progression risk</strong>: bigger curve · female · <strong>young, pre-menarchal</strong> (more growth left) · double curve · thoracic</li><li><strong>Treatment</strong>: education and monitoring · <strong>brace</strong> · <strong>no medication</strong> · <strong>surgical fusion</strong> with rods and screws to <strong>stop progression</strong>, not mainly to straighten</li></ul>"
+      }
+     ]
     },
     {
      "id": "msk-w11-05",
      "num": "05",
      "name": "Fracture Radiology",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Fracture radiology",
+     "keypoints": "<p>⭐ <strong>Always get two views at 90° and the joints above and below</strong> - an oblique fracture shows on one view, a spiral on several · describe the distal fragment relative to the proximal (not for the clavicle) · a fat-fluid level means an intra-articular fracture · spiral fractures in toddlers raise non-accidental injury · a transverse fracture with little trauma suggests pathological bone. Mnemonic in the note body: OLD ACIDS.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Describe every fracture x-ray in the same order, so the person on the phone can picture it without seeing it.</strong> The lecture is that order: <strong>views → location → pattern → displacement → joint involvement → other findings → bone quality</strong>, then what healing looks like.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Get the right films</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Image the whole bone, plus the joint above and below</strong></li><li><strong>Two views at 90° to each other</strong> (orthogonal) - usually anteroposterior (front-to-back) and lateral for long bones · oblique is the third standard view</li><li><strong>Special views</strong> for particular sites:<ul><li><strong>mortise view</strong> - ankle (the tibiofibular syndesmosis)</li><li><strong>Y-view</strong> - shoulder (the whole scapula)</li><li><strong>scaphoid view</strong> - wrist · <strong>clenched-fist view</strong> - hand</li></ul></li><li>Intra-articular fractures often need <strong>CT</strong> to define the joint surface (Kai)</li><li>Then look at three things: <strong>bone</strong> (trace each cortex for a break or abrupt change) · <strong>joints</strong> (alignment, space narrowing, erosions) · <strong>soft tissue</strong> (swelling and effusions point to the injury)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Location</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Right or left · which bone · which part:<ul><li><strong>epiphysis</strong> (end) · <strong>physis</strong> (growth plate - children only) · <strong>metaphysis</strong> (flared transition) · <strong>diaphysis</strong> (shaft) · <strong>apophysis</strong> (bump where a tendon attaches)</li></ul></li><li>Anatomical landmark: head, neck, shaft, base, condyle</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Pattern and complexity</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Complete</strong> (all the way through) or <strong>incomplete</strong> (buckle, greenstick, bowing - mostly children)</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Pattern",
+        "Fracture line",
+        "Clue"
+       ],
+       "rows": [
+        [
+         "<strong>Transverse</strong>",
+         "Straight across, perpendicular to the shaft",
+         "Pathological fractures are often transverse"
+        ],
+        [
+         "<strong>Oblique</strong>",
+         "Diagonal, seen on one view",
+         "Check a second view to tell from spiral"
+        ],
+        [
+         "<strong>Spiral</strong>",
+         "Winds around the shaft, seen on several views",
+         "<strong>Twisting force - in a young child (humeral shaft) suspect non-accidental injury</strong>"
+        ],
+        [
+         "<strong>Comminuted</strong>",
+         "3 or more fragments",
+         "<strong>High energy</strong> · may have a triangular <strong>butterfly fragment</strong> or a segmental piece"
+        ],
+        [
+         "<strong>Longitudinal</strong>",
+         "Along the long axis",
+         "—"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/e9f3ff3af302.jpg",
+       "alt": "fracture patterns on x-ray - upper-year notes.jpg",
+       "w": 814,
+       "h": 882,
+       "cap": "Transverse, oblique, spiral, comminuted and butterfly-fragment fractures on x-ray"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Displacement and deformity</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Describe <strong>the distal fragment relative to the proximal one</strong> - except the <strong>clavicle</strong>, where the proximal fragment is described (neck muscles pull it up)</li><li><strong>Translation (displacement)</strong> - shift sideways, as a fraction of shaft width · more than a full width = <strong>\"off-ended\"</strong></li><li><strong>Angulation</strong> - by the direction of the apex: <strong>varus = apex lateral</strong> · <strong>valgus = apex medial</strong> (sources differ on which way the distal fragment points: the medwiki text and its angulation diagram disagree - check the slides)</li><li><strong>Rotation</strong> - distal fragment turned internally or externally; check the joints above and below</li><li><strong>Length</strong>: <strong>distraction</strong> (pulled apart) vs <strong>shortening</strong> - by <strong>impaction</strong> (driven into each other) or <strong>override</strong> (fragments overlap)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/d21000a93684.jpg",
+       "alt": "displaced (translated) fracture.png",
+       "w": 900,
+       "h": 1147,
+       "cap": "Translation is measured in shaft widths: half-shaft width versus off-ended"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Joint surface involvement</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Extra-articular</strong>: joint spared · reduction need not be perfect, the bone remodels</li><li><strong>Intra-articular</strong>: risk of <strong>post-traumatic osteoarthritis</strong> · needs anatomic (often open) reduction · longer healing<ul><li><strong>step-off</strong> - an abrupt break in the cortical line of the joint surface; trace the cortex</li><li><strong><span class=\"wl\">lipohemarthrosis</span></strong> - marrow fat and blood leak into the joint → <strong>fat-fluid level</strong> on x-ray · may hide the fracture: cast 1-2 weeks and re-image</li><li><strong>dislocation or subluxation</strong> - the broken joint surface no longer holds the joint</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/72b1e278a621.jpg",
+       "alt": "extra-articular vs. intra-articular fractures.png",
+       "w": 814,
+       "h": 516,
+       "cap": "Extra-articular fracture spares the joint surface; intra-articular runs into it"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Other findings</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Open (compound)</strong> - through the skin; gas in the soft tissue on x-ray · some are easy to miss (<strong><span class=\"wl\">Seymour fracture</span></strong> of the fingertip) · infection risk</li><li><strong>Avulsion</strong> - a tendon or ligament pulls off a chip of bone</li><li><strong>Periprosthetic</strong> - around an implant · note any <strong>hardware</strong></li><li><strong>Diastasis</strong> - a widened joint with or without fracture: pubic symphysis, acromioclavicular joint, skull sutures</li><li><strong>Amputation</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Bone quality</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Healthy, or weakened → <strong>pathological (<span class=\"wl\">fragility</span>) fracture</strong> with little or no trauma, usually <strong>transverse</strong></li><li>Causes: osteopenia · osteoporosis · osteogenesis imperfecta · Paget's disease of bone</li><li>Children: periosteum stays intact, bones less brittle (buckle fractures) · growth plates give their own patterns</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>8. Healing on x-ray (Kai)</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Primary healing</strong>: only with <strong>rigid surgical fixation and anatomic reduction</strong> (compression plate) → bone remodels directly, <strong>no callus</strong></li><li><strong>Secondary healing</strong>: most fractures - inflammation, then <strong>callus</strong> (casts, intramedullary nails, external fixators, bridge plates) → <strong>callus is always seen</strong></li><li>On early films the fracture line can look <strong>wider</strong>: resorption, not more displacement · timeline and stages in <span class=\"wl\">07 - Fracture Management</span></li></ul>"
+      }
+     ]
     },
     {
      "id": "msk-w11-06",
      "num": "06",
      "name": "MSK Oncology",
-     "hasNote": false
+     "hasNote": true,
+     "title": "MSK oncology: the soft tissue mass",
+     "keypoints": "<p>⭐ <strong>Over 5 cm, deep, fixed, growing or painful → image (MRI) and core biopsy before anyone excises it</strong> - small, superficial, mobile and stable can be excised · no fine needle aspiration for a possible sarcoma · sarcomas are usually painless and spread to the lung (stage with CT chest) · pre-operative radiation plus wide excision for most.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Almost every lump is benign, but the one that is a sarcoma must not be shelled out like a lipoma.</strong> The lecture turns on <strong>which features make a mass suspicious</strong>, and what to do <strong>before</strong> anyone cuts: image and biopsy, not excise.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Soft tissue and its tumours</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Soft tissue</strong> = non-epithelial tissue outside the skeleton (muscle, fat, fibrous tissue, vessels, nerves), excluding the reticuloendothelial system, glia and the supporting tissue of organs · from mesoderm (\"mesenchymal\")</li><li><strong>Benign tumours are about 100× more common than malignant</strong> · <strong>sarcoma</strong> = a malignant tumour of soft tissue or bone</li><li>Sarcoma incidence <strong>rises with age</strong>, except the <strong>pediatric sarcomas</strong>: neuroblastoma · <span class=\"wl\">rhabdomyosarcoma</span> · Ewing sarcoma</li><li>Most arise in the <strong>lower limb and retroperitoneum</strong> (where connective tissue is plentiful) (Kai)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/3880f23c85f0.jpg",
+       "alt": "types of soft tissue (mesenchymal).png",
+       "w": 900,
+       "h": 610,
+       "cap": "Soft tissues under the microscope: skeletal muscle, vessels, nerve, smooth muscle, fat and fibrous tissue"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Causes and classification</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>About 99% have no known cause</strong>; trauma does not cause them but often leads to their discovery</li><li><strong>Known links</strong><ul><li>environmental: asbestos → mesothelioma · vinyl chloride → angiosarcoma · herbicides, radiation, foreign material → undifferentiated sarcoma</li><li>virus: human herpesvirus 8 → Kaposi sarcoma</li><li>immune: chronic lymphedema → angiosarcoma (Stewart-Treves)</li><li>genetic: <span class=\"wl\">Li–Fraumeni syndrome</span> (p53) · retinoblastoma (Rb) · neurofibromatosis</li></ul></li><li><strong>Named by the adult tissue they resemble</strong>:</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Tissue",
+        "Benign",
+        "Malignant"
+       ],
+       "rows": [
+        [
+         "Fat",
+         "Lipoma",
+         "<strong>Liposarcoma</strong>"
+        ],
+        [
+         "Skeletal muscle",
+         "Rhabdomyoma",
+         "<span class=\"wl\">Rhabdomyosarcoma</span>"
+        ],
+        [
+         "Smooth muscle",
+         "Leiomyoma",
+         "<span class=\"wl\">Leiomyosarcoma</span>"
+        ],
+        [
+         "Fibrous tissue",
+         "Fibroma",
+         "Fibrosarcoma"
+        ],
+        [
+         "Peripheral nerve",
+         "Neurofibroma",
+         "Neurofibrosarcoma"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Behaviour</strong>: <strong>benign</strong> - limited growth, may recur, no spread · <strong>intermediate</strong> - locally aggressive, no or rare (5-10%) metastasis · <strong>malignant</strong> - locally aggressive, metastasises often (<strong>about 25% already have, usually to the lung</strong>)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. History and exam</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>History</strong> - pin the timeline down:<ul><li>when first noticed, how big then and now (compare to nuts, fruit, golf or tennis balls) → <strong>has it grown?</strong></li><li>recent trauma · pain or numbness (<strong>sarcomas are usually painless</strong>; constitutional symptoms suggest metastasis) · recurrence after previous removal · other lumps (multiple lipomas are common) · family history of lumps</li></ul></li><li><strong>Exam</strong>: site, size, skin changes · consistency · <strong>superficial or deep</strong> · <strong>mobile or fixed</strong> · tenderness · regional nodes (rarely involved)</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Reassuring",
+        "Suspicious"
+       ],
+       "rows": [
+        [
+         "Limited growth · few symptoms · <strong>superficial</strong> · <strong>mobile</strong> · 5 cm or less",
+         "<strong>Growing</strong> · painful · <strong>recurrent</strong> · <strong>deep</strong> (below the fascia) · <strong>fixed</strong> · awkward location · <strong>over 5 cm</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. What to do next</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Soft tissue mass\"] --> B{\"5 cm or less AND<br/>no suspicious features?\"}\n    B -->|Yes| C[\"Safe to excise\"]\n    B -->|\"No: over 5 cm or suspicious\"| D[\"Image BEFORE any biopsy:<br/>MRI preferred, or CT<br/>± surgical consult\"]\n    D --> E[\"Core needle or incisional biopsy<br/>NOT fine needle aspiration\"]\n    E --> F{\"Sarcoma?\"}\n    F -->|Yes| G[\"Sarcoma multidisciplinary team<br/>+ staging CT chest\"]\n    F -->|No| H[\"Benign: observe or excise\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Why not just cut it out?</strong> A sarcoma removed as if it were a benign lump comes out with little or no margin of normal tissue</li><li><strong>Biopsy</strong><ul><li><strong>core needle</strong> - less invasive, good diagnostic yield · <strong>incisional</strong> - partial sample, more invasive · <strong>excisional</strong> - only for low-risk lesions (small, not suspicious)</li><li><strong>fine needle aspiration is not used</strong> for diagnosis - too few cells, and the pathologist needs the tissue structure</li><li>disturb the mass as little as possible</li></ul></li><li>Cancer Care Ontario has a soft tissue sarcoma diagnostic pathway (in the note body)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Treatment and prognosis</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Staging first</strong> · <strong>all possible sarcomas go to a sarcoma multidisciplinary team</strong> · <strong>CT chest</strong> for lung metastases (Kai's cases also follow with yearly chest x-rays)</li><li><strong>Surgery</strong>: <strong>wide excision</strong> (a cuff of normal tissue) is preferred · marginal can be inadequate · radical when needed</li><li><strong>Radiation</strong>: added to surgery it cuts local recurrence <strong>from about 30% to 10%</strong> · <strong>pre-operative</strong> radiation causes less tissue damage · also when resection is limited</li><li><strong>Chemotherapy</strong>: curative for osteosarcoma, Ewing sarcoma and rhabdomyosarcoma in young adults (with surgery and radiation) · <strong>routine adjuvant chemotherapy is not standard</strong> (no survival benefit)</li><li>Leiomyosarcoma and liposarcoma: often curable with surgery plus radiation</li><li><strong>Not curable</strong> → palliative care can still greatly improve quality of life</li><li><strong>Prognosis</strong> depends on depth, grade, histology, location and size (nomograms such as Memorial Sloan Kettering's)</li></ul>"
+      }
+     ]
     },
     {
      "id": "msk-w11-07",
      "num": "07",
      "name": "Fracture Management",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Fracture management",
+     "keypoints": "<p>⭐ <strong>Pain out of proportion and pain on passive stretch = compartment syndrome until proven otherwise - split the cast and get a fasciotomy; do not wait for the pulse to go</strong> · any fracture with a wound is open: antibiotics, tetanus, early debridement · the fracture line looks wider at 10-14 days because it is healing · scaphoid, femoral head and talus are the avascular necrosis sites · hypertrophic non-union means not enough stability.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Every fracture follows the same sequence: resuscitate → reduce → hold the reduction → check it on x-ray → rehabilitate.</strong> The lecture then covers the two situations that change the plan - <strong>open fractures</strong> and the <strong>complications</strong>, of which compartment syndrome is the emergency.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Goals and steps</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Goals</strong>: restore anatomy (<strong>length, alignment, rotation, translation</strong>) · allow <strong>early motion</strong> and avoid stiffness · avoid complications of healing · improve function</li><li>① <strong>Resuscitate</strong> - fractures bleed (from bone, vessels, soft tissue): ABCs (airway, breathing, circulation) first</li><li>② <strong>Reduce</strong> - choice depends on fracture type and site, displacement, open or closed, and whether the patient can have surgery (other injuries may matter more)<ul><li><strong>closed</strong> (no direct view): analgesia and sedation → <strong>longitudinal traction</strong> to restore length → <strong>exaggerate the deformity</strong> → <strong>reverse it</strong> → immobilise</li><li><strong>open</strong>: in the operating room under anesthesia, seeing the fragments</li></ul></li><li>③ <strong>Maintain the reduction</strong><ul><li><strong>cast or splint</strong> - the basic option after closed reduction</li><li><strong>external fixator</strong> - temporary; when swelling rules out a cast and the patient is not ready for internal fixation</li><li><strong>internal fixation</strong> - plates, screws, pins, intramedullary nail · with open reduction = <strong>open reduction and internal fixation (ORIF)</strong></li></ul></li><li>④ <strong>Post-reduction x-ray</strong> - is the reduction adequate and is it holding?</li><li>⑤ <strong>Rehabilitation</strong> - <strong>move as much as is safe, as early as possible</strong> · protected weight-bearing with aids as directed · physiotherapy and occupational therapy</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Open fractures</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Bone or fracture hematoma exposed through a skin wound · <strong>any fracture with a wound nearby is open until proven otherwise</strong></li><li><strong>More complications</strong>: <strong>infection</strong>, delayed union and non-union, poorer function - worse with high energy (more contamination, soft tissue trauma, dead bone)</li><li><strong>Goal</strong>: turn an <strong>unstable, contaminated wound into a stable, clean one</strong><ul><li><strong>early antibiotics</strong> · <strong>tetanus prophylaxis</strong> · splint while waiting for orthopedics</li><li><strong>early surgery</strong>: remove all dead tissue including bone · irrigate gently with saline · stabilise (plate, external fixator, nail)</li><li><strong>early closure</strong> of the soft tissue (direct closure or a plastic surgery flap)</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. How fractures heal</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Primary (contact) healing</strong> - fragments pressed together by rigid fixation (open reduction and internal fixation) → direct remodelling, <strong>no callus</strong></li><li><strong>Secondary healing</strong> - most fractures, with or without surgery → <strong>callus</strong>:<ul><li><strong>hematoma and inflammation</strong> → new vessels grow in</li><li><strong>resorption</strong> at the fracture ends → on x-ray at <strong>10-14 days the fracture line looks wider</strong> (healing, not displacement)</li><li><strong>soft (fibrocartilage) callus</strong> → <strong>hard (bony) callus</strong> → <strong>remodelling</strong> to compact bone</li></ul></li><li><strong>Healed = clinical</strong>: no tenderness, no movement at the site, can bear weight<ul><li><strong>upper limb 3-10 weeks</strong> (humerus longest, 8-10) · <strong>lower limb 6-12 weeks</strong> (femoral neck and shaft about 12)</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/0f60e797958f.jpg",
+       "alt": "fracture healing stages.png",
+       "w": 896,
+       "h": 410,
+       "cap": "Secondary healing: hematoma (0-2 weeks), soft callus (2-3 weeks), hard callus (3-6 weeks), remodelling (8 weeks to 2 years)"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Compartment syndrome</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Pressure in a closed fascial compartment rises above what the nerves and muscles inside can tolerate</strong> · <strong>forearm and lower leg</strong> (tibial fracture) most often</li><li>Nerve and muscle are metabolically active → <strong>injury from 2 hours of ischemia</strong> → cell death → leaky capillaries → more swelling → more pressure</li><li><strong>Causes</strong>: external - <strong>tight cast</strong>, direct pressure, circumferential burn eschar · internal - hematoma, fluid leak (burns, reperfusion, crush)</li><li><strong>Clinical diagnosis - an orthopedic emergency</strong><ul><li><strong>pain out of proportion to the injury</strong> · <strong>pain on passive stretch</strong> of the compartment's muscles</li><li>paresthesia → paralysis (late)</li><li>pulses: sources differ - Kai says <strong>pulses are never lost</strong>, the medwiki note lists pulselessness as a very late, atypical finding - check the slides</li></ul></li><li><strong>Measure pressure</strong> when the patient cannot report symptoms (sedated, child): <strong>diastolic pressure minus compartment pressure under 20 mmHg</strong>, or <strong>compartment pressure over 30 mmHg</strong></li><li><strong>Management</strong>: call orthopedics · <strong>remove casts and tight dressings</strong> · elevate · cool · monitor · <strong>urgent fasciotomy</strong></li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Limb fracture or crush,<br/>now in a cast or swelling\"] --> B{\"Pain out of proportion<br/>or pain on passive stretch?\"}\n    B -->|No| C[\"Keep monitoring\"]\n    B -->|Yes| D[\"Remove cast and dressings,<br/>elevate, call orthopedics\"]\n    D --> E{\"Can the patient<br/>report symptoms?\"}\n    E -->|Yes| F[\"Clinical diagnosis:<br/>URGENT FASCIOTOMY\"]\n    E -->|\"No: sedated or child\"| G{\"Compartment pressure over 30,<br/>or diastolic minus compartment<br/>pressure under 20 mmHg?\"}\n    G -->|Yes| F\n    G -->|No| C"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Other complications</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Complication",
+        "What it is",
+        "Key points"
+       ],
+       "rows": [
+        [
+         "<strong>Venous thromboembolism</strong>",
+         "Clots from <strong>Virchow's triad</strong>: vessel injury, stasis, hypercoagulability",
+         "Higher risk: multiple injuries · spinal cord or head injury · <strong>lower limb, hip or pelvic fracture</strong> · older age · long wait for surgery · prevent mechanically (intermittent pneumatic compression, inferior vena cava filter) or with drugs (aspirin, low-molecular-weight heparin, warfarin)"
+        ],
+        [
+         "<strong>Non-union</strong>",
+         "Not healed by <strong>twice the expected time</strong> (sources differ: the medwiki note also gives 6-9 months and calls 2× \"delayed union\" - check the slides)",
+         "<strong>Atrophic</strong> - no new bone, poor biology · <strong>hypertrophic</strong> - plenty of bone but <strong>not stable enough</strong> · infected · fix with stabilisation, biology (nutrition, metabolic, stop smoking, bone graft), clearing infection, reconstruction"
+        ],
+        [
+         "<strong>Malunion</strong>",
+         "Healed in the wrong position",
+         "Assess length, angulation, rotation, translation · <strong>osteotomy</strong> if it affects function"
+        ],
+        [
+         "<strong>Avascular necrosis</strong>",
+         "Bone death from lost blood supply",
+         "<strong>Scaphoid, femoral head, talus</strong> - retrograde blood supply cut by the fracture · pain, x-ray changes once bone is lost · surgery"
+        ],
+        [
+         "<strong>Post-traumatic arthritis</strong>",
+         "Osteoarthritis after a fracture near or into a joint",
+         "Uncommon in hip and knee, <strong>over 50% after ankle fractures</strong> · pain on weight-bearing, less motion"
+        ],
+        [
+         "<strong>Heterotopic ossification</strong>",
+         "Extra bone forming around the injury",
+         "Polytrauma, <strong>head injury, burns</strong> · hip, knee, <strong>elbow</strong> · stiffness up to ankylosis · <strong>x-ray and CT negative early - bone scan</strong> · excise once mature"
+        ]
+       ]
+      }
+     ]
     },
     {
      "id": "msk-w11-08",
      "num": "08",
      "name": "Physical Activity Prescription",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Physical activity prescription",
+     "keypoints": "<p>⭐ <strong>150 minutes a week of moderate-to-vigorous activity plus strength training twice a week - and the biggest gain is from none to some</strong> · talk test: sing = light, talk = moderate, no conversation = vigorous · blood pressure over 180/100 is an absolute contraindication until controlled · FITT = frequency, intensity, time, type · beta-blockers blunt heart rate, so cap intensity.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Physical activity works like a drug, so prescribe it like one: screen for safety, then write a dose using FITT.</strong> The biggest gain comes from getting <strong>inactive people to do some</strong>, and a doctor's advice alone raises activity.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Why prescribe it</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Inactivity is the <strong>4th leading cause of death</strong> (Kai) · being active is as important as stopping smoking or treating blood pressure and cholesterol</li><li><strong>Risk reductions</strong>: cognitive decline 40% · type 2 diabetes 35% · hypertension 33% · depression 48% · <strong>bone fractures 66%</strong> · breast cancer 20% · coronary heart disease and stroke 25% · colorectal cancer 19%</li><li><strong>Bones and muscles</strong>: <strong>hip fractures down 55%</strong> and fewer falls (strength, balance, coordination, reaction time) · small rise in bone density (1-3%) with high-impact training</li><li><strong>Heart and blood</strong>: more oxygen uptake and use · better endothelial function · higher stroke volume and contractility · lower heart rate and <strong>blood pressure</strong></li><li>In coronary disease, stroke and heart failure, exercise can reduce mortality <strong>as well as medication</strong></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/6e8f94fb36a5.jpg",
+       "alt": "health benefits of physical activity - upper-year notes.jpg",
+       "w": 650,
+       "h": 354,
+       "cap": "How much regular physical activity cuts the risk of eight conditions and of death overall"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. How much: Canadian guidelines, ages 18-64</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>At least 150 minutes a week of moderate-to-vigorous aerobic activity</strong>, in bouts of 10 minutes or more</li><li><strong>Muscle and bone strengthening at least 2 days a week</strong></li><li><strong>More is better</strong> (dose-response), but <strong>the largest benefit is going from none to some</strong> → target the sedentary</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Intensity",
+        "How it feels",
+        "Talk test",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "<strong>Light</strong>",
+         "Little change",
+         "<strong>Can sing</strong>",
+         "—"
+        ],
+        [
+         "<strong>Moderate</strong>",
+         "Faster breathing and heart rate, warmer, may sweat",
+         "<strong>Can talk, not sing</strong>",
+         "Brisk walking, stairs, cycling, dancing, swimming"
+        ],
+        [
+         "<strong>Vigorous</strong>",
+         "Breathing and heart rate much higher",
+         "<strong>Cannot hold a conversation</strong>",
+         "Sports, running, aerobics, cardio machines"
+        ],
+        [
+         "<strong>Strengthening</strong>",
+         "Heavy enough that only <strong>10-15 repetitions</strong> are possible",
+         "—",
+         "Weights, bands, push-ups, sit-to-stand, stairs, heavy gardening or shopping"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Is it safe? Screening and risk</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Death during vigorous exercise is rare and <strong>mostly in previously sedentary people</strong> → \"start low, go slow\"</li><li><strong>Unstable or uncontrolled conditions must be reviewed before starting</strong></li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Patient starting an<br/>exercise program\"] --> B{\"Absolute contraindication?<br/>see list below\"}\n    B -->|Yes| C[\"STOP - stabilise first\"]\n    B -->|No| D{\"Symptoms of<br/>cardiovascular disease?\"}\n    D -->|Yes| E[\"Supervised start or referral<br/>to an exercise specialist\"]\n    D -->|No| F{\"High cardiovascular risk?\"}\n    F -->|Yes| G[\"Cardiac assessment<br/>(such as ECG) first\"]\n    F -->|No| H{\"Risk factors such as<br/>high blood pressure?\"}\n    H -->|Yes| I[\"Start at low-moderate intensity\"]\n    H -->|No| J[\"Self-directed activity\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Absolute contraindications</strong>: new or uncontrolled arrhythmia · resting or uncontrolled tachycardia · <strong>resting blood pressure over 180/100</strong> · symptomatic hypotension · <strong>unstable angina</strong> · acute or unstable heart failure · unstable diabetes · acute fever</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Writing the prescription</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>History</strong>: current activity · intentions and goals · past activities and what they enjoyed (alone, team, indoors or out) · <strong>barriers</strong> · is it safe with their conditions</li><li><strong>Goals</strong> are personal - playing with grandchildren, less breathless on stairs, lower disease risk, looking better</li><li><strong>The 3 A's</strong>: <strong>Ask</strong> (current activity, do they know the benefits) · <strong>Advise</strong> (on the benefits) · <strong>Act</strong> (signpost to classes, community resources, handouts)</li><li><strong>FITT</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Means",
+        "Typical prescription"
+       ],
+       "rows": [
+        [
+         "<strong>Frequency</strong>",
+         "How often",
+         "5 times a week"
+        ],
+        [
+         "<strong>Intensity</strong>",
+         "How hard",
+         "Moderate - can talk but not sing"
+        ],
+        [
+         "<strong>Time</strong>",
+         "How long",
+         "30 minutes"
+        ],
+        [
+         "<strong>Type</strong>",
+         "What kind",
+         "Aerobic: walking, cycling, dancing, swimming, jogging"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Adjust</strong> if there is severe pain, pain that does not settle afterwards, more night pain, or more joint swelling</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Special situations</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Hypertension</strong><ul><li><strong>control blood pressure over 180/100 with medication first</strong></li><li>long warm-up (15 min) and cool-down (10 min) · keep the feet moving · protect joints if obese · one rest day a week</li><li>avoid: very strenuous resistance work · vigorous exercise with left ventricular hypertrophy · lying-down exercise (postural blood pressure drop) · isometric and overhead exercise</li></ul></li><li><strong>Medications</strong><ul><li><strong>ACE inhibitors and ARBs</strong> - no problem, the preferred choice in athletes</li><li><strong>diuretics</strong> - dehydration risk, need for toilets</li><li><strong>beta-blockers</strong> - lower maximum heart rate and performance, <strong>limit high-intensity exercise</strong></li><li><strong>calcium channel blockers</strong> - postural hypotension, lengthen the cool-down</li></ul></li><li>Abbreviations: angiotensin-converting enzyme (ACE) · angiotensin receptor blockers (ARBs)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. The doctor's role</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Prescribing activity is <strong>cost-effective</strong>: only 25% of physicians counsel it, yet <strong>92% of patients say they would follow a doctor's advice</strong> · a prescription <strong>raises activity by about 10%</strong></li><li><strong>In hospital too</strong>: 73% of patients able to walk did not walk at all, and 83% of time was spent lying in bed</li><li>Tips: know why it works · ask about history and preferences · focus on behaviour change · shared decisions · point to good resources · follow up</li></ul>"
+      }
+     ]
     },
     {
      "id": "msk-w11-09",
      "num": "09",
      "name": "Child with a Limp",
-     "hasNote": false
+     "hasNote": true,
+     "title": "The child with a limp",
+     "keypoints": "<p>⭐ <strong>An overweight teenager with a limp and knee pain has a slipped capital femoral epiphysis until the hip x-ray says otherwise - stop weight-bearing and call orthopedics</strong> · fever, high markers and refusal to bear weight point to a septic joint, not transient synovitis · transient synovitis: 3-10, after a virus, afebrile, normal tests, gone in 7-10 days · Perthes: 4-8, painless limp, avascular femoral head, keep the motion.</p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>A limping child's age narrows the list, and one question comes first: is this a septic joint?</strong> After infection is ruled out, three hip conditions own the lecture - <strong>transient synovitis</strong> (young, after a virus, settles), <strong>Legg-Calvé-Perthes disease</strong> (school-age, the femoral head dies), and <strong>slipped capital femoral epiphysis</strong> (overweight teenager, an emergency).</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Approach</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Child with a limp<br/>or hip pain\"] --> B{\"Fever over 38.5, cannot bear weight,<br/>high white count or ESR?\"}\n    B -->|\"Yes: Kocher criteria\"| C[\"Septic arthritis or osteomyelitis<br/>until proven otherwise:<br/>urgent workup\"]\n    B -->|No| D{\"Age?\"}\n    D -->|\"Under 4\"| E[\"Transient synovitis · infection<br/>JIA · non-accidental injury<br/>referred pain from the limb\"]\n    D -->|\"4 to 10\"| F[\"Transient synovitis<br/>Perthes disease · infection\"]\n    D -->|\"10 to 16\"| G[\"SCFE · avulsion fracture<br/>infection\"]\n    E --> H[\"Bloodwork + hip x-ray ± ultrasound\"]\n    F --> H\n    G --> H\n    H --> I{\"Pattern?\"}\n    I -->|\"After a virus, afebrile,<br/>normal imaging\"| J[\"Transient synovitis:<br/>NSAID, settles in 7-10 days\"]\n    I -->|\"Flattened, fragmented<br/>femoral head\"| K[\"Perthes disease:<br/>refer orthopedics\"]\n    I -->|\"Slipped epiphysis,<br/>Klein's line misses head\"| L[\"SCFE: NON-WEIGHT-BEARING,<br/>emergency orthopedics\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Abbreviations: erythrocyte sedimentation rate (ESR) · juvenile idiopathic arthritis (JIA) · slipped capital femoral epiphysis (SCFE) · non-steroidal anti-inflammatory drug (NSAID)</li><li><strong>Kocher criteria</strong> (septic arthritis vs transient synovitis of the hip): temperature over 38.5 °C · white cell count over 12 × 10⁹/L · ESR over 40 mm/h · <strong>cannot walk on it</strong> · (C-reactive protein was added later)</li><li><strong>Uncommon but serious at every age</strong>: leukemia · tumours (neuroblastoma metastases and eosinophilic granuloma under 4; Ewing sarcoma 4-16; osteoid osteoma and osteosarcoma in teens)</li><li><strong>Other causes</strong>: missed developmental dysplasia of the hip (painless waddle, leg length difference) · clubfoot · overuse injury · trauma · neuromuscular disease · inflammatory arthritis</li><li><strong>Warning signs in any abnormal gait</strong>: asymmetry · getting worse · leg length difference · pain · deformity · an associated condition</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. The three hip conditions</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Transient synovitis</span>",
+        "<span class=\"wl\">Legg-Calvé-Perthes disease</span>",
+        "<span class=\"wl\">Slipped capital femoral epiphysis</span>"
+       ],
+       "rows": [
+        [
+         "<strong>What</strong>",
+         "Non-infectious inflammation of the hip lining after a viral infection",
+         "<strong>Idiopathic avascular necrosis of the femoral head</strong>",
+         "Fracture through the growth plate: the head ends up <strong>posterior and inferior on the neck</strong> - really the neck moves up and rotates outward while the head stays in the socket"
+        ],
+        [
+         "<strong>Who</strong>",
+         "<strong>Ages 3-10</strong>, boys 2:1 · <strong>most common cause of hip pain under 10</strong>",
+         "<strong>Ages 4-8</strong>, boys 5:1 · family history, low birth weight, second-hand smoke · most common childhood hip disorder",
+         "<strong>Ages 8-15</strong> (girls about 12, boys about 14) · <strong>obesity is the #1 risk factor</strong> · growth spurt, endocrine disease, radiation, family history · left more often, 1 in 5 both hips"
+        ],
+        [
+         "<strong>Onset</strong>",
+         "<strong>Sudden</strong>, 7-10 days after a cold or sore throat",
+         "<strong>Gradual</strong>, painless limp first, then pain over weeks to months",
+         "Gradual painful limp"
+        ],
+        [
+         "<strong>Pain</strong>",
+         "Hip, referred to thigh or knee · better through the day",
+         "Mild, hip or <strong>referred to the knee</strong> · worse with activity, better with rest",
+         "<strong>Hip, thigh or knee pain</strong> - <strong>knee pain in a teenager can be a hip problem</strong>"
+        ],
+        [
+         "<strong>Exam</strong>",
+         "<strong>Afebrile or low fever (under 38)</strong> · looks well · hip held flexed, abducted, externally rotated · less internal rotation and abduction",
+         "Looks well · less abduction and internal rotation · apparent leg length difference (adductor tightness)",
+         "Antalgic gait, may not bear weight · <strong>hip rolls into external rotation when flexed</strong> (Drehmann sign) · less internal rotation and abduction · thigh wasting"
+        ],
+        [
+         "<strong>Tests</strong>",
+         "<strong>Usually normal</strong>: blood count, ESR and CRP (may be slightly up), x-ray and ultrasound - done to <strong>rule out septic arthritis</strong>",
+         "<strong>X-ray AP pelvis and frog-leg lateral</strong> (flattening, fragmentation) · bone scan, MRI",
+         "<strong>X-ray AP and frog-leg</strong>: earliest sign a <strong>wide, irregular physis</strong> · <strong>Klein's line</strong> along the top of the neck <strong>misses the head</strong> (Trethowan sign) · MRI if unclear"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "<strong>NSAID</strong> and reassurance · <strong>self-limiting in 7-10 days</strong>",
+         "Refer orthopedics · keep <strong>range of motion</strong> with physiotherapy (better motion, better outcome) · take weight off (crutches, brace, swimming, cycling) · NSAIDs, acetaminophen · surgery (osteotomy) for some",
+         "<strong>Stop weight-bearing at once</strong> · <strong>emergency orthopedics</strong> · pin it where it lies (<strong>do not force a reduction</strong>): stable → one screw in situ · unstable → open reduction and internal fixation"
+        ],
+        [
+         "<strong>Outcome</strong>",
+         "Full recovery",
+         "<strong>Early osteoarthritis</strong> if poorly treated",
+         "<strong>Avascular necrosis</strong> of the femoral head (about 25%) · arthritis · the fixed physis stops growing (little growth left)"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Abbreviations in the table: C-reactive protein (CRP) · anteroposterior (AP)</li><li><strong>Perthes can look like transient synovitis early on</strong> (Kai)</li><li><strong>SCFE outside the usual age or weight</strong> → look for an endocrine cause (hypothyroidism, growth hormone deficiency)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/79a4e135db08.jpg",
+       "alt": "SCFE physeal widening and Klein line - upper-year notes.jpg",
+       "w": 406,
+       "h": 380,
+       "cap": "SCFE on a hip diagram: the growth plate widens first, then a line along the top of the femoral neck no longer cuts the femoral head"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/3a9c88a984ef.jpg",
+       "alt": "Perthes avascular necrosis of the femoral head - upper-year notes.jpg",
+       "w": 443,
+       "h": 193,
+       "cap": "Perthes disease: a normal femoral head beside one collapsed by avascular necrosis"
+      }
+     ]
     }
    ]
   }
