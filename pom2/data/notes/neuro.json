@@ -4760,37 +4760,1128 @@
      "id": "neuro-w14-01",
      "num": "01",
      "name": "Approach to Head Injuries",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Approach to head injuries",
+     "keypoints": "<p>⭐ <strong>Epidural = arterial, lens-shaped, lucid interval; subdural = bridging veins, crescent, falls and the elderly.</strong> <strong>Uncal herniation blows the pupil on the same side.</strong> <strong>The Cushing triad is a late sign of raised pressure.</strong> <strong>Decerebrate (extensor) posturing is worse than decorticate (flexor).</strong> <strong>Diffuse axonal injury: deep coma with a near-normal CT.</strong> <strong>Concussion is clinical - most never lose consciousness, and a normal scan does not exclude it.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Every head injury is a trauma patient first: resuscitate, protect the neck, then grade the brain injury with the <span class=\"wl\">Glasgow Coma Scale</span> (GCS).</strong> <strong>The grade sets the path - a severe injury is a fight against raised intracranial pressure and herniation; a mild one (<span class=\"wl\">concussion</span>) is a clinical diagnosis managed with brief rest and a graded return.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The approach to an acute head injury</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Head injury\"] --> B[\"Primary survey (Advanced Trauma Life Support)<br/>Airway: intubate or hold the head in line · Breathing<br/>Circulation: IV, bloods for drugs and clotting<br/>Disability (neurological) · Expose other injuries\"]\n    B --> C[\"Immobilize the cervical spine<br/>collar + backboard\"]\n    C --> D{\"GCS after resuscitation?\"}\n    D -->|\"8 or less\"| E[\"SEVERE<br/>protect the airway · keep oxygen and perfusion up<br/>CT head + cervical spine · treat raised pressure\"]\n    D -->|\"9-13\"| F[\"MODERATE<br/>CT head + cervical spine\"]\n    D -->|\"14-15\"| G{\"Any reason to go to hospital?<br/>falling consciousness · severe vomiting<br/>possible skull fracture or spine injury<br/>focal deficit · worsening symptoms\"}\n    G -->|Yes| H[\"Emergency department<br/>assessment and imaging\"]\n    G -->|No| I[\"CONCUSSION (mild traumatic brain injury)<br/>clinical diagnosis · no test confirms it\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>History</strong>: mechanism (<strong>young → motor vehicle crash · older → falls</strong>) · loss of consciousness · memory loss · medications and clotting problems</li><li><strong>Physical exam</strong>: GCS · <strong>pupils</strong> (one fixed dilated pupil = third cranial nerve compressed) · posturing · signs of a skull-base fracture · other injuries<ul><li><strong>Decorticate (flexor)</strong> posturing: arms flexed to the \"core\" · damage above the red nucleus (hemispheres, internal capsule, thalamus, midbrain)</li><li><strong>Decerebrate (extensor)</strong> posturing: arms and legs stiffly extended · brainstem below the red nucleus · <strong>worse</strong></li></ul></li><li><strong>Investigations</strong>: CT head and cervical spine · consult other services for other injuries</li><li>Which minor injuries need a CT (the Canadian CT Head Rule) is not covered in either source - check the slides</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Grading severity with the Glasgow Coma Scale</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Grade",
+        "GCS (after resuscitation)",
+        "Notes"
+       ],
+       "rows": [
+        [
+         "<strong>Severe</strong>",
+         "<strong>8 or less</strong>",
+         "~20 per 100,000 a year · peak age 15-24"
+        ],
+        [
+         "<strong>Moderate</strong>",
+         "9-13",
+         "—"
+        ],
+        [
+         "<strong>Mild</strong>",
+         "14-15, no major lesion on imaging",
+         "Low risk of deterioration"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>(sources differ: the upper-year GCS figure grades mild as 13-15 and moderate as 9-12 - check the slides)</p>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>GCS is objective, reproducible and <strong>predicts outcome</strong> if scored within 6 hours · less reliable in infants and children, non-English speakers, and chronic conditions that impair speech or movement</li><li><strong>Mortality in severe injury</strong><ul><li>GCS on admission: above 8 → 12% · 6-7 → 27% · 5 or less → 78% (sources differ: upper-year notes give 5-7 and under 5)</li><li><strong><span class=\"wl\">Epidural</span> 10-25% vs <span class=\"wl\">subdural</span> 45-70%</strong> · coma over a day 30-50% · intracranial pressure over 20 mmHg 50%</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Types of head injury</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Skull fractures</span></strong> (open or closed)<ul><li>linear (not displaced) · <strong>depressed</strong> (pushed inward onto the dura) · diastatic (along a suture)</li><li><strong><span class=\"wl\">Basilar</span></strong>: <strong>raccoon eyes · Battle sign</strong> (bruising behind the ear) · cerebrospinal fluid leaking from the nose or ear · blood behind an intact eardrum · may not show on CT · risk of meningitis</li></ul></li><li><strong>Focal injuries</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Epidural hematoma",
+        "Subdural hematoma"
+       ],
+       "rows": [
+        [
+         "<strong>Where</strong>",
+         "Between the skull and the stripped-off dura",
+         "Between the dura and the arachnoid"
+        ],
+        [
+         "<strong>Bleeding from</strong>",
+         "<strong>Middle meningeal artery</strong> (50%) torn by a fracture · 75-90% have a fracture",
+         "<strong>Torn bridging veins</strong>"
+        ],
+        [
+         "<strong>Mechanism</strong>",
+         "Contact: the head hits or is hit",
+         "<strong>Acceleration-deceleration</strong>, not impact · falls · often with diffuse axonal injury"
+        ],
+        [
+         "<strong>CT shape</strong>",
+         "<strong>Lens (biconvex)</strong>",
+         "<strong>Crescent</strong>"
+        ],
+        [
+         "<strong>Course</strong>",
+         "<strong>Lucid interval, then coma</strong> · up to 40% start at GCS 14-15 · same-side blown pupil",
+         "Within 3 days · focal signs · <strong>chronic form common in the elderly</strong>"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "Surgery if symptomatic, over 1 cm, or a child",
+         "Usually surgery · <strong>within 4 hours ~30% mortality, after 4 hours ~90%</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Contusion</span></strong> (\"bruised brain\"): <strong>coup</strong> under the impact · <strong>contrecoup</strong> on the opposite side · mixed high and low density on CT, usually several · large ones with mass effect are removed</li><li>traumatic <span class=\"wl\">intracerebral hemorrhage</span>: frontal and temporal lobes · surgery if consciousness falls or there is a focal deficit</li><li>penetrating injury (knife, gunshot)</li><li><strong>Diffuse injuries</strong><ul><li><span class=\"wl\">concussion</span> · traumatic <span class=\"wl\">subarachnoid hemorrhage</span></li><li><strong><span class=\"wl\">diffuse axonal injury</span></strong>: shearing from rapid acceleration or deceleration · <strong>unconscious at the scene and stays in a coma</strong> · <strong>first CT often normal</strong> or tiny bleeds (corpus callosum, grey-white junction, pons) · in half of severe injuries</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/ae23a17efca4.jpg",
+       "alt": "epidural vs subdural hematoma - upper-year notes.jpg",
+       "w": 900,
+       "h": 401,
+       "cap": "Epidural vs subdural hematoma: arterial blood under the skull vs venous blood under the dura"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Raised intracranial pressure and herniation</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Swelling, vasodilation, vascular congestion and hematoma → <strong>↑ <span class=\"wl\">intracranial pressure</span></strong> → poor brain perfusion + <strong>herniation</strong></li><li><strong>Presents as</strong>: falling consciousness · headache · vomiting · <strong><span class=\"wl\">Cushing's triad</span></strong> (rising systolic pressure, slow heart rate, irregular breathing) · papilledema only after weeks</li><li><strong>Treatment, one skull compartment at a time</strong>: blood (head of bed up, hyperventilate) · cerebrospinal fluid (drain it, make less) · brain tissue (remove the mass, <strong>mannitol</strong>) · plus airway protection if GCS is low · dexamethasone only helps swelling around a tumour</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Herniation",
+        "What moves",
+        "Signs"
+       ],
+       "rows": [
+        [
+         "<strong>Subfalcine</strong> (a)",
+         "Cingulate gyrus under the falx",
+         "Anterior cerebral artery compressed → infarct"
+        ],
+        [
+         "<strong><span class=\"wl\">Uncal</span></strong> (b)",
+         "Medial temporal lobe (uncus) over the tentorium",
+         "<strong>Same-side fixed dilated pupil</strong> (third nerve) · opposite-side weakness (cerebral peduncle) · drowsiness → coma"
+        ],
+        [
+         "<strong>Central</strong> (c)",
+         "Diencephalon and midbrain down through the tentorium",
+         "Confusion, decorticate posturing · fixed mid-position pupils · diabetes insipidus · cortical blindness"
+        ],
+        [
+         "<strong>Transcalvarial</strong> (d)",
+         "Brain out through a fracture or surgical opening",
+         "—"
+        ],
+        [
+         "<strong><span class=\"wl\">Tonsillar</span></strong> (e)",
+         "Cerebellar tonsils through the foramen magnum",
+         "<strong>Medulla compressed → breathing stops · fatal</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/9d8f6fe8d844.jpg",
+       "alt": "cerebral herniation types - upper-year notes.jpg",
+       "w": 353,
+       "h": 332,
+       "cap": "Herniation: (a) subfalcine, (b) uncal, (c) central, (d) transcalvarial, (e) tonsillar"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Concussion</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Definition</strong>: a mild traumatic brain injury from rotational acceleration of the brain · <strong>81-92% never lose consciousness</strong> · a blow to the chest can do it (whiplash) · helmets do not prevent it<ul><li>diffuse injury <strong>without</strong> focal deficits (sources differ: the medwiki concussion note says \"with focal neurologic deficits\" - check the slides)</li></ul></li><li><strong>Risk factors</strong>: <strong>younger brain</strong> (longer recovery) · <strong>female</strong> (2:1, less neck muscle) · <strong>a previous concussion</strong> (less force needed, slower recovery) · poor sport technique · 65% are aged 5-18</li><li><strong>Presents as</strong>: headache · dizziness · nausea · poor balance · \"seeing stars\" · memory and concentration problems (\"brain fog\")</li><li><strong>Diagnosis</strong>: <strong>clinical</strong> - history and exam · no blood test, imaging or EEG confirms it<ul><li>Concussion Recognition Tool for non-medical people on the field · <span class=\"wl\">Sport Concussion Assessment Tool</span> for clinicians (one of 22 symptoms is enough; a child version for ages 5-12)</li></ul></li><li><strong>Treatment</strong>: <strong>\"when in doubt, remove\"</strong> from play, work or school · <strong>physical and mental rest for 24-48 hours</strong> (no screens, reading or schoolwork) but <strong>no extended rest</strong> · graded return over 1-4 weeks · school: part-time, easiest classes first, no gym</li><li><strong>Outcome</strong>: most recover in 1-4 weeks · <strong>15-30% still have symptoms after 4 weeks</strong><ul><li>complications: <span class=\"wl\">second-impact syndrome</span> · <span class=\"wl\">post-concussion syndrome</span> (over 2 weeks in adults, over 4 in youth) · post-traumatic epilepsy · depression and anxiety · <span class=\"wl\">chronic traumatic encephalopathy</span> after repeated injuries</li></ul></li></ul>"
+      }
+     ]
     },
     {
      "id": "neuro-w14-02",
      "num": "02",
      "name": "Multiple Sclerosis",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Multiple sclerosis",
+     "keypoints": "<p>⭐ <strong>MS needs lesions disseminated in time and space, with mimics excluded.</strong> <strong>A relapse is new, lasts over 24 hours, and has no other cause.</strong> <strong>Spinal cord ~50%, optic neuritis ~25%, brainstem ~15%.</strong> <strong>Oligoclonal bands are sensitive, not specific.</strong> <strong>Relapsing-remitting: 85%, young women; primary progressive: older, more men.</strong> <strong>Identical twins agree only 20-30% - mostly environment (EBV, smoking, low vitamin D).</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong><span class=\"wl\">Multiple sclerosis</span> (MS) is diagnosed by dissemination in time and space - lesions in different parts of the central nervous system at different times - once its mimics are excluded.</strong> <strong>A relapse is a new deficit lasting over 24 hours with no other cause.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. What MS is</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Definition</strong>: immune-mediated (B and T cells) inflammation of the central nervous system that <strong>strips myelin</strong> - oligodendrocytes are damaged, and axons are lost over time<ul><li>\"multiple\" = lesions in different places at different times · \"sclerosis\" = scars, so recovery is not always complete</li></ul></li><li><strong>Favoured sites</strong>: next to the cortex · <strong>around the ventricles</strong> · brainstem · cerebellum · spinal cord</li><li><strong>Who</strong>: the <strong>most common disabling disease of the central nervous system in Canada</strong> (~240 per 100,000) · <strong>onset 20-40</strong> · <strong>female 3:1</strong> · Caucasian · more common further from the equator</li><li><strong>Causes</strong>: genes plus environment<ul><li>identical twins agree only <strong>20-30%</strong> of the time</li><li><strong><span class=\"wl\">Epstein-Barr virus</span></strong> (past mononucleosis) · smoking · <strong>low vitamin D or sunlight</strong> · adolescent obesity · shift work · not coffee</li><li>immigrants to Canada take on the higher risk</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Disease courses</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Course",
+        "Pattern",
+        "Who"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Relapsing-remitting</span></strong>",
+         "Attacks then recovery · incomplete recovery lets disability build",
+         "<strong>85%</strong> · more female"
+        ],
+        [
+         "<strong><span class=\"wl\">Secondary progressive</span></strong>",
+         "The long-term outcome of relapsing-remitting · steady worsening, occasional relapses",
+         "—"
+        ],
+        [
+         "<strong><span class=\"wl\">Primary progressive</span></strong>",
+         "<strong>Gradual worsening from the start</strong>",
+         "<strong>Later onset · more men</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/224455f7ca57.jpg",
+       "alt": "multiple sclerosis types.png",
+       "w": 900,
+       "h": 562,
+       "cap": "Courses of multiple sclerosis: disability over time"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Relapses and how MS presents</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Relapse</strong> = a <strong>new</strong> neurological symptom · comes on over hours to days · <strong>lasts over 24 hours</strong> · <strong>not explained by another cause</strong></li><li>Comparing a pseudorelapse with a new lesion is a lecture objective, but neither source covers it - check the slides</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Site",
+        "Share of attacks",
+        "Presents as"
+       ],
+       "rows": [
+        [
+         "<strong>Spinal cord</strong> (myelitis)",
+         "<strong>~50%</strong>",
+         "Numbness · weakness · bladder problems"
+        ],
+        [
+         "<strong>Optic nerve</strong> (<span class=\"wl\">optic neuritis</span>)",
+         "<strong>~25%</strong>",
+         "Vision loss"
+        ],
+        [
+         "<strong>Brainstem</strong>",
+         "~15%",
+         "Vertigo · slurred speech · double vision"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Also: fatigue · cognitive change · depression and anxiety</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Diagnosis</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Dissemination in time</strong> (more than one event) <strong>and space</strong> (more than one site) <strong>+ other diseases excluded</strong></li><li><strong>MRI is the key test</strong>: lesions <strong>bright on T2/FLAIR</strong>, dark on T1</li><li><strong><span class=\"wl\">Lumbar puncture</span></strong>: <strong><span class=\"wl\">oligoclonal bands</span></strong> in the cerebrospinal fluid but not the blood · ~95% · <strong>sensitive, not specific</strong></li><li>Disability is scored with the <span class=\"wl\">Expanded Disability Status Scale</span></li><li><strong>Differential</strong> (once the MRI is done): <span class=\"wl\">neuromyelitis optica spectrum disorder</span> · myelin oligodendrocyte glycoprotein associated disease · <span class=\"wl\">acute disseminated encephalomyelitis</span> · sarcoidosis · rheumatologic disease · tumour (lymphoma) · infection (HIV, Lyme, syphilis) · <span class=\"wl\">vitamin B12 deficiency</span></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/e0a86872d80d.jpg",
+       "alt": "multiple sclerosis lesions on T2 FLAIR and T1 MRI - upper-year notes.jpg",
+       "w": 592,
+       "h": 331,
+       "cap": "MS lesions: bright periventricular spots on T2/FLAIR (left), dark holes on T1 (right)"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Treatment and outcome</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Corticosteroids</strong> (listed without detail in the upper-year notes)</li><li><strong>Disease-modifying therapy</strong> (fewer relapses)<ul><li>infusions: alemtuzumab · ocrelizumab · natalizumab</li><li>others: interferon beta · glatiramer acetate · ofatumumab · dimethyl fumarate · fingolimod · siponimod · ozanimod · teriflunomide · cladribine</li><li>(sources differ: the medwiki note's \"oral\" and \"injectable\" groups look swapped - check the slides for which is which)</li></ul></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Symptom",
+        "Treatment"
+       ],
+       "rows": [
+        [
+         "Spasticity",
+         "<span class=\"wl\">baclofen</span> · tizanidine · stretching, physiotherapy"
+        ],
+        [
+         "Pain and tingling",
+         "<span class=\"wl\">amitriptyline</span> · <span class=\"wl\">gabapentin</span> · <span class=\"wl\">duloxetine</span> · cannabis"
+        ],
+        [
+         "Bladder urgency",
+         "solifenacin · urology referral"
+        ],
+        [
+         "Fatigue",
+         "amantadine · <span class=\"wl\">modafinil</span>"
+        ],
+        [
+         "Walking speed",
+         "<strong><span class=\"wl\">fampridine</span></strong>"
+        ],
+        [
+         "Depression",
+         "SSRIs"
+        ],
+        [
+         "Erectile dysfunction",
+         "<span class=\"wl\">sildenafil</span>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Experimental: fecal transplant (gut microbiome) · bone-marrow transplant</li><li><strong>Outcome</strong>: <strong>50% have minor disability by 6-8 years</strong> · <strong>21% need a walking aid by 15 years</strong></li></ul>"
+      }
+     ]
     },
     {
      "id": "neuro-w14-03",
      "num": "03",
      "name": "Approach to Stroke",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Approach to stroke",
+     "keypoints": "<p>⭐ <strong>Non-contrast CT comes first, because any hemorrhage is an absolute contraindication to tPA.</strong> <strong>tPA within 4.5 hours; thrombectomy within 16-24 hours for a large-vessel occlusion with salvageable brain, whether or not tPA was given.</strong> <strong>Check glucose before calling it a stroke.</strong> <strong>Neglect or aphasia = cortex, not a lacune.</strong> <strong>Heart clot → anticoagulate; everything else → antiplatelet.</strong> <strong>Endarterectomy only for symptomatic stenosis over 70% on the stroke's side.</strong> <strong>Hypertensive bleeds are deep; amyloid bleeds are lobar.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Time is brain: rule out a mimic, image to exclude bleeding, then decide on clot-busting (tissue plasminogen activator, tPA, within 4.5 hours) and clot retrieval (thrombectomy, within 16-24 hours for a large-vessel occlusion).</strong> <strong>Once stable, the cause sets secondary prevention: a clot from the heart → anticoagulant; everything else → antiplatelet.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Hyperacute approach</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Sudden focal deficit<br/>paramedics activate the stroke protocol\"] --> B[\"Point-of-care glucose (low sugar mimics stroke)<br/>vitals · cardiac monitor · 2 IV lines<br/>bloods: CBC, INR, creatinine, troponin<br/>NIH Stroke Scale\"]\n    B --> C[\"Non-contrast CT head<br/>then CT angiogram + CT perfusion<br/>goal: door to imaging under 25 min\"]\n    C --> D{\"Hemorrhage?\"}\n    D -->|Yes| E[\"HEMORRHAGIC STROKE<br/>no tPA · BP under 160/110<br/>hold antiplatelets and anticoagulants\"]\n    D -->|No| F{\"Within 4.5 h of onset<br/>and no contraindication?\"}\n    F -->|Yes| G[\"IV tPA<br/>door to needle under 60 min\"]\n    F -->|No| H[\"No tPA\"]\n    G --> I{\"Large-vessel occlusion on CT angiogram<br/>+ salvageable brain on perfusion<br/>+ disabling + under 16-24 h?\"}\n    H --> I\n    I -->|Yes| J[\"THROMBECTOMY\"]\n    I -->|\"No (e.g. lacunar)\"| K[\"Acute stroke unit<br/>find the cause → secondary prevention\"]\n    J --> K"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Rule out mimics</strong><ul><li><strong><span class=\"wl\">hypoglycemia</span></strong> - check glucose first</li><li><strong><span class=\"wl\">migraine</span></strong>: weakness <strong>\"marches\"</strong> over minutes, slow onset and offset, crosses vascular territories, young women</li><li><strong><span class=\"wl\">Todd's paresis</span></strong> after a (maybe unwitnessed) seizure: improves over hours</li><li><strong>psychogenic</strong>: inconsistent, improves with distraction, no vascular territory</li><li><span class=\"wl\">hemorrhage</span>: may not follow a territory, more often with headache</li></ul></li><li><strong>Localize before you look at the scan</strong>: you know where to look for subtle early changes and which vessels to study (<strong>suspected basilar clot → always a CT angiogram</strong>; a plain CT alone has missed basilar clots that ended in locked-in syndrome) · old infarcts and incidental findings will not distract you</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Definitions and causes</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Stroke</strong> = sudden neurological deficit from a problem with the brain's blood supply<ul><li><strong><span class=\"wl\">Ischemic</span></strong> (80-85%) = a blocked vessel · <strong><span class=\"wl\">hemorrhagic</span></strong> = a ruptured vessel bleeding into or around the brain</li><li><strong><span class=\"wl\">transient ischemic attack</span> (TIA)</strong> = symptoms usually under an hour <strong>and no infarct on CT or MRI</strong></li></ul></li><li><strong>Penumbra</strong> = stunned but still living tissue around the dead core, fed by collaterals · <strong>salvageable if flow returns fast</strong></li><li><strong>Ischemic causes</strong> (the cause sets the treatment)<ul><li>artery to artery: carotid, intracranial stenosis, aorta · <strong>cardioembolic</strong> · <strong>small-vessel (<span class=\"wl\">lacunar</span>)</strong> · artery dissection · low perfusion → <strong><span class=\"wl\">watershed</span></strong> infarcts between territories · cryptogenic (~25%)</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/64ba79f3b0b3.jpg",
+       "alt": "ischemic penumbra (stroke).png",
+       "w": 900,
+       "h": 517,
+       "cap": "Ischemic core and penumbra on CT"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Stroke syndromes</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Territory",
+        "Classic picture"
+       ],
+       "rows": [
+        [
+         "<strong>Left <span class=\"wl\">middle cerebral artery</span></strong>",
+         "<strong>Aphasia</strong> + right face and arm > leg weakness"
+        ],
+        [
+         "<strong>Right middle cerebral artery</strong>",
+         "<strong>Left neglect · anosognosia</strong> + left face and arm > leg weakness"
+        ],
+        [
+         "<strong><span class=\"wl\">Anterior cerebral artery</span></strong>",
+         "Opposite <strong>leg</strong> > arm weakness"
+        ],
+        [
+         "<strong><span class=\"wl\">Posterior cerebral artery</span></strong>",
+         "Opposite <strong><span class=\"wl\">homonymous hemianopia</span></strong>"
+        ],
+        [
+         "<strong>Small penetrating arteries (lacunar)</strong>",
+         "Pure motor · pure sensory · ataxic hemiparesis · sensorimotor · clumsy hand-dysarthria · <strong>no cortical signs</strong>"
+        ],
+        [
+         "<strong>Vertebral and basilar</strong> (brainstem, cerebellum)",
+         "Vertigo · eye-movement weakness · <strong>crossed</strong> face and body findings · cranial nerve signs · both sides weak"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Neglect or aphasia = cortex</strong>, so a middle cerebral artery stroke, not a lacune</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Imaging</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Non-contrast CT</strong>: <strong>rules out hemorrhage (absolute contraindication to tPA)</strong> · shows <strong>early ischemic change</strong> = dead brain (dark, loss of grey-white difference) · <strong>more dead brain → more bleeding with tPA</strong> · over a third of the middle cerebral artery territory → no tPA</li><li><strong>CT angiogram</strong>: finds a large-vessel occlusion · <strong>CT perfusion</strong>: a mismatch = brain that can still be saved</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/6e18842840bf.jpg",
+       "alt": "early ischemic change (CT scan).png",
+       "w": 900,
+       "h": 1012,
+       "cap": "Early ischemic change on CT: an acute infarct beside normal brain"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Thrombolysis with tPA</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Turns plasminogen into plasmin, which breaks down clot · <strong>up to 4.5 hours</strong> from onset, earlier is better · number needed to treat 7.7</li><li><strong>0.9 mg/kg: 10% as a bolus over 1 minute, the rest over 1 hour</strong></li><li><strong>Risk: significant bleeding 6%</strong> - vessels beyond the clot are damaged, and burst when flow returns (<span class=\"wl\">hemorrhagic transformation</span>)</li><li><strong>Only 10-20% qualify</strong>: too late · unwitnessed onset · anticoagulated or other risk · too mild · hemorrhagic</li><li><strong>Contraindications</strong><ul><li><strong>any hemorrhage on CT</strong>, or a past intracerebral hemorrhage · large early ischemic change · symptoms of subarachnoid hemorrhage · seizure at onset</li><li><strong>BP over 185/110 despite treatment</strong> (sources differ: the medwiki note says 185/100 - check the slides)</li><li>stroke or serious head injury under 3 months · major surgery under 14 days · gastrointestinal or urinary bleed under 21 days · arterial puncture at a site you cannot compress, or a lumbar puncture, under 7 days</li><li>platelets under 100 · <strong>INR over 1.4</strong> or PTT over 40 s (sources differ: the medwiki note says INR \"< 1.4\") · <strong>factor Xa inhibitor</strong> in the last 24-48 h (sources differ: the medwiki note says \"xanthine oxidase inhibitors\")</li><li>glucose under 3 or over 22 · caution in pregnancy, pericarditis, <strong>endocarditis</strong> (listen to the heart first)</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Thrombectomy</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Under 5% qualify</strong>: <strong>proximal large-artery occlusion</strong> (internal carotid, middle cerebral M1/M2) · disabling stroke · <strong>penumbra on perfusion</strong> · <strong>under 16-24 hours</strong> from onset or last seen well · <strong>not lacunar</strong> (cannot be reached)</li><li>Can be given <strong>even when tPA was not</strong> · a catheter carries a stent retriever that grabs the clot</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/6a36c3de4539.jpg",
+       "alt": "mechanical thrombectomy stent retriever - upper-year notes.jpg",
+       "w": 657,
+       "h": 404,
+       "cap": "Thrombectomy: a stent retriever pulls the clot out and restores flow"
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Stroke unit and finding the cause</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Admission orders</strong>: <strong>close BP watch for 24 h</strong> (high pressure is common and settles in 2-7 days - do not lower it unless very high) · <strong>repeat imaging at 24 h</strong> for bleeding · <strong>nothing by mouth until a swallowing assessment</strong> · bed rest 24 h · physiotherapy, occupational therapy, social work</li><li>No bleed at 24 h → start ASA, clot prevention in the legs, and a statin · <strong>intensive rehabilitation beats even tPA</strong> (most recovery in 3 months, some up to a year)</li><li><strong>Look for the cause</strong><ul><li>anterior circulation → <strong>carotid imaging</strong> · posterior circulation → vertebral and basilar imaging only</li><li><strong>heart</strong>: echocardiogram (transthoracic, transesophageal, <strong>bubble study</strong> for a patent foramen ovale) · telemetry or Holter monitor for atrial fibrillation</li><li>atherosclerosis risk: glucose and HbA1c · lipids · BP</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>8. Secondary prevention</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Cause",
+        "Treatment"
+       ],
+       "rows": [
+        [
+         "<strong>Cardioembolic</strong> (atrial fibrillation, valve disease)",
+         "<strong>Anticoagulant</strong>: <span class=\"wl\">warfarin</span> or a <span class=\"wl\">direct oral anticoagulant</span>, ~2 weeks after the stroke"
+        ],
+        [
+         "<strong>All other causes</strong>",
+         "<strong>Antiplatelet</strong>: ASA 81 mg · <span class=\"wl\">clopidogrel</span> if ASA fails · both for some high-risk patients"
+        ],
+        [
+         "<strong>Symptomatic carotid stenosis over 70%</strong> (same side as the stroke)",
+         "<strong><span class=\"wl\">carotid endarterectomy</span> or stenting</strong> · not for stenosis on the other side"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Plus BP under 140/90 · glucose control · high-dose statin · exercise, diet, smoking cessation</li><li>Risk factors beyond heart disease: <strong>pregnancy and postpartum</strong> · cocaine or amphetamines (vasospasm) · <strong>bleeding disorders and anticoagulants</strong> (hemorrhage)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>9. Transient ischemic attack</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Brief symptoms that <strong>resolve completely</strong></li><li><strong>CT head</strong> to exclude mimics (subdural hematoma, tumour) · <strong>start ASA</strong> (already on ASA → <strong>add clopidogrel for 21 days</strong>) · ECG if the pulse is irregular · <strong>refer to a rapid TIA clinic</strong> (echocardiogram, Holter, CT angiogram or carotid Doppler, lipids, glucose, BP) · then manage as secondary prevention</li><li><strong>Crescendo TIAs</strong> (several in a day or two) → <strong>admit urgently</strong>: very high stroke risk</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>10. Hemorrhagic stroke</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Intracerebral hemorrhage</span> causes</strong><ul><li><strong>hypertensive arteriopathy → deep bleeds</strong> (pons, basal ganglia, thalamus, cerebellum)</li><li><strong>Amyloid (congophilic) angiopathy → lobar bleeds</strong> just under the cortex</li><li>tumour (usually metastasis) · <span class=\"wl\">arteriovenous malformation</span> · cavernoma · aneurysm · clotting disorder</li></ul></li><li><strong>Treatment</strong>: <strong>BP under 160/110</strong> · <strong>hold all antiplatelets and anticoagulants</strong> · <strong>compression devices</strong> for the legs, heparin only after a stable 24-hour CT · MRI or CT angiogram for the cause · surgery rarely (only an accessible clot raising pressure) · rehabilitation</li><li><strong><span class=\"wl\">Subarachnoid hemorrhage</span></strong>: <strong>thunderclap headache</strong> · usually a ruptured aneurysm · <strong>neurosurgery</strong> (coiling or clipping) · risks: re-bleeding, vasospasm, pneumonia</li></ul>"
+      }
+     ]
     },
     {
      "id": "neuro-w14-04",
      "num": "04",
      "name": "Approach to Sensory Symptoms",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Approach to sensory symptoms",
+     "keypoints": "<p>⭐ <strong>Polyneuropathy starts in the toes and reaches the fingertips when it reaches the knees.</strong> <strong>Guillain-Barré = weakness ascending over days with lost reflexes; watch the breathing.</strong> <strong>A sensory level with brisk reflexes below it is the spinal cord.</strong> <strong>Root: dermatome, fuzzy borders, whole-myotome weakness; nerve: sharp borders, only that nerve's muscles.</strong> <strong>Demyelination recovers in weeks; axons regrow over months to years.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Localize first - the shape of the sensory loss says where the lesion is.</strong> <strong>Half the body = brain · a level on the trunk = spinal cord · one dermatome = root · one nerve with sharp borders = mononeuropathy · toes first, then fingertips = length-dependent polyneuropathy.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Localizing sensory symptoms</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Numbness, tingling or pain\"] --> B{\"Where is it?\"}\n    B -->|\"One side of the face and body\"| C[\"BRAIN (e.g. thalamus)<br/>± visual, motor, coordination signs<br/>later: central pain on that side\"]\n    B -->|\"Everything below a level on the trunk<br/>± bladder urgency, brisk reflexes below\"| D[\"SPINAL CORD<br/>(myelopathy)\"]\n    B -->|\"One dermatome + neck or back pain<br/>radiating down a limb, fuzzy borders\"| E[\"NERVE ROOT<br/>(radiculopathy)\"]\n    B -->|\"One named nerve, sharp borders\"| F[\"MONONEUROPATHY<br/>e.g. carpal tunnel, peroneal nerve\"]\n    B -->|\"Both feet first, rising symmetrically\"| G{\"Tempo and main deficit?\"}\n    G -->|\"Months to years<br/>mostly sensory, burning\"| H[\"LENGTH-DEPENDENT POLYNEUROPATHY<br/>e.g. diabetic\"]\n    G -->|\"Days<br/>mostly weakness, reflexes lost\"| I[\"GUILLAIN-BARRÉ SYNDROME\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Characterize the neuropathy</strong> - the differential is long, so narrow it four ways<ul><li><strong>modality</strong>: sensory · motor · autonomic</li><li><strong>time course</strong>: acute (1 day-6 weeks) · subacute (6 weeks-6 months) · chronic (over 6 months)</li><li><strong>distribution</strong>: length-dependent <span class=\"wl\">polyneuropathy</span> · mononeuropathy · mononeuritis multiplex</li><li><strong>damage</strong>: axonal vs demyelinating - best shown by nerve conduction studies and <span class=\"wl\">electromyography</span> (EMG)</li></ul></li><li><strong>Cord vs nerve</strong>: <strong>sensory loss on the trunk points to the cord</strong> · bladder trouble suggests the cord but is not specific · symmetry and back pain do not help</li><li><strong>Romberg sign</strong> is positive with: both S1 roots · a length-dependent sensory neuropathy · dorsal column disease</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Root or single nerve?</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong><span class=\"wl\">Radiculopathy</span></strong> (root)",
+        "<strong>Mononeuropathy</strong> (one nerve)"
+       ],
+       "rows": [
+        [
+         "<strong>Cause</strong>",
+         "Root squeezed in its foramen (\"pinched nerve\")",
+         "Compression at a common site (e.g. the carpal tunnel)"
+        ],
+        [
+         "<strong>Sensory loss</strong>",
+         "<strong>Dermatome</strong>, <strong>fuzzy borders</strong> (dermatomes overlap)",
+         "<strong>That nerve's territory, sharp borders</strong>"
+        ],
+        [
+         "<strong>Pain</strong>",
+         "Neck or back pain + electric or burning pain down the limb · worse with some positions (neck extension)",
+         "Numbness, tingling, maybe burning · worse with leaning, driving, typing"
+        ],
+        [
+         "<strong>Weakness</strong>",
+         "<strong>Every muscle of that root</strong> + reflex loss",
+         "<strong>Only that nerve's muscles</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Weak thumb abduction: <strong>C8 root</strong> → medial hand and forearm numb + other C8 muscles weak · <strong>median nerve</strong> → thumb, index, middle and half the ring finger numb + only median muscles weak</li><li><strong><span class=\"wl\">Carpal tunnel syndrome</span></strong> (most common): median-territory tingling, <strong>worse at night</strong>, better with shaking · night splints, steroid injection, surgical release · can be confused with a C6 root</li><li><strong>Foot drop</strong> from the <strong>common peroneal nerve</strong> at the fibular neck: weak dorsiflexion, toe extension and eversion · numb top of the foot · reflexes intact</li><li><strong>S1 root</strong>: low back pain · numb little toe and sole · <strong>absent ankle reflex</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Four kinds of peripheral nerve damage</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Type",
+        "What fails",
+        "Causes",
+        "Recovery"
+       ],
+       "rows": [
+        [
+         "<strong>Functional block</strong>",
+         "Ion channels - no structural damage",
+         "Local anesthetic (<span class=\"wl\">lidocaine</span>) · cold · brief compression · neurapraxia",
+         "<strong>Fast and complete</strong>"
+        ],
+        [
+         "<strong>Axonopathy: Wallerian</strong>",
+         "Axon beyond a focal injury",
+         "Trauma (axonotmesis) · severe ischemia",
+         "Regrows ~1-2 mm a day (upper-year notes: about an inch a month) · months to years · <strong>unlikely after 2 years</strong>"
+        ],
+        [
+         "<strong>Axonopathy: dying back</strong>",
+         "<strong>Far end of the longest axons first</strong>",
+         "Metabolic: <strong><span class=\"wl\">diabetes</span></strong>, kidney failure · drugs: <span class=\"wl\">vincristine</span>, <span class=\"wl\">cisplatin</span>, <span class=\"wl\">metronidazole</span> · heavy metals: lead, arsenic, mercury",
+         "<strong>Slow, incomplete, only if the cause is removed</strong>"
+        ],
+        [
+         "<strong>Demyelination</strong>",
+         "Myelin over one or more internodes → signal fails",
+         "Immune: <strong><span class=\"wl\">Guillain-Barré syndrome</span></strong>, chronic inflammatory demyelinating polyradiculoneuropathy · diphtheria toxin · hereditary: <span class=\"wl\">Charcot-Marie-Tooth disease</span>",
+         "<strong>~12 weeks</strong> (Schwann cells regrow quickly)"
+        ],
+        [
+         "<strong>Neuronopathy</strong>",
+         "Cell body: anterior horn or dorsal root ganglion",
+         "Motor: <span class=\"wl\">amyotrophic lateral sclerosis</span>, polio, West Nile · sensory: cisplatin, paraneoplastic, Sjögren, vitamin B6 toxicity",
+         "—"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/9902f912de37.jpg",
+       "alt": "types of nerve damage.png",
+       "w": 850,
+       "h": 565,
+       "cap": "Where neuropathy causes act: systemic causes everywhere, root and plexus causes proximally, compression and trauma distally"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Three bilateral patterns to tell apart</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong>Length-dependent polyneuropathy</strong> (diabetic)",
+        "<strong><span class=\"wl\">Guillain-Barré syndrome</span></strong>",
+        "<strong><span class=\"wl\">Thoracic myelopathy</span></strong>"
+       ],
+       "rows": [
+        [
+         "<strong>Main problem</strong>",
+         "<strong>Sensory</strong> (burning)",
+         "<strong>Motor (weakness)</strong> >> sensory",
+         "Sensory + motor"
+        ],
+        [
+         "<strong>Tempo</strong>",
+         "Slow (months to years)",
+         "<strong>Days</strong>",
+         "Variable"
+        ],
+        [
+         "<strong>Distribution</strong>",
+         "<strong>Stocking and glove</strong>: toes → feet → ankles → knees, then fingertips",
+         "<strong>Ascending</strong> from the feet (and hands)",
+         "<strong>Everything below a sensory level</strong>"
+        ],
+        [
+         "<strong>Reflexes</strong>",
+         "Ankle reflexes ↓",
+         "<strong>Lost or reduced</strong>",
+         "<strong>Brisk below the level</strong> · spastic (upper motor neuron)"
+        ],
+        [
+         "<strong>Also</strong>",
+         "Autonomic failure when severe: low BP on standing, bladder, constipation",
+         "<strong>Cranial nerves and breathing muscles → respiratory failure</strong>",
+         "Bladder urgency · poor balance, falls, wide gait"
+        ],
+        [
+         "<strong>Next step</strong>",
+         "Treat the pain (analgesic, antidepressant) · <strong>sugar control will not reverse it</strong>",
+         "<strong>IVIG</strong> shortens the course · slow recovery",
+         "<strong>MRI of the cord</strong> (and head if <span class=\"wl\">multiple sclerosis</span> is possible)"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Why toes first</strong>: axonal transport fails over distance, so the longest axons (to the toes, from S1) go first · <strong>the knee-to-spine distance matches fingertip-to-neck, so the hands start when the legs reach the knees</strong></li><li><strong><span class=\"wl\">Diabetic neuropathy</span></strong> = <strong>the most common neuropathy in Canada</strong> · symmetric, sensory first, painful · <strong>shooting pain down a leg is a root, not diabetes</strong></li><li>Guillain-Barré = acute inflammatory demyelinating polyneuropathy: autoimmune, antibody-mediated</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/53fe2f699ece.jpg",
+       "alt": "stocking and glove distribution.png",
+       "w": 850,
+       "h": 1328,
+       "cap": "Stocking-and-glove distribution of a length-dependent polyneuropathy"
+      }
+     ]
     },
     {
      "id": "neuro-w14-05",
      "num": "05",
      "name": "Neuropathic Pain",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Neuropathic pain",
+     "keypoints": "<p>⭐ <strong>Allodynia = pain from a non-painful touch; hyperpathia = too much pain from a painful one.</strong> <strong>Trigeminal neuralgia → carbamazepine; postherpetic neuralgia → gabapentin.</strong> <strong>One drug at a time, titrated to the maximum - switch only for side effects or no effect after a month at the top dose.</strong> <strong>Opioids are the last resort.</strong> <strong>Complex regional pain syndrome: more pain, for longer, than the injury explains, with autonomic features.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Neuropathic pain comes from a damaged or malfunctioning nervous system, not from injured tissue - so it is treated differently from ordinary (nociceptive) pain.</strong> <strong>Recognize it by its symptoms, find the cause, then trial one drug at a time, titrated slowly to the maximum dose.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Two kinds of pain</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong>Nociceptive</strong>",
+        "<strong>Neuropathic</strong>"
+       ],
+       "rows": [
+        [
+         "<strong>Source</strong>",
+         "<strong>Tissue injury</strong> activating pain receptors",
+         "<strong>Lesion or dysfunction of the nervous system</strong> itself"
+        ],
+        [
+         "<strong>Types</strong>",
+         "Somatic or visceral",
+         "Peripheral or central"
+        ],
+        [
+         "<strong>Purpose</strong>",
+         "Adaptive - warns of damage",
+         "—"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Symptoms</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Allodynia</span></strong> = <strong>pain from something that should not hurt</strong> (clothes, bedsheets)</li><li><strong><span class=\"wl\">Hyperpathia</span></strong> = an <strong>exaggerated</strong> response to something that should hurt (a pinprick is agonizing)</li><li><strong><span class=\"wl\">Dysesthesia</span></strong> = unpleasant abnormal sensations<ul><li>numbness or tingling (<span class=\"wl\">paresthesia</span>) · burning · electric shocks or shooting pain (<span class=\"wl\">neuralgia</span>)</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Causes</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Peripheral nervous system",
+        "Central nervous system",
+        "<span class=\"wl\">Complex regional pain syndrome</span>"
+       ],
+       "rows": [
+        [
+         "<strong>Length-dependent neuropathies</strong>: <span class=\"wl\">diabetic</span>, chemotherapy, small-fibre sensory",
+         "Lesions of the <strong><span class=\"wl\">thalamus</span></strong>, brainstem or spinal cord",
+         "A focal tissue or nerve injury → <strong>chronic pain greater and longer than the injury explains</strong>"
+        ],
+        [
+         "<span class=\"wl\">Radiculopathy</span>",
+         "<strong>Phantom limb pain</strong> (likely partly central)",
+         "<strong>Inflammatory and autonomic</strong> features"
+        ],
+        [
+         "<strong><span class=\"wl\">Postherpetic neuralgia</span></strong> · <strong><span class=\"wl\">trigeminal neuralgia</span></strong> · nerve injury",
+         "—",
+         "Peripheral + central sensitization"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Treatment</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Neuropathic pain confirmed\"] --> B{\"A classic syndrome?\"}\n    B -->|\"Trigeminal neuralgia\"| C[\"CARBAMAZEPINE\"]\n    B -->|\"Postherpetic neuralgia\"| D[\"GABAPENTIN\"]\n    B -->|\"Other\"| E[\"Pick one agent to fit co-existing problems<br/>(sleep, depression)\"]\n    E --> F[\"Titrate up slowly to the maximum dose\"]\n    F --> G{\"Side effects before benefit?<br/>Or no benefit after 1 month at the top dose?\"}\n    G -->|Yes| H[\"SWITCH to another agent\"]\n    G -->|No| I[\"Continue\"]\n    H --> F"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Class",
+        "Examples",
+        "Notes"
+       ],
+       "rows": [
+        [
+         "<strong>Tricyclic antidepressants</strong>",
+         "<strong><span class=\"wl\">amitriptyline</span></strong> · <span class=\"wl\">nortriptyline</span>",
+         "Amitriptyline <strong>also helps sleep</strong> · cheapest"
+        ],
+        [
+         "<strong>Serotonin-norepinephrine reuptake inhibitors</strong>",
+         "<strong><span class=\"wl\">duloxetine</span></strong> · <span class=\"wl\">venlafaxine</span>",
+         "Duloxetine <strong>also treats depression</strong>"
+        ],
+        [
+         "<strong>Anticonvulsants</strong>",
+         "<strong><span class=\"wl\">gabapentin</span></strong> · <span class=\"wl\">pregabalin</span> · <span class=\"wl\">carbamazepine</span>",
+         "<strong>Carbamazepine for trigeminal neuralgia</strong> · <strong>gabapentin for postherpetic neuralgia</strong>"
+        ],
+        [
+         "<strong>Topical</strong>",
+         "Capsaicin (hot-pepper gel, 3 times a day) · <span class=\"wl\">lidocaine</span> gel or patch",
+         "—"
+        ],
+        [
+         "<strong>Other</strong>",
+         "<span class=\"wl\">cannabinoids</span> · <span class=\"wl\">opioids</span>",
+         "<strong>Opioids only as a last resort</strong> - they rarely help much"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The choice depends on what else the patient has (poor sleep → amitriptyline · depression → duloxetine)</li><li>Treating neuropathic pain is <strong>not</strong> the same as treating nociceptive pain</li></ul>"
+      }
+     ]
     },
     {
      "id": "neuro-w14-06",
      "num": "06",
      "name": "Approach to Headache",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Approach to headache",
+     "keypoints": "<p>⭐ <strong>Screen every headache for red flags first: a thunderclap headache is a subarachnoid hemorrhage until an early CT - and a lumbar puncture if the CT is negative - says otherwise.</strong> <strong>Over 50 with jaw claudication → ESR and steroids before the biopsy.</strong> <strong>Raised pressure is worse lying and on waking; a CSF leak is better lying.</strong> <strong>Tension-type: both sides, pressing, no nausea; migraine: one side, throbbing, worse with activity.</strong> <strong>Migraine patients lie still; cluster patients pace.</strong> <strong>Triptans at onset, not with coronary disease; acute drugs under 10 days a month.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>First ask whether this is a secondary headache: screen every headache for red flags, because the rare secondary causes kill or disable.</strong> <strong>With no red flags it is a primary headache (about 90%), and duration, side, quality and behaviour during the attack name it: migraine, tension-type or cluster.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The approach</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Headache\"] --> B[\"History: onset · time course · time of day · site<br/>quality · triggers · associated features<br/>How many days a month are you headache-free?\"]\n    B --> C{\"Red flags? (SNOOP)<br/>Systemic · Neurologic signs · Onset sudden<br/>Older (over 50) · Pattern change, postural,<br/>Valsalva-triggered, papilledema\"}\n    C -->|\"Thunderclap\"| D[\"SUBARACHNOID HEMORRHAGE?<br/>CT now · lumbar puncture for<br/>xanthochromia if CT is negative\"]\n    C -->|\"Over 50, jaw claudication,<br/>scalp tenderness\"| E[\"GIANT CELL ARTERITIS?<br/>ESR · steroids at once · biopsy\"]\n    C -->|\"Fever, stiff neck\"| F[\"MENINGITIS?<br/>CT if raised pressure · lumbar puncture<br/>empiric antibiotics\"]\n    C -->|\"Focal signs, papilledema,<br/>worse on waking or lying down\"| G[\"MASS or RAISED PRESSURE?<br/>CT or MRI\"]\n    C -->|\"None\"| H{\"PRIMARY HEADACHE<br/>which pattern?\"}\n    H -->|\"4-72 h, one side, throbbing,<br/>nausea, light and sound sensitivity,<br/>lies still\"| I[\"MIGRAINE\"]\n    H -->|\"30 min-7 days, both sides,<br/>pressing, mild-moderate\"| J[\"TENSION-TYPE\"]\n    H -->|\"One side around the eye, severe,<br/>restless, predictable timing\"| K[\"CLUSTER\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Brain tissue has no pain receptors</strong> - the pain comes from what surrounds it (periosteum, dural and scalp arteries, veins, cranial nerves V, VII, IX, X, neck muscles, eyes, ears, sinuses, scalp)</li><li><strong>History</strong>: onset (worst ever? instantaneous? new after 50?) · <strong>wakes from sleep or worse on waking → raised pressure</strong> · worse with cough or position · associated features · <strong>hormonal status</strong> (pregnancy, contraceptive pill, hormone therapy)</li><li><strong>Exam</strong>: vitals · temporal arteries · pupils and visual fields · <strong>fundoscopy for papilledema</strong> · neck flexion · neurological exam</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Red flags and what they mean</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Red flag",
+        "Think of",
+        "Investigate"
+       ],
+       "rows": [
+        [
+         "<strong>Systemic illness</strong> (cancer, HIV, fever, stiff neck, rash)",
+         "Meningitis, encephalitis, arteritis",
+         "Imaging · lumbar puncture · labs · ± biopsy"
+        ],
+        [
+         "<strong>Focal neurological signs</strong> (other than a typical aura)",
+         "Mass, arteriovenous malformation",
+         "Imaging · labs"
+        ],
+        [
+         "<strong>Sudden onset</strong>",
+         "<strong>Subarachnoid hemorrhage</strong>, bleed into a mass",
+         "<strong>CT, then lumbar puncture</strong>"
+        ],
+        [
+         "<strong>Onset over 50</strong>",
+         "<strong>Giant cell arteritis</strong>",
+         "<strong>ESR</strong> · ± biopsy"
+        ],
+        [
+         "<strong>Pregnancy or postpartum</strong>",
+         "Cerebral venous thrombosis · carotid dissection · pituitary apoplexy",
+         "Imaging"
+        ],
+        [
+         "<strong>Triggered by cough, exertion, Valsalva</strong>",
+         "Subarachnoid hemorrhage, mass",
+         "Imaging"
+        ],
+        [
+         "<strong>Worsening pattern</strong>",
+         "Mass · subdural hematoma · <strong>medication overuse</strong>",
+         "Imaging"
+        ],
+        [
+         "<strong>Papilledema</strong>",
+         "Mass · idiopathic intracranial hypertension · encephalitis, meningitis",
+         "Imaging, then lumbar puncture"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Secondary headaches</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Cause",
+        "Clues",
+        "Tests",
+        "Treatment"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Subarachnoid hemorrhage</span></strong>",
+         "<strong><span class=\"wl\">Thunderclap</span></strong>: worst ever, peaks in seconds",
+         "<strong>CT early</strong> (sensitivity falls each day) → <strong>lumbar puncture for xanthochromia</strong> if negative",
+         "Neurosurgery"
+        ],
+        [
+         "<strong><span class=\"wl\">Raised pressure</span></strong> (mass)",
+         "Worse on waking or lying · sleepy · blurred vision · ↓ consciousness · <strong><span class=\"wl\">Cushing's triad</span></strong>",
+         "CT or MRI",
+         "Treat the cause"
+        ],
+        [
+         "<strong><span class=\"wl\">Idiopathic intracranial hypertension</span></strong>",
+         "Obesity, contraceptive pill, steroids, vitamin A, <span class=\"wl\">tetracycline</span> · <strong>pulsatile ringing in the ears</strong> · horizontal double vision · brief visual blackouts · <strong>papilledema</strong>",
+         "Opening pressure over 250 mm",
+         "<strong>Weight loss</strong> · <span class=\"wl\">acetazolamide</span> or <span class=\"wl\">topiramate</span> · shunt or optic nerve sheath fenestration"
+        ],
+        [
+         "<strong>Low pressure</strong> (cerebrospinal fluid leak)",
+         "<strong>Better lying, worse upright</strong> · after lumbar puncture or surgery, or spontaneous",
+         "MRI to find the leak",
+         "Patch the leak · lie flat"
+        ],
+        [
+         "<strong><span class=\"wl\">Giant cell arteritis</span></strong>",
+         "<strong>Over 50</strong> · <strong>jaw claudication</strong> · scalp tenderness · visual symptoms · polymyalgia, fever, sweats · tender nodular temporal artery",
+         "<strong>ESR almost always ↑</strong> · CRP · <strong>temporal artery biopsy</strong>",
+         "<strong>High-dose prednisone (60-100 mg) as soon as suspected</strong>, taper as ESR settles · untreated → blindness or stroke"
+        ],
+        [
+         "<strong><span class=\"wl\">Cervical artery dissection</span></strong>",
+         "One-sided headache spreading to the <strong>neck and face</strong> · <strong><span class=\"wl\">Horner syndrome</span></strong> · stroke risk",
+         "Ultrasound · MRI · CT angiogram",
+         "ASA (clopidogrel if it fails) · anticoagulation in hospital · stenting"
+        ],
+        [
+         "<strong>Brain tumour</strong>",
+         "Steady, <strong>worse in the morning</strong>, ± vomiting · worse with cough or position · <strong>resists usual remedies</strong>",
+         "Imaging",
+         "—"
+        ],
+        [
+         "<strong><span class=\"wl\">Meningitis</span></strong>",
+         "<strong>Fever + stiff neck</strong> · Kernig and Brudzinski signs",
+         "CT if raised pressure · lumbar puncture · blood cultures",
+         "<span class=\"wl\">ceftriaxone</span> + <span class=\"wl\">vancomycin</span> + <span class=\"wl\">ampicillin</span> + <span class=\"wl\">acyclovir</span> + <strong><span class=\"wl\">dexamethasone</span></strong>"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/ad77d6d61b11.jpg",
+       "alt": "Cushing's triad mechanism.png",
+       "w": 900,
+       "h": 854,
+       "cap": "Raised intracranial pressure causes the Cushing reflex: hypertension, bradycardia, respiratory suppression"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Migraine</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Features</strong>: one-sided, throbbing, disabling · <strong>4-72 hours</strong> · nausea or vomiting · light and sound sensitivity · women over 75%<ul><li><strong>central sensitization</strong> in over 80% → <strong>allodynia</strong> (brushing hair or wearing glasses hurts)</li><li><strong>aura</strong> in 15-20%: usually visual, <strong>typically under 30 min</strong>, spreads gradually · 3-5% have aura without headache</li></ul></li><li><strong>Diagnosis</strong><ul><li><strong>without aura</strong>: <strong>at least 5 attacks</strong> of 4-72 h + <strong>2 of</strong> one-sided · pulsating · moderate-severe · worse with routine activity + <strong>1 of</strong> nausea or vomiting · light <strong>and</strong> sound sensitivity</li><li><strong>with aura</strong>: at least 2 attacks with a spreading aura (each symptom 5-60 min) followed within 60 min by headache</li></ul></li><li><strong>Migraine aura vs TIA</strong>: <strong>positive</strong> symptoms (sparkles) vs visual <strong>loss</strong> · gradual and sequential vs abrupt and simultaneous · up to 60 min vs under 15 · headache follows about half vs rarely</li><li><strong>Acute treatment</strong> - <strong>treat early in the attack</strong>, no imaging needed<ul><li><strong><span class=\"wl\">NSAIDs</span></strong> (ibuprofen, naproxen, ketorolac) · avoid with a gastrointestinal bleed, ulcer, kidney disease, pregnancy, bleeding disorder</li><li><strong><span class=\"wl\">Triptans</span></strong> (serotonin agonists: constrict vessels, ↓ CGRP release) · <strong>best at onset, not as a last resort</strong> · side effects: chest or jaw tightness, flushing, nausea · <strong>avoid in coronary, cerebrovascular or peripheral vascular disease, uncontrolled hypertension, Raynaud</strong></li><li><span class=\"wl\">gepants</span> · antiemetics (<span class=\"wl\">metoclopramide</span>, <span class=\"wl\">prochlorperazine</span>) · <strong>avoid opioids</strong></li><li><strong>limit acute drugs to under 10 days a month</strong> to prevent <span class=\"wl\">medication overuse headache</span> (sources differ: the medwiki note says 10-15 times a month, or 2-3 days a week - check the slides)</li></ul></li><li><strong>Prevention</strong><ul><li><strong>when</strong>: disabling attacks despite acute treatment · <strong>4 or more attacks a month</strong> · acute drugs fail or cannot be used · overuse risk · frequent or long auras</li><li><strong>lifestyle (SEEDS)</strong>: Sleep · Exercise · Eat well · <strong>Diary of triggers</strong> · Stress</li><li><strong>success = 50% fewer attacks</strong> · start low, go slow · try tapering after 6-9 months of remission</li></ul></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Preventive",
+        "Example",
+        "Choose when / watch for"
+       ],
+       "rows": [
+        [
+         "<span class=\"wl\">Gepant</span>",
+         "<span class=\"wl\">atogepant</span>",
+         "First preventive · higher BMI"
+        ],
+        [
+         "<span class=\"wl\">Anti-CGRP antibody</span>",
+         "<span class=\"wl\">erenumab</span> · <span class=\"wl\">galcanezumab</span>",
+         "First preventive · caution in childbearing age · constipation, injection-site reaction"
+        ],
+        [
+         "<span class=\"wl\">Beta-blocker</span>",
+         "<span class=\"wl\">propranolol</span> · <span class=\"wl\">metoprolol</span> · <span class=\"wl\">nadolol</span>",
+         "<strong>Has hypertension</strong> · low BP · avoid in heart failure, asthma, diabetes"
+        ],
+        [
+         "Angiotensin receptor blocker",
+         "<strong>candesartan</strong>",
+         "<strong>Fewest side effects</strong> · caution in childbearing age"
+        ],
+        [
+         "Tricyclic",
+         "<strong><span class=\"wl\">amitriptyline</span></strong>",
+         "<strong>Co-existing anxiety or depression</strong> · drowsiness, weight gain, dry mouth"
+        ],
+        [
+         "Anticonvulsant",
+         "<span class=\"wl\">topiramate</span>",
+         "<strong>No longer strongly recommended (2024)</strong> · weight loss, tingling, acidosis"
+        ],
+        [
+         "<span class=\"wl\">OnabotulinumtoxinA</span>",
+         "—",
+         "<strong>Chronic migraine only</strong> · injections every 3 months"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/375fbcc22a98.jpg",
+       "alt": "migraine attack phases - upper-year notes.jpg",
+       "w": 644,
+       "h": 310,
+       "cap": "Phases of a migraine attack: triggers, prodrome, aura, headache, postdrome"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Tension-type headache and cluster headache</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong><span class=\"wl\">Tension-type</span></strong>",
+        "<strong><span class=\"wl\">Migraine</span></strong>"
+       ],
+       "rows": [
+        [
+         "<strong>Duration</strong>",
+         "30 min-7 days",
+         "4-72 hours"
+        ],
+        [
+         "<strong>Side</strong>",
+         "<strong>Both sides (always)</strong>",
+         "<strong>One side</strong> (can be both)"
+        ],
+        [
+         "<strong>Quality</strong>",
+         "<strong>Pressing, tightening</strong>",
+         "<strong>Pulsating</strong>"
+        ],
+        [
+         "<strong>Intensity</strong>",
+         "Mild-moderate",
+         "Moderate-severe"
+        ],
+        [
+         "<strong>Worse with activity</strong>",
+         "No",
+         "<strong>Yes</strong>"
+        ],
+        [
+         "<strong>Nausea or vomiting</strong>",
+         "No",
+         "Yes"
+        ],
+        [
+         "<strong>Light and sound sensitivity</strong>",
+         "At most one",
+         "Both"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Tension-type</strong>: <strong>the most common headache</strong> (~38% a year) · onset ~25-30 · no imaging needed<ul><li>acute: <span class=\"wl\">acetaminophen</span> · <span class=\"wl\">ibuprofen</span> · <span class=\"wl\">naproxen</span> · prevent: <strong><span class=\"wl\">amitriptyline</span> first line</strong> · <span class=\"wl\">mirtazapine</span> · <span class=\"wl\">venlafaxine</span> · tizanidine · <strong>triptans and onabotulinumtoxinA do not work</strong></li></ul></li><li><strong><span class=\"wl\">Cluster headache</span></strong> (a trigeminal autonomic cephalalgia): rare (0.1%) · onset ~30 · <strong>men 3:1</strong> · smokers · severe one-sided pain around the eye · <strong>cannot stay still (unlike migraine)</strong> · <strong>predictable timing</strong> · hypothalamus · MRI<ul><li><strong>acute</strong>: <strong><span class=\"wl\">sumatriptan</span> 6 mg under the skin</strong> · <span class=\"wl\">zolmitriptan</span> nasal · <strong>100% oxygen, 12-15 L/min for 15 min</strong></li><li><strong>bridge</strong>: steroids · <span class=\"wl\">dihydroergotamine</span> · nerve blocks · <strong>prevent</strong>: <strong><span class=\"wl\">verapamil</span></strong> (ECG monitoring) · <span class=\"wl\">galcanezumab</span> · <span class=\"wl\">lithium</span> rarely</li></ul></li></ul>"
+      }
+     ]
     },
     {
      "id": "neuro-w14-07",
