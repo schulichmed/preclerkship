@@ -62,7 +62,6 @@
   function show(d){
     var el=document.getElementById("presence");
     if(!el||typeof d.total!=="number")return;
-    el.querySelector("[data-online]").textContent=d.online.toLocaleString();
     el.querySelector("[data-total]").textContent=d.total.toLocaleString();
     el.hidden=false;
   }
@@ -86,7 +85,7 @@
 
 <div class="page-hero">
 <div class="hero-corner">
-<p class="presence" id="presence" hidden><span class="presence-live"><span class="presence-dot" aria-hidden="true"></span><b data-online></b> online now</span><span class="presence-sep" aria-hidden="true">&middot;</span><span><b data-total></b> visitors</span></p>
+<p class="presence" id="presence" hidden><span><b data-total></b> visits</span></p>
 <button class="theme-btn" id="theme-btn" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode"><svg class="moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
 </div>
 <h1>Schulich Pre-clerkship.</h1>
@@ -121,7 +120,7 @@ pre-clerkship.
 <p>The five blocks of second year, with a written note for every lecture that has one and a coverage map for the rest.</p>
 <span class="tally">
 <span><b>220</b> lecture notes</span>
-<span><b>1,971</b> practice questions</span>
+<span><b>1,981</b> practice questions</span>
 </span>
 </a>
 <a class="block-card" href="t2c/index.html" style="--hue:#3f4a5a">

@@ -334,7 +334,6 @@ PRESENCE_SCRIPT = """<script>
   function show(d){
     var el=document.getElementById("presence");
     if(!el||typeof d.total!=="number")return;
-    el.querySelector("[data-online]").textContent=d.online.toLocaleString();
     el.querySelector("[data-total]").textContent=d.total.toLocaleString();
     el.hidden=false;
   }
@@ -357,10 +356,7 @@ if PRESENCE_URL:
 # The hub's corner readout, filled by PRESENCE_SCRIPT.
 PRESENCE_SLOT = (
     '<p class="presence" id="presence" hidden>'
-    '<span class="presence-live"><span class="presence-dot" aria-hidden="true"></span>'
-    '<b data-online></b> online now</span>'
-    '<span class="presence-sep" aria-hidden="true">&middot;</span>'
-    '<span><b data-total></b> visitors</span></p>')
+    '<span><b data-total></b> visits</span></p>')
 
 
 # Where "All courses" points. Absolute, not relative: the portal is served from
