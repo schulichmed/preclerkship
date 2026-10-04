@@ -9,55 +9,1803 @@
      "id": "neuro-w12-01",
      "num": "01",
      "name": "Understanding and Managing Chronic Pain",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Understanding and managing chronic pain",
+     "keypoints": "<p>⭐ <strong>Chronic pain is mostly sensitized (neuropathic) pain that outlasts the injury, so \"hurt is not harm\" and the treatment with excellent evidence is exercise, not passive therapy.</strong> <strong>Massage is the only passive modality that works, and only with exercise and education.</strong> <strong>SSRIs do little for pain; tricyclics and SNRIs (norepinephrine) do.</strong> <strong>Gabapentinoids are for neuropathic pain; their main side effect is sedation.</strong> <strong>NSAIDs: a 2-3 week trial.</strong> <strong>Watchful opioid dose 90 mg morphine equivalent per day; strong recommendation against opioids after addiction.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Most chronic pain is no longer a tissue problem but a processing problem:</strong> the nervous system has been turned up (central sensitization), so the plan aims at <strong>function, not cure</strong> - education, activity and a multimodal drug plan, with opioids last and only under the START rules.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. How pain normally travels and is turned up or down</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Fibres</strong>: A-beta = touch, vibration · A-delta = heat, cold, sharp pain · C = chemical pain · they release <strong>glutamate</strong> in the dorsal horn, where <strong>NMDA receptors are normally blocked by magnesium</strong></li><li><strong>Spinothalamic tract → thalamus</strong> → <strong>medial system</strong> (cingulate, insula, amygdala: the emotional \"suffering\") and <strong>lateral system</strong> (somatosensory cortex: where it hurts)</li><li><strong>Central sensitization (\"wind-up\")</strong>: repeated input removes the magnesium block → the second-order neuron becomes hyperexcitable → <strong>the same stimulus gives a bigger signal</strong></li><li><strong>Three ways pain is dampened</strong><ul><li><strong>gate control</strong>: A-beta input switches on inhibitory interneurons, so <strong>rubbing a sore spot helps</strong></li><li><strong><span class=\"wl\">endogenous opioids</span></strong> (enkephalins, endorphins, dynorphins) hyperpolarize the neurons before and after the synapse</li><li><strong>descending inhibition</strong> from the brainstem uses <strong>norepinephrine and serotonin</strong> - more of both = more pain inhibition</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/9433942ce88a.jpg",
+       "alt": "gate control theory of pain.png",
+       "w": 900,
+       "h": 431,
+       "cap": "Gate control: A-beta touch fibres switch on the inhibitory interneuron; C fibres switch it off"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Types of pain and how long it lasts</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Acute",
+        "Subacute",
+        "Chronic"
+       ],
+       "rows": [
+        [
+         "<strong>Lasts</strong>",
+         "Seconds, at the same time as the cause",
+         "Hours to days",
+         "<strong>Over 3 months</strong>"
+        ],
+        [
+         "<strong>Matches the cause?</strong>",
+         "Proportional",
+         "<span class=\"wl\">Hyperalgesia</span>, <span class=\"wl\">allodynia</span>, spontaneous pain",
+         "<strong>Can outlast tissue healing</strong> · a disease in itself · big emotional component"
+        ],
+        [
+         "<strong>Mechanism</strong>",
+         "Nociceptive",
+         "Mostly nociceptive, some neuropathic",
+         "<strong>Mostly neuropathic</strong>, some nociceptive"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Neuropathic pain</strong> = from a lesion (inflammation) or dysfunction (ectopic firing) of the nervous system itself<ul><li>described as <strong>burning, electric, shooting, pins and needles, numbness</strong></li><li>peripheral: diabetic and other length-dependent neuropathy · radiculopathy · post-herpetic neuralgia · <span class=\"wl\">trigeminal neuralgia</span> · central: thalamus, brainstem or cord lesions · phantom limb</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/9bb6b3ddc46b.jpg",
+       "alt": "neuropathic vs nociceptive pain.png",
+       "w": 850,
+       "h": 468,
+       "cap": "Neuropathic vs nociceptive pain: how each is described and behaves"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Chronic pain: two kinds, and what it does to the person</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Chronic nociceptive</strong> (the minority): nociceptors keep firing, e.g. chronic inflammatory disease, <span class=\"wl\">osteoarthritis</span> · easy to localize · treat by stopping the ongoing activation</li><li><strong>Chronic neuropathic</strong> (the majority): the injury has healed but processing is abnormal<ul><li>wind-up · more glutamate (NMDA) receptors · <strong>less descending serotonin and norepinephrine</strong> · pain-avoidant behaviour</li></ul></li><li><strong>Mood</strong>: a shared serotonin and norepinephrine imbalance links pain and <span class=\"wl\">depression</span><ul><li>comorbid depression is common (sources differ: the note says up to ~90%, the upper-year notes over 50% - check the slides)</li><li>predictors of depression: pain <strong>intensity · number of painful areas · frequency of severe pain</strong> · other psychosocial factors</li><li>anxiety → <strong>activity avoidance</strong> → deconditioning, social isolation</li></ul></li><li><strong>Learned avoidance</strong>: moving hurts → stop moving, which spreads to anything that might hurt (operant conditioning) · pain tied to a setting such as work (classical conditioning)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. The approach to chronic pain</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Pain lasting over 3 months\"] --> B[\"Acute phase: fully investigate and treat the injury<br/>then early return to low-impact activity\"]\n    B --> C{\"Is tissue still being activated?<br/>e.g. inflammatory disease, osteoarthritis\"}\n    C -->|\"Yes - chronic nociceptive (minority)\"| D[\"Stop the ongoing activation<br/>acetaminophen · anti-inflammatories\"]\n    C -->|\"No - sensitized or neuropathic (majority)\"| E[\"Educate: HURT IS NOT HARM<br/>active therapy: exercise, cognitive behavioural therapy, pacing\"]\n    E --> F[\"Neuropathic drugs: tricyclic, serotonin-norepinephrine<br/>reuptake inhibitor, gabapentinoid<br/>start low, one at a time, multimodal\"]\n    D --> G{\"Still not responding · activity falling<br/>low mood · isolated · leaning on medication?\"}\n    F --> G\n    G -->|No| H[\"Family physician continues<br/>monitor function, pain and side effects\"]\n    G -->|Yes| I[\"Refer to a multidisciplinary chronic pain clinic\"]\n    I --> J[\"Opioid trial only as a last resort<br/>START principle\"]"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. The team</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The <strong>family physician</strong> coordinates most care · <strong>refer to a multidisciplinary chronic pain clinic</strong> when: <strong>not responding</strong> to standard analgesics · management needs review · <strong>activity, mood and social life are deteriorating</strong></li><li>Clinic roles: <strong>physicians</strong> (anesthesia, neurology, rehabilitation, internal medicine, psychiatry) review, trial drugs, give interventions, hand a long-term plan back · <strong>nurses</strong> support and triage · <strong>psychologists</strong>: therapy for depression and anxiety, <span class=\"wl\">cognitive behavioural therapy</span>, education · <strong>occupational and physiotherapists</strong>: <strong>pacing</strong>, return to activity</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Non-drug management</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Education - \"hurt does not equal harm\"</strong>: the injury has usually healed; the pain comes from faulty signal processing · returning to activity <strong>desensitizes</strong> the system · exercise releases endorphins</li><li><strong>Exercise and activity - excellent evidence</strong><ul><li>strengthening + flexibility + cardiovascular work · spinal pain: core strength and flexibility · <strong>yoga and tai chi</strong> beat general exercise for back pain</li><li>works best when <strong>individualized, supervised, stretching and strengthening</strong> · any regular activity matters more than the exact exercise</li><li><strong>work hardening programs are not effective</strong></li></ul></li><li><strong>Passive modalities</strong> (laser, ultrasound, heat, acupuncture, transcutaneous electrical nerve stimulation): <strong>very little evidence</strong>, used because patients ask · they reinforce the idea that tissue damage causes the pain<ul><li>nerve stimulation: slightly better than placebo, an add-on only · <strong>massage is the only one that works, and only with exercise and education</strong></li><li>spinal manipulation: a short course under 6 weeks may help, <strong>no evidence after 6 weeks</strong></li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Drugs for chronic pain</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Class",
+        "Examples",
+        "Mechanism",
+        "Use",
+        "Cautions"
+       ],
+       "rows": [
+        [
+         "<strong>Non-steroidal anti-inflammatory drugs (<span class=\"wl\">NSAIDs</span>)</strong>, <span class=\"wl\">cyclooxygenase-2 inhibitors</span>",
+         "-",
+         "Block cyclooxygenase (blocking COX-1 causes the harm)",
+         "<strong>Mild to moderate pain</strong> (about 2-6 out of 10)",
+         "Gastrointestinal bleeding and ulcer (less with COX-2) · kidney injury · raised blood pressure · <strong>2-3 week trial</strong>, then monitor"
+        ],
+        [
+         "<strong><span class=\"wl\">Acetaminophen</span></strong>",
+         "Max <strong>4 g/day</strong> (2 g in liver disease)",
+         "Less prostaglandin in the central nervous system",
+         "Alone, or with an opioid to lower its dose",
+         "Liver toxicity"
+        ],
+        [
+         "<strong><span class=\"wl\">Tricyclics</span></strong>",
+         "<span class=\"wl\">amitriptyline</span>, <span class=\"wl\">nortriptyline</span> - 10-50 mg for pain and sleep",
+         "<strong>More norepinephrine</strong> → descending inhibition",
+         "<strong>Pain with poor sleep</strong> · cheap",
+         "-"
+        ],
+        [
+         "<strong>Serotonin-norepinephrine reuptake inhibitors (<span class=\"wl\">SNRIs</span>)</strong>",
+         "<span class=\"wl\">duloxetine</span> 60 mg · <span class=\"wl\">venlafaxine</span>",
+         "More norepinephrine and serotonin",
+         "<strong>Pain with depression</strong>",
+         "-"
+        ],
+        [
+         "Selective serotonin reuptake inhibitors",
+         "-",
+         "Serotonin only",
+         "Mood",
+         "<strong>Little effect on pain</strong>"
+        ],
+        [
+         "<strong>Gabapentinoids</strong>",
+         "<span class=\"wl\">gabapentin</span> 900-2700 mg/day · <span class=\"wl\">pregabalin</span> 75-300 mg twice daily",
+         "Block the alpha-2-delta calcium channel subunit → less glutamate and substance P released",
+         "<strong>Neuropathic pain</strong>",
+         "<strong>Sedation</strong> - titrate · 1-2 weeks to work"
+        ],
+        [
+         "<strong>Cannabinoids</strong>",
+         "<span class=\"wl\">nabilone</span> · <span class=\"wl\">cannabis</span> with a <strong>high cannabidiol to tetrahydrocannabinol ratio</strong>",
+         "Endocannabinoid system (inflammation, pain)",
+         "Pain, sleep, anxiety",
+         "Do not smoke or vape"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Multimodal</strong> at the lowest effective doses · match the drug to the coexisting problem, then <strong>trial and error, one at a time</strong> (switch for side effects, or no effect after a month at the top dose) · topical capsaicin or lidocaine for neuropathic pain</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>8. Opioids: the START principle</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>S - Should I start?</strong> Pain, medical, psychosocial, psychiatric and <strong>substance use history</strong> (personal and family)<ul><li><strong><span class=\"wl\">Opioid Risk Tool</span></strong>: highest risk = <strong>male · age 16-45 · personal or family substance use · psychiatric history</strong> · <strong>urine drug screen at baseline and at random</strong></li><li>evidence: <strong>medium effect on pain, small on function</strong> · only tramadol helps <span class=\"wl\">fibromyalgia</span> · not for migraine, tension headache or irritable bowel syndrome</li><li><strong>taper off <span class=\"wl\">benzodiazepines</span></strong> (sedation, overdose) · informed consent · signed treatment agreement</li></ul></li><li><strong>T - Trial</strong>: no driving until the dose is stable · <strong>start low, go slow</strong> · aim for <strong>better function or at least 30% less pain</strong>, stop rising when benefit plateaus or side effects appear · <strong>watchful dose: 90 mg morphine equivalent per day</strong></li><li><strong>A - Monitor</strong>: analgesia · daily activities · adverse effects (nausea, constipation, drowsiness, low sex hormones, worse sleep apnea, <strong>opioid-induced hyperalgesia</strong>) · <strong>aberrant behaviour</strong> (early refills, crushing or injecting, double-doctoring)</li><li><strong>R - Restrict</strong>: <strong>history of addiction - strong recommendation against</strong> (if used, under 20 mg morphine equivalent per day) · active psychiatric disorder - weak recommendation against, <strong>stabilize first</strong> · elderly - lower, slower, longer intervals, stop benzodiazepines · adolescents - only after other drugs fail · pregnancy - taper to lowest dose or off</li><li><strong>T - Terminate</strong> for addiction, misuse or poor effect<ul><li>switching opioids: from a high dose give <strong>50% or less</strong> of the morphine equivalent, from a moderate or low dose <strong>60-70%</strong></li><li>tapering: 10% of the daily dose per day up to per month · <strong>slow by half once a third is left</strong> · watch for withdrawal (nausea, diarrhea, aches, chills, pain flare, anxiety, anger)</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/c9eb01646f12.jpg",
+       "alt": "stepped approach for opioid trial.png",
+       "w": 900,
+       "h": 774,
+       "cap": "Stepped approach: non-opioid analgesics and adjuvants, then weak opioids, then strong opioids"
+      }
+     ]
     },
     {
      "id": "neuro-w12-02",
      "num": "02",
      "name": "Psychological Factors in Managing Chronic Pain",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Psychological factors in managing chronic pain",
+     "keypoints": "<p>⭐ <strong>Up to half of chronic pain patients have comorbid major depression, and it predicts that the pain will persist - so distress that impairs function needs its own diagnosis.</strong> <strong>Factitious disorder: no external reward (gain unconscious); malingering: an external reward (conscious).</strong> <strong>Conversion disorder is diagnosed only after everything else is excluded.</strong> <strong>Pacing = less on good days, more on bad days.</strong> <strong>CBT for pain targets mental filter, catastrophizing and emotional reasoning; avoid progressive muscle relaxation.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Pain and mood feed each other:</strong> the lecture asks you to spot when distress has become <strong>its own diagnosis</strong> (a mood, anxiety or substance disorder, or a somatic symptom and related disorder), and then to manage chronic pain <strong>psychologically as well as physically</strong> - managed, not cured.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. How big the problem is</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>About <strong>20% of Canadians</strong> live with <span class=\"wl\">chronic non-cancer pain</span> · <strong>half have had it over 10 years</strong></li><li>Higher in marginalized groups and people living in poverty</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Assessing chronic pain</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>History and exam</strong><ul><li><strong>duration and nature</strong> of the pain</li><li>associated symptoms, <strong>physical and psychological - including suicidal thoughts</strong></li><li>past care: treatments, alternative therapies, medications, home remedies - what worked and what did not</li><li><strong>effect on function</strong></li></ul></li><li><strong>Charting the pain</strong>: descriptive words · 0-10 numeric score · face scales (children) · visual analogue scale · multidimensional tools (McGill Pain Questionnaire)</li><li><strong>Pain diary</strong>: the situation, the sensation, <strong>physical and psychological distress rated separately</strong>, what was done - shows the patient that pain and distress do not always move together</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/4b26c9829d55.jpg",
+       "alt": "types of pain scales.png",
+       "w": 727,
+       "h": 381,
+       "cap": "Pain scales: verbal, visual analogue, 0-10 numeric and faces"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Pain is shaped by the mind</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Pain is <strong>subjective but multidimensional</strong>, shaped bottom-up and top-down by: past pain · attention to pain · expectations · mood (depression, anxiety) · sensitization</li><li>Objective markers that track it: pain behaviours · physiological measures · change in function</li><li><strong>Fear-avoidance cycle</strong>: avoid what hurts → disuse, disability, low mood → more pain → more fear<ul><li>catastrophizing feeds the cycle · <strong>broken by confronting the pain</strong> and accepting it is not harmful</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/e13472dd07d8.jpg",
+       "alt": "fear avoidance model of pain.png",
+       "w": 900,
+       "h": 519,
+       "cap": "Fear-avoidance model: catastrophizing and fear lead to avoidance and disability; confrontation leads to recovery"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. When distress is more than chronic pain</h5>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Significant or prolonged distress that impairs function → consider another diagnosis, alongside or instead of chronic pain.</strong></p>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Patient with chronic pain\"] --> B{\"Significant or prolonged distress<br/>that impairs function?\"}\n    B -->|No| C[\"Chronic non-cancer pain<br/>multimodal, multidisciplinary care\"]\n    B -->|Yes| D{\"What is driving it?\"}\n    D -->|\"Out-of-proportion response to a stressor<br/>within 3 months\"| E[\"Adjustment disorder\"]\n    D -->|\"Low mood, anxiety, trauma, substance use\"| F[\"Comorbid major depression · anxiety disorder<br/>acute or post-traumatic stress · substance use disorder\"]\n    D -->|\"Excessive worry about the symptoms<br/>repeated care-seeking\"| G[\"Somatic symptom disorder\"]\n    D -->|\"Lost motor or sensory function<br/>no neurological cause\"| H[\"Conversion disorder<br/>only after everything else is ruled out\"]\n    D -->|\"Feigns illness\"| I{\"External reward?\"}\n    I -->|No| J[\"Factitious disorder\"]\n    I -->|Yes| K[\"Malingering\"]"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Comorbid mental disorders</strong></p>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Major depression</span></strong> in up to <strong>50%</strong> - a significant predictor that <strong>pain will persist</strong><ul><li>linked to more disability, negative thoughts about pain, pain intensity and life interference · less sense of control · more passive-avoidant coping</li></ul></li><li><strong>Anxiety</strong>: symptoms in 50% · an anxiety disorder (<span class=\"wl\">panic disorder</span>, <span class=\"wl\">generalized anxiety disorder</span>) in 20-30% · after a trauma or accident think <span class=\"wl\">post-traumatic stress disorder (PTSD)</span> or acute stress disorder</li><li><strong><span class=\"wl\">Substance use disorders</span></strong> are more common, including <span class=\"wl\">opioid use disorder</span> after injury</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Medically unexplained symptoms</strong> = persistent bodily complaints with no structural or pathological cause found</p>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>seen in <strong>over 60% of neurology referrals</strong> · three kinds: pain in different places · disturbed organ function · fatigue</li><li><strong>functional somatic syndromes</strong>: <span class=\"wl\">irritable bowel syndrome</span>, chronic fatigue syndrome, <span class=\"wl\">fibromyalgia</span> · more often <strong>female</strong> · overlap with depression and anxiety</li><li>the DSM-5 regrouped these as <strong>somatic symptom and related disorders</strong>, moving away from mind-body dualism and the idea that the symptoms are \"not real\"</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Adjustment disorder</span>",
+        "<span class=\"wl\">Somatic symptom disorder</span>",
+        "<span class=\"wl\">Conversion disorder</span>",
+        "<span class=\"wl\">Factitious disorder</span>",
+        "<span class=\"wl\">Malingering</span>"
+       ],
+       "rows": [
+        [
+         "<strong>Core feature</strong>",
+         "Emotional or behavioural symptoms <strong>within 3 months of an identifiable stressor</strong>",
+         "<strong>Chronic distress and worry</strong> about one or more bodily symptoms",
+         "<strong>Altered voluntary motor or sensory function</strong> (weakness, paralysis, seizures, blindness) with no neurological or medical cause found",
+         "Presents self or another (by proxy) as ill or injured; may make themselves sick",
+         "Deception"
+        ],
+        [
+         "<strong>Criteria and specifiers</strong>",
+         "Distress out of proportion to the stressor <strong>and/or</strong> impaired functioning",
+         "Prevalence 5-7% · repeated visits to family doctors, walk-ins, emergency",
+         "Acute (under 6 months) or persistent · with or without a psychological stressor",
+         "Deception <strong>without an obvious external reward</strong>",
+         "Motivated by an external reward"
+        ],
+        [
+         "<strong>Conscious?</strong>",
+         "-",
+         "-",
+         "-",
+         "<strong>Behaviour conscious, gain unconscious</strong>",
+         "<strong>Behaviour and gain both conscious</strong>"
+        ],
+        [
+         "<strong>Watch for</strong>",
+         "-",
+         "Unnecessary tests and treatment - diagnose it so it can be managed psychologically",
+         "<strong>Diagnose only after ruling out everything else</strong> - some later prove to have a disease that explains it",
+         "-",
+         "-"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Psychosocial management</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Multimodal and multidisciplinary, almost always</strong> · \"start with the patient\": <strong>realistic, measurable goals</strong> · set the expectation that pain can be well managed, not necessarily cured</li><li><strong><span class=\"wl\">Cognitive behavioural therapy (CBT)</span></strong>: links thoughts, feelings and behaviours to pain · aims to <strong>manage, not cure</strong> · few randomized trials, but they are mostly positive<ul><li>targets <strong>cognitive distortions</strong>: <strong>mental filter</strong> (noticing only the negatives) · <strong>catastrophizing</strong> (expecting the worst) · <strong>emotional reasoning</strong> (it feels true, so it must be)</li><li>other parts: patient and family education · <strong>contingency management</strong> (antecedent → behaviour → consequence that reinforces it) · relaxation training (<strong>avoid progressive muscle relaxation</strong>) · problem-solving · communication · distraction · behavioural activation · cognitive restructuring</li><li><strong>groups help</strong>: a peer with chronic pain can connect better than a clinician</li></ul></li><li><strong>Psychodynamic (insight-oriented) therapy</strong>: a secondary option for lifelong behaviour patterns</li><li><strong>Relaxation and meditation</strong>: pain → sympathetic surge → clenched muscles, higher blood pressure and heart rate → more pain · <strong>deep breathing</strong> switches on the parasympathetic side · refocusing on the breath</li><li><strong>Rehabilitation</strong><ul><li>ergonomics, \"new ways to do old things\"</li><li><strong>pacing</strong>: <strong>limit activity on good days</strong> and <strong>push a little on flare days</strong>, instead of overdoing it then spending days in bed</li><li>exercise · vocational counselling and work modifications to return to work</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/1392122e173d.jpg",
+       "alt": "CBT framework.png",
+       "w": 876,
+       "h": 800,
+       "cap": "The cognitive behavioural cycle: thoughts create feelings, feelings create behaviour, behaviour reinforces thoughts"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Secondary prevention and general tips</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Prevent loss of function</strong>, and <strong>start before lifestyle is disrupted</strong> (the upper-year notes put this at about 12 weeks)</li><li>Focus on health, behaviour and what the patient <strong>can</strong> do, not on \"medical problems\" · the patient must be an <strong>active participant</strong></li><li>Talk to the workplace, family and caregivers · keep reassessing and adjusting</li><li><strong>Tips</strong>: one physician, regular visits · goal-directed · notice direct and indirect communication · <strong>limit investigations and operations</strong> (but chronic pain patients still get acute problems) · motivational interviewing · <strong>watch your own biases</strong></li></ul>"
+      }
+     ]
     },
     {
      "id": "neuro-w12-03",
      "num": "03",
      "name": "Introduction to Neurology",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Introduction to neurology",
+     "keypoints": "<p>⭐ <strong>Localize first: upper motor neuron = high tone, brisk reflexes, Babinski positive; lower motor neuron = low tone, reduced reflexes, Babinski negative.</strong> <strong>-plegia is paralysis, -paresis is weakness.</strong> <strong>Dysarthria is articulation; aphasia is language.</strong> <strong>Middle cerebral artery stroke: face and arm worse than leg.</strong> <strong>Weak eyes and swallowing point to the neuromuscular junction; generalized proximal weakness to muscle.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Neurology is a method before it is a list of diseases:</strong> describe the problem in the right words, <strong>localize the lesion</strong>, then build the differential and the plan. The first fork is always <strong>central (upper motor neuron) or peripheral (lower motor neuron)</strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Why it matters</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>About <strong>10% of family practice visits</strong> are for a neurological symptom</li><li>Neurology turns up across specialties: seizures on the ward, strokes as a cardiovascular complication</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. The vocabulary</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Term",
+        "Means",
+        "Forms"
+       ],
+       "rows": [
+        [
+         "<strong>-plegia</strong>",
+         "<strong>Paralysis</strong>, no voluntary movement",
+         "<span class=\"wl\">Paraplegia</span> (both legs) · hemiplegia (one side) · quadriplegia (all four limbs)"
+        ],
+        [
+         "<strong>-paresis</strong>",
+         "<strong>Weakness</strong>",
+         "Paraparesis · <span class=\"wl\">hemiparesis</span> · quadriparesis"
+        ],
+        [
+         "<strong><span class=\"wl\">Dysarthria</span></strong>",
+         "Trouble <strong>articulating</strong> (slurred speech)",
+         "-"
+        ],
+        [
+         "<strong>Aphasia</strong>",
+         "Trouble with <strong>language</strong>",
+         "<span class=\"wl\">Receptive</span> (understanding) · <span class=\"wl\">expressive</span> (producing)"
+        ],
+        [
+         "<strong>Dysphagia</strong>",
+         "Trouble swallowing",
+         "Neurological or gastrointestinal cause"
+        ],
+        [
+         "<strong><span class=\"wl\">Ataxia</span></strong>",
+         "Trouble with <strong>coordination</strong>",
+         "Cerebellar (motor coordination) · vestibular (balance) · sensory (sense of position)"
+        ],
+        [
+         "<strong><span class=\"wl\">Dysmetria</span></strong>",
+         "Trouble reaching a target",
+         "Shows on finger-to-nose testing"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Level of consciousness</strong>, from normal down: conscious → disoriented (confused, slow, cannot follow instructions) → <span class=\"wl\">delirium</span> (restless, agitated, poor attention) → somnolent (drowsy) → <strong>obtunded</strong> (reduced alertness, slow to react) → <span class=\"wl\">coma</span> (no response, no corneal or gag reflex, pupils do not react to light)</li><li><strong>Dominant hemisphere</strong> = where language lives · <strong>left in right-handed people</strong> · left-handed people: left, right or both</li><li><strong><span class=\"wl\">Middle cerebral artery</span></strong> = main supply of the lateral brain · a stroke gives contralateral <strong>face and arm weaker than leg</strong>, because of where they sit on the homunculus</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/a7cb5c5ec611.jpg",
+       "alt": "motor and sensory homunculus - upper-year notes.jpg",
+       "w": 793,
+       "h": 486,
+       "cap": "Motor (precentral) and sensory (postcentral) homunculus: face and hand lateral, leg medial"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. The clinical approach</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Four steps</strong>: describe the problem → <strong>localize the lesion</strong> → differential diagnosis → plan</li><li><strong>First question: central or peripheral?</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Upper motor neuron (brain and spinal cord)",
+        "Lower motor neuron (anterior horn cell out to the muscle)"
+       ],
+       "rows": [
+        [
+         "<strong>Tone</strong>",
+         "<strong>Increased</strong> (spasticity)",
+         "Normal or <strong>reduced</strong> (flaccid)"
+        ],
+        [
+         "<strong>Reflexes</strong>",
+         "<strong>Brisk</strong> (hyperreflexia)",
+         "<strong>Reduced</strong> (hyporeflexia)"
+        ],
+        [
+         "<strong>Babinski sign</strong>",
+         "<strong>Positive</strong> (upgoing toe)",
+         "Negative"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The spinal cord ends at <strong>L1</strong>; below that are nerve roots (cauda equina), so lesions there are lower motor neuron</li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Patient with weakness\"] --> B{\"Upper or lower motor neuron signs?\"}\n    B -->|\"Upper: high tone, brisk reflexes, Babinski\"| C{\"Pattern?\"}\n    C -->|\"Half the body, face or cranial nerves\"| D[\"BRAIN\"]\n    C -->|\"All four limbs\"| E[\"CERVICAL SPINAL CORD\"]\n    C -->|\"Both legs\"| F[\"THORACIC SPINAL CORD<br/>or lumbar roots\"]\n    B -->|\"Lower: low tone, reduced reflexes\"| G{\"Pattern?\"}\n    G -->|\"One myotome\"| H[\"NERVE ROOT\"]\n    G -->|\"One limb, several nerves\"| I[\"PLEXUS\"]\n    G -->|\"One nerve, or several separate nerves\"| J[\"PERIPHERAL NERVE(S)\"]\n    G -->|\"Eyes and swallowing\"| K[\"NEUROMUSCULAR JUNCTION\"]\n    G -->|\"Generalized, proximal\"| L[\"MUSCLE\"]"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. How the nervous system is built</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Myelin</strong><ul><li>peripheral nerves: each <strong>Schwann cell</strong> myelinates <strong>one segment</strong> of one axon; segments are separated by <strong>nodes of Ranvier</strong>, which make conduction fast · a Schwann cell can also ensheath many unmyelinated axons</li><li>central nervous system: one <strong>oligodendrocyte</strong> myelinates <strong>many segments</strong></li></ul></li><li><strong>Spinal cord</strong>: cervical, thoracic and lumbosacral segments · <strong>white matter outside, grey inside</strong> · sensory tracts ascend, motor tracts descend</li><li><strong>Planes</strong>: coronal · axial · sagittal</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/f252e7eb42fc.jpg",
+       "alt": "neuroanatomical planes.png",
+       "w": 900,
+       "h": 515,
+       "cap": "Coronal, axial and sagittal planes of the brain"
+      }
+     ]
     },
     {
      "id": "neuro-w12-04",
      "num": "04",
      "name": "Introduction to Neuroanatomy",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Introduction to neuroanatomy",
+     "keypoints": "<p>⭐ <strong>Brainstem nuclei go 2-4-4: midbrain III-IV, pons V-VIII, medulla IX-XII (I and II come off the forebrain).</strong> <strong>CT for a quick look for blood; FLAIR MRI for white matter.</strong> <strong>Basal ganglia and cerebellum damage give movement problems without weakness.</strong> <strong>Spinothalamic = pain and temperature; dorsal columns = vibration and position.</strong> <strong>Middle meningeal artery rupture → epidural hematoma.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>A map to hang the rest of neuro on:</strong> where things are (forebrain, midbrain, hindbrain; the lobes; the brainstem and its cranial nerve nuclei; the tracts, ventricles and vessels) and what each one does - so that a symptom can be traced back to a place.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Basic organization</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Grey matter</strong> = neuron cell bodies · <strong>white matter</strong> = myelinated axon tracts</li><li><strong>Central nervous system</strong> = brain + spinal cord · <strong>peripheral nervous system</strong> = spinal and <span class=\"wl\">cranial nerves</span>, ganglia, sympathetic and parasympathetic nerves</li><li><strong>Function</strong>: sensory afferents (toward the central nervous system) → integration → motor efferents (away from it)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Orientation and imaging</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Rostral-caudal and dorsal-ventral switch direction</strong> between brain and spinal cord, because the developing neural tube bends</li><li>Planes: <strong>coronal</strong> (front-to-back slices) · <strong>axial</strong> (parallel to the horizon) · <strong>sagittal</strong> (left-right slices)</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Method",
+        "Best for"
+       ],
+       "rows": [
+        [
+         "<strong>X-ray</strong>",
+         "Bone (skull) - <strong>nervous tissue is invisible</strong>"
+        ],
+        [
+         "<strong>CT</strong>",
+         "<strong>Quick look for bleeding</strong> · blood vessels"
+        ],
+        [
+         "<strong>MRI T1</strong>",
+         "Telling brain tissue from fluid and other tissue"
+        ],
+        [
+         "<strong>MRI T2</strong>",
+         "Brain tissue detail"
+        ],
+        [
+         "<strong>MRI FLAIR</strong>",
+         "<strong>No cerebrospinal fluid (CSF) signal</strong> → <strong>white matter abnormalities</strong> stand out"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Divisions of the brain</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Division",
+        "Parts",
+        "Main jobs"
+       ],
+       "rows": [
+        [
+         "<strong>Forebrain</strong> (prosencephalon)",
+         "<strong>Telencephalon</strong>: cerebral cortex + deep structures (basal ganglia) · <strong>diencephalon</strong>: thalamus, hypothalamus, subthalamus",
+         "Sensory, motor, endocrine, <strong>cognition</strong>"
+        ],
+        [
+         "<strong>Midbrain</strong> (mesencephalon)",
+         "Cerebral peduncles · superior and inferior colliculi",
+         "Motor · <strong>visual and auditory reflexes</strong>"
+        ],
+        [
+         "<strong>Hindbrain</strong> (rhombencephalon)",
+         "Pons + cerebellum · medulla",
+         "<strong>Autonomic</strong> functions (breathing, sleep)"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/7a80505081b2.jpg",
+       "alt": "embryologic divisions of the brain (forebrain, midbrain, hindbrain).jpg",
+       "w": 900,
+       "h": 578,
+       "cap": "Forebrain (telencephalon, diencephalon), midbrain and hindbrain on a sagittal brain"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Cerebral cortex and lobes</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Gyri</strong> = ridges · <strong>sulci</strong> = shallow grooves · <strong>fissures</strong> = deep grooves that divide lobes · the brain is smooth until about 6 months, then folds to fit the skull</li><li><strong>Central sulcus</strong>: frontal from parietal · <strong>lateral sulcus</strong>: temporal from the rest</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Lobe",
+        "Key functions (area)"
+       ],
+       "rows": [
+        [
+         "<strong>Frontal</strong>",
+         "<strong>Voluntary movement</strong> (<span class=\"wl\">primary motor cortex</span>, precentral gyrus) · planning movement (premotor) · eye movements (<span class=\"wl\">frontal eye field</span>) · <strong>speech production</strong> (<span class=\"wl\">Broca's area</span>) · <strong>executive function</strong> (prefrontal)"
+        ],
+        [
+         "<strong>Parietal</strong>",
+         "<strong>Sensation</strong> (<span class=\"wl\">primary somatosensory cortex</span>, postcentral gyrus) · spatial awareness · understanding speech (<span class=\"wl\">Wernicke's area</span> - sources differ: the note puts it in the parietal lobe, the upper-year notes in the posterior temporal lobe - check the slides)"
+        ],
+        [
+         "<strong>Temporal</strong>",
+         "<strong>Hearing</strong> (primary auditory cortex) · smell · recognizing faces, words, objects (fusiform gyrus) · memory"
+        ],
+        [
+         "<strong>Occipital</strong>",
+         "<strong>Vision</strong> (primary visual cortex)"
+        ],
+        [
+         "<strong>Insula</strong>",
+         "Visceral sensation · <strong>taste</strong>"
+        ],
+        [
+         "<strong>Limbic</strong>",
+         "Memory (parahippocampal gyrus) · emotion (cingulate gyrus)"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Deep structures</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Basal ganglia</span></strong>: deep forebrain nuclei that turn cortical activity into one motor output - <strong>select the wanted movement and suppress the others</strong><ul><li>damage: <strong>no weakness</strong>, but trouble starting movement, stiffness, slowness (<strong>parkinsonism</strong>) or extra movements · contributes to <strong>Tourette syndrome</strong></li></ul></li><li><strong><span class=\"wl\">Cerebellum</span></strong>: smooth, fine coordination - damage gives <strong>incoordination without weakness</strong></li><li><strong><span class=\"wl\">Thalamus</span></strong> (diencephalon): the <strong>relay</strong> for sensory and motor information · links to the limbic system (memory, emotion), basal ganglia (movement) and primary sensory cortices</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Brainstem and cranial nerve nuclei</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Segment",
+        "Cranial nerve nuclei",
+        "Front",
+        "Back"
+       ],
+       "rows": [
+        [
+         "<strong>Midbrain</strong>",
+         "<strong>III, IV</strong>",
+         "Cerebral peduncles",
+         "Superior and inferior colliculi"
+        ],
+        [
+         "<strong>Pons</strong>",
+         "<strong>V, VI, VII, VIII</strong>",
+         "Bulge of the pons",
+         "Superior, middle and inferior peduncles (the cerebellum grows out of the pons)"
+        ],
+        [
+         "<strong>Medulla</strong>",
+         "<strong>IX, X, XI, XII</strong>",
+         "Pyramids · olives",
+         "Fasciculus gracilis and cuneatus · obex"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>CN I and II</strong> come straight off the forebrain, not the brainstem</li><li>Medulla = <strong>vital autonomic control</strong> (breathing, heart rate, blood pressure, digestion)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/697625ed0e56.jpg",
+       "alt": "brainstem cranial nerve nuclei.png",
+       "w": 900,
+       "h": 697,
+       "cap": "Cranial nerve nuclei by level: midbrain 2, pons 4, medulla 4"
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Spinal cord tracts</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Tract",
+        "Carries",
+        "Direction"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Dorsal columns</span></strong>",
+         "Fine touch, vibration, position · gracilis = leg, cuneatus = arm",
+         "Up"
+        ],
+        [
+         "<strong>Spinocerebellar</strong>",
+         "<strong>Proprioception to the cerebellum</strong>",
+         "Up"
+        ],
+        [
+         "<strong><span class=\"wl\">Spinothalamic</span></strong>",
+         "<strong>Pain, temperature</strong> and touch to the thalamus",
+         "Up"
+        ],
+        [
+         "<strong><span class=\"wl\">Lateral corticospinal</span></strong>",
+         "Motor cortex → limbs",
+         "Down"
+        ],
+        [
+         "<strong>Corticobulbar</strong>",
+         "Motor cortex → brainstem (muscles of facial expression)",
+         "Down"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>8. Ventricles and vessels</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Ventricles</strong>: two C-shaped <strong>lateral</strong> (anterior, posterior, inferior horns) → <strong>third</strong> (between the thalami) → <strong>cerebral aqueduct</strong> → <strong>fourth</strong> (between cerebellum and brainstem) · CSF is made by the <strong>choroid plexus</strong></li><li><strong>Blood-brain barrier</strong> = tight junctions + basement membrane + astrocyte foot processes + pericytes · <strong>lipid-soluble drugs diffuse across; polar ones need active transport</strong></li><li><strong><span class=\"wl\">Middle meningeal artery</span></strong> (external carotid branch) supplies the dura · <strong>rupture → <span class=\"wl\">epidural hematoma</span></strong></li><li><strong><span class=\"wl\">Circle of Willis</span></strong>: anterior cerebral · anterior communicating · internal carotid · posterior communicating · posterior cerebral (sources differ: the note includes the middle cerebral artery; the upper-year notes and the cranial cavity note say it is not part of the circle - check the slides)</li><li><strong><span class=\"wl\">Dural venous sinuses</span></strong> (superior and inferior sagittal, straight, transverse, sigmoid) take cerebral veins and CSF (via arachnoid granulations) → <strong>internal jugular vein</strong></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/2929d3e75c7c.jpg",
+       "alt": "ventricles of the brain.png",
+       "w": 900,
+       "h": 815,
+       "cap": "Lateral, third and fourth ventricles joined by the cerebral aqueduct"
+      }
+     ]
     },
     {
      "id": "neuro-w12-05",
      "num": "05",
      "name": "Cranial Nerve Anatomy and Function",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Cranial nerve anatomy and function",
+     "keypoints": "<p>⭐ <strong>Forehead spared = upper motor neuron (central) facial palsy; forehead involved and eye will not close = lower motor neuron (Bell's palsy).</strong> <strong>Double vision is never from a lesion above the brainstem.</strong> <strong>Third nerve compression: think posterior communicating artery aneurysm.</strong> <strong>Corneal reflex = V1 in, VII out; gag = IX in, X out.</strong> <strong>Tongue deviates toward the lesion; wasting and fasciculations say lower motor neuron.</strong> <strong>Do not test smell with a noxious stimulus.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Twelve nerves, one question each time: what does this nerve carry, how do I test it, and what does a lesion look like?</strong> The cranial nerves and their nuclei are peripheral, so a nerve lesion gives <strong>lower motor neuron</strong> signs; the trick is telling it from an upper motor neuron (cortical or brainstem) cause.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The ground rules</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><span class=\"wl\">Cranial nerves</span> = <strong>12 pairs</strong> of nerve bundles that leave the cranial cavity · their nuclei and nerves belong to the peripheral nervous system</li><li>Fibres are <strong>sensory, motor, parasympathetic, or a mix</strong></li><li><strong>No sympathetic fibres start in a cranial nerve</strong>: sympathetics leave the thoracolumbar cord, climb the sympathetic trunk, synapse in the <strong>cervical ganglia</strong>, then <strong>hitch a ride</strong> on other nerves to the head</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/56c3e4d55533.jpg",
+       "alt": "cranial nerves.png",
+       "w": 900,
+       "h": 548,
+       "cap": "The 12 cranial nerves leaving the base of the brain, with their targets"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. The twelve nerves</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Nerve (leaves through)",
+        "Type",
+        "Function",
+        "Exam",
+        "Lesion and causes"
+       ],
+       "rows": [
+        [
+         "<strong>I</strong> <span class=\"wl\">Olfactory</span> (cribriform plate)",
+         "Sensory",
+         "<strong>Smell</strong>",
+         "Familiar smell (coffee, cloves), <strong>one nostril at a time</strong> · <strong>not a noxious smell</strong> (it triggers the trigeminal nerve)",
+         "<span class=\"wl\">Reduced smell</span> · trauma · <span class=\"wl\">Kallmann syndrome</span> · inferior frontal lobe tumour · after a virus (COVID-19)"
+        ],
+        [
+         "<strong>II</strong> <span class=\"wl\">Optic</span> (optic canal)",
+         "Sensory",
+         "<strong>Vision</strong>",
+         "Acuity · visual fields · pupillary light reflex · fundoscopy for <span class=\"wl\">papilledema</span> · <span class=\"wl\">swinging flashlight test</span> for a <span class=\"wl\">relative afferent pupillary defect</span>",
+         "Reduced vision, trouble focusing · <span class=\"wl\">optic neuritis</span> · ischemic optic neuropathy · tumour compression"
+        ],
+        [
+         "<strong>III</strong> <span class=\"wl\">Oculomotor</span> (superior orbital fissure)",
+         "Motor + <strong>parasympathetic</strong>",
+         "Most eye muscles (sources differ: the note lists superior, inferior and medial rectus; the upper-year notes add levator palpebrae and a fourth extraocular muscle - check the slides) · <strong>pupil constriction</strong> · lens accommodation",
+         "Eye movements · pupillary light reflex · look for ptosis",
+         "<span class=\"wl\">Double vision</span> · <span class=\"wl\">ptosis</span> · <strong>pupil involvement</strong> · diabetic palsy · orbital inflammation · cavernous sinus infection · <strong>posterior communicating artery aneurysm</strong>"
+        ],
+        [
+         "<strong>IV</strong> <span class=\"wl\">Trochlear</span> (superior orbital fissure)",
+         "Motor",
+         "<strong>Superior oblique</strong> only",
+         "Looking down and in",
+         "Double vision · <strong>head tilt</strong> to compensate · <strong>thin, so injured by trauma</strong>"
+        ],
+        [
+         "<strong>V</strong> <span class=\"wl\">Trigeminal</span> (V1 superior orbital fissure · V2 foramen rotundum · V3 foramen ovale)",
+         "Sensory (all) + motor (V3)",
+         "<strong>Facial sensation</strong>: V1 forehead and <strong>cornea</strong> (also carries sympathetics to the pupil dilator) · V2 mid face · V3 lower face + <strong>muscles of chewing</strong>",
+         "Light touch in each division · <strong>corneal reflex (sensory limb, V1)</strong> · clench the jaw (V3)",
+         "Numb face or one division ± neuropathic pain · nerve: compression, inflammation, <span class=\"wl\">trigeminal neuralgia</span> · central: brainstem stroke or <span class=\"wl\">multiple sclerosis</span>, thalamus or cortex"
+        ],
+        [
+         "<strong>VI</strong> <span class=\"wl\">Abducens</span> (superior orbital fissure)",
+         "Motor",
+         "<strong>Lateral rectus</strong> only (eye out)",
+         "Looking sideways",
+         "Double vision · midbrain or pontine stroke"
+        ],
+        [
+         "<strong>VII</strong> <span class=\"wl\">Facial</span> (internal acoustic meatus → stylomastoid foramen)",
+         "Motor + sensory + parasympathetic",
+         "<strong>Facial expression</strong> · <strong>taste, front two-thirds of tongue</strong> · tears, saliva, nasal secretions",
+         "Facial movements against resistance · <strong>corneal reflex (motor limb)</strong> · taste",
+         "<strong>One-sided facial weakness</strong> - see section 3 · <span class=\"wl\">Bell's palsy</span> · parotid tumour · stroke"
+        ],
+        [
+         "<strong>VIII</strong> <span class=\"wl\">Vestibulocochlear</span> (internal acoustic meatus; stays in the skull)",
+         "Sensory",
+         "<strong>Hearing and balance</strong>",
+         "Hearing · <span class=\"wl\">Romberg test</span> · look for <span class=\"wl\">nystagmus</span>",
+         "Hearing loss, vertigo · inner ear · the nerve (vestibular neuritis) · brainstem stroke"
+        ],
+        [
+         "<strong>IX</strong> <span class=\"wl\">Glossopharyngeal</span> (jugular foramen)",
+         "Motor + sensory + parasympathetic",
+         "Stylopharyngeus · sensation of tongue and palate · <strong>taste, back third of tongue</strong> · <strong>parotid</strong> secretion",
+         "<strong>Gag reflex (sensory limb)</strong> · say \"ah\" (uvula pulled to the normal side)",
+         "Trouble swallowing, slurred speech, dry mouth, less taste"
+        ],
+        [
+         "<strong>X</strong> <span class=\"wl\">Vagus</span> (jugular foramen)",
+         "Motor + sensory + parasympathetic",
+         "<strong>Palate and larynx</strong> (the <strong>recurrent laryngeal nerve</strong> is a branch) · sensation of pharynx and larynx · slows heart, gut",
+         "Say \"ah\": <strong>palate rises evenly</strong> · gag (motor limb) · voice",
+         "<strong>Hoarseness</strong>, trouble swallowing, slurred speech · brainstem, skull base, surgery"
+        ],
+        [
+         "<strong>XI</strong> <span class=\"wl\">Accessory</span> (up through foramen magnum, out the jugular foramen)",
+         "Motor",
+         "<strong>Trapezius, sternocleidomastoid</strong>",
+         "Turn the head each way · shrug",
+         "Wasting of both muscles · rarely tested"
+        ],
+        [
+         "<strong>XII</strong> <span class=\"wl\">Hypoglossal</span> (hypoglossal canal)",
+         "Motor",
+         "<strong>Tongue</strong>",
+         "Stick out the tongue, move side to side · look for wasting, fasciculations",
+         "Lisp, trouble moving food · <strong>tongue points to the weak side</strong> · skull base tumour, <span class=\"wl\">amyotrophic lateral sclerosis</span> · stroke"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Facial weakness: upper or lower motor neuron?</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Upper motor neuron (central)",
+        "Lower motor neuron (the nerve)"
+       ],
+       "rows": [
+        [
+         "<strong>Forehead</strong>",
+         "<strong>Spared</strong> (it gets input from both hemispheres)",
+         "<strong>Affected</strong>"
+        ],
+        [
+         "<strong>Eye closure</strong>",
+         "Closes, weakly",
+         "<strong>Cannot close</strong>; the eye may roll up on trying"
+        ],
+        [
+         "<strong>Causes</strong>",
+         "Cortical or subcortical stroke · brainstem",
+         "<strong><span class=\"wl\">Bell's palsy</span></strong> (sudden, with taste loss) · parotid tumour"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/56ff1597daf4.jpg",
+       "alt": "facial nerve palsy (UMN vs. LMN).png",
+       "w": 900,
+       "h": 622,
+       "cap": "Central facial palsy spares the forehead; peripheral facial palsy does not"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Patterns across the nerves</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>III, IV, VI - double vision</strong>: always means a <strong>brainstem, cranial nerve, eye muscle or neuromuscular junction</strong> problem - <strong>never a lesion above the brainstem</strong> · test the \"H\", the pupils and the eyelid</li><li><strong>V - numbness</strong>: whole face vs one division tells you whether the lesion is before or after the trigeminal nucleus</li><li><strong>IX and X - bulbar symptoms</strong> (slurred speech, hoarseness, trouble swallowing): lower motor neuron = brainstem or skull base · upper motor neuron = cortical or subcortical control of speech and swallowing</li><li><strong>XII</strong>: the tongue deviates to the weak side <strong>in both</strong> upper and lower motor neuron lesions · <strong>wasting and fasciculations mean lower motor neuron</strong></li></ul>"
+      }
+     ]
     },
     {
      "id": "neuro-w12-06",
      "num": "06",
      "name": "Facial Anatomy",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Facial anatomy",
+     "keypoints": "<p>⭐ <strong>The facial nerve (VII) moves the face; the trigeminal nerve (V) feels it, and V3 also works the chewing muscles.</strong> <strong>The angle of the jaw is not trigeminal - it is the great auricular nerve (C2-C3).</strong> <strong>Supraorbital, infraorbital and mental foramina = V1, V2, V3.</strong> <strong>Orbicularis oculi closes the eye; frontalis raises the brow.</strong> <strong>The facial nerve branches inside the parotid gland.</strong> <strong>Masseter protrudes the jaw; temporalis retracts it.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The face has two nerves that are easy to mix up:</strong> the <strong>facial nerve (CN VII) moves the face</strong>, the <strong>trigeminal nerve (CN V) feels it and chews</strong>. Learn the structures by layer - bone and foramina, muscles, vessels, nerves - and each finding traces back to one of them.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Bones and foramina</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Facial skeleton (viscerocranium)</strong>: jaw, nose and part of the orbit<ul><li><span class=\"wl\">nasal bones</span> · <span class=\"wl\">maxilla</span> · <span class=\"wl\">zygomatic bone</span> · <span class=\"wl\">mandible</span> · the <span class=\"wl\">frontal bone</span> forms the forehead</li></ul></li><li><strong>Foramina</strong> carry the trigeminal sensory branches out to the skin:</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Foramen",
+        "Nerve through it",
+        "Division"
+       ],
+       "rows": [
+        [
+         "<strong>Supraorbital</strong>",
+         "<span class=\"wl\">Supraorbital</span> (from the frontal nerve)",
+         "<strong>V1</strong>"
+        ],
+        [
+         "<strong>Infraorbital</strong>",
+         "<span class=\"wl\">Infraorbital</span>",
+         "<strong>V2</strong>"
+        ],
+        [
+         "<strong>Mental</strong>",
+         "<span class=\"wl\">Mental</span>",
+         "<strong>V3</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Muscles</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Muscles of facial expression</span></strong> start as one sheet over face, scalp and neck, then form <strong>sphincters and dilators</strong> of the eyes, nose and mouth · they <strong>insert into the skin</strong> · all supplied by <strong>CN VII</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Muscle",
+        "Action",
+        "Facial nerve branch"
+       ],
+       "rows": [
+        [
+         "<strong>Frontalis</strong>",
+         "<strong>Raises the eyebrows</strong>",
+         "Temporal"
+        ],
+        [
+         "Occipitalis",
+         "Moves the scalp",
+         "-"
+        ],
+        [
+         "<strong>Orbicularis oculi</strong>",
+         "<strong>Closes the eye</strong>",
+         "Temporal (upper part) · zygomatic (lower part)"
+        ],
+        [
+         "Zygomaticus major",
+         "Pulls the mouth corners up (smile)",
+         "Zygomatic"
+        ],
+        [
+         "<strong>Buccinator</strong>",
+         "Blows out the cheeks · <strong>keeps food between the teeth</strong> when chewing",
+         "Buccal"
+        ],
+        [
+         "<strong>Orbicularis oris</strong>",
+         "<strong>Closes the mouth</strong>",
+         "Buccal · marginal mandibular (lower part)"
+        ],
+        [
+         "Platysma",
+         "Helps depress the mandible",
+         "Cervical"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Muscles of chewing</span></strong> act on the temporomandibular joint · supplied by <strong>CN V3</strong><ul><li><strong>masseter</strong>: closes the jaw strongly, <strong>protrudes</strong> it · <strong>temporalis</strong>: closes the jaw strongly, <strong>retracts</strong> it</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/79583039551d.jpg",
+       "alt": "muscles of facial expression.png",
+       "w": 900,
+       "h": 559,
+       "cap": "Muscles of facial expression: frontalis, orbicularis oculi and oris, zygomaticus major, buccinator, occipitalis, platysma"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Parotid gland</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>One of the three paired salivary glands · <strong>superficial to the masseter, in front of the ear</strong> · wrapped in the investing fascia of the neck</li><li>Its duct crosses the masseter, then <strong>pierces the buccinator</strong> to open into the mouth</li><li><strong>The facial nerve runs through it and splits into its five branches there</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Vessels</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Arteries</strong> come mainly from the <strong>external carotid artery</strong><ul><li><span class=\"wl\">Facial artery</span>: runs diagonally from near the angle of the mandible to the inner corner of the eye</li><li><strong>superficial temporal artery</strong>: the end of the external carotid, up the side of the scalp</li></ul></li><li><strong>Veins</strong> vary a lot between people<ul><li><strong>maxillary vein</strong> (from the pterygoid plexus) + <strong>superficial temporal vein</strong> → <strong><span class=\"wl\">retromandibular vein</span></strong>, in the parotid</li><li>posterior division + posterior auricular vein → <strong>external jugular vein</strong></li><li>anterior division + facial vein → common facial vein → <strong>internal jugular vein</strong></li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Nerves</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Facial nerve (CN VII) - motor</strong>: enters the parotid and divides into five branches, top to bottom: <strong>temporal · zygomatic · buccal · marginal mandibular · cervical</strong> (see the muscle table)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/6695e0156d43.jpg",
+       "alt": "branches of the facial nerve.png",
+       "w": 900,
+       "h": 481,
+       "cap": "The five branches of the facial nerve fanning out from the parotid gland"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Trigeminal nerve (CN V) - most of the facial sensation</strong>, and V3 is the motor supply to the chewing muscles</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Division",
+        "Skin it supplies",
+        "Named branch"
+       ],
+       "rows": [
+        [
+         "<strong>V1 ophthalmic</strong>",
+         "Forehead · upper eyelid · most of the nose",
+         "Frontal → supraorbital nerve"
+        ],
+        [
+         "<strong>V2 maxillary</strong>",
+         "Mid face · lower eyelid · upper lip · beside the orbit",
+         "Infraorbital nerve"
+        ],
+        [
+         "<strong>V3 mandibular</strong>",
+         "Skin over the mandible · in front of the ear · side of the scalp",
+         "Mental nerve · <strong>auriculotemporal nerve</strong> (runs with the superficial temporal vessels; ear, scalp, temporomandibular joint)"
+        ],
+        [
+         "<strong><span class=\"wl\">Great auricular</span></strong> (not trigeminal)",
+         "<strong>Skin over the angle of the mandible</strong>",
+         "From the cervical plexus, ventral rami of <strong>C2 and C3</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/c8830f0dd59c.jpg",
+       "alt": "sensory innervation of the face.png",
+       "w": 768,
+       "h": 626,
+       "cap": "Sensory supply of the face: frontal, infraorbital, mental and auriculotemporal nerves, and the great auricular nerve over the angle of the jaw"
+      }
+     ]
     },
     {
      "id": "neuro-w12-07",
      "num": "07",
      "name": "Anatomy of the Cranial Cavity",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Anatomy of the cranial cavity",
+     "keypoints": "<p>⭐ <strong>Epidural = middle meningeal artery under the pterion, lucid interval, lens-shaped; subdural = torn bridging veins, elderly, slow, crescent.</strong> <strong>Subarachnoid hemorrhage = ruptured aneurysm, thunderclap headache, stiff neck.</strong> <strong>Uncal herniation: falling consciousness + same-side blown pupil.</strong> <strong>Superior orbital fissure carries III, IV, V1, VI; rotundum V2; ovale V3; spinosum the middle meningeal artery; jugular foramen IX, X, XI.</strong> <strong>Cavernous sinus: III, IV, V1, V2 in the wall; CN VI and the internal carotid inside.</strong> <strong>The middle cerebral artery is not part of the circle of Willis.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The skull is a closed box, so anatomy predicts the emergency:</strong> which bone breaks over which artery, which foramen carries which nerve, which layer of meninges a bleed sits in, and how cerebrospinal fluid (CSF) flows - each tells you what the patient will show.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Bones, sutures and weak spots</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Neurocranium</strong>: <span class=\"wl\">frontal</span> · 2 parietal · occipital · 2 temporal · sphenoid · ethmoid, locked together by immovable <strong>sutures</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Suture",
+        "Joins",
+        "Landmark"
+       ],
+       "rows": [
+        [
+         "<strong>Coronal</strong>",
+         "Frontal + parietals",
+         "Meets sagittal at <strong>bregma</strong> (anterior fontanelle)"
+        ],
+        [
+         "<strong>Sagittal</strong>",
+         "The two parietals",
+         "-"
+        ],
+        [
+         "<strong>Lambdoid</strong>",
+         "Parietals + occipital",
+         "Meets sagittal at <strong>lambda</strong> (posterior fontanelle)"
+        ],
+        [
+         "<strong>Squamous</strong>",
+         "Temporal + parietal",
+         "-"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Fontanelles</strong>: soft gaps in the infant skull · allow moulding at birth and brain growth · usually close by 8-12 months · feel them to judge hydration and intracranial pressure</li><li><strong><span class=\"wl\">Craniosynostosis</span></strong>: sutures close early → the skull grows parallel to the fused suture → abnormal head shape (early sagittal fusion = scaphocephaly) · may raise intracranial pressure, delay development, cause seizures or blindness if not corrected</li><li><strong><span class=\"wl\">Pterion</span></strong>: where frontal, parietal, temporal and sphenoid meet · the <strong>thinnest spot</strong>, lying over the <strong><span class=\"wl\">middle meningeal artery</span></strong> → fracture here → <strong><span class=\"wl\">epidural hematoma</span></strong></li><li><strong>Sphenoid</strong>: butterfly-shaped, lesser and greater wings · holds the <strong>sella turcica</strong> (pituitary) and sphenoid sinus · <strong>ethmoid</strong>: crista galli (attaches the meninges), cribriform plate, perpendicular plate (nasal septum), ethmoid sinuses · <strong>petrous temporal</strong>: thick, holds the vestibular apparatus</li><li><strong>Skull fractures</strong>: the <strong>inner table is thinner</strong> and can break with the outer intact · linear (most common) · depressed (bone pushed onto brain) · comminuted (many pieces) · contrecoup (opposite the blow)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Cranial fossae and foramina</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Fossa (holds)",
+        "Opening",
+        "Transmits"
+       ],
+       "rows": [
+        [
+         "<strong>Anterior</strong> (frontal lobes)",
+         "<strong>Cribriform plate</strong>",
+         "<strong>CN I</strong> (olfactory)"
+        ],
+        [
+         "<strong>Middle</strong> (pituitary, temporal lobes)",
+         "<strong>Optic canal</strong>",
+         "<strong>CN II</strong> + ophthalmic artery"
+        ],
+        [
+         "",
+         "<strong>Superior orbital fissure</strong>",
+         "<strong>CN III, IV, V1, VI</strong> + ophthalmic veins"
+        ],
+        [
+         "",
+         "<strong>Foramen rotundum</strong>",
+         "<strong>CN V2</strong>"
+        ],
+        [
+         "",
+         "<strong><span class=\"wl\">Foramen ovale</span></strong>",
+         "<strong>CN V3</strong> · accessory meningeal artery · lesser petrosal nerve"
+        ],
+        [
+         "",
+         "<strong>Foramen spinosum</strong>",
+         "<strong>Middle meningeal artery</strong> and vein"
+        ],
+        [
+         "",
+         "Carotid canal",
+         "<strong>Internal carotid artery</strong>"
+        ],
+        [
+         "<strong>Posterior</strong> (cerebellum, pons, medulla)",
+         "<strong><span class=\"wl\">Internal acoustic meatus</span></strong>",
+         "<strong>CN VII, VIII</strong>"
+        ],
+        [
+         "",
+         "<strong><span class=\"wl\">Jugular foramen</span></strong>",
+         "<strong>CN IX, X, XI</strong> · sigmoid sinus → internal jugular vein"
+        ],
+        [
+         "",
+         "<strong>Hypoglossal canal</strong>",
+         "<strong>CN XII</strong>"
+        ],
+        [
+         "",
+         "<strong>Foramen magnum</strong>",
+         "Brainstem/spinal cord · <strong>vertebral arteries</strong> · CN XI (on its way up)"
+        ],
+        [
+         "Outside the skull base",
+         "Stylomastoid foramen",
+         "CN VII onto the face"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/19c27a150375.jpg",
+       "alt": "cranial fossae.png",
+       "w": 900,
+       "h": 866,
+       "cap": "Anterior, middle and posterior cranial fossae seen from above"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Arterial supply</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Internal carotid</span></strong> enters through the <strong>carotid canal</strong> → runs through the cavernous sinus → ends as the <strong>anterior and middle cerebral arteries</strong></li><li><strong><span class=\"wl\">Vertebral arteries</span></strong> (from the subclavian) climb through the cervical transverse foramina → <strong>foramen magnum</strong> → join as the <strong>basilar artery</strong> → <strong>posterior cerebral arteries</strong></li><li><strong><span class=\"wl\">Circle of Willis</span></strong> = anterior communicating · anterior cerebral · internal carotid · posterior communicating · posterior cerebral - <strong>the middle cerebral artery is not part of it</strong> · it lets the carotid and vertebral systems back each other up</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Artery",
+        "Supplies"
+       ],
+       "rows": [
+        [
+         "<strong>Anterior cerebral</strong>",
+         "<strong>Medial</strong> frontal and parietal lobes · olfactory bulb and tract · corpus callosum"
+        ],
+        [
+         "<strong>Middle cerebral</strong> (end of the internal carotid)",
+         "<strong>Lateral</strong> frontal, parietal and temporal lobes"
+        ],
+        [
+         "<strong>Posterior cerebral</strong> (end of the basilar)",
+         "Medial and inferior <strong>temporal and occipital</strong> lobes"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>CN III runs between the superior cerebellar and posterior cerebral arteries - an <strong>aneurysm of either can compress it</strong></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/74ee2141bee7.jpg",
+       "alt": "circle of Willis - upper-year notes.jpg",
+       "w": 704,
+       "h": 457,
+       "cap": "The circle of Willis and the vertebrobasilar system from below"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Meninges, spaces and bleeds</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Dura mater</strong>: tough, two layers · <strong>periosteal</strong> (stuck to bone, stops at the foramen magnum, so epidural anesthesia cannot rise into the skull) · <strong>meningeal</strong> (continues as the spinal dura and folds inward)<ul><li><strong>folds</strong>: falx cerebri (between hemispheres) · <strong>tentorium cerebelli</strong> (cerebrum above, cerebellum below) · falx cerebelli · diaphragma sellae (roof over the pituitary)</li><li><strong>sensory supply: CN V above the tentorium, C2-C3 below</strong> · dural pain is <strong>referred as headache</strong></li></ul></li><li><strong>Arachnoid</strong>: thin, avascular · <strong>arachnoid granulations</strong> return CSF to the venous sinuses · <strong>pia</strong>: clings to the brain</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Epidural",
+        "Subdural",
+        "Subarachnoid"
+       ],
+       "rows": [
+        [
+         "<strong>Space</strong>",
+         "Skull and periosteal dura - a potential space (sources differ: the note also says between the two dural layers - check the slides)",
+         "Dura and arachnoid - potential space",
+         "Arachnoid and pia - <strong>a real space with CSF</strong>"
+        ],
+        [
+         "<strong>Vessel</strong>",
+         "<strong>Middle meningeal artery</strong> (pterion fracture)",
+         "<strong>Bridging (superior cerebral) veins</strong> torn by acceleration-deceleration",
+         "<strong>Ruptured aneurysm</strong> of the circle of Willis"
+        ],
+        [
+         "<strong>Course</strong>",
+         "Arterial, fast · brief loss of consciousness → <strong>lucid interval</strong> → drowsiness, coma",
+         "Venous, slow · <strong>elderly</strong> (brain shrinkage) · may appear weeks to months later · vague: memory loss, confusion",
+         "<strong>\"Worst headache of my life\"</strong> (thunderclap) · stiff neck · reduced consciousness"
+        ],
+        [
+         "<strong>CT shape</strong>",
+         "<strong>Lens-shaped (convex)</strong>",
+         "<strong>Crescent (concave)</strong>",
+         "Blood in the CSF"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/304abe208c3c.jpg",
+       "alt": "epidural vs subdural hematoma CT - upper-year notes.jpg",
+       "w": 726,
+       "h": 420,
+       "cap": "Axial CT: lens-shaped epidural hematoma and crescent subdural hematoma"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Herniation</strong>: a supratentorial mass (most adult masses; children's are mostly infratentorial) pushes the <strong>uncus through the tentorial notch</strong><ul><li><strong>uncal herniation triad</strong>: <strong>reduced consciousness</strong> · <strong>same-side fixed dilated pupil</strong> (CN III) · irregular breathing → respiratory arrest · if unrelieved, tonsils herniate through the foramen magnum → death</li></ul></li><li><strong><span class=\"wl\">Meningitis</span></strong>: headache, fever, drowsiness → sepsis, coma, death · <strong>Kernig</strong> (straightening the leg hurts) · <strong>Brudzinski</strong> (lifting the head lifts the legs) · neck stiffness · diagnose by lumbar puncture</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Venous sinuses</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Lie <strong>between the two dural layers</strong> and drain to the <strong>internal jugular vein</strong></li><li>Flow: superior sagittal + straight (from inferior sagittal and great cerebral vein) + occipital → <strong>confluence</strong> → transverse → sigmoid → <strong>jugular foramen</strong></li><li><strong><span class=\"wl\">Cavernous sinus</span></strong> (either side of the sella): <strong>CN III, IV, V1, V2 in the wall</strong> · <strong>internal carotid and CN VI inside</strong><ul><li>face veins connect to it through the ophthalmic veins → infection of the <strong>\"danger area\" (forehead, eyes, nose, lips)</strong> can spread in</li><li><strong><span class=\"wl\">Cavernous sinus syndrome</span></strong>: orbital or facial pain · orbital swelling, chemosis · fever · <strong>oculomotor and trigeminal palsies</strong> · causes: thrombosis (most common), carotid aneurysm or fistula, meningioma, pituitary tumour</li></ul></li><li><strong>Emissary veins</strong> have no valves → scalp infection can reach the sinuses</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Ventricles and CSF</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>CSF is made by the <strong>choroid plexus</strong> → <strong>lateral ventricles</strong> → interventricular foramen → <strong>third ventricle</strong> (between the thalami) → <strong>cerebral aqueduct</strong> → <strong>fourth ventricle</strong> → lateral and median apertures → <strong>subarachnoid space</strong> → <strong>arachnoid granulations</strong> → venous sinuses</li><li>Hydrocephalus is a learning objective but neither source describes it - check the slides</li></ul>"
+      }
+     ]
     },
     {
      "id": "neuro-w12-08",
      "num": "08",
      "name": "Neuroanatomy of the Cortex",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Neuroanatomy of the cortex",
+     "keypoints": "<p>⭐ <strong>Broca's aphasia: halting speech, intact comprehension, aware; Wernicke's aphasia: fluent nonsense, poor comprehension, unaware.</strong> <strong>Motor cortex is precentral, sensory postcentral, and both serve the opposite side.</strong> <strong>A frontal eye field lesion turns the eyes toward the lesion.</strong> <strong>Left parietal = Gerstmann syndrome; right parietal = neglect.</strong> <strong>Bilateral hippocampal damage = anterograde amnesia; mammillary bodies = Wernicke-Korsakoff.</strong> <strong>Orbitofrontal disinhibition vs medial frontal apathy vs dorsolateral poor planning.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Function is mapped onto the cortex, so a deficit points to a place:</strong> learn each area as <strong>where it is → what it does → what a lesion looks like</strong>, then the white matter that links the areas and the limbic circuit that makes memory.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Grey matter, layers and types of cortex</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Grey matter</strong> (cell bodies) on the surface · <strong>white matter</strong> (myelinated tracts) underneath · more grey matter deep in the basal ganglia</li><li><strong>Six layers</strong>: molecular · external granular · external pyramidal · internal granular · internal pyramidal · multiform<ul><li>input arrives in <strong>layer 4</strong> (thickest in primary sensory cortex) · <strong>layers 3 and 5 send output</strong> (thickest in primary motor cortex) (sources differ: the note puts thalamic input in the molecular layer, the upper-year notes in layer 4 - check the slides)</li></ul></li><li><strong>Primary areas</strong> receive or execute with little interpretation (motor, somatosensory, visual, auditory) · <strong>association areas</strong> sit next to them and interpret (premotor, somatosensory association) · <strong>multimodal association areas</strong> combine senses with memory and plan responses (prefrontal)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Area by area</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Lobe",
+        "Area (where)",
+        "Does",
+        "Lesion"
+       ],
+       "rows": [
+        [
+         "<strong>Frontal</strong>",
+         "<span class=\"wl\">Prefrontal</span>",
+         "Working memory · attention · executive function · problem-solving",
+         "<strong>Personality change, poor judgement, impulsivity, poor planning</strong>"
+        ],
+        [
+         "",
+         "<strong><span class=\"wl\">Primary motor</span></strong> (precentral gyrus)",
+         "Voluntary movement of the <strong>opposite side</strong> via the corticospinal tract · laid out as the motor homunculus (the <strong>hand</strong> gets a large area)",
+         "Contralateral weakness"
+        ],
+        [
+         "",
+         "Premotor (in front of motor)",
+         "Plans and integrates movement",
+         "-"
+        ],
+        [
+         "",
+         "<strong><span class=\"wl\">Frontal eye field</span></strong>",
+         "Voluntary, saccadic and pursuit eye movements",
+         "<strong>Eyes deviate toward the lesion</strong>"
+        ],
+        [
+         "",
+         "<strong><span class=\"wl\">Broca's area</span></strong> (inferior frontal)",
+         "<strong>Produces language</strong>, spoken and written",
+         "<strong>Expressive aphasia</strong>"
+        ],
+        [
+         "<strong>Parietal</strong>",
+         "<strong><span class=\"wl\">Primary somatosensory</span></strong> (postcentral gyrus)",
+         "Sensation from the <strong>opposite side</strong> · sensory homunculus",
+         "Contralateral sensory loss"
+        ],
+        [
+         "",
+         "Somatosensory association",
+         "Builds an understanding of the object felt",
+         "-"
+        ],
+        [
+         "",
+         "Angular gyrus",
+         "Passes written words to Wernicke's area · numbers",
+         "-"
+        ],
+        [
+         "",
+         "Parietal lobe as a whole",
+         "Spatial sense",
+         "<strong>Left: Gerstmann syndrome</strong> - trouble writing, trouble with arithmetic, finger agnosia, right-left confusion · <strong>right: neglect</strong> of one side of body or space"
+        ],
+        [
+         "<strong>Temporal</strong>",
+         "Primary auditory (inside the lateral sulcus)",
+         "Conscious hearing",
+         "-"
+        ],
+        [
+         "",
+         "<strong><span class=\"wl\">Wernicke's area</span></strong> (posterior temporal)",
+         "<strong>Understands language</strong>",
+         "<strong>Receptive aphasia</strong> · prosopagnosia (cannot recognize faces) with other temporal damage"
+        ],
+        [
+         "<strong>Occipital</strong>",
+         "Primary visual (by the calcarine sulcus) · visual association",
+         "Vision · colour, motion, visuospatial processing",
+         "<strong>Occipital seizures start with visual hallucinations</strong> (flashing or coloured lights)"
+        ],
+        [
+         "<strong>Insula</strong>",
+         "Posterior: vestibular · anterior: <strong>gustatory</strong> · visceral sensory",
+         "Balance awareness · <strong>taste</strong> · sensation from chest and abdominal organs",
+         "-"
+        ],
+        [
+         "<strong>Medial temporal</strong>",
+         "Olfactory cortex (parahippocampal gyrus)",
+         "Conscious smell",
+         "-"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/71a34b07c15a.jpg",
+       "alt": "primary motor cortex.png",
+       "w": 900,
+       "h": 922,
+       "cap": "Primary motor cortex on the precentral gyrus"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Visual streams</strong>: <strong>dorsal = \"how\"</strong> (motion, fast, guides action, viewer-centred) · <strong>ventral = \"what\"</strong> (detail, slow, recognition, linked to long-term memory)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Aphasias</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Broca's (expressive)",
+        "Wernicke's (receptive)",
+        "Conduction"
+       ],
+       "rows": [
+        [
+         "<strong>Where</strong>",
+         "Inferior frontal",
+         "Posterior temporal",
+         "<span class=\"wl\">Arcuate fasciculus</span>, linking the two"
+        ],
+        [
+         "<strong>Speech</strong>",
+         "<strong>Slow, effortful, halting</strong>",
+         "<strong>Fluent but meaningless</strong>",
+         "-"
+        ],
+        [
+         "<strong>Comprehension</strong>",
+         "<strong>Intact</strong>",
+         "<strong>Impaired</strong>",
+         "Understands but cannot respond"
+        ],
+        [
+         "<strong>Insight</strong>",
+         "<strong>Aware and frustrated</strong> (a motor syndrome)",
+         "<strong>Unaware</strong> (a perceptual syndrome)",
+         "-"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Testing language: <strong>naming · comprehension</strong> (one-, two-, three-step motor commands) · <strong>fluency</strong> (it does not have to make sense to be fluent) · <strong>repetition</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. White matter</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Fibre type",
+        "Connects",
+        "Example"
+       ],
+       "rows": [
+        [
+         "<strong>Association</strong>",
+         "Regions in the <strong>same</strong> hemisphere (short: neighbouring gyri · long: different lobes)",
+         "Arcuate fasciculus"
+        ],
+        [
+         "<strong>Commissural</strong>",
+         "The <strong>two</strong> hemispheres",
+         "<strong>Corpus callosum</strong> (largest)"
+        ],
+        [
+         "<strong>Projection</strong>",
+         "Cortex ↔ lower centres",
+         "Corona radiata → <strong><span class=\"wl\">internal capsule</span></strong> → corticospinal tract"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/d25f31ca46a4.jpg",
+       "alt": "types of white matter tracts.png",
+       "w": 900,
+       "h": 481,
+       "cap": "Association, commissural and projection fibres on a coronal section"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Limbic system and memory</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Limbic system</strong>: emotion, motivation, learning, memory, homeostasis · damage → strange eating and drinking, sexual behaviour change, rage, personality change</li><li><strong><span class=\"wl\">Hippocampus</span></strong> (deep medial temporal lobe, under the lateral ventricle's inferior horn): <strong>forms new memories</strong>, turns short-term into long-term · place cells for spatial memory<ul><li><strong>bilateral damage → <span class=\"wl\">anterograde amnesia</span></strong> (patient H.M., after bilateral medial temporal resection for epilepsy)</li></ul></li><li><strong><span class=\"wl\">Amygdala</span></strong> (in front of the hippocampus): emotion, fear, <strong>emotional memory</strong> · overactivity → fear, anxiety, aggression (post-traumatic stress disorder)</li><li><strong>Mammillary bodies</strong> (hypothalamus): <strong><span class=\"wl\">Wernicke-Korsakoff syndrome</span></strong> from thiamine (vitamin B1) deficiency in long-standing alcohol use<ul><li>acute triad: <strong>ataxia · eye movement abnormalities · confusion</strong> · survivors: anterograde and retrograde amnesia, <strong>confabulation</strong>, poor judgement</li></ul></li><li><strong>Cingulate gyrus</strong>: above the corpus callosum</li><li><strong><span class=\"wl\">Papez circuit</span></strong>: cingulate → hippocampus → fornix → mammillary body → mammillothalamic tract → thalamus → back to cingulate<ul><li><strong><span class=\"wl\">Alzheimer's disease</span></strong> (early anterograde amnesia) and <strong>transient global amnesia</strong> both involve it</li></ul></li><li><strong>Memory types</strong>: sensory (fleeting) → short-term (small, temporary) → long-term (consolidated, usually permanent) · forgetting = decay or overwriting · Alzheimer's disease loses <strong>cholinergic</strong> neurons</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Frontal syndrome",
+        "Picture"
+       ],
+       "rows": [
+        [
+         "<strong>Medial frontal</strong>",
+         "<strong>Apathy</strong>, low motivation, flat affect, social withdrawal"
+        ],
+        [
+         "<strong>Dorsolateral prefrontal</strong>",
+         "<strong>Perseveration</strong>, poor sequencing, rigid thinking, distractible, <strong>poor planning and working memory</strong>"
+        ],
+        [
+         "<strong>Orbitofrontal</strong>",
+         "<strong>Disinhibition</strong>, inappropriate behaviour, aggression, little empathy (\"pseudo-psychopathic\")"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/b7e7e45d380f.jpg",
+       "alt": "Papez circuit.png",
+       "w": 900,
+       "h": 879,
+       "cap": "The Papez circuit: cingulate gyrus, hippocampus, fornix, mammillary body, thalamus"
+      }
+     ]
     },
     {
      "id": "neuro-w12-09",
      "num": "09",
      "name": "Introduction to Neurophysiology",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Introduction to neurophysiology",
+     "keypoints": "<p>⭐ <strong>The action potential is all-or-none: strength is coded by firing frequency, never by size.</strong> <strong>Myelin gives saltatory conduction; multiple sclerosis strips it and slows conduction.</strong> <strong>fMRI shows active grey matter (blood flow); DTI shows white matter tracts (water along axons).</strong> <strong>Glutamate excites and GABA inhibits in the brain; glycine inhibits in the spinal cord.</strong> <strong>Wernicke's: fluent, cannot understand, unaware; Broca's: effortful, understands, aware.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Symptoms follow from how neurons signal:</strong> an all-or-none action potential, sped up by myelin, handed across a synapse as excitation or inhibition. Break a step - strip the myelin, damage a language area - and you can predict what the patient shows. (The note covers only the \"need to know\" slides 5-8 and 22-23; the synapse section comes from the upper-year notes.)</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Imaging how the brain works</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The brain is <strong>1-3% of body mass but uses about 20% of its energy</strong>, so only a few neurons fire at once</li><li><strong>Grey matter needs more oxygen than white matter</strong>, and blood is sent to the grey matter in use<ul><li><strong>functional MRI (fMRI)</strong> detects that change in blood flow → shows <strong>which cortex is active</strong> in a task</li></ul></li><li><strong>Diffusion tensor imaging (DTI)</strong>: water diffuses <strong>along axons</strong> in white matter rather than in all directions → shows <strong>white matter tracts</strong></li><li>Dense interconnection lets a focus of abnormal activity spread → why the cortex is prone to <strong>epilepsy</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. The neuron</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Part",
+        "Job",
+        "Where it sits"
+       ],
+       "rows": [
+        [
+         "<strong>Dendrites</strong>",
+         "Collect and integrate incoming signals",
+         "Grey matter"
+        ],
+        [
+         "<strong>Soma</strong>",
+         "Cell body",
+         "Grey matter"
+        ],
+        [
+         "<strong>Axon hillock</strong>",
+         "Junction of soma and axon - <strong>where the action potential starts</strong>",
+         "-"
+        ],
+        [
+         "<strong>Axon</strong>",
+         "Carries action potentials over long distances",
+         "White matter"
+        ],
+        [
+         "<strong>Synapse</strong>",
+         "Contact with the next neuron · <strong>site of many drugs and toxins</strong>",
+         "-"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/ac4bac8c60fd.jpg",
+       "alt": "neuron.png",
+       "w": 900,
+       "h": 456,
+       "cap": "A neuron: dendrites, cell body, axon hillock, myelinated axon with nodes of Ranvier, axon terminal"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Membrane potential and the action potential</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Resting potential about −65 mV</strong> - the inside is negative<ul><li><strong>depolarization</strong> = less negative (toward 0) · <strong>hyperpolarization</strong> = more negative</li></ul></li><li>A depolarizing stimulus that reaches <strong>threshold (about −55 mV)</strong> at the axon hillock fires an action potential<ul><li><strong>all-or-none</strong>: every action potential is the <strong>same size</strong> - no half action potentials</li><li>it travels the whole axon by activating each segment in turn</li></ul></li><li><strong>Signal strength is coded by frequency</strong>, not size<ul><li>how hard = firing rate and how many axons fire · how long = duration of firing · where = which axons fire · what = which receptors (<strong>labelled lines</strong>: the brain reads any signal on the optic nerve as vision)</li></ul></li><li><strong>Myelin</strong> insulates the axon → the impulse <strong>jumps from node to node (saltatory conduction)</strong> → much faster<ul><li><strong>demyelinating disease (<span class=\"wl\">multiple sclerosis</span>) makes conduction slow and unreliable</strong></li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/774191a6aadb.jpg",
+       "alt": "neuron action potential principles.png",
+       "w": 900,
+       "h": 426,
+       "cap": "Ion movements at rest, during depolarization, repolarization and the return to rest"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. The synapse</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The action potential reaches the terminal → <strong>calcium-triggered release</strong> of neurotransmitter → binds receptors on the next cell → cleared by diffusion, <strong>reuptake</strong> or <strong>enzyme breakdown</strong></li><li><strong>Convergence</strong> (many neurons onto one: comparing, extracting features) · <strong>divergence</strong> (one onto many: coordinating movement)</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Receptor",
+        "How it works",
+        "Effect",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "<strong>Ionotropic</strong>",
+         "<strong>Opens an ion channel</strong>",
+         "<strong>Fast, local</strong>",
+         "<strong>Excitatory (depolarizing)</strong>: <span class=\"wl\">glutamate</span> in the brain · acetylcholine at the neuromuscular junction · <strong>inhibitory (hyperpolarizing)</strong>: <span class=\"wl\">GABA</span> in the brain (target of many sedatives) · glycine in the spinal cord"
+        ],
+        [
+         "<strong>Metabotropic</strong>",
+         "<strong>Second messenger</strong> (G-protein coupled)",
+         "<strong>Slower, widespread, longer-lasting</strong>",
+         "Dopamine, serotonin, norepinephrine receptors"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Excitatory and inhibitory inputs <strong>add up over space and time</strong>; if the sum reaches threshold, the next neuron fires</li><li>Transmitter classes: amino acids (GABA, glutamate, glycine) · amines (acetylcholine, dopamine, norepinephrine, serotonin) · peptides (substance P, dynorphin)</li><li>Drugs act as agonists, antagonists, or block reuptake or breakdown · e.g. the GABA-A receptor has several binding sites - <strong>benzodiazepines act more strongly with alcohol</strong></li><li><strong>Learning</strong>: the NMDA glutamate receptor opens only on an already-depolarized cell → synapses that fire together strengthen (<strong>\"cells that fire together wire together\"</strong>)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Aphasia: when the language circuit breaks</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Wernicke's aphasia",
+        "Broca's aphasia"
+       ],
+       "rows": [
+        [
+         "<strong>Damage</strong>",
+         "Temporal lobe",
+         "Frontal lobe"
+        ],
+        [
+         "<strong>Speech</strong>",
+         "Fluent, normal rate and syntax, but <strong>nonsense words</strong>",
+         "<strong>Slow and effortful</strong>, though answers are appropriate"
+        ],
+        [
+         "<strong>Comprehension</strong>",
+         "<strong>Impaired</strong>",
+         "<strong>Intact</strong>"
+        ],
+        [
+         "<strong>Kind of syndrome</strong>",
+         "<strong>Perceptual</strong>",
+         "<strong>Motor</strong>"
+        ],
+        [
+         "<strong>Insight</strong>",
+         "<strong>Unaware</strong> (anosognosia)",
+         "<strong>Aware and frustrated</strong>"
+        ]
+       ]
+      }
+     ]
     }
    ]
   },
