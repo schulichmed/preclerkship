@@ -4943,49 +4943,979 @@
      "id": "psych-w20-01",
      "num": "01",
      "name": "Sleep Disorders",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Sleep disorders",
+     "keypoints": "<p>⭐ <strong>Insomnia is a clinical diagnosis treated first with CBT for insomnia - a sleep study is not indicated.</strong> <strong>Obstructive sleep apnea is the commonest cause of daytime sleepiness; CPAP is the treatment.</strong> <strong>Central apnea has no breathing effort during pauses.</strong> <strong>Cataplexy (emotion-triggered loss of tone) points to narcolepsy.</strong> <strong>NREM parasomnias: children, early night, no memory; REM sleep behaviour disorder: older men, late night, dream recalled, a warning sign for Parkinson and Lewy body disease.</strong> <strong>Restless legs = awake and voluntary, check ferritin; periodic limb movements = asleep and involuntary, needs a study.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Sort the complaint first: can't sleep (insomnia), sleepy by day despite enough time in bed (sleep apnea, narcolepsy), strange behaviour during sleep (parasomnias), or an urge to move the legs at rest (restless legs).</strong> Only some of these need a sleep study - insomnia does not.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Normal sleep</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Two kinds of sleep</strong>: non-rapid eye movement (NREM) sleep, about 75-80% · rapid eye movement (REM) sleep, about 20-25%<ul><li><strong>Stage N1</strong>: the transition from waking · 1-7 minutes, 2-5% of sleep · theta waves · easily disrupted</li><li><strong>Stage N2</strong>: most of the night (45-55%) · <strong>sleep spindles and K-complexes</strong>, linked to memory consolidation · harder to wake</li><li><strong>Stage N3 (slow-wave sleep)</strong>: high-voltage slow delta waves · <strong>hardest to wake</strong> · growth hormone release · daily brain recovery · sympathetic activity falls</li><li><strong>REM</strong>: low-voltage fast \"sawtooth\" waves · <strong>muscle atonia</strong> so dreams are not acted out · vivid dreams · easy to wake</li></ul></li><li><strong>Cycling</strong>: the first NREM-REM cycle is about <strong>90 minutes</strong>, later cycles up to 120 · <strong>slow-wave sleep is concentrated in the first third of the night, REM in the last third</strong></li><li><strong>Age</strong>: the need for sleep falls with age · REM falls with age · newborns sleep in chunks</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/5b5d14bbb49c.jpg",
+       "alt": "sleep cycling.png",
+       "w": 900,
+       "h": 309,
+       "cap": "A night of sleep: deep stage 3 sleep early in the night, longer REM periods toward morning"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Measuring sleep</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Polysomnography</span> (overnight sleep study)</strong>: brain waves (EEG) · eye movements · chin and leg muscle activity (tibialis anterior, for leg movements) · airflow and chest and abdominal effort · oxygen saturation · ECG · snoring microphone · body position · rarely video</li><li><strong>Order it for</strong>: <strong>obstructive sleep apnea (90-95% of referrals)</strong> · narcolepsy · parasomnias</li><li><strong>Do not order it for insomnia</strong> or as a general look at sleep - only to rule out another sleep disorder</li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Sleep complaint<br/>history, sleep diary, bed partner's account\"] --> B{\"Main problem?\"}\n    B -->|\"Can't fall or stay asleep\"| C[\"INSOMNIA<br/>clinical diagnosis, no sleep study<br/>CBT for insomnia first\"]\n    B -->|\"Snoring, witnessed apneas,<br/>daytime sleepiness\"| D[\"Suspect OBSTRUCTIVE SLEEP APNEA<br/>sleep study, apnea-hypopnea index\"]\n    B -->|\"Sleep attacks, cataplexy\"| E[\"Suspect NARCOLEPSY<br/>sleep study + multiple sleep latency test\"]\n    B -->|\"Behaviour during sleep\"| F[\"PARASOMNIA<br/>collateral history, sleep study if unclear\"]\n    B -->|\"Urge to move legs at rest, evenings\"| G[\"RESTLESS LEGS<br/>clinical diagnosis, check ferritin\"]\n    B -->|\"Sleep at the wrong times\"| H[\"CIRCADIAN RHYTHM DISORDER<br/>history, sleep diary or actigraphy\"]"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Comparing the main sleep disorders</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Insomnia</span>",
+        "<span class=\"wl\">Obstructive sleep apnea</span>",
+        "<span class=\"wl\">Narcolepsy</span>",
+        "Parasomnias"
+       ],
+       "rows": [
+        [
+         "<strong>Core</strong>",
+         "<strong>Dissatisfied with sleep amount or quality despite the chance to sleep</strong>",
+         "<strong>Upper airway closes during sleep</strong> → oxygen drops and brief arousals",
+         "<strong>Irrepressible need to sleep</strong> by day",
+         "Abnormal behaviour or experiences during sleep"
+        ],
+        [
+         "<strong>Criteria / features</strong>",
+         "Trouble falling asleep, staying asleep, or waking early · <strong>3 nights a week for 3 months</strong> · distress or impairment",
+         "Snoring · witnessed apneas · <strong>most common cause of excessive daytime sleepiness</strong> · morning headache · poor concentration",
+         "Sleep lapses <strong>3 times a week for 3 months</strong> plus <strong>cataplexy</strong>, low hypocretin, or short REM latency · tetrad: sleepiness, cataplexy, sleep paralysis, hypnagogic hallucinations",
+         "NREM type: incomplete waking from deep sleep, <strong>first third of night</strong>, no memory · REM type: dream enactment, <strong>last third</strong>, recalls dream"
+        ],
+        [
+         "<strong>Who</strong>",
+         "Most common sleep complaint · about 10% meet criteria · comorbid with medical and psychiatric illness",
+         "About 20% of the population · linked to resistant hypertension, diabetes, atrial fibrillation, coronary disease",
+         "Rare (under 1%) · young",
+         "NREM: mostly children · REM sleep behaviour disorder: older men"
+        ],
+        [
+         "<strong>Workup</strong>",
+         "<strong>Clinical</strong> · sleep diary · actigraphy · sleep study only to rule out others",
+         "<strong>Sleep study</strong> → apnea-hypopnea index: mild 5-14 · moderate 15-29 · severe 30+ · Epworth, STOP-BANG",
+         "Sleep study + <strong>multiple sleep latency test</strong>: mean latency 8 minutes or less, REM at sleep onset",
+         "Collateral history from bed partner or parent · video rarely captures events"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "<strong>CBT for insomnia first</strong> (as effective as pills, fewer side effects) · cautious hypnotics",
+         "<strong>CPAP</strong> · dental appliance · surgery (uvulopalatopharyngoplasty) · weight loss, less alcohol",
+         "Stimulants · modafinil · venlafaxine or other antidepressants for cataplexy and paralysis · sodium oxybate (specialist)",
+         "Safety of the sleep environment · avoid sleep deprivation and alcohol · clonazepam or melatonin"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Insomnia</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Diagnosis by history</strong>: sleep-wake diary · actigraphy (a wrist tracker, not used much) · sleep study only to rule out another disorder</li><li><strong>Treatment</strong><ul><li><strong><span class=\"wl\">CBT for insomnia</span></strong> is first line - few practitioners</li><li><strong>Sleep hygiene alone does not work</strong> - do not confuse it with the CBT elements that do (fixed wake time, bed only when sleepy, bed only for sleep)</li><li>Medication: benzodiazepines and \"z-drugs\" (zolpidem, eszopiclone) with caution - dependence, falls in the elderly · melatonin helps about a third, minor effect · avoid alcohol and cannabis · over-the-counter antihistamines work but cause dependence</li><li>Sedating antidepressants and antipsychotics: the medwiki note says avoid unless depression is present, the upper-year notes list them as options (sources differ - check the slides)</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Sleep apnea</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Obstructive</strong>: the airway collapses, breathing effort continues until the patient gasps awake<ul><li><strong>CPAP is the treatment of choice</strong> - pressure splints the airway open</li><li>dental appliance (moves the jaw forward) for mild to moderate · surgery for selected patients · weight loss</li></ul></li><li><strong><span class=\"wl\">Central sleep apnea</span></strong>: the brain stops signalling to breathe - <strong>no breathing effort during the pauses</strong><ul><li>causes: heart failure, stroke, opioids · treat the cause · bilevel positive airway pressure (BiPAP), as CPAP can worsen it</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Narcolepsy</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Cause</strong>: loss of hypothalamic neurons making <strong>hypocretin (orexin)</strong>, which keeps us awake - injury, autoimmune, infection</li><li><strong>Cataplexy</strong>: sudden loss of muscle tone (knees, face, neck) <strong>triggered by strong emotion</strong>, lasting seconds</li><li><strong>Hypnagogic</strong> (falling asleep) and <strong>hypnopompic</strong> (waking) hallucinations · <strong>sleep paralysis</strong> for seconds to minutes</li><li>Cerebrospinal fluid hypocretin: the upper-year notes give a cut-off of 100 pg/mL, the medwiki note only says it is deficient (check the slides)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Circadian rhythm disorders</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The body clock is out of step with the required schedule → insomnia or daytime sleepiness</li><li><strong>Delayed sleep phase</strong>: sleeps and wakes later than socially acceptable · about 7% of adolescents · longer body-clock period, more sensitivity to evening light<ul><li>treatment: <strong>consistent wake time</strong> · morning bright light · evening melatonin</li></ul></li><li><strong>Advanced sleep phase</strong>: sleeps and wakes too early · others: irregular, non-24-hour, shift work</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>8. Parasomnias</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>NREM parasomnias</strong> (children, first third of night, <strong>no recall</strong>): confusional arousals · <strong><span class=\"wl\">sleepwalking</span></strong> · <strong><span class=\"wl\">sleep terrors</span></strong> (scream, intense fear, inconsolable)<ul><li>triggers: sleep deprivation · stress · alcohol · sedatives including z-drugs · also sleep-related eating and sexual behaviour</li><li>treatment: reassurance · safe environment (locks, barriers) · regular sleep · clonazepam last</li></ul></li><li><strong>Nightmares vs sleep terrors</strong>: nightmares come from REM with vivid recall; terrors from NREM with amnesia</li><li><strong><span class=\"wl\">REM sleep behaviour disorder</span></strong>: <strong>loss of REM atonia</strong> → punching, kicking out violent dreams, second half of night · wakes quickly and remembers the dream · older men<ul><li><strong>often precedes Parkinson disease or dementia with Lewy bodies</strong></li><li>treatment: safety · melatonin · clonazepam</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>9. Restless legs and periodic limb movements</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Restless legs syndrome</span></strong>: an urge to move the legs <strong>while awake at rest</strong>, worse in the evening, relieved by movement · 3 times a week for 3 months · clinical diagnosis, no sleep study<ul><li><strong>commonest cause: low ferritin (iron deficiency)</strong> · also kidney failure, neuropathy, pregnancy, multiple sclerosis · SSRIs and mirtazapine can trigger it</li><li>treatment: <strong>iron until ferritin above 75</strong> · gabapentin or pregabalin · dopamine agonists: the medwiki note lists pramipexole and ropinirole as helpful, the upper-year notes say they can make it worse (sources differ - check the slides)</li></ul></li><li><strong><span class=\"wl\">Periodic limb movement disorder</span></strong>: involuntary leg jerks <strong>while asleep</strong> · in over 80% of restless legs patients · <strong>needs a sleep study</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>10. Sleep myths</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Short and long sleepers both have higher mortality - the right amount is whatever avoids daytime sleepiness · blue light and activity trackers: weak evidence</li></ul>"
+      }
+     ]
     },
     {
      "id": "psych-w20-02",
      "num": "02",
      "name": "Somatic Symptom Disorders",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Somatic symptom and related disorders",
+     "keypoints": "<p>⭐ <strong>Unconscious production with no gain = somatic symptom and related disorders; intentional production for the sick role = factitious disorder; intentional for an external reward = malingering.</strong> <strong>Illness anxiety has few or no symptoms - the fear of disease is the problem.</strong> <strong>Conversion disorder shows a mismatch with known neurology (Hoover's sign, improvement with distraction).</strong> <strong>Somatic symptom disorder and illness anxiety both need 6+ months.</strong> <strong>Treatment aims at function and coping, started early, with a multidisciplinary plan.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The suffering is real whether or not the symptom is medically explained.</strong> These disorders are told apart by two questions: <strong>is the symptom produced consciously, and what is gained from it?</strong> The aim of treatment is coping and function, not cure.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The problem of definition</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Medically unexplained symptoms</strong>: pain in several places · disturbed function of an organ system · fatigue<ul><li>may be a physiological disturbance, emotion, or a condition not yet diagnosed</li><li>common: 15-25% in primary care · 39-50% in specialist clinics · over 60% in neurology</li></ul></li><li><strong>Many names, depending on who sees the patient</strong>: psychogenic, psychosomatic, somatoform, functional, conversion, \"hysteria\"</li><li><strong>Functional disorders exist in every system</strong>: irritable bowel syndrome and functional dyspepsia · fibromyalgia · non-cardiac chest pain · chronic fatigue syndrome · tension headache, functional seizures and movement disorders · temporomandibular joint dysfunction<ul><li>more often female · overlap with anxiety and depression</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Telling the disorders apart</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Somatic symptom disorder</span>",
+        "<span class=\"wl\">Illness anxiety disorder</span>",
+        "<span class=\"wl\">Conversion disorder</span> (functional neurological symptom disorder)",
+        "<span class=\"wl\">Factitious disorder</span>",
+        "<span class=\"wl\">Malingering</span>"
+       ],
+       "rows": [
+        [
+         "<strong>Core</strong>",
+         "<strong>1 or more distressing somatic symptoms + excessive thoughts, feelings or behaviours about them</strong>",
+         "<strong>Preoccupied with having or getting a serious illness</strong>, with <strong>no or only mild symptoms</strong>",
+         "<strong>Altered voluntary motor or sensory function incompatible with known disease</strong>",
+         "<strong>Falsifies or induces illness</strong> in self or another, with no external reward",
+         "<strong>Fakes or exaggerates for an external reward</strong> (time off work, drugs, avoiding arrest)"
+        ],
+        [
+         "<strong>Criteria</strong>",
+         "At least 1 of: disproportionate thoughts about seriousness · persistently high health anxiety · excessive time and energy on symptoms · <strong>symptomatic for 6+ months</strong> (the symptom itself may change)",
+         "High health anxiety · excessive checking or maladaptive avoidance · <strong>6+ months</strong> · the feared illness may change",
+         "Clinical findings show the mismatch · not better explained · distress or impairment",
+         "Deception evident · presents self (or a victim) as ill or injured",
+         "Not a DSM disorder"
+        ],
+        [
+         "<strong>Specifiers</strong>",
+         "<strong>Predominant pain</strong> · persistent · severity (mild, moderate, severe)",
+         "<strong>Care-seeking</strong> vs <strong>care-avoidant</strong>",
+         "Symptom type (weakness, movement, seizures, sensory, speech, swallowing) · acute (under 6 months) or persistent · with or without stressor",
+         "Single or recurrent episodes · <strong>imposed on self</strong> vs <strong>imposed on another</strong> (by proxy)",
+         "-"
+        ],
+        [
+         "<strong>Symptom production</strong>",
+         "Unconscious",
+         "Unconscious",
+         "Unconscious",
+         "<strong>Intentional</strong>",
+         "<strong>Intentional</strong>"
+        ],
+        [
+         "<strong>Gain</strong>",
+         "None",
+         "None",
+         "Internal psychological gain (sources differ: upper-year notes say internal gain, the medwiki figure groups it with no gain - check the slides)",
+         "<strong>Internal: the sick role</strong>",
+         "<strong>External</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Other specified: brief somatic symptom or illness anxiety disorder (under 6 months) · <strong>pseudocyesis</strong> (a false but non-delusional belief in pregnancy, with physical signs)</li><li><strong>Conversion on exam</strong>: symptoms improve with distraction - <strong>Hoover's sign</strong> (weak hip extension returns with opposite hip flexion against resistance) · tremor entrainment · controlled arm drop in a \"seizure\"</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/8ae8e2171988.jpg",
+       "alt": "comparison of somatic disorders, factitious disorder, and malingering.png",
+       "w": 800,
+       "h": 317,
+       "cap": "Sorting unexplained symptoms by how they are produced, why, and for what gain"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Causes: many at once</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Genetics</strong>: 5-10 times more common in first-degree relatives</li><li><strong>Stress</strong>: corticotropin-releasing hormone and acetylcholine alter gut motility</li><li><strong>Psychodynamic</strong>: an unconscious conflict converted into a body symptom</li><li><strong>Trauma and abuse</strong> · <strong>learning</strong> (illness behaviour modelled in the family, secondary gain of the sick role)</li><li><strong>Emotion and communication</strong>: limited vocabulary for feelings · <strong>culture and family</strong> that stigmatize psychological distress</li><li><strong>Family systems (Minuchin)</strong>: enmeshment · overprotection · rigidity · no conflict resolution</li><li><strong>Brain changes</strong>: larger left amygdala, striatum, cerebellum, fusiform gyrus and both thalami · smaller left somatosensory cortex</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Assessment</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Questionnaires: <span class=\"wl\">Patient Health Questionnaire-15 (PHQ-15)</span> · Brief Illness Perception Questionnaire · Short-Form General Health Survey</li><li><strong>Differential</strong>: an undiagnosed medical condition · panic disorder (acute episodes) · generalized anxiety (many worries, not only health) · depression · obsessive-compulsive disorder (intrusive thoughts with compulsions) · delusional disorder (belief held with delusional intensity) · body dysmorphic disorder (appearance, not symptoms)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Management: holistic and integrated</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Alliance first</strong>: take the concerns seriously · realistic, measurable goals · <strong>the goal is to manage and cope, not cure</strong></li><li><strong>Physical</strong>: physiotherapy · heat and cold · TENS (transcutaneous electrical nerve stimulation) · acupuncture · massage · injections and nerve blocks</li><li><strong>Medication, stepwise (WHO pain ladder)</strong>: non-opioid (NSAIDs, acetaminophen) → weak opioid → strong opioid, ± adjuvants<ul><li><strong>antidepressants</strong> (tricyclics, duloxetine, venlafaxine, trazodone) relieve pain independent of mood · <strong>anticonvulsants</strong> (gabapentin, pregabalin) for neuropathic pain and migraine</li><li>muscle relaxants do not help chronic pain · opioids only after other options fail, with a documented agreement and review of function and aberrant use at every visit</li></ul></li><li><strong>Psychological</strong>: CBT · interpersonal therapy · hypnosis · biofeedback · EMDR (eye movement desensitization and reprocessing) · acceptance and commitment therapy · mindfulness · expressive writing · family therapy</li><li><strong>Rehabilitation</strong>: education · pacing · ergonomics · <strong>exercise</strong> (aerobic, strengthening, stretching; yoga and tai chi)</li><li><strong>Secondary prevention</strong>: <strong>intervene early, before the illness disrupts life</strong> (upper-year notes: within 12 weeks) · stay active · return to work</li><li><strong>Predictors of long-term disability</strong>: high reported pain and disability · depression · somatization · poor coping · weak social support · unresolved legal issues · reinforced pain behaviour · job dissatisfaction · childhood sexual abuse</li></ul>"
+      }
+     ]
     },
     {
      "id": "psych-w20-03",
      "num": "03",
      "name": "Maintaining Boundaries",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Maintaining boundaries",
+     "keypoints": "<p>⭐ <strong>A crossing is harmless and non-exploitative; a violation exploits the patient through the relationship and harms them or their care.</strong> <strong>Sexual remarks alone count as sexual abuse under the RHPA.</strong> <strong>Sexual contact within 1 year of the relationship ending is still abuse.</strong> <strong>Report within 30 days to the professional's college, on reasonable grounds, without the patient's name unless they consent.</strong> <strong>Always offer a chaperone for intimate examinations.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Does the departure from the usual professional role harm or exploit the patient?</strong> If not, it is a boundary crossing; if it does, it is a boundary violation. Sexual abuse of a patient is always a violation, and any physician who learns of it must report.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Boundaries</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Boundaries</strong>: the rules that keep the professional relationship separate from every other relationship</li><li><strong>Boundary crossing</strong>: a departure from usual practice that is <strong>harmless, non-exploitative</strong>, and may even support care</li><li><strong>Boundary violation</strong>: <strong>harmful or potentially harmful</strong> to the patient and the care, because it <strong>exploits the patient through the doctor-patient relationship</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. The CPSO Boundary Violations policy</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The College of Physicians and Surgeons of Ontario (CPSO) requires physicians to set and keep appropriate boundaries</li><li><strong>Before any examination, treatment or procedure</strong>: explain its scope and reason in advance · <strong>explain why</strong> any question about sexual matters is being asked · <strong>obtain consent</strong></li><li><strong>Always offer a third party (chaperone)</strong> for an intimate examination, whatever the gender of physician or patient · the patient may bring their own</li><li><strong>Preventing violations</strong>: sensitivity to gender and culture · know patient risk factors (<strong>patients who have been abused are at higher risk of exploitation</strong>) · know your own risk factors · recognize warning signs</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. The Regulated Health Professions Act (RHPA)</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Sexual abuse of a patient</strong> means any of:<ul><li>sexual intercourse or other physical sexual relations</li><li><strong>touching of a sexual nature</strong></li><li><strong>behaviour or remarks of a sexual nature</strong> toward the patient</li></ul></li><li><strong>A person is a patient if any one applies</strong>: the physician charged or was paid for care · contributed to their health record · they consented to care the physician recommended · the physician prescribed them a medication needing a prescription</li><li><strong>After the relationship ends</strong>: sexual contact <strong>within 1 year</strong> is still sexual abuse<ul><li>upper-year notes add: <strong>5 years for psychotherapy</strong>, and it may be misconduct with someone closely associated with the patient, depending on the clinical problem, type of care and emotional dependence</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Mandatory reporting</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"In the course of practice you learn<br/>a health professional may have<br/>sexually abused a patient\"] --> B{\"Reasonable grounds?<br/>(you do not decide if it is true)\"}\n    B -->|Yes| C[\"MUST REPORT<br/>to that professional's college<br/>any college, including your own\"]\n    C --> D[\"Written report within 30 days<br/>professional's name + description of the abuse\"]\n    D --> E[\"Patient's name only with their consent\"]\n    E --> F[\"College Investigations reviews it<br/>even without the patient's name\"]\n    F --> G[\"Failure to report: fine up to $25,000<br/>suspension up to 6 months\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Same logic as child-abuse reporting: the report must be <strong>reasonable, not proven</strong></li><li><strong>Failure to report</strong>: fine of up to $25,000 and licence suspension of up to 6 months (medwiki note)</li></ul>"
+      }
+     ]
     },
     {
      "id": "psych-w20-04",
      "num": "04",
      "name": "Delirium",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Delirium",
+     "keypoints": "<p>⭐ <strong>Inattention with acute, fluctuating onset is delirium until proven otherwise - CAM needs features 1 and 2 plus 3 or 4.</strong> <strong>Hypoactive delirium is the commonest and is mistaken for depression.</strong> <strong>Dementia is the strongest risk factor, and delirium speeds later decline.</strong> <strong>Use benzodiazepines only for alcohol withdrawal, physostigmine for anticholinergic toxicity; otherwise low-dose antipsychotic and only for distressing symptoms.</strong> <strong>Hallucinations in delirium are mostly visual; in depression and schizophrenia mostly auditory.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Delirium is an acute, fluctuating disturbance of attention and awareness with a medical cause - it is a sign that something else is wrong.</strong> Screen for it, hunt for every trigger, and treat the cause; medication only manages symptoms.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Approach</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Acute confusion, drowsiness or agitation<br/>especially an older or post-operative patient\"] --> B[\"Screen: Confusion Assessment Method (CAM)<br/>or 4AT at the bedside\"]\n    B --> C{\"CAM positive?<br/>1 acute onset + fluctuating AND 2 inattention<br/>PLUS 3 disorganized thinking OR 4 altered consciousness\"}\n    C -->|No| D[\"Consider the other Ds<br/>dementia, depression\"]\n    C -->|Yes| E[\"DELIRIUM<br/>history with collateral, medication review<br/>exam, focused cognitive testing\"]\n    E --> F[\"Find the triggers: DIMES + 3 Ps<br/>Drugs · Infection · Metabolic<br/>Environment · Structural<br/>Pee · Poop · Pain\"]\n    F --> G[\"Investigations<br/>blood count, electrolytes, creatinine, urea, glucose<br/>liver tests, urine, chest X-ray, toxicology<br/>then CSF, EEG, MRI, B12, folate if needed\"]\n    G --> H[\"Treat every cause found<br/>keep looking for new triggers\"]\n    H --> I[\"Non-drug care for everyone\"]\n    I --> J{\"Distressing psychosis or<br/>dangerous agitation?\"}\n    J -->|\"Yes, hyperactive\"| K[\"Low-dose antipsychotic<br/>haloperidol or risperidone<br/>monitor QT on ECG\"]\n    J -->|\"Alcohol withdrawal\"| L[\"BENZODIAZEPINE instead\"]\n    J -->|\"Anticholinergic toxidrome\"| M[\"PHYSOSTIGMINE\"]"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Definition and subtypes</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>DSM-5 criteria</strong><ul><li>disturbance of <strong>attention</strong> (direct, focus, sustain, shift) and <strong>awareness</strong> (orientation)</li><li><strong>develops over a short time and fluctuates through the day</strong> · a change from baseline</li><li><strong>plus another cognitive disturbance</strong>: memory · orientation · language · visuospatial · perception</li><li>not better explained by a neurocognitive disorder or coma · <strong>evidence of a medical cause</strong>, substance, medication or toxin</li><li>onset: the medwiki note says hours to days, the upper-year notes days to weeks (sources differ - check the slides)</li></ul></li><li><strong>Specifiers</strong>: substance intoxication or withdrawal · medication-induced · another medical condition · multiple causes · acute vs persistent</li><li><strong>Activity subtypes</strong><ul><li><strong>Hypoactive (most common, about 65%)</strong>: drowsy, withdrawn, refuses to eat or for care, approaching stupor - <strong>often missed or mistaken for depression</strong></li><li><strong>Hyperactive (about 25%)</strong>: hypervigilant, loud fast speech, combative, pulls at lines - can look like mania</li><li><strong>Mixed (about 10%)</strong>: swings between the two</li></ul></li><li><strong>Psychosis in about 42%</strong>: <strong>visual hallucinations most common</strong>, then auditory and tactile · poorly formed <strong>paranoid</strong> delusions · more in hyperactive</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Who gets it</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Medical wards 10-20% · after surgery up to 50% · ICU up to 80%</strong> · elderly 10-15% at admission, 10-40% during it · up to 60% of nursing-home residents over 75</li><li><strong>Risk factors</strong>: <strong>dementia (the strongest)</strong> · age over 65 · male · prior delirium · functional impairment · hearing or vision loss · polypharmacy (4 or more medications) · alcohol use disorder · dehydration, malnutrition · living in an institution</li><li><strong>Up to 40% preventable</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Causes and pathophysiology</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Common culprit drugs</strong>: <strong>benzodiazepines, diphenhydramine, tricyclics, furosemide</strong> · anticholinergics · opioids · steroids · digoxin and many more</li><li><strong>Infection</strong> (lung, urine, skin, gut, central nervous system) · <strong>metabolic</strong> (sodium, calcium, glucose, thyroid, B12, thiamine, liver or kidney failure) · <strong>environment</strong> (night bloodwork, no clock or window, room changes, restraints, missing glasses and hearing aids) · <strong>structural</strong> (low oxygen, high carbon dioxide, heart attack, heart failure, stroke, seizure) · urinary retention · constipation · pain</li><li><strong>An older patient's heart attack may present only as delirium</strong></li><li><strong>Pathophysiology (several hypotheses)</strong><ul><li><strong>low acetylcholine</strong> (leading theory) with excess dopamine, noradrenaline and glutamate</li><li>neuroinflammation (peripheral inflammation activates brain cytokines) · oxidative stress · high glucocorticoids · disrupted circadian rhythm · <strong>network disconnection</strong> · aging lowers brain reserve</li></ul></li><li><strong>Two-way link with dementia</strong>: dementia is the strongest risk factor, and delirium raises the risk of later cognitive decline</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Assessment at the bedside</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>History</strong>: baseline · onset, course and fluctuation · sleep · hallucinations (\"have you seen anything unusual?\") and paranoia (\"is anyone hurting you?\") · <strong>collateral</strong> from family and nursing · medications</li><li><strong>Observe first</strong> from the doorway: picking, pulling at lines, drowsiness, agitation</li><li><strong>Orientation out of 10</strong>: year, season, month, date, day · country, province, city, building, floor</li><li><strong>Attention</strong>: tap at each \"A\" in \"SAVEAHAART\" · months backwards · serial 7s · spell WORLD backwards · digit span (sources differ: medwiki says 4 digits, upper-year notes 5 - check the slides) · clock drawing</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Delirium vs dementia vs depression</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Delirium</span>",
+        "<span class=\"wl\">Dementia</span>",
+        "Depression"
+       ],
+       "rows": [
+        [
+         "<strong>Onset</strong>",
+         "<strong>Acute</strong>",
+         "<strong>Insidious</strong>",
+         "Variable"
+        ],
+        [
+         "<strong>Course</strong>",
+         "<strong>Fluctuating</strong> through the day",
+         "<strong>Progressive</strong> · may worsen in the evening (sundowning)",
+         "Variable"
+        ],
+        [
+         "<strong>Reversible</strong>",
+         "Usually",
+         "No",
+         "Usually"
+        ],
+        [
+         "<strong>Consciousness</strong>",
+         "<strong>Impaired</strong>",
+         "Clear until late",
+         "Mostly clear"
+        ],
+        [
+         "<strong>Attention</strong>",
+         "<strong>Impaired - the core feature</strong>",
+         "Intact until late (except frontotemporal)",
+         "Mildly impaired"
+        ],
+        [
+         "<strong>Orientation</strong>",
+         "Impaired",
+         "Intact until later stages",
+         "Intact"
+        ],
+        [
+         "<strong>Memory</strong>",
+         "Poor",
+         "Poor",
+         "Mostly intact"
+        ],
+        [
+         "<strong>Hallucinations</strong>",
+         "Mostly visual",
+         "Mostly visual",
+         "Usually auditory, if psychotic"
+        ],
+        [
+         "<strong>Delusions</strong>",
+         "Poorly formed, paranoid",
+         "Fixed, often paranoid",
+         "Complex, mood-congruent"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Management</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>No drug treats delirium itself</strong> - treat the causes (medications, infection, fluids, immobility, pain, sensory deprivation)</li><li><strong>Non-drug care</strong>: reorient often, clocks and calendars · <strong>family involvement</strong> · familiar items · glasses and hearing aids · mobilize early · lights and blinds open by day, dark and quiet at night · avoid restraints and lines · fewer staff changes · hydration and nutrition · stop offending drugs</li><li><strong>Antipsychotics</strong> for distressing psychosis or agitation in hyperactive delirium: <strong>haloperidol (about 1 mg twice a day by mouth)</strong> or risperidone · check the QT · avoid in seizures, Parkinson disease and dementia with Lewy bodies</li><li><strong>Prognosis</strong>: higher <strong>mortality</strong> (upper-year notes: 10% at 3 months, 34% at 6 months), <strong>institutionalization</strong> and dementia · may last up to 12 months · <strong>many never return to baseline</strong></li></ul>"
+      }
+     ]
     },
     {
      "id": "psych-w20-05",
      "num": "05",
      "name": "Cognitive Disorders in the Elderly",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Cognitive disorders in the elderly",
+     "keypoints": "<p>⭐ <strong>Mild vs major neurocognitive disorder turns on one thing: is independence in everyday activities lost?</strong> <strong>Alzheimer: insidious, memory for new information first. Vascular: abrupt, stepwise, focal signs. Lewy body: fluctuations, visual hallucinations, parkinsonism after the dementia, REM sleep behaviour disorder. Frontotemporal: young, behaviour or language first, memory spared.</strong> <strong>Rule out depression, hypothyroidism, delirium, medications and B12 deficiency.</strong> <strong>MoCA catches mild impairment that the MMSE misses.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Two questions: does the decline cost the person their independence (major vs mild neurocognitive disorder), and which pattern of onset and symptoms does it follow (Alzheimer, vascular, Lewy body, frontotemporal)?</strong> Always look for the reversible causes first.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The neurocognitive disorders</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Core feature: an acquired decline in cognition</strong> · a spectrum of delirium → mild neurocognitive disorder → major neurocognitive disorder</li><li><strong>Six cognitive domains</strong>: complex attention · executive function · learning and memory · language · perceptual-motor · social cognition</li><li><strong><span class=\"wl\">Mild neurocognitive disorder (mild cognitive impairment)</span></strong>: <strong>modest</strong> decline in 1 or more domains · <strong>independence preserved</strong> (more effort or strategies needed)<ul><li>10-20% of adults over 65 · upper-year notes: 20-40% progress within 5 years · medwiki: about 10% a year, and over half stay stable or return to normal</li></ul></li><li><strong><span class=\"wl\">Major neurocognitive disorder (dementia)</span></strong>: <strong>significant</strong> decline in 1 or more domains that <strong>interferes with independence</strong> (at least needs help with instrumental activities such as bills and medications)<ul><li>both: not only during a delirium · not better explained by another mental disorder such as depression</li><li>severity: mild = trouble with <span class=\"wl\">instrumental activities of daily living</span> (shopping, housework, money, medications, transport, phone) · moderate = trouble with <span class=\"wl\">basic activities of daily living</span> (dressing, eating, bathing, toileting, transferring, continence) · severe = fully dependent</li></ul></li><li><strong>Epidemiology</strong>: 5-7% of adults over 60 · 1-2% at 65-69, <strong>doubling every 5 years</strong> to about 30% over 85 · 65% female (longer life)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Normal aging vs dementia</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Normal aging</strong>: slightly slower processing · occasionally forgets but remembers later · short-term memory a little affected, long-term kept · language, abstraction and function preserved</li><li><strong>Red flags</strong>: memory loss that affects function · trouble with familiar tasks, language or abstraction · disorientation · poor judgement · change in mood, behaviour or personality · loss of initiative · misplacing items</li><li><strong>Risk factors</strong>: <strong>age (the biggest)</strong> · mild cognitive impairment · family history and genes · head injury · vascular risk factors · inactivity · alcohol · depression · chronic kidney disease · hearing loss · less education · social isolation - <strong>up to 40% of dementia is potentially preventable</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Comparing the dementias</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Alzheimer disease</span>",
+        "<span class=\"wl\">Vascular dementia</span>",
+        "<span class=\"wl\">Dementia with Lewy bodies</span>",
+        "<span class=\"wl\">Frontotemporal dementia</span>"
+       ],
+       "rows": [
+        [
+         "<strong>Share</strong>",
+         "<strong>Most common, 60-90%</strong>",
+         "<strong>Second, 15-30%</strong>",
+         "Found in 20-35% of dementia cases (upper-year notes)",
+         "<strong>Fourth</strong> · about 5%"
+        ],
+        [
+         "<strong>Onset</strong>",
+         "70s-80s · earlier with <strong>Down syndrome</strong> or genetic forms",
+         "0.2% at 65-70, 16% over 80 · more men",
+         "60-80 · more men · usually no family history",
+         "<strong>Early, 40-60</strong> · family history in about 40%"
+        ],
+        [
+         "<strong>Course</strong>",
+         "<strong>Insidious, steadily progressive</strong>",
+         "<strong>Abrupt, stepwise</strong> · highly variable",
+         "Insidious · <strong>fluctuates within the day</strong>",
+         "Insidious, progressive"
+        ],
+        [
+         "<strong>Hallmark features</strong>",
+         "<strong>Memory for new information first</strong> (anterograde amnesia) · then aphasia, apraxia, agnosia, executive dysfunction",
+         "<strong>Focal neurological signs</strong> · slowed processing and attention · executive dysfunction · mood and personality change",
+         "<strong>Visual hallucinations</strong> (well formed) · <strong>parkinsonism starting after the cognitive decline</strong> · <strong>REM sleep behaviour disorder</strong> · falls · <strong>severe antipsychotic sensitivity</strong>",
+         "<strong>Behavioural</strong>: disinhibition, apathy, loss of empathy, compulsions, <strong>hyperorality</strong> · <strong>language variant</strong>: early aphasia · <strong>memory relatively spared</strong>"
+        ],
+        [
+         "<strong>Pathology</strong>",
+         "<strong>Beta-amyloid plaques</strong> (before symptoms) + <strong>tau neurofibrillary tangles</strong> → neuron loss, low acetylcholine · <strong>APOE4</strong>",
+         "Ischemic or hemorrhagic stroke · usual vascular risk factors",
+         "<strong>Lewy bodies</strong> (alpha-synuclein inclusions) in cortex and subcortex",
+         "Frontal and anterior temporal atrophy · tau or TDP-43 inclusions"
+        ],
+        [
+         "<strong>Survival</strong>",
+         "8-12 years (medwiki: mean 10) · often aspiration pneumonia",
+         "Highly variable",
+         "Rapid (sources differ: medwiki 3-5 years, upper-year notes 5-7 - check the slides) · falls, swallowing",
+         "Sources differ: medwiki 5-10 years from onset, upper-year notes 6-11 - both about 3-4 years from diagnosis - check the slides"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Parkinson disease dementia</span></strong>: <strong>motor symptoms come at least a year before cognitive ones</strong> (the reverse of Lewy body dementia) · milder hallucinations · better levodopa response · dementia in 50-80% of Parkinson patients after 10-15 years</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Workup</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Memory or cognitive concern<br/>from patient, family or clinician\"] --> B[\"History with COLLATERAL<br/>time course: gradual, stepwise, fluctuating?<br/>function: basic and instrumental activities<br/>mood, personality, psychosis, gait, falls, continence\"]\n    B --> C[\"Medication review<br/>anticholinergics, sedatives\"]\n    C --> D[\"Physical and neurological exam\"]\n    D --> E[\"Cognitive screen at the first visit<br/>MoCA, MMSE or Mini-Cog\"]\n    E --> F[\"Labs: blood count, TSH, B12<br/>electrolytes, calcium, glucose<br/>urea, liver tests, ESR or CRP\"]\n    F --> G{\"Reversible cause?<br/>depression, hypothyroidism<br/>delirium, medication, B12\"}\n    G -->|Yes| H[\"Treat it and reassess\"]\n    G -->|No| I{\"Independence affected?\"}\n    I -->|No| J[\"MILD neurocognitive disorder<br/>vascular and lifestyle risk reduction<br/>follow up\"]\n    I -->|Yes| K[\"MAJOR neurocognitive disorder<br/>CT or MRI if indicated<br/>name the type by its pattern\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Most common reversible causes</strong>: <strong>depression (pseudodementia)</strong> · <strong>hypothyroidism</strong> · <strong>delirium</strong> · <strong>medications</strong> · <strong>B12 deficiency</strong></li><li><strong>Imaging</strong>: CT rules out tumour, chronic subarachnoid hemorrhage, stroke · MRI gives more detail (small tumours, Creutzfeldt-Jakob disease)</li><li><strong>Mnemonic for causes (upper-year notes)</strong>: AV DEMENTIA - Alzheimer · vascular · dementia with Lewy bodies, depression · ethanol · medical and metabolic · endocrine, ears, eyes, environment · neurologic · toxins, tumour, trauma · infection · amnesia, apnea, autoimmune</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Screening tests</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Test",
+        "Format",
+        "Abnormal",
+        "Strengths",
+        "Weaknesses"
+       ],
+       "rows": [
+        [
+         "<span class=\"wl\">MMSE</span> (Mini-Mental State Examination)",
+         "Out of 30 · about 7 minutes · orientation, registration, attention, recall, language",
+         "<strong>Under 24</strong> (26 or more could be normal)",
+         "Quick · a baseline to track change",
+         "<strong>Misses mild impairment</strong> (about 18% sensitivity), frontal and visuospatial deficits · biased by education"
+        ],
+        [
+         "<span class=\"wl\">MoCA</span> (Montreal Cognitive Assessment)",
+         "Out of 30 · about 10 minutes · more domains incl. executive",
+         "<strong>Under 26</strong>",
+         "<strong>Best for mild impairment</strong> (about 90% sensitivity) · many languages, a version for the blind",
+         "Longer · adjust for age and education"
+        ],
+        [
+         "<span class=\"wl\">Mini-Cog</span>",
+         "3-word recall + clock draw",
+         "Recalls 0 words, or 1-2 words with an abnormal clock",
+         "Very quick, bedside · clock tests several domains at once",
+         "Better for moderate to severe dementia than mild"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Describe where points were lost</strong>, and allow for deafness, blindness, low education or a second language</li><li>None of these tests diagnoses dementia on its own</li></ul>"
+      }
+     ]
     },
     {
      "id": "psych-w20-06",
      "num": "06",
      "name": "Sexual Disorders and Paraphilias",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Sexual disorders and paraphilias",
+     "keypoints": "<p>⭐ <strong>Paraphilia + (personal distress or harm to or non-consent of others) for 6 months = paraphilic disorder.</strong> <strong>Most people with paraphilias do not offend; fantasies are not illegal, acts like exhibitionism, voyeurism and pedophilia are.</strong> <strong>Psychological therapy (CBT, Good Lives Model) is first line; anti-androgens, LHRH agonists and SSRIs lower drive.</strong> <strong>Hypersexuality is not a DSM diagnosis - rule out mania, substances, brain lesions and personality disorders.</strong> <strong>Masochism = undergoing, sadism = inflicting.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>A paraphilia is an unusual sexual interest; it becomes a paraphilic disorder only when it causes the person distress or involves harm to, or the non-consent of, others.</strong> Most people with paraphilias never offend, and not every sex offender has a paraphilia.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Context</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Calling paraphilias a disorder is <strong>controversial</strong> - many object to pathologizing consensual adult sexual activity</li><li>Distressed patients still come to general mental health services; the field is a \"super-subspecialty\" of <strong>forensic psychiatry</strong> (psychiatry + law: court testimony, risk assessment and management of sex offenders)</li><li><strong>Legality</strong>: pedophilia, voyeurism and exhibitionism are <strong>illegal only if acted on</strong> (fantasies are not illegal) · fetishism, cross-dressing and coprophilia are not illegal</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Paraphilic disorders</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Paraphilia</strong>: any intense, persistent sexual interest other than in genital stimulation or fondling with physically mature, consenting human partners</li><li><strong><span class=\"wl\">Paraphilic disorder</span> (DSM-5)</strong>, over <strong>at least 6 months</strong>, either:<ul><li><strong>personal distress</strong> about the interest (not merely from society's disapproval), <strong>or</strong></li><li>desire or behaviour involving <strong>another person's distress, injury or death</strong>, or <strong>unwilling persons or those unable to consent</strong></li></ul></li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Intense, persistent atypical sexual interest\"] --> B{\"Present for 6 months or more?\"}\n    B -->|No| N[\"Not a paraphilic disorder\"]\n    B -->|Yes| C{\"Personal distress about it<br/>(not just society's disapproval)?\"}\n    C -->|Yes| D[\"PARAPHILIC DISORDER\"]\n    C -->|No| E{\"Involves another's distress, injury or death<br/>or unwilling or non-consenting persons?\"}\n    E -->|Yes| D\n    E -->|No| F[\"PARAPHILIA ONLY<br/>not a disorder\"]\n    D --> G[\"Psychological therapy first<br/>CBT, Good Lives Model<br/>± anti-androgen, LHRH agonist, SSRI\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Disorder",
+        "Focus"
+       ],
+       "rows": [
+        [
+         "Exhibitionistic",
+         "Exposing the genitals to others"
+        ],
+        [
+         "Voyeuristic",
+         "Watching others in private activities"
+        ],
+        [
+         "Frotteuristic",
+         "Touching or rubbing against a non-consenting person"
+        ],
+        [
+         "Pedophilic",
+         "Children"
+        ],
+        [
+         "Fetishistic",
+         "Non-living objects, or a highly specific non-genital body part"
+        ],
+        [
+         "Transvestic",
+         "Sexually arousing cross-dressing"
+        ],
+        [
+         "Sexual masochism",
+         "<strong>Undergoing</strong> humiliation, bondage or suffering"
+        ],
+        [
+         "Sexual sadism",
+         "<strong>Inflicting</strong> humiliation, bondage or suffering"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Epidemiology (upper-year notes)</strong>: 3.1% report at least one act of exhibitionism · 7.7% admit voyeuristic behaviour</li><li><strong>Associated factors</strong>: childhood sexual abuse · attachment difficulties · social incompetence · emotional dysregulation · disinhibition from low empathy and <strong>substance use</strong></li><li><strong>Comorbidity</strong> (studied mostly in sex offenders): mood disorders · alcohol and other substance use · personality disorders</li><li>Paraphilias are not generally linked to serious sexual violence, but up to 80% of sexual murderers have a history of paraphilic behaviour (upper-year notes)</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Treatment of paraphilic disorders</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Psychological treatment is the gold standard</strong><ul><li><strong>CBT</strong>: social skills training · cognitive restructuring · victim empathy</li><li><strong>Good Lives Model</strong>: strengths-based - builds the skills to meet normal human needs in personally meaningful, socially acceptable ways</li></ul></li><li><strong>Biological</strong> (evidence mostly from convicted offenders, and limited)<ul><li>historically surgical castration</li><li><strong>anti-androgens</strong> (cyproterone acetate)</li><li><strong>luteinizing hormone-releasing hormone (LHRH) agonists</strong> (triptorelin, goserelin)</li><li><strong>SSRIs</strong> to lower libido</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Sex addiction (problematic hypersexuality)</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Also called sexual compulsivity or impulsivity · <strong>not a DSM-5 diagnosis</strong> - usually coded as a paraphilic or other specified sexual disorder</li><li><strong>Problematic when</strong>: loss of control over fantasies, urges and behaviour <strong>plus</strong> adverse consequences or personal distress</li><li>Research definition: <strong>7 or more orgasms (\"total sexual outlets\") a week</strong> · upper-year notes add: for 6 months, 1-2 hours a day</li><li><strong>Three models</strong>: addiction · compulsivity (like obsessive-compulsive disorder) · impulsivity · in each the behaviour regulates emotional states</li><li><strong>Rule out and treat what mimics or drives it</strong><ul><li><strong>medical</strong>: temporal lobe lesions · brain injury · hypergonadal states · pituitary dysfunction</li><li><strong>substances</strong>: alcohol · amphetamines · cocaine · cannabis</li><li><strong>bipolar disorder</strong> · <strong>psychotic disorders</strong></li><li><strong>personality disorders</strong>: antisocial · borderline</li></ul></li><li>Management follows the mechanism thought to drive the behaviour · lower impulsivity predicts a better outcome (upper-year notes)</li></ul>"
+      }
+     ]
     },
     {
      "id": "psych-w20-07",
      "num": "07",
      "name": "Management of Cognitive Disorders and Dementia",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Management of cognitive disorders and dementia",
+     "keypoints": "<p>⭐ <strong>Look for unmet needs and medical causes, and use non-drug approaches first - antipsychotics only for severe agitation, aggression or psychosis, or a safety risk.</strong> <strong>Citalopram is the best-supported antidepressant; risperidone the best-supported antipsychotic for BPSD.</strong> <strong>Lewy body dementia: be wary of antipsychotics, use cholinesterase inhibitors.</strong> <strong>Suspected dementia must be reported to the MTO; elder abuse must be reported only in long-term care.</strong> <strong>Wandering, undressing and vocalizing rarely respond to drugs.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>There is no cure, so the aim is function, safety, comfort and dignity for the patient and support for the caregiver.</strong> For behavioural and psychological symptoms, <strong>find the cause and try non-drug approaches first</strong>; medication is for severe or dangerous symptoms.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. General management of dementia</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Alliance</strong> with patient and family → disclose the diagnosis and prognosis, plan treatment, raise safety and legal issues</li><li><strong>Safety</strong>: the 3 Fs - <strong>fire, flood, falls</strong> · driving · medications · home</li><li><strong>Legal duties</strong><ul><li><strong>must report to the Ministry of Transportation (MTO) when dementia is suspected</strong></li><li><strong>no legal duty to report elder abuse - unless it happens in a long-term care home</strong></li></ul></li><li><strong>Future planning</strong>: power of attorney · placement decisions (long-term care waiting lists are long) · advance care planning</li><li><strong>Community supports</strong>: home care (Ontario Health atHome) · Alzheimer Society · <strong>Meals on Wheels</strong> (especially after an MTO report for someone who lives alone or with a non-driving partner) · blister packs and medication delivery · day programs · caregiver support</li><li><strong>Risk reduction for further decline</strong>: nutrition · exercise · hearing · sleep · cognitive training · social engagement · frailty · vascular risk factors · <strong>minimize anticholinergics and polypharmacy</strong></li><li><strong>Goals of medication</strong>: delay progression and functional decline · control symptoms · comfort · quality of life and dignity · treat comorbidities such as depression · support the caregiver</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Behavioural and psychological symptoms of dementia (BPSD)</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>About 90% of people with dementia</strong> have them · they arise from the brain disease, not from earlier psychiatric illness<ul><li><strong>affective</strong>: depression · anxiety · elation or disinhibition · apathy</li><li><strong>behavioural</strong>: irritability · agitation or aggression · pacing, wandering · sleep disturbance · sexual disinhibition · vocalizing</li><li><strong>psychotic</strong>: hallucinations · delusions (paranoid or misidentification)</li></ul></li><li><strong>By dementia type</strong>: frontotemporal → behavioural symptoms · Lewy body → visual hallucinations · vascular → depression and apathy · Alzheimer → delusions, mostly persecutory</li><li><strong>\"Responsive behaviours\"</strong>: every behaviour expresses something meaningful - a response to the person's surroundings, needs or misread information</li><li><strong>Causes</strong>: <strong>unmet needs</strong> (pain, thirst, hunger, toileting) · medical illness or delirium · medications · lower distress tolerance · learned behaviour · environment (over- or under-stimulating) · caregiver stress or lack of training</li><li><strong>Consequences</strong>: earlier long-term care · hospitalization · emotional and financial strain</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Assessment and approach</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"New or worsening behaviour<br/>in a person with dementia\"] --> B[\"DESCRIBE<br/>what, when, where, with whom<br/>immediate safety risk?\"]\n    B --> C[\"INVESTIGATE causes<br/>patient: pain, infection, delirium, constipation,<br/>retention, hearing or vision, depression, medications<br/>caregiver: stress, communication<br/>environment: noise, routine, isolation\"]\n    C --> D[\"CREATE a plan with the caregiver<br/>treat causes · non-drug approaches first\"]\n    D --> E{\"Severe agitation, aggression or psychosis<br/>or a safety risk?\"}\n    E -->|No| F{\"Depression or anxiety?\"}\n    F -->|Yes| G[\"LOW-RISK: antidepressant<br/>citalopram best supported\"]\n    F -->|No| H[\"Continue non-drug care\"]\n    E -->|Yes| I[\"HIGH-RISK: low-dose antipsychotic<br/>risperidone best for BPSD\"]\n    G --> J[\"EVALUATE<br/>did it work? adverse effects?<br/>can the drug be stopped?\"]\n    H --> J\n    I --> J"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">DICE</span></strong>: Describe · Investigate · Create · Evaluate · also ABC (antecedent, behaviour, consequence) and the <strong><span class=\"wl\">PIECES</span></strong> caregiver training</li><li><strong>Rating scales</strong>: Neuropsychiatric Inventory · Cohen-Mansfield Agitation Inventory · Brief Agitation Rating Scale · Pittsburgh Agitation Scale, among others</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Non-drug management (always first)</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Reduce isolation, stimulate the senses, relax</strong>: talking and singing · family videos · pet and music therapy · multisensory (Snoezelen) room · aromatherapy · bright light · massage and touch</li><li><strong>Engagement</strong>: recreation · walking programs · group exercise</li><li><strong>Behaviour therapy</strong>: reward behaviours incompatible with the problem one · cueing · staff training</li><li><strong>Practical techniques (upper-year notes)</strong>: <strong>priming</strong> (predictable routine, familiar objects) · <strong>miming</strong> (communicate in more than one way at once) · <strong>timing</strong> (time of day, pacing) · environment (quiet, daylight) · gentle persuasion</li><li><strong>Limits</strong>: modest effect · weaker for aggression and psychosis</li><li><strong>Hard to treat with any drug</strong>: wandering · undressing · vocalizing · inappropriate urination · hoarding · eating non-food items</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Medication for BPSD</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Older brains need lower doses</strong> and are more sensitive to side effects · minimize polypharmacy</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Drug",
+        "Use",
+        "Key adverse effects / notes"
+       ],
+       "rows": [
+        [
+         "<strong>Citalopram</strong> (also escitalopram, sertraline)",
+         "<strong>Depression or anxiety - try first (low risk)</strong> · best-supported SSRI for BPSD",
+         "<strong>Low sodium</strong> · avoid paroxetine (anticholinergic) and fluoxetine (long washout)"
+        ],
+        [
+         "<strong>Risperidone</strong>",
+         "<strong>Psychosis, agitation, aggression</strong> (high risk, benefit must outweigh harm) · best for BPSD",
+         "Most extrapyramidal effects of the atypicals"
+        ],
+        [
+         "Haloperidol (typical)",
+         "Emergency when other intramuscular options are unavailable",
+         "Most extrapyramidal effects"
+        ],
+        [
+         "Olanzapine",
+         "-",
+         "Sedating · most metabolic effects"
+        ],
+        [
+         "Quetiapine",
+         "Lower doses in Lewy body dementia",
+         "Sedating"
+        ],
+        [
+         "Aripiprazole",
+         "-",
+         "Akathisia"
+        ],
+        [
+         "Lorazepam, zopiclone",
+         "<strong>Short-term only</strong> for sleep",
+         "Sedation · confusion · tolerance"
+        ],
+        [
+         "Trazodone",
+         "Sleep (short term) · frontotemporal dementia",
+         "Sedation · orthostatic hypotension"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>By type</strong>: frontotemporal → <strong>trazodone and SSRIs (citalopram)</strong> · Lewy body → <strong>cholinesterase inhibitors and memantine first</strong> for fluctuation, agitation and psychosis · extremely <strong>sensitive to antipsychotics</strong> (sources differ: the medwiki lecture note allows quetiapine or clozapine, its dementia with Lewy bodies note says do not use antipsychotics - check the slides)</li><li><strong>Severe cases</strong>: anticonvulsants or short-acting benzodiazepines (upper-year notes)</li><li>The upper-year notes list atypical antipsychotics or antidepressants first; the medwiki note puts antidepressants first unless there is psychosis, aggression or risk (check the slides)</li></ul>"
+      }
+     ]
     },
     {
      "id": "psych-w20-08",
      "num": "08",
      "name": "Pharmacotherapy of Cognitive Enhancers",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Pharmacotherapy of cognitive enhancers",
+     "keypoints": "<p>⭐ <strong>Cholinesterase inhibitors for mild to severe Alzheimer, Parkinson disease dementia and Lewy body dementia; memantine only for moderate to severe Alzheimer.</strong> <strong>Cholinergic side effects: gut upset most often, but watch for bradycardia and syncope - a heart rate under 50 or heart block is a contraindication.</strong> <strong>No role in mild cognitive impairment.</strong> <strong>Titrate every 4 weeks, never stop abruptly, and taper by halves every 4 weeks.</strong> <strong>Loss of effect after years is progression, not a reason to switch.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Two classes: cholinesterase inhibitors raise acetylcholine, memantine damps excess glutamate.</strong> They slow decline modestly but cure nothing - the art is choosing the right diagnosis and stage, titrating slowly, and knowing when to switch or stop.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The two classes</h5>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/f4cb0f7ab93f.jpg",
+       "alt": "dementia drugs (AChE inhibitors vs. NMDA antagonists).png",
+       "w": 900,
+       "h": 630,
+       "cap": "Cholinesterase inhibitors block acetylcholine breakdown in the synapse; memantine blocks the NMDA glutamate receptor"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Cholinesterase inhibitors</span>: <span class=\"wl\">donepezil</span>, <span class=\"wl\">rivastigmine</span>, <span class=\"wl\">galantamine</span>",
+        "<span class=\"wl\">Memantine</span>"
+       ],
+       "rows": [
+        [
+         "<strong>Mechanism</strong>",
+         "<strong>Block acetylcholinesterase</strong>, the enzyme that breaks acetylcholine into acetate and choline → more acetylcholine in the synapse (not reuptake inhibition)",
+         "<strong>Non-competitive NMDA receptor antagonist</strong> → less activation by the excess glutamate of dementia → less calcium-driven cell damage"
+        ],
+        [
+         "<strong>Indication by diagnosis</strong>",
+         "<strong>Alzheimer</strong> · mixed Alzheimer and vascular · <strong>Parkinson disease dementia</strong> · <strong>dementia with Lewy bodies</strong> · vascular alone: possible (sources differ: the lecture note and upper-year notes allow some benefit, the medwiki vascular dementia note says not for isolated vascular dementia - check the slides)",
+         "<strong>Alzheimer only</strong> · not frontotemporal or pure vascular dementia"
+        ],
+        [
+         "<strong>Indication by stage</strong>",
+         "<strong>Mild to severe</strong> dementia - all three equally effective, none superior",
+         "<strong>Moderate to severe only</strong>"
+        ],
+        [
+         "<strong>Adverse effects</strong>",
+         "<strong>Cholinergic excess (DUMBBELLS)</strong>: diarrhea, nausea and other <strong>gut effects (most common)</strong> · urinary incontinence · miosis · <strong>bronchospasm</strong> · <strong>bradycardia, syncope</strong> · emesis · lethargy · lacrimation · salivation · also insomnia, nightmares, muscle cramps, agitation, seizures",
+         "<strong>Usually well tolerated</strong> · dizziness · headache · constipation · also agitation or sleepiness, hypertension, hallucinations"
+        ],
+        [
+         "<strong>Relative contraindications</strong>",
+         "<strong>Heart rate under 50</strong>, sick sinus, left bundle branch block, third-degree heart block · active peptic ulcer · severe asthma or COPD · epilepsy · delirium · angle-closure glaucoma · very low weight",
+         "Severe renal impairment: lower the dose"
+        ],
+        [
+         "<strong>Metabolism</strong>",
+         "Donepezil: liver (half-life about 70 hours) · galantamine: liver (± kidney) · rivastigmine: kidney per medwiki, hydrolysis per upper-year notes (check the slides)",
+         "<strong>Kidney</strong> - adjust for low creatinine clearance"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Combination</strong> of both classes: the medwiki note says they can be combined, its Alzheimer note and the upper-year notes say the evidence is insufficient (sources differ - check the slides)</li><li><strong>No evidence in mild cognitive impairment</strong> - prescribe only for confirmed major neurocognitive disorder, but not so late that the neurons are already lost</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Dosing</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Drug",
+        "Start",
+        "Usual / maximum",
+        "Notes"
+       ],
+       "rows": [
+        [
+         "Donepezil",
+         "2.5-5 mg each morning",
+         "5-10 mg · max 10 mg a day",
+         "Liver (\"donepezi<strong>L</strong> = liver\")"
+        ],
+        [
+         "Galantamine",
+         "8 mg a day (or 4 mg twice a day)",
+         "8-24 mg · max 24 mg a day",
+         "Often twice daily"
+        ],
+        [
+         "Rivastigmine",
+         "1.5 mg twice a day",
+         "4.5 mg twice a day · max 6 mg twice a day",
+         "<strong>Patch available</strong> · \"<strong>R</strong>ivastigmine = renal\""
+        ],
+        [
+         "Memantine",
+         "5 mg once a day",
+         "max 10 mg twice a day",
+         "Renal dosing"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Titrate very slowly</strong>: raise the dose about <strong>every 4 weeks</strong> · a trial takes 3-6 months (about twice as slow as antidepressants)</li><li>Memantine: the upper-year notes raise it by 5 mg weekly, reaching 10 mg twice a day by week 4 (sources differ: the medwiki note raises all these drugs monthly - check the slides)</li><li><strong>Never stop abruptly</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Monitoring and expectations</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Before and during</strong>: cognition (MoCA or MMSE, serial) · function and behaviour · patient and caregiver report · <strong>ECG, heart rate, blood pressure</strong> · weight</li><li><strong>Expect modest benefit</strong>: they slow decline rather than stop it, so scores still fall<ul><li>upper-year notes: cognitive gains peak at about 6 months and return to baseline by 9-12 months · global measures peak by 3 months</li><li>may prevent or ease neuropsychiatric symptoms (depression, apathy)</li></ul></li><li><strong>Side effects are usually mild</strong> - do not add another drug to treat them · try a lower dose or a shorter half-life agent</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Switching and stopping</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Confirmed major neurocognitive disorder<br/>right diagnosis and stage\"] --> B[\"Start lowest dose<br/>increase every 4 weeks\"]\n    B --> C[\"Monitor cognition, function,<br/>heart rate, ECG, weight\"]\n    C --> D{\"Problem?\"}\n    D -->|\"Poor tolerability<br/>or no initial response\"| E[\"SWITCH to another agent<br/>stop first, wait for side effects to settle\"]\n    D -->|\"Gradual loss of effect<br/>after years\"| F[\"Likely disease progression<br/>do not switch\"]\n    D -->|\"Stopping criterion met\"| G[\"DEPRESCRIBE<br/>halve the dose every 4 weeks\"]\n    G --> H{\"Rapid decline or new behaviours<br/>in the following 1-3 months?\"}\n    H -->|Yes| I[\"Restart low<br/>titrate to last effective dose\"]\n    H -->|No| J[\"Stay off\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Stop when</strong>: dementia worsens significantly over 6 months on treatment · no meaningful benefit · <strong>severe or end-stage dementia (total care)</strong> · intolerable side effects · poor adherence or monitoring not possible</li><li><strong>Taper</strong>: halve the dose every 4 weeks (twice as slow as SSRIs) · watch for rapid cognitive decline or responsive behaviours</li></ul>"
+      }
+     ]
     }
    ]
   }
