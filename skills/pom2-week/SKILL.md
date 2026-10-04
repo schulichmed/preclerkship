@@ -1,6 +1,6 @@
 ---
 name: pom2-week
-description: Run a week of PoM 2 work end to end, in order - update the medwiki lecture notes from the current OneNote lectures, bank the week's questions from every source, chart them, then ship both to the pom2 repo as portal JSON, rebuild the site, and update Anki. Use for "do week 2", "catch up endo week 3", "run the weekly pipeline", or any request spanning more than one of med-chart / med-questions / med-anki.
+description: Run a week of PoM 2 work end to end, in order - update the medwiki lecture notes from the current OneNote lectures, bank the week's questions from every source, chart them, then ship both to the preclerkship repo as portal JSON, rebuild the site, and update Anki. Use for "do week 2", "catch up endo week 3", "run the weekly pipeline", or any request spanning more than one of med-chart / med-questions / med-anki.
 ---
 
 # A week of PoM 2, end to end
@@ -10,8 +10,12 @@ rules. Invoke them, do not restate or second-guess them here - and where one of 
 fix it in its own file rather than adding a correction to this one, or the fix only exists for
 someone who came in through this skill.
 
+Windows paths below (`C:\Users\nsims\...`) are `/mnt/c/Users/nsims/...` from WSL, where this
+session and the repo run.
+
 **Read first:** `C:\Users\nsims\medwiki\CLAUDE.md` (vault conventions) and
-`C:\Users\nsims\OneDrive\Desktop\projects\pom2\tools\README.md` (the rebuild order).
+`/home/nsims/repos/preclerkship/README.md` (the rebuild order, under "Rebuilding") and
+`pom2/README.md` (PoM 2's sources and field list).
 
 ## The unit of work is one block-week
 
@@ -56,10 +60,13 @@ before charts, and why neither can be written from the note alone.
 
 | What | Written to | Shipped by |
 | --- | --- | --- |
-| Chart | the top of the vault lecture note | `data/notes/<slug>.json`, then the block page's notes tab |
-| Question | a `00 - Practice Questions/` note | `data/questions/<slug>.json`, then the block page's questions tab |
+| Chart | the top of the vault lecture note | `pom2/data/notes/<slug>.json`, then the block page's notes tab |
+| Question | a `00 - Practice Questions/` note | `pom2/data/questions/<slug>.json`, then the block page's questions tab |
 
-The site is <https://noorsimsam.com/pom2/>, and `quiz.js` is its own question runner with its own
+**The repo is `/home/nsims/repos/preclerkship`** (GitHub `schulichmed/preclerkship`), which holds
+FoM, PoM 1, PoM 2 and T2C side by side; PoM 2 lives under `pom2/`. The old
+`C:\Users\nsims\OneDrive\Desktop\projects\pom2` repo stopped being updated on 2026-09-23 - never
+write to it. The site is <https://schulichmed.github.io/preclerkship/pom2/>, and `quiz.js` is its own question runner with its own
 progress store, keyed on the same `qid` and held in the browser's `localStorage`.
 
 **Do not publish a quiz Artifact as part of a week.** The five per-block Artifact hubs that
@@ -99,12 +106,19 @@ one thing worse than leaving a stale note in place: it overwrites good content w
 and reports the overwrite as an update.
 
 So before Stage 1 touches anything, confirm the week's OneNote section holds a page per lecture
-in the week folder, with this year's decks in them. **If pages are missing, name them and stop.**
+in the week folder, with this year's decks in them. One command answers it, against the live
+notebook and with no login:
+
+```bash
+python tools/onenote_local.py list "Principles of Medicine 2"
+```
+
+**If pages are missing, name them and stop.**
 Do not proceed on the assumption she will add them; do not treat a thin section as a lecture with
 little content.
 
 **Recount every total at the moment you need it.** Never quote a question count from a skill
-file, a README, this file, or a memory. Use `len()` over `data/questions/<slug>.json`, and say
+file, a README, this file, or a memory. Use `len()` over `pom2/data/questions/<slug>.json`, and say
 when the count was taken.
 
 ## Stage 1 - update the vault lecture notes from OneNote
@@ -132,6 +146,11 @@ everything from the `> [!check] Objectives` callout down is the note's own body,
 this stage writes.
 
 ### OneNote outranks what is already in the note
+
+**The lecture slides are the gold standard**, whether they sit in OneNote or as a deck in
+`C:\Users\nsims\Downloads\`. They beat the vault note, her cards, review decks and textbook
+teaching. When a card, chart or question is disputed, check the **slide itself**, not the vault
+note, and never correct anything to standard teaching when the slide says otherwise; flag it.
 
 **Most pre-existing medwiki lecture content is an upper year's notes, "Maggie's notes", not
 hers and not this year's course.** Nothing in the vault says so: there is no provenance line, no
@@ -173,71 +192,49 @@ so only make it after actually comparing, never because a note exists.
 1. **The PDF export in `C:\Users\nsims\OneDrive\Documents\`.** Named either by the vault lecture
    name (`04 - Clinically Useful Endocrine Principles.pdf`) or by the OneNote page title
    (`UME P2 Endocrine Pharmacology (Pharmacology of T2DM).pdf`), so match on both.
-2. **OneNote via the ms365 MCP.** Notebook `Principles of Medicine 2`
-   (`1-cd3f58aa-2e1a-44d4-b871-e2f265fbdd36`), content in section groups such as `B1 Endo`
-   (`1-d25acdea-e17e-438b-9361-032cfff576ed`), lecture pages under `Synch W<N>`.
-   Cross-notebook page listing fails with Graph error 20266, so query per-section. The token
-   expires often, and a failed call says so. Ask her to run `login` rather than working around
-   it.
+2. **OneNote itself, through `tools/onenote_local.py` in the preclerkship repo.** It drives the
+   installed desktop app over COM, which is already signed in, so there is **no login, no
+   token and nothing to expire**. The ms365 MCP server is not the route any more: it has been
+   refused since 2026-09-07 with `AADSTS50158`, a Duo challenge on a stale token. Do not try to
+   fix that, and do not ask her to run `login`.
 
-   **Read the page's own text before you touch the printout, every time.** A lecture page is
-   one `<p>` or two of *her typed notes*, an `<object>` (the attached PDF), and 20-90 `<img>`
-   slide printouts. The printout carries no extractable text - that part is true - but her
-   typed notes come back as ordinary HTML in the page body, and they are the most valuable
-   thing on the page, because they are her annotation rather than the lecturer's slide.
-   **Incorporate them into the vault note alongside the slide content, never instead of
-   checking for them.** Extract them from the `rawResponse` field of
-   `get-onenote-page-content` and grep it before concluding a page is empty - a page reporting
-   only a few hundred bytes of text is *not* proof it is title-only. This cost a wrong answer
-   on 2026-09-07: her note on the Synch W2 hypothyroidism page was skipped on the assumption
-   the body was image-only.
+   From the preclerkship repo root, under either interpreter - this one takes a script file, so the
+   pyenv shim that mangles a multi-line `-c` is not in play:
 
-   **Slide text** is not in the HTML - it is pixels. Fetch the `src` resources with
-   `download-bytes-to-file` and read the PNGs directly, which works fine at 1279x720 and is
-   much cheaper tiled 4-up into contact sheets.
+   ```bash
+   python tools/onenote_local.py list "Principles of Medicine 2"    # path :: title :: id
+   python tools/onenote_local.py page --find "<title fragment>" --slides
+   ```
 
-   **Handwritten ink** is retrievable, but it is **opt-in - never part of the weekly run.**
-   Transcribing one lecture page costs ~40 image reads, so do it only when she asks for it by
-   name. Verified 2026-09-07 against Asynch W1 `Pharmacology of glucose lowering drugs_edited`:
-   1,429 strokes, 36 annotation clusters, spanning slides 11-53.
+   `list` prints the full path through the section group, and `--find` refuses an ambiguous
+   match rather than guessing - which is what keeps the two `Synch W1`s and two `Synch W2`s in
+   this notebook apart. Narrow with `--notebook` when a fragment hits more than one.
 
-   - **Fetch.** `get-onenote-page-content` has no flag for it. Go around it with
-     `download-bytes-to-file` and the raw relative path
-     `/users/<userId>/onenote/pages/<pageId>/content?includeInkML=true`. The reply is
-     `multipart/mixed`: an HTML part, then an `application/inkml+xml` part.
-   - **Parse.** There is **no recognised text** - only strokes, so it must be drawn to be read.
-     Each `<inkml:trace>` is comma-separated points of absolute `X Y F` integers in himetric;
-     its `brushRef` resolves to an `<inkml:brush>` carrying colour and width.
-   - **Split pen from highlighter by colour**, or broad highlighter swipes swamp the writing.
-     Seen in this notebook: highlighter `#FFFC00 #00F900 #FFACD5 #A9D8FF #A2D762`; pen
-     `#000000 #E71225 #FF8517 #008C3A`.
-   - **Cluster, don't band.** The page is ~8 m tall in himetric, so uniform bands are useless
-     (82 unreadable strips on the first attempt). Sort pen strokes by y, break where the gap
-     exceeds ~4000 himetric, drop clusters under ~3 strokes, and render each tightly cropped
-     with any overlapping highlighter drawn *underneath* for context.
-   - **Tie each cluster to its slide.** The HTML part gives every `<img>` an absolute `top:` in
-     CSS px and the slides sit ~828 px apart; ink is himetric, and **1 px = 26.46 himetric**
-     (`25.4/96*100`). So `cluster_y / 26.46` → px → nearest image top → slide number. This is
-     what makes the transcription usable rather than a pile of loose phrases.
-   - **Flag what you guessed.** Her shorthand is genuinely ambiguous in places. List the words
-     you are unsure of rather than smoothing them over, and separately flag anything that reads
-     like a content slip (`Orthostatic HTN` for hypotension, `DDP4` for DPP-4) - she wants those
-     caught before they reach a question bank.
+   **Her typed notes come first, and they are the point.** `page` prints them under
+   `## typed notes` before anything else: they are her annotation rather than the lecturer's
+   slide, and they are the most valuable thing on the page. **Incorporate them into the vault
+   note alongside the slide content.** A page that looks thin is *not* proof it is title-only -
+   this cost a wrong answer on 2026-09-07, when her note on the Synch W2 hypothyroidism page
+   was skipped on the assumption the body was image-only.
 
-   Two traps in the server's own setup, if it ever needs re-adding. It must be spawned from the
-   installed binary (`~/.npm-global/bin/ms-365-mcp-server`), **not** `npx -y` - npx re-resolves
-   the registry on every launch and blows the MCP startup window, so the server reports
-   `Failed to connect - Request timed out`. And `--verify-login` returns
-   `Graph API access failed: 403` even when everything works, because it probes `/v1.0/me`, which
-   needs a `User.Read` the onenote preset does not request. Ignore it and test a real OneNote
-   call instead.
+   **`--slides` gives you the slide text as text.** OneNote has already run OCR over every
+   printout and stores it in the page, so the words on the decks need no image download and no
+   contact sheets. Two limits on that text: the OCR garbles small type and logos (`Western`
+   comes back as `NVestern`), so **confirm any exact value - a dose, a lab number, a cutoff -
+   against the PDF** rather than banking it from OCR; and a **figure is still pixels**, so a
+   diagram, a graph or a histology image is read from the route-1 PDF.
 
-   Section names repeat across section groups - there are two `Synch W1`s and two `Synch W2`s in
-   this notebook alone. Resolve a section through its section group, never by name.
+   Handwritten ink is **not** part of this routine. Her typed notes are what this stage
+   incorporates; don't go after ink unless she asks for it by name.
 
-Reading OneNote needs no permission. *Posting* to OneNote is a gate further down, and since
-2026-09-07 it is a **rule, not a flag** - the server runs `--preset onenote` with no
-`--read-only`, so the create tools are live and nothing mechanical will stop you.
+   The tool needs `powershell.exe` and Office 16, so it works on her laptop and nowhere else.
+   If the app will not start, OneNote's own automatic backups under
+   `%LOCALAPPDATA%/Microsoft/OneNote/16.0/Backup` hold the same text, and `strings -el` reads a
+   `.one` section file without any app at all - but flattened, so her notes and the lecturer's
+   slides are no longer separable. Treat that as evidence of what a page said, not as a source
+   for Stage 1.
+
+Reading OneNote needs no permission and no network. *Posting* to OneNote is a gate further down.
 
 ## Stage 2 - questions into the vault
 
@@ -262,7 +259,7 @@ is and emit the marker directly under its `# N` heading:
 
 **An export reads the marker, not the note it is sitting in**; an unmarked question belongs to
 the note's own family. Before Stage 5, check that the markers in the vault and the `meds2029`
-entries in `data/questions/<slug>.json` name the same set.
+entries in `pom2/data/questions/<slug>.json` name the same set.
 
 ### Every question names the lecture it tests, not just the week
 
@@ -346,9 +343,9 @@ currency. Check all three before banking, and again before the Stage 4 export:
   `len()` every option and confirm the key is not the longest. *Observed 2026-09-09: the key was
   the longest option in 18 of 24 DSSG questions, up to 4.8x the mean distractor.*
 - **Markup.** Options carry **none** - no `**bold**`, no ⭐ or ⚠, and ⭐ **no wikilinks**, which
-  `pom2.css` paints in accent ink with a dotted underline while plain options stay black.
+  `portal.css` paints in accent ink with a dotted underline while plain options stay black.
   Whatever markup one option carries, all of them carry. Stems and answer callouts keep their
-  wikilinks; those give nothing away. `.opt .wl` is neutralised in `pom2.css` as a backstop, but
+  wikilinks; those give nothing away. `.opt .wl` is neutralised in `portal.css` as a backstop, but
   it knows only that one class - a lone `<strong>` is the same tell in another colour. *Observed
   2026-09-08: 252 endo options carried a wikilink, and in 16 questions exactly one option was
   tinted and it was the key.*
@@ -511,7 +508,7 @@ notes. This is the one unautomated step in the chain, so budget for it.
   becomes a tinted option, because the vault note legitimately carries links the site must not.
 - The shipped files are **compact** JSON (`json.dumps` default separators, UTF-8, LF, no trailing
   newline), unlike `data/notes/*.json` which is `indent=1`.
-- The field list is in the repo `README.md`. `keyed: false`, `unscorable: true` and
+- The field list is in `pom2/README.md`. `keyed: false`, `unscorable: true` and
   `retired: true` carry real meaning, do not flatten them.
 - If `tools/questions_from_vault.py` exists by the time you read this, it replaces this stage and
   must run **before** `rosters_from_vault.py`, which borrows its week headings from the questions
@@ -568,16 +565,25 @@ and are covered by a separate protocol.
 session's work is worse than a stale wikilink, because it is the shared history that ends up
 wrong. During one recent session two commits landed mid-conversation from elsewhere.
 
-From the repo root, in this order, with the absolute interpreter path, since `python` on PATH is
-a pyenv shim that mangles multi-line `-c`:
+From the repo root, in this order. Run them from WSL with `python3` (the repo lives at
+`/home/nsims/repos/preclerkship`), and point the two vault readers at the WSL mount, since their
+defaults are Windows paths and `rosters_from_vault.py` dies on them:
 
+```bash
+export POM2_VAULT="/mnt/c/Users/nsims/medwiki/01 - Lectures/99 - PoM 2"
+python3 tools/rosters_from_vault.py
+python3 tools/figures.py              # only if a chart embeds a picture
+python3 tools/charts_from_vault.py
+python3 tools/roman_items.py
+python3 tools/question_figures.py
+python3 tools/review_lectures.py --derive
+python3 tools/build_pages.py
+python3 tools/build_index.py
+python3 tools/build_hub.py
 ```
-C:\Users\nsims\.pyenv\pyenv-win\versions\3.9.13\python.exe tools/rosters_from_vault.py
-C:\Users\nsims\.pyenv\pyenv-win\versions\3.9.13\python.exe tools/charts_from_vault.py
-C:\Users\nsims\.pyenv\pyenv-win\versions\3.9.13\python.exe tools/review_lectures.py --derive
-C:\Users\nsims\.pyenv\pyenv-win\versions\3.9.13\python.exe tools/build_pages.py
-C:\Users\nsims\.pyenv\pyenv-win\versions\3.9.13\python.exe tools/build_index.py
-```
+
+The repo `README.md` ("Rebuilding") is the authority on this list and also covers FoM, PoM 1 and
+T2C; a week of PoM 2 needs only the lines above.
 
 `review_lectures.py` is the one script here that **does write** `data/questions/*.json`, and the
 exception is narrow: it sets each question's `review` field and touches nothing else. Read its
@@ -586,25 +592,35 @@ run line. It prints how many questions resolved to a lecture and by which route,
 means the `#### group` heading or the `Tests [[...]]` line did not resolve, which is a vault fix,
 not a tool fix. Run `--validate` after any change to the matcher.
 
+⚠ **It re-derives every course, not just the questions you added.** On 2026-10-03 one run moved
+the `review` field on ~1,600 existing questions across FoM, PoM 1 and all five PoM 2 blocks -
+drift nobody asked for, in a commit about one week. **Diff the banks after it runs**: if fields
+other than your new questions' `review` moved, keep the values for your new qids, `git checkout`
+the banks, re-apply your export and write just those values back. Raise the drift with her
+separately rather than shipping it under a week's commit.
+
+**For a weekly quiz or any set spanning several lectures, give each question its own
+`Tests [[NN - Lecture]]`** in its `lectureMeta`, not one list for the whole set. Route 2 takes
+every wikilink in `lectureMeta`, so a set-level list sends every question to every lecture. The
+endo Week 1 quiz did exactly that and its questions each review seven lectures.
+
 **This updates the portal, it does not rebuild the repo.** Worth knowing exactly what each script
 touches, because the question bank is the irreplaceable part:
 
 - **Only `review_lectures.py` writes `data/questions/*.json`, and only its `review` field.**
-  The other four read the bank and never write it, so the hand-authored stems, options, keys and
-  answer callouts cannot be clobbered by a rebuild. `review_lectures.py` rewrites each file
-  wholesale to set that one field, which is why it is worth knowing it is the exception: if it is
-  ever extended, that guarantee is the thing to protect.
+  The others read the bank and never write it, so the hand-authored stems, options, keys and
+  answer callouts cannot be clobbered by a rebuild.
 - `data/notes/*.json` is regenerated from the vault, which is the point - the vault is the source
   of truth for notes and charts.
-- The five block pages and `index.html` are **overwritten wholesale**, but `existing()` in
+- The block pages and `index.html` are **overwritten wholesale**, but `existing()` in
   `build_pages.py` reads the blurb, the meta description and the accent trio back out of the page
   it is replacing and writes them into the new one, so per-block identity survives.
 - **Anything else hand-edited directly into the HTML is lost on the next rebuild.** That is why
   prose gets edited in the templates inside `build_pages.py` and `build_index.py`, not in the
   pages. It is not a style preference, it is the only place an edit survives.
 
-Re-run the last two after editing any of `base.css`, `pom2.css`, `quiz.js`, `notes.js` or
-`pom2.js`, because the asset cache-busting hash is read off the file at build time. The per-block
+Re-run the last three after editing any of `base.css`, `portal.css`, `portal.js`, `quiz.js` or
+`notes.js` (all at the repo root), because the asset cache-busting hash is read off the file at build time. The per-block
 blurb and the accent trio are the two things read back out of the HTML and preserved.
 
 **Any prose written for the portal keeps her voice and uses no em dashes.** Edit her existing
@@ -628,10 +644,34 @@ a deck size.
   and compare them against the note. There is no timestamp shortcut.
 - **The chart sets priority, not scope.** The note is the source. Where the chart bolded
   something, that gap goes first and earns `#HighYield`.
+- **Give every card that needs one an established mnemonic.** This applies to cards you add and
+  to the CLim cards you touch. The user asked for the hooks med students already share (classic
+  acronyms, drug-name stems, Sketchy-style images, number patterns) ahead of invented ones.
+  `med-anki`'s "Established mnemonics come first" states the order, the `(classic)` label and
+  what to do when a classic disagrees with the lecture. On a CLim note, **append** the hook to her
+  `Extra` with `updateNoteFields` and never overwrite what she wrote there. List the mnemonics
+  added in the Stage 7 report so she can veto one.
 
 High yield means facts that drive a clinical decision. Keep a number when it changes a decision,
 drop it when it is a property of the molecule. The deck naming, the tag handling and the
 AnkiConnect mechanics are `med-anki`'s to state, and it now does.
+
+### Figures on a chart
+
+A chart may carry **one figure**, embedded in its chart region and written by `med-chart`
+(see its "Where the user's charts deliberately differ"). `figures.py` resolves it against the
+vault's `Attachments`, re-compresses it into `assets/figures/<hash>.jpg` and writes the
+`data/figures.json` manifest; `charts_from_vault.py` only reads that manifest.
+
+- **It runs between the roster and the charts**, and it is skippable in a week whose charts
+  embed nothing.
+- **A picture it cannot find is named on stderr and the block is dropped**, so the chart still
+  ships. Check its summary line - `N in manifest, N new, N missing` - before Stage 5. Missing is
+  the number that matters; the chart reads fine without the figure, which is how a dropped one
+  hides.
+- **Report the figure count in Stage 7**, for the same reason the question pictures are reported.
+- ⚠ **Never generate a figure.** It has to already be in the vault. A diagram with a garbled
+  label or an invented structure is worse than none, because it gets studied and then believed.
 
 ## Stage 7 - report
 
@@ -675,6 +715,29 @@ already are.
 | DSSG cases | `New Questions - <topic>.md` | `family: "meds2029"`, `source: "dssg"` | a discussed case becomes a stem with options, keyed to the group's reasoning |
 | In-class CBL cases | `New Questions - <topic>.md` | `family: "meds2029"`, `source: "new"` | the same, from the case as it was worked in class |
 
+**Writing the options is where both Stage 2 rules bind hardest** - *Every option has to look
+like the answer* and *Nothing enters a question that the material did not put there*. A source
+that arrives as prose has no options at all, so every one is written from scratch, and the key
+is the one you understand best: that is how it ends up longest, most qualified, and first.
+
+**Start from `tools/elentra_quiz.py <capture>.json --topic <slug> --week N --note "<Weekly Quizzes note>"`**,
+which writes a house-format fragment into `build/`. The capture file accumulates every quiz
+ever grabbed (the 2026-10-04 one still held Week 1 endo), so take only the capture whose title
+is this week's. **The key is the `Correct Answer:` line in the feedback, not the `correct` field**,
+which lists every option on a radio question.
+
+**The rewrite is the work, not the extraction.** Capturing the quiz is one bookmarklet click;
+turning ten select-alls into defensible combinations MCQs is the slow part, and a case discussed
+for forty minutes has to be cut down to one decision worth asking about.
+
+**Where the reasoning is yours, say so.** Elentra usually writes `Rationale: N/A`, and a DSSG or
+CBL case is keyed by the discussion rather than by an answer letter. Write the reasoning and
+**label it as yours** rather than passing it off as transcribed. Where the discussion genuinely
+does not settle a single answer, ship it **`keyed: false`** rather than inventing a letter - three
+module cases already do exactly this, and the portal states it on the question's face.
+
+**The weekly quizzes carry no images**, so nothing in the picture rule applies to them.
+
 #### A matching activity becomes a numbered-against-lettered MCQ
 
 A matching activity has no single best answer and the bank cannot score it, so it converts to one
@@ -700,6 +763,12 @@ like the answer* and *Nothing enters a question that the material did not put th
 that arrives as prose has no options at all, so every one is written from scratch, and the key
 is the one you understand best: that is how it ends up longest, most qualified, and first.
 
+**Start from `tools/elentra_quiz.py <capture>.json --topic <slug> --week N --note "<Weekly Quizzes note>"`**,
+which writes a house-format fragment into `build/`. The capture file accumulates every quiz
+ever grabbed (the 2026-10-04 one still held Week 1 endo), so take only the capture whose title
+is this week's. **The key is the `Correct Answer:` line in the feedback, not the `correct` field**,
+which lists every option on a radio question.
+
 **The rewrite is the work, not the extraction.** Capturing the quiz is one bookmarklet click;
 turning ten select-alls into defensible combinations MCQs is the slow part, and a case discussed
 for forty minutes has to be cut down to one decision worth asking about.
@@ -719,7 +788,7 @@ module cases already do exactly this, and the portal states it on the question's
 | | |
 | --- | --- |
 | Stage 8 | bank it into its own note, numbering continuing from that note |
-| Stage 4 | add those questions to `data/questions/<slug>.json` |
+| Stage 4 | add those questions to `pom2/data/questions/<slug>.json` |
 | Stage 5 | rebuild the portal so the counts move |
 | Stage 7 | report what it added, and what is still pending |
 
@@ -735,10 +804,16 @@ OneNote precedence rule, not a banking decision.
   substitute one.
 - **Deleting the CLim source deck.** Import, verify, then ask. Do not delete it for her, and run
   no Check Media purge before the import: 333 of the endo notes carry images that the deck owns.
-- **Posting charts to OneNote.** The create tools are live and `Notes.Create` is consented, so
-  this is held by nothing but this line. Her notebook is the year's lecture record - propose the
-  page and wait for an explicit yes before creating or updating one, every time. `--read-only`
-  used to enforce this; it no longer does.
+- **Posting charts to OneNote.** Her notebook is the year's lecture record - propose the page
+  and wait for an explicit yes before creating or updating one, every time. Reading is local and
+  needs nothing; **writing still has no local route**, so posting means the ms365 MCP server,
+  which is refused with `AADSTS50158` until she completes an interactive sign-in. So today the
+  honest answer to a posting request is that it needs her login first - ask before starting one.
+  Two traps if that server is ever re-added: spawn it from the installed binary
+  (`~/.npm-global/bin/ms-365-mcp-server`), **not** `npx -y`, which re-resolves the registry on
+  every launch and blows the MCP startup window; and `--verify-login` returns
+  `Graph API access failed: 403` even when it works, because it probes `/v1.0/me` for a
+  `User.Read` the onenote preset does not request - test a real OneNote call instead.
 - **Pushing to GitHub.** Committing is part of Stage 5, pushing is not.
 - **Publishing any Artifact at all.** A week's work ships through the repo. If publishing one
   looks like the right answer, ask first, because it usually means the repo path was missed.
