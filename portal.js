@@ -241,7 +241,7 @@
     /* These notes are not written one per lecture: one chart carries two or
        three of them. The note is titled with every lecture it covers, rather
        than being filed under one and leaving the rest reading as unwritten. */
-    head.appendChild(el("h4", null, coveredTitle(lec)));
+    head.appendChild(el("h4", null, lec.name));
     head.appendChild(el("span", "spacer"));
     /* a note is reported by the block it came from, which in the bank's
        dialog is the question's block and not the page's */
@@ -251,6 +251,23 @@
         function () { opts.onPrint(art); }));
     }
     art.appendChild(head);
+
+    /* The lectures this note also holds, as a line under the heading. They
+       used to be joined into the heading itself, which with six lectures made
+       a paragraph of a title; the names belong in the heading's shadow, each
+       with its number so it reads like the week's own list. */
+    if (lec.covers && lec.covers.length) {
+      var cv = el("div", "covers");
+      cv.appendChild(el("span", "covers-label", "Also covers"));
+      lec.covers.forEach(function (c, i) {
+        if (i) cv.appendChild(el("span", "covers-sep", "·"));
+        var item = el("span", "covers-item");
+        item.appendChild(el("span", "covers-num", c.num));
+        item.appendChild(document.createTextNode(" " + c.name));
+        cv.appendChild(item);
+      });
+      art.appendChild(cv);
+    }
 
     if (lec.title) art.appendChild(el("p", "note-title", lec.title));
     /* A reader's report, merged from the pull request the Report button

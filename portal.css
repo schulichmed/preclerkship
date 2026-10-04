@@ -1923,6 +1923,23 @@ body.has-dialog{overflow:hidden;}
     margin-bottom:8px;
 }
 
+/* the lectures a note also holds: one quiet line under the heading */
+.covers{
+    font-size:.82rem;
+    line-height:1.5;
+    color:var(--muted);
+    margin:-2px 0 10px;
+}
+.covers-label{
+    font-size:.7rem;
+    font-weight:600;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    margin-right:8px;
+}
+.covers-sep{margin:0 6px;}
+.covers-num{font-weight:600;letter-spacing:.04em;}
+
 .framing{
     font-size:.92rem;
     line-height:1.6;
