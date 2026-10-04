@@ -3054,43 +3054,1076 @@
      "id": "msk-w8-05.2",
      "num": "05.2",
      "name": "Clinical Approach to the Elbow",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Clinical approach to the elbow",
+     "keypoints": "<p>⭐ <strong>A young child who will not use an arm after it was pulled has a radial head subluxation: reduce it by pronation and extension, no cast needed.</strong> <strong>An adult elbow dislocation after a FOOSH is an emergency: check the ulnar nerve and watch for compartment syndrome.</strong> <strong>A red, warm olecranon swelling is infection until proven otherwise, so aspirate it.</strong> <strong>Valgus laxity with medial pain in a thrower = ulnar collateral ligament.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Elbow pain is sorted two ways: by where it hurts (front, inside, outside, back) and by which tissue is at fault (bone and joint, tendon, or something else).</strong> Joint and ligament problems cost range of motion and stability. A fracture can sit anywhere, so keep it on every list.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The differential, by location</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Where",
+        "Bones, ligaments, joints",
+        "Muscles, tendons",
+        "Other structures"
+       ],
+       "rows": [
+        [
+         "<strong>Anterior</strong>",
+         "<span class=\"wl\">Osteoarthritis</span> · inflammatory arthritis",
+         "<span class=\"wl\">Distal biceps tendinopathy</span>",
+         "—"
+        ],
+        [
+         "<strong>Medial</strong>",
+         "<span class=\"wl\">Ulnar collateral ligament tear</span>",
+         "<span class=\"wl\">Medial epicondylosis</span> (golfer's elbow)",
+         "<span class=\"wl\">Ulnar neuritis / neuropathy</span>"
+        ],
+        [
+         "<strong>Lateral</strong>",
+         "—",
+         "<span class=\"wl\">Lateral epicondylosis</span> (tennis elbow)",
+         "—"
+        ],
+        [
+         "<strong>Posterior</strong>",
+         "Osteoarthritis · inflammatory arthritis",
+         "Distal triceps tendinopathy",
+         "<span class=\"wl\">Olecranon bursitis</span>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The upper-year list is longer<ul><li>anterior: anterior capsule strain · loose body in the joint · <span class=\"wl\">pronator syndrome</span></li><li>medial: valgus extension overload syndrome</li><li>lateral: osteochondral defect · plica · posterolateral rotatory instability · radial tunnel (posterior interosseous nerve) syndrome</li><li>posterior: olecranon stress fracture · posterior impingement · gout</li></ul></li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Elbow pain\"] --> B{\"Injury? fall on an outstretched hand,<br/>deformity, severe pain\"}\n    B -->|Yes| C[\"X-ray: fracture or dislocation<br/>fracture can be anywhere\"]\n    B -->|No| D{\"Where is it worst?\"}\n    D -->|Anterior| E[\"Arthritis · distal biceps tendinopathy\"]\n    D -->|Medial| F[\"Medial epicondylosis · ulnar collateral ligament tear<br/>ulnar neuropathy\"]\n    D -->|Lateral| G[\"Lateral epicondylosis\"]\n    D -->|Posterior| H{\"Swelling over the olecranon?\"}\n    H -->|\"Yes: red, warm, fever\"| I[\"INFECTIOUS BURSITIS<br/>aspirate, drain, antibiotics\"]\n    H -->|\"Yes: not red or warm\"| J[\"Olecranon bursitis<br/>rest, ice, pad the elbow\"]\n    H -->|No| K[\"Arthritis · triceps tendinopathy\"]"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Arthritis of the elbow</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Types</strong><ul><li><strong>inflammatory</strong>: <span class=\"wl\">rheumatoid arthritis</span> · <span class=\"wl\">psoriatic arthritis</span> · <span class=\"wl\">gout</span> · infection</li><li><strong>non-inflammatory</strong>: <strong>degenerative</strong> (slow, gradual) · <strong>post-traumatic</strong> (osteoarthritis earlier, possibly in a different pattern)</li></ul></li><li><strong>Presents as</strong>: dull, achy pain with flares · stiffness · <strong>lost range of motion</strong> · locking</li><li><strong>X-ray</strong>: uneven loss of joint space · osteophytes (bony spurs) · subchondral cysts · subchondral sclerosis</li><li><strong>Treatment</strong><ul><li>education: a long, \"grumbling\" course with no cure</li><li>ice or heat · oral or topical anti-inflammatories (NSAIDs; upper-year notes add acetaminophen) · steroid injection into the joint</li><li>physiotherapy to keep range of motion · occupational therapy to keep function</li><li>surgery only when intolerable or not settling: arthroscopic debridement or joint replacement (arthroplasty)</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/427fa8372cc8.jpg",
+       "alt": "x-ray osteoarthritis of the elbow.png",
+       "w": 418,
+       "h": 393,
+       "cap": "Lateral X-ray of an osteoarthritic elbow: narrowed joint space with bony spurs"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Dislocations: two joints, two different patients</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Elbow dislocation",
+        "Radial head subluxation (\"nursemaid's elbow\")"
+       ],
+       "rows": [
+        [
+         "<strong>Joint</strong>",
+         "Humero-ulnar (the elbow itself)",
+         "Proximal radioulnar: the radial head slips out of the <span class=\"wl\">annular ligament</span>"
+        ],
+        [
+         "<strong>Who and how</strong>",
+         "Fall on an outstretched hand (FOOSH) · car crash, bracing against the dashboard",
+         "<strong>Child, rare after age 5</strong>, girls and left arm more often · <strong>a pull along the arm</strong>"
+        ],
+        [
+         "<strong>Why</strong>",
+         "Uncommon, because the trochlea sits securely in the trochlear notch · <strong>posterior is most common</strong>",
+         "Weak annular ligament, unfused radial growth plate"
+        ],
+        [
+         "<strong>Presents as</strong>",
+         "Severe pain, worse with movement · lost range of motion",
+         "<strong>Child will not use the arm and holds it flexed against the body</strong>"
+        ],
+        [
+         "<strong>Investigations</strong>",
+         "X-ray: partial or complete dislocation",
+         "<strong>Clinical diagnosis</strong> · X-ray only to rule out a fracture"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "Closed reduction + <strong>splint at 90°</strong> (may fail if soft tissue is trapped) · otherwise open reduction internal fixation",
+         "<strong>Closed reduction by pronation and extension</strong> · no cast or splint"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Elbow dislocation is an emergency</strong>: capsule rupture · torn ligaments · broken skin · <strong>nerve injury, especially the ulnar nerve</strong> · compartment syndrome</li><li>The medwiki note calls the child's injury a radial head <em>dislocation</em>; upper-year notes call it a <em>subluxation</em></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/1b0f399e3aad.jpg",
+       "alt": "types of elbow dislocation.png",
+       "w": 460,
+       "h": 647,
+       "cap": "Elbow dislocations by direction: posterior (the most common), anterior, lateral, medial and divergent"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Ulnar collateral ligament injury</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The ligament is the <strong>main stabiliser of the medial elbow</strong> · injured by <strong>chronic, repetitive overuse</strong> (baseball pitchers)</li><li><strong>Presents as</strong>: medial elbow pain, tender on palpation · a <strong>sudden pop</strong> if it tears acutely · <strong>too much valgus movement, with no firm end point on valgus stress</strong></li><li><strong>Investigations</strong>: <span class=\"wl\">valgus stress test</span> · likely needs an exam by sports medicine or orthopaedics · MRI for the soft tissue</li><li><strong>Treatment</strong><ul><li>education: ligaments heal slowly, if at all</li><li>ice · topical or oral anti-inflammatories · physiotherapy for the muscles that stabilise the elbow · brace</li><li><strong>reconstruction only when needed for functional goals</strong> (professional athletes), with long physiotherapy after</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Olecranon bursitis</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>A bursa is a flat, fluid-filled sac that lets tissue glide over bone; irritated, it fills with fluid · the olecranon bursa is the <strong>most common superficial bursitis</strong></li><li><strong>Causes</strong>: one hard blow (a fall on the elbow) · repeated leaning (some jobs) · <strong>infection</strong> (look for a break in the skin)</li><li><strong>Rule out infectious bursitis</strong>: <strong>redness, warmth, fever</strong> → aspirate the joint · drain and give antibiotics</li><li>Not every swollen elbow is bursitis: gout and rheumatoid arthritis can look the same and need their own treatment</li><li><strong>Investigations</strong>: usually none · X-ray after trauma · aspirate if infection is suspected · ultrasound or MRI if atypical (upper-year notes)</li><li><strong>Treatment</strong>: benign and self-limiting once the cause stops · rest, ice, compression, elevation · pad the elbow, stop leaning on it · topical or oral anti-inflammatories · <strong>bursectomy for a chronic case</strong> (upper-year notes also list an infected one)</li></ul>"
+      }
+     ]
     },
     {
      "id": "msk-w8-06.1",
      "num": "06.1",
      "name": "Anatomy of the Muscles of the Distal Upper Extremity",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Anatomy of the muscles of the distal upper extremity",
+     "keypoints": "<p>⭐ <strong>Flexor carpi ulnaris and the half of flexor digitorum profundus to the ring and little fingers are the 1½ anterior forearm muscles on the ulnar nerve; every other anterior muscle is median, and every posterior muscle is radial.</strong> <strong>Flexor digitorum profundus is the only muscle that bends the fingertip.</strong> <strong>Brachioradialis sits in the back but flexes the elbow.</strong> <strong>Palmaris longus is missing in 15% of people.</strong> <strong>Mallet finger = splint the tip straight for 6-8 weeks.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The forearm is two compartments with two nerves and two epicondyles:</strong> the front flexes and pronates, runs on the median nerve and starts at the medial epicondyle; the back extends and supinates, runs on the radial nerve and starts at the lateral epicondyle. The exceptions are what gets examined.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Compartments of the forearm</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The forearm runs from the cubital fossa to the wrist · radius laterally, ulna medially, joined by the <strong>interosseous membrane</strong></li><li>The bones, the membrane and the anterior intermuscular septum, inside the antebrachial fascia, split it into two compartments</li><li>They are named \"anterior\" and \"posterior\" for where their muscles attach, although they sit more medially and laterally</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Anterior compartment</span>",
+        "<span class=\"wl\">Posterior compartment</span>"
+       ],
+       "rows": [
+        [
+         "<strong>Does</strong>",
+         "Flexes the wrist and fingers · pronates",
+         "Extends the wrist and fingers · supinates"
+        ],
+        [
+         "<strong>Common origin</strong>",
+         "<span class=\"wl\">Medial epicondyle</span> (not the deep layer)",
+         "<span class=\"wl\">Lateral epicondyle</span> (not the deep layer)"
+        ],
+        [
+         "<strong>Nerve</strong>",
+         "<span class=\"wl\">Median</span>, <strong>except 1½ muscles on the <span class=\"wl\">ulnar nerve</span></strong>",
+         "<strong><span class=\"wl\">Radial</span>, all of them</strong>"
+        ],
+        [
+         "<strong>Layers</strong>",
+         "Superficial 4 · intermediate 1 · deep 3",
+         "Superficial 6 · deep 5"
+        ],
+        [
+         "<strong>At the wrist</strong>",
+         "Tendons held down by the <span class=\"wl\">palmar carpal ligament</span>",
+         "Tendons held down by the extensor retinaculum"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The palmar carpal ligament and the extensor retinaculum are <strong>one continuous band</strong>; the <span class=\"wl\">flexor retinaculum</span> is a separate, deeper and more distal structure, despite the name</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/2f331f2b58fb.jpg",
+       "alt": "compartments of the forearm.png",
+       "w": 900,
+       "h": 368,
+       "cap": "Cross-section of the forearm: the anterior compartment (wrist flexion, pronation; median and ulnar nerves) and the posterior compartment (wrist extension, supination; radial nerve), split by the radius, ulna and interosseous membrane"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Anterior compartment (8 muscles)</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Layer",
+        "Muscle",
+        "Nerve",
+        "Action"
+       ],
+       "rows": [
+        [
+         "Superficial",
+         "<span class=\"wl\">Pronator teres</span>",
+         "Median",
+         "<strong>The only superficial pronator</strong> · flexes the elbow"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Flexor carpi radialis</span>",
+         "Median",
+         "Flexes the wrist · radial deviation"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Palmaris longus</span>",
+         "Median",
+         "Flexes the wrist · tenses the palmar aponeurosis · <strong>absent in 15%</strong>"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Flexor carpi ulnaris</span>",
+         "<strong>Ulnar</strong>",
+         "Flexes the wrist · ulnar deviation"
+        ],
+        [
+         "Intermediate",
+         "<span class=\"wl\">Flexor digitorum superficialis</span>",
+         "Median",
+         "Flexes the wrist and fingers 2-5 · tendons end on the <strong>middle</strong> phalanges"
+        ],
+        [
+         "Deep",
+         "<span class=\"wl\">Flexor digitorum profundus</span>",
+         "<strong>Digits 2-3: median (anterior interosseous) · digits 4-5: ulnar</strong>",
+         "Flexes the wrist and fingers 2-5 · tendons end on the <strong>distal</strong> phalanges · <strong>the only muscle that flexes the fingertip joint</strong>"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Flexor pollicis longus</span>",
+         "Median (anterior interosseous)",
+         "Flexes the thumb, down to its tip"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Pronator quadratus</span>",
+         "Median (anterior interosseous)",
+         "Pronates · lies deepest"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Flexor carpi ulnaris insertion: medial carpal bones in the medwiki note; pisiform, hook of the hamate and 5th metacarpal in upper-year notes</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Posterior compartment (11 muscles; upper-year notes count 12)</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Layer",
+        "Muscle",
+        "Nerve",
+        "Action"
+       ],
+       "rows": [
+        [
+         "Superficial",
+         "<span class=\"wl\">Brachioradialis</span>",
+         "Radial",
+         "<strong>Flexes the elbow</strong>, strongest half-way between pronation and supination (\"drinking muscle\")"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Extensor carpi radialis longus</span>",
+         "Radial",
+         "Extends the wrist · radial deviation · grip"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Extensor carpi radialis brevis</span>",
+         "Radial (deep branch)",
+         "Extends the wrist · radial deviation"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Extensor digitorum</span>",
+         "Radial",
+         "Extends fingers 2-5"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Extensor digiti minimi</span>",
+         "Radial",
+         "Extends the little finger on its own"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Extensor carpi ulnaris</span>",
+         "Radial",
+         "Extends the wrist · ulnar deviation · grip"
+        ],
+        [
+         "Deep",
+         "<span class=\"wl\">Supinator</span>",
+         "Radial (deep branch, which pierces it)",
+         "Supinates"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Extensor indicis</span>",
+         "Radial",
+         "Extends the index finger on its own"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Abductor pollicis longus</span>",
+         "Radial (posterior interosseous)",
+         "Abducts the thumb"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Extensor pollicis longus</span>",
+         "Radial (posterior interosseous)",
+         "Extends the thumb, to its tip"
+        ],
+        [
+         "",
+         "<span class=\"wl\">Extensor pollicis brevis</span>",
+         "Radial (posterior interosseous)",
+         "Extends the thumb at its base (proximal phalanx)"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Upper-year notes add <strong>anconeus</strong> (lateral epicondyle to olecranon): weak elbow extension, steadies the elbow</li><li>Brachioradialis is a posterior muscle that behaves like an anterior one</li><li><strong>Extensor expansion</strong>: a flat, triangular hood of tendon over the back of each finger; extensor digitorum, extensor digiti minimi, extensor indicis, the lumbricals and the interossei all insert into it</li><li>Wrist side-to-side movement takes a flexor and an extensor together: <strong>radial deviation</strong> = flexor carpi radialis + both radial extensors · <strong>ulnar deviation</strong> = flexor carpi ulnaris + extensor carpi ulnaris</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Clinical relevance</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Anatomical snuffbox</span></strong>: the hollow at the base of the thumb when it is extended<ul><li>borders: abductor pollicis longus + extensor pollicis brevis on one side, extensor pollicis longus on the other (sources differ: this note names the extensor pollicis longus and brevis as its borders, the 07.1 note names the abductor pollicis longus and extensor pollicis brevis - check the slides)</li><li>floor: <span class=\"wl\">scaphoid</span> and <span class=\"wl\">trapezium</span> · the <span class=\"wl\">radial artery</span> runs in it and its pulse can be felt there</li></ul></li><li><strong><span class=\"wl\">Ganglion cyst</span></strong>: a lump filled with synovial fluid over a joint or tendon of the hand or wrist, most often the back of the wrist<ul><li><strong>no treatment needed</strong> · drain or excise only if bothersome (risk of infection) · the old \"bible bump\" smash is no longer advised</li></ul></li><li><strong><span class=\"wl\">Mallet finger</span></strong>: the extensor tendon tears off at the fingertip joint, often when a ball strikes the straight finger and bends the tip<ul><li>the <strong>fingertip droops and cannot be straightened</strong></li><li><strong>splint the fingertip joint straight for 6-8 weeks</strong> · surgery to pin it if a bone fragment came off (upper-year notes)</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/89c1a0b73dec.jpg",
+       "alt": "mallet finger.png",
+       "w": 738,
+       "h": 272,
+       "cap": "Mallet finger: the tip droops because the extensor tendon has come off at the fingertip joint"
+      }
+     ]
     },
     {
      "id": "msk-w8-06.2",
      "num": "06.2",
      "name": "Clinical Approach to the Muscles of the Distal Upper Extremity",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Clinical approach to the muscles of the distal upper extremity",
+     "keypoints": "<p>⭐ <strong>Most elbow tendon pain is tendinosis: degeneration without inflammation, treated with eccentric physiotherapy for 12 weeks rather than anti-inflammatories alone.</strong> <strong>Tennis elbow = extensor carpi radialis brevis, pain just below the lateral epicondyle on resisted wrist extension and gripping.</strong> <strong>Golfer's elbow = flexor-pronator origin, pain on resisted wrist flexion and pronation.</strong> <strong>A distal biceps rupture (pop, bruise, Popeye bulge, weak supination) must be repaired within 6-10 days.</strong> <strong>Tendon problems do not reduce range of motion; joint problems do.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Tendon problems around the elbow cause pain and pain-related weakness but do not take away range of motion.</strong> Most are a slow, degenerative <strong>tendinosis</strong> rather than an inflamed <strong>tendinitis</strong>, which is why rest and anti-inflammatories alone rarely fix them.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Tendinitis vs tendinosis</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Tendinitis",
+        "Tendinosis"
+       ],
+       "rows": [
+        [
+         "<strong>How common</strong>",
+         "Less common than we think",
+         "<strong>More common than we think</strong>"
+        ],
+        [
+         "<strong>What it is</strong>",
+         "<strong>True inflammation</strong>",
+         "<strong>Collagen degeneration, no inflammation</strong> · the tendon turns dull, brownish and soft · immature, disorganised collagen (type III in place of type I) with a poor blood-vessel response"
+        ],
+        [
+         "<strong>Causes</strong>",
+         "Acute injury or overload · rheumatologic disease · infection",
+         "<strong>Chronic overuse</strong> with too little recovery time"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "Reduce inflammation: rest, ice, compression, elevation (RICE) · anti-inflammatories (NSAIDs) · treat the cause",
+         "Pain relief · <strong>physiotherapy to build new collagen</strong> · anti-inflammatories have little to act on"
+        ],
+        [
+         "<strong>Recovery</strong>",
+         "Fast, once the cause is dealt with",
+         "<strong>Slow: new collagen takes over 100 days</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Pain at an elbow tendon<br/>range of motion kept\"] --> B{\"Sudden pop, bruising,<br/>change in muscle shape?\"}\n    B -->|Yes| C[\"TENDON RUPTURE<br/>distal biceps: refer for repair within 6-10 days\"]\n    B -->|No| D{\"Where is it worst?\"}\n    D -->|\"Just below the lateral epicondyle\"| E[\"Lateral epicondylosis<br/>pain on resisted wrist extension\"]\n    D -->|\"Just below the medial epicondyle\"| F[\"Medial epicondylosis<br/>pain on resisted wrist flexion and pronation\"]\n    D -->|\"Front of the elbow\"| G[\"Distal biceps tendinopathy<br/>pain on resistance and stretch\"]\n    E --> H[\"Tendinosis care: education, modify the activity,<br/>eccentric physiotherapy twice daily for 12 weeks\"]\n    F --> H\n    G --> H"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Lateral epicondylosis (tennis elbow)</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>What it is</strong>: degeneration of the common extensor tendon origin, <strong>usually extensor carpi radialis brevis</strong><ul><li>the old name \"epicondylitis\" implies inflammation; there usually is none (sources differ: one upper-year anatomy note still describes it as inflammation of the epicondyle, while the medwiki note and the upper-year clinical note call it degeneration - check the slides)</li></ul></li><li><strong>Who</strong>: 1-3% of people (a year, in upper-year notes) · <strong>30s and 40s</strong> · mostly <strong>work overuse</strong>, not sport</li><li><strong>Presents as</strong>: <strong>pain just below the lateral epicondyle, not on it</strong> · pain and weakness with <strong>gripping and supination</strong></li><li><strong>Exam</strong><ul><li>tender over the common extensor tendon</li><li>pain on <strong>resisted wrist extension</strong> and on resisted extension of the middle finger</li><li>pain on passive wrist flexion (stretching the extensors)</li></ul></li><li><strong>Investigations</strong>: probably none at first</li><li>Memory hook: <strong>TEN</strong>nis = ex<strong>TEN</strong>sor · \"tennis\" has no L, so add one: <strong>L</strong>ateral</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Medial epicondylosis (golfer's elbow)</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>What it is</strong>: degeneration of the <strong>flexor-pronator</strong> common origin at the medial epicondyle, from overuse (the golf swing loads it)</li><li><strong>Presents as</strong>: pain just below the medial epicondyle, tender there · pain on <strong>resisted wrist flexion and pronation</strong> · pain on passive wrist extension</li><li>Memory hook: go<strong>LFE</strong>r = <strong>FLE</strong>xor · \"golf\" already has its L, so <strong>M</strong>edial</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/d2200f59fa0a.jpg",
+       "alt": "medial epicondylosis common flexor origin - upper-year notes.jpg",
+       "w": 713,
+       "h": 335,
+       "cap": "Medial epicondylosis: the forearm flexor muscles share one tendon origin at the medial epicondyle, where the pain sits"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Distal biceps tendinopathy and rupture</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Tendinopathy",
+        "Rupture"
+       ],
+       "rows": [
+        [
+         "<strong>Onset</strong>",
+         "Insidious",
+         "<strong>Acute</strong>, after trauma or at the end of long overuse"
+        ],
+        [
+         "<strong>Presents as</strong>",
+         "Anterior elbow pain on resistance and on stretch",
+         "<strong>A pop, heard or felt</strong> · pain (or none) · <strong>bruising</strong> (tendons bleed) · <strong>weak supination</strong>, weaker flexion · <strong>change in the muscle's shape</strong> (a \"Popeye\" bulge)"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "The usual tendinopathy care (section 5)",
+         "<strong>Orthopaedics: repair is very fixable within 6-10 days, not later</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Upper-year notes compare the three biceps ruptures<ul><li>proximal long head: not uncommon · arm still works because of the short head · surgery rarely needed</li><li>proximal short head: rarely ruptures</li><li><strong>distal: rare but consequential</strong>, so it is the one to repair</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Treating any tendinopathy</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Education</strong>: expectations, restrictions, timelines · many settle quickly, some become chronic</li><li><strong>Relative rest</strong>: gentler use, breaks or task switching · fix ergonomics and technique</li><li><strong>Splints, braces or taping</strong> to support and redirect force</li><li><strong>Ice</strong> (upper-year notes: 20 minutes on, 20 off, to calm abnormal new blood vessels)</li><li><strong>Physiotherapy: eccentric strengthening twice a day for 12 weeks</strong>, to lay down and align new collagen</li><li><strong>Massage</strong>, which may stimulate fibroblasts to make collagen</li><li><strong>Drugs</strong>: oral, topical or injected anti-inflammatories, which may do little in a chronic tendinosis · platelet-rich plasma is uncertain</li><li><strong>Surgery</strong>: orthopaedics if the tendon has ruptured</li></ul>"
+      }
+     ]
     },
     {
      "id": "msk-w8-07.1",
      "num": "07.1",
      "name": "Anatomy of the Neurovascular Supply of the Distal Upper Extremity",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Anatomy of the neurovascular supply of the distal upper extremity",
+     "keypoints": "<p>⭐ <strong>Cubital fossa, lateral to medial = biceps Tendon, brachial Artery, median Nerve (TAN), with the median cubital vein on top for blood draws.</strong> <strong>The ulnar nerve is exposed behind the medial epicondyle; the median nerve is pinched at pronator teres and the carpal tunnel.</strong> <strong>The radial pulse sits beside flexor carpi radialis and in the snuffbox.</strong> <strong>C6 thumb, C7 middle finger, C8 little finger.</strong> <strong>T1 = spreading and closing the fingers.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Know where each forearm nerve can be pinched, where to feel a pulse and draw blood, and which spinal root a movement or patch of skin tests.</strong> The cubital fossa is where most of it meets.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Arteries of the forearm</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The <span class=\"wl\">brachial artery</span> splits in the <span class=\"wl\">cubital fossa</span> into the radial artery (lateral) and the ulnar artery (medial)</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Artery",
+        "Course",
+        "Branches",
+        "Clinically"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Radial</span></strong>",
+         "Lateral forearm beside the radial nerve, deep to brachioradialis · at the wrist it <strong>wraps round the radius onto the back</strong>, across the anatomical snuffbox and over the scaphoid",
+         "<span class=\"wl\">Radial recurrent</span> (joins the network round the elbow)",
+         "<strong>Radial pulse</strong>: at the wrist between the flexor carpi radialis and abductor pollicis longus tendons, and in the snuffbox"
+        ],
+        [
+         "<strong><span class=\"wl\">Ulnar</span></strong>",
+         "Medial forearm beside the ulnar nerve, <strong>deep to pronator teres</strong> · enters the wrist beside the pisiform",
+         "Anterior and posterior ulnar recurrent (elbow network) · common interosseous → anterior interosseous (with the anterior interosseous nerve) and posterior interosseous",
+         "—"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Collateral network round the elbow</strong> (recurrent and collateral arteries joining up): if the brachial artery is blocked or clamped below the deep artery of the arm, the forearm still gets blood</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Veins of the forearm</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Superficial veins</strong> start in the dorsal venous network on the back of the hand<ul><li><strong><span class=\"wl\">Cephalic</span></strong> (lateral): up the arm, through the groove between deltoid and pectoralis major, into the <strong>axillary vein</strong> (sources differ: the medwiki note says it drains into the axillary <em>artery</em>, upper-year notes say the axillary vein - check the slides)</li><li><strong><span class=\"wl\">Basilic</span></strong> (medial): partway up the arm, then dives deep to join the brachial veins and form the <strong><span class=\"wl\">axillary vein</span></strong></li><li><strong><span class=\"wl\">Median cubital</span></strong>: crosses the cubital fossa joining cephalic to basilic</li></ul></li><li><strong>Deep veins</strong> run in pairs with the arteries (radial, ulnar, brachial) · <strong>perforating veins</strong> shunt blood from the superficial veins to the deep ones</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/174bc2638c3d.jpg",
+       "alt": "arteries and veins of the upper extremity.png",
+       "w": 900,
+       "h": 850,
+       "cap": "Arteries and veins of the arm: radial and ulnar arteries from the brachial, the cephalic vein laterally, the basilic vein medially, and the median cubital vein joining them at the elbow"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Cubital fossa</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>A triangle on the front of the elbow: <strong>brachioradialis</strong> (lateral) · <strong>pronator teres</strong> (medial) · a line between the two epicondyles (top)</li><li><strong>Contents, lateral to medial (\"TAN\")</strong>: <strong>biceps Tendon · brachial Artery · median Nerve</strong><ul><li>upper-year notes also place the <strong>radial nerve</strong> (with its deep and superficial branches) at the lateral edge</li></ul></li><li>Superficial: median cubital, cephalic and basilic veins · medial and lateral cutaneous nerves of the forearm</li><li><strong>Clinically</strong>: <strong>median cubital vein = blood draws and IV lines</strong> · brachial artery = where blood pressure is measured</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/0c44755a6982.jpg",
+       "alt": "cubital fossa - TAN.png",
+       "w": 900,
+       "h": 558,
+       "cap": "Cubital fossa between brachioradialis and pronator teres: biceps tendon, brachial artery and median nerve from lateral to medial"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Nerves of the forearm</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Nerve",
+        "Course",
+        "Supplies in the forearm",
+        "Where it gets hurt"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Median</span></strong>",
+         "Through the cubital fossa (superficial here), <strong>between the two heads of pronator teres</strong>, between the two finger flexors, then <strong>under the flexor retinaculum</strong>",
+         "Anterior compartment except flexor carpi ulnaris and the ring-and-little-finger half of flexor digitorum profundus · its <strong>anterior interosseous</strong> branch takes the deep layer",
+         "Cut in the cubital fossa · <strong><span class=\"wl\">pronator syndrome</span></strong> (pronator teres) · <strong><span class=\"wl\">carpal tunnel syndrome</span></strong> (flexor retinaculum)"
+        ],
+        [
+         "<strong><span class=\"wl\">Ulnar</span></strong>",
+         "<strong>Behind the medial epicondyle</strong> (\"funny bone\"), between the two heads of flexor carpi ulnaris, down beside flexor digitorum profundus, through <strong>Guyon's canal</strong> at the wrist",
+         "Flexor carpi ulnaris · flexor digitorum profundus to the ring and little fingers",
+         "<strong>Behind the medial epicondyle</strong> (posterior elbow dislocation, fractures of the medial supracondylar ridge) · between the heads of flexor carpi ulnaris · Guyon's canal"
+        ],
+        [
+         "<strong><span class=\"wl\">Radial</span></strong>",
+         "Round the back of the humerus in the <span class=\"wl\">radial groove</span>, then into the cubital fossa between brachialis and brachioradialis, where it splits",
+         "All of the posterior compartment · <strong>deep branch</strong> (motor; pierces supinator, becomes the posterior interosseous nerve) · <strong>superficial branch</strong> (sensory; back of the hand lateral to the 4th finger, crosses the snuffbox)",
+         "Where it pierces supinator · in the snuffbox (upper-year notes)"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Before the radial groove the radial nerve gives off the <span class=\"wl\">posterior cutaneous nerve of the forearm</span> (skin of the back of the arm and forearm)</li><li>On anatomy tests, \"radial nerve\" is enough; the branch names may still come up clinically</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Myotomes and dermatomes</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Myotome</strong> = the movements one spinal root powers · <strong>dermatome</strong> = the patch of skin it feels · testing both locates a cord injury or a pinched root</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Root",
+        "Myotome",
+        "Dermatome"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">C5</span></strong>",
+         "Arm abduction (deltoid) · elbow flexion (biceps)",
+         "Lateral elbow"
+        ],
+        [
+         "<strong><span class=\"wl\">C6</span></strong>",
+         "Elbow flexion · <strong>wrist extension</strong>",
+         "<strong>Tip of the thumb</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">C7</span></strong>",
+         "<strong>Elbow extension (triceps)</strong> · wrist flexion · finger extension",
+         "<strong>Tip of the middle finger</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">C8</span></strong>",
+         "Flexion of the hand (sources differ: the medwiki note says wrist and hand flexion, upper-year notes say finger flexion - check the slides)",
+         "<strong>Tip of the little finger</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">T1</span></strong>",
+         "<strong>Finger abduction and adduction</strong> (interossei)",
+         "Medial elbow"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/ea5f3fa7c961.jpg",
+       "alt": "upper extremity dermatomes.png",
+       "w": 900,
+       "h": 284,
+       "cap": "Dermatomes of the upper limb: C5 lateral elbow, C6 thumb, C7 middle finger, C8 little finger, T1 medial elbow"
+      }
+     ]
     },
     {
      "id": "msk-w8-07.2",
      "num": "07.2",
      "name": "Clinical Approach to the Neurovascular Supply of the Distal Upper Extremity",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Clinical approach to the neurovascular supply of the distal upper extremity",
+     "keypoints": "<p>⭐ <strong>Ulnar neuropathy at the elbow = medial elbow pain, tingling in the ring and little fingers and a positive Tinel sign at the elbow; treat first by stopping pressure on the elbow and night-time bending, and operate only for severe or progressive weakness.</strong> <strong>Weakness without pain is uncommon and narrows the differential.</strong> <strong>True sensory loss means a nerve problem.</strong> <strong>An ulnar lesion at the elbow weakens fingertip flexion of the ring and little fingers; one in Guyon's canal does not.</strong> <strong>Pronator syndrome numbs the palm too; carpal tunnel syndrome spares its centre.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>With a nerve complaint at the elbow, first ask whether it is weakness, pain or both, and whether the numbness is a true loss of sensation.</strong> Then find the site: the commonest is the ulnar nerve behind the medial epicondyle.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Weakness and abnormal sensation around the elbow</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Weakness</strong> is a very common complaint when there is pain<ul><li>first question: <strong>is it weakness, pain, or both?</strong> · pain without weakness is common · pain with weakness is common · <strong>weakness without pain is uncommon, which narrows the list</strong></li><li>second question: if the weakness is real, what is causing it?</li></ul></li><li><strong>Abnormal sensation</strong><ul><li>a nerve injury can give too much feeling (tingling, spontaneous pain) and too little (numbness) at the same time</li><li>tingling or pain can come from nerve, muscle, tendon, ligament, bone or joint, or be <strong>referred</strong> from elsewhere</li><li><strong>true sensory loss is neurogenic</strong>: it comes from the peripheral or central nervous system</li></ul></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Ulnar neuropathy at the elbow (cubital tunnel syndrome)</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>What it is</strong>: the <span class=\"wl\">ulnar nerve</span> squeezed or irritated where it runs <strong>behind the medial epicondyle</strong></li><li><strong>Causes</strong><ul><li>direct trauma (hitting the \"funny bone\") · repeated pressure (leaning on a desk)</li><li><strong>long periods with the elbow bent</strong> stretch the nerve (during sleep)</li><li>the nerve slipping over the epicondyle as the elbow bends · thickened ligament · <span class=\"wl\">medial epicondylosis</span></li></ul></li><li><strong>Presents as</strong><ul><li><strong>medial elbow pain</strong></li><li><strong>numbness and tingling in the ring and little fingers</strong> (\"they fall asleep\")</li><li>weakness of the hand, because the ulnar nerve drives the interossei · lower motor neuron weakness <strong>only in muscles the ulnar nerve supplies below the elbow</strong></li><li>medial forearm skin: spared in the medwiki note, because a branch of the medial cord supplies it (sources differ: upper-year notes describe numbness running from the medial forearm into the ring and little fingers - check the slides)</li></ul></li><li><strong>Exam</strong>: <strong><span class=\"wl\">Tinel sign</span> positive at the elbow</strong> (tapping over the nerve sends tingling down its territory) · map sensory loss · test the hand muscles · the nerve may slip on bending</li><li><strong>Investigations</strong><ul><li><strong>electromyography (EMG) or a nerve conduction study</strong> separates irritation from real nerve damage · needed sooner if weakness is significant or getting worse</li><li>nerve ultrasound or MRI · X-ray if elbow arthritis or an old injury is suspected (upper-year notes)</li></ul></li><li><strong>Treatment</strong><ul><li><strong>education matters most</strong>: irritation (neuritis) is fully reversible, and so is mild nerve damage, because peripheral nerves regrow</li><li><strong>avoid pressure on the elbow</strong> (pad it, change the workstation)</li><li><strong>avoid bending the elbow fully at night</strong>: a towel splint or elbow pad</li><li>medication is neither needed nor helpful</li><li><strong>surgery for severe or progressive cases</strong>: ulnar neurolysis (freeing it from scar) or <strong>transposition</strong> (moving it out from behind the epicondyle)</li></ul></li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Medial elbow pain<br/>tingling in the ring and little fingers\"] --> B{\"Tinel sign positive<br/>at the medial elbow?\"}\n    B -->|No| C[\"Think of another tissue:<br/>medial epicondylosis, ulnar collateral ligament, referred pain\"]\n    B -->|Yes| D{\"Weakness in the hand muscles<br/>the ulnar nerve supplies?\"}\n    D -->|\"None or mild\"| E[\"ULNAR NEURITIS<br/>education · no pressure on the elbow<br/>towel splint at night\"]\n    D -->|\"Significant or worsening\"| F[\"EMG or nerve conduction study\"]\n    F --> G[\"Ulnar neurolysis or transposition surgery\"]"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/ddea8969d96e.jpg",
+       "alt": "sites of injury - ulnar nerve.png",
+       "w": 900,
+       "h": 786,
+       "cap": "The ulnar nerve's three danger points: behind the medial epicondyle, between the two heads of flexor carpi ulnaris, and in Guyon's canal at the wrist"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Where along the ulnar nerve?</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Site",
+        "Sensation",
+        "Muscles",
+        "Clues"
+       ],
+       "rows": [
+        [
+         "<strong>Elbow</strong> (behind the medial epicondyle, the <strong>most common</strong> site)",
+         "Ring and little fingers",
+         "Intrinsic hand muscles <strong>plus</strong> flexor carpi ulnaris and the deep flexor to fingers 4-5: weak wrist flexion, hand pulled toward the thumb side, cannot bend the tips of fingers 4-5, <strong>\"claw hand\"</strong>",
+         "Tinel at the elbow · leaning, night-time bending"
+        ],
+        [
+         "<strong>Wrist</strong> (Guyon's canal: \"ulnar canal syndrome\")",
+         "Medial 1½ fingers",
+         "Intrinsic hand muscles only · clawing may occur but <strong>finger flexion is kept and the hand is not pulled sideways</strong>",
+         "\"Handlebar neuropathy\": cycling with weight on the hook of the hamate"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Pronator syndrome</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>What it is</strong>: the <span class=\"wl\">median nerve</span> squeezed <strong>between the two heads of <span class=\"wl\">pronator teres</span></strong>, usually from muscle bulk built by elbow overuse</li><li><strong>Presents as</strong>: pain and tenderness at the <strong>top of the front of the forearm</strong> · altered sensation over the palm side of the thumb, index, middle and half the ring finger, <strong>and the adjoining palm</strong></li><li>Upper-year notes contrast it with <span class=\"wl\">carpal tunnel syndrome</span>, which <strong>spares a patch of central palm</strong> because that skin's nerve branch leaves before the tunnel</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/ad5a19e1de00.jpg",
+       "alt": "sites of injury - median nerve.png",
+       "w": 804,
+       "h": 846,
+       "cap": "The median nerve's danger points: the cubital fossa, between the two heads of pronator teres (pronator syndrome), and under the flexor retinaculum (carpal tunnel syndrome)"
+      }
+     ]
     },
     {
      "id": "msk-w8-08.1",
      "num": "08.1",
      "name": "Anatomy of the Wrist and Hand - PART 1",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Anatomy of the wrist and hand, part 1",
+     "keypoints": "<p>⭐ <strong>The carpal tunnel is carpal bones roofed by the flexor retinaculum, and it carries nine tendons (4 superficialis, 4 profundus, flexor pollicis longus) plus the median nerve; the ulnar nerve and artery run outside it.</strong> <strong>The thumb's CMC joint is a saddle, which is what lets the thumb oppose.</strong> <strong>Thenar muscles = recurrent branch of the median nerve; nearly every other intrinsic muscle = deep branch of the ulnar.</strong> <strong>PAD and DAB: palmar interossei adduct, dorsal interossei abduct.</strong> <strong>Superficial arch = mostly ulnar; deep arch = mostly radial.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Part 1 builds the hand from the inside out:</strong> the joints and what each one allows, the fascial bands that hold the tendons down and roof the carpal tunnel, the five muscle compartments with their nerves, and the two arterial arches. The nerves of the hand are Part 2.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Joints of the wrist and hand</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>All are synovial</strong>: a capsule lined by synovial membrane that makes lubricating fluid</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Joint",
+        "Type",
+        "Allows",
+        "Held by"
+       ],
+       "rows": [
+        [
+         "<strong>Thumb <span class=\"wl\">carpometacarpal (CMC)</span></strong>",
+         "<strong>Saddle</strong>",
+         "Movement in every plane, which makes <strong>opposition</strong> possible",
+         "Dense ligaments"
+        ],
+        [
+         "<strong>CMC of fingers 2-5</strong>",
+         "<strong>Plane</strong>",
+         "Metacarpals slide on the carpals · 2 and 3 barely move, 4 slightly, 5 moderately in a tight grip",
+         "Dense ligaments"
+        ],
+        [
+         "<strong><span class=\"wl\">Metacarpophalangeal (MCP)</span></strong>",
+         "<strong>Condyloid</strong>",
+         "Flexion, extension, abduction, adduction, circumduction (the thumb's: flexion and extension only, in upper-year notes)",
+         "Capsule + medial and lateral collateral ligaments"
+        ],
+        [
+         "<strong><span class=\"wl\">Interphalangeal (IP)</span></strong>",
+         "<strong>Hinge</strong>",
+         "Flexion and extension only",
+         "Capsule + medial and lateral collateral ligaments"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/1c181e61569d.jpg",
+       "alt": "hand bones and joints.png",
+       "w": 900,
+       "h": 835,
+       "cap": "Bones of the hand (carpals, metacarpals, proximal, intermediate and distal phalanges) and the carpometacarpal, metacarpophalangeal and interphalangeal joints"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Fascia of the wrist and hand</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Palmar aponeurosis</span></strong>: where palmaris longus inserts · longitudinal fibres fan from the flexor retinaculum to the four fingers and blend with their tendon sheaths · its septa divide the palm into compartments<ul><li>upper-year notes: in <strong>Dupuytren's contracture</strong> it thickens and scars, pulling fingers into fixed flexion; the diseased tissue has to be cut out</li></ul></li><li><strong><span class=\"wl\">Palmar carpal ligament</span></strong>: a thickening of the forearm fascia, <strong>continuous with the extensor retinaculum</strong> on the back · <strong>superficial and proximal</strong> to the flexor retinaculum</li><li><strong><span class=\"wl\">Flexor retinaculum</span></strong>: deeper · <strong>the roof of the carpal tunnel</strong> · spans <strong>scaphoid and trapezium</strong> (lateral) to <strong>pisiform and hook of the hamate</strong> (medial)</li><li><strong><span class=\"wl\">Carpal tunnel</span></strong>: carpal bones for a floor, flexor retinaculum for a roof<ul><li><strong>inside: 4 flexor digitorum superficialis tendons · 4 flexor digitorum profundus tendons · flexor pollicis longus · the median nerve</strong></li><li><strong>outside, on top of the retinaculum</strong>: the ulnar nerve and artery · the palmar cutaneous branch of the median nerve · palmaris longus tendon</li></ul></li><li><strong>Fibrous digital sheaths (flexor pulleys)</strong>: tunnels of fibrous tissue binding the flexor tendons to each finger's bones · work as pulleys and <strong>stop the tendons bowstringing</strong></li><li><strong>Synovial sheaths</strong>: fluid-filled sleeves inside the fibrous sheaths that let the tendons glide<ul><li>upper-year notes: an infected sheath (tenosynovitis) gives a swollen finger that hurts to move; usually it stays in that finger but can spread into the palm and forearm</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/cca71d453720.jpg",
+       "alt": "fascia of the wrist.png",
+       "w": 900,
+       "h": 669,
+       "cap": "The wrist in cross-section: palmar carpal ligament on top, palmar aponeurosis beyond it, and the flexor retinaculum roofing the carpal tunnel with its tendons and the median nerve"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Compartments and intrinsic muscles of the hand</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Compartment",
+        "Muscles",
+        "Nerve",
+        "Action"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Thenar</span></strong> (thumb ball)",
+         "<span class=\"wl\">Abductor pollicis brevis</span> · <span class=\"wl\">flexor pollicis brevis</span> · <span class=\"wl\">opponens pollicis</span>",
+         "<strong><span class=\"wl\">Recurrent branch of the median</span></strong> (deep head of flexor pollicis brevis: deep branch of the ulnar)",
+         "Abduct, flex and <strong>oppose</strong> the thumb"
+        ],
+        [
+         "<strong><span class=\"wl\">Hypothenar</span></strong> (little-finger ball)",
+         "<span class=\"wl\">Abductor digiti minimi</span> · <span class=\"wl\">flexor digiti minimi brevis</span> · <span class=\"wl\">opponens digiti minimi</span>",
+         "Deep branch of the ulnar",
+         "Abduct, flex and oppose the little finger"
+        ],
+        [
+         "<strong><span class=\"wl\">Central</span></strong>",
+         "The long flexor tendons (superficialis and profundus) · <span class=\"wl\">lumbricals</span> (4)",
+         "<strong>Lumbricals 1-2: median · 3-4: deep ulnar</strong> (as for the profundus tendons they arise from)",
+         "Lumbricals: <strong>bend the knuckle (MCP) while straightening the finger joints (IP)</strong>, a \"bye-bye\" wave"
+        ],
+        [
+         "<strong><span class=\"wl\">Adductor</span></strong>",
+         "<span class=\"wl\">Adductor pollicis</span> (two heads; not a thenar muscle)",
+         "Deep ulnar",
+         "Adducts the thumb · test: hold paper between thumb and index finger"
+        ],
+        [
+         "<strong><span class=\"wl\">Interosseous</span></strong>",
+         "<span class=\"wl\">Palmar interossei</span> (3) · <span class=\"wl\">dorsal interossei</span> (4)",
+         "Deep ulnar (upper-year notes; the medwiki note leaves it blank)",
+         "<strong>Palmar ADduct</strong> toward the middle finger (<strong>PAD</strong>) · <strong>Dorsal ABduct</strong> away from it (<strong>DAB</strong>) · both help the lumbricals · test: grip paper between fingers / spread against resistance"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Upper-year notes order the layers: thenar, hypothenar and central compartments, with the adductor and interosseous compartments deepest</li><li>Extrinsic recap: <strong>flexor digitorum superficialis splits</strong> at the middle phalanx and <strong>profundus passes through it</strong> to the fingertip</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/e94eb08016a0.jpg",
+       "alt": "compartments of the hand cross-section - upper-year notes.jpg",
+       "w": 820,
+       "h": 518,
+       "cap": "The palm in cross-section: hypothenar, central and thenar compartments, with the adductor and interosseous compartments deepest"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Arterial supply of the hand</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Arch",
+        "Mainly from",
+        "Completed by",
+        "Lies",
+        "Gives off"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Superficial palmar arch</span></strong>",
+         "<strong><span class=\"wl\">Ulnar artery</span></strong>, which enters through Guyon's canal, on top of the flexor retinaculum",
+         "Superficial palmar branch of the radial artery",
+         "Just under the palmar aponeurosis",
+         "Common palmar digital arteries → proper palmar digital arteries"
+        ],
+        [
+         "<strong><span class=\"wl\">Deep palmar arch</span></strong>",
+         "<strong><span class=\"wl\">Radial artery</span></strong>, which crosses the snuffbox and dives between the two heads of the 1st dorsal interosseous",
+         "Deep palmar branch of the ulnar artery",
+         "Across the metacarpals, just past their bases",
+         "Palmar metacarpal arteries (3)"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The radial artery also gives the <strong>princeps pollicis</strong> (thumb) and <strong>radialis indicis</strong> (lateral side of the index finger) arteries</li></ul>"
+      }
+     ]
     },
     {
      "id": "msk-w8-08.2",
      "num": "08.2",
      "name": "Clinical Approach to the Wrist and Hand - PART 1",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Clinical approach to the wrist and hand, part 1",
+     "keypoints": "<p>⭐ <strong>Snuffbox tenderness after a FOOSH with a normal X-ray is treated as a scaphoid fracture anyway: blood reaches the scaphoid from its far end, so a missed fracture can end in non-union or osteonecrosis.</strong> <strong>Distal radius X-ray = short (ulnar variance), crooked (volar tilt), smooth (step over 1 mm needs fixing).</strong> <strong>Make the deformity worse to unlock it, then reduce and cast with a 3-point mould.</strong> <strong>Treatment is forgiving at the extremes of age; middle-aged, active patients need the most.</strong> <strong>Tingling in the thumb and first two fingers after a wrist fracture = acute carpal tunnel syndrome.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Two fractures from a fall on an outstretched hand (FOOSH):</strong> the distal radius, judged on X-ray by three questions (is it short? crooked? smooth?), and the scaphoid, which can hide on the first X-ray and lose its blood supply if missed.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Distal radius fracture</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>What it is</strong>: a very common <span class=\"wl\">break of the end of the radius</span>, usually from a <strong>FOOSH</strong><ul><li>upper-year notes: a <strong>Colles fracture</strong> (a complete break in the last 2 cm of the radius) is the most common forearm fracture</li><li>often comes with a torn ligament or a <strong>scaphoid fracture</strong> · if the anatomy is not restored, the wrist works poorly</li></ul></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Question",
+        "What to measure",
+        "Normal",
+        "After a fracture",
+        "If left"
+       ],
+       "rows": [
+        [
+         "<strong>Is it short?</strong>",
+         "<strong><span class=\"wl\">Ulnar variance</span></strong> on the front-to-back (PA) view: the ends of the radius and ulna compared",
+         "<strong>Neutral</strong>: both joint surfaces level (sources differ: upper-year notes say the radius is normally slightly longer - check the slides)",
+         "The radius collapses and shortens → <strong>positive ulnar variance</strong> · <strong>compare with the other wrist</strong> (some people have a short radius)",
+         "Ulna bumps into the carpal bones (ulnar impaction)"
+        ],
+        [
+         "<strong>Is it crooked?</strong>",
+         "<strong><span class=\"wl\">Volar tilt</span></strong> on the side (lateral) view",
+         "<strong>7-15° toward the palm</strong>, about 12° on average",
+         "Closer to 0°, or <strong>tilted toward the back</strong>",
+         "Forearm rotation is restricted"
+        ],
+        [
+         "<strong>Is it smooth?</strong>",
+         "The joint surface",
+         "Smooth",
+         "A <strong>step</strong> where the fracture enters the joint",
+         "<strong>A step over 1 mm leads to post-traumatic arthritis</strong>, pain and stiffness · correct it surgically"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>The medwiki note words positive variance as the ulna projecting further, then adds \"radius longer than the ulna\" in brackets, which contradicts itself (sources differ: the condition note and upper-year notes both tie positive variance to a <strong>shortened</strong> radius - check the slides)</li><li><strong>Treatment depends on age</strong><ul><li><strong>forgiving at the extremes</strong>: a young bone remodels itself straight · an older patient puts less load on the wrist and has laxer ligaments, so fewer symptoms</li><li><strong>middle-aged or active patients need more intensive treatment</strong></li></ul></li><li><strong>Closed reduction and casting</strong><ul><li>① <strong>analgesia is essential</strong>: <span class=\"wl\">hematoma block</span> (1% lidocaine into the fracture) · regional nerve block · conscious sedation</li><li>② <strong>sustained pull along the bone</strong> (by hand or finger traps) relaxes the muscles</li><li>③ manipulate: often <strong>make the deformity worse first to unlock the fragments</strong>, then correct it</li><li>④ <strong>cast</strong>: cotton padding under plaster (cheap, mouldable, heavy) or fibreglass (can be waterproof, clearer on X-ray) · <strong>3-point mould</strong></li><li>⑤ <strong>X-ray to confirm the alignment</strong></li></ul></li><li><strong>Surgery if closed reduction fails</strong>: external fixation (pins through the skin held by rods, for a few weeks) · open reduction with plates and screws</li><li>Upper-year case: a displaced fracture <strong>plus tingling in the thumb, index and middle fingers</strong> = acute carpal tunnel syndrome from the fragment pressing on the median nerve → open reduction, fixation and carpal tunnel release</li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"FOOSH: wrist pain, swelling, bruising\"] --> B[\"Wrist X-ray: is it short? crooked? smooth?\"]\n    B --> C{\"Tingling in the thumb,<br/>index and middle fingers?\"}\n    C -->|Yes| D[\"ACUTE CARPAL TUNNEL SYNDROME<br/>open reduction, fixation + carpal tunnel release\"]\n    C -->|No| E[\"Analgesia → traction → closed reduction<br/>→ cast with a 3-point mould\"]\n    E --> F{\"Repeat X-ray:<br/>alignment acceptable?\"}\n    F -->|Yes| G[\"Cast and follow up\"]\n    F -->|No| H[\"Open reduction with plates and screws<br/>± external fixation\"]"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/aa2bb3e991f1.jpg",
+       "alt": "volar tilt.png",
+       "w": 900,
+       "h": 882,
+       "cap": "Lateral wrist X-rays: normal volar tilt of 7-15° toward the palm, and an abnormal fracture tilted toward the back"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/ef33de5f76f5.jpg",
+       "alt": "ulnar variance.png",
+       "w": 900,
+       "h": 395,
+       "cap": "PA wrist X-rays: neutral, positive and negative ulnar variance"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Scaphoid fracture</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>What it is</strong>: the <span class=\"wl\">scaphoid</span> is the <strong>most commonly fractured carpal bone</strong> · younger patients · FOOSH<ul><li>many shrug it off as a sprain and it heals, but it is <strong>hard to diagnose, and a late diagnosis brings complications</strong></li></ul></li><li><strong>Why it goes wrong</strong>: its blood enters at the <strong>far (distal) end and flows back</strong> toward the near end · a break through the middle cuts the proximal part off</li><li><strong>Presents as</strong>: <strong>swelling and tenderness in the <span class=\"wl\">anatomical snuffbox</span></strong> · wrist pain · thumb pain, especially on the push-pull test of the thumb</li><li><strong>Investigations</strong><ul><li>X-ray is usually enough, but <strong>can look normal</strong></li><li><strong>high suspicion with a normal X-ray: treat it as fractured</strong>, then repeat the X-ray in a couple of weeks (the fracture line shows as the bone heals) or go to CT, MRI or a bone scan</li></ul></li><li><strong>Treatment</strong><ul><li><strong>cast</strong>: undisplaced fractures and distal-pole fractures · until healed, about 8 weeks (upper-year notes)</li><li><strong>surgery (a screw)</strong>: displaced fractures and proximal-pole fractures</li></ul></li><li><strong>Complications</strong>: <strong>non-union</strong> (does not heal) · <strong>osteonecrosis</strong> (bone death) · late arthritis, which may need a wrist fusion that costs flexion and extension</li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"FOOSH + snuffbox swelling or tenderness\"] --> B[\"Wrist X-ray\"]\n    B --> C{\"Fracture seen?\"}\n    C -->|\"No, but suspicion is high\"| D[\"TREAT AS FRACTURED: cast<br/>repeat X-ray in ~2 weeks, or CT / MRI / bone scan\"]\n    D -->|\"Fracture found\"| E\n    C -->|Yes| E{\"Displaced, or proximal pole?\"}\n    E -->|No| F[\"Cast until healed, about 8 weeks\"]\n    E -->|Yes| G[\"Surgery: screw fixation\"]"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/ca8c3a0ab901.jpg",
+       "alt": "scaphoid fracture on x-ray.png",
+       "w": 900,
+       "h": 896,
+       "cap": "Wrist X-ray with a fracture line across the scaphoid"
+      }
+     ]
     }
    ]
   },
