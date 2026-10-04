@@ -5238,37 +5238,1049 @@
      "id": "msk-w9-05",
      "num": "05",
      "name": "Clinical Approach to Hip Pain",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Clinical approach to hip pain",
+     "keypoints": "<p>⭐ <strong>Point first: groin = inside the joint, lateral = greater trochanter, buttock = deep gluteal, sacroiliac or spine.</strong> <strong>Can't put socks on → hip arthritis; tender trochanter but socks fine → GTPS.</strong> <strong>Internal rotation is the first movement lost in hip osteoarthritis.</strong> <strong>Clicking and locking in a young active woman → labral tear, usually from FAI.</strong> <strong>Burning lateral thigh with no weakness → meralgia paresthetica.</strong> <strong>Buttock pain worse sitting, with sciatica → piriformis; MRI the spine first.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>First ask where the patient means by \"hip\".</strong> True hip pain is <strong>anterior hip or groin</strong> pain and usually comes from inside the joint; <strong>lateral</strong> pain points to the greater trochanter, and <strong>posterior (buttock)</strong> pain to the deep gluteal space, the sacroiliac joint or the spine. Hip fracture is covered in <span class=\"wl\">03.2 - Clinical Approach to the Hip Joint</span>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Locate the pain, then work it up</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Patient says 'my hip hurts'<br/>Ask them to point\"] --> B{\"Where is the pain?\"}\n    B -->|\"Anterior hip / groin\"| C[\"Inside the joint<br/>osteoarthritis · femoroacetabular impingement<br/>labral tear · osteonecrosis · iliopsoas<br/>fracture · septic arthritis\"]\n    B -->|\"Lateral hip\"| D[\"Greater trochanteric pain syndrome<br/>(gluteal tendinopathy ± trochanteric bursitis)<br/>meralgia paresthetica\"]\n    B -->|\"Posterior / buttock\"| E[\"Deep gluteal (piriformis) syndrome<br/>sacroiliac joint dysfunction<br/>lumbar radiculopathy · vascular claudication\"]\n    C --> F{\"Trouble putting socks on?\"}\n    F -->|Yes| G[\"Points to HIP ARTHRITIS\"]\n    F -->|No| H[\"Points away from arthritis<br/>e.g. greater trochanteric pain syndrome\"]"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Exam</strong><ul><li>look: body habitus · swelling, erythema, asymmetry or atrophy, deformity, scars (SEADS) · alignment (fixed flexion, external rotation) · gait: antalgic or <strong>Trendelenburg</strong> (weak gluteus medius and minimus → pelvis drops on the opposite side when standing on the affected leg)</li><li>feel: anterior superior iliac spine, anterior joint line, pubic symphysis · quadriceps, tensor fasciae latae, iliotibial band, gluteals, piriformis, hamstrings</li><li>move: active and passive range of motion · <span class=\"wl\">FABER</span> (flexion, abduction, external rotation) · <span class=\"wl\">FADIR</span> (flexion, adduction, internal rotation)</li></ul></li><li><strong>Investigations</strong><ul><li><strong>X-ray first line</strong> (fracture, anatomical variants, arthritis, tumour, osteonecrosis)</li><li>ultrasound: bursitis, tendinopathy, hip dysplasia, guiding injections · CT: suspected fracture not seen on X-ray · MRI: soft tissue, stress fractures</li></ul></li><li><strong>Treatment (the general plan, reused below)</strong>: expectations and education · protection, rest, ice, compression, elevation · weight management · exercise and physiotherapy · functional and mental support · topical or oral analgesics · corticosteroid injection · surgery</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Anterior hip pain: inside the joint</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Osteoarthritis</span>",
+        "<span class=\"wl\">Femoroacetabular impingement (FAI)</span>",
+        "<span class=\"wl\">Labral tear</span>"
+       ],
+       "rows": [
+        [
+         "<strong>Who</strong>",
+         "Older · primary (age-related) or secondary (trauma, FAI) · risk: female, obesity, genetics, anatomical variants",
+         "<strong>Younger, physically active</strong>",
+         "All ages, mostly <strong>young active females</strong> · <strong>FAI is the most common cause</strong>"
+        ],
+        [
+         "<strong>What</strong>",
+         "Cartilage wears away, with reactive bone (osteophytes)",
+         "Mismatch between femoral neck and acetabulum · <strong>cam</strong> = extra bone on the femur side · <strong>pincer</strong> = extra bone on the acetabulum",
+         "Tear of the <span class=\"wl\">acetabular labrum</span>, usually anterosuperior"
+        ],
+        [
+         "<strong>Presents as</strong>",
+         "Gradual groin pain, worse with activity and at night · <strong>morning stiffness under 30 min</strong> · crepitus · <strong>internal rotation lost first</strong>",
+         "Gradual groin pain, worse sitting, getting in and out of a car, leaning forward · \"C sign\"",
+         "<strong>Clicking, catching, locking</strong> · pain with exercise or lying on the side"
+        ],
+        [
+         "<strong>Exam</strong>",
+         "Limited, painful internal rotation and flexion · leg-length difference · <span class=\"wl\">Stinchfield test</span>",
+         "Groin pain with deep flexion and internal rotation · FABER, FADIR",
+         "FABER, FADIR positive"
+        ],
+        [
+         "<strong>Imaging</strong>",
+         "<strong>X-ray: AP pelvis + frog-leg lateral</strong> · joint-space loss, osteophytes, subchondral cysts and sclerosis · graded by Kellgren-Lawrence · X-ray changes do not always match symptoms",
+         "X-ray AP and lateral (bony overgrowth) · CT for detailed shape and surgical planning",
+         "<strong>MR arthrogram</strong> (the medwiki note calls it diagnostic; the upper-year notes say it misses about 30% - check the slides)"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "General plan · cane in the <strong>opposite hand</strong> · acetaminophen or NSAIDs · injections · <span class=\"wl\">hip arthroplasty</span> (total, hemi, resurfacing)",
+         "General plan · ~3 months of physiotherapy · arthroscopic osteoplasty",
+         "General plan · arthroscopic debridement or repair"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/1e11c363a000.jpg",
+       "alt": "hip osteoarthritis x-ray.png",
+       "w": 600,
+       "h": 800,
+       "cap": "Hip osteoarthritis on X-ray: joint-space narrowing and osteophytes on the femoral head and acetabulum"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/5fd9fb90e8bf.jpg",
+       "alt": "femoroacetabular impingement cam and pincer - upper-year notes.jpg",
+       "w": 203,
+       "h": 362,
+       "cap": "Femoroacetabular impingement: cam (extra bone on the femoral head-neck) and pincer (overhanging acetabular rim)"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Osteonecrosis (avascular necrosis)</span></strong>: lost blood supply to the femoral head · after hip fracture, steroids, alcohol, lupus, sickle cell disease, radiation · groin or bone pain · X-ray</li><li>Also on the anterior list: <span class=\"wl\">iliopsoas tendinopathy</span> or iliopsoas bursitis (internal snapping) · fracture · <span class=\"wl\">septic arthritis</span></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Lateral hip pain</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Greater trochanteric pain syndrome (GTPS)</span></strong> = overuse tendinopathy of <strong>gluteus medius and minimus</strong>, with or without <span class=\"wl\">trochanteric bursitis</span><ul><li><strong>Who</strong>: female more than male, 40-60 years, often after menopause · poor biomechanics, a recent rise in activity</li><li><strong>Presents as</strong>: pain over the greater trochanter, radiating down the lateral thigh · <strong>worse lying on that side</strong>, standing long, crossing the legs · no swelling or redness · <strong>can still put socks on</strong> (unlike hip arthritis)</li><li><strong>Exam</strong>: <strong>tender greater trochanter (\"jump sign\")</strong> · Trendelenburg gait · <span class=\"wl\">single leg stance test</span> · <span class=\"wl\">Ober's test</span> · FABER and FADIR painful at the trochanter</li><li><strong>Investigations</strong>: clinical diagnosis · X-ray to rule out other causes · ultrasound or MRI shows bursal inflammation or a tendon tear</li><li><strong>Treatment</strong>: <strong>physiotherapy - stretch the iliotibial band, strengthen the hip abductors</strong> · <strong>load management</strong> · avoid crossing the legs, pillow between the knees · NSAIDs · steroid injection to allow physiotherapy · shock-wave therapy</li></ul></li><li><strong><span class=\"wl\">Meralgia paresthetica</span></strong> = the <strong>lateral femoral cutaneous nerve trapped under the inguinal ligament</strong><ul><li>risk: diabetes, pregnancy, obesity, tight belts or clothing, abdominal, pelvic or hip surgery</li><li>burning, tingling, itching over the lateral thigh · worse standing or walking, eased by sitting · <strong>no weakness</strong> (if there is, look for another diagnosis)</li><li>map the numb area · diagnostic local anesthetic injection · loose clothing; conservative care usually cures it</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/c8142defb0fa.jpg",
+       "alt": "greater trochanteric bursa and bursitis - upper-year notes.jpg",
+       "w": 642,
+       "h": 357,
+       "cap": "The greater trochanteric bursa sits under the iliotibial band over the greater trochanter; inflamed on the right"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Posterior hip and buttock pain</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Piriformis (deep gluteal) syndrome</span></strong> = <strong>the sciatic nerve compressed outside the spine</strong>, by a tight, enlarged or anatomically unusual piriformis<ul><li><strong>Who</strong>: female more than male, over 40 · after a fall (the most common trigger), repetitive strain, long sitting</li><li><strong>Presents as</strong>: one-sided buttock pain, <strong>worse with hip flexion (sitting, stairs)</strong> · burning or shooting down the back of the thigh and leg (sciatica) · numbness, tingling, distal weakness</li><li><strong>Exam</strong>: tender over the piriformis and sciatic notch · leg held externally rotated · gluteal wasting · pain on flexion, adduction and internal rotation</li><li><strong>Investigations</strong>: <strong>MRI to rule out the lumbar spine</strong> (and show the swollen muscle) · electromyography (EMG) for slowed conduction beyond the compression</li><li><strong>Treatment</strong>: physiotherapy (stretch piriformis) · NSAIDs · ultrasound-guided injection (steroid, trigger point, botulinum toxin) · surgical release if refractory</li></ul></li><li><strong><span class=\"wl\">Sacroiliac joint dysfunction</span></strong> = too much movement in the sacroiliac joint from lax ligaments (not the same as inflammatory <span class=\"wl\">sacroiliitis</span>)<ul><li><strong>Who</strong>: athletes · ~20% of low back pain · <strong>pregnancy (relaxin)</strong> · pelvic trauma · previous lumbar fusion or iliac crest graft</li><li><strong>Presents as</strong>: one-sided <strong>buttock</strong> pain, also back, groin or leg · worse bending, climbing</li><li><strong>Exam</strong>: sacroiliac joint tenderness · <strong><span class=\"wl\">FABER</span>, <span class=\"wl\">Gaenslen's test</span>, sacroiliac compression test</strong> · rule out the hip</li><li><strong>Treatment</strong>: pelvic belt in pregnancy · physiotherapy · <strong>sacroiliac injection (diagnostic and therapeutic)</strong> · radiofrequency ablation · fusion as a last resort</li></ul></li><li>Also: <span class=\"wl\">lumbar radiculopathy</span> (disc, facet joints, stenosis) · vascular claudication (aortoiliac disease)</li></ul>"
+      }
+     ]
     },
     {
      "id": "msk-w9-06.1",
      "num": "06.1",
      "name": "Anatomy of the Knee - PART 1",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Anatomy of the knee, part 1",
+     "keypoints": "<p>⭐ <strong>Valgus stresses the MCL (which drags the medial meniscus with it); varus stresses the LCL (which has no meniscus attached).</strong> <strong>ACL: weaker, taut in extension, stops the tibia sliding forward. PCL: stronger, taut in flexion, stops the tibia sliding back.</strong> <strong>The fibula is not in the knee joint.</strong> <strong>Peripheral meniscal tears heal; central ones don't.</strong> <strong>Popliteus unlocks the knee.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The knee's bones barely fit together, so it is held by soft tissue:</strong> muscles (above all the quadriceps) give dynamic support, and <strong>four cardinal ligaments plus two menisci</strong> give passive support. Knowing which structure resists which movement is what lets you name the injury in the clinical lectures.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Osteology</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">patella</span></strong> = a <strong>sesamoid bone</strong> inside the quadriceps tendon</li><li><strong>Femoral condyles</strong> (lateral, medial) sit on the <strong>tibial condyles</strong> (together the tibial plateau)</li><li><strong>Tibial tuberosity</strong> = anterior bump where the patellar ligament inserts</li><li><strong>Intercondylar area / eminence</strong> of the tibia = attachment for the cruciate ligaments and menisci</li><li><strong>The fibula is NOT part of the knee joint</strong> - it does not touch the femur</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. The knee joint</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Modified synovial hinge joint</strong>: flexion and extension, plus some rotation when flexed</li><li><strong>3 articulations</strong>: lateral femoral + lateral tibial condyle · medial femoral + medial tibial condyle · femur + patella</li><li><strong>Largest joint in the body</strong>, with the largest capsule and synovial membrane</li><li><strong>Capsule reinforcement</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Side",
+        "Reinforced by"
+       ],
+       "rows": [
+        [
+         "<strong>Anterior</strong>",
+         "Quadriceps tendon / patellar ligament (replaces the capsule here) · medial and lateral patellar retinacula (from vastus medialis and lateralis)"
+        ],
+        [
+         "<strong>Medial</strong>",
+         "<strong>Tibial (medial) collateral ligament</strong> · pes anserinus tendons, semimembranosus, medial head of gastrocnemius"
+        ],
+        [
+         "<strong>Lateral</strong>",
+         "<strong>Fibular (lateral) collateral ligament</strong> · biceps femoris · iliotibial band"
+        ],
+        [
+         "<strong>Posterior</strong>",
+         "Oblique popliteal ligament (from semimembranosus) · arcuate popliteal ligament"
+        ],
+        [
+         "<strong>Inside the capsule</strong>",
+         "Cruciate ligaments (outside the synovial membrane) and menisci"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/9a2b2bbd2fa0.jpg",
+       "alt": "knee joint anterior view with ligaments and menisci - upper-year notes.jpg",
+       "w": 579,
+       "h": 572,
+       "cap": "Knee flexed, anterior view: the two collateral ligaments outside, the two cruciates crossing in the notch, and the menisci on the tibial plateau"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. The four cardinal ligaments</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Ligament",
+        "Runs from → to",
+        "Shape, strength",
+        "Stops",
+        "Tight in",
+        "Tested by"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Tibial (medial) collateral (MCL)</span></strong>",
+         "Medial femoral epicondyle → medial tibia",
+         "Flat, broad, strong · <strong>deep fibres fixed to the medial meniscus</strong>",
+         "<strong>Valgus</strong> (knee pushed inward)",
+         "Extension",
+         "Valgus stress on the flexed knee"
+        ],
+        [
+         "<strong><span class=\"wl\">Fibular (lateral) collateral (LCL)</span></strong>",
+         "Lateral femoral epicondyle → <strong>head of the fibula</strong>",
+         "Round, cord-like, strong · <strong>not attached to the meniscus</strong>",
+         "<strong>Varus</strong> (knee pushed outward)",
+         "Extension",
+         "Varus stress on the flexed knee"
+        ],
+        [
+         "<strong><span class=\"wl\">Anterior cruciate (ACL)</span></strong>",
+         "Anterior intercondylar tibia → lateral femoral condyle (runs posterolaterally up)",
+         "<strong>Weaker</strong> of the two",
+         "<strong>Tibia sliding forward</strong> on the femur (and femur sliding back on a fixed tibia) · hyperextension · excess medial rotation",
+         "<strong>Full extension</strong>",
+         "Lachman, anterior drawer"
+        ],
+        [
+         "<strong><span class=\"wl\">Posterior cruciate (PCL)</span></strong>",
+         "Posterior intercondylar tibia → medial femoral condyle (runs anteromedially up)",
+         "<strong>Stronger</strong>, rarely torn",
+         "<strong>Tibia sliding backward</strong> on the femur (and femur sliding forward on a fixed tibia, e.g. walking downhill)",
+         "<strong>Full flexion</strong>",
+         "Posterior drawer"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Cruciates are named for where they attach on the tibia</strong></li><li><strong>Crossed-fingers trick</strong>: cross your fingers over the same-side knee - the middle finger is the ACL, the index finger the PCL</li><li><strong>Because the MCL holds the medial meniscus, damage to one puts the other at risk</strong></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/550c8afbcdc7.jpg",
+       "alt": "ACL vs. PCL knee extension vs flexion.png",
+       "w": 900,
+       "h": 644,
+       "cap": "ACL taut in extension, PCL taut in flexion"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. The menisci</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>C-shaped fibrocartilage</strong> wedges, thick at the rim and thin in the middle: <strong>deepen the joint</strong> (better fit of the round femoral condyles) and <strong>absorb shock</strong></li><li><strong>Blood supply</strong>: rich at the <strong>periphery</strong> (from the capsule), <strong>none centrally</strong> (fed by synovial fluid) → <strong>peripheral tears can heal, central ones cannot</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Medial meniscus</span>",
+        "<span class=\"wl\">Lateral meniscus</span>"
+       ],
+       "rows": [
+        [
+         "<strong>Shape</strong>",
+         "C-shaped, broader at the back",
+         "More circular, smaller"
+        ],
+        [
+         "<strong>Mobility</strong>",
+         "<strong>Fixed to the MCL</strong>, so little movement",
+         "<strong>Freely movable</strong> (popliteus pulls it back in flexion)"
+        ],
+        [
+         "<strong>Injury</strong>",
+         "<strong>Torn more often</strong> (with the MCL)",
+         "Torn less often"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/99ad7b84d85b.jpg",
+       "alt": "ligaments of the knee (superior view).png",
+       "w": 900,
+       "h": 603,
+       "cap": "Tibial plateau from above: medial meniscus (C-shaped, joined to the MCL), lateral meniscus (rounder), ACL in front, PCL behind"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Locking and unlocking: the screw-home mechanism</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Locking</strong>: in the <strong>last 15-20° of extension</strong> the femur rotates <strong>medially</strong> on the tibia → all the ligaments tighten (especially MCL, LCL, ACL) → the knee is stable for <strong>\"quiet standing\"</strong> with little muscle work</li><li><strong>Unlocking</strong>: <strong><span class=\"wl\">popliteus</span></strong> rotates the femur <strong>laterally (~5°)</strong> to start flexion, and pulls the lateral meniscus back out of the way<ul><li>popliteus: lateral femoral condyle + lateral meniscus → posterior tibia above the soleal line · <strong>tibial nerve</strong> (L5, S1)</li></ul></li></ul>"
+      }
+     ]
     },
     {
      "id": "msk-w9-06.2",
      "num": "06.2",
      "name": "Clinical Approach to the Knee - PART 1",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Clinical approach to the knee, part 1",
+     "keypoints": "<p>⭐ <strong>Pop + swelling within hours = ACL (hemarthrosis); the other ligament injuries swell little, and a meniscal tear swells late.</strong> <strong>Lachman is the best ACL test.</strong> <strong>Dashboard knee = PCL.</strong> <strong>Valgus → MCL (± medial meniscus, ± ACL = unhappy triad); varus → LCL (look for PCL and fibular nerve injury).</strong> <strong>Locking or catching = meniscus.</strong> <strong>Red-zone tears are repaired, white-zone tears resected.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>An acute knee injury is named from three things: the mechanism, how fast it swelled, and which test is positive.</strong> A pop with <strong>immediate</strong> swelling is the ACL; a dashboard blow is the PCL; a valgus or varus hit is a collateral; a twist on a planted foot with <strong>locking</strong> is a meniscus.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. General approach to knee complaints</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Symptoms</strong>: pain (aching, burning, throbbing, stabbing) · inflammatory (swelling, stiffness, redness, warmth) · neurologic (tingling, shooting, numbness, heaviness)</li><li><strong>Function</strong>: structural (<strong>instability, catching, giving way, locking</strong>) · pain or nerve driven (weakness, limping, trouble walking)</li><li><strong>Provoking factors</strong>: weight bearing (walking, standing, running) · stairs · sitting · inactivity</li><li><strong>Investigations</strong>: X-ray, ultrasound, CT, MRI, bone scan</li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Acute knee injury\"] --> B{\"Mechanism?\"}\n    B -->|\"Planted foot, pivot while slowing<br/>or hyperextension\"| C{\"Pop + swelling<br/>within hours?\"}\n    C -->|Yes| D[\"ACL TEAR<br/>Lachman positive<br/>(blood in the joint)\"]\n    B -->|\"Blow to front of tibia,<br/>knee flexed (dashboard)\"| E[\"PCL TEAR<br/>posterior drawer, sag sign<br/>minimal swelling\"]\n    B -->|\"Valgus blow<br/>(from the outside)\"| F[\"MCL INJURY<br/>medial pain, valgus laxity<br/>± medial meniscus, ± ACL\"]\n    B -->|\"Varus blow, high energy<br/>(from the inside)\"| G[\"LCL INJURY<br/>rarely alone · check PCL,<br/>posterolateral corner, fibular nerve\"]\n    B -->|\"Twist on planted foot<br/>or degeneration\"| H[\"MENISCAL TEAR<br/>joint-line pain, delayed swelling<br/>locking · McMurray, Thessaly\"]"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Ligament injuries</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">ACL tear</span>",
+        "<span class=\"wl\">PCL tear</span>",
+        "<span class=\"wl\">MCL injury</span>",
+        "<span class=\"wl\">LCL injury</span>"
+       ],
+       "rows": [
+        [
+         "<strong>How common</strong>",
+         "Common · <strong>female 4.5 : 1</strong> · pivoting sports",
+         "<strong>Less common</strong> (strongest ligament)",
+         "<strong>Very common</strong> (more than LCL)",
+         "<strong>Uncommon alone</strong>"
+        ],
+        [
+         "<strong>Mechanism</strong>",
+         "<strong>Non-contact 60-80%</strong>: planted foot, pivoting while slowing · contact ~30%: blow causing hyperextension or valgus",
+         "<strong>Dashboard</strong>: blow to the anterior tibia with the knee flexed · hyperextension",
+         "<strong>Valgus</strong> force, almost always a collision",
+         "<strong>High-energy varus</strong> force"
+        ],
+        [
+         "<strong>Presents as</strong>",
+         "<strong>\"Pop\"</strong> · <strong>immediate swelling (hemarthrosis)</strong> - a vessel runs through the ligament · giving way · lateral knee pain (bone bruise)",
+         "Vague, sometimes posterior pain · <strong>minimal swelling</strong>",
+         "Medial pain · valgus laxity · minimal swelling",
+         "Lateral pain · no swelling if alone · <strong>foot drop or numbness if the common fibular nerve is hurt</strong>"
+        ],
+        [
+         "<strong>Goes with</strong>",
+         "Patellar dislocation (same mechanism)",
+         "<strong>Posterolateral corner (up to 60%)</strong>, meniscal and cartilage injury",
+         "<strong>Medial meniscus</strong> · ACL if completely torn",
+         "<strong>PCL</strong>, posterolateral corner"
+        ],
+        [
+         "<strong>Exam</strong>",
+         "<strong><span class=\"wl\">Lachman</span> (best)</strong> · <span class=\"wl\">anterior drawer</span> (more false positives) · <span class=\"wl\">pivot shift</span> (mostly in the operating room)",
+         "<span class=\"wl\">Posterior drawer</span> · <span class=\"wl\">sag sign</span> · reverse Lachman · thumb sign",
+         "Valgus stress on the flexed knee",
+         "Varus stress on the flexed knee"
+        ],
+        [
+         "<strong>Imaging</strong>",
+         "X-ray for fracture (usually normal) · MRI if the exam is unsure or to plan surgery",
+         "X-ray (avulsion) and stress X-ray · MRI for other injuries",
+         "—",
+         "—"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "Rest, ice, compression, elevation · crutches as needed · physiotherapy (keep the quadriceps) · <strong>orthopedic referral for <span class=\"wl\">ACL reconstruction</span></strong> · back to sport ~9-12 months after surgery (sources differ: the medwiki note says ~12 months, the upper-year notes 9-12 - check the slides) · 3-6% re-tear",
+         "<strong>Physiotherapy usually enough</strong> · bracing · surgery only for rotational instability or posterolateral corner injury · 50% return to the same level",
+         "<strong>Early range of motion · bracing</strong> · physiotherapy · grades 1-2 back in 2-8 weeks",
+         "Bracing · physiotherapy · <strong>surgery for a complete (grade 3) tear</strong> or ongoing instability"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Meniscal tears</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Meniscal tear</span></strong>: degenerative (\"wear and tear\") or <strong>rotation / twisting with the foot planted</strong></li><li><strong>Presents as</strong>: medial or lateral <strong>joint-line pain</strong> · swelling that is <strong>delayed (1-2 days) or comes and goes</strong> · <strong>mechanical symptoms - locking, catching</strong> · giving way</li><li><strong>Exam</strong>: effusion · <strong>joint-line tenderness</strong> · <span class=\"wl\">McMurray's test</span> · <span class=\"wl\">Thessaly's test</span> · Apley</li><li><strong>Imaging</strong>: X-ray usually normal (look for <span class=\"wl\">knee osteoarthritis</span> if degenerative) · MRI if conservative care fails or a large tear is suspected</li><li><strong>Treatment depends on where the tear is</strong>, because only the rim has a blood supply</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Tear",
+        "Treatment"
+       ],
+       "rows": [
+        [
+         "<strong>Degenerative, small or mildly symptomatic</strong>",
+         "Physiotherapy (quadriceps and hamstrings), NSAIDs, steroid injection, activity changes · <strong>surgery does not help</strong> · arthroplasty only as a last resort if arthritic"
+        ],
+        [
+         "<strong>Red or red-white zone</strong> (vascular rim), large, <strong>bucket-handle</strong>, root tears, young patients",
+         "<strong>Meniscal repair</strong>"
+        ],
+        [
+         "<strong>White zone</strong> (avascular centre), chronic or degenerative",
+         "<strong>Meniscal resection</strong> (partial meniscectomy) - may speed up arthritis"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Return to sport: 6 weeks to 3 months, depending on repair or resection</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/9058402ecc36.jpg",
+       "alt": "meniscus blood supply.png",
+       "w": 900,
+       "h": 424,
+       "cap": "Meniscal zones: red (vascular rim) can heal and is repaired; white (avascular centre) cannot and is resected"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. The unhappy triad (\"blown knee\")</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">Unhappy triad</span></strong> = <strong>MCL + medial meniscus + ACL</strong>, from a <strong>lateral (valgus) blow</strong> to a flexed knee with rotation<ul><li>① valgus force tears the MCL · ② the attached medial meniscus tears (bucket-handle) · ③ continued force with external rotation tears the ACL</li></ul></li><li><strong>Presents as</strong>: pain, swelling, instability with twisting, locking, reduced movement, valgus laxity</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/9ab2d94d2c11.jpg",
+       "alt": "unhappy triad.png",
+       "w": 900,
+       "h": 680,
+       "cap": "Unhappy triad: a valgus blow from the outside tears the MCL, the medial meniscus and the ACL"
+      }
+     ]
     },
     {
      "id": "msk-w9-07.1",
      "num": "07.1",
      "name": "Anatomy of the Knee - PART 2",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Anatomy of the knee, part 2",
+     "keypoints": "<p>⭐ <strong>The Q-angle makes the quadriceps pull the patella laterally; vastus medialis and the raised lateral femoral groove hold it in.</strong> <strong>Wider Q-angle in females → more lateral subluxation and patellofemoral pain.</strong> <strong>Genu valgum raises the Q-angle and loads the lateral condyles; genu varum lowers it and loads the medial.</strong> <strong>Housemaid's knee = prepatellar; clergyman's knee = superficial infrapatellar.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The patella always wants to slide laterally, and the knee spends structures stopping it.</strong> The angle of the femur (the Q-angle) pulls it out; the vastus medialis and a lateral ridge of bone hold it in. Around it sit the bursae that become knee bursitis.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. The extensor mechanism and patellar stability</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Quadriceps femoris → quadriceps tendon → <span class=\"wl\">patella</span> → patellar ligament → tibial tuberosity</strong><ul><li>the patella sits inside this tendon (a sesamoid bone), so <strong>the quadriceps are its main stabiliser</strong></li></ul></li><li><strong>The pull is not straight</strong>: the femur runs diagonally, so the quadriceps pull along the femur's axis, <strong>superolaterally</strong>, while the patellar ligament pulls straight down<ul><li>the result is a <strong>lateral force on the patella</strong> that tends to sublux it laterally</li></ul></li><li><strong>Two things resist the lateral pull</strong><ul><li>① <strong><span class=\"wl\">vastus medialis</span></strong> pulls the patella medially</li><li>② <strong>the lateral side of the femur's patellar groove (and the larger lateral patellar facet) stands proud</strong>, a bony buttress</li><li>abnormal bony shape of the patella or distal femur predisposes to <strong>patellar dislocation</strong></li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/d181a45815b5.jpg",
+       "alt": "patellar forces and lateral pull from the Q-angle - upper-year notes.jpg",
+       "w": 802,
+       "h": 481,
+       "cap": "Quadriceps (Q) and patellar tendon (P) pulls add up to a lateral resultant (R); vastus medialis pulls back medially"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. The Q-angle and knee alignment</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Q-angle</strong> = angle between a line from the <strong>anterior superior iliac spine to the patella</strong> and a line from the <strong>patella to the tibial tuberosity</strong></li><li><strong>Wider in females</strong> (wider hips) → more lateral pull → <strong>more lateral patellar subluxation and <span class=\"wl\">patellofemoral pain syndrome</span></strong></li><li>Strong quadriceps with an unopposed lateral pull → the lateral patella grinds on the femur → patellofemoral pain</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Alignment",
+        "Femur angle",
+        "Q-angle",
+        "Load falls on"
+       ],
+       "rows": [
+        [
+         "<strong>Normal</strong>",
+         "Diagonal",
+         "Normal",
+         "Shared between medial and lateral condyles"
+        ],
+        [
+         "<strong><span class=\"wl\">Genu varum</span> (bow-legged)</strong>",
+         "More vertical",
+         "<strong>Smaller</strong>",
+         "<strong>Medial</strong> condyles"
+        ],
+        [
+         "<strong><span class=\"wl\">Genu valgum</span> (knock-kneed)</strong>",
+         "Steeper angle",
+         "<strong>Larger</strong>",
+         "<strong>Lateral</strong> condyles"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/64fd2da7ff32.jpg",
+       "alt": "male vs. female q-angles.png",
+       "w": 418,
+       "h": 470,
+       "cap": "The Q-angle is wider in females than in males"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Bursae around the knee</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Fluid sacs that let tendons and skin glide over bone; <strong>irritation from chronic friction = <span class=\"wl\">bursitis</span></strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Bursa",
+        "Where",
+        "Note"
+       ],
+       "rows": [
+        [
+         "<strong>Suprapatellar</strong>",
+         "Deep to the quadriceps tendon",
+         "Attached to articularis genu and the synovial membrane; articularis genu pulls it tight in extension"
+        ],
+        [
+         "<strong>Prepatellar</strong>",
+         "Over the patella, under the skin",
+         "<strong><span class=\"wl\">\"Housemaid's knee\"</span></strong> - kneeling on the kneecap"
+        ],
+        [
+         "<strong>Infrapatellar</strong> (superficial and deep)",
+         "In front of and behind the patellar ligament",
+         "<strong>Superficial: \"clergyman's knee\"</strong> - kneeling upright on the tibial tuberosity"
+        ],
+        [
+         "<strong>Pes anserinus</strong>",
+         "Under the pes anserinus tendons on the medial tibia",
+         "<span class=\"wl\">pes anserinus bursitis</span>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Nerves and blood supply</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Nerves (Hilton's law: a joint is supplied by the nerves to the muscles that move it)</strong>: femoral and sciatic nerves · articular branches of the obturator and saphenous nerves</li><li><strong>Arteries</strong>: the <strong>genicular anastomosis</strong> - superior and inferior, medial and lateral genicular branches of the <strong><span class=\"wl\">popliteal artery</span></strong> · collateral flow from the descending branch of the lateral circumflex femoral artery</li></ul>"
+      }
+     ]
     },
     {
      "id": "msk-w9-07.2",
      "num": "07.2",
      "name": "Clinical Approach to the Knee - PART 2",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Clinical approach to the knee, part 2",
+     "keypoints": "<p>⭐ <strong>Anterior knee pain on stairs and after sitting, with no swelling, in a young woman = patellofemoral pain syndrome; treat by strengthening vastus medialis.</strong> <strong>Lateral knee pain while running downhill + Ober's test = iliotibial band.</strong> <strong>A popliteal cyst means something is making extra fluid - treat the cause, and don't miss a DVT.</strong> <strong>Steroid: fast, cheap, short. Hyaluronic acid: slow to wear off, expensive.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Part 2 is the knee pain that builds up rather than happens:</strong> overuse and swelling problems told apart by <strong>where it hurts and whether there is a lump</strong>, then the two injections you need to know.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Telling them apart</h5>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Knee pain or swelling<br/>without an acute injury\"] --> B{\"Where?\"}\n    B -->|\"Front of the knee,<br/>no swelling\"| C[\"PATELLOFEMORAL PAIN SYNDROME<br/>worse with stairs, sitting bent<br/>crouch compression test\"]\n    B -->|\"Swelling over or around<br/>the kneecap\"| D[\"KNEE BURSITIS<br/>prepatellar most common<br/>rule out infection\"]\n    B -->|\"Lateral knee,<br/>while running\"| E[\"ILIOTIBIAL BAND FRICTION SYNDROME<br/>tender lateral femoral epicondyle<br/>Ober's test\"]\n    B -->|\"Swelling behind<br/>the knee\"| F[\"POPLITEAL (BAKER'S) CYST<br/>ultrasound to confirm<br/>rule out DVT, aneurysm, tumour\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Patellofemoral pain syndrome</span>",
+        "<span class=\"wl\">Knee bursitis</span>",
+        "<span class=\"wl\">Popliteal (Baker's) cyst</span>",
+        "<span class=\"wl\">Iliotibial band friction syndrome</span>"
+       ],
+       "rows": [
+        [
+         "<strong>What</strong>",
+         "Lateral pull on the patella → lateral facet grinds on the femur",
+         "Friction irritates a bursa (prepatellar most common)",
+         "Synovial fluid bulges into the popliteal fossa through a defect in the posterior capsule",
+         "Iliotibial band rubs the <strong>lateral femoral epicondyle</strong> in the first <strong>30° of flexion</strong>"
+        ],
+        [
+         "<strong>Who</strong>",
+         "<strong>Young females</strong> (wider Q-angle) · ~30% lifetime · new or increased activity",
+         "People who kneel a lot",
+         "Conditions that make extra synovial fluid: <strong>knee osteoarthritis</strong>, rheumatoid arthritis, meniscal tear",
+         "Runners, especially <strong>downhill</strong> · second most common knee injury"
+        ],
+        [
+         "<strong>Presents as</strong>",
+         "Gradual <strong>anterior</strong> aching, <strong>worse with stairs and sitting with the knee bent</strong> · no or minimal swelling",
+         "Slow-onset pain and <strong>swelling</strong> (\"popeye knee\")",
+         "Often none · swelling behind the knee, stiffness, calf swelling · limits flexion if large · can rupture or calcify",
+         "<strong>Aching lateral knee during running</strong>, sharp with extension"
+        ],
+        [
+         "<strong>Diagnosis</strong>",
+         "Clinical · <strong><span class=\"wl\">crouch compression test</span></strong> · image only if not improving",
+         "Clinical · <strong>look for infection (redness, heat) and trauma</strong>",
+         "<strong>Ultrasound</strong> · MRI if not settling (cyst vs tumour)",
+         "Clinical · <strong><span class=\"wl\">Ober's test</span></strong> · no imaging"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "Scale back activity · <strong>strengthen vastus medialis</strong> · bracing or taping",
+         "Protection, rest, ice, compression, elevation · NSAIDs",
+         "Treat <strong>the cause</strong>, not just the cyst · rest, NSAIDs, drainage or steroid injection · surgery if neurovascular compromise",
+         "Activity change · stretch the band (foam roll) · steroid injection · surgery after 6+ months"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Iliotibial band and sprinting</strong> (sources differ: the medwiki note lists sprinting as a cause; the upper-year notes say sprinting makes it less likely because the knee bends past 30° - check the slides)</li><li><strong>Popliteal cyst complications</strong>: <span class=\"wl\">deep vein thrombosis</span> · cellulitis · <span class=\"wl\">compartment syndrome</span> · its differential includes <span class=\"wl\">popliteal aneurysm</span> and DVT</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/06414e2d4c91.jpg",
+       "alt": "knee bursitis.png",
+       "w": 900,
+       "h": 1042,
+       "cap": "Bursae of the knee: suprapatellar, prepatellar, infrapatellar and pes anserinus"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/674dab688cc5.jpg",
+       "alt": "popliteal cyst ultrasound.png",
+       "w": 666,
+       "h": 336,
+       "cap": "Popliteal cyst on ultrasound: the body of the cyst and its neck between the medial head of gastrocnemius and semimembranosus"
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Knee injection therapies</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>The two to know</strong>: corticosteroid and hyaluronic acid (platelet-rich plasma and stem cells are nice to know, not tested)</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<span class=\"wl\">Corticosteroid</span>",
+        "<span class=\"wl\">Hyaluronic acid</span>"
+       ],
+       "rows": [
+        [
+         "<strong>How it works</strong>",
+         "Local anti-inflammatory",
+         "Replaces a normal part of synovial fluid → more lubrication and shock absorption (in theory)"
+        ],
+        [
+         "<strong>Used for</strong>",
+         "Osteoarthritis, bursitis, tendon disorders, rheumatoid arthritis, gout",
+         "Osteoarthritis (listed as an option in the hip osteoarthritis note)"
+        ],
+        [
+         "<strong>Onset / duration</strong>",
+         "<strong>Fast · short-lived</strong> (sources differ: under 4-12 weeks in the medwiki note, 4-8 weeks in the upper-year notes - check the slides)",
+         "<strong>26+ weeks of relief</strong>"
+        ],
+        [
+         "<strong>Cost</strong>",
+         "<strong>Cheap</strong> (~$20)",
+         "<strong>Expensive</strong> (~$300-500)"
+        ],
+        [
+         "<strong>Downside</strong>",
+         "Possible <strong>cartilage damage and faster osteoarthritis</strong> (weak evidence)",
+         "Mixed, inconclusive evidence · good safety profile"
+        ]
+       ]
+      }
+     ]
     },
     {
      "id": "msk-w9-08",
      "num": "08",
      "name": "Anatomy of the Leg",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Anatomy of the leg",
+     "keypoints": "<p>⭐ <strong>Anterior = dorsiflexion = deep fibular; lateral = eversion = superficial fibular; both posterior = plantarflexion = tibial.</strong> <strong>Common fibular nerve injury at the fibula → foot drop with numbness of the dorsum of the foot; deep fibular alone → numb first web space only.</strong> <strong>Tibialis anterior and tibialis posterior both invert.</strong> <strong>Tarsal tunnel: Tom, Dick And Very Nervous Harry.</strong> <strong>Gastrocnemius plantarflexes only well with the knee straight.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Draft",
+       "html": "<p>Built from upper-year notes and the medwiki note. Not yet checked against this year's lecture slides.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The leg is four sealed compartments, each with one job and one nerve:</strong> anterior dorsiflexes (deep fibular), lateral everts (superficial fibular), and both posterior compartments plantarflex (tibial). Learn that grid and nerve injuries, compartment syndrome and foot drop follow from it.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>1. Bones of the leg and foot</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong><span class=\"wl\">tibia</span></strong>: the <strong>weight-bearing</strong> bone · shaft just under the skin (the \"shin\") · tibial plateau, tuberosity, soleal line (soleus origin) · <strong><span class=\"wl\">medial malleolus</span></strong> distally</li><li><strong><span class=\"wl\">fibula</span></strong>: posterolateral · <strong>does not bear weight</strong> (so it is the bone of choice for grafts) · head near the knee · <strong><span class=\"wl\">lateral malleolus</span></strong> distally, <strong>longer than the medial</strong>, which limits eversion</li><li><strong>Fractures</strong>: tibia at its narrowest point, between the middle and distal thirds (also its poorest blood supply) · a broken tibia often takes the fibula with it (joined by the interosseous membrane) · lateral malleolus fracture (sources differ: the medwiki note says from forced eversion; the upper-year notes say the fibula breaks just above the lateral malleolus in extreme inversion - check the slides)</li><li><strong>Foot: 7 tarsals, 5 metatarsals, phalanges</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Bone",
+        "Key point"
+       ],
+       "rows": [
+        [
+         "<strong>Talus</strong>",
+         "Gripped between the two malleoli · carries weight from the tibia to the calcaneus and forefoot · <strong>no muscle attachments</strong>"
+        ],
+        [
+         "<strong>Calcaneus</strong>",
+         "Heel, largest foot bone · <strong>calcaneal tuberosity</strong> takes the Achilles (calcaneal) tendon · <strong>sustentaculum tali</strong>: shelf for the talus and pulley for flexor hallucis longus"
+        ],
+        [
+         "<strong>Navicular</strong>",
+         "Between talus and the cuneiforms · its tuberosity anchors the \"spring\" ligament (medial arch)"
+        ],
+        [
+         "<strong>Cuboid</strong>",
+         "Most lateral tarsal"
+        ],
+        [
+         "<strong>Cuneiforms</strong> (medial, intermediate, lateral)",
+         "Wedge-shaped, build the transverse arch"
+        ],
+        [
+         "<strong>5th metatarsal</strong>",
+         "Tuberosity = insertion of fibularis brevis → <strong>avulsion fracture with sudden inversion</strong>"
+        ],
+        [
+         "<strong>Sesamoids</strong>",
+         "Two under the 1st metatarsal head"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<h5>2. Fascia and compartments</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Crural fascia</strong> wraps the leg · the tibia, fibula, <strong>interosseous membrane</strong> and the anterior, posterior and transverse intermuscular septa divide it into <strong>4 compartments</strong></li><li><strong>Retinacula stop the tendons bowstringing at the ankle</strong>: superior and inferior <strong>extensor</strong> retinacula (anterior compartment) · superior and inferior <strong>fibular</strong> retinacula (lateral compartment) · <strong>flexor retinaculum</strong> roofs the tarsal tunnel (deep posterior)</li><li><strong><span class=\"wl\">Compartment syndrome</span></strong>: the fascia does not stretch, so swelling, bleeding or infection raises the pressure → nerves and arteries in that compartment are squeezed · relieved by <strong>fasciotomy</strong> · <strong>shin splints</strong> = a mild form in the anterior compartment (overuse microtrauma where tibialis anterior attaches)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/9a08118f17a8.jpg",
+       "alt": "compartments of the leg cross-section - upper-year notes.jpg",
+       "w": 728,
+       "h": 546,
+       "cap": "Cross-section of the leg: crural fascia, interosseous membrane and septa dividing the anterior, lateral, superficial posterior and deep posterior compartments"
+      },
+      {
+       "t": "note",
+       "html": "<h5>3. Muscles by compartment</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Compartment",
+        "Muscle",
+        "Insertion",
+        "Action",
+        "Nerve"
+       ],
+       "rows": [
+        [
+         "<strong>Anterior</strong> - <strong>dorsiflexion</strong>",
+         "<strong>Tibialis anterior</strong>",
+         "Medial cuneiform + base of 1st metatarsal",
+         "Dorsiflexes, <strong>inverts</strong>",
+         "<strong><span class=\"wl\">Deep fibular</span></strong>"
+        ],
+        [
+         "",
+         "Extensor digitorum longus",
+         "Middle and distal phalanges, toes 2-5",
+         "Dorsiflexes, extends toes 2-5",
+         ""
+        ],
+        [
+         "",
+         "Extensor hallucis longus",
+         "Distal phalanx of the big toe",
+         "Dorsiflexes, extends big toe · L5 myotome",
+         ""
+        ],
+        [
+         "",
+         "Fibularis (peroneus) tertius",
+         "Base of 5th metatarsal",
+         "Weak dorsiflexion and eversion · <strong>absent in ~20%</strong>",
+         ""
+        ],
+        [
+         "<strong>Lateral</strong> - <strong>eversion</strong>",
+         "<strong>Fibularis longus</strong>",
+         "Medial cuneiform + 1st metatarsal (crosses under the foot)",
+         "Everts, weakly plantarflexes, supports transverse arch",
+         "<strong><span class=\"wl\">Superficial fibular</span></strong>"
+        ],
+        [
+         "",
+         "Fibularis brevis",
+         "Tuberosity of 5th metatarsal",
+         "Everts, weakly plantarflexes",
+         ""
+        ],
+        [
+         "<strong>Superficial posterior</strong> - <strong>plantarflexion</strong>",
+         "<strong>Gastrocnemius</strong> (from both femoral condyles)",
+         "Calcaneus via Achilles tendon",
+         "Plantarflexes <strong>only well with the knee straight</strong> · flexes knee",
+         "<strong><span class=\"wl\">Tibial</span></strong>"
+        ],
+        [
+         "",
+         "Soleus (fibular head, soleal line)",
+         "Calcaneus via Achilles tendon",
+         "Plantarflexes · slow-twitch, for long work",
+         ""
+        ],
+        [
+         "",
+         "Plantaris",
+         "Calcaneus via Achilles tendon",
+         "Weak plantarflexion",
+         ""
+        ],
+        [
+         "<strong>Deep posterior</strong>",
+         "<strong>Popliteus</strong>",
+         "Posterior tibia above soleal line",
+         "<strong>Unlocks the knee</strong>",
+         "<strong>Tibial</strong>"
+        ],
+        [
+         "",
+         "Flexor digitorum longus",
+         "Distal phalanges, toes 2-5",
+         "Flexes toes, plantarflexes, supports arches",
+         ""
+        ],
+        [
+         "",
+         "<strong>Tibialis posterior</strong>",
+         "Navicular tuberosity (+ cuneiforms, cuboid, metatarsals 2-4)",
+         "Plantarflexes, <strong>inverts</strong> · supports medial arch",
+         ""
+        ],
+        [
+         "",
+         "Flexor hallucis longus",
+         "Distal phalanx of the big toe",
+         "Flexes big toe, supports medial arch, push-off",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Achilles (calcaneal) tendon</strong>: tendinitis in runners, just above the heel · <strong>rupture</strong> in poorly conditioned people with forceful plantarflexion → audible snap, calf pain, <strong>palpable gap, cannot plantarflex against resistance</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>4. Tarsal tunnel</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>Under the <strong>flexor retinaculum, behind the medial malleolus</strong> · front to back: <strong>\"Tom, Dick And Very Nervous Harry\"</strong> = <strong>T</strong>ibialis posterior · flexor <strong>D</strong>igitorum longus · posterior tibial <strong>A</strong>rtery · posterior tibial <strong>V</strong>ein · tibial <strong>N</strong>erve · flexor <strong>H</strong>allucis longus (the upper-year notes drop the vein: \"Tom, Dick And Not Harry\")</li><li>Tibialis posterior and flexor digitorum longus <strong>cross (\"Tom under Dick\")</strong> - in the calf the order is different</li><li><strong><span class=\"wl\">Tarsal tunnel syndrome</span></strong>: tibial nerve compressed by swollen tendon sheaths → <strong>heel pain</strong></li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>5. Arteries</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Artery",
+        "Origin",
+        "Course and supply"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Popliteal</span></strong>",
+         "Femoral artery, after the adductor hiatus",
+         "Through the popliteal fossa · splits at its lower border"
+        ],
+        [
+         "<strong>Anterior tibial</strong>",
+         "Popliteal",
+         "Through the top of the interosseous membrane → anterior compartment with the deep fibular nerve → becomes <strong>dorsalis pedis</strong> at the ankle"
+        ],
+        [
+         "<strong>Posterior tibial</strong>",
+         "Popliteal",
+         "Deep posterior compartment with the tibial nerve → behind the medial malleolus through the tarsal tunnel → sole"
+        ],
+        [
+         "<strong>Fibular</strong>",
+         "Posterior tibial (largest branch)",
+         "Down along the fibula · muscular branches to the posterior and lateral compartments"
+        ]
+       ]
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/84c17358400c.jpg",
+       "alt": "arteries of the leg.png",
+       "w": 900,
+       "h": 1506,
+       "cap": "Arteries of the leg: popliteal splitting into anterior tibial (to dorsalis pedis) and posterior tibial (giving the fibular artery)"
+      },
+      {
+       "t": "note",
+       "html": "<h5>6. Veins and venous return</h5>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Superficial</strong> (no paired artery): <strong><span class=\"wl\">great saphenous vein</span></strong> - from the dorsal venous arch, <strong>in front of the medial malleolus</strong>, up the medial leg and thigh → femoral vein at the saphenous opening · <strong>small saphenous</strong> - from the dorsal venous arch, lateral to the Achilles tendon, up the back of the calf between the gastrocnemius heads → <strong>popliteal vein</strong></li><li><strong>Deep</strong> (paired with arteries, often 2-3 per artery): anterior and posterior tibial veins → popliteal → femoral vein</li><li><strong>Perforating veins</strong> carry blood <strong>superficial → deep</strong> only (valves)</li><li><strong>Return against gravity</strong>: <strong>venous valves</strong> · <strong>arteriovenous pump</strong> (pulsing artery squeezes its companion veins) · <strong>musculovenous pump</strong> (contracting muscle squeezes veins inside the tight fascia)</li><li><strong>Varicose veins</strong>: valves fail, usually in the great saphenous system → blood pools distally · treated by laser closure</li></ul>"
+      },
+      {
+       "t": "note",
+       "html": "<h5>7. Nerves</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Nerve",
+        "From",
+        "Motor",
+        "Skin"
+       ],
+       "rows": [
+        [
+         "<strong>Sciatic</strong> (L4-S3)",
+         "—",
+         "Splits at the popliteal fossa",
+         "—"
+        ],
+        [
+         "<strong><span class=\"wl\">Tibial</span></strong>",
+         "Sciatic",
+         "<strong>Superficial + deep posterior compartments</strong> (plantarflexion, toe flexion)",
+         "Medial sural cutaneous (back of leg) · medial calcaneal (heel) · medial and lateral plantar (sole)"
+        ],
+        [
+         "<strong><span class=\"wl\">Common fibular</span></strong>",
+         "Sciatic",
+         "— (splits after wrapping around the fibula)",
+         "Lateral sural cutaneous (lateral leg)"
+        ],
+        [
+         "<strong>Deep fibular</strong>",
+         "Common fibular",
+         "<strong>Anterior compartment</strong> (dorsiflexion) + dorsal foot muscles",
+         "<strong>First web space</strong> only"
+        ],
+        [
+         "<strong>Superficial fibular</strong>",
+         "Common fibular",
+         "<strong>Lateral compartment</strong> (eversion)",
+         "<strong>Anterolateral leg + dorsum of the foot</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Saphenous</span></strong>",
+         "Femoral",
+         "—",
+         "Medial leg and foot"
+        ],
+        [
+         "<strong><span class=\"wl\">Sural</span></strong>",
+         "Medial + lateral sural cutaneous",
+         "—",
+         "Lateral ankle and foot"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Common fibular nerve injury → <span class=\"wl\">foot drop</span></strong>: it is <strong>subcutaneous where it wraps the fibula</strong> (sources differ: the medwiki note says around the head of the fibula, the upper-year notes the neck - check the slides) → loses the <strong>anterior and lateral compartments</strong> and dorsum-of-foot sensation → no dorsiflexion, foot slaps down after heel strike · compensates with a <strong>steppage</strong>, swing-out or hip-hiking gait</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/c1134e57c18b.jpg",
+       "alt": "nerves of the leg.png",
+       "w": 900,
+       "h": 954,
+       "cap": "Nerves of the leg: anterior view (saphenous, deep and superficial fibular) and posterior view (sciatic, tibial, common fibular, sural branches, plantar nerves)"
+      }
+     ]
     }
    ]
   },
