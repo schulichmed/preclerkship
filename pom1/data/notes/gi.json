@@ -9,13 +9,23 @@
      "id": "gi-w10-01",
      "num": "01",
      "name": "Overview of the GI Tract",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "07",
+      "name": "Nutrition & Supplements",
+      "key": "gi-w12-07"
+     }
     },
     {
      "id": "gi-w10-02",
      "num": "02",
      "name": "Gastrointestinal Motility",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "02",
+      "name": "Histology & Pathology of the Liver and Pancreatobiliary System",
+      "key": "gi-w12-02"
+     }
     },
     {
      "id": "gi-w10-03",
@@ -250,10 +260,15 @@
      "id": "gi-w10-07",
      "num": "07",
      "name": "GI Imaging",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "07",
+      "name": "Nutrition & Supplements",
+      "key": "gi-w12-07"
+     }
     },
     {
-     "id": "gi-w10-08",
+     "id": "gi-w10-08a",
      "num": "08",
      "name": "Anatomy of the Foregut",
      "hasNote": false
@@ -457,7 +472,14 @@
      ],
      "title": "Acid-Lowering, Antiemetic & Prokinetic Drugs",
      "framing": "<p>Three drug families for the upper GI tract. Each class is best learned as <strong>which receptor it hits</strong> – that predicts its indication and its side effects.</p>",
-     "keypoints": "<p><strong>PPIs irreversibly inhibit H+/K+-ATPase</strong>, take before breakfast, and interact with <strong>clopidogrel via CYP2C19</strong>; long-term: C. difficile, B12, Mg/Ca, fractures. <strong>H2-blockers</strong> show tachyphylaxis; cimetidine is anti-androgenic and a CYP inhibitor. <strong>Antacids</strong>: Mg = diarrhea, Al = constipation (CHOPS), CaCO3 = milk-alkali. <strong>5-HT3 antagonists</strong> for chemo/post-op N/V; <strong>antihistamines</strong> for vestibular/pregnancy; <strong>metoclopramide crosses the BBB</strong> (extrapyramidal), domperidone does not.</p>"
+     "keypoints": "<p><strong>PPIs irreversibly inhibit H+/K+-ATPase</strong>, take before breakfast, and interact with <strong>clopidogrel via CYP2C19</strong>; long-term: C. difficile, B12, Mg/Ca, fractures. <strong>H2-blockers</strong> show tachyphylaxis; cimetidine is anti-androgenic and a CYP inhibitor. <strong>Antacids</strong>: Mg = diarrhea, Al = constipation (CHOPS), CaCO3 = milk-alkali. <strong>5-HT3 antagonists</strong> for chemo/post-op N/V; <strong>antihistamines</strong> for vestibular/pregnancy; <strong>metoclopramide crosses the BBB</strong> (extrapyramidal), domperidone does not.</p>",
+     "covers": [
+      {
+       "num": "11",
+       "name": "Nausea, Vomiting, and Gastroparesis",
+       "key": "gi-w10-11"
+      }
+     ]
     },
     {
      "id": "gi-w10-09",
@@ -478,13 +500,23 @@
      "id": "gi-w10-10",
      "num": "10",
      "name": "GI Secretion",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "02",
+      "name": "Histology & Pathology of the Liver and Pancreatobiliary System",
+      "key": "gi-w12-02"
+     }
     },
     {
      "id": "gi-w10-11",
      "num": "11",
      "name": "Nausea, Vomiting, and Gastroparesis",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "08",
+      "name": "PUD, Dyspepsia, & Acid-Lowering Drugs",
+      "key": "gi-w10-08"
+     }
     }
    ]
   },
@@ -676,6 +708,11 @@
        "num": "05",
        "name": "Infectious Diarrhea",
        "key": "gi-w11-05"
+      },
+      {
+       "num": "05",
+       "name": "Pediatric Diarrhea",
+       "key": "gi-w13-05"
       }
      ],
      "framing": "<p>Diarrhea is a disturbance of the gut’s water balance. The approach sorts it by <strong>duration</strong> (acute = infectious, chronic = non-infectious), then <strong>blood</strong>, then <strong>mechanism</strong> (osmotic, secretory, inflammatory, motility) – the stool osmotic gap separates the first two.</p>",
@@ -830,13 +867,25 @@
      ],
      "title": "Constipation & GI Bleeding",
      "framing": "<p>Two common presentations. Constipation is <strong>mostly functional</strong> – the job is to recognise the Rome IV pattern and rule out secondary causes. A GI bleed is sorted by the <strong>ligament of Treitz</strong> (upper vs lower), and in either case you <strong>resuscitate before you scope</strong>.</p>",
-     "keypoints": "<p>Rome IV: <strong>≥ 2 of 6 features, 3 months, onset ≥ 6 months</strong>. Laxatives do <strong>not</strong> cause a lazy colon; fibre alone does not treat pediatric functional constipation. Upper GI bleed = <strong>proximal to Treitz</strong> (hematemesis, melena, ↑ BUN:Cr). Variceal bleed: <strong>PPI + octreotide + ABX (mortality benefit) + banding</strong>. Unstable hematochezia → <strong>upper endoscopy</strong> first.</p>"
+     "keypoints": "<p>Rome IV: <strong>≥ 2 of 6 features, 3 months, onset ≥ 6 months</strong>. Laxatives do <strong>not</strong> cause a lazy colon; fibre alone does not treat pediatric functional constipation. Upper GI bleed = <strong>proximal to Treitz</strong> (hematemesis, melena, ↑ BUN:Cr). Variceal bleed: <strong>PPI + octreotide + ABX (mortality benefit) + banding</strong>. Unstable hematochezia → <strong>upper endoscopy</strong> first.</p>",
+     "covers": [
+      {
+       "num": "06",
+       "name": "Pediatric Constipation",
+       "key": "gi-w13-06"
+      }
+     ]
     },
     {
      "id": "gi-w11-07",
      "num": "07",
      "name": "Functional Gut Disorders",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "08",
+      "name": "Inflammatory Bowel Disease",
+      "key": "gi-w11-08"
+     }
     },
     {
      "id": "gi-w11-08",
@@ -1655,6 +1704,21 @@
        "num": "11",
        "name": "Colorectal Cancer Screening",
        "key": "gi-w11-11"
+      },
+      {
+       "num": "07",
+       "name": "Functional Gut Disorders",
+       "key": "gi-w11-07"
+      },
+      {
+       "num": "01",
+       "name": "Approach to Liver Masses",
+       "key": "gi-w12-01"
+      },
+      {
+       "num": "05",
+       "name": "Acute Hepatitis",
+       "key": "gi-w12-05"
       }
      ],
      "framing": "<p>Three linked topics: chronic inflammatory bowel disease, the colorectal cancer it can lead to (and how we screen for it), and liver disease from acute hepatitis through cirrhosis. The thread through the liver half is the <strong>injury → fibrosis → cirrhosis</strong> progression and the tests that tell you where a patient sits on it.</p>",
@@ -1851,7 +1915,12 @@
      "id": "gi-w12-01",
      "num": "01",
      "name": "Approach to Liver Masses",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "08",
+      "name": "Inflammatory Bowel Disease",
+      "key": "gi-w11-08"
+     }
     },
     {
      "id": "gi-w12-02",
@@ -2231,7 +2300,19 @@
      ],
      "title": "GI Histology & Physiology",
      "framing": "<p>The structure and function of the digestive tract: segment histology, the hepatic lobule, then how food is moved (motility), acid is controlled, and nutrients, water, bilirubin and bile are handled. The organising idea is that <strong>every secretion and movement is regulated by the same few signals</strong> – ACh, gastrin, histamine, somatostatin, CCK and secretin.</p>",
-     "keypoints": "<p><strong>Jejunum</strong>: long vasa recta, few large arcades, tall plicae; <strong>ileum</strong>: Peyer patches, short vasa recta, more mesenteric fat. <strong>Zone III</strong> is hit first by ischemia and alcohol; zone I by viral hepatitis. <strong>MMCs are driven by motilin</strong> during fasting. Acid: <strong>ACh, gastrin, histamine ↑; somatostatin, prostaglandins ↓</strong>. Lipids bypass the liver via lacteals; <strong>B12 needs IF in the terminal ileum</strong>. <strong>Trypsin activates the other zymogens.</strong></p>"
+     "keypoints": "<p><strong>Jejunum</strong>: long vasa recta, few large arcades, tall plicae; <strong>ileum</strong>: Peyer patches, short vasa recta, more mesenteric fat. <strong>Zone III</strong> is hit first by ischemia and alcohol; zone I by viral hepatitis. <strong>MMCs are driven by motilin</strong> during fasting. Acid: <strong>ACh, gastrin, histamine ↑; somatostatin, prostaglandins ↓</strong>. Lipids bypass the liver via lacteals; <strong>B12 needs IF in the terminal ileum</strong>. <strong>Trypsin activates the other zymogens.</strong></p>",
+     "covers": [
+      {
+       "num": "02",
+       "name": "Gastrointestinal Motility",
+       "key": "gi-w10-02"
+      },
+      {
+       "num": "10",
+       "name": "GI Secretion",
+       "key": "gi-w10-10"
+      }
+     ]
     },
     {
      "id": "gi-w12-03",
@@ -2666,13 +2747,30 @@
      ],
      "title": "Gastric, Intestinal, Biliary, Pancreatic & Anorectal Pathology",
      "framing": "<p>A systems tour of GI pathology from stomach to anus: gastritis and ulcers, diverticular and congenital bowel disease, gallstones and cholangitis, the pancreas, and anorectal disease. The recurring logic is <strong>where the lesion sits determines what it obstructs</strong> – most clearly with gallstones.</p>",
-     "keypoints": "<p><strong>H. pylori</strong> drives type B gastritis, 90% of duodenal and 70% of gastric ulcers. <strong>Gastric ulcer pain ↑ with meals; duodenal pain ↓ then returns 2–3 h later</strong>; biopsy gastric ulcer margins. <strong>Meckel: rule of 2s</strong>; Hirschsprung = absent ganglion cells (RET). <strong>No barium enema or colonoscopy in acute diverticulitis.</strong> Charcot triad → Reynolds pentad. Acute pancreatitis: <strong>I GET SMASHED</strong>, gallstones and ethanol lead. <strong>MDs don’t lie</strong> for hernias.</p>"
+     "keypoints": "<p><strong>H. pylori</strong> drives type B gastritis, 90% of duodenal and 70% of gastric ulcers. <strong>Gastric ulcer pain ↑ with meals; duodenal pain ↓ then returns 2–3 h later</strong>; biopsy gastric ulcer margins. <strong>Meckel: rule of 2s</strong>; Hirschsprung = absent ganglion cells (RET). <strong>No barium enema or colonoscopy in acute diverticulitis.</strong> Charcot triad → Reynolds pentad. Acute pancreatitis: <strong>I GET SMASHED</strong>, gallstones and ethanol lead. <strong>MDs don’t lie</strong> for hernias.</p>",
+     "covers": [
+      {
+       "num": "03",
+       "name": "Abdominal Masses",
+       "key": "gi-w13-03"
+      },
+      {
+       "num": "08",
+       "name": "Anorectal Disease",
+       "key": "gi-w13-08"
+      }
+     ]
     },
     {
      "id": "gi-w12-05",
      "num": "05",
      "name": "Acute Hepatitis",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "08",
+      "name": "Inflammatory Bowel Disease",
+      "key": "gi-w11-08"
+     }
     },
     {
      "id": "gi-w12-06",
@@ -3119,7 +3217,19 @@
      ],
      "title": "Clinical Nutrition, GI Hormones & Investigations",
      "framing": "<p>How to feed a patient who can’t eat (enteral if the gut works, parenteral if not), the hormones and secretions that run the gut, and the imaging and blood tests used to investigate it – ending with the approach to nausea and vomiting.</p>",
-     "keypoints": "<p><strong>If the gut works, use it</strong>: NG/ND &lt; 3 weeks, gastrostomy/jejunostomy &gt; 6 weeks. Don’t start TPN until NPO ≥ 7 days (≥ 5 if malnourished). <strong>Refeeding syndrome = hypophosphatemia</strong>. Gastrin ↑ acid; <strong>somatostatin inhibits nearly everything</strong>; CCK contracts the gallbladder; secretin ↑ HCO3–; motilin drives MMCs. <strong>CT is the workhorse</strong>; ultrasound for gallbladder and in pregnancy/children. Bowel limits <strong>3-6-9 cm</strong>. <strong>ALT is more specific than AST</strong>; ALP/GGT = cholestasis.</p>"
+     "keypoints": "<p><strong>If the gut works, use it</strong>: NG/ND &lt; 3 weeks, gastrostomy/jejunostomy &gt; 6 weeks. Don’t start TPN until NPO ≥ 7 days (≥ 5 if malnourished). <strong>Refeeding syndrome = hypophosphatemia</strong>. Gastrin ↑ acid; <strong>somatostatin inhibits nearly everything</strong>; CCK contracts the gallbladder; secretin ↑ HCO3–; motilin drives MMCs. <strong>CT is the workhorse</strong>; ultrasound for gallbladder and in pregnancy/children. Bowel limits <strong>3-6-9 cm</strong>. <strong>ALT is more specific than AST</strong>; ALP/GGT = cholestasis.</p>",
+     "covers": [
+      {
+       "num": "01",
+       "name": "Overview of the GI Tract",
+       "key": "gi-w10-01"
+      },
+      {
+       "num": "07",
+       "name": "GI Imaging",
+       "key": "gi-w10-07"
+      }
+     ]
     },
     {
      "id": "gi-w12-08",
@@ -3384,7 +3494,12 @@
      "id": "gi-w13-03",
      "num": "03",
      "name": "Abdominal Masses",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "04",
+      "name": "Gallbladder Disease",
+      "key": "gi-w12-04"
+     }
     },
     {
      "id": "gi-w13-04",
@@ -3401,13 +3516,23 @@
      "id": "gi-w13-05",
      "num": "05",
      "name": "Pediatric Diarrhea",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "03",
+      "name": "Diarrhea & Malabsorption",
+      "key": "gi-w11-03"
+     }
     },
     {
      "id": "gi-w13-06",
      "num": "06",
      "name": "Pediatric Constipation",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "06",
+      "name": "Constipation",
+      "key": "gi-w11-06"
+     }
     },
     {
      "id": "gi-w13-07",
@@ -3428,7 +3553,12 @@
      "id": "gi-w13-08",
      "num": "08",
      "name": "Anorectal Disease",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "04",
+      "name": "Gallbladder Disease",
+      "key": "gi-w12-04"
+     }
     }
    ]
   }

@@ -109,8 +109,10 @@ def manual_covers(roster, notes_dir):
     if not os.path.exists(p):
         return
     manual = json.load(io.open(p, encoding="utf-8"))
+    # the host may sit in another week of the block: the GI overview's
+    # material was written up two weeks later, under nutrition
+    by_id = dict((l["id"], l) for w in roster["weeks"] for l in w["lectures"])
     for w in roster["weeks"]:
-        by_id = dict((l["id"], l) for l in w["lectures"])
         for lec in w["lectures"]:
             host_id = manual.get(lec["id"])
             if not host_id or lec.get("hasNote") or lec.get("coveredBy"):

@@ -9,7 +9,12 @@
      "id": "resp-w6-01",
      "num": "01",
      "name": "Histology of the Lungs and Airway",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "02",
+      "name": "Gas Exchange and Hypoxia",
+      "key": "resp-w7-02"
+     }
     },
     {
      "id": "resp-w6-02",
@@ -335,13 +340,25 @@
        "title": "Schulich Reviews",
        "html": "<ul><li><strong>Bases are more compliant</strong> than the apex at FRC (apical alveoli already distended) → <strong>bases take most of the tidal volume</strong></li><li>Obstruction on spirometry: <strong>reverses with bronchodilator (FEV1 ↑ ≥ 12%) = asthma</strong>; does not reverse = COPD</li></ul>"
       }
+     ],
+     "covers": [
+      {
+       "num": "04",
+       "name": "Pulmonary Function Testing",
+       "key": "resp-w6-04"
+      }
      ]
     },
     {
      "id": "resp-w6-04",
      "num": "04",
      "name": "Pulmonary Function Testing",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "03",
+      "name": "Lung Physiology - Ventilation",
+      "key": "resp-w6-03"
+     }
     },
     {
      "id": "resp-w6-05",
@@ -664,6 +681,13 @@
        "title": "Schulich Reviews",
        "html": "<ul><li>AECOPD, <strong>Anthonisen (Winnipeg) criteria</strong>: ↑ dyspnea, ↑ sputum volume, ↑ sputum purulence → <strong>all 3 = antibiotics</strong> (high likelihood of bacterial infection)</li></ul>"
       }
+     ],
+     "covers": [
+      {
+       "num": "05",
+       "name": "Interstitial Causes of Dyspnea",
+       "key": "resp-w7-05"
+      }
      ]
     },
     {
@@ -818,25 +842,47 @@
        "title": "Schulich Reviews",
        "html": "<ul><li><strong>Spacer</strong> on an MDI: ↑ lung deposition, <strong>↓ systemic absorption</strong></li><li><strong>DPI</strong>: breath-actuated, less coordination, but needs a <strong>deep, forceful inspiration (≥ 60 L/min)</strong></li></ul>"
       }
+     ],
+     "covers": [
+      {
+       "num": "05",
+       "name": "Pleura and Mediastinum Pathology",
+       "key": "resp-w8-05"
+      }
      ]
     },
     {
      "id": "resp-w6-08",
      "num": "08",
      "name": "Allergic Rhinitis",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "07",
+      "name": "Radiology",
+      "key": "resp-w7-07"
+     }
     },
     {
      "id": "resp-w6-09",
      "num": "09",
      "name": "Acute Rhinosinusitis",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "07",
+      "name": "Radiology",
+      "key": "resp-w7-07"
+     }
     },
     {
      "id": "resp-w6-10",
      "num": "10",
      "name": "Chronic Sinusitis",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "07",
+      "name": "Radiology",
+      "key": "resp-w7-07"
+     }
     }
    ]
   },
@@ -969,6 +1015,11 @@
        "num": "03",
        "name": "Pulmonary Hypertension",
        "key": "resp-w7-03"
+      },
+      {
+       "num": "01",
+       "name": "Histology of the Lungs and Airway",
+       "key": "resp-w6-01"
       }
      ],
      "framing": "<p>Gas exchange happens across the thin, vast blood-gas barrier, and Fick's law says what speeds or slows it. The clinical tool that falls out of this is the <strong>A-a gradient</strong>: it tells you whether hypoxemia comes from <strong>too little O2 reaching the alveoli</strong> (normal gradient) or <strong>O2 failing to cross into blood</strong> (increased gradient).</p>",
@@ -1078,7 +1129,12 @@
      "id": "resp-w7-05",
      "num": "05",
      "name": "Interstitial Causes of Dyspnea",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "06",
+      "name": "Obstructive Lung Disease",
+      "key": "resp-w6-06"
+     }
     },
     {
      "id": "resp-w7-06",
@@ -1276,6 +1332,23 @@
        "title": "Schulich Reviews",
        "html": "<ul><li><strong>AP (portable) film magnifies the heart</strong> → judge heart size on a <strong>PA</strong> film (heart closest to the film)</li><li>Lateral view <strong>localizes pathology</strong>; posterior lungs should <strong>get darker going down</strong></li><li>Epistaxis: <strong>anterior</strong> (Kiesselbach's) = most common, controlled by pressure/cautery; <strong>posterior</strong> (sphenopalatine) = more severe, <strong>elderly and hypertensive</strong>, needs packing or IR</li></ul>"
       }
+     ],
+     "covers": [
+      {
+       "num": "08",
+       "name": "Allergic Rhinitis",
+       "key": "resp-w6-08"
+      },
+      {
+       "num": "09",
+       "name": "Acute Rhinosinusitis",
+       "key": "resp-w6-09"
+      },
+      {
+       "num": "10",
+       "name": "Chronic Sinusitis",
+       "key": "resp-w6-10"
+      }
      ]
     }
    ]
@@ -1424,13 +1497,25 @@
         ]
        ]
       }
+     ],
+     "covers": [
+      {
+       "num": "03",
+       "name": "Tuberculosis and NTM",
+       "key": "resp-w8-03"
+      }
      ]
     },
     {
      "id": "resp-w8-03",
      "num": "03",
      "name": "Tuberculosis and NTM",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "02",
+      "name": "Pneumonia",
+      "key": "resp-w8-02"
+     }
     },
     {
      "id": "resp-w8-04",
@@ -1688,7 +1773,12 @@
      "id": "resp-w8-05",
      "num": "05",
      "name": "Pleura and Mediastinum Pathology",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "07",
+      "name": "Respiratory Pharmacology",
+      "key": "resp-w6-07"
+     }
     },
     {
      "id": "resp-w8-06",

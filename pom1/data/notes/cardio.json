@@ -3235,6 +3235,13 @@
         ]
        ]
       }
+     ],
+     "covers": [
+      {
+       "num": "—",
+       "name": "In Class - Cardiac Imaging",
+       "key": "cardio-w2-in-class-cardiac-imaging"
+      }
      ]
     },
     {
@@ -3981,7 +3988,12 @@
      "id": "cardio-w2-in-class-cardiac-imaging",
      "num": "—",
      "name": "In Class - Cardiac Imaging",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "02",
+      "name": "Imaging in Cardiovascular Disease",
+      "key": "cardio-w2-02"
+     }
     }
    ]
   },
@@ -3993,13 +4005,23 @@
      "id": "cardio-w3-01",
      "num": "01",
      "name": "Pathology of Vascular Disease",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "04",
+      "name": "Myocardial Infarction",
+      "key": "cardio-w3-04"
+     }
     },
     {
      "id": "cardio-w3-02",
      "num": "02",
      "name": "Pathology of Ischemic Heart Disease",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "04",
+      "name": "Myocardial Infarction",
+      "key": "cardio-w3-04"
+     }
     },
     {
      "id": "cardio-w3-03",
@@ -5175,6 +5197,21 @@
        "num": "05",
        "name": "Complications of Acute MI",
        "key": "cardio-w3-05"
+      },
+      {
+       "num": "01",
+       "name": "Pathology of Vascular Disease",
+       "key": "cardio-w3-01"
+      },
+      {
+       "num": "02",
+       "name": "Pathology of Ischemic Heart Disease",
+       "key": "cardio-w3-02"
+      },
+      {
+       "num": "09",
+       "name": "Aneurysms",
+       "key": "cardio-w3-09"
       }
      ],
      "framing": "<p>Coronary atherosclerosis becomes an emergency when a <strong>vulnerable plaque ruptures and thrombus forms</strong>: an occlusive thrombus gives a STEMI (reperfuse now), a non-occlusive one an NSTEMI (stabilize, then angiography). The note then follows the damage through healing and its complications, and closes with aortic aneurysm and dissection.</p>",
@@ -6389,7 +6426,12 @@
      "id": "cardio-w3-09",
      "num": "09",
      "name": "Aneurysms",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "04",
+      "name": "Myocardial Infarction",
+      "key": "cardio-w3-04"
+     }
     }
    ]
   },
@@ -7302,6 +7344,11 @@
        "num": "02",
        "name": "Heart Failure Causes and Classification",
        "key": "cardio-w4-02"
+      },
+      {
+       "num": "03",
+       "name": "Heart Failure Clinical Features and Evaluation",
+       "key": "cardio-w4-03"
       }
      ],
      "framing": "<p>Heart failure is a <strong>clinical syndrome</strong>, not a disease: symptoms and signs plus structural heart disease. Its engine is <strong>neurohormonal activation</strong> (SNS, RAAS, AVP) – an appropriate response to dehydration turned harmful – and nearly every HFrEF drug blocks one limb of it.</p>",
@@ -7322,7 +7369,12 @@
      "id": "cardio-w4-03",
      "num": "03",
      "name": "Heart Failure Clinical Features and Evaluation",
-     "hasNote": false
+     "hasNote": false,
+     "coveredBy": {
+      "num": "01",
+      "name": "Physiology of Heart Failure",
+      "key": "cardio-w4-01"
+     }
     },
     {
      "id": "cardio-w4-04",
