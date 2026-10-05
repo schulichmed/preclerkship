@@ -1156,7 +1156,7 @@
           x.setAttribute("aria-label", "Cross out option " + o.letter);
           x.setAttribute("aria-pressed", "false");
           x.addEventListener("click", function () { strike(q.qid, o.letter); });
-          li.appendChild(x);
+          li.insertBefore(x, b);
         }
         list.appendChild(li);
       });
