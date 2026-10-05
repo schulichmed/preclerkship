@@ -377,7 +377,7 @@ REPORT_URL = "https://preclerkship-report.schulichmed.workers.dev/"
 
 
 def footer():
-    return ('<footer>\nFor questions, email '
+    return ('<footer>\nFor any inquiries, email '
             '<a href="mailto:%s">%s</a>\n</footer>' % (CONTACT, CONTACT))
 
 
