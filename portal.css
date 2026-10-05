@@ -1151,7 +1151,7 @@ mark.lo .wl{border-bottom-color:#9a7a00;}
 .tag.multi{color:var(--q-accent-ink);border-color:var(--q-accent);}
 
 .qhead .spacer{flex:1;}
-/* the note tag and the star wrap as one unit */
+/* the note tag, the report link and the star wrap as one unit */
 .qhead-end{margin-left:auto;display:inline-flex;align-items:center;gap:7px;flex:none;}
 
 .star-btn{
@@ -1248,6 +1248,27 @@ mark.lo .wl{border-bottom-color:#9a7a00;}
     color:var(--muted);
     padding-top:3px;
 }
+
+/* an option and its cross-out button share a row */
+.opts li{display:flex;align-items:stretch;gap:6px;}
+.opt-x{
+    flex:none;
+    width:30px;
+    font:inherit;
+    font-size:.78rem;
+    line-height:1;
+    color:var(--border);
+    background:none;
+    border:1px solid transparent;
+    border-radius:6px;
+    cursor:pointer;
+    transition:color .15s,border-color .15s;
+}
+.opt-x:hover{color:var(--q-bad);border-color:var(--border);}
+.opt-x[aria-pressed="true"]{color:var(--q-bad);}
+.opt[data-struck="on"] .t{text-decoration:line-through;text-decoration-thickness:1.5px;opacity:.5;}
+.opt[data-struck="on"] .L{opacity:.5;}
+@media print{.opt-x{display:none;}}
 
 .opt[data-pick="on"]{border-color:var(--q-accent);background:var(--q-accent-soft);}
 .opt[data-pick="on"] .L{background:var(--q-accent);color:var(--on-q-accent);}

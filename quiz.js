@@ -290,6 +290,23 @@
 
   function forget(qid) { forgetMany([qid]); }
 
+  /* ---------- crossed-out options ---------- */
+
+  /* qid -> { letter: true } for options the reader has ruled out. A scratch
+     mark like the pencil line on a paper exam, so it lives in memory only:
+     it is not progress, and a reload starts the question clean. */
+  var STRUCK = Object.create(null);
+
+  function isStruck(qid, letter) {
+    return !!(STRUCK[qid] && STRUCK[qid][letter]);
+  }
+
+  function strike(qid, letter) {
+    var s = STRUCK[qid] || (STRUCK[qid] = Object.create(null));
+    if (s[letter]) delete s[letter]; else s[letter] = true;
+    paintQuestion(qid);
+  }
+
   /* One pass, one write per block touched. Clearing what is shown on the
      pooled page can mean a thousand questions, and the old one-at-a-time
      forget wrote the whole store back on every single one of them. */
@@ -300,6 +317,7 @@
       var q = QMAP[qid];
       if (q) touched[q.block] = 1;
       delete progress[qid];
+      delete STRUCK[qid];
     });
     Object.keys(touched).forEach(function (slug) { save(slug); });
     ids.forEach(paintQuestion);
@@ -1071,10 +1089,12 @@
     var mtag = el("span", "tag has-memo", "your note");
     mtag.title = "Answer to see your note";
     mtag.hidden = !hasMemo(q.qid);
-    /* the tag and the star wrap as one unit, so the star never drops to a
-       header row of its own on a narrow screen */
+    /* the tag, the report link and the star wrap as one unit, so the star
+       never drops to a header row of its own on a narrow screen. Report sits
+       up here rather than in the foot, where it read as a twin of reset. */
     var endcap = el("span", "qhead-end");
     endcap.appendChild(mtag);
+    endcap.appendChild(reportButton(q));
 
     var star = el("button", "star-btn", "★");
     star.type = "button";
@@ -1123,6 +1143,21 @@
         if (q.unscorable) b.disabled = true;
         else b.addEventListener("click", function () { pick(q, art, o.letter); });
         li.appendChild(b);
+        if (!q.unscorable) {
+          /* right-click is the exam-software habit; the button is for touch */
+          b.addEventListener("contextmenu", function (e) {
+            if (art.classList.contains("revealed")) return;
+            e.preventDefault();
+            strike(q.qid, o.letter);
+          });
+          var x = el("button", "opt-x", "\u2715");
+          x.type = "button";
+          x.title = "Cross out (or right-click the option)";
+          x.setAttribute("aria-label", "Cross out option " + o.letter);
+          x.setAttribute("aria-pressed", "false");
+          x.addEventListener("click", function () { strike(q.qid, o.letter); });
+          li.appendChild(x);
+        }
         list.appendChild(li);
       });
       art.appendChild(list);
@@ -1233,7 +1268,6 @@
     rst.hidden = true;
     rst.addEventListener("click", function () { forget(q.qid); });
     foot.appendChild(rst);
-    foot.appendChild(reportButton(q));
     art.appendChild(foot);
     return art;
   }
@@ -1331,6 +1365,14 @@
       var L = b.dataset.letter;
       b.disabled = reveal;
       b.dataset.pick = (!reveal && chosen.indexOf(L) !== -1) ? "on" : "";
+      /* the line stays after the reveal, so a crossed-out key shows itself */
+      var struck = isStruck(qid, L);
+      b.dataset.struck = struck ? "on" : "";
+      var x = b.parentNode.querySelector(".opt-x");
+      if (x) {
+        x.setAttribute("aria-pressed", struck ? "true" : "false");
+        x.hidden = reveal;
+      }
       var v = b.querySelector(".verdict");
       v.textContent = "";
       b.dataset.mark = "";
