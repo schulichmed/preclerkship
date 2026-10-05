@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import portal
 
 HOWTO = """<details class="howto">
-<summary>Remember to save your progress</summary>
+<summary>Remember to save your progress every now and then</summary>
 <div class="body">
 <p>Your answers live in your browser&rsquo;s local storage. They don&rsquo;t follow you
 on a different browser or laptop, and could be lost if the site data is cleared. Your notes
