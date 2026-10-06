@@ -43,7 +43,7 @@ QUESTION_NOTES = VAULT / "00 - Practice Questions"
 LECTURE_NOTES = VAULT / "01 - Lectures" / "99 - PoM 2"
 
 OFF = "offcurriculum"
-MOVING_VERDICTS = ("outdated", "not-covered")
+MOVING_VERDICTS = ("outdated", "not-covered", "retired")
 
 # block slug -> (vault lecture folder, vault topic name in question note titles)
 BLOCKS = {
@@ -165,7 +165,7 @@ def off_sentence(reason: str, against: str, evidence: str, bold: str) -> str:
     Parameters
     ----------
     reason : str
-        ``"outdated"`` or ``"not-covered"``.
+        ``"outdated"``, ``"not-covered"`` or ``"retired"``.
     against : str
         The lecture note it was checked against.
     evidence : str
@@ -181,6 +181,11 @@ def off_sentence(reason: str, against: str, evidence: str, bold: str) -> str:
         One or two sentences, no em dashes of its own.
     """
     lecture = bold % against
+    if reason == "retired":
+        lead = ("Its own source retired this question, so it is kept here rather than in "
+                "the set it came from.")
+        tail = f" Nearest lecture: {lecture}." if against else ""
+        return lead + tail
     if reason == "outdated":
         lead = ("This year's lecture teaches this differently, so the key here may not "
                 "match what you are examined on.")
@@ -523,7 +528,7 @@ def main() -> None:
     c.add_argument("--course", default="pom2")
     c.add_argument("--block", required=True, choices=sorted(BLOCKS))
     c.add_argument("--week", type=int)
-    a = sub.add_parser("apply", help="move outdated and not-covered questions")
+    a = sub.add_parser("apply", help="move outdated, not-covered and retired questions")
     a.add_argument("--checked", help="date stamped on offCurriculum.checked (default: today)")
     a.add_argument("verdicts", nargs="+")
     sub.add_parser("report", help="counts per family and the off-curriculum qids")

@@ -124,7 +124,7 @@ carries the same fields:
 | `answer`, `answerTitle` | the explanation shown after answering |
 | `keyed`, `free`, `unscorable`, `retired` | whether it has a real key, is ungraded, cannot be scored, or is hidden |
 | `flags` | `[{"type": "warning", "title": "...", "html": "..."}]`, printed on the question |
-| `offCurriculum` | only on a question in the Off-curriculum set: `{"reason": "outdated" \| "not-covered", "from": "<the set it left>", "against": "<lecture checked>", "checked": "YYYY-MM-DD"}` |
+| `offCurriculum` | only on a question in the Off-curriculum set: `{"reason": "outdated" \| "not-covered" \| "retired", "from": "<the set it left>", "against": "<lecture checked>", "checked": "YYYY-MM-DD"}` |
 | `restored` | only on a question she put back after an audit moved it: `{"from": "<the reason it was moved>", "on": "YYYY-MM-DD", "note": "<why it is fair game>"}`. A later audit run leaves it alone. |
 
 `keyed: false` and `unscorable: true` matter. Question banks handed down between

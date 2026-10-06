@@ -583,6 +583,7 @@ PDF decides):
 | `current` | the tested fact is taught in this year's block notes, and the key agrees | nothing |
 | `outdated` | this year's lecture contradicts the key or the stem's premise | move to Off-curriculum, say what the slide now says |
 | `not-covered` | the tested fact appears in none of this year's block notes | move to Off-curriculum, name the nearest lecture |
+| `retired` | the source itself retired the question (`retired: true`), whatever its content | move to Off-curriculum; her call 2026-10-05, so the retired tag never sits inside a live set |
 
 A question taught in a different week or lecture from where its source filed it is `current`.
 Adjacent clinical depth the lecture does not go into (a drug the note never names, a staging
@@ -625,7 +626,7 @@ set is HippoNotes or Reviews.
 - `week`: the week of the nearest lecture, **never null**, with `weekLabel: "Week N"`;
 - a first `flags` entry, `{"type": "note", "title": "Off-curriculum", ...}`, saying whether it is
   not taught or taught differently and naming the lecture it was checked against;
-- `offCurriculum: {"reason": "not-covered" | "outdated", "from": "<original family>",
+- `offCurriculum: {"reason": "not-covered" | "outdated" | "retired", "from": "<original family>",
   "against": "<lecture note name>", "checked": "<date>"}`.
 
 **qids never change**, here or anywhere: progress and Anki cards join on them.
@@ -792,7 +793,7 @@ vault's `Attachments`, re-compresses it into `assets/figures/<hash>.jpg` and wri
   **Stage 8** sources have not arrived. **Report a pending quiz, DSSG or CBL as a normal open
   item, not as an incomplete week.**
 - Any source errors flagged rather than silently corrected.
-- **Questions moved to Off-curriculum this run, per reason** (outdated, not-covered), with their
+- **Questions moved to Off-curriculum this run, per reason** (outdated, not-covered, retired), with their
   qids, and any `KEY?` items written to `build/curriculum_audit/KEY_ISSUES.md`.
 
 ## Stage 8 - the late arrivals (the bonus stage)
