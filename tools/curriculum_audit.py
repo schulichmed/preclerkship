@@ -122,15 +122,23 @@ def vault_lecture(block: str, week: int, against: str) -> dict | None:
     Returns
     -------
     dict or None
-        ``{"w": week, "n": "11", "t": "Approach to ..."}``, or None when no such
-        note exists under that week's folder.
+        ``{"w": week, "n": "11", "t": "Approach to ..."}``, or None when no note
+        of exactly that name exists under that week's folder.
+
+    Notes
+    -----
+    The name is matched against the folder listing, not with ``exists()``: the
+    vault sits on a case-insensitive drive, where a wrong-case title would pass
+    and then fail every exact-spelling join downstream.
     """
     m = re.match(r"^([\d.]+)\s*[-–]\s*(.+?)\s*$", against or "")
     if not m:
         return None
     num, title = m.group(1), m.group(2)
-    note = LECTURE_NOTES / BLOCKS[block][0] / f"Week {week}" / f"{num} - {title}.md"
-    if not note.exists():
+    week_dir = LECTURE_NOTES / BLOCKS[block][0] / f"Week {week}"
+    if not week_dir.is_dir():
+        return None
+    if f"{num} - {title}.md" not in {p.name for p in week_dir.iterdir()}:
         return None
     return {"w": week, "n": num, "t": title}
 

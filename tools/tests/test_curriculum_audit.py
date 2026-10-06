@@ -131,3 +131,24 @@ def test_candidates_names_both_reasons(repo, capsys):
     out = capsys.readouterr().out
     assert "review week 5 != filed week 6" in out
     assert "lecture is the week title" in out
+
+
+def test_misfiled_wrong_case_lecture_is_refused(repo, capsys, monkeypatch):
+    """The real vault sits on a case-insensitive drive, so emulate one here."""
+    real_exists = Path.exists
+
+    def case_blind_exists(self):
+        if real_exists(self):
+            return True
+        parent = self.parent
+        return real_exists(parent) and parent.is_dir() and any(
+            p.name.lower() == self.name.lower() for p in parent.iterdir())
+
+    monkeypatch.setattr(Path, "exists", case_blind_exists)
+    row = {"qid": "hippo-repro-Q47", "verdict": "misfiled", "week": 5,
+           "against": "11 - APPROACH TO FIRST TRIMESTER BLEEDING & ULTRASOUND",
+           "evidence": "", "note": ""}
+    before = (repo / "pom2/data/questions/repro.json").read_bytes()
+    ca.apply_rows([row], checked="2026-10-06")
+    assert (repo / "pom2/data/questions/repro.json").read_bytes() == before
+    assert "hippo-repro-Q47" in capsys.readouterr().err
