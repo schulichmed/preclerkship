@@ -164,6 +164,7 @@ python tools/rosters_from_vault.py       # the vault              -> pom2/data/n
 python tools/charts_from_vault.py        # folds written notes on top
 
 python tools/roman_items.py              # item lists read as options -> back in the stem
+python tools/curated_pairings.py         # matching questions -> dropdown grids (tools/pairings/)
 python tools/question_figures.py         # any newly-inlined picture -> assets/figures/
 python tools/review_lectures.py --derive # every question -> the lecture it tests
 

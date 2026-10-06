@@ -1,0 +1,552 @@
+[
+ {
+  "qid": "workbook-msk-Q59",
+  "bank": "pom2/data/questions/msk.json",
+  "skip": "single-best-answer MCQ (\"which correctly matches\")"
+ },
+ {
+  "qid": "workbook-msk-Q30",
+  "bank": "pom2/data/questions/msk.json",
+  "skip": "single-best-answer MCQ (\"not correctly matched\")"
+ },
+ {
+  "qid": "workbook-msk-Q25",
+  "bank": "pom2/data/questions/msk.json",
+  "skip": "single-best-answer MCQ (\"incorrectly matched\")"
+ },
+ {
+  "qid": "workbook-msk-Q61",
+  "bank": "pom2/data/questions/msk.json",
+  "stem": "<p><strong>Match each deformity to the affected nerve.</strong></p>",
+  "pairs": {
+   "leftLabel": "Deformity",
+   "rightLabel": "Affected nerve",
+   "items": [
+    {
+     "left": "Waiter's tip hand / Erb-Duchenne",
+     "right": "Upper brachial plexus injury"
+    },
+    {
+     "left": "Hand of benediction",
+     "right": "Median nerve"
+    },
+    {
+     "left": "Wrist drop",
+     "right": "Radial nerve"
+    },
+    {
+     "left": "Ulnar Claw / Klumpke's paralysis",
+     "right": "Ulnar nerve"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Deformity</th><th>Affected nerve</th></tr></thead><tbody><tr><td>Waiter's tip hand / Erb-Duchenne</td><td>Upper brachial plexus injury</td></tr><tr><td>Hand of benediction</td><td>Median nerve</td></tr><tr><td>Wrist drop</td><td>Radial nerve</td></tr><tr><td>Ulnar Claw / Klumpke's paralysis</td><td>Ulnar nerve</td></tr></tbody></table><p><strong>Waiter's tip hand:</strong> <strong>Upper <span class=\"wl\">brachial plexus</span> injury</strong> (C5-C6) → <strong>Erb-Duchenne palsy</strong>, the \"waiter's tip\" posture.</p><p><strong>Hand of benediction:</strong> <strong><span class=\"wl\">median nerve</span></strong> — the hand of benediction (inability to flex the index and middle fingers when attempting to make a fist).</p><p><strong>Wrist drop:</strong> <strong><span class=\"wl\">radial nerve</span></strong> — the radial nerve supplies the extensor compartment (Q15), so its loss drops the wrist.</p><p><strong>Ulnar claw:</strong> <strong><span class=\"wl\">ulnar nerve</span></strong> — the ulnar claw.</p><p><em>From Anatomy of the Brachial Plexus.</em> The claw is the <em>ulnar nerve</em>'s signature, from loss of the intrinsic hand muscles, and the lecture puts the ulnar nerve on the <strong>medial cord carrying C8 and T1 only</strong> - the inferior trunk. That shared root is the link to <em>Klumpke's palsy</em>: a <strong>lower</strong> plexus injury (C8-T1, classically after <em>shoulder dystocia</em>) takes out the ulnar supply at its origin and produces the same claw.</p><ul><li>The radial nerve (posterior cord, C5-T1) gives wrist drop, not a claw.</li><li>The median nerve (all five roots) gives thenar weakness, not the ulnar claw.</li><li>The upper plexus (<em>Erb's palsy</em>, C5-C6) spares the hand.</li></ul>",
+  "absorbs": [
+   "workbook-msk-Q62",
+   "workbook-msk-Q63",
+   "workbook-msk-Q64"
+  ],
+  "flags": [
+   {
+    "type": "warning",
+    "title": "The option pairs two different lesions",
+    "html": "<p><strong><span class=\"wl\">Klumpke's palsy</span> is a <em>lower</em> brachial plexus injury (C8-T1)</strong>, not an ulnar nerve lesion — though it produces a claw hand because the C8-T1 roots feed the ulnar nerve. Given that the option list offers no \"lower brachial plexus\" choice (only <em>upper</em>, which is Q61's answer), <strong>C is the intended answer</strong>, but do not carry away the idea that Klumpke's palsy <em>is</em> an ulnar neuropathy.</p>"
+   },
+   {
+    "type": "note",
+    "title": "Explanation reasoned, not transcribed",
+    "html": "<p>The source gave the letter and no reasoning. This explanation is reasoned from <em>01 - Anatomy of the Brachial Plexus and 04 - Neurovascular Supply of the Proximal Upper Extremity and 07.1 - Anatomy of the Neurovascular Supply of the Distal Upper Extremity and 07.2 - Clinical Approach to the Neurovascular Supply of the Distal Upper Extremity</em>, not transcribed from an official key. Check it against the lecture before relying on it.</p>"
+   }
+  ],
+  "note": "workbook letter keys Q61=D, Q62=B, Q63=A, Q64=C (shared options A Radial, B Median, C Ulnar, D Upper plexus)"
+ },
+ {
+  "qid": "workbook-msk-Q71",
+  "bank": "pom2/data/questions/msk.json",
+  "stem": "<p><strong>Match each definition to the correct rotator cuff pathology.</strong></p>",
+  "pairs": {
+   "leftLabel": "Definition",
+   "rightLabel": "Rotator cuff pathology",
+   "items": [
+    {
+     "left": "This pathology is indicated by tendon inflammation without evidence of structural defect.",
+     "right": "Stage I rotator cuff disease"
+    },
+    {
+     "left": "This pathology is defined as rotator cuff arthropathy.",
+     "right": "Stage IV rotator cuff disease"
+    },
+    {
+     "left": "This pathology is indicated by a partial thickness tear in the rotator cuff.",
+     "right": "Stage II rotator cuff disease"
+    },
+    {
+     "left": "This pathology is indicated by a full thickness tear in the rotator cuff.",
+     "right": "Stage III rotator cuff disease"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Definition</th><th>Rotator cuff pathology</th></tr></thead><tbody><tr><td>This pathology is indicated by tendon inflammation without evidence of structural defect.</td><td>Stage I rotator cuff disease</td></tr><tr><td>This pathology is defined as rotator cuff arthropathy.</td><td>Stage IV rotator cuff disease</td></tr><tr><td>This pathology is indicated by a partial thickness tear in the rotator cuff.</td><td>Stage II rotator cuff disease</td></tr><tr><td>This pathology is indicated by a full thickness tear in the rotator cuff.</td><td>Stage III rotator cuff disease</td></tr></tbody></table><p><strong>Stage I:</strong> inflammation with <strong>no structural defect</strong> is the earliest stage.</p><p><strong>Stage IV:</strong> <em>From Clinical Approach to the Muscles of the Shoulder.</em> Rotator cuff disease is <strong>progressive</strong>, and the vault's spectrum ends in <strong>rotator cuff arthropathy</strong>: a <strong>massive</strong> cuff defect lets the humeral head <strong>migrate superiorly until it touches the acromion</strong>, and <strong>arthritis</strong> follows. That end stage is Stage IV in the workbook's scheme, and it is the stage treated by shoulder arthroplasty rather than cuff repair.</p><p><strong>Stage II:</strong> Stage II is the <strong>first structural defect</strong>: a <strong>partial-thickness</strong> defect of the supraspinatus tendon at its <strong>articular</strong> end (not the bursal end) - the \"mild tear\". It follows from the lecture's intrinsic mechanism: vascularity is lost <strong>from the articular portion of the tendon distally</strong>, so that is where fibres fail first. Cuff repair is reserved for Stage II-III disease that fails conservative care.</p><p><strong>Stage III:</strong> a <strong>full-thickness</strong> supraspinatus defect - the \"severe tear\". With the cuff no longer holding the head down, the <strong>humerus displaces superiorly</strong> and synovial fluid can leak into the surrounding tissue (swelling). It is still short of the massive defect and arthritis that define arthropathy. Stage I, by contrast, is intact but inflamed (the impingement stage, the one acromioplasty treats).</p><p>The workbook also offered a Stage V; there is no Stage V, and it was never used.</p><p>See <span class=\"wl\">rotator cuff tendinopathy</span>.</p>",
+  "absorbs": [
+   "workbook-msk-Q72",
+   "workbook-msk-Q73",
+   "workbook-msk-Q74"
+  ],
+  "flags": [
+   {
+    "type": "note",
+    "title": "Explanation reasoned, not transcribed",
+    "html": "<p>The source gave the letter and no reasoning. This explanation is reasoned from <em>02.1 - Anatomy of the Muscles of the Shoulder and 02.2 - Clinical Approach to the Muscles of the Shoulder and 03.1 - Anatomy of the Muscles of the Arm and 03.2 - Clinical Approach to the Muscles of the Arm</em>, not transcribed from an official key. Check it against the lecture before relying on it.</p>"
+   }
+  ],
+  "note": "workbook letter keys Q71=A, Q72=D, Q73=B, Q74=C (shared options Stage I-V); Stage V distractor dropped"
+ },
+ {
+  "qid": "hippo-msk-Q49",
+  "bank": "pom2/data/questions/msk.json",
+  "stem": "<p><strong>Match the rheumatologic condition to its best corresponding investigation.</strong></p>",
+  "pairs": {
+   "leftLabel": "Condition",
+   "rightLabel": "Investigation",
+   "items": [
+    {
+     "left": "Systemic lupus erythematosus",
+     "right": "ANA, then anti-DNA (if ANA is positive), anti-Smith"
+    },
+    {
+     "left": "Inflammatory myositis",
+     "right": "CK, ESR, ANA"
+    },
+    {
+     "left": "Sjogren’s",
+     "right": "CBC, ANA, ESR, RF, anti-Ro (aka SSA), anti-La (aka SSB)"
+    },
+    {
+     "left": "Scleroderma",
+     "right": "ANA nucleolar pattern, Scl70 (topoisomerase 1)"
+    },
+    {
+     "left": "ANCA vasculitis",
+     "right": "ANCA, PR3, MPO"
+    },
+    {
+     "left": "Enthesitis-related arthritis",
+     "right": "HLA B27, ESR, CRP, CBC"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Condition</th><th>Investigation</th></tr></thead><tbody><tr><td>Systemic lupus erythematosus</td><td>ANA, then anti-DNA (if ANA is positive), anti-Smith</td></tr><tr><td>Inflammatory myositis</td><td>CK, ESR, ANA</td></tr><tr><td>Sjogren’s</td><td>CBC, ANA, ESR, RF, anti-Ro (aka SSA), anti-La (aka SSB)</td></tr><tr><td>Scleroderma</td><td>ANA nucleolar pattern, Scl70 (topoisomerase 1)</td></tr><tr><td>ANCA vasculitis</td><td>ANCA, PR3, MPO</td></tr><tr><td>Enthesitis-related arthritis</td><td>HLA B27, ESR, CRP, CBC</td></tr></tbody></table><ul><li><strong>Inflammatory myositis:</strong> anti-Jo1 and anti-PM-Scl can also be ordered to check for interstitial lung disease and scleroderma polymyositis respectively, which are disease correlations.</li><li><strong>ANCA vasculitis:</strong> PR3 stands for anti-proteinase 3 aka c-ANCA; MPO stands for anti-myeloperoxidase aka p-ANCA.</li><li><strong>Enthesitis-related arthritis:</strong> 30-50% of enthesitis-related arthritis have a positive HLA B27; CBC might show anemia and leukocytosis &amp; thrombocytosis, ESR may be normal or elevated.</li></ul>",
+  "note": "HippoNotes prose key \"A - iv; B - iii; C - i; D - ii; E - vi; F - v\" (letters=conditions, numerals=investigation list)"
+ },
+ {
+  "qid": "hippo-msk-Q53",
+  "bank": "pom2/data/questions/msk.json",
+  "skip": "one row needs two answers (key \"D - i & ii\": ILD -> SLE and scleroderma) and the bank already red-flags that key as wrong"
+ },
+ {
+  "qid": "hippo-msk-Q55",
+  "bank": "pom2/data/questions/msk.json",
+  "stem": "<p><strong>Match the common presentation to the pediatric condition.</strong></p>",
+  "pairs": {
+   "leftLabel": "Presentation",
+   "rightLabel": "Pediatric condition",
+   "items": [
+    {
+     "left": "A child (between 3-10 y.o) who was sick with a URTI about a week ago now has sudden unilateral hip pain and their hip is held in slight FABER position",
+     "right": "Transient synovitis"
+    },
+    {
+     "left": "An adolescent athlete (8-14 y.o female, 10-15 y.o male) has a painful bump over their tibial tuberosity and xray shows a teardrop sign.",
+     "right": "Osgood-Schlatter"
+    },
+    {
+     "left": "An obese adolescent (~ 12 y.o female, 14 y.o male) has gradual left hip pain that refers to the knee, antalgic gait, and can’t weight bear",
+     "right": "Slipped capital femoral epiphysis"
+    },
+    {
+     "left": "A child (between 4-8 y.o) who has a low body weight and protein S/C deficiency has gradual vague hip pain and stiffness and limb-length discrepancy",
+     "right": "Legg-Calve-Perthes"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Presentation</th><th>Pediatric condition</th></tr></thead><tbody><tr><td>A child (between 3-10 y.o) who was sick with a URTI about a week ago now has sudden unilateral hip pain and their hip is held in slight FABER position</td><td>Transient synovitis</td></tr><tr><td>An adolescent athlete (8-14 y.o female, 10-15 y.o male) has a painful bump over their tibial tuberosity and xray shows a teardrop sign.</td><td>Osgood-Schlatter</td></tr><tr><td>An obese adolescent (~ 12 y.o female, 14 y.o male) has gradual left hip pain that refers to the knee, antalgic gait, and can’t weight bear</td><td>Slipped capital femoral epiphysis</td></tr><tr><td>A child (between 4-8 y.o) who has a low body weight and protein S/C deficiency has gradual vague hip pain and stiffness and limb-length discrepancy</td><td>Legg-Calve-Perthes</td></tr></tbody></table><p><em>From 09 - Child with a Limp</em> and <em>04 - Pediatric Orthopedics</em>. Age plus one hallmark sorts each:</p><ul><li><strong>Transient synovitis</strong>: ages 3-10, a viral URTI 7-10 days earlier, sudden unilateral hip pain, the hip held flexed, abducted and externally rotated, afebrile.</li><li><strong>Osgood-Schlatter</strong>: traction apophysitis at the tibial tuberosity in active 8-14 (F) / 10-15 (M) year olds; x-ray shows the \"teardrop\" sign.</li><li><strong>SCFE</strong>: adolescent, gradual hip pain referred to the knee, left more often than right, painful weight-bearing.</li><li><strong>Legg-Calve-Perthes</strong>: ages 4-8, low birth weight, gradual vague hip pain, stiffness and limb-length discrepancy from femoral-head osteonecrosis.</li></ul><p>The stem's protein S/C deficiency is not in the vault note; its risk factors are family history, low birth weight and second-hand smoke.</p>",
+  "drop_flags": [
+   "A matching question scored as one letter"
+  ],
+  "note": "HippoNotes prose key \"A - i, B - iii, C - iv, D - ii\" (letters=presentations, numerals=condition list)"
+ },
+ {
+  "qid": "workbook-neuro-Q28",
+  "bank": "pom2/data/questions/neuro.json",
+  "skip": "single-best-answer MCQ (\"correctly matched\")"
+ },
+ {
+  "qid": "workbook-neuro-Q68",
+  "bank": "pom2/data/questions/neuro.json",
+  "skip": "single-best-answer MCQ (\"which one matches\")"
+ },
+ {
+  "qid": "hippo-neuro-Q97",
+  "bank": "pom2/data/questions/neuro.json",
+  "skip": "\"match\" only in the CSS class; a combination MCQ (next step), not a matching task"
+ },
+ {
+  "qid": "workbook-neuro-Q52",
+  "bank": "pom2/data/questions/neuro.json",
+  "stem": "<p><strong>Match each definition to the nerve injury term.</strong></p>",
+  "pairs": {
+   "leftLabel": "Definition",
+   "rightLabel": "Nerve injury",
+   "items": [
+    {
+     "left": "Functional block and demyelination; preservation of axon integrity (compression, transient ischemia); good prognosis with complete recovery with remyelination (2-3 months).",
+     "right": "Neurapraxia"
+    },
+    {
+     "left": "Transection of axons and connective tissue elements with complete loss of function distal to site of injury; regeneration may be limited by scarring; surgical exploration and repair are often warranted.",
+     "right": "Neuronotmesis"
+    },
+    {
+     "left": "Wallerian degeneration with preservation of Schwann cells and basal lamina of endoneurium (many crush injuries); recovery may take place over many months (3-12 months) and may be incomplete, in particular if regeneration must take place over long distances.",
+     "right": "Axonotmesis"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Definition</th><th>Nerve injury</th></tr></thead><tbody><tr><td>Functional block and demyelination; preservation of axon integrity (compression, transient ischemia); good prognosis with complete recovery with remyelination (2-3 months).</td><td>Neurapraxia</td></tr><tr><td>Transection of axons and connective tissue elements with complete loss of function distal to site of injury; regeneration may be limited by scarring; surgical exploration and repair are often warranted.</td><td>Neuronotmesis</td></tr><tr><td>Wallerian degeneration with preservation of Schwann cells and basal lamina of endoneurium (many crush injuries); recovery may take place over many months (3-12 months) and may be incomplete, in particular if regeneration must take place over long distances.</td><td>Axonotmesis</td></tr></tbody></table><div class=\"tw\"><table><thead><tr><th>Grade</th><th>Pathology</th><th>Recovery</th></tr></thead><tbody><tr><td><strong>Neurapraxia</strong></td><td>functional block and demyelination; <strong>axon intact</strong> (compression, transient ischemia)</td><td><strong>complete</strong>, with remyelination, <strong>2-3 months</strong></td></tr><tr><td><strong>Axonotmesis</strong></td><td><strong>Wallerian degeneration</strong> but <strong>Schwann cells and basal lamina preserved</strong> (crush injuries)</td><td><strong>3-12 months</strong>, may be <strong>incomplete</strong> over long distances</td></tr><tr><td><strong>Neuronotmesis</strong></td><td><strong>transection of axons <em>and</em> connective tissue</strong>; complete loss of function distally</td><td>limited by <strong>scarring</strong>; often needs <strong>surgical repair</strong></td></tr></tbody></table></div><p>The escalating theme is <strong>how much scaffolding survives</strong> — that is what sets the ceiling on recovery.</p>",
+  "note": "workbook key \"1-A, 2-C, 3-B\" (correct [A,C,B])"
+ },
+ {
+  "qid": "workbook-neuro-Q84",
+  "bank": "pom2/data/questions/neuro.json",
+  "stem": "<p><strong>Please match the following circulatory components with their associated localization findings (with respect to stroke).</strong></p>",
+  "pairs": {
+   "leftLabel": "Vessel",
+   "rightLabel": "Finding",
+   "items": [
+    {
+     "left": "Middle cerebral artery",
+     "right": "Contralateral loss of motor and sensory function in face/arm"
+    },
+    {
+     "left": "Anterior cerebral artery",
+     "right": "Contralateral loss of motor and sensory function in foot/leg"
+    },
+    {
+     "left": "Ophthalmic artery",
+     "right": "Amaurosis fugax"
+    },
+    {
+     "left": "Posterior cerebral artery",
+     "right": "Contralateral hemianopia or quadrantanopia"
+    },
+    {
+     "left": "Vertebrobasilar arteries",
+     "right": "Cranial nerve and cerebellar findings"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Vessel</th><th>Finding</th></tr></thead><tbody><tr><td>Middle cerebral artery</td><td>Contralateral loss of motor and sensory function in face/arm</td></tr><tr><td>Anterior cerebral artery</td><td>Contralateral loss of motor and sensory function in foot/leg</td></tr><tr><td>Ophthalmic artery</td><td>Amaurosis fugax</td></tr><tr><td>Posterior cerebral artery</td><td>Contralateral hemianopia or quadrantanopia</td></tr><tr><td>Vertebrobasilar arteries</td><td>Cranial nerve and cerebellar findings</td></tr></tbody></table><p>This is the same territory map that <strong>Q22</strong> works through in prose — the <strong>HAL (Head, Arm, Leg)</strong> lateral-to-medial homunculus is what makes the MCA/ACA split fall out.</p>",
+  "note": "workbook key \"A-iii, B-i, C-iv, D-ii, E-v\""
+ },
+ {
+  "qid": "hippo-neuro-Q26",
+  "bank": "pom2/data/questions/neuro.json",
+  "stem": "<p><strong>Match the clinical condition with neuronal structure affected.</strong></p>",
+  "pairs": {
+   "leftLabel": "Clinical condition",
+   "rightLabel": "Structure affected",
+   "items": [
+    {
+     "left": "Parkinson’s disease",
+     "right": "Substantia Nigra"
+    },
+    {
+     "left": "Huntington’s disease",
+     "right": "Striatum"
+    },
+    {
+     "left": "Schizophrenia",
+     "right": "Nucleus Accumbens"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Clinical condition</th><th>Structure affected</th></tr></thead><tbody><tr><td>Parkinson’s disease</td><td>Substantia Nigra</td></tr><tr><td>Huntington’s disease</td><td>Striatum</td></tr><tr><td>Schizophrenia</td><td>Nucleus Accumbens</td></tr></tbody></table><p><em>From 03 - Neuroanatomy of the Brainstem, Basal Ganglia, and Diencephalon.</em> Each disease targets a different part of the dopamine and basal ganglia circuit.</p><ul><li><strong>Parkinson's &rarr; substantia nigra:</strong> the midbrain's dopamine-producing neurons are lost, the direct pathway becomes hypoactive, and thalamic output falls (bradykinesia).</li><li><strong>Huntington's &rarr; striatum:</strong> the caudate and putamen degenerate, the indirect pathway goes quiet, and thalamic output rises (a hyperkinetic disorder).</li><li><strong>Schizophrenia &rarr; nucleus accumbens:</strong> the accumbens is the ventral striatum, a limbic dopamine target. <em>07 - Introduction to Psychopharmacology</em> ties positive symptoms to excess dopamine in the mesolimbic pathway.</li></ul><p>The trap is that the accumbens is also striatum. Huntington's is a movement disorder of the dorsal striatum (caudate and putamen).</p>",
+  "note": "HippoNotes prose key \"1C, 3B, 2A\""
+ },
+ {
+  "qid": "hippo-neuro-Q37",
+  "bank": "pom2/data/questions/neuro.json",
+  "stem": "<p><strong>Match the correct location of decussation to each of the following tracts.</strong></p>",
+  "pairs": {
+   "leftLabel": "Tract",
+   "rightLabel": "Location of decussation",
+   "items": [
+    {
+     "left": "Corticospinal",
+     "right": "Medulla"
+    },
+    {
+     "left": "Spinothalamic",
+     "right": "Spinal cord entry"
+    },
+    {
+     "left": "Medial lemniscus",
+     "right": "Medulla"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Tract</th><th>Location of decussation</th></tr></thead><tbody><tr><td>Corticospinal</td><td>Medulla</td></tr><tr><td>Spinothalamic</td><td>Spinal cord entry</td></tr><tr><td>Medial lemniscus</td><td>Medulla</td></tr></tbody></table><p><em>From 04 - Neuroanatomy of the Spinal Tracts and Cerebellum.</em> Two of the three long tracts cross in the <strong>medulla</strong>. Only the pain pathway crosses as soon as it enters the cord.</p><ul><li><strong>Corticospinal &rarr; medulla:</strong> 90% of axons cross at the pyramidal decussation into the lateral corticospinal tract. The other 10% stay ipsilateral in the anterior tract.</li><li><strong>Medial lemniscus &rarr; medulla:</strong> the second-order neurons in the nucleus gracilis and cuneatus send their axons across as the medial lemniscus.</li><li><strong>Spinothalamic &rarr; spinal cord entry:</strong> the first-order neuron synapses in the dorsal horn at once, and the second-order axon crosses in the anterior white commissure.</li></ul><p>This split is why a hemicord (Brown-S&eacute;quard) lesion causes ipsilateral loss of vibration and proprioception but contralateral loss of pain and temperature.</p>",
+  "note": "HippoNotes prose key \"Medulla: Corticospinal, Medial lemniscus; Spinal cord entry: Spinothalamic\""
+ },
+ {
+  "qid": "hippo-neuro-Q59",
+  "bank": "pom2/data/questions/neuro.json",
+  "stem": "<p><strong>Based on the presentation, identify the cerebral artery territory most likely impacted. Answers may be used more than once.</strong></p>",
+  "pairs": {
+   "leftLabel": "Presentation",
+   "rightLabel": "Artery territory",
+   "items": [
+    {
+     "left": "Can follow commands but produces nonsensical speech. Severe arm weakness, facial droop.",
+     "right": "Middle cerebral artery (MCA)"
+    },
+    {
+     "left": "Moderate leg weakness, mild arm weakness.",
+     "right": "Anterior cerebral artery (ACA)"
+    },
+    {
+     "left": "Paralysis of left arm, leg and lower face. Complete sensory loss in left arm, leg and face.",
+     "right": "Middle cerebral artery (MCA)"
+    },
+    {
+     "left": "Dizziness, diplopia, contralateral homonymous hemianopsia.",
+     "right": "Posterior cerebral artery (PCA)"
+    },
+    {
+     "left": "Neglect of left side, left asomatognosia, left hemianesthesia, left face and arm weakness.",
+     "right": "Middle cerebral artery (MCA)"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Presentation</th><th>Artery territory</th></tr></thead><tbody><tr><td>Can follow commands but produces nonsensical speech. Severe arm weakness, facial droop.</td><td>Middle cerebral artery (MCA)</td></tr><tr><td>Moderate leg weakness, mild arm weakness.</td><td>Anterior cerebral artery (ACA)</td></tr><tr><td>Paralysis of left arm, leg and lower face. Complete sensory loss in left arm, leg and face.</td><td>Middle cerebral artery (MCA)</td></tr><tr><td>Dizziness, diplopia, contralateral homonymous hemianopsia.</td><td>Posterior cerebral artery (PCA)</td></tr><tr><td>Neglect of left side, left asomatognosia, left hemianesthesia, left face and arm weakness.</td><td>Middle cerebral artery (MCA)</td></tr></tbody></table><ul><li>Nonsensical speech, arm weakness, facial droop: left MCA.</li><li>Leg weakness: ACA (clue is leg &gt; arm weakness).</li><li>Left arm, leg and lower face paralysis with complete sensory loss: MCA, likely internal capsule.</li><li>Dizziness, diplopia, hemianopsia: PCA.</li><li>Left neglect and asomatognosia: right MCA.</li></ul>",
+  "note": "HippoNotes prose key \"1) B - left MCA. 2) A - ACA. 3) B - MCA. 4) C 5) B - right MCA\" (A ACA, B MCA, C PCA)"
+ },
+ {
+  "qid": "hippo-neuro-Q60",
+  "bank": "pom2/data/questions/neuro.json",
+  "stem": "<p><strong>Match the following localizations to the patient presentations.</strong></p>",
+  "pairs": {
+   "leftLabel": "Presentation",
+   "rightLabel": "Localization",
+   "items": [
+    {
+     "left": "80 y/o man with numb feet and reduced pin-prick sensation over medial/lateral/posterior leg. Bilateral dorsiflexion and plantarflexion were 4’s, remainder of power is full. Absent ankle reflexes, other reflexes normal.",
+     "right": "Peripheral nerve"
+    },
+    {
+     "left": "55 y/o man with moderate weakness of bilateral deltoids, triceps, hip flexors and hip abductors. Normal reflexes, tone, and sensation.",
+     "right": "Muscle"
+    },
+    {
+     "left": "29 y/o woman with reduced sensation in left face, left arm, and left leg.",
+     "right": "Subcortical"
+    },
+    {
+     "left": "32 y/o woman with ptosis that gets worse through the day. Normal reflexes and sensation.",
+     "right": "Neuromuscular junction"
+    },
+    {
+     "left": "40 y/o woman with progressive balance difficulties. 4/5 hip flexors, 4/5 knee flexors, and 4/5 dorsiflexors, all bilaterally; other lower and upper extremity power testing was normal. Hyperreflexia at knees and ankles. Reduced pinprick sensation diffusely over leg extending up to umbilicus.",
+     "right": "Spinal cord"
+    },
+    {
+     "left": "45 y/o man with vertigo and headache. Reduced sensation noted in right face, left arm extensors, and left hip flexors.",
+     "right": "Brainstem"
+    },
+    {
+     "left": "77 y/o woman unable to see objects in left visual field. Loss of sensation in left face and left arm.",
+     "right": "Cortex"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Presentation</th><th>Localization</th></tr></thead><tbody><tr><td>80 y/o man with numb feet and reduced pin-prick sensation over medial/lateral/posterior leg. Bilateral dorsiflexion and plantarflexion were 4’s, remainder of power is full. Absent ankle reflexes, other reflexes normal.</td><td>Peripheral nerve</td></tr><tr><td>55 y/o man with moderate weakness of bilateral deltoids, triceps, hip flexors and hip abductors. Normal reflexes, tone, and sensation.</td><td>Muscle</td></tr><tr><td>29 y/o woman with reduced sensation in left face, left arm, and left leg.</td><td>Subcortical</td></tr><tr><td>32 y/o woman with ptosis that gets worse through the day. Normal reflexes and sensation.</td><td>Neuromuscular junction</td></tr><tr><td>40 y/o woman with progressive balance difficulties. 4/5 hip flexors, 4/5 knee flexors, and 4/5 dorsiflexors, all bilaterally; other lower and upper extremity power testing was normal. Hyperreflexia at knees and ankles. Reduced pinprick sensation diffusely over leg extending up to umbilicus.</td><td>Spinal cord</td></tr><tr><td>45 y/o man with vertigo and headache. Reduced sensation noted in right face, left arm extensors, and left hip flexors.</td><td>Brainstem</td></tr><tr><td>77 y/o woman unable to see objects in left visual field. Loss of sensation in left face and left arm.</td><td>Cortex</td></tr></tbody></table><ul><li><strong>Peripheral nerve</strong> – sensory stocking distribution, distal weakness in foot.</li><li><strong>Muscle</strong> – symmetric, proximal weakness in the shoulder and hip girdle with no sensory involvement.</li><li><strong>Subcortical</strong> sign of pure sensory hemibody affecting face, arm, and leg equally.</li><li><strong>NMJ</strong> – fatiguing weakness in ocular muscles.</li><li><strong>Spinal cord</strong> signs of pyramidal weakness with weak leg flexors, hyperreflexia suggesting UMN lesion, and sensory level at T10.</li><li><strong>Brainstem</strong> – vertigo + another symptom, crossed sensory symptoms, pyramidal weakness.</li><li><strong>Cortical</strong> sign of contralateral homonymous hemianopsia and contralateral sensory loss.</li></ul>",
+  "note": "HippoNotes prose key \"1) E 2) G 3) B 4) F 5) D 6) C 7) A\", each with its localization named"
+ },
+ {
+  "qid": "hippo-psych-Q1",
+  "bank": "pom2/data/questions/psych.json",
+  "stem": "<p><strong>Sort the following types of dysphagia into their types.</strong></p>",
+  "pairs": {
+   "leftLabel": "Dysphagia",
+   "rightLabel": "Type",
+   "items": [
+    {
+     "left": "Schatzki ring (an intermittent dysphagia)",
+     "right": "Mechanical - issue with solids only"
+    },
+    {
+     "left": "Jackhammer esophagus (an intermittent dysphagia with chest pain and repetitive peristaltic contractions)",
+     "right": "Motility - issue with solids and liquids"
+    },
+    {
+     "left": "Scleroderma (a progressive dysphagia with heartburn)",
+     "right": "Motility - issue with solids and liquids"
+    },
+    {
+     "left": "Eosinophilic esophagitis (a dysphagia presenting with corrugate rings, vertical furrowing, white papules often in young males)",
+     "right": "Mechanical - issue with solids only"
+    },
+    {
+     "left": "Diffuse spasms (a “corkscrew” esophagus on barium swallow)",
+     "right": "Motility - issue with solids and liquids"
+    },
+    {
+     "left": "Achalasia (a “bird’s beak” on barium swallowing often with regurgitation of bland food)",
+     "right": "Motility - issue with solids and liquids"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Dysphagia</th><th>Type</th></tr></thead><tbody><tr><td>Schatzki ring (an intermittent dysphagia)</td><td>Mechanical - issue with solids only</td></tr><tr><td>Jackhammer esophagus (an intermittent dysphagia with chest pain and repetitive peristaltic contractions)</td><td>Motility - issue with solids and liquids</td></tr><tr><td>Scleroderma (a progressive dysphagia with heartburn)</td><td>Motility - issue with solids and liquids</td></tr><tr><td>Eosinophilic esophagitis (a dysphagia presenting with corrugate rings, vertical furrowing, white papules often in young males)</td><td>Mechanical - issue with solids only</td></tr><tr><td>Diffuse spasms (a “corkscrew” esophagus on barium swallow)</td><td>Motility - issue with solids and liquids</td></tr><tr><td>Achalasia (a “bird’s beak” on barium swallowing often with regurgitation of bland food)</td><td>Motility - issue with solids and liquids</td></tr></tbody></table><p><em>From 04 - Esophageal Dysphagia (PoM 1, Gastroenterology Week 10). This question is GI, not psychiatry.</em> The first history question is whether solids alone get stuck, or both solids and liquids. A <strong>fixed narrowing</strong> blocks only solids, while a <strong>motility</strong> failure affects both.</p><ul><li><strong>Mechanical: Schatzki ring, eosinophilic esophagitis.</strong> A Schatzki ring is a distal mucosal ring that causes intermittent solid-food dysphagia. Eosinophilic esophagitis (rings, vertical furrows, food bolus impaction in young atopic males) is grouped with the structural causes.</li><li><strong>Motility: jackhammer, scleroderma, diffuse spasm, achalasia.</strong> Jackhammer esophagus (high-amplitude repetitive contractions), scleroderma (scarred, thickened wall), diffuse esophageal spasm (simultaneous non-propulsive contractions, the corkscrew) and achalasia (the LES fails to relax, the bird's beak).</li></ul><p>Motility disorders are diagnosed by manometry, not endoscopy.</p>",
+  "note": "HippoNotes prose key \"A = i, iv; B = ii, iii, v, vi\""
+ },
+ {
+  "qid": "hippo-psych-Q8",
+  "bank": "pom2/data/questions/psych.json",
+  "stem": "<p><strong>Match the psychotherapy to its description.</strong></p>",
+  "pairs": {
+   "leftLabel": "Description",
+   "rightLabel": "Psychotherapy",
+   "items": [
+    {
+     "left": "Scheduling pleasurable activities into your weekly calendar",
+     "right": "Behavioural Activation (BA)"
+    },
+    {
+     "left": "Identifying and examining schemas, automatic thoughts/thought distortions, core beliefs with thought recording",
+     "right": "Cognitive Behavioural Therapy (CBT)"
+    },
+    {
+     "left": "A collaborative patient-therapist treatment focused on a patient’s relationships with others, conflicts, griefs, and role transitions",
+     "right": "Interpersonal Therapy (IPT)"
+    },
+    {
+     "left": "A loose therapy that evaluates subconscious defenses, transference (patient sees the “blank” therapist as someone else) through free associations, observation, validation, clarification, confrontation, and encouragement to elaborate",
+     "right": "Psychodynamic Psychotherapy (PDT)"
+    },
+    {
+     "left": "Developed specifically for borderline personality disorder, patients analyze chains of events, vulnerability factors, actions, cognition, feelings to change maladaptive behaviours to adaptive behaviours. Delivered individually, through group skill training, over the phone, or via therapist consultations.",
+     "right": "Dialectical Behavioural Therapy (DBT)"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Description</th><th>Psychotherapy</th></tr></thead><tbody><tr><td>Scheduling pleasurable activities into your weekly calendar</td><td>Behavioural Activation (BA)</td></tr><tr><td>Identifying and examining schemas, automatic thoughts/thought distortions, core beliefs with thought recording</td><td>Cognitive Behavioural Therapy (CBT)</td></tr><tr><td>A collaborative patient-therapist treatment focused on a patient’s relationships with others, conflicts, griefs, and role transitions</td><td>Interpersonal Therapy (IPT)</td></tr><tr><td>A loose therapy that evaluates subconscious defenses, transference (patient sees the “blank” therapist as someone else) through free associations, observation, validation, clarification, confrontation, and encouragement to elaborate</td><td>Psychodynamic Psychotherapy (PDT)</td></tr><tr><td>Developed specifically for borderline personality disorder, patients analyze chains of events, vulnerability factors, actions, cognition, feelings to change maladaptive behaviours to adaptive behaviours. Delivered individually, through group skill training, over the phone, or via therapist consultations.</td><td>Dialectical Behavioural Therapy (DBT)</td></tr></tbody></table><p><em>From 10 - Psychotherapies in Mood and Anxiety Disorders.</em> Each description names a feature that only one therapy has:</p><ul><li><strong>Psychodynamic:</strong> unstructured free association, a neutral &ldquo;blank screen&rdquo; therapist, interpretation of transference, and defences worked through by clarifying and confronting.</li><li><strong>DBT:</strong> developed specifically for borderline personality disorder. It uses behavioural chain analysis and is delivered as individual therapy, group skills training, phone coaching and therapist consultation.</li><li><strong>CBT:</strong> schemas, automatic thoughts and cognitive distortions, tracked with thought records.</li><li><strong>Behavioural activation:</strong> act before you feel better, using activity scheduling rated for accomplishment and pleasure.</li><li><strong>IPT:</strong> short, present-focused work on role disputes, role transitions, grief and interpersonal deficits. Transference is deliberately <em>not</em> addressed, which is the clearest contrast with psychodynamic therapy.</li></ul>",
+  "note": "HippoNotes prose key \"A - iv. B - v. C - ii. D - i. E - iii\""
+ },
+ {
+  "qid": "hippo-psych-Q12",
+  "bank": "pom2/data/questions/psych.json",
+  "skip": "rows need more than one answer (key \"C - i, ii; E - i, ii; F - ii, iii\": TCA/SNRI/NDRI each inhibit two transporters)"
+ },
+ {
+  "qid": "hippo-psych-Q61",
+  "bank": "pom2/data/questions/psych.json",
+  "stem": "<p><strong>Match the term to the correct description.</strong></p>",
+  "pairs": {
+   "leftLabel": "Description",
+   "rightLabel": "Sleep stage",
+   "items": [
+    {
+     "left": "Where vivid dreaming occurs and may be important for memory consolidation. EEG shows low-voltage fast waves, muscle atonia and rapid eye movements. Sawtooth wave form, theta activity and slow alpha activity.",
+     "right": "REM Sleep"
+    },
+    {
+     "left": "Transitional role in sleep-stage cycle. EEG shows transitions from wakefulness (rhythmic alpha waves) to low-voltage, mixed frequency waves.",
+     "right": "N1 Sleep"
+    },
+    {
+     "left": "Related to memory consolidation. EGG shows low voltage fast activity characterized by the presence of sleep spindles and K-complexes.",
+     "right": "N2 Sleep"
+    },
+    {
+     "left": "Primary function is daily brain recovery and secretion of growth hormone is greatest during this stage. EEG shows high voltage, slow-wave activity, large delta waves.",
+     "right": "N3 Sleep"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Description</th><th>Sleep stage</th></tr></thead><tbody><tr><td>Where vivid dreaming occurs and may be important for memory consolidation. EEG shows low-voltage fast waves, muscle atonia and rapid eye movements. Sawtooth wave form, theta activity and slow alpha activity.</td><td>REM Sleep</td></tr><tr><td>Transitional role in sleep-stage cycle. EEG shows transitions from wakefulness (rhythmic alpha waves) to low-voltage, mixed frequency waves.</td><td>N1 Sleep</td></tr><tr><td>Related to memory consolidation. EGG shows low voltage fast activity characterized by the presence of sleep spindles and K-complexes.</td><td>N2 Sleep</td></tr><tr><td>Primary function is daily brain recovery and secretion of growth hormone is greatest during this stage. EEG shows high voltage, slow-wave activity, large delta waves.</td><td>N3 Sleep</td></tr></tbody></table><p><em>From 01 - Sleep Disorders.</em> Match each EEG signature to its stage:</p><ul><li><strong>REM:</strong> low-voltage fast activity with sawtooth waves, plus vivid dreaming, muscle atonia and rapid eye movements. It is thought to help memory consolidation.</li><li><strong>N1:</strong> the transition from wakefulness, as alpha waves give way to low-voltage mixed-frequency (theta) waves. Only 2-5% of sleep, and easily interrupted.</li><li><strong>N2:</strong> <strong>sleep spindles and K-complexes</strong>, linked to memory consolidation. At 45-55% of sleep, it is the largest share.</li><li><strong>N3:</strong> high-voltage slow (delta) waves, daily brain recovery and growth hormone secretion. It is the hardest stage to wake from and is concentrated in the first third of the night.</li></ul><p>Anchor each stage on one unique feature: alpha to theta (N1), spindles (N2), delta (N3), sawtooth (REM).</p>",
+  "note": "HippoNotes prose key \"A2, B3, C4, D1\""
+ },
+ {
+  "qid": "hippo-psych-Q76",
+  "bank": "pom2/data/questions/psych.json",
+  "stem": "<p><strong>Match the syndrome with its behavioural phenotype.</strong></p>",
+  "pairs": {
+   "leftLabel": "Syndrome",
+   "rightLabel": "Behavioural phenotype",
+   "items": [
+    {
+     "left": "Angleman syndrome",
+     "right": "Jerky movement"
+    },
+    {
+     "left": "Williams syndrome",
+     "right": "Hyperverbalisation"
+    },
+    {
+     "left": "Prader-Willi syndrome",
+     "right": "Neonatal hypotonia"
+    },
+    {
+     "left": "Fragile-X syndrome",
+     "right": "Anxiety and agitation"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Syndrome</th><th>Behavioural phenotype</th></tr></thead><tbody><tr><td>Angleman syndrome</td><td>Jerky movement</td></tr><tr><td>Williams syndrome</td><td>Hyperverbalisation</td></tr><tr><td>Prader-Willi syndrome</td><td>Neonatal hypotonia</td></tr><tr><td>Fragile-X syndrome</td><td>Anxiety and agitation</td></tr></tbody></table><p><em>From 09 - Autism Spectrum Disorder &amp; Intellectual Disabilities and the vault's syndrome notes.</em> Each genetic cause of intellectual disability has a recognisable behavioural phenotype:</p><ul><li><strong>Angelman &rarr; jerky movement</strong>: ataxic movement with a characteristically happy demeanour.</li><li><strong>Williams &rarr; hyperverbalisation</strong>: an overfriendly, talkative child whose verbal fluency outruns their cognition.</li><li><strong>Prader-Willi &rarr; neonatal hypotonia</strong>: a floppy newborn.</li><li><strong>Fragile X &rarr; anxiety and agitation</strong>: social anxiety is prominent. Fragile X is the most common genetic cause of intellectual disability.</li></ul>",
+  "note": "HippoNotes prose key \"A - II; B - I; C - III; D - IV\""
+ },
+ {
+  "qid": "hippo-t2c-dermim-Q30",
+  "bank": "t2c/data/questions/dermim.json",
+  "skip": "key garbled (\"J) b. I), L) c. B) ...\", duplicate letters A-J in both lists) and some comorbidities take two drugs (COPD -> Ventolin + Symbicort); the Mr. Johnson case is also missing from the stem"
+ },
+ {
+  "qid": "hippo-t2c-em-Q55",
+  "bank": "t2c/data/questions/em.json",
+  "skip": "not a matching task: a single-answer threshold question whose options were garbled and that has no key"
+ },
+ {
+  "qid": "hippo-t2c-peds-Q1",
+  "bank": "t2c/data/questions/peds.json",
+  "skip": "source key internally inconsistent: maps both A and D to iii (family history); the bank already flags it"
+ },
+ {
+  "qid": "hippo-t2c-peds-Q3",
+  "bank": "t2c/data/questions/peds.json",
+  "stem": "<p><strong>Match the developmental action to the age at which the lack of the milestone will start to be a red flag.</strong></p>",
+  "pairs": {
+   "leftLabel": "Developmental action",
+   "rightLabel": "Red flag if absent by",
+   "items": [
+    {
+     "left": "Gross motor: inability to walk",
+     "right": "18 mo"
+    },
+    {
+     "left": "Fine motor: hands still fisted",
+     "right": "4 mo"
+    },
+    {
+     "left": "Language: no babbling",
+     "right": "9 mo"
+    },
+    {
+     "left": "Social: no joint attention",
+     "right": "15 mo"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Developmental action</th><th>Red flag if absent by</th></tr></thead><tbody><tr><td>Gross motor: inability to walk</td><td>18 mo</td></tr><tr><td>Fine motor: hands still fisted</td><td>4 mo</td></tr><tr><td>Language: no babbling</td><td>9 mo</td></tr><tr><td>Social: no joint attention</td><td>15 mo</td></tr></tbody></table><p><em>From 08 - Developmental Milestones (FoM Block 1, Week 3).</em> The lecture's red-flag list gives most of these directly:</p><ul><li>Not walking = <strong>18 mo</strong>: most walk independently by 12 mo; the red flag is not walking by 18 mo.</li><li>Hands still fisted = <strong>4 mo</strong>: the palmar grasp reflex fades by 3-4 mo.</li><li>No babbling = <strong>9 mo</strong>: babbling a series of sounds (baba, duhduh) is the 9-month language milestone.</li><li>No joint attention = <strong>15 mo</strong>: the lecture's flag is not pointing to objects of interest by 15 mo, which is joint attention.</li></ul>",
+  "note": "HippoNotes prose key \"A iv; B i; C ii; D iii\""
+ }
+]

@@ -1,0 +1,939 @@
+[
+ {
+  "qid": "cardio-w5-module-q30-30",
+  "bank": "pom1/data/questions/cardio.json",
+  "stem": "<p>Below are 8 rhythm strips. Match the rhythm strip or ECG to the correct diagnosis:</p><figure><img loading=\"lazy\" src=\"assets/figures/044ff865cef5.jpg\" alt=\"Figure from the question bank, page None\"></figure>",
+  "pairs": {
+   "leftLabel": "Rhythm strip",
+   "rightLabel": "Diagnosis",
+   "items": [
+    {
+     "left": "Strip A",
+     "right": "Premature atrial contraction"
+    },
+    {
+     "left": "Strip B",
+     "right": "First degree AV block"
+    },
+    {
+     "left": "Strip C",
+     "right": "Second degree AV block"
+    },
+    {
+     "left": "Strip D",
+     "right": "Third degree AV block (complete heart block)"
+    },
+    {
+     "left": "Strip E",
+     "right": "Ventricular fibrillation"
+    },
+    {
+     "left": "Strip F",
+     "right": "Atrial flutter"
+    },
+    {
+     "left": "Strip G",
+     "right": "Premature ventricular contraction(s)"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Rhythm strip</th><th>Diagnosis</th></tr></thead><tbody><tr><td>Strip A</td><td>Premature atrial contraction</td></tr><tr><td>Strip B</td><td>First degree AV block</td></tr><tr><td>Strip C</td><td>Second degree AV block</td></tr><tr><td>Strip D</td><td>Third degree AV block (complete heart block)</td></tr><tr><td>Strip E</td><td>Ventricular fibrillation</td></tr><tr><td>Strip F</td><td>Atrial flutter</td></tr><tr><td>Strip G</td><td>Premature ventricular contraction(s)</td></tr></tbody></table><p><em>From 02 - Bradycardia and 04 - Tachycardia.</em> Each one has its own discriminator:</p><ul><li><strong>A, PAC</strong>: an early narrow beat with an abnormal P, then a pause.</li><li><strong>B, 1st degree AV block</strong>: PR &gt; 200 ms with every P conducted.</li><li><strong>C, 2nd degree AV block</strong>: some P waves without a QRS, so beats come in groups.</li><li><strong>D, 3rd degree block</strong>: AV dissociation. P waves march through a slow, regular, wide ventricular escape.</li><li><strong>E, VF</strong>: chaotic baseline, no organised QRS.</li><li><strong>F, atrial flutter</strong>: continuous sawtooth flutter waves between narrow QRSs.</li><li><strong>G, PVCs</strong>: early, wide, bizarre QRSs with no preceding P.</li></ul><p>The stem says 8 strips, but only 7 are shown and 7 are listed.</p>",
+  "note": "answer key A-i ... G-vii (strip letters are the figure's labels)"
+ },
+ {
+  "qid": "cardio-w3-meds2024-q10-10",
+  "bank": "pom1/data/questions/cardio.json",
+  "skip": "ordering MCQ (sequence of steps), not a matching task"
+ },
+ {
+  "qid": "cardio-w3-new-q3-3",
+  "bank": "pom1/data/questions/cardio.json",
+  "stem": "<p>Match the coronary artery to the location of infarction</p>",
+  "pairs": {
+   "leftLabel": "Coronary artery",
+   "rightLabel": "Location of infarction",
+   "items": [
+    {
+     "left": "Left Anterior Descending Artery",
+     "right": "Anterior MI"
+    },
+    {
+     "left": "Right Coronary Artery",
+     "right": "Inferior MI"
+    },
+    {
+     "left": "Left Circumflex Artery",
+     "right": "Posterior MI"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Coronary artery</th><th>Location of infarction</th></tr></thead><tbody><tr><td>Left Anterior Descending Artery</td><td>Anterior MI</td></tr><tr><td>Right Coronary Artery</td><td>Inferior MI</td></tr><tr><td>Left Circumflex Artery</td><td>Posterior MI</td></tr></tbody></table><p><em>From 04 - Myocardial Infarction.</em> The culprit artery sets the wall that infarcts:</p><ul><li><strong>LAD - anterior MI</strong>: ST elevation in the anterior leads V3-V4 (V1-V6 if it extends septal and lateral). The LAD supplies the anterior wall and the anterior two-thirds of the septum.</li><li><strong>RCA - inferior MI</strong>: ST elevation in II, III and aVF, with reciprocal depression in I and aVL. In the 85% who are right-dominant, the RCA gives the posterior descending artery.</li><li><strong>Left circumflex - posterior MI</strong>: often missed on a 12-lead. Look for ST depression in V1-V3 or add V8-V9.</li></ul>",
+  "note": "answer key I-C, II-A, III-B"
+ },
+ {
+  "qid": "cardio-w4-new-q15-15",
+  "bank": "pom1/data/questions/cardio.json",
+  "skip": "select-the-false-statements MCQ (roman-numeral combinations), not a matching task"
+ },
+ {
+  "qid": "cardio-w4-new-q19-19",
+  "bank": "pom1/data/questions/cardio.json",
+  "skip": "select-all-that-apply MCQ (roman-numeral combinations), not a matching task"
+ },
+ {
+  "qid": "cardio-wb-cardio0-q3",
+  "bank": "pom1/data/questions/cardio.json",
+  "skip": "single-best-answer MCQ"
+ },
+ {
+  "qid": "cardio-wb-cardio0-q8",
+  "bank": "pom1/data/questions/cardio.json",
+  "skip": "single-best-answer MCQ"
+ },
+ {
+  "qid": "cardio-wb-cardio0-q48",
+  "bank": "pom1/data/questions/cardio.json",
+  "skip": "single-best-answer MCQ with options inline in the stem (CHADS score); mislabelled kind matching"
+ },
+ {
+  "qid": "ent-w9-module-q9-9",
+  "bank": "pom1/data/questions/ent.json",
+  "stem": "<p>Match the correct structure to each label in the neck.</p><figure><img loading=\"lazy\" src=\"assets/figures/45abbec40638.jpg\" alt=\"Figure from the question bank, page None\"></figure>",
+  "pairs": {
+   "leftLabel": "Label",
+   "rightLabel": "Structure",
+   "items": [
+    {
+     "left": "Label A",
+     "right": "Sternocleidomastoid"
+    },
+    {
+     "left": "Label B",
+     "right": "Trapezius"
+    },
+    {
+     "left": "Label C",
+     "right": "Middle scalene"
+    },
+    {
+     "left": "Label D",
+     "right": "Anterior scalene"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Label</th><th>Structure</th></tr></thead><tbody><tr><td>Label A</td><td>Sternocleidomastoid</td></tr><tr><td>Label B</td><td>Trapezius</td></tr><tr><td>Label C</td><td>Middle scalene</td></tr><tr><td>Label D</td><td>Anterior scalene</td></tr></tbody></table><p><em>From 01 - Anatomy of the Neck.</em> The key reads: label A = sternocleidomastoid, B = trapezius, C = middle scalene, D = anterior scalene. Use their relationships to place each one:</p><ul><li><strong>Sternocleidomastoid</strong>: the large diagonal muscle that divides the neck into anterior and posterior triangles. Most of the neck's nerves lie deep to it.</li><li><strong>Trapezius</strong>: the back edge of the posterior triangle, running out to the scapula.</li><li><strong>Anterior scalene</strong>: in the floor of the posterior triangle, with the phrenic nerve on its anterior surface.</li><li><strong>Middle scalene</strong>: just posterior to it, flexing the neck laterally. The brachial plexus emerges between the two scalenes.</li></ul>",
+  "note": "answer key A-I, B-III, C-IV, D-II (labels are the figure's)",
+  "drop_flags": [
+   "The diagram is not in the bank"
+  ]
+ },
+ {
+  "qid": "ent-w9-module-q10-10",
+  "bank": "pom1/data/questions/ent.json",
+  "stem": "<p>Typically, neural structures run with vascular structures. Match common pairings that we see running adjacent to one another in the neck.</p>",
+  "pairs": {
+   "leftLabel": "Nerve",
+   "rightLabel": "Artery it runs with",
+   "items": [
+    {
+     "left": "Hypoglossal nerve",
+     "right": "Lingual artery"
+    },
+    {
+     "left": "Vagus nerve",
+     "right": "Common carotid artery"
+    },
+    {
+     "left": "Superior laryngeal nerve",
+     "right": "Superior thyroid artery"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Nerve</th><th>Artery it runs with</th></tr></thead><tbody><tr><td>Hypoglossal nerve</td><td>Lingual artery</td></tr><tr><td>Vagus nerve</td><td>Common carotid artery</td></tr><tr><td>Superior laryngeal nerve</td><td>Superior thyroid artery</td></tr></tbody></table><p><em>From 01 - Anatomy of the Neck.</em> Each nerve runs with the vessel serving the same territory:</p><ul><li><strong>Vagus nerve with the common carotid artery</strong>: both lie in the carotid sheath, with the vagus between the internal jugular vein and the carotid.</li><li><strong>Superior laryngeal nerve with the superior thyroid artery</strong>: the first branch of the external carotid runs down to the larynx and thyroid beside the nerve's external branch. That is why ligating the artery at thyroidectomy can injure the nerve, giving a weak, tired voice from cricothyroid palsy.</li><li><strong>Hypoglossal nerve with the lingual artery</strong>: both go to the tongue, the nerve passing deep to the posterior digastric into the oral cavity.</li></ul>",
+  "note": "answer key A-II, B-III, C-I"
+ },
+ {
+  "qid": "ent-w9-module-q18-18",
+  "bank": "pom1/data/questions/ent.json",
+  "stem": "<p>Match the correct structure to each relationship term to describe the relationship of the esophagus to each structure. The esophagus is {relationship} to {structure}:</p>",
+  "pairs": {
+   "leftLabel": "Structure",
+   "rightLabel": "The esophagus is ... to it",
+   "items": [
+    {
+     "left": "Trachea",
+     "right": "Posterior"
+    },
+    {
+     "left": "Thoracic aorta",
+     "right": "Anterolateral (right)"
+    },
+    {
+     "left": "Azygous veins",
+     "right": "Anterior"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Structure</th><th>The esophagus is ... to it</th></tr></thead><tbody><tr><td>Trachea</td><td>Posterior</td></tr><tr><td>Thoracic aorta</td><td>Anterolateral (right)</td></tr><tr><td>Azygous veins</td><td>Anterior</td></tr></tbody></table><p>The esophagus passes through thoracic inlet posterior to the trachea. It runs anterolateral to the thoracic aorta on the right hand side, passes through the esophageal hiatus of the diaphragm into the abdominal cavity at the level of the T10 vertebra. The left bronchus and aortic arch pass anterior to the esophagus. On the right, the esophagus is covered by mediastinal pleura and anteriorly it is separated from the left atrium by the pericardium. The esophagus lies anterior to the thoracic duct and the azygos and hemiazygos veins.</p>",
+  "note": "answer key A-I, B-II, C-III"
+ },
+ {
+  "qid": "ent-w9-module-q20-20",
+  "bank": "pom1/data/questions/ent.json",
+  "stem": "<p>Match the expected manometric findings to the disorder:</p>",
+  "pairs": {
+   "leftLabel": "Manometric finding",
+   "rightLabel": "Disorder",
+   "items": [
+    {
+     "left": "Aperistalsis + impaired LES relaxation",
+     "right": "Achalasia"
+    },
+    {
+     "left": "Aperistalsis + hypotensive LES",
+     "right": "Scleroderma"
+    },
+    {
+     "left": "Simultaneous premature contractions",
+     "right": "Distal esophageal spasm"
+    },
+    {
+     "left": "High amplitude repetitive contractions",
+     "right": "Jackhammer esophagus"
+    },
+    {
+     "left": "Weak amplitude slowly propagating contractions",
+     "right": "None of the listed disorders"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Manometric finding</th><th>Disorder</th></tr></thead><tbody><tr><td>Aperistalsis + impaired LES relaxation</td><td>Achalasia</td></tr><tr><td>Aperistalsis + hypotensive LES</td><td>Scleroderma</td></tr><tr><td>Simultaneous premature contractions</td><td>Distal esophageal spasm</td></tr><tr><td>High amplitude repetitive contractions</td><td>Jackhammer esophagus</td></tr><tr><td>Weak amplitude slowly propagating contractions</td><td>None of the listed disorders</td></tr></tbody></table><p><em>From 04 - Esophageal Dysphagia.</em> Motility disorders are diagnosed by manometry, not endoscopy. Each pattern pairs peristalsis with how the LES behaves:</p><ul><li><strong>Achalasia = aperistalsis + impaired LES relaxation</strong>: the LES fails to relax, giving a bird's-beak on barium swallow.</li><li><strong>Scleroderma = aperistalsis + hypotensive LES</strong>: scarring weakens both, so reflux, strictures and Barrett's follow.</li><li><strong>Distal esophageal spasm = simultaneous premature contractions</strong>, which are non-propulsive.</li><li><strong>Jackhammer = high-amplitude repetitive contractions</strong>.</li><li><strong>None = weak, slowly propagating contractions</strong>, which match none of the four.</li></ul><p>The LES separates the two aperistaltic disorders: it is tight in achalasia and slack in scleroderma.</p>",
+  "note": "answer key A-I ... E-V"
+ },
+ {
+  "qid": "ent-w9-new-q1-1",
+  "bank": "pom1/data/questions/ent.json",
+  "skip": "select-the-combination MCQ (roman-numeral options), not a matching task"
+ },
+ {
+  "qid": "ent-w9-new-q9-9",
+  "bank": "pom1/data/questions/ent.json",
+  "skip": "select-the-combination MCQ (roman-numeral options), not a matching task"
+ },
+ {
+  "qid": "resp-w6-module-q19-19",
+  "bank": "pom1/data/questions/resp.json",
+  "stem": "<p>Match the appropriate cause of hypoxemia to the clinical description:</p>",
+  "pairs": {
+   "leftLabel": "Clinical description",
+   "rightLabel": "Cause of hypoxemia",
+   "items": [
+    {
+     "left": "Large mucous plug completely occluding the left mainstem bronchus",
+     "right": "Shunt"
+    },
+    {
+     "left": "Acute pulmonary embolism",
+     "right": "V/Q mismatch"
+    },
+    {
+     "left": "Reduced minute ventilation due to narcotics",
+     "right": "Hypoventilation"
+    },
+    {
+     "left": "Interstitial fibrosis in a patient with idiopathic pulmonary fibrosis",
+     "right": "Diffusion impairment"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Clinical description</th><th>Cause of hypoxemia</th></tr></thead><tbody><tr><td>Large mucous plug completely occluding the left mainstem bronchus</td><td>Shunt</td></tr><tr><td>Acute pulmonary embolism</td><td>V/Q mismatch</td></tr><tr><td>Reduced minute ventilation due to narcotics</td><td>Hypoventilation</td></tr><tr><td>Interstitial fibrosis in a patient with idiopathic pulmonary fibrosis</td><td>Diffusion impairment</td></tr></tbody></table><p><em>From 02 - Gas Exchange and Hypoxia and the V/Q section of 03 - Lung Physiology - Ventilation.</em> Map each lesion to what it does to ventilation, perfusion or the barrier:</p><ul><li><strong>Occluding mucous plug &ndash; shunt</strong>: a plug <em>completely</em> occluding a mainstem bronchus leaves perfused lung with no ventilation (V/Q = 0). The lecture's partial mucous plugs only lower V/Q; total occlusion is a true shunt that 100% O2 will not correct.</li><li><strong>Pulmonary embolism &ndash; V/Q mismatch</strong>: PE leaves lung ventilated but not perfused, i.e. dead space (V/Q &rarr; &infin;).</li><li><strong>Narcotics &ndash; hypoventilation</strong>: narcotics suppress respiratory drive; PaCO2 rises and the A&ndash;a gradient stays normal.</li><li><strong>Interstitial fibrosis &ndash; diffusion impairment</strong>: fibrosis thickens the blood&ndash;gas barrier (Fick's law), with &darr; DLCO.</li></ul>",
+  "note": "answer key A-ii, B-i, C-iii, D-iv"
+ },
+ {
+  "qid": "resp-w6-new-q8-8",
+  "bank": "pom1/data/questions/resp.json",
+  "skip": "single-best-answer MCQ"
+ },
+ {
+  "qid": "resp-w6-new-q13-13",
+  "bank": "pom1/data/questions/resp.json",
+  "stem": "<p>Match the muscle of the larynx with its function.</p>",
+  "pairs": {
+   "leftLabel": "Muscle",
+   "rightLabel": "Function",
+   "items": [
+    {
+     "left": "Cricothyroid muscle",
+     "right": "Lengthens the vocal cords"
+    },
+    {
+     "left": "Vocalis muscle",
+     "right": "Shortens the vocal cords"
+    },
+    {
+     "left": "Posterior cricoarytenoid muscle",
+     "right": "Abducts the vocal cords"
+    },
+    {
+     "left": "Lateral cricoarytenoid muscle",
+     "right": "Pivot-adducts the vocal cords"
+    },
+    {
+     "left": "Interarytenoid muscle",
+     "right": "Translational-adducts the vocal cords"
+    },
+    {
+     "left": "Aryepiglottic muscle",
+     "right": "Pulls epiglottis down"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Muscle</th><th>Function</th></tr></thead><tbody><tr><td>Cricothyroid muscle</td><td>Lengthens the vocal cords</td></tr><tr><td>Vocalis muscle</td><td>Shortens the vocal cords</td></tr><tr><td>Posterior cricoarytenoid muscle</td><td>Abducts the vocal cords</td></tr><tr><td>Lateral cricoarytenoid muscle</td><td>Pivot-adducts the vocal cords</td></tr><tr><td>Interarytenoid muscle</td><td>Translational-adducts the vocal cords</td></tr><tr><td>Aryepiglottic muscle</td><td>Pulls epiglottis down</td></tr></tbody></table><p><em>From 05 - Anatomy of the Upper Respiratory System.</em> Each muscle acts on either the cricothyroid joint (pitch) or the cricoarytenoid joint (opening and closing):</p><ul><li><strong>Cricothyroid</strong>: cricothyroid tilts the cricothyroid joint to <strong>lengthen</strong> the cords (&uarr; pitch). It is the only one supplied by the external laryngeal nerve.</li><li><strong>Vocalis</strong>: vocalis/thyroarytenoid <strong>shorten</strong> the cords (&darr; pitch).</li><li><strong>Posterior cricoarytenoid</strong>: posterior cricoarytenoid rotates the vocal processes laterally. It is the <strong>only abductor</strong>.</li><li><strong>Lateral cricoarytenoid</strong>: lateral cricoarytenoid rotates them medially, a <strong>pivot</strong> adduction.</li><li><strong>Interarytenoid</strong>: interarytenoid slides the arytenoids together, a <strong>translational</strong> adduction synergistic with the lateral cricoarytenoid.</li><li><strong>Aryepiglottic</strong>: aryepiglottic pulls the epiglottis down to close the inlet in swallowing.</li></ul>",
+  "note": "answer key A-iv, B-v, C-iii, D-ii, E-i, F-vi"
+ },
+ {
+  "qid": "resp-w6-new-q14-14",
+  "bank": "pom1/data/questions/resp.json",
+  "skip": "single-best-answer MCQ"
+ },
+ {
+  "qid": "resp-w7-new-q2-2",
+  "bank": "pom1/data/questions/resp.json",
+  "skip": "single-best-answer MCQ"
+ },
+ {
+  "qid": "resp-wb-resp0-q13",
+  "bank": "pom1/data/questions/resp.json",
+  "skip": "single-best-answer MCQ with options inline in the stem (FEV1/FVC); mislabelled kind matching"
+ },
+ {
+  "qid": "gi-w10-module-q1-1",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Match the correct structure to the number on the diagram below.</p><figure><img loading=\"lazy\" src=\"assets/figures/7a17502f6c56.jpg\" alt=\"Figure from the question bank, page 5\"></figure>",
+  "pairs": {
+   "leftLabel": "Number on diagram",
+   "rightLabel": "Structure",
+   "items": [
+    {
+     "left": "Label 1",
+     "right": "Mouth"
+    },
+    {
+     "left": "Label 2",
+     "right": "Esophagus"
+    },
+    {
+     "left": "Label 3",
+     "right": "Liver"
+    },
+    {
+     "left": "Label 4",
+     "right": "Gall bladder"
+    },
+    {
+     "left": "Label 5",
+     "right": "Duodenum"
+    },
+    {
+     "left": "Label 6",
+     "right": "Ascending colon"
+    },
+    {
+     "left": "Label 7",
+     "right": "Cecum"
+    },
+    {
+     "left": "Label 8",
+     "right": "Descending colon"
+    },
+    {
+     "left": "Label 9",
+     "right": "Rectum"
+    },
+    {
+     "left": "Label 10",
+     "right": "Stomach"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Number on diagram</th><th>Structure</th></tr></thead><tbody><tr><td>Label 1</td><td>Mouth</td></tr><tr><td>Label 2</td><td>Esophagus</td></tr><tr><td>Label 3</td><td>Liver</td></tr><tr><td>Label 4</td><td>Gall bladder</td></tr><tr><td>Label 5</td><td>Duodenum</td></tr><tr><td>Label 6</td><td>Ascending colon</td></tr><tr><td>Label 7</td><td>Cecum</td></tr><tr><td>Label 8</td><td>Descending colon</td></tr><tr><td>Label 9</td><td>Rectum</td></tr><tr><td>Label 10</td><td>Stomach</td></tr></tbody></table><p><em>From 01 - Overview of the GI Tract.</em> Follow food down the tract: <strong>mouth (1)</strong>, where mechanical digestion and salivary starch digestion begin; <strong>esophagus (2)</strong>, between the UES and LES; <strong>stomach (10)</strong>, the main site of digestion, behind the pyloric sphincter; then <strong>duodenum (5)</strong>, the first part of the small intestine. The accessory organs sit in the right upper quadrant: <strong>liver (3)</strong> with the <strong>gallbladder (4)</strong> tucked beneath it. The colon then runs from the <strong>cecum (7)</strong> in the right lower quadrant, past the ileocecal sphincter, up as the <strong>ascending colon (6)</strong>, down the left as the <strong>descending colon (8)</strong>, and ends at the <strong>rectum (9)</strong> before the anal sphincters.</p>",
+  "note": "answer key 1-H ... 10-F mapped through the options (numbers are the figure's labels)"
+ },
+ {
+  "qid": "gi-w10-module-q2-2",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Match the GI tract components with their main functions.</p>",
+  "pairs": {
+   "leftLabel": "GI tract component",
+   "rightLabel": "Main function",
+   "items": [
+    {
+     "left": "Salivary glands",
+     "right": "Secretion of saliva, which contains water, electrolytes, mucus and digestive enzymes"
+    },
+    {
+     "left": "Mouth and esophagus",
+     "right": "Chewing, mixing of food and initial digestion of starch"
+    },
+    {
+     "left": "Stomach",
+     "right": "Churning, production and secretion of gastric juice (acid), initial digestion of proteins"
+    },
+    {
+     "left": "Small intestine",
+     "right": "Absorption of water & nutrients, digestion"
+    },
+    {
+     "left": "Large intestine",
+     "right": "Absorption of water and electrolytes, formation and storage of feces until defecation"
+    },
+    {
+     "left": "Liver and gall bladder",
+     "right": "Production and storage of bile"
+    },
+    {
+     "left": "Pancreas",
+     "right": "Production of enzymes and bicarbonate"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>GI tract component</th><th>Main function</th></tr></thead><tbody><tr><td>Salivary glands</td><td>Secretion of saliva, which contains water, electrolytes, mucus and digestive enzymes</td></tr><tr><td>Mouth and esophagus</td><td>Chewing, mixing of food and initial digestion of starch</td></tr><tr><td>Stomach</td><td>Churning, production and secretion of gastric juice (acid), initial digestion of proteins</td></tr><tr><td>Small intestine</td><td>Absorption of water &amp; nutrients, digestion</td></tr><tr><td>Large intestine</td><td>Absorption of water and electrolytes, formation and storage of feces until defecation</td></tr><tr><td>Liver and gall bladder</td><td>Production and storage of bile</td></tr><tr><td>Pancreas</td><td>Production of enzymes and bicarbonate</td></tr></tbody></table><p><em>From 01 - Overview of the GI Tract and 10 - GI Secretion.</em> Each organ's job follows from what it adds or removes:</p><ul><li><strong>Salivary glands = saliva with water, electrolytes, mucus and enzymes</strong>: the secretion itself.</li><li><strong>Mouth and esophagus = chewing, mixing and initial starch digestion</strong>: salivary amylase acts during chewing.</li><li><strong>Stomach = churning, acid secretion and initial protein digestion</strong>: HCl plus pepsin.</li><li><strong>Small intestine = absorption of nutrients and water, and digestion</strong>: villi and microvilli make it the main absorptive site.</li><li><strong>Large intestine = water and electrolyte absorption, and forming and storing feces</strong>.</li><li><strong>Liver and gallbladder = producing and storing bile</strong>.</li><li><strong>Pancreas = enzymes and bicarbonate</strong>: bicarbonate neutralises acidic chyme.</li></ul>",
+  "note": "answer key A-v, B-iii, C-iv, D-i, E-vi, F-vii, G-ii"
+ },
+ {
+  "qid": "gi-w10-module-q4-4",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Match the GI hormone or molecule with its corresponding function in the GI tract:</p>",
+  "pairs": {
+   "leftLabel": "Hormone or molecule",
+   "rightLabel": "Function",
+   "items": [
+    {
+     "left": "Gastrin",
+     "right": "Stimulates gastric acid secretion"
+    },
+    {
+     "left": "Serotonin",
+     "right": "Stimulates motility, secretion and mediates nociception in the GI tract"
+    },
+    {
+     "left": "CCK",
+     "right": "Inhibits gastric emptying"
+    },
+    {
+     "left": "Pepsin",
+     "right": "Promotes the breakdown of proteins"
+    },
+    {
+     "left": "Somatostatin",
+     "right": "Inhibition of gastric acid secretion"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Hormone or molecule</th><th>Function</th></tr></thead><tbody><tr><td>Gastrin</td><td>Stimulates gastric acid secretion</td></tr><tr><td>Serotonin</td><td>Stimulates motility, secretion and mediates nociception in the GI tract</td></tr><tr><td>CCK</td><td>Inhibits gastric emptying</td></tr><tr><td>Pepsin</td><td>Promotes the breakdown of proteins</td></tr><tr><td>Somatostatin</td><td>Inhibition of gastric acid secretion</td></tr></tbody></table><p><em>From 01 - Overview of the GI Tract and 10 - GI Secretion.</em> Match each molecule by its signature action:</p><ul><li><strong>Serotonin = stimulates motility and secretion, and mediates nociception</strong>: released by enteroendocrine cells on distension; it is also the pain signal from a stretched gut.</li><li><strong>Gastrin = stimulates gastric acid</strong>: from G cells, acting on parietal and ECL cells via CCK2 receptors.</li><li><strong>Somatostatin = inhibits gastric acid</strong>: from D cells when pH falls below 3.</li><li><strong>CCK = inhibits gastric emptying</strong>: released by duodenal I cells in response to fat.</li><li><strong>Pepsin = breaks down proteins</strong>: activated from chief-cell pepsinogen by HCl.</li></ul>",
+  "note": "answer key A-ii, B-i, C-iv, D-v, E-iii"
+ },
+ {
+  "qid": "gi-w10-module-q15-15",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Match the type of contraction with its corresponding function in the large intestine.</p>",
+  "pairs": {
+   "leftLabel": "Type of contraction",
+   "rightLabel": "Function",
+   "items": [
+    {
+     "left": "Haustral contraction",
+     "right": "Absorption of water and electrolytes"
+    },
+    {
+     "left": "Tonic contraction of the ileocecal valve",
+     "right": "Prevents bacterial overgrowth in the small intestine"
+    },
+    {
+     "left": "Tonic contraction of the external anal sphincter",
+     "right": "Allows for the voluntary control of the defecation reflex"
+    },
+    {
+     "left": "Mass movement",
+     "right": "Sustained peristaltic contraction that facilitates the excretion of feces"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Type of contraction</th><th>Function</th></tr></thead><tbody><tr><td>Haustral contraction</td><td>Absorption of water and electrolytes</td></tr><tr><td>Tonic contraction of the ileocecal valve</td><td>Prevents bacterial overgrowth in the small intestine</td></tr><tr><td>Tonic contraction of the external anal sphincter</td><td>Allows for the voluntary control of the defecation reflex</td></tr><tr><td>Mass movement</td><td>Sustained peristaltic contraction that facilitates the excretion of feces</td></tr></tbody></table><p><em>From 02 - Gastrointestinal Motility.</em> Each colonic contraction pattern has one job:</p><ul><li><strong>Haustral contraction = absorption of water and electrolytes</strong>: a segmentation-type squeeze of the waste bolus, mainly in the ascending colon, that wrings out water.</li><li><strong>Tonic contraction of the ileocecal valve = preventing bacterial overgrowth in the small intestine</strong>: like every sphincter it is tonically closed, stopping bacteria-laden colonic contents refluxing into the relatively sterile ileum.</li><li><strong>Tonic contraction of the external anal sphincter = voluntary control of defecation</strong>: it is striated muscle, so relaxing it is a learned, voluntary act.</li><li><strong>Mass movement = sustained peristalsis that expels feces</strong>: 1-3 large pushes a day toward the rectum, triggered by the gastrocolic reflex after a meal.</li></ul>",
+  "note": "answer key A-i, B-iii, C-iv, D-ii"
+ },
+ {
+  "qid": "gi-w10-module-q17-17",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Match the correct embryological gut tube structure with its blood supply:</p>",
+  "pairs": {
+   "leftLabel": "Gut tube division",
+   "rightLabel": "Blood supply",
+   "items": [
+    {
+     "left": "Foregut",
+     "right": "Celiac trunk"
+    },
+    {
+     "left": "Midgut",
+     "right": "Superior mesenteric artery"
+    },
+    {
+     "left": "Hindgut",
+     "right": "Inferior mesenteric artery"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Gut tube division</th><th>Blood supply</th></tr></thead><tbody><tr><td>Foregut</td><td>Celiac trunk</td></tr><tr><td>Midgut</td><td>Superior mesenteric artery</td></tr><tr><td>Hindgut</td><td>Inferior mesenteric artery</td></tr></tbody></table><p><em>From 05 - Development of the GI Tract.</em> Each division of the gut tube carries its own artery through the dorsal mesentery:</p><ul><li><strong>Celiac trunk = foregut</strong>: esophagus to the proximal duodenum, plus the liver, gallbladder and pancreas.</li><li><strong>SMA = midgut</strong>: distal duodenum to the proximal two-thirds of the transverse colon. The midgut loop rotates around the SMA during physiologic herniation.</li><li><strong>IMA = hindgut</strong>: distal third of the transverse colon to the upper anal canal. Its superior rectal branch supplies the rectum.</li></ul><p>This matters clinically: the appendix (midgut) refers pain to the umbilicus, and the sigmoid (hindgut) refers it suprapubically.</p>",
+  "note": "answer key A-i, B-iii, C-ii"
+ },
+ {
+  "qid": "gi-w10-module-q18-18",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Match the fully developed structure with the embryological structure it developed from</p>",
+  "pairs": {
+   "leftLabel": "Developed structure",
+   "rightLabel": "Embryological origin",
+   "items": [
+    {
+     "left": "Duodenum",
+     "right": "Foregut tube"
+    },
+    {
+     "left": "Greater omentum",
+     "right": "Dorsal mesentery"
+    },
+    {
+     "left": "Hepatogastric ligament",
+     "right": "Ventral mesentery"
+    },
+    {
+     "left": "Stomach",
+     "right": "Foregut tube"
+    },
+    {
+     "left": "Pancreas",
+     "right": "Foregut tube"
+    },
+    {
+     "left": "Bile duct",
+     "right": "Foregut tube"
+    },
+    {
+     "left": "Liver",
+     "right": "Foregut tube"
+    },
+    {
+     "left": "Falciform ligament",
+     "right": "Ventral mesentery"
+    },
+    {
+     "left": "Hepatoduodenal ligament",
+     "right": "Ventral mesentery"
+    },
+    {
+     "left": "Gallbladder",
+     "right": "Foregut tube"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Developed structure</th><th>Embryological origin</th></tr></thead><tbody><tr><td>Duodenum</td><td>Foregut tube</td></tr><tr><td>Greater omentum</td><td>Dorsal mesentery</td></tr><tr><td>Hepatogastric ligament</td><td>Ventral mesentery</td></tr><tr><td>Stomach</td><td>Foregut tube</td></tr><tr><td>Pancreas</td><td>Foregut tube</td></tr><tr><td>Bile duct</td><td>Foregut tube</td></tr><tr><td>Liver</td><td>Foregut tube</td></tr><tr><td>Falciform ligament</td><td>Ventral mesentery</td></tr><tr><td>Hepatoduodenal ligament</td><td>Ventral mesentery</td></tr><tr><td>Gallbladder</td><td>Foregut tube</td></tr></tbody></table><p><em>From 05 - Development of the GI Tract.</em> Sort each structure by what it grows from:</p><ul><li><strong>Foregut tube</strong>: the organs themselves. The duodenum (the first part is foregut), stomach, pancreas (dorsal and ventral buds off the duodenal endoderm), bile duct, liver and gallbladder, which all come from the hepatic diverticulum.</li><li><strong>Ventral mesentery</strong>: the liver grows into it, and it splits into the falciform ligament anterior to the liver and the lesser omentum behind it, which comprises the hepatogastric and hepatoduodenal ligaments.</li><li><strong>Dorsal mesentery</strong>: as the stomach rotates it elongates, folds down four layers thick and fuses into the greater omentum.</li></ul><p>The trap is the liver: it develops <em>within</em> the ventral mesentery, but it is a foregut outgrowth, not the mesentery itself.</p>",
+  "note": "answer key A-i, B-iii, C-ii, D-i, E-i, F-i, G-i, H-ii, I-ii, J-i (J = Gallbladder, from the garbled option J)"
+ },
+ {
+  "qid": "gi-w10-module-q25-25",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Match the structure with the correct fold that it lies within on the internal aspect of the anterior abdominal wall.</p>",
+  "pairs": {
+   "leftLabel": "Structure",
+   "rightLabel": "Fold",
+   "items": [
+    {
+     "left": "Obliterated umbilical artery",
+     "right": "Medial umbilical fold"
+    },
+    {
+     "left": "Inferior epigastric vessels",
+     "right": "Lateral umbilical fold"
+    },
+    {
+     "left": "Obliterated urachus",
+     "right": "Median umbilical fold"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Structure</th><th>Fold</th></tr></thead><tbody><tr><td>Obliterated umbilical artery</td><td>Medial umbilical fold</td></tr><tr><td>Inferior epigastric vessels</td><td>Lateral umbilical fold</td></tr><tr><td>Obliterated urachus</td><td>Median umbilical fold</td></tr></tbody></table><p>All of these structures head superiorly towards the umbilicus. The only functioning structure is the inferior epigastric vessels found within the lateral umbilical fold. These vessels course superiorly to anastomose with the superior epigastric vessels. The other two structures are embryological remnants. In the direct midline, the umbilical ligament (obliterated urachus) forms the median umbilical fold. The urachus, was the developmental connection from the bladder to the umbilicus in the fetus, which was originally developed from the allantois. The obliterated umbilical arteries create the medial umbilical fold, and when they were patent, during development, they carried deoxygenated blood from the fetus to the placenta.</p>",
+  "note": "answer key A-ii, B-iii, C-i"
+ },
+ {
+  "qid": "gi-w10-module-q28-28",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Match the following indication with the modality that you should choose for INITIAL assessment.</p>",
+  "pairs": {
+   "leftLabel": "Indication",
+   "rightLabel": "Initial imaging modality",
+   "items": [
+    {
+     "left": "Bowel perforation",
+     "right": "X-ray/radiography"
+    },
+    {
+     "left": "Biliary colic/cholecystitis",
+     "right": "Ultrasound"
+    },
+    {
+     "left": "Colonic volvulus",
+     "right": "X-ray/radiography"
+    },
+    {
+     "left": "Appendicitis in 10 year old",
+     "right": "Ultrasound"
+    },
+    {
+     "left": "70 year old w/ abdominal pain and weight loss",
+     "right": "CT"
+    },
+    {
+     "left": "Diverticulitis",
+     "right": "CT"
+    },
+    {
+     "left": "Post-operative abscess",
+     "right": "CT"
+    },
+    {
+     "left": "Liver cirrhosis",
+     "right": "CT"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Indication</th><th>Initial imaging modality</th></tr></thead><tbody><tr><td>Bowel perforation</td><td>X-ray/radiography</td></tr><tr><td>Biliary colic/cholecystitis</td><td>Ultrasound</td></tr><tr><td>Colonic volvulus</td><td>X-ray/radiography</td></tr><tr><td>Appendicitis in 10 year old</td><td>Ultrasound</td></tr><tr><td>70 year old w/ abdominal pain and weight loss</td><td>CT</td></tr><tr><td>Diverticulitis</td><td>CT</td></tr><tr><td>Post-operative abscess</td><td>CT</td></tr><tr><td>Liver cirrhosis</td><td>CT</td></tr></tbody></table><p><em>From 07 - GI Imaging.</em> The lecture ends with a table of initial investigations that maps almost one to one onto this question:</p><ul><li><strong>Ultrasound</strong>: appendicitis in a 10-year-old avoids radiation in a child, and biliary colic or cholecystitis is a fluid-filled structure.</li><li><strong>X-ray</strong>: bowel perforation (free air under the diaphragm on the upright view) and volvulus, because the need is a quick look at the gas pattern.</li><li><strong>MRI</strong>: nothing. It is rarely the initial modality.</li><li><strong>CT</strong>: diverticulitis, a 70-year-old with pain and weight loss (cancer imaging), post-operative abscess, and cirrhosis.</li></ul>",
+  "note": "answer key i-B,D; ii-A,C; iv-E,F,G,H (each indication has exactly one modality)"
+ },
+ {
+  "qid": "gi-w10-module-q29-29",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Match each feature to the correct structure.</p>",
+  "pairs": {
+   "leftLabel": "Feature",
+   "rightLabel": "Structure",
+   "items": [
+    {
+     "left": "Thick interrupted mucosal folds",
+     "right": "Colon"
+    },
+    {
+     "left": "Often contain fecal material",
+     "right": "Colon"
+    },
+    {
+     "left": "Normal diameter <3 cm",
+     "right": "Small bowel"
+    },
+    {
+     "left": "Located centrally within the abdomen",
+     "right": "Small bowel"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Feature</th><th>Structure</th></tr></thead><tbody><tr><td>Thick interrupted mucosal folds</td><td>Colon</td></tr><tr><td>Often contain fecal material</td><td>Colon</td></tr><tr><td>Normal diameter &lt;3 cm</td><td>Small bowel</td></tr><tr><td>Located centrally within the abdomen</td><td>Small bowel</td></tr></tbody></table><p><em>From 07 - GI Imaging.</em> The lecture's small-versus-large-bowel table has four discriminators on plain film:</p><ul><li><strong>Small bowel</strong>: sits <strong>centrally</strong>, with a normal diameter under <strong>3 cm</strong>. Its folds, the plicae circulares, are continuous and cross the whole lumen, and it rarely contains feces.</li><li><strong>Colon</strong>: forms a peripheral picture frame. Its folds are the <strong>thick, interrupted haustra</strong> that do not span the lumen, it <strong>usually contains fecal material</strong>, and it runs up to 6 cm, or 9 cm at the cecum.</li></ul><p>Learn the numbers as a 3-6-9 rule: small bowel 3, colon 6, cecum 9.</p>",
+  "note": "answer key i-C,D; ii-A,B"
+ },
+ {
+  "qid": "gi-w10-module-q31-31",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Match the structure with the correct label on the celiac angiogram.</p><figure><img loading=\"lazy\" src=\"assets/figures/c19c657ad5a9.jpg\" alt=\"Figure from the question bank, page 13\"></figure>",
+  "pairs": {
+   "leftLabel": "Label",
+   "rightLabel": "Artery",
+   "items": [
+    {
+     "left": "Label A",
+     "right": "Gastroduodenal"
+    },
+    {
+     "left": "Label B",
+     "right": "Proper hepatic artery"
+    },
+    {
+     "left": "Label C",
+     "right": "Right gastric artery"
+    },
+    {
+     "left": "Label D",
+     "right": "Common hepatic artery"
+    },
+    {
+     "left": "Label E",
+     "right": "Left gastric artery"
+    },
+    {
+     "left": "Label F",
+     "right": "Splenic artery"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Label</th><th>Artery</th></tr></thead><tbody><tr><td>Label A</td><td>Gastroduodenal</td></tr><tr><td>Label B</td><td>Proper hepatic artery</td></tr><tr><td>Label C</td><td>Right gastric artery</td></tr><tr><td>Label D</td><td>Common hepatic artery</td></tr><tr><td>Label E</td><td>Left gastric artery</td></tr><tr><td>Label F</td><td>Splenic artery</td></tr></tbody></table>",
+  "note": "answer list A-F; the 'A.' was lost in extraction but the list runs B-F in order after Gastroduodenal"
+ },
+ {
+  "qid": "gi-w10-module-q70-70",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Match the potential side effect of antihistamines with the type receptor most likely associated with it.</p>",
+  "pairs": {
+   "leftLabel": "Side effect",
+   "rightLabel": "Receptor",
+   "items": [
+    {
+     "left": "Postural hypotension",
+     "right": "Antagonism of alpha-adrenergic receptors"
+    },
+    {
+     "left": "Sedation",
+     "right": "Antagonism of H1 receptors"
+    },
+    {
+     "left": "Dry mouth",
+     "right": "Antagonism of muscarinic receptors"
+    },
+    {
+     "left": "Weight gain",
+     "right": "Antagonism of serotonin receptors"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Side effect</th><th>Receptor</th></tr></thead><tbody><tr><td>Postural hypotension</td><td>Antagonism of alpha-adrenergic receptors</td></tr><tr><td>Sedation</td><td>Antagonism of H1 receptors</td></tr><tr><td>Dry mouth</td><td>Antagonism of muscarinic receptors</td></tr><tr><td>Weight gain</td><td>Antagonism of serotonin receptors</td></tr></tbody></table><p><em>From 08 - PUD, Dyspepsia, &amp; Acid-Lowering Drugs (the antiemetic chart).</em> First-generation antihistamines cross the blood-brain barrier and bind receptors beyond H1. Each off-target receptor explains one side effect:</p><ul><li><strong>Postural hypotension = alpha-adrenergic blockade</strong>: loss of the vasoconstriction that supports standing blood pressure, which also causes dizziness.</li><li><strong>Sedation = central H1 blockade</strong>: the on-target effect in the brain, which is why patients are warned about combining it with benzodiazepines.</li><li><strong>Dry mouth = muscarinic blockade</strong>, alongside urinary retention and sinus tachycardia.</li><li><strong>Weight gain = serotonin blockade</strong>, through increased appetite.</li></ul>",
+  "note": "answer key i-B, ii-A, iii-D, iv-C"
+ },
+ {
+  "qid": "gi-w10-module-q79-79",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Based on your understanding of the pharmacology of anti-emetic drugs, match the pharmacological options (drug class or agent) for each cause of vomiting listed below.</p>",
+  "pairs": {
+   "leftLabel": "Cause of vomiting",
+   "rightLabel": "Pharmacological options",
+   "items": [
+    {
+     "left": "Motion sickness",
+     "right": "Antihistamines, muscarinic receptor antagonists"
+    },
+    {
+     "left": "Gastroparesis-induced nausea and vomiting",
+     "right": "Metoclopramide, domperidone, prokinetics"
+    },
+    {
+     "left": "Post-operative nausea and vomiting (PONV)",
+     "right": "5HT3 antagonists (ondansetron, palonosetron), Antihistamines (dimenhydrinate, promethazine), D2 antagonists (domperidol, perphenazine)"
+    },
+    {
+     "left": "Drug-induced and cytotoxic-induced vomiting, chemotherapy induced nausea and vomiting (CINV)",
+     "right": "5HT3 antagonists (ondansetron), D2 antagonists, cannabinoid receptor agonists (nabilone), NK1 antagonists (aprepitant)"
+    },
+    {
+     "left": "Pregnancy-induced nausea and vomiting",
+     "right": "Pyridoxine (Vitamin B6), diclectin (Vitamin B6 plus doxylamine), Antihistamines (promethazine), D2 antagonists (metoclopramide, chlorpromazine, prochlorperazine), 5HT3 antagonists (ondansetron)"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Cause of vomiting</th><th>Pharmacological options</th></tr></thead><tbody><tr><td>Motion sickness</td><td>Antihistamines, muscarinic receptor antagonists</td></tr><tr><td>Gastroparesis-induced nausea and vomiting</td><td>Metoclopramide, domperidone, prokinetics</td></tr><tr><td>Post-operative nausea and vomiting (PONV)</td><td>5HT3 antagonists (ondansetron, palonosetron), Antihistamines (dimenhydrinate, promethazine), D2 antagonists (domperidol, perphenazine)</td></tr><tr><td>Drug-induced and cytotoxic-induced vomiting, chemotherapy induced nausea and vomiting (CINV)</td><td>5HT3 antagonists (ondansetron), D2 antagonists, cannabinoid receptor agonists (nabilone), NK1 antagonists (aprepitant)</td></tr><tr><td>Pregnancy-induced nausea and vomiting</td><td>Pyridoxine (Vitamin B6), diclectin (Vitamin B6 plus doxylamine), Antihistamines (promethazine), D2 antagonists (metoclopramide, chlorpromazine, prochlorperazine), 5HT3 antagonists (ondansetron)</td></tr></tbody></table><p><em>From 11 - Nausea, Vomiting, and Gastroparesis, and the antiemetic chart in 08.</em> Match the drug to the pathway that drives each cause:</p><ul><li><strong>Motion sickness</strong>: inner-ear afferents signal via H1 and muscarinic receptors, so antihistamines and anticholinergics.</li><li><strong>Gastroparesis</strong>: the problem is slow motility, so prokinetics such as metoclopramide and domperidone.</li><li><strong>PONV</strong>: the chart lists post-operative N/V under 5-HT3 antagonists, antihistamines and D2 antagonists (droperidol).</li><li><strong>Drug- and chemotherapy-induced</strong>: blood-borne emetics hit the CTZ and the solitary tract nucleus, so 5-HT3 and D2 antagonists, cannabinoids and NK1 antagonists.</li><li><strong>Pregnancy</strong>: doxylamine-pyridoxine (Diclectin) and B6 lead this list.</li></ul>",
+  "note": "answer key i-B, ii-D, iii-A, iv-E, v-C"
+ },
+ {
+  "qid": "gi-w11-module-q57-57",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Match the following agents with their specific pharmacological actions or properties.</p>",
+  "pairs": {
+   "leftLabel": "Agent",
+   "rightLabel": "Action or property",
+   "items": [
+    {
+     "left": "Eluxadoline",
+     "right": "Should be avoided in patients at high risk of developing pancreatitis"
+    },
+    {
+     "left": "Alosetron",
+     "right": "Antagonizes the 5HT3 receptors"
+    },
+    {
+     "left": "Bismuth subsalicylate",
+     "right": "Has antimicrobial actions"
+    },
+    {
+     "left": "Diphenoxylate",
+     "right": "Sold in combination with atropine to prevent overdosage"
+    },
+    {
+     "left": "Loperamide",
+     "right": "Increase tonus of anal sphincter"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Agent</th><th>Action or property</th></tr></thead><tbody><tr><td>Eluxadoline</td><td>Should be avoided in patients at high risk of developing pancreatitis</td></tr><tr><td>Alosetron</td><td>Antagonizes the 5HT3 receptors</td></tr><tr><td>Bismuth subsalicylate</td><td>Has antimicrobial actions</td></tr><tr><td>Diphenoxylate</td><td>Sold in combination with atropine to prevent overdosage</td></tr><tr><td>Loperamide</td><td>Increase tonus of anal sphincter</td></tr></tbody></table>",
+  "note": "answer key A-iii (the 'A' was lost in extraction; B-E present), B-iv, C-v, D-ii, E-i"
+ },
+ {
+  "qid": "gi-w12-module-q3-3",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Use the following structures and match them correctly to the diagram below.</p><figure><img loading=\"lazy\" src=\"assets/figures/2bce713cbcc5.jpg\" alt=\"Figure from the question bank, page 83\"></figure>",
+  "pairs": {
+   "leftLabel": "Label",
+   "rightLabel": "Structure",
+   "items": [
+    {
+     "left": "Label A",
+     "right": "Proper Hepatic Artery"
+    },
+    {
+     "left": "Label B",
+     "right": "Common Hepatic Artery"
+    },
+    {
+     "left": "Label C",
+     "right": "Celiac Trunk"
+    },
+    {
+     "left": "Label D",
+     "right": "Left gastric Artery"
+    },
+    {
+     "left": "Label E",
+     "right": "Splenic Artery"
+    },
+    {
+     "left": "Label F",
+     "right": "Pancreas"
+    },
+    {
+     "left": "Label G",
+     "right": "Stomach"
+    },
+    {
+     "left": "Label H",
+     "right": "Hepatic Portal Vein"
+    },
+    {
+     "left": "Label I",
+     "right": "Common Bile Duct"
+    },
+    {
+     "left": "Label J",
+     "right": "Gallbladder"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Label</th><th>Structure</th></tr></thead><tbody><tr><td>Label A</td><td>Proper Hepatic Artery</td></tr><tr><td>Label B</td><td>Common Hepatic Artery</td></tr><tr><td>Label C</td><td>Celiac Trunk</td></tr><tr><td>Label D</td><td>Left gastric Artery</td></tr><tr><td>Label E</td><td>Splenic Artery</td></tr><tr><td>Label F</td><td>Pancreas</td></tr><tr><td>Label G</td><td>Stomach</td></tr><tr><td>Label H</td><td>Hepatic Portal Vein</td></tr><tr><td>Label I</td><td>Common Bile Duct</td></tr><tr><td>Label J</td><td>Gallbladder</td></tr></tbody></table>",
+  "note": "answer key A-viii, B-vi, C-v, D-ix, E-ii, F-x, G-iii, H-iv, I-vii, J-i"
+ },
+ {
+  "qid": "gi-w10-meds2024-q19-19",
+  "bank": "pom1/data/questions/gi.json",
+  "skip": "single-best-answer MCQ (options also garbled: B-F are motility terms)"
+ },
+ {
+  "qid": "gi-w10-meds2024-q25-25",
+  "bank": "pom1/data/questions/gi.json",
+  "skip": "single-best-answer MCQ"
+ },
+ {
+  "qid": "gi-wb-gi0-q107",
+  "bank": "pom1/data/questions/gi.json",
+  "stem": "<p>Match each of the following to either ALT &gt; AST or AST &gt; ALT.</p>",
+  "pairs": {
+   "leftLabel": "Condition",
+   "rightLabel": "Enzyme pattern",
+   "items": [
+    {
+     "left": "NAFLD",
+     "right": "ALT > AST"
+    },
+    {
+     "left": "Acute Budd-Chiari syndrome",
+     "right": "AST > ALT"
+    },
+    {
+     "left": "Alcoholic liver disease",
+     "right": "AST > ALT"
+    },
+    {
+     "left": "Viral hepatitis",
+     "right": "ALT > AST"
+    },
+    {
+     "left": "Celiac disease",
+     "right": "ALT > AST"
+    },
+    {
+     "left": "Ischemic hepatitis",
+     "right": "AST > ALT"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Condition</th><th>Enzyme pattern</th></tr></thead><tbody><tr><td>NAFLD</td><td>ALT &gt; AST</td></tr><tr><td>Acute Budd-Chiari syndrome</td><td>AST &gt; ALT</td></tr><tr><td>Alcoholic liver disease</td><td>AST &gt; ALT</td></tr><tr><td>Viral hepatitis</td><td>ALT &gt; AST</td></tr><tr><td>Celiac disease</td><td>ALT &gt; AST</td></tr><tr><td>Ischemic hepatitis</td><td>AST &gt; ALT</td></tr></tbody></table><p><em>From 03 - Approach to Abnormal Liver Enzymes.</em> AST is found outside the liver (muscle, red cells, brain) and falls in mitochondria-heavy, <strong>alcoholic, ischemic or vascular injury</strong>; ALT is the more liver-specific enzyme and dominates in most <strong>inflammatory or metabolic hepatocellular injury</strong>. The lecture's lists sort each item:</p><ul><li><strong>NAFLD = ALT &gt; AST</strong>: steatosis and NASH are ALT-predominant.</li><li><strong>Acute Budd-Chiari = AST &gt; ALT</strong>: hepatic venous outflow obstruction behaves like ischemic or congestive injury.</li><li><strong>Alcoholic liver disease = AST &gt; ALT</strong>: classically at 2:1 or more.</li><li><strong>Viral hepatitis = ALT &gt; AST</strong>: acute or chronic.</li><li><strong>Celiac disease = ALT &gt; AST</strong>: a systemic cause of mild ALT elevation.</li><li><strong>Ischemic hepatitis = AST &gt; ALT</strong>, grouped with congestive hepatopathy.</li></ul>",
+  "note": "answer prose key (i lost as 'I.') A, ii B, iii B, iv A, v A, vi B; i=A confirmed by the explanation's bullets"
+ },
+ {
+  "qid": "gu-w16-module-q35-35",
+  "bank": "pom1/data/questions/gu.json",
+  "stem": "<p>Match the case scenario to the next most appropriate imaging study</p>",
+  "pairs": {
+   "leftLabel": "Case scenario",
+   "rightLabel": "Next imaging study",
+   "items": [
+    {
+     "left": "A 2 year old boy, uncircumcised with 2 febrile UTI",
+     "right": "VCUG"
+    },
+    {
+     "left": "A 3 year old female with grade 4 VUR on the left and over 5 febrile UTIs",
+     "right": "DMSA scan"
+    },
+    {
+     "left": "A 5 year old female with her first febrile UTI",
+     "right": "Renal bladder ultrasound"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Case scenario</th><th>Next imaging study</th></tr></thead><tbody><tr><td>A 2 year old boy, uncircumcised with 2 febrile UTI</td><td>VCUG</td></tr><tr><td>A 3 year old female with grade 4 VUR on the left and over 5 febrile UTIs</td><td>DMSA scan</td></tr><tr><td>A 5 year old female with her first febrile UTI</td><td>Renal bladder ultrasound</td></tr></tbody></table><p>DMSA scan is reserved for children with many febrile UTIs. The indications for a VCUG is two febrile UTI. One febrile UTI, especially in a female, needs an ultrasound first and if abnormal can perform a VCUG.</p>",
+  "note": "answer key (A label lost in extraction) A-III, B-II, C-I; explanation confirms 2 febrile UTIs -> VCUG"
+ },
+ {
+  "qid": "gu-w15-meds2024-q15-15",
+  "bank": "pom1/data/questions/gu.json",
+  "skip": "single-best-answer MCQ"
+ },
+ {
+  "qid": "gu-w15-new-q1-1",
+  "bank": "pom1/data/questions/gu.json",
+  "skip": "select-the-combination MCQ (roman-numeral options), not a matching task"
+ },
+ {
+  "qid": "gu-w15-new-q15-15",
+  "bank": "pom1/data/questions/gu.json",
+  "skip": "single-best-answer MCQ"
+ },
+ {
+  "qid": "gu-wb-gu0-q20",
+  "bank": "pom1/data/questions/gu.json",
+  "skip": "single-best-answer MCQ with options inline in the stem (anion gap); mislabelled kind matching"
+ },
+ {
+  "qid": "gu-wb-gu0-q21",
+  "bank": "pom1/data/questions/gu.json",
+  "skip": "single-best-answer MCQ with options inline in the stem (osmolar gap); mislabelled kind matching"
+ },
+ {
+  "qid": "gu-wb-gu0-q29",
+  "bank": "pom1/data/questions/gu.json",
+  "skip": "true/false question; mislabelled kind matching"
+ },
+ {
+  "qid": "gu-wb-gu0-q103",
+  "bank": "pom1/data/questions/gu.json",
+  "skip": "true/false question; mislabelled kind matching"
+ },
+ {
+  "qid": "gu-wb-gu0-q67",
+  "bank": "pom1/data/questions/gu.json",
+  "skip": "true/false question; mislabelled kind matching"
+ }
+]

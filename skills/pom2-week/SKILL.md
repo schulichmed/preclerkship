@@ -510,6 +510,10 @@ notes. This is the one unautomated step in the chain, so budget for it.
   newline), unlike `data/notes/*.json` which is `indent=1`.
 - The field list is in `pom2/README.md`. `keyed: false`, `unscorable: true` and
   `retired: true` carry real meaning, do not flatten them.
+- **A matching question ships as a dropdown grid, never as an MCQ over complete mappings**
+  ("1-W, 2-X, 3-Y") or as one question per item. Give it `kind: "pairing"` and a `pairs` object
+  (see `module-repro-Q2`), and add its spec to `tools/pairings/` so `tools/curated_pairings.py`
+  re-applies it after any re-export.
 - If `tools/questions_from_vault.py` exists by the time you read this, it replaces this stage and
   must run **before** `rosters_from_vault.py`, which borrows its week headings from the questions
   JSON.
