@@ -7,9 +7,10 @@ Purpose: the 2026-10-05 audit read questions against whole lecture notes, and
          lecture's deck on disk, the earlier audit's evidence quote(s), whether
          the quote's terms are on the slides, and which note section the quote
          falls in and that section's verdict from inherited_sections.py.
-         Questions whose evidence is off the slides, or falls in an inherited
-         section, are the shortlist a reader works against the deck and the
-         chart region.
+         Questions whose evidence is off the slides, reaches any inherited
+         section (a child as well as its parent), or sits in no section and
+         not in the chart region either, are the shortlist a reader works
+         against the deck and the chart region.
 Author:  Noor Sims
 Date:    2026-10-06
 Input:   pom2/data/questions/<block>.json; the earlier verdict rows
@@ -49,6 +50,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 EVIDENCE_AT = 0.5    # fraction of an evidence quote's terms that must be on the slides
 SECTION_AT = 0.6     # fraction of the quote's terms a section must hold to be where it falls
+CHART_AT = 0.6       # a quote no section holds passes only if this share of its terms is in the chart region
 
 # the handed-down families this pass reads; Schulich Reviews is left for a later pass
 FAMILIES = ("hipponotes", "workbook")
@@ -57,7 +59,6 @@ PREFILL = "{block}_slides.prefill.json"
 DUMP = "{block}_slides.txt"
 # verdict files the earlier reads wrote; the slides files this tool writes match neither
 EVIDENCE_GLOBS = ("*_w*.json", "*_refile*.json")
-UNUSABLE = ("(no usable", "(unreadable")
 
 
 def audit_dir() -> Path:
@@ -174,13 +175,19 @@ def note_from_record(note: Path, record: dict, files: list[Path],
     for s in result.flat():
         hit = by_line.get((s.line, s.heading)) or by_heading.get(s.heading)
         s.score, s.verdict = (hit["score"], hit["verdict"]) if hit else (None, "")
+        if not hit:
+            print(f"   heading not in the saved records, no verdict: {note.stem} / {s.heading}",
+                  file=sys.stderr)
     local = [p for p in note.parent.iterdir() if p.suffix.lower() in isx.DECK_SUFFIXES]
     pool = {p.name: p for p in files + local}
+    for n in record.get("decks") or []:
+        if n not in pool:
+            print(f"   deck in the saved records not on disk: {note.stem} / {n}", file=sys.stderr)
     result.decks = [pool[n] for n in record.get("decks") or [] if n in pool]
     return result
 
 
-def section_of(quote_terms: set[str], result: isx.NoteResult) -> tuple[str, str]:
+def section_of(quote_terms: set[str], result: isx.NoteResult) -> tuple[str, str, list[str]]:
     """The note section an evidence quote falls in.
 
     Parameters
@@ -192,19 +199,28 @@ def section_of(quote_terms: set[str], result: isx.NoteResult) -> tuple[str, str]
     Returns
     -------
     tuple
-        (heading, verdict) of the child or top section holding the largest
-        share of the quote's terms, if that share reaches SECTION_AT; else
-        ("", ""). On a tie a section with no children wins.
+        (heading, verdict, verdicts). ``verdicts`` lists the verdict of every
+        section holding at least SECTION_AT of the quote's terms. The heading
+        and verdict are the deepest such section's (a child over its parent,
+        whose text includes the child's), the larger share breaking a tie;
+        ("", "", []) when no section reaches SECTION_AT.
     """
-    best, hit = (("", ""), 0.0)
     if not quote_terms:
-        return best
+        return "", "", []
+    reach = []
     for s in result.flat():
         share = len(quote_terms & isx.terms(s.text)) / len(quote_terms)
-        deeper = s.level > 0 and s.children == []
-        if share > hit or (share == hit and deeper and share > 0):
-            best, hit = (s.heading, s.verdict), share
-    return best if hit >= SECTION_AT else ("", "")
+        if share >= SECTION_AT:
+            reach.append((s.level, share, s))
+    if not reach:
+        return "", "", []
+    best = max(reach, key=lambda t: (t[0], t[1]))[2]
+    return best.heading, best.verdict, [s.verdict for _level, _share, s in reach]
+
+
+def chart_share(quote_terms: set[str], chart: str) -> float:
+    """The share of a quote's terms found in a note's chart region."""
+    return len(quote_terms & isx.terms(chart)) / len(quote_terms) if quote_terms else 0.0
 
 
 def shortlist(block: str, records: list[dict] | None = None,
@@ -243,7 +259,7 @@ def shortlist(block: str, records: list[dict] | None = None,
         note, against, week = resolve_note(q)
         quotes = evidence.get(q["qid"], [])
         row = {"qid": q["qid"], "family": q["family"], "against": against, "week": week,
-               "deck": "", "chart": "", "evidence": quotes, "evidence_score": None,
+               "deck": "", "chart": "", "evidence": quotes, "evidence_score": None, "chart_share": None,
                "section": "", "section_verdict": "", "status": "NO-DECK",
                "stem": strip_html(q.get("stem")),
                "options": [f"{o['letter']}. {strip_html(o.get('html'))}" for o in q.get("options") or []],
@@ -262,7 +278,7 @@ def shortlist(block: str, records: list[dict] | None = None,
                 notes[note] = isx.audit_note(note, files, index)
         res = notes[note]
         row["chart"] = isx.split_note(note.read_text(encoding="utf-8", errors="replace")).chart
-        if not res.decks or any(u in res.deck_label for u in UNUSABLE):
+        if not res.decks:          # ``decks`` lists only the usable, scored decks
             out.append(row)
             continue
         try:
@@ -280,10 +296,16 @@ def shortlist(block: str, records: list[dict] | None = None,
             qt = isx.terms(quote)
             scores.append(len(qt & slide_terms) / len(qt) if qt else 0.0)
         row["evidence_score"] = max(scores) if scores else 0.0
-        heading, verdict = section_of(isx.terms(" ".join(quotes)), res) if quotes else ("", "")
+        quote_terms = isx.terms(" ".join(quotes))
+        heading, verdict, verdicts = section_of(quote_terms, res)
         row["section"], row["section_verdict"] = heading, verdict
+        row["chart_share"] = chart_share(quote_terms, row["chart"])
         off_slides = row["evidence_score"] < EVIDENCE_AT
-        row["status"] = "SHORTLIST" if (off_slides or verdict == "inherited") else "ok"
+        # a section the quote reaches that is inherited, or has no saved verdict, needs a read
+        doubtful = any(v in ("inherited", "") for v in verdicts)
+        # a quote no section holds is a paraphrase unless the slide-derived chart holds it
+        unplaced = not verdicts and row["chart_share"] < CHART_AT
+        row["status"] = "SHORTLIST" if (off_slides or doubtful or unplaced) else "ok"
         out.append(row)
     return out
 
@@ -301,7 +323,8 @@ def prefill(rows: list[dict]) -> list[dict]:
     list of dict
         Rows in the audit's shape plus ``slides``. ``ok`` rows are
         ``current`` with the first earlier evidence quote; ``NO-DECK`` and
-        ``NO-NOTE`` rows are ``current`` with the status as note;
+        ``NO-NOTE`` rows are ``current`` with note ``NO-DECK`` (a lecture
+        with no note cannot be checked against a deck either);
         ``SHORTLIST`` rows have an empty verdict and evidence for the reader
         to fill.
     """
@@ -314,7 +337,7 @@ def prefill(rows: list[dict]) -> list[dict]:
         elif r["status"] == "ok":
             out.append({**base, "verdict": "current", "slides": r["deck"], "evidence": first, "note": ""})
         else:
-            out.append({**base, "verdict": "current", "slides": "", "evidence": first, "note": r["status"]})
+            out.append({**base, "verdict": "current", "slides": "", "evidence": first, "note": "NO-DECK"})
     return [{k: row[k] for k in ("qid", "verdict", "against", "week", "slides", "evidence", "note")}
             for row in out]
 
@@ -340,7 +363,8 @@ def dump(rows: list[dict]) -> str:
         parts.append("\n".join([
             f"### {r['qid']}  [{r['family']}]  week {r['week']}  {r['against']}",
             f"deck: {r['deck']}",
-            f"earlier evidence (score {r['evidence_score']:.2f}; section: {r['section'] or '?'} {r['section_verdict']}):",
+            f"earlier evidence (score {r['evidence_score']:.2f}; section: {r['section'] or '?'} "
+            f"{r['section_verdict']}; chart {r['chart_share']:.2f}):",
             *[f"  - {e}" for e in r["evidence"]],
             f"stem: {r['stem']}",
             *[f"  {o}" for o in r["options"]],

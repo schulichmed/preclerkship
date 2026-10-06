@@ -77,7 +77,7 @@ def test_shortlist_picks_evidence_off_the_slides_or_in_an_inherited_section(worl
     by = {r["qid"]: r for r in rows}
     # live workbook and HippoNotes only: module, off-curriculum and reviews are left out
     assert set(by) == {"hippo-repro-Q1", "hippo-repro-Q2", "hippo-repro-Q3"}
-    assert by["hippo-repro-Q1"]["status"] == "ok" and by["hippo-repro-Q1"]["evidence_score"] >= ss.EVIDENCE_AT
+    assert by["hippo-repro-Q1"]["status"] != "NO-DECK" and by["hippo-repro-Q1"]["evidence_score"] >= ss.EVIDENCE_AT
     assert by["hippo-repro-Q2"]["status"] == "SHORTLIST"
     assert by["hippo-repro-Q2"]["section"] == "Neonatal Sepsis" and by["hippo-repro-Q2"]["section_verdict"] == "inherited"
 
@@ -164,6 +164,85 @@ def test_saved_records_read_each_deck_once(world, monkeypatch):
     monkeypatch.setattr(isx, "deck_pages", lambda path: calls.append(path.name) or list(SLIDES))
     ss.shortlist("repro", records=saved_records())
     assert calls == [DECK]
+
+
+def add_question(root, qid, quote, n="09", lecture="Approach to Neonatal Care"):
+    """Append a HippoNotes question to the bank with one earlier evidence quote."""
+    bank = root / "pom2/data/questions/repro.json"
+    qs = json.loads(bank.read_text(encoding="utf-8"))
+    qs.append(question(qid, lecture, n=n))
+    bank.write_text(json.dumps(qs), encoding="utf-8")
+    extra = root / "build/curriculum_audit/repro_w6b.json"
+    rows = json.loads(extra.read_text(encoding="utf-8")) if extra.exists() else []
+    rows.append({"qid": qid, "verdict": "current", "against": f"{n} - {lecture}", "week": 6,
+                 "evidence": quote, "note": ""})
+    extra.write_text(json.dumps(rows), encoding="utf-8")
+
+
+def slides_with(monkeypatch, *pages):
+    """The neonatal slides plus extra pages, so a quote's terms are on the deck."""
+    monkeypatch.setattr(isx, "deck_pages", lambda path: list(SLIDES) + list(pages))
+
+
+def test_quote_split_between_slides_parent_and_inherited_child_is_shortlisted(world, monkeypatch):
+    # "babies" and "care" are the parent's own text; the other three sit in the inherited child
+    quote = "babies care chorioamnionitis maternal streptococcus"
+    add_question(world, "hippo-repro-Q8", quote)
+    slides_with(monkeypatch, quote)
+    by = {r["qid"]: r for r in ss.shortlist("repro", records=saved_records())}
+    q8 = by["hippo-repro-Q8"]
+    assert q8["evidence_score"] >= ss.EVIDENCE_AT                  # on the deck as a bag of words
+    assert q8["section"] == "Neonatal Sepsis" and q8["section_verdict"] == "inherited"
+    assert q8["status"] == "SHORTLIST"
+
+
+def test_quote_in_no_section_passes_only_when_the_chart_holds_it(world, monkeypatch):
+    add_question(world, "hippo-repro-Q9", "every newborn kept pink, warm and sweet")
+    add_question(world, "hippo-repro-Q10", "phototherapy threshold kernicterus nomogram")
+    slides_with(monkeypatch, "newborn kept pink warm sweet",
+                "phototherapy threshold kernicterus nomogram")
+    by = {r["qid"]: r for r in ss.shortlist("repro", records=saved_records())}
+    assert by["hippo-repro-Q9"]["section"] == "" and by["hippo-repro-Q9"]["chart_share"] >= ss.CHART_AT
+    assert by["hippo-repro-Q9"]["status"] == "ok"
+    assert by["hippo-repro-Q10"]["section"] == "" and by["hippo-repro-Q10"]["chart_share"] < ss.CHART_AT
+    assert by["hippo-repro-Q10"]["status"] == "SHORTLIST"
+
+
+def test_section_missing_from_the_records_is_named_and_shortlisted(world, monkeypatch, capsys):
+    records = saved_records()
+    records[0]["sections"] = [s for s in records[0]["sections"] if s["heading"] != "Hypoglycemia"]
+    quote = "jittery irritable lethargic poor feeding intravenous dextrose"
+    add_question(world, "hippo-repro-Q11", quote)
+    slides_with(monkeypatch, quote)
+    by = {r["qid"]: r for r in ss.shortlist("repro", records=records)}
+    assert by["hippo-repro-Q11"]["section"] == "Hypoglycemia"
+    assert by["hippo-repro-Q11"]["status"] == "SHORTLIST"
+    assert "09 - Approach to Neonatal Care / Hypoglycemia" in capsys.readouterr().err
+
+
+def test_record_deck_not_on_disk_is_named(world, capsys):
+    records = saved_records()
+    records[0]["decks"] = ["gone.pdf", DECK]
+    by = {r["qid"]: r for r in ss.shortlist("repro", records=records)}
+    assert by["hippo-repro-Q1"]["deck"] == DECK and by["hippo-repro-Q1"]["status"] != "NO-DECK"
+    assert "gone.pdf" in capsys.readouterr().err
+
+
+def test_unusable_extra_deck_in_the_label_still_checks_the_good_deck(world):
+    records = saved_records()
+    records[0]["deck_label"] = f"{DECK} (no usable text: bad.pdf)"
+    by = {r["qid"]: r for r in ss.shortlist("repro", records=records)}
+    assert by["hippo-repro-Q1"]["deck"] == DECK
+    assert by["hippo-repro-Q1"]["status"] != "NO-DECK" and by["hippo-repro-Q1"]["evidence_score"] >= ss.EVIDENCE_AT
+
+
+def test_question_with_no_note_is_prefilled_no_deck(world):
+    add_question(world, "hippo-repro-Q12", "anything", n="99", lecture="Not A Note")
+    rows = ss.shortlist("repro")
+    q12 = next(r for r in rows if r["qid"] == "hippo-repro-Q12")
+    assert q12["status"] == "NO-NOTE"
+    row = next(r for r in ss.prefill(rows) if r["qid"] == "hippo-repro-Q12")
+    assert row["verdict"] == "current" and row["note"] == "NO-DECK" and row["slides"] == ""
 
 
 def test_load_records_missing_file_is_none(tmp_path):
