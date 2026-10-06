@@ -8,7 +8,8 @@ Purpose: the 2026-10-05 audit read questions against whole lecture notes, and
          the quote's terms are on the slides, and which note section the quote
          falls in and that section's verdict from inherited_sections.py.
          Questions whose evidence is off the slides, reaches any inherited
-         section (a child as well as its parent), or sits in no section and
+         section (a child as well as its parent) or has INHERITED_CHILD_AT of
+         its terms in one, or sits in no section and
          not in the chart region either, are the shortlist a reader works
          against the deck and the chart region.
 Author:  Noor Sims
@@ -50,7 +51,8 @@ ROOT = Path(__file__).resolve().parent.parent
 
 EVIDENCE_AT = 0.5    # fraction of an evidence quote's terms that must be on the slides
 SECTION_AT = 0.6     # fraction of the quote's terms a section must hold to be where it falls
-CHART_AT = 0.6       # a quote no section holds passes only if this share of its terms is in the chart region
+INHERITED_CHILD_AT = 0.4   # an inherited section holding this share of a quote sends it to a reader
+CHART_AT = 0.6      # a quote no section holds passes only if this share of its terms is in the chart region
 
 # the handed-down families this pass reads; Schulich Reviews is left for a later pass
 FAMILIES = ("hipponotes", "workbook")
@@ -218,6 +220,26 @@ def section_of(quote_terms: set[str], result: isx.NoteResult) -> tuple[str, str,
     return best.heading, best.verdict, [s.verdict for _level, _share, s in reach]
 
 
+def inherited_share(quote_terms: set[str], result: isx.NoteResult) -> float:
+    """The largest share of a quote's terms held by any ``inherited`` section.
+
+    Parameters
+    ----------
+    quote_terms : set of str
+    result : NoteResult
+        Sections with their text and verdict.
+
+    Returns
+    -------
+    float
+        0.0 for an empty quote or a note with no inherited section.
+    """
+    if not quote_terms:
+        return 0.0
+    return max((len(quote_terms & isx.terms(s.text)) / len(quote_terms)
+                for s in result.flat() if s.verdict == "inherited"), default=0.0)
+
+
 def chart_share(quote_terms: set[str], chart: str) -> float:
     """The share of a quote's terms found in a note's chart region."""
     return len(quote_terms & isx.terms(chart)) / len(quote_terms) if quote_terms else 0.0
@@ -260,6 +282,7 @@ def shortlist(block: str, records: list[dict] | None = None,
         quotes = evidence.get(q["qid"], [])
         row = {"qid": q["qid"], "family": q["family"], "against": against, "week": week,
                "deck": "", "chart": "", "evidence": quotes, "evidence_score": None, "chart_share": None,
+               "inherited_share": None,
                "section": "", "section_verdict": "", "status": "NO-DECK",
                "stem": strip_html(q.get("stem")),
                "options": [f"{o['letter']}. {strip_html(o.get('html'))}" for o in q.get("options") or []],
@@ -302,7 +325,9 @@ def shortlist(block: str, records: list[dict] | None = None,
         row["chart_share"] = chart_share(quote_terms, row["chart"])
         off_slides = row["evidence_score"] < EVIDENCE_AT
         # a section the quote reaches that is inherited, or has no saved verdict, needs a read
-        doubtful = any(v in ("inherited", "") for v in verdicts)
+        row["inherited_share"] = inherited_share(quote_terms, res)
+        doubtful = (any(v in ("inherited", "") for v in verdicts)
+                    or row["inherited_share"] >= INHERITED_CHILD_AT)
         # a quote no section holds is a paraphrase unless the slide-derived chart holds it
         unplaced = not verdicts and row["chart_share"] < CHART_AT
         row["status"] = "SHORTLIST" if (off_slides or doubtful or unplaced) else "ok"
