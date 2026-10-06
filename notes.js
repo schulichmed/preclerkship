@@ -663,8 +663,6 @@
     head.appendChild(el("p", "fam-meta",
       c.written ? c.written + " of " + c.all + " lectures" : "nothing written yet"));
     head.appendChild(el("h2", null, "Lecture notes"));
-    head.appendChild(el("p", "fam-key",
-      "Bolded + gold star = high-yield = showed up in modules, in-class, and Qbank"));
     /* the key to the objectives highlighter, on a block whose notes carry it */
     if (JSON.stringify(WEEKS).indexOf('class=\\"lo\\"') !== -1) {
       var key = el("p", "fam-key");
