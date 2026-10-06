@@ -152,3 +152,16 @@ def test_misfiled_wrong_case_lecture_is_refused(repo, capsys, monkeypatch):
     ca.apply_rows([row], checked="2026-10-06")
     assert (repo / "pom2/data/questions/repro.json").read_bytes() == before
     assert "hippo-repro-Q47" in capsys.readouterr().err
+
+
+def test_misfiled_against_unnumbered_note(repo):
+    """An In-Class note has no NN prefix; its review record carries n == "" and the whole stem."""
+    week5 = ca.LECTURE_NOTES / "02 - Repro" / "Week 5"
+    (week5 / "In-Class - Amenorrhea.md").write_text("# x")
+    row = {"qid": "hippo-repro-Q47", "verdict": "misfiled", "week": 5,
+           "against": "In-Class - Amenorrhea", "evidence": "", "note": ""}
+    ca.apply_rows([row], checked="2026-10-06")
+    q = bank(repo, "repro")[0]
+    assert q["week"] == 5
+    assert q["lecture"] == "In-Class - Amenorrhea"
+    assert q["review"] == [{"w": 5, "n": "", "t": "In-Class - Amenorrhea"}]

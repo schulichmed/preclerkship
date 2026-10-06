@@ -117,12 +117,16 @@ def vault_lecture(block: str, week: int, against: str) -> dict | None:
     week : int
         Course week.
     against : str
-        ``"11 - Approach to First Trimester Bleeding & Ultrasound"``.
+        The note's exact on-disk stem: ``"11 - Approach to First Trimester
+        Bleeding & Ultrasound"``, or an unnumbered one such as
+        ``"In-Class - Amenorrhea"``.
 
     Returns
     -------
     dict or None
-        ``{"w": week, "n": "11", "t": "Approach to ..."}``, or None when no note
+        ``{"w": week, "n": "11", "t": "Approach to ..."}`` for a numbered note,
+        ``{"w": week, "n": "", "t": "In-Class - Amenorrhea"}`` for an unnumbered
+        one (the shape review_lectures.roster() gives it), or None when no note
         of exactly that name exists under that week's folder.
 
     Notes
@@ -131,16 +135,16 @@ def vault_lecture(block: str, week: int, against: str) -> dict | None:
     vault sits on a case-insensitive drive, where a wrong-case title would pass
     and then fail every exact-spelling join downstream.
     """
-    m = re.match(r"^([\d.]+)\s*[-–]\s*(.+?)\s*$", against or "")
-    if not m:
-        return None
-    num, title = m.group(1), m.group(2)
+    stem = (against or "").strip()
     week_dir = LECTURE_NOTES / BLOCKS[block][0] / f"Week {week}"
-    if not week_dir.is_dir():
+    if not stem or stem == f"Week {week}" or not week_dir.is_dir():
         return None
-    if f"{num} - {title}.md" not in {p.name for p in week_dir.iterdir()}:
+    if f"{stem}.md" not in {p.name for p in week_dir.iterdir()}:
         return None
-    return {"w": week, "n": num, "t": title}
+    m = re.match(r"^([\d.]+)\s*[-–]\s*(.+?)$", stem)
+    if not m:
+        return {"w": week, "n": "", "t": stem}
+    return {"w": week, "n": m.group(1), "t": m.group(2)}
 
 
 def bank_path(block: str, course: str = "pom2") -> Path:
