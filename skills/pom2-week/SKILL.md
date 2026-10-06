@@ -173,8 +173,10 @@ what the deck covers is an upper year's notes, not this year's lecture. When a n
 longer than its slides, run `python3 tools/inherited_sections.py --block <slug> --note "<NN -
 Lecture>"` and read its table: a section marked `inherited` has no slide whose words it
 carries. Then `python3 tools/mark_inherited.py --block <slug> --note "<NN - Lecture>" --dry-run`,
-read the list, and the same without `--dry-run`. It puts a `> [!warning] Inherited` callout
-directly under each such heading, naming the deck, and nothing else. The section stays in the
+read the list against the deck, leave out any heading a slide teaches with
+`--leave-out "<NN - Lecture>: <heading>"`, and run the same without `--dry-run`. It puts a
+`> [!warning] Inherited` callout directly under each such heading, naming the deck, with a blank
+line after it where text or another callout follows, and nothing else. The section stays in the
 note as context, but a reader and Stage 4b both know not to count it as taught. Running either
 tool twice changes nothing. A lecture with no deck on disk comes back `no deck found` and its
 note is left as it is; name it in Stage 7 so she can export the deck from OneNote. *Observed
@@ -188,9 +190,8 @@ image-only or partial deck, a deck named in `DECKS` that is missing) and a secti
 `near-threshold` are read by a person against the deck before any callout goes in.
 `mark_inherited.py` never marks them on its own: it lists each one as `skipped:` with the reason.
 A short section can also come back `inherited` when its topic is plainly on a slide, because a
-few lines cannot hold a whole slide's wording. So read the `would mark` list against the deck
-too, and leave out any heading whose subject a slide teaches with
-`--leave-out "<NN - Lecture>: <heading>"`. *Observed 2026-10-06: the first
+few lines cannot hold a whole slide's wording. That is why the `would mark` list is read
+against the deck before the real run. *Observed 2026-10-06: the first
 dry run listed 88 headings to mark across endo and repro, and 49 of them had every word of the
 heading on a slide of their own deck, PALM-COEIN in Abnormal Uterine Bleeding and Cushing
 Syndrome in Adrenal Gland Disease among them. Only the neonatal note, read by hand, was marked.*

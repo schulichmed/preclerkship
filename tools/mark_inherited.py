@@ -15,7 +15,9 @@ Author:  Noor Sims
 Date:    2026-10-06
 Input:   the block's lecture notes and decks, as inherited_sections.py reads
          them, or the JSON it saved (``--sections``), which skips the decks
-Output:  the same notes with two lines inserted under each inherited heading;
+Output:  the same notes with two callout lines inserted under each inherited
+         heading, then a blank line when text or another callout follows, so
+         Markdown does not fold that into the warning;
          ``--dry-run`` prints what would change and writes nothing. Notes
          with no usable deck are never touched.
 
@@ -202,6 +204,29 @@ def already_marked(lines: list[str], at: int) -> bool:
     return False
 
 
+def gap(lines: list[str], after: int) -> list[str]:
+    """The blank line the callout needs before the line at ``after``, if any.
+
+    Parameters
+    ----------
+    lines : list of str
+        The note's lines, before the callout goes in.
+    after : int
+        Index of the line that will follow the callout.
+
+    Returns
+    -------
+    list of str
+        ``[""]`` when that line is text or another callout, which Markdown
+        would otherwise fold into the Inherited callout (lazy continuation);
+        ``[]`` when it is blank, a heading, or the end of the note.
+    """
+    if after >= len(lines):
+        return []
+    nxt = lines[after]
+    return [] if not nxt.strip() or isx.HEADING_RE.match(nxt) else [""]
+
+
 def mark_note(rec: dict, dry: bool, leave_out: set[str] = frozenset()) -> int:
     """Insert the callout under each markable heading of one note.
 
@@ -238,7 +263,7 @@ def mark_note(rec: dict, dry: bool, leave_out: set[str] = frozenset()) -> int:
         if dry:
             print(f"would mark {rec['note']}: {heading}")
         else:
-            lines[at + 1:at + 1] = callout(rec["deck_label"])
+            lines[at + 1:at + 1] = callout(rec["deck_label"]) + gap(lines, at + 1)
     if plan and not dry:
         with note.open("w", encoding="utf-8", newline="\n") as fh:
             fh.write("\n".join(lines))
@@ -281,7 +306,8 @@ def main() -> None:
     ap.add_argument("--sections", type=Path,
                     help="read verdicts from this inherited_sections.py --json output")
     ap.add_argument("--leave-out", action="append", default=[], metavar="HEADING",
-                    help="a heading a slide teaches; '<heading>' or '<note stem>: <heading>', repeatable")
+                    help="a heading a slide teaches, repeatable; '<note stem>: <heading>' for one note, "
+                         "a bare '<heading>' for every note of the block")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     mark(args.block, args.dry_run, args.note, args.sections, set(args.leave_out))

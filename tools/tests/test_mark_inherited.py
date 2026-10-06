@@ -29,8 +29,8 @@ def test_marks_inherited_top_sections_and_inherited_children_only(vault):
     n = mi.mark("repro", dry=False)
     text = note_path(vault).read_text(encoding="utf-8")
     assert n == 2
-    assert "# Neonatal Resuscitation\n" + CALLOUT + "\nVentilation" in text
-    assert "#### Neonatal Sepsis\n" + CALLOUT + "\n![[neonatal sepsis]]" in text
+    assert "# Neonatal Resuscitation\n" + CALLOUT + "\n\nVentilation" in text
+    assert "#### Neonatal Sepsis\n" + CALLOUT + "\n\n![[neonatal sepsis]]" in text
     assert "# Apgar Score\n> [!warning]" not in text
     assert "# Extra Care for the Neonate\n> [!warning]" not in text      # parent is slides
     assert "#### Hypoglycemia\n> [!warning]" not in text
@@ -106,7 +106,7 @@ def test_reads_the_saved_json_without_reading_decks(vault, tmp_path, monkeypatch
     monkeypatch.setattr(isx, "deck_pages", no_decks)
     assert mi.mark("repro", dry=False, sections=sections) == 2
     text = note_path(vault).read_text(encoding="utf-8")
-    assert "# Neonatal Resuscitation\n" + CALLOUT + "\nVentilation" in text
+    assert "# Neonatal Resuscitation\n" + CALLOUT + "\n\nVentilation" in text
     assert mi.mark("repro", dry=True, sections=sections) == 0     # stale line numbers still found
 
 
@@ -149,3 +149,34 @@ def test_a_heading_left_out_by_the_reader_is_not_marked(vault, capsys):
     assert "# Neonatal Resuscitation\n> [!warning]" not in text
     assert "#### Neonatal Sepsis\n" + CALLOUT in text
     assert f"skipped: left out by reader: {STEM}: Neonatal Resuscitation" in capsys.readouterr().out
+
+
+def crafted(tmp_path, body):
+    """A one-section note and its record, for the insertion-point tests."""
+    note = tmp_path / "note.md"
+    note.write_text(body, encoding="utf-8")
+    rec = {"note": "note", "path": note, "decks": ["Deck.pdf"], "deck_label": "Deck.pdf", "warnings": [],
+           "sections": [{"level": 1, "heading": "Old", "line": 0, "verdict": "inherited",
+                         "flags": [], "parent": None}]}
+    return note, rec
+
+
+def test_existing_callout_under_the_heading_is_kept_apart(tmp_path):
+    note, rec = crafted(tmp_path, "# Old\n> [!note] Keep me\n> body\n")
+    assert mi.mark_note(rec, dry=False) == 1
+    text = note.read_text(encoding="utf-8")
+    assert text.startswith("# Old\n> [!warning] Inherited\n> Not in this year's slides (Deck.pdf).")
+    assert "otherwise.\n\n> [!note] Keep me\n> body\n" in text
+    assert mi.mark_note(rec, dry=False) == 0
+
+
+def test_heading_straight_after_gets_no_blank_line(tmp_path):
+    note, rec = crafted(tmp_path, "# Old\n## Child\ntext\n")
+    mi.mark_note(rec, dry=False)
+    assert "otherwise.\n## Child\ntext\n" in note.read_text(encoding="utf-8")
+
+
+def test_blank_line_already_there_is_not_doubled(tmp_path):
+    note, rec = crafted(tmp_path, "# Old\n\ntext\n")
+    mi.mark_note(rec, dry=False)
+    assert "otherwise.\n\ntext\n" in note.read_text(encoding="utf-8")
