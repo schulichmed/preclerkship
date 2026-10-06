@@ -25,6 +25,14 @@ A moved question keeps its qid, so progress and Anki cards still join on it.
 It gains family "offcurriculum", a week that is never null, a first flag
 saying what was checked, and an ``offCurriculum`` record of where it came
 from. Applying the same verdicts twice changes nothing the second time.
+
+A `misfiled` verdict re-files a live question under the lecture that teaches
+it this year: `week`, `weekLabel` and `lecture` are rewritten from the lecture
+named in `against`, `review` is set to that lecture, and a `refiled` record
+keeps where it came from. A question whose lecture's week lies outside its
+bank's span moves to the bank that owns that week. The portal's week filter and
+its week and lecture headings read `week` and `lecture`, not `review`, which is
+why a right `review` on a wrong `week` still shows under the wrong week.
 """
 
 import argparse
@@ -68,6 +76,63 @@ QID_NOTE = {
 
 # the handed-down banks, and anything with no lecture yet, are the ones worth a read
 READ_FAMILIES = ("workbook", "hipponotes", "reviews")
+
+REFILING_VERDICT = "misfiled"
+
+# block slug -> the course weeks it spans, as tools/portal.py's roster states them
+BLOCK_WEEKS = {"endo": range(1, 4), "repro": range(4, 7), "msk": range(7, 12),
+               "neuro": range(12, 17), "psych": range(17, 21)}
+
+
+def block_for_week(week: int) -> str | None:
+    """The block slug whose span holds a course week, or None."""
+    for slug, span in BLOCK_WEEKS.items():
+        if week in span:
+            return slug
+    return None
+
+
+def week_labels(course: str = "pom2") -> dict[int, str]:
+    """{week: canonical weekLabel} read off data/notes/<block>.json."""
+    out: dict[int, str] = {}
+    for block in BLOCKS:
+        p = ROOT / course / "data" / "notes" / f"{block}.json"
+        if not p.exists():
+            continue
+        for wk in json.loads(p.read_text(encoding="utf-8")).get("weeks", []):
+            label = wk.get("label") or ""
+            m = re.match(r"^Week (\d+)", label)
+            if m:
+                out.setdefault(int(m.group(1)), label)
+    return out
+
+
+def vault_lecture(block: str, week: int, against: str) -> dict | None:
+    """The `review` record for a lecture named as `NN - Title`, if the vault has it.
+
+    Parameters
+    ----------
+    block : str
+        Block slug that owns `week`.
+    week : int
+        Course week.
+    against : str
+        ``"11 - Approach to First Trimester Bleeding & Ultrasound"``.
+
+    Returns
+    -------
+    dict or None
+        ``{"w": week, "n": "11", "t": "Approach to ..."}``, or None when no such
+        note exists under that week's folder.
+    """
+    m = re.match(r"^([\d.]+)\s*[-–]\s*(.+?)\s*$", against or "")
+    if not m:
+        return None
+    num, title = m.group(1), m.group(2)
+    note = LECTURE_NOTES / BLOCKS[block][0] / f"Week {week}" / f"{num} - {title}.md"
+    if not note.exists():
+        return None
+    return {"w": week, "n": num, "t": title}
 
 
 def bank_path(block: str, course: str = "pom2") -> Path:
@@ -239,7 +304,7 @@ def all_banks(course: str = "pom2") -> dict[str, tuple[Path, list[dict]]]:
 
 
 def apply_rows(rows: list[dict], checked: str | None = None) -> None:
-    """Re-file every outdated or not-covered question, and fill null weeks.
+    """Re-file every outdated, not-covered or misfiled question, and fill null weeks.
 
     Parameters
     ----------
@@ -251,6 +316,11 @@ def apply_rows(rows: list[dict], checked: str | None = None) -> None:
     moved = {b: 0 for b in banks}
     weeked = {b: 0 for b in banks}
     already = {b: 0 for b in banks}
+    refiled = {b: 0 for b in banks}
+    rerefiled = {b: 0 for b in banks}
+    refused = []
+    labels = week_labels()
+    today = checked or datetime.date.today().isoformat()
     missing = []
     touched = set()
     for row in rows:
@@ -260,6 +330,31 @@ def apply_rows(rows: list[dict], checked: str | None = None) -> None:
             continue
         block, q = hit
         week = int(row["week"])
+        if row["verdict"] == REFILING_VERDICT:
+            if q.get("family") == OFF or q.get("offCurriculum"):
+                continue
+            target = block_for_week(week)
+            rec = vault_lecture(target, week, row["against"]) if target else None
+            if rec is None:
+                refused.append(f"{row['qid']}: no vault note '{row['against']}' under week {week}")
+                continue
+            if q.get("week") == week and q.get("lecture") == rec["t"] and q.get("refiled"):
+                rerefiled[block] += 1
+                continue
+            q["refiled"] = {"from": {"block": block, "week": q.get("week"),
+                                     "lecture": q.get("lecture")}, "on": today}
+            q["week"] = week
+            q["weekLabel"] = labels.get(week, week_label(week))
+            q["lecture"] = rec["t"]
+            q["review"] = [rec]
+            if target != block:
+                banks[block][1].remove(q)
+                banks[target][1].append(q)
+                where[q["qid"]] = (target, q)
+                touched.add(target)
+            refiled[block] += 1
+            touched.add(block)
+            continue
         if row["verdict"] in MOVING_VERDICTS:
             if q.get("offCurriculum") or q.get("restored"):
                 already[block] += 1
@@ -284,9 +379,12 @@ def apply_rows(rows: list[dict], checked: str | None = None) -> None:
         path, qs = banks[block]
         save_bank(path, qs)
     for block in banks:
-        if moved[block] or weeked[block] or already[block]:
+        if moved[block] or weeked[block] or already[block] or refiled[block] or rerefiled[block]:
             print(f"{block:6s} moved {moved[block]:3d}  week filled {weeked[block]:3d}  "
-                  f"already moved {already[block]:3d}")
+                  f"already moved {already[block]:3d}  refiled {refiled[block]:3d}  "
+                  f"already refiled {rerefiled[block]:3d}")
+    for line in refused:
+        print(f"refused: {line}", file=sys.stderr)
     if missing:
         print(f"not in any bank: {', '.join(missing)}", file=sys.stderr)
 
@@ -326,6 +424,27 @@ def restore(qids: list[str], note: str) -> None:
         save_bank(path, qs)
 
 
+def review_week_disagrees(q: dict) -> bool:
+    """True when every resolved lecture sits in a week other than the filed one.
+
+    Off-curriculum questions are skipped: their week is the nearest lecture's
+    by construction and their review is informational.
+    """
+    if q.get("family") == OFF or not q.get("review") or q.get("week") is None:
+        return False
+    return all(r.get("w") != q.get("week") for r in q["review"])
+
+
+def lecture_is_week_title(q: dict) -> bool:
+    """True when `lecture` merely repeats the week label, so no lecture is named."""
+    if q.get("family") == OFF:
+        return False
+    label = q.get("weekLabel") or ""
+    lecture = (q.get("lecture") or "").strip()
+    tail = re.sub(r"^Week \d+\s*[-–]\s*", "", label).strip()
+    return bool(lecture) and bool(tail) and lecture.lower() == tail.lower()
+
+
 def report() -> None:
     """Print, per block, the questions per family, the null weeks, and the
     off-curriculum qids grouped by reason."""
@@ -337,6 +456,10 @@ def report() -> None:
         print(f"== {block}: {len(qs)} questions, null week {nulls}")
         for fam, n in fams.items():
             print(f"   {fam:14s} {n:4d}")
+        bad = [q["qid"] for q in qs if review_week_disagrees(q)]
+        print(f"   misfiled {len(bad)}: {', '.join(bad)}")
+        titled = [q["qid"] for q in qs if lecture_is_week_title(q)]
+        print(f"   lecture is the week title {len(titled)}: {', '.join(titled)}")
         by_reason: dict[str, list[str]] = {}
         for q in qs:
             oc = q.get("offCurriculum")
@@ -375,8 +498,9 @@ def lecture_note(block: str, entry: dict) -> Path | None:
 def candidates(course: str, block: str, week: int | None) -> None:
     """Print the questions most likely to need a human read.
 
-    Those with no `review`, no week, from a handed-down bank, or whose review
-    note was edited after the bank was last written.
+    Those with no `review`, no week, from a handed-down bank, whose resolved
+    lecture sits in another week, whose `lecture` is only the week's title, or
+    whose review note was edited after the bank was last written.
 
     Parameters
     ----------
@@ -400,6 +524,10 @@ def candidates(course: str, block: str, week: int | None) -> None:
             why.append("no week")
         if q.get("family") in READ_FAMILIES:
             why.append(q["family"])
+        if review_week_disagrees(q):
+            why.append(f"review week {q['review'][0]['w']} != filed week {q['week']}")
+        if lecture_is_week_title(q):
+            why.append("lecture is the week title")
         for entry in q.get("review") or []:
             note = lecture_note(block, entry)
             if note is not None and note.stat().st_mtime > bank_mtime:
@@ -464,21 +592,21 @@ def find_heading(lines: list[str], qid: str) -> int | None:
 
 
 def mark_vault(rows: list[dict], dry: bool) -> None:
-    """Mark moved vault-authored questions under their ``# N`` heading.
+    """Mark moved and re-filed vault-authored questions under their ``# N`` heading.
 
     Parameters
     ----------
     rows : list of dict
-        Audit rows; only outdated and not-covered ones are marked.
+        Audit rows; only moving and misfiled ones are marked.
     dry : bool
         Report what would change, write nothing.
     """
     where = {q["qid"]: q for _b, (_p, qs) in all_banks().items() for q in qs}
-    edits: dict[Path, list[tuple[str, list[str]]]] = {}
+    edits: dict[Path, list[tuple[str, list[str], str]]] = {}
     not_found = []
     skipped = 0
     for row in rows:
-        if row["verdict"] not in MOVING_VERDICTS:
+        if row["verdict"] not in MOVING_VERDICTS + (REFILING_VERDICT,):
             continue
         q = where.get(row["qid"], {})
         source = (q.get("offCurriculum") or {}).get("from") or q.get("family")
@@ -489,17 +617,23 @@ def mark_vault(rows: list[dict], dry: bool) -> None:
         if note is None:
             not_found.append(f"{row['qid']} (no note)")
             continue
-        sentence = off_sentence(row["verdict"], row["against"],
-                                (row.get("evidence") or "").strip(), "**%s**")
-        block = [f"<!-- set: offcurriculum | reason: {row['verdict']} | qid: {row['qid']} -->",
-                 "> [!warning] Off-curriculum", f"> {sentence}", ""]
-        edits.setdefault(note, []).append((row["qid"], block))
+        if row["verdict"] == REFILING_VERDICT:
+            block = [f"<!-- set: refiled | week: {int(row['week'])} | lecture: {row['against']} "
+                     f"| qid: {row['qid']} -->", ""]
+            marker = "<!-- set: refiled "
+        else:
+            sentence = off_sentence(row["verdict"], row["against"],
+                                    (row.get("evidence") or "").strip(), "**%s**")
+            block = [f"<!-- set: offcurriculum | reason: {row['verdict']} | qid: {row['qid']} -->",
+                     "> [!warning] Off-curriculum", f"> {sentence}", ""]
+            marker = "<!-- set: offcurriculum "
+        edits.setdefault(note, []).append((row["qid"], block, marker))
     marked = present = 0
     for note, items in edits.items():
         lines = note.read_text(encoding="utf-8").split("\n")
         changed = False
-        for qid, block in items:
-            if any(line.startswith("<!-- set: offcurriculum ") and line.endswith(f"qid: {qid} -->")
+        for qid, block, marker in items:
+            if any(line.startswith(marker) and line.endswith(f"qid: {qid} -->")
                    for line in lines):
                 present += 1
                 continue
@@ -528,7 +662,7 @@ def main() -> None:
     c.add_argument("--course", default="pom2")
     c.add_argument("--block", required=True, choices=sorted(BLOCKS))
     c.add_argument("--week", type=int)
-    a = sub.add_parser("apply", help="move outdated, not-covered and retired questions")
+    a = sub.add_parser("apply", help="move outdated, not-covered and retired questions; re-file misfiled ones")
     a.add_argument("--checked", help="date stamped on offCurriculum.checked (default: today)")
     a.add_argument("verdicts", nargs="+")
     sub.add_parser("report", help="counts per family and the off-curriculum qids")
