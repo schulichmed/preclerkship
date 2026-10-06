@@ -165,6 +165,12 @@ COURSES = [
                       u"written by the class two years ahead. Peer-written like the "
                       u"Workbook, so the key is worth checking rather than trusting; "
                       u"the source groups by week only, with no per-lecture attribution."},
+            {"key": "offcurriculum", "name": u"Off-curriculum",
+             "blurb": u"Questions from the handed-down banks and older sets that this "
+                      u"year's lectures do not teach, or teach differently. Kept here "
+                      u"rather than deleted, for anyone who wants them. Each one names "
+                      u"the lecture it was checked against and says what that lecture "
+                      u"teaches now."},
         ],
     },
     {

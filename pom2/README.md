@@ -124,11 +124,23 @@ carries the same fields:
 | `answer`, `answerTitle` | the explanation shown after answering |
 | `keyed`, `free`, `unscorable`, `retired` | whether it has a real key, is ungraded, cannot be scored, or is hidden |
 | `flags` | `[{"type": "warning", "title": "...", "html": "..."}]`, printed on the question |
+| `offCurriculum` | only on a question in the Off-curriculum set: `{"reason": "outdated" \| "not-covered", "from": "<the set it left>", "against": "<lecture checked>", "checked": "YYYY-MM-DD"}` |
 
 `keyed: false` and `unscorable: true` matter. Question banks handed down between
 years are often missing an answer key or contain a question with no defensible
 answer. Rather than inventing a letter, the portal says so on the question's face
 and leaves it out of the score.
+
+**The Off-curriculum set.** Every endocrinology and reproduction question was
+checked against this year's lecture notes on 2026-10-05. A question the lectures
+no longer teach, or now teach differently, moved into its own set,
+`family: "offcurriculum"`, rather than being deleted. It keeps its `qid`, so
+progress and Anki cards still find it, and it still has a week: the week of the
+nearest lecture. Its first flag says which lecture was checked and quotes what
+that lecture says, and `offCurriculum` records the same thing as data, along
+with the set it came from. `tools/curriculum_audit.py` does the moving. A
+question with `week: null` now shows as **No week**, so a week chip can never be
+mistaken for this set.
 
 `tags` is the one filter that cuts across the others. The anatomy, histology and
 embryology lectures are a strand of their own, but their questions arrive as

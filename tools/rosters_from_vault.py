@@ -22,13 +22,18 @@ BLOCKS = [
 
 def week_labels(slug):
     """reuse the week headings the questions tab already shows, so both tabs
-       name the same week the same way"""
+       name the same week the same way. A bare "Week N" (what an
+       Off-curriculum question or a newly placed one carries) only counts when
+       no question in that week has a fuller heading"""
     p = "pom2/data/questions/%s.json" % slug
     labels = {}
     if os.path.exists(p):
         for q in json.load(io.open(p, encoding="utf-8")):
             w, lab = q.get("week"), q.get("weekLabel")
-            if w and lab and w not in labels:
+            if not (w and lab):
+                continue
+            bare = re.match(r"^Week \d+$", lab) is not None
+            if w not in labels or (re.match(r"^Week \d+$", labels[w]) and not bare):
                 labels[w] = lab
     return labels
 

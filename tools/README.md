@@ -172,6 +172,41 @@ parent site. Fill either in and every generated page picks it up.
 own questions, write that JSON yourself. One object per question, in a flat list.
 The fields the front end reads are documented in the main [README](../README.md).
 
+## Keeping the banks to this year's lectures
+
+`curriculum_audit.py` acts on a curriculum audit: one row per question saying
+whether this year's lecture notes teach it (`current`), contradict it
+(`outdated`), or do not mention it at all (`not-covered`). The rows live in
+`build/curriculum_audit/<block>_<chunk>.json` as
+`{qid, verdict, against, week, evidence, note}`.
+
+```bash
+python tools/curriculum_audit.py candidates --course pom2 --block endo --week 2
+python tools/curriculum_audit.py apply build/curriculum_audit/endo_w*.json
+python tools/curriculum_audit.py mark-vault --dry-run build/curriculum_audit/endo_w*.json
+python tools/curriculum_audit.py report
+```
+
+- **`candidates`** lists the questions most worth reading by hand: no `review`,
+  no week, from a handed-down bank (workbook, HippoNotes, Schulich Reviews), or
+  pointing at a lecture note edited since the bank was last written.
+- **`apply`** moves every outdated or not-covered question into the
+  Off-curriculum set. The question keeps its qid and its key, takes the week of
+  the lecture it was checked against, and gets a first flag that names that
+  lecture and quotes it. A current question with no week is given one and left
+  where it is. Running it twice changes nothing the second time.
+- **`mark-vault`** puts a `<!-- set: offcurriculum ... -->` marker and an
+  Off-curriculum warning under the question's `# N` heading in the vault note it
+  was written in (module, weekly, workbook and New Questions notes). It reports a
+  heading it cannot find rather than guessing. HippoNotes and Schulich Reviews
+  are backed up from the JSON instead, and `vault_backup.py questions` keeps a
+  moved one in the note of the set it came from.
+- **`report`** prints each block's questions per set, how many have no week, and
+  the off-curriculum qids by reason.
+
+After `apply`, rebuild as usual. `review_lectures.py --derive` re-derives every
+course, so diff the banks afterwards and keep only the changes you meant.
+
 ## Publishing an Anki deck
 
 One more script off to the side. It needs **Anki running** with the

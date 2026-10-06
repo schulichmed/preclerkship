@@ -687,7 +687,7 @@
     var parts = [];
     if (TERM) parts.push(BLOCK_NAME[q.block] || q.block);
     parts.push(q.weekLabel ||
-      (q.week === null ? "Off-curriculum" : "Week " + q.week));
+      (q.week === null ? "No week" : "Week " + q.week));
     var lec = q.lecture;
     if (lec && !setLabels()[lec] && lec !== BLOCK_NAME[q.block] &&
         parts.join(" ").toLowerCase().indexOf(lec.toLowerCase()) === -1) {
@@ -1113,7 +1113,7 @@
        repeating it on every card is noise. */
     art.appendChild(el("p", "qwhere",
       (TERM ? (BLOCK_NAME[q.block] || q.block) + " \u00b7 " : "") +
-      (q.week === null ? "Off-curriculum" : "Week " + q.week) + " \u00b7 " + q.lecture));
+      (q.week === null ? "No week" : "Week " + q.week) + " \u00b7 " + q.lecture));
 
     if (q.preamble) {
       var pre = el("div", "preamble");
@@ -2406,9 +2406,11 @@
   ];
 
   /* Weeks come off the questions rather than off BLOCK.weeks: that is a
-     display string ("1–3"), and a block can carry off-curriculum questions
-     that belong to no week at all. Numbers, not labels - the same week is
-     labelled differently by each family, so the labels would split it. */
+     display string ("1–3"), and a block can carry a question that belongs to
+     no week at all. That chip reads "No week", never "Off-curriculum", since
+     Off-curriculum is a question set of its own and every question in it has
+     a week. Numbers, not labels - the same week is labelled differently by
+     each family, so the labels would split it. */
   function weekKey(q) { return q.week === null ? "off" : String(q.week); }
 
   function weekDefs() {
@@ -2425,7 +2427,7 @@
     });
     var defs = [{ k: "all", label: "All", n: QUESTIONS.length }];
     order.forEach(function (k) {
-      defs.push({ k: k, label: k === "off" ? "Off-curriculum" : "Week " + k, n: n[k] });
+      defs.push({ k: k, label: k === "off" ? "No week" : "Week " + k, n: n[k] });
     });
     return defs;
   }

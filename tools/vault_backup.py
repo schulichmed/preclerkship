@@ -24,6 +24,10 @@ tool with two narrow jobs rather than a general sync:
   straight into the portal JSON, are backed up.
 * FoM, PoM 1 and T2C were built from PDFs and curated in the portal JSON, so
   the JSON is their source and the vault copy is the backup.
+* PoM 2's Off-curriculum set has no note of its own. A question moved there
+  (see tools/curriculum_audit.py) stays in the note of the family it came from,
+  its `offCurriculum.from`, under the same week, with its flag as a warning.
+  One that came from a vault-owned family is marked in the vault instead.
 
 A chart is only ever added to a lecture note that has none, never merged into
 one. A question note is only ever overwritten if this tool wrote it, which the
@@ -79,6 +83,17 @@ FAMILY_NOTE = {
 
 # families already written in the vault and exported from it; never regenerated
 VAULT_OWNED = {("pom2", f) for f in ("module", "weekly", "workbook", "meds2029")}
+
+# a set that files its questions under the note of the family each came from
+OFF = "offcurriculum"
+
+
+def home_family(q):
+    """The family whose note a question is backed up in: its own, or for an
+    off-curriculum question the one it was moved out of."""
+    if q.get("family") == OFF:
+        return (q.get("offCurriculum") or {}).get("from") or OFF
+    return q.get("family")
 
 COURSE_FOLDER = {"fom": "FoM", "pom1": "PoM 1", "t2c": "T2C"}   # pom2 stays flat, as it is today
 
@@ -397,6 +412,9 @@ def charts(dry):
 def question_md(i, q, course, fig):
     m = lambda h: md(h, course, fig)
     out = ["# %d" % i, "<!-- qid: %s -->" % q["qid"]]
+    oc = q.get("offCurriculum")
+    if oc:
+        out[-1] += "\n<!-- set: offcurriculum | reason: %s | qid: %s -->" % (oc.get("reason"), q["qid"])
     if q.get("retired"):
         out.append("*Retired on the portal; kept so its qid stays reserved.*")
     pre = q.get("preamble")
@@ -434,6 +452,8 @@ def question_md(i, q, course, fig):
     out.append("\n".join([head] + [("> " + l).rstrip() for l in body.split("\n")]))
     for fl in q.get("flags") or []:
         kind = "warning" if fl.get("type") in ("warning", "error", "bug") else "note"
+        if oc and fl.get("title") == "Off-curriculum":
+            kind = "warning"
         lines = m(fl.get("html") or "").split("\n")
         out.append("\n".join(["> [!%s] %s" % (kind, fl.get("title") or "")] +
                              [("> " + l).rstrip() for l in lines]))
@@ -449,9 +469,18 @@ def question_note(course, block, fam, qs, fig):
            "there and rerun `tools/vault_backup.py questions`. Each question's `qid` is in a "
            "comment under its number, and it is the key the portal's progress and Anki use.*"
            % (fname, cname, block["name"], len(qs), course, block["slug"], date.today().isoformat())]
+    # an off-curriculum question carries a bare "Week N"; file it under the
+    # heading its neighbours use for that week, so the note keeps one per week
+    own = {}
+    for q in qs:
+        if q.get("family") != OFF and q.get("week") and q.get("weekLabel"):
+            own.setdefault(q["week"], q["weekLabel"])
     by_week = {}
     for q in qs:
-        by_week.setdefault((q.get("week") or 0, q.get("weekLabel") or "Week unassigned"), []).append(q)
+        label = q.get("weekLabel") or "Week unassigned"
+        if q.get("family") == OFF:
+            label = own.get(q.get("week"), label)
+        by_week.setdefault((q.get("week") or 0, label), []).append(q)
     i = 0
     for (wn, label) in sorted(by_week):
         out.append("## " + label)
@@ -483,9 +512,9 @@ def questions(dry):
                 continue
             qs = json.load(io.open(f, encoding="utf-8"))
             for fam in [x["key"] for x in c["families"]]:
-                if (course, fam) in VAULT_OWNED:
+                if (course, fam) in VAULT_OWNED or fam == OFF:
                     continue
-                sel = [q for q in qs if q.get("family") == fam]
+                sel = [q for q in qs if home_family(q) == fam]
                 if not sel:
                     continue
                 p = folder / ("%s - %s.md" % (FAMILY_NOTE[fam], bname))
