@@ -7939,6 +7939,10 @@
      "keypoints": "<p>⭐ <mark class=\"lo\"><strong>Symptomatic hypoglycemia is a medical emergency: IV dextrose, not a feed</strong></mark> (a jittery IDM who cannot latch, glucose 2.3). The GA curves run <strong>higher the more mature the baby</strong>, so the same TSB can need treatment at 35 weeks and not at 40. ⚠ <strong>Sepsis runs through all three</strong>: hypoglycemia can be a sign of it, it causes hyperbilirubinemia, and temperature instability is a jaundice risk factor, so consider it in <strong>any sick baby</strong>.</p>",
      "blocks": [
       {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    N[\"Newborn<br/>full exam within 24 h\"] --> P[\"PINK<br/>breathing and colour\"]\n    N --> W[\"WARM<br/>cannot shiver\"]\n    N --> S[\"SWEET<br/>glycogen lasts 8-10 h\"]\n    P --> P1[\"Apgar at 1 and 5 min\"]\n    P1 --> P2{\"Under 3?\"}\n    P2 -->|Yes| P3[\"Resuscitate\"]\n    P2 -->|No| P4[\"Routine care<br/>7+ normal · 4-6 low\"]\n    W --> W1{\"Preterm or<br/>under 1500 g?\"}\n    W1 -->|Yes| W2[\"Incubator · radiant warmer<br/>humidity\"]\n    W1 -->|No| W3[\"Dry · wrap · hat<br/>warm room\"]\n    S --> S1{\"At risk?<br/>IDM · LGA · SGA · preterm\"}\n    S1 -->|No| S2[\"Feed<br/>no screening\"]\n    S1 -->|Yes| S3[\"Glucose 2 h<br/>after first feed\"]\n    S3 --> S4{\"2.6 or more?\"}\n    S4 -->|Yes| S5[\"No more sticks\"]\n    S4 -->|No| S6[\"Symptomatic: IV dextrose<br/>Well: feed and recheck\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class P1,W,S1 lo"
+      },
+      {
        "t": "note",
        "html": "<h5>1. The Apgar score</h5>"
       },
