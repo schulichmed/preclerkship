@@ -210,6 +210,27 @@ python tools/curriculum_audit.py report
 After `apply`, rebuild as usual. `review_lectures.py --derive` re-derives every
 course, so diff the banks afterwards and keep only the changes you meant.
 
+## Finding what the slides do not teach
+
+`inherited_sections.py` reads each lecture note of a block against the slide
+deck on disk (a `.pdf` or `.pptx` under `$POM2_DECKS`, by default Downloads
+and OneDrive/Documents, or beside the note), splits the body into sections
+and scores each section by the best single slide it contains. A section no
+slide lands in is `inherited`: an upper year's notes, not this year's
+lecture. It prints the deck it used per note, or `no deck found`, and never
+writes the vault.
+
+```bash
+python3 tools/inherited_sections.py --block repro
+python3 tools/inherited_sections.py --block endo --json build/inherited_sections/endo.json
+```
+
+The thresholds are constants at the top of the file, calibrated on
+`09 - Approach to Neonatal Care` against its 2025 deck. A deck whose text
+layer is empty is reported as `no usable text` and its sections as `no-deck`,
+never as inherited. `DECKS` maps a note to its deck filenames where the title
+match would guess wrong.
+
 ## Publishing an Anki deck
 
 One more script off to the side. It needs **Anki running** with the
