@@ -485,7 +485,14 @@ def question_note(course, block, fam, qs, fig):
     for (wn, label) in sorted(by_week):
         out.append("## " + label)
         lecture = None
-        for q in by_week[(wn, label)]:
+        # an off-curriculum question comes after its set in the bank; keep it
+        # with the lecture its neighbours already opened, so no heading repeats
+        week_qs = by_week[(wn, label)]
+        first = {}
+        for n, q in enumerate(week_qs):
+            first.setdefault(q.get("lecture") or "Unattributed", n)
+        week_qs = sorted(week_qs, key=lambda q: first[q.get("lecture") or "Unattributed"])
+        for q in week_qs:
             lec = q.get("lecture") or "Unattributed"
             if lec != lecture:
                 out.append("#### " + lec)
