@@ -187,14 +187,24 @@ HippoNotes questions passed the 2026-10-05 read on them.*
 **The scorer is a shortlist, not a verdict.** It counts how much of a slide's wording lands in a
 section, and some notes defeat that. A note with a warning in its table (a dense handout, an
 image-only or partial deck, a deck named in `DECKS` that is missing) and a section flagged
-`near-threshold` are read by a person against the deck before any callout goes in.
-`mark_inherited.py` never marks them on its own: it lists each one as `skipped:` with the reason.
-A short section can also come back `inherited` when its topic is plainly on a slide, because a
-few lines cannot hold a whole slide's wording. That is why the `would mark` list is read
-against the deck before the real run. *Observed 2026-10-06: the first
-dry run listed 88 headings to mark across endo and repro, and 49 of them had every word of the
-heading on a slide of their own deck, PALM-COEIN in Abnormal Uterine Bleeding and Cushing
-Syndrome in Adrenal Gland Disease among them. Only the neonatal note, read by hand, was marked.*
+`near-threshold` are read against the deck before any callout goes in. The reader is whoever
+runs this stage, which may be an agent working the audit brief. `mark_inherited.py` never marks
+them on its own: it lists each one as `skipped:` with the reason. A section the reader confirms
+no slide teaches is marked with
+`python3 tools/mark_inherited.py --block <slug> --sections build/inherited_sections/<slug>.json --include "<NN - Lecture>: <heading>"`,
+which takes that one section past the gate. Run it with `--dry-run` first and look for its
+`included:` line, and add `--note "<NN - Lecture>"` to touch that note alone.
+
+In the table, a `~` after a verdict marks a flag, not only a near miss. `~ near-threshold` is a
+section too close to call. `~ heading-on-slide` is a section whose heading words all sit on one
+slide of the deck (a summary or take-home slide does not count), so it is `slides` however
+little of the slide's wording its body holds. A short section can still come back `inherited`
+when a slide teaches its topic in words the heading does not use, so the `would mark` list is
+read against the deck before the real run. *Observed 2026-10-06: the first dry run listed 88
+headings to mark across endo and repro, and 49 of them had every word of the heading on a slide
+of their own deck, PALM-COEIN in Abnormal Uterine Bleeding and Cushing Syndrome in Adrenal Gland
+Disease among them. That is why the scorer now checks headings itself; 47 sections flipped to
+`slides` when it did. Only the neonatal note, read by hand, was marked that day.*
 
 **Report every override**: the lecture, what the note said, what OneNote says. Correcting the
 note silently is what makes an inherited error indistinguishable from taught material next time
@@ -611,7 +621,8 @@ and are covered by a separate protocol.
 
 **Every run, without being asked.** Stage 1 has just brought the week's notes up to this year's
 slides, and Stage 4 has just exported the week's questions. Now **every question in the block,
-not only the week's new ones**, is checked against those notes, because a rewritten note can
+not only the week's new ones**, is checked against this year's slides and the chart region of
+those notes, because a rewritten note can
 invalidate a question banked months ago and nothing else will notice. The plan this came from is
 `docs/plans/2026-10-05-endo-repro-curriculum-audit.md`, and the method each read follows is
 `build/curriculum_audit/AUDIT_BRIEF.md`. Read the brief before the first read of a run.
@@ -696,14 +707,22 @@ lists the questions most likely to need a read: no `review`, no week, a handed-d
 or a `review` note edited after the bank was last written. Run it per week of the block. **It is a
 shortlist, not the check. The read is the work.** Read each candidate, and **every question
 whose lecture note Stage 1 changed this run**, against that lecture's deck and chart region, the
-way the brief says. `python3 tools/slides_shortlist.py --block <slug>` prints, per live
-handed-down question, the deck it resolves to and whether the last read's evidence is on the
-slides, and writes the shortlist to `build/curriculum_audit/<slug>_slides.txt` for reading. A
-lecture it prints as `NO-DECK` cannot be judged: its questions stay `current` with `NO-DECK` in
-`note`, and the lecture goes in the Stage 7 report. The section verdicts behind that shortlist
-are a shortlist too: a note with a warning (a dense handout, an image-only or partial deck, a
-missing deck) or a section flagged `near-threshold` is read by a person against the deck before
-its questions are moved, and before any callout goes in.
+way the brief says. First save the section verdicts with
+`python3 tools/inherited_sections.py --block <slug> --json build/inherited_sections/<slug>.json`.
+The shortlist places each quote against these saved verdicts, so a note Stage 1 rewrote must be
+rescored first; the shortlist names any note changed after the file was written. Then
+`python3 tools/slides_shortlist.py --block <slug>` prints, for each live workbook and HippoNotes
+question, the deck it resolves to and whether the newest read's evidence is on the slides, and
+writes the shortlist to `build/curriculum_audit/<slug>_slides.txt` for reading. Schulich Reviews
+are still read against the note until their own pass. A lecture it prints as `NO-DECK` cannot be
+judged: its questions stay `current` with `NO-DECK` in `note`, and the lecture goes in the Stage 7
+report. The section verdicts behind that shortlist are a shortlist too: a note with a warning (a
+dense handout, an image-only or partial deck, a missing deck) or a section flagged
+`near-threshold` is read against the deck before its questions are moved, and before any callout
+goes in. The dump shows a note's warnings on its `deck:` line. The reader is whoever runs this
+stage, which may be an agent working the audit brief, and a section the reader confirms no slide
+teaches is marked with
+`python3 tools/mark_inherited.py --block <slug> --sections build/inherited_sections/<slug>.json --include "<NN - Lecture>: <heading>"`.
 
 1. Write the verdicts to `build/curriculum_audit/<slug>_<chunk>.json`, one row per question read,
    in the brief's format: `{qid, verdict, against, week, slides, evidence, note}`, verdict one of

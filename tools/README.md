@@ -236,8 +236,11 @@ and JSON: `dense` (a handout, not slides), `sparse` (mostly image-only
 slides), `partial` (only part of the lecture's decks are on disk),
 `missing-deck` and `unusable-deck`. Its verdicts are kept, but nothing should
 mark the vault from them. A single section scoring between 0.4 and 0.5 is
-flagged `near-threshold` (`~` in its table row, `flags` in the JSON) and only
-that section is skipped. Each deck's text is cached under
+flagged `near-threshold` and only that section is skipped. A section whose
+heading words all sit on one slide (a summary or take-home slide does not
+count) is `slides` with the flag `heading-on-slide`, however low its body
+scores. A `~` in a table row marks either flag (`flags` in the JSON). The
+tool's own Inherited callouts are never scored as note text. Each deck's text is cached under
 `build/inherited_sections/deck_text/` and reread only when the file changes,
 so the second run of a block is fast.
 
@@ -247,12 +250,19 @@ idempotent. It marks a section only when its note has no warning and the
 section is not `near-threshold`; every other inherited section is printed as
 `skipped:` with the reason, for a person to read against the deck.
 `--sections build/inherited_sections/<slug>.json` reuses a saved run instead of
-reading the decks again, and `--leave-out "<note stem>: <heading>"` keeps a
-heading the reader found on a slide. `slides_shortlist.py --block <slug>` lists
-every live handed-down question with its deck and whether the last audit's
-evidence is on the slides, and writes the shortlist to
-`build/curriculum_audit/<slug>_slides.txt` for a reader; a lecture with no deck
-is `NO-DECK` and its questions stay current.
+reading the decks again, `--leave-out "<note stem>: <heading>"` keeps a
+heading the reader found on a slide, and `--include "<note stem>: <heading>"`
+marks a skipped section the reader confirmed no slide teaches (printed as
+`included:`). `slides_shortlist.py --block <slug>` lists the live workbook and
+HippoNotes questions (Schulich Reviews are still read against the note until
+their own pass) with their deck and whether the newest audit's evidence is on
+the slides, and writes the shortlist to `build/curriculum_audit/<slug>_slides.txt`
+for a reader, each note's warnings on its `deck:` line; a lecture with no deck
+is `NO-DECK` and its questions stay current. It reads every verdict file in the
+audit directory (`*_w*`, `*_refile*`, `*_slides*`, never a `*.prefill*`), and
+when a question was read more than once only the newest file's quotes count,
+newest by file time. Save the section verdicts with `--json` first: the
+shortlist names any note changed after that file was written.
 
 ## Publishing an Anki deck
 
