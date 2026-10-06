@@ -168,6 +168,33 @@ current version underneath the old one and do not soften it into "some sources s
   contradicts OneNote. An upper year's note going deeper than the lecture is not a conflict, it
   is context.
 
+**Longer than the slides is the tell, and the extra gets labelled.** A body that runs well past
+what the deck covers is an upper year's notes, not this year's lecture. When a note's body is
+longer than its slides, run `python3 tools/inherited_sections.py --block <slug> --note "<NN -
+Lecture>"` and read its table: a section marked `inherited` has no slide whose words it
+carries. Then `python3 tools/mark_inherited.py --block <slug> --note "<NN - Lecture>" --dry-run`,
+read the list, and the same without `--dry-run`. It puts a `> [!warning] Inherited` callout
+directly under each such heading, naming the deck, and nothing else. The section stays in the
+note as context, but a reader and Stage 4b both know not to count it as taught. Running either
+tool twice changes nothing. A lecture with no deck on disk comes back `no deck found` and its
+note is left as it is; name it in Stage 7 so she can export the deck from OneNote. *Observed
+2026-10-06: `09 - Approach to Neonatal Care` carried Neonatal Resuscitation, Newborn Transition,
+Respiratory Problems and Neonatal Sepsis sections that the 2025 deck never teaches, and five
+HippoNotes questions passed the 2026-10-05 read on them.*
+
+**The scorer is a shortlist, not a verdict.** It counts how much of a slide's wording lands in a
+section, and some notes defeat that. A note with a warning in its table (a dense handout, an
+image-only or partial deck, a deck named in `DECKS` that is missing) and a section flagged
+`near-threshold` are read by a person against the deck before any callout goes in.
+`mark_inherited.py` never marks them on its own: it lists each one as `skipped:` with the reason.
+A short section can also come back `inherited` when its topic is plainly on a slide, because a
+few lines cannot hold a whole slide's wording. So read the `would mark` list against the deck
+too, and leave out any heading whose subject a slide teaches with
+`--leave-out "<NN - Lecture>: <heading>"`. *Observed 2026-10-06: the first
+dry run listed 88 headings to mark across endo and repro, and 49 of them had every word of the
+heading on a slide of their own deck, PALM-COEIN in Abnormal Uterine Bleeding and Cushing
+Syndrome in Adrenal Gland Disease among them. Only the neonatal note, read by hand, was marked.*
+
 **Report every override**: the lecture, what the note said, what OneNote says. Correcting the
 note silently is what makes an inherited error indistinguishable from taught material next time
 anyone reads it. The report is the only record, since the note keeps no history of what it used
@@ -588,22 +615,27 @@ invalidate a question banked months ago and nothing else will notice. The plan t
 `docs/plans/2026-10-05-endo-repro-curriculum-audit.md`, and the method each read follows is
 `build/curriculum_audit/AUDIT_BRIEF.md`. Read the brief before the first read of a run.
 
-Each question gets one of these verdicts, against this year's notes for the block (follow
-transclusions before calling anything absent; where a note is silent on an exact value, the slide
-PDF decides):
+Each question gets one of these verdicts, against this year's slides for the block: the deck on
+disk, and the note's chart region, which is written from the deck. The note body is context, not
+the check. A body section under a `> [!warning] Inherited` callout does not count as taught, and
+a transclusion counts only where the slides teach the same thing. Where no deck is on disk the
+body stands in and the row says `NO-DECK`:
 
 | Verdict | Meaning | Action |
 | --- | --- | --- |
-| `current` | the tested fact is taught in this year's block notes, and the key agrees | nothing |
+| `current` | the tested fact is on this year's slides for the block, or in the chart region written from them, and the key agrees | nothing |
 | `outdated` | this year's lecture contradicts the key or the stem's premise | move to Off-curriculum, say what the slide now says |
-| `not-covered` | the tested fact appears in none of this year's block notes | move to Off-curriculum, name the nearest lecture |
+| `not-covered` | the tested fact is on none of this year's slides for the block, or only a body section under an Inherited callout teaches it | move to Off-curriculum, name the lecture and its deck |
 | `misfiled` | the tested fact is taught, but in a different week or lecture from where the question is filed, or no lecture is named | re-file under that lecture: `apply` rewrites `week`, `weekLabel`, `lecture` and `review`, and moves it to the owning block's bank if the week is in another block |
 | `retired` | the source itself retired the question (`retired: true`), whatever its content | move to Off-curriculum; her call 2026-10-05, so the retired tag never sits inside a live set |
 
 A question taught in a different week or lecture from where its source filed it, or whose
 `lecture` is only the week's title, is `misfiled`, not `current`; it stays live and is re-filed.
-Adjacent clinical depth the lecture does not go into (a drug the note never names, a staging
-system the slides skip) is `not-covered`.
+Adjacent clinical depth the lecture does not go into (a drug the slides never name, a staging
+system they skip) is `not-covered`. So is a fact that only an inherited section teaches: on
+2026-10-05 hippo-repro-Q77 to Q81 passed on the neonatal note's resuscitation, transition,
+respiratory and sepsis sections, none of which is in the 2025 deck, and she confirmed none was
+taught.
 
 **Which test applies depends on the family.**
 
@@ -611,7 +643,8 @@ system the slides skip) is `not-covered`.
   They are curriculum by definition, so `not-covered` is never their verdict; a fact that is in
   the quiz or module but not on the slides is noted `MODULE-ONLY` and stays current.
 - **The handed-down banks, `workbook`, `hipponotes` and `reviews`, get the strict test**: the
-  discriminator that picks the key has to be stated in this year's notes or slides. **Reaching
+  discriminator that picks the key has to be on this year's slides, or in the chart region
+  written from them; the note body alone does not carry it. **Reaching
   the key by eliminating the other options does not count as covered.**
 
 *Observed 2026-10-05: the first run checked all 1216 endo and repro questions and moved 71, 16
@@ -661,12 +694,21 @@ lists the questions most likely to need a read: no `review`, no week, a handed-d
 `review` whose week disagrees with the filed week, a `lecture` that only repeats the week title,
 or a `review` note edited after the bank was last written. Run it per week of the block. **It is a
 shortlist, not the check. The read is the work.** Read each candidate, and **every question
-whose lecture note Stage 1 changed this run**, against that note, the way the brief says.
+whose lecture note Stage 1 changed this run**, against that lecture's deck and chart region, the
+way the brief says. `python3 tools/slides_shortlist.py --block <slug>` prints, per live
+handed-down question, the deck it resolves to and whether the last read's evidence is on the
+slides, and writes the shortlist to `build/curriculum_audit/<slug>_slides.txt` for reading. A
+lecture it prints as `NO-DECK` cannot be judged: its questions stay `current` with `NO-DECK` in
+`note`, and the lecture goes in the Stage 7 report. The section verdicts behind that shortlist
+are a shortlist too: a note with a warning (a dense handout, an image-only or partial deck, a
+missing deck) or a section flagged `near-threshold` is read by a person against the deck before
+its questions are moved, and before any callout goes in.
 
 1. Write the verdicts to `build/curriculum_audit/<slug>_<chunk>.json`, one row per question read,
-   in the brief's format: `{qid, verdict, against, week, evidence, note}`, verdict one of
+   in the brief's format: `{qid, verdict, against, week, slides, evidence, note}`, verdict one of
    `current | outdated | not-covered | misfiled`, evidence a quote of at most 200 characters
-   from the note or slide.
+   from the slide or the chart region (from the note body only on a `NO-DECK` row), and `slides`
+   the deck filename so the Off-curriculum flag can name it.
 2. `python3 tools/curriculum_audit.py apply build/curriculum_audit/<slug>_<chunk>.json` moves
    the outdated and not-covered ones and re-files the misfiled ones. Applying the same file
    twice changes nothing.
@@ -818,6 +860,8 @@ vault's `Attachments`, re-compresses it into `assets/figures/<hash>.jpg` and wri
 - Everything skipped and why: decks not on disk, modules with no questions, and which of the
   **Stage 8** sources have not arrived. **Report a pending quiz, DSSG or CBL as a normal open
   item, not as an incomplete week.**
+- **Lectures with no deck on disk**, named, so she can export them from OneNote. Their questions
+  were not checked against the slides this run.
 - Any source errors flagged rather than silently corrected.
 - **Questions moved to Off-curriculum this run, per reason** (outdated, not-covered, retired), with their
   qids, and any `KEY?` items written to `build/curriculum_audit/KEY_ISSUES.md`.

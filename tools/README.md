@@ -241,6 +241,19 @@ that section is skipped. Each deck's text is cached under
 `build/inherited_sections/deck_text/` and reread only when the file changes,
 so the second run of a block is fast.
 
+`mark_inherited.py --block <slug> [--dry-run]` writes a `> [!warning] Inherited`
+callout directly under each inherited heading, naming the deck, and is
+idempotent. It marks a section only when its note has no warning and the
+section is not `near-threshold`; every other inherited section is printed as
+`skipped:` with the reason, for a person to read against the deck.
+`--sections build/inherited_sections/<slug>.json` reuses a saved run instead of
+reading the decks again, and `--leave-out "<note stem>: <heading>"` keeps a
+heading the reader found on a slide. `slides_shortlist.py --block <slug>` lists
+every live handed-down question with its deck and whether the last audit's
+evidence is on the slides, and writes the shortlist to
+`build/curriculum_audit/<slug>_slides.txt` for a reader; a lecture with no deck
+is `NO-DECK` and its questions stay current.
+
 ## Publishing an Anki deck
 
 One more script off to the side. It needs **Anki running** with the
