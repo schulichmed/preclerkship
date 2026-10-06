@@ -44,6 +44,7 @@ except at the gates below.
 2  questions <- notes   every source banked into the vault question notes
 3  charts <- questions  the chart is written knowing what gets tested
 4  portal JSON <- both  the hand-authored hop, pictures included
+4b curriculum check     every question in the block against this year's notes
 5  rebuild             four scripts, then commit
 6  Anki <- notes        the delta against CLim, prioritised by the chart
 7  report
@@ -174,7 +175,9 @@ to say.
 
 This ordering holds for anything derived downstream too. Where a chart, a question's reasoned
 answer, or a card was built on inherited content that OneNote contradicts, it is wrong at the
-source and gets rebuilt, not patched.
+source and gets rebuilt, not patched. **Every override is also a trigger for Stage 4b on that
+lecture's questions**, because the slide change that corrected the note can invalidate a
+question's key.
 
 ### Staleness has to be read, not detected
 
@@ -562,6 +565,88 @@ and are covered by a separate protocol.
   plausible near-miss makes the question quietly wrong, which is worse than a question that says
   its picture is missing.
 
+## Stage 4b - curriculum check
+
+**Every run, without being asked.** Stage 1 has just brought the week's notes up to this year's
+slides, and Stage 4 has just exported the week's questions. Now **every question in the block,
+not only the week's new ones**, is checked against those notes, because a rewritten note can
+invalidate a question banked months ago and nothing else will notice. The plan this came from is
+`docs/plans/2026-10-05-endo-repro-curriculum-audit.md`, and the method each read follows is
+`build/curriculum_audit/AUDIT_BRIEF.md`. Read the brief before the first read of a run.
+
+Each question gets one of three verdicts, against this year's notes for the block (follow
+transclusions before calling anything absent; where a note is silent on an exact value, the slide
+PDF decides):
+
+| Verdict | Meaning | Action |
+| --- | --- | --- |
+| `current` | the tested fact is taught in this year's block notes, and the key agrees | nothing |
+| `outdated` | this year's lecture contradicts the key or the stem's premise | move to Off-curriculum, say what the slide now says |
+| `not-covered` | the tested fact appears in none of this year's block notes | move to Off-curriculum, name the nearest lecture |
+
+A question taught in a different week or lecture from where its source filed it is `current`.
+Adjacent clinical depth the lecture does not go into (a drug the note never names, a staging
+system the slides skip) is `not-covered`.
+
+**Which test applies depends on the family.**
+
+- **This year's own sources, `weekly`, `module` and `meds2029`, get only the `outdated` test.**
+  They are curriculum by definition, so `not-covered` is never their verdict; a fact that is in
+  the quiz or module but not on the slides is noted `MODULE-ONLY` and stays current.
+- **The handed-down banks, `workbook`, `hipponotes` and `reviews`, get the strict test**: the
+  discriminator that picks the key has to be stated in this year's notes or slides. **Reaching
+  the key by eliminating the other options does not count as covered.**
+
+*Observed 2026-10-05: the first run checked all 1216 endo and repro questions and moved 71, 16
+outdated and 55 not-covered, 54 of them workbook. It also found two of this year's own module
+questions, module-endo-Q21 and module-repro-Q9, whose slide now contradicts their key. That is
+why the `outdated` test runs on this year's sources too: this year's family says where a
+question came from, not that its key still matches the slide.*
+
+### The Off-curriculum set
+
+**A question that fails is moved, never deleted.** It goes into the `offcurriculum` family
+("Off-curriculum", listed last in `tools/portal.py`) and keeps everything it had: `qid`, `num`,
+`source`, `sourceLabel`, `lecture`, `lectureMeta`, `options`, `correct`, `answer`, `retired`,
+`tags`. It gains:
+
+- `family: "offcurriculum"`;
+- `week`: the week of the nearest lecture, **never null**, with `weekLabel: "Week N"`;
+- a first `flags` entry, `{"type": "note", "title": "Off-curriculum", ...}`, saying whether it is
+  not taught or taught differently and naming the lecture it was checked against;
+- `offCurriculum: {"reason": "not-covered" | "outdated", "from": "<original family>",
+  "against": "<lecture note name>", "checked": "<date>"}`.
+
+**qids never change**, here or anywhere: progress and Anki cards join on them.
+
+**A wrong key on taught material is a key fix, not a move.** The question stays `current`, the
+read notes it with `KEY?`, and it is fixed through the usual bug flag, in the JSON and the vault
+both, rekeyed to the lecture.
+
+### The procedure
+
+```bash
+python3 tools/curriculum_audit.py candidates --course pom2 --block <slug> --week N
+```
+
+lists the questions most likely to need a read: no `review`, no week, a handed-down family, or a
+`review` note edited after the bank was last written. Run it per week of the block. **It is a
+shortlist, not the check. The read is the work.** Read each candidate, and **every question
+whose lecture note Stage 1 changed this run**, against that note, the way the brief says.
+
+1. Write the verdicts to `build/curriculum_audit/<slug>_<chunk>.json`, one row per question read,
+   in the brief's format: `{qid, verdict, against, week, evidence, note}`, evidence a quote of
+   at most 200 characters from the note or slide.
+2. `python3 tools/curriculum_audit.py apply build/curriculum_audit/<slug>_<chunk>.json` moves
+   the outdated and not-covered ones. Applying the same file twice changes nothing.
+3. `python3 tools/curriculum_audit.py mark-vault --dry-run <files>`, read its line, then the
+   same without `--dry-run`. It writes the marker and callout under each moved question's
+   `# N` heading in the vault-authored notes; the form is in `med-questions` (the marker
+   section), so do not restate it here.
+4. `python3 tools/curriculum_audit.py report` **must show zero null weeks** for the block. A
+   null week is a question that will sit under a "No week" chip on the portal.
+5. Add any `KEY?` rows to `build/curriculum_audit/KEY_ISSUES.md`, for Stage 7.
+
 ## Stage 5 - rebuild the portal
 
 **Pull first.** Other sessions of hers commit to this repo, and this stage commits. Check
@@ -602,6 +687,12 @@ drift nobody asked for, in a commit about one week. **Diff the banks after it ru
 other than your new questions' `review` moved, keep the values for your new qids, `git checkout`
 the banks, re-apply your export and write just those values back. Raise the drift with her
 separately rather than shipping it under a week's commit.
+
+**The Off-curriculum set rides through the rebuild unchanged.** `rosters_from_vault.py` takes its
+week headings from the questions JSON, and a moved question carries a bare `Week N` label, so it
+now prefers a week's fuller heading and uses a bare one only when no question in that week has
+anything better. `review_lectures.py` sets `review` on an Off-curriculum question exactly as on
+any other, and the drift rule above applies to it unchanged.
 
 **For a weekly quiz or any set spanning several lectures, give each question its own
 `Tests [[NN - Lecture]]`** in its `lectureMeta`, not one list for the whole set. Route 2 takes
@@ -690,6 +781,8 @@ vault's `Attachments`, re-compresses it into `assets/figures/<hash>.jpg` and wri
   **Stage 8** sources have not arrived. **Report a pending quiz, DSSG or CBL as a normal open
   item, not as an incomplete week.**
 - Any source errors flagged rather than silently corrected.
+- **Questions moved to Off-curriculum this run, per reason** (outdated, not-covered), with their
+  qids, and any `KEY?` items written to `build/curriculum_audit/KEY_ISSUES.md`.
 
 ## Stage 8 - the late arrivals (the bonus stage)
 

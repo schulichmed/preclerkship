@@ -3157,8 +3157,9 @@
         sec.appendChild(head);
 
         if (!mine.length) {
-          sec.appendChild(el("p", "fam-empty",
-            "No " + f.name.toLowerCase() + " questions exist for this block yet. When they are written, they appear here."));
+          sec.appendChild(el("p", "fam-empty", f.key === "offcurriculum"
+            ? "Nothing in this block has been moved off the curriculum yet. A question lands here only when this year's lecture does not teach it, or teaches it differently."
+            : "No " + f.name.toLowerCase() + " questions exist for this block yet. When they are written, they appear here."));
         }
 
         var lastWeek = null, lastLecture = null;
