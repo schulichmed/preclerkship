@@ -715,7 +715,9 @@ the `review` field on ~1,600 existing questions across FoM, PoM 1 and all five P
 drift nobody asked for, in a commit about one week. **Diff the banks after it runs**: if fields
 other than your new questions' `review` moved, keep the values for your new qids, `git checkout`
 the banks, re-apply your export and write just those values back. Raise the drift with her
-separately rather than shipping it under a week's commit.
+separately rather than shipping it under a week's commit. A question carrying a `refiled` record
+keeps its review through a derive (route 0), so this rule is about the questions nobody has read,
+not about the refiled ones.
 
 **The Off-curriculum set rides through the rebuild unchanged.** `rosters_from_vault.py` takes its
 week headings from the questions JSON, and a moved question carries a bare `Week N` label, so it
