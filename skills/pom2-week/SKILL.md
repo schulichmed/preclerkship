@@ -603,6 +603,17 @@ questions, module-endo-Q21 and module-repro-Q9, whose slide now contradicts thei
 why the `outdated` test runs on this year's sources too: this year's family says where a
 question came from, not that its key still matches the slide.*
 
+**Not-covered means the question, not an option.** The thing the stem asks about has to be
+untaught. A question whose main discriminator is taught stays current even when one option
+leans on a detail the lecture skips, and the gap goes in `note` instead. *Observed 2026-10-05:
+hippo-repro-Q8 asks who is eligible for cervical screening; the lecture teaches "from about
+age 25, ever sexually active", which is the question, and only the immunocompromised-at-21
+option was untaught. It was moved and she called it fair game.* When she overrules a move, run
+`python3 tools/curriculum_audit.py restore --note "<why>" <qid>`, which returns the question to
+its original set, keeps its week, and marks it `restored` so a later `apply` leaves it alone;
+then set that row to `current` in the verdict file and rerun `vault_backup.py questions` if the
+set is HippoNotes or Reviews.
+
 ### The Off-curriculum set
 
 **A question that fails is moved, never deleted.** It goes into the `offcurriculum` family

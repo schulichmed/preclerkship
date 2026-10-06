@@ -256,7 +256,7 @@ def apply_rows(rows: list[dict], checked: str | None = None) -> None:
         block, q = hit
         week = int(row["week"])
         if row["verdict"] in MOVING_VERDICTS:
-            if q.get("offCurriculum"):
+            if q.get("offCurriculum") or q.get("restored"):
                 already[block] += 1
                 continue
             previous = q.get("family")
@@ -284,6 +284,41 @@ def apply_rows(rows: list[dict], checked: str | None = None) -> None:
                   f"already moved {already[block]:3d}")
     if missing:
         print(f"not in any bank: {', '.join(missing)}", file=sys.stderr)
+
+
+def restore(qids: list[str], note: str) -> None:
+    """Put a moved question back in the set it came from.
+
+    Her call outranks the audit: a question she says is fair game returns to
+    its original family, keeps the week it was given, and loses the
+    Off-curriculum flag and record. A `restored` record stays on the question
+    so a later `apply` leaves it alone.
+
+    Parameters
+    ----------
+    qids : list of str
+        Questions to restore.
+    note : str
+        Why, in one sentence; stored on the question.
+    """
+    banks = all_banks()
+    where = {q["qid"]: (block, q) for block, (_p, qs) in banks.items() for q in qs}
+    touched = set()
+    for qid in qids:
+        hit = where.get(qid)
+        if hit is None or not hit[1].get("offCurriculum"):
+            print(f"not off-curriculum: {qid}")
+            continue
+        block, q = hit
+        off = q.pop("offCurriculum")
+        q["family"] = off["from"]
+        q["flags"] = [f for f in (q.get("flags") or []) if f.get("title") != "Off-curriculum"]
+        q["restored"] = {"from": off["reason"], "on": datetime.date.today().isoformat(), "note": note}
+        touched.add(block)
+        print(f"restored {qid} to {off['from']}")
+    for block in touched:
+        path, qs = banks[block]
+        save_bank(path, qs)
 
 
 def report() -> None:
@@ -492,6 +527,9 @@ def main() -> None:
     a.add_argument("--checked", help="date stamped on offCurriculum.checked (default: today)")
     a.add_argument("verdicts", nargs="+")
     sub.add_parser("report", help="counts per family and the off-curriculum qids")
+    r = sub.add_parser("restore", help="put a moved question back in its original set")
+    r.add_argument("--note", required=True, help="why, in one sentence")
+    r.add_argument("qids", nargs="+")
     m = sub.add_parser("mark-vault", help="mark moved questions in the vault notes")
     m.add_argument("verdicts", nargs="+")
     m.add_argument("--dry-run", action="store_true")
@@ -502,6 +540,8 @@ def main() -> None:
         apply_rows(load_rows(args.verdicts), args.checked)
     elif args.cmd == "report":
         report()
+    elif args.cmd == "restore":
+        restore(args.qids, args.note)
     else:
         mark_vault(load_rows(args.verdicts), args.dry_run)
 
