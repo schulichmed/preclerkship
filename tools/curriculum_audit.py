@@ -28,6 +28,7 @@ from. Applying the same verdicts twice changes nothing the second time.
 """
 
 import argparse
+import datetime
 import html
 import json
 import os
@@ -41,7 +42,6 @@ VAULT = Path(os.environ.get("MEDWIKI", "/mnt/c/Users/nsims/medwiki"))
 QUESTION_NOTES = VAULT / "00 - Practice Questions"
 LECTURE_NOTES = VAULT / "01 - Lectures" / "99 - PoM 2"
 
-CHECKED = "2026-10-05"
 OFF = "offcurriculum"
 MOVING_VERDICTS = ("outdated", "not-covered")
 
@@ -233,7 +233,7 @@ def all_banks(course: str = "pom2") -> dict[str, tuple[Path, list[dict]]]:
     return out
 
 
-def apply_rows(rows: list[dict]) -> None:
+def apply_rows(rows: list[dict], checked: str | None = None) -> None:
     """Re-file every outdated or not-covered question, and fill null weeks.
 
     Parameters
@@ -266,7 +266,8 @@ def apply_rows(rows: list[dict]) -> None:
             flag = {"type": "note", "title": "Off-curriculum", "html": off_flag_html(row)}
             q["flags"] = [flag] + list(q.get("flags") or [])
             q["offCurriculum"] = {"reason": row["verdict"], "from": previous,
-                                  "against": row["against"], "checked": CHECKED}
+                                  "against": row["against"],
+                                  "checked": checked or datetime.date.today().isoformat()}
             moved[block] += 1
             touched.add(block)
         elif row["verdict"] == "current" and q.get("week") is None:
@@ -488,6 +489,7 @@ def main() -> None:
     c.add_argument("--block", required=True, choices=sorted(BLOCKS))
     c.add_argument("--week", type=int)
     a = sub.add_parser("apply", help="move outdated and not-covered questions")
+    a.add_argument("--checked", help="date stamped on offCurriculum.checked (default: today)")
     a.add_argument("verdicts", nargs="+")
     sub.add_parser("report", help="counts per family and the off-curriculum qids")
     m = sub.add_parser("mark-vault", help="mark moved questions in the vault notes")
@@ -497,7 +499,7 @@ def main() -> None:
     if args.cmd == "candidates":
         candidates(args.course, args.block, args.week)
     elif args.cmd == "apply":
-        apply_rows(load_rows(args.verdicts))
+        apply_rows(load_rows(args.verdicts), args.checked)
     elif args.cmd == "report":
         report()
     else:
