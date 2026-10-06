@@ -20,8 +20,12 @@ Output:  a table per note on stdout: the deck used, then one line per section
     python tools/inherited_sections.py --block endo --note "09 - Introduction to Obesity"
     python tools/inherited_sections.py --block repro --json build/inherited_sections/repro.json
 
-Verdicts: ``slides`` when some slide with at least SLIDE_MIN_TERMS distinct
-terms has at least SLIDES_AT of them inside the section; ``inherited`` when no
+Verdicts: ``slides`` when the section's heading has at least
+HEADING_MIN_TERMS content terms and every one of them is on a single slide
+(flag ``heading-on-slide``; short sections cannot hold half a slide; summary
+slides such as "Take home messages" do not count), or when
+some slide with at least SLIDE_MIN_TERMS distinct terms has at least SLIDES_AT
+of them inside the section; ``inherited`` when no
 slide does; ``no-deck`` when no deck was found, it could not be opened, or its
 text layer holds fewer than DECK_MIN_TERMS distinct terms (image-only slides).
 Each deck is judged on its own: one with no usable text is named in the deck
@@ -49,7 +53,9 @@ import argparse
 import json
 import os
 import re
+import shutil
 import sys
+import tempfile
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Callable
@@ -80,6 +86,15 @@ SLIDES_AT = 0.5          # a section is taught when some slide is at least half 
 SLIDE_MIN_TERMS = 6      # a slide with fewer distinct terms (title-only, image-only) does not count
 SECTION_MIN_TERMS = 10   # a section with fewer distinct terms is thin and takes its parent's verdict
 DECK_MIN_TERMS = 25      # a deck with fewer distinct terms has no usable text layer
+# A summary slide lists topics without teaching them: on the neonatal deck the
+# "Take home messages" slide alone held both Newborn Transition and Neonatal
+# Sepsis. Objectives, overview and review slides stay (Leopold Maneuvers is
+# only on the Objectives slide; "Review BV, Yeast, ... Atrophic Vaginitis"
+# teaches). Matched against a slide's first three non-empty lines.
+SUMMARY_SLIDE_RE = re.compile(
+    r"\b(take[- ]?home|take[- ]?aways?|summary|conclusions?|key (points|messages)|outline|agenda|contents)\b",
+    re.I)
+HEADING_MIN_TERMS = 2    # a heading needs this many content terms, all on one slide, to count as taught
 NEAR_THRESHOLD = 0.4     # a section scoring from here up to SLIDES_AT is too close to call
 DENSE_TERMS = 80         # a deck averaging more terms per counted page is a handout
 SPARSE_SHARE = 0.5       # a deck with fewer of its pages counted is mostly image-only
@@ -474,6 +489,36 @@ def embed_text(name: str, index: dict[str, Path]) -> str:
     return text
 
 
+def strip_marks(lines: list[str]) -> list[str]:
+    """Blank this tool's own ``INHERITED_MARK`` callouts so they are never scored.
+
+    Parameters
+    ----------
+    lines : list of str
+        Note lines.
+
+    Returns
+    -------
+    list of str
+        The same number of lines, with each INHERITED_MARK line and the ``>``
+        lines that continue it (up to the next callout header ``> [!``)
+        replaced by empty strings. The callout names the deck file, whose
+        words would otherwise match the deck's title slide.
+    """
+    out = list(lines)
+    k = 0
+    while k < len(out):
+        if out[k].startswith(INHERITED_MARK):
+            out[k] = ""
+            k += 1
+            while k < len(out) and out[k].startswith(">") and not out[k].startswith("> [!"):
+                out[k] = ""
+                k += 1
+        else:
+            k += 1
+    return out
+
+
 def sections(body: list[str], body_start: int, embed: Callable[[str], str]) -> list[Section]:
     """Split a note body at its top heading level and the next level present.
 
@@ -492,8 +537,9 @@ def sections(body: list[str], body_start: int, embed: Callable[[str], str]) -> l
         Top-level sections with their children; each section's ``text``
         includes its children's and every transclusion's text. A body with
         no heading at all is one section called ``(body)`` at line
-        ``body_start``.
+        ``body_start``. INHERITED_MARK callouts are left out (``strip_marks``).
     """
+    body = strip_marks(body)
     levels = sorted({len(m.group(1)) for ln in body if (m := HEADING_RE.match(ln))})
     if not levels:
         text = "\n".join(body)
@@ -568,12 +614,17 @@ def deck_pages(path: Path) -> list[str]:
         return data["pages"]
     import pymupdf
     pymupdf.TOOLS.mupdf_display_errors(False)   # a damaged stream is reported once, as no usable text
-    try:
-        doc = pymupdf.open(path)
-    except Exception as exc:  # pymupdf raises its own hierarchy
-        raise RuntimeError(f"cannot open {path.name}: {exc}") from exc
-    with doc:
-        pages = [page.get_text() for page in doc]
+    # pymupdf's random reads over /mnt/c can loop (12 GB read for a 2.5 MB
+    # deck); one sequential copy to a local temp file reads instantly
+    with tempfile.TemporaryDirectory() as tmp:
+        local = Path(tmp) / path.name
+        try:
+            shutil.copyfile(path, local)
+            doc = pymupdf.open(local)
+        except Exception as exc:  # pymupdf raises its own hierarchy
+            raise RuntimeError(f"cannot open {path.name}: {exc}") from exc
+        with doc:
+            pages = [page.get_text() for page in doc]
     try:
         cache.parent.mkdir(parents=True, exist_ok=True)
         cache.write_text(json.dumps({"key": key, "pages": pages}, ensure_ascii=False), encoding="utf-8")
@@ -687,7 +738,40 @@ def slide_coverage(section_terms: set[str], slides: list[set[str]]) -> float:
     return best
 
 
-def judge(secs: list[Section], slides: list[set[str]] | None) -> None:
+def is_summary_slide(page: str) -> bool:
+    """Whether a slide's title (first three non-empty lines) marks it a summary slide."""
+    lines = [ln for ln in page.split("\n") if ln.strip()]
+    return bool(SUMMARY_SLIDE_RE.search(" ".join(lines[:3])))
+
+
+def heading_terms(heading: str) -> set[str]:
+    """The content terms of a heading: ``terms`` minus TITLE_NOISE."""
+    return {t for t in terms(heading) if t not in TITLE_NOISE}
+
+
+def heading_on_slide(heading: str, slides: list[set[str]]) -> bool:
+    """Whether a heading's content terms all sit on one slide.
+
+    Parameters
+    ----------
+    heading : str
+        Section heading.
+    slides : list of set of str
+        Each slide's distinct terms (every slide, however short, except
+        summary slides; see ``read_deck``).
+
+    Returns
+    -------
+    bool
+        True when the heading has at least HEADING_MIN_TERMS content terms
+        and some single slide holds all of them.
+    """
+    want = heading_terms(heading)
+    return len(want) >= HEADING_MIN_TERMS and any(want <= sl for sl in slides)
+
+
+def judge(secs: list[Section], slides: list[set[str]] | None,
+          heading_slides: list[set[str]] | None = None) -> None:
     """Set score and verdict on every section and child.
 
     Parameters
@@ -696,6 +780,14 @@ def judge(secs: list[Section], slides: list[set[str]] | None) -> None:
         From ``sections``.
     slides : list of set of str or None
         Per-slide terms, or None when the note has no usable deck.
+    heading_slides : list of set of str or None
+        The slides a heading may be found on; ``slides`` when None.
+
+    Notes
+    -----
+    A section whose heading is on one slide is ``slides`` with its coverage
+    score kept and ``heading-on-slide`` in its flags; every other section is
+    judged by coverage alone.
     """
     for s in secs:
         for item, parent in [(s, None)] + [(c, s) for c in s.children]:
@@ -708,9 +800,13 @@ def judge(secs: list[Section], slides: list[set[str]] | None) -> None:
                 continue
             item.score = slide_coverage(own, slides)
             item.verdict = "slides" if item.score >= SLIDES_AT else "inherited"
+            if item.verdict == "inherited" and heading_on_slide(
+                    item.heading, slides if heading_slides is None else heading_slides):
+                item.verdict = "slides"
+                item.flags.append("heading-on-slide")
 
 
-def read_deck(path: Path) -> tuple[DeckStat, list[set[str]]]:
+def read_deck(path: Path) -> tuple[DeckStat, list[set[str]], list[set[str]]]:
     """Read one deck and describe its text layer.
 
     Parameters
@@ -721,23 +817,24 @@ def read_deck(path: Path) -> tuple[DeckStat, list[set[str]]]:
     Returns
     -------
     tuple
-        ``(stat, slides)``: the deck's DeckStat and each page's distinct
-        terms; ``slides`` is empty when ``stat.problem`` is set.
+        ``(stat, slides, heading_slides)``: the deck's DeckStat, each page's
+        distinct terms, and the same for the pages that are not summary
+        slides; both lists are empty when ``stat.problem`` is set.
     """
     stat = DeckStat(path)
     try:
         pages = deck_pages(path)
     except RuntimeError as exc:
         stat.problem = f"unreadable: {exc}"
-        return stat, []
+        return stat, [], []
     slides = [terms(page) for page in pages]
     counted = [len(t) for t in slides if len(t) >= SLIDE_MIN_TERMS]
     stat.pages, stat.counted = len(pages), len(counted)
     stat.mean_terms = sum(counted) / len(counted) if counted else 0.0
     if len(set().union(*slides)) < DECK_MIN_TERMS:
         stat.problem = "no usable text"
-        return stat, []
-    return stat, slides
+        return stat, [], []
+    return stat, slides, [t for t, page in zip(slides, pages) if not is_summary_slide(page)]
 
 
 def audit_note(note: Path, files: list[Path], index: dict[str, Path]) -> NoteResult:
@@ -769,9 +866,9 @@ def audit_note(note: Path, files: list[Path], index: dict[str, Path]) -> NoteRes
     if not secs:
         label = ", ".join(p.name for p in paths) or "no deck found"
         return NoteResult(note, paths, " ".join([label] + notes), [], "no body", how, [], warnings)
-    stats, good, slides = [], [], []
+    stats, good, slides, heading_slides = [], [], [], []
     for p in paths:
-        stat, deck_slides = read_deck(p)
+        stat, deck_slides, deck_heading_slides = read_deck(p)
         stats.append(stat)
         if stat.problem:
             notes.append(f"({stat.problem})" if stat.problem.startswith("unreadable")
@@ -779,6 +876,7 @@ def audit_note(note: Path, files: list[Path], index: dict[str, Path]) -> NoteRes
             continue
         good.append(p)
         slides.extend(deck_slides)
+        heading_slides.extend(deck_heading_slides)
         if stat.mean_terms > DENSE_TERMS:
             warnings.append("dense")
         if stat.counted < SPARSE_SHARE * stat.pages:
@@ -786,10 +884,10 @@ def audit_note(note: Path, files: list[Path], index: dict[str, Path]) -> NoteRes
     if any(st.problem for st in stats):
         warnings.append("unusable-deck")
     label = " ".join([", ".join(p.name for p in good) or "no deck found"] + notes)
-    judge(secs, slides if good else None)
+    judge(secs, slides if good else None, heading_slides)
     result = NoteResult(note, good, label, secs, "", how, stats, [])
     for sec in result.flat():
-        if sec.score is not None and NEAR_THRESHOLD <= sec.score < SLIDES_AT:
+        if sec.verdict == "inherited" and sec.score is not None and NEAR_THRESHOLD <= sec.score < SLIDES_AT:
             sec.flags.append("near-threshold")
     result.warnings = list(dict.fromkeys(warnings))
     return result
@@ -834,7 +932,7 @@ def print_table(result: NoteResult) -> None:
     for s in result.flat():
         name = ("#" * s.level + " " if s.level else "") + s.heading
         score = "-" if s.score is None else f"{s.score:.2f}"
-        mark = " ~ near-threshold" if "near-threshold" in s.flags else ""
+        mark = "".join(f" ~ {f}" for f in s.flags)
         print(f"   {name[:60]:60s} {s.words:5d} {score:>5s}  {s.verdict}{mark}")
 
 
@@ -887,9 +985,10 @@ def main() -> None:
     nodeck = [r.note.stem for r in results if not r.skipped and not r.decks]
     print(f"\n{len(results)} notes, {count(results)} inherited sections, {len(nodeck)} without a usable deck")
     near = sum(1 for r in results for s in r.flat() if "near-threshold" in s.flags)
+    by_heading = sum(1 for r in results for s in r.flat() if "heading-on-slide" in s.flags)
     print(f"{len(warned)} notes carry a warning ({count(warned)} inherited sections); "
           f"{len(clean)} do not ({count(clean)} inherited sections); "
-          f"{near} sections flagged near-threshold")
+          f"{near} sections flagged near-threshold; {by_heading} taught by heading-on-slide")
     for stem in nodeck:
         print(f"   no deck: {stem}", file=sys.stderr)
     if args.json:
