@@ -219,4 +219,6 @@ def test_include_naming_nothing_is_reported(vault, capsys):
 
 def test_leave_out_wins_over_include(vault, capsys):
     assert mi.mark("repro", dry=True, include={SEPSIS}, leave_out={SEPSIS}) == 1
-    assert f"skipped: left out by reader: {SEPSIS}" in capsys.readouterr().out
+    out = capsys.readouterr().out
+    assert f"skipped: left out by reader: {SEPSIS}" in out
+    assert "include matched nothing" not in out and "included:" not in out

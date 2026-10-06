@@ -191,9 +191,10 @@ image-only or partial deck, a deck named in `DECKS` that is missing) and a secti
 runs this stage, which may be an agent working the audit brief. `mark_inherited.py` never marks
 them on its own: it lists each one as `skipped:` with the reason. A section the reader confirms
 no slide teaches is marked with
-`python3 tools/mark_inherited.py --block <slug> --sections build/inherited_sections/<slug>.json --include "<NN - Lecture>: <heading>"`,
-which takes that one section past the gate. Run it with `--dry-run` first and look for its
-`included:` line, and add `--note "<NN - Lecture>"` to touch that note alone.
+`python3 tools/mark_inherited.py --block <slug> --sections build/inherited_sections/<slug>.json --note "<NN - Lecture>" --include "<NN - Lecture>: <heading>" --dry-run`,
+which takes that one section past the gate. Read the `included:` line and run it again without
+`--dry-run`. Keep the `--note`: without it the run covers the whole block and also marks every
+other inherited section that has no warning or flag, read or not.
 
 In the table, a `~` after a verdict marks a flag, not only a near miss. `~ near-threshold` is a
 section too close to call. `~ heading-on-slide` is a section whose heading words all sit on one
@@ -722,7 +723,8 @@ dense handout, an image-only or partial deck, a missing deck) or a section flagg
 goes in. The dump shows a note's warnings on its `deck:` line. The reader is whoever runs this
 stage, which may be an agent working the audit brief, and a section the reader confirms no slide
 teaches is marked with
-`python3 tools/mark_inherited.py --block <slug> --sections build/inherited_sections/<slug>.json --include "<NN - Lecture>: <heading>"`.
+`python3 tools/mark_inherited.py --block <slug> --sections build/inherited_sections/<slug>.json --note "<NN - Lecture>" --include "<NN - Lecture>: <heading>" --dry-run`.
+Read the `included:` line and run it again without `--dry-run`.
 
 1. Write the verdicts to `build/curriculum_audit/<slug>_<chunk>.json`, one row per question read,
    in the brief's format: `{qid, verdict, against, week, slides, evidence, note}`, verdict one of

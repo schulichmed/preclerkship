@@ -273,11 +273,11 @@ def mark_note(rec: dict, dry: bool, leave_out: set[str] = frozenset(),
     lines = note.read_text(encoding="utf-8").split("\n")
     plan = []
     for sec in todo:
+        if seen is not None and section_key(rec, sec) in include:
+            seen.add(section_key(rec, sec))       # matched, even when a leave-out wins
         reason = skip_reason(rec, sec, leave_out, include)
         if not reason and section_key(rec, sec) in include:
             print(f"included: {section_key(rec, sec)}")
-            if seen is not None:
-                seen.add(section_key(rec, sec))
         at = None if reason else find_heading(lines, sec)
         if not reason and at is None:
             reason = "heading not found"
