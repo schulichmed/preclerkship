@@ -108,7 +108,7 @@ def week_labels(course: str = "pom2") -> dict[int, str]:
 
 
 def vault_lecture(block: str, week: int, against: str) -> dict | None:
-    """The `review` record for a lecture named as `NN - Title`, if the vault has it.
+    """The `review` record for a lecture note's exact on-disk name, if the vault has it.
 
     Parameters
     ----------
@@ -350,15 +350,20 @@ def apply_rows(rows: list[dict], checked: str | None = None) -> None:
             if rec is None:
                 refused.append(f"{row['qid']}: no vault note '{row['against']}' under week {week}")
                 continue
-            if q.get("week") == week and q.get("lecture") == rec["t"] and q.get("refiled"):
+            # already filed here: by an earlier refile, or by its source all along
+            if q.get("week") == week and q.get("lecture") == rec["t"] and (
+                    q.get("refiled") or q.get("review") == [rec]):
+                if q.get("refiled"):
+                    q["weekLabel"] = family_label(banks[block][1], q.get("family"), week,
+                                                  q["qid"]) or q["weekLabel"]
                 rerefiled[block] += 1
+                touched.add(block)
                 continue
             # `from` is where the question was first filed; a later refile keeps it
             origin = (q.get("refiled") or {}).get("from") or {
                 "block": block, "week": q.get("week"), "lecture": q.get("lecture")}
             q["refiled"] = {"from": origin, "on": today}
             q["week"] = week
-            q["weekLabel"] = labels.get(week, week_label(week))
             q["lecture"] = rec["t"]
             q["review"] = [rec]
             if target != block:
@@ -366,6 +371,8 @@ def apply_rows(rows: list[dict], checked: str | None = None) -> None:
                 banks[target][1].append(q)
                 where[q["qid"]] = (target, q)
                 touched.add(target)
+            q["weekLabel"] = (family_label(banks[target][1], q.get("family"), week, q["qid"])
+                              or labels.get(week, week_label(week)))
             refiled[block] += 1
             touched.add(block)
             continue
@@ -391,7 +398,7 @@ def apply_rows(rows: list[dict], checked: str | None = None) -> None:
             touched.add(block)
     for block in touched:
         path, qs = banks[block]
-        save_bank(path, qs)
+        save_bank(path, in_week_order(qs))
     for block in banks:
         if moved[block] or weeked[block] or already[block] or refiled[block] or rerefiled[block]:
             print(f"{block:6s} moved {moved[block]:3d}  week filled {weeked[block]:3d}  "
@@ -401,6 +408,72 @@ def apply_rows(rows: list[dict], checked: str | None = None) -> None:
         print(f"refused: {line}", file=sys.stderr)
     if missing:
         print(f"not in any bank: {', '.join(missing)}", file=sys.stderr)
+
+
+def in_week_order(questions: list[dict]) -> list[dict]:
+    """A bank put back in week order, each lecture's questions together.
+
+    The portal draws a week heading whenever `weekLabel` changes and a lecture
+    heading whenever `lecture` changes, in bank order. A question refiled in
+    place, or appended after a move between banks, would open a second heading
+    for a week or lecture already shown. The sort is by week, then by where
+    that week's lecture first appears in the bank; it is stable, so questions
+    keep their order within a lecture and a sorted bank comes back unchanged.
+    A week that carries two labels (endo Week 1's CBL and DSSG cases) keeps
+    each label's questions together. Questions with no week go last.
+
+    Parameters
+    ----------
+    questions : list of dict
+        A bank, in file order.
+
+    Returns
+    -------
+    list of dict
+        The same questions, reordered.
+    """
+    first: dict[tuple, int] = {}
+    for i, q in enumerate(questions):
+        first.setdefault((q.get("week"), q.get("weekLabel")), i)
+        first.setdefault((q.get("week"), q.get("weekLabel"), q.get("lecture")), i)
+
+    def key(q: dict) -> tuple:
+        week, label = q.get("week"), q.get("weekLabel")
+        return (week is None, week if week is not None else 0,
+                first[(week, label)], first[(week, label, q.get("lecture"))])
+
+    return sorted(questions, key=key)
+
+
+def family_label(questions: list[dict], family: str, week: int, qid: str) -> str | None:
+    """The `weekLabel` a family's other questions in a week already carry, if any.
+
+    A refiled question takes its neighbours' label, so it sits under their
+    week heading rather than opening a second one with different wording.
+
+    Parameters
+    ----------
+    questions : list of dict
+        The bank the question is filed in.
+    family : str
+        The question's family.
+    week : int
+        The week it is filed under.
+    qid : str
+        The question itself, which does not count as its own neighbour.
+
+    Returns
+    -------
+    str or None
+        The most common such label, or None when the family has nothing else
+        in that week.
+    """
+    counts: dict[str, int] = {}
+    for q in questions:
+        if q.get("family") == family and q.get("week") == week and q["qid"] != qid \
+                and q.get("weekLabel"):
+            counts[q["weekLabel"]] = counts.get(q["weekLabel"], 0) + 1
+    return max(counts, key=counts.get) if counts else None
 
 
 def restore(qids: list[str], note: str) -> None:
@@ -632,9 +705,10 @@ def mark_vault(rows: list[dict], dry: bool) -> None:
             not_found.append(f"{row['qid']} (no note)")
             continue
         if row["verdict"] == REFILING_VERDICT:
-            block = [f"<!-- set: refiled | week: {int(row['week'])} | lecture: {row['against']} "
+            # not a `set:` marker: that one names a family, and an export reads it
+            block = [f"<!-- refiled | week: {int(row['week'])} | lecture: {row['against']} "
                      f"| qid: {row['qid']} -->", ""]
-            marker = "<!-- set: refiled "
+            marker = "<!-- refiled "
         else:
             sentence = off_sentence(row["verdict"], row["against"],
                                     (row.get("evidence") or "").strip(), "**%s**")

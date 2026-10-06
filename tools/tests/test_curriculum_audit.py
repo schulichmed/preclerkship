@@ -180,3 +180,70 @@ def test_rerefile_keeps_original_from(repo):
     assert q["lecture"] == "Approach to First Trimester Bleeding & Ultrasound"
     assert q["refiled"] == {"from": {"block": "repro", "week": 6, "lecture": "Labour"},
                             "on": "2026-10-07"}
+
+
+def test_refiled_questions_join_their_new_week(repo):
+    """A refile moves the question next to its new week's questions, so no heading repeats."""
+    qs = [question("hippo-repro-Q40", 5, "Week 5 - Pregnancy", "Pregnancy"),
+          question("hippo-repro-Q50", 6, "Week 6 - Labour", "Labour"),
+          question("hippo-repro-Q47", 6, "Week 6 - Labour", "Labour"),
+          question("hippo-repro-Q41", 5, "Week 5 - Pregnancy", "Pregnancy"),
+          question("hippo-repro-Q48", 6, "Week 6 - Labour", "Labour")]
+    (repo / "pom2/data/questions/repro.json").write_text(json.dumps(qs), encoding="utf-8")
+    rows = [{"qid": qid, "verdict": "misfiled", "week": 5,
+             "against": "11 - Approach to First Trimester Bleeding & Ultrasound",
+             "evidence": "", "note": ""} for qid in ("hippo-repro-Q48", "hippo-repro-Q47")]
+    ca.apply_rows(rows, checked="2026-10-06")
+    after = bank(repo, "repro")
+    assert [q["qid"] for q in after] == ["hippo-repro-Q40", "hippo-repro-Q41", "hippo-repro-Q47",
+                                         "hippo-repro-Q48", "hippo-repro-Q50"]
+    weeks = [q["week"] for q in after]
+    assert weeks == sorted(weeks)
+
+
+def test_already_filed_there_is_not_refiled(repo, capsys):
+    """A question its source already filed under the row's lecture gains no `refiled` record."""
+    qs = bank(repo, "repro")
+    rec = {"w": 5, "n": "11", "t": "Approach to First Trimester Bleeding & Ultrasound"}
+    qs[0].update(week=5, weekLabel="Week 5 - Pregnancy", lecture=rec["t"], review=[rec])
+    (repo / "pom2/data/questions/repro.json").write_text(json.dumps(qs), encoding="utf-8")
+    ca.apply_rows([{"qid": "hippo-repro-Q47", "verdict": "misfiled", "week": 5,
+                    "against": "11 - Approach to First Trimester Bleeding & Ultrasound",
+                    "evidence": "", "note": ""}], checked="2026-10-06")
+    assert "refiled" not in bank(repo, "repro")[0]
+    assert "already refiled   1" in capsys.readouterr().out
+
+
+def test_mark_vault_writes_refiled_marker_once(repo, tmp_path, monkeypatch, capsys):
+    """A misfiled vault question gets a `refiled` comment, not a `set:` family marker."""
+    qs = bank(repo, "repro") + [question("workbook-repro-Q5", 6, "Week 6 - Labour", "Labour",
+                                         family="workbook")]
+    (repo / "pom2/data/questions/repro.json").write_text(json.dumps(qs), encoding="utf-8")
+    notes = tmp_path / "vault" / "00 - Practice Questions"
+    (notes / "Preclerkship Workbook").mkdir(parents=True)
+    note = notes / "Preclerkship Workbook" / "Preclerkship Workbook - Reproduction.md"
+    note.write_text("# 4\nstem four\n\n# 5\nstem five\n", encoding="utf-8")
+    monkeypatch.setattr(ca, "QUESTION_NOTES", notes)
+    row = {"qid": "workbook-repro-Q5", "verdict": "misfiled", "week": 5,
+           "against": "11 - Approach to First Trimester Bleeding & Ultrasound",
+           "evidence": "", "note": ""}
+    ca.mark_vault([row], dry=False)
+    lines = note.read_text(encoding="utf-8").split("\n")
+    i = lines.index("# 5")
+    assert lines[i + 1] == ("<!-- refiled | week: 5 | lecture: 11 - Approach to First Trimester "
+                            "Bleeding & Ultrasound | qid: workbook-repro-Q5 -->")
+    assert "set:" not in note.read_text(encoding="utf-8")
+    assert "marked 1," in capsys.readouterr().out
+    ca.mark_vault([row], dry=False)
+    assert "marked 0, already marked 1" in capsys.readouterr().out
+
+
+def test_refiled_question_takes_its_neighbours_week_label(repo):
+    """Where its family already has a heading for the week, a refiled question uses that one."""
+    qs = [question("hippo-repro-Q40", 5, "Week 5 - Older wording", "Pregnancy")] + bank(repo, "repro")
+    (repo / "pom2/data/questions/repro.json").write_text(json.dumps(qs), encoding="utf-8")
+    ca.apply_rows([{"qid": "hippo-repro-Q47", "verdict": "misfiled", "week": 5,
+                    "against": "11 - Approach to First Trimester Bleeding & Ultrasound",
+                    "evidence": "", "note": ""}], checked="2026-10-06")
+    moved = [q for q in bank(repo, "repro") if q["qid"] == "hippo-repro-Q47"][0]
+    assert moved["weekLabel"] == "Week 5 - Older wording"
