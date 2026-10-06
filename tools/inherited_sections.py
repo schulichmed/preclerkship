@@ -31,11 +31,13 @@ SECTION_MIN_TERMS distinct terms) takes its parent's verdict.
 Warnings: a note whose verdicts are not reliable enough to mark the vault
 carries a warning. ``dense`` (a deck averages over DENSE_TERMS terms per
 counted page: a handout, not slides), ``sparse`` (fewer than SPARSE_SHARE of a
-deck's pages reach SLIDE_MIN_TERMS: image-only slides), ``near-threshold``
-(a section scores in [NEAR_THRESHOLD, SLIDES_AT)), ``partial`` (PARTIAL says the
-decks on disk cover only part of the lecture), ``missing-deck`` (a DECKS name
-is not on disk) and ``unusable-deck`` (a deck has no usable text or cannot be
-opened). Verdicts are kept; a later step that marks the vault skips the note.
+deck's pages reach SLIDE_MIN_TERMS: image-only slides), ``partial`` (PARTIAL
+says the decks on disk cover only part of the lecture), ``missing-deck`` (a
+DECKS name is not on disk) and ``unusable-deck`` (a deck has no usable text or
+cannot be opened). Verdicts are kept; a later step that marks the vault skips
+the note. One section scoring in [NEAR_THRESHOLD, SLIDES_AT) is too close to
+call: it carries the section flag ``near-threshold`` (``~`` after its verdict
+in the table) and that section alone is skipped.
 Extracted deck text is cached under build/inherited_sections/deck_text/ and
 the vault's note index under build/inherited_sections/, both keyed so a
 changed file or vault is read again. Sections are the body's top heading level and the next level present
@@ -206,6 +208,8 @@ class Section:
         Best slide coverage, None when thin or no deck.
     verdict : str
         ``slides``, ``inherited`` or ``no-deck``.
+    flags : list of str
+        ``["near-threshold"]`` when the score is in [NEAR_THRESHOLD, SLIDES_AT).
     children : list of Section
         Sections at the next heading level under this one.
     """
@@ -217,6 +221,7 @@ class Section:
     score: float | None = None
     verdict: str = ""
     children: list["Section"] = field(default_factory=list)
+    flags: list[str] = field(default_factory=list)
 
 
 @dataclass
@@ -783,8 +788,9 @@ def audit_note(note: Path, files: list[Path], index: dict[str, Path]) -> NoteRes
     label = " ".join([", ".join(p.name for p in good) or "no deck found"] + notes)
     judge(secs, slides if good else None)
     result = NoteResult(note, good, label, secs, "", how, stats, [])
-    if any(s.score is not None and NEAR_THRESHOLD <= s.score < SLIDES_AT for s in result.flat()):
-        warnings.append("near-threshold")
+    for sec in result.flat():
+        if sec.score is not None and NEAR_THRESHOLD <= sec.score < SLIDES_AT:
+            sec.flags.append("near-threshold")
     result.warnings = list(dict.fromkeys(warnings))
     return result
 
@@ -828,7 +834,8 @@ def print_table(result: NoteResult) -> None:
     for s in result.flat():
         name = ("#" * s.level + " " if s.level else "") + s.heading
         score = "-" if s.score is None else f"{s.score:.2f}"
-        print(f"   {name[:60]:60s} {s.words:5d} {score:>5s}  {s.verdict}")
+        mark = " ~ near-threshold" if "near-threshold" in s.flags else ""
+        print(f"   {name[:60]:60s} {s.words:5d} {score:>5s}  {s.verdict}{mark}")
 
 
 def write_json(results: list[NoteResult], out: Path) -> None:
@@ -850,7 +857,7 @@ def write_json(results: list[NoteResult], out: Path) -> None:
             "deck_label": r.deck_label, "skipped": r.skipped, "match": r.match,
             "warnings": r.warnings, "deck_stats": [st.to_json() for st in r.deck_stats],
             "sections": [{"level": s.level, "heading": s.heading, "line": s.line, "words": s.words,
-                          "score": s.score, "verdict": s.verdict,
+                          "score": s.score, "verdict": s.verdict, "flags": s.flags,
                           "parent": None if s in r.sections else next(
                               t.heading for t in r.sections if s in t.children)}
                          for s in r.flat()]})
@@ -879,8 +886,10 @@ def main() -> None:
     clean = [r for r in results if not r.warnings]
     nodeck = [r.note.stem for r in results if not r.skipped and not r.decks]
     print(f"\n{len(results)} notes, {count(results)} inherited sections, {len(nodeck)} without a usable deck")
+    near = sum(1 for r in results for s in r.flat() if "near-threshold" in s.flags)
     print(f"{len(warned)} notes carry a warning ({count(warned)} inherited sections); "
-          f"{len(clean)} do not ({count(clean)} inherited sections)")
+          f"{len(clean)} do not ({count(clean)} inherited sections); "
+          f"{near} sections flagged near-threshold")
     for stem in nodeck:
         print(f"   no deck: {stem}", file=sys.stderr)
     if args.json:

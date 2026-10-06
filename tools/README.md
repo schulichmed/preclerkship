@@ -233,9 +233,11 @@ match would guess wrong.
 
 A note whose scores are not trustworthy carries warnings in its table header
 and JSON: `dense` (a handout, not slides), `sparse` (mostly image-only
-slides), `near-threshold`, `partial` (only part of the lecture's decks are on
-disk), `missing-deck` and `unusable-deck`. Its verdicts are kept, but nothing
-should mark the vault from them. Each deck's text is cached under
+slides), `partial` (only part of the lecture's decks are on disk),
+`missing-deck` and `unusable-deck`. Its verdicts are kept, but nothing should
+mark the vault from them. A single section scoring between 0.4 and 0.5 is
+flagged `near-threshold` (`~` in its table row, `flags` in the JSON) and only
+that section is skipped. Each deck's text is cached under
 `build/inherited_sections/deck_text/` and reread only when the file changes,
 so the second run of a block is fast.
 

@@ -223,10 +223,21 @@ def test_sparse_deck_warns(vault, monkeypatch):
     assert {s.verdict for s in result.flat()} == {"slides", "inherited"}   # verdicts kept
 
 
-def test_near_threshold_and_partial_warn(vault, monkeypatch):
-    monkeypatch.setattr(isx, "NEAR_THRESHOLD", 0.0)
+def test_near_threshold_is_a_section_flag_and_partial_a_note_warning(vault, monkeypatch, tmp_path):
     monkeypatch.setattr(isx, "PARTIAL", {STEM: "only part of the lecture's decks"})
-    assert audit(vault).warnings == ["partial", "near-threshold"]
+    result = audit(vault)
+    assert result.warnings == ["partial"]
+    assert all(s.flags == [] for s in result.flat())
+    monkeypatch.setattr(isx, "NEAR_THRESHOLD", 0.0)
+    result = audit(vault)
+    assert result.warnings == ["partial"]                 # never a note-level warning
+    by = {s.heading: s for s in result.flat()}
+    assert by["Neonatal Resuscitation"].flags == ["near-threshold"]   # inherited, score 0.0
+    assert by["Apgar Score"].flags == [] and by["Thin"].flags == []   # taught; thin has no score
+    out = tmp_path / "build" / "near.json"
+    isx.write_json([result], out)
+    secs = {s["heading"]: s for s in json.loads(out.read_text(encoding="utf-8"))[0]["sections"]}
+    assert secs["Neonatal Resuscitation"]["flags"] == ["near-threshold"] and secs["Apgar Score"]["flags"] == []
 
 
 def test_missing_override_name_is_reported(vault, monkeypatch):
