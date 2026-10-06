@@ -15,7 +15,8 @@ Purpose: the 2026-10-05 audit read questions against whole lecture notes, and
 Author:  Noor Sims
 Date:    2026-10-06
 Input:   pom2/data/questions/<block>.json; the earlier verdict rows
-         (``*_w*.json``, ``*_refile*.json``) in the audit directory; the saved
+         (``*_w*.json``, ``*_refile*.json``, ``*_slides*.json``, never a
+         ``*.prefill*.json``) in the audit directory; the saved
          section verdicts of ``inherited_sections.py --json`` (default
          build/inherited_sections/<block>.json); the vault notes and the decks
          inherited_sections.py reads
@@ -33,6 +34,11 @@ quote, and each deck is still read once for the evidence check. Without the
 records file every note is rescored with ``inherited_sections.audit_note``.
 A lecture with no deck on disk cannot be judged against its slides: its
 questions stay `current` with note "NO-DECK" and are listed for export.
+
+The saved records are only as fresh as the notes they were scored from. A
+note changed after its records file was written (Stage 1 rewrote it, or a
+callout went in) is named on stderr: rerun ``inherited_sections.py --json``
+first so the quotes are placed against this note's sections.
 """
 
 import argparse
@@ -59,8 +65,9 @@ FAMILIES = ("hipponotes", "workbook")
 
 PREFILL = "{block}_slides.prefill.json"
 DUMP = "{block}_slides.txt"
-# verdict files the earlier reads wrote; the slides files this tool writes match neither
-EVIDENCE_GLOBS = ("*_w*.json", "*_refile*.json")
+# verdict files the earlier reads wrote, the slides reads included; the prefill this
+# tool writes is a starting point, not a read, and is never evidence
+EVIDENCE_GLOBS = ("*_w*.json", "*_refile*.json", "*_slides*.json")
 
 
 def audit_dir() -> Path:
@@ -73,8 +80,34 @@ def strip_html(text: str | None) -> str:
     return html.unescape(re.sub(r"<[^>]+>", " ", text or "")).strip()
 
 
+def evidence_files(folder: Path) -> list[Path]:
+    """The verdict files evidence is read from, oldest first.
+
+    Parameters
+    ----------
+    folder : Path
+        The curriculum_audit directory.
+
+    Returns
+    -------
+    list of Path
+        Files matching ``EVIDENCE_GLOBS``, less ``*.qids.json`` lists and any
+        ``*.prefill*.json``, ordered by modification time (then name).
+    """
+    paths = {Path(p) for g in EVIDENCE_GLOBS for p in glob.glob(str(folder / g))}
+    keep = [p for p in paths if not p.name.endswith(".qids.json") and ".prefill" not in p.name]
+    return sorted(keep, key=lambda p: (p.stat().st_mtime, p.name))
+
+
 def evidence_by_qid(folder: Path | None = None) -> dict[str, list[str]]:
-    """Every earlier evidence quote per qid.
+    """The newest read's evidence quotes per qid.
+
+    Verdict rows carry no date, so a read's age is its file's modification
+    time. When a qid has rows in several files, only the quotes of the newest
+    file that gives it any evidence count: a later read against the slides
+    replaces an earlier one against the whole note instead of adding to it,
+    so a question settled last week is not listed again. A row with an empty
+    evidence string is passed over.
 
     Parameters
     ----------
@@ -84,16 +117,42 @@ def evidence_by_qid(folder: Path | None = None) -> dict[str, list[str]]:
     Returns
     -------
     dict
-        qid -> distinct non-empty quotes, in file order.
+        qid -> distinct non-empty quotes from its newest file, in row order.
     """
-    folder = folder or audit_dir()
-    paths = sorted({p for g in EVIDENCE_GLOBS for p in glob.glob(str(folder / g))
-                    if not p.endswith(".qids.json")})
     out: dict[str, list[str]] = {}
-    for row in ca.load_rows(paths):
-        ev = (row.get("evidence") or "").strip()
-        if ev and ev not in out.setdefault(row["qid"], []):
-            out[row["qid"]].append(ev)
+    for path in evidence_files(folder or audit_dir()):
+        here: dict[str, list[str]] = {}
+        for row in ca.load_rows([str(path)]):
+            ev = (row.get("evidence") or "").strip()
+            if ev and ev not in here.setdefault(row["qid"], []):
+                here[row["qid"]].append(ev)
+        out.update({qid: quotes for qid, quotes in here.items() if quotes})
+    return out
+
+
+def stale_notes(records: list[dict], saved_at: float, block: str) -> list[str]:
+    """The notes changed after their saved section records were written.
+
+    Parameters
+    ----------
+    records : list of dict
+        Saved ``inherited_sections`` records.
+    saved_at : float
+        Modification time of the records file.
+    block : str
+        ``"endo"`` or ``"repro"``, to find the note files.
+
+    Returns
+    -------
+    list of str
+        ``"<week>/<note stem>"`` for each note on disk newer than ``saved_at``.
+    """
+    folder = isx.LECTURE_NOTES / isx.BLOCKS[block][0]
+    out = []
+    for rec in records:
+        note = folder / rec["week"] / f"{rec['note']}.md"
+        if note.exists() and note.stat().st_mtime > saved_at:
+            out.append(f"{rec['week']}/{rec['note']}")
     return out
 
 
@@ -164,7 +223,7 @@ def note_from_record(note: Path, record: dict, files: list[Path],
         Sections carry the record's score and verdict, matched by heading
         line and text, else by heading text alone; a section the record does
         not name has an empty verdict. Decks are the record's filenames found
-        in the note's week folder or ``files``.
+        in the note's week folder or ``files``; ``warnings`` are the record's.
     """
     parts = isx.split_note(note.read_text(encoding="utf-8", errors="replace"))
     secs = isx.sections(parts.body, parts.body_start, lambda n: isx.embed_text(n, index))
@@ -173,7 +232,8 @@ def note_from_record(note: Path, record: dict, files: list[Path],
     by_heading: dict[str, dict] = {}
     for s in saved:
         by_heading.setdefault(s["heading"], s)
-    result = isx.NoteResult(note, [], record.get("deck_label", ""), secs, record.get("skipped", ""))
+    result = isx.NoteResult(note, [], record.get("deck_label", ""), secs, record.get("skipped", ""),
+                            warnings=list(record.get("warnings") or []))
     for s in result.flat():
         hit = by_line.get((s.line, s.heading)) or by_heading.get(s.heading)
         s.score, s.verdict = (hit["score"], hit["verdict"]) if hit else (None, "")
@@ -264,7 +324,8 @@ def shortlist(block: str, records: list[dict] | None = None,
     -------
     list of dict
         One per question, in bank order: qid, family, against, week, deck,
-        chart, evidence (list), evidence_score, section, section_verdict,
+        warnings (the note's, from inherited_sections), chart, evidence
+        (list), evidence_score, section, section_verdict,
         status (``ok`` / ``SHORTLIST`` / ``NO-DECK`` / ``NO-NOTE``), stem,
         options, key, answer.
     """
@@ -282,7 +343,7 @@ def shortlist(block: str, records: list[dict] | None = None,
         quotes = evidence.get(q["qid"], [])
         row = {"qid": q["qid"], "family": q["family"], "against": against, "week": week,
                "deck": "", "chart": "", "evidence": quotes, "evidence_score": None, "chart_share": None,
-               "inherited_share": None,
+               "inherited_share": None, "warnings": [],
                "section": "", "section_verdict": "", "status": "NO-DECK",
                "stem": strip_html(q.get("stem")),
                "options": [f"{o['letter']}. {strip_html(o.get('html'))}" for o in q.get("options") or []],
@@ -300,6 +361,7 @@ def shortlist(block: str, records: list[dict] | None = None,
                     print(f"   not in the saved records, rescoring: {note.stem}", file=sys.stderr)
                 notes[note] = isx.audit_note(note, files, index)
         res = notes[note]
+        row["warnings"] = list(res.warnings)
         row["chart"] = isx.split_note(note.read_text(encoding="utf-8", errors="replace")).chart
         if not res.decks:          # ``decks`` lists only the usable, scored decks
             out.append(row)
@@ -378,7 +440,8 @@ def dump(rows: list[dict]) -> str:
     Returns
     -------
     str
-        One block per question: qid, lecture, deck, the earlier evidence and
+        One block per question: qid, lecture, deck (with the note's
+        warnings, which make its section verdicts less sure), the earlier evidence and
         where it fell, the stem, the options, the key and the answer.
     """
     parts = []
@@ -387,7 +450,8 @@ def dump(rows: list[dict]) -> str:
             continue
         parts.append("\n".join([
             f"### {r['qid']}  [{r['family']}]  week {r['week']}  {r['against']}",
-            f"deck: {r['deck']}",
+            f"deck: {r['deck']}" + (f" [warnings: {', '.join(r['warnings'])}]"
+                                    if r.get("warnings") else ""),
             f"earlier evidence (score {r['evidence_score']:.2f}; section: {r['section'] or '?'} "
             f"{r['section_verdict']}; chart {r['chart_share']:.2f}):",
             *[f"  - {e}" for e in r["evidence"]],
@@ -419,6 +483,9 @@ def main() -> None:
               file=sys.stderr)
     else:
         print(f"section verdicts from the saved records {sections_path}", file=sys.stderr)
+        for name in stale_notes(records, sections_path.stat().st_mtime, args.block):
+            print(f"   note changed after {sections_path.name} was written, rerun "
+                  f"inherited_sections.py --json first: {name}", file=sys.stderr)
     rows = shortlist(args.block, records, out)
     width = max([len(r["qid"]) for r in rows] + [3])
     print(f"{'qid':{width}s}  {'status':9s} {'evid':>5s} {'lecture':45s} {'section':35s} deck")

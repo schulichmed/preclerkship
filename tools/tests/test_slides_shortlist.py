@@ -7,6 +7,7 @@ Input: a synthetic bank, verdict files, vault and saved section records built in
 Output: pytest results
 """
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -263,3 +264,80 @@ def test_load_records_missing_file_is_none(tmp_path):
     path = tmp_path / "repro.json"
     path.write_text(json.dumps(saved_records()), encoding="utf-8")
     assert ss.load_records(path)[0]["note"] == "09 - Approach to Neonatal Care"
+
+
+def write_rows(root, name, rows, mtime):
+    """Write a verdict file into the audit directory with a given modification time."""
+    path = root / "build/curriculum_audit" / name
+    path.write_text(json.dumps(rows), encoding="utf-8")
+    os.utime(path, (mtime, mtime))
+    return path
+
+
+def test_newest_read_wins_over_an_older_quote_in_an_inherited_section(world):
+    # repro_w6.json puts hippo-repro-Q2's quote in the inherited Neonatal Sepsis section;
+    # a later slides read quotes the Apgar slide instead, and that read is the one that counts
+    os.utime(world / "build/curriculum_audit/repro_w6.json", (1000, 1000))
+    write_rows(world, "repro_slides.json", [
+        {"qid": "hippo-repro-Q2", "verdict": "current", "against": "09 - Approach to Neonatal Care",
+         "week": 6, "slides": DECK, "evidence": "Apgar score at 1 minute and 5 minutes, 7 or more is normal",
+         "note": ""}], 2000)
+    assert ss.evidence_by_qid(world / "build/curriculum_audit")["hippo-repro-Q2"] == [
+        "Apgar score at 1 minute and 5 minutes, 7 or more is normal"]
+    by = {r["qid"]: r for r in ss.shortlist("repro")}
+    assert by["hippo-repro-Q2"]["status"] == "ok"
+
+
+def test_an_older_slides_file_does_not_override_a_newer_read(world):
+    os.utime(world / "build/curriculum_audit/repro_w6.json", (3000, 3000))
+    write_rows(world, "repro_slides.json", [
+        {"qid": "hippo-repro-Q2", "verdict": "current", "evidence": "Apgar score", "week": 6,
+         "against": "x"}], 2000)
+    ev = ss.evidence_by_qid(world / "build/curriculum_audit")
+    assert ev["hippo-repro-Q2"] == ["chorioamnionitis, maternal group B streptococcus"]
+
+
+def test_prefill_and_empty_evidence_are_not_reads(world):
+    folder = world / "build/curriculum_audit"
+    os.utime(folder / "repro_w6.json", (1000, 1000))
+    write_rows(world, "repro_slides.prefill.json", [
+        {"qid": "hippo-repro-Q2", "verdict": "current", "evidence": "from the prefill", "week": 6,
+         "against": "x"}], 5000)
+    write_rows(world, "repro_slides_delta.json", [
+        {"qid": "hippo-repro-Q2", "verdict": "", "evidence": "", "week": 6, "against": "x"}], 6000)
+    names = [p.name for p in ss.evidence_files(folder)]
+    assert "repro_slides.prefill.json" not in names and names[-1] == "repro_slides_delta.json"
+    assert ss.evidence_by_qid(folder)["hippo-repro-Q2"] == [
+        "chorioamnionitis, maternal group B streptococcus"]
+
+
+def test_dump_shows_the_note_warnings_on_the_deck_line(world):
+    records = saved_records()
+    records[0]["warnings"] = ["partial", "dense"]
+    rows = ss.shortlist("repro", records=records)
+    q2 = next(r for r in rows if r["qid"] == "hippo-repro-Q2")
+    assert q2["warnings"] == ["partial", "dense"]
+    assert f"deck: {DECK} [warnings: partial, dense]" in ss.dump(rows)
+    assert f"deck: {DECK}\n" in ss.dump(ss.shortlist("repro", records=saved_records()))
+
+
+def test_notes_newer_than_the_saved_records_are_named(world):
+    note = ca.LECTURE_NOTES / "02 - Repro/Week 6/09 - Approach to Neonatal Care.md"
+    os.utime(note, (5000, 5000))
+    os.utime(note.parent / "07 - Lactation.md", (3000, 3000))
+    assert ss.stale_notes(saved_records(), 4000, "repro") == ["Week 6/09 - Approach to Neonatal Care"]
+    assert ss.stale_notes(saved_records(), 6000, "repro") == []
+
+
+def test_main_warns_when_a_note_is_newer_than_the_records(world, tmp_path, monkeypatch, capsys):
+    sections = tmp_path / "repro_sections.json"
+    sections.write_text(json.dumps(saved_records()), encoding="utf-8")
+    os.utime(sections, (4000, 4000))
+    note = ca.LECTURE_NOTES / "02 - Repro/Week 6/09 - Approach to Neonatal Care.md"
+    os.utime(note, (5000, 5000))
+    monkeypatch.setattr(sys, "argv", ["slides_shortlist.py", "--block", "repro", "--sections", str(sections),
+                                      "--out", str(world / "build/curriculum_audit")])
+    ss.main()
+    err = capsys.readouterr().err
+    assert ("note changed after repro_sections.json was written, rerun inherited_sections.py --json "
+            "first: Week 6/09 - Approach to Neonatal Care") in err
