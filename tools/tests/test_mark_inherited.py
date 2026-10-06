@@ -180,3 +180,43 @@ def test_blank_line_already_there_is_not_doubled(tmp_path):
     note, rec = crafted(tmp_path, "# Old\n\ntext\n")
     mi.mark_note(rec, dry=False)
     assert "otherwise.\n\ntext\n" in note.read_text(encoding="utf-8")
+
+
+SEPSIS = f"{STEM}: Neonatal Sepsis"
+
+
+def test_include_marks_a_near_threshold_section(vault, monkeypatch, capsys):
+    monkeypatch.setattr(isx, "NEAR_THRESHOLD", 0.0)       # every scored inherited section is flagged
+    assert mi.mark("repro", dry=True, include={SEPSIS}) == 1
+    out = capsys.readouterr().out
+    assert f"included: {SEPSIS}" in out
+    assert f"would mark {SEPSIS}" in out
+    assert f"skipped: near-threshold: {STEM}: Neonatal Resuscitation" in out
+    assert mi.mark("repro", dry=False, include={SEPSIS}) == 1
+    text = note_path(vault).read_text(encoding="utf-8")
+    assert "#### Neonatal Sepsis\n" + CALLOUT + "\n\n![[neonatal sepsis]]" in text
+    assert "# Neonatal Resuscitation\n> [!warning]" not in text
+
+
+def test_include_passes_a_warned_note_and_stays_idempotent(vault, monkeypatch, capsys):
+    monkeypatch.setattr(isx, "PARTIAL", {STEM: "only part of the lecture's decks"})
+    assert mi.mark("repro", dry=False, include={SEPSIS}) == 1
+    before = note_path(vault).read_bytes()
+    capsys.readouterr()
+    assert mi.mark("repro", dry=False, include={SEPSIS}) == 0
+    assert note_path(vault).read_bytes() == before
+    out = capsys.readouterr().out
+    assert f"included: {SEPSIS}" in out
+    assert f"skipped: note warning partial: {STEM}: Neonatal Resuscitation" in out
+
+
+def test_include_naming_nothing_is_reported(vault, capsys):
+    mi.mark("repro", dry=True, include={f"{STEM}: Apgar Score", "Nope: Nothing"})
+    out = capsys.readouterr().out
+    assert f"include matched nothing: {STEM}: Apgar Score" in out    # taught, not inherited
+    assert "include matched nothing: Nope: Nothing" in out
+
+
+def test_leave_out_wins_over_include(vault, capsys):
+    assert mi.mark("repro", dry=True, include={SEPSIS}, leave_out={SEPSIS}) == 1
+    assert f"skipped: left out by reader: {SEPSIS}" in capsys.readouterr().out

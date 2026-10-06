@@ -9,8 +9,11 @@ Purpose: inherited_sections.py finds the body sections of a PoM 2 lecture
          carries no warning and the section is not flagged near-threshold;
          every other inherited section is listed as skipped, with the
          reason, for a person to read. A heading the reader finds taught on
-         a slide is left out with ``--leave-out``. It is idempotent: a heading whose next
-         non-blank line is already the callout is skipped.
+         a slide is left out with ``--leave-out``. A section the reader
+         confirms the slides do not teach is marked with ``--include``, which
+         passes it through the warning and near-threshold gate. It is
+         idempotent: a heading whose next non-blank line is already the
+         callout is skipped.
 Author:  Noor Sims
 Date:    2026-10-06
 Input:   the block's lecture notes and decks, as inherited_sections.py reads
@@ -25,6 +28,7 @@ Output:  the same notes with two callout lines inserted under each inherited
     python tools/mark_inherited.py --block repro --sections build/inherited_sections/repro.json
     python tools/mark_inherited.py --block endo --note "09 - Introduction to Obesity"
     python tools/mark_inherited.py --block repro --leave-out "15 - Abnormal Uterine Bleeding: PALM-COEIN"
+    python tools/mark_inherited.py --block repro --include "09 - Approach to Neonatal Care: Neonatal Sepsis"
 """
 
 import argparse
@@ -144,7 +148,13 @@ def targets(rec: dict) -> list[dict]:
     return out
 
 
-def skip_reason(rec: dict, sec: dict, leave_out: set[str] = frozenset()) -> str:
+def section_key(rec: dict, sec: dict) -> str:
+    """The ``"<note stem>: <heading>"`` name a reader gives one section."""
+    return f"{rec['note']}: {sec['heading']}"
+
+
+def skip_reason(rec: dict, sec: dict, leave_out: set[str] = frozenset(),
+                include: set[str] = frozenset()) -> str:
     """Why a target section must be read by a person instead of marked.
 
     Parameters
@@ -156,18 +166,24 @@ def skip_reason(rec: dict, sec: dict, leave_out: set[str] = frozenset()) -> str:
     leave_out : set of str
         Headings a reader found taught on a slide, as ``"<heading>"`` or
         ``"<note stem>: <heading>"``.
+    include : set of str
+        Sections a reader confirmed the slides do not teach, as
+        ``"<note stem>: <heading>"``. They skip the warning and
+        near-threshold gate; a leave-out still wins.
 
     Returns
     -------
     str
         ``""`` when the section may be marked, else the reason.
     """
+    if sec["heading"] in leave_out or section_key(rec, sec) in leave_out:
+        return "left out by reader"
+    if section_key(rec, sec) in include:
+        return ""
     if rec.get("warnings"):
         return f"note warning {','.join(rec['warnings'])}"
     if NEAR in sec.get("flags", []):
         return NEAR
-    if sec["heading"] in leave_out or f"{rec['note']}: {sec['heading']}" in leave_out:
-        return "left out by reader"
     return ""
 
 
@@ -227,7 +243,8 @@ def gap(lines: list[str], after: int) -> list[str]:
     return [] if not nxt.strip() or isx.HEADING_RE.match(nxt) else [""]
 
 
-def mark_note(rec: dict, dry: bool, leave_out: set[str] = frozenset()) -> int:
+def mark_note(rec: dict, dry: bool, leave_out: set[str] = frozenset(),
+              include: set[str] = frozenset(), seen: set[str] | None = None) -> int:
     """Insert the callout under each markable heading of one note.
 
     Parameters
@@ -238,6 +255,11 @@ def mark_note(rec: dict, dry: bool, leave_out: set[str] = frozenset()) -> int:
         Print instead of writing.
     leave_out : set of str
         Headings not to mark, see ``skip_reason``.
+    include : set of str
+        Sections a reader confirmed, see ``skip_reason``; each is printed as
+        ``included:`` whether or not it is already marked.
+    seen : set of str, optional
+        Collects the ``include`` names this note matched.
 
     Returns
     -------
@@ -251,7 +273,11 @@ def mark_note(rec: dict, dry: bool, leave_out: set[str] = frozenset()) -> int:
     lines = note.read_text(encoding="utf-8").split("\n")
     plan = []
     for sec in todo:
-        reason = skip_reason(rec, sec, leave_out)
+        reason = skip_reason(rec, sec, leave_out, include)
+        if not reason and section_key(rec, sec) in include:
+            print(f"included: {section_key(rec, sec)}")
+            if seen is not None:
+                seen.add(section_key(rec, sec))
         at = None if reason else find_heading(lines, sec)
         if not reason and at is None:
             reason = "heading not found"
@@ -272,7 +298,7 @@ def mark_note(rec: dict, dry: bool, leave_out: set[str] = frozenset()) -> int:
 
 
 def mark(block: str, dry: bool, only: str | None = None, sections: Path | None = None,
-         leave_out: set[str] = frozenset()) -> int:
+         leave_out: set[str] = frozenset(), include: set[str] = frozenset()) -> int:
     """Mark every markable inherited section of a block.
 
     Parameters
@@ -287,13 +313,21 @@ def mark(block: str, dry: bool, only: str | None = None, sections: Path | None =
         Read the verdicts from this saved JSON instead of auditing now.
     leave_out : set of str
         Headings a reader found taught on a slide, see ``skip_reason``.
+    include : set of str
+        Sections a reader confirmed the slides do not teach, see
+        ``skip_reason``. One that names no inherited section of the block
+        is printed as ``include matched nothing:``.
 
     Returns
     -------
     int
         Insertions made across the block.
     """
-    total = sum(mark_note(rec, dry, leave_out) for rec in load_records(block, sections, only))
+    seen: set[str] = set()
+    total = sum(mark_note(rec, dry, leave_out, include, seen)
+                for rec in load_records(block, sections, only))
+    for name in sorted(set(include) - seen):
+        print(f"include matched nothing: {name}")
     print(f"{'would insert' if dry else 'inserted'} {total} Inherited callouts in {block}")
     return total
 
@@ -308,9 +342,12 @@ def main() -> None:
     ap.add_argument("--leave-out", action="append", default=[], metavar="HEADING",
                     help="a heading a slide teaches, repeatable; '<note stem>: <heading>' for one note, "
                          "a bare '<heading>' for every note of the block")
+    ap.add_argument("--include", action="append", default=[], metavar="NOTE: HEADING",
+                    help="'<note stem>: <heading>' a reader confirmed the slides do not teach, "
+                         "repeatable; marked despite a note warning or a near-threshold flag")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
-    mark(args.block, args.dry_run, args.note, args.sections, set(args.leave_out))
+    mark(args.block, args.dry_run, args.note, args.sections, set(args.leave_out), set(args.include))
 
 
 if __name__ == "__main__":
