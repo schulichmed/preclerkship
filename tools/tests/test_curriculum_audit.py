@@ -165,3 +165,18 @@ def test_misfiled_against_unnumbered_note(repo):
     assert q["week"] == 5
     assert q["lecture"] == "In-Class - Amenorrhea"
     assert q["review"] == [{"w": 5, "n": "", "t": "In-Class - Amenorrhea"}]
+
+
+def test_rerefile_keeps_original_from(repo):
+    """A second refile to another lecture updates the filing but keeps where it first came from."""
+    week5 = ca.LECTURE_NOTES / "02 - Repro" / "Week 5"
+    (week5 / "09 - Pathology of 1st Trimester Bleeding.md").write_text("# x")
+    first = {"qid": "hippo-repro-Q47", "verdict": "misfiled", "week": 5,
+             "against": "09 - Pathology of 1st Trimester Bleeding", "evidence": "", "note": ""}
+    second = dict(first, against="11 - Approach to First Trimester Bleeding & Ultrasound")
+    ca.apply_rows([first], checked="2026-10-06")
+    ca.apply_rows([second], checked="2026-10-07")
+    q = bank(repo, "repro")[0]
+    assert q["lecture"] == "Approach to First Trimester Bleeding & Ultrasound"
+    assert q["refiled"] == {"from": {"block": "repro", "week": 6, "lecture": "Labour"},
+                            "on": "2026-10-07"}

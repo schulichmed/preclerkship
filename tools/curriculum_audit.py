@@ -353,8 +353,10 @@ def apply_rows(rows: list[dict], checked: str | None = None) -> None:
             if q.get("week") == week and q.get("lecture") == rec["t"] and q.get("refiled"):
                 rerefiled[block] += 1
                 continue
-            q["refiled"] = {"from": {"block": block, "week": q.get("week"),
-                                     "lecture": q.get("lecture")}, "on": today}
+            # `from` is where the question was first filed; a later refile keeps it
+            origin = (q.get("refiled") or {}).get("from") or {
+                "block": block, "week": q.get("week"), "lecture": q.get("lecture")}
+            q["refiled"] = {"from": origin, "on": today}
             q["week"] = week
             q["weekLabel"] = labels.get(week, week_label(week))
             q["lecture"] = rec["t"]
