@@ -416,9 +416,17 @@ def question_md(i, q, course, fig):
         left = [md(it.get("left", ""), course, fig, cell=True) for it in items]
         right = sorted(set(md(it.get("right", ""), course, fig, cell=True) for it in items))
         rows = [[p.get("leftLabel") or "", p.get("rightLabel") or ""]]
+        # a figure's own labels (A, B, 1, 2) already name themselves; lettering
+        # them again would print "A. A"
+        is_label = all(len(r) <= 3 for r in right)
         for k in range(max(len(left), len(right))):
-            rows.append(["%d. %s" % (k + 1, left[k]) if k < len(left) else " ",
-                         "%s. %s" % (chr(65 + k), right[k]) if k < len(right) else " "])
+            if k >= len(right):
+                mark = " "
+            elif is_label:
+                mark = right[k]
+            else:
+                mark = "%s. %s" % (chr(65 + k), right[k])
+            rows.append(["%d. %s" % (k + 1, left[k]) if k < len(left) else " ", mark])
         out.append(grid(rows))
     keyed = q.get("keyed", True) and not q.get("unscorable")
     head = "> [!q]- %s" % (q.get("answerTitle") or "Answer") if keyed else "> [!success]- Reasoned answer"
