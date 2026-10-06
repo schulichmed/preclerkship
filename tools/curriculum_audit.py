@@ -252,7 +252,9 @@ def off_sentence(reason: str, against: str, evidence: str, bold: str, slides: st
         The lecture note it was checked against.
     evidence : str
         A quote from that note or deck, possibly empty. Already escaped for
-        the target format by the caller.
+        the target format by the caller. For a not-covered verdict checked
+        against the slides it is a reader's summary of what the deck covers,
+        so it is written without quote marks; everywhere else it is quoted.
     bold : str
         A format string with one ``%s`` that emphasises the lecture name,
         e.g. ``"<strong>%s</strong>"`` or ``"**%s**"``.
@@ -280,7 +282,9 @@ def off_sentence(reason: str, against: str, evidence: str, bold: str, slides: st
                     else f" Checked against {where}.")
         else:
             lead = "This year's lecture slides do not teach this."
-            tail = (f" Checked against {where}, which cover: “{evidence}”." if evidence
+            # a reader's summary of the deck, not a slide quote, so no quote marks
+            summary = evidence.rstrip(" .")
+            tail = (f" Checked against {where}, which cover: {summary}." if summary
                     else f" Checked against {where}, which do not mention it.")
         return lead + tail
     if reason == "outdated":

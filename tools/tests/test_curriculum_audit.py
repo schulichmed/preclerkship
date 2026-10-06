@@ -265,7 +265,9 @@ def test_not_covered_with_slides_names_the_deck(repo):
                                   "slides": "Approach to Neonatal Care Online Module Cheng Aug 2025.pdf"}
     flag = q["flags"][0]["html"]
     assert flag.startswith("<p>This year's lecture slides do not teach this.")
-    assert "Cheng Aug 2025.pdf" in flag and "which cover:" in flag
+    assert flag.endswith("(Approach to Neonatal Care Online Module Cheng Aug 2025.pdf), which cover: "
+                         "Apgar, newborn exam, growth, thermal, hypoglycemia, bilirubin, global.</p>")
+    assert "“" not in flag and "”" not in flag      # a reader's summary, not a slide quote
     assert q["qid"] == "hippo-repro-Q47"
 
 
@@ -290,3 +292,27 @@ def test_not_covered_without_slides_renders_as_before(repo):
         "<p>This year's lectures do not teach this. Checked against "
         "<strong>09 - Approach to Neonatal Care</strong>, the nearest lecture, "
         "which does not mention it.</p>")
+
+
+def test_outdated_with_slides_quotes_the_deck():
+    row = {"verdict": "outdated", "against": "09 - Introduction to Obesity",
+           "slides": "Introduction to Obesity.pdf",
+           "evidence": "Orlistat rarely prescribed due to side effect profile and limited efficacy"}
+    assert ca.off_flag_html(row) == (
+        "<p>This year's lecture teaches this differently, so the key here may not match what "
+        "you are examined on. Checked against the slides of <strong>09 - Introduction to "
+        "Obesity</strong> (Introduction to Obesity.pdf), which say: “Orlistat rarely prescribed "
+        "due to side effect profile and limited efficacy”.</p>")
+
+
+def test_outdated_with_slides_and_no_evidence_names_the_deck():
+    row = {"verdict": "outdated", "against": "09 - Introduction to Obesity",
+           "slides": "Introduction to Obesity.pdf", "evidence": ""}
+    assert ca.off_flag_html(row).endswith(
+        "Checked against the slides of <strong>09 - Introduction to Obesity</strong> "
+        "(Introduction to Obesity.pdf).</p>")
+
+
+def test_not_covered_summary_ending_in_a_full_stop_is_not_doubled():
+    row = {"verdict": "not-covered", "against": "L", "slides": "d.pdf", "evidence": "Apgar, growth."}
+    assert ca.off_flag_html(row).endswith("which cover: Apgar, growth.</p>")
