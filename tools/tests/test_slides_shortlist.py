@@ -77,7 +77,7 @@ def test_shortlist_picks_evidence_off_the_slides_or_in_an_inherited_section(worl
     by = {r["qid"]: r for r in rows}
     # live workbook and HippoNotes only: module, off-curriculum and reviews are left out
     assert set(by) == {"hippo-repro-Q1", "hippo-repro-Q2", "hippo-repro-Q3"}
-    assert by["hippo-repro-Q1"]["status"] != "NO-DECK" and by["hippo-repro-Q1"]["evidence_score"] >= ss.EVIDENCE_AT
+    assert by["hippo-repro-Q1"]["status"] == "ok" and by["hippo-repro-Q1"]["evidence_score"] >= ss.EVIDENCE_AT
     assert by["hippo-repro-Q2"]["status"] == "SHORTLIST"
     assert by["hippo-repro-Q2"]["section"] == "Neonatal Sepsis" and by["hippo-repro-Q2"]["section_verdict"] == "inherited"
 
@@ -194,6 +194,19 @@ def test_quote_split_between_slides_parent_and_inherited_child_is_shortlisted(wo
     assert q8["evidence_score"] >= ss.EVIDENCE_AT                  # on the deck as a bag of words
     assert q8["section"] == "Neonatal Sepsis" and q8["section_verdict"] == "inherited"
     assert q8["status"] == "SHORTLIST"
+
+
+def test_quote_half_in_an_inherited_child_is_shortlisted_below_section_at(world, monkeypatch):
+    # four terms are the slides parent's own text, four sit in the inherited child: the child
+    # holds 0.5, under SECTION_AT, so the quote lands on the parent at 1.0
+    quote = "babies need extra care chorioamnionitis maternal group streptococcus"
+    add_question(world, "hippo-repro-Q13", quote)
+    slides_with(monkeypatch, quote)
+    by = {r["qid"]: r for r in ss.shortlist("repro", records=saved_records())}
+    q13 = by["hippo-repro-Q13"]
+    assert q13["section"] == "Extra Care for the Neonate" and q13["section_verdict"] == "slides"
+    assert q13["inherited_share"] == 0.5
+    assert q13["status"] == "SHORTLIST"
 
 
 def test_quote_in_no_section_passes_only_when_the_chart_holds_it(world, monkeypatch):
