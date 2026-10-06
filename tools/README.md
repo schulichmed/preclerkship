@@ -198,7 +198,10 @@ python tools/curriculum_audit.py report
 - **`mark-vault`** puts a `<!-- set: offcurriculum ... -->` marker and an
   Off-curriculum warning under the question's `# N` heading in the vault note it
   was written in (module, weekly, workbook and New Questions notes). It reports a
-  heading it cannot find rather than guessing. HippoNotes and Schulich Reviews
+  heading it cannot find rather than guessing. A misfiled question gets a
+  `<!-- refiled | week: N | lecture: <note> | qid: <qid> -->` comment instead,
+  with no callout; it is not a `set:` marker, because that one names a family.
+  HippoNotes and Schulich Reviews
   are backed up from the JSON instead, and `vault_backup.py questions` keeps a
   moved one in the note of the set it came from.
 - **`report`** prints each block's questions per set, how many have no week, and

@@ -23,8 +23,8 @@ wrong material with the portal's authority behind it. So a question that
 resolves to nothing keeps an empty `review` and renders as week-only, which is
 the whole reason the last route is allowed to refuse.
 
-FIVE ROUTES, IN ORDER. THE FIRST FOUR ARE EXACT
------------------------------------------------
+SIX ROUTES, IN ORDER. THE FIRST FIVE ARE EXACT
+----------------------------------------------
 0. **A question a human re-filed.** A question carrying a `refiled` record was
    read against this year's notes and re-filed under the lecture that teaches
    it, so it keeps the `review` that read gave it: the read outranks a lookup

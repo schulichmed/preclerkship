@@ -302,8 +302,9 @@ taught in a different week from the one the source filed it under, the lecture l
 lecture that teaches it - do not move the link to fit the heading. But a correct link does not
 fix the filing on its own: the portal's week filter and its week and lecture headings read the
 question's `week`, `weekLabel` and `lecture` fields, and `review` only changes the "go and read"
-line. Three HippoNotes questions filed under their 2023 week shipped under Week 6 with a review
-line pointing at Week 5 and were reported by readers on 2026-10-06. So the question is re-filed
+line. Three HippoNotes questions filed under their 2023 week shipped under Week 6, two with a
+review line pointing at Week 5 and one with no lecture at all, and were reported by readers on
+2026-10-06. So the question is re-filed
 in the JSON too: Stage 4b's `misfiled` verdict does it, and its report gate catches any that
 were not.
 
@@ -523,6 +524,9 @@ notes. This is the one unautomated step in the chain, so budget for it.
   set to the lecture that teaches it now, named as the vault spells it, so the week filter puts
   it where she will look for it. A question you cannot place yet keeps the source's week and
   Stage 4b's read places it.
+- **A question carrying a `refiled` marker under its heading exports with the marker's week and
+  lecture, not the heading's, and keeps its `refiled` record.** The marker is what stops a
+  re-export from undoing a Stage 4b read.
 - **A matching question ships as a dropdown grid, never as an MCQ over complete mappings**
   ("1-W, 2-X, 3-Y") or as one question per item. Give it `kind: "pairing"` and a `pairs` object
   (see `module-repro-Q2`), and add its spec to `tools/pairings/` so `tools/curated_pairings.py`
@@ -584,7 +588,7 @@ invalidate a question banked months ago and nothing else will notice. The plan t
 `docs/plans/2026-10-05-endo-repro-curriculum-audit.md`, and the method each read follows is
 `build/curriculum_audit/AUDIT_BRIEF.md`. Read the brief before the first read of a run.
 
-Each question gets one of three verdicts, against this year's notes for the block (follow
+Each question gets one of these verdicts, against this year's notes for the block (follow
 transclusions before calling anything absent; where a note is silent on an exact value, the slide
 PDF decides):
 
@@ -669,7 +673,8 @@ whose lecture note Stage 1 changed this run**, against that note, the way the br
 3. `python3 tools/curriculum_audit.py mark-vault --dry-run <files>`, read its line, then the
    same without `--dry-run`. It writes the marker and callout under each moved question's
    `# N` heading in the vault-authored notes; the form is in `med-questions` (the marker
-   section), so do not restate it here.
+   section), so do not restate it here. A `misfiled` row leaves a
+   `<!-- refiled | week | lecture | qid -->` comment instead of a callout.
 4. `python3 tools/curriculum_audit.py report` **must show zero null weeks, zero `misfiled` and
    zero `lecture is the week title`** for the block. A null week is a question that will sit
    under a "No week" chip on the portal; a misfiled one sits under the wrong week with a review
@@ -717,7 +722,9 @@ other than your new questions' `review` moved, keep the values for your new qids
 the banks, re-apply your export and write just those values back. Raise the drift with her
 separately rather than shipping it under a week's commit. A question carrying a `refiled` record
 keeps its review through a derive (route 0), so this rule is about the questions nobody has read,
-not about the refiled ones.
+not about the refiled ones. Rerun `curriculum_audit.py report` after the derive. A new qid
+showing as misfiled goes back to Stage 4b. An old qid whose fresh derive disagrees with its
+restored review is listed for her with the drift, not silently kept.
 
 **The Off-curriculum set rides through the rebuild unchanged.** `rosters_from_vault.py` takes its
 week headings from the questions JSON, and a moved question carries a bare `Week N` label, so it
