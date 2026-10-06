@@ -26,6 +26,11 @@ It gains family "offcurriculum", a week that is never null, a first flag
 saying what was checked, and an ``offCurriculum`` record of where it came
 from. Applying the same verdicts twice changes nothing the second time.
 
+A row may carry ``"slides": "<deck filename>"`` when the check was made against
+the lecture's slide deck rather than the whole note. The Off-curriculum flag
+then says the slides do not teach it and names the deck, and ``offCurriculum``
+keeps the deck name. Rows without ``slides`` render as before.
+
 A `misfiled` verdict re-files a live question under the lecture that teaches
 it this year: `week`, `weekLabel` and `lecture` are rewritten from the lecture
 named in `against`, `review` is set to that lecture, and a `refiled` record
@@ -236,7 +241,7 @@ def week_label(week: int) -> str:
     return f"Week {week}"
 
 
-def off_sentence(reason: str, against: str, evidence: str, bold: str) -> str:
+def off_sentence(reason: str, against: str, evidence: str, bold: str, slides: str = "") -> str:
     """The plain sentence that says why a question is off-curriculum.
 
     Parameters
@@ -246,11 +251,14 @@ def off_sentence(reason: str, against: str, evidence: str, bold: str) -> str:
     against : str
         The lecture note it was checked against.
     evidence : str
-        A quote from that note, possibly empty. Already escaped for the
-        target format by the caller.
+        A quote from that note or deck, possibly empty. Already escaped for
+        the target format by the caller.
     bold : str
         A format string with one ``%s`` that emphasises the lecture name,
         e.g. ``"<strong>%s</strong>"`` or ``"**%s**"``.
+    slides : str
+        The deck filename when the check was against the slides, else empty.
+        Already escaped by the caller.
 
     Returns
     -------
@@ -262,6 +270,18 @@ def off_sentence(reason: str, against: str, evidence: str, bold: str) -> str:
         lead = ("Its own source retired this question, so it is kept here rather than in "
                 "the set it came from.")
         tail = f" Nearest lecture: {lecture}." if against else ""
+        return lead + tail
+    if slides:
+        where = f"the slides of {lecture} ({slides})"
+        if reason == "outdated":
+            lead = ("This year's lecture teaches this differently, so the key here may not "
+                    "match what you are examined on.")
+            tail = (f" Checked against {where}, which say: “{evidence}”." if evidence
+                    else f" Checked against {where}.")
+        else:
+            lead = "This year's lecture slides do not teach this."
+            tail = (f" Checked against {where}, which cover: “{evidence}”." if evidence
+                    else f" Checked against {where}, which do not mention it.")
         return lead + tail
     if reason == "outdated":
         lead = ("This year's lecture teaches this differently, so the key here may not "
@@ -290,7 +310,8 @@ def off_flag_html(row: dict) -> str:
         ``<p>...</p>``.
     """
     text = off_sentence(row["verdict"], html.escape(row["against"]),
-                        html.escape(row.get("evidence") or "").strip(), "<strong>%s</strong>")
+                        html.escape(row.get("evidence") or "").strip(), "<strong>%s</strong>",
+                        html.escape(row.get("slides") or ""))
     return f"<p>{text}</p>"
 
 
@@ -389,6 +410,8 @@ def apply_rows(rows: list[dict], checked: str | None = None) -> None:
             q["offCurriculum"] = {"reason": row["verdict"], "from": previous,
                                   "against": row["against"],
                                   "checked": checked or datetime.date.today().isoformat()}
+            if row.get("slides"):
+                q["offCurriculum"]["slides"] = row["slides"]
             moved[block] += 1
             touched.add(block)
         elif row["verdict"] == "current" and q.get("week") is None:
@@ -711,7 +734,8 @@ def mark_vault(rows: list[dict], dry: bool) -> None:
             marker = "<!-- refiled "
         else:
             sentence = off_sentence(row["verdict"], row["against"],
-                                    (row.get("evidence") or "").strip(), "**%s**")
+                                    (row.get("evidence") or "").strip(), "**%s**",
+                                    row.get("slides") or "")
             block = [f"<!-- set: offcurriculum | reason: {row['verdict']} | qid: {row['qid']} -->",
                      "> [!warning] Off-curriculum", f"> {sentence}", ""]
             marker = "<!-- set: offcurriculum "

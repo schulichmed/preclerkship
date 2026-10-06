@@ -247,3 +247,46 @@ def test_refiled_question_takes_its_neighbours_week_label(repo):
                     "evidence": "", "note": ""}], checked="2026-10-06")
     moved = [q for q in bank(repo, "repro") if q["qid"] == "hippo-repro-Q47"][0]
     assert moved["weekLabel"] == "Week 5 - Older wording"
+
+
+def test_not_covered_with_slides_names_the_deck(repo):
+    row = {"qid": "hippo-repro-Q47", "verdict": "not-covered", "week": 6,
+           "against": "09 - Approach to Neonatal Care",
+           "slides": "Approach to Neonatal Care Online Module Cheng Aug 2025.pdf",
+           "evidence": "Apgar, newborn exam, growth, thermal, hypoglycemia, bilirubin, global",
+           "note": ""}
+    ca.apply_rows([row], checked="2026-10-06")
+    q = bank(repo, "repro")[0]
+    assert q["family"] == "offcurriculum"
+    assert q["week"] == 6 and q["weekLabel"] == "Week 6"
+    assert q["offCurriculum"] == {"reason": "not-covered", "from": "hipponotes",
+                                  "against": "09 - Approach to Neonatal Care",
+                                  "checked": "2026-10-06",
+                                  "slides": "Approach to Neonatal Care Online Module Cheng Aug 2025.pdf"}
+    flag = q["flags"][0]["html"]
+    assert flag.startswith("<p>This year's lecture slides do not teach this.")
+    assert "Cheng Aug 2025.pdf" in flag and "which cover:" in flag
+    assert q["qid"] == "hippo-repro-Q47"
+
+
+def test_not_covered_with_slides_is_idempotent(repo, capsys):
+    row = {"qid": "hippo-repro-Q47", "verdict": "not-covered", "week": 6,
+           "against": "09 - Approach to Neonatal Care", "slides": "deck.pdf",
+           "evidence": "", "note": ""}
+    ca.apply_rows([row], checked="2026-10-06")
+    before = (repo / "pom2/data/questions/repro.json").read_bytes()
+    ca.apply_rows([row], checked="2026-10-07")
+    assert (repo / "pom2/data/questions/repro.json").read_bytes() == before
+    assert "already moved   1" in capsys.readouterr().out
+
+
+def test_not_covered_without_slides_renders_as_before(repo):
+    row = {"qid": "hippo-repro-Q47", "verdict": "not-covered", "week": 6,
+           "against": "09 - Approach to Neonatal Care", "evidence": "", "note": ""}
+    ca.apply_rows([row], checked="2026-10-06")
+    q = bank(repo, "repro")[0]
+    assert "slides" not in q["offCurriculum"]
+    assert q["flags"][0]["html"] == (
+        "<p>This year's lectures do not teach this. Checked against "
+        "<strong>09 - Approach to Neonatal Care</strong>, the nearest lecture, "
+        "which does not mention it.</p>")
