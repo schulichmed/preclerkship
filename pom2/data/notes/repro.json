@@ -7108,6 +7108,10 @@
        "cap": "Bishop score: dilation, effacement, consistency, position and station each scored; under 6 needs ripening"
       },
       {
+       "t": "pathway",
+       "mermaid": "flowchart LR\n    A[\"Reason to deliver<br/>(list above)\"] --> B{\"Contraindication<br/>to labour?\"}\n    B -->|Yes| CS[\"Cesarean section\"]\n    B -->|No| P[\"Pre-induction<br/>assessment\"]\n    P --> BS{\"Bishop<br/>under 6?\"}\n    BS -->|Yes| R[\"① Ripen the cervix<br/>prostaglandin or Foley\"]\n    BS -->|No| ARM\n    R --> ARM[\"② ARM\"]\n    ARM --> O[\"IV oxytocin<br/>if labour does not start\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class P,R lo"
+      },
+      {
        "t": "note",
        "html": "<h5>3. Augmentation with oxytocin</h5>"
       },
@@ -7116,12 +7120,20 @@
        "html": "<ul><li><strong>Indication</strong>: labour has started but is not progressing (dystocia)</li><li><mark class=\"lo\">ARM, then an <strong>oxytocin infusion titrated to a good contraction pattern and cervical change</strong></mark><ul><li>oxytocin can <mark class=\"lo\">start contractions, strengthen weak ones, and boost pushing</mark></li><li>contractions hard to measure → <strong>intrauterine pressure catheter</strong></li><li>on oxytocin → <strong>continuous fetal heart monitoring</strong>, with time between contractions for the fetus to recover</li></ul></li></ul>"
       },
       {
+       "t": "pathway",
+       "mermaid": "flowchart LR\n    A[\"Labour too slow<br/>(dystocia)\"] --> B{\"Baby too big<br/>to fit (CPD)?\"}\n    B -->|Yes| CS1[\"Cesarean section\"]\n    B -->|No| C[\"Augment<br/>ARM, then IV oxytocin\"]\n    C --> D{\"Progressing?\"}\n    D -->|No| CS2[\"Cesarean section\"]\n    D -->|Yes| V[\"Vaginal birth\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class C lo"
+      },
+      {
        "t": "note",
        "html": "<h5>4. Operative vaginal delivery</h5>"
       },
       {
        "t": "list",
        "html": "<ul><li><mark class=\"lo\"><strong>Forceps or vacuum</strong> to speed up the <strong>2nd stage</strong> (pushing)</mark></li><li><mark class=\"lo\"><strong>Indications</strong></mark><ul><li>fetal: <mark class=\"lo\"><strong>atypical or abnormal fetal heart rate (FHR) - the #1 reason</strong></mark> · head turned the wrong way (occiput transverse or posterior)</li><li>maternal: <mark class=\"lo\">must avoid straining (cerebrovascular or cardiac disease) · exhaustion or ineffective pushing</mark></li><li>labour: <mark class=\"lo\">prolonged 2nd stage</mark></li></ul></li><li><strong>Contraindications</strong><ul><li>absolute: <strong>unengaged head</strong> · <strong>cervix not fully dilated</strong> · not head-first (or face, brow) · CPD · fetal bleeding or bone disorder · any reason not to deliver vaginally</li><li>relative: poor head flexion · <strong>rotation over 45° (vacuum only)</strong> · head still mid-pelvis · prematurity</li></ul></li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart LR\n    A[\"2nd stage problem<br/>abnormal FHR · prolonged · exhausted\"] --> B{\"Fully dilated<br/>and head engaged?\"}\n    B -->|No| CS[\"Cesarean section\"]\n    B -->|Yes| C{\"Needs<br/>rotation?\"}\n    C -->|No| VAC[\"Vacuum<br/>fails → C/S\"]\n    C -->|Yes| FOR[\"Forceps<br/>fails → C/S\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class A lo"
       },
       {
        "t": "table",
@@ -7183,6 +7195,10 @@
       {
        "t": "list",
        "html": "<ul><li>A trial of labour that succeeds = a <strong>vaginal birth after cesarean (VBAC)</strong>, <strong>60-80%</strong> of the time</li><li><mark class=\"lo\"><strong>Who can try</strong>: <strong>1-2 prior low transverse C/S</strong> · <strong>over 18 months</strong> since · <strong>emergency laparotomy available within 30 min</strong> · no contraindication to labour · the patient agrees</mark></li><li><mark class=\"lo\"><strong>Who cannot</strong>: <strong>classical or inverted-T scar</strong> · previous surgery entering the uterine cavity (hysterotomy, myomectomy) · <strong>previous uterine rupture</strong> · a contraindication to labour · the patient prefers a repeat C/S</mark></li></ul>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart LR\n    A[\"Prior C/S\"] --> X{\"Any reason<br/>it cannot try?\"}\n    X -->|Yes| E1[\"Repeat C/S\"]\n    X -->|No| Y{\"Meets every<br/>criterion?\"}\n    Y -->|No| E2[\"Repeat C/S\"]\n    Y -->|Yes| T[\"TOLAC<br/>continuous FHR\"]\n    T --> R{\"Signs of<br/>rupture?\"}\n    R -->|Yes| EM[\"Emergency<br/>laparotomy\"]\n    R -->|No| Q{\"Labour<br/>progresses?\"}\n    Q -->|No| CS[\"Repeat C/S\"]\n    Q -->|Yes| V[\"VBAC<br/>60-80%\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class X,Y lo"
       },
       {
        "t": "table",
