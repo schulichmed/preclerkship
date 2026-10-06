@@ -324,3 +324,55 @@ def test_embed_index_is_cached_and_rebuilt_once_on_a_miss(vault, monkeypatch):
     assert "chorioamnionitis" in isx.embed_text("late note", second)
     monkeypatch.setattr(isx, "_walk_vault", no_walk)
     assert isx.embed_text("no such note", second) == ""        # one rebuild per run, not per miss
+
+
+def test_heading_on_one_slide_makes_a_short_section_slides():
+    filler = "Neonates born late morning stay beside parents while nurses chart weights carefully."
+    body = ["# Hypoglycemia Screening", filler,          # both heading words on slide 3
+            "# Apgar Hypoglycemia", filler,              # each word on a different slide
+            "# Apgar", filler]                           # one content term is not enough
+    secs = isx.sections(body, 0, lambda n: "")
+    isx.judge(secs, [isx.terms(t) for t in SLIDES])
+    by = {s.heading: s for s in secs}
+    taught = by["Hypoglycemia Screening"]
+    assert taught.verdict == "slides" and taught.flags == ["heading-on-slide"]
+    assert taught.score is not None and taught.score < isx.SLIDES_AT     # score kept as measured
+    assert by["Apgar Hypoglycemia"].verdict == "inherited" and by["Apgar Hypoglycemia"].flags == []
+    assert by["Apgar"].verdict == "inherited"
+
+
+def test_heading_terms_drop_title_noise():
+    assert isx.heading_terms("Approach to a Thyroid Nodule") == {"thyroid", "nodule"}
+
+
+def test_inherited_callout_is_not_scored_as_section_text():
+    body = ["# Neonatal Resuscitation",
+            isx.INHERITED_MARK,
+            "> Not in this year's slides (Approach to Neonatal Care Online Module Cheng Aug 2025.pdf).",
+            "Ventilation is the primary goal of neonatal resuscitation.",
+            "> [!multi-column]",
+            "> kept: a callout of the note's own"]
+    secs = isx.sections(body, 100, lambda n: "")
+    assert "Cheng" not in secs[0].text and "Not in this year" not in secs[0].text
+    assert "Ventilation is the primary goal" in secs[0].text and "kept: a callout" in secs[0].text
+    assert secs[0].line == 100
+    assert isx.strip_marks(body)[1:3] == ["", ""] and len(isx.strip_marks(body)) == len(body)
+
+
+def test_summary_slide_does_not_teach_a_heading(vault, monkeypatch):
+    summary = "Take home messages\nneonatal resuscitation saves lives\nkeep babies warm"
+    monkeypatch.setattr(isx, "deck_pages", lambda path: list(SLIDES) + [summary])
+    by = {s.heading: s for s in audit(vault).flat()}
+    assert by["Neonatal Resuscitation"].verdict == "inherited" and by["Neonatal Resuscitation"].flags == []
+    titled = "Neonatal Resuscitation\nkeep babies warm, dry, stimulate, suction airway, assess tone"
+    monkeypatch.setattr(isx, "deck_pages", lambda path: list(SLIDES) + [titled])
+    by = {s.heading: s for s in audit(vault).flat()}
+    assert by["Neonatal Resuscitation"].verdict == "slides"
+    assert by["Neonatal Resuscitation"].flags == ["heading-on-slide"]
+
+
+def test_summary_slide_titles():
+    assert isx.is_summary_slide("Take home \nmessages\nEnsure all newborns are pink")
+    assert isx.is_summary_slide("Summary\n- point")
+    assert not isx.is_summary_slide("Objectives\n1. Perform Leopold maneuvers")
+    assert not isx.is_summary_slide("Review BV, Yeast, Trichomoniasis and \nAtrophic Vaginitis")
