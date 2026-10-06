@@ -24,8 +24,21 @@ Verdicts: ``slides`` when some slide with at least SLIDE_MIN_TERMS distinct
 terms has at least SLIDES_AT of them inside the section; ``inherited`` when no
 slide does; ``no-deck`` when no deck was found, it could not be opened, or its
 text layer holds fewer than DECK_MIN_TERMS distinct terms (image-only slides).
-A thin section (under SECTION_MIN_TERMS distinct terms) takes its parent's
-verdict. Sections are the body's top heading level and the next level present
+Each deck is judged on its own: one with no usable text is named in the deck
+line and the note is scored on the rest. A thin section (under
+SECTION_MIN_TERMS distinct terms) takes its parent's verdict.
+
+Warnings: a note whose verdicts are not reliable enough to mark the vault
+carries a warning. ``dense`` (a deck averages over DENSE_TERMS terms per
+counted page: a handout, not slides), ``sparse`` (fewer than SPARSE_SHARE of a
+deck's pages reach SLIDE_MIN_TERMS: image-only slides), ``near-threshold``
+(a section scores in [NEAR_THRESHOLD, SLIDES_AT)), ``partial`` (PARTIAL says the
+decks on disk cover only part of the lecture), ``missing-deck`` (a DECKS name
+is not on disk) and ``unusable-deck`` (a deck has no usable text or cannot be
+opened). Verdicts are kept; a later step that marks the vault skips the note.
+Extracted deck text is cached under build/inherited_sections/deck_text/ and
+the vault's note index under build/inherited_sections/, both keyed so a
+changed file or vault is read again. Sections are the body's top heading level and the next level present
 (the neonatal note uses ``#`` and ``####``); deeper headings belong to their
 parent. ``![[note]]`` and ``![[note#Heading]]`` transclusions are followed.
 """
@@ -58,10 +71,18 @@ BLOCKS = {"endo": ("01 - Endocrinology", (1, 2, 3)), "repro": ("02 - Repro", (4,
 # DECK_MIN_TERMS: on the same day the readable decks held 50 (Thyroid Part 2,
 # 6 slides) to 1046 distinct terms and the three corrupt ones 0, so 25 sits
 # between an image-only deck's title words and the thinnest real deck.
+# DENSE_TERMS / SPARSE_SHARE: measured on 2026-10-06, real slide decks average
+# 14 to 26 terms per counted page, Introduction to Obesity's handout 217;
+# Testicular and Ovarian Function counts 6 of its 21 mostly image-only pages.
 SLIDES_AT = 0.5          # a section is taught when some slide is at least half inside it
 SLIDE_MIN_TERMS = 6      # a slide with fewer distinct terms (title-only, image-only) does not count
 SECTION_MIN_TERMS = 10   # a section with fewer distinct terms is thin and takes its parent's verdict
 DECK_MIN_TERMS = 25      # a deck with fewer distinct terms has no usable text layer
+NEAR_THRESHOLD = 0.4     # a section scoring from here up to SLIDES_AT is too close to call
+DENSE_TERMS = 80         # a deck averaging more terms per counted page is a handout
+SPARSE_SHARE = 0.5       # a deck with fewer of its pages counted is mostly image-only
+
+CACHE_DIR = ROOT / "build" / "inherited_sections"
 
 INHERITED_MARK = "> [!warning] Inherited"
 OBJECTIVES_MARK = "> [!check]"
@@ -148,6 +169,15 @@ DECKS: dict[str, list[str]] = {
     "08 - Postpartum Care": ["POSTPARTUMCARE LS Y2 V2.pdf"],
 }
 
+# Note stem -> why the decks on disk cover only part of the lecture. Such a
+# note's unmatched sections may be taught by a deck that was never exported.
+PARTIAL: dict[str, str] = {
+    "02 - Diagnosis and Management of Type 1 Diabetes":
+        "only the T1DM pathophysiology deck is on disk; the management half has none",
+    "11 - Approach to First Trimester Bleeding & Ultrasound":
+        "only the ultrasound deck is on disk; the hCG half quotes a deck that is not",
+}
+
 # words in a title or filename that say nothing about the lecture
 TITLE_NOISE = set("""
 approach clinical presentation evaluation introduction intro overview slides slide notes
@@ -208,13 +238,51 @@ class NoteParts:
 
 
 @dataclass
+class DeckStat:
+    """How one deck's text layer looks.
+
+    Attributes
+    ----------
+    path : Path
+        The deck file.
+    pages : int
+        Pages (slides) in the deck.
+    counted : int
+        Pages with at least SLIDE_MIN_TERMS distinct terms.
+    mean_terms : float
+        Mean distinct terms over the counted pages, 0 when none count.
+    problem : str
+        ``""``, ``"no usable text"`` or ``"unreadable: ..."``.
+    """
+    path: Path
+    pages: int = 0
+    counted: int = 0
+    mean_terms: float = 0.0
+    problem: str = ""
+
+    def to_json(self) -> dict:
+        """The stat as a JSON-ready dict."""
+        return {"deck": self.path.name, "pages": self.pages, "counted": self.counted,
+                "mean_terms": round(self.mean_terms, 1), "problem": self.problem}
+
+
+@dataclass
 class NoteResult:
-    """What the tool found for one note."""
+    """What the tool found for one note.
+
+    ``decks`` holds the decks the sections were scored against (all matched
+    decks for a note with no body); ``match`` is ``"override"`` or
+    ``"title match"``; ``warnings`` says why the verdicts should not be used
+    to mark the vault.
+    """
     note: Path
     decks: list[Path]
     deck_label: str
     sections: list[Section]
     skipped: str = ""
+    match: str = ""
+    deck_stats: list[DeckStat] = field(default_factory=list)
+    warnings: list[str] = field(default_factory=list)
 
     def flat(self) -> list[Section]:
         """Every section, parents before their children, in note order."""
@@ -302,17 +370,64 @@ def split_note(text: str) -> NoteParts:
     return NoteParts(chart, lines[start:], start)
 
 
-def embed_index() -> dict[str, Path]:
-    """Every ``.md`` note in the vault by lower-cased stem, for transclusions.
+class EmbedIndex(dict):
+    """Lower-cased note stem -> path, loaded from cache and rebuilt once on a miss."""
 
-    Returns
-    -------
-    dict
-        stem -> path; the first path seen wins for a duplicated stem.
-    """
+    fresh: bool = True
+
+    def refresh(self) -> None:
+        """Walk the vault again and save the result; done at most once per index."""
+        self.clear()
+        self.update(_walk_vault())
+        self.fresh = True
+        _save_index(self)
+
+
+def _walk_vault() -> dict[str, Path]:
+    """Every ``.md`` in VAULT by lower-cased stem; the first path seen wins."""
     index: dict[str, Path] = {}
     for p in VAULT.rglob("*.md"):
         index.setdefault(p.stem.lower(), p)
+    return index
+
+
+def _index_cache() -> Path:
+    """Where the vault index is cached."""
+    return CACHE_DIR / "embed_index.json"
+
+
+def _save_index(index: dict[str, Path]) -> None:
+    """Write the index to the cache; a cache that cannot be written is skipped."""
+    try:
+        _index_cache().parent.mkdir(parents=True, exist_ok=True)
+        _index_cache().write_text(json.dumps(
+            {"vault": str(VAULT), "index": {k: str(v) for k, v in index.items()}}), encoding="utf-8")
+    except OSError:
+        pass
+
+
+def embed_index() -> EmbedIndex:
+    """Every ``.md`` note in the vault by lower-cased stem, for transclusions.
+
+    The vault walk takes about 11 s over /mnt/c, so the index is cached in
+    CACHE_DIR for the same VAULT. A cached index may be stale; ``embed_text``
+    rebuilds it once when a name is missing or its path is gone.
+
+    Returns
+    -------
+    EmbedIndex
+        stem -> path; the first path seen wins for a duplicated stem.
+    """
+    try:
+        data = json.loads(_index_cache().read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        data = None
+    if data and data.get("vault") == str(VAULT):
+        index = EmbedIndex({k: Path(v) for k, v in data["index"].items()})
+        index.fresh = False
+        return index
+    index = EmbedIndex(_walk_vault())
+    _save_index(index)
     return index
 
 
@@ -339,8 +454,12 @@ def embed_text(name: str, index: dict[str, Path]) -> str:
         name, heading = name.split("#", 1)
     if IMAGE_RE.search(name):
         return ""
-    p = index.get(name.strip().lower())
-    if p is None:
+    key = name.strip().lower()
+    p = index.get(key)
+    if (p is None or not p.exists()) and not getattr(index, "fresh", True):
+        index.refresh()
+        p = index.get(key)
+    if p is None or not p.exists():
         return ""
     text = p.read_text(encoding="utf-8", errors="replace")
     if heading:
@@ -424,20 +543,38 @@ def deck_pages(path: Path) -> list[str]:
     Returns
     -------
     list of str
-        One string per page, empty for an image-only page.
+        One string per page, empty for an image-only page. Cached in
+        ``CACHE_DIR/deck_text/<name>.json`` keyed on the file's path, size
+        and mtime, so an unchanged deck is not read over /mnt/c again.
 
     Raises
     ------
     RuntimeError
         When pymupdf cannot open the file.
     """
+    cache = CACHE_DIR / "deck_text" / f"{path.name}.json"
+    st = path.stat()
+    key = {"path": str(path), "size": st.st_size, "mtime_ns": st.st_mtime_ns}
+    try:
+        data = json.loads(cache.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        data = None
+    if data and data.get("key") == key:
+        return data["pages"]
     import pymupdf
     pymupdf.TOOLS.mupdf_display_errors(False)   # a damaged stream is reported once, as no usable text
     try:
         doc = pymupdf.open(path)
     except Exception as exc:  # pymupdf raises its own hierarchy
         raise RuntimeError(f"cannot open {path.name}: {exc}") from exc
-    return [page.get_text() for page in doc]
+    with doc:
+        pages = [page.get_text() for page in doc]
+    try:
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        cache.write_text(json.dumps({"key": key, "pages": pages}, ensure_ascii=False), encoding="utf-8")
+    except OSError:
+        pass
+    return pages
 
 
 def deck_files() -> list[Path]:
@@ -477,7 +614,12 @@ def title_words(stem: str) -> set[str]:
 
 
 def decks_for(note: Path, files: list[Path]) -> list[Path]:
-    """The deck files that belong to a note.
+    """The deck files that belong to a note (``deck_match`` without the extras)."""
+    return deck_match(note, files)[0]
+
+
+def deck_match(note: Path, files: list[Path]) -> tuple[list[Path], list[str], str]:
+    """The deck files that belong to a note, with how they were found.
 
     Parameters
     ----------
@@ -488,21 +630,24 @@ def decks_for(note: Path, files: list[Path]) -> list[Path]:
 
     Returns
     -------
-    list of Path
-        The DECKS entry when there is one (names resolved against ``files``
-        and the week folder; an empty entry gives an empty list). Otherwise
-        every file whose squashed name contains at least half of the note's
-        title words and at least two of them (one when the title has only
-        one), best score first.
+    tuple
+        ``(paths, missing, how)``. With a DECKS entry: its names resolved
+        against ``files`` and the week folder, the names not found, and
+        ``"override"`` (an empty entry gives no paths). Otherwise every file
+        whose squashed name contains at least half of the note's title words
+        and at least two of them (one when the title has only one), best
+        score first, no missing names, and ``"title match"``.
     """
     local = [p for p in note.parent.iterdir() if p.suffix.lower() in DECK_SUFFIXES]
     pool = local + files
     if note.stem in DECKS:
         by_name = {p.name: p for p in pool}
-        return [by_name[n] for n in DECKS[note.stem] if n in by_name]
+        names = DECKS[note.stem]
+        return ([by_name[n] for n in names if n in by_name],
+                [n for n in names if n not in by_name], "override")
     want = title_words(note.stem)
     if not want:
-        return []
+        return [], [], "title match"
     need = min(2, len(want))
     scored = []
     for p in pool:
@@ -511,7 +656,7 @@ def decks_for(note: Path, files: list[Path]) -> list[Path]:
         if hit >= need and hit / len(want) >= 0.5:
             scored.append((hit / len(want), hit, p))
     scored.sort(key=lambda t: (-t[0], -t[1], t[2].name))
-    return [p for _s, _h, p in scored]
+    return [p for _s, _h, p in scored], [], "title match"
 
 
 def slide_coverage(section_terms: set[str], slides: list[set[str]]) -> float:
@@ -560,8 +705,38 @@ def judge(secs: list[Section], slides: list[set[str]] | None) -> None:
             item.verdict = "slides" if item.score >= SLIDES_AT else "inherited"
 
 
+def read_deck(path: Path) -> tuple[DeckStat, list[set[str]]]:
+    """Read one deck and describe its text layer.
+
+    Parameters
+    ----------
+    path : Path
+        The deck file.
+
+    Returns
+    -------
+    tuple
+        ``(stat, slides)``: the deck's DeckStat and each page's distinct
+        terms; ``slides`` is empty when ``stat.problem`` is set.
+    """
+    stat = DeckStat(path)
+    try:
+        pages = deck_pages(path)
+    except RuntimeError as exc:
+        stat.problem = f"unreadable: {exc}"
+        return stat, []
+    slides = [terms(page) for page in pages]
+    counted = [len(t) for t in slides if len(t) >= SLIDE_MIN_TERMS]
+    stat.pages, stat.counted = len(pages), len(counted)
+    stat.mean_terms = sum(counted) / len(counted) if counted else 0.0
+    if len(set().union(*slides)) < DECK_MIN_TERMS:
+        stat.problem = "no usable text"
+        return stat, []
+    return stat, slides
+
+
 def audit_note(note: Path, files: list[Path], index: dict[str, Path]) -> NoteResult:
-    """Find a note's deck and score its sections.
+    """Find a note's decks, score its sections and say how far to trust them.
 
     Parameters
     ----------
@@ -576,31 +751,42 @@ def audit_note(note: Path, files: list[Path], index: dict[str, Path]) -> NoteRes
     -------
     NoteResult
         ``skipped`` is ``"no body"`` for a chart-only note. ``deck_label`` is
-        the deck filenames joined with ``", "``, or ``"no deck found"``, or
-        the filenames followed by ``" (no usable text)"`` or
-        ``" (unreadable: ...)"``.
+        the usable deck filenames joined with ``", "`` (or ``"no deck
+        found"``), then ``(missing: X)``, ``(no usable text: X)`` or
+        ``(unreadable: ...)`` for each deck left out. Every deck is judged on
+        its own; the note is ``no-deck`` only when none is usable.
     """
     parts = split_note(note.read_text(encoding="utf-8", errors="replace"))
     secs = sections(parts.body, parts.body_start, lambda n: embed_text(n, index))
-    decks = decks_for(note, files)
+    paths, missing, how = deck_match(note, files)
+    notes = [f"(missing: {n})" for n in missing]
+    warnings = (["partial"] if note.stem in PARTIAL else []) + (["missing-deck"] if missing else [])
     if not secs:
-        return NoteResult(note, decks, ", ".join(p.name for p in decks) or "no deck found", [], "no body")
-    if not decks:
-        judge(secs, None)
-        return NoteResult(note, [], "no deck found", secs)
-    label = ", ".join(p.name for p in decks)
-    try:
-        pages = [page for p in decks for page in deck_pages(p)]
-    except RuntimeError as exc:
-        judge(secs, None)
-        return NoteResult(note, decks, f"{label} (unreadable: {exc})", secs)
-    slides = [terms(page) for page in pages]
-    usable = len(set().union(*slides)) if slides else 0
-    if usable < DECK_MIN_TERMS:
-        judge(secs, None)
-        return NoteResult(note, decks, f"{label} (no usable text)", secs)
-    judge(secs, slides)
-    return NoteResult(note, decks, label, secs)
+        label = ", ".join(p.name for p in paths) or "no deck found"
+        return NoteResult(note, paths, " ".join([label] + notes), [], "no body", how, [], warnings)
+    stats, good, slides = [], [], []
+    for p in paths:
+        stat, deck_slides = read_deck(p)
+        stats.append(stat)
+        if stat.problem:
+            notes.append(f"({stat.problem})" if stat.problem.startswith("unreadable")
+                         else f"({stat.problem}: {p.name})")
+            continue
+        good.append(p)
+        slides.extend(deck_slides)
+        if stat.mean_terms > DENSE_TERMS:
+            warnings.append("dense")
+        if stat.counted < SPARSE_SHARE * stat.pages:
+            warnings.append("sparse")
+    if any(st.problem for st in stats):
+        warnings.append("unusable-deck")
+    label = " ".join([", ".join(p.name for p in good) or "no deck found"] + notes)
+    judge(secs, slides if good else None)
+    result = NoteResult(note, good, label, secs, "", how, stats, [])
+    if any(s.score is not None and NEAR_THRESHOLD <= s.score < SLIDES_AT for s in result.flat()):
+        warnings.append("near-threshold")
+    result.warnings = list(dict.fromkeys(warnings))
+    return result
 
 
 def lecture_notes(block: str) -> list[Path]:
@@ -628,7 +814,13 @@ def lecture_notes(block: str) -> list[Path]:
 def print_table(result: NoteResult) -> None:
     """Print one note's table."""
     print(f"== {result.note.stem}  [{result.note.parent.parent.name} / {result.note.parent.name}]")
-    print(f"   deck: {result.deck_label}")
+    print(f"   deck [{result.match}]: {result.deck_label}")
+    for st in result.deck_stats:
+        if not st.problem:
+            print(f"     {st.path.name}: {st.pages} pages, {st.counted} counted, "
+                  f"{st.mean_terms:.0f} terms per counted page")
+    if result.warnings:
+        print(f"   WARNINGS: {', '.join(result.warnings)} (verdicts kept; do not mark the vault from them)")
     if result.skipped:
         print(f"   {result.skipped}")
         return
@@ -655,7 +847,8 @@ def write_json(results: list[NoteResult], out: Path) -> None:
     for r in results:
         data.append({
             "note": r.note.stem, "week": r.note.parent.name, "decks": [p.name for p in r.decks],
-            "deck_label": r.deck_label, "skipped": r.skipped,
+            "deck_label": r.deck_label, "skipped": r.skipped, "match": r.match,
+            "warnings": r.warnings, "deck_stats": [st.to_json() for st in r.deck_stats],
             "sections": [{"level": s.level, "heading": s.heading, "line": s.line, "words": s.words,
                           "score": s.score, "verdict": s.verdict,
                           "parent": None if s in r.sections else next(
@@ -680,9 +873,14 @@ def main() -> None:
         r = audit_note(note, files, index)
         print_table(r)
         results.append(r)
-    inherited = sum(1 for r in results for s in r.flat() if s.verdict == "inherited")
-    nodeck = [r.note.stem for r in results if r.deck_label.startswith("no deck") or "(no usable" in r.deck_label or "(unreadable" in r.deck_label]
-    print(f"\n{len(results)} notes, {inherited} inherited sections, {len(nodeck)} without a usable deck")
+    def count(rs: list[NoteResult]) -> int:
+        return sum(1 for r in rs for s in r.flat() if s.verdict == "inherited")
+    warned = [r for r in results if r.warnings]
+    clean = [r for r in results if not r.warnings]
+    nodeck = [r.note.stem for r in results if not r.skipped and not r.decks]
+    print(f"\n{len(results)} notes, {count(results)} inherited sections, {len(nodeck)} without a usable deck")
+    print(f"{len(warned)} notes carry a warning ({count(warned)} inherited sections); "
+          f"{len(clean)} do not ({count(clean)} inherited sections)")
     for stem in nodeck:
         print(f"   no deck: {stem}", file=sys.stderr)
     if args.json:

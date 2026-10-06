@@ -231,6 +231,14 @@ layer is empty is reported as `no usable text` and its sections as `no-deck`,
 never as inherited. `DECKS` maps a note to its deck filenames where the title
 match would guess wrong.
 
+A note whose scores are not trustworthy carries warnings in its table header
+and JSON: `dense` (a handout, not slides), `sparse` (mostly image-only
+slides), `near-threshold`, `partial` (only part of the lecture's decks are on
+disk), `missing-deck` and `unusable-deck`. Its verdicts are kept, but nothing
+should mark the vault from them. Each deck's text is cached under
+`build/inherited_sections/deck_text/` and reread only when the file changes,
+so the second run of a block is fast.
+
 ## Publishing an Anki deck
 
 One more script off to the side. It needs **Anki running** with the

@@ -7,6 +7,7 @@ Input: a synthetic vault note and synthetic slide texts built in tmp_path (no re
 Output: pytest results
 """
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -78,6 +79,8 @@ def vault(tmp_path, monkeypatch):
     monkeypatch.setattr(isx, "LECTURE_NOTES", root / "01 - Lectures" / "99 - PoM 2")
     monkeypatch.setattr(isx, "DECK_DIRS", [decks])
     monkeypatch.setattr(isx, "DECKS", {})
+    monkeypatch.setattr(isx, "PARTIAL", {})
+    monkeypatch.setattr(isx, "CACHE_DIR", tmp_path / "cache")
     monkeypatch.setattr(isx, "deck_pages", lambda path: list(SLIDES))
     return root
 
@@ -128,7 +131,8 @@ def test_thin_child_takes_parent_verdict(vault):
 def test_empty_text_layer_is_no_usable_text(vault, monkeypatch):
     monkeypatch.setattr(isx, "deck_pages", lambda path: ["", " ", ""])
     result = isx.audit_note(note_path(vault), isx.deck_files(), isx.embed_index())
-    assert result.deck_label.endswith("(no usable text)")
+    assert result.deck_label == ("no deck found (no usable text: "
+                                 "Approach to Neonatal Care Online Module Cheng Aug 2025.pdf)")
     assert {s.verdict for s in result.flat()} == {"no-deck"}
 
 
@@ -177,6 +181,8 @@ def test_json_report_round_trips(vault, tmp_path):
     data = json.loads(out.read_text(encoding="utf-8"))
     assert data[0]["note"] == "09 - Approach to Neonatal Care"
     assert {s["verdict"] for s in data[0]["sections"]} == {"slides", "inherited"}
+    assert data[0]["warnings"] == [] and data[0]["match"] == "title match"
+    assert data[0]["deck_stats"][0]["pages"] == 4 and data[0]["deck_stats"][0]["counted"] == 2
 
 
 def test_one_heading_level_keeps_plain_lines_as_text():
@@ -185,3 +191,125 @@ def test_one_heading_level_keeps_plain_lines_as_text():
     assert [s.heading for s in secs] == ["Only", "Next"]
     assert all(s.children == [] for s in secs)
     assert "thyroid hormone" in secs[0].text and secs[1].line == 12
+
+
+NEONATAL = "Approach to Neonatal Care Online Module Cheng Aug 2025.pdf"
+FETUS = "Approach to the Small Fetus slides.pdf"
+STEM = "09 - Approach to Neonatal Care"
+
+
+def audit(root):
+    return isx.audit_note(note_path(root), isx.deck_files(), isx.embed_index())
+
+
+def test_clean_deck_raises_no_warning(vault):
+    result = audit(vault)
+    assert result.warnings == [] and result.match == "title match"
+    st = result.deck_stats[0]
+    assert (st.pages, st.counted, st.problem) == (4, 2, "")
+    assert st.mean_terms == pytest.approx((9 + 14) / 2)
+
+
+def test_dense_deck_warns(vault, monkeypatch):
+    page = " ".join(f"term{i:03d}" for i in range(200))
+    monkeypatch.setattr(isx, "deck_pages", lambda path: list(SLIDES) + [page, page])
+    assert "dense" in audit(vault).warnings
+
+
+def test_sparse_deck_warns(vault, monkeypatch):
+    monkeypatch.setattr(isx, "deck_pages", lambda path: list(SLIDES) + [""] * 6)
+    result = audit(vault)
+    assert result.warnings == ["sparse"]
+    assert {s.verdict for s in result.flat()} == {"slides", "inherited"}   # verdicts kept
+
+
+def test_near_threshold_and_partial_warn(vault, monkeypatch):
+    monkeypatch.setattr(isx, "NEAR_THRESHOLD", 0.0)
+    monkeypatch.setattr(isx, "PARTIAL", {STEM: "only part of the lecture's decks"})
+    assert audit(vault).warnings == ["partial", "near-threshold"]
+
+
+def test_missing_override_name_is_reported(vault, monkeypatch):
+    monkeypatch.setattr(isx, "DECKS", {STEM: [NEONATAL, "Gone.pdf"]})
+    result = audit(vault)
+    assert result.deck_label == f"{NEONATAL} (missing: Gone.pdf)"
+    assert result.match == "override" and "missing-deck" in result.warnings
+    assert {s.verdict for s in result.flat()} == {"slides", "inherited"}
+    monkeypatch.setattr(isx, "DECKS", {STEM: ["Gone.pdf"]})
+    result = audit(vault)
+    assert result.deck_label == "no deck found (missing: Gone.pdf)"
+    assert result.warnings == ["missing-deck"] and {s.verdict for s in result.flat()} == {"no-deck"}
+
+
+def test_unusable_deck_is_dropped_and_the_rest_scored(vault, monkeypatch):
+    monkeypatch.setattr(isx, "DECKS", {STEM: [NEONATAL, FETUS]})
+    monkeypatch.setattr(isx, "deck_pages", lambda path: list(SLIDES) if path.name == NEONATAL else ["", " "])
+    result = audit(vault)
+    assert result.deck_label == f"{NEONATAL} (no usable text: {FETUS})"
+    assert [p.name for p in result.decks] == [NEONATAL]
+    by = {s.heading: s for s in result.flat()}
+    assert by["Apgar Score"].verdict == "slides" and by["Neonatal Resuscitation"].verdict == "inherited"
+    assert "unusable-deck" in result.warnings
+
+
+def test_unreadable_deck_is_named(vault, monkeypatch):
+    def pages(path):
+        if path.name == FETUS:
+            raise RuntimeError(f"cannot open {path.name}: broken")
+        return list(SLIDES)
+    monkeypatch.setattr(isx, "DECKS", {STEM: [NEONATAL, FETUS]})
+    monkeypatch.setattr(isx, "deck_pages", pages)
+    result = audit(vault)
+    assert result.deck_label == f"{NEONATAL} (unreadable: cannot open {FETUS}: broken)"
+
+
+def test_deck_pages_reads_the_cache_until_the_file_changes(tmp_path, monkeypatch):
+    import pymupdf
+    deck = tmp_path / "d.pdf"
+    deck.write_bytes(b"x")
+    monkeypatch.setattr(isx, "CACHE_DIR", tmp_path / "cache")
+    calls = []
+
+    class Page:
+        def get_text(self):
+            return "alpha beta"
+
+    class Doc:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *exc):
+            return False
+
+        def __iter__(self):
+            return iter([Page(), Page()])
+
+    def fake_open(path):
+        calls.append(path)
+        return Doc()
+
+    monkeypatch.setattr(pymupdf, "open", fake_open)
+    assert isx.deck_pages(deck) == ["alpha beta", "alpha beta"]
+    assert isx.deck_pages(deck) == ["alpha beta", "alpha beta"]
+    assert len(calls) == 1
+    assert (tmp_path / "cache" / "deck_text" / "d.pdf.json").exists()
+    os.utime(deck, ns=(1, 1))
+    isx.deck_pages(deck)
+    assert len(calls) == 2
+
+
+def test_embed_index_is_cached_and_rebuilt_once_on_a_miss(vault, monkeypatch):
+    walk = isx._walk_vault
+    first = isx.embed_index()
+
+    def no_walk():
+        raise AssertionError("walked the vault")
+
+    monkeypatch.setattr(isx, "_walk_vault", no_walk)
+    second = isx.embed_index()
+    assert second["neonatal sepsis"] == first["neonatal sepsis"]
+    (vault / "00 - Medications" / "late note.md").write_text("chorioamnionitis late", encoding="utf-8")
+    monkeypatch.setattr(isx, "_walk_vault", walk)
+    assert "chorioamnionitis" in isx.embed_text("late note", second)
+    monkeypatch.setattr(isx, "_walk_vault", no_walk)
+    assert isx.embed_text("no such note", second) == ""        # one rebuild per run, not per miss
