@@ -299,9 +299,13 @@ already in `lectureMeta` and is not a lecture.
 
 **And the lecture decides the week, not the other way round.** Where a question's material is
 taught in a different week from the one the source filed it under, the lecture link is still the
-lecture that teaches it - do not move the link to fit the heading. The reproduction workbook has
-nine groups filed under the wrong week for exactly this reason, and the portal now renders the
-lecture's week rather than the filing week, so a correct link quietly corrects a wrong heading.
+lecture that teaches it - do not move the link to fit the heading. But a correct link does not
+fix the filing on its own: the portal's week filter and its week and lecture headings read the
+question's `week`, `weekLabel` and `lecture` fields, and `review` only changes the "go and read"
+line. Three HippoNotes questions filed under their 2023 week shipped under Week 6 with a review
+line pointing at Week 5 and were reported by readers on 2026-10-06. So the question is re-filed
+in the JSON too: Stage 4b's `misfiled` verdict does it, and its report gate catches any that
+were not.
 
 ### A case with no question posed asks for its reveal
 
@@ -513,6 +517,12 @@ notes. This is the one unautomated step in the chain, so budget for it.
   newline), unlike `data/notes/*.json` which is `indent=1`.
 - The field list is in `pom2/README.md`. `keyed: false`, `unscorable: true` and
   `retired: true` carry real meaning, do not flatten them.
+- **A week-only bank gets its week from the lecture, not from the source.** HippoNotes and the
+  Schulich Reviews group questions by the week of the year they were written in, and those weeks
+  no longer match this year's. Export each such question with `week`, `weekLabel` and `lecture`
+  set to the lecture that teaches it now, named as the vault spells it, so the week filter puts
+  it where she will look for it. A question you cannot place yet keeps the source's week and
+  Stage 4b's read places it.
 - **A matching question ships as a dropdown grid, never as an MCQ over complete mappings**
   ("1-W, 2-X, 3-Y") or as one question per item. Give it `kind: "pairing"` and a `pairs` object
   (see `module-repro-Q2`), and add its spec to `tools/pairings/` so `tools/curated_pairings.py`
@@ -583,9 +593,11 @@ PDF decides):
 | `current` | the tested fact is taught in this year's block notes, and the key agrees | nothing |
 | `outdated` | this year's lecture contradicts the key or the stem's premise | move to Off-curriculum, say what the slide now says |
 | `not-covered` | the tested fact appears in none of this year's block notes | move to Off-curriculum, name the nearest lecture |
+| `misfiled` | the tested fact is taught, but in a different week or lecture from where the question is filed, or no lecture is named | re-file under that lecture: `apply` rewrites `week`, `weekLabel`, `lecture` and `review`, and moves it to the owning block's bank if the week is in another block |
 | `retired` | the source itself retired the question (`retired: true`), whatever its content | move to Off-curriculum; her call 2026-10-05, so the retired tag never sits inside a live set |
 
-A question taught in a different week or lecture from where its source filed it is `current`.
+A question taught in a different week or lecture from where its source filed it, or whose
+`lecture` is only the week's title, is `misfiled`, not `current`; it stays live and is re-filed.
 Adjacent clinical depth the lecture does not go into (a drug the note never names, a staging
 system the slides skip) is `not-covered`.
 
@@ -641,22 +653,27 @@ both, rekeyed to the lecture.
 python3 tools/curriculum_audit.py candidates --course pom2 --block <slug> --week N
 ```
 
-lists the questions most likely to need a read: no `review`, no week, a handed-down family, or a
-`review` note edited after the bank was last written. Run it per week of the block. **It is a
+lists the questions most likely to need a read: no `review`, no week, a handed-down family, a
+`review` whose week disagrees with the filed week, a `lecture` that only repeats the week title,
+or a `review` note edited after the bank was last written. Run it per week of the block. **It is a
 shortlist, not the check. The read is the work.** Read each candidate, and **every question
 whose lecture note Stage 1 changed this run**, against that note, the way the brief says.
 
 1. Write the verdicts to `build/curriculum_audit/<slug>_<chunk>.json`, one row per question read,
-   in the brief's format: `{qid, verdict, against, week, evidence, note}`, evidence a quote of
-   at most 200 characters from the note or slide.
+   in the brief's format: `{qid, verdict, against, week, evidence, note}`, verdict one of
+   `current | outdated | not-covered | misfiled`, evidence a quote of at most 200 characters
+   from the note or slide.
 2. `python3 tools/curriculum_audit.py apply build/curriculum_audit/<slug>_<chunk>.json` moves
-   the outdated and not-covered ones. Applying the same file twice changes nothing.
+   the outdated and not-covered ones and re-files the misfiled ones. Applying the same file
+   twice changes nothing.
 3. `python3 tools/curriculum_audit.py mark-vault --dry-run <files>`, read its line, then the
    same without `--dry-run`. It writes the marker and callout under each moved question's
    `# N` heading in the vault-authored notes; the form is in `med-questions` (the marker
    section), so do not restate it here.
-4. `python3 tools/curriculum_audit.py report` **must show zero null weeks** for the block. A
-   null week is a question that will sit under a "No week" chip on the portal.
+4. `python3 tools/curriculum_audit.py report` **must show zero null weeks, zero `misfiled` and
+   zero `lecture is the week title`** for the block. A null week is a question that will sit
+   under a "No week" chip on the portal; a misfiled one sits under the wrong week with a review
+   line that contradicts it, which is exactly what readers reported on 2026-10-06.
 5. Add any `KEY?` rows to `build/curriculum_audit/KEY_ISSUES.md`, for Stage 7.
 
 ## Stage 5 - rebuild the portal

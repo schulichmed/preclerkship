@@ -126,6 +126,7 @@ carries the same fields:
 | `flags` | `[{"type": "warning", "title": "...", "html": "..."}]`, printed on the question |
 | `offCurriculum` | only on a question in the Off-curriculum set: `{"reason": "outdated" \| "not-covered" \| "retired", "from": "<the set it left>", "against": "<lecture checked>", "checked": "YYYY-MM-DD"}` |
 | `restored` | only on a question she put back after an audit moved it: `{"from": "<the reason it was moved>", "on": "YYYY-MM-DD", "note": "<why it is fair game>"}`. A later audit run leaves it alone. |
+| `refiled` | only on a question an audit re-filed under the lecture that teaches it this year: `{"from": {"block": "<bank it left>", "week": <week it was filed under>, "lecture": "<lecture it named>"}, "on": "YYYY-MM-DD"}`. `week`, `weekLabel` and `lecture` are the lecture's; `review` points at the same lecture. |
 
 `keyed: false` and `unscorable: true` matter. Question banks handed down between
 years are often missing an answer key or contain a question with no defensible

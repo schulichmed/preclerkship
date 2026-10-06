@@ -25,6 +25,11 @@ the whole reason the last route is allowed to refuse.
 
 FIVE ROUTES, IN ORDER. THE FIRST FOUR ARE EXACT
 -----------------------------------------------
+0. **A question a human re-filed.** A question carrying a `refiled` record was
+   read against this year's notes and re-filed under the lecture that teaches
+   it, so it keeps the `review` that read gave it: the read outranks a lookup
+   of the source's attribution, which is what filed it wrongly to begin with.
+
 1. **The workbook notes' own attribution.** Every `#### group` in a
    ``Preclerkship Workbook - <topic>.md`` carries a line naming the lectures it
    tests: ``*Workbook Q11-Q13. Tests [[03 - Contraception]].*``. The portal's
@@ -267,6 +272,11 @@ def resolve(q, rost, groups):
         if rec and (rec["w"], rec["t"]) not in seen:
             seen.add((rec["w"], rec["t"]))
             hits.append(rec)
+
+    # 0. a question re-filed against this year's notes keeps the review that
+    #    read gave it, ahead of the source's own attribution
+    if q.get("refiled") and q.get("review"):
+        return q["review"], "refiled"
 
     # 1. the workbook note's own "Tests [[...]]" line for this question's group
     if q.get("family") == "workbook":
