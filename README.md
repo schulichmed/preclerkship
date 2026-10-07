@@ -165,6 +165,7 @@ python tools/charts_from_vault.py        # folds written notes on top
 
 python tools/roman_items.py              # item lists read as options -> back in the stem
 python tools/curated_pairings.py         # matching questions -> dropdown grids (tools/pairings/)
+python tools/followup_cases.py           # follow-ups -> the case they continue (tools/followup_cases/)
 python tools/question_figures.py         # any newly-inlined picture -> assets/figures/
 python tools/review_lectures.py --derive # every question -> the lecture it tests
 
