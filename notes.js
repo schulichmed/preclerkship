@@ -34,6 +34,7 @@
   var AT = Object.create(null);   // lecture id -> its place in the stream
   var CURRENT = null;             // the note the index is pointing at
   var PENDING = null;             // a clicked note whose scroll is still running
+  var SETTLE = null;              // the jump still re-checking where it landed
 
   var query = "";                 // the search box, lowercased and trimmed
   var WORDS = [];                 // the query split by the rule in portal.js
@@ -241,11 +242,39 @@
     if (!art) return;
     PENDING = id;
     mark(id);
-    var top = art.getBoundingClientRect().top + window.pageYOffset - 16;
     var still = window.matchMedia &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    try { window.scrollTo({ top: top, behavior: still ? "auto" : "smooth" }); }
-    catch (e) { window.scrollTo(0, top); }
+
+    function aim(smooth) {
+      var top = art.getBoundingClientRect().top + window.pageYOffset - 16;
+      try { window.scrollTo({ top: top, behavior: smooth ? "smooth" : "auto" }); }
+      catch (e) { window.scrollTo(0, top); }
+    }
+    aim(!still);
+
+    /* The target is worked out once, but the page does not hold still while
+       the scroll travels: lazy figures load as it passes them (most PoM 1
+       figures carry no size, so nothing reserves their space) and diagrams
+       swap source for taller SVG, all of which pushes the note further down.
+       So once the scroll comes to rest, look again, and snap to the note if
+       it has moved. Stops when the note is in place, when the page cannot
+       scroll any further, after a few tries, or when the reader takes over. */
+    var token = SETTLE = {}, tries = 0, lastY = -1, quiet = 0;
+    function settle() {
+      if (SETTLE !== token) return;
+      var y = window.pageYOffset;
+      if (y !== lastY) { lastY = y; quiet = 0; }
+      else if (++quiet >= 6) {
+        var off = art.getBoundingClientRect().top - 16;
+        var atEnd = off > 0 &&
+          y + window.innerHeight >= document.documentElement.scrollHeight - 1;
+        if (Math.abs(off) < 2 || atEnd || ++tries > 8) { SETTLE = null; return; }
+        aim(false);
+        quiet = 0;
+      }
+      window.requestAnimationFrame(settle);
+    }
+    window.requestAnimationFrame(settle);
   }
 
   function mark(id) {
@@ -330,7 +359,7 @@
        they have changed their mind and the index should follow them, not the
        jump they walked away from */
     ["wheel", "touchstart", "keydown"].forEach(function (ev) {
-      window.addEventListener(ev, function () { PENDING = null; }, { passive: true });
+      window.addEventListener(ev, function () { PENDING = null; SETTLE = null; }, { passive: true });
     });
   }
 
