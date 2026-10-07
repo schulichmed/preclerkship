@@ -431,6 +431,19 @@ body[data-tab="questions"] .q-masthead .lead{display:none;}
     border:1px solid var(--border);
 }
 
+/* A screenshot of Anki's own (light) deck list, so it keeps a light frame in
+   either theme and never grows past its real size. */
+.deck-preview{margin:16px 0 0;max-width:560px;}
+.deck-preview img{
+    display:block;
+    width:100%;
+    height:auto;
+    border:1px solid var(--border);
+    border-radius:6px;
+    background:#f8f8f8;
+}
+.deck-preview figcaption{margin-top:7px;font-size:.78rem;line-height:1.55;}
+
 /* Three weeks side by side where there is room, stacked where there is not.
    The lecture names are long enough that a fixed column count would either
    clip them or leave a third of the panel empty. */

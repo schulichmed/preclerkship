@@ -176,6 +176,28 @@ def deck_src(m):
             'what you download matches the course as it is being taught now.</p>')
 
 
+ANKI_PREVIEW = "assets/anki_preview.png"
+
+
+def anki_preview(course):
+    """A screenshot of the deck as it sits in Anki, if the course has one.
+
+    One picture of the deck list answers "where will this land" faster than
+    the sentence above it. It is shared by every block in the course, so it
+    lives in the course's assets/ rather than in a block's manifest.
+    """
+    if not os.path.exists(os.path.join(course["slug"], ANKI_PREVIEW)):
+        return u""
+    return ('<figure class="deck-preview">'
+            '<img src="%s" alt="The %s deck in Anki&rsquo;s deck list: the course, '
+            'then a block, then each week, then one subdeck per lecture" '
+            'loading="lazy" decoding="async">'
+            '<figcaption>How it looks once imported: course, block, week, then one '
+            'subdeck per lecture. The numbers are one student&rsquo;s cards due that '
+            'day, not the size of each deck.</figcaption>'
+            '</figure>' % (ANKI_PREVIEW, course["short"]))
+
+
 def anki_panel(course, slug, weeks):
     """The Anki tab: the deck if one has been exported, else the empty state.
 
@@ -214,6 +236,7 @@ def anki_panel(course, slug, weeks):
            '<strong>File &rarr; Import</strong> and pick the file. It arrives as '
            '<code>%s</code> with the week and lecture subdecks intact, so it sits '
            'beside whatever you already have rather than merging into it.</p>' % m["deck"],
+           anki_preview(course),
            '</div>',
            '<div class="deck-weeks">']
     for w in m["weeks"]:
@@ -232,7 +255,8 @@ def anki_panel(course, slug, weeks):
         out.append('</section>')
     out.append('</div>')
     out.append('</div>')
-    return "\n".join(out)
+    # a course with no preview contributes an empty string, not a blank line
+    return "\n".join(x for x in out if x)
 
 
 def anki_tc(course, slug):
