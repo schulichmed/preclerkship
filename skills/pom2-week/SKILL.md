@@ -666,6 +666,16 @@ questions, module-endo-Q21 and module-repro-Q9, whose slide now contradicts thei
 why the `outdated` test runs on this year's sources too: this year's family says where a
 question came from, not that its key still matches the slide.*
 
+**Coverage comes from this block or an earlier one, never a later one.** A fact that sits only
+in a later block's note has not been taught when this block is examined, so it is not-covered
+here. Endo draws on endo; repro draws on repro and endo. And a passing mention is not coverage:
+a bare word in a cause list, a figure label, or a Schulich Reviews tip callout inside a chart does
+not count, the fact has to be taught in a chart row, a bullet or a sentence. *Observed 2026-10-07:
+reviews-endo-Q30 (Sheehan syndrome) stood in the first pass because repro Week 6 teaches it; she
+called it not covered, and the re-audit of all 108 Schulich Reviews questions under this rule
+moved two (that one, and reviews-repro-Q30, whose late-deceleration mechanism is only in an
+upper-year callout the slides do not back).*
+
 **Not-covered means the question, not an option.** The thing the stem asks about has to be
 untaught. A question whose main discriminator is taught stays current even when one option
 leans on a detail the lecture skips, and the gap goes in `note` instead. *Observed 2026-10-05:
