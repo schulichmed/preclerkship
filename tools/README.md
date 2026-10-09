@@ -137,6 +137,18 @@ the `data/figures.json` manifest that `charts_from_vault.py` reads. Naming a fil
 after its own bytes means re-runs are free and duplicates collapse. It prints
 every newly-encoded picture, because a new image should never be added unseen -
 it cannot tell a cadaveric image from a clinical photograph and does not try.
+An `.svg` embed is copied byte for byte to `assets/figures/<hash>.svg` instead,
+and the page shows it at the column's full width rather than the 360px cap.
+
+**`class_tree_svg.py`** draws a drug-class tree (root, classes, drug cards) as an
+SVG from a spec in [`class_trees/`](class_trees/), measuring every line in Arial
+so the text wraps inside its cards. Write the result into the vault's
+`Attachments` and embed it in the chart; `figures.py` ships it from there:
+
+```bash
+python tools/class_tree_svg.py tools/class_trees/calcium_bone_drugs.json \
+  --out "/mnt/c/Users/nsims/medwiki/Attachments/drug classes tree - calcium and bone drugs.svg"
+```
 
 **`build_pages.py`** regenerates the five block pages. Only the name, blurb, accent
 and two counts differ between them, so they are generated rather than copied. The

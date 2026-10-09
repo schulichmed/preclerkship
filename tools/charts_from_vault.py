@@ -25,7 +25,7 @@ PIPE = u"\x00"   # stands in for an escaped \| while a table row is split
 
 # An Obsidian embed alone on its line is a figure. Alone is the whole test: an
 # embed with prose around it is a sentence that mentions a picture, not a block.
-IMG_EXT = u"png|jpe?g|gif|webp"
+IMG_EXT = u"png|jpe?g|gif|webp|svg"
 FIG_LINE = re.compile(
     r"^\s*!\[\[\s*([^\]\|]+?\.(?:%s))\s*(?:\|\s*([^\]]*?)\s*)?\]\]\s*$" % IMG_EXT, re.I)
 

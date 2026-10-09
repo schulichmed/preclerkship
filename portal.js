@@ -165,6 +165,9 @@
       // openable the moment it is built, unlike a pathway, which has to wait
       // for mermaid to draw before there is anything to open
       var fbox = el("div", "figblock is-openable");
+      // a drawn SVG (a class tree) is meant to be read where it sits, so it
+      // takes the column's width instead of the illustration height cap
+      if (/\.svg$/i.test(b.src)) fbox.classList.add("is-diagram");
       var fig = el("figure", "fig");
 
       var img = el("img");

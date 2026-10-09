@@ -1,0 +1,73 @@
+{
+ "title": "Glucose-lowering drugs in type 2 diabetes: insulin sensitizers, insulin secretagogues, and drugs that alter absorption or excretion",
+ "root": "Glucose-lowering drugs in T2DM",
+ "legend": [
+  {"chip": "↓A1c %", "kind": "plain", "label": "HbA1c drop"},
+  {"chip": "hypo", "kind": "bad", "label": "hypoglycemia risk"},
+  {"chip": "wt ↓", "kind": "good", "label": "weight loss"},
+  {"chip": "wt ↑", "kind": "bad", "label": "weight gain"}
+ ],
+ "groups": [
+  {
+   "title": "Insulin sensitizers",
+   "desc": "↑ peripheral glucose use. No change in insulin release, so low hypoglycemia risk alone.",
+   "color": "sens",
+   "sections": [{"drugs": [
+    {"name": "Biguanide: metformin", "star": true,
+     "moa": "Activates AMP kinase → ↓ gluconeogenesis and glycogenolysis, ↑ hepatic insulin sensitivity. Excreted unchanged in urine.",
+     "chips": [["1.0", "plain"], ["no hypo", "good"], ["wt neutral", "plain"], ["$", "good"], ["first-line", "good"]],
+     "lines": [{"label": "Avoid:", "text": "eGFR < 30. Lactic acidosis, ↓ B12, GI upset.", "kind": "bad"}]},
+    {"name": "Thiazolidinediones (TZDs)", "agents": "pioglitazone, rosiglitazone",
+     "moa": "PPAR-γ agonists → adipocyte expansion, ↓ free fatty acids, ↑ muscle uptake. Gene transcription, so onset up to 3 months.",
+     "chips": [["0.7–0.9", "plain"], ["no hypo", "good"], ["wt ↑", "bad"], ["$$$", "warn"]],
+     "lines": [{"label": "Avoid:", "text": "heart failure (edema), liver failure, osteoporosis (fractures), bladder cancer.", "kind": "bad"}]}
+   ]}]
+  },
+  {
+   "title": "Insulin secretagogues",
+   "desc": "↑ insulin release from β-cells. Need functioning β-cells, so weaker in advanced disease.",
+   "color": "secr",
+   "sections": [
+    {"subhead": "Glucose-independent · hypo risk", "drugs": [
+     {"name": "Sulfonylureas", "agents": "gliclazide, glyburide, glimepiride",
+      "moa": "Close the β-cell ATP-sensitive K⁺ channel → depolarize → Ca²⁺ in → insulin out. Fade over time (secondary failure).",
+      "chips": [["0.6–1.2", "plain"], ["hypo", "bad"], ["wt ↑", "bad"], ["$", "good"]],
+      "lines": [{"label": "Avoid:", "text": "elderly, living alone, drivers; renal or hepatic failure; pregnancy. Alcohol and CYP interactions.", "kind": "bad"}]},
+     {"name": "Meglitinides", "agents": "repaglinide",
+      "moa": "Same channel, faster on and off → post-prandial control. Taken with each meal (three times daily).",
+      "chips": [["0.7–1.1", "plain"], ["hypo (less)", "warn"], ["wt ↑", "bad"], ["$$", "plain"]],
+      "lines": [{"label": "Note:", "text": "inactive metabolites, so safer than sulfonylureas.", "kind": "bad"}]}
+    ]},
+    {"subhead": "Glucose-dependent · incretins · low hypo", "drugs": [
+     {"name": "GLP-1 receptor agonists", "star": true, "agents": "semaglutide, liraglutide, dulaglutide, exenatide",
+      "moa": "Mimic GLP-1 (×10): insulin only when glucose is high, ↓ glucagon, ↓ gastric emptying, ↑ satiety. Subcutaneous (oral semaglutide exists).",
+      "chips": [["0.6–1.4", "plain"], ["no hypo", "good"], ["wt ↓", "good"], ["$$$$", "bad"], ["CV benefit", "good"]],
+      "lines": [{"label": "Avoid:", "text": "medullary thyroid cancer, MEN 2, pancreatic cancer. GI effects, pancreatitis.", "kind": "bad"}]},
+     {"name": "DPP-4 inhibitors", "agents": "sitagliptin, saxagliptin, linagliptin, alogliptin",
+      "moa": "Block the enzyme that breaks down GLP-1 → endogenous GLP-1 ×2–3. Oral.",
+      "chips": [["0.5–0.7", "plain"], ["no hypo", "good"], ["wt neutral", "plain"], ["$$$", "warn"]],
+      "lines": [{"label": "Watch:", "text": "URTIs, pancreatitis; saxagliptin ↑ heart failure risk.", "kind": "bad"}]},
+     {"name": "Tirzepatide (dual GLP-1 / GIP)",
+      "moa": "Activates GLP-1 and GIP receptors (more GIP). ↓ appetite, ↓ BP, ↓ liver fat, ↓ albuminuria. Weekly injection.",
+      "chips": [["no hypo", "good"], ["wt ↓", "good"], ["$$$$", "bad"]],
+      "lines": [{"label": "Watch:", "text": "interacts with oral contraceptives. GI effects, pancreatitis.", "kind": "bad"}]}
+    ]}
+   ]
+  },
+  {
+   "title": "Absorption or excretion",
+   "desc": "Work outside the β-cell, so low hypoglycemia risk alone.",
+   "color": "abs",
+   "sections": [{"drugs": [
+    {"name": "α-Glucosidase inhibitor", "agents": "acarbose (only one in Canada)",
+     "moa": "Competitively inhibits brush-border α-glucosidase → slower carbohydrate digestion, blunted post-meal peak. Must be taken with each meal.",
+     "chips": [["0.7–0.8", "plain"], ["no hypo", "good"], ["wt neutral", "plain"], ["$$", "plain"], ["adjuvant", "plain"]],
+     "lines": [{"label": "Avoid:", "text": "IBS, IBD, obstruction. Flatulence.", "kind": "bad"}]},
+    {"name": "SGLT2 inhibitors", "star": true, "agents": "empagliflozin, dapagliflozin, canagliflozin, ertugliflozin",
+     "moa": "Block Na⁺/glucose cotransporter in the proximal convoluted tubule → glucose, Na⁺ and water lost in urine. Independent of insulin and β-cells.",
+     "chips": [["0.5–0.7", "plain"], ["no hypo", "good"], ["wt ↓", "good"], ["$$$", "warn"], ["cardio-renal benefit", "good"]],
+     "lines": [{"label": "Watch:", "text": "volume depletion, UTIs and genital infections, fractures, amputations. Efficacy falls with renal function.", "kind": "bad"}]}
+   ]}]
+  }
+ ]
+}

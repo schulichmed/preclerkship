@@ -5,7 +5,7 @@ Purpose: turn the ![[embeds]] in the chart regions into shipped JPEGs.
 Author:  Noor Simsam
 Date:    2026-09-15
 Input:   the vault lecture notes (POM2_VAULT), read-only
-Output:  pom2/assets/figures/<hash>.jpg, and pom2/data/figures.json mapping vault name -> asset
+Output:  pom2/assets/figures/<hash>.jpg (or .svg, copied as is), and pom2/data/figures.json mapping vault name -> asset
 
 Unlike a question picture, a chart figure is NOT inlined as a data: URI. Three
 reasons, all specific to notes:
@@ -35,6 +35,7 @@ import io
 import json
 import logging
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -117,8 +118,36 @@ def wanted(slugs):
     return found
 
 
+# An SVG drawn for a chart (tools/class_tree_svg.py) is already small and is
+# text, so it ships byte for byte: rasterizing it would blur the very labels it
+# was drawn as vectors to keep sharp. Its size comes from its own root element.
+SVG_SIZE = re.compile(r'<svg\b[^>]*?\bwidth="([\d.]+)"[^>]*?\bheight="([\d.]+)"')
+
+
+def copy_svg(name):
+    """Ship an SVG unchanged, named after its bytes. Returns the manifest row."""
+    raw = open(resolve(name), "rb").read()
+    m = SVG_SIZE.search(raw[:2000].decode("utf-8", "replace"))
+    if not m:
+        raise SystemExit("%s has no width and height on its <svg>" % name)
+    width, height = int(float(m.group(1))), int(float(m.group(2)))
+
+    digest = hashlib.md5(raw).hexdigest()[:12]
+    row = {"src": "%s/%s.svg" % (ASSET_URL, digest), "w": width, "h": height}
+    dest = os.path.join(ASSET_DIR, digest + ".svg")
+    if os.path.exists(dest):
+        return row, False
+    with open(dest, "wb") as fh:
+        fh.write(raw)
+    LOG.info("%-58s -> %s  %.0f KB  %dx%d  svg",
+             name, digest + ".svg", len(raw) / 1024.0, width, height)
+    return row, True
+
+
 def encode_asset(name, max_kb, max_width):
     """Compress, name the file after its bytes, write it. Returns the manifest row."""
+    if name.lower().endswith(".svg"):
+        return copy_svg(name)
     path = resolve(name)
     budget = max_kb * 1024
     raw, width, quality, ok = compress(path, max_width, lambda b: len(b) <= budget)
@@ -179,7 +208,7 @@ def main():
 
     used = set(r["src"].rsplit("/", 1)[-1] for r in manifest.values())
     orphans = sorted(f for f in os.listdir(ASSET_DIR)
-                     if f.endswith(".jpg") and f not in used)
+                     if f.endswith((".jpg", ".svg")) and f not in used)
     for f in orphans:
         sys.stderr.write("orphan (no chart embeds it): %s/%s\n" % (ASSET_DIR, f))
 
