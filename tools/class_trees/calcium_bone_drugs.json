@@ -2,64 +2,329 @@
  "title": "Drugs affecting calcium and bone: vitamin D and analogues, antiresorptives and anabolics",
  "root": "Drugs affecting calcium & bone",
  "legend": [
-  {"chip": "Ca²⁺ ↓", "kind": "bad", "label": "lowers serum calcium"},
-  {"chip": "Ca²⁺ ↑", "kind": "warn", "label": "raises serum calcium"},
-  {"chip": "ONJ", "kind": "bad", "label": "osteonecrosis of the jaw"},
-  {"chip": "AFF", "kind": "bad", "label": "atypical femoral fracture"},
-  {"chip": "SC", "kind": "plain", "label": "route and dosing"}
+  {
+   "chip": "Ca²⁺ ↓",
+   "kind": "bad",
+   "label": "lowers serum calcium"
+  },
+  {
+   "chip": "Ca²⁺ ↑",
+   "kind": "warn",
+   "label": "raises serum calcium"
+  },
+  {
+   "chip": "ONJ",
+   "kind": "bad",
+   "label": "osteonecrosis of the jaw"
+  },
+  {
+   "chip": "AFF",
+   "kind": "bad",
+   "label": "atypical femoral fracture"
+  },
+  {
+   "chip": "SC",
+   "kind": "plain",
+   "label": "route and dosing"
+  }
  ],
  "groups": [
   {
    "title": "Vitamin D and analogues",
    "desc": "↑ gut absorption and renal reabsorption of calcium AND phosphate. Each step down needs less activation.",
    "color": "vitd",
-   "sections": [{"drugs": [
-    {"name": "Ergocalciferol (D2)", "agents": "plant sources; stored in liver, fat, muscle",
-     "chips": [["hepatic + renal", "plain"], ["not bioequivalent to D3", "plain"]],
-     "lines": [{"label": "Pick when:", "text": "the patient is vegan.", "kind": "ok"}]},
-    {"name": "Cholecalciferol (D3)", "star": true, "agents": "skin + sun, animal sources, fortified food",
-     "chips": [["hepatic + renal", "plain"], ["most supplements", "good"]],
-     "lines": [{"label": "Pick when:", "text": "routine deficiency; breast-fed babies.", "kind": "ok"}]},
-    {"name": "Calcifediol (25-hydroxyvitamin D)",
-     "chips": [["renal only", "plain"], ["t½ ≈ 19 days", "plain"]],
-     "lines": [{"label": "Pick when:", "text": "secondary hyperparathyroidism in stage 3–4 CKD with low 25-hydroxyvitamin D.", "kind": "ok"}]},
-    {"name": "Calcitriol (1,25-dihydroxyvitamin D)",
-     "chips": [["already active", "good"], ["fast on, fast off", "plain"]],
-     "lines": [{"label": "Pick when:", "text": "PTH must be shut off fast (hypoparathyroidism); works without renal function.", "kind": "ok"}]}
-   ]}],
-   "after": [{"label": "Too much:", "text": "hypercalcemia. Acute nausea, vomiting, anorexia, weakness; chronic renal impairment, soft-tissue calcification, hypertension.", "kind": "bad"}]
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Ergocalciferol (D2)",
+       "agents": "plant sources; stored in liver, fat, muscle",
+       "chips": [
+        [
+         "hepatic + renal",
+         "plain"
+        ],
+        [
+         "not bioequivalent to D3",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Pick when:",
+         "text": "the patient is vegan.",
+         "kind": "ok"
+        }
+       ]
+      },
+      {
+       "name": "Cholecalciferol (D3)",
+       "star": true,
+       "agents": "skin + sun, animal sources, fortified food",
+       "chips": [
+        [
+         "hepatic + renal",
+         "plain"
+        ],
+        [
+         "most supplements",
+         "good"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Pick when:",
+         "text": "routine deficiency; breast-fed babies.",
+         "kind": "ok"
+        }
+       ]
+      },
+      {
+       "name": "Calcifediol (25-hydroxyvitamin D)",
+       "chips": [
+        [
+         "renal only",
+         "plain"
+        ],
+        [
+         "t½ ≈ 19 days",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Pick when:",
+         "text": "secondary hyperparathyroidism in stage 3–4 CKD with low 25-hydroxyvitamin D.",
+         "kind": "ok"
+        }
+       ]
+      },
+      {
+       "name": "Calcitriol (1,25-dihydroxyvitamin D)",
+       "chips": [
+        [
+         "already active",
+         "good"
+        ],
+        [
+         "fast on, fast off",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Pick when:",
+         "text": "PTH must be shut off fast (hypoparathyroidism); works without renal function.",
+         "kind": "ok"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "label": "Too much:",
+     "text": "hypercalcemia. Acute nausea, vomiting, anorexia, weakness; chronic renal impairment, soft-tissue calcification, hypertension.",
+     "kind": "bad"
+    }
+   ]
   },
   {
    "title": "Antiresorptive",
    "desc": "Suppress the osteoclast to stop bone loss. All lower serum calcium.",
    "color": "anti",
-   "sections": [{"drugs": [
-    {"name": "Bisphosphonates", "star": true, "agents": "alendronate (oral), zoledronate (IV); potency ↑ with each generation",
-     "moa": "Bind hydroxyapatite → taken up by the resorbing osteoclast → block the mevalonate pathway → osteoclast apoptosis. Excreted unchanged by the kidney.",
-     "chips": [["PO daily / IV yearly", "plain"], ["Ca²⁺ ↓", "bad"], ["ONJ", "bad"], ["AFF", "bad"], ["GI irritation", "warn"]],
-     "lines": [{"label": "Avoid:", "text": "CrCl < 30, esophageal abnormality, hypocalcemia. Empty stomach, water, upright 30 min. IV: flu-like symptoms, nephrotoxicity.", "kind": "bad"}]},
-    {"name": "RANKL inhibitor: denosumab", "agents": "human monoclonal antibody; only one in Canada",
-     "moa": "Binds RANKL from osteoblasts and osteocytes → blocks osteoclast activation, differentiation and survival. Reversible on stopping.",
-     "chips": [["SC twice yearly", "plain"], ["Ca²⁺ ↓", "bad"], ["infection", "bad"], ["ONJ", "bad"], ["AFF", "bad"], ["OK in poor kidneys", "good"]],
-     "lines": [{"label": "Avoid:", "text": "immunosuppression, hypocalcemia. Higher ONJ risk than bisphosphonates, but it falls after stopping.", "kind": "bad"}]}
-   ]}],
-   "after": [{"text": "Also antiresorptive, named but not developed: SERMs, hormone replacement therapy, calcitonin.", "kind": "muted"}]
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Bisphosphonates",
+       "star": true,
+       "agents": "alendronate (oral), zoledronate (IV); potency ↑ with each generation",
+       "moa": "Bind hydroxyapatite → taken up by the resorbing osteoclast → block the mevalonate pathway → osteoclast apoptosis.",
+       "chips": [
+        [
+         "PO daily / IV yearly",
+         "plain"
+        ],
+        [
+         "Ca²⁺ ↓",
+         "bad"
+        ],
+        [
+         "ONJ",
+         "bad"
+        ],
+        [
+         "AFF",
+         "bad"
+        ],
+        [
+         "GI irritation",
+         "warn"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Elimination:",
+         "text": "renal, excreted unchanged (active), so they accumulate when kidneys fail. Not metabolized; also retained in bone for years.",
+         "kind": "ink"
+        },
+        {
+         "label": "Avoid:",
+         "text": "CrCl < 30, esophageal abnormality, hypocalcemia. Empty stomach, water, upright 30 min. IV: flu-like symptoms, nephrotoxicity.",
+         "kind": "bad"
+        }
+       ]
+      },
+      {
+       "name": "RANKL inhibitor: denosumab",
+       "agents": "human monoclonal antibody; only one in Canada",
+       "moa": "Binds RANKL from osteoblasts and osteocytes → blocks osteoclast activation, differentiation and survival. Reversible on stopping.",
+       "chips": [
+        [
+         "SC twice yearly",
+         "plain"
+        ],
+        [
+         "Ca²⁺ ↓",
+         "bad"
+        ],
+        [
+         "infection",
+         "bad"
+        ],
+        [
+         "ONJ",
+         "bad"
+        ],
+        [
+         "AFF",
+         "bad"
+        ],
+        [
+         "OK in poor kidneys",
+         "good"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Elimination:",
+         "text": "does NOT depend on the kidneys, so it is the drug of choice in poor renal function.",
+         "kind": "ink"
+        },
+        {
+         "label": "Avoid:",
+         "text": "immunosuppression, hypocalcemia. Higher ONJ risk than bisphosphonates, but it falls after stopping.",
+         "kind": "bad"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "text": "Also antiresorptive, named but not developed: SERMs, hormone replacement therapy, calcitonin.",
+     "kind": "muted"
+    }
+   ]
   },
   {
    "title": "Anabolic (bone-forming)",
    "desc": "Increase bone mass and strength.",
    "color": "ana",
-   "sections": [{"drugs": [
-    {"name": "Teriparatide (rhPTH 1–34)", "star": true, "agents": "recombinant amino-terminal fragment of PTH",
-     "moa": "Intermittent spikes build bone; sustained PTH resorbs it. Also ↑ calcitriol, ↑ osteoblast survival, ↑ renal Ca²⁺ reabsorption, phosphaturic.",
-     "chips": [["SC daily", "plain"], ["Ca²⁺ ↑", "warn"], ["hypercalciuria", "warn"], ["no ONJ", "good"]],
-     "lines": [{"label": "Avoid:", "text": "hypercalcemia, CrCl < 30, metabolic bone disease. Transient hypotension, dizziness, leg cramps. Osteosarcoma in rats only (boxed warning removed).", "kind": "bad"}]},
-    {"name": "Sclerostin inhibitor: romosozumab", "agents": "humanized monoclonal antibody (Canada, 2019)",
-     "moa": "Sclerostin inhibits formation and promotes resorption, so blocking it ↑ formation and ↓ resorption at once.",
-     "chips": [["SC monthly", "plain"], ["Ca²⁺ ↓", "bad"], ["MI, stroke, death", "bad"], ["ONJ", "bad"], ["AFF", "bad"], ["arthralgia", "plain"]],
-     "lines": [{"label": "Avoid:", "text": "hypocalcemia. The cardiovascular signal is the reason to hesitate.", "kind": "bad"}]}
-   ]}],
-   "after": [{"text": "Also bone-forming, named but not developed: fluoride. Elsewhere on the calcium loop: cinacalcet (calcium-sensing receptor), thiazide diuretics (↑ renal Ca²⁺ reabsorption).", "kind": "muted"}]
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Teriparatide (rhPTH 1–34)",
+       "star": true,
+       "agents": "recombinant amino-terminal fragment of PTH",
+       "moa": "Intermittent spikes build bone; sustained PTH resorbs it. Also ↑ calcitriol, ↑ osteoblast survival, ↑ renal Ca²⁺ reabsorption, phosphaturic.",
+       "chips": [
+        [
+         "SC daily",
+         "plain"
+        ],
+        [
+         "Ca²⁺ ↑",
+         "warn"
+        ],
+        [
+         "hypercalciuria",
+         "warn"
+        ],
+        [
+         "no ONJ",
+         "good"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Elimination:",
+         "text": "metabolized by the liver, excreted in the urine, hence the CrCl < 30 contraindication.",
+         "kind": "ink"
+        },
+        {
+         "label": "Avoid:",
+         "text": "hypercalcemia, CrCl < 30, metabolic bone disease. Transient hypotension, dizziness, leg cramps. Osteosarcoma in rats only (boxed warning removed).",
+         "kind": "bad"
+        }
+       ]
+      },
+      {
+       "name": "Sclerostin inhibitor: romosozumab",
+       "agents": "humanized monoclonal antibody (Canada, 2019)",
+       "moa": "Sclerostin inhibits formation and promotes resorption, so blocking it ↑ formation and ↓ resorption at once.",
+       "chips": [
+        [
+         "SC monthly",
+         "plain"
+        ],
+        [
+         "Ca²⁺ ↓",
+         "bad"
+        ],
+        [
+         "MI, stroke, death",
+         "bad"
+        ],
+        [
+         "ONJ",
+         "bad"
+        ],
+        [
+         "AFF",
+         "bad"
+        ],
+        [
+         "arthralgia",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Elimination:",
+         "text": "not covered in the lecture. A monoclonal antibody, so broken down like other proteins rather than filtered by the kidney.",
+         "kind": "ink"
+        },
+        {
+         "label": "Avoid:",
+         "text": "hypocalcemia. The cardiovascular signal is the reason to hesitate.",
+         "kind": "bad"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "text": "Also bone-forming, named but not developed: fluoride. Elsewhere on the calcium loop: cinacalcet (calcium-sensing receptor), thiazide diuretics (↑ renal Ca²⁺ reabsorption).",
+     "kind": "muted"
+    }
+   ]
   }
  ]
 }
