@@ -1,0 +1,34 @@
+{
+ "title": "Parathyroidectomy in primary hyperparathyroidism: operate if symptomatic, or if any one criterion is met - PTH damage to the kidney or to bone, or age under 50",
+ "root": "Parathyroidectomy if symptomatic, or ANY ONE of:",
+ "groups": [
+  {
+   "title": "Stones",
+   "desc": "PTH damage to the kidney",
+   "color": "secr",
+   "sections": [{"drugs": [
+    {"name": "Serum calcium > 0.25 mmol/L above the upper limit"},
+    {"name": "24-hour urine calcium > 10 mmol/day", "agents": "with increased kidney stone risk"},
+    {"name": "Nephrolithiasis or nephrocalcinosis"},
+    {"name": "Creatinine clearance < 60 mL/min"}
+   ]}]
+  },
+  {
+   "title": "Bones",
+   "desc": "PTH damage to bone",
+   "color": "ana",
+   "sections": [{"drugs": [
+    {"name": "T-score < −2.5", "agents": "lumbar spine, femoral neck, total hip or one-third radius"},
+    {"name": "Vertebral fracture"}
+   ]}]
+  },
+  {
+   "title": "Young",
+   "desc": "age alone is enough",
+   "color": "anti",
+   "sections": [{"drugs": [
+    {"name": "Age < 50"}
+   ]}]
+  }
+ ]
+}
