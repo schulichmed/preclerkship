@@ -40,8 +40,37 @@ FIGURES = {}
 
 # ---------- inline markdown -> html ----------
 
+# The vault writes its formulas as Obsidian $$LaTeX$$, and the site has no math
+# renderer, so the page showed the raw source - \huge FE_{Ca} = \frac{...}.
+# The charts only ever need a fraction, a subscript and a few operators, which
+# plain HTML draws; the vault keeps its LaTeX.
+TEX_SYMBOLS = [(r"\times", u"×"), (r"\div", u"÷"), (r"\cdot", u"·"),
+               (r"\approx", u"≈"), (r"\le", u"≤"), (r"\ge", u"≥"),
+               (r"\pm", u"±"), (r"\ ", u" ")]
+
+
+def tex_html(m):
+    t = re.sub(r"\\(?:huge|Huge|large|Large|LARGE|small|displaystyle)\b", "", m.group(1))
+    for macro, char in TEX_SYMBOLS:
+        t = t.replace(macro, char)
+    t = re.sub(r"\\(?:mathbf|textbf)\{([^{}]*)\}", r"<strong>\1</strong>", t)
+    t = re.sub(r"\\(?:text|mathrm)\{([^{}]*)\}", r"\1", t)
+    t = re.sub(r"_\{([^{}]*)\}", r"<sub>\1</sub>", t)
+    t = re.sub(r"\^\{([^{}]*)\}", r"<sup>\1</sup>", t)
+    # innermost first, so a fraction inside a numerator resolves before its parent
+    frac = re.compile(r"\\frac\{([^{}]*)\}\{([^{}]*)\}")
+    while frac.search(t):
+        t = frac.sub(r'<span class="frac"><span>\1</span><span>\2</span></span>', t)
+    t = re.sub(r"(?<=\s)-(?=\s)", u"−", t)
+    return u'<span class="formula">%s</span>' % re.sub(r"\s+", " ", t).strip()
+
+
 def inline(s):
     s = s.replace(PIPE, u"|")
+
+    # only the $$ form, with no $ inside: a single $ is a price in these notes
+    # (US$10,000) and a drug table rates cost as $$$$
+    s = re.sub(r"\$\$([^$]+)\$\$", tex_html, s)
 
     # a bare & is invalid html; the entities already in the source stay put
     s = re.sub(r"&(?!#?\w+;)", "&amp;", s)
