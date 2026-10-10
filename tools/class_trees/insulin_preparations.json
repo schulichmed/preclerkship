@@ -1,0 +1,90 @@
+{
+ "title": "Insulin preparations: bolus insulins built to release monomers fast, basal insulins built to release them slowly, and premixed pens that combine both",
+ "root": "Insulin preparations",
+ "legend": [
+  {"chip": "onset", "kind": "plain", "label": "time to start working"},
+  {"chip": "peak", "kind": "plain", "label": "time of strongest effect"},
+  {"chip": "20–24 h", "kind": "plain", "label": "duration"},
+  {"chip": "IV", "kind": "good", "label": "can be given intravenously"},
+  {"chip": "pump", "kind": "good", "label": "approved for pumps"},
+  {"chip": "no pump", "kind": "bad", "label": "never in a pump"}
+ ],
+ "groups": [
+  {
+   "title": "Bolus — covers a meal",
+   "desc": "Built to release monomers from the hexamer fast. Give around the meal; the dose can be skipped if the meal is skipped.",
+   "color": "sens",
+   "sections": [
+    {"subhead": "Rapid-acting analogues · 0–15 min before a meal", "drugs": [
+     {"name": "Insulin lispro",
+      "moa": "Order of proline and lysine in the B chain reversed → fewer hexamers.",
+      "chips": [["onset 10–15 min", "plain"], ["peak 1–2 h", "plain"], ["3.5–6 h", "plain"], ["pump", "good"]]},
+     {"name": "Insulin aspart",
+      "moa": "Proline replaced with aspartic acid.",
+      "chips": [["onset 10–15 min", "plain"], ["peak 40 min — fastest peak", "good"], ["3–5 h", "plain"], ["pump", "good"]]},
+     {"name": "Insulin glulisine",
+      "moa": "Asparagine → lysine, lysine → glutamic acid; zinc-free formulation.",
+      "chips": [["onset 5–15 min", "plain"], ["peak 1 h", "plain"], ["3–5 h", "plain"], ["pump", "good"]],
+      "lines": [{"label": "Watch:", "text": "more clotting problems in pumps.", "kind": "bad"}]}
+    ]},
+    {"subhead": "Fast-acting analogue", "drugs": [
+     {"name": "Fast-acting insulin aspart", "star": true,
+      "moa": "Standard aspart plus nicotinamide and arginine → faster absorption. Closest match to the post-meal surge.",
+      "chips": [["onset ~2.5 min — fastest", "good"], ["peak ≈ aspart", "plain"], ["≈ aspart", "plain"]]}
+    ]},
+    {"subhead": "Short-acting human insulin", "drugs": [
+     {"name": "Regular human insulin", "star": true,
+      "moa": "Unmodified human insulin, so it must dissociate from hexamers before it is absorbed.",
+      "chips": [["onset 30–60 min", "plain"], ["IV", "good"]],
+      "lines": [{"label": "Only:", "text": "the ONLY insulin that can be given intravenously → diabetic ketoacidosis, hyperkalemia.", "kind": "ok"}]}
+    ]}
+   ],
+   "after": [{"label": "Remember:", "text": "analogues are NOT more effective at lowering HbA1c than human insulin — they are safer and more convenient (less early-night hypoglycemia, fewer bedtime snacks).", "kind": "ink"}]
+  },
+  {
+   "title": "Basal — covers the fasting state",
+   "desc": "Hexamer stabilized (protamine, zinc, self-aggregation, albumin binding) so monomers release slowly. Flat or minimal peak.",
+   "color": "abs",
+   "sections": [
+    {"subhead": "Intermediate human insulin", "drugs": [
+     {"name": "NPH (neutral protamine Hagedorn)",
+      "moa": "Human insulin complexed with protamine and zinc.",
+      "chips": [["onset 3–4 h", "plain"], ["10–16 h", "plain"], ["no pump", "bad"]],
+      "lines": [{"label": "Watch:", "text": "more nocturnal hypoglycemia than the basal analogues.", "kind": "bad"}]}
+    ]},
+    {"subhead": "Long-acting analogues · minimal peak", "drugs": [
+     {"name": "Insulin glargine", "star": true,
+      "moa": "Two extra arginines, asparagine → glycine → forms microprecipitates at neutral pH under the skin.",
+      "chips": [["onset 2–4 h", "plain"], ["peak minimal", "plain"], ["20–24 h", "plain"], ["no pump", "bad"]],
+      "lines": [{"label": "Note:", "text": "less nocturnal hypoglycemia than human insulin.", "kind": "ok"}]},
+     {"name": "Insulin detemir",
+      "moa": "Myristoylated (fatty acid added) → self-aggregation into dihexamers plus albumin binding.",
+      "chips": [["onset 0.5–1 h", "plain"], ["peak minimal", "plain"], ["16–24 h", "plain"], ["no pump", "bad"]]}
+    ]},
+    {"subhead": "Ultra-long-acting", "drugs": [
+     {"name": "Insulin degludec",
+      "moa": "Multi-hexamers form after injection, plus albumin binding.",
+      "chips": [["onset 0.5–1.5 h", "plain"], ["peak minimal", "plain"], ["> 42 h", "plain"], ["no pump", "bad"]]},
+     {"name": "Insulin icodec",
+      "moa": "Fatty diacid → albumin-bound depot, with lower receptor affinity → flat, ultra-long profile.",
+      "chips": [["half-life ≈ 196 h", "plain"], ["once WEEKLY", "good"], ["no pump", "bad"]],
+      "lines": [{"label": "Note:", "text": "steady state after 3–4 weekly doses.", "kind": "ok"}]}
+    ]}
+   ],
+   "after": [{"label": "Rules:", "text": "basal insulins are never used in pumps, and most must not be mixed with another insulin before injection.", "kind": "bad"}]
+  },
+  {
+   "title": "Biphasic — premixed",
+   "desc": "A protamine-bound basal component and a free bolus analogue in one pen.",
+   "color": "secr",
+   "sections": [{"drugs": [
+    {"name": "Lispro protamine / lispro 75% / 25%",
+     "moa": "Protamine-bound lispro (basal) with free lispro (bolus)."},
+    {"name": "Aspart protamine / aspart 70% / 30%",
+     "moa": "Protamine-bound aspart (basal) with free aspart (bolus).",
+     "lines": [{"label": "For:", "text": "convenience, fewer injections.", "kind": "ok"},
+               {"label": "Against:", "text": "less flexibility — the least physiological regimen.", "kind": "bad"}]}
+   ]}]
+  }
+ ]
+}
