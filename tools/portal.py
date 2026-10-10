@@ -146,7 +146,7 @@ COURSES = [
              "blurb": u"The weekly quizzes, both the Microsoft Forms ones and the ones sat "
                       u"in Elentra. Kept whole as their own set, so a week's quiz can be "
                       u"drilled the way it was written."},
-            {"key": "meds2029", "name": u"Curriculum Cases",
+            {"key": "meds2029", "name": u"Curriculum Cases", "show_blurb": True,
              "blurb": u"Cases and questions directly from our 2026-27 curriculum (Meds 2029): "
                       u"DSSGs, in-class lectures and modules, likely to be recycled on exams."},
             {"key": "reviews", "name": u"Schulich Reviews",

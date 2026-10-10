@@ -57,6 +57,7 @@
     {
       key: "meds2029",
       name: "Curriculum Cases",
+      show_blurb: true,
       blurb: "Cases and questions directly from our 2026-27 curriculum (Meds 2029): DSSGs, in-class lectures and modules, likely to be recycled on exams."
     },
     {
@@ -1116,10 +1117,12 @@
       (q.week === null ? "No week" : "Week " + q.week) + " \u00b7 " + q.lecture));
 
     if (q.preamble) {
+      /* a bare-string preamble rendered as "Instructions: undefined" (#65) */
+      var preObj = typeof q.preamble === "object" ? q.preamble : { html: q.preamble };
       var pre = el("div", "preamble");
-      pre.appendChild(el("span", "pt", q.preamble.title || "Instructions"));
+      pre.appendChild(el("span", "pt", preObj.title || "Instructions"));
       var pb = el("div");
-      pb.innerHTML = q.preamble.html;
+      pb.innerHTML = preObj.html;
       pre.appendChild(pb);
       art.appendChild(pre);
     }
@@ -1479,7 +1482,7 @@
      their choice. */
   function searchText(q) {
     var parts = [q.stem];
-    /* a preamble is usually {title, html}; two in the banks are bare strings */
+    /* a preamble is {title, html}; render() also accepts a bare string */
     if (q.preamble && typeof q.preamble === "object") parts.push(q.preamble.title, q.preamble.html);
     else parts.push(q.preamble);
     (q.options || []).forEach(function (o) { parts.push(o.html); });
@@ -2713,6 +2716,7 @@
       row.appendChild(cb);
       row.appendChild(el("span", "t", d.label));
       row.appendChild(cnt);
+      if (d.title) row.title = d.title;
       /* read back off the boxes in def order rather than pushed and spliced,
          so the picks stay in panel order however they were ticked */
       cb.addEventListener("change", function () {
@@ -2774,7 +2778,7 @@
     FAMILIES.forEach(function (f) {
       FAM_TOTAL[f.key] = famCount[f.key] || 0;
       FAM_NAME[f.key] = f.name;
-      famDefs.push({ k: f.key, label: f.name });
+      famDefs.push({ k: f.key, label: f.name, title: f.blurb });
     });
     STATUS_DEFS.forEach(function (d) { STATUS_LABEL[d.k] = d.label; });
 
@@ -3112,6 +3116,7 @@
 
   function buildStream() {
     var stream = byId("stream"), frag = document.createDocumentFragment();
+    var BLURB_SHOWN = Object.create(null);
     BLOCKS.forEach(function (b) {
       /* On the pooled page each block gets a group and the question sets nest
          inside it, so the stream still reads the way the term was taught -
@@ -3153,7 +3158,14 @@
         /* f.blurb still describes each set in portal.py and is worth keeping
            there, but on the page it is a paragraph of preamble sitting between
            you and the first question, re-read every time you scroll past. The
-           count and the name say enough. */
+           count and the name say enough - except for a set whose name gets
+           misread (Curriculum Cases were taken for AI-written), which portal.py
+           flags with show_blurb. On the pooled page it shows once, not once per
+           block. Every set's blurb is also the hover title in the filter. */
+        if (f.show_blurb && f.blurb && !BLURB_SHOWN[f.key]) {
+          BLURB_SHOWN[f.key] = true;
+          head.appendChild(el("p", "fam-blurb", f.blurb));
+        }
         sec.appendChild(head);
 
         if (!mine.length) {

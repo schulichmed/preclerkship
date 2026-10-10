@@ -1205,6 +1205,9 @@ mark.lo .wl{border-bottom-color:#9a7a00;}
 .stem p{margin-bottom:10px;}
 .stem p:last-child{margin-bottom:0;}
 .stem strong{font-weight:600;}
+/* the reset in base.css zeroes list padding, which pushed a stem's list numbers
+   out of sight; a numbered statement list needs its numbers (#45) */
+.stem ol,.stem ul{margin:8px 0 10px 0;padding-left:26px;}
 
 /* A matching question's items are cited by roman numeral in its own options
    ("A. i, ii, iv"), so they have to be numbered the way they are cited. The
@@ -3112,3 +3115,6 @@ select.ps:disabled{cursor:default;opacity:1;}
     .fig img{max-height:9cm;width:auto;}
     a{color:inherit;text-decoration:none;}
 }
+
+/* the one-line description under a set's heading, for the sets portal.py flags */
+.fam-head p.fam-blurb{max-width:660px;color:var(--muted);font-size:.9rem;line-height:1.6;}

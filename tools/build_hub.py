@@ -210,6 +210,10 @@ Wessam Al Jawhri, Ella Boone, Class of 2030.
 </p>
 
 <p>
+<strong>Built with.</strong> Claude Code (Anthropic) and Codex (OpenAI).
+</p>
+
+<p>
 <strong>Upper-year resource credits.</strong> Nicole&rsquo;s Notes, Maggie&rsquo;s Notes,
 Christina&rsquo;s Anki, Hippo Council Qbank, Schulich Reviews.
 </p>
