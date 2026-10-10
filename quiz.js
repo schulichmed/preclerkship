@@ -42,7 +42,7 @@
     {
       key: "module",
       name: "Course modules",
-      blurb: "The Elentra module knowledge checks and the concept checks on the lecture slides. Cases live under Meds 2029 instead, wherever they came from."
+      blurb: "The Elentra module knowledge checks and the concept checks on the lecture slides. Cases live under Curriculum Cases instead, wherever they came from."
     },
     {
       key: "weekly",
@@ -56,8 +56,8 @@
     },
     {
       key: "meds2029",
-      name: "Meds 2029",
-      blurb: "Questions built from patient cases in the modules, DSSGs and in-class lectures, since exams tend to recycle similar cases."
+      name: "Curriculum Cases",
+      blurb: "Cases and questions directly from our 2026-27 curriculum (Meds 2029): DSSGs, in-class lectures and modules, likely to be recycled on exams."
     },
     {
       key: "reviews",

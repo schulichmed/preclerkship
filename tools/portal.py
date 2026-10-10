@@ -140,8 +140,8 @@ COURSES = [
         "families": [
             {"key": "module", "name": u"Course modules",
              "blurb": u"The Elentra module knowledge checks and the concept checks on the "
-                      u"lecture slides. Cases live under Meds 2029 instead, wherever they "
-                      u"came from."},
+                      u"lecture slides. Cases live under Curriculum Cases instead, wherever "
+                      u"they came from."},
             {"key": "weekly", "name": u"Weekly quizzes",
              "blurb": u"The weekly quizzes, both the Microsoft Forms ones and the ones sat "
                       u"in Elentra. Kept whole as their own set, so a week's quiz can be "
@@ -151,9 +151,9 @@ COURSES = [
                       u"down through the Schulich classes of 2015-2025. It has a written "
                       u"key, but the key is peer-written and contains real errors. Every "
                       u"one found is flagged on the question."},
-            {"key": "meds2029", "name": u"Meds 2029",
-             "blurb": u"Questions built from patient cases in the modules, DSSGs and "
-                      u"in-class lectures, since exams tend to recycle similar cases."},
+            {"key": "meds2029", "name": u"Curriculum Cases",
+             "blurb": u"Cases and questions directly from our 2026-27 curriculum (Meds 2029): "
+                      u"DSSGs, in-class lectures and modules, likely to be recycled on exams."},
             {"key": "reviews", "name": u"Schulich Reviews",
              "blurb": u"The Schulich Reviews sessions, run by upper years before each exam. "
                       u"Their own practice questions, keyed by the deck, plus questions "
