@@ -1,0 +1,296 @@
+{
+ "name": "metabolic bone disease pathway",
+ "width": 1120,
+ "title": "Metabolic bone disease pathway: the lab panel separates osteomalacia, Paget's disease and osteogenesis imperfecta; each column gives how it presents, the test, when to treat and the treatment",
+ "nodes": [
+  {
+   "id": "panel",
+   "x": 335,
+   "y": 10,
+   "w": 450,
+   "kind": "plain",
+   "title": "Lab panel first: calcium, phosphate, alkaline phosphatase (ALP)",
+   "lines": [
+    "plus 25-hydroxyvitamin D (25-OH-D), parathyroid hormone, urine calcium",
+    "~separates all three before any imaging"
+   ]
+  },
+  {
+   "id": "om",
+   "x": 15,
+   "y": 170,
+   "w": 350,
+   "kind": "anti",
+   "title": "Osteomalacia (adult) / rickets (child)",
+   "lines": [
+    "↓ 25-OH-D · ↑ parathyroid hormone · ↓ URINE calcium",
+    "~MINERALIZATION defect from vitamin D deficiency"
+   ]
+  },
+  {
+   "id": "pg",
+   "x": 385,
+   "y": 170,
+   "w": 350,
+   "kind": "warn",
+   "title": "Paget's disease of bone",
+   "lines": [
+    "↑ urinary hydroxyproline · 5% of people, 10% over 80",
+    "~disordered REMODELLING: ↑ resorption, then abnormal fragile new bone"
+   ]
+  },
+  {
+   "id": "oi",
+   "x": 755,
+   "y": 170,
+   "w": 350,
+   "kind": "ana",
+   "title": "Osteogenesis imperfecta",
+   "lines": [
+    "diagnosis is CLINICAL",
+    "~TYPE I COLLAGEN defect: COL1A1 / COL1A2 in 85–90%"
+   ]
+  },
+  {
+   "id": "om_p",
+   "x": 15,
+   "y": 300,
+   "w": 350,
+   "kind": "plain",
+   "title": "Presents as",
+   "lines": [
+    "overt symptoms, unlike osteoporosis: bone and joint pain, fractures",
+    "PROXIMAL muscle weakness (myopathy) → falls",
+    "children: bowed legs, lordosis, large forehead"
+   ]
+  },
+  {
+   "id": "pg_p",
+   "x": 385,
+   "y": 300,
+   "w": 350,
+   "kind": "plain",
+   "title": "Presents as",
+   "lines": [
+    "usually ASYMPTOMATIC: a routine x-ray or a raised ALP",
+    "bone pain (pelvis, femur, tibia) · bowed tibia, kyphosis, fractures",
+    "skull: headaches, bigger HAT SIZE, deafness · WARMTH over the bone"
+   ]
+  },
+  {
+   "id": "oi_p",
+   "x": 755,
+   "y": 300,
+   "w": 350,
+   "kind": "plain",
+   "title": "Presents as",
+   "lines": [
+    "fragility fractures from minimal trauma, from in utero or birth",
+    "blue sclerae · hearing loss · dentinogenesis imperfecta · joint hypermobility",
+    "short stature, bowed long bones, scoliosis, Wormian bones"
+   ]
+  },
+  {
+   "id": "om_i",
+   "x": 15,
+   "y": 465,
+   "w": 350,
+   "kind": "plain",
+   "title": "Investigations",
+   "lines": [
+    "x-ray: pseudofractures (Looser zones)",
+    "biopsy is the gold standard but rarely needed"
+   ]
+  },
+  {
+   "id": "pg_i",
+   "x": 385,
+   "y": 465,
+   "w": 350,
+   "kind": "plain",
+   "title": "Investigations",
+   "lines": [
+    "bone scan for extent · bones expanded and denser",
+    "x-ray: cotton wool skull · blade of grass · banana fracture · picture-frame vertebra"
+   ]
+  },
+  {
+   "id": "oi_i",
+   "x": 755,
+   "y": 465,
+   "w": 350,
+   "kind": "plain",
+   "title": "Investigations",
+   "lines": [
+    "skeletal x-rays · the lab panel is normal"
+   ]
+  },
+  {
+   "id": "om_c",
+   "x": 15,
+   "y": 585,
+   "w": 350,
+   "kind": "plain",
+   "title": "Causes — treat the underlying cause",
+   "lines": [
+    "little sun or diet · malabsorption (celiac disease) · liver or kidney disease · anticonvulsants"
+   ]
+  },
+  {
+   "id": "pg_w",
+   "x": 385,
+   "y": 585,
+   "w": 350,
+   "kind": "plain",
+   "title": "Treat, even if asymptomatic, when",
+   "lines": [
+    "active disease (↑ ALP or active scintigraphy) and any of:",
+    "skull, long bone, spine or joint-abutting disease · surgery planned at the site (vascular) · heart failure"
+   ]
+  },
+  {
+   "id": "oi_w",
+   "x": 755,
+   "y": 585,
+   "w": 350,
+   "kind": "plain",
+   "title": "Treat the bone disease when",
+   "lines": [
+    "long bone deformity · vertebral compression fracture · more than 3 fractures a year"
+   ]
+  },
+  {
+   "id": "om_t",
+   "x": 15,
+   "y": 715,
+   "w": 350,
+   "kind": "anti",
+   "title": "Treatment: vitamin D, plus calcium and phosphate if low",
+   "lines": [
+    "25-OH-D < 30 nmol/L: 50,000 IU weekly × 12 weeks, then 800–2,000 IU",
+    "30–75 nmol/L: 800–2,000 IU daily",
+    "recheck at 3 months, aiming for 75–150 nmol/L"
+   ]
+  },
+  {
+   "id": "pg_t",
+   "x": 385,
+   "y": 715,
+   "w": 350,
+   "kind": "warn",
+   "title": "Treatment",
+   "lines": [
+    "bisphosphonates — intravenous zoledronate beats oral",
+    "calcitonin works only early · monitor with ALP",
+    "complications: fractures, deafness, cord compression, high-output heart failure",
+    "osteosarcoma in 1–3%: new pain, lytic lesion, rising ALP"
+   ]
+  },
+  {
+   "id": "pg_x",
+   "x": 385,
+   "y": 862,
+   "w": 350,
+   "kind": "bad",
+   "title": "Bone-forming agents are CONTRAINDICATED",
+   "lines": [
+    "~the disease is already abnormal formation"
+   ]
+  },
+  {
+   "id": "oi_t",
+   "x": 755,
+   "y": 715,
+   "w": 350,
+   "kind": "ana",
+   "title": "Treatment: intravenous bisphosphonates (zoledronate), the mainstay",
+   "lines": [
+    "lifelong monitoring: hearing, spirometry, echocardiogram, bone density, spine x-rays",
+    "~type 1 a normal lifespan; type 2 lethal perinatally"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "panel",
+   "to": "om",
+   "from_dx": -170,
+   "label": "calcium ↓ · phosphate ↓ · ALP ↑",
+   "label_at": [
+    118,
+    150
+   ]
+  },
+  {
+   "from": "panel",
+   "to": "pg",
+   "label": "calcium, phosphate normal · ALP VERY HIGH",
+   "label_at": [
+    560,
+    144
+   ]
+  },
+  {
+   "from": "panel",
+   "to": "oi",
+   "from_dx": 170,
+   "label": "all normal",
+   "label_at": [
+    930,
+    140
+   ]
+  },
+  {
+   "from": "om",
+   "to": "om_p"
+  },
+  {
+   "from": "pg",
+   "to": "pg_p"
+  },
+  {
+   "from": "oi",
+   "to": "oi_p"
+  },
+  {
+   "from": "om_p",
+   "to": "om_i"
+  },
+  {
+   "from": "pg_p",
+   "to": "pg_i"
+  },
+  {
+   "from": "oi_p",
+   "to": "oi_i"
+  },
+  {
+   "from": "om_i",
+   "to": "om_c"
+  },
+  {
+   "from": "pg_i",
+   "to": "pg_w"
+  },
+  {
+   "from": "oi_i",
+   "to": "oi_w"
+  },
+  {
+   "from": "om_c",
+   "to": "om_t"
+  },
+  {
+   "from": "pg_w",
+   "to": "pg_t"
+  },
+  {
+   "from": "pg_t",
+   "to": "pg_x"
+  },
+  {
+   "from": "oi_w",
+   "to": "oi_t"
+  }
+ ]
+}
