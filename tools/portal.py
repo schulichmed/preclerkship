@@ -146,11 +146,6 @@ COURSES = [
              "blurb": u"The weekly quizzes, both the Microsoft Forms ones and the ones sat "
                       u"in Elentra. Kept whole as their own set, so a week's quiz can be "
                       u"drilled the way it was written."},
-            {"key": "workbook", "name": u"Pre-Clerkship Workbook",
-             "blurb": u"The Pre-Clerkship Workbook (2023 edition), the student bank passed "
-                      u"down through the Schulich classes of 2015-2025. It has a written "
-                      u"key, but the key is peer-written and contains real errors. Every "
-                      u"one found is flagged on the question."},
             {"key": "meds2029", "name": u"Curriculum Cases",
              "blurb": u"Cases and questions directly from our 2026-27 curriculum (Meds 2029): "
                       u"DSSGs, in-class lectures and modules, likely to be recycled on exams."},
@@ -165,6 +160,11 @@ COURSES = [
                       u"written by the class two years ahead. Peer-written like the "
                       u"Workbook, so the key is worth checking rather than trusting; "
                       u"the source groups by week only, with no per-lecture attribution."},
+            {"key": "workbook", "name": u"Pre-Clerkship Workbook",
+             "blurb": u"The Pre-Clerkship Workbook (2023 edition), the student bank passed "
+                      u"down through the Schulich classes of 2015-2025. It has a written "
+                      u"key, but the key is peer-written and contains real errors. Every "
+                      u"one found is flagged on the question."},
             {"key": "offcurriculum", "name": u"Off-curriculum",
              "blurb": u"Questions from the handed-down banks and older sets that this "
                       u"year's lectures do not teach, or teach differently. Kept here "
