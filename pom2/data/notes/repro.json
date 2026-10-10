@@ -220,8 +220,11 @@
        "html": "<ul><li><strong>Primary infertility</strong> = she has <strong>never been pregnant</strong> — not that she has no children; a partner's children from another relationship do not change it</li><li><strong>When to start</strong>: under 35 → after 12 months · 35 and over → after 6 months · a known cause (irregular cycles) → immediately</li><li><strong>How common</strong>: <mark class=\"lo\"><strong>10-15% of reproductive-age couples</strong></mark> · <strong>85% conceive by 1 year, 93% by 2 years</strong></li><li><strong>Age</strong>: infertility <strong>7% at 20-24 → 15% at 30-34</strong> · miscarriage <strong>10-15% under 35 · ~1 in 4 at 35-39 · ~60% over 40</strong> (mostly aneuploid embryos)</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Couple not conceiving\"] --> B{\"How old is she?\"}\n B -->|\"Under 35\"| C[\"Work up after 12 months\"]\n B -->|\"35 and over\"| D[\"Work up after 6 months\"]\n B -->|\"Known cause — e.g. polycystic ovary syndrome (PCOS)<br/>with irregular cycles\"| E[\"Work up IMMEDIATELY\"]\n C --> F[\"Standard 6-step workup\"]\n D --> F\n E --> F\n F --> G{\"Which step is abnormal?\"}\n G -->|\"Day 2-4 bloods\"| H[\"Central / ovarian reserve\"]\n G -->|\"Sonohysterogram\"| I[\"Cavity or tubal factor\"]\n G -->|\"Day 21 progesterone\"| J[\"Anovulation\"]\n G -->|\"Semen analysis\"| K[\"Male factor → luteinizing hormone (LH),<br/>testosterone, 17-hydroxyprogesterone;<br/>karyotype if extreme\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class C,D,E lo"
+       "t": "figure",
+       "src": "assets/figures/482140222706.svg",
+       "alt": "fertilization infertility pathway.svg",
+       "w": 920,
+       "h": 629
       },
       {
        "t": "note",
@@ -651,8 +654,11 @@
        "html": "<p><strong>The decision is made on the calendar, not on preference.</strong></p>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Unprotected intercourse\"] --> B{\"Days since?\"}\n    B -->|\"6–7 days\"| C[\"Copper intrauterine device ONLY<br/>MOST effective, and she leaves with ongoing contraception\"]\n    B -->|\"Within 5 days\"| D{\"Copper intrauterine device acceptable and available?\"}\n    D -->|Yes| C\n    D -->|No| E{\"Has the luteinizing hormone rise begun?\"}\n    E -->|\"Not yet, or unsure\"| F[\"Levonorgestrel 1.5 mg<br/>best under 72 h\"]\n    E -->|\"Already rising\"| G[\"Ulipristal 30 mg<br/>still works DURING the rise\"]\n    F --> H[\"Yuzpe regimen only if nothing else is available<br/>LEAST effective\"]"
+       "t": "figure",
+       "src": "assets/figures/8188c442772c.svg",
+       "alt": "contraception and drugs used in gynecology pathway.svg",
+       "w": 920,
+       "h": 660
       },
       {
        "t": "table",
@@ -1800,8 +1806,11 @@
        "html": "<ul><li>⚠ <mark class=\"lo\"><strong>Identify the life- and limb-threatening causes first</strong></mark> — that is what the β-hCG and the haemoglobin are for</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Acute pelvic pain\"] --> B[\"Check vitals FIRST — is she stable?\"]\n B --> C{\"Quantitative beta-hCG\"}\n C -->|\"POSITIVE\"| D{\"Signs of rupture?<br/>shoulder pain, tenesmus,<br/>postural drop, falling haemoglobin (Hb)\"}\n D -->|Yes| E[\"RUPTURED ECTOPIC<br/>to the operating room\"]\n D -->|No| F[\"Transvaginal ultrasound — an intrauterine<br/>pregnancy should be seen<br/>above a beta-hCG of 1500\"]\n C -->|\"NEGATIVE\"| G{\"Fever and elevated white<br/>blood cell count (WBC)?\"}\n G -->|Yes| H[\"Pelvic inflammatory disease —<br/>chandelier sign,<br/>discharge, dyspareunia\"]\n G -->|No| I{\"Sudden onset with an adnexal mass?\"}\n I -->|\"After exertion, Hb stable\"| J[\"OVARIAN TORSION<br/>surgical emergency\"]\n I -->|\"Falling Hb, 2-3 weeks from<br/>last menstrual period\"| K[\"RUPTURED OVARIAN CYST<br/>with haemorrhage\"]"
+       "t": "figure",
+       "src": "assets/figures/403b16c1eb82.svg",
+       "alt": "clinical approach to acute pelvic pain pathway.svg",
+       "w": 1000,
+       "h": 698
       },
       {
        "t": "note",
@@ -2115,8 +2124,11 @@
        "html": "<ul><li><mark class=\"lo\"><strong>A mass at the os narrows the differential to the structural letters and away from the functional ones</strong></mark><ul><li>a mass at the os points to <strong>Anatomic · Baby · Neoplasia</strong></li><li>structural = <strong>Anatomic / Neoplasia / Infectious</strong> (benign <strong>PALE</strong> + malignancy) and <strong>Baby</strong> · functional = <strong>Coagulopathy · DUB · Endocrine · Hormones</strong></li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Abnormal uterine bleeding\"] --> B[\"Is she stable? Check vitals FIRST\"]\n B --> C[\"History: general + full gynecologic and obstetric<br/>Physical exam: general, abdominal and pelvic<br/>Investigations: complete blood count, beta human chorionic gonadotropin, Pap if indicated\"]\n C --> D{\"Is there a visible lesion?\"}\n D -->|\"YES — e.g. a mass at the cervical os\"| E[\"STRUCTURAL<br/>Anatomic · Baby · Neoplasia\"]\n D -->|\"NO\"| F[\"Ultrasound in selected patients\"]\n E --> G[\"Remove the lesion<br/>Send the ENTIRE specimen to pathology\"]\n F --> H{\"Functional causes\"}\n H --> I[\"Coagulopathy · DUB<br/>Endocrine · Hormones\"]\n I --> J[\"DUB is a diagnosis of EXCLUSION\"]"
+       "t": "figure",
+       "src": "assets/figures/9c8c76072dd6.svg",
+       "alt": "approach to pathology of aub pelvic pain pathway.svg",
+       "w": 920,
+       "h": 784
       },
       {
        "t": "note",
@@ -2766,8 +2778,11 @@
        "html": "<ul><li><strong>After conception</strong>, every test is either a <strong>screen</strong> (gives a risk) or a <strong>diagnostic test</strong> (gives an answer)</li><li><mark class=\"lo\"><strong>A positive screen always needs a diagnostic test.</strong></mark></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Pregnancy\"] --> B{\"Screen or diagnose?\"}\n B -->|\"SCREEN — gives a risk\"| C[\"Nuchal translucency (NT) ultrasound 11-13 w<br/>Enhanced first trimester screen (eFTS) 11-13 w<br/>Maternal serum screen (MSS) 16-20 w<br/>Non-invasive prenatal testing (NIPT) from 9 w\"]\n B -->|\"DIAGNOSE — gives an answer\"| D[\"Chorionic villus sampling (CVS) 11-13 w<br/>Amniocentesis 15-20 w\"]\n C --> E{\"Screen positive?\"}\n E -->|Yes| F[\"A positive SCREEN still<br/>needs a DIAGNOSTIC test\"]\n F --> D\n D --> G{\"Which test, by size of abnormality?\"}\n G --> H[\"Karyotype over 5 megabases<br/>Microarray about 3 megabases<br/>Polymerase chain reaction, multiplex ligation-dependent probe amplification, sequencing 10 kilobases to 1 kilobase<br/>Single gene 1 base pair\"]"
+       "t": "figure",
+       "src": "assets/figures/12b89c035072.svg",
+       "alt": "genetic screening for pregnancy in canada pathway.svg",
+       "w": 920,
+       "h": 802
       },
       {
        "t": "note",
@@ -3348,8 +3363,11 @@
        "html": "<ul><li><strong>Rule out pregnancy first</strong>, then check for a uterus, then prolactin and TSH, then FSH:</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Amenorrhea\"] --> B{\"beta-hCG\"}\n    B -->|POSITIVE| C[\"PREGNANCY — exclude first, every time\"]\n    B -->|NEGATIVE| D{\"Uterus present?\"}\n    D -->|\"NO — and pubarche\"| E[\"Mayer-Rokitansky-Kuster-Hauser syndrome (MRKH), 46,XX\"]\n    D -->|\"NO — no pubarche\"| F[\"Androgen insensitivity, 46,XY\"]\n    D -->|Yes| G{\"Prolactin, thyroid-stimulating hormone (TSH)\"}\n    G -->|Abnormal| H[\"Prolactinoma or drug · hypothyroidism\"]\n    G -->|Normal| I{\"serum FSH\"}\n    I -->|HIGH| J[\"OVARIAN — karyotype:<br/>abnormal = Turner, normal = primary ovarian insufficiency\"]\n    I -->|LOW| K[\"HYPOTHALAMIC / PITUITARY — functional first,<br/>MRI only if no stressor\"]\n    I -->|NORMAL| L[\"ANOVULATION — androgens:<br/>PMOS (previously PCOS), tumour,<br/>late-onset congenital adrenal hyperplasia\"]"
+       "t": "figure",
+       "src": "assets/figures/9ff6fcc29b44.svg",
+       "alt": "in class amenorrhea pathway.svg",
+       "w": 980,
+       "h": 642
       },
       {
        "t": "list",
@@ -3381,8 +3399,11 @@
        "html": "<ul><li>⚠ <mark class=\"lo\"><strong>When the indication is bleeding control, medical options come first</strong></mark> - hysterectomy is for <strong>failed medical management and special circumstances</strong></li><li>The ladder: <mark class=\"lo\"><strong>vaginal → laparoscopic-assisted vaginal hysterectomy (LAVH) → total laparoscopic hysterectomy (TLH) or robotic → abdominal</strong></mark></li><li>The first four are <strong>minimally invasive</strong> · <strong>shared limitation of every minimally invasive route: a large uterus</strong></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Hysterectomy planned\"] --> B{\"Anatomy amenable to a vaginal route?<br/>(uterine descent, introitus/pelvis, uterine size)\"}\n    B -->|\"Yes, and no prior pelvic surgery / scarring, tubes and ovaries not needed\"| C[\"VAGINAL - no abdominal incision\"]\n    B -->|\"Yes, but the pelvis must be assessed or tubes/ovaries removed\"| D[\"LAVH - abdomen entered, uterus out through the vagina\"]\n    B -->|No| E{\"Very large uterus, complex cancer, or a failed minimally invasive attempt?\"}\n    E -->|No| F[\"TLH or ROBOTIC - replaces abdominal, never vaginal/LAVH<br/>Robotic: morbidly obese patients\"]\n    E -->|Yes| G[\"ABDOMINAL - not minimally invasive<br/>2-3 day hospital stay\"]"
+       "t": "figure",
+       "src": "assets/figures/3c5150b82c2b.svg",
+       "alt": "hysterectomy approaches pathway.svg",
+       "w": 980,
+       "h": 510
       },
       {
        "t": "note",
@@ -3721,8 +3742,11 @@
        "html": "<ul><li>Can she have systemic estrogen? <mark class=\"lo\"><strong>no contraindications, younger than 60, and < 10 years post menopause</strong></mark></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"53-year-old with menopause concerns\"] --> B[\"History: menses, symptoms,<br/>contraindications to menopausal hormone therapy (MHT)\"]\n    B --> C{\"Which symptom?\"}\n    C -->|\"GSM\"| D[\"Lifestyle, lubricants, moisturizers, physiotherapy<br/>2nd line: vaginal estrogen, dehydroepiandrosterone, ospemifene\"]\n    C -->|\"VMS\"| E{\"Contraindication to estrogen?\"}\n    E -->|Yes| F[\"Non-hormonal: antidepressants, gabapentinoids,<br/>neurokinin 3 receptor antagonists,<br/>cognitive behavioural therapy, cooling\"]\n    E -->|No| G{\"Younger than 60 and<br/>< 10 years post menopause?\"}\n    G -->|\"No\"| F2[\"Outside the deck's safe-start window<br/>weigh risk; non-hormonal options\"]\n    G -->|Yes| H{\"Does she have a uterus?\"}\n    H -->|Yes| I[\"Estrogen + progesterone<br/>(progestin pill or levonorgestrel<br/>intrauterine device)\"]\n    H -->|\"No - hysterectomy\"| J[\"Estrogen alone\"]"
+       "t": "figure",
+       "src": "assets/figures/1082424c9f6a.svg",
+       "alt": "clinical approach to menopause pathway.svg",
+       "w": 980,
+       "h": 764
       },
       {
        "t": "list",
@@ -3876,8 +3900,11 @@
        "html": "<ul><li><mark class=\"lo\">Most ovarian neoplasms are <strong>not malignant</strong>; cancer is more likely <strong>post-menopausal</strong></mark></li><li><strong>Presents as</strong><ul><li>pain (<strong>rupture, torsion</strong>) · distension (<strong>ascites, mass effect</strong>) · compression (<strong>change in bladder / bowel habits</strong>)</li><li>systemic (weight loss, fever, anorexia) · endocrine (<strong>estrogenic or androgenic</strong>)</li><li><mark class=\"lo\">often <strong>asymptomatic until late</strong></mark></li></ul></li><li><strong>Investigations</strong><ul><li>imaging finds the mass · in a <strong>young woman</strong> add <mark class=\"lo\"><strong>germ cell serum markers</strong> (diagnosis and post-op monitoring)</mark></li><li>the diagnosis is <strong>histologic</strong></li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Ovarian mass on exam / imaging\"] --> B{\"Age?\"}\n    B -->|\"Young (0-25)\"| C[\"Germ cell lineage likely<br/>Send serum markers: alpha-fetoprotein (α-FP),<br/>lactate dehydrogenase (LDH),<br/>beta human chorionic gonadotropin (β-hCG)\"]\n    B -->|\"Adult / post-menopausal\"| D[\"Epithelial lineage likely<br/>Cancer more likely after menopause\"]\n    D --> E{\"Bilateral, multi-nodular?\"}\n    E -->|Yes| F[\"Think METASTASIS<br/>gastrointestinal (appendix, stomach, colon), pancreatobiliary, breast, endometrium\"]\n    E -->|No| G[\"Primary epithelial tumour<br/>Behaviour set by invasion: benign / borderline / carcinoma\"]\n    A --> H{\"Endocrine features?\"}\n    H -->|\"Estrogenic: abnormal uterine bleeding, endometrial hyperplasia / cancer\"| I[\"Granulosa cell tumour\"]"
+       "t": "figure",
+       "src": "assets/figures/d80c4863752b.svg",
+       "alt": "approach to and pathology of a pelvic mass pathway.svg",
+       "w": 980,
+       "h": 550
       },
       {
        "t": "note",
@@ -4145,8 +4172,11 @@
        "html": "<h5>2. Diagnostic pathway</h5>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Post-menopausal woman with bleeding\"] --> B{\"Is she stable?\"}\n    B -->|No| C[\"Resuscitate first\"]\n    B -->|Yes| D[\"Full gynecologic/obstetric history<br/>Abdominal + pelvic exam<br/>SPECULUM: mass at the os? ulcerated cervix?\"]\n    D --> E[\"TVUS: endometrial thickness\"]\n    E -->|\"> 5 mm, or any PMB\"| F[\"Endometrial biopsy<br/>(99.6% sensitive for cancer)\"]\n    E -->|\"< 5 mm but bleeding RECURS\"| F\n    F -->|\"Insufficient tissue\"| G[\"Report #1: the deck asks what<br/>to tell her and leaves it open\"]\n    F -->|\"Atrophy\"| H[\"Diagnosis of exclusion; treat genitourinary<br/>syndrome of menopause<br/>Return if bleeding recurs\"]\n    F -->|\"Hyperplasia WITHOUT atypia\"| I[\"Progestin (Megace / levonorgestrel<br/>intrauterine device)<br/>Re-biopsy in 3 months\"]\n    F -->|\"ATYPICAL hyperplasia<br/>or carcinoma\"| J[\"Refer to gynecology<br/>Hysterectomy + bilateral<br/>salpingo-oophorectomy (BSO)\"]"
+       "t": "figure",
+       "src": "assets/figures/233ec81cb0e3.svg",
+       "alt": "post menopausal woman presenting with bleeding pathway.svg",
+       "w": 920,
+       "h": 932
       },
       {
        "t": "list",
@@ -4515,8 +4545,11 @@
        "html": "<ul><li>Most lumps are not cancer: cancer is <strong>~10% of masses</strong></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Breast lump<br/>History + breast exam + axilla and nodes\"] --> B{\"Post-menopausal<br/>or high risk?\"}\n    B -->|Yes| INV[\"INVESTIGATE NOW\"]\n    B -->|\"No - pre-menopausal\"| C{\"History and exam benign?\"}\n    C -->|No| INV\n    C -->|Yes| D[\"Re-examine after the next menstrual cycle\"]\n    D --> E{\"Resolved?\"}\n    E -->|Yes| F[\"Follow\"]\n    E -->|No| INV\n    INV --> G{\"Age?\"}\n    G -->|\"< 35\"| H[\"ULTRASOUND first<br/>MRI if high risk\"]\n    G -->|\"> 35\"| I[\"MAMMOGRAM first +/- ultrasound (US)\"]"
+       "t": "figure",
+       "src": "assets/figures/fa8eb68697c6.svg",
+       "alt": "approach to common breast problems pathway.svg",
+       "w": 920,
+       "h": 560
       },
       {
        "t": "list",
@@ -4690,8 +4723,11 @@
        "html": "<ul><li><strong>Causes of bleeding in a reproductive-age woman, ABCDEHIN</strong><ul><li><strong>A</strong>natomic (<strong>PALE</strong>: <span class=\"wl\">polyp</span>, <span class=\"wl\">adenomyosis</span>, <span class=\"wl\">leiomyoma</span>, <span class=\"wl\">endometritis</span>)</li><li><mark class=\"lo\"><strong>B</strong>aby (spontaneous abortion, ectopic, gestational trophoblastic disease)</mark></li><li><strong>C</strong>oagulopathy · <strong>D</strong>ysfunctional uterine bleeding · <strong>E</strong>ndocrine · <strong>H</strong>ormones (exogenous) · <strong>I</strong>nfectious · <strong>N</strong>eoplasia</li></ul></li><li><strong>History</strong><ul><li>amenorrhea or a light last period, bleeding, cramping, <strong>passage of clot or tissue</strong></li></ul></li><li><strong>Physical exam</strong><ul><li>vitals (<strong>shock = rupture</strong>) · <strong>uterus large for dates = complete mole, small for dates = partial</strong> · adnexal mass · cervix open or closed</li></ul></li><li><strong>Investigations</strong><ul><li><strong>serum beta human chorionic gonadotropin (<span class=\"wl\">β-hCG</span>) + pelvic ultrasound are the two investigations that matter</strong></li><li>then <strong>every piece of tissue passed or sampled goes to pathology</strong></li><li>⚠ <strong>an endometrial sample cannot diagnose an ectopic, it can only fail to find products of conception</strong></li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Reproductive-age woman: bleeding ± pain, positive β-hCG\"] --> B[\"Serum β-hCG + pelvic ultrasound\"]\n    B --> C{\"Gestational sac in the uterus?\"}\n    C -->|\"No sac, adnexal mass\"| D[\"ECTOPIC<br/>endometrium decidualized, no products of conception\"]\n    C -->|\"Sac, no fetal heart\"| E[\"SPONTANEOUS ABORTION<br/>villi + trophoblast + decidua on curettage\"]\n    C -->|\"Snow storm, no fetus, hCG markedly high\"| F[\"COMPLETE MOLE\"]\n    C -->|\"Focal cystic change with a fetus, hCG low-normal\"| G[\"PARTIAL MOLE\"]\n    B --> H{\"Persistent, markedly elevated hCG after ANY gestation?\"}\n    H -->|Yes| I[\"CHORIOCARCINOMA<br/>malignant trophoblast, no villi\"]"
+       "t": "figure",
+       "src": "assets/figures/6c418cf0c221.svg",
+       "alt": "pathology of 1st trimester bleeding pathway.svg",
+       "w": 920,
+       "h": 674
       },
       {
        "t": "note",
@@ -5079,8 +5115,11 @@
        "html": "<h5>7. Pregnancy of unknown location and falling hCG</h5>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Positive hCG ± bleeding or pain<br/>Hemodynamically stable\"] --> B[\"Transvaginal ultrasound of uterus + adnexa<br/>(± transabdominal for high mass / free fluid)\"]\n    B --> C{\"Intrauterine pregnancy (IUP) seen?\"}\n    C -->|Yes| D[\"Date it by the landmark present:<br/>mean sac diameter (MSD) → crown-rump length (CRL) → biparietal diameter (BPD)\"]\n    C -->|\"No: pregnancy of unknown location (PUL)\"| E{\"hCG 2000-3000 mIU and<br/>no clear evidence of ectopic?\"}\n    E -->|Yes| F[\"REPEAT hCG ± ultrasound a few days later<br/>2x more likely non-viable IUP (NVIUP) than ectopic; 0.5-2% viable IUP\"]\n    F --> G{\"What does the serial hCG do?\"}\n    G -->|\"Rises past 3000 (~3500), still no IUP\"| H[\"ECTOPIC LIKELY\"]\n    G -->|\"Falls 15-50% per 24 h\"| I[\"Likely NVIUP: follow until < 5 mIU/mL\"]\n    G -->|\"Decline off the predictable curve\"| J[\"Re-evaluate: incomplete abortion<br/>or non-resolving ectopic\"]"
+       "t": "figure",
+       "src": "assets/figures/0dae58f7ab67.svg",
+       "alt": "approach to first trimester bleeding ultrasound pathway.svg",
+       "w": 920,
+       "h": 828
       },
       {
        "t": "list",
@@ -5114,8 +5153,11 @@
        "html": "<ul><li><strong>Measuring it</strong><ul><li><strong>2 readings >15 min apart</strong>, seated, calm, correct cuff size · exclude <strong>white-coat</strong> and <strong>pain-driven</strong> elevation</li><li>mild is <strong>>140 / >90</strong>, severe is <strong>>160 / >110</strong></li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"BP >140/90 on 2 readings >15 min apart\"] --> B{\"Onset before or after 20 weeks?\"}\n    B -->|\"Before pregnancy or <20 weeks\"| C[\"PRE-EXISTING (chronic) hypertension\"]\n    B -->|\">20 weeks, normal BPs documented before\"| D{\"Proteinuria or adverse conditions?\"}\n    D -->|No| E[\"GESTATIONAL hypertension<br/>isolated BP elevation\"]\n    D -->|Yes| F[\"PRE-ECLAMPSIA<br/>hypertension + proteinuria\"]\n    F -->|\"Seizure\"| G[\"ECLAMPSIA\"]\n    F -.->|\"Hemolysis + high liver enzymes + low platelets<br/>BP may be NORMAL\"| H[\"HELLP syndrome\"]\n    A --> I{\"Systolic BP >160 or diastolic BP >110?\"}\n    I -->|Yes| J[\"SEVERE - urgent intravenous (IV) lowering to <160/<110\"]"
+       "t": "figure",
+       "src": "assets/figures/81d32bcc5c7b.svg",
+       "alt": "hypertension in pregnancy pathway.svg",
+       "w": 920,
+       "h": 628
       },
       {
        "t": "table",
@@ -5550,8 +5592,11 @@
        "html": "<ul><li><mark class=\"lo\"><strong>Group &amp; screen in the 1st trimester</strong> for all</mark><ul><li>blood type + Rh status + any maternal antibodies</li></ul></li><li><strong>Sources of sensitization</strong> (ask in the history): <strong>previous pregnancy, blood transfusion, drug abuse</strong></li><li><strong>No antibody and Rh negative</strong> → <mark class=\"lo\"><strong><span class=\"wl\">Rh immunoglobulin (RhIG)</span></strong> to every Rh negative mother</mark><ul><li>after 8-10 weeks with bleeding, an invasive procedure or trauma · routinely 28-30 weeks · post-partum if the baby is Rh positive</li><li>it clears fetal cells before the maternal immune system responds, so <strong>RhIG prevents an antibody</strong>; it does nothing once one exists</li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Group & screen, 1st trimester<br/>blood type + Rh status + maternal antibodies\"] --> B{\"Maternal antibody present?\"}\n    B -->|No| C{\"Rh negative?\"}\n    C -->|Yes| D[\"RhIG: after 8-10 weeks with bleeding / invasive procedure / trauma<br/>routinely 28-30 weeks<br/>post-partum if baby Rh positive\"]\n    C -->|No| E[\"Routine care\"]\n    B -->|Yes| F[\"Titre + find the source of sensitization<br/>screen partner for zygosity\"]\n    F --> G{\"Titre ≥ 1/8?\"}\n    G -->|\"No\"| H[\"Serial titres, usually monthly\"]\n    G -->|\"Yes: at risk of severe anemia\"| I[\"Ultrasound: middle cerebral artery peak systolic velocity<br/>correlates with fetal hemoglobin\"]\n    I -->|Stable| J[\"Deliver 37-38 weeks\"]\n    I -->|\"Severe anemia, ≥ 34-35 weeks\"| K[\"Deliver\"]\n    I -->|\"Severe anemia, early gestation\"| L[\"Intrauterine transfusion of antigen-negative blood, serially if needed\"]"
+       "t": "figure",
+       "src": "assets/figures/08d34b7d5245.svg",
+       "alt": "topics of antenatal care pathway.svg",
+       "w": 1120,
+       "h": 710
       },
       {
        "t": "note",
@@ -5622,8 +5667,11 @@
        "cap": "Confirming a pregnancy at 8 weeks on transabdominal ultrasound: the gestational sac (yellow) holds the yolk sac (pink) and the embryo (green), which places the pregnancy inside the uterus"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Missed menses with or without nausea / vomiting, urinary frequency, breast tenderness, bloating\"] --> B[\"Urine or serum human chorionic gonadotropin (hCG)\"]\n    B --> C{\"Serum hCG > 25?\"}\n    C -->|No| D[\"Not pregnant (< 5), or very early / assay error (5-25) - repeat\"]\n    C -->|Yes| E[\"Ultrasound: gestational sac AND yolk sac = confirmed, and located (intrauterine vs ectopic)\"]\n    E --> F{\"How was it conceived?\"}\n    F -->|IVF| G[\"EDB from embryo transfer date\"]\n    F -->|\"Spontaneous\"| H[\"EDB from 1st ultrasound with crown-rump length (CRL) ≥ 10 mm (~7 weeks), any ultrasound < 23 weeks beats last normal menstrual period (LNMP)\"]\n    G --> I[\"EDB FIXED - order routine first-trimester investigations, offer enhanced first trimester screen (eFTS) at 11-14 weeks\"]\n    H --> I\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class A lo"
+       "t": "figure",
+       "src": "assets/figures/09690490a17c.svg",
+       "alt": "care for pregnancy in the first trimester pathway.svg",
+       "w": 920,
+       "h": 780
       },
       {
        "t": "note",
@@ -5904,8 +5952,11 @@
        "html": "<ul><li><strong>The interview, start to finish</strong></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Before the room: self-assess implicit biases\"] --> B[\"Safe space: inclusive forms, two-step method,<br/>pronouns + sexual preference as routine intake questions\"]\n    B --> C[\"Ask permission to talk about sexual health<br/>(proactive, NOT waiting for the patient)\"]\n    C --> D{\"Euphemism? 'I need a check up',<br/>'soreness down below'\"}\n    D -->|Yes| E[\"Clarify: lay terms, open questions,<br/>silence, REPETITION\"]\n    D -->|No| F[\"5 P's: Partners, Practices, Protection/Past sexually transmitted infection,<br/>Pregnancy plans, (optional) Pleasure\"]\n    E --> F\n    F --> G[\"Plan of management WITH the patient<br/>(45-60 min ideal; book a longer appointment if needed)\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class F lo"
+       "t": "figure",
+       "src": "assets/figures/46eb59687585.svg",
+       "alt": "approach to sexual health pathway.svg",
+       "w": 920,
+       "h": 622
       },
       {
        "t": "list",
@@ -6309,8 +6360,11 @@
        "html": "<ul><li><strong>Non-obstetrical</strong>: hemorrhoids/varices · bladder infection/renal stones · rarely masses, lacerations → treat the cause, as in a non-pregnant patient</li><li><strong>Obstetrical</strong>: placental/uterine, cervical or fetal<ul><li><strong>always assess for labour</strong>: cervical dilatation frequently causes bleeding (\"show\")</li><li>a <strong>painful bleed with a tender uterus is an <span class=\"wl\">abruption</span></strong> · a <strong>painless bleed is a <span class=\"wl\">previa</span></strong> until the ultrasound says otherwise · a <strong>small bleed with a distressed fetus is fetal blood</strong> - a <span class=\"wl\">vasa previa</span></li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"2nd/3rd trimester vaginal bleeding\"] --> B[\"Airway, breathing, circulation for mom: oxygen + intravenous access if unstable<br/>Non-stress test for the fetus: baseline, accelerations, decelerations\"]\n    B --> C{\"Non-obstetrical source?<br/>hemorrhoids/varices, bladder infection/renal stones, masses, lacerations\"}\n    C -->|Yes| D[\"Treat the cause, as in a non-pregnant patient\"]\n    C -->|No| E{\"Labour?<br/>cervical dilatation frequently causes bleeding/show\"}\n    E -->|No| F{\"Painful, with a tender or rigid uterus?\"}\n    F -->|Yes| G[\"PLACENTAL ABRUPTION<br/>a diagnosis of exclusion\"]\n    F -->|\"No - painless\"| H{\"Ultrasound: placenta over, or within 2 cm of, the internal os?\"}\n    H -->|Yes| I[\"PLACENTA PREVIA<br/>complete = cesarean section (C/S); no cervical exam\"]\n    H -->|\"No, but fetal distress out of keeping with the volume\"| J[\"Apt test positive = fetal blood<br/>VASA PREVIA\"]"
+       "t": "figure",
+       "src": "assets/figures/d608afc20192.svg",
+       "alt": "antepartum hemorrhage abnormal placentation pathway.svg",
+       "w": 920,
+       "h": 800
       },
       {
        "t": "note",
@@ -6457,8 +6511,11 @@
        "html": "<h5>1. The approach at a glance</h5>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Risk factor, or symphysis-fundus height (SFH) >2-3 cm less than weeks (after 20 weeks)\"] --> B[\"Ultrasound: estimated fetal weight (EFW) by Hadlock (head circumference, abdominal circumference, biparietal diameter, femur length)\"]\n    B --> C{\"EFW <10th percentile?\"}\n    C -->|No| D[\"Can still be IUGR relative to own potential<br/>Repeat growth scans\"]\n    C -->|Yes| E[\"Find the cause: enhanced first trimester screen / non-invasive prenatal testing / amniocentesis<br/>Toxoplasmosis / cytomegalovirus screen\"]\n    E --> F[\"Fetal well-being: umbilical artery (UA) Doppler, amniotic fluid volume, non-stress test (NST)\"]\n    F --> G{\"Gestational age?\"}\n    G -->|\">37 weeks\"| H[\"DELIVER - limited benefit to staying in utero\"]\n    G -->|\"32-37 weeks\"| I[\"Deliver if oligohydramnios or persistently abnormal Dopplers<br/>(even resistive index >95th percentile alone)\"]\n    G -->|\"<32 weeks\"| J[\"MONITOR unless fetal distress:<br/>abnormal NST, absent or reversed end-diastolic flow (EDF)\"]"
+       "t": "figure",
+       "src": "assets/figures/62f56b6df1cf.svg",
+       "alt": "approach to the small fetus pathway.svg",
+       "w": 920,
+       "h": 832
       },
       {
        "t": "note",
@@ -6705,8 +6762,11 @@
        "html": "<ul><li><mark class=\"lo\"><strong>Hydrate, then tocolyse to buy 48 hours, spend them on steroids and transfer</strong></mark>, and when birth is imminent <strong>switch to magnesium and penicillin</strong></li><li><strong>Follow-up</strong>: admit for monitoring</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Contractions before 37 weeks<br/>(threatened preterm labour)\"] --> B{\"Cervical dilatation on exam?\"}\n    B -->|No| C[\"Threatened preterm labour (TPTL) - hydrate, treat urinary tract infection (UTI)<br/>may resolve without delivery\"]\n    B -->|Yes| D[\"Preterm labour - tocolysis<br/>+ antenatal corticosteroids if < 34 weeks<br/>with or without transfer to tertiary centre\"]\n    A --> E{\"Gush of fluid?<br/>pooling / nitrazine / ferning / low amniotic fluid index\"}\n    E -->|Yes| F[\"Preterm prelabour rupture of membranes (PPROM) - antibiotics for latency<br/>complete steroid course<br/>watch for chorioamnionitis\"]\n    D --> G{\"Birth imminent?\"}\n    F --> G\n    G -->|\"Yes, < 34 weeks\"| H[\"Magnesium sulfate intravenous (IV) bolus + infusion (neuroprotection)<br/>+ IV penicillin if group B streptococcus (GBS) positive or unknown\"]"
+       "t": "figure",
+       "src": "assets/figures/b3a09cb698b6.svg",
+       "alt": "approach to preterm labour pathway.svg",
+       "w": 920,
+       "h": 652
       },
       {
        "t": "table",
@@ -7116,8 +7176,11 @@
        "cap": "Bishop score: dilation, effacement, consistency, position and station each scored; under 6 needs ripening"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart LR\n    A[\"Reason to deliver<br/>(list above)\"] --> B{\"Contraindication<br/>to labour?\"}\n    B -->|Yes| CS[\"Cesarean section\"]\n    B -->|No| P[\"Pre-induction<br/>assessment\"]\n    P --> BS{\"Bishop<br/>under 6?\"}\n    BS -->|Yes| R[\"① Ripen the cervix<br/>prostaglandin or Foley\"]\n    BS -->|No| ARM\n    R --> ARM[\"② ARM\"]\n    ARM --> O[\"IV oxytocin<br/>if labour does not start\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class P,R lo"
+       "t": "figure",
+       "src": "assets/figures/7363d4e2e409.svg",
+       "alt": "abnormal labour pathway 1.svg",
+       "w": 920,
+       "h": 372
       },
       {
        "t": "note",
@@ -7128,8 +7191,11 @@
        "html": "<ul><li><strong>Indication</strong>: labour has started but is not progressing (dystocia)</li><li><mark class=\"lo\">ARM, then an <strong>oxytocin infusion titrated to a good contraction pattern and cervical change</strong></mark><ul><li>oxytocin can <mark class=\"lo\">start contractions, strengthen weak ones, and boost pushing</mark></li><li>contractions hard to measure → <strong>intrauterine pressure catheter</strong></li><li>on oxytocin → <strong>continuous fetal heart monitoring</strong>, with time between contractions for the fetus to recover</li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart LR\n    A[\"Labour too slow<br/>(dystocia)\"] --> B{\"Baby too big<br/>to fit (CPD)?\"}\n    B -->|Yes| CS1[\"Cesarean section\"]\n    B -->|No| C[\"Augment<br/>ARM, then IV oxytocin\"]\n    C --> D{\"Progressing?\"}\n    D -->|No| CS2[\"Cesarean section\"]\n    D -->|Yes| V[\"Vaginal birth\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class C lo"
+       "t": "figure",
+       "src": "assets/figures/befdb180e10c.svg",
+       "alt": "abnormal labour pathway 2.svg",
+       "w": 920,
+       "h": 194
       },
       {
        "t": "note",
@@ -7140,8 +7206,11 @@
        "html": "<ul><li><mark class=\"lo\"><strong>Forceps or vacuum</strong> to speed up the <strong>2nd stage</strong> (pushing)</mark></li><li><mark class=\"lo\"><strong>Indications</strong></mark><ul><li>fetal: <mark class=\"lo\"><strong>atypical or abnormal fetal heart rate (FHR) - the #1 reason</strong></mark> · head turned the wrong way (occiput transverse or posterior)</li><li>maternal: <mark class=\"lo\">must avoid straining (cerebrovascular or cardiac disease) · exhaustion or ineffective pushing</mark></li><li>labour: <mark class=\"lo\">prolonged 2nd stage</mark></li></ul></li><li><strong>Contraindications</strong><ul><li>absolute: <strong>unengaged head</strong> · <strong>cervix not fully dilated</strong> · not head-first (or face, brow) · CPD · fetal bleeding or bone disorder · any reason not to deliver vaginally</li><li>relative: poor head flexion · <strong>rotation over 45° (vacuum only)</strong> · head still mid-pelvis · prematurity</li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart LR\n    A[\"2nd stage problem<br/>abnormal FHR · prolonged · exhausted\"] --> B{\"Fully dilated<br/>and head engaged?\"}\n    B -->|No| CS[\"Cesarean section\"]\n    B -->|Yes| C{\"Needs<br/>rotation?\"}\n    C -->|No| VAC[\"Vacuum<br/>fails → C/S\"]\n    C -->|Yes| FOR[\"Forceps<br/>fails → C/S\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class A lo"
+       "t": "figure",
+       "src": "assets/figures/8b5fc7c78599.svg",
+       "alt": "abnormal labour pathway 3.svg",
+       "w": 920,
+       "h": 264
       },
       {
        "t": "table",
@@ -7205,8 +7274,11 @@
        "html": "<ul><li>A trial of labour that succeeds = a <strong>vaginal birth after cesarean (VBAC)</strong>, <strong>60-80%</strong> of the time</li><li><mark class=\"lo\"><strong>Who can try</strong>: <strong>1-2 prior low transverse C/S</strong> · <strong>over 18 months</strong> since · <strong>emergency laparotomy available within 30 min</strong> · no contraindication to labour · the patient agrees</mark></li><li><mark class=\"lo\"><strong>Who cannot</strong>: <strong>classical or inverted-T scar</strong> · previous surgery entering the uterine cavity (hysterotomy, myomectomy) · <strong>previous uterine rupture</strong> · a contraindication to labour · the patient prefers a repeat C/S</mark></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart LR\n    A[\"Prior C/S\"] --> X{\"Any reason<br/>it cannot try?\"}\n    X -->|Yes| E1[\"Repeat C/S\"]\n    X -->|No| Y{\"Meets every<br/>criterion?\"}\n    Y -->|No| E2[\"Repeat C/S\"]\n    Y -->|Yes| T[\"TOLAC<br/>continuous FHR\"]\n    T --> R{\"Signs of<br/>rupture?\"}\n    R -->|Yes| EM[\"Emergency<br/>laparotomy\"]\n    R -->|No| Q{\"Labour<br/>progresses?\"}\n    Q -->|No| CS[\"Repeat C/S\"]\n    Q -->|Yes| V[\"VBAC<br/>60-80%\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class X,Y lo"
+       "t": "figure",
+       "src": "assets/figures/8d990f57ed0f.svg",
+       "alt": "abnormal labour pathway 4.svg",
+       "w": 1120,
+       "h": 210
       },
       {
        "t": "table",
@@ -7276,8 +7348,11 @@
        "html": "<ul><li><mark class=\"lo\"><strong>Complications</strong>: maternal death · iron deficiency anemia · <strong>Sheehan's syndrome</strong> (pituitary infarction → poor milk supply) · transfusion · clotting failure · organ damage from shock</mark></li><li><strong>Prevention</strong>: treat anemia in pregnancy · spot risk factors before delivery · <mark class=\"lo\">give a <strong>uterotonic in the 3rd stage</strong> (oxytocin or carbetocin)</mark> · act fast</li><li><mark class=\"lo\"><strong>Management</strong></mark> (\"ORDER\": oxygenate, restore volume, drugs, evaluate, remedy the cause):</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Bleeding after birth<br/>>500 mL vaginal · >1000 mL cesarean<br/>or ANY loss with instability\"] --> B[\"Airway, breathing, circulation · resuscitate · GET HELP\"]\n    B --> C[\"Bimanual exam + fundal massage<br/>empty the bladder\"]\n    C --> D{\"Is the uterus firm?\"}\n    D -->|\"Firm\"| E[\"Look for vaginal / cervical tears\"]\n    D -->|\"Soft (atonic)\"| F[\"Uterotonic drugs\"]\n    E --> G[\"Tranexamic acid\"]\n    F --> G\n    G --> H{\"Still bleeding?\"}\n    H -->|Yes| I[\"Think DIC · balloon tamponade or packing<br/>embolization · compression sutures · artery ligation · hysterectomy<br/>GET MORE HELP\"]"
+       "t": "figure",
+       "src": "assets/figures/d3af47c9710d.svg",
+       "alt": "abnormal labour pathway 5.svg",
+       "w": 920,
+       "h": 816
       },
       {
        "t": "table",
@@ -7338,8 +7413,11 @@
      "keypoints": "<p>⭐ <mark class=\"lo\"><strong>Blood pressure is normal through class II (up to 30% loss, ~1500 mL); it falls only in class III</strong></mark>, so a normal BP does not exclude shock and <mark class=\"lo\">tachycardia (> 100, class II) is the first vital to move</mark>. ⚠ <strong>Do not overlook the young healthy patient: she may surprise you with how much she has lost while still looking well.</strong> Bleeding is treated by <strong>stopping the bleeding</strong>; fluids and blood buy time, and each unit given feeds the coagulopathy arm of the triad.</p>",
      "blocks": [
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Bleeding + signs of shock<br/>pulse rises first\"] --> B[\"ABCs<br/>call for HELP\"]\n    B --> C[\"Monitor<br/>vitals · blood gas · Foley\"]\n    C --> D[\"2 large-bore IVs<br/>send bloods incl. group and screen\"]\n    D --> E[\"Crystalloid,<br/>then blood products\"]\n    E --> F{\"Still<br/>unstable?\"}\n    F -->|Yes| G[\"Massive transfusion<br/>protocol\"]\n    F -->|No| H\n    G --> H[\"Stop the bleeding<br/>treat the cause\"]\n    H --> I[\"ICU if needed<br/>inotropes · central line\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class B,D,G,H lo"
+       "t": "figure",
+       "src": "assets/figures/1bea80656bc7.svg",
+       "alt": "hemorrhagic shock pathway.svg",
+       "w": 760,
+       "h": 814
       },
       {
        "t": "note",
@@ -7625,8 +7703,11 @@
        "html": "<ul><li><strong>Low supply is the most common reason to stop breastfeeding</strong> · it is either inadequate production or poor extraction</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Breastfeeding problem\"] --> B{\"What is the complaint?\"}\n    B -->|\"Not enough milk\"| C[\"Low supply - check the infant:<br/>fewer wet and dirty diapers · excess weight loss\"]\n    B -->|\"Painful, infected breast\"| H{\"Is there an abscess in the breast?\"}\n    C --> D{\"Assess the problem - the latch<br/>is the problem getting milk OUT?\"}\n    D -->|\"Yes - poor extraction\"| E[\"Poor latch · infrequent feeds · preterm or NICU · separation<br/>cleft palate, sucking or swallowing problems\"]\n    E --> F[\"Augment: pumping · supplement feeding · drugs<br/>consider a lactation consultant\"]\n    D -->|\"No - inadequate production\"| G[\"Retained placenta · Sheehan syndrome · PCOS, prolactinoma<br/>little breast growth in pregnancy · prior surgery<br/>drugs: estrogen, decongestants, dopamine antagonist (slide wording - an agonist fits the physiology; check with the lecturer)\"]\n    G --> F\n    H -->|\"No\"| I[\"MASTITIS - Staphylococcus aureus most common<br/>KEEP NURSING + manual pressure<br/>cloxacillin 500 mg four times daily, 7-10 days\"]\n    H -->|\"Yes\"| J[\"LACTATIONAL ABSCESS - mastitis that progressed<br/>incise and drain or needle aspirate<br/>+ analgesia, bra, emptying, antibiotics\"]"
+       "t": "figure",
+       "src": "assets/figures/69ba133f2274.svg",
+       "alt": "lactation pathway.svg",
+       "w": 1120,
+       "h": 712
       },
       {
        "t": "table",
@@ -7861,8 +7942,11 @@
        "html": "<ul><li><strong>Screening for depression</strong>: the Patient Health Questionnaire-2 (PHQ-2) on the antenatal record, then the Edinburgh Postnatal Depression Scale (EPDS) or Patient Health Questionnaire-9 (PHQ-9)</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Postpartum patient<br/>Patient Health Questionnaire-2 (PHQ-2)<br/>on the antenatal record\"] --> B{\"PHQ-2 total ≥ 3?\"}\n    B -->|No| C[\"Routine postnatal care\"]\n    B -->|Yes| D[\"Edinburgh Postnatal Depression Scale (EPDS)<br/>or Patient Health Questionnaire-9 (PHQ-9)<br/>or further mental health follow-up\"]\n    D --> E{\"EPDS item 10 scored 1-3?\"}\n    E -->|Yes| F[\"RISK OF SELF-HARM<br/>immediate mental health assessment + intervention\"]\n    E -->|No| G{\"EPDS total?\"}\n    G -->|\"> 12\"| H[\"Comprehensive bio-psychosocial<br/>diagnostic assessment for depression\"]\n    G -->|\"> 9, not > 12\"| I[\"Monitor, support, offer education\"]"
+       "t": "figure",
+       "src": "assets/figures/fa3235b7b3bb.svg",
+       "alt": "postpartum care pathway.svg",
+       "w": 920,
+       "h": 642
       },
       {
        "t": "note",
@@ -7939,8 +8023,11 @@
      "keypoints": "<p>⭐ <mark class=\"lo\"><strong>Symptomatic hypoglycemia is a medical emergency: IV dextrose, not a feed</strong></mark> (a jittery IDM who cannot latch, glucose 2.3). The GA curves run <strong>higher the more mature the baby</strong>, so the same TSB can need treatment at 35 weeks and not at 40. ⚠ <strong>Sepsis runs through all three</strong>: hypoglycemia can be a sign of it, it causes hyperbilirubinemia, and temperature instability is a jaundice risk factor, so consider it in <strong>any sick baby</strong>.</p>",
      "blocks": [
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    N[\"Newborn<br/>full exam within 24 h\"] --> P[\"PINK<br/>breathing and colour\"]\n    N --> W[\"WARM<br/>cannot shiver\"]\n    N --> S[\"SWEET<br/>glycogen lasts 8-10 h\"]\n    P --> P1[\"Apgar at 1 and 5 min\"]\n    P1 --> P2{\"Under 3?\"}\n    P2 -->|Yes| P3[\"Resuscitate\"]\n    P2 -->|No| P4[\"Routine care<br/>7+ normal · 4-6 low\"]\n    W --> W1{\"Preterm or<br/>under 1500 g?\"}\n    W1 -->|Yes| W2[\"Incubator · radiant warmer<br/>humidity\"]\n    W1 -->|No| W3[\"Dry · wrap · hat<br/>warm room\"]\n    S --> S1{\"At risk?<br/>IDM · LGA · SGA · preterm\"}\n    S1 -->|No| S2[\"Feed<br/>no screening\"]\n    S1 -->|Yes| S3[\"Glucose 2 h<br/>after first feed\"]\n    S3 --> S4{\"2.6 or more?\"}\n    S4 -->|Yes| S5[\"No more sticks\"]\n    S4 -->|No| S6[\"Symptomatic: IV dextrose<br/>Well: feed and recheck\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class P1,W,S1 lo"
+       "t": "figure",
+       "src": "assets/figures/15b90dcda9c6.svg",
+       "alt": "approach to neonatal care pathway 1.svg",
+       "w": 1120,
+       "h": 612
       },
       {
        "t": "note",
@@ -8024,8 +8111,11 @@
        "html": "<ul><li><strong>Why newborns</strong>: fetus wholly on maternal glucose · glycogen for <strong>8-10 h</strong> · <strong>gluconeogenesis normal only at 2-4 days</strong></li><li><strong>At risk</strong><ul><li><u>Inadequate substrate</u>: intrauterine growth restriction, maternal hypertension, multiples, prematurity</li><li><u>Excess use</u>: <mark class=\"lo\"><strong>large for gestational age (LGA), infant of a diabetic mother (IDM)</strong></mark>, hypothermia, sepsis, asphyxia</li></ul></li><li><strong>Presents as</strong>: <strong>jittery, irritable</strong>, lethargic, poor feeding</li><li><strong>Screen</strong>: at-risk babies only, <strong>2 h after first feed</strong> · <mark class=\"lo\"><strong>\"2.6, no more sticks\"</strong></mark></li><li><strong>Treatment</strong>: early frequent feeds · <strong>intravenous (IV) dextrose if symptomatic</strong> · glucagon</li><li><strong>Harm</strong>: <strong>neuronal injury</strong></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"At-risk infant<br/>infant of a diabetic mother (IDM)<br/>large for gestational age (LGA) > 90th<br/>small for gestational age < 10th · preterm < 37 weeks\"] --> B[\"Check glucose 2 h after the first feed\"]\n    B --> C{\"Glucose ≥ 2.6 mmol/L?\"}\n    C -->|Yes| D[\"2.6, no more sticks\"]\n    C -->|No| E{\"Symptomatic?<br/>jittery · irritable · lethargic · poor feeding\"}\n    E -->|No| F[\"Early, frequent feeding<br/>and recheck\"]\n    E -->|\"Yes: medical emergency\"| G[\"intravenous (IV) DEXTROSE bolus + infusion<br/>not a feed alone · think sepsis\"]"
+       "t": "figure",
+       "src": "assets/figures/57e04462327f.svg",
+       "alt": "approach to neonatal care pathway 2.svg",
+       "w": 920,
+       "h": 572
       },
       {
        "t": "note",

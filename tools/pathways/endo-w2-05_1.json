@@ -1,0 +1,227 @@
+{
+ "name": "pathology of thyroid masses pathway",
+ "title": "Thyroid nodule pathway: TSH first, a radioactive iodine scan if it is low, then the ultrasound TI-RADS level and size that decide follow-up or biopsy, and what each Bethesda cytology category leads to.",
+ "width": 960,
+ "nodes": [
+  {
+   "id": "A",
+   "x": 200,
+   "y": 10,
+   "w": 260,
+   "kind": "plain",
+   "title": "Thyroid nodule",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 160,
+   "y": 80,
+   "w": 340,
+   "h": 60,
+   "kind": "plain",
+   "title": "Serum TSH — the FIRST test",
+   "lines": [
+    "microbiology and hematology have NO role"
+   ]
+  },
+  {
+   "id": "C",
+   "x": 590,
+   "y": 150,
+   "w": 260,
+   "h": 46,
+   "kind": "plain",
+   "title": "Radioactive iodine scan",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 700,
+   "y": 260,
+   "w": 225,
+   "kind": "ok",
+   "title": "Treat the hyperthyroidism",
+   "lines": []
+  },
+  {
+   "id": "E",
+   "x": 15,
+   "y": 260,
+   "w": 680,
+   "kind": "plain",
+   "title": "Ultrasound + Thyroid Imaging Reporting and Data System (TI-RADS) score",
+   "lines": []
+  },
+  {
+   "id": "F",
+   "x": 15,
+   "y": 380,
+   "w": 195,
+   "h": 98,
+   "kind": "ok",
+   "title": "No follow-up needed",
+   "lines": [
+    "TI-RADS level 1 (TR1) benign",
+    "TR2 not suspicious"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 222,
+   "y": 380,
+   "w": 196,
+   "h": 98,
+   "kind": "warn",
+   "title": "Follow with ultrasound",
+   "lines": [
+    "under the size cut-off"
+   ]
+  },
+  {
+   "id": "H",
+   "x": 430,
+   "y": 380,
+   "w": 290,
+   "h": 98,
+   "kind": "plain",
+   "title": "FNAB — cytology reported by Bethesda category",
+   "lines": [
+    "TR3 ≥ 2.5 cm · TR4 ≥ 1.5 cm · TR5 ≥ 1.0 cm"
+   ]
+  },
+  {
+   "id": "I",
+   "x": 160,
+   "y": 540,
+   "w": 250,
+   "kind": "ok",
+   "title": "Clinical follow-up",
+   "lines": [
+    "benign cytology but TR5 = repeat the biopsy"
+   ]
+  },
+  {
+   "id": "J",
+   "x": 435,
+   "y": 540,
+   "w": 280,
+   "kind": "warn",
+   "title": "Repeat biopsy with or without molecular testing",
+   "lines": [
+    "fine needle aspiration (FNA) cannot separate follicular adenoma from carcinoma"
+   ]
+  },
+  {
+   "id": "K",
+   "x": 475,
+   "y": 730,
+   "w": 200,
+   "kind": "bad",
+   "title": "Surgery",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "from_side": "right",
+   "to_side": "left",
+   "label": "LOW",
+   "label_at": [
+    545,
+    124
+   ]
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "from_dx": 92.5,
+   "label": "HOT — never cancer",
+   "label_at": [
+    886,
+    234
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "from_dx": -60,
+   "to_dx": 150,
+   "label": "COLD",
+   "label_at": [
+    612,
+    248
+   ]
+  },
+  {
+   "from": "B",
+   "to": "E",
+   "to_dx": -25,
+   "label": "NORMAL or HIGH",
+   "label_at": [
+    393,
+    205
+   ]
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "from_dx": -242.5
+  },
+  {
+   "from": "E",
+   "to": "G",
+   "from_dx": -35
+  },
+  {
+   "from": "E",
+   "to": "H",
+   "from_dx": 220
+  },
+  {
+   "from": "H",
+   "to": "I",
+   "from_dx": -100,
+   "label": "II benign",
+   "label_at": [
+    372,
+    500
+   ]
+  },
+  {
+   "from": "H",
+   "to": "J",
+   "from_dx": 0,
+   "to_dx": 0,
+   "label": "I non-diagnostic · III–IV indeterminate",
+   "label_at": [
+    712,
+    512
+   ]
+  },
+  {
+   "from": "H",
+   "to": "K",
+   "path": "M720 429H900V760H677",
+   "label": "V–VI malignant",
+   "label_at": [
+    842,
+    600
+   ]
+  },
+  {
+   "from": "J",
+   "to": "K",
+   "label": "still indeterminate",
+   "label_at": [
+    643,
+    708
+   ]
+  }
+ ]
+}

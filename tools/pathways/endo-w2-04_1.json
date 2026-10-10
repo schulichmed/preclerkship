@@ -1,0 +1,28 @@
+{
+ "name": "clinical presentation and evaluation of hyperparathyroidism and hypoparathyroidism pathway",
+ "title": "Hypercalcemia pathway: a high corrected calcium always gets a PTH, which splits PTH-mediated causes (sorted by fractional calcium excretion, or tertiary with known chronic kidney disease) from PTH-independent ones.",
+ "width": 1120,
+ "nodes": [
+  {"id": "A", "x": 400, "y": 10, "w": 300, "kind": "plain", "title": "Corrected calcium is HIGH", "lines": []},
+  {"id": "B", "x": 430, "y": 90, "w": 240, "kind": "plain", "title": "Serum PTH - ALWAYS", "lines": []},
+  {"id": "C", "x": 400, "y": 170, "w": 300, "h": 46, "kind": "plain", "title": "PTH high or inappropriately normal?", "lines": []},
+  {"id": "I", "x": 15, "y": 290, "w": 190, "kind": "plain", "title": "PTH-INDEPENDENT", "lines": []},
+  {"id": "J", "x": 15, "y": 380, "w": 190, "kind": "bad", "title": "MAJOR - malignancy", "lines": ["MINOR - vitamin D, immobilization, thiazides, milk-alkali, endocrine"]},
+  {"id": "D", "x": 225, "y": 290, "w": 650, "kind": "plain", "title": "24-hour urine Ca + creatinine", "lines": ["fractional excretion of calcium (FECa)"]},
+  {"id": "H", "x": 920, "y": 290, "w": 185, "kind": "bad", "title": "TERTIARY hyperparathyroidism", "lines": ["secretes DESPITE hypercalcemia"]},
+  {"id": "E", "x": 235, "y": 440, "w": 200, "h": 116, "kind": "anti", "title": "PRIMARY hyperparathyroidism", "lines": ["80% a single adenoma"]},
+  {"id": "F", "x": 450, "y": 440, "w": 200, "h": 116, "kind": "ana", "title": "familial hypocalciuric hypercalcemia (FHH)", "lines": ["inactivating calcium-sensing receptor mutation"]},
+  {"id": "G", "x": 665, "y": 440, "w": 220, "h": 116, "kind": "warn", "title": "OVERLAP ZONE", "lines": ["20% of FHH sits here", "recheck off thiazides, normal Mg, 25-hydroxyvitamin D (25-OH-D) over 50"]}
+ ],
+ "edges": [
+  {"from": "A", "to": "B"},
+  {"from": "B", "to": "C"},
+  {"from": "C", "to": "D", "label": "YES - PTH-mediated", "label_at": [625, 254]},
+  {"from": "C", "to": "H", "path": "M700 193H1012.5V288", "label": "YES, with known chronic kidney disease (CKD)", "label_at": [856, 185]},
+  {"from": "C", "to": "I", "path": "M400 193H110V288", "label": "NO - PTH suppressed", "label_at": [255, 185]},
+  {"from": "I", "to": "J"},
+  {"from": "D", "to": "E", "from_dx": -215, "label": "FECa over 0.02", "label_at": [393, 410]},
+  {"from": "D", "to": "F", "from_dx": 0, "label": "FECa under 0.01", "label_at": [600, 410]},
+  {"from": "D", "to": "G", "from_dx": 225, "label": "FECa 0.01 to 0.02", "label_at": [833, 410]}
+ ]
+}

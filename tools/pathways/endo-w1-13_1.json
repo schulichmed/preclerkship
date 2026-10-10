@@ -1,0 +1,183 @@
+{
+ "name": "antihyperglycemic drug choices for t2dm cbl pathway",
+ "title": "Adding a second drug in type 2 diabetes on metformin: cardiorenal disease first, then hypoglycemia risk, then weight, then cost, oral-only and adherence",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 210,
+   "y": 10,
+   "w": 500,
+   "kind": "plain",
+   "title": "Type 2 diabetes inadequately controlled on metformin",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 160,
+   "y": 90,
+   "w": 600,
+   "kind": "plain",
+   "title": "Established atherosclerotic cardiovascular disease, heart failure, or chronic kidney disease (CKD)?",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 60,
+   "y": 220,
+   "w": 380,
+   "kind": "plain",
+   "title": "Hypoglycemia a major concern?",
+   "lines": [
+    "lives alone, drives, eats irregularly"
+   ]
+  },
+  {
+   "id": "C",
+   "x": 490,
+   "y": 210,
+   "w": 410,
+   "kind": "ok",
+   "title": "Sodium-glucose cotransporter 2 (SGLT2) inhibitor",
+   "lines": [
+    "or glucagon-like peptide 1 receptor agonist (GLP-1 RA)",
+    "cardiorenal benefit"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 20,
+   "y": 350,
+   "w": 300,
+   "kind": "warn",
+   "title": "AVOID sulfonylureas and meglitinides",
+   "lines": [
+    "→ dipeptidyl peptidase-4 (DPP-4) inhibitor, GLP-1 RA, SGLT2 inhibitor (SGLT2i)"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 380,
+   "y": 350,
+   "w": 240,
+   "kind": "plain",
+   "title": "Weight a priority?",
+   "lines": []
+  },
+  {
+   "id": "G",
+   "x": 360,
+   "y": 460,
+   "w": 240,
+   "kind": "ok",
+   "title": "GLP-1 RA or SGLT2 inhibitor",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 640,
+   "y": 460,
+   "w": 260,
+   "kind": "bad",
+   "title": "Avoid weight-losing agents",
+   "lines": []
+  },
+  {
+   "id": "I",
+   "x": 160,
+   "y": 580,
+   "w": 340,
+   "kind": "plain",
+   "title": "Cost / oral only / adherence?",
+   "lines": []
+  },
+  {
+   "id": "J",
+   "x": 120,
+   "y": 660,
+   "w": 420,
+   "kind": "plain",
+   "title": "Weigh dosing frequency, injection vs oral, price",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "D",
+   "from_dx": -100,
+   "label": "No",
+   "label_at": [
+    268,
+    190
+   ]
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "from_dx": 100,
+   "label": "Yes",
+   "label_at": [
+    600,
+    198
+   ]
+  },
+  {
+   "from": "D",
+   "to": "E",
+   "from_dx": -60,
+   "label": "Yes",
+   "label_at": [
+    215,
+    322
+   ]
+  },
+  {
+   "from": "D",
+   "to": "F",
+   "from_dx": 60,
+   "label": "No",
+   "label_at": [
+    355,
+    332
+   ]
+  },
+  {
+   "from": "F",
+   "to": "G",
+   "from_dx": -50,
+   "label": "Needs to lose",
+   "label_at": [
+    412,
+    428
+   ]
+  },
+  {
+   "from": "F",
+   "to": "H",
+   "from_dx": 50,
+   "label": "Cachectic / underweight",
+   "label_at": [
+    745,
+    416
+   ]
+  },
+  {
+   "from": "E",
+   "to": "I",
+   "to_dx": -80
+  },
+  {
+   "from": "G",
+   "to": "I",
+   "to_dx": 80
+  },
+  {
+   "from": "I",
+   "to": "J"
+  }
+ ]
+}

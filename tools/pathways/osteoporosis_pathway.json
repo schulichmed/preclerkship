@@ -1,0 +1,341 @@
+{
+ "name": "osteoporosis pathway",
+ "title": "Osteoporosis pathway: diagnosis, who gets a bone density scan, who gets drug treatment, and which drug for which fracture site",
+ "any_of": {
+  "heading": "Osteoporosis is diagnosed by ANY ONE of these:",
+  "items": [
+   {
+    "title": "Fragility fracture",
+    "lines": [
+     "~not skull, hands, feet, ankles,",
+     "~or real trauma"
+    ]
+   },
+   {
+    "title": "T-score < −2.5",
+    "lines": [
+     "~on a bone density scan"
+    ]
+   },
+   {
+    "title": "FRAX 10-year risk > 20%",
+    "lines": [
+     "~if no fragility fracture",
+     "~and T-score above −2.5"
+    ]
+   }
+  ]
+ },
+ "nodes": [
+  {
+   "id": "start",
+   "x": 270,
+   "y": 10,
+   "w": 360,
+   "h": 48,
+   "kind": "plain",
+   "title": "Postmenopausal woman or man ≥ 50",
+   "lines": []
+  },
+  {
+   "id": "prior",
+   "x": 290,
+   "y": 90,
+   "w": 320,
+   "h": 62,
+   "kind": "plain",
+   "title": "Prior hip or spine fracture,",
+   "lines": [
+    "or ≥ 2 fractures?"
+   ]
+  },
+  {
+   "id": "scanq",
+   "x": 270,
+   "y": 192,
+   "w": 360,
+   "h": 104,
+   "kind": "plain",
+   "title": "Bone density scan criteria met?",
+   "lines": [
+    "50–64: prior fracture or ≥ 2 risk factors",
+    "65–69: 1 risk factor",
+    "≥ 70: everyone"
+   ]
+  },
+  {
+   "id": "life",
+   "x": 20,
+   "y": 162,
+   "w": 220,
+   "h": 164,
+   "kind": "bad",
+   "title": "Lifestyle only",
+   "lines": [
+    "~everyone gets this too",
+    "Calcium + vitamin D",
+    "Weight-bearing exercise",
+    "Fall prevention: grab bars,",
+    "no loose rugs or uneven steps,",
+    "no heavy lifting,",
+    "no standing on chairs"
+   ]
+  },
+  {
+   "id": "scan",
+   "x": 310,
+   "y": 332,
+   "w": 280,
+   "h": 44,
+   "kind": "plain",
+   "title": "Bone density scan + FRAX",
+   "lines": []
+  },
+  {
+   "id": "nodrug",
+   "x": 20,
+   "y": 440,
+   "w": 250,
+   "h": 64,
+   "kind": "bad",
+   "title": "No drug",
+   "lines": [
+    "risk < 15% or T-score > −2.5"
+   ]
+  },
+  {
+   "id": "suggest",
+   "x": 320,
+   "y": 440,
+   "w": 260,
+   "h": 64,
+   "kind": "warn",
+   "title": "Suggest drug",
+   "lines": [
+    "15–19.9%, or T ≤ −2.5 + age < 70"
+   ]
+  },
+  {
+   "id": "recommend",
+   "x": 630,
+   "y": 440,
+   "w": 240,
+   "h": 64,
+   "kind": "ok",
+   "title": "Recommend drug",
+   "lines": [
+    "≥ 20%, or T ≤ −2.5 + age ≥ 70"
+   ]
+  },
+  {
+   "id": "which",
+   "x": 360,
+   "y": 560,
+   "w": 180,
+   "h": 48,
+   "kind": "plain",
+   "title": "Which drug?",
+   "lines": []
+  },
+  {
+   "id": "hip",
+   "x": 15,
+   "y": 670,
+   "w": 205,
+   "h": 84,
+   "kind": "anti",
+   "title": "Bisphosphonate",
+   "lines": [
+    "or denosumab",
+    "or estrogen"
+   ]
+  },
+  {
+   "id": "nonvert",
+   "x": 240,
+   "y": 670,
+   "w": 205,
+   "h": 84,
+   "kind": "anti",
+   "title": "Bisphosphonate",
+   "lines": [
+    "denosumab, estrogen",
+    "or teriparatide"
+   ]
+  },
+  {
+   "id": "spine",
+   "x": 465,
+   "y": 670,
+   "w": 205,
+   "h": 84,
+   "kind": "anti",
+   "title": "Any drug",
+   "lines": [
+    "including raloxifene"
+   ]
+  },
+  {
+   "id": "anabolic",
+   "x": 690,
+   "y": 670,
+   "w": 215,
+   "h": 178,
+   "kind": "ana",
+   "title": "Bone formation therapy",
+   "lines": [
+    "teriparatide or romosozumab",
+    "~if any ONE:",
+    "recent severe vertebral",
+    "compression fracture",
+    "> 2 vertebral fractures",
+    "with T-score < −2.5",
+    "failure of antiresorptive therapy"
+   ]
+  },
+  {
+   "id": "after",
+   "x": 690,
+   "y": 874,
+   "w": 215,
+   "h": 74,
+   "kind": "ana",
+   "title": "Then an antiresorptive",
+   "lines": [
+    "after romosozumab: 1 yr",
+    "after teriparatide: 2 yr"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "start",
+   "to": "prior"
+  },
+  {
+   "from": "prior",
+   "to": "scanq",
+   "label": "no",
+   "label_at": [
+    466,
+    176
+   ]
+  },
+  {
+   "from": "prior",
+   "to": "recommend",
+   "path": "M610 121H900V472H872",
+   "label": "yes",
+   "label_at": [
+    755,
+    112
+   ]
+  },
+  {
+   "from": "scanq",
+   "to": "life",
+   "from_side": "left",
+   "to_side": "right",
+   "label": "no",
+   "label_at": [
+    256,
+    234
+   ]
+  },
+  {
+   "from": "scanq",
+   "to": "scan",
+   "label": "yes",
+   "label_at": [
+    466,
+    318
+   ]
+  },
+  {
+   "from": "scan",
+   "to": "nodrug",
+   "from_dx": -50
+  },
+  {
+   "from": "scan",
+   "to": "suggest"
+  },
+  {
+   "from": "scan",
+   "to": "recommend",
+   "from_dx": 50
+  },
+  {
+   "from": "suggest",
+   "to": "which"
+  },
+  {
+   "from": "recommend",
+   "to": "which",
+   "to_side": "right"
+  },
+  {
+   "from": "which",
+   "to": "hip",
+   "from_dx": -70,
+   "label": "hip",
+   "label_at": [
+    235,
+    630
+   ]
+  },
+  {
+   "from": "which",
+   "to": "nonvert",
+   "from_dx": -30,
+   "label": "non-vertebral",
+   "label_at": [
+    372,
+    645
+   ]
+  },
+  {
+   "from": "which",
+   "to": "spine",
+   "from_dx": 30,
+   "label": "spine only",
+   "label_at": [
+    528,
+    645
+   ]
+  },
+  {
+   "from": "which",
+   "to": "anabolic",
+   "from_dx": 70,
+   "label": "build bone",
+   "label_at": [
+    672,
+    630
+   ]
+  },
+  {
+   "from": "anabolic",
+   "to": "after"
+  }
+ ],
+ "panels": [
+  {
+   "x": 15,
+   "y": 782,
+   "w": 655,
+   "title": "Risk factors",
+   "cols": 2,
+   "items": [
+    "Fracture after age 40",
+    "Glucocorticoids > 3 months (prednisone > 5 mg/day)",
+    "≥ 2 falls in the last year",
+    "Parent with a hip fracture",
+    "Body mass index < 20",
+    "Secondary osteoporosis",
+    "Current smoking",
+    "Alcohol ≥ 3 drinks/day"
+   ]
+  }
+ ]
+}

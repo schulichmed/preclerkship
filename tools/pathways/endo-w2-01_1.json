@@ -1,0 +1,27 @@
+{
+ "name": "thyroid and parathyroid gland physiology pathway",
+ "title": "Calcium homeostasis: a fall in ionized calcium releases PTH, which acts directly on bone and the distal tubule and indirectly on the gut through calcitriol, until calcium is restored and PTH shuts off",
+ "nodes": [
+  {"id": "A", "x": 280, "y": 10, "w": 360, "kind": "plain", "title": "Serum ionized Ca2+ FALLS", "lines": []},
+  {"id": "B", "x": 230, "y": 85, "w": 460, "kind": "plain", "title": "CaSR on the parathyroid chief cell goes quiet", "lines": []},
+  {"id": "C", "x": 230, "y": 160, "w": 460, "kind": "plain", "title": "PTH released", "lines": ["84 amino acid peptide, full activity in the 1-34 fragment"]},
+  {"id": "D", "x": 15, "y": 290, "w": 270, "h": 82, "kind": "anti", "title": "BONE - DIRECT", "lines": ["up osteoclast resorption", "down osteoblast formation"]},
+  {"id": "E", "x": 320, "y": 290, "w": 280, "h": 82, "kind": "anti", "title": "KIDNEY distal convoluted tubule - DIRECT", "lines": ["up ACTIVE Ca2+ reabsorption"]},
+  {"id": "F", "x": 635, "y": 290, "w": 270, "h": 82, "kind": "plain", "title": "KIDNEY - 1-alpha-hydroxylase", "lines": ["the PTH-regulated rate-limiting step"]},
+  {"id": "G", "x": 670, "y": 410, "w": 200, "kind": "plain", "title": "Calcitriol", "lines": []},
+  {"id": "H", "x": 635, "y": 490, "w": 270, "kind": "ana", "title": "GASTROINTESTINAL TRACT - INDIRECT ONLY", "lines": ["up Ca2+ absorption from food", "NO PTH receptor here"]},
+  {"id": "I", "x": 230, "y": 640, "w": 460, "kind": "ok", "title": "Serum Ca2+ restored, CaSR reactivates, PTH shuts off", "lines": []}
+ ],
+ "edges": [
+  {"from": "A", "to": "B"},
+  {"from": "B", "to": "C"},
+  {"from": "C", "to": "D", "from_dx": -120},
+  {"from": "C", "to": "E"},
+  {"from": "C", "to": "F", "from_dx": 120},
+  {"from": "F", "to": "G"},
+  {"from": "G", "to": "H"},
+  {"from": "D", "to": "I", "to_dx": -150},
+  {"from": "E", "to": "I"},
+  {"from": "H", "to": "I", "to_dx": 150}
+ ]
+}

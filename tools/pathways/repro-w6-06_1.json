@@ -1,0 +1,24 @@
+{
+ "name": "hemorrhagic shock pathway",
+ "title": "Hemorrhagic shock: recognise it, ABCs and call for help, monitor, two large-bore IVs, fluids then blood, massive transfusion if still unstable, stop the bleeding, ICU if needed",
+ "width": 760,
+ "nodes": [
+  {"id": "A", "x": 140, "y": 10, "w": 320, "kind": "plain", "title": "Bleeding + signs of shock", "lines": ["pulse rises first"]},
+  {"id": "B", "x": 140, "y": 102, "w": 320, "kind": "lo", "title": "ABCs", "lines": ["call for HELP"]},
+  {"id": "C", "x": 140, "y": 194, "w": 320, "kind": "plain", "title": "Monitor", "lines": ["vitals · blood gas · Foley"]},
+  {"id": "D", "x": 140, "y": 286, "w": 320, "kind": "lo", "title": "2 large-bore IVs", "lines": ["send bloods incl. group and screen"]},
+  {"id": "E", "x": 140, "y": 378, "w": 320, "kind": "plain", "title": "Crystalloid,", "lines": ["then blood products"]},
+  {"id": "F", "x": 190, "y": 470, "w": 220, "kind": "plain", "title": "Still unstable?", "lines": []},
+  {"id": "G", "x": 500, "y": 540, "w": 240, "kind": "lo", "title": "Massive transfusion", "lines": ["protocol"]},
+  {"id": "H", "x": 140, "y": 640, "w": 320, "kind": "lo", "title": "Stop the bleeding", "lines": ["treat the cause"]},
+  {"id": "I", "x": 140, "y": 732, "w": 320, "kind": "plain", "title": "ICU if needed", "lines": ["inotropes · central line"]}
+ ],
+ "edges": [
+  {"from": "A", "to": "B"}, {"from": "B", "to": "C"}, {"from": "C", "to": "D"},
+  {"from": "D", "to": "E"}, {"from": "E", "to": "F"},
+  {"from": "F", "to": "G", "path": "M410 491H620V538", "label": "yes", "label_at": [515, 482]},
+  {"from": "F", "to": "H", "label": "no", "label_at": [320, 584]},
+  {"from": "G", "to": "H", "path": "M620 600V670H462"},
+  {"from": "H", "to": "I"}
+ ]
+}

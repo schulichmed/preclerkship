@@ -1,0 +1,236 @@
+{
+ "name": "approach to the menstrual cycle pathway",
+ "title": "The menstrual cycle: FSH builds the follicle, estradiol switches from negative to positive feedback to trigger the LH surge and ovulation, and the corpus luteum regresses after two weeks unless human chorionic gonadotropin rescues it",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 270,
+   "y": 10,
+   "w": 380,
+   "kind": "plain",
+   "title": "Follicular phase",
+   "lines": [
+    "day 1 of the period to ovulation"
+   ]
+  },
+  {
+   "id": "B",
+   "x": 270,
+   "y": 105,
+   "w": 380,
+   "kind": "plain",
+   "title": "FSH drives antral follicle growth",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 270,
+   "y": 182,
+   "w": 380,
+   "kind": "plain",
+   "title": "Two-cell mechanism",
+   "lines": [
+    "LH on THECA makes androgen",
+    "FSH on GRANULOSA aromatizes it to estradiol"
+   ]
+  },
+  {
+   "id": "D",
+   "x": 270,
+   "y": 295,
+   "w": 380,
+   "kind": "plain",
+   "title": "Estradiol RISES",
+   "lines": []
+  },
+  {
+   "id": "E",
+   "x": 270,
+   "y": 380,
+   "w": 380,
+   "kind": "plain",
+   "title": "Estradiol (E2) above 300–500 pg/mL",
+   "lines": [
+    "for about 48 hours?"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 20,
+   "y": 380,
+   "w": 200,
+   "kind": "plain",
+   "title": "NEGATIVE feedback",
+   "lines": [
+    "~below threshold",
+    "FSH falls as E2 climbs"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 230,
+   "y": 495,
+   "w": 460,
+   "kind": "plain",
+   "title": "FEED-FORWARD SWITCH",
+   "lines": [
+    "more E2 now means MORE gonadotropin-releasing hormone (GnRH)"
+   ]
+  },
+  {
+   "id": "H",
+   "x": 270,
+   "y": 590,
+   "w": 380,
+   "kind": "plain",
+   "title": "Mid-cycle LH and FSH SURGE",
+   "lines": []
+  },
+  {
+   "id": "I",
+   "x": 270,
+   "y": 667,
+   "w": 380,
+   "kind": "info",
+   "title": "OVULATION",
+   "lines": []
+  },
+  {
+   "id": "J",
+   "x": 270,
+   "y": 744,
+   "w": 380,
+   "kind": "plain",
+   "title": "Luteal phase",
+   "lines": [
+    "follicular remnants form the corpus luteum"
+   ]
+  },
+  {
+   "id": "K",
+   "x": 270,
+   "y": 839,
+   "w": 380,
+   "kind": "plain",
+   "title": "Progesterone rises fast,",
+   "lines": [
+    "then estradiol rises too"
+   ]
+  },
+  {
+   "id": "L",
+   "x": 270,
+   "y": 934,
+   "w": 380,
+   "kind": "plain",
+   "title": "Fertilized embryo present?",
+   "lines": []
+  },
+  {
+   "id": "M",
+   "x": 100,
+   "y": 1032,
+   "w": 330,
+   "kind": "bad",
+   "title": "Corpus luteum regresses",
+   "lines": [
+    "after 2 WEEKS",
+    "steroids fall, menstruation, cycle resets"
+   ]
+  },
+  {
+   "id": "N",
+   "x": 490,
+   "y": 1032,
+   "w": 330,
+   "kind": "ok",
+   "title": "Human chorionic gonadotropin",
+   "lines": [
+    "rescues the corpus luteum"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C"
+  },
+  {
+   "from": "C",
+   "to": "D"
+  },
+  {
+   "from": "D",
+   "to": "E"
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "from_side": "left",
+   "to_side": "right",
+   "label": "no",
+   "label_at": [
+    245,
+    403
+   ]
+  },
+  {
+   "from": "F",
+   "to": "D",
+   "path": "M120 380V316.5H268"
+  },
+  {
+   "from": "E",
+   "to": "G",
+   "label": "yes",
+   "label_at": [
+    480,
+    475
+   ]
+  },
+  {
+   "from": "G",
+   "to": "H"
+  },
+  {
+   "from": "H",
+   "to": "I"
+  },
+  {
+   "from": "I",
+   "to": "J"
+  },
+  {
+   "from": "J",
+   "to": "K"
+  },
+  {
+   "from": "K",
+   "to": "L"
+  },
+  {
+   "from": "L",
+   "to": "M",
+   "from_dx": -60,
+   "label": "no",
+   "label_at": [
+    238,
+    1018
+   ]
+  },
+  {
+   "from": "L",
+   "to": "N",
+   "from_dx": 60,
+   "label": "yes",
+   "label_at": [
+    686,
+    1018
+   ]
+  }
+ ]
+}

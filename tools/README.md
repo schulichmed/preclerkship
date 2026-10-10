@@ -150,6 +150,21 @@ python tools/class_tree_svg.py tools/class_trees/calcium_bone_drugs.json \
   --out "/mnt/c/Users/nsims/medwiki/Attachments/drug classes tree - calcium and bone drugs.svg"
 ```
 
+**`pathway_svg.py`** draws a clinical pathway (boxes, arrows, decisions, an
+"any ONE of these" row, bullet panels) as an SVG from a spec in
+[`pathways/`](pathways/), placed by hand so no arrow crosses a box, with every
+line measured in Arial so it stays inside its box. It replaced the mermaid
+flowcharts in the endo and repro charts on 2026-10-10, because mermaid's
+automatic layout crossed arrows and ran text out of its boxes. The exit code
+is 1 on a layout error; `--png` writes a preview to look at, which is the
+check that matters. [`pathways/README.md`](pathways/README.md) says how to turn
+a mermaid chart into a spec and when to colour a box.
+
+```bash
+python tools/pathway_svg.py tools/pathways/osteoporosis_pathway.json \
+  --out "/mnt/c/Users/nsims/medwiki/Attachments/osteoporosis pathway.svg" --png /tmp/preview.png
+```
+
 **`build_pages.py`** regenerates the five block pages. Only the name, blurb, accent
 and two counts differ between them, so they are generated rather than copied. The
 blurb and accent are read back out of the page being replaced, so edit those in the

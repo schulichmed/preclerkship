@@ -1,0 +1,27 @@
+{
+ "name": "approach to pathology of aub pelvic pain pathway",
+ "title": "Abnormal uterine bleeding: vitals first, then history, exam and investigations; a visible lesion means a structural cause to remove and send to pathology, otherwise ultrasound in selected patients and the functional causes, with DUB a diagnosis of exclusion.",
+ "nodes": [
+  {"id": "a", "x": 310, "y": 10, "w": 300, "kind": "plain", "title": "Abnormal uterine bleeding", "lines": []},
+  {"id": "b", "x": 270, "y": 90, "w": 380, "kind": "plain", "title": "Is she stable? Check vitals FIRST", "lines": []},
+  {"id": "c", "x": 130, "y": 170, "w": 660, "kind": "plain", "title": "History: general + full gynecologic and obstetric", "lines": ["Physical exam: general, abdominal and pelvic", "Investigations: complete blood count, beta human chorionic gonadotropin, Pap if indicated"]},
+  {"id": "d", "x": 310, "y": 300, "w": 300, "kind": "plain", "title": "Is there a visible lesion?", "lines": []},
+  {"id": "e", "x": 40, "y": 430, "w": 280, "kind": "anti", "title": "STRUCTURAL", "lines": ["Anatomic · Baby · Neoplasia"]},
+  {"id": "g", "x": 20, "y": 540, "w": 320, "kind": "ok", "title": "Remove the lesion", "lines": ["Send the ENTIRE specimen to pathology"]},
+  {"id": "f", "x": 560, "y": 430, "w": 300, "kind": "plain", "title": "Ultrasound in selected patients", "lines": []},
+  {"id": "h", "x": 610, "y": 520, "w": 200, "kind": "plain", "title": "Functional causes", "lines": []},
+  {"id": "i", "x": 580, "y": 610, "w": 260, "kind": "ana", "title": "Coagulopathy · DUB", "lines": ["Endocrine · Hormones"]},
+  {"id": "j", "x": 560, "y": 720, "w": 300, "kind": "info", "title": "DUB is a diagnosis of EXCLUSION", "lines": []}
+ ],
+ "edges": [
+  {"from": "a", "to": "b"},
+  {"from": "b", "to": "c"},
+  {"from": "c", "to": "d"},
+  {"from": "d", "to": "e", "path": "M310 321H180V428", "label": "YES — e.g. a mass at the cervical os", "label_at": [318, 392]},
+  {"from": "d", "to": "f", "path": "M610 321H710V428", "label": "NO", "label_at": [732, 392]},
+  {"from": "e", "to": "g"},
+  {"from": "f", "to": "h"},
+  {"from": "h", "to": "i"},
+  {"from": "i", "to": "j"}
+ ]
+}

@@ -1,0 +1,272 @@
+{
+ "name": "disorders of growth pathway",
+ "title": "Disorders of growth pathway: plot the growth data, then weight relative to height separates illness from endocrine causes, and growth velocity, bone age and proportion separate familial, constitutional, skeletal and other causes",
+ "width": 1120,
+ "nodes": [
+  {
+   "id": "A",
+   "x": 400,
+   "y": 10,
+   "w": 320,
+   "kind": "plain",
+   "title": "Short stature — height under 3rd percentile",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 390,
+   "y": 82,
+   "w": 340,
+   "kind": "plain",
+   "title": "Plot: mid-parental height, height-age, growth velocity, BONE AGE",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 130,
+   "y": 200,
+   "w": 240,
+   "h": 48,
+   "kind": "plain",
+   "title": "Weight relative to height?",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 70,
+   "y": 330,
+   "w": 170,
+   "kind": "bad",
+   "title": "Chronic illness or undernutrition",
+   "lines": [
+    "gradual drop off the curve"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 255,
+   "y": 330,
+   "w": 175,
+   "kind": "plain",
+   "title": "ENDOCRINE cause",
+   "lines": [
+    "usually acute growth failure"
+   ]
+  },
+  {
+   "id": "M",
+   "x": 70,
+   "y": 470,
+   "w": 180,
+   "kind": "bad",
+   "title": "Growth hormone (GH) deficiency — commonest endocrine",
+   "lines": [
+    "Insulin-like growth factor 1 (IGF-1) plus TWO provocative tests",
+    "random GH is worthless"
+   ]
+  },
+  {
+   "id": "N",
+   "x": 275,
+   "y": 630,
+   "w": 240,
+   "kind": "bad",
+   "title": "Hypothyroidism, glucocorticoid excess, pseudohypoparathyroidism",
+   "lines": []
+  },
+  {
+   "id": "F",
+   "x": 650,
+   "y": 200,
+   "w": 200,
+   "h": 48,
+   "kind": "plain",
+   "title": "Growth velocity?",
+   "lines": []
+  },
+  {
+   "id": "G",
+   "x": 475,
+   "y": 340,
+   "w": 180,
+   "h": 48,
+   "kind": "plain",
+   "title": "Bone age?",
+   "lines": []
+  },
+  {
+   "id": "J",
+   "x": 845,
+   "y": 340,
+   "w": 180,
+   "h": 48,
+   "kind": "plain",
+   "title": "Proportionate?",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 390,
+   "y": 460,
+   "w": 165,
+   "kind": "ok",
+   "title": "FAMILIAL short stature",
+   "lines": [
+    "parental target is low, puberty on time"
+   ]
+  },
+  {
+   "id": "I",
+   "x": 575,
+   "y": 460,
+   "w": 165,
+   "kind": "ok",
+   "title": "CONSTITUTIONAL DELAY",
+   "lines": [
+    "late puberty, positive family history"
+   ]
+  },
+  {
+   "id": "K",
+   "x": 760,
+   "y": 460,
+   "w": 165,
+   "kind": "bad",
+   "title": "SKELETAL DYSPLASIA",
+   "lines": [
+    "achondroplasia — FGFR3"
+   ]
+  },
+  {
+   "id": "L",
+   "x": 945,
+   "y": 460,
+   "w": 165,
+   "kind": "plain",
+   "title": "Intrauterine, nutritional, systemic, genetic, or endocrine",
+   "lines": []
+  },
+  {
+   "id": "O",
+   "x": 945,
+   "y": 600,
+   "w": 165,
+   "kind": "bad",
+   "title": "Turner — karyotype every short girl",
+   "lines": [
+    "short stature in 95-100%"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "from_side": "left",
+   "path": "M390 113H250V198"
+  },
+  {
+   "from": "B",
+   "to": "F",
+   "from_dx": 140
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "from_dx": -60,
+   "label": "WEIGHT fell FIRST",
+   "label_at": [
+    112,
+    290
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "from_dx": 60,
+   "label": "SHORT and relatively CHUBBY",
+   "label_at": [
+    362,
+    312
+   ]
+  },
+  {
+   "from": "E",
+   "to": "M",
+   "from_dx": -50
+  },
+  {
+   "from": "E",
+   "to": "N",
+   "path": "M360 414V628"
+  },
+  {
+   "from": "F",
+   "to": "G",
+   "label": "NORMAL",
+   "label_at": [
+    580,
+    294
+   ],
+   "from_dx": -60
+  },
+  {
+   "from": "F",
+   "to": "J",
+   "label": "ABNORMAL — under 4.5 cm/yr",
+   "label_at": [
+    990,
+    294
+   ],
+   "from_dx": 60
+  },
+  {
+   "from": "G",
+   "to": "H",
+   "from_dx": -50,
+   "label": "matches chronological age",
+   "label_at": [
+    420,
+    435
+   ]
+  },
+  {
+   "from": "G",
+   "to": "I",
+   "from_dx": 50,
+   "label": "DELAYED",
+   "label_at": [
+    690,
+    430
+   ]
+  },
+  {
+   "from": "J",
+   "to": "K",
+   "from_dx": -50,
+   "label": "NO",
+   "label_at": [
+    815,
+    430
+   ]
+  },
+  {
+   "from": "J",
+   "to": "L",
+   "from_dx": 50,
+   "label": "YES",
+   "label_at": [
+    1055,
+    430
+   ]
+  },
+  {
+   "from": "L",
+   "to": "O"
+  }
+ ]
+}

@@ -1,0 +1,213 @@
+{
+ "name": "fertilization infertility pathway",
+ "title": "Infertility pathway: when to start the work-up by her age or a known cause, the standard six-step work-up, and what each abnormal step points to",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 330,
+   "y": 10,
+   "w": 260,
+   "kind": "plain",
+   "title": "Couple not conceiving",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 350,
+   "y": 85,
+   "w": 220,
+   "kind": "plain",
+   "title": "How old is she?",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 30,
+   "y": 175,
+   "w": 240,
+   "h": 80,
+   "kind": "lo",
+   "title": "Work up after 12 months",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 340,
+   "y": 175,
+   "w": 240,
+   "h": 80,
+   "kind": "lo",
+   "title": "Work up after 6 months",
+   "lines": []
+  },
+  {
+   "id": "E",
+   "x": 650,
+   "y": 175,
+   "w": 250,
+   "h": 80,
+   "kind": "lo",
+   "title": "Work up IMMEDIATELY",
+   "lines": [
+    "~e.g. polycystic ovary syndrome (PCOS) with irregular cycles"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 330,
+   "y": 300,
+   "w": 260,
+   "kind": "plain",
+   "title": "Standard 6-step workup",
+   "lines": []
+  },
+  {
+   "id": "G",
+   "x": 330,
+   "y": 383,
+   "w": 260,
+   "kind": "plain",
+   "title": "Which step is abnormal?",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 15,
+   "y": 495,
+   "w": 205,
+   "h": 112,
+   "kind": "bad",
+   "title": "Central / ovarian reserve",
+   "lines": []
+  },
+  {
+   "id": "I",
+   "x": 235,
+   "y": 495,
+   "w": 205,
+   "h": 112,
+   "kind": "bad",
+   "title": "Cavity or tubal factor",
+   "lines": []
+  },
+  {
+   "id": "J",
+   "x": 455,
+   "y": 495,
+   "w": 205,
+   "h": 112,
+   "kind": "bad",
+   "title": "Anovulation",
+   "lines": []
+  },
+  {
+   "id": "K",
+   "x": 675,
+   "y": 495,
+   "w": 230,
+   "h": 112,
+   "kind": "bad",
+   "title": "Male factor",
+   "lines": [
+    "→ luteinizing hormone (LH), testosterone, 17-hydroxyprogesterone;",
+    "karyotype if extreme"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "from_side": "left",
+   "to_side": "top",
+   "label": "Under 35",
+   "label_at": [
+    290,
+    98
+   ]
+  },
+  {
+   "from": "B",
+   "to": "D",
+   "to_dx": 0,
+   "label": "35 and over",
+   "label_at": [
+    508,
+    156
+   ]
+  },
+  {
+   "from": "B",
+   "to": "E",
+   "from_side": "right",
+   "to_side": "top",
+   "label": "Known cause",
+   "label_at": [
+    635,
+    98
+   ]
+  },
+  {
+   "from": "C",
+   "to": "F",
+   "to_side": "left"
+  },
+  {
+   "from": "D",
+   "to": "F"
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "to_side": "right"
+  },
+  {
+   "from": "F",
+   "to": "G"
+  },
+  {
+   "from": "G",
+   "to": "H",
+   "from_dx": -90,
+   "label": "Day 2–4 bloods",
+   "label_at": [
+    188,
+    487
+   ]
+  },
+  {
+   "from": "G",
+   "to": "I",
+   "from_dx": -30,
+   "label": "Sonohysterogram",
+   "label_at": [
+    410,
+    487
+   ]
+  },
+  {
+   "from": "G",
+   "to": "J",
+   "from_dx": 30,
+   "label": "Day 21 progesterone",
+   "label_at": [
+    637,
+    487
+   ]
+  },
+  {
+   "from": "G",
+   "to": "K",
+   "from_dx": 90,
+   "label": "Semen analysis",
+   "label_at": [
+    854,
+    487
+   ]
+  }
+ ]
+}

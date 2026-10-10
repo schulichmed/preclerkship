@@ -1,0 +1,166 @@
+{
+ "name": "care for pregnancy in the first trimester pathway",
+ "title": "First-trimester pregnancy: confirm with human chorionic gonadotropin and ultrasound, date by IVF transfer or the first crown-rump length scan, then fix the due date and order the first-trimester investigations",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 170,
+   "y": 10,
+   "w": 580,
+   "kind": "lo",
+   "title": "Missed menses",
+   "lines": [
+    "with or without nausea / vomiting, urinary frequency,",
+    "breast tenderness, bloating"
+   ]
+  },
+  {
+   "id": "B",
+   "x": 220,
+   "y": 120,
+   "w": 480,
+   "kind": "plain",
+   "title": "Urine or serum human chorionic gonadotropin (hCG)",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 350,
+   "y": 214,
+   "w": 220,
+   "kind": "plain",
+   "title": "Serum hCG > 25?",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 650,
+   "y": 196,
+   "w": 260,
+   "kind": "bad",
+   "title": "Not pregnant (< 5),",
+   "lines": [
+    "or very early / assay error (5-25)",
+    "- repeat"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 170,
+   "y": 320,
+   "w": 580,
+   "kind": "plain",
+   "title": "Ultrasound: gestational sac AND yolk sac = confirmed,",
+   "lines": [
+    "and located (intrauterine vs ectopic)"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 330,
+   "y": 430,
+   "w": 260,
+   "kind": "plain",
+   "title": "How was it conceived?",
+   "lines": []
+  },
+  {
+   "id": "G",
+   "x": 40,
+   "y": 540,
+   "w": 300,
+   "kind": "plain",
+   "title": "EDB from embryo transfer date",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 400,
+   "y": 540,
+   "w": 500,
+   "kind": "plain",
+   "title": "EDB from 1st ultrasound",
+   "lines": [
+    "with crown-rump length (CRL) ≥ 10 mm (~7 weeks),",
+    "any ultrasound < 23 weeks beats last normal menstrual period (LNMP)"
+   ]
+  },
+  {
+   "id": "I",
+   "x": 170,
+   "y": 680,
+   "w": 580,
+   "kind": "ok",
+   "title": "EDB FIXED",
+   "lines": [
+    "order routine first-trimester investigations,",
+    "offer enhanced first trimester screen (eFTS) at 11-14 weeks"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C"
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "from_side": "right",
+   "to_side": "left",
+   "label": "No",
+   "label_at": [
+    610,
+    228
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "label": "Yes",
+   "label_at": [
+    478,
+    292
+   ]
+  },
+  {
+   "from": "E",
+   "to": "F"
+  },
+  {
+   "from": "F",
+   "to": "G",
+   "from_dx": -80,
+   "label": "IVF",
+   "label_at": [
+    250,
+    500
+   ]
+  },
+  {
+   "from": "F",
+   "to": "H",
+   "from_dx": 80,
+   "to_dx": -110,
+   "label": "Spontaneous",
+   "label_at": [
+    600,
+    505
+   ]
+  },
+  {
+   "from": "G",
+   "to": "I",
+   "to_dx": -270
+  },
+  {
+   "from": "H",
+   "to": "I",
+   "to_dx": 190
+  }
+ ]
+}

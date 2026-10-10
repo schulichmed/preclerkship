@@ -1,0 +1,188 @@
+{
+ "name": "hypertension in pregnancy pathway",
+ "title": "Hypertension in pregnancy: onset before or after 20 weeks sorts pre-existing from gestational hypertension and pre-eclampsia, with eclampsia, HELLP syndrome and severe blood pressure that needs urgent intravenous lowering",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 200,
+   "y": 10,
+   "w": 420,
+   "kind": "plain",
+   "title": "BP > 140/90",
+   "lines": [
+    "on 2 readings > 15 min apart"
+   ]
+  },
+  {
+   "id": "B",
+   "x": 130,
+   "y": 120,
+   "w": 360,
+   "kind": "plain",
+   "title": "Onset before or after 20 weeks?",
+   "lines": []
+  },
+  {
+   "id": "I",
+   "x": 690,
+   "y": 110,
+   "w": 220,
+   "kind": "plain",
+   "title": "Systolic BP > 160 or diastolic BP > 110?",
+   "lines": []
+  },
+  {
+   "id": "J",
+   "x": 690,
+   "y": 250,
+   "w": 220,
+   "kind": "bad",
+   "title": "SEVERE",
+   "lines": [
+    "urgent intravenous (IV) lowering to < 160/< 110"
+   ]
+  },
+  {
+   "id": "C",
+   "x": 10,
+   "y": 250,
+   "w": 260,
+   "kind": "warn",
+   "title": "PRE-EXISTING (chronic) hypertension",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 330,
+   "y": 250,
+   "w": 300,
+   "kind": "plain",
+   "title": "Proteinuria or adverse conditions?",
+   "lines": []
+  },
+  {
+   "id": "E",
+   "x": 200,
+   "y": 380,
+   "w": 260,
+   "kind": "warn",
+   "title": "GESTATIONAL hypertension",
+   "lines": [
+    "isolated BP elevation"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 520,
+   "y": 380,
+   "w": 280,
+   "kind": "bad",
+   "title": "PRE-ECLAMPSIA",
+   "lines": [
+    "hypertension + proteinuria"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 380,
+   "y": 510,
+   "w": 220,
+   "kind": "bad",
+   "title": "ECLAMPSIA",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 640,
+   "y": 510,
+   "w": 270,
+   "kind": "bad",
+   "title": "HELLP syndrome",
+   "lines": [
+    "Hemolysis + high liver enzymes",
+    "+ low platelets",
+    "BP may be NORMAL"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B",
+   "from_dx": -100
+  },
+  {
+   "from": "A",
+   "to": "I",
+   "path": "M620 41H800V110"
+  },
+  {
+   "from": "I",
+   "to": "J",
+   "label": "Yes",
+   "label_at": [
+    822,
+    225
+   ]
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "from_dx": -60,
+   "to_dx": 110,
+   "label": "Before pregnancy or < 20 weeks",
+   "label_at": [
+    122,
+    215
+   ]
+  },
+  {
+   "from": "B",
+   "to": "D",
+   "from_dx": 70,
+   "to_dx": -100,
+   "label": "> 20 weeks, normal BPs documented before",
+   "label_at": [
+    540,
+    215
+   ]
+  },
+  {
+   "from": "D",
+   "to": "E",
+   "from_dx": -90,
+   "label": "No",
+   "label_at": [
+    345,
+    322
+   ]
+  },
+  {
+   "from": "D",
+   "to": "F",
+   "from_dx": 90,
+   "to_dx": -90,
+   "label": "Yes",
+   "label_at": [
+    592,
+    345
+   ]
+  },
+  {
+   "from": "F",
+   "to": "G",
+   "from_dx": -80,
+   "label": "Seizure",
+   "label_at": [
+    518,
+    456
+   ]
+  },
+  {
+   "from": "F",
+   "to": "H",
+   "from_dx": 80,
+   "dashed": true
+  }
+ ]
+}

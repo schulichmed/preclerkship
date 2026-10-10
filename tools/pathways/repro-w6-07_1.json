@@ -1,0 +1,208 @@
+{
+ "name": "lactation pathway",
+ "title": "Breastfeeding problems: low supply is either poor extraction or inadequate production, both augmented; a painful infected breast is mastitis, or a lactational abscess if there is an abscess",
+ "width": 1120,
+ "nodes": [
+  {
+   "id": "A",
+   "x": 410,
+   "y": 10,
+   "w": 300,
+   "kind": "plain",
+   "title": "Breastfeeding problem",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 395,
+   "y": 84,
+   "w": 330,
+   "kind": "plain",
+   "title": "What is the complaint?",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 90,
+   "y": 180,
+   "w": 420,
+   "kind": "plain",
+   "title": "Low supply - check the infant:",
+   "lines": [
+    "fewer wet and dirty diapers · excess weight loss"
+   ]
+  },
+  {
+   "id": "D",
+   "x": 90,
+   "y": 280,
+   "w": 420,
+   "kind": "plain",
+   "title": "Assess the problem - the latch:",
+   "lines": [
+    "is the problem getting milk OUT?"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 10,
+   "y": 420,
+   "w": 280,
+   "kind": "plain",
+   "title": "Poor latch · infrequent feeds",
+   "lines": [
+    "preterm or NICU · separation",
+    "cleft palate, sucking",
+    "or swallowing problems"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 310,
+   "y": 420,
+   "w": 330,
+   "kind": "plain",
+   "title": "Retained placenta · Sheehan syndrome",
+   "lines": [
+    "PCOS, prolactinoma",
+    "little breast growth in pregnancy",
+    "prior surgery",
+    "drugs: estrogen, decongestants,",
+    "dopamine antagonist",
+    "~slide wording - an agonist fits the",
+    "~physiology; check with the lecturer"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 90,
+   "y": 630,
+   "w": 420,
+   "kind": "ok",
+   "title": "Augment: pumping · supplement feeding · drugs",
+   "lines": [
+    "consider a lactation consultant"
+   ]
+  },
+  {
+   "id": "H",
+   "x": 690,
+   "y": 180,
+   "w": 400,
+   "kind": "plain",
+   "title": "Is there an abscess in the breast?",
+   "lines": []
+  },
+  {
+   "id": "I",
+   "x": 665,
+   "y": 300,
+   "w": 215,
+   "kind": "warn",
+   "title": "MASTITIS",
+   "lines": [
+    "Staphylococcus aureus",
+    "most common",
+    "KEEP NURSING",
+    "+ manual pressure",
+    "cloxacillin 500 mg",
+    "four times daily, 7-10 days"
+   ]
+  },
+  {
+   "id": "J",
+   "x": 900,
+   "y": 300,
+   "w": 210,
+   "kind": "bad",
+   "title": "LACTATIONAL ABSCESS",
+   "lines": [
+    "mastitis that progressed",
+    "incise and drain",
+    "or needle aspirate",
+    "+ analgesia, bra, emptying,",
+    "antibiotics"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "path": "M395 105H300V178",
+   "label": "Not enough milk",
+   "label_at": [
+    300,
+    96
+   ]
+  },
+  {
+   "from": "B",
+   "to": "H",
+   "path": "M725 105H890V178",
+   "label": "Painful, infected breast",
+   "label_at": [
+    880,
+    96
+   ]
+  },
+  {
+   "from": "C",
+   "to": "D"
+  },
+  {
+   "from": "D",
+   "to": "E",
+   "from_dx": -100,
+   "label": "Yes - poor extraction",
+   "label_at": [
+    120,
+    392
+   ]
+  },
+  {
+   "from": "D",
+   "to": "G",
+   "from_dx": 100,
+   "label": "No - inadequate production",
+   "label_at": [
+    560,
+    392
+   ]
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "to_dx": -60
+  },
+  {
+   "from": "G",
+   "to": "F",
+   "to_dx": 60
+  },
+  {
+   "from": "H",
+   "to": "I",
+   "from_dx": -80,
+   "label": "No",
+   "label_at": [
+    745,
+    262
+   ]
+  },
+  {
+   "from": "H",
+   "to": "J",
+   "from_dx": 80,
+   "label": "Yes",
+   "label_at": [
+    1035,
+    262
+   ]
+  }
+ ]
+}

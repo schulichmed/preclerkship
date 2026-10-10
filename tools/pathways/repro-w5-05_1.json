@@ -1,0 +1,213 @@
+{
+ "name": "post menopausal woman presenting with bleeding pathway",
+ "title": "Post-menopausal bleeding pathway: stabilise, examine, measure the endometrium by transvaginal ultrasound, biopsy, and act on the biopsy report",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 165,
+   "y": 10,
+   "w": 330,
+   "h": 48,
+   "kind": "plain",
+   "title": "Post-menopausal woman with bleeding",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 230,
+   "y": 90,
+   "w": 200,
+   "h": 48,
+   "kind": "plain",
+   "title": "Is she stable?",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 600,
+   "y": 90,
+   "w": 220,
+   "h": 48,
+   "kind": "bad",
+   "title": "Resuscitate first",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 165,
+   "y": 180,
+   "w": 330,
+   "h": 100,
+   "kind": "plain",
+   "title": "Full gynecologic/obstetric history",
+   "lines": [
+    "Abdominal + pelvic exam",
+    "SPECULUM: mass at the os?",
+    "ulcerated cervix?"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 180,
+   "y": 320,
+   "w": 300,
+   "h": 62,
+   "kind": "plain",
+   "title": "Transvaginal ultrasound (TVUS)",
+   "lines": [
+    "endometrial thickness"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 180,
+   "y": 462,
+   "w": 300,
+   "h": 62,
+   "kind": "plain",
+   "title": "Endometrial biopsy",
+   "lines": [
+    "(99.6% sensitive for cancer)"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 600,
+   "y": 548,
+   "w": 305,
+   "h": 62,
+   "kind": "plain",
+   "title": "Report #1",
+   "lines": [
+    "the deck asks what to tell her and leaves it open"
+   ]
+  },
+  {
+   "id": "H",
+   "x": 600,
+   "y": 632,
+   "w": 305,
+   "kind": "ok",
+   "title": "Diagnosis of exclusion",
+   "lines": [
+    "treat genitourinary syndrome of menopause",
+    "Return if bleeding recurs"
+   ]
+  },
+  {
+   "id": "I",
+   "x": 600,
+   "y": 732,
+   "w": 305,
+   "kind": "warn",
+   "title": "Progestin",
+   "lines": [
+    "(Megace / levonorgestrel intrauterine device)",
+    "Re-biopsy in 3 months"
+   ]
+  },
+  {
+   "id": "J",
+   "x": 600,
+   "y": 832,
+   "w": 305,
+   "kind": "bad",
+   "title": "Refer to gynecology",
+   "lines": [
+    "Hysterectomy + bilateral salpingo-oophorectomy (BSO)"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "from_side": "right",
+   "to_side": "left",
+   "label": "No",
+   "label_at": [
+    515,
+    106
+   ]
+  },
+  {
+   "from": "B",
+   "to": "D",
+   "label": "Yes",
+   "label_at": [
+    352,
+    165
+   ]
+  },
+  {
+   "from": "D",
+   "to": "E"
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "from_dx": -60,
+   "to_dx": -60,
+   "label": "> 5 mm, or any PMB",
+   "label_at": [
+    196,
+    428
+   ]
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "from_dx": 60,
+   "to_dx": 60,
+   "label": "< 5 mm but bleeding RECURS",
+   "label_at": [
+    496,
+    428
+   ]
+  },
+  {
+   "from": "F",
+   "to": "G",
+   "path": "M330 524V579H598",
+   "label": "Insufficient tissue",
+   "label_at": [
+    464,
+    572
+   ]
+  },
+  {
+   "from": "F",
+   "to": "H",
+   "path": "M330 524V671H598",
+   "label": "Atrophy",
+   "label_at": [
+    464,
+    664
+   ]
+  },
+  {
+   "from": "F",
+   "to": "I",
+   "path": "M330 524V771H598",
+   "label": "Hyperplasia WITHOUT atypia",
+   "label_at": [
+    464,
+    764
+   ]
+  },
+  {
+   "from": "F",
+   "to": "J",
+   "path": "M330 524V871H598",
+   "label": "ATYPICAL hyperplasia or carcinoma",
+   "label_at": [
+    464,
+    864
+   ]
+  }
+ ]
+}

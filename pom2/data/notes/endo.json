@@ -284,8 +284,11 @@
        "html": "<ul><li><strong>Investigations</strong><ul><li><strong>random plasma glucose ≥ 11.1</strong> · <strong><span class=\"wl\">urine dipstick</span> for glucose and ketones</strong> (glycosuria + ketonuria)</li><li><strong><span class=\"wl\">serum C-peptide</span></strong> (is she making any insulin?)</li><li><strong><span class=\"wl\">arterial blood gas</span> if <span class=\"wl\">diabetic ketoacidosis</span> (DKA) is suspected</strong></li><li>⚠ <strong>fasting plasma glucose (FPG) and glycated hemoglobin (A1c) are usually unnecessary here</strong> — the diagnosis is already clear</li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Child with polyuria, polydipsia, weight loss\"] --> B[\"Random plasma glucose<br/>+ urine dipstick for glucose/ketones\"]\n B --> C{\"Glucose ≥ 11.1 mmol/L?\"}\n C -->|No| D[\"Consider other causes<br/>Repeat testing if suspicion persists\"]\n C -->|Yes| E{\"Symptoms present?\"}\n E -->|\"YES — usual case\"| F[\"DIAGNOSIS MADE<br/>1 abnormal measurement is enough\"]\n E -->|No| G[\"Requires 2 abnormal measurements\"]\n F --> H{\"Vomiting, abdominal pain,<br/>hyperventilation, drowsiness?\"}\n G --> H\n H -->|Yes| I[\"Suspect diabetic ketoacidosis (DKA)<br/>arterial blood gas + serum/urine ketones<br/>→ emergent treatment\"]\n H -->|No| J[\"Medically stable:<br/>multidisciplinary education + insulin\"]"
+       "t": "figure",
+       "src": "assets/figures/df6cb3091aba.svg",
+       "alt": "diagnosis and management of type 1 diabetes pathway.svg",
+       "w": 920,
+       "h": 750
       },
       {
        "t": "note",
@@ -638,8 +641,11 @@
        "html": "<h5>2. Structural or functional? The sorting question</h5>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Suspected endocrine problem\"] --> B{\"Structural or functional?\"}\n B -->|\"STRUCTURAL — a mass\"| C{\"Benign or malignant?\"}\n C --> D{\"Does the enlargement itself<br/>cause clinical effects?\"}\n D --> E[\"Mass effect:<br/>pituitary → optic chiasm, cranial nerves III/IV/VI, trigeminal V1/V2<br/>thyroid → dysphagia\"]\n B -->|\"FUNCTIONAL — hormone\"| F{\"Too much or too little?\"}\n F -->|\"EXCESS\"| G[\"Try to SUPPRESS it<br/>→ suppression test\"]\n F -->|\"DEFICIENCY\"| H[\"Try to STIMULATE it<br/>→ stimulation test\"]\n G --> I{\"Primary, secondary/tertiary,<br/>or exogenous source?\"}\n H --> I"
+       "t": "figure",
+       "src": "assets/figures/7c745e582e93.svg",
+       "alt": "clinically useful endocrine principles pathway.svg",
+       "w": 920,
+       "h": 504
       },
       {
        "t": "figure",
@@ -894,8 +900,11 @@
        "html": "<ul><li>⚠ <em>These tests are often unnecessary — usually <strong>time and the response to medications</strong> reveal the type.</em></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Abnormal glucose measurement\"] --> B{\"Symptoms present?<br/>polydipsia, polyuria, weight loss\"}\n B -->|Yes| C[\"1 abnormal measurement is sufficient\"]\n B -->|No| D[\"2 abnormal measurements required\"]\n C --> E{\"Patient acutely ill?<br/>recent myocardial infarction, sepsis, steroids\"}\n D --> E\n E -->|Yes| F[\"Suspect diabetes, but<br/>CONFIRM once recovered\"]\n E -->|No| G{\"Which type?\"}\n G --> H[\"Activity/weight history<br/>C-peptide + anti-glutamic acid decarboxylase (anti-GAD)\"]\n H --> I[\"↑ C-peptide, ↓ anti-GAD → T2DM\"]\n H --> J[\"↓ C-peptide, ↑ anti-GAD → T1DM\"]"
+       "t": "figure",
+       "src": "assets/figures/bf13439ed944.svg",
+       "alt": "type 2 diabetes mellitus diagnosis epidemiology pathway.svg",
+       "w": 920,
+       "h": 714
       },
       {
        "t": "note",
@@ -1626,8 +1635,11 @@
        "html": "<h5>4. Setting the target</h5>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Setting a glycated hemoglobin (A1c) target\"] --> B{\"Risk of hypoglycemia?\"}\n B -->|\"LOW risk, wants cardiovascular/renal/eye benefit\"| C[\"A1c ≤ 6.5%<br/>selected type 2 diabetes (T2DM)\"]\n B -->|\"Standard\"| D[\"A1c ≤ 7.0%<br/>most type 1 diabetes (T1DM) and T2DM\"]\n B -->|\"HIGH risk or limited benefit\"| E[\"A1c 7.1–8.5%<br/>frail / dementia / limited life expectancy\"]\n E --> F[\"Drivers: recurrent severe hypoglycemia or unawareness,<br/>dementia, seizure disorder, frailty, falls,<br/>functional dependence, life expectancy under ~2 years\"]\n C --> G[\"Drivers: young, long life expectancy,<br/>short duration, no structural complications yet,<br/>not on a drug that causes hypoglycemia\"]"
+       "t": "figure",
+       "src": "assets/figures/41cc8415c692.svg",
+       "alt": "glycemic goals of care in adults with diabetes pathway.svg",
+       "w": 920,
+       "h": 496
       },
       {
        "t": "table",
@@ -1813,8 +1825,11 @@
        "html": "<ul><li><strong>Bias and stigma</strong><ul><li><strong>56% have attempted weight loss between 2 and 20 times</strong> — assume effort, not inaction</li><li><strong>95% of patients with severe obesity want to lose weight</strong></li><li>chairs, exam tables, bathrooms and scales must accommodate the patient</li><li><strong>place the scale in a private area, and do not announce weight unless they ask to hear it</strong></li></ul></li><li><strong>ASK</strong> — <strong>ask permission to discuss weight</strong><ul><li>be non-judgemental · explore <span class=\"wl\">readiness for change</span> · use <span class=\"wl\">motivational interviewing</span></li></ul></li><li><strong>ASSESS</strong> — stage the disease and find root causes<ul><li><strong><span class=\"wl\">EOSS</span></strong> stage · BMI + WC if BMI ≥ 25 · the <strong>4 M's</strong></li><li>History: weight history · contributors · <mark class=\"lo\"><strong>rule out <span class=\"wl\">hypothyroidism</span>, <span class=\"wl\">Cushing syndrome</span>, medications, genetic disorders</strong></mark> · cultural and family factors · diet and exercise history</li><li>Physical exam: BMI · WC · <span class=\"wl\">blood pressure</span> · <strong><span class=\"wl\">acanthosis</span>, <span class=\"wl\">hirsutism</span>, Cushingoid features</strong></li><li>Labs: <strong><span class=\"wl\">glycated hemoglobin (HbA1c)</span> · <span class=\"wl\">lipid panel</span> · <span class=\"wl\">serum thyroid-stimulating hormone</span> · <span class=\"wl\">alanine aminotransferase</span></strong></li></ul></li><li><strong>ADVISE</strong> — risks, benefits, options<ul><li><mark class=\"lo\"><strong>The goal is health and wellness, not a number.</strong></mark></li><li>first goal may simply be <strong>stabilising weight</strong> · behavioural change yields <strong>3–5%</strong></li></ul></li><li><strong>AGREE</strong> — realistic expectations and SMART goals (specific, measurable, achievable, relevant, time-bound)<ul><li><mark class=\"lo\"><strong>0.5–1.0 kg (1–2 lb) per week</strong>; <strong>5–10% total loss over 6–12 months</strong></mark></li></ul></li><li><strong>ASSIST</strong> — barriers, resources, follow-up<ul><li>referrals (e.g. cardiology before an exercise plan) · contingency plans for travel · <strong>financial reality — dieticians are often out of pocket</strong></li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"BMI ≥ 30 — or ≥ 25 in South/East Asian patients\"] --> B[\"Add waist circumference<br/>BMI alone is insufficient\"]\n B --> C[\"ASK permission to discuss weight\"]\n C --> D[\"ASSESS: Edmonton Obesity Staging System (EOSS) stage + the 4 M's<br/>rule out secondary causes\"]\n D --> E[\"ADVISE: health and wellness, not a number\"]\n E --> F[\"AGREE: SMART goals (specific, measurable, achievable, relevant, time-bound)<br/>0.5–1.0 kg/week, 5–10% over 6–12 months\"]\n F --> G[\"ASSIST: barriers, referrals, follow-up\"]\n D --> H{\"Eligible for escalation?\"}\n H -->|\"BMI ≥ 30, or ≥ 27 with complications\"| I[\"Pharmacotherapy\"]\n H -->|\"BMI ≥ 40, or ≥ 35 with complications,<br/>or ≥ 30 with poorly controlled type 2 diabetes (T2DM)\"| J[\"Bariatric surgery\"]"
+       "t": "figure",
+       "src": "assets/figures/182c589e79ae.svg",
+       "alt": "introduction to obesity pathway.svg",
+       "w": 920,
+       "h": 664
       },
       {
        "t": "note",
@@ -2111,8 +2126,11 @@
        "html": "<ul><li><strong>Cause</strong>: <strong>↑ insulin resistance from weight gain and placental hormones</strong>; the <span class=\"wl\">pancreas</span> can only make so much <span class=\"wl\">insulin</span> → <span class=\"wl\">hyperglycemia</span><ul><li><strong>transient — usually resolves after delivery</strong> · worldwide prevalence <strong>~17%</strong></li></ul></li><li><strong>Diagnosis</strong>: <mark class=\"lo\"><strong>diagnosed 24–28 weeks</strong></mark> — <strong>after</strong> organogenesis</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Screen at 24–28 weeks gestation<br/>1-hour 50g oral glucose tolerance test (OGTT), non-fasting\"] --> B{\"1-hour glucose?\"}\n B -->|\"< 7.8 mmol/L — NORMAL\"| C[\"No further testing\"]\n B -->|\"≥ 11.1 mmol/L\"| D[\"GDM DIAGNOSED\"]\n B -->|\"7.8 – 11.0 mmol/L\"| E[\"Fasting 75g OGTT\"]\n E --> F{\"Any ONE value at or above<br/>fasting 5.3 · 1-hour 10.6 · 2-hour 9.0 mmol/L?\"}\n F -->|\"Yes — one is enough\"| D\n F -->|\"No — all three below\"| C\n D --> G[\"Lifestyle first, then insulin if needed\"]\n G --> H[\"Stop treatment after delivery\"]\n H --> I[\"Re-screen with 75g OGTT<br/>at 6 weeks – 6 months postpartum\"]\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class A,D,F lo"
+       "t": "figure",
+       "src": "assets/figures/8b7876dcf1a5.svg",
+       "alt": "pregnancy and diabetes pathway.svg",
+       "w": 920,
+       "h": 752
       },
       {
        "t": "list",
@@ -2278,8 +2296,11 @@
        "cap": "Where each antihyperglycemic class acts: beta cell secretagogues, sensitizers at muscle, fat and liver, alpha-glucosidase inhibitors in the gut, and incretin agents on gastric emptying and glucagon"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Type 2 diabetes inadequately controlled on metformin\"] --> B{\"Established atherosclerotic cardiovascular disease,<br/>heart failure, or chronic kidney disease (CKD)?\"}\n B -->|Yes| C[\"Sodium-glucose cotransporter 2 (SGLT2) inhibitor<br/>or glucagon-like peptide 1 receptor agonist (GLP-1 RA)<br/>cardiorenal benefit\"]\n B -->|No| D{\"Hypoglycemia a major concern?<br/>lives alone, drives, eats irregularly\"}\n D -->|Yes| E[\"AVOID sulfonylureas and meglitinides<br/>→ dipeptidyl peptidase-4 (DPP-4) inhibitor,<br/>GLP-1 RA, SGLT2 inhibitor (SGLT2i)\"]\n D -->|No| F{\"Weight a priority?\"}\n F -->|\"Needs to lose\"| G[\"GLP-1 RA or SGLT2 inhibitor\"]\n F -->|\"Cachectic / underweight\"| H[\"Avoid weight-losing agents\"]\n E --> I{\"Cost / oral only / adherence?\"}\n G --> I\n I --> J[\"Weigh dosing frequency,<br/>injection vs oral, price\"]"
+       "t": "figure",
+       "src": "assets/figures/4f73de1fdc43.svg",
+       "alt": "antihyperglycemic drug choices for t2dm cbl pathway.svg",
+       "w": 920,
+       "h": 724
       },
       {
        "t": "note",
@@ -2577,8 +2598,11 @@
        "html": "<ul><li><strong>99% of body calcium sits in bone as calcium phosphate</strong>; of the 1% in blood <strong>50% is free/ionized</strong> — the only fraction the CaSR reads and the only fraction that acts</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Serum ionized Ca2+ FALLS\"] --> B[\"CaSR on the parathyroid chief cell goes quiet\"]\n B --> C[\"PTH released<br/>84 amino acid peptide, full activity in the 1-34 fragment\"]\n C --> D[\"BONE - DIRECT<br/>up osteoclast resorption<br/>down osteoblast formation\"]\n C --> E[\"KIDNEY distal convoluted tubule - DIRECT<br/>up ACTIVE Ca2+ reabsorption\"]\n C --> F[\"KIDNEY - 1-alpha-hydroxylase<br/>the PTH-regulated rate-limiting step\"]\n F --> G[\"Calcitriol\"]\n G --> H[\"GASTROINTESTINAL TRACT - INDIRECT ONLY<br/>up Ca2+ absorption from food<br/>NO PTH receptor here\"]\n D --> I[\"Serum Ca2+ restored, CaSR reactivates, PTH shuts off\"]\n E --> I\n H --> I"
+       "t": "figure",
+       "src": "assets/figures/8d96e596aec3.svg",
+       "alt": "thyroid and parathyroid gland physiology pathway.svg",
+       "w": 920,
+       "h": 704
       },
       {
        "t": "table",
@@ -2973,8 +2997,11 @@
        "html": "<ul><li><mark class=\"lo\"><strong><span class=\"wl\">Serum thyroid stimulating hormone (TSH)</span> to case-find, free hormone only to confirm and grade.</strong></mark><ul><li>TSH works because <strong>primary disease, at the gland, is by far the most common kind</strong>, and there TSH moves <em>opposite</em> to the hormone</li><li>⚠ <strong>that logic inverts in central disease</strong>, where pituitary TSH is the broken part and moves <em>with</em> the hormone</li><li><strong>some labs add free thyroxine (FT4) (and free triiodothyronine, FT3) reflexively when TSH comes back abnormal</strong>, so the confirmatory step may already be done for you</li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Thyroid dysfunction suspected<br/>history, physical, associated condition, high risk\"] --> B[\"TSH\"]\n B --> C{\"TSH result?\"}\n C -->|\"NORMAL\"| D[\"STOP*<br/>*unless central disease is suspected\"]\n C -->|\"HIGH\"| E[\"Query HYPO - order free thyroxine (FT4)\"]\n C -->|\"LOW\"| F[\"Query HYPER - order FT4 + free triiodothyronine (FT3)\"]\n E --> G{\"FT4?\"}\n G -->|\"LOW\"| H[\"PRIMARY HYPOTHYROIDISM\"]\n G -->|\"Normal\"| I[\"SUBCLINICAL HYPOTHYROIDISM\"]\n F --> J{\"FT4 / FT3?\"}\n J -->|\"HIGH\"| K[\"THYROTOXICOSIS\"]\n J -->|\"Normal\"| L[\"SUBCLINICAL HYPERTHYROIDISM\"]\n K --> M[\"Etiology - clinical, with or without TSH receptor antibody (TRAb), vs RAI uptake and scan\"]\n M -->|\"HIGH uptake\"| N[\"INCREASED SYNTHESIS<br/>Graves, human chorionic gonadotropin-related, toxic multinodular goiter (TMNG), toxic adenoma\"]\n M -->|\"LOW uptake\"| O[\"LEAKAGE or EXOGENOUS<br/>thyroiditis, overtreatment, factitious\"]\n D --> P[\"If pituitary deficiencies or a known pituitary mass:<br/>order TSH AND FT4 together\"]\n P --> Q[\"CENTRAL HYPO - TSH normal or LOW with FT4/FT3 LOW\"]\n P --> R[\"CENTRAL HYPER - TSH normal or HIGH with FT4/FT3 HIGH\"]"
+       "t": "figure",
+       "src": "assets/figures/e993c6ad4e31.svg",
+       "alt": "clinical presentation and evaluation of hypothyroidism and thyrotoxicosis pathway.svg",
+       "w": 1100,
+       "h": 926
       },
       {
        "t": "figure",
@@ -3314,8 +3341,11 @@
        "html": "<ul><li><strong>Investigations</strong><ul><li><strong>1. Corrected calcium</strong>, then <strong>PTH - always, and it is what decides the whole workup</strong></li><li><strong>2. 24-hour urine calcium + creatinine → fractional excretion of calcium (FE_Ca)</strong> if PTH is not suppressed</li><li><strong>3.</strong> dual-energy X-ray absorptiometry (bone density scan) · renal ultrasound · vitamin D</li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Corrected calcium is HIGH\"] --> B[\"Serum PTH - ALWAYS\"]\n B --> C{\"PTH high or inappropriately normal?\"}\n C -->|\"YES - PTH-mediated\"| D[\"24-hour urine Ca + creatinine<br/>fractional excretion of calcium (FECa)\"]\n D -->|\"FECa over 0.02\"| E[\"PRIMARY hyperparathyroidism<br/>80% a single adenoma\"]\n D -->|\"FECa under 0.01\"| F[\"familial hypocalciuric hypercalcemia (FHH) - inactivating calcium-sensing receptor mutation\"]\n D -->|\"FECa 0.01 to 0.02\"| G[\"OVERLAP ZONE<br/>20% of FHH sits here<br/>recheck off thiazides, normal Mg, 25-hydroxyvitamin D (25-OH-D) over 50\"]\n C -->|\"YES, with known chronic kidney disease (CKD)\"| H[\"TERTIARY hyperparathyroidism<br/>secretes DESPITE hypercalcemia\"]\n C -->|\"NO - PTH suppressed\"| I[\"PTH-INDEPENDENT\"]\n I --> J[\"MAJOR - malignancy<br/>MINOR - vitamin D, immobilization,<br/>thiazides, milk-alkali, endocrine\"]"
+       "t": "figure",
+       "src": "assets/figures/eca3213a9987.svg",
+       "alt": "clinical presentation and evaluation of hyperparathyroidism and hypoparathyroidism pathway.svg",
+       "w": 1120,
+       "h": 578
       },
       {
        "t": "list",
@@ -3583,8 +3613,11 @@
        "html": "<ul><li><strong>TSH first, because a low TSH sends you to a radioactive iodine (RAI) scan before any ultrasound</strong><ul><li><mark class=\"lo\"><strong>a HOT nodule is never cancer and stops there, while a COLD nodule comes back to the ultrasound</strong></mark> and is scored like any other nodule</li><li>normal or high TSH → <strong>ultrasound + Thyroid Imaging Reporting and Data System (TI-RADS)</strong> score, which sets the size at which to biopsy</li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"Thyroid nodule\"] --> B[\"Serum TSH — the FIRST test<br/>microbiology and hematology have NO role\"]\n B -->|\"LOW\"| C[\"Radioactive iodine scan\"]\n C -->|\"HOT — never cancer\"| D[\"Treat the hyperthyroidism\"]\n C -->|\"COLD\"| E[\"Ultrasound + Thyroid Imaging Reporting and Data System (TI-RADS) score\"]\n B -->|\"NORMAL or HIGH\"| E\n E -->|\"TI-RADS level 1 (TR1) benign · TR2 not suspicious\"| F[\"No follow-up needed\"]\n E -->|\"under the size cut-off\"| G[\"Follow with ultrasound\"]\n E -->|\"TR3 ≥ 2.5 cm · TR4 ≥ 1.5 cm · TR5 ≥ 1.0 cm\"| H[\"FNAB — cytology reported by Bethesda category\"]\n H -->|\"II benign\"| I[\"Clinical follow-up<br/>⚠ benign cytology but TR5 = repeat the biopsy\"]\n H -->|\"I non-diagnostic · III–IV indeterminate\"| J[\"Repeat biopsy with or without molecular testing<br/>fine needle aspiration (FNA) cannot separate follicular adenoma from carcinoma\"]\n H -->|\"V–VI malignant\"| K[\"Surgery\"]\n J -->|\"still indeterminate\"| K"
+       "t": "figure",
+       "src": "assets/figures/7583dc29f74d.svg",
+       "alt": "pathology of thyroid masses pathway.svg",
+       "w": 960,
+       "h": 794
       },
       {
        "t": "figure",
@@ -4434,8 +4467,11 @@
        "html": "<ul><li>The first four weeks at a glance:</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"WEEK 1 - Fertilization in the ampulla<br/>acrosomal enzymes cross corona radiata and zona pellucida<br/>ZONAL REACTION blocks polyspermy\"] --> B[\"Zygote, 44 + XX or XY\"]\n B --> C[\"Cleavage - division with NO growth<br/>blastomeres get smaller<br/>MORULA, same size as the zygote\"]\n C --> D[\"Blastulation, day 4<br/>EMBRYOBLAST inner mass to embryo proper<br/>TROPHOBLAST outer mass to placenta<br/>reaches the uterus\"]\n D --> E[\"Implantation, day 5<br/>blastocyst hatches from the zona pellucida<br/>THE ZONA MUST DEGENERATE FIRST\"]\n E --> F[\"WEEK 2 - the twos<br/>embryoblast splits into hypoblast and epiblast, the BILAMINAR DISC<br/>trophoblast splits into cyto- and syncytiotrophoblast\"]\n F --> G[\"WEEK 3 - primitive streak, then GASTRULATION<br/>bilaminar disc becomes TRILAMINAR<br/>notochord induces the neural tube\"]\n G --> H[\"WEEK 4 - neural tube closes, embryo folds<br/>cranial neuropore day 24, caudal day 26<br/>HEART is the first organ to function\"]"
+       "t": "figure",
+       "src": "assets/figures/5874424c9739.svg",
+       "alt": "embryology histology pathway.svg",
+       "w": 920,
+       "h": 876
       },
       {
        "t": "list",
@@ -4806,8 +4842,11 @@
        "html": "<h5>3. The two phases side by side</h5>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n A[\"FOLLICULAR PHASE<br/>day 1 of the period to ovulation\"] --> B[\"FSH drives antral follicle growth\"]\n B --> C[\"Two-cell mechanism<br/>LH on THECA makes androgen<br/>FSH on GRANULOSA aromatizes it to estradiol\"]\n C --> D[\"Estradiol RISES\"]\n D --> E{\"Estradiol (E2) above 300-500 pg/mL<br/>for about 48 hours?\"}\n E -->|\"NO - below threshold\"| F[\"NEGATIVE feedback<br/>FSH falls as E2 climbs\"]\n F --> D\n E -->|\"YES\"| G[\"FEED-FORWARD SWITCH<br/>more E2 now means MORE gonadotropin-releasing hormone (GnRH)\"]\n G --> H[\"Mid-cycle LH and FSH SURGE\"]\n H --> I[\"OVULATION\"]\n I --> J[\"LUTEAL PHASE<br/>follicular remnants form the corpus luteum\"]\n J --> K[\"Progesterone rises fast, then estradiol rises too\"]\n K --> L{\"Fertilized embryo present?\"}\n L -->|\"NO\"| M[\"Corpus luteum regresses after 2 WEEKS<br/>steroids fall, menstruation, cycle resets\"]\n L -->|\"YES\"| N[\"human chorionic gonadotropin rescues the corpus luteum\"]"
+       "t": "figure",
+       "src": "assets/figures/4e8b654ae479.svg",
+       "alt": "approach to the menstrual cycle pathway.svg",
+       "w": 920,
+       "h": 1132
       },
       {
        "t": "figure",
@@ -5336,8 +5375,11 @@
        "html": "<ul><li><strong>One screening test per product</strong>: aldosterone/renin ratio (aldosterone) · 1 mg overnight dexamethasone, 24-h urine free cortisol, late-night salivary (cortisol) · fractionated plasma free metanephrines, 99% sensitive (catecholamines) · AM cortisol 6-9am with a paired ACTH (insufficiency)</li><li><strong>Adrenal incidentaloma</strong> — <mark class=\"lo\">screen all three: <strong>cortisol</strong> (1 mg overnight dexamethasone, 24-h urine) · <strong>aldosterone</strong> (BP and K⁺, then aldosterone and renin upon indication) · <strong>catecholamines</strong> (urine or plasma metanephrines)</mark><ul><li>prevalence rises with age — 2-3% over 50, <strong>7% over 70</strong>, uncommon under 30</li><li><strong>the only absolute criterion for malignancy is distant metastasis</strong></li><li><mark class=\"lo\"><strong>Never biopsy until pheochromocytoma is excluded</strong></mark> — 14 of 20 biopsied patients had a complication (70% complication rate)</li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Adrenal disease suspected\"] --> B{\"Too much, or too little?\"}\n    B -->|\"TOO MUCH\"| C{\"Which zone?\"}\n    C -->|\"Glomerulosa - aldosterone\"| D[\"Resistant hypertension with or without low K+<br/>SCREEN: aldosterone / renin ratio\"]\n    C -->|\"Fasciculata - cortisol\"| E[\"Bruising, fracture, proximal weakness<br/>SCREEN: 1mg overnight dexamethasone,<br/>24h urine cortisol, late-night salivary\"]\n    C -->|\"Medulla - catecholamines\"| F[\"Spells: headache, palpitations, sweating<br/>SCREEN: fractionated plasma free metanephrines\"]\n    D --> G[\"CONFIRM non-suppressibility<br/>saline infusion / fludrocortisone / high salt\"]\n    G --> H[\"LOCALISE: CT with or without adrenal vein sampling<br/>unilateral - adrenalectomy\"]\n    E --> I[\"TWO positive screens required\"]\n    I --> J{\"Adrenocorticotropic hormone (ACTH)?\"}\n    J -->|\"HIGH - dependent\"| K[\"Pituitary, ectopic ACTH or<br/>corticotropin-releasing hormone\"]\n    J -->|\"LOW - independent\"| L[\"Adrenal adenoma, hyperplasia, carcinoma\"]\n    F --> M[\"Do NOT biopsy until pheochromocytoma excluded<br/>ALPHA block first, THEN beta\"]\n    B -->|\"TOO LITTLE\"| N[\"Morning (AM) cortisol 6-9am + paired ACTH\"]\n    N --> O{\"Cortisol?\"}\n    O -->|\"greater than 450\"| P[\"Ruled out\"]\n    O -->|\"less than 80\"| Q{\"ACTH?\"}\n    O -->|\"80-450\"| R[\"ACTH stimulation test\"]\n    Q -->|\"HIGH\"| S[\"PRIMARY - Addison<br/>K+ high, aldosterone low<br/>needs fludrocortisone\"]\n    Q -->|\"LOW or normal\"| T[\"SECONDARY - central<br/>K+ normal<br/>often no fludrocortisone\"]\n    A --> U[\"Incidentaloma found?\"]\n    U --> V[\"Screen ALL THREE: cortisol, aldosterone, catecholamines\"]\n    W[\"CRISIS: shock, hypotension resistant to fluids\"] --> X[\"TREAT NOW - fluids + hydrocortisone 100mg intravenous (IV)<br/>do NOT wait for results\"]"
+       "t": "figure",
+       "src": "assets/figures/a5628a58ec1c.svg",
+       "alt": "clinical presentation and evaluation of adrenal gland disease pathway.svg",
+       "w": 1120,
+       "h": 1170
       }
      ]
     },
@@ -5359,8 +5401,11 @@
        "html": "<ul><li><strong>History</strong> — ask each axis in turn<ul><li>adrenal: fatigue, weight loss, <strong>hypoglycaemia</strong>, hypotension · thyroid: <strong>cold intolerance</strong>, constipation · gonadal: <strong>loss of libido, decreased shaving, amenorrhoea</strong></li><li>posterior: <strong>diabetes insipidus (now called arginine vasopressin (AVP) deficiency)</strong> · (prolactin deficiency)</li><li>mass effect: <strong>headache, blurred vision, diplopia</strong></li><li>screen for <strong>galactorrhoea</strong> and for acral change (rings, shoes, gloves)</li></ul></li><li><strong>Physical exam</strong> — <strong>formal visual fields — bitemporal hemianopia</strong> · lean body habitus, loss of muscle mass, dry skin, <strong>minimal androgenic hair</strong> · acromegalic features: frontal bossing, large jaw, <strong>gapped teeth</strong>, macroglossia, positive Tinel's</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Pituitary mass or symptoms\"] --> B[\"Ask BOTH questions\"]\n    B --> C[\"1. MASS EFFECT\"]\n    B --> D[\"2. HORMONE - too much or too little\"]\n    C --> E[\"Visual fields - BITEMPORAL hemianopia<br/>diplopia, headache, apoplexy\"]\n    D --> F{\"Overproduction?\"}\n    F -->|\"Prolactin\"| G[\"PROLACTINOMA<br/>DOPAMINE AGONIST FIRST - not surgery\"]\n    F -->|\"Growth hormone (GH)\"| H[\"Insulin-like growth factor 1 (IGF-1) screens<br/>Oral glucose tolerance test (OGTT) confirms:<br/>GH fails to suppress under 1<br/>then MRI, then transsphenoidal surgery\"]\n    F -->|\"Adrenocorticotropic hormone (ACTH)\"| I[\"Cushing disease<br/>dexamethasone / urine / salivary cortisol\"]\n    D --> J[\"Insufficiency - test each axis\"]\n    J --> K[\"1. Adrenal: morning (AM) cortisol<br/>under 80-100 in, over 450 out\"]\n    J --> L[\"2. Thyroid: FREE thyroxine (T4) -<br/>NOT thyroid-stimulating hormone (TSH)\"]\n    J --> M[\"3. Gonadal: luteinizing hormone (LH),<br/>follicle-stimulating hormone (FSH),<br/>testosterone or estradiol\"]\n    J --> N[\"4. GH: IGF-1\"]\n    L --> O[\"TSH normal WITH low free T4<br/>= inappropriately normal = central\"]\n    K --> P{\"Equivocal?\"}\n    P -->|\"yes\"| Q[\"Stimulation test<br/>cortisol and GH only - insulin tolerance test\"]\n    K --> R[\"TREAT ADRENAL BEFORE THYROID<br/>thyroxine first can precipitate crisis\"]"
+       "t": "figure",
+       "src": "assets/figures/176f6c3b95c7.svg",
+       "alt": "clinical presentation and evaluation of pituitary gland disease pathway.svg",
+       "w": 1120,
+       "h": 1020
       },
       {
        "t": "note",
@@ -5460,8 +5505,11 @@
        "html": "<ul><li>Before puberty <mark class=\"lo\"><strong>GABA inhibition dominates glutamate</strong></mark> (gamma-aminobutyric acid), so gonadotropin-releasing hormone output is low</li><li><mark class=\"lo\"><strong>Kisspeptin acting on GPR54 is the primary trigger</strong></mark><ul><li>regulated by <strong>KNDy neurons</strong> (kisspeptin, neurokinin B, dynorphin)</li><li><strong>leptin permissive</strong> · <strong>MKRN3 inhibitory</strong></li><li>proof: <mark class=\"lo\"><strong>inactivating GPR54 mutations cause failure to progress through puberty and hypogonadotropic hypogonadism</strong></mark>, confirmed in knockout mice whose only major phenotype was reproductive</li></ul></li><li><strong>The earliest measurable change</strong>: a <strong>nocturnal rise in LH</strong> — flat across 24 hours before puberty, raised awake as well only in late puberty</li><li><strong>Investigations</strong><ul><li><strong>LH and FSH</strong> — timing of the draw matters, because the first rise is at night</li><li><strong>estradiol</strong> · <strong>bone age, X-ray of the left wrist</strong></li><li>thyroid-stimulating hormone and prolactin before calling anything idiopathic</li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Fetal / neonatal: luteinizing hormone (LH)<br/>and follicle-stimulating hormone (FSH) SURGE\"] --> B[\"~6 months: axis SUPPRESSED<br/>gamma-aminobutyric acid (GABA)<br/>inhibition dominates glutamate\"]\n    B --> C[\"Kisspeptin / GPR54 signalling rises<br/>KNDy neurons; leptin permissive; MKRN3 falls\"]\n    C --> D[\"GABA brake lifts - glutamate now wins\"]\n    D --> E[\"PULSATILE gonadotropin-releasing<br/>hormone restarts\"]\n    E --> F[\"Earliest sign: NOCTURNAL LH rise\"]\n    F --> G[\"Late puberty: raised LH asleep AND awake\"]\n    E --> H[\"LH and FSH from anterior pituitary\"]\n    H --> I[\"Gonadarche - ovary makes estradiol\"]\n    I --> J[\"Thelarche\"]\n    J --> K[\"Growth spurt\"]\n    K --> L[\"Menarche - mean 12.7y\"]\n    L --> M[\"Axis immature over 2 more years<br/>irregular anovulatory cycles are NORMAL\"]\n    N[\"Adrenarche - adrenal androgens<br/>SEPARATE AXIS\"] --> O[\"Pubarche, axillary hair, body odour, acne\"]"
+       "t": "figure",
+       "src": "assets/figures/43fbb845efff.svg",
+       "alt": "physiologic changes that lead to puberty pathway.svg",
+       "w": 920,
+       "h": 972
       },
       {
        "t": "figure",
@@ -5607,8 +5655,11 @@
        "html": "<ul><li><strong>History</strong>: <strong>age at onset of each sign and the ORDER</strong> · growth spurt timing · <strong>central nervous system (CNS) symptoms — headache, visual change, seizure</strong> · head injury, cranial radiation, chemotherapy · <strong>medications and any hormone exposure</strong> · anosmia · <strong>family history: parental heights and parental pubertal timing</strong></li><li><strong>Physical exam</strong><ul><li>plot <strong>height, weight and growth velocity</strong> · <strong>Tanner stage breast/genital AND pubic hair separately</strong></li><li><mark class=\"lo\"><strong>testicular volume by Prader orchidometer — bilaterally ≥4 mL means CENTRAL, virilisation with testes <3 mL means PERIPHERAL</strong></mark> · asymmetric testis suggests a Leydig tumour</li><li>dysmorphism, <strong>café-au-lait with irregular \"Coast of Maine\" borders</strong>, neck webbing, cubitus valgus, short 4th metacarpals</li></ul></li><li><strong>Investigations</strong>: <strong>random LH</strong> · follicle-stimulating hormone (FSH) · <strong>estradiol or testosterone</strong> · <strong>bone age</strong> · thyroid-stimulating hormone — then as directed below</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Abnormal pubertal timing\"] --> B{\"Early or late?\"}\n    B -->|\"EARLY - girls under 8, boys under 9\"| C{\"Normal variant?\"}\n    C -->|\"breast only, no growth spurt,<br/>no bone age advance\"| D[\"Premature THELARCHE - benign\"]\n    C -->|\"pubic hair only, age 6-8\"| E[\"Premature PUBARCHE - adrenal<br/>linked to insulin resistance and<br/>polyendocrine metabolic ovarian syndrome\"]\n    C -->|\"true precocity\"| F{\"Random LH?\"}\n    F -->|\"over 0.3, or gonadotropin-releasing hormone<br/>(GnRH) stimulation peak over 5\"| G[\"CENTRAL - central precocious puberty (CPP)<br/>LH HIGH, steroids HIGH\"]\n    F -->|\"low\"| H[\"PERIPHERAL - peripheral precocious puberty (PPP)<br/>LH LOW, steroids HIGH\"]\n    G --> I[\"Girls: mostly IDIOPATHIC<br/>Boys: under 50% idiopathic - IMAGE THE<br/>central nervous system (CNS)\"]\n    I --> J[\"Treat with luteinizing hormone-releasing hormone<br/>(LHRH) analogue<br/>continuous dosing down-regulates the receptor\"]\n    H --> K[\"Gonadal: cysts, granulosa or Leydig tumour,<br/>McCune-Albright, testotoxicosis\"]\n    H --> L[\"Adrenal: congenital adrenal hyperplasia,<br/>virilising tumour, Cushing\"]\n    H --> M[\"Iatrogenic: exogenous hormones\"]\n    G --> N[\"Boy: testes BILATERALLY ENLARGED over 4mL\"]\n    H --> O[\"Boy: virilised but testes SMALL under 3mL\"]\n    B -->|\"LATE - no signs by 13 girls, 14 boys\"| P{\"LH and follicle-stimulating hormone (FSH)?\"}\n    P -->|\"HIGH - hypergonadotropic\"| Q[\"PRIMARY hypogonadism<br/>Turner, Klinefelter, chemotherapy, radiation\"]\n    P -->|\"LOW - hypogonadotropic\"| R[\"SECONDARY - think brain<br/>Kallmann with anosmia, tumour, prolactin,<br/>eating disorder, chronic illness\"]\n    P -->|\"low but delayed bone age,<br/>family history, normal velocity\"| S[\"Constitutional delay of growth and puberty<br/>(CDGP) - normal variant<br/>commonest cause, especially boys\"]"
+       "t": "figure",
+       "src": "assets/figures/136bc11a8378.svg",
+       "alt": "disorders of puberty pathway.svg",
+       "w": 1120,
+       "h": 928
       },
       {
        "t": "figure",
@@ -5793,8 +5844,11 @@
        "html": "<ul><li><strong>History</strong>: <strong>did the WEIGHT fall before the height, or is the child short and relatively chubby?</strong> — that one question splits chronic illness from endocrine disease<ul><li>then: birth weight and length, <strong>neonatal hypoglycaemia or prolonged jaundice</strong>, diet, gastrointestinal symptoms, chronic illness, cranial radiation, head injury, <strong>parental heights and parental pubertal timing</strong></li></ul></li><li><strong>Investigations</strong><ul><li>compute <strong>mid-parental height</strong> and <strong>height-age</strong> · measure <strong>growth velocity over a full year</strong> · <strong>bone age, left wrist</strong></li><li><mark class=\"lo\"><strong>first rule out chronic illness and general causes</strong>: <strong>complete blood count, erythrocyte sedimentation rate (ESR), renal function</strong> (creatinine, urea, electrolytes, albumin, Ca, PO₄), <strong>tissue transglutaminase antibodies</strong> (celiac), <strong>thyroid-stimulating hormone</strong></mark>, ferritin</li><li>then consider: <strong>insulin-like growth factor 1 (IGF-1) / insulin-like growth factor binding protein 3</strong> · <strong>karyotype every short girl</strong> · provocative GH test if GH deficiency is suspected</li></ul></li><li><strong>Treatment</strong>: treat the cause — <strong>levothyroxine, withdraw glucocorticoid, gluten-free diet, nutrition</strong></li><li><strong>Follow-up</strong>: re-plot velocity at 6-12 months</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Short stature - height under 3rd percentile\"] --> B[\"Plot: mid-parental height,<br/>height-age, growth velocity, BONE AGE\"]\n    B --> C{\"Weight relative to height?\"}\n    C -->|\"WEIGHT fell FIRST\"| D[\"Chronic illness or undernutrition<br/>gradual drop off the curve\"]\n    C -->|\"SHORT and relatively CHUBBY\"| E[\"ENDOCRINE cause<br/>usually acute growth failure\"]\n    B --> F{\"Growth velocity?\"}\n    F -->|\"NORMAL\"| G{\"Bone age?\"}\n    G -->|\"matches chronological age\"| H[\"FAMILIAL short stature<br/>parental target is low, puberty on time\"]\n    G -->|\"DELAYED\"| I[\"CONSTITUTIONAL DELAY<br/>late puberty, positive family history\"]\n    F -->|\"ABNORMAL - under 4.5 cm/yr\"| J{\"Proportionate?\"}\n    J -->|\"NO\"| K[\"SKELETAL DYSPLASIA<br/>achondroplasia - FGFR3\"]\n    J -->|\"YES\"| L[\"Intrauterine, nutritional,<br/>systemic, genetic, or endocrine\"]\n    E --> M[\"Growth hormone (GH) deficiency - commonest endocrine<br/>Insulin-like growth factor 1 (IGF-1)<br/>plus TWO provocative tests<br/>random GH is worthless\"]\n    E --> N[\"Hypothyroidism, glucocorticoid excess,<br/>pseudohypoparathyroidism\"]\n    L --> O[\"Turner - karyotype every short girl<br/>short stature in 95-100%\"]"
+       "t": "figure",
+       "src": "assets/figures/ae52bf04a156.svg",
+       "alt": "disorders of growth pathway.svg",
+       "w": 1120,
+       "h": 734
       },
       {
        "t": "figure",
@@ -6041,8 +6095,11 @@
        "html": "<ul><li><mark class=\"lo\">Fundus and body <strong>ABOVE the pain line</strong> — sympathetic to <strong>T11/12-L2</strong></mark> (tubes and ovaries too) → pain referred to <strong>mid-trunk, back, flank</strong></li><li><mark class=\"lo\">Cervix and vagina <strong>BELOW the line</strong> — parasympathetic to <strong>S2-S4</strong></mark> → pain referred to <strong>gluteal region, thigh, leg</strong></li><li>Perineum: <mark class=\"lo\"><strong>pudendal nerve (S2-S4)</strong></mark>, felt in the perineum directly · dorsal nerve of the clitoris is the primary sensory nerve</li><li><strong>History</strong><ul><li><strong>WHERE is the pain referred?</strong> Flank, back and mid-trunk point <strong>above</strong> the line; buttock, thigh and leg point <strong>below</strong> it</li><li>then: cycle relationship, dyspareunia (superficial vs deep), bowel and bladder symptoms, obstetric and surgical history, <strong>trauma or straddle injury</strong></li></ul></li><li><strong>Anaesthesia, chosen by the pain line</strong><ul><li><strong>lumbar epidural or low spinal (L3/4)</strong> anaesthetises everything below the waist</li><li><strong>caudal (saddle) epidural</strong> reaches <strong>S2-S4 only</strong> and <strong>does not block the uterine fundus</strong>, so the mother still feels contractions and knows when to bear down</li><li><strong>pudendal block at the ischial spine</strong> covers the perineum and inferior quarter of the vagina but <strong>does not reach the cervix or superior vagina</strong></li><li>⚠ <strong>Contractions are hormonal, not neural</strong> — no block stops labour</li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Pelvic pain or a block to plan\"] --> B{\"Which side of the PELVIC PAIN LINE?\"}\n    B -->|\"ABOVE - fundus, body, tubes, ovaries\"| C[\"Travels with SYMPATHETICS<br/>to T11/12-L2 dorsal root ganglia\"]\n    B -->|\"BELOW - cervix and vagina\"| D[\"Travels with PARASYMPATHETICS<br/>to S2-S4 dorsal root ganglia\"]\n    C --> E[\"Referred to mid-trunk, BACK, FLANK\"]\n    D --> F[\"Referred to GLUTEAL region, thigh, leg\"]\n    E --> G{\"Which block?\"}\n    F --> G\n    G -->|\"L3/4 lumbar epidural\"| H[\"Everything below the waist\"]\n    G -->|\"Caudal saddle - sacral canal\"| I[\"S2-S4 only<br/>does NOT block the fundus<br/>she still feels contractions\"]\n    G -->|\"Pudendal at the ISCHIAL SPINE\"| J[\"Perineum + lower quarter of vagina<br/>does NOT block cervix or upper vagina\"]\n    K[\"Contractions are HORMONAL not neural\"] --> I\n    L[\"Spread of disease?\"] --> M{\"From where?\"}\n    M -->|\"Ovary, tube, FUNDUS\"| N[\"LUMBAR / para-aortic nodes\"]\n    M -->|\"Cervix, uterine body\"| O[\"INTERNAL and external ILIAC nodes\"]\n    M -->|\"Inferior vagina\"| P[\"SACRAL nodes\"]\n    M -->|\"Skin - labia\"| Q[\"SUPERFICIAL inguinal\"]\n    M -->|\"Clitoris, vestibular bulb\"| R[\"DEEP inguinal\"]"
+       "t": "figure",
+       "src": "assets/figures/ee3fff2e0f80.svg",
+       "alt": "anatomy of the female pelvis perineum sexual function pathway.svg",
+       "w": 1120,
+       "h": 982
       },
       {
        "t": "figure",
@@ -6096,8 +6153,11 @@
        "html": "<ul><li><strong>SRY gene present</strong> → testis-determining factor → testis · <strong>absent</strong> → ovary</li><li>No anti-Müllerian hormone → paramesonephric (Müllerian) ducts <strong>develop</strong> · no testosterone → mesonephric (Wolffian) ducts <strong>degenerate</strong></li><li><mark class=\"lo\">Wolffian and Müllerian are reciprocal — one survives in each sex.</mark></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Indifferent embryo - weeks 4-7<br/>BOTH duct systems present\"] --> B{\"SRY gene present?\"}\n    B -->|\"YES - testis-determining factor made\"| C[\"Testis - male pathway\"]\n    B -->|\"NO - the DEFAULT\"| D[\"Primitive sex cords degenerate\"]\n    D --> E[\"Cortical cords form - OVARY\"]\n    E --> F[\"Oogonia - primary oocytes<br/>ARRESTED IN PROPHASE I<br/>~400,000 at birth, none made after\"]\n    D --> G{\"Anti-Mullerian hormone?\"}\n    G -->|\"ABSENT\"| H[\"PARAMESONEPHRIC - Mullerian - DEVELOP\"]\n    G -->|\"present\"| I[\"they regress - male\"]\n    D --> J{\"Testosterone?\"}\n    J -->|\"ABSENT\"| K[\"MESONEPHRIC - Wolffian - DEGENERATE\"]\n    K --> L[\"Remnants in broad ligament:<br/>epoophoron, paroophoron, Gartner duct<br/>can become cystic\"]\n    H --> M[\"CRANIAL ends open to peritoneum<br/>= uterine tubes and fimbriae\"]\n    H --> N[\"CAUDAL ends FUSE<br/>= uterovaginal primordium<br/>= uterus, cervix, UPPER 1/3 vagina\"]\n    N --> O[\"Induces SINOVAGINAL BULBS from urogenital sinus\"]\n    O --> P[\"Fuse to vaginal plate, canalise<br/>= LOWER 2/3 vagina\"]\n    N --> Q{\"Which step failed?\"}\n    Q -->|\"fusion of inferior ducts\"| R[\"UTERUS DIDELPHYS\"]\n    Q -->|\"fusion of superior body\"| S[\"BICORNUATE\"]\n    Q -->|\"RESORPTION of septum after fusion\"| T[\"SEPTATE\"]\n    Q -->|\"one duct never developed\"| U[\"UNICORNUATE\"]\n    P -->|\"bulbs never formed\"| V[\"ABSENT VAGINA 1:5000<br/>uterus usually absent too\"]\n    P -->|\"plate never canalised\"| W[\"VAGINAL ATRESIA\"]"
+       "t": "figure",
+       "src": "assets/figures/f88c71322677.svg",
+       "alt": "development of the female reproductive system pathway.svg",
+       "w": 1120,
+       "h": 990
       },
       {
        "t": "note",
@@ -6279,8 +6339,11 @@
        "html": "<ul><li><strong>Diagnosis</strong> — <mark class=\"lo\"><strong>gender dysphoria is the DISTRESS</strong>, not the incongruence</mark><ul><li><mark class=\"lo\">marked and persistent incongruence, a desire to transition and be accepted as the experienced gender</mark></li><li><mark class=\"lo\"><strong>a strong dislike of one's sexual anatomy or of anticipated pubertal changes</strong></mark></li></ul></li><li><strong>Assessment</strong> — summarised as <mark class=\"lo\"><strong>insistence · persistence · consistence</strong></mark> (how long, how fixed, how consistent across settings)<ul><li><strong>History</strong>: <strong>\"Some young people feel they were born in the wrong body; have you ever felt like that?\"</strong> · how puberty affected their identity · <strong>source of distress</strong> · social transition and who knows · <strong>fertility intentions</strong></li><li>⚠ <mark class=\"lo\"><strong>family support, which is the single largest modifier of suicide risk (60% → 4%)</strong></mark></li><li><strong>Physical exam</strong>: <strong>Tanner stage</strong> (it decides whether blockers or hormones are even on the table) · height, weight, blood pressure · baseline for the effects being monitored</li></ul></li><li><strong>Epidemiology</strong> — <strong>1 in 300 Canadians aged 15+</strong>, two-thirds under 35 · <strong>1.2-4.1% of adolescents</strong> · prevalence is <strong>rising, not falling</strong><ul><li><mark class=\"lo\"><strong>Most PRE-pubertal children who identify as transgender do not persist; most ADOLESCENTS do</strong></mark> — which is why puberty is where the ladder begins</li></ul></li><li><strong>Mental health outcomes</strong><ul><li>suicidality is <strong>2-3× more frequent</strong> · <strong>47% of trans youth in Ontario had considered suicide, 19% attempted</strong></li><li>youth managed with hormones, surgery where indicated and a multidisciplinary team including mental health clinicians had <strong>outcomes similar to the general population</strong></li></ul></li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Young person with gender incongruence\"] --> B[\"Assess: INSISTENCE, PERSISTENCE, CONSISTENCE\"]\n    B --> C{\"Distress present?\"}\n    C -->|\"no\"| D[\"Incongruence alone is not a disorder\"]\n    C -->|\"yes\"| E[\"GENDER DYSPHORIA\"]\n    E --> F{\"Pubertal stage?\"}\n    F -->|\"PRE-pubertal\"| G[\"Most do NOT persist<br/>social support, no hormones\"]\n    F -->|\"puberty STARTED\"| H[\"Most DO persist\"]\n    H --> I[\"STAGE 1 - PUBERTY BLOCKERS<br/>FULLY REVERSIBLE - pauses puberty\"]\n    I --> J{\"World Professional Association for<br/>Transgender Health (WPATH) criteria met?\"}\n    J --> K[\"1 persistent documented dysphoria<br/>2 capacity to consent<br/>3 age of majority or adolescent<br/>Standards of Care (SOC)<br/>4 comorbidity REASONABLY WELL-CONTROLLED\"]\n    K --> L[\"DISCUSS FERTILITY PRESERVATION FIRST\"]\n    L --> M[\"STAGE 2 - GENDER-AFFIRMING HORMONES<br/>PARTIALLY reversible<br/>testosterone or estrogen\"]\n    M --> N[\"Two goals: suppress endogenous hormone,<br/>replace as for a HYPOGONADAL patient\"]\n    M --> O[\"STAGE 3 - SURGERY - IRREVERSIBLE<br/>1-2 mental health referrals<br/>Ontario requires TWO providers\"]\n    P[\"Family support: 60% attempt risk becomes 4%\"] --> E"
+       "t": "figure",
+       "src": "assets/figures/863656dab877.svg",
+       "alt": "introduction to transgender medicine pathway.svg",
+       "w": 920,
+       "h": 1098
       },
       {
        "t": "note",
@@ -6431,8 +6494,11 @@
        "html": "<ul><li><strong>First line, every case</strong>: <strong>karyotype</strong> · <strong>pelvic and abdominal ultrasound</strong></li><li><strong>Then other labs based on your differential</strong><ul><li><strong>17-hydroxyprogesterone</strong> (markedly raised in 21-hydroxylase deficiency) · <strong>electrolytes and glucose — sodium↓, potassium↑, acidosis, low blood sugar</strong></li><li><strong>testosterone:DHT (T:DHT) ratio after human chorionic gonadotropin (hCG) stimulation</strong> for 5-alpha-reductase deficiency</li><li><strong>DNA analysis</strong> for androgen insensitivity</li></ul></li><li><strong>Two further karyotype groups</strong>: <strong>ovotesticular DSD</strong> (chromosomes variable, gonads mixed) · <strong>mixed gonadal dysgenesis</strong> (45,X/46,XY)</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Newborn with ambiguous genitalia\"] --> B[\"Neutral terms: gonads, phallus,<br/>labio-scrotal folds<br/>NO name, NO birth registration\"]\n    B --> C[\"KARYOTYPE + pelvic ultrasound + directed labs\"]\n    C --> D{\"Karyotype?\"}\n    D -->|\"46,XY - UNDER-virilised\"| E{\"Which defect?\"}\n    E -->|\"cannot make dihydrotestosterone (DHT)\"| F[\"5-ALPHA REDUCTASE DEFICIENCY<br/>autosomal recessive<br/>testosterone:DHT (T:DHT) raised after<br/>human chorionic gonadotropin (hCG)\"]\n    E -->|\"receptor broken\"| G[\"ANDROGEN INSENSITIVITY<br/>X-linked recessive<br/>DNA analysis\"]\n    E -->|\"testis failed\"| H[\"Gonadal dysgenesis, Leydig hypoplasia\"]\n    F --> I[\"VIRILISES at puberty - incompletely<br/>60% raised female identify as MALE\"]\n    G --> J[\"INCOMPLETE virilisation + GYNAECOMASTIA,<br/>azoospermia<br/>complete androgen insensitivity:<br/>100% identify female\"]\n    D -->|\"46,XX - VIRILISED\"| K[\"Source of the fetal androgen?\"]\n    K --> L[\"Congenital adrenal hyperplasia (CAH) -<br/>21-hydroxylase, 95%<br/>17-HYDROXYPROGESTERONE HIGH\"]\n    K --> M[\"Androgen-secreting tumour\"]\n    K --> N[\"Transplacental maternal androgen or drugs\"]\n    L --> O[\"Cortisol low - adrenocorticotropic hormone (ACTH)<br/>high - HYPERPLASIA<br/>precursors shunted to androgen\"]\n    O --> P{\"Aldosterone also lost?\"}\n    P -->|\"75% - under 1% activity\"| Q[\"SALT WASTING<br/>Na low, K high, acidosis<br/>CRISIS AT 1-3 WEEKS\"]\n    P -->|\"1-5% activity\"| R[\"SIMPLE VIRILISING\"]\n    P -->|\"mild mutation\"| S[\"NON-CLASSIC - premature pubarche,<br/>later hirsutism and oligomenorrhoea\"]\n    Q --> T[\"Lifelong hydrocortisone + fludrocortisone<br/>STRESS DOSING\"]\n    U[\"XX baby looks ambiguous - caught early<br/>XY baby looks NORMAL - crashes at 1-3 weeks\"] --> Q\n    classDef lo fill:#ffe03d,stroke:#e0a800,color:#1d1700\n    class L,M,N lo"
+       "t": "figure",
+       "src": "assets/figures/fff66000e45a.svg",
+       "alt": "disorders of sexual differentiation pathway.svg",
+       "w": 1120,
+       "h": 1112
       },
       {
        "t": "note",
@@ -6606,8 +6672,11 @@
        "html": "<ul><li><strong>First-line panel</strong>: <mark class=\"lo\"><strong>1. Exclusion panel first: beta-human chorionic gonadotropin (beta-hCG) · <span class=\"wl\">prolactin</span> · thyroid-stimulating hormone (TSH) · total <span class=\"wl\">testosterone</span></strong></mark><ul><li>beta-hCG → pregnancy · prolactin (normal < 20 nmol/L) → prolactinoma · TSH, with free thyroxine (T4) if it is suppressed → thyroid disease</li></ul></li><li><mark class=\"lo\"><strong>The lecture's own exclusion list is seven</strong> — pregnancy · hyperprolactinaemia · exogenous testosterone · tumour producing testosterone · congenital adrenal hyperplasia (CAH) · hyperthyroidism · early menarche or menopause</mark></li><li><strong>Three of the seven are found by history, not by a disease work-up</strong> (so they have no column below)<ul><li><strong>exogenous androgen</strong>: taking testosterone, or <strong>skin contact with a partner's topical testosterone</strong> — found only on a <strong>thorough medication and social history</strong></li><li><strong>pregnancy</strong>: suspected on history, settled by <strong>beta-hCG</strong></li><li><strong>early menarche or menopause</strong>: <strong>a thorough menstrual history</strong>, and no test beyond it</li></ul></li><li><strong>Rate of onset is the other history discriminator</strong>: PMOS hirsutism creeps over years, a tumour's arrives fast</li><li><strong>Cushing syndrome keeps a column here but is not on the list of seven</strong>: the deck names adrenal Cushing's only as a source of an androgen-secreting tumour, while the lecture's case still argues against Cushing's explicitly, on absent striae and a normal fasting glucose</li></ul>"
       },
       {
-       "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Oligomenorrhoea and/or hyperandrogenism\"] --> B[\"EXCLUDE other causes\"]\n    B --> C[\"Beta-human chorionic gonadotropin<br/>(beta-hCG) - pregnancy\"]\n    B --> D[\"Prolactin - prolactinoma\"]\n    B --> E[\"Thyroid-stimulating hormone (TSH),<br/>free thyroxine (T4) if suppressed - thyroid disease\"]\n    B --> E2[\"Menstrual history - early menarche or menopause\"]\n    B --> F{\"Testosterone?<br/>female normal under 2 nmol/L<br/>male range starts ~8\"}\n    F -->|\"~2.1-2.5 nmol/L - mildly raised\"| G[\"Consistent with PMOS\"]\n    F -->|\"10 nmol/L - markedly raised\"| H[\"Suggests androgen-secreting TUMOUR\"]\n    G --> I{\"Diagnostic triad met?\"}\n    I --> J[\"1 HYPERANDROGENISM - exam or labs\"]\n    I --> K[\"2 OVULATORY DYSFUNCTION<br/>oligomenorrhoea OR cystic ovaries on ultrasound\"]\n    I --> L[\"3 EXCLUSION of other disorders\"]\n    J --> M[\"PMOS - NO ULTRASOUND REQUIRED\"]\n    K --> M\n    L --> M\n    M --> N{\"Treat the symptom of distress\"}\n    N -->|\"Oligomenorrhoea\"| O[\"Birth control pill (BCP)<br/>or cyclical progesterone\"]\n    N -->|\"Subfertility\"| P[\"Lifestyle, aromatase inhibitors,<br/>metformin for early miscarriage\"]\n    N -->|\"Hirsutism\"| Q[\"Surface therapy, antiandrogens,<br/>BCP, eflornithine\"]\n    N -->|\"Alopecia\"| R[\"Minoxidil 5%, antiandrogens, BCP\"]\n    M --> S[\"MANAGE RISK\"]\n    S --> T[\"Metabolic: monitor diabetes mellitus (DM),<br/>hypertension (HTN), cardiovascular disease<br/>150 min exercise weekly\"]\n    S --> U[\"Endometrial cancer:<br/>WITHDRAWAL BLEEDS 4x A YEAR\"]"
+       "t": "figure",
+       "src": "assets/figures/e54b9f7ae3c2.svg",
+       "alt": "polyendocrine metabolic ovarian syndrome pmos pathway.svg",
+       "w": 1120,
+       "h": 1132
       },
       {
        "t": "table",

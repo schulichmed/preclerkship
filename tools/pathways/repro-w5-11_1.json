@@ -1,0 +1,185 @@
+{
+ "name": "approach to first trimester bleeding ultrasound pathway",
+ "title": "First trimester bleeding pathway: transvaginal ultrasound, dating an intrauterine pregnancy, and following a pregnancy of unknown location with serial hCG",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 70,
+   "y": 10,
+   "w": 380,
+   "kind": "plain",
+   "title": "Positive hCG ± bleeding or pain",
+   "lines": [
+    "Hemodynamically stable"
+   ]
+  },
+  {
+   "id": "B",
+   "x": 30,
+   "y": 104,
+   "w": 460,
+   "kind": "plain",
+   "title": "Transvaginal ultrasound of uterus + adnexa",
+   "lines": [
+    "(± transabdominal for high mass / free fluid)"
+   ]
+  },
+  {
+   "id": "C",
+   "x": 85,
+   "y": 206,
+   "w": 350,
+   "h": 48,
+   "kind": "plain",
+   "title": "Intrauterine pregnancy (IUP) seen?",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 580,
+   "y": 182,
+   "w": 325,
+   "kind": "ok",
+   "title": "Date it by the landmark present:",
+   "lines": [
+    "mean sac diameter (MSD) →",
+    "crown-rump length (CRL) →",
+    "biparietal diameter (BPD)"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 40,
+   "y": 320,
+   "w": 440,
+   "kind": "plain",
+   "title": "hCG 2000-3000 mIU and no clear evidence of ectopic?",
+   "lines": []
+  },
+  {
+   "id": "F",
+   "x": 30,
+   "y": 430,
+   "w": 460,
+   "kind": "plain",
+   "title": "REPEAT hCG ± ultrasound a few days later",
+   "lines": [
+    "2x more likely non-viable IUP (NVIUP) than ectopic; 0.5-2% viable IUP"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 100,
+   "y": 530,
+   "w": 320,
+   "h": 48,
+   "kind": "plain",
+   "title": "What does the serial hCG do?",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 540,
+   "y": 614,
+   "w": 365,
+   "h": 48,
+   "kind": "bad",
+   "title": "ECTOPIC LIKELY",
+   "lines": []
+  },
+  {
+   "id": "I",
+   "x": 540,
+   "y": 680,
+   "w": 365,
+   "h": 48,
+   "kind": "info",
+   "title": "Likely NVIUP: follow until < 5 mIU/mL",
+   "lines": []
+  },
+  {
+   "id": "J",
+   "x": 540,
+   "y": 746,
+   "w": 365,
+   "kind": "warn",
+   "title": "Re-evaluate: incomplete abortion",
+   "lines": [
+    "or non-resolving ectopic"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C"
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "from_side": "right",
+   "to_side": "left",
+   "label": "Yes",
+   "label_at": [
+    508,
+    222
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "label": "No: pregnancy of unknown location (PUL)",
+   "label_at": [
+    403,
+    292
+   ]
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "label": "Yes",
+   "label_at": [
+    282,
+    416
+   ]
+  },
+  {
+   "from": "F",
+   "to": "G"
+  },
+  {
+   "from": "G",
+   "to": "H",
+   "path": "M200 578V638H538",
+   "label": "Rises past 3000 (~3500), still no IUP",
+   "label_at": [
+    370,
+    631
+   ]
+  },
+  {
+   "from": "G",
+   "to": "I",
+   "path": "M200 578V704H538",
+   "label": "Falls 15-50% per 24 h",
+   "label_at": [
+    370,
+    697
+   ]
+  },
+  {
+   "from": "G",
+   "to": "J",
+   "path": "M200 578V776H538",
+   "label": "Decline off the predictable curve",
+   "label_at": [
+    370,
+    769
+   ]
+  }
+ ]
+}

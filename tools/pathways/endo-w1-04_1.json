@@ -1,0 +1,158 @@
+{
+ "name": "clinically useful endocrine principles pathway",
+ "title": "Approach to a suspected endocrine problem: a structural problem (a mass) is sorted by benign or malignant and mass effect, a functional problem by excess or deficiency, which decides between a suppression and a stimulation test",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 310,
+   "y": 10,
+   "w": 300,
+   "kind": "plain",
+   "title": "Suspected endocrine problem",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 310,
+   "y": 88,
+   "w": 300,
+   "kind": "plain",
+   "title": "Structural or functional?",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 80,
+   "y": 210,
+   "w": 300,
+   "kind": "plain",
+   "title": "Benign or malignant?",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 10,
+   "y": 300,
+   "w": 440,
+   "kind": "plain",
+   "title": "Does the enlargement itself cause clinical effects?",
+   "lines": []
+  },
+  {
+   "id": "E",
+   "x": 20,
+   "y": 394,
+   "w": 420,
+   "kind": "warn",
+   "title": "Mass effect:",
+   "lines": [
+    "pituitary → optic chiasm, cranial nerves III/IV/VI, trigeminal V1/V2",
+    "thyroid → dysphagia"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 540,
+   "y": 210,
+   "w": 300,
+   "kind": "plain",
+   "title": "Too much or too little?",
+   "lines": []
+  },
+  {
+   "id": "G",
+   "x": 480,
+   "y": 320,
+   "w": 200,
+   "kind": "anti",
+   "title": "Try to SUPPRESS it",
+   "lines": [
+    "→ suppression test"
+   ]
+  },
+  {
+   "id": "H",
+   "x": 700,
+   "y": 320,
+   "w": 200,
+   "kind": "ana",
+   "title": "Try to STIMULATE it",
+   "lines": [
+    "→ stimulation test"
+   ]
+  },
+  {
+   "id": "I",
+   "x": 480,
+   "y": 440,
+   "w": 420,
+   "kind": "plain",
+   "title": "Primary, secondary/tertiary, or exogenous source?",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "path": "M310 112H230V208",
+   "label": "STRUCTURAL — a mass",
+   "label_at": [
+    148,
+    166
+   ]
+  },
+  {
+   "from": "B",
+   "to": "F",
+   "path": "M610 112H690V208",
+   "label": "FUNCTIONAL — hormone",
+   "label_at": [
+    776,
+    166
+   ]
+  },
+  {
+   "from": "C",
+   "to": "D"
+  },
+  {
+   "from": "D",
+   "to": "E"
+  },
+  {
+   "from": "F",
+   "to": "G",
+   "from_dx": -60,
+   "label": "EXCESS",
+   "label_at": [
+    560,
+    274
+   ]
+  },
+  {
+   "from": "F",
+   "to": "H",
+   "from_dx": 60,
+   "label": "DEFICIENCY",
+   "label_at": [
+    842,
+    274
+   ]
+  },
+  {
+   "from": "G",
+   "to": "I",
+   "to_dx": -110
+  },
+  {
+   "from": "H",
+   "to": "I",
+   "to_dx": 110
+  }
+ ]
+}

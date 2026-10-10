@@ -1,0 +1,422 @@
+{
+ "name": "clinical presentation and evaluation of adrenal gland disease pathway",
+ "title": "Adrenal disease work-up: for too much hormone, screen, confirm and localise by zone; for too little, a morning cortisol with paired ACTH separates ruled out, stimulation test, primary and secondary; screen every incidentaloma for all three; treat a crisis before results",
+ "width": 1120,
+ "nodes": [
+  {
+   "id": "W",
+   "x": 10,
+   "y": 10,
+   "w": 320,
+   "kind": "plain",
+   "title": "CRISIS",
+   "lines": [
+    "shock, hypotension resistant to fluids"
+   ]
+  },
+  {
+   "id": "X",
+   "x": 10,
+   "y": 105,
+   "w": 320,
+   "kind": "bad",
+   "title": "TREAT NOW",
+   "lines": [
+    "fluids + hydrocortisone 100 mg intravenous (IV)",
+    "do NOT wait for results"
+   ]
+  },
+  {
+   "id": "A",
+   "x": 430,
+   "y": 10,
+   "w": 260,
+   "kind": "plain",
+   "title": "Adrenal disease suspected",
+   "lines": []
+  },
+  {
+   "id": "U",
+   "x": 800,
+   "y": 10,
+   "w": 300,
+   "kind": "plain",
+   "title": "Incidentaloma found?",
+   "lines": []
+  },
+  {
+   "id": "V",
+   "x": 800,
+   "y": 87,
+   "w": 300,
+   "kind": "info",
+   "title": "Screen ALL THREE",
+   "lines": [
+    "cortisol, aldosterone, catecholamines"
+   ]
+  },
+  {
+   "id": "B",
+   "x": 430,
+   "y": 165,
+   "w": 260,
+   "kind": "plain",
+   "title": "Too much, or too little?",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 430,
+   "y": 250,
+   "w": 260,
+   "kind": "plain",
+   "title": "Which zone?",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 30,
+   "y": 350,
+   "w": 300,
+   "h": 97,
+   "kind": "plain",
+   "title": "Resistant hypertension",
+   "lines": [
+    "with or without low K+",
+    "SCREEN: aldosterone / renin ratio"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 370,
+   "y": 350,
+   "w": 380,
+   "h": 97,
+   "kind": "plain",
+   "title": "Bruising, fracture, proximal weakness",
+   "lines": [
+    "SCREEN: 1 mg overnight dexamethasone,",
+    "24 h urine cortisol, late-night salivary"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 790,
+   "y": 350,
+   "w": 295,
+   "h": 97,
+   "kind": "plain",
+   "title": "Spells",
+   "lines": [
+    "headache, palpitations, sweating",
+    "SCREEN: fractionated plasma free metanephrines"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 30,
+   "y": 480,
+   "w": 300,
+   "kind": "plain",
+   "title": "CONFIRM non-suppressibility",
+   "lines": [
+    "saline infusion / fludrocortisone / high salt"
+   ]
+  },
+  {
+   "id": "H",
+   "x": 30,
+   "y": 600,
+   "w": 300,
+   "kind": "ok",
+   "title": "LOCALISE",
+   "lines": [
+    "CT with or without adrenal vein sampling",
+    "unilateral: adrenalectomy"
+   ]
+  },
+  {
+   "id": "I",
+   "x": 370,
+   "y": 480,
+   "w": 380,
+   "kind": "plain",
+   "title": "TWO positive screens required",
+   "lines": []
+  },
+  {
+   "id": "J",
+   "x": 380,
+   "y": 557,
+   "w": 360,
+   "kind": "plain",
+   "title": "Adrenocorticotropic hormone (ACTH)?",
+   "lines": []
+  },
+  {
+   "id": "K",
+   "x": 340,
+   "y": 660,
+   "w": 230,
+   "kind": "plain",
+   "title": "Pituitary, ectopic ACTH",
+   "lines": [
+    "or corticotropin-releasing hormone"
+   ]
+  },
+  {
+   "id": "L",
+   "x": 590,
+   "y": 660,
+   "w": 230,
+   "kind": "plain",
+   "title": "Adrenal adenoma,",
+   "lines": [
+    "hyperplasia, carcinoma"
+   ]
+  },
+  {
+   "id": "M",
+   "x": 790,
+   "y": 480,
+   "w": 295,
+   "kind": "bad",
+   "title": "Do NOT biopsy until pheochromocytoma excluded",
+   "lines": [
+    "ALPHA block first, THEN beta"
+   ]
+  },
+  {
+   "id": "N",
+   "x": 400,
+   "y": 770,
+   "w": 320,
+   "kind": "plain",
+   "title": "Morning (AM) cortisol 6–9 am",
+   "lines": [
+    "+ paired ACTH"
+   ]
+  },
+  {
+   "id": "O",
+   "x": 480,
+   "y": 865,
+   "w": 160,
+   "kind": "plain",
+   "title": "Cortisol?",
+   "lines": []
+  },
+  {
+   "id": "P",
+   "x": 200,
+   "y": 970,
+   "w": 200,
+   "kind": "ok",
+   "title": "Ruled out",
+   "lines": []
+  },
+  {
+   "id": "R",
+   "x": 460,
+   "y": 970,
+   "w": 200,
+   "kind": "warn",
+   "title": "ACTH stimulation test",
+   "lines": []
+  },
+  {
+   "id": "Q",
+   "x": 720,
+   "y": 970,
+   "w": 200,
+   "kind": "plain",
+   "title": "ACTH?",
+   "lines": []
+  },
+  {
+   "id": "S",
+   "x": 560,
+   "y": 1070,
+   "w": 240,
+   "kind": "anti",
+   "title": "PRIMARY – Addison",
+   "lines": [
+    "K+ high, aldosterone low",
+    "needs fludrocortisone"
+   ]
+  },
+  {
+   "id": "T",
+   "x": 830,
+   "y": 1070,
+   "w": 260,
+   "kind": "ana",
+   "title": "SECONDARY – central",
+   "lines": [
+    "K+ normal",
+    "often no fludrocortisone"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "W",
+   "to": "X"
+  },
+  {
+   "from": "A",
+   "to": "U",
+   "from_side": "right",
+   "to_side": "left"
+  },
+  {
+   "from": "U",
+   "to": "V"
+  },
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "label": "too much",
+   "label_at": [
+    605,
+    233
+   ]
+  },
+  {
+   "from": "B",
+   "to": "N",
+   "path": "M690 186.5H1105V800.5H722",
+   "label": "too little",
+   "label_at": [
+    900,
+    178
+   ]
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "path": "M430 271.5H180V348",
+   "label": "glomerulosa – aldosterone",
+   "label_at": [
+    305,
+    263
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "label": "fasciculata – cortisol",
+   "label_at": [
+    640,
+    326
+   ]
+  },
+  {
+   "from": "C",
+   "to": "F",
+   "path": "M690 271.5H937.5V348",
+   "label": "medulla – catecholamines",
+   "label_at": [
+    815,
+    263
+   ]
+  },
+  {
+   "from": "D",
+   "to": "G"
+  },
+  {
+   "from": "G",
+   "to": "H"
+  },
+  {
+   "from": "E",
+   "to": "I"
+  },
+  {
+   "from": "I",
+   "to": "J"
+  },
+  {
+   "from": "J",
+   "to": "K",
+   "from_dx": -50,
+   "label": "high – dependent",
+   "label_at": [
+    398,
+    634
+   ]
+  },
+  {
+   "from": "J",
+   "to": "L",
+   "from_dx": 50,
+   "label": "low – independent",
+   "label_at": [
+    768,
+    634
+   ]
+  },
+  {
+   "from": "F",
+   "to": "M"
+  },
+  {
+   "from": "N",
+   "to": "O"
+  },
+  {
+   "from": "O",
+   "to": "P",
+   "from_dx": -50,
+   "label": "greater than 450",
+   "label_at": [
+    330,
+    932
+   ]
+  },
+  {
+   "from": "O",
+   "to": "R",
+   "label": "80–450",
+   "label_at": [
+    597,
+    944
+   ]
+  },
+  {
+   "from": "O",
+   "to": "Q",
+   "from_dx": 50,
+   "label": "less than 80",
+   "label_at": [
+    782,
+    932
+   ]
+  },
+  {
+   "from": "Q",
+   "to": "S",
+   "from_dx": -40,
+   "label": "high",
+   "label_at": [
+    688,
+    1040
+   ]
+  },
+  {
+   "from": "Q",
+   "to": "T",
+   "from_dx": 40,
+   "label": "low or normal",
+   "label_at": [
+    1000,
+    1040
+   ]
+  }
+ ]
+}
