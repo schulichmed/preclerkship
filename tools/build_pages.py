@@ -152,7 +152,7 @@ def block_counts(course, slug):
     # counts as written: the note exists and the page says where. Counting it
     # as a gap would disagree with the coverage the page itself paints.
     written = [l for l in lects if l.get("hasNote") or l.get("coveredBy")]
-    return len(qs), len(written), len(lects)
+    return portal.course_count(qs), len(written), len(lects)
 
 
 ANKI_EMPTY = u"""<div class="tab-empty">
@@ -628,7 +628,7 @@ def build_qbank(course):
     blocks, total = [], 0
     for slug, n, name, weeks in course["blocks"]:
         qp = os.path.join(d, "data", "questions", "%s.json" % slug)
-        total += len(json.load(io.open(qp, encoding="utf-8")))
+        total += portal.course_count(json.load(io.open(qp, encoding="utf-8")))
         block = {"slug": slug, "n": n, "name": name, "weeks": weeks,
                  "qv": portal.digest(qp)}
         # The bank's note dialog fetches this block's notes on demand and needs

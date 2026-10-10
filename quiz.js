@@ -2615,11 +2615,17 @@
     if (RESET_SHOWN_IDLE) RESET_SHOWN_IDLE();
   }
 
+  /* The off-curriculum set is kept to be drilled, not to be counted: the
+     scoreboard measures the course, so it leaves those questions out of the
+     total and the score alike. A star still counts, since starring is the
+     reader's own choice. */
+  function onCurriculum(q) { return q.family !== "offcurriculum"; }
+
   function paintStats() {
     var attempted = 0, wrong = 0, starred = 0, ok = 0;
     QUESTIONS.forEach(function (q) {
       var st = stateOf(q.qid);
-      if (st !== "unseen") {
+      if (st !== "unseen" && onCurriculum(q)) {
         attempted++;
         if (st === "wrong") wrong++; else ok++;
       }
@@ -2637,7 +2643,7 @@
   /* the eyebrow is written by pom2.js instead - it has to be right even when
      the page opens on the notes tab and none of this has run */
   function buildMasthead() {
-    byId("sc-of").textContent = "/" + QUESTIONS.length;
+    byId("sc-of").textContent = "/" + QUESTIONS.filter(onCurriculum).length;
   }
 
   /* ---------- the facet dropdowns ---------- */
@@ -2778,7 +2784,9 @@
     FAMILIES.forEach(function (f) {
       FAM_TOTAL[f.key] = famCount[f.key] || 0;
       FAM_NAME[f.key] = f.name;
-      famDefs.push({ k: f.key, label: f.name, title: f.blurb });
+      /* the hover line: a set's short tip, or its full blurb where portal.py
+         gives no tip (Curriculum Cases, which needs the whole sentence) */
+      famDefs.push({ k: f.key, label: f.name, title: f.tip || f.blurb });
     });
     STATUS_DEFS.forEach(function (d) { STATUS_LABEL[d.k] = d.label; });
 
@@ -3161,7 +3169,7 @@
            count and the name say enough - except for a set whose name gets
            misread (Curriculum Cases were taken for AI-written), which portal.py
            flags with show_blurb. On the pooled page it shows once, not once per
-           block. Every set's blurb is also the hover title in the filter. */
+           block. Each set's tip (or blurb) is the hover title in the filter. */
         if (f.show_blurb && f.blurb && !BLURB_SHOWN[f.key]) {
           BLURB_SHOWN[f.key] = true;
           head.appendChild(el("p", "fam-blurb", f.blurb));

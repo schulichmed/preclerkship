@@ -76,7 +76,7 @@ def cards(course):
             u'</a>' % (slug, hue, n,
                       # a block that is one week long says "Week", not "Weeks"
                       u"Weeks" if re.search(u"[-\u2013]", weeks) else u"Week",
-                      weeks, name, blurb, written, len(qs)))
+                      weeks, name, blurb, written, portal.course_count(qs)))
     return "\n".join(out)
 
 

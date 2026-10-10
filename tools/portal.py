@@ -41,25 +41,31 @@ COURSES = [
         ],
         "families": [
             {"key": "module", "name": u"Module questions",
+             "tip": u"Elentra module knowledge checks",
              "blurb": u"The knowledge checks inside the week's Elentra asynchronous "
                       u"learning modules, transcribed into the Meds 2025 question bank."},
             {"key": "ra", "name": u"Readiness assessments",
+             "tip": u"Readiness Assessments, as sat",
              "blurb": u"The week's Readiness Assessment as it was sat. Several weeks "
                       u"never had one, and those say so rather than going missing."},
             {"key": "sa", "name": u"Self-assessments",
+             "tip": u"Self-Assessments, as released",
              "blurb": u"The week's Self-Assessment as it was released."},
             {"key": "meds2024", "name": u"Meds 2024 bank",
+             "tip": u"Class of 2024 bank, mostly faculty-edited",
              "blurb": u"The student-written, instructor-approved bank built by the Class "
                       u"of 2024 Academic Directors in December 2020, re-filed week by "
                       u"week. Its questions went to the teaching faculty and the "
                       u"instructors' edits are folded in, except for a tail of each week "
                       u"that time ran out on."},
             {"key": "new", "name": u"Meds 2025",
+             "tip": u"Meds 2025 volunteers' bank, not faculty-checked",
              "blurb": u"Written fresh by the Meds 2025 volunteers in December 2021. The "
                       u"bank states on its own second page that these were not verified "
                       u"by faculty, so treat a disagreement as a question worth chasing "
                       u"rather than a correction to accept."},
             {"key": "workbook", "name": u"Pre-Clerkship Workbook",
+             "tip": u"Handed-down peer bank; key has errors",
              "blurb": u"The 2023 edition of the workbook handed down through the Schulich "
                       u"classes of 2015 to 2025: its Foundations, Hematology and "
                       u"Infection & Immunity chapters. The workbook files by subject "
@@ -68,6 +74,7 @@ COURSES = [
                       u"its face. The Foundations chapter's own subject labels are in the "
                       u"Topic filter."},
             {"key": "reviews", "name": u"Schulich Reviews",
+             "tip": u"Upper-year exam review sessions",
              "blurb": u"The Schulich Reviews sessions, run by upper years before each exam. "
                       u"Their own practice questions, keyed by the deck, plus questions "
                       u"written from their high-yield slides. Where a review disagrees "
@@ -91,23 +98,28 @@ COURSES = [
         ],
         "families": [
             {"key": "module", "name": u"Module questions",
+             "tip": u"Elentra module knowledge checks",
              "blurb": u"The knowledge checks inside the week's Elentra asynchronous "
                       u"learning modules, transcribed into the Meds 2025 block banks."},
             {"key": "weekly", "name": u"Weekly quizzes",
+             "tip": u"The weekly quizzes, as sat",
              "blurb": u"The week's quiz as it was sat, kept whole as its own set so a "
                       u"week can be drilled the way it was written."},
             {"key": "meds2024", "name": u"Meds 2024 bank",
+             "tip": u"Class of 2024 bank, partly faculty-reviewed",
              "blurb": u"The student-written bank the Class of 2024 Academic Directors "
                       u"built in May 2021, re-filed week by week by the Meds 2025 "
                       u"volunteers. About half the cardiology questions and a handful of "
                       u"the respirology ones were reviewed by faculty; the rest were not, "
                       u"and the bank says so on its own second page."},
             {"key": "new", "name": u"Meds 2025",
+             "tip": u"Meds 2025 volunteers' bank, not faculty-checked",
              "blurb": u"Written fresh by the Meds 2025 volunteers through the spring of "
                       u"2022 to fill the gaps. Not verified by faculty, so treat a "
                       u"disagreement as a question worth chasing rather than a correction "
                       u"to accept."},
             {"key": "workbook", "name": u"Pre-Clerkship Workbook",
+             "tip": u"Handed-down peer bank; key has errors",
              "blurb": u"The 2023 edition of the workbook handed down through the Schulich "
                       u"classes of 2015 to 2025: its Cardiology, Respiration & Airways, "
                       u"Ear Nose & Throat, Gastroenterology and Genitourinary chapters. "
@@ -115,6 +127,7 @@ COURSES = [
                       u"block is its own and the week here is inferred; where nothing in "
                       u"a question placed it, it says so on its face."},
             {"key": "reviews", "name": u"Schulich Reviews",
+             "tip": u"Upper-year exam review sessions",
              "blurb": u"The Schulich Reviews sessions, run by upper years before each exam. "
                       u"Their own practice questions, keyed by the deck, plus questions "
                       u"written from their high-yield slides. Where a review disagrees "
@@ -139,10 +152,12 @@ COURSES = [
         ],
         "families": [
             {"key": "module", "name": u"Course modules",
+             "tip": u"Elentra knowledge checks and slide concept checks",
              "blurb": u"The Elentra module knowledge checks and the concept checks on the "
                       u"lecture slides. Cases live under Curriculum Cases instead, wherever "
                       u"they came from."},
             {"key": "weekly", "name": u"Weekly quizzes",
+             "tip": u"The weekly quizzes, as sat",
              "blurb": u"The weekly quizzes, both the Microsoft Forms ones and the ones sat "
                       u"in Elentra. Kept whole as their own set, so a week's quiz can be "
                       u"drilled the way it was written."},
@@ -150,22 +165,26 @@ COURSES = [
              "blurb": u"Cases and questions directly from our 2026-27 curriculum (Meds 2029): "
                       u"DSSGs, in-class lectures and modules, likely to be recycled on exams."},
             {"key": "reviews", "name": u"Schulich Reviews",
+             "tip": u"Upper-year exam review sessions",
              "blurb": u"The Schulich Reviews sessions, run by upper years before each exam. "
                       u"Their own practice questions, keyed by the deck, plus questions "
                       u"written from their high-yield slides. Where a review disagrees "
                       u"with this year's lecture, the lecture wins and the question says so."},
             {"key": "hipponotes", "name": u"HippoNotes",
+             "tip": u"Meds 2025 peer bank; check the key",
              "blurb": u"The question banks at the back of the Meds 2025 HippoNotes "
                       u"(Academic Resources Team, May 2023) - one document per block, "
                       u"written by the class two years ahead. Peer-written like the "
                       u"Workbook, so the key is worth checking rather than trusting; "
                       u"the source groups by week only, with no per-lecture attribution."},
             {"key": "workbook", "name": u"Pre-Clerkship Workbook",
+             "tip": u"Handed-down peer bank; key has errors",
              "blurb": u"The Pre-Clerkship Workbook (2023 edition), the student bank passed "
                       u"down through the Schulich classes of 2015-2025. It has a written "
                       u"key, but the key is peer-written and contains real errors. Every "
                       u"one found is flagged on the question."},
             {"key": "offcurriculum", "name": u"Off-curriculum",
+             "tip": u"Not taught in this year's lectures",
              "blurb": u"Questions from the handed-down banks and older sets that this "
                       u"year's lectures do not teach, or teach differently. Kept here "
                       u"rather than deleted, for anyone who wants them. Each one names "
@@ -191,6 +210,7 @@ COURSES = [
         ],
         "families": [
             {"key": "hipponotes", "name": u"HippoNotes",
+             "tip": u"Meds 2025 peer bank; check the key",
              "blurb": u"The T2C question bank at the back of the Meds 2025 HippoNotes "
                       u"(Academic Resources Team, May 2023), filed under the rotation "
                       u"each question was written for. Peer-written, so the key is "
@@ -203,6 +223,12 @@ BY_SLUG = dict((c["slug"], c) for c in COURSES)
 
 # the engine, shared by every course and living at the repo root
 ASSETS = ["base.css", "portal.css", "portal.js", "quiz.js", "notes.js"]
+
+
+def course_count(qs):
+    """How many questions the page advertises. The off-curriculum set is kept
+    to be drilled, not counted - quiz.js leaves it out of the scoreboard too."""
+    return sum(1 for q in qs if q.get("family") != "offcurriculum")
 
 
 def digest(path):
@@ -231,7 +257,7 @@ def counts(course):
         qp = os.path.join(d, "data", "questions", "%s.json" % slug)
         np = os.path.join(d, "data", "notes", "%s.json" % slug)
         if os.path.exists(qp):
-            q += len(json.load(io.open(qp, encoding="utf-8")))
+            q += course_count(json.load(io.open(qp, encoding="utf-8")))
         if os.path.exists(np):
             lects = [x for wk in json.load(io.open(np, encoding="utf-8"))["weeks"]
                      for x in wk["lectures"]]
