@@ -421,6 +421,11 @@ about the medicine. Where a case turns on something the notes genuinely lack, тн
 answer and leave it open for the facilitator**; do not fill the gap from elsewhere and let it
 read as taught material.
 
+**Reader-facing text never says "vault".** Answers, flags and source lines reach the portal, where
+readers do not know what the vault is (issue #43). Write "the notes", "the lecture note", "the
+measles note" or "this bank" instead. `tools/tests/test_reader_wording.py` fails on the word in
+any shipped JSON.
+
 *Observed 2026-09-09, all four from one DSSG pass: a thyroid bruit, non-pitting edema, a pleural
 effusion and a thyroiditis timeline in months were all reasoned into answers, and none of the
 four appears anywhere in the endocrinology block.* The notes usually carry a **better**
