@@ -851,9 +851,10 @@ a deck size.
 
 - **There is no card-count target.** Some weeks the delta is three cards; after a substantially
   rewritten lecture it is forty. A number invites padding.
-- **Outdated cannot be detected, only read.** CLim's cards carry no provenance, exactly as the
-  lecture notes do not, so pull the lecture's cards out of CLim with `findNotes` / `notesInfo`
-  and compare them against the note. There is no timestamp shortcut.
+- **The stale-card audit comes first and is not optional.** Run `med-anki`'s Step 1 over every
+  card in the week's lecture decks before adding any. Stale cards cannot be found by timestamp,
+  only by reading each card against the note. Skipping this left 29 cards in endo and repro
+  teaching old guidelines after both weeks had been "updated".
 - **The chart sets priority, not scope.** The note is the source. Where the chart bolded
   something, that gap goes first and earns `#HighYield`.
 - **Give every card that needs one an established mnemonic.** This applies to cards you add and
