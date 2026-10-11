@@ -56,6 +56,11 @@ A chart with every box coloured says nothing. Three or four coloured boxes on a
 plain chart is usual; the osteoporosis exemplar has eight across fourteen boxes
 only because it ends in two drug families.
 
+The one exception is a disease-by-column chart where each column is a
+disease to keep apart (the adrenal diseases chart, `endo-w3-01_2.json`): there
+the spec's `kinds` gives each disease its own colour and `bands` tints its
+column, so the colour names the disease rather than an outcome.
+
 Lines starting with `~` are drawn muted and italic: a qualifier ("everyone
 gets this too", "on a bone density scan"), not a fact.
 

@@ -32,7 +32,9 @@ Spec shape (every coordinate is in px on a canvas `width` wide, default 920):
                 "path": "M450 58V88"}],
      "panels": [{"x": 15, "y": 782, "w": 655, "title": "Risk factors",
                  "items": ["..."], "cols": 2}],
-     "note": "an italic footnote under everything"}
+     "note": "an italic footnote under everything",
+     "kinds": {"addison": ["#e3f1f6", "#1f6f8b", "#1f6f8b", "#18212e"]},
+     "bands": [{"x": 9, "y": 254, "w": 278, "h": 1000, "fill": "#f1f8fb", "stroke": "#1f6f8b"}]}
 
 - `any_of` draws the free-standing boxes with OR between them across the top
   and pushes everything else down; leave it out when the chart has no such row.
@@ -44,6 +46,11 @@ Spec shape (every coordinate is in px on a canvas `width` wide, default 920):
   families), info (a neutral highlight), dark (a root heading), lo (a plain
   step the lecture's learning objectives ask for - the vault's yellow "classDef
   lo"). Colour is for outcomes and answers; the steps leading to them stay plain.
+- `kinds` adds box kinds of the chart's own, each [fill, stroke, title colour,
+  body colour], for a chart that gives every disease column its own colour.
+  Muted "~" lines stay grey, so keep them off a solid dark fill.
+- `bands` draws faint rounded rectangles behind everything (a column's tint);
+  they take no part in the overlap check.
 - `"dashed": true` on an edge draws it dashed (mermaid's -.- : "goes with", not "leads to").
 - An edge without `path` runs from the middle of `from_side` of one box to the
   middle of `to_side` of the other, nudged by from_dx/to_dx (px along that
@@ -319,6 +326,8 @@ class Chart(object):
 
     def build(self) -> str:
         s = self.spec
+        for name, colours in s.get("kinds", {}).items():
+            KIND[name] = tuple(colours)
         if s.get("any_of"):
             self.any_of(s["any_of"])
         any_parts = self.parts
@@ -344,7 +353,10 @@ class Chart(object):
                 'markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="%s"/>'
                 '</marker></defs><rect width="100%%" height="100%%" rx="14" fill="%s"/>'
                 % (self.width, height, self.width, height, escape(s["title"]), P["muted"], P["bg"]))
-        return head + "\n" + "\n".join(any_parts + self.parts) + "\n</svg>\n"
+        bands = ['<rect x="%s" y="%s" width="%s" height="%s" rx="16" fill="%s" stroke="%s" '
+                 'stroke-opacity="0.25"/>' % (b["x"], b["y"] + self.top, b["w"], b["h"], b["fill"],
+                                              b.get("stroke", P["line"])) for b in s.get("bands", [])]
+        return head + "\n" + "\n".join(bands + any_parts + self.parts) + "\n</svg>\n"
 
     def check_overlaps(self):
         items = [(k, v) for k, v in self.boxes.items() if not k.startswith("_any")]
