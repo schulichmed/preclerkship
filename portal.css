@@ -1977,6 +1977,21 @@ body.has-dialog{overflow:hidden;}
 .covers-sep{margin:0 6px;}
 .covers-num{font-weight:600;letter-spacing:.04em;}
 
+/* PDFs pinned to a note: pills under the heading, each opening in a new tab */
+.note-pdfs{display:flex;flex-wrap:wrap;gap:6px;margin:-2px 0 10px;}
+.note-pdf{
+    padding:4px 10px;
+    font-size:.78rem;
+    font-weight:600;
+    color:var(--q-accent-text);
+    background:var(--q-accent-soft);
+    border:1px solid var(--q-accent);
+    border-radius:999px;
+    text-decoration:none;
+}
+.note-pdf::before{content:"PDF \2197  ";font-size:.68rem;letter-spacing:.04em;opacity:.8;}
+.note-pdf:hover{text-decoration:underline;}
+
 .framing{
     font-size:.92rem;
     line-height:1.6;

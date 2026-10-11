@@ -37,6 +37,11 @@ HEAD_LINE = re.compile(r"^#{2,4}\s+\S")
 FIGURES_PATH = "pom2/data/figures.json"
 FIGURES = {}
 
+# Downloadable PDFs pinned to the top of a note (peer notes, lab handouts),
+# keyed by lecture id. Kept out of the vault and out of the roster, which
+# rosters_from_vault.py rewrites from scratch, so they are laid back on here.
+PDFS_PATH = "pom2/data/pdfs.json"
+
 
 # ---------- inline markdown -> html ----------
 
@@ -393,8 +398,19 @@ def load_figures():
     return json.load(io.open(FIGURES_PATH, encoding="utf-8"))
 
 
+def attach_pdfs(doc, pdfs):
+    """Set each lecture's `pdfs` from the manifest, and drop any it no longer lists."""
+    for w in doc["weeks"]:
+        for lec in w["lectures"]:
+            if lec["id"] in pdfs:
+                lec["pdfs"] = pdfs[lec["id"]]
+            else:
+                lec.pop("pdfs", None)
+
+
 def main(slugs):
     FIGURES.update(load_figures())
+    pdfs = json.load(io.open(PDFS_PATH, encoding="utf-8")) if os.path.exists(PDFS_PATH) else {}
     for slug in slugs:
         p = "pom2/data/notes/%s.json" % slug
         doc = json.load(io.open(p, encoding="utf-8"))
@@ -418,6 +434,7 @@ def main(slugs):
                     drafts += 1
                 lec.update(ch)
                 found += 1
+        attach_pdfs(doc, pdfs)
         # One banner at the top of the notes tab, not a copy on every note.
         # The callouts stay in the vault, where they mark which notes still
         # need checking against this year's slides.

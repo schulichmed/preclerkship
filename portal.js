@@ -272,6 +272,21 @@
       art.appendChild(cv);
     }
 
+    /* PDFs pinned to the note (a classmate's notes, a lab handout), opened in
+       a tab of their own so the note stays where the reader left it */
+    if (lec.pdfs && lec.pdfs.length) {
+      var pl = el("div", "note-pdfs");
+      lec.pdfs.forEach(function (p) {
+        var a = el("a", "note-pdf", p.label);
+        a.href = p.href;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.title = "Open as a PDF in a new tab";
+        pl.appendChild(a);
+      });
+      art.appendChild(pl);
+    }
+
     if (lec.title) art.appendChild(el("p", "note-title", lec.title));
     /* A reader's report, merged from the pull request the Report button
        opens. It is kept apart from the chart's own blocks because those are
