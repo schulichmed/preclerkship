@@ -247,16 +247,22 @@
   {
    "from": "mimic",
    "to": "m_oligo",
-   "from_side": "left",
-   "to_side": "right",
-   "label": "yes"
+   "path": "M360 290H315",
+   "label": "yes",
+   "label_at": [
+    337,
+    281
+   ]
   },
   {
    "from": "mimic",
    "to": "m_andro",
-   "from_side": "right",
-   "to_side": "left",
-   "label": "yes"
+   "path": "M640 290H685",
+   "label": "yes",
+   "label_at": [
+    663,
+    281
+   ]
   },
   {
    "from": "mimic",
@@ -270,21 +276,22 @@
   {
    "from": "testo",
    "to": "t_norm",
-   "from_dx": -60
+   "path": "M500.0 548V573H165.0V598"
   },
   {
    "from": "testo",
-   "to": "t_fit"
+   "to": "t_fit",
+   "path": "M500.0 548V573H500.0V598"
   },
   {
    "from": "testo",
    "to": "t_tum",
-   "from_dx": 60
+   "path": "M500.0 548V573H835.0V598"
   },
   {
    "from": "t_norm",
    "to": "pmos",
-   "to_side": "left"
+   "path": "M165.0 694V764H330"
   },
   {
    "from": "t_fit",
@@ -293,26 +300,22 @@
   {
    "from": "pmos",
    "to": "hair",
-   "from_dx": -105,
-   "label": "hirsutism"
+   "path": "M500.0 794V824H130.0V854"
   },
   {
    "from": "pmos",
    "to": "cyc",
-   "from_dx": -35,
-   "label": "cycles"
+   "path": "M500.0 794V824H377.0V854"
   },
   {
    "from": "pmos",
    "to": "fert",
-   "from_dx": 35,
-   "label": "fertility"
+   "path": "M500.0 794V824H624.0V854"
   },
   {
    "from": "pmos",
    "to": "meta",
-   "from_dx": 105,
-   "label": "metabolic"
+   "path": "M500.0 794V824H871.0V854"
   },
   {
    "from": "hair",
