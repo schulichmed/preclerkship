@@ -180,7 +180,13 @@
          not shunt the chart down the page under someone already reading it */
       if (b.w) img.width = b.w;
       if (b.h) img.height = b.h;
-      if (b.width) img.style.maxWidth = b.width + "px";
+      // a width written in the vault (![[x.png|900]]) is a size someone chose,
+      // so it replaces the illustration height cap rather than fighting it
+      if (b.width) {
+        img.style.maxWidth = b.width + "px";
+        img.style.maxHeight = "none";
+        img.style.width = "100%";
+      }
       fig.appendChild(img);
 
       if (b.cap) fig.appendChild(html("figcaption", null, b.cap));
