@@ -1,753 +1,73 @@
 {
  "name": "transgender medicine overview",
- "width": 1502,
- "title": "Transgender medicine pathway: assess whether a young person has gender dysphoria, then climb the reversibility ladder from fully reversible puberty blockers at Tanner 2, to partially reversible masculinizing testosterone or feminizing estrogen with anti-androgen after the WPATH criteria are met, to irreversible surgery after mental health referral, each with its regimen, effects, risks and monitoring",
- "kinds": {
-  "asm_h": [
-   "#1f6f8b",
-   "#1f6f8b",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "asm_t": [
-   "#dceef4",
-   "#1f6f8b",
-   "#1f6f8b",
-   "#18212e"
-  ],
-  "asm_w": [
-   "#ffffff",
-   "#1f6f8b",
-   "#1f6f8b",
-   "#18212e"
-  ],
-  "pb_h": [
-   "#1f5f9e",
-   "#1f5f9e",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "pb_t": [
-   "#dde9f7",
-   "#1f5f9e",
-   "#1f5f9e",
-   "#18212e"
-  ],
-  "pb_w": [
-   "#ffffff",
-   "#1f5f9e",
-   "#1f5f9e",
-   "#18212e"
-  ],
-  "mas_h": [
-   "#b5600f",
-   "#b5600f",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "mas_t": [
-   "#fbe8d3",
-   "#b5600f",
-   "#b5600f",
-   "#18212e"
-  ],
-  "mas_w": [
-   "#ffffff",
-   "#b5600f",
-   "#b5600f",
-   "#18212e"
-  ],
-  "fem_h": [
-   "#a3336b",
-   "#a3336b",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "fem_t": [
-   "#f8e0ec",
-   "#a3336b",
-   "#a3336b",
-   "#18212e"
-  ],
-  "fem_w": [
-   "#ffffff",
-   "#a3336b",
-   "#a3336b",
-   "#18212e"
-  ],
-  "srg_h": [
-   "#46607a",
-   "#46607a",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "srg_t": [
-   "#e2e8ee",
-   "#46607a",
-   "#46607a",
-   "#18212e"
-  ],
-  "srg_w": [
-   "#ffffff",
-   "#46607a",
-   "#46607a",
-   "#18212e"
+ "width": 1000,
+ "title": "Transgender medicine pathway: assess gender dysphoria, then climb the reversibility ladder from puberty blockers (fully reversible) through masculinizing or feminizing hormones (partially reversible) to surgery (irreversible), with the criteria, regimens, effects, risks and monitoring at each step",
+ "any_of": {
+  "heading": "Gender dysphoria is supported by:",
+  "joiner": "AND",
+  "items": [
+   {
+    "title": "INSISTENCE",
+    "lines": []
+   },
+   {
+    "title": "PERSISTENCE",
+    "lines": []
+   },
+   {
+    "title": "CONSISTENCE",
+    "lines": []
+   }
   ]
  },
- "bands": [
-  {
-   "x": 40,
-   "y": 532,
-   "w": 272,
-   "h": 1814,
-   "fill": "#eef7fa",
-   "stroke": "#1f6f8b"
-  },
-  {
-   "x": 342,
-   "y": 532,
-   "w": 272,
-   "h": 1814,
-   "fill": "#eff5fc",
-   "stroke": "#1f5f9e"
-  },
-  {
-   "x": 644,
-   "y": 532,
-   "w": 272,
-   "h": 1814,
-   "fill": "#fdf4ea",
-   "stroke": "#b5600f"
-  },
-  {
-   "x": 918,
-   "y": 532,
-   "w": 272,
-   "h": 1814,
-   "fill": "#fcf0f6",
-   "stroke": "#a3336b"
-  },
-  {
-   "x": 1220,
-   "y": 532,
-   "w": 272,
-   "h": 1814,
-   "fill": "#f2f5f8",
-   "stroke": "#46607a"
-  }
- ],
- "row_labels": [
-  {
-   "x": 23,
-   "y": 678,
-   "h": 424,
-   "text": "WHEN & HOW"
-  },
-  {
-   "x": 23,
-   "y": 1142,
-   "h": 470,
-   "text": "WHAT HAPPENS"
-  },
-  {
-   "x": 23,
-   "y": 1652,
-   "h": 686,
-   "text": "WATCH FOR"
-  }
- ],
  "nodes": [
   {
-   "id": "root",
-   "x": 386,
+   "id": "start",
+   "x": 280,
    "y": 10,
-   "w": 760,
-   "kind": "dark",
-   "title": "Gender-affirming care: assess, then climb the REVERSIBILITY ladder",
-   "lines": [
-    "puberty blockers FULLY reversible → gender-affirming hormones PARTIALLY reversible → surgery IRREVERSIBLE",
-    "guidelines: World Professional Association for Transgender Health (WPATH) Standards of Care (SOC) v8, 2022 · Endocrine Society Clinical Practice Guideline, 2017"
-   ]
-  },
-  {
-   "id": "ga",
-   "x": 45,
-   "y": 156,
-   "w": 262,
-   "h": 78,
-   "kind": "plain",
-   "title": "Assess",
-   "lines": [
-    "is it gender dysphoria?"
-   ]
-  },
-  {
-   "id": "gb",
-   "x": 347,
-   "y": 156,
-   "w": 262,
-   "h": 78,
-   "kind": "plain",
-   "title": "FULLY reversible",
-   "lines": [
-    "pauses puberty"
-   ]
-  },
-  {
-   "id": "gc",
-   "x": 649,
-   "y": 156,
-   "w": 536,
-   "h": 78,
-   "kind": "plain",
-   "title": "PARTIALLY reversible: gender-affirming hormones",
-   "lines": [
-    "two goals: 1 · SUPPRESS endogenous sex hormones and the secondary sex characteristics of the designated gender · 2 · REPLACE, as for a hypogonadal patient"
-   ]
-  },
-  {
-   "id": "gd",
-   "x": 1225,
-   "y": 156,
-   "w": 262,
-   "h": 78,
-   "kind": "plain",
-   "title": "IRREVERSIBLE",
-   "lines": [
-    "the last step"
-   ]
-  },
-  {
-   "id": "t1",
-   "x": 649,
-   "y": 274,
-   "w": 536,
-   "h": 186,
-   "kind": "plain",
-   "title": "Criteria for hormones",
-   "lines": [
-    "ADULTS (WPATH): persistent, well-documented gender dysphoria · capacity for a fully informed decision and consent · age of majority · significant medical or mental health concerns reasonably well-CONTROLLED",
-    "after a psychosocial assessment + informed consent · referral from the mental health professional who assessed (unless the hormone provider is qualified to assess)",
-    "ADOLESCENTS: confirmed persistence of gender incongruence · able to consent · preferably parental consent/support · usually ~16 y, earlier if compelling reasons · decided by team, adolescent + family"
-   ]
-  },
-  {
-   "id": "asm_head_0_0",
-   "x": 45,
-   "y": 540,
-   "w": 262,
-   "h": 98,
-   "kind": "asm_h",
-   "title": "Gender dysphoria",
-   "lines": [
-    "DISCONTENT: body or assigned gender INCONGRUENT with gender identity",
-    "with social stigma, isolation, rejection"
-   ]
-  },
-  {
-   "id": "pb_head_0_0",
-   "x": 347,
-   "y": 540,
-   "w": 262,
-   "h": 98,
-   "kind": "pb_h",
-   "title": "Puberty blockers",
-   "lines": [
-    "hit the PAUSE button on puberty"
-   ]
-  },
-  {
-   "id": "mas_head_0_0",
-   "x": 649,
-   "y": 540,
-   "w": 262,
-   "h": 98,
-   "kind": "mas_h",
-   "title": "Masculinizing: TESTOSTERONE",
-   "lines": [
-    "transgender males · FTM (female-to-male)"
-   ]
-  },
-  {
-   "id": "fem_head_0_0",
-   "x": 923,
-   "y": 540,
-   "w": 262,
-   "h": 98,
-   "kind": "fem_h",
-   "title": "Feminizing: ESTROGEN ± anti-androgen",
-   "lines": [
-    "transgender females · MTF (male-to-female)"
-   ]
-  },
-  {
-   "id": "srg_head_0_0",
-   "x": 1225,
-   "y": 540,
-   "w": 262,
-   "h": 98,
-   "kind": "srg_h",
-   "title": "Surgery",
-   "lines": [
-    "gender re-assignment surgery",
-    "IRREVERSIBLE"
-   ]
-  },
-  {
-   "id": "asm_when_0_0",
-   "x": 45,
-   "y": 678,
-   "w": 262,
-   "h": 204,
-   "kind": "asm_t",
-   "title": "Features",
-   "lines": [
-    "marked, persistent INCONGRUENCE: perceived gender vs assigned sex",
-    "desire to transition + be accepted in the experienced gender",
-    "strong DISLIKE of sexual anatomy or anticipated pubertal changes",
-    "desire for sex characteristics to match",
-    "children: make-believe, toys, activities, playmates of the experienced gender"
-   ]
-  },
-  {
-   "id": "asm_when_1_0",
-   "x": 45,
-   "y": 904,
-   "w": 262,
-   "h": 62,
-   "kind": "asm_t",
-   "title": "INSISTENCE · PERSISTENCE · CONSISTENCE",
-   "lines": []
-  },
-  {
-   "id": "asm_when_2_0",
-   "x": 45.0,
-   "y": 988,
-   "w": 126.0,
+   "w": 440,
    "h": 114,
-   "kind": "asm_w",
-   "title": "Canada 2022",
+   "kind": "plain",
+   "title": "Gender dysphoria?",
    "lines": [
-    "1 in 300 aged 15+ trans or non-binary",
-    "2/3 under 35"
+    "DISCONTENT: body or assigned gender INCONGRUENT with gender identity, with stigma, isolation, rejection",
+    "~Canada 2022: 1 in 300 aged 15+ trans or non-binary · adolescents 1.2–4.1%"
    ]
   },
   {
-   "id": "asm_when_2_1",
-   "x": 181.0,
-   "y": 988,
-   "w": 126.0,
-   "h": 114,
-   "kind": "asm_w",
-   "title": "Adolescents",
+   "id": "assess",
+   "x": 280,
+   "y": 164,
+   "w": 440,
+   "h": 150,
+   "kind": "plain",
+   "title": "Assess: four questions",
    "lines": [
-    "1.2–4.1% report a gender identity unlike assigned sex"
+    "1 · gender identity: \"born in the wrong body?\"",
+    "2 · persistence: \"how long have you felt a girl/boy?\" · \"how did puberty affect you?\"",
+    "3 · gender non-conforming behaviour: toys, underwear, swimwear, fantasy characters",
+    "4 · source of distress: \"what do you think about your body?\""
    ]
   },
   {
-   "id": "pb_when_0_0",
-   "x": 347,
-   "y": 678,
-   "w": 262,
-   "h": 246,
-   "kind": "pb_t",
-   "title": "Criteria",
-   "lines": [
-    "long-lasting gender nonconformity or dysphoria",
-    "dysphoria WORSENED with the onset of puberty",
-    "co-existing psychological, medical or social problems addressed",
-    "informed consent"
-   ]
-  },
-  {
-   "id": "pb_when_1_0",
-   "x": 347,
-   "y": 946,
-   "w": 262,
-   "h": 156,
-   "kind": "bad",
-   "title": "TANNER 2 reached",
-   "lines": [
-    "no hormonal therapy until puberty has STARTED"
-   ]
-  },
-  {
-   "id": "mas_when_0_0",
-   "x": 649,
-   "y": 678,
-   "w": 262,
-   "h": 163,
-   "kind": "mas_t",
-   "title": "Regimens",
-   "lines": [
-    "enanthate or cypionate 100–200 mg intramuscular (IM) every 2 wk, or subcutaneous (SC) 50% weekly",
-    "undecanoate 1000 mg every 12 wk",
-    "gel 1.6% 50–100 mg/d · patch 2.5–7.5 mg/d"
-   ]
-  },
-  {
-   "id": "mas_when_1_0",
-   "x": 649.0,
-   "y": 863,
-   "w": 126.0,
-   "h": 127,
-   "kind": "mas_w",
-   "title": "Injection",
-   "lines": [
-    "every 2–4 wk · fluctuating T (testosterone): \"roller coaster\""
-   ]
-  },
-  {
-   "id": "mas_when_1_1",
-   "x": 785.0,
-   "y": 863,
-   "w": 126.0,
-   "h": 127,
-   "kind": "mas_w",
-   "title": "Transdermal",
-   "lines": [
-    "daily · patch irritation · contamination · sweating"
-   ]
-  },
-  {
-   "id": "mas_when_2_0",
-   "x": 649,
-   "y": 1012,
-   "w": 262,
-   "h": 91,
-   "kind": "warn",
-   "title": "Oral: 2–3× daily",
-   "lines": [
-    "needs fatty food · level CANNOT be monitored"
-   ]
-  },
-  {
-   "id": "fem_when_0_0",
-   "x": 923,
-   "y": 678,
-   "w": 262,
-   "h": 201,
-   "kind": "fem_t",
-   "title": "Estradiol",
-   "lines": [
-    "oral 2–6 mg/d",
-    "patch 0.025–0.2 mg/d, new patch every 3–5 d",
-    "valerate or cypionate IM 5–30 mg every 2 wk, or 2–10 mg weekly"
-   ]
-  },
-  {
-   "id": "fem_when_1_0",
-   "x": 923.0,
-   "y": 901,
-   "w": 126.0,
-   "h": 201,
-   "kind": "fem_w",
-   "title": "Anti-androgen",
-   "lines": [
-    "spirono-lactone 100–300 mg/d · cyproterone acetate 25–50 mg/d"
-   ]
-  },
-  {
-   "id": "fem_when_1_1",
-   "x": 1059.0,
-   "y": 901,
-   "w": 126.0,
-   "h": 201,
-   "kind": "fem_w",
-   "title": "GnRH agonist",
-   "lines": [
-    "3.75 mg SC monthly or 11.25 mg SC 3-monthly"
-   ]
-  },
-  {
-   "id": "srg_when_0_0",
-   "x": 1225,
-   "y": 678,
-   "w": 262,
-   "h": 163,
-   "kind": "srg_t",
-   "title": "1 · Referral (WPATH)",
-   "lines": [
-    "1 or 2 (by surgery type) from a qualified mental health professional",
-    "documents history, progress + eligibility",
-    "ONTARIO: TWO health care providers must support it"
-   ]
-  },
-  {
-   "id": "srg_when_1_0",
-   "x": 1225,
-   "y": 863,
-   "w": 262,
-   "h": 109,
-   "kind": "bad",
-   "title": "2 · GENITAL surgery not until",
-   "lines": [
-    "legal age of MAJORITY + ≥ 1 year living continuously in the intended gender role"
-   ]
-  },
-  {
-   "id": "srg_when_2_0",
-   "x": 1225,
-   "y": 994,
-   "w": 262,
-   "h": 109,
-   "kind": "srg_w",
-   "title": "TOP surgery can be earlier",
-   "lines": [
-    "age 16 · hormones × 1 year · patience",
-    "~preferably after ample time in the role"
-   ]
-  },
-  {
-   "id": "asm_what_0_0",
-   "x": 45.0,
-   "y": 1142,
-   "w": 126.0,
-   "h": 213,
-   "kind": "asm_w",
-   "title": "1 · Gender identity",
-   "lines": [
-    "\"born in the wrong body? ever felt like that?\""
-   ]
-  },
-  {
-   "id": "asm_what_0_1",
-   "x": 181.0,
-   "y": 1142,
-   "w": 126.0,
-   "h": 213,
-   "kind": "asm_w",
-   "title": "2 · Persistence",
-   "lines": [
-    "\"how long have you felt a girl/boy?\" · \"how did puberty affect you?\""
-   ]
-  },
-  {
-   "id": "asm_what_1_0",
-   "x": 45.0,
-   "y": 1377,
-   "w": 126.0,
-   "h": 235,
-   "kind": "asm_w",
-   "title": "3 · Gender non- conforming behaviour",
-   "lines": [
-    "toys · underwear · swimwear · fantasy characters"
-   ]
-  },
-  {
-   "id": "asm_what_1_1",
-   "x": 181.0,
-   "y": 1377,
-   "w": 126.0,
-   "h": 235,
-   "kind": "asm_w",
-   "title": "4 · Source of distress",
-   "lines": [
-    "\"what thoughts make you sad?\" · \"what do you think about your body?\""
-   ]
-  },
-  {
-   "id": "pb_what_0_0",
-   "x": 347,
-   "y": 1142,
-   "w": 262,
-   "h": 232,
-   "kind": "pb_t",
-   "title": "Buys time",
-   "lines": [
-    "to assess PERSISTENCE of the affirmed gender as the child matures, before the physical changes of puberty",
-    "improved behaviour, emotional + depressive symptoms",
-    "~GnRH (gonadotropin-releasing hormone) agonist, e.g. leuprolide †"
-   ]
-  },
-  {
-   "id": "pb_what_1_0",
-   "x": 347.0,
-   "y": 1396,
-   "w": 126.0,
-   "h": 216,
-   "kind": "pb_w",
-   "title": "Slows growth",
-   "lines": [
-    "puberty · linear growth · androgen- dependent hair · voice deepening"
-   ]
-  },
-  {
-   "id": "pb_what_1_1",
-   "x": 483.0,
-   "y": 1396,
-   "w": 126.0,
-   "h": 216,
-   "kind": "pb_w",
-   "title": "Lessens changes",
-   "lines": [
-    "breast or testicular/ penile growth · periods · libido · \"teenage behaviour\""
-   ]
-  },
-  {
-   "id": "mas_what_0_0",
-   "x": 649,
-   "y": 1142,
-   "w": 262,
-   "h": 106,
-   "kind": "mas_t",
-   "title": "Onset 1–6 months",
-   "lines": [
-    "skin oiliness/acne · fat redistribution · periods STOP · clitoral enlargement · vaginal atrophy"
-   ]
-  },
-  {
-   "id": "mas_what_1_0",
-   "x": 649,
-   "y": 1270,
-   "w": 262,
-   "h": 106,
-   "kind": "mas_t",
-   "title": "Onset 6–12 months",
-   "lines": [
-    "facial/body hair (max 4–5 y) · scalp hair loss · muscle mass/strength (max 2–5 y) · voice DEEPENS (max 1–2 y)"
-   ]
-  },
-  {
-   "id": "mas_what_2_0",
-   "x": 649.0,
-   "y": 1398,
-   "w": 126.0,
-   "h": 214,
-   "kind": "mas_w",
-   "title": "PERMANENT",
-   "lines": [
-    "hair growth · height ↑ · bone mineral content (BMC) ↑ · deeper voice · clitoris enlarged, vaginal dryness · male-pattern balding"
-   ]
-  },
-  {
-   "id": "mas_what_2_1",
-   "x": 785.0,
-   "y": 1398,
-   "w": 126.0,
-   "h": 214,
-   "kind": "mas_w",
-   "title": "NOT permanent",
-   "lines": [
-    "muscle mass ↑ · libido ↑ · no periods · acne",
-    "UNKNOWN: fertility; uterus, cervix, breasts, ovaries"
-   ]
-  },
-  {
-   "id": "fem_what_0_0",
-   "x": 923,
-   "y": 1142,
-   "w": 262,
-   "h": 78,
-   "kind": "fem_t",
-   "title": "Onset 1–3 months",
-   "lines": [
-    "↓ sexual desire · ↓ spontaneous erections (max 3–6 mo)"
-   ]
-  },
-  {
-   "id": "fem_what_1_0",
-   "x": 923,
-   "y": 1242,
-   "w": 262,
-   "h": 96,
-   "kind": "fem_t",
-   "title": "Onset 3–6 months",
-   "lines": [
-    "fat redistribution · ↓ muscle · softer, less oily skin · BREAST growth · ↓ testicular volume (max 2–3 y)"
-   ]
-  },
-  {
-   "id": "fem_what_2_0",
-   "x": 923,
-   "y": 1360,
-   "w": 262,
-   "h": 78,
-   "kind": "fem_w",
-   "title": "Slow or none",
-   "lines": [
-    "terminal hair ↓ at 6–12 mo (max > 3 y) · scalp hair variable · VOICE: no change"
-   ]
-  },
-  {
-   "id": "fem_what_3_0",
-   "x": 923.0,
-   "y": 1460,
-   "w": 126.0,
-   "h": 152,
-   "kind": "fem_w",
-   "title": "PERMANENT",
-   "lines": [
-    "breast development · BMC ↑"
-   ]
-  },
-  {
-   "id": "fem_what_3_1",
-   "x": 1059.0,
-   "y": 1460,
-   "w": 126.0,
-   "h": 152,
-   "kind": "fem_w",
-   "title": "NOT permanent",
-   "lines": [
-    "softer skin · less muscle · female fat pattern · less body hair · slower balding"
-   ]
-  },
-  {
-   "id": "srg_what_0_0",
-   "x": 1225,
-   "y": 1142,
-   "w": 262,
-   "h": 260,
-   "kind": "srg_t",
-   "title": "After hormone transition",
-   "lines": [
-    "transgender males: ovariectomy can be considered",
-    "mastectomy done: yearly sub- + periareolar breast exams · not done: mammograms (American Cancer Society)"
-   ]
-  },
-  {
-   "id": "srg_what_1_0",
-   "x": 1225,
-   "y": 1424,
-   "w": 262,
-   "h": 188,
-   "kind": "ok",
-   "title": "Mental health outcomes",
-   "lines": [
-    "with hormones + a multidisciplinary team: like the general population"
-   ]
-  },
-  {
-   "id": "asm_watch_0_0",
-   "x": 45,
-   "y": 1652,
-   "w": 262,
-   "h": 208,
+   "id": "risk",
+   "x": 15,
+   "y": 164,
+   "w": 230,
+   "h": 134,
    "kind": "bad",
    "title": "SUICIDALITY 2–3× more frequent",
    "lines": [
-    "Ontario trans youth: 47% thought about suicide, 19% attempted"
+    "Ontario trans youth: 47% thought about suicide, 19% attempted",
+    "suicide risk 4% with FAMILY SUPPORT vs 60% without"
    ]
   },
   {
-   "id": "asm_watch_1_0",
-   "x": 45,
-   "y": 1882,
-   "w": 262,
-   "h": 208,
-   "kind": "warn",
-   "title": "FAMILY SUPPORT",
-   "lines": [
-    "suicide risk 4% if supportive vs 60% if non-supportive"
-   ]
-  },
-  {
-   "id": "asm_watch_2_0",
-   "x": 45,
-   "y": 2112,
-   "w": 262,
-   "h": 226,
+   "id": "team",
+   "x": 755,
+   "y": 164,
+   "w": 230,
+   "h": 114,
    "kind": "ok",
    "title": "Multidisciplinary care",
    "lines": [
@@ -755,565 +75,324 @@
    ]
   },
   {
-   "id": "pb_watch_0_0",
-   "x": 347,
-   "y": 1652,
-   "w": 262,
-   "h": 306,
+   "id": "tanner",
+   "x": 350,
+   "y": 354,
+   "w": 300,
+   "h": 60,
+   "kind": "plain",
+   "title": "Young person: TANNER 2 reached?",
+   "lines": [
+    "~puberty has started"
+   ]
+  },
+  {
+   "id": "wait",
+   "x": 15,
+   "y": 354,
+   "w": 250,
+   "h": 78,
+   "kind": "warn",
+   "title": "Not yet",
+   "lines": [
+    "NO hormonal therapy until puberty has STARTED"
+   ]
+  },
+  {
+   "id": "block",
+   "x": 270,
+   "y": 464,
+   "w": 460,
+   "h": 186,
+   "kind": "ok",
+   "title": "1 · PUBERTY BLOCKERS: FULLY reversible",
+   "lines": [
+    "hit the PAUSE button: buys time to assess PERSISTENCE before the physical changes of puberty",
+    "criteria: long-lasting nonconformity or dysphoria · WORSENED with puberty · other problems addressed · informed consent",
+    "slows growth, breast or testicular/penile growth, periods, androgen-dependent hair, voice deepening",
+    "improves behaviour, emotional + depressive symptoms",
+    "~gonadotropin-releasing hormone (GnRH) agonist, e.g. leuprolide †"
+   ]
+  },
+  {
+   "id": "fert",
+   "x": 760,
+   "y": 464,
+   "w": 225,
+   "h": 134,
    "kind": "warn",
    "title": "FERTILITY: discuss BEFORE hormones",
    "lines": [
-    "reproductive options first (WPATH)"
+    "oocyte preservation: EXPENSIVE, no provincial plan covers it · may be traumatizing · must be OFF hormones with 1–2 normal periods"
    ]
   },
   {
-   "id": "pb_watch_1_0",
-   "x": 347,
-   "y": 1980,
-   "w": 262,
-   "h": 358,
-   "kind": "pb_w",
-   "title": "Oocyte preservation",
+   "id": "crit",
+   "x": 240,
+   "y": 700,
+   "w": 520,
+   "h": 150,
+   "kind": "plain",
+   "title": "Criteria for hormones",
    "lines": [
-    "EXPENSIVE: no Ministry of Health (MOH) plan covers it",
-    "may be traumatizing",
-    "must be OFF hormones with 1–2 normal periods"
+    "ADULTS (WPATH): persistent, well-documented dysphoria · capacity to consent · age of majority · medical or mental health concerns reasonably well-CONTROLLED",
+    "ADOLESCENTS: confirmed persistence · able to consent · preferably parental support · usually ~16 y · decided by the team, adolescent + family",
+    "~after a psychosocial assessment + informed consent, with a referral from the assessing mental health professional"
    ]
   },
   {
-   "id": "mas_watch_0_0",
-   "x": 649,
-   "y": 1652,
-   "w": 262,
-   "h": 96,
-   "kind": "warn",
-   "title": "Likely ↑ risk (WPATH)",
+   "id": "adult",
+   "x": 15,
+   "y": 700,
+   "w": 200,
+   "h": 60,
+   "kind": "plain",
+   "title": "Adult",
    "lines": [
-    "POLYCYTHEMIA · weight gain · acne · androgenic alopecia (balding) · SLEEP APNEA"
+    "~starts here"
    ]
   },
   {
-   "id": "mas_watch_1_0",
-   "x": 649,
-   "y": 1770,
-   "w": 262,
+   "id": "mas",
+   "x": 15,
+   "y": 910,
+   "w": 480,
+   "h": 168,
+   "kind": "anti",
+   "title": "2 · MASCULINIZING: TESTOSTERONE",
+   "lines": [
+    "two goals: SUPPRESS the designated sex hormones, then REPLACE, as for a hypogonadal patient",
+    "enanthate or cypionate 100–200 mg IM every 2 wk (or SC 50% weekly) · undecanoate 1000 mg every 12 wk · gel 1.6% 50–100 mg/d · patch 2.5–7.5 mg/d",
+    "~injection: \"roller coaster\" levels · oral: 2–3× daily with fatty food, CANNOT be monitored"
+   ]
+  },
+  {
+   "id": "fem",
+   "x": 505,
+   "y": 910,
+   "w": 480,
+   "h": 168,
+   "kind": "ana",
+   "title": "2 · FEMINIZING: ESTROGEN ± anti-androgen",
+   "lines": [
+    "two goals: SUPPRESS the designated sex hormones, then REPLACE, as for a hypogonadal patient",
+    "estradiol: oral 2–6 mg/d · patch 0.025–0.2 mg/d every 3–5 d · IM valerate or cypionate 5–30 mg every 2 wk",
+    "anti-androgen: spironolactone 100–300 mg/d · cyproterone acetate 25–50 mg/d · or GnRH agonist 3.75 mg SC monthly"
+   ]
+  },
+  {
+   "id": "mas_e",
+   "x": 15,
+   "y": 1112,
+   "w": 480,
+   "h": 168,
+   "kind": "plain",
+   "title": "Effects (partially reversible)",
+   "lines": [
+    "1–6 months: oily skin, acne · fat redistribution · periods STOP · clitoral enlargement · vaginal atrophy",
+    "6–12 months: facial/body hair · scalp hair loss · muscle (max 2–5 y) · voice DEEPENS (max 1–2 y)",
+    "PERMANENT: hair growth · deeper voice · clitoris · male-pattern balding · height + bone mineral ↑",
+    "not permanent: muscle · libido · no periods · acne · UNKNOWN: fertility"
+   ]
+  },
+  {
+   "id": "fem_e",
+   "x": 505,
+   "y": 1112,
+   "w": 480,
+   "h": 168,
+   "kind": "plain",
+   "title": "Effects (partially reversible)",
+   "lines": [
+    "1–3 months: ↓ sexual desire · ↓ spontaneous erections",
+    "3–6 months: fat redistribution · ↓ muscle · softer skin · BREAST growth (max 2–3 y) · ↓ testicular volume",
+    "slow or none: terminal hair ↓ (max > 3 y) · scalp hair variable · VOICE: no change",
+    "PERMANENT: breast development · bone mineral ↑ · not permanent: skin, muscle, fat pattern, body hair"
+   ]
+  },
+  {
+   "id": "mas_r",
+   "x": 15,
+   "y": 1314,
+   "w": 480,
    "h": 132,
-   "kind": "mas_w",
-   "title": "Possible ↑ risk",
+   "kind": "warn",
+   "title": "Risks + monitoring",
    "lines": [
-    "liver enzymes ↑ · HYPERLIPIDEMIA",
-    "with risk factors (e.g. age): psychiatric destabilization at high T · cardiovascular disease (CVD) · hypertension · type 2 diabetes"
+    "likely: POLYCYTHEMIA · weight gain · acne · balding · SLEEP APNEA",
+    "possible: liver enzymes ↑ · HYPERLIPIDEMIA · with risk factors: psychiatric destabilization, CVD, hypertension, type 2 diabetes",
+    "monitor every 3 mo in year 1, then 1–2×/yr: T 400–700 ng/dL (midway between injections) · hematocrit · weight, BP, lipids"
    ]
   },
   {
-   "id": "mas_watch_2_0",
-   "x": 649,
-   "y": 1924,
-   "w": 262,
-   "h": 222,
-   "kind": "mas_t",
-   "title": "MONITOR (Endocrine Society)",
+   "id": "fem_r",
+   "x": 505,
+   "y": 1314,
+   "w": 480,
+   "h": 132,
+   "kind": "warn",
+   "title": "Risks + monitoring",
    "lines": [
-    "review every 3 mo in year 1, then 1–2×/yr",
-    "T every 3 mo until normal male range: 400–700 ng/dL MIDWAY between enanthate/cypionate injections · undecanoate: just before the next dose (< 400 → shorten interval) · gel: after ≥ 1 wk, ≥ 2 h after applying",
-    "hematocrit or hemoglobin: baseline, every 3 mo in year 1, then 1–2×/yr · weight, blood pressure (BP), lipids"
+    "likely: VENOUS THROMBOEMBOLISM (more with ORAL estrogen) · gallstones · liver enzymes ↑ · weight gain · hypertriglyceridemia",
+    "possible: hypertension · PROLACTINOMA · type 2 diabetes with risk factors",
+    "monitor every 3 mo in year 1, then 1–2×/yr: T < 50 ng/dL · estradiol ≤ 100–200 pg/mL · POTASSIUM on spironolactone"
    ]
   },
   {
-   "id": "mas_watch_3_0",
-   "x": 649.0,
-   "y": 2168,
-   "w": 126.0,
-   "h": 170,
-   "kind": "mas_w",
-   "title": "Total T + SHBG",
-   "lines": [
-    "sex hormone-binding globulin falls in OBESITY · free androgen index = T / SHBG"
-   ]
-  },
-  {
-   "id": "mas_watch_3_1",
-   "x": 785.0,
-   "y": 2168,
-   "w": 126.0,
-   "h": 170,
-   "kind": "mas_w",
-   "title": "Screening",
-   "lines": [
-    "bone if T stopped or not taken · cervix if present · breasts"
-   ]
-  },
-  {
-   "id": "fem_watch_0_0",
-   "x": 923,
-   "y": 1652,
-   "w": 262,
-   "h": 91,
+   "id": "surg",
+   "x": 250,
+   "y": 1506,
+   "w": 500,
+   "h": 168,
    "kind": "bad",
-   "title": "VENOUS THROMBOEMBOLISM",
+   "title": "3 · SURGERY: IRREVERSIBLE",
    "lines": [
-    "likely ↑ · greater with ORAL than transdermal estrogen"
-   ]
-  },
-  {
-   "id": "fem_watch_1_0",
-   "x": 923,
-   "y": 1765,
-   "w": 262,
-   "h": 109,
-   "kind": "warn",
-   "title": "Likely ↑ risk (WPATH)",
-   "lines": [
-    "gallstones · liver enzymes ↑ · weight gain · HYPERTRIGLYCERIDEMIA · CVD with risk factors"
-   ]
-  },
-  {
-   "id": "fem_watch_2_0",
-   "x": 923,
-   "y": 1896,
-   "w": 262,
-   "h": 109,
-   "kind": "fem_w",
-   "title": "Possible ↑ risk",
-   "lines": [
-    "hypertension · hyperprolactinemia or PROLACTINOMA · type 2 diabetes with risk factors"
-   ]
-  },
-  {
-   "id": "fem_watch_3_0",
-   "x": 923,
-   "y": 2027,
-   "w": 262,
-   "h": 163,
-   "kind": "fem_t",
-   "title": "MONITOR (Endocrine Society)",
-   "lines": [
-    "review every 3 mo in year 1, then 1–2×/yr",
-    "T + estradiol every 3 mo: T < 50 ng/dL · estradiol ≤ peak physiologic 100–200 pg/mL",
-    "SPIRONOLACTONE: potassium every 3 mo in year 1, then yearly"
-   ]
-  },
-  {
-   "id": "fem_watch_4_0",
-   "x": 923.0,
-   "y": 2212,
-   "w": 126.0,
-   "h": 127,
-   "kind": "fem_w",
-   "title": "Breast cancer",
-   "lines": [
-    "Stein: risk ↑ · WPATH: no ↑ or inconclusive"
-   ]
-  },
-  {
-   "id": "fem_watch_4_1",
-   "x": 1059.0,
-   "y": 2212,
-   "w": 126.0,
-   "h": 127,
-   "kind": "fem_w",
-   "title": "Screening",
-   "lines": [
-    "cancer as usual, for tissues present · bone density"
-   ]
-  },
-  {
-   "id": "srg_watch_0_0",
-   "x": 1225,
-   "y": 1652,
-   "w": 262,
-   "h": 686,
-   "kind": "warn",
-   "title": "SHARED responsibility",
-   "lines": [
-    "mental health professionals who recommend surgery share ETHICAL + LEGAL responsibility with the surgeon"
+    "referral (WPATH): 1 or 2 letters from a qualified mental health professional · ONTARIO: TWO providers must support it",
+    "GENITAL surgery not until the age of MAJORITY + ≥ 1 year living in the intended gender role",
+    "TOP surgery can be earlier: age 16 · hormones × 1 year",
+    "~those who recommend surgery share ETHICAL + LEGAL responsibility with the surgeon"
    ]
   }
  ],
  "edges": [
   {
-   "from": "root",
-   "to": "ga",
-   "path": "M766.0 106V131H176.0V156"
+   "from": "_any1",
+   "to": "start"
   },
   {
-   "from": "root",
-   "to": "gb",
-   "path": "M766.0 106V131H478.0V156"
+   "from": "start",
+   "to": "assess",
+   "path": "M500.0 124V164"
   },
   {
-   "from": "root",
-   "to": "gc",
-   "path": "M766.0 106V131H917.0V156"
-  },
-  {
-   "from": "root",
-   "to": "gd",
-   "path": "M766.0 106V131H1356.0V156"
-  },
-  {
-   "from": "gc",
-   "to": "t1",
-   "from_dx": 0
-  },
-  {
-   "from": "asm_when_0_0",
-   "to": "asm_when_1_0"
-  },
-  {
-   "from": "asm_when_1_0",
-   "to": "asm_when_2_0",
-   "from_dx": -68.0
-  },
-  {
-   "from": "asm_when_1_0",
-   "to": "asm_when_2_1",
-   "from_dx": 68.0
-  },
-  {
-   "from": "pb_when_0_0",
-   "to": "pb_when_1_0"
-  },
-  {
-   "from": "mas_when_0_0",
-   "to": "mas_when_1_0",
-   "from_dx": -68.0
-  },
-  {
-   "from": "mas_when_0_0",
-   "to": "mas_when_1_1",
-   "from_dx": 68.0
-  },
-  {
-   "from": "mas_when_1_0",
-   "to": "mas_when_2_0",
-   "to_dx": -68.0
-  },
-  {
-   "from": "mas_when_1_1",
-   "to": "mas_when_2_0",
-   "to_dx": 68.0
-  },
-  {
-   "from": "fem_when_0_0",
-   "to": "fem_when_1_0",
-   "from_dx": -68.0
-  },
-  {
-   "from": "fem_when_0_0",
-   "to": "fem_when_1_1",
-   "from_dx": 68.0
-  },
-  {
-   "from": "srg_when_0_0",
-   "to": "srg_when_1_0"
-  },
-  {
-   "from": "srg_when_1_0",
-   "to": "srg_when_2_0"
-  },
-  {
-   "from": "asm_what_0_0",
-   "to": "asm_what_1_0",
+   "from": "assess",
+   "to": "risk",
+   "path": "M280 239H245",
    "dashed": true
   },
   {
-   "from": "asm_what_0_1",
-   "to": "asm_what_1_1",
+   "from": "assess",
+   "to": "team",
+   "path": "M720 239H755",
    "dashed": true
   },
   {
-   "from": "pb_what_0_0",
-   "to": "pb_what_1_0",
-   "from_dx": -68.0,
-   "dashed": true
+   "from": "assess",
+   "to": "tanner",
+   "path": "M500.0 314V354"
   },
   {
-   "from": "pb_what_0_0",
-   "to": "pb_what_1_1",
-   "from_dx": 68.0,
-   "dashed": true
-  },
-  {
-   "from": "mas_what_0_0",
-   "to": "mas_what_1_0",
-   "dashed": true
-  },
-  {
-   "from": "mas_what_1_0",
-   "to": "mas_what_2_0",
-   "from_dx": -68.0,
-   "dashed": true
-  },
-  {
-   "from": "mas_what_1_0",
-   "to": "mas_what_2_1",
-   "from_dx": 68.0,
-   "dashed": true
-  },
-  {
-   "from": "fem_what_0_0",
-   "to": "fem_what_1_0",
-   "dashed": true
-  },
-  {
-   "from": "fem_what_1_0",
-   "to": "fem_what_2_0",
-   "dashed": true
-  },
-  {
-   "from": "fem_what_2_0",
-   "to": "fem_what_3_0",
-   "from_dx": -68.0,
-   "dashed": true
-  },
-  {
-   "from": "fem_what_2_0",
-   "to": "fem_what_3_1",
-   "from_dx": 68.0,
-   "dashed": true
-  },
-  {
-   "from": "srg_what_0_0",
-   "to": "srg_what_1_0",
-   "dashed": true
-  },
-  {
-   "from": "asm_watch_0_0",
-   "to": "asm_watch_1_0"
-  },
-  {
-   "from": "asm_watch_1_0",
-   "to": "asm_watch_2_0"
-  },
-  {
-   "from": "pb_watch_0_0",
-   "to": "pb_watch_1_0"
-  },
-  {
-   "from": "mas_watch_0_0",
-   "to": "mas_watch_1_0"
-  },
-  {
-   "from": "mas_watch_1_0",
-   "to": "mas_watch_2_0"
-  },
-  {
-   "from": "mas_watch_2_0",
-   "to": "mas_watch_3_0",
-   "from_dx": -68.0
-  },
-  {
-   "from": "mas_watch_2_0",
-   "to": "mas_watch_3_1",
-   "from_dx": 68.0
-  },
-  {
-   "from": "fem_watch_0_0",
-   "to": "fem_watch_1_0"
-  },
-  {
-   "from": "fem_watch_1_0",
-   "to": "fem_watch_2_0"
-  },
-  {
-   "from": "fem_watch_2_0",
-   "to": "fem_watch_3_0"
-  },
-  {
-   "from": "fem_watch_3_0",
-   "to": "fem_watch_4_0",
-   "from_dx": -68.0
-  },
-  {
-   "from": "fem_watch_3_0",
-   "to": "fem_watch_4_1",
-   "from_dx": 68.0
-  },
-  {
-   "from": "asm_head_0_0",
-   "to": "asm_when_0_0"
-  },
-  {
-   "from": "asm_when_2_0",
-   "to": "asm_what_0_0"
-  },
-  {
-   "from": "asm_when_2_1",
-   "to": "asm_what_0_1"
-  },
-  {
-   "from": "asm_what_1_0",
-   "to": "asm_watch_0_0",
-   "to_dx": -68.0
-  },
-  {
-   "from": "asm_what_1_1",
-   "to": "asm_watch_0_0",
-   "to_dx": 68.0
-  },
-  {
-   "from": "ga",
-   "to": "asm_head_0_0",
-   "from_dx": 0
-  },
-  {
-   "from": "pb_head_0_0",
-   "to": "pb_when_0_0"
-  },
-  {
-   "from": "pb_when_1_0",
-   "to": "pb_what_0_0"
-  },
-  {
-   "from": "pb_what_1_0",
-   "to": "pb_watch_0_0",
-   "to_dx": -68.0
-  },
-  {
-   "from": "pb_what_1_1",
-   "to": "pb_watch_0_0",
-   "to_dx": 68.0
-  },
-  {
-   "from": "gb",
-   "to": "pb_head_0_0",
-   "from_dx": 0
-  },
-  {
-   "from": "mas_head_0_0",
-   "to": "mas_when_0_0"
-  },
-  {
-   "from": "mas_when_2_0",
-   "to": "mas_what_0_0"
-  },
-  {
-   "from": "mas_what_2_0",
-   "to": "mas_watch_0_0",
-   "to_dx": -68.0
-  },
-  {
-   "from": "mas_what_2_1",
-   "to": "mas_watch_0_0",
-   "to_dx": 68.0
-  },
-  {
-   "from": "t1",
-   "to": "mas_head_0_0",
-   "from_dx": -137,
-   "label": "masculinizing",
+   "from": "tanner",
+   "to": "wait",
+   "path": "M350 384H265",
+   "label": "no",
    "label_at": [
-    780.0,
-    500
+    308,
+    375
    ]
   },
   {
-   "from": "fem_head_0_0",
-   "to": "fem_when_0_0"
-  },
-  {
-   "from": "fem_when_1_0",
-   "to": "fem_what_0_0",
-   "to_dx": -68.0
-  },
-  {
-   "from": "fem_when_1_1",
-   "to": "fem_what_0_0",
-   "to_dx": 68.0
-  },
-  {
-   "from": "fem_what_3_0",
-   "to": "fem_watch_0_0",
-   "to_dx": -68.0
-  },
-  {
-   "from": "fem_what_3_1",
-   "to": "fem_watch_0_0",
-   "to_dx": 68.0
-  },
-  {
-   "from": "t1",
-   "to": "fem_head_0_0",
-   "from_dx": 137,
-   "label": "feminizing",
+   "from": "tanner",
+   "to": "block",
+   "path": "M500.0 414V464",
+   "label": "yes",
    "label_at": [
-    1054.0,
-    500
+    504.0,
+    439
    ]
   },
   {
-   "from": "srg_head_0_0",
-   "to": "srg_when_0_0"
+   "from": "block",
+   "to": "fert",
+   "path": "M730 557H760",
+   "dashed": true
   },
   {
-   "from": "srg_when_2_0",
-   "to": "srg_what_0_0"
+   "from": "block",
+   "to": "crit",
+   "path": "M500.0 650V700"
   },
   {
-   "from": "srg_what_1_0",
-   "to": "srg_watch_0_0"
+   "from": "adult",
+   "to": "crit",
+   "path": "M215 730H240"
   },
   {
-   "from": "gd",
-   "to": "srg_head_0_0",
-   "from_dx": 0
+   "from": "crit",
+   "to": "mas",
+   "path": "M500.0 850V880H255.0V910",
+   "label": "transgender males (FTM)",
+   "label_at": [
+    259.0,
+    895
+   ]
+  },
+  {
+   "from": "crit",
+   "to": "fem",
+   "path": "M500.0 850V880H745.0V910",
+   "label": "transgender females (MTF)",
+   "label_at": [
+    749.0,
+    895
+   ]
+  },
+  {
+   "from": "mas",
+   "to": "mas_e",
+   "path": "M255.0 1078V1112"
+  },
+  {
+   "from": "fem",
+   "to": "fem_e",
+   "path": "M745.0 1078V1112"
+  },
+  {
+   "from": "mas_e",
+   "to": "mas_r",
+   "path": "M255.0 1280V1314"
+  },
+  {
+   "from": "fem_e",
+   "to": "fem_r",
+   "path": "M745.0 1280V1314"
+  },
+  {
+   "from": "mas_r",
+   "to": "surg",
+   "path": "M255.0 1446V1476H500V1506"
+  },
+  {
+   "from": "fem_r",
+   "to": "surg",
+   "path": "M745.0 1446V1476H500"
   }
  ],
  "panels": [
   {
-   "x": 45,
-   "y": 2372,
-   "w": 350,
+   "x": 15,
+   "y": 1708,
+   "w": 480,
    "title": "Before starting hormones (WPATH)",
    "items": [
-    "1 · evaluate: physical transition goals, health history, exam, risk assessment, relevant labs",
-    "2 · discuss expected + adverse effects, incl. ↓ FERTILITY: reproductive options BEFORE starting",
-    "3 · confirm capacity to understand risks + benefits",
-    "4 · ongoing monitoring: exam + labs for effect and side effects",
-    "5 · communicate with primary care, mental health, surgeon",
-    "6 · if needed, a brief written statement of medical supervision"
-   ],
-   "cols": 1
+    "evaluate goals, history, exam, risks, relevant labs",
+    "discuss effects + side effects, incl. ↓ FERTILITY: options BEFORE starting",
+    "confirm capacity to understand risks + benefits",
+    "ongoing monitoring · communicate with primary care, mental health, surgeon",
+    "after transition: ovariectomy can be considered · breast exams or mammograms as tissue remains"
+   ]
   },
   {
-   "x": 409,
-   "y": 2372,
-   "w": 350,
-   "title": "Role of the endocrinologist",
+   "x": 505,
+   "y": 1708,
+   "w": 480,
+   "title": "Terms + screening",
    "items": [
-    "supports diagnosis + treatment",
-    "initial treatment considerations (short + long term)",
-    "advice when issues arise",
-    "NOT necessarily diagnostic",
-    "cannot see all patients over the long term"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 773,
-   "y": 2372,
-   "w": 350,
-   "title": "Four terms",
-   "items": [
-    "SEX: biological (chromosomes, gonads, genitalia) · male, female, DSD (difference of sex development)",
-    "GENDER: psychological (attitudes, feelings, behaviours)",
-    "GENDER IDENTITY: the person's own articulation · cis-gender, trans-gender, gender non-conforming",
-    "SEXUAL ORIENTATION: the sex of those one is attracted to"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 1137,
-   "y": 2372,
-   "w": 350,
-   "title": "Bone + cancer screening (Endocrine Society)",
-   "items": [
-    "transgender females: bone mineral density (BMD) at baseline; low risk: osteoporosis screen at 60, or if not taking hormones",
-    "transgender males: osteoporosis screen if T stopped, not taken, or bone-loss risks · cervix per American College of Obstetricians and Gynecologists",
-    "menorrhagia on testosterone: gynecologist"
-   ],
-   "cols": 1
+    "SEX: biological · GENDER: psychological · GENDER IDENTITY: the person's own · SEXUAL ORIENTATION: who one is attracted to",
+    "breast cancer on estrogen: Stein ↑ risk · WPATH no ↑ or inconclusive",
+    "bone density: transgender females at baseline · transgender males if T stopped or not taken",
+    "cancer screening as usual for tissues present (cervix, breasts)"
+   ]
   }
  ]
 }
