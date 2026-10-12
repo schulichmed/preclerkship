@@ -235,6 +235,20 @@
     return names.join(" + ");
   }
 
+  /* An in-class session is a live class, not a recorded lecture, and the
+     lecture list should say which is which. tools/charts_from_vault.py sets
+     inClass; the tag then carries what the vault's "In-Class - " prefix said,
+     so the prefix is dropped from the title rather than said twice. */
+  function displayName(lec) {
+    return lec.inClass ? String(lec.name).replace(/^In-Class - /, "") : lec.name;
+  }
+
+  function inClassTag() {
+    var t = el("span", "inclass-tag", "In-class");
+    t.title = "Live in-class session, not a recorded lecture";
+    return t;
+  }
+
   function buildNote(lec, opts) {
     opts = opts || {};
     var art = el("article", "note");
@@ -247,10 +261,11 @@
 
     var head = el("div", "note-head");
     head.appendChild(el("span", "note-num", lec.num));
+    if (lec.inClass) head.appendChild(inClassTag());
     /* These notes are not written one per lecture: one chart carries two or
        three of them. The note is titled with every lecture it covers, rather
        than being filed under one and leaving the rest reading as unwritten. */
-    head.appendChild(el("h4", null, lec.name));
+    head.appendChild(el("h4", null, displayName(lec)));
     head.appendChild(el("span", "spacer"));
     /* a note is reported by the block it came from, which in the bank's
        dialog is the question's block and not the page's */
@@ -665,6 +680,8 @@
     written: written,
     coveredTitle: coveredTitle,
     pdfButton: pdfButton,
+    displayName: displayName,
+    inClassTag: inClassTag,
     build: buildNote,
     drawPathways: drawPathways,
     redrawPathways: redrawPathways

@@ -795,6 +795,24 @@ mark.lo .wl{border-bottom-color:#9a7a00;}
     font-weight:600;
 }
 
+/* a live in-class session, told apart from a recorded lecture - in the list
+   and on the note's own heading */
+.inclass-tag{
+    flex-shrink:0;
+    align-self:center;
+    padding:0 5px;
+    font-size:.6rem;
+    font-weight:600;
+    line-height:1.6;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    font-style:normal;
+    color:var(--q-accent-ink);
+    border:1px solid var(--q-accent);
+    border-radius:4px;
+}
+.lecrow .inclass-tag{margin-right:-3px;}
+
 /* a lecture with no note yet is listed, but not pretending to be one */
 .lecrow.is-gap{opacity:.55;}
 .lecrow.is-gap .lt{font-style:italic;}

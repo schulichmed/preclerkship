@@ -161,6 +161,10 @@
   function shared() { return window.PORTAL_NOTES; }
   function written(lec) { return shared().written(lec); }
   function pdfButton(label, title, onClick) { return shared().pdfButton(label, title, onClick); }
+  function displayName(lec) { return shared().displayName(lec); }
+  /* a placeholder or a list row is an in-class session too, and says so the
+     same way the note does */
+  function addInClassTag(box, lec) { if (lec.inClass) box.appendChild(shared().inClassTag()); }
   function redrawPathways() { var s = shared(); return s.redrawPathways ? s.redrawPathways() : Promise.resolve(); }
 
   /* The search rule and the highlighter are portal.js's too, shared with the
@@ -176,7 +180,8 @@
     art.dataset.id = lec.key;
     var head = el("div", "note-head");
     head.appendChild(el("span", "note-num", lec.num));
-    head.appendChild(el("h4", null, lec.name));
+    addInClassTag(head, lec);
+    head.appendChild(el("h4", null, displayName(lec)));
     art.appendChild(head);
 
     var p = el("p", "covernote");
@@ -195,7 +200,8 @@
     art.dataset.id = lec.key;
     var head = el("div", "note-head");
     head.appendChild(el("span", "note-num", lec.num));
-    head.appendChild(el("h4", null, lec.name));
+    addInClassTag(head, lec);
+    head.appendChild(el("h4", null, displayName(lec)));
     art.appendChild(head);
     art.appendChild(el("span", "gapnote", "no note yet"));
     return art;
@@ -223,9 +229,10 @@
         row.dataset.k = k;
         row.setAttribute("aria-current", "false");
         row.appendChild(el("span", "ln", lec.num));
-        row.appendChild(el("span", "lt", lec.name));
+        addInClassTag(row, lec);
+        row.appendChild(el("span", "lt", displayName(lec)));
         // the row clips, so the whole name has to be reachable some other way
-        row.title = lec.num + " \u00b7 " + lec.name;
+        row.title = lec.num + " \u00b7 " + (lec.inClass ? "In-class \u00b7 " : "") + displayName(lec);
         row.addEventListener("click", function () { goTo(lec.key); });
         IDX[lec.key] = row;
         frag.appendChild(row);

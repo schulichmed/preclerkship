@@ -383,6 +383,23 @@ def chart_of(path):
 DRAFT_TEXT = ("Built from upper-year notes. "
               "Not yet checked against this year's lecture slides.")
 
+IN_CLASS_PREFIX = u"In-Class - "
+
+
+def is_in_class(name, path):
+    """True for a live in-class session rather than a recorded lecture.
+
+    Most are named "In-Class - ..." in the vault. A few are numbered like a
+    lecture because Elentra numbers them, and carry `session: in-class` in
+    their frontmatter instead; OneNote files their decks under Synch, not
+    Asynch, which is how they were told apart.
+    """
+    if name.startswith(IN_CLASS_PREFIX):
+        return True
+    src = io.open(path, encoding="utf-8").read()
+    m = re.match(r"^---\r?\n(.*?)\r?\n---", src, re.S)
+    return bool(m) and re.search(r"^session:\s*in-class\s*$", m.group(1), re.M) is not None
+
 
 def is_draft(chart):
     """True when the chart opens with the vault's > [!warning] Draft callout."""
@@ -424,6 +441,10 @@ def main(slugs):
                 if not os.path.exists(f):
                     sys.stderr.write("missing: %s\n" % f)
                     continue
+                if is_in_class(lec["name"], f):
+                    lec["inClass"] = True
+                else:
+                    lec.pop("inClass", None)
                 ch = chart_of(f)
                 if not ch:
                     lec["hasNote"] = False
