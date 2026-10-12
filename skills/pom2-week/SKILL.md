@@ -560,8 +560,9 @@ notes. This is the one unautomated step in the chain, so budget for it.
   becomes a tinted option, because the vault note legitimately carries links the site must not.
 - The shipped files are **compact** JSON (`json.dumps` default separators, UTF-8, LF, no trailing
   newline), unlike `data/notes/*.json` which is `indent=1`.
-- The field list is in `pom2/README.md`. `keyed: false`, `unscorable: true` and
-  `retired: true` carry real meaning, do not flatten them.
+- The field list is in `pom2/README.md`. `keyed: false` and `unscorable: true` carry real
+  meaning, do not flatten them. ⭐ **A question retired in the vault is not exported at all** (her call,
+  2026-10-12): the portal shows no retired questions, and the vault's `<!-- retired -->` marker is the record.
 - **A week-only bank gets its week from the lecture, not from the source.** HippoNotes and the
   Schulich Reviews group questions by the week of the year they were written in, and those weeks
   no longer match this year's. Export each such question with `week`, `weekLabel` and `lecture`
