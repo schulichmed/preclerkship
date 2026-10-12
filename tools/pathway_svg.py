@@ -49,6 +49,9 @@ Spec shape (every coordinate is in px on a canvas `width` wide, default 920):
 - `kinds` adds box kinds of the chart's own, each [fill, stroke, title colour,
   body colour], for a chart that gives every disease column its own colour.
   Muted "~" lines stay grey, so keep them off a solid dark fill.
+- `row_labels` names the rows of a column chart down its left edge:
+  [{"x": 22, "y": 400, "h": 300, "text": "PRESENTS AS"}], drawn turned on its
+  side beside a thin bracket from y to y + h. Leave about 30 px of margin.
 - `bands` draws faint rounded rectangles behind everything (a column's tint);
   they take no part in the overlap check.
 - `"dashed": true` on an edge draws it dashed (mermaid's -.- : "goes with", not "leads to").
@@ -356,6 +359,13 @@ class Chart(object):
         bands = ['<rect x="%s" y="%s" width="%s" height="%s" rx="16" fill="%s" stroke="%s" '
                  'stroke-opacity="0.25"/>' % (b["x"], b["y"] + self.top, b["w"], b["h"], b["fill"],
                                               b.get("stroke", P["line"])) for b in s.get("bands", [])]
+        for r in s.get("row_labels", []):
+            x, y0, h = r["x"], r["y"] + self.top, r["h"]
+            bands.append('<path d="M%s %sH%sV%sH%s" fill="none" stroke="%s" stroke-width="1.5"/>'
+                         % (x + 10, y0, x + 6, y0 + h, x + 10, P["line"]))
+            bands.append('<text x="0" y="0" transform="translate(%s %s) rotate(-90)" text-anchor="middle" '
+                         'font-family="%s" font-size="12" font-weight="700" letter-spacing="1.5" fill="%s">%s</text>'
+                         % (x, y0 + h / 2, SANS, P["muted"], escape(r["text"])))
         return head + "\n" + "\n".join(bands + any_parts + self.parts) + "\n</svg>\n"
 
     def check_overlaps(self):
