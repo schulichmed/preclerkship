@@ -15,8 +15,8 @@
 
 const COURSES = ["fom", "pom1", "pom2", "t2c"];
 const REASONS = {
-  question: ["wrong-key", "explanation", "typo", "misfiled", "other"],
-  note: ["wrong", "missing", "typo", "misfiled", "other"],
+  question: ["wrong-key", "explanation", "typo", "misfiled", "outdated", "other"],
+  note: ["wrong", "missing", "typo", "misfiled", "outdated", "other"],
 };
 
 export function kindOf(r) {

@@ -25,7 +25,11 @@ the whole reason the last route is allowed to refuse.
 
 SIX ROUTES, IN ORDER. THE FIRST FIVE ARE EXACT
 ----------------------------------------------
-0. **A question a human re-filed.** A question carrying a `refiled` record was
+0. **A question a human linked or re-filed.** ``tools/review_links.json`` maps a
+   qid to the lecture note(s) a person read it against, for the questions no
+   lookup reaches (Elentra module titles, DSSG and CHSG sessions that span
+   several lectures). It is checked first and never overwritten by a derive.
+   **A question a human re-filed.** A question carrying a `refiled` record was
    read against this year's notes and re-filed under the lecture that teaches
    it, so it keeps the `review` that read gave it: the read outranks a lookup
    of the source's attribution, which is what filed it wrongly to begin with.
@@ -80,6 +84,11 @@ QNOTES = os.path.join(VAULT, "00 - Practice Questions")
 COURSE_VAULT = {"fom": "99 - FoM", "pom1": "99 - PoM 1", "pom2": "99 - PoM 2"}
 
 COURSES = ["fom", "pom1", "pom2", "t2c"]
+
+# qid -> lecture note names, set by hand after reading the question against the note
+HAND_LINKS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "review_links.json")
+HAND_LINKS = (json.load(io.open(HAND_LINKS_PATH, encoding="utf-8"))
+              if os.path.exists(HAND_LINKS_PATH) else {})
 
 
 # A banked question names the SESSION it was asked in, and the vault names the
@@ -273,8 +282,12 @@ def resolve(q, rost, groups):
             seen.add((rec["w"], rec["t"]))
             hits.append(rec)
 
-    # 0. a question re-filed against this year's notes keeps the review that
-    #    read gave it, ahead of the source's own attribution
+    # 0. a question a person linked by hand, then one re-filed against this
+    #    year's notes, keeps the review that read gave it
+    for name in HAND_LINKS.get(q.get("qid"), []):
+        take(name)
+    if hits:
+        return hits, "hand-linked"
     if q.get("refiled") and q.get("review"):
         return q["review"], "refiled"
 

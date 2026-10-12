@@ -29,6 +29,7 @@ REASON_LABEL = {
         "explanation": "The explanation is wrong or missing",
         "typo": "A typo or formatting problem",
         "misfiled": "It belongs to a different week or lecture",
+        "outdated": "It is out of date (an older guideline or lecture)",
         "other": "Something else",
     },
     "note": {
@@ -36,6 +37,7 @@ REASON_LABEL = {
         "missing": "Something important is missing",
         "typo": "A typo or formatting problem",
         "misfiled": "It belongs to a different week or lecture",
+        "outdated": "It is out of date (an older guideline or lecture)",
         "other": "Something else",
     },
 }
