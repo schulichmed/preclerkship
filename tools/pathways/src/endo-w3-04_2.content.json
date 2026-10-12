@@ -1,0 +1,795 @@
+{
+ "name": "disorders of puberty overview",
+ "title": "Disorders of puberty pathway: puberty before 8 in girls or 9 in boys is precocious, and splits into two normal variants (isolated premature thelarche and pubarche) and, by random luteinizing hormone, central (GnRH dependent) or peripheral (GnRH independent) precocious puberty; no signs by 13 in girls or 14 in boys is delayed, and splits into constitutional delay (delayed bone age), primary hypogonadism (LH and FSH high: Turner, Klinefelter) and secondary hypogonadism (LH and FSH low: brain causes, Kallmann); each column gives causes and clues, investigations, and outcome or treatment",
+ "root": {
+  "title": "Is puberty too EARLY or too LATE, and is the brain driving it?",
+  "lines": [
+   "normal onset: GIRLS 8–13 y (1st sign thelarche, breast budding) · BOYS 9–14 y (1st sign testicular volume > 3 mL)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_early",
+   "cols": [
+    0,
+    3
+   ],
+   "title": "PRECOCIOUS puberty: too EARLY",
+   "lines": [
+    "onset BEFORE 8 y in girls · BEFORE 9 y in boys"
+   ]
+  },
+  {
+   "id": "g_late",
+   "cols": [
+    4,
+    6
+   ],
+   "title": "DELAYED puberty: too LATE",
+   "lines": [
+    "NO pubertal signs by 13 y in girls · 14 y in boys",
+    "~absent or incomplete puberty at 2.5 SD above the population mean"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_var",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "One isolated sign only?",
+   "lines": [
+    "normal VARIANTS: no growth spurt"
+   ]
+  },
+  {
+   "id": "t_lh",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "Gonadotropin-releasing hormone (GnRH) dependent?",
+   "lines": [
+    "random luteinizing hormone (LH): more useful than FSH for onset"
+   ]
+  },
+  {
+   "id": "t_late",
+   "cols": [
+    4,
+    6
+   ],
+   "title": "Bone age, LH and follicle-stimulating hormone (FSH)?",
+   "lines": [
+    "sex steroids (estradiol / testosterone) LOW in both hypogonadisms"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "CAUSES & CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "OUTCOME & TREATMENT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "the",
+   "colour": "teal",
+   "drop_from": "t_var",
+   "drop_label": "breast only",
+   "head": [
+    [
+     [
+      "h",
+      "Isolated premature thelarche",
+      [
+       "normal VARIANT",
+       "breast development only"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Age 6 months – 2 years",
+      [
+       "common at this age"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Estrogen",
+      [
+       "very low-grade estrogenization of the vaginal mucosa only"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "NO other estrogen signs",
+      [
+       "no growth spurt · no advance in bone maturation"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Bone age NOT advanced",
+      [
+       "~X-ray of the hands"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Often regresses on its own",
+      [
+       "spontaneous regression"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Rarely progresses",
+      [
+       "to precocious puberty"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pub",
+   "colour": "olive",
+   "drop_from": "t_var",
+   "drop_label": "pubic hair only",
+   "head": [
+    [
+     [
+      "h",
+      "Isolated premature pubarche",
+      [
+       "normal VARIANT",
+       "pubic hair only: ADRENAL"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Age 6–8 years",
+      [
+       "more common in GIRLS"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "± mild acne",
+      [
+       "axillary hair, body odour"
+      ]
+     ],
+     [
+      "w",
+      "Cause",
+      [
+       "physiological ↑ adrenal hormones"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "NO estrogen signs",
+      [
+       "no breast development · no growth spurt"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "warn",
+      "Pubic hair is ADRENAL",
+      [
+       "Tanner-staged, but NOT a marker for the ONSET of puberty"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Slow progression",
+      [
+       "normal final height"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Later risk",
+      [
+       "insulin resistance · later polycystic ovarian syndrome (PCOS) in girls"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cpp",
+   "colour": "blue",
+   "drop_from": "t_lh",
+   "drop_label": "LH > 0.3 mIU/L",
+   "head": [
+    [
+     [
+      "h",
+      "Central precocious puberty (CPP)",
+      [
+       "GnRH DEPENDENT",
+       "early activation of the hypothalamic-pituitary-gonadal (HPG) axis",
+       "LH/FSH ↑ · sex steroids ↑"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "GIRLS: mostly IDIOPATHIC",
+      [
+       "commonest cause of precocious puberty in girls · only the timing or tempo is abnormal"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "BOYS: mostly NOT idiopathic",
+      [
+       "< 50% idiopathic → careful central nervous system (CNS) assessment"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "CNS causes",
+      [
+       "hypothalamic or pineal tumour · hydrocephalus · trauma · radiation · hypothalamic hamartoma, arachnoid cyst"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Boy: testes ≥ 4 mL BOTH sides",
+      [
+       "LH drives the Leydig cells"
+      ]
+     ],
+     [
+      "w",
+      "Rare",
+      [
+       "chronic sex steroid exposure → HPG on"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Random LH",
+      [
+       "> 0.3 mIU/L = central onset",
+       "~low LH alone is insensitive: LH is PULSATILE"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · GnRH (LHRH) STIMULATION test",
+      [
+       "GOLD STANDARD · LH response exaggerated: peak LH > 5 mIU/L confirms"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Bone age",
+      [
+       "maturation accelerated"
+      ]
+     ],
+     [
+      "w",
+      "Pelvic ultrasound",
+      [
+       "uterus, ovaries"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "3 · MRI head",
+      [
+       "if a CNS cause is suspected: BOYS need careful CNS work-up"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "LHRH analogue",
+      [
+       "luteinizing hormone-releasing hormone (= GnRH) · DOWN-REGULATES pituitary receptors → removes the PULSATILE pattern, stops puberty",
+       "depot IM injection every 12 weeks · side effects minimal · $1,200/month, OHIP covered"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Goals",
+      [
+       "1 · arrest puberty, incl. menses · 2 · slow bone maturation, delay epiphyseal closure → final height · 3 · psychosocial well-being"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Untreated idiopathic CPP",
+      [
+       "adult height loss averages 5–6 cm · early menses · psychosocial impact"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ppp",
+   "colour": "orange",
+   "drop_from": "t_lh",
+   "drop_label": "LH low",
+   "head": [
+    [
+     [
+      "h",
+      "Peripheral precocious puberty (PPP)",
+      [
+       "GnRH INDEPENDENT",
+       "LH/FSH ↓ · sex steroids ↑"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Boy: virilized, testes < 3 mL",
+      [
+       "testosterone from elsewhere (e.g. adrenal): acne, pubic hair, ↑ stretched penile length, fast growth and bone maturation"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Gonadal",
+      [
+       "ovarian cysts · granulosa cell tumour · Leydig cell tumour (ASYMMETRIC testes) · testotoxicosis (familial male)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "McCune-Albright triad",
+      [
+       "PPP (multiple follicular cysts) · polyostotic fibrous dysplasia · café-au-lait, 'Coast of Maine'",
+       "~activating G-protein α-subunit mutation"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Adrenal",
+      [
+       "congenital adrenal hyperplasia (CAH): cortisol ↓, ± salt wasting · tumours · Cushing's"
+      ]
+     ],
+     [
+      "w",
+      "Iatrogenic",
+      [
+       "exogenous sex hormones"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Random LH LOW",
+      [
+       "suggests PPP"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · May still need GnRH STIMULATION test",
+      [
+       "a low random LH does not exclude CPP"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Sex steroids HIGH",
+      [
+       "estradiol / testosterone"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat the source †",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cdgp",
+   "colour": "purple",
+   "drop_from": "t_late",
+   "drop_label": "bone age delayed",
+   "head": [
+    [
+     [
+      "h",
+      "Constitutional delay of growth and puberty (CDGP)",
+      [
+       "normal VARIANT",
+       "COMMONEST cause of delayed puberty, especially in boys"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "STRONG family history",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "Height ≤ 3rd percentile",
+      [
+       "NORMAL growth rate"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Puberty starts at 14–18 y",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Bone age DELAYED",
+      [
+       "~X-ray of the hands"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Normal variation: reassure †",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "prim",
+   "colour": "magenta",
+   "drop_from": "t_late",
+   "drop_label": "LH/FSH ↑",
+   "head": [
+    [
+     [
+      "h",
+      "Primary hypogonadism",
+      [
+       "hypergonadotropic: the GONAD fails",
+       "LH/FSH ↑ · sex steroids ↓"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Girls: TURNER syndrome",
+      [
+       "45,X 60% · mosaic 15% · partial X loss 10% · 1 in 2,000–2,500 girls"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Turner features",
+      [
+       "SHORT 95–100%, mean final height 144 cm · streak ovaries 90% · thelarche 10–15% · menarche 1% · pubarche 100% · infertility > 99%"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Boys: KLINEFELTER syndrome",
+      [
+       "47,XXY 80% · 1 in 650 boys · COMMONEST cause of testicular failure"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Klinefelter features",
+      [
+       "TALL · small testes and penis · learning, behaviour issues · absent spermatogenesis"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Acquired",
+      [
+       "autoimmune · radiation · chemotherapy (cyclophosphamide) · surgery, trauma · infection · anorchia"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · LH + FSH HIGH",
+      [
+       "sex steroids LOW"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Karyotype",
+      [
+       "Turner? Klinefelter?"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Sex steroid replacement †",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Turner: screen for",
+      [
+       "congenital heart disease · renal (horseshoe kidney) · autoimmune: thyroid, celiac, type 1 diabetes · hearing · metabolic syndrome"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sec",
+   "colour": "slate",
+   "drop_from": "t_late",
+   "drop_label": "LH/FSH ↓",
+   "head": [
+    [
+     [
+      "h",
+      "Secondary hypogonadism",
+      [
+       "hypogonadotropic: the BRAIN fails",
+       "LH/FSH ↓ · sex steroids ↓"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Think BRAIN problems",
+      [
+       "CNS trauma, infection, radiation, tumour"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "KALLMANN syndrome",
+      [
+       "isolated gonadotropin deficiency + ANOSMIA"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Pituitary",
+      [
+       "LH/FSH deficiency, isolated or combined · congenital defects"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Functional",
+      [
+       "chronic disease · eating disorder, excess exercise"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Also",
+      [
+       "hyperprolactinemia · genetic syndromes: Prader-Willi, Laurence-Moon-Biedl"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · LH + FSH LOW",
+      [
+       "sex steroids LOW"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · MRI head",
+      [
+       "if a CNS cause is suspected"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Replace sex steroid · treat the cause †",
+      []
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Normal puberty",
+   "items": [
+    "GIRLS: thelarche → growth spurt (Tanner 2–3) → pubarche → menarche · 15% have pubarche first",
+    "breast Tanner 2 10.3 y · pubic hair 11.2 y · menarche 12.7 y, 2.5 y after thelarche",
+    "BOYS: testes > 3 mL → penis → pubarche → growth spurt (Tanner 3–4, testes 10–12 mL) → voice → muscle → facial hair",
+    "boys' average onset 11.5 ± 1.3 y · later spurt = taller final height"
+   ]
+  },
+  {
+   "title": "Assess every child",
+   "items": [
+    "history: timing and progression of milestones · growth spurt? · CNS symptoms · medications, radiation",
+    "family: parental heights · parents' age at puberty",
+    "exam: plot height and weight · Tanner stages · CNS signs · dysmorphism · skin marks"
+   ]
+  },
+  {
+   "title": "Investigations",
+   "items": [
+    "random LH (> 0.3 suggests CPP) · estradiol / testosterone · bone age · thyroid-stimulating hormone (TSH)",
+    "± karyotype for DELAYED puberty · pelvic ultrasound",
+    "± LHRH STIMULATION test: gold standard for PRECOCIOUS · MRI head if CNS suspected"
+   ]
+  },
+  {
+   "title": "Before starting an LHRH analogue, ask",
+   "items": [
+    "how early is onset? similar to the family pattern?",
+    "how rapidly is it evolving?",
+    "predicted adult height below the 3rd percentile or below parental target?",
+    "psychosocial impact on the child, parents and peers"
+   ]
+  },
+  {
+   "title": "Testes size splits a virilized boy",
+   "items": [
+    "BOTH testes ≥ 4 mL: CENTRAL, since LH drives Leydig cells",
+    "virilized with testes < 3 mL: PERIPHERAL source of testosterone",
+    "one testis larger: Leydig cell tumour"
+   ]
+  }
+ ]
+}

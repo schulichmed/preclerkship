@@ -57,9 +57,23 @@ plain chart is usual; the osteoporosis exemplar has eight across fourteen boxes
 only because it ends in two drug families.
 
 The one exception is a disease-by-column chart where each column is a
-disease to keep apart (the adrenal diseases chart, `endo-w3-01_2.json`): there
+disease to keep apart (the adrenal diseases chart, `endo-w3-01_4.json`): there
 the spec's `kinds` gives each disease its own colour and `bands` tints its
 column, so the colour names the disease rather than an outcome.
+
+## Lecture overview charts are generated: edit `src/`, not the spec
+
+The one-per-lecture overview charts are not placed by hand. Each spec is
+generated from a source in [`src/`](src/):
+
+- `src/<id>.content.json` → `python tools/column_pathway.py src/<id>.content.json <id>.json`
+  (disease columns; the content format is in `tools/column_pathway.py`)
+- `src/<id>.py` → `python tools/pathways/src/<id>.py tools/pathways/<id>.json`
+  (thyroid, calcium, and the osteoporosis-style flows for PMOS and transgender medicine)
+
+Change the source and regenerate. A hand edit to a generated spec is lost the
+next time someone regenerates it. The rules for these charts are in the
+`med-chart` skill under "The lecture overview chart".
 
 Lines starting with `~` are drawn muted and italic: a qualifier ("everyone
 gets this too", "on a bone density scan"), not a fact.
