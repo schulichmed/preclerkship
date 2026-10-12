@@ -169,7 +169,9 @@ spec = {
            "blockers (fully reversible) through masculinizing or feminizing hormones (partially reversible) to surgery "
            "(irreversible), with the criteria, regimens, effects, risks and monitoring at each step"),
  "any_of": {"heading": "Gender dysphoria is supported by:", "joiner": "AND", "items": [
-     {"title": "INSISTENCE", "lines": []}, {"title": "PERSISTENCE", "lines": []}, {"title": "CONSISTENCE", "lines": []}]},
+     {"title": "INSISTENCE", "lines": ["how FIRM: \"I AM a boy\", not \"I wish I were\""]},
+    {"title": "PERSISTENCE", "lines": ["how LONG: months to years, often stronger at puberty"]},
+    {"title": "CONSISTENCE", "lines": ["how WIDE: the same at home, school, with friends"]}]},
  "nodes": nodes,
  "edges": edges,
  "panels": [
