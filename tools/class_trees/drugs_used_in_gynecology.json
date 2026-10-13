@@ -122,10 +122,15 @@
    ],
    "ask": {
     "q": "Heavy or painful periods?",
-    "lines": [
-     "tranexamic acid, or naproxen (a non-steroidal anti-inflammatory drug)",
-     "combined pill also helps · hormonal options → ABNORMAL BLEEDING chart"
-    ]
+    "lines": [],
+    "list": [
+     "tranexamic acid",
+     "naproxen (a non-steroidal anti-inflammatory drug)",
+     "combined pill also helps",
+     "hormonal options → ABNORMAL BLEEDING chart"
+    ],
+    "list_kind": "muted",
+    "list_cols": 1
    }
   },
   {
@@ -181,10 +186,15 @@
    ],
    "ask": {
     "q": "Endometriosis?",
-    "lines": [
-     "progestin first (ring for peri-rectal lesions) · order → PELVIC PAIN chart",
+    "lines": [],
+    "list": [
+     "progestin first",
+     "ring for peri-rectal lesions",
+     "treatment order → PELVIC PAIN chart",
      "emergency contraception or termination → the receptor modulators"
-    ]
+    ],
+    "list_kind": "muted",
+    "list_cols": 1
    }
   },
   {
@@ -257,10 +267,14 @@
    ],
    "ask": {
     "q": "Fibroids, endometriosis not controlled, or in vitro fertilization (IVF)?",
-    "lines": [
-     "agonist shrinks fibroids · antagonist for IVF stimulation",
+    "lines": [],
+    "list": [
+     "agonist shrinks fibroids",
+     "antagonist for IVF stimulation",
      "always add back estrogen + progestin"
-    ]
+    ],
+    "list_kind": "muted",
+    "list_cols": 1
    }
   },
   {
@@ -339,10 +353,14 @@
    ],
    "ask": {
     "q": "Hirsutism or acne?",
-    "lines": [
-     "anti-androgenic pill first → severe: spironolactone (off-label)"
+    "lines": [],
+    "no": "no: infertility · osteoporosis · breast cancer",
+    "list": [
+     "anti-androgenic pill first",
+     "severe → spironolactone (off-label)"
     ],
-    "no": "no: infertility · osteoporosis · breast cancer"
+    "list_kind": "muted",
+    "list_cols": 1
    }
   },
   {
