@@ -1,0 +1,603 @@
+{
+ "name": "vulvar lesions overview",
+ "title": "Vulvar lesions: sort the lesion first (itchy white scarring lichen, ulcer, lump, or a dark, firm or non-healing lesion that needs a biopsy), then the tests and treatment for each",
+ "col_w": 218,
+ "root": {
+  "title": "Vulvar lesion: WHAT KIND is it? That picks the path",
+  "lines": [
+   "itchy, white, thickened or scarring → a LICHEN · an ulcer · a lump → clinical diagnosis",
+   "dark, firm, ulcerated, colour change or not resolving → BIOPSY: WHEN IN DOUBT, BIOPSY",
+   "warts, herpes, syphilis: see the STI chart · vaginitis: see the VAGINAL DISCHARGE chart"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_li",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "ITCHY · WHITE · SCARRING: a lichen",
+   "lines": [
+    "does it SCAR? is it IN THE VAGINA? how much does it ITCH?",
+    "every lichen: CONFIRM WITH A BIOPSY, stop irritants + scratching"
+   ]
+  },
+  {
+   "id": "g_cl",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "ULCER or LUMP",
+   "lines": [
+    "clinical diagnosis",
+    "~herpes + syphilis ulcers: STI chart"
+   ]
+  },
+  {
+   "id": "g_bx",
+   "cols": [
+    5,
+    5
+   ],
+   "title": "SUSPICIOUS: BIOPSY",
+   "lines": [
+    "dark · firm · not resolving"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "lsc",
+   "colour": "teal",
+   "drop_label": "++++ itch",
+   "head": [
+    [
+     [
+      "h",
+      "Lichen simplex chronicus",
+      [
+       "END STAGE of itch → scratch → itch"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "++++ ITCH, NO SCAR",
+      [
+       "not in the vagina",
+       "worse with heat, humidity, stress",
+       "scratching feels so good"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Look for the trigger",
+      [
+       "candida, dermatophyte · contact or atopic dermatitis · psoriasis",
+       "an underlying LS or LP · diabetes · VIN"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Find the trigger",
+      [
+       "swab: candida, MRSA",
+       "PATCH TESTING for contact dermatitis"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Biopsy if unsure",
+      [
+       "confirms the diagnosis"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "1 · Remove the cause",
+      [
+       "treat infection (fluconazole, cefadroxil)",
+       "stop heat, sweat, EXCESSIVE HYGIENE"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · BREAK the cycle",
+      [
+       "clobetasol 0.05% ointment: twice daily × 2 wk → daily × 2 wk → Mon/Wed/Fri × 2 wk",
+       "SEDATE at night: doxepin or hydroxyzine",
+       "cool sitz baths, gel packs",
+       "severe: prednisone taper or IM triamcinolone"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ls",
+   "colour": "purple",
+   "drop_label": "scars · NOT vagina",
+   "head": [
+    [
+     [
+      "h",
+      "Lichen sclerosus",
+      [
+       "the COMMONEST chronic vulvar disease",
+       "perimenopausal · 15% children"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Itch 90% · scars",
+      [
+       "NOT in the vagina",
+       "or asymptomatic scarring"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "White, CELLOPHANE sheen",
+      [
+       "FIGURE-OF-8 around vulva + anus",
+       "buried clitoris, lost labia minora, INTROITAL STENOSIS"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Examine",
+      [
+       "white, thin, crinkled · hourglass pattern"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · CONFIRM with BIOPSY",
+      [
+       "before lifelong treatment"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Ultrapotent steroid, then TREAT FOREVER",
+      [
+       "1 · clobetasol or halobetasol 0.05% ointment once or twice daily until whiteness + symptoms are controlled",
+       "2 · MAINTENANCE 1–3× a week"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "~4% → squamous cell cancer",
+      [
+       "if > 7 years or POORLY controlled",
+       "follow up every 3 months until controlled, then every 6 months"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "lp",
+   "colour": "orange",
+   "drop_label": "scars · IN vagina",
+   "head": [
+    [
+     [
+      "h",
+      "Lichen planus",
+      [
+       "autoimmune · most often EROSIVE",
+       "women 50s–60s"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "PAIN 70% · itch 60%",
+      [
+       "dyspareunia, dysuria · scars",
+       "IN the vagina AND the mouth"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Lacy white edges",
+      [
+       "glazed red erosions, ulcers",
+       "hypertrophic type LOOKS LIKE LS"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · EXAMINE VULVA, VAGINA + MOUTH",
+      [
+       "the vulva can be normal with active vaginal LP"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · CONFIRM with BIOPSY",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Ultrapotent steroid",
+      [
+       "clobetasol or halobetasol 0.05% ointment once or twice daily",
+       "VAGINAL: hydrocortisone suppository 25 mg daily × 2 wk, then Mon/Wed/Fri · DILATORS"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "2–3% → squamous cell cancer",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ap",
+   "colour": "magenta",
+   "drop_label": "ulcer",
+   "head": [
+    [
+     [
+      "h",
+      "Aphthous ulcer",
+      [
+       "girls 9–20"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "After a VIRAL illness",
+      [
+       "a day or two after, e.g. strep throat",
+       "oral aphthae too"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Dark, depressed, then SORE",
+      [
+       "~3 mm",
+       "some CANNOT URINATE from pain"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Exclude STI ulcers",
+      [
+       "herpes: PAINFUL · syphilis: PAINLESS → STI chart"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Herpes still possible?",
+      [
+       "it shows on biopsy"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Prednisone 40–60 mg",
+      [
+       "kept at home, started at the FIRST SIGN of an outbreak",
+       "+ vulvar care"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Frequent outbreaks",
+      [
+       "consider dapsone"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ma",
+   "colour": "blue",
+   "drop_label": "lump",
+   "head": [
+    [
+     [
+      "h",
+      "Vulvar mass",
+      [
+       "Bartholin cyst / abscess · lipoma"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Bartholin cyst",
+      [
+       "often no symptoms"
+      ]
+     ],
+     [
+      "t",
+      "Bartholin abscess",
+      [
+       "SEVERE pain: can't sit or walk"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Lipoma",
+      [
+       "soft, PAINLESS nodule · lipomas elsewhere"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Exam: LOCATION is key",
+      [
+       "Bartholin, not a labial abscess"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Abscess",
+      [
+       "tender, warm, fluctuant · cellulitis, fever"
+      ]
+     ],
+     [
+      "w",
+      "Soft, painless",
+      [
+       "lipoma: clinical"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Abscess: DRAIN",
+      [
+       "incise + drain",
+       "WORD CATHETER",
+       "or marsupialize",
+       "± antibiotics, sitz baths"
+      ]
+     ],
+     [
+      "ok",
+      "Lipoma",
+      [
+       "expectant, or excise"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ca",
+   "colour": "slate",
+   "drop_label": "biopsy",
+   "head": [
+    [
+     [
+      "h",
+      "Vulvar cancer + dark lesions",
+      [
+       "VIN → squamous cell cancer · melanoma"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "ITCH most common",
+      [
+       "lump, ulcer, pain · 50% ASYMPTOMATIC",
+       "cancer feels FIRM"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "HPV",
+      [
+       "YOUNGER · MULTIPLE flat-topped plaques"
+      ]
+     ],
+     [
+      "w",
+      "Non-HPV",
+      [
+       "OLDER · SOLITARY, ulcer · on LS / LP"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "DARK lesion",
+      [
+       "melanosis vs MELANOMA: black, variegated; pink = amelanotic"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · LOOK + FEEL",
+      [
+       "PALPATE the INGUINAL NODES",
+       "~photograph to compare"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · PUNCH BIOPSY ≥ 4 mm",
+      [
+       "several if areas differ",
+       "a mimic that does not resolve: biopsy"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "Dysplasia or cancer",
+      []
+     ],
+     [
+      "w",
+      "Neither: melanosis",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "EXCISE",
+      [
+       "the whole lesion"
+      ]
+     ],
+     [
+      "ok",
+      "OBSERVE",
+      [
+       "periodic review"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Which lichen? three questions",
+   "items": [
+    "SCARS? no → lichen simplex chronicus · yes → sclerosus or planus",
+    "IN THE VAGINA (or mouth)? yes → planus · no → sclerosus",
+    "ITCH ++++ with no scar → simplex chronicus · PAIN > itch → planus",
+    "all three: biopsy to confirm, ultrapotent steroid ointment"
+   ]
+  },
+  {
+   "title": "When to biopsy",
+   "items": [
+    "every lichen, to confirm before treating",
+    "any DARK lesion: melanoma is in the differential",
+    "firm, ulcerated, colour change, groin nodes",
+    "LS, LP or warts that do not resolve or are refractory (VIN mimics)",
+    "≥ 4 mm punch · several if areas look different"
+   ]
+  }
+ ]
+}

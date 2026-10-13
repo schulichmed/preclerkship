@@ -1,0 +1,648 @@
+{
+ "name": "sexually transmitted infections overview",
+ "title": "Sexually transmitted infections sorted by how they present: discharge or cervicitis (chlamydia, gonorrhea), pelvic pain and fever (pelvic inflammatory disease), genital ulcer (herpes, syphilis), warts and bloodborne infections (HPV, hepatitis B, HIV); the test, test of cure, treatment, partner and admission rules for each",
+ "col_w": 210,
+ "root": {
+  "title": "STI: sort by HOW IT PRESENTS, and that picks the test",
+  "lines": [
+   "most are ASYMPTOMATIC: screening finds them, not symptoms",
+   "REPORTABLE: chlamydia · gonorrhea · syphilis ·HIV ·hepatitis B + C → trace + treat contacts",
+   "trichomonas + yeast: VAGINAL DISCHARGE chart · molluscum: VULVAR LESIONS chart"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_low",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "DISCHARGE · CERVICITIS · URETHRITIS",
+   "lines": [
+    "swab cervix or vagina, or FIRST-CATCH URINE ≥ 2 h after voiding",
+    "treat for BOTH: co-infection is likely"
+   ]
+  },
+  {
+   "id": "g_up",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "PELVIC PAIN + FEVER",
+   "lines": [
+    "ascended past the cervix"
+   ]
+  },
+  {
+   "id": "g_ulc",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "GENITAL ULCER",
+   "lines": [
+    "PAINFUL → herpes",
+    "PAINLESS → syphilis"
+   ]
+  },
+  {
+   "id": "g_sys",
+   "cols": [
+    5,
+    5
+   ],
+   "title": "GROWTH or BLOOD TEST",
+   "lines": [
+    "warts: clinical",
+    "bloodborne: serology"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "ct",
+   "colour": "teal",
+   "drop_label": "mucopurulent",
+   "head": [
+    [
+     [
+      "h",
+      "Chlamydia",
+      [
+       "intracellular · MOST COMMON STI",
+       "cannot be cultured"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "MOSTLY ASYMPTOMATIC",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "Mucopurulent CERVICITIS",
+      [
+       "discharge · pelvic pain · urethritis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Swab or first-catch urine",
+      [
+       "not culture: it won't grow"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · TEST OF CURE: NOT routine",
+      [
+       "ONLY if pregnant, poor compliance, ongoing symptoms or re-exposure",
+       "wait 4 WEEKS: dead organisms give a FALSE POSITIVE",
+       "~slide 9 says > 3 weeks"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Azithromycin 1 g by mouth ONCE",
+      [
+       "or doxycycline 100 mg twice daily × 7 days",
+       "pregnancy: azithromycin, NOT doxycycline"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "REPORTABLE: treat contacts",
+      [
+       "no sex until both are treated"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Untreated: 30% → PID",
+      [
+       "tubal INFERTILITY · ECTOPIC pregnancy"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ng",
+   "colour": "purple",
+   "drop_label": "purulent",
+   "head": [
+    [
+     [
+      "h",
+      "Gonorrhea",
+      [
+       "gram-negative DIPLOCOCCUS",
+       "incubation 3–7 days"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Mild or ABSENT in 50%",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "PURULENT discharge",
+      [
+       "dysuria · frequency · urethritis",
+       "→ PID in 10–49%"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Swab or first-catch urine",
+      [
+       "the same sample as chlamydia"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "2 · Disseminated? 0.5–3%",
+      [
+       "POLYARTHRALGIA · TENOSYNOVITIS · DERMATITIS",
+       "or a purulent arthritis without skin lesions"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Ceftriaxone 250 mg IM, or cefixime 400 mg by mouth",
+      [
+       "PLUS azithromycin 1 g: for CHLAMYDIA",
+       "all safe in pregnancy"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "REPORTABLE: treat contacts",
+      [
+       "no sex until both are treated"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Growing RESISTANCE",
+      [
+       "third-generation cephalosporins since the mid-2000s"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pid",
+   "colour": "magenta",
+   "drop_label": "cervical motion tenderness",
+   "head": [
+    [
+     [
+      "h",
+      "Pelvic inflammatory disease",
+      [
+       "POLYMICROBIAL",
+       "< 50% culture chlamydia or gonorrhea"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Pelvic pain + fever",
+      [
+       "discharge · dyspareunia · cervicitis"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "CERVICAL MOTION TENDERNESS",
+      [
+       "chandelier sign · pelvic mass"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · β-hCG · CBC · cultures",
+      [
+       "vaginal, urine, blood"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Ultrasound / MRI",
+      [
+       "tubo-ovarian abscess?"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "3 · LAPAROSCOPY",
+      [
+       "diagnosis unsure, or no response"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "ADMIT if ANY",
+      [
+       "surgical emergency not excluded · PREGNANT · ADOLESCENT",
+       "severe: vomiting, fever · tubo-ovarian abscess",
+       "immunodeficient · oral therapy failed"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Yes: IV",
+      [
+       "cefoxitin 2 g q6h + doxycycline 100 mg q12h",
+       "improved at 24 h → oral doxycycline to 14 days"
+      ]
+     ],
+     [
+      "ok",
+      "No: oral",
+      [
+       "ceftriaxone 250 mg IM once + doxycycline 100 mg twice daily × 14 days"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "SURGERY",
+      [
+       "failed medical or abscess: drain, laparoscopy"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hsv",
+   "colour": "orange",
+   "drop_label": "PAINFUL",
+   "head": [
+    [
+     [
+      "h",
+      "Genital herpes",
+      [
+       "HSV 1 or 2",
+       "LIFELONG, recurs"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "PAINFUL blisters + ulcers",
+      [
+       "24–72 h after contact · heal in 2–6 weeks"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "URINARY RETENTION",
+      [
+       "fever, malaise, nodes",
+       "carriers spread it without lesions"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · UNROOF the lesion",
+      [
+       "fluid for PCR (painful)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Ulcer-base viral culture",
+      [
+       "less sensitive"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Antivirals",
+      [
+       "acyclovir · famciclovir · valacyclovir"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "No cure: it recurs",
+      [
+       "antivirals may inhibit viral replication"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "PREGNANCY",
+      [
+       "risk to the fetus"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tp",
+   "colour": "brown",
+   "drop_label": "PAINLESS",
+   "head": [
+    [
+     [
+      "h",
+      "Syphilis",
+      [
+       "spirochete",
+       "will NOT grow in culture"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "1° PAINLESS CHANCRE",
+      [
+       "10–90 days · HIGHLY contagious · heals alone"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2° RASH ON PALMS + SOLES",
+      [
+       "condyloma lata (flat warts) · nodes",
+       "then latent → 3°: neuro, aortitis, gummas"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Scrape the ulcer",
+      [
+       "DARKFIELD microscopy"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · SCREEN: VDRL",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · CONFIRM: FTA",
+      [
+       "fluorescent treponemal antibody"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Penicillin G 2.4 million units IM ONCE",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "REPORTABLE: treat contacts",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Penicillin ALLERGY",
+      [
+       "DESENSITIZE, then penicillin: the only satisfactory treatment"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ot",
+   "colour": "olive",
+   "drop_from": "g_sys",
+   "head": [
+    [
+     [
+      "h",
+      "Warts + bloodborne",
+      [
+       "HPV · hepatitis B · HIV"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "HPV WARTS",
+      [
+       "CAULIFLOWER growths · itch, bleeding"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Hep B · HIV",
+      [
+       "flu-like, jaundice, or nothing"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Warts: CLINICAL",
+      [
+       "biopsy if unsure"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Hepatitis B",
+      [
+       "HBsAg = infected",
+       "IgM anti-HBc = ACUTE",
+       "anti-HBs only = vaccinated"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "HIV",
+      [
+       "antigen/antibody combo"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Warts",
+      [
+       "imiquimod, podophyllin, TCA, liquid N₂ · laser, excision"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Hep B: SUPPORTIVE",
+      [
+       "HIV: ANTIRETROVIRALS"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "PREVENT",
+      [
+       "Gardasil 9 (HPV 6 + 11) · hepatitis B vaccine"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "One test per STI",
+   "items": [
+    "chlamydia + gonorrhea: cervical or vaginal swab, or first-catch urine",
+    "herpes: unroof → PCR · syphilis: darkfield, VDRL screen, FTA confirm",
+    "hepatitis B, HIV: serology · warts: clinical",
+    "PID: cultures + imaging, laparoscopy if unsure"
+   ]
+  },
+  {
+   "title": "After treatment",
+   "items": [
+    "test of cure (chlamydia): only if pregnant, poor compliance, symptoms persist or re-exposed · at 4 weeks",
+    "reportable → public health traces contacts; treat partners before sex resumes"
+   ]
+  }
+ ]
+}

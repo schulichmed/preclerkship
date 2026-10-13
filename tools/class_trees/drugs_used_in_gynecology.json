@@ -1,0 +1,429 @@
+{
+ "title": "Drugs used in gynecology as a decision: which drug for heavy bleeding, painful periods, endometriosis, fibroids, ovulation induction, hirsutism, menopause and breast cancer; then each class on the estrogen, progestin and androgen axes, GnRH analogues and the non-hormonal drugs with when to choose, avoid and watch",
+ "root": "Drugs used in gynecology · start from the problem",
+ "width": 1560,
+ "legend": [
+  {
+   "chip": "↑ clot risk",
+   "kind": "bad",
+   "label": "raises venous thromboembolism (VTE) risk: deep vein thrombosis, pulmonary embolism"
+  },
+  {
+   "chip": "flare",
+   "kind": "warn",
+   "label": "hormone surge before suppression"
+  },
+  {
+   "chip": "off-label",
+   "kind": "plain",
+   "label": "not a US Food and Drug Administration (FDA)-approved use"
+  }
+ ],
+ "panel_cols": 3,
+ "panels": [
+  {
+   "title": "Before you prescribe",
+   "span": 3,
+   "cols": 2,
+   "items": [
+    {
+     "label": "Past venous thromboembolism?",
+     "text": "→ tranexamic acid is contraindicated · estrogen, tamoxifen and raloxifene all ↑ clot risk",
+     "kind": "bad"
+    },
+    {
+     "label": "Uterus present?",
+     "text": "→ never estrogen alone: add a progestin (unopposed estrogen → endometrial cancer)",
+     "kind": "bad"
+    },
+    {
+     "label": "Severe renal failure, gastritis or ulcer, coagulation disorder?",
+     "text": "→ no non-steroidal anti-inflammatory drug",
+     "kind": "bad"
+    },
+    {
+     "label": "Gonadotropin-releasing hormone agonist or antagonist?",
+     "text": "→ hypoestrogenic: add-back low-dose estrogen + progestin (relugolix + estradiol + norethindrone acetate)",
+     "kind": "warn"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "title": "Non-hormonal",
+   "color": "rose",
+   "desc": "Treat menstrual symptoms, not the hormone cause.",
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Non-steroidal anti-inflammatory drugs (NSAIDs)",
+       "star": true,
+       "agents": "naproxen, ibuprofen, diclofenac",
+       "moa": "Block cyclooxygenase (COX)-1 + 2 → ↓ all prostaglandins",
+       "chips": [
+        [
+         "pain",
+         "good"
+        ],
+        [
+         "↓ flow",
+         "good"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "painful periods · heavy bleeding (naproxen)",
+         "kind": "ok"
+        },
+        {
+         "label": "Avoid:",
+         "text": "severe renal failure · gastritis, peptic ulcer · coagulation disorder",
+         "kind": "bad"
+        },
+        {
+         "label": "Watch:",
+         "text": "gastrointestinal upset · renal damage",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Tranexamic acid",
+       "moa": "Antifibrinolytic: symptomatic only",
+       "chips": [
+        [
+         "no hormones",
+         "good"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "heavy menstrual bleeding without hormones",
+         "kind": "ok"
+        },
+        {
+         "label": "Avoid:",
+         "text": "any past thromboembolic event",
+         "kind": "bad"
+        },
+        {
+         "label": "Watch:",
+         "text": "headache, backache, cramps, gastrointestinal upset",
+         "kind": "warn"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "ask": {
+    "q": "Heavy or painful periods?",
+    "lines": [
+     "tranexamic acid, or naproxen (a non-steroidal anti-inflammatory drug)",
+     "combined pill also helps · hormonal options → ABNORMAL BLEEDING chart"
+    ]
+   }
+  },
+  {
+   "title": "Progestin axis",
+   "color": "ana",
+   "desc": "Opposes estrogen on the endometrium; synergic with it on the breast.",
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Progestins",
+       "star": true,
+       "agents": "levonorgestrel, norethindrone, desogestrel, drospirenone, medroxyprogesterone acetate (MPA)",
+       "moa": "Secretory endometrium; side effects follow the off-target receptor",
+       "chips": [
+        [
+         "protects endometrium",
+         "good"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "contraception · emergency contraception · endometriosis",
+         "kind": "ok"
+        },
+        {
+         "label": "Avoid:",
+         "text": "acne or hirsutism: androgenic ones (levonorgestrel) → drospirenone, cyproterone instead",
+         "kind": "bad"
+        },
+        {
+         "label": "Watch:",
+         "text": "androgenic: weight, acne, hirsutism · mood, libido, bone · ↓ high-density lipoprotein (HDL), ↑ low-density lipoprotein (LDL)",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Selective progesterone receptor modulators (SPRMs)",
+       "agents": "ulipristal · mifepristone",
+       "moa": "Mixed agonist-antagonist at the progesterone receptor (mifepristone: antagonist)",
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "ulipristal: emergency contraception, fibroids, endometriosis · mifepristone: termination, Cushing syndrome",
+         "kind": "ok"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "ask": {
+    "q": "Endometriosis?",
+    "lines": [
+     "progestin first (ring for peri-rectal lesions) · order → PELVIC PAIN chart",
+     "emergency contraception or termination → the receptor modulators"
+    ]
+   }
+  },
+  {
+   "title": "Gonadotropin-releasing hormone (GnRH) analogues",
+   "color": "sens",
+   "desc": "Upstream of all three axes: ↓ luteinizing hormone (LH) + follicle-stimulating hormone (FSH) → ↓ ovarian and testicular steroids.",
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "GnRH agonists, continuous",
+       "star": true,
+       "agents": "leuprolide, goserelin, nafarelin, buserelin, triptorelin",
+       "moa": "Flare first, then the pituitary desensitizes",
+       "chips": [
+        [
+         "flare",
+         "warn"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "endometriosis · shrink fibroids · prostate cancer · infertility",
+         "kind": "ok"
+        },
+        {
+         "label": "Watch:",
+         "text": "hypoestrogenic: bone loss, hot flashes, vaginal dryness, mood + sleep → add-back",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "GnRH antagonists",
+       "agents": "cetrorelix, ganirelix, degarelix, relugolix",
+       "moa": "Block the receptor: faster, NO flare",
+       "chips": [
+        [
+         "no flare",
+         "good"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "controlled ovarian stimulation for in vitro fertilization · relugolix + add-back for endometriosis, fibroids",
+         "kind": "ok"
+        },
+        {
+         "label": "Watch:",
+         "text": "same hypoestrogenic effects",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "GnRH, pulsatile",
+       "moa": "Mimics the natural pulse → stimulates",
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "ovulation induction",
+         "kind": "ok"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "ask": {
+    "q": "Fibroids, endometriosis not controlled, or in vitro fertilization (IVF)?",
+    "lines": [
+     "agonist shrinks fibroids · antagonist for IVF stimulation",
+     "always add back estrogen + progestin"
+    ]
+   }
+  },
+  {
+   "title": "Androgen axis",
+   "color": "secr",
+   "desc": "Testosterone → dihydrotestosterone (DHT) (5α-reductase): hair follicles, prostate, genitalia.",
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Androgen agonists",
+       "agents": "testosterone esters",
+       "moa": "Replacement",
+       "chips": [
+        [
+         "off-label: female-to-male",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "male hypogonadism · female-to-male transition",
+         "kind": "ok"
+        },
+        {
+         "label": "Watch:",
+         "text": "↓ libido, erectile dysfunction",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Androgen receptor antagonists",
+       "agents": "spironolactone, flutamide, bicalutamide, nilutamide, enzalutamide",
+       "moa": "Block the androgen receptor",
+       "chips": [
+        [
+         "off-label in hirsutism",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "SEVERE hirsutism · metastatic prostate cancer",
+         "kind": "ok"
+        },
+        {
+         "label": "Watch:",
+         "text": "↓ libido, erectile dysfunction",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "5α-reductase inhibitors",
+       "agents": "finasteride, dutasteride",
+       "moa": "↓ testosterone → dihydrotestosterone",
+       "chips": [
+        [
+         "off-label in alopecia",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "benign prostatic hyperplasia · alopecia",
+         "kind": "ok"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "ask": {
+    "q": "Hirsutism or acne?",
+    "lines": [
+     "anti-androgenic pill first → severe: spironolactone (off-label)"
+    ],
+    "no": "no: infertility · osteoporosis · breast cancer"
+   }
+  },
+  {
+   "title": "Estrogen axis",
+   "color": "anti",
+   "desc": "Too much: estrogen-dependent growth, infertility. Too little: menopause symptoms, bone loss.",
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Estrogens",
+       "agents": "ethinyl estradiol, mestranol",
+       "moa": "Estrogen receptor (ER) agonist: grows endometrium + breast, keeps bone",
+       "chips": [
+        [
+         "↑ clot risk",
+         "bad"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "contraception (with a progestin) · ovarian dysgenesis · osteoporosis · dysmenorrhea · male-to-female transition",
+         "kind": "ok"
+        },
+        {
+         "label": "Avoid:",
+         "text": "alone with a uterus: unopposed → endometrial cancer",
+         "kind": "bad"
+        },
+        {
+         "label": "Watch:",
+         "text": "↑ factors VII–X → venous thromboembolism (VTE) · headache, nausea, breast tenderness, edema",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Selective estrogen receptor modulators (SERMs)",
+       "star": true,
+       "agents": "tamoxifen · raloxifene · clomiphene",
+       "moa": "Agonist in some tissues, antagonist in others",
+       "chips": [
+        [
+         "↑ clot risk",
+         "bad"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "tamoxifen: estrogen receptor-positive breast cancer · raloxifene: postmenopausal osteoporosis · clomiphene: ovulation induction",
+         "kind": "ok"
+        },
+        {
+         "label": "Avoid:",
+         "text": "paroxetine with tamoxifen (↓ effect)",
+         "kind": "bad"
+        },
+        {
+         "label": "Watch:",
+         "text": "tamoxifen ↑ endometrial cancer; raloxifene does not",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Aromatase inhibitors · fulvestrant",
+       "agents": "letrozole, anastrozole, exemestane · fulvestrant",
+       "moa": "Block androgen → estrogen · pure estrogen receptor antagonist",
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "aromatase inhibitor: breast or ovarian cancer, infertility · fulvestrant: advanced breast cancer",
+         "kind": "ok"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

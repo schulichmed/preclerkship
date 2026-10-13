@@ -1,0 +1,1211 @@
+{
+ "name": "pelvic pain overview",
+ "width": 1420,
+ "title": "Pelvic pain decision chart: acute pain sorted by beta-hCG, fever and hemoglobin into ovarian torsion or ruptured hemorrhagic cyst; chronic pain sorted by cycle and exam into primary dysmenorrhea or structural causes (endometriosis, adenomyosis, leiomyoma); each column gives presentation, numbered investigations and treatment in order",
+ "kinds": {
+  "to_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "to_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "to_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cy_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cy_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "cy_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "dy_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dy_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "dy_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "en_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "en_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "en_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ad_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ad_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ad_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "le_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "le_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "le_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 478,
+   "w": 222,
+   "h": 1274,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 264,
+   "y": 478,
+   "w": 222,
+   "h": 1274,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 516,
+   "y": 478,
+   "w": 222,
+   "h": 1274,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 740,
+   "y": 478,
+   "w": 222,
+   "h": 1274,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 964,
+   "y": 478,
+   "w": 222,
+   "h": 1274,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1188,
+   "y": 478,
+   "w": 222,
+   "h": 1274,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 640,
+   "h": 324,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 1004,
+   "h": 282,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1326,
+   "h": 418,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 345,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Pelvic pain: ACUTE (find the life- or limb-threat first) or CHRONIC (≥ 6 MONTHS)?",
+   "lines": [
+    "history + physical exam come first: the most important part of any approach",
+    "chronic = below the umbilicus, ≥ 6 months, disabling or needing treatment · up to 50% have experienced abuse or trauma"
+   ]
+  },
+  {
+   "id": "g_ac",
+   "x": 45,
+   "y": 138,
+   "w": 436,
+   "h": 132,
+   "kind": "plain",
+   "title": "ACUTE: work it up in this order",
+   "lines": [
+    "1 · quantitative β-hCG: POSITIVE → ECTOPIC (FIRST-TRIMESTER BLEEDING chart)",
+    "2 · FEVER + white count ↑ → PID (SEXUALLY TRANSMITTED INFECTIONS chart)",
+    "3 · neither: CBC hemoglobin + ULTRASOUND decide ↓"
+   ]
+  },
+  {
+   "id": "g_ch",
+   "x": 521,
+   "y": 138,
+   "w": 884,
+   "h": 132,
+   "kind": "plain",
+   "title": "CHRONIC: is it CYCLIC with a NORMAL exam?",
+   "lines": [
+    "YES → functional (primary) · NO, or an exam/imaging finding → STRUCTURAL (secondary), more common with AGE"
+   ]
+  },
+  {
+   "id": "t_ac",
+   "x": 45,
+   "y": 310,
+   "w": 436,
+   "h": 96,
+   "kind": "plain",
+   "title": "β-hCG < 1 · afebrile: is the hemoglobin STABLE?",
+   "lines": [
+    "group and screen · repeat the CBC if bleeding may be ongoing"
+   ]
+  },
+  {
+   "id": "t_pr",
+   "x": 521,
+   "y": 310,
+   "w": 212,
+   "h": 96,
+   "kind": "plain",
+   "title": "YES: PRIMARY",
+   "lines": [
+    "late teens, 20s, then declines"
+   ]
+  },
+  {
+   "id": "t_st",
+   "x": 745,
+   "y": 310,
+   "w": 660,
+   "h": 96,
+   "kind": "plain",
+   "title": "NO: STRUCTURAL · the EXAM points the way",
+   "lines": [
+    "NODULAR, FIXED → endometriosis · BOGGY, tender, enlarged → adenomyosis · ENLARGED, MOBILE, mass → fibroid",
+    "~always send removed tissue to pathology"
+   ]
+  },
+  {
+   "id": "to_head_0_0",
+   "x": 45,
+   "y": 486,
+   "w": 212,
+   "h": 114,
+   "kind": "to_h",
+   "title": "Ovarian torsion",
+   "lines": [
+    "ovary ± tube twists on its ligaments",
+    "SURGICAL EMERGENCY: save the ovary"
+   ]
+  },
+  {
+   "id": "cy_head_0_0",
+   "x": 269,
+   "y": 486,
+   "w": 212,
+   "h": 114,
+   "kind": "cy_h",
+   "title": "Ruptured hemorrhagic ovarian cyst",
+   "lines": [
+    "UNCOMMON: most ruptures bleed little"
+   ]
+  },
+  {
+   "id": "dy_head_0_0",
+   "x": 521,
+   "y": 486,
+   "w": 212,
+   "h": 114,
+   "kind": "dy_h",
+   "title": "Primary dysmenorrhea",
+   "lines": [
+    "painful menses, NO structural cause"
+   ]
+  },
+  {
+   "id": "en_head_0_0",
+   "x": 745,
+   "y": 486,
+   "w": 212,
+   "h": 114,
+   "kind": "en_h",
+   "title": "Endometriosis",
+   "lines": [
+    "endometrial tissue OUTSIDE the uterus",
+    "ovaries #1 · uterine ligaments #2"
+   ]
+  },
+  {
+   "id": "ad_head_0_0",
+   "x": 969,
+   "y": 486,
+   "w": 212,
+   "h": 114,
+   "kind": "ad_h",
+   "title": "Adenomyosis",
+   "lines": [
+    "endometrium DEEP in the myometrium",
+    "PAROUS · 40s–50s"
+   ]
+  },
+  {
+   "id": "le_head_0_0",
+   "x": 1193,
+   "y": 486,
+   "w": 212,
+   "h": 114,
+   "kind": "le_h",
+   "title": "Leiomyoma (fibroid)",
+   "lines": [
+    "benign smooth-muscle NEOPLASM",
+    "NOT pre-malignant"
+   ]
+  },
+  {
+   "id": "to_pres_0_0",
+   "x": 45,
+   "y": 640,
+   "w": 212,
+   "h": 161,
+   "kind": "to_t",
+   "title": "SUDDEN, SHARP, one-sided",
+   "lines": [
+    "after VIGOROUS activity: intercourse, golf, exercise",
+    "vomiting · may collapse"
+   ]
+  },
+  {
+   "id": "to_pres_1_0",
+   "x": 45,
+   "y": 823,
+   "w": 212,
+   "h": 141,
+   "kind": "to_w",
+   "title": "Exam",
+   "lines": [
+    "a PALPABLE, TENDER adnexal mass",
+    "hemoglobin STABLE"
+   ]
+  },
+  {
+   "id": "cy_pres_0_0",
+   "x": 269,
+   "y": 640,
+   "w": 212,
+   "h": 151,
+   "kind": "cy_t",
+   "title": "SUDDEN pain, mid-cycle",
+   "lines": [
+    "~2–3 weeks after the last period (ovulation)",
+    "or after intercourse / blunt trauma"
+   ]
+  },
+  {
+   "id": "cy_pres_1_0",
+   "x": 269,
+   "y": 813,
+   "w": 212,
+   "h": 151,
+   "kind": "cy_w",
+   "title": "Blood in the pelvis",
+   "lines": [
+    "shoulder pain lying down · tenesmus",
+    "lightheaded · ORTHOSTATIC drop"
+   ]
+  },
+  {
+   "id": "dy_pres_0_0",
+   "x": 521,
+   "y": 640,
+   "w": 212,
+   "h": 152,
+   "kind": "dy_t",
+   "title": "CRAMPS on the first 1–2 days of flow",
+   "lines": [
+    "radiate to the back",
+    "EASE as the period goes on"
+   ]
+  },
+  {
+   "id": "dy_pres_1_0",
+   "x": 521,
+   "y": 814,
+   "w": 212,
+   "h": 150,
+   "kind": "dy_w",
+   "title": "Why it hurts",
+   "lines": [
+    "PROSTAGLANDINS → contractions → uterine ISCHEMIA"
+   ]
+  },
+  {
+   "id": "en_pres_0_0",
+   "x": 745,
+   "y": 640,
+   "w": 212,
+   "h": 152,
+   "kind": "en_t",
+   "title": "Pain starting BEFORE menses",
+   "lines": [
+    "dysmenorrhea · DEEP dyspareunia · dyschezia · dysuria · INFERTILITY",
+    "severity does NOT match the pain"
+   ]
+  },
+  {
+   "id": "en_pres_1_0",
+   "x": 745,
+   "y": 814,
+   "w": 212,
+   "h": 150,
+   "kind": "en_w",
+   "title": "Exam",
+   "lines": [
+    "NODULAR uterosacral ligaments / cul-de-sac",
+    "FIXED uterus · adnexal mass (endometrioma)",
+    "~often NORMAL: does not rule it out"
+   ]
+  },
+  {
+   "id": "ad_pres_0_0",
+   "x": 969,
+   "y": 640,
+   "w": 212,
+   "h": 160,
+   "kind": "ad_t",
+   "title": "HEAVY periods + pain",
+   "lines": [
+    "MENORRHAGIA ± dysmenorrhea",
+    "heavy pelvic sensation"
+   ]
+  },
+  {
+   "id": "ad_pres_1_0",
+   "x": 969,
+   "y": 822,
+   "w": 212,
+   "h": 142,
+   "kind": "ad_w",
+   "title": "Exam",
+   "lines": [
+    "TENDER, ENLARGED, BOGGY uterus"
+   ]
+  },
+  {
+   "id": "le_pres_0_0",
+   "x": 1193,
+   "y": 640,
+   "w": 212,
+   "h": 161,
+   "kind": "le_t",
+   "title": "HEAVY bleeding · pressure",
+   "lines": [
+    "#1 cause of AUB (submucosal most)",
+    "frequency, constipation · infertility if it DISTORTS THE CAVITY"
+   ]
+  },
+  {
+   "id": "le_pres_1_0",
+   "x": 1193.0,
+   "y": 823,
+   "w": 101.0,
+   "h": 141,
+   "kind": "le_w",
+   "title": "Exam",
+   "lines": [
+    "ENLARGED (e.g. 20-week), MOBILE uterus"
+   ]
+  },
+  {
+   "id": "le_pres_1_1",
+   "x": 1304.0,
+   "y": 823,
+   "w": 101.0,
+   "h": 141,
+   "kind": "bad",
+   "title": "Sarcoma?",
+   "lines": [
+    "RAPID growth · single · older"
+   ]
+  },
+  {
+   "id": "to_inv_0_0",
+   "x": 45,
+   "y": 1004,
+   "w": 212,
+   "h": 42,
+   "kind": "to_w",
+   "title": "1 · β-hCG < 1 · Hb stable",
+   "lines": []
+  },
+  {
+   "id": "to_inv_1_0",
+   "x": 45,
+   "y": 1068,
+   "w": 212,
+   "h": 98,
+   "kind": "to_t",
+   "title": "2 · Ultrasound: is the ovary ENLARGED?",
+   "lines": [
+    "enlarged ovaries tort far more: a weighted pendulum"
+   ]
+  },
+  {
+   "id": "to_inv_2_0",
+   "x": 45,
+   "y": 1188,
+   "w": 212,
+   "h": 98,
+   "kind": "to_w",
+   "title": "3 · Then the MASS behind it",
+   "lines": [
+    "benign vs malignant: PELVIC MASS chart"
+   ]
+  },
+  {
+   "id": "cy_inv_0_0",
+   "x": 269,
+   "y": 1004,
+   "w": 212,
+   "h": 48,
+   "kind": "cy_w",
+   "title": "1 · β-hCG < 1",
+   "lines": []
+  },
+  {
+   "id": "cy_inv_1_0",
+   "x": 269,
+   "y": 1074,
+   "w": 212,
+   "h": 122,
+   "kind": "cy_t",
+   "title": "2 · CBC: hemoglobin FALLING",
+   "lines": [
+    "e.g. 110 → 78 in a few hours",
+    "REPEAT it if bleeding may be ongoing"
+   ]
+  },
+  {
+   "id": "cy_inv_2_0",
+   "x": 269,
+   "y": 1218,
+   "w": 212,
+   "h": 68,
+   "kind": "cy_w",
+   "title": "3 · Group and screen + ultrasound",
+   "lines": []
+  },
+  {
+   "id": "dy_inv_0_0",
+   "x": 521,
+   "y": 1004,
+   "w": 212,
+   "h": 131,
+   "kind": "dy_w",
+   "title": "1 · History: WHEN does it start?",
+   "lines": [
+    "WITH the flow → primary",
+    "BEFORE menses → think endometriosis"
+   ]
+  },
+  {
+   "id": "dy_inv_1_0",
+   "x": 521,
+   "y": 1157,
+   "w": 212,
+   "h": 129,
+   "kind": "dy_t",
+   "title": "2 · A CLINICAL diagnosis",
+   "lines": [
+    "NO lab abnormality · NORMAL exam",
+    "an exam finding → STRUCTURAL instead"
+   ]
+  },
+  {
+   "id": "en_inv_0_0",
+   "x": 745,
+   "y": 1004,
+   "w": 212,
+   "h": 130,
+   "kind": "en_w",
+   "title": "1 · History: ASK about dyspareunia",
+   "lines": [
+    "many will not raise it unprompted"
+   ]
+  },
+  {
+   "id": "en_inv_1_0",
+   "x": 745,
+   "y": 1156,
+   "w": 212,
+   "h": 130,
+   "kind": "en_t",
+   "title": "2 · CONFIRM: laparoscopy → biopsy",
+   "lines": [
+    "ANY 2 OF 3: endometrial glands · stroma · hemosiderin"
+   ]
+  },
+  {
+   "id": "ad_inv_0_0",
+   "x": 969,
+   "y": 1004,
+   "w": 212,
+   "h": 75,
+   "kind": "ad_t",
+   "title": "1 · CLINICAL: history + exam",
+   "lines": []
+  },
+  {
+   "id": "ad_inv_1_0",
+   "x": 969,
+   "y": 1101,
+   "w": 212,
+   "h": 73,
+   "kind": "ad_w",
+   "title": "2 · Ultrasound or MRI",
+   "lines": [
+    "sometimes helps"
+   ]
+  },
+  {
+   "id": "ad_inv_2_0",
+   "x": 969,
+   "y": 1196,
+   "w": 212,
+   "h": 91,
+   "kind": "bad",
+   "title": "NOT by biopsy",
+   "lines": [
+    "the glands are too deep · often found at hysterectomy"
+   ]
+  },
+  {
+   "id": "le_inv_0_0",
+   "x": 1193,
+   "y": 1004,
+   "w": 212,
+   "h": 55,
+   "kind": "le_w",
+   "title": "1 · β-hCG + CBC",
+   "lines": []
+  },
+  {
+   "id": "le_inv_1_0",
+   "x": 1193,
+   "y": 1081,
+   "w": 212,
+   "h": 129,
+   "kind": "le_t",
+   "title": "2 · Ultrasound: SITE decides treatment",
+   "lines": [
+    "submucosal · intramural · subserosal · pedunculated (torsion risk)"
+   ]
+  },
+  {
+   "id": "le_inv_2_0",
+   "x": 1193,
+   "y": 1232,
+   "w": 212,
+   "h": 55,
+   "kind": "le_w",
+   "title": "3 · Pathology if removed",
+   "lines": []
+  },
+  {
+   "id": "to_tx_0_0",
+   "x": 45,
+   "y": 1326,
+   "w": 212,
+   "h": 143,
+   "kind": "bad",
+   "title": "1 · SURGERY now: untwist",
+   "lines": [
+    "~venous block → edema → ischemia → necrosis"
+   ]
+  },
+  {
+   "id": "to_tx_1_0",
+   "x": 45,
+   "y": 1491,
+   "w": 212,
+   "h": 125,
+   "kind": "ok",
+   "title": "2 · Can the ovary be saved?",
+   "lines": [
+    "decide once untwisted"
+   ]
+  },
+  {
+   "id": "to_tx_2_0",
+   "x": 45,
+   "y": 1638,
+   "w": 212,
+   "h": 107,
+   "kind": "to_w",
+   "title": "3 · Treat the mass behind it",
+   "lines": []
+  },
+  {
+   "id": "cy_tx_0_0",
+   "x": 269,
+   "y": 1326,
+   "w": 212,
+   "h": 106,
+   "kind": "ok",
+   "title": "1 · STABLE: observe",
+   "lines": [
+    "most are SELF-LIMITED"
+   ]
+  },
+  {
+   "id": "cy_tx_1_0",
+   "x": 269,
+   "y": 1454,
+   "w": 212,
+   "h": 144,
+   "kind": "bad",
+   "title": "Still bleeding or UNSTABLE",
+   "lines": [
+    "→ SURGERY · interventional radiology in some"
+   ]
+  },
+  {
+   "id": "cy_tx_2_0",
+   "x": 269,
+   "y": 1620,
+   "w": 212,
+   "h": 124,
+   "kind": "ok",
+   "title": "Prevent recurrence",
+   "lines": [
+    "suppress ovulation: oral contraceptive pill (OCP)"
+   ]
+  },
+  {
+   "id": "dy_tx_0_0",
+   "x": 521,
+   "y": 1326,
+   "w": 212,
+   "h": 207,
+   "kind": "ok",
+   "title": "1 · NSAIDs",
+   "lines": [
+    "nonsteroidal anti-inflammatory drugs"
+   ]
+  },
+  {
+   "id": "dy_tx_1_0",
+   "x": 521,
+   "y": 1555,
+   "w": 212,
+   "h": 189,
+   "kind": "ok",
+   "title": "2 · Ovulatory suppression",
+   "lines": [
+    "OCP: less flow, less pain"
+   ]
+  },
+  {
+   "id": "en_tx_0_0",
+   "x": 745,
+   "y": 1326,
+   "w": 212,
+   "h": 149,
+   "kind": "ok",
+   "title": "1 · NSAIDs + OVULATORY SUPPRESSION",
+   "lines": [
+    "pseudopregnancy: OCP, ring, patch, Depo, IUS, Visanne",
+    "pseudomenopause: GnRH agonist, danazol"
+   ]
+  },
+  {
+   "id": "en_tx_1_0",
+   "x": 745,
+   "y": 1497,
+   "w": 212,
+   "h": 111,
+   "kind": "warn",
+   "title": "2 · Laparoscopic excision",
+   "lines": [
+    "refractory + WANTS fertility · infertility",
+    "do NOT repeat surgery"
+   ]
+  },
+  {
+   "id": "en_tx_2_0",
+   "x": 745,
+   "y": 1630,
+   "w": 212,
+   "h": 113,
+   "kind": "bad",
+   "title": "3 · Hysterectomy ± oophorectomy",
+   "lines": [
+    "NOT first line · NOT if fertility wanted"
+   ]
+  },
+  {
+   "id": "ad_tx_0_0",
+   "x": 969,
+   "y": 1326,
+   "w": 212,
+   "h": 124,
+   "kind": "ok",
+   "title": "1 · Ovulatory suppression",
+   "lines": [
+    "OCP · danazol · GnRH agonist"
+   ]
+  },
+  {
+   "id": "ad_tx_1_0",
+   "x": 969,
+   "y": 1472,
+   "w": 212,
+   "h": 126,
+   "kind": "warn",
+   "title": "2 · Uterine artery embolization",
+   "lines": []
+  },
+  {
+   "id": "ad_tx_2_0",
+   "x": 969,
+   "y": 1620,
+   "w": 212,
+   "h": 124,
+   "kind": "ok",
+   "title": "3 · Hysterectomy",
+   "lines": [
+    "the GOLD STANDARD"
+   ]
+  },
+  {
+   "id": "le_tx_0_0",
+   "x": 1193,
+   "y": 1326,
+   "w": 212,
+   "h": 78,
+   "kind": "ok",
+   "title": "1 · Ovulatory suppression",
+   "lines": [
+    "combined hormonal · Depo · Mirena · GnRH agonist"
+   ]
+  },
+  {
+   "id": "le_tx_1_0",
+   "x": 1193,
+   "y": 1426,
+   "w": 212,
+   "h": 114,
+   "kind": "warn",
+   "title": "2 · Then by SITE",
+   "lines": [
+    "submucosal → HYSTEROSCOPIC resection",
+    "large or pedunculated → myomectomy or hysterectomy"
+   ]
+  },
+  {
+   "id": "le_tx_2_0",
+   "x": 1193,
+   "y": 1562,
+   "w": 212,
+   "h": 62,
+   "kind": "ok",
+   "title": "WANTS pregnancy → MYOMECTOMY",
+   "lines": []
+  },
+  {
+   "id": "le_tx_3_0",
+   "x": 1193,
+   "y": 1646,
+   "w": 212,
+   "h": 98,
+   "kind": "bad",
+   "title": "NOT uterine artery embolization",
+   "lines": [
+    "pregnancy after it: case reports only"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ac",
+   "path": "M725.0 88V113H263.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_ch",
+   "path": "M725.0 88V113H963.0V138"
+  },
+  {
+   "from": "g_ac",
+   "to": "t_ac",
+   "from_dx": 0
+  },
+  {
+   "from": "g_ch",
+   "to": "t_pr",
+   "from_dx": -336
+  },
+  {
+   "from": "g_ch",
+   "to": "t_st",
+   "from_dx": 112
+  },
+  {
+   "from": "to_pres_0_0",
+   "to": "to_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "cy_pres_0_0",
+   "to": "cy_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "dy_pres_0_0",
+   "to": "dy_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "en_pres_0_0",
+   "to": "en_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ad_pres_0_0",
+   "to": "ad_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "le_pres_0_0",
+   "to": "le_pres_1_0",
+   "from_dx": -55.5,
+   "dashed": true
+  },
+  {
+   "from": "le_pres_0_0",
+   "to": "le_pres_1_1",
+   "from_dx": 55.5,
+   "dashed": true
+  },
+  {
+   "from": "to_inv_0_0",
+   "to": "to_inv_1_0"
+  },
+  {
+   "from": "to_inv_1_0",
+   "to": "to_inv_2_0"
+  },
+  {
+   "from": "cy_inv_0_0",
+   "to": "cy_inv_1_0"
+  },
+  {
+   "from": "cy_inv_1_0",
+   "to": "cy_inv_2_0"
+  },
+  {
+   "from": "dy_inv_0_0",
+   "to": "dy_inv_1_0"
+  },
+  {
+   "from": "en_inv_0_0",
+   "to": "en_inv_1_0"
+  },
+  {
+   "from": "ad_inv_0_0",
+   "to": "ad_inv_1_0"
+  },
+  {
+   "from": "ad_inv_1_0",
+   "to": "ad_inv_2_0"
+  },
+  {
+   "from": "le_inv_0_0",
+   "to": "le_inv_1_0"
+  },
+  {
+   "from": "le_inv_1_0",
+   "to": "le_inv_2_0"
+  },
+  {
+   "from": "to_tx_0_0",
+   "to": "to_tx_1_0"
+  },
+  {
+   "from": "to_tx_1_0",
+   "to": "to_tx_2_0"
+  },
+  {
+   "from": "cy_tx_0_0",
+   "to": "cy_tx_1_0"
+  },
+  {
+   "from": "cy_tx_1_0",
+   "to": "cy_tx_2_0"
+  },
+  {
+   "from": "dy_tx_0_0",
+   "to": "dy_tx_1_0"
+  },
+  {
+   "from": "en_tx_0_0",
+   "to": "en_tx_1_0"
+  },
+  {
+   "from": "en_tx_1_0",
+   "to": "en_tx_2_0"
+  },
+  {
+   "from": "ad_tx_0_0",
+   "to": "ad_tx_1_0"
+  },
+  {
+   "from": "ad_tx_1_0",
+   "to": "ad_tx_2_0"
+  },
+  {
+   "from": "le_tx_0_0",
+   "to": "le_tx_1_0"
+  },
+  {
+   "from": "le_tx_1_0",
+   "to": "le_tx_2_0"
+  },
+  {
+   "from": "le_tx_2_0",
+   "to": "le_tx_3_0"
+  },
+  {
+   "from": "to_head_0_0",
+   "to": "to_pres_0_0"
+  },
+  {
+   "from": "to_pres_1_0",
+   "to": "to_inv_0_0"
+  },
+  {
+   "from": "to_inv_2_0",
+   "to": "to_tx_0_0"
+  },
+  {
+   "from": "t_ac",
+   "to": "to_head_0_0",
+   "from_dx": -112,
+   "label": "STABLE · tender mass",
+   "label_at": [
+    151.0,
+    446
+   ]
+  },
+  {
+   "from": "cy_head_0_0",
+   "to": "cy_pres_0_0"
+  },
+  {
+   "from": "cy_pres_1_0",
+   "to": "cy_inv_0_0"
+  },
+  {
+   "from": "cy_inv_2_0",
+   "to": "cy_tx_0_0"
+  },
+  {
+   "from": "t_ac",
+   "to": "cy_head_0_0",
+   "from_dx": 112,
+   "label": "Hb FALLING",
+   "label_at": [
+    375.0,
+    446
+   ]
+  },
+  {
+   "from": "dy_head_0_0",
+   "to": "dy_pres_0_0"
+  },
+  {
+   "from": "dy_pres_1_0",
+   "to": "dy_inv_0_0"
+  },
+  {
+   "from": "dy_inv_1_0",
+   "to": "dy_tx_0_0"
+  },
+  {
+   "from": "t_pr",
+   "to": "dy_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "en_head_0_0",
+   "to": "en_pres_0_0"
+  },
+  {
+   "from": "en_pres_1_0",
+   "to": "en_inv_0_0"
+  },
+  {
+   "from": "en_inv_1_0",
+   "to": "en_tx_0_0"
+  },
+  {
+   "from": "t_st",
+   "to": "en_head_0_0",
+   "from_dx": -224,
+   "label": "NODULAR, fixed",
+   "label_at": [
+    851.0,
+    446
+   ]
+  },
+  {
+   "from": "ad_head_0_0",
+   "to": "ad_pres_0_0"
+  },
+  {
+   "from": "ad_pres_1_0",
+   "to": "ad_inv_0_0"
+  },
+  {
+   "from": "ad_inv_2_0",
+   "to": "ad_tx_0_0"
+  },
+  {
+   "from": "t_st",
+   "to": "ad_head_0_0",
+   "from_dx": 0,
+   "label": "BOGGY",
+   "label_at": [
+    1075.0,
+    446
+   ]
+  },
+  {
+   "from": "le_head_0_0",
+   "to": "le_pres_0_0"
+  },
+  {
+   "from": "le_pres_1_0",
+   "to": "le_inv_0_0",
+   "to_dx": -55.5
+  },
+  {
+   "from": "le_pres_1_1",
+   "to": "le_inv_0_0",
+   "to_dx": 55.5
+  },
+  {
+   "from": "le_inv_2_0",
+   "to": "le_tx_0_0"
+  },
+  {
+   "from": "t_st",
+   "to": "le_head_0_0",
+   "from_dx": 224,
+   "label": "ENLARGED, mobile",
+   "label_at": [
+    1299.0,
+    446
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1778,
+   "w": 673,
+   "title": "Fertility wishes change the plan",
+   "items": [
+    "affects fertility: endometriosis · cavity-distorting fibroids · polyps · NOT adenomyosis",
+    "fibroid + wants pregnancy → myomectomy, not embolization",
+    "endometriosis + wants pregnancy → laparoscopic excision, not hysterectomy · avoid endometrioma surgery (costs ovarian reserve)"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 732,
+   "y": 1778,
+   "w": 673,
+   "title": "Also on the differential",
+   "items": [
+    "MYOFASCIAL pelvic pain: NOT cyclic · GLOBALLY tender pelvis, normal uterus → physiotherapy (soft-tissue release), trigger-point injection, amitriptyline + gabapentin",
+    "endometrial POLYP: spotting between periods, a mass at the os → remove the WHOLE polyp for pathology",
+    "non-gynecologic: appendicitis, irritable bowel, interstitial cystitis, pelvic floor myalgia"
+   ],
+   "cols": 1
+  }
+ ]
+}

@@ -1,0 +1,652 @@
+{
+ "name": "amenorrhea overview",
+ "title": "Amenorrhea decision chart: beta-hCG first, then is there a uterus (no: testosterone and karyotype split Mullerian agenesis from androgen insensitivity), then prolactin and TSH, then FSH (high: karyotype, Turner or primary ovarian insufficiency; low: hypothalamus or pituitary, MRI; normal: the progesterone withdrawal test splits anovulation from an outflow block); each column gives clues, investigations and treatment",
+ "col_w": 212,
+ "root": {
+  "title": "Amenorrhea: 1 · β-hCG FIRST in every case (positive = PREGNANCY), then sort in order: 2 · uterus? → 3 · prolactin + TSH → 4 · FSH",
+  "lines": [
+   "PRIMARY: no menses by 15 WITH breast development (or 3 years after thelarche), or by 13 with no secondary sex characteristics",
+   "SECONDARY: no menses for 3 MONTHS, or fewer than 9 cycles a year"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_u",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "2 · NO UTERUS",
+   "lines": [
+    "on ultrasound + bimanual"
+   ]
+  },
+  {
+   "id": "g_p",
+   "cols": [
+    1,
+    1
+   ],
+   "title": "3 · PROLACTIN or TSH HIGH",
+   "lines": [
+    "uterus present"
+   ]
+  },
+  {
+   "id": "g_f",
+   "cols": [
+    2,
+    5
+   ],
+   "title": "4 · Serum FSH (+ LH, estradiol)",
+   "lines": [
+    "uterus present · prolactin + TSH NORMAL",
+    "high = the OVARY has failed · low = the problem is ABOVE it"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_hi",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "FSH HIGH, estrogen LOW",
+   "lines": [
+    "→ KARYOTYPE"
+   ]
+  },
+  {
+   "id": "t_lo",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "FSH LOW, estrogen LOW",
+   "lines": [
+    "eating disorder, exercise, stress? NO → MRI head"
+   ]
+  },
+  {
+   "id": "t_n",
+   "cols": [
+    4,
+    5
+   ],
+   "title": "FSH NORMAL: progesterone withdrawal (STIMULATION test)",
+   "lines": [
+    "oral progesterone 10–14 days, then stop",
+    "BLEED = estrogen present + outflow OPEN · NO bleed = too little estrogen OR a BLOCK"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "nu",
+   "colour": "slate",
+   "head": [
+    [
+     [
+      "h",
+      "No uterus",
+      [
+       "PRIMARY amenorrhea",
+       "Mullerian ducts → uterus, tubes, cervix, upper vagina"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Pubic + axillary hair?",
+      [
+       "PRESENT → Mullerian agenesis (MRKH)",
+       "ABSENT → androgen insensitivity (AIS)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Exam",
+      [
+       "uterus + cervix ABSENT",
+       "vagina absent or present"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Testosterone + KARYOTYPE decide",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "46,XX",
+      [
+       "T female range",
+       "→ MRKH"
+      ]
+     ],
+     [
+      "w",
+      "46,XY",
+      [
+       "T male range",
+       "→ complete AIS"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "MRKH",
+      [
+       "her goals: a vagina? fertility?"
+      ]
+     ],
+     [
+      "bad",
+      "AIS",
+      [
+       "EXCISE THE GONADS: malignancy"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pr",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Prolactin or TSH high",
+      [
+       "hyperprolactinemia: 10% of SECONDARY",
+       "fix it FIRST: reversible"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Galactorrhea · headache",
+      [
+       "bitemporal field loss"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Ask",
+      [
+       "ANTIPSYCHOTICS: commonest drug cause",
+       "cold intolerance, brittle nails (thyroid)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "TSH HIGH",
+      [
+       "hypothyroid: TRH ↑ prolactin too"
+      ]
+     ],
+     [
+      "w",
+      "Prolactin HIGH, TSH normal",
+      [
+       "drugs? then MRI sella: prolactinoma commonest"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat the cause",
+      [
+       "TSH high → LEVOTHYROXINE",
+       "prolactin high → DOPAMINE AGONIST"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Macroadenoma + deficits",
+      [
+       "→ SURGERY"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ov",
+   "colour": "magenta",
+   "drop_from": "t_hi",
+   "drop_label": "karyotype",
+   "head": [
+    [
+     [
+      "h",
+      "Ovarian failure",
+      [
+       "HYPERGONADOTROPIC",
+       "no follicles left to answer FSH"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Turner: EXCEPTIONALLY SHORT",
+      [
+       "webbed neck, shield chest · 90% NEVER menstruate",
+       "27% of PRIMARY: the commonest"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "POI: loss BEFORE 40",
+      [
+       "HOT FLASHES · autoimmune 40% · chemo, radiation, surgery"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "KARYOTYPE",
+      [
+       "always in POI, especially under 30"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "45,X or mosaic",
+      [
+       "TURNER · Y present?"
+      ]
+     ],
+     [
+      "w",
+      "46,XX",
+      [
+       "POI · autoimmune tests"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Y present",
+      [
+       "REMOVE the streak gonad: 25% tumour"
+      ]
+     ],
+     [
+      "ok",
+      "POI fertility",
+      [
+       "DONOR OOCYTE IVF: cannot be reversed"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "BOTH: ESTROGEN, PROMPTLY",
+      [
+       "+ progestin if a uterus"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hp",
+   "colour": "teal",
+   "drop_from": "t_lo",
+   "drop_label": "stressor? MRI",
+   "head": [
+    [
+     [
+      "h",
+      "Hypothalamus or pituitary",
+      [
+       "HYPOGONADOTROPIC",
+       "FSH, LH, estradiol all low"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Low BMI · athlete · stressor",
+      [
+       "FUNCTIONAL: 15% of SECONDARY",
+       "athlete triad: low energy + amenorrhea + LOW BONE DENSITY"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Other clues",
+      [
+       "postpartum HEMORRHAGE, failed lactation → Sheehan",
+       "headache, visual change → tumour (craniopharyngioma)",
+       "olfactory defect, midline anomalies → Kallmann"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Stressor FOUND",
+      [
+       "functional: no MRI needed"
+      ]
+     ],
+     [
+      "t",
+      "NONE → MRI",
+      [
+       "mass: TUMOUR · normal: idiopathic or Kallmann"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Functional",
+      [
+       "restore ENERGY (weight gain): helps BONE"
+      ]
+     ],
+     [
+      "ok",
+      "Others",
+      [
+       "treat the cause · ESTROGEN replacement"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "OCP gives a bleed, NOT bone",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Fertility",
+      [
+       "gonadotropins or pulsatile GnRH"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "an",
+   "colour": "olive",
+   "drop_from": "t_n",
+   "drop_label": "BLEEDS",
+   "head": [
+    [
+     [
+      "h",
+      "Chronic anovulation",
+      [
+       "EUGONADOTROPIC · estrogen PRESENT",
+       "no ovulation → no progesterone"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Hirsutism, acne, obesity",
+      [
+       "cycles IRREGULAR rather than absent"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Unopposed estrogen",
+      [
+       "THICKENED, unstable endometrium → irregular bleeding"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Testosterone · DHEAS · 17-OHP",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "Normal",
+      [
+       "→ PMOS: 28% of secondary"
+      ]
+     ],
+     [
+      "w",
+      "17-OHP HIGH",
+      [
+       "→ late-onset CAH"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Testosterone or DHEAS HIGH instead?",
+      [
+       "a TUMOUR: testosterone → ovarian ultrasound · DHEAS → adrenal MRI"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "PROTECT THE ENDOMETRIUM",
+      [
+       "unopposed estrogen: combined pill or a progestin"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Glucose intolerance → METFORMIN",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Fertility: ovulation induction · IVF",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "of",
+   "colour": "brown",
+   "drop_from": "t_n",
+   "drop_label": "NO bleed: blocked",
+   "head": [
+    [
+     [
+      "h",
+      "Outflow tract blocked",
+      [
+       "ANATOMIC: blood made but CANNOT GET OUT"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "PRIMARY: cyclic pain, no bleed",
+      [
+       "imperforate hymen: BULGING, bluish (commonest)",
+       "septum: hymen open, vagina SHORT"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "SECONDARY",
+      [
+       "ASHERMAN: 88% after CURETTAGE",
+       "cervical stenosis: after D&C, LEEP"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Pelvic ultrasound",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Confirm the site",
+      [
+       "septum: MRI = GOLD standard",
+       "Asherman: HYSTEROSCOPY = definitive"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Obstruction → SURGERY",
+      [
+       "relieves trapped blood"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Asherman",
+      [
+       "hysteroscopic lysis"
+      ]
+     ],
+     [
+      "ok",
+      "Stenosis",
+      [
+       "DILATE + exclude cancer"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Treat by cause AND her goals",
+   "items": [
+    "low estrogen from ANY compartment → ESTROGEN replacement, started PROMPTLY: bone loss is fastest early",
+    "uterus present → ADD a PROGESTIN (endometrial hyperplasia or cancer)",
+    "infertility: fix the REVERSIBLE first (prolactin, thyroid, anatomy)"
+   ]
+  },
+  {
+   "title": "Commonest causes",
+   "items": [
+    "PRIMARY: Turner 27% · Mullerian agenesis 15% · constitutional delay 14%",
+    "SECONDARY: PREGNANCY · PMOS 28% · hypothalamic 15% · hyperprolactinemia 10%"
+   ]
+  },
+  {
+   "title": "Plot the growth chart",
+   "items": [
+    "overweight + NOT GROWING → endocrine: hypothyroid, Cushing",
+    "underweight → CALORIE DEFICIT: eating disorder, IBD, celiac",
+    "exceptionally SHORT → Turner or mosaic"
+   ]
+  }
+ ]
+}

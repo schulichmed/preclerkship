@@ -24,6 +24,22 @@ Spec shape:
                       "chips": [["SC daily", "plain"], ["Ca²⁺ ↑", "warn"]],
                       "lines": [{"label": "Avoid:", "text": "...", "kind": "bad"}]}]}],
                  "after": [{"label": "Too much:", "text": "...", "kind": "bad"}]}]}
+
+Optional keys, all absent from the older specs, which therefore draw exactly as
+before: "width" (canvas width, default WIDTH); a section's "note" (lines under
+its subhead) and "after" (lines under its cards), both in the line shape above;
+"panels": titled bullet cards in a grid under the columns, or between the legend
+and the root with "place": "top". Each panel is
+{"title": "...", "items": ["text" or a line dict], "span": 1, "cols": 1}, where
+span counts grid columns ("panel_cols", default the group count) and cols
+splits the bullets inside the card.
+
+"ask" on a group turns the top of the chart into a decision chain: a row of
+question boxes, one above each column that has one, read left to right. "yes"
+drops into that column; "no" runs right to the next question, or straight into
+the next column when it has no question of its own (the last "no" answer).
+{"q": "Can she take estrogen?", "lines": ["text or a line dict"],
+ "yes": "yes", "no": "no"}; the labels default to yes and no.
 """
 
 import argparse
@@ -67,15 +83,19 @@ GROUP_COLORS = {
     "vitd": ("#9a6a00", "#fbf1d6"), "anti": ("#1f6f8b", "#e0f0f5"),
     "ana": ("#6a4aa8", "#eee8f8"), "sens": ("#2f7d5b", "#e2f2ea"),
     "secr": ("#a45a12", "#fbeedd"), "abs": ("#6a4aa8", "#eee8f8"),
+    "rose": ("#a3366b", "#f8e4ee"),
 }
 CHIP = {   # kind -> (fill, text, border)
     "plain": (PALETTE["bg"], PALETTE["muted"], PALETTE["line"]),
     "good": (PALETTE["ok_soft"], PALETTE["ok"], None),
     "bad": (PALETTE["bad_soft"], PALETTE["bad"], None),
     "warn": (PALETTE["warn_soft"], PALETTE["warn"], None),
+    # extra colours for a category a chart wants to keep apart (e.g. hormone type)
+    "purple": ("#eee8f8", "#6a4aa8", None),
+    "amber": ("#fdf0d5", "#8a5a00", None),
 }
 LINE_KIND = {"bad": PALETTE["bad"], "ok": PALETTE["ok"], "muted": PALETTE["muted"],
-             "ink": PALETTE["ink"]}
+             "ink": PALETTE["ink"], "warn": PALETTE["warn"]}
 
 _fonts = {}
 
@@ -232,17 +252,85 @@ def draw_group(svg, x, y, w, group):
             lines = wrap([(section["subhead"].upper(), "bold", colour)], w - INDENT, 11.5)
             cy += svg.text_lines(x + RAIL, cy, lines, 11.5, 16, spacing="0.06em")
             cy += 4
+        for item in section.get("note", []):
+            cy += svg.text_lines(x + INDENT, cy, wrap(line_runs(item, PALETTE["muted"]),
+                                                      w - INDENT, 12.5), 12.5, 17)
+            cy += 4
         for drug in section["drugs"]:
             h = draw_card(svg, x + INDENT, cy, w - INDENT, drug)
             svg.line(rail_x, cy + 20, x + INDENT, cy + 20)
             last_tick = cy + 20
             cy += h + 10
+        for item in section.get("after", []):
+            cy += svg.text_lines(x + INDENT, cy, wrap(line_runs(item, PALETTE["muted"]),
+                                                      w - INDENT, 12.5), 12.5, 17)
+            cy += 4
     svg.line(rail_x, rail_top, rail_x, last_tick)
     for item in group.get("after", []):
         cy += 2
         cy += svg.text_lines(x + RAIL, cy, wrap(line_runs(item, PALETTE["muted"]),
                                                 w - RAIL, 12.5), 12.5, 17)
     return cy
+
+
+def panel_columns(panel, w):
+    """Wrap a panel's bullets into its inner columns. Returns (columns, inner width)."""
+    cols = panel.get("cols", 1)
+    inner = (w - 28 - (cols - 1) * 16) / float(cols)
+    items = [{"text": i, "kind": "ink"} if isinstance(i, str) else i for i in panel["items"]]
+    per = -(-len(items) // cols)
+    columns = []
+    for c in range(cols):
+        columns.append([wrap(line_runs(i, PALETTE["ink"]), inner - 12, 12.5)
+                        for i in items[c * per:(c + 1) * per]])
+    return columns, inner
+
+
+def panel_height(panel, w):
+    title = wrap([(panel["title"], "title", PALETTE["ink"])], w - 28, 15)
+    columns, _ = panel_columns(panel, w)
+    body = max(sum(len(b) * 17 + 3 for b in col) for col in columns)
+    return 12 + len(title) * 21 + 6 + body + 9
+
+
+def draw_panel(svg, x, y, w, h, panel):
+    svg.rect(x, y, w, h, PALETTE["surface"], PALETTE["line"], rx=10)
+    cy = y + 12
+    cy += svg.text_lines(x + 14, cy, wrap([(panel["title"], "title", PALETTE["ink"])],
+                                           w - 28, 15), 15, 21, family=SERIF)
+    cy += 6
+    columns, inner = panel_columns(panel, w)
+    for c, col in enumerate(columns):
+        bx, by = x + 14 + c * (inner + 16), cy
+        for lines in col:
+            svg.parts.append('<circle cx="%.1f" cy="%.1f" r="2.2" fill="%s"/>'
+                             % (bx + 3, by + 9, PALETTE["muted"]))
+            by += svg.text_lines(bx + 12, by, lines, 12.5, 17) + 3
+
+
+def draw_panels(svg, x, y, width, panels, ncols):
+    """Panels in a grid, left to right; a row is as tall as its tallest. Returns the height."""
+    unit = (width - (ncols - 1) * GAP) / float(ncols)
+    rows, row, used = [], [], 0
+    for p in panels:
+        span = min(p.get("span", 1), ncols)
+        if row and used + span > ncols:
+            rows.append(row)
+            row, used = [], 0
+        row.append((p, span))
+        used += span
+    if row:
+        rows.append(row)
+    cy = y
+    for row in rows:
+        widths = [span * unit + (span - 1) * GAP for _, span in row]
+        h = max(panel_height(p, wd) for (p, _), wd in zip(row, widths))
+        cx = x
+        for (p, _), wd in zip(row, widths):
+            draw_panel(svg, cx, cy, wd, h, p)
+            cx += wd + GAP
+        cy += h + GAP
+    return cy - GAP - y
 
 
 def draw_legend(svg, x, y, width, legend):
@@ -266,40 +354,178 @@ def draw_legend(svg, x, y, width, legend):
     return cy + h - y
 
 
+def arrow_head(svg, x, y, direction="down", colour=PALETTE["muted"]):
+    """A small filled arrowhead with its tip at (x, y), pointing down or right."""
+    if direction == "down":
+        pts = (x - 5, y - 8, x + 5, y - 8, x, y)
+    else:
+        pts = (x - 8, y - 5, x - 8, y + 5, x, y)
+    svg.parts.append('<polygon points="%.1f,%.1f %.1f,%.1f %.1f,%.1f" fill="%s"/>'
+                     % (pts + (colour,)))
+
+
+def edge_label(svg, x, y, text):
+    """A short label on a connector, on a background patch so the line does not cross it."""
+    w = measure(text, "bold", 11.5) / WRAP + 10
+    svg.rect(x - w / 2, y - 9, w, 18, PALETTE["bg"], None, rx=4)
+    svg.parts.append('<text x="%.1f" y="%.1f" font-family="%s" font-size="11.5" '
+                     'font-weight="700" fill="%s" text-anchor="middle">%s</text>'
+                     % (x, y + 4, SANS, PALETTE["muted"], escape(text)))
+
+
+def ask_box_height(ask, w):
+    """Height of one question box at width w."""
+    q = wrap([(ask["q"], "bold", PALETTE["ink"])], w - 24, 14)
+    h = 12 + len(q) * 19
+    for item in ask.get("lines", []):
+        item = item if isinstance(item, dict) else {"text": item}
+        h += len(wrap(line_runs(item, PALETTE["muted"]), w - 24, 12)) * 16
+    h += bullet_block(None, 0, 0, w - 24, ask)
+    return h + 12
+
+
+def bullet_block(svg, x, y, w, ask):
+    """An ask's "list": short items as bullets in "list_cols" columns. Returns the height."""
+    items = ask.get("list", [])
+    if not items:
+        return 0
+    if ask.get("list_title"):
+        title_h = 18
+        if svg:
+            svg.text_lines(x, y, [[(ask["list_title"], "bold", LINE_KIND.get(ask.get("list_kind", "ink"), PALETTE["ink"]))]], 12, 16)
+    else:
+        title_h = 0
+    ncol = ask.get("list_cols", 1)
+    colw = (w - (ncol - 1) * 10) / float(ncol)
+    per = -(-len(items) // ncol)
+    colour = LINE_KIND.get(ask.get("list_kind", "ink"), PALETTE["ink"])
+    tallest = 0
+    for c in range(ncol):
+        cy = y + title_h
+        for text in items[c * per:(c + 1) * per]:
+            lines = wrap([(text, "reg", colour)], colw - 12, 12)
+            if svg:
+                svg.parts.append('<circle cx="%.1f" cy="%.1f" r="2" fill="%s"/>'
+                                 % (x + c * (colw + 10) + 3, cy + 8.5, colour))
+                svg.text_lines(x + c * (colw + 10) + 10, cy, lines, 12, 16)
+            cy += len(lines) * 16 + 2
+        tallest = max(tallest, cy - y)
+    return tallest
+
+
+def draw_ask(svg, x, y, w, h, ask):
+    """One question box: the question in bold, then its lines."""
+    svg.rect(x, y, w, h, PALETTE["surface"], PALETTE["ink"], rx=10, sw=1.5)
+    cy = y + 12
+    cy += svg.text_lines(x + 12, cy, wrap([(ask["q"], "bold", PALETTE["ink"])], w - 24, 14),
+                         14, 19)
+    for item in ask.get("lines", []):
+        item = item if isinstance(item, dict) else {"text": item}
+        cy += svg.text_lines(x + 12, cy, wrap(line_runs(item, PALETTE["muted"]), w - 24, 12),
+                             12, 16)
+    bullet_block(svg, x + 12, cy + 2, w - 24, ask)
+
+
+def draw_chain(svg, groups, xs, colw, y):
+    """The decision tree above the columns. Returns the y where the groups start.
+
+    Question k starts just right of column k's centre line, one step lower than
+    question k-1, so the questions form a staircase down to the right. "yes" leaves
+    the box's left side and drops down column k's centre line, which no later box
+    covers; "no" drops from the box's bottom into the next question, or, from the
+    last question, straight down into the next column.
+    """
+    asks = [g.get("ask") for g in groups]
+    centres = [x + colw / 2 for x in xs]
+    step = xs[1] - xs[0] if len(xs) > 1 else colw
+    inset = 40                              # box starts this far right of its centre line
+    bw = step + 70                          # wider than a step, so boxes overlap
+    vgap = 34
+    heights = [ask_box_height(a, bw) if a else 0 for a in asks]
+    levels, cy = [], y
+    for i, a in enumerate(asks):
+        levels.append(cy)
+        if a:
+            cy += heights[i] + vgap
+    top = cy + 10
+    for i, a in enumerate(asks):
+        if not a:
+            continue
+        bx, by = centres[i] + inset, levels[i]
+        draw_ask(svg, bx, by, bw, heights[i], a)
+        mid = by + 22
+        svg.line(bx, mid, centres[i], mid)
+        svg.line(centres[i], mid, centres[i], top)
+        arrow_head(svg, centres[i], top)
+        edge_label(svg, centres[i], mid + 34, a.get("yes", "yes"))
+        if i + 1 >= len(asks):
+            continue
+        if asks[i + 1]:
+            dx = (centres[i + 1] + inset + bx + bw) / 2   # where the two boxes overlap
+            svg.line(dx, by + heights[i], dx, levels[i + 1])
+            arrow_head(svg, dx, levels[i + 1])
+            edge_label(svg, dx, by + heights[i] + vgap / 2, a.get("no", "no"))
+        else:
+            # the last "no" drops from the box's bottom down the next column's centre
+            svg.line(centres[i + 1], by + heights[i], centres[i + 1], top)
+            arrow_head(svg, centres[i + 1], top)
+            edge_label(svg, centres[i + 1], (by + heights[i] + top) / 2, a.get("no", "no"))
+    return top
+
 def build(spec):
+    width = spec.get("width", WIDTH)
     svg = Svg()
     y = PAD
     if spec.get("legend"):
-        y += draw_legend(svg, PAD, y, WIDTH - 2 * PAD, spec["legend"]) + 18
+        y += draw_legend(svg, PAD, y, width - 2 * PAD, spec["legend"]) + 18
+    n = len(spec["groups"])
+    panel_cols = spec.get("panel_cols", n)
+    top_panels = [p for p in spec.get("panels", []) if p.get("place") == "top"]
+    low_panels = [p for p in spec.get("panels", []) if p.get("place") != "top"]
+    if top_panels:
+        y += draw_panels(svg, PAD, y, width - 2 * PAD, top_panels, panel_cols) + 18
 
     root_w = measure(spec["root"], "bold", 15) / WRAP + 36
-    root_x = (WIDTH - root_w) / 2
+    root_x = (width - root_w) / 2
     svg.rect(root_x, y, root_w, 40, PALETTE["ink"], rx=10)
     svg.parts.append('<text x="%.1f" y="%.1f" font-family="%s" font-size="15" '
                      'font-weight="700" fill="%s" text-anchor="middle">%s</text>'
-                     % (WIDTH / 2, y + 25.5, SANS, PALETTE["bg"], escape(spec["root"])))
+                     % (width / 2, y + 25.5, SANS, PALETTE["bg"], escape(spec["root"])))
     y += 40
 
-    n = len(spec["groups"])
-    colw = (WIDTH - 2 * PAD - (n - 1) * GAP) / float(n)
+    colw = (width - 2 * PAD - (n - 1) * GAP) / float(n)
     centres = [PAD + i * (colw + GAP) + colw / 2 for i in range(n)]
-    bar = y + 22
-    svg.line(WIDTH / 2, y, WIDTH / 2, bar)
-    svg.line(centres[0], bar, centres[-1], bar)
-    for c in centres:
-        svg.line(c, bar, c, bar + 22)
-    top = bar + 22
+    if any(g.get("ask") for g in spec["groups"]):
+        # the root feeds the first question; the chain then reads left to right
+        xs = [PAD + i * (colw + GAP) for i in range(n)]
+        first_x = xs[0] + colw / 2 + 40 + 60  # a little inside the first question box
+        bar = y + 20
+        svg.line(width / 2, y, width / 2, bar)
+        svg.line(first_x, bar, width / 2, bar)
+        svg.line(first_x, bar, first_x, bar + 20)
+        arrow_head(svg, first_x, bar + 20)
+        top = draw_chain(svg, spec["groups"], xs, colw, bar + 20)
+    else:
+        bar = y + 22
+        svg.line(width / 2, y, width / 2, bar)
+        svg.line(centres[0], bar, centres[-1], bar)
+        for c in centres:
+            svg.line(c, bar, c, bar + 22)
+        top = bar + 22
 
     bottom = top
     for i, group in enumerate(spec["groups"]):
         bottom = max(bottom, draw_group(svg, PAD + i * (colw + GAP), top, colw, group))
+    if low_panels:
+        bottom += 14
+        bottom += draw_panels(svg, PAD, bottom, width - 2 * PAD, low_panels, panel_cols)
     height = int(bottom + PAD)
 
     head = ('<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" '
             'viewBox="0 0 %d %d" role="img" aria-labelledby="t">'
             '<title id="t">%s</title>'
             '<rect width="100%%" height="100%%" rx="14" fill="%s"/>'
-            % (WIDTH, height, WIDTH, height, escape(spec["title"]), PALETTE["bg"]))
+            % (width, height, width, height, escape(spec["title"]), PALETTE["bg"]))
     body = "\n".join(p for p in svg.parts if p)
     return head + "\n" + body + "\n</svg>\n", height
 
@@ -314,7 +540,7 @@ def main():
     spec = json.load(io.open(args.spec, encoding="utf-8"))
     text, height = build(spec)
     io.open(args.out, "w", encoding="utf-8", newline="\n").write(text)
-    LOG.info("%s -> %s  %dx%d  %.0f KB", args.spec, args.out, WIDTH, height,
+    LOG.info("%s -> %s  %dx%d  %.0f KB", args.spec, args.out, spec.get("width", WIDTH), height,
              len(text.encode("utf-8")) / 1024.0)
     return 0
 

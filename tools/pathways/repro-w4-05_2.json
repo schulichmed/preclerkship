@@ -1,0 +1,897 @@
+{
+ "name": "vaginal discharge overview",
+ "width": 1284,
+ "title": "Vaginal discharge: history and speculum, then pH, whiff test and wet mount sort physiologic discharge and candidiasis (pH under 4.5) from bacterial vaginosis, trichomoniasis and atrophic vaginitis (pH over 4.5); tests, treatment, pregnancy and partner rules for each",
+ "kinds": {
+  "ca_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ca_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ca_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "bv_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "bv_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "bv_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "tv_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tv_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "tv_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "av_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "av_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "av_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 324,
+   "w": 300,
+   "h": 1210,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 370,
+   "y": 324,
+   "w": 300,
+   "h": 1210,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 672,
+   "y": 324,
+   "w": 300,
+   "h": 1210,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 974,
+   "y": 324,
+   "w": 300,
+   "h": 1210,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 468,
+   "h": 196,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 704,
+   "h": 296,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1040,
+   "h": 78,
+   "text": "CAUSE"
+  },
+  {
+   "x": 23,
+   "y": 1158,
+   "h": 368,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 277,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Vaginal discharge: physiologic, or which of four? pH → whiff → wet mount decide",
+   "lines": [
+    "1 · HISTORY: amount, colour, ODOUR, itch, sexual + Pap history → 2 · SPECULUM: swab the LATERAL walls, not the cervix (blood pH 7)",
+    "3 · pH strip, read WET → 4 · WHIFF: 10% KOH, fishy = amines → 5 · WET MOUNT: saline + KOH, low + high power",
+    "physiologic: estrogen drives it (lots in pregnancy) · lactobacilli keep it acidic · colour charts are a guide only"
+   ]
+  },
+  {
+   "id": "g_lo",
+   "x": 45,
+   "y": 174,
+   "w": 290,
+   "h": 78,
+   "kind": "plain",
+   "title": "pH < 4.5: normal acidity",
+   "lines": [
+    "physiologic discharge sits here too",
+    "whiff NEGATIVE"
+   ]
+  },
+  {
+   "id": "g_hi",
+   "x": 375,
+   "y": 174,
+   "w": 894,
+   "h": 78,
+   "kind": "plain",
+   "title": "pH > 4.5",
+   "lines": [
+    "the wet mount names it: CLUE CELLS · TRICHOMONADS · PARABASAL cells",
+    "whiff POSITIVE (fishy) → bacterial vaginosis"
+   ]
+  },
+  {
+   "id": "ca_head_0_0",
+   "x": 45,
+   "y": 332,
+   "w": 290,
+   "h": 96,
+   "kind": "ca_h",
+   "title": "Candidiasis (yeast)",
+   "lines": [
+    "20% carry Candida without symptoms: NOT treated"
+   ]
+  },
+  {
+   "id": "bv_head_0_0",
+   "x": 375,
+   "y": 332,
+   "w": 290,
+   "h": 96,
+   "kind": "bv_h",
+   "title": "Bacterial vaginosis (BV)",
+   "lines": [
+    "#1 infectious vaginitis",
+    "NOT a sexually transmitted infection"
+   ]
+  },
+  {
+   "id": "tv_head_0_0",
+   "x": 677,
+   "y": 332,
+   "w": 290,
+   "h": 96,
+   "kind": "tv_h",
+   "title": "Trichomoniasis",
+   "lines": [
+    "protozoan · an STI (semen)",
+    "coexists with BV in 60%"
+   ]
+  },
+  {
+   "id": "av_head_0_0",
+   "x": 979,
+   "y": 332,
+   "w": 290,
+   "h": 96,
+   "kind": "av_h",
+   "title": "Atrophic vaginitis",
+   "lines": [
+    "LOW ESTROGEN: menopause, breastfeeding",
+    "inflammation, not infection"
+   ]
+  },
+  {
+   "id": "ca_pres_0_0",
+   "x": 45,
+   "y": 468,
+   "w": 290,
+   "h": 78,
+   "kind": "ca_t",
+   "title": "ITCH + burning",
+   "lines": [
+    "external 'splash' dysuria · fissuring"
+   ]
+  },
+  {
+   "id": "ca_pres_1_0",
+   "x": 45,
+   "y": 568,
+   "w": 290,
+   "h": 96,
+   "kind": "ca_w",
+   "title": "Thick white 'COTTAGE CHEESE'",
+   "lines": [
+    "vulvar erythema + edema, satellite lesions",
+    "cervix NORMAL"
+   ]
+  },
+  {
+   "id": "bv_pres_0_0",
+   "x": 375,
+   "y": 468,
+   "w": 290,
+   "h": 78,
+   "kind": "bv_t",
+   "title": "FISHY odour",
+   "lines": []
+  },
+  {
+   "id": "bv_pres_1_0",
+   "x": 375,
+   "y": 568,
+   "w": 290,
+   "h": 96,
+   "kind": "bv_w",
+   "title": "Thin GREY discharge",
+   "lines": [
+    "coats the walls smoothly"
+   ]
+  },
+  {
+   "id": "tv_pres_0_0",
+   "x": 677,
+   "y": 468,
+   "w": 290,
+   "h": 78,
+   "kind": "tv_t",
+   "title": "Copious, thin, MALODOROUS",
+   "lines": [
+    "grey-white to GREEN · itch, dyspareunia, post-coital bleeding"
+   ]
+  },
+  {
+   "id": "tv_pres_1_0",
+   "x": 677,
+   "y": 568,
+   "w": 290,
+   "h": 96,
+   "kind": "tv_w",
+   "title": "Classic signs are RARE",
+   "lines": [
+    "FROTHY < 10% · STRAWBERRY CERVIX 2%",
+    "the exam may be NORMAL"
+   ]
+  },
+  {
+   "id": "av_pres_0_0",
+   "x": 979,
+   "y": 468,
+   "w": 290,
+   "h": 87,
+   "kind": "av_t",
+   "title": "SCANT discharge",
+   "lines": [
+    "dyspareunia · burning · itch"
+   ]
+  },
+  {
+   "id": "av_pres_1_0",
+   "x": 979,
+   "y": 577,
+   "w": 290,
+   "h": 87,
+   "kind": "av_w",
+   "title": "Friable, lost rugae",
+   "lines": [
+    "post-coital bleeding"
+   ]
+  },
+  {
+   "id": "ca_inv_0_0",
+   "x": 45,
+   "y": 704,
+   "w": 290,
+   "h": 84,
+   "kind": "ca_w",
+   "title": "1 · pH < 4.5",
+   "lines": [
+    "2 · whiff NEGATIVE"
+   ]
+  },
+  {
+   "id": "ca_inv_1_0",
+   "x": 45,
+   "y": 810,
+   "w": 290,
+   "h": 84,
+   "kind": "ca_t",
+   "title": "3 · WET MOUNT (KOH)",
+   "lines": [
+    "PSEUDOHYPHAE + BUDDING YEAST"
+   ]
+  },
+  {
+   "id": "ca_inv_2_0",
+   "x": 45,
+   "y": 916,
+   "w": 290,
+   "h": 84,
+   "kind": "ca_w",
+   "title": "4 ·Culture ONLY if resistant",
+   "lines": [
+    "non-albicans species"
+   ]
+  },
+  {
+   "id": "bv_inv_0_0",
+   "x": 375,
+   "y": 704,
+   "w": 290,
+   "h": 60,
+   "kind": "bv_w",
+   "title": "1 · pH > 4.5",
+   "lines": [
+    "2 · whiff POSITIVE: fishy"
+   ]
+  },
+  {
+   "id": "bv_inv_1_0",
+   "x": 375,
+   "y": 786,
+   "w": 290,
+   "h": 96,
+   "kind": "bv_t",
+   "title": "3 · WET MOUNT: > 20% CLUE CELLS",
+   "lines": [
+    "AMSEL: 3 of 4 = BV",
+    "pH > 4.5 · clue cells · thin homogeneous discharge · whiff +"
+   ]
+  },
+  {
+   "id": "bv_inv_2_0",
+   "x": 375,
+   "y": 904,
+   "w": 290,
+   "h": 96,
+   "kind": "bv_w",
+   "title": "4 · Gram stain: GOLD STANDARD",
+   "lines": [
+    "Nugent0–3 normal · 4–6 intermediate · 7–10 BV",
+    "culture NOT required"
+   ]
+  },
+  {
+   "id": "tv_inv_0_0",
+   "x": 677,
+   "y": 704,
+   "w": 290,
+   "h": 59,
+   "kind": "tv_w",
+   "title": "1 · pH > 4.5",
+   "lines": []
+  },
+  {
+   "id": "tv_inv_1_0",
+   "x": 677,
+   "y": 785,
+   "w": 290,
+   "h": 77,
+   "kind": "tv_t",
+   "title": "2 · WET MOUNT: TRICHOMONADS",
+   "lines": [
+    "neither sensitive nor specific"
+   ]
+  },
+  {
+   "id": "tv_inv_2_0",
+   "x": 677,
+   "y": 884,
+   "w": 290,
+   "h": 115,
+   "kind": "tv_w",
+   "title": "3 · CONFIRM:NAAT / PCR, gold standard",
+   "lines": [
+    "or culture on Diamond's media: a DELAY → false negative"
+   ]
+  },
+  {
+   "id": "av_inv_0_0",
+   "x": 979,
+   "y": 704,
+   "w": 290,
+   "h": 65,
+   "kind": "av_w",
+   "title": "1 ·pH can be > 4.5",
+   "lines": []
+  },
+  {
+   "id": "av_inv_1_0",
+   "x": 979,
+   "y": 791,
+   "w": 290,
+   "h": 103,
+   "kind": "av_t",
+   "title": "2 ·SMEAR: PARABASAL cells predominate",
+   "lines": [
+    "white blood cells ↑"
+   ]
+  },
+  {
+   "id": "av_inv_2_0",
+   "x": 979,
+   "y": 916,
+   "w": 290,
+   "h": 83,
+   "kind": "av_w",
+   "title": "Clinical diagnosis",
+   "lines": [
+    "~atrophy: see the MENOPAUSE chart"
+   ]
+  },
+  {
+   "id": "ca_cause_0_0",
+   "x": 45,
+   "y": 1040,
+   "w": 290,
+   "h": 78,
+   "kind": "ca_t",
+   "title": "Candida albicans 90%",
+   "lines": [
+    "risk: diabetes, pregnancy, antibiotics, immunosuppression"
+   ]
+  },
+  {
+   "id": "bv_cause_0_0",
+   "x": 375,
+   "y": 1040,
+   "w": 290,
+   "h": 78,
+   "kind": "bv_t",
+   "title": "Anaerobes replace lactobacilli",
+   "lines": [
+    "Gardnerella · Mobiluncus · Mycoplasma",
+    "risk: new partner, IUD, douching, smoking"
+   ]
+  },
+  {
+   "id": "tv_cause_0_0",
+   "x": 677,
+   "y": 1040,
+   "w": 290,
+   "h": 78,
+   "kind": "tv_t",
+   "title": "Sexual contact",
+   "lines": [
+    "survives 24 h in tap water, hot tubs"
+   ]
+  },
+  {
+   "id": "av_cause_0_0",
+   "x": 979,
+   "y": 1040,
+   "w": 290,
+   "h": 78,
+   "kind": "av_t",
+   "title": "Hypoestrogenic state",
+   "lines": [
+    "recurrent urinary tract infections go with it"
+   ]
+  },
+  {
+   "id": "ca_tx_0_0",
+   "x": 45,
+   "y": 1158,
+   "w": 290,
+   "h": 96,
+   "kind": "ok",
+   "title": "1 ·Any azole: her preference",
+   "lines": [
+    "fluconazole 150 mg by mouth ONCE",
+    "or miconazole / clotrimazole vaginally × 7 days"
+   ]
+  },
+  {
+   "id": "ca_tx_1_0",
+   "x": 45,
+   "y": 1276,
+   "w": 290,
+   "h": 114,
+   "kind": "warn",
+   "title": "2 ·Recurrent",
+   "lines": [
+    "fluconazole 150 mg every 3 days × 3, then weekly × 6 months",
+    "resistant: boric acid 600 mg vaginally × 2 weeks"
+   ]
+  },
+  {
+   "id": "ca_tx_2_0",
+   "x": 45,
+   "y": 1412,
+   "w": 290,
+   "h": 114,
+   "kind": "bad",
+   "title": "PREGNANCY",
+   "lines": [
+    "treat ONLY if symptomatic: topical azole × 7 days",
+    "boric acid CONTRAINDICATED (toxic if swallowed)"
+   ]
+  },
+  {
+   "id": "bv_tx_0_0",
+   "x": 375,
+   "y": 1158,
+   "w": 290,
+   "h": 127,
+   "kind": "ok",
+   "title": "1 · Metronidazole 500 mg twice daily × 7 days",
+   "lines": [
+    "or gel 0.75% vaginally × 5 days · or clindamycin",
+    "NO ALCOHOL with metronidazole"
+   ]
+  },
+  {
+   "id": "bv_tx_1_0",
+   "x": 375,
+   "y": 1307,
+   "w": 290,
+   "h": 89,
+   "kind": "warn",
+   "title": "2 · Recurrent",
+   "lines": [
+    "metronidazole × 10–14 days, or gel daily × 10 days then twice weekly for 3–6 months"
+   ]
+  },
+  {
+   "id": "bv_tx_2_0",
+   "x": 375,
+   "y": 1418,
+   "w": 290,
+   "h": 107,
+   "kind": "bad",
+   "title": "PREGNANCY: ORAL only",
+   "lines": [
+    "topical won't cut preterm labour / PPROM risk",
+    "TEST OF CURE at 1 month · no routine screening"
+   ]
+  },
+  {
+   "id": "tv_tx_0_0",
+   "x": 677,
+   "y": 1158,
+   "w": 290,
+   "h": 114,
+   "kind": "ok",
+   "title": "1 · Metronidazole by mouth",
+   "lines": [
+    "2 g ONCE, or 500 mg twice daily × 7 days",
+    "NEVER the vaginal gel"
+   ]
+  },
+  {
+   "id": "tv_tx_1_0",
+   "x": 677,
+   "y": 1294,
+   "w": 290,
+   "h": 114,
+   "kind": "warn",
+   "title": "2 · TREAT THE PARTNER",
+   "lines": [
+    "partners from the last 6 months",
+    "resistant: retreat + susceptibility testing"
+   ]
+  },
+  {
+   "id": "tv_tx_2_0",
+   "x": 677,
+   "y": 1430,
+   "w": 290,
+   "h": 96,
+   "kind": "bad",
+   "title": "PREGNANCY",
+   "lines": [
+    "PPROM, preterm labour ·same treatment"
+   ]
+  },
+  {
+   "id": "av_tx_0_0",
+   "x": 979,
+   "y": 1158,
+   "w": 290,
+   "h": 102,
+   "kind": "ok",
+   "title": "1 · Local VAGINAL ESTROGEN",
+   "lines": [
+    "~doses: MENOPAUSE chart"
+   ]
+  },
+  {
+   "id": "av_tx_1_0",
+   "x": 979,
+   "y": 1282,
+   "w": 290,
+   "h": 102,
+   "kind": "warn",
+   "title": "2 ·Conservative",
+   "lines": [
+    "moisturizer · regular sexual activity"
+   ]
+  },
+  {
+   "id": "av_tx_2_0",
+   "x": 979,
+   "y": 1406,
+   "w": 290,
+   "h": 120,
+   "kind": "bad",
+   "title": "Post-menopausal BLEEDING?",
+   "lines": [
+    "it needs a workup: see the ABNORMAL BLEEDING chart"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_lo",
+   "path": "M657.0 124V149H190.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_hi",
+   "path": "M657.0 124V149H822.0V174"
+  },
+  {
+   "from": "ca_pres_0_0",
+   "to": "ca_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "bv_pres_0_0",
+   "to": "bv_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "tv_pres_0_0",
+   "to": "tv_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "av_pres_0_0",
+   "to": "av_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ca_inv_0_0",
+   "to": "ca_inv_1_0"
+  },
+  {
+   "from": "ca_inv_1_0",
+   "to": "ca_inv_2_0"
+  },
+  {
+   "from": "bv_inv_0_0",
+   "to": "bv_inv_1_0"
+  },
+  {
+   "from": "bv_inv_1_0",
+   "to": "bv_inv_2_0"
+  },
+  {
+   "from": "tv_inv_0_0",
+   "to": "tv_inv_1_0"
+  },
+  {
+   "from": "tv_inv_1_0",
+   "to": "tv_inv_2_0"
+  },
+  {
+   "from": "av_inv_0_0",
+   "to": "av_inv_1_0"
+  },
+  {
+   "from": "av_inv_1_0",
+   "to": "av_inv_2_0"
+  },
+  {
+   "from": "ca_tx_0_0",
+   "to": "ca_tx_1_0"
+  },
+  {
+   "from": "ca_tx_1_0",
+   "to": "ca_tx_2_0"
+  },
+  {
+   "from": "bv_tx_0_0",
+   "to": "bv_tx_1_0"
+  },
+  {
+   "from": "bv_tx_1_0",
+   "to": "bv_tx_2_0"
+  },
+  {
+   "from": "tv_tx_0_0",
+   "to": "tv_tx_1_0"
+  },
+  {
+   "from": "tv_tx_1_0",
+   "to": "tv_tx_2_0"
+  },
+  {
+   "from": "av_tx_0_0",
+   "to": "av_tx_1_0"
+  },
+  {
+   "from": "av_tx_1_0",
+   "to": "av_tx_2_0"
+  },
+  {
+   "from": "ca_head_0_0",
+   "to": "ca_pres_0_0"
+  },
+  {
+   "from": "ca_pres_1_0",
+   "to": "ca_inv_0_0"
+  },
+  {
+   "from": "ca_inv_2_0",
+   "to": "ca_cause_0_0"
+  },
+  {
+   "from": "ca_cause_0_0",
+   "to": "ca_tx_0_0"
+  },
+  {
+   "from": "g_lo",
+   "to": "ca_head_0_0",
+   "from_dx": 0,
+   "label": "pseudohyphae",
+   "label_at": [
+    190.0,
+    292
+   ]
+  },
+  {
+   "from": "bv_head_0_0",
+   "to": "bv_pres_0_0"
+  },
+  {
+   "from": "bv_pres_1_0",
+   "to": "bv_inv_0_0"
+  },
+  {
+   "from": "bv_inv_2_0",
+   "to": "bv_cause_0_0"
+  },
+  {
+   "from": "bv_cause_0_0",
+   "to": "bv_tx_0_0"
+  },
+  {
+   "from": "g_hi",
+   "to": "bv_head_0_0",
+   "from_dx": -302,
+   "label": "clue cells",
+   "label_at": [
+    520.0,
+    292
+   ]
+  },
+  {
+   "from": "tv_head_0_0",
+   "to": "tv_pres_0_0"
+  },
+  {
+   "from": "tv_pres_1_0",
+   "to": "tv_inv_0_0"
+  },
+  {
+   "from": "tv_inv_2_0",
+   "to": "tv_cause_0_0"
+  },
+  {
+   "from": "tv_cause_0_0",
+   "to": "tv_tx_0_0"
+  },
+  {
+   "from": "g_hi",
+   "to": "tv_head_0_0",
+   "from_dx": 0,
+   "label": "trichomonads",
+   "label_at": [
+    822.0,
+    292
+   ]
+  },
+  {
+   "from": "av_head_0_0",
+   "to": "av_pres_0_0"
+  },
+  {
+   "from": "av_pres_1_0",
+   "to": "av_inv_0_0"
+  },
+  {
+   "from": "av_inv_2_0",
+   "to": "av_cause_0_0"
+  },
+  {
+   "from": "av_cause_0_0",
+   "to": "av_tx_0_0"
+  },
+  {
+   "from": "g_hi",
+   "to": "av_head_0_0",
+   "from_dx": 302,
+   "label": "parabasal cells",
+   "label_at": [
+    1124.0,
+    292
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1560,
+   "w": 605,
+   "title": "Three bedside tests sort the four",
+   "items": [
+    "pH < 4.5 · whiff − · PSEUDOHYPHAE → candidiasis",
+    "pH > 4.5 · whiff + · > 20% CLUE CELLS → bacterial vaginosis",
+    "pH > 4.5 · TRICHOMONADS → trichomoniasis",
+    "pH > 4.5 · PARABASAL cells, WBC ↑ → atrophic",
+    "none, and it fits her cycle or pregnancy → physiologic"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 664,
+   "y": 1560,
+   "w": 605,
+   "title": "Pregnancy + partners",
+   "items": [
+    "BV: ORAL only, test of cure at 1 month · not an STI",
+    "yeast: treat only if symptomatic, topical · no boric acid",
+    "trichomonas: same treatment · TREAT THE PARTNER"
+   ],
+   "cols": 1
+  }
+ ]
+}
