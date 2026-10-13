@@ -24,6 +24,7 @@ CONTENT SHAPE
      # its parent is the pres box of its group, or the group box
  "sections": ["head", "clue", "inv", "tx"],     # head first; the rest are row names
  "row_names": {"clue": "CAUSES & CLUES", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
+     # "pres" here renames the shared-box row (default PRESENTS AS)
  "dashed_sections": ["clue"],                   # sub-box links drawn dashed (more features)
  "columns": [
    {"id": "cpp", "colour": "teal",
@@ -151,7 +152,7 @@ def build(c: dict) -> dict:
             geo[p["id"]] = (px + pw / 2, y + ph)
             edges.append({"from": p["group"], "to": p["id"]})
             parent_of_group[p["group"]] = p["id"]
-        row_labels.append({"x": X0 + 8, "y": y, "h": ph, "text": "PRESENTS AS"})
+        row_labels.append({"x": X0 + 8, "y": y, "h": ph, "text": c.get("row_names", {}).get("pres", "PRESENTS AS")})
         y += ph + 40
 
     tiers = c.get("tiers", [])
