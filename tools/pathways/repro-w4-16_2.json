@@ -3,6 +3,24 @@
  "width": 1432,
  "title": "Prenatal genetic screening: before pregnancy take the family history and offer carrier screening by ancestry; in pregnancy a screen (NT and eFTS, MSS, the anatomy scan's soft markers, NIPT) gives a risk and a positive screen leads to NIPT or a diagnostic test, while CVS and amniocentesis give a definitive diagnosis at a small miscarriage risk",
  "kinds": {
+  "ni_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ni_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ni_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
   "nt_h": [
    "#1f6f8b",
    "#1f6f8b",
@@ -57,24 +75,6 @@
    "#b5600f",
    "#18212e"
   ],
-  "ni_h": [
-   "#1f5f9e",
-   "#1f5f9e",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "ni_t": [
-   "#dde9f7",
-   "#1f5f9e",
-   "#1f5f9e",
-   "#18212e"
-  ],
-  "ni_w": [
-   "#ffffff",
-   "#1f5f9e",
-   "#1f5f9e",
-   "#18212e"
-  ],
   "cv_h": [
    "#a3336b",
    "#a3336b",
@@ -118,11 +118,19 @@
    "y": 306,
    "w": 224,
    "h": 816,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 266,
+   "y": 306,
+   "w": 224,
+   "h": 816,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
-   "x": 266,
+   "x": 492,
    "y": 306,
    "w": 224,
    "h": 816,
@@ -130,20 +138,12 @@
    "stroke": "#6a4aa8"
   },
   {
-   "x": 492,
+   "x": 718,
    "y": 306,
    "w": 224,
    "h": 816,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
-  },
-  {
-   "x": 718,
-   "y": 306,
-   "w": 224,
-   "h": 816,
-   "fill": "#eff5fc",
-   "stroke": "#1f5f9e"
   },
   {
    "x": 972,
@@ -226,8 +226,20 @@
    ]
   },
   {
-   "id": "nt_head_0_0",
+   "id": "ni_head_0_0",
    "x": 45,
+   "y": 314,
+   "w": 214,
+   "h": 98,
+   "kind": "ni_h",
+   "title": "Non-invasive prenatal testing (NIPT)",
+   "lines": [
+    "cell-free fetal DNA in maternal blood"
+   ]
+  },
+  {
+   "id": "nt_head_0_0",
+   "x": 271,
    "y": 314,
    "w": 214,
    "h": 98,
@@ -239,7 +251,7 @@
   },
   {
    "id": "ms_head_0_0",
-   "x": 271,
+   "x": 497,
    "y": 314,
    "w": 214,
    "h": 98,
@@ -252,7 +264,7 @@
   },
   {
    "id": "an_head_0_0",
-   "x": 497,
+   "x": 723,
    "y": 314,
    "w": 214,
    "h": 98,
@@ -260,18 +272,6 @@
    "title": "Anatomy scan",
    "lines": [
     "detailed fetal ultrasound"
-   ]
-  },
-  {
-   "id": "ni_head_0_0",
-   "x": 723,
-   "y": 314,
-   "w": 214,
-   "h": 98,
-   "kind": "ni_h",
-   "title": "Non-invasive prenatal testing (NIPT)",
-   "lines": [
-    "cell-free fetal DNA in maternal blood"
    ]
   },
   {
@@ -299,8 +299,20 @@
    ]
   },
   {
-   "id": "nt_when_0_0",
+   "id": "ni_when_0_0",
    "x": 45,
+   "y": 452,
+   "w": 214,
+   "h": 60,
+   "kind": "ni_t",
+   "title": "After 9 weeks",
+   "lines": [
+    "result ~10 days"
+   ]
+  },
+  {
+   "id": "nt_when_0_0",
+   "x": 271,
    "y": 452,
    "w": 214,
    "h": 60,
@@ -310,7 +322,7 @@
   },
   {
    "id": "ms_when_0_0",
-   "x": 271,
+   "x": 497,
    "y": 452,
    "w": 214,
    "h": 60,
@@ -320,25 +332,13 @@
   },
   {
    "id": "an_when_0_0",
-   "x": 497,
+   "x": 723,
    "y": 452,
    "w": 214,
    "h": 60,
    "kind": "an_t",
    "title": "18–20 weeks",
    "lines": []
-  },
-  {
-   "id": "ni_when_0_0",
-   "x": 723,
-   "y": 452,
-   "w": 214,
-   "h": 60,
-   "kind": "ni_t",
-   "title": "After 9 weeks",
-   "lines": [
-    "result ~10 days"
-   ]
   },
   {
    "id": "cv_when_0_0",
@@ -363,80 +363,8 @@
    "lines": []
   },
   {
-   "id": "nt_det_0_0",
-   "x": 45,
-   "y": 552,
-   "w": 214,
-   "h": 88,
-   "kind": "nt_t",
-   "title": "Risk of trisomy 21 (± 18)",
-   "lines": [
-    "eFTS detects 85–90%"
-   ]
-  },
-  {
-   "id": "nt_det_1_0",
-   "x": 45,
-   "y": 662,
-   "w": 214,
-   "h": 124,
-   "kind": "nt_w",
-   "title": "NT > 3.5 mm also flags",
-   "lines": [
-    "trisomy 13, 18, 45,X · heart defect · Noonan, skeletal dysplasia"
-   ]
-  },
-  {
-   "id": "ms_det_0_0",
-   "x": 271,
-   "y": 552,
-   "w": 214,
-   "h": 106,
-   "kind": "ms_t",
-   "title": "Risk of trisomy 21 (± 18)",
-   "lines": [
-    "for a woman too late for eFTS, or with no NT ultrasound"
-   ]
-  },
-  {
-   "id": "ms_det_1_0",
-   "x": 271,
-   "y": 680,
-   "w": 214,
-   "h": 106,
-   "kind": "ms_w",
-   "title": "Choose eFTS vs MSS by",
-   "lines": [
-    "gestational age · ultrasound access · early result vs detection"
-   ]
-  },
-  {
-   "id": "an_det_0_0",
-   "x": 497,
-   "y": 552,
-   "w": 214,
-   "h": 107,
-   "kind": "an_t",
-   "title": "Major structural anomalies",
-   "lines": [
-    "~views: see the ULTRASOUND chart"
-   ]
-  },
-  {
-   "id": "an_det_1_0",
-   "x": 497,
-   "y": 681,
-   "w": 214,
-   "h": 105,
-   "kind": "an_w",
-   "title": "Soft markers",
-   "lines": [
-    "choroid plexus cyst · short femur · echogenic heart focus · echogenic bowel"
-   ]
-  },
-  {
    "id": "ni_det_0_0",
-   "x": 723,
+   "x": 45,
    "y": 552,
    "w": 214,
    "h": 106,
@@ -449,7 +377,7 @@
   },
   {
    "id": "ni_det_1_0",
-   "x": 723,
+   "x": 45,
    "y": 680,
    "w": 214,
    "h": 106,
@@ -458,6 +386,78 @@
    "lines": [
     "previous trisomy · age 40+ · NT > 3.5 · positive eFTS",
     "~Ontario: NOT first line for low risk"
+   ]
+  },
+  {
+   "id": "nt_det_0_0",
+   "x": 271,
+   "y": 552,
+   "w": 214,
+   "h": 88,
+   "kind": "nt_t",
+   "title": "Risk of trisomy 21 (± 18)",
+   "lines": [
+    "eFTS detects 85–90%"
+   ]
+  },
+  {
+   "id": "nt_det_1_0",
+   "x": 271,
+   "y": 662,
+   "w": 214,
+   "h": 124,
+   "kind": "nt_w",
+   "title": "NT > 3.5 mm also flags",
+   "lines": [
+    "trisomy 13, 18, 45,X · heart defect · Noonan, skeletal dysplasia"
+   ]
+  },
+  {
+   "id": "ms_det_0_0",
+   "x": 497,
+   "y": 552,
+   "w": 214,
+   "h": 106,
+   "kind": "ms_t",
+   "title": "Risk of trisomy 21 (± 18)",
+   "lines": [
+    "for a woman too late for eFTS, or with no NT ultrasound"
+   ]
+  },
+  {
+   "id": "ms_det_1_0",
+   "x": 497,
+   "y": 680,
+   "w": 214,
+   "h": 106,
+   "kind": "ms_w",
+   "title": "Choose eFTS vs MSS by",
+   "lines": [
+    "gestational age · ultrasound access · early result vs detection"
+   ]
+  },
+  {
+   "id": "an_det_0_0",
+   "x": 723,
+   "y": 552,
+   "w": 214,
+   "h": 107,
+   "kind": "an_t",
+   "title": "Major structural anomalies",
+   "lines": [
+    "~views: see the ULTRASOUND chart"
+   ]
+  },
+  {
+   "id": "an_det_1_0",
+   "x": 723,
+   "y": 681,
+   "w": 214,
+   "h": 105,
+   "kind": "an_w",
+   "title": "Soft markers",
+   "lines": [
+    "choroid plexus cyst · short femur · echogenic heart focus · echogenic bowel"
    ]
   },
   {
@@ -510,80 +510,8 @@
    ]
   },
   {
-   "id": "nt_next_0_0",
-   "x": 45.0,
-   "y": 826,
-   "w": 102.0,
-   "h": 152,
-   "kind": "warn",
-   "title": "POSITIVE or NT > 3.5",
-   "lines": [
-    "→ NIPT, or CVS"
-   ]
-  },
-  {
-   "id": "nt_next_0_1",
-   "x": 157.0,
-   "y": 826,
-   "w": 102.0,
-   "h": 152,
-   "kind": "ok",
-   "title": "NEGATIVE",
-   "lines": [
-    "reassuring, not a guarantee"
-   ]
-  },
-  {
-   "id": "ms_next_0_0",
-   "x": 271.0,
-   "y": 826,
-   "w": 102.0,
-   "h": 152,
-   "kind": "warn",
-   "title": "POSITIVE",
-   "lines": [
-    "→ NIPT, or amniocentesis"
-   ]
-  },
-  {
-   "id": "ms_next_0_1",
-   "x": 383.0,
-   "y": 826,
-   "w": 102.0,
-   "h": 152,
-   "kind": "ok",
-   "title": "NEGATIVE",
-   "lines": [
-    "reassuring, not a guarantee"
-   ]
-  },
-  {
-   "id": "an_next_0_0",
-   "x": 497.0,
-   "y": 826,
-   "w": 102.0,
-   "h": 152,
-   "kind": "warn",
-   "title": "1 soft marker",
-   "lines": [
-    "matters only with ABNORMAL serum markers"
-   ]
-  },
-  {
-   "id": "an_next_0_1",
-   "x": 609.0,
-   "y": 826,
-   "w": 102.0,
-   "h": 152,
-   "kind": "bad",
-   "title": "MULTIPLE anomalies",
-   "lines": [
-    "→ NIPT or amniocentesis"
-   ]
-  },
-  {
    "id": "ni_next_0_0",
-   "x": 723.0,
+   "x": 45.0,
    "y": 826,
    "w": 102.0,
    "h": 152,
@@ -595,7 +523,7 @@
   },
   {
    "id": "ni_next_0_1",
-   "x": 835.0,
+   "x": 157.0,
    "y": 826,
    "w": 102.0,
    "h": 152,
@@ -603,6 +531,78 @@
    "title": "NEGATIVE",
    "lines": [
     "spares an invasive test"
+   ]
+  },
+  {
+   "id": "nt_next_0_0",
+   "x": 271.0,
+   "y": 826,
+   "w": 102.0,
+   "h": 152,
+   "kind": "warn",
+   "title": "POSITIVE or NT > 3.5",
+   "lines": [
+    "→ NIPT, or CVS"
+   ]
+  },
+  {
+   "id": "nt_next_0_1",
+   "x": 383.0,
+   "y": 826,
+   "w": 102.0,
+   "h": 152,
+   "kind": "ok",
+   "title": "NEGATIVE",
+   "lines": [
+    "reassuring, not a guarantee"
+   ]
+  },
+  {
+   "id": "ms_next_0_0",
+   "x": 497.0,
+   "y": 826,
+   "w": 102.0,
+   "h": 152,
+   "kind": "warn",
+   "title": "POSITIVE",
+   "lines": [
+    "→ NIPT, or amniocentesis"
+   ]
+  },
+  {
+   "id": "ms_next_0_1",
+   "x": 609.0,
+   "y": 826,
+   "w": 102.0,
+   "h": 152,
+   "kind": "ok",
+   "title": "NEGATIVE",
+   "lines": [
+    "reassuring, not a guarantee"
+   ]
+  },
+  {
+   "id": "an_next_0_0",
+   "x": 723.0,
+   "y": 826,
+   "w": 102.0,
+   "h": 152,
+   "kind": "warn",
+   "title": "1 soft marker",
+   "lines": [
+    "matters only with ABNORMAL serum markers"
+   ]
+  },
+  {
+   "id": "an_next_0_1",
+   "x": 835.0,
+   "y": 826,
+   "w": 102.0,
+   "h": 152,
+   "kind": "bad",
+   "title": "MULTIPLE anomalies",
+   "lines": [
+    "→ NIPT or amniocentesis"
    ]
   },
   {
@@ -630,8 +630,20 @@
    ]
   },
   {
-   "id": "nt_risk_0_0",
+   "id": "ni_risk_0_0",
    "x": 45,
+   "y": 1018,
+   "w": 214,
+   "h": 96,
+   "kind": "ni_w",
+   "title": "No miscarriage risk",
+   "lines": [
+    "the DNA is mainly PLACENTAL: a screen, not a diagnosis"
+   ]
+  },
+  {
+   "id": "nt_risk_0_0",
+   "x": 271,
    "y": 1018,
    "w": 214,
    "h": 96,
@@ -644,7 +656,7 @@
   },
   {
    "id": "ms_risk_0_0",
-   "x": 271,
+   "x": 497,
    "y": 1018,
    "w": 214,
    "h": 96,
@@ -656,7 +668,7 @@
   },
   {
    "id": "an_risk_0_0",
-   "x": 497,
+   "x": 723,
    "y": 1018,
    "w": 214,
    "h": 96,
@@ -664,18 +676,6 @@
    "title": "No miscarriage risk",
    "lines": [
     "NEVER ASSUME what the couple wants: offer all options"
-   ]
-  },
-  {
-   "id": "ni_risk_0_0",
-   "x": 723,
-   "y": 1018,
-   "w": 214,
-   "h": 96,
-   "kind": "ni_w",
-   "title": "No miscarriage risk",
-   "lines": [
-    "the DNA is mainly PLACENTAL: a screen, not a diagnosis"
    ]
   },
   {
@@ -716,6 +716,10 @@
    "path": "M731.0 124V149H1197.0V174"
   },
   {
+   "from": "ni_det_0_0",
+   "to": "ni_det_1_0"
+  },
+  {
    "from": "nt_det_0_0",
    "to": "nt_det_1_0"
   },
@@ -728,115 +732,12 @@
    "to": "an_det_1_0"
   },
   {
-   "from": "ni_det_0_0",
-   "to": "ni_det_1_0"
-  },
-  {
    "from": "cv_det_0_0",
    "to": "cv_det_1_0"
   },
   {
    "from": "am_det_0_0",
    "to": "am_det_1_0"
-  },
-  {
-   "from": "nt_head_0_0",
-   "to": "nt_when_0_0"
-  },
-  {
-   "from": "nt_when_0_0",
-   "to": "nt_det_0_0"
-  },
-  {
-   "from": "nt_det_1_0",
-   "to": "nt_next_0_0",
-   "from_dx": -56.0
-  },
-  {
-   "from": "nt_det_1_0",
-   "to": "nt_next_0_1",
-   "from_dx": 56.0
-  },
-  {
-   "from": "nt_next_0_0",
-   "to": "nt_risk_0_0",
-   "to_dx": -56.0
-  },
-  {
-   "from": "nt_next_0_1",
-   "to": "nt_risk_0_0",
-   "to_dx": 56.0
-  },
-  {
-   "from": "g_s",
-   "to": "nt_head_0_0",
-   "from_dx": -339
-  },
-  {
-   "from": "ms_head_0_0",
-   "to": "ms_when_0_0"
-  },
-  {
-   "from": "ms_when_0_0",
-   "to": "ms_det_0_0"
-  },
-  {
-   "from": "ms_det_1_0",
-   "to": "ms_next_0_0",
-   "from_dx": -56.0
-  },
-  {
-   "from": "ms_det_1_0",
-   "to": "ms_next_0_1",
-   "from_dx": 56.0
-  },
-  {
-   "from": "ms_next_0_0",
-   "to": "ms_risk_0_0",
-   "to_dx": -56.0
-  },
-  {
-   "from": "ms_next_0_1",
-   "to": "ms_risk_0_0",
-   "to_dx": 56.0
-  },
-  {
-   "from": "g_s",
-   "to": "ms_head_0_0",
-   "from_dx": -113
-  },
-  {
-   "from": "an_head_0_0",
-   "to": "an_when_0_0"
-  },
-  {
-   "from": "an_when_0_0",
-   "to": "an_det_0_0"
-  },
-  {
-   "from": "an_det_1_0",
-   "to": "an_next_0_0",
-   "from_dx": -56.0
-  },
-  {
-   "from": "an_det_1_0",
-   "to": "an_next_0_1",
-   "from_dx": 56.0
-  },
-  {
-   "from": "an_next_0_0",
-   "to": "an_risk_0_0",
-   "to_dx": -56.0
-  },
-  {
-   "from": "an_next_0_1",
-   "to": "an_risk_0_0",
-   "to_dx": 56.0
-  },
-  {
-   "from": "g_s",
-   "to": "an_head_0_0",
-   "from_dx": 113
   },
   {
    "from": "ni_head_0_0",
@@ -869,6 +770,105 @@
   {
    "from": "g_s",
    "to": "ni_head_0_0",
+   "from_dx": -339
+  },
+  {
+   "from": "nt_head_0_0",
+   "to": "nt_when_0_0"
+  },
+  {
+   "from": "nt_when_0_0",
+   "to": "nt_det_0_0"
+  },
+  {
+   "from": "nt_det_1_0",
+   "to": "nt_next_0_0",
+   "from_dx": -56.0
+  },
+  {
+   "from": "nt_det_1_0",
+   "to": "nt_next_0_1",
+   "from_dx": 56.0
+  },
+  {
+   "from": "nt_next_0_0",
+   "to": "nt_risk_0_0",
+   "to_dx": -56.0
+  },
+  {
+   "from": "nt_next_0_1",
+   "to": "nt_risk_0_0",
+   "to_dx": 56.0
+  },
+  {
+   "from": "g_s",
+   "to": "nt_head_0_0",
+   "from_dx": -113
+  },
+  {
+   "from": "ms_head_0_0",
+   "to": "ms_when_0_0"
+  },
+  {
+   "from": "ms_when_0_0",
+   "to": "ms_det_0_0"
+  },
+  {
+   "from": "ms_det_1_0",
+   "to": "ms_next_0_0",
+   "from_dx": -56.0
+  },
+  {
+   "from": "ms_det_1_0",
+   "to": "ms_next_0_1",
+   "from_dx": 56.0
+  },
+  {
+   "from": "ms_next_0_0",
+   "to": "ms_risk_0_0",
+   "to_dx": -56.0
+  },
+  {
+   "from": "ms_next_0_1",
+   "to": "ms_risk_0_0",
+   "to_dx": 56.0
+  },
+  {
+   "from": "g_s",
+   "to": "ms_head_0_0",
+   "from_dx": 113
+  },
+  {
+   "from": "an_head_0_0",
+   "to": "an_when_0_0"
+  },
+  {
+   "from": "an_when_0_0",
+   "to": "an_det_0_0"
+  },
+  {
+   "from": "an_det_1_0",
+   "to": "an_next_0_0",
+   "from_dx": -56.0
+  },
+  {
+   "from": "an_det_1_0",
+   "to": "an_next_0_1",
+   "from_dx": 56.0
+  },
+  {
+   "from": "an_next_0_0",
+   "to": "an_risk_0_0",
+   "to_dx": -56.0
+  },
+  {
+   "from": "an_next_0_1",
+   "to": "an_risk_0_0",
+   "to_dx": 56.0
+  },
+  {
+   "from": "g_s",
+   "to": "an_head_0_0",
    "from_dx": 339
   },
   {
