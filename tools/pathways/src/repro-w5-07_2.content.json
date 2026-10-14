@@ -14,7 +14,7 @@
    "id": "g_lump",
    "cols": [
     0,
-    1
+    2
    ],
    "title": "A LUMP: benign or WORRISOME on exam?",
    "lines": []
@@ -22,8 +22,8 @@
   {
    "id": "g_pain",
    "cols": [
-    2,
-    3
+    3,
+    4
    ],
    "title": "BREAST PAIN",
    "lines": []
@@ -31,8 +31,8 @@
   {
    "id": "g_dis",
    "cols": [
-    4,
-    5
+    5,
+    6
    ],
    "title": "NIPPLE DISCHARGE",
    "lines": []
@@ -40,8 +40,8 @@
   {
    "id": "g_scr",
    "cols": [
-    6,
-    6
+    7,
+    7
    ],
    "title": "SCREENING: no symptoms",
    "lines": []
@@ -165,6 +165,55 @@
    ]
   },
   {
+   "id": "fn",
+   "colour": "brown",
+   "drop_label": "irregular, after trauma",
+   "head": [
+    [
+     [
+      "h",
+      "Fat necrosis",
+      [
+       "BENIGN, but closely MIMICS cancer"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Firm, IRREGULAR mass",
+      [
+       "• ± red skin, retraction, dimpling",
+       "• often superficial",
+       "• may follow TRAUMA"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Image by age, then BIOPSY",
+      [
+       "it feels like cancer: only the biopsy tells them apart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Biopsy confirms: BENIGN",
+      []
+     ]
+    ]
+   ]
+  },
+  {
    "id": "ca",
    "colour": "magenta",
    "drop_label": "worrisome",
@@ -190,16 +239,6 @@
        "• skin change, peau d'orange, nipple retraction: LATE"
       ]
      ]
-    ],
-    [
-     [
-      "w",
-      "Mimic: FAT NECROSIS",
-      [
-       "• firm, irregular, skin dimpling",
-       "• after TRAUMA"
-      ]
-     ]
     ]
    ],
    "inv": [
@@ -216,9 +255,7 @@
      [
       "w",
       "2 · Image by age, then BIOPSY",
-      [
-       "fat necrosis is biopsied too"
-      ]
+      []
      ]
     ]
    ],

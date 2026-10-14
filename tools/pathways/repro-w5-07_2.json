@@ -1,6 +1,6 @@
 {
  "name": "breast overview",
- "width": 1770,
+ "width": 2004,
  "title": "A breast complaint divided by how she presents: a lump (benign or worrisome, imaged by age then sampled), breast pain (cyclical or mastitis), nipple discharge (galactorrhea or pathological, usually a papilloma) and screening (usual or high risk, with carcinoma in situ split into DCIS and LCIS); each column gives presentation, numbered investigations and management, with the biopsy risk tiers and genetic testing below",
  "kinds": {
   "ben_h": [
@@ -19,6 +19,24 @@
    "#ffffff",
    "#1f6f8b",
    "#1f6f8b",
+   "#18212e"
+  ],
+  "fn_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fn_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "fn_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
    "#18212e"
   ],
   "ca_h": [
@@ -135,7 +153,7 @@
    "x": 40,
    "y": 406,
    "w": 232,
-   "h": 936,
+   "h": 864,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -143,47 +161,55 @@
    "x": 274,
    "y": 406,
    "w": 232,
-   "h": 936,
-   "fill": "#fcf0f6",
-   "stroke": "#a3336b"
+   "h": 864,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
   },
   {
-   "x": 536,
+   "x": 508,
    "y": 406,
    "w": 232,
-   "h": 936,
-   "fill": "#f4f7ee",
-   "stroke": "#4f6d1f"
+   "h": 864,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
   },
   {
    "x": 770,
    "y": 406,
    "w": 232,
-   "h": 936,
-   "fill": "#fdf4ea",
-   "stroke": "#b5600f"
+   "h": 864,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
   },
   {
-   "x": 1032,
+   "x": 1004,
    "y": 406,
    "w": 232,
-   "h": 936,
-   "fill": "#eff5fc",
-   "stroke": "#1f5f9e"
+   "h": 864,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
   },
   {
    "x": 1266,
    "y": 406,
    "w": 232,
-   "h": 936,
+   "h": 864,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1500,
+   "y": 406,
+   "w": 232,
+   "h": 864,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
-   "x": 1528,
+   "x": 1762,
    "y": 406,
    "w": 232,
-   "h": 936,
+   "h": 864,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -198,18 +224,18 @@
   {
    "x": 23,
    "y": 550,
-   "h": 214,
+   "h": 142,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 804,
+   "y": 732,
    "h": 238,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 1082,
+   "y": 1010,
    "h": 252,
    "text": "MANAGEMENT"
   }
@@ -217,7 +243,7 @@
  "nodes": [
   {
    "id": "root",
-   "x": 520,
+   "x": 637,
    "y": 10,
    "w": 760,
    "kind": "dark",
@@ -231,7 +257,7 @@
    "id": "g_lump",
    "x": 45,
    "y": 138,
-   "w": 456,
+   "w": 690,
    "h": 42,
    "kind": "plain",
    "title": "A LUMP: benign or WORRISOME on exam?",
@@ -239,7 +265,7 @@
   },
   {
    "id": "g_pain",
-   "x": 541,
+   "x": 775,
    "y": 138,
    "w": 456,
    "h": 42,
@@ -249,7 +275,7 @@
   },
   {
    "id": "g_dis",
-   "x": 1037,
+   "x": 1271,
    "y": 138,
    "w": 456,
    "h": 42,
@@ -259,7 +285,7 @@
   },
   {
    "id": "g_scr",
-   "x": 1533,
+   "x": 1767,
    "y": 138,
    "w": 222,
    "h": 42,
@@ -271,7 +297,7 @@
    "id": "p_lump",
    "x": 45,
    "y": 220,
-   "w": 456,
+   "w": 690,
    "h": 114,
    "kind": "info",
    "title": "When you investigate",
@@ -282,7 +308,7 @@
   },
   {
    "id": "p_pain",
-   "x": 541,
+   "x": 775,
    "y": 220,
    "w": 456,
    "h": 114,
@@ -295,7 +321,7 @@
   },
   {
    "id": "p_dis",
-   "x": 1037,
+   "x": 1271,
    "y": 220,
    "w": 456,
    "h": 114,
@@ -308,7 +334,7 @@
   },
   {
    "id": "p_scr",
-   "x": 1533,
+   "x": 1767,
    "y": 220,
    "w": 222,
    "h": 114,
@@ -333,8 +359,20 @@
    ]
   },
   {
-   "id": "ca_head_0_0",
+   "id": "fn_head_0_0",
    "x": 279,
+   "y": 414,
+   "w": 222,
+   "h": 96,
+   "kind": "fn_h",
+   "title": "Fat necrosis",
+   "lines": [
+    "BENIGN, but closely MIMICS cancer"
+   ]
+  },
+  {
+   "id": "ca_head_0_0",
+   "x": 513,
    "y": 414,
    "w": 222,
    "h": 96,
@@ -346,7 +384,7 @@
   },
   {
    "id": "cyc_head_0_0",
-   "x": 541,
+   "x": 775,
    "y": 414,
    "w": 222,
    "h": 96,
@@ -358,7 +396,7 @@
   },
   {
    "id": "mas_head_0_0",
-   "x": 775,
+   "x": 1009,
    "y": 414,
    "w": 222,
    "h": 96,
@@ -370,7 +408,7 @@
   },
   {
    "id": "gal_head_0_0",
-   "x": 1037,
+   "x": 1271,
    "y": 414,
    "w": 222,
    "h": 96,
@@ -383,7 +421,7 @@
   },
   {
    "id": "pap_head_0_0",
-   "x": 1271,
+   "x": 1505,
    "y": 414,
    "w": 222,
    "h": 96,
@@ -395,7 +433,7 @@
   },
   {
    "id": "cis_head_0_0",
-   "x": 1533,
+   "x": 1767,
    "y": 414,
    "w": 222,
    "h": 96,
@@ -411,7 +449,7 @@
    "x": 45,
    "y": 550,
    "w": 222,
-   "h": 214,
+   "h": 142,
    "kind": "ben_t",
    "title": "SMOOTH",
    "lines": [
@@ -420,11 +458,25 @@
    ]
   },
   {
-   "id": "ca_clue_0_0",
+   "id": "fn_clue_0_0",
    "x": 279,
    "y": 550,
    "w": 222,
-   "h": 114,
+   "h": 142,
+   "kind": "fn_t",
+   "title": "Firm, IRREGULAR mass",
+   "lines": [
+    "• ± red skin, retraction, dimpling",
+    "• often superficial",
+    "• may follow TRAUMA"
+   ]
+  },
+  {
+   "id": "ca_clue_0_0",
+   "x": 513,
+   "y": 550,
+   "w": 222,
+   "h": 142,
    "kind": "ca_t",
    "title": "SINGLE · HARD · FIXED",
    "lines": [
@@ -434,24 +486,11 @@
    ]
   },
   {
-   "id": "ca_clue_1_0",
-   "x": 279,
-   "y": 686,
-   "w": 222,
-   "h": 78,
-   "kind": "ca_w",
-   "title": "Mimic: FAT NECROSIS",
-   "lines": [
-    "• firm, irregular, skin dimpling",
-    "• after TRAUMA"
-   ]
-  },
-  {
    "id": "cyc_clue_0_0",
-   "x": 541,
+   "x": 775,
    "y": 550,
    "w": 222,
-   "h": 214,
+   "h": 142,
    "kind": "cyc_t",
    "title": "Phasic with her periods",
    "lines": [
@@ -460,10 +499,10 @@
   },
   {
    "id": "mas_clue_0_0",
-   "x": 775,
+   "x": 1009,
    "y": 550,
    "w": 222,
-   "h": 214,
+   "h": 142,
    "kind": "mas_t",
    "title": "Tense, HOT, painful breast",
    "lines": [
@@ -473,10 +512,10 @@
   },
   {
    "id": "gal_clue_0_0",
-   "x": 1037,
+   "x": 1271,
    "y": 550,
    "w": 222,
-   "h": 214,
+   "h": 142,
    "kind": "gal_t",
    "title": "Usually BILATERAL · MULTIPLE ducts",
    "lines": [
@@ -486,10 +525,10 @@
   },
   {
    "id": "pap_clue_0_0",
-   "x": 1271,
+   "x": 1505,
    "y": 550,
    "w": 222,
-   "h": 214,
+   "h": 142,
    "kind": "pap_t",
    "title": "UNILATERAL · SINGLE duct · SPONTANEOUS",
    "lines": [
@@ -500,10 +539,10 @@
   },
   {
    "id": "cis_clue_0_0",
-   "x": 1533,
+   "x": 1767,
    "y": 550,
    "w": 222,
-   "h": 96,
+   "h": 60,
    "kind": "cis_t",
    "title": "DCIS: CALCIFICATIONS",
    "lines": [
@@ -512,10 +551,10 @@
   },
   {
    "id": "cis_clue_1_0",
-   "x": 1533,
-   "y": 668,
+   "x": 1767,
+   "y": 632,
    "w": 222,
-   "h": 96,
+   "h": 60,
    "kind": "cis_t",
    "title": "LCIS: INCIDENTAL",
    "lines": [
@@ -525,7 +564,7 @@
   {
    "id": "ben_inv_0_0",
    "x": 45,
-   "y": 804,
+   "y": 732,
    "w": 222,
    "h": 118,
    "kind": "ben_w",
@@ -535,7 +574,7 @@
   {
    "id": "ben_inv_1_0",
    "x": 45,
-   "y": 944,
+   "y": 872,
    "w": 222,
    "h": 98,
    "kind": "ben_w",
@@ -543,11 +582,23 @@
    "lines": []
   },
   {
-   "id": "ca_inv_0_0",
+   "id": "fn_inv_0_0",
    "x": 279,
-   "y": 804,
+   "y": 732,
    "w": 222,
-   "h": 107,
+   "h": 238,
+   "kind": "fn_w",
+   "title": "1 · Image by age, then BIOPSY",
+   "lines": [
+    "it feels like cancer: only the biopsy tells them apart"
+   ]
+  },
+  {
+   "id": "ca_inv_0_0",
+   "x": 513,
+   "y": 732,
+   "w": 222,
+   "h": 116,
    "kind": "bad",
    "title": "1 · Investigate NOW",
    "lines": [
@@ -556,20 +607,18 @@
   },
   {
    "id": "ca_inv_1_0",
-   "x": 279,
-   "y": 933,
+   "x": 513,
+   "y": 870,
    "w": 222,
-   "h": 109,
+   "h": 100,
    "kind": "ca_w",
    "title": "2 · Image by age, then BIOPSY",
-   "lines": [
-    "fat necrosis is biopsied too"
-   ]
+   "lines": []
   },
   {
    "id": "cyc_inv_0_0",
-   "x": 541,
-   "y": 804,
+   "x": 775,
+   "y": 732,
    "w": 222,
    "h": 108,
    "kind": "ok",
@@ -578,8 +627,8 @@
   },
   {
    "id": "cyc_inv_1_0",
-   "x": 541,
-   "y": 934,
+   "x": 775,
+   "y": 862,
    "w": 222,
    "h": 108,
    "kind": "cyc_w",
@@ -588,8 +637,8 @@
   },
   {
    "id": "mas_inv_0_0",
-   "x": 775,
-   "y": 804,
+   "x": 1009,
+   "y": 732,
    "w": 222,
    "h": 80,
    "kind": "mas_w",
@@ -600,8 +649,8 @@
   },
   {
    "id": "mas_inv_1_0",
-   "x": 775,
-   "y": 906,
+   "x": 1009,
+   "y": 834,
    "w": 222,
    "h": 136,
    "kind": "bad",
@@ -613,8 +662,8 @@
   },
   {
    "id": "gal_inv_0_0",
-   "x": 1037,
-   "y": 804,
+   "x": 1271,
+   "y": 732,
    "w": 222,
    "h": 238,
    "kind": "gal_w",
@@ -627,8 +676,8 @@
   },
   {
    "id": "pap_inv_0_0",
-   "x": 1271,
-   "y": 804,
+   "x": 1505,
+   "y": 732,
    "w": 222,
    "h": 108,
    "kind": "bad",
@@ -639,8 +688,8 @@
   },
   {
    "id": "pap_inv_1_0",
-   "x": 1271,
-   "y": 934,
+   "x": 1505,
+   "y": 862,
    "w": 222,
    "h": 108,
    "kind": "pap_w",
@@ -651,8 +700,8 @@
   },
   {
    "id": "cis_inv_0_0",
-   "x": 1533,
-   "y": 804,
+   "x": 1767,
+   "y": 732,
    "w": 222,
    "h": 108,
    "kind": "cis_w",
@@ -663,8 +712,8 @@
   },
   {
    "id": "cis_inv_1_0",
-   "x": 1533,
-   "y": 934,
+   "x": 1767,
+   "y": 862,
    "w": 222,
    "h": 108,
    "kind": "cis_w",
@@ -676,7 +725,7 @@
   {
    "id": "ben_tx_0_0",
    "x": 45,
-   "y": 1082,
+   "y": 1010,
    "w": 222,
    "h": 96,
    "kind": "ok",
@@ -686,7 +735,7 @@
   {
    "id": "ben_tx_1_0",
    "x": 45,
-   "y": 1200,
+   "y": 1128,
    "w": 222,
    "h": 134,
    "kind": "ok",
@@ -696,9 +745,19 @@
    ]
   },
   {
-   "id": "ca_tx_0_0",
+   "id": "fn_tx_0_0",
    "x": 279,
-   "y": 1082,
+   "y": 1010,
+   "w": 222,
+   "h": 252,
+   "kind": "ok",
+   "title": "Biopsy confirms: BENIGN",
+   "lines": []
+  },
+  {
+   "id": "ca_tx_0_0",
+   "x": 513,
+   "y": 1010,
    "w": 222,
    "h": 141,
    "kind": "ok",
@@ -710,8 +769,8 @@
   },
   {
    "id": "ca_tx_1_0",
-   "x": 279,
-   "y": 1245,
+   "x": 513,
+   "y": 1173,
    "w": 222,
    "h": 89,
    "kind": "warn",
@@ -722,8 +781,8 @@
   },
   {
    "id": "cyc_tx_0_0",
-   "x": 541,
-   "y": 1082,
+   "x": 775,
+   "y": 1010,
    "w": 222,
    "h": 78,
    "kind": "ok",
@@ -734,8 +793,8 @@
   },
   {
    "id": "cyc_tx_1_0",
-   "x": 541,
-   "y": 1182,
+   "x": 775,
+   "y": 1110,
    "w": 222,
    "h": 152,
    "kind": "ok",
@@ -749,8 +808,8 @@
   },
   {
    "id": "mas_tx_0_0",
-   "x": 775,
-   "y": 1082,
+   "x": 1009,
+   "y": 1010,
    "w": 222,
    "h": 133,
    "kind": "ok",
@@ -762,8 +821,8 @@
   },
   {
    "id": "mas_tx_1_0",
-   "x": 775,
-   "y": 1237,
+   "x": 1009,
+   "y": 1165,
    "w": 222,
    "h": 97,
    "kind": "bad",
@@ -774,8 +833,8 @@
   },
   {
    "id": "gal_tx_0_0",
-   "x": 1037,
-   "y": 1082,
+   "x": 1271,
+   "y": 1010,
    "w": 222,
    "h": 252,
    "kind": "ok",
@@ -784,8 +843,8 @@
   },
   {
    "id": "pap_tx_0_0",
-   "x": 1271,
-   "y": 1082,
+   "x": 1505,
+   "y": 1010,
    "w": 222,
    "h": 252,
    "kind": "ok",
@@ -796,8 +855,8 @@
   },
   {
    "id": "cis_tx_0_0",
-   "x": 1533,
-   "y": 1082,
+   "x": 1767,
+   "y": 1010,
    "w": 222,
    "h": 115,
    "kind": "ok",
@@ -808,8 +867,8 @@
   },
   {
    "id": "cis_tx_1_0",
-   "x": 1533,
-   "y": 1219,
+   "x": 1767,
+   "y": 1147,
    "w": 222,
    "h": 115,
    "kind": "ok",
@@ -823,22 +882,22 @@
   {
    "from": "root",
    "to": "g_lump",
-   "path": "M900.0 88V113H273.0V138"
+   "path": "M1017.0 88V113H390.0V138"
   },
   {
    "from": "root",
    "to": "g_pain",
-   "path": "M900.0 88V113H769.0V138"
+   "path": "M1017.0 88V113H1003.0V138"
   },
   {
    "from": "root",
    "to": "g_dis",
-   "path": "M900.0 88V113H1265.0V138"
+   "path": "M1017.0 88V113H1499.0V138"
   },
   {
    "from": "root",
    "to": "g_scr",
-   "path": "M900.0 88V113H1644.0V138"
+   "path": "M1017.0 88V113H1878.0V138"
   },
   {
    "from": "g_lump",
@@ -855,11 +914,6 @@
   {
    "from": "g_scr",
    "to": "p_scr"
-  },
-  {
-   "from": "ca_clue_0_0",
-   "to": "ca_clue_1_0",
-   "dashed": true
   },
   {
    "from": "cis_clue_0_0",
@@ -925,10 +979,32 @@
   {
    "from": "p_lump",
    "to": "ben_head_0_0",
-   "from_dx": -117,
+   "from_dx": -234,
    "label": "benign",
    "label_at": [
     156.0,
+    374
+   ]
+  },
+  {
+   "from": "fn_head_0_0",
+   "to": "fn_clue_0_0"
+  },
+  {
+   "from": "fn_clue_0_0",
+   "to": "fn_inv_0_0"
+  },
+  {
+   "from": "fn_inv_0_0",
+   "to": "fn_tx_0_0"
+  },
+  {
+   "from": "p_lump",
+   "to": "fn_head_0_0",
+   "from_dx": 0,
+   "label": "irregular, after trauma",
+   "label_at": [
+    390.0,
     374
    ]
   },
@@ -937,7 +1013,7 @@
    "to": "ca_clue_0_0"
   },
   {
-   "from": "ca_clue_1_0",
+   "from": "ca_clue_0_0",
    "to": "ca_inv_0_0"
   },
   {
@@ -947,10 +1023,10 @@
   {
    "from": "p_lump",
    "to": "ca_head_0_0",
-   "from_dx": 117,
+   "from_dx": 234,
    "label": "worrisome",
    "label_at": [
-    390.0,
+    624.0,
     374
    ]
   },
@@ -972,7 +1048,7 @@
    "from_dx": -117,
    "label": "cyclical",
    "label_at": [
-    652.0,
+    886.0,
     374
    ]
   },
@@ -994,7 +1070,7 @@
    "from_dx": 117,
    "label": "non-cyclical",
    "label_at": [
-    886.0,
+    1120.0,
     374
    ]
   },
@@ -1016,7 +1092,7 @@
    "from_dx": -117,
    "label": "both, many ducts",
    "label_at": [
-    1148.0,
+    1382.0,
     374
    ]
   },
@@ -1038,7 +1114,7 @@
    "from_dx": 117,
    "label": "1 side, 1 duct",
    "label_at": [
-    1382.0,
+    1616.0,
     374
    ]
   },
@@ -1060,7 +1136,7 @@
    "from_dx": 0,
    "label": "abnormal",
    "label_at": [
-    1644.0,
+    1878.0,
     374
    ]
   }
@@ -1068,8 +1144,8 @@
  "panels": [
   {
    "x": 45,
-   "y": 1368,
-   "w": 848,
+   "y": 1296,
+   "w": 965,
    "title": "The benign biopsy report sets her cancer risk",
    "items": [
     "non-proliferative, ×1: fibrocystic change, cyst, fibroadenoma",
@@ -1079,9 +1155,9 @@
    "cols": 1
   },
   {
-   "x": 907,
-   "y": 1368,
-   "w": 848,
+   "x": 1024,
+   "y": 1296,
+   "w": 965,
    "title": "Screening + genes",
    "items": [
     "HIGH risk, YEARLY mammogram: 1st-degree relative < 50, or two at any age · ovarian cancer · male breast cancer in the family · atypia, LCIS, radial scar, phyllodes · density > 75%",
