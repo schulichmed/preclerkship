@@ -1,7 +1,7 @@
 {
  "name": "first trimester bleeding overview",
- "width": 1352,
- "title": "Bleeding in early pregnancy: transvaginal ultrasound read against beta-hCG sorts it into miscarriage (threatened, inevitable, incomplete, complete, missed), molar pregnancy, pregnancy of unknown location or ectopic; each column gives presentation, ultrasound and hCG findings, pathology and treatment",
+ "width": 1460,
+ "title": "Bleeding in early pregnancy: ultrasound read against beta-hCG decides whether the pregnancy is in the uterus and viable, sorting it into threatened, open-cervix or missed miscarriage, molar pregnancy, pregnancy of unknown location or ectopic; each column gives presentation, numbered investigations and treatment in order",
  "kinds": {
   "thr_h": [
    "#1f6f8b",
@@ -115,49 +115,49 @@
  "bands": [
   {
    "x": 40,
-   "y": 414,
-   "w": 206,
-   "h": 3406,
+   "y": 288,
+   "w": 224,
+   "h": 1036,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
-   "x": 248,
-   "y": 414,
-   "w": 206,
-   "h": 3406,
+   "x": 266,
+   "y": 288,
+   "w": 224,
+   "h": 1036,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
-   "x": 456,
-   "y": 414,
-   "w": 206,
-   "h": 3406,
+   "x": 492,
+   "y": 288,
+   "w": 224,
+   "h": 1036,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
-   "x": 692,
-   "y": 414,
-   "w": 206,
-   "h": 3406,
+   "x": 746,
+   "y": 288,
+   "w": 224,
+   "h": 1036,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
-   "x": 928,
-   "y": 414,
-   "w": 206,
-   "h": 3406,
+   "x": 1000,
+   "y": 288,
+   "w": 224,
+   "h": 1036,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
-   "x": 1136,
-   "y": 414,
-   "w": 206,
-   "h": 3406,
+   "x": 1226,
+   "y": 288,
+   "w": 224,
+   "h": 1036,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -165,846 +165,520 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 596,
-   "h": 332,
+   "y": 450,
+   "h": 216,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 968,
-   "h": 544,
-   "text": "ULTRASOUND & β-hCG"
+   "y": 706,
+   "h": 216,
+   "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 1552,
-   "h": 782,
-   "text": "PATHOLOGY & OUTCOME"
-  },
-  {
-   "x": 23,
-   "y": 2374,
-   "h": 1438,
+   "y": 962,
+   "h": 354,
    "text": "TREATMENT"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 311,
+   "x": 365,
    "y": 10,
    "w": 760,
    "kind": "dark",
-   "title": "Bleeding in early pregnancy: is the pregnancy IN the uterus, and is it VIABLE?",
+   "title": "Bleeding in early pregnancy: is it IN the uterus, and is it VIABLE?",
    "lines": [
-    "the 'baby' causes: spontaneous abortion · ectopic · gestational trophoblastic disease · every other cause of bleeding: see the ABNORMAL BLEEDING chart",
-    "work up every one (transvaginal first; transabdominal adds free fluid or a mass high in the pelvis): vitals · complete blood count (CBC) · group and screen (blood type, Rh D, antibodies) · quantitative beta human chorionic gonadotropin (β-hCG) · transvaginal ultrasound of uterus + adnexa",
-    "Rh NEGATIVE + positive β-hCG + vaginal bleeding → Rh immunoglobulin (WinRho, Rhogam) to protect future pregnancies",
-    "send ALL tissue passed or sampled to pathology: only the microscope proves where the gestation was"
+    "every one: vitals · complete blood count · group and screen · quantitative beta-hCG (β-hCG) · transvaginal ultrasound",
+    "Rh NEGATIVE + bleeding → Rh immunoglobulin · send any tissue passed to pathology"
    ]
   },
   {
    "id": "g_sa",
    "x": 45,
-   "y": 228,
-   "w": 612,
-   "h": 114,
+   "y": 138,
+   "w": 666,
+   "h": 78,
    "kind": "plain",
-   "title": "Intrauterine pregnancy seen: SPONTANEOUS ABORTION (miscarriage)",
+   "title": "Pregnancy IN the uterus: MISCARRIAGE",
    "lines": [
-    "non-viable intrauterine pregnancy (IUP) < 20 weeks · 80% before 12 weeks",
-    "bleeding, cramping, clot or tissue passed · the CERVIX and the FETAL HEART tell the types apart",
-    "~a yolk sac inside the gestational sac confirms an intrauterine pregnancy"
+    "the CERVIX (open or closed) and the FETAL HEART decide the type"
    ]
   },
   {
    "id": "g_gtd",
-   "x": 697,
-   "y": 228,
-   "w": 196,
-   "h": 114,
+   "x": 751,
+   "y": 138,
+   "w": 214,
+   "h": 78,
    "kind": "plain",
-   "title": "MOLAR PREGNANCY",
+   "title": "'Snow storm' or cysts",
    "lines": [
-    "gestational trophoblastic disease: abnormal trophoblast proliferation"
+    "abnormal trophoblast"
    ]
   },
   {
    "id": "g_out",
-   "x": 933,
-   "y": 228,
-   "w": 404,
-   "h": 114,
+   "x": 1005,
+   "y": 138,
+   "w": 440,
+   "h": 78,
    "kind": "plain",
-   "title": "NO intrauterine pregnancy seen",
+   "title": "NOTHING in the uterus: β-hCG decides",
    "lines": [
-    "abdominal pain + bleeding + positive β-hCG = ECTOPIC until proven otherwise",
-    "intrauterine device (IUD) + positive pregnancy test = ECTOPIC until proven otherwise"
+    "pain + bleeding + positive β-hCG = ECTOPIC until proven otherwise (an IUD too)"
    ]
   },
   {
    "id": "thr_head_0_0",
    "x": 45,
-   "y": 422,
-   "w": 196,
-   "h": 134,
+   "y": 296,
+   "w": 214,
+   "h": 114,
    "kind": "thr_h",
-   "title": "Threatened abortion",
+   "title": "Threatened",
    "lines": [
-    "bleeding · cervix CLOSED",
-    "fetal heart PRESENT",
-    "20–25% of all pregnancies"
+    "cervix CLOSED · heart PRESENT"
    ]
   },
   {
    "id": "opn_head_0_0",
-   "x": 253,
-   "y": 422,
-   "w": 196,
-   "h": 134,
+   "x": 271,
+   "y": 296,
+   "w": 214,
+   "h": 114,
    "kind": "opn_h",
    "title": "Inevitable · incomplete · complete",
    "lines": [
-    "bleeding · cervix OPEN",
-    "tissue seen or felt through the os"
+    "cervix OPEN"
    ]
   },
   {
    "id": "mis_head_0_0",
-   "x": 461,
-   "y": 422,
-   "w": 196,
-   "h": 134,
+   "x": 497,
+   "y": 296,
+   "w": 214,
+   "h": 114,
    "kind": "mis_h",
-   "title": "Missed abortion",
+   "title": "Missed",
    "lines": [
-    "cervix CLOSED · NO fetal heart",
+    "cervix CLOSED · NO heart",
     "non-viable pregnancy retained"
    ]
   },
   {
    "id": "mol_head_0_0",
-   "x": 697,
-   "y": 422,
-   "w": 196,
-   "h": 134,
+   "x": 751,
+   "y": 296,
+   "w": 214,
+   "h": 114,
    "kind": "mol_h",
-   "title": "Hydatidiform mole",
+   "title": "Molar pregnancy",
    "lines": [
-    "COMPLETE (commonest) vs PARTIAL"
+    "complete: 46, all paternal, NO fetus",
+    "partial: 69 (triploid), fetus possible"
    ]
   },
   {
    "id": "pul_head_0_0",
-   "x": 933,
-   "y": 422,
-   "w": 196,
-   "h": 134,
+   "x": 1005,
+   "y": 296,
+   "w": 214,
+   "h": 114,
    "kind": "pul_h",
-   "title": "Pregnancy of unknown location (PUL)",
+   "title": "Pregnancy of unknown location",
    "lines": [
-    "positive β-hCG, NO pregnancy on ultrasound",
-    "viable IUP, non-viable IUP or ectopic"
+    "positive β-hCG, nothing seen in or out of the uterus"
    ]
   },
   {
    "id": "ect_head_0_0",
-   "x": 1141,
-   "y": 422,
-   "w": 196,
-   "h": 134,
+   "x": 1231,
+   "y": 296,
+   "w": 214,
+   "h": 114,
    "kind": "ect_h",
    "title": "Ectopic pregnancy",
    "lines": [
-    "implanted anywhere but the endometrium",
-    "2% of pregnancies · leading cause of early pregnancy death"
+    "most in the fallopian tube",
+    "leading cause of early pregnancy death"
    ]
   },
   {
    "id": "thr_pres_0_0",
    "x": 45,
-   "y": 596,
-   "w": 196,
-   "h": 332,
+   "y": 450,
+   "w": 214,
+   "h": 216,
    "kind": "thr_t",
-   "title": "Presents as",
+   "title": "Bleeding ± cramps",
    "lines": [
-    "vaginal bleeding ± pain",
-    "cervix closed",
     "nothing passed"
    ]
   },
   {
    "id": "opn_pres_0_0",
-   "x": 253,
-   "y": 596,
-   "w": 196,
-   "h": 78,
-   "kind": "opn_w",
-   "title": "Inevitable",
+   "x": 271,
+   "y": 450,
+   "w": 214,
+   "h": 216,
+   "kind": "opn_t",
+   "title": "Bleeding + cramps",
    "lines": [
-    "open cervix, nothing passed yet"
-   ]
-  },
-  {
-   "id": "opn_pres_1_0",
-   "x": 253,
-   "y": 696,
-   "w": 196,
-   "h": 150,
-   "kind": "opn_w",
-   "title": "Incomplete",
-   "lines": [
-    "bleeding ± pain, open cervix",
-    "products partly passed, the rest in the cervix",
-    "< 10 wk fetus and placenta pass together; separately after"
-   ]
-  },
-  {
-   "id": "opn_pres_2_0",
-   "x": 253,
-   "y": 868,
-   "w": 196,
-   "h": 60,
-   "kind": "opn_w",
-   "title": "Complete",
-   "lines": [
-    "bleeding, all products passed"
+    "inevitable: nothing passed yet",
+    "incomplete: partly passed",
+    "complete: all passed"
    ]
   },
   {
    "id": "mis_pres_0_0",
-   "x": 461,
-   "y": 596,
-   "w": 196,
-   "h": 332,
+   "x": 497,
+   "y": 450,
+   "w": 214,
+   "h": 216,
    "kind": "mis_t",
-   "title": "Presents as",
+   "title": "± bleeding",
    "lines": [
-    "± bleeding, or no symptoms",
-    "cervix closed",
-    "nothing passed"
+    "no symptoms, nothing passed"
    ]
   },
   {
    "id": "mol_pres_0_0",
-   "x": 697,
-   "y": 596,
-   "w": 196,
-   "h": 173,
+   "x": 751,
+   "y": 450,
+   "w": 214,
+   "h": 216,
    "kind": "mol_t",
-   "title": "Complete",
+   "title": "Bleeding · uterus LARGE for dates",
    "lines": [
-    "bleeding · uterus LARGE for dates",
-    "hyperemesis 25%, hypertension or pre-eclampsia 25%, hyperthyroidism"
-   ]
-  },
-  {
-   "id": "mol_pres_1_0",
-   "x": 697,
-   "y": 791,
-   "w": 196,
-   "h": 137,
-   "kind": "mol_w",
-   "title": "Partial",
-   "lines": [
-    "bleeding · uterus SMALL for dates",
-    "complete-mole symptoms rare"
+    "hyperemesis · early pre-eclampsia · hyperthyroid (complete)"
    ]
   },
   {
    "id": "pul_pres_0_0",
-   "x": 933,
-   "y": 596,
-   "w": 196,
-   "h": 332,
+   "x": 1005,
+   "y": 450,
+   "w": 214,
+   "h": 216,
    "kind": "pul_t",
-   "title": "Presents as",
+   "title": "Bleeding ± pain",
    "lines": [
-    "varies: fading pregnancy symptoms, ongoing ones, or an ectopic's"
+    "could still be viable, failing or ectopic"
    ]
   },
   {
    "id": "ect_pres_0_0",
-   "x": 1141,
-   "y": 596,
-   "w": 196,
-   "h": 119,
+   "x": 1231,
+   "y": 450,
+   "w": 214,
+   "h": 98,
    "kind": "ect_t",
-   "title": "TRIAD",
+   "title": "Pain + amenorrhea + bleeding",
    "lines": [
-    "pain · amenorrhea · vaginal bleeding",
-    "~pathology triad: amenorrhea, pain, adnexal mass"
+    "unstable: shoulder-tip pain, lightheaded, orthostatic"
    ]
   },
   {
    "id": "ect_pres_1_0",
-   "x": 1141,
-   "y": 737,
-   "w": 196,
-   "h": 191,
+   "x": 1231,
+   "y": 570,
+   "w": 214,
+   "h": 96,
    "kind": "ect_w",
-   "title": "Also",
+   "title": "Risk",
    "lines": [
-    "uterus displaced or enlarged · pelvic mass · bulging fornix · cervical motion tenderness",
-    "orthostatic hypotension · lightheaded",
-    "shoulder-tip pain (diaphragm) · rectal pain · nausea, breast tenderness"
+    "previous ectopic · tubal surgery or sterilization · IUD · in vitro fertilization"
    ]
   },
   {
    "id": "thr_inv_0_0",
    "x": 45,
-   "y": 968,
-   "w": 196,
-   "h": 544,
+   "y": 706,
+   "w": 214,
+   "h": 216,
    "kind": "thr_w",
-   "title": "Transvaginal ultrasound",
+   "title": "1 · Ultrasound",
    "lines": [
-    "documents viability: fetal heart present"
+    "fetal heart present: still viable"
    ]
   },
   {
    "id": "opn_inv_0_0",
-   "x": 253,
-   "y": 968,
-   "w": 196,
-   "h": 544,
+   "x": 271,
+   "y": 706,
+   "w": 214,
+   "h": 97,
    "kind": "opn_w",
-   "title": "Transvaginal ultrasound",
+   "title": "1 · Speculum",
    "lines": [
-    "incomplete: shows the retained products of conception"
+    "tissue at the os"
+   ]
+  },
+  {
+   "id": "opn_inv_1_0",
+   "x": 271,
+   "y": 825,
+   "w": 214,
+   "h": 97,
+   "kind": "opn_w",
+   "title": "2 · Ultrasound",
+   "lines": [
+    "retained products? (incomplete)"
    ]
   },
   {
    "id": "mis_inv_0_0",
-   "x": 461,
-   "y": 968,
-   "w": 196,
-   "h": 226,
+   "x": 497,
+   "y": 706,
+   "w": 214,
+   "h": 134,
    "kind": "mis_t",
-   "title": "Ultrasound DIAGNOSTIC of non-viability",
+   "title": "1 · DIAGNOSTIC of non-viability",
    "lines": [
-    "crown-rump length (CRL) > 7 mm, no heartbeat",
-    "mean sac diameter ≥ 25 mm, no embryo",
-    "no embryo with heartbeat ≥ 2 wk after a sac WITHOUT a yolk sac, or ≥ 11 days after one WITH"
+    "crown-rump length > 7 mm, no heartbeat",
+    "mean sac diameter ≥ 25 mm, no embryo"
    ]
   },
   {
    "id": "mis_inv_1_0",
-   "x": 461,
-   "y": 1216,
-   "w": 196,
-   "h": 296,
+   "x": 497,
+   "y": 862,
+   "w": 214,
+   "h": 60,
    "kind": "mis_w",
-   "title": "SUSPICIOUS for non-viability",
+   "title": "Below those: SUSPICIOUS",
    "lines": [
-    "CRL < 7 mm, no heartbeat",
-    "mean sac diameter 16–24 mm, no embryo",
-    "no embryo with heartbeat 7–13 days after a sac without a yolk sac, or 7–10 days after one with",
-    "no embryo ≥ 6 wk after the last menstrual period",
-    "yolk sac > 7 mm · sac small for the embryo (< 5 mm between mean sac diameter and CRL)"
+    "→ rescan before calling it"
    ]
   },
   {
    "id": "mol_inv_0_0",
-   "x": 697,
-   "y": 968,
-   "w": 196,
-   "h": 261,
+   "x": 751,
+   "y": 706,
+   "w": 214,
+   "h": 88,
    "kind": "mol_t",
-   "title": "Complete",
+   "title": "1 · β-hCG MARKEDLY ↑",
    "lines": [
-    "β-hCG MARKEDLY ↑",
-    "'SNOW STORM', no fetus",
-    "caught early (8–12 wk) on routine ultrasound"
+    "partial: low to normal"
    ]
   },
   {
    "id": "mol_inv_1_0",
-   "x": 697,
-   "y": 1251,
-   "w": 196,
-   "h": 261,
+   "x": 751,
+   "y": 816,
+   "w": 214,
+   "h": 106,
    "kind": "mol_w",
-   "title": "Partial",
+   "title": "2 · Ultrasound",
    "lines": [
-    "β-hCG low to normal",
-    "focal cystic change WITH a fetus",
-    "often missed clinically"
+    "complete: 'snow storm', no fetus",
+    "partial: cysts WITH a fetus"
    ]
   },
   {
    "id": "pul_inv_0_0",
-   "x": 933,
-   "y": 968,
-   "w": 196,
-   "h": 161,
+   "x": 1005,
+   "y": 706,
+   "w": 214,
+   "h": 79,
    "kind": "pul_t",
-   "title": "ONE β-hCG never settles it",
+   "title": "1 · Repeat β-hCG in 48 h",
    "lines": [
-    "levels overlap in viable, non-viable and ectopic",
-    "serial β-hCG + serial ultrasound"
+    "ONE value never settles it"
    ]
   },
   {
    "id": "pul_inv_1_0",
-   "x": 933,
-   "y": 1151,
-   "w": 196,
-   "h": 177,
+   "x": 1005,
+   "y": 807,
+   "w": 214,
+   "h": 115,
    "kind": "pul_w",
-   "title": "Discriminatory zone",
+   "title": "2 · Discriminatory zone",
    "lines": [
-    "β-hCG above which a sac SHOULD be seen",
-    "1500 transvaginal (99% by 3150) · 6500 transabdominal",
-    "now 2000–3000 for a stable PUL"
-   ]
-  },
-  {
-   "id": "pul_inv_2_0",
-   "x": 933,
-   "y": 1350,
-   "w": 196,
-   "h": 161,
-   "kind": "pul_w",
-   "title": "Normal rise in a viable IUP",
-   "lines": [
-    "≥ 53% in 2 days (99% confidence interval: < 1% slower, as low as 35%)",
-    "doubling time 1.4–2.1 days"
+    "above ~1500–3000 a sac SHOULD be seen on transvaginal ultrasound"
    ]
   },
   {
    "id": "ect_inv_0_0",
-   "x": 1141,
-   "y": 968,
-   "w": 196,
-   "h": 215,
+   "x": 1231,
+   "y": 706,
+   "w": 214,
+   "h": 115,
    "kind": "ect_t",
-   "title": "β-hCG over the zone + NO intrauterine sac",
+   "title": "1 · β-hCG above the zone + EMPTY uterus",
    "lines": [
-    "adnexal mass · 'ring of fire' (blood flow around a complex mass)",
-    "yolk sac or heartbeat in the adnexa",
-    "free fluid (hemoperitoneum)"
+    "adnexal mass · 'ring of fire' · free fluid"
    ]
   },
   {
    "id": "ect_inv_1_0",
-   "x": 1141,
-   "y": 1205,
-   "w": 196,
-   "h": 105,
-   "kind": "ect_w",
-   "title": "β-hCG",
-   "lines": [
-    "normal, declining or negative"
-   ]
-  },
-  {
-   "id": "ect_inv_2_0",
-   "x": 1141,
-   "y": 1332,
-   "w": 196,
-   "h": 179,
+   "x": 1231,
+   "y": 843,
+   "w": 214,
+   "h": 79,
    "kind": "bad",
-   "title": "A normal rise does NOT exclude ectopic",
-   "lines": [
-    "16% of PULs rising ≥ 66% were ectopic",
-    "60% of ectopics rising at diagnosis, 21% by ≥ 53%"
-   ]
-  },
-  {
-   "id": "thr_path_0_0",
-   "x": 45,
-   "y": 1552,
-   "w": 196,
-   "h": 280,
-   "kind": "thr_t",
-   "title": "~43% go on to miscarry",
+   "title": "A normal β-hCG rise does NOT exclude it",
    "lines": []
-  },
-  {
-   "id": "thr_path_1_0",
-   "x": 45,
-   "y": 1854,
-   "w": 196,
-   "h": 480,
-   "kind": "thr_w",
-   "title": "If it continues: more risk of",
-   "lines": [
-    "pregnancy loss 12–14%",
-    "preterm birth at 28–31 wk 3×, at 32–36 wk 50% higher",
-    "intrauterine growth restriction, preterm premature rupture of membranes, abruption, perinatal death",
-    "placenta previa, antepartum hemorrhage, manual removal of placenta, cesarean section"
-   ]
-  },
-  {
-   "id": "opn_path_0_0",
-   "x": 253,
-   "y": 1552,
-   "w": 196,
-   "h": 782,
-   "kind": "opn_t",
-   "title": "Passed or curetted tissue",
-   "lines": [
-    "products of conception: chorionic villi, trophoblast ± fetal parts",
-    "gestational endometrium: glands, decidualized stroma",
-    "must SEE products of conception to prove an intrauterine gestation"
-   ]
-  },
-  {
-   "id": "mis_path_0_0",
-   "x": 461,
-   "y": 1552,
-   "w": 196,
-   "h": 782,
-   "kind": "mis_w",
-   "title": "Tissue evacuated → pathology",
-   "lines": [
-    "same findings as passed tissue (blue column)"
-   ]
-  },
-  {
-   "id": "mol_path_0_0",
-   "x": 697,
-   "y": 1552,
-   "w": 196,
-   "h": 353,
-   "kind": "mol_t",
-   "title": "Complete",
-   "lines": [
-    "DIPLOID 46 XX or XY, PATERNAL only: empty ovum + 1 sperm that duplicates (90%) or 2 sperm (10%)",
-    "abundant swollen hydropic villi, NO fetal tissue · trophoblast proliferation"
-   ]
-  },
-  {
-   "id": "mol_path_1_0",
-   "x": 697,
-   "y": 1927,
-   "w": 196,
-   "h": 407,
-   "kind": "mol_w",
-   "title": "Partial",
-   "lines": [
-    "TRIPLOID 69 XXX or XXY: 2 paternal + 1 maternal sets; ovum + 2 sperm (diandric) mostly, or 1 that duplicates",
-    "less tissue · TWO villous sizes (hydropic + small normal or fibrotic) · irregular villi with stromal inclusions · less proliferation · fetus may be present"
-   ]
-  },
-  {
-   "id": "pul_path_0_0",
-   "x": 933,
-   "y": 1552,
-   "w": 196,
-   "h": 379,
-   "kind": "pul_w",
-   "title": "PUL by the numbers",
-   "lines": [
-    "≥ 2000: non-viable IUP likeliest, 2× ectopic",
-    "2000–3000: ectopic 19× a viable IUP (2% chance viable)",
-    "≥ 3000: ectopic 70× (0.5% chance viable)"
-   ]
-  },
-  {
-   "id": "pul_path_1_0",
-   "x": 933,
-   "y": 1953,
-   "w": 196,
-   "h": 381,
-   "kind": "pul_w",
-   "title": "Above the zone, uterus empty",
-   "lines": [
-    "heavy bleeding with tissue? complete miscarriage, β-hCG falling",
-    "no bleeding → high suspicion of ECTOPIC"
-   ]
-  },
-  {
-   "id": "ect_path_0_0",
-   "x": 1141,
-   "y": 1552,
-   "w": 196,
-   "h": 204,
-   "kind": "ect_t",
-   "title": "Gross",
-   "lines": [
-    "fallopian tube 80–96% (ampulla 70%, isthmus 12%, fimbria 6%) · interstitial 2% · ovary 0.5–3% · cervix < 0.1% · abdomen, cesarean scar",
-    "heterotopic 1/30,000; 1% with assisted reproduction",
-    "hematosalpinx · wall thinned or ruptured"
-   ]
-  },
-  {
-   "id": "ect_path_1_0",
-   "x": 1141,
-   "y": 1778,
-   "w": 196,
-   "h": 114,
-   "kind": "ect_w",
-   "title": "Microscopic",
-   "lines": [
-    "villi, trophoblast, fetal parts at the site",
-    "endometrium decidualized but NO products of conception"
-   ]
-  },
-  {
-   "id": "ect_path_2_0",
-   "x": 1141,
-   "y": 1914,
-   "w": 196,
-   "h": 420,
-   "kind": "ect_w",
-   "title": "Causes & risk factors",
-   "lines": [
-    "pathology: pelvic inflammatory disease (PID) commonest · adhesions (surgery, appendicitis) · endometriosis · IUD · previous ectopic",
-    "HIGH: previous ectopic or tubal surgery · tubal pathology · sterilization · IUD (past, current, levonorgestrel) · in vitro fertilization",
-    "MODERATE: previous sexually transmitted infection or PID · in utero diethylstilbestrol · smoking · pelvic or abdominal surgery",
-    "LOW: infertility · age > 40 · first intercourse < 18 · appendectomy",
-    "~an IUD itself does not raise the risk"
-   ]
   },
   {
    "id": "thr_tx_0_0",
    "x": 45,
-   "y": 2374,
-   "w": 196,
-   "h": 726,
+   "y": 962,
+   "w": 214,
+   "h": 184,
    "kind": "ok",
-   "title": "Expectant management",
+   "title": "Expectant",
    "lines": [
-    "treat bacterial vaginosis if found"
+    "treat bacterial vaginosis if found",
+    "~43% still go on to miscarry"
    ]
   },
   {
    "id": "thr_tx_1_0",
    "x": 45,
-   "y": 3122,
-   "w": 196,
-   "h": 690,
+   "y": 1168,
+   "w": 214,
+   "h": 148,
    "kind": "bad",
    "title": "NO progesterone",
    "lines": []
   },
   {
    "id": "opn_tx_0_0",
-   "x": 253,
-   "y": 2374,
-   "w": 196,
-   "h": 367,
+   "x": 271,
+   "y": 962,
+   "w": 214,
+   "h": 176,
    "kind": "ok",
-   "title": "Inevitable",
+   "title": "1 · Remove tissue at the os",
    "lines": [
-    "expectant, medical or surgical"
+    "then expectant (91% complete), medical or surgical"
    ]
   },
   {
    "id": "opn_tx_1_0",
-   "x": 253,
-   "y": 2763,
-   "w": 196,
-   "h": 459,
-   "kind": "ok",
-   "title": "Incomplete: remove tissue at the os",
-   "lines": [
-    "then expectant (91% complete by 4 wk), medical or surgical",
-    "may need dilation and curettage (D&C)"
-   ]
-  },
-  {
-   "id": "opn_tx_2_0",
-   "x": 253,
-   "y": 3244,
-   "w": 196,
-   "h": 569,
+   "x": 271,
+   "y": 1160,
+   "w": 214,
+   "h": 156,
    "kind": "bad",
-   "title": "SEPTIC: 1–2% of incomplete or threatened",
+   "title": "FEVER: septic",
    "lines": [
-    "intravenous broad-spectrum antibiotics + D&C",
-    "sepsis, acute respiratory distress syndrome, acute kidney injury, disseminated intravascular coagulation, death",
-    "deaths: Clostridium sordellii, C. perfringens, group A streptococcus (toxic shock)"
+    "IV broad-spectrum antibiotics + dilation and curettage (D&C)"
    ]
   },
   {
    "id": "mis_tx_0_0",
-   "x": 461,
-   "y": 2374,
-   "w": 196,
-   "h": 699,
+   "x": 497,
+   "y": 962,
+   "w": 214,
+   "h": 354,
    "kind": "ok",
-   "title": "Expectant",
+   "title": "Expectant (76%), medical or surgical",
    "lines": [
-    "76% complete by 4 wk"
-   ]
-  },
-  {
-   "id": "mis_tx_1_0",
-   "x": 461,
-   "y": 3095,
-   "w": 196,
-   "h": 717,
-   "kind": "ok",
-   "title": "Medical or surgical",
-   "lines": [
-    "doses and success rates: see the management panel"
+    "her choice: see the panel"
    ]
   },
   {
    "id": "mol_tx_0_0",
-   "x": 697,
-   "y": 2374,
-   "w": 196,
-   "h": 628,
+   "x": 751,
+   "y": 962,
+   "w": 214,
+   "h": 148,
    "kind": "ok",
-   "title": "Curettage, then serial β-hCG to baseline",
+   "title": "1 · Suction curettage",
    "lines": [
-    "complete: 80% cured · 15% invade or persist · 2–3% choriocarcinoma",
-    "partial: most cured · 5–10% invade or persist · choriocarcinoma rare"
+    "then serial β-hCG to baseline"
    ]
   },
   {
    "id": "mol_tx_1_0",
-   "x": 697,
-   "y": 3024,
-   "w": 196,
-   "h": 788,
+   "x": 751,
+   "y": 1132,
+   "w": 214,
+   "h": 184,
    "kind": "bad",
-   "title": "CHORIOCARCINOMA",
+   "title": "β-hCG stays HIGH",
    "lines": [
-    "malignant trophoblast, NO villi, hemorrhage + necrosis: red hemorrhagic uterine mass",
-    "after a mole 50%, spontaneous abortion 25%, normal pregnancy 25%; even years later",
-    "bleeding + persistent, markedly ↑ hCG · diagnosis often presumptive",
-    "> 90% LUNG metastases at diagnosis; brain, liver less often",
-    "chemotherapy: 80% 5-year survival · deaths from liver or brain metastases"
+    "invasive mole or CHORIOCARCINOMA (lungs first) → chemotherapy"
    ]
   },
   {
    "id": "pul_tx_0_0",
-   "x": 933,
-   "y": 2374,
-   "w": 196,
-   "h": 296,
+   "x": 1005,
+   "y": 962,
+   "w": 214,
+   "h": 103,
    "kind": "ok",
-   "title": "Stable, 2000–3000, no ectopic seen: REPEAT",
+   "title": "Rises ≥ 53% in 48 h",
    "lines": [
-    "β-hCG ± ultrasound in a few days",
-    "spares misoprostol, methotrexate, D&C, laparoscopy"
+    "likely viable intrauterine pregnancy → rescan"
    ]
   },
   {
    "id": "pul_tx_1_0",
-   "x": 933,
-   "y": 2692,
-   "w": 196,
-   "h": 224,
-   "kind": "bad",
-   "title": "Rises past 3000 (~3500), no IUP",
+   "x": 1005,
+   "y": 1087,
+   "w": 214,
+   "h": 103,
+   "kind": "warn",
+   "title": "Falls",
    "lines": [
-    "→ ectopic likely"
+    "failing pregnancy → follow to < 5",
+    "~a slow fall can still be an ectopic"
    ]
   },
   {
    "id": "pul_tx_2_0",
-   "x": 933,
-   "y": 2938,
-   "w": 196,
-   "h": 222,
-   "kind": "warn",
-   "title": "Falls 15–50% / 24 h",
+   "x": 1005,
+   "y": 1212,
+   "w": 214,
+   "h": 105,
+   "kind": "bad",
+   "title": "Above the zone, uterus EMPTY",
    "lines": [
-    "→ non-viable IUP: falling β-hCG + no IUP = non-viable"
-   ]
-  },
-  {
-   "id": "pul_tx_3_0",
-   "x": 933,
-   "y": 3182,
-   "w": 196,
-   "h": 278,
-   "kind": "pul_w",
-   "title": "Minimum fall in a failing IUP / 48 h",
-   "lines": [
-    "≥ 5000: 35% · 500: 24% · 50: 12%",
-    "8% of untreated ectopics fall just as fast"
-   ]
-  },
-  {
-   "id": "pul_tx_4_0",
-   "x": 933,
-   "y": 3482,
-   "w": 196,
-   "h": 332,
-   "kind": "pul_w",
-   "title": "Resolved only below 5 mIU/mL",
-   "lines": [
-    "off the curve → re-evaluate: incomplete abortion or non-resolving ectopic",
-    "β-hCG does NOT predict rupture: a falling ectopic can still rupture (0.03% of PUL, 1.7% of ectopics)"
+    "no tissue passed → ECTOPIC"
    ]
   },
   {
    "id": "ect_tx_0_0",
-   "x": 1141,
-   "y": 2374,
-   "w": 196,
-   "h": 186,
-   "kind": "ok",
-   "title": "Expectant",
+   "x": 1231,
+   "y": 962,
+   "w": 214,
+   "h": 80,
+   "kind": "bad",
+   "title": "1 · UNSTABLE or ruptured → SURGERY",
    "lines": [
-    "β-hCG falling AND ≤ 200 · mass < 3.5 cm · no rupture or hemoperitoneum · no symptoms · no fetal heart",
-    "reliable patient near surgical care · prefers it",
-    "resolves 50–70%, more if β-hCG < 1000"
+    "salpingectomy or salpingostomy"
    ]
   },
   {
    "id": "ect_tx_1_0",
-   "x": 1141,
-   "y": 2582,
-   "w": 196,
-   "h": 314,
+   "x": 1231,
+   "y": 1064,
+   "w": 214,
+   "h": 152,
    "kind": "ok",
-   "title": "Methotrexate (folic acid antagonist)",
+   "title": "2 · Stable, unruptured → METHOTREXATE",
    "lines": [
-    "STABLE · UNRUPTURED (no free fluid) · high suspicion · will follow up",
-    "before: CBC, liver enzymes (AST, ALT), creatinine, group and screen, quantitative β-hCG, transvaginal ultrasound",
-    "single dose 50 mg/m² intramuscular day 1: needs a 15% β-hCG fall day 4 → 7, else repeat",
-    "multidose 1 mg/kg days 1, 3, 5, 7 until a 15% fall"
+    "50 mg/m² IM once; β-hCG must fall 15% day 4 → 7, else repeat",
+    "NOT if β-hCG > 5000 · fetal heart · intrauterine pregnancy · breastfeeding"
    ]
   },
   {
    "id": "ect_tx_2_0",
-   "x": 1141,
-   "y": 2918,
-   "w": 196,
-   "h": 296,
-   "kind": "bad",
-   "title": "Methotrexate contraindicated",
-   "lines": [
-    "ABSOLUTE: β-hCG > 5000 · intrauterine pregnancy · breastfeeding · immunodeficiency · liver disease, alcoholism · blood dyscrasia · hypersensitivity · active lung disease (tuberculosis) · peptic ulcer · liver, kidney or blood dysfunction",
-    "RELATIVE: sac > 3.5 cm (in-class: mass > 4 cm) · embryonic heartbeat"
-   ]
-  },
-  {
-   "id": "ect_tx_3_0",
-   "x": 1141,
-   "y": 3236,
-   "w": 196,
-   "h": 258,
-   "kind": "ect_w",
-   "title": "After methotrexate",
-   "lines": [
-    "β-hCG best predicts failure: < 5000 92% success, > 5000 4× failure",
-    "15–20% need a 2nd dose · can still rupture",
-    "gastrointestinal upset, stomatitis, ↑ liver enzymes, alopecia, pneumonitis, marrow suppression → neutropenia",
-    "contraception 3–6 months + folic acid"
-   ]
-  },
-  {
-   "id": "ect_tx_4_0",
-   "x": 1141,
-   "y": 3516,
-   "w": 196,
-   "h": 296,
+   "x": 1231,
+   "y": 1238,
+   "w": 214,
+   "h": 78,
    "kind": "ok",
-   "title": "Surgery: salpingectomy or salpingostomy",
+   "title": "3 · Expectant",
    "lines": [
-    "UNSTABLE · rupture, impending or ongoing · previous ectopic in that tube · methotrexate contraindicated · tubal disease · can't follow up, or preference",
-    "in-class adds: β-hCG > 5000 · fetal heartbeat · significant pain",
-    "laparoscopy: 1/1000 bowel, bladder, vessel injury · ~1 week recovery · CO₂ → shoulder-tip pain"
+    "β-hCG falling AND < 200 · mass < 3.5 cm · no symptoms"
    ]
   }
  ],
@@ -1012,37 +686,26 @@
   {
    "from": "root",
    "to": "g_sa",
-   "path": "M691.0 178V203H351.0V228"
+   "path": "M745.0 88V113H378.0V138"
   },
   {
    "from": "root",
    "to": "g_gtd",
-   "path": "M691.0 178V203H795.0V228"
+   "path": "M745.0 88V113H858.0V138"
   },
   {
    "from": "root",
    "to": "g_out",
-   "path": "M691.0 178V203H1135.0V228"
-  },
-  {
-   "from": "opn_pres_0_0",
-   "to": "opn_pres_1_0",
-   "dashed": true
-  },
-  {
-   "from": "opn_pres_1_0",
-   "to": "opn_pres_2_0",
-   "dashed": true
-  },
-  {
-   "from": "mol_pres_0_0",
-   "to": "mol_pres_1_0",
-   "dashed": true
+   "path": "M745.0 88V113H1225.0V138"
   },
   {
    "from": "ect_pres_0_0",
    "to": "ect_pres_1_0",
    "dashed": true
+  },
+  {
+   "from": "opn_inv_0_0",
+   "to": "opn_inv_1_0"
   },
   {
    "from": "mis_inv_0_0",
@@ -1057,36 +720,8 @@
    "to": "pul_inv_1_0"
   },
   {
-   "from": "pul_inv_1_0",
-   "to": "pul_inv_2_0"
-  },
-  {
    "from": "ect_inv_0_0",
    "to": "ect_inv_1_0"
-  },
-  {
-   "from": "ect_inv_1_0",
-   "to": "ect_inv_2_0"
-  },
-  {
-   "from": "thr_path_0_0",
-   "to": "thr_path_1_0"
-  },
-  {
-   "from": "mol_path_0_0",
-   "to": "mol_path_1_0"
-  },
-  {
-   "from": "pul_path_0_0",
-   "to": "pul_path_1_0"
-  },
-  {
-   "from": "ect_path_0_0",
-   "to": "ect_path_1_0"
-  },
-  {
-   "from": "ect_path_1_0",
-   "to": "ect_path_2_0"
   },
   {
    "from": "thr_tx_0_0",
@@ -1095,14 +730,6 @@
   {
    "from": "opn_tx_0_0",
    "to": "opn_tx_1_0"
-  },
-  {
-   "from": "opn_tx_1_0",
-   "to": "opn_tx_2_0"
-  },
-  {
-   "from": "mis_tx_0_0",
-   "to": "mis_tx_1_0"
   },
   {
    "from": "mol_tx_0_0",
@@ -1117,28 +744,12 @@
    "to": "pul_tx_2_0"
   },
   {
-   "from": "pul_tx_2_0",
-   "to": "pul_tx_3_0"
-  },
-  {
-   "from": "pul_tx_3_0",
-   "to": "pul_tx_4_0"
-  },
-  {
    "from": "ect_tx_0_0",
    "to": "ect_tx_1_0"
   },
   {
    "from": "ect_tx_1_0",
    "to": "ect_tx_2_0"
-  },
-  {
-   "from": "ect_tx_2_0",
-   "to": "ect_tx_3_0"
-  },
-  {
-   "from": "ect_tx_3_0",
-   "to": "ect_tx_4_0"
   },
   {
    "from": "thr_head_0_0",
@@ -1150,20 +761,16 @@
   },
   {
    "from": "thr_inv_0_0",
-   "to": "thr_path_0_0"
-  },
-  {
-   "from": "thr_path_1_0",
    "to": "thr_tx_0_0"
   },
   {
    "from": "g_sa",
    "to": "thr_head_0_0",
-   "from_dx": -208,
+   "from_dx": -226,
    "label": "os CLOSED, heart +",
    "label_at": [
-    143.0,
-    382
+    152.0,
+    256
    ]
   },
   {
@@ -1171,15 +778,11 @@
    "to": "opn_pres_0_0"
   },
   {
-   "from": "opn_pres_2_0",
+   "from": "opn_pres_0_0",
    "to": "opn_inv_0_0"
   },
   {
-   "from": "opn_inv_0_0",
-   "to": "opn_path_0_0"
-  },
-  {
-   "from": "opn_path_0_0",
+   "from": "opn_inv_1_0",
    "to": "opn_tx_0_0"
   },
   {
@@ -1188,8 +791,8 @@
    "from_dx": 0,
    "label": "os OPEN",
    "label_at": [
-    351.0,
-    382
+    378.0,
+    256
    ]
   },
   {
@@ -1202,20 +805,16 @@
   },
   {
    "from": "mis_inv_1_0",
-   "to": "mis_path_0_0"
-  },
-  {
-   "from": "mis_path_0_0",
    "to": "mis_tx_0_0"
   },
   {
    "from": "g_sa",
    "to": "mis_head_0_0",
-   "from_dx": 208,
+   "from_dx": 226,
    "label": "os CLOSED, heart −",
    "label_at": [
-    559.0,
-    382
+    604.0,
+    256
    ]
   },
   {
@@ -1223,26 +822,17 @@
    "to": "mol_pres_0_0"
   },
   {
-   "from": "mol_pres_1_0",
+   "from": "mol_pres_0_0",
    "to": "mol_inv_0_0"
   },
   {
    "from": "mol_inv_1_0",
-   "to": "mol_path_0_0"
-  },
-  {
-   "from": "mol_path_1_0",
    "to": "mol_tx_0_0"
   },
   {
    "from": "g_gtd",
    "to": "mol_head_0_0",
-   "from_dx": 0,
-   "label": "snow storm / cysts",
-   "label_at": [
-    795.0,
-    382
-   ]
+   "from_dx": 0
   },
   {
    "from": "pul_head_0_0",
@@ -1253,21 +843,17 @@
    "to": "pul_inv_0_0"
   },
   {
-   "from": "pul_inv_2_0",
-   "to": "pul_path_0_0"
-  },
-  {
-   "from": "pul_path_1_0",
+   "from": "pul_inv_1_0",
    "to": "pul_tx_0_0"
   },
   {
    "from": "g_out",
    "to": "pul_head_0_0",
-   "from_dx": -104,
+   "from_dx": -113,
    "label": "nothing seen",
    "label_at": [
-    1031.0,
-    382
+    1112.0,
+    256
    ]
   },
   {
@@ -1279,65 +865,41 @@
    "to": "ect_inv_0_0"
   },
   {
-   "from": "ect_inv_2_0",
-   "to": "ect_path_0_0"
-  },
-  {
-   "from": "ect_path_2_0",
+   "from": "ect_inv_1_0",
    "to": "ect_tx_0_0"
   },
   {
    "from": "g_out",
    "to": "ect_head_0_0",
-   "from_dx": 104,
+   "from_dx": 113,
    "label": "adnexal mass",
    "label_at": [
-    1239.0,
-    382
+    1338.0,
+    256
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 3846,
-   "w": 421,
-   "title": "Managing a miscarriage (inevitable, incomplete, missed)",
+   "y": 1350,
+   "w": 693,
+   "title": "Managing a miscarriage: her choice",
    "items": [
-    "EXPECTANT, up to 13+6: 4 weeks is safe, most complete by 2 · success 76% missed, 91% incomplete",
-    "MEDICAL, up to 12+6:",
-    "mifepristone 200 mg by mouth, then misoprostol 800 mcg vaginally: expulsion 84–93%, 8.8% need D&C · in Canada approved for therapeutic abortion only · $$$",
-    "misoprostol (prostaglandin E1) alone: 800 mcg vaginally, or 600–800 mcg under the tongue or vaginally, up to 3 doses ≥ 3 h apart: expulsion 67–76%, 23.5% need D&C · THE ONE INDICATED for miscarriage in Canada · $",
-    "both: same side effects (bleeding, nausea, diarrhea, fever, pain) · no prophylactic antibiotics",
-    "SURGICAL, D&C ± suction: 95–100% successful · serious morbidity 1% · consider doxycycline 100 mg by mouth every 12 h × 2"
+    "EXPECTANT up to 13+6 weeks: most complete within 2 weeks",
+    "MEDICAL up to 12+6: misoprostol 800 mcg vaginally (the one indicated for miscarriage in Canada) · mifepristone first raises success but is approved for abortion only",
+    "SURGICAL: D&C, 95–100% successful"
    ],
    "cols": 1
   },
   {
-   "x": 480,
-   "y": 3846,
-   "w": 421,
-   "title": "Why miscarriages happen",
+   "x": 752,
+   "y": 1350,
+   "w": 693,
+   "title": "What to tell her",
    "items": [
-    "ABNORMAL karyotype ~50% (the #1 known cause): trisomy 16 commonest, always lethal (also 13, 18, 21, 22) · XO the commonest isolated aneuploidy · parental Robertsonian translocation → repeated losses",
-    "NORMAL karyotype 45–55%, maternal: infection (uncommon: chlamydia, mycoplasma, ureaplasma, HIV, syphilis, bacterial vaginosis, TORCH: toxoplasmosis, other, rubella, cytomegalovirus, herpes) · chronic disease (tuberculosis, carcinomatosis, celiac) · hypothyroid (severe iodine deficiency), type 1 diabetes · rarely nutrition",
-    "smoking, caffeine > 5 cups/day, alcohol, radiation > 5 rads, chemotherapy, IUD, arsenic, lead, formaldehyde, benzene · inherited thrombophilia",
-    "uterine: fibroids, adhesions (Asherman), septum, unicornuate, polyps · trauma minimal · oophorectomy < 10 wk → progesterone to 10 wk",
-    "incompetent cervix (cervical trauma, abnormal development) → cerclage: elective 12–16 wk, rescue < 23 wk",
-    "RECURRENT = ≥ 3: work-up + medical genetics"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 916,
-   "y": 3846,
-   "w": 421,
-   "title": "Words and pointers",
-   "items": [
-    "VIABLE: could result in a live birth · NON-VIABLE: cannot (failing IUP or ectopic)",
-    "INDETERMINATE VIABILITY: IUP not yet meeting viability criteria · PUL: positive test, nothing seen",
-    "β-hCG: made by the syncytiotrophoblast · positive 21–22 days after the last period (8 after ovulation) · serum negative < 5 · urine positive ~10 days after conception · ~100 at the missed period, ~1000 at 6 wk, peaks ~100,000 at 10 wk",
-    "when the sac, yolk sac and heartbeat should appear, and dating: see the ULTRASOUND THROUGH PREGNANCY chart"
+    "about half of miscarriages are chromosomal: trisomy 16 commonest",
+    "3 or more losses → work-up + medical genetics"
    ],
    "cols": 1
   }
