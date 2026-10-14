@@ -1,82 +1,739 @@
-{"name": "disorders of sexual differentiation overview",
+{
+ "name": "disorders of sexual differentiation overview",
  "title": "Disorders of sexual differentiation pathway: the newborn with ambiguous genitalia is karyotyped first; 46,XY under-virilisation splits into 5-alpha-reductase deficiency, incomplete androgen insensitivity and testis or androgen-synthesis failure, and 46,XX virilisation into salt-wasting and simple virilising 21-hydroxylase deficiency and other sources of fetal androgen, with assessment, management at birth, sex chromosome DSD and non-classic CAH along the bottom",
- "root": {"title": "Newborn with ambiguous genitalia: KARYOTYPE first",
-  "lines": ["disorder of sexual development (DSD) = discrepancy between karyotype, gonads, internal and external genitalia · 1 in 4,500 births",
-            "karyotype + pelvic/abdominal ultrasound in every case, then labs by your differential",
-            "~not always ambiguous genitalia: may present as abnormal puberty · gender identity, expression and sexual orientation are out of scope"]},
+ "root": {
+  "title": "Newborn with ambiguous genitalia: KARYOTYPE first",
+  "lines": [
+   "disorder of sexual development (DSD) = discrepancy between karyotype, gonads, internal and external genitalia · 1 in 4,500 births",
+   "karyotype + pelvic/abdominal ultrasound in every case, then labs by your differential",
+   "~not always ambiguous genitalia: may present as abnormal puberty · gender identity, expression and sexual orientation are out of scope"
+  ]
+ },
  "groups": [
-  {"id": "g1", "cols": [0, 2], "title": "46,XY DSD: under-virilised", "lines": ["gonads: TESTES · external genitalia incompletely virilised"]},
-  {"id": "g2", "cols": [3, 5], "title": "46,XX DSD: virilised", "lines": ["gonads: OVARIES · external genitalia virilised by increased fetal androgen"]}],
+  {
+   "id": "g1",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "46,XY DSD: under-virilised",
+   "lines": [
+    "gonads: TESTES · external genitalia incompletely virilised"
+   ]
+  },
+  {
+   "id": "g2",
+   "cols": [
+    3,
+    5
+   ],
+   "title": "46,XX DSD: virilised",
+   "lines": [
+    "gonads: OVARIES · external genitalia virilised by increased fetal androgen"
+   ]
+  }
+ ],
  "tiers": [
-  {"id": "t1", "cols": [0, 2], "title": "Which step fails?", "lines": ["testis → testosterone → dihydrotestosterone (DHT) by 5-alpha-reductase → androgen receptor"]},
-  {"id": "t2", "cols": [3, 4], "title": "Congenital adrenal hyperplasia (CAH): 21-hydroxylase deficiency", "lines": ["autosomal recessive · CYP21A2 on chromosome 6 · CAH 1 in 10,000 births", "21-hydroxylase ≈95% of CAH · 11β-hydroxylase 5% · 3β-hydroxysteroid dehydrogenase (3β-HSD) 1%", "how much enzyme activity is left?"]}],
- "sections": ["head", "pres", "inv", "cause", "tx"],
- "row_names": {"pres": "PRESENTS AS", "inv": "INVESTIGATIONS", "cause": "CAUSE & MECHANISM", "tx": "TREATMENT & OUTCOME"},
- "dashed_sections": ["pres", "cause"],
+  {
+   "id": "t1",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "Which step fails?",
+   "lines": [
+    "testis → testosterone → dihydrotestosterone (DHT) by 5-alpha-reductase → androgen receptor"
+   ]
+  },
+  {
+   "id": "t2",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "Congenital adrenal hyperplasia (CAH): 21-hydroxylase deficiency",
+   "lines": [
+    "• autosomal recessive",
+    "• CYP21A2 on chromosome 6",
+    "• CAH 1 in 10,000 births",
+    "• 21-hydroxylase ≈95% of CAH",
+    "• 11β-hydroxylase 5%",
+    "• 3β-hydroxysteroid dehydrogenase (3β-HSD) 1%",
+    "• how much enzyme activity is left?"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "cause",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "cause": "CAUSE & MECHANISM",
+  "tx": "TREATMENT & OUTCOME"
+ },
+ "dashed_sections": [
+  "pres",
+  "cause"
+ ],
  "columns": [
-  {"id": "srd", "colour": "teal", "drop_from": "t1", "drop_label": "testosterone → DHT",
-   "head": [[["h", "5-alpha-reductase deficiency", ["testosterone cannot become DHT"]]]],
-   "pres": [[["t", "At birth", ["external genitalia AMBIGUOUS", "testes: abdominal, inguinal or labioscrotal"]]],
-            [["w", "At puberty", ["INCOMPLETE virilisation · sparse facial and pubic hair · NO temporal recession or acne"]]]],
-   "inv": [[["t", "1 · Karyotype 46,XY", ["+ pelvic/abdominal ultrasound"]]],
-           [["t", "2 · hCG STIMULATION test", ["human chorionic gonadotropin (hCG) given, then testosterone:DHT (T:DHT) ratio", "T:DHT HIGH = diagnosis"]]]],
-   "cause": [[["t", "Autosomal recessive", ["impaired conversion of testosterone to DHT"]]]],
-   "tx": [[["w", "Gender outcome", ["60% assigned female (who virilise at puberty) identify as MALE", "100% assigned male identify as male"]]]]},
-  {"id": "ais", "colour": "purple", "drop_from": "t1", "drop_label": "receptor",
-   "head": [[["h", "Incomplete androgen insensitivity", ["androgen RECEPTOR only partly works"]]]],
-   "pres": [[["t", "At birth", ["external genitalia: ambiguous, micropenis or normal male", "internal: testes"]]],
-            [["w", "At puberty", ["INCOMPLETE virilisation · GYNAECOMASTIA · azoospermia"]]]],
-   "inv": [[["t", "1 · Karyotype 46,XY", ["+ pelvic/abdominal ultrasound"]]],
-           [["t", "2 · DNA analysis", ["makes the diagnosis"]]]],
-   "cause": [[["t", "X-linked recessive", ["partial androgen receptor defect"]]]],
-   "tx": [[["w", "Gender outcome", ["25% have gender dissatisfaction, assigned male or female", "~complete androgen insensitivity: 100% assigned female identify as female"]]]]},
-  {"id": "oxy", "colour": "slate", "drop_from": "t1", "drop_label": "testis or synthesis",
-   "head": [[["h", "Testis or androgen-synthesis failure", ["the other 46,XY causes"]]]],
-   "pres": [[["t", "Under-virilised 46,XY", ["~the slides list these causes without separate features"]]]],
-   "inv": [[["t", "1 · Karyotype 46,XY", ["+ pelvic/abdominal ultrasound"]]],
-           [["w", "2 · Labs by your differential", []]]],
-   "cause": [[["t", "Testicular development", ["complete or partial GONADAL DYSGENESIS · testes regression"]]],
-             [["w", "Leydig cell hypoplasia", ["luteinizing hormone (LH) deficiency or LH receptor defect"]]],
-             [["w", "Testosterone biosynthesis", ["non-virilising CAH: 3β-HSD, 17,20-lyase, 17β-HSD"]]],
-             [["w", "Anti-Müllerian hormone (AMH)", ["deficient synthesis or action"]]]],
-   "tx": [[["w", "Gender outcome", ["biosynthetic defects, gonadal dysgenesis: 25% have gender dissatisfaction, assigned male or female"]]]]},
-  {"id": "sw", "colour": "orange", "drop_from": "t2", "drop_label": "< 1% left",
-   "head": [[["h", "Salt-wasting 21-hydroxylase deficiency", ["most severe · 75% of 21-hydroxylase deficiency"]]]],
-   "pres": [[["t", "Girls: VIRILISED", ["clitoral hypertrophy · variable labial fusion", "most severe: SINGLE urogenital opening"]]],
-            [["w", "Boys", ["enlarged penis, scrotal pigmentation"]]],
-            [["bad", "Salt-losing adrenal CRISIS at 1–3 weeks", ["neonatal DEATH if not recognised and treated"]]]],
-   "inv": [[["t", "1 · Karyotype 46,XX", ["+ pelvic/abdominal ultrasound"]]],
-           [["t", "2 · 17-hydroxyprogesterone HIGH", ["case: 400 (normal < 10)"]]],
-           [["w", "3 · Na ↓ · K ↑", ["metabolic acidosis"]], ["w", "Low glucose", ["in a salt-losing crisis"]]]],
-   "cause": [[["t", "2 SEVERE CYP21A2 mutations", ["< 1% of normal 21-hydroxylase activity"]]],
-             [["w", "Cortisol ↓ → ACTH ↑", ["adrenocorticotropic hormone (ACTH) excess → adrenal cortex HYPERPLASIA"]]],
-             [["w", "Hormones", ["glucocorticoid ↓ · mineralocorticoid ↓ (salt wasting) · androgen EXCESS"]]]],
-   "tx": [[["ok", "Steroids for LIFE", ["hydrocortisone 10–15 mg/m²/day, twice or three times daily", "+ fludrocortisone (Florinef) 0.05–0.20 mg daily", "+ extra oral saline may be needed in infants"]]],
-          [["warn", "Prevent adrenal crisis", ["MORE glucocorticoid in illness or stress, to prevent a salt-losing crisis"]]],
-          [["w", "Long-term care", ["genital surgery · education and surveillance", "~90% of 46,XX CAH assigned female identify as female"]]]]},
-  {"id": "sv", "colour": "magenta", "drop_from": "t2", "drop_label": "1–5% left",
-   "head": [[["h", "Simple virilising 21-hydroxylase deficiency", ["1 of the 2 mutations is relatively mild"]]]],
-   "pres": [[["t", "Girls: VIRILISED", ["clitoral hypertrophy · variable labial fusion", "most severe: SINGLE urogenital opening"]]],
-            [["w", "Boys", ["enlarged penis, scrotal pigmentation"]]],
-            [["w", "No significant salt loss", ["~plasma renin may be raised"]]]],
-   "inv": [[["t", "1 · Karyotype 46,XX", ["+ pelvic/abdominal ultrasound"]]],
-           [["t", "2 · 17-hydroxyprogesterone HIGH", ["the CAH marker"]]]],
-   "cause": [[["t", "1–5% activity preserved", ["of normal 21-hydroxylase"]]],
-             [["w", "Hormones", ["cortisol ↓ · androgen EXCESS · significant salt loss does not occur"]]]],
-   "tx": [[["ok", "Steroids for LIFE", ["glucocorticoid: hydrocortisone 10–15 mg/m²/day", "~prednisone or dexamethasone in older adolescents", "+ mineralocorticoid (fludrocortisone)"]]],
-          [["warn", "Stress dosing", ["more glucocorticoid in illness or stress"]]],
-          [["w", "Gender outcome", ["markedly virilised 46,XX CAH: raise as female, as recommended", "90% assigned female identify as female"]]]]},
-  {"id": "oxx", "colour": "olive", "drop_label": "not CAH",
-   "head": [[["h", "Other sources of fetal androgen", ["46,XX without CAH"]]]],
-   "pres": [[["t", "Virilised 46,XX", ["~the slides list these causes without separate features"]]]],
-   "inv": [[["t", "1 · Karyotype 46,XX", ["+ pelvic/abdominal ultrasound"]]],
-           [["w", "2 · Labs by your differential", []]]],
-   "cause": [[["t", "Androgen-secreting TUMOUR", ["from the ovaries or adrenals"]]],
-             [["w", "Transplacental maternal androgen", ["maternal virilising tumour · androgenic drugs"]]]],
-   "tx": [[["w", "Ask in the history", ["pregnancy: maternal medications and health"]]]]}],
+  {
+   "id": "srd",
+   "colour": "teal",
+   "drop_from": "t1",
+   "drop_label": "testosterone → DHT",
+   "head": [
+    [
+     [
+      "h",
+      "5-alpha-reductase deficiency",
+      [
+       "testosterone cannot become DHT"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "At birth",
+      [
+       "• external genitalia AMBIGUOUS",
+       "• testes: abdominal, inguinal or labioscrotal"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "At puberty",
+      [
+       "• INCOMPLETE virilisation",
+       "• sparse facial and pubic hair",
+       "• NO temporal recession or acne"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Karyotype 46,XY",
+      [
+       "+ pelvic/abdominal ultrasound"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · hCG STIMULATION test",
+      [
+       "• human chorionic gonadotropin (hCG) given, then testosterone:DHT (T:DHT) ratio",
+       "• T:DHT HIGH = diagnosis"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Autosomal recessive",
+      [
+       "impaired conversion of testosterone to DHT"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "Gender outcome",
+      [
+       "• 60% assigned female (who virilise at puberty) identify as MALE",
+       "• 100% assigned male identify as male"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ais",
+   "colour": "purple",
+   "drop_from": "t1",
+   "drop_label": "receptor",
+   "head": [
+    [
+     [
+      "h",
+      "Incomplete androgen insensitivity",
+      [
+       "androgen RECEPTOR only partly works"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "At birth",
+      [
+       "• external genitalia: ambiguous, micropenis or normal male",
+       "• internal: testes"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "At puberty",
+      [
+       "• INCOMPLETE virilisation",
+       "• GYNAECOMASTIA",
+       "• azoospermia"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Karyotype 46,XY",
+      [
+       "+ pelvic/abdominal ultrasound"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · DNA analysis",
+      [
+       "makes the diagnosis"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "X-linked recessive",
+      [
+       "partial androgen receptor defect"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "Gender outcome",
+      [
+       "• 25% have gender dissatisfaction, assigned male or female",
+       "~• complete androgen insensitivity: 100% assigned female identify as female"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "oxy",
+   "colour": "slate",
+   "drop_from": "t1",
+   "drop_label": "testis or synthesis",
+   "head": [
+    [
+     [
+      "h",
+      "Testis or androgen-synthesis failure",
+      [
+       "the other 46,XY causes"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Under-virilised 46,XY",
+      [
+       "~the slides list these causes without separate features"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Karyotype 46,XY",
+      [
+       "+ pelvic/abdominal ultrasound"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Labs by your differential",
+      []
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Testicular development",
+      [
+       "• complete or partial GONADAL DYSGENESIS",
+       "• testes regression"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Leydig cell hypoplasia",
+      [
+       "luteinizing hormone (LH) deficiency or LH receptor defect"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Testosterone biosynthesis",
+      [
+       "non-virilising CAH: 3β-HSD, 17,20-lyase, 17β-HSD"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Anti-Müllerian hormone (AMH)",
+      [
+       "deficient synthesis or action"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "Gender outcome",
+      [
+       "biosynthetic defects, gonadal dysgenesis: 25% have gender dissatisfaction, assigned male or female"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sw",
+   "colour": "orange",
+   "drop_from": "t2",
+   "drop_label": "< 1% left",
+   "head": [
+    [
+     [
+      "h",
+      "Salt-wasting 21-hydroxylase deficiency",
+      [
+       "most severe · 75% of 21-hydroxylase deficiency"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Girls: VIRILISED",
+      [
+       "• clitoral hypertrophy",
+       "• variable labial fusion",
+       "• most severe: SINGLE urogenital opening"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Boys",
+      [
+       "enlarged penis, scrotal pigmentation"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Salt-losing adrenal CRISIS at 1–3 weeks",
+      [
+       "neonatal DEATH if not recognised and treated"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Karyotype 46,XX",
+      [
+       "+ pelvic/abdominal ultrasound"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · 17-hydroxyprogesterone HIGH",
+      [
+       "case: 400 (normal < 10)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Na ↓ · K ↑",
+      [
+       "metabolic acidosis"
+      ]
+     ],
+     [
+      "w",
+      "Low glucose",
+      [
+       "in a salt-losing crisis"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "2 SEVERE CYP21A2 mutations",
+      [
+       "< 1% of normal 21-hydroxylase activity"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Cortisol ↓ → ACTH ↑",
+      [
+       "adrenocorticotropic hormone (ACTH) excess → adrenal cortex HYPERPLASIA"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Hormones",
+      [
+       "• glucocorticoid ↓",
+       "• mineralocorticoid ↓ (salt wasting)",
+       "• androgen EXCESS"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Steroids for LIFE",
+      [
+       "• hydrocortisone 10–15 mg/m²/day, twice or three times daily",
+       "• + fludrocortisone (Florinef) 0.05–0.20 mg daily",
+       "• + extra oral saline may be needed in infants"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Prevent adrenal crisis",
+      [
+       "MORE glucocorticoid in illness or stress, to prevent a salt-losing crisis"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Long-term care",
+      [
+       "• genital surgery",
+       "• education and surveillance",
+       "~• 90% of 46,XX CAH assigned female identify as female"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sv",
+   "colour": "magenta",
+   "drop_from": "t2",
+   "drop_label": "1–5% left",
+   "head": [
+    [
+     [
+      "h",
+      "Simple virilising 21-hydroxylase deficiency",
+      [
+       "1 of the 2 mutations is relatively mild"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Girls: VIRILISED",
+      [
+       "• clitoral hypertrophy",
+       "• variable labial fusion",
+       "• most severe: SINGLE urogenital opening"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Boys",
+      [
+       "enlarged penis, scrotal pigmentation"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "No significant salt loss",
+      [
+       "~plasma renin may be raised"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Karyotype 46,XX",
+      [
+       "+ pelvic/abdominal ultrasound"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · 17-hydroxyprogesterone HIGH",
+      [
+       "the CAH marker"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "1–5% activity preserved",
+      [
+       "of normal 21-hydroxylase"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Hormones",
+      [
+       "• cortisol ↓",
+       "• androgen EXCESS",
+       "• significant salt loss does not occur"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Steroids for LIFE",
+      [
+       "• glucocorticoid: hydrocortisone 10–15 mg/m²/day",
+       "~• prednisone or dexamethasone in older adolescents",
+       "• + mineralocorticoid (fludrocortisone)"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Stress dosing",
+      [
+       "more glucocorticoid in illness or stress"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Gender outcome",
+      [
+       "• markedly virilised 46,XX CAH: raise as female, as recommended",
+       "• 90% assigned female identify as female"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "oxx",
+   "colour": "olive",
+   "drop_label": "not CAH",
+   "head": [
+    [
+     [
+      "h",
+      "Other sources of fetal androgen",
+      [
+       "46,XX without CAH"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Virilised 46,XX",
+      [
+       "~the slides list these causes without separate features"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Karyotype 46,XX",
+      [
+       "+ pelvic/abdominal ultrasound"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Labs by your differential",
+      []
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Androgen-secreting TUMOUR",
+      [
+       "from the ovaries or adrenals"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Transplacental maternal androgen",
+      [
+       "• maternal virilising tumour",
+       "• androgenic drugs"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "Ask in the history",
+      [
+       "pregnancy: maternal medications and health"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
  "panels": [
-  {"title": "Normal sexual differentiation", "items": ["SRY gene → testes", "Sertoli and Leydig cells", "testosterone → DHT by 5-alpha-reductase", "46,XX needed for normal ovarian development"]},
-  {"title": "Assess the newborn", "items": ["HISTORY: family history of ambiguous genitalia or virilisation · pregnancy: maternal medications and health · neonatal crises", "EXAM: general · dysmorphic features · PALPATE the gonads", "DESCRIBE + DRAW: labioscrotal folds (appearance, open or fused) · phallus length and width · urogenital openings: number, position, size", "NEUTRAL terms: gonads, phallus, labio-scrotal folds"]},
-  {"title": "Management at birth", "items": ["REFER to a tertiary centre: endocrinology, neonatology, genetics, gynaecology, urology, social work/psychology", "DELAY sex of rearing until all investigations are complete · do NOT assign a name · do NOT register the birth", "sex assignment does NOT inevitably mean surgery · evidence lacking · individual consideration · expert surgeons only", "weigh: diagnosis · genital appearance, surgical options · lifelong replacement · fertility · family views, culture"]},
-  {"title": "Sex chromosome DSD", "items": ["OVOTESTICULAR DSD: chromosomes variable, gonads mixed", "MIXED GONADAL DYSGENESIS: 45,X/46,XY"]},
-  {"title": "Non-classic (late-onset) CAH", "items": ["mild 21-hydroxylase mutation", "prepubertal: premature pubarche", "pubertal: hirsutism, acne, oligomenorrhoea"]}]}
+  {
+   "title": "Normal sexual differentiation",
+   "items": [
+    "SRY gene → testes",
+    "Sertoli and Leydig cells",
+    "testosterone → DHT by 5-alpha-reductase",
+    "46,XX needed for normal ovarian development"
+   ]
+  },
+  {
+   "title": "Assess the newborn",
+   "items": [
+    "HISTORY: family history of ambiguous genitalia or virilisation · pregnancy: maternal medications and health · neonatal crises",
+    "EXAM: general · dysmorphic features · PALPATE the gonads",
+    "DESCRIBE + DRAW: labioscrotal folds (appearance, open or fused) · phallus length and width · urogenital openings: number, position, size",
+    "NEUTRAL terms: gonads, phallus, labio-scrotal folds"
+   ]
+  },
+  {
+   "title": "Management at birth",
+   "items": [
+    "REFER to a tertiary centre: endocrinology, neonatology, genetics, gynaecology, urology, social work/psychology",
+    "DELAY sex of rearing until all investigations are complete · do NOT assign a name · do NOT register the birth",
+    "sex assignment does NOT inevitably mean surgery · evidence lacking · individual consideration · expert surgeons only",
+    "weigh: diagnosis · genital appearance, surgical options · lifelong replacement · fertility · family views, culture"
+   ]
+  },
+  {
+   "title": "Sex chromosome DSD",
+   "items": [
+    "OVOTESTICULAR DSD: chromosomes variable, gonads mixed",
+    "MIXED GONADAL DYSGENESIS: 45,X/46,XY"
+   ]
+  },
+  {
+   "title": "Non-classic (late-onset) CAH",
+   "items": [
+    "mild 21-hydroxylase mutation",
+    "prepubertal: premature pubarche",
+    "pubertal: hirsutism, acne, oligomenorrhoea"
+   ]
+  }
+ ]
+}

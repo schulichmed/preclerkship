@@ -91,7 +91,7 @@ b_bot = node("block", C - 230, b_y, 460, "ok", "1 · PUBERTY BLOCKERS: FULLY rev
               "criteria: long-lasting nonconformity or dysphoria · WORSENED with puberty · other problems addressed · informed consent",
               "slows growth, breast or testicular/penile growth, periods, androgen-dependent hair, voice deepening",
               "improves behaviour, emotional + depressive symptoms",
-              "~gonadotropin-releasing hormone (GnRH) agonist, e.g. leuprolide †"])
+              "~gonadotropin-releasing hormone (GnRH) agonist, e.g. leuprolide"])
 down("tanner", "block", "yes")
 node("fert", 760, b_y, 225, "warn", "FERTILITY: discuss BEFORE hormones",
      ["oocyte preservation: EXPENSIVE, no provincial plan covers it · may be traumatizing · must be OFF hormones with 1–2 normal periods"])

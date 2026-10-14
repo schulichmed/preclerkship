@@ -135,7 +135,7 @@
    "x": 40,
    "y": 344,
    "w": 232,
-   "h": 1006,
+   "h": 1114,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
@@ -143,7 +143,7 @@
    "x": 274,
    "y": 344,
    "w": 232,
-   "h": 1006,
+   "h": 1114,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -151,7 +151,7 @@
    "x": 508,
    "y": 344,
    "w": 232,
-   "h": 1006,
+   "h": 1114,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -159,7 +159,7 @@
    "x": 742,
    "y": 344,
    "w": 232,
-   "h": 1006,
+   "h": 1114,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -167,7 +167,7 @@
    "x": 1004,
    "y": 344,
    "w": 232,
-   "h": 1006,
+   "h": 1114,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -175,7 +175,7 @@
    "x": 1238,
    "y": 344,
    "w": 232,
-   "h": 1006,
+   "h": 1114,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
@@ -183,7 +183,7 @@
    "x": 1500,
    "y": 344,
    "w": 232,
-   "h": 1006,
+   "h": 1114,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   }
@@ -192,19 +192,19 @@
   {
    "x": 23,
    "y": 490,
-   "h": 116,
+   "h": 170,
    "text": "DEFINED BY"
   },
   {
    "x": 23,
-   "y": 646,
-   "h": 318,
+   "y": 700,
+   "h": 336,
    "text": "CHECK"
   },
   {
    "x": 23,
-   "y": 1004,
-   "h": 338,
+   "y": 1076,
+   "h": 374,
    "text": "TREATMENT"
   }
  ],
@@ -343,7 +343,7 @@
    "x": 45,
    "y": 490,
    "w": 222,
-   "h": 116,
+   "h": 170,
    "kind": "pe_t",
    "title": "Cycles SHORTEN, LENGTHEN, then CEASE",
    "lines": [
@@ -355,7 +355,7 @@
    "x": 279,
    "y": 490,
    "w": 222,
-   "h": 116,
+   "h": 170,
    "kind": "me_t",
    "title": "AMENORRHEA × 12 MONTHS",
    "lines": []
@@ -365,12 +365,16 @@
    "x": 513,
    "y": 490,
    "w": 222,
-   "h": 116,
+   "h": 170,
    "kind": "ea_t",
    "title": "Menopause before 45 = ↑ RISK",
    "lines": [
-    "coronary heart disease · stroke · cardiovascular + all-cause death",
-    "cognition · quality of life · bone"
+    "• coronary heart disease",
+    "• stroke",
+    "• cardiovascular + all-cause death",
+    "• cognition",
+    "• quality of life",
+    "• bone"
    ]
   },
   {
@@ -378,12 +382,12 @@
    "x": 747,
    "y": 490,
    "w": 222,
-   "h": 116,
+   "h": 170,
    "kind": "po_t",
    "title": "BOTH",
    "lines": [
-    "disordered menses ≥ 4 months",
-    "FSH > 25 IU/L"
+    "• disordered menses ≥ 4 months",
+    "• FSH > 25 IU/L"
    ]
   },
   {
@@ -391,11 +395,12 @@
    "x": 1009,
    "y": 490,
    "w": 222,
-   "h": 116,
+   "h": 170,
    "kind": "my_t",
    "title": "Has she a UTERUS?",
    "lines": [
-    "yes → add PROGESTERONE · no → estrogen alone"
+    "• yes → add PROGESTERONE",
+    "• no → estrogen alone"
    ]
   },
   {
@@ -403,11 +408,13 @@
    "x": 1243,
    "y": 490,
    "w": 222,
-   "h": 116,
+   "h": 170,
    "kind": "mn_t",
    "title": "Not safe to start MHT",
    "lines": [
-    "a contraindication · or ≥ 60 · or ≥ 10 years post menopause"
+    "• a contraindication",
+    "• or ≥ 60",
+    "• or ≥ 10 years post menopause"
    ]
   },
   {
@@ -415,19 +422,21 @@
    "x": 1505,
    "y": 490,
    "w": 222,
-   "h": 116,
+   "h": 170,
    "kind": "gs_t",
    "title": "Symptoms, any mix",
    "lines": [
-    "dryness, burning · dyspareunia, ↓ libido · urgency, dysuria, recurrent urinary tract infection"
+    "• dryness, burning",
+    "• dyspareunia, ↓ libido",
+    "• urgency, dysuria, recurrent urinary tract infection"
    ]
   },
   {
    "id": "pe_inv_0_0",
    "x": 45,
-   "y": 646,
+   "y": 700,
    "w": 222,
-   "h": 129,
+   "h": 138,
    "kind": "pe_w",
    "title": "1 · Early transition",
    "lines": [
@@ -437,21 +446,22 @@
   {
    "id": "pe_inv_1_0",
    "x": 45,
-   "y": 797,
+   "y": 860,
    "w": 222,
-   "h": 167,
+   "h": 176,
    "kind": "pe_w",
    "title": "2 · Late transition: 1–3 years",
    "lines": [
-    "no period for ≥ 60 days · follicle-stimulating hormone (FSH) > 25 IU/L"
+    "• no period for ≥ 60 days",
+    "• follicle-stimulating hormone (FSH) > 25 IU/L"
    ]
   },
   {
    "id": "me_inv_0_0",
    "x": 279,
-   "y": 646,
+   "y": 700,
    "w": 222,
-   "h": 148,
+   "h": 157,
    "kind": "me_w",
    "title": "Early postmenopause",
    "lines": [
@@ -461,9 +471,9 @@
   {
    "id": "me_inv_1_0",
    "x": 279,
-   "y": 816,
+   "y": 879,
    "w": 222,
-   "h": 148,
+   "h": 157,
    "kind": "me_w",
    "title": "Late postmenopause",
    "lines": [
@@ -473,9 +483,9 @@
   {
    "id": "ea_inv_0_0",
    "x": 513,
-   "y": 646,
+   "y": 700,
    "w": 222,
-   "h": 318,
+   "h": 336,
    "kind": "ea_w",
    "title": "Same cut-off, earlier",
    "lines": [
@@ -485,7 +495,7 @@
   {
    "id": "po_inv_0_0",
    "x": 747,
-   "y": 646,
+   "y": 700,
    "w": 222,
    "h": 80,
    "kind": "po_w",
@@ -497,7 +507,7 @@
   {
    "id": "po_inv_1_0",
    "x": 747,
-   "y": 748,
+   "y": 802,
    "w": 222,
    "h": 80,
    "kind": "po_w",
@@ -509,72 +519,82 @@
   {
    "id": "po_inv_2_0",
    "x": 747,
-   "y": 850,
+   "y": 904,
    "w": 222,
-   "h": 114,
+   "h": 132,
    "kind": "po_w",
    "title": "3 · Autoimmune screen",
    "lines": [
-    "21-hydroxylase antibodies · thyroid-stimulating hormone (TSH)",
-    "abnormal → autoimmune · all normal → idiopathic"
+    "• 21-hydroxylase antibodies",
+    "• thyroid-stimulating hormone (TSH)",
+    "• abnormal → autoimmune",
+    "• all normal → idiopathic"
    ]
   },
   {
    "id": "my_inv_0_0",
    "x": 1009,
-   "y": 646,
+   "y": 700,
    "w": 222,
-   "h": 318,
+   "h": 336,
    "kind": "my_w",
    "title": "Pick the route",
    "lines": [
-    "estrogen: pill · patch or gel",
-    "progesterone: pill · intrauterine device (IUD), 5 years",
-    "combined: pill · patch"
+    "• estrogen: pill, patch or gel",
+    "• progesterone: pill, intrauterine device (IUD), 5 years",
+    "• combined: pill, patch"
    ]
   },
   {
    "id": "mn_inv_0_0",
    "x": 1243,
-   "y": 646,
+   "y": 700,
    "w": 222,
-   "h": 140,
+   "h": 131,
    "kind": "mn_w",
    "title": "No estrogen OR progestogen",
    "lines": [
-    "undiagnosed vaginal bleeding · breast cancer, ever"
+    "• undiagnosed vaginal bleeding",
+    "• breast cancer, ever"
    ]
   },
   {
    "id": "mn_inv_1_0",
    "x": 1243,
-   "y": 808,
+   "y": 853,
    "w": 222,
-   "h": 156,
+   "h": 183,
    "kind": "mn_w",
    "title": "No estrogen",
    "lines": [
-    "estrogen-dependent cancer · heart disease · clot or stroke, EVER · thrombophilia · liver disease · pregnancy"
+    "• estrogen-dependent cancer",
+    "• heart disease",
+    "• clot or stroke, EVER",
+    "• thrombophilia",
+    "• liver disease",
+    "• pregnancy"
    ]
   },
   {
    "id": "gs_inv_0_0",
    "x": 1505,
-   "y": 646,
+   "y": 700,
    "w": 222,
-   "h": 318,
+   "h": 336,
    "kind": "gs_w",
    "title": "Examine the VULVA",
    "lines": [
-    "rule out skin conditions · pale, thin · vaginal pH > 5.0"
+    "• rule out skin conditions",
+    "• pale, thin",
+    "• vaginal pH > 5.0"
    ]
   },
   {
    "id": "pe_tx_0_0",
    "x": 45,
-   "y": 1004,
+   "y": 1076,
    "w": 222,
-   "h": 338,
+   "h": 374,
    "kind": "warn",
    "title": "Irregular bleeding makes it HARD to treat",
    "lines": [
@@ -584,21 +604,22 @@
   {
    "id": "me_tx_0_0",
    "x": 279,
-   "y": 1004,
+   "y": 1076,
    "w": 222,
-   "h": 338,
+   "h": 374,
    "kind": "ok",
    "title": "Treat the symptom she wants treated",
    "lines": [
-    "hot flashes → MHT or non-hormonal · genitourinary → local"
+    "• hot flashes → MHT or non-hormonal",
+    "• genitourinary → local"
    ]
   },
   {
    "id": "ea_tx_0_0",
    "x": 513,
-   "y": 1004,
+   "y": 1076,
    "w": 222,
-   "h": 338,
+   "h": 374,
    "kind": "ok",
    "title": "MHT before 50",
    "lines": [
@@ -608,21 +629,22 @@
   {
    "id": "po_tx_0_0",
    "x": 747,
-   "y": 1004,
+   "y": 1076,
    "w": 222,
-   "h": 338,
+   "h": 374,
    "kind": "warn",
    "title": "Genetic cause",
    "lines": [
-    "genetic counselling · consider her RELATIVES"
+    "• genetic counselling",
+    "• consider her RELATIVES"
    ]
   },
   {
    "id": "my_tx_0_0",
    "x": 1009,
-   "y": 1004,
+   "y": 1076,
    "w": 222,
-   "h": 338,
+   "h": 374,
    "kind": "ok",
    "title": "Estrogen, + progesterone with a uterus",
    "lines": [
@@ -632,61 +654,68 @@
   {
    "id": "mn_tx_0_0",
    "x": 1243,
-   "y": 1004,
+   "y": 1076,
    "w": 222,
    "h": 116,
    "kind": "ok",
    "title": "Antidepressants: 27–61% fewer",
    "lines": [
-    "venlafaxine, desvenlafaxine · paroxetine, citalopram, escitalopram"
+    "• venlafaxine, desvenlafaxine",
+    "• paroxetine, citalopram, escitalopram"
    ]
   },
   {
    "id": "mn_tx_1_0",
    "x": 1243,
-   "y": 1142,
+   "y": 1214,
    "w": 222,
-   "h": 80,
+   "h": 98,
    "kind": "ok",
    "title": "Gabapentinoids: 45–71% fewer",
    "lines": [
-    "gabapentin · pregabalin"
+    "• gabapentin",
+    "• pregabalin"
    ]
   },
   {
    "id": "mn_tx_2_0",
    "x": 1243,
-   "y": 1244,
+   "y": 1334,
    "w": 222,
-   "h": 98,
+   "h": 116,
    "kind": "ok",
    "title": "Neurokinin receptor antagonists",
    "lines": [
-    "fezolinetant · elinzanetant: calm the hot-flash neurons"
+    "• fezolinetant",
+    "• elinzanetant: calm the hot-flash neurons"
    ]
   },
   {
    "id": "gs_tx_0_0",
    "x": 1505,
-   "y": 1004,
+   "y": 1076,
    "w": 222,
-   "h": 149,
+   "h": 185,
    "kind": "ok",
    "title": "1 · Lifestyle · lubricant · moisturizer",
    "lines": [
-    "avoid irritants · ↓ caffeine · regular sex · physiotherapy"
+    "• avoid irritants",
+    "• ↓ caffeine",
+    "• regular sex",
+    "• physiotherapy"
    ]
   },
   {
    "id": "gs_tx_1_0",
    "x": 1505,
-   "y": 1175,
+   "y": 1283,
    "w": 222,
    "h": 167,
    "kind": "ok",
    "title": "2 · ESTROGEN into the vagina",
    "lines": [
-    "or vaginal dehydroepiandrosterone (DHEA) · oral ospemifene"
+    "• or vaginal dehydroepiandrosterone (DHEA)",
+    "• oral ospemifene"
    ]
   }
  ],
@@ -896,7 +925,7 @@
  "panels": [
   {
    "x": 45,
-   "y": 1376,
+   "y": 1484,
    "w": 1682,
    "title": "Nutrition for every woman in menopause",
    "items": [

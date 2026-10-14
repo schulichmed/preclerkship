@@ -99,7 +99,7 @@
    "x": 40,
    "y": 388,
    "w": 246,
-   "h": 606,
+   "h": 640,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
@@ -107,7 +107,7 @@
    "x": 288,
    "y": 388,
    "w": 246,
-   "h": 606,
+   "h": 640,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -115,7 +115,7 @@
    "x": 536,
    "y": 388,
    "w": 246,
-   "h": 606,
+   "h": 640,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -123,7 +123,7 @@
    "x": 784,
    "y": 388,
    "w": 246,
-   "h": 606,
+   "h": 640,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
@@ -131,7 +131,7 @@
    "x": 1060,
    "y": 388,
    "w": 246,
-   "h": 606,
+   "h": 640,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   }
@@ -140,13 +140,13 @@
   {
    "x": 23,
    "y": 552,
-   "h": 216,
+   "h": 232,
    "text": "MEANS → FIRST STEP"
   },
   {
    "x": 23,
-   "y": 808,
-   "h": 178,
+   "y": 824,
+   "h": 196,
    "text": "THEN"
   }
  ],
@@ -286,7 +286,7 @@
    "x": 45,
    "y": 552,
    "w": 236,
-   "h": 96,
+   "h": 104,
    "kind": "neg_t",
    "title": "Very low risk",
    "lines": [
@@ -296,9 +296,9 @@
   {
    "id": "neg_first_1_0",
    "x": 45,
-   "y": 670,
+   "y": 678,
    "w": 236,
-   "h": 98,
+   "h": 106,
    "kind": "ok",
    "title": "RETURN TO SCREENING IN 5 YEARS",
    "lines": [
@@ -310,7 +310,7 @@
    "x": 293,
    "y": 552,
    "w": 236,
-   "h": 78,
+   "h": 86,
    "kind": "warn",
    "title": "Under- or never-screened?",
    "lines": [
@@ -320,15 +320,15 @@
   {
    "id": "low_first_1_0",
    "x": 293,
-   "y": 652,
+   "y": 660,
    "w": 236,
-   "h": 116,
+   "h": 124,
    "kind": "low_w",
    "title": "1 · Repeat HPV test in 1 YEAR",
    "lines": [
-    "negative → screen in 5 years",
-    "16/18 + → COLPOSCOPY",
-    "other high-risk + → step 2"
+    "• negative → screen in 5 years",
+    "• 16/18 + → COLPOSCOPY",
+    "• other high-risk + → step 2"
    ]
   },
   {
@@ -336,7 +336,7 @@
    "x": 541,
    "y": 552,
    "w": 236,
-   "h": 124,
+   "h": 132,
    "kind": "high_t",
    "title": "A possible precancer",
    "lines": [
@@ -346,9 +346,9 @@
   {
    "id": "high_first_1_0",
    "x": 541,
-   "y": 698,
+   "y": 706,
    "w": 236,
-   "h": 70,
+   "h": 78,
    "kind": "bad",
    "title": "Refer to COLPOSCOPY",
    "lines": []
@@ -358,7 +358,7 @@
    "x": 789,
    "y": 552,
    "w": 236,
-   "h": 88,
+   "h": 87,
    "kind": "h16_t",
    "title": "Highest risk",
    "lines": [
@@ -368,14 +368,14 @@
   {
    "id": "h16_first_1_0",
    "x": 789,
-   "y": 662,
+   "y": 661,
    "w": 236,
-   "h": 106,
+   "h": 123,
    "kind": "h16_w",
    "title": "By sample type",
    "lines": [
-    "provider-collected: reflex LBC, then colposcopy",
-    "self-collected: straight to colposcopy"
+    "• provider-collected: reflex LBC, then colposcopy",
+    "• self-collected: straight to colposcopy"
    ]
   },
   {
@@ -383,34 +383,36 @@
    "x": 1065,
    "y": 552,
    "w": 236,
-   "h": 97,
+   "h": 96,
    "kind": "vac_t",
    "title": "Gardasil 9",
    "lines": [
-    "16, 18, 6, 11 + 31, 33, 45, 52, 58",
-    "~Gardasil: 16, 18, 6, 11 · Cervarix: 16, 18"
+    "• 16, 18, 6, 11 + 31, 33, 45, 52, 58",
+    "~• Gardasil: 16, 18, 6, 11",
+    "~• Cervarix: 16, 18"
    ]
   },
   {
    "id": "vac_first_1_0",
    "x": 1065,
-   "y": 671,
+   "y": 670,
    "w": 236,
-   "h": 97,
+   "h": 114,
    "kind": "vac_w",
    "title": "Doses by age",
    "lines": [
-    "9–20: 1 dose · 21 and older: 2",
-    "IMMUNOCOMPROMISED: 3",
-    "offered to 45: still a benefit"
+    "• 9–20: 1 dose",
+    "• 21 and older: 2",
+    "• IMMUNOCOMPROMISED: 3",
+    "• offered to 45: still a benefit"
    ]
   },
   {
    "id": "neg_then_0_0",
    "x": 45,
-   "y": 808,
+   "y": 824,
    "w": 236,
-   "h": 178,
+   "h": 196,
    "kind": "neg_w",
    "title": "In 5 years",
    "lines": [
@@ -420,20 +422,20 @@
   {
    "id": "low_then_0_0",
    "x": 293,
-   "y": 808,
+   "y": 824,
    "w": 236,
-   "h": 78,
+   "h": 96,
    "kind": "low_w",
    "title": "2 · Reflex LBC again",
    "lines": [
-    "high-grade → COLPOSCOPY",
-    "low-grade → repeat HPV in 1 YEAR:"
+    "• high-grade → COLPOSCOPY",
+    "• low-grade → repeat HPV in 1 YEAR:"
    ]
   },
   {
    "id": "low_then_1_0",
    "x": 293.0,
-   "y": 908,
+   "y": 942,
    "w": 113.0,
    "h": 78,
    "kind": "ok",
@@ -445,7 +447,7 @@
   {
    "id": "low_then_1_1",
    "x": 416.0,
-   "y": 908,
+   "y": 942,
    "w": 113.0,
    "h": 78,
    "kind": "bad",
@@ -457,9 +459,9 @@
   {
    "id": "high_then_0_0",
    "x": 541,
-   "y": 808,
+   "y": 824,
    "w": 236,
-   "h": 178,
+   "h": 196,
    "kind": "ok",
    "title": "Precancer found → treated",
    "lines": [
@@ -469,9 +471,9 @@
   {
    "id": "h16_then_0_0",
    "x": 789,
-   "y": 808,
+   "y": 824,
    "w": 236,
-   "h": 178,
+   "h": 196,
    "kind": "bad",
    "title": "Refer to COLPOSCOPY",
    "lines": []
@@ -479,14 +481,14 @@
   {
    "id": "vac_then_0_0",
    "x": 1065,
-   "y": 808,
+   "y": 824,
    "w": 236,
-   "h": 178,
+   "h": 196,
    "kind": "bad",
    "title": "STILL SCREEN",
    "lines": [
-    "vaccination does NOT replace screening",
-    "from ≈ 25, vaccinated or not"
+    "• vaccination does NOT replace screening",
+    "• from ≈ 25, vaccinated or not"
    ]
   }
  ],
@@ -625,7 +627,7 @@
  "panels": [
   {
    "x": 45,
-   "y": 1020,
+   "y": 1054,
    "w": 409,
    "title": "Taking the sample",
    "items": [
@@ -638,7 +640,7 @@
   },
   {
    "x": 468,
-   "y": 1020,
+   "y": 1054,
    "w": 409,
    "title": "Reading the reflex cytology",
    "items": [
@@ -650,7 +652,7 @@
   },
   {
    "x": 892,
-   "y": 1020,
+   "y": 1054,
    "w": 409,
    "title": "Why HPV first, cytology second",
    "items": [

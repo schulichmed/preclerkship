@@ -122,6 +122,9 @@ def font(style: str, size: float) -> ImageFont.FreeTypeFont:
     return _fonts[key]
 
 
+LIST_ITEM = re.compile(r"^(• |\d+ · )")   # a box line drawn as a left-aligned list item
+
+
 def measure(text: str, style: str, size: float) -> float:
     return font(style, size).getlength(text)
 
@@ -178,10 +181,20 @@ class Chart(object):
             rows.append((line, "bold", TITLE_SIZE, TITLE_STEP))
         for raw in node.get("lines", []):
             style = "ital" if raw.startswith("~") else "reg"
-            for line in wrap(raw.lstrip("~"), style, BODY_SIZE, inner):
+            text = raw.lstrip("~")
+            m = LIST_ITEM.match(text)
+            if m:
+                # a list item ("• x" or "2 · x"): left-aligned, wrapped lines hang under the first word
+                marker = m.group(0)
+                hang = measure(marker, style, BODY_SIZE)
+                for i, line in enumerate(wrap(text[len(marker):], style, BODY_SIZE, inner - hang)):
+                    rows.append(((marker if i == 0 else "") + line, style, BODY_SIZE, BODY_STEP,
+                                 0 if i == 0 else hang))
+                continue
+            for line in wrap(text, style, BODY_SIZE, inner):
                 rows.append((line, style, BODY_SIZE, BODY_STEP))
-        for line, style, size, _ in rows:
-            if measure(line, style, size) > inner:
+        for line, style, size, *rest in rows:
+            if measure(line, style, size) + (rest[1] if len(rest) > 1 else 0) > inner:
                 self.errors.append("%s: %r is wider than its box (%.0f > %.0f px); widen it"
                                    % (node.get("id", node["title"]), line,
                                       measure(line, style, size), inner))
@@ -202,11 +215,15 @@ class Chart(object):
                                % (node.get("id"), h, block + 2 * PAD_Y))
         self.rect(x, y, w, h, fill, stroke_override or stroke, stroke_width)
         cy = y + (h - block) / 2 + (TITLE_SIZE if rows[0][1] == "bold" else BODY_SIZE) * 0.8
-        for line, style, size, step in rows:
+        for line, style, size, step, *indent in rows:
             muted = style == "ital"
-            self.text(x + w / 2, cy, line, size, 700 if style == "bold" else 400,
-                      (P["muted"] if muted else (tcol if style == "bold" else bcol)),
-                      italic=muted)
+            colour = P["muted"] if muted else (tcol if style == "bold" else bcol)
+            if indent:   # a bullet line sits on the left edge, not the centre
+                self.text(x + PAD_X + indent[0], cy, line, size, 400, colour, anchor="start",
+                          italic=muted)
+            else:
+                self.text(x + w / 2, cy, line, size, 700 if style == "bold" else 400, colour,
+                          italic=muted)
             cy += step
         if "id" in node:
             if node["id"] in self.boxes:

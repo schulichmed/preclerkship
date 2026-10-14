@@ -117,7 +117,7 @@
    "x": 40,
    "y": 306,
    "w": 224,
-   "h": 816,
+   "h": 850,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -125,7 +125,7 @@
    "x": 266,
    "y": 306,
    "w": 224,
-   "h": 816,
+   "h": 850,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -133,7 +133,7 @@
    "x": 492,
    "y": 306,
    "w": 224,
-   "h": 816,
+   "h": 850,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -141,7 +141,7 @@
    "x": 718,
    "y": 306,
    "w": 224,
-   "h": 816,
+   "h": 850,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -149,7 +149,7 @@
    "x": 972,
    "y": 306,
    "w": 224,
-   "h": 816,
+   "h": 850,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -157,7 +157,7 @@
    "x": 1198,
    "y": 306,
    "w": 224,
-   "h": 816,
+   "h": 850,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   }
@@ -172,18 +172,18 @@
   {
    "x": 23,
    "y": 552,
-   "h": 234,
+   "h": 268,
    "text": "DETECTS"
   },
   {
    "x": 23,
-   "y": 826,
+   "y": 860,
    "h": 152,
    "text": "RESULT → NEXT STEP"
   },
   {
    "x": 23,
-   "y": 1018,
+   "y": 1052,
    "h": 96,
    "text": "RISK · LIMITS"
   }
@@ -367,25 +367,29 @@
    "x": 45,
    "y": 552,
    "w": 214,
-   "h": 106,
+   "h": 96,
    "kind": "ni_t",
    "title": "Common aneuploidies",
    "lines": [
-    "detects 99% · false positive < 1%",
-    "better than eFTS or MSS"
+    "• detects 99%",
+    "• false positive < 1%",
+    "• better than eFTS or MSS"
    ]
   },
   {
    "id": "ni_det_1_0",
    "x": 45,
-   "y": 680,
+   "y": 670,
    "w": 214,
-   "h": 106,
+   "h": 150,
    "kind": "ni_w",
    "title": "Offer if",
    "lines": [
-    "previous trisomy · age 40+ · NT > 3.5 · positive eFTS",
-    "~Ontario: NOT first line for low risk"
+    "• previous trisomy",
+    "• age 40+",
+    "• NT > 3.5",
+    "• positive eFTS",
+    "~• Ontario: NOT first line for low risk"
    ]
   },
   {
@@ -393,7 +397,7 @@
    "x": 271,
    "y": 552,
    "w": 214,
-   "h": 88,
+   "h": 105,
    "kind": "nt_t",
    "title": "Risk of trisomy 21 (± 18)",
    "lines": [
@@ -403,13 +407,15 @@
   {
    "id": "nt_det_1_0",
    "x": 271,
-   "y": 662,
+   "y": 679,
    "w": 214,
-   "h": 124,
+   "h": 141,
    "kind": "nt_w",
    "title": "NT > 3.5 mm also flags",
    "lines": [
-    "trisomy 13, 18, 45,X · heart defect · Noonan, skeletal dysplasia"
+    "• trisomy 13, 18, 45,X",
+    "• heart defect",
+    "• Noonan, skeletal dysplasia"
    ]
   },
   {
@@ -417,7 +423,7 @@
    "x": 497,
    "y": 552,
    "w": 214,
-   "h": 106,
+   "h": 114,
    "kind": "ms_t",
    "title": "Risk of trisomy 21 (± 18)",
    "lines": [
@@ -427,13 +433,15 @@
   {
    "id": "ms_det_1_0",
    "x": 497,
-   "y": 680,
+   "y": 688,
    "w": 214,
-   "h": 106,
+   "h": 132,
    "kind": "ms_w",
    "title": "Choose eFTS vs MSS by",
    "lines": [
-    "gestational age · ultrasound access · early result vs detection"
+    "• gestational age",
+    "• ultrasound access",
+    "• early result vs detection"
    ]
   },
   {
@@ -441,7 +449,7 @@
    "x": 723,
    "y": 552,
    "w": 214,
-   "h": 107,
+   "h": 115,
    "kind": "an_t",
    "title": "Major structural anomalies",
    "lines": [
@@ -451,13 +459,16 @@
   {
    "id": "an_det_1_0",
    "x": 723,
-   "y": 681,
+   "y": 689,
    "w": 214,
-   "h": 105,
+   "h": 131,
    "kind": "an_w",
    "title": "Soft markers",
    "lines": [
-    "choroid plexus cyst · short femur · echogenic heart focus · echogenic bowel"
+    "• choroid plexus cyst",
+    "• short femur",
+    "• echogenic heart focus",
+    "• echogenic bowel"
    ]
   },
   {
@@ -465,7 +476,7 @@
    "x": 977,
    "y": 552,
    "w": 214,
-   "h": 98,
+   "h": 115,
    "kind": "cv_t",
    "title": "Chorionic villi, ultrasound-guided",
    "lines": [
@@ -475,14 +486,15 @@
   {
    "id": "cv_det_1_0",
    "x": 977,
-   "y": 672,
+   "y": 689,
    "w": 214,
-   "h": 114,
+   "h": 131,
    "kind": "cv_w",
    "title": "Order the assay",
    "lines": [
-    "karyotype > 5 Mb · microarray ~3 Mb",
-    "single gene: down to 1 bp, ~3 weeks"
+    "• karyotype > 5 Mb",
+    "• microarray ~3 Mb",
+    "• single gene: down to 1 bp, ~3 weeks"
    ]
   },
   {
@@ -490,7 +502,7 @@
    "x": 1203,
    "y": 552,
    "w": 214,
-   "h": 116,
+   "h": 124,
    "kind": "am_t",
    "title": "Amniotic fluid, needle through the abdomen",
    "lines": [
@@ -500,19 +512,21 @@
   {
    "id": "am_det_1_0",
    "x": 1203,
-   "y": 690,
+   "y": 698,
    "w": 214,
-   "h": 96,
+   "h": 122,
    "kind": "am_w",
    "title": "Order the assay",
    "lines": [
-    "karyotype · microarray · single gene"
+    "• karyotype",
+    "• microarray",
+    "• single gene"
    ]
   },
   {
    "id": "ni_next_0_0",
    "x": 45.0,
-   "y": 826,
+   "y": 860,
    "w": 102.0,
    "h": 152,
    "kind": "bad",
@@ -524,7 +538,7 @@
   {
    "id": "ni_next_0_1",
    "x": 157.0,
-   "y": 826,
+   "y": 860,
    "w": 102.0,
    "h": 152,
    "kind": "ok",
@@ -536,7 +550,7 @@
   {
    "id": "nt_next_0_0",
    "x": 271.0,
-   "y": 826,
+   "y": 860,
    "w": 102.0,
    "h": 152,
    "kind": "warn",
@@ -548,7 +562,7 @@
   {
    "id": "nt_next_0_1",
    "x": 383.0,
-   "y": 826,
+   "y": 860,
    "w": 102.0,
    "h": 152,
    "kind": "ok",
@@ -560,7 +574,7 @@
   {
    "id": "ms_next_0_0",
    "x": 497.0,
-   "y": 826,
+   "y": 860,
    "w": 102.0,
    "h": 152,
    "kind": "warn",
@@ -572,7 +586,7 @@
   {
    "id": "ms_next_0_1",
    "x": 609.0,
-   "y": 826,
+   "y": 860,
    "w": 102.0,
    "h": 152,
    "kind": "ok",
@@ -584,7 +598,7 @@
   {
    "id": "an_next_0_0",
    "x": 723.0,
-   "y": 826,
+   "y": 860,
    "w": 102.0,
    "h": 152,
    "kind": "warn",
@@ -596,7 +610,7 @@
   {
    "id": "an_next_0_1",
    "x": 835.0,
-   "y": 826,
+   "y": 860,
    "w": 102.0,
    "h": 152,
    "kind": "bad",
@@ -608,7 +622,7 @@
   {
    "id": "cv_next_0_0",
    "x": 977,
-   "y": 826,
+   "y": 860,
    "w": 214,
    "h": 152,
    "kind": "ok",
@@ -620,7 +634,7 @@
   {
    "id": "am_next_0_0",
    "x": 1203,
-   "y": 826,
+   "y": 860,
    "w": 214,
    "h": 152,
    "kind": "ok",
@@ -632,7 +646,7 @@
   {
    "id": "ni_risk_0_0",
    "x": 45,
-   "y": 1018,
+   "y": 1052,
    "w": 214,
    "h": 96,
    "kind": "ni_w",
@@ -644,20 +658,20 @@
   {
    "id": "nt_risk_0_0",
    "x": 271,
-   "y": 1018,
+   "y": 1052,
    "w": 214,
    "h": 96,
    "kind": "nt_w",
    "title": "No miscarriage risk",
    "lines": [
-    "false positive 3–6% (eFTS)",
-    "~NT alone: detects 69–75%"
+    "• false positive 3–6% (eFTS)",
+    "~• NT alone: detects 69–75%"
    ]
   },
   {
    "id": "ms_risk_0_0",
    "x": 497,
-   "y": 1018,
+   "y": 1052,
    "w": 214,
    "h": 96,
    "kind": "ms_w",
@@ -669,7 +683,7 @@
   {
    "id": "an_risk_0_0",
    "x": 723,
-   "y": 1018,
+   "y": 1052,
    "w": 214,
    "h": 96,
    "kind": "an_w",
@@ -681,20 +695,21 @@
   {
    "id": "cv_risk_0_0",
    "x": 977,
-   "y": 1018,
+   "y": 1052,
    "w": 214,
    "h": 96,
    "kind": "bad",
    "title": "Miscarriage 1/400 or ~1%",
    "lines": [
-    "~as printed",
-    "maternal cell contamination · confined placental mosaicism"
+    "~• as printed",
+    "• maternal cell contamination",
+    "• confined placental mosaicism"
    ]
   },
   {
    "id": "am_risk_0_0",
    "x": 1203,
-   "y": 1018,
+   "y": 1052,
    "w": 214,
    "h": 96,
    "kind": "bad",
@@ -917,7 +932,7 @@
  "panels": [
   {
    "x": 45,
-   "y": 1148,
+   "y": 1182,
    "w": 448,
    "title": "Before pregnancy: carrier screening by ancestry",
    "items": [
@@ -932,7 +947,7 @@
   },
   {
    "x": 507,
-   "y": 1148,
+   "y": 1182,
    "w": 448,
    "title": "Before pregnancy: red flags → refer to genetics",
    "items": [
@@ -946,7 +961,7 @@
   },
   {
    "x": 969,
-   "y": 1148,
+   "y": 1182,
    "w": 448,
    "title": "A positive screen: what next",
    "items": [
