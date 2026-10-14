@@ -117,7 +117,7 @@
    "x": 40,
    "y": 288,
    "w": 224,
-   "h": 1090,
+   "h": 1212,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -125,7 +125,7 @@
    "x": 266,
    "y": 288,
    "w": 224,
-   "h": 1090,
+   "h": 1212,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -133,7 +133,7 @@
    "x": 492,
    "y": 288,
    "w": 224,
-   "h": 1090,
+   "h": 1212,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -141,7 +141,7 @@
    "x": 746,
    "y": 288,
    "w": 224,
-   "h": 1090,
+   "h": 1212,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -149,7 +149,7 @@
    "x": 1000,
    "y": 288,
    "w": 224,
-   "h": 1090,
+   "h": 1212,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
@@ -157,7 +157,7 @@
    "x": 1226,
    "y": 288,
    "w": 224,
-   "h": 1090,
+   "h": 1212,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -178,7 +178,7 @@
   {
    "x": 23,
    "y": 980,
-   "h": 390,
+   "h": 512,
    "text": "TREATMENT"
   }
  ],
@@ -536,7 +536,7 @@
    "x": 45,
    "y": 980,
    "w": 214,
-   "h": 202,
+   "h": 263,
    "kind": "ok",
    "title": "Expectant",
    "lines": [
@@ -547,9 +547,9 @@
   {
    "id": "thr_tx_1_0",
    "x": 45,
-   "y": 1204,
+   "y": 1265,
    "w": 214,
-   "h": 166,
+   "h": 227,
    "kind": "bad",
    "title": "NO progesterone",
    "lines": []
@@ -559,7 +559,7 @@
    "x": 271,
    "y": 980,
    "w": 214,
-   "h": 194,
+   "h": 255,
    "kind": "ok",
    "title": "1 · Remove tissue at the os",
    "lines": [
@@ -569,9 +569,9 @@
   {
    "id": "opn_tx_1_0",
    "x": 271,
-   "y": 1196,
+   "y": 1257,
    "w": 214,
-   "h": 174,
+   "h": 235,
    "kind": "bad",
    "title": "FEVER: septic",
    "lines": [
@@ -583,7 +583,7 @@
    "x": 497,
    "y": 980,
    "w": 214,
-   "h": 390,
+   "h": 512,
    "kind": "ok",
    "title": "Expectant (76%), medical or surgical",
    "lines": [
@@ -595,7 +595,7 @@
    "x": 751,
    "y": 980,
    "w": 214,
-   "h": 166,
+   "h": 227,
    "kind": "ok",
    "title": "1 · Suction curettage",
    "lines": [
@@ -605,9 +605,9 @@
   {
    "id": "mol_tx_1_0",
    "x": 751,
-   "y": 1168,
+   "y": 1229,
    "w": 214,
-   "h": 202,
+   "h": 263,
    "kind": "bad",
    "title": "β-hCG stays HIGH",
    "lines": [
@@ -619,7 +619,7 @@
    "x": 1005,
    "y": 980,
    "w": 214,
-   "h": 103,
+   "h": 143,
    "kind": "ok",
    "title": "Rises ≥ 53% in 48 h",
    "lines": [
@@ -629,9 +629,9 @@
   {
    "id": "pul_tx_1_0",
    "x": 1005,
-   "y": 1105,
+   "y": 1145,
    "w": 214,
-   "h": 139,
+   "h": 179,
    "kind": "warn",
    "title": "Falls",
    "lines": [
@@ -642,9 +642,9 @@
   {
    "id": "pul_tx_2_0",
    "x": 1005,
-   "y": 1266,
+   "y": 1346,
    "w": 214,
-   "h": 105,
+   "h": 145,
    "kind": "bad",
    "title": "Above the zone, uterus EMPTY",
    "lines": [
@@ -668,21 +668,33 @@
    "x": 1231,
    "y": 1082,
    "w": 214,
-   "h": 170,
+   "h": 116,
    "kind": "ok",
    "title": "2 · Stable, unruptured → METHOTREXATE",
    "lines": [
-    "• 50 mg/m² IM once; β-hCG must fall 15% day 4 → 7, else repeat",
-    "• NOT if β-hCG > 5000",
-    "• fetal heart",
-    "• intrauterine pregnancy",
-    "• breastfeeding"
+    "• 50 mg/m² IM once",
+    "• β-hCG must fall 15% from day 4 → 7, else repeat"
    ]
   },
   {
    "id": "ect_tx_2_0",
    "x": 1231,
-   "y": 1274,
+   "y": 1220,
+   "w": 214,
+   "h": 154,
+   "kind": "bad",
+   "title": "NO methotrexate if ANY of these → SURGERY instead",
+   "lines": [
+    "• β-hCG > 5000",
+    "• fetal heart activity",
+    "• an intrauterine pregnancy",
+    "• breastfeeding"
+   ]
+  },
+  {
+   "id": "ect_tx_3_0",
+   "x": 1231,
+   "y": 1396,
    "w": 214,
    "h": 96,
    "kind": "ok",
@@ -762,6 +774,10 @@
   {
    "from": "ect_tx_1_0",
    "to": "ect_tx_2_0"
+  },
+  {
+   "from": "ect_tx_2_0",
+   "to": "ect_tx_3_0"
   },
   {
    "from": "thr_head_0_0",
@@ -894,7 +910,7 @@
  "panels": [
   {
    "x": 45,
-   "y": 1404,
+   "y": 1526,
    "w": 693,
    "title": "Managing a miscarriage: her choice",
    "items": [
@@ -906,7 +922,7 @@
   },
   {
    "x": 752,
-   "y": 1404,
+   "y": 1526,
    "w": 693,
    "title": "What to tell her",
    "items": [

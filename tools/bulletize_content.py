@@ -15,6 +15,7 @@ import re
 import sys
 
 NUM = re.compile(r"^\d+ · ")
+GOVERNS = re.compile(r"^(NOT|NO|not|no|Avoid|AVOID|avoid|never|NEVER|only|ONLY)\s+(if|when|for|in|with|after|before)\b")
 
 
 def split_top(text: str) -> list:
@@ -44,6 +45,11 @@ def convert(lines: list) -> list:
             items.append((muted, t, True))
             continue
         pieces = split_top(t)
+        if len(pieces) > 1 and GOVERNS.match(pieces[0]):
+            # "NOT if a · b · c": the lead-in governs every item, so splitting would drop it
+            print(f"  left whole (lead-in governs the list): {t}")
+            items.append((muted, t, False))
+            continue
         if len(pieces) > 1 and any(0 < p.find(": ") <= 30 for p in pieces):
             # labelled groups: each "label: ..." piece starts an item, unlabelled pieces join it
             group = []
