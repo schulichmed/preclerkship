@@ -1,7 +1,7 @@
 {
  "name": "breast overview",
- "title": "A breast complaint divided by how she presents: a lump (benign or worrisome, imaged by age then sampled), breast pain (cyclical or mastitis), nipple discharge (galactorrhea or pathological, usually a papilloma) and screening (usual or high risk, with carcinoma in situ split into DCIS and LCIS); each column gives presentation, numbered investigations and management, with the biopsy risk tiers and genetic testing below",
- "col_w": 222,
+ "title": "A breast complaint divided by how she presents: a lump (benign, fat necrosis or invasive carcinoma, imaged by age then sampled), breast pain (cyclical, mastitis, or inflammatory carcinoma that mimics it), the nipple (galactorrhea, papilloma, or Paget's disease with an underlying cancer), and screening (carcinoma in situ); each column gives presentation, numbered investigations and management",
+ "col_w": 214,
  "root": {
   "title": "A breast problem: how is she PRESENTING?",
   "lines": [
@@ -23,7 +23,7 @@
    "id": "g_pain",
    "cols": [
     3,
-    4
+    5
    ],
    "title": "BREAST PAIN",
    "lines": []
@@ -31,17 +31,17 @@
   {
    "id": "g_dis",
    "cols": [
-    5,
-    6
+    6,
+    8
    ],
-   "title": "NIPPLE DISCHARGE",
+   "title": "THE NIPPLE: discharge, or a changed nipple",
    "lines": []
   },
   {
    "id": "g_scr",
    "cols": [
-    7,
-    7
+    9,
+    9
    ],
    "title": "SCREENING: no symptoms",
    "lines": []
@@ -387,10 +387,9 @@
     [
      [
       "bad",
-      "2 · Not lactating or persistent: rule out CANCER",
+      "2 · Not lactating, or not settling",
       [
-       "• mammogram, biopsy",
-       "• inflammatory carcinoma mimics mastitis"
+       "→ INFLAMMATORY CARCINOMA? next column"
       ]
      ]
     ]
@@ -412,6 +411,58 @@
       "2 · Abscess",
       [
        "ultrasound-guided aspiration, or incision + drainage"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ic",
+   "colour": "magenta",
+   "drop_label": "red, swollen, not settling",
+   "head": [
+    [
+     [
+      "h",
+      "Inflammatory carcinoma",
+      [
+       "looks like MASTITIS, but it is CANCER",
+       "T4 disease"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Diffuse red, swollen breast",
+      [
+       "• resembles acute mastitis",
+       "• often PEAU D'ORANGE",
+       "• peau d'orange WITHOUT the mastitis look is NOT inflammatory carcinoma"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "1 · Mammogram, BIOPSY",
+      [
+       "tumour blocking the skin's lymphatics"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat as breast cancer",
+      [
+       "receptors and nodes: see INVASIVE CARCINOMA"
       ]
      ]
     ]
@@ -500,9 +551,9 @@
     [
      [
       "bad",
-      "1 · Inspect the nipple: PAGET'S?",
+      "1 · Inspect the nipple",
       [
-       "eczema-like nipple = an underlying carcinoma"
+       "rule out PAGET'S: next column"
       ]
      ]
     ],
@@ -523,6 +574,56 @@
       "Surgical consult → EXCISE",
       [
        "the only way to be sure"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pg",
+   "colour": "magenta",
+   "drop_label": "eczema-like nipple",
+   "head": [
+    [
+     [
+      "h",
+      "Paget's disease of the nipple",
+      [
+       "ALWAYS an underlying CANCER: DCIS or invasive"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Red, scaly, ECZEMA-like nipple + areola",
+      [
+       "• erosion, ulceration",
+       "• a palpable mass → usually INVASIVE"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "1 · Find the underlying cancer",
+      [
+       "image by age, then BIOPSY"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat the underlying cancer",
+      [
+       "see INVASIVE CARCINOMA or CARCINOMA IN SITU"
       ]
      ]
     ]

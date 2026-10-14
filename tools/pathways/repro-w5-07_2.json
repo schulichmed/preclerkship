@@ -1,7 +1,7 @@
 {
  "name": "breast overview",
- "width": 2004,
- "title": "A breast complaint divided by how she presents: a lump (benign or worrisome, imaged by age then sampled), breast pain (cyclical or mastitis), nipple discharge (galactorrhea or pathological, usually a papilloma) and screening (usual or high risk, with carcinoma in situ split into DCIS and LCIS); each column gives presentation, numbered investigations and management, with the biopsy risk tiers and genetic testing below",
+ "width": 2392,
+ "title": "A breast complaint divided by how she presents: a lump (benign, fat necrosis or invasive carcinoma, imaged by age then sampled), breast pain (cyclical, mastitis, or inflammatory carcinoma that mimics it), the nipple (galactorrhea, papilloma, or Paget's disease with an underlying cancer), and screening (carcinoma in situ); each column gives presentation, numbered investigations and management",
  "kinds": {
   "ben_h": [
    "#1f6f8b",
@@ -93,6 +93,24 @@
    "#b5600f",
    "#18212e"
   ],
+  "ic_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ic_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ic_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
   "gal_h": [
    "#1f5f9e",
    "#1f5f9e",
@@ -129,6 +147,24 @@
    "#6a4aa8",
    "#18212e"
   ],
+  "pg_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pg_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "pg_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
   "cis_h": [
    "#46607a",
    "#46607a",
@@ -151,65 +187,81 @@
  "bands": [
   {
    "x": 40,
-   "y": 406,
-   "w": 232,
-   "h": 864,
+   "y": 426,
+   "w": 224,
+   "h": 856,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
-   "x": 274,
-   "y": 406,
-   "w": 232,
-   "h": 864,
+   "x": 266,
+   "y": 426,
+   "w": 224,
+   "h": 856,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
   {
-   "x": 508,
-   "y": 406,
-   "w": 232,
-   "h": 864,
+   "x": 492,
+   "y": 426,
+   "w": 224,
+   "h": 856,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
-   "x": 770,
-   "y": 406,
-   "w": 232,
-   "h": 864,
+   "x": 746,
+   "y": 426,
+   "w": 224,
+   "h": 856,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
   {
-   "x": 1004,
-   "y": 406,
-   "w": 232,
-   "h": 864,
+   "x": 972,
+   "y": 426,
+   "w": 224,
+   "h": 856,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
-   "x": 1266,
-   "y": 406,
-   "w": 232,
-   "h": 864,
+   "x": 1198,
+   "y": 426,
+   "w": 224,
+   "h": 856,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1452,
+   "y": 426,
+   "w": 224,
+   "h": 856,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
-   "x": 1500,
-   "y": 406,
-   "w": 232,
-   "h": 864,
+   "x": 1678,
+   "y": 426,
+   "w": 224,
+   "h": 856,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
-   "x": 1762,
-   "y": 406,
-   "w": 232,
-   "h": 864,
+   "x": 1904,
+   "y": 426,
+   "w": 224,
+   "h": 856,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 2158,
+   "y": 426,
+   "w": 224,
+   "h": 856,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -217,33 +269,33 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 220,
+   "y": 240,
    "h": 114,
    "text": "WORKUP"
   },
   {
    "x": 23,
-   "y": 550,
-   "h": 142,
+   "y": 572,
+   "h": 152,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 732,
-   "h": 238,
+   "y": 764,
+   "h": 200,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 1010,
-   "h": 252,
+   "y": 1004,
+   "h": 270,
    "text": "MANAGEMENT"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 637,
+   "x": 831,
    "y": 10,
    "w": 760,
    "kind": "dark",
@@ -257,38 +309,38 @@
    "id": "g_lump",
    "x": 45,
    "y": 138,
-   "w": 690,
-   "h": 42,
+   "w": 666,
+   "h": 62,
    "kind": "plain",
    "title": "A LUMP: benign or WORRISOME on exam?",
    "lines": []
   },
   {
    "id": "g_pain",
-   "x": 775,
+   "x": 751,
    "y": 138,
-   "w": 456,
-   "h": 42,
+   "w": 666,
+   "h": 62,
    "kind": "plain",
    "title": "BREAST PAIN",
    "lines": []
   },
   {
    "id": "g_dis",
-   "x": 1271,
+   "x": 1457,
    "y": 138,
-   "w": 456,
-   "h": 42,
+   "w": 666,
+   "h": 62,
    "kind": "plain",
-   "title": "NIPPLE DISCHARGE",
+   "title": "THE NIPPLE: discharge, or a changed nipple",
    "lines": []
   },
   {
    "id": "g_scr",
-   "x": 1767,
+   "x": 2163,
    "y": 138,
-   "w": 222,
-   "h": 42,
+   "w": 214,
+   "h": 62,
    "kind": "plain",
    "title": "SCREENING: no symptoms",
    "lines": []
@@ -296,8 +348,8 @@
   {
    "id": "p_lump",
    "x": 45,
-   "y": 220,
-   "w": 690,
+   "y": 240,
+   "w": 666,
    "h": 114,
    "kind": "info",
    "title": "When you investigate",
@@ -308,9 +360,9 @@
   },
   {
    "id": "p_pain",
-   "x": 775,
-   "y": 220,
-   "w": 456,
+   "x": 751,
+   "y": 240,
+   "w": 666,
    "h": 114,
    "kind": "info",
    "title": "Exam: a mass or suspicious finding?",
@@ -321,9 +373,9 @@
   },
   {
    "id": "p_dis",
-   "x": 1271,
-   "y": 220,
-   "w": 456,
+   "x": 1457,
+   "y": 240,
+   "w": 666,
    "h": 114,
    "kind": "info",
    "title": "Compress the areola",
@@ -334,9 +386,9 @@
   },
   {
    "id": "p_scr",
-   "x": 1767,
-   "y": 220,
-   "w": 222,
+   "x": 2163,
+   "y": 240,
+   "w": 214,
    "h": 114,
    "kind": "info",
    "title": "Mammogram by RISK",
@@ -349,9 +401,9 @@
   {
    "id": "ben_head_0_0",
    "x": 45,
-   "y": 414,
-   "w": 222,
-   "h": 96,
+   "y": 434,
+   "w": 214,
+   "h": 98,
    "kind": "ben_h",
    "title": "Benign lump",
    "lines": [
@@ -360,10 +412,10 @@
   },
   {
    "id": "fn_head_0_0",
-   "x": 279,
-   "y": 414,
-   "w": 222,
-   "h": 96,
+   "x": 271,
+   "y": 434,
+   "w": 214,
+   "h": 98,
    "kind": "fn_h",
    "title": "Fat necrosis",
    "lines": [
@@ -372,10 +424,10 @@
   },
   {
    "id": "ca_head_0_0",
-   "x": 513,
-   "y": 414,
-   "w": 222,
-   "h": 96,
+   "x": 497,
+   "y": 434,
+   "w": 214,
+   "h": 98,
    "kind": "ca_h",
    "title": "Invasive carcinoma",
    "lines": [
@@ -384,10 +436,10 @@
   },
   {
    "id": "cyc_head_0_0",
-   "x": 775,
-   "y": 414,
-   "w": 222,
-   "h": 96,
+   "x": 751,
+   "y": 434,
+   "w": 214,
+   "h": 98,
    "kind": "cyc_h",
    "title": "Cyclical pain",
    "lines": [
@@ -396,10 +448,10 @@
   },
   {
    "id": "mas_head_0_0",
-   "x": 1009,
-   "y": 414,
-   "w": 222,
-   "h": 96,
+   "x": 977,
+   "y": 434,
+   "w": 214,
+   "h": 98,
    "kind": "mas_h",
    "title": "Mastitis",
    "lines": [
@@ -407,11 +459,24 @@
    ]
   },
   {
+   "id": "ic_head_0_0",
+   "x": 1203,
+   "y": 434,
+   "w": 214,
+   "h": 98,
+   "kind": "ic_h",
+   "title": "Inflammatory carcinoma",
+   "lines": [
+    "looks like MASTITIS, but it is CANCER",
+    "T4 disease"
+   ]
+  },
+  {
    "id": "gal_head_0_0",
-   "x": 1271,
-   "y": 414,
-   "w": 222,
-   "h": 96,
+   "x": 1457,
+   "y": 434,
+   "w": 214,
+   "h": 98,
    "kind": "gal_h",
    "title": "Galactorrhea",
    "lines": [
@@ -421,10 +486,10 @@
   },
   {
    "id": "pap_head_0_0",
-   "x": 1505,
-   "y": 414,
-   "w": 222,
-   "h": 96,
+   "x": 1683,
+   "y": 434,
+   "w": 214,
+   "h": 98,
    "kind": "pap_h",
    "title": "Pathological: PAPILLOMA",
    "lines": [
@@ -432,11 +497,23 @@
    ]
   },
   {
+   "id": "pg_head_0_0",
+   "x": 1909,
+   "y": 434,
+   "w": 214,
+   "h": 98,
+   "kind": "pg_h",
+   "title": "Paget's disease of the nipple",
+   "lines": [
+    "ALWAYS an underlying CANCER: DCIS or invasive"
+   ]
+  },
+  {
    "id": "cis_head_0_0",
-   "x": 1767,
-   "y": 414,
-   "w": 222,
-   "h": 96,
+   "x": 2163,
+   "y": 434,
+   "w": 214,
+   "h": 98,
    "kind": "cis_h",
    "title": "Carcinoma IN SITU",
    "lines": [
@@ -447,9 +524,9 @@
   {
    "id": "ben_clue_0_0",
    "x": 45,
-   "y": 550,
-   "w": 222,
-   "h": 142,
+   "y": 572,
+   "w": 214,
+   "h": 152,
    "kind": "ben_t",
    "title": "SMOOTH",
    "lines": [
@@ -459,10 +536,10 @@
   },
   {
    "id": "fn_clue_0_0",
-   "x": 279,
-   "y": 550,
-   "w": 222,
-   "h": 142,
+   "x": 271,
+   "y": 572,
+   "w": 214,
+   "h": 152,
    "kind": "fn_t",
    "title": "Firm, IRREGULAR mass",
    "lines": [
@@ -473,10 +550,10 @@
   },
   {
    "id": "ca_clue_0_0",
-   "x": 513,
-   "y": 550,
-   "w": 222,
-   "h": 142,
+   "x": 497,
+   "y": 572,
+   "w": 214,
+   "h": 152,
    "kind": "ca_t",
    "title": "SINGLE · HARD · FIXED",
    "lines": [
@@ -487,10 +564,10 @@
   },
   {
    "id": "cyc_clue_0_0",
-   "x": 775,
-   "y": 550,
-   "w": 222,
-   "h": 142,
+   "x": 751,
+   "y": 572,
+   "w": 214,
+   "h": 152,
    "kind": "cyc_t",
    "title": "Phasic with her periods",
    "lines": [
@@ -499,10 +576,10 @@
   },
   {
    "id": "mas_clue_0_0",
-   "x": 1009,
-   "y": 550,
-   "w": 222,
-   "h": 142,
+   "x": 977,
+   "y": 572,
+   "w": 214,
+   "h": 152,
    "kind": "mas_t",
    "title": "Tense, HOT, painful breast",
    "lines": [
@@ -511,11 +588,25 @@
    ]
   },
   {
+   "id": "ic_clue_0_0",
+   "x": 1203,
+   "y": 572,
+   "w": 214,
+   "h": 152,
+   "kind": "ic_t",
+   "title": "Diffuse red, swollen breast",
+   "lines": [
+    "• resembles acute mastitis",
+    "• often PEAU D'ORANGE",
+    "• peau d'orange WITHOUT the mastitis look is NOT inflammatory carcinoma"
+   ]
+  },
+  {
    "id": "gal_clue_0_0",
-   "x": 1271,
-   "y": 550,
-   "w": 222,
-   "h": 142,
+   "x": 1457,
+   "y": 572,
+   "w": 214,
+   "h": 152,
    "kind": "gal_t",
    "title": "Usually BILATERAL · MULTIPLE ducts",
    "lines": [
@@ -525,10 +616,10 @@
   },
   {
    "id": "pap_clue_0_0",
-   "x": 1505,
-   "y": 550,
-   "w": 222,
-   "h": 142,
+   "x": 1683,
+   "y": 572,
+   "w": 214,
+   "h": 152,
    "kind": "pap_t",
    "title": "UNILATERAL · SINGLE duct · SPONTANEOUS",
    "lines": [
@@ -538,11 +629,24 @@
    ]
   },
   {
+   "id": "pg_clue_0_0",
+   "x": 1909,
+   "y": 572,
+   "w": 214,
+   "h": 152,
+   "kind": "pg_t",
+   "title": "Red, scaly, ECZEMA-like nipple + areola",
+   "lines": [
+    "• erosion, ulceration",
+    "• a palpable mass → usually INVASIVE"
+   ]
+  },
+  {
    "id": "cis_clue_0_0",
-   "x": 1767,
-   "y": 550,
-   "w": 222,
-   "h": 60,
+   "x": 2163,
+   "y": 572,
+   "w": 214,
+   "h": 65,
    "kind": "cis_t",
    "title": "DCIS: CALCIFICATIONS",
    "lines": [
@@ -551,10 +655,10 @@
   },
   {
    "id": "cis_clue_1_0",
-   "x": 1767,
-   "y": 632,
-   "w": 222,
-   "h": 60,
+   "x": 2163,
+   "y": 659,
+   "w": 214,
+   "h": 65,
    "kind": "cis_t",
    "title": "LCIS: INCIDENTAL",
    "lines": [
@@ -564,9 +668,9 @@
   {
    "id": "ben_inv_0_0",
    "x": 45,
-   "y": 732,
-   "w": 222,
-   "h": 118,
+   "y": 764,
+   "w": 214,
+   "h": 99,
    "kind": "ben_w",
    "title": "1 · Pre-menopausal: recheck after her NEXT PERIOD",
    "lines": []
@@ -574,19 +678,19 @@
   {
    "id": "ben_inv_1_0",
    "x": 45,
-   "y": 872,
-   "w": 222,
-   "h": 98,
+   "y": 885,
+   "w": 214,
+   "h": 79,
    "kind": "ben_w",
    "title": "2 · Not resolved → image by age, sample",
    "lines": []
   },
   {
    "id": "fn_inv_0_0",
-   "x": 279,
-   "y": 732,
-   "w": 222,
-   "h": 238,
+   "x": 271,
+   "y": 764,
+   "w": 214,
+   "h": 200,
    "kind": "fn_w",
    "title": "1 · Image by age, then BIOPSY",
    "lines": [
@@ -595,10 +699,10 @@
   },
   {
    "id": "ca_inv_0_0",
-   "x": 513,
-   "y": 732,
-   "w": 222,
-   "h": 116,
+   "x": 497,
+   "y": 764,
+   "w": 214,
+   "h": 97,
    "kind": "bad",
    "title": "1 · Investigate NOW",
    "lines": [
@@ -607,39 +711,39 @@
   },
   {
    "id": "ca_inv_1_0",
-   "x": 513,
-   "y": 870,
-   "w": 222,
-   "h": 100,
+   "x": 497,
+   "y": 883,
+   "w": 214,
+   "h": 81,
    "kind": "ca_w",
    "title": "2 · Image by age, then BIOPSY",
    "lines": []
   },
   {
    "id": "cyc_inv_0_0",
-   "x": 775,
-   "y": 732,
-   "w": 222,
-   "h": 108,
+   "x": 751,
+   "y": 764,
+   "w": 214,
+   "h": 89,
    "kind": "ok",
    "title": "< 35 + normal exam: NO tests",
    "lines": []
   },
   {
    "id": "cyc_inv_1_0",
-   "x": 775,
-   "y": 862,
-   "w": 222,
-   "h": 108,
+   "x": 751,
+   "y": 875,
+   "w": 214,
+   "h": 89,
    "kind": "cyc_w",
    "title": "Older: more likely real pathology",
    "lines": []
   },
   {
    "id": "mas_inv_0_0",
-   "x": 1009,
-   "y": 732,
-   "w": 222,
+   "x": 977,
+   "y": 764,
+   "w": 214,
    "h": 80,
    "kind": "mas_w",
    "title": "1 · Antibiotics fail → ultrasound",
@@ -649,23 +753,34 @@
   },
   {
    "id": "mas_inv_1_0",
-   "x": 1009,
-   "y": 834,
-   "w": 222,
-   "h": 136,
+   "x": 977,
+   "y": 866,
+   "w": 214,
+   "h": 98,
    "kind": "bad",
-   "title": "2 · Not lactating or persistent: rule out CANCER",
+   "title": "2 · Not lactating, or not settling",
    "lines": [
-    "• mammogram, biopsy",
-    "• inflammatory carcinoma mimics mastitis"
+    "→ INFLAMMATORY CARCINOMA? next column"
+   ]
+  },
+  {
+   "id": "ic_inv_0_0",
+   "x": 1203,
+   "y": 764,
+   "w": 214,
+   "h": 200,
+   "kind": "bad",
+   "title": "1 · Mammogram, BIOPSY",
+   "lines": [
+    "tumour blocking the skin's lymphatics"
    ]
   },
   {
    "id": "gal_inv_0_0",
-   "x": 1271,
-   "y": 732,
-   "w": 222,
-   "h": 238,
+   "x": 1457,
+   "y": 764,
+   "w": 214,
+   "h": 200,
    "kind": "gal_w",
    "title": "Look for the cause",
    "lines": [
@@ -676,21 +791,21 @@
   },
   {
    "id": "pap_inv_0_0",
-   "x": 1505,
-   "y": 732,
-   "w": 222,
-   "h": 108,
+   "x": 1683,
+   "y": 764,
+   "w": 214,
+   "h": 70,
    "kind": "bad",
-   "title": "1 · Inspect the nipple: PAGET'S?",
+   "title": "1 · Inspect the nipple",
    "lines": [
-    "eczema-like nipple = an underlying carcinoma"
+    "rule out PAGET'S: next column"
    ]
   },
   {
    "id": "pap_inv_1_0",
-   "x": 1505,
-   "y": 862,
-   "w": 222,
+   "x": 1683,
+   "y": 856,
+   "w": 214,
    "h": 108,
    "kind": "pap_w",
    "title": "2 · Periareolar ultrasound + mammogram",
@@ -699,11 +814,23 @@
    ]
   },
   {
+   "id": "pg_inv_0_0",
+   "x": 1909,
+   "y": 764,
+   "w": 214,
+   "h": 200,
+   "kind": "bad",
+   "title": "1 · Find the underlying cancer",
+   "lines": [
+    "image by age, then BIOPSY"
+   ]
+  },
+  {
    "id": "cis_inv_0_0",
-   "x": 1767,
-   "y": 732,
-   "w": 222,
-   "h": 108,
+   "x": 2163,
+   "y": 764,
+   "w": 214,
+   "h": 89,
    "kind": "cis_w",
    "title": "DCIS: a PRECURSOR",
    "lines": [
@@ -712,10 +839,10 @@
   },
   {
    "id": "cis_inv_1_0",
-   "x": 1767,
-   "y": 862,
-   "w": 222,
-   "h": 108,
+   "x": 2163,
+   "y": 875,
+   "w": 214,
+   "h": 89,
    "kind": "cis_w",
    "title": "LCIS: a RISK FACTOR",
    "lines": [
@@ -725,9 +852,9 @@
   {
    "id": "ben_tx_0_0",
    "x": 45,
-   "y": 1010,
-   "w": 222,
-   "h": 96,
+   "y": 1004,
+   "w": 214,
+   "h": 105,
    "kind": "ok",
    "title": "Resolved: follow",
    "lines": []
@@ -735,9 +862,9 @@
   {
    "id": "ben_tx_1_0",
    "x": 45,
-   "y": 1128,
-   "w": 222,
-   "h": 134,
+   "y": 1131,
+   "w": 214,
+   "h": 143,
    "kind": "ok",
    "title": "Benign biopsy: the report sets her risk",
    "lines": [
@@ -746,20 +873,20 @@
   },
   {
    "id": "fn_tx_0_0",
-   "x": 279,
-   "y": 1010,
-   "w": 222,
-   "h": 252,
+   "x": 271,
+   "y": 1004,
+   "w": 214,
+   "h": 270,
    "kind": "ok",
    "title": "Biopsy confirms: BENIGN",
    "lines": []
   },
   {
    "id": "ca_tx_0_0",
-   "x": 513,
-   "y": 1010,
-   "w": 222,
-   "h": 141,
+   "x": 497,
+   "y": 1004,
+   "w": 214,
+   "h": 159,
    "kind": "ok",
    "title": "Receptors pick the drug",
    "lines": [
@@ -769,9 +896,9 @@
   },
   {
    "id": "ca_tx_1_0",
-   "x": 513,
-   "y": 1173,
-   "w": 222,
+   "x": 497,
+   "y": 1185,
+   "w": 214,
    "h": 89,
    "kind": "warn",
    "title": "Axillary NODES: the key prognostic factor",
@@ -781,9 +908,9 @@
   },
   {
    "id": "cyc_tx_0_0",
-   "x": 775,
-   "y": 1010,
-   "w": 222,
+   "x": 751,
+   "y": 1004,
+   "w": 214,
    "h": 78,
    "kind": "ok",
    "title": "1 · Stop an offending pill",
@@ -793,10 +920,10 @@
   },
   {
    "id": "cyc_tx_1_0",
-   "x": 775,
-   "y": 1110,
-   "w": 222,
-   "h": 152,
+   "x": 751,
+   "y": 1104,
+   "w": 214,
+   "h": 170,
    "kind": "ok",
    "title": "2 · SEVERE and > 7 days: treat",
    "lines": [
@@ -808,10 +935,10 @@
   },
   {
    "id": "mas_tx_0_0",
-   "x": 1009,
-   "y": 1010,
-   "w": 222,
-   "h": 133,
+   "x": 977,
+   "y": 1004,
+   "w": 214,
+   "h": 142,
    "kind": "ok",
    "title": "1 · Antibiotics",
    "lines": [
@@ -821,10 +948,10 @@
   },
   {
    "id": "mas_tx_1_0",
-   "x": 1009,
-   "y": 1165,
-   "w": 222,
-   "h": 97,
+   "x": 977,
+   "y": 1168,
+   "w": 214,
+   "h": 106,
    "kind": "bad",
    "title": "2 · Abscess",
    "lines": [
@@ -832,21 +959,33 @@
    ]
   },
   {
+   "id": "ic_tx_0_0",
+   "x": 1203,
+   "y": 1004,
+   "w": 214,
+   "h": 270,
+   "kind": "ok",
+   "title": "Treat as breast cancer",
+   "lines": [
+    "receptors and nodes: see INVASIVE CARCINOMA"
+   ]
+  },
+  {
    "id": "gal_tx_0_0",
-   "x": 1271,
-   "y": 1010,
-   "w": 222,
-   "h": 252,
+   "x": 1457,
+   "y": 1004,
+   "w": 214,
+   "h": 270,
    "kind": "ok",
    "title": "Treat the cause",
    "lines": []
   },
   {
    "id": "pap_tx_0_0",
-   "x": 1505,
-   "y": 1010,
-   "w": 222,
-   "h": 252,
+   "x": 1683,
+   "y": 1004,
+   "w": 214,
+   "h": 270,
    "kind": "ok",
    "title": "Surgical consult → EXCISE",
    "lines": [
@@ -854,11 +993,23 @@
    ]
   },
   {
+   "id": "pg_tx_0_0",
+   "x": 1909,
+   "y": 1004,
+   "w": 214,
+   "h": 270,
+   "kind": "ok",
+   "title": "Treat the underlying cancer",
+   "lines": [
+    "see INVASIVE CARCINOMA or CARCINOMA IN SITU"
+   ]
+  },
+  {
    "id": "cis_tx_0_0",
-   "x": 1767,
-   "y": 1010,
-   "w": 222,
-   "h": 115,
+   "x": 2163,
+   "y": 1004,
+   "w": 214,
+   "h": 124,
    "kind": "ok",
    "title": "DCIS: EXCISE",
    "lines": [
@@ -867,10 +1018,10 @@
   },
   {
    "id": "cis_tx_1_0",
-   "x": 1767,
-   "y": 1147,
-   "w": 222,
-   "h": 115,
+   "x": 2163,
+   "y": 1150,
+   "w": 214,
+   "h": 124,
    "kind": "ok",
    "title": "LCIS: close follow-up",
    "lines": [
@@ -882,22 +1033,22 @@
   {
    "from": "root",
    "to": "g_lump",
-   "path": "M1017.0 88V113H390.0V138"
+   "path": "M1211.0 88V113H378.0V138"
   },
   {
    "from": "root",
    "to": "g_pain",
-   "path": "M1017.0 88V113H1003.0V138"
+   "path": "M1211.0 88V113H1084.0V138"
   },
   {
    "from": "root",
    "to": "g_dis",
-   "path": "M1017.0 88V113H1499.0V138"
+   "path": "M1211.0 88V113H1790.0V138"
   },
   {
    "from": "root",
    "to": "g_scr",
-   "path": "M1017.0 88V113H1878.0V138"
+   "path": "M1211.0 88V113H2270.0V138"
   },
   {
    "from": "g_lump",
@@ -979,11 +1130,11 @@
   {
    "from": "p_lump",
    "to": "ben_head_0_0",
-   "from_dx": -234,
+   "from_dx": -226,
    "label": "benign",
    "label_at": [
-    156.0,
-    374
+    152.0,
+    394
    ]
   },
   {
@@ -1004,8 +1155,8 @@
    "from_dx": 0,
    "label": "irregular, after trauma",
    "label_at": [
-    390.0,
-    374
+    378.0,
+    394
    ]
   },
   {
@@ -1023,11 +1174,11 @@
   {
    "from": "p_lump",
    "to": "ca_head_0_0",
-   "from_dx": 234,
+   "from_dx": 226,
    "label": "worrisome",
    "label_at": [
-    624.0,
-    374
+    604.0,
+    394
    ]
   },
   {
@@ -1045,11 +1196,11 @@
   {
    "from": "p_pain",
    "to": "cyc_head_0_0",
-   "from_dx": -117,
+   "from_dx": -226,
    "label": "cyclical",
    "label_at": [
-    886.0,
-    374
+    858.0,
+    394
    ]
   },
   {
@@ -1067,11 +1218,33 @@
   {
    "from": "p_pain",
    "to": "mas_head_0_0",
-   "from_dx": 117,
+   "from_dx": 0,
    "label": "non-cyclical",
    "label_at": [
-    1120.0,
-    374
+    1084.0,
+    394
+   ]
+  },
+  {
+   "from": "ic_head_0_0",
+   "to": "ic_clue_0_0"
+  },
+  {
+   "from": "ic_clue_0_0",
+   "to": "ic_inv_0_0"
+  },
+  {
+   "from": "ic_inv_0_0",
+   "to": "ic_tx_0_0"
+  },
+  {
+   "from": "p_pain",
+   "to": "ic_head_0_0",
+   "from_dx": 226,
+   "label": "red, swollen, not settling",
+   "label_at": [
+    1310.0,
+    394
    ]
   },
   {
@@ -1089,11 +1262,11 @@
   {
    "from": "p_dis",
    "to": "gal_head_0_0",
-   "from_dx": -117,
+   "from_dx": -226,
    "label": "both, many ducts",
    "label_at": [
-    1382.0,
-    374
+    1564.0,
+    394
    ]
   },
   {
@@ -1111,11 +1284,33 @@
   {
    "from": "p_dis",
    "to": "pap_head_0_0",
-   "from_dx": 117,
+   "from_dx": 0,
    "label": "1 side, 1 duct",
    "label_at": [
-    1616.0,
-    374
+    1790.0,
+    394
+   ]
+  },
+  {
+   "from": "pg_head_0_0",
+   "to": "pg_clue_0_0"
+  },
+  {
+   "from": "pg_clue_0_0",
+   "to": "pg_inv_0_0"
+  },
+  {
+   "from": "pg_inv_0_0",
+   "to": "pg_tx_0_0"
+  },
+  {
+   "from": "p_dis",
+   "to": "pg_head_0_0",
+   "from_dx": 226,
+   "label": "eczema-like nipple",
+   "label_at": [
+    2016.0,
+    394
    ]
   },
   {
@@ -1136,16 +1331,16 @@
    "from_dx": 0,
    "label": "abnormal",
    "label_at": [
-    1878.0,
-    374
+    2270.0,
+    394
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 1296,
-   "w": 965,
+   "y": 1308,
+   "w": 1159,
    "title": "The benign biopsy report sets her cancer risk",
    "items": [
     "non-proliferative, ×1: fibrocystic change, cyst, fibroadenoma",
@@ -1155,9 +1350,9 @@
    "cols": 1
   },
   {
-   "x": 1024,
-   "y": 1296,
-   "w": 965,
+   "x": 1218,
+   "y": 1308,
+   "w": 1159,
    "title": "Screening + genes",
    "items": [
     "HIGH risk, YEARLY mammogram: 1st-degree relative < 50, or two at any age · ovarian cancer · male breast cancer in the family · atypia, LCIS, radial scar, phyllodes · density > 75%",
