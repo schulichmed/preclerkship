@@ -1,6 +1,6 @@
 {
  "name": "pelvic pain overview",
- "title": "Pelvic pain decision chart: acute pain sorted by beta-hCG, fever and hemoglobin into ovarian torsion or ruptured hemorrhagic cyst; chronic pain sorted by cycle and exam into primary dysmenorrhea or structural causes (endometriosis, adenomyosis, leiomyoma); each column gives presentation, numbered investigations and treatment in order",
+ "title": "Pelvic pain decision chart: acute pain sorted by beta-hCG, fever and hemoglobin into ovarian torsion or ruptured hemorrhagic cyst; chronic pain sorted by cycle and exam into primary dysmenorrhea or structural causes (endometriosis, adenomyosis, leiomyoma, endometrial polyp); each column gives presentation, numbered investigations and treatment in order",
  "col_w": 212,
  "root": {
   "title": "Pelvic pain: ACUTE (find the life- or limb-threat first) or CHRONIC (≥ 6 MONTHS)?",
@@ -27,7 +27,7 @@
    "id": "g_ch",
    "cols": [
     2,
-    5
+    6
    ],
    "title": "CHRONIC: is it CYCLIC with a NORMAL exam?",
    "lines": [
@@ -62,11 +62,11 @@
    "id": "t_st",
    "cols": [
     3,
-    5
+    6
    ],
    "title": "NO: STRUCTURAL · the EXAM points the way",
    "lines": [
-    "NODULAR, FIXED → endometriosis · BOGGY, tender, enlarged → adenomyosis · ENLARGED, MOBILE, mass → fibroid",
+    "NODULAR, FIXED → endometriosis · BOGGY, tender, enlarged → adenomyosis · ENLARGED, MOBILE, mass → fibroid · MASS at the os → polyp",
     "~always send removed tissue to pathology"
    ]
   }
@@ -645,6 +645,78 @@
      ]
     ]
    ]
+  },
+  {
+   "id": "po",
+   "colour": "olive",
+   "drop_from": "t_st",
+   "drop_label": "MASS at the os",
+   "head": [
+    [
+     [
+      "h",
+      "Endometrial polyp",
+      [
+       "benign, HORMONE-dependent overgrowth of endometrium",
+       "linked to estrogen, TAMOXIFEN · common > 40"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Bleeding BETWEEN periods",
+      [
+       "daily spotting · infertility",
+       "PAIN only if it protrudes through the os"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Exam",
+      [
+       "small fleshy MASS at the cervical os",
+       "~a submucosal fibroid can mimic it"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · REMOVE it: pathology makes the diagnosis",
+      [
+       "send the WHOLE polyp"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Pathology",
+      [
+       "like the background endometrium, or HYPERPLASTIC (linked to endometrial hyperplasia)",
+       "RARELY malignant"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Removal is the treatment",
+      [
+       "tell her: not a tumour; pathology confirms benign and excludes malignancy"
+      ]
+     ]
+    ]
+   ]
   }
  ],
  "panels": [
@@ -660,7 +732,6 @@
    "title": "Also on the differential",
    "items": [
     "MYOFASCIAL pelvic pain: NOT cyclic · GLOBALLY tender pelvis, normal uterus → physiotherapy (soft-tissue release), trigger-point injection, amitriptyline + gabapentin",
-    "endometrial POLYP: spotting between periods, a mass at the os → remove the WHOLE polyp for pathology",
     "non-gynecologic: appendicitis, irritable bowel, interstitial cystitis, pelvic floor myalgia"
    ]
   }
