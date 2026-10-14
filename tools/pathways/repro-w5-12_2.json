@@ -1,0 +1,622 @@
+{
+ "name": "hypertension in pregnancy overview",
+ "width": 1336,
+ "title": "Hypertensive disorders of pregnancy: chronic and gestational hypertension, split by onset before or after 20 weeks, where the blood pressure is the problem and is treated with oral drugs, against pre-eclampsia, eclampsia and HELLP syndrome, where it is a symptom, severe pressure is lowered with intravenous drugs, magnesium sulfate prevents seizures and complications decide delivery",
+ "kinds": {
+  "chr_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "chr_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "chr_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ges_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ges_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ges_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "pe_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pe_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "pe_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ecl_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ecl_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ecl_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "hel_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hel_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "hel_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 308,
+   "w": 250,
+   "h": 752,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 292,
+   "y": 308,
+   "w": 250,
+   "h": 752,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 572,
+   "y": 308,
+   "w": 250,
+   "h": 752,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 824,
+   "y": 308,
+   "w": 250,
+   "h": 752,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1076,
+   "y": 308,
+   "w": 250,
+   "h": 752,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 454,
+   "h": 132,
+   "text": "DIAGNOSIS"
+  },
+  {
+   "x": 23,
+   "y": 626,
+   "h": 114,
+   "text": "WATCH FOR"
+  },
+  {
+   "x": 23,
+   "y": 780,
+   "h": 272,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 303,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "High blood pressure (BP) in pregnancy: WHEN did it start, and is the BP the PROBLEM or a SYMPTOM?",
+   "lines": [
+    "MILD: systolic > 140 or diastolic > 90 · SEVERE: systolic > 160 or diastolic > 110 · each on 2 readings > 15 min apart",
+    "exclude white-coat and transient (pain-driven) elevation"
+   ]
+  },
+  {
+   "id": "g_prob",
+   "x": 45,
+   "y": 158,
+   "w": 492,
+   "h": 78,
+   "kind": "plain",
+   "title": "BP IS THE PROBLEM: treat the BP",
+   "lines": [
+    "isolated BP elevation"
+   ]
+  },
+  {
+   "id": "g_symp",
+   "x": 577,
+   "y": 158,
+   "w": 744,
+   "h": 78,
+   "kind": "plain",
+   "title": "BP IS A SYMPTOM: protect mother and fetus",
+   "lines": [
+    "SEVERE BP risks STROKE: lower it urgently to < 160 / < 110",
+    "complications (their presence and severity) decide DELIVERY"
+   ]
+  },
+  {
+   "id": "chr_head_0_0",
+   "x": 45,
+   "y": 316,
+   "w": 240,
+   "h": 98,
+   "kind": "chr_h",
+   "title": "Chronic (pre-existing) hypertension",
+   "lines": [
+    "before pregnancy or diagnosed < 20 weeks"
+   ]
+  },
+  {
+   "id": "ges_head_0_0",
+   "x": 297,
+   "y": 316,
+   "w": 240,
+   "h": 98,
+   "kind": "ges_h",
+   "title": "Gestational hypertension",
+   "lines": [
+    "after 20 weeks"
+   ]
+  },
+  {
+   "id": "pe_head_0_0",
+   "x": 577,
+   "y": 316,
+   "w": 240,
+   "h": 98,
+   "kind": "pe_h",
+   "title": "Pre-eclampsia",
+   "lines": [
+    "hypertension + PROTEINURIA",
+    "late gestation · more often a first pregnancy"
+   ]
+  },
+  {
+   "id": "ecl_head_0_0",
+   "x": 829,
+   "y": 316,
+   "w": 240,
+   "h": 98,
+   "kind": "ecl_h",
+   "title": "Eclampsia",
+   "lines": [
+    "pre-eclampsia + SEIZURES",
+    "usually poorly controlled pre-eclampsia"
+   ]
+  },
+  {
+   "id": "hel_head_0_0",
+   "x": 1081,
+   "y": 316,
+   "w": 240,
+   "h": 98,
+   "kind": "hel_h",
+   "title": "HELLP syndrome",
+   "lines": [
+    "Hemolysis · Elevated Liver enzymes · Low Platelets",
+    "atypical pre-eclampsia / eclampsia"
+   ]
+  },
+  {
+   "id": "chr_dx_0_0",
+   "x": 45,
+   "y": 454,
+   "w": 240,
+   "h": 132,
+   "kind": "chr_t",
+   "title": "The EARLIER the onset",
+   "lines": [
+    "↑ placental dysfunction",
+    "↑ progression to pre-eclampsia"
+   ]
+  },
+  {
+   "id": "ges_dx_0_0",
+   "x": 297,
+   "y": 454,
+   "w": 240,
+   "h": 132,
+   "kind": "ges_t",
+   "title": "NORMAL BPs documented up to 20 weeks",
+   "lines": [
+    "NO adverse conditions or severe complications"
+   ]
+  },
+  {
+   "id": "pe_dx_0_0",
+   "x": 577,
+   "y": 454,
+   "w": 240,
+   "h": 132,
+   "kind": "pe_t",
+   "title": "Adverse conditions?",
+   "lines": [
+    "headache, visual change · chest pain, saturation < 97%",
+    "right upper quadrant pain · ↑ creatinine, liver enzymes",
+    "↓ platelets · fetal growth restriction"
+   ]
+  },
+  {
+   "id": "ecl_dx_0_0",
+   "x": 829,
+   "y": 454,
+   "w": 240,
+   "h": 132,
+   "kind": "ecl_t",
+   "title": "Warning signs",
+   "lines": [
+    "new or worsening proteinuria · headache",
+    "clonus, photosensitivity · severe, uncontrolled BP"
+   ]
+  },
+  {
+   "id": "hel_dx_0_0",
+   "x": 1081,
+   "y": 454,
+   "w": 240,
+   "h": 132,
+   "kind": "bad",
+   "title": "BP can be NORMAL",
+   "lines": [
+    "hypertension is NOT required"
+   ]
+  },
+  {
+   "id": "chr_watch_0_0",
+   "x": 45,
+   "y": 626,
+   "w": 240,
+   "h": 114,
+   "kind": "chr_w",
+   "title": "Diabetes, kidney disease",
+   "lines": [
+    "↑ severity and progression to pre-eclampsia"
+   ]
+  },
+  {
+   "id": "ges_watch_0_0",
+   "x": 297,
+   "y": 626,
+   "w": 240,
+   "h": 114,
+   "kind": "ges_w",
+   "title": "Co-morbid conditions",
+   "lines": [
+    "↑ severity and progression to pre-eclampsia"
+   ]
+  },
+  {
+   "id": "pe_watch_0_0",
+   "x": 577,
+   "y": 626,
+   "w": 240,
+   "h": 114,
+   "kind": "bad",
+   "title": "SEVERE complications",
+   "lines": [
+    "eclampsia, stroke · pulmonary edema, saturation < 90%",
+    "acute kidney injury · international normalized ratio (INR) > 2 · abruption"
+   ]
+  },
+  {
+   "id": "ecl_watch_0_0",
+   "x": 829,
+   "y": 626,
+   "w": 240,
+   "h": 114,
+   "kind": "bad",
+   "title": "Neurological symptoms",
+   "lines": [
+    "investigate: rule out an intracranial event"
+   ]
+  },
+  {
+   "id": "hel_watch_0_0",
+   "x": 1081,
+   "y": 626,
+   "w": 240,
+   "h": 114,
+   "kind": "bad",
+   "title": "SEVERE if",
+   "lines": [
+    "platelets < 50 or needing a transfusion",
+    "INR > 2 · liver rupture or hematoma"
+   ]
+  },
+  {
+   "id": "chr_tx_0_0",
+   "x": 45,
+   "y": 780,
+   "w": 240,
+   "h": 272,
+   "kind": "ok",
+   "title": "ORAL antihypertensives",
+   "lines": [
+    "labetalol 100–400 mg 2–3×/day (max 1200 mg)",
+    "nifedipine extended-release 20–60 mg 1–2×/day (max 60 mg)",
+    "methyldopa 250–500 mg 2–4×/day (max 2 g)"
+   ]
+  },
+  {
+   "id": "ges_tx_0_0",
+   "x": 297,
+   "y": 780,
+   "w": 240,
+   "h": 89,
+   "kind": "ok",
+   "title": "The same ORAL drugs",
+   "lines": [
+    "← chronic column"
+   ]
+  },
+  {
+   "id": "ges_tx_1_0",
+   "x": 297,
+   "y": 891,
+   "w": 240,
+   "h": 161,
+   "kind": "bad",
+   "title": "AVOID in any pregnancy",
+   "lines": [
+    "diuretics: cut intravascular volume",
+    "angiotensin-converting enzyme (ACE) inhibitors, angiotensin receptor blockers: fetal kidney failure, oligohydramnios"
+   ]
+  },
+  {
+   "id": "pe_tx_0_0",
+   "x": 577,
+   "y": 780,
+   "w": 240,
+   "h": 152,
+   "kind": "bad",
+   "title": "1 · SEVERE BP: intravenous (IV)",
+   "lines": [
+    "labetalol 20 mg IV, then 20–80 mg every 30 min (max 300 mg)",
+    "hydralazine 5 mg IV, then 5–10 mg every 30 min",
+    "nifedipine 5–10 mg every 30 min"
+   ]
+  },
+  {
+   "id": "pe_tx_1_0",
+   "x": 577,
+   "y": 954,
+   "w": 240,
+   "h": 98,
+   "kind": "ok",
+   "title": "2 · Complications decide DELIVERY",
+   "lines": [
+    "once decided in SEVERE pre-eclampsia: MgSO4 →"
+   ]
+  },
+  {
+   "id": "ecl_tx_0_0",
+   "x": 829,
+   "y": 780,
+   "w": 240,
+   "h": 272,
+   "kind": "ok",
+   "title": "Magnesium sulfate (MgSO4)",
+   "lines": [
+    "raises the seizure threshold",
+    "load 4 g IV over 20 min, then 1–2 g/h",
+    "until delivery + 12–48 h post-partum"
+   ]
+  },
+  {
+   "id": "hel_tx_0_0",
+   "x": 1081,
+   "y": 780,
+   "w": 240,
+   "h": 272,
+   "kind": "ok",
+   "title": "As pre-eclampsia",
+   "lines": [
+    "complications decide DELIVERY"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_prob",
+   "path": "M683.0 108V133H291.0V158"
+  },
+  {
+   "from": "root",
+   "to": "g_symp",
+   "path": "M683.0 108V133H949.0V158"
+  },
+  {
+   "from": "ges_tx_0_0",
+   "to": "ges_tx_1_0"
+  },
+  {
+   "from": "pe_tx_0_0",
+   "to": "pe_tx_1_0"
+  },
+  {
+   "from": "chr_head_0_0",
+   "to": "chr_dx_0_0"
+  },
+  {
+   "from": "chr_dx_0_0",
+   "to": "chr_watch_0_0"
+  },
+  {
+   "from": "chr_watch_0_0",
+   "to": "chr_tx_0_0"
+  },
+  {
+   "from": "g_prob",
+   "to": "chr_head_0_0",
+   "from_dx": -126,
+   "label": "before 20 weeks",
+   "label_at": [
+    165.0,
+    276
+   ]
+  },
+  {
+   "from": "ges_head_0_0",
+   "to": "ges_dx_0_0"
+  },
+  {
+   "from": "ges_dx_0_0",
+   "to": "ges_watch_0_0"
+  },
+  {
+   "from": "ges_watch_0_0",
+   "to": "ges_tx_0_0"
+  },
+  {
+   "from": "g_prob",
+   "to": "ges_head_0_0",
+   "from_dx": 126,
+   "label": "after 20 weeks",
+   "label_at": [
+    417.0,
+    276
+   ]
+  },
+  {
+   "from": "pe_head_0_0",
+   "to": "pe_dx_0_0"
+  },
+  {
+   "from": "pe_dx_0_0",
+   "to": "pe_watch_0_0"
+  },
+  {
+   "from": "pe_watch_0_0",
+   "to": "pe_tx_0_0"
+  },
+  {
+   "from": "g_symp",
+   "to": "pe_head_0_0",
+   "from_dx": -252,
+   "label": "+ proteinuria",
+   "label_at": [
+    697.0,
+    276
+   ]
+  },
+  {
+   "from": "ecl_head_0_0",
+   "to": "ecl_dx_0_0"
+  },
+  {
+   "from": "ecl_dx_0_0",
+   "to": "ecl_watch_0_0"
+  },
+  {
+   "from": "ecl_watch_0_0",
+   "to": "ecl_tx_0_0"
+  },
+  {
+   "from": "g_symp",
+   "to": "ecl_head_0_0",
+   "from_dx": 0,
+   "label": "+ seizures",
+   "label_at": [
+    949.0,
+    276
+   ]
+  },
+  {
+   "from": "hel_head_0_0",
+   "to": "hel_dx_0_0"
+  },
+  {
+   "from": "hel_dx_0_0",
+   "to": "hel_watch_0_0"
+  },
+  {
+   "from": "hel_watch_0_0",
+   "to": "hel_tx_0_0"
+  },
+  {
+   "from": "g_symp",
+   "to": "hel_head_0_0",
+   "from_dx": 252,
+   "label": "± hypertension",
+   "label_at": [
+    1201.0,
+    276
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1086,
+   "w": 1276,
+   "title": "Severe BP EARLY in pregnancy? think",
+   "items": [
+    "thyroid storm: high hCG",
+    "molar pregnancy: see the FIRST-TRIMESTER BLEEDING chart",
+    "theca lutein cysts: ovarian hyperstimulation"
+   ],
+   "cols": 3
+  }
+ ]
+}

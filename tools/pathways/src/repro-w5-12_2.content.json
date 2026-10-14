@@ -1,0 +1,343 @@
+{
+ "name": "hypertension in pregnancy overview",
+ "title": "Hypertensive disorders of pregnancy: chronic and gestational hypertension, split by onset before or after 20 weeks, where the blood pressure is the problem and is treated with oral drugs, against pre-eclampsia, eclampsia and HELLP syndrome, where it is a symptom, severe pressure is lowered with intravenous drugs, magnesium sulfate prevents seizures and complications decide delivery",
+ "col_w": 240,
+ "root": {
+  "title": "High blood pressure (BP) in pregnancy: WHEN did it start, and is the BP the PROBLEM or a SYMPTOM?",
+  "lines": [
+   "MILD: systolic > 140 or diastolic > 90 · SEVERE: systolic > 160 or diastolic > 110 · each on 2 readings > 15 min apart",
+   "exclude white-coat and transient (pain-driven) elevation"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_prob",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "BP IS THE PROBLEM: treat the BP",
+   "lines": [
+    "isolated BP elevation"
+   ]
+  },
+  {
+   "id": "g_symp",
+   "cols": [
+    2,
+    4
+   ],
+   "title": "BP IS A SYMPTOM: protect mother and fetus",
+   "lines": [
+    "SEVERE BP risks STROKE: lower it urgently to < 160 / < 110",
+    "complications (their presence and severity) decide DELIVERY"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "dx",
+  "watch",
+  "tx"
+ ],
+ "row_names": {
+  "dx": "DIAGNOSIS",
+  "watch": "WATCH FOR",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "dx"
+ ],
+ "columns": [
+  {
+   "id": "chr",
+   "colour": "teal",
+   "drop_label": "before 20 weeks",
+   "head": [
+    [
+     [
+      "h",
+      "Chronic (pre-existing) hypertension",
+      [
+       "before pregnancy or diagnosed < 20 weeks"
+      ]
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "t",
+      "The EARLIER the onset",
+      [
+       "↑ placental dysfunction",
+       "↑ progression to pre-eclampsia"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "w",
+      "Diabetes, kidney disease",
+      [
+       "↑ severity and progression to pre-eclampsia"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "ORAL antihypertensives",
+      [
+       "labetalol 100–400 mg 2–3×/day (max 1200 mg)",
+       "nifedipine extended-release 20–60 mg 1–2×/day (max 60 mg)",
+       "methyldopa 250–500 mg 2–4×/day (max 2 g)"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ges",
+   "colour": "purple",
+   "drop_label": "after 20 weeks",
+   "head": [
+    [
+     [
+      "h",
+      "Gestational hypertension",
+      [
+       "after 20 weeks"
+      ]
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "t",
+      "NORMAL BPs documented up to 20 weeks",
+      [
+       "NO adverse conditions or severe complications"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "w",
+      "Co-morbid conditions",
+      [
+       "↑ severity and progression to pre-eclampsia"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "The same ORAL drugs",
+      [
+       "← chronic column"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "AVOID in any pregnancy",
+      [
+       "diuretics: cut intravascular volume",
+       "angiotensin-converting enzyme (ACE) inhibitors, angiotensin receptor blockers: fetal kidney failure, oligohydramnios"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pe",
+   "colour": "orange",
+   "drop_label": "+ proteinuria",
+   "head": [
+    [
+     [
+      "h",
+      "Pre-eclampsia",
+      [
+       "hypertension + PROTEINURIA",
+       "late gestation · more often a first pregnancy"
+      ]
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "t",
+      "Adverse conditions?",
+      [
+       "headache, visual change · chest pain, saturation < 97%",
+       "right upper quadrant pain · ↑ creatinine, liver enzymes",
+       "↓ platelets · fetal growth restriction"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "bad",
+      "SEVERE complications",
+      [
+       "eclampsia, stroke · pulmonary edema, saturation < 90%",
+       "acute kidney injury · international normalized ratio (INR) > 2 · abruption"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · SEVERE BP: intravenous (IV)",
+      [
+       "labetalol 20 mg IV, then 20–80 mg every 30 min (max 300 mg)",
+       "hydralazine 5 mg IV, then 5–10 mg every 30 min",
+       "nifedipine 5–10 mg every 30 min"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Complications decide DELIVERY",
+      [
+       "once decided in SEVERE pre-eclampsia: MgSO4 →"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ecl",
+   "colour": "blue",
+   "drop_label": "+ seizures",
+   "head": [
+    [
+     [
+      "h",
+      "Eclampsia",
+      [
+       "pre-eclampsia + SEIZURES",
+       "usually poorly controlled pre-eclampsia"
+      ]
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "t",
+      "Warning signs",
+      [
+       "new or worsening proteinuria · headache",
+       "clonus, photosensitivity · severe, uncontrolled BP"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "bad",
+      "Neurological symptoms",
+      [
+       "investigate: rule out an intracranial event"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Magnesium sulfate (MgSO4)",
+      [
+       "raises the seizure threshold",
+       "load 4 g IV over 20 min, then 1–2 g/h",
+       "until delivery + 12–48 h post-partum"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hel",
+   "colour": "magenta",
+   "drop_label": "± hypertension",
+   "head": [
+    [
+     [
+      "h",
+      "HELLP syndrome",
+      [
+       "Hemolysis · Elevated Liver enzymes · Low Platelets",
+       "atypical pre-eclampsia / eclampsia"
+      ]
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "bad",
+      "BP can be NORMAL",
+      [
+       "hypertension is NOT required"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "bad",
+      "SEVERE if",
+      [
+       "platelets < 50 or needing a transfusion",
+       "INR > 2 · liver rupture or hematoma"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "As pre-eclampsia",
+      [
+       "complications decide DELIVERY"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Severe BP EARLY in pregnancy? think",
+   "cols": 3,
+   "items": [
+    "thyroid storm: high hCG",
+    "molar pregnancy: see the FIRST-TRIMESTER BLEEDING chart",
+    "theca lutein cysts: ovarian hyperstimulation"
+   ]
+  }
+ ]
+}
