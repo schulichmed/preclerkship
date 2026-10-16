@@ -94,10 +94,6 @@ COURSES = [
             ("gu",     5, u"Nephrology & Urology",   u"14\u201317"),
         ],
         "families": [
-            {"key": "weekly", "name": u"Weekly quizzes",
-             "tip": u"The weekly quizzes, as sat",
-             "blurb": u"The week's quiz as it was sat, kept whole as its own set so a "
-                      u"week can be drilled the way it was written."},
             {"key": "meds2024", "name": u"Meds 2024 bank",
              "tip": u"Class of 2024 bank, partly faculty-reviewed",
              "blurb": u"The student-written bank the Class of 2024 Academic Directors "
@@ -144,11 +140,6 @@ COURSES = [
             ("psych", 5, u"Psychiatry",      u"17–20"),
         ],
         "families": [
-            {"key": "weekly", "name": u"Weekly quizzes",
-             "tip": u"The weekly quizzes, as sat",
-             "blurb": u"The weekly quizzes, both the Microsoft Forms ones and the ones sat "
-                      u"in Elentra. Kept whole as their own set, so a week's quiz can be "
-                      u"drilled the way it was written."},
             {"key": "meds2029", "name": u"Clinical Questions",
              "blurb": u"Clinical Questions."},
             {"key": "reviews", "name": u"Schulich Reviews",
