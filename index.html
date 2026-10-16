@@ -6,10 +6,11 @@
 <title>Schulich Pre-clerkship</title>
 <meta name="description" content="Notes and practice questions for the pre-clerkship years at Schulich: Foundations of Medicine, Principles of Medicine 1 and 2, and Transition to Clerkship.">
 <meta name="robots" content="noindex, nofollow">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231f4e5f'/><text x='16' y='23' font-family='Georgia,serif' font-size='17' font-weight='600' fill='%23ffffff' text-anchor='middle'>PC</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%234f2683'/><text x='16' y='23' font-family='Georgia,serif' font-size='17' font-weight='600' fill='%23ffffff' text-anchor='middle'>PC</text></svg>">
 
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
+<meta name="theme-color" content="#ffffff">
 <script>
 (function(){
   var root=document.documentElement,KEY="pc-theme",stored=null,mq=null;
@@ -19,6 +20,8 @@
   function os(){return mq&&mq.matches?"dark":"light";}
   function apply(t){
     root.setAttribute("data-theme",t);
+    var m=document.querySelector('meta[name="theme-color"]');
+    if(m)m.setAttribute("content",t==="dark"?"#140c22":"#ffffff");
     var b=document.getElementById("theme-btn");
     if(!b)return;
     b.setAttribute("aria-pressed",t==="dark"?"true":"false");
@@ -31,21 +34,31 @@
   else if(mq&&mq.addListener)mq.addListener(follow);
   document.addEventListener("DOMContentLoaded",function(){apply(root.getAttribute("data-theme"));});
   document.addEventListener("click",function(e){
+    var s=e.target&&e.target.closest?e.target.closest(".skip"):null;
+    if(s){
+      var c=document.getElementById("content");
+      if(c){e.preventDefault();c.focus();c.scrollIntoView();}
+      return;
+    }
     var b=e.target&&e.target.closest?e.target.closest("#theme-btn"):null;
     if(!b)return;
     stored=root.getAttribute("data-theme")==="dark"?"light":"dark";
     try{localStorage.setItem(KEY,stored);}catch(e2){}
-    apply(stored);
+    /* a crossfade between the themes where the browser can draw one and the
+       reader has not asked for less motion; otherwise the switch is instant */
+    var calm=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if(document.startViewTransition&&!calm)document.startViewTransition(function(){apply(stored);});
+    else apply(stored);
   });
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="base.css?v=5162448b">
-<link rel="stylesheet" href="portal.css?v=8ec81b26">
+<link rel="stylesheet" href="base.css?v=b85f4920">
+<link rel="stylesheet" href="portal.css?v=b5c07275">
 <style>
-:root{--q-accent:#1f4e5f;--q-accent-soft:#dfecf0;--q-accent-ink:#193f4d;}
+:root{--q-accent:#4f2683;--q-accent-soft:#e9def8;--q-accent-ink:#3f1e69;}
 </style>
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d66f0003318d42f1bd62e0a2c3e216af"}'></script>
 <script>
@@ -80,8 +93,11 @@
 </script>
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 
 <div class="pom2-page">
+
+<main id="content" tabindex="-1">
 
 <div class="page-hero">
 <div class="hero-corner">
@@ -96,7 +112,7 @@ pre-clerkship.
 </div>
 
 <div class="block-grid hub-grid">
-<a class="block-card" href="fom/index.html" style="--hue:#1f4e5f">
+<a class="block-card" href="fom/index.html" style="--hue:#4f2683">
 <p class="bmeta">Year 1 &middot; 4 blocks</p>
 <h2>Foundations of Medicine</h2>
 <p>The first fifteen weeks: what a physician does, then the body from cells up, then blood, then infection and immunity.</p>
@@ -105,7 +121,7 @@ pre-clerkship.
 <span><b>2,072</b> practice questions</span>
 </span>
 </a>
-<a class="block-card" href="pom1/index.html" style="--hue:#6b5a2f">
+<a class="block-card" href="pom1/index.html" style="--hue:#6b3fb8">
 <p class="bmeta">Year 1 &middot; 5 blocks</p>
 <h2>Principles of Medicine 1</h2>
 <p>The second half of first year, system by system.</p>
@@ -114,16 +130,16 @@ pre-clerkship.
 <span><b>2,302</b> practice questions</span>
 </span>
 </a>
-<a class="block-card" href="pom2/index.html" style="--hue:#84223b">
+<a class="block-card" href="pom2/index.html" style="--hue:#7a3fb0">
 <p class="bmeta">Year 2 &middot; 5 blocks</p>
 <h2>Principles of Medicine 2</h2>
 <p>The five blocks of second year, with a written note for every lecture that has one and a coverage map for the rest.</p>
 <span class="tally">
 <span><b>222</b> lecture notes</span>
-<span><b>1,925</b> practice questions</span>
+<span><b>1,928</b> practice questions</span>
 </span>
 </a>
-<a class="block-card" href="t2c/index.html" style="--hue:#3f4a5a">
+<a class="block-card" href="t2c/index.html" style="--hue:#3a2a6e">
 <p class="bmeta">Year 2 &middot; 6 blocks</p>
 <h2>Transition to Clerkship</h2>
 <p>The bridge into clerkship at the end of second year.</p>
@@ -270,6 +286,8 @@ instructions are under <strong>Open source: contribute or customize</strong> abo
 </details>
 
 </div>
+
+</main>
 
 <footer>
 For any inquiries, email <a href="mailto:schulichmedfriends@gmail.com">schulichmedfriends@gmail.com</a>

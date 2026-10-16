@@ -1,16 +1,35 @@
 /* The design tokens and the handful of element rules the portal is built on.
+
+   The palette is Western's: Western purple for the brand, orchid beside it,
+   deep focus for text and the dark theme, soft lavender for every surface a
+   card or control sits on. The four brights (sky, spring, vivid, tiger) are
+   too light to carry text on white, so they are kept for the dark theme's
+   focus ring and for decoration.
    pom2.css extends these, and every block page overrides the --q-accent trio
    in its own inline :root. Change the palette here and the whole portal
    follows. */
 
 :root{
-    --bg:#faf7f7;
-    --card-bg:#ffffff;
-    --text:#27060f;
-    --muted:#8a7a7d;
-    --border:#ecdfe1;
-    --accent:#84223b;
-    --accent-soft:#f5cdd2;
+    --western-purple:#4f2683;
+    --orchid:#8f55e0;
+    --deep-focus:#201436;
+    --soft-lavender:#f5f0fc;
+    --sky:#7deafb;
+    --spring:#b9f876;
+    --vivid:#fcf05e;
+    --tiger:#f0a757;
+
+    --bg:#ffffff;
+    --card-bg:var(--soft-lavender);
+    --text:var(--deep-focus);
+    /* 6.0:1 on the page and 5.3:1 on a card, so the quiet text - the uplink,
+       the lead, every count and label - clears WCAG AA */
+    --muted:#6a5e7e;
+    --border:#e5dcef;
+    --accent:var(--western-purple);
+    --accent-soft:#e9def8;
+    --shadow:0 1px 2px rgba(32,20,54,.06),0 8px 24px -12px rgba(79,38,131,.28);
+    --hero:linear-gradient(135deg,#201436 0%,#4f2683 65%,#8f55e0 100%);
     --serif:"Fraunces",Georgia,serif;
     --sans:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
 }
@@ -18,24 +37,24 @@
 /* The dark theme. The inline script in every page's head sets data-theme on
    the root before the stylesheets apply, from the reader's stored choice or,
    failing that, the OS setting; with scripting off there is no attribute and
-   the page stays light. The values keep the light palette's warmth: a rose
-   black rather than a neutral one, so the two themes read as one portal.
-   Measured against the bg: text 18.2:1, muted 10.9:1, accent 9.5:1; the card sits
-   8 L* above the bg and the border is 2.3:1 on the card, so a card reads as a
-   shape at a glance.
+   the page stays light. The page is a shade under deep focus and the cards
+   are deep focus itself, so the two themes read as one palette. Measured
+   against the bg: text 18.6:1, muted 10.7:1, accent 9.0:1; on a card, muted
+   9.8:1, and the border 2.2:1, so a card reads as a shape at a glance.
 
    Wrapped in "not print" rather than reverted under print, so the light values
    above are what a PDF gets and there is only one copy of them. color-scheme
    tells the browser the form controls and scrollbars should follow. */
 @media not print{
     :root[data-theme="dark"]{
-        --bg:#151012;
-        --card-bg:#282024;
-        --text:#fefafb;
-        --muted:#d0c1c4;
-        --border:#66555c;
-        --accent:#f0a2b5;
-        --accent-soft:#4d2733;
+        --bg:#140c22;
+        --card-bg:var(--deep-focus);
+        --text:#fbf9fe;
+        --muted:#c9bde0;
+        --border:#5e4a88;
+        --accent:#c4a3f5;
+        --accent-soft:#3a2560;
+        --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px -12px rgba(0,0,0,.6);
         color-scheme:dark;
     }
 }
@@ -68,6 +87,50 @@ a{
     color:inherit;
     text-decoration:none;
 }
+
+/* One focus ring for the whole portal, shown only to the keyboard
+   (:focus-visible), so a mouse click leaves no outline behind. It takes the
+   block's accent where the page has one and the portal's otherwise; in the
+   dark theme that is the lightened ink, since the accent itself is too dark to
+   see on the dark bg. */
+:focus-visible{
+    outline:2px solid var(--q-accent-text,var(--accent));
+    outline-offset:2px;
+    border-radius:3px;
+}
+
+:root[data-theme="dark"] :focus-visible{outline-color:var(--sky);}
+
+/* Moving between pages fades rather than blinks, in browsers that can do a
+   cross-document view transition (the rest just navigate as before), and not
+   at all for a reader who has asked for less motion. */
+@media (prefers-reduced-motion:no-preference){
+    @view-transition{navigation:auto;}
+    ::view-transition-old(root),
+    ::view-transition-new(root){animation-duration:.22s;}
+}
+
+/* "Skip to content", the first stop for a keyboard: it stays off screen until
+   it has focus, then drops in at the top left. Every page has one, pointing
+   past the nav to the page's own content. */
+.skip{
+    position:absolute;
+    top:8px;
+    left:8px;
+    z-index:100;
+    padding:8px 14px;
+    font-size:.85rem;
+    font-weight:600;
+    color:var(--card-bg);
+    background:var(--text);
+    border-radius:6px;
+    transform:translateY(-200%);
+}
+
+.skip:focus{transform:none;}
+
+/* the skip link's target takes focus only so the next Tab starts from there */
+#content:focus{outline:none;}
 
 /* the one way back up to the hub, on pages that carry no block nav.
    A plain link, not a bar: the portal is its own place, and the route out
@@ -138,8 +201,8 @@ a{
    page, the right end of the block nav */
 .hero-corner{
     position:absolute;
-    top:4px;
-    right:0;
+    top:18px;
+    right:18px;
     display:flex;
     align-items:center;
     gap:10px;
@@ -174,13 +237,56 @@ a{
 .blocknav .theme-btn{margin-left:auto;}
 
 @media print{
-    .theme-btn{display:none !important;}
+    .theme-btn,.skip{display:none !important;}
 }
 
-/* the landing page masthead */
+/* the landing page masthead: the one deep band in the portal, the brand
+   gradient with white type on it, so the front door of every course looks
+   like the same place. Text sits on its left two thirds, over the darker
+   end, where white is 10:1 or better. */
 .page-hero{
     position:relative;
-    margin-bottom:56px;
+    margin-bottom:48px;
+    padding:56px 48px 52px;
+    color:#ffffff;
+    background:var(--hero);
+    border-radius:20px;
+    box-shadow:0 24px 48px -28px rgba(32,20,54,.55);
+    overflow:hidden;
+    isolation:isolate;
+}
+
+/* a soft orchid glow in the far corner, so the band has depth rather than
+   reading as a flat swatch */
+.page-hero::after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    right:-120px;
+    bottom:-160px;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:radial-gradient(closest-side,rgba(125,234,251,.22),transparent);
+    pointer-events:none;
+}
+
+.page-hero a{color:#ffffff;text-decoration:underline;text-underline-offset:2px;}
+.page-hero :focus-visible{outline-color:var(--sky);}
+
+/* the controls in the hero's corner turn into glass on the band */
+.page-hero .theme-btn,
+.page-hero .presence{
+    color:#ffffff;
+    background:rgba(255,255,255,.12);
+    border-color:rgba(255,255,255,.32);
+}
+.page-hero .theme-btn:hover{border-color:#ffffff;}
+.page-hero .presence b{color:#ffffff;}
+
+@media print{
+    .page-hero{color:var(--text);background:none;box-shadow:none;padding:0;}
+    .page-hero p,.page-hero .eyebrow{color:var(--muted) !important;}
 }
 
 /* who the portal belongs to, above the title. Small and letter-spaced so it
@@ -190,13 +296,13 @@ a{
     font-weight:600;
     letter-spacing:.08em;
     text-transform:uppercase;
-    color:var(--muted);
+    color:var(--sky);
     margin-bottom:16px;
 }
 
 .page-hero h1{
     font-family:var(--serif);
-    font-size:clamp(3rem,8vw,4.5rem);
+    font-size:clamp(2.5rem,8vw,4.5rem);
     font-weight:600;
     letter-spacing:-.02em;
     margin-bottom:20px;
@@ -204,7 +310,7 @@ a{
 
 .page-hero p{
     max-width:640px;
-    color:var(--muted);
+    color:rgba(255,255,255,.88);
     font-size:1.05rem;
     line-height:1.6;
 }
@@ -225,6 +331,8 @@ footer a{
 
 @media (max-width:800px){
     .page-hero{
-        margin-bottom:40px;
+        margin-bottom:32px;
+        padding:36px 24px 32px;
+        border-radius:16px;
     }
 }

@@ -31,7 +31,7 @@ COURSES = [
         "year": u"Year 1",
         "blurb": u"The first fifteen weeks: what a physician does, then the body from "
                  u"cells up, then blood, then infection and immunity.",
-        "accent": u"#1f4e5f",
+        "accent": u"#4f2683",
         "store": "nsq.fom.v1.",
         "blocks": [
             ("b1", 1, u"Principles & Development",      u"1–4"),
@@ -87,7 +87,7 @@ COURSES = [
         "name": u"Principles of Medicine 1",
         "year": u"Year 1",
         "blurb": u"The second half of first year, system by system.",
-        "accent": u"#6b5a2f",
+        "accent": u"#6b3fb8",
         "store": "nsq.pom1.v1.",
         "blocks": [
             ("cardio", 1, u"Cardiology",             u"1\u20135"),
@@ -141,7 +141,7 @@ COURSES = [
         "year": u"Year 2",
         "blurb": u"The five blocks of second year, with a written note for every "
                  u"lecture that has one and a coverage map for the rest.",
-        "accent": u"#84223b",
+        "accent": u"#7a3fb0",
         "store": "nsq.v1.",
         "blocks": [
             ("endo",  1, u"Endocrinology",   u"1–3"),
@@ -198,7 +198,7 @@ COURSES = [
         "name": u"Transition to Clerkship",
         "year": u"Year 2",
         "blurb": u"The bridge into clerkship at the end of second year.",
-        "accent": u"#3f4a5a",
+        "accent": u"#3a2a6e",
         "store": "nsq.t2c.v1.",
         "blocks": [
             ("peds",   1, u"Pediatrics",                          u"1\u20132"),
@@ -284,7 +284,8 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
 # the portal is not growing a fourth one for a button. ES5, like the rest; the
 # click is caught on the document because the button is not built yet when
 # this runs, and DOMContentLoaded labels it once it is.
-THEME_SCRIPT = """<script>
+THEME_SCRIPT = """<meta name="theme-color" content="#ffffff">
+<script>
 (function(){
   var root=document.documentElement,KEY="pc-theme",stored=null,mq=null;
   try{stored=localStorage.getItem(KEY);}catch(e){}
@@ -293,6 +294,8 @@ THEME_SCRIPT = """<script>
   function os(){return mq&&mq.matches?"dark":"light";}
   function apply(t){
     root.setAttribute("data-theme",t);
+    var m=document.querySelector('meta[name="theme-color"]');
+    if(m)m.setAttribute("content",t==="dark"?"#140c22":"#ffffff");
     var b=document.getElementById("theme-btn");
     if(!b)return;
     b.setAttribute("aria-pressed",t==="dark"?"true":"false");
@@ -305,14 +308,33 @@ THEME_SCRIPT = """<script>
   else if(mq&&mq.addListener)mq.addListener(follow);
   document.addEventListener("DOMContentLoaded",function(){apply(root.getAttribute("data-theme"));});
   document.addEventListener("click",function(e){
+    var s=e.target&&e.target.closest?e.target.closest(".skip"):null;
+    if(s){
+      var c=document.getElementById("content");
+      if(c){e.preventDefault();c.focus();c.scrollIntoView();}
+      return;
+    }
     var b=e.target&&e.target.closest?e.target.closest("#theme-btn"):null;
     if(!b)return;
     stored=root.getAttribute("data-theme")==="dark"?"light":"dark";
     try{localStorage.setItem(KEY,stored);}catch(e2){}
-    apply(stored);
+    /* a crossfade between the themes where the browser can draw one and the
+       reader has not asked for less motion; otherwise the switch is instant */
+    var calm=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if(document.startViewTransition&&!calm)document.startViewTransition(function(){apply(stored);});
+    else apply(stored);
   });
 })();
 </script>"""
+
+# The phone's browser bar takes the page's background from the theme-color
+# meta above, and apply() keeps it in step with the toggle, so a dark page does
+# not sit under a white bar.
+#
+# Every page's "Skip to content" link (class "skip") is caught here too. It
+# moves focus rather than following its href, because the course pages keep
+# their tab and their filters in the hash and "#content" would clobber them;
+# the href is there for a page with scripting off.
 
 # The toggle. A moon while the page is light and a sun while it is dark, each
 # an inline path rather than an image file, so the hub's one HTML file stays
@@ -413,7 +435,7 @@ def footer():
             '<a href="mailto:%s">%s</a>\n</footer>' % (CONTACT, CONTACT))
 
 
-def favicon(label="PC", fill="1f4e5f"):
+def favicon(label="PC", fill="4f2683"):
     return ("<link rel=\"icon\" href=\"data:image/svg+xml,"
             "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'>"
             "<rect width='32' height='32' rx='7' fill='%%23%s'/>"
