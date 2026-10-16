@@ -222,7 +222,7 @@ COURSES = [
 BY_SLUG = dict((c["slug"], c) for c in COURSES)
 
 # the engine, shared by every course and living at the repo root
-ASSETS = ["base.css", "portal.css", "portal.js", "quiz.js", "notes.js"]
+ASSETS = ["base.css", "portal.css", "portal.js", "quiz.js", "notes.js", "sync.js"]
 
 
 def course_count(qs):
@@ -406,6 +406,34 @@ PRESENCE_SCRIPT = """<script>
 </script>""" % json.dumps(PRESENCE_URL)
 if PRESENCE_URL:
     CF += "\n" + PRESENCE_SCRIPT
+
+# Sign in with Google, so progress and notes follow a reader to any device:
+# sync.js, backed by Firebase (Google sign-in and a Firestore database, both on
+# the free plan). Paste the firebaseConfig block from the Firebase console's
+# Project settings > Your apps here as a dict. It names the project and is
+# public by design, not a secret: what keeps each reader's progress their own
+# is the Firestore rule that a signed-in user may touch only users/<their id>.
+# Empty, and no page loads sync.js or shows the button.
+FIREBASE_CONFIG = {
+    "apiKey": "AIzaSyC-WGCeL_hhxHK7oKuvomdVrJ2unxEoi2k",
+    "authDomain": "medfriend-schulich.firebaseapp.com",
+    "projectId": "medfriend-schulich",
+    "storageBucket": "medfriend-schulich.firebasestorage.app",
+    "messagingSenderId": "678233400126",
+    "appId": "1:678233400126:web:53adbac33c626a0967426f",
+}
+
+
+def sync_tag(base="../"):
+    """The config and the deferred sync.js, for a page's head. base is the
+    path to the repo root: "../" from a course page, "" from the hub."""
+    if not FIREBASE_CONFIG:
+        return ""
+    cfg = {"firebase": FIREBASE_CONFIG, "stores": [c["store"] for c in COURSES]}
+    return ('\n<script>window.PORTAL_SYNC_CFG = %s;</script>'
+            '\n<script defer src="%ssync.js?v=%s"></script>'
+            % (json.dumps(cfg), base, digest("sync.js")))
+
 
 # The hub's corner readout, filled by PRESENCE_SCRIPT.
 PRESENCE_SLOT = (
