@@ -146,7 +146,7 @@ mistaken for this set.
 
 `tags` is the one filter that cuts across the others. The anatomy, histology and
 embryology lectures are a strand of their own, but their questions arrive as
-Elentra modules, as module cases and as workbook chapters, and they sit in more
+module cases and as workbook chapters, and they sit in more
 than one week, so neither the question-set nor the week dropdown can gather
 them. Tagging those questions `["anatomy"]` puts a **Topic** dropdown in the
 toolbar that does. A block with nothing tagged shows no group at all, so the four blocks
@@ -199,8 +199,8 @@ The code is MIT, see [LICENSE](LICENSE).
 
 The study content under `data/` has its own history. The 700 practice questions
 came out of shared course material: a student-written workbook handed down through
-the Schulich classes of 2015 to 2025, Elentra module knowledge checks, weekly
-quizzes, slide concept checks and questions written from the case and small-group
+the Schulich classes of 2015 to 2025, weekly
+quizzes and questions written from the case and small-group
 sessions.
 
 **They are here on purpose.** These are resources students already pass between

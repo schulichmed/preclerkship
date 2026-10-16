@@ -40,11 +40,6 @@
      is a visible gap in coverage, which is the point. */
   var FAMILIES = BLOCK.families || [
     {
-      key: "module",
-      name: "Course modules",
-      blurb: "The Elentra module knowledge checks and the concept checks on the lecture slides. Cases live under Curriculum Cases instead, wherever they came from."
-    },
-    {
       key: "weekly",
       name: "Weekly quizzes",
       blurb: "The weekly quizzes, both the Microsoft Forms ones and the ones sat in Elentra. Kept whole as their own set, so a week's quiz can be drilled the way it was written."
@@ -56,9 +51,8 @@
     },
     {
       key: "meds2029",
-      name: "Curriculum Cases",
-      show_blurb: true,
-      blurb: "Cases and questions directly from our 2026-27 curriculum (Meds 2029): DSSGs, in-class lectures and modules, likely to be recycled on exams."
+      name: "Clinical Questions",
+      blurb: "Clinical Questions."
     },
     {
       key: "reviews",

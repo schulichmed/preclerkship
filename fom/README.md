@@ -33,8 +33,6 @@ rewritten. None of it is AI-generated.
 Every question keeps the set it arrived in, and the **Question set** filter is
 that split:
 
-- **Module questions**: the knowledge checks inside each week's Elentra
-  asynchronous learning modules.
 - **Readiness assessments** and **self-assessments**: the week's RA and SA.
   Several early weeks never had one, and those say so rather than going quietly
   missing.

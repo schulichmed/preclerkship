@@ -41,10 +41,6 @@ COURSES = [
             ("b4", 4, u"Infection & Immunity",          u"13–15"),
         ],
         "families": [
-            {"key": "module", "name": u"Module questions",
-             "tip": u"Elentra module knowledge checks",
-             "blurb": u"The knowledge checks inside the week's Elentra asynchronous "
-                      u"learning modules, transcribed into the Meds 2025 question bank."},
             {"key": "ra", "name": u"Readiness assessments",
              "tip": u"Readiness Assessments, as sat",
              "blurb": u"The week's Readiness Assessment as it was sat. Several weeks "
@@ -98,10 +94,6 @@ COURSES = [
             ("gu",     5, u"Nephrology & Urology",   u"14\u201317"),
         ],
         "families": [
-            {"key": "module", "name": u"Module questions",
-             "tip": u"Elentra module knowledge checks",
-             "blurb": u"The knowledge checks inside the week's Elentra asynchronous "
-                      u"learning modules, transcribed into the Meds 2025 block banks."},
             {"key": "weekly", "name": u"Weekly quizzes",
              "tip": u"The weekly quizzes, as sat",
              "blurb": u"The week's quiz as it was sat, kept whole as its own set so a "
@@ -152,19 +144,13 @@ COURSES = [
             ("psych", 5, u"Psychiatry",      u"17–20"),
         ],
         "families": [
-            {"key": "module", "name": u"Course modules",
-             "tip": u"Elentra knowledge checks and slide concept checks",
-             "blurb": u"The Elentra module knowledge checks and the concept checks on the "
-                      u"lecture slides. Cases live under Curriculum Cases instead, wherever "
-                      u"they came from."},
             {"key": "weekly", "name": u"Weekly quizzes",
              "tip": u"The weekly quizzes, as sat",
              "blurb": u"The weekly quizzes, both the Microsoft Forms ones and the ones sat "
                       u"in Elentra. Kept whole as their own set, so a week's quiz can be "
                       u"drilled the way it was written."},
-            {"key": "meds2029", "name": u"Curriculum Cases", "show_blurb": True,
-             "blurb": u"Cases and questions directly from our 2026-27 curriculum (Meds 2029): "
-                      u"DSSGs, in-class lectures and modules, likely to be recycled on exams."},
+            {"key": "meds2029", "name": u"Clinical Questions",
+             "blurb": u"Clinical Questions."},
             {"key": "reviews", "name": u"Schulich Reviews",
              "tip": u"Upper-year exam review sessions",
              "blurb": u"The Schulich Reviews sessions, run by upper years before each exam. "
