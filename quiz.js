@@ -831,6 +831,101 @@
     return sw;
   }
 
+  /* ---------- terms in the explanation ---------- */
+
+  /* tools/note_links.py found, in each explanation, the terms a lecture note
+     sets in bold, and listed them as [text, block, lecture id, week, the
+     note's bold]. The first time each text appears it becomes a link to that
+     note: on its block page without <dialog>, else opened in place and
+     scrolled to the term. The explanation's own HTML is never edited, so a
+     term that cannot be found is simply left as text. */
+  var TERM_SKIP = /^(A|BUTTON|CODE|SUP|SUB|MARK)$/;
+
+  function linkTerms(root, q) {
+    var list = q.noteTerms;
+    if (!list || !list.length || !document.createTreeWalker) return;
+    try {
+      list.forEach(function (t) {
+        if (!t || typeof t[0] !== "string" || !t[1] || !t[2]) return;
+        var hit = findText(root, t[0]);
+        if (!hit) return;
+        var node = hit.node.splitText(hit.at);
+        node.splitText(t[0].length);
+        var it = { slug: t[1], id: t[2], name: t[4] || t[0] };
+        var a = el("a", "kt");
+        a.href = noteUrl(it);
+        a.title = "Open the note on " + (t[4] || t[0]);
+        node.parentNode.replaceChild(a, node);
+        a.appendChild(node);
+        if (DIALOG_OK) {
+          a.addEventListener("click", function (e) {
+            if (e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+            e.preventDefault();
+            openNote(it, t[3], a, t[4] || t[0]);
+          });
+        }
+      });
+    } catch (e) { /* a card without its links is still a whole card */ }
+  }
+
+  /* The first whole-word occurrence of text in root's prose. */
+  function findText(root, text) {
+    var walk = document.createTreeWalker(root, 4 /* NodeFilter.SHOW_TEXT */, null, false);
+    var n, word = /[A-Za-z0-9]/;
+    while ((n = walk.nextNode())) {
+      var skip = false;
+      for (var p = n.parentNode; p && p !== root; p = p.parentNode) {
+        if (TERM_SKIP.test(p.nodeName)) { skip = true; break; }
+      }
+      if (skip) continue;
+      var v = n.nodeValue, from = 0, at;
+      while ((at = v.indexOf(text, from)) !== -1) {
+        if (!word.test(v.charAt(at - 1) || " ") && !word.test(v.charAt(at + text.length) || " ")) {
+          return { node: n, at: at };
+        }
+        from = at + 1;
+      }
+    }
+    return null;
+  }
+
+  /* In an open note, the bold that is the term: marked, and scrolled to a
+     third of the way down so what defines it shows beneath. */
+  function showTerm(body, term) {
+    var want = String(term).toLowerCase(), best = null;
+    var strip = function (s) { return s.replace(/\s+/g, " ").replace(/^[\s.,:;()\[\]\u2013\u2014-]+|[\s.,:;()\[\]\u2013\u2014-]+$/g, "").toLowerCase(); };
+    var bold = body.querySelectorAll("strong");
+    for (var i = 0; i < bold.length && !best; i++) {
+      if (strip(bold[i].textContent) === want) best = bold[i];
+    }
+    if (!best) return;
+    best.classList.add("kt-hit");
+    var hit = best, held = true;
+    var place = function () {
+      if (!held || !hit.isConnected) return;
+      /* a wide table scrolls sideways inside the note: bring the term in */
+      for (var box = hit.parentNode; box && box !== body; box = box.parentNode) {
+        if (box.scrollWidth > box.clientWidth + 1) {
+          var dx = hit.getBoundingClientRect().left - box.getBoundingClientRect().left;
+          box.scrollLeft = Math.max(0, box.scrollLeft + dx - box.clientWidth / 3);
+        }
+      }
+      var top = hit.getBoundingClientRect().top - body.getBoundingClientRect().top;
+      body.scrollTop = Math.max(0, body.scrollTop + top - body.clientHeight / 3);
+    };
+    place();
+    /* figures above the term load after this and push it down; follow it
+       until they have, or until the reader scrolls for themselves */
+    var letGo = function () { held = false; };
+    ["wheel", "touchstart", "keydown", "mousedown"].forEach(function (ev) {
+      body.addEventListener(ev, letGo, { once: true, passive: true });
+    });
+    Array.prototype.forEach.call(body.querySelectorAll("img"), function (img) {
+      if (!img.complete) img.addEventListener("load", place, { once: true });
+    });
+    setTimeout(letGo, 4000);
+  }
+
   /* ---------- the note dialog ---------- */
 
   /* One lecture's note, read without leaving the question. The dialog is
@@ -916,14 +1011,14 @@
     body.appendChild(p);
   }
 
-  function openNote(it, w, from) {
+  function openNote(it, w, from, term) {
     var d = ensureDialog();
     var where = d.querySelector(".notedlg-where"), title = byId("notedlg-title"),
         full = d.querySelector(".notedlg-full"), body = d.querySelector(".notedlg-body");
     var token = ++OPENING;
     OPENER = from || null;
 
-    where.textContent = (BLOCK_NAME[it.slug] || it.slug) + " \u00b7 Week " + w;
+    where.textContent = (BLOCK_NAME[it.slug] || it.slug) + (w != null ? " \u00b7 Week " + w : "");
     title.textContent = it.name;
     full.href = noteUrl(it);
     body.innerHTML = "";
@@ -948,6 +1043,7 @@
       body.appendChild(shared.build(target, { block: BLOCK_NAME[it.slug] || it.slug, slug: it.slug, onPrint: null }));
       shared.drawPathways(body);
       body.scrollTop = 0;
+      if (term) showTerm(body, term);
     }, function () {
       if (token !== OPENING) return;
       fillState(body, "The note could not be loaded.", it);
@@ -1338,6 +1434,7 @@
     ans.appendChild(el("p", "ans-h", q.keyed ? (q.answerTitle || "Answer") : "Reasoned answer"));
     var ab = el("div", "ans-body");
     ab.innerHTML = q.answer;
+    linkTerms(ab, q);
     ans.appendChild(ab);
     (q.flags || []).forEach(function (f) {
       var c = el("div", "callout k-" + (/^[a-z]+$/.test(f.type) ? f.type : "note"));

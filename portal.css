@@ -1433,6 +1433,41 @@ mark.lo .wl{border-bottom-color:#9a7a00;}
     text-decoration-style:solid;
 }
 
+/* A term the explanation shares with a lecture note (tools/note_links.py).
+   Quieter than an ordinary link, since a paragraph can carry several: the
+   accent's colour and a dotted underline, solid on hover. */
+.ans-body a.kt{
+    color:var(--q-accent-ink);
+    text-decoration:underline;
+    text-decoration-style:dotted;
+    text-decoration-thickness:1px;
+    text-underline-offset:2px;
+}
+/* a wiki-link from the vault that now opens its note keeps one underline */
+.ans-body .wl:has(> a.kt){border-bottom:0;}
+.ans-body a.kt:hover,.ans-body a.kt:focus-visible{
+    color:var(--q-accent-text);
+    text-decoration-style:solid;
+}
+/* the term a link opened the note at. Orchid, not the highlighter yellow
+   the notes already use for their own marks, so it cannot be mistaken for
+   one; white on it reads in either theme. One pulse to catch the eye. */
+.notedlg-body .kt-hit{
+    background:#8f55e0;
+    color:#fff;
+    border-radius:3px;
+    box-shadow:0 0 0 2px #8f55e0;
+    animation:kt-hit 1.6s ease-out 1;
+}
+.notedlg-body .kt-hit *{color:inherit;}
+@keyframes kt-hit{
+    0%{box-shadow:0 0 0 2px #8f55e0,0 0 0 2px rgba(143,85,224,.6);}
+    100%{box-shadow:0 0 0 2px #8f55e0,0 0 0 14px rgba(143,85,224,0);}
+}
+@media (prefers-reduced-motion:reduce){
+    .notedlg-body .kt-hit{animation:none;}
+}
+
 /* The learner's own note on a question. It sits in the answer, under the
    review line, so it shows exactly when the answer does and a sat paper hides
    it with everything else. Set like the review line: the answer is what is
