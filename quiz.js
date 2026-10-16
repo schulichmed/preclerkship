@@ -40,11 +40,6 @@
      is a visible gap in coverage, which is the point. */
   var FAMILIES = BLOCK.families || [
     {
-      key: "weekly",
-      name: "Weekly quizzes",
-      blurb: "The weekly quizzes, both the Microsoft Forms ones and the ones sat in Elentra. Kept whole as their own set, so a week's quiz can be drilled the way it was written."
-    },
-    {
       key: "workbook",
       name: "Pre-Clerkship Workbook",
       blurb: "The Pre-Clerkship Workbook (2023 edition), the student bank passed down through the Schulich classes of 2015-2025. It has a written key, but the key is peer-written and contains real errors. Every one found is flagged on the question."
