@@ -67,13 +67,16 @@ TEMPLATE = u"""<!DOCTYPE html>
 <link rel="stylesheet" href="{base_css}">
 <link rel="stylesheet" href="{portal_css}">
 <style>
-:root{{--q-accent:#1f4e5f;--q-accent-soft:#dfecf0;--q-accent-ink:#193f4d;}}
+:root{{--q-accent:#4f2683;--q-accent-soft:#e9def8;--q-accent-ink:#3f1e69;}}
 </style>
 {cf}
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 
 <div class="pom2-page">
+
+<main id="content" tabindex="-1">
 
 <div class="page-hero">
 <div class="hero-corner">
@@ -228,6 +231,8 @@ instructions are under <strong>Open source: contribute or customize</strong> abo
 
 </div>
 
+</main>
+
 {footer}
 
 </div>
@@ -240,7 +245,7 @@ instructions are under <strong>Open source: contribute or customize</strong> abo
 def main():
     q, w, l = totals()
     html = TEMPLATE.format(
-        favicon=portal.favicon("PC", "1f4e5f"), fonts=portal.FONTS, nocache=portal.NOCACHE,
+        favicon=portal.favicon("PC", "4f2683"), fonts=portal.FONTS, nocache=portal.NOCACHE,
         base_css="base.css?v=" + portal.digest("base.css"),
         portal_css="portal.css?v=" + portal.digest("portal.css"),
         cf=portal.CF, cards=cards(), footer=portal.footer(),

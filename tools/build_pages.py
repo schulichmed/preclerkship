@@ -14,6 +14,7 @@ still renders from build_index.py, saying it is empty.
 """
 
 import io, json, os, re, sys
+from html import escape as html_escape
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import portal
@@ -126,8 +127,8 @@ SEED = {
                         u"--q-accent:#35608f;--q-accent-soft:#e2ebf5;--q-accent-ink:#2b4d73;"),
 }
 
-FAVICON = {"fom": ("FM", "1f4e5f"), "pom2": ("P2", "84223b"),
-           "pom1": ("P1", "6b5a2f"), "t2c": ("T2C", "3f4a5a")}
+FAVICON = {"fom": ("FM", "4f2683"), "pom2": ("P2", "7a3fb0"),
+           "pom1": ("P1", "6b3fb8"), "t2c": ("T2C", "3a2a6e")}
 
 
 def existing(course, slug):
@@ -153,6 +154,18 @@ def block_counts(course, slug):
     # as a gap would disagree with the coverage the page itself paints.
     written = [l for l in lects if l.get("hasNote") or l.get("coveredBy")]
     return portal.course_count(qs), len(written), len(lects)
+
+
+def week_counts(course, slug):
+    """(weeks with a written note, weeks): the second scoreboard as notes.js
+    paints it, written in at build time so the masthead does not change width
+    when the notes arrive."""
+    nt = json.load(io.open(os.path.join(course["slug"], "data", "notes", "%s.json" % slug),
+                           encoding="utf-8"))
+    weeks = nt["weeks"]
+    return (sum(1 for w in weeks
+                if any(l.get("hasNote") or l.get("coveredBy") for l in w.get("lectures") or [])),
+            len(weeks))
 
 
 ANKI_EMPTY = u"""<div class="tab-empty">
@@ -335,7 +348,7 @@ QPANEL = u"""<div class="q-shell q-flow" id="panel-questions" role="tabpanel" ar
 <div class="qbar" id="qbar">
 
 <div class="qbar-filters">
-<div class="qsel" hidden id="f-block-wrap">
+<div class="qsel"{blockhidden} id="f-block-wrap">
 <span id="f-block-lab">Block</span>
 <div class="msel">
 <button class="msel-btn" id="f-block" type="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="f-block-lab f-block-val"><span class="msel-val" id="f-block-val">Block</span><span class="msel-caret" aria-hidden="true">&#9662;</span></button>
@@ -356,7 +369,7 @@ QPANEL = u"""<div class="q-shell q-flow" id="panel-questions" role="tabpanel" ar
 <div class="msel-pop" id="f-family-pop" role="group" aria-labelledby="f-family-lab" hidden></div>
 </div>
 </div>
-<div class="qsel" hidden id="f-tag-wrap">
+<div class="qsel"{taghidden} id="f-tag-wrap">
 <span id="f-tag-lab">Topic</span>
 <div class="msel">
 <button class="msel-btn" id="f-tag" type="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="f-tag-lab f-tag-val"><span class="msel-val" id="f-tag-val">Topic</span><span class="msel-caret" aria-hidden="true">&#9662;</span></button>
@@ -411,9 +424,9 @@ QPANEL = u"""<div class="q-shell q-flow" id="panel-questions" role="tabpanel" ar
 
 <div class="testbar" id="testbar" hidden></div>
 
-<main class="stream" id="stream">
+<div class="stream" id="stream">
 <div class="q-loading">Loading {questions} questions&hellip;</div>
-</main>
+</div>
 
 <div class="pagebar" id="pagebar" hidden></div>
 
@@ -451,30 +464,35 @@ PAGE = u"""<!DOCTYPE html>
 {cf}
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 
 <div class="pom2-page">
 
-<nav class="blocknav">
+<nav class="blocknav" aria-label="Blocks">
 {blocknav}
 {toggle}
 </nav>
 
-<header class="q-masthead">
+<header class="q-masthead" id="content" tabindex="-1">
 <div>
-<p class="eyebrow" id="m-eyebrow"></p>
+<p class="eyebrow" id="m-eyebrow">{eyebrow}</p>
 <h1>{name}</h1>
 <p class="lead">{lead}</p>
 </div>
 <div class="scoreboard" id="sb-notes">
-<div class="score"><b><span id="cv-notes">0</span><span class="of" id="cv-of"></span></b><span>Notes written</span></div>
-<div class="score"><b><span id="cv-weeks">0</span><span class="of" id="cv-weeks-of"></span></b><span>Weeks covered</span></div>
+<div class="score"><b><span id="cv-notes">{written}</span><span class="of" id="cv-of">/{lectures}</span></b><span>Notes written</span></div>
+<div class="score"><b><span id="cv-weeks">{weeks_with}</span><span class="of" id="cv-weeks-of">/{nweeks}</span></b><span>Weeks covered</span></div>
 </div>
 </header>
 
-<div class="tabs" role="tablist" aria-label="Notes or Anki">
+<main>
+
+<div class="tabs">
+<div class="tabset" role="tablist" aria-label="Notes or Anki">
 <button type="button" id="tab-notes" role="tab" aria-selected="true" aria-controls="panel-notes">Notes <span class="tc" id="tc-notes">{written}/{lectures}</span></button>
-<button type="button" id="tab-anki" role="tab" aria-selected="false" aria-controls="panel-anki">Anki{ankitc}</button>
-<a class="tab-out" id="to-qbank" href="qbank.html#block={slug}">Practice questions <span class="tc">{questions}</span><span class="done" id="qb-done" hidden></span></a>
+<button type="button" id="tab-anki" role="tab" aria-selected="false" aria-controls="panel-anki" tabindex="-1">Anki{ankitc}</button>
+</div>
+<a class="tab-out" id="to-qbank" href="qbank.html#block={slug}"><span class="tab-wide">Practice questions</span><span class="tab-narrow" aria-hidden="true">Questions</span> <span class="tc">{questions}</span><span class="done" id="qb-done" hidden></span></a>
 </div>
 
 <div class="q-shell is-solo" id="panel-anki" role="tabpanel" aria-labelledby="tab-anki" hidden>
@@ -517,14 +535,16 @@ saved in one go. Print it, annotate it, keep it.</p>
 
 </aside>
 
-<main class="stream" id="note-stream">
+<div class="stream" id="note-stream">
 <div class="q-loading">Loading notes&hellip;</div>
-</main>
+</div>
 
 <div class="posbar notebar" id="notebar" hidden>
 <button class="pb-step pb-top" id="nb-top" type="button" title="Back to the top" aria-label="Back to the top">Top</button>
 </div>
 </div>
+
+</main>
 
 <script>
 window.QUIZ_BLOCK = {block_json};
@@ -562,29 +582,32 @@ QBANK_PAGE = u"""<!DOCTYPE html>
 {cf}
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 
 <div class="pom2-page">
 
-<nav class="blocknav">
+<nav class="blocknav" aria-label="Blocks">
 {blocknav}
 {toggle}
 </nav>
 
-<header class="q-masthead">
+<header class="q-masthead" id="content" tabindex="-1">
 <div>
-<p class="eyebrow" id="m-eyebrow"></p>
+<p class="eyebrow" id="m-eyebrow">{eyebrow}</p>
 <h1>Question bank</h1>
 <p class="lead">{lead}</p>
 </div>
 <div class="scoreboard" id="sb-questions">
-<div class="score"><b><span id="sc-done">0</span><span class="of" id="sc-of"></span></b><span>Attempted</span></div>
+<div class="score"><b><span id="sc-done">0</span><span class="of" id="sc-of">/{total}</span></b><span>Attempted</span></div>
 <div class="score"><b id="sc-first">&ndash;</b><span>Correct</span></div>
 <div class="score is-bad"><b id="sc-wrong">0</b><span>Wrong</span></div>
 <div class="score is-star"><b id="sc-star">0</b><span>Starred</span></div>
 </div>
 </header>
 
+<main>
 {qpanel}
+</main>
 
 <script>
 window.QUIZ_BLOCK = {block_json};
@@ -625,10 +648,14 @@ def build_qbank(course):
     """
     d = course["slug"]
     lead, desc = existing_term(course)
-    blocks, total = [], 0
+    blocks, total, tagged = [], 0, False
     for slug, n, name, weeks in course["blocks"]:
         qp = os.path.join(d, "data", "questions", "%s.json" % slug)
-        total += portal.course_count(json.load(io.open(qp, encoding="utf-8")))
+        qs = json.load(io.open(qp, encoding="utf-8"))
+        total += portal.course_count(qs)
+        # quiz.js reveals the topic filter when anything is tagged; saying so
+        # here too keeps the toolbar from reflowing once the data lands
+        tagged = tagged or any(q.get("tags") for q in qs)
         block = {"slug": slug, "n": n, "name": name, "weeks": weeks,
                  "qv": portal.digest(qp)}
         # The bank's note dialog fetches this block's notes on demand and needs
@@ -653,7 +680,10 @@ def build_qbank(course):
         footer=portal.footer(), favicon=portal.favicon(label, fill),
         theme=portal.THEME_SCRIPT, toggle=portal.THEME_BTN,
         blocknav=blocknav(course, "qbank"),
-        qpanel=QPANEL.format(howto=HOWTO, questions=total, hidden=""),
+        qpanel=QPANEL.format(howto=HOWTO, questions=total, hidden="",
+                             blockhidden="", taghidden="" if tagged else " hidden"),
+        total=total,
+        eyebrow=html_escape(u"Schulich %s \u00b7 %s" % (course["short"], cfg["eyebrow"])),
         block_json=json.dumps(cfg, ensure_ascii=False))
     io.open(os.path.join(d, "qbank.html"), "w",
             encoding="utf-8", newline="\n").write(html)
@@ -665,6 +695,7 @@ def main():
         for slug, n, name, weeks in course["blocks"]:
             lead, desc, accent = existing(course, slug)
             q, written, lectures = block_counts(course, slug)
+            weeks_with, nweeks = week_counts(course, slug)
             d = course["slug"]
             cfg = {
                 "slug": slug, "n": n, "name": name, "weeks": weeks,
@@ -684,7 +715,8 @@ def main():
                 theme=portal.THEME_SCRIPT, toggle=portal.THEME_BTN,
                 blocknav=blocknav(course, slug), questions=q, slug=slug,
                 anki=anki_panel(course, slug, weeks), ankitc=anki_tc(course, slug),
-                written=written, lectures=lectures,
+                written=written, lectures=lectures, weeks_with=weeks_with, nweeks=nweeks,
+                eyebrow=html_escape(u"Schulich %s \u00b7 Block %s \u00b7 Weeks %s" % (course["short"], n, weeks)),
                 block_json=json.dumps(cfg, ensure_ascii=False))
             io.open(os.path.join(d, "%s.html" % slug), "w",
                     encoding="utf-8", newline="\n").write(html)

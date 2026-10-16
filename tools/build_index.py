@@ -22,8 +22,8 @@ import io, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import portal
 
-FAVICON = {"fom": ("FM", "1f4e5f"), "pom2": ("P2", "84223b"),
-           "pom1": ("P1", "6b5a2f"), "t2c": ("T2C", "3f4a5a")}
+FAVICON = {"fom": ("FM", "4f2683"), "pom2": ("P2", "7a3fb0"),
+           "pom1": ("P1", "6b3fb8"), "t2c": ("T2C", "3a2a6e")}
 
 EMPTY_PROSE = u"""<div class="prose">
 
@@ -96,18 +96,21 @@ TEMPLATE = u"""<!DOCTYPE html>
 <link rel="stylesheet" href="{base_css}">
 <link rel="stylesheet" href="{portal_css}">
 <style>
-:root{{--q-accent:{accent};--q-accent-soft:#e6e6e6;--q-accent-ink:{accent};}}
+:root{{--q-accent:{accent};--q-accent-soft:#ede5f9;--q-accent-ink:{accent};}}
 </style>
 {cf}
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 
 <div class="pom2-page">
 
-<div class="topline">
+<header class="topline">
 {uplink}
 {toggle}
-</div>
+</header>
+
+<main id="content" tabindex="-1">
 
 <div class="page-hero">
 <h1>{short}.</h1>
@@ -119,6 +122,8 @@ TEMPLATE = u"""<!DOCTYPE html>
 </div>
 
 {prose}
+
+</main>
 
 {footer}
 

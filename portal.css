@@ -407,9 +407,10 @@ body[data-tab="questions"] .q-masthead .lead{display:none;}
     font-weight:500;
     padding:1px 8px;
     border-radius:999px;
-    /* a wash of the button's own text colour, so it sits on the accent in
-       either theme */
-    background:color-mix(in srgb,var(--on-q-accent) 22%,transparent);
+    /* a ring in the button's own text colour, so it sits on the accent in
+       either theme. It used to be a wash of that colour, which lightened the
+       ground under the white text to 4.1:1 on the lighter accents. */
+    box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--on-q-accent) 45%,transparent);
 }
 
 .deck-how{
@@ -457,7 +458,6 @@ body[data-tab="questions"] .q-masthead .lead{display:none;}
 .deck-week .panel-h .tc{
     font-size:.72rem;
     font-weight:400;
-    opacity:.75;
     text-transform:none;
     letter-spacing:0;
 }
@@ -714,7 +714,7 @@ mark.lo .wl{border-bottom-color:#9a7a00;}
     font-weight:600;
 }
 
-.chip .n{font-size:.72rem;opacity:.75;font-variant-numeric:tabular-nums;}
+.chip .n{font-size:.72rem;font-variant-numeric:tabular-nums;}
 .chip.wrongish[aria-pressed="true"]{background:var(--q-bad-soft);border-color:var(--q-bad);color:var(--q-bad);}
 .chip.starish[aria-pressed="true"]{background:var(--q-star-soft);border-color:var(--q-star);color:var(--q-star);}
 
@@ -814,7 +814,8 @@ mark.lo .wl{border-bottom-color:#9a7a00;}
 .lecrow .inclass-tag{margin-right:-3px;}
 
 /* a lecture with no note yet is listed, but not pretending to be one */
-.lecrow.is-gap{opacity:.55;}
+/* told apart by the italic alone: the row is already muted, and dimming it
+   further with opacity put it under 4.5:1 when it still has to be read */
 .lecrow.is-gap .lt{font-style:italic;}
 
 /* the week heading inside the index earns its line only on All, where the
@@ -1372,6 +1373,10 @@ mark.lo .wl{border-bottom-color:#9a7a00;}
 .ans-body li{margin-bottom:5px;}
 /* a matching question puts its two columns in the stem, so the stem needs the
    same table the answer body already had */
+/* a wide lab table scrolls inside its own box on a phone rather than pushing
+   the whole page sideways; the extractors wrap every table in .tw */
+.ans-body .tw,.stem .tw{overflow-x:auto;margin-bottom:10px;}
+.ans-body .tw table,.stem .tw table{margin-bottom:0;}
 .ans-body table,.stem table{border-collapse:collapse;width:100%;font-size:.86rem;margin-bottom:10px;}
 .ans-body th,.ans-body td,.stem th,.stem td{border:1px solid var(--border);padding:6px 9px;text-align:left;vertical-align:top;}
 .ans-body th,.stem th{background:var(--bg);font-weight:600;}
@@ -1619,6 +1624,8 @@ body.has-dialog{overflow:hidden;}
     cursor:pointer;
     padding:0;
     text-decoration:none;
+    /* tall enough for a finger: 24px is WCAG 2.5.8's floor */
+    min-height:24px;
 }
 
 .reset-q:hover{color:var(--q-bad);border-color:var(--q-bad);}
@@ -1713,7 +1720,9 @@ body.has-dialog{overflow:hidden;}
 
 .empty{padding:60px 20px;text-align:center;color:var(--muted);font-size:.9rem;}
 
-.q-loading{padding:60px 20px;text-align:center;color:var(--muted);font-size:.9rem;}
+/* a screen tall, so the footer starts below the fold rather than being
+   shoved off it when the notes or questions arrive */
+.q-loading{min-height:100vh;padding:60px 20px;text-align:center;color:var(--muted);font-size:.9rem;}
 
 /* the block index */
 .block-grid{
@@ -1739,10 +1748,11 @@ body.has-dialog{overflow:hidden;}
     border:1px solid var(--border);
     border-radius:8px;
     border-top:3px solid var(--hue);
-    transition:border-color .18s,transform .18s;
+    transition:border-color .2s,transform .2s cubic-bezier(.2,.7,.3,1),box-shadow .2s;
 }
 
-.block-card:hover{transform:translateY(-2px);border-color:var(--hue);}
+/* a card lifts toward the pointer and casts the theme's soft purple shadow */
+.block-card:hover{transform:translateY(-3px);border-color:var(--hue);box-shadow:var(--shadow);}
 
 /* A course with nothing behind it yet. It is a div rather than a link, so it
    cannot be clicked into an empty page, and it is dimmed rather than hidden:
@@ -1755,7 +1765,7 @@ body.has-dialog{overflow:hidden;}
     opacity:.62;
 }
 
-.block-card.is-empty:hover{transform:none;border-color:var(--border);}
+.block-card.is-empty:hover{transform:none;border-color:var(--border);box-shadow:none;}
 
 .block-card.is-empty .tally span{font-style:italic;}
 
@@ -1909,6 +1919,15 @@ body.has-dialog{overflow:hidden;}
     border-radius:8px;
 }
 
+/* The two real tabs sit in their own tablist inside the strip, so the third,
+   which is a link and not a tab, is not a child of it: a tablist may hold only
+   tabs, and a screen reader announcing "tab 3 of 3" for something that leaves
+   the page is the lie the arrow below avoids saying. */
+.tabset{display:flex;gap:2px;}
+
+/* the link's short label, for a phone; the long one stays for a screen reader */
+.tab-out .tab-narrow{display:none;}
+
 .tabs button,
 .tabs .tab-out{
     display:inline-flex;
@@ -1935,7 +1954,8 @@ body.has-dialog{overflow:hidden;}
     font-weight:600;
 }
 
-.tabs .tc{font-size:.75rem;font-weight:400;opacity:.75;}
+/* full strength: at .75 the count fell under 4.5:1 on the lighter block washes */
+.tabs .tc{font-size:.75rem;font-weight:400;}
 
 /* one note
 
@@ -1947,6 +1967,34 @@ body.has-dialog{overflow:hidden;}
     background:var(--card-bg);
     border:1px solid var(--border);
     border-radius:8px;
+}
+
+/* The same hand-back the question cards get (see .q), for the same reason: a
+   block's notes tab builds every note at once, 10,000 to 14,000 elements, and
+   the browser laid all of them out before painting the first. A written note
+   is long - 3,400px at the median on a laptop, 5,900px on a phone - so the
+   guesses below are those medians, and `auto` swaps in the real height once a
+   note has been on screen. The one-line gap and covered rows are cheap and
+   left as they are.
+
+   Measured on a 4x-throttled CPU at phone width, navigation to a painted
+   notes tab:
+     PoM 2 endo   2,180 ms -> 790 ms
+     PoM 2 msk    2,520 ms -> 780 ms
+     PoM 1 cardio 2,940 ms -> 980 ms
+     FoM block 1  1,090 ms -> 560 ms
+
+   goTo() in notes.js already re-aims once a scroll comes to rest, which is
+   what lets a jump to a far note land even though the notes in between were
+   only estimates when it set off. Print renders everything (below). */
+@media screen{
+    .note:not(.is-gap):not(.is-covered){
+        content-visibility:auto;
+        contain-intrinsic-size:auto 3400px;
+    }
+}
+@media screen and (max-width:640px){
+    .note:not(.is-gap):not(.is-covered){contain-intrinsic-size:auto 5900px;}
 }
 
 .note-head{
@@ -2227,11 +2275,10 @@ body.has-dialog{overflow:hidden;}
     border:1px solid var(--border);
     border-radius:999px;
     cursor:pointer;
-    opacity:.75;
-    transition:opacity .15s,color .15s,border-color .15s;
+    transition:color .15s,border-color .15s;
 }
 
-.figblock:hover .fig-open{opacity:1;}
+.figblock:hover .fig-open{border-color:var(--muted);}
 .fig-open:hover{color:var(--q-accent-text);border-color:var(--q-accent);}
 
 .workup{
@@ -2449,15 +2496,44 @@ body.has-dialog{overflow:hidden;}
     font:inherit;
     color:var(--q-accent-ink);
     background:none;
+    text-align:left;
+    text-decoration:underline;
+    text-underline-offset:3px;
     border:0;
-    border-bottom:1px solid currentColor;
     padding:0;
     cursor:pointer;
 }
 
 .coverlink:hover{color:var(--text);}
 
-.lecrow.is-covered{opacity:.75;}
+/* On a phone the title and the pointer do not fit on one line, and the
+   pointer would not shrink, so it ran off the right edge (a 375px screen
+   scrolled sideways to 620px on FoM block 1). There it drops under the title
+   and wraps like text. */
+@media (max-width:640px){
+    .note.is-gap,.note.is-covered{flex-wrap:wrap;row-gap:4px;}
+    .note.is-gap .gapnote,.note.is-covered .covernote{flex-shrink:1;min-width:0;margin-left:0;}
+    /* a note's head - number, in-class tag, title, Report and PDF - cannot fit
+       one line at 375px, so it wraps and the buttons drop under the title */
+    .note-head{flex-wrap:wrap;row-gap:6px;}
+    .note-head h4{flex:1 1 8em;min-width:0;overflow-wrap:anywhere;}
+    /* "Questions" instead of "Practice questions", so the three tabs fit */
+    .tab-out .tab-wide{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+    .tab-out .tab-narrow{display:inline;}
+}
+
+/* Fingers are bigger than cursors. The small text buttons keep their look but
+   get a larger invisible hit area, near the 44px a touch target wants. */
+@media (pointer:coarse){
+    .reset-q,.report-q,.coverlink{position:relative;}
+    .reset-q::after,.report-q::after,.coverlink::after{
+        content:"";
+        position:absolute;
+        inset:-12px -6px;
+    }
+    .pdf-btn,.fig-open{min-height:32px;}
+}
+
 
 /* where you are in the stream
 
@@ -3095,8 +3171,9 @@ select.ps:disabled{cursor:default;opacity:1;}
     .q-masthead{align-items:flex-start;gap:24px;}
     .scoreboard{gap:22px;flex-wrap:wrap;}
     .tabs{width:100%;}
+    .tabset{flex:2 1 0;min-width:0;}
     .tabs button,
-    .tabs .tab-out{flex:1;justify-content:center;}
+    .tabs .tab-out{flex:1 1 0;min-width:0;justify-content:center;}
 
     /* The phone filter accordion used to live here: below 960px the rail
        stopped being sticky and sat on top of the stream, sixteen controls
