@@ -77,14 +77,17 @@
      that has to be kept mutually exclusive with the other four. */
   /* search is the one facet whose value is typed rather than picked, so it is
      a string, and the empty string is its "all" */
-  var filters = { status: [], block: [], family: [], week: [], tag: [], search: "" };
+  /* lecture is the weak-spot panel's facet: one lecture key or "", set only
+     by a click in that panel, so it has no dropdown and shows as a chip */
+  var filters = { status: [], block: [], family: [], week: [], tag: [], search: "",
+                  lecture: "" };
 
   function isOn(name, k) { return filters[name].indexOf(k) !== -1; }
 
   function anyFilter() {
     return filters.status.length > 0 || filters.block.length > 0 ||
            filters.family.length > 0 || filters.week.length > 0 ||
-           filters.tag.length > 0 || searchOn();
+           filters.tag.length > 0 || searchOn() || !!filters.lecture;
   }
 
   /* View and Mode are two axes, deliberately independent. VIEW is how the
@@ -1420,6 +1423,49 @@
      unless it was tagged, and most carry none. */
   function tagsOf(q) { return Array.isArray(q.tags) ? q.tags : []; }
 
+  /* ---------- which lecture a question tests ---------- */
+
+  /* The weak-spot panel counts by lecture, and the lecture a question tests is
+     the one review_lectures.py resolved it to, not the one it was filed under:
+     the filed names differ between sets ("Concept Checks - ..." beside
+     "01 - Intro to Diabetes") and would split one lecture into several. Where
+     nothing resolved, the filed lecture and its week are all there is, so
+     that pair is the key. A question that tests two lectures counts under
+     both, the same way a question with two tags counts under each. */
+  var LECTURE_NAME = Object.create(null);
+  var LECTURE_WEEK = Object.create(null);
+  var LECKEYS = Object.create(null);
+
+  function lectureKeysOf(q) {
+    var hit = LECKEYS[q.qid];
+    if (hit) return hit;
+    var keys = [];
+    (q.review || []).forEach(function (r) {
+      if (!r || r.w === undefined || r.w === null || !r.t) return;
+      var k = "w" + r.w + ":" + (r.n || r.t);
+      if (keys.indexOf(k) !== -1) return;
+      keys.push(k);
+      if (!LECTURE_NAME[k]) {
+        LECTURE_NAME[k] = (r.n ? r.n + " - " : "") + r.t;
+        LECTURE_WEEK[k] = String(r.w);
+      }
+    });
+    if (!keys.length && q.lecture) {
+      var k = "f" + weekKey(q) + ":" + q.lecture;
+      keys.push(k);
+      if (!LECTURE_NAME[k]) {
+        LECTURE_NAME[k] = q.lecture;
+        LECTURE_WEEK[k] = weekKey(q);
+      }
+    }
+    LECKEYS[q.qid] = keys;
+    return keys;
+  }
+
+  function lectureOk(q) {
+    return !filters.lecture || lectureKeysOf(q).indexOf(filters.lecture) !== -1;
+  }
+
   function tagOk(q) {
     if (!filters.tag.length) return true;
     var t = tagsOf(q);
@@ -1615,7 +1661,8 @@
 
   function matches(qid) {
     var q = QMAP[qid];
-    return blockOk(q) && famOk(q) && weekOk(q) && tagOk(q) && statusOk(q) && searchOk(q);
+    return blockOk(q) && famOk(q) && weekOk(q) && tagOk(q) && statusOk(q) &&
+           searchOk(q) && lectureOk(q);
   }
 
   // qids currently passing the filters that actually have something to clear
@@ -1684,7 +1731,8 @@
     });
 
     var narrowed = filters.status.length > 0 || filters.week.length > 0 ||
-                   filters.tag.length > 0 || filters.block.length > 0 || searchOn();
+                   filters.tag.length > 0 || filters.block.length > 0 || searchOn() ||
+                   !!filters.lecture;
     [].forEach.call(document.querySelectorAll(".family"), function (f) {
       if (filters.family.length && !isOn("family", f.dataset.family)) { f.hidden = true; return; }
       /* a coverage gap is worth showing where the stream is grouped by set,
@@ -1761,6 +1809,7 @@
     filters.tag = [];
     filters.status = [];
     filters.search = "";
+    filters.lecture = "";
     syncSearchBox();
   }
 
@@ -2476,7 +2525,7 @@
       var sOk = statusOk(q), wk, st;
       /* the search narrows every count the same way the other facets do,
          and it has no dropdown of its own to count for */
-      if (!searchOk(q)) return;
+      if (!searchOk(q) || !lectureOk(q)) return;
       if (f && w && t && sOk) {
         blk[q.block] = (blk[q.block] || 0) + 1;
         blkAll++;
@@ -2548,6 +2597,12 @@
     chips("week", function (k) { return WEEK_LABEL[k] || ("Week " + k); });
     chips("tag", function (k) { return TAG_LABEL[k] || k; });
     chips("status", function (k) { return STATUS_LABEL[k] || k; });
+    if (filters.lecture) {
+      live.push({
+        label: "Lecture: " + (LECTURE_NAME[filters.lecture] || filters.lecture),
+        clear: function () { filters.lecture = ""; }
+      });
+    }
     if (searchOn()) {
       live.push({
         label: "\u201c" + filters.search.replace(/^\s+|\s+$/g, "") + "\u201d",
@@ -2636,6 +2691,362 @@
     byId("sc-wrong").textContent = wrong;
     byId("sc-star").textContent = starred;
     paintBar();
+    paintInsights();
+  }
+
+  /* ---------- your weak spots ---------- */
+
+  /* Every answer has been stored with its time and its verdict since the bank
+     began, and the scoreboard only ever read four totals back out of that.
+     This panel reads the rest: which lectures you get wrong, how much you have
+     done lately, and where to go next. It is drawn from progress alone, so it
+     needs no new data and nothing leaves the browser.
+
+     Built once at boot and repainted after every answer through paintStats,
+     but only while it is open: a closed panel costs nothing. Every paint is
+     inside a try, because this is a view of the bank and must never be the
+     thing that takes the bank down. */
+  var INS = null;
+  var INS_OPEN_KEY = "pc-insights";
+  var INS_DAYS = 28;
+  var INS_PENDING = false;
+
+  /* a reader's own choice to fold the panel away is remembered per browser;
+     storage refusing to answer leaves it open */
+  function insightsWanted() {
+    try { return window.localStorage.getItem(INS_OPEN_KEY) !== "closed"; }
+    catch (e) { return true; }
+  }
+
+  function buildInsights() {
+    var bar = byId("qbar");
+    if (!bar || !bar.parentNode) return;
+    try {
+      var box = document.createElement("details");
+      box.className = "insights";
+      box.id = "insights";
+      if (insightsWanted()) box.open = true;
+      var sum = el("summary", "ins-sum");
+      sum.appendChild(el("span", "ins-title", "Your weak spots"));
+      var line = el("span", "ins-line");
+      sum.appendChild(line);
+      box.appendChild(sum);
+      var body = el("div", "ins-body");
+      box.appendChild(body);
+      box.addEventListener("toggle", function () {
+        try { window.localStorage.setItem(INS_OPEN_KEY, box.open ? "open" : "closed"); }
+        catch (e) { /* the choice just is not remembered */ }
+        if (box.open) paintInsights();
+      });
+      bar.parentNode.insertBefore(box, bar.nextSibling);
+      INS = { box: box, line: line, body: body };
+    } catch (e) {
+      INS = null;
+    }
+  }
+
+  /* one paint per frame however many answers land in it: "reset all" writes
+     hundreds of records in one go and calls paintStats for each */
+  function paintInsights() {
+    if (!INS || INS_PENDING) return;
+    INS_PENDING = true;
+    var go = function () {
+      INS_PENDING = false;
+      try { drawInsights(); }
+      catch (e) {
+        INS.body.textContent = "";
+        INS.body.appendChild(el("p", "ins-empty",
+          "This summary could not be drawn. Every question still works."));
+      }
+    };
+    if (window.requestAnimationFrame) window.requestAnimationFrame(go);
+    else window.setTimeout(go, 0);
+  }
+
+  function dayStart(ts) {
+    var d = new Date(ts);
+    d.setHours(0, 0, 0, 0);
+    return d.getTime();
+  }
+
+  function pct(n, of) { return of ? Math.round(n / of * 100) : 0; }
+
+  /* the same verdict the scoreboard counts: a question's latest state */
+  function lectureStats() {
+    var lec = Object.create(null), order = [];
+    QUESTIONS.forEach(function (q) {
+      if (!onCurriculum(q)) return;
+      var st = stateOf(q.qid);
+      lectureKeysOf(q).forEach(function (k) {
+        var s = lec[k];
+        if (!s) {
+          s = lec[k] = { key: k, name: LECTURE_NAME[k] || k, week: LECTURE_WEEK[k] || "off",
+                         total: 0, done: 0, right: 0, wrong: 0 };
+          order.push(s);
+        }
+        s.total++;
+        if (st === "correct") { s.done++; s.right++; }
+        else if (st === "wrong") { s.done++; s.wrong++; }
+      });
+    });
+    return order;
+  }
+
+  /* weeks in course order, the questions without one last; lectures within a
+     week by their number where they have one */
+  function byWeek(stats) {
+    var weeks = Object.create(null), keys = [];
+    stats.forEach(function (s) {
+      if (!weeks[s.week]) { weeks[s.week] = []; keys.push(s.week); }
+      weeks[s.week].push(s);
+    });
+    keys.sort(function (a, b) {
+      if (a === "off") return 1;
+      if (b === "off") return -1;
+      return Number(a) - Number(b);
+    });
+    return keys.map(function (w) {
+      var list = weeks[w].slice().sort(function (a, b) {
+        var na = parseFloat(a.name), nb = parseFloat(b.name);
+        if (!isNaN(na) && !isNaN(nb) && na !== nb) return na - nb;
+        if (isNaN(na) !== isNaN(nb)) return isNaN(na) ? 1 : -1;
+        return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+      });
+      return { week: w, lectures: list };
+    });
+  }
+
+  /* answers per day over the last INS_DAYS days, from every attempt kept:
+     a question answered twice is two answers, which is what "how much did I
+     do" means */
+  function activity() {
+    var today = dayStart(Date.now()), first = today - (INS_DAYS - 1) * 864e5;
+    var days = [];
+    for (var i = 0; i < INS_DAYS; i++) days.push({ right: 0, wrong: 0 });
+    Object.keys(progress).forEach(function (qid) {
+      var q = QMAP[qid];
+      if (!q || !onCurriculum(q)) return;
+      attemptsOf(qid).forEach(function (a) {
+        if (!a || typeof a.ts !== "number") return;
+        var d = dayStart(a.ts);
+        if (d < first || d > today) return;
+        var slot = days[Math.round((d - first) / 864e5)];
+        if (!slot) return;
+        if (a.correct) slot.right++; else slot.wrong++;
+      });
+    });
+    return { first: first, days: days };
+  }
+
+  /* Five lectures to go back to: enough answered to mean something, then the
+     lowest share right, then the most wrong. A lecture you have barely
+     started is not a weak spot yet, it is just unstarted. */
+  function reviewNext(stats) {
+    return stats.filter(function (s) { return s.done >= 3 && s.wrong > 0; })
+      .sort(function (a, b) {
+        var pa = a.right / a.done, pb = b.right / b.done;
+        if (pa !== pb) return pa - pb;
+        return b.wrong - a.wrong;
+      })
+      .slice(0, 5);
+  }
+
+  function focusLecture(key, wrongOnly) {
+    if (MODE === "test") setMode("tutor");
+    clearFilters();
+    filters.lecture = key;
+    if (wrongOnly) filters.status = ["wrong"];
+    writeHash();
+    afterFilterChange();
+    var bar = byId("qbar");
+    if (bar && bar.scrollIntoView) bar.scrollIntoView({ block: "start" });
+  }
+
+  function heatClass(s) {
+    if (!s.done) return "is-unseen";
+    var p = s.right / s.done;
+    if (p >= 0.8) return "is-good";
+    if (p >= 0.5) return "is-mid";
+    return "is-bad";
+  }
+
+  function svgEl(tag, attrs) {
+    var n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    Object.keys(attrs || {}).forEach(function (k) { n.setAttribute(k, attrs[k]); });
+    return n;
+  }
+
+  function drawActivity(act) {
+    var wrap = el("div", "ins-card ins-activity");
+    var total = 0, right = 0, peak = 0, lastWeek = 0, lastWeekRight = 0;
+    act.days.forEach(function (d, i) {
+      var n = d.right + d.wrong;
+      total += n; right += d.right;
+      if (n > peak) peak = n;
+      if (i >= INS_DAYS - 7) { lastWeek += n; lastWeekRight += d.right; }
+    });
+    wrap.appendChild(el("h3", "ins-h", "Last four weeks"));
+    var nums = el("p", "ins-nums");
+    nums.appendChild(el("b", null, String(lastWeek)));
+    nums.appendChild(document.createTextNode(
+      (lastWeek === 1 ? " answer" : " answers") + " in the last 7 days" +
+      (lastWeek ? ", " + pct(lastWeekRight, lastWeek) + "% right" : "") + "."));
+    wrap.appendChild(nums);
+    if (!total) {
+      wrap.appendChild(el("p", "ins-empty", "Nothing answered in the last four weeks yet."));
+      return wrap;
+    }
+
+    var W = 560, H = 120, top = 8, base = 96, gap = 3;
+    var bw = (W - gap * (INS_DAYS - 1)) / INS_DAYS;
+    var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + H, "class": "ins-bars",
+                             role: "img",
+                             "aria-label": total + " answers in the last four weeks, " +
+                               pct(right, total) + "% right, at most " + peak + " in one day" });
+    svg.appendChild(svgEl("line", { x1: 0, x2: W, y1: base + 0.5, y2: base + 0.5, "class": "ins-axis" }));
+    act.days.forEach(function (d, i) {
+      var n = d.right + d.wrong;
+      if (!n) return;
+      var x = i * (bw + gap), hr = (base - top) * d.right / peak,
+          hw = (base - top) * d.wrong / peak;
+      var g = svgEl("g", {});
+      var when = new Date(act.first + i * 864e5);
+      var t = svgEl("title", {});
+      t.textContent = when.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" }) +
+        ": " + n + (n === 1 ? " answer, " : " answers, ") + d.right + " right";
+      g.appendChild(t);
+      if (hr > 0) g.appendChild(svgEl("rect", { x: x, y: base - hr, width: bw, height: hr, "class": "ins-right" }));
+      if (hw > 0) g.appendChild(svgEl("rect", { x: x, y: base - hr - hw, width: bw, height: hw, "class": "ins-wrong" }));
+      svg.appendChild(g);
+    });
+    var lab = function (x, anchor, text) {
+      var n = svgEl("text", { x: x, y: H - 4, "text-anchor": anchor, "class": "ins-tick" });
+      n.textContent = text;
+      svg.appendChild(n);
+    };
+    lab(0, "start", "4 weeks ago");
+    lab(W, "end", "Today");
+    wrap.appendChild(svg);
+    var key = el("p", "ins-key");
+    key.appendChild(el("span", "sw sw-right"));
+    key.appendChild(document.createTextNode("Right "));
+    key.appendChild(el("span", "sw sw-wrong"));
+    key.appendChild(document.createTextNode("Wrong"));
+    wrap.appendChild(key);
+    return wrap;
+  }
+
+  function drawNext(list) {
+    var wrap = el("div", "ins-card ins-next");
+    wrap.appendChild(el("h3", "ins-h", "Review next"));
+    if (!list.length) {
+      wrap.appendChild(el("p", "ins-empty",
+        "Answer at least three questions from a lecture and the ones you find hardest show up here."));
+      return wrap;
+    }
+    var ol = el("ol", "ins-list");
+    list.forEach(function (s) {
+      var li = el("li");
+      var name = el("span", "ins-lec", s.name);
+      var meta = el("span", "ins-meta",
+        (s.week === "off" ? "" : "Week " + s.week + " · ") +
+        s.right + " of " + s.done + " right");
+      var go = el("button", "ins-go", "Redo " + s.wrong + " wrong");
+      go.type = "button";
+      go.addEventListener("click", function () { focusLecture(s.key, true); });
+      var all = el("button", "ins-go is-quiet", "All " + s.total);
+      all.type = "button";
+      all.setAttribute("aria-label", "Show all " + s.total + " questions from " + s.name);
+      all.addEventListener("click", function () { focusLecture(s.key, false); });
+      var txt = el("span", "ins-txt");
+      txt.appendChild(name);
+      txt.appendChild(meta);
+      li.appendChild(txt);
+      var acts = el("span", "ins-acts");
+      acts.appendChild(go);
+      acts.appendChild(all);
+      li.appendChild(acts);
+      ol.appendChild(li);
+    });
+    wrap.appendChild(ol);
+    return wrap;
+  }
+
+  function drawHeat(weeks) {
+    var wrap = el("div", "ins-card ins-heat");
+    wrap.appendChild(el("h3", "ins-h", "Every lecture, by week"));
+    var key = el("p", "ins-key");
+    [["is-good", "80% or more right"], ["is-mid", "50 to 79%"],
+     ["is-bad", "under 50%"], ["is-unseen", "not started"]].forEach(function (p) {
+      key.appendChild(el("span", "sw " + p[0]));
+      key.appendChild(document.createTextNode(p[1] + " "));
+    });
+    wrap.appendChild(key);
+    var grid = el("div", "ins-grid"), lastBlock = null;
+    weeks.forEach(function (w) {
+      /* the pooled page runs twenty weeks, so each block names itself where
+         its first week starts */
+      var blk = TERM && w.week !== "off" ? blockForWeek(Number(w.week)) : null;
+      if (blk && blk !== lastBlock) {
+        lastBlock = blk;
+        grid.appendChild(el("p", "ins-blk", BLOCK_NAME[blk] || blk));
+      }
+      var row = el("div", "ins-row");
+      row.appendChild(el("span", "ins-wk", w.week === "off" ? "Other" : "Wk " + w.week));
+      var cells = el("span", "ins-cells");
+      w.lectures.forEach(function (s) {
+        var b = el("button", "ins-cell " + heatClass(s));
+        b.type = "button";
+        var num = /^(\d+(?:\.\d+)?)\s*-/.exec(s.name);
+        b.textContent = num ? num[1] : "•";
+        var said = s.name + ": " + (s.done
+          ? s.right + " of " + s.done + " right, " + s.done + " of " + s.total + " answered"
+          : "none of " + s.total + " answered");
+        b.title = said;
+        b.setAttribute("aria-label", said + ". Show these questions.");
+        b.addEventListener("click", function () { focusLecture(s.key, false); });
+        cells.appendChild(b);
+      });
+      row.appendChild(cells);
+      grid.appendChild(row);
+    });
+    wrap.appendChild(grid);
+    return wrap;
+  }
+
+  function drawInsights() {
+    if (!INS) return;
+    var stats = lectureStats(), done = 0, right = 0;
+    QUESTIONS.forEach(function (q) {
+      if (!onCurriculum(q)) return;
+      var st = stateOf(q.qid);
+      if (st === "correct") { done++; right++; }
+      else if (st === "wrong") done++;
+    });
+    var next = reviewNext(stats);
+    INS.line.textContent = !done ? "Answer a few questions to see where you stand"
+      : next.length ? "Weakest: " + next[0].name + " (" + pct(next[0].right, next[0].done) + "% right)"
+      : done + " answered, " + pct(right, done) + "% right";
+    if (!INS.box.open) return;
+
+    var body = INS.body;
+    body.textContent = "";
+    if (!stats.length) {
+      body.appendChild(el("p", "ins-empty", "No questions are loaded for this page."));
+      return;
+    }
+    /* a fresh browser gets one line rather than an empty chart and a map of
+       two hundred blank squares */
+    if (!done) {
+      body.appendChild(el("p", "ins-empty",
+        "Nothing answered yet. As you go, this shows the lectures you miss most, what you have done in the last four weeks, and every lecture coloured by how you are doing."));
+      return;
+    }
+    var top = el("div", "ins-top");
+    top.appendChild(drawNext(next));
+    top.appendChild(drawActivity(activity()));
+    body.appendChild(top);
+    body.appendChild(drawHeat(byWeek(stats)));
   }
 
   /* ---------- boot ---------- */
@@ -3239,6 +3650,7 @@
     readHash();
     buildMasthead();
     buildBar();
+    buildInsights();
     buildStream();
     paintStats();
     applyFilters();
