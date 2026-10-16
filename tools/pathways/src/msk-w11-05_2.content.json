@@ -1,0 +1,52 @@
+{
+ "name": "fracture radiology overview",
+ "title": "Describing a fracture on x-ray in a fixed order: views, location, type, descriptors, joint surface, other findings and bone quality, then how healing looks on follow-up films; each column gives what to look for and what it tells you",
+ "col_w": 214,
+ "root": {"title": "A fracture on x-ray: TRACE the cortex, look for SECONDARY signs, then describe it in the same order every time",
+  "lines": ["body in anatomic position · more than one descriptor for each fracture", "OLD ACIDS: open · location · degree · articular surface · comminution · intrinsic bone quality · displacement · soft tissue"]},
+ "groups": [
+  {"id": "g_desc", "cols": [0, 5], "title": "DESCRIBE IT", "lines": ["what you say on the phone so the consultant can picture it"]},
+  {"id": "g_heal", "cols": [6, 6], "title": "FOLLOW IT", "lines": ["follow-up films"]}
+ ],
+ "sections": ["head", "pres", "inv"],
+ "row_names": {"pres": "LOOK FOR", "inv": "WHAT IT TELLS YOU"},
+ "columns": [
+  {"id": "view", "colour": "teal",
+   "head": [[["h", "1 · Views", ["anteroposterior (AP) · lateral · oblique"]]]],
+   "pres": [[["t", "Special views", ["• ankle: MORTISE view", "• scaphoid: ulnar deviation, clenched fist", "• shoulder: Y-view"]]]],
+   "inv": [[["w", "Needs more than one view", ["• oblique: seen on one view", "• spiral: seen only on multiple views"]]]]},
+  {"id": "loc", "colour": "purple",
+   "head": [[["h", "2 · Location", ["side · which bone · where in it"]]]],
+   "pres": [[["t", "Part of the bone", ["• epiphysis · physis · metaphysis", "• diaphysis", "• apophysis: muscle or tendon attachment"]]]],
+   "inv": [[["w", "Physis = immature skeleton", ["growth plate involved → Salter-Harris (see the PEDIATRIC ORTHOPEDICS chart)"]]]]},
+  {"id": "type", "colour": "orange",
+   "head": [[["h", "3 · Type", ["complete or incomplete"]]]],
+   "pres": [[["t", "COMPLETE", ["• transverse · oblique · longitudinal", "• spiral: a TWISTING injury", "• comminuted: segmental, butterfly"]]],
+            [["w", "INCOMPLETE", ["bowing · buckle · greenstick"]]]],
+   "inv": [[["w", "Others", ["• avulsion: tendon pulls off a fragment", "• open"]]]]},
+  {"id": "desc", "colour": "blue",
+   "head": [[["h", "4 · Descriptors", ["DISTAL fragment relative to proximal", "except the CLAVICLE: proximal to distal"]]]],
+   "pres": [[["t", "Translation", ["in shaft widths · more than one width = OFF-ENDED"]]],
+            [["t", "Angulation", ["by the apex: varus = apex LATERAL, valgus = apex MEDIAL"]]],
+            [["t", "Rotation", ["internal or external · look at the joints above and below"]]]],
+   "inv": [[["w", "Length", ["• distraction: pulled apart", "• impaction: telescoped in", "• override: fragments overlap"]]]]},
+  {"id": "joint", "colour": "magenta",
+   "head": [[["h", "5 · Joint surface", ["into the joint or not?"]]]],
+   "pres": [[["t", "Step-off or depression", ["trace the articular cortex"]]],
+            [["w", "Fracture not seen?", ["• hemarthrosis (effusion)", "• FAT-FLUID level", "• subluxation or dislocation"]]]],
+   "inv": [[["bad", "INTRA-articular", ["• reduction must be ANATOMIC", "• secondary osteoarthritis · heals slower"]]],
+           [["ok", "EXTRA-articular", ["reduction relatively anatomic: bone remodels, especially with weight-bearing"]]]]},
+  {"id": "other", "colour": "brown",
+   "head": [[["h", "6-7 · Other findings, bone quality", []]]],
+   "pres": [[["t", "Other findings", ["• open · foreign body · hardware", "• periprosthetic · amputation", "• diastasis: pubic symphysis, acromioclavicular joint"]]]],
+   "inv": [[["bad", "PATHOLOGICAL fracture", ["• weakened bone, usually TRANSVERSE", "• spontaneous or trivial trauma"]]]]},
+  {"id": "heal", "colour": "olive",
+   "head": [[["h", "8 · Healing", ["mostly SECONDARY (callus) · PRIMARY with internal fixation: no callus"]]]],
+   "pres": [[["t", "On x-ray", ["• fracture line WIDENS at 10-14 days", "• callus from 2 weeks", "• union: bridging callus, medullary space back"]]]],
+   "inv": [[["ok", "Healed is a CLINICAL call", ["no tenderness, no motion at the site, can bear weight"]]],
+           [["w", "Expected time", ["• upper limb 3-10 weeks (distal humerus 8-10)", "• lower limb 6-12 weeks (femoral neck, shaft longest)"]]]]}
+ ],
+ "panels": [
+  {"title": "When it does not heal", "items": ["delayed union, non-union and malunion, and what to do about them: see the FRACTURE MANAGEMENT chart"]}
+ ]
+}

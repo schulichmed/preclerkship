@@ -1,0 +1,43 @@
+{
+ "name": "acute monoarthritis overview",
+ "title": "Acute monoarthritis: one hot, red joint for under six weeks is infected until the aspirate says otherwise; the three C's (cell count, culture with Gram stain, crystals) separate septic arthritis from gout (needle-shaped, negatively birefringent urate) and pseudogout (rhomboid, positively birefringent calcium pyrophosphate), each with its own treatment",
+ "col_w": 290,
+ "root": {
+  "title": "ONE hot, red, swollen joint for under 6 weeks: INFECTION until proven otherwise",
+  "lines": [
+   "IF THE JOINT IS RED, ASPIRATE IT → the 3 C's: cell count (hours) · culture + Gram stain (24–48 h) · crystals (hours)",
+   "differential: infection · infection · infection · gout · pseudogout (rarely reactive or psoriatic arthritis)"
+  ]
+ },
+ "groups": [
+  {"id": "g_inf", "cols": [0, 0], "title": "NO crystals, organisms seen or grown", "lines": ["a MEDICAL EMERGENCY"]},
+  {"id": "g_cry", "cols": [1, 2], "title": "CRYSTALS under polarized light", "lines": ["both can look exactly like an infected joint, fever included"]}
+ ],
+ "sections": ["head", "clue", "inv", "tx"],
+ "row_names": {"clue": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
+ "dashed_sections": ["clue"],
+ "columns": [
+  {"id": "sep", "colour": "magenta", "drop_label": "Gram stain, culture",
+   "head": [[["h", "Septic arthritis", ["Staphylococcus 60%+ · streptococcus 20%", "gram-negatives 15% (immunocompromised, elderly, intravenous (IV) drug use)"]]]],
+   "clue": [[["t", "Fever, unwell, can't bear weight", ["red flags: fever · pain · range of motion ↓"]]], [["w", "HIGH risk", ["• prosthetic joint or recent joint surgery", "• immunosuppressed (diabetes, methotrexate, prednisone, biologics)", "• IV drugs, alcohol, very young or old"]]]],
+   "inv": [[["t", "1 · Aspirate: cells HIGH", ["• over 50 000 points to infection", "• Gram stain: e.g. Gram-positive cocci in clusters"]]], [["w", "2 · Bloods", ["• blood cultures", "• blood count, electrolytes, creatinine, C-reactive protein"]]]],
+   "tx": [[["bad", "1 · ADMIT + urgent incision and drainage (I&D)", ["a closed space: drain it, repeat until clean"]]], [["ok", "2 · Empiric IV antibiotics", ["• cefazolin 2 g IV every 8 h", "• methicillin-resistant S. aureus (MRSA) risk: vancomycin + ceftriaxone", "• 4–6 weeks in all"]]]]
+  },
+  {"id": "gout", "colour": "orange", "drop_label": "NEEDLES",
+   "head": [[["h", "Gout", ["monosodium urate (uric acid) crystals"]]]],
+   "clue": [[["t", "Peaks in HOURS, exquisitely painful", ["• can't stand the bedsheet touching it", "• big toe (1st metatarsophalangeal joint) in 50%"]]], [["w", "Who and why", ["• men 35–50 · women after menopause", "• diuretics, alcohol, kidney impairment", "• SMARTS: surgery, mechanical injury, alcohol, recent illness, travel, starting or stopping allopurinol"]]]],
+   "inv": [[["t", "1 · NEEDLE-shaped, NEGATIVELY birefringent", ["culture: no growth"]]], [["w", "2 · Uric acid may be NORMAL in an attack", ["• high uric acid alone ≠ gout: don't treat it", "• creatinine, fasting glucose, lipids"]]]],
+   "tx": [[["ok", "1 · Settle the attack", ["• steroid injected into the joint", "• indomethacin 50 mg three times daily", "• or colchicine 0.6 mg every 8 h", "• or prednisone 30 mg, down 5 mg every 2 days"]]], [["warn", "2 · Allopurinol: NEVER during an attack", ["• recurrent attacks, tophi · lifelong", "• cover with an anti-inflammatory (NSAID) or colchicine"]]]]
+  },
+  {"id": "cppd", "colour": "teal", "drop_label": "RHOMBOIDS",
+   "head": [[["h", "Pseudogout", ["calcium pyrophosphate (CPP) crystals"]]]],
+   "clue": [[["t", "Less intense, SLOWER to peak, lasts longer", ["days to a few weeks untreated"]]], [["w", "Who", ["• older people, often with osteoarthritis", "• KNEE most common"]]]],
+   "inv": [[["t", "1 · RHOMBOID, intracellular, POSITIVELY birefringent", ["culture: no growth"]]], [["w", "2 · Chondrocalcinosis on X-ray", ["CPP in cartilage: an X-ray finding, not the attack"]]]],
+   "tx": [[["ok", "Settle the attack", ["• steroid injected into the joint", "• indomethacin 50 mg three times daily", "• or the prednisone taper"]]], [["w", "Rest, ice, elevation, hydration", ["allopurinol is for gout only"]]]]
+  }
+ ],
+ "panels": [
+  {"title": "Septic or gout? (older patient)", "items": ["septic: febrile · high white count · positive culture or Gram stain", "gout: may be febrile · joint fluid 20 000–50 000 · urate crystals on microscopy"]},
+  {"title": "Gout: after the attack", "items": ["recurrence 60% in 1 year · 80% in 2 · 90% in 5", "less meat and seafood, less alcohol; vegetables and low-fat dairy are good"]}
+ ]
+}

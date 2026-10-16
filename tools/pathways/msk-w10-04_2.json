@@ -1,0 +1,556 @@
+{
+ "name": "acute monoarthritis overview",
+ "width": 982,
+ "title": "Acute monoarthritis: one hot, red joint for under six weeks is infected until the aspirate says otherwise; the three C's (cell count, culture with Gram stain, crystals) separate septic arthritis from gout (needle-shaped, negatively birefringent urate) and pseudogout (rhomboid, positively birefringent calcium pyrophosphate), each with its own treatment",
+ "kinds": {
+  "sep_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sep_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "sep_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "gout_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gout_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "gout_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cppd_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cppd_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "cppd_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 290,
+   "w": 300,
+   "h": 966,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 370,
+   "y": 290,
+   "w": 300,
+   "h": 966,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 672,
+   "y": 290,
+   "w": 300,
+   "h": 966,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 434,
+   "h": 250,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 724,
+   "h": 214,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 978,
+   "h": 270,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 126,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "ONE hot, red, swollen joint for under 6 weeks: INFECTION until proven otherwise",
+   "lines": [
+    "IF THE JOINT IS RED, ASPIRATE IT → the 3 C's: cell count (hours) · culture + Gram stain (24–48 h) · crystals (hours)",
+    "differential: infection · infection · infection · gout · pseudogout (rarely reactive or psoriatic arthritis)"
+   ]
+  },
+  {
+   "id": "g_inf",
+   "x": 45,
+   "y": 138,
+   "w": 290,
+   "h": 80,
+   "kind": "plain",
+   "title": "NO crystals, organisms seen or grown",
+   "lines": [
+    "a MEDICAL EMERGENCY"
+   ]
+  },
+  {
+   "id": "g_cry",
+   "x": 375,
+   "y": 138,
+   "w": 592,
+   "h": 80,
+   "kind": "plain",
+   "title": "CRYSTALS under polarized light",
+   "lines": [
+    "both can look exactly like an infected joint, fever included"
+   ]
+  },
+  {
+   "id": "sep_head_0_0",
+   "x": 45,
+   "y": 298,
+   "w": 290,
+   "h": 96,
+   "kind": "sep_h",
+   "title": "Septic arthritis",
+   "lines": [
+    "Staphylococcus 60%+ · streptococcus 20%",
+    "gram-negatives 15% (immunocompromised, elderly, intravenous (IV) drug use)"
+   ]
+  },
+  {
+   "id": "gout_head_0_0",
+   "x": 375,
+   "y": 298,
+   "w": 290,
+   "h": 96,
+   "kind": "gout_h",
+   "title": "Gout",
+   "lines": [
+    "monosodium urate (uric acid) crystals"
+   ]
+  },
+  {
+   "id": "cppd_head_0_0",
+   "x": 677,
+   "y": 298,
+   "w": 290,
+   "h": 96,
+   "kind": "cppd_h",
+   "title": "Pseudogout",
+   "lines": [
+    "calcium pyrophosphate (CPP) crystals"
+   ]
+  },
+  {
+   "id": "sep_clue_0_0",
+   "x": 45,
+   "y": 434,
+   "w": 290,
+   "h": 87,
+   "kind": "sep_t",
+   "title": "Fever, unwell, can't bear weight",
+   "lines": [
+    "red flags: fever · pain · range of motion ↓"
+   ]
+  },
+  {
+   "id": "sep_clue_1_0",
+   "x": 45,
+   "y": 543,
+   "w": 290,
+   "h": 141,
+   "kind": "sep_w",
+   "title": "HIGH risk",
+   "lines": [
+    "• prosthetic joint or recent joint surgery",
+    "• immunosuppressed (diabetes, methotrexate, prednisone, biologics)",
+    "• IV drugs, alcohol, very young or old"
+   ]
+  },
+  {
+   "id": "gout_clue_0_0",
+   "x": 375,
+   "y": 434,
+   "w": 290,
+   "h": 96,
+   "kind": "gout_t",
+   "title": "Peaks in HOURS, exquisitely painful",
+   "lines": [
+    "• can't stand the bedsheet touching it",
+    "• big toe (1st metatarsophalangeal joint) in 50%"
+   ]
+  },
+  {
+   "id": "gout_clue_1_0",
+   "x": 375,
+   "y": 552,
+   "w": 290,
+   "h": 132,
+   "kind": "gout_w",
+   "title": "Who and why",
+   "lines": [
+    "• men 35–50 · women after menopause",
+    "• diuretics, alcohol, kidney impairment",
+    "• SMARTS: surgery, mechanical injury, alcohol, recent illness, travel, starting or stopping allopurinol"
+   ]
+  },
+  {
+   "id": "cppd_clue_0_0",
+   "x": 677,
+   "y": 434,
+   "w": 290,
+   "h": 115,
+   "kind": "cppd_t",
+   "title": "Less intense, SLOWER to peak, lasts longer",
+   "lines": [
+    "days to a few weeks untreated"
+   ]
+  },
+  {
+   "id": "cppd_clue_1_0",
+   "x": 677,
+   "y": 571,
+   "w": 290,
+   "h": 113,
+   "kind": "cppd_w",
+   "title": "Who",
+   "lines": [
+    "• older people, often with osteoarthritis",
+    "• KNEE most common"
+   ]
+  },
+  {
+   "id": "sep_inv_0_0",
+   "x": 45,
+   "y": 724,
+   "w": 290,
+   "h": 96,
+   "kind": "sep_t",
+   "title": "1 · Aspirate: cells HIGH",
+   "lines": [
+    "• over 50 000 points to infection",
+    "• Gram stain: e.g. Gram-positive cocci in clusters"
+   ]
+  },
+  {
+   "id": "sep_inv_1_0",
+   "x": 45,
+   "y": 842,
+   "w": 290,
+   "h": 96,
+   "kind": "sep_w",
+   "title": "2 · Bloods",
+   "lines": [
+    "• blood cultures",
+    "• blood count, electrolytes, creatinine, C-reactive protein"
+   ]
+  },
+  {
+   "id": "gout_inv_0_0",
+   "x": 375,
+   "y": 724,
+   "w": 290,
+   "h": 87,
+   "kind": "gout_t",
+   "title": "1 · NEEDLE-shaped, NEGATIVELY birefringent",
+   "lines": [
+    "culture: no growth"
+   ]
+  },
+  {
+   "id": "gout_inv_1_0",
+   "x": 375,
+   "y": 833,
+   "w": 290,
+   "h": 105,
+   "kind": "gout_w",
+   "title": "2 · Uric acid may be NORMAL in an attack",
+   "lines": [
+    "• high uric acid alone ≠ gout: don't treat it",
+    "• creatinine, fasting glucose, lipids"
+   ]
+  },
+  {
+   "id": "cppd_inv_0_0",
+   "x": 677,
+   "y": 724,
+   "w": 290,
+   "h": 97,
+   "kind": "cppd_t",
+   "title": "1 · RHOMBOID, intracellular, POSITIVELY birefringent",
+   "lines": [
+    "culture: no growth"
+   ]
+  },
+  {
+   "id": "cppd_inv_1_0",
+   "x": 677,
+   "y": 843,
+   "w": 290,
+   "h": 95,
+   "kind": "cppd_w",
+   "title": "2 · Chondrocalcinosis on X-ray",
+   "lines": [
+    "CPP in cartilage: an X-ray finding, not the attack"
+   ]
+  },
+  {
+   "id": "sep_tx_0_0",
+   "x": 45,
+   "y": 978,
+   "w": 290,
+   "h": 107,
+   "kind": "bad",
+   "title": "1 · ADMIT + urgent incision and drainage (I&D)",
+   "lines": [
+    "a closed space: drain it, repeat until clean"
+   ]
+  },
+  {
+   "id": "sep_tx_1_0",
+   "x": 45,
+   "y": 1107,
+   "w": 290,
+   "h": 141,
+   "kind": "ok",
+   "title": "2 · Empiric IV antibiotics",
+   "lines": [
+    "• cefazolin 2 g IV every 8 h",
+    "• methicillin-resistant S. aureus (MRSA) risk: vancomycin + ceftriaxone",
+    "• 4–6 weeks in all"
+   ]
+  },
+  {
+   "id": "gout_tx_0_0",
+   "x": 375,
+   "y": 978,
+   "w": 290,
+   "h": 132,
+   "kind": "ok",
+   "title": "1 · Settle the attack",
+   "lines": [
+    "• steroid injected into the joint",
+    "• indomethacin 50 mg three times daily",
+    "• or colchicine 0.6 mg every 8 h",
+    "• or prednisone 30 mg, down 5 mg every 2 days"
+   ]
+  },
+  {
+   "id": "gout_tx_1_0",
+   "x": 375,
+   "y": 1132,
+   "w": 290,
+   "h": 116,
+   "kind": "warn",
+   "title": "2 · Allopurinol: NEVER during an attack",
+   "lines": [
+    "• recurrent attacks, tophi · lifelong",
+    "• cover with an anti-inflammatory (NSAID) or colchicine"
+   ]
+  },
+  {
+   "id": "cppd_tx_0_0",
+   "x": 677,
+   "y": 978,
+   "w": 290,
+   "h": 142,
+   "kind": "ok",
+   "title": "Settle the attack",
+   "lines": [
+    "• steroid injected into the joint",
+    "• indomethacin 50 mg three times daily",
+    "• or the prednisone taper"
+   ]
+  },
+  {
+   "id": "cppd_tx_1_0",
+   "x": 677,
+   "y": 1142,
+   "w": 290,
+   "h": 106,
+   "kind": "cppd_w",
+   "title": "Rest, ice, elevation, hydration",
+   "lines": [
+    "no allopurinol: that is for urate"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_inf",
+   "path": "M506.0 88V113H190.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_cry",
+   "path": "M506.0 88V113H671.0V138"
+  },
+  {
+   "from": "sep_clue_0_0",
+   "to": "sep_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "gout_clue_0_0",
+   "to": "gout_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "cppd_clue_0_0",
+   "to": "cppd_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "sep_inv_0_0",
+   "to": "sep_inv_1_0"
+  },
+  {
+   "from": "gout_inv_0_0",
+   "to": "gout_inv_1_0"
+  },
+  {
+   "from": "cppd_inv_0_0",
+   "to": "cppd_inv_1_0"
+  },
+  {
+   "from": "sep_tx_0_0",
+   "to": "sep_tx_1_0"
+  },
+  {
+   "from": "gout_tx_0_0",
+   "to": "gout_tx_1_0"
+  },
+  {
+   "from": "cppd_tx_0_0",
+   "to": "cppd_tx_1_0"
+  },
+  {
+   "from": "sep_head_0_0",
+   "to": "sep_clue_0_0"
+  },
+  {
+   "from": "sep_clue_1_0",
+   "to": "sep_inv_0_0"
+  },
+  {
+   "from": "sep_inv_1_0",
+   "to": "sep_tx_0_0"
+  },
+  {
+   "from": "g_inf",
+   "to": "sep_head_0_0",
+   "from_dx": 0,
+   "label": "Gram stain, culture",
+   "label_at": [
+    190.0,
+    258
+   ]
+  },
+  {
+   "from": "gout_head_0_0",
+   "to": "gout_clue_0_0"
+  },
+  {
+   "from": "gout_clue_1_0",
+   "to": "gout_inv_0_0"
+  },
+  {
+   "from": "gout_inv_1_0",
+   "to": "gout_tx_0_0"
+  },
+  {
+   "from": "g_cry",
+   "to": "gout_head_0_0",
+   "from_dx": -151,
+   "label": "NEEDLES",
+   "label_at": [
+    520.0,
+    258
+   ]
+  },
+  {
+   "from": "cppd_head_0_0",
+   "to": "cppd_clue_0_0"
+  },
+  {
+   "from": "cppd_clue_1_0",
+   "to": "cppd_inv_0_0"
+  },
+  {
+   "from": "cppd_inv_1_0",
+   "to": "cppd_tx_0_0"
+  },
+  {
+   "from": "g_cry",
+   "to": "cppd_head_0_0",
+   "from_dx": 151,
+   "label": "RHOMBOIDS",
+   "label_at": [
+    822.0,
+    258
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1282,
+   "w": 454,
+   "title": "Septic or gout? (older patient)",
+   "items": [
+    "septic: febrile · high white count · positive culture or Gram stain",
+    "gout: may be febrile · joint fluid 20 000–50 000 · urate crystals on microscopy"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 513,
+   "y": 1282,
+   "w": 454,
+   "title": "Gout: after the attack",
+   "items": [
+    "recurrence 60% in 1 year · 80% in 2 · 90% in 5",
+    "less meat and seafood, less alcohol; vegetables and low-fat dairy are good"
+   ],
+   "cols": 1
+  }
+ ]
+}

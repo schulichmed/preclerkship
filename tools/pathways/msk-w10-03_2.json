@@ -1,0 +1,593 @@
+{
+ "name": "nerve injury overview",
+ "width": 1316,
+ "title": "Nerve injury: after ruling out a tendon or blood-flow cause, localize the lesion (radiculopathy versus mononeuropathy) from the pattern of sensory loss and weakness, then grade it by the Seddon classification (neurapraxia, axonotmesis, neurotmesis), which predicts recovery; electrodiagnostic studies confirm, localize and grade",
+ "kinds": {
+  "rad_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rad_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "rad_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "mono_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mono_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "mono_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "npx_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "npx_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "npx_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "axo_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "axo_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "axo_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "nts_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nts_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "nts_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 246,
+   "h": 644,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 288,
+   "y": 288,
+   "w": 246,
+   "h": 644,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 564,
+   "y": 288,
+   "w": 246,
+   "h": 644,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 812,
+   "y": 288,
+   "w": 246,
+   "h": 644,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1060,
+   "y": 288,
+   "w": 246,
+   "h": 644,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 432,
+   "h": 134,
+   "text": "CLINICAL CLUES"
+  },
+  {
+   "x": 23,
+   "y": 606,
+   "h": 98,
+   "text": "ELECTRODIAGNOSIS"
+  },
+  {
+   "x": 23,
+   "y": 744,
+   "h": 180,
+   "text": "EXAMPLE · RECOVERY"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 293,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Numbness, tingling or weakness: is it a NERVE, WHERE is it, HOW BAD is it?",
+   "lines": [
+    "first exclude a tendon (weakness) or poor blood flow (numbness) · TRUE sensory loss is always neurogenic: central or peripheral?",
+    "negative symptoms: numbness, weakness, lost reflexes · positive: pain, paresthesia (tingling)"
+   ]
+  },
+  {
+   "id": "g_where",
+   "x": 45,
+   "y": 156,
+   "w": 484,
+   "h": 60,
+   "kind": "plain",
+   "title": "WHERE: root or named nerve?",
+   "lines": [
+    "the map of the numbness and WHICH muscles are weak decide"
+   ]
+  },
+  {
+   "id": "g_bad",
+   "x": 569,
+   "y": 156,
+   "w": 732,
+   "h": 60,
+   "kind": "plain",
+   "title": "HOW BAD: Seddon grade",
+   "lines": [
+    "which layer is cut decides recovery"
+   ]
+  },
+  {
+   "id": "rad_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 236,
+   "h": 96,
+   "kind": "rad_h",
+   "title": "Radiculopathy",
+   "lines": [
+    "spinal nerve ROOT",
+    "compressed in the intervertebral foramen"
+   ]
+  },
+  {
+   "id": "mono_head_0_0",
+   "x": 293,
+   "y": 296,
+   "w": 236,
+   "h": 96,
+   "kind": "mono_h",
+   "title": "Mononeuropathy",
+   "lines": [
+    "one NAMED nerve",
+    "compressed at a typical site"
+   ]
+  },
+  {
+   "id": "npx_head_0_0",
+   "x": 569,
+   "y": 296,
+   "w": 236,
+   "h": 96,
+   "kind": "npx_h",
+   "title": "Neurapraxia",
+   "lines": [
+    "MYELIN only, axon intact",
+    "compression"
+   ]
+  },
+  {
+   "id": "axo_head_0_0",
+   "x": 817,
+   "y": 296,
+   "w": 236,
+   "h": 96,
+   "kind": "axo_h",
+   "title": "Axonotmesis",
+   "lines": [
+    "AXON cut, EPINEURIUM intact",
+    "crush, stretch"
+   ]
+  },
+  {
+   "id": "nts_head_0_0",
+   "x": 1065,
+   "y": 296,
+   "w": 236,
+   "h": 96,
+   "kind": "nts_h",
+   "title": "Neurotmesis",
+   "lines": [
+    "EPINEURIUM cut",
+    "nerve discontinuous"
+   ]
+  },
+  {
+   "id": "rad_clue_0_0",
+   "x": 45,
+   "y": 432,
+   "w": 236,
+   "h": 134,
+   "kind": "rad_t",
+   "title": "Neck or back pain radiating down the limb",
+   "lines": [
+    "• DERMATOME, fuzzy borders",
+    "• MYOTOME weakness + reflex loss",
+    "• eased by taking tension off (arm overhead)"
+   ]
+  },
+  {
+   "id": "mono_clue_0_0",
+   "x": 293,
+   "y": 432,
+   "w": 236,
+   "h": 134,
+   "kind": "mono_t",
+   "title": "Well-circumscribed patch, CLEAR borders",
+   "lines": [
+    "• weak in THAT nerve's muscles only",
+    "• not same-root muscles of other nerves",
+    "• worse leaning, driving, typing"
+   ]
+  },
+  {
+   "id": "npx_clue_0_0",
+   "x": 569,
+   "y": 432,
+   "w": 236,
+   "h": 134,
+   "kind": "npx_t",
+   "title": "Conduction slowed or BLOCKED",
+   "lines": [
+    "e.g. Saturday night palsy"
+   ]
+  },
+  {
+   "id": "axo_clue_0_0",
+   "x": 817,
+   "y": 432,
+   "w": 236,
+   "h": 134,
+   "kind": "axo_t",
+   "title": "Wallerian degeneration",
+   "lines": [
+    "axon beyond the injury breaks down",
+    "the intact tube guides regrowth"
+   ]
+  },
+  {
+   "id": "nts_clue_0_0",
+   "x": 1065,
+   "y": 432,
+   "w": 236,
+   "h": 134,
+   "kind": "nts_t",
+   "title": "No tube to follow",
+   "lines": [
+    "regrowing fibres go off course"
+   ]
+  },
+  {
+   "id": "rad_inv_0_0",
+   "x": 45,
+   "y": 606,
+   "w": 236,
+   "h": 98,
+   "kind": "rad_w",
+   "title": "Electromyography (EMG): one ROOT's muscles",
+   "lines": [
+    "• across several named nerves",
+    "• paraspinals abnormal"
+   ]
+  },
+  {
+   "id": "mono_inv_0_0",
+   "x": 293,
+   "y": 606,
+   "w": 236,
+   "h": 98,
+   "kind": "mono_w",
+   "title": "EMG: that nerve's muscles only",
+   "lines": [
+    "paraspinals normal"
+   ]
+  },
+  {
+   "id": "npx_inv_0_0",
+   "x": 569,
+   "y": 606,
+   "w": 236,
+   "h": 98,
+   "kind": "npx_w",
+   "title": "Nerve conduction (NCS): speed ↓ (myelin)",
+   "lines": [
+    "EMG: no denervation at rest"
+   ]
+  },
+  {
+   "id": "axo_inv_0_0",
+   "x": 817,
+   "y": 606,
+   "w": 236,
+   "h": 98,
+   "kind": "axo_w",
+   "title": "NCS: size ↓ (axon)",
+   "lines": [
+    "EMG: denervation at rest, few or no motor units"
+   ]
+  },
+  {
+   "id": "nts_inv_0_0",
+   "x": 1065,
+   "y": 606,
+   "w": 236,
+   "h": 98,
+   "kind": "nts_w",
+   "title": "Looks like axonotmesis at first",
+   "lines": [
+    "only recovery, or none, tells them apart"
+   ]
+  },
+  {
+   "id": "rad_tx_0_0",
+   "x": 45,
+   "y": 744,
+   "w": 236,
+   "h": 79,
+   "kind": "rad_w",
+   "title": "Numb thumb → C6",
+   "lines": [
+    "C6 dermatome: lateral arm, forearm, thumb"
+   ]
+  },
+  {
+   "id": "rad_tx_1_0",
+   "x": 45,
+   "y": 845,
+   "w": 236,
+   "h": 79,
+   "kind": "rad_w",
+   "title": "Foot drop → L5",
+   "lines": [
+    "gluteus medius, tibialis posterior, paraspinals also abnormal"
+   ]
+  },
+  {
+   "id": "mono_tx_0_0",
+   "x": 293,
+   "y": 744,
+   "w": 236,
+   "h": 60,
+   "kind": "mono_w",
+   "title": "Numb thumb → carpal tunnel",
+   "lines": [
+    "median nerve territory"
+   ]
+  },
+  {
+   "id": "mono_tx_1_0",
+   "x": 293,
+   "y": 826,
+   "w": 236,
+   "h": 98,
+   "kind": "mono_w",
+   "title": "Foot drop → common peroneal",
+   "lines": [
+    "at the fibular head: dorsiflexion, toe extension, eversion 0/5"
+   ]
+  },
+  {
+   "id": "npx_tx_0_0",
+   "x": 569,
+   "y": 744,
+   "w": 236,
+   "h": 180,
+   "kind": "ok",
+   "title": "Recovers in WEEKS (6–12)",
+   "lines": [
+    "once the cause is removed"
+   ]
+  },
+  {
+   "id": "axo_tx_0_0",
+   "x": 817,
+   "y": 744,
+   "w": 236,
+   "h": 180,
+   "kind": "warn",
+   "title": "Regrows on its own, SLOWLY",
+   "lines": [
+    "• 1 mm a day = 1 inch a month",
+    "• repeat studies to follow it"
+   ]
+  },
+  {
+   "id": "nts_tx_0_0",
+   "x": 1065,
+   "y": 744,
+   "w": 236,
+   "h": 180,
+   "kind": "bad",
+   "title": "NO spontaneous recovery",
+   "lines": [
+    "refer: peripheral nerve injury clinic (physiatry or plastics)"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_where",
+   "path": "M673.0 106V131H287.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_bad",
+   "path": "M673.0 106V131H935.0V156"
+  },
+  {
+   "from": "rad_tx_0_0",
+   "to": "rad_tx_1_0"
+  },
+  {
+   "from": "mono_tx_0_0",
+   "to": "mono_tx_1_0"
+  },
+  {
+   "from": "rad_head_0_0",
+   "to": "rad_clue_0_0"
+  },
+  {
+   "from": "rad_clue_0_0",
+   "to": "rad_inv_0_0"
+  },
+  {
+   "from": "rad_inv_0_0",
+   "to": "rad_tx_0_0"
+  },
+  {
+   "from": "g_where",
+   "to": "rad_head_0_0",
+   "from_dx": -124
+  },
+  {
+   "from": "mono_head_0_0",
+   "to": "mono_clue_0_0"
+  },
+  {
+   "from": "mono_clue_0_0",
+   "to": "mono_inv_0_0"
+  },
+  {
+   "from": "mono_inv_0_0",
+   "to": "mono_tx_0_0"
+  },
+  {
+   "from": "g_where",
+   "to": "mono_head_0_0",
+   "from_dx": 124
+  },
+  {
+   "from": "npx_head_0_0",
+   "to": "npx_clue_0_0"
+  },
+  {
+   "from": "npx_clue_0_0",
+   "to": "npx_inv_0_0"
+  },
+  {
+   "from": "npx_inv_0_0",
+   "to": "npx_tx_0_0"
+  },
+  {
+   "from": "g_bad",
+   "to": "npx_head_0_0",
+   "from_dx": -248
+  },
+  {
+   "from": "axo_head_0_0",
+   "to": "axo_clue_0_0"
+  },
+  {
+   "from": "axo_clue_0_0",
+   "to": "axo_inv_0_0"
+  },
+  {
+   "from": "axo_inv_0_0",
+   "to": "axo_tx_0_0"
+  },
+  {
+   "from": "g_bad",
+   "to": "axo_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "nts_head_0_0",
+   "to": "nts_clue_0_0"
+  },
+  {
+   "from": "nts_clue_0_0",
+   "to": "nts_inv_0_0"
+  },
+  {
+   "from": "nts_inv_0_0",
+   "to": "nts_tx_0_0"
+  },
+  {
+   "from": "g_bad",
+   "to": "nts_head_0_0",
+   "from_dx": 248
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 958,
+   "w": 1256,
+   "title": "Electrodiagnostic studies (EDX) = nerve conduction studies (NCS) + needle electromyography (EMG)",
+   "items": [
+    "NCS: SIZE of the response = axon health · SPEED = myelin health",
+    "EMG: is the muscle quiet at rest (denervated muscle is not)? does it fire on command? which muscle exactly?",
+    "Answers: is it a nerve, where, how bad (myelin or axon, in continuity?), the likely timeline, or a muscle problem (myopathy)",
+    "NOT for musculoskeletal pain (rotator cuff tear) or central nervous system disease (stroke)"
+   ],
+   "cols": 1
+  }
+ ]
+}

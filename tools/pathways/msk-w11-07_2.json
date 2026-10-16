@@ -1,0 +1,903 @@
+{
+ "name": "fracture management overview",
+ "width": 1700,
+ "title": "Managing a fracture: the five steps for every fracture, what changes when it is open, and the seven complications (compartment syndrome, venous thromboembolism, non-union and malunion, avascular necrosis, post-traumatic arthritis, heterotopic ossification) with how each is recognised, sorted and managed",
+ "kinds": {
+  "all_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "all_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "all_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "open_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "open_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "open_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cs_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cs_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "cs_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "vte_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vte_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "vte_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "nu_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nu_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "nu_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "avn_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "avn_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "avn_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "late_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "late_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "late_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 272,
+   "w": 226,
+   "h": 1032,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 296,
+   "y": 272,
+   "w": 226,
+   "h": 1032,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 552,
+   "y": 272,
+   "w": 226,
+   "h": 1032,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 780,
+   "y": 272,
+   "w": 226,
+   "h": 1032,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1008,
+   "y": 272,
+   "w": 226,
+   "h": 1032,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1236,
+   "y": 272,
+   "w": 226,
+   "h": 1032,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1464,
+   "y": 272,
+   "w": 226,
+   "h": 1032,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 416,
+   "h": 270,
+   "text": "RECOGNISE"
+  },
+  {
+   "x": 23,
+   "y": 726,
+   "h": 116,
+   "text": "SORT IT"
+  },
+  {
+   "x": 23,
+   "y": 882,
+   "h": 414,
+   "text": "MANAGE"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 485,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A fracture: resuscitate → reduce → hold → x-ray → rehabilitate. Is it OPEN? Is a COMPLICATION developing?",
+   "lines": [
+    "goals: restore length, alignment, rotation and translation · move early · avoid healing complications · improve function"
+   ]
+  },
+  {
+   "id": "g_all",
+   "x": 45,
+   "y": 140,
+   "w": 216,
+   "h": 60,
+   "kind": "plain",
+   "title": "EVERY fracture",
+   "lines": []
+  },
+  {
+   "id": "g_open",
+   "x": 301,
+   "y": 140,
+   "w": 216,
+   "h": 60,
+   "kind": "plain",
+   "title": "A WOUND anywhere",
+   "lines": []
+  },
+  {
+   "id": "g_comp",
+   "x": 557,
+   "y": 140,
+   "w": 1128,
+   "h": 60,
+   "kind": "plain",
+   "title": "COMPLICATIONS",
+   "lines": [
+    "compartment syndrome is the emergency"
+   ]
+  },
+  {
+   "id": "all_head_0_0",
+   "x": 45,
+   "y": 280,
+   "w": 216,
+   "h": 96,
+   "kind": "all_h",
+   "title": "Closed fracture",
+   "lines": [
+    "most are displaced"
+   ]
+  },
+  {
+   "id": "open_head_0_0",
+   "x": 301,
+   "y": 280,
+   "w": 216,
+   "h": 96,
+   "kind": "open_h",
+   "title": "Open fracture",
+   "lines": [
+    "bone or hematoma exposed through skin"
+   ]
+  },
+  {
+   "id": "cs_head_0_0",
+   "x": 557,
+   "y": 280,
+   "w": 216,
+   "h": 96,
+   "kind": "cs_h",
+   "title": "Compartment syndrome",
+   "lines": [
+    "pressure in a closed fascio-osseous space · lower leg, forearm"
+   ]
+  },
+  {
+   "id": "vte_head_0_0",
+   "x": 785,
+   "y": 280,
+   "w": 216,
+   "h": 96,
+   "kind": "vte_h",
+   "title": "Venous thromboembolism",
+   "lines": [
+    "Virchow: injury, stasis, hypercoagulability"
+   ]
+  },
+  {
+   "id": "nu_head_0_0",
+   "x": 1013,
+   "y": 280,
+   "w": 216,
+   "h": 96,
+   "kind": "nu_h",
+   "title": "Non-union · malunion",
+   "lines": [
+    "non-union: not healed in TWICE the expected time",
+    "malunion: healed out of position"
+   ]
+  },
+  {
+   "id": "avn_head_0_0",
+   "x": 1241,
+   "y": 280,
+   "w": 216,
+   "h": 96,
+   "kind": "avn_h",
+   "title": "Avascular necrosis",
+   "lines": [
+    "bones with a RETROGRADE blood supply"
+   ]
+  },
+  {
+   "id": "late_head_0_0",
+   "x": 1469,
+   "y": 280,
+   "w": 216,
+   "h": 96,
+   "kind": "late_h",
+   "title": "Post-traumatic arthritis · heterotopic bone",
+   "lines": []
+  },
+  {
+   "id": "all_pres_0_0",
+   "x": 45,
+   "y": 416,
+   "w": 216,
+   "h": 270,
+   "kind": "all_t",
+   "title": "1 · Resuscitate",
+   "lines": [
+    "bones bleed; sharp edges injure vessels"
+   ]
+  },
+  {
+   "id": "open_pres_0_0",
+   "x": 301,
+   "y": 416,
+   "w": 216,
+   "h": 270,
+   "kind": "open_t",
+   "title": "ANY wound, even distant",
+   "lines": [
+    "open until proven otherwise"
+   ]
+  },
+  {
+   "id": "cs_pres_0_0",
+   "x": 557,
+   "y": 416,
+   "w": 216,
+   "h": 133,
+   "kind": "cs_t",
+   "title": "A CLINICAL diagnosis",
+   "lines": [
+    "• pain OUT OF PROPORTION, rising narcotic need",
+    "• pain on PASSIVE STRETCH",
+    "~paresthesia mid · paralysis late · pulse loss = missed"
+   ]
+  },
+  {
+   "id": "cs_pres_1_0",
+   "x": 557,
+   "y": 571,
+   "w": 216,
+   "h": 115,
+   "kind": "cs_w",
+   "title": "Causes",
+   "lines": [
+    "• tight cast · pressure · burn eschar",
+    "• hematoma · fluid leak · reperfusion · crush"
+   ]
+  },
+  {
+   "id": "vte_pres_0_0",
+   "x": 785,
+   "y": 416,
+   "w": 216,
+   "h": 270,
+   "kind": "vte_t",
+   "title": "Highest risk",
+   "lines": [
+    "• multiple injuries · spinal cord or head injury",
+    "• lower limb or pelvic fracture · older",
+    "• long surgery or long wait"
+   ]
+  },
+  {
+   "id": "nu_pres_0_0",
+   "x": 1013,
+   "y": 416,
+   "w": 216,
+   "h": 270,
+   "kind": "nu_t",
+   "title": "Non-union type",
+   "lines": [
+    "• ATROPHIC: no bone, poor biology",
+    "• HYPERTROPHIC: bone, not stable enough",
+    "• infected"
+   ]
+  },
+  {
+   "id": "avn_pres_0_0",
+   "x": 1241,
+   "y": 416,
+   "w": 216,
+   "h": 270,
+   "kind": "avn_t",
+   "title": "Pain",
+   "lines": [
+    "• femoral head",
+    "• talus",
+    "• scaphoid"
+   ]
+  },
+  {
+   "id": "late_pres_0_0",
+   "x": 1469,
+   "y": 416,
+   "w": 216,
+   "h": 134,
+   "kind": "late_t",
+   "title": "Arthritis after a peri-articular fracture",
+   "lines": [
+    "• ANKLE > 50% · rare at hip, knee",
+    "• pain on weight-bearing, less motion"
+   ]
+  },
+  {
+   "id": "late_pres_1_0",
+   "x": 1469,
+   "y": 572,
+   "w": 216,
+   "h": 114,
+   "kind": "late_w",
+   "title": "Heterotopic ossification",
+   "lines": [
+    "• polytrauma · head injury · burns > 30%",
+    "• hip, knee, elbow: stiffness → ankylosis"
+   ]
+  },
+  {
+   "id": "all_inv_0_0",
+   "x": 45,
+   "y": 726,
+   "w": 216,
+   "h": 116,
+   "kind": "all_w",
+   "title": "2 · Choose the reduction by",
+   "lines": [
+    "• type, site, displacement",
+    "• open or closed",
+    "• fit for surgery? worse injuries?"
+   ]
+  },
+  {
+   "id": "open_inv_0_0",
+   "x": 301,
+   "y": 726,
+   "w": 216,
+   "h": 116,
+   "kind": "open_w",
+   "title": "More energy = worse",
+   "lines": [
+    "• contamination, dead bone",
+    "• infection, non-union, delayed union"
+   ]
+  },
+  {
+   "id": "cs_inv_0_0",
+   "x": 557,
+   "y": 726,
+   "w": 216,
+   "h": 116,
+   "kind": "cs_w",
+   "title": "Cannot tell you? MEASURE",
+   "lines": [
+    "• diastolic blood pressure − compartment < 20 mmHg",
+    "• compartment > 30 mmHg"
+   ]
+  },
+  {
+   "id": "vte_inv_0_0",
+   "x": 785,
+   "y": 726,
+   "w": 216,
+   "h": 116,
+   "kind": "vte_w",
+   "title": "Choose by the patient",
+   "lines": [
+    "e.g. polytrauma with a bleed in the head"
+   ]
+  },
+  {
+   "id": "nu_inv_0_0",
+   "x": 1013,
+   "y": 726,
+   "w": 216,
+   "h": 116,
+   "kind": "nu_w",
+   "title": "Malunion",
+   "lines": [
+    "check every plane: short, angulated, rotated, translated"
+   ]
+  },
+  {
+   "id": "avn_inv_0_0",
+   "x": 1241,
+   "y": 726,
+   "w": 216,
+   "h": 116,
+   "kind": "avn_w",
+   "title": "Bone cell death",
+   "lines": [
+    "lack of blood supply after the fracture"
+   ]
+  },
+  {
+   "id": "late_inv_0_0",
+   "x": 1469,
+   "y": 726,
+   "w": 216,
+   "h": 116,
+   "kind": "late_w",
+   "title": "Early ossification: x-ray, CT NEGATIVE",
+   "lines": [
+    "bone scan instead"
+   ]
+  },
+  {
+   "id": "all_tx_0_0",
+   "x": 45,
+   "y": 882,
+   "w": 216,
+   "h": 114,
+   "kind": "ok",
+   "title": "Reduce",
+   "lines": [
+    "• CLOSED: analgesia + sedation, traction exaggerates, then reverse",
+    "• OPEN: in the operating room"
+   ]
+  },
+  {
+   "id": "all_tx_1_0",
+   "x": 45,
+   "y": 1018,
+   "w": 216,
+   "h": 96,
+   "kind": "ok",
+   "title": "3 · Hold it",
+   "lines": [
+    "• cast or splint · external fixator",
+    "• internal fixation: plates, screws, pins, nails"
+   ]
+  },
+  {
+   "id": "all_tx_2_0",
+   "x": 45,
+   "y": 1136,
+   "w": 216,
+   "h": 60,
+   "kind": "warn",
+   "title": "4 · Post-reduction x-ray",
+   "lines": [
+    "adequate AND maintained?"
+   ]
+  },
+  {
+   "id": "all_tx_3_0",
+   "x": 45,
+   "y": 1218,
+   "w": 216,
+   "h": 78,
+   "kind": "ok",
+   "title": "5 · Rehabilitate",
+   "lines": [
+    "move as much as is safe, as soon as possible"
+   ]
+  },
+  {
+   "id": "open_tx_0_0",
+   "x": 301,
+   "y": 882,
+   "w": 216,
+   "h": 118,
+   "kind": "bad",
+   "title": "1 · EARLY antibiotics + tetanus",
+   "lines": [
+    "e.g. 2 g intravenous cefazolin"
+   ]
+  },
+  {
+   "id": "open_tx_1_0",
+   "x": 301,
+   "y": 1022,
+   "w": 216,
+   "h": 136,
+   "kind": "ok",
+   "title": "2 · Splint, then EARLY surgery",
+   "lines": [
+    "• remove dead tissue, bone too",
+    "• irrigate with saline · stabilise"
+   ]
+  },
+  {
+   "id": "open_tx_2_0",
+   "x": 301,
+   "y": 1180,
+   "w": 216,
+   "h": 116,
+   "kind": "ok",
+   "title": "3 · Close early",
+   "lines": [
+    "direct closure, or a plastic surgery flap"
+   ]
+  },
+  {
+   "id": "cs_tx_0_0",
+   "x": 557,
+   "y": 882,
+   "w": 216,
+   "h": 414,
+   "kind": "bad",
+   "title": "URGENT call to orthopedics",
+   "lines": [
+    "• remove casts, dressings · elevate · cool",
+    "• definitive: FASCIOTOMY"
+   ]
+  },
+  {
+   "id": "vte_tx_0_0",
+   "x": 785,
+   "y": 882,
+   "w": 216,
+   "h": 414,
+   "kind": "ok",
+   "title": "Prevent",
+   "lines": [
+    "• pneumatic compression",
+    "• inferior vena cava filter: stops emboli, NOT clot",
+    "• acetylsalicylic acid · low-molecular-weight heparin"
+   ]
+  },
+  {
+   "id": "nu_tx_0_0",
+   "x": 1013,
+   "y": 882,
+   "w": 216,
+   "h": 214,
+   "kind": "ok",
+   "title": "Non-union",
+   "lines": [
+    "• stabilise · fix biology (nutrition, smoking, graft)",
+    "• clear infection · reconstruct"
+   ]
+  },
+  {
+   "id": "nu_tx_1_0",
+   "x": 1013,
+   "y": 1118,
+   "w": 216,
+   "h": 178,
+   "kind": "ok",
+   "title": "Malunion hurting function",
+   "lines": [
+    "osteotomy, then stabilise"
+   ]
+  },
+  {
+   "id": "avn_tx_0_0",
+   "x": 1241,
+   "y": 882,
+   "w": 216,
+   "h": 414,
+   "kind": "ok",
+   "title": "Surgical",
+   "lines": []
+  },
+  {
+   "id": "late_tx_0_0",
+   "x": 1469,
+   "y": 882,
+   "w": 216,
+   "h": 196,
+   "kind": "ok",
+   "title": "Arthritis: as for osteoarthritis",
+   "lines": [
+    "pain control · physiotherapy · surgery last"
+   ]
+  },
+  {
+   "id": "late_tx_1_0",
+   "x": 1469,
+   "y": 1100,
+   "w": 216,
+   "h": 196,
+   "kind": "ok",
+   "title": "Ossification: settle inflammation",
+   "lines": [
+    "excise once MATURE if it is a problem"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_all",
+   "path": "M865.0 90V115H153.0V140"
+  },
+  {
+   "from": "root",
+   "to": "g_open",
+   "path": "M865.0 90V115H409.0V140"
+  },
+  {
+   "from": "root",
+   "to": "g_comp",
+   "path": "M865.0 90V115H1121.0V140"
+  },
+  {
+   "from": "cs_pres_0_0",
+   "to": "cs_pres_1_0"
+  },
+  {
+   "from": "late_pres_0_0",
+   "to": "late_pres_1_0"
+  },
+  {
+   "from": "all_tx_0_0",
+   "to": "all_tx_1_0"
+  },
+  {
+   "from": "all_tx_1_0",
+   "to": "all_tx_2_0"
+  },
+  {
+   "from": "all_tx_2_0",
+   "to": "all_tx_3_0"
+  },
+  {
+   "from": "open_tx_0_0",
+   "to": "open_tx_1_0"
+  },
+  {
+   "from": "open_tx_1_0",
+   "to": "open_tx_2_0"
+  },
+  {
+   "from": "nu_tx_0_0",
+   "to": "nu_tx_1_0"
+  },
+  {
+   "from": "late_tx_0_0",
+   "to": "late_tx_1_0"
+  },
+  {
+   "from": "all_head_0_0",
+   "to": "all_pres_0_0"
+  },
+  {
+   "from": "all_pres_0_0",
+   "to": "all_inv_0_0"
+  },
+  {
+   "from": "all_inv_0_0",
+   "to": "all_tx_0_0"
+  },
+  {
+   "from": "g_all",
+   "to": "all_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "open_head_0_0",
+   "to": "open_pres_0_0"
+  },
+  {
+   "from": "open_pres_0_0",
+   "to": "open_inv_0_0"
+  },
+  {
+   "from": "open_inv_0_0",
+   "to": "open_tx_0_0"
+  },
+  {
+   "from": "g_open",
+   "to": "open_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "cs_head_0_0",
+   "to": "cs_pres_0_0"
+  },
+  {
+   "from": "cs_pres_1_0",
+   "to": "cs_inv_0_0"
+  },
+  {
+   "from": "cs_inv_0_0",
+   "to": "cs_tx_0_0"
+  },
+  {
+   "from": "g_comp",
+   "to": "cs_head_0_0",
+   "from_dx": -456
+  },
+  {
+   "from": "vte_head_0_0",
+   "to": "vte_pres_0_0"
+  },
+  {
+   "from": "vte_pres_0_0",
+   "to": "vte_inv_0_0"
+  },
+  {
+   "from": "vte_inv_0_0",
+   "to": "vte_tx_0_0"
+  },
+  {
+   "from": "g_comp",
+   "to": "vte_head_0_0",
+   "from_dx": -228
+  },
+  {
+   "from": "nu_head_0_0",
+   "to": "nu_pres_0_0"
+  },
+  {
+   "from": "nu_pres_0_0",
+   "to": "nu_inv_0_0"
+  },
+  {
+   "from": "nu_inv_0_0",
+   "to": "nu_tx_0_0"
+  },
+  {
+   "from": "g_comp",
+   "to": "nu_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "avn_head_0_0",
+   "to": "avn_pres_0_0"
+  },
+  {
+   "from": "avn_pres_0_0",
+   "to": "avn_inv_0_0"
+  },
+  {
+   "from": "avn_inv_0_0",
+   "to": "avn_tx_0_0"
+  },
+  {
+   "from": "g_comp",
+   "to": "avn_head_0_0",
+   "from_dx": 228
+  },
+  {
+   "from": "late_head_0_0",
+   "to": "late_pres_0_0"
+  },
+  {
+   "from": "late_pres_1_0",
+   "to": "late_inv_0_0"
+  },
+  {
+   "from": "late_inv_0_0",
+   "to": "late_tx_0_0"
+  },
+  {
+   "from": "g_comp",
+   "to": "late_head_0_0",
+   "from_dx": 456
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1330,
+   "w": 1640,
+   "title": "How a fracture heals",
+   "items": [
+    "the healing stages, timelines and how they look on x-ray: see the FRACTURE RADIOLOGY chart"
+   ],
+   "cols": 1
+  }
+ ]
+}

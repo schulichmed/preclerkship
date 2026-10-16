@@ -1,0 +1,754 @@
+{
+ "name": "vasculitis overview",
+ "width": 1180,
+ "title": "Vasculitis: a new headache over 50 points to giant cell arteritis, sinus, lung, kidney and nerve disease to ANCA-associated vasculitis, purpura on the legs to cutaneous leukocytoclastic vasculitis, and an identifiable cause to secondary vasculitis; each column gives presentation, numbered investigations and treatment in order",
+ "kinds": {
+  "gca_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gca_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "gca_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "anca_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "anca_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "anca_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "lcv_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "lcv_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "lcv_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "sec_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sec_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "sec_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 260,
+   "h": 1098,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 330,
+   "y": 270,
+   "w": 260,
+   "h": 1098,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 620,
+   "y": 270,
+   "w": 260,
+   "h": 1098,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 910,
+   "y": 270,
+   "w": 260,
+   "h": 1098,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 450,
+   "h": 214,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 704,
+   "h": 298,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1042,
+   "h": 318,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 225,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Systemically unwell, several organs, purpura: is it vasculitis, and which?",
+   "lines": [
+    "every patient: head-to-toe history and exam · blood count, creatinine, liver enzymes, sedimentation rate (ESR) and C-reactive protein (CRP), urinalysis · chest X-ray",
+    "kidneys and lungs can be SILENT · rule out INFECTION before immunosuppressing"
+   ]
+  },
+  {
+   "id": "g_gca",
+   "x": 45,
+   "y": 156,
+   "w": 250,
+   "h": 42,
+   "kind": "plain",
+   "title": "Over 50 + NEW headache",
+   "lines": []
+  },
+  {
+   "id": "g_anca",
+   "x": 335,
+   "y": 156,
+   "w": 250,
+   "h": 42,
+   "kind": "plain",
+   "title": "Sinus, lung, kidney, nerves",
+   "lines": []
+  },
+  {
+   "id": "g_lcv",
+   "x": 625,
+   "y": 156,
+   "w": 250,
+   "h": 42,
+   "kind": "plain",
+   "title": "Painful purpura on the legs",
+   "lines": []
+  },
+  {
+   "id": "g_sec",
+   "x": 915,
+   "y": 156,
+   "w": 250,
+   "h": 42,
+   "kind": "plain",
+   "title": "A cause is found",
+   "lines": []
+  },
+  {
+   "id": "gca_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 250,
+   "h": 132,
+   "kind": "gca_h",
+   "title": "Giant cell arteritis (GCA)",
+   "lines": [
+    "large vessel · the most common vasculitis",
+    "only over 50 (most over 70)"
+   ]
+  },
+  {
+   "id": "anca_head_0_0",
+   "x": 335,
+   "y": 278,
+   "w": 250,
+   "h": 132,
+   "kind": "anca_h",
+   "title": "ANCA-associated vasculitis",
+   "lines": [
+    "anti-neutrophil cytoplasmic antibody · small vessel",
+    "granulomatosis with polyangiitis (GPA)",
+    "microscopic (MPA) · eosinophilic (EGPA)"
+   ]
+  },
+  {
+   "id": "lcv_head_0_0",
+   "x": 625,
+   "y": 278,
+   "w": 250,
+   "h": 132,
+   "kind": "lcv_h",
+   "title": "Cutaneous leukocytoclastic vasculitis",
+   "lines": [
+    "small vessel · alone or part of another type"
+   ]
+  },
+  {
+   "id": "sec_head_0_0",
+   "x": 915,
+   "y": 278,
+   "w": 250,
+   "h": 132,
+   "kind": "sec_h",
+   "title": "Secondary vasculitis",
+   "lines": [
+    "an identifiable underlying cause"
+   ]
+  },
+  {
+   "id": "gca_pres_0_0",
+   "x": 45,
+   "y": 450,
+   "w": 250,
+   "h": 96,
+   "kind": "gca_t",
+   "title": "Cranial",
+   "lines": [
+    "• temporal headache, scalp tender",
+    "• jaw claudication",
+    "• diplopia, vision loss (15-20%)"
+   ]
+  },
+  {
+   "id": "gca_pres_1_0",
+   "x": 45,
+   "y": 568,
+   "w": 250,
+   "h": 96,
+   "kind": "gca_w",
+   "title": "Systemic",
+   "lines": [
+    "• polymyalgia symptoms: see BODY PAIN",
+    "• fatigue, fever, weight loss"
+   ]
+  },
+  {
+   "id": "anca_pres_0_0",
+   "x": 335,
+   "y": 450,
+   "w": 250,
+   "h": 105,
+   "kind": "anca_t",
+   "title": "Sinonasal · lung · kidney",
+   "lines": [
+    "• bloody crusty nose, sinus pain",
+    "• dyspnea, nodules, lung hemorrhage",
+    "• creatinine ↑, blood + protein in urine"
+   ]
+  },
+  {
+   "id": "anca_pres_1_0",
+   "x": 335,
+   "y": 577,
+   "w": 250,
+   "h": 87,
+   "kind": "anca_w",
+   "title": "Also",
+   "lines": [
+    "• eye mass (diplopia) · arthritis",
+    "• mononeuritis multiplex · purpura"
+   ]
+  },
+  {
+   "id": "lcv_pres_0_0",
+   "x": 625,
+   "y": 450,
+   "w": 250,
+   "h": 105,
+   "kind": "lcv_t",
+   "title": "Painful NON-blanching purpura",
+   "lines": [
+    "• legs, worse at the ankles",
+    "• ± urticarial vasculitis, ulcers"
+   ]
+  },
+  {
+   "id": "lcv_pres_1_0",
+   "x": 625,
+   "y": 577,
+   "w": 250,
+   "h": 87,
+   "kind": "lcv_w",
+   "title": "Other cause of purpura?",
+   "lines": [
+    "coagulopathy"
+   ]
+  },
+  {
+   "id": "sec_pres_0_0",
+   "x": 915,
+   "y": 450,
+   "w": 250,
+   "h": 214,
+   "kind": "sec_t",
+   "title": "Look for",
+   "lines": [
+    "• infection: hepatitis B or C, HIV, other",
+    "• drugs, toxins: allergy, cocaine",
+    "• cancer · lupus, rheumatoid arthritis, Sjögren's"
+   ]
+  },
+  {
+   "id": "gca_inv_0_0",
+   "x": 45,
+   "y": 704,
+   "w": 250,
+   "h": 110,
+   "kind": "gca_t",
+   "title": "1 · ESR + CRP immediately",
+   "lines": [
+    "both normal → GCA highly unlikely (< 2%)"
+   ]
+  },
+  {
+   "id": "gca_inv_1_0",
+   "x": 45,
+   "y": 836,
+   "w": 250,
+   "h": 166,
+   "kind": "gca_w",
+   "title": "2 · Temporal artery biopsy in 1-2 weeks",
+   "lines": [
+    "• 100% specific",
+    "• negative in 50-70% (skip lesions)",
+    "• or Doppler 'halo sign' in specialty centres"
+   ]
+  },
+  {
+   "id": "anca_inv_0_0",
+   "x": 335,
+   "y": 704,
+   "w": 250,
+   "h": 60,
+   "kind": "anca_t",
+   "title": "1 · Rule out infection",
+   "lines": [
+    "cultures, hepatitis, HIV"
+   ]
+  },
+  {
+   "id": "anca_inv_1_0",
+   "x": 335,
+   "y": 786,
+   "w": 250,
+   "h": 134,
+   "kind": "anca_w",
+   "title": "2 · ANCA ONLY if small vessel suspected",
+   "lines": [
+    "• cytoplasmic (anti-PR3) → GPA",
+    "• perinuclear (anti-MPO) → MPA, EGPA",
+    "• negative does NOT rule it out"
+   ]
+  },
+  {
+   "id": "anca_inv_2_0",
+   "x": 335,
+   "y": 942,
+   "w": 250,
+   "h": 60,
+   "kind": "anca_w",
+   "title": "3 · Biopsy the involved organ",
+   "lines": [
+    "first-line in single-organ disease"
+   ]
+  },
+  {
+   "id": "lcv_inv_0_0",
+   "x": 625,
+   "y": 704,
+   "w": 250,
+   "h": 139,
+   "kind": "lcv_t",
+   "title": "1 · Platelets + clotting times (INR, PTT)",
+   "lines": [
+    "rule out a coagulopathy"
+   ]
+  },
+  {
+   "id": "lcv_inv_1_0",
+   "x": 625,
+   "y": 865,
+   "w": 250,
+   "h": 137,
+   "kind": "lcv_w",
+   "title": "2 · Skin biopsy",
+   "lines": [
+    "• purpura: punch biopsy in primary care",
+    "• ulcer: deep excision by a surgeon"
+   ]
+  },
+  {
+   "id": "sec_inv_0_0",
+   "x": 915,
+   "y": 704,
+   "w": 250,
+   "h": 156,
+   "kind": "sec_t",
+   "title": "Rule out infection",
+   "lines": [
+    "• blood, urine, sputum cultures (fungal, acid-fast)",
+    "• hepatitis B + C, HIV, syphilis",
+    "• cryoglobulins ↑, complement ↓"
+   ]
+  },
+  {
+   "id": "sec_inv_1_0",
+   "x": 915,
+   "y": 882,
+   "w": 250,
+   "h": 120,
+   "kind": "sec_w",
+   "title": "Rule out cancer",
+   "lines": [
+    "• age-appropriate screening",
+    "• serum protein electrophoresis"
+   ]
+  },
+  {
+   "id": "gca_tx_0_0",
+   "x": 45,
+   "y": 1042,
+   "w": 250,
+   "h": 98,
+   "kind": "bad",
+   "title": "1 · Prednisone 1 mg/kg (max 60 mg) TODAY",
+   "lines": [
+    "after blood is drawn · NEVER wait for results"
+   ]
+  },
+  {
+   "id": "gca_tx_1_0",
+   "x": 45,
+   "y": 1162,
+   "w": 250,
+   "h": 80,
+   "kind": "bad",
+   "title": "Vision loss or stroke → emergency",
+   "lines": [
+    "urgent ophthalmology or neurology"
+   ]
+  },
+  {
+   "id": "gca_tx_2_0",
+   "x": 45,
+   "y": 1264,
+   "w": 250,
+   "h": 96,
+   "kind": "ok",
+   "title": "2 · Protect + refer",
+   "lines": [
+    "• proton pump inhibitor",
+    "• calcium, vitamin D, bisphosphonate",
+    "• rheumatology"
+   ]
+  },
+  {
+   "id": "anca_tx_0_0",
+   "x": 335,
+   "y": 1042,
+   "w": 250,
+   "h": 85,
+   "kind": "bad",
+   "title": "Unstable, lung bleed, renal failure → ADMIT",
+   "lines": []
+  },
+  {
+   "id": "anca_tx_1_0",
+   "x": 335,
+   "y": 1149,
+   "w": 250,
+   "h": 103,
+   "kind": "warn",
+   "title": "Active urine sediment, normal creatinine",
+   "lines": [
+    "→ urgent nephrology"
+   ]
+  },
+  {
+   "id": "anca_tx_2_0",
+   "x": 335,
+   "y": 1274,
+   "w": 250,
+   "h": 85,
+   "kind": "ok",
+   "title": "All others → urgent rheumatology",
+   "lines": []
+  },
+  {
+   "id": "lcv_tx_0_0",
+   "x": 625,
+   "y": 1042,
+   "w": 250,
+   "h": 85,
+   "kind": "ok",
+   "title": "1 · Topical corticosteroid",
+   "lines": [
+    "non-severe skin disease"
+   ]
+  },
+  {
+   "id": "lcv_tx_1_0",
+   "x": 625,
+   "y": 1149,
+   "w": 250,
+   "h": 87,
+   "kind": "ok",
+   "title": "2 · Anti-inflammatory (NSAID) or colchicine",
+   "lines": []
+  },
+  {
+   "id": "lcv_tx_2_0",
+   "x": 625,
+   "y": 1258,
+   "w": 250,
+   "h": 103,
+   "kind": "warn",
+   "title": "3 · Oral prednisone",
+   "lines": [
+    "only if severe, other agents failed, infection excluded"
+   ]
+  },
+  {
+   "id": "sec_tx_0_0",
+   "x": 915,
+   "y": 1042,
+   "w": 250,
+   "h": 147,
+   "kind": "ok",
+   "title": "Treat the cause",
+   "lines": [
+    "hepatitis C → antivirals first"
+   ]
+  },
+  {
+   "id": "sec_tx_1_0",
+   "x": 915,
+   "y": 1211,
+   "w": 250,
+   "h": 149,
+   "kind": "bad",
+   "title": "Steroids can WORSEN an infection",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_gca",
+   "path": "M605.0 106V131H170.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_anca",
+   "path": "M605.0 106V131H460.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_lcv",
+   "path": "M605.0 106V131H750.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_sec",
+   "path": "M605.0 106V131H1040.0V156"
+  },
+  {
+   "from": "gca_pres_0_0",
+   "to": "gca_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "anca_pres_0_0",
+   "to": "anca_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "lcv_pres_0_0",
+   "to": "lcv_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "gca_inv_0_0",
+   "to": "gca_inv_1_0"
+  },
+  {
+   "from": "anca_inv_0_0",
+   "to": "anca_inv_1_0"
+  },
+  {
+   "from": "anca_inv_1_0",
+   "to": "anca_inv_2_0"
+  },
+  {
+   "from": "lcv_inv_0_0",
+   "to": "lcv_inv_1_0"
+  },
+  {
+   "from": "sec_inv_0_0",
+   "to": "sec_inv_1_0"
+  },
+  {
+   "from": "gca_tx_0_0",
+   "to": "gca_tx_1_0"
+  },
+  {
+   "from": "gca_tx_1_0",
+   "to": "gca_tx_2_0"
+  },
+  {
+   "from": "anca_tx_0_0",
+   "to": "anca_tx_1_0"
+  },
+  {
+   "from": "anca_tx_1_0",
+   "to": "anca_tx_2_0"
+  },
+  {
+   "from": "lcv_tx_0_0",
+   "to": "lcv_tx_1_0"
+  },
+  {
+   "from": "lcv_tx_1_0",
+   "to": "lcv_tx_2_0"
+  },
+  {
+   "from": "sec_tx_0_0",
+   "to": "sec_tx_1_0"
+  },
+  {
+   "from": "gca_head_0_0",
+   "to": "gca_pres_0_0"
+  },
+  {
+   "from": "gca_pres_1_0",
+   "to": "gca_inv_0_0"
+  },
+  {
+   "from": "gca_inv_1_0",
+   "to": "gca_tx_0_0"
+  },
+  {
+   "from": "g_gca",
+   "to": "gca_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "anca_head_0_0",
+   "to": "anca_pres_0_0"
+  },
+  {
+   "from": "anca_pres_1_0",
+   "to": "anca_inv_0_0"
+  },
+  {
+   "from": "anca_inv_2_0",
+   "to": "anca_tx_0_0"
+  },
+  {
+   "from": "g_anca",
+   "to": "anca_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "lcv_head_0_0",
+   "to": "lcv_pres_0_0"
+  },
+  {
+   "from": "lcv_pres_1_0",
+   "to": "lcv_inv_0_0"
+  },
+  {
+   "from": "lcv_inv_1_0",
+   "to": "lcv_tx_0_0"
+  },
+  {
+   "from": "g_lcv",
+   "to": "lcv_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "sec_head_0_0",
+   "to": "sec_pres_0_0"
+  },
+  {
+   "from": "sec_pres_0_0",
+   "to": "sec_inv_0_0"
+  },
+  {
+   "from": "sec_inv_1_0",
+   "to": "sec_tx_0_0"
+  },
+  {
+   "from": "g_sec",
+   "to": "sec_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1394,
+   "w": 553,
+   "title": "Suspect primary vasculitis when",
+   "items": [
+    "chronically unwell: fevers, chills, weight loss",
+    "several organ systems · purpura",
+    "multi-organ failure: lung hemorrhage + renal dysfunction",
+    "AND no infection or cancer found"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 612,
+   "y": 1394,
+   "w": 553,
+   "title": "Classify by vessel size",
+   "items": [
+    "large: giant cell, Takayasu",
+    "medium: polyarteritis nodosa, Kawasaki, Behçet's",
+    "small: ANCA trio, cryoglobulinemia, cutaneous leukocytoclastic, Henoch-Schönlein",
+    "children: Kawasaki, Henoch-Schönlein"
+   ],
+   "cols": 1
+  }
+ ]
+}

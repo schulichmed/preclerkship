@@ -432,7 +432,8 @@ def main(slugs):
         p = "pom2/data/notes/%s.json" % slug
         doc = json.load(io.open(p, encoding="utf-8"))
         folder = os.path.join(VAULT, BLOCK_FOLDER[slug])
-        found = drafts = 0
+        found = 0
+        drafts = []
         for w in doc["weeks"]:
             wd = os.path.join(folder, "Week %d" % w["n"])
             for lec in w["lectures"]:
@@ -452,15 +453,23 @@ def main(slugs):
                 lec["hasNote"] = True
                 if is_draft(ch):
                     ch["blocks"] = ch["blocks"][1:]
-                    drafts += 1
+                    drafts.append(lec.get("title") or lec["name"])
                 lec.update(ch)
                 found += 1
         attach_pdfs(doc, pdfs)
         # One banner at the top of the notes tab, not a copy on every note.
         # The callouts stay in the vault, where they mark which notes still
         # need checking against this year's slides.
-        if drafts:
+        # Once most of a block is checked, name the notes that are not, rather
+        # than warning about all of them.
+        if drafts and len(drafts) * 2 > found:
             doc["draft"] = DRAFT_TEXT
+        elif drafts:
+            names = drafts[0] if len(drafts) == 1 else \
+                ", ".join(drafts[:-1]) + " and " + drafts[-1]
+            doc["draft"] = ("%s %s built from upper-year notes and not yet checked "
+                            "against this year's lecture slides."
+                            % (names, "is" if len(drafts) == 1 else "are"))
         else:
             doc.pop("draft", None)
         io.open(p, "w", encoding="utf-8", newline="\n").write(
