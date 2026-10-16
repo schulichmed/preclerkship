@@ -4,12 +4,8 @@ __pycache__/
 *.pyc
 build/
 
-# Claude Code skills. pom2-week is published on purpose - it is the weekly
-# pipeline the clubs run, and the diagram in the README comes out of it. It
-# still carries machine-specific vault paths, so read it as one lab's recipe
-# rather than something that runs anywhere as-is.
-skills/*
-!skills/pom2-week/
+# Claude Code skills stay local.
+skills/
 
 # The upstream source documents each course is built FROM, dropped in the
 # course's own folder for convenience. The portal's output is the JSON under

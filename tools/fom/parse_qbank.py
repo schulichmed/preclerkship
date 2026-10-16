@@ -88,7 +88,7 @@ SEC_LABEL = dict((k, l) for _h, k, l in SECTIONS)
 SEC_ORDER = [k for _h, k, _l in SECTIONS]
 
 SEC_META = {
-    "module": (u"The knowledge checks inside the week's Elentra asynchronous learning "
+    "module": (u"The knowledge checks inside the week's asynchronous learning "
                u"modules, transcribed into the Meds 2025 question bank."),
     "ra": u"The week's Readiness Assessment, as it was sat.",
     "sa": u"The week's Self-Assessment, as it was released.",

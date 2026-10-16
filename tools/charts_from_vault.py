@@ -390,9 +390,7 @@ def is_in_class(name, path):
     """True for a live in-class session rather than a recorded lecture.
 
     Most are named "In-Class - ..." in the vault. A few are numbered like a
-    lecture because Elentra numbers them, and carry `session: in-class` in
-    their frontmatter instead; OneNote files their decks under Synch, not
-    Asynch, which is how they were told apart.
+    lecture, and carry `session: in-class` in their frontmatter instead.
     """
     if name.startswith(IN_CLASS_PREFIX):
         return True

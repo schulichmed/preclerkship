@@ -26,7 +26,7 @@ it, every sampled question had real reasoning in it.
 WHAT AN EXPLANATION MAY BE BUILT FROM
 -------------------------------------
 The lecture note the question resolves to, and nothing else. This is the same
-rule the pom2-week skill states for questions themselves: nothing enters a
+rule that holds for questions themselves: nothing enters a
 question that the material did not put there. An explanation invented from
 general knowledge is precisely the "AI-generated trivia" the portal's README
 promises the bank does not contain, and it would be indistinguishable from a

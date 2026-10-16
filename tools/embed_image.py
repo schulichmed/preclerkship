@@ -33,7 +33,7 @@ that already carries PyMuPDF). It is an authoring helper for Stage 4, not part o
 the portal build.
 
 It cannot tell a cadaveric image from a clinical photograph, and does not try.
-That call is made by looking at the picture; see the pom2-week skill.
+That call is made by looking at the picture.
 """
 
 import argparse
