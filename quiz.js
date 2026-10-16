@@ -268,6 +268,7 @@
   }
 
   function persist(qid, patch) {
+    if (patch.attempt && isDue(qid)) DUE_SEEN[qid] = true;
     var prev = progress[qid] || {}, q = QMAP[qid];
     var next = {
       qid: qid,
@@ -293,6 +294,70 @@
   }
 
   function forget(qid) { forgetMany([qid]); }
+
+  /* ---------- the review queue ---------- */
+
+  /* A question you got wrong comes back: the day after, then three days after
+     you next get it right, then seven, then twenty-one, and after four right
+     in a row it leaves the queue. Wrong again starts it over. These are the
+     Leitner boxes Anki users already trust, run on the attempts the store
+     has always kept, so a progress file from before this shipped already has
+     a queue and nothing needs migrating.
+
+     Whole days, in the reader's own time zone: something answered at 11 pm
+     is due the next calendar day, not twenty-four hours later. A question
+     never got wrong is not in the queue at all - it is the bank's job to
+     find those, and Unseen already does. Mirrored in portal.js for the badge
+     on the block pages, which cannot load this file. */
+  var REVIEW_DAYS = [1, 3, 7, 21];
+  var DAY_MS = 864e5;
+  /* qids answered while due in this visit: they stay in the Due filter until
+     the page is left, so a question does not vanish under your cursor the
+     moment you answer it */
+  var DUE_SEEN = Object.create(null);
+
+  function midnight(ts) {
+    var d = new Date(ts);
+    d.setHours(0, 0, 0, 0);
+    return d.getTime();
+  }
+
+  /* { at: the day it is due, as a midnight timestamp } or null when the
+     question is not in the queue */
+  function reviewOf(qid) {
+    var q = QMAP[qid];
+    if (!q || q.unscorable || !onCurriculum(q)) return null;
+    var atts = attemptsOf(qid), lastWrong = -1;
+    for (var i = atts.length - 1; i >= 0; i--) {
+      if (atts[i] && atts[i].correct === false) { lastWrong = i; break; }
+    }
+    if (lastWrong === -1) return null;
+    var streak = atts.length - 1 - lastWrong;
+    if (streak >= REVIEW_DAYS.length) return null;
+    var last = atts[atts.length - 1];
+    if (!last || typeof last.ts !== "number") return null;
+    /* noon before midnight, so a daylight-saving day of 23 or 25 hours
+       still lands on the right date */
+    return { at: midnight(midnight(last.ts) + REVIEW_DAYS[streak] * DAY_MS + DAY_MS / 2),
+             step: streak };
+  }
+
+  function isDue(qid) {
+    var r = reviewOf(qid);
+    return !!r && r.at <= Date.now();
+  }
+
+  /* due now, and how many more fall due in the next week */
+  function queueCounts() {
+    var now = Date.now(), week = midnight(now) + 8 * DAY_MS, due = 0, soon = 0;
+    QUESTIONS.forEach(function (q) {
+      var r = reviewOf(q.qid);
+      if (!r) return;
+      if (r.at <= now) due++;
+      else if (r.at < week) soon++;
+    });
+    return { due: due, soon: soon };
+  }
 
   /* ---------- crossed-out options ---------- */
 
@@ -1080,6 +1145,8 @@
     if (KIND_LABEL[q.kind]) head.appendChild(el("span", "tag kind", KIND_LABEL[q.kind]));
     if (q.multi) head.appendChild(el("span", "tag multi", "select " + q.correct.length));
     if (q.retired) head.appendChild(el("span", "tag retired", "retired"));
+    /* shown by the stylesheet while the card carries is-due */
+    head.appendChild(el("span", "tag due-tag", "due for review"));
     var hasErr = (q.flags || []).some(function (f) {
       return f.type === "bug" || f.type === "red" ||
              (f.type === "warning" && f.title !== "No explanation in the module");
@@ -1357,10 +1424,16 @@
       chosen = testChosen(qid);
       done = chosen.length > 0;
       reveal = false;
+    } else if (isDue(qid)) {
+      /* back in the queue: asked again as if new, with no trace of the last
+         pick, and marked so you know why a question you did is open again */
+      chosen = [];
+      reveal = false;
     } else {
       chosen = chosenOf(qid) || [];
       reveal = done && revealOk();
     }
+    art.classList.toggle("is-due", !staging() && isDue(qid));
 
     art.dataset.state = reveal ? st : "unseen";
     if (!q.unscorable) art.classList.toggle("revealed", reveal);
@@ -1484,6 +1557,7 @@
       case "correct": return st === "correct";
       case "starred": return isStarred(q.qid);
       case "noted":   return hasMemo(q.qid);
+      case "due":     return !!DUE_SEEN[q.qid] || isDue(q.qid);
       default:        return true;
     }
   }
@@ -2452,6 +2526,7 @@
     { k: "all", label: "All" },
     { k: "unseen", label: "Unseen" },
     { k: "wrong", label: "Wrong", cls: "wrongish" },
+    { k: "due", label: "Due for review", title: "Questions you got wrong, back on a 1, 3, 7 and 21 day schedule" },
     { k: "correct", label: "Correct" },
     { k: "starred", label: "Starred", cls: "starish" },
     { k: "noted", label: "Your note" }
@@ -2518,7 +2593,7 @@
   function facetCounts() {
     var blk = Object.create(null), fam = Object.create(null);
     var week = Object.create(null), tag = Object.create(null);
-    var status = { all: 0, unseen: 0, wrong: 0, correct: 0, starred: 0, noted: 0 };
+    var status = { all: 0, unseen: 0, wrong: 0, correct: 0, starred: 0, noted: 0, due: 0 };
     var blkAll = 0, famAll = 0, weekAll = 0, tagAll = 0, shown = 0;
     QUESTIONS.forEach(function (q) {
       var b = blockOk(q), f = famOk(q), w = weekOk(q), t = tagOk(q);
@@ -2554,6 +2629,7 @@
         else status.correct++;
         if (isStarred(q.qid)) status.starred++;
         if (hasMemo(q.qid)) status.noted++;
+        if (statusIs(q, "due")) status.due++;
       }
       if (b && f && w && t && sOk) shown++;
     });
@@ -2862,6 +2938,48 @@
     if (bar && bar.scrollIntoView) bar.scrollIntoView({ block: "start" });
   }
 
+  function startReview() {
+    if (MODE === "test") setMode("tutor");
+    clearFilters();
+    filters.status = ["due"];
+    writeHash();
+    afterFilterChange();
+    var bar = byId("qbar");
+    if (bar && bar.scrollIntoView) bar.scrollIntoView({ block: "start" });
+  }
+
+  /* the queue's one line: what is due now and what is coming, with the way
+     in. Nothing due yet still says when the next ones land, so the schedule
+     is visible before it has anything to ask. */
+  function drawQueue(queue) {
+    var wrap = el("div", "ins-queue" + (queue.due ? " has-due" : ""));
+    var txt = el("p", "ins-qtxt");
+    if (queue.due) {
+      txt.appendChild(el("b", null, String(queue.due)));
+      txt.appendChild(document.createTextNode(
+        (queue.due === 1 ? " question you missed is" : " questions you missed are") +
+        " due for review today."));
+    } else {
+      txt.appendChild(document.createTextNode("Nothing due for review today."));
+    }
+    if (queue.soon) {
+      txt.appendChild(document.createTextNode(" " + queue.soon +
+        (queue.soon === 1 ? " more comes" : " more come") + " back this week."));
+    }
+    if (!queue.due && !queue.soon) {
+      txt.appendChild(document.createTextNode(
+        " A question you get wrong comes back after 1, 3, 7 and 21 days until you get it right four times running."));
+    }
+    wrap.appendChild(txt);
+    if (queue.due) {
+      var go = el("button", "ins-go", "Start review");
+      go.type = "button";
+      go.addEventListener("click", startReview);
+      wrap.appendChild(go);
+    }
+    return wrap;
+  }
+
   function heatClass(s) {
     if (!s.done) return "is-unseen";
     var p = s.right / s.done;
@@ -3023,8 +3141,9 @@
       if (st === "correct") { done++; right++; }
       else if (st === "wrong") done++;
     });
-    var next = reviewNext(stats);
+    var next = reviewNext(stats), queue = queueCounts();
     INS.line.textContent = !done ? "Answer a few questions to see where you stand"
+      : queue.due ? queue.due + (queue.due === 1 ? " question" : " questions") + " due for review"
       : next.length ? "Weakest: " + next[0].name + " (" + pct(next[0].right, next[0].done) + "% right)"
       : done + " answered, " + pct(right, done) + "% right";
     if (!INS.box.open) return;
@@ -3042,6 +3161,7 @@
         "Nothing answered yet. As you go, this shows the lectures you miss most, what you have done in the last four weeks, and every lecture coloured by how you are doing."));
       return;
     }
+    body.appendChild(drawQueue(queue));
     var top = el("div", "ins-top");
     top.appendChild(drawNext(next));
     top.appendChild(drawActivity(activity()));
@@ -3221,7 +3341,7 @@
     }
 
     buildMulti("f-status", "status", "statuses", STATUS_DEFS.map(function (d) {
-      return { k: d.k, label: d.k === "all" ? "Any status" : d.label };
+      return { k: d.k, label: d.k === "all" ? "Any status" : d.label, title: d.title };
     }));
 
     /* The search box. Guarded, because a page cached from before it shipped

@@ -1127,26 +1127,44 @@
      carrying its own status, so it costs one localStorage read and no fetch. */
   function answeredHere() {
     var raw = null;
+    var none = { done: 0, due: 0 };
     try { raw = window.localStorage.getItem((BLOCK.store || "nsq.v1.") + BLOCK.slug); }
-    catch (e) { return 0; }
-    if (!raw) return 0;
+    catch (e) { return none; }
+    if (!raw) return none;
     var parsed;
     try { parsed = JSON.parse(raw); }
-    catch (e) { return 0; }
-    if (!parsed || typeof parsed !== "object") return 0;
-    var n = 0;
+    catch (e) { return none; }
+    if (!parsed || typeof parsed !== "object") return none;
+    var n = 0, due = 0, now = Date.now();
     Object.keys(parsed).forEach(function (qid) {
       var r = parsed[qid];
       if (r && (r.status === "correct" || r.status === "wrong")) n++;
+      if (r && r.family !== "offcurriculum" && dueAt(r) <= now) due++;
     });
-    return n;
+    return { done: n, due: due };
+  }
+
+  /* quiz.js's review schedule (reviewOf), mirrored because a block page does
+     not load quiz.js: wrong, then back after 1, 3, 7 and 21 days of getting it
+     right, by calendar day. Infinity when the record is not in the queue. */
+  var REVIEW_DAYS = [1, 3, 7, 21];
+  function midnight(ts) { var d = new Date(ts); d.setHours(0, 0, 0, 0); return d.getTime(); }
+  function dueAt(r) {
+    var a = Array.isArray(r.attempts) ? r.attempts : [], lastWrong = -1;
+    for (var i = a.length - 1; i >= 0; i--) {
+      if (a[i] && a[i].correct === false) { lastWrong = i; break; }
+    }
+    if (lastWrong === -1) return Infinity;
+    var streak = a.length - 1 - lastWrong, last = a[a.length - 1];
+    if (streak >= REVIEW_DAYS.length || !last || typeof last.ts !== "number") return Infinity;
+    return midnight(midnight(last.ts) + REVIEW_DAYS[streak] * 864e5 + 432e5);
   }
 
   function paintDone() {
-    var el = byId("qb-done"), n = answeredHere();
+    var el = byId("qb-done"), c = answeredHere();
     if (!el) return;
-    el.hidden = n === 0;
-    el.textContent = n + " done";
+    el.hidden = c.done === 0;
+    el.textContent = c.done + " done" + (c.due ? " \u00b7 " + c.due + " due" : "");
   }
 
   function show(key) {

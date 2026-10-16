@@ -1183,6 +1183,11 @@ mark.lo .wl{border-bottom-color:#9a7a00;}
 .tag.multi{color:var(--q-accent-ink);border-color:var(--q-accent);}
 
 .qhead .spacer{flex:1;}
+
+/* a question back in the review queue: asked fresh, and tagged so it is
+   clear why something already answered is open again */
+.tag.due-tag{display:none;color:var(--q-accent-ink);border-color:var(--q-accent);background:var(--q-accent-soft);}
+.q.is-due .tag.due-tag{display:inline-block;}
 /* the note tag, the report link and the star wrap as one unit */
 .qhead-end{margin-left:auto;display:inline-flex;align-items:center;gap:7px;flex:none;}
 
@@ -3322,6 +3327,35 @@ select.ps:disabled{cursor:default;opacity:1;}
 }
 
 .ins-nums b{
+    font-family:var(--serif);
+    font-size:1.15rem;
+    font-weight:600;
+    color:var(--text);
+}
+
+/* the review queue line */
+.ins-queue{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px 14px;
+    padding:10px 14px;
+    border:1px solid var(--border);
+    border-radius:8px;
+    background:var(--bg);
+}
+
+.ins-queue.has-due{border-color:var(--q-accent-text);}
+
+.ins-qtxt{
+    flex:1 1 260px;
+    font-size:.84rem;
+    line-height:1.5;
+    color:var(--muted);
+}
+
+.ins-qtxt b{
     font-family:var(--serif);
     font-size:1.15rem;
     font-weight:600;
