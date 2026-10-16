@@ -47,9 +47,9 @@ Questions, corrections and contributions: <schulichmedfriends@gmail.com>.
 
 | Course | Year | State |
 | --- | --- | --- |
-| [Foundations of Medicine](fom/) | 1 | 4 blocks, weeks 1–15, 2,084 questions |
-| [Principles of Medicine 1](pom1/) | 1 | 5 blocks, weeks 1–17, 2,302 questions |
-| [Principles of Medicine 2](pom2/) | 2 | 5 blocks, weeks 1–20, 1,898 questions |
+| [Foundations of Medicine](fom/) | 1 | 4 blocks, weeks 1–15, 1,532 questions |
+| [Principles of Medicine 1](pom1/) | 1 | 5 blocks, weeks 1–17, 1,658 questions |
+| [Principles of Medicine 2](pom2/) | 2 | 5 blocks, weeks 1–20, 1,701 questions |
 | [Transition to Clerkship](t2c/) | 2 | 6 blocks, weeks 1–13, 214 questions |
 
 A course with nothing behind it keeps a card on the hub, greyed and unlinked,
@@ -263,8 +263,7 @@ The code is MIT, see [LICENSE](LICENSE).
 
 The study content under each course's `data/` came out of shared course material
 that students already pass between years: class question banks, the
-Pre-Clerkship Workbook, Elentra module knowledge checks, weekly quizzes, slide
-concept checks and questions written from the case and small-group sessions.
+Pre-Clerkship Workbook, weekly quizzes and questions written from the case and small-group sessions.
 
 **They are here on purpose.** Putting them somewhere public is the reason this
 repository exists, not an accident of packaging. Where a question came out of a
