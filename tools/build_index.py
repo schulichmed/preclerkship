@@ -147,7 +147,7 @@ def main():
             prose=prose, footer=portal.footer(),
             theme=portal.THEME_SCRIPT, toggle=portal.THEME_BTN)
         io.open(os.path.join(course["slug"], "index.html"), "w",
-                encoding="utf-8", newline="\n").write(html)
+                encoding="utf-8", newline="\n").write(portal.share(html, course["slug"] + "/"))
         q, w, l = portal.counts(course)
         print("%-5s %d blocks  %d/%d lecture notes  %d questions"
               % (course["slug"], len(course["blocks"]), w, l, q))

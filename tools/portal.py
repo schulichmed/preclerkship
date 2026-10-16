@@ -20,6 +20,7 @@ import hashlib
 import io
 import json
 import os
+import re
 
 # Progress is per-course in localStorage. The prefixes must stay distinct or one
 # course would read and overwrite another's answers, since they share an origin.
@@ -463,10 +464,43 @@ def footer():
             '<a href="mailto:%s">%s</a>\n</footer>' % (CONTACT, CONTACT))
 
 
-def favicon(label="PC", fill="4f2683"):
+def favicon(label="PC", fill="4f2683", base="../"):
+    """The tab icon, drawn inline per course, and the home-screen icon and
+    manifest, which are files at the site root (made by tools/icons/). base
+    is the way from the page to that root."""
     return ("<link rel=\"icon\" href=\"data:image/svg+xml,"
             "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'>"
             "<rect width='32' height='32' rx='7' fill='%%23%s'/>"
             "<text x='16' y='23' font-family='Georgia,serif' font-size='%d' "
             "font-weight='600' fill='%%23ffffff' text-anchor='middle'>%s</text>"
-            "</svg>\">" % (fill, 17 if len(label) < 3 else 13, label))
+            "</svg>\">\n"
+            "<link rel=\"apple-touch-icon\" href=\"%sapple-touch-icon.png\">\n"
+            "<link rel=\"manifest\" href=\"%ssite.webmanifest\">"
+            % (fill, 17 if len(label) < 3 else 13, label, base, base))
+
+
+# What a group chat, Slack or iMessage shows when a page's address is pasted:
+# the page's own title and description over one shared card. Crawlers that
+# draw previews do not run scripts, so these are in the HTML. The image URL
+# must be absolute, hence HUB_URL.
+SHARE_IMAGE = "share.png"
+
+
+def share(html, path):
+    """html with Open Graph and Twitter card tags added after its description.
+    path is the page's own path from the site root ("" for the hub)."""
+    title = re.search(r"<title>(.*?)</title>", html, re.S)
+    desc = re.search(r'<meta name="description" content="(.*?)">', html, re.S)
+    if not title or not desc or 'property="og:title"' in html:
+        return html
+    tags = ('\n<meta property="og:type" content="website">'
+            '\n<meta property="og:site_name" content="Schulich Pre-clerkship">'
+            '\n<meta property="og:title" content="%s">'
+            '\n<meta property="og:description" content="%s">'
+            '\n<meta property="og:url" content="%s%s">'
+            '\n<meta property="og:image" content="%s%s">'
+            '\n<meta property="og:image:width" content="1200">'
+            '\n<meta property="og:image:height" content="630">'
+            '\n<meta name="twitter:card" content="summary_large_image">'
+            % (title.group(1).strip(), desc.group(1), HUB_URL, path, HUB_URL, SHARE_IMAGE))
+    return html[:desc.end()] + tags + html[desc.end():]
