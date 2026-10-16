@@ -42,7 +42,7 @@ def existing(course):
     if not os.path.exists(p):
         return course["blurb"], EMPTY_PROSE
     s = io.open(p, encoding="utf-8").read()
-    hero = re.search(r'<div class="page-hero">\s*<h1>.*?</h1>\s*(.*?)\s*</div>', s, re.S)
+    hero = re.search(r'<div class="page-hero[^"]*">\s*<h1>.*?</h1>\s*(.*?)\s*</div>', s, re.S)
     prose = part(s, '<div class="prose">')
     return (hero.group(1) if hero else course["blurb"]), prose
 
@@ -112,7 +112,7 @@ TEMPLATE = u"""<!DOCTYPE html>
 
 <main id="content" tabindex="-1">
 
-<div class="page-hero">
+<div class="page-hero compact">
 <h1>{short}.</h1>
 {hero}
 </div>

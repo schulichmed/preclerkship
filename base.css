@@ -29,7 +29,7 @@
     --accent:var(--western-purple);
     --accent-soft:#e9def8;
     --shadow:0 1px 2px rgba(32,20,54,.06),0 8px 24px -12px rgba(79,38,131,.28);
-    --hero:linear-gradient(135deg,#201436 0%,#4f2683 65%,#8f55e0 100%);
+    --hero:#3a1f63;
     --serif:"Fraunces",Georgia,serif;
     --sans:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
 }
@@ -293,10 +293,9 @@ a{
     .theme-btn,.skip,.sync-wrap{display:none !important;}
 }
 
-/* the landing page masthead: the one deep band in the portal, the brand
-   gradient with white type on it, so the front door of every course looks
-   like the same place. Text sits on its left two thirds, over the darker
-   end, where white is 10:1 or better. */
+/* the landing page masthead: the one deep band in the portal, a flat brand
+   purple with white type on it, so the front door of every course looks
+   like the same place. White on it is better than 10:1. */
 .page-hero{
     position:relative;
     margin-bottom:48px;
@@ -309,20 +308,10 @@ a{
     isolation:isolate;
 }
 
-/* a soft orchid glow in the far corner, so the band has depth rather than
-   reading as a flat swatch */
-.page-hero::after{
-    content:"";
-    position:absolute;
-    z-index:-1;
-    right:-120px;
-    bottom:-160px;
-    width:420px;
-    height:420px;
-    border-radius:50%;
-    background:radial-gradient(closest-side,rgba(125,234,251,.22),transparent);
-    pointer-events:none;
-}
+/* a course's front door is a smaller band than the hub's */
+.page-hero.compact{margin-bottom:28px;padding:24px 32px 22px;border-radius:16px;}
+.page-hero.compact h1{font-size:clamp(1.9rem,5vw,2.6rem);margin-bottom:8px;}
+.page-hero.compact p{font-size:.98rem;line-height:1.5;max-width:760px;}
 
 .page-hero a{color:#ffffff;text-decoration:underline;text-underline-offset:2px;}
 .page-hero :focus-visible{outline-color:var(--sky);}
