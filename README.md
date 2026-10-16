@@ -168,6 +168,7 @@ python tools/curated_pairings.py         # matching questions -> dropdown grids 
 python tools/followup_cases.py           # follow-ups -> the case they continue (tools/followup_cases/)
 python tools/question_figures.py         # any newly-inlined picture -> assets/figures/
 python tools/review_lectures.py --derive # every question -> the lecture it tests
+python tools/note_links.py               # terms in each explanation -> the note that bolds them
 
 python tools/build_pages.py             # every course's block pages + question bank
 python tools/build_index.py             # every course's landing page
@@ -182,7 +183,8 @@ asset's content hash into its URL and the stamp goes stale otherwise.
 
 ### Which lecture a question came from
 
-`review_lectures.py` is the one script that writes `data/questions/*.json`, and
+`review_lectures.py` is one of two scripts that write `data/questions/*.json`
+after import (the other is `note_links.py`, which writes only `noteTerms`), and
 it writes exactly one field: `review`, the vault lecture note or notes whose
 material the question tests. That is what the `Review` line under each answer
 reads, and it is why the line can name a lecture rather than restating the week
