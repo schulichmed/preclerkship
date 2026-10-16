@@ -1236,6 +1236,8 @@
     });
 
     paintDone();
+    /* answers another device made, just brought in by sync.js */
+    window.addEventListener("portal:synced", paintDone);
     window.addEventListener("hashchange", function () {
       if (leftForQbank()) return;
       show(wanted());

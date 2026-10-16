@@ -235,6 +235,14 @@
         note("Progress could not be saved - the browser refused to write to local storage. Every question still works, but nothing is being kept.");
       }
     });
+    syncTouch();
+  }
+
+  /* sync.js, when the reader has signed in, sends what changed a little
+     later; without it, or signed out, this does nothing */
+  function syncTouch() {
+    try { if (window.PORTAL_SYNC) window.PORTAL_SYNC.touch(); }
+    catch (e) { /* sync is extra: a failure there must never stop a save */ }
   }
 
   function note(text) {
@@ -388,12 +396,29 @@
       delete progress[qid];
       delete STRUCK[qid];
     });
+    noteResets(ids);
     Object.keys(touched).forEach(function (slug) { save(slug); });
     ids.forEach(paintQuestion);
     paintStats();
     if (ANCHOR && ids.indexOf(ANCHOR) !== -1) {
       ANCHOR = null; RESUMING = false; paintPos();
     }
+  }
+
+  /* A cleared question has no record left, so nothing about it could tell
+     another device to clear its copy too: synced, the old answer would just
+     come back. The time of each clear is kept instead, and sync.js drops a
+     record answered at or before it. Kept signed in or not, so a clear made
+     before signing in still counts once the reader does. */
+  var RESET_KEY = "reset:" + STORE_PREFIX;
+  function noteResets(ids) {
+    try {
+      var raw = window.localStorage.getItem(RESET_KEY), map = null, now = Date.now();
+      try { map = raw ? JSON.parse(raw) : null; } catch (e) { map = null; }
+      if (!map || typeof map !== "object" || Array.isArray(map)) map = {};
+      ids.forEach(function (qid) { map[qid] = now; });
+      window.localStorage.setItem(RESET_KEY, JSON.stringify(map));
+    } catch (e) { /* storage refused: forgetMany's own save says so */ }
   }
 
   /* ---------- memos ---------- */
@@ -461,6 +486,7 @@
 
   function writeMemoStore(store) {
     window.localStorage.setItem(MEMO_KEY, JSON.stringify(store));
+    syncTouch();
   }
 
   function loadMemos() {
@@ -3787,6 +3813,36 @@
       note("This browser will not let the page use local storage, so answers cannot be saved. Every question still works.");
     }
   }
+
+  /* sync.js has written what another device answered into storage. Read it
+     back and repaint only the questions whose record or note changed: a
+     question opened with Show answer keeps no record, and repainting it
+     would fold it shut under the reader. */
+  function adopt() {
+    if (!booted || !QUESTIONS.length) return;
+    var before = progress;
+    progress = Object.create(null);
+    load();
+    var oldMemos = memos;
+    loadMemos();
+    var changed = [];
+    QUESTIONS.forEach(function (q) {
+      var a = before[q.qid], b = progress[q.qid];
+      if (!a !== !b || (a && b && (a.lastTs !== b.lastTs || a.flagged !== b.flagged))) changed.push(q.qid);
+      if ((oldMemos[q.qid] || "") !== (memos[q.qid] || "")) syncMemoCard(q.qid);
+    });
+    if (!changed.length) return;
+    changed.forEach(paintQuestion);
+    if (ANCHOR && !progress[ANCHOR]) { ANCHOR = null; RESUMING = false; paintPos(); }
+    paintStats();
+    applyFilters();
+  }
+
+  window.addEventListener("portal:synced", function (e) {
+    if (e.detail && e.detail.prefix !== STORE_PREFIX) return;
+    try { adopt(); }
+    catch (err) { if (window.console) console.warn("adopt:", err); }
+  });
 
   /* the tab strip calls this the first time Questions is opened; a second call
      is a no-op so switching tabs never refetches or rebuilds the stream */

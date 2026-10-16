@@ -248,7 +248,7 @@ def main():
         favicon=portal.favicon("PC", "4f2683"), fonts=portal.FONTS, nocache=portal.NOCACHE,
         base_css="base.css?v=" + portal.digest("base.css"),
         portal_css="portal.css?v=" + portal.digest("portal.css"),
-        cf=portal.CF, cards=cards(), footer=portal.footer(),
+        cf=portal.CF + portal.sync_tag(""), cards=cards(), footer=portal.footer(),
         theme=portal.THEME_SCRIPT, toggle=portal.THEME_BTN,
         presence=portal.PRESENCE_SLOT if portal.PRESENCE_URL else "")
     io.open("index.html", "w", encoding="utf-8", newline="\n").write(html)

@@ -142,7 +142,7 @@ def main():
             short=course["short"], desc=course["blurb"],
             favicon=portal.favicon(label, fill), fonts=portal.FONTS, nocache=portal.NOCACHE,
             base_css=portal.asset("base.css"), portal_css=portal.asset("portal.css"),
-            accent=course["accent"], cf=portal.CF, uplink=portal.uplink(1),
+            accent=course["accent"], cf=portal.CF + portal.sync_tag(), uplink=portal.uplink(1),
             hero=hero, cards=cards(course) or "",
             prose=prose, footer=portal.footer(),
             theme=portal.THEME_SCRIPT, toggle=portal.THEME_BTN)

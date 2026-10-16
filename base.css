@@ -197,6 +197,59 @@ a{
 :root:not([data-theme="dark"]) .theme-btn .sun{display:none;}
 :root[data-theme="dark"] .theme-btn .moon{display:none;}
 
+/* Sign in to sync, drawn by sync.js beside the toggle and only when
+   tools/portal.py has a Firebase config. The same round button; signed in it
+   shows the reader's Google photo (or initial) with a dot for the sync state,
+   and opens a small panel under it. */
+.sync-wrap{position:relative;display:inline-flex;flex:none;}
+.blocknav .sync-wrap{margin-left:auto;}
+.blocknav .sync-wrap + .theme-btn{margin-left:0;}
+.sync-btn{position:relative;overflow:visible;}
+.sync-btn > *{pointer-events:none;}
+.sync-btn img,.sync-btn .initial{
+    width:100%;height:100%;border-radius:50%;object-fit:cover;
+}
+.sync-btn .initial{
+    display:flex;align-items:center;justify-content:center;
+    font-size:.72rem;font-weight:600;color:#fff;background:var(--western-purple);
+}
+.sync-btn .dot{
+    position:absolute;right:-2px;bottom:-2px;width:9px;height:9px;border-radius:50%;
+    background:#2e9d5b;border:2px solid var(--bg);
+}
+.sync-btn[data-state="busy"] .dot{background:var(--tiger);}
+.sync-btn[data-state="error"] .dot{background:#c2410c;}
+.sync-pop{
+    position:fixed;z-index:60;
+    width:min(300px,calc(100vw - 32px));
+    padding:16px;
+    font-size:.82rem;line-height:1.45;text-align:left;
+    color:var(--text);background:var(--bg);
+    border:1px solid var(--border);border-radius:14px;
+    box-shadow:var(--shadow);
+}
+.sync-pop[hidden]{display:none;}
+.sync-pop p{margin:0 0 10px;}
+.sync-pop .sync-h{font-family:var(--serif);font-size:1rem;font-weight:600;margin-bottom:6px;}
+.sync-pop .sync-email{margin-top:-6px;color:var(--muted);font-size:.76rem;word-break:break-all;}
+.sync-pop .sync-status{color:var(--muted);}
+.sync-pop .sync-err{color:#c2410c;}
+.sync-pop button{
+    font:inherit;cursor:pointer;color:var(--text);background:var(--card-bg);
+    border:1px solid var(--border);border-radius:999px;padding:6px 14px;
+}
+.sync-pop button:hover:not(:disabled){border-color:var(--muted);}
+.sync-pop button:disabled{opacity:.6;cursor:default;}
+.sync-pop .sync-google{
+    display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+    padding:9px 14px;font-weight:600;background:#fff;color:#1f1f1f;border-color:#dadce0;
+}
+.sync-pop .sync-google svg{width:18px;height:18px;}
+.sync-pop .sync-row{display:flex;gap:8px;margin-bottom:10px;}
+.sync-pop .sync-wipe{
+    padding:0;border:0;background:none;color:var(--muted);font-size:.74rem;text-decoration:underline;
+}
+
 /* on the hub, top right of the hero beside the visitor counter; on a block
    page, the right end of the block nav */
 .hero-corner{
@@ -237,7 +290,7 @@ a{
 .blocknav .theme-btn{margin-left:auto;}
 
 @media print{
-    .theme-btn,.skip{display:none !important;}
+    .theme-btn,.skip,.sync-wrap{display:none !important;}
 }
 
 /* the landing page masthead: the one deep band in the portal, the brand
@@ -314,6 +367,11 @@ a{
     font-size:1.05rem;
     line-height:1.6;
 }
+
+/* the sync panel opens out of the hero's corner but is a card, not the band */
+.page-hero .sync-pop p{max-width:none;color:var(--text);font-size:inherit;line-height:inherit;}
+.page-hero .sync-pop .sync-email,.page-hero .sync-pop .sync-status{color:var(--muted);}
+.page-hero .sync-pop .sync-err{color:#c2410c;}
 
 footer{
     padding:60px 0 80px;
