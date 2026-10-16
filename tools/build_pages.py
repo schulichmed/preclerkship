@@ -686,7 +686,7 @@ def build_qbank(course):
         eyebrow=html_escape(u"Schulich %s \u00b7 %s" % (course["short"], cfg["eyebrow"])),
         block_json=json.dumps(cfg, ensure_ascii=False))
     io.open(os.path.join(d, "qbank.html"), "w",
-            encoding="utf-8", newline="\n").write(html)
+            encoding="utf-8", newline="\n").write(portal.share(html, d + "/qbank.html"))
     print("%-5s %-6s %d blocks pooled  %4d questions" % (d, "qbank", len(blocks), total))
 
 
@@ -719,7 +719,7 @@ def main():
                 eyebrow=html_escape(u"Schulich %s \u00b7 Block %s \u00b7 Weeks %s" % (course["short"], n, weeks)),
                 block_json=json.dumps(cfg, ensure_ascii=False))
             io.open(os.path.join(d, "%s.html" % slug), "w",
-                    encoding="utf-8", newline="\n").write(html)
+                    encoding="utf-8", newline="\n").write(portal.share(html, "%s/%s.html" % (d, slug)))
             print("%-5s %-6s %2d/%d notes  %4d questions" % (d, slug, written, lectures, q))
         # a one-block course has nothing to pool, and no page to pool it on
         if len(course["blocks"]) > 1:
