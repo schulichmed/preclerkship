@@ -2604,7 +2604,30 @@
     var t = e.target;
     if (t && (t.isContentEditable ||
               /^(input|textarea|select)$/i.test(t.tagName || ""))) return;
+    if (e.key === "?") { e.preventDefault(); toggleKeys(); return; }
+    if (e.key === "Escape" && KEYHELP && !KEYHELP.hidden) { toggleKeys(false); return; }
     if (e.shiftKey) return;
+    /* 1-9 pick that option of the question the bar is on, Enter presses its
+       Check or Show answer. Each is a click on the card's own button, so a
+       disabled, crossed-out or already answered card behaves exactly as it
+       would under the mouse. Enter on a focused button or link is left to
+       the browser, which clicks that instead. */
+    if (/^[1-9]$/.test(e.key) || e.key === "Enter") {
+      var art = keyCard();
+      if (!art) return;
+      var b = null;
+      if (e.key === "Enter") {
+        if (t && /^(button|a|summary)$/i.test(t.tagName || "")) return;
+        b = [].filter.call(art.querySelectorAll(".actions .btn"), usable)[0] || null;
+      } else {
+        b = art.querySelectorAll(".opts .opt")[parseInt(e.key, 10) - 1] || null;
+        if (b && !usable(b)) b = null;
+      }
+      if (!b) return;
+      e.preventDefault();
+      b.click();
+      return;
+    }
     if (e.key === "j") { e.preventDefault(); step(1); }
     else if (e.key === "k") { e.preventDefault(); step(-1); }
     else if (e.key === "b" && ANCHOR) {
@@ -2612,6 +2635,59 @@
       RESUMING = false;
       goTo(ANCHOR);
     }
+  }
+
+  function usable(b) { return !b.disabled && b.offsetParent !== null; }
+
+  /* The card the keys act on: the one the bar is counting, or in a stream
+     not yet scrolled, the first one showing. */
+  function keyCard() {
+    var id = CURRENT || (VISIBLE.length ? VISIBLE[0] : null);
+    var art = id ? byId("q-" + id) : null;
+    return art && art.offsetParent !== null ? art : null;
+  }
+
+  /* The keys, listed. "?" or the bar's ? button opens it, and Escape, the
+     button or a click anywhere else closes it. Built on first use so a page
+     cached from before it shipped gets it too. */
+  var KEYHELP = null;
+  var KEYS = [
+    ["1\u20139", "Pick that option"],
+    ["Enter", "Check answer / Show answer"],
+    ["j", "Next question"],
+    ["k", "Previous question"],
+    ["b", "Back to where you were"],
+    ["/", "Search the bank"],
+    ["?", "This list"]
+  ];
+
+  function toggleKeys(open) {
+    if (!KEYHELP) {
+      KEYHELP = el("div", "keyhelp");
+      KEYHELP.id = "keyhelp";
+      KEYHELP.hidden = true;
+      KEYHELP.setAttribute("role", "dialog");
+      KEYHELP.setAttribute("aria-label", "Keyboard shortcuts");
+      KEYHELP.appendChild(el("p", "keyhelp-h", "Keyboard shortcuts"));
+      var dl = el("dl");
+      KEYS.forEach(function (k) {
+        var dt = el("dt");
+        dt.appendChild(el("kbd", null, k[0]));
+        dl.appendChild(dt);
+        dl.appendChild(el("dd", null, k[1]));
+      });
+      KEYHELP.appendChild(dl);
+      document.body.appendChild(KEYHELP);
+      document.addEventListener("click", function (e) {
+        if (KEYHELP.hidden || KEYHELP.contains(e.target)) return;
+        if (e.target.closest && e.target.closest("#pb-keys")) return;
+        toggleKeys(false);
+      });
+    }
+    var show = open === undefined ? KEYHELP.hidden : open;
+    KEYHELP.hidden = !show;
+    var btn = byId("pb-keys");
+    if (btn) btn.setAttribute("aria-expanded", show ? "true" : "false");
   }
 
   /* a browser without IntersectionObserver gets the stream exactly as it was,
@@ -2630,6 +2706,16 @@
     byId("pb-top").addEventListener("click", toTop);
     byId("pb-prev").addEventListener("click", function () { step(-1); });
     byId("pb-next").addEventListener("click", function () { step(1); });
+    /* the ? button joins the bar's steps; CSS shows it only where there is
+       a keyboard to speak of (a fine pointer that can hover) */
+    var kb = el("button", "pb-step pb-keys", "?");
+    kb.id = "pb-keys";
+    kb.type = "button";
+    kb.title = "Keyboard shortcuts (?)";
+    kb.setAttribute("aria-label", "Keyboard shortcuts");
+    kb.setAttribute("aria-expanded", "false");
+    kb.addEventListener("click", function () { toggleKeys(); });
+    byId("pb-next").parentNode.appendChild(kb);
     byId("pb-mark").addEventListener("click", function () {
       if (!ANCHOR) return;
       RESUMING = false;
