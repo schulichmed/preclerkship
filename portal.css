@@ -1411,7 +1411,9 @@ mark.lo .wl{border-bottom-color:#9a7a00;}
     color:var(--q-accent-ink);
 }
 
-.ans-src .sw{color:var(--muted);font-weight:500;}
+/* .sw is also the weak-spots panel's 11px colour square; undo its box here,
+   or the review line wraps a letter at a time inside it */
+.ans-src .sw{display:inline;width:auto;height:auto;border-radius:0;vertical-align:baseline;color:var(--muted);font-weight:500;}
 
 /* Each lecture on the review line opens its note. Set as a quiet link rather
    than a button: the line is the pointer out of the answer and should read
