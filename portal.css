@@ -2644,6 +2644,49 @@ body.has-dialog{overflow:hidden;}
    carries a word - "top" is not a direction anyone should have to infer */
 .pb-top{width:auto;padding:0 11px;}
 
+/* the ? on the bar, and the list of keys it opens. Only where there is a
+   keyboard: a phone has nothing to press. */
+.pb-keys{font-weight:600;}
+@media (hover:none),(pointer:coarse){
+    .pb-keys{display:none;}
+}
+.keyhelp{
+    position:fixed;
+    right:max(18px,calc(50% - 380px));
+    bottom:74px;
+    z-index:21;
+    width:300px;
+    padding:14px 16px 12px;
+    background:var(--card-bg);
+    border:1px solid var(--border);
+    border-radius:14px;
+    box-shadow:0 18px 40px -18px rgba(32,20,54,.45);
+}
+.keyhelp[hidden]{display:none;}
+.keyhelp-h{
+    margin:0 0 8px;
+    font-size:.72rem;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+}
+.keyhelp dl{display:grid;grid-template-columns:auto 1fr;gap:7px 12px;margin:0;align-items:center;}
+.keyhelp dt{margin:0;}
+.keyhelp dd{margin:0;font-size:.84rem;color:var(--text);}
+.keyhelp kbd{
+    display:inline-block;
+    min-width:24px;
+    padding:2px 7px;
+    font:600 .76rem/1.4 Inter,system-ui,sans-serif;
+    text-align:center;
+    color:var(--q-accent-text);
+    background:var(--q-accent-soft);
+    border:1px solid color-mix(in srgb,var(--q-accent) 35%,transparent);
+    border-bottom-width:2px;
+    border-radius:6px;
+}
+
 /* the notes tab runs the same pill with that one control on it */
 .notebar{padding:8px;gap:0;}
 
@@ -3243,7 +3286,7 @@ select.ps:disabled{cursor:default;opacity:1;}
 /* a note is a one-pager by design, so printing gives one per sheet and drops
    every control - the gaps go too, they are screen bookkeeping */
 @media print{
-    .uplink,.blocknav,.tabs,.rail,.qbar,.testbar,.pagebar,.scoreboard,.storenote,footer,.pdf-btn,.pw-open,.fig-open,.posbar,.deck-dl{display:none !important;}
+    .uplink,.blocknav,.tabs,.rail,.qbar,.testbar,.pagebar,.scoreboard,.storenote,footer,.pdf-btn,.pw-open,.fig-open,.posbar,.keyhelp,.deck-dl{display:none !important;}
 
     /* one note, one week, or the lot: whatever was marked survives the print
        and everything else steps out of the way */
