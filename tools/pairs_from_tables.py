@@ -71,9 +71,9 @@ def main() -> None:
         hits = [q for q in bank if convert(q)]
         if not hits:
             continue
-        with open(path, "w", encoding="utf-8") as fh:
-            json.dump(bank, fh, ensure_ascii=False, indent=1)
-            fh.write("\n")
+        # the banks ship compact (default separators, LF, no trailing newline)
+        with open(path, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(json.dumps(bank, ensure_ascii=False))
         total += len(hits)
         print("%-34s %2d converted" % (path, len(hits)))
         for q in hits:
