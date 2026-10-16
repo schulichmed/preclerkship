@@ -203,11 +203,11 @@ A collaborative initiative by the Schulich <strong>Open-Source Medicine</strong>
 </p>
 
 <p>
-<strong>Co-developers.</strong> Noor Simsam and Nora Treleaven, Class of 2029.
+<strong>Co-developers.</strong> Noor Simsam, Nora Treleaven and Ashish Saragadam, Class of 2029.
 </p>
 
 <p>
-<strong>Contributors.</strong> Ashish Saragadam, Negar Goodarzynejad, Jessica Wang,
+<strong>Contributors.</strong> Negar Goodarzynejad, Jessica Wang,
 Tamjeed Nawaz, Yasmine Madan, Class of 2029.
 Wessam Al Jawhri, Ella Boone, Class of 2030.
 </p>
