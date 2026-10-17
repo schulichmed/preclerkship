@@ -85,8 +85,8 @@ TEMPLATE = u"""<!DOCTYPE html>
 </div>
 <h1>Schulich Pre-clerkship.</h1>
 <p>
-A student-made study resource for Schulich med students in pre-clerkship.
-Unofficial, and not endorsed by the school.
+A centralized, dynamic, up-to-date resource for all Schulich med students in
+pre-clerkship.
 </p>
 </div>
 
@@ -117,10 +117,8 @@ are old, and the Q-bank is asking about material you are not even covering anymo
 </p>
 
 <p>
-It is a student-made study resource for Schulich medical students in pre-clerkship,
-kept current week by week. It is unofficial: it is not affiliated with or endorsed by
-the Schulich School of Medicine &amp; Dentistry or Western University, it may contain
-errors, and your lectures are always the authority.
+It is a centralized, dynamic, up-to-date resource for all Schulich medical students in
+pre-clerkship.
 </p>
 
 <p>
