@@ -128,7 +128,7 @@ It includes:
 <ul>
 <li><strong>Notes:</strong> Summary notes, charts, flowcharts, illustrations, and Schulich Reviews, organized by block, week, and lecture. Any note can be exported to PDF and annotated.</li>
 <li><strong>Anki:</strong> An updated version of Christina&rsquo;s Anki deck, organized by block, week, and lecture.</li>
-<li><strong>Question bank:</strong> A Q-bank that students can filter by block, week, or source, then use to make their own custom practice tests. Progress is saved, so you can revisit questions you got wrong. Questions come from previous student Q-banks, including Hippo Council, Schulich Reviews, and the Pre-Clerkship Workbook, and case-based questions are written from the cases discussed in DSSGs, in-class sessions, and modules. Every question names its source, and explanations drafted with AI help are marked as reasoned.</li>
+<li><strong>Question bank:</strong> A Q-bank that students can filter by block, week, or source, then use to make their own custom practice tests. Progress is saved, so you can revisit questions you got wrong.</li>
 </ul>
 
 <p>
