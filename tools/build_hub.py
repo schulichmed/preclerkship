@@ -200,12 +200,15 @@ added &mdash; goes to
 <div class="body">
 
 <p>
-<strong>Founder and co-developer.</strong> Noor Simsam, Class of 2029.
+<strong>Founder and co-developer:</strong> Noor Simsam (Class of 2029).
 </p>
 
 <p>
-<strong>Co-developers.</strong> Nora Treleaven and Ashish Saragadam, Class of 2029.
-Wessam Al Jawhri and Ella Boone, Class of 2030.
+<strong>Co-developers (Class of 2029):</strong> Nora Treleaven and Ashish Saragadam.
+</p>
+
+<p>
+<strong>Co-developers (Class of 2030):</strong> Wessam Al Jawhri and Ella Boone.
 </p>
 
 <p>

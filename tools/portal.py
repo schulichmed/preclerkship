@@ -437,17 +437,9 @@ REPORT_URL = "https://preclerkship-report.schulichmed.workers.dev/"
 
 
 # Every page carries this, so it is said once, here.
-NOTICE = (u"<p><strong>Unofficial and student-run.</strong> Not affiliated with or "
-          u"endorsed by the Schulich School of Medicine &amp; Dentistry or Western "
-          u"University. A study aid only: it may contain errors, it is not medical "
-          u"advice, and your lectures are the authority. Explanations marked "
-          u"<em>reasoned</em> were drafted with AI help and are not faculty-checked.</p>")
-
-
 def footer():
-    return ('<footer>\n%s\n<p>To report an error, ask a question or request that '
-            'something be removed, email <a href="mailto:%s">%s</a>.</p>\n</footer>'
-            % (NOTICE, CONTACT, CONTACT))
+    return ('<footer>\n<p><strong>Unofficial and student-run.</strong> For any inquiries, '
+            'email <a href="mailto:%s">%s</a>.</p>\n</footer>' % (CONTACT, CONTACT))
 
 
 def favicon(label="PC", fill="4f2683", base="../"):
