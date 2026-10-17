@@ -31,8 +31,8 @@
 
   /* Where this block's questions went. One place builds it, so the link in the
      tab strip and the redirect below cannot drift apart. */
-  function qbankUrl() {
-    return "qbank.html#block=" + BLOCK.slug;
+  function qbankUrl(slug) {
+    return "qbank.html#block=" + (slug || BLOCK.slug);
   }
 
   /* A bookmark or an old link pointing at this block's questions still means
@@ -328,6 +328,22 @@
       kp.appendChild(el("span", "kt", "High-yield discriminators"));
       kp.appendChild(html("div", null, lec.keypoints));
       art.appendChild(kp);
+    }
+
+    /* The end of a note is where you want to test yourself, so it hands you to
+       the bank filtered to this block and to the lectures this note is about:
+       its own and every one it also covers. build_pages.py (lecture_counts)
+       worked out which of those have questions and how many, and a note with
+       none gets no button rather than one that lands on an empty bank. Only
+       the block page passes the counts; the bank's own note dialog is already
+       in the bank. */
+    var lq = opts.lecq && lec.id ? opts.lecq[lec.id] : null;
+    if (lq && lq.n && lq.lec && opts.slug) {
+      var go = el("p", "note-qbank");
+      var a = el("a", null, "Practice questions for this lecture · " + lq.n);
+      a.href = qbankUrl(opts.slug) + "&lecture=" + lq.lec;
+      go.appendChild(a);
+      art.appendChild(go);
     }
 
     return art;

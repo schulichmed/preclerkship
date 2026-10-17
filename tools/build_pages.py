@@ -159,6 +159,59 @@ def block_counts(course, slug):
     return portal.course_count(qs), len(written), len(lects)
 
 
+def lecture_key(lecture_id):
+    """endo-w1-02 -> w1-02 (msk-w7-02.1 -> w7-02.1, a lecture taught in parts),
+    the lecture as the bank's address names it; None
+    for a lecture with no number (an in-class session), which no question's
+    review entry can point at."""
+    m = re.search(r"-(w\d+-\d+(?:\.\d+)?)$", lecture_id or "")
+    return m.group(1) if m else None
+
+
+def lecture_counts(course, slug):
+    """{note id: {"n": questions, "lec": "w1-02,w1-03"}}, for the button at the
+    end of each note.
+
+    A note counts the questions for its own lecture and every lecture it also
+    covers, each question once, the way the bank's lecture filter will show
+    them. Only this block's own file is read because the button also sets the
+    block filter, and the bank's block is the file a question was filed in.
+    Off-curriculum questions count: the bank shows them under the filter too.
+
+    "lec" is the bank address's lecture list, the note's own lecture first.
+    A covered lecture with no questions is left out of it: it would filter
+    nothing, and the bank, which learns a lecture's name from its questions,
+    could only label its chip with the bare key. A note with no questions at
+    all is left out, and gets no button."""
+    d = course["slug"]
+    qs = json.load(io.open(os.path.join(d, "data", "questions", "%s.json" % slug),
+                           encoding="utf-8"))
+    nt = json.load(io.open(os.path.join(d, "data", "notes", "%s.json" % slug),
+                           encoding="utf-8"))
+    tests = []
+    for q in qs:
+        keys = set()
+        for r in q.get("review") or []:
+            if r and r.get("w") is not None and re.fullmatch(r"\d+(?:\.\d+)?", str(r.get("n") or "")):
+                keys.add("w%s-%s" % (r["w"], r["n"]))
+        if keys:
+            tests.append(keys)
+    out = {}
+    for w in nt["weeks"]:
+        for lec in w["lectures"]:
+            if lec.get("hasNote") is not True:
+                continue
+            mine = []
+            for k in [lecture_key(lec.get("id"))] + [lecture_key(c.get("key"))
+                                                     for c in lec.get("covers") or []]:
+                if k and k not in mine and any(k in keys for keys in tests):
+                    mine.append(k)
+            n = sum(1 for keys in tests if keys & set(mine))
+            if n:
+                out[lec["id"]] = {"n": n, "lec": ",".join(mine)}
+    return out
+
+
 def week_counts(course, slug):
     """(weeks with a written note, weeks): the second scoreboard as notes.js
     paints it, written in at build time so the masthead does not change width
@@ -707,6 +760,7 @@ def main():
                 "qv": portal.digest(os.path.join(d, "data", "questions", "%s.json" % slug)),
                 "nv": portal.digest(os.path.join(d, "data", "notes", "%s.json" % slug)),
                 "dir": d, "contact": portal.CONTACT, "report": portal.REPORT_URL,
+                "lecq": lecture_counts(course, slug),
             }
             label, fill = FAVICON[d]
             html = PAGE.format(

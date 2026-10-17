@@ -2362,6 +2362,23 @@ body.has-dialog{overflow:hidden;}
 .keypoints p:last-child{margin-bottom:0;}
 .keypoints strong{font-weight:600;}
 
+/* the way from the end of a note to that lecture's questions in the bank */
+.note-qbank{margin:14px 0 0;text-align:right;}
+.note-qbank a{
+    display:inline-block;
+    padding:5px 12px;
+    font-size:.82rem;
+    font-weight:600;
+    color:var(--q-accent-text);
+    background:var(--q-accent-soft);
+    border:1px solid var(--q-accent);
+    border-radius:999px;
+    text-decoration:none;
+}
+.note-qbank a::after{content:" \2192";}
+.note-qbank a:hover{text-decoration:underline;}
+@media print{.note-qbank{display:none;}}
+
 /* saving to PDF
 
    a static page has no PDF writer of its own, so this is the browser's print

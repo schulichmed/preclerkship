@@ -66,17 +66,19 @@
      that has to be kept mutually exclusive with the other four. */
   /* search is the one facet whose value is typed rather than picked, so it is
      a string, and the empty string is its "all" */
-  /* lecture is the weak-spot panel's facet: one lecture key or "", set only
-     by a click in that panel, so it has no dropdown and shows as a chip */
+  /* lecture is set by a click in the weak-spot panel or by the button at the
+     end of a note (#lecture= in the address), never picked from a dropdown,
+     so it shows only as chips. A note can cover several lectures, so it holds
+     a list like the others. */
   var filters = { status: [], block: [], family: [], week: [], tag: [], search: "",
-                  lecture: "" };
+                  lecture: [] };
 
   function isOn(name, k) { return filters[name].indexOf(k) !== -1; }
 
   function anyFilter() {
     return filters.status.length > 0 || filters.block.length > 0 ||
            filters.family.length > 0 || filters.week.length > 0 ||
-           filters.tag.length > 0 || searchOn() || !!filters.lecture;
+           filters.tag.length > 0 || searchOn() || filters.lecture.length > 0;
   }
 
   /* View and Mode are two axes, deliberately independent. VIEW is how the
@@ -1648,7 +1650,8 @@
   }
 
   function lectureOk(q) {
-    return !filters.lecture || lectureKeysOf(q).indexOf(filters.lecture) !== -1;
+    return !filters.lecture.length ||
+      lectureKeysOf(q).some(function (k) { return filters.lecture.indexOf(k) !== -1; });
   }
 
   function tagOk(q) {
@@ -1918,7 +1921,7 @@
 
     var narrowed = filters.status.length > 0 || filters.week.length > 0 ||
                    filters.tag.length > 0 || filters.block.length > 0 || searchOn() ||
-                   !!filters.lecture;
+                   filters.lecture.length > 0;
     [].forEach.call(document.querySelectorAll(".family"), function (f) {
       if (filters.family.length && !isOn("family", f.dataset.family)) { f.hidden = true; return; }
       /* a coverage gap is worth showing where the stream is grouped by set,
@@ -1968,20 +1971,41 @@
      Only the block, and only on the pooled page: the other four facets are
      things you try and drop within a session, where the block is where you
      started. replaceState rather than the hash, so dragging the filter does
-     not fill the Back button with every combination passed through. */
+     not fill the Back button with every combination passed through.
+
+     The lecture rides along too, because the button at the end of a note
+     sends you here for that note's lectures, and "the questions for lecture
+     02" is as worth bookmarking or sending as a block. The address writes it
+     w1-02 for the key lectureKeysOf makes as w1:02, a colon being a poor
+     thing to put in a link; a lecture taught in parts is w7-02.1. Only
+     numbered lectures have that form; a weak
+     spot keyed by a filed name stays a chip and out of the address. */
   function readHash() {
     if (!TERM) return;
-    var m = /(?:^|[#&])block=([a-z0-9_,-]+)/i.exec(window.location.hash || "");
-    if (!m) return;
-    var want = m[1].split(",").filter(function (k) {
-      return BLOCK_NAME[k] !== undefined;
-    });
-    if (want.length) filters.block = want;
+    var h = window.location.hash || "";
+    var m = /(?:^|[#&])block=([a-z0-9_,-]+)/i.exec(h);
+    if (m) {
+      var want = m[1].split(",").filter(function (k) {
+        return BLOCK_NAME[k] !== undefined;
+      });
+      if (want.length) filters.block = want;
+    }
+    var l = /(?:^|[#&])lecture=([w0-9.,-]+)/i.exec(h);
+    if (l) {
+      filters.lecture = l[1].split(",").filter(function (k) {
+        return /^w\d+-\d+(\.\d+)?$/i.test(k);
+      }).map(function (k) { return k.replace("-", ":"); });
+    }
   }
 
   function writeHash() {
     if (!TERM || !window.history || !window.history.replaceState) return;
-    var h = filters.block.length ? "#block=" + filters.block.join(",") : "";
+    var lecs = filters.lecture.filter(function (k) { return /^w\d+:\d+(\.\d+)?$/.test(k); })
+      .map(function (k) { return k.replace(":", "-"); });
+    var parts = [];
+    if (filters.block.length) parts.push("block=" + filters.block.join(","));
+    if (lecs.length) parts.push("lecture=" + lecs.join(","));
+    var h = parts.length ? "#" + parts.join("&") : "";
     try {
       window.history.replaceState(null, "",
         window.location.pathname + window.location.search + h);
@@ -1995,7 +2019,7 @@
     filters.tag = [];
     filters.status = [];
     filters.search = "";
-    filters.lecture = "";
+    filters.lecture = [];
     syncSearchBox();
   }
 
@@ -2871,12 +2895,7 @@
     chips("week", function (k) { return WEEK_LABEL[k] || ("Week " + k); });
     chips("tag", function (k) { return TAG_LABEL[k] || k; });
     chips("status", function (k) { return STATUS_LABEL[k] || k; });
-    if (filters.lecture) {
-      live.push({
-        label: "Lecture: " + (LECTURE_NAME[filters.lecture] || filters.lecture),
-        clear: function () { filters.lecture = ""; }
-      });
-    }
+    chips("lecture", function (k) { return "Lecture: " + (LECTURE_NAME[k] || k); });
     if (searchOn()) {
       live.push({
         label: "\u201c" + filters.search.replace(/^\s+|\s+$/g, "") + "\u201d",
@@ -2900,7 +2919,7 @@
       b.setAttribute("aria-label", "Remove the " + item.label + " filter");
       b.appendChild(el("span", null, item.label));
       b.appendChild(el("span", "x", "\u00d7"));
-      b.addEventListener("click", function () { item.clear(); applyFilters(); });
+      b.addEventListener("click", function () { item.clear(); writeHash(); applyFilters(); });
       list.appendChild(b);
     });
 
@@ -3128,7 +3147,7 @@
   function focusLecture(key, wrongOnly) {
     if (MODE === "test") setMode("tutor");
     clearFilters();
-    filters.lecture = key;
+    filters.lecture = [key];
     if (wrongOnly) filters.status = ["wrong"];
     writeHash();
     afterFilterChange();
