@@ -342,6 +342,11 @@
       var go = el("p", "note-qbank");
       var a = el("a", null, "Practice questions for this lecture · " + lq.n);
       a.href = qbankUrl(opts.slug) + "&lecture=" + lq.lec;
+      /* a tab of its own, as the pinned PDFs open, so the note stays where
+         the reader left it to come back to after the questions */
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.title = "Open this lecture's questions in a new tab";
       go.appendChild(a);
       art.appendChild(go);
     }
