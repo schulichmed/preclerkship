@@ -47,9 +47,9 @@ Questions, corrections and contributions: <schulichmedfriend@gmail.com>.
 
 | Course | Year | State |
 | --- | --- | --- |
-| [Foundations of Medicine](fom/) | 1 | 4 blocks, weeks 1–15, 1,532 questions |
+| [Foundations of Medicine](fom/) | 1 | 4 blocks, weeks 1–15, 1,255 questions |
 | [Principles of Medicine 1](pom1/) | 1 | 5 blocks, weeks 1–17, 1,534 questions |
-| [Principles of Medicine 2](pom2/) | 2 | 5 blocks, weeks 1–20, 1,635 questions |
+| [Principles of Medicine 2](pom2/) | 2 | 5 blocks, weeks 1–20, 1,179 questions |
 | [Transition to Clerkship](t2c/) | 2 | 6 blocks, weeks 1–13, 214 questions |
 
 A course with nothing behind it keeps a card on the hub, greyed and unlinked,
@@ -244,9 +244,9 @@ for review, with no account needed.
 
 The code is MIT, see [LICENSE](LICENSE).
 
-The study content under each course's `data/` came out of shared course material
-that students already pass between years: class question banks, the
-Pre-Clerkship Workbook and questions written from the case and small-group sessions.
+The study content under each course's `data/` came out of study material
+that students already pass between years: class question banks and the
+Pre-Clerkship Workbook.
 
 Every question names its source. Where a question came out of a peer-written
 bank, its errors and gaps are flagged on the question itself rather than quietly

@@ -45,11 +45,6 @@
       blurb: "The Pre-Clerkship Workbook (2023 edition), the student bank passed down through the Schulich classes of 2015-2025. It has a written key, but the key is peer-written and contains real errors. Every one found is flagged on the question."
     },
     {
-      key: "meds2029",
-      name: "Case-Based Questions",
-      blurb: "Case-Based Questions."
-    },
-    {
       key: "reviews",
       name: "Schulich Reviews",
       blurb: "The Schulich Reviews sessions, both their practice questions and their summary content. TBD."
@@ -1254,7 +1249,7 @@
     var head = el("div", "qhead");
     head.appendChild(el("span", "qnum", "Q" + q.num));
     head.appendChild(el("span", "tag", q.sourceLabel));
-    if (!q.keyed) head.appendChild(el("span", "tag reasoned", "no official key"));
+    if (!q.keyed) head.appendChild(el("span", "tag reasoned", "no answer key"));
     if (KIND_LABEL[q.kind]) head.appendChild(el("span", "tag kind", KIND_LABEL[q.kind]));
     if (q.multi) head.appendChild(el("span", "tag multi", "select " + q.correct.length));
     if (q.retired) head.appendChild(el("span", "tag retired", "retired"));
@@ -1417,7 +1412,7 @@
     var ans = el("div", "answer");
     if (!q.keyed) {
       var nk = el("div", "banner");
-      nk.appendChild(el("b", null, "No official answer key"));
+      nk.appendChild(el("b", null, "No answer key"));
       nk.appendChild(document.createTextNode(
         "Reasoned from the lecture content, not transcribed from a key. Verify before relying on it."));
       ans.appendChild(nk);

@@ -19,24 +19,21 @@ three live in `tools/portal.py`.
 
 ## What is in it
 
-**1,979 practice questions** across the four blocks, weeks 1 to 15, transcribed
+**1,255 practice questions** across the four blocks, weeks 1 to 15, transcribed
 out of the Question Bank PDFs and the Pre-Clerkship Workbook rather than
 rewritten. The questions are not AI-written; where a source gave no explanation, one
 has been drafted with AI help and is marked as reasoned.
 
 | Block | Weeks | Questions |
 |---|---|---|
-| 1 · Principles & Development | 1–4 | 508 |
-| 2 · Regulation, Neoplasia & Aging | 5–8 | 513 |
-| 3 · Blood & Malignancy | 9–12 | 581 |
-| 4 · Infection & Immunity | 13–15 | 377 |
+| 1 · Principles & Development | 1–4 | 253 |
+| 2 · Regulation, Neoplasia & Aging | 5–8 | 233 |
+| 3 · Blood & Malignancy | 9–12 | 434 |
+| 4 · Infection & Immunity | 13–15 | 335 |
 
 Every question keeps the set it arrived in, and the **Question set** filter is
 that split:
 
-- **Readiness assessments** and **self-assessments**: the week's RA and SA.
-  Several early weeks never had one, and those say so rather than going quietly
-  missing.
 - **Meds 2024 bank**: the student-written, *instructor-approved* bank the Class
   of 2024 Academic Directors built in December 2020. Their questions went to the
   teaching faculty and the instructors' edits are folded in, except for a tail of
@@ -80,19 +77,11 @@ guess** on their own face.
 ## What is flagged, and why
 
 A bank handed between years has rough edges, and hiding them is worse than
-showing them. Three kinds are marked on the face of the question rather than
+showing them. They are marked on the face of the question rather than
 quietly patched:
 
-- **No key in the source** (18 questions). Week 12's readiness assessment says
-  *not yet released* where its answer key should be. Those questions render,
-  marked unscorable, and sit outside the accuracy figures. Inventing a letter
-  would have been worse than admitting there isn't one.
 - **Letter only.** Many keys give a letter and no reasoning. The letter is shown
   as printed, with a note saying that is all the bank offers.
-- **Renumbered.** Week 4's self-assessment prints its questions 8–15 and then
-  restarts at 9, while its answer key runs straight through 1–12. Those are
-  numbered by position, which is what the key actually answers, and each one
-  says so on its face.
 
 Where a question's own answer looks wrong it is left as the bank wrote it.
 
@@ -200,7 +189,7 @@ answers.
 
 The code is MIT, see [LICENSE](LICENSE).
 
-The questions came out of shared course material: the FoM Question Bank compiled
+The questions came out of student-written banks: the FoM Question Bank compiled
 by Meds 2025 volunteers in December 2021, which itself re-files the
 student-written, instructor-approved bank the Class of 2024 Academic Directors
 built in December 2020, plus the Pre-Clerkship Workbook, written by the Class of

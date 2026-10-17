@@ -41,13 +41,6 @@ COURSES = [
             ("b4", 4, u"Infection & Immunity",          u"13–15"),
         ],
         "families": [
-            {"key": "ra", "name": u"Readiness assessments",
-             "tip": u"Readiness Assessments",
-             "blurb": u"Questions from the week's Readiness Assessment. Several weeks "
-                      u"never had one, and those say so rather than going missing."},
-            {"key": "sa", "name": u"Self-assessments",
-             "tip": u"Self-Assessments",
-             "blurb": u"Questions from the week's Self-Assessment."},
             {"key": "meds2024", "name": u"Meds 2024 bank",
              "tip": u"Class of 2024 bank, mostly faculty-edited",
              "blurb": u"The student-written, instructor-approved bank built by the Class "
@@ -140,8 +133,6 @@ COURSES = [
             ("psych", 5, u"Psychiatry",      u"17–20"),
         ],
         "families": [
-            {"key": "meds2029", "name": u"Case-Based Questions",
-             "blurb": u"Case-Based Questions."},
             {"key": "reviews", "name": u"Schulich Reviews",
              "tip": u"Upper-year exam review sessions",
              "blurb": u"The Schulich Reviews sessions, run by upper years before each exam. "
