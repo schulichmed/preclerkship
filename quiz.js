@@ -1245,6 +1245,27 @@
     return box;
   }
 
+  /* A stem that says "select all that apply" is answered as select-all even
+     when its key has one letter: a single-pick button gives the answer away
+     the moment it is clicked, and the "select N" count would too, so these
+     say "select all that apply" instead. tools/key_fixes.py repairs the keys
+     themselves; this only decides how the question is asked. */
+  var SELECT_ALL_RE = /select all|all that apply|choose all|mark all|more than (one|1) answer/i;
+  function markSelectAll(q) {
+    var stem = String(q.stem || "").replace(/<[^>]+>/g, " ");
+    q.selectAll = SELECT_ALL_RE.test(stem);
+    if (q.selectAll && !q.multi && !q.free && !q.unscorable &&
+        q.kind !== "pairing" && q.options && q.options.length && q.correct.length) {
+      q.multi = true;
+    }
+  }
+
+  /* tools/key_fixes.py keeps the source's key as sourceKey when it changes one */
+  function keyCorrected(q) {
+    return Array.isArray(q.sourceKey) &&
+      q.sourceKey.slice().sort().join() !== (q.correct || []).slice().sort().join();
+  }
+
   function buildQuestion(q) {
     var art = el("article", "q");
     art.id = "q-" + q.qid;
@@ -1256,7 +1277,8 @@
     head.appendChild(el("span", "tag", q.sourceLabel));
     if (!q.keyed) head.appendChild(el("span", "tag reasoned", "no official key"));
     if (KIND_LABEL[q.kind]) head.appendChild(el("span", "tag kind", KIND_LABEL[q.kind]));
-    if (q.multi) head.appendChild(el("span", "tag multi", "select " + q.correct.length));
+    if (q.multi) head.appendChild(el("span", "tag multi",
+      q.selectAll ? "select all that apply" : "select " + q.correct.length));
     if (q.retired) head.appendChild(el("span", "tag retired", "retired"));
     /* shown by the stylesheet while the card carries is-due */
     head.appendChild(el("span", "tag due-tag", "due for review"));
@@ -1265,6 +1287,7 @@
              (f.type === "warning" && f.title !== "No explanation in the module");
     });
     if (hasErr) head.appendChild(el("span", "tag errflag", "source error flagged"));
+    if (keyCorrected(q)) head.appendChild(el("span", "tag fixed", "key corrected"));
     head.appendChild(el("span", "spacer"));
 
     /* says a memo exists without saying what it is; the memo itself is in
@@ -1410,7 +1433,9 @@
       check.disabled = true;
       check.addEventListener("click", function () { submitMulti(q, art); });
       a3.appendChild(check);
-      a3.appendChild(el("span", "hint", "select " + q.correct.length + ", then check"));
+      a3.appendChild(el("span", "hint", q.selectAll
+        ? "select all that apply, then check"
+        : "select " + q.correct.length + ", then check"));
       art.appendChild(a3);
     }
 
@@ -3981,7 +4006,7 @@
 
   function start(data) {
     QUESTIONS = data;
-    QUESTIONS.forEach(function (q) { QMAP[q.qid] = q; });
+    QUESTIONS.forEach(function (q) { QMAP[q.qid] = q; markSelectAll(q); });
     load();
     loadMemos();
     readHash();

@@ -29,6 +29,17 @@ some JSON rather than a fork of the engine. Two repair passes are shared too:
 `roman_items.py`, which puts a roman-numeral item list back in the stem it was
 parsed out of. Both run after the extractors and both are idempotent.
 
+A third pass, `key_fixes.py`, repairs answer keys. A "The key looks wrong" flag
+explains a bad key to the reader, but the bank kept scoring against it, so the
+lecture's answer was marked wrong. `tools/key_fixes/<course>.json` lists each
+repair with the lecture evidence for it; the pass sets the key (or marks the
+question not scored when no option is defensible), saves the source's key as
+`sourceKey`, and turns the red flag into a "Key corrected" note naming what the
+source said. Run `python3 tools/key_fixes.py fom` after the extractors, like the
+other two; it is idempotent. On the page, a stem that says "select all that
+apply" is always asked as a select-all, and says so instead of giving away the
+count (`markSelectAll` in `quiz.js`).
+
 Three more shared modules serve the two PDF extractors, because FoM's and
 PoM 1's notes are the same kind of document and were getting the same things
 wrong in two places:
