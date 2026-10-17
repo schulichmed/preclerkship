@@ -20,6 +20,7 @@ import hashlib
 import io
 import json
 import os
+import re
 
 # Progress is per-course in localStorage. The prefixes must stay distinct or one
 # course would read and overwrite another's answers, since they share an origin.
@@ -31,7 +32,7 @@ COURSES = [
         "year": u"Year 1",
         "blurb": u"The first fifteen weeks: what a physician does, then the body from "
                  u"cells up, then blood, then infection and immunity.",
-        "accent": u"#1f4e5f",
+        "accent": u"#4f2683",
         "store": "nsq.fom.v1.",
         "blocks": [
             ("b1", 1, u"Principles & Development",      u"1–4"),
@@ -40,17 +41,13 @@ COURSES = [
             ("b4", 4, u"Infection & Immunity",          u"13–15"),
         ],
         "families": [
-            {"key": "module", "name": u"Module questions",
-             "tip": u"Elentra module knowledge checks",
-             "blurb": u"The knowledge checks inside the week's Elentra asynchronous "
-                      u"learning modules, transcribed into the Meds 2025 question bank."},
             {"key": "ra", "name": u"Readiness assessments",
-             "tip": u"Readiness Assessments, as sat",
-             "blurb": u"The week's Readiness Assessment as it was sat. Several weeks "
+             "tip": u"Readiness Assessments",
+             "blurb": u"Questions from the week's Readiness Assessment. Several weeks "
                       u"never had one, and those say so rather than going missing."},
             {"key": "sa", "name": u"Self-assessments",
-             "tip": u"Self-Assessments, as released",
-             "blurb": u"The week's Self-Assessment as it was released."},
+             "tip": u"Self-Assessments",
+             "blurb": u"Questions from the week's Self-Assessment."},
             {"key": "meds2024", "name": u"Meds 2024 bank",
              "tip": u"Class of 2024 bank, mostly faculty-edited",
              "blurb": u"The student-written, instructor-approved bank built by the Class "
@@ -87,7 +84,7 @@ COURSES = [
         "name": u"Principles of Medicine 1",
         "year": u"Year 1",
         "blurb": u"The second half of first year, system by system.",
-        "accent": u"#6b5a2f",
+        "accent": u"#6b3fb8",
         "store": "nsq.pom1.v1.",
         "blocks": [
             ("cardio", 1, u"Cardiology",             u"1\u20135"),
@@ -97,14 +94,6 @@ COURSES = [
             ("gu",     5, u"Nephrology & Urology",   u"14\u201317"),
         ],
         "families": [
-            {"key": "module", "name": u"Module questions",
-             "tip": u"Elentra module knowledge checks",
-             "blurb": u"The knowledge checks inside the week's Elentra asynchronous "
-                      u"learning modules, transcribed into the Meds 2025 block banks."},
-            {"key": "weekly", "name": u"Weekly quizzes",
-             "tip": u"The weekly quizzes, as sat",
-             "blurb": u"The week's quiz as it was sat, kept whole as its own set so a "
-                      u"week can be drilled the way it was written."},
             {"key": "meds2024", "name": u"Meds 2024 bank",
              "tip": u"Class of 2024 bank, partly faculty-reviewed",
              "blurb": u"The student-written bank the Class of 2024 Academic Directors "
@@ -141,7 +130,7 @@ COURSES = [
         "year": u"Year 2",
         "blurb": u"The five blocks of second year, with a written note for every "
                  u"lecture that has one and a coverage map for the rest.",
-        "accent": u"#84223b",
+        "accent": u"#7a3fb0",
         "store": "nsq.v1.",
         "blocks": [
             ("endo",  1, u"Endocrinology",   u"1–3"),
@@ -151,19 +140,8 @@ COURSES = [
             ("psych", 5, u"Psychiatry",      u"17–20"),
         ],
         "families": [
-            {"key": "module", "name": u"Course modules",
-             "tip": u"Elentra knowledge checks and slide concept checks",
-             "blurb": u"The Elentra module knowledge checks and the concept checks on the "
-                      u"lecture slides. Cases live under Curriculum Cases instead, wherever "
-                      u"they came from."},
-            {"key": "weekly", "name": u"Weekly quizzes",
-             "tip": u"The weekly quizzes, as sat",
-             "blurb": u"The weekly quizzes, both the Microsoft Forms ones and the ones sat "
-                      u"in Elentra. Kept whole as their own set, so a week's quiz can be "
-                      u"drilled the way it was written."},
-            {"key": "meds2029", "name": u"Curriculum Cases", "show_blurb": True,
-             "blurb": u"Cases and questions directly from our 2026-27 curriculum (Meds 2029): "
-                      u"DSSGs, in-class lectures and modules, likely to be recycled on exams."},
+            {"key": "meds2029", "name": u"Case-Based Questions",
+             "blurb": u"Case-Based Questions."},
             {"key": "reviews", "name": u"Schulich Reviews",
              "tip": u"Upper-year exam review sessions",
              "blurb": u"The Schulich Reviews sessions, run by upper years before each exam. "
@@ -198,7 +176,7 @@ COURSES = [
         "name": u"Transition to Clerkship",
         "year": u"Year 2",
         "blurb": u"The bridge into clerkship at the end of second year.",
-        "accent": u"#3f4a5a",
+        "accent": u"#3a2a6e",
         "store": "nsq.t2c.v1.",
         "blocks": [
             ("peds",   1, u"Pediatrics",                          u"1\u20132"),
@@ -222,7 +200,7 @@ COURSES = [
 BY_SLUG = dict((c["slug"], c) for c in COURSES)
 
 # the engine, shared by every course and living at the repo root
-ASSETS = ["base.css", "portal.css", "portal.js", "quiz.js", "notes.js"]
+ASSETS = ["base.css", "portal.css", "portal.js", "quiz.js", "notes.js", "sync.js"]
 
 
 def course_count(qs):
@@ -284,7 +262,8 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
 # the portal is not growing a fourth one for a button. ES5, like the rest; the
 # click is caught on the document because the button is not built yet when
 # this runs, and DOMContentLoaded labels it once it is.
-THEME_SCRIPT = """<script>
+THEME_SCRIPT = """<meta name="theme-color" content="#ffffff">
+<script>
 (function(){
   var root=document.documentElement,KEY="pc-theme",stored=null,mq=null;
   try{stored=localStorage.getItem(KEY);}catch(e){}
@@ -293,6 +272,8 @@ THEME_SCRIPT = """<script>
   function os(){return mq&&mq.matches?"dark":"light";}
   function apply(t){
     root.setAttribute("data-theme",t);
+    var m=document.querySelector('meta[name="theme-color"]');
+    if(m)m.setAttribute("content",t==="dark"?"#140c22":"#ffffff");
     var b=document.getElementById("theme-btn");
     if(!b)return;
     b.setAttribute("aria-pressed",t==="dark"?"true":"false");
@@ -305,14 +286,33 @@ THEME_SCRIPT = """<script>
   else if(mq&&mq.addListener)mq.addListener(follow);
   document.addEventListener("DOMContentLoaded",function(){apply(root.getAttribute("data-theme"));});
   document.addEventListener("click",function(e){
+    var s=e.target&&e.target.closest?e.target.closest(".skip"):null;
+    if(s){
+      var c=document.getElementById("content");
+      if(c){e.preventDefault();c.focus();c.scrollIntoView();}
+      return;
+    }
     var b=e.target&&e.target.closest?e.target.closest("#theme-btn"):null;
     if(!b)return;
     stored=root.getAttribute("data-theme")==="dark"?"light":"dark";
     try{localStorage.setItem(KEY,stored);}catch(e2){}
-    apply(stored);
+    /* a crossfade between the themes where the browser can draw one and the
+       reader has not asked for less motion; otherwise the switch is instant */
+    var calm=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if(document.startViewTransition&&!calm)document.startViewTransition(function(){apply(stored);});
+    else apply(stored);
   });
 })();
 </script>"""
+
+# The phone's browser bar takes the page's background from the theme-color
+# meta above, and apply() keeps it in step with the toggle, so a dark page does
+# not sit under a white bar.
+#
+# Every page's "Skip to content" link (class "skip") is caught here too. It
+# moves focus rather than following its href, because the course pages keep
+# their tab and their filters in the hash and "#content" would clobber them;
+# the href is there for a page with scripting off.
 
 # The toggle. A moon while the page is light and a sun while it is dark, each
 # an inline path rather than an image file, so the hub's one HTML file stays
@@ -385,6 +385,34 @@ PRESENCE_SCRIPT = """<script>
 if PRESENCE_URL:
     CF += "\n" + PRESENCE_SCRIPT
 
+# Sign in with Google, so progress and notes follow a reader to any device:
+# sync.js, backed by Firebase (Google sign-in and a Firestore database, both on
+# the free plan). Paste the firebaseConfig block from the Firebase console's
+# Project settings > Your apps here as a dict. It names the project and is
+# public by design, not a secret: what keeps each reader's progress their own
+# is the Firestore rule that a signed-in user may touch only users/<their id>.
+# Empty, and no page loads sync.js or shows the button.
+FIREBASE_CONFIG = {
+    "apiKey": "AIzaSyC-WGCeL_hhxHK7oKuvomdVrJ2unxEoi2k",
+    "authDomain": "medfriend-schulich.firebaseapp.com",
+    "projectId": "medfriend-schulich",
+    "storageBucket": "medfriend-schulich.firebasestorage.app",
+    "messagingSenderId": "678233400126",
+    "appId": "1:678233400126:web:53adbac33c626a0967426f",
+}
+
+
+def sync_tag(base="../"):
+    """The config and the deferred sync.js, for a page's head. base is the
+    path to the repo root: "../" from a course page, "" from the hub."""
+    if not FIREBASE_CONFIG:
+        return ""
+    cfg = {"firebase": FIREBASE_CONFIG, "stores": [c["store"] for c in COURSES]}
+    return ('\n<script>window.PORTAL_SYNC_CFG = %s;</script>'
+            '\n<script defer src="%ssync.js?v=%s"></script>'
+            % (json.dumps(cfg), base, digest("sync.js")))
+
+
 # The hub's corner readout, filled by PRESENCE_SCRIPT.
 PRESENCE_SLOT = (
     '<p class="presence" id="presence" hidden>'
@@ -402,21 +430,55 @@ def uplink(depth=None):
     return '<a class="uplink" href="%s">&larr; All courses</a>' % HUB_URL
 
 
-CONTACT = "schulichmedfriends@gmail.com"
+CONTACT = "schulichmedfriend@gmail.com"
 # Where the bank's Report button posts. Empty until the relay in
 # tools/report-worker/ is deployed; empty, the button emails CONTACT instead.
 REPORT_URL = "https://preclerkship-report.schulichmed.workers.dev/"
 
 
+# Every page carries this, so it is said once, here.
 def footer():
-    return ('<footer>\nFor any inquiries, email '
-            '<a href="mailto:%s">%s</a>\n</footer>' % (CONTACT, CONTACT))
+    return ('<footer>\n<p><strong>Unofficial and student-run.</strong> For any inquiries, '
+            'email <a href="mailto:%s">%s</a>.</p>\n</footer>' % (CONTACT, CONTACT))
 
 
-def favicon(label="PC", fill="1f4e5f"):
+def favicon(label="PC", fill="4f2683", base="../"):
+    """The tab icon, drawn inline per course, and the home-screen icon and
+    manifest, which are files at the site root (made by tools/icons/). base
+    is the way from the page to that root."""
     return ("<link rel=\"icon\" href=\"data:image/svg+xml,"
             "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'>"
             "<rect width='32' height='32' rx='7' fill='%%23%s'/>"
             "<text x='16' y='23' font-family='Georgia,serif' font-size='%d' "
             "font-weight='600' fill='%%23ffffff' text-anchor='middle'>%s</text>"
-            "</svg>\">" % (fill, 17 if len(label) < 3 else 13, label))
+            "</svg>\">\n"
+            "<link rel=\"apple-touch-icon\" href=\"%sapple-touch-icon.png\">\n"
+            "<link rel=\"manifest\" href=\"%ssite.webmanifest\">"
+            % (fill, 17 if len(label) < 3 else 13, label, base, base))
+
+
+# What a group chat, Slack or iMessage shows when a page's address is pasted:
+# the page's own title and description over one shared card. Crawlers that
+# draw previews do not run scripts, so these are in the HTML. The image URL
+# must be absolute, hence HUB_URL.
+SHARE_IMAGE = "share.png"
+
+
+def share(html, path):
+    """html with Open Graph and Twitter card tags added after its description.
+    path is the page's own path from the site root ("" for the hub)."""
+    title = re.search(r"<title>(.*?)</title>", html, re.S)
+    desc = re.search(r'<meta name="description" content="(.*?)">', html, re.S)
+    if not title or not desc or 'property="og:title"' in html:
+        return html
+    tags = ('\n<meta property="og:type" content="website">'
+            '\n<meta property="og:site_name" content="Schulich Pre-clerkship">'
+            '\n<meta property="og:title" content="%s">'
+            '\n<meta property="og:description" content="%s">'
+            '\n<meta property="og:url" content="%s%s">'
+            '\n<meta property="og:image" content="%s%s">'
+            '\n<meta property="og:image:width" content="1200">'
+            '\n<meta property="og:image:height" content="630">'
+            '\n<meta name="twitter:card" content="summary_large_image">'
+            % (title.group(1).strip(), desc.group(1), HUB_URL, path, HUB_URL, SHARE_IMAGE))
+    return html[:desc.end()] + tags + html[desc.end():]

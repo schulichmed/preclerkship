@@ -25,7 +25,7 @@ This script owns the Pillow dependency so the four rebuild scripts keep the
 which only reads the manifest.
 
 It cannot tell a cadaveric image from a clinical photograph, and does not try.
-That call is made by looking at the picture; see the pom2-week skill. Every
+That call is made by looking at the picture. Every
 newly-encoded file is printed, so a new one is never added unseen.
 """
 

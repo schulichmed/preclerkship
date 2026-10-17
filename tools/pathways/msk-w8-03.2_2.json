@@ -1,0 +1,472 @@
+{
+ "name": "biceps tendinopathy overview",
+ "width": 1068,
+ "title": "Anterior shoulder pain: decide whether it is the long head of the biceps tendon (tendinopathy or a frank tear, diagnosed mostly by examination and treated with active physiotherapy) or a neighbour: rotator cuff tendinopathy or subacromial bursitis (ultrasound), a SLAP labral tear (MR arthrogram), arthritis, or pain referred from the neck or viscera",
+ "kinds": {
+  "lhb_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "lhb_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "lhb_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "rc_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rc_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "rc_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "slap_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "slap_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "slap_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ref_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ref_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "ref_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 246,
+   "h": 738,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 316,
+   "y": 288,
+   "w": 246,
+   "h": 738,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 564,
+   "y": 288,
+   "w": 246,
+   "h": 738,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 812,
+   "y": 288,
+   "w": 246,
+   "h": 738,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 450,
+   "h": 214,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 704,
+   "h": 124,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 868,
+   "h": 150,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 169,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Anterior shoulder pain: is it the LONG HEAD OF BICEPS, or something next to it?",
+   "lines": [
+    "onset: ACUTE (tear or inflammation) or CHRONIC (degeneration, overuse)"
+   ]
+  },
+  {
+   "id": "g_lhb",
+   "x": 45,
+   "y": 120,
+   "w": 236,
+   "h": 96,
+   "kind": "plain",
+   "title": "The long head of biceps",
+   "lines": [
+    "• young: overhead throwers, inflammatory disease",
+    "• older: overuse, degeneration"
+   ]
+  },
+  {
+   "id": "g_nb",
+   "x": 321,
+   "y": 120,
+   "w": 732,
+   "h": 96,
+   "kind": "plain",
+   "title": "Its neighbours, or pain from elsewhere",
+   "lines": [
+    "all can give anterior shoulder pain"
+   ]
+  },
+  {
+   "id": "lhb_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 236,
+   "h": 114,
+   "kind": "lhb_h",
+   "title": "Proximal biceps tendinopathy",
+   "lines": [
+    "overuse to inflammation to a partial or complete tear"
+   ]
+  },
+  {
+   "id": "rc_head_0_0",
+   "x": 321,
+   "y": 296,
+   "w": 236,
+   "h": 114,
+   "kind": "rc_h",
+   "title": "Rotator cuff tendinopathy · subacromial bursitis",
+   "lines": [
+    "the tendon lies beside the cuff tendons"
+   ]
+  },
+  {
+   "id": "slap_head_0_0",
+   "x": 569,
+   "y": 296,
+   "w": 236,
+   "h": 114,
+   "kind": "slap_h",
+   "title": "Labral tear (SLAP lesion)",
+   "lines": [
+    "the tendon starts on the superior labrum"
+   ]
+  },
+  {
+   "id": "ref_head_0_0",
+   "x": 817,
+   "y": 296,
+   "w": 236,
+   "h": 114,
+   "kind": "ref_h",
+   "title": "Arthritis or referred pain",
+   "lines": [
+    "• shoulder or acromioclavicular (AC) joint arthritis",
+    "• cervical radiculopathy · facet joint · visceral"
+   ]
+  },
+  {
+   "id": "lhb_pres_0_0",
+   "x": 45,
+   "y": 450,
+   "w": 236,
+   "h": 114,
+   "kind": "lhb_t",
+   "title": "Tendinopathy",
+   "lines": [
+    "• tender over the tendon in the intertubercular groove",
+    "• worse with shoulder + elbow flexion, forearm SUPINATED"
+   ]
+  },
+  {
+   "id": "lhb_pres_1_0",
+   "x": 45,
+   "y": 586,
+   "w": 236,
+   "h": 78,
+   "kind": "lhb_w",
+   "title": "Frank TEAR adds",
+   "lines": [
+    "• weakness",
+    "• visible defect: the muscle retracts"
+   ]
+  },
+  {
+   "id": "rc_pres_0_0",
+   "x": 321,
+   "y": 450,
+   "w": 236,
+   "h": 214,
+   "kind": "rc_t",
+   "title": "Lives right beside the biceps tendon",
+   "lines": [
+    "see the SHOULDER chart"
+   ]
+  },
+  {
+   "id": "slap_pres_0_0",
+   "x": 569,
+   "y": 450,
+   "w": 236,
+   "h": 214,
+   "kind": "slap_t",
+   "title": "Labral problems = biceps problems",
+   "lines": []
+  },
+  {
+   "id": "ref_pres_0_0",
+   "x": 817,
+   "y": 450,
+   "w": 236,
+   "h": 214,
+   "kind": "ref_t",
+   "title": "Which nerve root?",
+   "lines": [
+    "• C4 or C5: can give shoulder pain",
+    "• C8: pain or tingling in the HAND, so LOW on the list"
+   ]
+  },
+  {
+   "id": "lhb_inv_0_0",
+   "x": 45,
+   "y": 704,
+   "w": 236,
+   "h": 60,
+   "kind": "lhb_w",
+   "title": "1 · Clinical exam",
+   "lines": [
+    "often the most helpful step"
+   ]
+  },
+  {
+   "id": "lhb_inv_1_0",
+   "x": 45,
+   "y": 786,
+   "w": 236,
+   "h": 42,
+   "kind": "lhb_w",
+   "title": "2 · Ultrasound if unclear",
+   "lines": []
+  },
+  {
+   "id": "rc_inv_0_0",
+   "x": 321,
+   "y": 704,
+   "w": 236,
+   "h": 124,
+   "kind": "rc_w",
+   "title": "Ultrasound",
+   "lines": [
+    "sees the cuff tendons AND the bursa at the same time"
+   ]
+  },
+  {
+   "id": "slap_inv_0_0",
+   "x": 569,
+   "y": 704,
+   "w": 236,
+   "h": 124,
+   "kind": "slap_w",
+   "title": "MR arthrogram",
+   "lines": [
+    "if a SLAP lesion is suspected"
+   ]
+  },
+  {
+   "id": "ref_inv_0_0",
+   "x": 817,
+   "y": 704,
+   "w": 236,
+   "h": 124,
+   "kind": "ref_w",
+   "title": "Look beyond the shoulder",
+   "lines": [
+    "facet joint? a visceral cause?"
+   ]
+  },
+  {
+   "id": "lhb_tx_0_0",
+   "x": 45,
+   "y": 868,
+   "w": 236,
+   "h": 150,
+   "kind": "ok",
+   "title": "Conservative first",
+   "lines": [
+    "1 · Educate: most are chronic and improve conservatively",
+    "2 · Physiotherapy, the mainstay: ACTIVE therapy · rest from overhead · analgesia",
+    "3 · Refractory → consider surgery"
+   ]
+  },
+  {
+   "id": "rc_tx_0_0",
+   "x": 321,
+   "y": 868,
+   "w": 236,
+   "h": 150,
+   "kind": "plain",
+   "title": "See the SHOULDER chart",
+   "lines": []
+  },
+  {
+   "id": "slap_tx_0_0",
+   "x": 569,
+   "y": 868,
+   "w": 236,
+   "h": 150,
+   "kind": "plain",
+   "title": "Not covered in this lecture",
+   "lines": []
+  },
+  {
+   "id": "ref_tx_0_0",
+   "x": 817,
+   "y": 868,
+   "w": 236,
+   "h": 150,
+   "kind": "plain",
+   "title": "See the SHOULDER and BACK & NECK charts",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_lhb",
+   "path": "M549.0 70V95H163.0V120"
+  },
+  {
+   "from": "root",
+   "to": "g_nb",
+   "path": "M549.0 70V95H687.0V120"
+  },
+  {
+   "from": "lhb_pres_0_0",
+   "to": "lhb_pres_1_0"
+  },
+  {
+   "from": "lhb_inv_0_0",
+   "to": "lhb_inv_1_0"
+  },
+  {
+   "from": "lhb_head_0_0",
+   "to": "lhb_pres_0_0"
+  },
+  {
+   "from": "lhb_pres_1_0",
+   "to": "lhb_inv_0_0"
+  },
+  {
+   "from": "lhb_inv_1_0",
+   "to": "lhb_tx_0_0"
+  },
+  {
+   "from": "g_lhb",
+   "to": "lhb_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "rc_head_0_0",
+   "to": "rc_pres_0_0"
+  },
+  {
+   "from": "rc_pres_0_0",
+   "to": "rc_inv_0_0"
+  },
+  {
+   "from": "rc_inv_0_0",
+   "to": "rc_tx_0_0"
+  },
+  {
+   "from": "g_nb",
+   "to": "rc_head_0_0",
+   "from_dx": -248
+  },
+  {
+   "from": "slap_head_0_0",
+   "to": "slap_pres_0_0"
+  },
+  {
+   "from": "slap_pres_0_0",
+   "to": "slap_inv_0_0"
+  },
+  {
+   "from": "slap_inv_0_0",
+   "to": "slap_tx_0_0"
+  },
+  {
+   "from": "g_nb",
+   "to": "slap_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ref_head_0_0",
+   "to": "ref_pres_0_0"
+  },
+  {
+   "from": "ref_pres_0_0",
+   "to": "ref_inv_0_0"
+  },
+  {
+   "from": "ref_inv_0_0",
+   "to": "ref_tx_0_0"
+  },
+  {
+   "from": "g_nb",
+   "to": "ref_head_0_0",
+   "from_dx": 248
+  }
+ ],
+ "panels": []
+}

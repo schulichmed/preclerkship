@@ -41,15 +41,15 @@ and a folder of JSON per course. Serve the folder and it works.
 By the **Open-Source Medicine Club** and the **AI in Medicine Club**.
 
 Live at **<https://schulichmed.github.io/preclerkship/>**.
-Questions, corrections and contributions: <schulichmedfriends@gmail.com>.
+Questions, corrections and contributions: <schulichmedfriend@gmail.com>.
 
 ## The four courses
 
 | Course | Year | State |
 | --- | --- | --- |
-| [Foundations of Medicine](fom/) | 1 | 4 blocks, weeks 1–15, 2,084 questions |
-| [Principles of Medicine 1](pom1/) | 1 | 5 blocks, weeks 1–17, 2,302 questions |
-| [Principles of Medicine 2](pom2/) | 2 | 5 blocks, weeks 1–20, 1,898 questions |
+| [Foundations of Medicine](fom/) | 1 | 4 blocks, weeks 1–15, 1,532 questions |
+| [Principles of Medicine 1](pom1/) | 1 | 5 blocks, weeks 1–17, 1,534 questions |
+| [Principles of Medicine 2](pom2/) | 2 | 5 blocks, weeks 1–20, 1,635 questions |
 | [Transition to Clerkship](t2c/) | 2 | 6 blocks, weeks 1–13, 214 questions |
 
 A course with nothing behind it keeps a card on the hub, greyed and unlinked,
@@ -65,23 +65,6 @@ only the parts that happen to be done.
 Every week of a course is assembled by the same run, and the pipeline below is
 what it does. One reservoir of content, three exposures to it, one repo out the
 front.
-
-![How a week of the course is built: a weekly run keeps a content reservoir
-current - the Obsidian vault of inherited upper-year notes, this year's slides
-pulled through the OneNote MCP server, and review slides. From that reservoir
-come three exposures to the same material - charts to understand, Anki to
-remember, and a question bank to apply - and all three feed this repo, which in
-turn feeds class workshops and the public site.](docs/pipeline.svg)
-
-The run itself is a Claude Code skill, [`skills/pom2-week/`](skills/pom2-week/),
-which is published here rather than kept local because it is the recipe, not
-just the output: its `SKILL.md` is the stage-by-stage order, and
-[`pipeline.html`](skills/pom2-week/pipeline.html) is the same diagram with
-screenshots of each stage.
-
-Read it as one group's working recipe rather than something that runs anywhere
-as-is. It names absolute paths on the machine it was written on, and it assumes
-an Obsidian vault laid out a particular way.
 
 ## Layout
 
@@ -168,6 +151,7 @@ python tools/curated_pairings.py         # matching questions -> dropdown grids 
 python tools/followup_cases.py           # follow-ups -> the case they continue (tools/followup_cases/)
 python tools/question_figures.py         # any newly-inlined picture -> assets/figures/
 python tools/review_lectures.py --derive # every question -> the lecture it tests
+python tools/note_links.py               # terms in each explanation -> the note that bolds them
 
 python tools/build_pages.py             # every course's block pages + question bank
 python tools/build_index.py             # every course's landing page
@@ -182,7 +166,8 @@ asset's content hash into its URL and the stamp goes stale otherwise.
 
 ### Which lecture a question came from
 
-`review_lectures.py` is the one script that writes `data/questions/*.json`, and
+`review_lectures.py` is one of two scripts that write `data/questions/*.json`
+after import (the other is `note_links.py`, which writes only `noteTerms`), and
 it writes exactly one field: `review`, the vault lecture note or notes whose
 material the question tests. That is what the `Review` line under each answer
 reads, and it is why the line can name a lecture rather than restating the week
@@ -209,8 +194,8 @@ Each course's README covers its own sources and its own quirks:
 
 Answers, stars and per-lecture accuracy are written to the browser's
 `localStorage`, under a **separate prefix per course**, so the four never read or
-overwrite each other even though they share an origin. Nothing is sent anywhere
-and there is no backend.
+overwrite each other even though they share an origin. Nothing in that record
+leaves the browser unless you choose to sign in (see [What the site sends](#what-the-site-sends)).
 
 The flip side is that it does not follow you, so each course's questions tab has
 **Download all my progress** and **Restore from a file**, which move a JSON file
@@ -261,10 +246,31 @@ The code is MIT, see [LICENSE](LICENSE).
 
 The study content under each course's `data/` came out of shared course material
 that students already pass between years: class question banks, the
-Pre-Clerkship Workbook, Elentra module knowledge checks, weekly quizzes, slide
-concept checks and questions written from the case and small-group sessions.
+Pre-Clerkship Workbook and questions written from the case and small-group sessions.
 
-**They are here on purpose.** Putting them somewhere public is the reason this
-repository exists, not an accident of packaging. Where a question came out of a
-peer-written bank, its errors and gaps are flagged on the question itself rather
-than quietly patched, so you can see what you are trusting before you trust it.
+Every question names its source. Where a question came out of a peer-written
+bank, its errors and gaps are flagged on the question itself rather than quietly
+patched, so you can see what you are trusting before you trust it.
+
+**A student project.** The portal is made and kept by Schulich students. It is
+unofficial: it is not affiliated with, reviewed by or endorsed by the Schulich School of
+Medicine & Dentistry or Western University, and nothing in it speaks for either. It is a
+study aid only. It may contain errors, it is not medical advice, and your lectures and
+course materials are the authority wherever the two disagree. Explanations marked
+*reasoned* were drafted with AI help (Claude) from the lecture they name and have not
+been checked by faculty.
+
+Lecturers are not named anywhere in the content. If you teach in the program and want
+something corrected or taken down, email <schulichmedfriend@gmail.com> and it will be
+handled promptly.
+
+## What the site sends
+
+- **Progress** stays in your browser's `localStorage` unless you turn on sync.
+- **Sync** is optional. Signing in with Google copies your progress and notes to a
+  Firebase database where only your own account can read them.
+- **Analytics.** Pages load Cloudflare Web Analytics, which counts visits without
+  cookies, and a small visitor counter that keeps a random device ID and no name or
+  IP address.
+- **Reports.** The Report button posts what you type as a public GitHub issue, so
+  leave anything personal out of it.

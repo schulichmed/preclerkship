@@ -1,0 +1,64 @@
+{
+ "name": "rotator cuff disease overview",
+ "title": "Rotator cuff disease staged by how far the tendon has gone: stage I inflamed but intact, stage II partial-thickness and stage III full-thickness defects, and rotator cuff arthropathy with the humerus riding up to the acromion; treatment by stage once nonoperative care fails, with the examination and the causes in panels",
+ "col_w": 250,
+ "root": {
+  "title": "Rotator cuff disease: how far has the TENDON gone?",
+  "lines": [
+   "most common shoulder disorder · onset in the 40s · progressive",
+   "pain · weakness · restricted motion: ACTIVE motion << PASSIVE"
+  ]
+ },
+ "groups": [
+  {"id": "g_in", "cols": [0, 0], "title": "TENDON INTACT", "lines": ["impingement"]},
+  {"id": "g_tr", "cols": [1, 2], "title": "TENDON TORN", "lines": ["how deep is the defect?"]},
+  {"id": "g_ma", "cols": [3, 3], "title": "MASSIVE DEFECT", "lines": ["humerus migrates up"]}
+ ],
+ "sections": ["head", "path", "tx"],
+ "row_names": {"path": "THE TENDON", "tx": "TREATMENT"},
+ "columns": [
+  {
+   "id": "s1", "colour": "teal",
+   "head": [[["h", "Stage I", ["inflammation"]]]],
+   "path": [[["t", "Intact but inflamed", ["no defect yet"]]]],
+   "tx": [
+    [["ok", "1 · Physiotherapy", []]],
+    [["warn", "2 · Subacromial decompression", []]]
+   ]
+  },
+  {
+   "id": "s2", "colour": "orange", "drop_label": "partial",
+   "head": [[["h", "Stage II", ["partial-thickness defect"]]]],
+   "path": [[["t", "Part of the tendon torn", []]]],
+   "tx": [[["warn", "CONSIDER rotator cuff repair", []]]]
+  },
+  {
+   "id": "s3", "colour": "purple", "drop_label": "full",
+   "head": [[["h", "Stage III", ["full-thickness defect"]]]],
+   "path": [[["t", "Torn through", []]]],
+   "tx": [[["warn", "Rotator cuff repair", []]]]
+  },
+  {
+   "id": "ar", "colour": "magenta",
+   "head": [[["h", "Rotator cuff arthropathy", ["massive defect in the cuff"]]]],
+   "path": [[["t", "Humerus migrates UP", ["• abuts the acromion", "• arthritis results"]]]],
+   "tx": [[["bad", "Reverse shoulder replacement", []]]]
+  }
+ ],
+ "panels": [
+  {"title": "Treatment, every stage first", "items": [
+   "education · activity modification · pain management (nonsteroidal anti-inflammatory drugs) · physiotherapy (muscle reconditioning) · injections",
+   "nonsurgical in the MAJORITY",
+   "SURGERY when: pain persists · weakness · after an acute injury"
+  ]},
+  {"title": "Examination", "items": [
+   "move: active << passive",
+   "impingement: Neer · Hawkins · painful arc",
+   "strength: supraspinatus · infraspinatus · subscapularis"
+  ]},
+  {"title": "Why the tendon fails", "items": [
+   "INTRINSIC (usual): vascularity · tension overload · tendon degeneration",
+   "EXTRINSIC: acromion shape (subacromial space volume)"
+  ]}
+ ]
+}

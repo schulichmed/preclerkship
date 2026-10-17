@@ -27,7 +27,7 @@ SIX ROUTES, IN ORDER. THE FIRST FIVE ARE EXACT
 ----------------------------------------------
 0. **A question a human linked or re-filed.** ``tools/review_links.json`` maps a
    qid to the lecture note(s) a person read it against, for the questions no
-   lookup reaches (Elentra module titles, DSSG and CHSG sessions that span
+   lookup reaches (DSSG and CHSG sessions that span
    several lectures). It is checked first and never overwritten by a derive.
    **A question a human re-filed.** A question carrying a `refiled` record was
    read against this year's notes and re-filed under the lecture that teaches

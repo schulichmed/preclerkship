@@ -1,0 +1,696 @@
+{
+ "name": "elbow problems overview",
+ "width": 1322,
+ "title": "Elbow pain: sort by structure and red flags into elbow dislocation, radial head subluxation (nursemaid's elbow), ulnar collateral ligament injury, osteoarthritis of the elbow and olecranon bursitis (not scary or infected), each with presentation, assessment and treatment in order",
+ "kinds": {
+  "dis_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dis_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "dis_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "nm_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nm_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "nm_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ucl_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ucl_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ucl_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "oa_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "oa_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "oa_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "bur_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "bur_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "bur_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 290,
+   "w": 236,
+   "h": 766,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 278,
+   "y": 290,
+   "w": 236,
+   "h": 766,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 544,
+   "y": 290,
+   "w": 236,
+   "h": 766,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 810,
+   "y": 290,
+   "w": 236,
+   "h": 766,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 1076,
+   "y": 290,
+   "w": 236,
+   "h": 766,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 436,
+   "h": 116,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 592,
+   "h": 182,
+   "text": "ASSESS"
+  },
+  {
+   "x": 23,
+   "y": 814,
+   "h": 234,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 296,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Elbow pain: which STRUCTURE is it, and is it a RED FLAG?",
+   "lines": [
+    "history: OLDCARS · acute (traumatic, inflammatory) or chronic (degenerative, overuse)",
+    "exam: LOOK · FEEL · MOVE · specific tests · don't forget the nerves"
+   ]
+  },
+  {
+   "id": "g_tr",
+   "x": 45,
+   "y": 138,
+   "w": 464,
+   "h": 80,
+   "kind": "plain",
+   "title": "ACUTE TRAUMA: which joint came out?",
+   "lines": [
+    "elbow itself or proximal radioulnar: very different patients"
+   ]
+  },
+  {
+   "id": "g_med",
+   "x": 549,
+   "y": 138,
+   "w": 226,
+   "h": 80,
+   "kind": "plain",
+   "title": "MEDIAL pain in a thrower",
+   "lines": [
+    "chronic, repetitive overuse"
+   ]
+  },
+  {
+   "id": "g_oa",
+   "x": 815,
+   "y": 138,
+   "w": 226,
+   "h": 80,
+   "kind": "plain",
+   "title": "GRADUAL pain + stiffness",
+   "lines": [
+    "degenerative or post-traumatic"
+   ]
+  },
+  {
+   "id": "g_post",
+   "x": 1081,
+   "y": 138,
+   "w": 226,
+   "h": 80,
+   "kind": "plain",
+   "title": "SWELLING over the olecranon",
+   "lines": [
+    "a bursa, not the joint"
+   ]
+  },
+  {
+   "id": "dis_head_0_0",
+   "x": 45,
+   "y": 298,
+   "w": 226,
+   "h": 98,
+   "kind": "dis_h",
+   "title": "Elbow dislocation",
+   "lines": [
+    "humero-ulnar joint",
+    "POSTERIOR is most common"
+   ]
+  },
+  {
+   "id": "nm_head_0_0",
+   "x": 283,
+   "y": 298,
+   "w": 226,
+   "h": 98,
+   "kind": "nm_h",
+   "title": "Radial head subluxation",
+   "lines": [
+    "nursemaid's elbow",
+    "proximal radioulnar joint"
+   ]
+  },
+  {
+   "id": "ucl_head_0_0",
+   "x": 549,
+   "y": 298,
+   "w": 226,
+   "h": 98,
+   "kind": "ucl_h",
+   "title": "Ulnar collateral ligament injury",
+   "lines": [
+    "stabilises the medial elbow",
+    "baseball pitcher"
+   ]
+  },
+  {
+   "id": "oa_head_0_0",
+   "x": 815,
+   "y": 298,
+   "w": 226,
+   "h": 98,
+   "kind": "oa_h",
+   "title": "Osteoarthritis of the elbow",
+   "lines": [
+    "post-traumatic: earlier onset",
+    "inflammatory: rheumatology charts"
+   ]
+  },
+  {
+   "id": "bur_head_0_0",
+   "x": 1081,
+   "y": 298,
+   "w": 226,
+   "h": 98,
+   "kind": "bur_h",
+   "title": "Olecranon bursitis",
+   "lines": [
+    "the most common superficial bursitis"
+   ]
+  },
+  {
+   "id": "dis_pres_0_0",
+   "x": 45,
+   "y": 436,
+   "w": 226,
+   "h": 116,
+   "kind": "dis_t",
+   "title": "Fall onto an outstretched hand (FOOSH)",
+   "lines": [
+    "capsule and ligaments rupture"
+   ]
+  },
+  {
+   "id": "nm_pres_0_0",
+   "x": 283,
+   "y": 436,
+   "w": 226,
+   "h": 116,
+   "kind": "nm_t",
+   "title": "Child: rare after age 5",
+   "lines": [
+    "• girls, left arm more often",
+    "• a PULL along the arm → acute pain",
+    "• will not use it, holds it flexed"
+   ]
+  },
+  {
+   "id": "ucl_pres_0_0",
+   "x": 549,
+   "y": 436,
+   "w": 226,
+   "h": 116,
+   "kind": "ucl_t",
+   "title": "Medial elbow pain",
+   "lines": [
+    "• sudden tear: a pop",
+    "• tender to palpation"
+   ]
+  },
+  {
+   "id": "oa_pres_0_0",
+   "x": 815,
+   "y": 436,
+   "w": 226,
+   "h": 116,
+   "kind": "oa_t",
+   "title": "Gradual, achy, with flares",
+   "lines": [
+    "• stiffness, loss of range of motion",
+    "• locking"
+   ]
+  },
+  {
+   "id": "bur_pres_0_0",
+   "x": 1081,
+   "y": 436,
+   "w": 226,
+   "h": 116,
+   "kind": "bur_t",
+   "title": "Single blow or repeated leaning",
+   "lines": [
+    "• develops over months",
+    "• INFECTED: skin break, redness, systemic signs"
+   ]
+  },
+  {
+   "id": "dis_inv_0_0",
+   "x": 45,
+   "y": 592,
+   "w": 226,
+   "h": 182,
+   "kind": "bad",
+   "title": "RED FLAG: check",
+   "lines": [
+    "• ulnar nerve",
+    "• skin integrity",
+    "• compartment syndrome"
+   ]
+  },
+  {
+   "id": "nm_inv_0_0",
+   "x": 283,
+   "y": 592,
+   "w": 226,
+   "h": 182,
+   "kind": "nm_w",
+   "title": "Clinical diagnosis",
+   "lines": [
+    "imaging ONLY to rule out a fracture"
+   ]
+  },
+  {
+   "id": "ucl_inv_0_0",
+   "x": 549,
+   "y": 592,
+   "w": 226,
+   "h": 80,
+   "kind": "ucl_w",
+   "title": "1 · Valgus stress: NO end point",
+   "lines": [
+    "excessive motion"
+   ]
+  },
+  {
+   "id": "ucl_inv_1_0",
+   "x": 549,
+   "y": 694,
+   "w": 226,
+   "h": 80,
+   "kind": "ucl_w",
+   "title": "2 · Sports medicine or orthopaedic exam",
+   "lines": [
+    "MRI may help"
+   ]
+  },
+  {
+   "id": "oa_inv_0_0",
+   "x": 815,
+   "y": 592,
+   "w": 226,
+   "h": 182,
+   "kind": "oa_w",
+   "title": "X-ray",
+   "lines": [
+    "• loss of joint space · osteophytes",
+    "• subchondral sclerosis or cysts"
+   ]
+  },
+  {
+   "id": "bur_inv_0_0",
+   "x": 1081,
+   "y": 592,
+   "w": 226,
+   "h": 98,
+   "kind": "bur_w",
+   "title": "Not scary: often nothing",
+   "lines": [
+    "X-ray if trauma · ultrasound or MRI if atypical"
+   ]
+  },
+  {
+   "id": "bur_inv_1_0",
+   "x": 1081,
+   "y": 712,
+   "w": 226,
+   "h": 62,
+   "kind": "bad",
+   "title": "Infected → ASPIRATE",
+   "lines": []
+  },
+  {
+   "id": "dis_tx_0_0",
+   "x": 45,
+   "y": 814,
+   "w": 226,
+   "h": 87,
+   "kind": "ok",
+   "title": "1 · Closed reduction",
+   "lines": [
+    "splint at 90°"
+   ]
+  },
+  {
+   "id": "dis_tx_1_0",
+   "x": 45,
+   "y": 923,
+   "w": 226,
+   "h": 125,
+   "kind": "warn",
+   "title": "2 · Open reduction internal fixation (ORIF)",
+   "lines": [
+    "soft tissue in the way, or it will not stay reduced"
+   ]
+  },
+  {
+   "id": "nm_tx_0_0",
+   "x": 283,
+   "y": 814,
+   "w": 226,
+   "h": 234,
+   "kind": "ok",
+   "title": "Closed reduction",
+   "lines": [
+    "• pronation + extension",
+    "• NO cast or orthosis"
+   ]
+  },
+  {
+   "id": "ucl_tx_0_0",
+   "x": 549,
+   "y": 814,
+   "w": 226,
+   "h": 114,
+   "kind": "ok",
+   "title": "1 · Conservative",
+   "lines": [
+    "• ligaments heal slowly, if at all",
+    "• physiotherapy · orthosis for stability",
+    "• anti-inflammatory, acetaminophen"
+   ]
+  },
+  {
+   "id": "ucl_tx_1_0",
+   "x": 549,
+   "y": 950,
+   "w": 226,
+   "h": 98,
+   "kind": "warn",
+   "title": "2 · Reconstruction (Tommy John)",
+   "lines": [
+    "only for functional goals · years of physiotherapy"
+   ]
+  },
+  {
+   "id": "oa_tx_0_0",
+   "x": 815,
+   "y": 814,
+   "w": 226,
+   "h": 142,
+   "kind": "ok",
+   "title": "1 · Conservative",
+   "lines": [
+    "• no cure: a grumbling course",
+    "• ice · physiotherapy · occupational therapy",
+    "• anti-inflammatory, acetaminophen, steroid injection"
+   ]
+  },
+  {
+   "id": "oa_tx_1_0",
+   "x": 815,
+   "y": 978,
+   "w": 226,
+   "h": 70,
+   "kind": "warn",
+   "title": "2 · Intolerable end stage",
+   "lines": [
+    "debridement or arthroplasty"
+   ]
+  },
+  {
+   "id": "bur_tx_0_0",
+   "x": 1081,
+   "y": 814,
+   "w": 226,
+   "h": 142,
+   "kind": "ok",
+   "title": "1 · Not scary: conservative",
+   "lines": [
+    "• benign, settles once the cause stops",
+    "• ice · pad the elbow · stop leaning · anti-inflammatory",
+    "• bursectomy if chronic"
+   ]
+  },
+  {
+   "id": "bur_tx_1_0",
+   "x": 1081,
+   "y": 978,
+   "w": 226,
+   "h": 70,
+   "kind": "bad",
+   "title": "Septic → ANTIBIOTICS",
+   "lines": [
+    "± incision and drainage"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_tr",
+   "path": "M676.0 88V113H277.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_med",
+   "path": "M676.0 88V113H662.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_oa",
+   "path": "M676.0 88V113H928.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_post",
+   "path": "M676.0 88V113H1194.0V138"
+  },
+  {
+   "from": "ucl_inv_0_0",
+   "to": "ucl_inv_1_0"
+  },
+  {
+   "from": "bur_inv_0_0",
+   "to": "bur_inv_1_0"
+  },
+  {
+   "from": "dis_tx_0_0",
+   "to": "dis_tx_1_0"
+  },
+  {
+   "from": "ucl_tx_0_0",
+   "to": "ucl_tx_1_0"
+  },
+  {
+   "from": "oa_tx_0_0",
+   "to": "oa_tx_1_0"
+  },
+  {
+   "from": "bur_tx_0_0",
+   "to": "bur_tx_1_0"
+  },
+  {
+   "from": "dis_head_0_0",
+   "to": "dis_pres_0_0"
+  },
+  {
+   "from": "dis_pres_0_0",
+   "to": "dis_inv_0_0"
+  },
+  {
+   "from": "dis_inv_0_0",
+   "to": "dis_tx_0_0"
+  },
+  {
+   "from": "g_tr",
+   "to": "dis_head_0_0",
+   "from_dx": -119
+  },
+  {
+   "from": "nm_head_0_0",
+   "to": "nm_pres_0_0"
+  },
+  {
+   "from": "nm_pres_0_0",
+   "to": "nm_inv_0_0"
+  },
+  {
+   "from": "nm_inv_0_0",
+   "to": "nm_tx_0_0"
+  },
+  {
+   "from": "g_tr",
+   "to": "nm_head_0_0",
+   "from_dx": 119
+  },
+  {
+   "from": "ucl_head_0_0",
+   "to": "ucl_pres_0_0"
+  },
+  {
+   "from": "ucl_pres_0_0",
+   "to": "ucl_inv_0_0"
+  },
+  {
+   "from": "ucl_inv_1_0",
+   "to": "ucl_tx_0_0"
+  },
+  {
+   "from": "g_med",
+   "to": "ucl_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "oa_head_0_0",
+   "to": "oa_pres_0_0"
+  },
+  {
+   "from": "oa_pres_0_0",
+   "to": "oa_inv_0_0"
+  },
+  {
+   "from": "oa_inv_0_0",
+   "to": "oa_tx_0_0"
+  },
+  {
+   "from": "g_oa",
+   "to": "oa_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "bur_head_0_0",
+   "to": "bur_pres_0_0"
+  },
+  {
+   "from": "bur_pres_0_0",
+   "to": "bur_inv_0_0"
+  },
+  {
+   "from": "bur_inv_1_0",
+   "to": "bur_tx_0_0"
+  },
+  {
+   "from": "g_post",
+   "to": "bur_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1082,
+   "w": 1262,
+   "title": "Elbow pain by location (a fracture can be anywhere)",
+   "items": [
+    "ANTERIOR: arthritis · distal biceps tendinopathy",
+    "MEDIAL: medial epicondylosis (golfer's elbow) · ulnar neuritis or neuropathy · ulnar collateral ligament",
+    "LATERAL: lateral epicondylosis (tennis elbow)",
+    "POSTERIOR: olecranon bursitis · arthritis · triceps tendinopathy"
+   ],
+   "cols": 2
+  }
+ ]
+}

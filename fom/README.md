@@ -21,7 +21,8 @@ three live in `tools/portal.py`.
 
 **1,979 practice questions** across the four blocks, weeks 1 to 15, transcribed
 out of the Question Bank PDFs and the Pre-Clerkship Workbook rather than
-rewritten. None of it is AI-generated.
+rewritten. The questions are not AI-written; where a source gave no explanation, one
+has been drafted with AI help and is marked as reasoned.
 
 | Block | Weeks | Questions |
 |---|---|---|
@@ -33,8 +34,6 @@ rewritten. None of it is AI-generated.
 Every question keeps the set it arrived in, and the **Question set** filter is
 that split:
 
-- **Module questions**: the knowledge checks inside each week's Elentra
-  asynchronous learning modules.
 - **Readiness assessments** and **self-assessments**: the week's RA and SA.
   Several early weeks never had one, and those say so rather than going quietly
   missing.
@@ -188,7 +187,8 @@ no counterpart here.
 Answers, stars and per-lecture accuracy are written to the browser's
 `localStorage`, under `nsq.fom.v1.<block>`, a different prefix from the PoM 2
 portal, so the two can be served from one origin without touching each other's
-progress. Nothing is sent anywhere and there is no backend.
+progress. Opt-in sync and the site-wide analytics are described in the
+[main README](../README.md#what-the-site-sends).
 
 The flip side is that it does not follow you between browsers or machines, so
 the questions tab has **Download all my progress** and **Restore from a file**.

@@ -31,8 +31,8 @@
 
   /* Where this block's questions went. One place builds it, so the link in the
      tab strip and the redirect below cannot drift apart. */
-  function qbankUrl() {
-    return "qbank.html#block=" + BLOCK.slug;
+  function qbankUrl(slug) {
+    return "qbank.html#block=" + (slug || BLOCK.slug);
   }
 
   /* A bookmark or an old link pointing at this block's questions still means
@@ -330,6 +330,27 @@
       art.appendChild(kp);
     }
 
+    /* The end of a note is where you want to test yourself, so it hands you to
+       the bank filtered to this block and to the lectures this note is about:
+       its own and every one it also covers. build_pages.py (lecture_counts)
+       worked out which of those have questions and how many, and a note with
+       none gets no button rather than one that lands on an empty bank. Only
+       the block page passes the counts; the bank's own note dialog is already
+       in the bank. */
+    var lq = opts.lecq && lec.id ? opts.lecq[lec.id] : null;
+    if (lq && lq.n && lq.lec && opts.slug) {
+      var go = el("p", "note-qbank");
+      var a = el("a", null, "Practice questions for this lecture · " + lq.n);
+      a.href = qbankUrl(opts.slug) + "&lecture=" + lq.lec;
+      /* a tab of its own, as the pinned PDFs open, so the note stays where
+         the reader left it to come back to after the questions */
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.title = "Open this lecture's questions in a new tab";
+      go.appendChild(a);
+      art.appendChild(go);
+    }
+
     return art;
   }
 
@@ -396,22 +417,22 @@
          drawn in; the print rule is light, as it is on the page */
       "<style>",
       "*{margin:0;padding:0;box-sizing:border-box}",
-      "body{background:", token("--bg", "#faf7f7"), ";color:", token("--text", "#27060f"), ";",
+      "body{background:", token("--bg", "#ffffff"), ";color:", token("--text", "#201436"), ";",
       "font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,sans-serif;",
       /* the diagram fills the width and scrolls, which is how a flowchart is
          read anyway and keeps the labels as large as they can be - but not
          past a comfortable measure on a very wide screen */
       "max-width:1500px;margin:auto;padding:22px clamp(16px,4vw,40px) 40px}",
       "p.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.08em;",
-      "text-transform:uppercase;color:", token("--muted", "#8a7a7d"), ";margin-bottom:6px}",
+      "text-transform:uppercase;color:", token("--muted", "#6a5e7e"), ";margin-bottom:6px}",
       "h1{font-family:Fraunces,Georgia,serif;font-size:clamp(1.3rem,3vw,1.9rem);",
       "font-weight:600;line-height:1.2;text-wrap:balance;margin-bottom:18px}",
       /* the whole point: the diagram gets the window, not a 900px column */
-      "figure{background:", token("--card-bg", "#fff"), ";border:1px solid ", token("--border", "#ecdfe1"), ";",
+      "figure{background:", token("--card-bg", "#fff"), ";border:1px solid ", token("--border", "#e5dcef"), ";",
       "border-radius:8px;padding:clamp(14px,3vw,30px);overflow-x:auto}",
       "svg{width:100%;height:auto;display:block}",
-      "footer{margin-top:16px;font-size:.8rem;color:", token("--muted", "#8a7a7d"), "}",
-      "@media print{body{padding:0;background:#fff;color:#27060f}",
+      "footer{margin-top:16px;font-size:.8rem;color:", token("--muted", "#6a5e7e"), "}",
+      "@media print{body{padding:0;background:#fff;color:#201436}",
       "figure{border:0;padding:0}footer{display:none}}",
       "</style></head><body>",
       "<p class=\"eyebrow\">", esc(block), "</p>",
@@ -455,18 +476,18 @@
       "family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap\">",
       "<style>",
       "*{margin:0;padding:0;box-sizing:border-box}",
-      "body{background:#faf7f7;color:#27060f;",
+      "body{background:#f5f0fc;color:#201436;",
       "font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,sans-serif;",
       "max-width:1500px;margin:auto;padding:22px clamp(16px,4vw,40px) 40px}",
       "p.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.08em;",
-      "text-transform:uppercase;color:#8a7a7d;margin-bottom:6px}",
+      "text-transform:uppercase;color:#6a5e7e;margin-bottom:6px}",
       "h1{font-family:Fraunces,Georgia,serif;font-size:clamp(1.3rem,3vw,1.9rem);",
       "font-weight:600;line-height:1.2;text-wrap:balance;margin-bottom:18px}",
-      "figure{background:#fff;border:1px solid #ecdfe1;border-radius:8px;",
+      "figure{background:#fff;border:1px solid #e5dcef;border-radius:8px;",
       "padding:clamp(14px,3vw,30px)}",
       "img{width:100%;height:auto;display:block;margin:auto}",
-      "figcaption{margin-top:12px;font-size:.8rem;color:#8a7a7d;text-align:center}",
-      "footer{margin-top:16px;font-size:.8rem;color:#8a7a7d}",
+      "figcaption{margin-top:12px;font-size:.8rem;color:#6a5e7e;text-align:center}",
+      "footer{margin-top:16px;font-size:.8rem;color:#6a5e7e}",
       "@media print{body{padding:0;background:#fff}",
       "figure{border:0;padding:0}footer{display:none}}",
       "</style></head><body>",
@@ -536,19 +557,19 @@
       darkMode: currentTheme() === "dark",
       background: token("--card-bg", "#ffffff"),
       primaryColor: token("--q-accent-soft", "#eeeeee"),
-      primaryTextColor: token("--text", "#27060f"),
+      primaryTextColor: token("--text", "#201436"),
       /* the accent as text, which is the lightened one in the dark theme: the
          raw accent is dark on a near-black fill and the outline all but goes */
-      primaryBorderColor: token("--q-accent-text", "#84223b"),
-      lineColor: token("--muted", "#8a7a7d"),
-      secondaryColor: token("--bg", "#faf7f7"),
-      tertiaryColor: token("--bg", "#faf7f7"),
+      primaryBorderColor: token("--q-accent-text", "#4f2683"),
+      lineColor: token("--muted", "#6a5e7e"),
+      secondaryColor: token("--bg", "#ffffff"),
+      tertiaryColor: token("--bg", "#ffffff"),
       /* named rather than left to mermaid, which lightens them from the
          colours above and lands on white edge labels in the dark theme */
-      edgeLabelBackground: token("--bg", "#faf7f7"),
-      clusterBkg: token("--bg", "#faf7f7"),
-      clusterBorder: token("--border", "#ecdfe1"),
-      titleColor: token("--text", "#27060f"),
+      edgeLabelBackground: token("--bg", "#ffffff"),
+      clusterBkg: token("--bg", "#ffffff"),
+      clusterBorder: token("--border", "#e5dcef"),
+      titleColor: token("--text", "#201436"),
       fontFamily: token("--sans", "Inter, sans-serif"),
       fontSize: "13px"
     };
@@ -703,7 +724,7 @@
      one. The reasons differ by kind - a note has no answer key - and are
      repeated in the worker and report_to_pr.py: change all three together. */
   var REPORT_URL = (BLOCK && BLOCK.report) || "";
-  var CONTACT = (BLOCK && BLOCK.contact) || "schulichmedfriends@gmail.com";
+  var CONTACT = (BLOCK && BLOCK.contact) || "schulichmedfriend@gmail.com";
   var REASONS = {
     question: [
       ["wrong-key", "The answer key is wrong"],
@@ -1127,26 +1148,44 @@
      carrying its own status, so it costs one localStorage read and no fetch. */
   function answeredHere() {
     var raw = null;
+    var none = { done: 0, due: 0 };
     try { raw = window.localStorage.getItem((BLOCK.store || "nsq.v1.") + BLOCK.slug); }
-    catch (e) { return 0; }
-    if (!raw) return 0;
+    catch (e) { return none; }
+    if (!raw) return none;
     var parsed;
     try { parsed = JSON.parse(raw); }
-    catch (e) { return 0; }
-    if (!parsed || typeof parsed !== "object") return 0;
-    var n = 0;
+    catch (e) { return none; }
+    if (!parsed || typeof parsed !== "object") return none;
+    var n = 0, due = 0, now = Date.now();
     Object.keys(parsed).forEach(function (qid) {
       var r = parsed[qid];
       if (r && (r.status === "correct" || r.status === "wrong")) n++;
+      if (r && r.family !== "offcurriculum" && dueAt(r) <= now) due++;
     });
-    return n;
+    return { done: n, due: due };
+  }
+
+  /* quiz.js's review schedule (reviewOf), mirrored because a block page does
+     not load quiz.js: wrong, then back after 1, 3, 7 and 21 days of getting it
+     right, by calendar day. Infinity when the record is not in the queue. */
+  var REVIEW_DAYS = [1, 3, 7, 21];
+  function midnight(ts) { var d = new Date(ts); d.setHours(0, 0, 0, 0); return d.getTime(); }
+  function dueAt(r) {
+    var a = Array.isArray(r.attempts) ? r.attempts : [], lastWrong = -1;
+    for (var i = a.length - 1; i >= 0; i--) {
+      if (a[i] && a[i].correct === false) { lastWrong = i; break; }
+    }
+    if (lastWrong === -1) return Infinity;
+    var streak = a.length - 1 - lastWrong, last = a[a.length - 1];
+    if (streak >= REVIEW_DAYS.length || !last || typeof last.ts !== "number") return Infinity;
+    return midnight(midnight(last.ts) + REVIEW_DAYS[streak] * 864e5 + 432e5);
   }
 
   function paintDone() {
-    var el = byId("qb-done"), n = answeredHere();
+    var el = byId("qb-done"), c = answeredHere();
     if (!el) return;
-    el.hidden = n === 0;
-    el.textContent = n + " done";
+    el.hidden = c.done === 0;
+    el.textContent = c.done + " done" + (c.due ? " \u00b7 " + c.due + " due" : "");
   }
 
   function show(key) {
@@ -1156,6 +1195,9 @@
     Object.keys(TABS).forEach(function (k) {
       var t = TABS[k], on = k === key;
       byId(t.tab).setAttribute("aria-selected", on ? "true" : "false");
+      /* roving tabindex: Tab stops on the chosen tab only, the arrows move
+         between them (see init) */
+      byId(t.tab).tabIndex = on ? 0 : -1;
       byId(t.panel).hidden = !on;
       if (t.board) byId(t.board).hidden = !on;
     });
@@ -1198,7 +1240,25 @@
       });
     });
 
+    /* The keyboard half of the ARIA tab pattern: Left and Right (and Home and
+       End) move along the strip and open what they land on, the way a screen
+       reader user is told a tablist behaves. */
+    var order = Object.keys(TABS);
+    order.forEach(function (k, i) {
+      byId(TABS[k].tab).addEventListener("keydown", function (e) {
+        var j = e.key === "ArrowRight" ? i + 1 : e.key === "ArrowLeft" ? i - 1 :
+                e.key === "Home" ? 0 : e.key === "End" ? order.length - 1 : null;
+        if (j === null) return;
+        e.preventDefault();
+        var next = order[(j + order.length) % order.length];
+        byId(TABS[next].tab).focus();
+        byId(TABS[next].tab).click();
+      });
+    });
+
     paintDone();
+    /* answers another device made, just brought in by sync.js */
+    window.addEventListener("portal:synced", paintDone);
     window.addEventListener("hashchange", function () {
       if (leftForQbank()) return;
       show(wanted());
@@ -1211,4 +1271,77 @@
   } else {
     init();
   }
+})();
+
+/* Tables that scroll sideways - a chart in a note, a lab table in a question -
+   are reachable from the keyboard. A box that only scrolls under a mouse or a
+   finger strands anyone on a keyboard at its left edge, so each one that
+   actually overflows becomes a focusable, labelled region (the arrow keys then
+   scroll it), and stops being one if a wider window means it no longer has to
+   scroll. Boxes that fit are left alone, so they add no stray Tab stops.
+
+   Cards are built after the data arrives, so new boxes are picked up as they
+   are added rather than looked for once. A ResizeObserver reports each box
+   when it is first laid out, which for a card the browser has skipped
+   (content-visibility) is when it nears the viewport, so off-screen work is
+   never forced. */
+(function () {
+  "use strict";
+  if (!window.ResizeObserver || !window.MutationObserver) return;
+
+  var SEL = ".ct-wrap, .tw";
+
+  var ro = new window.ResizeObserver(function (entries) {
+    entries.forEach(function (e) {
+      var box = e.target;
+      var scrolls = box.scrollWidth > box.clientWidth + 1;
+      if (scrolls === box.hasAttribute("data-scrolls")) return;
+      if (scrolls) {
+        box.setAttribute("data-scrolls", "");
+        box.tabIndex = 0;
+        box.setAttribute("role", "region");
+        box.setAttribute("aria-label", label(box));
+      } else {
+        box.removeAttribute("data-scrolls");
+        box.removeAttribute("tabindex");
+        box.removeAttribute("role");
+        box.removeAttribute("aria-label");
+      }
+    });
+  });
+
+  /* Each region needs its own name, or a screen reader's landmark list is
+     forty identical entries: the line the note sets above the table if there
+     is one, else its first few column headings. */
+  function label(box) {
+    var lead = box.previousElementSibling, name = "";
+    if (lead && lead.classList.contains("tlead")) name = lead.textContent;
+    if (!name.trim()) {
+      var heads = box.querySelectorAll("th"), cols = [];
+      for (var i = 0; i < heads.length && cols.length < 3; i++) {
+        var t = heads[i].textContent.trim();
+        if (t) cols.push(t);
+      }
+      name = cols.join(", ");
+    }
+    name = name.replace(/\s+/g, " ").trim();
+    if (name.length > 70) name = name.slice(0, 69) + "\u2026";
+    return (name ? "Table: " + name : "Table") + " (scrolls sideways)";
+  }
+
+  function watch(node) {
+    if (node.nodeType !== 1) return;
+    if (node.matches(SEL)) ro.observe(node);
+    var boxes = node.querySelectorAll(SEL);
+    for (var i = 0; i < boxes.length; i++) ro.observe(boxes[i]);
+  }
+
+  new window.MutationObserver(function (muts) {
+    for (var i = 0; i < muts.length; i++) {
+      var added = muts[i].addedNodes;
+      for (var j = 0; j < added.length; j++) watch(added[j]);
+    }
+  }).observe(document.documentElement, { childList: true, subtree: true });
+
+  if (document.body) watch(document.body);
 })();

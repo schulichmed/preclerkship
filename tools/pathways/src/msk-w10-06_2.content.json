@@ -1,0 +1,46 @@
+{
+ "name": "osteoarthritis overview",
+ "title": "Osteoarthritis as a chronic monoarthritis: rule out red flags, make the clinical diagnosis, stage it on X-ray, then treat with biomechanical and education measures at every stage, medicines for symptoms, and joint replacement only for end-stage disease; arthroscopy is not recommended",
+ "col_w": 236,
+ "root": {
+  "title": "ONE joint aching for over 6 weeks, worse with activity: osteoarthritis (OA) until a red flag says otherwise",
+  "lines": [
+   "OA is a CLINICAL diagnosis: typical symptoms + NO other cause · the X-ray STAGES it, it does not diagnose it",
+   "first set aside mechanical and sports causes of knee pain (no arthritis)"
+  ]
+ },
+ "groups": [
+  {"id": "g_dx", "cols": [0, 1], "title": "IS IT OA?", "lines": ["knee >> hip; ankle; shoulder >> big toe"]},
+  {"id": "g_tx", "cols": [2, 4], "title": "TREAT IT: what stage, what can be fixed?", "lines": ["no treatment preserves the joint; all improve life WITH it"]}
+ ],
+ "sections": ["head", "clue", "tx"],
+ "row_names": {"clue": "LOOK FOR", "tx": "THEN"},
+ "dashed_sections": ["clue"],
+ "columns": [
+  {"id": "red", "colour": "slate",
+   "head": [[["h", "Red flag → NOT OA", ["think something else"]]]],
+   "clue": [[["bad", "Any ONE of these", ["• warm or hot joint: infection, crystals", "• autoimmune (rheumatoid, seronegative)", "• malignancy · fracture · avascular necrosis"]]], [["w", "Widespread pain", ["not OA: look elsewhere"]]]],
+   "tx": [[["w", "Work up that cause", ["MRI or bone scan only when the diagnosis is in DOUBT"]]]]
+  },
+  {"id": "oa", "colour": "teal",
+   "head": [[["h", "Osteoarthritis", ["a 'sick joint': every tissue fails to heal"]]]],
+   "clue": [[["t", "Pain or stiffness with ACTIVITY", ["• morning stiffness < 30 min (usually < 5)", "• cool or barely warm effusion", "• joint-line tenderness, crepitus, thickening"]]], [["w", "Risk", ["• obesity · age · trauma, alignment · genes", "• female 1.4× · post-traumatic OA (after an anterior cruciate ligament tear) starts young"]]]],
+   "tx": [[["t", "X-ray: Kellgren-Lawrence (K/L) grade", ["• 1–2 = early · 3–4 = late to end stage", "• joint space narrowing, osteophytes"]]]]
+  },
+  {"id": "bio", "colour": "blue",
+   "head": [[["h", "Every stage: biomechanics + education", ["alignment · overuse · weakness · gait"]]]],
+   "clue": [[["ok", "ACTIVE therapy", ["• neuromuscular exercise physiotherapy, ≥ 3 months (Tai-Chi, GLA:D program)", "• 150 min of activity a week", "• lose 5% of body weight"]]]],
+   "tx": [[["w", "Also", ["• walking aids, insoles, unloader brace", "• occupational therapy: joint protection", "• cognitive behavioural therapy · topical heat"]]], [["bad", "PASSIVE therapy not recommended", ["ultrasound, nerve stimulation (TENS), laser, acupuncture"]]]]
+  },
+  {"id": "med", "colour": "purple",
+   "head": [[["h", "Medicines: symptoms only", ["less pain, better function"]]]],
+   "clue": [[["ok", "Evidence-based", ["• topical anti-inflammatory (NSAID): diclofenac 2–3 × a day", "• oral NSAID if no contraindication (not in kidney failure)", "• refractory: steroid injection (short-term), then a duloxetine trial 2–3 months"]]]],
+   "tx": [[["warn", "Weak or unproven", ["• acetaminophen: meaningful effect?", "• glucosamine, herbal remedies", "• injected hyaluronic acid, platelet-rich plasma, stem cells"]]], [["bad", "AVOID", ["• opioids (tramadol: risks > benefit)", "• neuropathic pain drugs, capsaicin, chondroitin"]]]]
+  },
+  {"id": "surg", "colour": "orange",
+   "head": [[["h", "Surgery: END STAGE only", ["unacceptable symptoms despite all of the rest"]]]],
+   "clue": [[["ok", "Joint replacement (arthroplasty)", ["a salvage procedure · strong evidence of benefit"]]]],
+   "tx": [[["bad", "NO knee arthroscopy", ["± meniscectomy or repair: no meaningful benefit"]]]]
+  }
+ ]
+}

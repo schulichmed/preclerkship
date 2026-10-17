@@ -16,7 +16,8 @@ question-set families, and the key its progress is stored under.
 
 **2,109 practice questions** across five blocks, weeks 1 to 17, transcribed out
 of the block Question Bank PDFs and the Pre-Clerkship Workbook rather than
-rewritten. None of it is AI-generated.
+rewritten. The questions are not AI-written; where a source gave no explanation, one
+has been drafted with AI help and is marked as reasoned.
 
 | Block | Weeks | Questions | Lecture notes |
 |---|---|---|---|
@@ -46,8 +47,6 @@ tabs take their block, their week and their lecture list from it.
 Every question keeps the set it arrived in, and the **Question set** filter is
 that split:
 
-- **Module questions** (644): the knowledge checks inside each week's Elentra
-  asynchronous learning modules.
 - **Weekly quizzes** (124): the week's quiz as it was sat, kept whole.
 - **Meds 2024 bank** (546): the student-written bank the Class of 2024 Academic
   Directors built in May 2021, re-filed week by week by the Meds 2025

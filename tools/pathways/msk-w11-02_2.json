@@ -1,0 +1,507 @@
+{
+ "name": "rheumatology investigations overview",
+ "width": 1068,
+ "title": "Lab tests for a suspected connective tissue disease: the ANA is the screen and is ordered only when a connective tissue disease is suspected; anti-DNA, the ENA panel and complement follow only a positive ANA; each column gives when to order the test, what a result means, and when not to order it",
+ "kinds": {
+  "ana_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ana_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ana_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "dna_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dna_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "dna_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ena_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ena_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ena_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cpl_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cpl_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cpl_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 246,
+   "h": 746,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 316,
+   "y": 270,
+   "w": 246,
+   "h": 746,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 564,
+   "y": 270,
+   "w": 246,
+   "h": 746,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 812,
+   "y": 270,
+   "w": 246,
+   "h": 746,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 378,
+   "h": 150,
+   "text": "ORDER WHEN"
+  },
+  {
+   "x": 23,
+   "y": 568,
+   "h": 168,
+   "text": "A RESULT MEANS"
+  },
+  {
+   "x": 23,
+   "y": 776,
+   "h": 232,
+   "text": "DO NOT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 169,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Suspected connective tissue disease (CTD): which lab test, and when NOT to order it?",
+   "lines": [
+    "no blood test diagnoses a CTD alone: clinical features are needed too",
+    "about 1 in 3 women are ANA positive; lupus (SLE) is 1 in 1,000"
+   ]
+  },
+  {
+   "id": "g_scr",
+   "x": 45,
+   "y": 138,
+   "w": 236,
+   "h": 60,
+   "kind": "plain",
+   "title": "SCREEN FIRST",
+   "lines": [
+    "antinuclear antibody (ANA)"
+   ]
+  },
+  {
+   "id": "g_aft",
+   "x": 321,
+   "y": 138,
+   "w": 732,
+   "h": 60,
+   "kind": "plain",
+   "title": "ONLY AFTER A POSITIVE ANA",
+   "lines": [
+    "ANA negative → none of these"
+   ]
+  },
+  {
+   "id": "ana_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 236,
+   "h": 60,
+   "kind": "ana_h",
+   "title": "ANA",
+   "lines": [
+    "antibodies against the cell nucleus"
+   ]
+  },
+  {
+   "id": "dna_head_0_0",
+   "x": 321,
+   "y": 278,
+   "w": 236,
+   "h": 60,
+   "kind": "dna_h",
+   "title": "Anti-DNA",
+   "lines": [
+    "against DNA in the nucleus"
+   ]
+  },
+  {
+   "id": "ena_head_0_0",
+   "x": 569,
+   "y": 278,
+   "w": 236,
+   "h": 60,
+   "kind": "ena_h",
+   "title": "ENA panel",
+   "lines": [
+    "extractable nuclear antigens"
+   ]
+  },
+  {
+   "id": "cpl_head_0_0",
+   "x": 817,
+   "y": 278,
+   "w": 236,
+   "h": 60,
+   "kind": "cpl_h",
+   "title": "Complement C3, C4",
+   "lines": []
+  },
+  {
+   "id": "ana_when_0_0",
+   "x": 45,
+   "y": 378,
+   "w": 236,
+   "h": 150,
+   "kind": "ana_t",
+   "title": "A CTD is suspected",
+   "lines": [
+    "• sun rash, high creatine kinase, new weakness",
+    "• oral ulcers, hair loss, low white cells + platelets",
+    "• new glomerulonephritis, cause unknown (maybe)"
+   ]
+  },
+  {
+   "id": "dna_when_0_0",
+   "x": 321,
+   "y": 378,
+   "w": 236,
+   "h": 150,
+   "kind": "dna_t",
+   "title": "ANA POSITIVE + SLE expected",
+   "lines": []
+  },
+  {
+   "id": "ena_when_0_0",
+   "x": 569,
+   "y": 378,
+   "w": 236,
+   "h": 150,
+   "kind": "ena_t",
+   "title": "After a positive ANA",
+   "lines": [
+    "screen, then the specific antibody"
+   ]
+  },
+  {
+   "id": "cpl_when_0_0",
+   "x": 817,
+   "y": 378,
+   "w": 236,
+   "h": 150,
+   "kind": "cpl_t",
+   "title": "SPECIALISTS only",
+   "lines": []
+  },
+  {
+   "id": "ana_means_0_0",
+   "x": 45.0,
+   "y": 568,
+   "w": 113.0,
+   "h": 168,
+   "kind": "ana_w",
+   "title": "POSITIVE",
+   "lines": [
+    "does NOT rule in disease",
+    "titre 1/1280 = strong (bigger denominator)"
+   ]
+  },
+  {
+   "id": "ana_means_0_1",
+   "x": 168.0,
+   "y": 568,
+   "w": 113.0,
+   "h": 168,
+   "kind": "ana_w",
+   "title": "NEGATIVE",
+   "lines": [
+    "most CTDs LESS likely"
+   ]
+  },
+  {
+   "id": "dna_means_0_0",
+   "x": 321,
+   "y": 568,
+   "w": 236,
+   "h": 168,
+   "kind": "dna_w",
+   "title": "Very SPECIFIC for SLE",
+   "lines": [
+    "positive in only ~50%",
+    "tracks renal SLE + activity",
+    "may turn negative with treatment"
+   ]
+  },
+  {
+   "id": "ena_means_0_0",
+   "x": 569,
+   "y": 568,
+   "w": 236,
+   "h": 168,
+   "kind": "ena_w",
+   "title": "Antibody → disease",
+   "lines": [
+    "• Ro: SLE photosensitive rash; baby: heart block",
+    "• Ro + La: Sjögren's",
+    "• Sm: fairly specific for SLE",
+    "• RNP: mixed CTD + SLE",
+    "• Scl-70: scleroderma + lung disease",
+    "• Jo1: polymyositis + lung disease"
+   ]
+  },
+  {
+   "id": "cpl_means_0_0",
+   "x": 817,
+   "y": 568,
+   "w": 236,
+   "h": 168,
+   "kind": "cpl_w",
+   "title": "LOW",
+   "lines": [
+    "active SLE, esp. lupus nephritis (used up)",
+    "or an inherited deficiency"
+   ]
+  },
+  {
+   "id": "ana_dont_0_0",
+   "x": 45,
+   "y": 776,
+   "w": 236,
+   "h": 114,
+   "kind": "bad",
+   "title": "No CTD features",
+   "lines": [
+    "• low white count from myelodysplasia",
+    "• fatigue + widespread pain (fibromyalgia)"
+   ]
+  },
+  {
+   "id": "ana_dont_1_0",
+   "x": 45,
+   "y": 912,
+   "w": 236,
+   "h": 96,
+   "kind": "bad",
+   "title": "Never repeat or follow it",
+   "lines": [
+    "• negative a year ago, no new symptoms",
+    "• a past positive still counts for SLE"
+   ]
+  },
+  {
+   "id": "dna_dont_0_0",
+   "x": 321,
+   "y": 776,
+   "w": 236,
+   "h": 96,
+   "kind": "bad",
+   "title": "ANA not done or negative",
+   "lines": [
+    "order the ANA first"
+   ]
+  },
+  {
+   "id": "dna_dont_1_0",
+   "x": 321,
+   "y": 894,
+   "w": 236,
+   "h": 114,
+   "kind": "warn",
+   "title": "Outside-lab kits",
+   "lines": [
+    "also detect single-stranded DNA: neither sensitive nor specific"
+   ]
+  },
+  {
+   "id": "ena_dont_0_0",
+   "x": 569,
+   "y": 776,
+   "w": 236,
+   "h": 232,
+   "kind": "bad",
+   "title": "ANA negative",
+   "lines": [
+    "the ENA is a follow-up test"
+   ]
+  },
+  {
+   "id": "cpl_dont_0_0",
+   "x": 817,
+   "y": 776,
+   "w": 236,
+   "h": 232,
+   "kind": "bad",
+   "title": "Family physician",
+   "lines": [
+    "a waste of money"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_scr",
+   "path": "M549.0 88V113H163.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_aft",
+   "path": "M549.0 88V113H687.0V138"
+  },
+  {
+   "from": "ana_dont_0_0",
+   "to": "ana_dont_1_0"
+  },
+  {
+   "from": "dna_dont_0_0",
+   "to": "dna_dont_1_0"
+  },
+  {
+   "from": "ana_head_0_0",
+   "to": "ana_when_0_0"
+  },
+  {
+   "from": "ana_when_0_0",
+   "to": "ana_means_0_0",
+   "from_dx": -61.5
+  },
+  {
+   "from": "ana_when_0_0",
+   "to": "ana_means_0_1",
+   "from_dx": 61.5
+  },
+  {
+   "from": "ana_means_0_0",
+   "to": "ana_dont_0_0",
+   "to_dx": -61.5
+  },
+  {
+   "from": "ana_means_0_1",
+   "to": "ana_dont_0_0",
+   "to_dx": 61.5
+  },
+  {
+   "from": "g_scr",
+   "to": "ana_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "dna_head_0_0",
+   "to": "dna_when_0_0"
+  },
+  {
+   "from": "dna_when_0_0",
+   "to": "dna_means_0_0"
+  },
+  {
+   "from": "dna_means_0_0",
+   "to": "dna_dont_0_0"
+  },
+  {
+   "from": "g_aft",
+   "to": "dna_head_0_0",
+   "from_dx": -248
+  },
+  {
+   "from": "ena_head_0_0",
+   "to": "ena_when_0_0"
+  },
+  {
+   "from": "ena_when_0_0",
+   "to": "ena_means_0_0"
+  },
+  {
+   "from": "ena_means_0_0",
+   "to": "ena_dont_0_0"
+  },
+  {
+   "from": "g_aft",
+   "to": "ena_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "cpl_head_0_0",
+   "to": "cpl_when_0_0"
+  },
+  {
+   "from": "cpl_when_0_0",
+   "to": "cpl_means_0_0"
+  },
+  {
+   "from": "cpl_means_0_0",
+   "to": "cpl_dont_0_0"
+  },
+  {
+   "from": "g_aft",
+   "to": "cpl_head_0_0",
+   "from_dx": 248
+  }
+ ],
+ "panels": []
+}

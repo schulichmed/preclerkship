@@ -339,57 +339,7 @@ machine **Anki** runs on. Under WSL that is a Windows path, and the script copie
 the result back across `/mnt/c`. The two constants at the top of the script are
 the two spellings of that one temporary file.
 
-## Pulling a weekly quiz out of Elentra
-
-Two more scripts, off to the side of the four above. They do not touch `data/`
-and are not part of the rebuild. They exist to shorten the trip from a weekly
-quiz sat in Elentra to a question note in the vault, which is where the four
-scripts pick the work up again.
-
-```bash
-python tools/make_bookmarklet.py     # once, then open build/elentra-grab.bookmarklet.html
-                                     # and drag the button onto the bookmarks bar
-python tools/elentra_quiz.py ~/Downloads/elentra-3007-*.json \
-    --topic endo --note "C:/Users/nsims/medwiki/00 - Practice Questions/Weekly Quizzes - Endocrinology.md"
-```
-
-**`tools/elentra_grab.js`** is the readable source of the bookmarklet.
-`make_bookmarklet.py` strips its comments, percent-encodes it and writes the
-`javascript:` URL into `build/`, along with a one-link page to drag from.
-
-Sit the quiz, submit it, then open the **feedback** view,
-`exams?section=feedback&progress_id=<n>`, the one showing the correct answers,
-and click the bookmark. A panel appears bottom right saying
-what it found. If the review paginates, click it on every page: captures
-accumulate in `localStorage` under the one exam id and **Download JSON** writes
-the merge. Nothing is fetched, clicked or submitted on your behalf, so it cannot
-disturb an attempt.
-
-**Probe page first.** The Rise grab in the bookmarks bar never reads a page: Rise
-ships a whole course, keys included, as one `runtime-data.js`, so that bookmarklet
-just fetches it and `rise_to_bank.py` decodes it. If Elentra's exam player has
-anything of that kind, scraping the DOM is the wrong approach. The **Probe page**
-button writes a file listing what the page fetched, what globals it is holding and
-any inline JSON island, and answers that in one click. It reports; it opens and
-fetches nothing.
-
-Failing that, the DOM, read two ways. `elentraScan` knows the shape Schulich's
-Elentra renders and reads it exactly: `.exam-question` per question,
-`tr.question-answer-view` per option carrying `answer-correct`, and a
-`.feedback-report` of `Points` / `Correct Answer` / `Rationale` lines. The key is
-stated twice there and the prose line wins, since a class name is a theme's
-business and can be restyled out from under this.
-
-Anything that shape misses falls through to a structural reader: a group of radios
-or checkboxes sharing a `name` is one question, its container is the smallest
-ancestor holding that group alone, and the answer is guessed from surrounding
-classes and icons. Both paths write every signal they saw into the file beside the
-verdict, and keep each question's own `outerHTML`. That is not decoration. The
-first version of this was pure guesswork, and one real capture showed that
-matching `right` in a class name also matches Bootstrap's `space-right`, which
-marked every option correct on all ten questions. The signals are what turned that
-into a one-line fix. `--inspect` prints them. A page that parses to nothing has its
-whole body kept in the file for the same reason.
+## Embedding an image in a question
 
 **`tools/embed_image.py`** resolves a vault image, re-compresses it and prints the
 `<img>` tag to paste into a question. Pictures ship *inside* the question as a
@@ -411,24 +361,7 @@ question's stem still reads as though the image were there, so a picture too big
 the one failure that hides itself. Unlike the four rebuild scripts this one needs
 **Pillow**.
 
-**`tools/elentra_quiz.py`** turns that JSON into house-format markdown in
-`build/`: a `#### <lecture>` group of `# N` questions with their answer callouts,
-sized and numbered to drop into the week's section of
-`Weekly Quizzes - <topic>.md`. Pass `--note` and the numbering continues from the
-highest `# N` already in the real note, so nothing renumbers.
-
-It writes a fragment rather than the note because the note is a vault file other
-sessions edit, and its `## Week N` sections and Coverage callout are hand-kept.
-Two things it will not decide on its own:
-
-- **A question with no detected key** gets the `> [!red] No official answer key`
-  scaffold rather than a guess.
-- **Select-all and short-answer questions** come through in their original shape
-  with the rewrite flagged, since the house rule that every banked question is
-  MCQ or true/false is a writing job, not a parsing one.
-
-Both are reported on stdout at the end of a run, with the qid range the fragment
-claims.
+## Reading OneNote pages locally
 
 **`tools/onenote_local.py`** reads OneNote pages off this laptop, with no Graph
 API and no login — the ms365 route has been refused since 2026-09-07 with

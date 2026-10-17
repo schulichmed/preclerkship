@@ -40,25 +40,14 @@
      is a visible gap in coverage, which is the point. */
   var FAMILIES = BLOCK.families || [
     {
-      key: "module",
-      name: "Course modules",
-      blurb: "The Elentra module knowledge checks and the concept checks on the lecture slides. Cases live under Curriculum Cases instead, wherever they came from."
-    },
-    {
-      key: "weekly",
-      name: "Weekly quizzes",
-      blurb: "The weekly quizzes, both the Microsoft Forms ones and the ones sat in Elentra. Kept whole as their own set, so a week's quiz can be drilled the way it was written."
-    },
-    {
       key: "workbook",
       name: "Pre-Clerkship Workbook",
       blurb: "The Pre-Clerkship Workbook (2023 edition), the student bank passed down through the Schulich classes of 2015-2025. It has a written key, but the key is peer-written and contains real errors. Every one found is flagged on the question."
     },
     {
       key: "meds2029",
-      name: "Curriculum Cases",
-      show_blurb: true,
-      blurb: "Cases and questions directly from our 2026-27 curriculum (Meds 2029): DSSGs, in-class lectures and modules, likely to be recycled on exams."
+      name: "Case-Based Questions",
+      blurb: "Case-Based Questions."
     },
     {
       key: "reviews",
@@ -77,14 +66,19 @@
      that has to be kept mutually exclusive with the other four. */
   /* search is the one facet whose value is typed rather than picked, so it is
      a string, and the empty string is its "all" */
-  var filters = { status: [], block: [], family: [], week: [], tag: [], search: "" };
+  /* lecture is set by a click in the weak-spot panel or by the button at the
+     end of a note (#lecture= in the address), never picked from a dropdown,
+     so it shows only as chips. A note can cover several lectures, so it holds
+     a list like the others. */
+  var filters = { status: [], block: [], family: [], week: [], tag: [], search: "",
+                  lecture: [] };
 
   function isOn(name, k) { return filters[name].indexOf(k) !== -1; }
 
   function anyFilter() {
     return filters.status.length > 0 || filters.block.length > 0 ||
            filters.family.length > 0 || filters.week.length > 0 ||
-           filters.tag.length > 0 || searchOn();
+           filters.tag.length > 0 || searchOn() || filters.lecture.length > 0;
   }
 
   /* View and Mode are two axes, deliberately independent. VIEW is how the
@@ -232,6 +226,14 @@
         note("Progress could not be saved - the browser refused to write to local storage. Every question still works, but nothing is being kept.");
       }
     });
+    syncTouch();
+  }
+
+  /* sync.js, when the reader has signed in, sends what changed a little
+     later; without it, or signed out, this does nothing */
+  function syncTouch() {
+    try { if (window.PORTAL_SYNC) window.PORTAL_SYNC.touch(); }
+    catch (e) { /* sync is extra: a failure there must never stop a save */ }
   }
 
   function note(text) {
@@ -265,6 +267,7 @@
   }
 
   function persist(qid, patch) {
+    if (patch.attempt && isDue(qid)) DUE_SEEN[qid] = true;
     var prev = progress[qid] || {}, q = QMAP[qid];
     var next = {
       qid: qid,
@@ -290,6 +293,70 @@
   }
 
   function forget(qid) { forgetMany([qid]); }
+
+  /* ---------- the review queue ---------- */
+
+  /* A question you got wrong comes back: the day after, then three days after
+     you next get it right, then seven, then twenty-one, and after four right
+     in a row it leaves the queue. Wrong again starts it over. These are the
+     Leitner boxes Anki users already trust, run on the attempts the store
+     has always kept, so a progress file from before this shipped already has
+     a queue and nothing needs migrating.
+
+     Whole days, in the reader's own time zone: something answered at 11 pm
+     is due the next calendar day, not twenty-four hours later. A question
+     never got wrong is not in the queue at all - it is the bank's job to
+     find those, and Unseen already does. Mirrored in portal.js for the badge
+     on the block pages, which cannot load this file. */
+  var REVIEW_DAYS = [1, 3, 7, 21];
+  var DAY_MS = 864e5;
+  /* qids answered while due in this visit: they stay in the Due filter until
+     the page is left, so a question does not vanish under your cursor the
+     moment you answer it */
+  var DUE_SEEN = Object.create(null);
+
+  function midnight(ts) {
+    var d = new Date(ts);
+    d.setHours(0, 0, 0, 0);
+    return d.getTime();
+  }
+
+  /* { at: the day it is due, as a midnight timestamp } or null when the
+     question is not in the queue */
+  function reviewOf(qid) {
+    var q = QMAP[qid];
+    if (!q || q.unscorable || !onCurriculum(q)) return null;
+    var atts = attemptsOf(qid), lastWrong = -1;
+    for (var i = atts.length - 1; i >= 0; i--) {
+      if (atts[i] && atts[i].correct === false) { lastWrong = i; break; }
+    }
+    if (lastWrong === -1) return null;
+    var streak = atts.length - 1 - lastWrong;
+    if (streak >= REVIEW_DAYS.length) return null;
+    var last = atts[atts.length - 1];
+    if (!last || typeof last.ts !== "number") return null;
+    /* noon before midnight, so a daylight-saving day of 23 or 25 hours
+       still lands on the right date */
+    return { at: midnight(midnight(last.ts) + REVIEW_DAYS[streak] * DAY_MS + DAY_MS / 2),
+             step: streak };
+  }
+
+  function isDue(qid) {
+    var r = reviewOf(qid);
+    return !!r && r.at <= Date.now();
+  }
+
+  /* due now, and how many more fall due in the next week */
+  function queueCounts() {
+    var now = Date.now(), week = midnight(now) + 8 * DAY_MS, due = 0, soon = 0;
+    QUESTIONS.forEach(function (q) {
+      var r = reviewOf(q.qid);
+      if (!r) return;
+      if (r.at <= now) due++;
+      else if (r.at < week) soon++;
+    });
+    return { due: due, soon: soon };
+  }
 
   /* ---------- crossed-out options ---------- */
 
@@ -320,12 +387,29 @@
       delete progress[qid];
       delete STRUCK[qid];
     });
+    noteResets(ids);
     Object.keys(touched).forEach(function (slug) { save(slug); });
     ids.forEach(paintQuestion);
     paintStats();
     if (ANCHOR && ids.indexOf(ANCHOR) !== -1) {
       ANCHOR = null; RESUMING = false; paintPos();
     }
+  }
+
+  /* A cleared question has no record left, so nothing about it could tell
+     another device to clear its copy too: synced, the old answer would just
+     come back. The time of each clear is kept instead, and sync.js drops a
+     record answered at or before it. Kept signed in or not, so a clear made
+     before signing in still counts once the reader does. */
+  var RESET_KEY = "reset:" + STORE_PREFIX;
+  function noteResets(ids) {
+    try {
+      var raw = window.localStorage.getItem(RESET_KEY), map = null, now = Date.now();
+      try { map = raw ? JSON.parse(raw) : null; } catch (e) { map = null; }
+      if (!map || typeof map !== "object" || Array.isArray(map)) map = {};
+      ids.forEach(function (qid) { map[qid] = now; });
+      window.localStorage.setItem(RESET_KEY, JSON.stringify(map));
+    } catch (e) { /* storage refused: forgetMany's own save says so */ }
   }
 
   /* ---------- memos ---------- */
@@ -393,6 +477,7 @@
 
   function writeMemoStore(store) {
     window.localStorage.setItem(MEMO_KEY, JSON.stringify(store));
+    syncTouch();
   }
 
   function loadMemos() {
@@ -737,6 +822,101 @@
     return sw;
   }
 
+  /* ---------- terms in the explanation ---------- */
+
+  /* tools/note_links.py found, in each explanation, the terms a lecture note
+     sets in bold, and listed them as [text, block, lecture id, week, the
+     note's bold]. The first time each text appears it becomes a link to that
+     note: on its block page without <dialog>, else opened in place and
+     scrolled to the term. The explanation's own HTML is never edited, so a
+     term that cannot be found is simply left as text. */
+  var TERM_SKIP = /^(A|BUTTON|CODE|SUP|SUB|MARK)$/;
+
+  function linkTerms(root, q) {
+    var list = q.noteTerms;
+    if (!list || !list.length || !document.createTreeWalker) return;
+    try {
+      list.forEach(function (t) {
+        if (!t || typeof t[0] !== "string" || !t[1] || !t[2]) return;
+        var hit = findText(root, t[0]);
+        if (!hit) return;
+        var node = hit.node.splitText(hit.at);
+        node.splitText(t[0].length);
+        var it = { slug: t[1], id: t[2], name: t[4] || t[0] };
+        var a = el("a", "kt");
+        a.href = noteUrl(it);
+        a.title = "Open the note on " + (t[4] || t[0]);
+        node.parentNode.replaceChild(a, node);
+        a.appendChild(node);
+        if (DIALOG_OK) {
+          a.addEventListener("click", function (e) {
+            if (e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+            e.preventDefault();
+            openNote(it, t[3], a, t[4] || t[0]);
+          });
+        }
+      });
+    } catch (e) { /* a card without its links is still a whole card */ }
+  }
+
+  /* The first whole-word occurrence of text in root's prose. */
+  function findText(root, text) {
+    var walk = document.createTreeWalker(root, 4 /* NodeFilter.SHOW_TEXT */, null, false);
+    var n, word = /[A-Za-z0-9]/;
+    while ((n = walk.nextNode())) {
+      var skip = false;
+      for (var p = n.parentNode; p && p !== root; p = p.parentNode) {
+        if (TERM_SKIP.test(p.nodeName)) { skip = true; break; }
+      }
+      if (skip) continue;
+      var v = n.nodeValue, from = 0, at;
+      while ((at = v.indexOf(text, from)) !== -1) {
+        if (!word.test(v.charAt(at - 1) || " ") && !word.test(v.charAt(at + text.length) || " ")) {
+          return { node: n, at: at };
+        }
+        from = at + 1;
+      }
+    }
+    return null;
+  }
+
+  /* In an open note, the bold that is the term: marked, and scrolled to a
+     third of the way down so what defines it shows beneath. */
+  function showTerm(body, term) {
+    var want = String(term).toLowerCase(), best = null;
+    var strip = function (s) { return s.replace(/\s+/g, " ").replace(/^[\s.,:;()\[\]\u2013\u2014-]+|[\s.,:;()\[\]\u2013\u2014-]+$/g, "").toLowerCase(); };
+    var bold = body.querySelectorAll("strong");
+    for (var i = 0; i < bold.length && !best; i++) {
+      if (strip(bold[i].textContent) === want) best = bold[i];
+    }
+    if (!best) return;
+    best.classList.add("kt-hit");
+    var hit = best, held = true;
+    var place = function () {
+      if (!held || !hit.isConnected) return;
+      /* a wide table scrolls sideways inside the note: bring the term in */
+      for (var box = hit.parentNode; box && box !== body; box = box.parentNode) {
+        if (box.scrollWidth > box.clientWidth + 1) {
+          var dx = hit.getBoundingClientRect().left - box.getBoundingClientRect().left;
+          box.scrollLeft = Math.max(0, box.scrollLeft + dx - box.clientWidth / 3);
+        }
+      }
+      var top = hit.getBoundingClientRect().top - body.getBoundingClientRect().top;
+      body.scrollTop = Math.max(0, body.scrollTop + top - body.clientHeight / 3);
+    };
+    place();
+    /* figures above the term load after this and push it down; follow it
+       until they have, or until the reader scrolls for themselves */
+    var letGo = function () { held = false; };
+    ["wheel", "touchstart", "keydown", "mousedown"].forEach(function (ev) {
+      body.addEventListener(ev, letGo, { once: true, passive: true });
+    });
+    Array.prototype.forEach.call(body.querySelectorAll("img"), function (img) {
+      if (!img.complete) img.addEventListener("load", place, { once: true });
+    });
+    setTimeout(letGo, 4000);
+  }
+
   /* ---------- the note dialog ---------- */
 
   /* One lecture's note, read without leaving the question. The dialog is
@@ -822,14 +1002,14 @@
     body.appendChild(p);
   }
 
-  function openNote(it, w, from) {
+  function openNote(it, w, from, term) {
     var d = ensureDialog();
     var where = d.querySelector(".notedlg-where"), title = byId("notedlg-title"),
         full = d.querySelector(".notedlg-full"), body = d.querySelector(".notedlg-body");
     var token = ++OPENING;
     OPENER = from || null;
 
-    where.textContent = (BLOCK_NAME[it.slug] || it.slug) + " \u00b7 Week " + w;
+    where.textContent = (BLOCK_NAME[it.slug] || it.slug) + (w != null ? " \u00b7 Week " + w : "");
     title.textContent = it.name;
     full.href = noteUrl(it);
     body.innerHTML = "";
@@ -854,6 +1034,7 @@
       body.appendChild(shared.build(target, { block: BLOCK_NAME[it.slug] || it.slug, slug: it.slug, onPrint: null }));
       shared.drawPathways(body);
       body.scrollTop = 0;
+      if (term) showTerm(body, term);
     }, function () {
       if (token !== OPENING) return;
       fillState(body, "The note could not be loaded.", it);
@@ -1099,6 +1280,8 @@
     if (q.multi) head.appendChild(el("span", "tag multi",
       q.selectAll ? "select all that apply" : "select " + q.correct.length));
     if (q.retired) head.appendChild(el("span", "tag retired", "retired"));
+    /* shown by the stylesheet while the card carries is-due */
+    head.appendChild(el("span", "tag due-tag", "due for review"));
     var hasErr = (q.flags || []).some(function (f) {
       return f.type === "bug" || f.type === "red" ||
              (f.type === "warning" && f.title !== "No explanation in the module");
@@ -1267,6 +1450,7 @@
     ans.appendChild(el("p", "ans-h", q.keyed ? (q.answerTitle || "Answer") : "Reasoned answer"));
     var ab = el("div", "ans-body");
     ab.innerHTML = q.answer;
+    linkTerms(ab, q);
     ans.appendChild(ab);
     (q.flags || []).forEach(function (f) {
       var c = el("div", "callout k-" + (/^[a-z]+$/.test(f.type) ? f.type : "note"));
@@ -1379,10 +1563,16 @@
       chosen = testChosen(qid);
       done = chosen.length > 0;
       reveal = false;
+    } else if (isDue(qid)) {
+      /* back in the queue: asked again as if new, with no trace of the last
+         pick, and marked so you know why a question you did is open again */
+      chosen = [];
+      reveal = false;
     } else {
       chosen = chosenOf(qid) || [];
       reveal = done && revealOk();
     }
+    art.classList.toggle("is-due", !staging() && isDue(qid));
 
     art.dataset.state = reveal ? st : "unseen";
     if (!q.unscorable) art.classList.toggle("revealed", reveal);
@@ -1445,6 +1635,50 @@
      unless it was tagged, and most carry none. */
   function tagsOf(q) { return Array.isArray(q.tags) ? q.tags : []; }
 
+  /* ---------- which lecture a question tests ---------- */
+
+  /* The weak-spot panel counts by lecture, and the lecture a question tests is
+     the one review_lectures.py resolved it to, not the one it was filed under:
+     the filed names differ between sets ("Concept Checks - ..." beside
+     "01 - Intro to Diabetes") and would split one lecture into several. Where
+     nothing resolved, the filed lecture and its week are all there is, so
+     that pair is the key. A question that tests two lectures counts under
+     both, the same way a question with two tags counts under each. */
+  var LECTURE_NAME = Object.create(null);
+  var LECTURE_WEEK = Object.create(null);
+  var LECKEYS = Object.create(null);
+
+  function lectureKeysOf(q) {
+    var hit = LECKEYS[q.qid];
+    if (hit) return hit;
+    var keys = [];
+    (q.review || []).forEach(function (r) {
+      if (!r || r.w === undefined || r.w === null || !r.t) return;
+      var k = "w" + r.w + ":" + (r.n || r.t);
+      if (keys.indexOf(k) !== -1) return;
+      keys.push(k);
+      if (!LECTURE_NAME[k]) {
+        LECTURE_NAME[k] = (r.n ? r.n + " - " : "") + r.t;
+        LECTURE_WEEK[k] = String(r.w);
+      }
+    });
+    if (!keys.length && q.lecture) {
+      var k = "f" + weekKey(q) + ":" + q.lecture;
+      keys.push(k);
+      if (!LECTURE_NAME[k]) {
+        LECTURE_NAME[k] = q.lecture;
+        LECTURE_WEEK[k] = weekKey(q);
+      }
+    }
+    LECKEYS[q.qid] = keys;
+    return keys;
+  }
+
+  function lectureOk(q) {
+    return !filters.lecture.length ||
+      lectureKeysOf(q).some(function (k) { return filters.lecture.indexOf(k) !== -1; });
+  }
+
   function tagOk(q) {
     if (!filters.tag.length) return true;
     var t = tagsOf(q);
@@ -1463,6 +1697,7 @@
       case "correct": return st === "correct";
       case "starred": return isStarred(q.qid);
       case "noted":   return hasMemo(q.qid);
+      case "due":     return !!DUE_SEEN[q.qid] || isDue(q.qid);
       default:        return true;
     }
   }
@@ -1640,7 +1875,8 @@
 
   function matches(qid) {
     var q = QMAP[qid];
-    return blockOk(q) && famOk(q) && weekOk(q) && tagOk(q) && statusOk(q) && searchOk(q);
+    return blockOk(q) && famOk(q) && weekOk(q) && tagOk(q) && statusOk(q) &&
+           searchOk(q) && lectureOk(q);
   }
 
   // qids currently passing the filters that actually have something to clear
@@ -1709,7 +1945,8 @@
     });
 
     var narrowed = filters.status.length > 0 || filters.week.length > 0 ||
-                   filters.tag.length > 0 || filters.block.length > 0 || searchOn();
+                   filters.tag.length > 0 || filters.block.length > 0 || searchOn() ||
+                   filters.lecture.length > 0;
     [].forEach.call(document.querySelectorAll(".family"), function (f) {
       if (filters.family.length && !isOn("family", f.dataset.family)) { f.hidden = true; return; }
       /* a coverage gap is worth showing where the stream is grouped by set,
@@ -1759,20 +1996,41 @@
      Only the block, and only on the pooled page: the other four facets are
      things you try and drop within a session, where the block is where you
      started. replaceState rather than the hash, so dragging the filter does
-     not fill the Back button with every combination passed through. */
+     not fill the Back button with every combination passed through.
+
+     The lecture rides along too, because the button at the end of a note
+     sends you here for that note's lectures, and "the questions for lecture
+     02" is as worth bookmarking or sending as a block. The address writes it
+     w1-02 for the key lectureKeysOf makes as w1:02, a colon being a poor
+     thing to put in a link; a lecture taught in parts is w7-02.1. Only
+     numbered lectures have that form; a weak
+     spot keyed by a filed name stays a chip and out of the address. */
   function readHash() {
     if (!TERM) return;
-    var m = /(?:^|[#&])block=([a-z0-9_,-]+)/i.exec(window.location.hash || "");
-    if (!m) return;
-    var want = m[1].split(",").filter(function (k) {
-      return BLOCK_NAME[k] !== undefined;
-    });
-    if (want.length) filters.block = want;
+    var h = window.location.hash || "";
+    var m = /(?:^|[#&])block=([a-z0-9_,-]+)/i.exec(h);
+    if (m) {
+      var want = m[1].split(",").filter(function (k) {
+        return BLOCK_NAME[k] !== undefined;
+      });
+      if (want.length) filters.block = want;
+    }
+    var l = /(?:^|[#&])lecture=([w0-9.,-]+)/i.exec(h);
+    if (l) {
+      filters.lecture = l[1].split(",").filter(function (k) {
+        return /^w\d+-\d+(\.\d+)?$/i.test(k);
+      }).map(function (k) { return k.replace("-", ":"); });
+    }
   }
 
   function writeHash() {
     if (!TERM || !window.history || !window.history.replaceState) return;
-    var h = filters.block.length ? "#block=" + filters.block.join(",") : "";
+    var lecs = filters.lecture.filter(function (k) { return /^w\d+:\d+(\.\d+)?$/.test(k); })
+      .map(function (k) { return k.replace(":", "-"); });
+    var parts = [];
+    if (filters.block.length) parts.push("block=" + filters.block.join(","));
+    if (lecs.length) parts.push("lecture=" + lecs.join(","));
+    var h = parts.length ? "#" + parts.join("&") : "";
     try {
       window.history.replaceState(null, "",
         window.location.pathname + window.location.search + h);
@@ -1786,6 +2044,7 @@
     filters.tag = [];
     filters.status = [];
     filters.search = "";
+    filters.lecture = [];
     syncSearchBox();
   }
 
@@ -2383,7 +2642,30 @@
     var t = e.target;
     if (t && (t.isContentEditable ||
               /^(input|textarea|select)$/i.test(t.tagName || ""))) return;
+    if (e.key === "?") { e.preventDefault(); toggleKeys(); return; }
+    if (e.key === "Escape" && KEYHELP && !KEYHELP.hidden) { toggleKeys(false); return; }
     if (e.shiftKey) return;
+    /* 1-9 pick that option of the question the bar is on, Enter presses its
+       Check or Show answer. Each is a click on the card's own button, so a
+       disabled, crossed-out or already answered card behaves exactly as it
+       would under the mouse. Enter on a focused button or link is left to
+       the browser, which clicks that instead. */
+    if (/^[1-9]$/.test(e.key) || e.key === "Enter") {
+      var art = keyCard();
+      if (!art) return;
+      var b = null;
+      if (e.key === "Enter") {
+        if (t && /^(button|a|summary)$/i.test(t.tagName || "")) return;
+        b = [].filter.call(art.querySelectorAll(".actions .btn"), usable)[0] || null;
+      } else {
+        b = art.querySelectorAll(".opts .opt")[parseInt(e.key, 10) - 1] || null;
+        if (b && !usable(b)) b = null;
+      }
+      if (!b) return;
+      e.preventDefault();
+      b.click();
+      return;
+    }
     if (e.key === "j") { e.preventDefault(); step(1); }
     else if (e.key === "k") { e.preventDefault(); step(-1); }
     else if (e.key === "b" && ANCHOR) {
@@ -2391,6 +2673,59 @@
       RESUMING = false;
       goTo(ANCHOR);
     }
+  }
+
+  function usable(b) { return !b.disabled && b.offsetParent !== null; }
+
+  /* The card the keys act on: the one the bar is counting, or in a stream
+     not yet scrolled, the first one showing. */
+  function keyCard() {
+    var id = CURRENT || (VISIBLE.length ? VISIBLE[0] : null);
+    var art = id ? byId("q-" + id) : null;
+    return art && art.offsetParent !== null ? art : null;
+  }
+
+  /* The keys, listed. "?" or the bar's ? button opens it, and Escape, the
+     button or a click anywhere else closes it. Built on first use so a page
+     cached from before it shipped gets it too. */
+  var KEYHELP = null;
+  var KEYS = [
+    ["1\u20139", "Pick that option"],
+    ["Enter", "Check answer / Show answer"],
+    ["j", "Next question"],
+    ["k", "Previous question"],
+    ["b", "Back to where you were"],
+    ["/", "Search the bank"],
+    ["?", "This list"]
+  ];
+
+  function toggleKeys(open) {
+    if (!KEYHELP) {
+      KEYHELP = el("div", "keyhelp");
+      KEYHELP.id = "keyhelp";
+      KEYHELP.hidden = true;
+      KEYHELP.setAttribute("role", "dialog");
+      KEYHELP.setAttribute("aria-label", "Keyboard shortcuts");
+      KEYHELP.appendChild(el("p", "keyhelp-h", "Keyboard shortcuts"));
+      var dl = el("dl");
+      KEYS.forEach(function (k) {
+        var dt = el("dt");
+        dt.appendChild(el("kbd", null, k[0]));
+        dl.appendChild(dt);
+        dl.appendChild(el("dd", null, k[1]));
+      });
+      KEYHELP.appendChild(dl);
+      document.body.appendChild(KEYHELP);
+      document.addEventListener("click", function (e) {
+        if (KEYHELP.hidden || KEYHELP.contains(e.target)) return;
+        if (e.target.closest && e.target.closest("#pb-keys")) return;
+        toggleKeys(false);
+      });
+    }
+    var show = open === undefined ? KEYHELP.hidden : open;
+    KEYHELP.hidden = !show;
+    var btn = byId("pb-keys");
+    if (btn) btn.setAttribute("aria-expanded", show ? "true" : "false");
   }
 
   /* a browser without IntersectionObserver gets the stream exactly as it was,
@@ -2409,6 +2744,16 @@
     byId("pb-top").addEventListener("click", toTop);
     byId("pb-prev").addEventListener("click", function () { step(-1); });
     byId("pb-next").addEventListener("click", function () { step(1); });
+    /* the ? button joins the bar's steps; CSS shows it only where there is
+       a keyboard to speak of (a fine pointer that can hover) */
+    var kb = el("button", "pb-step pb-keys", "?");
+    kb.id = "pb-keys";
+    kb.type = "button";
+    kb.title = "Keyboard shortcuts (?)";
+    kb.setAttribute("aria-label", "Keyboard shortcuts");
+    kb.setAttribute("aria-expanded", "false");
+    kb.addEventListener("click", function () { toggleKeys(); });
+    byId("pb-next").parentNode.appendChild(kb);
     byId("pb-mark").addEventListener("click", function () {
       if (!ANCHOR) return;
       RESUMING = false;
@@ -2428,6 +2773,7 @@
     { k: "all", label: "All" },
     { k: "unseen", label: "Unseen" },
     { k: "wrong", label: "Wrong", cls: "wrongish" },
+    { k: "due", label: "Due for review", title: "Questions you got wrong, back on a 1, 3, 7 and 21 day schedule" },
     { k: "correct", label: "Correct" },
     { k: "starred", label: "Starred", cls: "starish" },
     { k: "noted", label: "Your note" }
@@ -2494,14 +2840,14 @@
   function facetCounts() {
     var blk = Object.create(null), fam = Object.create(null);
     var week = Object.create(null), tag = Object.create(null);
-    var status = { all: 0, unseen: 0, wrong: 0, correct: 0, starred: 0, noted: 0 };
+    var status = { all: 0, unseen: 0, wrong: 0, correct: 0, starred: 0, noted: 0, due: 0 };
     var blkAll = 0, famAll = 0, weekAll = 0, tagAll = 0, shown = 0;
     QUESTIONS.forEach(function (q) {
       var b = blockOk(q), f = famOk(q), w = weekOk(q), t = tagOk(q);
       var sOk = statusOk(q), wk, st;
       /* the search narrows every count the same way the other facets do,
          and it has no dropdown of its own to count for */
-      if (!searchOk(q)) return;
+      if (!searchOk(q) || !lectureOk(q)) return;
       if (f && w && t && sOk) {
         blk[q.block] = (blk[q.block] || 0) + 1;
         blkAll++;
@@ -2530,6 +2876,7 @@
         else status.correct++;
         if (isStarred(q.qid)) status.starred++;
         if (hasMemo(q.qid)) status.noted++;
+        if (statusIs(q, "due")) status.due++;
       }
       if (b && f && w && t && sOk) shown++;
     });
@@ -2573,6 +2920,7 @@
     chips("week", function (k) { return WEEK_LABEL[k] || ("Week " + k); });
     chips("tag", function (k) { return TAG_LABEL[k] || k; });
     chips("status", function (k) { return STATUS_LABEL[k] || k; });
+    chips("lecture", function (k) { return "Lecture: " + (LECTURE_NAME[k] || k); });
     if (searchOn()) {
       live.push({
         label: "\u201c" + filters.search.replace(/^\s+|\s+$/g, "") + "\u201d",
@@ -2596,7 +2944,7 @@
       b.setAttribute("aria-label", "Remove the " + item.label + " filter");
       b.appendChild(el("span", null, item.label));
       b.appendChild(el("span", "x", "\u00d7"));
-      b.addEventListener("click", function () { item.clear(); applyFilters(); });
+      b.addEventListener("click", function () { item.clear(); writeHash(); applyFilters(); });
       list.appendChild(b);
     });
 
@@ -2661,6 +3009,406 @@
     byId("sc-wrong").textContent = wrong;
     byId("sc-star").textContent = starred;
     paintBar();
+    paintInsights();
+  }
+
+  /* ---------- your weak spots ---------- */
+
+  /* Every answer has been stored with its time and its verdict since the bank
+     began, and the scoreboard only ever read four totals back out of that.
+     This panel reads the rest: which lectures you get wrong, how much you have
+     done lately, and where to go next. It is drawn from progress alone, so it
+     needs no new data and nothing leaves the browser.
+
+     Built once at boot and repainted after every answer through paintStats,
+     but only while it is open: a closed panel costs nothing. Every paint is
+     inside a try, because this is a view of the bank and must never be the
+     thing that takes the bank down. */
+  var INS = null;
+  var INS_OPEN_KEY = "pc-insights";
+  var INS_DAYS = 28;
+  var INS_PENDING = false;
+
+  /* a reader's own choice to fold the panel away is remembered per browser;
+     storage refusing to answer leaves it open */
+  function insightsWanted() {
+    try { return window.localStorage.getItem(INS_OPEN_KEY) !== "closed"; }
+    catch (e) { return true; }
+  }
+
+  function buildInsights() {
+    var bar = byId("qbar");
+    if (!bar || !bar.parentNode) return;
+    try {
+      var box = document.createElement("details");
+      box.className = "insights";
+      box.id = "insights";
+      if (insightsWanted()) box.open = true;
+      var sum = el("summary", "ins-sum");
+      sum.appendChild(el("span", "ins-title", "Your weak spots"));
+      var line = el("span", "ins-line");
+      sum.appendChild(line);
+      box.appendChild(sum);
+      var body = el("div", "ins-body");
+      box.appendChild(body);
+      box.addEventListener("toggle", function () {
+        try { window.localStorage.setItem(INS_OPEN_KEY, box.open ? "open" : "closed"); }
+        catch (e) { /* the choice just is not remembered */ }
+        if (box.open) paintInsights();
+      });
+      bar.parentNode.insertBefore(box, bar.nextSibling);
+      INS = { box: box, line: line, body: body };
+    } catch (e) {
+      INS = null;
+    }
+  }
+
+  /* one paint per frame however many answers land in it: "reset all" writes
+     hundreds of records in one go and calls paintStats for each */
+  function paintInsights() {
+    if (!INS || INS_PENDING) return;
+    INS_PENDING = true;
+    var go = function () {
+      INS_PENDING = false;
+      try { drawInsights(); }
+      catch (e) {
+        INS.body.textContent = "";
+        INS.body.appendChild(el("p", "ins-empty",
+          "This summary could not be drawn. Every question still works."));
+      }
+    };
+    if (window.requestAnimationFrame) window.requestAnimationFrame(go);
+    else window.setTimeout(go, 0);
+  }
+
+  function dayStart(ts) {
+    var d = new Date(ts);
+    d.setHours(0, 0, 0, 0);
+    return d.getTime();
+  }
+
+  function pct(n, of) { return of ? Math.round(n / of * 100) : 0; }
+
+  /* the same verdict the scoreboard counts: a question's latest state */
+  function lectureStats() {
+    var lec = Object.create(null), order = [];
+    QUESTIONS.forEach(function (q) {
+      if (!onCurriculum(q)) return;
+      var st = stateOf(q.qid);
+      lectureKeysOf(q).forEach(function (k) {
+        var s = lec[k];
+        if (!s) {
+          s = lec[k] = { key: k, name: LECTURE_NAME[k] || k, week: LECTURE_WEEK[k] || "off",
+                         total: 0, done: 0, right: 0, wrong: 0 };
+          order.push(s);
+        }
+        s.total++;
+        if (st === "correct") { s.done++; s.right++; }
+        else if (st === "wrong") { s.done++; s.wrong++; }
+      });
+    });
+    return order;
+  }
+
+  /* weeks in course order, the questions without one last; lectures within a
+     week by their number where they have one */
+  function byWeek(stats) {
+    var weeks = Object.create(null), keys = [];
+    stats.forEach(function (s) {
+      if (!weeks[s.week]) { weeks[s.week] = []; keys.push(s.week); }
+      weeks[s.week].push(s);
+    });
+    keys.sort(function (a, b) {
+      if (a === "off") return 1;
+      if (b === "off") return -1;
+      return Number(a) - Number(b);
+    });
+    return keys.map(function (w) {
+      var list = weeks[w].slice().sort(function (a, b) {
+        var na = parseFloat(a.name), nb = parseFloat(b.name);
+        if (!isNaN(na) && !isNaN(nb) && na !== nb) return na - nb;
+        if (isNaN(na) !== isNaN(nb)) return isNaN(na) ? 1 : -1;
+        return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+      });
+      return { week: w, lectures: list };
+    });
+  }
+
+  /* answers per day over the last INS_DAYS days, from every attempt kept:
+     a question answered twice is two answers, which is what "how much did I
+     do" means */
+  function activity() {
+    var today = dayStart(Date.now()), first = today - (INS_DAYS - 1) * 864e5;
+    var days = [];
+    for (var i = 0; i < INS_DAYS; i++) days.push({ right: 0, wrong: 0 });
+    Object.keys(progress).forEach(function (qid) {
+      var q = QMAP[qid];
+      if (!q || !onCurriculum(q)) return;
+      attemptsOf(qid).forEach(function (a) {
+        if (!a || typeof a.ts !== "number") return;
+        var d = dayStart(a.ts);
+        if (d < first || d > today) return;
+        var slot = days[Math.round((d - first) / 864e5)];
+        if (!slot) return;
+        if (a.correct) slot.right++; else slot.wrong++;
+      });
+    });
+    return { first: first, days: days };
+  }
+
+  /* Five lectures to go back to: enough answered to mean something, then the
+     lowest share right, then the most wrong. A lecture you have barely
+     started is not a weak spot yet, it is just unstarted. */
+  function reviewNext(stats) {
+    return stats.filter(function (s) { return s.done >= 3 && s.wrong > 0; })
+      .sort(function (a, b) {
+        var pa = a.right / a.done, pb = b.right / b.done;
+        if (pa !== pb) return pa - pb;
+        return b.wrong - a.wrong;
+      })
+      .slice(0, 5);
+  }
+
+  function focusLecture(key, wrongOnly) {
+    if (MODE === "test") setMode("tutor");
+    clearFilters();
+    filters.lecture = [key];
+    if (wrongOnly) filters.status = ["wrong"];
+    writeHash();
+    afterFilterChange();
+    var bar = byId("qbar");
+    if (bar && bar.scrollIntoView) bar.scrollIntoView({ block: "start" });
+  }
+
+  function startReview() {
+    if (MODE === "test") setMode("tutor");
+    clearFilters();
+    filters.status = ["due"];
+    writeHash();
+    afterFilterChange();
+    var bar = byId("qbar");
+    if (bar && bar.scrollIntoView) bar.scrollIntoView({ block: "start" });
+  }
+
+  /* the queue's one line: what is due now and what is coming, with the way
+     in. Nothing due yet still says when the next ones land, so the schedule
+     is visible before it has anything to ask. */
+  function drawQueue(queue) {
+    var wrap = el("div", "ins-queue" + (queue.due ? " has-due" : ""));
+    var txt = el("p", "ins-qtxt");
+    if (queue.due) {
+      txt.appendChild(el("b", null, String(queue.due)));
+      txt.appendChild(document.createTextNode(
+        (queue.due === 1 ? " question you missed is" : " questions you missed are") +
+        " due for review today."));
+    } else {
+      txt.appendChild(document.createTextNode("Nothing due for review today."));
+    }
+    if (queue.soon) {
+      txt.appendChild(document.createTextNode(" " + queue.soon +
+        (queue.soon === 1 ? " more comes" : " more come") + " back this week."));
+    }
+    if (!queue.due && !queue.soon) {
+      txt.appendChild(document.createTextNode(
+        " A question you get wrong comes back after 1, 3, 7 and 21 days until you get it right four times running."));
+    }
+    wrap.appendChild(txt);
+    if (queue.due) {
+      var go = el("button", "ins-go", "Start review");
+      go.type = "button";
+      go.addEventListener("click", startReview);
+      wrap.appendChild(go);
+    }
+    return wrap;
+  }
+
+  function heatClass(s) {
+    if (!s.done) return "is-unseen";
+    var p = s.right / s.done;
+    if (p >= 0.8) return "is-good";
+    if (p >= 0.5) return "is-mid";
+    return "is-bad";
+  }
+
+  function svgEl(tag, attrs) {
+    var n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    Object.keys(attrs || {}).forEach(function (k) { n.setAttribute(k, attrs[k]); });
+    return n;
+  }
+
+  function drawActivity(act) {
+    var wrap = el("div", "ins-card ins-activity");
+    var total = 0, right = 0, peak = 0, lastWeek = 0, lastWeekRight = 0;
+    act.days.forEach(function (d, i) {
+      var n = d.right + d.wrong;
+      total += n; right += d.right;
+      if (n > peak) peak = n;
+      if (i >= INS_DAYS - 7) { lastWeek += n; lastWeekRight += d.right; }
+    });
+    wrap.appendChild(el("h3", "ins-h", "Last four weeks"));
+    var nums = el("p", "ins-nums");
+    nums.appendChild(el("b", null, String(lastWeek)));
+    nums.appendChild(document.createTextNode(
+      (lastWeek === 1 ? " answer" : " answers") + " in the last 7 days" +
+      (lastWeek ? ", " + pct(lastWeekRight, lastWeek) + "% right" : "") + "."));
+    wrap.appendChild(nums);
+    if (!total) {
+      wrap.appendChild(el("p", "ins-empty", "Nothing answered in the last four weeks yet."));
+      return wrap;
+    }
+
+    var W = 560, H = 120, top = 8, base = 96, gap = 3;
+    var bw = (W - gap * (INS_DAYS - 1)) / INS_DAYS;
+    var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + H, "class": "ins-bars",
+                             role: "img",
+                             "aria-label": total + " answers in the last four weeks, " +
+                               pct(right, total) + "% right, at most " + peak + " in one day" });
+    svg.appendChild(svgEl("line", { x1: 0, x2: W, y1: base + 0.5, y2: base + 0.5, "class": "ins-axis" }));
+    act.days.forEach(function (d, i) {
+      var n = d.right + d.wrong;
+      if (!n) return;
+      var x = i * (bw + gap), hr = (base - top) * d.right / peak,
+          hw = (base - top) * d.wrong / peak;
+      var g = svgEl("g", {});
+      var when = new Date(act.first + i * 864e5);
+      var t = svgEl("title", {});
+      t.textContent = when.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" }) +
+        ": " + n + (n === 1 ? " answer, " : " answers, ") + d.right + " right";
+      g.appendChild(t);
+      if (hr > 0) g.appendChild(svgEl("rect", { x: x, y: base - hr, width: bw, height: hr, "class": "ins-right" }));
+      if (hw > 0) g.appendChild(svgEl("rect", { x: x, y: base - hr - hw, width: bw, height: hw, "class": "ins-wrong" }));
+      svg.appendChild(g);
+    });
+    var lab = function (x, anchor, text) {
+      var n = svgEl("text", { x: x, y: H - 4, "text-anchor": anchor, "class": "ins-tick" });
+      n.textContent = text;
+      svg.appendChild(n);
+    };
+    lab(0, "start", "4 weeks ago");
+    lab(W, "end", "Today");
+    wrap.appendChild(svg);
+    var key = el("p", "ins-key");
+    key.appendChild(el("span", "sw sw-right"));
+    key.appendChild(document.createTextNode("Right "));
+    key.appendChild(el("span", "sw sw-wrong"));
+    key.appendChild(document.createTextNode("Wrong"));
+    wrap.appendChild(key);
+    return wrap;
+  }
+
+  function drawNext(list) {
+    var wrap = el("div", "ins-card ins-next");
+    wrap.appendChild(el("h3", "ins-h", "Review next"));
+    if (!list.length) {
+      wrap.appendChild(el("p", "ins-empty",
+        "Answer at least three questions from a lecture and the ones you find hardest show up here."));
+      return wrap;
+    }
+    var ol = el("ol", "ins-list");
+    list.forEach(function (s) {
+      var li = el("li");
+      var name = el("span", "ins-lec", s.name);
+      var meta = el("span", "ins-meta",
+        (s.week === "off" ? "" : "Week " + s.week + " · ") +
+        s.right + " of " + s.done + " right");
+      var go = el("button", "ins-go", "Redo " + s.wrong + " wrong");
+      go.type = "button";
+      go.addEventListener("click", function () { focusLecture(s.key, true); });
+      var all = el("button", "ins-go is-quiet", "All " + s.total);
+      all.type = "button";
+      all.setAttribute("aria-label", "Show all " + s.total + " questions from " + s.name);
+      all.addEventListener("click", function () { focusLecture(s.key, false); });
+      var txt = el("span", "ins-txt");
+      txt.appendChild(name);
+      txt.appendChild(meta);
+      li.appendChild(txt);
+      var acts = el("span", "ins-acts");
+      acts.appendChild(go);
+      acts.appendChild(all);
+      li.appendChild(acts);
+      ol.appendChild(li);
+    });
+    wrap.appendChild(ol);
+    return wrap;
+  }
+
+  function drawHeat(weeks) {
+    var wrap = el("div", "ins-card ins-heat");
+    wrap.appendChild(el("h3", "ins-h", "Every lecture, by week"));
+    var key = el("p", "ins-key");
+    [["is-good", "80% or more right"], ["is-mid", "50 to 79%"],
+     ["is-bad", "under 50%"], ["is-unseen", "not started"]].forEach(function (p) {
+      key.appendChild(el("span", "sw " + p[0]));
+      key.appendChild(document.createTextNode(p[1] + " "));
+    });
+    wrap.appendChild(key);
+    var grid = el("div", "ins-grid"), lastBlock = null;
+    weeks.forEach(function (w) {
+      /* the pooled page runs twenty weeks, so each block names itself where
+         its first week starts */
+      var blk = TERM && w.week !== "off" ? blockForWeek(Number(w.week)) : null;
+      if (blk && blk !== lastBlock) {
+        lastBlock = blk;
+        grid.appendChild(el("p", "ins-blk", BLOCK_NAME[blk] || blk));
+      }
+      var row = el("div", "ins-row");
+      row.appendChild(el("span", "ins-wk", w.week === "off" ? "Other" : "Wk " + w.week));
+      var cells = el("span", "ins-cells");
+      w.lectures.forEach(function (s) {
+        var b = el("button", "ins-cell " + heatClass(s));
+        b.type = "button";
+        var num = /^(\d+(?:\.\d+)?)\s*-/.exec(s.name);
+        b.textContent = num ? num[1] : "•";
+        var said = s.name + ": " + (s.done
+          ? s.right + " of " + s.done + " right, " + s.done + " of " + s.total + " answered"
+          : "none of " + s.total + " answered");
+        b.title = said;
+        b.setAttribute("aria-label", said + ". Show these questions.");
+        b.addEventListener("click", function () { focusLecture(s.key, false); });
+        cells.appendChild(b);
+      });
+      row.appendChild(cells);
+      grid.appendChild(row);
+    });
+    wrap.appendChild(grid);
+    return wrap;
+  }
+
+  function drawInsights() {
+    if (!INS) return;
+    var stats = lectureStats(), done = 0, right = 0;
+    QUESTIONS.forEach(function (q) {
+      if (!onCurriculum(q)) return;
+      var st = stateOf(q.qid);
+      if (st === "correct") { done++; right++; }
+      else if (st === "wrong") done++;
+    });
+    var next = reviewNext(stats), queue = queueCounts();
+    INS.line.textContent = !done ? "Answer a few questions to see where you stand"
+      : queue.due ? queue.due + (queue.due === 1 ? " question" : " questions") + " due for review"
+      : next.length ? "Weakest: " + next[0].name + " (" + pct(next[0].right, next[0].done) + "% right)"
+      : done + " answered, " + pct(right, done) + "% right";
+    if (!INS.box.open) return;
+
+    var body = INS.body;
+    body.textContent = "";
+    if (!stats.length) {
+      body.appendChild(el("p", "ins-empty", "No questions are loaded for this page."));
+      return;
+    }
+    /* a fresh browser gets one line rather than an empty chart and a map of
+       two hundred blank squares */
+    if (!done) {
+      body.appendChild(el("p", "ins-empty",
+        "Nothing answered yet. As you go, this shows the lectures you miss most, what you have done in the last four weeks, and every lecture coloured by how you are doing."));
+      return;
+    }
+    body.appendChild(drawQueue(queue));
+    var top = el("div", "ins-top");
+    top.appendChild(drawNext(next));
+    top.appendChild(drawActivity(activity()));
+    body.appendChild(top);
+    body.appendChild(drawHeat(byWeek(stats)));
   }
 
   /* ---------- boot ---------- */
@@ -2835,7 +3583,7 @@
     }
 
     buildMulti("f-status", "status", "statuses", STATUS_DEFS.map(function (d) {
-      return { k: d.k, label: d.k === "all" ? "Any status" : d.label };
+      return { k: d.k, label: d.k === "all" ? "Any status" : d.label, title: d.title };
     }));
 
     /* The search box. Guarded, because a page cached from before it shipped
@@ -3264,6 +4012,7 @@
     readHash();
     buildMasthead();
     buildBar();
+    buildInsights();
     buildStream();
     paintStats();
     applyFilters();
@@ -3280,6 +4029,36 @@
       note("This browser will not let the page use local storage, so answers cannot be saved. Every question still works.");
     }
   }
+
+  /* sync.js has written what another device answered into storage. Read it
+     back and repaint only the questions whose record or note changed: a
+     question opened with Show answer keeps no record, and repainting it
+     would fold it shut under the reader. */
+  function adopt() {
+    if (!booted || !QUESTIONS.length) return;
+    var before = progress;
+    progress = Object.create(null);
+    load();
+    var oldMemos = memos;
+    loadMemos();
+    var changed = [];
+    QUESTIONS.forEach(function (q) {
+      var a = before[q.qid], b = progress[q.qid];
+      if (!a !== !b || (a && b && (a.lastTs !== b.lastTs || a.flagged !== b.flagged))) changed.push(q.qid);
+      if ((oldMemos[q.qid] || "") !== (memos[q.qid] || "")) syncMemoCard(q.qid);
+    });
+    if (!changed.length) return;
+    changed.forEach(paintQuestion);
+    if (ANCHOR && !progress[ANCHOR]) { ANCHOR = null; RESUMING = false; paintPos(); }
+    paintStats();
+    applyFilters();
+  }
+
+  window.addEventListener("portal:synced", function (e) {
+    if (e.detail && e.detail.prefix !== STORE_PREFIX) return;
+    try { adopt(); }
+    catch (err) { if (window.console) console.warn("adopt:", err); }
+  });
 
   /* the tab strip calls this the first time Questions is opened; a second call
      is a no-op so switching tabs never refetches or rebuilds the stream */

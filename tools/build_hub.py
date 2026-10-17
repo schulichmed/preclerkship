@@ -67,13 +67,16 @@ TEMPLATE = u"""<!DOCTYPE html>
 <link rel="stylesheet" href="{base_css}">
 <link rel="stylesheet" href="{portal_css}">
 <style>
-:root{{--q-accent:#1f4e5f;--q-accent-soft:#dfecf0;--q-accent-ink:#193f4d;}}
+:root{{--q-accent:#4f2683;--q-accent-soft:#e9def8;--q-accent-ink:#3f1e69;}}
 </style>
 {cf}
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 
 <div class="pom2-page">
+
+<main id="content" tabindex="-1">
 
 <div class="page-hero">
 <div class="hero-corner">
@@ -125,7 +128,7 @@ It includes:
 <ul>
 <li><strong>Notes:</strong> Summary notes, charts, flowcharts, illustrations, and Schulich Reviews, organized by block, week, and lecture. Any note can be exported to PDF and annotated.</li>
 <li><strong>Anki:</strong> An updated version of Christina&rsquo;s Anki deck, organized by block, week, and lecture.</li>
-<li><strong>Question bank:</strong> A Q-bank that students can filter by block, week, or source, then use to make their own custom practice tests. Progress is saved, so you can revisit questions you got wrong. Every question is directly from our curriculum, including module questions and weekly quizzes, or from previous student Q-banks, including Hippo Council, Schulich Reviews, and the Pre-Clerkship Workbook. New questions come from DSSGs, in-class sessions, and modules, not low-yield AI-generated trivia.</li>
+<li><strong>Question bank:</strong> A Q-bank that students can filter by block, week, or source, then use to make their own custom practice tests. Progress is saved, so you can revisit questions you got wrong.</li>
 </ul>
 
 <p>
@@ -184,7 +187,7 @@ of that week.
 <strong>Or just email.</strong> You do not need GitHub, or any of the above, to get in
 touch. Anything at all &mdash; a correction, a question, a request, a course you want
 added &mdash; goes to
-<a href="mailto:schulichmedfriends@gmail.com">schulichmedfriends@gmail.com</a>.
+<a href="mailto:schulichmedfriend@gmail.com">schulichmedfriend@gmail.com</a>.
 </p>
 
 </div>
@@ -195,18 +198,24 @@ added &mdash; goes to
 <div class="body">
 
 <p>
-A collaborative initiative by the Schulich <strong>Open-Source Medicine</strong> and
-<strong>AI in Medicine</strong> clubs.
+<strong>Founder and co-developer:</strong> Noor Simsam (Class of 2029).
 </p>
 
 <p>
-<strong>Co-developers.</strong> Noor Simsam and Nora Treleaven, Class of 2029.
+<strong>Co-developers (Class of 2029):</strong> Nora Treleaven and Ashish Saragadam.
 </p>
 
 <p>
-<strong>Contributors.</strong> Ashish Saragadam, Negar Goodarzynejad, Jessica Wang,
-Tamjeed Nawaz, Yasmine Madan, Class of 2029.
-Wessam Al Jawhri, Ella Boone, Class of 2030.
+<strong>Co-developers (Class of 2030):</strong> Wessam Al Jawhri and Ella Boone.
+</p>
+
+<p>
+<strong>Contributors.</strong> Jessica Wang, Class of 2029.
+</p>
+
+<p>
+<strong>Special thanks</strong> to members of the Schulich Open-Source Medicine and
+AI in Medicine clubs.
 </p>
 
 <p>
@@ -219,7 +228,7 @@ Christina&rsquo;s Anki, Hippo Council Qbank, Schulich Reviews.
 </p>
 
 <p>
-Want to be added to the credits? Contribute or make some edits via a GitHub PR:
+Want to be added to the credits? Contribute or suggest an edit through a GitHub pull request:
 instructions are under <strong>Open source: contribute or customize</strong> above.
 </p>
 
@@ -227,6 +236,8 @@ instructions are under <strong>Open source: contribute or customize</strong> abo
 </details>
 
 </div>
+
+</main>
 
 {footer}
 
@@ -240,13 +251,13 @@ instructions are under <strong>Open source: contribute or customize</strong> abo
 def main():
     q, w, l = totals()
     html = TEMPLATE.format(
-        favicon=portal.favicon("PC", "1f4e5f"), fonts=portal.FONTS, nocache=portal.NOCACHE,
+        favicon=portal.favicon("PC", "4f2683", ""), fonts=portal.FONTS, nocache=portal.NOCACHE,
         base_css="base.css?v=" + portal.digest("base.css"),
         portal_css="portal.css?v=" + portal.digest("portal.css"),
-        cf=portal.CF, cards=cards(), footer=portal.footer(),
+        cf=portal.CF + portal.sync_tag(""), cards=cards(), footer=portal.footer(),
         theme=portal.THEME_SCRIPT, toggle=portal.THEME_BTN,
         presence=portal.PRESENCE_SLOT if portal.PRESENCE_URL else "")
-    io.open("index.html", "w", encoding="utf-8", newline="\n").write(html)
+    io.open("index.html", "w", encoding="utf-8", newline="\n").write(portal.share(html, ""))
     print("index.html: %d courses, %d built, %d questions, %d/%d lecture notes"
           % (len(portal.COURSES),
              len([c for c in portal.COURSES if c["blocks"]]), q, w, l))

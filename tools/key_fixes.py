@@ -26,6 +26,7 @@ WHAT AN ENTRY MAY SAY
       "convert":    "mcq",        make a self-marked question a scored one
       "unscorable": true,         no defensible key: show it, don't score it
       "option":     {"B": "..."}, repair an option's text
+      "stem":       "<p>...</p>", replaces the stem (when its wording, not its key, was wrong)
       "lead":       "<p>...</p>", replaces the first paragraph of the answer
       "why":        "..."         required: the lecture evidence, shown to readers
     }
@@ -73,6 +74,10 @@ def apply(q, fix):
             if o["letter"] == letter and o["html"] != html.escape(text, quote=False):
                 o["html"] = html.escape(text, quote=False)
                 changed.append("option %s text" % letter)
+    stem = fix.get("stem")
+    if stem and q.get("stem") != stem:
+        q["stem"] = stem
+        changed.append("stem")
     lead = fix.get("lead")
     if lead:
         a = q.get("answer") or ""

@@ -22,8 +22,8 @@ import io, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import portal
 
-FAVICON = {"fom": ("FM", "1f4e5f"), "pom2": ("P2", "84223b"),
-           "pom1": ("P1", "6b5a2f"), "t2c": ("T2C", "3f4a5a")}
+FAVICON = {"fom": ("FM", "4f2683"), "pom2": ("P2", "7a3fb0"),
+           "pom1": ("P1", "6b3fb8"), "t2c": ("T2C", "3a2a6e")}
 
 EMPTY_PROSE = u"""<div class="prose">
 
@@ -42,7 +42,7 @@ def existing(course):
     if not os.path.exists(p):
         return course["blurb"], EMPTY_PROSE
     s = io.open(p, encoding="utf-8").read()
-    hero = re.search(r'<div class="page-hero">\s*<h1>.*?</h1>\s*(.*?)\s*</div>', s, re.S)
+    hero = re.search(r'<div class="page-hero[^"]*">\s*<h1>.*?</h1>\s*(.*?)\s*</div>', s, re.S)
     prose = part(s, '<div class="prose">')
     return (hero.group(1) if hero else course["blurb"]), prose
 
@@ -96,20 +96,23 @@ TEMPLATE = u"""<!DOCTYPE html>
 <link rel="stylesheet" href="{base_css}">
 <link rel="stylesheet" href="{portal_css}">
 <style>
-:root{{--q-accent:{accent};--q-accent-soft:#e6e6e6;--q-accent-ink:{accent};}}
+:root{{--q-accent:{accent};--q-accent-soft:#ede5f9;--q-accent-ink:{accent};}}
 </style>
 {cf}
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 
 <div class="pom2-page">
 
-<div class="topline">
+<header class="topline">
 {uplink}
 {toggle}
-</div>
+</header>
 
-<div class="page-hero">
+<main id="content" tabindex="-1">
+
+<div class="page-hero compact">
 <h1>{short}.</h1>
 {hero}
 </div>
@@ -119,6 +122,8 @@ TEMPLATE = u"""<!DOCTYPE html>
 </div>
 
 {prose}
+
+</main>
 
 {footer}
 
@@ -137,12 +142,12 @@ def main():
             short=course["short"], desc=course["blurb"],
             favicon=portal.favicon(label, fill), fonts=portal.FONTS, nocache=portal.NOCACHE,
             base_css=portal.asset("base.css"), portal_css=portal.asset("portal.css"),
-            accent=course["accent"], cf=portal.CF, uplink=portal.uplink(1),
+            accent=course["accent"], cf=portal.CF + portal.sync_tag(), uplink=portal.uplink(1),
             hero=hero, cards=cards(course) or "",
             prose=prose, footer=portal.footer(),
             theme=portal.THEME_SCRIPT, toggle=portal.THEME_BTN)
         io.open(os.path.join(course["slug"], "index.html"), "w",
-                encoding="utf-8", newline="\n").write(html)
+                encoding="utf-8", newline="\n").write(portal.share(html, course["slug"] + "/"))
         q, w, l = portal.counts(course)
         print("%-5s %d blocks  %d/%d lecture notes  %d questions"
               % (course["slug"], len(course["blocks"]), w, l, q))

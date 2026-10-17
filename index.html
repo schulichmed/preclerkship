@@ -5,11 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Schulich Pre-clerkship</title>
 <meta name="description" content="Notes and practice questions for the pre-clerkship years at Schulich: Foundations of Medicine, Principles of Medicine 1 and 2, and Transition to Clerkship.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Schulich Pre-clerkship">
+<meta property="og:title" content="Schulich Pre-clerkship">
+<meta property="og:description" content="Notes and practice questions for the pre-clerkship years at Schulich: Foundations of Medicine, Principles of Medicine 1 and 2, and Transition to Clerkship.">
+<meta property="og:url" content="https://schulichmed.github.io/preclerkship/">
+<meta property="og:image" content="https://schulichmed.github.io/preclerkship/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="noindex, nofollow">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231f4e5f'/><text x='16' y='23' font-family='Georgia,serif' font-size='17' font-weight='600' fill='%23ffffff' text-anchor='middle'>PC</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%234f2683'/><text x='16' y='23' font-family='Georgia,serif' font-size='17' font-weight='600' fill='%23ffffff' text-anchor='middle'>PC</text></svg>">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
+<meta name="theme-color" content="#ffffff">
 <script>
 (function(){
   var root=document.documentElement,KEY="pc-theme",stored=null,mq=null;
@@ -19,6 +31,8 @@
   function os(){return mq&&mq.matches?"dark":"light";}
   function apply(t){
     root.setAttribute("data-theme",t);
+    var m=document.querySelector('meta[name="theme-color"]');
+    if(m)m.setAttribute("content",t==="dark"?"#140c22":"#ffffff");
     var b=document.getElementById("theme-btn");
     if(!b)return;
     b.setAttribute("aria-pressed",t==="dark"?"true":"false");
@@ -31,21 +45,31 @@
   else if(mq&&mq.addListener)mq.addListener(follow);
   document.addEventListener("DOMContentLoaded",function(){apply(root.getAttribute("data-theme"));});
   document.addEventListener("click",function(e){
+    var s=e.target&&e.target.closest?e.target.closest(".skip"):null;
+    if(s){
+      var c=document.getElementById("content");
+      if(c){e.preventDefault();c.focus();c.scrollIntoView();}
+      return;
+    }
     var b=e.target&&e.target.closest?e.target.closest("#theme-btn"):null;
     if(!b)return;
     stored=root.getAttribute("data-theme")==="dark"?"light":"dark";
     try{localStorage.setItem(KEY,stored);}catch(e2){}
-    apply(stored);
+    /* a crossfade between the themes where the browser can draw one and the
+       reader has not asked for less motion; otherwise the switch is instant */
+    var calm=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if(document.startViewTransition&&!calm)document.startViewTransition(function(){apply(stored);});
+    else apply(stored);
   });
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="base.css?v=5162448b">
-<link rel="stylesheet" href="portal.css?v=8ec81b26">
+<link rel="stylesheet" href="base.css?v=5f2f6402">
+<link rel="stylesheet" href="portal.css?v=4d481a6b">
 <style>
-:root{--q-accent:#1f4e5f;--q-accent-soft:#dfecf0;--q-accent-ink:#193f4d;}
+:root{--q-accent:#4f2683;--q-accent-soft:#e9def8;--q-accent-ink:#3f1e69;}
 </style>
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d66f0003318d42f1bd62e0a2c3e216af"}'></script>
 <script>
@@ -78,10 +102,15 @@
   if(!document.hidden)start();
 })();
 </script>
+<script>window.PORTAL_SYNC_CFG = {"firebase": {"apiKey": "AIzaSyC-WGCeL_hhxHK7oKuvomdVrJ2unxEoi2k", "authDomain": "medfriend-schulich.firebaseapp.com", "projectId": "medfriend-schulich", "storageBucket": "medfriend-schulich.firebasestorage.app", "messagingSenderId": "678233400126", "appId": "1:678233400126:web:53adbac33c626a0967426f"}, "stores": ["nsq.fom.v1.", "nsq.pom1.v1.", "nsq.v1.", "nsq.t2c.v1."]};</script>
+<script defer src="sync.js?v=a6b059c2"></script>
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 
 <div class="pom2-page">
+
+<main id="content" tabindex="-1">
 
 <div class="page-hero">
 <div class="hero-corner">
@@ -96,34 +125,34 @@ pre-clerkship.
 </div>
 
 <div class="block-grid hub-grid">
-<a class="block-card" href="fom/index.html" style="--hue:#1f4e5f">
+<a class="block-card" href="fom/index.html" style="--hue:#4f2683">
 <p class="bmeta">Year 1 &middot; 4 blocks</p>
 <h2>Foundations of Medicine</h2>
 <p>The first fifteen weeks: what a physician does, then the body from cells up, then blood, then infection and immunity.</p>
 <span class="tally">
 <span><b>151</b> lecture notes</span>
-<span><b>2,072</b> practice questions</span>
+<span><b>1,532</b> practice questions</span>
 </span>
 </a>
-<a class="block-card" href="pom1/index.html" style="--hue:#6b5a2f">
+<a class="block-card" href="pom1/index.html" style="--hue:#6b3fb8">
 <p class="bmeta">Year 1 &middot; 5 blocks</p>
 <h2>Principles of Medicine 1</h2>
 <p>The second half of first year, system by system.</p>
 <span class="tally">
 <span><b>133</b> lecture notes</span>
-<span><b>2,302</b> practice questions</span>
+<span><b>1,534</b> practice questions</span>
 </span>
 </a>
-<a class="block-card" href="pom2/index.html" style="--hue:#84223b">
+<a class="block-card" href="pom2/index.html" style="--hue:#7a3fb0">
 <p class="bmeta">Year 2 &middot; 5 blocks</p>
 <h2>Principles of Medicine 2</h2>
 <p>The five blocks of second year, with a written note for every lecture that has one and a coverage map for the rest.</p>
 <span class="tally">
 <span><b>222</b> lecture notes</span>
-<span><b>1,925</b> practice questions</span>
+<span><b>1,637</b> practice questions</span>
 </span>
 </a>
-<a class="block-card" href="t2c/index.html" style="--hue:#3f4a5a">
+<a class="block-card" href="t2c/index.html" style="--hue:#3a2a6e">
 <p class="bmeta">Year 2 &middot; 6 blocks</p>
 <h2>Transition to Clerkship</h2>
 <p>The bridge into clerkship at the end of second year.</p>
@@ -168,7 +197,7 @@ It includes:
 <ul>
 <li><strong>Notes:</strong> Summary notes, charts, flowcharts, illustrations, and Schulich Reviews, organized by block, week, and lecture. Any note can be exported to PDF and annotated.</li>
 <li><strong>Anki:</strong> An updated version of Christina&rsquo;s Anki deck, organized by block, week, and lecture.</li>
-<li><strong>Question bank:</strong> A Q-bank that students can filter by block, week, or source, then use to make their own custom practice tests. Progress is saved, so you can revisit questions you got wrong. Every question is directly from our curriculum, including module questions and weekly quizzes, or from previous student Q-banks, including Hippo Council, Schulich Reviews, and the Pre-Clerkship Workbook. New questions come from DSSGs, in-class sessions, and modules, not low-yield AI-generated trivia.</li>
+<li><strong>Question bank:</strong> A Q-bank that students can filter by block, week, or source, then use to make their own custom practice tests. Progress is saved, so you can revisit questions you got wrong.</li>
 </ul>
 
 <p>
@@ -227,7 +256,7 @@ of that week.
 <strong>Or just email.</strong> You do not need GitHub, or any of the above, to get in
 touch. Anything at all &mdash; a correction, a question, a request, a course you want
 added &mdash; goes to
-<a href="mailto:schulichmedfriends@gmail.com">schulichmedfriends@gmail.com</a>.
+<a href="mailto:schulichmedfriend@gmail.com">schulichmedfriend@gmail.com</a>.
 </p>
 
 </div>
@@ -238,18 +267,24 @@ added &mdash; goes to
 <div class="body">
 
 <p>
-A collaborative initiative by the Schulich <strong>Open-Source Medicine</strong> and
-<strong>AI in Medicine</strong> clubs.
+<strong>Founder and co-developer:</strong> Noor Simsam (Class of 2029).
 </p>
 
 <p>
-<strong>Co-developers.</strong> Noor Simsam and Nora Treleaven, Class of 2029.
+<strong>Co-developers (Class of 2029):</strong> Nora Treleaven and Ashish Saragadam.
 </p>
 
 <p>
-<strong>Contributors.</strong> Ashish Saragadam, Negar Goodarzynejad, Jessica Wang,
-Tamjeed Nawaz, Yasmine Madan, Class of 2029.
-Wessam Al Jawhri, Ella Boone, Class of 2030.
+<strong>Co-developers (Class of 2030):</strong> Wessam Al Jawhri and Ella Boone.
+</p>
+
+<p>
+<strong>Contributors.</strong> Jessica Wang, Class of 2029.
+</p>
+
+<p>
+<strong>Special thanks</strong> to members of the Schulich Open-Source Medicine and
+AI in Medicine clubs.
 </p>
 
 <p>
@@ -262,7 +297,7 @@ Christina&rsquo;s Anki, Hippo Council Qbank, Schulich Reviews.
 </p>
 
 <p>
-Want to be added to the credits? Contribute or make some edits via a GitHub PR:
+Want to be added to the credits? Contribute or suggest an edit through a GitHub pull request:
 instructions are under <strong>Open source: contribute or customize</strong> above.
 </p>
 
@@ -271,8 +306,10 @@ instructions are under <strong>Open source: contribute or customize</strong> abo
 
 </div>
 
+</main>
+
 <footer>
-For any inquiries, email <a href="mailto:schulichmedfriends@gmail.com">schulichmedfriends@gmail.com</a>
+<p><strong>Unofficial and student-run.</strong> For any inquiries, email <a href="mailto:schulichmedfriend@gmail.com">schulichmedfriend@gmail.com</a>.</p>
 </footer>
 
 </div>

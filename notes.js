@@ -728,7 +728,7 @@
       }
       frag.appendChild(wb);
       (w.lectures || []).forEach(function (lec) {
-        frag.appendChild(lec.hasNote === true ? shared().build(lec, { block: BLOCK.name, slug: BLOCK.slug, onPrint: printNote })
+        frag.appendChild(lec.hasNote === true ? shared().build(lec, { block: BLOCK.name, slug: BLOCK.slug, onPrint: printNote, lecq: BLOCK.lecq })
                          : lec.coveredBy ? buildCovered(lec) : buildGap(lec));
       });
     });
