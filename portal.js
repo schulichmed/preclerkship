@@ -703,7 +703,7 @@
      one. The reasons differ by kind - a note has no answer key - and are
      repeated in the worker and report_to_pr.py: change all three together. */
   var REPORT_URL = (BLOCK && BLOCK.report) || "";
-  var CONTACT = (BLOCK && BLOCK.contact) || "schulichmedfriends@gmail.com";
+  var CONTACT = (BLOCK && BLOCK.contact) || "schulichmedfriend@gmail.com";
   var REASONS = {
     question: [
       ["wrong-key", "The answer key is wrong"],

@@ -187,7 +187,7 @@ of that week.
 <strong>Or just email.</strong> You do not need GitHub, or any of the above, to get in
 touch. Anything at all &mdash; a correction, a question, a request, a course you want
 added &mdash; goes to
-<a href="mailto:schulichmedfriends@gmail.com">schulichmedfriends@gmail.com</a>.
+<a href="mailto:schulichmedfriend@gmail.com">schulichmedfriend@gmail.com</a>.
 </p>
 
 </div>
@@ -198,18 +198,21 @@ added &mdash; goes to
 <div class="body">
 
 <p>
-A collaborative initiative by the Schulich <strong>Open-Source Medicine</strong> and
-<strong>AI in Medicine</strong> clubs.
+<strong>Founder and co-developer.</strong> Noor Simsam, Class of 2029.
 </p>
 
 <p>
-<strong>Co-developers.</strong> Noor Simsam, Nora Treleaven and Ashish Saragadam, Class of 2029.
+<strong>Co-developers.</strong> Nora Treleaven and Ashish Saragadam, Class of 2029.
+Wessam Al Jawhri and Ella Boone, Class of 2030.
 </p>
 
 <p>
-<strong>Contributors.</strong> Negar Goodarzynejad, Jessica Wang,
-Tamjeed Nawaz, Yasmine Madan, Class of 2029.
-Wessam Al Jawhri, Ella Boone, Class of 2030.
+<strong>Contributors.</strong> Jessica Wang, Class of 2029.
+</p>
+
+<p>
+<strong>Special thanks</strong> to members of the Schulich Open-Source Medicine and
+AI in Medicine clubs.
 </p>
 
 <p>
@@ -222,7 +225,7 @@ Christina&rsquo;s Anki, Hippo Council Qbank, Schulich Reviews.
 </p>
 
 <p>
-Want to be added to the credits? Contribute or make some edits via a GitHub PR:
+Want to be added to the credits? Contribute or suggest an edit through a GitHub pull request:
 instructions are under <strong>Open source: contribute or customize</strong> above.
 </p>
 

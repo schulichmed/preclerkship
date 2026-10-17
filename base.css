@@ -202,7 +202,7 @@ a{
    shows the reader's Google photo (or initial) with a dot for the sync state,
    and opens a small panel under it. */
 .sync-wrap{position:relative;display:inline-flex;flex:none;}
-.blocknav .sync-wrap{margin-left:auto;}
+.blocknav .sync-wrap,.topline .sync-wrap{margin-left:auto;}
 .blocknav .sync-wrap + .theme-btn{margin-left:0;}
 .sync-btn{position:relative;overflow:visible;}
 .sync-btn > *{pointer-events:none;}

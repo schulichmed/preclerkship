@@ -430,7 +430,7 @@ def uplink(depth=None):
     return '<a class="uplink" href="%s">&larr; All courses</a>' % HUB_URL
 
 
-CONTACT = "schulichmedfriends@gmail.com"
+CONTACT = "schulichmedfriend@gmail.com"
 # Where the bank's Report button posts. Empty until the relay in
 # tools/report-worker/ is deployed; empty, the button emails CONTACT instead.
 REPORT_URL = "https://preclerkship-report.schulichmed.workers.dev/"
