@@ -47,7 +47,6 @@ tabs take their block, their week and their lecture list from it.
 Every question keeps the set it arrived in, and the **Question set** filter is
 that split:
 
-- **Weekly quizzes** (124): the week's quiz as it was sat, kept whole.
 - **Meds 2024 bank** (546): the student-written bank the Class of 2024 Academic
   Directors built in May 2021, re-filed week by week by the Meds 2025
   volunteers. About half the cardiology questions and a handful of the

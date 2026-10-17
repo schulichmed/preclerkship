@@ -85,13 +85,9 @@ SECTIONS = [
 ]
 SEC_BY_HEAD = dict((h, k) for h, k, _l in SECTIONS)
 SEC_LABEL = dict((k, l) for _h, k, l in SECTIONS)
-SEC_ORDER = [k for _h, k, _l in SECTIONS]
+SEC_ORDER = [k for _h, k, _l in SECTIONS if k not in ("module", "ra", "sa")]
 
 SEC_META = {
-    "module": (u"The knowledge checks inside the week's asynchronous learning "
-               u"modules, transcribed into the Meds 2025 question bank."),
-    "ra": u"The week's Readiness Assessment, as it was sat.",
-    "sa": u"The week's Self-Assessment, as it was released.",
     "meds2024": (u"The student-written, instructor-approved bank built by the Class of "
                  u"2024 Academic Directors (December 2020) and re-filed per week by the "
                  u"Meds 2025 volunteers."),

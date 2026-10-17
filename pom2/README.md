@@ -198,10 +198,9 @@ embedding the same picture share one file.
 
 The code is MIT, see [LICENSE](LICENSE).
 
-The study content under `data/` has its own history. The 700 practice questions
-came out of shared course material: a student-written workbook handed down through
-the Schulich classes of 2015 to 2025 and questions written from the case and small-group
-sessions.
+The study content under `data/` has its own history. The 1,179 practice questions
+came out of student study material: a student-written workbook handed down through
+the Schulich classes of 2015 to 2025 and student-written review questions.
 
 These are resources students already pass between years. Use them, correct them,
 add to them. Where a question came out of a peer-written bank its errors are flagged

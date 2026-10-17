@@ -219,7 +219,7 @@ def cmd_merge(dry=False):
                     "title": FLAG_TITLE,
                     "html": "<p>The source gave the letter and no reasoning. This "
                             "explanation is reasoned from <em>%s</em>, not transcribed "
-                            "from an official key. Check it against the lecture before "
+                            "from an answer key. Check it against the lecture before "
                             "relying on it.</p>" % where})
                 q["flags"] = flags
                 n += 1
