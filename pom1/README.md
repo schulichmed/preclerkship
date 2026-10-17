@@ -16,7 +16,8 @@ question-set families, and the key its progress is stored under.
 
 **2,109 practice questions** across five blocks, weeks 1 to 17, transcribed out
 of the block Question Bank PDFs and the Pre-Clerkship Workbook rather than
-rewritten. None of it is AI-generated.
+rewritten. The questions are not AI-written; where a source gave no explanation, one
+has been drafted with AI help and is marked as reasoned.
 
 | Block | Weeks | Questions | Lecture notes |
 |---|---|---|---|

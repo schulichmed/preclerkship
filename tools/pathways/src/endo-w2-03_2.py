@@ -1,6 +1,6 @@
 """Thyroid function pathway (Endo Week 2, 03): hypothyroid vs thyrotoxic, then the cause.
 
-Facts from Dr. Morrison's thyroid dysfunction deck (and the iodine slides of the
+Facts from the thyroid dysfunction deck (and the iodine slides of the
 clinical approach deck). Presentation is shared on each side, so it sits once per
 side; thyrotoxicosis then splits on radioactive iodine (RAI) uptake.
 """

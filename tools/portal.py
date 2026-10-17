@@ -42,12 +42,12 @@ COURSES = [
         ],
         "families": [
             {"key": "ra", "name": u"Readiness assessments",
-             "tip": u"Readiness Assessments, as sat",
-             "blurb": u"The week's Readiness Assessment as it was sat. Several weeks "
+             "tip": u"Readiness Assessments",
+             "blurb": u"Questions from the week's Readiness Assessment. Several weeks "
                       u"never had one, and those say so rather than going missing."},
             {"key": "sa", "name": u"Self-assessments",
-             "tip": u"Self-Assessments, as released",
-             "blurb": u"The week's Self-Assessment as it was released."},
+             "tip": u"Self-Assessments",
+             "blurb": u"Questions from the week's Self-Assessment."},
             {"key": "meds2024", "name": u"Meds 2024 bank",
              "tip": u"Class of 2024 bank, mostly faculty-edited",
              "blurb": u"The student-written, instructor-approved bank built by the Class "
@@ -140,8 +140,8 @@ COURSES = [
             ("psych", 5, u"Psychiatry",      u"17–20"),
         ],
         "families": [
-            {"key": "meds2029", "name": u"Clinical Questions",
-             "blurb": u"Clinical Questions."},
+            {"key": "meds2029", "name": u"Case-Based Questions",
+             "blurb": u"Case-Based Questions."},
             {"key": "reviews", "name": u"Schulich Reviews",
              "tip": u"Upper-year exam review sessions",
              "blurb": u"The Schulich Reviews sessions, run by upper years before each exam. "
@@ -436,9 +436,18 @@ CONTACT = "schulichmedfriend@gmail.com"
 REPORT_URL = "https://preclerkship-report.schulichmed.workers.dev/"
 
 
+# Every page carries this, so it is said once, here.
+NOTICE = (u"<p><strong>Unofficial and student-run.</strong> Not affiliated with or "
+          u"endorsed by the Schulich School of Medicine &amp; Dentistry or Western "
+          u"University. A study aid only: it may contain errors, it is not medical "
+          u"advice, and your lectures are the authority. Explanations marked "
+          u"<em>reasoned</em> were drafted with AI help and are not faculty-checked.</p>")
+
+
 def footer():
-    return ('<footer>\nFor any inquiries, email '
-            '<a href="mailto:%s">%s</a>\n</footer>' % (CONTACT, CONTACT))
+    return ('<footer>\n%s\n<p>To report an error, ask a question or request that '
+            'something be removed, email <a href="mailto:%s">%s</a>.</p>\n</footer>'
+            % (NOTICE, CONTACT, CONTACT))
 
 
 def favicon(label="PC", fill="4f2683", base="../"):

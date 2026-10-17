@@ -183,7 +183,7 @@ spec = {
       "after transition: ovariectomy can be considered · breast exams or mammograms as tissue remains"]},
   {"x": 505, "y": p_y, "w": 480, "title": "Terms + screening", "items": [
       "SEX: biological · GENDER: psychological · GENDER IDENTITY: the person's own · SEXUAL ORIENTATION: who one is attracted to",
-      "breast cancer on estrogen: Stein ↑ risk · WPATH no ↑ or inconclusive",
+      "breast cancer on estrogen: lecture: ↑ risk · WPATH no ↑ or inconclusive",
       "bone density: transgender females at baseline · transgender males if T stopped or not taken",
       "cancer screening as usual for tissues present (cervix, breasts)"]}],
 }

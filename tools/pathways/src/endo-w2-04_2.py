@@ -1,6 +1,6 @@
 """Calcium disorders pathway (Endo Week 2, 04): high vs low calcium, sorted by PTH and phosphate.
 
-Facts from Dr. Khan's deck (Hypercalcemia/Hyperparathyroidism, Hypocalcemia/
+Facts from the lecture deck (Hypercalcemia/Hyperparathyroidism, Hypocalcemia/
 Hypoparathyroidism and their treatment). Presentation is shared within each side,
 so it sits once in that side's box; each column carries its tests, causes and treatment.
 """

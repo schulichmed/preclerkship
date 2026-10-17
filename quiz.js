@@ -46,8 +46,8 @@
     },
     {
       key: "meds2029",
-      name: "Clinical Questions",
-      blurb: "Clinical Questions."
+      name: "Case-Based Questions",
+      blurb: "Case-Based Questions."
     },
     {
       key: "reviews",

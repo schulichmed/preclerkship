@@ -194,8 +194,8 @@ Each course's README covers its own sources and its own quirks:
 
 Answers, stars and per-lecture accuracy are written to the browser's
 `localStorage`, under a **separate prefix per course**, so the four never read or
-overwrite each other even though they share an origin. Nothing is sent anywhere
-and there is no backend.
+overwrite each other even though they share an origin. Nothing in that record
+leaves the browser unless you choose to sign in (see [What the site sends](#what-the-site-sends)).
 
 The flip side is that it does not follow you, so each course's questions tab has
 **Download all my progress** and **Restore from a file**, which move a JSON file
@@ -248,7 +248,29 @@ The study content under each course's `data/` came out of shared course material
 that students already pass between years: class question banks, the
 Pre-Clerkship Workbook and questions written from the case and small-group sessions.
 
-**They are here on purpose.** Putting them somewhere public is the reason this
-repository exists, not an accident of packaging. Where a question came out of a
-peer-written bank, its errors and gaps are flagged on the question itself rather
-than quietly patched, so you can see what you are trusting before you trust it.
+Every question names its source. Where a question came out of a peer-written
+bank, its errors and gaps are flagged on the question itself rather than quietly
+patched, so you can see what you are trusting before you trust it.
+
+**A student project.** The portal is made and kept by Schulich students. It is
+unofficial: it is not affiliated with, reviewed by or endorsed by the Schulich School of
+Medicine & Dentistry or Western University, and nothing in it speaks for either. It is a
+study aid only. It may contain errors, it is not medical advice, and your lectures and
+course materials are the authority wherever the two disagree. Explanations marked
+*reasoned* were drafted with AI help (Claude) from the lecture they name and have not
+been checked by faculty.
+
+Lecturers are not named anywhere in the content. If you teach in the program and want
+something corrected or taken down, email <schulichmedfriend@gmail.com> and it will be
+handled promptly.
+
+## What the site sends
+
+- **Progress** stays in your browser's `localStorage` unless you turn on sync.
+- **Sync** is optional. Signing in with Google copies your progress and notes to a
+  Firebase database where only your own account can read them.
+- **Analytics.** Pages load Cloudflare Web Analytics, which counts visits without
+  cookies, and a small visitor counter that keeps a random device ID and no name or
+  IP address.
+- **Reports.** The Report button posts what you type as a public GitHub issue, so
+  leave anything personal out of it.

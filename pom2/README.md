@@ -96,8 +96,9 @@ are hand-writing the JSON, ignore the whole folder.
 ## Progress stays on the device
 
 Answers, stars and per-lecture accuracy are written to the browser's
-`localStorage`. Nothing is sent anywhere, there is no backend, and nobody running
-a copy of this can see anyone else's progress. The flip side is that it does not
+`localStorage`, and nobody running a copy of this can see anyone else's progress.
+The only exceptions are opt-in sync and the site-wide analytics, both described in
+the [main README](../README.md#what-the-site-sends). The flip side is that it does not
 follow you between browsers or machines, so the questions tab has **Download all my
 progress** and **Restore from a file** buttons that move a JSON file by hand. One file holds
 every block and can be written or read from any of them, and a restore only adds and updates,
@@ -202,16 +203,20 @@ came out of shared course material: a student-written workbook handed down throu
 the Schulich classes of 2015 to 2025 and questions written from the case and small-group
 sessions.
 
-**They are here on purpose.** These are resources students already pass between
-years, and putting them somewhere public is the reason this
-repository exists, not an accident of packaging. Use them, fork them, correct them,
+These are resources students already pass between years. Use them, correct them,
 add to them. Where a question came out of a peer-written bank its errors are flagged
 on the question itself rather than quietly patched, so you can see what you are
 trusting before you trust it.
+
+The portal is unofficial and student-run, not endorsed by the school, and a study aid
+only: it may contain errors and your lectures are the authority. Lecturers are not
+named in the content. See the [main README](../README.md#licence-and-content) for the
+full notice and how to ask for something to be removed.
 
 A handful of questions carry a picture, embedded in the question itself. Those come
 from the teaching material the question came from: course illustrations, radiology
 and endoscopy stills, gross pathology specimens and clinical photographs of the kind
 that circulate in every medical curriculum. Cadaveric images from the anatomy modules
-are covered by a separate protocol and are **not** included, so a question that
-needed one says on its face that its picture is missing.
+are covered by a separate donor protocol and must **not** be added here; a question
+that needed one says on its face that its picture is missing, and any that turns up
+will be taken down.

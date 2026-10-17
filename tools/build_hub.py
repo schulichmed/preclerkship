@@ -85,8 +85,8 @@ TEMPLATE = u"""<!DOCTYPE html>
 </div>
 <h1>Schulich Pre-clerkship.</h1>
 <p>
-A centralized, dynamic, up-to-date resource for all Schulich med students in
-pre-clerkship.
+A student-made study resource for Schulich med students in pre-clerkship.
+Unofficial, and not endorsed by the school.
 </p>
 </div>
 
@@ -117,8 +117,10 @@ are old, and the Q-bank is asking about material you are not even covering anymo
 </p>
 
 <p>
-It is a centralized, dynamic, up-to-date resource for all Schulich medical students in
-pre-clerkship.
+It is a student-made study resource for Schulich medical students in pre-clerkship,
+kept current week by week. It is unofficial: it is not affiliated with or endorsed by
+the Schulich School of Medicine &amp; Dentistry or Western University, it may contain
+errors, and your lectures are always the authority.
 </p>
 
 <p>
@@ -128,7 +130,7 @@ It includes:
 <ul>
 <li><strong>Notes:</strong> Summary notes, charts, flowcharts, illustrations, and Schulich Reviews, organized by block, week, and lecture. Any note can be exported to PDF and annotated.</li>
 <li><strong>Anki:</strong> An updated version of Christina&rsquo;s Anki deck, organized by block, week, and lecture.</li>
-<li><strong>Question bank:</strong> A Q-bank that students can filter by block, week, or source, then use to make their own custom practice tests. Progress is saved, so you can revisit questions you got wrong. Every question is directly from our curriculum, or from previous student Q-banks, including Hippo Council, Schulich Reviews, and the Pre-Clerkship Workbook. New questions come from DSSGs, in-class sessions, and modules, not low-yield AI-generated trivia.</li>
+<li><strong>Question bank:</strong> A Q-bank that students can filter by block, week, or source, then use to make their own custom practice tests. Progress is saved, so you can revisit questions you got wrong. Questions come from previous student Q-banks, including Hippo Council, Schulich Reviews, and the Pre-Clerkship Workbook, and case-based questions are written from the cases discussed in DSSGs, in-class sessions, and modules. Every question names its source, and explanations drafted with AI help are marked as reasoned.</li>
 </ul>
 
 <p>
