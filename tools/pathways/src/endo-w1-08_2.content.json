@@ -1,0 +1,125 @@
+{
+ "name": "glycemic goals of care overview",
+ "title": "Setting an A1c target in an adult with diabetes: if severe lows are unlikely, aim for 6.5% (low-risk type 2) or 7.0% (most people); if lows are likely or dangerous, or life is short, liberalize to 7.1-8.5% or stop measuring; each column gives who, why and what to do",
+ "col_w": 250,
+ "root": {
+  "title": "Which A1c target? Weigh fewer complications against HYPOGLYCEMIA",
+  "lines": [
+   "minimum for EVERY patient: free of symptomatic highs AND lows",
+   "decide WITH the patient: benefit vs lows, out-of-pocket cost, feasibility"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_tight",
+   "cols": [0, 1],
+   "title": "Severe lows UNLIKELY: prevent complications",
+   "lines": ["the more years ahead, the more there is to prevent"]
+  },
+  {
+   "id": "g_lib",
+   "cols": [2, 3],
+   "title": "Lows LIKELY or DANGEROUS, or life SHORT: LIBERALIZE",
+   "lines": ["the main side effect of insulin and secretagogues is hypoglycemia"]
+  }
+ ],
+ "sections": ["head", "clue", "inv", "tx"],
+ "row_names": {
+  "clue": "WHO",
+  "inv": "WHY",
+  "tx": "WHAT TO DO"
+ },
+ "dashed_sections": ["clue"],
+ "columns": [
+  {
+   "id": "t65",
+   "colour": "teal",
+   "drop_label": "T2DM, LOW risk",
+   "head": [[["h", "A1c ≤ 6.5%", ["type 2 diabetes (T2DM) at LOW risk of hypoglycemia"]]]],
+   "clue": [[["t", "Young, short duration", [
+     "• long life expectancy",
+     "• no complications yet: still preventable",
+     "• not on a drug that causes lows"
+   ]]]],
+   "inv": [[["w", "Further ↓ chronic kidney disease (CKD) and retinopathy", []]]],
+   "tx": [[["ok", "Tighten while lows stay unlikely", [
+     "~e.g. 35, T2DM for 2 years, metformin alone",
+     "drug choice: see the GLUCOSE-LOWERING DRUGS tree"
+   ]]]]
+  },
+  {
+   "id": "t70",
+   "colour": "blue",
+   "drop_label": "MOST",
+   "head": [[["h", "A1c ≤ 7.0%", ["MOST adults with type 1 (T1DM) or type 2 diabetes"]]]],
+   "clue": [[["t", "The default", [
+     "• long duration, on insulin, complications",
+     "• but no severe lows, not frail, not near the end of life"
+   ]]]],
+   "inv": [[["w", "↓ microvascular complications", [
+     "cardiovascular too, if started EARLY"
+   ]]]],
+   "tx": [
+    [["ok", "Self-monitored glucose (SMBG) targets", [
+     "• fasting 4.0–7.0 mmol/L",
+     "• 2 h after a meal 5.0–10.0 mmol/L"
+    ]]],
+    [["warn", "Over half never reach it", [
+     "ANY fall still counts (9.5 → 8.5%)"
+    ]]]
+   ]
+  },
+  {
+   "id": "t85",
+   "colour": "orange",
+   "drop_label": "lows LIKELY or DANGEROUS",
+   "head": [[["h", "A1c 7.1–8.5%", ["functionally dependent: 7.1–8.0%"]]]],
+   "clue": [
+    [["t", "Severe lows LIKELY", [
+     "• recurrent severe lows",
+     "• hypoglycemia unawareness"
+    ]]],
+    [["t", "Lows DANGEROUS", [
+     "• dementia, seizure disorder",
+     "• frail, prone to falls, dependent"
+    ]]]
+   ],
+   "inv": [[["bad", "A SEVERE low can be fatal", [
+     "severe = needs someone else's help to treat"
+   ]]]],
+   "tx": [
+    [["ok", "Liberalize + check glucose (SMBG)", [
+     "SMBG prevents, confirms and treats lows",
+     "~e.g. 85, severe dementia, on gliclazide"
+    ]]],
+    [["bad", "But NOT above 8.5%", [
+     "symptomatic highs + complications"
+    ]]]
+   ]
+  },
+  {
+   "id": "eol",
+   "colour": "slate",
+   "drop_label": "life SHORT",
+   "head": [[["h", "Limited life or end of life", ["limited life expectancy: 7.1–8.5%", "end of life: NO A1c"]]]],
+   "clue": [[["t", "Life expectancy < ~2 years", [
+     "or end of life"
+   ]]]],
+   "inv": [[["w", "No time to gain", [
+     "the benefit on chronic complications is hard to justify against the risks"
+   ]]]],
+   "tx": [[["ok", "Avoid symptomatic highs and ANY lows", [
+     "end of life: stop measuring the A1c"
+   ]]]]
+  }
+ ],
+ "panels": [
+  {
+   "title": "The A1c: the best-validated marker, but it LAGS",
+   "items": [
+    "mean glucose over the last 8–12 weeks, ~50% from the last 30 days: changes lag behind glucose, so SMBG guides medication changes",
+    "misleading with altered red-cell turnover or hemoglobin (iron or B12 deficiency, chronic renal failure, hemoglobinopathies, splenectomy) → follow glucose readings instead"
+   ]
+  }
+ ]
+}

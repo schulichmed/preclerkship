@@ -1,0 +1,523 @@
+{
+ "name": "antifungals overview",
+ "width": 1392,
+ "title": "Antifungals decision chart: the fungus, its site and severity pick the drug. Mucosal candidiasis (nystatin, clotrimazole, fluconazole), candidemia (fluconazole for albicans, an echinocandin for severe or non-albicans), invasive aspergillosis (voriconazole or amphotericin B), cryptococcus (amphotericin B with flucytosine, then fluconazole) and endemic mycoses (itraconazole, or amphotericin B when severe), with the azole and amphotericin B harms that limit the choice",
+ "kinds": {
+  "mu_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mu_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "mu_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "cd_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cd_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "cd_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "as_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "as_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "as_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cr_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cr_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cr_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "en_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "en_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "en_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 252,
+   "w": 250,
+   "h": 542,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 292,
+   "y": 252,
+   "w": 250,
+   "h": 542,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 572,
+   "y": 252,
+   "w": 250,
+   "h": 542,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 852,
+   "y": 252,
+   "w": 250,
+   "h": 542,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1132,
+   "y": 252,
+   "w": 250,
+   "h": 542,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 380,
+   "h": 132,
+   "text": "FIRST CHOICE"
+  },
+  {
+   "x": 23,
+   "y": 552,
+   "h": 234,
+   "text": "IF SEVERE / THEN"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 331,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Antifungals: WHICH FUNGUS, WHERE, and HOW SICK picks the drug",
+   "lines": [
+    "fungi are eukaryotes: hit what we lack, the CELL WALL (echinocandins) or ERGOSTEROL (azoles, amphotericin B)",
+    "AVOID: azoles block human CYP450 (DRUG INTERACTIONS, QT, liver) · amphotericin B: NEPHROTOXIC"
+   ]
+  },
+  {
+   "id": "g_ca",
+   "x": 45,
+   "y": 138,
+   "w": 492,
+   "h": 42,
+   "kind": "plain",
+   "title": "CANDIDA (yeast): where is it?",
+   "lines": []
+  },
+  {
+   "id": "g_as",
+   "x": 577,
+   "y": 138,
+   "w": 240,
+   "h": 42,
+   "kind": "plain",
+   "title": "ASPERGILLUS (mould)",
+   "lines": []
+  },
+  {
+   "id": "g_cr",
+   "x": 857,
+   "y": 138,
+   "w": 240,
+   "h": 42,
+   "kind": "plain",
+   "title": "CRYPTOCOCCUS",
+   "lines": []
+  },
+  {
+   "id": "g_en",
+   "x": 1137,
+   "y": 138,
+   "w": 240,
+   "h": 42,
+   "kind": "plain",
+   "title": "ENDEMIC fungi",
+   "lines": []
+  },
+  {
+   "id": "mu_head_0_0",
+   "x": 45,
+   "y": 260,
+   "w": 240,
+   "h": 80,
+   "kind": "mu_h",
+   "title": "Mucosal candidiasis",
+   "lines": [
+    "thrush, esophagitis, vaginitis"
+   ]
+  },
+  {
+   "id": "cd_head_0_0",
+   "x": 297,
+   "y": 260,
+   "w": 240,
+   "h": 80,
+   "kind": "cd_h",
+   "title": "Candidemia (fungemia)",
+   "lines": [
+    "is it C. albicans?"
+   ]
+  },
+  {
+   "id": "as_head_0_0",
+   "x": 577,
+   "y": 260,
+   "w": 240,
+   "h": 80,
+   "kind": "as_h",
+   "title": "Invasive aspergillosis",
+   "lines": []
+  },
+  {
+   "id": "cr_head_0_0",
+   "x": 857,
+   "y": 260,
+   "w": 240,
+   "h": 80,
+   "kind": "cr_h",
+   "title": "Cryptococcal disease",
+   "lines": [
+    "in 3 phases"
+   ]
+  },
+  {
+   "id": "en_head_0_0",
+   "x": 1137,
+   "y": 260,
+   "w": 240,
+   "h": 80,
+   "kind": "en_h",
+   "title": "Blasto-, coccidioido-, histoplasmosis",
+   "lines": [
+    "the endemic mycoses"
+   ]
+  },
+  {
+   "id": "mu_first_0_0",
+   "x": 45,
+   "y": 380,
+   "w": 240,
+   "h": 132,
+   "kind": "ok",
+   "title": "MILD",
+   "lines": [
+    "• thrush: NYSTATIN 400,000 units swish + spit QID × 7–14 days",
+    "• vaginal: clotrimazole 1% cream × 7 nights, or fluconazole 150 mg po ONCE"
+   ]
+  },
+  {
+   "id": "cd_first_0_0",
+   "x": 297,
+   "y": 380,
+   "w": 240,
+   "h": 132,
+   "kind": "ok",
+   "title": "C. ALBICANS: FLUCONAZOLE",
+   "lines": [
+    "800 mg IV once, then 400 mg IV daily"
+   ]
+  },
+  {
+   "id": "as_first_0_0",
+   "x": 577,
+   "y": 380,
+   "w": 240,
+   "h": 132,
+   "kind": "ok",
+   "title": "VORICONAZOLE (preferred)",
+   "lines": [
+    "• 6 mg/kg IV q12h × 2, then 4 mg/kg IV q12h",
+    "• oral: 200 mg BID"
+   ]
+  },
+  {
+   "id": "cr_first_0_0",
+   "x": 857,
+   "y": 380,
+   "w": 240,
+   "h": 132,
+   "kind": "bad",
+   "title": "1 · INDUCTION × 2 weeks",
+   "lines": [
+    "• liposomal amphotericin B 3–4 mg/kg daily",
+    "• + FLUCYTOSINE 25 mg/kg q6h"
+   ]
+  },
+  {
+   "id": "en_first_0_0",
+   "x": 1137,
+   "y": 380,
+   "w": 240,
+   "h": 132,
+   "kind": "ok",
+   "title": "MILD-moderate: ITRACONAZOLE",
+   "lines": [
+    "• blasto: 200 mg po TID × 3 days, then BID × 6–12 months",
+    "• cocci: itraconazole or fluconazole"
+   ]
+  },
+  {
+   "id": "mu_next_0_0",
+   "x": 45,
+   "y": 552,
+   "w": 240,
+   "h": 234,
+   "kind": "warn",
+   "title": "SEVERE thrush or ESOPHAGEAL: FLUCONAZOLE",
+   "lines": [
+    "• thrush: 100–200 mg daily × 7–14 days",
+    "• esophagus needs SYSTEMIC: 200–400 mg po daily × 14 days"
+   ]
+  },
+  {
+   "id": "cd_next_0_0",
+   "x": 297,
+   "y": 552,
+   "w": 240,
+   "h": 134,
+   "kind": "warn",
+   "title": "SEVERE or NON-albicans: an ECHINOCANDIN",
+   "lines": [
+    "• caspofungin 70 mg IV once, then 50 mg daily",
+    "• IV ONLY",
+    "• until susceptibilities return"
+   ]
+  },
+  {
+   "id": "cd_next_1_0",
+   "x": 297,
+   "y": 708,
+   "w": 240,
+   "h": 78,
+   "kind": "bad",
+   "title": "Focus in the EYE or CNS?",
+   "lines": [
+    "echinocandins do not get there: choose another drug"
+   ]
+  },
+  {
+   "id": "as_next_0_0",
+   "x": 577,
+   "y": 552,
+   "w": 240,
+   "h": 234,
+   "kind": "warn",
+   "title": "Or liposomal amphotericin B (AmBisome)",
+   "lines": [
+    "3–5 mg/kg IV daily"
+   ]
+  },
+  {
+   "id": "cr_next_0_0",
+   "x": 857,
+   "y": 552,
+   "w": 240,
+   "h": 97,
+   "kind": "ok",
+   "title": "2 · CONSOLIDATION: fluconazole",
+   "lines": [
+    "400–800 mg po daily × 8 weeks"
+   ]
+  },
+  {
+   "id": "cr_next_1_0",
+   "x": 857,
+   "y": 671,
+   "w": 240,
+   "h": 115,
+   "kind": "ok",
+   "title": "3 · MAINTENANCE: fluconazole",
+   "lines": [
+    "200–400 mg po daily · lifelong may be considered"
+   ]
+  },
+  {
+   "id": "en_next_0_0",
+   "x": 1137,
+   "y": 552,
+   "w": 240,
+   "h": 234,
+   "kind": "warn",
+   "title": "SEVERE: liposomal amphotericin B",
+   "lines": [
+    "• 3–5 mg/kg IV daily × 1–2 weeks (histo: 3 mg/kg)",
+    "• then STEP DOWN to itraconazole"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ca",
+   "path": "M711.0 88V113H291.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_as",
+   "path": "M711.0 88V113H697.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_cr",
+   "path": "M711.0 88V113H977.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_en",
+   "path": "M711.0 88V113H1257.0V138"
+  },
+  {
+   "from": "cd_next_0_0",
+   "to": "cd_next_1_0"
+  },
+  {
+   "from": "cr_next_0_0",
+   "to": "cr_next_1_0"
+  },
+  {
+   "from": "mu_head_0_0",
+   "to": "mu_first_0_0"
+  },
+  {
+   "from": "mu_first_0_0",
+   "to": "mu_next_0_0"
+  },
+  {
+   "from": "g_ca",
+   "to": "mu_head_0_0",
+   "from_dx": -126,
+   "label": "MOUTH, GULLET, VAGINA",
+   "label_at": [
+    165.0,
+    220
+   ]
+  },
+  {
+   "from": "cd_head_0_0",
+   "to": "cd_first_0_0"
+  },
+  {
+   "from": "cd_first_0_0",
+   "to": "cd_next_0_0"
+  },
+  {
+   "from": "g_ca",
+   "to": "cd_head_0_0",
+   "from_dx": 126,
+   "label": "BLOOD",
+   "label_at": [
+    417.0,
+    220
+   ]
+  },
+  {
+   "from": "as_head_0_0",
+   "to": "as_first_0_0"
+  },
+  {
+   "from": "as_first_0_0",
+   "to": "as_next_0_0"
+  },
+  {
+   "from": "g_as",
+   "to": "as_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "cr_head_0_0",
+   "to": "cr_first_0_0"
+  },
+  {
+   "from": "cr_first_0_0",
+   "to": "cr_next_0_0"
+  },
+  {
+   "from": "g_cr",
+   "to": "cr_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "en_head_0_0",
+   "to": "en_first_0_0"
+  },
+  {
+   "from": "en_first_0_0",
+   "to": "en_next_0_0"
+  },
+  {
+   "from": "g_en",
+   "to": "en_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

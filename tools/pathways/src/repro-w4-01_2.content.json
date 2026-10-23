@@ -1,0 +1,591 @@
+{
+ "name": "abortion overview",
+ "title": "Abortion: after the pre-procedure evaluation, gestational age on ultrasound decides which methods are open; each method column gives the candidate, the regimen, how completion is confirmed and the risks",
+ "col_w": 205,
+ "root": {
+  "title": "Ending a pregnancy: the ULTRASOUND GESTATIONAL AGE decides which methods are open",
+  "lines": [
+   "before ANY method: ultrasound (INTRAUTERINE? + dating) · Rh status · history · consent · CONTRACEPTION plan",
+   "no referral needed · 1st trimester: medical OR surgical, her choice · 2nd trimester: D&E or induction"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g1",
+   "cols": [
+    0,
+    3
+   ],
+   "title": "1st TRIMESTER (< 12 weeks): MEDICAL or SURGICAL",
+   "lines": [
+    "both open: she chooses home + days, or clinic + one visit"
+   ]
+  },
+  {
+   "id": "g2",
+   "cols": [
+    4,
+    5
+   ],
+   "title": "2nd TRIMESTER (to ~24–25 weeks)",
+   "lines": [
+    "D&E preferred: fewest complications"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_med",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "MEDICAL: patient-controlled, at home",
+   "lines": [
+    "• 95–99% success",
+    "• days–weeks",
+    "• NEEDS follow-up",
+    "• she must accept SURGERY if it fails"
+   ]
+  },
+  {
+   "id": "t_sur",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "SURGICAL: provider-performed",
+   "lines": [
+    "• 99% success",
+    "• one visit, predictable",
+    "• follow-up NOT required"
+   ]
+  },
+  {
+   "id": "t_de",
+   "cols": [
+    4,
+    4
+   ],
+   "title": "SURGICAL",
+   "lines": [
+    "general anaesthetic"
+   ]
+  },
+  {
+   "id": "t_ind",
+   "cols": [
+    5,
+    5
+   ],
+   "title": "MEDICAL",
+   "lines": [
+    "a long labour"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "cand",
+  "how",
+  "fu",
+  "risk"
+ ],
+ "row_names": {
+  "cand": "CANDIDATE",
+  "how": "HOW",
+  "fu": "FOLLOW-UP",
+  "risk": "RISKS"
+ },
+ "columns": [
+  {
+   "id": "mife",
+   "colour": "blue",
+   "drop_from": "t_med",
+   "drop_label": "≤ 70 DAYS (10 wk)",
+   "head": [
+    [
+     [
+      "h",
+      "Mifepristone + misoprostol",
+      [
+       "(Mifegymiso) · first-line medical",
+       "95–98% success"
+      ]
+     ]
+    ]
+   ],
+   "cand": [
+    [
+     [
+      "t",
+      "Up to 70 DAYS, and she can",
+      [
+       "• commit to follow-up",
+       "• tolerate a DELAY",
+       "• follow the instructions"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "t",
+      "Regimen",
+      [
+       "1 · mifepristone 200 oral or buccal",
+       "~• the deck prints mcg; the product is mg",
+       "2 · misoprostol 800 mcg 24–48 h later",
+       "~• 90% abort within 24 h of it"
+      ]
+     ]
+    ]
+   ],
+   "fu": [
+    [
+     [
+      "w",
+      "Visit within 11 DAYS: β-hCG",
+      [
+       "↓ 50% by day 3 or ↓ 80% by days 7–14 = complete"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "β-hCG PLATEAU = failed",
+      [
+       "• 2nd misoprostol 800 mcg: > 50% then abort",
+       "• still failed → surgery (< 5%)"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "bad",
+      "Heavy bleeding + cramps",
+      [
+       "• as tissue passes",
+       "• GI upset",
+       "• 10% delayed evacuation",
+       "• up to 5% fail"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mtx",
+   "colour": "teal",
+   "drop_from": "t_med",
+   "drop_label": "≤ 49 DAYS (7 wk)",
+   "head": [
+    [
+     [
+      "h",
+      "Methotrexate + misoprostol",
+      [
+       "off-label",
+       "stops the cytotrophoblast"
+      ]
+     ]
+    ]
+   ],
+   "cand": [
+    [
+     [
+      "t",
+      "Up to 49 DAYS only",
+      [
+       "• same follow-up commitment",
+       "~• less effective + slower than mifepristone"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "t",
+      "Regimen",
+      [
+       "1 · day 1: methotrexate 50 mg/m² IM",
+       "2 · days 5–7: misoprostol 600 µg vaginally",
+       "• no bleeding in 24 h → 800 µg more"
+      ]
+     ]
+    ]
+   ],
+   "fu": [
+    [
+     [
+      "w",
+      "β-hCG day 8, again 1 week later",
+      [
+       "• ↓ 50% by day 3 or ↓ 80% by days 7–14 = complete",
+       "~• neither yet → weekly β-hCG"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "β-hCG PLATEAU = failed",
+      [
+       "→ surgery"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "bad",
+      "TERATOGENIC",
+      [
+       "cranial malformations, palsies, limb deformities: it must be completed"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mva",
+   "colour": "orange",
+   "drop_from": "t_sur",
+   "drop_label": "≤ 10 WEEKS",
+   "head": [
+    [
+     [
+      "h",
+      "Manual vacuum aspiration (MVA)",
+      [
+       "in the OFFICE",
+       "local anaesthetic only"
+      ]
+     ]
+    ]
+   ],
+   "cand": [
+    [
+     [
+      "t",
+      "Up to 10 WEEKS, and",
+      [
+       "• she can tolerate a local anaesthetic + exam",
+       "~• cannot cope → conscious sedation"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "t",
+      "Procedure",
+      [
+       "1 · paracervical block, 1% lidocaine",
+       "2 · dilate (most nulliparas)",
+       "3 · cannula + manual vacuum aspirator"
+      ]
+     ]
+    ]
+   ],
+   "fu": [
+    [
+     [
+      "ok",
+      "Confirm complete ON THE DAY",
+      [
+       "• tissue: chorionic villi or a gestational sac",
+       "• or ultrasound: an empty uterus"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "No further follow-up",
+      [
+       "failure 0.25%"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "bad",
+      "NOT for",
+      [
+       "• contraindication to local",
+       "• non-compliant",
+       "• very young or nulliparous, hard to examine"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dc",
+   "colour": "brown",
+   "drop_from": "t_sur",
+   "drop_label": "< 14 WEEKS",
+   "head": [
+    [
+     [
+      "h",
+      "Dilation and curettage (D&C)",
+      [
+       "under CONSCIOUS SEDATION",
+       "not general anaesthetic"
+      ]
+     ]
+    ]
+   ],
+   "cand": [
+    [
+     [
+      "t",
+      "Under 14 WEEKS",
+      [
+       "• wants sedation, not just a local",
+       "• faster recovery + discharge"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "t",
+      "Procedure",
+      [
+       "1 · cervical preparation",
+       "2 · Hegar dilators",
+       "3 · suction curettage",
+       "~• detail: ABNORMAL BLEEDING chart"
+      ]
+     ]
+    ]
+   ],
+   "fu": [
+    [
+     [
+      "ok",
+      "Complete at the procedure",
+      [
+       "success 99%"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "No further follow-up",
+      [
+       "required"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "bad",
+      "Complications",
+      [
+       "• cervical shock",
+       "• perforation",
+       "• hematometra",
+       "• Asherman: risk with each curettage"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "de",
+   "colour": "magenta",
+   "drop_from": "t_de",
+   "drop_label": "to ~25 WEEKS",
+   "head": [
+    [
+     [
+      "h",
+      "Dilation and evacuation (D&E)",
+      [
+       "2nd trimester, first choice",
+       "general anaesthetic"
+      ]
+     ]
+    ]
+   ],
+   "cand": [
+    [
+     [
+      "ok",
+      "Most 2nd-trimester abortions",
+      [
+       "• FEWEST complications vs induction",
+       "• shorter",
+       "• fewer retained products"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "t",
+      "Procedure",
+      [
+       "1 · ripen the cervix: osmotic, mechanical or medical (> 18 wk: serial)",
+       "2 · ± feticide: intracardiac digoxin or KCl",
+       "3 · evacuate under general anaesthetic"
+      ]
+     ]
+    ]
+   ],
+   "fu": [
+    [
+     [
+      "ok",
+      "Complete at the procedure",
+      [
+       "success 99%"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "No further follow-up",
+      [
+       "required"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "bad",
+      "Complications",
+      [
+       "• anaesthetic risk",
+       "• perforation",
+       "• hemorrhage",
+       "• infection",
+       "• incomplete"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ind",
+   "colour": "purple",
+   "drop_from": "t_ind",
+   "drop_label": "GENETIC",
+   "head": [
+    [
+     [
+      "h",
+      "Induction of labour",
+      [
+       "2nd trimester, medical",
+       "> 25 wk very limited"
+      ]
+     ]
+    ]
+   ],
+   "cand": [
+    [
+     [
+      "t",
+      "GENETIC terminations",
+      [
+       "• available for them",
+       "~• the alternative to D&E"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "t",
+      "Procedure",
+      [
+       "1 · feticide: intracardiac KCl or digoxin",
+       "2 · misoprostol induces labour"
+      ]
+     ]
+    ]
+   ],
+   "fu": [
+    [
+     [
+      "w",
+      "Placenta delivered?",
+      [
+       "check it is complete"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Retained placenta",
+      [
+       "→ D&C"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "bad",
+      "Complications",
+      [
+       "• a LONG procedure",
+       "• hemorrhage",
+       "• retained placenta"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "After ANY abortion: contraception now",
+   "items": [
+    "ovulation can return 2 weeks after a 1st-trimester abortion",
+    "same day: intrauterine device (expulsion 3.8%) · Depo-Provera · tubal ligation if under general anaesthetic + family complete",
+    "a method already failed her? offer a DIFFERENT one"
+   ]
+  },
+  {
+   "title": "Safer than continuing the pregnancy",
+   "items": [
+    "deaths per 100,000: legal abortion 0.567 · miscarriage 1.19 · live birth 7.06 · ectopic 31.9",
+    "98% have NO complication by 28 days (hemorrhage 0.7%, infection 0.3%, retained products 0.3%)",
+    "FALSE: breast cancer, infertility, mental harm · fertility risk = a D&C for miscarriage"
+   ]
+  },
+  {
+   "title": "How the drugs work",
+   "items": [
+    "MIFEPRISTONE: anti-progestin → decidual necrosis, soft cervix, contractions · irreversible",
+    "MISOPROSTOL (prostaglandin E1): ripens the cervix + ↑ uterine tone, in every medical regimen"
+   ]
+  }
+ ]
+}

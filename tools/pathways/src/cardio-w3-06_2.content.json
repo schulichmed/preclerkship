@@ -1,0 +1,425 @@
+{
+ "name": "secondary prevention and limb ischemia overview",
+ "title": "Vascular disease after the first event decision chart: after a myocardial infarction, cardiac rehabilitation and the drugs that prevent the next event (ACE inhibitor and statin for all, beta blocker only with a low ejection fraction); in the leg, acute limb ischemia is embolic or thrombotic and is anticoagulated and revascularized within hours, while chronic disease is claudication treated with ABCDES or critical limb ischemia that needs revascularization",
+ "col_w": 236,
+ "root": {
+  "title": "Vascular disease after the FIRST event: PREVENT the next one, and is a LIMB threatened?",
+  "lines": [
+   "one event raises the risk of the next: after an MI, another MI 5–7×",
+   "in the leg, COLLATERALS decide how bad an occlusion is"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_mi",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "AFTER an MI, PCI or bypass surgery",
+   "lines": [
+    "prevent the next event"
+   ]
+  },
+  {
+   "id": "g_ac",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "ACUTE limb ischemia: the 6 Ps",
+   "lines": [
+    "pulseless, paresthesia, pain, paresis, polar (cold), pallor"
+   ]
+  },
+  {
+   "id": "g_ch",
+   "cols": [
+    4,
+    5
+   ],
+   "title": "CHRONIC arterial disease: pain WHEN?",
+   "lines": [
+    "ankle-brachial index (ABI) normal 0.9–1.0"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "WHO / PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "cr",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Cardiac rehabilitation",
+      [
+       "exercise, risk factors, adherence, mood"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "EVERY patient",
+      [
+       "class I, level A: ↓ death and readmission"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Treadmill test first",
+      [
+       "exercise heart rate set 10 bpm BELOW the ischemic threshold"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Prescribe by F.I.T.T.",
+      [
+       "• Frequency: aerobic 3–5×/week",
+       "• Intensity: 40–80% of heart-rate reserve",
+       "• Time: 20–40 min · Type: aerobic + resistance"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sp",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Secondary-prevention drugs",
+      [
+       "the full discharge list: see the ACS chart"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "EVERY post-MI patient",
+      [
+       "dual antiplatelet ≥ 1 year: see the ACS chart"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Check the ejection fraction (EF)",
+      [
+       "it decides the beta blocker"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "ALL: ACE inhibitor + statin",
+      [
+       "• ACE inhibitor: most benefit with hypertension, diabetes, EF < 40%, kidney disease",
+       "• not tolerated (cough) → ARB"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Beta blocker ONLY if EF < 40%",
+      [
+       "with or without heart failure"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Calcium channel blockers, ivabradine",
+      [
+       "anti-anginal ONLY: no secondary-prevention benefit"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "em",
+   "colour": "orange",
+   "drop_label": "normal arteries",
+   "head": [
+    [
+     [
+      "h",
+      "EMBOLIC",
+      [
+       "no collaterals: CATASTROPHIC",
+       "lodges at a bifurcation"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Acute WHITE leg",
+      [
+       "• complete neurosensory deficit",
+       "• NORMAL pulses in the other leg",
+       "• a source: AF, MI, mechanical mitral valve"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · DURATION: necrosis in 6–8 h",
+      [
+       "2 · ultrasound, CT angiogram, angiography"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "th",
+   "colour": "brown",
+   "drop_label": "known stenosis",
+   "head": [
+    [
+     [
+      "h",
+      "THROMBOTIC",
+      [
+       "on atherosclerosis: collaterals",
+       "less dramatic"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Known CLAUDICATION",
+      [
+       "• may barely notice it",
+       "• also: hypercoagulable, dissection, graft occlusion"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Same urgency: how long?",
+      [
+       "2 · ultrasound, CT angiogram, angiography"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cl",
+   "colour": "olive",
+   "drop_label": "on exertion",
+   "head": [
+    [
+     [
+      "h",
+      "Intermittent CLAUDICATION",
+      [
+       "low amputation rate: death is from the coronaries"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Predictable exertional muscle pain",
+      [
+       "• relieved promptly by rest",
+       "• calf: superficial femoral · buttock + thigh: aortic"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · ABI, ultrasound",
+      [
+       "< 0.9: arterial insufficiency"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "ABCDES",
+      [
+       "• Antiplatelet, BP, Cholesterol (statin), Diabetes",
+       "• Exercise: grows collaterals",
+       "• SMOKING cessation: the most important"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "DISABLING claudication",
+      [
+       "revascularize? controversial"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ci",
+   "colour": "magenta",
+   "drop_label": "at rest",
+   "head": [
+    [
+     [
+      "h",
+      "CRITICAL limb ischemia",
+      [
+       "rest pain and/or tissue loss"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Pain at REST in the FOOT",
+      [
+       "• non-healing ulcer, gangrene of the toes"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · ABI",
+      [
+       "• < 0.5: rest pain",
+       "• < 0.3: tissue loss"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · CT angiogram or angiography",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "REVASCULARIZE",
+      [
+       "• open bypass: durable, needs a vein",
+       "• endovascular: less invasive, more re-interventions"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Saving the limb would threaten LIFE",
+      [
+       "→ AMPUTATION"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "spans": [
+  {
+   "section": "tx",
+   "cols": [
+    2,
+    3
+   ],
+   "rows": [
+    [
+     [
+      "bad",
+      "1 · HEPARIN now",
+      [
+       "• 5000 U bolus, then 1000 U/h: aPTT 2–3×",
+       "• oxygen, IV fluids + urine output, analgesia"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · REVASCULARIZE",
+      [
+       "endovascular (thrombolysis, stent) or open (embolectomy, bypass)"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "3 · Reperfused: COMPARTMENT syndrome?",
+      [
+       "→ FASCIOTOMY, a surgical emergency · watch the kidneys"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

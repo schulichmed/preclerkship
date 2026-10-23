@@ -1,0 +1,67 @@
+{
+ "name": "labour and birth overview",
+ "title": "Normal labour and birth by stage: the first stage is watched on the cervix, contractions and the fetal heart, with continuous monitoring for high risk read as normal, atypical or abnormal and intrauterine resuscitation when it is not normal; the second stage on station; the third on the signs of placental separation with active management and repair of tears; the fourth on the mother's vitals, with slow labour and postpartum hemorrhage sent to the abnormal labour chart",
+ "col_w": 236,
+ "root": {
+  "title": "Normal labour: which stage is she in, what do I watch, and when do I act?",
+  "lines": [
+   "labour = regular contractions causing progressive cervical dilation (Braxton Hicks: painless, NO cervical change)",
+   "first check there is no contraindication to labour: see the ABNORMAL LABOUR chart"
+  ]
+ },
+ "groups": [
+  {"id": "g_in", "cols": [0, 2], "title": "Baby still IN: watch the cervix and the fetus", "lines": ["is it progressing, and is the fetus coping?"]},
+  {"id": "g_out", "cols": [3, 4], "title": "Baby OUT: watch the placenta, then the mother", "lines": ["the danger now is bleeding"]}
+ ],
+ "sections": ["head", "watch", "do", "ifnot"],
+ "row_names": {"watch": "WATCH", "do": "DO", "ifnot": "IF NOT NORMAL"},
+ "columns": [
+  {
+   "id": "s1", "colour": "teal", "drop_label": "regular contractions",
+   "head": [[["h", "1st stage: onset → full dilatation", ["latent 0–4 cm, active 4–10 cm"]]]],
+   "watch": [
+    [["w", "Cervix every 2–3 h", ["dilation, effacement, station", "~sooner for symptoms or a heart rate change"]]],
+    [["w", "Contractions + fetal heart rate (FHR)", ["• palpate contractions every 30 min", "• low risk: FHR intermittently every 15 min"]]]
+   ],
+   "do": [[["ok", "Pain from T10–T12", ["• epidural: the most common", "• spinal, nitrous oxide, patient-controlled analgesia"]]]],
+   "ifnot": [[["warn", "Slower than the Friedman curve", ["active phase: 1.2 cm/h first baby, 1.5 cm/h after", "→ see ABNORMAL LABOUR chart", "~a guideline, not a rule"]]]]
+  },
+  {
+   "id": "fhr", "colour": "blue", "drop_label": "high risk",
+   "head": [[["h", "Continuous FHR monitoring", ["external, or fetal scalp electrode"]]]],
+   "watch": [
+    [["w", "Who needs it", ["• preeclampsia, bleeding, atypical FHR", "• oxytocin induction or augmentation", "• vaginal birth after cesarean"]]],
+    [["t", "Decelerations", ["• early: head compression", "• variable: cord compression", "• late: ↓ flow through the placenta"]]]
+   ],
+   "do": [[["w", "Read the tracing", ["• normal: continue", "• atypical: resuscitate, find the cause", "• abnormal: resuscitate, deliver promptly"]]]],
+   "ifnot": [
+    [["warn", "Intrauterine resuscitation", ["1 · scalp clip: is the tracing fetal?", "2 · vaginal exam: cord prolapse?", "3 · left side, oxytocin OFF, oxygen, 500 mL bolus"]]],
+    [["bad", "Persists → decide how to deliver", ["see ABNORMAL LABOUR chart"]]]
+   ]
+  },
+  {
+   "id": "s2", "colour": "purple", "drop_label": "fully dilated",
+   "head": [[["h", "2nd stage: full dilatation → birth", ["30 min–3 h first baby, 5–30 min after"]]]],
+   "watch": [
+    [["w", "Station (descent)", ["0 = ischial spines, then +1 to +5 cm"]]],
+    [["w", "FHR every 5 min", ["or continuous"]]]
+   ],
+   "do": [[["ok", "Pain from S2–S4", ["pudendal block (local)"]]]],
+   "ifnot": [[["warn", "Too long", ["→ see ABNORMAL LABOUR chart", "~only a trial of labour truly tests the pelvis"]]]]
+  },
+  {
+   "id": "s3", "colour": "orange", "drop_label": "baby born",
+   "head": [[["h", "3rd stage: birth → placenta", ["2–30 min"]]]],
+   "watch": [[["w", "Signs of separation", ["• uterus firm, globular: the EARLIEST", "• gush of blood, uterus rises", "• cord lengthens"]]]],
+   "do": [[["ok", "Active management, every birth", ["• uterotonic: oxytocin or ergot", "• gentle cord traction", "• fundal massage"]]]],
+   "ifnot": [[["warn", "Tears: inspect and repair", ["• 1st–2nd: mucosa, perineal muscle", "• 3rd: anal sphincter", "• 4th: through to rectal mucosa"]]]]
+  },
+  {
+   "id": "s4", "colour": "magenta", "drop_label": "placenta out",
+   "head": [[["h", "4th stage: the first hour", ["mother and baby"]]]],
+   "watch": [[["w", "Maternal vitals", ["up to 500 mL autotransfused back to her → ↑ cardiac work"]]]],
+   "do": [[["ok", "Baby", ["adapting to air, breastfeeding"]]]],
+   "ifnot": [[["bad", "Heavy bleeding: postpartum hemorrhage", ["see ABNORMAL LABOUR chart"]]]]
+  }
+ ]
+}

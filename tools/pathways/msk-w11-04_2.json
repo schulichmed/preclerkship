@@ -1,0 +1,957 @@
+{
+ "name": "pediatric orthopedics overview",
+ "width": 1658,
+ "title": "Pediatric orthopedics: an injury (fracture pattern, growth plate, apophysis) or a developmental problem (hip dysplasia, clubfoot, leg shape, scoliosis); each column gives presentation, exam and x-ray, and treatment",
+ "kinds": {
+  "frac_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "frac_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "frac_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "sh_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sh_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "sh_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "apo_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "apo_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "apo_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ddh_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ddh_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ddh_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "club_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "club_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "club_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "leg_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "leg_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "leg_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "sco_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sco_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "sco_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 224,
+   "h": 1154,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 266,
+   "y": 270,
+   "w": 224,
+   "h": 1154,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 492,
+   "y": 270,
+   "w": 224,
+   "h": 1154,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 746,
+   "y": 270,
+   "w": 224,
+   "h": 1154,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 972,
+   "y": 270,
+   "w": 224,
+   "h": 1154,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1198,
+   "y": 270,
+   "w": 224,
+   "h": 1154,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 1424,
+   "y": 270,
+   "w": 224,
+   "h": 1154,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 416,
+   "h": 272,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 728,
+   "h": 332,
+   "text": "EXAM & X-RAY"
+  },
+  {
+   "x": 23,
+   "y": 1100,
+   "h": 316,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 464,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A child's bone or joint problem: an INJURY, or a DEVELOPMENTAL problem?",
+   "lines": [
+    "children's bone is porous and pliable, the periosteum thick, and the growth plate (physis) the weak point: a child FRACTURES where an adult sprains"
+   ]
+  },
+  {
+   "id": "g_inj",
+   "x": 45,
+   "y": 138,
+   "w": 666,
+   "h": 60,
+   "kind": "plain",
+   "title": "INJURY",
+   "lines": [
+    "falls from low heights · sport · pedestrian struck · infant or toddler: NON-ACCIDENTAL injury"
+   ]
+  },
+  {
+   "id": "g_dev",
+   "x": 751,
+   "y": 138,
+   "w": 892,
+   "h": 60,
+   "kind": "plain",
+   "title": "DEVELOPMENTAL",
+   "lines": [
+    "screen, then treat early; do not overtreat normal variants"
+   ]
+  },
+  {
+   "id": "frac_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 214,
+   "h": 98,
+   "kind": "frac_h",
+   "title": "Fractures of pliable bone",
+   "lines": [
+    "buckle · greenstick · plastic deformation"
+   ]
+  },
+  {
+   "id": "sh_head_0_0",
+   "x": 271,
+   "y": 278,
+   "w": 214,
+   "h": 98,
+   "kind": "sh_h",
+   "title": "Growth plate: Salter-Harris",
+   "lines": [
+    "risk: growth ARREST → leg length or angular deformity"
+   ]
+  },
+  {
+   "id": "apo_head_0_0",
+   "x": 497,
+   "y": 278,
+   "w": 214,
+   "h": 98,
+   "kind": "apo_h",
+   "title": "Apophysis",
+   "lines": [
+    "tendon insertion: pulled by fast growth + tight muscle"
+   ]
+  },
+  {
+   "id": "ddh_head_0_0",
+   "x": 751,
+   "y": 278,
+   "w": 214,
+   "h": 98,
+   "kind": "ddh_h",
+   "title": "Developmental dysplasia of the hip",
+   "lines": [
+    "shallow acetabulum → subluxation or dislocation"
+   ]
+  },
+  {
+   "id": "club_head_0_0",
+   "x": 977,
+   "y": 278,
+   "w": 214,
+   "h": 98,
+   "kind": "club_h",
+   "title": "Clubfoot",
+   "lines": [
+    "ankle plantarflexed · heel and forefoot in varus"
+   ]
+  },
+  {
+   "id": "leg_head_0_0",
+   "x": 1203,
+   "y": 278,
+   "w": 214,
+   "h": 98,
+   "kind": "leg_h",
+   "title": "Leg shape",
+   "lines": [
+    "in-toeing · out-toeing · bow legs · knock knees"
+   ]
+  },
+  {
+   "id": "sco_head_0_0",
+   "x": 1429,
+   "y": 278,
+   "w": 214,
+   "h": 98,
+   "kind": "sco_h",
+   "title": "Scoliosis",
+   "lines": [
+    "lateral curve + rotation · idiopathic: adolescent, F > M"
+   ]
+  },
+  {
+   "id": "frac_pres_0_0",
+   "x": 45,
+   "y": 416,
+   "w": 214,
+   "h": 272,
+   "kind": "frac_t",
+   "title": "Bone bends or buckles",
+   "lines": [
+    "less ligament injury or dislocation than adults"
+   ]
+  },
+  {
+   "id": "sh_pres_0_0",
+   "x": 271,
+   "y": 416,
+   "w": 214,
+   "h": 272,
+   "kind": "sh_t",
+   "title": "A 'sprain' in a child",
+   "lines": [
+    "sprains are rare in kids: think Salter-Harris I"
+   ]
+  },
+  {
+   "id": "apo_pres_0_0",
+   "x": 497,
+   "y": 416,
+   "w": 214,
+   "h": 116,
+   "kind": "apo_t",
+   "title": "SUDDEN burst → AVULSION",
+   "lines": [
+    "• pelvis",
+    "• 5th metatarsal",
+    "• medial epicondyle"
+   ]
+  },
+  {
+   "id": "apo_pres_1_0",
+   "x": 497,
+   "y": 554,
+   "w": 214,
+   "h": 134,
+   "kind": "apo_w",
+   "title": "GRADUAL → APOPHYSITIS",
+   "lines": [
+    "• Osgood-Schlatter: tibial tuberosity",
+    "• Sinding-Larsen: distal patella",
+    "• Sever's: calcaneus"
+   ]
+  },
+  {
+   "id": "ddh_pres_0_0",
+   "x": 751,
+   "y": 416,
+   "w": 214,
+   "h": 272,
+   "kind": "ddh_t",
+   "title": "Risk factors",
+   "lines": [
+    "• first-born · female · breech",
+    "• family history · oligohydramnios",
+    "• torticollis · clubfoot"
+   ]
+  },
+  {
+   "id": "club_pres_0_0",
+   "x": 977,
+   "y": 416,
+   "w": 214,
+   "h": 272,
+   "kind": "club_t",
+   "title": "At birth",
+   "lines": [
+    "• genetic component",
+    "• spina bifida, other syndromes"
+   ]
+  },
+  {
+   "id": "leg_pres_0_0",
+   "x": 1203,
+   "y": 416,
+   "w": 214,
+   "h": 272,
+   "kind": "leg_t",
+   "title": "NORMAL for age",
+   "lines": [
+    "• bow legs (varum): birth to 2",
+    "• knock knees (valgum): 3 to 7"
+   ]
+  },
+  {
+   "id": "sco_pres_0_0",
+   "x": 1429,
+   "y": 416,
+   "w": 214,
+   "h": 272,
+   "kind": "sco_t",
+   "title": "Rib HUMP, rarely PAIN",
+   "lines": [
+    "often noticed incidentally"
+   ]
+  },
+  {
+   "id": "frac_inv_0_0",
+   "x": 45,
+   "y": 728,
+   "w": 214,
+   "h": 155,
+   "kind": "frac_w",
+   "title": "Remodels WELL if",
+   "lines": [
+    "• ≥ 2 years of growth left",
+    "• metaphyseal",
+    "• defect IN the joint's plane"
+   ]
+  },
+  {
+   "id": "frac_inv_1_0",
+   "x": 45,
+   "y": 905,
+   "w": 214,
+   "h": 155,
+   "kind": "frac_w",
+   "title": "Remodels POORLY if",
+   "lines": [
+    "• displaced intra-articular",
+    "• mid-shaft angulation or rotation",
+    "• defect OUT of plane"
+   ]
+  },
+  {
+   "id": "sh_inv_0_0",
+   "x": 271,
+   "y": 728,
+   "w": 214,
+   "h": 89,
+   "kind": "sh_w",
+   "title": "I and II",
+   "lines": [
+    "• II most common (distal radius)",
+    "• stable with closed reduction"
+   ]
+  },
+  {
+   "id": "sh_inv_1_0",
+   "x": 271,
+   "y": 839,
+   "w": 214,
+   "h": 109,
+   "kind": "sh_w",
+   "title": "III and IV: INTRA-ARTICULAR",
+   "lines": [
+    "• need ANATOMIC reduction",
+    "• IV: bony bridge risk"
+   ]
+  },
+  {
+   "id": "sh_inv_2_0",
+   "x": 271,
+   "y": 970,
+   "w": 214,
+   "h": 89,
+   "kind": "sh_w",
+   "title": "V: compression",
+   "lines": [
+    "often missed; found late as growth arrest"
+   ]
+  },
+  {
+   "id": "apo_inv_0_0",
+   "x": 497,
+   "y": 728,
+   "w": 214,
+   "h": 332,
+   "kind": "apo_w",
+   "title": "Apophysitis: CLINICAL diagnosis",
+   "lines": [
+    "Osgood-Schlatter: girls 8-14, boys 10-15"
+   ]
+  },
+  {
+   "id": "ddh_inv_0_0",
+   "x": 751,
+   "y": 728,
+   "w": 214,
+   "h": 164,
+   "kind": "ddh_w",
+   "title": "Up to 3-6 months",
+   "lines": [
+    "• Barlow: hip slips OUT (adduct, push back)",
+    "• Ortolani: hip slips back IN (abduct, lift)"
+   ]
+  },
+  {
+   "id": "ddh_inv_1_0",
+   "x": 751,
+   "y": 914,
+   "w": 214,
+   "h": 146,
+   "kind": "ddh_w",
+   "title": "After that: unreliable",
+   "lines": [
+    "• limited ABDUCTION",
+    "• Galeazzi: leg length difference",
+    "• painless waddling limp"
+   ]
+  },
+  {
+   "id": "club_inv_0_0",
+   "x": 977,
+   "y": 728,
+   "w": 214,
+   "h": 332,
+   "kind": "club_w",
+   "title": "Untreated",
+   "lines": [
+    "progressive deformity and stiffness; walking and footwear suffer"
+   ]
+  },
+  {
+   "id": "leg_inv_0_0",
+   "x": 1203,
+   "y": 728,
+   "w": 214,
+   "h": 332,
+   "kind": "bad",
+   "title": "Warning signs",
+   "lines": [
+    "• asymmetric · progressive varum · short stature",
+    "• persists beyond 7-8 years",
+    "• bone or nutritional disease"
+   ]
+  },
+  {
+   "id": "sco_inv_0_0",
+   "x": 1429,
+   "y": 728,
+   "w": 214,
+   "h": 114,
+   "kind": "sco_w",
+   "title": "Adams forward bend",
+   "lines": [
+    "• rib prominence on the convex side",
+    "• full neuro exam, skin over the spine"
+   ]
+  },
+  {
+   "id": "sco_inv_1_0",
+   "x": 1429,
+   "y": 864,
+   "w": 214,
+   "h": 78,
+   "kind": "sco_w",
+   "title": "X-ray",
+   "lines": [
+    "location · levels · direction · degrees"
+   ]
+  },
+  {
+   "id": "sco_inv_2_0",
+   "x": 1429,
+   "y": 964,
+   "w": 214,
+   "h": 96,
+   "kind": "sco_w",
+   "title": "Progresses if",
+   "lines": [
+    "• pre-menarchal (young)",
+    "• large or double curve",
+    "• thoracic"
+   ]
+  },
+  {
+   "id": "frac_tx_0_0",
+   "x": 45,
+   "y": 1100,
+   "w": 214,
+   "h": 146,
+   "kind": "ok",
+   "title": "Closed reduction → cast",
+   "lines": [
+    "hematoma block or conscious sedation"
+   ]
+  },
+  {
+   "id": "frac_tx_1_0",
+   "x": 45,
+   "y": 1268,
+   "w": 214,
+   "h": 148,
+   "kind": "warn",
+   "title": "ALWAYS post-reduction films",
+   "lines": [
+    "then timely follow-up"
+   ]
+  },
+  {
+   "id": "sh_tx_0_0",
+   "x": 271,
+   "y": 1100,
+   "w": 214,
+   "h": 316,
+   "kind": "bad",
+   "title": "EVERY growth plate injury is serious",
+   "lines": [
+    "• follow ≥ 1 year (preferably 2)",
+    "• warn the family"
+   ]
+  },
+  {
+   "id": "apo_tx_0_0",
+   "x": 497,
+   "y": 1100,
+   "w": 214,
+   "h": 316,
+   "kind": "ok",
+   "title": "Usually non-surgical",
+   "lines": [
+    "• apophysitis: rest, ice, compression, elevation; activity as tolerated; anti-inflammatories as needed",
+    "• settles within 2 years"
+   ]
+  },
+  {
+   "id": "ddh_tx_0_0",
+   "x": 751,
+   "y": 1100,
+   "w": 214,
+   "h": 138,
+   "kind": "ok",
+   "title": "Up to 6 months: Pavlik harness",
+   "lines": []
+  },
+  {
+   "id": "ddh_tx_1_0",
+   "x": 751,
+   "y": 1260,
+   "w": 214,
+   "h": 156,
+   "kind": "warn",
+   "title": "Older: closed reduction + spica cast",
+   "lines": [
+    "or open reduction ± osteotomy"
+   ]
+  },
+  {
+   "id": "club_tx_0_0",
+   "x": 977,
+   "y": 1100,
+   "w": 214,
+   "h": 134,
+   "kind": "ok",
+   "title": "Ponseti, from the first weeks",
+   "lines": [
+    "1 · weekly casting 4-6 weeks",
+    "2 · percutaneous Achilles lengthening",
+    "3 · cast 3 weeks"
+   ]
+  },
+  {
+   "id": "club_tx_1_0",
+   "x": 977,
+   "y": 1256,
+   "w": 214,
+   "h": 78,
+   "kind": "ok",
+   "title": "4 · Boots and bar",
+   "lines": [
+    "full time 3 months, then nights 2-3 years"
+   ]
+  },
+  {
+   "id": "club_tx_2_0",
+   "x": 977,
+   "y": 1356,
+   "w": 214,
+   "h": 60,
+   "kind": "warn",
+   "title": "Resistant or recurrent",
+   "lines": [
+    "posteromedial release surgery"
+   ]
+  },
+  {
+   "id": "leg_tx_0_0",
+   "x": 1203,
+   "y": 1100,
+   "w": 214,
+   "h": 316,
+   "kind": "ok",
+   "title": "Normal variant: reassure",
+   "lines": [
+    "avoid overtreatment"
+   ]
+  },
+  {
+   "id": "sco_tx_0_0",
+   "x": 1429,
+   "y": 1100,
+   "w": 214,
+   "h": 138,
+   "kind": "ok",
+   "title": "Monitor ± Boston brace",
+   "lines": [
+    "no drug treatment"
+   ]
+  },
+  {
+   "id": "sco_tx_1_0",
+   "x": 1429,
+   "y": 1260,
+   "w": 214,
+   "h": 156,
+   "kind": "warn",
+   "title": "Surgery: fusion",
+   "lines": [
+    "to STOP progression · by curve size and risk"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_inj",
+   "path": "M844.0 88V113H378.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_dev",
+   "path": "M844.0 88V113H1197.0V138"
+  },
+  {
+   "from": "apo_pres_0_0",
+   "to": "apo_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "frac_inv_0_0",
+   "to": "frac_inv_1_0"
+  },
+  {
+   "from": "sh_inv_0_0",
+   "to": "sh_inv_1_0"
+  },
+  {
+   "from": "sh_inv_1_0",
+   "to": "sh_inv_2_0"
+  },
+  {
+   "from": "ddh_inv_0_0",
+   "to": "ddh_inv_1_0"
+  },
+  {
+   "from": "sco_inv_0_0",
+   "to": "sco_inv_1_0"
+  },
+  {
+   "from": "sco_inv_1_0",
+   "to": "sco_inv_2_0"
+  },
+  {
+   "from": "frac_tx_0_0",
+   "to": "frac_tx_1_0"
+  },
+  {
+   "from": "ddh_tx_0_0",
+   "to": "ddh_tx_1_0"
+  },
+  {
+   "from": "club_tx_0_0",
+   "to": "club_tx_1_0"
+  },
+  {
+   "from": "club_tx_1_0",
+   "to": "club_tx_2_0"
+  },
+  {
+   "from": "sco_tx_0_0",
+   "to": "sco_tx_1_0"
+  },
+  {
+   "from": "frac_head_0_0",
+   "to": "frac_pres_0_0"
+  },
+  {
+   "from": "frac_pres_0_0",
+   "to": "frac_inv_0_0"
+  },
+  {
+   "from": "frac_inv_1_0",
+   "to": "frac_tx_0_0"
+  },
+  {
+   "from": "g_inj",
+   "to": "frac_head_0_0",
+   "from_dx": -226
+  },
+  {
+   "from": "sh_head_0_0",
+   "to": "sh_pres_0_0"
+  },
+  {
+   "from": "sh_pres_0_0",
+   "to": "sh_inv_0_0"
+  },
+  {
+   "from": "sh_inv_2_0",
+   "to": "sh_tx_0_0"
+  },
+  {
+   "from": "g_inj",
+   "to": "sh_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "apo_head_0_0",
+   "to": "apo_pres_0_0"
+  },
+  {
+   "from": "apo_pres_1_0",
+   "to": "apo_inv_0_0"
+  },
+  {
+   "from": "apo_inv_0_0",
+   "to": "apo_tx_0_0"
+  },
+  {
+   "from": "g_inj",
+   "to": "apo_head_0_0",
+   "from_dx": 226
+  },
+  {
+   "from": "ddh_head_0_0",
+   "to": "ddh_pres_0_0"
+  },
+  {
+   "from": "ddh_pres_0_0",
+   "to": "ddh_inv_0_0"
+  },
+  {
+   "from": "ddh_inv_1_0",
+   "to": "ddh_tx_0_0"
+  },
+  {
+   "from": "g_dev",
+   "to": "ddh_head_0_0",
+   "from_dx": -339
+  },
+  {
+   "from": "club_head_0_0",
+   "to": "club_pres_0_0"
+  },
+  {
+   "from": "club_pres_0_0",
+   "to": "club_inv_0_0"
+  },
+  {
+   "from": "club_inv_0_0",
+   "to": "club_tx_0_0"
+  },
+  {
+   "from": "g_dev",
+   "to": "club_head_0_0",
+   "from_dx": -113
+  },
+  {
+   "from": "leg_head_0_0",
+   "to": "leg_pres_0_0"
+  },
+  {
+   "from": "leg_pres_0_0",
+   "to": "leg_inv_0_0"
+  },
+  {
+   "from": "leg_inv_0_0",
+   "to": "leg_tx_0_0"
+  },
+  {
+   "from": "g_dev",
+   "to": "leg_head_0_0",
+   "from_dx": 113
+  },
+  {
+   "from": "sco_head_0_0",
+   "to": "sco_pres_0_0"
+  },
+  {
+   "from": "sco_pres_0_0",
+   "to": "sco_inv_0_0"
+  },
+  {
+   "from": "sco_inv_2_0",
+   "to": "sco_tx_0_0"
+  },
+  {
+   "from": "g_dev",
+   "to": "sco_head_0_0",
+   "from_dx": 339
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1450,
+   "w": 792,
+   "title": "Pediatric elbow",
+   "items": [
+    "ossification centres appear in order CRITOE at about 1 · 3 · 5 · 7 · 9 · 11 years: capitellum, radial head, internal (medial) epicondyle, trochlea, olecranon, external (lateral) epicondyle",
+    "swelling = suspect a bony injury · call pediatric orthopedics for a very swollen elbow, instability, a displaced fracture or an incongruously reduced dislocation"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 851,
+   "y": 1450,
+   "w": 792,
+   "title": "A limping child",
+   "items": [
+    "causes differ by AGE: missed hip dysplasia · clubfoot · hip disease (transient synovitis, Perthes, slipped capital femoral epiphysis) · overuse · trauma, accidental or not",
+    "warning signs in any abnormal gait: asymmetry · progressive · leg length difference · pain · deformity",
+    "see the CHILD WITH A LIMP chart"
+   ],
+   "cols": 1
+  }
+ ]
+}

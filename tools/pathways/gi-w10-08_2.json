@@ -1,0 +1,746 @@
+{
+ "name": "peptic ulcer and acid-lowering drugs overview",
+ "width": 1316,
+ "title": "Peptic ulcer and acid-lowering drugs decision chart: gastric versus duodenal ulcer told apart by pain timing, cause and malignant potential; proton pump inhibitors, H2 blockers and antacids compared by when to choose them, how to take them and what to watch for",
+ "kinds": {
+  "gu_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gu_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "gu_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "du_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "du_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "du_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ppi_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ppi_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ppi_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "h2_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "h2_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "h2_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ant_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ant_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ant_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 246,
+   "h": 858,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 288,
+   "y": 288,
+   "w": 246,
+   "h": 858,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 564,
+   "y": 288,
+   "w": 246,
+   "h": 858,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 812,
+   "y": 288,
+   "w": 246,
+   "h": 858,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1060,
+   "y": 288,
+   "w": 246,
+   "h": 858,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 432,
+   "h": 132,
+   "text": "WHEN"
+  },
+  {
+   "x": 23,
+   "y": 604,
+   "h": 216,
+   "text": "CONFIRM / TAKE"
+  },
+  {
+   "x": 23,
+   "y": 860,
+   "h": 278,
+   "text": "TREAT / WATCH"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 293,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Peptic ulcer disease: WHICH ulcer, and HOW MUCH acid suppression?",
+   "lines": [
+    "an ulcer goes through the whole mucosa (muscularis mucosae too); less is an erosion · acid + pepsin overwhelm the defences",
+    "GASTRITIS behind it: ACUTE from non-steroidal anti-inflammatory drugs (NSAIDs), steroids, alcohol, severe stress (burns, shock, sepsis) · CHRONIC from H. pylori (commonest), autoimmune, chemical"
+   ]
+  },
+  {
+   "id": "g_ulc",
+   "x": 45,
+   "y": 156,
+   "w": 484,
+   "h": 60,
+   "kind": "plain",
+   "title": "THE ULCER: stomach or duodenum?",
+   "lines": [
+    "the TIMING of the pain points the way"
+   ]
+  },
+  {
+   "id": "g_drug",
+   "x": 569,
+   "y": 156,
+   "w": 732,
+   "h": 60,
+   "kind": "plain",
+   "title": "THE DRUG: how much acid suppression?",
+   "lines": [
+    "strongest to weakest: PPI → H2 blocker → antacid"
+   ]
+  },
+  {
+   "id": "gu_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 236,
+   "h": 96,
+   "kind": "gu_h",
+   "title": "Gastric ulcer",
+   "lines": [
+    "lesser curvature, antrum, pylorus",
+    "↓ DEFENCES"
+   ]
+  },
+  {
+   "id": "du_head_0_0",
+   "x": 293,
+   "y": 296,
+   "w": 236,
+   "h": 96,
+   "kind": "du_h",
+   "title": "Duodenal ulcer",
+   "lines": [
+    "first part of the duodenum",
+    "↑ ACID DAMAGE"
+   ]
+  },
+  {
+   "id": "ppi_head_0_0",
+   "x": 569,
+   "y": 296,
+   "w": 236,
+   "h": 96,
+   "kind": "ppi_h",
+   "title": "Proton pump inhibitor (PPI)",
+   "lines": [
+    "'-prazole': IRREVERSIBLY blocks the H+/K+ ATPase",
+    "the LAST step, so the strongest"
+   ]
+  },
+  {
+   "id": "h2_head_0_0",
+   "x": 817,
+   "y": 296,
+   "w": 236,
+   "h": 96,
+   "kind": "h2_h",
+   "title": "H2 blocker",
+   "lines": [
+    "'-tidine': REVERSIBLY blocks histamine only",
+    "weaker than a PPI"
+   ]
+  },
+  {
+   "id": "ant_head_0_0",
+   "x": 1065,
+   "y": 296,
+   "w": 236,
+   "h": 96,
+   "kind": "ant_h",
+   "title": "Antacids",
+   "lines": [
+    "NEUTRALIZE acid",
+    "fast onset, short action"
+   ]
+  },
+  {
+   "id": "gu_clue_0_0",
+   "x": 45,
+   "y": 432,
+   "w": 236,
+   "h": 132,
+   "kind": "gu_t",
+   "title": "Burning pain DURING a meal",
+   "lines": [
+    "• older, men = women",
+    "• NSAIDs more than H. pylori"
+   ]
+  },
+  {
+   "id": "du_clue_0_0",
+   "x": 293,
+   "y": 432,
+   "w": 236,
+   "h": 132,
+   "kind": "du_t",
+   "title": "Pain 2–3 h AFTER a meal",
+   "lines": [
+    "• RELIEVED by eating",
+    "• any age, more in men",
+    "• H. pylori more than NSAIDs"
+   ]
+  },
+  {
+   "id": "ppi_clue_0_0",
+   "x": 569,
+   "y": 432,
+   "w": 236,
+   "h": 132,
+   "kind": "ppi_t",
+   "title": "Choose when",
+   "lines": [
+    "• ulcer, gastroesophageal reflux (GERD), erosive esophagitis, Barrett's",
+    "• H. pylori regimen, Zollinger-Ellison",
+    "• stress ulcer prevention"
+   ]
+  },
+  {
+   "id": "h2_clue_0_0",
+   "x": 817,
+   "y": 432,
+   "w": 236,
+   "h": 132,
+   "kind": "h2_t",
+   "title": "Choose when",
+   "lines": [
+    "• uncomplicated GERD, heartburn, dyspepsia",
+    "• liver disease: NIZATIDINE"
+   ]
+  },
+  {
+   "id": "ant_clue_0_0",
+   "x": 1065,
+   "y": 432,
+   "w": 236,
+   "h": 132,
+   "kind": "ant_t",
+   "title": "Symptom relief only",
+   "lines": [
+    "• heartburn, dyspepsia",
+    "• does NOT heal the mucosa"
+   ]
+  },
+  {
+   "id": "gu_inv_0_0",
+   "x": 45,
+   "y": 604,
+   "w": 236,
+   "h": 78,
+   "kind": "gu_w",
+   "title": "1 · Endoscopy",
+   "lines": [
+    "more sensitive than a barium upper GI series, and biopsies"
+   ]
+  },
+  {
+   "id": "gu_inv_1_0",
+   "x": 45,
+   "y": 704,
+   "w": 236,
+   "h": 116,
+   "kind": "bad",
+   "title": "2 · ALWAYS biopsy + scope to healing",
+   "lines": [
+    "CAN be malignant: oval, irregular edge, HEAPED-UP margins, folds stop short"
+   ]
+  },
+  {
+   "id": "du_inv_0_0",
+   "x": 293,
+   "y": 604,
+   "w": 236,
+   "h": 97,
+   "kind": "du_w",
+   "title": "1 · Endoscopy",
+   "lines": []
+  },
+  {
+   "id": "du_inv_1_0",
+   "x": 293,
+   "y": 723,
+   "w": 236,
+   "h": 97,
+   "kind": "ok",
+   "title": "Almost NEVER malignant",
+   "lines": []
+  },
+  {
+   "id": "ppi_inv_0_0",
+   "x": 569,
+   "y": 604,
+   "w": 236,
+   "h": 97,
+   "kind": "ppi_t",
+   "title": "30–60 min BEFORE breakfast",
+   "lines": [
+    "pumps ↑ after fasting"
+   ]
+  },
+  {
+   "id": "ppi_inv_1_0",
+   "x": 569,
+   "y": 723,
+   "w": 236,
+   "h": 97,
+   "kind": "ppi_w",
+   "title": "Severe liver disease",
+   "lines": [
+    "adjust the dose (CYP metabolism)"
+   ]
+  },
+  {
+   "id": "h2_inv_0_0",
+   "x": 817,
+   "y": 604,
+   "w": 236,
+   "h": 97,
+   "kind": "h2_t",
+   "title": "Adjust for kidneys + elderly",
+   "lines": [
+    "renally cleared"
+   ]
+  },
+  {
+   "id": "h2_inv_1_0",
+   "x": 817,
+   "y": 723,
+   "w": 236,
+   "h": 97,
+   "kind": "h2_w",
+   "title": "TACHYPHYLAXIS",
+   "lines": [
+    "poor long term"
+   ]
+  },
+  {
+   "id": "ant_inv_0_0",
+   "x": 1065,
+   "y": 604,
+   "w": 236,
+   "h": 79,
+   "kind": "ant_t",
+   "title": "AFTER a meal",
+   "lines": []
+  },
+  {
+   "id": "ant_inv_1_0",
+   "x": 1065,
+   "y": 705,
+   "w": 236,
+   "h": 115,
+   "kind": "ant_w",
+   "title": "Space other drugs 2 h",
+   "lines": [
+    "levothyroxine, bisphosphonates, tetracycline"
+   ]
+  },
+  {
+   "id": "gu_tx_0_0",
+   "x": 45,
+   "y": 860,
+   "w": 236,
+   "h": 71,
+   "kind": "ok",
+   "title": "PPI",
+   "lines": [
+    "heals the mucosa"
+   ]
+  },
+  {
+   "id": "gu_tx_1_0",
+   "x": 45,
+   "y": 953,
+   "w": 236,
+   "h": 71,
+   "kind": "ok",
+   "title": "H. pylori → antibiotics",
+   "lines": [
+    "PPI is part of the regimen"
+   ]
+  },
+  {
+   "id": "gu_tx_2_0",
+   "x": 45,
+   "y": 1046,
+   "w": 236,
+   "h": 91,
+   "kind": "ok",
+   "title": "↑ defences: prostaglandin analogue",
+   "lines": [
+    "more mucus + bicarbonate"
+   ]
+  },
+  {
+   "id": "du_tx_0_0",
+   "x": 293,
+   "y": 860,
+   "w": 236,
+   "h": 137,
+   "kind": "ok",
+   "title": "H. pylori → antibiotics",
+   "lines": [
+    "PPI is part of the regimen"
+   ]
+  },
+  {
+   "id": "du_tx_1_0",
+   "x": 293,
+   "y": 1019,
+   "w": 236,
+   "h": 119,
+   "kind": "ok",
+   "title": "PPI",
+   "lines": []
+  },
+  {
+   "id": "ppi_tx_0_0",
+   "x": 569,
+   "y": 860,
+   "w": 236,
+   "h": 78,
+   "kind": "bad",
+   "title": "CLOPIDOGREL",
+   "lines": [
+    "both use CYP2C19: ↓ clopidogrel effect, ↑ cardiac events"
+   ]
+  },
+  {
+   "id": "ppi_tx_1_0",
+   "x": 569,
+   "y": 960,
+   "w": 236,
+   "h": 96,
+   "kind": "warn",
+   "title": "Long term",
+   "lines": [
+    "• infection, C. difficile",
+    "• ↓ B12, Mg, Ca: fractures",
+    "• fundic gland polyps"
+   ]
+  },
+  {
+   "id": "ppi_tx_2_0",
+   "x": 569,
+   "y": 1078,
+   "w": 236,
+   "h": 60,
+   "kind": "warn",
+   "title": "TAPER to stop",
+   "lines": [
+    "rebound acid"
+   ]
+  },
+  {
+   "id": "h2_tx_0_0",
+   "x": 817,
+   "y": 860,
+   "w": 236,
+   "h": 136,
+   "kind": "bad",
+   "title": "CIMETIDINE",
+   "lines": [
+    "• CYP inhibitor: warfarin, propranolol, benzodiazepines",
+    "• anti-androgen: gynecomastia, ↑ prolactin"
+   ]
+  },
+  {
+   "id": "h2_tx_1_0",
+   "x": 817,
+   "y": 1018,
+   "w": 236,
+   "h": 120,
+   "kind": "warn",
+   "title": "Crosses the blood-brain barrier",
+   "lines": [
+    "confusion, dizziness: care in the elderly"
+   ]
+  },
+  {
+   "id": "ant_tx_0_0",
+   "x": 1065,
+   "y": 860,
+   "w": 236,
+   "h": 278,
+   "kind": "warn",
+   "title": "By the salt",
+   "lines": [
+    "• magnesium: DIARRHEA",
+    "• aluminum: CONSTIPATION",
+    "• calcium: milk-alkali, hypercalcemia",
+    "• bicarbonate: fluid retention: care in heart failure"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ulc",
+   "path": "M673.0 106V131H287.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_drug",
+   "path": "M673.0 106V131H935.0V156"
+  },
+  {
+   "from": "gu_inv_0_0",
+   "to": "gu_inv_1_0"
+  },
+  {
+   "from": "du_inv_0_0",
+   "to": "du_inv_1_0"
+  },
+  {
+   "from": "ppi_inv_0_0",
+   "to": "ppi_inv_1_0"
+  },
+  {
+   "from": "h2_inv_0_0",
+   "to": "h2_inv_1_0"
+  },
+  {
+   "from": "ant_inv_0_0",
+   "to": "ant_inv_1_0"
+  },
+  {
+   "from": "gu_tx_0_0",
+   "to": "gu_tx_1_0"
+  },
+  {
+   "from": "gu_tx_1_0",
+   "to": "gu_tx_2_0"
+  },
+  {
+   "from": "du_tx_0_0",
+   "to": "du_tx_1_0"
+  },
+  {
+   "from": "ppi_tx_0_0",
+   "to": "ppi_tx_1_0"
+  },
+  {
+   "from": "ppi_tx_1_0",
+   "to": "ppi_tx_2_0"
+  },
+  {
+   "from": "h2_tx_0_0",
+   "to": "h2_tx_1_0"
+  },
+  {
+   "from": "gu_head_0_0",
+   "to": "gu_clue_0_0"
+  },
+  {
+   "from": "gu_clue_0_0",
+   "to": "gu_inv_0_0"
+  },
+  {
+   "from": "gu_inv_1_0",
+   "to": "gu_tx_0_0"
+  },
+  {
+   "from": "g_ulc",
+   "to": "gu_head_0_0",
+   "from_dx": -124,
+   "label": "pain DURING a meal",
+   "label_at": [
+    163.0,
+    256
+   ]
+  },
+  {
+   "from": "du_head_0_0",
+   "to": "du_clue_0_0"
+  },
+  {
+   "from": "du_clue_0_0",
+   "to": "du_inv_0_0"
+  },
+  {
+   "from": "du_inv_1_0",
+   "to": "du_tx_0_0"
+  },
+  {
+   "from": "g_ulc",
+   "to": "du_head_0_0",
+   "from_dx": 124,
+   "label": "pain 2–3 h AFTER",
+   "label_at": [
+    411.0,
+    256
+   ]
+  },
+  {
+   "from": "ppi_head_0_0",
+   "to": "ppi_clue_0_0"
+  },
+  {
+   "from": "ppi_clue_0_0",
+   "to": "ppi_inv_0_0"
+  },
+  {
+   "from": "ppi_inv_1_0",
+   "to": "ppi_tx_0_0"
+  },
+  {
+   "from": "g_drug",
+   "to": "ppi_head_0_0",
+   "from_dx": -248,
+   "label": "heal it",
+   "label_at": [
+    687.0,
+    256
+   ]
+  },
+  {
+   "from": "h2_head_0_0",
+   "to": "h2_clue_0_0"
+  },
+  {
+   "from": "h2_clue_0_0",
+   "to": "h2_inv_0_0"
+  },
+  {
+   "from": "h2_inv_1_0",
+   "to": "h2_tx_0_0"
+  },
+  {
+   "from": "g_drug",
+   "to": "h2_head_0_0",
+   "from_dx": 0,
+   "label": "milder",
+   "label_at": [
+    935.0,
+    256
+   ]
+  },
+  {
+   "from": "ant_head_0_0",
+   "to": "ant_clue_0_0"
+  },
+  {
+   "from": "ant_clue_0_0",
+   "to": "ant_inv_0_0"
+  },
+  {
+   "from": "ant_inv_1_0",
+   "to": "ant_tx_0_0"
+  },
+  {
+   "from": "g_drug",
+   "to": "ant_head_0_0",
+   "from_dx": 248,
+   "label": "relief now",
+   "label_at": [
+    1183.0,
+    256
+   ]
+  }
+ ],
+ "panels": []
+}

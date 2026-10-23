@@ -1,0 +1,446 @@
+{
+ "name": "sepsis overview",
+ "width": 1204,
+ "title": "Sepsis decision chart: recognise sepsis early from physiology, symptoms and high-risk groups, then act on three fronts at once: broad-spectrum antibiotics without delay, finding and controlling the source, and life support for failing organs (vasopressors when blood pressure does not respond to fluids)",
+ "kinds": {
+  "re_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "re_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "re_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ab_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ab_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ab_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "so_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "so_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "so_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ls_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ls_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ls_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 280,
+   "h": 740,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 350,
+   "y": 288,
+   "w": 280,
+   "h": 740,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 632,
+   "y": 288,
+   "w": 280,
+   "h": 740,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 914,
+   "y": 288,
+   "w": 280,
+   "h": 740,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 396,
+   "h": 232,
+   "text": "LOOK FOR"
+  },
+  {
+   "x": 23,
+   "y": 668,
+   "h": 352,
+   "text": "DO"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 237,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A SICK patient: could this be SEPSIS?",
+   "lines": [
+    "sepsis = life-threatening ORGAN DYSFUNCTION from a dysregulated host response to infection (bacteria, viruses, fungi)",
+    "an emergency: mortality 30–40% · the more organs fail, the likelier death"
+   ]
+  },
+  {
+   "id": "g_rec",
+   "x": 45,
+   "y": 138,
+   "w": 270,
+   "h": 78,
+   "kind": "plain",
+   "title": "1 · RECOGNISE IT",
+   "lines": [
+    "wherever you work: have a plan to NOT miss it"
+   ]
+  },
+  {
+   "id": "g_act",
+   "x": 355,
+   "y": 138,
+   "w": 834,
+   "h": 78,
+   "kind": "plain",
+   "title": "2 · Then act on ALL THREE at once",
+   "lines": []
+  },
+  {
+   "id": "re_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 270,
+   "h": 60,
+   "kind": "re_h",
+   "title": "Early recognition",
+   "lines": [
+    "inflammation is no longer local"
+   ]
+  },
+  {
+   "id": "ab_head_0_0",
+   "x": 355,
+   "y": 296,
+   "w": 270,
+   "h": 60,
+   "kind": "ab_h",
+   "title": "Early antibiotics",
+   "lines": [
+    "NOTHING saves more lives"
+   ]
+  },
+  {
+   "id": "so_head_0_0",
+   "x": 637,
+   "y": 296,
+   "w": 270,
+   "h": 60,
+   "kind": "so_h",
+   "title": "Source control",
+   "lines": [
+    "find it fast, control it fast"
+   ]
+  },
+  {
+   "id": "ls_head_0_0",
+   "x": 919,
+   "y": 296,
+   "w": 270,
+   "h": 60,
+   "kind": "ls_h",
+   "title": "Life support",
+   "lines": [
+    "invasive support for FAILING organs"
+   ]
+  },
+  {
+   "id": "re_spot_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 270,
+   "h": 96,
+   "kind": "re_t",
+   "title": "Physiology",
+   "lines": [
+    "• lung: tachypnea, hypoxia",
+    "• heart: tachycardia, hypotension",
+    "• kidney: oliguria"
+   ]
+  },
+  {
+   "id": "re_spot_1_0",
+   "x": 45,
+   "y": 514,
+   "w": 270,
+   "h": 114,
+   "kind": "re_w",
+   "title": "Symptoms",
+   "lines": [
+    "• rapid decline in function, family concerned",
+    "• new confusion, looks very unwell",
+    "• fever OR hypothermia, warm, flushed"
+   ]
+  },
+  {
+   "id": "ab_spot_0_0",
+   "x": 355,
+   "y": 396,
+   "w": 270,
+   "h": 232,
+   "kind": "bad",
+   "title": "MINUTES COUNT",
+   "lines": [
+    "about 8% ↑ mortality per HOUR of delay once hypotension starts"
+   ]
+  },
+  {
+   "id": "so_spot_0_0",
+   "x": 637,
+   "y": 396,
+   "w": 270,
+   "h": 232,
+   "kind": "so_t",
+   "title": "FIND the source",
+   "lines": [
+    "• exam: wound, rash",
+    "• imaging: CT, ultrasound"
+   ]
+  },
+  {
+   "id": "ls_spot_0_0",
+   "x": 919,
+   "y": 396,
+   "w": 270,
+   "h": 232,
+   "kind": "ls_t",
+   "title": "BP not responding to FLUIDS?",
+   "lines": [
+    "= SEPTIC SHOCK: arterioles dilate, capillaries leak"
+   ]
+  },
+  {
+   "id": "re_do_0_0",
+   "x": 45,
+   "y": 668,
+   "w": 270,
+   "h": 352,
+   "kind": "re_t",
+   "title": "Suspect it EARLY in",
+   "lines": [
+    "• recent surgery or chemotherapy",
+    "• the immunosuppressed",
+    "• the elderly"
+   ]
+  },
+  {
+   "id": "ab_do_0_0",
+   "x": 355,
+   "y": 668,
+   "w": 270,
+   "h": 157,
+   "kind": "warn",
+   "title": "1 · Cultures FIRST, only if they will not delay the dose",
+   "lines": []
+  },
+  {
+   "id": "ab_do_1_0",
+   "x": 355,
+   "y": 847,
+   "w": 270,
+   "h": 173,
+   "kind": "ok",
+   "title": "2 · BROAD spectrum, ASAP",
+   "lines": [
+    "• often multidrug",
+    "• whatever it takes to get it into the blood"
+   ]
+  },
+  {
+   "id": "so_do_0_0",
+   "x": 637,
+   "y": 668,
+   "w": 270,
+   "h": 352,
+   "kind": "ok",
+   "title": "CONTROL it",
+   "lines": [
+    "• surgery (e.g. appendectomy)",
+    "• DRAIN an abscess",
+    "• REMOVE the infected line or implant"
+   ]
+  },
+  {
+   "id": "ls_do_0_0",
+   "x": 919,
+   "y": 668,
+   "w": 270,
+   "h": 98,
+   "kind": "ok",
+   "title": "1 · Shock: VASOPRESSORS ± inotropes",
+   "lines": [
+    "raise the BP without drowning the tissues in fluid (edema)"
+   ]
+  },
+  {
+   "id": "ls_do_1_0",
+   "x": 919,
+   "y": 788,
+   "w": 270,
+   "h": 150,
+   "kind": "ok",
+   "title": "2 · The other organs",
+   "lines": [
+    "• lung: lung-protective ventilation, prone, extracorporeal membrane oxygenation (ECMO)",
+    "• kidney: dialysis, continuous renal replacement",
+    "• brain: sedation, delirium drugs"
+   ]
+  },
+  {
+   "id": "ls_do_2_0",
+   "x": 919,
+   "y": 960,
+   "w": 270,
+   "h": 60,
+   "kind": "warn",
+   "title": "Buys TIME, fixes nothing",
+   "lines": [
+    "can harm: a last resort"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_rec",
+   "path": "M617.0 88V113H180.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_act",
+   "path": "M617.0 88V113H772.0V138"
+  },
+  {
+   "from": "re_spot_0_0",
+   "to": "re_spot_1_0"
+  },
+  {
+   "from": "ab_do_0_0",
+   "to": "ab_do_1_0"
+  },
+  {
+   "from": "ls_do_0_0",
+   "to": "ls_do_1_0"
+  },
+  {
+   "from": "ls_do_1_0",
+   "to": "ls_do_2_0"
+  },
+  {
+   "from": "re_head_0_0",
+   "to": "re_spot_0_0"
+  },
+  {
+   "from": "re_spot_1_0",
+   "to": "re_do_0_0"
+  },
+  {
+   "from": "g_rec",
+   "to": "re_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ab_head_0_0",
+   "to": "ab_spot_0_0"
+  },
+  {
+   "from": "ab_spot_0_0",
+   "to": "ab_do_0_0"
+  },
+  {
+   "from": "g_act",
+   "to": "ab_head_0_0",
+   "from_dx": -282
+  },
+  {
+   "from": "so_head_0_0",
+   "to": "so_spot_0_0"
+  },
+  {
+   "from": "so_spot_0_0",
+   "to": "so_do_0_0"
+  },
+  {
+   "from": "g_act",
+   "to": "so_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ls_head_0_0",
+   "to": "ls_spot_0_0"
+  },
+  {
+   "from": "ls_spot_0_0",
+   "to": "ls_do_0_0"
+  },
+  {
+   "from": "g_act",
+   "to": "ls_head_0_0",
+   "from_dx": 282
+  }
+ ],
+ "panels": []
+}

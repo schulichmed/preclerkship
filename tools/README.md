@@ -1,0 +1,424 @@
+# Rebuilding the portal
+
+**This page is PoM 2's.** The portal now carries four courses, and each keeps
+its own extractors beside its own sources:
+
+| Course | Extractors | Reads |
+|---|---|---|
+| PoM 2 | `tools/*.py` (this page) | an Obsidian vault of lecture notes |
+| FoM | `tools/fom/` | the block question-bank PDFs and the workbook |
+| PoM 1 | `tools/pom1/` | the block bank PDFs, the workbook, and upper-year study notes |
+| T2C | none | its questions arrived as JSON |
+
+**The FoM and PoM 1 notes are now hand-curated.** On 2026-09-27 every written
+lecture in `fom/data/notes/b1..b4.json` and `pom1/data/notes/{cardio,gi,resp}.json`
+was cleaned by hand on top of what the extractors produced: split sentences
+rejoined, phantom tables rebuilt, exploded equations rewritten, stray diagram
+labels removed, misfiled sections moved to the lecture they belong to, a
+framing and keypoints written for each, and 240 mermaid flowcharts added. Each
+of those files carries a top-level `curated` key saying so. Re-running
+`tools/fom/parse_summative.py` or `tools/pom1/notes_from_pdf.py` would overwrite
+all of that, so they are kept for reference and for any block that has no
+notes yet (ENT, GU); do not run them over a curated block.
+
+The three *builders* below - `build_pages.py`, `build_index.py`,
+`build_hub.py` - are shared: each runs over every course in
+[`portal.py`](portal.py)'s roster, so a course is a dictionary, a directory and
+some JSON rather than a fork of the engine. Two repair passes are shared too:
+`question_figures.py`, which moves an inlined picture out into a file, and
+`roman_items.py`, which puts a roman-numeral item list back in the stem it was
+parsed out of. Both run after the extractors and both are idempotent.
+
+A third pass, `key_fixes.py`, repairs answer keys. A "The key looks wrong" flag
+explains a bad key to the reader, but the bank kept scoring against it, so the
+lecture's answer was marked wrong. `tools/key_fixes/<course>.json` lists each
+repair with the lecture evidence for it; the pass sets the key (or marks the
+question not scored when no option is defensible), saves the source's key as
+`sourceKey`, and turns the red flag into a "Key corrected" note naming what the
+source said. Run `python3 tools/key_fixes.py fom` after the extractors, like the
+other two; it is idempotent. On the page, a stem that says "select all that
+apply" is always asked as a select-all, and says so instead of giving away the
+count (`markSelectAll` in `quiz.js`).
+
+Three more shared modules serve the two PDF extractors, because FoM's and
+PoM 1's notes are the same kind of document and were getting the same things
+wrong in two places:
+
+| Module | What it does |
+|---|---|
+| [`tables.py`](tables.py) | reads a **ruled** table off a page, keeping the bold, and repairs what the finder gets wrong: a wrapped heading folded back, a phantom column merged away, a chart title lifted off the top row, and one ruled box split into the tables actually stacked inside it |
+| [`diagrams.py`](diagrams.py) | rasterises artwork the PDF *draws* rather than embeds, so a labelled figure arrives as a figure instead of its labels arriving as loose paragraphs. A cluster has to be made of curve and line segments to qualify - a dashed box round a callout is rectangles only, and its text is already being read as text |
+| [`coverage.py`](coverage.py) | titles a note with every lecture it covers, so a chart that runs two lectures together names both instead of leaving one showing as a gap |
+
+**Reader reports.** Every question in the bank has a Report button, and two
+pieces here carry a report from that button to a pull request:
+
+| Piece | What it does |
+|---|---|
+| [`report-worker/`](report-worker/) | the relay, a Cloudflare Worker that checks the report, rate-limits it and opens a GitHub issue labelled `report` with a fenced block naming the question |
+| [`report_to_pr.py`](report_to_pr.py) | the Action's script: reads that block, appends a `report` flag to the question's JSON, rebuilds the pages and opens the pull request |
+
+The one-time setup, a token and a deploy, is in
+[`report-worker/README.md`](report-worker/README.md).
+
+**Why the tables are read off the ruling lines.** Both extractors used to infer
+a table from its typography and both got it wrong: PoM 1 had no table
+recovery at all and emitted every cell as its own paragraph, and FoM's x-anchor
+clustering merged the two tables on the ADHD page into one and promoted the
+bold sentence above them to a column heading - which, at 143 characters against
+a `white-space: nowrap` rule, set that column thousands of pixels wide and
+pushed the criteria off the side of the page. These documents do rule their
+tables, so the rules are what to read.
+
+---
+
+Four scripts, run from the repo root, in this order. Python 3, no dependencies.
+
+```bash
+python tools/rosters_from_vault.py    # every lecture in the block, written up or not
+python tools/charts_from_vault.py     # folds the notes that exist on top
+python tools/build_pages.py           # the five block pages
+python tools/build_index.py           # the landing page and its counts
+```
+
+The first two read an Obsidian vault of lecture notes. The last two read only
+`data/` and the pages already in the repo, so they run anywhere.
+
+If any chart embeds a figure, `figures.py` goes between the first two:
+
+```bash
+python tools/figures.py               # encodes chart figures into assets/figures/
+```
+
+It is separate because it needs Pillow, and keeping it out of the four above is
+what lets them stay dependency-free. It is also skippable: a chart with no
+`![[picture.png]]` in it needs nothing from it.
+
+**After writing a new note, run the first two and then the last two.** The block
+pages and the index both print counts, so they go stale otherwise.
+
+## Pointing them at your vault
+
+`rosters_from_vault.py` and `charts_from_vault.py` default to the author's vault
+path. Set `POM2_VAULT` to your own:
+
+```bash
+export POM2_VAULT="/path/to/vault/01 - Lectures/99 - PoM 2"   # bash
+$env:POM2_VAULT = "C:\path\to\vault\01 - Lectures\99 - PoM 2" # PowerShell
+```
+
+Inside that folder the scripts expect one directory per block (`01 - Endocrinology`,
+`02 - Repro`, `03 - MSK`, `04 - Neuro`, `05 - Psych`), each holding `Week N`
+folders of `.md` files named `NN - Lecture title.md`. The block list and its week
+numbers live in `BLOCKS` at the top of both scripts. Edit that and the portal
+follows a different course.
+
+## What each one does
+
+**`rosters_from_vault.py`** lists every lecture note in each block's week folders
+and writes `data/notes/<slug>.json` with `"hasNote": false` throughout. The roster
+is the point: a lecture with no note still appears, so the notes tab reads as a
+coverage map. Week headings are borrowed from `data/questions/<slug>.json` so both
+tabs name a week the same way.
+
+**A word on vocabulary.** The vault calls these *charts*, since the region at the
+top of each lecture note opens `# Overview chart:`, and the site calls them
+*notes*. The extractor keeps the vault's word because that is what it reads.
+Everything on the site side uses the site's.
+
+**`charts_from_vault.py`** lifts the chart out of the top of each lecture note,
+meaning the region between the frontmatter and the first `---`, and folds it into
+the roster. It keeps the parts in source order in a `blocks` array, because the
+sentence above a table is the reason the table is there. Markdown becomes inline
+HTML: `**bold**`, `<u>`, `<br>`, `[[wikilinks]]` as `<span class="wl">`,
+`[text](url)` as a real link, and mermaid fences as `{"t": "pathway"}`.
+
+An Obsidian embed **alone on its line** becomes `{"t": "figure"}`; one with prose
+around it is left as text, because that is a sentence mentioning a picture rather
+than a block. The pipe is read the way the vault already writes it: a number is a
+width (`![[adrenal crisis card.png|300]]`), anything else is a caption
+(`![[hpg axis.png|The hypothalamic-pituitary-gonadal axis]]`). A figure whose file
+`figures.py` has not encoded is reported by name and skipped, so a missing picture
+is a line on stderr rather than a silent hole in the page.
+
+**`figures.py`** reads the same chart regions, resolves each embed against the
+vault's `Attachments`, re-compresses it to a JPEG under 220 KB and at most 900px
+wide (the note's column width), and writes it to `assets/figures/<hash>.jpg` plus
+the `data/figures.json` manifest that `charts_from_vault.py` reads. Naming a file
+after its own bytes means re-runs are free and duplicates collapse. It prints
+every newly-encoded picture, because a new image should never be added unseen -
+it cannot tell a cadaveric image from a clinical photograph and does not try.
+An `.svg` embed is copied byte for byte to `assets/figures/<hash>.svg` instead,
+and the page shows it at the column's full width rather than the 360px cap.
+
+**`class_tree_svg.py`** draws a drug-class tree (root, classes, drug cards) as an
+SVG from a spec in [`class_trees/`](class_trees/), measuring every line in Arial
+so the text wraps inside its cards. Write the result into the vault's
+`Attachments` and embed it in the chart; `figures.py` ships it from there:
+
+```bash
+python tools/class_tree_svg.py tools/class_trees/calcium_bone_drugs.json \
+  --out "/mnt/c/Users/nsims/medwiki/Attachments/drug classes tree - calcium and bone drugs.svg"
+```
+
+**`pathway_svg.py`** draws a clinical pathway (boxes, arrows, decisions, an
+"any ONE of these" row, bullet panels) as an SVG from a spec in
+[`pathways/`](pathways/), placed by hand so no arrow crosses a box, with every
+line measured in Arial so it stays inside its box. It replaced the mermaid
+flowcharts in the endo and repro charts on 2026-10-10, because mermaid's
+automatic layout crossed arrows and ran text out of its boxes. The exit code
+is 1 on a layout error; `--png` writes a preview to look at, which is the
+check that matters. [`pathways/README.md`](pathways/README.md) says how to turn
+a mermaid chart into a spec and when to colour a box.
+
+```bash
+python tools/pathway_svg.py tools/pathways/osteoporosis_pathway.json \
+  --out "/mnt/c/Users/nsims/medwiki/Attachments/osteoporosis pathway.svg" --png /tmp/preview.png
+```
+
+**`build_pages.py`** regenerates the five block pages. Only the name, blurb, accent
+and two counts differ between them, so they are generated rather than copied. The
+blurb and accent are read back out of the page being replaced, so edit those in the
+HTML and they survive the next run.
+
+**`build_index.py`** regenerates `index.html`, taking every count from the data
+rather than from prose, so the cards cannot drift.
+
+## Editing by hand
+
+Prose in the block pages and the index is safe to edit **only in the templates**
+inside `build_pages.py` and `build_index.py`. The next run overwrites the HTML. The
+two exceptions are the per-block blurb (`<p class="lead">`) and the accent trio in
+each page's inline `:root`, which are read back out before the page is rewritten.
+
+`base.css`, `pom2.css`, `quiz.js`, `notes.js` and `pom2.js` are hand-maintained and
+never generated. **After editing one of them, re-run `build_pages.py` and
+`build_index.py` anyway.** The pages link these assets as `base.css?v=<hash of its
+contents>`, and the hash is read off the file at build time. GitHub Pages serves
+them with `Cache-Control: max-age=600`, so without a fresh hash a browser will keep
+last deploy's stylesheet for ten minutes and paint the new markup with the old
+rules. Skipping the rebuild is not harmful, since the server ignores the query
+string, but it stops the cache from being busted.
+
+Two constants at the top of `build_pages.py` and `build_index.py` are deliberately
+empty: `CF`, for an analytics snippet, and `PILLNAV`, for a nav bar back to a
+parent site. Fill either in and every generated page picks it up.
+
+## Not regenerated
+
+`data/questions/*.json` is not produced by anything here. If you are bringing your
+own questions, write that JSON yourself. One object per question, in a flat list.
+The fields the front end reads are documented in the main [README](../README.md).
+
+## Keeping the banks to this year's lectures
+
+`curriculum_audit.py` acts on a curriculum audit: one row per question saying
+whether this year's lecture notes teach it (`current`), contradict it
+(`outdated`), or do not mention it at all (`not-covered`). The rows live in
+`build/curriculum_audit/<block>_<chunk>.json` as
+`{qid, verdict, against, week, evidence, note}`.
+
+```bash
+python tools/curriculum_audit.py candidates --course pom2 --block endo --week 2
+python tools/curriculum_audit.py apply build/curriculum_audit/endo_w*.json
+python tools/curriculum_audit.py mark-vault --dry-run build/curriculum_audit/endo_w*.json
+python tools/curriculum_audit.py report
+```
+
+- **`candidates`** lists the questions most worth reading by hand: no `review`,
+  no week, from a handed-down bank (workbook, HippoNotes, Schulich Reviews), or
+  pointing at a lecture note edited since the bank was last written.
+- **`apply`** moves every outdated or not-covered question into the
+  Off-curriculum set. The question keeps its qid and its key, takes the week of
+  the lecture it was checked against, and gets a first flag that names that
+  lecture and quotes it. A current question with no week is given one and left
+  where it is. Running it twice changes nothing the second time.
+- **`mark-vault`** puts a `<!-- set: offcurriculum ... -->` marker and an
+  Off-curriculum warning under the question's `# N` heading in the vault note it
+  was written in (module, weekly, workbook and New Questions notes). It reports a
+  heading it cannot find rather than guessing. A misfiled question gets a
+  `<!-- refiled | week: N | lecture: <note> | qid: <qid> -->` comment instead,
+  with no callout; it is not a `set:` marker, because that one names a family.
+  HippoNotes and Schulich Reviews
+  are backed up from the JSON instead, and `vault_backup.py questions` keeps a
+  moved one in the note of the set it came from.
+- **`report`** prints each block's questions per set, how many have no week, and
+  the off-curriculum qids by reason.
+
+After `apply`, rebuild as usual. `review_lectures.py --derive` re-derives every
+course, so diff the banks afterwards and keep only the changes you meant.
+
+## Finding what the slides do not teach
+
+`inherited_sections.py` reads each lecture note of a block against the slide
+deck on disk (a `.pdf` or `.pptx` under `$POM2_DECKS`, by default Downloads
+and OneDrive/Documents, or beside the note), splits the body into sections
+and scores each section by the best single slide it contains. A section no
+slide lands in is `inherited`: an upper year's notes, not this year's
+lecture. It prints the deck it used per note, or `no deck found`, and never
+writes the vault.
+
+```bash
+python3 tools/inherited_sections.py --block repro
+python3 tools/inherited_sections.py --block endo --json build/inherited_sections/endo.json
+```
+
+The thresholds are constants at the top of the file, calibrated on
+`09 - Approach to Neonatal Care` against its 2025 deck. A deck whose text
+layer is empty is reported as `no usable text` and its sections as `no-deck`,
+never as inherited. `DECKS` maps a note to its deck filenames where the title
+match would guess wrong.
+
+A note whose scores are not trustworthy carries warnings in its table header
+and JSON: `dense` (a handout, not slides), `sparse` (mostly image-only
+slides), `partial` (only part of the lecture's decks are on disk),
+`missing-deck` and `unusable-deck`. Its verdicts are kept, but nothing should
+mark the vault from them. A single section scoring between 0.4 and 0.5 is
+flagged `near-threshold` and only that section is skipped. A section whose
+heading words all sit on one slide (a summary or take-home slide does not
+count) is `slides` with the flag `heading-on-slide`, however low its body
+scores. A `~` in a table row marks either flag (`flags` in the JSON). The
+tool's own Inherited callouts are never scored as note text. Each deck's text is cached under
+`build/inherited_sections/deck_text/` and reread only when the file changes,
+so the second run of a block is fast.
+
+`mark_inherited.py --block <slug> [--dry-run]` writes a `> [!warning] Inherited`
+callout directly under each inherited heading, naming the deck, and is
+idempotent. It marks a section only when its note has no warning and the
+section is not `near-threshold`; every other inherited section is printed as
+`skipped:` with the reason, for a person to read against the deck.
+`--sections build/inherited_sections/<slug>.json` reuses a saved run instead of
+reading the decks again, `--leave-out "<note stem>: <heading>"` keeps a
+heading the reader found on a slide, and `--include "<note stem>: <heading>"`
+marks a skipped section the reader confirmed no slide teaches (printed as
+`included:`). `slides_shortlist.py --block <slug>` lists the live workbook and
+HippoNotes questions (Schulich Reviews are still read against the note until
+their own pass) with their deck and whether the newest audit's evidence is on
+the slides, and writes the shortlist to `build/curriculum_audit/<slug>_slides.txt`
+for a reader, each note's warnings on its `deck:` line; a lecture with no deck
+is `NO-DECK` and its questions stay current. It reads every verdict file in the
+audit directory (`*_w*`, `*_refile*`, `*_slides*`, never a `*.prefill*`), and
+when a question was read more than once only the newest file's quotes count,
+newest by file time. Save the section verdicts with `--json` first: the
+shortlist names any note changed after that file was written.
+
+## Publishing an Anki deck
+
+One more script off to the side. It needs **Anki running** with the
+[AnkiConnect](https://ankiweb.net/shared/info/2055492159) add-on on
+`127.0.0.1:8765`, so unlike the four above it only runs on a machine holding the
+collection.
+
+```bash
+python tools/build_anki.py pom2 endo "PoM2::Block 1"
+```
+
+It writes two things: `pom2/anki/endo.apkg`, the deck itself, and
+`pom2/data/anki/endo.json`, the manifest of per-week and per-lecture card counts
+that `build_pages.py` renders the Anki tab from. **Run `build_pages.py` after
+it**, the way you would after editing a stylesheet - the counts on the tab come
+from the manifest at build time.
+
+A block with no manifest keeps the empty state on its Anki tab, which is what
+every block but endo still shows. That is the whole switch: no manifest, no
+deck, and the tab says so rather than offering a download that 404s.
+
+**Scheduling is stripped on the way out** (`includeSched=False`). The due dates
+in the collection are one person's review history; what gets published is the
+cards. Anyone importing starts their own scheduling, and re-importing a later
+export updates the cards without resetting their progress.
+
+The deck is a **binary in a git repo** and endo's is 35 MB, most of it the 442
+media files behind the image-occlusion cards. Each re-export commits another
+copy, and git keeps every one of them forever. That is affordable a few times a
+year and not affordable weekly, so re-export when the deck has meaningfully
+changed rather than on every card edit.
+
+AnkiConnect writes the `.apkg` itself, so the path it is handed is a path on the
+machine **Anki** runs on. Under WSL that is a Windows path, and the script copies
+the result back across `/mnt/c`. The two constants at the top of the script are
+the two spellings of that one temporary file.
+
+## Embedding an image in a question
+
+**`tools/embed_image.py`** resolves a vault image, re-compresses it and prints the
+`<img>` tag to paste into a question. Pictures ship *inside* the question as a
+`data:` URI in the stem HTML. There is no image field and no assets directory,
+because `quiz.js` renders the stem as HTML and the browser does the rest.
+
+```bash
+python tools/embed_image.py '![[incretin effect - oral vs IV glucose.png|600]]'
+# incretin effect - oral vs IV glucose.png -> 78.1 KB encoded, 900px wide, q75
+# <img loading="lazy" src="data:image/jpeg;base64,...">
+```
+
+It takes a bare filename, a whole `![[embed|600]]`, or a path, and looks in the
+vault's `Attachments/` (override with `POM2_ATTACHMENTS`). It spends JPEG quality
+before it drops pixels, since a keyed radiology or anatomy image is often keyed on
+detail, and it walks both down until the encoded bytes fit `--max-kb` (100 by
+default). A picture that will not fit warns rather than shipping quietly: the
+question's stem still reads as though the image were there, so a picture too big is
+the one failure that hides itself. Unlike the four rebuild scripts this one needs
+**Pillow**.
+
+## Reading OneNote pages locally
+
+**`tools/onenote_local.py`** reads OneNote pages off this laptop, with no Graph
+API and no login — the ms365 route has been refused since 2026-09-07 with
+`AADSTS50158`, a Duo challenge on a stale token. It drives the installed OneNote
+desktop app over COM, which is already signed in and holds the same notebooks.
+
+```bash
+python tools/onenote_local.py list "Principles of Medicine 2"
+python tools/onenote_local.py page --find "hypothyroidism" --slides
+```
+
+`list` prints `path :: title :: id` for every page; `page` takes an id, or
+`--find <title fragment>` and resolves it. It prints her typed notes first,
+which are what a vault note is actually built from, and adds the slide printouts
+under `--slides`. Those slides come through as **text**: OneNote has already run
+OCR over every image, so the words on the slides need no download and no image
+read, which is the one thing the Graph route made expensive.
+
+When the **pictures** are wanted instead, `attachments` copies them out:
+
+```bash
+python tools/onenote_local.py attachments "<page id>" out/
+```
+
+A deck reaches a page one of two ways, and it saves both. Attached as a file,
+the original PDF or `.pptx` sits in OneNote's local cache and is copied out
+under its own name; that is the clean copy to crop figures from, since her ink
+is drawn over the page rather than into the file. Inserted as a printout, each
+slide is an image, saved as `image_NN.png`. On 2026-10-02 this turned up five
+endocrine and repro decks that had never been in `Downloads`.
+
+Two notes on where it runs. It needs `powershell.exe` and Office 16, so it is a
+laptop tool, not a server one. And if COM is ever unavailable, OneNote's own
+automatic backups under
+`%LOCALAPPDATA%/Microsoft/OneNote/16.0/Backup` hold the same text —
+`strings -el` on a `.one` section file reaches it without any app at all, but
+flattens the page, losing the split between her notes and the lecturer's slides.
+
+---
+
+## Infographics without NotebookLM
+
+`infographic.py` is the NotebookLM "Infographic" button with the login taken
+out: it reads one lecture note, cleans the Obsidian syntax off it, and asks
+Gemini's image model for a portrait study poster, which lands in the vault's
+`Attachments/` as `<note> (generated infographic).png`. It needs `requests`
+and a `GEMINI_API_KEY` in the environment (make one at aistudio.google.com;
+it can only call the Gemini API and is revoked on the same page). It never
+reads browser cookies.
+
+```bash
+python tools/infographic.py "pathology of 1st trimester" --dry-run   # see the prompt
+python tools/infographic.py "pathology of 1st trimester"             # write the PNG
+python tools/infographic.py "pathology of 1st trimester" --embed     # and link it under the chart
+```
+
+Slides are the gold standard. The picture is drawn by an image model and image
+models garble small text, so check every number on it against the slides; the
+filename says "generated infographic" so it is never mistaken for one. Tests:
+`python -m pytest tools/tests -v`.

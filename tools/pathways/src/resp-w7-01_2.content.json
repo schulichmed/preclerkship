@@ -1,0 +1,298 @@
+{
+ "name": "dyspnea overview",
+ "title": "Dyspnea decision chart: tempo first (acute minutes to hours versus chronic), then system and lung compartment; each compartment column lists the life-threatening acute causes to exclude first and the chronic causes, with alveolar filling by fluid, pus, blood or tumour",
+ "col_w": 260,
+ "root": {
+  "title": "Dyspnea: ACUTE (minutes to hours) or CHRONIC? Then WHICH SYSTEM, and where in the lung?",
+  "lines": [
+   "acute: exclude the LIFE-THREATENING causes first (red boxes)",
+   "chronic and NOT the heart or lungs: anemia, anxiety, deconditioning, hyperthyroidism, metabolic acidosis"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ca",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "CARDIAC",
+   "lines": []
+  },
+  {
+   "id": "g_re",
+   "cols": [
+    1,
+    3
+   ],
+   "title": "RESPIRATORY: find the compartment",
+   "lines": []
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_re",
+   "cols": [
+    1,
+    3
+   ],
+   "title": "What sends you there",
+   "lines": [
+    "• STRIDOR → upper airway",
+    "• WHEEZE → lower airway",
+    "• ABNORMAL chest X-ray (CXR) → parenchyma",
+    "• neither → vessels, pleura, the pump"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "ac",
+  "ch"
+ ],
+ "row_names": {
+  "ac": "ACUTE",
+  "ch": "CHRONIC"
+ },
+ "columns": [
+  {
+   "id": "ca",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Heart",
+      [
+       "pericardium, muscle, valves, coronaries, rhythm"
+      ]
+     ]
+    ]
+   ],
+   "ac": [
+    [
+     [
+      "bad",
+      "Exclude first",
+      [
+       "• myocardial infarction (MI)",
+       "• cardiac tamponade"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Also",
+      [
+       "congestive heart failure (CHF)"
+      ]
+     ]
+    ]
+   ],
+   "ch": [
+    [
+     [
+      "t",
+      "Pericardium + muscle",
+      [
+       "• effusion, constriction",
+       "• systolic or diastolic dysfunction",
+       "• restrictive cardiomyopathy"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Valves, coronaries, rhythm",
+      [
+       "• stenosis, regurgitation",
+       "• stable angina (acute coronary syndrome = emergency)",
+       "• atrial fibrillation, brady-, tachyarrhythmia"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "aw",
+   "colour": "teal",
+   "drop_from": "t_re",
+   "drop_label": "STRIDOR or WHEEZE",
+   "head": [
+    [
+     [
+      "h",
+      "Airways",
+      []
+     ]
+    ]
+   ],
+   "ac": [
+    [
+     [
+      "bad",
+      "STRIDOR: upper airway",
+      [
+       "• aspiration",
+       "• anaphylaxis"
+      ]
+     ],
+     [
+      "bad",
+      "WHEEZE: lower airway",
+      [
+       "• asthma",
+       "• chronic obstructive pulmonary disease (COPD) flare"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Also wheeze",
+      [
+       "• CHF",
+       "• acute respiratory distress syndrome (ARDS)"
+      ]
+     ]
+    ]
+   ],
+   "ch": [
+    [
+     [
+      "t",
+      "Obstruction",
+      [
+       "• asthma",
+       "• COPD",
+       "• bronchiectasis"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Which one?",
+      [
+       "OBSTRUCTIVE LUNG DISEASE chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "al",
+   "colour": "orange",
+   "drop_from": "t_re",
+   "drop_label": "ABNORMAL CXR",
+   "head": [
+    [
+     [
+      "h",
+      "Parenchyma",
+      [
+       "alveoli + interstitium",
+       "blocks gas exchange"
+      ]
+     ]
+    ]
+   ],
+   "ac": [
+    [
+     [
+      "t",
+      "PUS in the alveoli: pneumonia",
+      [
+       "see the PNEUMONIA chart"
+      ]
+     ]
+    ]
+   ],
+   "ch": [
+    [
+     [
+      "t",
+      "ALVEOLI filled",
+      [
+       "• FLUID: edema",
+       "• PUS: pneumonia",
+       "• BLOOD: hemorrhage",
+       "• TUMOUR"
+      ]
+     ],
+     [
+      "w",
+      "INTERSTITIUM",
+      [
+       "• pulmonary fibrosis",
+       "• hypersensitivity pneumonitis",
+       "• sarcoidosis",
+       "• CHF"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "vp",
+   "colour": "blue",
+   "drop_from": "t_re",
+   "drop_label": "NEITHER",
+   "head": [
+    [
+     [
+      "h",
+      "Vessels · pleura · pump",
+      []
+     ]
+    ]
+   ],
+   "ac": [
+    [
+     [
+      "bad",
+      "Exclude first",
+      [
+       "• pulmonary embolism (PE)",
+       "• TENSION pneumothorax"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Also",
+      [
+       "pneumothorax"
+      ]
+     ]
+    ]
+   ],
+   "ch": [
+    [
+     [
+      "t",
+      "Vessels",
+      [
+       "• PE (still life-threatening)",
+       "• pulmonary hypertension"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Pump",
+      [
+       "• chest wall",
+       "• neuromuscular",
+       "• pleura"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

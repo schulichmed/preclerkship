@@ -1,0 +1,578 @@
+{
+ "name": "urinary tract infection overview",
+ "width": 1084,
+ "title": "Urinary tract infection decision chart: dysuria with urinary symptoms sorted into simple cystitis, complicated cystitis or recurrent infection (reinfection versus relapse), and bacteria without urinary symptoms into asymptomatic bacteriuria, treated only in pregnancy or before a urologic procedure; each column gives who it is, what to test and what to give",
+ "kinds": {
+  "sc_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sc_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "sc_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "cc_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cc_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cc_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "rc_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rc_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "rc_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ab_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ab_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ab_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 324,
+   "w": 250,
+   "h": 650,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 292,
+   "y": 324,
+   "w": 250,
+   "h": 650,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 544,
+   "y": 324,
+   "w": 250,
+   "h": 650,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 824,
+   "y": 324,
+   "w": 250,
+   "h": 650,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 432,
+   "h": 114,
+   "text": "WHO"
+  },
+  {
+   "x": 23,
+   "y": 586,
+   "h": 160,
+   "text": "TEST"
+  },
+  {
+   "x": 23,
+   "y": 786,
+   "h": 180,
+   "text": "TREAT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 177,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Dysuria: is it a urinary tract infection (UTI), and is it SIMPLE?",
+   "lines": [
+    "ask: blood in the urine · flank pain · fever · discharge · new partner · rash · new drugs · previous episodes · allergies",
+    "NOT every burning is a bladder infection: sexually transmitted urethritis, vaginitis, prostatitis, pyelonephritis, skin, drugs (spermicides, cyclophosphamide), atrophic vaginitis, interstitial cystitis, cancer"
+   ]
+  },
+  {
+   "id": "g_sx",
+   "x": 45,
+   "y": 156,
+   "w": 744,
+   "h": 96,
+   "kind": "plain",
+   "title": "URINARY SYMPTOMS: who is it?",
+   "lines": [
+    "burning on voiding ± frequency, urgency",
+    "LONG-TERM CARE resident: ALWAYS culture + sensitivities (often resistant to trimethoprim-sulfamethoxazole (TMP-SMX), amoxicillin-clavulanate)"
+   ]
+  },
+  {
+   "id": "g_as",
+   "x": 829,
+   "y": 156,
+   "w": 240,
+   "h": 96,
+   "kind": "plain",
+   "title": "NO urinary symptoms, bacteria found anyway",
+   "lines": []
+  },
+  {
+   "id": "sc_head_0_0",
+   "x": 45,
+   "y": 332,
+   "w": 240,
+   "h": 60,
+   "kind": "sc_h",
+   "title": "Simple cystitis",
+   "lines": [
+    "uncomplicated UTI"
+   ]
+  },
+  {
+   "id": "cc_head_0_0",
+   "x": 297,
+   "y": 332,
+   "w": 240,
+   "h": 60,
+   "kind": "cc_h",
+   "title": "Complicated cystitis",
+   "lines": []
+  },
+  {
+   "id": "rc_head_0_0",
+   "x": 549,
+   "y": 332,
+   "w": 240,
+   "h": 60,
+   "kind": "rc_h",
+   "title": "Recurrent UTI",
+   "lines": []
+  },
+  {
+   "id": "ab_head_0_0",
+   "x": 829,
+   "y": 332,
+   "w": 240,
+   "h": 60,
+   "kind": "ab_h",
+   "title": "Asymptomatic bacteriuria",
+   "lines": [
+    "common in older patients"
+   ]
+  },
+  {
+   "id": "sc_who_0_0",
+   "x": 45,
+   "y": 432,
+   "w": 240,
+   "h": 114,
+   "kind": "sc_t",
+   "title": "Bladder symptoms only",
+   "lines": [
+    "no complicating factor"
+   ]
+  },
+  {
+   "id": "cc_who_0_0",
+   "x": 297,
+   "y": 432,
+   "w": 240,
+   "h": 114,
+   "kind": "cc_t",
+   "title": "A complicating factor",
+   "lines": [
+    "• MEN: most are complicated",
+    "• fever, flank pain",
+    "• immunosuppression, uncontrolled diabetes"
+   ]
+  },
+  {
+   "id": "rc_who_0_0",
+   "x": 549,
+   "y": 432,
+   "w": 240,
+   "h": 114,
+   "kind": "rc_t",
+   "title": "≥ 2 uncomplicated in 6 months",
+   "lines": [
+    "or ≥ 3 positive cultures in 12 months"
+   ]
+  },
+  {
+   "id": "ab_who_0_0",
+   "x": 829,
+   "y": 432,
+   "w": 240,
+   "h": 114,
+   "kind": "ab_t",
+   "title": "Bacteria, NO UTI symptoms",
+   "lines": []
+  },
+  {
+   "id": "sc_inv_0_0",
+   "x": 45.0,
+   "y": 586,
+   "w": 115.0,
+   "h": 160,
+   "kind": "sc_w",
+   "title": "WOMEN",
+   "lines": [
+    "NO culture needed"
+   ]
+  },
+  {
+   "id": "sc_inv_0_1",
+   "x": 170.0,
+   "y": 586,
+   "w": 115.0,
+   "h": 160,
+   "kind": "warn",
+   "title": "MEN",
+   "lines": [
+    "ALWAYS culture: different bacteria"
+   ]
+  },
+  {
+   "id": "cc_inv_0_0",
+   "x": 297,
+   "y": 586,
+   "w": 240,
+   "h": 160,
+   "kind": "cc_w",
+   "title": "Urine CULTURE",
+   "lines": []
+  },
+  {
+   "id": "rc_inv_0_0",
+   "x": 549,
+   "y": 586,
+   "w": 240,
+   "h": 42,
+   "kind": "rc_w",
+   "title": "When after the last course?",
+   "lines": []
+  },
+  {
+   "id": "rc_inv_1_0",
+   "x": 549.0,
+   "y": 650,
+   "w": 115.0,
+   "h": 96,
+   "kind": "rc_w",
+   "title": "> 2 WEEKS",
+   "lines": [
+    "REINFECTION: a different organism"
+   ]
+  },
+  {
+   "id": "rc_inv_1_1",
+   "x": 674.0,
+   "y": 650,
+   "w": 115.0,
+   "h": 96,
+   "kind": "rc_w",
+   "title": "< 2 WEEKS",
+   "lines": [
+    "RELAPSE: the same organism"
+   ]
+  },
+  {
+   "id": "ab_inv_0_0",
+   "x": 829,
+   "y": 586,
+   "w": 240,
+   "h": 160,
+   "kind": "bad",
+   "title": "Do NOT test for VAGUE symptoms",
+   "lines": [
+    "• confusion, delirium",
+    "• falls, functional decline"
+   ]
+  },
+  {
+   "id": "sc_tx_0_0",
+   "x": 45,
+   "y": 786,
+   "w": 240,
+   "h": 180,
+   "kind": "ok",
+   "title": "ONE of",
+   "lines": [
+    "• nitrofurantoin 100 mg twice daily × 5 days",
+    "• fosfomycin 3 g once",
+    "• TMP-SMX 160/800 twice daily × 3 days"
+   ]
+  },
+  {
+   "id": "cc_tx_0_0",
+   "x": 297.0,
+   "y": 786,
+   "w": 115.0,
+   "h": 79,
+   "kind": "ok",
+   "title": "MILD: 7 days",
+   "lines": []
+  },
+  {
+   "id": "cc_tx_0_1",
+   "x": 422.0,
+   "y": 786,
+   "w": 115.0,
+   "h": 79,
+   "kind": "warn",
+   "title": "SEVERE: 14 days",
+   "lines": []
+  },
+  {
+   "id": "cc_tx_1_0",
+   "x": 297,
+   "y": 887,
+   "w": 240,
+   "h": 79,
+   "kind": "bad",
+   "title": "Not improving fast → IV antibiotics",
+   "lines": []
+  },
+  {
+   "id": "rc_tx_0_0",
+   "x": 549.0,
+   "y": 786,
+   "w": 115.0,
+   "h": 180,
+   "kind": "ok",
+   "title": "PREVENT",
+   "lines": [
+    "drink MORE water: harder to grow in a river than a swamp"
+   ]
+  },
+  {
+   "id": "rc_tx_0_1",
+   "x": 674.0,
+   "y": 786,
+   "w": 115.0,
+   "h": 180,
+   "kind": "ok",
+   "title": "Re-TREAT",
+   "lines": [
+    "a DIFFERENT antibiotic, or the same one for longer"
+   ]
+  },
+  {
+   "id": "ab_tx_0_0",
+   "x": 829,
+   "y": 786,
+   "w": 240,
+   "h": 60,
+   "kind": "ok",
+   "title": "Do NOT treat",
+   "lines": [
+    "no benefit, even in delirium or falls"
+   ]
+  },
+  {
+   "id": "ab_tx_1_0",
+   "x": 829,
+   "y": 868,
+   "w": 240,
+   "h": 98,
+   "kind": "warn",
+   "title": "EXCEPT → antibiotics + test of cure",
+   "lines": [
+    "• PREGNANCY",
+    "• before a UROLOGIC procedure"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_sx",
+   "path": "M557.0 106V131H417.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_as",
+   "path": "M557.0 106V131H949.0V156"
+  },
+  {
+   "from": "rc_inv_0_0",
+   "to": "rc_inv_1_0",
+   "from_dx": -62.5
+  },
+  {
+   "from": "rc_inv_0_0",
+   "to": "rc_inv_1_1",
+   "from_dx": 62.5
+  },
+  {
+   "from": "cc_tx_0_0",
+   "to": "cc_tx_1_0",
+   "to_dx": -62.5
+  },
+  {
+   "from": "cc_tx_0_1",
+   "to": "cc_tx_1_0",
+   "to_dx": 62.5
+  },
+  {
+   "from": "ab_tx_0_0",
+   "to": "ab_tx_1_0"
+  },
+  {
+   "from": "sc_head_0_0",
+   "to": "sc_who_0_0"
+  },
+  {
+   "from": "sc_who_0_0",
+   "to": "sc_inv_0_0",
+   "from_dx": -62.5
+  },
+  {
+   "from": "sc_who_0_0",
+   "to": "sc_inv_0_1",
+   "from_dx": 62.5
+  },
+  {
+   "from": "sc_inv_0_0",
+   "to": "sc_tx_0_0",
+   "to_dx": -62.5
+  },
+  {
+   "from": "sc_inv_0_1",
+   "to": "sc_tx_0_0",
+   "to_dx": 62.5
+  },
+  {
+   "from": "g_sx",
+   "to": "sc_head_0_0",
+   "from_dx": -252,
+   "label": "no complicating factor",
+   "label_at": [
+    165.0,
+    292
+   ]
+  },
+  {
+   "from": "cc_head_0_0",
+   "to": "cc_who_0_0"
+  },
+  {
+   "from": "cc_who_0_0",
+   "to": "cc_inv_0_0"
+  },
+  {
+   "from": "cc_inv_0_0",
+   "to": "cc_tx_0_0",
+   "from_dx": -62.5
+  },
+  {
+   "from": "cc_inv_0_0",
+   "to": "cc_tx_0_1",
+   "from_dx": 62.5
+  },
+  {
+   "from": "g_sx",
+   "to": "cc_head_0_0",
+   "from_dx": 0,
+   "label": "a man · fever · flank pain",
+   "label_at": [
+    417.0,
+    292
+   ]
+  },
+  {
+   "from": "rc_head_0_0",
+   "to": "rc_who_0_0"
+  },
+  {
+   "from": "rc_who_0_0",
+   "to": "rc_inv_0_0"
+  },
+  {
+   "from": "rc_inv_1_0",
+   "to": "rc_tx_0_0"
+  },
+  {
+   "from": "rc_inv_1_1",
+   "to": "rc_tx_0_1"
+  },
+  {
+   "from": "g_sx",
+   "to": "rc_head_0_0",
+   "from_dx": 252,
+   "label": "keeps coming back",
+   "label_at": [
+    669.0,
+    292
+   ]
+  },
+  {
+   "from": "ab_head_0_0",
+   "to": "ab_who_0_0"
+  },
+  {
+   "from": "ab_who_0_0",
+   "to": "ab_inv_0_0"
+  },
+  {
+   "from": "ab_inv_0_0",
+   "to": "ab_tx_0_0"
+  },
+  {
+   "from": "g_as",
+   "to": "ab_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

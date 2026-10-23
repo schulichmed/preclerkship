@@ -1,0 +1,251 @@
+{
+ "name": "introduction to transgender medicine pathway",
+ "title": "Transgender medicine pathway: assessing a young person with gender incongruence, when it is gender dysphoria, and the reversibility ladder from puberty blockers to hormones to surgery",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 290,
+   "y": 10,
+   "w": 340,
+   "kind": "plain",
+   "title": "Young person with gender incongruence",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 290,
+   "y": 88,
+   "w": 340,
+   "kind": "plain",
+   "title": "Assess",
+   "lines": [
+    "insistence, persistence, consistence"
+   ]
+  },
+  {
+   "id": "C",
+   "x": 350,
+   "y": 186,
+   "w": 220,
+   "kind": "plain",
+   "title": "Distress present?",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 30,
+   "y": 177,
+   "w": 230,
+   "kind": "info",
+   "title": "Incongruence alone",
+   "lines": [
+    "is not a disorder"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 340,
+   "y": 270,
+   "w": 240,
+   "kind": "plain",
+   "title": "Gender dysphoria",
+   "lines": []
+  },
+  {
+   "id": "P",
+   "x": 650,
+   "y": 261,
+   "w": 250,
+   "kind": "plain",
+   "title": "Family support",
+   "lines": [
+    "60% attempt risk becomes 4%"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 350,
+   "y": 352,
+   "w": 220,
+   "kind": "plain",
+   "title": "Pubertal stage?",
+   "lines": []
+  },
+  {
+   "id": "G",
+   "x": 30,
+   "y": 430,
+   "w": 250,
+   "kind": "info",
+   "title": "Most do NOT persist",
+   "lines": [
+    "social support, no hormones"
+   ]
+  },
+  {
+   "id": "H",
+   "x": 350,
+   "y": 450,
+   "w": 220,
+   "kind": "plain",
+   "title": "Most DO persist",
+   "lines": []
+  },
+  {
+   "id": "I",
+   "x": 290,
+   "y": 530,
+   "w": 340,
+   "kind": "ok",
+   "title": "Stage 1 – puberty blockers",
+   "lines": [
+    "fully reversible – pauses puberty"
+   ]
+  },
+  {
+   "id": "J",
+   "x": 230,
+   "y": 628,
+   "w": 460,
+   "kind": "plain",
+   "title": "World Professional Association for Transgender Health (WPATH) criteria met?",
+   "lines": [
+    "1  persistent documented dysphoria",
+    "2  capacity to consent",
+    "3  age of majority or adolescent Standards of Care (SOC)",
+    "4  comorbidity reasonably well-controlled"
+   ]
+  },
+  {
+   "id": "L",
+   "x": 290,
+   "y": 800,
+   "w": 340,
+   "kind": "plain",
+   "title": "Discuss fertility preservation first",
+   "lines": []
+  },
+  {
+   "id": "M",
+   "x": 290,
+   "y": 878,
+   "w": 340,
+   "kind": "warn",
+   "title": "Stage 2 – gender-affirming hormones",
+   "lines": [
+    "partially reversible",
+    "testosterone or estrogen"
+   ]
+  },
+  {
+   "id": "N",
+   "x": 652,
+   "y": 878,
+   "w": 258,
+   "kind": "plain",
+   "title": "Two goals",
+   "lines": [
+    "suppress endogenous hormone,",
+    "replace as for a hypogonadal patient"
+   ]
+  },
+  {
+   "id": "O",
+   "x": 290,
+   "y": 998,
+   "w": 340,
+   "kind": "bad",
+   "title": "Stage 3 – surgery – irreversible",
+   "lines": [
+    "1–2 mental health referrals",
+    "Ontario requires two providers"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C"
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "from_side": "left",
+   "to_side": "right",
+   "label": "no",
+   "label_at": [
+    305,
+    200
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "label": "yes",
+   "label_at": [
+    480,
+    254
+   ]
+  },
+  {
+   "from": "P",
+   "to": "E",
+   "from_side": "left",
+   "to_side": "right"
+  },
+  {
+   "from": "E",
+   "to": "F"
+  },
+  {
+   "from": "F",
+   "to": "G",
+   "from_side": "left",
+   "to_side": "top",
+   "label": "pre-pubertal",
+   "label_at": [
+    250,
+    366
+   ]
+  },
+  {
+   "from": "F",
+   "to": "H",
+   "label": "puberty started",
+   "label_at": [
+    520,
+    426
+   ]
+  },
+  {
+   "from": "H",
+   "to": "I"
+  },
+  {
+   "from": "I",
+   "to": "J"
+  },
+  {
+   "from": "J",
+   "to": "L"
+  },
+  {
+   "from": "L",
+   "to": "M"
+  },
+  {
+   "from": "M",
+   "to": "N",
+   "from_side": "right",
+   "to_side": "left"
+  },
+  {
+   "from": "M",
+   "to": "O"
+  }
+ ]
+}

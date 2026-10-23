@@ -1,0 +1,321 @@
+{
+ "name": "immunodeficiency overview",
+ "title": "Immunodeficiency decision chart: recurrent infections beyond what is expected for age (10 warning signs) sorted by the pattern of infection into phagocyte (chronic granulomatous disease), complement, T cell (SCID) and B cell (selective IgA deficiency, CVID) defects, or a secondary immunodeficiency from drugs, cancer, HIV or other illness, each with its clues, key disease, test and treatment",
+ "col_w": 236,
+ "root": {
+  "title": "Recurrent infections: MORE than expected for the AGE? Then WHICH ARM of immunity is broken?",
+  "lines": [
+   "suspect it with 2 or more of the 10 WARNING SIGNS · child: ≥ 4 ear infections or ≥ 2 pneumonias in a year · adult: ≥ 2 ear or sinus infections in a year",
+   "both ages: deep abscesses · persistent thrush · needing IV antibiotics · failure to thrive / chronic diarrhea · family history"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_pr",
+   "cols": [
+    0,
+    3
+   ],
+   "title": "PRIMARY (germline): the PATTERN of infection points to the arm",
+   "lines": [
+    "WHAT bugs, and from WHAT AGE?"
+   ]
+  },
+  {
+   "id": "g_se",
+   "cols": [
+    4,
+    4
+   ],
+   "title": "SECONDARY",
+   "lines": [
+    "the COMMONEST in practice"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "dx"
+ ],
+ "row_names": {
+  "pres": "CLUES",
+  "dx": "KEY DISEASE · TEST · TREAT"
+ },
+ "columns": [
+  {
+   "id": "ph",
+   "colour": "teal",
+   "drop_from": "g_pr",
+   "drop_label": "CATALASE+ · infancy",
+   "head": [
+    [
+     [
+      "h",
+      "Phagocyte defect",
+      [
+       "the commonest primary INNATE defect"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Severe infections by COMMON bugs",
+      [
+       "• S. aureus, Pseudomonas, Serratia, Klebsiella",
+       "• Candida, Nocardia, Aspergillus",
+       "• abscesses, granulomas, poor wound healing"
+      ]
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "w",
+      "Chronic granulomatous disease (CGD)",
+      [
+       "• NADPH oxidase defect: ingested bugs survive",
+       "• X-linked form presents before age 5"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "TEST: dihydrorhodamine 123 assay",
+      [
+       "→ then genetic testing"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "co",
+   "colour": "orange",
+   "drop_from": "g_pr",
+   "drop_label": "NEISSERIA · any age",
+   "head": [
+    [
+     [
+      "h",
+      "Complement defect",
+      [
+       "any age"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "NEISSERIA + autoimmunity",
+      [
+       "• N. meningitidis, N. gonorrhoeae",
+       "• rheumatoid arthritis, lupus, scleroderma"
+      ]
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "w",
+      "Which component?",
+      [
+       "• EARLY: milder encapsulated infections, the MOST autoimmunity",
+       "• C3: opsonization lost → encapsulated bugs"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "TERMINAL: membrane attack complex",
+      [
+       "• the MOST SEVERE: RECURRENT systemic Neisseria",
+       "• C9 deficiency is the commonest"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tc",
+   "colour": "magenta",
+   "drop_from": "g_pr",
+   "drop_label": "OPPORTUNISTS · < 6 months",
+   "head": [
+    [
+     [
+      "h",
+      "T cell defect",
+      [
+       "the MOST SEVERE"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Opportunists in the first 6 MONTHS",
+      [
+       "• mycobacteria, cytomegalovirus, Epstein-Barr, varicella, Candida, Pneumocystis",
+       "• failure to thrive, thrush, severe eczema",
+       "• graft-vs-host from mother's T cells · infection after BCG vaccine"
+      ]
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "w",
+      "Severe combined immunodeficiency (SCID)",
+      [
+       "X-linked or autosomal recessive"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "TEST: NEWBORN SCREEN",
+      [
+       "low or absent TRECs (T-cell receptor excision circles)"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "BONE MARROW TRANSPLANT early",
+      [
+       "or death is likely"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "bc",
+   "colour": "blue",
+   "drop_from": "g_pr",
+   "drop_label": "ENCAPSULATED · > 6 months",
+   "head": [
+    [
+     [
+      "h",
+      "B cell (antibody) defect",
+      [
+       "after maternal IgG WANES, or in adults"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "ENCAPSULATED bacteria",
+      [
+       "• H. influenzae, pneumococcus, strep · Giardia, enterovirus",
+       "• recurrent sinus, ear, chest infections",
+       "• chronic diarrhea · autoimmunity"
+      ]
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "w",
+      "Selective IgA deficiency",
+      [
+       "• the COMMONEST: mostly ASYMPTOMATIC (IgG covers)",
+       "• frequent infections → antibiotics sooner"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Common variable immunodeficiency (CVID)",
+      [
+       "• the commonest SYMPTOMATIC one",
+       "• IgG REPLACEMENT: monthly IV or weekly subcutaneous"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "se",
+   "colour": "slate",
+   "head": [
+    [
+     [
+      "h",
+      "Secondary immunodeficiency",
+      [
+       "acquired"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Causes",
+      [
+       "• cancer, chemotherapy, biologics",
+       "• HIV, diabetes, asplenia, malnutrition",
+       "• prematurity, old age"
+      ]
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "w",
+      "Immunosuppressing drugs",
+      [
+       "• signalling: anti-TNF, rituximab (anti-CD20), JAK inhibitors",
+       "• cells: cyclosporine, tacrolimus, azathioprine, mycophenolate",
+       "• everything: prednisone"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Manage case by case",
+      [
+       "• antibiotics for each fever, sore throat",
+       "• PROPHYLAXIS against opportunists",
+       "• regular white-count checks"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "HIV: latency ~8 years → AIDS ~2 years",
+      [
+       "infections by CD4: IMMUNOCOMPROMISED HOST chart"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

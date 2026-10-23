@@ -1,0 +1,281 @@
+{
+ "name": "hematologic cancer drugs overview",
+ "title": "Drugs for blood cancers: classic cytotoxic classes (alkylating agents, antimetabolites, topoisomerase inhibitors, antimicrotubule agents) hit every dividing cell and each has an organ toxicity to watch; targeted and immune therapies (monoclonal antibodies and CAR-T cells, small molecules, checkpoint inhibitors) are matched to one molecule on the tumour",
+ "col_w": 214,
+ "root": {
+  "title": "Systemic therapy for a blood cancer: hit EVERY dividing cell, or ONE target on the tumour?",
+  "lines": [
+   "surgery only DIAGNOSES (resect a node) · radiation treats locally: see the RADIATION ONCOLOGY chart",
+   "glucocorticoids (prednisone, dexamethasone) kill lymphoid cells: lymphomas, chronic lymphocytic leukemia (CLL), acute B-cell leukemia, myeloma · also shrink swelling around metastases"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_cyt",
+   "cols": [
+    0,
+    3
+   ],
+   "title": "CLASSIC cytotoxic: every dividing cell",
+   "lines": [
+    "every one: myelosuppression (infection), hair loss, mucositis"
+   ]
+  },
+  {
+   "id": "g_tar",
+   "cols": [
+    4,
+    5
+   ],
+   "title": "TARGETED and IMMUNE: one molecule",
+   "lines": [
+    "chimeric antigen receptor (CAR) T cells: the patient's own, modified → relapsed acute lymphoblastic leukemia (< 26 y), relapsed diffuse large B-cell lymphoma"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "how",
+  "watch"
+ ],
+ "row_names": {
+  "how": "HOW · USE",
+  "watch": "WATCH FOR"
+ },
+ "columns": [
+  {
+   "id": "alk",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Alkylating agents",
+      [
+       "cyclophosphamide, chlorambucil, cisplatin, carboplatin"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "t",
+      "Cross-link guanine",
+      [
+       "DNA strands cannot separate → arrest → apoptosis"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "warn",
+      "Organ toxicity",
+      [
+       "• cisplatin, carboplatin: EARS, KIDNEYS",
+       "• cyclophosphamide: hemorrhagic cystitis"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ame",
+   "colour": "olive",
+   "head": [
+    [
+     [
+      "h",
+      "Antimetabolites",
+      [
+       "methotrexate, 5-fluorouracil, 6-mercaptopurine, 6-thioguanine"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "t",
+      "Block nucleic-acid synthesis",
+      [
+       "DNA and RNA cannot be made"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "warn",
+      "Myelosuppression",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "top",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Topoisomerase inhibitors",
+      [
+       "doxorubicin, daunorubicin, bleomycin (antitumour antibiotics) · etoposide"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "t",
+      "Block topoisomerase",
+      [
+       "DNA cannot uncoil or stays broken → apoptosis"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "warn",
+      "Organ toxicity",
+      [
+       "• doxorubicin: HEART",
+       "• bleomycin: LUNG fibrosis"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mic",
+   "colour": "brown",
+   "head": [
+    [
+     [
+      "h",
+      "Antimicrotubule agents",
+      [
+       "vincristine · paclitaxel, docetaxel"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "t",
+      "Stop mitosis (M phase)",
+      [
+       "• vinca alkaloids: block microtubule assembly",
+       "• taxanes: freeze microtubules"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "warn",
+      "Vincristine: NEUROPATHY",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mab",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Monoclonal antibodies",
+      []
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "t",
+      "NAKED: bind a CD marker",
+      [
+       "• rituximab (CD20): B-cell cancers",
+       "• daratumumab (CD38): myeloma",
+       "• brentuximab (CD30): Hodgkin"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "CHECKPOINT: block programmed death-1 (PD-1) or its ligand PD-L1",
+      [
+       "pembrolizumab, nivolumab release the T-cell brakes: myeloma, Hodgkin, lung cancer"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "bad",
+      "Checkpoint: IMMUNE toxicity → GLUCOCORTICOIDS",
+      [
+       "• colitis, pneumonitis, hepatitis",
+       "• hypophysitis, nephritis, rash"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sm",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Small molecules",
+      [
+       "matched to one lesion"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "t",
+      "Block the driver",
+      [
+       "• imatinib: BCR-ABL tyrosine kinase · ibrutinib: Bruton kinase",
+       "• bortezomib (proteasome), lenalidomide: myeloma",
+       "• all-trans retinoic acid: see the LEUKEMIA chart"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "warn",
+      "Drug-specific",
+      [
+       "• imatinib: cramps, edema, effusions, cytopenias",
+       "• ibrutinib: ATRIAL FIBRILLATION, bruising"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

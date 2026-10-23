@@ -1,0 +1,173 @@
+{
+ "name": "myelodysplastic syndrome overview",
+ "title": "Myelodysplastic syndrome: after the marrow workup, the International Prognostic Scoring System splits lower risk (quality of life) from higher risk (slow progression to leukemia), and del(5q) is treated with lenalidomide",
+ "col_w": 250,
+ "root": {
+  "title": "Myelodysplastic syndrome (MDS): how HIGH is the risk?",
+  "lines": [
+   "clonal stem cell cancer of the elderly: risk of becoming acute myeloid leukemia (AML)",
+   "anemia (normocytic or macrocytic), neutropenia, thrombocytopenia · film: pseudo-Pelger-Huët neutrophils",
+   "workup: complete blood count · ferritin · marrow aspirate + biopsy · flow cytometry · cytogenetics"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ip",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "International Prognostic Scoring System (IPSS)",
+   "lines": [
+    "marrow blast % · chromosome changes · number of cell lines down"
+   ]
+  },
+  {
+   "id": "g_5q",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "Cytogenetics: del(5q)",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "aim",
+  "tx"
+ ],
+ "row_names": {
+  "aim": "GOAL",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "lo",
+   "colour": "teal",
+   "drop_label": "LOW",
+   "head": [
+    [
+     [
+      "h",
+      "Lower risk",
+      []
+     ]
+    ]
+   ],
+   "aim": [
+    [
+     [
+      "t",
+      "Quality of life",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Transfuse if hemoglobin < 70 g/L",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · EPO, G-CSF",
+      [
+       "erythropoietin, granulocyte colony-stimulating factor"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "3 · Iron overload",
+      [
+       "chelate if ferritin > 1000 μg/L"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hi",
+   "colour": "orange",
+   "drop_label": "HIGH",
+   "head": [
+    [
+     [
+      "h",
+      "Higher risk",
+      []
+     ]
+    ]
+   ],
+   "aim": [
+    [
+     [
+      "t",
+      "Slow progression to AML",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Transfuse if Hb < 70 g/L",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Azacitidine, decitabine",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "3 · High-dose chemo, stem cell transplant",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "q5",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "MDS with del(5q)",
+      []
+     ]
+    ]
+   ],
+   "aim": [
+    [
+     [
+      "t",
+      "Macrocytic anemia + platelets ↑",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Lenalidomide",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

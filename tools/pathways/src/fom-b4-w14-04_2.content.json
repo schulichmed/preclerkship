@@ -1,0 +1,45 @@
+{
+ "name": "infection control overview",
+ "title": "Infection control decision chart: routine practices and hand hygiene for every patient, then the route of transmission picks the additional precautions: contact, droplet, droplet plus contact, droplet plus contact with enhanced protective equipment for an aerosol-generating procedure, or airborne; each column gives example infections and the precautions, and the order to put on and take off protective equipment runs under all of them",
+ "col_w": 230,
+ "root": {
+  "title": "Possibly infectious patient: ROUTINE practices for everyone, then which ROUTE decides the extra precautions?",
+  "lines": [
+   "ROUTINE, every patient: risk assessment · hand hygiene at the 4 moments · personal protective equipment (PPE) for the exposure you expect",
+   "hands VISIBLY soiled → soap and water · otherwise alcohol-based hand rub"
+  ]
+ },
+ "groups": [
+  {"id": "g_con", "cols": [0, 0], "title": "TOUCH", "lines": ["the person, or an object they contaminated"]},
+  {"id": "g_dro", "cols": [1, 3], "title": "DROPLETS: ≥ 5 μm, fall within 2 m", "lines": ["from coughs and sneezes onto the nose, mouth or eyes"]},
+  {"id": "g_air", "cols": [4, 4], "title": "AIRBORNE: < 5 μm", "lines": ["carried far on air currents: hardest to control"]}
+ ],
+ "sections": ["head", "ex", "tx", "ppe"],
+ "row_names": {"ex": "EXAMPLES", "tx": "PRECAUTIONS", "ppe": "PPE ORDER"},
+ "columns": [
+  {"id": "con", "colour": "teal",
+   "head": [[["h", "Contact", ["direct or indirect"]]]],
+   "ex": [[["t", "e.g.", ["• C. difficile, methicillin-resistant S. aureus (MRSA), carbapenemase-producing Enterobacterales", "• gastroenteritis viruses", "• respiratory syncytial virus (RSV), rhinovirus, parainfluenza"]]]],
+   "tx": [[["ok", "Gloves + gown", ["dedicated equipment, or disinfect it before the next patient"]]]]},
+  {"id": "dro", "colour": "blue",
+   "head": [[["h", "Droplet", []]]],
+   "ex": [[["t", "e.g.", ["• meningitis", "• pertussis", "• rubella"]]]],
+   "tx": [[["ok", "Face mask + eye protection within 2 m", ["patient wears a surgical mask for transport"]]]]},
+  {"id": "dc", "colour": "purple",
+   "head": [[["h", "Droplet + contact", []]]],
+   "ex": [[["t", "e.g.", ["• pneumonia, cause unknown", "• acute respiratory illness, e.g. influenza"]]]],
+   "tx": [[["ok", "Gloves, gown, face mask, eye protection", []]]]},
+  {"id": "enh", "colour": "orange",
+   "head": [[["h", "Droplet + contact, ENHANCED PPE", ["for an aerosol-generating medical procedure (AGMP)"]]]],
+   "ex": [[["t", "COVID-19 (suspected or confirmed) + an AGMP", ["• intubation, CPR, bronchoscopy, open suctioning", "• nebulised drugs, CPAP, sputum induction"]]]],
+   "tx": [[["warn", "Gloves, level 2 gown, N95, full-face visor", ["• door CLOSED", "• dedicated non-critical equipment"]]]]},
+  {"id": "air", "colour": "magenta",
+   "head": [[["h", "Airborne", []]]],
+   "ex": [[["t", "e.g.", ["• chickenpox (varicella), measles (rubeola)", "• tuberculosis", "• viral hemorrhagic fevers"]]]],
+   "tx": [[["bad", "NEGATIVE-PRESSURE room", ["• door and windows closed", "• fit-tested, seal-checked N95 to enter", "• patient: surgical mask for transport"]]]]}
+ ],
+ "spans": [
+  {"section": "ppe", "cols": [0, 4], "rows": [[["plain", "Put on (don)", ["1 · hand hygiene → 2 · gown → 3 · mask or respirator → 4 · eye protection → 5 · gloves"]],
+                                                ["plain", "Take off (doff)", ["1 · gloves → 2 · gown → 3 · HAND HYGIENE → 4 · eye protection → 5 · mask → 6 · HAND HYGIENE"]]]]}
+ ]
+}

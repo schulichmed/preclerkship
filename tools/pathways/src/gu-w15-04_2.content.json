@@ -1,0 +1,371 @@
+{
+ "name": "acute kidney injury overview",
+ "title": "Acute kidney injury decision chart: urine indices and a renal ultrasound sort it into pre-renal, post-renal or intrinsic renal injury, and the intrinsic causes into acute tubular necrosis, acute interstitial nephritis, glomerulonephritis including rapidly progressive glomerulonephritis, and atheroembolic disease; each column gives clues, investigations and management, with the AEIOU indications for dialysis",
+ "col_w": 222,
+ "root": {
+  "title": "Creatinine rising fast: BEFORE the kidney, AFTER it, or the kidney ITSELF?",
+  "lines": [
+   "acute kidney injury (AKI) = creatinine ↑ 44 µmol/L, or > 50% over baseline, or clearance ↓ 50%",
+   "rule out pre- and post-renal FIRST: the easiest · glomerular filtration rate (GFR) equations are WRONG while creatinine is changing",
+   "every patient: urinalysis + renal ultrasound",
+   "ANY cause: DIALYSIS NOW for AEIOU = Acidosis, Electrolytes (K ↑), Ingestion of drugs or ischemia, fluid Overload, Uremia"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_pre",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "PRE-RENAL: low blood flow",
+   "lines": []
+  },
+  {
+   "id": "g_post",
+   "cols": [
+    1,
+    1
+   ],
+   "title": "POST-RENAL: blocked outflow",
+   "lines": [
+    "SUDDEN ANURIA · BOTH sides blocked, or a solitary kidney"
+   ]
+  },
+  {
+   "id": "g_ren",
+   "cols": [
+    2,
+    5
+   ],
+   "title": "RENAL (intrinsic): urea:creatinine < 20:1 · urine Na ≥ 40 · urine Osm < 350 · FENa ≥ 2%",
+   "lines": [
+    "the history, exam and URINALYSIS point to the part of the kidney"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "MANAGE"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "pre",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Pre-renal AKI",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Causes",
+      [
+       "• volume LOSS: bleeding, vomiting, diarrhea, diuretics",
+       "• heart failure, shock, sepsis",
+       "• anti-inflammatories (NSAIDs), contrast, hepatorenal"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Indices: the kidney HOLDS Na",
+      [
+       "• urea:creatinine ≥ 20:1",
+       "• urine Na < 20",
+       "• urine osmolality (Osm) ≥ 500",
+       "• fractional excretion of Na (FENa) < 1%",
+       "• HYALINE casts are normal here"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Restore renal blood flow",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "post",
+   "colour": "slate",
+   "head": [
+    [
+     [
+      "h",
+      "Post-renal AKI",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Causes",
+      [
+       "• prostate: benign hyperplasia, cancer",
+       "• cervical cancer, stones",
+       "• strictures, retroperitoneal fibrosis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "RENAL ULTRASOUND: hydronephrosis?",
+      [
+       "~a block can exist WITHOUT it"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "RELIEVE the block now",
+      [
+       "see the URINARY TRACT OBSTRUCTION chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "atn",
+   "colour": "orange",
+   "drop_label": "the MOST COMMON",
+   "head": [
+    [
+     [
+      "h",
+      "Acute tubular necrosis (ATN)",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Two routes",
+      [
+       "• ISCHEMIC: a pre-renal cause left too long",
+       "• TOXIC: contrast, aminoglycosides, cisplatin; myoglobin, myeloma light chains"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Urine: MUDDY BROWN granular casts",
+      [
+       "~then urine output lowest for days–weeks; recovery brings a DIURESIS"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "SUPPORTIVE",
+      [
+       "reverse the cause · fix fluids + electrolytes"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Dialysis",
+      [
+       "while the tubules regenerate"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ain",
+   "colour": "purple",
+   "drop_label": "RASH · new drug",
+   "head": [
+    [
+     [
+      "h",
+      "Acute interstitial nephritis (AIN)",
+      [
+       "an ALLERGIC reaction"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Triggers",
+      [
+       "• DRUGS: antibiotics, NSAIDs, allopurinol",
+       "• infection: group A strep, Legionella, cytomegalovirus"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Exam + urine",
+      [
+       "• fever, rash, eosinophilia",
+       "• white cell casts"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Look at EVERY drug",
+      [
+       "NOT dose-dependent"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "gn",
+   "colour": "magenta",
+   "drop_label": "BLOOD + red cell casts",
+   "head": [
+    [
+     [
+      "h",
+      "Glomerulonephritis",
+      [
+       "IgA nephropathy the commonest"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Hematuria + RED CELL CASTS",
+      [
+       "workup: HEMATURIA chart"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Biopsy: CRESCENTS in Bowman's capsule",
+      [
+       "+ falling fast = RAPIDLY PROGRESSIVE GN (RPGN)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "RPGN: fatal if untreated",
+      [
+       "1 · prednisone",
+       "2 · cyclophosphamide or rituximab",
+       "3 · plasmapheresis"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ath",
+   "colour": "brown",
+   "drop_label": "after catheterization",
+   "head": [
+    [
+     [
+      "h",
+      "Atheroembolic renal disease",
+      [
+       "aortic plaque debris"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Emboli everywhere",
+      [
+       "• livedo reticularis",
+       "• stroke, gut ischemia"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "A CLINICAL diagnosis",
+      [
+       "• imaging shows nothing",
+       "• do NOT biopsy"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "SUPPORTIVE",
+      [
+       "creatinine does NOT improve with IV fluids · poor prognosis"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

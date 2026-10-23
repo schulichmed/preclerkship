@@ -1,0 +1,229 @@
+{
+ "name": "atrial fibrillation overview",
+ "title": "Atrial fibrillation decision chart: each of its three harms has its own treatment; stroke risk scored by CHADS2 decides anticoagulation, a fast ventricular rate gets AV-nodal blocking drugs, and lost atrial kick gets rhythm control, with cardioversion now only if onset is under 48 hours or the patient is already anticoagulated, otherwise after 3 weeks of anticoagulation",
+ "col_w": 276,
+ "root": {
+  "title": "Atrial fibrillation (AF): irregularly irregular, no P waves. Treat EACH of its three harms",
+  "lines": [
+   "fibrillatory baseline waves, irregular RR intervals · risk rises after 50",
+   "look for a reversible cause: hypertension, ischemic or valve disease, alcohol, thyroid, lung disease, sleep apnea",
+   "PAROXYSMAL stops on its own · PERSISTENT needs drugs or cardioversion · PERMANENT: rate control only"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g1",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "1 · STROKE",
+   "lines": [
+    "blood stagnates in a big left atrium and clots"
+   ]
+  },
+  {
+   "id": "g2",
+   "cols": [
+    1,
+    1
+   ],
+   "title": "2 · FAST, irregular ventricular rate",
+   "lines": [
+    "130–170 bpm through the atrioventricular (AV) node"
+   ]
+  },
+  {
+   "id": "g3",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "3 · LOST atrial kick",
+   "lines": [
+    "less left ventricular filling, less cardiac output"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "DECIDE BY",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "ac",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "ANTICOAGULATE",
+      [
+       "for every patient with a risk factor"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "CHADS2 score",
+      [
+       "• Congestive heart failure, Hypertension, Age > 75, Diabetes: 1 each",
+       "• prior Stroke or transient ischemic attack: 2",
+       "~mitral stenosis is a very high risk too"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "CHADS2 ≥ 1 → oral anticoagulant",
+      [
+       "e.g. apixaban 5 mg twice daily, or warfarin",
+       "~unless a strong contraindication"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rc",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "RATE CONTROL",
+      [
+       "the AV node lets the ventricles race"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Symptoms of the fast rate",
+      [
+       "• palpitations",
+       "• dyspnea, chest discomfort",
+       "~AF can also run normal or slow: then no slowing needed"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "AV-node blocking drugs",
+      [
+       "• beta blocker (metoprolol)",
+       "• calcium channel blocker (diltiazem)",
+       "• digoxin"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Acute: IV metoprolol or diltiazem",
+      [
+       "then oral on discharge"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rh",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "RHYTHM CONTROL",
+      [
+       "a judgement call: young, symptomatic, recent onset",
+       "never in PERMANENT AF"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "How long has it been in AF?",
+      [
+       "a clot can form in the atrial appendage after 48 h"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "< 48 h, a clear onset",
+      [
+       "or already anticoagulated"
+      ]
+     ],
+     [
+      "bad",
+      "> 48 h or UNKNOWN",
+      [
+       "NO cardioversion yet"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Cardiovert NOW",
+      [
+       "OK without anticoagulation"
+      ]
+     ],
+     [
+      "warn",
+      "Rate control + 3 WEEKS anticoagulation",
+      [
+       "then cardiovert"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Direct-current (DC) cardioversion",
+      [
+       "synchronized, 50–200 J, under propofol"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Antiarrhythmic drugs",
+      [
+       "• class I: flecainide, propafenone",
+       "• class III: sotalol, amiodarone, dronedarone"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,364 @@
+{
+ "name": "pediatric asthma overview",
+ "title": "Pediatric asthma decision chart: red flags send a wheezy child to a non-asthma diagnosis; otherwise age decides how asthma is confirmed (documented obstruction and reversibility under 6, lung function tests from 6) and how treatment steps up (LTRA under 6, more ICS at 6 to 11, LABA from 12)",
+ "col_w": 250,
+ "root": {
+  "title": "Wheezy child: is it ASTHMA? Then confirm it and step up BY AGE",
+  "lines": [
+   "asthma = variable airflow limitation that REVERSES with bronchodilators and/or steroids"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ex",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "ACUTE ATTACK: exacerbation",
+   "lines": []
+  },
+  {
+   "id": "g_red",
+   "cols": [
+    1,
+    1
+   ],
+   "title": "ANY RED FLAG → think NON-asthma wheeze",
+   "lines": []
+  },
+  {
+   "id": "g_ok",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "NO red flag: AGE decides how to confirm and step up",
+   "lines": [
+    "• CONTROLLED = ALL: daytime symptoms < 4 days/week, nights < 1/week, reliever < 4 doses/week, normal activity, no missed school, FEV1 or peak flow (PEF) > 90% personal best",
+    "• NOT controlled? check FIRST: the diagnosis, inhaler technique (spacer with every metered-dose inhaler), adherence, triggers (SECONDHAND SMOKE), comorbidities (reflux, allergic rhinitis) → THEN step up"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "dx",
+  "tx"
+ ],
+ "row_names": {
+  "dx": "CONFIRM",
+  "tx": "STEP UP"
+ },
+ "columns": [
+  {
+   "id": "ex",
+   "colour": "magenta",
+   "drop_label": "ACUTE",
+   "head": [
+    [
+     [
+      "h",
+      "Asthma exacerbation",
+      []
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "t",
+      "Monitor",
+      [
+       "• oxygen saturation: target ≥ 90%",
+       "• follow PEF for improvement"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Nebulized short-acting beta-agonist (SABA) + ipratropium",
+      [
+       "+ oral steroids"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "AVOID",
+      [
+       "• anti-inflammatories (NSAIDs)",
+       "• beta blockers",
+       "• sedatives"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "na",
+   "colour": "slate",
+   "drop_label": "RED FLAG",
+   "head": [
+    [
+     [
+      "h",
+      "Not asthma (yet)",
+      [
+       "not every wheeze is asthma"
+      ]
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "bad",
+      "Red flags",
+      [
+       "• symptoms before 6 MONTHS",
+       "• daily PRODUCTIVE cough",
+       "• NO benefit from medications",
+       "• sudden onset with no history",
+       "• failure to thrive, clubbing, stridor"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Flag → what it suggests",
+      [
+       "• ASYMMETRIC sounds or imaging → foreign body",
+       "• cough while EATING or drinking → aspiration",
+       "• family history → cystic fibrosis (CF)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "Look for the real cause",
+      [
+       "• transient viral wheeze",
+       "• bronchiectasis (CF, immunodeficiency, ciliary dyskinesia)",
+       "• tracheomalacia, vascular ring, heart disease",
+       "• reflux (GERD), vocal cord dysfunction, tuberculosis, bronchopulmonary dysplasia"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Foreign body?",
+      [
+       "PEDIATRIC AIRWAY chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pr",
+   "colour": "teal",
+   "drop_label": "1–5 YEARS",
+   "head": [
+    [
+     [
+      "h",
+      "Preschool asthma",
+      [
+       "cannot do lung function tests: diagnosed WITHOUT spirometry"
+      ]
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "t",
+      "1 · Documented OBSTRUCTION",
+      [
+       "wheeze SEEN by a clinician (preferred) or a convincing parent report"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Documented REVERSIBILITY",
+      [
+       "• SABA ± oral steroid given in clinic (preferred)",
+       "• or response to a 3-month medium-dose ICS trial"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · No alternative diagnosis",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Avoid triggers + SABA as needed",
+      [
+       "salbutamol"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Low-dose inhaled corticosteroid (ICS)",
+      [
+       "200 mcg/day"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · Medium-dose ICS",
+      [
+       "201–400 mcg/day"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "4 · Add a leukotriene receptor antagonist (LTRA)",
+      [
+       "montelukast"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "AVOID under 5",
+      [
+       "• combination inhalers, long-acting beta-agonist (LABA)",
+       "• oral prednisone if possible"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sc",
+   "colour": "blue",
+   "drop_label": "≥ 6 YEARS",
+   "head": [
+    [
+     [
+      "h",
+      "School-age asthma",
+      [
+       "can do lung function tests: needs OBJECTIVE proof"
+      ]
+     ]
+    ]
+   ],
+   "dx": [
+    [
+     [
+      "t",
+      "1 · Spirometry",
+      [
+       "• FEV1/FVC < 0.8–0.9 (FEV1 = forced expiratory volume in 1 s, FVC = forced vital capacity)",
+       "• FEV1 ↑ ≥ 12% after bronchodilator"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Or PEF",
+      [
+       "↑ ≥ 20% after bronchodilator"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Or a CHALLENGE",
+      [
+       "• methacholine: provocative concentration (PC20) < 4 mg/mL",
+       "• exercise: FEV1 ↓ ≥ 10–15%"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · SABA as needed + avoid triggers",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Low-dose ICS",
+      [
+       "≤ 200 mcg/day (6–11) · ≤ 250 (≥ 12)"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · 6–11: INCREASE ICS",
+      [
+       "201–400 mcg/day"
+      ]
+     ],
+     [
+      "ok",
+      "3 · ≥ 12: ADD a LABA",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "4 · 6–11: add LTRA",
+      [
+       "LABA under 12 only in a niche case"
+      ]
+     ],
+     [
+      "warn",
+      "4 · ≥ 12: medium ICS ± LTRA",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "5 · Prednisone",
+      []
+     ],
+     [
+      "bad",
+      "5 · Prednisone → 6 · anti-IgE",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

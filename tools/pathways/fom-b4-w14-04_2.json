@@ -1,0 +1,524 @@
+{
+ "name": "infection control overview",
+ "width": 1314,
+ "title": "Infection control decision chart: routine practices and hand hygiene for every patient, then the route of transmission picks the additional precautions: contact, droplet, droplet plus contact, droplet plus contact with enhanced protective equipment for an aerosol-generating procedure, or airborne; each column gives example infections and the precautions, and the order to put on and take off protective equipment runs under all of them",
+ "kinds": {
+  "con_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "con_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "con_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "dro_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dro_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "dro_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "dc_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dc_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "dc_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "enh_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "enh_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "enh_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "air_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "air_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "air_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 326,
+   "w": 240,
+   "h": 476,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 310,
+   "y": 326,
+   "w": 240,
+   "h": 476,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 552,
+   "y": 326,
+   "w": 240,
+   "h": 476,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 794,
+   "y": 326,
+   "w": 240,
+   "h": 476,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1064,
+   "y": 326,
+   "w": 240,
+   "h": 476,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 472,
+   "h": 168,
+   "text": "EXAMPLES"
+  },
+  {
+   "x": 23,
+   "y": 680,
+   "h": 114,
+   "text": "PRECAUTIONS"
+  },
+  {
+   "x": 23,
+   "y": 834,
+   "h": 60,
+   "text": "PPE ORDER"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 292,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Possibly infectious patient: ROUTINE practices for everyone, then which ROUTE decides the extra precautions?",
+   "lines": [
+    "ROUTINE, every patient: risk assessment · hand hygiene at the 4 moments · personal protective equipment (PPE) for the exposure you expect",
+    "hands VISIBLY soiled → soap and water · otherwise alcohol-based hand rub"
+   ]
+  },
+  {
+   "id": "g_con",
+   "x": 45,
+   "y": 176,
+   "w": 230,
+   "h": 78,
+   "kind": "plain",
+   "title": "TOUCH",
+   "lines": [
+    "the person, or an object they contaminated"
+   ]
+  },
+  {
+   "id": "g_dro",
+   "x": 315,
+   "y": 176,
+   "w": 714,
+   "h": 78,
+   "kind": "plain",
+   "title": "DROPLETS: ≥ 5 μm, fall within 2 m",
+   "lines": [
+    "from coughs and sneezes onto the nose, mouth or eyes"
+   ]
+  },
+  {
+   "id": "g_air",
+   "x": 1069,
+   "y": 176,
+   "w": 230,
+   "h": 78,
+   "kind": "plain",
+   "title": "AIRBORNE: < 5 μm",
+   "lines": [
+    "carried far on air currents: hardest to control"
+   ]
+  },
+  {
+   "id": "con_head_0_0",
+   "x": 45,
+   "y": 334,
+   "w": 230,
+   "h": 98,
+   "kind": "con_h",
+   "title": "Contact",
+   "lines": [
+    "direct or indirect"
+   ]
+  },
+  {
+   "id": "dro_head_0_0",
+   "x": 315,
+   "y": 334,
+   "w": 230,
+   "h": 98,
+   "kind": "dro_h",
+   "title": "Droplet",
+   "lines": []
+  },
+  {
+   "id": "dc_head_0_0",
+   "x": 557,
+   "y": 334,
+   "w": 230,
+   "h": 98,
+   "kind": "dc_h",
+   "title": "Droplet + contact",
+   "lines": []
+  },
+  {
+   "id": "enh_head_0_0",
+   "x": 799,
+   "y": 334,
+   "w": 230,
+   "h": 98,
+   "kind": "enh_h",
+   "title": "Droplet + contact, ENHANCED PPE",
+   "lines": [
+    "for an aerosol-generating medical procedure (AGMP)"
+   ]
+  },
+  {
+   "id": "air_head_0_0",
+   "x": 1069,
+   "y": 334,
+   "w": 230,
+   "h": 98,
+   "kind": "air_h",
+   "title": "Airborne",
+   "lines": []
+  },
+  {
+   "id": "con_ex_0_0",
+   "x": 45,
+   "y": 472,
+   "w": 230,
+   "h": 168,
+   "kind": "con_t",
+   "title": "e.g.",
+   "lines": [
+    "• C. difficile, methicillin-resistant S. aureus (MRSA), carbapenemase-producing Enterobacterales",
+    "• gastroenteritis viruses",
+    "• respiratory syncytial virus (RSV), rhinovirus, parainfluenza"
+   ]
+  },
+  {
+   "id": "dro_ex_0_0",
+   "x": 315,
+   "y": 472,
+   "w": 230,
+   "h": 168,
+   "kind": "dro_t",
+   "title": "e.g.",
+   "lines": [
+    "• meningitis",
+    "• pertussis",
+    "• rubella"
+   ]
+  },
+  {
+   "id": "dc_ex_0_0",
+   "x": 557,
+   "y": 472,
+   "w": 230,
+   "h": 168,
+   "kind": "dc_t",
+   "title": "e.g.",
+   "lines": [
+    "• pneumonia, cause unknown",
+    "• acute respiratory illness, e.g. influenza"
+   ]
+  },
+  {
+   "id": "enh_ex_0_0",
+   "x": 799,
+   "y": 472,
+   "w": 230,
+   "h": 168,
+   "kind": "enh_t",
+   "title": "COVID-19 (suspected or confirmed) + an AGMP",
+   "lines": [
+    "• intubation, CPR, bronchoscopy, open suctioning",
+    "• nebulised drugs, CPAP, sputum induction"
+   ]
+  },
+  {
+   "id": "air_ex_0_0",
+   "x": 1069,
+   "y": 472,
+   "w": 230,
+   "h": 168,
+   "kind": "air_t",
+   "title": "e.g.",
+   "lines": [
+    "• chickenpox (varicella), measles (rubeola)",
+    "• tuberculosis",
+    "• viral hemorrhagic fevers"
+   ]
+  },
+  {
+   "id": "con_tx_0_0",
+   "x": 45,
+   "y": 680,
+   "w": 230,
+   "h": 114,
+   "kind": "ok",
+   "title": "Gloves + gown",
+   "lines": [
+    "dedicated equipment, or disinfect it before the next patient"
+   ]
+  },
+  {
+   "id": "dro_tx_0_0",
+   "x": 315,
+   "y": 680,
+   "w": 230,
+   "h": 114,
+   "kind": "ok",
+   "title": "Face mask + eye protection within 2 m",
+   "lines": [
+    "patient wears a surgical mask for transport"
+   ]
+  },
+  {
+   "id": "dc_tx_0_0",
+   "x": 557,
+   "y": 680,
+   "w": 230,
+   "h": 114,
+   "kind": "ok",
+   "title": "Gloves, gown, face mask, eye protection",
+   "lines": []
+  },
+  {
+   "id": "enh_tx_0_0",
+   "x": 799,
+   "y": 680,
+   "w": 230,
+   "h": 114,
+   "kind": "warn",
+   "title": "Gloves, level 2 gown, N95, full-face visor",
+   "lines": [
+    "• door CLOSED",
+    "• dedicated non-critical equipment"
+   ]
+  },
+  {
+   "id": "air_tx_0_0",
+   "x": 1069,
+   "y": 680,
+   "w": 230,
+   "h": 114,
+   "kind": "bad",
+   "title": "NEGATIVE-PRESSURE room",
+   "lines": [
+    "• door and windows closed",
+    "• fit-tested, seal-checked N95 to enter",
+    "• patient: surgical mask for transport"
+   ]
+  },
+  {
+   "id": "span0_ppe_0_0",
+   "x": 45.0,
+   "y": 834,
+   "w": 622.0,
+   "h": 60,
+   "kind": "plain",
+   "title": "Put on (don)",
+   "lines": [
+    "1 · hand hygiene → 2 · gown → 3 · mask or respirator → 4 · eye protection → 5 · gloves"
+   ]
+  },
+  {
+   "id": "span0_ppe_0_1",
+   "x": 677.0,
+   "y": 834,
+   "w": 622.0,
+   "h": 60,
+   "kind": "plain",
+   "title": "Take off (doff)",
+   "lines": [
+    "1 · gloves → 2 · gown → 3 · HAND HYGIENE → 4 · eye protection → 5 · mask → 6 · HAND HYGIENE"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_con",
+   "path": "M672.0 126V151H160.0V176"
+  },
+  {
+   "from": "root",
+   "to": "g_dro",
+   "path": "M672.0 126V151H672.0V176"
+  },
+  {
+   "from": "root",
+   "to": "g_air",
+   "path": "M672.0 126V151H1184.0V176"
+  },
+  {
+   "from": "con_head_0_0",
+   "to": "con_ex_0_0"
+  },
+  {
+   "from": "con_ex_0_0",
+   "to": "con_tx_0_0"
+  },
+  {
+   "from": "con_tx_0_0",
+   "to": "span0_ppe_0_0",
+   "to_dx": -196.0
+  },
+  {
+   "from": "g_con",
+   "to": "con_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "dro_head_0_0",
+   "to": "dro_ex_0_0"
+  },
+  {
+   "from": "dro_ex_0_0",
+   "to": "dro_tx_0_0"
+  },
+  {
+   "from": "dro_tx_0_0",
+   "to": "span0_ppe_0_0",
+   "to_dx": 74.0
+  },
+  {
+   "from": "g_dro",
+   "to": "dro_head_0_0",
+   "from_dx": -242
+  },
+  {
+   "from": "dc_head_0_0",
+   "to": "dc_ex_0_0"
+  },
+  {
+   "from": "dc_ex_0_0",
+   "to": "dc_tx_0_0"
+  },
+  {
+   "from": "dc_tx_0_0",
+   "to": "span0_ppe_0_1",
+   "to_dx": -316.0
+  },
+  {
+   "from": "g_dro",
+   "to": "dc_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "enh_head_0_0",
+   "to": "enh_ex_0_0"
+  },
+  {
+   "from": "enh_ex_0_0",
+   "to": "enh_tx_0_0"
+  },
+  {
+   "from": "enh_tx_0_0",
+   "to": "span0_ppe_0_1",
+   "to_dx": -74.0
+  },
+  {
+   "from": "g_dro",
+   "to": "enh_head_0_0",
+   "from_dx": 242
+  },
+  {
+   "from": "air_head_0_0",
+   "to": "air_ex_0_0"
+  },
+  {
+   "from": "air_ex_0_0",
+   "to": "air_tx_0_0"
+  },
+  {
+   "from": "air_tx_0_0",
+   "to": "span0_ppe_0_1",
+   "to_dx": 196.0
+  },
+  {
+   "from": "g_air",
+   "to": "air_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

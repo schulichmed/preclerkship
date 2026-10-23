@@ -1,0 +1,663 @@
+{
+ "name": "chest x-ray overview",
+ "width": 1700,
+ "title": "Reading a chest X-ray with DRS. ABCDE so no zone is skipped, then telling the common abnormalities apart: white where air should be (airspace disease, pulmonary edema, pleural effusion, collapse, with the midline pushed away by an effusion and pulled toward a collapse), black where lung should be (pneumothorax, tension if the trachea deviates), and lines or spots (interstitial lung disease, nodules and masses)",
+ "kinds": {
+  "air_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "air_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "air_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ed_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ed_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ed_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ef_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ef_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ef_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "col_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "col_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "col_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ptx_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ptx_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ptx_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ild_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ild_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "ild_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "nod_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nod_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "nod_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 326,
+   "w": 226,
+   "h": 434,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 268,
+   "y": 326,
+   "w": 226,
+   "h": 434,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 496,
+   "y": 326,
+   "w": 226,
+   "h": 434,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 724,
+   "y": 326,
+   "w": 226,
+   "h": 434,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 980,
+   "y": 326,
+   "w": 226,
+   "h": 434,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1236,
+   "y": 326,
+   "w": 226,
+   "h": 434,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 1464,
+   "y": 326,
+   "w": 226,
+   "h": 434,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 452,
+   "h": 162,
+   "text": "ON THE FILM"
+  },
+  {
+   "x": 23,
+   "y": 654,
+   "h": 98,
+   "text": "THEN"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 485,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Chest X-ray (CXR): read it the SAME WAY every time, DRS. ABCDE, so nothing is missed",
+   "lines": [
+    "Details · RIPE: Rotation (clavicle ends equidistant), Inspiration (anterior ribs 5–6 or posterior 8–10), Picture, Exposure",
+    "Soft tissue, bones · Airway, mediastinum: TRACHEA deviated? · Breathing: PNEUMOTHORAX?",
+    "Circulation: heart size on a back-to-front (PA) film; a portable front-to-back film magnifies it",
+    "Diaphragm: FREE AIR? (see the ACUTE ABDOMEN chart) · Extras: tubes, lines, devices · compare with OLD films"
+   ]
+  },
+  {
+   "id": "g_w",
+   "x": 45,
+   "y": 174,
+   "w": 900,
+   "h": 80,
+   "kind": "plain",
+   "title": "WHITE where air should be",
+   "lines": [
+    "a whole side white? the MIDLINE (trachea, heart borders) tells you which"
+   ]
+  },
+  {
+   "id": "g_b",
+   "x": 985,
+   "y": 174,
+   "w": 216,
+   "h": 80,
+   "kind": "plain",
+   "title": "BLACK where lung should be",
+   "lines": [
+    "air, no vessels"
+   ]
+  },
+  {
+   "id": "g_s",
+   "x": 1241,
+   "y": 174,
+   "w": 444,
+   "h": 80,
+   "kind": "plain",
+   "title": "LINES or SPOTS",
+   "lines": [
+    "the CXR screens; CT gives the detail"
+   ]
+  },
+  {
+   "id": "air_head_0_0",
+   "x": 45,
+   "y": 334,
+   "w": 216,
+   "h": 78,
+   "kind": "air_h",
+   "title": "Airspace disease",
+   "lines": [
+    "alveoli filled with pus or fluid"
+   ]
+  },
+  {
+   "id": "ed_head_0_0",
+   "x": 273,
+   "y": 334,
+   "w": 216,
+   "h": 78,
+   "kind": "ed_h",
+   "title": "Pulmonary edema",
+   "lines": []
+  },
+  {
+   "id": "ef_head_0_0",
+   "x": 501,
+   "y": 334,
+   "w": 216,
+   "h": 78,
+   "kind": "ef_h",
+   "title": "Pleural effusion",
+   "lines": [
+    "non-specific: pneumonia, embolism, cancer"
+   ]
+  },
+  {
+   "id": "col_head_0_0",
+   "x": 729,
+   "y": 334,
+   "w": 216,
+   "h": 78,
+   "kind": "col_h",
+   "title": "Collapse (atelectasis)",
+   "lines": []
+  },
+  {
+   "id": "ptx_head_0_0",
+   "x": 985,
+   "y": 334,
+   "w": 216,
+   "h": 78,
+   "kind": "ptx_h",
+   "title": "Pneumothorax",
+   "lines": []
+  },
+  {
+   "id": "ild_head_0_0",
+   "x": 1241,
+   "y": 334,
+   "w": 216,
+   "h": 78,
+   "kind": "ild_h",
+   "title": "Interstitial lung disease (ILD)",
+   "lines": []
+  },
+  {
+   "id": "nod_head_0_0",
+   "x": 1469,
+   "y": 334,
+   "w": 216,
+   "h": 78,
+   "kind": "nod_h",
+   "title": "Nodule or mass",
+   "lines": [
+    "a space-occupying lesion"
+   ]
+  },
+  {
+   "id": "air_film_0_0",
+   "x": 45,
+   "y": 452,
+   "w": 216,
+   "h": 162,
+   "kind": "air_t",
+   "title": "FLUFFY opacities + air bronchograms",
+   "lines": [
+    "• acini coalesce: CONSOLIDATION",
+    "• confined to a lobe: pneumonia"
+   ]
+  },
+  {
+   "id": "ed_film_0_0",
+   "x": 273,
+   "y": 452,
+   "w": 216,
+   "h": 162,
+   "kind": "ed_t",
+   "title": "KERLEY B lines",
+   "lines": [
+    "• peribronchial cuffing",
+    "• vessels redistributed, enlarged",
+    "• effusions, CARDIOMEGALY"
+   ]
+  },
+  {
+   "id": "ef_film_0_0",
+   "x": 501,
+   "y": 452,
+   "w": 216,
+   "h": 162,
+   "kind": "ef_t",
+   "title": "BLUNTED costophrenic angle",
+   "lines": [
+    "• MENISCUS up the side",
+    "• confirm: lateral decubitus or point-of-care ultrasound"
+   ]
+  },
+  {
+   "id": "col_film_0_0",
+   "x": 729,
+   "y": 452,
+   "w": 216,
+   "h": 162,
+   "kind": "col_t",
+   "title": "VOLUME LOSS",
+   "lines": [
+    "left lower lobe: SAIL sign behind the heart"
+   ]
+  },
+  {
+   "id": "ptx_film_0_0",
+   "x": 985,
+   "y": 452,
+   "w": 216,
+   "h": 162,
+   "kind": "ptx_t",
+   "title": "NO lung markings",
+   "lines": [
+    "lateral to a small, collapsed lung"
+   ]
+  },
+  {
+   "id": "ild_film_0_0",
+   "x": 1241,
+   "y": 452,
+   "w": 216,
+   "h": 162,
+   "kind": "ild_t",
+   "title": "RETICULAR: lines and nets",
+   "lines": [
+    "± small nodules"
+   ]
+  },
+  {
+   "id": "nod_film_0_0",
+   "x": 1469,
+   "y": 452,
+   "w": 216,
+   "h": 60,
+   "kind": "nod_t",
+   "title": "ONE large mass",
+   "lines": [
+    "primary lung tumour"
+   ]
+  },
+  {
+   "id": "nod_film_1_0",
+   "x": 1469,
+   "y": 534,
+   "w": 216,
+   "h": 80,
+   "kind": "nod_t",
+   "title": "MANY small round 'cannonballs'",
+   "lines": [
+    "metastases"
+   ]
+  },
+  {
+   "id": "air_next_0_0",
+   "x": 45,
+   "y": 654,
+   "w": 216,
+   "h": 98,
+   "kind": "air_w",
+   "title": "Pneumonia?",
+   "lines": [
+    "see the PNEUMONIA chart"
+   ]
+  },
+  {
+   "id": "ed_next_0_0",
+   "x": 273,
+   "y": 654,
+   "w": 216,
+   "h": 98,
+   "kind": "ed_w",
+   "title": "Severe: looks like pneumonia",
+   "lines": [
+    "fluid, not pus, fills the alveoli"
+   ]
+  },
+  {
+   "id": "ef_next_0_0",
+   "x": 501,
+   "y": 654,
+   "w": 216,
+   "h": 98,
+   "kind": "bad",
+   "title": "Whole side white: midline PUSHED AWAY",
+   "lines": [
+    "space-occupying: effusion or tumour"
+   ]
+  },
+  {
+   "id": "col_next_0_0",
+   "x": 729,
+   "y": 654,
+   "w": 216,
+   "h": 98,
+   "kind": "bad",
+   "title": "Whole side white: midline PULLED TOWARD",
+   "lines": [
+    "space-restricting: collapse or pneumonectomy"
+   ]
+  },
+  {
+   "id": "ptx_next_0_0",
+   "x": 985,
+   "y": 654,
+   "w": 216,
+   "h": 98,
+   "kind": "bad",
+   "title": "TRACHEA deviated: TENSION",
+   "lines": [
+    "do NOT miss it"
+   ]
+  },
+  {
+   "id": "ild_next_0_0",
+   "x": 1241,
+   "y": 654,
+   "w": 216,
+   "h": 98,
+   "kind": "ild_w",
+   "title": "CT diagnoses ILD",
+   "lines": []
+  },
+  {
+   "id": "nod_next_0_0",
+   "x": 1469,
+   "y": 654,
+   "w": 216,
+   "h": 98,
+   "kind": "nod_w",
+   "title": "CT stages it",
+   "lines": [
+    "see the PULMONARY NODULE chart"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_w",
+   "path": "M865.0 124V149H495.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_b",
+   "path": "M865.0 124V149H1093.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_s",
+   "path": "M865.0 124V149H1463.0V174"
+  },
+  {
+   "from": "nod_film_0_0",
+   "to": "nod_film_1_0"
+  },
+  {
+   "from": "air_head_0_0",
+   "to": "air_film_0_0"
+  },
+  {
+   "from": "air_film_0_0",
+   "to": "air_next_0_0"
+  },
+  {
+   "from": "g_w",
+   "to": "air_head_0_0",
+   "from_dx": -342,
+   "label": "fluffy",
+   "label_at": [
+    153.0,
+    294
+   ]
+  },
+  {
+   "from": "ed_head_0_0",
+   "to": "ed_film_0_0"
+  },
+  {
+   "from": "ed_film_0_0",
+   "to": "ed_next_0_0"
+  },
+  {
+   "from": "g_w",
+   "to": "ed_head_0_0",
+   "from_dx": -114,
+   "label": "Kerley lines",
+   "label_at": [
+    381.0,
+    294
+   ]
+  },
+  {
+   "from": "ef_head_0_0",
+   "to": "ef_film_0_0"
+  },
+  {
+   "from": "ef_film_0_0",
+   "to": "ef_next_0_0"
+  },
+  {
+   "from": "g_w",
+   "to": "ef_head_0_0",
+   "from_dx": 114,
+   "label": "angle blunted",
+   "label_at": [
+    609.0,
+    294
+   ]
+  },
+  {
+   "from": "col_head_0_0",
+   "to": "col_film_0_0"
+  },
+  {
+   "from": "col_film_0_0",
+   "to": "col_next_0_0"
+  },
+  {
+   "from": "g_w",
+   "to": "col_head_0_0",
+   "from_dx": 342,
+   "label": "volume loss",
+   "label_at": [
+    837.0,
+    294
+   ]
+  },
+  {
+   "from": "ptx_head_0_0",
+   "to": "ptx_film_0_0"
+  },
+  {
+   "from": "ptx_film_0_0",
+   "to": "ptx_next_0_0"
+  },
+  {
+   "from": "g_b",
+   "to": "ptx_head_0_0",
+   "from_dx": 0,
+   "label": "no markings",
+   "label_at": [
+    1093.0,
+    294
+   ]
+  },
+  {
+   "from": "ild_head_0_0",
+   "to": "ild_film_0_0"
+  },
+  {
+   "from": "ild_film_0_0",
+   "to": "ild_next_0_0"
+  },
+  {
+   "from": "g_s",
+   "to": "ild_head_0_0",
+   "from_dx": -114,
+   "label": "lines",
+   "label_at": [
+    1349.0,
+    294
+   ]
+  },
+  {
+   "from": "nod_head_0_0",
+   "to": "nod_film_0_0"
+  },
+  {
+   "from": "nod_film_1_0",
+   "to": "nod_next_0_0"
+  },
+  {
+   "from": "g_s",
+   "to": "nod_head_0_0",
+   "from_dx": 114,
+   "label": "spots",
+   "label_at": [
+    1577.0,
+    294
+   ]
+  }
+ ],
+ "panels": []
+}

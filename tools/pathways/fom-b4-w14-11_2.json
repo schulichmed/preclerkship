@@ -1,0 +1,495 @@
+{
+ "name": "antimicrobial resistance overview",
+ "width": 1152,
+ "title": "Antimicrobial resistance decision chart: a resistant organism has either an enzyme that destroys the drug (penicillinase, AmpC in the SPACE organisms, extended-spectrum beta-lactamase, carbapenemase), an altered target (MRSA, penicillin-resistant S. pneumoniae, vancomycin-resistant Enterococcus, vancomycin-intermediate S. aureus), a way to keep the drug out (porins, efflux pumps) or a bypass of the blocked pathway (folate scavenging against sulfonamides); each tells you which drugs it takes out",
+ "kinds": {
+  "en_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "en_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "en_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "tg_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tg_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "tg_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ot_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ot_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ot_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "by_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "by_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "by_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 308,
+   "w": 260,
+   "h": 634,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 330,
+   "y": 308,
+   "w": 260,
+   "h": 634,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 620,
+   "y": 308,
+   "w": 260,
+   "h": 634,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 882,
+   "y": 308,
+   "w": 260,
+   "h": 634,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 416,
+   "h": 96,
+   "text": "HOW"
+  },
+  {
+   "x": 23,
+   "y": 552,
+   "h": 382,
+   "text": "TAKES OUT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 211,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "The culture says RESISTANT: WHICH MECHANISM, and which drugs does it take OUT?",
+   "lines": [
+    "antibiotics kill the sensitive bugs AND the normal flora → the few resistant ones flourish, and can pass resistance to other bacteria",
+    "which drug to use instead: see the CHOOSING ANTIBIOTICS chart"
+   ]
+  },
+  {
+   "id": "g_en",
+   "x": 45,
+   "y": 156,
+   "w": 250,
+   "h": 80,
+   "kind": "plain",
+   "title": "DESTROY the drug: β-lactamases",
+   "lines": [
+    "the main route in GRAM-NEGATIVES"
+   ]
+  },
+  {
+   "id": "g_tg",
+   "x": 335,
+   "y": 156,
+   "w": 250,
+   "h": 80,
+   "kind": "plain",
+   "title": "CHANGE the target",
+   "lines": [
+    "the main route in GRAM-POSITIVE COCCI"
+   ]
+  },
+  {
+   "id": "g_ot",
+   "x": 625,
+   "y": 156,
+   "w": 512,
+   "h": 80,
+   "kind": "plain",
+   "title": "Keep the drug OUT, or go AROUND it",
+   "lines": []
+  },
+  {
+   "id": "en_head_0_0",
+   "x": 45,
+   "y": 316,
+   "w": 250,
+   "h": 60,
+   "kind": "en_h",
+   "title": "β-lactamase enzymes",
+   "lines": [
+    "break the β-lactam ring"
+   ]
+  },
+  {
+   "id": "tg_head_0_0",
+   "x": 335,
+   "y": 316,
+   "w": 250,
+   "h": 60,
+   "kind": "tg_h",
+   "title": "Altered binding site",
+   "lines": [
+    "the drug cannot bind"
+   ]
+  },
+  {
+   "id": "ot_head_0_0",
+   "x": 625,
+   "y": 316,
+   "w": 250,
+   "h": 60,
+   "kind": "ot_h",
+   "title": "Less drug INSIDE",
+   "lines": []
+  },
+  {
+   "id": "by_head_0_0",
+   "x": 887,
+   "y": 316,
+   "w": 250,
+   "h": 60,
+   "kind": "by_h",
+   "title": "BYPASS the blocked pathway",
+   "lines": []
+  },
+  {
+   "id": "en_how_0_0",
+   "x": 45,
+   "y": 416,
+   "w": 250,
+   "h": 96,
+   "kind": "en_w",
+   "title": "Gram-negatives",
+   "lines": [
+    "e.g. the SPACE organisms: Serratia, Pseudomonas, Proteus, Acinetobacter, Citrobacter, Enterobacter"
+   ]
+  },
+  {
+   "id": "tg_how_0_0",
+   "x": 335,
+   "y": 416,
+   "w": 250,
+   "h": 96,
+   "kind": "tg_w",
+   "title": "Penicillin-binding protein (PBP) or the cell wall",
+   "lines": []
+  },
+  {
+   "id": "ot_how_0_0",
+   "x": 625,
+   "y": 416,
+   "w": 250,
+   "h": 96,
+   "kind": "ot_w",
+   "title": "Mutated PORINS, or EFFLUX pumps",
+   "lines": [
+    "entry blocked, or the drug pumped out"
+   ]
+  },
+  {
+   "id": "by_how_0_0",
+   "x": 887,
+   "y": 416,
+   "w": 250,
+   "h": 96,
+   "kind": "by_w",
+   "title": "Scavenge FOLATE from the environment",
+   "lines": [
+    "no need to make it"
+   ]
+  },
+  {
+   "id": "en_out_0_0",
+   "x": 45,
+   "y": 552,
+   "w": 250,
+   "h": 65,
+   "kind": "warn",
+   "title": "Penicillinase",
+   "lines": [
+    "penicillins"
+   ]
+  },
+  {
+   "id": "en_out_1_0",
+   "x": 45,
+   "y": 639,
+   "w": 250,
+   "h": 83,
+   "kind": "warn",
+   "title": "AmpC (SPACE organisms)",
+   "lines": [
+    "cephalosporins + β-lactamase inhibitors"
+   ]
+  },
+  {
+   "id": "en_out_2_0",
+   "x": 45,
+   "y": 744,
+   "w": 250,
+   "h": 103,
+   "kind": "warn",
+   "title": "Extended-spectrum β-lactamase (ESBL)",
+   "lines": [
+    "most β-lactams, NOT carbapenems · e.g. ESBL E. coli"
+   ]
+  },
+  {
+   "id": "en_out_3_0",
+   "x": 45,
+   "y": 869,
+   "w": 250,
+   "h": 65,
+   "kind": "bad",
+   "title": "Carbapenemase",
+   "lines": [
+    "carbapenems too: the WORST case"
+   ]
+  },
+  {
+   "id": "tg_out_0_0",
+   "x": 335,
+   "y": 552,
+   "w": 250,
+   "h": 78,
+   "kind": "bad",
+   "title": "MRSA: a NEW gene, mecA",
+   "lines": [
+    "methicillin-resistant S. aureus · PBP2 → PBP2a: β-lactams cannot bind"
+   ]
+  },
+  {
+   "id": "tg_out_1_0",
+   "x": 335,
+   "y": 652,
+   "w": 250,
+   "h": 80,
+   "kind": "warn",
+   "title": "S. pneumoniae: its OWN gene mutated",
+   "lines": [
+    "PBP2 → PBP2x: low β-lactam affinity"
+   ]
+  },
+  {
+   "id": "tg_out_2_0",
+   "x": 335,
+   "y": 754,
+   "w": 250,
+   "h": 98,
+   "kind": "bad",
+   "title": "VRE: D-Ala-D-Ala → D-Ala-D-Lac",
+   "lines": [
+    "vancomycin-resistant Enterococcus: vancomycin fails"
+   ]
+  },
+  {
+   "id": "tg_out_3_0",
+   "x": 335,
+   "y": 874,
+   "w": 250,
+   "h": 60,
+   "kind": "warn",
+   "title": "VISA: a THICKENED cell wall",
+   "lines": [
+    "vancomycin-intermediate S. aureus"
+   ]
+  },
+  {
+   "id": "ot_out_0_0",
+   "x": 625,
+   "y": 552,
+   "w": 250,
+   "h": 180,
+   "kind": "warn",
+   "title": "Porins: Klebsiella, Pseudomonas",
+   "lines": [
+    "β-lactams cannot get in"
+   ]
+  },
+  {
+   "id": "ot_out_1_0",
+   "x": 625,
+   "y": 754,
+   "w": 250,
+   "h": 180,
+   "kind": "bad",
+   "title": "Efflux: Pseudomonas aeruginosa",
+   "lines": [
+    "it can use ALL four mechanisms"
+   ]
+  },
+  {
+   "id": "by_out_0_0",
+   "x": 887,
+   "y": 552,
+   "w": 250,
+   "h": 382,
+   "kind": "warn",
+   "title": "Sulfonamides",
+   "lines": [
+    "they block folate synthesis"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_en",
+   "path": "M591.0 106V131H170.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_tg",
+   "path": "M591.0 106V131H460.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_ot",
+   "path": "M591.0 106V131H881.0V156"
+  },
+  {
+   "from": "en_out_0_0",
+   "to": "en_out_1_0"
+  },
+  {
+   "from": "en_out_1_0",
+   "to": "en_out_2_0"
+  },
+  {
+   "from": "en_out_2_0",
+   "to": "en_out_3_0"
+  },
+  {
+   "from": "tg_out_0_0",
+   "to": "tg_out_1_0"
+  },
+  {
+   "from": "tg_out_1_0",
+   "to": "tg_out_2_0"
+  },
+  {
+   "from": "tg_out_2_0",
+   "to": "tg_out_3_0"
+  },
+  {
+   "from": "ot_out_0_0",
+   "to": "ot_out_1_0"
+  },
+  {
+   "from": "en_head_0_0",
+   "to": "en_how_0_0"
+  },
+  {
+   "from": "en_how_0_0",
+   "to": "en_out_0_0"
+  },
+  {
+   "from": "g_en",
+   "to": "en_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "tg_head_0_0",
+   "to": "tg_how_0_0"
+  },
+  {
+   "from": "tg_how_0_0",
+   "to": "tg_out_0_0"
+  },
+  {
+   "from": "g_tg",
+   "to": "tg_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ot_head_0_0",
+   "to": "ot_how_0_0"
+  },
+  {
+   "from": "ot_how_0_0",
+   "to": "ot_out_0_0"
+  },
+  {
+   "from": "g_ot",
+   "to": "ot_head_0_0",
+   "from_dx": -131
+  },
+  {
+   "from": "by_head_0_0",
+   "to": "by_how_0_0"
+  },
+  {
+   "from": "by_how_0_0",
+   "to": "by_out_0_0"
+  },
+  {
+   "from": "g_ot",
+   "to": "by_head_0_0",
+   "from_dx": 131
+  }
+ ],
+ "panels": []
+}

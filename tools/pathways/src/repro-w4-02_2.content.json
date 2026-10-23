@@ -1,0 +1,579 @@
+{
+ "name": "fertilization and infertility overview",
+ "title": "Infertility decision chart: when to investigate, then one column per factor the work-up tests (ovulation, ovarian reserve, tubes and cavity, endometriosis, male factor) plus recurrent pregnancy loss; each gives the test and its cycle day, what an abnormal result means, the causes and the treatment it leads to",
+ "col_w": 212,
+ "root": {
+  "title": "Infertility: no pregnancy after 1 YEAR of regular, unprotected intercourse · investigate BOTH partners",
+  "lines": [
+   "work up at 12 MONTHS if under 35 · at 6 MONTHS if 35 or over · IMMEDIATELY if a known cause (e.g. irregular cycles)",
+   "female alone 41% · male alone 24% · both 24% · unexplained 11% · 85% conceive by 1 year"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_f",
+   "cols": [
+    0,
+    3
+   ],
+   "title": "FEMALE: tests timed to her cycle (day 1 = first day of bleeding)",
+   "lines": [
+    "days 2–4 bloods · days 6–12 sonohysterogram · day 21 progesterone · AMH any day"
+   ]
+  },
+  {
+   "id": "g_m",
+   "cols": [
+    4,
+    4
+   ],
+   "title": "MALE",
+   "lines": [
+    "too often only she is referred"
+   ]
+  },
+  {
+   "id": "g_r",
+   "cols": [
+    5,
+    5
+   ],
+   "title": "Conceives but LOSES it",
+   "lines": [
+    "≥ 2 losses, biochemical included"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "inv",
+  "cause",
+  "tx"
+ ],
+ "row_names": {
+  "inv": "INVESTIGATIONS",
+  "cause": "CAUSES",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "ov",
+   "colour": "teal",
+   "drop_label": "does she ovulate?",
+   "head": [
+    [
+     [
+      "h",
+      "Ovulation",
+      [
+       "cycles < 21, > 35 days, or < 8 a year: suspect anovulation"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Days 2–4: prolactin + TSH",
+      [
+       "abnormal → PITUITARY / THYROID chart"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · DAY 21 progesterone",
+      [
+       "~• 7 days before the expected period",
+       "• HIGH = she ovulated (corpus luteum)",
+       "• LOW = ANOVULATION, even with regular cycles"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "PCOS: the COMMONEST",
+      [
+       "• a diagnosis of EXCLUSION",
+       "• baseline LH high: home LH strips cannot spot the surge"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Also",
+      [
+       "• prolactin",
+       "• thyroid",
+       "• hypothalamic (AMENORRHEA chart)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · PCOS: 5–10% WEIGHT LOSS",
+      [
+       "can restart ovulation"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · OVULATION INDUCTION",
+      [
+       "• LETROZOLE or clomiphene grows a follicle",
+       "• ± an Ovidrel trigger to release it"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rs",
+   "colour": "purple",
+   "drop_label": "how many eggs?",
+   "head": [
+    [
+     [
+      "h",
+      "Ovarian reserve",
+      [
+       "AGE is the main driver",
+       "falls from ~30, faster after"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · DAYS 2–4: FSH + LH + estradiol",
+      [
+       "read all three TOGETHER"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "FSH ↑ alone",
+      [
+       "→ diminished reserve or POI"
+      ]
+     ],
+     [
+      "w",
+      "FSH ↑ + estradiol ↑",
+      [
+       "drawn too LATE: FSH may be normal"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · AMH, ANY day",
+      [
+       "• < 15 DIMINISHED",
+       "• 15–28 normal",
+       "• > 28 suggests PCOS",
+       "~• measures reserve, NOT natural fertility"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Female AGE",
+      [
+       "• infertile: 30–34 15%, 35–39 22%, 40–44 29%",
+       "• miscarriage: < 35 10–15%, 40+ ~60% (aneuploid)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "IVF: AMH sets the DOSE",
+      [
+       "low AMH: fewer eggs, HIGHER doses"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "IVF does NOT rescue age",
+      [
+       "success follows OOCYTE age"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tc",
+   "colour": "orange",
+   "drop_label": "open tubes? cavity?",
+   "head": [
+    [
+     [
+      "h",
+      "Tubes + uterine cavity",
+      [
+       "normal cavity? open tubes?"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · DAYS 6–12: sonohysterogram + ExEm foam",
+      [
+       "• after the period, BEFORE ovulation: lining thin, NOT pregnant",
+       "• saline shows the cavity",
+       "• foam shows the tubes"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Cavity",
+      [
+       "• polyp",
+       "• fibroid"
+      ]
+     ],
+     [
+      "w",
+      "Tubes",
+      [
+       "• blocked",
+       "• hydrosalpinx"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Inconclusive → HSG",
+      [
+       "hysterosalpingogram: dye + X-ray"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Structural",
+      [
+       "• polyp",
+       "• fibroids",
+       "• uterine anomaly",
+       "• past PELVIC INFECTION: 3 PIDs = 40% tubal block"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Polyp → SURGERY",
+      [
+       "~cavity-distorting fibroid: PELVIC PAIN chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "en",
+   "colour": "magenta",
+   "drop_label": "pain? dyspareunia?",
+   "head": [
+    [
+     [
+      "h",
+      "Endometriosis",
+      [
+       "30–50% of infertile women"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Symptoms + response to suppression",
+      [
+       "• laparoscopy + biopsy confirms (PELVIC PAIN chart)",
+       "• advanced ultrasound mapping increasingly used"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Stage I–II",
+      [
+       "superficial, no adhesions"
+      ]
+     ],
+     [
+      "w",
+      "Stage III–IV",
+      [
+       "ovary, deep, dense adhesions"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "How it lowers fertility",
+      [
+       "• TOXIC peritoneal fluid",
+       "• ↓ implantation",
+       "• poorer eggs",
+       "• INFLAMED tubes"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "NO suppression while trying",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "I–II → surgery",
+      [
+       "laparoscopic excision: ↑ natural pregnancy for 9 MONTHS"
+      ]
+     ],
+     [
+      "ok",
+      "III–IV → IVF",
+      [
+       "bypasses the toxic pelvis"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Avoid ENDOMETRIOMA surgery",
+      [
+       "costs ovarian reserve"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ml",
+   "colour": "blue",
+   "drop_label": "count, motility, form",
+   "head": [
+    [
+     [
+      "h",
+      "Male factor",
+      [
+       "count · motility · morphology"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · SEMEN ANALYSIS: the FIRST test",
+      [
+       "normal: count ≥ 39 million · progressive motility ≥ 30% · normal forms ≥ 4%"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Abnormal",
+      [
+       "• → LH, testosterone, 17-OHP",
+       "• repeat in 4–6 weeks"
+      ]
+     ],
+     [
+      "w",
+      "Severe",
+      [
+       "extremely abnormal → KARYOTYPE"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Commonest first",
+      [
+       "• IDIOPATHIC",
+       "• VARICOCELE",
+       "• anabolic STEROIDS",
+       "• past infection → obstruction",
+       "• Klinefelter, Y microdeletion",
+       "• marijuana, smoking, HOT TUBS"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "COUNSEL him",
+      [
+       "an abnormal result = ↑ lifetime CANCER risk + earlier mortality"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rp",
+   "colour": "slate",
+   "drop_label": "≥ 2 losses",
+   "head": [
+    [
+     [
+      "h",
+      "Recurrent pregnancy loss",
+      [
+       "50% stay UNEXPLAINED"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Endocrine bloods",
+      [
+       "• thyroid",
+       "• prolactin",
+       "• diabetes control"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Cavity ultrasound",
+      [
+       "usually a sonohysterogram"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · KARYOTYPE BOTH partners",
+      [
+       "+ endometrial biopsy"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Antiphospholipid syndrome 5–20%",
+      [
+       "THREE specific antibodies"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Also",
+      [
+       "• uterine anomaly 10–15%",
+       "• chronic endometritis",
+       "• balanced translocation ~5% of couples"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Antiphospholipid → HEPARIN + ASPIRIN",
+      [
+       "from the FIRST positive pregnancy test"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Endometritis → 2 WEEKS of antibiotics",
+      []
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Which treatment for which factor",
+   "items": [
+    "anovulation (PCOS) → weight loss, then LETROZOLE or clomiphene ± trigger",
+    "endometriosis I–II → laparoscopic excision · III–IV → IVF",
+    "low reserve → IVF at higher doses · age is not rescued by IVF",
+    "BOTH partners need an infectious disease screen before IUI or IVF (law in Ontario)"
+   ]
+  },
+  {
+   "title": "Timing + myths",
+   "items": [
+    "sperm should be WAITING: best ~2 days BEFORE ovulation · ovulation ~36 h after the LH surge",
+    "myths: a D&C does not help · a retroverted uterus does not cause infertility · 2+ weeks of abstinence does not ↑ sperm"
+   ]
+  }
+ ]
+}

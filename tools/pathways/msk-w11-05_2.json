@@ -1,0 +1,725 @@
+{
+ "name": "fracture radiology overview",
+ "width": 1658,
+ "title": "Describing a fracture on x-ray in a fixed order: views, location, type, descriptors, joint surface, other findings and bone quality, then how healing looks on follow-up films; each column gives what to look for and what it tells you",
+ "kinds": {
+  "view_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "view_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "view_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "loc_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "loc_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "loc_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "type_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "type_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "type_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "desc_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "desc_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "desc_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "joint_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "joint_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "joint_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "other_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "other_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "other_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "heal_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "heal_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "heal_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 290,
+   "w": 224,
+   "h": 720,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 266,
+   "y": 290,
+   "w": 224,
+   "h": 720,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 492,
+   "y": 290,
+   "w": 224,
+   "h": 720,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 718,
+   "y": 290,
+   "w": 224,
+   "h": 720,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 944,
+   "y": 290,
+   "w": 224,
+   "h": 720,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1170,
+   "y": 290,
+   "w": 224,
+   "h": 720,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1424,
+   "y": 290,
+   "w": 224,
+   "h": 720,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 452,
+   "h": 296,
+   "text": "LOOK FOR"
+  },
+  {
+   "x": 23,
+   "y": 788,
+   "h": 214,
+   "text": "WHAT IT TELLS YOU"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 464,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A fracture on x-ray: TRACE the cortex, look for SECONDARY signs, then describe it in the same order every time",
+   "lines": [
+    "body in anatomic position · more than one descriptor for each fracture",
+    "OLD ACIDS: open · location · degree · articular surface · comminution · intrinsic bone quality · displacement · soft tissue"
+   ]
+  },
+  {
+   "id": "g_desc",
+   "x": 45,
+   "y": 158,
+   "w": 1344,
+   "h": 60,
+   "kind": "plain",
+   "title": "DESCRIBE IT",
+   "lines": [
+    "what you say on the phone so the consultant can picture it"
+   ]
+  },
+  {
+   "id": "g_heal",
+   "x": 1429,
+   "y": 158,
+   "w": 214,
+   "h": 60,
+   "kind": "plain",
+   "title": "FOLLOW IT",
+   "lines": [
+    "follow-up films"
+   ]
+  },
+  {
+   "id": "view_head_0_0",
+   "x": 45,
+   "y": 298,
+   "w": 214,
+   "h": 114,
+   "kind": "view_h",
+   "title": "1 · Views",
+   "lines": [
+    "anteroposterior (AP) · lateral · oblique"
+   ]
+  },
+  {
+   "id": "loc_head_0_0",
+   "x": 271,
+   "y": 298,
+   "w": 214,
+   "h": 114,
+   "kind": "loc_h",
+   "title": "2 · Location",
+   "lines": [
+    "side · which bone · where in it"
+   ]
+  },
+  {
+   "id": "type_head_0_0",
+   "x": 497,
+   "y": 298,
+   "w": 214,
+   "h": 114,
+   "kind": "type_h",
+   "title": "3 · Type",
+   "lines": [
+    "complete or incomplete"
+   ]
+  },
+  {
+   "id": "desc_head_0_0",
+   "x": 723,
+   "y": 298,
+   "w": 214,
+   "h": 114,
+   "kind": "desc_h",
+   "title": "4 · Descriptors",
+   "lines": [
+    "DISTAL fragment relative to proximal",
+    "except the CLAVICLE: proximal to distal"
+   ]
+  },
+  {
+   "id": "joint_head_0_0",
+   "x": 949,
+   "y": 298,
+   "w": 214,
+   "h": 114,
+   "kind": "joint_h",
+   "title": "5 · Joint surface",
+   "lines": [
+    "into the joint or not?"
+   ]
+  },
+  {
+   "id": "other_head_0_0",
+   "x": 1175,
+   "y": 298,
+   "w": 214,
+   "h": 114,
+   "kind": "other_h",
+   "title": "6-7 · Other findings, bone quality",
+   "lines": []
+  },
+  {
+   "id": "heal_head_0_0",
+   "x": 1429,
+   "y": 298,
+   "w": 214,
+   "h": 114,
+   "kind": "heal_h",
+   "title": "8 · Healing",
+   "lines": [
+    "mostly SECONDARY (callus) · PRIMARY with internal fixation: no callus"
+   ]
+  },
+  {
+   "id": "view_pres_0_0",
+   "x": 45,
+   "y": 452,
+   "w": 214,
+   "h": 296,
+   "kind": "view_t",
+   "title": "Special views",
+   "lines": [
+    "• ankle: MORTISE view",
+    "• scaphoid: ulnar deviation, clenched fist",
+    "• shoulder: Y-view"
+   ]
+  },
+  {
+   "id": "loc_pres_0_0",
+   "x": 271,
+   "y": 452,
+   "w": 214,
+   "h": 296,
+   "kind": "loc_t",
+   "title": "Part of the bone",
+   "lines": [
+    "• epiphysis · physis · metaphysis",
+    "• diaphysis",
+    "• apophysis: muscle or tendon attachment"
+   ]
+  },
+  {
+   "id": "type_pres_0_0",
+   "x": 497,
+   "y": 452,
+   "w": 214,
+   "h": 173,
+   "kind": "type_t",
+   "title": "COMPLETE",
+   "lines": [
+    "• transverse · oblique · longitudinal",
+    "• spiral: a TWISTING injury",
+    "• comminuted: segmental, butterfly"
+   ]
+  },
+  {
+   "id": "type_pres_1_0",
+   "x": 497,
+   "y": 647,
+   "w": 214,
+   "h": 101,
+   "kind": "type_w",
+   "title": "INCOMPLETE",
+   "lines": [
+    "bowing · buckle · greenstick"
+   ]
+  },
+  {
+   "id": "desc_pres_0_0",
+   "x": 723,
+   "y": 452,
+   "w": 214,
+   "h": 78,
+   "kind": "desc_t",
+   "title": "Translation",
+   "lines": [
+    "in shaft widths · more than one width = OFF-ENDED"
+   ]
+  },
+  {
+   "id": "desc_pres_1_0",
+   "x": 723,
+   "y": 552,
+   "w": 214,
+   "h": 96,
+   "kind": "desc_t",
+   "title": "Angulation",
+   "lines": [
+    "by the apex: varus = apex LATERAL, valgus = apex MEDIAL"
+   ]
+  },
+  {
+   "id": "desc_pres_2_0",
+   "x": 723,
+   "y": 670,
+   "w": 214,
+   "h": 78,
+   "kind": "desc_t",
+   "title": "Rotation",
+   "lines": [
+    "internal or external · look at the joints above and below"
+   ]
+  },
+  {
+   "id": "joint_pres_0_0",
+   "x": 949,
+   "y": 452,
+   "w": 214,
+   "h": 119,
+   "kind": "joint_t",
+   "title": "Step-off or depression",
+   "lines": [
+    "trace the articular cortex"
+   ]
+  },
+  {
+   "id": "joint_pres_1_0",
+   "x": 949,
+   "y": 593,
+   "w": 214,
+   "h": 155,
+   "kind": "joint_w",
+   "title": "Fracture not seen?",
+   "lines": [
+    "• hemarthrosis (effusion)",
+    "• FAT-FLUID level",
+    "• subluxation or dislocation"
+   ]
+  },
+  {
+   "id": "other_pres_0_0",
+   "x": 1175,
+   "y": 452,
+   "w": 214,
+   "h": 296,
+   "kind": "other_t",
+   "title": "Other findings",
+   "lines": [
+    "• open · foreign body · hardware",
+    "• periprosthetic · amputation",
+    "• diastasis: pubic symphysis, acromioclavicular joint"
+   ]
+  },
+  {
+   "id": "heal_pres_0_0",
+   "x": 1429,
+   "y": 452,
+   "w": 214,
+   "h": 296,
+   "kind": "heal_t",
+   "title": "On x-ray",
+   "lines": [
+    "• fracture line WIDENS at 10-14 days",
+    "• callus from 2 weeks",
+    "• union: bridging callus, medullary space back"
+   ]
+  },
+  {
+   "id": "view_inv_0_0",
+   "x": 45,
+   "y": 788,
+   "w": 214,
+   "h": 214,
+   "kind": "view_w",
+   "title": "Needs more than one view",
+   "lines": [
+    "• oblique: seen on one view",
+    "• spiral: seen only on multiple views"
+   ]
+  },
+  {
+   "id": "loc_inv_0_0",
+   "x": 271,
+   "y": 788,
+   "w": 214,
+   "h": 214,
+   "kind": "loc_w",
+   "title": "Physis = immature skeleton",
+   "lines": [
+    "growth plate involved → Salter-Harris (see the PEDIATRIC ORTHOPEDICS chart)"
+   ]
+  },
+  {
+   "id": "type_inv_0_0",
+   "x": 497,
+   "y": 788,
+   "w": 214,
+   "h": 214,
+   "kind": "type_w",
+   "title": "Others",
+   "lines": [
+    "• avulsion: tendon pulls off a fragment",
+    "• open"
+   ]
+  },
+  {
+   "id": "desc_inv_0_0",
+   "x": 723,
+   "y": 788,
+   "w": 214,
+   "h": 214,
+   "kind": "desc_w",
+   "title": "Length",
+   "lines": [
+    "• distraction: pulled apart",
+    "• impaction: telescoped in",
+    "• override: fragments overlap"
+   ]
+  },
+  {
+   "id": "joint_inv_0_0",
+   "x": 949,
+   "y": 788,
+   "w": 214,
+   "h": 96,
+   "kind": "bad",
+   "title": "INTRA-articular",
+   "lines": [
+    "• reduction must be ANATOMIC",
+    "• secondary osteoarthritis · heals slower"
+   ]
+  },
+  {
+   "id": "joint_inv_1_0",
+   "x": 949,
+   "y": 906,
+   "w": 214,
+   "h": 96,
+   "kind": "ok",
+   "title": "EXTRA-articular",
+   "lines": [
+    "reduction relatively anatomic: bone remodels, especially with weight-bearing"
+   ]
+  },
+  {
+   "id": "other_inv_0_0",
+   "x": 1175,
+   "y": 788,
+   "w": 214,
+   "h": 214,
+   "kind": "bad",
+   "title": "PATHOLOGICAL fracture",
+   "lines": [
+    "• weakened bone, usually TRANSVERSE",
+    "• spontaneous or trivial trauma"
+   ]
+  },
+  {
+   "id": "heal_inv_0_0",
+   "x": 1429,
+   "y": 788,
+   "w": 214,
+   "h": 78,
+   "kind": "ok",
+   "title": "Healed is a CLINICAL call",
+   "lines": [
+    "no tenderness, no motion at the site, can bear weight"
+   ]
+  },
+  {
+   "id": "heal_inv_1_0",
+   "x": 1429,
+   "y": 888,
+   "w": 214,
+   "h": 114,
+   "kind": "heal_w",
+   "title": "Expected time",
+   "lines": [
+    "• upper limb 3-10 weeks (distal humerus 8-10)",
+    "• lower limb 6-12 weeks (femoral neck, shaft longest)"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_desc",
+   "path": "M844.0 108V133H717.0V158"
+  },
+  {
+   "from": "root",
+   "to": "g_heal",
+   "path": "M844.0 108V133H1536.0V158"
+  },
+  {
+   "from": "type_pres_0_0",
+   "to": "type_pres_1_0"
+  },
+  {
+   "from": "desc_pres_0_0",
+   "to": "desc_pres_1_0"
+  },
+  {
+   "from": "desc_pres_1_0",
+   "to": "desc_pres_2_0"
+  },
+  {
+   "from": "joint_pres_0_0",
+   "to": "joint_pres_1_0"
+  },
+  {
+   "from": "joint_inv_0_0",
+   "to": "joint_inv_1_0"
+  },
+  {
+   "from": "heal_inv_0_0",
+   "to": "heal_inv_1_0"
+  },
+  {
+   "from": "view_head_0_0",
+   "to": "view_pres_0_0"
+  },
+  {
+   "from": "view_pres_0_0",
+   "to": "view_inv_0_0"
+  },
+  {
+   "from": "g_desc",
+   "to": "view_head_0_0",
+   "from_dx": -565
+  },
+  {
+   "from": "loc_head_0_0",
+   "to": "loc_pres_0_0"
+  },
+  {
+   "from": "loc_pres_0_0",
+   "to": "loc_inv_0_0"
+  },
+  {
+   "from": "g_desc",
+   "to": "loc_head_0_0",
+   "from_dx": -339
+  },
+  {
+   "from": "type_head_0_0",
+   "to": "type_pres_0_0"
+  },
+  {
+   "from": "type_pres_1_0",
+   "to": "type_inv_0_0"
+  },
+  {
+   "from": "g_desc",
+   "to": "type_head_0_0",
+   "from_dx": -113
+  },
+  {
+   "from": "desc_head_0_0",
+   "to": "desc_pres_0_0"
+  },
+  {
+   "from": "desc_pres_2_0",
+   "to": "desc_inv_0_0"
+  },
+  {
+   "from": "g_desc",
+   "to": "desc_head_0_0",
+   "from_dx": 113
+  },
+  {
+   "from": "joint_head_0_0",
+   "to": "joint_pres_0_0"
+  },
+  {
+   "from": "joint_pres_1_0",
+   "to": "joint_inv_0_0"
+  },
+  {
+   "from": "g_desc",
+   "to": "joint_head_0_0",
+   "from_dx": 339
+  },
+  {
+   "from": "other_head_0_0",
+   "to": "other_pres_0_0"
+  },
+  {
+   "from": "other_pres_0_0",
+   "to": "other_inv_0_0"
+  },
+  {
+   "from": "g_desc",
+   "to": "other_head_0_0",
+   "from_dx": 565
+  },
+  {
+   "from": "heal_head_0_0",
+   "to": "heal_pres_0_0"
+  },
+  {
+   "from": "heal_pres_0_0",
+   "to": "heal_inv_0_0"
+  },
+  {
+   "from": "g_heal",
+   "to": "heal_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1036,
+   "w": 1598,
+   "title": "When it does not heal",
+   "items": [
+    "delayed union: takes TWICE as long as expected · non-union: no healing in 6-9 months · malunion: heals out of anatomic position",
+    "what to do about them: see the FRACTURE MANAGEMENT chart"
+   ],
+   "cols": 1
+  }
+ ]
+}

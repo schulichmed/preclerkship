@@ -1,0 +1,206 @@
+{
+ "name": "older adult health visit overview",
+ "title": "Older adult periodic health encounter: ALBUS frames the visit; bone density for women 65 and over and a one-time aortic aneurysm ultrasound for men 65 to 80 are added, pneumococcal, shingles and tetanus vaccines are given, and PSA, asymptomatic cognitive or thyroid screening and routine chest X-ray, blood count, ECG and exam are not recommended",
+ "col_w": 240,
+ "root": {
+  "title": "Older adult at a periodic health encounter (PHE): what do I ADD, and what do I NOT order?",
+  "lines": [
+   "ALBUS: Acute issues + safety · Labs + vitals (blood pressure, weight) · Book follow-up · Update the patient profile · Screening",
+   "cancer (incl. prostate), lipids, lung, diabetes: see the ADULT SCREENING chart · illness presenting atypically: see the FRAILTY AND FALLS chart"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_add",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "SCREEN: added in older adults",
+   "lines": []
+  },
+  {
+   "id": "g_imm",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "IMMUNIZE",
+   "lines": []
+  },
+  {
+   "id": "g_no",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "Do NOT screen",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "who",
+  "how"
+ ],
+ "row_names": {
+  "who": "WHO",
+  "how": "HOW · HOW OFTEN"
+ },
+ "columns": [
+  {
+   "id": "bmd",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Bone mineral density (BMD)",
+      []
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "WOMEN ≥ 65",
+      []
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "ok",
+      "Radiographic test every 1–5 years",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Risk factors → EARLIER + more often",
+      [
+       "• medications",
+       "• anti-resorptive diseases",
+       "• pre-existing pathology"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "aaa",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Abdominal aortic aneurysm (AAA)",
+      []
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "MEN 65–80",
+      []
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "ok",
+      "Ultrasound ONCE",
+      [
+       "repeat if positive"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "vac",
+   "colour": "olive",
+   "head": [
+    [
+     [
+      "h",
+      "Vaccines",
+      []
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Who",
+      [
+       "• pneumococcal (Pneumovax): 65+",
+       "• shingles (Shingrix): 65–70",
+       "• tetanus"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "ok",
+      "Shingrix: 2 doses, 2–6 months apart",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Tetanus every 10 years",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "no",
+   "colour": "slate",
+   "head": [
+    [
+     [
+      "h",
+      "Not recommended",
+      []
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "NO symptoms? Don't screen",
+      [
+       "• cognitive impairment",
+       "• thyroid disease"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "bad",
+      "Not routine tests",
+      [
+       "• chest X-ray, complete blood count, electrocardiogram (ECG)",
+       "• routine exam: heart, lungs, breasts, rectal"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

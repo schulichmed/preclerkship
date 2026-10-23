@@ -1,0 +1,649 @@
+[
+ {
+  "qid": "module-endo-Q16",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Sort each complete list of thyroid disorders into the correct category.</strong></p><p>Two categories describe <strong>structure</strong> (focal or diffuse enlargement) and two describe <strong>function</strong> (hypo- or hyperthyroidism).</p>",
+  "pairs": {
+   "leftLabel": "List",
+   "rightLabel": "Category",
+   "items": [
+    {
+     "left": "Iatrogenic (oral T4 Rx) · Graves' disease · Toxic nodule/toxic MNG · Thyroiditis (painful, Hashimoto's, post-partum) · Iodine-induced (Jod-Basedow)",
+     "right": "Hyperthyroidism/Thyrotoxicosis (Function)"
+    },
+    {
+     "left": "Hashimoto's · Iatrogenic · Central (pit/hypothal) · Thyroiditis (hypo phase)",
+     "right": "Hypothyroidism (Function)"
+    },
+    {
+     "left": "Benign adenoma · Toxic adenoma · Papillary Ca · Follicular Ca · Medullary thyroid cancer (MTC)",
+     "right": "Focal Enlargement - nodules (Structure)"
+    },
+    {
+     "left": "Graves' · Hashimoto's · Multinodular goiter (MNG) · Iodine deficiency",
+     "right": "Diffuse Enlargement - goitre (Structure)"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>List</th><th>Category</th></tr></thead><tbody><tr><td>Iatrogenic (oral T4 Rx) · Graves' disease · Toxic nodule/toxic MNG · Thyroiditis (painful, Hashimoto's, post-partum) · Iodine-induced (Jod-Basedow)</td><td>Hyperthyroidism/Thyrotoxicosis (Function)</td></tr><tr><td>Hashimoto's · Iatrogenic · Central (pit/hypothal) · Thyroiditis (hypo phase)</td><td>Hypothyroidism (Function)</td></tr><tr><td>Benign adenoma · Toxic adenoma · Papillary Ca · Follicular Ca · Medullary thyroid cancer (MTC)</td><td>Focal Enlargement - nodules (Structure)</td></tr><tr><td>Graves' · Hashimoto's · Multinodular goiter (MNG) · Iodine deficiency</td><td>Diffuse Enlargement - goitre (Structure)</td></tr></tbody></table>\n<p>Note that Graves' and Hashimoto's each appear twice, under both a Structure and a Function category - Graves' causes diffuse enlargement <em>and</em> hyperthyroidism; Hashimoto's causes diffuse enlargement <em>and</em> hypothyroidism (with a transient hyper phase). The structure/function split is the point of the exercise.</p>",
+  "note": "keyed option A + the bank's answer table"
+ },
+ {
+  "qid": "module-endo-Q64",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match each vitamin D metabolite with its corresponding property.</strong></p>",
+  "pairs": {
+   "leftLabel": "Metabolite",
+   "rightLabel": "Property",
+   "items": [
+    {
+     "left": "1,25-dihydroxy vitamin D3",
+     "right": "The most active form of vitamin D"
+    },
+    {
+     "left": "25-hydroxy vitamin D3",
+     "right": "The major circulating form"
+    },
+    {
+     "left": "Cholecalciferol",
+     "right": "Requires hepatic metabolism to form calcifediol"
+    },
+    {
+     "left": "Ergocalciferol",
+     "right": "Requires hepatic and renal metabolism to form calcitriol"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Metabolite</th><th>Property</th></tr></thead><tbody><tr><td><span class=\"wl\">1,25-dihydroxy vitamin D3</span></td><td>The most active form of vitamin D</td></tr><tr><td>25-hydroxy vitamin D3</td><td>The major circulating form</td></tr><tr><td><span class=\"wl\">Cholecalciferol</span></td><td>Requires hepatic metabolism to form calcifediol</td></tr><tr><td><span class=\"wl\">Ergocalciferol</span></td><td>Requires hepatic and renal metabolism to form calcitriol</td></tr></tbody></table>",
+  "flags": [
+   {
+    "type": "warning",
+    "title": "The module's D2/D3 split is a convention, not chemistry",
+    "html": "<p>Strictly, calcifediol and calcitriol are the D3 metabolites (25-OH-D3 and 1,25-(OH)<sub>2</sub>-D3), so both \"requires hepatic metabolism to form calcifediol\" and \"requires hepatic and renal metabolism to form calcitriol\" strictly describe cholecalciferol, and ergocalciferol (D2) actually becomes 25-OH-D2 and then 1,25-(OH)<sub>2</sub>-D2. The lecture does not separate them either: its vitamin D chart lists <em>both</em> ergocalciferol and cholecalciferol as needing \"hepatic + renal\" metabolism. The grid keeps the module's own key (cholecalciferol to calcifediol, ergocalciferol to calcitriol), so read the D2/D3 rows as the module's framing rather than a real biochemical difference.</p>"
+   }
+  ],
+  "note": "keyed option A (1-W, 2-X, 3-Y, 4-Z); the bank's answer table agrees with A"
+ },
+ {
+  "qid": "module-endo-Q69",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match the drug with its corresponding action or pharmacological property.</strong></p>",
+  "pairs": {
+   "leftLabel": "Drug",
+   "rightLabel": "Property",
+   "items": [
+    {
+     "left": "Teriparatide",
+     "right": "When given intermittently, it promotes bone formation"
+    },
+    {
+     "left": "Romosozumab",
+     "right": "It is a biologic drug that targets sclerostin"
+    },
+    {
+     "left": "Denosumab",
+     "right": "It slows bone resorption by neutralizing the actions of RANKL"
+    },
+    {
+     "left": "Alendronate",
+     "right": "It has prolonged bone retention and can cause hypocalcemia"
+    },
+    {
+     "left": "Calcitriol",
+     "right": "It increases the intestinal absorption of calcium and decreases the secretion of PTH"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Drug</th><th>Property</th></tr></thead><tbody><tr><td><span class=\"wl\">Teriparatide</span></td><td>When given intermittently, it promotes bone formation</td></tr><tr><td><span class=\"wl\">Romosozumab</span></td><td>It is a biologic drug that targets sclerostin</td></tr><tr><td><span class=\"wl\">Denosumab</span></td><td>It slows bone resorption by neutralizing the actions of RANKL</td></tr><tr><td><span class=\"wl\">Alendronate</span></td><td>It has prolonged bone retention and can cause hypocalcemia</td></tr><tr><td><span class=\"wl\">Calcitriol</span></td><td>It increases the intestinal absorption of calcium and decreases the secretion of PTH</td></tr></tbody></table>",
+  "note": "keyed option B + the bank's answer table"
+ },
+ {
+  "qid": "workbook-endo-Q6",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match the food type with the calories per gram.</strong></p>",
+  "pairs": {
+   "leftLabel": "Food type",
+   "rightLabel": "Calories per gram",
+   "items": [
+    {
+     "left": "Carbohydrate",
+     "right": "4 Calories per gram"
+    },
+    {
+     "left": "Protein",
+     "right": "4 Calories per gram"
+    },
+    {
+     "left": "Fat",
+     "right": "9 Calories per gram"
+    },
+    {
+     "left": "Alcohol",
+     "right": "7 Calories per gram"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Food type</th><th>Calories per gram</th></tr></thead><tbody><tr><td>Carbohydrate</td><td>4 Calories per gram</td></tr><tr><td>Protein</td><td>4 Calories per gram</td></tr><tr><td>Fat</td><td>9 Calories per gram</td></tr><tr><td>Alcohol</td><td>7 Calories per gram</td></tr></tbody></table><p>Carbohydrate and protein both have <strong>4</strong> Calories per gram. Fat has <strong>9</strong> Calories per gram, while alcohol has <strong>7</strong> Calories per gram.</p>",
+  "note": "keyed option C + answer prose"
+ },
+ {
+  "qid": "module-endo-Q115",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match the type of endometrium with the phase of the menstrual cycle.</strong></p>",
+  "pairs": {
+   "leftLabel": "Endometrium",
+   "rightLabel": "Menstrual cycle phase",
+   "items": [
+    {
+     "left": "Secretory endometrium",
+     "right": "Luteal phase"
+    },
+    {
+     "left": "Proliferative endometrium",
+     "right": "Follicular phase"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Endometrium</th><th>Menstrual cycle phase</th></tr></thead><tbody><tr><td>Secretory endometrium</td><td>Luteal phase</td></tr><tr><td>Proliferative endometrium</td><td>Follicular phase</td></tr></tbody></table><p>Name each phase from the hormone driving it and the mapping cannot invert:</p><ul><li>⭐ <strong>Follicular = <span class=\"wl\">estrogen</span> = PROLIFERATIVE.</strong> Oestrogen from the growing follicle thickens the endometrium, and the glands are <strong>tubular and straight</strong></li><li>⭐ <strong>Luteal = <span class=\"wl\">progesterone</span> = SECRETORY.</strong> The <span class=\"wl\">corpus luteum</span> primes the lining for implantation, and the glands become <strong>tortuous with luminal secretions</strong></li></ul><p>⭐ <strong>Under the microscope the gland shape is the tell</strong>: straight and tubular means oestrogen, coiled and secreting means progesterone. Swapping them is the classic trap.</p>",
+  "note": "keyed option A; confirmed against the Rise export (Histology and Embryology courseData: Secretory->Luteal, Proliferative->Follicular)"
+ },
+ {
+  "qid": "module-endo-Q118",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match each letter on the figure with the correct location in the <span class=\"wl\">Fallopian tube</span>.</strong></p><figure><img loading=\"lazy\" alt=\"Fallopian tube with segments labelled A-D - Rise module\" src=\"assets/figures/44dbb2d8c4f4.jpg\"></figure>",
+  "pairs": {
+   "leftLabel": "Label",
+   "rightLabel": "Location in the Fallopian tube",
+   "items": [
+    {
+     "left": "A",
+     "right": "Isthmus"
+    },
+    {
+     "left": "B",
+     "right": "Ampulla"
+    },
+    {
+     "left": "C",
+     "right": "Infundibulum"
+    },
+    {
+     "left": "D",
+     "right": "Fimbriae"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Label</th><th>Location in the Fallopian tube</th></tr></thead><tbody><tr><td>A</td><td>Isthmus</td></tr><tr><td>B</td><td>Ampulla</td></tr><tr><td>C</td><td>Infundibulum</td></tr><tr><td>D</td><td>Fimbriae</td></tr></tbody></table><p>The order is anatomical, running <strong>from the uterus outward to the ovary</strong>:</p><ul><li><strong>intramural</strong> — within the uterine wall</li><li>⭐ <strong><span class=\"wl\">isthmus</span></strong> — the <strong>thinnest, narrowest</strong> segment</li><li>⭐ <strong><span class=\"wl\">ampulla</span></strong> — the <strong>widest, most central</strong> segment, and <strong>where fertilization usually occurs</strong></li><li><strong><span class=\"wl\">infundibulum</span></strong> — the funnel nearest the ovary</li><li><strong>fimbriae</strong> — the finger-like projections at its mouth</li></ul><p>⭐ <strong>Getting the isthmus and ampulla the right way round is the examinable half</strong>, because the ampulla being widest is the same fact that explains both normal fertilization and why <strong>96-98% of ectopic pregnancies are tubal</strong>.</p>",
+  "note": "keyed option A; confirmed against the Rise export (Histology and Embryology, 'FT labeled.png': A-Isthmus, B-Ampulla, C-Infundibulum, D-Fimbriae). Figure recovered from articulateusercontent.com (illustration).",
+  "drop_flags": [
+   "Reconstructed from the module's pairings, not from its figure",
+   "The module's image is not in the export"
+  ]
+ },
+ {
+  "qid": "module-endo-Q121",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Order the stages of ovarian follicle development from first to last.</strong></p>",
+  "pairs": {
+   "leftLabel": "Stage",
+   "rightLabel": "Position in the sequence",
+   "items": [
+    {
+     "left": "Oocyte",
+     "right": "1st"
+    },
+    {
+     "left": "Primordial follicle",
+     "right": "2nd"
+    },
+    {
+     "left": "Primary follicle",
+     "right": "3rd"
+    },
+    {
+     "left": "Secondary follicle",
+     "right": "4th"
+    },
+    {
+     "left": "Mature (Graafian) follicle",
+     "right": "5th"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Stage</th><th>Position in the sequence</th></tr></thead><tbody><tr><td>Oocyte</td><td>1st</td></tr><tr><td>Primordial follicle</td><td>2nd</td></tr><tr><td>Primary follicle</td><td>3rd</td></tr><tr><td>Secondary follicle</td><td>4th</td></tr><tr><td>Mature (Graafian) follicle</td><td>5th</td></tr></tbody></table><p>What defines each step is the granulosa and theca around the oocyte:</p><ul><li><strong>primordial</strong> — dormant, and <strong>what is present at birth</strong>. At puberty monthly ovarian factors recruit <strong>30-50</strong> into primary follicles</li><li><strong>primary</strong> — acquires <strong>one layer of granulosa cells</strong></li><li><strong>secondary</strong> — granulosa proliferate into <strong>another layer</strong></li><li>⭐ <strong>tertiary/Graafian</strong> — a <strong>double layer of theca outside</strong>, a fluid-filled <strong>antrum</strong>, and thickened granulosa over the oocyte. It takes <strong>6-8 months</strong> to reach this stage</li></ul><p>⭐ <strong>The follicle with the most FSH receptors becomes dominant</strong>, because there is only so much FSH to go round — which is exactly the competition that <strong><strong>ART</strong></strong> defeats by flooding the system with supraphysiological FSH so several follicles mature at once.</p>",
+  "note": "keyed option A; confirmed against the Rise export (ordering 1-5)"
+ },
+ {
+  "qid": "module-endo-Q156",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match the correct primordial structure to the female reproductive system terminal structure.</strong></p>",
+  "pairs": {
+   "leftLabel": "Primordial structure",
+   "rightLabel": "Terminal structure",
+   "items": [
+    {
+     "left": "Primordial germ cells",
+     "right": "Primary oocytes"
+    },
+    {
+     "left": "Cortical cords",
+     "right": "Follicular cells"
+    },
+    {
+     "left": "Mesonephric duct",
+     "right": "Gartner's ducts"
+    },
+    {
+     "left": "Uterovaginal primordium",
+     "right": "Uterus"
+    },
+    {
+     "left": "Urogenital sinus",
+     "right": "Lower 2/3 vagina"
+    },
+    {
+     "left": "Gubernaculum",
+     "right": "Round ligament of the uterus"
+    },
+    {
+     "left": "Genital tubercle",
+     "right": "Clitoris"
+    },
+    {
+     "left": "Urethral folds",
+     "right": "Labia minora"
+    },
+    {
+     "left": "Labioscrotal swellings",
+     "right": "Labia majora"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Primordial structure</th><th>Terminal structure</th></tr></thead><tbody><tr><td>Primordial germ cells</td><td>Primary oocytes</td></tr><tr><td>Cortical cords</td><td>Follicular cells</td></tr><tr><td>Mesonephric duct</td><td>Gartner's ducts</td></tr><tr><td>Uterovaginal primordium</td><td>Uterus</td></tr><tr><td>Urogenital sinus</td><td>Lower 2/3 vagina</td></tr><tr><td>Gubernaculum</td><td>Round ligament of the uterus</td></tr><tr><td>Genital tubercle</td><td>Clitoris</td></tr><tr><td>Urethral folds</td><td>Labia minora</td></tr><tr><td>Labioscrotal swellings</td><td>Labia majora</td></tr></tbody></table><ul><li>Primordial Germ Cells differentiate into oogonia, which undergo active mitosis to form primary oocytes</li><li>Cortical cords proliferate and surround the primary oocytes differentiating into follicular cells</li><li>The mesonephric duct regresses during female development, but some remnants remain including Gartner's ducts lateral to the vagina</li><li>The uterovaginal primordium formed by fused paramesonephric ducts forms the uterus and upper 1/3 of the vagina</li><li>Urogenital Sinus forms sinovaginal bulbs with the uterovaginal primordium to form the vagina - the urogenital sinus forms the lower 2/3 of the vagina and the uterovaginal primordium forms the upper 1/3</li><li>The gubernaculum attaches to the uterus forming the ligament of the ovary cranially and the round ligament of the uterus caudally</li><li>The genital tubercle elongates to form the clitoris</li><li>The urethral folds stay separate to form the labia minora</li><li>The labioscrotal swelling expand to form the labia majora</li></ul>",
+  "note": "keyed option C + answer table; confirmed against the Rise export (Development of the Female Reproductive Tract). Old answer had the explanation jammed into an extra table cell; re-laid as a list."
+ },
+ {
+  "qid": "module-endo-Q161",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match the correct function to the labelled structures.</strong> Each function pairs with one label A–G on the diagram.</p><figure><img loading=\"lazy\" src=\"assets/figures/08cf496a1a23.jpg\" alt=\"female internal genitalia labelled - Rise module.png\"></figure>",
+  "pairs": {
+   "leftLabel": "Function",
+   "rightLabel": "Label",
+   "items": [
+    {
+     "left": "Hormone producer",
+     "right": "E"
+    },
+    {
+     "left": "Childbirth passage",
+     "right": "C"
+    },
+    {
+     "left": "Carries ovarian vessels",
+     "right": "G"
+    },
+    {
+     "left": "Home to developing fetus",
+     "right": "A"
+    },
+    {
+     "left": "Common site of fertilization",
+     "right": "D"
+    },
+    {
+     "left": "Anchors ovary to uterus",
+     "right": "F"
+    },
+    {
+     "left": "Site of Pap smears",
+     "right": "B"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Function</th><th>Label</th></tr></thead><tbody><tr><td>Hormone producer</td><td>E - Ovary</td></tr><tr><td>Childbirth passage</td><td>C - Vagina</td></tr><tr><td>Carries ovarian vessels</td><td>G - Suspensory ligament of the ovary</td></tr><tr><td>Home to developing fetus</td><td>A - Body of the uterus</td></tr><tr><td>Common site of fertilization</td><td>D - Ampulla of the uterine tube</td></tr><tr><td>Anchors ovary to uterus</td><td>F - Ligament of the ovary</td></tr><tr><td>Site of Pap smears</td><td>B - Cervix</td></tr></tbody></table><p><strong>The reasoning below is mine</strong> — the module keyed the letters and gave none.</p><ul><li><strong>F and G are the pair worth separating.</strong> The <strong>ligament of the ovary</strong> (F) runs medially from the ovary to the uterus and is a gubernaculum remnant carrying nothing. The <strong>suspensory ligament</strong> (G) runs laterally over the pelvic brim and is the one holding the <strong>ovarian artery, vein and nerves</strong> — which is why it is the pedicle clamped in an oophorectomy, and why the ureter running beneath it is what gets injured.</li><li><strong>D is the uterine tube, and fertilization happens in its ampulla</strong>, the widest part; the fimbriae at its lateral end only sweep the oocyte in. A tubal ectopic implants here for the same reason.</li><li><strong>B is the cervix because a Pap samples the transformation zone</strong>, where columnar endocervical epithelium meets squamous ectocervical epithelium. That junction is where HPV transforms cells — not the uterine body (A), and not the vagina (C).</li></ul>",
+  "note": "keyed option C + answer table; confirmed against the Rise export ('KC Reproductive Organs.png')"
+ },
+ {
+  "qid": "hippo-endo-Q63",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match the structures to the lymph nodes that drain them (one answer per choice).</strong></p>",
+  "pairs": {
+   "leftLabel": "Structure",
+   "rightLabel": "Lymph nodes",
+   "items": [
+    {
+     "left": "Skin",
+     "right": "Superficial inguinal lymph nodes"
+    },
+    {
+     "left": "Erectile bodies",
+     "right": "Deep inguinal lymph nodes"
+    },
+    {
+     "left": "Cervix",
+     "right": "External iliac lymph nodes"
+    },
+    {
+     "left": "Cavernous bodies",
+     "right": "Internal iliac lymph nodes"
+    },
+    {
+     "left": "Inferior vagina",
+     "right": "Sacral lymph nodes"
+    },
+    {
+     "left": "Uterine fundus",
+     "right": "Lumbar lymph nodes"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Structure</th><th>Lymph nodes</th></tr></thead><tbody><tr><td>Skin</td><td>Superficial inguinal lymph nodes</td></tr><tr><td>Erectile bodies</td><td>Deep inguinal lymph nodes</td></tr><tr><td>Cervix</td><td>External iliac lymph nodes</td></tr><tr><td>Cavernous bodies</td><td>Internal iliac lymph nodes</td></tr><tr><td>Inferior vagina</td><td>Sacral lymph nodes</td></tr><tr><td>Uterine fundus</td><td>Lumbar lymph nodes</td></tr></tbody></table><p>Note that both the internal and external iliac lymph nodes could drain the cervix.</p>",
+  "flags": [
+   {
+    "type": "warning",
+    "title": "The cervix has two acceptable answers",
+    "html": "<p>The source's own note says both the internal and external iliac nodes could drain the cervix, but the key pairs the cervix with the external iliac nodes and the cavernous bodies with the internal iliac nodes. The grid marks only the keyed pairing.</p>"
+   },
+   {
+    "type": "note",
+    "title": "Key restored from a garbled answer line",
+    "html": "<p>The source's key reads \"A. v, B - iii, C - i, D - ii, E - vi, F - iv\": the \"A -\" ran into \"The correct answer is A\". A and v are the only unpaired letter and numeral, so sacral nodes = inferior vagina.</p>"
+   }
+  ],
+  "note": "answer prose 'A. v, B - iii, C - i, D - ii, E - vi, F - iv' (letters = node options, numerals = structures); the leading 'A -' was swallowed by 'The correct answer is A.' - A/v are the only unpaired letter and numeral, so A (sacral) = v (inferior vagina) is forced"
+ },
+ {
+  "qid": "module-endo-Q164",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match the correct structure to each label in the female pelvis.</strong></p><figure><img loading=\"lazy\" alt=\"Female pelvis in situ, laparoscopic view, labelled A-J - Rise module\" src=\"assets/figures/8f90158dcc71.jpg\"></figure>",
+  "pairs": {
+   "leftLabel": "Structure",
+   "rightLabel": "Label",
+   "items": [
+    {
+     "left": "Uterus",
+     "right": "A"
+    },
+    {
+     "left": "Fallopian tube",
+     "right": "B"
+    },
+    {
+     "left": "Ovary",
+     "right": "C"
+    },
+    {
+     "left": "Fimbriae",
+     "right": "D"
+    },
+    {
+     "left": "Ligament of the ovary",
+     "right": "E"
+    },
+    {
+     "left": "Uterosacral fold (ligament)",
+     "right": "F"
+    },
+    {
+     "left": "Round ligament of the uterus",
+     "right": "G"
+    },
+    {
+     "left": "Suspensory ligament of the ovary",
+     "right": "H"
+    },
+    {
+     "left": "Rectouterine pouch",
+     "right": "I"
+    },
+    {
+     "left": "Broad ligament",
+     "right": "J"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Structure</th><th>Label</th></tr></thead><tbody><tr><td>Uterus</td><td>A</td></tr><tr><td>Fallopian tube</td><td>B</td></tr><tr><td>Ovary</td><td>C</td></tr><tr><td>Fimbriae</td><td>D</td></tr><tr><td>Ligament of the ovary</td><td>E</td></tr><tr><td>Uterosacral fold (ligament)</td><td>F</td></tr><tr><td>Round ligament of the uterus</td><td>G</td></tr><tr><td>Suspensory ligament of the ovary</td><td>H</td></tr><tr><td>Rectouterine pouch</td><td>I</td></tr><tr><td>Broad ligament</td><td>J</td></tr></tbody></table>",
+  "note": "bank answer table; confirmed against Rise export matchTitles ('KC image Repro tract in situ.png'). Image is an intra-operative laparoscopic photo of a living patient (not a dissection) - coordinator to decide if it ships. 'Fimbrae' corrected to Fimbriae.",
+  "drop_flags": [
+   "Reconstructed from the module's pairings, not from its figure",
+   "The module's image is not in the export"
+  ]
+ },
+ {
+  "qid": "module-endo-Q165",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match the correct structure to each label on the midsagittal MR image.</strong></p><figure><img loading=\"lazy\" alt=\"Female pelvis midsagittal image labelled - Rise module\" src=\"assets/figures/f7a93763819c.jpg\"></figure>",
+  "pairs": {
+   "leftLabel": "Structure",
+   "rightLabel": "Label",
+   "items": [
+    {
+     "left": "Uterus",
+     "right": "A"
+    },
+    {
+     "left": "Vesicouterine pouch",
+     "right": "B"
+    },
+    {
+     "left": "Bladder",
+     "right": "C"
+    },
+    {
+     "left": "Vagina",
+     "right": "D"
+    },
+    {
+     "left": "Rectouterine pouch",
+     "right": "E"
+    },
+    {
+     "left": "Rectum",
+     "right": "F"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Structure</th><th>Label</th></tr></thead><tbody><tr><td>Uterus</td><td>A</td></tr><tr><td>Vesicouterine pouch</td><td>B</td></tr><tr><td>Bladder</td><td>C</td></tr><tr><td>Vagina</td><td>D</td></tr><tr><td>Rectouterine pouch</td><td>E</td></tr><tr><td>Rectum</td><td>F</td></tr></tbody></table>",
+  "note": "bank answer table; confirmed against Rise export ('KC MRI.png'). Radiology image (looks like contrast CT despite the module calling it MR).",
+  "drop_flags": [
+   "Reconstructed from the module's pairings, not from its figure",
+   "The module's image is not in the export"
+  ]
+ },
+ {
+  "qid": "module-endo-Q166",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match the correct structure to each label on the pelvic floor.</strong></p><figure><img loading=\"lazy\" alt=\"Pelvic floor from above, labelled A-F - Rise module\" src=\"assets/figures/57f869d156f6.jpg\"></figure>",
+  "pairs": {
+   "leftLabel": "Structure",
+   "rightLabel": "Label",
+   "items": [
+    {
+     "left": "Levator ani",
+     "right": "A"
+    },
+    {
+     "left": "Coccygeus",
+     "right": "B"
+    },
+    {
+     "left": "Urethra",
+     "right": "C"
+    },
+    {
+     "left": "Vagina",
+     "right": "D"
+    },
+    {
+     "left": "Rectum",
+     "right": "E"
+    },
+    {
+     "left": "Urogenital hiatus",
+     "right": "F"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Structure</th><th>Label</th></tr></thead><tbody><tr><td>Levator ani</td><td>A</td></tr><tr><td>Coccygeus</td><td>B</td></tr><tr><td>Urethra</td><td>C</td></tr><tr><td>Vagina</td><td>D</td></tr><tr><td>Rectum</td><td>E</td></tr><tr><td>Urogenital hiatus</td><td>F</td></tr></tbody></table>",
+  "note": "bank answer table; confirmed against Rise export ('Review from P1 - Pelvic Floor.png', a Netter N336 illustration).",
+  "drop_flags": [
+   "Reconstructed from the module's pairings, not from its figure",
+   "The module's image is not in the export"
+  ]
+ },
+ {
+  "qid": "module-endo-Q176",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match the correct structure to each label on the male genitalia.</strong></p><figure><img loading=\"lazy\" alt=\"Male erectile bodies labelled - Rise module\" src=\"assets/figures/312b8bceb22d.jpg\"></figure>",
+  "pairs": {
+   "leftLabel": "Structure",
+   "rightLabel": "Label",
+   "items": [
+    {
+     "left": "Corpora cavernosa",
+     "right": "A"
+    },
+    {
+     "left": "Corpus spongiosum",
+     "right": "B"
+    },
+    {
+     "left": "Bulbourethral glands",
+     "right": "C"
+    },
+    {
+     "left": "Spongy urethra",
+     "right": "D"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Structure</th><th>Label</th></tr></thead><tbody><tr><td>Corpora cavernosa</td><td>A</td></tr><tr><td>Corpus spongiosum</td><td>B</td></tr><tr><td>Bulbourethral glands</td><td>C</td></tr><tr><td>Spongy urethra</td><td>D</td></tr></tbody></table>",
+  "note": "bank answer table; confirmed against Rise export ('Recall From P1 - Male Erectile Bodies.png', illustration). 'Corpora Spongiosum' corrected to Corpus spongiosum.",
+  "drop_flags": [
+   "Reconstructed from the module's pairings, not from its figure",
+   "The module's image is not in the export"
+  ]
+ },
+ {
+  "qid": "module-endo-Q177",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match the correct structure to each label in the female perineum.</strong></p><figure><img loading=\"lazy\" alt=\"Female perineum and urogenital triangle labelled A-J - Rise module\" src=\"assets/figures/d77aed3deea8.jpg\"></figure>",
+  "pairs": {
+   "leftLabel": "Structure",
+   "rightLabel": "Label",
+   "items": [
+    {
+     "left": "Corpora cavernosa - crura",
+     "right": "A"
+    },
+    {
+     "left": "Corpora cavernosa - body of the clitoris",
+     "right": "B"
+    },
+    {
+     "left": "Bulbs of the vestibule",
+     "right": "C"
+    },
+    {
+     "left": "Vestibule of the vagina",
+     "right": "D"
+    },
+    {
+     "left": "Greater vestibular glands",
+     "right": "E"
+    },
+    {
+     "left": "Glans clitoris",
+     "right": "F"
+    },
+    {
+     "left": "Perineal membrane",
+     "right": "G"
+    },
+    {
+     "left": "Ischiocavernosus",
+     "right": "H"
+    },
+    {
+     "left": "Bulbospongiosus",
+     "right": "I"
+    },
+    {
+     "left": "Superficial transverse perineal",
+     "right": "J"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Structure</th><th>Label</th></tr></thead><tbody><tr><td>Corpora cavernosa - crura</td><td>A</td></tr><tr><td>Corpora cavernosa - body of the clitoris</td><td>B</td></tr><tr><td>Bulbs of the vestibule</td><td>C</td></tr><tr><td>Vestibule of the vagina</td><td>D</td></tr><tr><td>Greater vestibular glands</td><td>E</td></tr><tr><td>Glans clitoris</td><td>F</td></tr><tr><td>Perineal membrane</td><td>G</td></tr><tr><td>Ischiocavernosus</td><td>H</td></tr><tr><td>Bulbospongiosus</td><td>I</td></tr><tr><td>Superficial transverse perineal</td><td>J</td></tr></tbody></table>",
+  "note": "bank answer table; confirmed against Rise export ('KC UG Triangle.png', two illustrations). 'Ischiocavernousus' corrected.",
+  "drop_flags": [
+   "Reconstructed from the module's pairings, not from its figure",
+   "The module's image is not in the export"
+  ]
+ },
+ {
+  "qid": "module-endo-Q167",
+  "bank": "pom2/data/questions/endo.json",
+  "skip": "cadaveric image, needs Nicole's approval (recovered from the Rise export: /tmp/claude-1000/-home-nsims-repos-preclerkship/43bf4b05-6718-4094-b2ec-c3f7899c2766/scratchpad/rise/pelvic arteries cadaveric labelled - Rise module.png; key A-G confirmed)"
+ },
+ {
+  "qid": "hippo-repro-Q34",
+  "bank": "pom2/data/questions/repro.json",
+  "stem": "<p><strong>Match the correct marker substance for each pathology.</strong></p>",
+  "pairs": {
+   "leftLabel": "Pathology",
+   "rightLabel": "Marker",
+   "items": [
+    {
+     "left": "Dysgerminoma",
+     "right": "LDH"
+    },
+    {
+     "left": "Yolk sac tumor",
+     "right": "a-FP"
+    },
+    {
+     "left": "Choriocarcinoma",
+     "right": "b-hCG"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Pathology</th><th>Marker</th></tr></thead><tbody><tr><td>Dysgerminoma</td><td>LDH</td></tr><tr><td>Yolk sac tumor</td><td>a-FP</td></tr><tr><td>Choriocarcinoma</td><td>b-hCG</td></tr></tbody></table><p><strong>Each germ cell tumour is named by the tissue it is trying to be, and the marker follows from that.</strong> The lecture's marker table sets out three strong associations:</p><ul><li><strong>Dysgerminoma &rarr; LDH.</strong> The ovarian counterpart of the seminoma; LDH is its marker.</li><li><strong>Yolk sac tumour &rarr; alpha-fetoprotein.</strong> AFP is what a yolk sac makes, so a tumour differentiating towards yolk sac makes it too. Most common in toddlers, and Schiller-Duval bodies on histology are pathognomonic.</li><li><strong>Choriocarcinoma &rarr; beta-hCG.</strong> It arises from placental tissue, and beta-hCG is the placental hormone.</li></ul><p>Worth holding onto: immature teratoma and embryonal carcinoma each raise <em>two</em> of the three weakly, which is why the table marks the three above as the strong, discriminating associations rather than the only ones.</p>",
+  "note": "answer prose 'A. iii/ b-ii/ c-i' (A dysgerminoma-iii LDH, B yolk sac-ii a-FP, C choriocarcinoma-i b-hCG); the 'A -' ran into 'The correct answer is A' but only iii is left for A"
+ },
+ {
+  "qid": "module-endo-Q38",
+  "bank": "pom2/data/questions/endo.json",
+  "skip": "'matched' is incidental (matched blood glucose levels); single-best-answer MCQ"
+ },
+ {
+  "qid": "workbook-repro-Q28",
+  "bank": "pom2/data/questions/endo.json",
+  "skip": "single-best-answer MCQ ('which is matched incorrectly')"
+ },
+ {
+  "qid": "module-endo-Q162",
+  "bank": "pom2/data/questions/endo.json",
+  "skip": "fill-in-the-blank, not matching; key is 'Answer 1' (unrecoverable)"
+ },
+ {
+  "qid": "module-endo-Q163",
+  "bank": "pom2/data/questions/endo.json",
+  "skip": "fill-in-the-blank, not matching; key is 'Answer 1' (unrecoverable)"
+ },
+ {
+  "qid": "hippo-repro-Q1",
+  "bank": "pom2/data/questions/repro.json",
+  "skip": "single-best-answer MCQ ('INCORRECTLY matched')"
+ },
+ {
+  "qid": "hippo-repro-Q9",
+  "bank": "pom2/data/questions/repro.json",
+  "skip": "select-all list rewritten as MCQ, not a matching task"
+ },
+ {
+  "qid": "module-repro-Q90",
+  "bank": "pom2/data/questions/repro.json",
+  "skip": "'match' is incidental (SFH matching gestational age); single-best-answer MCQ"
+ }
+]

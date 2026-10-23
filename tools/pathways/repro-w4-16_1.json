@@ -1,0 +1,200 @@
+{
+ "name": "genetic screening for pregnancy in canada pathway",
+ "title": "Genetic testing in pregnancy: screening tests give a risk and a positive screen still needs a diagnostic test; diagnostic tests give an answer, and the lab test is chosen by the size of the abnormality.",
+ "nodes": [
+  {
+   "id": "a",
+   "x": 360,
+   "y": 10,
+   "w": 200,
+   "kind": "plain",
+   "title": "Pregnancy",
+   "lines": []
+  },
+  {
+   "id": "b",
+   "x": 330,
+   "y": 90,
+   "w": 260,
+   "h": 44,
+   "kind": "plain",
+   "title": "Screen or diagnose?",
+   "lines": []
+  },
+  {
+   "id": "c",
+   "x": 20,
+   "y": 180,
+   "w": 400,
+   "kind": "anti",
+   "title": "SCREEN — gives a risk",
+   "lines": [
+    "Nuchal translucency (NT) ultrasound 11-13 w",
+    "Enhanced first trimester screen (eFTS) 11-13 w",
+    "Maternal serum screen (MSS) 16-20 w",
+    "Non-invasive prenatal testing (NIPT) from 9 w"
+   ]
+  },
+  {
+   "id": "d",
+   "x": 500,
+   "y": 180,
+   "w": 400,
+   "h": 84,
+   "kind": "ana",
+   "title": "DIAGNOSE — gives an answer",
+   "lines": [
+    "Chorionic villus sampling (CVS) 11-13 w",
+    "Amniocentesis 15-20 w"
+   ]
+  },
+  {
+   "id": "e",
+   "x": 100,
+   "y": 350,
+   "w": 240,
+   "kind": "plain",
+   "title": "Screen positive?",
+   "lines": []
+  },
+  {
+   "id": "f",
+   "x": 60,
+   "y": 450,
+   "w": 320,
+   "h": 64,
+   "kind": "warn",
+   "title": "A positive SCREEN still",
+   "lines": [
+    "needs a DIAGNOSTIC test"
+   ]
+  },
+  {
+   "id": "g",
+   "x": 280,
+   "y": 560,
+   "w": 360,
+   "kind": "plain",
+   "title": "Which test, by size of abnormality?",
+   "lines": [],
+   "h": 42
+  },
+  {
+   "id": "h1",
+   "x": 15,
+   "y": 680,
+   "w": 165,
+   "h": 100,
+   "kind": "plain",
+   "title": "Karyotype",
+   "lines": [
+    "over 5 megabases"
+   ]
+  },
+  {
+   "id": "h2",
+   "x": 195,
+   "y": 680,
+   "w": 165,
+   "h": 100,
+   "kind": "plain",
+   "title": "Microarray",
+   "lines": [
+    "about 3 megabases"
+   ]
+  },
+  {
+   "id": "h3",
+   "x": 375,
+   "y": 680,
+   "w": 340,
+   "h": 100,
+   "kind": "plain",
+   "title": "Polymerase chain reaction, multiplex ligation-dependent probe amplification, sequencing",
+   "lines": [
+    "10 kilobases to 1 kilobase"
+   ]
+  },
+  {
+   "id": "h4",
+   "x": 730,
+   "y": 680,
+   "w": 175,
+   "h": 100,
+   "kind": "plain",
+   "title": "Single gene",
+   "lines": [
+    "1 base pair"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "a",
+   "to": "b"
+  },
+  {
+   "from": "b",
+   "to": "c",
+   "path": "M330 112H220V178",
+   "label": "screen",
+   "label_at": [
+    275,
+    104
+   ]
+  },
+  {
+   "from": "b",
+   "to": "d",
+   "path": "M590 112H700V178",
+   "label": "diagnose",
+   "label_at": [
+    645,
+    104
+   ]
+  },
+  {
+   "from": "c",
+   "to": "e"
+  },
+  {
+   "from": "e",
+   "to": "f",
+   "label": "yes",
+   "label_at": [
+    238,
+    426
+   ]
+  },
+  {
+   "from": "f",
+   "to": "d",
+   "path": "M380 482H460V222H498"
+  },
+  {
+   "from": "d",
+   "to": "g",
+   "path": "M700 264V581H642"
+  },
+  {
+   "from": "g",
+   "to": "h1",
+   "path": "M400 602V630H97V678"
+  },
+  {
+   "from": "g",
+   "to": "h2",
+   "path": "M430 602V648H277V678"
+  },
+  {
+   "from": "g",
+   "to": "h3",
+   "path": "M490 602V648H545V678"
+  },
+  {
+   "from": "g",
+   "to": "h4",
+   "path": "M520 602V630H817V678"
+  }
+ ]
+}

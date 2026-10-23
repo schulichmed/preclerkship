@@ -1,0 +1,260 @@
+{
+ "name": "leukopenia overview",
+ "title": "Low white count: confirm neutropenia and grade it by the absolute neutrophil count, then split on fever. Febrile neutropenia is an emergency worked up and treated in order; without fever, sort the acquired and congenital causes and know the infection risk",
+ "col_w": 250,
+ "root": {
+  "title": "Low WBC (< 4 × 10⁹/L): is it NEUTROPENIA, how SEVERE, and is there FEVER?",
+  "lines": [
+   "neutropenia = absolute neutrophil count (ANC) < 1.5 × 10⁹/L: the usual cause",
+   "mild 1.0–1.5 · moderate 0.5–0.99 · SEVERE < 0.5"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_f",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "FEVER: oncologic EMERGENCY",
+   "lines": []
+  },
+  {
+   "id": "g_n",
+   "cols": [
+    1,
+    2
+   ],
+   "title": "NO fever: find the CAUSE",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "RECOGNIZE",
+  "inv": "WORK UP",
+  "tx": "ACT"
+ },
+ "columns": [
+  {
+   "id": "fn",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Febrile neutropenia",
+      [
+       "most common serious complication of blood cancers + chemotherapy"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Fever in a neutropenic patient",
+      [
+       "• one oral temperature > 38.3 °C",
+       "• or ≥ 38.0 °C sustained over 1 hour"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "1 · STABILIZE",
+      [
+       "• ABCs · IV fluids · oxygen if hypoxic"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Bloods + CULTURES",
+      [
+       "• CBC + diff, electrolytes, urea, creatinine, liver tests",
+       "• blood + urine cultures · chest X-ray"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Look for the source",
+      [
+       "• mouth, sinuses · lungs · GU · skin + IV line sites · neuro",
+       "• NO digital rectal exam (DRE)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "4 · Empiric IV antibiotics NOW",
+      [
+       "• imipenem (carbapenem)",
+       "• or piperacillin-tazobactam"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "5 · ADD IV vancomycin if",
+      [
+       "• skin or catheter-site infection",
+       "• hemodynamically UNSTABLE"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "aq",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Acquired neutropenia",
+      [
+       "infection · toxins · autoimmune · nutrition · marrow · spleen"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Toxins: ask first",
+      [
+       "• chemotherapy · radiation",
+       "• clozapine · antithyroid (propylthiouracil, carbimazole)",
+       "• antibiotics (trimethoprim-sulfamethoxazole, dapsone) · antiepileptics"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Infection",
+      [
+       "• viral: EBV, CMV, hepatitis, HIV, influenza",
+       "• bacterial: sepsis, mycobacteria"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Autoimmune",
+      [
+       "• autoimmune neutropenia",
+       "• SLE · RA (Felty)"
+      ]
+     ],
+     [
+      "w",
+      "Nutritional",
+      [
+       "• B12 · folate · copper",
+       "• malnutrition"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Marrow failure",
+      [
+       "• MDS · AML",
+       "• lymphoma or metastases in marrow"
+      ]
+     ],
+     [
+      "w",
+      "Spleen",
+      [
+       "• sequestration in splenomegaly"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "SEVERE: watch for infection",
+      [
+       "• bacteria: E. coli, Pseudomonas, Klebsiella, S. aureus, strep",
+       "• viral reactivation: HSV, CMV, VZV",
+       "• fungi: Candida, Aspergillus"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cg",
+   "colour": "olive",
+   "head": [
+    [
+     [
+      "h",
+      "Congenital neutropenia",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Constitutional neutropenia",
+      [
+       "• seen in some ethnic backgrounds",
+       "• BENIGN"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Rarer congenital causes",
+      [
+       "• cyclic neutropenia",
+       "• severe congenital (Kostmann)",
+       "• Chediak-Higashi · Shwachman-Diamond · Barth"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Constitutional: NO added infection risk",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

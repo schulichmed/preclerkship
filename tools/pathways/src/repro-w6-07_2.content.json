@@ -1,0 +1,94 @@
+{
+ "name": "lactation overview",
+ "title": "Breastfeeding trouble sorted by which of the three needs broke: low supply split by the latch into inadequate production or poor extraction, nipple or breast pain (mastitis pointed to the breast chart), and stopping, either because breastfeeding is contraindicated or because she chooses to wean; each column gives what to look for and how to manage it, with panels on the first week and on contraception while breastfeeding",
+ "col_w": 236,
+ "root": {
+  "title": "Breastfeeding trouble: which of the THREE needs broke?",
+  "lines": [
+   "prolactin MAKES milk · oxytocin EJECTS it · the infant or a pump must REMOVE it, starting by day 3",
+   "from day 3, milk removal (not hormones) drives supply"
+  ]
+ },
+ "groups": [
+  {"id": "g_low", "cols": [0, 1], "title": "LOW SUPPLY", "lines": ["the commonest reason to stop breastfeeding"]},
+  {"id": "g_pain", "cols": [2, 2], "title": "PAIN while feeding", "lines": []},
+  {"id": "g_stop", "cols": [3, 4], "title": "Should she STOP?", "lines": ["a contraindication, or her choice"]}
+ ],
+ "pres": [
+  {"id": "p_low", "group": "g_low", "title": "1 · Confirm low intake, then watch a feed: is the LATCH good?",
+   "lines": ["• fewer wet and dirty diapers", "• too much infant weight loss"]}
+ ],
+ "sections": ["head", "clue", "tx"],
+ "row_names": {"pres": "CONFIRM", "clue": "LOOK FOR", "tx": "MANAGE"},
+ "columns": [
+  {
+   "id": "prod", "colour": "teal", "drop_label": "latch GOOD",
+   "head": [[["h", "Inadequate production", ["milk is not MADE"]]]],
+   "clue": [
+    [["t", "Causes", ["• retained placenta, Sheehan syndrome", "• little breast growth in pregnancy, breast surgery or radiation", "• polycystic ovary syndrome (PCOS), prolactinoma, insulin resistance"]]],
+    [["w", "Drugs that lower supply", ["• estrogen", "• decongestants"]]]
+   ],
+   "tx": [
+    [["ok", "1 · Augment", ["• pumping", "• supplement feeds", "• drugs"]]],
+    [["warn", "2 · Add FORMULA if the baby", ["• fails to thrive or loses weight", "• is dehydrated or hypoglycemic"]]]
+   ]
+  },
+  {
+   "id": "extr", "colour": "blue", "drop_label": "latch POOR",
+   "head": [[["h", "Poor extraction", ["milk is not GOT OUT, so less is made"]]]],
+   "clue": [
+    [["t", "Causes", ["• poor latch, infrequent feeds", "• preterm, in neonatal intensive care, separated from her", "• cleft lip or palate, sucking or swallowing problem"]]]
+   ],
+   "tx": [
+    [["ok", "1 · Fix the latch, feed on infant cues", ["lactation consultant"]]],
+    [["ok", "2 · Too sleepy to feed?", ["hand-express every 2–3 h, keep it to supplement later"]]]
+   ]
+  },
+  {
+   "id": "pain", "colour": "orange", "drop_label": "nipple or breast",
+   "head": [[["h", "Nipple or breast pain", []]]],
+   "clue": [
+    [["t", "Causes", ["• cracked nipple: improper latch", "• candida (thrush), dermatitis, Raynaud's", "• engorgement, blocked ducts, too much milk"]]],
+    [["bad", "RED, HOT breast ± fever = MASTITIS", ["see the BREAST chart"]]]
+   ],
+   "tx": [
+    [["ok", "Fix the latch, treat candida", ["lactation consultant"]]]
+   ]
+  },
+  {
+   "id": "contra", "colour": "magenta", "drop_label": "contraindication",
+   "head": [[["h", "Do NOT breastfeed", ["or she declines"]]]],
+   "clue": [
+    [["t", "Mother", ["• active psychosis or tuberculosis", "• herpes lesion on the breast", "• cancer drugs: see the DRUGS chart"]]],
+    [["w", "Infant", ["• galactosemia", "• phenylketonuria (PKU) with high phenylalanine"]]],
+    [["warn", "Human immunodeficiency virus (HIV): avoid in developed countries", ["World Health Organization: OK if both on antiretroviral therapy"]]]
+   ],
+   "tx": [
+    [["ok", "Stop lactation: cabergoline 1 mg ONCE", ["a potent dopamine agonist"]]]
+   ]
+  },
+  {
+   "id": "wean", "colour": "purple", "drop_label": "her choice",
+   "head": [[["h", "Weaning", ["timing is her decision"]]]],
+   "clue": [
+    [["bad", "NOT abruptly", ["• rapid fall in prolactin may worsen depressive symptoms", "• engorgement, blocked ducts, infection"]]]
+   ],
+   "tx": [
+    [["ok", "1 · Gradual: drop feeds slowly", ["easiest after 6 months, child-led"]]],
+    [["ok", "Comfort", ["• supportive bra, ice packs", "• analgesics, cabbage leaves"]]]
+   ]
+  }
+ ],
+ "panels": [
+  {"title": "The first week", "items": [
+   "start within 1 hour, skin to skin · feed on infant cues",
+   "colostrum alone for 2–4 days: antibodies, cells, vitamins A, D, E, K",
+   "stored milk, laws of 6: room 6 h · fridge 6 days · freezer 6 months"
+  ]},
+  {"title": "While breastfeeding", "items": [
+   "contraception: NO estrogen (↓ milk quality and quantity) · safe: hormonal or copper intrauterine device (IUD), progestin-only pill, barrier, depot medroxyprogesterone",
+   "more fluids, calories, calcium and vitamins",
+   "medicines, alcohol, smoking: see the DRUGS IN PREGNANCY AND LACTATION chart"
+  ]}
+ ]
+}

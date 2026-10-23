@@ -1,0 +1,676 @@
+{
+ "name": "pathology of thyroid masses overview",
+ "width": 1248,
+ "title": "Thyroid nodule workup: TSH first (low goes to a radioactive iodine scan), then ultrasound and TI-RADS size cut-offs for fine needle aspiration, then the Bethesda category sorts the nodule into benign, indeterminate follicular neoplasm, or papillary, medullary or anaplastic cancer; each column gives clues, next steps and treatment in order",
+ "kinds": {
+  "ben_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ben_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ben_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "fol_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fol_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "fol_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "pap_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pap_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "pap_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "med_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "med_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "med_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ana_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ana_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ana_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 524,
+   "w": 238,
+   "h": 722,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 280,
+   "y": 524,
+   "w": 238,
+   "h": 722,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 520,
+   "y": 524,
+   "w": 238,
+   "h": 722,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 760,
+   "y": 524,
+   "w": 238,
+   "h": 722,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1000,
+   "y": 524,
+   "w": 238,
+   "h": 722,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 256,
+   "h": 96,
+   "text": "WORKUP"
+  },
+  {
+   "x": 23,
+   "y": 688,
+   "h": 134,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 862,
+   "h": 202,
+   "text": "NEXT"
+  },
+  {
+   "x": 23,
+   "y": 1104,
+   "h": 134,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 259,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Thyroid nodule: which one earns a NEEDLE, and which result earns SURGERY?",
+   "lines": [
+    "most are benign · not always thyroid: parathyroid, lymph node, skin, soft tissue",
+    "cancer risk: child · male · first-degree family history · neck radiation · firm or fixed · suspicious nodes",
+    "URGENT: rapid growth · stridor · progressive dysphagia · large, fixed, firm mass"
+   ]
+  },
+  {
+   "id": "g_all",
+   "x": 45,
+   "y": 156,
+   "w": 1188,
+   "h": 60,
+   "kind": "plain",
+   "title": "1 · Thyroid-stimulating hormone (TSH) FIRST: is it LOW?",
+   "lines": [
+    "LOW → radioactive iodine (RAI) scan: HOT = benign (see the THYROID FUNCTION chart) · COLD → ultrasound like the rest"
+   ]
+  },
+  {
+   "id": "p_work",
+   "x": 45,
+   "y": 256,
+   "w": 1188,
+   "h": 96,
+   "kind": "info",
+   "title": "Normal or high TSH: work up in order",
+   "lines": [
+    "2 · Ultrasound + TI-RADS (Thyroid Imaging Reporting and Data System): fine needle aspiration (FNA) if TR5 ≥ 1 cm · TR4 ≥ 1.5 cm · TR3 ≥ 2.5 cm",
+    "• smaller: repeat ultrasound for up to 5 years, stop if stable · TR1–2: nothing",
+    "3 · FNA: the Bethesda category picks the column ↓ · never a core or open biopsy for a nodule (seeding, bleeding)"
+   ]
+  },
+  {
+   "id": "t_ben",
+   "x": 45,
+   "y": 392,
+   "w": 228,
+   "h": 60,
+   "kind": "plain",
+   "title": "BENIGN (II)",
+   "lines": [
+    "malignancy risk 2–7%"
+   ]
+  },
+  {
+   "id": "t_ind",
+   "x": 285,
+   "y": 392,
+   "w": 228,
+   "h": 60,
+   "kind": "plain",
+   "title": "INDETERMINATE (I, III, IV)",
+   "lines": [
+    "malignancy risk 5–34%"
+   ]
+  },
+  {
+   "id": "t_mal",
+   "x": 525,
+   "y": 392,
+   "w": 708,
+   "h": 60,
+   "kind": "plain",
+   "title": "SUSPICIOUS or MALIGNANT (V, VI): SURGERY",
+   "lines": [
+    "established or suspected cancer > 1 cm: hemithyroidectomy if low risk, total if high · node dissection if nodes"
+   ]
+  },
+  {
+   "id": "ben_head_0_0",
+   "x": 45,
+   "y": 532,
+   "w": 228,
+   "h": 116,
+   "kind": "ben_h",
+   "title": "Benign nodule",
+   "lines": [
+    "multinodular goitre, cyst, Hashimoto: no atypia"
+   ]
+  },
+  {
+   "id": "fol_head_0_0",
+   "x": 285,
+   "y": 532,
+   "w": 228,
+   "h": 116,
+   "kind": "fol_h",
+   "title": "Follicular neoplasm",
+   "lines": [
+    "adenoma or follicular carcinoma: microfollicles, scant colloid"
+   ]
+  },
+  {
+   "id": "pap_head_0_0",
+   "x": 525,
+   "y": 532,
+   "w": 228,
+   "h": 116,
+   "kind": "pap_h",
+   "title": "Papillary carcinoma",
+   "lines": [
+    "85–90% · nuclear grooves, clearing, inclusions: DIAGNOSTIC on FNA"
+   ]
+  },
+  {
+   "id": "med_head_0_0",
+   "x": 765,
+   "y": 532,
+   "w": 228,
+   "h": 116,
+   "kind": "med_h",
+   "title": "Medullary carcinoma",
+   "lines": [
+    "C cells · nests, not papillae · amyloid = calcitonin"
+   ]
+  },
+  {
+   "id": "ana_head_0_0",
+   "x": 1005,
+   "y": 532,
+   "w": 228,
+   "h": 116,
+   "kind": "ana_h",
+   "title": "Anaplastic carcinoma or lymphoma",
+   "lines": [
+    "sheets of cells, no follicles: a differentiated cancer that progressed"
+   ]
+  },
+  {
+   "id": "ben_clue_0_0",
+   "x": 45,
+   "y": 688,
+   "w": 228,
+   "h": 134,
+   "kind": "ben_t",
+   "title": "Colloid + sheets of follicular cells",
+   "lines": [
+    "• goitre: many nodules, usually euthyroid",
+    "• cyst: clear fluid, gone after aspiration"
+   ]
+  },
+  {
+   "id": "fol_clue_0_0",
+   "x": 285,
+   "y": 688,
+   "w": 228,
+   "h": 134,
+   "kind": "fol_t",
+   "title": "FNA CAN'T tell them apart",
+   "lines": [
+    "same nuclei: only INVASION of capsule or vessels decides, on the resected nodule"
+   ]
+  },
+  {
+   "id": "pap_clue_0_0",
+   "x": 525,
+   "y": 688,
+   "w": 228,
+   "h": 134,
+   "kind": "pap_t",
+   "title": "Mostly women 40–60, often multifocal",
+   "lines": [
+    "a neck node may be the first sign: spreads by LYMPH"
+   ]
+  },
+  {
+   "id": "med_clue_0_0",
+   "x": 765,
+   "y": 688,
+   "w": 228,
+   "h": 134,
+   "kind": "med_t",
+   "title": "25% hereditary: RET point mutation",
+   "lines": [
+    "multiple endocrine neoplasia (MEN) 2A, 2B"
+   ]
+  },
+  {
+   "id": "ana_clue_0_0",
+   "x": 1005,
+   "y": 688,
+   "w": 228,
+   "h": 134,
+   "kind": "bad",
+   "title": "URGENT: rapidly growing, older",
+   "lines": [
+    "• short of breath: airway narrowing",
+    "• can't swallow · pain · lung, bone metastases"
+   ]
+  },
+  {
+   "id": "ben_inv_0_0",
+   "x": 45,
+   "y": 862,
+   "w": 228,
+   "h": 202,
+   "kind": "ben_w",
+   "title": "Read it against the ultrasound",
+   "lines": [
+    "• TR3: clinical follow-up",
+    "• TR4: ultrasound surveillance ± repeat FNA",
+    "• TR5: REPEAT the FNA"
+   ]
+  },
+  {
+   "id": "fol_inv_0_0",
+   "x": 285,
+   "y": 862,
+   "w": 228,
+   "h": 82,
+   "kind": "fol_w",
+   "title": "Non-diagnostic (I) or atypia (III)",
+   "lines": [
+    "→ REPEAT the FNA"
+   ]
+  },
+  {
+   "id": "fol_inv_1_0",
+   "x": 285,
+   "y": 966,
+   "w": 228,
+   "h": 98,
+   "kind": "fol_w",
+   "title": "Weigh the rest",
+   "lines": [
+    "• risk factors, ultrasound, size, life expectancy",
+    "• molecular testing: costly, scarce"
+   ]
+  },
+  {
+   "id": "pap_inv_0_0",
+   "x": 525,
+   "y": 862,
+   "w": 228,
+   "h": 202,
+   "kind": "pap_w",
+   "title": "Small, low risk: may WATCH",
+   "lines": [
+    "• < 2 cm, no extension, no nodes",
+    "• ultrasound every 6–12 months",
+    "• grows > 3 mm → surgery"
+   ]
+  },
+  {
+   "id": "med_inv_0_0",
+   "x": 765,
+   "y": 862,
+   "w": 228,
+   "h": 202,
+   "kind": "bad",
+   "title": "BEFORE surgery: look for MEN 2",
+   "lines": [
+    "• pheochromocytoma ~50%",
+    "• hyperparathyroidism 10–25% (2A)",
+    "• RET positive: test the family"
+   ]
+  },
+  {
+   "id": "ana_inv_0_0",
+   "x": 1005,
+   "y": 862,
+   "w": 228,
+   "h": 82,
+   "kind": "ana_t",
+   "title": "1 · Neck ultrasound + computed tomography (CT) for metastases",
+   "lines": []
+  },
+  {
+   "id": "ana_inv_1_0",
+   "x": 1005,
+   "y": 966,
+   "w": 228,
+   "h": 98,
+   "kind": "ana_t",
+   "title": "2 · CORE biopsy + flow cytometry",
+   "lines": [
+    "marker panel needs tissue · ask for a rush"
+   ]
+  },
+  {
+   "id": "ben_tx_0_0",
+   "x": 45,
+   "y": 1104,
+   "w": 228,
+   "h": 134,
+   "kind": "ok",
+   "title": "Surgery only if",
+   "lines": [
+    "• symptomatic: compressive or disfiguring",
+    "• worrisome or growing on ultrasound"
+   ]
+  },
+  {
+   "id": "fol_tx_0_0",
+   "x": 285,
+   "y": 1104,
+   "w": 228,
+   "h": 134,
+   "kind": "ok",
+   "title": "Hemithyroidectomy",
+   "lines": [
+    "• adenoma: cured, no recurrence",
+    "• carcinoma: spreads by BLOOD"
+   ]
+  },
+  {
+   "id": "pap_tx_0_0",
+   "x": 525,
+   "y": 1104,
+   "w": 228,
+   "h": 134,
+   "kind": "ok",
+   "title": "Surgery, then RAI by recurrence risk",
+   "lines": [
+    "• low: not routine (< 1 cm: no)",
+    "• intermediate: generally favoured",
+    "• high (gross extension, incomplete, metastases): yes"
+   ]
+  },
+  {
+   "id": "med_tx_0_0",
+   "x": 765,
+   "y": 1104,
+   "w": 228,
+   "h": 134,
+   "kind": "ok",
+   "title": "Surgery",
+   "lines": [
+    "• follow serum CALCITONIN for recurrence",
+    "~metastasizes often, poorer prognosis"
+   ]
+  },
+  {
+   "id": "ana_tx_0_0",
+   "x": 1005,
+   "y": 1104,
+   "w": 228,
+   "h": 134,
+   "kind": "bad",
+   "title": "Rarely resectable, no iodine uptake",
+   "lines": [
+    "• external beam radiotherapy",
+    "• BRAF mutation → targeted therapy"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_all",
+   "path": "M639.0 106V131H639.0V156"
+  },
+  {
+   "from": "g_all",
+   "to": "p_work"
+  },
+  {
+   "from": "p_work",
+   "to": "t_ben",
+   "from_dx": -480
+  },
+  {
+   "from": "p_work",
+   "to": "t_ind",
+   "from_dx": -240
+  },
+  {
+   "from": "p_work",
+   "to": "t_mal",
+   "from_dx": 240
+  },
+  {
+   "from": "fol_inv_0_0",
+   "to": "fol_inv_1_0"
+  },
+  {
+   "from": "ana_inv_0_0",
+   "to": "ana_inv_1_0"
+  },
+  {
+   "from": "ben_head_0_0",
+   "to": "ben_clue_0_0"
+  },
+  {
+   "from": "ben_clue_0_0",
+   "to": "ben_inv_0_0"
+  },
+  {
+   "from": "ben_inv_0_0",
+   "to": "ben_tx_0_0"
+  },
+  {
+   "from": "t_ben",
+   "to": "ben_head_0_0",
+   "from_dx": 0,
+   "label": "benign follicular nodule",
+   "label_at": [
+    159.0,
+    492
+   ]
+  },
+  {
+   "from": "fol_head_0_0",
+   "to": "fol_clue_0_0"
+  },
+  {
+   "from": "fol_clue_0_0",
+   "to": "fol_inv_0_0"
+  },
+  {
+   "from": "fol_inv_1_0",
+   "to": "fol_tx_0_0"
+  },
+  {
+   "from": "t_ind",
+   "to": "fol_head_0_0",
+   "from_dx": 0,
+   "label": "follicular neoplasm",
+   "label_at": [
+    399.0,
+    492
+   ]
+  },
+  {
+   "from": "pap_head_0_0",
+   "to": "pap_clue_0_0"
+  },
+  {
+   "from": "pap_clue_0_0",
+   "to": "pap_inv_0_0"
+  },
+  {
+   "from": "pap_inv_0_0",
+   "to": "pap_tx_0_0"
+  },
+  {
+   "from": "t_mal",
+   "to": "pap_head_0_0",
+   "from_dx": -240,
+   "label": "papillary",
+   "label_at": [
+    639.0,
+    492
+   ]
+  },
+  {
+   "from": "med_head_0_0",
+   "to": "med_clue_0_0"
+  },
+  {
+   "from": "med_clue_0_0",
+   "to": "med_inv_0_0"
+  },
+  {
+   "from": "med_inv_0_0",
+   "to": "med_tx_0_0"
+  },
+  {
+   "from": "t_mal",
+   "to": "med_head_0_0",
+   "from_dx": 0,
+   "label": "medullary",
+   "label_at": [
+    879.0,
+    492
+   ]
+  },
+  {
+   "from": "ana_head_0_0",
+   "to": "ana_clue_0_0"
+  },
+  {
+   "from": "ana_clue_0_0",
+   "to": "ana_inv_0_0"
+  },
+  {
+   "from": "ana_inv_1_0",
+   "to": "ana_tx_0_0"
+  },
+  {
+   "from": "t_mal",
+   "to": "ana_head_0_0",
+   "from_dx": 240,
+   "label": "rapidly growing mass",
+   "label_at": [
+    1119.0,
+    492
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1272,
+   "w": 1188,
+   "title": "After treatment",
+   "items": [
+    "ultrasound 6–12 months after, then periodically: the remaining lobe + neck nodes",
+    "biopsy a suspicious node > 8–10 mm in its smallest dimension"
+   ],
+   "cols": 1
+  }
+ ]
+}

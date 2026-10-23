@@ -1,0 +1,286 @@
+{
+ "name": "unexpected lab result overview",
+ "title": "Unexpected lab result decision chart: check pre-analytical, analytical and post-analytical error in order before believing it, each with its sources, an example and what to do; if no error is found the result may be correct and is communicated to the patient; consent before the test, confidentiality after",
+ "col_w": 250,
+ "root": {
+  "title": "A lab result that doesn't fit: an ERROR, or REAL?",
+  "lines": [
+   "1 · Understand the issue: inconsistent with RELATED tests, PREVIOUS values, or the PRESENTATION?",
+   "do NOT diagnose or treat on a questionable result",
+   "before ANY test, valid consent: CAPACITY (not age) · INFORMED of benefits, risks, alternatives · VOLUNTARY"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_e",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "ERROR? Check each phase IN ORDER",
+   "lines": [
+    "then 5 · ask a lab professional · 6 · repeat or use a different method (Choosing Wisely)"
+   ]
+  },
+  {
+   "id": "g_r",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "7 · No error found",
+   "lines": [
+    "the result may be CORRECT"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "src",
+  "eg",
+  "act"
+ ],
+ "row_names": {
+  "src": "SOURCES",
+  "eg": "EXAMPLE",
+  "act": "DO"
+ },
+ "columns": [
+  {
+   "id": "pre",
+   "colour": "teal",
+   "drop_from": "g_e",
+   "drop_label": "2 · before the analyzer",
+   "head": [
+    [
+     [
+      "h",
+      "Pre-analytical",
+      [
+       "the MOST COMMON source"
+      ]
+     ]
+    ]
+   ],
+   "src": [
+    [
+     [
+      "t",
+      "Ordering + collection",
+      [
+       "• wrong test, wrong tube or order of draw",
+       "• under-filled or unmixed tube, HEMOLYSIS",
+       "• patient preparation"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Transport + processing",
+      [
+       "• delayed, or extreme temperature",
+       "• long wait before processing"
+      ]
+     ]
+    ]
+   ],
+   "eg": [
+    [
+     [
+      "w",
+      "Potassium 6.8 by pneumatic tube in leukemia, NORMAL electrocardiogram",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "Glucose 1.4 reported 23 h after collection",
+      []
+     ]
+    ]
+   ],
+   "act": [
+    [
+     [
+      "ok",
+      "Collect a fresh sample and repeat",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ana",
+   "colour": "purple",
+   "drop_from": "g_e",
+   "drop_label": "3 · in the analyzer",
+   "head": [
+    [
+     [
+      "h",
+      "Analytical",
+      [
+       "less frequent as technology improves"
+      ]
+     ]
+    ]
+   ],
+   "src": [
+    [
+     [
+      "t",
+      "The measurement",
+      [
+       "• random error",
+       "• sample mix-up by the lab",
+       "• METHOD differences, interferences"
+      ]
+     ]
+    ]
+   ],
+   "eg": [
+    [
+     [
+      "w",
+      "CA19-9: lab A 1235, lab B 1604",
+      [
+       "different METHODS + reference intervals: not comparable"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Very high protein, sodium 120",
+      []
+     ]
+    ]
+   ],
+   "act": [
+    [
+     [
+      "ok",
+      "Ask a lab professional",
+      [
+       "• why it may be unreliable",
+       "• other tests to rule in or out",
+       "• another method, here or another lab"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "post",
+   "colour": "orange",
+   "drop_from": "g_e",
+   "drop_label": "4 · after the analyzer",
+   "head": [
+    [
+     [
+      "h",
+      "Post-analytical",
+      [
+       "HUMAN error in reporting"
+      ]
+     ]
+    ]
+   ],
+   "src": [
+    [
+     [
+      "t",
+      "The report",
+      [
+       "• transcription error",
+       "• patient mix-up in reporting",
+       "• the WRONG reference interval"
+      ]
+     ]
+    ]
+   ],
+   "eg": [
+    [
+     [
+      "w",
+      "44 typed for 4.4",
+      []
+     ]
+    ]
+   ],
+   "act": [
+    [
+     [
+      "ok",
+      "Check the report",
+      [
+       "right patient, right number, right reference interval"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "real",
+   "colour": "blue",
+   "drop_from": "g_r",
+   "head": [
+    [
+     [
+      "h",
+      "A REAL result",
+      [
+       "still be cautious"
+      ]
+     ]
+    ]
+   ],
+   "src": [
+    [
+     [
+      "t",
+      "Has the PATIENT changed?",
+      [
+       "think of it when the result contradicts your diagnosis"
+      ]
+     ]
+    ]
+   ],
+   "eg": [
+    [
+     [
+      "w",
+      "Home blood pressure 150–160 / 90–93 over 2 months",
+      [
+       "interpret, explain, show the Framingham risk"
+      ]
+     ]
+    ]
+   ],
+   "act": [
+    [
+     [
+      "ok",
+      "Tell them: ABCDE",
+      [
+       "• Advance preparation",
+       "• Build the setting, Communicate well",
+       "• Deal with reactions, Encourage emotions"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Share ONLY with the patient's consent",
+      [
+       "not the family · MUST report: a child in need of protection, or likely serious harm to others"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

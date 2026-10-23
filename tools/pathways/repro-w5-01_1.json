@@ -1,0 +1,143 @@
+{
+ "name": "hysterectomy approaches pathway",
+ "title": "Choosing a hysterectomy route: vaginal or LAVH when the anatomy is amenable to a vaginal route, otherwise TLH or robotic, and abdominal for a very large uterus, complex cancer or a failed minimally invasive attempt",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 330,
+   "y": 10,
+   "w": 260,
+   "kind": "plain",
+   "title": "Hysterectomy planned",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 250,
+   "y": 92,
+   "w": 420,
+   "kind": "plain",
+   "title": "Anatomy amenable to a vaginal route?",
+   "lines": [
+    "(uterine descent, introitus/pelvis, uterine size)"
+   ]
+  },
+  {
+   "id": "C",
+   "x": 15,
+   "y": 230,
+   "w": 260,
+   "h": 120,
+   "kind": "ok",
+   "title": "VAGINAL",
+   "lines": [
+    "If: no prior pelvic surgery / scarring, tubes and ovaries not needed",
+    "no abdominal incision"
+   ]
+  },
+  {
+   "id": "D",
+   "x": 295,
+   "y": 230,
+   "w": 260,
+   "h": 120,
+   "kind": "ok",
+   "title": "LAVH",
+   "lines": [
+    "If: the pelvis must be assessed or tubes/ovaries removed",
+    "abdomen entered, uterus out through the vagina"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 590,
+   "y": 230,
+   "w": 350,
+   "h": 120,
+   "kind": "plain",
+   "title": "Very large uterus, complex cancer, or a failed minimally invasive attempt?",
+   "lines": []
+  },
+  {
+   "id": "F",
+   "x": 515,
+   "y": 410,
+   "w": 260,
+   "kind": "ok",
+   "title": "TLH or ROBOTIC",
+   "lines": [
+    "replaces abdominal, never vaginal/LAVH",
+    "Robotic: morbidly obese patients"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 795,
+   "y": 410,
+   "w": 170,
+   "kind": "warn",
+   "title": "ABDOMINAL",
+   "lines": [
+    "not minimally invasive",
+    "2-3 day hospital stay"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "from_dx": -150,
+   "label": "Yes",
+   "label_at": [
+    195,
+    190
+   ]
+  },
+  {
+   "from": "B",
+   "to": "D",
+   "label": "Yes, but",
+   "label_at": [
+    465,
+    196
+   ],
+   "from_dx": -35
+  },
+  {
+   "from": "B",
+   "to": "E",
+   "from_dx": 150,
+   "label": "No",
+   "label_at": [
+    700,
+    190
+   ]
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "from_dx": -120,
+   "label": "No",
+   "label_at": [
+    622,
+    380
+   ]
+  },
+  {
+   "from": "E",
+   "to": "G",
+   "from_dx": 115,
+   "label": "Yes",
+   "label_at": [
+    906,
+    380
+   ]
+  }
+ ],
+ "width": 980
+}

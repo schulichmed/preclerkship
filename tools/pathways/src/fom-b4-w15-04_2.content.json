@@ -1,0 +1,274 @@
+{
+ "name": "antifungals overview",
+ "title": "Antifungals decision chart: the fungus, its site and severity pick the drug. Mucosal candidiasis (nystatin, clotrimazole, fluconazole), candidemia (fluconazole for albicans, an echinocandin for severe or non-albicans), invasive aspergillosis (voriconazole or amphotericin B), cryptococcus (amphotericin B with flucytosine, then fluconazole) and endemic mycoses (itraconazole, or amphotericin B when severe), with the azole and amphotericin B harms that limit the choice",
+ "col_w": 240,
+ "root": {
+  "title": "Antifungals: WHICH FUNGUS, WHERE, and HOW SICK picks the drug",
+  "lines": [
+   "fungi are eukaryotes: hit what we lack, the CELL WALL (echinocandins) or ERGOSTEROL (azoles, amphotericin B)",
+   "AVOID: azoles block human CYP450 (DRUG INTERACTIONS, QT, liver) · amphotericin B: NEPHROTOXIC"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ca",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "CANDIDA (yeast): where is it?",
+   "lines": []
+  },
+  {
+   "id": "g_as",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "ASPERGILLUS (mould)",
+   "lines": []
+  },
+  {
+   "id": "g_cr",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "CRYPTOCOCCUS",
+   "lines": []
+  },
+  {
+   "id": "g_en",
+   "cols": [
+    4,
+    4
+   ],
+   "title": "ENDEMIC fungi",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "first",
+  "next"
+ ],
+ "row_names": {
+  "first": "FIRST CHOICE",
+  "next": "IF SEVERE / THEN"
+ },
+ "columns": [
+  {
+   "id": "mu",
+   "colour": "teal",
+   "drop_from": "g_ca",
+   "drop_label": "MOUTH, GULLET, VAGINA",
+   "head": [
+    [
+     [
+      "h",
+      "Mucosal candidiasis",
+      [
+       "thrush, esophagitis, vaginitis"
+      ]
+     ]
+    ]
+   ],
+   "first": [
+    [
+     [
+      "ok",
+      "MILD",
+      [
+       "• thrush: NYSTATIN 400,000 units swish + spit QID × 7–14 days",
+       "• vaginal: clotrimazole 1% cream × 7 nights, or fluconazole 150 mg po ONCE"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "warn",
+      "SEVERE thrush or ESOPHAGEAL: FLUCONAZOLE",
+      [
+       "• thrush: 100–200 mg daily × 7–14 days",
+       "• esophagus needs SYSTEMIC: 200–400 mg po daily × 14 days"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cd",
+   "colour": "blue",
+   "drop_from": "g_ca",
+   "drop_label": "BLOOD",
+   "head": [
+    [
+     [
+      "h",
+      "Candidemia (fungemia)",
+      [
+       "is it C. albicans?"
+      ]
+     ]
+    ]
+   ],
+   "first": [
+    [
+     [
+      "ok",
+      "C. ALBICANS: FLUCONAZOLE",
+      [
+       "800 mg IV once, then 400 mg IV daily"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "warn",
+      "SEVERE or NON-albicans: an ECHINOCANDIN",
+      [
+       "• caspofungin 70 mg IV once, then 50 mg daily",
+       "• IV ONLY",
+       "• until susceptibilities return"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Focus in the EYE or CNS?",
+      [
+       "echinocandins do not get there: choose another drug"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "as",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Invasive aspergillosis",
+      []
+     ]
+    ]
+   ],
+   "first": [
+    [
+     [
+      "ok",
+      "VORICONAZOLE (preferred)",
+      [
+       "• 6 mg/kg IV q12h × 2, then 4 mg/kg IV q12h",
+       "• oral: 200 mg BID"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "warn",
+      "Or liposomal amphotericin B (AmBisome)",
+      [
+       "3–5 mg/kg IV daily"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cr",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Cryptococcal disease",
+      [
+       "in 3 phases"
+      ]
+     ]
+    ]
+   ],
+   "first": [
+    [
+     [
+      "bad",
+      "1 · INDUCTION × 2 weeks",
+      [
+       "• liposomal amphotericin B 3–4 mg/kg daily",
+       "• + FLUCYTOSINE 25 mg/kg q6h"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "ok",
+      "2 · CONSOLIDATION: fluconazole",
+      [
+       "400–800 mg po daily × 8 weeks"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · MAINTENANCE: fluconazole",
+      [
+       "200–400 mg po daily · lifelong may be considered"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "en",
+   "colour": "brown",
+   "head": [
+    [
+     [
+      "h",
+      "Blasto-, coccidioido-, histoplasmosis",
+      [
+       "the endemic mycoses"
+      ]
+     ]
+    ]
+   ],
+   "first": [
+    [
+     [
+      "ok",
+      "MILD-moderate: ITRACONAZOLE",
+      [
+       "• blasto: 200 mg po TID × 3 days, then BID × 6–12 months",
+       "• cocci: itraconazole or fluconazole"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "warn",
+      "SEVERE: liposomal amphotericin B",
+      [
+       "• 3–5 mg/kg IV daily × 1–2 weeks (histo: 3 mg/kg)",
+       "• then STEP DOWN to itraconazole"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

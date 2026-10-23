@@ -1,0 +1,502 @@
+{
+ "name": "sodium disorders overview",
+ "title": "Sodium disorders decision chart: hypernatremia sorted by ECF volume, urine volume and urine osmolality into non-renal water loss, diabetes insipidus (central or nephrogenic by desmopressin) or renal solute loss; hyponatremia sorted by plasma osmolality, urine osmolality, urine sodium and ECF volume into water excess, low effective volume, endocrine causes including SIADH, or renal salt loss; with the rules for how fast to correct each",
+ "col_w": 212,
+ "root": {
+  "title": "Sodium is off: is water LOST (Na > 144) or RETAINED (Na < 136)?",
+  "lines": [
+   "both are almost always WATER problems, not sodium problems",
+   "find the CAUSE, and correct only as fast as the brain can adapt (CORRECT row)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_hyper",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "HYPERnatremia (Na > 144): free water LOST · cells SHRINK",
+   "lines": [
+    "unusual unless THIRST, ACCESS to water or ability to DRINK fails",
+    "1 · extracellular fluid (ECF) volume HIGH → sodium GAIN: sea water, IV fluids, mineralocorticoid excess"
+   ]
+  },
+  {
+   "id": "g_hypo",
+   "cols": [
+    3,
+    6
+   ],
+   "title": "HYPOnatremia (Na < 136): water RETAINED · cells SWELL",
+   "lines": [
+    "1 · plasma osmolality (Osm) HIGH or normal → PSEUDOhyponatremia: glucose, mannitol (Na falls 1 per 3–4 rise in glucose)"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_hyper",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "2 · ECF volume LOW: how much URINE, and how concentrated?",
+   "lines": []
+  },
+  {
+   "id": "t_hypo",
+   "cols": [
+    3,
+    6
+   ],
+   "title": "2 · Plasma Osm LOW (TRUE): URINE Osm, then URINE Na, then ECF",
+   "lines": [
+    "urine Osm > 100 = ADH is ON · urine Na < 20 = the kidney senses low volume"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "inv",
+  "clue",
+  "tx"
+ ],
+ "row_names": {
+  "inv": "TEST",
+  "clue": "CAUSE → FIX",
+  "tx": "CORRECT"
+ },
+ "columns": [
+  {
+   "id": "nr",
+   "colour": "teal",
+   "drop_from": "t_hyper",
+   "drop_label": "urine volume LOW",
+   "head": [
+    [
+     [
+      "h",
+      "Water lost OUTSIDE the kidney",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Urine volume LOW",
+      [
+       "the kidney is not the leak"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "w",
+      "Non-renal losses",
+      [
+       "• gut, e.g. osmotic diarrhea",
+       "• skin",
+       "• lungs"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "di",
+   "colour": "purple",
+   "drop_from": "t_hyper",
+   "drop_label": "HIGH · urine Osm LOW",
+   "head": [
+    [
+     [
+      "h",
+      "Diabetes insipidus (DI)",
+      [
+       "LOTS of DILUTE urine + thirst"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Give DESMOPRESSIN: urine Osm?",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "Osm ↑",
+      []
+     ],
+     [
+      "w",
+      "No change",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "w",
+      "CENTRAL or KIDNEY?",
+      [
+       "• Osm ↑: CENTRAL, brain makes too LITTLE antidiuretic hormone (ADH)",
+       "• no change: KIDNEY (nephrogenic), IGNORES ADH"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sol",
+   "colour": "orange",
+   "drop_from": "t_hyper",
+   "drop_label": "HIGH · urine Osm HIGH",
+   "head": [
+    [
+     [
+      "h",
+      "Kidney losing water with SOLUTE",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Urine Na + K?",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "LOW",
+      []
+     ],
+     [
+      "w",
+      "HIGH",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "w",
+      "OSMOTIC diuresis or diuretics?",
+      [
+       "• LOW: OSMOTIC diuresis (glucose, mannitol)",
+       "• HIGH: diuretics, renal insufficiency"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "wx",
+   "colour": "blue",
+   "drop_from": "t_hypo",
+   "drop_label": "urine Osm < 100",
+   "head": [
+    [
+     [
+      "h",
+      "Too much WATER IN",
+      [
+       "ADH is OFF: urine maximally dilute"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Urine Osm < 100",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "w",
+      "Excess water drinking or IATROGENIC",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "lv",
+   "colour": "magenta",
+   "drop_from": "t_hypo",
+   "drop_label": "> 100 · urine Na < 20",
+   "head": [
+    [
+     [
+      "h",
+      "Kidney senses LOW volume",
+      [
+       "ADH ON for volume, not osmolality"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Urine Na < 20: ECF volume?",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "ECF LOW",
+      []
+     ],
+     [
+      "w",
+      "ECF HIGH",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "w",
+      "Lost outside the kidney",
+      [
+       "gut, third space"
+      ]
+     ],
+     [
+      "w",
+      "Low renal blood flow",
+      [
+       "heart failure, cirrhosis, nephrosis"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Fix the volume",
+      [
+       "• ECF LOW: restore volume",
+       "• ECF HIGH: treat the cause, e.g. heart failure"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "en",
+   "colour": "brown",
+   "drop_from": "t_hypo",
+   "drop_label": "Na > 20 · ECF NORMAL",
+   "head": [
+    [
+     [
+      "h",
+      "ENDOCRINE · syndrome of inappropriate ADH (SIADH) · drugs",
+      [
+       "ADH ON with normal volume"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Urine Na > 20 + ECF NORMAL",
+      [
+       "glomerular filtration rate (GFR) low or normal"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "w",
+      "Causes",
+      [
+       "• thyroid disease, adrenal insufficiency",
+       "• SIADH (rare)",
+       "• drugs"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Stop the drug · correct the cause",
+      [
+       "TRUE SIADH: a vaptan or oral urea"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "NOT 0.9% saline",
+      [
+       "urine Osm 600 → 1 L in, 0.5 L out: net WATER GAIN"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rs",
+   "colour": "olive",
+   "drop_from": "t_hypo",
+   "drop_label": "Na > 20 · ECF LOW",
+   "head": [
+    [
+     [
+      "h",
+      "Kidney LOSING salt",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Urine Na > 20 + ECF LOW",
+      [
+       "GFR VERY low instead → acute or chronic renal failure"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "w",
+      "Causes",
+      [
+       "• diuretics",
+       "• salt-wasting nephropathy",
+       "• mineralocorticoid deficiency"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Stop the diuretic · restore volume",
+      []
+     ]
+    ]
+   ]
+  }
+ ],
+ "spans": [
+  {
+   "section": "tx",
+   "cols": [
+    0,
+    2
+   ],
+   "rows": [
+    [
+     [
+      "plain",
+      "1 · Water deficit = 0.5 × weight × (Na ÷ 140 − 1)",
+      [
+       "+ ~1 L a day of ongoing losses"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Replace SLOWLY: Na falls < 10 mmol/L per 24 h",
+      [
+       "faster → the brain swells"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "By MOUTH or nasogastric tube",
+      [
+       "if the gut absorbs"
+      ]
+     ],
+     [
+      "warn",
+      "IV: ONLY 5% dextrose (D5W)",
+      [
+       "≤ 300–350 mL/h"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "section": "tx",
+   "cols": [
+    3,
+    6
+   ],
+   "rows": [
+    [
+     [
+      "warn",
+      "1 · EVERYONE: RESTRICT all water",
+      [
+       "oral, tube feeds, hypotonic IV"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "SYMPTOMS → CORRECT RAPIDLY: 3% saline",
+      [
+       "• hypertonic to the urine",
+       "• once symptoms improve: ≤ 8–10 mmol/L per day"
+      ]
+     ],
+     [
+      "ok",
+      "NO symptoms → GO SLOW",
+      [
+       "fix the cause, ≤ 8–10 mmol/L per day"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Too FAST → osmotic demyelination",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

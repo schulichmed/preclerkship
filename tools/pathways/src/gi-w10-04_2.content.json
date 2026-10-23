@@ -1,0 +1,153 @@
+{
+ "name": "esophageal dysphagia overview",
+ "title": "Esophageal dysphagia decision chart: solids only points to a mechanical cause (ring, web or stricture, eosinophilic esophagitis, cancer), solids and liquids to a motility disorder (achalasia, distal esophageal spasm or jackhammer, scleroderma esophagus); each column gives presentation, numbered investigations and treatment",
+ "col_w": 218,
+ "root": {
+  "title": "Food sticks SECONDS after the swallow, behind the sternum: SOLIDS only, or SOLIDS + LIQUIDS?",
+  "lines": [
+   "can't START the swallow, coughing, choking, nasal regurgitation → OROPHARYNGEAL, not this chart",
+   "ask: where it sticks · progressive or intermittent · heartburn · weight loss, hematemesis, anemia"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_mech",
+   "cols": [0, 2],
+   "title": "SOLIDS only: MECHANICAL",
+   "lines": [
+    "• endoscopy: sees the tissue + biopsy (invasive, perforation risk)",
+    "• barium swallow: easy, shows function, not tissue"
+   ]
+  },
+  {
+   "id": "g_mot",
+   "cols": [3, 5],
+   "title": "SOLIDS + LIQUIDS: MOTILITY",
+   "lines": [
+    "esophageal MANOMETRY decides · endoscopy helps little"
+   ]
+  }
+ ],
+ "sections": ["head", "pres", "inv", "tx"],
+ "row_names": {"pres": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
+ "columns": [
+  {
+   "id": "rw",
+   "colour": "teal",
+   "drop_label": "SYMMETRIC narrowing",
+   "head": [[["h", "Ring, web or benign stricture", ["peptic (GERD) stricture most common"]]]],
+   "pres": [
+    [["t", "Solid-food dysphagia", [
+     "• Schatzki ring: distal, FULL circle, INTERMITTENT",
+     "• web: anywhere, PARTIAL circle",
+     "• web + iron deficiency anemia, glossitis, cheilosis = Plummer-Vinson"]]]
+   ],
+   "inv": [
+    [["w", "1 · Barium swallow", ["SYMMETRIC narrowing"]]],
+    [["w", "2 · Endoscopy", ["see it, biopsy it"]]]
+   ],
+   "tx": [
+    [["ok", "1 · Esophageal DILATATION", ["rings respond very well"]]],
+    [["ok", "2 · Stricture: treat the GERD", ["proton pump inhibitor (PPI) or H2 blocker"]]]
+   ]
+  },
+  {
+   "id": "eoe",
+   "colour": "purple",
+   "drop_label": "young, atopic",
+   "head": [[["h", "Eosinophilic esophagitis", ["chronic ALLERGIC condition", "eosinophils in the esophagus"]]]],
+   "pres": [
+    [["t", "FOOD BOLUS IMPACTION", [
+     "• young, MALE",
+     "• asthma, allergic rhinitis"]]]
+   ],
+   "inv": [
+    [["t", "1 · Endoscopy + BIOPSY", [
+     "• > 15 eosinophils per high-power field, mid esophagus",
+     "• vertical furrows, rings"]]]
+   ],
+   "tx": [
+    [["ok", "Options", [
+     "• PPI",
+     "• SWALLOWED topical steroids",
+     "• dilation",
+     "• food elimination"]]]
+   ]
+  },
+  {
+   "id": "ca",
+   "colour": "orange",
+   "drop_label": "PROGRESSIVE",
+   "head": [[["h", "Esophageal cancer", ["adenocarcinoma: DISTAL", "squamous cell: proximal"]]]],
+   "pres": [
+    [["t", "PROGRESSIVE solid dysphagia", []]],
+    [["w", "Risk", [
+     "• adenocarcinoma: long GERD, BARRETT'S, obesity, smoking, men",
+     "• squamous: SMOKING, ALCOHOL, caustic injury, very hot drinks"]]]
+   ],
+   "inv": [
+    [["w", "1 · Barium swallow", ["ASYMMETRIC narrowing"]]],
+    [["t", "2 · Endoscopy + BIOPSY", []]]
+   ],
+   "tx": [
+    [["warn", "See the LUMINAL GI MALIGNANCIES lecture", []]]
+   ]
+  },
+  {
+   "id": "ach",
+   "colour": "blue",
+   "drop_label": "NO peristalsis",
+   "head": [[["h", "Achalasia", ["lower esophageal sphincter (LES) FAILS TO RELAX", "+ impaired peristalsis"]]]],
+   "pres": [
+    [["t", "Solids AND liquids stick", ["food stays in the esophagus"]]]
+   ],
+   "inv": [
+    [["t", "1 · Manometry", ["absent or failed peristalsis"]]],
+    [["w", "2 · Barium swallow: BIRD BEAK", ["endoscopy: retained food"]]]
+   ],
+   "tx": [
+    [["ok", "Sublingual nifedipine", ["mild to moderate"]]],
+    [["ok", "Pneumatic dilatation", []]],
+    [["warn", "Myotomy", ["• per-oral endoscopic (POEM)", "• laparoscopic Heller"]]]
+   ]
+  },
+  {
+   "id": "spa",
+   "colour": "magenta",
+   "drop_label": "CORKSCREW",
+   "head": [[["h", "Distal esophageal spasm or jackhammer", ["spasm: simultaneous, NON-propulsive", "jackhammer: high-amplitude, repetitive"]]]],
+   "pres": [
+    [["t", "Solids AND liquids stick", []]]
+   ],
+   "inv": [
+    [["t", "1 · Manometry", ["STRONG contraction throughout"]]],
+    [["w", "2 · Barium swallow", ["CORKSCREW esophagus"]]]
+   ],
+   "tx": [
+    [["ok", "1 · Reassurance", []]],
+    [["ok", "2 · Muscle relaxants", ["e.g. calcium channel blockers"]]]
+   ]
+  },
+  {
+   "id": "scl",
+   "colour": "brown",
+   "drop_label": "+ HEARTBURN",
+   "head": [[["h", "Scleroderma esophagus", ["autoimmune scarring and thickening"]]]],
+   "pres": [
+    [["t", "Dysphagia + HEARTBURN", [
+     "• women",
+     "• RAYNAUD'S"]]]
+   ],
+   "inv": [
+    [["t", "1 · Manometry", [
+     "• APERISTALSIS",
+     "• HYPOTENSIVE LES"]]],
+    [["w", "Leads to", ["• strictures", "• Barrett's esophagus"]]]
+   ],
+   "tx": [
+    [["ok", "AGGRESSIVE anti-reflux therapy", []]],
+    [["bad", "NO Nissen fundoplication", ["contraindicated"]]]
+   ]
+  }
+ ]
+}

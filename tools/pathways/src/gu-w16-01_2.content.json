@@ -1,0 +1,288 @@
+{
+ "name": "urinary tract infection overview",
+ "title": "Urinary tract infection decision chart: dysuria with urinary symptoms sorted into simple cystitis, complicated cystitis or recurrent infection (reinfection versus relapse), and bacteria without urinary symptoms into asymptomatic bacteriuria, treated only in pregnancy or before a urologic procedure; each column gives who it is, what to test and what to give",
+ "col_w": 240,
+ "root": {
+  "title": "Dysuria: is it a urinary tract infection (UTI), and is it SIMPLE?",
+  "lines": [
+   "ask: blood in the urine · flank pain · fever · discharge · new partner · rash · new drugs · previous episodes · allergies",
+   "NOT every burning is a bladder infection: sexually transmitted urethritis, vaginitis, prostatitis, pyelonephritis, skin, drugs (spermicides, cyclophosphamide), atrophic vaginitis, interstitial cystitis, cancer"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_sx",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "URINARY SYMPTOMS: who is it?",
+   "lines": [
+    "burning on voiding ± frequency, urgency",
+    "LONG-TERM CARE resident: ALWAYS culture + sensitivities (often resistant to trimethoprim-sulfamethoxazole (TMP-SMX), amoxicillin-clavulanate)"
+   ]
+  },
+  {
+   "id": "g_as",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "NO urinary symptoms, bacteria found anyway",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "who",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "who": "WHO",
+  "inv": "TEST",
+  "tx": "TREAT"
+ },
+ "columns": [
+  {
+   "id": "sc",
+   "colour": "teal",
+   "drop_label": "no complicating factor",
+   "head": [
+    [
+     [
+      "h",
+      "Simple cystitis",
+      [
+       "uncomplicated UTI"
+      ]
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Bladder symptoms only",
+      [
+       "no complicating factor"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "WOMEN",
+      [
+       "NO culture needed"
+      ]
+     ],
+     [
+      "warn",
+      "MEN",
+      [
+       "ALWAYS culture: different bacteria"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "ONE of",
+      [
+       "• nitrofurantoin 100 mg twice daily × 5 days",
+       "• fosfomycin 3 g once",
+       "• TMP-SMX 160/800 twice daily × 3 days"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cc",
+   "colour": "orange",
+   "drop_label": "a man · fever · flank pain",
+   "head": [
+    [
+     [
+      "h",
+      "Complicated cystitis",
+      []
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "A complicating factor",
+      [
+       "• MEN: most are complicated",
+       "• fever, flank pain",
+       "• immunosuppression, uncontrolled diabetes"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Urine CULTURE",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "MILD: 7 days",
+      []
+     ],
+     [
+      "warn",
+      "SEVERE: 14 days",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Not improving fast → IV antibiotics",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rc",
+   "colour": "purple",
+   "drop_label": "keeps coming back",
+   "head": [
+    [
+     [
+      "h",
+      "Recurrent UTI",
+      []
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "≥ 2 uncomplicated in 6 months",
+      [
+       "or ≥ 3 positive cultures in 12 months"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "When after the last course?",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "> 2 WEEKS",
+      [
+       "REINFECTION: a different organism"
+      ]
+     ],
+     [
+      "w",
+      "< 2 WEEKS",
+      [
+       "RELAPSE: the same organism"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "PREVENT",
+      [
+       "drink MORE water: harder to grow in a river than a swamp"
+      ]
+     ],
+     [
+      "ok",
+      "Re-TREAT",
+      [
+       "a DIFFERENT antibiotic, or the same one for longer"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ab",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Asymptomatic bacteriuria",
+      [
+       "common in older patients"
+      ]
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Bacteria, NO UTI symptoms",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "Do NOT test for VAGUE symptoms",
+      [
+       "• confusion, delirium",
+       "• falls, functional decline"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Do NOT treat",
+      [
+       "no benefit, even in delirium or falls"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "EXCEPT → antibiotics + test of cure",
+      [
+       "• PREGNANCY",
+       "• before a UROLOGIC procedure"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

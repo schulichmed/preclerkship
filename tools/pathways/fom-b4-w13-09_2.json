@@ -1,0 +1,776 @@
+{
+ "name": "fever overview",
+ "width": 1296,
+ "title": "Fever decision chart: hyperthermia (normal set point) is told apart from fever; fever is screened for sepsis with qSOFA or SIRS; a stable patient is sorted into a localised infection, a fever with rash or alarm sign, or a fever with no focus (fever of unknown origin), each with clues, investigations in order and management",
+ "kinds": {
+  "hy_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hy_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "hy_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "un_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "un_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "un_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "fo_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fo_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "fo_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ra_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ra_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ra_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "nf_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nf_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "nf_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 426,
+   "w": 242,
+   "h": 964,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 312,
+   "y": 426,
+   "w": 242,
+   "h": 964,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 556,
+   "y": 426,
+   "w": 242,
+   "h": 964,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 800,
+   "y": 426,
+   "w": 242,
+   "h": 964,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1044,
+   "y": 426,
+   "w": 242,
+   "h": 964,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 552,
+   "h": 132,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 724,
+   "h": 356,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1120,
+   "h": 262,
+   "text": "MANAGE"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 283,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A patient with FEVER: is it really fever, is the patient STABLE, and WHERE is the infection?",
+   "lines": [
+    "safety first: hand hygiene + personal protective equipment · methicillin-resistant S. aureus (MRSA) flag → contact precautions",
+    "fever = oral/tympanic ≥ 37.2°C at 6 AM or ≥ 37.8°C any time · children 38°C (rectal, armpit)",
+    "older adults: 37.8°C once, 37.2°C persistent or ≥ 1.1°C over baseline · 30–50% of the frail have NO fever: look for falls, delirium"
+   ]
+  },
+  {
+   "id": "g_hy",
+   "x": 45,
+   "y": 174,
+   "w": 232,
+   "h": 80,
+   "kind": "plain",
+   "title": "Set point NORMAL: HYPERTHERMIA",
+   "lines": [
+    "the body cannot shed heat"
+   ]
+  },
+  {
+   "id": "g_fe",
+   "x": 317,
+   "y": 174,
+   "w": 964,
+   "h": 80,
+   "kind": "plain",
+   "title": "Set point RAISED: FEVER · screen for SEPSIS first",
+   "lines": [
+    "adults: quick SOFA (qSOFA) · respiratory rate (RR) ≥ 22 · BP ≤ 100/60 · altered mentation",
+    "children: systemic inflammatory response (SIRS) · temperature, heart rate > 90, RR > 20, white count · 2 or more = HIGH RISK"
+   ]
+  },
+  {
+   "id": "t_un",
+   "x": 317,
+   "y": 294,
+   "w": 232,
+   "h": 60,
+   "kind": "plain",
+   "title": "2 or more points: HIGH RISK",
+   "lines": []
+  },
+  {
+   "id": "t_st",
+   "x": 561,
+   "y": 294,
+   "w": 720,
+   "h": 60,
+   "kind": "plain",
+   "title": "STABLE: what do the history and head-to-toe exam point to?",
+   "lines": [
+    "examine the infected area LAST"
+   ]
+  },
+  {
+   "id": "hy_head_0_0",
+   "x": 45,
+   "y": 434,
+   "w": 232,
+   "h": 78,
+   "kind": "hy_h",
+   "title": "Hyperthermia",
+   "lines": [
+    "thermoregulation FAILS",
+    "set point unchanged"
+   ]
+  },
+  {
+   "id": "un_head_0_0",
+   "x": 317,
+   "y": 434,
+   "w": 232,
+   "h": 78,
+   "kind": "un_h",
+   "title": "Possible SEPSIS",
+   "lines": [
+    "act before the full history"
+   ]
+  },
+  {
+   "id": "fo_head_0_0",
+   "x": 561,
+   "y": 434,
+   "w": 232,
+   "h": 78,
+   "kind": "fo_h",
+   "title": "Localised infection",
+   "lines": [
+    "name the SITE → the SYNDROME",
+    "→ the likely BUGS"
+   ]
+  },
+  {
+   "id": "ra_head_0_0",
+   "x": 805,
+   "y": 434,
+   "w": 232,
+   "h": 78,
+   "kind": "ra_h",
+   "title": "Fever EMERGENCY?",
+   "lines": [
+    "fever + rash, or an alarm sign"
+   ]
+  },
+  {
+   "id": "nf_head_0_0",
+   "x": 1049,
+   "y": 434,
+   "w": 232,
+   "h": 78,
+   "kind": "nf_h",
+   "title": "Fever of unknown origin",
+   "lines": [
+    "≥ 101°F on several occasions",
+    "a proper first work-up found nothing"
+   ]
+  },
+  {
+   "id": "hy_pres_0_0",
+   "x": 45,
+   "y": 552,
+   "w": 232,
+   "h": 132,
+   "kind": "hy_t",
+   "title": "Drugs, exercise, heat exposure",
+   "lines": [
+    "• heat stroke",
+    "• anesthesia drugs (atropine)",
+    "• no normal daily swing"
+   ]
+  },
+  {
+   "id": "un_pres_0_0",
+   "x": 317,
+   "y": 552,
+   "w": 232,
+   "h": 132,
+   "kind": "un_t",
+   "title": "Alarm signs",
+   "lines": [
+    "• dizziness, confusion",
+    "• recent CHEMOTHERAPY: neutropenia",
+    "• temperature > 105.8°F: CNS infection"
+   ]
+  },
+  {
+   "id": "fo_pres_0_0",
+   "x": 561,
+   "y": 552,
+   "w": 232,
+   "h": 132,
+   "kind": "fo_t",
+   "title": "Where is it?",
+   "lines": [
+    "• brain, ear/sinus, throat, lung, heart",
+    "• abdomen, biliary, urine, genital",
+    "• bone/joint, skin/soft tissue"
+   ]
+  },
+  {
+   "id": "ra_pres_0_0",
+   "x": 805,
+   "y": 552,
+   "w": 232,
+   "h": 132,
+   "kind": "ra_t",
+   "title": "Rule these out",
+   "lines": [
+    "• meningococcemia, Rocky Mountain spotted fever (RMSF)",
+    "• necrotizing fasciitis · toxic shock (staph, group A strep)",
+    "• endocarditis"
+   ]
+  },
+  {
+   "id": "nf_pres_0_0",
+   "x": 1049,
+   "y": 552,
+   "w": 232,
+   "h": 132,
+   "kind": "nf_t",
+   "title": "HOW LONG narrows it",
+   "lines": [
+    "• SUBACUTE 1–2 weeks: intra-abdominal abscess",
+    "• CHRONIC > 2 weeks: TB, HIV, cancer, lupus",
+    "• ALL cancers can cause fever"
+   ]
+  },
+  {
+   "id": "hy_inv_0_0",
+   "x": 45,
+   "y": 724,
+   "w": 232,
+   "h": 167,
+   "kind": "hy_w",
+   "title": "1 · Above 41°C?",
+   "lines": [
+    "fever rarely is: think hyperthermia"
+   ]
+  },
+  {
+   "id": "hy_inv_1_0",
+   "x": 45,
+   "y": 913,
+   "w": 232,
+   "h": 167,
+   "kind": "hy_w",
+   "title": "2 · Did antipyretics work?",
+   "lines": [
+    "NO response → hyperthermia"
+   ]
+  },
+  {
+   "id": "un_inv_0_0",
+   "x": 317,
+   "y": 724,
+   "w": 232,
+   "h": 203,
+   "kind": "un_t",
+   "title": "1 · FULL septic work-up",
+   "lines": [
+    "• blood + urine cultures, complete blood count (CBC), urinalysis",
+    "• cerebrospinal fluid (CSF): culture, cells, glucose, protein",
+    "• chest X-ray (CXR)"
+   ]
+  },
+  {
+   "id": "un_inv_1_0",
+   "x": 317,
+   "y": 949,
+   "w": 232,
+   "h": 131,
+   "kind": "un_w",
+   "title": "2 · Lactate",
+   "lines": [
+    "HIGH = bad: sepsis"
+   ]
+  },
+  {
+   "id": "fo_inv_0_0",
+   "x": 561,
+   "y": 724,
+   "w": 232,
+   "h": 62,
+   "kind": "fo_t",
+   "title": "1 · ALWAYS 2 sets of blood cultures",
+   "lines": []
+  },
+  {
+   "id": "fo_inv_1_0",
+   "x": 561,
+   "y": 808,
+   "w": 232,
+   "h": 134,
+   "kind": "fo_w",
+   "title": "2 · TARGETED tests at the site",
+   "lines": [
+    "• urinalysis, lumbar puncture, joint tap",
+    "• CXR · nasal swab: respiratory panel"
+   ]
+  },
+  {
+   "id": "fo_inv_2_0",
+   "x": 561,
+   "y": 964,
+   "w": 232,
+   "h": 116,
+   "kind": "bad",
+   "title": "Positive urine culture ≠ urinary tract infection (UTI)",
+   "lines": [
+    "• NO urinalysis over 65",
+    "• treat bacteriuria only in pregnancy, urologic surgery, child with reflux"
+   ]
+  },
+  {
+   "id": "ra_inv_0_0",
+   "x": 805,
+   "y": 724,
+   "w": 232,
+   "h": 176,
+   "kind": "ra_t",
+   "title": "1 · Read the rash",
+   "lines": [
+    "• palms + soles, CaRS: Coxsackie, RMSF, Syphilis",
+    "• fever 5 days + conjunctivitis, rash, nodes, strawberry tongue, hands: KAWASAKI"
+   ]
+  },
+  {
+   "id": "ra_inv_1_0",
+   "x": 805,
+   "y": 922,
+   "w": 232,
+   "h": 158,
+   "kind": "ra_w",
+   "title": "2 · Not infection?",
+   "lines": [
+    "• drugs: DRESS, Stevens-Johnson / TEN, serum sickness",
+    "• lymphoma, leukemia · vasculitis, lupus"
+   ]
+  },
+  {
+   "id": "nf_inv_0_0",
+   "x": 1049,
+   "y": 724,
+   "w": 232,
+   "h": 148,
+   "kind": "nf_w",
+   "title": "1 · Routine bloods + imaging",
+   "lines": [
+    "• CBC, electrolytes, creatinine, liver, C-reactive protein (CRP)",
+    "• CT, ultrasound, MRI (spare children radiation)"
+   ]
+  },
+  {
+   "id": "nf_inv_1_0",
+   "x": 1049,
+   "y": 894,
+   "w": 232,
+   "h": 186,
+   "kind": "nf_t",
+   "title": "2 · Hunt NON-infectious causes",
+   "lines": [
+    "• rheumatoid factor, ANA (lupus), ANCA (vasculitis)",
+    "• leg Dopplers / CT pulmonary angiogram (clot)",
+    "• thyroid (TSH) · drug history"
+   ]
+  },
+  {
+   "id": "hy_tx_0_0",
+   "x": 45,
+   "y": 1120,
+   "w": 232,
+   "h": 262,
+   "kind": "bad",
+   "title": "Antipyretics do NOT work",
+   "lines": [
+    "the set point is already normal"
+   ]
+  },
+  {
+   "id": "un_tx_0_0",
+   "x": 317,
+   "y": 1120,
+   "w": 232,
+   "h": 55,
+   "kind": "bad",
+   "title": "1 · Resuscitate: ABC",
+   "lines": []
+  },
+  {
+   "id": "un_tx_1_0",
+   "x": 317,
+   "y": 1197,
+   "w": 232,
+   "h": 109,
+   "kind": "ok",
+   "title": "2 · EMPIRIC antibiotics NOW",
+   "lines": [
+    "• don't wait for cultures",
+    "• cover Listeria, E. coli, group B strep"
+   ]
+  },
+  {
+   "id": "un_tx_2_0",
+   "x": 317,
+   "y": 1328,
+   "w": 232,
+   "h": 55,
+   "kind": "un_w",
+   "title": "Then: SEPSIS chart",
+   "lines": []
+  },
+  {
+   "id": "fo_tx_0_0",
+   "x": 561,
+   "y": 1120,
+   "w": 232,
+   "h": 80,
+   "kind": "ok",
+   "title": "1 · Antibiotics for BACTERIA only",
+   "lines": [
+    "choice: ANTIBIOTICS chart"
+   ]
+  },
+  {
+   "id": "fo_tx_1_0",
+   "x": 561,
+   "y": 1222,
+   "w": 232,
+   "h": 78,
+   "kind": "warn",
+   "title": "ABSCESS: DRAIN it",
+   "lines": [
+    "antibiotics cannot cross its avascular wall"
+   ]
+  },
+  {
+   "id": "fo_tx_2_0",
+   "x": 561,
+   "y": 1322,
+   "w": 232,
+   "h": 60,
+   "kind": "bad",
+   "title": "Can't move the joint?",
+   "lines": [
+    "SEPTIC ARTHRITIS: an emergency"
+   ]
+  },
+  {
+   "id": "ra_tx_0_0",
+   "x": 805,
+   "y": 1120,
+   "w": 232,
+   "h": 262,
+   "kind": "bad",
+   "title": "Kawasaki: CORONARY artery aneurysm risk",
+   "lines": []
+  },
+  {
+   "id": "nf_tx_0_0",
+   "x": 1049,
+   "y": 1120,
+   "w": 232,
+   "h": 147,
+   "kind": "ok",
+   "title": "1 · Treat the CAUSE",
+   "lines": [
+    "• bacteria → antibiotic · virus → antiviral",
+    "• fungus → antifungal · parasite → antiparasitic"
+   ]
+  },
+  {
+   "id": "nf_tx_1_0",
+   "x": 1049,
+   "y": 1289,
+   "w": 232,
+   "h": 93,
+   "kind": "ok",
+   "title": "2 · Antipyretics for comfort",
+   "lines": [
+    "acetaminophen, NSAIDs"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_hy",
+   "path": "M663.0 124V149H161.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_fe",
+   "path": "M663.0 124V149H799.0V174"
+  },
+  {
+   "from": "g_fe",
+   "to": "t_un",
+   "from_dx": -366
+  },
+  {
+   "from": "g_fe",
+   "to": "t_st",
+   "from_dx": 122
+  },
+  {
+   "from": "hy_inv_0_0",
+   "to": "hy_inv_1_0"
+  },
+  {
+   "from": "un_inv_0_0",
+   "to": "un_inv_1_0"
+  },
+  {
+   "from": "fo_inv_0_0",
+   "to": "fo_inv_1_0"
+  },
+  {
+   "from": "fo_inv_1_0",
+   "to": "fo_inv_2_0"
+  },
+  {
+   "from": "ra_inv_0_0",
+   "to": "ra_inv_1_0"
+  },
+  {
+   "from": "nf_inv_0_0",
+   "to": "nf_inv_1_0"
+  },
+  {
+   "from": "un_tx_0_0",
+   "to": "un_tx_1_0"
+  },
+  {
+   "from": "un_tx_1_0",
+   "to": "un_tx_2_0"
+  },
+  {
+   "from": "fo_tx_0_0",
+   "to": "fo_tx_1_0"
+  },
+  {
+   "from": "fo_tx_1_0",
+   "to": "fo_tx_2_0"
+  },
+  {
+   "from": "nf_tx_0_0",
+   "to": "nf_tx_1_0"
+  },
+  {
+   "from": "hy_head_0_0",
+   "to": "hy_pres_0_0"
+  },
+  {
+   "from": "hy_pres_0_0",
+   "to": "hy_inv_0_0"
+  },
+  {
+   "from": "hy_inv_1_0",
+   "to": "hy_tx_0_0"
+  },
+  {
+   "from": "g_hy",
+   "to": "hy_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "un_head_0_0",
+   "to": "un_pres_0_0"
+  },
+  {
+   "from": "un_pres_0_0",
+   "to": "un_inv_0_0"
+  },
+  {
+   "from": "un_inv_1_0",
+   "to": "un_tx_0_0"
+  },
+  {
+   "from": "t_un",
+   "to": "un_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "fo_head_0_0",
+   "to": "fo_pres_0_0"
+  },
+  {
+   "from": "fo_pres_0_0",
+   "to": "fo_inv_0_0"
+  },
+  {
+   "from": "fo_inv_2_0",
+   "to": "fo_tx_0_0"
+  },
+  {
+   "from": "t_st",
+   "to": "fo_head_0_0",
+   "from_dx": -244,
+   "label": "a FOCUS",
+   "label_at": [
+    677.0,
+    394
+   ]
+  },
+  {
+   "from": "ra_head_0_0",
+   "to": "ra_pres_0_0"
+  },
+  {
+   "from": "ra_pres_0_0",
+   "to": "ra_inv_0_0"
+  },
+  {
+   "from": "ra_inv_1_0",
+   "to": "ra_tx_0_0"
+  },
+  {
+   "from": "t_st",
+   "to": "ra_head_0_0",
+   "from_dx": 0,
+   "label": "RASH or alarm",
+   "label_at": [
+    921.0,
+    394
+   ]
+  },
+  {
+   "from": "nf_head_0_0",
+   "to": "nf_pres_0_0"
+  },
+  {
+   "from": "nf_pres_0_0",
+   "to": "nf_inv_0_0"
+  },
+  {
+   "from": "nf_inv_1_0",
+   "to": "nf_tx_0_0"
+  },
+  {
+   "from": "t_st",
+   "to": "nf_head_0_0",
+   "from_dx": 244,
+   "label": "NO focus, lasting",
+   "label_at": [
+    1165.0,
+    394
+   ]
+  }
+ ],
+ "panels": []
+}

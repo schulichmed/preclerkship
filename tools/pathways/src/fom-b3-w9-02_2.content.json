@@ -1,0 +1,191 @@
+{
+ "name": "anemia by cell size overview",
+ "title": "Anemia sorted by the mean cell volume on the complete blood count: microcytic, normocytic or macrocytic, plus hemolysis at any size, each pointing to its own approach chart",
+ "col_w": 230,
+ "root": {
+  "title": "Anemia: how BIG are the red cells?",
+  "lines": [
+   "anemia = hemoglobin (Hb) below range: men < 135, women < 115 g/L",
+   "read the mean cell volume (MCV) on the complete blood count (CBC)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_mi",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "MCV < 80 fL",
+   "lines": []
+  },
+  {
+   "id": "g_no",
+   "cols": [
+    1,
+    1
+   ],
+   "title": "MCV 80–100 fL",
+   "lines": []
+  },
+  {
+   "id": "g_ma",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "MCV > 100 fL",
+   "lines": []
+  },
+  {
+   "id": "g_he",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "ANY MCV",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "next"
+ ],
+ "row_names": {
+  "next": "NEXT"
+ },
+ "columns": [
+  {
+   "id": "mi",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Microcytic",
+      [
+       "too little Hb made: heme or globin"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "t",
+      "Is it IRON?",
+      [
+       "ferritin + film"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "see the MICROCYTIC ANEMIA chart",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "no",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Normocytic",
+      [
+       "normal cells, too few of them"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "t",
+      "Is the marrow RESPONDING?",
+      [
+       "reticulocyte count"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "see the NORMOCYTIC ANEMIA chart",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ma",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Macrocytic",
+      [
+       "big cells, but too few of them"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "t",
+      "Is it MEGALOBLASTIC?",
+      [
+       "the film first"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "see the MACROCYTIC ANEMIA chart",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "he",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Hemolysis",
+      [
+       "can be micro-, normo- or macrocytic"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "t",
+      "Is it IMMUNE?",
+      [
+       "direct antiglobulin test"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "see the HEMOLYTIC ANEMIA chart",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

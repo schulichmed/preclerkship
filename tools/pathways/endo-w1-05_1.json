@@ -1,0 +1,174 @@
+{
+ "name": "type 2 diabetes mellitus diagnosis epidemiology pathway",
+ "title": "After an abnormal glucose: how many abnormal measurements are needed, confirming once an acutely ill patient recovers, and telling type 2 from type 1 by C-peptide and anti-GAD antibodies",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 310,
+   "y": 10,
+   "w": 300,
+   "kind": "plain",
+   "title": "Abnormal glucose measurement",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 270,
+   "y": 88,
+   "w": 380,
+   "kind": "plain",
+   "title": "Symptoms present?",
+   "lines": [
+    "polydipsia, polyuria, weight loss"
+   ]
+  },
+  {
+   "id": "C",
+   "x": 130,
+   "y": 210,
+   "w": 300,
+   "kind": "plain",
+   "title": "1 abnormal measurement is sufficient",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 490,
+   "y": 210,
+   "w": 300,
+   "kind": "plain",
+   "title": "2 abnormal measurements required",
+   "lines": []
+  },
+  {
+   "id": "E",
+   "x": 230,
+   "y": 310,
+   "w": 460,
+   "kind": "plain",
+   "title": "Patient acutely ill?",
+   "lines": [
+    "recent myocardial infarction, sepsis, steroids"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 30,
+   "y": 440,
+   "w": 260,
+   "kind": "warn",
+   "title": "Suspect diabetes, but",
+   "lines": [
+    "CONFIRM once recovered"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 500,
+   "y": 440,
+   "w": 220,
+   "kind": "plain",
+   "title": "Which type?",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 400,
+   "y": 530,
+   "w": 420,
+   "kind": "plain",
+   "title": "Activity/weight history",
+   "lines": [
+    "C-peptide + anti-glutamic acid decarboxylase (anti-GAD)"
+   ]
+  },
+  {
+   "id": "I",
+   "x": 340,
+   "y": 650,
+   "w": 260,
+   "kind": "anti",
+   "title": "↑ C-peptide, ↓ anti-GAD → T2DM",
+   "lines": []
+  },
+  {
+   "id": "J",
+   "x": 640,
+   "y": 650,
+   "w": 260,
+   "kind": "ana",
+   "title": "↓ C-peptide, ↑ anti-GAD → T1DM",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "from_dx": -80,
+   "label": "yes",
+   "label_at": [
+    262,
+    176
+   ]
+  },
+  {
+   "from": "B",
+   "to": "D",
+   "from_dx": 80,
+   "label": "no",
+   "label_at": [
+    658,
+    176
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "to_dx": -100
+  },
+  {
+   "from": "D",
+   "to": "E",
+   "to_dx": 100
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "from_dx": -150,
+   "label": "yes",
+   "label_at": [
+    196,
+    402
+   ]
+  },
+  {
+   "from": "E",
+   "to": "G",
+   "from_dx": 150,
+   "label": "no",
+   "label_at": [
+    630,
+    412
+   ]
+  },
+  {
+   "from": "G",
+   "to": "H"
+  },
+  {
+   "from": "H",
+   "to": "I",
+   "from_dx": -140
+  },
+  {
+   "from": "H",
+   "to": "J",
+   "from_dx": 160
+  }
+ ]
+}

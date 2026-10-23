@@ -1,0 +1,468 @@
+{
+ "name": "lymphoma overview",
+ "width": 898,
+ "title": "Suspected lymphoma: excisional biopsy and staging first, then Hodgkin (classical or nodular lymphocyte-predominant, treated by stage) or non-Hodgkin, aggressive (diffuse large B-cell, R-CHOP) or indolent (follicular, watch and wait until symptomatic); Ann Arbor stage sets the treatment",
+ "kinds": {
+  "hl_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hl_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "hl_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "dl_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dl_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "dl_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "fl_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fl_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "fl_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 326,
+   "w": 272,
+   "h": 870,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 342,
+   "y": 326,
+   "w": 272,
+   "h": 870,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 616,
+   "y": 326,
+   "w": 272,
+   "h": 870,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 452,
+   "h": 196,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 688,
+   "h": 218,
+   "text": "BIOPSY SHOWS"
+  },
+  {
+   "x": 23,
+   "y": 946,
+   "h": 242,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 84,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Suspected lymphoma: get TISSUE, then HODGKIN or NON-HODGKIN, then STAGE",
+   "lines": [
+    "1 · biopsy: EXCISIONAL > core > fine-needle aspiration (FNA loses node architecture)",
+    "2 · bloods (CBC, LDH, hepatitis B + C, HIV) · PET-CT · marrow if indicated · cardiac function · lumbar puncture for CNS",
+    "3 · Ann Arbor: I one region · II ≥ 2, SAME side of diaphragm · III BOTH sides · IV diffuse extranodal (marrow) · B = B symptoms"
+   ]
+  },
+  {
+   "id": "g_h",
+   "x": 45,
+   "y": 156,
+   "w": 262,
+   "h": 98,
+   "kind": "plain",
+   "title": "HODGKIN (HL): young · nodal · CONTIGUOUS spread",
+   "lines": [
+    "TREAT everyone, aim to CURE"
+   ]
+  },
+  {
+   "id": "g_n",
+   "x": 347,
+   "y": 156,
+   "w": 536,
+   "h": 98,
+   "kind": "plain",
+   "title": "NON-HODGKIN (NHL): older · nodal or extranodal · MONOCLONAL on flow",
+   "lines": [
+    "AGGRESSIVE → treat now · INDOLENT and well → watch and wait",
+    "small lymphocytic lymphoma = CLL: LEUKEMIA chart"
+   ]
+  },
+  {
+   "id": "hl_head_0_0",
+   "x": 45,
+   "y": 334,
+   "w": 262,
+   "h": 78,
+   "kind": "hl_h",
+   "title": "Hodgkin lymphoma",
+   "lines": [
+    "median age 26 · males > females"
+   ]
+  },
+  {
+   "id": "dl_head_0_0",
+   "x": 347,
+   "y": 334,
+   "w": 262,
+   "h": 78,
+   "kind": "dl_h",
+   "title": "Diffuse large B-cell (DLBCL)",
+   "lines": [
+    "most common NHL · AGGRESSIVE"
+   ]
+  },
+  {
+   "id": "fl_head_0_0",
+   "x": 621,
+   "y": 334,
+   "w": 262,
+   "h": 78,
+   "kind": "fl_h",
+   "title": "Follicular lymphoma",
+   "lines": [
+    "2nd most common NHL · INDOLENT · mostly incurable"
+   ]
+  },
+  {
+   "id": "hl_clue_0_0",
+   "x": 45,
+   "y": 452,
+   "w": 262,
+   "h": 114,
+   "kind": "hl_t",
+   "title": "Painless node, often NECK first",
+   "lines": [
+    "• spreads node to next node (predictable)",
+    "• ± B symptoms: fever, drenching night sweats, weight loss",
+    "• pruritus, node pain with ALCOHOL"
+   ]
+  },
+  {
+   "id": "hl_clue_1_0",
+   "x": 45,
+   "y": 588,
+   "w": 262,
+   "h": 60,
+   "kind": "hl_w",
+   "title": "Nodular sclerosis: most common",
+   "lines": [
+    "young adult · MEDIASTINAL mass"
+   ]
+  },
+  {
+   "id": "dl_clue_0_0",
+   "x": 347,
+   "y": 452,
+   "w": 262,
+   "h": 196,
+   "kind": "dl_t",
+   "title": "Painless, RAPIDLY enlarging mass",
+   "lines": [
+    "• B symptoms · nodal or extranodal",
+    "• mostly ADVANCED at diagnosis",
+    "• rapidly FATAL untreated"
+   ]
+  },
+  {
+   "id": "fl_clue_0_0",
+   "x": 621,
+   "y": 452,
+   "w": 262,
+   "h": 196,
+   "kind": "fl_t",
+   "title": "Often ASYMPTOMATIC",
+   "lines": [
+    "• lymphadenopathy, splenomegaly",
+    "• usually stage III–IV at diagnosis",
+    "• relapses and remits"
+   ]
+  },
+  {
+   "id": "hl_inv_0_0",
+   "x": 45,
+   "y": 688,
+   "w": 262,
+   "h": 116,
+   "kind": "hl_t",
+   "title": "CLASSICAL: Reed-Sternberg cells",
+   "lines": [
+    "CD15+, CD30+ · inflammatory background",
+    "NOT monoclonal on flow"
+   ]
+  },
+  {
+   "id": "hl_inv_1_0",
+   "x": 45,
+   "y": 826,
+   "w": 262,
+   "h": 80,
+   "kind": "hl_w",
+   "title": "Nodular lymphocyte-predominant",
+   "lines": [
+    "'popcorn' cells · CD20+ · no EBV"
+   ]
+  },
+  {
+   "id": "dl_inv_0_0",
+   "x": 347,
+   "y": 688,
+   "w": 262,
+   "h": 218,
+   "kind": "dl_t",
+   "title": "DIFFUSE sheets of LARGE cells",
+   "lines": [
+    "CD5−, CD10+ · high mitotic rate"
+   ]
+  },
+  {
+   "id": "fl_inv_0_0",
+   "x": 621,
+   "y": 688,
+   "w": 262,
+   "h": 218,
+   "kind": "fl_t",
+   "title": "FOLLICULAR pattern of small cells",
+   "lines": [
+    "CD5−, CD10+ · t(14;18) BCL-2"
+   ]
+  },
+  {
+   "id": "hl_tx_0_0",
+   "x": 45,
+   "y": 946,
+   "w": 262,
+   "h": 65,
+   "kind": "ok",
+   "title": "Stage I–II (not bulky)",
+   "lines": [
+    "short chemo → involved-field radiation"
+   ]
+  },
+  {
+   "id": "hl_tx_1_0",
+   "x": 45,
+   "y": 1033,
+   "w": 262,
+   "h": 65,
+   "kind": "warn",
+   "title": "Stage III–IV or BULKY",
+   "lines": [
+    "ABVD × 2 → AVD × 4"
+   ]
+  },
+  {
+   "id": "hl_tx_2_0",
+   "x": 45,
+   "y": 1120,
+   "w": 262,
+   "h": 67,
+   "kind": "warn",
+   "title": "PET-positive residual mass → radiation",
+   "lines": []
+  },
+  {
+   "id": "dl_tx_0_0",
+   "x": 347,
+   "y": 946,
+   "w": 262,
+   "h": 242,
+   "kind": "ok",
+   "title": "R-CHOP every 21 days",
+   "lines": [
+    "• stage I–II: 3 cycles",
+    "• stage III–IV: 6 cycles"
+   ]
+  },
+  {
+   "id": "fl_tx_0_0",
+   "x": 621,
+   "y": 946,
+   "w": 262,
+   "h": 60,
+   "kind": "ok",
+   "title": "Well: WATCH AND WAIT",
+   "lines": [
+    "early treatment does not help"
+   ]
+  },
+  {
+   "id": "fl_tx_1_0",
+   "x": 621,
+   "y": 1028,
+   "w": 262,
+   "h": 60,
+   "kind": "ok",
+   "title": "Stage I → RADIATION",
+   "lines": [
+    "potentially curative"
+   ]
+  },
+  {
+   "id": "fl_tx_2_0",
+   "x": 621,
+   "y": 1110,
+   "w": 262,
+   "h": 78,
+   "kind": "warn",
+   "title": "Symptomatic II–IV → BR × 6",
+   "lines": [
+    "bendamustine-rituximab + 2 years rituximab"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_h",
+   "path": "M464.0 106V131H176.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_n",
+   "path": "M464.0 106V131H615.0V156"
+  },
+  {
+   "from": "hl_clue_0_0",
+   "to": "hl_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "hl_inv_0_0",
+   "to": "hl_inv_1_0"
+  },
+  {
+   "from": "hl_tx_0_0",
+   "to": "hl_tx_1_0"
+  },
+  {
+   "from": "hl_tx_1_0",
+   "to": "hl_tx_2_0"
+  },
+  {
+   "from": "fl_tx_0_0",
+   "to": "fl_tx_1_0"
+  },
+  {
+   "from": "fl_tx_1_0",
+   "to": "fl_tx_2_0"
+  },
+  {
+   "from": "hl_head_0_0",
+   "to": "hl_clue_0_0"
+  },
+  {
+   "from": "hl_clue_1_0",
+   "to": "hl_inv_0_0"
+  },
+  {
+   "from": "hl_inv_1_0",
+   "to": "hl_tx_0_0"
+  },
+  {
+   "from": "g_h",
+   "to": "hl_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "dl_head_0_0",
+   "to": "dl_clue_0_0"
+  },
+  {
+   "from": "dl_clue_0_0",
+   "to": "dl_inv_0_0"
+  },
+  {
+   "from": "dl_inv_0_0",
+   "to": "dl_tx_0_0"
+  },
+  {
+   "from": "g_n",
+   "to": "dl_head_0_0",
+   "from_dx": -137,
+   "label": "rapidly enlarging",
+   "label_at": [
+    478.0,
+    294
+   ]
+  },
+  {
+   "from": "fl_head_0_0",
+   "to": "fl_clue_0_0"
+  },
+  {
+   "from": "fl_clue_0_0",
+   "to": "fl_inv_0_0"
+  },
+  {
+   "from": "fl_inv_0_0",
+   "to": "fl_tx_0_0"
+  },
+  {
+   "from": "g_n",
+   "to": "fl_head_0_0",
+   "from_dx": 137,
+   "label": "indolent",
+   "label_at": [
+    752.0,
+    294
+   ]
+  }
+ ],
+ "panels": []
+}

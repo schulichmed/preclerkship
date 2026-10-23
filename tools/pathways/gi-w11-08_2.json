@@ -1,0 +1,715 @@
+{
+ "name": "inflammatory bowel disease overview",
+ "width": 1084,
+ "title": "Inflammatory bowel disease decision chart: Crohn's disease (skip lesions, transmural, anywhere in the gut) split into medical disease and its stricturing or fistulizing complications, and ulcerative colitis (continuous from the rectum, mucosal) split by severity into mild to moderate and severe or fulminant disease; each column gives presentation, numbered investigations and treatment in order",
+ "kinds": {
+  "cd_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cd_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "cd_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "cx_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cx_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cx_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ucm_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ucm_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ucm_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ucs_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ucs_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ucs_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 346,
+   "w": 250,
+   "h": 1044,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 292,
+   "y": 346,
+   "w": 250,
+   "h": 1044,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 572,
+   "y": 346,
+   "w": 250,
+   "h": 1044,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 824,
+   "y": 346,
+   "w": 250,
+   "h": 1044,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 492,
+   "h": 216,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 748,
+   "h": 244,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1032,
+   "h": 350,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 177,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Chronic diarrhea, pain, bleeding, weight loss: inflammatory bowel disease (IBD), and CROHN'S or ULCERATIVE COLITIS?",
+   "lines": [
+    "flares and remissions · peak 20s–30s, second peak 50s–70s · rule out INFECTION first (stool tests)",
+    "colonoscopy + BIOPSY makes the diagnosis in both",
+    "BOTH: follow up every 3 months (bloodwork, side effects) · colorectal cancer risk ↑: see the COLORECTAL CANCER SCREENING lecture"
+   ]
+  },
+  {
+   "id": "g_cd",
+   "x": 45,
+   "y": 194,
+   "w": 492,
+   "h": 80,
+   "kind": "plain",
+   "title": "SKIP lesions · TRANSMURAL · mouth to anus: CROHN'S",
+   "lines": [
+    "terminal ileum most often · smoking makes it WORSE"
+   ]
+  },
+  {
+   "id": "g_uc",
+   "x": 577,
+   "y": 194,
+   "w": 492,
+   "h": 80,
+   "kind": "plain",
+   "title": "CONTINUOUS from the RECTUM · MUCOSAL: ULCERATIVE COLITIS",
+   "lines": [
+    "colon only · how many stools a day sets the severity"
+   ]
+  },
+  {
+   "id": "cd_head_0_0",
+   "x": 45,
+   "y": 354,
+   "w": 240,
+   "h": 98,
+   "kind": "cd_h",
+   "title": "Crohn's disease",
+   "lines": [
+    "granulomas, deep fissuring ulcers"
+   ]
+  },
+  {
+   "id": "cx_head_0_0",
+   "x": 297,
+   "y": 354,
+   "w": 240,
+   "h": 98,
+   "kind": "cx_h",
+   "title": "Crohn's complications",
+   "lines": [
+    "from the transmural, fissuring ulcers"
+   ]
+  },
+  {
+   "id": "ucm_head_0_0",
+   "x": 577,
+   "y": 354,
+   "w": 240,
+   "h": 98,
+   "kind": "ucm_h",
+   "title": "Ulcerative colitis: mild to moderate",
+   "lines": [
+    "mild < 4 stools a day, normal CRP",
+    "moderate ≥ 4, little toxicity"
+   ]
+  },
+  {
+   "id": "ucs_head_0_0",
+   "x": 829,
+   "y": 354,
+   "w": 240,
+   "h": 98,
+   "kind": "ucs_h",
+   "title": "Ulcerative colitis: severe or fulminant",
+   "lines": [
+    "risk of TOXIC MEGACOLON"
+   ]
+  },
+  {
+   "id": "cd_pres_0_0",
+   "x": 45,
+   "y": 492,
+   "w": 240,
+   "h": 107,
+   "kind": "cd_t",
+   "title": "RIGHT LOWER QUADRANT PAIN",
+   "lines": [
+    "• diarrhea ± blood or steatorrhea",
+    "• fever, weight loss"
+   ]
+  },
+  {
+   "id": "cd_pres_1_0",
+   "x": 45,
+   "y": 621,
+   "w": 240,
+   "h": 87,
+   "kind": "cd_w",
+   "title": "Outside the gut",
+   "lines": [
+    "erythema nodosum, oral ulcers, eye inflammation, arthritis"
+   ]
+  },
+  {
+   "id": "cx_pres_0_0",
+   "x": 297,
+   "y": 492,
+   "w": 240,
+   "h": 97,
+   "kind": "cx_t",
+   "title": "Obstruction",
+   "lines": [
+    "fibrotic STRICTURE"
+   ]
+  },
+  {
+   "id": "cx_pres_1_0",
+   "x": 297,
+   "y": 611,
+   "w": 240,
+   "h": 97,
+   "kind": "cx_w",
+   "title": "Fistula, abscess, perforation",
+   "lines": [
+    "perianal disease"
+   ]
+  },
+  {
+   "id": "ucm_pres_0_0",
+   "x": 577,
+   "y": 492,
+   "w": 240,
+   "h": 98,
+   "kind": "ucm_t",
+   "title": "BLOODY DIARRHEA with mucus",
+   "lines": [
+    "• tenesmus",
+    "• pain around bowel movements"
+   ]
+  },
+  {
+   "id": "ucm_pres_1_0",
+   "x": 577,
+   "y": 612,
+   "w": 240,
+   "h": 96,
+   "kind": "ucm_w",
+   "title": "Outside the gut",
+   "lines": [
+    "pyoderma gangrenosum, ankylosing spondylitis, primary sclerosing cholangitis"
+   ]
+  },
+  {
+   "id": "ucs_pres_0_0",
+   "x": 829,
+   "y": 492,
+   "w": 240,
+   "h": 97,
+   "kind": "bad",
+   "title": "Severe",
+   "lines": [
+    "> 6 bloody stools + fever, tachycardia, anemia or ↑ CRP"
+   ]
+  },
+  {
+   "id": "ucs_pres_1_0",
+   "x": 829,
+   "y": 611,
+   "w": 240,
+   "h": 97,
+   "kind": "bad",
+   "title": "Fulminant",
+   "lines": [
+    "> 10 stools, continuous bleeding, distension, needs transfusion"
+   ]
+  },
+  {
+   "id": "cd_inv_0_0",
+   "x": 45,
+   "y": 748,
+   "w": 240,
+   "h": 111,
+   "kind": "cd_t",
+   "title": "1 · Colonoscopy + biopsy",
+   "lines": [
+    "skip lesions, NON-caseating granulomas"
+   ]
+  },
+  {
+   "id": "cd_inv_1_0",
+   "x": 45,
+   "y": 881,
+   "w": 240,
+   "h": 111,
+   "kind": "cd_w",
+   "title": "2 · Bloodwork",
+   "lines": [
+    "C-reactive protein (CRP), fecal calprotectin, ferritin, albumin, ↓ B12"
+   ]
+  },
+  {
+   "id": "cx_inv_0_0",
+   "x": 297,
+   "y": 748,
+   "w": 240,
+   "h": 244,
+   "kind": "cx_t",
+   "title": "1 · CT",
+   "lines": [
+    "shows fistulas and abscesses",
+    "~radiation adds up"
+   ]
+  },
+  {
+   "id": "ucm_inv_0_0",
+   "x": 577,
+   "y": 748,
+   "w": 240,
+   "h": 78,
+   "kind": "ucm_t",
+   "title": "1 · Sigmoidoscopy + biopsy",
+   "lines": [
+    "continuous, NO granulomas, crypt abscesses"
+   ]
+  },
+  {
+   "id": "ucm_inv_1_0",
+   "x": 577,
+   "y": 848,
+   "w": 240,
+   "h": 60,
+   "kind": "ucm_w",
+   "title": "2 · Colonoscopy for EXTENT",
+   "lines": [
+    "proctitis, left-sided or pancolitis"
+   ]
+  },
+  {
+   "id": "ucm_inv_2_0",
+   "x": 577,
+   "y": 930,
+   "w": 240,
+   "h": 62,
+   "kind": "ucm_w",
+   "title": "3 · Follow CRP + fecal calprotectin",
+   "lines": []
+  },
+  {
+   "id": "ucs_inv_0_0",
+   "x": 829,
+   "y": 748,
+   "w": 240,
+   "h": 244,
+   "kind": "ucs_t",
+   "title": "1 · Abdominal X-ray",
+   "lines": [
+    "DILATED colon → fulminant"
+   ]
+  },
+  {
+   "id": "cd_tx_0_0",
+   "x": 45,
+   "y": 1032,
+   "w": 240,
+   "h": 132,
+   "kind": "ok",
+   "title": "1 · INDUCE remission",
+   "lines": [
+    "• mild (ileum, right colon): BUDESONIDE",
+    "• moderate–severe: prednisone, biologic",
+    "• exclusive enteral nutrition"
+   ]
+  },
+  {
+   "id": "cd_tx_1_0",
+   "x": 45,
+   "y": 1186,
+   "w": 240,
+   "h": 96,
+   "kind": "ok",
+   "title": "2 · MAINTAIN",
+   "lines": [
+    "• azathioprine, methotrexate",
+    "• biologic (anti-tumour necrosis factor)"
+   ]
+  },
+  {
+   "id": "cd_tx_2_0",
+   "x": 45,
+   "y": 1304,
+   "w": 240,
+   "h": 78,
+   "kind": "bad",
+   "title": "NO steroids for maintenance",
+   "lines": [
+    "5-aminosalicylic acid (5-ASA) works in only a few"
+   ]
+  },
+  {
+   "id": "cx_tx_0_0",
+   "x": 297,
+   "y": 1032,
+   "w": 240,
+   "h": 121,
+   "kind": "warn",
+   "title": "1 · Stricture: relieve it MECHANICALLY",
+   "lines": [
+    "• endoscopic balloon dilation",
+    "• cannot be treated medically"
+   ]
+  },
+  {
+   "id": "cx_tx_1_0",
+   "x": 297,
+   "y": 1175,
+   "w": 240,
+   "h": 83,
+   "kind": "bad",
+   "title": "2 · Surgery: up to half need it",
+   "lines": [
+    "colectomy is NOT curative"
+   ]
+  },
+  {
+   "id": "cx_tx_2_0",
+   "x": 297,
+   "y": 1280,
+   "w": 240,
+   "h": 101,
+   "kind": "ok",
+   "title": "STOP SMOKING",
+   "lines": [
+    "earlier recurrence, more complications"
+   ]
+  },
+  {
+   "id": "ucm_tx_0_0",
+   "x": 577,
+   "y": 1032,
+   "w": 240,
+   "h": 83,
+   "kind": "ok",
+   "title": "1 · 5-ASA (MESALAMINE)",
+   "lines": [
+    "induces AND maintains"
+   ]
+  },
+  {
+   "id": "ucm_tx_1_0",
+   "x": 577,
+   "y": 1137,
+   "w": 240,
+   "h": 101,
+   "kind": "ok",
+   "title": "2 · Steroids",
+   "lines": [
+    "budesonide, prednisone: not to maintain"
+   ]
+  },
+  {
+   "id": "ucm_tx_2_0",
+   "x": 577,
+   "y": 1260,
+   "w": 240,
+   "h": 121,
+   "kind": "ok",
+   "title": "3 · Planned proctocolectomy or J pouch",
+   "lines": [
+    "CURATIVE: dysplasia, cancer, poor quality of life"
+   ]
+  },
+  {
+   "id": "ucs_tx_0_0",
+   "x": 829,
+   "y": 1032,
+   "w": 240,
+   "h": 89,
+   "kind": "bad",
+   "title": "NO loperamide",
+   "lines": [
+    "toxic megacolon"
+   ]
+  },
+  {
+   "id": "ucs_tx_1_0",
+   "x": 829,
+   "y": 1143,
+   "w": 240,
+   "h": 89,
+   "kind": "ok",
+   "title": "1 · Steroids + BIOLOGICS",
+   "lines": [
+    "infliximab, adalimumab"
+   ]
+  },
+  {
+   "id": "ucs_tx_2_0",
+   "x": 829,
+   "y": 1254,
+   "w": 240,
+   "h": 129,
+   "kind": "bad",
+   "title": "2 · Not responding, perforation, megacolon: EMERGENCY SURGERY",
+   "lines": [
+    "subtotal colectomy + ileostomy"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_cd",
+   "path": "M557.0 144V169H291.0V194"
+  },
+  {
+   "from": "root",
+   "to": "g_uc",
+   "path": "M557.0 144V169H823.0V194"
+  },
+  {
+   "from": "cd_pres_0_0",
+   "to": "cd_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "cx_pres_0_0",
+   "to": "cx_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ucm_pres_0_0",
+   "to": "ucm_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ucs_pres_0_0",
+   "to": "ucs_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "cd_inv_0_0",
+   "to": "cd_inv_1_0"
+  },
+  {
+   "from": "ucm_inv_0_0",
+   "to": "ucm_inv_1_0"
+  },
+  {
+   "from": "ucm_inv_1_0",
+   "to": "ucm_inv_2_0"
+  },
+  {
+   "from": "cd_tx_0_0",
+   "to": "cd_tx_1_0"
+  },
+  {
+   "from": "cd_tx_1_0",
+   "to": "cd_tx_2_0"
+  },
+  {
+   "from": "cx_tx_0_0",
+   "to": "cx_tx_1_0"
+  },
+  {
+   "from": "cx_tx_1_0",
+   "to": "cx_tx_2_0"
+  },
+  {
+   "from": "ucm_tx_0_0",
+   "to": "ucm_tx_1_0"
+  },
+  {
+   "from": "ucm_tx_1_0",
+   "to": "ucm_tx_2_0"
+  },
+  {
+   "from": "ucs_tx_0_0",
+   "to": "ucs_tx_1_0"
+  },
+  {
+   "from": "ucs_tx_1_0",
+   "to": "ucs_tx_2_0"
+  },
+  {
+   "from": "cd_head_0_0",
+   "to": "cd_pres_0_0"
+  },
+  {
+   "from": "cd_pres_1_0",
+   "to": "cd_inv_0_0"
+  },
+  {
+   "from": "cd_inv_1_0",
+   "to": "cd_tx_0_0"
+  },
+  {
+   "from": "g_cd",
+   "to": "cd_head_0_0",
+   "from_dx": -126,
+   "label": "inflammation",
+   "label_at": [
+    165.0,
+    314
+   ]
+  },
+  {
+   "from": "cx_head_0_0",
+   "to": "cx_pres_0_0"
+  },
+  {
+   "from": "cx_pres_1_0",
+   "to": "cx_inv_0_0"
+  },
+  {
+   "from": "cx_inv_0_0",
+   "to": "cx_tx_0_0"
+  },
+  {
+   "from": "g_cd",
+   "to": "cx_head_0_0",
+   "from_dx": 126,
+   "label": "stricture, fistula",
+   "label_at": [
+    417.0,
+    314
+   ]
+  },
+  {
+   "from": "ucm_head_0_0",
+   "to": "ucm_pres_0_0"
+  },
+  {
+   "from": "ucm_pres_1_0",
+   "to": "ucm_inv_0_0"
+  },
+  {
+   "from": "ucm_inv_2_0",
+   "to": "ucm_tx_0_0"
+  },
+  {
+   "from": "g_uc",
+   "to": "ucm_head_0_0",
+   "from_dx": -126,
+   "label": "≤ 6 stools a day",
+   "label_at": [
+    697.0,
+    314
+   ]
+  },
+  {
+   "from": "ucs_head_0_0",
+   "to": "ucs_pres_0_0"
+  },
+  {
+   "from": "ucs_pres_1_0",
+   "to": "ucs_inv_0_0"
+  },
+  {
+   "from": "ucs_inv_0_0",
+   "to": "ucs_tx_0_0"
+  },
+  {
+   "from": "g_uc",
+   "to": "ucs_head_0_0",
+   "from_dx": 126,
+   "label": "> 6 bloody stools",
+   "label_at": [
+    949.0,
+    314
+   ]
+  }
+ ],
+ "panels": []
+}

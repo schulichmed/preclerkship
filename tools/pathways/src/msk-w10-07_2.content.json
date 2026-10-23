@@ -1,0 +1,50 @@
+{
+ "name": "polyarthritis overview",
+ "title": "Polyarthritis (four or more joints): decide inflammatory or degenerative and acute or chronic; acute inflammatory polyarthritis is infection, crystals or early autoimmune disease, and chronic polyarthritis is sorted by its joint pattern into rheumatoid arthritis, psoriatic arthritis, axial spondyloarthropathy and osteoarthritis, each with its own extra-articular clues and targeted tests",
+ "col_w": 236,
+ "root": {
+  "title": "FOUR or more joints: inflammatory or degenerative, acute or chronic, and in what PATTERN?",
+  "lines": [
+   "inflamed synovium (synovitis) = swelling, warmth, pain, stiffness · redness only with infection or crystals",
+   "every inflammatory arthritis is a CLINICAL diagnosis: history, extra-articular clues, then targeted tests"
+  ]
+ },
+ "groups": [
+  {"id": "g_ac", "cols": [0, 0], "title": "ACUTE: 6 weeks or less", "lines": ["onset in hours to days"]},
+  {"id": "g_ch", "cols": [1, 4], "title": "CHRONIC: over 6 weeks · the PATTERN decides", "lines": ["insidious, weeks to months · progressive and additive"]}
+ ],
+ "sections": ["head", "clue", "inv"],
+ "row_names": {"clue": "LOOK FOR", "inv": "INVESTIGATIONS"},
+ "dashed_sections": ["clue"],
+ "columns": [
+  {"id": "acu", "colour": "slate",
+   "head": [[["h", "Acute polyarthritis", ["infection · crystals · early autoimmune"]]]],
+   "clue": [[["t", "Causes", ["• viral or post-infectious (see the MSK INFECTIONS chart)", "• polyarticular gout · rheumatic fever", "• drug reaction (serum sickness)"]]], [["w", "Course", ["• episodic: crystals", "• migratory: palindromic, rheumatic fever, early gonococcal"]]]],
+   "inv": [[["bad", "Red, hot joint → ASPIRATE", ["infection? crystals?", "~gout: needles, negative · pseudogout: rhomboid, positive"]]], [["w", "Viral: serologies", ["self-limited · supportive; anti-inflammatories or a short prednisone course if severe"]]]]
+  },
+  {"id": "ra", "colour": "teal", "drop_label": "symmetric, small + large",
+   "head": [[["h", "Rheumatoid arthritis", ["also symmetric: lupus, connective tissue disease"]]]],
+   "clue": [[["t", "Wrists, knuckles, finger joints, ankles, feet", ["• knuckles (MCPs) + middle finger joints (PIPs)", "• distal finger joints (DIPs) SPARED", "• ulnar deviation, knuckle subluxation"]]], [["w", "Extra-articular", ["• rheumatoid nodules, lung nodules", "• episcleritis"]]]],
+   "inv": [[["t", "Rheumatoid factor (RF) + anti-CCP: only if suspected", ["• anti-cyclic citrullinated peptide: 95% specific · RF is not", "• positive = more aggressive · NEVER to monitor"]]], [["w", "X-ray", ["erosions, periarticular osteopenia, SYMMETRIC narrowing"]]]]
+  },
+  {"id": "psa", "colour": "magenta", "drop_label": "asymmetric, small + large",
+   "head": [[["h", "Psoriatic arthritis", ["also asymmetric: gout, reactive"]]]],
+   "clue": [[["t", "DIPs involved · dactylitis", ["• sausage digit · enthesitis (Achilles)"]]], [["w", "Extra-articular", ["• skin psoriasis · nail pitting", "• uveitis"]]]],
+   "inv": [[["w", "No specific antibody", ["clinical diagnosis · X-ray: erosions", "detail: the SERONEGATIVE ARTHRITIDES chart"]]]]
+  },
+  {"id": "axs", "colour": "purple", "drop_label": "axial + large",
+   "head": [[["h", "Axial spondyloarthropathy", ["e.g. ankylosing spondylitis"]]]],
+   "clue": [[["t", "Spine and sacroiliac joints", ["+ a few large peripheral joints"]]], [["w", "Ask", ["psoriasis · inflammatory bowel disease · recent infection"]]]],
+   "inv": [[["w", "Human leukocyte antigen B27 (HLA-B27)", ["X-ray: erosions", "detail: the SERONEGATIVE ARTHRITIDES chart"]]]]
+  },
+  {"id": "oa", "colour": "orange", "drop_label": "symmetric, weight-bearing",
+   "head": [[["h", "Osteoarthritis", ["DEGENERATIVE, not inflammatory"]]]],
+   "clue": [[["t", "Weight-bearing joints, spine", ["• DIPs, PIPs, thumb base, big toe"]]], [["w", "Hands", ["Heberden's (DIP) and Bouchard's (PIP) nodes"]]]],
+   "inv": [[["w", "X-ray", ["osteophytes, subchondral sclerosis and cysts, ASYMMETRIC narrowing"]]]]
+  }
+ ],
+ "panels": [
+  {"title": "Tests for everyone (safety + inflammation)", "items": ["blood count: anemia of chronic disease, platelets ↑ (inflammation), low counts (autoimmune)", "creatinine and liver enzymes (drug clearance) · C-reactive protein (sedimentation rate not routine)"]},
+  {"title": "Antinuclear antibody (ANA)", "items": ["positive in up to 30% of healthy people: a positive ANA does NOT rule in connective tissue disease", "a negative ANA rules it out · don't order ANA and RF reflexively"]}
+ ]
+}

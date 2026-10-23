@@ -1,0 +1,744 @@
+{
+ "name": "constipation overview",
+ "width": 1324,
+ "title": "Constipation decision chart: red flags send the patient to colonoscopy for a structural cause, a secondary cause is found on history and basic labs, and the rest is primary: functional constipation treated in steps, with slow transit and defecatory disorders found by transit study and anorectal testing when first-line treatment fails",
+ "kinds": {
+  "rf_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rf_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "rf_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "sec_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sec_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "sec_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "fn_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fn_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "fn_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "st_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "st_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "st_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "dd_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dd_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "dd_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 426,
+   "w": 242,
+   "h": 1060,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 312,
+   "y": 426,
+   "w": 242,
+   "h": 1060,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 584,
+   "y": 426,
+   "w": 242,
+   "h": 1060,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 828,
+   "y": 426,
+   "w": 242,
+   "h": 1060,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1072,
+   "y": 426,
+   "w": 242,
+   "h": 1060,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 552,
+   "h": 232,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 824,
+   "h": 180,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1044,
+   "h": 434,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 297,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Constipation: a CAUSE to find, or FUNCTIONAL?",
+   "lines": [
+    "history matters more than exam: fibre, water, time for the toilet, medications · PAIN → think irritable bowel syndrome",
+    "digital rectal exam (DRE): fissure, hemorrhoids, tone at rest and squeeze, rectal mass, impaction"
+   ]
+  },
+  {
+   "id": "g_rf",
+   "x": 45,
+   "y": 138,
+   "w": 232,
+   "h": 116,
+   "kind": "plain",
+   "title": "RED FLAGS? → COLONOSCOPY",
+   "lines": [
+    "colorectal cancer until proven otherwise"
+   ]
+  },
+  {
+   "id": "g_sec",
+   "x": 317,
+   "y": 138,
+   "w": 232,
+   "h": 116,
+   "kind": "plain",
+   "title": "SECONDARY: drug or disease?",
+   "lines": [
+    "complete blood count, calcium, thyroid-stimulating hormone (TSH) for everyone"
+   ]
+  },
+  {
+   "id": "g_pri",
+   "x": 589,
+   "y": 138,
+   "w": 720,
+   "h": 116,
+   "kind": "plain",
+   "title": "PRIMARY (most common): Rome IV",
+   "lines": [
+    "≥ 2 of: < 3 bowel movements a week, straining, hard or lumpy stools, incomplete emptying, blockage, manual help",
+    "for 3 months · loose stools rare without laxatives · not irritable bowel syndrome"
+   ]
+  },
+  {
+   "id": "t_ref",
+   "x": 833,
+   "y": 294,
+   "w": 476,
+   "h": 60,
+   "kind": "plain",
+   "title": "Fails fibre + laxatives: TEST transit and the pelvic floor",
+   "lines": [
+    "referral to a motility specialist first"
+   ]
+  },
+  {
+   "id": "rf_head_0_0",
+   "x": 45,
+   "y": 434,
+   "w": 232,
+   "h": 78,
+   "kind": "rf_h",
+   "title": "Structural",
+   "lines": [
+    "colorectal cancer, benign stricture, pseudo-obstruction"
+   ]
+  },
+  {
+   "id": "sec_head_0_0",
+   "x": 317,
+   "y": 434,
+   "w": 232,
+   "h": 78,
+   "kind": "sec_h",
+   "title": "Secondary",
+   "lines": [
+    "something else is slowing the bowel"
+   ]
+  },
+  {
+   "id": "fn_head_0_0",
+   "x": 589,
+   "y": 434,
+   "w": 232,
+   "h": 78,
+   "kind": "fn_h",
+   "title": "Functional constipation",
+   "lines": [
+    "normal transit"
+   ]
+  },
+  {
+   "id": "st_head_0_0",
+   "x": 833,
+   "y": 434,
+   "w": 232,
+   "h": 78,
+   "kind": "st_h",
+   "title": "Slow transit",
+   "lines": [
+    "the colon moves stool too slowly"
+   ]
+  },
+  {
+   "id": "dd_head_0_0",
+   "x": 1077,
+   "y": 434,
+   "w": 232,
+   "h": 78,
+   "kind": "dd_h",
+   "title": "Defecatory disorder",
+   "lines": [
+    "the outlet fails, not the colon"
+   ]
+  },
+  {
+   "id": "rf_pres_0_0",
+   "x": 45,
+   "y": 552,
+   "w": 232,
+   "h": 232,
+   "kind": "bad",
+   "title": "Red flags",
+   "lines": [
+    "• hematochezia, anemia, weight loss",
+    "• age > 50, sudden change in bowel habit",
+    "• family history of colorectal cancer"
+   ]
+  },
+  {
+   "id": "sec_pres_0_0",
+   "x": 317,
+   "y": 552,
+   "w": 232,
+   "h": 96,
+   "kind": "sec_t",
+   "title": "Drugs",
+   "lines": [
+    "• OPIOIDS, anticholinergics",
+    "• iron, calcium",
+    "• antiparkinsonian drugs"
+   ]
+  },
+  {
+   "id": "sec_pres_1_0",
+   "x": 317,
+   "y": 670,
+   "w": 232,
+   "h": 114,
+   "kind": "sec_w",
+   "title": "Disease",
+   "lines": [
+    "• hypothyroidism, hypercalcemia",
+    "• Parkinson's, multiple sclerosis, autonomic neuropathy",
+    "• immobility"
+   ]
+  },
+  {
+   "id": "fn_pres_0_0",
+   "x": 589,
+   "y": 552,
+   "w": 232,
+   "h": 232,
+   "kind": "fn_t",
+   "title": "Rome IV met",
+   "lines": [
+    "• normal digital rectal exam",
+    "• no red flags"
+   ]
+  },
+  {
+   "id": "st_pres_0_0",
+   "x": 833,
+   "y": 552,
+   "w": 232,
+   "h": 232,
+   "kind": "st_t",
+   "title": "Fails medical treatment",
+   "lines": []
+  },
+  {
+   "id": "dd_pres_0_0",
+   "x": 1077,
+   "y": 552,
+   "w": 232,
+   "h": 232,
+   "kind": "dd_t",
+   "title": "Pelvic floor does not coordinate",
+   "lines": [
+    "• anismus: sphincter CONTRACTS instead of relaxing",
+    "• dyssynergia",
+    "• rectocele: rectum bulges into the vagina"
+   ]
+  },
+  {
+   "id": "rf_inv_0_0",
+   "x": 45,
+   "y": 824,
+   "w": 232,
+   "h": 61,
+   "kind": "rf_t",
+   "title": "1 · COLONOSCOPY",
+   "lines": []
+  },
+  {
+   "id": "rf_inv_1_0",
+   "x": 45,
+   "y": 907,
+   "w": 232,
+   "h": 97,
+   "kind": "bad",
+   "title": "NOT under 50",
+   "lines": [
+    "without a family history or alarm features"
+   ]
+  },
+  {
+   "id": "sec_inv_0_0",
+   "x": 317,
+   "y": 824,
+   "w": 232,
+   "h": 79,
+   "kind": "sec_t",
+   "title": "1 · Calcium + TSH",
+   "lines": [
+    "hypercalcemia? hypothyroid?"
+   ]
+  },
+  {
+   "id": "sec_inv_1_0",
+   "x": 317,
+   "y": 925,
+   "w": 232,
+   "h": 79,
+   "kind": "sec_w",
+   "title": "2 · Complete blood count",
+   "lines": [
+    "anemia"
+   ]
+  },
+  {
+   "id": "fn_inv_0_0",
+   "x": 589,
+   "y": 824,
+   "w": 232,
+   "h": 180,
+   "kind": "fn_t",
+   "title": "A CLINICAL diagnosis",
+   "lines": [
+    "colonoscopy only for red flags"
+   ]
+  },
+  {
+   "id": "st_inv_0_0",
+   "x": 833,
+   "y": 824,
+   "w": 232,
+   "h": 180,
+   "kind": "st_t",
+   "title": "1 · Colonic transit study",
+   "lines": [
+    "swallow 24 radio-opaque markers day 1, abdominal X-ray day 5"
+   ]
+  },
+  {
+   "id": "dd_inv_0_0",
+   "x": 1077,
+   "y": 824,
+   "w": 232,
+   "h": 98,
+   "kind": "dd_t",
+   "title": "1 · Anorectal manometry + balloon expulsion",
+   "lines": [
+    "tone, sensation, reflexes, can the balloon be pushed out?"
+   ]
+  },
+  {
+   "id": "dd_inv_1_0",
+   "x": 1077,
+   "y": 944,
+   "w": 232,
+   "h": 60,
+   "kind": "dd_w",
+   "title": "2 · Defecating proctogram",
+   "lines": [
+    "anatomy: rectocele"
+   ]
+  },
+  {
+   "id": "rf_tx_0_0",
+   "x": 45,
+   "y": 1044,
+   "w": 232,
+   "h": 434,
+   "kind": "warn",
+   "title": "Treat what is found",
+   "lines": []
+  },
+  {
+   "id": "sec_tx_0_0",
+   "x": 317,
+   "y": 1044,
+   "w": 232,
+   "h": 196,
+   "kind": "ok",
+   "title": "Remove or treat the cause",
+   "lines": []
+  },
+  {
+   "id": "sec_tx_1_0",
+   "x": 317,
+   "y": 1262,
+   "w": 232,
+   "h": 216,
+   "kind": "bad",
+   "title": "Opioids: NOT stool softeners alone",
+   "lines": []
+  },
+  {
+   "id": "fn_tx_0_0",
+   "x": 589,
+   "y": 1044,
+   "w": 232,
+   "h": 114,
+   "kind": "ok",
+   "title": "1 · Education + lifestyle",
+   "lines": [
+    "• fluid, physical activity",
+    "• fibre 20–30 g a day",
+    "• laxatives long term: NO dependency, no 'lazy colon'"
+   ]
+  },
+  {
+   "id": "fn_tx_1_0",
+   "x": 589,
+   "y": 1180,
+   "w": 232,
+   "h": 134,
+   "kind": "ok",
+   "title": "2 · OSMOTIC laxative FIRST line (NOT stool softeners)",
+   "lines": [
+    "• polyethylene glycol (PEG): best",
+    "• lactulose",
+    "• magnesium: care in kidney disease"
+   ]
+  },
+  {
+   "id": "fn_tx_2_0",
+   "x": 589,
+   "y": 1336,
+   "w": 232,
+   "h": 60,
+   "kind": "ok",
+   "title": "3 · Stimulant at bedtime",
+   "lines": [
+    "senna, bisacodyl"
+   ]
+  },
+  {
+   "id": "fn_tx_3_0",
+   "x": 589,
+   "y": 1418,
+   "w": 232,
+   "h": 60,
+   "kind": "warn",
+   "title": "4 · Secretagogue",
+   "lines": [
+    "linaclotide, prucalopride"
+   ]
+  },
+  {
+   "id": "st_tx_0_0",
+   "x": 833,
+   "y": 1044,
+   "w": 232,
+   "h": 197,
+   "kind": "ok",
+   "title": "1 · Laxatives as for functional",
+   "lines": []
+  },
+  {
+   "id": "st_tx_1_0",
+   "x": 833,
+   "y": 1263,
+   "w": 232,
+   "h": 215,
+   "kind": "warn",
+   "title": "2 · Subtotal colectomy + ileorectal anastomosis",
+   "lines": [
+    "only after medical treatment fails"
+   ]
+  },
+  {
+   "id": "dd_tx_0_0",
+   "x": 1077,
+   "y": 1044,
+   "w": 232,
+   "h": 224,
+   "kind": "ok",
+   "title": "1 · BIOFEEDBACK",
+   "lines": [
+    "retrain the pelvic floor to relax and push"
+   ]
+  },
+  {
+   "id": "dd_tx_1_0",
+   "x": 1077,
+   "y": 1290,
+   "w": 232,
+   "h": 188,
+   "kind": "warn",
+   "title": "2 · Rectocele repair",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_rf",
+   "path": "M677.0 88V113H161.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_sec",
+   "path": "M677.0 88V113H433.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_pri",
+   "path": "M677.0 88V113H949.0V138"
+  },
+  {
+   "from": "g_pri",
+   "to": "t_ref",
+   "from_dx": 122
+  },
+  {
+   "from": "sec_pres_0_0",
+   "to": "sec_pres_1_0"
+  },
+  {
+   "from": "rf_inv_0_0",
+   "to": "rf_inv_1_0"
+  },
+  {
+   "from": "sec_inv_0_0",
+   "to": "sec_inv_1_0"
+  },
+  {
+   "from": "dd_inv_0_0",
+   "to": "dd_inv_1_0"
+  },
+  {
+   "from": "sec_tx_0_0",
+   "to": "sec_tx_1_0"
+  },
+  {
+   "from": "fn_tx_0_0",
+   "to": "fn_tx_1_0"
+  },
+  {
+   "from": "fn_tx_1_0",
+   "to": "fn_tx_2_0"
+  },
+  {
+   "from": "fn_tx_2_0",
+   "to": "fn_tx_3_0"
+  },
+  {
+   "from": "st_tx_0_0",
+   "to": "st_tx_1_0"
+  },
+  {
+   "from": "dd_tx_0_0",
+   "to": "dd_tx_1_0"
+  },
+  {
+   "from": "rf_head_0_0",
+   "to": "rf_pres_0_0"
+  },
+  {
+   "from": "rf_pres_0_0",
+   "to": "rf_inv_0_0"
+  },
+  {
+   "from": "rf_inv_1_0",
+   "to": "rf_tx_0_0"
+  },
+  {
+   "from": "g_rf",
+   "to": "rf_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "sec_head_0_0",
+   "to": "sec_pres_0_0"
+  },
+  {
+   "from": "sec_pres_1_0",
+   "to": "sec_inv_0_0"
+  },
+  {
+   "from": "sec_inv_1_0",
+   "to": "sec_tx_0_0"
+  },
+  {
+   "from": "g_sec",
+   "to": "sec_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "fn_head_0_0",
+   "to": "fn_pres_0_0"
+  },
+  {
+   "from": "fn_pres_0_0",
+   "to": "fn_inv_0_0"
+  },
+  {
+   "from": "fn_inv_0_0",
+   "to": "fn_tx_0_0"
+  },
+  {
+   "from": "g_pri",
+   "to": "fn_head_0_0",
+   "from_dx": -244,
+   "label": "Rome IV, no red flag",
+   "label_at": [
+    705.0,
+    394
+   ]
+  },
+  {
+   "from": "st_head_0_0",
+   "to": "st_pres_0_0"
+  },
+  {
+   "from": "st_pres_0_0",
+   "to": "st_inv_0_0"
+  },
+  {
+   "from": "st_inv_0_0",
+   "to": "st_tx_0_0"
+  },
+  {
+   "from": "t_ref",
+   "to": "st_head_0_0",
+   "from_dx": -122,
+   "label": "SLOW on transit study",
+   "label_at": [
+    949.0,
+    394
+   ]
+  },
+  {
+   "from": "dd_head_0_0",
+   "to": "dd_pres_0_0"
+  },
+  {
+   "from": "dd_pres_0_0",
+   "to": "dd_inv_0_0"
+  },
+  {
+   "from": "dd_inv_1_0",
+   "to": "dd_tx_0_0"
+  },
+  {
+   "from": "t_ref",
+   "to": "dd_head_0_0",
+   "from_dx": 122,
+   "label": "can't EXPEL",
+   "label_at": [
+    1193.0,
+    394
+   ]
+  }
+ ],
+ "panels": []
+}

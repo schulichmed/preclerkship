@@ -1,0 +1,401 @@
+{
+ "name": "adult screening overview",
+ "title": "Adult screening decision chart for a healthy adult at a periodic health encounter: smoking and lung cancer, lipids and diabetes by age and risk, then the average-risk cancer programs (colorectal, breast, cervical) with who is in, the test and interval, and who leaves for a high-risk route; abdominal aortic aneurysm and bone density from 65, no routine PSA",
+ "col_w": 232,
+ "root": {
+  "title": "Healthy adult at a periodic health encounter (PHE): WHAT do I screen for, WHEN, and with WHAT?",
+  "lines": [
+   "stable (airway, breathing, circulation + vitals) → history: risk factors → exam: body mass index (BMI), blood pressure (BP), heart rate",
+   "tests chosen by RISK, not a fixed panel: will the result CHANGE MANAGEMENT? (Choosing Wisely)",
+   "screen with a very SENSITIVE test (negative rules OUT), confirm with a very SPECIFIC one (positive rules IN)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_r",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "RISK FACTORS + CHRONIC DISEASE",
+   "lines": [
+    "by age, earlier if at higher risk",
+    "from 65: bone density, aortic aneurysm → see the OLDER ADULT chart"
+   ]
+  },
+  {
+   "id": "g_c",
+   "cols": [
+    3,
+    5
+   ],
+   "title": "CANCER: AVERAGE risk and NO symptoms?",
+   "lines": [
+    "yes → the program below · symptoms or HIGH risk → out of it (red / amber boxes)"
+   ]
+  }
+ ],
+ "pres": [
+  {
+   "id": "p_r",
+   "group": "g_r",
+   "title": "Ask at every PHE",
+   "lines": [
+    "• poverty: \"trouble making ends meet at the end of the month?\"",
+    "• alcohol + drugs · mood + stressors: see the ANXIETY AND STRESS chart",
+    "• exercise + diet: SEDENTARISM is always a risk; BMI alone is not"
+   ]
+  },
+  {
+   "id": "p_c",
+   "group": "g_c",
+   "title": "Programs for the ASYMPTOMATIC only",
+   "lines": [
+    "• symptoms → investigate them, don't screen",
+    "• high risk → its own route, earlier or more often",
+    "• prostate: NO routine prostate-specific antigen (PSA) · shared decision from 40 if Black or family history"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "who",
+  "test",
+  "next"
+ ],
+ "row_names": {
+  "pres": "ASK",
+  "who": "WHO + WHEN",
+  "test": "TEST",
+  "next": "RESULT → NEXT"
+ },
+ "columns": [
+  {
+   "id": "sm",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Smoking + lung cancer",
+      [
+       "ask every adult"
+      ]
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Smokes? Every PHE",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "LUNG: age 55–74",
+      [
+       "• ≥ 30 pack-years",
+       "• smoking now, or quit < 15 years"
+      ]
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "w",
+      "Low-dose CT (LDCT) EVERY YEAR",
+      []
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "ok",
+      "Every smoker: the 5 A's",
+      [
+       "• Ask, Advise to quit, Assess readiness",
+       "• Assist: nicotine replacement",
+       "• Arrange follow-up ≤ 1 week after quit date"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "li",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Lipids",
+      [
+       "high cholesterol → heart disease, stroke"
+      ]
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "MEN ≥ 40",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "WOMEN ≥ 50 or postmenopausal",
+      [
+       "~earlier if higher risk: diabetes, some ethnic groups"
+      ]
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "w",
+      "NON-fasting lipid panel",
+      [
+       "• total, LDL, HDL, non-HDL cholesterol",
+       "• triglycerides"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "Estimate risk: Framingham",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Normal → repeat every 5 YEARS",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dm",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Type 2 diabetes",
+      []
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Age ≥ 40: every 3 YEARS",
+      [
+       "every 6–12 months if risk factors"
+      ]
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "w",
+      "Fasting plasma glucose (FPG) or HbA1c",
+      []
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "ok",
+      "Normal → rescreen as due",
+      [
+       "FPG < 5.6 mmol/L · A1c < 5.5%"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "At risk or PREDIABETES → rescreen MORE OFTEN",
+      [
+       "FPG 5.6–6.9 · A1c 5.5–6.4%"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "DIABETES",
+      [
+       "FPG > 7.0 · A1c > 6.5%"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cr",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Colorectal cancer (CRC)",
+      []
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Age 50–74, average risk",
+      []
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "w",
+      "Fecal immunochemical test (FIT) every 2 YEARS",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "OR a scope every 10 YEARS",
+      [
+       "flexible sigmoidoscopy or colonoscopy"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "bad",
+      "OUT of the average-risk program",
+      [
+       "• prior CRC or adenomatous polyps, inflammatory bowel disease",
+       "• symptoms: bleeding, anemia, bowel change",
+       "• family: start 10 years before a 1st-degree relative's age at diagnosis"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "br",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Breast cancer",
+      []
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Age 40–74, average risk",
+      [
+       "younger: more false positives (dense breasts)"
+      ]
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "w",
+      "Mammogram every 2 YEARS",
+      []
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "warn",
+      "HIGH risk: 30–69, EVERY YEAR",
+      [
+       "• mammogram ± MRI ± ultrasound",
+       "• BRCA1/2 or other mutation, or a carrier's 1st-degree relative",
+       "• personal/family breast or ovarian cancer, chest radiation < 30"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cx",
+   "colour": "olive",
+   "head": [
+    [
+     [
+      "h",
+      "Cervical cancer",
+      []
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Age ≥ 25, has a cervix, EVER sexually active",
+      []
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "w",
+      "Human papillomavirus (HPV) test every 5 YEARS",
+      [
+       "cervical swab for high-risk types: replaced the Pap test"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "warn",
+      "IMMUNOCOMPROMISED → every 3 years",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "A positive result: see the CERVICAL SCREENING chart",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

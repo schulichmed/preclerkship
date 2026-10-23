@@ -1,0 +1,373 @@
+{
+ "title": "Drugs in rheumatology as a decision: steroids and NSAIDs relieve symptoms fast but do not stop joint damage; conventional DMARDs and then biologics modify the disease; each card gives when to choose it, what to avoid and what to watch",
+ "root": "Treating inflammatory arthritis · relieve it now, modify it early",
+ "width": 1480,
+ "legend": [
+  {
+   "chip": "fast",
+   "kind": "good",
+   "label": "works in days"
+  },
+  {
+   "chip": "slow",
+   "kind": "warn",
+   "label": "weeks before it works"
+  },
+  {
+   "chip": "teratogenic",
+   "kind": "bad",
+   "label": "avoid in pregnancy"
+  },
+  {
+   "chip": "monthly blood work",
+   "kind": "plain",
+   "label": "monitoring"
+  }
+ ],
+ "groups": [
+  {
+   "title": "Steroids: prednisone",
+   "desc": "Non-specific anti-inflammatory, works rapidly. Good short term, not long term: a BRIDGE until steroid-sparing drugs start. Dose depends on the condition.",
+   "color": "secr",
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "High dose: ~1 mg/kg",
+       "chips": [
+        [
+         "fast",
+         "good"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "life- or organ-threatening: anti-neutrophil cytoplasmic antibody (ANCA) vasculitis · lupus nephritis · inflammatory myositis · giant cell arteritis",
+         "kind": "ok"
+        },
+        {
+         "label": "Emergency:",
+         "text": "intravenous (IV) methylprednisolone 1 g daily × 3 days (pulse) first, e.g. giant cell arteritis with vision loss",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Medium dose",
+       "chips": [
+        [
+         "fast",
+         "good"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "flare without organ involvement · rheumatoid arthritis (RA) flare 20-40 mg, taper as the DMARD starts · polymyalgia rheumatica 15-20 mg, slow taper · acute gout 25-30 mg × 3 days, taper 5 mg every 3 days",
+         "kind": "ok"
+        }
+       ]
+      },
+      {
+       "name": "Low dose: 5 mg or less",
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "chronic disease that cannot come off steroids or tolerate steroid-sparing drugs",
+         "kind": "ok"
+        }
+       ]
+      },
+      {
+       "name": "Intra-articular injection",
+       "agents": "e.g. triamcinolone",
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "only a few joints, or weight-bearing joints · fewer systemic effects",
+         "kind": "ok"
+        },
+        {
+         "label": "Avoid:",
+         "text": "septic joint (wait for a negative culture) · cellulitis or psoriatic plaque over it · prosthetic joint · severe low platelets or bleeding disorder · anesthetic allergy",
+         "kind": "bad"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "label": "Avoid:",
+     "text": "diabetes · cardiovascular disease · osteoporosis · recurrent infections · glaucoma or cataracts",
+     "kind": "bad"
+    },
+    {
+     "label": "Watch:",
+     "text": "weight gain · infection · osteoporosis · avascular necrosis · high blood pressure and sugar · cataracts · proximal myopathy",
+     "kind": "warn"
+    }
+   ]
+  },
+  {
+   "title": "NSAIDs and analgesics",
+   "desc": "Non-steroidal anti-inflammatory drugs (NSAIDs) relieve pain and swelling, but are NOT disease-modifying: they do not stop RA progressing or delay erosions.",
+   "color": "rose",
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Non-selective NSAIDs",
+       "agents": "ibuprofen, naproxen, meloxicam, diclofenac, indomethacin",
+       "moa": "Reversibly block cyclooxygenase (COX)-1 and COX-2 → ↓ prostaglandins. Efficacy similar: try another if one fails.",
+       "chips": [
+        [
+         "fast",
+         "good"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "osteoarthritis · RA · psoriatic arthritis · ankylosing spondylitis · acute gout · pseudogout",
+         "kind": "ok"
+        },
+        {
+         "label": "Avoid:",
+         "text": "cardiovascular, gastrointestinal (GI) or renal disease · anticoagulants · 3rd trimester (closes the ductus arteriosus)",
+         "kind": "bad"
+        },
+        {
+         "label": "Watch:",
+         "text": "hypertension, myocardial infarction, stroke · gastritis, peptic ulcer · renal insufficiency",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "COX-2 selective: celecoxib",
+       "moa": "Spares the COX-1 prostaglandins that protect the stomach.",
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "an NSAID is needed but GI risk is a worry: LESS GI toxicity",
+         "kind": "ok"
+        },
+        {
+         "label": "Watch:",
+         "text": "otherwise the same risks",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Acetaminophen",
+       "agents": "up to 3 g a day",
+       "moa": "Analgesic, NOT anti-inflammatory.",
+       "lines": [
+        {
+         "label": "Choose when:",
+         "text": "osteoarthritis · mechanical back pain · regional pain",
+         "kind": "ok"
+        },
+        {
+         "label": "Watch:",
+         "text": "liver disease: max 2 g a day. Otherwise minimal side effects",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Opioids",
+       "lines": [
+        {
+         "label": "Avoid:",
+         "text": "hardly ever used: they do not treat inflammation · cognition, constipation, dependence, misuse",
+         "kind": "bad"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Conventional DMARDs",
+   "desc": "Disease-modifying anti-rheumatic drugs (DMARDs) prevent joint damage. Treat EARLY (within 3 months), AGGRESSIVELY (triple therapy beats one drug) and to TARGET (remission), adjusting every 3-6 months.",
+   "color": "sens",
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Methotrexate",
+       "star": true,
+       "agents": "20-25 mg by mouth or subcutaneous, WEEKLY",
+       "chips": [
+        [
+         "slow: 6-8 wk",
+         "warn"
+        ],
+        [
+         "teratogenic",
+         "bad"
+        ],
+        [
+         "monthly blood work",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Watch:",
+         "text": "GI · liver · marrow · infection · acute pneumonitis · mouth ulcers, hair loss",
+         "kind": "warn"
+        },
+        {
+         "label": "Avoid:",
+         "text": "pregnancy · alcohol · sulfa antibiotics. Give folic acid 5 mg weekly",
+         "kind": "bad"
+        }
+       ]
+      },
+      {
+       "name": "Hydroxychloroquine",
+       "agents": "200-400 mg daily",
+       "chips": [
+        [
+         "slow: 6-12 wk",
+         "warn"
+        ],
+        [
+         "safe in pregnancy",
+         "good"
+        ],
+        [
+         "no blood work",
+         "good"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Watch:",
+         "text": "retinal toxicity (rare): ANNUAL EYE EXAM · no myelosuppression",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Sulfasalazine",
+       "agents": "500-1,000 mg daily, up to 2 g",
+       "chips": [
+        [
+         "slow: 6-8 wk",
+         "warn"
+        ],
+        [
+         "safe in pregnancy",
+         "good"
+        ],
+        [
+         "monthly blood work",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Watch:",
+         "text": "headache · GI · liver · marrow (aplastic anemia) · reversible oligospermia",
+         "kind": "warn"
+        },
+        {
+         "label": "Avoid:",
+         "text": "sulfa allergy. Screen for G6PD deficiency",
+         "kind": "bad"
+        }
+       ]
+      },
+      {
+       "name": "Leflunomide",
+       "agents": "10-20 mg daily",
+       "chips": [
+        [
+         "slow: 6-8 wk",
+         "warn"
+        ],
+        [
+         "teratogenic",
+         "bad"
+        ],
+        [
+         "monthly blood work",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Watch:",
+         "text": "HYPERTENSION (check at baseline) · GI · liver · marrow · neuropathy · pneumonitis",
+         "kind": "warn"
+        },
+        {
+         "label": "Avoid:",
+         "text": "pregnancy (cholestyramine washout) · alcohol",
+         "kind": "bad"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "label": "Incomplete response:",
+     "text": "methotrexate by mouth → subcutaneous · add leflunomide · add a biologic",
+     "kind": "ink"
+    }
+   ]
+  },
+  {
+   "title": "Biologics",
+   "desc": "Disease-modifying too, but TARGETED at one molecule or cell. Expensive (~$10-20,000 a year), so usually after other DMARDs fail.",
+   "color": "anti",
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Tumour necrosis factor (TNF) inhibitors",
+       "agents": "adalimumab, etanercept (decoy receptor), infliximab (IV), golimumab, certolizumab",
+       "chips": [
+        [
+         "2 wk - 3 mo",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "Avoid:",
+         "text": "active, recent or recurrent infection · heart failure class III-IV · active cancer · multiple sclerosis or a family history of it",
+         "kind": "bad"
+        },
+        {
+         "label": "Watch:",
+         "text": "infections incl. tuberculosis · demyelination · worse heart failure · skin cancer · drug-induced lupus",
+         "kind": "warn"
+        },
+        {
+         "label": "Hold:",
+         "text": "fever · infection · antibiotics · upcoming surgery",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Other targets",
+       "agents": "tocilizumab (interleukin-6) · abatacept (T-cell co-stimulation) · rituximab (B-cell depletion)"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

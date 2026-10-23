@@ -1,0 +1,294 @@
+{
+ "name": "neoplasia overview",
+ "title": "Neoplasia decision chart: a mass is pre-malignant while the basement membrane is intact (dysplasia, carcinoma in situ) and malignant once through it, then staged by how it spread (direct T, lymphatic N, hematogenous M) and graded by differentiation; each column gives what defines it, how it is found and what it means",
+ "col_w": 236,
+ "root": {
+  "title": "A MASS: is it a neoplasm, is it MALIGNANT, and how far has it SPREAD?",
+  "lines": [
+   "describe it first: size, shape, surface/borders, colour, consistency",
+   "a mass is NOT always cancer: it may be a cyst, abscess, blood or fluid"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_p",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "Basement membrane INTACT: PRE-malignant",
+   "lines": [
+    "cannot spread yet"
+   ]
+  },
+  {
+   "id": "g_m",
+   "cols": [
+    2,
+    4
+   ],
+   "title": "THROUGH the basement membrane: MALIGNANT",
+   "lines": [
+    "SPREAD is the one criterion · stage it by HOW it spread: tumour, node, metastasis (TNM)",
+    "GRADE it by how the cells look: well differentiated (I, slower) → poorly or UNDIFFERENTIATED (immunohistochemistry to find the origin)"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "def",
+  "find",
+  "mean"
+ ],
+ "row_names": {
+  "def": "DEFINED BY",
+  "find": "FOUND BY",
+  "mean": "MEANS"
+ },
+ "columns": [
+  {
+   "id": "dy",
+   "colour": "teal",
+   "drop_from": "g_p",
+   "drop_label": "PART of the epithelium",
+   "head": [
+    [
+     [
+      "h",
+      "Dysplasia",
+      [
+       "mild → severe"
+      ]
+     ]
+    ]
+   ],
+   "def": [
+    [
+     [
+      "t",
+      "Disordered growth + maturation",
+      [
+       "• nuclear changes",
+       "• basement membrane intact"
+      ]
+     ]
+    ]
+   ],
+   "find": [
+    [
+     [
+      "w",
+      "ONLY under a microscope",
+      []
+     ]
+    ]
+   ],
+   "mean": [
+    [
+     [
+      "warn",
+      "Can turn into cancer over time",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cis",
+   "colour": "purple",
+   "drop_from": "g_p",
+   "drop_label": "FULL thickness",
+   "head": [
+    [
+     [
+      "h",
+      "Carcinoma in situ",
+      [
+       "= HIGH-GRADE dysplasia · stage Tis"
+      ]
+     ]
+    ]
+   ],
+   "def": [
+    [
+     [
+      "t",
+      "Fills the ENTIRE epithelial thickness",
+      [
+       "pushes on an INTACT basement membrane"
+      ]
+     ]
+    ]
+   ],
+   "find": [
+    [
+     [
+      "w",
+      "Microscope: looks like cancer",
+      [
+       "but has NOT invaded normal tissue"
+      ]
+     ]
+    ]
+   ],
+   "mean": [
+    [
+     [
+      "bad",
+      "The highest-risk precursor",
+      [
+       "untreated, most become INVASIVE"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "t",
+   "colour": "orange",
+   "drop_from": "g_m",
+   "drop_label": "local",
+   "head": [
+    [
+     [
+      "h",
+      "Direct spread: T",
+      [
+       "invades ADJACENT structures"
+      ]
+     ]
+    ]
+   ],
+   "def": [
+    [
+     [
+      "t",
+      "T = the primary tumour",
+      [
+       "• T0: none",
+       "• T1–T4: size + extent"
+      ]
+     ]
+    ]
+   ],
+   "find": [
+    [
+     [
+      "w",
+      "Exam, imaging, pathology report",
+      []
+     ]
+    ]
+   ],
+   "mean": [
+    [
+     [
+      "ok",
+      "T only, N0 M0 → STAGE I",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "n",
+   "colour": "blue",
+   "drop_from": "g_m",
+   "drop_label": "lymphatics",
+   "head": [
+    [
+     [
+      "h",
+      "Lymphatic spread: N",
+      [
+       "into lymph vessels + nodes"
+      ]
+     ]
+    ]
+   ],
+   "def": [
+    [
+     [
+      "t",
+      "N = the nodes",
+      [
+       "• N0: none",
+       "• N1–N3: degree of node involvement"
+      ]
+     ]
+    ]
+   ],
+   "find": [
+    [
+     [
+      "w",
+      "e.g. lung cancer in the nodes",
+      [
+       "• chest fullness, short of breath",
+       "• ↓ breath sounds; feel the SUPRACLAVICULAR fossa",
+       "• CT, or bronchoscopy + node biopsy"
+      ]
+     ]
+    ]
+   ],
+   "mean": [
+    [
+     [
+      "warn",
+      "LOTS of nodes can mean STAGE IV",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "m",
+   "colour": "magenta",
+   "drop_from": "g_m",
+   "drop_label": "bloodstream",
+   "head": [
+    [
+     [
+      "h",
+      "Hematogenous spread: M",
+      [
+       "through the blood, body-wide"
+      ]
+     ]
+    ]
+   ],
+   "def": [
+    [
+     [
+      "t",
+      "M = distant metastasis",
+      [
+       "• M0: none",
+       "• M1: present (type or site)"
+      ]
+     ]
+    ]
+   ],
+   "find": [
+    [
+     [
+      "w",
+      "e.g. colon cancer → LUNG nodules",
+      [
+       "via the veins, through the liver"
+      ]
+     ]
+    ]
+   ],
+   "mean": [
+    [
+     [
+      "bad",
+      "STAGE IV: usually INCURABLE",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,517 @@
+{
+ "name": "first trimester bleeding overview",
+ "title": "Bleeding in early pregnancy: ultrasound read against beta-hCG decides whether the pregnancy is in the uterus and viable, sorting it into threatened, open-cervix or missed miscarriage, molar pregnancy, pregnancy of unknown location or ectopic; each column gives presentation, numbered investigations and treatment in order",
+ "col_w": 214,
+ "root": {
+  "title": "Bleeding in early pregnancy: is it IN the uterus, and is it VIABLE?",
+  "lines": [
+   "every one: vitals · complete blood count · group and screen · quantitative beta-hCG (β-hCG) · transvaginal ultrasound",
+   "Rh NEGATIVE + bleeding → Rh immunoglobulin · send any tissue passed to pathology"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_sa",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "Pregnancy IN the uterus: MISCARRIAGE",
+   "lines": [
+    "the CERVIX (open or closed) and the FETAL HEART decide the type"
+   ]
+  },
+  {
+   "id": "g_gtd",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "'Snow storm' or cysts",
+   "lines": [
+    "abnormal trophoblast"
+   ]
+  },
+  {
+   "id": "g_out",
+   "cols": [
+    4,
+    5
+   ],
+   "title": "NOTHING in the uterus: β-hCG decides",
+   "lines": [
+    "pain + bleeding + positive β-hCG = ECTOPIC until proven otherwise (an IUD too)"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "thr",
+   "colour": "teal",
+   "drop_label": "os CLOSED, heart +",
+   "head": [
+    [
+     [
+      "h",
+      "Threatened",
+      [
+       "cervix CLOSED · heart PRESENT"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Bleeding ± cramps",
+      [
+       "nothing passed"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Ultrasound",
+      [
+       "fetal heart present: still viable"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Expectant",
+      [
+       "• treat bacterial vaginosis if found",
+       "~• 43% still go on to miscarry"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "NO progesterone",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "opn",
+   "colour": "blue",
+   "drop_label": "os OPEN",
+   "head": [
+    [
+     [
+      "h",
+      "Inevitable · incomplete · complete",
+      [
+       "cervix OPEN"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Bleeding + cramps",
+      [
+       "• inevitable: nothing passed yet",
+       "• incomplete: partly passed",
+       "• complete: all passed"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Speculum",
+      [
+       "tissue at the os"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Ultrasound",
+      [
+       "retained products? (incomplete)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Remove tissue at the os",
+      [
+       "then expectant (91% complete), medical or surgical"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "FEVER: septic",
+      [
+       "IV broad-spectrum antibiotics + dilation and curettage (D&C)"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mis",
+   "colour": "purple",
+   "drop_label": "os CLOSED, heart −",
+   "head": [
+    [
+     [
+      "h",
+      "Missed",
+      [
+       "cervix CLOSED · NO heart",
+       "non-viable pregnancy retained"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "± bleeding",
+      [
+       "no symptoms, nothing passed"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · DIAGNOSTIC of non-viability",
+      [
+       "• crown-rump length > 7 mm, no heartbeat",
+       "• mean sac diameter ≥ 25 mm, no embryo"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Below those: SUSPICIOUS",
+      [
+       "→ rescan before calling it"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Expectant (76%), medical or surgical",
+      [
+       "her choice: see the panel"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mol",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Molar pregnancy",
+      [
+       "complete: 46, all paternal, NO fetus",
+       "partial: 69 (triploid), fetus possible"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Bleeding · uterus LARGE for dates",
+      [
+       "• hyperemesis",
+       "• early pre-eclampsia",
+       "• hyperthyroid (complete)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · β-hCG MARKEDLY ↑",
+      [
+       "partial: low to normal"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Ultrasound",
+      [
+       "• complete: 'snow storm', no fetus",
+       "• partial: cysts WITH a fetus"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Suction curettage",
+      [
+       "then serial β-hCG to baseline"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "β-hCG stays HIGH",
+      [
+       "invasive mole or CHORIOCARCINOMA (lungs first) → chemotherapy"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pul",
+   "colour": "slate",
+   "drop_label": "nothing seen",
+   "head": [
+    [
+     [
+      "h",
+      "Pregnancy of unknown location",
+      [
+       "positive β-hCG, nothing seen in or out of the uterus"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Bleeding ± pain",
+      [
+       "could still be viable, failing or ectopic"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Repeat β-hCG in 48 h",
+      [
+       "ONE value never settles it"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Discriminatory zone",
+      [
+       "above ~1500–3000 a sac SHOULD be seen on transvaginal ultrasound"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Rises ≥ 53% in 48 h",
+      [
+       "likely viable intrauterine pregnancy → rescan"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Falls",
+      [
+       "• failing pregnancy → follow to < 5",
+       "~• a slow fall can still be an ectopic"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Above the zone, uterus EMPTY",
+      [
+       "no tissue passed → ECTOPIC"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ect",
+   "colour": "orange",
+   "drop_label": "adnexal mass",
+   "head": [
+    [
+     [
+      "h",
+      "Ectopic pregnancy",
+      [
+       "most in the fallopian tube",
+       "leading cause of early pregnancy death"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Pain + amenorrhea + bleeding",
+      [
+       "unstable: shoulder-tip pain, lightheaded, orthostatic"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Risk",
+      [
+       "• previous ectopic",
+       "• tubal surgery or sterilization",
+       "• IUD",
+       "• in vitro fertilization"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · β-hCG above the zone + EMPTY uterus",
+      [
+       "• adnexal mass",
+       "• 'ring of fire'",
+       "• free fluid"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "A normal β-hCG rise does NOT exclude it",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · UNSTABLE or ruptured → SURGERY",
+      [
+       "salpingectomy or salpingostomy"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Stable, unruptured → METHOTREXATE",
+      [
+       "• 50 mg/m² IM once",
+       "• β-hCG must fall 15% from day 4 → 7, else repeat"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "NO methotrexate if ANY of these → SURGERY instead",
+      [
+       "• β-hCG > 5000",
+       "• fetal heart activity",
+       "• an intrauterine pregnancy",
+       "• breastfeeding"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · Expectant",
+      [
+       "• β-hCG falling AND < 200",
+       "• mass < 3.5 cm",
+       "• no symptoms"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Managing a miscarriage: her choice",
+   "items": [
+    "EXPECTANT up to 13+6 weeks: most complete within 2 weeks",
+    "MEDICAL up to 12+6: misoprostol 800 mcg vaginally (the one indicated for miscarriage in Canada) · mifepristone first raises success but is approved for abortion only",
+    "SURGICAL: D&C, 95–100% successful"
+   ]
+  },
+  {
+   "title": "What to tell her",
+   "items": [
+    "about half of miscarriages are chromosomal: trisomy 16 commonest",
+    "3 or more losses → work-up + medical genetics"
+   ]
+  }
+ ]
+}

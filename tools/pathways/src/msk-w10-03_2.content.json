@@ -1,0 +1,335 @@
+{
+ "name": "nerve injury overview",
+ "title": "Nerve injury: after ruling out a tendon or blood-flow cause, localize the lesion (radiculopathy versus mononeuropathy) from the pattern of sensory loss and weakness, then grade it by the Seddon classification (neurapraxia, axonotmesis, neurotmesis), which predicts recovery; electrodiagnostic studies confirm, localize and grade",
+ "col_w": 236,
+ "root": {
+  "title": "Numbness, tingling or weakness: is it a NERVE, WHERE is it, HOW BAD is it?",
+  "lines": [
+   "first exclude a tendon (weakness) or poor blood flow (numbness) · TRUE sensory loss is always neurogenic: central or peripheral?",
+   "negative symptoms: numbness, weakness, lost reflexes · positive: pain, paresthesia (tingling)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_where",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "WHERE: root or named nerve?",
+   "lines": [
+    "the map of the numbness and WHICH muscles are weak decide"
+   ]
+  },
+  {
+   "id": "g_bad",
+   "cols": [
+    2,
+    4
+   ],
+   "title": "HOW BAD: Seddon grade",
+   "lines": [
+    "which layer is cut decides recovery"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "CLINICAL CLUES",
+  "inv": "ELECTRODIAGNOSIS",
+  "tx": "EXAMPLE · RECOVERY"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "rad",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Radiculopathy",
+      [
+       "spinal nerve ROOT",
+       "compressed in the intervertebral foramen"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Neck or back pain radiating down the limb",
+      [
+       "• DERMATOME, fuzzy borders",
+       "• MYOTOME weakness + reflex loss",
+       "• eased by taking tension off (arm overhead)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Electromyography (EMG): one ROOT's muscles",
+      [
+       "• across several named nerves",
+       "• paraspinals abnormal"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "Numb thumb → C6",
+      [
+       "C6 dermatome: lateral arm, forearm, thumb",
+       "• biceps weak, lateral forearm numb"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Foot drop → L5",
+      [
+       "gluteus medius, tibialis posterior, paraspinals also abnormal"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mono",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Mononeuropathy",
+      [
+       "one NAMED nerve",
+       "compressed at a typical site"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Well-circumscribed patch, CLEAR borders",
+      [
+       "• weak in THAT nerve's muscles only",
+       "• not same-root muscles of other nerves",
+       "• worse leaning, driving, typing"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "EMG: that nerve's muscles only",
+      [
+       "paraspinals normal"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "Numb thumb → carpal tunnel",
+      [
+       "median nerve territory",
+       "• abductor pollicis brevis weak (C8 root)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Foot drop → common peroneal",
+      [
+       "at the fibular head: dorsiflexion, toe extension, eversion 0/5"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "npx",
+   "colour": "olive",
+   "head": [
+    [
+     [
+      "h",
+      "Neurapraxia",
+      [
+       "MYELIN only, axon intact",
+       "compression"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Conduction slowed or BLOCKED",
+      [
+       "e.g. Saturday night palsy"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Nerve conduction (NCS): speed ↓ (myelin)",
+      [
+       "EMG: no denervation at rest"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Recovers in WEEKS (6–12)",
+      [
+       "once the cause is removed"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "axo",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Axonotmesis",
+      [
+       "AXON cut, EPINEURIUM intact",
+       "crush, stretch"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Wallerian degeneration",
+      [
+       "axon beyond the injury breaks down",
+       "the intact tube guides regrowth"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "NCS: size ↓ (axon)",
+      [
+       "EMG: denervation at rest, few or no motor units"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Regrows on its own, SLOWLY",
+      [
+       "• 1 mm a day = 1 inch a month",
+       "• repeat studies to follow it"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "nts",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Neurotmesis",
+      [
+       "EPINEURIUM cut",
+       "nerve discontinuous"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "No tube to keep fibres in line",
+      [
+       "regrowing fibres may grow off course"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Looks like axonotmesis at first",
+      [
+       "only recovery, or none, tells them apart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "NO spontaneous recovery",
+      [
+       "no track for the regrowing axons to follow"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Electrodiagnostic studies (EDX) = nerve conduction studies (NCS) + needle electromyography (EMG)",
+   "items": [
+    "NCS: SIZE of the response = axon health · SPEED = myelin health",
+    "EMG: is the muscle quiet at rest (denervated muscle is not)? does it fire on command? which muscle exactly?",
+    "Answers: is it a nerve, where, how bad (myelin or axon, in continuity?), the likely timeline, or a muscle problem (myopathy)",
+    "NOT for musculoskeletal pain (rotator cuff tear) or central nervous system disease (stroke)"
+   ]
+  }
+ ]
+}

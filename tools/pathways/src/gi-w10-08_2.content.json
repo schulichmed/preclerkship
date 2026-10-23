@@ -1,0 +1,403 @@
+{
+ "name": "peptic ulcer and acid-lowering drugs overview",
+ "title": "Peptic ulcer and acid-lowering drugs decision chart: gastric versus duodenal ulcer told apart by pain timing, cause and malignant potential; proton pump inhibitors, H2 blockers and antacids compared by when to choose them, how to take them and what to watch for",
+ "col_w": 236,
+ "root": {
+  "title": "Peptic ulcer disease: WHICH ulcer, and HOW MUCH acid suppression?",
+  "lines": [
+   "an ulcer goes through the whole mucosa (muscularis mucosae too); less is an erosion · acid + pepsin overwhelm the defences",
+   "GASTRITIS behind it: ACUTE from non-steroidal anti-inflammatory drugs (NSAIDs), steroids, alcohol, severe stress (burns, shock, sepsis) · CHRONIC from H. pylori (commonest), autoimmune, chemical"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ulc",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "THE ULCER: stomach or duodenum?",
+   "lines": [
+    "the TIMING of the pain points the way"
+   ]
+  },
+  {
+   "id": "g_drug",
+   "cols": [
+    2,
+    4
+   ],
+   "title": "THE DRUG: how much acid suppression?",
+   "lines": [
+    "strongest to weakest: PPI → H2 blocker → antacid"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "WHEN",
+  "inv": "CONFIRM / TAKE",
+  "tx": "TREAT / WATCH"
+ },
+ "columns": [
+  {
+   "id": "gu",
+   "colour": "teal",
+   "drop_label": "pain DURING a meal",
+   "head": [
+    [
+     [
+      "h",
+      "Gastric ulcer",
+      [
+       "lesser curvature, antrum, pylorus",
+       "↓ DEFENCES"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Burning pain DURING a meal",
+      [
+       "• older, men = women",
+       "• NSAIDs more than H. pylori"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Endoscopy",
+      [
+       "more sensitive than a barium upper GI series, and biopsies"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "2 · ALWAYS biopsy + scope to healing",
+      [
+       "CAN be malignant: oval, irregular edge, HEAPED-UP margins, folds stop short"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "PPI",
+      [
+       "heals the mucosa"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "H. pylori → antibiotics",
+      [
+       "PPI is part of the regimen"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "↑ defences: prostaglandin analogue",
+      [
+       "more mucus + bicarbonate"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "du",
+   "colour": "purple",
+   "drop_label": "pain 2–3 h AFTER",
+   "head": [
+    [
+     [
+      "h",
+      "Duodenal ulcer",
+      [
+       "first part of the duodenum",
+       "↑ ACID DAMAGE"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Pain 2–3 h AFTER a meal",
+      [
+       "• RELIEVED by eating",
+       "• any age, more in men",
+       "• H. pylori more than NSAIDs"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Endoscopy",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Almost NEVER malignant",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "H. pylori → antibiotics",
+      [
+       "PPI is part of the regimen"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "PPI",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ppi",
+   "colour": "blue",
+   "drop_label": "heal it",
+   "head": [
+    [
+     [
+      "h",
+      "Proton pump inhibitor (PPI)",
+      [
+       "'-prazole': IRREVERSIBLY blocks the H+/K+ ATPase",
+       "the LAST step, so the strongest"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Choose when",
+      [
+       "• ulcer, gastroesophageal reflux (GERD), erosive esophagitis, Barrett's",
+       "• H. pylori regimen, Zollinger-Ellison",
+       "• stress ulcer prevention"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "30–60 min BEFORE breakfast",
+      [
+       "pumps ↑ after fasting"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Severe liver disease",
+      [
+       "adjust the dose (CYP metabolism)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "CLOPIDOGREL",
+      [
+       "both use CYP2C19: ↓ clopidogrel effect, ↑ cardiac events"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Long term",
+      [
+       "• infection, C. difficile",
+       "• ↓ B12, Mg, Ca: fractures",
+       "• fundic gland polyps"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "TAPER to stop",
+      [
+       "rebound acid"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "h2",
+   "colour": "orange",
+   "drop_label": "milder",
+   "head": [
+    [
+     [
+      "h",
+      "H2 blocker",
+      [
+       "'-tidine': REVERSIBLY blocks histamine only",
+       "weaker than a PPI"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Choose when",
+      [
+       "• uncomplicated GERD, heartburn, dyspepsia",
+       "• liver disease: NIZATIDINE"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Adjust for kidneys + elderly",
+      [
+       "renally cleared"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "TACHYPHYLAXIS",
+      [
+       "poor long term"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "CIMETIDINE",
+      [
+       "• CYP inhibitor: warfarin, propranolol, benzodiazepines",
+       "• anti-androgen: gynecomastia, ↑ prolactin"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Crosses the blood-brain barrier",
+      [
+       "confusion, dizziness: care in the elderly"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ant",
+   "colour": "magenta",
+   "drop_label": "relief now",
+   "head": [
+    [
+     [
+      "h",
+      "Antacids",
+      [
+       "NEUTRALIZE acid",
+       "fast onset, short action"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Symptom relief only",
+      [
+       "• heartburn, dyspepsia",
+       "• does NOT heal the mucosa"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "AFTER a meal",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "Space other drugs 2 h",
+      [
+       "levothyroxine, bisphosphonates, tetracycline"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "By the salt",
+      [
+       "• magnesium: DIARRHEA",
+       "• aluminum: CONSTIPATION",
+       "• calcium: milk-alkali, hypercalcemia",
+       "• bicarbonate: fluid retention: care in heart failure"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

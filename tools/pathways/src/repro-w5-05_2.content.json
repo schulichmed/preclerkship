@@ -1,0 +1,529 @@
+{
+ "name": "abnormal and post-menopausal bleeding overview",
+ "title": "Abnormal uterine bleeding divided by age: reproductive age split by the exam into structural (PALM) or functional (COEIN) causes, adolescence and perimenopause, and post-menopausal bleeding worked up in three steps to the biopsy report that picks atrophy, hyperplasia or carcinoma; each column gives clues, numbered investigations and treatment in order",
+ "col_w": 222,
+ "root": {
+  "title": "Abnormal uterine bleeding (AUB): divide by AGE first",
+  "lines": [
+   "any change in frequency, duration or amount of flow, or bleeding between cycles",
+   "every one: is she STABLE? vitals first · β-hCG (pregnant: see the FIRST-TRIMESTER BLEEDING chart)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_rep",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "REPRODUCTIVE AGE: does the EXAM find a lesion?",
+   "lines": [
+    "treat the cause; otherwise regulate the bleeding: medicines → minimally invasive (embolization, ablation) → hysterectomy"
+   ]
+  },
+  {
+   "id": "g_age",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "ADOLESCENCE + PERIMENOPAUSE",
+   "lines": [
+    "both: more ANOVULATION"
+   ]
+  },
+  {
+   "id": "g_pmb",
+   "cols": [
+    4,
+    6
+   ],
+   "title": "POST-MENOPAUSAL: any bleeding after 12 months without menses",
+   "lines": [
+    "ENDOMETRIAL CARCINOMA MUST BE EXCLUDED"
+   ]
+  }
+ ],
+ "pres": [
+  {
+   "id": "p_pmb",
+   "group": "g_pmb",
+   "title": "Work up in order",
+   "lines": [
+    "1 · Exam with a SPECULUM: a negative Pap test does not end it",
+    "2 · Transvaginal ultrasound: endometrium < 5 mm is normal",
+    "3 · ENDOMETRIAL BIOPSY if > 5 mm, or bleeding recurs · HYSTEROSCOPY for a focal lesion or a failed biopsy",
+    "• the biopsy report picks the column ↓"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "WORKUP",
+  "clue": "CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "pa",
+   "colour": "teal",
+   "drop_label": "YES: structural",
+   "head": [
+    [
+     [
+      "h",
+      "Structural: PALM",
+      [
+       "Polyp · Adenomyosis · Leiomyoma (fibroid) · Malignancy + hyperplasia"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "The exam finds it",
+      [
+       "• mass at the os",
+       "• ENLARGED uterus (fibroid, adenomyosis)",
+       "• FIXED (cancer)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Ultrasound",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Pap ± swabs · BIOPSY",
+      [
+       "vulva, cervix, endometrium"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Remove the mass",
+      [
+       "~pelvic pain chart: polyp, fibroid, adenomyosis"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "co",
+   "colour": "purple",
+   "drop_label": "NO: functional",
+   "head": [
+    [
+     [
+      "h",
+      "Functional: COEIN",
+      [
+       "Coagulopathy · Ovulatory · Endometrial · Iatrogenic · Not yet classified"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "ANOVULATION: the major cause",
+      [
+       "• stress, weight, exercise",
+       "• thyroid, prolactin",
+       "• polycystic ovary syndrome (PCOS)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Look for",
+      [
+       "• bruising, petechiae",
+       "• galactorrhea, hirsutism, thyroid signs",
+       "• hormones she takes"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · CBC, INR, PTT",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · TSH, prolactin · FSH, LH, estradiol · androgens",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Non-hormonal",
+      [
+       "• iron",
+       "• tranexamic acid (TXA)",
+       "• ibuprofen"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Hormonal",
+      [
+       "• OCP",
+       "• Depo",
+       "• Mirena",
+       "• Visanne",
+       "• GnRH agonist",
+       "• progesterone = a 'lawnmower' for the endometrium"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ad",
+   "colour": "orange",
+   "drop_label": "adolescent",
+   "head": [
+    [
+     [
+      "h",
+      "Adolescence",
+      [
+       "immature axis: 2 years to regular cycles"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Think",
+      [
+       "• COAGULOPATHY: menarche can unmask von Willebrand",
+       "• eating disorder, ++ exercise",
+       "• pregnancy"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Remember the β-hCG",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Mild: iron + reassurance",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Moderate: low-dose OCP",
+      [
+       "the best first line"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Severe: IV estrogen",
+      [
+       "serial hemoglobin, coagulation tests"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pe",
+   "colour": "olive",
+   "drop_label": "perimenopausal",
+   "head": [
+    [
+     [
+      "h",
+      "Perimenopause",
+      [
+       "usually anovulation, but MALIGNANCY is more common"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Can be severe",
+      [
+       "ask about her cycles: one arrest had a hemoglobin of 38"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Remember to BIOPSY",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · UNSTABLE",
+      [
+       "• fluids, ABCs, blood",
+       "• Foley tamponade",
+       "• IV Premarin",
+       "• operating room if it fails"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Stable",
+      [
+       "• estrogen + progesterone, or progesterone",
+       "• TXA",
+       "• avoid invasive surgery"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "at",
+   "colour": "blue",
+   "drop_label": "atrophic",
+   "head": [
+    [
+     [
+      "h",
+      "Atrophy",
+      [
+       "the MOST COMMON cause"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Exam",
+      [
+       "thin, pale, dry vaginal epithelium"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Report: scant atrophic tissue",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "A diagnosis of EXCLUSION",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Local estrogen",
+      [
+       "• vaginal cream, pill or ring",
+       "• nothing if not bothered"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hy",
+   "colour": "magenta",
+   "drop_label": "hyperplasia",
+   "head": [
+    [
+     [
+      "h",
+      "Endometrial hyperplasia",
+      [
+       "a PRECURSOR of carcinoma"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "UNOPPOSED ESTROGEN",
+      [
+       "• obesity",
+       "• PCOS",
+       "• estrogen-only HRT",
+       "• tamoxifen"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "No atypia",
+      [
+       "cancer risk 1–3%"
+      ]
+     ],
+     [
+      "t",
+      "ATYPIA",
+      [
+       "cancer risk 8–29%"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "MEDICAL",
+      [
+       "• progesterone",
+       "• rebiopsy at 3 months"
+      ]
+     ],
+     [
+      "warn",
+      "SURGICAL",
+      [
+       "hysterectomy + tubes, ovaries"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ca",
+   "colour": "brown",
+   "drop_label": "adenocarcinoma",
+   "head": [
+    [
+     [
+      "h",
+      "Endometrial carcinoma",
+      [
+       "#1 gynecologic malignancy"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Type 1 (90%) or type 2",
+      [
+       "• 1: estrogen-driven, like hyperplasia",
+       "• 2: serous, older, atrophic background",
+       "• Lynch syndrome"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Report: adenocarcinoma",
+      [
+       "test for mismatch repair (Lynch)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Hysterectomy + tubes, ovaries",
+      [
+       "stage decides radiation, chemotherapy"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Choosing a hormonal agent",
+   "cols": 2,
+   "items": [
+    "OCP: oral, but daily",
+    "Depo, Mirena: sustained, but an injection or a device",
+    "Lupron: fast and effective, but side effects and cost",
+    "TXA: as needed, cuts how heavy, not how often"
+   ]
+  }
+ ]
+}

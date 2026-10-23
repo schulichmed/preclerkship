@@ -1,0 +1,599 @@
+{
+ "name": "acute abdomen overview",
+ "width": 1068,
+ "title": "Abdominal pain: first decide whether it is an acute surgical abdomen, then sort it into peritonitis (generalized or focal), perforation or ischemic bowel, with obstruction and bleeding sent to their own charts; a non-surgical abdomen is worked through system by system; each column gives presentation, investigations and treatment in order",
+ "kinds": {
+  "per_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "per_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "per_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "perf_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "perf_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "perf_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "isc_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "isc_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "isc_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "sys_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sys_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "sys_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 272,
+   "w": 246,
+   "h": 1032,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 288,
+   "y": 272,
+   "w": 246,
+   "h": 1032,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 536,
+   "y": 272,
+   "w": 246,
+   "h": 1032,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 812,
+   "y": 272,
+   "w": 246,
+   "h": 1032,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 434,
+   "h": 216,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 690,
+   "h": 296,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1026,
+   "h": 270,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 169,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Abdominal pain: is this an ACUTE (SURGICAL) ABDOMEN?",
+   "lines": [
+    "history: timing, severity, location, what makes it worse, gynecologic, sexual, drugs, travel",
+    "exam: vitals · inspect, auscultate, percuss, palpate · pelvic exam · rectal exam · heart and lungs"
+   ]
+  },
+  {
+   "id": "g_sx",
+   "x": 45,
+   "y": 138,
+   "w": 732,
+   "h": 62,
+   "kind": "plain",
+   "title": "YES: perforation, ischemia, obstruction or bleeding",
+   "lines": [
+    "OBSTRUCTION: BOWEL OBSTRUCTION chart · BLEEDING: GI bleeding notes"
+   ]
+  },
+  {
+   "id": "g_no",
+   "x": 817,
+   "y": 138,
+   "w": 236,
+   "h": 62,
+   "kind": "plain",
+   "title": "NO: work through the SYSTEMS",
+   "lines": []
+  },
+  {
+   "id": "per_head_0_0",
+   "x": 45,
+   "y": 280,
+   "w": 236,
+   "h": 114,
+   "kind": "per_h",
+   "title": "Peritonitis",
+   "lines": [
+    "inflamed peritoneum: an EMERGENCY (sepsis)"
+   ]
+  },
+  {
+   "id": "perf_head_0_0",
+   "x": 293,
+   "y": 280,
+   "w": 236,
+   "h": 114,
+   "kind": "perf_h",
+   "title": "Perforation",
+   "lines": [
+    "air OUTSIDE the bowel"
+   ]
+  },
+  {
+   "id": "isc_head_0_0",
+   "x": 541,
+   "y": 280,
+   "w": 236,
+   "h": 114,
+   "kind": "isc_h",
+   "title": "Ischemic bowel",
+   "lines": [
+    "superior mesenteric artery most often",
+    "EMBOLIC (atrial fibrillation, previous heart attack) > thrombotic"
+   ]
+  },
+  {
+   "id": "sys_head_0_0",
+   "x": 817,
+   "y": 280,
+   "w": 236,
+   "h": 114,
+   "kind": "sys_h",
+   "title": "Everything else",
+   "lines": [
+    "most common system first"
+   ]
+  },
+  {
+   "id": "per_pres_0_0",
+   "x": 45,
+   "y": 434,
+   "w": 236,
+   "h": 79,
+   "kind": "per_t",
+   "title": "Severe, CONSTANT pain",
+   "lines": [
+    "gradual or abrupt"
+   ]
+  },
+  {
+   "id": "per_pres_1_0",
+   "x": 45,
+   "y": 535,
+   "w": 236,
+   "h": 115,
+   "kind": "per_w",
+   "title": "Exam",
+   "lines": [
+    "• percussion and SHAKE tenderness",
+    "• rebound tenderness",
+    "• involuntary GUARDING, rigidity"
+   ]
+  },
+  {
+   "id": "perf_pres_0_0",
+   "x": 293,
+   "y": 434,
+   "w": 236,
+   "h": 216,
+   "kind": "perf_t",
+   "title": "Who perforates?",
+   "lines": [
+    "• anti-inflammatories (NSAIDs)",
+    "• peptic ulcer (duodenal > gastric)",
+    "• diverticular disease, chronic constipation",
+    "• weight loss, poor appetite (cancer)"
+   ]
+  },
+  {
+   "id": "isc_pres_0_0",
+   "x": 541,
+   "y": 434,
+   "w": 236,
+   "h": 98,
+   "kind": "isc_t",
+   "title": "SUDDEN severe mid-abdominal pain",
+   "lines": [
+    "• nausea, vomiting",
+    "• EXPLOSIVE diarrhea"
+   ]
+  },
+  {
+   "id": "isc_pres_1_0",
+   "x": 541,
+   "y": 554,
+   "w": 236,
+   "h": 96,
+   "kind": "isc_w",
+   "title": "Exam",
+   "lines": [
+    "• pain OUT OF PROPORTION to the exam",
+    "• fever, fast heart rate, looks unwell"
+   ]
+  },
+  {
+   "id": "sys_pres_0_0",
+   "x": 817,
+   "y": 434,
+   "w": 236,
+   "h": 216,
+   "kind": "sys_t",
+   "title": "Systems, in order",
+   "lines": [
+    "• gastrointestinal, hepatobiliary",
+    "• vascular, intrathoracic",
+    "• genitourinary, gynecologic",
+    "• muscle and soft tissue, skin",
+    "• psychiatric, systemic"
+   ]
+  },
+  {
+   "id": "per_inv_0_0",
+   "x": 45,
+   "y": 690,
+   "w": 236,
+   "h": 173,
+   "kind": "per_w",
+   "title": "1 · Bloods",
+   "lines": [
+    "• hemoglobin, white count, electrolytes, creatinine",
+    "• lipase, bilirubin, liver enzymes, β-hCG"
+   ]
+  },
+  {
+   "id": "per_inv_1_0",
+   "x": 45,
+   "y": 885,
+   "w": 236,
+   "h": 101,
+   "kind": "per_w",
+   "title": "2 · X-ray, CT, ultrasound",
+   "lines": []
+  },
+  {
+   "id": "perf_inv_0_0",
+   "x": 293,
+   "y": 690,
+   "w": 236,
+   "h": 296,
+   "kind": "perf_t",
+   "title": "1 · UPRIGHT chest X-ray",
+   "lines": [
+    "free air under the DIAPHRAGM"
+   ]
+  },
+  {
+   "id": "isc_inv_0_0",
+   "x": 541,
+   "y": 690,
+   "w": 236,
+   "h": 296,
+   "kind": "isc_t",
+   "title": "1 · LACTATE ↑",
+   "lines": [
+    "• inflammatory markers ↑",
+    "• acute kidney injury"
+   ]
+  },
+  {
+   "id": "sys_inv_0_0",
+   "x": 817,
+   "y": 690,
+   "w": 236,
+   "h": 114,
+   "kind": "sys_w",
+   "title": "1 · Bloods",
+   "lines": [
+    "• complete blood count, electrolytes",
+    "• liver enzymes and function, lipase",
+    "• β-hCG, C-reactive protein, lactate, urinalysis"
+   ]
+  },
+  {
+   "id": "sys_inv_1_0",
+   "x": 817,
+   "y": 826,
+   "w": 236,
+   "h": 78,
+   "kind": "sys_w",
+   "title": "2 · Imaging",
+   "lines": [
+    "abdominal or chest X-ray, ultrasound, CT abdomen/pelvis"
+   ]
+  },
+  {
+   "id": "sys_inv_2_0",
+   "x": 817,
+   "y": 926,
+   "w": 236,
+   "h": 60,
+   "kind": "sys_w",
+   "title": "3 · ECG + troponin",
+   "lines": [
+    "intrathoracic causes"
+   ]
+  },
+  {
+   "id": "per_tx_0_0",
+   "x": 45,
+   "y": 1026,
+   "w": 236,
+   "h": 82,
+   "kind": "ok",
+   "title": "1 · IV fluids, nothing by mouth, broad-spectrum antibiotics",
+   "lines": []
+  },
+  {
+   "id": "per_tx_1_0",
+   "x": 45,
+   "y": 1130,
+   "w": 236,
+   "h": 82,
+   "kind": "bad",
+   "title": "GENERALIZED (> 1 quadrant) → prepare for the operating room",
+   "lines": []
+  },
+  {
+   "id": "per_tx_2_0",
+   "x": 45,
+   "y": 1234,
+   "w": 236,
+   "h": 62,
+   "kind": "warn",
+   "title": "FOCAL (1 quadrant) → may be managed without surgery",
+   "lines": []
+  },
+  {
+   "id": "perf_tx_0_0",
+   "x": 293,
+   "y": 1026,
+   "w": 236,
+   "h": 270,
+   "kind": "bad",
+   "title": "SURGERY, by site",
+   "lines": [
+    "• duodenum: Graham patch",
+    "• resection + primary anastomosis",
+    "• severe diverticular: Hartmann's procedure"
+   ]
+  },
+  {
+   "id": "isc_tx_0_0",
+   "x": 541,
+   "y": 1026,
+   "w": 236,
+   "h": 98,
+   "kind": "bad",
+   "title": "1 · Fluids, nothing by mouth, antibiotics → RESECTION",
+   "lines": []
+  },
+  {
+   "id": "isc_tx_1_0",
+   "x": 541,
+   "y": 1146,
+   "w": 236,
+   "h": 150,
+   "kind": "warn",
+   "title": "Small vs large bowel",
+   "lines": [
+    "• SMALL: arterial block, surgery common",
+    "• LARGE: low flow, medical treatment usually works"
+   ]
+  },
+  {
+   "id": "sys_tx_0_0",
+   "x": 817,
+   "y": 1026,
+   "w": 236,
+   "h": 270,
+   "kind": "ok",
+   "title": "Treat the cause found",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_sx",
+   "path": "M549.0 88V113H411.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_no",
+   "path": "M549.0 88V113H935.0V138"
+  },
+  {
+   "from": "per_pres_0_0",
+   "to": "per_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "isc_pres_0_0",
+   "to": "isc_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "per_inv_0_0",
+   "to": "per_inv_1_0"
+  },
+  {
+   "from": "sys_inv_0_0",
+   "to": "sys_inv_1_0"
+  },
+  {
+   "from": "sys_inv_1_0",
+   "to": "sys_inv_2_0"
+  },
+  {
+   "from": "per_tx_0_0",
+   "to": "per_tx_1_0"
+  },
+  {
+   "from": "per_tx_1_0",
+   "to": "per_tx_2_0"
+  },
+  {
+   "from": "isc_tx_0_0",
+   "to": "isc_tx_1_0"
+  },
+  {
+   "from": "per_head_0_0",
+   "to": "per_pres_0_0"
+  },
+  {
+   "from": "per_pres_1_0",
+   "to": "per_inv_0_0"
+  },
+  {
+   "from": "per_inv_1_0",
+   "to": "per_tx_0_0"
+  },
+  {
+   "from": "g_sx",
+   "to": "per_head_0_0",
+   "from_dx": -248,
+   "label": "rigid, guarding",
+   "label_at": [
+    163.0,
+    240
+   ]
+  },
+  {
+   "from": "perf_head_0_0",
+   "to": "perf_pres_0_0"
+  },
+  {
+   "from": "perf_pres_0_0",
+   "to": "perf_inv_0_0"
+  },
+  {
+   "from": "perf_inv_0_0",
+   "to": "perf_tx_0_0"
+  },
+  {
+   "from": "g_sx",
+   "to": "perf_head_0_0",
+   "from_dx": 0,
+   "label": "free air",
+   "label_at": [
+    411.0,
+    240
+   ]
+  },
+  {
+   "from": "isc_head_0_0",
+   "to": "isc_pres_0_0"
+  },
+  {
+   "from": "isc_pres_1_0",
+   "to": "isc_inv_0_0"
+  },
+  {
+   "from": "isc_inv_0_0",
+   "to": "isc_tx_0_0"
+  },
+  {
+   "from": "g_sx",
+   "to": "isc_head_0_0",
+   "from_dx": 248,
+   "label": "pain > exam",
+   "label_at": [
+    659.0,
+    240
+   ]
+  },
+  {
+   "from": "sys_head_0_0",
+   "to": "sys_pres_0_0"
+  },
+  {
+   "from": "sys_pres_0_0",
+   "to": "sys_inv_0_0"
+  },
+  {
+   "from": "sys_inv_2_0",
+   "to": "sys_tx_0_0"
+  },
+  {
+   "from": "g_no",
+   "to": "sys_head_0_0",
+   "from_dx": 0,
+   "label": "no surgical signs",
+   "label_at": [
+    935.0,
+    240
+   ]
+  }
+ ],
+ "panels": []
+}

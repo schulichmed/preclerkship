@@ -1,0 +1,630 @@
+{
+ "name": "diagnosing diabetes overview",
+ "width": 1124,
+ "title": "High glucose: the same cut-offs decide prediabetes or diabetes for both types; below the line sit the grey zone and pre-symptomatic type 1 (autoantibodies), above it the presentation, C-peptide and anti-GAD antibodies separate new-onset type 1 from type 2; each column gives presentation, numbered investigations and treatment in order",
+ "kinds": {
+  "pre_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pre_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "pre_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "t1e_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "t1e_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "t1e_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "t1_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "t1_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "t1_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "t2_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "t2_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "t2_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 424,
+   "w": 260,
+   "h": 916,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 302,
+   "y": 424,
+   "w": 260,
+   "h": 916,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 592,
+   "y": 424,
+   "w": 260,
+   "h": 916,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 854,
+   "y": 424,
+   "w": 260,
+   "h": 916,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 550,
+   "h": 232,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 822,
+   "h": 200,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1062,
+   "h": 270,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 197,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "High glucose: is it DIABETES, and WHICH TYPE?",
+   "lines": [
+    "the same cut-offs for type 1 and type 2: they mark where RETINOPATHY risk rises",
+    "symptoms (thirst, polyuria, weight loss) → ONE abnormal test is enough · none → repeat on ANOTHER day",
+    "acutely ill (heart attack, sepsis, high-dose steroids) → suspect, confirm once recovered"
+   ]
+  },
+  {
+   "id": "g_below",
+   "x": 45,
+   "y": 156,
+   "w": 512,
+   "h": 78,
+   "kind": "plain",
+   "title": "BELOW the line: NOT YET diabetes",
+   "lines": [
+    "grey zone: fasting 6.1–6.9 · 2-h 75 g 7.8–11.0 mmol/L · glycated hemoglobin (A1c) 6.0–6.4%"
+   ]
+  },
+  {
+   "id": "g_dm",
+   "x": 597,
+   "y": 156,
+   "w": 512,
+   "h": 78,
+   "kind": "plain",
+   "title": "AT or ABOVE the line: DIABETES",
+   "lines": [
+    "ANY ONE: fasting ≥ 7.0 · 2-h 75 g or random ≥ 11.1 mmol/L · A1c ≥ 6.5% (adults, NOT if type 1 is suspected)"
+   ]
+  },
+  {
+   "id": "t_type",
+   "x": 597,
+   "y": 274,
+   "w": 512,
+   "h": 78,
+   "kind": "plain",
+   "title": "WHICH TYPE? Usually time and the response to treatment tell",
+   "lines": [
+    "still unsure → C-peptide (is she making insulin?) + anti-glutamic acid decarboxylase (anti-GAD) antibodies"
+   ]
+  },
+  {
+   "id": "pre_head_0_0",
+   "x": 45,
+   "y": 432,
+   "w": 250,
+   "h": 78,
+   "kind": "pre_h",
+   "title": "Prediabetes",
+   "lines": [
+    "impaired fasting glucose (IFG) or impaired glucose tolerance (IGT)"
+   ]
+  },
+  {
+   "id": "t1e_head_0_0",
+   "x": 307,
+   "y": 432,
+   "w": 250,
+   "h": 78,
+   "kind": "t1e_h",
+   "title": "Type 1, stages 1–2",
+   "lines": [
+    "beta-cell autoimmunity, NO symptoms yet"
+   ]
+  },
+  {
+   "id": "t1_head_0_0",
+   "x": 597,
+   "y": 432,
+   "w": 250,
+   "h": 78,
+   "kind": "t1_h",
+   "title": "Type 1: new onset (stage 3)",
+   "lines": [
+    "autoimmune beta-cell loss → ABSOLUTE insulin deficiency"
+   ]
+  },
+  {
+   "id": "t2_head_0_0",
+   "x": 859,
+   "y": 432,
+   "w": 250,
+   "h": 78,
+   "kind": "t2_h",
+   "title": "Type 2",
+   "lines": [
+    "insulin RESISTANCE + RELATIVE deficiency: both present by diagnosis"
+   ]
+  },
+  {
+   "id": "pre_pres_0_0",
+   "x": 45,
+   "y": 550,
+   "w": 250,
+   "h": 232,
+   "kind": "pre_t",
+   "title": "No symptoms",
+   "lines": [
+    "type 2 can sit here for YEARS first"
+   ]
+  },
+  {
+   "id": "t1e_pres_0_0",
+   "x": 307,
+   "y": 550,
+   "w": 250,
+   "h": 232,
+   "kind": "t1e_t",
+   "title": "Often a relative with type 1",
+   "lines": [
+    "• identical twin 50%",
+    "• sibling 5% (no family: 0.4%)"
+   ]
+  },
+  {
+   "id": "t1_pres_0_0",
+   "x": 597,
+   "y": 550,
+   "w": 250,
+   "h": 105,
+   "kind": "t1_t",
+   "title": "ACUTE: polyuria, thirst, weight LOSS",
+   "lines": [
+    "• new bed-wetting, nocturia",
+    "• appetite unchanged"
+   ]
+  },
+  {
+   "id": "t1_pres_1_0",
+   "x": 597,
+   "y": 677,
+   "w": 250,
+   "h": 105,
+   "kind": "bad",
+   "title": "Vomiting · abdominal pain · fast breathing · drowsy",
+   "lines": [
+    "→ diabetic ketoacidosis (DKA): see the COMPLICATIONS chart"
+   ]
+  },
+  {
+   "id": "t2_pres_0_0",
+   "x": 859,
+   "y": 550,
+   "w": 250,
+   "h": 96,
+   "kind": "t2_t",
+   "title": "SLOW: years in the grey zone",
+   "lines": [
+    "• few or no symptoms",
+    "• recent weight GAIN, or stopped exercising"
+   ]
+  },
+  {
+   "id": "t2_pres_1_0",
+   "x": 859,
+   "y": 668,
+   "w": 250,
+   "h": 114,
+   "kind": "t2_w",
+   "title": "Risk",
+   "lines": [
+    "• parent with type 2, previous gestational diabetes",
+    "• Asian, South Asian, Hispanic, Indigenous, African descent"
+   ]
+  },
+  {
+   "id": "pre_inv_0_0",
+   "x": 45,
+   "y": 822,
+   "w": 250,
+   "h": 200,
+   "kind": "pre_w",
+   "title": "1 · Look for metabolic syndrome",
+   "lines": [
+    "• high blood pressure",
+    "• low high-density lipoprotein (HDL), high triglycerides",
+    "• waist-to-hip ratio ↑ (visceral fat)"
+   ]
+  },
+  {
+   "id": "t1e_inv_0_0",
+   "x": 307,
+   "y": 822,
+   "w": 250,
+   "h": 99,
+   "kind": "t1e_w",
+   "title": "1 · COUNT the islet autoantibodies",
+   "lines": [
+    "• 1 alone: no added risk",
+    "• 2 or more: risk climbs with each"
+   ]
+  },
+  {
+   "id": "t1e_inv_1_0",
+   "x": 307.0,
+   "y": 943,
+   "w": 120.0,
+   "h": 79,
+   "kind": "t1e_w",
+   "title": "Stage 1",
+   "lines": [
+    "glucose NORMAL"
+   ]
+  },
+  {
+   "id": "t1e_inv_1_1",
+   "x": 437.0,
+   "y": 943,
+   "w": 120.0,
+   "h": 79,
+   "kind": "t1e_w",
+   "title": "Stage 2",
+   "lines": [
+    "glucose in the GREY ZONE"
+   ]
+  },
+  {
+   "id": "t1_inv_0_0",
+   "x": 597,
+   "y": 822,
+   "w": 250,
+   "h": 88,
+   "kind": "t1_t",
+   "title": "1 · Random glucose ≥ 11.1",
+   "lines": [
+    "+ urine dipstick: glucose AND ketones"
+   ]
+  },
+  {
+   "id": "t1_inv_1_0",
+   "x": 597,
+   "y": 932,
+   "w": 250,
+   "h": 90,
+   "kind": "t1_w",
+   "title": "Fasting glucose, A1c: usually unnecessary",
+   "lines": []
+  },
+  {
+   "id": "t2_inv_0_0",
+   "x": 859,
+   "y": 822,
+   "w": 250,
+   "h": 80,
+   "kind": "t2_t",
+   "title": "1 · Few symptoms → REPEAT the test",
+   "lines": [
+    "on another day"
+   ]
+  },
+  {
+   "id": "t2_inv_1_0",
+   "x": 859,
+   "y": 924,
+   "w": 250,
+   "h": 98,
+   "kind": "t2_w",
+   "title": "2 · Metabolic syndrome as well?",
+   "lines": [
+    "→ even higher cardiovascular risk",
+    "• also ask about sleep apnea"
+   ]
+  },
+  {
+   "id": "pre_tx_0_0",
+   "x": 45,
+   "y": 1062,
+   "w": 250,
+   "h": 270,
+   "kind": "ok",
+   "title": "The TARGET for prevention",
+   "lines": [
+    "see the PREVENTION OF TYPE 2 DIABETES chart"
+   ]
+  },
+  {
+   "id": "t1e_tx_0_0",
+   "x": 307,
+   "y": 1062,
+   "w": 250,
+   "h": 270,
+   "kind": "warn",
+   "title": "Stage 3 = SYMPTOMS",
+   "lines": [
+    "→ treat as new-onset type 1"
+   ]
+  },
+  {
+   "id": "t1_tx_0_0",
+   "x": 597,
+   "y": 1062,
+   "w": 250,
+   "h": 132,
+   "kind": "ok",
+   "title": "1 · INSULIN: basal + bolus",
+   "lines": [
+    "• 3/day: intermediate (NPH) + fast-acting",
+    "• 4/day: long-acting + fast-acting, or a pump",
+    "~lows: see the COMPLICATIONS chart"
+   ]
+  },
+  {
+   "id": "t1_tx_1_0",
+   "x": 597,
+   "y": 1216,
+   "w": 250,
+   "h": 116,
+   "kind": "ok",
+   "title": "2 · Teach: a multidisciplinary team",
+   "lines": [
+    "• glucose 4×/day, every 2–3 h when ill",
+    "• carbohydrate counting",
+    "• pumps, continuous glucose monitors"
+   ]
+  },
+  {
+   "id": "t2_tx_0_0",
+   "x": 859,
+   "y": 1062,
+   "w": 250,
+   "h": 124,
+   "kind": "ok",
+   "title": "1 · Weight, activity, diet",
+   "lines": [
+    "glucose can fall BELOW the line → recheck periodically"
+   ]
+  },
+  {
+   "id": "t2_tx_1_0",
+   "x": 859,
+   "y": 1208,
+   "w": 250,
+   "h": 124,
+   "kind": "warn",
+   "title": "Pancreas too weak: stays high",
+   "lines": [
+    "needs drugs: see the GLUCOSE-LOWERING DRUGS tree"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_below",
+   "path": "M577.0 106V131H301.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_dm",
+   "path": "M577.0 106V131H853.0V156"
+  },
+  {
+   "from": "g_dm",
+   "to": "t_type",
+   "from_dx": 0
+  },
+  {
+   "from": "t1_pres_0_0",
+   "to": "t1_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "t2_pres_0_0",
+   "to": "t2_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "t1e_inv_0_0",
+   "to": "t1e_inv_1_0",
+   "from_dx": -65.0
+  },
+  {
+   "from": "t1e_inv_0_0",
+   "to": "t1e_inv_1_1",
+   "from_dx": 65.0
+  },
+  {
+   "from": "t1_inv_0_0",
+   "to": "t1_inv_1_0"
+  },
+  {
+   "from": "t2_inv_0_0",
+   "to": "t2_inv_1_0"
+  },
+  {
+   "from": "t1_tx_0_0",
+   "to": "t1_tx_1_0"
+  },
+  {
+   "from": "t2_tx_0_0",
+   "to": "t2_tx_1_0"
+  },
+  {
+   "from": "pre_head_0_0",
+   "to": "pre_pres_0_0"
+  },
+  {
+   "from": "pre_pres_0_0",
+   "to": "pre_inv_0_0"
+  },
+  {
+   "from": "pre_inv_0_0",
+   "to": "pre_tx_0_0"
+  },
+  {
+   "from": "g_below",
+   "to": "pre_head_0_0",
+   "from_dx": -131,
+   "label": "grey-zone glucose",
+   "label_at": [
+    170.0,
+    392
+   ]
+  },
+  {
+   "from": "t1e_head_0_0",
+   "to": "t1e_pres_0_0"
+  },
+  {
+   "from": "t1e_pres_0_0",
+   "to": "t1e_inv_0_0"
+  },
+  {
+   "from": "t1e_inv_1_0",
+   "to": "t1e_tx_0_0",
+   "to_dx": -65.0
+  },
+  {
+   "from": "t1e_inv_1_1",
+   "to": "t1e_tx_0_0",
+   "to_dx": 65.0
+  },
+  {
+   "from": "g_below",
+   "to": "t1e_head_0_0",
+   "from_dx": 131,
+   "label": "islet autoantibodies",
+   "label_at": [
+    432.0,
+    392
+   ]
+  },
+  {
+   "from": "t1_head_0_0",
+   "to": "t1_pres_0_0"
+  },
+  {
+   "from": "t1_pres_1_0",
+   "to": "t1_inv_0_0"
+  },
+  {
+   "from": "t1_inv_1_0",
+   "to": "t1_tx_0_0"
+  },
+  {
+   "from": "t_type",
+   "to": "t1_head_0_0",
+   "from_dx": -131,
+   "label": "C-peptide ↓ · anti-GAD +",
+   "label_at": [
+    722.0,
+    392
+   ]
+  },
+  {
+   "from": "t2_head_0_0",
+   "to": "t2_pres_0_0"
+  },
+  {
+   "from": "t2_pres_1_0",
+   "to": "t2_inv_0_0"
+  },
+  {
+   "from": "t2_inv_1_0",
+   "to": "t2_tx_0_0"
+  },
+  {
+   "from": "t_type",
+   "to": "t2_head_0_0",
+   "from_dx": 131,
+   "label": "C-peptide ↑ · anti-GAD −",
+   "label_at": [
+    984.0,
+    392
+   ]
+  }
+ ],
+ "panels": []
+}

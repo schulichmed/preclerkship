@@ -1,0 +1,110 @@
+{
+ "name": "gerd overview",
+ "title": "GERD decision chart: classic heartburn or regurgitation without alarm features is a clinical diagnosis treated with lifestyle change then acid suppression; alarm features or Barrett's risk factors send the patient to endoscopy; failure of a PPI or diagnostic uncertainty leads to ambulatory pH monitoring and manometry",
+ "col_w": 250,
+ "root": {
+  "title": "Heartburn or regurgitation: treat it as GERD, or does it need a SCOPE?",
+  "lines": [
+   "gastroesophageal reflux disease (GERD) is a CLINICAL diagnosis: classic symptoms + NO alarm features ± response to a proton pump inhibitor (PPI) trial",
+   "endoscopy does NOT diagnose GERD: it looks for complications and other diagnoses"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_tx",
+   "cols": [0, 0],
+   "title": "Classic, NO alarm features: TREAT",
+   "lines": ["no test needed"]
+  },
+  {
+   "id": "g_sc",
+   "cols": [1, 2],
+   "title": "ENDOSCOPY if ANY of these",
+   "lines": [
+    "• alarm features or Barrett's risk factors",
+    "• refractory symptoms or diagnostic uncertainty",
+    "• abnormal upper GI imaging"
+   ]
+  }
+ ],
+ "sections": ["head", "pres", "inv", "tx"],
+ "row_names": {"pres": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
+ "columns": [
+  {
+   "id": "ty",
+   "colour": "teal",
+   "head": [[["h", "Typical GERD", ["erosive esophagitis or non-erosive reflux disease (NERD)"]]]],
+   "pres": [
+    [["t", "HEARTBURN or REGURGITATION", [
+     "worse lying down, bending, lifting"]]],
+    [["w", "Atypical", [
+     "• chest pain: ECG FIRST, always",
+     "• globus, chronic cough, hoarseness",
+     "• dental caries"]]]
+   ],
+   "inv": [
+    [["t", "1 · CLINICAL diagnosis", ["no alarm features"]]],
+    [["w", "2 · PPI trial", ["a response supports it"]]]
+   ],
+   "tx": [
+    [["ok", "1 · Lifestyle", [
+     "• raise the head of the bed, no late meals",
+     "• weight loss, stop smoking, ↓ alcohol",
+     "• stop harmful drugs (calcium channel blockers)"]]],
+    [["ok", "2 · Acid suppression", [
+     "• PPI or H2 blocker",
+     "• antacids: quick relief only"]]],
+    [["warn", "3 · Nissen fundoplication", ["selected cases"]]]
+   ]
+  },
+  {
+   "id": "al",
+   "colour": "orange",
+   "drop_label": "ALARM or RISK",
+   "head": [[["h", "Cancer or Barrett's?", ["look for complications"]]]],
+   "pres": [
+    [["bad", "Alarm features", [
+     "• new dyspepsia at ≥ 60",
+     "• GI bleeding, iron deficiency anemia",
+     "• weight loss, dysphagia, odynophagia",
+     "• persistent vomiting",
+     "• GI cancer in a first-degree relative"]]],
+    [["w", "Barrett's risk factors", [
+     "• GERD ≥ 5–10 years, age ≥ 50, male, Caucasian",
+     "• obesity, hiatal hernia, nocturnal reflux, smoking",
+     "• relative with Barrett's or adenocarcinoma"]]]
+   ],
+   "inv": [
+    [["t", "1 · ENDOSCOPY", [
+     "• complications or risk factors", "• another diagnosis"]]]
+   ],
+   "tx": [
+    [["ok", "Still GERD: treat as typical", []]],
+    [["warn", "Cancer found", ["see the LUMINAL GI MALIGNANCIES lecture"]]]
+   ]
+  },
+  {
+   "id": "rf",
+   "colour": "purple",
+   "drop_label": "PPI FAILS, or unsure",
+   "head": [[["h", "Refractory or uncertain", ["no response to a standard-dose PPI"]]]],
+   "pres": [
+    [["t", "Why the PPI failed", [
+     "• timing or adherence",
+     "• fast PPI metabolism (CYP2C19)",
+     "• non-acid reflux (bile)", "• reflux hypersensitivity",
+     "• functional heartburn", "• another diagnosis"]]]
+   ],
+   "inv": [
+    [["w", "1 · Check timing + adherence", []]],
+    [["w", "2 · Endoscopy", []]],
+    [["t", "3 · 24-hour ambulatory pH monitoring", [
+     "the BEST test: workup normal + failed PPI trial"]]]
+   ],
+   "tx": [
+    [["bad", "pH NORMAL: NOT GERD", ["stop escalating GERD treatment"]]],
+    [["warn", "Considering surgery", ["esophageal MANOMETRY first"]]]
+   ]
+  }
+ ]
+}

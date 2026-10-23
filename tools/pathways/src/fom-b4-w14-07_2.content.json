@@ -1,0 +1,47 @@
+{
+ "name": "vaccine adverse events overview",
+ "title": "Vaccine adverse event decision chart: an event within 6 weeks of immunisation is reported whatever its cause; sort it into allergy to a component, a known reaction to the vaccine, a defective vaccine, a problem with how it was given, or coincidence, then decide whether the next dose is contraindicated, needs a precaution, or is left to public health",
+ "col_w": 232,
+ "root": {
+  "title": "Event within 6 weeks of a vaccine: did the VACCINE cause it, and can the NEXT dose go ahead?",
+  "lines": [
+   "EVERY adverse event following immunisation (AEFI) → AEFI form to the local Public Health Unit: MANDATORY for immunisers",
+   "PRECAUTIONS before any dose: moderate or severe acute illness · a LIVE vaccine when immunocompromised or pregnant"
+  ]
+ },
+ "groups": [
+  {"id": "g_vac", "cols": [0, 3], "title": "The VACCINE, how it was MADE, or how it was GIVEN",
+   "lines": ["the shot caused it"]},
+  {"id": "g_ind", "cols": [4, 4], "title": "NOT the vaccine",
+   "lines": ["after it in time, not caused by it"]}
+ ],
+ "sections": ["head", "pres", "next"],
+ "row_names": {"pres": "LOOKS LIKE", "next": "NEXT DOSE"},
+ "dashed_sections": ["pres"],
+ "columns": [
+  {"id": "alg", "colour": "magenta",
+   "head": [[["h", "Allergy to a component", ["e.g. polyethylene glycol (PEG) in the Pfizer mRNA vaccine"]]]],
+   "pres": [[["t", "ANAPHYLAXIS", ["after MMR, tetanus, hepatitis B or mRNA vaccines"]]]],
+   "next": [[["bad", "ABSOLUTE contraindication", ["to that vaccine or component", "treat it now: see the ALLERGY chart"]]]]},
+  {"id": "known", "colour": "blue",
+   "head": [[["h", "A known reaction to the vaccine", ["the event fits that vaccine type"]]]],
+   "pres": [[["t", "Live", ["• rotavirus → intussusception", "• MMR → febrile seizures, low platelets"]]],
+            [["t", "Inactivated · toxoid", ["• whole-cell pertussis → prolonged crying, seizures, hypotonic hyporesponsive episode", "• diphtheria → high fever, febrile seizures"]]],
+            [["t", "Newer platforms", ["• viral vector → vaccine-induced immune thrombotic thrombocytopenia (VITT), Guillain-Barré syndrome (GBS)", "• mRNA → myocarditis (dose 2), Bell's palsy"]]]],
+   "next": [[["bad", "ABSOLUTE: encephalopathy after a pertussis vaccine", []]],
+            [["warn", "PRECAUTION before the next dose", ["• extensive limb swelling or high fever after the last dose", "• GBS within 6 weeks of a flu vaccine"]]]]},
+  {"id": "def", "colour": "orange",
+   "head": [[["h", "A defective vaccine", ["a component made wrongly"]]]],
+   "pres": [[["t", "e.g. PARALYSIS", ["after oral polio vaccine that was not inactivated enough"]]]]},
+  {"id": "proc", "colour": "purple",
+   "head": [[["h", "How it was GIVEN", ["an error, or the patient's anxiety"]]]],
+   "pres": [[["t", "Error", ["contaminated vial → abscess at the injection site"]]],
+            [["t", "Anxiety", ["• fainting (syncope)", "• hyperventilation"]]]]},
+  {"id": "coin", "colour": "slate",
+   "head": [[["h", "Coincidence", ["independent of the vaccine"]]]],
+   "pres": [[["t", "e.g. a fractured radius, a UTI", ["still counts as an AEFI"]]]]}
+ ],
+ "spans": [
+  {"section": "next", "cols": [2, 4], "rows": [[["plain", "Public health advises on the next dose", ["the medical officer of health (MOH) or public health nurse reviews the report"]]]]}
+ ]
+}

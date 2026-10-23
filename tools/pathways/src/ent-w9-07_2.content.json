@@ -1,0 +1,260 @@
+{
+ "name": "pediatric stridor overview",
+ "title": "Pediatric stridor decision chart: the phase of stridor localizes the narrowing; an infectious cause is croup (barking cough, steeple sign, the most common) or epiglottitis (drooling, tripod, secure the airway), and a choking episode points to foreign body aspiration (inspiratory and expiratory chest X-ray, rigid bronchoscopy if history, exam or imaging is positive)",
+ "col_w": 270,
+ "root": {
+  "title": "Child with STRIDOR: where is the narrowing, and WHAT is it?",
+  "lines": [
+   "INSPIRATORY = supraglottic or glottic · BIPHASIC = subglottic · EXPIRATORY = lower airway",
+   "a child's airway is narrowest at the CRICOID: a complete ring that cannot expand",
+   "less likely: subglottic stenosis (scarring after intubation), subglottic hemangioma, vocal cord paralysis"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_inf",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "INFECTION: barking, or drooling?",
+   "lines": []
+  },
+  {
+   "id": "g_fb",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "A CHOKING episode, witnessed or not",
+   "lines": [
+    "HISTORY is the most important part"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "cr",
+   "colour": "teal",
+   "drop_label": "BARKING cough",
+   "head": [
+    [
+     [
+      "h",
+      "Croup (laryngotracheobronchitis)",
+      [
+       "the MOST COMMON cause of stridor",
+       "viral: parainfluenza, respiratory syncytial virus (RSV), influenza"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "6 months to 3 years",
+      [
+       "spring and fall"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "SUBGLOTTIC obstruction",
+      [
+       "• BARKING (seal) cough, hoarse",
+       "• inspiratory stridor",
+       "• low-grade fever"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "X-ray: STEEPLE sign",
+      [
+       "subglottic narrowing"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Hydration, cold humidified air",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Moderate–severe: STEROIDS + nebulized EPINEPHRINE",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "3 · Intubation: rare",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ep",
+   "colour": "magenta",
+   "drop_label": "DROOLING, tripod",
+   "head": [
+    [
+     [
+      "h",
+      "Epiglottitis",
+      [
+       "Haemophilus influenzae type b (Hib)",
+       "UNCOMMON since the Hib vaccine, but life-threatening"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Swollen epiglottis",
+      [
+       "• uncontrollable DROOLING",
+       "• HOT-POTATO voice, pain",
+       "• TRIPOD position"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Acute airway obstruction",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "Do NOT agitate the child",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "SECURE THE AIRWAY",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "fb",
+   "colour": "orange",
+   "drop_label": "CHOKING",
+   "head": [
+    [
+     [
+      "h",
+      "Foreign body aspiration",
+      [
+       "ages 1–3, boys more"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "1 · ACUTE: choking, gagging, coughing",
+      [
+       "or obstruction, at the moment of aspiration"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · QUIET: hours to weeks",
+      [
+       "• lodged, reflexes fatigue",
+       "• may wheeze"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · COMPLICATIONS",
+      [
+       "obstruction, erosion, infection"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Inspiratory + expiratory chest X-ray (CXR)",
+      [
+       "• AIR TRAPPING behind the object",
+       "• often RIGHT main bronchus",
+       "• uncooperative: lateral decubitus film"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "RIGID BRONCHOSCOPY if ANY 1 is positive",
+      [
+       "• history",
+       "• exam",
+       "• chest X-ray"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Retrieve in the operating room",
+      [
+       "one foreign body? look for MORE"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

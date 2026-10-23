@@ -1,0 +1,553 @@
+{
+ "name": "hypertension treatment overview",
+ "width": 1294,
+ "title": "Hypertension treatment decision chart: treat once blood pressure is over the threshold for the patient's risk, start one drug or a low-dose two-drug pill depending on the distance from target, then build the cocktail in steps (RAAS inhibitor, a diuretic and a calcium channel blocker, then spironolactone, beta blocker or doxazosin), each class with when to choose it and when to avoid it",
+ "kinds": {
+  "ra_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ra_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ra_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "di_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "di_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "di_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "cc_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cc_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cc_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "sp_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sp_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "sp_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "bb_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "bb_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "bb_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 360,
+   "w": 236,
+   "h": 660,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 306,
+   "y": 360,
+   "w": 236,
+   "h": 660,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 544,
+   "y": 360,
+   "w": 236,
+   "h": 660,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 810,
+   "y": 360,
+   "w": 236,
+   "h": 660,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1048,
+   "y": 360,
+   "w": 236,
+   "h": 660,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 504,
+   "h": 214,
+   "text": "CHOOSE WHEN"
+  },
+  {
+   "x": 23,
+   "y": 758,
+   "h": 254,
+   "text": "AVOID / WATCH"
+  },
+  {
+   "x": 23,
+   "y": 1052,
+   "h": 96,
+   "text": "STEP 5"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 282,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Hypertension above the threshold for this patient's RISK: which drugs, in what order?",
+   "lines": [
+    "START → TARGET (mmHg): HIGH risk systolic ≥ 130 → ≤ 120 · DIABETES ≥ 130/80 → < 130/80",
+    "MODERATE risk ≥ 140/90 → < 140/90 · LOW risk ≥ 160/100 → < 140/90",
+    "healthy behaviours for everyone · ≤ 10 mmHg above target: ONE drug · > 10 mmHg: TWO drugs as a low-dose single pill",
+    "not at target: ADD a drug, don't double one (half dose gives 80% of the effect)",
+    "pair a renin-angiotensin-aldosterone system (RAAS) INHIBITOR with a STIMULATOR"
+   ]
+  },
+  {
+   "id": "g1",
+   "x": 45,
+   "y": 192,
+   "w": 226,
+   "h": 96,
+   "kind": "plain",
+   "title": "STEP 1: a RAAS inhibitor",
+   "lines": [
+    "will they COUGH on an angiotensin-converting enzyme (ACE) inhibitor?"
+   ]
+  },
+  {
+   "id": "g2",
+   "x": 311,
+   "y": 192,
+   "w": 464,
+   "h": 96,
+   "kind": "plain",
+   "title": "STEPS 2–3: a diuretic or a calcium channel blocker (CCB), then the other",
+   "lines": [
+    "both STIMULATE the RAAS: choose by K+ and pedal edema"
+   ]
+  },
+  {
+   "id": "g3",
+   "x": 815,
+   "y": 192,
+   "w": 464,
+   "h": 96,
+   "kind": "plain",
+   "title": "STEP 4: the 4th drug",
+   "lines": [
+    "choose by K+ and heart rate"
+   ]
+  },
+  {
+   "id": "ra_head_0_0",
+   "x": 45,
+   "y": 368,
+   "w": 226,
+   "h": 96,
+   "kind": "ra_h",
+   "title": "ACE inhibitor or ARB",
+   "lines": [
+    "perindopril, trandolapril; angiotensin receptor blocker (ARB): telmisartan, candesartan"
+   ]
+  },
+  {
+   "id": "di_head_0_0",
+   "x": 311,
+   "y": 368,
+   "w": 226,
+   "h": 96,
+   "kind": "di_h",
+   "title": "Thiazide-like diuretic",
+   "lines": [
+    "indapamide, chlorthalidone",
+    "longer-acting: preferred over thiazides"
+   ]
+  },
+  {
+   "id": "cc_head_0_0",
+   "x": 549,
+   "y": 368,
+   "w": 226,
+   "h": 96,
+   "kind": "cc_h",
+   "title": "Long-acting CCB",
+   "lines": [
+    "dihydropyridine: amlodipine, nifedipine"
+   ]
+  },
+  {
+   "id": "sp_head_0_0",
+   "x": 815,
+   "y": 368,
+   "w": 226,
+   "h": 96,
+   "kind": "sp_h",
+   "title": "Spironolactone",
+   "lines": [
+    "mineralocorticoid receptor antagonist (MRA)"
+   ]
+  },
+  {
+   "id": "bb_head_0_0",
+   "x": 1053,
+   "y": 368,
+   "w": 226,
+   "h": 96,
+   "kind": "bb_h",
+   "title": "Beta blocker or doxazosin",
+   "lines": [
+    "bisoprolol; doxazosin is an alpha-1 blocker"
+   ]
+  },
+  {
+   "id": "ra_when_0_0",
+   "x": 45,
+   "y": 504,
+   "w": 226,
+   "h": 132,
+   "kind": "ok",
+   "title": "Compelling indications",
+   "lines": [
+    "• ischemic heart disease (+ beta blocker)",
+    "• left ventricular dysfunction, non-diabetic kidney disease",
+    "• diabetes with neuropathy: ARB"
+   ]
+  },
+  {
+   "id": "ra_when_1_0",
+   "x": 45,
+   "y": 658,
+   "w": 226,
+   "h": 60,
+   "kind": "ra_w",
+   "title": "ACE cough",
+   "lines": [
+    "switch to an ARB"
+   ]
+  },
+  {
+   "id": "di_when_0_0",
+   "x": 311,
+   "y": 504,
+   "w": 226,
+   "h": 214,
+   "kind": "ok",
+   "title": "First line, or with the RAAS inhibitor",
+   "lines": [
+    "• cerebrovascular disease",
+    "• step 6: K+ > 3.7 → MORE diuretic"
+   ]
+  },
+  {
+   "id": "cc_when_0_0",
+   "x": 549,
+   "y": 504,
+   "w": 226,
+   "h": 214,
+   "kind": "ok",
+   "title": "First line, or with the RAAS inhibitor",
+   "lines": [
+    "• cerebrovascular disease",
+    "• preferred 3-drug cocktail: + diuretic + ACE inhibitor or ARB"
+   ]
+  },
+  {
+   "id": "sp_when_0_0",
+   "x": 815,
+   "y": 504,
+   "w": 226,
+   "h": 214,
+   "kind": "ok",
+   "title": "Step 4, if the K+ allows",
+   "lines": [
+    "• step 6: K+ < 3.7 → MORE spironolactone"
+   ]
+  },
+  {
+   "id": "bb_when_0_0",
+   "x": 1053,
+   "y": 504,
+   "w": 226,
+   "h": 214,
+   "kind": "ok",
+   "title": "Beta blocker",
+   "lines": [
+    "• ischemic heart disease, recent ST-elevation MI",
+    "• a fast heart rate at step 4"
+   ]
+  },
+  {
+   "id": "ra_avoid_0_0",
+   "x": 45,
+   "y": 758,
+   "w": 226,
+   "h": 134,
+   "kind": "bad",
+   "title": "NO in pregnancy or renovascular disease",
+   "lines": [
+    "• caution if she could become pregnant",
+    "• renovascular: high K+, worse kidneys"
+   ]
+  },
+  {
+   "id": "ra_avoid_1_0",
+   "x": 45,
+   "y": 914,
+   "w": 226,
+   "h": 98,
+   "kind": "warn",
+   "title": "Not ALONE in Black patients",
+   "lines": [
+    "low-renin hypertension: start a renin stimulator"
+   ]
+  },
+  {
+   "id": "di_avoid_0_0",
+   "x": 311,
+   "y": 758,
+   "w": 226,
+   "h": 254,
+   "kind": "warn",
+   "title": "Diuretic-induced LOW K+",
+   "lines": [
+    "pair with an ACE inhibitor or ARB (they spare K+)"
+   ]
+  },
+  {
+   "id": "cc_avoid_0_0",
+   "x": 549,
+   "y": 758,
+   "w": 226,
+   "h": 254,
+   "kind": "warn",
+   "title": "Diuretic + CCB: the SAME column",
+   "lines": [
+    "add a RAAS inhibitor; monitor electrolytes"
+   ]
+  },
+  {
+   "id": "sp_avoid_0_0",
+   "x": 815,
+   "y": 758,
+   "w": 226,
+   "h": 254,
+   "kind": "warn",
+   "title": "Two RAAS inhibitors together",
+   "lines": [
+    "monitor electrolytes (K+)"
+   ]
+  },
+  {
+   "id": "bb_avoid_0_0",
+   "x": 1053,
+   "y": 758,
+   "w": 226,
+   "h": 254,
+   "kind": "bad",
+   "title": "Beta blocker NOT first line at ≥ 60",
+   "lines": [
+    "unless angina or heart failure"
+   ]
+  },
+  {
+   "id": "span0_s5_0_0",
+   "x": 45,
+   "y": 1052,
+   "w": 1234,
+   "h": 96,
+   "kind": "warn",
+   "title": "On all 4 drugs and still NOT at target? Very exceptional, or not taking them",
+   "lines": [
+    "• adherence aids: blister packs, a daily routine, home BP readings",
+    "• DIRECTLY OBSERVED: watch all 4 taken in clinic on an ambulatory BP monitor",
+    "• step 6, poor kidney function → a renal-impairment algorithm"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g1",
+   "path": "M662.0 142V167H158.0V192"
+  },
+  {
+   "from": "root",
+   "to": "g2",
+   "path": "M662.0 142V167H543.0V192"
+  },
+  {
+   "from": "root",
+   "to": "g3",
+   "path": "M662.0 142V167H1047.0V192"
+  },
+  {
+   "from": "ra_when_0_0",
+   "to": "ra_when_1_0"
+  },
+  {
+   "from": "ra_avoid_0_0",
+   "to": "ra_avoid_1_0"
+  },
+  {
+   "from": "ra_head_0_0",
+   "to": "ra_when_0_0"
+  },
+  {
+   "from": "ra_when_1_0",
+   "to": "ra_avoid_0_0"
+  },
+  {
+   "from": "ra_avoid_1_0",
+   "to": "span0_s5_0_0",
+   "to_dx": -504.0
+  },
+  {
+   "from": "g1",
+   "to": "ra_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "di_head_0_0",
+   "to": "di_when_0_0"
+  },
+  {
+   "from": "di_when_0_0",
+   "to": "di_avoid_0_0"
+  },
+  {
+   "from": "di_avoid_0_0",
+   "to": "span0_s5_0_0",
+   "to_dx": -238.0
+  },
+  {
+   "from": "g2",
+   "to": "di_head_0_0",
+   "from_dx": -119
+  },
+  {
+   "from": "cc_head_0_0",
+   "to": "cc_when_0_0"
+  },
+  {
+   "from": "cc_when_0_0",
+   "to": "cc_avoid_0_0"
+  },
+  {
+   "from": "cc_avoid_0_0",
+   "to": "span0_s5_0_0",
+   "to_dx": 0.0
+  },
+  {
+   "from": "g2",
+   "to": "cc_head_0_0",
+   "from_dx": 119
+  },
+  {
+   "from": "sp_head_0_0",
+   "to": "sp_when_0_0"
+  },
+  {
+   "from": "sp_when_0_0",
+   "to": "sp_avoid_0_0"
+  },
+  {
+   "from": "sp_avoid_0_0",
+   "to": "span0_s5_0_0",
+   "to_dx": 266.0
+  },
+  {
+   "from": "g3",
+   "to": "sp_head_0_0",
+   "from_dx": -119
+  },
+  {
+   "from": "bb_head_0_0",
+   "to": "bb_when_0_0"
+  },
+  {
+   "from": "bb_when_0_0",
+   "to": "bb_avoid_0_0"
+  },
+  {
+   "from": "bb_avoid_0_0",
+   "to": "span0_s5_0_0",
+   "to_dx": 504.0
+  },
+  {
+   "from": "g3",
+   "to": "bb_head_0_0",
+   "from_dx": 119
+  }
+ ],
+ "panels": []
+}

@@ -1,0 +1,132 @@
+{
+ "name": "approach to sexual health pathway",
+ "title": "Taking a sexual history: check your own biases, make a safe space, ask permission, clarify any euphemism, cover the 5 P's and plan management with the patient",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 210,
+   "y": 10,
+   "w": 500,
+   "kind": "plain",
+   "title": "Before the room: self-assess implicit biases",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 160,
+   "y": 90,
+   "w": 600,
+   "kind": "plain",
+   "title": "Safe space: inclusive forms, two-step method,",
+   "lines": [
+    "pronouns + sexual preference as routine intake questions"
+   ]
+  },
+  {
+   "id": "C",
+   "x": 210,
+   "y": 190,
+   "w": 500,
+   "kind": "plain",
+   "title": "Ask permission to talk about sexual health",
+   "lines": [
+    "(proactive, NOT waiting for the patient)"
+   ]
+  },
+  {
+   "id": "D",
+   "x": 260,
+   "y": 290,
+   "w": 280,
+   "kind": "plain",
+   "title": "Euphemism?",
+   "lines": [
+    "'I need a check up',",
+    "'soreness down below'"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 630,
+   "y": 299,
+   "w": 270,
+   "kind": "plain",
+   "title": "Clarify: lay terms, open questions,",
+   "lines": [
+    "silence, REPETITION"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 110,
+   "y": 420,
+   "w": 580,
+   "kind": "lo",
+   "title": "5 P's",
+   "lines": [
+    "Partners, Practices, Protection/Past sexually transmitted infection,",
+    "Pregnancy plans, (optional) Pleasure"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 160,
+   "y": 540,
+   "w": 600,
+   "kind": "ok",
+   "title": "Plan of management WITH the patient",
+   "lines": [
+    "(45-60 min ideal; book a longer appointment if needed)"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B",
+   "to_dx": -60,
+   "from_dx": -60
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "from_dx": -60,
+   "to_dx": -60
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "from_dx": -60
+  },
+  {
+   "from": "D",
+   "to": "E",
+   "from_side": "right",
+   "to_side": "left",
+   "label": "Yes",
+   "label_at": [
+    585,
+    318
+   ]
+  },
+  {
+   "from": "D",
+   "to": "F",
+   "label": "No",
+   "label_at": [
+    420,
+    394
+   ]
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "path": "M765 359V456H692"
+  },
+  {
+   "from": "F",
+   "to": "G",
+   "to_dx": -60
+  }
+ ]
+}

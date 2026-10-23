@@ -1,0 +1,332 @@
+{
+ "name": "prostate cancer overview",
+ "title": "Prostate cancer decision chart: whether and how to screen with PSA and rectal exam and what each PSA result leads to; then, after a transrectal ultrasound biopsy, grade and stage sort it into low-risk disease for active surveillance, localized disease for prostatectomy or radiation, and locally advanced or metastatic disease for androgen deprivation and systemic therapy",
+ "col_w": 240,
+ "root": {
+  "title": "Prostate cancer: SCREEN or not? Once found, WATCH, CURE or CONTROL?",
+  "lines": [
+   "EARLY disease is SILENT: found by prostate-specific antigen (PSA) or a nodule on rectal exam",
+   "LATE: bone pain, anemia, weight loss, fatigue = metastases · risk: age, family history, African ancestry"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_s",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "NO symptoms: a SHARED decision",
+   "lines": [
+    "catches curable cancer, but also harmless ones: false positives, biopsy harm"
+   ]
+  },
+  {
+   "id": "g_d",
+   "cols": [
+    1,
+    3
+   ],
+   "title": "PSA ↑ or a NODULE → TRANSRECTAL ULTRASOUND BIOPSY (imaging alone CANNOT diagnose it)",
+   "lines": [
+    "GRADE (Gleason): ≤ 6 well differentiated · 7 moderate · 8–10 anaplastic",
+    "STAGE: rectal exam · PSA > 50 = spread beyond the gland · bone scan + computed tomography (CT) only if HIGH risk"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "who",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "who": "WHO",
+  "inv": "WORKUP",
+  "tx": "MANAGE"
+ },
+ "columns": [
+  {
+   "id": "scr",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Screening",
+      []
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Age 50–69, if he chooses",
+      [
+       "from 45 with a family history"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "NOT",
+      [
+       "• age 40–50 or > 70",
+       "• life expectancy < 10 years"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "PSA + rectal exam",
+      [
+       "NO clear PSA cut-off",
+       "• > 4: 1 in 3 have cancer",
+       "• > 10: 2 in 3"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "PSA 4–10: favours cancer",
+      [
+       "• free-to-total RATIO ↓",
+       "• RISE ≥ 1 a year (≥ 0.5 if PSA < 4)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "PSA < 1 → repeat in 4 years",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "PSA 1–3 → repeat in 2 years",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "PSA > 3 → test more often",
+      [
+       "still up → biopsy, a shared decision"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "low",
+   "colour": "olive",
+   "drop_label": "LOW risk",
+   "head": [
+    [
+     [
+      "h",
+      "Low-risk cancer",
+      [
+       "slow-growing"
+      ]
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Well differentiated",
+      [
+       "Gleason ≤ 6"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Follow it",
+      [
+       "PSA · rectal exam · protocol biopsies"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · ACTIVE SURVEILLANCE",
+      [
+       "treat BEFORE it advances"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "2 · Re-classified HIGHER → TREAT",
+      [
+       "• PSA doubling fast",
+       "• change on exam",
+       "• higher grade or volume"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "NOT 'watchful waiting'",
+      [
+       "that waits for symptoms"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "loc",
+   "colour": "blue",
+   "drop_label": "LOCALIZED",
+   "head": [
+    [
+     [
+      "h",
+      "Localized cancer",
+      [
+       "curable"
+      ]
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Life expectancy > 10 YEARS",
+      [
+       "otherwise it grows too slowly to treat"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Surgery or radiation?",
+      [
+       "• NO trial compares them; similar outcomes",
+       "• urologist + radiation oncologist + decision aid"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "SURGERY",
+      [
+       "radical prostatectomy: prostate, seminal vesicles + nodes"
+      ]
+     ],
+     [
+      "ok",
+      "RADIATION",
+      [
+       "• brachy-therapy: < 60 cc, good urinary + sexual function",
+       "• external beam: anyone, ~7 weeks"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Then PSA very low (≈ 0 after surgery)",
+      [
+       "a RISE = it is back"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "adv",
+   "colour": "magenta",
+   "drop_label": "SPREAD",
+   "head": [
+    [
+     [
+      "h",
+      "Locally advanced or metastatic",
+      [
+       "poor prognosis"
+      ]
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Beyond the gland",
+      [
+       "• felt on rectal exam",
+       "• PSA > 50",
+       "• bone scan, CT"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "HIGH grade (8–10)",
+      [
+       "often needs MULTIMODAL therapy"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "1 · ANDROGEN DEPRIVATION",
+      [
+       "• LHRH (luteinizing hormone-releasing hormone) analogue",
+       "• anti-androgen",
+       "• orchiectomy"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "2 · Systemic",
+      [
+       "• docetaxel, cabazitaxel",
+       "• abiraterone, enzalutamide",
+       "• immunotherapy: sipuleucel-T"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

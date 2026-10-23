@@ -1,0 +1,610 @@
+{
+ "name": "complications of diabetes overview",
+ "title": "Diabetes complications split by time: acute emergencies sorted by glucose and acidosis into diabetic ketoacidosis, hyperosmolar hyperglycemic state or hypoglycemia, and chronic damage sorted into retinopathy, nephropathy and neuropathy (prevented by glucose control) and macrovascular disease (prevented by blood pressure, LDL and smoking control); each column gives presentation, numbered tests or screens and treatment or prevention in order",
+ "col_w": 214,
+ "root": {
+  "title": "Diabetes complications: an EMERGENCY now, or DAMAGE over years?",
+  "lines": [
+   "every emergency: treat it, then ask WHY (missed or rationed insulin, new steroids, infection, heart attack, stroke)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_acute",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "ACUTE: check the GLUCOSE first",
+   "lines": [
+    "high, or low?"
+   ]
+  },
+  {
+   "id": "g_micro",
+   "cols": [
+    3,
+    5
+   ],
+   "title": "MICROVASCULAR: GLUCOSE control prevents it",
+   "lines": [
+    "glycated hemoglobin (A1c) targets: see the GLYCEMIC GOALS chart"
+   ]
+  },
+  {
+   "id": "g_macro",
+   "cols": [
+    6,
+    6
+   ],
+   "title": "MACROVASCULAR: glucose control does NOT",
+   "lines": [
+    "blood pressure, low-density lipoprotein (LDL), smoking do"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_hi",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "HIGH glucose: is there ACIDOSIS?",
+   "lines": [
+    "no insulin → ketones → acid · some insulin → no ketones"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "TEST / SCREEN",
+  "tx": "TREAT / PREVENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "dka",
+   "colour": "orange",
+   "drop_from": "t_hi",
+   "drop_label": "ketones +, pH ≤ 7.3",
+   "head": [
+    [
+     [
+      "h",
+      "Diabetic ketoacidosis (DKA)",
+      [
+       "type 1, younger · over HOURS",
+       "children: CEREBRAL EDEMA risk"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Vomiting, abdominal PAIN",
+      [
+       "• fast deep (Kussmaul) breathing",
+       "• acetone breath",
+       "• dehydrated, low blood pressure"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Why now?",
+      [
+       "• new type 1, missed or rationed insulin",
+       "• steroids, sodium-glucose cotransporter 2 (SGLT2) inhibitors, cocaine"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Venous gas + ketones",
+      [
+       "• pH ≤ 7.3, bicarbonate < 18",
+       "• anion gap > 12: follow it",
+       "• glucose usually > 15"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Potassium normal or LOW",
+      [
+       "the body's store is EMPTY"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · ABCs · NORMAL SALINE",
+      [
+       "many litres"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · IV insulin: ALWAYS",
+      [
+       "• glucose 12–14 → ADD dextrose",
+       "• keep going until the gap closes"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "3 · Watch POTASSIUM: insulin drops it",
+      [
+       "• replace IV · arrhythmias kill",
+       "• every 1–2 h: electrolytes, pH, alertness"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hhs",
+   "colour": "purple",
+   "drop_from": "t_hi",
+   "drop_label": "no ketones, osm > 320",
+   "head": [
+    [
+     [
+      "h",
+      "Hyperosmolar hyperglycemic state (HHS)",
+      [
+       "type 2, older · over DAYS"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Lethargy → obtundation",
+      [
+       "• NO pain, NO vomiting",
+       "• NO Kussmaul, NO acetone",
+       "• very dehydrated"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Why now?",
+      [
+       "• illness: gastroenteritis, sepsis, heart attack, stroke",
+       "• steroids, missed doses"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Glucose > 30 · osmolality > 320",
+      [
+       "• pH > 7.3, bicarbonate > 15",
+       "• ketones none or trace, gap < 12"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Potassium usually normal",
+      [
+       "HIGH if the kidneys fail"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "SAME steps as DKA",
+      [
+       "• bigger deficit: ~9 L vs ~6 L",
+       "• insulin almost always"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Older: watch for HEART FAILURE",
+      [
+       "volume status every 1–2 h"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hypo",
+   "colour": "blue",
+   "drop_label": "glucose LOW",
+   "head": [
+    [
+     [
+      "h",
+      "Hypoglycemia",
+      [
+       "the price of tight insulin control"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "EARLY: adrenaline surge",
+      [
+       "• shaky, sweaty, anxious",
+       "• hungry, pale"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "LATE: the brain is starved",
+      [
+       "• confused, drowsy",
+       "• seizures, coma"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Find the cause",
+      [
+       "• exercise without adjusting insulin",
+       "• skipped meal"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · EARLY: 15 g fast sugar",
+      [
+       "• glucose tablets, juice",
+       "• gel: absorbed through the cheek"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "2 · LATE: someone else treats it",
+      [
+       "• glucagon: intramuscular, subcutaneous or nasal",
+       "• IV dextrose"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ret",
+   "colour": "teal",
+   "drop_label": "eyes",
+   "head": [
+    [
+     [
+      "h",
+      "Retinopathy",
+      [
+       "the MOST COMMON microvascular complication"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Stage on the retina",
+      [
+       "• background: dots, microaneurysms",
+       "• pre-proliferative: cotton wool, exudates, macular edema",
+       "• PROLIFERATIVE: new fragile vessels"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Eye exam EVERY YEAR",
+      [
+       "optometrist, from diagnosis"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Background, pre-proliferative",
+      [
+       "control glucose · follow it"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "PROLIFERATIVE or a bleed",
+      [
+       "→ URGENT ophthalmology: laser, vitrectomy"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "neph",
+   "colour": "olive",
+   "drop_label": "kidneys",
+   "head": [
+    [
+     [
+      "h",
+      "Nephropathy",
+      [
+       "leading cause of kidney failure"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Silent: albumin leaks first",
+      [
+       "• microalbuminuria",
+       "• then falling kidney function"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Kidney function",
+      [
+       "with every A1c, ~every 3 months"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Angiotensin-converting enzyme (ACE) inhibitor or angiotensin receptor blocker (ARB)",
+      [
+       "• for kidney disease, even with NORMAL blood pressure",
+       "• blood pressure ≤ 130/80"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · SGLT2 inhibitor",
+      [
+       "protects the kidney and the heart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "neur",
+   "colour": "brown",
+   "drop_label": "nerves",
+   "head": [
+    [
+     [
+      "h",
+      "Neuropathy",
+      [
+       "longest nerves first: FEET before hands"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Numb, tingling, burning feet",
+      [
+       "• glove and stocking",
+       "• proprioception lost EARLY",
+       "• pain wakes them at night"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Other kinds",
+      [
+       "• autonomic: gastroparesis, erectile dysfunction",
+       "• cranial: 3rd nerve palsy",
+       "• amyotrophy: proximal wasting"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Foot exam EVERY visit",
+      [
+       "• calluses, ulcers, pedal pulses",
+       "~sensation testing + daily self-checks: see the FOOT AND ANKLE PAIN chart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Minor problem → chiropodist",
+      [
+       "recheck for infection"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Major → specialized foot clinic",
+      [
+       "~infection: see the MSK INFECTIONS chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mac",
+   "colour": "slate",
+   "drop_label": "heart, brain, legs",
+   "head": [
+    [
+     [
+      "h",
+      "Heart attack · stroke · peripheral vascular disease",
+      [
+       "fatty acids → atherosclerosis"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Ask EVERY visit",
+      [
+       "• chest pain",
+       "• calf pain walking: feel BOTH legs' pulses",
+       "• stroke or transient ischemic attack"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Blood pressure ≤ 130/80",
+      [
+       "home or pharmacy readings"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "LDL < 2.0 mmol/L",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Stop smoking · active · lose weight",
+      [
+       "~SGLT2 inhibitor or liraglutide also protect the heart"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · STATIN if ANY",
+      [
+       "• age ≥ 40",
+       "• age > 30 + diabetes > 15 years",
+       "• known coronary disease"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · ADD ACE inhibitor or ARB",
+      [
+       "• age ≥ 55 + another risk factor",
+       "• coronary disease: + acetylsalicylic acid 81 mg"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Sick-day rules: prevent the next DKA or HHS",
+   "items": [
+    "type 1: keep SOME insulin even when not eating · check glucose AND urine ketones often",
+    "type 2: check glucose often · STOP SGLT2 inhibitors, diuretics, metformin while vomiting or with diarrhea · some insulin is safe"
+   ]
+  },
+  {
+   "title": "From diagnosis",
+   "items": [
+    "refer: dietitian · diabetes nurse educator · optometrist",
+    "first drug: very symptomatic → INSULIN · otherwise METFORMIN if liver and kidneys are fine (then see the GLUCOSE-LOWERING DRUGS tree)"
+   ]
+  }
+ ]
+}

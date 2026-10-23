@@ -1,0 +1,331 @@
+{
+ "name": "normocytic anemia overview",
+ "title": "Normocytic anemia: the reticulocyte count splits cells lost or destroyed (acute blood loss, sickle cell disease) from too little production, where the marrow biopsy finds an empty marrow (pure red cell aplasia, aplastic anemia) or a replaced one (myelophthisis)",
+ "col_w": 244,
+ "root": {
+  "title": "Normocytic anemia (mean cell volume, MCV 80–100 fL): is the marrow RESPONDING?",
+  "lines": [
+   "ABCD: Acute blood loss · Bone marrow failure · Chronic disease · Destruction",
+   "1 · reticulocyte count: rises up to 6× when the marrow responds"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_up",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "Reticulocytes ↑: cells LOST or DESTROYED",
+   "lines": [
+    "other destruction: see the HEMOLYTIC ANEMIA chart"
+   ]
+  },
+  {
+   "id": "g_lo",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "Reticulocytes normal or ↓: too little PRODUCTION",
+   "lines": []
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_bm",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "2 · Bone marrow aspirate + biopsy",
+   "lines": [
+    "• ABNORMAL → see the MYELODYSPLASTIC SYNDROME chart",
+    "• NORMAL → chronic inflammation (MICROCYTIC chart) or kidney disease"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "bl",
+   "colour": "teal",
+   "drop_label": "bleeding",
+   "head": [
+    [
+     [
+      "h",
+      "Acute blood loss",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Pallor, bleeding",
+      [
+       "• GI",
+       "• menstruation, fibroids, urinary",
+       "• bleeding disorder"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Find the SOURCE",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Treat the cause",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Transfuse if necessary",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sc",
+   "colour": "orange",
+   "drop_label": "sickling",
+   "head": [
+    [
+     [
+      "h",
+      "Sickle cell disease",
+      [
+       "β chain: HbS Glu → Val · recessive"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "From about age 3",
+      [
+       "fetal Hb (HbF) protects until then"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Crises and organ damage",
+      [
+       "• vaso-occlusive crisis, dactylitis",
+       "• acute chest syndrome, stroke"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Newborn screening",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Hb electrophoresis or HPLC",
+      [
+       "high-performance liquid chromatography",
+       "sickle cells · HbF ↑"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · Vaso-occlusive crisis",
+      [
+       "oxygen, IV fluids, opioids or anti-inflammatories (NSAIDs), treat the trigger"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Long term",
+      [
+       "• hydroxyurea, folate",
+       "• penicillin prophylaxis to age 5"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "3 · Stem cell transplant",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "em",
+   "colour": "purple",
+   "drop_from": "t_bm",
+   "drop_label": "EMPTY",
+   "head": [
+    [
+     [
+      "h",
+      "Marrow failure",
+      [
+       "EMPTY marrow · no splenomegaly"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Pure red cell aplasia (PRCA)",
+      [
+       "red cells only: Diamond-Blackfan, autoimmune, toxins"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Aplastic anemia",
+      [
+       "ALL lines: idiopathic (most), toxins, Fanconi"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "PRCA: SEVERE reticulocytopenia",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "Aplastic: PANCYTOPENIA",
+      [
+       "marrow replaced by fat"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · Febrile neutropenia",
+      [
+       "blood products + antibiotics"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Immunosuppression",
+      [
+       "antithymocyte globulin, cyclosporine, steroids"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · Marrow transplant if eligible",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "my",
+   "colour": "slate",
+   "drop_from": "t_bm",
+   "drop_label": "REPLACED",
+   "head": [
+    [
+     [
+      "h",
+      "Myelophthisis",
+      [
+       "marrow crowded OUT"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Replaced by",
+      [
+       "• myelofibrosis",
+       "• blood cancer",
+       "• metastatic solid cancer"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Leukoerythroblastic film",
+      [
+       "teardrop cells"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Manage as marrow failure",
+      [
+       "see the MARROW FAILURE column"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

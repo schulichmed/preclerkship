@@ -1,0 +1,475 @@
+{
+ "name": "pneumonia overview",
+ "title": "Pneumonia decision chart: where it was acquired and how sick the patient is choose the empiric antibiotics; community-acquired splits into outpatient and inpatient, nosocomial is hospital- or ventilator-associated, and aspiration or a compromised host changes the organisms; each column gives clues, investigations and treatment in order",
+ "col_w": 228,
+ "root": {
+  "title": "Pneumonia = infection + a NEW infiltrate. WHERE was it caught, WHO is the host, HOW sick?",
+  "lines": [
+   "the setting picks the likely bugs, and so the EMPIRIC antibiotics",
+   "1st dose AS SOON AS POSSIBLE (after blood cultures) · ≥ 5 days, until afebrile 48–72 h",
+   "NOT improving? wrong DRUG (resistance) · wrong BUG (atypical) · a COMPLICATION (empyema, abscess, acute respiratory distress syndrome) · wrong DIAGNOSIS (pulmonary embolism, heart failure)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_cap",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "COMMUNITY-ACQUIRED (CAP)",
+   "lines": [
+    "typical vs atypical cannot be told apart clinically → treat BOTH"
+   ]
+  },
+  {
+   "id": "g_hap",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "NOSOCOMIAL: ≥ 48 h in hospital",
+   "lines": []
+  },
+  {
+   "id": "g_host",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "The HOST changes the bugs",
+   "lines": []
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_cap",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "Severity score → setting of care",
+   "lines": [
+    "• CURB-65 (most used), Pneumonia Severity Index",
+    "• ATS/IDSA score: severe vs non-severe"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "EMPIRIC TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "op",
+   "colour": "teal",
+   "drop_from": "t_cap",
+   "drop_label": "HOME",
+   "head": [
+    [
+     [
+      "h",
+      "CAP: outpatient",
+      [
+       "S. pneumoniae, H. influenzae",
+       "atypicals: Mycoplasma, Chlamydia, viruses"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Typical (lobar)",
+      [
+       "• ABRUPT",
+       "• purulent sputum",
+       "• consolidation"
+      ]
+     ],
+     [
+      "t",
+      "Atypical",
+      [
+       "• INSIDIOUS",
+       "• dry cough",
+       "• diffuse infiltrates"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "ELDERLY",
+      [
+       "• may have NO cough or fever",
+       "• confusion, falls, incontinence"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Chest X-ray (CXR): the GOLD STANDARD",
+      [
+       "confirms it, finds complications"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Sputum Gram stain + culture",
+      [
+       "atypicals do NOT show on Gram stain"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "NO comorbidities",
+      [
+       "• macrolide (if local pneumococcal resistance < 25%)",
+       "• or doxycycline",
+       "• or amoxicillin"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "WITH comorbidities",
+      [
+       "• fluoroquinolone: levofloxacin, moxifloxacin",
+       "• or amox-clav or cefuroxime + macrolide or doxycycline"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ip",
+   "colour": "blue",
+   "drop_from": "t_cap",
+   "drop_label": "ADMIT",
+   "head": [
+    [
+     [
+      "h",
+      "CAP: inpatient",
+      [
+       "the severity score says ADMIT"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "NON-severe → ward",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "SEVERE → intensive care (ICU)",
+      [
+       "ATS/IDSA criteria"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · CXR + bloodwork",
+      [
+       "• complete blood count, electrolytes, urea, creatinine",
+       "• arterial blood gas (ABG): PaO2 ↓"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Bugs",
+      [
+       "• blood cultures × 2, sputum",
+       "• nasopharyngeal swab",
+       "• urine antigen: Legionella, pneumococcus"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "NON-severe (ward)",
+      [
+       "• fluoroquinolone",
+       "• or IV β-lactam + macrolide"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "SEVERE (ICU)",
+      [
+       "• IV β-lactam + macrolide",
+       "• or IV β-lactam + fluoroquinolone"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ho",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Hospital-acquired (HAP) / ventilator (VAP)",
+      [
+       "≥ 48 h after admission (HAP) or intubation (VAP)"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Gram-NEGATIVE rods",
+      [
+       "• E. coli, Klebsiella",
+       "• Pseudomonas",
+       "• S. aureus"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "From MICROASPIRATION",
+      [
+       "long stay, ↓ consciousness"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · CXR + cultures",
+      [
+       "a PREVIOUS culture guides the cover"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Piperacillin-tazobactam (pip-tazo) + vancomycin",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "SEVERE + prior culture → cover",
+      [
+       "• Pseudomonas: pip-tazo, carbapenem, ceftazidime-avibactam",
+       "• methicillin-resistant S. aureus (MRSA): vancomycin, linezolid"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "as",
+   "colour": "brown",
+   "drop_label": "ASPIRATION · ALCOHOL",
+   "head": [
+    [
+     [
+      "h",
+      "Aspiration / anaerobic",
+      [
+       "polymicrobial: oral anaerobes",
+       "can CAVITATE → lung abscess"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Who",
+      [
+       "• dysphagia, older",
+       "• alcohol or drugs: ↓ consciousness",
+       "• recent hospital stay"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "CXR",
+      [
+       "• LOWER lobes (posterior upper if supine)",
+       "• cavity"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · CXR shows a CAVITY?",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Send FUNGAL + tuberculosis (TB) cultures",
+      [
+       "common causes of cavities"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "β-lactamase inhibitor combination",
+      [
+       "pip-tazo or amox-clav"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Or carbapenem, or moxifloxacin",
+      [
+       "the only fluoroquinolone that covers anaerobes"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Empyema → DRAIN it",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ic",
+   "colour": "purple",
+   "drop_label": "IMMUNOCOMPROMISED",
+   "head": [
+    [
+     [
+      "h",
+      "Immunocompromised host",
+      [
+       "any bug: rare and unusual ones too"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Who",
+      [
+       "• human immunodeficiency virus (HIV), transplant",
+       "• chemotherapy, steroids, immunodeficiency"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "e.g. Pneumocystis jirovecii (PCP)",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · INVASIVE testing: bronchoscopy",
+      [
+       "the differential is too broad to guess"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Bronchoalveolar lavage (BAL)",
+      [
+       "• bacterial, fungal, mycobacterial cultures",
+       "• galactomannan (Aspergillus), cytology"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat what the BAL finds",
+      [
+       "• fungal: azoles; amphotericin B if disseminated"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "HIV, CD4 < 200 → PCP PROPHYLAXIS",
+      [
+       "trimethoprim-sulfamethoxazole (or pentamidine, dapsone, atovaquone)"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

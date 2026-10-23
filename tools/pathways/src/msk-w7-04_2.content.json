@@ -1,0 +1,111 @@
+{
+ "name": "axial spine radiology overview",
+ "title": "Reading a spine X-ray: after the ABCS sweep, each abnormality has its view, its sign and what it means next: fracture (stable or unstable), facet dislocation, pars defect and spondylolisthesis, scoliosis by Cobb angle, ankylosing spondylitis and sacroiliitis, and prevertebral soft-tissue swelling; normal variants are not disease",
+ "col_w": 228,
+ "root": {
+  "title": "Spine X-ray: which view shows it, what is the sign, and what happens next?",
+  "lines": [
+   "every film, ABCS: Alignment · Bones · Cartilage (disc spaces, facets) · Soft tissues, then the whole image",
+   "compare with previous imaging when you have it"
+  ]
+ },
+ "groups": [
+  {"id": "g_tr", "cols": [0, 1], "title": "TRAUMA", "lines": ["most acute trauma gets CT, not X-ray", "in a collar: NO oblique views"]},
+  {"id": "g_pe", "cols": [2, 2], "title": "POSTERIOR ELEMENTS", "lines": ["low back pain"]},
+  {"id": "g_cv", "cols": [3, 3], "title": "CURVE", "lines": ["AP view"]},
+  {"id": "g_in", "cols": [4, 4], "title": "INFLAMMATORY", "lines": ["mostly seronegative"]},
+  {"id": "g_st", "cols": [5, 5], "title": "SOFT TISSUES", "lines": ["lateral cervical view"]}
+ ],
+ "sections": ["head", "look", "next"],
+ "row_names": {"look": "VIEW AND SIGN", "next": "WHAT IT MEANS"},
+ "columns": [
+  {
+   "id": "frx", "colour": "teal",
+   "head": [[["h", "Vertebral fracture", ["compression · wedge · burst · teardrop"]]]],
+   "look": [
+    [["t", "Lateral view", ["• loss of vertebral body height", "• break in the alignment lines", "• fragment pushed back to the canal"]]],
+    [["w", "Lateral cervical: 4 lines", ["anterior vertebral · posterior vertebral · spinolaminar · spinous process"]]]
+   ],
+   "next": [
+    [["ok", "Anterior body only", ["more likely STABLE", "e.g. simple wedge (front-top corner)"]]],
+    [["bad", "Into the POSTERIOR elements", ["UNSTABLE", "e.g. hangman's (both pars of C2)"]]],
+    [["w", "Painful compression fracture", ["vertebroplasty (cement): pain relief, does NOT restore height"]]]
+   ]
+  },
+  {
+   "id": "fac", "colour": "orange",
+   "head": [[["h", "Facet dislocation", ["unilateral or bilateral"]]]],
+   "look": [
+    [["t", "Lateral: PERCHED facets", ["• facets lose their parallel line", "• vertebra slips forward (spondylolisthesis)"]]],
+    [["w", "AP: spinous processes", ["off the midline, uneven spacing", "~use it when there is no lateral"]]]
+   ],
+   "next": [
+    [["bad", "Cord at risk: MRI + URGENT neurosurgery", ["the cord cannot be seen on X-ray"]]],
+    [["warn", "Widened disc space or spinous-process gap, no fracture", ["ligament injury (X-ray misses it) → MRI"]]]
+   ]
+  },
+  {
+   "id": "par", "colour": "purple",
+   "head": [[["h", "Spondylolysis", ["defect in the pars interarticularis"]]]],
+   "look": [
+    [["t", "Oblique lumbar: 'Scottie dog'", ["• COLLAR on the dog's neck = pars defect", "~nose transverse process · ear superior facet · leg inferior facet"]]],
+    [["w", "Lateral: vertebra slipped forward", ["e.g. L4 on L5, measured in mm", "~pars defect often shows here too"]]]
+   ],
+   "next": [
+    [["warn", "Pars defect + slip", ["ISTHMIC spondylolisthesis"]]],
+    [["w", "No pars defect, older adult", ["DEGENERATIVE spondylolisthesis"]]],
+    [["ok", "Stabilised by", ["transpedicular screws + rods"]]]
+   ]
+  },
+  {
+   "id": "sco", "colour": "blue",
+   "head": [[["h", "Scoliosis", ["sideways curve ± rotation"]]]],
+   "look": [
+    [["t", "Cobb angle", ["superior endplate of the top tilted vertebra, inferior endplate of the bottom one: angle between the perpendiculars"]]],
+    [["w", "Rotation", ["pedicles change shape and position", "~primary curve + compensatory curve"]]]
+   ],
+   "next": [
+    [["ok", "Under 10°", ["normal variant"]]],
+    [["warn", "Over 10°", ["scoliosis"]]],
+    [["bad", "Over 50°", ["consider SURGERY (rods + screws)"]]]
+   ]
+  },
+  {
+   "id": "as", "colour": "magenta",
+   "head": [[["h", "Ankylosing spondylitis", ["spine + sacroiliac joints"]]]],
+   "look": [
+    [["t", "Spine", ["• ossified longitudinal ligaments", "• bony bridging across discs", "• fused facet joints"]]],
+    [["w", "Sacroiliitis", ["• erosions both sides (pseudo-widening)", "• sclerosis, mostly iliac side", "• ankylosis is LATE"]]]
+   ],
+   "next": [
+    [["bad", "Rigid spine", ["fractures next to the more mobile segments"]]],
+    [["warn", "Active inflammation?", ["bone marrow edema → MRI (X-ray misses it)"]]]
+   ]
+  },
+  {
+   "id": "pvs", "colour": "olive",
+   "head": [[["h", "Prevertebral swelling", ["abscess · trauma · hematoma"]]]],
+   "look": [
+    [["t", "Too wide if", ["• over 7 mm at C2", "• over 22 mm at C6", "• wider than the vertebral body at C5–C6"]]],
+    [["w", "Also check", ["airway smooth and open · air locules"]]]
+   ],
+   "next": [
+    [["bad", "Wide + airway pushed forward + air", ["RETROPHARYNGEAL ABSCESS (anaerobic)"]]]
+   ]
+  }
+ ],
+ "panels": [
+  {"title": "Normal variants: do not call them disease", "items": [
+   "limbus vertebra: triangle of bone at the front-top corner (unfused ring apophysis), teens, often L4: NOT a fracture",
+   "Schmorl's nodes: dents in the upper or lower endplates, usually incidental",
+   "cervical rib off C7 (C7 transverse process over ~2–2.5 cm): neck pain, arm pain if it presses the neurovascular bundle",
+   "transitional vertebra: lumbarization or sacralization"
+  ]},
+  {"title": "Numbers and landmarks", "items": [
+   "atlantodental interval: under 3 mm adults, under 5 mm children (more = instability)",
+   "open-mouth view: C1 lateral masses line up with C2",
+   "count: T1 meets the 1st rib · L1 sits below the 12th rib",
+   "read BOTH views: a pedicle replaced by a lytic lesion shows on the AP, barely on the lateral"
+  ]}
+ ]
+}

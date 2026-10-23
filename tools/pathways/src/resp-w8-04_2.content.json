@@ -1,0 +1,279 @@
+{
+ "name": "pulmonary nodule overview",
+ "title": "Pulmonary nodule and mass decision chart: one nodule is followed by size and malignancy risk (Fleischner) and sent on to a lung cancer workup when large, high risk or a mass; multiple nodules are benign inflammatory or infectious causes or metastases; columns give clues, workup and management",
+ "col_w": 250,
+ "root": {
+  "title": "Lung opacity: NODULE (< 3 cm) or MASS (> 3 cm)? ONE or MANY?",
+  "lines": [
+   "usually found by chance on imaging, in someone with no symptoms"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_one",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "ONE nodule: SIZE + RISK decide",
+   "lines": [
+    "HIGH RISK: older, smoker, emphysema, family history",
+    "nodule: bigger, SPICULATED, UPPER lobe, part-solid"
+   ]
+  },
+  {
+   "id": "g_many",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "MANY nodules",
+   "lines": [
+    "benign causes are broad"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_one",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "Follow-up CT by size (Fleischner)",
+   "lines": [
+    "• ≤ 5 mm: none if LOW risk · optional CT at 12 months if HIGH",
+    "• 6–8 mm: CT at 6–12 months, then 18–24 months",
+    "• ≥ 8 mm: consider CT at 3 months, positron emission tomography (PET)/CT or BIOPSY"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "CLUES",
+  "inv": "WORKUP",
+  "tx": "MANAGE"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "bn",
+   "colour": "teal",
+   "drop_from": "t_one",
+   "drop_label": "SMALL · low risk",
+   "head": [
+    [
+     [
+      "h",
+      "Benign solitary nodule",
+      [
+       "more common overall"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Causes",
+      [
+       "• hamartoma, granuloma",
+       "• abscess (cavity), infarct",
+       "• rheumatoid nodule"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Leans benign",
+      [
+       "• SOLID",
+       "• CALCIFIED (↓ risk)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Watch with CT at the intervals above",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "< 1 cm: hard to biopsy",
+      [
+       "better to watch and wait"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Low risk, ≤ 5 mm: no routine follow-up",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "lc",
+   "colour": "magenta",
+   "drop_from": "t_one",
+   "drop_label": "≥ 8 mm · high risk · or MASS",
+   "head": [
+    [
+     [
+      "h",
+      "Lung cancer",
+      [
+       "non-small cell (adenocarcinoma #1) or small cell",
+       "squamous and small cell sit CENTRALLY"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Often ASYMPTOMATIC",
+      [
+       "• or cough, dyspnea, hemoptysis, chest pain",
+       "• weight loss, clubbing"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Spread",
+      [
+       "• pleura, liver, bone, brain, adrenals",
+       "• superior vena cava (SVC) obstruction, Pancoast tumour",
+       "• paraneoplastic: SIADH, ↑ calcium"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · PET, neck to femur",
+      [
+       "finds unsuspected metastases in up to 30%"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · CT or MRI BRAIN",
+      [
+       "PET cannot see brain metastases"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "3 · BIOPSY: stage + diagnosis in ONE procedure",
+      [
+       "• PERIPHERAL > 1 cm → CT-guided needle (pneumothorax 15–20%)",
+       "• CENTRAL → bronchoscopy, endobronchial ultrasound (EBUS)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Stage I–II: SURGICAL RESECTION",
+      [
+       "radiation if not a surgical candidate"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Stage III: chemotherapy + radiation",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Stage IV: PALLIATIVE chemo ± radiation",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mu",
+   "colour": "olive",
+   "drop_label": "benign, or METASTASES",
+   "head": [
+    [
+     [
+      "h",
+      "Multiple nodules",
+      []
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Benign",
+      [
+       "• INFECTION: histoplasmosis, tuberculosis (TB)",
+       "• INFLAMMATORY: sarcoidosis, vasculitis",
+       "• INHALED: silicosis, asbestosis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Malignant = METASTASES",
+      [
+       "from a primary tumour elsewhere"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Pleural or pericardial EFFUSION = STAGE IV",
+      [
+       "palliative chemo ± radiation"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

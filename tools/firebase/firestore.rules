@@ -1,0 +1,12 @@
+// The only Firestore rule the portal needs: a signed-in reader may read and
+// write their own progress under users/<their id>, and nothing else. sync.js
+// keeps one document per localStorage entry there. Deploy from this folder:
+//   npx firebase-tools deploy --only firestore:rules --project public-medfriend
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{db}/documents {
+    match /users/{uid}/{rest=**} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+  }
+}

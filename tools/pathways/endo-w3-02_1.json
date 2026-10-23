@@ -1,0 +1,300 @@
+{
+ "name": "clinical presentation and evaluation of pituitary gland disease pathway",
+ "title": "Pituitary work-up: ask about mass effect and about hormones; each overproduction syndrome has its own test, and insufficiency is tested axis by axis, treating the adrenal axis before the thyroid",
+ "width": 1120,
+ "nodes": [
+  {
+   "id": "A",
+   "x": 430,
+   "y": 10,
+   "w": 260,
+   "kind": "plain",
+   "title": "Pituitary mass or symptoms",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 430,
+   "y": 90,
+   "w": 260,
+   "kind": "plain",
+   "title": "Ask BOTH questions",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 30,
+   "y": 160,
+   "w": 300,
+   "kind": "plain",
+   "title": "1. MASS EFFECT",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 380,
+   "y": 175,
+   "w": 360,
+   "kind": "plain",
+   "title": "2. HORMONE – too much or too little",
+   "lines": []
+  },
+  {
+   "id": "E",
+   "x": 30,
+   "y": 230,
+   "w": 300,
+   "kind": "plain",
+   "title": "Visual fields",
+   "lines": [
+    "BITEMPORAL hemianopia",
+    "diplopia, headache, apoplexy"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 480,
+   "y": 260,
+   "w": 160,
+   "kind": "plain",
+   "title": "Overproduction?",
+   "lines": []
+  },
+  {
+   "id": "G",
+   "x": 80,
+   "y": 400,
+   "w": 290,
+   "kind": "ok",
+   "title": "PROLACTINOMA",
+   "lines": [
+    "DOPAMINE AGONIST FIRST – not surgery"
+   ]
+  },
+  {
+   "id": "H",
+   "x": 390,
+   "y": 400,
+   "w": 340,
+   "kind": "plain",
+   "title": "Insulin-like growth factor 1 (IGF-1) screens",
+   "lines": [
+    "Oral glucose tolerance test (OGTT) confirms:",
+    "GH fails to suppress under 1",
+    "then MRI, then transsphenoidal surgery"
+   ]
+  },
+  {
+   "id": "I",
+   "x": 750,
+   "y": 400,
+   "w": 300,
+   "kind": "plain",
+   "title": "Cushing disease",
+   "lines": [
+    "dexamethasone / urine / salivary cortisol"
+   ]
+  },
+  {
+   "id": "J",
+   "x": 400,
+   "y": 560,
+   "w": 320,
+   "kind": "plain",
+   "title": "Insufficiency – test each axis",
+   "lines": []
+  },
+  {
+   "id": "K",
+   "x": 30,
+   "y": 660,
+   "w": 465,
+   "h": 112,
+   "kind": "plain",
+   "title": "1. Adrenal",
+   "lines": [
+    "morning (AM) cortisol",
+    "under 80–100 in, over 450 out"
+   ]
+  },
+  {
+   "id": "L",
+   "x": 505,
+   "y": 660,
+   "w": 220,
+   "h": 112,
+   "kind": "plain",
+   "title": "2. Thyroid",
+   "lines": [
+    "FREE thyroxine (T4) – NOT thyroid-stimulating hormone (TSH)"
+   ]
+  },
+  {
+   "id": "M",
+   "x": 745,
+   "y": 660,
+   "w": 215,
+   "h": 112,
+   "kind": "plain",
+   "title": "3. Gonadal",
+   "lines": [
+    "luteinizing hormone (LH),",
+    "follicle-stimulating hormone (FSH),",
+    "testosterone or estradiol"
+   ]
+  },
+  {
+   "id": "N",
+   "x": 975,
+   "y": 660,
+   "w": 120,
+   "h": 112,
+   "kind": "plain",
+   "title": "4. GH: IGF-1",
+   "lines": []
+  },
+  {
+   "id": "P",
+   "x": 30,
+   "y": 815,
+   "w": 170,
+   "kind": "plain",
+   "title": "Equivocal?",
+   "lines": []
+  },
+  {
+   "id": "Q",
+   "x": 20,
+   "y": 920,
+   "w": 190,
+   "kind": "warn",
+   "title": "Stimulation test",
+   "lines": [
+    "cortisol and GH only – insulin tolerance test"
+   ]
+  },
+  {
+   "id": "R",
+   "x": 215,
+   "y": 815,
+   "w": 270,
+   "kind": "bad",
+   "title": "TREAT ADRENAL BEFORE THYROID",
+   "lines": [
+    "thyroxine first can precipitate crisis"
+   ]
+  },
+  {
+   "id": "O",
+   "x": 500,
+   "y": 815,
+   "w": 240,
+   "kind": "info",
+   "title": "TSH normal WITH low free T4",
+   "lines": [
+    "= inappropriately normal = central"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "path": "M430 111.5H180V158"
+  },
+  {
+   "from": "B",
+   "to": "D"
+  },
+  {
+   "from": "C",
+   "to": "E"
+  },
+  {
+   "from": "D",
+   "to": "F"
+  },
+  {
+   "from": "F",
+   "to": "G",
+   "from_dx": -60,
+   "label": "prolactin",
+   "label_at": [
+    180,
+    378
+   ]
+  },
+  {
+   "from": "F",
+   "to": "H",
+   "label": "growth hormone (GH)",
+   "label_at": [
+    642,
+    378
+   ]
+  },
+  {
+   "from": "F",
+   "to": "I",
+   "label": "adrenocorticotropic hormone (ACTH)",
+   "label_at": [
+    770,
+    273
+   ],
+   "path": "M640 281.5H900V398"
+  },
+  {
+   "from": "D",
+   "to": "J",
+   "path": "M740 196.5H1105V581.5H722"
+  },
+  {
+   "from": "J",
+   "to": "K",
+   "from_dx": -120
+  },
+  {
+   "from": "J",
+   "to": "L",
+   "from_dx": -40
+  },
+  {
+   "from": "J",
+   "to": "M",
+   "from_dx": 40
+  },
+  {
+   "from": "J",
+   "to": "N",
+   "from_dx": 120
+  },
+  {
+   "from": "K",
+   "to": "P",
+   "from_dx": -147.5
+  },
+  {
+   "from": "K",
+   "to": "R",
+   "from_dx": 87.5
+  },
+  {
+   "from": "P",
+   "to": "Q",
+   "label": "yes",
+   "label_at": [
+    132,
+    888
+   ]
+  },
+  {
+   "from": "L",
+   "to": "O",
+   "to_dx": -5
+  }
+ ]
+}

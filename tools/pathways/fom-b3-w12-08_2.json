@@ -1,0 +1,486 @@
+{
+ "name": "radiation oncology overview",
+ "width": 1316,
+ "title": "Radiation therapy decision chart: radiate to cure a localized tumour (definitive or adjuvant, by external beam, brachytherapy or stereotactic beam) or to palliate a symptomatic one (urgent indications listed); then recognise toxicity by timing, acute during the course, subacute weeks later (pneumonitis treated with steroids) and late (hypothyroidism treated with replacement, infertility, second cancers)",
+ "kinds": {
+  "cure_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cure_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "cure_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pal_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pal_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "pal_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "acu_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "acu_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "acu_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "sub_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sub_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "sub_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "late_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "late_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "late_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 246,
+   "h": 556,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 288,
+   "y": 270,
+   "w": 246,
+   "h": 556,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 564,
+   "y": 270,
+   "w": 246,
+   "h": 556,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 812,
+   "y": 270,
+   "w": 246,
+   "h": 556,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1060,
+   "y": 270,
+   "w": 246,
+   "h": 556,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 378,
+   "h": 232,
+   "text": "WHEN · WHAT"
+  },
+  {
+   "x": 23,
+   "y": 650,
+   "h": 168,
+   "text": "DO"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 293,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Radiation: to CURE or to PALLIATE, and which TOXICITY do I watch for, and WHEN?",
+   "lines": [
+    "damages DNA in normal and cancer cells alike → split into daily FRACTIONS (standard 1.8–2 Gy) so normal tissue repairs between them",
+    "every tissue has a TOLERANCE dose: spinal cord, bowel, kidney and lung often limit it · fast-growing tumours respond soonest"
+   ]
+  },
+  {
+   "id": "g_why",
+   "x": 45,
+   "y": 156,
+   "w": 484,
+   "h": 42,
+   "kind": "plain",
+   "title": "WHY radiate?",
+   "lines": []
+  },
+  {
+   "id": "g_tox",
+   "x": 569,
+   "y": 156,
+   "w": 732,
+   "h": 42,
+   "kind": "plain",
+   "title": "Toxicity: HOW LONG since treatment?",
+   "lines": []
+  },
+  {
+   "id": "cure_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 236,
+   "h": 60,
+   "kind": "cure_h",
+   "title": "CURE",
+   "lines": [
+    "destroy a LOCALIZED tumour"
+   ]
+  },
+  {
+   "id": "pal_head_0_0",
+   "x": 293,
+   "y": 278,
+   "w": 236,
+   "h": 60,
+   "kind": "pal_h",
+   "title": "PALLIATE",
+   "lines": [
+    "the tumour is causing SYMPTOMS"
+   ]
+  },
+  {
+   "id": "acu_head_0_0",
+   "x": 569,
+   "y": 278,
+   "w": 236,
+   "h": 60,
+   "kind": "acu_h",
+   "title": "ACUTE",
+   "lines": [
+    "during the course, by the site treated"
+   ]
+  },
+  {
+   "id": "sub_head_0_0",
+   "x": 817,
+   "y": 278,
+   "w": 236,
+   "h": 60,
+   "kind": "sub_h",
+   "title": "SUBACUTE",
+   "lines": [
+    "weeks later"
+   ]
+  },
+  {
+   "id": "late_head_0_0",
+   "x": 1065,
+   "y": 278,
+   "w": 236,
+   "h": 60,
+   "kind": "late_h",
+   "title": "LATE",
+   "lines": [
+    "months to years"
+   ]
+  },
+  {
+   "id": "cure_what_0_0",
+   "x": 45,
+   "y": 378,
+   "w": 236,
+   "h": 232,
+   "kind": "cure_t",
+   "title": "Definitive or ADJUVANT",
+   "lines": [
+    "• definitive: e.g. breast, prostate, lung, head and neck, lymphoma",
+    "• adjuvant: kill microscopic disease left after surgery or chemo"
+   ]
+  },
+  {
+   "id": "pal_what_0_0",
+   "x": 293,
+   "y": 378,
+   "w": 236,
+   "h": 232,
+   "kind": "bad",
+   "title": "URGENT",
+   "lines": [
+    "• spinal cord compression",
+    "• superior vena cava (SVC) syndrome",
+    "• bronchial or esophageal obstruction · gastrointestinal or gynecologic bleeding"
+   ]
+  },
+  {
+   "id": "acu_what_0_0",
+   "x": 569,
+   "y": 378,
+   "w": 236,
+   "h": 232,
+   "kind": "acu_t",
+   "title": "In the field",
+   "lines": [
+    "• fatigue (any site)",
+    "• skin redness, hair loss",
+    "• chest: esophagitis, cough · pelvis: diarrhea, urinary frequency"
+   ]
+  },
+  {
+   "id": "sub_what_0_0",
+   "x": 817,
+   "y": 378,
+   "w": 236,
+   "h": 78,
+   "kind": "sub_t",
+   "title": "PNEUMONITIS",
+   "lines": [
+    "6–12 weeks after mediastinal radiation: fever, cough, dyspnea"
+   ]
+  },
+  {
+   "id": "sub_what_1_0",
+   "x": 817,
+   "y": 478,
+   "w": 236,
+   "h": 132,
+   "kind": "sub_w",
+   "title": "Also",
+   "lines": [
+    "• myelosuppression (large pelvic field)",
+    "• pericarditis",
+    "• Lhermitte sign: tingling into the limbs on neck flexion"
+   ]
+  },
+  {
+   "id": "late_what_0_0",
+   "x": 1065,
+   "y": 378,
+   "w": 236,
+   "h": 60,
+   "kind": "late_t",
+   "title": "HYPOTHYROIDISM",
+   "lines": [
+    "thyroid in the field"
+   ]
+  },
+  {
+   "id": "late_what_1_0",
+   "x": 1065,
+   "y": 460,
+   "w": 236,
+   "h": 150,
+   "kind": "late_w",
+   "title": "Also",
+   "lines": [
+    "• shingles in the irradiated dermatomes",
+    "• infertility: sterile if > 2 Gy to the ovaries",
+    "• second cancers: large fields, > 40 Gy, older techniques"
+   ]
+  },
+  {
+   "id": "cure_do_0_0",
+   "x": 45,
+   "y": 650,
+   "w": 236,
+   "h": 168,
+   "kind": "ok",
+   "title": "Pick the delivery",
+   "lines": [
+    "• external beam: 5 days a week, 1–10 weeks",
+    "• brachytherapy: isotope beside a gynecologic or prostate tumour",
+    "• stereotactic ablative radiotherapy (SABR): very high dose in 1–5 treatments"
+   ]
+  },
+  {
+   "id": "pal_do_0_0",
+   "x": 293,
+   "y": 650,
+   "w": 236,
+   "h": 168,
+   "kind": "ok",
+   "title": "Radiate to SHRINK it",
+   "lines": [
+    "relieves pain and neurologic symptoms"
+   ]
+  },
+  {
+   "id": "acu_do_0_0",
+   "x": 569,
+   "y": 650,
+   "w": 236,
+   "h": 168,
+   "kind": "warn",
+   "title": "Expect them WORST near the END of the course",
+   "lines": [
+    "fatigue may become chronic"
+   ]
+  },
+  {
+   "id": "sub_do_0_0",
+   "x": 817,
+   "y": 650,
+   "w": 236,
+   "h": 168,
+   "kind": "ok",
+   "title": "Pneumonitis → STEROIDS",
+   "lines": []
+  },
+  {
+   "id": "late_do_0_0",
+   "x": 1065,
+   "y": 650,
+   "w": 236,
+   "h": 168,
+   "kind": "ok",
+   "title": "Hypothyroidism → thyroid REPLACEMENT",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_why",
+   "path": "M673.0 106V131H287.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_tox",
+   "path": "M673.0 106V131H935.0V156"
+  },
+  {
+   "from": "sub_what_0_0",
+   "to": "sub_what_1_0",
+   "dashed": true
+  },
+  {
+   "from": "late_what_0_0",
+   "to": "late_what_1_0",
+   "dashed": true
+  },
+  {
+   "from": "cure_head_0_0",
+   "to": "cure_what_0_0"
+  },
+  {
+   "from": "cure_what_0_0",
+   "to": "cure_do_0_0"
+  },
+  {
+   "from": "g_why",
+   "to": "cure_head_0_0",
+   "from_dx": -124
+  },
+  {
+   "from": "pal_head_0_0",
+   "to": "pal_what_0_0"
+  },
+  {
+   "from": "pal_what_0_0",
+   "to": "pal_do_0_0"
+  },
+  {
+   "from": "g_why",
+   "to": "pal_head_0_0",
+   "from_dx": 124
+  },
+  {
+   "from": "acu_head_0_0",
+   "to": "acu_what_0_0"
+  },
+  {
+   "from": "acu_what_0_0",
+   "to": "acu_do_0_0"
+  },
+  {
+   "from": "g_tox",
+   "to": "acu_head_0_0",
+   "from_dx": -248
+  },
+  {
+   "from": "sub_head_0_0",
+   "to": "sub_what_0_0"
+  },
+  {
+   "from": "sub_what_1_0",
+   "to": "sub_do_0_0"
+  },
+  {
+   "from": "g_tox",
+   "to": "sub_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "late_head_0_0",
+   "to": "late_what_0_0"
+  },
+  {
+   "from": "late_what_1_0",
+   "to": "late_do_0_0"
+  },
+  {
+   "from": "g_tox",
+   "to": "late_head_0_0",
+   "from_dx": 248
+  }
+ ],
+ "panels": []
+}

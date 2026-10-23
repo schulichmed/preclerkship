@@ -1,0 +1,523 @@
+{
+ "name": "bowel obstruction overview",
+ "width": 1084,
+ "title": "A distended abdomen: painless with bulging flanks is ascites; painful, central and tympanic is obstruction, sorted on X-ray into small bowel (adhesive after previous surgery, or non-adhesive) and large bowel (closed loop), each with presentation, numbered investigations and treatment in order, plus the FATAL signs that send any obstruction to surgery",
+ "kinds": {
+  "asc_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "asc_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "asc_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "adh_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "adh_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "adh_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "nadh_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nadh_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "nadh_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "lbo_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "lbo_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "lbo_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 442,
+   "w": 250,
+   "h": 746,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 320,
+   "y": 442,
+   "w": 250,
+   "h": 746,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 572,
+   "y": 442,
+   "w": 250,
+   "h": 746,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 824,
+   "y": 442,
+   "w": 250,
+   "h": 746,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 570,
+   "h": 116,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 726,
+   "h": 178,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 944,
+   "h": 236,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 177,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Distended abdomen: ASCITES or OBSTRUCTION? Then WHERE, and is it an ADHESION?",
+   "lines": [
+    "OBSTIPATION (no stool AND no gas) is the key feature of obstruction",
+    "exam every time: hernias · rectal exam for masses · SURGICAL SCARS · palpable masses"
+   ]
+  },
+  {
+   "id": "g_asc",
+   "x": 45,
+   "y": 138,
+   "w": 240,
+   "h": 78,
+   "kind": "plain",
+   "title": "PAINLESS, flanks bulge",
+   "lines": []
+  },
+  {
+   "id": "g_obs",
+   "x": 325,
+   "y": 138,
+   "w": 744,
+   "h": 78,
+   "kind": "plain",
+   "title": "PAINFUL, central, tympanic: OBSTRUCTION",
+   "lines": [
+    "abdominal X-ray series: upright + supine abdomen, upright chest (free air?)",
+    "dilated if > 3 cm small bowel · > 6 cm colon · > 9 cm cecum (3-6-9)"
+   ]
+  },
+  {
+   "id": "t_sb",
+   "x": 325,
+   "y": 256,
+   "w": 492,
+   "h": 114,
+   "kind": "plain",
+   "title": "SMALL bowel: any previous SURGERY (scars)?",
+   "lines": [
+    "the most common type",
+    "RED FLAGS for ischemia or impending perforation (FATAL): Fever, Acidosis (lactate ↑), Tachycardia, Abdominal pain (peritonitis), Leukocytosis · also hypotension"
+   ]
+  },
+  {
+   "id": "asc_head_0_0",
+   "x": 45,
+   "y": 450,
+   "w": 240,
+   "h": 80,
+   "kind": "asc_h",
+   "title": "Ascites",
+   "lines": [
+    "fluid, not bowel"
+   ]
+  },
+  {
+   "id": "adh_head_0_0",
+   "x": 325,
+   "y": 450,
+   "w": 240,
+   "h": 80,
+   "kind": "adh_h",
+   "title": "Adhesive small bowel obstruction",
+   "lines": [
+    "ADHESIONS: the #1 cause"
+   ]
+  },
+  {
+   "id": "nadh_head_0_0",
+   "x": 577,
+   "y": 450,
+   "w": 240,
+   "h": 80,
+   "kind": "nadh_h",
+   "title": "Non-adhesive small bowel obstruction",
+   "lines": [
+    "a RED FLAG"
+   ]
+  },
+  {
+   "id": "lbo_head_0_0",
+   "x": 829,
+   "y": 450,
+   "w": 240,
+   "h": 80,
+   "kind": "lbo_h",
+   "title": "Large bowel obstruction",
+   "lines": [
+    "NEOPLASM #1 · diverticular disease · volvulus"
+   ]
+  },
+  {
+   "id": "asc_pres_0_0",
+   "x": 45,
+   "y": 570,
+   "w": 240,
+   "h": 116,
+   "kind": "asc_t",
+   "title": "Painless or mildly painful",
+   "lines": [
+    "• bulging flanks",
+    "• SHIFTING DULLNESS",
+    "• bowel habit UNCHANGED"
+   ]
+  },
+  {
+   "id": "adh_pres_0_0",
+   "x": 325,
+   "y": 570,
+   "w": 240,
+   "h": 116,
+   "kind": "adh_t",
+   "title": "Colicky pain, progressive vomiting",
+   "lines": [
+    "• obstipation",
+    "• maybe diarrhea first",
+    "• bowel sounds ↑, then absent"
+   ]
+  },
+  {
+   "id": "nadh_pres_0_0",
+   "x": 577,
+   "y": 570,
+   "w": 240,
+   "h": 116,
+   "kind": "nadh_t",
+   "title": "No scar: find the cause",
+   "lines": [
+    "• HERNIA, neoplasm",
+    "• intussusception, gallstone ileus",
+    "• foreign body, stricture"
+   ]
+  },
+  {
+   "id": "lbo_pres_0_0",
+   "x": 829,
+   "y": 570,
+   "w": 240,
+   "h": 116,
+   "kind": "lbo_t",
+   "title": "CLOSED LOOP",
+   "lines": [
+    "competent ileocecal valve: blocked at both ends, cannot decompress"
+   ]
+  },
+  {
+   "id": "asc_inv_0_0",
+   "x": 45,
+   "y": 726,
+   "w": 240,
+   "h": 178,
+   "kind": "asc_w",
+   "title": "Not an obstruction",
+   "lines": []
+  },
+  {
+   "id": "adh_inv_0_0",
+   "x": 325,
+   "y": 726,
+   "w": 240,
+   "h": 96,
+   "kind": "adh_t",
+   "title": "1 · X-ray",
+   "lines": [
+    "• CENTRAL dilated loops",
+    "• MANY air-fluid levels",
+    "• little colonic gas"
+   ]
+  },
+  {
+   "id": "adh_inv_1_0",
+   "x": 325,
+   "y": 844,
+   "w": 240,
+   "h": 60,
+   "kind": "adh_w",
+   "title": "2 · CT",
+   "lines": [
+    "confirms, grades, shows bowel at risk"
+   ]
+  },
+  {
+   "id": "nadh_inv_0_0",
+   "x": 577,
+   "y": 726,
+   "w": 240,
+   "h": 178,
+   "kind": "nadh_w",
+   "title": "1 · X-ray, then CT",
+   "lines": [
+    "as for adhesive"
+   ]
+  },
+  {
+   "id": "lbo_inv_0_0",
+   "x": 829,
+   "y": 726,
+   "w": 240,
+   "h": 178,
+   "kind": "lbo_t",
+   "title": "1 · X-ray",
+   "lines": [
+    "• PERIPHERAL dilated colon",
+    "• FEWER air-fluid levels",
+    "• little small bowel gas"
+   ]
+  },
+  {
+   "id": "asc_tx_0_0",
+   "x": 45,
+   "y": 944,
+   "w": 240,
+   "h": 236,
+   "kind": "ok",
+   "title": "Treat as ascites",
+   "lines": [
+    "CHRONIC LIVER FAILURE chart"
+   ]
+  },
+  {
+   "id": "adh_tx_0_0",
+   "x": 325,
+   "y": 944,
+   "w": 240,
+   "h": 136,
+   "kind": "ok",
+   "title": "1 · Nasogastric (NG) tube suction + intravenous (IV) fluids",
+   "lines": [
+    "• correct electrolytes",
+    "• serial exams for peritonitis",
+    "• 80% settle"
+   ]
+  },
+  {
+   "id": "adh_tx_1_0",
+   "x": 325,
+   "y": 1102,
+   "w": 240,
+   "h": 78,
+   "kind": "warn",
+   "title": "2 · Gastrografin contrast",
+   "lines": [
+    "not past the block in 24-48 h → SURGERY"
+   ]
+  },
+  {
+   "id": "nadh_tx_0_0",
+   "x": 577,
+   "y": 944,
+   "w": 240,
+   "h": 236,
+   "kind": "bad",
+   "title": "SURGERY once diagnosed",
+   "lines": [
+    "will NOT settle with time and an NG tube"
+   ]
+  },
+  {
+   "id": "lbo_tx_0_0",
+   "x": 829,
+   "y": 944,
+   "w": 240,
+   "h": 236,
+   "kind": "bad",
+   "title": "URGENT SURGERY",
+   "lines": [
+    "every complete mechanical large bowel obstruction"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_asc",
+   "path": "M557.0 88V113H165.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_obs",
+   "path": "M557.0 88V113H697.0V138"
+  },
+  {
+   "from": "g_obs",
+   "to": "t_sb",
+   "from_dx": -126
+  },
+  {
+   "from": "adh_inv_0_0",
+   "to": "adh_inv_1_0"
+  },
+  {
+   "from": "adh_tx_0_0",
+   "to": "adh_tx_1_0"
+  },
+  {
+   "from": "asc_head_0_0",
+   "to": "asc_pres_0_0"
+  },
+  {
+   "from": "asc_pres_0_0",
+   "to": "asc_inv_0_0"
+  },
+  {
+   "from": "asc_inv_0_0",
+   "to": "asc_tx_0_0"
+  },
+  {
+   "from": "g_asc",
+   "to": "asc_head_0_0",
+   "from_dx": 0,
+   "label": "shifting dullness",
+   "label_at": [
+    165.0,
+    410
+   ]
+  },
+  {
+   "from": "adh_head_0_0",
+   "to": "adh_pres_0_0"
+  },
+  {
+   "from": "adh_pres_0_0",
+   "to": "adh_inv_0_0"
+  },
+  {
+   "from": "adh_inv_1_0",
+   "to": "adh_tx_0_0"
+  },
+  {
+   "from": "t_sb",
+   "to": "adh_head_0_0",
+   "from_dx": -126,
+   "label": "scars: ADHESIVE",
+   "label_at": [
+    445.0,
+    410
+   ]
+  },
+  {
+   "from": "nadh_head_0_0",
+   "to": "nadh_pres_0_0"
+  },
+  {
+   "from": "nadh_pres_0_0",
+   "to": "nadh_inv_0_0"
+  },
+  {
+   "from": "nadh_inv_0_0",
+   "to": "nadh_tx_0_0"
+  },
+  {
+   "from": "t_sb",
+   "to": "nadh_head_0_0",
+   "from_dx": 126,
+   "label": "NO surgery before",
+   "label_at": [
+    697.0,
+    410
+   ]
+  },
+  {
+   "from": "lbo_head_0_0",
+   "to": "lbo_pres_0_0"
+  },
+  {
+   "from": "lbo_pres_0_0",
+   "to": "lbo_inv_0_0"
+  },
+  {
+   "from": "lbo_inv_0_0",
+   "to": "lbo_tx_0_0"
+  },
+  {
+   "from": "g_obs",
+   "to": "lbo_head_0_0",
+   "from_dx": 252,
+   "label": "LARGE bowel",
+   "label_at": [
+    949.0,
+    410
+   ]
+  }
+ ],
+ "panels": []
+}

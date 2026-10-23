@@ -1,0 +1,844 @@
+{
+ "name": "pancreatic disease overview",
+ "width": 1324,
+ "title": "Pancreatic disease sorted by acute pain (acute pancreatitis), chronic pain (chronic pancreatitis) or a mass, which is cystic (pseudocyst, or a serous, mucinous or intraductal papillary mucinous neoplasm) or solid (ductal adenocarcinoma), each with presentation, numbered investigations and treatment in order",
+ "kinds": {
+  "ap_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ap_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ap_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cp_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cp_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "cp_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "pc_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pc_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "pc_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "cn_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cn_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cn_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ca_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ca_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ca_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 370,
+   "w": 242,
+   "h": 1028,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 312,
+   "y": 370,
+   "w": 242,
+   "h": 1028,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 584,
+   "y": 370,
+   "w": 242,
+   "h": 1028,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 828,
+   "y": 370,
+   "w": 242,
+   "h": 1028,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1072,
+   "y": 370,
+   "w": 242,
+   "h": 1028,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 514,
+   "h": 134,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 688,
+   "h": 362,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1090,
+   "h": 300,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 297,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Pancreas: ACUTE pain, CHRONIC pain, or a MASS?",
+   "lines": [
+    "acute pancreatitis is a common cause of epigastric pain in the emergency room; chronic pancreatitis an uncommon cause of chronic pain"
+   ]
+  },
+  {
+   "id": "g_ac",
+   "x": 45,
+   "y": 138,
+   "w": 232,
+   "h": 60,
+   "kind": "plain",
+   "title": "ACUTE epigastric pain",
+   "lines": []
+  },
+  {
+   "id": "g_ch",
+   "x": 317,
+   "y": 138,
+   "w": 232,
+   "h": 60,
+   "kind": "plain",
+   "title": "CHRONIC pain",
+   "lines": []
+  },
+  {
+   "id": "g_mass",
+   "x": 589,
+   "y": 138,
+   "w": 720,
+   "h": 60,
+   "kind": "plain",
+   "title": "A MASS: cystic or solid?",
+   "lines": [
+    "inflammatory · autoimmune · neoplastic · cystic"
+   ]
+  },
+  {
+   "id": "t_cyst",
+   "x": 589,
+   "y": 238,
+   "w": 476,
+   "h": 60,
+   "kind": "plain",
+   "title": "CYSTIC: most are benign pseudocysts",
+   "lines": [
+    "5-15% are neoplasms"
+   ]
+  },
+  {
+   "id": "ap_head_0_0",
+   "x": 45,
+   "y": 378,
+   "w": 232,
+   "h": 96,
+   "kind": "ap_h",
+   "title": "Acute pancreatitis",
+   "lines": [
+    "GALLSTONES #1, then alcohol, after endoscopic retrograde cholangiopancreatography (ERCP)"
+   ]
+  },
+  {
+   "id": "cp_head_0_0",
+   "x": 317,
+   "y": 378,
+   "w": 232,
+   "h": 96,
+   "kind": "cp_h",
+   "title": "Chronic pancreatitis",
+   "lines": [
+    "ALCOHOL in 70%"
+   ]
+  },
+  {
+   "id": "pc_head_0_0",
+   "x": 589,
+   "y": 378,
+   "w": 232,
+   "h": 96,
+   "kind": "pc_h",
+   "title": "Pseudocyst",
+   "lines": [
+    "walled-off pancreatic juice, NO epithelial lining",
+    "takes > 4 weeks"
+   ]
+  },
+  {
+   "id": "cn_head_0_0",
+   "x": 833,
+   "y": 378,
+   "w": 232,
+   "h": 96,
+   "kind": "cn_h",
+   "title": "Cystic neoplasms",
+   "lines": [
+    "always cystic: serous, mucinous, intraductal papillary mucinous"
+   ]
+  },
+  {
+   "id": "ca_head_0_0",
+   "x": 1077,
+   "y": 378,
+   "w": 232,
+   "h": 96,
+   "kind": "ca_h",
+   "title": "Ductal adenocarcinoma",
+   "lines": [
+    "older, male, SMOKER, chronic pancreatitis, family history"
+   ]
+  },
+  {
+   "id": "ap_pres_0_0",
+   "x": 45,
+   "y": 514,
+   "w": 232,
+   "h": 134,
+   "kind": "ap_t",
+   "title": "SUDDEN sharp epigastric pain to the BACK",
+   "lines": [
+    "• better LEANING FORWARD",
+    "• after a big meal or a binge",
+    "• nausea, vomiting"
+   ]
+  },
+  {
+   "id": "cp_pres_0_0",
+   "x": 317,
+   "y": 514,
+   "w": 232,
+   "h": 134,
+   "kind": "cp_t",
+   "title": "Persistent deep pain",
+   "lines": [
+    "• worse with FAT and ALCOHOL",
+    "• STEATORRHEA, weight loss",
+    "• diabetes when severe"
+   ]
+  },
+  {
+   "id": "pc_pres_0_0",
+   "x": 589,
+   "y": 514,
+   "w": 232,
+   "h": 134,
+   "kind": "pc_t",
+   "title": "Pain, vomiting, jaundice",
+   "lines": [
+    "recurrent pancreatitis"
+   ]
+  },
+  {
+   "id": "cn_pres_0_0",
+   "x": 833,
+   "y": 514,
+   "w": 232,
+   "h": 134,
+   "kind": "cn_t",
+   "title": "A pancreatic CYST",
+   "lines": [
+    "may turn malignant"
+   ]
+  },
+  {
+   "id": "ca_pres_0_0",
+   "x": 1077,
+   "y": 514,
+   "w": 232,
+   "h": 134,
+   "kind": "ca_t",
+   "title": "PAINLESS JAUNDICE + weight loss",
+   "lines": [
+    "• pain to the mid-back",
+    "• migratory thrombophlebitis (Trousseau)",
+    "• new diabetes"
+   ]
+  },
+  {
+   "id": "ap_inv_0_0",
+   "x": 45,
+   "y": 688,
+   "w": 232,
+   "h": 60,
+   "kind": "ap_t",
+   "title": "1 · LIPASE ↑",
+   "lines": [
+    "more specific than amylase"
+   ]
+  },
+  {
+   "id": "ap_inv_1_0",
+   "x": 45,
+   "y": 770,
+   "w": 232,
+   "h": 42,
+   "kind": "ap_w",
+   "title": "2 · Ultrasound: gallstones?",
+   "lines": []
+  },
+  {
+   "id": "ap_inv_2_0",
+   "x": 45,
+   "y": 834,
+   "w": 232,
+   "h": 134,
+   "kind": "ap_w",
+   "title": "3 · Common bile duct stone likely?",
+   "lines": [
+    "• HIGH → ERCP",
+    "• LOW → magnetic resonance (MRCP) or endoscopic ultrasound first"
+   ]
+  },
+  {
+   "id": "ap_inv_3_0",
+   "x": 45,
+   "y": 990,
+   "w": 232,
+   "h": 60,
+   "kind": "bad",
+   "title": "Severe → early CT",
+   "lines": [
+    "necrosis?"
+   ]
+  },
+  {
+   "id": "cp_inv_0_0",
+   "x": 317,
+   "y": 688,
+   "w": 232,
+   "h": 75,
+   "kind": "bad",
+   "title": "Lipase and amylase NOT helpful",
+   "lines": []
+  },
+  {
+   "id": "cp_inv_1_0",
+   "x": 317,
+   "y": 785,
+   "w": 232,
+   "h": 75,
+   "kind": "cp_t",
+   "title": "1 · CT (or MRI): CALCIFICATION",
+   "lines": []
+  },
+  {
+   "id": "cp_inv_2_0",
+   "x": 317,
+   "y": 882,
+   "w": 232,
+   "h": 73,
+   "kind": "cp_w",
+   "title": "2 · Endoscopic ultrasound",
+   "lines": [
+    "most sensitive, less available"
+   ]
+  },
+  {
+   "id": "cp_inv_3_0",
+   "x": 317,
+   "y": 977,
+   "w": 232,
+   "h": 73,
+   "kind": "warn",
+   "title": "Histology can MIMIC cancer",
+   "lines": [
+    "correlate clinically"
+   ]
+  },
+  {
+   "id": "pc_inv_0_0",
+   "x": 589,
+   "y": 688,
+   "w": 232,
+   "h": 362,
+   "kind": "pc_w",
+   "title": "1 · History: pancreatitis > 4 weeks ago?",
+   "lines": []
+  },
+  {
+   "id": "cn_inv_0_0",
+   "x": 833,
+   "y": 688,
+   "w": 232,
+   "h": 362,
+   "kind": "cn_w",
+   "title": "1 · Type it: sex, site, look",
+   "lines": [
+    "• serous: FEMALE, body or tail, many SMALL cysts",
+    "• mucinous: FEMALE, body or tail",
+    "• intraductal papillary: MALE, HEAD"
+   ]
+  },
+  {
+   "id": "ca_inv_0_0",
+   "x": 1077,
+   "y": 688,
+   "w": 232,
+   "h": 87,
+   "kind": "ca_w",
+   "title": "1 · CT",
+   "lines": []
+  },
+  {
+   "id": "ca_inv_1_0",
+   "x": 1077,
+   "y": 797,
+   "w": 232,
+   "h": 143,
+   "kind": "ca_t",
+   "title": "2 · Biopsy: endoscopic ultrasound FNA",
+   "lines": [
+    "fine needle aspiration: higher yield than ERCP brushing"
+   ]
+  },
+  {
+   "id": "ca_inv_2_0",
+   "x": 1077,
+   "y": 962,
+   "w": 232,
+   "h": 87,
+   "kind": "ca_w",
+   "title": "CA 19-9 to MONITOR",
+   "lines": []
+  },
+  {
+   "id": "ap_tx_0_0",
+   "x": 45,
+   "y": 1090,
+   "w": 232,
+   "h": 85,
+   "kind": "ok",
+   "title": "1 · IV fluids, nothing by mouth, analgesia",
+   "lines": [
+    "NO prophylactic antibiotics"
+   ]
+  },
+  {
+   "id": "ap_tx_1_0",
+   "x": 45,
+   "y": 1197,
+   "w": 232,
+   "h": 85,
+   "kind": "warn",
+   "title": "2 · Severe: nasojejunal tube or parenteral nutrition",
+   "lines": [
+    "necrosis → necrosectomy"
+   ]
+  },
+  {
+   "id": "ap_tx_2_0",
+   "x": 45,
+   "y": 1304,
+   "w": 232,
+   "h": 85,
+   "kind": "ok",
+   "title": "3 · Gallstone: ERCP, then cholecystectomy",
+   "lines": [
+    "ERCP itself: 5% pancreatitis risk"
+   ]
+  },
+  {
+   "id": "cp_tx_0_0",
+   "x": 317,
+   "y": 1090,
+   "w": 232,
+   "h": 85,
+   "kind": "ok",
+   "title": "1 · STOP alcohol and smoking",
+   "lines": []
+  },
+  {
+   "id": "cp_tx_1_0",
+   "x": 317,
+   "y": 1197,
+   "w": 232,
+   "h": 65,
+   "kind": "ok",
+   "title": "2 · Pain: often opioids",
+   "lines": []
+  },
+  {
+   "id": "cp_tx_2_0",
+   "x": 317,
+   "y": 1284,
+   "w": 232,
+   "h": 105,
+   "kind": "ok",
+   "title": "3 · Malabsorption: pancreatic ENZYME replacement",
+   "lines": []
+  },
+  {
+   "id": "pc_tx_0_0",
+   "x": 589,
+   "y": 1090,
+   "w": 232,
+   "h": 62,
+   "kind": "ok",
+   "title": "No symptoms → conservative",
+   "lines": []
+  },
+  {
+   "id": "pc_tx_1_0",
+   "x": 589,
+   "y": 1174,
+   "w": 232,
+   "h": 98,
+   "kind": "warn",
+   "title": "Symptoms or complications → DRAIN",
+   "lines": [
+    "endoscopic, percutaneous or surgical"
+   ]
+  },
+  {
+   "id": "pc_tx_2_0",
+   "x": 589,
+   "y": 1294,
+   "w": 232,
+   "h": 96,
+   "kind": "bad",
+   "title": "Complications",
+   "lines": [
+    "• infection",
+    "• hemorrhage",
+    "• rupture"
+   ]
+  },
+  {
+   "id": "cn_tx_0_0",
+   "x": 833,
+   "y": 1090,
+   "w": 232,
+   "h": 90,
+   "kind": "ok",
+   "title": "SEROUS: always benign",
+   "lines": [
+    "mimic: metastatic renal cell carcinoma (tell the pathologist)"
+   ]
+  },
+  {
+   "id": "cn_tx_1_0",
+   "x": 833,
+   "y": 1202,
+   "w": 232,
+   "h": 74,
+   "kind": "warn",
+   "title": "MUCINOUS: 15-30% harbour cancer",
+   "lines": []
+  },
+  {
+   "id": "cn_tx_2_0",
+   "x": 833,
+   "y": 1298,
+   "w": 232,
+   "h": 92,
+   "kind": "warn",
+   "title": "INTRADUCTAL PAPILLARY: may turn malignant",
+   "lines": [
+    "depends on the duct involved"
+   ]
+  },
+  {
+   "id": "ca_tx_0_0",
+   "x": 1077,
+   "y": 1090,
+   "w": 232,
+   "h": 112,
+   "kind": "ok",
+   "title": "1 · EARLY, no spread → SURGERY + chemotherapy",
+   "lines": [
+    "• head: Whipple",
+    "• tail: distal pancreatectomy"
+   ]
+  },
+  {
+   "id": "ca_tx_1_0",
+   "x": 1077,
+   "y": 1224,
+   "w": 232,
+   "h": 166,
+   "kind": "warn",
+   "title": "2 · Usually incurable → PALLIATE",
+   "lines": [
+    "• bile duct: ERCP stent or percutaneous drain",
+    "• gastric outlet: duodenal stent or gastrojejunostomy",
+    "• pain: celiac plexus block"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ac",
+   "path": "M677.0 88V113H161.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_ch",
+   "path": "M677.0 88V113H433.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_mass",
+   "path": "M677.0 88V113H949.0V138"
+  },
+  {
+   "from": "g_mass",
+   "to": "t_cyst",
+   "from_dx": -122
+  },
+  {
+   "from": "ap_inv_0_0",
+   "to": "ap_inv_1_0"
+  },
+  {
+   "from": "ap_inv_1_0",
+   "to": "ap_inv_2_0"
+  },
+  {
+   "from": "ap_inv_2_0",
+   "to": "ap_inv_3_0"
+  },
+  {
+   "from": "cp_inv_0_0",
+   "to": "cp_inv_1_0"
+  },
+  {
+   "from": "cp_inv_1_0",
+   "to": "cp_inv_2_0"
+  },
+  {
+   "from": "cp_inv_2_0",
+   "to": "cp_inv_3_0"
+  },
+  {
+   "from": "ca_inv_0_0",
+   "to": "ca_inv_1_0"
+  },
+  {
+   "from": "ca_inv_1_0",
+   "to": "ca_inv_2_0"
+  },
+  {
+   "from": "ap_tx_0_0",
+   "to": "ap_tx_1_0"
+  },
+  {
+   "from": "ap_tx_1_0",
+   "to": "ap_tx_2_0"
+  },
+  {
+   "from": "cp_tx_0_0",
+   "to": "cp_tx_1_0"
+  },
+  {
+   "from": "cp_tx_1_0",
+   "to": "cp_tx_2_0"
+  },
+  {
+   "from": "pc_tx_0_0",
+   "to": "pc_tx_1_0"
+  },
+  {
+   "from": "pc_tx_1_0",
+   "to": "pc_tx_2_0"
+  },
+  {
+   "from": "cn_tx_0_0",
+   "to": "cn_tx_1_0"
+  },
+  {
+   "from": "cn_tx_1_0",
+   "to": "cn_tx_2_0"
+  },
+  {
+   "from": "ca_tx_0_0",
+   "to": "ca_tx_1_0"
+  },
+  {
+   "from": "ap_head_0_0",
+   "to": "ap_pres_0_0"
+  },
+  {
+   "from": "ap_pres_0_0",
+   "to": "ap_inv_0_0"
+  },
+  {
+   "from": "ap_inv_3_0",
+   "to": "ap_tx_0_0"
+  },
+  {
+   "from": "g_ac",
+   "to": "ap_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "cp_head_0_0",
+   "to": "cp_pres_0_0"
+  },
+  {
+   "from": "cp_pres_0_0",
+   "to": "cp_inv_0_0"
+  },
+  {
+   "from": "cp_inv_3_0",
+   "to": "cp_tx_0_0"
+  },
+  {
+   "from": "g_ch",
+   "to": "cp_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "pc_head_0_0",
+   "to": "pc_pres_0_0"
+  },
+  {
+   "from": "pc_pres_0_0",
+   "to": "pc_inv_0_0"
+  },
+  {
+   "from": "pc_inv_0_0",
+   "to": "pc_tx_0_0"
+  },
+  {
+   "from": "t_cyst",
+   "to": "pc_head_0_0",
+   "from_dx": -122,
+   "label": "after pancreatitis",
+   "label_at": [
+    705.0,
+    338
+   ]
+  },
+  {
+   "from": "cn_head_0_0",
+   "to": "cn_pres_0_0"
+  },
+  {
+   "from": "cn_pres_0_0",
+   "to": "cn_inv_0_0"
+  },
+  {
+   "from": "cn_inv_0_0",
+   "to": "cn_tx_0_0"
+  },
+  {
+   "from": "t_cyst",
+   "to": "cn_head_0_0",
+   "from_dx": 122,
+   "label": "cystic neoplasm",
+   "label_at": [
+    949.0,
+    338
+   ]
+  },
+  {
+   "from": "ca_head_0_0",
+   "to": "ca_pres_0_0"
+  },
+  {
+   "from": "ca_pres_0_0",
+   "to": "ca_inv_0_0"
+  },
+  {
+   "from": "ca_inv_2_0",
+   "to": "ca_tx_0_0"
+  },
+  {
+   "from": "g_mass",
+   "to": "ca_head_0_0",
+   "from_dx": 244,
+   "label": "solid",
+   "label_at": [
+    1193.0,
+    338
+   ]
+  }
+ ],
+ "panels": []
+}

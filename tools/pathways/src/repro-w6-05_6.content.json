@@ -1,0 +1,520 @@
+{
+ "name": "abnormal labour overview",
+ "title": "Abnormal labour: induce labour that has not begun, augment labour that is too slow by fixing the 4 P's, deliver with forceps or vacuum only when fully dilated with the head engaged and otherwise by cesarean section, offer a trial of labour after cesarean only when every criterion is met while watching for uterine rupture, and treat postpartum hemorrhage by its cause and stage; a panel lists the contraindications to labour",
+ "col_w": 232,
+ "root": {
+  "title": "Labour is not going to plan: which fix, in what order?",
+  "lines": [
+   "reach for them in this order: induce or augment → forceps or vacuum → cesarean section (C/S)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_go",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "Labour must START or SPEED UP",
+   "lines": [
+    "has it begun? is it moving?"
+   ]
+  },
+  {
+   "id": "g_out",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "Baby must come OUT: which route?",
+   "lines": [
+    "fully dilated + head engaged → instrument; if not → C/S"
+   ]
+  },
+  {
+   "id": "g_prev",
+   "cols": [
+    4,
+    4
+   ],
+   "title": "Previous C/S",
+   "lines": [
+    "labour, or repeat C/S?"
+   ]
+  },
+  {
+   "id": "g_pph",
+   "cols": [
+    5,
+    5
+   ],
+   "title": "AFTER birth: bleeding",
+   "lines": [
+    "which T, and how much?"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "when",
+  "check",
+  "do"
+ ],
+ "row_names": {
+  "when": "WHEN",
+  "check": "CHECK FIRST",
+  "do": "DO, IN ORDER"
+ },
+ "columns": [
+  {
+   "id": "ind",
+   "colour": "teal",
+   "drop_label": "not in labour",
+   "head": [
+    [
+     [
+      "h",
+      "Induction of labour",
+      [
+       "start labour that has not begun"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "Mother or fetus at ↑ risk",
+      [
+       "• post dates",
+       "• preeclampsia, diabetes, growth restriction",
+       "• low risk at 39 weeks: fewer C/S"
+      ]
+     ]
+    ]
+   ],
+   "check": [
+    [
+     [
+      "w",
+      "1 · No contraindication to labour",
+      [
+       "see the panel ↓"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Bishop score of the cervix",
+      [
+       "• < 6 unfavourable: RIPEN first",
+       "• > 6 favourable: straight to step 2"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "ok",
+      "1 · Ripen the cervix to ~2 cm",
+      [
+       "• prostaglandins: Cervidil, Prostin gel, misoprostol",
+       "• mechanical: Foley catheter balloon"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Artificial rupture of membranes (ARM)",
+      [
+       "may start labour on its own"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · IV oxytocin",
+      [
+       "if contractions do not start"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dys",
+   "colour": "blue",
+   "drop_label": "too slow",
+   "head": [
+    [
+     [
+      "h",
+      "Labour dystocia",
+      [
+       "abnormally SLOW labour",
+       "the #1 reason cited for C/S"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "Slow progress",
+      [
+       "• slow dilatation: failure to progress",
+       "• slow descent: failure to descend"
+      ]
+     ]
+    ]
+   ],
+   "check": [
+    [
+     [
+      "w",
+      "Which of the 4 P's? Fix what you can",
+      [
+       "• Power, Psyche (support): yes",
+       "• Passenger: position, presentation",
+       "• Passage (bony pelvis): never"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "ok",
+      "Power: 1 · ARM → 2 · IV oxytocin",
+      [
+       "titrate to contractions + cervical change",
+       "~can't track them? intrauterine pressure catheter"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Passenger + Psyche",
+      [
+       "• rotate to occiput anterior",
+       "• breech: external cephalic version, before labour",
+       "• continuous support in labour"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Too big to fit → C/S",
+      [
+       "cephalopelvic disproportion (CPD)"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "opv",
+   "colour": "purple",
+   "drop_label": "2nd stage",
+   "head": [
+    [
+     [
+      "h",
+      "Forceps or vacuum",
+      [
+       "speeds up the 2nd stage"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "Indications",
+      [
+       "• atypical or abnormal fetal heart rate (FHR): #1",
+       "• prolonged 2nd stage or exhaustion",
+       "• must not strain: heart, brain vessels"
+      ]
+     ]
+    ]
+   ],
+   "check": [
+    [
+     [
+      "bad",
+      "NO instrument if ANY → C/S",
+      [
+       "• head not engaged",
+       "• cervix not fully dilated",
+       "• not vertex, or CPD"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "ok",
+      "Vacuum: traction only",
+      [
+       "• rotation > 45° → NOT vacuum",
+       "• stop: 3 contractions, 3 pop-offs, 20 min"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Forceps: can also ROTATE",
+      [
+       "stop: can't apply, no descent, 20 min"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cs",
+   "colour": "orange",
+   "drop_label": "can't deliver vaginally",
+   "head": [
+    [
+     [
+      "h",
+      "Cesarean section",
+      [
+       "the big four = 70% of C/S"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "Labour fails",
+      [
+       "• dystocia",
+       "• atypical or abnormal FHR"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Should not labour",
+      [
+       "• previous C/S",
+       "• breech or transverse",
+       "• previa, herpes, HIV, twins"
+      ]
+     ]
+    ]
+   ],
+   "check": [
+    [
+     [
+      "w",
+      "Uterine incision",
+      [
+       "• low transverse: standard, later labour OK",
+       "• classical or T: NO labour ever after"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "ok",
+      "Give antibiotics",
+      [
+       "endometritis 4–5%, 35–40% without"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Risks to plan for",
+      [
+       "• clots: 4× a vaginal birth",
+       "• next pregnancy: previa 2–3×, accreta 5×"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tol",
+   "colour": "brown",
+   "drop_label": "previous C/S",
+   "head": [
+    [
+     [
+      "h",
+      "Trial of labour after C/S (TOLAC)",
+      [
+       "success = vaginal birth after C/S (VBAC), 60–80%"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "ok",
+      "OFFER if ALL of these",
+      [
+       "• 1–2 prior low transverse C/S",
+       "• > 18 months since",
+       "• laparotomy possible within 30 min"
+      ]
+     ]
+    ]
+   ],
+   "check": [
+    [
+     [
+      "bad",
+      "Repeat C/S if ANY",
+      [
+       "• classical or inverted-T scar",
+       "• uterine cavity entered, or past rupture",
+       "• she prefers a repeat C/S"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Odds of a VBAC",
+      [
+       "• ↑ prior vaginal birth; last C/S for breech",
+       "• ↓ last C/S for dystocia; needs induction"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "bad",
+      "Labour, WATCHING for uterine RUPTURE (0.1%)",
+      [
+       "• atypical or abnormal FHR comes FIRST",
+       "• contractions stop, presenting part lost",
+       "• pain, bleeding, mother unstable"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pph",
+   "colour": "magenta",
+   "drop_label": "bleeding after birth",
+   "head": [
+    [
+     [
+      "h",
+      "Postpartum hemorrhage (PPH)",
+      [
+       "> 500 mL vaginal, > 1000 mL at C/S",
+       "or ANY loss making her unstable"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "4 T's: TONE (atony) is #1",
+      [
+       "• tissue: retained placenta, membranes",
+       "• trauma: tears, rupture, inversion",
+       "• thrombin: clotting failure"
+      ]
+     ]
+    ]
+   ],
+   "check": [
+    [
+     [
+      "w",
+      "1 · ABCs + get help",
+      [
+       "bimanual exam, fundal massage, empty the bladder"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Uterus FIRM?",
+      [
+       "→ look for vaginal, cervical TEARS",
+       "soft → uterotonics ↓"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "ok",
+      "Stage 1 (500–1000 mL): oxytocin",
+      [
+       "first-line uterotonic"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Stage 2 (1000–1500 mL, pulse > 110)",
+      [
+       "• ergonovine (NOT hypertension) or carboprost (NOT asthma)",
+       "• + tranexamic acid 1 g IV",
+       "• look for the other T's"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Stage 3 (> 1500 mL, systolic < 80)",
+      [
+       "• full resuscitation: see HEMORRHAGIC SHOCK chart",
+       "• still bleeding: tamponade, embolization, surgery"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "NO labour (→ C/S) if ANY of these",
+   "cols": 3,
+   "items": [
+    "placenta previa, vasa previa, cord presentation",
+    "abnormal (transverse) lie",
+    "prior classical C/S or major uterine surgery",
+    "active genital herpes",
+    "invasive cervical cancer"
+   ]
+  }
+ ]
+}

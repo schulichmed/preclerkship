@@ -1,0 +1,65 @@
+{
+ "title": "Early pregnancy counselling: what to tell her about lifestyle, substances and medicines, food, travel and nausea",
+ "root": "Early pregnancy counselling: say what is safe, name the few real risks",
+ "width": 1300,
+ "groups": [
+  {
+   "title": "Lifestyle",
+   "desc": "Safer than she fears.",
+   "color": "sens",
+   "sections": [{"drugs": [
+    {"name": "Alcohol",
+     "moa": "Zero is safest; low levels unlikely to harm.",
+     "chips": [["zero safest", "good"]]},
+    {"name": "Exercise", "star": true,
+     "moa": "Aerobic + strength, whatever her prior level.",
+     "chips": [["PARmed-X", "plain"]]},
+    {"name": "Weight gain",
+     "moa": "Lower BMI → gain more; discuss respectfully."}
+   ]}]
+  },
+  {
+   "title": "Substances + medicines",
+   "desc": "Ask everyone, periodically.",
+   "color": "anti",
+   "sections": [{"drugs": [
+    {"name": "Tobacco, cannabis",
+     "moa": "Adverse pregnancy + childhood outcomes.",
+     "chips": [["cessation", "bad"]]},
+    {"name": "Likely safe", "star": true,
+     "moa": "Antihistamines, antiemetics, puffers, antidepressants, common antibiotics."},
+    {"name": "SSRIs",
+     "moa": "No birth defects; slight ↑ postpartum hemorrhage.",
+     "chips": [["PPH ↑", "warn"]]}
+   ]}]
+  },
+  {
+   "title": "Food",
+   "desc": "Undercooked meat, not cats, is the toxo risk.",
+   "color": "secr",
+   "sections": [{"drugs": [
+    {"name": "Very low risk",
+     "moa": "Raw eggs, deli meat, soft cheese, sushi, most fish."},
+    {"name": "Avoid or limit", "star": true,
+     "moa": "Undercooked meat → toxoplasmosis; top-predator fish (mercury).",
+     "lines": [{"label": "Toxo:", "text": "chorioretinitis, hydrocephalus, intracranial calcifications.", "kind": "bad"}]},
+    {"name": "Caffeine",
+     "moa": "≤ 300 mg/day (≈ 2 cups) is safe.",
+     "chips": [["≤ 300 mg", "good"]]}
+   ]}]
+  },
+  {
+   "title": "Travel + nausea",
+   "desc": "NVP: from 4 wk, peaks 9 wk, gone by end of T1.",
+   "color": "rose",
+   "sections": [{"drugs": [
+    {"name": "Travel",
+     "moa": "Safest 18–23 wk; insurance rarely covers the baby.",
+     "chips": [["18–23 wk", "good"]]},
+    {"name": "Nausea + vomiting", "star": true,
+     "moa": "Ginger, acupressure first.",
+     "lines": [{"label": "Drugs:", "text": "doxylamine/pyridoxine, dimenhydrinate.", "kind": "ink"}]}
+   ]}]
+  }
+ ]
+}

@@ -1,0 +1,357 @@
+{
+ "name": "valvular heart disease overview",
+ "title": "Valvular heart disease decision chart: a murmur is sorted by timing (systolic or diastolic) and site into aortic stenosis, mitral regurgitation, aortic regurgitation or mitral stenosis; each column gives the murmur and signs, the echocardiogram findings that grade severity, and treatment in order",
+ "col_w": 236,
+ "root": {
+  "title": "A murmur: SYSTOLIC or DIASTOLIC, and WHERE is it loudest?",
+  "lines": [
+   "an echocardiogram (echo) is the test of choice for every valve lesion; ECG and chest X-ray only show the consequences",
+   "atrial or ventricular septal defect: see the CONGENITAL HEART DISEASE chart"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_sys",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "SYSTOLIC: between S1 and S2",
+   "lines": [
+    "the BASE and the radiation decide",
+    "NOT these: left sternal border, LOUDER on inspiration = tricuspid regurgitation",
+    "mid-systolic CLICK = mitral valve prolapse"
+   ]
+  },
+  {
+   "id": "g_dia",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "DIASTOLIC: right after S2",
+   "lines": [
+    "always pathological: the site decides"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "MURMUR & SIGNS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "as",
+   "colour": "teal",
+   "drop_label": "BASE → carotids",
+   "head": [
+    [
+     [
+      "h",
+      "Aortic stenosis (AS)",
+      [
+       "calcific in the elderly, bicuspid valve in men in their 40s–50s"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Mid-systolic, crescendo-decrescendo",
+      [
+       "• radiates to the CAROTIDS",
+       "• LATER peak = more severe (loudness is not)",
+       "• soft S2, slow and weak pulse"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Late symptoms: act now",
+      [
+       "• angina",
+       "• syncope on exertion",
+       "• dyspnea (heart failure)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Transthoracic echo (TTE)",
+      [
+       "• SEVERE: valve area < 1.0 cm²",
+       "• or mean gradient > 40 mmHg"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "No symptoms: follow for them",
+      [
+       "no drug slows it (statins do not)"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "SYMPTOMS or severe → VALVE REPLACEMENT",
+      [
+              "• which valve: see the VALVE SURGERY chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mr",
+   "colour": "orange",
+   "drop_label": "APEX → axilla",
+   "head": [
+    [
+     [
+      "h",
+      "Mitral regurgitation (MR)",
+      [
+       "chronic: prolapse, rheumatic, cardiomyopathy",
+       "acute: papillary muscle or chordae rupture"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Holosystolic, blowing, at the APEX",
+      [
+       "• radiates to the AXILLA",
+       "• S3, displaced apex beat",
+       "• NORMAL carotid upstroke (unlike AS)"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "ACUTE: pulmonary edema, low BP, shock",
+      [
+       "murmur may be SOFT or absent"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Echo (gold standard)",
+      [
+       "• cause and severity",
+       "• left ventricle (LV) size and function"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Medical",
+      [
+       "• low salt, diuretics for volume",
+       "• BP control: ACE inhibitor or beta blocker",
+       "• atrial fibrillation (AF): anticoagulate + rate control"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · SURGERY: severe primary MR",
+      [
+       "• with symptoms",
+       "• or no symptoms but the LV starting to fail",
+       "• REPAIR (or MitraClip) over replacement"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ar",
+   "colour": "purple",
+   "drop_label": "left sternal BORDER",
+   "head": [
+    [
+     [
+      "h",
+      "Aortic regurgitation (AR)",
+      [
+       "LEAFLET (bicuspid, endocarditis) → left of the sternum",
+       "aortic ROOT (Marfan, hypertension) → right"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Early diastolic, high-pitched decrescendo",
+      [
+       "• Erb's point, leaning FORWARD",
+       "• LENGTH tracks severity, not loudness",
+       "• WIDE pulse pressure, collapsing pulse"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "ACUTE (endocarditis, dissection)",
+      [
+       "• sudden dyspnea, low BP, pulmonary edema",
+       "• short or inaudible murmur"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Echo",
+      [
+       "• cause and severity",
+       "• LV response and aortic root size"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "ACUTE → EMERGENCY surgery",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Chronic + SYMPTOMS → surgery",
+      [
+       "• leaflet → valve replacement",
+       "• root → valve-sparing operation"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "No symptoms: operate if the LV is failing",
+      [
+       "• ejection fraction (EF) < 50%",
+       "• end-systolic diameter > 50 mm",
+       "• end-diastolic diameter > 65 mm"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ms",
+   "colour": "blue",
+   "drop_label": "APEX + opening snap",
+   "head": [
+    [
+     [
+      "h",
+      "Mitral stenosis (MS)",
+      [
+       "almost always RHEUMATIC (after group A strep)"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Opening SNAP + low diastolic RUMBLE",
+      [
+       "• at the apex, left lateral position",
+       "• loud S1",
+       "• exertional DYSPNEA, first in pregnancy, anemia, fever"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "The left atrium (LA) dilates",
+      [
+       "• AF → LA clot → STROKE",
+       "• pulmonary hypertension → right heart failure"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Echo (gold standard)",
+      [
+       "• SEVERE: area < 1.0 cm²",
+       "• mean gradient > 10 mmHg",
+       "• pulmonary artery pressure > 50 mmHg"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Medical",
+      [
+       "• low salt, diuretics if congested",
+       "• AF: beta blocker + ANTICOAGULATE"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · SEVERE + symptoms: open the valve",
+      [
+       "• balloon VALVULOPLASTY if rheumatic",
+       "• REPLACEMENT if calcific, LA clot or severe MR"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

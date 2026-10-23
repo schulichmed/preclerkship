@@ -1,0 +1,188 @@
+{
+ "name": "diagnosis and management of type 1 diabetes pathway",
+ "title": "New-onset type 1 diabetes in a child: random glucose and urine dipstick, how many abnormal measurements make the diagnosis, then diabetic ketoacidosis or education and insulin",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 250,
+   "y": 10,
+   "w": 420,
+   "kind": "plain",
+   "title": "Child with polyuria, polydipsia, weight loss",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 250,
+   "y": 88,
+   "w": 420,
+   "kind": "plain",
+   "title": "Random plasma glucose",
+   "lines": [
+    "+ urine dipstick for glucose/ketones"
+   ]
+  },
+  {
+   "id": "C",
+   "x": 300,
+   "y": 190,
+   "w": 320,
+   "kind": "plain",
+   "title": "Glucose ≥ 11.1 mmol/L?",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 20,
+   "y": 270,
+   "w": 250,
+   "kind": "bad",
+   "title": "Consider other causes",
+   "lines": [
+    "Repeat testing if suspicion persists"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 330,
+   "y": 290,
+   "w": 260,
+   "kind": "plain",
+   "title": "Symptoms present?",
+   "lines": []
+  },
+  {
+   "id": "F",
+   "x": 150,
+   "y": 400,
+   "w": 290,
+   "kind": "ok",
+   "title": "DIAGNOSIS MADE",
+   "lines": [
+    "1 abnormal measurement is enough"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 480,
+   "y": 400,
+   "w": 290,
+   "kind": "plain",
+   "title": "Requires 2 abnormal measurements",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 230,
+   "y": 520,
+   "w": 460,
+   "kind": "plain",
+   "title": "Vomiting, abdominal pain, hyperventilation, drowsiness?",
+   "lines": []
+  },
+  {
+   "id": "I",
+   "x": 40,
+   "y": 650,
+   "w": 400,
+   "kind": "bad",
+   "title": "Suspect diabetic ketoacidosis (DKA)",
+   "lines": [
+    "arterial blood gas + serum/urine ketones",
+    "→ emergent treatment"
+   ]
+  },
+  {
+   "id": "J",
+   "x": 480,
+   "y": 650,
+   "w": 400,
+   "kind": "ok",
+   "title": "Medically stable:",
+   "lines": [
+    "multidisciplinary education + insulin"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C"
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "from_side": "left",
+   "to_side": "top",
+   "path": "M300 214H145V268",
+   "label": "no",
+   "label_at": [
+    222,
+    206
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "label": "yes",
+   "label_at": [
+    480,
+    270
+   ]
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "from_dx": -50,
+   "label": "YES — usual case",
+   "label_at": [
+    228,
+    374
+   ]
+  },
+  {
+   "from": "E",
+   "to": "G",
+   "from_dx": 50,
+   "label": "no",
+   "label_at": [
+    580,
+    360
+   ]
+  },
+  {
+   "from": "F",
+   "to": "H",
+   "to_dx": -100
+  },
+  {
+   "from": "G",
+   "to": "H",
+   "to_dx": 100
+  },
+  {
+   "from": "H",
+   "to": "I",
+   "from_dx": -100,
+   "label": "yes",
+   "label_at": [
+    262,
+    605
+   ]
+  },
+  {
+   "from": "H",
+   "to": "J",
+   "from_dx": 100,
+   "label": "no",
+   "label_at": [
+    662,
+    605
+   ]
+  }
+ ]
+}

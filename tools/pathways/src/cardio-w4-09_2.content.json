@@ -1,0 +1,309 @@
+{
+ "name": "advanced heart failure overview",
+ "title": "Advanced (stage D) heart failure, flagged by I NEED HELP: refer to an advanced heart failure centre; a patient who wants advanced therapy and is advanced enough gets a transplant if there is no contraindication or a ventricular assist device as destination therapy if there is; inotropes are a bridge or palliation; palliative care should start early",
+ "col_w": 250,
+ "root": {
+  "title": "COLD despite therapy: is it ADVANCED heart failure (HF), and which option FITS?",
+  "lines": [
+   "I NEED HELP: Inotropes · New York Heart Association (NYHA) III–IV or high B-type natriuretic peptide (BNP)",
+   "End-organ dysfunction · ejection fraction (EF) < 20% · Defibrillator shocks · ≥ 2 HF Hospitalizations in 12 months",
+   "Edema or escalating diuretics · Low systolic BP < 90 · Prognostic drugs cut back",
+   "→ refer to an advanced HF centre: being referred is NOT being listed"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_adv",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "WANTS advanced therapy: is it ADVANCED enough?",
+   "lines": [
+    "severe symptoms + cardiopulmonary exercise testing + invasive hemodynamics",
+    "not advanced enough → keep up medical therapy (see the HEART FAILURE chart)"
+   ]
+  },
+  {
+   "id": "g_ino",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "Needs FLOW now",
+   "lines": [
+    "prognostic drugs no longer help"
+   ]
+  },
+  {
+   "id": "g_pal",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "Does NOT want advanced options",
+   "lines": []
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_ci",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "Any CONTRAINDICATION to transplant?",
+   "lines": [
+    "• major comorbidity: cancer in 5 years, lung, kidney or liver disease",
+    "• psychosocial or immunologic issues",
+    "• surgical (prior sternotomy)",
+    "• age"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "who",
+  "tx",
+  "watch"
+ ],
+ "row_names": {
+  "who": "WHO",
+  "tx": "WHAT IT INVOLVES",
+  "watch": "WATCH FOR"
+ },
+ "columns": [
+  {
+   "id": "tx",
+   "colour": "teal",
+   "drop_from": "t_ci",
+   "drop_label": "NONE",
+   "head": [
+    [
+     [
+      "h",
+      "Heart transplant",
+      [
+       "orthotopic: donor heart in place of the recipient's"
+      ]
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Wants it + advanced enough + NO contraindication",
+      [
+       "few patients qualify: donors are scarce"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Listed",
+      [
+       "bridge with a VAD or inotropes"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · After: lifelong immunosuppression",
+      [
+       "• tacrolimus + mycophenolate + prednisone",
+       "• prophylaxis: pneumocystis, cytomegalovirus"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "w",
+      "REJECTION",
+      [
+       "routine endomyocardial biopsies"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Late deaths",
+      [
+       "• cardiac allograft vasculopathy",
+       "• malignancy, infection"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "vad",
+   "colour": "blue",
+   "drop_from": "t_ci",
+   "drop_label": "PRESENT",
+   "head": [
+    [
+     [
+      "h",
+      "Ventricular assist device (VAD)",
+      [
+       "a pump: ventricle → arterial circulation"
+      ]
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "DESTINATION therapy",
+      [
+       "• not a transplant candidate, but a VAD candidate",
+       "• or a BRIDGE to transplant or a decision"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Implanted pump",
+      [
+       "driveline out to a controller + battery"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "bad",
+      "PULSELESS: continuous flow",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "Complications, commonest first",
+      [
+       "• driveline infection",
+       "• GI bleeding",
+       "• stroke or intracranial hemorrhage",
+       "• device thrombosis, pump failure"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ino",
+   "colour": "orange",
+   "drop_label": "bridge or palliation",
+   "head": [
+    [
+     [
+      "h",
+      "Inotropes",
+      [
+       "dobutamine, milrinone, dopamine"
+      ]
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Cold patient",
+      [
+       "• BRIDGE to transplant or VAD",
+       "• or for symptoms (palliation)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Consider REDUCING the beta blocker",
+      [
+       "its negative inotropy no longer helps"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "bad",
+      "Symptoms better, life NOT longer",
+      [
+       "may trigger arrhythmias"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pal",
+   "colour": "slate",
+   "drop_label": "symptoms first",
+   "head": [
+    [
+     [
+      "h",
+      "Palliative care",
+      [
+       "NO therapy cures HF, not even transplant"
+      ]
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Start EARLY",
+      [
+       "the HF course is unpredictable, so it is often too late"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "'Palli-active' care",
+      [
+       "• destination VAD",
+       "• home inotropes, home IV diuretics",
+       "• telehomecare"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "w",
+      "Goal: improve SYMPTOMS",
+      [
+       "longer life is possible, not promised"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

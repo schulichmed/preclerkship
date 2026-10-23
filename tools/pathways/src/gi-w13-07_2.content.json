@@ -1,0 +1,98 @@
+{
+ "name": "appendicitis and diverticulitis overview",
+ "title": "Migrating lower abdominal pain with fever: right-sided appendicitis (ultrasound, usually surgery) or left-sided diverticulitis (CT, uncomplicated managed as an outpatient, abscess or perforation escalating to drainage or surgery), plus painless diverticular bleeding and stricture, each with presentation, numbered investigations and treatment in order",
+ "col_w": 238,
+ "root": {
+  "title": "Migrating abdominal pain + fever: RIGHT (appendix) or LEFT (diverticula)?",
+  "lines": [
+   "both are an OBSTRUCTED, inflamed pouch, and both are very common",
+   "antibiotics for both: ceftriaxone + metronidazole, OR a carbapenem or piperacillin-tazobactam alone"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_r",
+   "cols": [0, 0],
+   "title": "RIGHT: umbilicus → right lower quadrant",
+   "lines": ["young · after a viral cold"]
+  },
+  {
+   "id": "g_l",
+   "cols": [1, 2],
+   "title": "LEFT: suprapubic → left lower quadrant",
+   "lines": ["rare < 35 · rises each decade · obesity, poor diet", "CT abdomen/pelvis decides: complicated?"]
+  },
+  {
+   "id": "g_p",
+   "cols": [3, 3],
+   "title": "PAINLESS, after attacks",
+   "lines": []
+  }
+ ],
+ "sections": ["head", "pres", "inv", "tx"],
+ "row_names": {"pres": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
+ "dashed_sections": ["pres"],
+ "columns": [
+  {
+   "id": "app",
+   "colour": "teal",
+   "drop_label": "RIGHT",
+   "head": [[["h", "Appendicitis", ["fecalith or lymphoid swelling blocks the appendix"]]]],
+   "pres": [
+    [["t", "Umbilical pain → right lower quadrant", ["• age 4 and up, peak 10-25", "• often after an upper respiratory infection"]]],
+    [["w", "Exam", ["• McBurney's point tenderness", "• Rovsing's sign"]]]
+   ],
+   "inv": [
+    [["w", "1 · Ask", ["• could this be PREGNANCY (ectopic)?", "• Crohn's symptoms or family history?"]]],
+    [["w", "2 · Blood count, electrolytes, CRP", ["C-reactive protein"]]],
+    [["t", "3 · ULTRASOUND", []]]
+   ],
+   "tx": [
+    [["ok", "1 · Antibiotics + SURGERY, usually", ["now, or later: it often RECURS"]]],
+    [["warn", "Managed without surgery and > 40", ["→ COLONOSCOPY (appendiceal neoplasm)"]]]
+   ]
+  },
+  {
+   "id": "unc",
+   "colour": "blue",
+   "drop_label": "uncomplicated",
+   "head": [[["h", "Uncomplicated diverticulitis", ["obstructed, inflamed false diverticula"]]]],
+   "pres": [[["t", "Suprapubic → LEFT lower quadrant pain", ["fever"]]]],
+   "inv": [
+    [["w", "1 · Ask", ["• ulcerative colitis?", "• colorectal cancer screening up to date?", "• colonic ischemia risks: heart disease, obesity, smoking"]]],
+    [["w", "2 · Rectal exam, blood count, electrolytes", []]]
+   ],
+   "tx": [
+    [["ok", "1 · OUTPATIENT", ["oral antibiotics, or anti-inflammatories alone"]]],
+    [["ok", "2 · Colonoscopy LATER, for cancer", ["NOT during the attack"]]],
+    [["bad", "Usually NO surgery", []]]
+   ]
+  },
+  {
+   "id": "com",
+   "colour": "orange",
+   "drop_label": "abscess or perforation",
+   "head": [[["h", "Complicated diverticulitis", ["abscess or perforation on CT"]]]],
+   "pres": [[["t", "Diverticulitis, PLUS", ["• an abscess", "• or perforation, shock"]]]],
+   "inv": [[["t", "1 · CT: how big is the abscess?", []]]],
+   "tx": [
+    [["warn", "Abscess < 5 cm → admit, IV antibiotics", []]],
+    [["warn", "Abscess > 5 cm → PERCUTANEOUS DRAIN", []]],
+    [["bad", "PERFORATION or SHOCK → urgent surgery", []]]
+   ]
+  },
+  {
+   "id": "bld",
+   "colour": "slate",
+   "drop_label": "bleed or blockage",
+   "head": [[["h", "Diverticular bleeding or stricture", ["after repeated attacks"]]]],
+   "pres": [
+    [["bad", "BLEEDING: massive, PAINLESS", ["• the #1 cause of lower GI bleeding", "• never during an attack"]]],
+    [["warn", "STRICTURE: scarred colon", ["presents as a large bowel obstruction"]]]
+   ],
+   "inv": [[["w", "Bleeding: GI bleeding notes", []]]],
+   "tx": [[["w", "Stricture: BOWEL OBSTRUCTION chart", []]]]
+  }
+ ],
+ "panels": []
+}

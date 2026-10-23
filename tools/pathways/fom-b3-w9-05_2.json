@@ -1,0 +1,761 @@
+{
+ "name": "macrocytic anemia overview",
+ "width": 1456,
+ "title": "Macrocytic anemia: the film splits megaloblastic (vitamin B12 or folate deficiency, told apart by methylmalonic acid and homocysteine) from non-megaloblastic causes (liver disease and alcohol, reticulocytosis, pseudo-macrocytosis, hypothyroidism)",
+ "kinds": {
+  "b12_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "b12_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "b12_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "fol_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fol_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "fol_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "liv_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "liv_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "liv_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ret_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ret_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ret_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ps_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ps_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "ps_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "thy_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "thy_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "thy_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 352,
+   "w": 228,
+   "h": 730,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 270,
+   "y": 352,
+   "w": 228,
+   "h": 730,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 528,
+   "y": 352,
+   "w": 228,
+   "h": 730,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 758,
+   "y": 352,
+   "w": 228,
+   "h": 730,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 988,
+   "y": 352,
+   "w": 228,
+   "h": 730,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 1218,
+   "y": 352,
+   "w": 228,
+   "h": 730,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 460,
+   "h": 214,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 714,
+   "h": 142,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 896,
+   "h": 178,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 363,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Macrocytic anemia (mean cell volume, MCV > 100 fL): is it MEGALOBLASTIC?",
+   "lines": [
+    "ABCDEF: Alcohol · B12 · Compensatory reticulocytosis · Drugs, dysplasia · Endocrine · Folate, fetus",
+    "1 · complete blood count (CBC) + reticulocytes + film"
+   ]
+  },
+  {
+   "id": "g_mb",
+   "x": 45,
+   "y": 138,
+   "w": 448,
+   "h": 60,
+   "kind": "plain",
+   "title": "MEGALOBLASTIC: DNA synthesis impaired",
+   "lines": [
+    "oval macrocytes, hypersegmented neutrophils"
+   ]
+  },
+  {
+   "id": "g_nm",
+   "x": 533,
+   "y": 138,
+   "w": 908,
+   "h": 60,
+   "kind": "plain",
+   "title": "NON-megaloblastic: more membrane, DNA normal",
+   "lines": [
+    "dysplasia: see the MYELODYSPLASTIC SYNDROME chart"
+   ]
+  },
+  {
+   "id": "t_mm",
+   "x": 45,
+   "y": 238,
+   "w": 448,
+   "h": 42,
+   "kind": "plain",
+   "title": "2 · Methylmalonic acid (MMA) + homocysteine",
+   "lines": []
+  },
+  {
+   "id": "b12_head_0_0",
+   "x": 45,
+   "y": 360,
+   "w": 218,
+   "h": 60,
+   "kind": "b12_h",
+   "title": "Vitamin B12 deficiency",
+   "lines": [
+    "stores last 3–4 years"
+   ]
+  },
+  {
+   "id": "fol_head_0_0",
+   "x": 275,
+   "y": 360,
+   "w": 218,
+   "h": 60,
+   "kind": "fol_h",
+   "title": "Folate deficiency",
+   "lines": [
+    "stores last 3–6 months"
+   ]
+  },
+  {
+   "id": "liv_head_0_0",
+   "x": 533,
+   "y": 360,
+   "w": 218,
+   "h": 60,
+   "kind": "liv_h",
+   "title": "Liver disease, alcohol",
+   "lines": [
+    "lipid added to the membrane"
+   ]
+  },
+  {
+   "id": "ret_head_0_0",
+   "x": 763,
+   "y": 360,
+   "w": 218,
+   "h": 60,
+   "kind": "ret_h",
+   "title": "Reticulocytosis",
+   "lines": [
+    "marrow compensating"
+   ]
+  },
+  {
+   "id": "ps_head_0_0",
+   "x": 993,
+   "y": 360,
+   "w": 218,
+   "h": 60,
+   "kind": "ps_h",
+   "title": "Pseudo-macrocytosis",
+   "lines": [
+    "clumps counted as one big cell"
+   ]
+  },
+  {
+   "id": "thy_head_0_0",
+   "x": 1223,
+   "y": 360,
+   "w": 218,
+   "h": 60,
+   "kind": "thy_h",
+   "title": "Hypothyroidism",
+   "lines": []
+  },
+  {
+   "id": "b12_clue_0_0",
+   "x": 45,
+   "y": 460,
+   "w": 218,
+   "h": 87,
+   "kind": "b12_t",
+   "title": "NEUROLOGIC signs",
+   "lines": [
+    "• lost proprioception, neuropathy",
+    "• cognition, mood; children: delay"
+   ]
+  },
+  {
+   "id": "b12_clue_1_0",
+   "x": 45,
+   "y": 569,
+   "w": 218,
+   "h": 105,
+   "kind": "b12_w",
+   "title": "Causes",
+   "lines": [
+    "• pernicious anemia, gastrectomy",
+    "• ileal resection, Crohn's",
+    "• vegan diet"
+   ]
+  },
+  {
+   "id": "fol_clue_0_0",
+   "x": 275,
+   "y": 460,
+   "w": 218,
+   "h": 60,
+   "kind": "fol_t",
+   "title": "NO neurologic signs",
+   "lines": [
+    "glossitis, mild jaundice, diarrhea"
+   ]
+  },
+  {
+   "id": "fol_clue_1_0",
+   "x": 275,
+   "y": 542,
+   "w": 218,
+   "h": 132,
+   "kind": "fol_w",
+   "title": "Causes",
+   "lines": [
+    "• alcohol, poor diet, jejunal resection",
+    "• anticonvulsants, sulfasalazine, the pill",
+    "• pregnancy, hemolysis, dialysis"
+   ]
+  },
+  {
+   "id": "liv_clue_0_0",
+   "x": 533,
+   "y": 460,
+   "w": 218,
+   "h": 214,
+   "kind": "liv_t",
+   "title": "Alcohol, liver disease",
+   "lines": [
+    "alcohol: marrow toxic, platelets ↓"
+   ]
+  },
+  {
+   "id": "ret_clue_0_0",
+   "x": 763,
+   "y": 460,
+   "w": 218,
+   "h": 214,
+   "kind": "ret_t",
+   "title": "Bleeding or hemolysis",
+   "lines": []
+  },
+  {
+   "id": "ps_clue_0_0",
+   "x": 993,
+   "y": 460,
+   "w": 218,
+   "h": 96,
+   "kind": "ps_t",
+   "title": "Multiple myeloma",
+   "lines": [
+    "rouleaux"
+   ]
+  },
+  {
+   "id": "ps_clue_1_0",
+   "x": 993,
+   "y": 578,
+   "w": 218,
+   "h": 96,
+   "kind": "ps_w",
+   "title": "Cold agglutinin disease",
+   "lines": [
+    "agglutination"
+   ]
+  },
+  {
+   "id": "thy_clue_0_0",
+   "x": 1223,
+   "y": 460,
+   "w": 218,
+   "h": 214,
+   "kind": "thy_t",
+   "title": "Cold intolerance, weight gain",
+   "lines": [
+    "• constipation, hair loss",
+    "• depression, slow heart rate"
+   ]
+  },
+  {
+   "id": "b12_inv_0_0",
+   "x": 45,
+   "y": 714,
+   "w": 218,
+   "h": 60,
+   "kind": "b12_t",
+   "title": "1 · BOTH ↑",
+   "lines": [
+    "serum B12 low"
+   ]
+  },
+  {
+   "id": "b12_inv_1_0",
+   "x": 45,
+   "y": 796,
+   "w": 218,
+   "h": 60,
+   "kind": "b12_w",
+   "title": "2 · Antibody workup",
+   "lines": [
+    "± colonoscopy"
+   ]
+  },
+  {
+   "id": "fol_inv_0_0",
+   "x": 275,
+   "y": 714,
+   "w": 218,
+   "h": 142,
+   "kind": "fol_t",
+   "title": "1 · Homocysteine ↑ ONLY",
+   "lines": []
+  },
+  {
+   "id": "liv_inv_0_0",
+   "x": 533,
+   "y": 714,
+   "w": 218,
+   "h": 142,
+   "kind": "liv_t",
+   "title": "Film: ROUND macrocytes",
+   "lines": [
+    "neutrophils NORMAL · target cells"
+   ]
+  },
+  {
+   "id": "ret_inv_0_0",
+   "x": 763,
+   "y": 714,
+   "w": 218,
+   "h": 142,
+   "kind": "ret_t",
+   "title": "Reticulocytes ↑",
+   "lines": [
+    "hemolysis: see the HEMOLYTIC ANEMIA chart"
+   ]
+  },
+  {
+   "id": "ps_inv_0_0",
+   "x": 993,
+   "y": 714,
+   "w": 218,
+   "h": 142,
+   "kind": "ps_t",
+   "title": "MCV falsely high",
+   "lines": [
+    "a counter artifact"
+   ]
+  },
+  {
+   "id": "thy_inv_0_0",
+   "x": 1223,
+   "y": 714,
+   "w": 218,
+   "h": 142,
+   "kind": "thy_t",
+   "title": "Can come with pernicious anemia",
+   "lines": [
+    "autoimmune"
+   ]
+  },
+  {
+   "id": "b12_tx_0_0",
+   "x": 45,
+   "y": 896,
+   "w": 218,
+   "h": 96,
+   "kind": "ok",
+   "title": "B12 replacement",
+   "lines": [
+    "• IM cobalamin 100 mcg daily, 1–2 weeks",
+    "• or oral 1 mg"
+   ]
+  },
+  {
+   "id": "b12_tx_1_0",
+   "x": 45,
+   "y": 1014,
+   "w": 218,
+   "h": 60,
+   "kind": "ok",
+   "title": "Prevent",
+   "lines": [
+    "B12 after bowel resection"
+   ]
+  },
+  {
+   "id": "fol_tx_0_0",
+   "x": 275,
+   "y": 896,
+   "w": 218,
+   "h": 60,
+   "kind": "ok",
+   "title": "Oral folate 1–5 mg",
+   "lines": []
+  },
+  {
+   "id": "fol_tx_1_0",
+   "x": 275,
+   "y": 978,
+   "w": 218,
+   "h": 96,
+   "kind": "ok",
+   "title": "Prevent",
+   "lines": [
+    "• 0.4 mg in pregnancy",
+    "• B12 + folate in active hemolysis"
+   ]
+  },
+  {
+   "id": "liv_tx_0_0",
+   "x": 533,
+   "y": 896,
+   "w": 218,
+   "h": 178,
+   "kind": "ok",
+   "title": "Treat the liver · stop alcohol",
+   "lines": [
+    "replace nutritional deficiencies"
+   ]
+  },
+  {
+   "id": "ret_tx_0_0",
+   "x": 763,
+   "y": 896,
+   "w": 218,
+   "h": 178,
+   "kind": "ok",
+   "title": "Treat the bleed or the hemolysis",
+   "lines": []
+  },
+  {
+   "id": "ps_tx_0_0",
+   "x": 993,
+   "y": 896,
+   "w": 218,
+   "h": 178,
+   "kind": "ps_w",
+   "title": "Not true macrocytosis",
+   "lines": []
+  },
+  {
+   "id": "thy_tx_0_0",
+   "x": 1223,
+   "y": 896,
+   "w": 218,
+   "h": 178,
+   "kind": "ok",
+   "title": "Thyroid replacement",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_mb",
+   "path": "M743.0 88V113H269.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_nm",
+   "path": "M743.0 88V113H987.0V138"
+  },
+  {
+   "from": "g_mb",
+   "to": "t_mm",
+   "from_dx": 0
+  },
+  {
+   "from": "b12_clue_0_0",
+   "to": "b12_clue_1_0"
+  },
+  {
+   "from": "fol_clue_0_0",
+   "to": "fol_clue_1_0"
+  },
+  {
+   "from": "ps_clue_0_0",
+   "to": "ps_clue_1_0"
+  },
+  {
+   "from": "b12_inv_0_0",
+   "to": "b12_inv_1_0"
+  },
+  {
+   "from": "b12_tx_0_0",
+   "to": "b12_tx_1_0"
+  },
+  {
+   "from": "fol_tx_0_0",
+   "to": "fol_tx_1_0"
+  },
+  {
+   "from": "b12_head_0_0",
+   "to": "b12_clue_0_0"
+  },
+  {
+   "from": "b12_clue_1_0",
+   "to": "b12_inv_0_0"
+  },
+  {
+   "from": "b12_inv_1_0",
+   "to": "b12_tx_0_0"
+  },
+  {
+   "from": "t_mm",
+   "to": "b12_head_0_0",
+   "from_dx": -115,
+   "label": "MMA ↑ + homocysteine ↑",
+   "label_at": [
+    154.0,
+    320
+   ]
+  },
+  {
+   "from": "fol_head_0_0",
+   "to": "fol_clue_0_0"
+  },
+  {
+   "from": "fol_clue_1_0",
+   "to": "fol_inv_0_0"
+  },
+  {
+   "from": "fol_inv_0_0",
+   "to": "fol_tx_0_0"
+  },
+  {
+   "from": "t_mm",
+   "to": "fol_head_0_0",
+   "from_dx": 115,
+   "label": "homocysteine ↑ only",
+   "label_at": [
+    384.0,
+    320
+   ]
+  },
+  {
+   "from": "liv_head_0_0",
+   "to": "liv_clue_0_0"
+  },
+  {
+   "from": "liv_clue_0_0",
+   "to": "liv_inv_0_0"
+  },
+  {
+   "from": "liv_inv_0_0",
+   "to": "liv_tx_0_0"
+  },
+  {
+   "from": "g_nm",
+   "to": "liv_head_0_0",
+   "from_dx": -345,
+   "label": "round cells",
+   "label_at": [
+    642.0,
+    320
+   ]
+  },
+  {
+   "from": "ret_head_0_0",
+   "to": "ret_clue_0_0"
+  },
+  {
+   "from": "ret_clue_0_0",
+   "to": "ret_inv_0_0"
+  },
+  {
+   "from": "ret_inv_0_0",
+   "to": "ret_tx_0_0"
+  },
+  {
+   "from": "g_nm",
+   "to": "ret_head_0_0",
+   "from_dx": -115,
+   "label": "retics ↑",
+   "label_at": [
+    872.0,
+    320
+   ]
+  },
+  {
+   "from": "ps_head_0_0",
+   "to": "ps_clue_0_0"
+  },
+  {
+   "from": "ps_clue_1_0",
+   "to": "ps_inv_0_0"
+  },
+  {
+   "from": "ps_inv_0_0",
+   "to": "ps_tx_0_0"
+  },
+  {
+   "from": "g_nm",
+   "to": "ps_head_0_0",
+   "from_dx": 115,
+   "label": "clumps",
+   "label_at": [
+    1102.0,
+    320
+   ]
+  },
+  {
+   "from": "thy_head_0_0",
+   "to": "thy_clue_0_0"
+  },
+  {
+   "from": "thy_clue_0_0",
+   "to": "thy_inv_0_0"
+  },
+  {
+   "from": "thy_inv_0_0",
+   "to": "thy_tx_0_0"
+  },
+  {
+   "from": "g_nm",
+   "to": "thy_head_0_0",
+   "from_dx": 345,
+   "label": "hypothyroid",
+   "label_at": [
+    1332.0,
+    320
+   ]
+  }
+ ],
+ "panels": []
+}

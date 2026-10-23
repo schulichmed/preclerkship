@@ -1,0 +1,329 @@
+{
+ "name": "thyroid nodule overview",
+ "title": "Thyroid nodule decision chart: TSH first; a low TSH leads to a radioactive iodine uptake scan where a hot nodule is benign; otherwise ultrasound (ACR TI-RADS) sets the size for fine needle aspiration and the combined ultrasound and Bethesda cytology result chooses clinical follow-up, ultrasound surveillance, repeat biopsy, molecular testing or hemithyroidectomy, or surgery",
+ "col_w": 215,
+ "root": {
+  "title": "Thyroid nodule: is it CANCER? Check thyroid-stimulating hormone (TSH) FIRST",
+  "lines": [
+   "most are benign: hyperplasia, cyst, Hashimoto thyroiditis, adenoma",
+   "CANCER clues: child, male, 1st-degree relative, neck radiation · RAPID growth",
+   "dysphagia, hoarseness, stridor · a firm or FIXED mass, suspicious nodes"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_lo",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "TSH LOW",
+   "lines": [
+    "→ radioactive iodine uptake scan",
+    "COLD → ultrasound"
+   ]
+  },
+  {
+   "id": "g_us",
+   "cols": [
+    1,
+    5
+   ],
+   "title": "TSH normal or HIGH, or a COLD nodule → ULTRASOUND",
+   "lines": [
+    "American College of Radiology (ACR) TI-RADS: composition, echogenicity, shape, margin, echogenic foci"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_us",
+   "cols": [
+    1,
+    5
+   ],
+   "title": "TI-RADS level sets the size for fine needle aspiration (FNA), then Bethesda cytology",
+   "lines": [
+    "• TR1–2 (benign, not suspicious): NO FNA",
+    "• TR3: FNA if ≥ 2.5 cm · follow if ≥ 1.5 cm",
+    "• TR4: FNA if ≥ 1.5 cm · follow if ≥ 1 cm",
+    "• TR5: FNA if ≥ 1 cm · follow if ≥ 0.5 cm"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "when",
+  "do"
+ ],
+ "row_names": {
+  "when": "WHEN",
+  "do": "MANAGE"
+ },
+ "columns": [
+  {
+   "id": "hot",
+   "colour": "teal",
+   "drop_label": "HOT",
+   "head": [
+    [
+     [
+      "h",
+      "Hot nodule",
+      [
+       "high uptake: hyperfunctioning"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "HOT nodules are NEVER cancer",
+      [
+       "• Graves disease",
+       "• toxic multinodular goitre",
+       "• thyroid adenoma"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "ok",
+      "Treat the HYPERTHYROIDISM",
+      [
+       "no further nodule workup"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "fu",
+   "colour": "olive",
+   "drop_from": "t_us",
+   "drop_label": "LOW risk",
+   "head": [
+    [
+     [
+      "h",
+      "Clinical follow-up",
+      []
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "TR3 + BENIGN cytology",
+      [
+       "Bethesda II"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "ok",
+      "Follow clinically",
+      [
+       "no repeat ultrasound or biopsy unless the nodule CHANGES"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sv",
+   "colour": "blue",
+   "drop_from": "t_us",
+   "drop_label": "MODERATE risk",
+   "head": [
+    [
+     [
+      "h",
+      "Ultrasound surveillance",
+      []
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "TR4 + BENIGN cytology",
+      []
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "ok",
+      "Repeat ultrasound for ~5 years",
+      [
+       "± repeat biopsy"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rb",
+   "colour": "orange",
+   "drop_from": "t_us",
+   "drop_label": "UNCLEAR",
+   "head": [
+    [
+     [
+      "h",
+      "Repeat biopsy",
+      []
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "Cytology does not answer it",
+      [
+       "• NON-DIAGNOSTIC (Bethesda I)",
+       "• atypia of undetermined significance (Bethesda III)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Or they DISAGREE",
+      [
+       "TR5 but BENIGN cytology"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "warn",
+      "Repeat FNA (ultrasound-guided)",
+      [
+       "Bethesda III: or molecular testing, imaging follow-up, or hemithyroidectomy"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "fn",
+   "colour": "purple",
+   "drop_from": "t_us",
+   "drop_label": "FOLLICULAR",
+   "head": [
+    [
+     [
+      "h",
+      "Follicular neoplasm",
+      [
+       "Bethesda IV"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "FNA CANNOT tell",
+      [
+       "• follicular ADENOMA (benign) from",
+       "• follicular CARCINOMA (malignant)"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "warn",
+      "Molecular testing",
+      [
+       "TSH low: consider a radionuclide scan"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "DIAGNOSTIC hemithyroidectomy",
+      [
+       "take it out to know"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sx",
+   "colour": "magenta",
+   "drop_from": "t_us",
+   "drop_label": "HIGH risk",
+   "head": [
+    [
+     [
+      "h",
+      "Surgery",
+      []
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "TR5 + MALIGNANT cytology",
+      [
+       "• suspicious (Bethesda V)",
+       "• malignant (Bethesda VI): papillary most common"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Or BENIGN but SYMPTOMATIC",
+      [
+       "surgery for the symptoms"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "bad",
+      "Total thyroidectomy or hemithyroidectomy",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "After surgery",
+      [
+       "• TOTAL thyroidectomy: levothyroxine for LIFE",
+       "• one recurrent laryngeal nerve hurt: HOARSE",
+       "• BOTH: AIRWAY obstruction"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

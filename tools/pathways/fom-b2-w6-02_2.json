@@ -1,0 +1,555 @@
+{
+ "name": "neoplasia overview",
+ "width": 1316,
+ "title": "Neoplasia decision chart: a mass is pre-malignant while the basement membrane is intact (dysplasia, carcinoma in situ) and malignant once through it, then staged by how it spread (direct T, lymphatic N, hematogenous M) and graded by differentiation; each column gives what defines it, how it is found and what it means",
+ "kinds": {
+  "dy_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dy_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "dy_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "cis_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cis_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cis_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "t_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "t_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "t_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "n_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "n_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "n_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "m_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "m_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "m_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 306,
+   "w": 246,
+   "h": 488,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 288,
+   "y": 306,
+   "w": 246,
+   "h": 488,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 564,
+   "y": 306,
+   "w": 246,
+   "h": 488,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 812,
+   "y": 306,
+   "w": 246,
+   "h": 488,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1060,
+   "y": 306,
+   "w": 246,
+   "h": 488,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 432,
+   "h": 98,
+   "text": "DEFINED BY"
+  },
+  {
+   "x": 23,
+   "y": 570,
+   "h": 114,
+   "text": "FOUND BY"
+  },
+  {
+   "x": 23,
+   "y": 724,
+   "h": 62,
+   "text": "MEANS"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 293,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A MASS: is it a neoplasm, is it MALIGNANT, and how far has it SPREAD?",
+   "lines": [
+    "describe it first: size, shape, surface/borders, colour, consistency",
+    "a mass is NOT always cancer: it may be a cyst, abscess, blood or fluid"
+   ]
+  },
+  {
+   "id": "g_p",
+   "x": 45,
+   "y": 138,
+   "w": 484,
+   "h": 96,
+   "kind": "plain",
+   "title": "Basement membrane INTACT: PRE-malignant",
+   "lines": [
+    "cannot spread yet"
+   ]
+  },
+  {
+   "id": "g_m",
+   "x": 569,
+   "y": 138,
+   "w": 732,
+   "h": 96,
+   "kind": "plain",
+   "title": "THROUGH the basement membrane: MALIGNANT",
+   "lines": [
+    "SPREAD is the one criterion · stage it by HOW it spread: tumour, node, metastasis (TNM)",
+    "GRADE it by how the cells look: well differentiated (I, slower) → poorly or UNDIFFERENTIATED (immunohistochemistry to find the origin)"
+   ]
+  },
+  {
+   "id": "dy_head_0_0",
+   "x": 45,
+   "y": 314,
+   "w": 236,
+   "h": 78,
+   "kind": "dy_h",
+   "title": "Dysplasia",
+   "lines": [
+    "mild → severe"
+   ]
+  },
+  {
+   "id": "cis_head_0_0",
+   "x": 293,
+   "y": 314,
+   "w": 236,
+   "h": 78,
+   "kind": "cis_h",
+   "title": "Carcinoma in situ",
+   "lines": [
+    "= HIGH-GRADE dysplasia · stage Tis"
+   ]
+  },
+  {
+   "id": "t_head_0_0",
+   "x": 569,
+   "y": 314,
+   "w": 236,
+   "h": 78,
+   "kind": "t_h",
+   "title": "Direct spread: T",
+   "lines": [
+    "invades ADJACENT structures"
+   ]
+  },
+  {
+   "id": "n_head_0_0",
+   "x": 817,
+   "y": 314,
+   "w": 236,
+   "h": 78,
+   "kind": "n_h",
+   "title": "Lymphatic spread: N",
+   "lines": [
+    "into lymph vessels + nodes"
+   ]
+  },
+  {
+   "id": "m_head_0_0",
+   "x": 1065,
+   "y": 314,
+   "w": 236,
+   "h": 78,
+   "kind": "m_h",
+   "title": "Hematogenous spread: M",
+   "lines": [
+    "through the blood, body-wide"
+   ]
+  },
+  {
+   "id": "dy_def_0_0",
+   "x": 45,
+   "y": 432,
+   "w": 236,
+   "h": 98,
+   "kind": "dy_t",
+   "title": "Disordered growth + maturation",
+   "lines": [
+    "• nuclear changes",
+    "• basement membrane intact"
+   ]
+  },
+  {
+   "id": "cis_def_0_0",
+   "x": 293,
+   "y": 432,
+   "w": 236,
+   "h": 98,
+   "kind": "cis_t",
+   "title": "Fills the ENTIRE epithelial thickness",
+   "lines": [
+    "pushes on an INTACT basement membrane"
+   ]
+  },
+  {
+   "id": "t_def_0_0",
+   "x": 569,
+   "y": 432,
+   "w": 236,
+   "h": 98,
+   "kind": "t_t",
+   "title": "T = the primary tumour",
+   "lines": [
+    "• T0: none",
+    "• T1–T4: size + extent"
+   ]
+  },
+  {
+   "id": "n_def_0_0",
+   "x": 817,
+   "y": 432,
+   "w": 236,
+   "h": 98,
+   "kind": "n_t",
+   "title": "N = the nodes",
+   "lines": [
+    "• N0: none",
+    "• N1–N3: degree of node involvement"
+   ]
+  },
+  {
+   "id": "m_def_0_0",
+   "x": 1065,
+   "y": 432,
+   "w": 236,
+   "h": 98,
+   "kind": "m_t",
+   "title": "M = distant metastasis",
+   "lines": [
+    "• M0: none",
+    "• M1: present (type or site)"
+   ]
+  },
+  {
+   "id": "dy_find_0_0",
+   "x": 45,
+   "y": 570,
+   "w": 236,
+   "h": 114,
+   "kind": "dy_w",
+   "title": "ONLY under a microscope",
+   "lines": []
+  },
+  {
+   "id": "cis_find_0_0",
+   "x": 293,
+   "y": 570,
+   "w": 236,
+   "h": 114,
+   "kind": "cis_w",
+   "title": "Microscope: looks like cancer",
+   "lines": [
+    "but has NOT invaded normal tissue"
+   ]
+  },
+  {
+   "id": "t_find_0_0",
+   "x": 569,
+   "y": 570,
+   "w": 236,
+   "h": 114,
+   "kind": "t_w",
+   "title": "Exam, imaging, pathology report",
+   "lines": []
+  },
+  {
+   "id": "n_find_0_0",
+   "x": 817,
+   "y": 570,
+   "w": 236,
+   "h": 114,
+   "kind": "n_w",
+   "title": "e.g. lung cancer in the nodes",
+   "lines": [
+    "• chest fullness, short of breath",
+    "• ↓ breath sounds; feel the SUPRACLAVICULAR fossa",
+    "• CT, or bronchoscopy + node biopsy"
+   ]
+  },
+  {
+   "id": "m_find_0_0",
+   "x": 1065,
+   "y": 570,
+   "w": 236,
+   "h": 114,
+   "kind": "m_w",
+   "title": "e.g. colon cancer → LUNG nodules",
+   "lines": [
+    "via the veins, through the liver"
+   ]
+  },
+  {
+   "id": "dy_mean_0_0",
+   "x": 45,
+   "y": 724,
+   "w": 236,
+   "h": 62,
+   "kind": "warn",
+   "title": "Can turn into cancer over time",
+   "lines": []
+  },
+  {
+   "id": "cis_mean_0_0",
+   "x": 293,
+   "y": 724,
+   "w": 236,
+   "h": 62,
+   "kind": "bad",
+   "title": "The highest-risk precursor",
+   "lines": [
+    "untreated, most become INVASIVE"
+   ]
+  },
+  {
+   "id": "t_mean_0_0",
+   "x": 569,
+   "y": 724,
+   "w": 236,
+   "h": 62,
+   "kind": "ok",
+   "title": "T only, N0 M0 → STAGE I",
+   "lines": []
+  },
+  {
+   "id": "n_mean_0_0",
+   "x": 817,
+   "y": 724,
+   "w": 236,
+   "h": 62,
+   "kind": "warn",
+   "title": "LOTS of nodes can mean STAGE IV",
+   "lines": []
+  },
+  {
+   "id": "m_mean_0_0",
+   "x": 1065,
+   "y": 724,
+   "w": 236,
+   "h": 62,
+   "kind": "bad",
+   "title": "STAGE IV: usually INCURABLE",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_p",
+   "path": "M673.0 88V113H287.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_m",
+   "path": "M673.0 88V113H935.0V138"
+  },
+  {
+   "from": "dy_head_0_0",
+   "to": "dy_def_0_0"
+  },
+  {
+   "from": "dy_def_0_0",
+   "to": "dy_find_0_0"
+  },
+  {
+   "from": "dy_find_0_0",
+   "to": "dy_mean_0_0"
+  },
+  {
+   "from": "g_p",
+   "to": "dy_head_0_0",
+   "from_dx": -124,
+   "label": "PART of the epithelium",
+   "label_at": [
+    163.0,
+    274
+   ]
+  },
+  {
+   "from": "cis_head_0_0",
+   "to": "cis_def_0_0"
+  },
+  {
+   "from": "cis_def_0_0",
+   "to": "cis_find_0_0"
+  },
+  {
+   "from": "cis_find_0_0",
+   "to": "cis_mean_0_0"
+  },
+  {
+   "from": "g_p",
+   "to": "cis_head_0_0",
+   "from_dx": 124,
+   "label": "FULL thickness",
+   "label_at": [
+    411.0,
+    274
+   ]
+  },
+  {
+   "from": "t_head_0_0",
+   "to": "t_def_0_0"
+  },
+  {
+   "from": "t_def_0_0",
+   "to": "t_find_0_0"
+  },
+  {
+   "from": "t_find_0_0",
+   "to": "t_mean_0_0"
+  },
+  {
+   "from": "g_m",
+   "to": "t_head_0_0",
+   "from_dx": -248,
+   "label": "local",
+   "label_at": [
+    687.0,
+    274
+   ]
+  },
+  {
+   "from": "n_head_0_0",
+   "to": "n_def_0_0"
+  },
+  {
+   "from": "n_def_0_0",
+   "to": "n_find_0_0"
+  },
+  {
+   "from": "n_find_0_0",
+   "to": "n_mean_0_0"
+  },
+  {
+   "from": "g_m",
+   "to": "n_head_0_0",
+   "from_dx": 0,
+   "label": "lymphatics",
+   "label_at": [
+    935.0,
+    274
+   ]
+  },
+  {
+   "from": "m_head_0_0",
+   "to": "m_def_0_0"
+  },
+  {
+   "from": "m_def_0_0",
+   "to": "m_find_0_0"
+  },
+  {
+   "from": "m_find_0_0",
+   "to": "m_mean_0_0"
+  },
+  {
+   "from": "g_m",
+   "to": "m_head_0_0",
+   "from_dx": 248,
+   "label": "bloodstream",
+   "label_at": [
+    1183.0,
+    274
+   ]
+  }
+ ],
+ "panels": []
+}

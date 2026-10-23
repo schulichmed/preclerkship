@@ -1,0 +1,743 @@
+{
+ "name": "MSK infections overview",
+ "width": 1324,
+ "title": "Musculoskeletal infections by depth: hand cellulitis (antibiotics) versus closed-space hand infections (incision and drainage), joint infections beyond the usual staphylococcus and streptococcus (gonococcal, Lyme, tuberculous, several joints meaning endocarditis), osteomyelitis including vertebral osteomyelitis, and the diabetic foot; deeper infections need drainage or debridement as well as antibiotics",
+ "kinds": {
+  "cel_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cel_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "cel_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "deep_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "deep_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "deep_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "oth_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "oth_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "oth_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "om_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "om_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "om_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "dfi_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dfi_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "dfi_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 290,
+   "w": 242,
+   "h": 1066,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 284,
+   "y": 290,
+   "w": 242,
+   "h": 1066,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 556,
+   "y": 290,
+   "w": 242,
+   "h": 1066,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 828,
+   "y": 290,
+   "w": 242,
+   "h": 1066,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1072,
+   "y": 290,
+   "w": 242,
+   "h": 1066,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 434,
+   "h": 270,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 744,
+   "h": 196,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 980,
+   "h": 368,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 297,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Hand, joint, bone or diabetic foot: HOW DEEP is it, and does it need a knife as well as antibiotics?",
+   "lines": [
+    "antibiotics alone will NOT save you: pus in a closed space, a joint or dead bone needs drainage or debridement",
+    "one hot joint (S. aureus, streptococci): aspirate, surgical washout + cefazolin, or vancomycin + ceftriaxone"
+   ]
+  },
+  {
+   "id": "g_hand",
+   "x": 45,
+   "y": 138,
+   "w": 476,
+   "h": 80,
+   "kind": "plain",
+   "title": "HAND: superficial or deep?",
+   "lines": [
+    "rest and elevation for both"
+   ]
+  },
+  {
+   "id": "g_jt",
+   "x": 561,
+   "y": 138,
+   "w": 232,
+   "h": 80,
+   "kind": "plain",
+   "title": "JOINT: an unusual organism?",
+   "lines": [
+    "exposure history steers the tests"
+   ]
+  },
+  {
+   "id": "g_bone",
+   "x": 833,
+   "y": 138,
+   "w": 476,
+   "h": 80,
+   "kind": "plain",
+   "title": "BONE and the diabetic foot",
+   "lines": [
+    "blood supply, chronicity and debridement decide cure"
+   ]
+  },
+  {
+   "id": "cel_head_0_0",
+   "x": 45,
+   "y": 298,
+   "w": 232,
+   "h": 96,
+   "kind": "cel_h",
+   "title": "Cellulitis",
+   "lines": [
+    "superficial skin infection"
+   ]
+  },
+  {
+   "id": "deep_head_0_0",
+   "x": 289,
+   "y": 298,
+   "w": 232,
+   "h": 96,
+   "kind": "deep_h",
+   "title": "Deep (closed-space) infection",
+   "lines": [
+    "palm side, fingertip, around joints"
+   ]
+  },
+  {
+   "id": "oth_head_0_0",
+   "x": 561,
+   "y": 298,
+   "w": 232,
+   "h": 96,
+   "kind": "oth_h",
+   "title": "Gonococcal, Lyme, tuberculous",
+   "lines": [
+    "large-joint monoarthritis (or oligo)"
+   ]
+  },
+  {
+   "id": "om_head_0_0",
+   "x": 833,
+   "y": 298,
+   "w": 232,
+   "h": 96,
+   "kind": "om_h",
+   "title": "Osteomyelitis",
+   "lines": [
+    "blood-borne: spine, children",
+    "contiguous: diabetic foot, trauma, surgery"
+   ]
+  },
+  {
+   "id": "dfi_head_0_0",
+   "x": 1077,
+   "y": 298,
+   "w": 232,
+   "h": 96,
+   "kind": "dfi_h",
+   "title": "Diabetic foot infection",
+   "lines": [
+    "neuropathy + poor blood supply"
+   ]
+  },
+  {
+   "id": "cel_clue_0_0",
+   "x": 45,
+   "y": 434,
+   "w": 232,
+   "h": 270,
+   "kind": "cel_t",
+   "title": "DORSAL hand, wrist to knuckles",
+   "lines": [
+    "IRREGULAR margins"
+   ]
+  },
+  {
+   "id": "deep_clue_0_0",
+   "x": 289,
+   "y": 434,
+   "w": 232,
+   "h": 133,
+   "kind": "deep_t",
+   "title": "Where is the pus?",
+   "lines": [
+    "• nail fold: PARONYCHIA (S. aureus)",
+    "• fingertip pulp: FELON",
+    "• flexor tendon sheath: TENOSYNOVITIS"
+   ]
+  },
+  {
+   "id": "deep_clue_1_0",
+   "x": 289,
+   "y": 589,
+   "w": 232,
+   "h": 115,
+   "kind": "deep_w",
+   "title": "Bite over a joint",
+   "lines": [
+    "• cat, finger joints: Pasteurella multocida",
+    "• human, fist fight, knuckle: Eikenella corrodens"
+   ]
+  },
+  {
+   "id": "oth_clue_0_0",
+   "x": 561,
+   "y": 434,
+   "w": 232,
+   "h": 169,
+   "kind": "oth_t",
+   "title": "Ask: partners, ticks, travel",
+   "lines": [
+    "• young, multiple partners: GONOCOCCAL",
+    "• disseminated: tenosynovitis + pustular rash + polyarthralgia",
+    "• endemic country: TUBERCULOSIS"
+   ]
+  },
+  {
+   "id": "oth_clue_1_0",
+   "x": 561,
+   "y": 625,
+   "w": 232,
+   "h": 79,
+   "kind": "bad",
+   "title": "SEVERAL joints, bacterial",
+   "lines": [
+    "THINK ENDOCARDITIS"
+   ]
+  },
+  {
+   "id": "om_clue_0_0",
+   "x": 833,
+   "y": 434,
+   "w": 232,
+   "h": 133,
+   "kind": "om_t",
+   "title": "Vertebral: severe back pain",
+   "lines": [
+    "• often afebrile · people who inject drugs",
+    "• check strength, reflexes, anal tone"
+   ]
+  },
+  {
+   "id": "om_clue_1_0",
+   "x": 833,
+   "y": 589,
+   "w": 232,
+   "h": 115,
+   "kind": "om_w",
+   "title": "Child under 12: metaphysis",
+   "lines": [
+    "S. aureus always · Salmonella in sickle cell · Kingella"
+   ]
+  },
+  {
+   "id": "dfi_clue_0_0",
+   "x": 1077,
+   "y": 434,
+   "w": 232,
+   "h": 134,
+   "kind": "dfi_t",
+   "title": "A wound is NOT always infected",
+   "lines": [
+    "• swab any wound and bacteria grow",
+    "• smelly? probe to bone? blood supply?"
+   ]
+  },
+  {
+   "id": "dfi_clue_1_0",
+   "x": 1077,
+   "y": 590,
+   "w": 232,
+   "h": 114,
+   "kind": "dfi_w",
+   "title": "Grade",
+   "lines": [
+    "• mild: skin only",
+    "• moderate: over 2 cm or deeper",
+    "• severe: + systemic inflammatory response"
+   ]
+  },
+  {
+   "id": "cel_inv_0_0",
+   "x": 45,
+   "y": 744,
+   "w": 232,
+   "h": 196,
+   "kind": "cel_w",
+   "title": "Clinical",
+   "lines": [
+    "no pus, no closed space"
+   ]
+  },
+  {
+   "id": "deep_inv_0_0",
+   "x": 289,
+   "y": 744,
+   "w": 232,
+   "h": 196,
+   "kind": "deep_t",
+   "title": "Kanavel's 4 signs = tenosynovitis",
+   "lines": [
+    "• whole finger swollen",
+    "• held flexed · tender along the sheath",
+    "• intense pain on extension"
+   ]
+  },
+  {
+   "id": "oth_inv_0_0",
+   "x": 561,
+   "y": 744,
+   "w": 232,
+   "h": 196,
+   "kind": "oth_w",
+   "title": "Match the test to the bug",
+   "lines": [
+    "• gonococcus: urine, rectal, throat nucleic acid test or culture + blood culture (joint fluid + in only 50%)",
+    "• Lyme: serology · tuberculosis: joint fluid for acid-fast bacilli"
+   ]
+  },
+  {
+   "id": "om_inv_0_0",
+   "x": 833,
+   "y": 744,
+   "w": 232,
+   "h": 60,
+   "kind": "om_t",
+   "title": "1 · Blood cultures",
+   "lines": [
+    "~± spinal biopsy"
+   ]
+  },
+  {
+   "id": "om_inv_1_0",
+   "x": 833,
+   "y": 826,
+   "w": 232,
+   "h": 114,
+   "kind": "om_t",
+   "title": "2 · MRI = most sensitive",
+   "lines": [
+    "• X-ray, CT not sensitive enough",
+    "• tagged white cell scan takes 2 days",
+    "• don't repeat if improving"
+   ]
+  },
+  {
+   "id": "dfi_inv_0_0",
+   "x": 1077,
+   "y": 744,
+   "w": 232,
+   "h": 106,
+   "kind": "dfi_w",
+   "title": "1 · Bloods; swab only a good deep specimen",
+   "lines": [
+    "blood count, electrolytes, creatinine, C-reactive protein"
+   ]
+  },
+  {
+   "id": "dfi_inv_1_0",
+   "x": 1077,
+   "y": 872,
+   "w": 232,
+   "h": 68,
+   "kind": "dfi_w",
+   "title": "2 · X-ray first → MRI",
+   "lines": [
+    "for osteomyelitis under the ulcer"
+   ]
+  },
+  {
+   "id": "cel_tx_0_0",
+   "x": 45,
+   "y": 980,
+   "w": 232,
+   "h": 368,
+   "kind": "ok",
+   "title": "Antibiotics",
+   "lines": [
+    "+ rest, elevation"
+   ]
+  },
+  {
+   "id": "deep_tx_0_0",
+   "x": 289,
+   "y": 980,
+   "w": 232,
+   "h": 368,
+   "kind": "bad",
+   "title": "Incision and drainage",
+   "lines": [
+    "+ wound care + antibiotics (bites: broad-spectrum)"
+   ]
+  },
+  {
+   "id": "oth_tx_0_0",
+   "x": 561,
+   "y": 980,
+   "w": 232,
+   "h": 368,
+   "kind": "ok",
+   "title": "Bug-specific",
+   "lines": [
+    "• gonococcal: ceftriaxone 10–14 days",
+    "• Lyme: IV ceftriaxone 28 days",
+    "• tuberculosis: RIPE four-drug therapy, 9 months–1 year"
+   ]
+  },
+  {
+   "id": "om_tx_0_0",
+   "x": 833,
+   "y": 980,
+   "w": 232,
+   "h": 174,
+   "kind": "bad",
+   "title": "Cord compressed or epidural abscess",
+   "lines": [
+    "→ neurosurgery"
+   ]
+  },
+  {
+   "id": "om_tx_1_0",
+   "x": 833,
+   "y": 1176,
+   "w": 232,
+   "h": 172,
+   "kind": "ok",
+   "title": "IV vancomycin + ceftriaxone",
+   "lines": [
+    "• 6 weeks (vertebral)",
+    "• debride dead bone if needed"
+   ]
+  },
+  {
+   "id": "dfi_tx_0_0",
+   "x": 1077,
+   "y": 980,
+   "w": 232,
+   "h": 78,
+   "kind": "ok",
+   "title": "Mild, one bug (staph, strep)",
+   "lines": [
+    "cefazolin (or cephalexin, doxycycline, amoxicillin-clavulanate)"
+   ]
+  },
+  {
+   "id": "dfi_tx_1_0",
+   "x": 1077,
+   "y": 1080,
+   "w": 232,
+   "h": 114,
+   "kind": "warn",
+   "title": "Chronic: polymicrobial",
+   "lines": [
+    "amoxicillin-clavulanate · severe: IV ceftriaxone + metronidazole",
+    "Pseudomonas → piperacillin-tazobactam"
+   ]
+  },
+  {
+   "id": "dfi_tx_2_0",
+   "x": 1077,
+   "y": 1216,
+   "w": 232,
+   "h": 132,
+   "kind": "bad",
+   "title": "Severe",
+   "lines": [
+    "• exclude necrotizing fasciitis",
+    "• piperacillin-tazobactam ± vancomycin",
+    "• offload, debride, call ortho or vascular"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_hand",
+   "path": "M677.0 88V113H283.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_jt",
+   "path": "M677.0 88V113H677.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_bone",
+   "path": "M677.0 88V113H1071.0V138"
+  },
+  {
+   "from": "deep_clue_0_0",
+   "to": "deep_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "oth_clue_0_0",
+   "to": "oth_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "om_clue_0_0",
+   "to": "om_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "dfi_clue_0_0",
+   "to": "dfi_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "om_inv_0_0",
+   "to": "om_inv_1_0"
+  },
+  {
+   "from": "dfi_inv_0_0",
+   "to": "dfi_inv_1_0"
+  },
+  {
+   "from": "om_tx_0_0",
+   "to": "om_tx_1_0"
+  },
+  {
+   "from": "dfi_tx_0_0",
+   "to": "dfi_tx_1_0"
+  },
+  {
+   "from": "dfi_tx_1_0",
+   "to": "dfi_tx_2_0"
+  },
+  {
+   "from": "cel_head_0_0",
+   "to": "cel_clue_0_0"
+  },
+  {
+   "from": "cel_clue_0_0",
+   "to": "cel_inv_0_0"
+  },
+  {
+   "from": "cel_inv_0_0",
+   "to": "cel_tx_0_0"
+  },
+  {
+   "from": "g_hand",
+   "to": "cel_head_0_0",
+   "from_dx": -122
+  },
+  {
+   "from": "deep_head_0_0",
+   "to": "deep_clue_0_0"
+  },
+  {
+   "from": "deep_clue_1_0",
+   "to": "deep_inv_0_0"
+  },
+  {
+   "from": "deep_inv_0_0",
+   "to": "deep_tx_0_0"
+  },
+  {
+   "from": "g_hand",
+   "to": "deep_head_0_0",
+   "from_dx": 122
+  },
+  {
+   "from": "oth_head_0_0",
+   "to": "oth_clue_0_0"
+  },
+  {
+   "from": "oth_clue_1_0",
+   "to": "oth_inv_0_0"
+  },
+  {
+   "from": "oth_inv_0_0",
+   "to": "oth_tx_0_0"
+  },
+  {
+   "from": "g_jt",
+   "to": "oth_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "om_head_0_0",
+   "to": "om_clue_0_0"
+  },
+  {
+   "from": "om_clue_1_0",
+   "to": "om_inv_0_0"
+  },
+  {
+   "from": "om_inv_1_0",
+   "to": "om_tx_0_0"
+  },
+  {
+   "from": "g_bone",
+   "to": "om_head_0_0",
+   "from_dx": -122
+  },
+  {
+   "from": "dfi_head_0_0",
+   "to": "dfi_clue_0_0"
+  },
+  {
+   "from": "dfi_clue_1_0",
+   "to": "dfi_inv_0_0"
+  },
+  {
+   "from": "dfi_inv_1_0",
+   "to": "dfi_tx_0_0"
+  },
+  {
+   "from": "g_bone",
+   "to": "dfi_head_0_0",
+   "from_dx": 122
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1382,
+   "w": 625,
+   "title": "Prosthetic joint infection",
+   "items": [
+    "HIGH index of suspicion · less virulent organisms (coagulase-negative staphylococci, Cutibacterium acnes)",
+    "managed by the orthopedic surgeon + infectious diseases"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 684,
+   "y": 1382,
+   "w": 625,
+   "title": "Viral polyarthritis",
+   "items": [
+    "parvovirus B19 (with anemia) · chikungunya, Zika, dengue (travel) · hepatitis B, C, HIV"
+   ],
+   "cols": 1
+  }
+ ]
+}

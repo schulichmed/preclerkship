@@ -1,0 +1,30 @@
+{
+ "name": "abnormal labour pathway 4",
+ "title": "After a prior cesarean section: repeat cesarean section if there is any reason not to try or any criterion is unmet, otherwise a trial of labour with continuous fetal heart monitoring, emergency laparotomy for signs of rupture, repeat cesarean section if labour does not progress, and vaginal birth after cesarean 60-80% of the time",
+ "width": 1120,
+ "nodes": [
+  {"id": "A", "x": 10, "y": 10, "w": 90, "h": 64, "kind": "plain", "title": "Prior C/S", "lines": []},
+  {"id": "X", "x": 148, "y": 10, "w": 130, "h": 64, "kind": "lo", "title": "Any reason", "lines": ["it cannot try?"]},
+  {"id": "Y", "x": 326, "y": 10, "w": 130, "h": 64, "kind": "lo", "title": "Meets every", "lines": ["criterion?"]},
+  {"id": "T", "x": 504, "y": 10, "w": 130, "h": 64, "kind": "plain", "title": "TOLAC", "lines": ["continuous FHR"]},
+  {"id": "R", "x": 682, "y": 10, "w": 120, "h": 64, "kind": "plain", "title": "Signs of", "lines": ["rupture?"]},
+  {"id": "Q", "x": 850, "y": 10, "w": 120, "h": 64, "kind": "plain", "title": "Labour", "lines": ["progresses?"]},
+  {"id": "V", "x": 1018, "y": 10, "w": 92, "h": 64, "kind": "ok", "title": "VBAC", "lines": ["60-80%"]},
+  {"id": "E1", "x": 148, "y": 130, "w": 130, "h": 58, "kind": "warn", "title": "Repeat C/S", "lines": []},
+  {"id": "E2", "x": 326, "y": 130, "w": 130, "h": 58, "kind": "warn", "title": "Repeat C/S", "lines": []},
+  {"id": "EM", "x": 672, "y": 130, "w": 140, "h": 58, "kind": "bad", "title": "Emergency", "lines": ["laparotomy"]},
+  {"id": "CS", "x": 850, "y": 130, "w": 120, "h": 58, "kind": "warn", "title": "Repeat C/S", "lines": []}
+ ],
+ "edges": [
+  {"from": "A", "to": "X", "from_side": "right", "to_side": "left"},
+  {"from": "X", "to": "E1", "label": "yes", "label_at": [233, 107]},
+  {"from": "X", "to": "Y", "from_side": "right", "to_side": "left", "label": "no", "label_at": [302, 34]},
+  {"from": "Y", "to": "E2", "label": "no", "label_at": [408, 107]},
+  {"from": "Y", "to": "T", "from_side": "right", "to_side": "left", "label": "yes", "label_at": [480, 34]},
+  {"from": "T", "to": "R", "from_side": "right", "to_side": "left"},
+  {"from": "R", "to": "EM", "label": "yes", "label_at": [762, 107]},
+  {"from": "R", "to": "Q", "from_side": "right", "to_side": "left", "label": "no", "label_at": [826, 34]},
+  {"from": "Q", "to": "CS", "label": "no", "label_at": [928, 107]},
+  {"from": "Q", "to": "V", "from_side": "right", "to_side": "left", "label": "yes", "label_at": [994, 34]}
+ ]
+}

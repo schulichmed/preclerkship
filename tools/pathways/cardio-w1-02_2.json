@@ -1,0 +1,746 @@
+{
+ "name": "ECG reading overview",
+ "width": 1504,
+ "title": "Reading an ECG decision chart: in the same order every time, check rate, rhythm, intervals, axis, hypertrophy and ischemia or infarction; each step gives how to measure it, the normal range and where an abnormal result sends you next",
+ "kinds": {
+  "rt_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rt_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "rt_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "rh_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rh_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "rh_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "iv_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "iv_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "iv_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ax_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ax_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ax_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "hy_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hy_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "hy_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "is_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "is_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "is_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 236,
+   "h": 744,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 278,
+   "y": 288,
+   "w": 236,
+   "h": 744,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 516,
+   "y": 288,
+   "w": 236,
+   "h": 744,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 754,
+   "y": 288,
+   "w": 236,
+   "h": 744,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1020,
+   "y": 288,
+   "w": 236,
+   "h": 744,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1258,
+   "y": 288,
+   "w": 236,
+   "h": 744,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 378,
+   "h": 116,
+   "text": "HOW"
+  },
+  {
+   "x": 23,
+   "y": 534,
+   "h": 114,
+   "text": "NORMAL"
+  },
+  {
+   "x": 23,
+   "y": 688,
+   "h": 336,
+   "text": "ABNORMAL → NEXT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 387,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Reading an electrocardiogram (ECG): the SAME ORDER every time",
+   "lines": [
+    "depolarization moving TOWARD a positive electrode writes an UPWARD deflection: leads, axis and infarct location all follow from that",
+    "paper: 1 small box = 40 ms · 1 large box = 200 ms · 10 mm = 1 mV"
+   ]
+  },
+  {
+   "id": "g_e",
+   "x": 45,
+   "y": 156,
+   "w": 940,
+   "h": 60,
+   "kind": "plain",
+   "title": "Is the ELECTRICAL system normal?",
+   "lines": [
+    "P = atria depolarize · QRS = ventricles depolarize · ST + T = ventricles repolarize"
+   ]
+  },
+  {
+   "id": "g_m",
+   "x": 1025,
+   "y": 156,
+   "w": 464,
+   "h": 60,
+   "kind": "plain",
+   "title": "Is the MUSCLE normal?",
+   "lines": [
+    "which chamber, which wall"
+   ]
+  },
+  {
+   "id": "rt_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 226,
+   "h": 42,
+   "kind": "rt_h",
+   "title": "1 · Rate",
+   "lines": []
+  },
+  {
+   "id": "rh_head_0_0",
+   "x": 283,
+   "y": 296,
+   "w": 226,
+   "h": 42,
+   "kind": "rh_h",
+   "title": "2 · Rhythm",
+   "lines": []
+  },
+  {
+   "id": "iv_head_0_0",
+   "x": 521,
+   "y": 296,
+   "w": 226,
+   "h": 42,
+   "kind": "iv_h",
+   "title": "3 · Intervals",
+   "lines": []
+  },
+  {
+   "id": "ax_head_0_0",
+   "x": 759,
+   "y": 296,
+   "w": 226,
+   "h": 42,
+   "kind": "ax_h",
+   "title": "4 · Axis",
+   "lines": []
+  },
+  {
+   "id": "hy_head_0_0",
+   "x": 1025,
+   "y": 296,
+   "w": 226,
+   "h": 42,
+   "kind": "hy_h",
+   "title": "5 · Hypertrophy",
+   "lines": []
+  },
+  {
+   "id": "is_head_0_0",
+   "x": 1263,
+   "y": 296,
+   "w": 226,
+   "h": 42,
+   "kind": "is_h",
+   "title": "6 · Ischemia + infarction",
+   "lines": []
+  },
+  {
+   "id": "rt_how_0_0",
+   "x": 45,
+   "y": 378,
+   "w": 226,
+   "h": 116,
+   "kind": "rt_w",
+   "title": "LARGE boxes between beats",
+   "lines": [
+    "• 1 → 300 · 2 → 150 · 3 → 100",
+    "• 4 → 75 · 5 → 60 · 6 → 50",
+    "• or beats in a 10 s strip × 6"
+   ]
+  },
+  {
+   "id": "rh_how_0_0",
+   "x": 283,
+   "y": 378,
+   "w": 226,
+   "h": 116,
+   "kind": "rh_w",
+   "title": "Every beat",
+   "lines": [
+    "• a P before each QRS?",
+    "• a QRS after each P?",
+    "• early beats, pauses, irregularity"
+   ]
+  },
+  {
+   "id": "iv_how_0_0",
+   "x": 521,
+   "y": 378,
+   "w": 226,
+   "h": 116,
+   "kind": "iv_w",
+   "title": "Count small boxes",
+   "lines": [
+    "40 ms each"
+   ]
+  },
+  {
+   "id": "ax_how_0_0",
+   "x": 759,
+   "y": 378,
+   "w": 226,
+   "h": 116,
+   "kind": "ax_w",
+   "title": "QRS UP or DOWN?",
+   "lines": [
+    "• lead I and aVF",
+    "• lead II if aVF is down"
+   ]
+  },
+  {
+   "id": "hy_how_0_0",
+   "x": 1025,
+   "y": 378,
+   "w": 226,
+   "h": 116,
+   "kind": "hy_w",
+   "title": "P waves = atria",
+   "lines": [
+    "QRS height = ventricles"
+   ]
+  },
+  {
+   "id": "is_how_0_0",
+   "x": 1263,
+   "y": 378,
+   "w": 226,
+   "h": 116,
+   "kind": "is_w",
+   "title": "Q waves · ST segment · T waves",
+   "lines": []
+  },
+  {
+   "id": "rt_norm_0_0",
+   "x": 45,
+   "y": 534,
+   "w": 226,
+   "h": 114,
+   "kind": "rt_t",
+   "title": "60–100 /min",
+   "lines": []
+  },
+  {
+   "id": "rh_norm_0_0",
+   "x": 283,
+   "y": 534,
+   "w": 226,
+   "h": 114,
+   "kind": "rh_t",
+   "title": "Sinus rhythm",
+   "lines": [
+    "one P → one QRS, regular"
+   ]
+  },
+  {
+   "id": "iv_norm_0_0",
+   "x": 521,
+   "y": 534,
+   "w": 226,
+   "h": 114,
+   "kind": "iv_t",
+   "title": "Normal ranges",
+   "lines": [
+    "• PR 120–200 ms",
+    "• QRS 80–120 ms",
+    "• QT ≤ 440 ms (men), ≤ 460 (women)"
+   ]
+  },
+  {
+   "id": "ax_norm_0_0",
+   "x": 759,
+   "y": 534,
+   "w": 226,
+   "h": 114,
+   "kind": "ax_t",
+   "title": "−30° to +90°",
+   "lines": [
+    "• I up, aVF up",
+    "• I up, aVF down, II UP: still normal"
+   ]
+  },
+  {
+   "id": "hy_norm_0_0",
+   "x": 1025,
+   "y": 534,
+   "w": 226,
+   "h": 114,
+   "kind": "hy_t",
+   "title": "No enlargement",
+   "lines": []
+  },
+  {
+   "id": "is_norm_0_0",
+   "x": 1263,
+   "y": 534,
+   "w": 226,
+   "h": 114,
+   "kind": "is_t",
+   "title": "ST level with the baseline",
+   "lines": []
+  },
+  {
+   "id": "rt_abn_0_0",
+   "x": 45,
+   "y": 688,
+   "w": 226,
+   "h": 157,
+   "kind": "warn",
+   "title": "< 60: sinus BRADYCARDIA",
+   "lines": [
+    "see the BRADYCARDIA chart"
+   ]
+  },
+  {
+   "id": "rt_abn_1_0",
+   "x": 45,
+   "y": 867,
+   "w": 226,
+   "h": 157,
+   "kind": "warn",
+   "title": "> 100: sinus TACHYCARDIA",
+   "lines": [
+    "see the TACHYCARDIA chart"
+   ]
+  },
+  {
+   "id": "rh_abn_0_0",
+   "x": 283,
+   "y": 688,
+   "w": 226,
+   "h": 157,
+   "kind": "warn",
+   "title": "P waves WITHOUT a QRS",
+   "lines": [
+    "AV block: see the BRADYCARDIA chart"
+   ]
+  },
+  {
+   "id": "rh_abn_1_0",
+   "x": 283,
+   "y": 867,
+   "w": 226,
+   "h": 157,
+   "kind": "warn",
+   "title": "No P waves, irregular QRS",
+   "lines": [
+    "see the ATRIAL FIBRILLATION chart"
+   ]
+  },
+  {
+   "id": "iv_abn_0_0",
+   "x": 521,
+   "y": 688,
+   "w": 226,
+   "h": 85,
+   "kind": "warn",
+   "title": "PR > 200 ms",
+   "lines": [
+    "1st degree AV block"
+   ]
+  },
+  {
+   "id": "iv_abn_1_0",
+   "x": 521,
+   "y": 795,
+   "w": 226,
+   "h": 103,
+   "kind": "warn",
+   "title": "QRS > 120 ms",
+   "lines": [
+    "bundle branch block: V1 tells which (BRADYCARDIA chart)"
+   ]
+  },
+  {
+   "id": "iv_abn_2_0",
+   "x": 521,
+   "y": 920,
+   "w": 226,
+   "h": 103,
+   "kind": "bad",
+   "title": "QT LONG",
+   "lines": [
+    "genetics, drugs, electrolytes, hypothermia"
+   ]
+  },
+  {
+   "id": "ax_abn_0_0",
+   "x": 759,
+   "y": 688,
+   "w": 226,
+   "h": 174,
+   "kind": "warn",
+   "title": "Axis deviation",
+   "lines": [
+    "• I up, aVF + II down: LEFT",
+    "• I down, aVF up: RIGHT",
+    "• both down: EXTREME right"
+   ]
+  },
+  {
+   "id": "ax_abn_1_0",
+   "x": 759,
+   "y": 884,
+   "w": 226,
+   "h": 140,
+   "kind": "warn",
+   "title": "Deviated? Rule out a hemiblock",
+   "lines": []
+  },
+  {
+   "id": "hy_abn_0_0",
+   "x": 1025,
+   "y": 688,
+   "w": 226,
+   "h": 166,
+   "kind": "warn",
+   "title": "ATRIUM enlarged",
+   "lines": [
+    "• right: TALL P in II, III, aVF",
+    "• left: long NOTCHED or biphasic P in I, II, V1"
+   ]
+  },
+  {
+   "id": "hy_abn_1_0",
+   "x": 1025,
+   "y": 876,
+   "w": 226,
+   "h": 148,
+   "kind": "warn",
+   "title": "VENTRICLE enlarged",
+   "lines": [
+    "• right: large R in V1–V3",
+    "• left: S in V1 + R in V6 > 35 mm"
+   ]
+  },
+  {
+   "id": "is_abn_0_0",
+   "x": 1263,
+   "y": 688,
+   "w": 226,
+   "h": 96,
+   "kind": "warn",
+   "title": "What each change means",
+   "lines": [
+    "• ST DOWN, T inverted: ischemia",
+    "• ST UP: infarction",
+    "• Q waves: necrosis, past infarct"
+   ]
+  },
+  {
+   "id": "is_abn_1_0",
+   "x": 1263,
+   "y": 806,
+   "w": 226,
+   "h": 98,
+   "kind": "bad",
+   "title": "ST UP + RECIPROCAL ST down = true STEMI",
+   "lines": [
+    "which leads = which artery: see the ACS chart"
+   ]
+  },
+  {
+   "id": "is_abn_2_0",
+   "x": 1263,
+   "y": 926,
+   "w": 226,
+   "h": 98,
+   "kind": "warn",
+   "title": "Concave ST UP in > 1 territory + PR down",
+   "lines": [
+    "pericarditis: see the PERICARDIAL chart"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_e",
+   "path": "M767.0 106V131H515.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_m",
+   "path": "M767.0 106V131H1257.0V156"
+  },
+  {
+   "from": "rt_abn_0_0",
+   "to": "rt_abn_1_0"
+  },
+  {
+   "from": "rh_abn_0_0",
+   "to": "rh_abn_1_0"
+  },
+  {
+   "from": "iv_abn_0_0",
+   "to": "iv_abn_1_0"
+  },
+  {
+   "from": "iv_abn_1_0",
+   "to": "iv_abn_2_0"
+  },
+  {
+   "from": "ax_abn_0_0",
+   "to": "ax_abn_1_0"
+  },
+  {
+   "from": "hy_abn_0_0",
+   "to": "hy_abn_1_0"
+  },
+  {
+   "from": "is_abn_0_0",
+   "to": "is_abn_1_0"
+  },
+  {
+   "from": "is_abn_1_0",
+   "to": "is_abn_2_0"
+  },
+  {
+   "from": "rt_head_0_0",
+   "to": "rt_how_0_0"
+  },
+  {
+   "from": "rt_how_0_0",
+   "to": "rt_norm_0_0"
+  },
+  {
+   "from": "rt_norm_0_0",
+   "to": "rt_abn_0_0"
+  },
+  {
+   "from": "g_e",
+   "to": "rt_head_0_0",
+   "from_dx": -357
+  },
+  {
+   "from": "rh_head_0_0",
+   "to": "rh_how_0_0"
+  },
+  {
+   "from": "rh_how_0_0",
+   "to": "rh_norm_0_0"
+  },
+  {
+   "from": "rh_norm_0_0",
+   "to": "rh_abn_0_0"
+  },
+  {
+   "from": "g_e",
+   "to": "rh_head_0_0",
+   "from_dx": -119
+  },
+  {
+   "from": "iv_head_0_0",
+   "to": "iv_how_0_0"
+  },
+  {
+   "from": "iv_how_0_0",
+   "to": "iv_norm_0_0"
+  },
+  {
+   "from": "iv_norm_0_0",
+   "to": "iv_abn_0_0"
+  },
+  {
+   "from": "g_e",
+   "to": "iv_head_0_0",
+   "from_dx": 119
+  },
+  {
+   "from": "ax_head_0_0",
+   "to": "ax_how_0_0"
+  },
+  {
+   "from": "ax_how_0_0",
+   "to": "ax_norm_0_0"
+  },
+  {
+   "from": "ax_norm_0_0",
+   "to": "ax_abn_0_0"
+  },
+  {
+   "from": "g_e",
+   "to": "ax_head_0_0",
+   "from_dx": 357
+  },
+  {
+   "from": "hy_head_0_0",
+   "to": "hy_how_0_0"
+  },
+  {
+   "from": "hy_how_0_0",
+   "to": "hy_norm_0_0"
+  },
+  {
+   "from": "hy_norm_0_0",
+   "to": "hy_abn_0_0"
+  },
+  {
+   "from": "g_m",
+   "to": "hy_head_0_0",
+   "from_dx": -119
+  },
+  {
+   "from": "is_head_0_0",
+   "to": "is_how_0_0"
+  },
+  {
+   "from": "is_how_0_0",
+   "to": "is_norm_0_0"
+  },
+  {
+   "from": "is_norm_0_0",
+   "to": "is_abn_0_0"
+  },
+  {
+   "from": "g_m",
+   "to": "is_head_0_0",
+   "from_dx": 119
+  }
+ ],
+ "panels": []
+}

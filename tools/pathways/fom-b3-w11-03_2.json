@@ -1,0 +1,481 @@
+{
+ "name": "leukopenia overview",
+ "width": 862,
+ "title": "Low white count: confirm neutropenia and grade it by the absolute neutrophil count, then split on fever. Febrile neutropenia is an emergency worked up and treated in order; without fever, sort the acquired and congenital causes and know the infection risk",
+ "kinds": {
+  "fn_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fn_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "fn_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "aq_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "aq_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "aq_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "cg_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cg_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "cg_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 272,
+   "w": 260,
+   "h": 956,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 330,
+   "y": 272,
+   "w": 260,
+   "h": 956,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 592,
+   "y": 272,
+   "w": 260,
+   "h": 956,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 398,
+   "h": 268,
+   "text": "RECOGNIZE"
+  },
+  {
+   "x": 23,
+   "y": 706,
+   "h": 296,
+   "text": "WORK UP"
+  },
+  {
+   "x": 23,
+   "y": 1042,
+   "h": 178,
+   "text": "ACT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 66,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Low WBC (< 4 × 10⁹/L): is it NEUTROPENIA, how SEVERE, and is there FEVER?",
+   "lines": [
+    "neutropenia = absolute neutrophil count (ANC) < 1.5 × 10⁹/L: the usual cause",
+    "mild 1.0–1.5 · moderate 0.5–0.99 · SEVERE < 0.5"
+   ]
+  },
+  {
+   "id": "g_f",
+   "x": 45,
+   "y": 138,
+   "w": 250,
+   "h": 62,
+   "kind": "plain",
+   "title": "FEVER: oncologic EMERGENCY",
+   "lines": []
+  },
+  {
+   "id": "g_n",
+   "x": 335,
+   "y": 138,
+   "w": 512,
+   "h": 62,
+   "kind": "plain",
+   "title": "NO fever: find the CAUSE",
+   "lines": []
+  },
+  {
+   "id": "fn_head_0_0",
+   "x": 45,
+   "y": 280,
+   "w": 250,
+   "h": 78,
+   "kind": "fn_h",
+   "title": "Febrile neutropenia",
+   "lines": [
+    "most common serious complication of blood cancers + chemotherapy"
+   ]
+  },
+  {
+   "id": "aq_head_0_0",
+   "x": 335,
+   "y": 280,
+   "w": 250,
+   "h": 78,
+   "kind": "aq_h",
+   "title": "Acquired neutropenia",
+   "lines": [
+    "infection · toxins · autoimmune · nutrition · marrow · spleen"
+   ]
+  },
+  {
+   "id": "cg_head_0_0",
+   "x": 597,
+   "y": 280,
+   "w": 250,
+   "h": 78,
+   "kind": "cg_h",
+   "title": "Congenital neutropenia",
+   "lines": []
+  },
+  {
+   "id": "fn_clue_0_0",
+   "x": 45,
+   "y": 398,
+   "w": 250,
+   "h": 268,
+   "kind": "fn_t",
+   "title": "Fever in a neutropenic patient",
+   "lines": [
+    "• one oral temperature > 38.3 °C",
+    "• or ≥ 38.0 °C sustained over 1 hour"
+   ]
+  },
+  {
+   "id": "aq_clue_0_0",
+   "x": 335,
+   "y": 398,
+   "w": 250,
+   "h": 150,
+   "kind": "aq_t",
+   "title": "Toxins: ask first",
+   "lines": [
+    "• chemotherapy · radiation",
+    "• clozapine · antithyroid (propylthiouracil, carbimazole)",
+    "• antibiotics (trimethoprim-sulfamethoxazole, dapsone) · antiepileptics"
+   ]
+  },
+  {
+   "id": "aq_clue_1_0",
+   "x": 335,
+   "y": 570,
+   "w": 250,
+   "h": 96,
+   "kind": "aq_w",
+   "title": "Infection",
+   "lines": [
+    "• viral: EBV, CMV, hepatitis, HIV, influenza",
+    "• bacterial: sepsis, mycobacteria"
+   ]
+  },
+  {
+   "id": "cg_clue_0_0",
+   "x": 597,
+   "y": 398,
+   "w": 250,
+   "h": 268,
+   "kind": "cg_t",
+   "title": "Constitutional neutropenia",
+   "lines": [
+    "• seen in some ethnic backgrounds",
+    "• BENIGN"
+   ]
+  },
+  {
+   "id": "fn_inv_0_0",
+   "x": 45,
+   "y": 706,
+   "w": 250,
+   "h": 60,
+   "kind": "bad",
+   "title": "1 · STABILIZE",
+   "lines": [
+    "• ABCs · IV fluids · oxygen if hypoxic"
+   ]
+  },
+  {
+   "id": "fn_inv_1_0",
+   "x": 45,
+   "y": 788,
+   "w": 250,
+   "h": 96,
+   "kind": "fn_t",
+   "title": "2 · Bloods + CULTURES",
+   "lines": [
+    "• CBC + diff, electrolytes, urea, creatinine, liver tests",
+    "• blood + urine cultures · chest X-ray"
+   ]
+  },
+  {
+   "id": "fn_inv_2_0",
+   "x": 45,
+   "y": 906,
+   "w": 250,
+   "h": 96,
+   "kind": "fn_w",
+   "title": "3 · Look for the source",
+   "lines": [
+    "• mouth, sinuses · lungs · GU · skin + IV line sites · neuro",
+    "• NO digital rectal exam (DRE)"
+   ]
+  },
+  {
+   "id": "aq_inv_0_0",
+   "x": 335.0,
+   "y": 706,
+   "w": 120.0,
+   "h": 127,
+   "kind": "aq_w",
+   "title": "Autoimmune",
+   "lines": [
+    "• autoimmune neutropenia",
+    "• SLE · RA (Felty)"
+   ]
+  },
+  {
+   "id": "aq_inv_0_1",
+   "x": 465.0,
+   "y": 706,
+   "w": 120.0,
+   "h": 127,
+   "kind": "aq_w",
+   "title": "Nutritional",
+   "lines": [
+    "• B12 · folate · copper",
+    "• malnutrition"
+   ]
+  },
+  {
+   "id": "aq_inv_1_0",
+   "x": 335.0,
+   "y": 855,
+   "w": 120.0,
+   "h": 147,
+   "kind": "aq_w",
+   "title": "Marrow failure",
+   "lines": [
+    "• MDS · AML",
+    "• lymphoma or metastases in marrow"
+   ]
+  },
+  {
+   "id": "aq_inv_1_1",
+   "x": 465.0,
+   "y": 855,
+   "w": 120.0,
+   "h": 147,
+   "kind": "aq_w",
+   "title": "Spleen",
+   "lines": [
+    "• sequestration in splenomegaly"
+   ]
+  },
+  {
+   "id": "cg_inv_0_0",
+   "x": 597,
+   "y": 706,
+   "w": 250,
+   "h": 296,
+   "kind": "cg_w",
+   "title": "Rarer congenital causes",
+   "lines": [
+    "• cyclic neutropenia",
+    "• severe congenital (Kostmann)",
+    "• Chediak-Higashi · Shwachman-Diamond · Barth"
+   ]
+  },
+  {
+   "id": "fn_tx_0_0",
+   "x": 45,
+   "y": 1042,
+   "w": 250,
+   "h": 78,
+   "kind": "bad",
+   "title": "4 · Empiric IV antibiotics NOW",
+   "lines": [
+    "• imipenem (carbapenem)",
+    "• or piperacillin-tazobactam"
+   ]
+  },
+  {
+   "id": "fn_tx_1_0",
+   "x": 45,
+   "y": 1142,
+   "w": 250,
+   "h": 78,
+   "kind": "warn",
+   "title": "5 · ADD IV vancomycin if",
+   "lines": [
+    "• skin or catheter-site infection",
+    "• hemodynamically UNSTABLE"
+   ]
+  },
+  {
+   "id": "aq_tx_0_0",
+   "x": 335,
+   "y": 1042,
+   "w": 250,
+   "h": 178,
+   "kind": "warn",
+   "title": "SEVERE: watch for infection",
+   "lines": [
+    "• bacteria: E. coli, Pseudomonas, Klebsiella, S. aureus, strep",
+    "• viral reactivation: HSV, CMV, VZV",
+    "• fungi: Candida, Aspergillus"
+   ]
+  },
+  {
+   "id": "cg_tx_0_0",
+   "x": 597,
+   "y": 1042,
+   "w": 250,
+   "h": 178,
+   "kind": "ok",
+   "title": "Constitutional: NO added infection risk",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_f",
+   "path": "M446.0 88V113H170.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_n",
+   "path": "M446.0 88V113H591.0V138"
+  },
+  {
+   "from": "aq_clue_0_0",
+   "to": "aq_clue_1_0"
+  },
+  {
+   "from": "fn_inv_0_0",
+   "to": "fn_inv_1_0"
+  },
+  {
+   "from": "fn_inv_1_0",
+   "to": "fn_inv_2_0"
+  },
+  {
+   "from": "aq_inv_0_0",
+   "to": "aq_inv_1_0"
+  },
+  {
+   "from": "aq_inv_0_1",
+   "to": "aq_inv_1_1"
+  },
+  {
+   "from": "fn_tx_0_0",
+   "to": "fn_tx_1_0"
+  },
+  {
+   "from": "fn_head_0_0",
+   "to": "fn_clue_0_0"
+  },
+  {
+   "from": "fn_clue_0_0",
+   "to": "fn_inv_0_0"
+  },
+  {
+   "from": "fn_inv_2_0",
+   "to": "fn_tx_0_0"
+  },
+  {
+   "from": "g_f",
+   "to": "fn_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "aq_head_0_0",
+   "to": "aq_clue_0_0"
+  },
+  {
+   "from": "aq_clue_1_0",
+   "to": "aq_inv_0_0",
+   "from_dx": -65.0
+  },
+  {
+   "from": "aq_clue_1_0",
+   "to": "aq_inv_0_1",
+   "from_dx": 65.0
+  },
+  {
+   "from": "aq_inv_1_0",
+   "to": "aq_tx_0_0",
+   "to_dx": -65.0
+  },
+  {
+   "from": "aq_inv_1_1",
+   "to": "aq_tx_0_0",
+   "to_dx": 65.0
+  },
+  {
+   "from": "g_n",
+   "to": "aq_head_0_0",
+   "from_dx": -131
+  },
+  {
+   "from": "cg_head_0_0",
+   "to": "cg_clue_0_0"
+  },
+  {
+   "from": "cg_clue_0_0",
+   "to": "cg_inv_0_0"
+  },
+  {
+   "from": "cg_inv_0_0",
+   "to": "cg_tx_0_0"
+  },
+  {
+   "from": "g_n",
+   "to": "cg_head_0_0",
+   "from_dx": 131
+  }
+ ],
+ "panels": []
+}

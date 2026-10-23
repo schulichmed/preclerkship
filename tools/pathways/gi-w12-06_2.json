@@ -1,0 +1,727 @@
+{
+ "name": "chronic liver failure overview",
+ "width": 1504,
+ "title": "Chronic liver failure: find the cause (alcohol, primary sclerosing cholangitis, primary biliary cholangitis among others) and manage the complications of cirrhosis (varices by size and risk, ascites, hepatic encephalopathy), each with presentation, investigations and treatment in order",
+ "kinds": {
+  "alc_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "alc_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "alc_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "psc_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "psc_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "psc_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pbc_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pbc_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "pbc_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "var_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "var_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "var_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "asc_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "asc_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "asc_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "he_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "he_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "he_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 324,
+   "w": 236,
+   "h": 776,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 278,
+   "y": 324,
+   "w": 236,
+   "h": 776,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 516,
+   "y": 324,
+   "w": 236,
+   "h": 776,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 782,
+   "y": 324,
+   "w": 236,
+   "h": 776,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1020,
+   "y": 324,
+   "w": 236,
+   "h": 776,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1258,
+   "y": 324,
+   "w": 236,
+   "h": 776,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 470,
+   "h": 96,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 606,
+   "h": 146,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 792,
+   "h": 300,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 387,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Chronic liver disease: what is the CAUSE, and has cirrhosis DECOMPENSATED?",
+   "lines": [
+    "failure = synthesis ↓ (albumin, clotting factors) + excretion ↓ (bilirubin, jaundice)",
+    "a MASS in chronic liver disease = hepatocellular carcinoma until proven otherwise",
+    "PORTAL HYPERTENSION from a block PRE-hepatic (portal vein thrombosis), HEPATIC (cirrhosis commonest) or POST-hepatic (right heart failure, constrictive pericarditis, hepatic vein obstruction)"
+   ]
+  },
+  {
+   "id": "g_cause",
+   "x": 45,
+   "y": 174,
+   "w": 702,
+   "h": 78,
+   "kind": "plain",
+   "title": "Find and treat the CAUSE",
+   "lines": [
+    "also: hepatitis B or C · hemochromatosis · Wilson · alpha-1 antitrypsin · fatty liver · methotrexate, amiodarone · Budd-Chiari, heart failure"
+   ]
+  },
+  {
+   "id": "g_dec",
+   "x": 787,
+   "y": 174,
+   "w": 702,
+   "h": 78,
+   "kind": "plain",
+   "title": "DECOMPENSATED: variceal bleed · ascites · encephalopathy · jaundice",
+   "lines": [
+    "each one raises mortality"
+   ]
+  },
+  {
+   "id": "alc_head_0_0",
+   "x": 45,
+   "y": 332,
+   "w": 226,
+   "h": 98,
+   "kind": "alc_h",
+   "title": "Alcohol-related liver disease",
+   "lines": [
+    "fatty liver → fibrosis → cirrhosis"
+   ]
+  },
+  {
+   "id": "psc_head_0_0",
+   "x": 283,
+   "y": 332,
+   "w": 226,
+   "h": 98,
+   "kind": "psc_h",
+   "title": "Primary sclerosing cholangitis",
+   "lines": [
+    "intra- AND extrahepatic ducts (mostly extra)"
+   ]
+  },
+  {
+   "id": "pbc_head_0_0",
+   "x": 521,
+   "y": 332,
+   "w": 226,
+   "h": 98,
+   "kind": "pbc_h",
+   "title": "Primary biliary cholangitis",
+   "lines": [
+    "ONLY the intrahepatic ducts"
+   ]
+  },
+  {
+   "id": "var_head_0_0",
+   "x": 787,
+   "y": 332,
+   "w": 226,
+   "h": 98,
+   "kind": "var_h",
+   "title": "Esophageal varices",
+   "lines": [
+    "portal hypertension"
+   ]
+  },
+  {
+   "id": "asc_head_0_0",
+   "x": 1025,
+   "y": 332,
+   "w": 226,
+   "h": 98,
+   "kind": "asc_h",
+   "title": "Ascites",
+   "lines": [
+    "the COMMONEST complication"
+   ]
+  },
+  {
+   "id": "he_head_0_0",
+   "x": 1263,
+   "y": 332,
+   "w": 226,
+   "h": 98,
+   "kind": "he_h",
+   "title": "Hepatic encephalopathy",
+   "lines": [
+    "toxins (ammonia) not cleared + shunting"
+   ]
+  },
+  {
+   "id": "alc_pres_0_0",
+   "x": 45,
+   "y": 470,
+   "w": 226,
+   "h": 96,
+   "kind": "alc_t",
+   "title": "Chronic heavy drinking",
+   "lines": [
+    "higher risk: female, metabolic syndrome, hepatitis B or C, malnutrition, hemochromatosis"
+   ]
+  },
+  {
+   "id": "psc_pres_0_0",
+   "x": 283,
+   "y": 470,
+   "w": 226,
+   "h": 96,
+   "kind": "psc_t",
+   "title": "Right upper quadrant pain",
+   "lines": [
+    "• MALE",
+    "• inflammatory bowel disease"
+   ]
+  },
+  {
+   "id": "pbc_pres_0_0",
+   "x": 521,
+   "y": 470,
+   "w": 226,
+   "h": 96,
+   "kind": "pbc_t",
+   "title": "Fatigue, ITCH, jaundice",
+   "lines": [
+    "FEMALE"
+   ]
+  },
+  {
+   "id": "var_pres_0_0",
+   "x": 787,
+   "y": 470,
+   "w": 226,
+   "h": 96,
+   "kind": "var_t",
+   "title": "Variceal BLEED",
+   "lines": [
+    "screen to find them BEFORE they bleed"
+   ]
+  },
+  {
+   "id": "asc_pres_0_0",
+   "x": 1025,
+   "y": 470,
+   "w": 226,
+   "h": 96,
+   "kind": "asc_t",
+   "title": "Abdominal DISTENSION",
+   "lines": []
+  },
+  {
+   "id": "he_pres_0_0",
+   "x": 1263,
+   "y": 470,
+   "w": 226,
+   "h": 96,
+   "kind": "he_t",
+   "title": "Subtle change → COMA",
+   "lines": []
+  },
+  {
+   "id": "alc_inv_0_0",
+   "x": 45,
+   "y": 606,
+   "w": 226,
+   "h": 146,
+   "kind": "alc_w",
+   "title": "1 · Enzyme pattern",
+   "lines": [
+    "AST > ALT: ABNORMAL LIVER ENZYMES chart"
+   ]
+  },
+  {
+   "id": "psc_inv_0_0",
+   "x": 283,
+   "y": 606,
+   "w": 226,
+   "h": 62,
+   "kind": "psc_w",
+   "title": "1 · Alkaline phosphatase (ALP) ↑",
+   "lines": []
+  },
+  {
+   "id": "psc_inv_1_0",
+   "x": 283,
+   "y": 690,
+   "w": 226,
+   "h": 62,
+   "kind": "psc_t",
+   "title": "2 · Imaging: BEADED bile ducts",
+   "lines": []
+  },
+  {
+   "id": "pbc_inv_0_0",
+   "x": 521,
+   "y": 606,
+   "w": 226,
+   "h": 146,
+   "kind": "pbc_t",
+   "title": "1 · ANTI-MITOCHONDRIAL antibody +",
+   "lines": []
+  },
+  {
+   "id": "var_inv_0_0",
+   "x": 787,
+   "y": 606,
+   "w": 226,
+   "h": 81,
+   "kind": "var_t",
+   "title": "1 · Screening endoscopy when cirrhosis is diagnosed",
+   "lines": [
+    "decompensated: EVERY year"
+   ]
+  },
+  {
+   "id": "var_inv_1_0",
+   "x": 787,
+   "y": 709,
+   "w": 226,
+   "h": 43,
+   "kind": "var_w",
+   "title": "2 · What size, what RISK?",
+   "lines": []
+  },
+  {
+   "id": "asc_inv_0_0",
+   "x": 1025,
+   "y": 606,
+   "w": 226,
+   "h": 146,
+   "kind": "asc_w",
+   "title": "1 · Ascites or a distended bowel?",
+   "lines": [
+    "BOWEL OBSTRUCTION chart"
+   ]
+  },
+  {
+   "id": "he_inv_0_0",
+   "x": 1263,
+   "y": 606,
+   "w": 226,
+   "h": 146,
+   "kind": "warn",
+   "title": "Do NOT follow ammonia levels",
+   "lines": []
+  },
+  {
+   "id": "alc_tx_0_0",
+   "x": 45,
+   "y": 792,
+   "w": 226,
+   "h": 300,
+   "kind": "ok",
+   "title": "1 · ABSTINENCE",
+   "lines": [
+    "the first step in management"
+   ]
+  },
+  {
+   "id": "psc_tx_0_0",
+   "x": 283,
+   "y": 792,
+   "w": 226,
+   "h": 300,
+   "kind": "warn",
+   "title": "Liver transplant",
+   "lines": []
+  },
+  {
+   "id": "pbc_tx_0_0",
+   "x": 521,
+   "y": 792,
+   "w": 226,
+   "h": 300,
+   "kind": "ok",
+   "title": "Ursodiol",
+   "lines": []
+  },
+  {
+   "id": "var_tx_0_0",
+   "x": 787,
+   "y": 792,
+   "w": 226,
+   "h": 96,
+   "kind": "ok",
+   "title": "NO prophylaxis",
+   "lines": [
+    "• none: repeat endoscopy in 2–3 years",
+    "• SMALL, low risk"
+   ]
+  },
+  {
+   "id": "var_tx_1_0",
+   "x": 787,
+   "y": 910,
+   "w": 226,
+   "h": 98,
+   "kind": "warn",
+   "title": "SMALL high risk or LARGE low risk",
+   "lines": [
+    "non-selective BETA-BLOCKER: propranolol, nadolol, carvedilol"
+   ]
+  },
+  {
+   "id": "var_tx_2_0",
+   "x": 787,
+   "y": 1030,
+   "w": 226,
+   "h": 62,
+   "kind": "bad",
+   "title": "LARGE, high risk → BAND LIGATION",
+   "lines": []
+  },
+  {
+   "id": "asc_tx_0_0",
+   "x": 1025,
+   "y": 792,
+   "w": 226,
+   "h": 139,
+   "kind": "ok",
+   "title": "1 · Sodium < 2 g/day + diuretics",
+   "lines": []
+  },
+  {
+   "id": "asc_tx_1_0",
+   "x": 1025,
+   "y": 953,
+   "w": 226,
+   "h": 139,
+   "kind": "warn",
+   "title": "2 · Fluid restriction ONLY if sodium < 125",
+   "lines": []
+  },
+  {
+   "id": "he_tx_0_0",
+   "x": 1263,
+   "y": 792,
+   "w": 226,
+   "h": 129,
+   "kind": "ok",
+   "title": "1 · LACTULOSE",
+   "lines": []
+  },
+  {
+   "id": "he_tx_1_0",
+   "x": 1263,
+   "y": 943,
+   "w": 226,
+   "h": 149,
+   "kind": "ok",
+   "title": "2 · RECURRENT → add rifaximin",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_cause",
+   "path": "M767.0 124V149H396.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_dec",
+   "path": "M767.0 124V149H1138.0V174"
+  },
+  {
+   "from": "psc_inv_0_0",
+   "to": "psc_inv_1_0"
+  },
+  {
+   "from": "var_inv_0_0",
+   "to": "var_inv_1_0"
+  },
+  {
+   "from": "var_tx_0_0",
+   "to": "var_tx_1_0"
+  },
+  {
+   "from": "var_tx_1_0",
+   "to": "var_tx_2_0"
+  },
+  {
+   "from": "asc_tx_0_0",
+   "to": "asc_tx_1_0"
+  },
+  {
+   "from": "he_tx_0_0",
+   "to": "he_tx_1_0"
+  },
+  {
+   "from": "alc_head_0_0",
+   "to": "alc_pres_0_0"
+  },
+  {
+   "from": "alc_pres_0_0",
+   "to": "alc_inv_0_0"
+  },
+  {
+   "from": "alc_inv_0_0",
+   "to": "alc_tx_0_0"
+  },
+  {
+   "from": "g_cause",
+   "to": "alc_head_0_0",
+   "from_dx": -238,
+   "label": "drinks",
+   "label_at": [
+    158.0,
+    292
+   ]
+  },
+  {
+   "from": "psc_head_0_0",
+   "to": "psc_pres_0_0"
+  },
+  {
+   "from": "psc_pres_0_0",
+   "to": "psc_inv_0_0"
+  },
+  {
+   "from": "psc_inv_1_0",
+   "to": "psc_tx_0_0"
+  },
+  {
+   "from": "g_cause",
+   "to": "psc_head_0_0",
+   "from_dx": 0,
+   "label": "male, bowel disease",
+   "label_at": [
+    396.0,
+    292
+   ]
+  },
+  {
+   "from": "pbc_head_0_0",
+   "to": "pbc_pres_0_0"
+  },
+  {
+   "from": "pbc_pres_0_0",
+   "to": "pbc_inv_0_0"
+  },
+  {
+   "from": "pbc_inv_0_0",
+   "to": "pbc_tx_0_0"
+  },
+  {
+   "from": "g_cause",
+   "to": "pbc_head_0_0",
+   "from_dx": 238,
+   "label": "female, itch",
+   "label_at": [
+    634.0,
+    292
+   ]
+  },
+  {
+   "from": "var_head_0_0",
+   "to": "var_pres_0_0"
+  },
+  {
+   "from": "var_pres_0_0",
+   "to": "var_inv_0_0"
+  },
+  {
+   "from": "var_inv_1_0",
+   "to": "var_tx_0_0"
+  },
+  {
+   "from": "g_dec",
+   "to": "var_head_0_0",
+   "from_dx": -238,
+   "label": "bleed",
+   "label_at": [
+    900.0,
+    292
+   ]
+  },
+  {
+   "from": "asc_head_0_0",
+   "to": "asc_pres_0_0"
+  },
+  {
+   "from": "asc_pres_0_0",
+   "to": "asc_inv_0_0"
+  },
+  {
+   "from": "asc_inv_0_0",
+   "to": "asc_tx_0_0"
+  },
+  {
+   "from": "g_dec",
+   "to": "asc_head_0_0",
+   "from_dx": 0,
+   "label": "distension",
+   "label_at": [
+    1138.0,
+    292
+   ]
+  },
+  {
+   "from": "he_head_0_0",
+   "to": "he_pres_0_0"
+  },
+  {
+   "from": "he_pres_0_0",
+   "to": "he_inv_0_0"
+  },
+  {
+   "from": "he_inv_0_0",
+   "to": "he_tx_0_0"
+  },
+  {
+   "from": "g_dec",
+   "to": "he_head_0_0",
+   "from_dx": 238,
+   "label": "confused",
+   "label_at": [
+    1376.0,
+    292
+   ]
+  }
+ ],
+ "panels": []
+}

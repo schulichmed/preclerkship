@@ -1,0 +1,482 @@
+{
+ "name": "adult neck mass overview",
+ "title": "Adult neck mass decision chart: rule out normal structures, then midline (thyroid 90%) versus lateral (rule of 7s and age: infection, congenital or neoplasm, an older adult's lateral mass being cancer until proven otherwise) versus a salivary gland mass (stones and infection worse with meals, tumours painless); each column gives clues, investigations and treatment",
+ "col_w": 225,
+ "root": {
+  "title": "Adult neck mass: NORMAL structure? If not, MIDLINE, LATERAL, or in a SALIVARY GLAND?",
+  "lines": [
+   "normal: submandibular gland, C2 transverse process, carotid bulb, sternocleidomastoid, hyoid, cervical rib"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_mid",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "MIDLINE",
+   "lines": [
+    "THYROID 90% of the time"
+   ]
+  },
+  {
+   "id": "g_lat",
+   "cols": [
+    1,
+    2
+   ],
+   "title": "LATERAL: how LONG, and how OLD?",
+   "lines": []
+  },
+  {
+   "id": "g_sal",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "SALIVARY GLAND: does it swell with MEALS?",
+   "lines": []
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_lat",
+   "cols": [
+    1,
+    2
+   ],
+   "title": "Rule of 7s",
+   "lines": [
+    "• 7 DAYS → infection",
+    "• 7 WEEKS to 7 MONTHS → neoplasm",
+    "• 7 YEARS → congenital (PEDIATRIC NECK MASSES chart)"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "mid",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Midline mass",
+      []
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Thyroid (90%)",
+      [
+       "• goitre, tumour: THYROID MASSES chart",
+       "• thyroglossal duct cyst: PEDIATRIC NECK MASSES chart"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Other (10%)",
+      [
+       "• lymph node",
+       "• DERMOID cyst: submental, from birth",
+       "• lymphatic malformation"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Thyroid: thyroid-stimulating hormone (TSH) first",
+      [
+       "THYROID MASSES chart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Dermoid cyst → surgical removal",
+      [
+       "it keeps growing"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ln",
+   "colour": "teal",
+   "drop_from": "t_lat",
+   "drop_label": "DAYS · infection",
+   "head": [
+    [
+     [
+      "h",
+      "Infected lymph node",
+      []
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Reactive or suppurative?",
+      [
+       "• REACTIVE: the node reacts TO a nearby infection",
+       "• SUPPURATIVE: the node ITSELF is infected; skin red, inflamed"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Ask",
+      [
+       "• recent head and neck infection",
+       "• pets, travel, TB exposure"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Complete blood count (CBC) + differential, monospot",
+      [
+       "• white count ↑ → infection",
+       "• serology by exposure"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Ultrasound",
+      [
+       "first imaging: cystic? node?"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · FNA → culture + sensitivity",
+      [
+       "fine needle aspiration (FNA)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "PERSISTS → open neck biopsy",
+      [
+       "e.g. lymphoma, no obvious primary"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ca",
+   "colour": "magenta",
+   "drop_from": "t_lat",
+   "drop_label": "MONTHS · OLDER adult",
+   "head": [
+    [
+     [
+      "h",
+      "Head and neck cancer",
+      [
+       "older adult: CANCER until proven otherwise",
+       "usually a node METASTASIS from a head and neck primary"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Risk",
+      [
+       "• SMOKING, ALCOHOL",
+       "• human papillomavirus (HPV-16): tonsil, tongue base; younger, better prognosis",
+       "• sun, radiation, prior cancer"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Red flags > 3 weeks",
+      [
+       "• hoarseness, sore throat, ear pain with a NORMAL ear",
+       "• non-healing ulcer, white or red patch",
+       "• dysphagia, trismus, one-sided nasal block"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Look for the PRIMARY",
+      [
+       "• examine + palpate every site",
+       "• nasal endoscopy"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Ultrasound + FNA → cytology",
+      [
+       "CT or MRI neck; CT chest to stage"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Panendoscopy under anesthetic",
+      [
+       "finds the primary site"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "EARLY: ONE modality",
+      [
+       "surgery OR radiation"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "ADVANCED: combined",
+      [
+       "surgery + radiation, or chemo + radiation"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "By site",
+      [
+       "• oral cavity: surgery ± radiation",
+       "• oropharynx: radiation + chemo"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "st",
+   "colour": "olive",
+   "drop_label": "WORSE with meals",
+   "head": [
+    [
+     [
+      "h",
+      "Stone or infection",
+      [
+       "sialolithiasis · acute sialadenitis"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "STONE: submandibular most",
+      [
+       "PAIN + swelling, worse with MEALS"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "INFECTION: S. aureus",
+      [
+       "• tender, warm, PUS at the duct",
+       "• dehydration, after surgery, Sjögren"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Clinical diagnosis",
+      [
+       "palpate gland and duct"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Imaging if needed",
+      [
+       "submandibular stones mostly RADIOPAQUE, parotid radiolucent"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Massage, sour foods, hydration",
+      [
+       "infection: + warm compress, antibiotics"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "No better in 3 DAYS → complications?",
+      [
+       "abscess, deep neck infection"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Surgery: rare",
+      [
+       "complications, e.g. fistula"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tu",
+   "colour": "orange",
+   "drop_label": "PAINLESS, growing",
+   "head": [
+    [
+     [
+      "h",
+      "Salivary gland tumour",
+      [
+       "SMALLER gland = more likely CANCER",
+       "parotid 25% · submandibular 50% · sublingual/minor 75%"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Painless lump",
+      [
+       "parotid > 80% of tumours"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Malignant signs",
+      [
+       "• FACIAL NERVE weakness",
+       "• pain, skin change, hard fixed mass",
+       "• neck nodes"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Check the SKIN + FACIAL NERVE",
+      [
+       "skin cancer can invade the parotid"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Ultrasound, CT, FNA",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "EVERY salivary mass → EXCISION",
+      [
+       "• diagnostic AND therapeutic",
+       "• even benign: grows, can transform"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Keep the FACIAL NERVE",
+      [
+       "superficial or total parotidectomy"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Cancer → radiation after surgery",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,751 @@
+{
+ "name": "head and neck infections overview",
+ "width": 1386,
+ "title": "Head and neck infection decision chart: a sore throat is pharyngitis unless the signs show spread (peritonsillar abscess with uvula deviation, deep neck space infection with trismus and reduced neck movement); a toxic patient a week after pharyngitis suggests Lemierre syndrome and a diabetic or immunocompromised patient with a necrotic palate suggests mucormycosis; each column gives clues, workup and treatment",
+ "kinds": {
+  "ph_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ph_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ph_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pt_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pt_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "pt_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "dn_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dn_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "dn_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "le_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "le_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "le_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "mu_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mu_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "mu_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 260,
+   "h": 874,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 302,
+   "y": 270,
+   "w": 260,
+   "h": 874,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 564,
+   "y": 270,
+   "w": 260,
+   "h": 874,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 854,
+   "y": 270,
+   "w": 260,
+   "h": 874,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1116,
+   "y": 270,
+   "w": 260,
+   "h": 874,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 414,
+   "h": 304,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 758,
+   "h": 378,
+   "text": "WORKUP + TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 328,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Head and neck infection: is it SPREADING, and is the AIRWAY safe?",
+   "lines": [
+    "RED FLAGS: progressive symptoms, fever, ↓ neck movement, TRISMUS (cannot open the mouth), failed antibiotics",
+    "cover the skin and mouth flora: Gram-positives (S. aureus, strep) + oral ANAEROBES (Fusobacterium)"
+   ]
+  },
+  {
+   "id": "g_th",
+   "x": 45,
+   "y": 138,
+   "w": 774,
+   "h": 60,
+   "kind": "plain",
+   "title": "SORE THROAT: how far has it spread?",
+   "lines": [
+    "a drooling child in the tripod position (epiglottitis): see the PEDIATRIC STRIDOR chart"
+   ]
+  },
+  {
+   "id": "g_rare",
+   "x": 859,
+   "y": 138,
+   "w": 512,
+   "h": 60,
+   "kind": "plain",
+   "title": "TOXIC or IMMUNOCOMPROMISED: rare and deadly",
+   "lines": []
+  },
+  {
+   "id": "ph_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 250,
+   "h": 96,
+   "kind": "ph_h",
+   "title": "Pharyngitis",
+   "lines": [
+    "mostly VIRAL"
+   ]
+  },
+  {
+   "id": "pt_head_0_0",
+   "x": 307,
+   "y": 278,
+   "w": 250,
+   "h": 96,
+   "kind": "pt_h",
+   "title": "Peritonsillar abscess (PTA)",
+   "lines": [
+    "tonsillitis gone further"
+   ]
+  },
+  {
+   "id": "dn_head_0_0",
+   "x": 569,
+   "y": 278,
+   "w": 250,
+   "h": 96,
+   "kind": "dn_h",
+   "title": "Deep neck space infection",
+   "lines": [
+    "spreads from teeth, tonsils, parotid, nodes, ear, sinuses"
+   ]
+  },
+  {
+   "id": "le_head_0_0",
+   "x": 859,
+   "y": 278,
+   "w": 250,
+   "h": 96,
+   "kind": "le_h",
+   "title": "Lemierre syndrome",
+   "lines": [
+    "septic thrombophlebitis of the INTERNAL JUGULAR vein",
+    "Fusobacterium necrophorum"
+   ]
+  },
+  {
+   "id": "mu_head_0_0",
+   "x": 1121,
+   "y": 278,
+   "w": 250,
+   "h": 96,
+   "kind": "mu_h",
+   "title": "Rhinocerebral mucormycosis",
+   "lines": [
+    "angio-invasive FUNGUS · very high mortality"
+   ]
+  },
+  {
+   "id": "ph_pres_0_0",
+   "x": 45.0,
+   "y": 414,
+   "w": 120.0,
+   "h": 186,
+   "kind": "ph_t",
+   "title": "VIRAL",
+   "lines": [
+    "• rhinovirus, coronavirus, influenza, Epstein-Barr, cytomegalovirus",
+    "• NO exudate",
+    "• PAINLESS nodes"
+   ]
+  },
+  {
+   "id": "ph_pres_0_1",
+   "x": 175.0,
+   "y": 414,
+   "w": 120.0,
+   "h": 186,
+   "kind": "ph_t",
+   "title": "BACTERIAL",
+   "lines": [
+    "• group A strep (GAS)",
+    "• tonsillar EXUDATE",
+    "• PAINFUL nodes"
+   ]
+  },
+  {
+   "id": "ph_pres_1_0",
+   "x": 45,
+   "y": 622,
+   "w": 250,
+   "h": 96,
+   "kind": "ph_w",
+   "title": "Also consider",
+   "lines": [
+    "• gonorrhea, chlamydia",
+    "• unvaccinated: diphtheria, a GREY membrane"
+   ]
+  },
+  {
+   "id": "pt_pres_0_0",
+   "x": 307,
+   "y": 414,
+   "w": 250,
+   "h": 150,
+   "kind": "pt_t",
+   "title": "Peritonsillar SWELLING",
+   "lines": [
+    "• UVULA pushed to the other side",
+    "• large, red tonsil with exudate"
+   ]
+  },
+  {
+   "id": "pt_pres_1_0",
+   "x": 307,
+   "y": 586,
+   "w": 250,
+   "h": 132,
+   "kind": "bad",
+   "title": "Trismus, ↓ neck movement?",
+   "lines": [
+    "→ DEEP NECK infection"
+   ]
+  },
+  {
+   "id": "dn_pres_0_0",
+   "x": 569,
+   "y": 414,
+   "w": 250,
+   "h": 160,
+   "kind": "dn_t",
+   "title": "TRISMUS + ↓ neck range of motion",
+   "lines": [
+    "fever, progressive symptoms"
+   ]
+  },
+  {
+   "id": "dn_pres_1_0",
+   "x": 569,
+   "y": 596,
+   "w": 250,
+   "h": 122,
+   "kind": "bad",
+   "title": "Always consider the AIRWAY",
+   "lines": []
+  },
+  {
+   "id": "le_pres_0_0",
+   "x": 859,
+   "y": 414,
+   "w": 250,
+   "h": 160,
+   "kind": "le_t",
+   "title": "Pharyngitis, then ~1 WEEK later",
+   "lines": [
+    "• fever, chills, rigors",
+    "• looks TOXIC"
+   ]
+  },
+  {
+   "id": "le_pres_1_0",
+   "x": 859,
+   "y": 596,
+   "w": 250,
+   "h": 122,
+   "kind": "le_w",
+   "title": "Neck",
+   "lines": [
+    "firm along the internal jugular vein"
+   ]
+  },
+  {
+   "id": "mu_pres_0_0",
+   "x": 1121,
+   "y": 414,
+   "w": 250,
+   "h": 141,
+   "kind": "mu_t",
+   "title": "Who",
+   "lines": [
+    "• diabetic ketoacidosis (DKA), diabetes",
+    "• immunocompromise, steroids",
+    "• iron chelator (deferoxamine)"
+   ]
+  },
+  {
+   "id": "mu_pres_1_0",
+   "x": 1121,
+   "y": 577,
+   "w": 250,
+   "h": 141,
+   "kind": "mu_w",
+   "title": "Rapid",
+   "lines": [
+    "• fever, sinus pain, headache, nasal discharge",
+    "• NECROTIC palate"
+   ]
+  },
+  {
+   "id": "ph_tx_0_0",
+   "x": 45,
+   "y": 758,
+   "w": 250,
+   "h": 62,
+   "kind": "ph_t",
+   "title": "1 · Test for STREP throat",
+   "lines": []
+  },
+  {
+   "id": "ph_tx_1_0",
+   "x": 45,
+   "y": 842,
+   "w": 250,
+   "h": 100,
+   "kind": "ok",
+   "title": "2 · GAS → PENICILLIN promptly",
+   "lines": [
+    "prevents rheumatic fever"
+   ]
+  },
+  {
+   "id": "ph_tx_2_0",
+   "x": 45,
+   "y": 964,
+   "w": 250,
+   "h": 172,
+   "kind": "ph_w",
+   "title": "Recurrent → tonsillectomy (Paradise)",
+   "lines": [
+    "• 7 in 1 year",
+    "• 5 a year for 2 years",
+    "• 3 a year for 3 years",
+    "~also sleep apnea, recurrent abscess, malignancy"
+   ]
+  },
+  {
+   "id": "pt_tx_0_0",
+   "x": 307,
+   "y": 758,
+   "w": 250,
+   "h": 105,
+   "kind": "bad",
+   "title": "1 · INCISION + DRAINAGE",
+   "lines": []
+  },
+  {
+   "id": "pt_tx_1_0",
+   "x": 307,
+   "y": 885,
+   "w": 250,
+   "h": 105,
+   "kind": "ok",
+   "title": "2 · Amoxicillin-clavulanate",
+   "lines": []
+  },
+  {
+   "id": "pt_tx_2_0",
+   "x": 307,
+   "y": 1012,
+   "w": 250,
+   "h": 125,
+   "kind": "pt_w",
+   "title": "Recurrent abscess → tonsillectomy",
+   "lines": []
+  },
+  {
+   "id": "dn_tx_0_0",
+   "x": 569,
+   "y": 758,
+   "w": 250,
+   "h": 42,
+   "kind": "dn_t",
+   "title": "1 · CT",
+   "lines": []
+  },
+  {
+   "id": "dn_tx_1_0",
+   "x": 569,
+   "y": 822,
+   "w": 250,
+   "h": 60,
+   "kind": "ok",
+   "title": "2 · Ceftriaxone + metronidazole",
+   "lines": [
+    "oral flora"
+   ]
+  },
+  {
+   "id": "dn_tx_2_0",
+   "x": 569,
+   "y": 904,
+   "w": 250,
+   "h": 150,
+   "kind": "warn",
+   "title": "ADD for risk",
+   "lines": [
+    "• colonized with methicillin-resistant S. aureus (MRSA), or injects drugs → + vancomycin",
+    "• immunocompromised, health-care → + piperacillin-tazobactam (Pseudomonas)"
+   ]
+  },
+  {
+   "id": "dn_tx_3_0",
+   "x": 569,
+   "y": 1076,
+   "w": 250,
+   "h": 60,
+   "kind": "bad",
+   "title": "3 · Incision + drainage",
+   "lines": [
+    "± steroids"
+   ]
+  },
+  {
+   "id": "le_tx_0_0",
+   "x": 859,
+   "y": 758,
+   "w": 250,
+   "h": 68,
+   "kind": "le_t",
+   "title": "1 · CT WITH CONTRAST",
+   "lines": []
+  },
+  {
+   "id": "le_tx_1_0",
+   "x": 859,
+   "y": 848,
+   "w": 250,
+   "h": 86,
+   "kind": "ok",
+   "title": "2 · Ceftriaxone + metronidazole",
+   "lines": [
+    "+ ANTICOAGULATION"
+   ]
+  },
+  {
+   "id": "le_tx_2_0",
+   "x": 859,
+   "y": 956,
+   "w": 250,
+   "h": 68,
+   "kind": "warn",
+   "title": "3 · Drain local abscesses",
+   "lines": []
+  },
+  {
+   "id": "le_tx_3_0",
+   "x": 859,
+   "y": 1046,
+   "w": 250,
+   "h": 88,
+   "kind": "bad",
+   "title": "Watch for SEPTIC EMBOLI to the lungs",
+   "lines": []
+  },
+  {
+   "id": "mu_tx_0_0",
+   "x": 1121,
+   "y": 758,
+   "w": 250,
+   "h": 178,
+   "kind": "bad",
+   "title": "1 · Surgical DEBRIDEMENT",
+   "lines": []
+  },
+  {
+   "id": "mu_tx_1_0",
+   "x": 1121,
+   "y": 958,
+   "w": 250,
+   "h": 178,
+   "kind": "ok",
+   "title": "2 · IV liposomal amphotericin B",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_th",
+   "path": "M708.0 88V113H432.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_rare",
+   "path": "M708.0 88V113H1115.0V138"
+  },
+  {
+   "from": "ph_pres_0_0",
+   "to": "ph_pres_1_0",
+   "to_dx": -65.0,
+   "dashed": true
+  },
+  {
+   "from": "ph_pres_0_1",
+   "to": "ph_pres_1_0",
+   "to_dx": 65.0,
+   "dashed": true
+  },
+  {
+   "from": "pt_pres_0_0",
+   "to": "pt_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "dn_pres_0_0",
+   "to": "dn_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "le_pres_0_0",
+   "to": "le_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "mu_pres_0_0",
+   "to": "mu_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ph_tx_0_0",
+   "to": "ph_tx_1_0"
+  },
+  {
+   "from": "ph_tx_1_0",
+   "to": "ph_tx_2_0"
+  },
+  {
+   "from": "pt_tx_0_0",
+   "to": "pt_tx_1_0"
+  },
+  {
+   "from": "pt_tx_1_0",
+   "to": "pt_tx_2_0"
+  },
+  {
+   "from": "dn_tx_0_0",
+   "to": "dn_tx_1_0"
+  },
+  {
+   "from": "dn_tx_1_0",
+   "to": "dn_tx_2_0"
+  },
+  {
+   "from": "dn_tx_2_0",
+   "to": "dn_tx_3_0"
+  },
+  {
+   "from": "le_tx_0_0",
+   "to": "le_tx_1_0"
+  },
+  {
+   "from": "le_tx_1_0",
+   "to": "le_tx_2_0"
+  },
+  {
+   "from": "le_tx_2_0",
+   "to": "le_tx_3_0"
+  },
+  {
+   "from": "mu_tx_0_0",
+   "to": "mu_tx_1_0"
+  },
+  {
+   "from": "ph_head_0_0",
+   "to": "ph_pres_0_0",
+   "from_dx": -65.0
+  },
+  {
+   "from": "ph_head_0_0",
+   "to": "ph_pres_0_1",
+   "from_dx": 65.0
+  },
+  {
+   "from": "ph_pres_1_0",
+   "to": "ph_tx_0_0"
+  },
+  {
+   "from": "g_th",
+   "to": "ph_head_0_0",
+   "from_dx": -262,
+   "label": "THROAT only",
+   "label_at": [
+    170.0,
+    238
+   ]
+  },
+  {
+   "from": "pt_head_0_0",
+   "to": "pt_pres_0_0"
+  },
+  {
+   "from": "pt_pres_1_0",
+   "to": "pt_tx_0_0"
+  },
+  {
+   "from": "g_th",
+   "to": "pt_head_0_0",
+   "from_dx": 0,
+   "label": "UVULA DEVIATED",
+   "label_at": [
+    432.0,
+    238
+   ]
+  },
+  {
+   "from": "dn_head_0_0",
+   "to": "dn_pres_0_0"
+  },
+  {
+   "from": "dn_pres_1_0",
+   "to": "dn_tx_0_0"
+  },
+  {
+   "from": "g_th",
+   "to": "dn_head_0_0",
+   "from_dx": 262,
+   "label": "TRISMUS · ↓ neck movement",
+   "label_at": [
+    694.0,
+    238
+   ]
+  },
+  {
+   "from": "le_head_0_0",
+   "to": "le_pres_0_0"
+  },
+  {
+   "from": "le_pres_1_0",
+   "to": "le_tx_0_0"
+  },
+  {
+   "from": "g_rare",
+   "to": "le_head_0_0",
+   "from_dx": -131,
+   "label": "TOXIC a week after pharyngitis",
+   "label_at": [
+    984.0,
+    238
+   ]
+  },
+  {
+   "from": "mu_head_0_0",
+   "to": "mu_pres_0_0"
+  },
+  {
+   "from": "mu_pres_1_0",
+   "to": "mu_tx_0_0"
+  },
+  {
+   "from": "g_rare",
+   "to": "mu_head_0_0",
+   "from_dx": 131,
+   "label": "DKA · NECROTIC palate",
+   "label_at": [
+    1246.0,
+    238
+   ]
+  }
+ ],
+ "panels": []
+}

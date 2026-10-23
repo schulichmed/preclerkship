@@ -1,0 +1,19 @@
+{
+ "name": "abnormal labour pathway 3",
+ "title": "Second stage problem: cesarean section unless fully dilated with the head engaged, then vacuum if no rotation is needed or forceps if it is, each going to cesarean section if it fails",
+ "nodes": [
+  {"id": "A", "x": 10, "y": 70, "w": 250, "h": 64, "kind": "lo", "title": "2nd stage problem", "lines": ["abnormal FHR · prolonged · exhausted"]},
+  {"id": "B", "x": 310, "y": 70, "w": 180, "h": 64, "kind": "plain", "title": "Fully dilated", "lines": ["and head engaged?"]},
+  {"id": "C", "x": 545, "y": 70, "w": 120, "h": 64, "kind": "plain", "title": "Needs", "lines": ["rotation?"]},
+  {"id": "VAC", "x": 740, "y": 10, "w": 160, "h": 64, "kind": "anti", "title": "Vacuum", "lines": ["fails → C/S"]},
+  {"id": "FOR", "x": 740, "y": 130, "w": 160, "h": 64, "kind": "ana", "title": "Forceps", "lines": ["fails → C/S"]},
+  {"id": "CS", "x": 320, "y": 200, "w": 160, "kind": "warn", "title": "Cesarean section", "lines": []}
+ ],
+ "edges": [
+  {"from": "A", "to": "B", "from_side": "right", "to_side": "left"},
+  {"from": "B", "to": "CS", "label": "no", "label_at": [418, 172]},
+  {"from": "B", "to": "C", "from_side": "right", "to_side": "left", "label": "yes", "label_at": [517, 94]},
+  {"from": "C", "to": "VAC", "from_side": "right", "to_side": "left", "from_dx": -12, "label": "no", "label_at": [688, 50]},
+  {"from": "C", "to": "FOR", "from_side": "right", "to_side": "left", "from_dx": 12, "label": "yes", "label_at": [688, 158]}
+ ]
+}

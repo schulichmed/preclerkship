@@ -1,0 +1,487 @@
+{
+ "name": "erythrocytosis overview",
+ "width": 832,
+ "title": "High hemoglobin sorted by serum EPO: low EPO is primary (polycythemia vera, confirmed by JAK2 or marrow) and normal or high EPO is secondary (systemic hypoxia, renal hypoxia or an EPO-secreting tumour, and drugs), with clues, tests and treatment for each",
+ "kinds": {
+  "pv_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pv_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "pv_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "hy_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hy_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "hy_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "tu_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tu_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "tu_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 290,
+   "w": 250,
+   "h": 1116,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 320,
+   "y": 290,
+   "w": 250,
+   "h": 1116,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 572,
+   "y": 290,
+   "w": 250,
+   "h": 1116,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 490,
+   "h": 232,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 762,
+   "h": 280,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1082,
+   "h": 316,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 60,
+   "y": 10,
+   "w": 742,
+   "kind": "dark",
+   "title": "Hemoglobin > 170 g/L (men), > 160 g/L (women): is the MARROW driving itself, or is something driving EPO?",
+   "lines": [
+    "measure serum erythropoietin (EPO)",
+    "Hb, platelets AND white cells all high → treat it as erythrocytosis (think PV)"
+   ]
+  },
+  {
+   "id": "g_p",
+   "x": 45,
+   "y": 158,
+   "w": 240,
+   "h": 60,
+   "kind": "plain",
+   "title": "EPO LOW: PRIMARY",
+   "lines": [
+    "the marrow is autonomous (clonal)"
+   ]
+  },
+  {
+   "id": "g_s",
+   "x": 325,
+   "y": 158,
+   "w": 492,
+   "h": 60,
+   "kind": "plain",
+   "title": "EPO NORMAL or HIGH: SECONDARY",
+   "lines": [
+    "ask first: EPO, androgen or steroid use · thrombosis risk far lower than in PV"
+   ]
+  },
+  {
+   "id": "pv_head_0_0",
+   "x": 45,
+   "y": 298,
+   "w": 240,
+   "h": 152,
+   "kind": "pv_h",
+   "title": "Polycythemia vera (PV)",
+   "lines": [
+    "JAK2 stuck 'on' · median age 60–65"
+   ]
+  },
+  {
+   "id": "hy_head_0_0",
+   "x": 325,
+   "y": 298,
+   "w": 240,
+   "h": 152,
+   "kind": "hy_h",
+   "title": "Systemic hypoxia",
+   "lines": [
+    "chronic obstructive pulmonary disease (COPD) · sleep apnea · smoking · altitude · shunt"
+   ]
+  },
+  {
+   "id": "tu_head_0_0",
+   "x": 577,
+   "y": 298,
+   "w": 240,
+   "h": 152,
+   "kind": "tu_h",
+   "title": "Renal hypoxia or EPO-secreting tumour",
+   "lines": [
+    "renal artery stenosis, cysts, transplant · renal cell or hepatocellular carcinoma, cerebellar hemangioblastoma, pheochromocytoma"
+   ]
+  },
+  {
+   "id": "pv_clue_0_0",
+   "x": 45,
+   "y": 490,
+   "w": 240,
+   "h": 232,
+   "kind": "pv_t",
+   "title": "Too many cells",
+   "lines": [
+    "• itch after a hot bath (aquagenic pruritus)",
+    "• early satiety · splenomegaly · ruddy face",
+    "• burning hands/feet (erythromelalgia), ocular migraine"
+   ]
+  },
+  {
+   "id": "hy_clue_0_0",
+   "x": 325,
+   "y": 490,
+   "w": 240,
+   "h": 150,
+   "kind": "hy_t",
+   "title": "History",
+   "lines": [
+    "• snoring, gasping at night: obstructive sleep apnea (OSA)",
+    "• smoking ± COPD · high altitude in last 3 months",
+    "• heart failure, congenital heart disease"
+   ]
+  },
+  {
+   "id": "hy_clue_1_0",
+   "x": 325,
+   "y": 662,
+   "w": 240,
+   "h": 60,
+   "kind": "hy_w",
+   "title": "Exam",
+   "lines": [
+    "• signs of hypoxia · murmur · clubbing"
+   ]
+  },
+  {
+   "id": "tu_clue_0_0",
+   "x": 577,
+   "y": 490,
+   "w": 240,
+   "h": 232,
+   "kind": "tu_t",
+   "title": "Clues",
+   "lines": [
+    "• constitutional symptoms (malignancy)",
+    "• kidney disease or transplant"
+   ]
+  },
+  {
+   "id": "pv_inv_0_0",
+   "x": 45,
+   "y": 762,
+   "w": 240,
+   "h": 42,
+   "kind": "pv_t",
+   "title": "1 · EPO LOW",
+   "lines": []
+  },
+  {
+   "id": "pv_inv_1_0",
+   "x": 45,
+   "y": 826,
+   "w": 240,
+   "h": 60,
+   "kind": "pv_t",
+   "title": "2 · JAK2 V617F or exon 12",
+   "lines": [
+    "positive → PV"
+   ]
+  },
+  {
+   "id": "pv_inv_2_0",
+   "x": 45,
+   "y": 908,
+   "w": 240,
+   "h": 134,
+   "kind": "pv_w",
+   "title": "3 · NEGATIVE: bone marrow biopsy",
+   "lines": [
+    "• hypercellular, abnormal megakaryocytes → PV",
+    "• normal → congenital EPO receptor mutation"
+   ]
+  },
+  {
+   "id": "hy_inv_0_0",
+   "x": 325,
+   "y": 762,
+   "w": 240,
+   "h": 280,
+   "kind": "hy_t",
+   "title": "Find the hypoxia",
+   "lines": [
+    "• pulmonary function tests (COPD)",
+    "• sleep study (OSA)",
+    "• echocardiogram (right-to-left shunt)"
+   ]
+  },
+  {
+   "id": "tu_inv_0_0",
+   "x": 577,
+   "y": 762,
+   "w": 240,
+   "h": 280,
+   "kind": "tu_t",
+   "title": "CT scan",
+   "lines": [
+    "when all the other workup is NEGATIVE"
+   ]
+  },
+  {
+   "id": "pv_tx_0_0",
+   "x": 45,
+   "y": 1082,
+   "w": 240,
+   "h": 80,
+   "kind": "ok",
+   "title": "1 · EVERYONE: acetylsalicylic acid (ASA) 81 mg daily",
+   "lines": [
+    "keep hematocrit (Hct) < 0.45"
+   ]
+  },
+  {
+   "id": "pv_tx_1_0",
+   "x": 45.0,
+   "y": 1184,
+   "w": 115.0,
+   "h": 114,
+   "kind": "warn",
+   "title": "HIGH risk",
+   "lines": [
+    "age ≥ 60 or prior clot",
+    "→ hydroxyurea ± phlebotomy"
+   ]
+  },
+  {
+   "id": "pv_tx_1_1",
+   "x": 170.0,
+   "y": 1184,
+   "w": 115.0,
+   "h": 114,
+   "kind": "ok",
+   "title": "LOW risk",
+   "lines": [
+    "→ phlebotomy"
+   ]
+  },
+  {
+   "id": "pv_tx_2_0",
+   "x": 45,
+   "y": 1320,
+   "w": 240,
+   "h": 78,
+   "kind": "ok",
+   "title": "2 · Cut cardiovascular risk",
+   "lines": [
+    "smoking, diabetes, blood pressure, lipids"
+   ]
+  },
+  {
+   "id": "hy_tx_0_0",
+   "x": 325,
+   "y": 1082,
+   "w": 240,
+   "h": 138,
+   "kind": "ok",
+   "title": "Treat the cause",
+   "lines": []
+  },
+  {
+   "id": "hy_tx_1_0",
+   "x": 325,
+   "y": 1242,
+   "w": 240,
+   "h": 156,
+   "kind": "bad",
+   "title": "Do NOT phlebotomize",
+   "lines": [
+    "hypoxia-driven erythrocytosis"
+   ]
+  },
+  {
+   "id": "tu_tx_0_0",
+   "x": 577,
+   "y": 1082,
+   "w": 240,
+   "h": 316,
+   "kind": "ok",
+   "title": "Treat the cause",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_p",
+   "path": "M431.0 108V133H165.0V158"
+  },
+  {
+   "from": "root",
+   "to": "g_s",
+   "path": "M431.0 108V133H571.0V158"
+  },
+  {
+   "from": "hy_clue_0_0",
+   "to": "hy_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "pv_inv_0_0",
+   "to": "pv_inv_1_0"
+  },
+  {
+   "from": "pv_inv_1_0",
+   "to": "pv_inv_2_0"
+  },
+  {
+   "from": "pv_tx_0_0",
+   "to": "pv_tx_1_0",
+   "from_dx": -62.5
+  },
+  {
+   "from": "pv_tx_0_0",
+   "to": "pv_tx_1_1",
+   "from_dx": 62.5
+  },
+  {
+   "from": "pv_tx_1_0",
+   "to": "pv_tx_2_0",
+   "to_dx": -62.5
+  },
+  {
+   "from": "pv_tx_1_1",
+   "to": "pv_tx_2_0",
+   "to_dx": 62.5
+  },
+  {
+   "from": "hy_tx_0_0",
+   "to": "hy_tx_1_0"
+  },
+  {
+   "from": "pv_head_0_0",
+   "to": "pv_clue_0_0"
+  },
+  {
+   "from": "pv_clue_0_0",
+   "to": "pv_inv_0_0"
+  },
+  {
+   "from": "pv_inv_2_0",
+   "to": "pv_tx_0_0"
+  },
+  {
+   "from": "g_p",
+   "to": "pv_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "hy_head_0_0",
+   "to": "hy_clue_0_0"
+  },
+  {
+   "from": "hy_clue_1_0",
+   "to": "hy_inv_0_0"
+  },
+  {
+   "from": "hy_inv_0_0",
+   "to": "hy_tx_0_0"
+  },
+  {
+   "from": "g_s",
+   "to": "hy_head_0_0",
+   "from_dx": -126,
+   "label": "snoring, smoker",
+   "label_at": [
+    445.0,
+    258
+   ]
+  },
+  {
+   "from": "tu_head_0_0",
+   "to": "tu_clue_0_0"
+  },
+  {
+   "from": "tu_clue_0_0",
+   "to": "tu_inv_0_0"
+  },
+  {
+   "from": "tu_inv_0_0",
+   "to": "tu_tx_0_0"
+  },
+  {
+   "from": "g_s",
+   "to": "tu_head_0_0",
+   "from_dx": 126,
+   "label": "workup negative",
+   "label_at": [
+    697.0,
+    258
+   ]
+  }
+ ],
+ "panels": []
+}

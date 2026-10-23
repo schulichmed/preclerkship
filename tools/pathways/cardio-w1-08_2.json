@@ -1,0 +1,831 @@
+{
+ "name": "cardiac pharmacology overview",
+ "width": 1686,
+ "title": "Cardiovascular drug classes decision chart: where each drug acts (the renin-angiotensin-aldosterone system, the heart's rate and force, or the vessels) predicts how it works, when to use it and what rules it out, for ACE inhibitors and angiotensin receptor blockers, mineralocorticoid receptor antagonists, digoxin, beta blockers, non-dihydropyridine and dihydropyridine calcium channel blockers, and nitrates",
+ "kinds": {
+  "ac_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ac_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ac_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "mr_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mr_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "mr_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "dg_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dg_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "dg_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "bb_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "bb_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "bb_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "nd_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nd_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "nd_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "nt_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nt_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "nt_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "dh_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dh_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "dh_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 252,
+   "w": 224,
+   "h": 704,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 266,
+   "y": 252,
+   "w": 224,
+   "h": 704,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 520,
+   "y": 252,
+   "w": 224,
+   "h": 704,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 746,
+   "y": 252,
+   "w": 224,
+   "h": 704,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 972,
+   "y": 252,
+   "w": 224,
+   "h": 704,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1226,
+   "y": 252,
+   "w": 224,
+   "h": 704,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1452,
+   "y": 252,
+   "w": 224,
+   "h": 704,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 398,
+   "h": 132,
+   "text": "HOW IT WORKS"
+  },
+  {
+   "x": 23,
+   "y": 570,
+   "h": 124,
+   "text": "USE WHEN"
+  },
+  {
+   "x": 23,
+   "y": 734,
+   "h": 214,
+   "text": "AVOID"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 478,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A cardiovascular drug: WHERE does it act? That predicts its use and what rules it OUT",
+   "lines": [
+    "where each fits in a regimen: see the HYPERTENSION TREATMENT, HEART FAILURE and ATRIAL FIBRILLATION charts"
+   ]
+  },
+  {
+   "id": "g_r",
+   "x": 45,
+   "y": 120,
+   "w": 440,
+   "h": 60,
+   "kind": "plain",
+   "title": "Block the renin-angiotensin-aldosterone system (RAAS)",
+   "lines": [
+    "all of them RAISE K+: watch it, most in renal insufficiency"
+   ]
+  },
+  {
+   "id": "g_h",
+   "x": 525,
+   "y": 120,
+   "w": 666,
+   "h": 60,
+   "kind": "plain",
+   "title": "Act on the HEART: rate and force",
+   "lines": [
+    "ACUTE HF with a fast rate: digoxin, or a LOW-dose beta blocker; NOT diltiazem (negative inotrope)"
+   ]
+  },
+  {
+   "id": "g_v",
+   "x": 1231,
+   "y": 120,
+   "w": 440,
+   "h": 60,
+   "kind": "plain",
+   "title": "Dilate the VESSELS",
+   "lines": [
+    "headache, hypotension, reflex tachycardia"
+   ]
+  },
+  {
+   "id": "ac_head_0_0",
+   "x": 45,
+   "y": 260,
+   "w": 214,
+   "h": 98,
+   "kind": "ac_h",
+   "title": "ACE inhibitor (-pril) · ARB (-sartan)",
+   "lines": [
+    "angiotensin receptor blocker (ARB)"
+   ]
+  },
+  {
+   "id": "mr_head_0_0",
+   "x": 271,
+   "y": 260,
+   "w": 214,
+   "h": 98,
+   "kind": "mr_h",
+   "title": "MRA: spironolactone, eplerenone",
+   "lines": [
+    "mineralocorticoid receptor antagonist"
+   ]
+  },
+  {
+   "id": "dg_head_0_0",
+   "x": 525,
+   "y": 260,
+   "w": 214,
+   "h": 98,
+   "kind": "dg_h",
+   "title": "Digoxin",
+   "lines": [
+    "inotrope"
+   ]
+  },
+  {
+   "id": "bb_head_0_0",
+   "x": 751,
+   "y": 260,
+   "w": 214,
+   "h": 98,
+   "kind": "bb_h",
+   "title": "Beta blocker",
+   "lines": [
+    "propranolol (non-selective), metoprolol, bisoprolol"
+   ]
+  },
+  {
+   "id": "nd_head_0_0",
+   "x": 977,
+   "y": 260,
+   "w": 214,
+   "h": 98,
+   "kind": "nd_h",
+   "title": "Non-dihydropyridine CCB",
+   "lines": [
+    "calcium channel blocker: verapamil, diltiazem"
+   ]
+  },
+  {
+   "id": "nt_head_0_0",
+   "x": 1231,
+   "y": 260,
+   "w": 214,
+   "h": 98,
+   "kind": "nt_h",
+   "title": "Nitrates: nitroglycerin",
+   "lines": [
+    "IV, sublingual, patch; isosorbide tablets"
+   ]
+  },
+  {
+   "id": "dh_head_0_0",
+   "x": 1457,
+   "y": 260,
+   "w": 214,
+   "h": 98,
+   "kind": "dh_h",
+   "title": "Dihydropyridine CCB (-pine)",
+   "lines": [
+    "amlodipine, nifedipine"
+   ]
+  },
+  {
+   "id": "ac_how_0_0",
+   "x": 45,
+   "y": 398,
+   "w": 214,
+   "h": 132,
+   "kind": "ac_w",
+   "title": "↓ angiotensin II action",
+   "lines": [
+    "• ACE inhibitor: bradykinin builds up too → dry cough, angioedema",
+    "• ARB: blocks the receptor, NO bradykinin effect"
+   ]
+  },
+  {
+   "id": "mr_how_0_0",
+   "x": 271,
+   "y": 398,
+   "w": 214,
+   "h": 132,
+   "kind": "mr_w",
+   "title": "Blocks aldosterone",
+   "lines": [
+    "less Na+ and water kept, K+ kept"
+   ]
+  },
+  {
+   "id": "dg_how_0_0",
+   "x": 525,
+   "y": 398,
+   "w": 214,
+   "h": 132,
+   "kind": "dg_w",
+   "title": "Blocks the Na+/K+ ATPase",
+   "lines": [
+    "• more Ca2+ inside → ↑ FORCE",
+    "• vagal: slows the SA and AV node"
+   ]
+  },
+  {
+   "id": "bb_how_0_0",
+   "x": 751,
+   "y": 398,
+   "w": 214,
+   "h": 132,
+   "kind": "bb_w",
+   "title": "β1 block: ↓ rate, force, conduction",
+   "lines": [
+    "β2 block: bronchospasm"
+   ]
+  },
+  {
+   "id": "nd_how_0_0",
+   "x": 977,
+   "y": 398,
+   "w": 214,
+   "h": 132,
+   "kind": "nd_w",
+   "title": "Vessel AND heart Ca2+ channels",
+   "lines": [
+    "slows SA and AV node: NO reflex tachycardia"
+   ]
+  },
+  {
+   "id": "nt_how_0_0",
+   "x": 1231,
+   "y": 398,
+   "w": 214,
+   "h": 132,
+   "kind": "nt_w",
+   "title": "Supplies nitric oxide → cGMP",
+   "lines": [
+    "dilates: ↓ preload, afterload, O2 demand"
+   ]
+  },
+  {
+   "id": "dh_how_0_0",
+   "x": 1457,
+   "y": 398,
+   "w": 214,
+   "h": 132,
+   "kind": "dh_w",
+   "title": "Vessel Ca2+ channels ONLY",
+   "lines": [
+    "↓ afterload → REFLEX tachycardia"
+   ]
+  },
+  {
+   "id": "ac_use_0_0",
+   "x": 45,
+   "y": 570,
+   "w": 214,
+   "h": 124,
+   "kind": "ok",
+   "title": "Both",
+   "lines": [
+    "• hypertension, systolic HF (HFrEF)",
+    "• after an MI",
+    "• diabetes with proteinuria"
+   ]
+  },
+  {
+   "id": "mr_use_0_0",
+   "x": 271,
+   "y": 570,
+   "w": 214,
+   "h": 124,
+   "kind": "ok",
+   "title": "Use when",
+   "lines": [
+    "• HFrEF: ↓ mortality",
+    "• cirrhotic ascites (+ furosemide)",
+    "• hypertension, added on"
+   ]
+  },
+  {
+   "id": "dg_use_0_0",
+   "x": 525,
+   "y": 570,
+   "w": 214,
+   "h": 124,
+   "kind": "ok",
+   "title": "Use when",
+   "lines": [
+    "• HFrEF: fewer admissions, NO mortality benefit",
+    "• chronic AF"
+   ]
+  },
+  {
+   "id": "bb_use_0_0",
+   "x": 751,
+   "y": 570,
+   "w": 214,
+   "h": 124,
+   "kind": "ok",
+   "title": "Use when",
+   "lines": [
+    "• angina; after an MI: ↓ mortality",
+    "• HFrEF, AF, hypertension"
+   ]
+  },
+  {
+   "id": "nd_use_0_0",
+   "x": 977,
+   "y": 570,
+   "w": 214,
+   "h": 124,
+   "kind": "ok",
+   "title": "Use when",
+   "lines": [
+    "• AF",
+    "• supraventricular tachycardias"
+   ]
+  },
+  {
+   "id": "nt_use_0_0",
+   "x": 1231,
+   "y": 570,
+   "w": 214,
+   "h": 124,
+   "kind": "ok",
+   "title": "Use when",
+   "lines": [
+    "• angina, coronary spasm",
+    "• MI with pulmonary edema"
+   ]
+  },
+  {
+   "id": "dh_use_0_0",
+   "x": 1457,
+   "y": 570,
+   "w": 214,
+   "h": 42,
+   "kind": "ok",
+   "title": "Hypertension",
+   "lines": []
+  },
+  {
+   "id": "dh_use_1_0",
+   "x": 1457,
+   "y": 634,
+   "w": 214,
+   "h": 60,
+   "kind": "warn",
+   "title": "NOT for rate control",
+   "lines": [
+    "no effect on the heart rate"
+   ]
+  },
+  {
+   "id": "ac_avoid_0_0",
+   "x": 45,
+   "y": 734,
+   "w": 214,
+   "h": 214,
+   "kind": "bad",
+   "title": "NO if",
+   "lines": [
+    "• pregnancy (teratogenic)",
+    "• angioedema",
+    "• high K+, renal insufficiency, low BP"
+   ]
+  },
+  {
+   "id": "mr_avoid_0_0",
+   "x": 271,
+   "y": 734,
+   "w": 214,
+   "h": 95,
+   "kind": "bad",
+   "title": "NO if",
+   "lines": [
+    "• renal insufficiency, high K+",
+    "• pregnancy"
+   ]
+  },
+  {
+   "id": "mr_avoid_1_0",
+   "x": 271,
+   "y": 851,
+   "w": 214,
+   "h": 97,
+   "kind": "warn",
+   "title": "Gynecomastia on spironolactone",
+   "lines": [
+    "→ eplerenone"
+   ]
+  },
+  {
+   "id": "dg_avoid_0_0",
+   "x": 525,
+   "y": 734,
+   "w": 214,
+   "h": 114,
+   "kind": "bad",
+   "title": "NO if",
+   "lines": [
+    "• 2nd or 3rd degree AV block",
+    "• low K+, high Ca2+",
+    "• renal insufficiency: renally cleared"
+   ]
+  },
+  {
+   "id": "dg_avoid_1_0",
+   "x": 525,
+   "y": 870,
+   "w": 214,
+   "h": 78,
+   "kind": "warn",
+   "title": "Narrow window",
+   "lines": [
+    "higher levels do NOT help symptoms"
+   ]
+  },
+  {
+   "id": "bb_avoid_0_0",
+   "x": 751,
+   "y": 734,
+   "w": 214,
+   "h": 123,
+   "kind": "bad",
+   "title": "NO if",
+   "lines": [
+    "• severe reactive airway disease",
+    "• bradycardia, low BP",
+    "• symptomatic, poorly controlled HF"
+   ]
+  },
+  {
+   "id": "bb_avoid_1_0",
+   "x": 751,
+   "y": 879,
+   "w": 214,
+   "h": 69,
+   "kind": "warn",
+   "title": "Never stop it abruptly",
+   "lines": [
+    "rebound tachycardia, ischemia"
+   ]
+  },
+  {
+   "id": "nd_avoid_0_0",
+   "x": 977,
+   "y": 734,
+   "w": 214,
+   "h": 214,
+   "kind": "bad",
+   "title": "NO if",
+   "lines": [
+    "• SYSTOLIC heart failure",
+    "• bradycardia, 2nd or 3rd degree AV block",
+    "• low BP"
+   ]
+  },
+  {
+   "id": "nt_avoid_0_0",
+   "x": 1231,
+   "y": 734,
+   "w": 214,
+   "h": 87,
+   "kind": "bad",
+   "title": "NO with a PDE-5 inhibitor",
+   "lines": [
+    "sildenafil · or low BP"
+   ]
+  },
+  {
+   "id": "nt_avoid_1_0",
+   "x": 1231,
+   "y": 843,
+   "w": 214,
+   "h": 105,
+   "kind": "warn",
+   "title": "Tolerance",
+   "lines": [
+    "10-hour NITRATE-FREE gap: patch off at night"
+   ]
+  },
+  {
+   "id": "dh_avoid_0_0",
+   "x": 1457,
+   "y": 734,
+   "w": 214,
+   "h": 214,
+   "kind": "bad",
+   "title": "NO if",
+   "lines": [
+    "• severe aortic stenosis",
+    "• liver failure"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_r",
+   "path": "M858.0 70V95H265.0V120"
+  },
+  {
+   "from": "root",
+   "to": "g_h",
+   "path": "M858.0 70V95H858.0V120"
+  },
+  {
+   "from": "root",
+   "to": "g_v",
+   "path": "M858.0 70V95H1451.0V120"
+  },
+  {
+   "from": "dh_use_0_0",
+   "to": "dh_use_1_0"
+  },
+  {
+   "from": "mr_avoid_0_0",
+   "to": "mr_avoid_1_0"
+  },
+  {
+   "from": "dg_avoid_0_0",
+   "to": "dg_avoid_1_0"
+  },
+  {
+   "from": "bb_avoid_0_0",
+   "to": "bb_avoid_1_0"
+  },
+  {
+   "from": "nt_avoid_0_0",
+   "to": "nt_avoid_1_0"
+  },
+  {
+   "from": "ac_head_0_0",
+   "to": "ac_how_0_0"
+  },
+  {
+   "from": "ac_how_0_0",
+   "to": "ac_use_0_0"
+  },
+  {
+   "from": "ac_use_0_0",
+   "to": "ac_avoid_0_0"
+  },
+  {
+   "from": "g_r",
+   "to": "ac_head_0_0",
+   "from_dx": -113
+  },
+  {
+   "from": "mr_head_0_0",
+   "to": "mr_how_0_0"
+  },
+  {
+   "from": "mr_how_0_0",
+   "to": "mr_use_0_0"
+  },
+  {
+   "from": "mr_use_0_0",
+   "to": "mr_avoid_0_0"
+  },
+  {
+   "from": "g_r",
+   "to": "mr_head_0_0",
+   "from_dx": 113
+  },
+  {
+   "from": "dg_head_0_0",
+   "to": "dg_how_0_0"
+  },
+  {
+   "from": "dg_how_0_0",
+   "to": "dg_use_0_0"
+  },
+  {
+   "from": "dg_use_0_0",
+   "to": "dg_avoid_0_0"
+  },
+  {
+   "from": "g_h",
+   "to": "dg_head_0_0",
+   "from_dx": -226
+  },
+  {
+   "from": "bb_head_0_0",
+   "to": "bb_how_0_0"
+  },
+  {
+   "from": "bb_how_0_0",
+   "to": "bb_use_0_0"
+  },
+  {
+   "from": "bb_use_0_0",
+   "to": "bb_avoid_0_0"
+  },
+  {
+   "from": "g_h",
+   "to": "bb_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "nd_head_0_0",
+   "to": "nd_how_0_0"
+  },
+  {
+   "from": "nd_how_0_0",
+   "to": "nd_use_0_0"
+  },
+  {
+   "from": "nd_use_0_0",
+   "to": "nd_avoid_0_0"
+  },
+  {
+   "from": "g_h",
+   "to": "nd_head_0_0",
+   "from_dx": 226
+  },
+  {
+   "from": "nt_head_0_0",
+   "to": "nt_how_0_0"
+  },
+  {
+   "from": "nt_how_0_0",
+   "to": "nt_use_0_0"
+  },
+  {
+   "from": "nt_use_0_0",
+   "to": "nt_avoid_0_0"
+  },
+  {
+   "from": "g_v",
+   "to": "nt_head_0_0",
+   "from_dx": -113
+  },
+  {
+   "from": "dh_head_0_0",
+   "to": "dh_how_0_0"
+  },
+  {
+   "from": "dh_how_0_0",
+   "to": "dh_use_0_0"
+  },
+  {
+   "from": "dh_use_1_0",
+   "to": "dh_avoid_0_0"
+  },
+  {
+   "from": "g_v",
+   "to": "dh_head_0_0",
+   "from_dx": 113
+  }
+ ],
+ "panels": []
+}

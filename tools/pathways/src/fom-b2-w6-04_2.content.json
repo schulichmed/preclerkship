@@ -1,0 +1,280 @@
+{
+ "name": "breast mass overview",
+ "title": "Breast mass decision chart: after checking for cancer emergencies, history and exam, the feel of the lump sorts benign causes (cyst or fibrocystic change, abscess, fibroadenoma) from breast cancer; each column gives the feel, the test that clinches it and what follows",
+ "col_w": 240,
+ "root": {
+  "title": "Breast mass: BENIGN or MALIGNANT?",
+  "lines": [
+   "1 · STABLE? check for cancer EMERGENCIES first: cord compression, superior vena cava obstruction, hypercalcemia, febrile neutropenia",
+   "2 · History + exam: where (clock face, depth), size, edge, consistency, mobility · nipple, skin, nodes, the other breast",
+   "3 · Image: ULTRASOUND first for a palpable lump, pain, discharge or age < 30 · then diagnostic mammogram",
+   "older = more likely cancer · NO blood or urine test identifies a breast mass"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_b",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "BENIGN feel",
+   "lines": [
+    "SMOOTH edge · MOBILE · soft or firm · CHANGES with periods · may be tender"
+   ]
+  },
+  {
+   "id": "g_m",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "MALIGNANT feel",
+   "lines": [
+    "IRREGULAR · HARD · may be FIXED · usually painless · CONSTANT"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "feel",
+  "test",
+  "next"
+ ],
+ "row_names": {
+  "feel": "FEELS LIKE",
+  "test": "CLINCH IT",
+  "next": "THEN"
+ },
+ "columns": [
+  {
+   "id": "cy",
+   "colour": "teal",
+   "drop_from": "g_b",
+   "drop_label": "smooth · or lumpy with the cycle",
+   "head": [
+    [
+     [
+      "h",
+      "Cyst · fibrocystic change",
+      [
+       "NOT a neoplasm"
+      ]
+     ]
+    ]
+   ],
+   "feel": [
+    [
+     [
+      "t",
+      "CYST: smooth, well demarcated",
+      [
+       "sac of fluid, air or semi-solid"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "FIBROCYSTIC: lumpy, nodular breasts",
+      [
+       "tenderness VARIES with the menstrual cycle"
+      ]
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "w",
+      "Fine needle aspiration (FNA, 22 G or finer)",
+      [
+       "a cyst COLLAPSES once drained"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "ok",
+      "Aspiration IS the treatment",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ab",
+   "colour": "orange",
+   "drop_from": "g_b",
+   "drop_label": "breastfeeding · warm, red",
+   "head": [
+    [
+     [
+      "h",
+      "Abscess",
+      [
+       "infection: often mastitis while breastfeeding"
+      ]
+     ]
+    ]
+   ],
+   "feel": [
+    [
+     [
+      "t",
+      "Warm, RED, tender, swollen",
+      []
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "w",
+      "Pus: neutrophils, acute inflammation",
+      []
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "ok",
+      "Aspiration (therapeutic)",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Looks infected? INFLAMMATORY CANCER can mimic it",
+      [
+       "→ cancer column"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "fa",
+   "colour": "blue",
+   "drop_from": "g_b",
+   "drop_label": "single · firm, MOBILE",
+   "head": [
+    [
+     [
+      "h",
+      "Fibroadenoma",
+      [
+       "BENIGN neoplasm"
+      ]
+     ]
+    ]
+   ],
+   "feel": [
+    [
+     [
+      "t",
+      "ONE nodule",
+      [
+       "• FIRM",
+       "• MOBILE",
+       "• well circumscribed"
+      ]
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "w",
+      "Image-guided biopsy",
+      []
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "ok",
+      "Biopsy benign: not cancer",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ca",
+   "colour": "magenta",
+   "drop_from": "g_m",
+   "drop_label": "hard, irregular, fixed",
+   "head": [
+    [
+     [
+      "h",
+      "Breast cancer",
+      [
+       "rare in men (think gynecomastia)"
+      ]
+     ]
+    ]
+   ],
+   "feel": [
+    [
+     [
+      "t",
+      "Hard, IRREGULAR, FIXED, painless",
+      [
+       "• does NOT change with periods",
+       "• B symptoms: fever, night sweats, weight loss"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "URGENT: cancer in the skin or lymphatics",
+      [
+       "• red breast: INFLAMMATORY cancer",
+       "• PEAU D'ORANGE: dimpled like an orange"
+      ]
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "w",
+      "Needle CORE biopsy (21 G or larger)",
+      [
+       "SHOWS INVASION: a fine needle cannot"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Axillary node: FNA or core",
+      [
+       "image-guided, to avoid the lung"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "warn",
+      "STAGING after the biopsy",
+      [
+       "• MRI: local disease",
+       "• full-body CT: NEVER for workup or screening"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

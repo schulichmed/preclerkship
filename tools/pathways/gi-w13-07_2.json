@@ -1,0 +1,631 @@
+{
+ "name": "appendicitis and diverticulitis overview",
+ "width": 1104,
+ "title": "Migrating lower abdominal pain with fever: right-sided appendicitis (ultrasound, usually surgery) or left-sided diverticulitis (CT, uncomplicated managed as an outpatient, abscess or perforation escalating to drainage or surgery), plus painless diverticular bleeding and stricture, each with presentation, numbered investigations and treatment in order",
+ "kinds": {
+  "app_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "app_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "app_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "unc_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "unc_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "unc_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "com_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "com_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "com_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "bld_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "bld_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "bld_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 290,
+   "w": 248,
+   "h": 956,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 318,
+   "y": 290,
+   "w": 248,
+   "h": 956,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 568,
+   "y": 290,
+   "w": 248,
+   "h": 956,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 846,
+   "y": 290,
+   "w": 248,
+   "h": 956,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 418,
+   "h": 216,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 674,
+   "h": 280,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 994,
+   "h": 244,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 187,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Migrating abdominal pain + fever: RIGHT (appendix) or LEFT (diverticula)?",
+   "lines": [
+    "both are an OBSTRUCTED, inflamed pouch, and both are very common",
+    "antibiotics for both: ceftriaxone + metronidazole, OR a carbapenem or piperacillin-tazobactam alone"
+   ]
+  },
+  {
+   "id": "g_r",
+   "x": 45,
+   "y": 138,
+   "w": 238,
+   "h": 80,
+   "kind": "plain",
+   "title": "RIGHT: umbilicus → right lower quadrant",
+   "lines": [
+    "young · after a viral cold"
+   ]
+  },
+  {
+   "id": "g_l",
+   "x": 323,
+   "y": 138,
+   "w": 488,
+   "h": 80,
+   "kind": "plain",
+   "title": "LEFT: suprapubic → left lower quadrant",
+   "lines": [
+    "rare < 35 · rises each decade · obesity, poor diet",
+    "CT abdomen/pelvis decides: complicated?"
+   ]
+  },
+  {
+   "id": "g_p",
+   "x": 851,
+   "y": 138,
+   "w": 238,
+   "h": 80,
+   "kind": "plain",
+   "title": "PAINLESS, after attacks",
+   "lines": []
+  },
+  {
+   "id": "app_head_0_0",
+   "x": 45,
+   "y": 298,
+   "w": 238,
+   "h": 80,
+   "kind": "app_h",
+   "title": "Appendicitis",
+   "lines": [
+    "fecalith or lymphoid swelling blocks the appendix"
+   ]
+  },
+  {
+   "id": "unc_head_0_0",
+   "x": 323,
+   "y": 298,
+   "w": 238,
+   "h": 80,
+   "kind": "unc_h",
+   "title": "Uncomplicated diverticulitis",
+   "lines": [
+    "obstructed, inflamed false diverticula"
+   ]
+  },
+  {
+   "id": "com_head_0_0",
+   "x": 573,
+   "y": 298,
+   "w": 238,
+   "h": 80,
+   "kind": "com_h",
+   "title": "Complicated diverticulitis",
+   "lines": [
+    "abscess or perforation on CT"
+   ]
+  },
+  {
+   "id": "bld_head_0_0",
+   "x": 851,
+   "y": 298,
+   "w": 238,
+   "h": 80,
+   "kind": "bld_h",
+   "title": "Diverticular bleeding or stricture",
+   "lines": [
+    "after repeated attacks"
+   ]
+  },
+  {
+   "id": "app_pres_0_0",
+   "x": 45,
+   "y": 418,
+   "w": 238,
+   "h": 116,
+   "kind": "app_t",
+   "title": "Umbilical pain → right lower quadrant",
+   "lines": [
+    "• age 4 and up, peak 10-25",
+    "• often after an upper respiratory infection"
+   ]
+  },
+  {
+   "id": "app_pres_1_0",
+   "x": 45,
+   "y": 556,
+   "w": 238,
+   "h": 78,
+   "kind": "app_w",
+   "title": "Exam",
+   "lines": [
+    "• McBurney's point tenderness",
+    "• Rovsing's sign"
+   ]
+  },
+  {
+   "id": "unc_pres_0_0",
+   "x": 323,
+   "y": 418,
+   "w": 238,
+   "h": 216,
+   "kind": "unc_t",
+   "title": "Suprapubic → LEFT lower quadrant pain",
+   "lines": [
+    "fever"
+   ]
+  },
+  {
+   "id": "com_pres_0_0",
+   "x": 573,
+   "y": 418,
+   "w": 238,
+   "h": 216,
+   "kind": "com_t",
+   "title": "Diverticulitis, PLUS",
+   "lines": [
+    "• an abscess",
+    "• or perforation, shock"
+   ]
+  },
+  {
+   "id": "bld_pres_0_0",
+   "x": 851,
+   "y": 418,
+   "w": 238,
+   "h": 116,
+   "kind": "bad",
+   "title": "BLEEDING: massive, PAINLESS",
+   "lines": [
+    "• the #1 cause of lower GI bleeding",
+    "• never during an attack"
+   ]
+  },
+  {
+   "id": "bld_pres_1_0",
+   "x": 851,
+   "y": 556,
+   "w": 238,
+   "h": 78,
+   "kind": "warn",
+   "title": "STRICTURE: scarred colon",
+   "lines": [
+    "presents as a large bowel obstruction"
+   ]
+  },
+  {
+   "id": "app_inv_0_0",
+   "x": 45,
+   "y": 674,
+   "w": 238,
+   "h": 114,
+   "kind": "app_w",
+   "title": "1 · Ask",
+   "lines": [
+    "• could this be PREGNANCY (ectopic)?",
+    "• Crohn's symptoms or family history?"
+   ]
+  },
+  {
+   "id": "app_inv_1_0",
+   "x": 45,
+   "y": 810,
+   "w": 238,
+   "h": 80,
+   "kind": "app_w",
+   "title": "2 · Blood count, electrolytes, CRP",
+   "lines": [
+    "C-reactive protein"
+   ]
+  },
+  {
+   "id": "app_inv_2_0",
+   "x": 45,
+   "y": 912,
+   "w": 238,
+   "h": 42,
+   "kind": "app_t",
+   "title": "3 · ULTRASOUND",
+   "lines": []
+  },
+  {
+   "id": "unc_inv_0_0",
+   "x": 323,
+   "y": 674,
+   "w": 238,
+   "h": 164,
+   "kind": "unc_w",
+   "title": "1 · Ask",
+   "lines": [
+    "• ulcerative colitis?",
+    "• colorectal cancer screening up to date?",
+    "• colonic ischemia risks: heart disease, obesity, smoking"
+   ]
+  },
+  {
+   "id": "unc_inv_1_0",
+   "x": 323,
+   "y": 860,
+   "w": 238,
+   "h": 94,
+   "kind": "unc_w",
+   "title": "2 · Rectal exam, blood count, electrolytes",
+   "lines": []
+  },
+  {
+   "id": "com_inv_0_0",
+   "x": 573,
+   "y": 674,
+   "w": 238,
+   "h": 280,
+   "kind": "com_t",
+   "title": "1 · CT: how big is the abscess?",
+   "lines": []
+  },
+  {
+   "id": "bld_inv_0_0",
+   "x": 851,
+   "y": 674,
+   "w": 238,
+   "h": 280,
+   "kind": "bld_w",
+   "title": "Bleeding: GI bleeding notes",
+   "lines": []
+  },
+  {
+   "id": "app_tx_0_0",
+   "x": 45,
+   "y": 994,
+   "w": 238,
+   "h": 102,
+   "kind": "ok",
+   "title": "1 · Antibiotics + SURGERY, usually",
+   "lines": [
+    "now, or later: it often RECURS"
+   ]
+  },
+  {
+   "id": "app_tx_1_0",
+   "x": 45,
+   "y": 1118,
+   "w": 238,
+   "h": 120,
+   "kind": "warn",
+   "title": "Managed without surgery and > 40",
+   "lines": [
+    "→ COLONOSCOPY (appendiceal neoplasm)"
+   ]
+  },
+  {
+   "id": "unc_tx_0_0",
+   "x": 323,
+   "y": 994,
+   "w": 238,
+   "h": 78,
+   "kind": "ok",
+   "title": "1 · OUTPATIENT",
+   "lines": [
+    "oral antibiotics, or anti-inflammatories alone"
+   ]
+  },
+  {
+   "id": "unc_tx_1_0",
+   "x": 323,
+   "y": 1094,
+   "w": 238,
+   "h": 80,
+   "kind": "ok",
+   "title": "2 · Colonoscopy LATER, for cancer",
+   "lines": [
+    "NOT during the attack"
+   ]
+  },
+  {
+   "id": "unc_tx_2_0",
+   "x": 323,
+   "y": 1196,
+   "w": 238,
+   "h": 42,
+   "kind": "bad",
+   "title": "Usually NO surgery",
+   "lines": []
+  },
+  {
+   "id": "com_tx_0_0",
+   "x": 573,
+   "y": 994,
+   "w": 238,
+   "h": 67,
+   "kind": "warn",
+   "title": "Abscess < 5 cm → admit, IV antibiotics",
+   "lines": []
+  },
+  {
+   "id": "com_tx_1_0",
+   "x": 573,
+   "y": 1083,
+   "w": 238,
+   "h": 67,
+   "kind": "warn",
+   "title": "Abscess > 5 cm → PERCUTANEOUS DRAIN",
+   "lines": []
+  },
+  {
+   "id": "com_tx_2_0",
+   "x": 573,
+   "y": 1172,
+   "w": 238,
+   "h": 67,
+   "kind": "bad",
+   "title": "PERFORATION or SHOCK → urgent surgery",
+   "lines": []
+  },
+  {
+   "id": "bld_tx_0_0",
+   "x": 851,
+   "y": 994,
+   "w": 238,
+   "h": 244,
+   "kind": "bld_w",
+   "title": "Stricture: BOWEL OBSTRUCTION chart",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_r",
+   "path": "M567.0 88V113H164.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_l",
+   "path": "M567.0 88V113H567.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_p",
+   "path": "M567.0 88V113H970.0V138"
+  },
+  {
+   "from": "app_pres_0_0",
+   "to": "app_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "bld_pres_0_0",
+   "to": "bld_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "app_inv_0_0",
+   "to": "app_inv_1_0"
+  },
+  {
+   "from": "app_inv_1_0",
+   "to": "app_inv_2_0"
+  },
+  {
+   "from": "unc_inv_0_0",
+   "to": "unc_inv_1_0"
+  },
+  {
+   "from": "app_tx_0_0",
+   "to": "app_tx_1_0"
+  },
+  {
+   "from": "unc_tx_0_0",
+   "to": "unc_tx_1_0"
+  },
+  {
+   "from": "unc_tx_1_0",
+   "to": "unc_tx_2_0"
+  },
+  {
+   "from": "com_tx_0_0",
+   "to": "com_tx_1_0"
+  },
+  {
+   "from": "com_tx_1_0",
+   "to": "com_tx_2_0"
+  },
+  {
+   "from": "app_head_0_0",
+   "to": "app_pres_0_0"
+  },
+  {
+   "from": "app_pres_1_0",
+   "to": "app_inv_0_0"
+  },
+  {
+   "from": "app_inv_2_0",
+   "to": "app_tx_0_0"
+  },
+  {
+   "from": "g_r",
+   "to": "app_head_0_0",
+   "from_dx": 0,
+   "label": "RIGHT",
+   "label_at": [
+    164.0,
+    258
+   ]
+  },
+  {
+   "from": "unc_head_0_0",
+   "to": "unc_pres_0_0"
+  },
+  {
+   "from": "unc_pres_0_0",
+   "to": "unc_inv_0_0"
+  },
+  {
+   "from": "unc_inv_1_0",
+   "to": "unc_tx_0_0"
+  },
+  {
+   "from": "g_l",
+   "to": "unc_head_0_0",
+   "from_dx": -125,
+   "label": "uncomplicated",
+   "label_at": [
+    442.0,
+    258
+   ]
+  },
+  {
+   "from": "com_head_0_0",
+   "to": "com_pres_0_0"
+  },
+  {
+   "from": "com_pres_0_0",
+   "to": "com_inv_0_0"
+  },
+  {
+   "from": "com_inv_0_0",
+   "to": "com_tx_0_0"
+  },
+  {
+   "from": "g_l",
+   "to": "com_head_0_0",
+   "from_dx": 125,
+   "label": "abscess or perforation",
+   "label_at": [
+    692.0,
+    258
+   ]
+  },
+  {
+   "from": "bld_head_0_0",
+   "to": "bld_pres_0_0"
+  },
+  {
+   "from": "bld_pres_1_0",
+   "to": "bld_inv_0_0"
+  },
+  {
+   "from": "bld_inv_0_0",
+   "to": "bld_tx_0_0"
+  },
+  {
+   "from": "g_p",
+   "to": "bld_head_0_0",
+   "from_dx": 0,
+   "label": "bleed or blockage",
+   "label_at": [
+    970.0,
+    258
+   ]
+  }
+ ],
+ "panels": []
+}

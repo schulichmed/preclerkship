@@ -1,0 +1,350 @@
+{
+ "name": "myelodysplastic syndrome overview",
+ "width": 862,
+ "title": "Myelodysplastic syndrome: after the marrow workup, the International Prognostic Scoring System splits lower risk (quality of life) from higher risk (slow progression to leukemia), and del(5q) is treated with lenalidomide",
+ "kinds": {
+  "lo_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "lo_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "lo_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "hi_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hi_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "hi_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "q5_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "q5_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "q5_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 260,
+   "h": 424,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 302,
+   "y": 288,
+   "w": 260,
+   "h": 424,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 592,
+   "y": 288,
+   "w": 260,
+   "h": 424,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 378,
+   "h": 42,
+   "text": "GOAL"
+  },
+  {
+   "x": 23,
+   "y": 460,
+   "h": 244,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 66,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Myelodysplastic syndrome (MDS): how HIGH is the risk?",
+   "lines": [
+    "clonal stem cell cancer of the elderly: risk of becoming acute myeloid leukemia (AML)",
+    "anemia (normocytic or macrocytic), neutropenia, thrombocytopenia · film: pseudo-Pelger-Huët neutrophils",
+    "workup: complete blood count · ferritin · marrow aspirate + biopsy · flow cytometry · cytogenetics"
+   ]
+  },
+  {
+   "id": "g_ip",
+   "x": 45,
+   "y": 156,
+   "w": 512,
+   "h": 60,
+   "kind": "plain",
+   "title": "International Prognostic Scoring System (IPSS)",
+   "lines": [
+    "marrow blast % · chromosome changes · number of cell lines down"
+   ]
+  },
+  {
+   "id": "g_5q",
+   "x": 597,
+   "y": 156,
+   "w": 250,
+   "h": 60,
+   "kind": "plain",
+   "title": "Cytogenetics: del(5q)",
+   "lines": []
+  },
+  {
+   "id": "lo_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 250,
+   "h": 42,
+   "kind": "lo_h",
+   "title": "Lower risk",
+   "lines": []
+  },
+  {
+   "id": "hi_head_0_0",
+   "x": 307,
+   "y": 296,
+   "w": 250,
+   "h": 42,
+   "kind": "hi_h",
+   "title": "Higher risk",
+   "lines": []
+  },
+  {
+   "id": "q5_head_0_0",
+   "x": 597,
+   "y": 296,
+   "w": 250,
+   "h": 42,
+   "kind": "q5_h",
+   "title": "MDS with del(5q)",
+   "lines": []
+  },
+  {
+   "id": "lo_aim_0_0",
+   "x": 45,
+   "y": 378,
+   "w": 250,
+   "h": 42,
+   "kind": "lo_t",
+   "title": "Quality of life",
+   "lines": []
+  },
+  {
+   "id": "hi_aim_0_0",
+   "x": 307,
+   "y": 378,
+   "w": 250,
+   "h": 42,
+   "kind": "hi_t",
+   "title": "Slow progression to AML",
+   "lines": []
+  },
+  {
+   "id": "q5_aim_0_0",
+   "x": 597,
+   "y": 378,
+   "w": 250,
+   "h": 42,
+   "kind": "q5_t",
+   "title": "Macrocytic anemia + platelets ↑",
+   "lines": []
+  },
+  {
+   "id": "lo_tx_0_0",
+   "x": 45,
+   "y": 460,
+   "w": 250,
+   "h": 62,
+   "kind": "ok",
+   "title": "1 · Transfuse if hemoglobin < 70 g/L",
+   "lines": []
+  },
+  {
+   "id": "lo_tx_1_0",
+   "x": 45,
+   "y": 544,
+   "w": 250,
+   "h": 78,
+   "kind": "ok",
+   "title": "2 · EPO, G-CSF",
+   "lines": [
+    "erythropoietin, granulocyte colony-stimulating factor"
+   ]
+  },
+  {
+   "id": "lo_tx_2_0",
+   "x": 45,
+   "y": 644,
+   "w": 250,
+   "h": 60,
+   "kind": "warn",
+   "title": "3 · Iron overload",
+   "lines": [
+    "chelate if ferritin > 1000 μg/L"
+   ]
+  },
+  {
+   "id": "hi_tx_0_0",
+   "x": 307,
+   "y": 460,
+   "w": 250,
+   "h": 60,
+   "kind": "ok",
+   "title": "1 · Transfuse if Hb < 70 g/L",
+   "lines": []
+  },
+  {
+   "id": "hi_tx_1_0",
+   "x": 307,
+   "y": 542,
+   "w": 250,
+   "h": 60,
+   "kind": "ok",
+   "title": "2 · Azacitidine, decitabine",
+   "lines": []
+  },
+  {
+   "id": "hi_tx_2_0",
+   "x": 307,
+   "y": 624,
+   "w": 250,
+   "h": 80,
+   "kind": "warn",
+   "title": "3 · High-dose chemo, stem cell transplant",
+   "lines": []
+  },
+  {
+   "id": "q5_tx_0_0",
+   "x": 597,
+   "y": 460,
+   "w": 250,
+   "h": 244,
+   "kind": "ok",
+   "title": "Lenalidomide",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ip",
+   "path": "M446.0 106V131H301.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_5q",
+   "path": "M446.0 106V131H722.0V156"
+  },
+  {
+   "from": "lo_tx_0_0",
+   "to": "lo_tx_1_0"
+  },
+  {
+   "from": "lo_tx_1_0",
+   "to": "lo_tx_2_0"
+  },
+  {
+   "from": "hi_tx_0_0",
+   "to": "hi_tx_1_0"
+  },
+  {
+   "from": "hi_tx_1_0",
+   "to": "hi_tx_2_0"
+  },
+  {
+   "from": "lo_head_0_0",
+   "to": "lo_aim_0_0"
+  },
+  {
+   "from": "lo_aim_0_0",
+   "to": "lo_tx_0_0"
+  },
+  {
+   "from": "g_ip",
+   "to": "lo_head_0_0",
+   "from_dx": -131,
+   "label": "LOW",
+   "label_at": [
+    170.0,
+    256
+   ]
+  },
+  {
+   "from": "hi_head_0_0",
+   "to": "hi_aim_0_0"
+  },
+  {
+   "from": "hi_aim_0_0",
+   "to": "hi_tx_0_0"
+  },
+  {
+   "from": "g_ip",
+   "to": "hi_head_0_0",
+   "from_dx": 131,
+   "label": "HIGH",
+   "label_at": [
+    432.0,
+    256
+   ]
+  },
+  {
+   "from": "q5_head_0_0",
+   "to": "q5_aim_0_0"
+  },
+  {
+   "from": "q5_aim_0_0",
+   "to": "q5_tx_0_0"
+  },
+  {
+   "from": "g_5q",
+   "to": "q5_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

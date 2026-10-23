@@ -1,0 +1,326 @@
+{
+ "name": "nutritional support overview",
+ "title": "Nutritional support: if the gut works, feed into it, by nasal tube for under 3 weeks or by gastrostomy or jejunostomy beyond 6 weeks, with a formula matched to the gut; if it does not, parenteral nutrition, peripheral (mostly fat) or central (mostly glucose), started only after 7 days without food (5 if malnourished); watch any route for refeeding syndrome",
+ "col_w": 250,
+ "root": {
+  "title": "A patient who cannot eat enough: does the GUT WORK? If it works, USE it",
+  "lines": [
+   "malnutrition is common in medical inpatients: mostly PROTEIN loss (low albumin, low pre-albumin)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ent",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "GUT WORKS: ENTERAL feeding",
+   "lines": [
+    "HOW LONG will it be needed?"
+   ]
+  },
+  {
+   "id": "g_par",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "GUT DOES NOT WORK: PARENTERAL",
+   "lines": [
+    "into a vein → superior vena cava"
+   ]
+  },
+  {
+   "id": "g_ref",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "ANY route, after STARVATION",
+   "lines": [
+    "food back too fast"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_npo",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "Start only after nothing by mouth (NPO) for",
+   "lines": [
+    "• ≥ 7 days if well nourished",
+    "• ≥ 5 days if malnourished"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "who",
+  "how",
+  "feed"
+ ],
+ "row_names": {
+  "who": "WHO",
+  "how": "HOW · WATCH",
+  "feed": "WHAT GOES IN"
+ },
+ "columns": [
+  {
+   "id": "st",
+   "colour": "teal",
+   "drop_label": "< 3 WEEKS",
+   "head": [
+    [
+     [
+      "h",
+      "Nasal tube",
+      [
+       "short term"
+      ]
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Nasogastric (NG)",
+      [
+       "e.g. stroke, augmenting intake"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Nasojejunal or nasoduodenal",
+      [
+       "aspiration risk with oral or NG feeds"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "w",
+      "Watch",
+      [
+       "• aspiration",
+       "• sinusitis, food aversion"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "lt",
+   "colour": "blue",
+   "drop_label": "> 6 WEEKS",
+   "head": [
+    [
+     [
+      "h",
+      "Percutaneous tube",
+      [
+       "long term"
+      ]
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Gastrostomy (G tube)",
+      [
+       "low aspiration risk"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Gastrojejunostomy",
+      [
+       "• aspiration risk",
+       "• continuous feeds 12–16 h a day"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "w",
+      "Watch",
+      [
+       "• insertion, bleeding, peritonitis",
+       "• pulled out, blocked"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pn",
+   "colour": "orange",
+   "drop_from": "t_npo",
+   "head": [
+    [
+     [
+      "h",
+      "Parenteral nutrition",
+      []
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "Gut fails or falls short",
+      [
+       "• abnormal gut function",
+       "• enteral cannot meet needs",
+       "• cannot eat by 5–7 days"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "bad",
+      "Watch",
+      [
+       "• line: pneumothorax, bleeding, thrombosis, sepsis",
+       "• electrolytes, liver disease",
+       "• cost"
+      ]
+     ]
+    ]
+   ],
+   "feed": [
+    [
+     [
+      "w",
+      "Peripheral parenteral nutrition (PPN)",
+      [
+       "mostly FAT + 10% glucose: low osmolarity"
+      ]
+     ],
+     [
+      "w",
+      "Total parenteral nutrition (TPN): central line",
+      [
+       "mostly 25% GLUCOSE"
+      ]
+     ]
+    ]
+   ],
+   "drop_label": "NPO long enough"
+  },
+  {
+   "id": "rf",
+   "colour": "magenta",
+   "drop_label": "refeeding",
+   "head": [
+    [
+     [
+      "h",
+      "Refeeding syndrome",
+      []
+     ]
+    ]
+   ],
+   "who": [
+    [
+     [
+      "t",
+      "At risk",
+      [
+       "• anorexia nervosa, chronic malnutrition, alcoholism",
+       "• massive weight loss, prolonged fasting"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "bad",
+      "LOW PHOSPHATE",
+      [
+       "• low Mg2+, high glucose, fluid retention",
+       "• cardiac arrest"
+      ]
+     ]
+    ]
+   ],
+   "feed": [
+    [
+     [
+      "ok",
+      "Prevent it",
+      [
+       "• LOW dextrose load",
+       "• aggressive IV electrolytes",
+       "• liberal fluids"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "spans": [
+  {
+   "section": "feed",
+   "cols": [
+    0,
+    1
+   ],
+   "rows": [
+    [
+     [
+      "plain",
+      "Bolus",
+      [
+       "150–400 mL over minutes: normal GI tract"
+      ]
+     ],
+     [
+      "plain",
+      "Continuous",
+      [
+       "over 8–24 h: best absorption"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Formula for the gut",
+      [
+       "• elemental: inflammatory bowel disease, short bowel, pancreatic or bile salt loss",
+       "• semi-elemental: Crohn disease, pancreatitis"
+      ]
+     ],
+     [
+      "ok",
+      "Formula for the need",
+      [
+       "• high nitrogen: burns, fistulae, sepsis",
+       "• nutrient dense: fluid restriction",
+       "• renal, diabetic, hepatic"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

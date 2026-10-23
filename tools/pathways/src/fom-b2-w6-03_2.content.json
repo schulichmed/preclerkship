@@ -1,0 +1,39 @@
+{
+ "name": "hereditary cancer overview",
+ "title": "Hereditary cancer: red flags on a three-generation family history prompt referral for genetic counselling when a test could change management and the patient wants it; test an affected relative first, then unaffected adult relatives, never children for adult-onset conditions; a BRCA1/2 result leads to surveillance or prophylactic surgery for women and men",
+ "col_w": 250,
+ "root": {
+  "title": "Cancer in the patient or family: could it be HEREDITARY, and WHO do I test?",
+  "lines": [
+   "most cancer is SPORADIC (one somatic cell, NOT passed on) or FAMILIAL (shared genes + environment)",
+   "take ≥ 3 generations on BOTH sides: cancer types, age at diagnosis, new primary or metastasis"
+  ]
+ },
+ "groups": [
+  {"id": "g_her", "cols": [0, 2], "title": "A RED FLAG → suspect HEREDITARY (a mutation in EVERY cell, inherited)", "lines": ["early onset (breast < 50, ovarian < 60) · several primaries in one person · several relatives on ONE side · a family pattern · Ashkenazi Jewish ancestry (BRCA1/2)"]}
+ ],
+ "pres": [
+  {"id": "p_ref", "group": "g_her", "title": "REFER for genetic counselling if ALL of these", "lines": ["• personal or family history of cancer", "• a test exists and its result can be interpreted", "• the result could change management, AND the patient wants to know"]}
+ ],
+ "sections": ["head", "test", "tx"],
+ "row_names": {"pres": "REFER", "test": "TEST?", "tx": "THEN"},
+ "columns": [
+  {"id": "aff", "colour": "teal",
+   "head": [[["h", "AFFECTED relative", ["has had the cancer"]]]],
+   "test": [[["t", "1 · Test FIRST", ["confirms the family's mutation"]]]]},
+  {"id": "una", "colour": "blue",
+   "head": [[["h", "UNAFFECTED adult relative", []]]],
+   "test": [[["t", "2 · Offer testing only AFTER the mutation is confirmed", ["their choice: test or not, and who knows"]]]]},
+  {"id": "chi", "colour": "purple",
+   "head": [[["h", "A CHILD", []]]],
+   "test": [[["bad", "Do NOT test for ADULT-onset conditions", []]]],
+   "tx": [[["w", "Why not", ["• stigma", "• more anxiety", "• 'vulnerable child' parenting"]]]]}
+ ],
+ "spans": [
+  {"section": "tx", "cols": [0, 1], "rows": [
+   [["plain", "BRCA1/2 POSITIVE: hereditary breast and ovarian cancer (HBOC)", ["surveillance or prophylactic surgery"]]],
+   [["ok", "WOMAN", ["• breast: HIGH-risk screening (see the ADULT SCREENING chart) or prophylactic mastectomy + reconstruction", "• ovaries: prophylactic surgery at 35 (BRCA1), 40 (BRCA2)", "• oral contraceptive over age 20"]],
+    ["ok", "MAN", ["• clinical breast exam every 6–12 months", "• from 45, yearly: digital rectal exam + prostate-specific antigen (PSA)", "• yearly physical exam"]]]
+  ]}
+ ]
+}

@@ -1,0 +1,298 @@
+{
+ "name": "approach to neonatal care pathway 1",
+ "title": "Newborn care: a full exam within 24 hours, then keep the baby pink (Apgar, resuscitate under 3), warm (incubator if preterm or under 1500 g) and sweet (glucose screening only for at-risk babies)",
+ "width": 1120,
+ "nodes": [
+  {
+   "id": "N",
+   "x": 410,
+   "y": 10,
+   "w": 300,
+   "kind": "plain",
+   "title": "Newborn",
+   "lines": [
+    "full exam within 24 h"
+   ]
+  },
+  {
+   "id": "P",
+   "x": 85,
+   "y": 110,
+   "w": 200,
+   "kind": "plain",
+   "title": "PINK",
+   "lines": [
+    "breathing and colour"
+   ]
+  },
+  {
+   "id": "W",
+   "x": 460,
+   "y": 110,
+   "w": 200,
+   "kind": "lo",
+   "title": "WARM",
+   "lines": [
+    "cannot shiver"
+   ]
+  },
+  {
+   "id": "S",
+   "x": 830,
+   "y": 110,
+   "w": 200,
+   "kind": "plain",
+   "title": "SWEET",
+   "lines": [
+    "glycogen lasts 8-10 h"
+   ]
+  },
+  {
+   "id": "P1",
+   "x": 75,
+   "y": 210,
+   "w": 220,
+   "kind": "lo",
+   "title": "Apgar at 1 and 5 min",
+   "lines": []
+  },
+  {
+   "id": "P2",
+   "x": 115,
+   "y": 290,
+   "w": 140,
+   "kind": "plain",
+   "title": "Under 3?",
+   "lines": []
+  },
+  {
+   "id": "P3",
+   "x": 10,
+   "y": 390,
+   "w": 160,
+   "kind": "bad",
+   "title": "Resuscitate",
+   "lines": []
+  },
+  {
+   "id": "P4",
+   "x": 190,
+   "y": 390,
+   "w": 170,
+   "kind": "ok",
+   "title": "Routine care",
+   "lines": [
+    "7+ normal · 4-6 low"
+   ]
+  },
+  {
+   "id": "W1",
+   "x": 440,
+   "y": 210,
+   "w": 240,
+   "kind": "plain",
+   "title": "Preterm or under 1500 g?",
+   "lines": []
+  },
+  {
+   "id": "W2",
+   "x": 365,
+   "y": 310,
+   "w": 225,
+   "kind": "warn",
+   "title": "Incubator · radiant warmer",
+   "lines": [
+    "humidity"
+   ]
+  },
+  {
+   "id": "W3",
+   "x": 605,
+   "y": 310,
+   "w": 145,
+   "kind": "ok",
+   "title": "Dry · wrap · hat",
+   "lines": [
+    "warm room"
+   ]
+  },
+  {
+   "id": "S1",
+   "x": 800,
+   "y": 210,
+   "w": 260,
+   "kind": "lo",
+   "title": "At risk?",
+   "lines": [
+    "IDM · LGA · SGA · preterm"
+   ]
+  },
+  {
+   "id": "S2",
+   "x": 760,
+   "y": 330,
+   "w": 150,
+   "kind": "ok",
+   "title": "Feed",
+   "lines": [
+    "no screening"
+   ]
+  },
+  {
+   "id": "S3",
+   "x": 930,
+   "y": 330,
+   "w": 180,
+   "kind": "plain",
+   "title": "Glucose 2 h",
+   "lines": [
+    "after first feed"
+   ]
+  },
+  {
+   "id": "S4",
+   "x": 950,
+   "y": 430,
+   "w": 140,
+   "kind": "plain",
+   "title": "2.6 or more?",
+   "lines": []
+  },
+  {
+   "id": "S5",
+   "x": 730,
+   "y": 530,
+   "w": 150,
+   "kind": "ok",
+   "title": "No more sticks",
+   "lines": []
+  },
+  {
+   "id": "S6",
+   "x": 900,
+   "y": 530,
+   "w": 210,
+   "kind": "bad",
+   "title": "Symptomatic: IV dextrose",
+   "lines": [
+    "Well: feed and recheck"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "N",
+   "to": "P",
+   "path": "M410 41H185V108"
+  },
+  {
+   "from": "N",
+   "to": "W"
+  },
+  {
+   "from": "N",
+   "to": "S",
+   "path": "M710 41H930V108"
+  },
+  {
+   "from": "P",
+   "to": "P1"
+  },
+  {
+   "from": "P1",
+   "to": "P2"
+  },
+  {
+   "from": "P2",
+   "to": "P3",
+   "from_dx": -30,
+   "label": "yes",
+   "label_at": [
+    110,
+    355
+   ]
+  },
+  {
+   "from": "P2",
+   "to": "P4",
+   "from_dx": 30,
+   "label": "no",
+   "label_at": [
+    255,
+    355
+   ]
+  },
+  {
+   "from": "W",
+   "to": "W1"
+  },
+  {
+   "from": "W1",
+   "to": "W2",
+   "from_dx": -50,
+   "label": "yes",
+   "label_at": [
+    465,
+    280
+   ]
+  },
+  {
+   "from": "W1",
+   "to": "W3",
+   "from_dx": 50,
+   "label": "no",
+   "label_at": [
+    650,
+    280
+   ]
+  },
+  {
+   "from": "S",
+   "to": "S1"
+  },
+  {
+   "from": "S1",
+   "to": "S2",
+   "from_dx": -60,
+   "label": "no",
+   "label_at": [
+    830,
+    300
+   ]
+  },
+  {
+   "from": "S1",
+   "to": "S3",
+   "from_dx": 60,
+   "label": "yes",
+   "label_at": [
+    1040,
+    300
+   ]
+  },
+  {
+   "from": "S3",
+   "to": "S4"
+  },
+  {
+   "from": "S4",
+   "to": "S5",
+   "from_dx": -30,
+   "label": "yes",
+   "label_at": [
+    870,
+    500
+   ]
+  },
+  {
+   "from": "S4",
+   "to": "S6",
+   "from_dx": 30,
+   "label": "no",
+   "label_at": [
+    1070,
+    500
+   ]
+  }
+ ]
+}

@@ -1,0 +1,583 @@
+{
+ "name": "blood gas overview",
+ "width": 1204,
+ "title": "Blood gas decision chart: pH sorts acidosis from alkalosis, the value that moved with it names the primary disorder (respiratory if PaCO2, metabolic if bicarbonate), and each column gives the expected compensation and the next split (acute versus chronic, anion gap, extracellular fluid volume)",
+ "kinds": {
+  "ma_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ma_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ma_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ra_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ra_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ra_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "rl_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rl_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "rl_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ml_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ml_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ml_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 280,
+   "h": 496,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 322,
+   "y": 270,
+   "w": 280,
+   "h": 496,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 632,
+   "y": 270,
+   "w": 280,
+   "h": 496,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 914,
+   "y": 270,
+   "w": 280,
+   "h": 496,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 378,
+   "h": 60,
+   "text": "PRIMARY PROBLEM"
+  },
+  {
+   "x": 23,
+   "y": 478,
+   "h": 142,
+   "text": "COMPENSATION"
+  },
+  {
+   "x": 23,
+   "y": 660,
+   "h": 98,
+   "text": "NEXT SPLIT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 237,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Blood gas: is the pH LOW or HIGH, and did PaCO2 or HCO3 move WITH it?",
+   "lines": [
+    "normal: pH 7.40 (7.38–7.42) · PaCO2 40 (38–42) · HCO3 24 (22–26) · PaO2 80–100",
+    "partial pressure of CO2 (PaCO2, mmHg) · bicarbonate (HCO3, mEq/L)",
+    "PaO2 LOW? the alveolar–arterial (A-a) gradient names the cause (see GAS EXCHANGE AND HYPOXIA)"
+   ]
+  },
+  {
+   "id": "g_ac",
+   "x": 45,
+   "y": 156,
+   "w": 552,
+   "h": 42,
+   "kind": "plain",
+   "title": "pH < 7.38: ACIDOSIS",
+   "lines": []
+  },
+  {
+   "id": "g_al",
+   "x": 637,
+   "y": 156,
+   "w": 552,
+   "h": 42,
+   "kind": "plain",
+   "title": "pH > 7.42: ALKALOSIS",
+   "lines": []
+  },
+  {
+   "id": "ma_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 270,
+   "h": 60,
+   "kind": "ma_h",
+   "title": "Metabolic acidosis",
+   "lines": [
+    "e.g. diabetic ketoacidosis (DKA)"
+   ]
+  },
+  {
+   "id": "ra_head_0_0",
+   "x": 327,
+   "y": 278,
+   "w": 270,
+   "h": 60,
+   "kind": "ra_h",
+   "title": "Respiratory acidosis",
+   "lines": []
+  },
+  {
+   "id": "rl_head_0_0",
+   "x": 637,
+   "y": 278,
+   "w": 270,
+   "h": 60,
+   "kind": "rl_h",
+   "title": "Respiratory alkalosis",
+   "lines": []
+  },
+  {
+   "id": "ml_head_0_0",
+   "x": 919,
+   "y": 278,
+   "w": 270,
+   "h": 60,
+   "kind": "ml_h",
+   "title": "Metabolic alkalosis",
+   "lines": []
+  },
+  {
+   "id": "ma_cause_0_0",
+   "x": 45,
+   "y": 378,
+   "w": 270,
+   "h": 60,
+   "kind": "ma_t",
+   "title": "Bicarbonate is LOW",
+   "lines": []
+  },
+  {
+   "id": "ra_cause_0_0",
+   "x": 327,
+   "y": 378,
+   "w": 270,
+   "h": 60,
+   "kind": "ra_t",
+   "title": "HYPOVENTILATION",
+   "lines": [
+    "CO2 builds up"
+   ]
+  },
+  {
+   "id": "rl_cause_0_0",
+   "x": 637,
+   "y": 378,
+   "w": 270,
+   "h": 60,
+   "kind": "rl_t",
+   "title": "HYPERVENTILATION",
+   "lines": [
+    "CO2 blown off"
+   ]
+  },
+  {
+   "id": "ml_cause_0_0",
+   "x": 919,
+   "y": 378,
+   "w": 270,
+   "h": 60,
+   "kind": "ml_t",
+   "title": "Bicarbonate is HIGH",
+   "lines": []
+  },
+  {
+   "id": "ma_comp_0_0",
+   "x": 45,
+   "y": 478,
+   "w": 270,
+   "h": 60,
+   "kind": "ma_t",
+   "title": "Lungs HYPERVENTILATE",
+   "lines": [
+    "Kussmaul breathing → PaCO2 ↓"
+   ]
+  },
+  {
+   "id": "ma_comp_1_0",
+   "x": 45,
+   "y": 560,
+   "w": 270,
+   "h": 60,
+   "kind": "ma_w",
+   "title": "Expect PaCO2 ↓ 1 per HCO3 ↓ 1",
+   "lines": [
+    "FAST (10–15 min): no acute vs chronic"
+   ]
+  },
+  {
+   "id": "ra_comp_0_0",
+   "x": 327,
+   "y": 478,
+   "w": 270,
+   "h": 42,
+   "kind": "ra_t",
+   "title": "Kidneys RETAIN HCO3",
+   "lines": []
+  },
+  {
+   "id": "ra_comp_1_0",
+   "x": 327,
+   "y": 542,
+   "w": 270,
+   "h": 78,
+   "kind": "ra_w",
+   "title": "SLOW (about 24 h)",
+   "lines": [
+    "so acute and chronic expect different HCO3"
+   ]
+  },
+  {
+   "id": "rl_comp_0_0",
+   "x": 637,
+   "y": 478,
+   "w": 270,
+   "h": 42,
+   "kind": "rl_t",
+   "title": "Kidneys EXCRETE HCO3",
+   "lines": []
+  },
+  {
+   "id": "rl_comp_1_0",
+   "x": 637,
+   "y": 542,
+   "w": 270,
+   "h": 78,
+   "kind": "rl_w",
+   "title": "SLOW (about 24 h)",
+   "lines": [
+    "so acute and chronic expect different HCO3"
+   ]
+  },
+  {
+   "id": "ml_comp_0_0",
+   "x": 919,
+   "y": 478,
+   "w": 270,
+   "h": 60,
+   "kind": "ml_t",
+   "title": "Lungs HYPOVENTILATE",
+   "lines": [
+    "→ PaCO2 ↑"
+   ]
+  },
+  {
+   "id": "ml_comp_1_0",
+   "x": 919,
+   "y": 560,
+   "w": 270,
+   "h": 60,
+   "kind": "ml_w",
+   "title": "Expect PaCO2 ↑ 0.5 per HCO3 ↑ 1",
+   "lines": [
+    "FAST (10–15 min): no acute vs chronic"
+   ]
+  },
+  {
+   "id": "ma_next_0_0",
+   "x": 45.0,
+   "y": 660,
+   "w": 130.0,
+   "h": 98,
+   "kind": "ma_w",
+   "title": "Anion gap ↑",
+   "lines": [
+    "anion gap metabolic acidosis (AGMA)"
+   ]
+  },
+  {
+   "id": "ma_next_0_1",
+   "x": 185.0,
+   "y": 660,
+   "w": 130.0,
+   "h": 98,
+   "kind": "ma_w",
+   "title": "NO anion gap",
+   "lines": [
+    "non-anion gap metabolic acidosis (NAGMA)"
+   ]
+  },
+  {
+   "id": "ra_next_0_0",
+   "x": 327.0,
+   "y": 660,
+   "w": 130.0,
+   "h": 98,
+   "kind": "ra_w",
+   "title": "ACUTE",
+   "lines": [
+    "HCO3 ↑ 1 per PaCO2 ↑ 10"
+   ]
+  },
+  {
+   "id": "ra_next_0_1",
+   "x": 467.0,
+   "y": 660,
+   "w": 130.0,
+   "h": 98,
+   "kind": "ra_w",
+   "title": "CHRONIC",
+   "lines": [
+    "HCO3 ↑ 3 per PaCO2 ↑ 10"
+   ]
+  },
+  {
+   "id": "rl_next_0_0",
+   "x": 637.0,
+   "y": 660,
+   "w": 130.0,
+   "h": 98,
+   "kind": "rl_w",
+   "title": "ACUTE",
+   "lines": [
+    "HCO3 ↓ 2 per PaCO2 ↓ 10"
+   ]
+  },
+  {
+   "id": "rl_next_0_1",
+   "x": 777.0,
+   "y": 660,
+   "w": 130.0,
+   "h": 98,
+   "kind": "rl_w",
+   "title": "CHRONIC",
+   "lines": [
+    "HCO3 ↓ 5 per PaCO2 ↓ 10"
+   ]
+  },
+  {
+   "id": "ml_next_0_0",
+   "x": 919.0,
+   "y": 660,
+   "w": 130.0,
+   "h": 98,
+   "kind": "ml_w",
+   "title": "Extracellular fluid (ECF) ↑",
+   "lines": [
+    "PRIMARY hyperaldosteronism"
+   ]
+  },
+  {
+   "id": "ml_next_0_1",
+   "x": 1059.0,
+   "y": 660,
+   "w": 130.0,
+   "h": 98,
+   "kind": "ml_w",
+   "title": "ECF ↓",
+   "lines": [
+    "SECONDARY hyperaldosteronism"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ac",
+   "path": "M617.0 106V131H321.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_al",
+   "path": "M617.0 106V131H913.0V156"
+  },
+  {
+   "from": "ma_comp_0_0",
+   "to": "ma_comp_1_0"
+  },
+  {
+   "from": "ra_comp_0_0",
+   "to": "ra_comp_1_0"
+  },
+  {
+   "from": "rl_comp_0_0",
+   "to": "rl_comp_1_0"
+  },
+  {
+   "from": "ml_comp_0_0",
+   "to": "ml_comp_1_0"
+  },
+  {
+   "from": "ma_head_0_0",
+   "to": "ma_cause_0_0"
+  },
+  {
+   "from": "ma_cause_0_0",
+   "to": "ma_comp_0_0"
+  },
+  {
+   "from": "ma_comp_1_0",
+   "to": "ma_next_0_0",
+   "from_dx": -70.0
+  },
+  {
+   "from": "ma_comp_1_0",
+   "to": "ma_next_0_1",
+   "from_dx": 70.0
+  },
+  {
+   "from": "g_ac",
+   "to": "ma_head_0_0",
+   "from_dx": -141,
+   "label": "HCO3 ↓",
+   "label_at": [
+    180.0,
+    238
+   ]
+  },
+  {
+   "from": "ra_head_0_0",
+   "to": "ra_cause_0_0"
+  },
+  {
+   "from": "ra_cause_0_0",
+   "to": "ra_comp_0_0"
+  },
+  {
+   "from": "ra_comp_1_0",
+   "to": "ra_next_0_0",
+   "from_dx": -70.0
+  },
+  {
+   "from": "ra_comp_1_0",
+   "to": "ra_next_0_1",
+   "from_dx": 70.0
+  },
+  {
+   "from": "g_ac",
+   "to": "ra_head_0_0",
+   "from_dx": 141,
+   "label": "PaCO2 ↑",
+   "label_at": [
+    462.0,
+    238
+   ]
+  },
+  {
+   "from": "rl_head_0_0",
+   "to": "rl_cause_0_0"
+  },
+  {
+   "from": "rl_cause_0_0",
+   "to": "rl_comp_0_0"
+  },
+  {
+   "from": "rl_comp_1_0",
+   "to": "rl_next_0_0",
+   "from_dx": -70.0
+  },
+  {
+   "from": "rl_comp_1_0",
+   "to": "rl_next_0_1",
+   "from_dx": 70.0
+  },
+  {
+   "from": "g_al",
+   "to": "rl_head_0_0",
+   "from_dx": -141,
+   "label": "PaCO2 ↓",
+   "label_at": [
+    772.0,
+    238
+   ]
+  },
+  {
+   "from": "ml_head_0_0",
+   "to": "ml_cause_0_0"
+  },
+  {
+   "from": "ml_cause_0_0",
+   "to": "ml_comp_0_0"
+  },
+  {
+   "from": "ml_comp_1_0",
+   "to": "ml_next_0_0",
+   "from_dx": -70.0
+  },
+  {
+   "from": "ml_comp_1_0",
+   "to": "ml_next_0_1",
+   "from_dx": 70.0
+  },
+  {
+   "from": "g_al",
+   "to": "ml_head_0_0",
+   "from_dx": 141,
+   "label": "HCO3 ↑",
+   "label_at": [
+    1054.0,
+    238
+   ]
+  }
+ ],
+ "panels": []
+}

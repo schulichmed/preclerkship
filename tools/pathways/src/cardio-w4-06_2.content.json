@@ -1,0 +1,295 @@
+{
+ "name": "hypertension treatment overview",
+ "title": "Hypertension treatment decision chart: treat once blood pressure is over the threshold for the patient's risk, start one drug or a low-dose two-drug pill depending on the distance from target, then build the cocktail in steps (RAAS inhibitor, a diuretic and a calcium channel blocker, then spironolactone, beta blocker or doxazosin), each class with when to choose it and when to avoid it",
+ "col_w": 226,
+ "root": {
+  "title": "Hypertension above the threshold for this patient's RISK: which drugs, in what order?",
+  "lines": [
+   "START → TARGET (mmHg): HIGH risk systolic ≥ 130 → ≤ 120 · DIABETES ≥ 130/80 → < 130/80",
+   "MODERATE risk ≥ 140/90 → < 140/90 · LOW risk ≥ 160/100 → < 140/90",
+   "healthy behaviours for everyone · ≤ 10 mmHg above target: ONE drug · > 10 mmHg: TWO drugs as a low-dose single pill",
+   "not at target: ADD a drug, don't double one (half dose gives 80% of the effect)",
+   "pair a renin-angiotensin-aldosterone system (RAAS) INHIBITOR with a STIMULATOR"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g1",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "STEP 1: a RAAS inhibitor",
+   "lines": [
+    "will they COUGH on an angiotensin-converting enzyme (ACE) inhibitor?"
+   ]
+  },
+  {
+   "id": "g2",
+   "cols": [
+    1,
+    2
+   ],
+   "title": "STEPS 2–3: a diuretic or a calcium channel blocker (CCB), then the other",
+   "lines": [
+    "both STIMULATE the RAAS: choose by K+ and pedal edema"
+   ]
+  },
+  {
+   "id": "g3",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "STEP 4: the 4th drug",
+   "lines": [
+    "choose by K+ and heart rate"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "when",
+  "avoid",
+  "s5"
+ ],
+ "row_names": {
+  "when": "CHOOSE WHEN",
+  "avoid": "AVOID / WATCH",
+  "s5": "STEP 5"
+ },
+ "columns": [
+  {
+   "id": "ra",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "ACE inhibitor or ARB",
+      [
+       "perindopril, trandolapril; angiotensin receptor blocker (ARB): telmisartan, candesartan"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "ok",
+      "Compelling indications",
+      [
+       "• ischemic heart disease (+ beta blocker)",
+       "• left ventricular dysfunction, non-diabetic kidney disease",
+       "• diabetes with neuropathy: ARB"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "ACE cough",
+      [
+       "switch to an ARB"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "bad",
+      "NO in pregnancy or renovascular disease",
+      [
+       "• caution if she could become pregnant",
+       "• renovascular: high K+, worse kidneys"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Not ALONE in Black patients",
+      [
+       "low-renin hypertension: start a renin stimulator"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "di",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Thiazide-like diuretic",
+      [
+       "indapamide, chlorthalidone",
+       "longer-acting: preferred over thiazides"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "ok",
+      "First line, or with the RAAS inhibitor",
+      [
+       "• cerebrovascular disease",
+       "• step 6: K+ > 3.7 → MORE diuretic"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "warn",
+      "Diuretic-induced LOW K+",
+      [
+       "pair with an ACE inhibitor or ARB (they spare K+)"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cc",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Long-acting CCB",
+      [
+       "dihydropyridine: amlodipine, nifedipine"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "ok",
+      "First line, or with the RAAS inhibitor",
+      [
+       "• cerebrovascular disease",
+       "• preferred 3-drug cocktail: + diuretic + ACE inhibitor or ARB"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "warn",
+      "Diuretic + CCB: the SAME column",
+      [
+       "add a RAAS inhibitor; monitor electrolytes"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sp",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Spironolactone",
+      [
+       "mineralocorticoid receptor antagonist (MRA)"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "ok",
+      "Step 4, if the K+ allows",
+      [
+       "• step 6: K+ < 3.7 → MORE spironolactone"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "warn",
+      "Two RAAS inhibitors together",
+      [
+       "monitor electrolytes (K+)"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "bb",
+   "colour": "brown",
+   "head": [
+    [
+     [
+      "h",
+      "Beta blocker or doxazosin",
+      [
+       "bisoprolol; doxazosin is an alpha-1 blocker"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "ok",
+      "Beta blocker",
+      [
+       "• ischemic heart disease, recent ST-elevation MI",
+       "• a fast heart rate at step 4"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "bad",
+      "Beta blocker NOT first line at ≥ 60",
+      [
+       "unless angina or heart failure"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "spans": [
+  {
+   "section": "s5",
+   "cols": [
+    0,
+    4
+   ],
+   "rows": [
+    [
+     [
+      "warn",
+      "On all 4 drugs and still NOT at target? Very exceptional, or not taking them",
+      [
+       "• adherence aids: blister packs, a daily routine, home BP readings",
+       "• DIRECTLY OBSERVED: watch all 4 taken in clinic on an ambulatory BP monitor",
+       "• step 6, poor kidney function → a renal-impairment algorithm"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

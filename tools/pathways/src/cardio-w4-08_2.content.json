@@ -1,0 +1,398 @@
+{
+ "name": "pediatric heart complaint overview",
+ "title": "A child with a murmur, chest pain or palpitations: history and exam separate the benign from the cardiac cause; an innocent murmur from a pathologic one, musculoskeletal from cardiac chest pain, and sinus tachycardia from supraventricular tachycardia, which is caught by an ECG during symptoms",
+ "col_w": 232,
+ "root": {
+  "title": "A child with a MURMUR, CHEST PAIN or PALPITATIONS: BENIGN, or the HEART?",
+  "lines": [
+   "infants: work of breathing with feeds, sweating with feeds, poor growth, cyanosis · older: syncope, exercise intolerance",
+   "exam: perfusion, heaves or thrills, radial vs femoral pulses, extra sounds, liver size"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_mur",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "MURMUR: most are INNOCENT",
+   "lines": [
+    "congenital heart disease (CHD) in only ~1% of children"
+   ]
+  },
+  {
+   "id": "g_cp",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "CHEST PAIN: most are BENIGN",
+   "lines": [
+    "normal children do not have heart attacks"
+   ]
+  },
+  {
+   "id": "g_pal",
+   "cols": [
+    4,
+    5
+   ],
+   "title": "PALPITATIONS: fast? irregular? hard?",
+   "lines": [
+    "SYNCOPE rather than palpitations → think ventricular tachycardia (VT)"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "hx",
+  "ex",
+  "next"
+ ],
+ "row_names": {
+  "hx": "HISTORY",
+  "ex": "EXAM & ECG",
+  "next": "TESTS & NEXT"
+ },
+ "columns": [
+  {
+   "id": "inn",
+   "colour": "teal",
+   "drop_label": "normal heart",
+   "head": [
+    [
+     [
+      "h",
+      "Innocent murmur",
+      [
+       "blood ejected from a NORMAL heart"
+      ]
+     ]
+    ]
+   ],
+   "hx": [
+    [
+     [
+      "t",
+      "No cardiac symptoms",
+      [
+       "• louder with high output: fever, infection"
+      ]
+     ]
+    ]
+   ],
+   "ex": [
+    [
+     [
+      "w",
+      "Sounds like",
+      [
+       "• mid-systolic (venous hum: continuous)",
+       "• grade 1–3, NEVER a thrill",
+       "• soft, MUSICAL, vibratory"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "LOUDER lying down",
+      [
+       "~venous hum: GOES when supine"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "ok",
+      "Normal exam + normal tests",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pat",
+   "colour": "magenta",
+   "drop_label": "abnormal",
+   "head": [
+    [
+     [
+      "h",
+      "Pathologic murmur",
+      [
+       "may be congenital heart disease"
+      ]
+     ]
+    ]
+   ],
+   "hx": [
+    [
+     [
+      "t",
+      "± cardiac symptoms",
+      [
+       "• or a FAMILY history"
+      ]
+     ]
+    ]
+   ],
+   "ex": [
+    [
+     [
+      "w",
+      "Sounds like",
+      [
+       "• holosystolic, DIASTOLIC or continuous",
+       "• grade 1 up to 6",
+       "• HARSH, rarely musical"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Associated findings",
+      [
+       "extra heart sounds, abnormal palpation"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "bad",
+      "Work it up as CHD",
+      [
+       "see the CONGENITAL HEART DISEASE chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "msk",
+   "colour": "olive",
+   "drop_label": "random, sharp",
+   "head": [
+    [
+     [
+      "h",
+      "Benign chest pain",
+      [
+       "costochondritis commonest"
+      ]
+     ]
+    ]
+   ],
+   "hx": [
+    [
+     [
+      "t",
+      "Random, even AT REST",
+      [
+       "• worse breathing in or moving",
+       "• eased by rest, distraction, time"
+      ]
+     ]
+    ]
+   ],
+   "ex": [
+    [
+     [
+      "w",
+      "Reproducible",
+      [
+       "• DISCRETE spot, often sharp",
+       "• normal heart exam"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "ok",
+      "Non-cardiac causes",
+      [
+       "• musculoskeletal: precordial catch, slipping rib",
+       "• asthma",
+       "• reflux, anxiety"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "car",
+   "colour": "orange",
+   "drop_label": "exertional",
+   "head": [
+    [
+     [
+      "h",
+      "Cardiac chest pain",
+      [
+       "rare, but do not miss it"
+      ]
+     ]
+    ]
+   ],
+   "hx": [
+    [
+     [
+      "t",
+      "With EXERCISE, and only exercise",
+      [
+       "• predictable by exertion",
+       "• eased by rest ONLY"
+      ]
+     ]
+    ]
+   ],
+   "ex": [
+    [
+     [
+      "w",
+      "NOT reproducible",
+      [
+       "• vague, crushing, squeezing",
+       "• ± murmur or extra sounds"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "bad",
+      "SYNCOPE is most worrying",
+      [
+       "• inflammation: pericarditis, myocarditis",
+       "• demand: cardiomyopathy, outflow obstruction",
+       "• coronary anomaly, aortic dissection"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sin",
+   "colour": "blue",
+   "drop_label": "gradual",
+   "head": [
+    [
+     [
+      "h",
+      "Sinus tachycardia",
+      [
+       "or awareness of a normal rhythm"
+      ]
+     ]
+    ]
+   ],
+   "hx": [
+    [
+     [
+      "t",
+      "SLOW onset and offset (> 10–30 s)",
+      [
+       "• < 150–180 bpm at rest",
+       "• presyncope or dyspnea come FIRST"
+      ]
+     ]
+    ]
+   ],
+   "ex": [
+    [
+     [
+      "w",
+      "1 · Resting ECG normal",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Monitor: sinus captured",
+      []
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "ok",
+      "Find the cause",
+      [
+       "• exercise, anxiety",
+       "• dehydration, standing",
+       "• hyperthyroid"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "svt",
+   "colour": "purple",
+   "drop_label": "abrupt",
+   "head": [
+    [
+     [
+      "h",
+      "Supraventricular tachycardia (SVT)",
+      []
+     ]
+    ]
+   ],
+   "hx": [
+    [
+     [
+      "t",
+      "ABRUPT onset and offset (1–5 s)",
+      [
+       "• > 200 bpm, too fast to count",
+       "• presyncope, chest pain, dyspnea FOLLOW"
+      ]
+     ]
+    ]
+   ],
+   "ex": [
+    [
+     [
+      "w",
+      "1 · Resting ECG",
+      [
+       "may show Wolff-Parkinson-White (WPW)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · CAPTURE it: ECG during symptoms",
+      [
+       "Holter 24–48 h, or a 3–8 week monitor"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "bad",
+      "SVT captured",
+      [
+       "see the TACHYCARDIA chart"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

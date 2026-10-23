@@ -1,0 +1,873 @@
+{
+ "name": "adult neck mass overview",
+ "width": 1289,
+ "title": "Adult neck mass decision chart: rule out normal structures, then midline (thyroid 90%) versus lateral (rule of 7s and age: infection, congenital or neoplasm, an older adult's lateral mass being cancer until proven otherwise) versus a salivary gland mass (stones and infection worse with meals, tumours painless); each column gives clues, investigations and treatment",
+ "kinds": {
+  "mid_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mid_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "mid_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ln_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ln_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ln_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ca_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ca_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ca_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "st_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "st_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "st_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "tu_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tu_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "tu_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 388,
+   "w": 235,
+   "h": 1138,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 305,
+   "y": 388,
+   "w": 235,
+   "h": 1138,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 542,
+   "y": 388,
+   "w": 235,
+   "h": 1138,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 807,
+   "y": 388,
+   "w": 235,
+   "h": 1138,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 1044,
+   "y": 388,
+   "w": 235,
+   "h": 1138,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 550,
+   "h": 304,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 894,
+   "h": 302,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1236,
+   "h": 282,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 280,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Adult neck mass: NORMAL structure? If not, MIDLINE, LATERAL, or in a SALIVARY GLAND?",
+   "lines": [
+    "normal: submandibular gland, C2 transverse process, carotid bulb, sternocleidomastoid, hyoid, cervical rib"
+   ]
+  },
+  {
+   "id": "g_mid",
+   "x": 45,
+   "y": 120,
+   "w": 225,
+   "h": 60,
+   "kind": "plain",
+   "title": "MIDLINE",
+   "lines": [
+    "THYROID 90% of the time"
+   ]
+  },
+  {
+   "id": "g_lat",
+   "x": 310,
+   "y": 120,
+   "w": 462,
+   "h": 60,
+   "kind": "plain",
+   "title": "LATERAL: how LONG, and how OLD?",
+   "lines": []
+  },
+  {
+   "id": "g_sal",
+   "x": 812,
+   "y": 120,
+   "w": 462,
+   "h": 60,
+   "kind": "plain",
+   "title": "SALIVARY GLAND: does it swell with MEALS?",
+   "lines": []
+  },
+  {
+   "id": "t_lat",
+   "x": 310,
+   "y": 220,
+   "w": 462,
+   "h": 96,
+   "kind": "plain",
+   "title": "Rule of 7s",
+   "lines": [
+    "• 7 DAYS → infection",
+    "• 7 WEEKS to 7 MONTHS → neoplasm",
+    "• 7 YEARS → congenital (PEDIATRIC NECK MASSES chart)"
+   ]
+  },
+  {
+   "id": "mid_head_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 225,
+   "h": 114,
+   "kind": "mid_h",
+   "title": "Midline mass",
+   "lines": []
+  },
+  {
+   "id": "ln_head_0_0",
+   "x": 310,
+   "y": 396,
+   "w": 225,
+   "h": 114,
+   "kind": "ln_h",
+   "title": "Infected lymph node",
+   "lines": []
+  },
+  {
+   "id": "ca_head_0_0",
+   "x": 547,
+   "y": 396,
+   "w": 225,
+   "h": 114,
+   "kind": "ca_h",
+   "title": "Head and neck cancer",
+   "lines": [
+    "older adult: CANCER until proven otherwise",
+    "usually a node METASTASIS from a head and neck primary"
+   ]
+  },
+  {
+   "id": "st_head_0_0",
+   "x": 812,
+   "y": 396,
+   "w": 225,
+   "h": 114,
+   "kind": "st_h",
+   "title": "Stone or infection",
+   "lines": [
+    "sialolithiasis · acute sialadenitis"
+   ]
+  },
+  {
+   "id": "tu_head_0_0",
+   "x": 1049,
+   "y": 396,
+   "w": 225,
+   "h": 114,
+   "kind": "tu_h",
+   "title": "Salivary gland tumour",
+   "lines": [
+    "SMALLER gland = more likely CANCER",
+    "parotid 25% · submandibular 50% · sublingual/minor 75%"
+   ]
+  },
+  {
+   "id": "mid_pres_0_0",
+   "x": 45,
+   "y": 550,
+   "w": 225,
+   "h": 150,
+   "kind": "mid_t",
+   "title": "Thyroid (90%)",
+   "lines": [
+    "• goitre, tumour: THYROID MASSES chart",
+    "• thyroglossal duct cyst: PEDIATRIC NECK MASSES chart"
+   ]
+  },
+  {
+   "id": "mid_pres_1_0",
+   "x": 45,
+   "y": 722,
+   "w": 225,
+   "h": 132,
+   "kind": "mid_w",
+   "title": "Other (10%)",
+   "lines": [
+    "• lymph node",
+    "• DERMOID cyst: submental, from birth",
+    "• lymphatic malformation"
+   ]
+  },
+  {
+   "id": "ln_pres_0_0",
+   "x": 310,
+   "y": 550,
+   "w": 225,
+   "h": 168,
+   "kind": "ln_t",
+   "title": "Reactive or suppurative?",
+   "lines": [
+    "• REACTIVE: the node reacts TO a nearby infection",
+    "• SUPPURATIVE: the node ITSELF is infected; skin red, inflamed"
+   ]
+  },
+  {
+   "id": "ln_pres_1_0",
+   "x": 310,
+   "y": 740,
+   "w": 225,
+   "h": 114,
+   "kind": "ln_w",
+   "title": "Ask",
+   "lines": [
+    "• recent head and neck infection",
+    "• pets, travel, TB exposure"
+   ]
+  },
+  {
+   "id": "ca_pres_0_0",
+   "x": 547,
+   "y": 550,
+   "w": 225,
+   "h": 132,
+   "kind": "ca_t",
+   "title": "Risk",
+   "lines": [
+    "• SMOKING, ALCOHOL",
+    "• human papillomavirus (HPV-16): tonsil, tongue base; younger, better prognosis",
+    "• sun, radiation, prior cancer"
+   ]
+  },
+  {
+   "id": "ca_pres_1_0",
+   "x": 547,
+   "y": 704,
+   "w": 225,
+   "h": 150,
+   "kind": "ca_w",
+   "title": "Red flags > 3 weeks",
+   "lines": [
+    "• hoarseness, sore throat, ear pain with a NORMAL ear",
+    "• non-healing ulcer, white or red patch",
+    "• dysphagia, trismus, one-sided nasal block"
+   ]
+  },
+  {
+   "id": "st_pres_0_0",
+   "x": 812,
+   "y": 550,
+   "w": 225,
+   "h": 142,
+   "kind": "st_t",
+   "title": "STONE: submandibular most",
+   "lines": [
+    "PAIN + swelling, worse with MEALS"
+   ]
+  },
+  {
+   "id": "st_pres_1_0",
+   "x": 812,
+   "y": 714,
+   "w": 225,
+   "h": 140,
+   "kind": "st_w",
+   "title": "INFECTION: S. aureus",
+   "lines": [
+    "• tender, warm, PUS at the duct",
+    "• dehydration, after surgery, Sjögren"
+   ]
+  },
+  {
+   "id": "tu_pres_0_0",
+   "x": 1049,
+   "y": 550,
+   "w": 225,
+   "h": 114,
+   "kind": "tu_t",
+   "title": "Painless lump",
+   "lines": [
+    "parotid > 80% of tumours"
+   ]
+  },
+  {
+   "id": "tu_pres_1_0",
+   "x": 1049,
+   "y": 686,
+   "w": 225,
+   "h": 168,
+   "kind": "bad",
+   "title": "Malignant signs",
+   "lines": [
+    "• FACIAL NERVE weakness",
+    "• pain, skin change, hard fixed mass",
+    "• neck nodes"
+   ]
+  },
+  {
+   "id": "mid_inv_0_0",
+   "x": 45,
+   "y": 894,
+   "w": 225,
+   "h": 302,
+   "kind": "mid_t",
+   "title": "Thyroid: thyroid-stimulating hormone (TSH) first",
+   "lines": [
+    "THYROID MASSES chart"
+   ]
+  },
+  {
+   "id": "ln_inv_0_0",
+   "x": 310,
+   "y": 894,
+   "w": 225,
+   "h": 118,
+   "kind": "ln_t",
+   "title": "1 · Complete blood count (CBC) + differential, monospot",
+   "lines": [
+    "• white count ↑ → infection",
+    "• serology by exposure"
+   ]
+  },
+  {
+   "id": "ln_inv_1_0",
+   "x": 310,
+   "y": 1034,
+   "w": 225,
+   "h": 60,
+   "kind": "ln_w",
+   "title": "2 · Ultrasound",
+   "lines": [
+    "first imaging: cystic? node?"
+   ]
+  },
+  {
+   "id": "ln_inv_2_0",
+   "x": 310,
+   "y": 1116,
+   "w": 225,
+   "h": 80,
+   "kind": "ln_w",
+   "title": "3 · FNA → culture + sensitivity",
+   "lines": [
+    "fine needle aspiration (FNA)"
+   ]
+  },
+  {
+   "id": "ca_inv_0_0",
+   "x": 547,
+   "y": 894,
+   "w": 225,
+   "h": 85,
+   "kind": "ca_t",
+   "title": "1 · Look for the PRIMARY",
+   "lines": [
+    "• examine + palpate every site",
+    "• nasal endoscopy"
+   ]
+  },
+  {
+   "id": "ca_inv_1_0",
+   "x": 547,
+   "y": 1001,
+   "w": 225,
+   "h": 87,
+   "kind": "ca_w",
+   "title": "2 · Ultrasound + FNA → cytology",
+   "lines": [
+    "CT or MRI neck; CT chest to stage"
+   ]
+  },
+  {
+   "id": "ca_inv_2_0",
+   "x": 547,
+   "y": 1110,
+   "w": 225,
+   "h": 87,
+   "kind": "ca_w",
+   "title": "3 · Panendoscopy under anesthetic",
+   "lines": [
+    "finds the primary site"
+   ]
+  },
+  {
+   "id": "st_inv_0_0",
+   "x": 812,
+   "y": 894,
+   "w": 225,
+   "h": 131,
+   "kind": "st_t",
+   "title": "Clinical diagnosis",
+   "lines": [
+    "palpate gland and duct"
+   ]
+  },
+  {
+   "id": "st_inv_1_0",
+   "x": 812,
+   "y": 1047,
+   "w": 225,
+   "h": 149,
+   "kind": "st_w",
+   "title": "Imaging if needed",
+   "lines": [
+    "submandibular stones mostly RADIOPAQUE, parotid radiolucent"
+   ]
+  },
+  {
+   "id": "tu_inv_0_0",
+   "x": 1049,
+   "y": 894,
+   "w": 225,
+   "h": 159,
+   "kind": "tu_t",
+   "title": "1 · Check the SKIN + FACIAL NERVE",
+   "lines": [
+    "skin cancer can invade the parotid"
+   ]
+  },
+  {
+   "id": "tu_inv_1_0",
+   "x": 1049,
+   "y": 1075,
+   "w": 225,
+   "h": 121,
+   "kind": "tu_w",
+   "title": "2 · Ultrasound, CT, FNA",
+   "lines": []
+  },
+  {
+   "id": "mid_tx_0_0",
+   "x": 45,
+   "y": 1236,
+   "w": 225,
+   "h": 282,
+   "kind": "warn",
+   "title": "Dermoid cyst → surgical removal",
+   "lines": [
+    "it keeps growing"
+   ]
+  },
+  {
+   "id": "ln_tx_0_0",
+   "x": 310,
+   "y": 1236,
+   "w": 225,
+   "h": 282,
+   "kind": "warn",
+   "title": "PERSISTS → open neck biopsy",
+   "lines": [
+    "e.g. lymphoma, no obvious primary"
+   ]
+  },
+  {
+   "id": "ca_tx_0_0",
+   "x": 547,
+   "y": 1236,
+   "w": 225,
+   "h": 67,
+   "kind": "ok",
+   "title": "EARLY: ONE modality",
+   "lines": [
+    "surgery OR radiation"
+   ]
+  },
+  {
+   "id": "ca_tx_1_0",
+   "x": 547,
+   "y": 1325,
+   "w": 225,
+   "h": 85,
+   "kind": "warn",
+   "title": "ADVANCED: combined",
+   "lines": [
+    "surgery + radiation, or chemo + radiation"
+   ]
+  },
+  {
+   "id": "ca_tx_2_0",
+   "x": 547,
+   "y": 1432,
+   "w": 225,
+   "h": 85,
+   "kind": "ca_w",
+   "title": "By site",
+   "lines": [
+    "• oral cavity: surgery ± radiation",
+    "• oropharynx: radiation + chemo"
+   ]
+  },
+  {
+   "id": "st_tx_0_0",
+   "x": 812,
+   "y": 1236,
+   "w": 225,
+   "h": 98,
+   "kind": "ok",
+   "title": "1 · Massage, sour foods, hydration",
+   "lines": [
+    "infection: + warm compress, antibiotics"
+   ]
+  },
+  {
+   "id": "st_tx_1_0",
+   "x": 812,
+   "y": 1356,
+   "w": 225,
+   "h": 80,
+   "kind": "bad",
+   "title": "No better in 3 DAYS → complications?",
+   "lines": [
+    "abscess, deep neck infection"
+   ]
+  },
+  {
+   "id": "st_tx_2_0",
+   "x": 812,
+   "y": 1458,
+   "w": 225,
+   "h": 60,
+   "kind": "st_w",
+   "title": "Surgery: rare",
+   "lines": [
+    "complications, e.g. fistula"
+   ]
+  },
+  {
+   "id": "tu_tx_0_0",
+   "x": 1049,
+   "y": 1236,
+   "w": 225,
+   "h": 116,
+   "kind": "warn",
+   "title": "EVERY salivary mass → EXCISION",
+   "lines": [
+    "• diagnostic AND therapeutic",
+    "• even benign: grows, can transform"
+   ]
+  },
+  {
+   "id": "tu_tx_1_0",
+   "x": 1049,
+   "y": 1374,
+   "w": 225,
+   "h": 60,
+   "kind": "ok",
+   "title": "Keep the FACIAL NERVE",
+   "lines": [
+    "superficial or total parotidectomy"
+   ]
+  },
+  {
+   "id": "tu_tx_2_0",
+   "x": 1049,
+   "y": 1456,
+   "w": 225,
+   "h": 62,
+   "kind": "tu_w",
+   "title": "Cancer → radiation after surgery",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_mid",
+   "path": "M659.5 70V95H157.5V120"
+  },
+  {
+   "from": "root",
+   "to": "g_lat",
+   "path": "M659.5 70V95H541.0V120"
+  },
+  {
+   "from": "root",
+   "to": "g_sal",
+   "path": "M659.5 70V95H1043.0V120"
+  },
+  {
+   "from": "g_lat",
+   "to": "t_lat",
+   "from_dx": 0
+  },
+  {
+   "from": "mid_pres_0_0",
+   "to": "mid_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ln_pres_0_0",
+   "to": "ln_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ca_pres_0_0",
+   "to": "ca_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "st_pres_0_0",
+   "to": "st_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "tu_pres_0_0",
+   "to": "tu_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ln_inv_0_0",
+   "to": "ln_inv_1_0"
+  },
+  {
+   "from": "ln_inv_1_0",
+   "to": "ln_inv_2_0"
+  },
+  {
+   "from": "ca_inv_0_0",
+   "to": "ca_inv_1_0"
+  },
+  {
+   "from": "ca_inv_1_0",
+   "to": "ca_inv_2_0"
+  },
+  {
+   "from": "st_inv_0_0",
+   "to": "st_inv_1_0"
+  },
+  {
+   "from": "tu_inv_0_0",
+   "to": "tu_inv_1_0"
+  },
+  {
+   "from": "ca_tx_0_0",
+   "to": "ca_tx_1_0"
+  },
+  {
+   "from": "ca_tx_1_0",
+   "to": "ca_tx_2_0"
+  },
+  {
+   "from": "st_tx_0_0",
+   "to": "st_tx_1_0"
+  },
+  {
+   "from": "st_tx_1_0",
+   "to": "st_tx_2_0"
+  },
+  {
+   "from": "tu_tx_0_0",
+   "to": "tu_tx_1_0"
+  },
+  {
+   "from": "tu_tx_1_0",
+   "to": "tu_tx_2_0"
+  },
+  {
+   "from": "mid_head_0_0",
+   "to": "mid_pres_0_0"
+  },
+  {
+   "from": "mid_pres_1_0",
+   "to": "mid_inv_0_0"
+  },
+  {
+   "from": "mid_inv_0_0",
+   "to": "mid_tx_0_0"
+  },
+  {
+   "from": "g_mid",
+   "to": "mid_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ln_head_0_0",
+   "to": "ln_pres_0_0"
+  },
+  {
+   "from": "ln_pres_1_0",
+   "to": "ln_inv_0_0"
+  },
+  {
+   "from": "ln_inv_2_0",
+   "to": "ln_tx_0_0"
+  },
+  {
+   "from": "t_lat",
+   "to": "ln_head_0_0",
+   "from_dx": -118,
+   "label": "DAYS · infection",
+   "label_at": [
+    422.5,
+    356
+   ]
+  },
+  {
+   "from": "ca_head_0_0",
+   "to": "ca_pres_0_0"
+  },
+  {
+   "from": "ca_pres_1_0",
+   "to": "ca_inv_0_0"
+  },
+  {
+   "from": "ca_inv_2_0",
+   "to": "ca_tx_0_0"
+  },
+  {
+   "from": "t_lat",
+   "to": "ca_head_0_0",
+   "from_dx": 118,
+   "label": "MONTHS · OLDER adult",
+   "label_at": [
+    659.5,
+    356
+   ]
+  },
+  {
+   "from": "st_head_0_0",
+   "to": "st_pres_0_0"
+  },
+  {
+   "from": "st_pres_1_0",
+   "to": "st_inv_0_0"
+  },
+  {
+   "from": "st_inv_1_0",
+   "to": "st_tx_0_0"
+  },
+  {
+   "from": "g_sal",
+   "to": "st_head_0_0",
+   "from_dx": -118,
+   "label": "WORSE with meals",
+   "label_at": [
+    924.5,
+    356
+   ]
+  },
+  {
+   "from": "tu_head_0_0",
+   "to": "tu_pres_0_0"
+  },
+  {
+   "from": "tu_pres_1_0",
+   "to": "tu_inv_0_0"
+  },
+  {
+   "from": "tu_inv_1_0",
+   "to": "tu_tx_0_0"
+  },
+  {
+   "from": "g_sal",
+   "to": "tu_head_0_0",
+   "from_dx": 118,
+   "label": "PAINLESS, growing",
+   "label_at": [
+    1161.5,
+    356
+   ]
+  }
+ ],
+ "panels": []
+}

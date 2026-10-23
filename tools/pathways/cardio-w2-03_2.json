@@ -1,0 +1,753 @@
+{
+ "name": "pericardial disease overview",
+ "width": 1080,
+ "title": "Pericardial disease decision chart: pain from inflammation (acute pericarditis), fluid (effusion, and tamponade when filling fails) or a stiff pericardium (constrictive pericarditis); each column gives presentation, numbered investigations and treatment in order",
+ "kinds": {
+  "pc_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pc_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "pc_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ef_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ef_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ef_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "tp_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tp_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "tp_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "cp_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cp_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "cp_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 242,
+   "h": 1152,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 312,
+   "y": 270,
+   "w": 242,
+   "h": 1152,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 556,
+   "y": 270,
+   "w": 242,
+   "h": 1152,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 828,
+   "y": 270,
+   "w": 242,
+   "h": 1152,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 432,
+   "h": 252,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 724,
+   "h": 314,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1078,
+   "h": 336,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 175,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Pericardial disease: is the problem PAIN, FLUID or a STIFF pericardium?",
+   "lines": [
+    "fluid and stiffness both stop the heart FILLING in diastole",
+    "how FAST it changes decides how sick the patient is"
+   ]
+  },
+  {
+   "id": "g_pain",
+   "x": 45,
+   "y": 138,
+   "w": 232,
+   "h": 60,
+   "kind": "plain",
+   "title": "PAIN: inflammation",
+   "lines": [
+    "viral is the most common cause"
+   ]
+  },
+  {
+   "id": "g_fluid",
+   "x": 317,
+   "y": 138,
+   "w": 476,
+   "h": 60,
+   "kind": "plain",
+   "title": "FLUID: is filling impaired?",
+   "lines": [
+    "fast fluid: symptoms at 200–300 mL · slow: up to 2 L before symptoms"
+   ]
+  },
+  {
+   "id": "g_stiff",
+   "x": 833,
+   "y": 138,
+   "w": 232,
+   "h": 60,
+   "kind": "plain",
+   "title": "STIFF: fibrous, calcified",
+   "lines": [
+    "a late result of pericarditis"
+   ]
+  },
+  {
+   "id": "pc_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 232,
+   "h": 114,
+   "kind": "pc_h",
+   "title": "Acute pericarditis",
+   "lines": [
+    "inflamed pericardium",
+    "viral, autoimmune, uremia, cancer, after a myocardial infarction or surgery"
+   ]
+  },
+  {
+   "id": "ef_head_0_0",
+   "x": 317,
+   "y": 278,
+   "w": 232,
+   "h": 114,
+   "kind": "ef_h",
+   "title": "Pericardial effusion",
+   "lines": [
+    "extra fluid (normal 50 mL)",
+    "same causes as pericarditis"
+   ]
+  },
+  {
+   "id": "tp_head_0_0",
+   "x": 561,
+   "y": 278,
+   "w": 232,
+   "h": 114,
+   "kind": "tp_h",
+   "title": "Cardiac tamponade",
+   "lines": [
+    "fluid stops the heart FILLING",
+    "an EMERGENCY, at any volume"
+   ]
+  },
+  {
+   "id": "cp_head_0_0",
+   "x": 833,
+   "y": 278,
+   "w": 232,
+   "h": 114,
+   "kind": "cp_h",
+   "title": "Constrictive pericarditis",
+   "lines": [
+    "thick, rigid: the chambers cannot fill",
+    "after pericarditis, heart surgery, radiation, TB"
+   ]
+  },
+  {
+   "id": "pc_pres_0_0",
+   "x": 45,
+   "y": 432,
+   "w": 232,
+   "h": 133,
+   "kind": "pc_t",
+   "title": "SHARP, pleuritic chest pain",
+   "lines": [
+    "• worse lying flat",
+    "• better sitting up, leaning FORWARD",
+    "• ± fever"
+   ]
+  },
+  {
+   "id": "pc_pres_1_0",
+   "x": 45,
+   "y": 587,
+   "w": 232,
+   "h": 97,
+   "kind": "pc_w",
+   "title": "Pericardial friction RUB",
+   "lines": [
+    "triphasic, scratchy, can come and go"
+   ]
+  },
+  {
+   "id": "ef_pres_0_0",
+   "x": 317,
+   "y": 432,
+   "w": 232,
+   "h": 106,
+   "kind": "ef_t",
+   "title": "Small or moderate: NO signs",
+   "lines": [
+    "~found on echo or a big heart on X-ray"
+   ]
+  },
+  {
+   "id": "ef_pres_1_0",
+   "x": 317,
+   "y": 560,
+   "w": 232,
+   "h": 124,
+   "kind": "ef_w",
+   "title": "Large",
+   "lines": [
+    "• Ewart's sign: dull below the left scapula",
+    "• dyspnea, hiccups, dysphagia"
+   ]
+  },
+  {
+   "id": "tp_pres_0_0",
+   "x": 561,
+   "y": 432,
+   "w": 232,
+   "h": 132,
+   "kind": "bad",
+   "title": "BECK'S TRIAD",
+   "lines": [
+    "• LOW blood pressure",
+    "• HIGH jugular venous pressure (JVP)",
+    "• MUFFLED heart sounds"
+   ]
+  },
+  {
+   "id": "tp_pres_1_0",
+   "x": 561,
+   "y": 586,
+   "w": 232,
+   "h": 98,
+   "kind": "tp_w",
+   "title": "Pulsus paradoxus > 10–12 mmHg",
+   "lines": [
+    "• dyspnea, presyncope, tachycardia"
+   ]
+  },
+  {
+   "id": "cp_pres_0_0",
+   "x": 833,
+   "y": 432,
+   "w": 232,
+   "h": 116,
+   "kind": "cp_t",
+   "title": "Heart failure, mostly RIGHT-sided",
+   "lines": [
+    "• edema, ascites, big liver",
+    "• exertional dyspnea, orthopnea",
+    "~needs a high index of suspicion"
+   ]
+  },
+  {
+   "id": "cp_pres_1_0",
+   "x": 833,
+   "y": 570,
+   "w": 232,
+   "h": 114,
+   "kind": "cp_w",
+   "title": "Exam",
+   "lines": [
+    "• KUSSMAUL's sign: JVP rises on inspiration",
+    "• pericardial KNOCK in early diastole"
+   ]
+  },
+  {
+   "id": "pc_inv_0_0",
+   "x": 45,
+   "y": 724,
+   "w": 232,
+   "h": 128,
+   "kind": "pc_t",
+   "title": "1 · Diagnose: ANY 2 of 4",
+   "lines": [
+    "• pleuritic pain",
+    "• rub",
+    "• effusion on echo"
+   ]
+  },
+  {
+   "id": "pc_inv_1_0",
+   "x": 45,
+   "y": 874,
+   "w": 232,
+   "h": 164,
+   "kind": "pc_w",
+   "title": "2 · The 4th: ECG",
+   "lines": [
+    "• WIDESPREAD concave ST elevation",
+    "• PR depression",
+    "~supportive: inflammatory markers ↑, CT or MRI"
+   ]
+  },
+  {
+   "id": "ef_inv_0_0",
+   "x": 317,
+   "y": 724,
+   "w": 232,
+   "h": 138,
+   "kind": "ef_t",
+   "title": "1 · Echo: how big? compressing?",
+   "lines": []
+  },
+  {
+   "id": "ef_inv_1_0",
+   "x": 317,
+   "y": 884,
+   "w": 232,
+   "h": 154,
+   "kind": "ef_w",
+   "title": "2 · ECG + chest X-ray",
+   "lines": [
+    "• LOW voltage QRS",
+    "• 'water bottle' heart if very large"
+   ]
+  },
+  {
+   "id": "tp_inv_0_0",
+   "x": 561,
+   "y": 724,
+   "w": 232,
+   "h": 154,
+   "kind": "tp_t",
+   "title": "1 · Bedside echo",
+   "lines": [
+    "• large effusion",
+    "• swinging heart, chamber compression"
+   ]
+  },
+  {
+   "id": "tp_inv_1_0",
+   "x": 561,
+   "y": 900,
+   "w": 232,
+   "h": 138,
+   "kind": "tp_w",
+   "title": "2 · ECG: ELECTRICAL ALTERNANS",
+   "lines": [
+    "QRS height alternates beat to beat"
+   ]
+  },
+  {
+   "id": "cp_inv_0_0",
+   "x": 833,
+   "y": 724,
+   "w": 232,
+   "h": 96,
+   "kind": "cp_t",
+   "title": "1 · Echo",
+   "lines": [
+    "• NORMAL systolic function",
+    "• septal bounce, plethoric inferior vena cava"
+   ]
+  },
+  {
+   "id": "cp_inv_1_0",
+   "x": 833,
+   "y": 842,
+   "w": 232,
+   "h": 78,
+   "kind": "cp_w",
+   "title": "2 · CT or MRI",
+   "lines": [
+    "thick, calcified, enhancing pericardium"
+   ]
+  },
+  {
+   "id": "cp_inv_2_0",
+   "x": 833,
+   "y": 942,
+   "w": 232,
+   "h": 96,
+   "kind": "cp_w",
+   "title": "3 · Catheterization",
+   "lines": [
+    "• EQUAL pressures in all 4 chambers",
+    "• 'square root' sign"
+   ]
+  },
+  {
+   "id": "pc_tx_0_0",
+   "x": 45,
+   "y": 1078,
+   "w": 232,
+   "h": 100,
+   "kind": "ok",
+   "title": "1 · High-dose anti-inflammatory (NSAID) 1–2 weeks",
+   "lines": [
+    "+ proton pump inhibitor (PPI)"
+   ]
+  },
+  {
+   "id": "pc_tx_1_0",
+   "x": 45,
+   "y": 1200,
+   "w": 232,
+   "h": 78,
+   "kind": "ok",
+   "title": "2 · COLCHICINE 3 months",
+   "lines": [
+    "• fewer recurrences",
+    "• no exercise for 3 months"
+   ]
+  },
+  {
+   "id": "pc_tx_2_0",
+   "x": 45,
+   "y": 1300,
+   "w": 232,
+   "h": 114,
+   "kind": "warn",
+   "title": "Autoimmune or refractory",
+   "lines": [
+    "• steroid taper",
+    "• anakinra, IV immunoglobulin, azathioprine",
+    "• pericardiectomy"
+   ]
+  },
+  {
+   "id": "ef_tx_0_0",
+   "x": 317,
+   "y": 1078,
+   "w": 232,
+   "h": 61,
+   "kind": "ok",
+   "title": "Treat the cause",
+   "lines": []
+  },
+  {
+   "id": "ef_tx_1_0",
+   "x": 317,
+   "y": 1161,
+   "w": 232,
+   "h": 115,
+   "kind": "warn",
+   "title": "DRAIN to diagnose",
+   "lines": [
+    "• large + cancer or infection suspected",
+    "• purulent fluid suspected"
+   ]
+  },
+  {
+   "id": "ef_tx_2_0",
+   "x": 317,
+   "y": 1298,
+   "w": 232,
+   "h": 115,
+   "kind": "ef_w",
+   "title": "Send the fluid",
+   "lines": [
+    "• cytology: cancer",
+    "• culture, acid-fast stain: tuberculosis (TB)"
+   ]
+  },
+  {
+   "id": "tp_tx_0_0",
+   "x": 561,
+   "y": 1078,
+   "w": 232,
+   "h": 148,
+   "kind": "warn",
+   "title": "1 · IV fluids or pressors",
+   "lines": [
+    "hold the BP while preparing to drain"
+   ]
+  },
+  {
+   "id": "tp_tx_1_0",
+   "x": 561,
+   "y": 1248,
+   "w": 232,
+   "h": 166,
+   "kind": "bad",
+   "title": "2 · URGENT drainage",
+   "lines": [
+    "• pericardiocentesis (needle)",
+    "• or surgical pericardial window"
+   ]
+  },
+  {
+   "id": "cp_tx_0_0",
+   "x": 833,
+   "y": 1078,
+   "w": 232,
+   "h": 91,
+   "kind": "ok",
+   "title": "1 · Treat the heart failure",
+   "lines": [
+    "diuretics, low salt"
+   ]
+  },
+  {
+   "id": "cp_tx_1_0",
+   "x": 833,
+   "y": 1191,
+   "w": 232,
+   "h": 111,
+   "kind": "ok",
+   "title": "2 · Inflamed on MRI → anti-inflammatories",
+   "lines": [
+    "NSAIDs, colchicine, steroids"
+   ]
+  },
+  {
+   "id": "cp_tx_2_0",
+   "x": 833,
+   "y": 1324,
+   "w": 232,
+   "h": 91,
+   "kind": "warn",
+   "title": "3 · PERICARDIECTOMY",
+   "lines": [
+    "earlier is better"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_pain",
+   "path": "M555.0 88V113H161.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_fluid",
+   "path": "M555.0 88V113H555.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_stiff",
+   "path": "M555.0 88V113H949.0V138"
+  },
+  {
+   "from": "pc_pres_0_0",
+   "to": "pc_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ef_pres_0_0",
+   "to": "ef_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "tp_pres_0_0",
+   "to": "tp_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "cp_pres_0_0",
+   "to": "cp_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "pc_inv_0_0",
+   "to": "pc_inv_1_0"
+  },
+  {
+   "from": "ef_inv_0_0",
+   "to": "ef_inv_1_0"
+  },
+  {
+   "from": "tp_inv_0_0",
+   "to": "tp_inv_1_0"
+  },
+  {
+   "from": "cp_inv_0_0",
+   "to": "cp_inv_1_0"
+  },
+  {
+   "from": "cp_inv_1_0",
+   "to": "cp_inv_2_0"
+  },
+  {
+   "from": "pc_tx_0_0",
+   "to": "pc_tx_1_0"
+  },
+  {
+   "from": "pc_tx_1_0",
+   "to": "pc_tx_2_0"
+  },
+  {
+   "from": "ef_tx_0_0",
+   "to": "ef_tx_1_0"
+  },
+  {
+   "from": "ef_tx_1_0",
+   "to": "ef_tx_2_0"
+  },
+  {
+   "from": "tp_tx_0_0",
+   "to": "tp_tx_1_0"
+  },
+  {
+   "from": "cp_tx_0_0",
+   "to": "cp_tx_1_0"
+  },
+  {
+   "from": "cp_tx_1_0",
+   "to": "cp_tx_2_0"
+  },
+  {
+   "from": "pc_head_0_0",
+   "to": "pc_pres_0_0"
+  },
+  {
+   "from": "pc_pres_1_0",
+   "to": "pc_inv_0_0"
+  },
+  {
+   "from": "pc_inv_1_0",
+   "to": "pc_tx_0_0"
+  },
+  {
+   "from": "g_pain",
+   "to": "pc_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ef_head_0_0",
+   "to": "ef_pres_0_0"
+  },
+  {
+   "from": "ef_pres_1_0",
+   "to": "ef_inv_0_0"
+  },
+  {
+   "from": "ef_inv_1_0",
+   "to": "ef_tx_0_0"
+  },
+  {
+   "from": "g_fluid",
+   "to": "ef_head_0_0",
+   "from_dx": -122,
+   "label": "NO tamponade",
+   "label_at": [
+    433.0,
+    238
+   ]
+  },
+  {
+   "from": "tp_head_0_0",
+   "to": "tp_pres_0_0"
+  },
+  {
+   "from": "tp_pres_1_0",
+   "to": "tp_inv_0_0"
+  },
+  {
+   "from": "tp_inv_1_0",
+   "to": "tp_tx_0_0"
+  },
+  {
+   "from": "g_fluid",
+   "to": "tp_head_0_0",
+   "from_dx": 122,
+   "label": "TAMPONADE",
+   "label_at": [
+    677.0,
+    238
+   ]
+  },
+  {
+   "from": "cp_head_0_0",
+   "to": "cp_pres_0_0"
+  },
+  {
+   "from": "cp_pres_1_0",
+   "to": "cp_inv_0_0"
+  },
+  {
+   "from": "cp_inv_2_0",
+   "to": "cp_tx_0_0"
+  },
+  {
+   "from": "g_stiff",
+   "to": "cp_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

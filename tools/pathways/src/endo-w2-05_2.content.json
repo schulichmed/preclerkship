@@ -1,0 +1,380 @@
+{
+ "name": "pathology of thyroid masses overview",
+ "title": "Thyroid nodule workup: TSH first (low goes to a radioactive iodine scan), then ultrasound and TI-RADS size cut-offs for fine needle aspiration, then the Bethesda category sorts the nodule into benign, indeterminate follicular neoplasm, or papillary, medullary or anaplastic cancer; each column gives clues, next steps and treatment in order",
+ "col_w": 228,
+ "root": {
+  "title": "Thyroid nodule: which one earns a NEEDLE, and which result earns SURGERY?",
+  "lines": [
+   "most are benign · not always thyroid: parathyroid, lymph node, skin, soft tissue",
+   "cancer risk: child · male · first-degree family history · neck radiation · firm or fixed · suspicious nodes",
+   "URGENT: rapid growth · stridor · progressive dysphagia · large, fixed, firm mass"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_all",
+   "cols": [
+    0,
+    4
+   ],
+   "title": "1 · Thyroid-stimulating hormone (TSH) FIRST: is it LOW?",
+   "lines": [
+    "LOW → radioactive iodine (RAI) scan: HOT = benign (see the THYROID FUNCTION chart) · COLD → ultrasound like the rest"
+   ]
+  }
+ ],
+ "pres": [
+  {
+   "id": "p_work",
+   "group": "g_all",
+   "title": "Normal or high TSH: work up in order",
+   "lines": [
+    "2 · Ultrasound + TI-RADS (Thyroid Imaging Reporting and Data System): fine needle aspiration (FNA) if TR5 ≥ 1 cm · TR4 ≥ 1.5 cm · TR3 ≥ 2.5 cm",
+    "• smaller: repeat ultrasound for up to 5 years, stop if stable · TR1–2: nothing",
+    "3 · FNA: the Bethesda category picks the column ↓ · never a core or open biopsy for a nodule (seeding, bleeding)"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_ben",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "BENIGN (II)",
+   "lines": [
+    "malignancy risk 2–7%"
+   ]
+  },
+  {
+   "id": "t_ind",
+   "cols": [
+    1,
+    1
+   ],
+   "title": "INDETERMINATE (I, III, IV)",
+   "lines": [
+    "malignancy risk 5–34%"
+   ]
+  },
+  {
+   "id": "t_mal",
+   "cols": [
+    2,
+    4
+   ],
+   "title": "SUSPICIOUS or MALIGNANT (V, VI): SURGERY",
+   "lines": [
+    "established or suspected cancer > 1 cm: hemithyroidectomy if low risk, total if high · node dissection if nodes"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "WORKUP",
+  "clue": "CLUES",
+  "inv": "NEXT",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "ben",
+   "colour": "teal",
+   "drop_label": "benign follicular nodule",
+   "head": [
+    [
+     [
+      "h",
+      "Benign nodule",
+      [
+       "multinodular goitre, cyst, Hashimoto: no atypia"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Colloid + sheets of follicular cells",
+      [
+       "• goitre: many nodules, usually euthyroid",
+       "• cyst: clear fluid, gone after aspiration"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Read it against the ultrasound",
+      [
+       "• TR3: clinical follow-up",
+       "• TR4: ultrasound surveillance ± repeat FNA",
+       "• TR5: REPEAT the FNA"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Surgery only if",
+      [
+       "• symptomatic: compressive or disfiguring",
+       "• worrisome or growing on ultrasound"
+      ]
+     ]
+    ]
+   ],
+   "drop_from": "t_ben"
+  },
+  {
+   "id": "fol",
+   "colour": "purple",
+   "drop_label": "follicular neoplasm",
+   "head": [
+    [
+     [
+      "h",
+      "Follicular neoplasm",
+      [
+       "adenoma or follicular carcinoma: microfollicles, scant colloid"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "FNA CAN'T tell them apart",
+      [
+       "same nuclei: only INVASION of capsule or vessels decides, on the resected nodule"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Non-diagnostic (I) or atypia (III)",
+      [
+       "→ REPEAT the FNA"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Weigh the rest",
+      [
+       "• risk factors, ultrasound, size, life expectancy",
+       "• molecular testing: costly, scarce"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Hemithyroidectomy",
+      [
+       "• adenoma: cured, no recurrence",
+       "• carcinoma: spreads by BLOOD"
+      ]
+     ]
+    ]
+   ],
+   "drop_from": "t_ind"
+  },
+  {
+   "id": "pap",
+   "colour": "blue",
+   "drop_label": "papillary",
+   "head": [
+    [
+     [
+      "h",
+      "Papillary carcinoma",
+      [
+       "85–90% · nuclear grooves, clearing, inclusions: DIAGNOSTIC on FNA"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Mostly women 40–60, often multifocal",
+      [
+       "a neck node may be the first sign: spreads by LYMPH"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Small, low risk: may WATCH",
+      [
+       "• < 2 cm, no extension, no nodes",
+       "• ultrasound every 6–12 months",
+       "• grows > 3 mm → surgery"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Surgery, then RAI by recurrence risk",
+      [
+       "• low: not routine (< 1 cm: no)",
+       "• intermediate: generally favoured",
+       "• high (gross extension, incomplete, metastases): yes"
+      ]
+     ]
+    ]
+   ],
+   "drop_from": "t_mal"
+  },
+  {
+   "id": "med",
+   "colour": "orange",
+   "drop_label": "medullary",
+   "head": [
+    [
+     [
+      "h",
+      "Medullary carcinoma",
+      [
+       "C cells · nests, not papillae · amyloid = calcitonin"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "25% hereditary: RET point mutation",
+      [
+       "multiple endocrine neoplasia (MEN) 2A, 2B"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "BEFORE surgery: look for MEN 2",
+      [
+       "• pheochromocytoma ~50%",
+       "• hyperparathyroidism 10–25% (2A)",
+       "• RET positive: test the family"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Surgery",
+      [
+       "• follow serum CALCITONIN for recurrence",
+       "~metastasizes often, poorer prognosis"
+      ]
+     ]
+    ]
+   ],
+   "drop_from": "t_mal"
+  },
+  {
+   "id": "ana",
+   "colour": "magenta",
+   "drop_label": "rapidly growing mass",
+   "head": [
+    [
+     [
+      "h",
+      "Anaplastic carcinoma or lymphoma",
+      [
+       "sheets of cells, no follicles: a differentiated cancer that progressed"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "bad",
+      "URGENT: rapidly growing, older",
+      [
+       "• short of breath: airway narrowing",
+       "• can't swallow · pain · lung, bone metastases"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Neck ultrasound + computed tomography (CT) for metastases",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · CORE biopsy + flow cytometry",
+      [
+       "marker panel needs tissue · ask for a rush"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Rarely resectable, no iodine uptake",
+      [
+       "• external beam radiotherapy",
+       "• BRAF mutation → targeted therapy"
+      ]
+     ]
+    ]
+   ],
+   "drop_from": "t_mal"
+  }
+ ],
+ "panels": [
+  {
+   "title": "After treatment",
+   "items": [
+    "ultrasound 6–12 months after, then periodically: the remaining lobe + neck nodes",
+    "biopsy a suspicious node > 8–10 mm in its smallest dimension"
+   ]
+  }
+ ]
+}

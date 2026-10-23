@@ -1,0 +1,368 @@
+{
+ "name": "acid base overview",
+ "title": "Acid-base decision chart: the arterial blood gas sorts acidemia into respiratory acidosis, anion gap metabolic acidosis or non-anion gap metabolic acidosis, and alkalemia into respiratory or metabolic alkalosis; each column gives the expected compensation, numbered workup (osmolar gap, urine anion gap, renin and aldosterone) and treatment, with the rules for sodium bicarbonate and for spotting two disorders at once",
+ "col_w": 238,
+ "root": {
+  "title": "Acid-base: ACIDEMIA or ALKALEMIA, and which value moved FIRST?",
+  "lines": [
+   "arterial blood gas (ABG): normal pH 7.35–7.45 · pCO2 = the lungs · HCO3 = the kidneys",
+   "anion gap (AG) = Na − (Cl + HCO3): normal 12, minus 3 for every 10 g/L albumin below 40",
+   "AG ↑ with a NORMAL pH and HCO3 → metabolic acidosis + metabolic alkalosis together"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ac",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "ACIDEMIA: pH < 7.35",
+   "lines": [
+    "pCO2 ↑ → RESPIRATORY · HCO3 ↓ → METABOLIC"
+   ]
+  },
+  {
+   "id": "g_al",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "ALKALEMIA: pH > 7.45",
+   "lines": [
+    "pCO2 ↓ → RESPIRATORY · HCO3 ↑ → METABOLIC"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_ma",
+   "cols": [
+    1,
+    2
+   ],
+   "title": "HCO3 ↓: METABOLIC acidosis · is the ANION GAP up?",
+   "lines": [
+    "expect pCO2 to fall 1 for every 1 HCO3 falls · off target → a SECOND disorder (aspirin: + respiratory alkalosis, pH > 7.45)",
+    "pH < 7.10 or HCO3 < 10–12 → give sodium bicarbonate (NaHCO3) · careful: it makes CO2 and adds Na"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "inv": "WORKUP",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "rac",
+   "colour": "teal",
+   "drop_label": "pCO2 ↑",
+   "head": [
+    [
+     [
+      "h",
+      "Respiratory acidosis",
+      [
+       "CO2 not exhaled: hypoventilation"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Acute or chronic? Per 10 pCO2 ↑, HCO3 rises",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "1 → ACUTE",
+      [
+       "cells buffer: trivial"
+      ]
+     ],
+     [
+      "w",
+      "4 → CHRONIC",
+      [
+       "the kidney, over days"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Address the underlying cause",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ag",
+   "colour": "orange",
+   "drop_from": "t_ma",
+   "drop_label": "AG ↑ (ΔAG > 0)",
+   "head": [
+    [
+     [
+      "h",
+      "Anion gap metabolic acidosis (AGMA)",
+      [
+       "acid + an UNMEASURED anion · MUDPILES"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · FIND THE SOURCE",
+      [
+       "• lactate",
+       "• ketones",
+       "• salicylates",
+       "• kidney function (uremia)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · OSMOLAR GAP",
+      [
+       "measured − (2 × Na + urea + glucose)",
+       "↑ → TOXIC ALCOHOL: methanol, ethylene glycol"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Diabetic ketoacidosis → INSULIN",
+      [
+       "no buffer needed"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Methanol, ethylene glycol",
+      [
+       "• FOMEPIZOLE, or ethanol if unavailable",
+       "• often HEMODIALYSIS too"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Aspirin → HEMODIALYSIS",
+      [
+       "no antidote"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "nag",
+   "colour": "purple",
+   "drop_from": "t_ma",
+   "drop_label": "AG normal",
+   "head": [
+    [
+     [
+      "h",
+      "Non-anion gap metabolic acidosis (NAGMA)",
+      [
+       "HCO3 LOST, or acid NOT excreted"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · History",
+      [
+       "• diarrhea",
+       "• drugs that block aldosterone: ACE inhibitors, ARBs, K-sparing diuretics",
+       "• carbonic anhydrase inhibitors"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Urine anion gap (Na + K − Cl) + urine pH",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "NEGATIVE · pH < 5.5",
+      [
+       "NH4 made: GI loss or PROXIMAL renal tubular acidosis (RTA, type II)"
+      ]
+     ],
+     [
+      "w",
+      "POSITIVE",
+      [
+       "little NH4: DISTAL RTA",
+       "• K ↓ type I",
+       "• K ↑ type IV"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Address the underlying cause",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ral",
+   "colour": "blue",
+   "drop_label": "pCO2 ↓",
+   "head": [
+    [
+     [
+      "h",
+      "Respiratory alkalosis",
+      [
+       "too much CO2 exhaled: hyperventilation"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Acute or chronic? Per 10 pCO2 ↓, HCO3 falls",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 → ACUTE",
+      [
+       "cells buffer"
+      ]
+     ],
+     [
+      "w",
+      "4 → CHRONIC",
+      [
+       "RARE: liver failure, anoxic brain, pregnancy"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Address the underlying cause",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mal",
+   "colour": "magenta",
+   "drop_label": "HCO3 ↑",
+   "head": [
+    [
+     [
+      "h",
+      "Metabolic alkalosis",
+      [
+       "too much ALDOSTERONE activity · K often ↓",
+       "expect pCO2 ↑ 7 per 10 HCO3 ↑"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Aldosterone ↑: what is RENIN doing?",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "Renin ↓ · PRIMARY",
+      [
+       "• hypertension",
+       "• Conn syndrome, congenital adrenal hyperplasia"
+      ]
+     ],
+     [
+      "w",
+      "Renin ↑ · SECONDARY",
+      [
+       "• extracellular fluid (ECF) LOW",
+       "• vomiting, diuretics, Bartter, Gitelman"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Urine Cl < 10 → SECONDARY",
+      [
+       "unless on diuretics"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "ECF LOW: NaCl + KCl",
+      [
+       "low K keeps the alkalosis going"
+      ]
+     ],
+     [
+      "ok",
+      "ECF HIGH + high BP",
+      [
+       "BLOCK aldosterone"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

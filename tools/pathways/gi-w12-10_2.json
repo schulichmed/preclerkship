@@ -1,0 +1,1025 @@
+{
+ "name": "jaundice overview",
+ "width": 1686,
+ "title": "Jaundice sorted by where bilirubin is held up: pre-hepatic hemolysis, hepatic problems of conjugation (Gilbert, Crigler-Najjar, newborn jaundice), excretion (Dubin-Johnson, Rotor) or intrahepatic cholestasis, and post-hepatic obstruction or biliary atresia; urine bilirubin and the reticulocyte count make the first splits, then ultrasound, MRCP, ERCP or PTC image and relieve an obstruction",
+ "kinds": {
+  "hem_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hem_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "hem_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "gil_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gil_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "gil_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "neo_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "neo_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "neo_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "dj_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dj_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "dj_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "ihc_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ihc_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ihc_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "obs_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "obs_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "obs_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ba_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ba_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "ba_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 408,
+   "w": 224,
+   "h": 1020,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 294,
+   "y": 408,
+   "w": 224,
+   "h": 1020,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 520,
+   "y": 408,
+   "w": 224,
+   "h": 1020,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 746,
+   "y": 408,
+   "w": 224,
+   "h": 1020,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 972,
+   "y": 408,
+   "w": 224,
+   "h": 1020,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1226,
+   "y": 408,
+   "w": 224,
+   "h": 1020,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1452,
+   "y": 408,
+   "w": 224,
+   "h": 1020,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 552,
+   "h": 134,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 726,
+   "h": 302,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1068,
+   "h": 352,
+   "text": "CAUSES · MANAGE"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 478,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Jaundice: is the bilirubin held up BEFORE, IN or AFTER the liver?",
+   "lines": [
+    "bilirubin > 17.1 μmol/L = hyperbilirubinemia · > 51.3 = visible jaundice (sclera first)",
+    "1 · bilirubin in the URINE? NO → UNCONJUGATED (indirect) · YES → CONJUGATED (direct)"
+   ]
+  },
+  {
+   "id": "g_pre",
+   "x": 45,
+   "y": 138,
+   "w": 214,
+   "h": 98,
+   "kind": "plain",
+   "title": "PRE-HEPATIC: too much made",
+   "lines": [
+    "unconjugated · RETICULOCYTES ↑"
+   ]
+  },
+  {
+   "id": "g_hep",
+   "x": 299,
+   "y": 138,
+   "w": 892,
+   "h": 98,
+   "kind": "plain",
+   "title": "HEPATIC: uptake, conjugation or excretion fails",
+   "lines": [
+    "ALT and AST ↑ = hepatocellular injury: ABNORMAL LIVER ENZYMES chart"
+   ]
+  },
+  {
+   "id": "g_post",
+   "x": 1231,
+   "y": 138,
+   "w": 440,
+   "h": 98,
+   "kind": "plain",
+   "title": "POST-HEPATIC: the ducts are blocked",
+   "lines": [
+    "conjugated · ALP + GGT ↑"
+   ]
+  },
+  {
+   "id": "t_unc",
+   "x": 299,
+   "y": 276,
+   "w": 440,
+   "h": 60,
+   "kind": "plain",
+   "title": "UNCONJUGATED · reticulocytes NORMAL",
+   "lines": [
+    "not hemolysis: conjugation is slow"
+   ]
+  },
+  {
+   "id": "t_con",
+   "x": 751,
+   "y": 276,
+   "w": 440,
+   "h": 60,
+   "kind": "plain",
+   "title": "CONJUGATED: what do ALP and GGT do?",
+   "lines": []
+  },
+  {
+   "id": "hem_head_0_0",
+   "x": 45,
+   "y": 416,
+   "w": 214,
+   "h": 96,
+   "kind": "hem_h",
+   "title": "Hemolysis",
+   "lines": [
+    "red cells destroyed → excess bilirubin"
+   ]
+  },
+  {
+   "id": "gil_head_0_0",
+   "x": 299,
+   "y": 416,
+   "w": 214,
+   "h": 96,
+   "kind": "gil_h",
+   "title": "Gilbert · Crigler-Najjar",
+   "lines": [
+    "hereditary: too little conjugating enzyme (UDP-glucuronosyltransferase)"
+   ]
+  },
+  {
+   "id": "neo_head_0_0",
+   "x": 525,
+   "y": 416,
+   "w": 214,
+   "h": 96,
+   "kind": "neo_h",
+   "title": "Newborn jaundice",
+   "lines": [
+    "over half of births; most settle alone"
+   ]
+  },
+  {
+   "id": "dj_head_0_0",
+   "x": 751,
+   "y": 416,
+   "w": 214,
+   "h": 96,
+   "kind": "dj_h",
+   "title": "Dubin-Johnson · Rotor",
+   "lines": [
+    "conjugated, but EXCRETION fails"
+   ]
+  },
+  {
+   "id": "ihc_head_0_0",
+   "x": 977,
+   "y": 416,
+   "w": 214,
+   "h": 96,
+   "kind": "ihc_h",
+   "title": "Intrahepatic cholestasis",
+   "lines": [
+    "the liver secretes too little bile"
+   ]
+  },
+  {
+   "id": "obs_head_0_0",
+   "x": 1231,
+   "y": 416,
+   "w": 214,
+   "h": 96,
+   "kind": "obs_h",
+   "title": "Extrahepatic obstruction",
+   "lines": [
+    "the biliary tree is blocked"
+   ]
+  },
+  {
+   "id": "ba_head_0_0",
+   "x": 1457,
+   "y": 416,
+   "w": 214,
+   "h": 96,
+   "kind": "ba_h",
+   "title": "Biliary atresia",
+   "lines": [
+    "the extrahepatic ducts fail to form"
+   ]
+  },
+  {
+   "id": "hem_clue_0_0",
+   "x": 45,
+   "y": 552,
+   "w": 214,
+   "h": 134,
+   "kind": "hem_t",
+   "title": "No bilirubin in the urine",
+   "lines": [
+    "anemia with a high reticulocyte count"
+   ]
+  },
+  {
+   "id": "gil_clue_0_0",
+   "x": 299,
+   "y": 552,
+   "w": 214,
+   "h": 134,
+   "kind": "gil_t",
+   "title": "Isolated unconjugated rise",
+   "lines": [
+    "otherwise well"
+   ]
+  },
+  {
+   "id": "neo_clue_0_0",
+   "x": 525,
+   "y": 552,
+   "w": 214,
+   "h": 134,
+   "kind": "neo_t",
+   "title": "WHEN did it start?",
+   "lines": [
+    "• physiologic: red cell turnover after birth",
+    "• breastFEEDING: EARLY, days 2-3",
+    "• breastMILK: LATE, days 6-14"
+   ]
+  },
+  {
+   "id": "dj_clue_0_0",
+   "x": 751,
+   "y": 552,
+   "w": 214,
+   "h": 134,
+   "kind": "dj_t",
+   "title": "Liver enzymes NORMAL",
+   "lines": [
+    "hereditary"
+   ]
+  },
+  {
+   "id": "ihc_clue_0_0",
+   "x": 977,
+   "y": 552,
+   "w": 214,
+   "h": 134,
+   "kind": "ihc_t",
+   "title": "A new drug? Pregnant? A child?",
+   "lines": []
+  },
+  {
+   "id": "obs_clue_0_0",
+   "x": 1231,
+   "y": 552,
+   "w": 214,
+   "h": 134,
+   "kind": "obs_t",
+   "title": "Pain + fever, or PAINLESS?",
+   "lines": [
+    "• stones, cholangitis: GALLSTONE chart",
+    "• painless + weight loss: PANCREATIC chart"
+   ]
+  },
+  {
+   "id": "ba_clue_0_0",
+   "x": 1457,
+   "y": 552,
+   "w": 214,
+   "h": 134,
+   "kind": "ba_t",
+   "title": "Jaundice past 2 WEEKS",
+   "lines": [
+    "• PALE stools, dark urine",
+    "• big liver"
+   ]
+  },
+  {
+   "id": "hem_inv_0_0",
+   "x": 45,
+   "y": 726,
+   "w": 214,
+   "h": 131,
+   "kind": "hem_w",
+   "title": "1 · Reticulocytes ↑, blood film",
+   "lines": []
+  },
+  {
+   "id": "hem_inv_1_0",
+   "x": 45,
+   "y": 879,
+   "w": 214,
+   "h": 149,
+   "kind": "hem_t",
+   "title": "2 · COOMBS (antiglobulin) test",
+   "lines": [
+    "autoimmune or not?"
+   ]
+  },
+  {
+   "id": "gil_inv_0_0",
+   "x": 299,
+   "y": 726,
+   "w": 214,
+   "h": 130,
+   "kind": "gil_w",
+   "title": "1 · Family history",
+   "lines": []
+  },
+  {
+   "id": "gil_inv_1_0",
+   "x": 299,
+   "y": 878,
+   "w": 214,
+   "h": 150,
+   "kind": "gil_w",
+   "title": "2 · Liver tests, genetic studies",
+   "lines": []
+  },
+  {
+   "id": "neo_inv_0_0",
+   "x": 525,
+   "y": 726,
+   "w": 214,
+   "h": 131,
+   "kind": "neo_w",
+   "title": "1 · Bilirubin on a nomogram",
+   "lines": [
+    "e.g. BiliTool"
+   ]
+  },
+  {
+   "id": "neo_inv_1_0",
+   "x": 525,
+   "y": 879,
+   "w": 214,
+   "h": 149,
+   "kind": "bad",
+   "title": "RAPIDLY rising > 340 μmol/L",
+   "lines": [
+    "KERNICTERUS risk: lethargy, poor suck, hypotonia → seizures"
+   ]
+  },
+  {
+   "id": "dj_inv_0_0",
+   "x": 751,
+   "y": 726,
+   "w": 214,
+   "h": 302,
+   "kind": "dj_w",
+   "title": "1 · Family history, genetic studies, histology",
+   "lines": []
+  },
+  {
+   "id": "ihc_inv_0_0",
+   "x": 977,
+   "y": 726,
+   "w": 214,
+   "h": 302,
+   "kind": "ihc_w",
+   "title": "1 · Duct imaging as for obstruction →",
+   "lines": []
+  },
+  {
+   "id": "obs_inv_0_0",
+   "x": 1231,
+   "y": 726,
+   "w": 214,
+   "h": 62,
+   "kind": "obs_w",
+   "title": "1 · Ultrasound of the bile ducts",
+   "lines": []
+  },
+  {
+   "id": "obs_inv_1_0",
+   "x": 1231,
+   "y": 810,
+   "w": 214,
+   "h": 98,
+   "kind": "obs_t",
+   "title": "2 · MRCP: DIAGNOSTIC only",
+   "lines": [
+    "magnetic resonance cholangiopancreatography"
+   ]
+  },
+  {
+   "id": "obs_inv_2_0",
+   "x": 1231,
+   "y": 930,
+   "w": 214,
+   "h": 98,
+   "kind": "obs_t",
+   "title": "3 · ERCP: diagnostic + THERAPEUTIC",
+   "lines": [
+    "endoscopic retrograde cholangiopancreatography"
+   ]
+  },
+  {
+   "id": "ba_inv_0_0",
+   "x": 1457,
+   "y": 726,
+   "w": 214,
+   "h": 302,
+   "kind": "bad",
+   "title": "1 · Total + direct bilirubin NOW",
+   "lines": [
+    "direct > 20% of total → refer"
+   ]
+  },
+  {
+   "id": "hem_tx_0_0",
+   "x": 45,
+   "y": 1068,
+   "w": 214,
+   "h": 147,
+   "kind": "bad",
+   "title": "Coombs +",
+   "lines": [
+    "• Rh disease",
+    "• ABO disease of the newborn"
+   ]
+  },
+  {
+   "id": "hem_tx_1_0",
+   "x": 45,
+   "y": 1237,
+   "w": 214,
+   "h": 183,
+   "kind": "warn",
+   "title": "Coombs −",
+   "lines": [
+    "• membrane: spherocytosis",
+    "• enzyme: G6PD",
+    "• thalassemia, sickle cell",
+    "• drugs"
+   ]
+  },
+  {
+   "id": "gil_tx_0_0",
+   "x": 299,
+   "y": 1068,
+   "w": 214,
+   "h": 174,
+   "kind": "ok",
+   "title": "Gilbert",
+   "lines": [
+    "milder: 10-30% of enzyme activity left"
+   ]
+  },
+  {
+   "id": "gil_tx_1_0",
+   "x": 299,
+   "y": 1264,
+   "w": 214,
+   "h": 156,
+   "kind": "warn",
+   "title": "Crigler-Najjar",
+   "lines": [
+    "rare: enzyme absent or reduced"
+   ]
+  },
+  {
+   "id": "neo_tx_0_0",
+   "x": 525,
+   "y": 1068,
+   "w": 214,
+   "h": 109,
+   "kind": "ok",
+   "title": "1 · PHOTOTHERAPY",
+   "lines": [
+    "the standard treatment"
+   ]
+  },
+  {
+   "id": "neo_tx_1_0",
+   "x": 525,
+   "y": 1199,
+   "w": 214,
+   "h": 91,
+   "kind": "bad",
+   "title": "2 · Exchange transfusion",
+   "lines": []
+  },
+  {
+   "id": "neo_tx_2_0",
+   "x": 525,
+   "y": 1312,
+   "w": 214,
+   "h": 109,
+   "kind": "warn",
+   "title": "Still jaundiced > 2 WEEKS",
+   "lines": [
+    "→ BILIARY ATRESIA column"
+   ]
+  },
+  {
+   "id": "dj_tx_0_0",
+   "x": 751,
+   "y": 1068,
+   "w": 214,
+   "h": 165,
+   "kind": "warn",
+   "title": "Dubin-Johnson",
+   "lines": [
+    "• BLACK liver",
+    "• gallbladder NOT seen"
+   ]
+  },
+  {
+   "id": "dj_tx_1_0",
+   "x": 751,
+   "y": 1255,
+   "w": 214,
+   "h": 165,
+   "kind": "ok",
+   "title": "Rotor",
+   "lines": [
+    "• normal liver",
+    "• gallbladder seen"
+   ]
+  },
+  {
+   "id": "ihc_tx_0_0",
+   "x": 977,
+   "y": 1068,
+   "w": 214,
+   "h": 114,
+   "kind": "warn",
+   "title": "DRUGS",
+   "lines": [
+    "• oral contraceptives",
+    "• anabolic steroids",
+    "• warfarin",
+    "• prochlorperazine"
+   ]
+  },
+  {
+   "id": "ihc_tx_1_0",
+   "x": 977,
+   "y": 1204,
+   "w": 214,
+   "h": 98,
+   "kind": "bad",
+   "title": "PREGNANCY, 3rd trimester",
+   "lines": [
+    "intense itch · preterm birth, meconium, stillbirth"
+   ]
+  },
+  {
+   "id": "ihc_tx_2_0",
+   "x": 977,
+   "y": 1324,
+   "w": 214,
+   "h": 96,
+   "kind": "ihc_w",
+   "title": "Children",
+   "lines": [
+    "• Alagille: too few ducts",
+    "• progressive familial intrahepatic cholestasis: transporter defects"
+   ]
+  },
+  {
+   "id": "obs_tx_0_0",
+   "x": 1231,
+   "y": 1068,
+   "w": 214,
+   "h": 155,
+   "kind": "ok",
+   "title": "1 · RELIEVE it at ERCP",
+   "lines": [
+    "• sphincterotomy",
+    "• stone removal",
+    "• stent"
+   ]
+  },
+  {
+   "id": "obs_tx_1_0",
+   "x": 1231,
+   "y": 1245,
+   "w": 214,
+   "h": 175,
+   "kind": "warn",
+   "title": "2 · ERCP failed or not possible → PTC",
+   "lines": [
+    "percutaneous transhepatic cholangiogram: best for the PROXIMAL tree"
+   ]
+  },
+  {
+   "id": "ba_tx_0_0",
+   "x": 1457,
+   "y": 1068,
+   "w": 214,
+   "h": 175,
+   "kind": "bad",
+   "title": "DO NOT MISS: early surgery",
+   "lines": [
+    "KASAI procedure"
+   ]
+  },
+  {
+   "id": "ba_tx_1_0",
+   "x": 1457,
+   "y": 1265,
+   "w": 214,
+   "h": 155,
+   "kind": "warn",
+   "title": "Then liver transplant",
+   "lines": [
+    "its #1 cause in children"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_pre",
+   "path": "M858.0 88V113H152.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_hep",
+   "path": "M858.0 88V113H745.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_post",
+   "path": "M858.0 88V113H1451.0V138"
+  },
+  {
+   "from": "g_hep",
+   "to": "t_unc",
+   "from_dx": -226
+  },
+  {
+   "from": "g_hep",
+   "to": "t_con",
+   "from_dx": 226
+  },
+  {
+   "from": "hem_inv_0_0",
+   "to": "hem_inv_1_0"
+  },
+  {
+   "from": "gil_inv_0_0",
+   "to": "gil_inv_1_0"
+  },
+  {
+   "from": "neo_inv_0_0",
+   "to": "neo_inv_1_0"
+  },
+  {
+   "from": "obs_inv_0_0",
+   "to": "obs_inv_1_0"
+  },
+  {
+   "from": "obs_inv_1_0",
+   "to": "obs_inv_2_0"
+  },
+  {
+   "from": "hem_tx_0_0",
+   "to": "hem_tx_1_0"
+  },
+  {
+   "from": "gil_tx_0_0",
+   "to": "gil_tx_1_0"
+  },
+  {
+   "from": "neo_tx_0_0",
+   "to": "neo_tx_1_0"
+  },
+  {
+   "from": "neo_tx_1_0",
+   "to": "neo_tx_2_0"
+  },
+  {
+   "from": "dj_tx_0_0",
+   "to": "dj_tx_1_0"
+  },
+  {
+   "from": "ihc_tx_0_0",
+   "to": "ihc_tx_1_0"
+  },
+  {
+   "from": "ihc_tx_1_0",
+   "to": "ihc_tx_2_0"
+  },
+  {
+   "from": "obs_tx_0_0",
+   "to": "obs_tx_1_0"
+  },
+  {
+   "from": "ba_tx_0_0",
+   "to": "ba_tx_1_0"
+  },
+  {
+   "from": "hem_head_0_0",
+   "to": "hem_clue_0_0"
+  },
+  {
+   "from": "hem_clue_0_0",
+   "to": "hem_inv_0_0"
+  },
+  {
+   "from": "hem_inv_1_0",
+   "to": "hem_tx_0_0"
+  },
+  {
+   "from": "g_pre",
+   "to": "hem_head_0_0",
+   "from_dx": 0,
+   "label": "retics ↑",
+   "label_at": [
+    152.0,
+    376
+   ]
+  },
+  {
+   "from": "gil_head_0_0",
+   "to": "gil_clue_0_0"
+  },
+  {
+   "from": "gil_clue_0_0",
+   "to": "gil_inv_0_0"
+  },
+  {
+   "from": "gil_inv_1_0",
+   "to": "gil_tx_0_0"
+  },
+  {
+   "from": "t_unc",
+   "to": "gil_head_0_0",
+   "from_dx": -113,
+   "label": "hereditary",
+   "label_at": [
+    406.0,
+    376
+   ]
+  },
+  {
+   "from": "neo_head_0_0",
+   "to": "neo_clue_0_0"
+  },
+  {
+   "from": "neo_clue_0_0",
+   "to": "neo_inv_0_0"
+  },
+  {
+   "from": "neo_inv_1_0",
+   "to": "neo_tx_0_0"
+  },
+  {
+   "from": "t_unc",
+   "to": "neo_head_0_0",
+   "from_dx": 113,
+   "label": "newborn",
+   "label_at": [
+    632.0,
+    376
+   ]
+  },
+  {
+   "from": "dj_head_0_0",
+   "to": "dj_clue_0_0"
+  },
+  {
+   "from": "dj_clue_0_0",
+   "to": "dj_inv_0_0"
+  },
+  {
+   "from": "dj_inv_0_0",
+   "to": "dj_tx_0_0"
+  },
+  {
+   "from": "t_con",
+   "to": "dj_head_0_0",
+   "from_dx": -113,
+   "label": "NORMAL",
+   "label_at": [
+    858.0,
+    376
+   ]
+  },
+  {
+   "from": "ihc_head_0_0",
+   "to": "ihc_clue_0_0"
+  },
+  {
+   "from": "ihc_clue_0_0",
+   "to": "ihc_inv_0_0"
+  },
+  {
+   "from": "ihc_inv_0_0",
+   "to": "ihc_tx_0_0"
+  },
+  {
+   "from": "t_con",
+   "to": "ihc_head_0_0",
+   "from_dx": 113,
+   "label": "ALP + GGT ↑",
+   "label_at": [
+    1084.0,
+    376
+   ]
+  },
+  {
+   "from": "obs_head_0_0",
+   "to": "obs_clue_0_0"
+  },
+  {
+   "from": "obs_clue_0_0",
+   "to": "obs_inv_0_0"
+  },
+  {
+   "from": "obs_inv_2_0",
+   "to": "obs_tx_0_0"
+  },
+  {
+   "from": "g_post",
+   "to": "obs_head_0_0",
+   "from_dx": -113,
+   "label": "stone, stricture, tumour",
+   "label_at": [
+    1338.0,
+    376
+   ]
+  },
+  {
+   "from": "ba_head_0_0",
+   "to": "ba_clue_0_0"
+  },
+  {
+   "from": "ba_clue_0_0",
+   "to": "ba_inv_0_0"
+  },
+  {
+   "from": "ba_inv_0_0",
+   "to": "ba_tx_0_0"
+  },
+  {
+   "from": "g_post",
+   "to": "ba_head_0_0",
+   "from_dx": 113,
+   "label": "newborn",
+   "label_at": [
+    1564.0,
+    376
+   ]
+  }
+ ],
+ "panels": []
+}

@@ -1,0 +1,390 @@
+{
+ "name": "hematuria and proteinuria overview",
+ "title": "Hematuria and proteinuria decision chart: proteinuria is quantified, then sorted by pattern into transient, orthostatic or persistent glomerular proteinuria; hematuria is confirmed on microscopy, then sorted into glomerular or structural; each column gives the clues, numbered workup and next step, with rapidly progressive glomerulonephritis flagged as the emergency",
+ "col_w": 236,
+ "root": {
+  "title": "Protein or blood in the urine: is it BENIGN, the GLOMERULUS, or the urinary TRACT?",
+  "lines": [
+   "for many kidney diseases, the AMOUNT of protein is prognostic"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_pr",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "PROTEINURIA: normal < 150 mg/day (albumin < 30)",
+   "lines": [
+    "1 · QUANTIFY: 24-hour urine (gold standard) or albumin-creatinine ratio (ACR)",
+    "• micro: ACR 2–20, dipstick NEGATIVE",
+    "• macro: ACR ≥ 20, dipstick +",
+    "• dipstick misses light chains: MULTIPLE MYELOMA → serum + urine electrophoresis"
+   ]
+  },
+  {
+   "id": "g_he",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "HEMATURIA: ≥ 3 red cells per high-power field",
+   "lines": [
+    "1 · Ask about ANTICOAGULANTS and bleeding disorders",
+    "2 · MICROSCOPY: a dipstick also reacts to hemoglobin + myoglobin; red urine may be beets or phenazopyridine"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_pr",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "2 · PATTERN: does it come and go, or PERSIST?",
+   "lines": []
+  },
+  {
+   "id": "t_he",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "3 · RED CELL SHAPE, casts and protein",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "CLUES",
+  "inv": "WORKUP",
+  "tx": "THEN"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "tr",
+   "colour": "teal",
+   "drop_from": "t_pr",
+   "drop_label": "comes and goes",
+   "head": [
+    [
+     [
+      "h",
+      "Transient proteinuria",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "After a trigger",
+      [
+       "• fever",
+       "• vigorous exercise",
+       "• stress"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Repeat at BASELINE: gone",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "NOT clinically significant",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "or",
+   "colour": "blue",
+   "drop_from": "t_pr",
+   "drop_label": "UPRIGHT only",
+   "head": [
+    [
+     [
+      "h",
+      "Orthostatic proteinuria",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "ADOLESCENT",
+      [
+       "often thin, young women"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "SPLIT collection",
+      [
+       "16 h awake vs 8 h asleep: protein only when UPRIGHT"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "BENIGN: resolves with time",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "gp",
+   "colour": "purple",
+   "drop_from": "t_pr",
+   "drop_label": "PERSISTS · albumin",
+   "head": [
+    [
+     [
+      "h",
+      "Glomerular proteinuria",
+      [
+       "glomerulus LEAKS albumin"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "HEAVY proteinuria",
+      [
+       "• diabetes",
+       "• nephrotic or nephritic syndrome"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Autoimmune screen",
+      [
+       "• complement C3, C4, CH50",
+       "• anti-neutrophil cytoplasmic antibody (ANCA)",
+       "• anti-glomerular basement membrane (GBM)",
+       "• antinuclear (ANA), anti-DNA, anti-streptolysin O",
+       "• serum + urine electrophoresis",
+       "• hepatitis B, C"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "NEPHROTIC: > 3.5 g/day",
+      [
+       "albumin ↓, edema, lipids ↑"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "CHILD",
+      [
+       "prednisone, no biopsy"
+      ]
+     ],
+     [
+      "warn",
+      "ADULT",
+      [
+       "BIOPSY"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "gh",
+   "colour": "magenta",
+   "drop_from": "t_he",
+   "drop_label": "DYSMORPHIC",
+   "head": [
+    [
+     [
+      "h",
+      "Glomerular hematuria",
+      [
+       "glomerulonephritis"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "≥ 70% DYSMORPHIC red cells",
+      [
+       "• RED CELL CASTS",
+       "• protein > 1 g/day"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Causes",
+      [
+       "• CHILD: IgA nephropathy, post-streptococcal, IgA vasculitis, hemolytic uremic syndrome",
+       "• ADULT: anti-GBM, lupus, ANCA vasculitis, endocarditis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Urea, creatinine, electrolytes, clotting (INR, PTT)",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · The same autoimmune screen",
+      [
+       "← glomerular proteinuria"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Renal biopsy if indicated",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Function FALLING FAST = RPGN",
+      [
+       "rapidly progressive glomerulonephritis: EMERGENCY · see ACUTE KIDNEY INJURY chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sh",
+   "colour": "orange",
+   "drop_from": "t_he",
+   "drop_label": "NORMAL shape",
+   "head": [
+    [
+     [
+      "h",
+      "Structural (urinary tract) hematuria",
+      [
+       "the MOST COMMON type"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "≥ 70% NORMAL red cells",
+      [
+       "• protein normal",
+       "• no casts"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Causes",
+      [
+       "• trauma, infection, stones",
+       "• CANCER: bladder, kidney",
+       "• prostate: benign hyperplasia, cancer, prostatitis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Prostate: rectal exam + prostate-specific antigen (PSA)",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Renal ultrasound or computed tomography (CT)",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Urine cytology",
+      [
+       "malignant cells"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "CYSTOSCOPY",
+      [
+       "bladder cancer, especially OLDER adults"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

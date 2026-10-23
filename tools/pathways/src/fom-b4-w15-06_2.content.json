@@ -1,0 +1,429 @@
+{
+ "name": "allergy overview",
+ "title": "Allergy decision chart: first decide whether this is anaphylaxis now (any one of three criteria, intramuscular epinephrine first); otherwise sort by trigger into allergic rhinitis, food allergy, drug (penicillin) allergy and venom allergy, each with clues, the test that decides it and management in order",
+ "col_w": 236,
+ "root": {
+  "title": "A suspected ALLERGIC reaction: is it ANAPHYLAXIS right now? If not, WHAT was the trigger?",
+  "lines": [
+   "the HISTORY is the best allergy test · an oral CHALLENGE is the gold standard",
+   "skin prick or intradermal test POSITIVE = wheal ≥ 3 mm larger than the saline control"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_an",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "NOW: ANAPHYLAXIS?",
+   "lines": [
+    "sudden: minutes, almost always < 1 hour"
+   ]
+  },
+  {
+   "id": "g_tr",
+   "cols": [
+    1,
+    4
+   ],
+   "title": "Not now: WHAT was the trigger?",
+   "lines": [
+    "IMMEDIATE (type I, IgE) or DELAYED (types II–IV: antibody, immune complex, T cell)?"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "CLUES",
+  "inv": "TEST",
+  "tx": "MANAGE"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "an",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Anaphylaxis",
+      [
+       "mean time to ARREST: drug 5 · sting 15 · food 30 min"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "ANY ONE of 3",
+      [
+       "• skin / mucosa + breathing OR ↓ BP",
+       "• ≥ 2 systems after a LIKELY allergen (skin, breathing, BP, gut)",
+       "• ↓ BP after a KNOWN allergen: adult systolic < 90 or a > 30% fall"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "No test: a CLINICAL call",
+      [
+       "over 1 hour after exposure? probably not anaphylaxis, or the wrong allergen"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · Remove trigger + INTRAMUSCULAR EPINEPHRINE",
+      [
+       "• 0.01 mg/kg of 1:1000, max 0.3 mg",
+       "• repeat every 5–15 min"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · ONLY THEN the rest",
+      [
+       "O2, fluids, antihistamine, salbutamol, steroids"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rh",
+   "colour": "teal",
+   "drop_from": "g_tr",
+   "drop_label": "AIRBORNE",
+   "head": [
+    [
+     [
+      "h",
+      "Allergic rhinitis",
+      [
+       "onset usually before age 30"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "ITCH: nose + eyes",
+      [
+       "• sneezing, congestion, watery red eyes",
+       "• seasonal: pollen, mould · year-round: dust mites, pets"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Probably NOT allergic",
+      [
+       "• NO response to allergy treatment",
+       "• no itch: vasomotor",
+       "• anosmia: nasal polyps",
+       "• fever, sore throat: infection"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Skin prick or serum IgE (RAST)",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · AVOID the allergen",
+      [
+       "• mites: hot-wash sheets weekly",
+       "• pollen: A/C, windows shut",
+       "• pets: out of the home"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · 2nd-gen ANTIHISTAMINE + daily NASAL STEROID",
+      [
+       "• cetirizine, loratadine; NOT diphenhydramine",
+       "• then immunotherapy (subcutaneous or sublingual)"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "NO decongestant sprays",
+      [
+       "dependence"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "fo",
+   "colour": "orange",
+   "drop_from": "g_tr",
+   "drop_label": "A FOOD",
+   "head": [
+    [
+     [
+      "h",
+      "Food allergy",
+      [
+       "mostly children"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Minutes, < 1 h after the food",
+      [
+       "• hives, wheeze, vomiting, ↓ BP",
+       "• peanut, tree nut, milk, egg, wheat, soy, fish",
+       "• HOURS later + vomiting / diarrhea: delayed, non-IgE"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Or not allergy at all?",
+      [
+       "• intolerance: a known non-immune cause (lactose)",
+       "• aversion: not reproduced when blinded"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Skin prick, serum IgE → ORAL FOOD CHALLENGE",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · AVOID + carry EPINEPHRINE",
+      [
+       "EpiPen: blue to the sky, orange to the thigh"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Oral immunotherapy",
+      [
+       "tiny rising doses · baked milk + egg"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "PREVENT: allergenic foods EARLY (4–6 months)",
+      [
+       "• NOT rubbed on the skin",
+       "• no honey for infants"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dr",
+   "colour": "purple",
+   "drop_from": "g_tr",
+   "drop_label": "A DRUG",
+   "head": [
+    [
+     [
+      "h",
+      "Drug (penicillin) allergy",
+      [
+       "> 90% who report it are NOT allergic"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "IMMEDIATE or DELAYED?",
+      [
+       "• immediate (type I): hives, anaphylaxis",
+       "• delayed (types II–IV): cytopenias, serum sickness, blistering (Stevens-Johnson)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Why the label is often wrong",
+      [
+       "• another cause: the INFECTION, another drug, intolerance",
+       "• 80% lose it after 10 years' avoidance"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "ok",
+      "1 · LOW-risk history → DIRECT oral challenge",
+      [
+       "GI symptoms only, itch without rash, family history only, remote vague reaction"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Immediate → SKIN TEST first",
+      [
+       "• > 95% negative predictive value",
+       "• then challenge: full dose, or 10% then 90%"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "NEVER challenge a SEVERE type II–IV reaction",
+      [
+       "e.g. blistering with mucosa: avoid for LIFE"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "True type I: DESENSITIZE",
+      [
+       "if the drug is needed"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ve",
+   "colour": "brown",
+   "drop_from": "g_tr",
+   "drop_label": "A STING",
+   "head": [
+    [
+     [
+      "h",
+      "Venom allergy",
+      [
+       "yellowjackets sting most"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Which reaction?",
+      [
+       "• LARGE LOCAL: > 10 cm over 1–2 days",
+       "• CUTANEOUS only: hives away from the sting (children)",
+       "• EXTRACUTANEOUS: airway, ↓ BP, gut = anaphylaxis"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Worse with",
+      [
+       "β-blockers, ACE inhibitors, older age, frequent stings, mast cell disorder"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Skin prick testing",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · AVOID stings",
+      [
+       "• no eating outdoors, bare feet",
+       "• cover trash, check for nests"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "EXTRACUTANEOUS → EpiPen REQUIRED",
+      [
+       "+ VENOM IMMUNOTHERAPY (cuts sting deaths)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Cutaneous only: NO immunotherapy",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

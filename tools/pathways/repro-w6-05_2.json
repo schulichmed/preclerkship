@@ -1,0 +1,21 @@
+{
+ "name": "abnormal labour pathway 2",
+ "title": "Labour too slow (dystocia): cesarean section if the baby is too big to fit, otherwise augment with ARM then IV oxytocin, and cesarean section if labour still does not progress",
+ "nodes": [
+  {"id": "A", "x": 10, "y": 10, "w": 140, "h": 64, "kind": "plain", "title": "Labour too slow", "lines": ["(dystocia)"]},
+  {"id": "B", "x": 200, "y": 10, "w": 150, "h": 64, "kind": "plain", "title": "Baby too big", "lines": ["to fit (CPD)?"]},
+  {"id": "C", "x": 400, "y": 10, "w": 170, "h": 64, "kind": "lo", "title": "Augment", "lines": ["ARM, then IV oxytocin"]},
+  {"id": "D", "x": 620, "y": 10, "w": 130, "h": 64, "kind": "plain", "title": "Progressing?", "lines": []},
+  {"id": "V", "x": 800, "y": 10, "w": 110, "h": 64, "kind": "ok", "title": "Vaginal birth", "lines": []},
+  {"id": "CS1", "x": 195, "y": 130, "w": 160, "kind": "warn", "title": "Cesarean section", "lines": []},
+  {"id": "CS2", "x": 605, "y": 130, "w": 160, "kind": "warn", "title": "Cesarean section", "lines": []}
+ ],
+ "edges": [
+  {"from": "A", "to": "B", "from_side": "right", "to_side": "left"},
+  {"from": "B", "to": "CS1", "label": "yes", "label_at": [295, 107]},
+  {"from": "B", "to": "C", "from_side": "right", "to_side": "left", "label": "no", "label_at": [375, 34]},
+  {"from": "C", "to": "D", "from_side": "right", "to_side": "left"},
+  {"from": "D", "to": "CS2", "label": "no", "label_at": [705, 107]},
+  {"from": "D", "to": "V", "from_side": "right", "to_side": "left", "label": "yes", "label_at": [775, 34]}
+ ]
+}

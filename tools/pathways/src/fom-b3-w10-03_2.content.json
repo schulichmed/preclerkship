@@ -1,0 +1,312 @@
+{
+ "name": "adult coagulopathy overview",
+ "title": "Adult coagulopathy decision chart: which clotting time is long (PT/INR only, aPTT only, or both) points to the extrinsic, intrinsic or common pathway; a mixing study splits a factor deficiency from an inhibitor, and the common-pathway causes split into liver disease and vitamin K lack or anticoagulants; each column gives causes and clues, how to confirm, and what to do next",
+ "col_w": 236,
+ "root": {
+  "title": "Adult who bleeds: WHICH clotting time is long, prothrombin time (PT/INR) or activated partial thromboplastin time (aPTT)?",
+  "lines": [
+   "adults: a MILD inherited form missed in childhood, or ACQUIRED (acquired hemophilia A, acquired von Willebrand disease (vWD), platelet disorders)",
+   "PT/INR and aPTT both normal → BLEEDING PATIENT chart"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_pt",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "PT/INR ↑ ONLY: EXTRINSIC",
+   "lines": [
+    "factor VII"
+   ]
+  },
+  {
+   "id": "g_aptt",
+   "cols": [
+    1,
+    2
+   ],
+   "title": "aPTT ↑ ONLY: INTRINSIC (XII, XI, IX, VIII)",
+   "lines": [
+    "MIXING STUDY: patient + normal plasma 1:1, repeat the aPTT"
+   ]
+  },
+  {
+   "id": "g_both",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "BOTH ↑: COMMON pathway (X, V, II, I)",
+   "lines": [
+    "• disseminated intravascular coagulation (DIC) → THROMBOCYTOPENIA chart",
+    "• single deficiency of X, V, II or fibrinogen"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "CAUSES & CLUES",
+  "inv": "CONFIRM",
+  "tx": "NEXT"
+ },
+ "columns": [
+  {
+   "id": "f7",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Factor VII",
+      [
+       "shortest half-life (3–8 h)"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Causes",
+      [
+       "• warfarin, early: INR rises FIRST",
+       "• factor VII deficiency"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Factor VII level",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Warfarin → ANTICOAGULANTS chart",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "def",
+   "colour": "blue",
+   "drop_label": "CORRECTS",
+   "head": [
+    [
+     [
+      "h",
+      "Factor DEFICIENCY",
+      [
+       "normal plasma supplies the missing factor"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Bleeds",
+      [
+       "• hemophilia A (VIII), B (IX) → BLEEDING PATIENT chart",
+       "• factor XI (hemophilia C)",
+       "• vWD (low VIII)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Does NOT bleed",
+      [
+       "factor XII deficiency: long aPTT only"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Specific factor levels",
+      [
+       "± von Willebrand tests"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Hematology",
+      [
+       "no concentrate for that factor → plasma for bleeding or surgery"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "inh",
+   "colour": "purple",
+   "drop_label": "does NOT correct",
+   "head": [
+    [
+     [
+      "h",
+      "Factor INHIBITOR",
+      [
+       "antibody blocks the normal plasma's factors too"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Acquired hemophilia A",
+      [
+       "inhibitor to factor VIII (the commonest target)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Factor inhibitor testing",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Hematology",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "liv",
+   "colour": "olive",
+   "drop_label": "FVIII normal or ↑",
+   "head": [
+    [
+     [
+      "h",
+      "Severe liver disease",
+      [
+       "liver-made factors fall"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Factor VIII NORMAL or ↑",
+      [
+       "made by endothelium, not liver"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "May NOT bleed more",
+      [
+       "plasmin falls too"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Liver function tests",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Bleeding + INR ≥ 1.8 → plasma",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "vk",
+   "colour": "orange",
+   "drop_label": "drug or vitamin K",
+   "head": [
+    [
+     [
+      "h",
+      "Vitamin K lack or anticoagulant",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Causes",
+      [
+       "• vitamin K: malabsorption, long-term antibiotics",
+       "• warfarin (severe)",
+       "• high-dose heparin, newer anticoagulants"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Medication history",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Bleeding → reverse",
+      [
+       "prothrombin complex concentrate (PCC) + IV vitamin K: ANTICOAGULANTS chart"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

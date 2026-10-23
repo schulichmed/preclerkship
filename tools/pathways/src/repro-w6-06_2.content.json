@@ -1,0 +1,66 @@
+{
+ "name": "hemorrhagic shock overview",
+ "title": "Hemorrhagic shock: grade the loss from the vitals, where the pulse rises first and blood pressure holds through class II and falls only from class III, then treat in order: airway, breathing and circulation with help called, monitoring and bloods, two large-bore IVs and blood products up to a massive transfusion, stopping the cause, and throughout preventing the lethal triad of acidosis, hypothermia and coagulopathy",
+ "col_w": 232,
+ "root": {
+  "title": "A bleeding woman: is she in SHOCK, and what do I do first?",
+  "lines": [
+   "shock = tissue hypoxia; hemorrhagic: blood lost → ↓ preload → ↓ cardiac output",
+   "signs: tachycardia, hypotension, oliguria, confusion, tachypnea, cool clammy skin, acidosis, ↑ lactate"
+  ]
+ },
+ "groups": [
+  {"id": "g_rec", "cols": [0, 1], "title": "How much has she lost? Grade it from the VITALS", "lines": ["blood pressure is the LAST vital to move"]},
+  {"id": "g_tx", "cols": [2, 4], "title": "TREAT, in this order", "lines": ["call for help before anything else"]},
+  {"id": "g_all", "cols": [5, 5], "title": "THROUGHOUT", "lines": ["alongside every step"]}
+ ],
+ "sections": ["head", "one", "two"],
+ "row_names": {},
+ "columns": [
+  {
+   "id": "cmp", "colour": "teal", "drop_label": "pressure normal",
+   "head": [[["h", "Class I–II: up to 30% lost", ["up to 1500 mL"]]]],
+   "one": [
+    [["t", "Pulse rises FIRST", ["• I: < 100", "• II: 100–120, pulse pressure ↓"]]],
+    [["t", "Blood pressure still NORMAL", ["• urine: I > 30, II 20–30 mL/h", "• slightly to mildly anxious"]]]
+   ],
+   "two": [[["warn", "Young, post-partum: LOOKS WELL", ["her pregnancy-expanded blood volume hides a large loss"]]]]
+  },
+  {
+   "id": "dec", "colour": "orange", "drop_label": "pressure falls",
+   "head": [[["h", "Class III–IV: over 30% lost", ["over 1500 mL"]]]],
+   "one": [
+    [["t", "Pulse > 120, blood pressure FALLS", ["• III: 120–140", "• IV: > 140"]]],
+    [["t", "Urine and mind fail", ["• III: 5–15 mL/h, anxious, confused", "• IV: negligible, lethargic"]]]
+   ],
+   "two": [[["bad", "A low blood pressure is LATE", ["she has already lost 30–40% or more"]]]]
+  },
+  {
+   "id": "abc", "colour": "blue", "drop_label": "every one",
+   "head": [[["h", "1 · ABCs + call for HELP", ["airway, breathing, circulation"]]]],
+   "one": [[["w", "Monitor", ["• heart rate, blood pressure, breathing, oxygen saturation", "• arterial or venous blood gas", "• Foley catheter to a urometer"]]]],
+   "two": [[["w", "Send bloods", ["• complete blood count, group and screen", "• clotting times, fibrinogen", "• creatinine"]]]]
+  },
+  {
+   "id": "res", "colour": "purple", "drop_label": "replace volume",
+   "head": [[["h", "2 · Resuscitate", ["replace what she has lost"]]]],
+   "one": [[["ok", "2 large-bore IVs + oxygen", ["crystalloid or colloid"]]]],
+   "two": [[["ok", "Blood products", ["• packed red cells, platelets", "• cryoprecipitate, fresh frozen plasma", "• consider MASSIVE TRANSFUSION protocol"]]]]
+  },
+  {
+   "id": "cau", "colour": "magenta", "drop_label": "find the cause",
+   "head": [[["h", "3 · Stop the bleeding", ["stop it if possible"]]]],
+   "one": [[["ok", "Identify and treat the cause", ["• after birth: see ABNORMAL LABOUR chart", "• before birth: see ANTEPARTUM HEMORRHAGE chart"]]]],
+   "two": [[["warn", "Intensive care if needed", ["inotropes, central lines"]]]]
+  },
+  {
+   "id": "tri", "colour": "slate", "drop_label": "lethal triad",
+   "head": [[["h", "Prevent the LETHAL TRIAD", ["acidosis, hypothermia, coagulopathy"]]]],
+   "one": [
+    [["t", "Acidosis", ["• pH 7.0: factor VIIa activity ↓ 90%", "• keep perfusion: oxygen, fluids, red cells"]]],
+    [["t", "Hypothermia (< 35 °C)", ["• warmed IV fluids", "• Bair Hugger, Level I warmer"]]]
+   ],
+   "two": [[["t", "Coagulopathy: DILUTION", ["• worse at 10, 20, 30 units", "• LIMIT the blood loss"]]]]
+  }
+ ]
+}

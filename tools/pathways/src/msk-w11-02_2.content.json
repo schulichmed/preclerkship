@@ -1,0 +1,50 @@
+{
+ "name": "rheumatology investigations overview",
+ "title": "Lab tests for a suspected connective tissue disease: the ANA is the screen and is ordered only when a connective tissue disease is suspected; anti-DNA follows only a positive ANA, the ENA panel names the antibody, and complement is a specialist's test; each column gives when to order the test, what a result means, and when not to order it",
+ "col_w": 236,
+ "root": {
+  "title": "Suspected connective tissue disease (CTD): which lab test, and when NOT to order it?",
+  "lines": [
+   "no blood test diagnoses a CTD alone: clinical features are needed too",
+   "about 1 in 3 women are ANA positive; lupus (SLE) is 1 in 1,000"
+  ]
+ },
+ "groups": [
+  {"id": "g_scr", "cols": [0, 0], "title": "SCREEN FIRST", "lines": ["antinuclear antibody (ANA)"]},
+  {"id": "g_aft", "cols": [1, 1], "title": "ONLY AFTER A POSITIVE ANA", "lines": ["ANA negative → no anti-DNA"]},
+  {"id": "g_ena", "cols": [2, 2], "title": "WHICH ANTIBODY?", "lines": ["lab screen, then specific assays"]},
+  {"id": "g_cpl", "cols": [3, 3], "title": "SPECIALIST TEST", "lines": []}
+ ],
+ "sections": ["head", "when", "means", "dont"],
+ "row_names": {"when": "ORDER WHEN", "means": "A RESULT MEANS", "dont": "DO NOT"},
+ "columns": [
+  {
+   "id": "ana", "colour": "teal",
+   "head": [[["h", "ANA", ["antibodies against the cell nucleus"]]]],
+   "when": [[["t", "A CTD is suspected", ["• sun rash, high creatine kinase, new weakness", "• oral ulcers, hair loss, low white cells + platelets", "• new glomerulonephritis, cause unknown (maybe)"]]]],
+   "means": [[["w", "POSITIVE", ["does NOT rule in disease", "titre 1/1280 = strong (bigger denominator)"]], ["w", "NEGATIVE", ["most CTDs LESS likely"]]]],
+   "dont": [[["bad", "No CTD features", ["• low white count from myelodysplasia", "• fatigue + widespread pain (fibromyalgia)"]]], [["bad", "Never repeat or follow it", ["• negative a year ago, no new symptoms", "• a past positive still counts for SLE"]]]]
+  },
+  {
+   "id": "dna", "colour": "blue",
+   "head": [[["h", "Anti-DNA", ["against DNA in the nucleus"]]]],
+   "when": [[["t", "ANA POSITIVE + SLE expected", []]]],
+   "means": [[["w", "Very SPECIFIC for SLE", ["positive in only ~50%", "tracks renal SLE + activity", "may turn negative with treatment"]]]],
+   "dont": [[["bad", "ANA not done or negative", ["order the ANA first"]]], [["warn", "Outside-lab kits", ["also detect single-stranded DNA: neither sensitive nor specific"]]]]
+  },
+  {
+   "id": "ena", "colour": "purple",
+   "head": [[["h", "ENA panel", ["extractable nuclear antigens"]]]],
+   "when": [[["t", "Screen positive", ["assays find which antibody"]]]],
+   "means": [[["w", "Antibody → disease", ["• Ro: SLE photosensitive rash; baby: heart block", "• Ro + La: Sjögren's", "• Sm: fairly specific for SLE", "• RNP: mixed CTD + SLE", "• Scl-70: scleroderma + lung disease", "• Jo1: polymyositis + lung disease"]]]],
+   "dont": [[["bad", "Diagnose from an antibody alone", ["CTDs need characteristic clinical AND lab features"]]]]
+  },
+  {
+   "id": "cpl", "colour": "orange",
+   "head": [[["h", "Complement C3, C4", []]]],
+   "when": [[["t", "SPECIALISTS only", []]]],
+   "means": [[["w", "LOW", ["active SLE, esp. lupus nephritis (used up)", "or an inherited deficiency"]]]],
+   "dont": [[["bad", "Family physician", ["a waste of money"]]]]
+  }
+ ]
+}

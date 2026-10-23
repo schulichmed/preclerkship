@@ -1,0 +1,629 @@
+{
+ "name": "heart failure overview",
+ "width": 1316,
+ "title": "Heart failure decision chart: confirm with natriuretic peptide, ECG and echo, then sort the unstable patient by congestion (wet or dry) and perfusion (warm or cold) into acute treatment, and the stable patient by ejection fraction into reduced (diuretic, triple therapy, then ARNI, ivabradine, SGLT2 inhibitor and devices in order) or preserved (diuretics and risk factors)",
+ "kinds": {
+  "ww_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ww_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ww_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "cw_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cw_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "cw_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "cd_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cd_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "cd_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "rf_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rf_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "rf_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "pf_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pf_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pf_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 342,
+   "w": 246,
+   "h": 870,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 288,
+   "y": 342,
+   "w": 246,
+   "h": 870,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 536,
+   "y": 342,
+   "w": 246,
+   "h": 870,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 812,
+   "y": 342,
+   "w": 246,
+   "h": 870,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1060,
+   "y": 342,
+   "w": 246,
+   "h": 870,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 506,
+   "h": 132,
+   "text": "FINDINGS"
+  },
+  {
+   "x": 23,
+   "y": 678,
+   "h": 526,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 293,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Breathless, edematous, tired: is it HEART FAILURE (HF), and is the patient UNSTABLE now?",
+   "lines": [
+    "a syndrome: typical symptoms + structural heart disease · the ejection fraction (EF) is not needed to diagnose it",
+    "1 · natriuretic peptide (BNP): LOW rules HF out  →  2 · ECG: normal makes reduced EF very unlikely  →  3 · ECHO, the gold standard: EF"
+   ]
+  },
+  {
+   "id": "g_ac",
+   "x": 45,
+   "y": 156,
+   "w": 732,
+   "h": 114,
+   "kind": "plain",
+   "title": "ACUTE decompensated: is it WET (congested)? is it COLD (hypoperfused)?",
+   "lines": [
+    "WARM + DRY: adjust the oral therapy · look for the trigger: infection, anemia, thyroid, ischemia"
+   ]
+  },
+  {
+   "id": "g_ch",
+   "x": 817,
+   "y": 156,
+   "w": 484,
+   "h": 114,
+   "kind": "plain",
+   "title": "CHRONIC: what is the EF on echo?",
+   "lines": [
+    "the EF picks the treatment",
+    "New York Heart Association (NYHA) class: I no symptoms · II mild",
+    "III comfortable only at rest · IV symptoms at rest",
+    "every drug: start LOW, double every 2–4 weeks, check K+ and creatinine"
+   ]
+  },
+  {
+   "id": "ww_head_0_0",
+   "x": 45,
+   "y": 350,
+   "w": 236,
+   "h": 116,
+   "kind": "ww_h",
+   "title": "WARM + WET",
+   "lines": [
+    "congested, still perfused"
+   ]
+  },
+  {
+   "id": "cw_head_0_0",
+   "x": 293,
+   "y": 350,
+   "w": 236,
+   "h": 116,
+   "kind": "cw_h",
+   "title": "COLD + WET",
+   "lines": [
+    "WORST prognosis",
+    "cardiogenic shock"
+   ]
+  },
+  {
+   "id": "cd_head_0_0",
+   "x": 541,
+   "y": 350,
+   "w": 236,
+   "h": 116,
+   "kind": "cd_h",
+   "title": "COLD + DRY",
+   "lines": [
+    "hypoperfused, NOT congested"
+   ]
+  },
+  {
+   "id": "rf_head_0_0",
+   "x": 817,
+   "y": 350,
+   "w": 236,
+   "h": 116,
+   "kind": "rf_h",
+   "title": "HF with REDUCED EF (HFrEF)",
+   "lines": [
+    "DILATED, thin left ventricle (LV) that cannot PUMP",
+    "drugs with proven mortality benefit"
+   ]
+  },
+  {
+   "id": "pf_head_0_0",
+   "x": 1065,
+   "y": 350,
+   "w": 236,
+   "h": 116,
+   "kind": "pf_h",
+   "title": "HF with PRESERVED EF (HFpEF)",
+   "lines": [
+    "THICK, stiff LV that cannot FILL",
+    "mid-range EF 41–49% sits here"
+   ]
+  },
+  {
+   "id": "ww_clue_0_0",
+   "x": 45,
+   "y": 506,
+   "w": 236,
+   "h": 132,
+   "kind": "ww_t",
+   "title": "Congestion",
+   "lines": [
+    "• orthopnea, paroxysmal nocturnal dyspnea",
+    "• crackles, S3, raised jugular venous pressure",
+    "• edema, ascites, big liver"
+   ]
+  },
+  {
+   "id": "cw_clue_0_0",
+   "x": 293,
+   "y": 506,
+   "w": 236,
+   "h": 132,
+   "kind": "cw_t",
+   "title": "Congested AND hypoperfused",
+   "lines": [
+    "• cold, sweaty limbs",
+    "• low urine output, confusion",
+    "• NARROW pulse pressure"
+   ]
+  },
+  {
+   "id": "cd_clue_0_0",
+   "x": 541,
+   "y": 506,
+   "w": 236,
+   "h": 132,
+   "kind": "cd_t",
+   "title": "Poor perfusion, clear lungs",
+   "lines": [
+    "• cold extremities",
+    "• dizziness, low urine output"
+   ]
+  },
+  {
+   "id": "rf_clue_0_0",
+   "x": 817,
+   "y": 506,
+   "w": 236,
+   "h": 132,
+   "kind": "rf_t",
+   "title": "Find the cause",
+   "lines": [
+    "• ISCHEMIC most often: angiogram if unclear",
+    "• dilated cardiomyopathy, valve disease, hypertension"
+   ]
+  },
+  {
+   "id": "pf_clue_0_0",
+   "x": 1065,
+   "y": 506,
+   "w": 236,
+   "h": 132,
+   "kind": "pf_t",
+   "title": "Pressure overload",
+   "lines": [
+    "• hypertension, left ventricular hypertrophy",
+    "• aortic stenosis",
+    "• constrictive pericarditis"
+   ]
+  },
+  {
+   "id": "ww_tx_0_0",
+   "x": 45,
+   "y": 678,
+   "w": 236,
+   "h": 252,
+   "kind": "ok",
+   "title": "1 · IV loop diuretic + oxygen",
+   "lines": [
+    "furosemide, + vasodilators"
+   ]
+  },
+  {
+   "id": "ww_tx_1_0",
+   "x": 45,
+   "y": 952,
+   "w": 236,
+   "h": 252,
+   "kind": "warn",
+   "title": "2 · Diuretic-resistant",
+   "lines": [
+    "ultrafiltration"
+   ]
+  },
+  {
+   "id": "cw_tx_0_0",
+   "x": 293.0,
+   "y": 678,
+   "w": 113.0,
+   "h": 289,
+   "kind": "bad",
+   "title": "Systolic BP < 90",
+   "lines": [
+    "• inotrope ± vasopressor",
+    "• diuretics",
+    "• mechanical support"
+   ]
+  },
+  {
+   "id": "cw_tx_0_1",
+   "x": 416.0,
+   "y": 678,
+   "w": 113.0,
+   "h": 289,
+   "kind": "warn",
+   "title": "Systolic BP > 90",
+   "lines": [
+    "• vasodilators",
+    "• diuretics",
+    "• inotropes if refractory"
+   ]
+  },
+  {
+   "id": "cw_tx_1_0",
+   "x": 293,
+   "y": 989,
+   "w": 236,
+   "h": 215,
+   "kind": "bad",
+   "title": "No response",
+   "lines": [
+    "inotropes → balloon pump → LV assist device or transplant"
+   ]
+  },
+  {
+   "id": "cd_tx_0_0",
+   "x": 541,
+   "y": 678,
+   "w": 236,
+   "h": 242,
+   "kind": "ok",
+   "title": "1 · Fluid challenge",
+   "lines": []
+  },
+  {
+   "id": "cd_tx_1_0",
+   "x": 541,
+   "y": 942,
+   "w": 236,
+   "h": 262,
+   "kind": "warn",
+   "title": "2 · Still hypoperfused → inotropes",
+   "lines": []
+  },
+  {
+   "id": "rf_tx_0_0",
+   "x": 817,
+   "y": 678,
+   "w": 236,
+   "h": 114,
+   "kind": "ok",
+   "title": "1 · Diuretic + TRIPLE therapy",
+   "lines": [
+    "• ACE inhibitor (angiotensin receptor blocker if intolerant)",
+    "• beta blocker (not in asthma)",
+    "• mineralocorticoid antagonist (MRA)"
+   ]
+  },
+  {
+   "id": "rf_tx_1_0",
+   "x": 817,
+   "y": 814,
+   "w": 236,
+   "h": 170,
+   "kind": "ok",
+   "title": "2 · Still symptomatic (NYHA II–IV)",
+   "lines": [
+    "• ACE inhibitor → sacubitril-valsartan (ARNI)",
+    "• + ivabradine if sinus rhythm, heart rate > 70",
+    "• + SGLT2 inhibitor (flozin): now if diabetic"
+   ]
+  },
+  {
+   "id": "rf_tx_2_0",
+   "x": 817,
+   "y": 1006,
+   "w": 236,
+   "h": 98,
+   "kind": "warn",
+   "title": "3 · EF ≤ 35% → defibrillator (ICD)",
+   "lines": [
+    "+ resynchronization (CRT) for left bundle branch block"
+   ]
+  },
+  {
+   "id": "rf_tx_3_0",
+   "x": 817,
+   "y": 1126,
+   "w": 236,
+   "h": 78,
+   "kind": "bad",
+   "title": "NYHA IV",
+   "lines": [
+    "hydralazine + nitrates, advanced HF referral, palliative care"
+   ]
+  },
+  {
+   "id": "pf_tx_0_0",
+   "x": 1065,
+   "y": 678,
+   "w": 236,
+   "h": 234,
+   "kind": "ok",
+   "title": "1 · Diuretics for congestion",
+   "lines": [
+    "the ONLY proven therapy"
+   ]
+  },
+  {
+   "id": "pf_tx_1_0",
+   "x": 1065,
+   "y": 934,
+   "w": 236,
+   "h": 270,
+   "kind": "ok",
+   "title": "2 · Treat the risk factors",
+   "lines": [
+    "• blood pressure, heart rate, diabetes",
+    "~candesartan or spironolactone may help"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ac",
+   "path": "M673.0 106V131H411.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_ch",
+   "path": "M673.0 106V131H1059.0V156"
+  },
+  {
+   "from": "ww_tx_0_0",
+   "to": "ww_tx_1_0"
+  },
+  {
+   "from": "cw_tx_0_0",
+   "to": "cw_tx_1_0",
+   "to_dx": -61.5
+  },
+  {
+   "from": "cw_tx_0_1",
+   "to": "cw_tx_1_0",
+   "to_dx": 61.5
+  },
+  {
+   "from": "cd_tx_0_0",
+   "to": "cd_tx_1_0"
+  },
+  {
+   "from": "rf_tx_0_0",
+   "to": "rf_tx_1_0"
+  },
+  {
+   "from": "rf_tx_1_0",
+   "to": "rf_tx_2_0"
+  },
+  {
+   "from": "rf_tx_2_0",
+   "to": "rf_tx_3_0"
+  },
+  {
+   "from": "pf_tx_0_0",
+   "to": "pf_tx_1_0"
+  },
+  {
+   "from": "ww_head_0_0",
+   "to": "ww_clue_0_0"
+  },
+  {
+   "from": "ww_clue_0_0",
+   "to": "ww_tx_0_0"
+  },
+  {
+   "from": "g_ac",
+   "to": "ww_head_0_0",
+   "from_dx": -248,
+   "label": "WET + warm",
+   "label_at": [
+    163.0,
+    310
+   ]
+  },
+  {
+   "from": "cw_head_0_0",
+   "to": "cw_clue_0_0"
+  },
+  {
+   "from": "cw_clue_0_0",
+   "to": "cw_tx_0_0",
+   "from_dx": -61.5
+  },
+  {
+   "from": "cw_clue_0_0",
+   "to": "cw_tx_0_1",
+   "from_dx": 61.5
+  },
+  {
+   "from": "g_ac",
+   "to": "cw_head_0_0",
+   "from_dx": 0,
+   "label": "WET + COLD",
+   "label_at": [
+    411.0,
+    310
+   ]
+  },
+  {
+   "from": "cd_head_0_0",
+   "to": "cd_clue_0_0"
+  },
+  {
+   "from": "cd_clue_0_0",
+   "to": "cd_tx_0_0"
+  },
+  {
+   "from": "g_ac",
+   "to": "cd_head_0_0",
+   "from_dx": 248,
+   "label": "DRY + COLD",
+   "label_at": [
+    659.0,
+    310
+   ]
+  },
+  {
+   "from": "rf_head_0_0",
+   "to": "rf_clue_0_0"
+  },
+  {
+   "from": "rf_clue_0_0",
+   "to": "rf_tx_0_0"
+  },
+  {
+   "from": "g_ch",
+   "to": "rf_head_0_0",
+   "from_dx": -124,
+   "label": "EF ≤ 40%",
+   "label_at": [
+    935.0,
+    310
+   ]
+  },
+  {
+   "from": "pf_head_0_0",
+   "to": "pf_clue_0_0"
+  },
+  {
+   "from": "pf_clue_0_0",
+   "to": "pf_tx_0_0"
+  },
+  {
+   "from": "g_ch",
+   "to": "pf_head_0_0",
+   "from_dx": 124,
+   "label": "EF ≥ 50%",
+   "label_at": [
+    1183.0,
+    310
+   ]
+  }
+ ],
+ "panels": []
+}

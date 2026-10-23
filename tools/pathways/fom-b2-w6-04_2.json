@@ -1,0 +1,523 @@
+{
+ "name": "breast mass overview",
+ "width": 1084,
+ "title": "Breast mass decision chart: after checking for cancer emergencies, history and exam, the feel of the lump sorts benign causes (cyst or fibrocystic change, abscess, fibroadenoma) from breast cancer; each column gives the feel, the test that clinches it and what follows",
+ "kinds": {
+  "cy_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cy_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "cy_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ab_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ab_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ab_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "fa_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fa_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "fa_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ca_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ca_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ca_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 360,
+   "w": 250,
+   "h": 830,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 292,
+   "y": 360,
+   "w": 250,
+   "h": 830,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 544,
+   "y": 360,
+   "w": 250,
+   "h": 830,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 824,
+   "y": 360,
+   "w": 250,
+   "h": 830,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 486,
+   "h": 272,
+   "text": "FEELS LIKE"
+  },
+  {
+   "x": 23,
+   "y": 798,
+   "h": 180,
+   "text": "CLINCH IT"
+  },
+  {
+   "x": 23,
+   "y": 1018,
+   "h": 164,
+   "text": "THEN"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 177,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Breast mass: BENIGN or MALIGNANT?",
+   "lines": [
+    "1 · STABLE? check for cancer EMERGENCIES first: cord compression, superior vena cava obstruction, hypercalcemia, febrile neutropenia",
+    "2 · History + exam: where (clock face, depth), size, edge, consistency, mobility · nipple, skin, nodes, the other breast",
+    "3 · Image: ULTRASOUND first for a palpable lump, pain, discharge or age < 30 · then diagnostic mammogram",
+    "older = more likely cancer · NO blood or urine test identifies a breast mass"
+   ]
+  },
+  {
+   "id": "g_b",
+   "x": 45,
+   "y": 192,
+   "w": 744,
+   "h": 96,
+   "kind": "plain",
+   "title": "BENIGN feel",
+   "lines": [
+    "SMOOTH edge · MOBILE · soft or firm · CHANGES with periods · may be tender"
+   ]
+  },
+  {
+   "id": "g_m",
+   "x": 829,
+   "y": 192,
+   "w": 240,
+   "h": 96,
+   "kind": "plain",
+   "title": "MALIGNANT feel",
+   "lines": [
+    "IRREGULAR · HARD · may be FIXED · usually painless · CONSTANT"
+   ]
+  },
+  {
+   "id": "cy_head_0_0",
+   "x": 45,
+   "y": 368,
+   "w": 240,
+   "h": 78,
+   "kind": "cy_h",
+   "title": "Cyst · fibrocystic change",
+   "lines": [
+    "NOT a neoplasm"
+   ]
+  },
+  {
+   "id": "ab_head_0_0",
+   "x": 297,
+   "y": 368,
+   "w": 240,
+   "h": 78,
+   "kind": "ab_h",
+   "title": "Abscess",
+   "lines": [
+    "infection: often mastitis while breastfeeding"
+   ]
+  },
+  {
+   "id": "fa_head_0_0",
+   "x": 549,
+   "y": 368,
+   "w": 240,
+   "h": 78,
+   "kind": "fa_h",
+   "title": "Fibroadenoma",
+   "lines": [
+    "BENIGN neoplasm"
+   ]
+  },
+  {
+   "id": "ca_head_0_0",
+   "x": 829,
+   "y": 368,
+   "w": 240,
+   "h": 78,
+   "kind": "ca_h",
+   "title": "Breast cancer",
+   "lines": [
+    "rare in men (think gynecomastia)"
+   ]
+  },
+  {
+   "id": "cy_feel_0_0",
+   "x": 45,
+   "y": 486,
+   "w": 240,
+   "h": 116,
+   "kind": "cy_t",
+   "title": "CYST: smooth, well demarcated",
+   "lines": [
+    "sac of fluid, air or semi-solid"
+   ]
+  },
+  {
+   "id": "cy_feel_1_0",
+   "x": 45,
+   "y": 624,
+   "w": 240,
+   "h": 134,
+   "kind": "cy_w",
+   "title": "FIBROCYSTIC: lumpy, nodular breasts",
+   "lines": [
+    "tenderness VARIES with the menstrual cycle"
+   ]
+  },
+  {
+   "id": "ab_feel_0_0",
+   "x": 297,
+   "y": 486,
+   "w": 240,
+   "h": 272,
+   "kind": "ab_t",
+   "title": "Warm, RED, tender, swollen",
+   "lines": []
+  },
+  {
+   "id": "fa_feel_0_0",
+   "x": 549,
+   "y": 486,
+   "w": 240,
+   "h": 272,
+   "kind": "fa_t",
+   "title": "ONE nodule",
+   "lines": [
+    "• FIRM",
+    "• MOBILE",
+    "• well circumscribed"
+   ]
+  },
+  {
+   "id": "ca_feel_0_0",
+   "x": 829,
+   "y": 486,
+   "w": 240,
+   "h": 116,
+   "kind": "ca_t",
+   "title": "Hard, IRREGULAR, FIXED, painless",
+   "lines": [
+    "• does NOT change with periods",
+    "• B symptoms: fever, night sweats, weight loss"
+   ]
+  },
+  {
+   "id": "ca_feel_1_0",
+   "x": 829,
+   "y": 624,
+   "w": 240,
+   "h": 134,
+   "kind": "bad",
+   "title": "URGENT: cancer in the skin or lymphatics",
+   "lines": [
+    "• red breast: INFLAMMATORY cancer",
+    "• PEAU D'ORANGE: dimpled like an orange"
+   ]
+  },
+  {
+   "id": "cy_test_0_0",
+   "x": 45,
+   "y": 798,
+   "w": 240,
+   "h": 180,
+   "kind": "cy_w",
+   "title": "Fine needle aspiration (FNA, 22 G or finer)",
+   "lines": [
+    "a cyst COLLAPSES once drained"
+   ]
+  },
+  {
+   "id": "ab_test_0_0",
+   "x": 297,
+   "y": 798,
+   "w": 240,
+   "h": 180,
+   "kind": "ab_w",
+   "title": "Pus: neutrophils, acute inflammation",
+   "lines": []
+  },
+  {
+   "id": "fa_test_0_0",
+   "x": 549,
+   "y": 798,
+   "w": 240,
+   "h": 180,
+   "kind": "fa_w",
+   "title": "Image-guided biopsy",
+   "lines": []
+  },
+  {
+   "id": "ca_test_0_0",
+   "x": 829,
+   "y": 798,
+   "w": 240,
+   "h": 98,
+   "kind": "ca_w",
+   "title": "Needle CORE biopsy (21 G or larger)",
+   "lines": [
+    "SHOWS INVASION: a fine needle cannot"
+   ]
+  },
+  {
+   "id": "ca_test_1_0",
+   "x": 829,
+   "y": 918,
+   "w": 240,
+   "h": 60,
+   "kind": "ca_w",
+   "title": "Axillary node: FNA or core",
+   "lines": [
+    "image-guided, to avoid the lung"
+   ]
+  },
+  {
+   "id": "cy_next_0_0",
+   "x": 45,
+   "y": 1018,
+   "w": 240,
+   "h": 164,
+   "kind": "ok",
+   "title": "Aspiration IS the treatment",
+   "lines": []
+  },
+  {
+   "id": "ab_next_0_0",
+   "x": 297,
+   "y": 1018,
+   "w": 240,
+   "h": 42,
+   "kind": "ok",
+   "title": "Aspiration (therapeutic)",
+   "lines": []
+  },
+  {
+   "id": "ab_next_1_0",
+   "x": 297,
+   "y": 1082,
+   "w": 240,
+   "h": 100,
+   "kind": "bad",
+   "title": "Looks infected? INFLAMMATORY CANCER can mimic it",
+   "lines": [
+    "→ cancer column"
+   ]
+  },
+  {
+   "id": "fa_next_0_0",
+   "x": 549,
+   "y": 1018,
+   "w": 240,
+   "h": 164,
+   "kind": "ok",
+   "title": "Biopsy benign: not cancer",
+   "lines": []
+  },
+  {
+   "id": "ca_next_0_0",
+   "x": 829,
+   "y": 1018,
+   "w": 240,
+   "h": 164,
+   "kind": "warn",
+   "title": "STAGING after the biopsy",
+   "lines": [
+    "• MRI: local disease",
+    "• full-body CT: NEVER for workup or screening"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_b",
+   "path": "M557.0 142V167H417.0V192"
+  },
+  {
+   "from": "root",
+   "to": "g_m",
+   "path": "M557.0 142V167H949.0V192"
+  },
+  {
+   "from": "cy_feel_0_0",
+   "to": "cy_feel_1_0"
+  },
+  {
+   "from": "ca_feel_0_0",
+   "to": "ca_feel_1_0"
+  },
+  {
+   "from": "ca_test_0_0",
+   "to": "ca_test_1_0"
+  },
+  {
+   "from": "ab_next_0_0",
+   "to": "ab_next_1_0"
+  },
+  {
+   "from": "cy_head_0_0",
+   "to": "cy_feel_0_0"
+  },
+  {
+   "from": "cy_feel_1_0",
+   "to": "cy_test_0_0"
+  },
+  {
+   "from": "cy_test_0_0",
+   "to": "cy_next_0_0"
+  },
+  {
+   "from": "g_b",
+   "to": "cy_head_0_0",
+   "from_dx": -252,
+   "label": "smooth · or lumpy with the cycle",
+   "label_at": [
+    165.0,
+    328
+   ]
+  },
+  {
+   "from": "ab_head_0_0",
+   "to": "ab_feel_0_0"
+  },
+  {
+   "from": "ab_feel_0_0",
+   "to": "ab_test_0_0"
+  },
+  {
+   "from": "ab_test_0_0",
+   "to": "ab_next_0_0"
+  },
+  {
+   "from": "g_b",
+   "to": "ab_head_0_0",
+   "from_dx": 0,
+   "label": "breastfeeding · warm, red",
+   "label_at": [
+    417.0,
+    328
+   ]
+  },
+  {
+   "from": "fa_head_0_0",
+   "to": "fa_feel_0_0"
+  },
+  {
+   "from": "fa_feel_0_0",
+   "to": "fa_test_0_0"
+  },
+  {
+   "from": "fa_test_0_0",
+   "to": "fa_next_0_0"
+  },
+  {
+   "from": "g_b",
+   "to": "fa_head_0_0",
+   "from_dx": 252,
+   "label": "single · firm, MOBILE",
+   "label_at": [
+    669.0,
+    328
+   ]
+  },
+  {
+   "from": "ca_head_0_0",
+   "to": "ca_feel_0_0"
+  },
+  {
+   "from": "ca_feel_1_0",
+   "to": "ca_test_0_0"
+  },
+  {
+   "from": "ca_test_1_0",
+   "to": "ca_next_0_0"
+  },
+  {
+   "from": "g_m",
+   "to": "ca_head_0_0",
+   "from_dx": 0,
+   "label": "hard, irregular, fixed",
+   "label_at": [
+    949.0,
+    328
+   ]
+  }
+ ],
+ "panels": []
+}

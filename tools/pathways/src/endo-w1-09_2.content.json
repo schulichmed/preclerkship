@@ -1,0 +1,120 @@
+{
+ "name": "introduction to obesity overview",
+ "title": "Obesity management by body mass index: lifestyle and psychology for everyone; a drug (tirzepatide or semaglutide first, naltrexone-bupropion next) at BMI 30, or 27 with complications; bariatric surgery at BMI 40, 35 with a complication, or 30 with poorly controlled type 2 diabetes; each column gives what to check before, what to give, and what to expect or watch",
+ "col_w": 240,
+ "root": {
+  "title": "Obesity: how far up the ladder? BMI + complications decide",
+  "lines": [
+   "body mass index (BMI) ≥ 30, or ≥ 25 South or East Asian · always with waist circumference",
+   "ASK permission first · ASSESS the 4 M's (mental, mechanical, metabolic, monetary)",
+   "rule out hypothyroidism, Cushing's, medications · A1c, lipids, thyroid-stimulating hormone, alanine aminotransferase"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_all",
+   "cols": [0, 0],
+   "title": "EVERYONE, whatever the BMI",
+   "lines": ["goal: health and well-being, not a number"]
+  },
+  {
+   "id": "g_med",
+   "cols": [1, 2],
+   "title": "BMI ≥ 30, or ≥ 27 with complications: ADD A DRUG",
+   "lines": ["≥ 5% loss by 12 weeks at the maximum tolerated dose, else switch · likely lifelong"]
+  },
+  {
+   "id": "g_surg",
+   "cols": [3, 3],
+   "title": "BMI ≥ 40, ≥ 35 + a complication, or ≥ 30 + poorly controlled type 2 diabetes: SURGERY",
+   "lines": []
+  }
+ ],
+ "sections": ["head", "clue", "inv", "tx"],
+ "row_names": {
+  "clue": "BEFORE",
+  "inv": "GIVE",
+  "tx": "EXPECT · WATCH"
+ },
+ "columns": [
+  {
+   "id": "life",
+   "colour": "teal",
+   "drop_label": "all",
+   "head": [[["h", "Lifestyle + psychology", ["the base under every other step"]]]],
+   "clue": [[["w", "Agree on SMART goals", [
+     "• prevent gain, or lose weight?",
+     "• readiness: motivational interviewing",
+     "• cardiology referral before exercise, if needed"
+   ]]]],
+   "inv": [[["ok", "The three foundations", [
+     "• healthy eating, ideally with a dietitian",
+     "• activity 30–60 min most days + resistance",
+     "• sleep, stress, cognitive behavioural therapy"
+   ]]]],
+   "tx": [[["t", "Losing? 0.5–1 kg a week", [
+     "activity: little loss, but keeps it off"
+   ]]]]
+  },
+  {
+   "id": "glp",
+   "colour": "blue",
+   "drop_label": "1st choice",
+   "head": [[["h", "Tirzepatide > semaglutide", ["glucagon-like peptide 1 (GLP-1) agonists; tirzepatide adds glucose-dependent insulinotropic polypeptide (GIP)", "the most effective drugs"]]]],
+   "clue": [[["bad", "NOT in pregnancy", [
+     "other cautions: see the GLUCOSE-LOWERING DRUGS tree"
+   ]]]],
+   "inv": [[["ok", "Weekly injection, up every 4 weeks", [
+     "• tirzepatide to 15 mg: −20.9%",
+     "• semaglutide to 2.4 mg: −12.4%"
+   ]]]],
+   "tx": [[["warn", "Slows gastric emptying", [
+     "absorption of other drugs changes, e.g. the pill"
+   ]]]]
+  },
+  {
+   "id": "nb",
+   "colour": "purple",
+   "drop_label": "next",
+   "head": [[["h", "Naltrexone-bupropion", ["one oral tablet", "orlistat: rarely, weak + side effects"]]]],
+   "clue": [[["bad", "NOT if ANY of these", [
+     "• pregnancy, any OPIOID use, monoamine oxidase inhibitor",
+     "• seizure history or risk",
+     "• uncontrolled hypertension, renal or liver failure"
+   ]]]],
+   "inv": [[["ok", "Build up to 2 tablets twice daily", [
+     "−4.8% on average"
+   ]]]],
+   "tx": [[["warn", "May worsen depression at first", []]]]
+  },
+  {
+   "id": "bar",
+   "colour": "orange",
+   "drop_label": "criteria met",
+   "head": [[["h", "Bariatric surgery", ["sleeve or Roux-en-Y bypass most common", "gastric band: no longer done"]]]],
+   "clue": [
+    [["bad", "NOT a candidate if", [
+     "• unstable psychiatric illness, untreated substance use",
+     "• malignancy, short life expectancy",
+     "• can't keep up follow-up"
+    ]]],
+    [["w", "MUST first", [
+     "• stop smoking, for good",
+     "• treat mental health conditions"
+    ]]]
+   ],
+   "inv": [[["ok", "25–30% loss · ↓ long-term mortality", [
+     "type 2 diabetes, fatty liver, polycystic ovary syndrome, sleep apnea improve or remit"
+   ]]]],
+   "tx": [
+    [["warn", "Deficiencies, worst after Roux-en-Y", [
+     "• protein: 1.2–1.5 g/kg/day",
+     "• iron, B12, calcium + vitamin D, vitamin A"
+    ]]],
+    [["bad", "THIAMINE before any glucose", [
+     "Wernicke's: 1–3 months post-op, nausea, poor intake"
+    ]]]
+   ]
+  }
+ ]
+}

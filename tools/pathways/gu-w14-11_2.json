@@ -1,0 +1,749 @@
+{
+ "name": "acid base overview",
+ "width": 1326,
+ "title": "Acid-base decision chart: the arterial blood gas sorts acidemia into respiratory acidosis, anion gap metabolic acidosis or non-anion gap metabolic acidosis, and alkalemia into respiratory or metabolic alkalosis; each column gives the expected compensation, numbered workup (osmolar gap, urine anion gap, renin and aldosterone) and treatment, with the rules for sodium bicarbonate and for spotting two disorders at once",
+ "kinds": {
+  "rac_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rac_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "rac_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ag_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ag_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ag_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "nag_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nag_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "nag_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ral_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ral_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ral_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "mal_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mal_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "mal_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 442,
+   "w": 248,
+   "h": 864,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 290,
+   "y": 442,
+   "w": 248,
+   "h": 864,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 540,
+   "y": 442,
+   "w": 248,
+   "h": 864,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 818,
+   "y": 442,
+   "w": 248,
+   "h": 864,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1068,
+   "y": 442,
+   "w": 248,
+   "h": 864,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 588,
+   "h": 390,
+   "text": "WORKUP"
+  },
+  {
+   "x": 23,
+   "y": 1018,
+   "h": 280,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 298,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Acid-base: ACIDEMIA or ALKALEMIA, and which value moved FIRST?",
+   "lines": [
+    "arterial blood gas (ABG): normal pH 7.35–7.45 · pCO2 = the lungs · HCO3 = the kidneys",
+    "anion gap (AG) = Na − (Cl + HCO3): normal 12, minus 3 for every 10 g/L albumin below 40",
+    "AG ↑ with a NORMAL pH and HCO3 → metabolic acidosis + metabolic alkalosis together"
+   ]
+  },
+  {
+   "id": "g_ac",
+   "x": 45,
+   "y": 156,
+   "w": 738,
+   "h": 60,
+   "kind": "plain",
+   "title": "ACIDEMIA: pH < 7.35",
+   "lines": [
+    "pCO2 ↑ → RESPIRATORY · HCO3 ↓ → METABOLIC"
+   ]
+  },
+  {
+   "id": "g_al",
+   "x": 823,
+   "y": 156,
+   "w": 488,
+   "h": 60,
+   "kind": "plain",
+   "title": "ALKALEMIA: pH > 7.45",
+   "lines": [
+    "pCO2 ↓ → RESPIRATORY · HCO3 ↑ → METABOLIC"
+   ]
+  },
+  {
+   "id": "t_ma",
+   "x": 295,
+   "y": 256,
+   "w": 488,
+   "h": 114,
+   "kind": "plain",
+   "title": "HCO3 ↓: METABOLIC acidosis · is the ANION GAP up?",
+   "lines": [
+    "expect pCO2 to fall 1 for every 1 HCO3 falls · off target → a SECOND disorder (aspirin: + respiratory alkalosis, pH > 7.45)",
+    "pH < 7.10 or HCO3 < 10–12 → give sodium bicarbonate (NaHCO3) · careful: it makes CO2 and adds Na"
+   ]
+  },
+  {
+   "id": "rac_head_0_0",
+   "x": 45,
+   "y": 450,
+   "w": 238,
+   "h": 98,
+   "kind": "rac_h",
+   "title": "Respiratory acidosis",
+   "lines": [
+    "CO2 not exhaled: hypoventilation"
+   ]
+  },
+  {
+   "id": "ag_head_0_0",
+   "x": 295,
+   "y": 450,
+   "w": 238,
+   "h": 98,
+   "kind": "ag_h",
+   "title": "Anion gap metabolic acidosis (AGMA)",
+   "lines": [
+    "acid + an UNMEASURED anion · MUDPILES"
+   ]
+  },
+  {
+   "id": "nag_head_0_0",
+   "x": 545,
+   "y": 450,
+   "w": 238,
+   "h": 98,
+   "kind": "nag_h",
+   "title": "Non-anion gap metabolic acidosis (NAGMA)",
+   "lines": [
+    "HCO3 LOST, or acid NOT excreted"
+   ]
+  },
+  {
+   "id": "ral_head_0_0",
+   "x": 823,
+   "y": 450,
+   "w": 238,
+   "h": 98,
+   "kind": "ral_h",
+   "title": "Respiratory alkalosis",
+   "lines": [
+    "too much CO2 exhaled: hyperventilation"
+   ]
+  },
+  {
+   "id": "mal_head_0_0",
+   "x": 1073,
+   "y": 450,
+   "w": 238,
+   "h": 98,
+   "kind": "mal_h",
+   "title": "Metabolic alkalosis",
+   "lines": [
+    "too much ALDOSTERONE activity · K often ↓",
+    "expect pCO2 ↑ 7 per 10 HCO3 ↑"
+   ]
+  },
+  {
+   "id": "rac_inv_0_0",
+   "x": 45,
+   "y": 588,
+   "w": 238,
+   "h": 166,
+   "kind": "rac_t",
+   "title": "Acute or chronic? Per 10 pCO2 ↑, HCO3 rises",
+   "lines": []
+  },
+  {
+   "id": "rac_inv_1_0",
+   "x": 45.0,
+   "y": 776,
+   "w": 114.0,
+   "h": 202,
+   "kind": "rac_w",
+   "title": "1 → ACUTE",
+   "lines": [
+    "cells buffer: trivial"
+   ]
+  },
+  {
+   "id": "rac_inv_1_1",
+   "x": 169.0,
+   "y": 776,
+   "w": 114.0,
+   "h": 202,
+   "kind": "rac_w",
+   "title": "4 → CHRONIC",
+   "lines": [
+    "the kidney, over days"
+   ]
+  },
+  {
+   "id": "ag_inv_0_0",
+   "x": 295,
+   "y": 588,
+   "w": 238,
+   "h": 184,
+   "kind": "ag_t",
+   "title": "1 · FIND THE SOURCE",
+   "lines": [
+    "• lactate",
+    "• ketones",
+    "• salicylates",
+    "• kidney function (uremia)"
+   ]
+  },
+  {
+   "id": "ag_inv_1_0",
+   "x": 295,
+   "y": 794,
+   "w": 238,
+   "h": 184,
+   "kind": "ag_w",
+   "title": "2 · OSMOLAR GAP",
+   "lines": [
+    "measured − (2 × Na + urea + glucose)",
+    "↑ → TOXIC ALCOHOL: methanol, ethylene glycol"
+   ]
+  },
+  {
+   "id": "nag_inv_0_0",
+   "x": 545,
+   "y": 588,
+   "w": 238,
+   "h": 114,
+   "kind": "nag_t",
+   "title": "1 · History",
+   "lines": [
+    "• diarrhea",
+    "• drugs that block aldosterone: ACE inhibitors, ARBs, K-sparing diuretics",
+    "• carbonic anhydrase inhibitors"
+   ]
+  },
+  {
+   "id": "nag_inv_1_0",
+   "x": 545,
+   "y": 724,
+   "w": 238,
+   "h": 62,
+   "kind": "nag_w",
+   "title": "2 · Urine anion gap (Na + K − Cl) + urine pH",
+   "lines": []
+  },
+  {
+   "id": "nag_inv_2_0",
+   "x": 545.0,
+   "y": 808,
+   "w": 114.0,
+   "h": 170,
+   "kind": "nag_w",
+   "title": "NEGATIVE · pH < 5.5",
+   "lines": [
+    "NH4 made: GI loss or PROXIMAL renal tubular acidosis (RTA, type II)"
+   ]
+  },
+  {
+   "id": "nag_inv_2_1",
+   "x": 669.0,
+   "y": 808,
+   "w": 114.0,
+   "h": 170,
+   "kind": "nag_w",
+   "title": "POSITIVE",
+   "lines": [
+    "little NH4: DISTAL RTA",
+    "• K ↓ type I",
+    "• K ↑ type IV"
+   ]
+  },
+  {
+   "id": "ral_inv_0_0",
+   "x": 823,
+   "y": 588,
+   "w": 238,
+   "h": 148,
+   "kind": "ral_t",
+   "title": "Acute or chronic? Per 10 pCO2 ↓, HCO3 falls",
+   "lines": []
+  },
+  {
+   "id": "ral_inv_1_0",
+   "x": 823.0,
+   "y": 758,
+   "w": 114.0,
+   "h": 220,
+   "kind": "ral_w",
+   "title": "2 → ACUTE",
+   "lines": [
+    "cells buffer"
+   ]
+  },
+  {
+   "id": "ral_inv_1_1",
+   "x": 947.0,
+   "y": 758,
+   "w": 114.0,
+   "h": 220,
+   "kind": "ral_w",
+   "title": "4 → CHRONIC",
+   "lines": [
+    "RARE: liver failure, anoxic brain, pregnancy"
+   ]
+  },
+  {
+   "id": "mal_inv_0_0",
+   "x": 1073,
+   "y": 588,
+   "w": 238,
+   "h": 67,
+   "kind": "mal_t",
+   "title": "1 · Aldosterone ↑: what is RENIN doing?",
+   "lines": []
+  },
+  {
+   "id": "mal_inv_1_0",
+   "x": 1073.0,
+   "y": 677,
+   "w": 114.0,
+   "h": 193,
+   "kind": "mal_w",
+   "title": "Renin ↓ · PRIMARY",
+   "lines": [
+    "• hypertension",
+    "• Conn syndrome, congenital adrenal hyperplasia"
+   ]
+  },
+  {
+   "id": "mal_inv_1_1",
+   "x": 1197.0,
+   "y": 677,
+   "w": 114.0,
+   "h": 193,
+   "kind": "mal_w",
+   "title": "Renin ↑ · SECONDARY",
+   "lines": [
+    "• extracellular fluid (ECF) LOW",
+    "• vomiting, diuretics, Bartter, Gitelman"
+   ]
+  },
+  {
+   "id": "mal_inv_2_0",
+   "x": 1073,
+   "y": 892,
+   "w": 238,
+   "h": 85,
+   "kind": "mal_w",
+   "title": "2 · Urine Cl < 10 → SECONDARY",
+   "lines": [
+    "unless on diuretics"
+   ]
+  },
+  {
+   "id": "rac_tx_0_0",
+   "x": 45,
+   "y": 1018,
+   "w": 238,
+   "h": 280,
+   "kind": "ok",
+   "title": "Address the underlying cause",
+   "lines": []
+  },
+  {
+   "id": "ag_tx_0_0",
+   "x": 295,
+   "y": 1018,
+   "w": 238,
+   "h": 80,
+   "kind": "ok",
+   "title": "Diabetic ketoacidosis → INSULIN",
+   "lines": [
+    "no buffer needed"
+   ]
+  },
+  {
+   "id": "ag_tx_1_0",
+   "x": 295,
+   "y": 1120,
+   "w": 238,
+   "h": 96,
+   "kind": "warn",
+   "title": "Methanol, ethylene glycol",
+   "lines": [
+    "• FOMEPIZOLE, or ethanol if unavailable",
+    "• often HEMODIALYSIS too"
+   ]
+  },
+  {
+   "id": "ag_tx_2_0",
+   "x": 295,
+   "y": 1238,
+   "w": 238,
+   "h": 60,
+   "kind": "bad",
+   "title": "Aspirin → HEMODIALYSIS",
+   "lines": [
+    "no antidote"
+   ]
+  },
+  {
+   "id": "nag_tx_0_0",
+   "x": 545,
+   "y": 1018,
+   "w": 238,
+   "h": 280,
+   "kind": "ok",
+   "title": "Address the underlying cause",
+   "lines": []
+  },
+  {
+   "id": "ral_tx_0_0",
+   "x": 823,
+   "y": 1018,
+   "w": 238,
+   "h": 280,
+   "kind": "ok",
+   "title": "Address the underlying cause",
+   "lines": []
+  },
+  {
+   "id": "mal_tx_0_0",
+   "x": 1073.0,
+   "y": 1018,
+   "w": 114.0,
+   "h": 280,
+   "kind": "ok",
+   "title": "ECF LOW: NaCl + KCl",
+   "lines": [
+    "low K keeps the alkalosis going"
+   ]
+  },
+  {
+   "id": "mal_tx_0_1",
+   "x": 1197.0,
+   "y": 1018,
+   "w": 114.0,
+   "h": 280,
+   "kind": "ok",
+   "title": "ECF HIGH + high BP",
+   "lines": [
+    "BLOCK aldosterone"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ac",
+   "path": "M678.0 106V131H414.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_al",
+   "path": "M678.0 106V131H1067.0V156"
+  },
+  {
+   "from": "g_ac",
+   "to": "t_ma",
+   "from_dx": 125
+  },
+  {
+   "from": "rac_inv_0_0",
+   "to": "rac_inv_1_0",
+   "from_dx": -62.0
+  },
+  {
+   "from": "rac_inv_0_0",
+   "to": "rac_inv_1_1",
+   "from_dx": 62.0
+  },
+  {
+   "from": "ag_inv_0_0",
+   "to": "ag_inv_1_0"
+  },
+  {
+   "from": "nag_inv_0_0",
+   "to": "nag_inv_1_0"
+  },
+  {
+   "from": "nag_inv_1_0",
+   "to": "nag_inv_2_0",
+   "from_dx": -62.0
+  },
+  {
+   "from": "nag_inv_1_0",
+   "to": "nag_inv_2_1",
+   "from_dx": 62.0
+  },
+  {
+   "from": "ral_inv_0_0",
+   "to": "ral_inv_1_0",
+   "from_dx": -62.0
+  },
+  {
+   "from": "ral_inv_0_0",
+   "to": "ral_inv_1_1",
+   "from_dx": 62.0
+  },
+  {
+   "from": "mal_inv_0_0",
+   "to": "mal_inv_1_0",
+   "from_dx": -62.0
+  },
+  {
+   "from": "mal_inv_0_0",
+   "to": "mal_inv_1_1",
+   "from_dx": 62.0
+  },
+  {
+   "from": "mal_inv_1_0",
+   "to": "mal_inv_2_0",
+   "to_dx": -62.0
+  },
+  {
+   "from": "mal_inv_1_1",
+   "to": "mal_inv_2_0",
+   "to_dx": 62.0
+  },
+  {
+   "from": "ag_tx_0_0",
+   "to": "ag_tx_1_0"
+  },
+  {
+   "from": "ag_tx_1_0",
+   "to": "ag_tx_2_0"
+  },
+  {
+   "from": "rac_head_0_0",
+   "to": "rac_inv_0_0"
+  },
+  {
+   "from": "rac_inv_1_0",
+   "to": "rac_tx_0_0",
+   "to_dx": -62.0
+  },
+  {
+   "from": "rac_inv_1_1",
+   "to": "rac_tx_0_0",
+   "to_dx": 62.0
+  },
+  {
+   "from": "g_ac",
+   "to": "rac_head_0_0",
+   "from_dx": -250,
+   "label": "pCO2 ↑",
+   "label_at": [
+    164.0,
+    410
+   ]
+  },
+  {
+   "from": "ag_head_0_0",
+   "to": "ag_inv_0_0"
+  },
+  {
+   "from": "ag_inv_1_0",
+   "to": "ag_tx_0_0"
+  },
+  {
+   "from": "t_ma",
+   "to": "ag_head_0_0",
+   "from_dx": -125,
+   "label": "AG ↑ (ΔAG > 0)",
+   "label_at": [
+    414.0,
+    410
+   ]
+  },
+  {
+   "from": "nag_head_0_0",
+   "to": "nag_inv_0_0"
+  },
+  {
+   "from": "nag_inv_2_0",
+   "to": "nag_tx_0_0",
+   "to_dx": -62.0
+  },
+  {
+   "from": "nag_inv_2_1",
+   "to": "nag_tx_0_0",
+   "to_dx": 62.0
+  },
+  {
+   "from": "t_ma",
+   "to": "nag_head_0_0",
+   "from_dx": 125,
+   "label": "AG normal",
+   "label_at": [
+    664.0,
+    410
+   ]
+  },
+  {
+   "from": "ral_head_0_0",
+   "to": "ral_inv_0_0"
+  },
+  {
+   "from": "ral_inv_1_0",
+   "to": "ral_tx_0_0",
+   "to_dx": -62.0
+  },
+  {
+   "from": "ral_inv_1_1",
+   "to": "ral_tx_0_0",
+   "to_dx": 62.0
+  },
+  {
+   "from": "g_al",
+   "to": "ral_head_0_0",
+   "from_dx": -125,
+   "label": "pCO2 ↓",
+   "label_at": [
+    942.0,
+    410
+   ]
+  },
+  {
+   "from": "mal_head_0_0",
+   "to": "mal_inv_0_0"
+  },
+  {
+   "from": "mal_inv_2_0",
+   "to": "mal_tx_0_0",
+   "from_dx": -62.0
+  },
+  {
+   "from": "mal_inv_2_0",
+   "to": "mal_tx_0_1",
+   "from_dx": 62.0
+  },
+  {
+   "from": "g_al",
+   "to": "mal_head_0_0",
+   "from_dx": 125,
+   "label": "HCO3 ↑",
+   "label_at": [
+    1192.0,
+    410
+   ]
+  }
+ ],
+ "panels": []
+}

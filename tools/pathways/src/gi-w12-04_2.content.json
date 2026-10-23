@@ -1,0 +1,434 @@
+{
+ "name": "gallstone disease overview",
+ "title": "Gallbladder and bile duct disease sorted by where a stone lodges: transiently in the cystic duct (biliary colic), persistently in the cystic duct (acute calculous cholecystitis), in the common bile duct (choledocholithiasis, then cholangitis), or with no stone at all (acalculous cholecystitis, IgG4 disease and bile duct carcinoma), each with presentation, numbered investigations and treatment in order",
+ "col_w": 228,
+ "root": {
+  "title": "Right upper quadrant (RUQ) pain: is there a STONE, and WHERE has it lodged?",
+  "lines": [
+   "stones: the 5 Fs (female, fat, forty, fertile, flatulent)",
+   "ULTRASOUND FIRST: the gold standard for gallstones",
+   "a stone that FISTULAS into the gut → gallstone ILEUS at the ileocecal valve: see the BOWEL OBSTRUCTION chart"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_cys",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "Stone in the CYSTIC DUCT: how LONG does the pain last?",
+   "lines": [
+    "liver enzymes NORMAL, no jaundice"
+   ]
+  },
+  {
+   "id": "g_cbd",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "Stone in the COMMON BILE DUCT: is there FEVER?",
+   "lines": [
+    "blocks the ampulla → gallstone PANCREATITIS: PANCREATIC chart"
+   ]
+  },
+  {
+   "id": "g_no",
+   "cols": [
+    4,
+    5
+   ],
+   "title": "NO stone",
+   "lines": [
+    "critically ill, or a stricture or mass?"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "col",
+   "colour": "teal",
+   "drop_label": "comes and goes",
+   "head": [
+    [
+     [
+      "h",
+      "Biliary colic",
+      [
+       "stone blocks the cystic duct for a while"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Dull RUQ pain after a FATTY meal",
+      [
+       "• nausea, vomiting",
+       "• passes once the stone moves"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Labs NORMAL",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Ultrasound: stones",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Cholecystectomy",
+      [
+       "usually laparoscopic"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Meanwhile: avoid fatty food",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "acc",
+   "colour": "orange",
+   "drop_label": "persists",
+   "head": [
+    [
+     [
+      "h",
+      "Acute calculous cholecystitis",
+      [
+       "stone IMPACTED: pressure ↑, blood flow ↓"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Constant RUQ pain to the right SCAPULA",
+      [
+       "• nausea, vomiting, bloating",
+       "• MURPHY sign"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Ultrasound",
+      [
+       "stones, thick gallbladder wall"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · HIDA scan (cholescintigraphy)",
+      [
+       "the gold standard"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Antibiotics",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Cholecystectomy once STABLE",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Untreated",
+      [
+       "• gangrene, perforation",
+       "• recurrent → chronic, scarred gallbladder"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cdl",
+   "colour": "blue",
+   "drop_label": "no fever",
+   "head": [
+    [
+     [
+      "h",
+      "Choledocholithiasis",
+      [
+       "stone in the common bile duct"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "JAUNDICE: the duct is blocked",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Cholestatic enzymes + direct bilirubin ↑",
+      [
+       "• alkaline phosphatase (ALP), gamma-glutamyl transferase (GGT)",
+       "• ± aminotransferases (AST, ALT)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Duct imaging: JAUNDICE chart",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Clear the duct",
+      [
+       "how: JAUNDICE chart"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Left > 6 months",
+      [
+       "SECONDARY biliary cirrhosis"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cho",
+   "colour": "magenta",
+   "drop_label": "fever",
+   "head": [
+    [
+     [
+      "h",
+      "Acute cholangitis",
+      [
+       "the blocked duct is INFECTED"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "CHARCOT triad",
+      [
+       "• jaundice",
+       "• fever",
+       "• RUQ pain"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "REYNOLDS pentad = UNSTABLE",
+      [
+       "Charcot + CONFUSION + SHOCK (low blood pressure)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Relieve the obstruction",
+      [
+       "JAUNDICE chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "aca",
+   "colour": "purple",
+   "drop_label": "critically ill",
+   "head": [
+    [
+     [
+      "h",
+      "Acalculous cholecystitis",
+      [
+       "bile stasis + poor blood flow, NO stone"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "After MAJOR SURGERY or in the critically ill",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Ultrasound: no stone",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "MORE serious than calculous",
+      [
+       "gangrene and perforation ↑"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Antibiotics → cholecystectomy once stable",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "str",
+   "colour": "slate",
+   "drop_label": "stricture or mass",
+   "head": [
+    [
+     [
+      "h",
+      "IgG4 disease or bile duct carcinoma",
+      [
+       "both narrow the ducts"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Duct OBSTRUCTION without a stone",
+      [
+       "IgG4: sclerosing cholangitis"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Carcinoma risks",
+      [
+       "• primary sclerosing cholangitis, inflammatory bowel disease",
+       "• choledochal cyst, stones",
+       "• parasites (SE Asia)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Serum IgG4 ↑?",
+      [
+       "IgG4 disease MIMICS gallbladder cancer"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "IgG4: may be removed as if cancer",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Carcinoma: most are PROXIMAL",
+      [
+       "unresectable · poor prognosis"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,503 @@
+{
+ "name": "benign prostatic hyperplasia overview",
+ "width": 1096,
+ "title": "Benign prostatic hyperplasia decision chart: after a mandatory assessment and lifestyle changes, treatment is chosen by how bothersome the symptoms are and how large the prostate is (watchful waiting, alpha blocker, 5-alpha reductase inhibitor or both), with referral for transurethral resection when complicated or failing; plus how to recognise prostatitis instead",
+ "kinds": {
+  "ww_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ww_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ww_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ab_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ab_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ab_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ar_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ar_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ar_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "tu_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tu_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "tu_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 452,
+   "w": 246,
+   "h": 536,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 316,
+   "y": 452,
+   "w": 246,
+   "h": 536,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 564,
+   "y": 452,
+   "w": 246,
+   "h": 536,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 840,
+   "y": 452,
+   "w": 246,
+   "h": 536,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 580,
+   "h": 198,
+   "text": "TREAT"
+  },
+  {
+   "x": 23,
+   "y": 818,
+   "h": 162,
+   "text": "WATCH FOR"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 183,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Lower urinary tract symptoms (LUTS) in an older man: how BOTHERSOME, how BIG, and is it COMPLICATED?",
+   "lines": [
+    "every man: history (antihistamines, decongestants, diuretics, opioids, tricyclics, caffeine) · rectal exam: size, nodules, tenderness · urinalysis: not an infection?",
+    "International Prostate Symptom Score (IPSS) grades and tracks it · prostate-specific antigen (PSA) if life expectancy ≥ 10 years and cancer would change management",
+    "first: LIFESTYLE · less fluid at night · treat sleep apnea · compression stockings · diuretic earlier in the day",
+    "PROSTATITIS instead? ACUTE: sudden dysuria · CHRONIC: recurrent urinary infections → four-glass test · CHRONIC PELVIC PAIN: pelvic floor physiotherapy before drugs or surgery"
+   ]
+  },
+  {
+   "id": "g_no",
+   "x": 45,
+   "y": 248,
+   "w": 236,
+   "h": 132,
+   "kind": "plain",
+   "title": "Symptoms NOT a bother",
+   "lines": [
+    "mild, or moderate–severe that don't affect his life"
+   ]
+  },
+  {
+   "id": "g_bo",
+   "x": 321,
+   "y": 248,
+   "w": 484,
+   "h": 132,
+   "kind": "plain",
+   "title": "BOTHERSOME (moderate–severe) despite lifestyle",
+   "lines": [
+    "prostate SIZE picks the drug: rectal exam, PSA"
+   ]
+  },
+  {
+   "id": "g_ref",
+   "x": 845,
+   "y": 248,
+   "w": 236,
+   "h": 132,
+   "kind": "plain",
+   "title": "REFER to urology if",
+   "lines": [
+    "• medical therapy FAILS",
+    "• infections, hematuria",
+    "• PSA ↑ or abnormal rectal exam",
+    "• ANY PSA rise on a 5-alpha reductase inhibitor (5-ARI)"
+   ]
+  },
+  {
+   "id": "ww_head_0_0",
+   "x": 45,
+   "y": 460,
+   "w": 236,
+   "h": 80,
+   "kind": "ww_h",
+   "title": "Watchful waiting",
+   "lines": []
+  },
+  {
+   "id": "ab_head_0_0",
+   "x": 321,
+   "y": 460,
+   "w": 236,
+   "h": 80,
+   "kind": "ab_h",
+   "title": "Alpha blocker",
+   "lines": [
+    "relaxes prostate + bladder neck muscle"
+   ]
+  },
+  {
+   "id": "ar_head_0_0",
+   "x": 569,
+   "y": 460,
+   "w": 236,
+   "h": 80,
+   "kind": "ar_h",
+   "title": "Alpha blocker ± 5-ARI",
+   "lines": [
+    "the 5-ARI SHRINKS the prostate"
+   ]
+  },
+  {
+   "id": "tu_head_0_0",
+   "x": 845,
+   "y": 460,
+   "w": 236,
+   "h": 80,
+   "kind": "tu_h",
+   "title": "Transurethral resection (TURP)",
+   "lines": [
+    "the GOLD STANDARD surgery"
+   ]
+  },
+  {
+   "id": "ww_tx_0_0",
+   "x": 45.0,
+   "y": 580,
+   "w": 113.0,
+   "h": 198,
+   "kind": "ok",
+   "title": "SMALL prostate",
+   "lines": [
+    "watch"
+   ]
+  },
+  {
+   "id": "ww_tx_0_1",
+   "x": 168.0,
+   "y": 580,
+   "w": 113.0,
+   "h": 198,
+   "kind": "ok",
+   "title": "LARGE prostate",
+   "lines": [
+    "watch, or a 5-ARI"
+   ]
+  },
+  {
+   "id": "ab_tx_0_0",
+   "x": 321,
+   "y": 580,
+   "w": 236,
+   "h": 106,
+   "kind": "ok",
+   "title": "1 · Alpha blocker",
+   "lines": [
+    "tamsulosin, alfuzosin, silodosin, doxazosin, terazosin"
+   ]
+  },
+  {
+   "id": "ab_tx_1_0",
+   "x": 321,
+   "y": 708,
+   "w": 236,
+   "h": 70,
+   "kind": "warn",
+   "title": "or surgery",
+   "lines": []
+  },
+  {
+   "id": "ar_tx_0_0",
+   "x": 569,
+   "y": 580,
+   "w": 236,
+   "h": 98,
+   "kind": "ok",
+   "title": "1 · Alpha blocker, 5-ARI, or BOTH",
+   "lines": [
+    "finasteride, dutasteride · the combination controls symptoms best"
+   ]
+  },
+  {
+   "id": "ar_tx_1_0",
+   "x": 569,
+   "y": 700,
+   "w": 236,
+   "h": 78,
+   "kind": "warn",
+   "title": "or surgery",
+   "lines": [
+    "~a phosphodiesterase-5 inhibitor also eases LUTS"
+   ]
+  },
+  {
+   "id": "tu_tx_0_0",
+   "x": 845,
+   "y": 580,
+   "w": 236,
+   "h": 198,
+   "kind": "bad",
+   "title": "ABSOLUTE indication",
+   "lines": [
+    "• bladder outlet obstruction",
+    "• intractable retention"
+   ]
+  },
+  {
+   "id": "ww_watch_0_0",
+   "x": 45,
+   "y": 818,
+   "w": 236,
+   "h": 162,
+   "kind": "ww_w",
+   "title": "Repeat the IPSS",
+   "lines": [
+    "are symptoms progressing?"
+   ]
+  },
+  {
+   "id": "ab_watch_0_0",
+   "x": 321,
+   "y": 818,
+   "w": 236,
+   "h": 42,
+   "kind": "ab_w",
+   "title": "Works within 2 WEEKS",
+   "lines": []
+  },
+  {
+   "id": "ab_watch_1_0",
+   "x": 321,
+   "y": 882,
+   "w": 236,
+   "h": 98,
+   "kind": "bad",
+   "title": "Cataract surgery: FLOPPY IRIS",
+   "lines": [
+    "current or past use, tamsulosin most · dizziness, orthostatic BP drop"
+   ]
+  },
+  {
+   "id": "ar_watch_0_0",
+   "x": 569,
+   "y": 818,
+   "w": 236,
+   "h": 52,
+   "kind": "ar_w",
+   "title": "5-ARI works in 3–6 MONTHS",
+   "lines": []
+  },
+  {
+   "id": "ar_watch_1_0",
+   "x": 569,
+   "y": 892,
+   "w": 236,
+   "h": 88,
+   "kind": "warn",
+   "title": "5-ARI HALVES the PSA",
+   "lines": [
+    "new baseline at 6 months: any rise → refer"
+   ]
+  },
+  {
+   "id": "tu_watch_0_0",
+   "x": 845,
+   "y": 818,
+   "w": 236,
+   "h": 61,
+   "kind": "tu_w",
+   "title": "Retrograde ejaculation",
+   "lines": [
+    "most men"
+   ]
+  },
+  {
+   "id": "tu_watch_1_0",
+   "x": 845,
+   "y": 901,
+   "w": 236,
+   "h": 79,
+   "kind": "bad",
+   "title": "TURP SYNDROME: Na ↓",
+   "lines": [
+    "irrigation fluid absorbed → use saline + BIPOLAR cautery"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_no",
+   "path": "M563.0 198V223H163.0V248"
+  },
+  {
+   "from": "root",
+   "to": "g_bo",
+   "path": "M563.0 198V223H563.0V248"
+  },
+  {
+   "from": "root",
+   "to": "g_ref",
+   "path": "M563.0 198V223H963.0V248"
+  },
+  {
+   "from": "ab_tx_0_0",
+   "to": "ab_tx_1_0"
+  },
+  {
+   "from": "ar_tx_0_0",
+   "to": "ar_tx_1_0"
+  },
+  {
+   "from": "ab_watch_0_0",
+   "to": "ab_watch_1_0"
+  },
+  {
+   "from": "ar_watch_0_0",
+   "to": "ar_watch_1_0"
+  },
+  {
+   "from": "tu_watch_0_0",
+   "to": "tu_watch_1_0"
+  },
+  {
+   "from": "ww_head_0_0",
+   "to": "ww_tx_0_0",
+   "from_dx": -61.5
+  },
+  {
+   "from": "ww_head_0_0",
+   "to": "ww_tx_0_1",
+   "from_dx": 61.5
+  },
+  {
+   "from": "ww_tx_0_0",
+   "to": "ww_watch_0_0",
+   "to_dx": -61.5
+  },
+  {
+   "from": "ww_tx_0_1",
+   "to": "ww_watch_0_0",
+   "to_dx": 61.5
+  },
+  {
+   "from": "g_no",
+   "to": "ww_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ab_head_0_0",
+   "to": "ab_tx_0_0"
+  },
+  {
+   "from": "ab_tx_1_0",
+   "to": "ab_watch_0_0"
+  },
+  {
+   "from": "g_bo",
+   "to": "ab_head_0_0",
+   "from_dx": -124,
+   "label": "SMALL prostate",
+   "label_at": [
+    439.0,
+    420
+   ]
+  },
+  {
+   "from": "ar_head_0_0",
+   "to": "ar_tx_0_0"
+  },
+  {
+   "from": "ar_tx_1_0",
+   "to": "ar_watch_0_0"
+  },
+  {
+   "from": "g_bo",
+   "to": "ar_head_0_0",
+   "from_dx": 124,
+   "label": "LARGE prostate",
+   "label_at": [
+    687.0,
+    420
+   ]
+  },
+  {
+   "from": "tu_head_0_0",
+   "to": "tu_tx_0_0"
+  },
+  {
+   "from": "tu_tx_0_0",
+   "to": "tu_watch_0_0"
+  },
+  {
+   "from": "g_ref",
+   "to": "tu_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

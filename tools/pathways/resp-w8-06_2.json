@@ -1,0 +1,699 @@
+{
+ "name": "pediatric asthma overview",
+ "width": 1152,
+ "title": "Pediatric asthma decision chart: red flags send a wheezy child to a non-asthma diagnosis; otherwise age decides how asthma is confirmed (documented obstruction and reversibility under 6, lung function tests from 6) and how treatment steps up (LTRA under 6, more ICS at 6 to 11, LABA from 12)",
+ "kinds": {
+  "ex_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ex_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ex_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "na_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "na_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "na_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "pr_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pr_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pr_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "sc_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sc_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "sc_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 342,
+   "w": 260,
+   "h": 1018,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 330,
+   "y": 342,
+   "w": 260,
+   "h": 1018,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 620,
+   "y": 342,
+   "w": 260,
+   "h": 1018,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 882,
+   "y": 342,
+   "w": 260,
+   "h": 1018,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 468,
+   "h": 318,
+   "text": "CONFIRM"
+  },
+  {
+   "x": 23,
+   "y": 826,
+   "h": 526,
+   "text": "STEP UP"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 211,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Wheezy child: is it ASTHMA? Then confirm it and step up BY AGE",
+   "lines": [
+    "asthma = variable airflow limitation that REVERSES with bronchodilators and/or steroids"
+   ]
+  },
+  {
+   "id": "g_ex",
+   "x": 45,
+   "y": 120,
+   "w": 250,
+   "h": 150,
+   "kind": "plain",
+   "title": "ACUTE ATTACK: exacerbation",
+   "lines": []
+  },
+  {
+   "id": "g_red",
+   "x": 335,
+   "y": 120,
+   "w": 250,
+   "h": 150,
+   "kind": "plain",
+   "title": "ANY RED FLAG → think NON-asthma wheeze",
+   "lines": []
+  },
+  {
+   "id": "g_ok",
+   "x": 625,
+   "y": 120,
+   "w": 512,
+   "h": 150,
+   "kind": "plain",
+   "title": "NO red flag: AGE decides how to confirm and step up",
+   "lines": [
+    "• CONTROLLED = ALL: daytime symptoms < 4 days/week, nights < 1/week, reliever < 4 doses/week, normal activity, no missed school, FEV1 or peak flow (PEF) > 90% personal best",
+    "• NOT controlled? check FIRST: the diagnosis, inhaler technique (spacer with every metered-dose inhaler), adherence, triggers (SECONDHAND SMOKE), comorbidities (reflux, allergic rhinitis) → THEN step up"
+   ]
+  },
+  {
+   "id": "ex_head_0_0",
+   "x": 45,
+   "y": 350,
+   "w": 250,
+   "h": 78,
+   "kind": "ex_h",
+   "title": "Asthma exacerbation",
+   "lines": []
+  },
+  {
+   "id": "na_head_0_0",
+   "x": 335,
+   "y": 350,
+   "w": 250,
+   "h": 78,
+   "kind": "na_h",
+   "title": "Not asthma (yet)",
+   "lines": [
+    "not every wheeze is asthma"
+   ]
+  },
+  {
+   "id": "pr_head_0_0",
+   "x": 625,
+   "y": 350,
+   "w": 250,
+   "h": 78,
+   "kind": "pr_h",
+   "title": "Preschool asthma",
+   "lines": [
+    "cannot do lung function tests: diagnosed WITHOUT spirometry"
+   ]
+  },
+  {
+   "id": "sc_head_0_0",
+   "x": 887,
+   "y": 350,
+   "w": 250,
+   "h": 78,
+   "kind": "sc_h",
+   "title": "School-age asthma",
+   "lines": [
+    "can do lung function tests: needs OBJECTIVE proof"
+   ]
+  },
+  {
+   "id": "ex_dx_0_0",
+   "x": 45,
+   "y": 468,
+   "w": 250,
+   "h": 318,
+   "kind": "ex_t",
+   "title": "Monitor",
+   "lines": [
+    "• oxygen saturation: target ≥ 90%",
+    "• follow PEF for improvement"
+   ]
+  },
+  {
+   "id": "na_dx_0_0",
+   "x": 335,
+   "y": 468,
+   "w": 250,
+   "h": 148,
+   "kind": "bad",
+   "title": "Red flags",
+   "lines": [
+    "• symptoms before 6 MONTHS",
+    "• daily PRODUCTIVE cough",
+    "• NO benefit from medications",
+    "• sudden onset with no history",
+    "• failure to thrive, clubbing, stridor"
+   ]
+  },
+  {
+   "id": "na_dx_1_0",
+   "x": 335,
+   "y": 638,
+   "w": 250,
+   "h": 148,
+   "kind": "na_t",
+   "title": "Flag → what it suggests",
+   "lines": [
+    "• ASYMMETRIC sounds or imaging → foreign body",
+    "• cough while EATING or drinking → aspiration",
+    "• family history → cystic fibrosis (CF)"
+   ]
+  },
+  {
+   "id": "pr_dx_0_0",
+   "x": 625,
+   "y": 468,
+   "w": 250,
+   "h": 98,
+   "kind": "pr_t",
+   "title": "1 · Documented OBSTRUCTION",
+   "lines": [
+    "wheeze SEEN by a clinician (preferred) or a convincing parent report"
+   ]
+  },
+  {
+   "id": "pr_dx_1_0",
+   "x": 625,
+   "y": 588,
+   "w": 250,
+   "h": 134,
+   "kind": "pr_t",
+   "title": "2 · Documented REVERSIBILITY",
+   "lines": [
+    "• SABA ± oral steroid given in clinic (preferred)",
+    "• or response to a 3-month medium-dose ICS trial"
+   ]
+  },
+  {
+   "id": "pr_dx_2_0",
+   "x": 625,
+   "y": 744,
+   "w": 250,
+   "h": 42,
+   "kind": "pr_w",
+   "title": "3 · No alternative diagnosis",
+   "lines": []
+  },
+  {
+   "id": "sc_dx_0_0",
+   "x": 887,
+   "y": 468,
+   "w": 250,
+   "h": 115,
+   "kind": "sc_t",
+   "title": "1 · Spirometry",
+   "lines": [
+    "• FEV1/FVC < 0.8–0.9 (FEV1 = forced expiratory volume in 1 s, FVC = forced vital capacity)",
+    "• FEV1 ↑ ≥ 12% after bronchodilator"
+   ]
+  },
+  {
+   "id": "sc_dx_1_0",
+   "x": 887,
+   "y": 605,
+   "w": 250,
+   "h": 61,
+   "kind": "sc_w",
+   "title": "2 · Or PEF",
+   "lines": [
+    "↑ ≥ 20% after bronchodilator"
+   ]
+  },
+  {
+   "id": "sc_dx_2_0",
+   "x": 887,
+   "y": 688,
+   "w": 250,
+   "h": 97,
+   "kind": "sc_w",
+   "title": "3 · Or a CHALLENGE",
+   "lines": [
+    "• methacholine: provocative concentration (PC20) < 4 mg/mL",
+    "• exercise: FEV1 ↓ ≥ 10–15%"
+   ]
+  },
+  {
+   "id": "ex_tx_0_0",
+   "x": 45,
+   "y": 826,
+   "w": 250,
+   "h": 254,
+   "kind": "ok",
+   "title": "Nebulized short-acting beta-agonist (SABA) + ipratropium",
+   "lines": [
+    "+ oral steroids"
+   ]
+  },
+  {
+   "id": "ex_tx_1_0",
+   "x": 45,
+   "y": 1102,
+   "w": 250,
+   "h": 250,
+   "kind": "bad",
+   "title": "AVOID",
+   "lines": [
+    "• anti-inflammatories (NSAIDs)",
+    "• beta blockers",
+    "• sedatives"
+   ]
+  },
+  {
+   "id": "na_tx_0_0",
+   "x": 335,
+   "y": 826,
+   "w": 250,
+   "h": 315,
+   "kind": "na_w",
+   "title": "Look for the real cause",
+   "lines": [
+    "• transient viral wheeze",
+    "• bronchiectasis (CF, immunodeficiency, ciliary dyskinesia)",
+    "• tracheomalacia, vascular ring, heart disease",
+    "• reflux (GERD), vocal cord dysfunction, tuberculosis, bronchopulmonary dysplasia"
+   ]
+  },
+  {
+   "id": "na_tx_1_0",
+   "x": 335,
+   "y": 1163,
+   "w": 250,
+   "h": 189,
+   "kind": "na_w",
+   "title": "Foreign body?",
+   "lines": [
+    "PEDIATRIC AIRWAY chart"
+   ]
+  },
+  {
+   "id": "pr_tx_0_0",
+   "x": 625,
+   "y": 826,
+   "w": 250,
+   "h": 88,
+   "kind": "ok",
+   "title": "1 · Avoid triggers + SABA as needed",
+   "lines": [
+    "salbutamol"
+   ]
+  },
+  {
+   "id": "pr_tx_1_0",
+   "x": 625,
+   "y": 936,
+   "w": 250,
+   "h": 88,
+   "kind": "ok",
+   "title": "2 · Low-dose inhaled corticosteroid (ICS)",
+   "lines": [
+    "200 mcg/day"
+   ]
+  },
+  {
+   "id": "pr_tx_2_0",
+   "x": 625,
+   "y": 1046,
+   "w": 250,
+   "h": 68,
+   "kind": "ok",
+   "title": "3 · Medium-dose ICS",
+   "lines": [
+    "201–400 mcg/day"
+   ]
+  },
+  {
+   "id": "pr_tx_3_0",
+   "x": 625,
+   "y": 1136,
+   "w": 250,
+   "h": 88,
+   "kind": "warn",
+   "title": "4 · Add a leukotriene receptor antagonist (LTRA)",
+   "lines": [
+    "montelukast"
+   ]
+  },
+  {
+   "id": "pr_tx_4_0",
+   "x": 625,
+   "y": 1246,
+   "w": 250,
+   "h": 104,
+   "kind": "bad",
+   "title": "AVOID under 5",
+   "lines": [
+    "• combination inhalers, long-acting beta-agonist (LABA)",
+    "• oral prednisone if possible"
+   ]
+  },
+  {
+   "id": "sc_tx_0_0",
+   "x": 887,
+   "y": 826,
+   "w": 250,
+   "h": 62,
+   "kind": "ok",
+   "title": "1 · SABA as needed + avoid triggers",
+   "lines": []
+  },
+  {
+   "id": "sc_tx_1_0",
+   "x": 887,
+   "y": 910,
+   "w": 250,
+   "h": 60,
+   "kind": "ok",
+   "title": "2 · Low-dose ICS",
+   "lines": [
+    "≤ 200 mcg/day (6–11) · ≤ 250 (≥ 12)"
+   ]
+  },
+  {
+   "id": "sc_tx_2_0",
+   "x": 887.0,
+   "y": 992,
+   "w": 120.0,
+   "h": 118,
+   "kind": "ok",
+   "title": "3 · 6–11: INCREASE ICS",
+   "lines": [
+    "201–400 mcg/day"
+   ]
+  },
+  {
+   "id": "sc_tx_2_1",
+   "x": 1017.0,
+   "y": 992,
+   "w": 120.0,
+   "h": 118,
+   "kind": "ok",
+   "title": "3 · ≥ 12: ADD a LABA",
+   "lines": []
+  },
+  {
+   "id": "sc_tx_3_0",
+   "x": 887.0,
+   "y": 1132,
+   "w": 120.0,
+   "h": 116,
+   "kind": "warn",
+   "title": "4 · 6–11: add LTRA",
+   "lines": [
+    "LABA under 12 only in a niche case"
+   ]
+  },
+  {
+   "id": "sc_tx_3_1",
+   "x": 1017.0,
+   "y": 1132,
+   "w": 120.0,
+   "h": 116,
+   "kind": "warn",
+   "title": "4 · ≥ 12: medium ICS ± LTRA",
+   "lines": []
+  },
+  {
+   "id": "sc_tx_4_0",
+   "x": 887.0,
+   "y": 1270,
+   "w": 120.0,
+   "h": 82,
+   "kind": "bad",
+   "title": "5 · Prednisone",
+   "lines": []
+  },
+  {
+   "id": "sc_tx_4_1",
+   "x": 1017.0,
+   "y": 1270,
+   "w": 120.0,
+   "h": 82,
+   "kind": "bad",
+   "title": "5 · Prednisone → 6 · anti-IgE",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ex",
+   "path": "M591.0 70V95H170.0V120"
+  },
+  {
+   "from": "root",
+   "to": "g_red",
+   "path": "M591.0 70V95H460.0V120"
+  },
+  {
+   "from": "root",
+   "to": "g_ok",
+   "path": "M591.0 70V95H881.0V120"
+  },
+  {
+   "from": "na_dx_0_0",
+   "to": "na_dx_1_0"
+  },
+  {
+   "from": "pr_dx_0_0",
+   "to": "pr_dx_1_0"
+  },
+  {
+   "from": "pr_dx_1_0",
+   "to": "pr_dx_2_0"
+  },
+  {
+   "from": "sc_dx_0_0",
+   "to": "sc_dx_1_0"
+  },
+  {
+   "from": "sc_dx_1_0",
+   "to": "sc_dx_2_0"
+  },
+  {
+   "from": "ex_tx_0_0",
+   "to": "ex_tx_1_0"
+  },
+  {
+   "from": "na_tx_0_0",
+   "to": "na_tx_1_0"
+  },
+  {
+   "from": "pr_tx_0_0",
+   "to": "pr_tx_1_0"
+  },
+  {
+   "from": "pr_tx_1_0",
+   "to": "pr_tx_2_0"
+  },
+  {
+   "from": "pr_tx_2_0",
+   "to": "pr_tx_3_0"
+  },
+  {
+   "from": "pr_tx_3_0",
+   "to": "pr_tx_4_0"
+  },
+  {
+   "from": "sc_tx_0_0",
+   "to": "sc_tx_1_0"
+  },
+  {
+   "from": "sc_tx_1_0",
+   "to": "sc_tx_2_0",
+   "from_dx": -65.0
+  },
+  {
+   "from": "sc_tx_1_0",
+   "to": "sc_tx_2_1",
+   "from_dx": 65.0
+  },
+  {
+   "from": "sc_tx_2_0",
+   "to": "sc_tx_3_0"
+  },
+  {
+   "from": "sc_tx_2_1",
+   "to": "sc_tx_3_1"
+  },
+  {
+   "from": "sc_tx_3_0",
+   "to": "sc_tx_4_0"
+  },
+  {
+   "from": "sc_tx_3_1",
+   "to": "sc_tx_4_1"
+  },
+  {
+   "from": "ex_head_0_0",
+   "to": "ex_dx_0_0"
+  },
+  {
+   "from": "ex_dx_0_0",
+   "to": "ex_tx_0_0"
+  },
+  {
+   "from": "g_ex",
+   "to": "ex_head_0_0",
+   "from_dx": 0,
+   "label": "ACUTE",
+   "label_at": [
+    170.0,
+    310
+   ]
+  },
+  {
+   "from": "na_head_0_0",
+   "to": "na_dx_0_0"
+  },
+  {
+   "from": "na_dx_1_0",
+   "to": "na_tx_0_0"
+  },
+  {
+   "from": "g_red",
+   "to": "na_head_0_0",
+   "from_dx": 0,
+   "label": "RED FLAG",
+   "label_at": [
+    460.0,
+    310
+   ]
+  },
+  {
+   "from": "pr_head_0_0",
+   "to": "pr_dx_0_0"
+  },
+  {
+   "from": "pr_dx_2_0",
+   "to": "pr_tx_0_0"
+  },
+  {
+   "from": "g_ok",
+   "to": "pr_head_0_0",
+   "from_dx": -131,
+   "label": "1–5 YEARS",
+   "label_at": [
+    750.0,
+    310
+   ]
+  },
+  {
+   "from": "sc_head_0_0",
+   "to": "sc_dx_0_0"
+  },
+  {
+   "from": "sc_dx_2_0",
+   "to": "sc_tx_0_0"
+  },
+  {
+   "from": "g_ok",
+   "to": "sc_head_0_0",
+   "from_dx": 131,
+   "label": "≥ 6 YEARS",
+   "label_at": [
+    1012.0,
+    310
+   ]
+  }
+ ],
+ "panels": []
+}

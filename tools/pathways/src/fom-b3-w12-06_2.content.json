@@ -1,0 +1,289 @@
+{
+ "name": "multiple myeloma overview",
+ "title": "Monoclonal protein sorted by end-organ damage (CRAB) and marrow plasma cells into MGUS, smoldering myeloma, multiple myeloma and plasma cell leukemia, with the workup, CRAB thresholds, emergencies first and follow-up intervals",
+ "col_w": 236,
+ "root": {
+  "title": "Monoclonal (M) protein: is there END-ORGAN damage (CRAB), and how many plasma cells in the marrow?",
+  "lines": [
+   "every myeloma passes through MGUS, but not every MGUS becomes myeloma",
+   "normal marrow < 3% plasma cells"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_n",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "NO CRAB: asymptomatic · WATCH",
+   "lines": [
+    "marrow plasma cells decide"
+   ]
+  },
+  {
+   "id": "g_y",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "CRAB present: symptomatic · TREAT",
+   "lines": [
+    "hyperCalcemia · Renal failure · Anemia · Bone lesions"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "mg",
+   "colour": "teal",
+   "drop_label": "< 10%",
+   "head": [
+    [
+     [
+      "h",
+      "MGUS",
+      [
+       "monoclonal gammopathy of undetermined significance"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "No symptoms",
+      [
+       "can last many years"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Marrow < 10% plasma cells",
+      [
+       "M protein · NO CRAB"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Monitor 1–2 × a year",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sm",
+   "colour": "olive",
+   "drop_label": "≥ 10%",
+   "head": [
+    [
+     [
+      "h",
+      "Smoldering myeloma",
+      [
+       "between MGUS and myeloma"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "No symptoms",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Marrow ≥ 10% plasma cells",
+      [
+       "NO CRAB"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Close follow-up every 3–6 months",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mm",
+   "colour": "purple",
+   "drop_label": "marrow ≥ 10%",
+   "head": [
+    [
+     [
+      "h",
+      "Multiple myeloma",
+      [
+       "median age 66 · M > F"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Bone + blood",
+      [
+       "• BONE PAIN, fractures (spine most)",
+       "• fatigue (anemia), infections"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Calcium + kidney",
+      [
+       "• thirst, polyuria, nausea, confusion",
+       "• kidney impairment"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Find the M protein",
+      [
+       "• serum + 24-h urine protein electrophoresis, immunofixation",
+       "• serum free light chains",
+       "• film: ROULEAUX"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · CRAB",
+      [
+       "• Ca > 2.52, creatinine > 175 (CrCl < 40)",
+       "• Hb < 100 (or 20 below baseline)",
+       "• lytic lesions: SKELETAL SURVEY"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Marrow > 10% clonal plasma cells",
+      [
+       "FISH t(4;14), t(14;16), del(17p)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · EMERGENCIES",
+      [
+       "• cord compression → urgent surgery and/or radiation",
+       "• renal failure → anti-myeloma therapy, dialysis"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Hypercalcemia",
+      [
+       "IV fluids + pamidronate, zoledronate or denosumab"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · Anti-myeloma therapy + support",
+      [
+       "• transfusion, erythropoietin, G-CSF, antibiotics, IV IgG",
+       "• vertebroplasty, orthopedic surgery"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pc",
+   "colour": "magenta",
+   "drop_label": "cells in BLOOD",
+   "head": [
+    [
+     [
+      "h",
+      "Plasma cell leukemia",
+      [
+       "EMERGENCY: myeloma in the blood"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Symptomatic myeloma",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Plasma cells in the BLOOD",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "High-dose combination chemotherapy",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,292 @@
+{
+ "name": "bowel obstruction overview",
+ "title": "A distended abdomen: painless with bulging flanks is ascites; painful, central and tympanic is obstruction, sorted on X-ray into small bowel (adhesive after previous surgery, or non-adhesive) and large bowel (closed loop), each with presentation, numbered investigations and treatment in order, plus the FATAL signs that send any obstruction to surgery",
+ "col_w": 240,
+ "root": {
+  "title": "Distended abdomen: ASCITES or OBSTRUCTION? Then WHERE, and is it an ADHESION?",
+  "lines": [
+   "OBSTIPATION (no stool AND no gas) is the key feature of obstruction",
+   "exam every time: hernias · rectal exam for masses · SURGICAL SCARS · palpable masses"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_asc",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "PAINLESS, flanks bulge",
+   "lines": []
+  },
+  {
+   "id": "g_obs",
+   "cols": [
+    1,
+    3
+   ],
+   "title": "PAINFUL, central, tympanic: OBSTRUCTION",
+   "lines": [
+    "abdominal X-ray series: upright + supine abdomen, upright chest (free air?)",
+    "dilated if > 3 cm small bowel · > 6 cm colon · > 9 cm cecum (3-6-9)"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_sb",
+   "cols": [
+    1,
+    2
+   ],
+   "title": "SMALL bowel: any previous SURGERY (scars)?",
+   "lines": [
+    "the most common type",
+    "RED FLAGS for ischemia or impending perforation (FATAL): Fever, Acidosis (lactate ↑), Tachycardia, Abdominal pain (peritonitis), Leukocytosis · also hypotension"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "asc",
+   "colour": "slate",
+   "drop_label": "shifting dullness",
+   "head": [
+    [
+     [
+      "h",
+      "Ascites",
+      [
+       "fluid, not bowel"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Painless or mildly painful",
+      [
+       "• bulging flanks",
+       "• SHIFTING DULLNESS",
+       "• bowel habit UNCHANGED"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Not an obstruction",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat as ascites",
+      [
+       "CHRONIC LIVER FAILURE chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "adh",
+   "colour": "teal",
+   "drop_from": "t_sb",
+   "drop_label": "scars: ADHESIVE",
+   "head": [
+    [
+     [
+      "h",
+      "Adhesive small bowel obstruction",
+      [
+       "ADHESIONS: the #1 cause"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Colicky pain, progressive vomiting",
+      [
+       "• obstipation",
+       "• maybe diarrhea first",
+       "• bowel sounds ↑, then absent"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · X-ray",
+      [
+       "• CENTRAL dilated loops",
+       "• MANY air-fluid levels",
+       "• little colonic gas"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · CT",
+      [
+       "confirms, grades, shows bowel at risk"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Nasogastric (NG) tube suction + intravenous (IV) fluids",
+      [
+       "• correct electrolytes",
+       "• serial exams for peritonitis",
+       "• 80% settle"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Gastrografin contrast",
+      [
+       "not past the block in 24-48 h → SURGERY"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "nadh",
+   "colour": "orange",
+   "drop_from": "t_sb",
+   "drop_label": "NO surgery before",
+   "head": [
+    [
+     [
+      "h",
+      "Non-adhesive small bowel obstruction",
+      [
+       "a RED FLAG"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "No scar: find the cause",
+      [
+       "• HERNIA, neoplasm",
+       "• intussusception, gallstone ileus",
+       "• foreign body, stricture"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · X-ray, then CT",
+      [
+       "as for adhesive"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "SURGERY once diagnosed",
+      [
+       "will NOT settle with time and an NG tube"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "lbo",
+   "colour": "purple",
+   "drop_from": "g_obs",
+   "drop_label": "LARGE bowel",
+   "head": [
+    [
+     [
+      "h",
+      "Large bowel obstruction",
+      [
+       "NEOPLASM #1 · diverticular disease · volvulus"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "CLOSED LOOP",
+      [
+       "competent ileocecal valve: blocked at both ends, cannot decompress"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · X-ray",
+      [
+       "• PERIPHERAL dilated colon",
+       "• FEWER air-fluid levels",
+       "• little small bowel gas"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "URGENT SURGERY",
+      [
+       "every complete mechanical large bowel obstruction"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

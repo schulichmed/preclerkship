@@ -1,0 +1,520 @@
+{
+ "name": "gerd overview",
+ "width": 862,
+ "title": "GERD decision chart: classic heartburn or regurgitation without alarm features is a clinical diagnosis treated with lifestyle change then acid suppression; alarm features or Barrett's risk factors send the patient to endoscopy; failure of a PPI or diagnostic uncertainty leads to ambulatory pH monitoring and manometry",
+ "kinds": {
+  "ty_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ty_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ty_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "al_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "al_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "al_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "rf_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rf_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "rf_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 324,
+   "w": 260,
+   "h": 1058,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 330,
+   "y": 324,
+   "w": 260,
+   "h": 1058,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 592,
+   "y": 324,
+   "w": 260,
+   "h": 1058,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 450,
+   "h": 304,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 794,
+   "h": 226,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1060,
+   "h": 314,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 66,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Heartburn or regurgitation: treat it as GERD, or does it need a SCOPE?",
+   "lines": [
+    "gastroesophageal reflux disease (GERD) is a CLINICAL diagnosis: classic symptoms + NO alarm features ± response to a proton pump inhibitor (PPI) trial",
+    "endoscopy does NOT diagnose GERD: it looks for complications and other diagnoses"
+   ]
+  },
+  {
+   "id": "g_tx",
+   "x": 45,
+   "y": 156,
+   "w": 250,
+   "h": 96,
+   "kind": "plain",
+   "title": "Classic, NO alarm features: TREAT",
+   "lines": [
+    "no test needed"
+   ]
+  },
+  {
+   "id": "g_sc",
+   "x": 335,
+   "y": 156,
+   "w": 512,
+   "h": 96,
+   "kind": "plain",
+   "title": "ENDOSCOPY if ANY of these",
+   "lines": [
+    "• alarm features or Barrett's risk factors",
+    "• refractory symptoms or diagnostic uncertainty",
+    "• abnormal upper GI imaging"
+   ]
+  },
+  {
+   "id": "ty_head_0_0",
+   "x": 45,
+   "y": 332,
+   "w": 250,
+   "h": 78,
+   "kind": "ty_h",
+   "title": "Typical GERD",
+   "lines": [
+    "erosive esophagitis or non-erosive reflux disease (NERD)"
+   ]
+  },
+  {
+   "id": "al_head_0_0",
+   "x": 335,
+   "y": 332,
+   "w": 250,
+   "h": 78,
+   "kind": "al_h",
+   "title": "Cancer or Barrett's?",
+   "lines": [
+    "look for complications"
+   ]
+  },
+  {
+   "id": "rf_head_0_0",
+   "x": 597,
+   "y": 332,
+   "w": 250,
+   "h": 78,
+   "kind": "rf_h",
+   "title": "Refractory or uncertain",
+   "lines": [
+    "no response to a standard-dose PPI"
+   ]
+  },
+  {
+   "id": "ty_pres_0_0",
+   "x": 45,
+   "y": 450,
+   "w": 250,
+   "h": 133,
+   "kind": "ty_t",
+   "title": "HEARTBURN or REGURGITATION",
+   "lines": [
+    "worse lying down, bending, lifting"
+   ]
+  },
+  {
+   "id": "ty_pres_1_0",
+   "x": 45,
+   "y": 605,
+   "w": 250,
+   "h": 149,
+   "kind": "ty_w",
+   "title": "Atypical",
+   "lines": [
+    "• chest pain: ECG FIRST, always",
+    "• globus, chronic cough, hoarseness",
+    "• dental caries"
+   ]
+  },
+  {
+   "id": "al_pres_0_0",
+   "x": 335,
+   "y": 450,
+   "w": 250,
+   "h": 132,
+   "kind": "bad",
+   "title": "Alarm features",
+   "lines": [
+    "• new dyspepsia at ≥ 60",
+    "• GI bleeding, iron deficiency anemia",
+    "• weight loss, dysphagia, odynophagia",
+    "• persistent vomiting",
+    "• GI cancer in a first-degree relative"
+   ]
+  },
+  {
+   "id": "al_pres_1_0",
+   "x": 335,
+   "y": 604,
+   "w": 250,
+   "h": 150,
+   "kind": "al_w",
+   "title": "Barrett's risk factors",
+   "lines": [
+    "• GERD ≥ 5–10 years, age ≥ 50, male, Caucasian",
+    "• obesity, hiatal hernia, nocturnal reflux, smoking",
+    "• relative with Barrett's or adenocarcinoma"
+   ]
+  },
+  {
+   "id": "rf_pres_0_0",
+   "x": 597,
+   "y": 450,
+   "w": 250,
+   "h": 304,
+   "kind": "rf_t",
+   "title": "Why the PPI failed",
+   "lines": [
+    "• timing or adherence",
+    "• fast PPI metabolism (CYP2C19)",
+    "• non-acid reflux (bile)",
+    "• reflux hypersensitivity",
+    "• functional heartburn",
+    "• another diagnosis"
+   ]
+  },
+  {
+   "id": "ty_inv_0_0",
+   "x": 45,
+   "y": 794,
+   "w": 250,
+   "h": 102,
+   "kind": "ty_t",
+   "title": "1 · CLINICAL diagnosis",
+   "lines": [
+    "no alarm features"
+   ]
+  },
+  {
+   "id": "ty_inv_1_0",
+   "x": 45,
+   "y": 918,
+   "w": 250,
+   "h": 102,
+   "kind": "ty_w",
+   "title": "2 · PPI trial",
+   "lines": [
+    "a response supports it"
+   ]
+  },
+  {
+   "id": "al_inv_0_0",
+   "x": 335,
+   "y": 794,
+   "w": 250,
+   "h": 226,
+   "kind": "al_t",
+   "title": "1 · ENDOSCOPY",
+   "lines": [
+    "• complications or risk factors",
+    "• another diagnosis"
+   ]
+  },
+  {
+   "id": "rf_inv_0_0",
+   "x": 597,
+   "y": 794,
+   "w": 250,
+   "h": 42,
+   "kind": "rf_w",
+   "title": "1 · Check timing + adherence",
+   "lines": []
+  },
+  {
+   "id": "rf_inv_1_0",
+   "x": 597,
+   "y": 858,
+   "w": 250,
+   "h": 42,
+   "kind": "rf_w",
+   "title": "2 · Endoscopy",
+   "lines": []
+  },
+  {
+   "id": "rf_inv_2_0",
+   "x": 597,
+   "y": 922,
+   "w": 250,
+   "h": 98,
+   "kind": "rf_t",
+   "title": "3 · 24-hour ambulatory pH monitoring",
+   "lines": [
+    "the BEST test: workup normal + failed PPI trial"
+   ]
+  },
+  {
+   "id": "ty_tx_0_0",
+   "x": 45,
+   "y": 1060,
+   "w": 250,
+   "h": 132,
+   "kind": "ok",
+   "title": "1 · Lifestyle",
+   "lines": [
+    "• raise the head of the bed, no late meals",
+    "• weight loss, stop smoking, ↓ alcohol",
+    "• stop harmful drugs (calcium channel blockers)"
+   ]
+  },
+  {
+   "id": "ty_tx_1_0",
+   "x": 45,
+   "y": 1214,
+   "w": 250,
+   "h": 78,
+   "kind": "ok",
+   "title": "2 · Acid suppression",
+   "lines": [
+    "• PPI or H2 blocker",
+    "• antacids: quick relief only"
+   ]
+  },
+  {
+   "id": "ty_tx_2_0",
+   "x": 45,
+   "y": 1314,
+   "w": 250,
+   "h": 60,
+   "kind": "warn",
+   "title": "3 · Nissen fundoplication",
+   "lines": [
+    "selected cases"
+   ]
+  },
+  {
+   "id": "al_tx_0_0",
+   "x": 335,
+   "y": 1060,
+   "w": 250,
+   "h": 128,
+   "kind": "ok",
+   "title": "Still GERD: treat as typical",
+   "lines": []
+  },
+  {
+   "id": "al_tx_1_0",
+   "x": 335,
+   "y": 1210,
+   "w": 250,
+   "h": 164,
+   "kind": "warn",
+   "title": "Cancer found",
+   "lines": [
+    "see the LUMINAL GI MALIGNANCIES lecture"
+   ]
+  },
+  {
+   "id": "rf_tx_0_0",
+   "x": 597,
+   "y": 1060,
+   "w": 250,
+   "h": 146,
+   "kind": "bad",
+   "title": "pH NORMAL: NOT GERD",
+   "lines": [
+    "stop escalating GERD treatment"
+   ]
+  },
+  {
+   "id": "rf_tx_1_0",
+   "x": 597,
+   "y": 1228,
+   "w": 250,
+   "h": 146,
+   "kind": "warn",
+   "title": "Considering surgery",
+   "lines": [
+    "esophageal MANOMETRY first"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_tx",
+   "path": "M446.0 106V131H170.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_sc",
+   "path": "M446.0 106V131H591.0V156"
+  },
+  {
+   "from": "ty_pres_0_0",
+   "to": "ty_pres_1_0"
+  },
+  {
+   "from": "al_pres_0_0",
+   "to": "al_pres_1_0"
+  },
+  {
+   "from": "ty_inv_0_0",
+   "to": "ty_inv_1_0"
+  },
+  {
+   "from": "rf_inv_0_0",
+   "to": "rf_inv_1_0"
+  },
+  {
+   "from": "rf_inv_1_0",
+   "to": "rf_inv_2_0"
+  },
+  {
+   "from": "ty_tx_0_0",
+   "to": "ty_tx_1_0"
+  },
+  {
+   "from": "ty_tx_1_0",
+   "to": "ty_tx_2_0"
+  },
+  {
+   "from": "al_tx_0_0",
+   "to": "al_tx_1_0"
+  },
+  {
+   "from": "rf_tx_0_0",
+   "to": "rf_tx_1_0"
+  },
+  {
+   "from": "ty_head_0_0",
+   "to": "ty_pres_0_0"
+  },
+  {
+   "from": "ty_pres_1_0",
+   "to": "ty_inv_0_0"
+  },
+  {
+   "from": "ty_inv_1_0",
+   "to": "ty_tx_0_0"
+  },
+  {
+   "from": "g_tx",
+   "to": "ty_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "al_head_0_0",
+   "to": "al_pres_0_0"
+  },
+  {
+   "from": "al_pres_1_0",
+   "to": "al_inv_0_0"
+  },
+  {
+   "from": "al_inv_0_0",
+   "to": "al_tx_0_0"
+  },
+  {
+   "from": "g_sc",
+   "to": "al_head_0_0",
+   "from_dx": -131,
+   "label": "ALARM or RISK",
+   "label_at": [
+    460.0,
+    292
+   ]
+  },
+  {
+   "from": "rf_head_0_0",
+   "to": "rf_pres_0_0"
+  },
+  {
+   "from": "rf_pres_0_0",
+   "to": "rf_inv_0_0"
+  },
+  {
+   "from": "rf_inv_2_0",
+   "to": "rf_tx_0_0"
+  },
+  {
+   "from": "g_sc",
+   "to": "rf_head_0_0",
+   "from_dx": 131,
+   "label": "PPI FAILS, or unsure",
+   "label_at": [
+    722.0,
+    292
+   ]
+  }
+ ],
+ "panels": []
+}

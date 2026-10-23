@@ -1,0 +1,814 @@
+{
+ "name": "cardiac investigations overview",
+ "width": 1742,
+ "title": "Investigating suspected ischemic heart disease decision chart: the pretest probability picks the test, from no testing in asymptomatic low-risk patients, to CT coronary angiography as a test of exclusion, to exercise or pharmacologic stress testing at intermediate probability, to coronary angiography after a high-risk result; for chambers, valves and left ventricular function the gold-standard imaging test is chosen by the structure",
+ "kinds": {
+  "no_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "no_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "no_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "ct_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ct_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ct_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ex_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ex_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ex_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "im_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "im_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "im_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ph_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ph_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ph_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "an_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "an_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "an_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "sx_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sx_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "sx_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 308,
+   "w": 224,
+   "h": 650,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 294,
+   "y": 308,
+   "w": 224,
+   "h": 650,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 548,
+   "y": 308,
+   "w": 224,
+   "h": 650,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 774,
+   "y": 308,
+   "w": 224,
+   "h": 650,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1000,
+   "y": 308,
+   "w": 224,
+   "h": 650,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1254,
+   "y": 308,
+   "w": 224,
+   "h": 650,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1508,
+   "y": 308,
+   "w": 224,
+   "h": 650,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 454,
+   "h": 160,
+   "text": "CHOOSE WHEN"
+  },
+  {
+   "x": 23,
+   "y": 654,
+   "h": 96,
+   "text": "READ IT"
+  },
+  {
+   "x": 23,
+   "y": 790,
+   "h": 160,
+   "text": "WATCH FOR"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 506,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Suspected ischemic heart disease: WHICH TEST? Match it to the PRETEST PROBABILITY and the QUESTION",
+   "lines": [
+    "history + exam are the most important tests · pretest probability: age, male sex, the type of chest pain, risk factors",
+    "a NORMAL ECG does NOT exclude ischemia · chest pain is the LAST step of the ischemic cascade, after perfusion, wall motion and ECG change"
+   ]
+  },
+  {
+   "id": "g_lo",
+   "x": 45,
+   "y": 176,
+   "w": 214,
+   "h": 60,
+   "kind": "plain",
+   "title": "LOW: no symptoms",
+   "lines": []
+  },
+  {
+   "id": "g_lm",
+   "x": 299,
+   "y": 176,
+   "w": 214,
+   "h": 60,
+   "kind": "plain",
+   "title": "LOW to MODERATE",
+   "lines": []
+  },
+  {
+   "id": "g_in",
+   "x": 553,
+   "y": 176,
+   "w": 666,
+   "h": 60,
+   "kind": "plain",
+   "title": "INTERMEDIATE (25–75%): a STRESS test",
+   "lines": [
+    "can they WALK on a treadmill, and is the resting ECG normal?"
+   ]
+  },
+  {
+   "id": "g_hi",
+   "x": 1259,
+   "y": 176,
+   "w": 214,
+   "h": 60,
+   "kind": "plain",
+   "title": "HIGH-RISK result",
+   "lines": []
+  },
+  {
+   "id": "g_st",
+   "x": 1513,
+   "y": 176,
+   "w": 214,
+   "h": 60,
+   "kind": "plain",
+   "title": "Not the arteries?",
+   "lines": []
+  },
+  {
+   "id": "no_head_0_0",
+   "x": 45,
+   "y": 316,
+   "w": 214,
+   "h": 98,
+   "kind": "no_h",
+   "title": "NO testing",
+   "lines": [
+    "false positives harm: anxiety, insurance, further tests"
+   ]
+  },
+  {
+   "id": "ct_head_0_0",
+   "x": 299,
+   "y": 316,
+   "w": 214,
+   "h": 98,
+   "kind": "ct_h",
+   "title": "CT coronary angiogram (CTCA)",
+   "lines": [
+    "a test of EXCLUSION: negative predictive value 99%"
+   ]
+  },
+  {
+   "id": "ex_head_0_0",
+   "x": 553,
+   "y": 316,
+   "w": 214,
+   "h": 98,
+   "kind": "ex_h",
+   "title": "Exercise stress ECG",
+   "lines": [
+    "simple, inexpensive"
+   ]
+  },
+  {
+   "id": "im_head_0_0",
+   "x": 779,
+   "y": 316,
+   "w": 214,
+   "h": 98,
+   "kind": "im_h",
+   "title": "Stress IMAGING",
+   "lines": [
+    "nuclear perfusion (MPI) or stress echo"
+   ]
+  },
+  {
+   "id": "ph_head_0_0",
+   "x": 1005,
+   "y": 316,
+   "w": 214,
+   "h": 98,
+   "kind": "ph_h",
+   "title": "DRUG stress imaging",
+   "lines": [
+    "orthopedic, vascular, neuropathy, rate-slowing drugs"
+   ]
+  },
+  {
+   "id": "an_head_0_0",
+   "x": 1259,
+   "y": 316,
+   "w": 214,
+   "h": 98,
+   "kind": "an_h",
+   "title": "Coronary angiogram",
+   "lines": [
+    "GOLD standard for coronary anatomy; treat it at once (PCI)"
+   ]
+  },
+  {
+   "id": "sx_head_0_0",
+   "x": 1513,
+   "y": 316,
+   "w": 214,
+   "h": 98,
+   "kind": "sx_h",
+   "title": "Chambers, valves, LV function",
+   "lines": [
+    "start with chest X-ray + transthoracic echo (TTE)"
+   ]
+  },
+  {
+   "id": "no_use_0_0",
+   "x": 45,
+   "y": 454,
+   "w": 214,
+   "h": 160,
+   "kind": "no_t",
+   "title": "Asymptomatic, LOW risk",
+   "lines": [
+    "Framingham 10-year risk < 10%"
+   ]
+  },
+  {
+   "id": "ct_use_0_0",
+   "x": 299,
+   "y": 454,
+   "w": 214,
+   "h": 160,
+   "kind": "ct_t",
+   "title": "Low–moderate probability",
+   "lines": [
+    "beta blocker 1 h before: slows the heart, less motion"
+   ]
+  },
+  {
+   "id": "ex_use_0_0",
+   "x": 553,
+   "y": 454,
+   "w": 214,
+   "h": 160,
+   "kind": "ex_t",
+   "title": "Walks + interpretable NORMAL resting ECG",
+   "lines": []
+  },
+  {
+   "id": "im_use_0_0",
+   "x": 779,
+   "y": 454,
+   "w": 214,
+   "h": 160,
+   "kind": "im_t",
+   "title": "ABNORMAL resting ECG",
+   "lines": [
+    "more accurate than the ECG alone"
+   ]
+  },
+  {
+   "id": "ph_use_0_0",
+   "x": 1005,
+   "y": 454,
+   "w": 214,
+   "h": 60,
+   "kind": "ph_t",
+   "title": "Dipyridamole (vasodilator)",
+   "lines": [
+    "hold caffeine + theophylline 48 h"
+   ]
+  },
+  {
+   "id": "ph_use_1_0",
+   "x": 1005,
+   "y": 536,
+   "w": 214,
+   "h": 78,
+   "kind": "ph_t",
+   "title": "Dobutamine (β1)",
+   "lines": [
+    "PREFERRED for stress echo · or caffeine in the last 12 h"
+   ]
+  },
+  {
+   "id": "an_use_0_0",
+   "x": 1259,
+   "y": 454,
+   "w": 214,
+   "h": 160,
+   "kind": "an_t",
+   "title": "Choose when",
+   "lines": [
+    "• HIGH-RISK stress result",
+    "• unstable, shock, severe LV dysfunction",
+    "• angina despite medical therapy"
+   ]
+  },
+  {
+   "id": "sx_use_0_0",
+   "x": 1513,
+   "y": 454,
+   "w": 214,
+   "h": 160,
+   "kind": "sx_t",
+   "title": "Gold standard by structure",
+   "lines": [
+    "• valves: ECHO (TEE if TTE falls short)",
+    "• chambers, global function: MRI"
+   ]
+  },
+  {
+   "id": "no_read_0_0",
+   "x": 45,
+   "y": 654,
+   "w": 214,
+   "h": 96,
+   "kind": "ok",
+   "title": "Lifestyle advice",
+   "lines": [
+    "re-estimate the risk in 5 years"
+   ]
+  },
+  {
+   "id": "ct_read_0_0",
+   "x": 299,
+   "y": 654,
+   "w": 214,
+   "h": 96,
+   "kind": "ct_w",
+   "title": "Plaque and anatomy",
+   "lines": [
+    "calcium score > 300: ↑ risk of events"
+   ]
+  },
+  {
+   "id": "ex_read_0_0",
+   "x": 553,
+   "y": 654,
+   "w": 214,
+   "h": 96,
+   "kind": "ex_w",
+   "title": "Ischemic ST depression",
+   "lines": [
+    "exercise < 6 min = the strongest prognostic sign"
+   ]
+  },
+  {
+   "id": "im_read_0_0",
+   "x": 779,
+   "y": 654,
+   "w": 214,
+   "h": 96,
+   "kind": "im_w",
+   "title": "Rest vs stress",
+   "lines": [
+    "• REVERSIBLE defect = ISCHEMIA",
+    "• FIXED defect = INFARCT"
+   ]
+  },
+  {
+   "id": "ph_read_0_0",
+   "x": 1005,
+   "y": 654,
+   "w": 214,
+   "h": 96,
+   "kind": "ph_w",
+   "title": "Rest vs stress, as for any MPI",
+   "lines": [
+    "reversible defect = ischemia"
+   ]
+  },
+  {
+   "id": "an_read_0_0",
+   "x": 1259,
+   "y": 654,
+   "w": 214,
+   "h": 96,
+   "kind": "warn",
+   "title": "A tight lesion does NOT prove the pain is ischemic",
+   "lines": [
+    "correlate with function"
+   ]
+  },
+  {
+   "id": "sx_read_0_0",
+   "x": 1513,
+   "y": 654,
+   "w": 214,
+   "h": 96,
+   "kind": "sx_w",
+   "title": "After an MI: LV FUNCTION",
+   "lines": [
+    "the strongest predictor of survival"
+   ]
+  },
+  {
+   "id": "no_watch_0_0",
+   "x": 45,
+   "y": 790,
+   "w": 214,
+   "h": 160,
+   "kind": "warn",
+   "title": "New atypical pain or risk factors",
+   "lines": [
+    "→ a STRESS test"
+   ]
+  },
+  {
+   "id": "ct_watch_0_0",
+   "x": 299,
+   "y": 790,
+   "w": 214,
+   "h": 160,
+   "kind": "bad",
+   "title": "Not specific for FLOW-limiting lesions",
+   "lines": [
+    "• contrast: allergy, kidney disease",
+    "• 400–800 chest X-rays of radiation"
+   ]
+  },
+  {
+   "id": "ex_watch_0_0",
+   "x": 553,
+   "y": 790,
+   "w": 214,
+   "h": 160,
+   "kind": "bad",
+   "title": "NOT in",
+   "lines": [
+    "• acute MI (< 2 days), unstable angina",
+    "• symptomatic severe aortic stenosis",
+    "• uncontrolled HF or arrhythmia, PE, dissection"
+   ]
+  },
+  {
+   "id": "im_watch_0_0",
+   "x": 779,
+   "y": 790,
+   "w": 214,
+   "h": 160,
+   "kind": "warn",
+   "title": "Radiation",
+   "lines": [
+    "• nuclear: ~100 chest X-rays",
+    "• stress echo: none, but body habitus limits it"
+   ]
+  },
+  {
+   "id": "ph_watch_0_0",
+   "x": 1005,
+   "y": 790,
+   "w": 214,
+   "h": 60,
+   "kind": "bad",
+   "title": "NO dipyridamole",
+   "lines": [
+    "sick sinus, asthma"
+   ]
+  },
+  {
+   "id": "ph_watch_1_0",
+   "x": 1005,
+   "y": 872,
+   "w": 214,
+   "h": 78,
+   "kind": "bad",
+   "title": "NO dobutamine",
+   "lines": [
+    "sustained VT, recent MI, severe hypertension"
+   ]
+  },
+  {
+   "id": "an_watch_0_0",
+   "x": 1259,
+   "y": 790,
+   "w": 214,
+   "h": 160,
+   "kind": "bad",
+   "title": "Invasive",
+   "lines": [
+    "• MI, stroke, death: 1 in 1000 each",
+    "• vascular injury commonest · contrast kidney injury"
+   ]
+  },
+  {
+   "id": "sx_watch_0_0",
+   "x": 1513,
+   "y": 790,
+   "w": 214,
+   "h": 160,
+   "kind": "warn",
+   "title": "Ejection fraction (EF)",
+   "lines": [
+    "normal > 50% · prognosis falls < 30–35% · echo or MUGA"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_lo",
+   "path": "M886.0 126V151H152.0V176"
+  },
+  {
+   "from": "root",
+   "to": "g_lm",
+   "path": "M886.0 126V151H406.0V176"
+  },
+  {
+   "from": "root",
+   "to": "g_in",
+   "path": "M886.0 126V151H886.0V176"
+  },
+  {
+   "from": "root",
+   "to": "g_hi",
+   "path": "M886.0 126V151H1366.0V176"
+  },
+  {
+   "from": "root",
+   "to": "g_st",
+   "path": "M886.0 126V151H1620.0V176"
+  },
+  {
+   "from": "ph_use_0_0",
+   "to": "ph_use_1_0"
+  },
+  {
+   "from": "ph_watch_0_0",
+   "to": "ph_watch_1_0"
+  },
+  {
+   "from": "no_head_0_0",
+   "to": "no_use_0_0"
+  },
+  {
+   "from": "no_use_0_0",
+   "to": "no_read_0_0"
+  },
+  {
+   "from": "no_read_0_0",
+   "to": "no_watch_0_0"
+  },
+  {
+   "from": "g_lo",
+   "to": "no_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ct_head_0_0",
+   "to": "ct_use_0_0"
+  },
+  {
+   "from": "ct_use_0_0",
+   "to": "ct_read_0_0"
+  },
+  {
+   "from": "ct_read_0_0",
+   "to": "ct_watch_0_0"
+  },
+  {
+   "from": "g_lm",
+   "to": "ct_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ex_head_0_0",
+   "to": "ex_use_0_0"
+  },
+  {
+   "from": "ex_use_0_0",
+   "to": "ex_read_0_0"
+  },
+  {
+   "from": "ex_read_0_0",
+   "to": "ex_watch_0_0"
+  },
+  {
+   "from": "g_in",
+   "to": "ex_head_0_0",
+   "from_dx": -226,
+   "label": "walks, ECG normal",
+   "label_at": [
+    660.0,
+    276
+   ]
+  },
+  {
+   "from": "im_head_0_0",
+   "to": "im_use_0_0"
+  },
+  {
+   "from": "im_use_0_0",
+   "to": "im_read_0_0"
+  },
+  {
+   "from": "im_read_0_0",
+   "to": "im_watch_0_0"
+  },
+  {
+   "from": "g_in",
+   "to": "im_head_0_0",
+   "from_dx": 0,
+   "label": "ECG abnormal",
+   "label_at": [
+    886.0,
+    276
+   ]
+  },
+  {
+   "from": "ph_head_0_0",
+   "to": "ph_use_0_0"
+  },
+  {
+   "from": "ph_use_1_0",
+   "to": "ph_read_0_0"
+  },
+  {
+   "from": "ph_read_0_0",
+   "to": "ph_watch_0_0"
+  },
+  {
+   "from": "g_in",
+   "to": "ph_head_0_0",
+   "from_dx": 226,
+   "label": "cannot walk",
+   "label_at": [
+    1112.0,
+    276
+   ]
+  },
+  {
+   "from": "an_head_0_0",
+   "to": "an_use_0_0"
+  },
+  {
+   "from": "an_use_0_0",
+   "to": "an_read_0_0"
+  },
+  {
+   "from": "an_read_0_0",
+   "to": "an_watch_0_0"
+  },
+  {
+   "from": "g_hi",
+   "to": "an_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "sx_head_0_0",
+   "to": "sx_use_0_0"
+  },
+  {
+   "from": "sx_use_0_0",
+   "to": "sx_read_0_0"
+  },
+  {
+   "from": "sx_read_0_0",
+   "to": "sx_watch_0_0"
+  },
+  {
+   "from": "g_st",
+   "to": "sx_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

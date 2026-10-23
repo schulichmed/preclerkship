@@ -1,0 +1,434 @@
+{
+ "name": "immunocompromised host overview",
+ "title": "Immunocompromised host decision chart: fever or illness sorted by presentation and immune defect into the opportunistic infections tuberculosis, Mycobacterium avium complex, Pneumocystis pneumonia, Cryptococcus and cytomegalovirus, each with clues, investigations in order and management, with the timing of risk after stem cell transplant and how to prevent infection",
+ "col_w": 240,
+ "root": {
+  "title": "Fever in an IMMUNOCOMPROMISED host: which DEFECT, and which OPPORTUNIST does it let in?",
+  "lines": [
+   "the usual differential + OPPORTUNISTIC infections + context: immune deficiency is dynamic, TIMING is everything",
+   "STEM CELL transplant: weeks 3–4 Gram-negatives · > 3 months (CD4 last) encapsulated bacteria, fungi, viruses",
+   "the presentation is blunted: fever may be ABSENT on cytokine blockers (anakinra, rilonacept, tocilizumab, anti-TNF)",
+   "PREVENT: vaccinate BEFORE immunosuppression (LIVE vaccines generally unsafe) · no vaccine → PROPHYLAXIS"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_lu",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "COUGH, DYSPNEA: the LUNG",
+   "lines": []
+  },
+  {
+   "id": "g_cn",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "HEADACHE + FEVER",
+   "lines": [
+    "meningitis-like"
+   ]
+  },
+  {
+   "id": "g_cm",
+   "cols": [
+    4,
+    4
+   ],
+   "title": "PROLONGED FEVER, low counts",
+   "lines": [
+    "HIV CD4 < 100 · transplant · chemotherapy, immunosuppressants"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_lu",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "What RISK, and how fast?",
+   "lines": [
+    "• cough > 3 weeks + TB risk, ANY CD4 count → TB",
+    "• structural lung disease, or HIV with CD4 < 50 → MAC",
+    "• CD4 < 200, steroids, transplant + HYPOXEMIA → PJP"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "MANAGE"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "tb",
+   "colour": "brown",
+   "drop_from": "t_lu",
+   "drop_label": "> 3 WEEKS, TB risk",
+   "head": [
+    [
+     [
+      "h",
+      "Tuberculosis (TB)",
+      [
+       "M. tuberculosis · AIRBORNE"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Cough > 3 weeks",
+      [
+       "• hemoptysis, night sweats, weight loss",
+       "• born abroad, contacts, Indigenous, prison, elderly",
+       "• REACTIVATION: prior TB, HIV, transplant, steroids"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "1 · AIRBORNE precautions now",
+      [
+       "off only with another diagnosis + infectious diseases / infection control"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · 3 sputa, ≥ 1 h apart, 1 early morning",
+      [
+       "• acid-fast stain + culture",
+       "• X-ray / CT: upper lobe, CAVITIES"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "3 negative smears ≠ no TB",
+      [
+       "sensitivity only 65–70%"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "RIPE: 4 drugs",
+      [
+       "rifampin, isoniazid, pyrazinamide, ethambutol"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "TB ↔ HIV",
+      [
+       "see one, test for the other"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ma",
+   "colour": "olive",
+   "drop_from": "t_lu",
+   "drop_label": "LUNG DISEASE · CD4 < 50",
+   "head": [
+    [
+     [
+      "h",
+      "M. avium complex (MAC)",
+      [
+       "water, HOT TUBS",
+       "NOT person to person"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Two settings",
+      [
+       "• cystic fibrosis, COPD, bronchiectasis → LUNG disease",
+       "• HIV, CD4 < 50 → DISSEMINATED",
+       "• dyspnea, abdominal pain, anemia"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Imaging + respiratory culture",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Disseminated: blood + stool",
+      [
+       "mycobacterial culture"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Azithromycin + rifampin + ethambutol",
+      [
+       "• NOT the TB regimen",
+       "• prolonged: with respirology or ID"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pj",
+   "colour": "blue",
+   "drop_from": "t_lu",
+   "drop_label": "CD4 < 200 · steroids",
+   "head": [
+    [
+     [
+      "h",
+      "Pneumocystis pneumonia (PJP)",
+      [
+       "P. jirovecii, a yeast-like fungus"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Fever, cough, dyspnea + HYPOXEMIA",
+      [
+       "• O2 saturation < 93%",
+       "• HALF are not HIV: transplant, malignancy, long-term STEROIDS"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · ↑ lactate dehydrogenase (LDH)",
+      [
+       "• X-ray: interstitial pattern",
+       "• CT: GROUND-GLASS"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Bronchoscopy + lavage",
+      [
+       "calcofluor and silver (GMS) stains"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · TMP-SMX",
+      [
+       "trimethoprim-sulfamethoxazole",
+       "+ steroids if SEVERE"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Clindamycin-primaquine",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "PREVENT while CD4 < 200",
+      [
+       "prophylaxis in HIV + transplant"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cr",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Cryptococcus",
+      [
+       "C. neoformans, C. gattii",
+       "trees, bird droppings"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "MENINGITIS",
+      [
+       "• headache, fever, stiff neck",
+       "• lung: nodules, cough, hemoptysis",
+       "• skin: umbilicated papules"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "1 · ALWAYS test for HIV",
+      [
+       "cryptococcus in blood, lung or CSF"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · SERIAL lumbar punctures",
+      [
+       "• raised intracranial pressure",
+       "• culture clearance"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Induction → consolidation → maintenance",
+      [
+       "drugs and doses: see the ANTIFUNGALS chart"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "HIV: watch immune recovery",
+      [
+       "CD4 > 100 + very low viral load for > 3 months"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cm",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Cytomegalovirus (CMV)",
+      [
+       "latent in monocytes: REACTIVATES"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "CMV syndrome ± organ disease",
+      [
+       "• fever, low platelets + whites, mild hepatitis",
+       "• pneumonia, colitis, RETINITIS, encephalitis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Before transplant: donor + recipient IgG",
+      [
+       "recipient NEGATIVE + donor POSITIVE = HIGHEST risk"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Immunocompromised: CMV PCR",
+      [
+       "• monitor + diagnose",
+       "• tissue: 'owl eye' cells"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Prevent in transplant",
+      [
+       "• PCR monitoring + pre-emptive therapy",
+       "• or prophylaxis (letermovir)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Treat: see the ANTIVIRALS chart",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

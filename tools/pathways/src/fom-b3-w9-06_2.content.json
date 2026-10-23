@@ -1,0 +1,307 @@
+{
+ "name": "hemolytic anemia overview",
+ "title": "Hemolytic anemia: once the hemolysis labs are up, the direct antiglobulin test splits warm and cold autoimmune hemolysis from DAT-negative G6PD deficiency and hereditary spherocytosis, told apart by the film; schistocytes, microspherocytes or parasites on the film point to a cause from outside the cell",
+ "col_w": 240,
+ "root": {
+  "title": "Hemolysis: is it IMMUNE?",
+  "lines": [
+   "every one: ↑ indirect bilirubin · ↑ lactate dehydrogenase (LDH) · ↑ reticulocytes · ↓ haptoglobin",
+   "then the direct antiglobulin test (DAT) and the film"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_pos",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "DAT POSITIVE: antibody on the cell",
+   "lines": [
+    "autoimmune (AIHA) · alloimmune: transfusion reaction, pregnancy"
+   ]
+  },
+  {
+   "id": "g_neg",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "DAT NEGATIVE: a defect in the cell",
+   "lines": [
+    "the film decides"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "CLUES",
+  "inv": "TESTS",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "wa",
+   "colour": "orange",
+   "drop_label": "IgG",
+   "head": [
+    [
+     [
+      "h",
+      "Warm AIHA",
+      [
+       "IgG, binds at 37°C"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Splenomegaly, jaundice",
+      [
+       "• idiopathic (most)",
+       "• chronic lymphocytic leukemia, lymphoma, lupus, drugs"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "DAT + for IgG",
+      [
+       "spherocytes, polychromasia"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Steroids",
+      [
+       "+ folate"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Splenectomy",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · Immunosuppressants",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "co",
+   "colour": "blue",
+   "drop_label": "C3",
+   "head": [
+    [
+     [
+      "h",
+      "Cold AIHA",
+      [
+       "IgM, binds at 4–30°C, fixes complement"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "After an infection",
+      [
+       "• Mycoplasma, mononucleosis",
+       "• lymphoproliferative, hepatitis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "DAT + for C3",
+      [
+       "AGGLUTINATION, spherocytes"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Treat the cause · AVOID COLD",
+      [
+       "+ folate"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Steroids, splenectomy, immunosuppressants do NOT work",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "g6",
+   "colour": "olive",
+   "drop_label": "bite cells",
+   "head": [
+    [
+     [
+      "h",
+      "G6PD deficiency",
+      [
+       "glucose-6-phosphate dehydrogenase",
+       "X-linked · African, Asian, Mediterranean"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Jaundice after a TRIGGER",
+      [
+       "• infection, fava beans",
+       "• antimalarials, sulfonamides, aspirin"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "BITE and blister cells",
+      [
+       "Heinz bodies · neonatal screening"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Avoid the triggers",
+      [
+       "+ folate"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Splenectomy if severe",
+      []
+     ]
+    ]
+   ],
+   "drop_from": "t_film"
+  },
+  {
+   "id": "hs",
+   "colour": "purple",
+   "drop_label": "spherocytes",
+   "head": [
+    [
+     [
+      "h",
+      "Hereditary spherocytosis",
+      [
+       "dominant · spectrin, ankyrin, band 3"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Splenomegaly, jaundice",
+      [
+       "pigment gallstones"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "SPHEROCYTES",
+      [
+       "flow cytometry for band 3"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Folate",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Vaccinate",
+      [
+       "encapsulated bacteria · oral penicillin"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "3 · Splenectomy if severe",
+      []
+     ]
+    ]
+   ],
+   "drop_from": "t_film"
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_film",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "Film first: TORN or TINY cells mean a cause from outside",
+   "lines": [
+    "• SCHISTOCYTES: mechanical valve or leak, marathon · DIC, TTP, HUS (THROMBOCYTOPENIA chart)",
+    "• MICROSPHEROCYTES: clostridial sepsis, burns · PARASITES: malaria"
+   ]
+  }
+ ]
+}

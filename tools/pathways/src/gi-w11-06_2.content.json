@@ -1,0 +1,408 @@
+{
+ "name": "constipation overview",
+ "title": "Constipation decision chart: red flags send the patient to colonoscopy for a structural cause, a secondary cause is found on history and basic labs, and the rest is primary: functional constipation treated in steps, with slow transit and defecatory disorders found by transit study and anorectal testing when first-line treatment fails",
+ "col_w": 232,
+ "root": {
+  "title": "Constipation: a CAUSE to find, or FUNCTIONAL?",
+  "lines": [
+   "history matters more than exam: fibre, water, time for the toilet, medications · PAIN → think irritable bowel syndrome",
+   "digital rectal exam (DRE): fissure, hemorrhoids, tone at rest and squeeze, rectal mass, impaction"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_rf",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "RED FLAGS? → COLONOSCOPY",
+   "lines": [
+    "colorectal cancer until proven otherwise"
+   ]
+  },
+  {
+   "id": "g_sec",
+   "cols": [
+    1,
+    1
+   ],
+   "title": "SECONDARY: drug or disease?",
+   "lines": [
+    "complete blood count, calcium, thyroid-stimulating hormone (TSH) for everyone"
+   ]
+  },
+  {
+   "id": "g_pri",
+   "cols": [
+    2,
+    4
+   ],
+   "title": "PRIMARY (most common): Rome IV",
+   "lines": [
+    "≥ 2 of: < 3 bowel movements a week, straining, hard or lumpy stools, incomplete emptying, blockage, manual help",
+    "for 3 months · loose stools rare without laxatives · not irritable bowel syndrome"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_ref",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "Fails fibre + laxatives: TEST transit and the pelvic floor",
+   "lines": [
+    "referral to a motility specialist first"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "rf",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Structural",
+      [
+       "colorectal cancer, benign stricture, pseudo-obstruction"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "bad",
+      "Red flags",
+      [
+       "• hematochezia, anemia, weight loss",
+       "• age > 50, sudden change in bowel habit",
+       "• family history of colorectal cancer"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · COLONOSCOPY",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "NOT under 50",
+      [
+       "without a family history or alarm features"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Treat what is found",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sec",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Secondary",
+      [
+       "something else is slowing the bowel"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Drugs",
+      [
+       "• OPIOIDS, anticholinergics",
+       "• iron, calcium",
+       "• antiparkinsonian drugs"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Disease",
+      [
+       "• hypothyroidism, hypercalcemia",
+       "• Parkinson's, multiple sclerosis, autonomic neuropathy",
+       "• immobility"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Calcium + TSH",
+      [
+       "hypercalcemia? hypothyroid?"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Complete blood count",
+      [
+       "anemia"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Remove or treat the cause",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Opioids: NOT stool softeners alone",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "fn",
+   "colour": "teal",
+   "drop_label": "Rome IV, no red flag",
+   "head": [
+    [
+     [
+      "h",
+      "Functional constipation",
+      [
+       "normal transit"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Rome IV met",
+      [
+       "• normal digital rectal exam",
+       "• no red flags"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "A CLINICAL diagnosis",
+      [
+       "colonoscopy only for red flags"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Education + lifestyle",
+      [
+       "• fluid, physical activity",
+       "• fibre 20–30 g a day",
+       "• laxatives long term: NO dependency, no 'lazy colon'"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · OSMOTIC laxative FIRST line (NOT stool softeners)",
+      [
+       "• polyethylene glycol (PEG): best",
+       "• lactulose",
+       "• magnesium: care in kidney disease"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · Stimulant at bedtime",
+      [
+       "senna, bisacodyl"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "4 · Secretagogue",
+      [
+       "linaclotide, prucalopride"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "st",
+   "colour": "blue",
+   "drop_from": "t_ref",
+   "drop_label": "SLOW on transit study",
+   "head": [
+    [
+     [
+      "h",
+      "Slow transit",
+      [
+       "the colon moves stool too slowly"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Fails medical treatment",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Colonic transit study",
+      [
+       "swallow 24 radio-opaque markers day 1, abdominal X-ray day 5"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Laxatives as for functional",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Subtotal colectomy + ileorectal anastomosis",
+      [
+       "only after medical treatment fails"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dd",
+   "colour": "magenta",
+   "drop_from": "t_ref",
+   "drop_label": "can't EXPEL",
+   "head": [
+    [
+     [
+      "h",
+      "Defecatory disorder",
+      [
+       "the outlet fails, not the colon"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Pelvic floor does not coordinate",
+      [
+       "• anismus: sphincter CONTRACTS instead of relaxing",
+       "• dyssynergia",
+       "• rectocele: rectum bulges into the vagina"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Anorectal manometry + balloon expulsion",
+      [
+       "tone, sensation, reflexes, can the balloon be pushed out?"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Defecating proctogram",
+      [
+       "anatomy: rectocele"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · BIOFEEDBACK",
+      [
+       "retrain the pelvic floor to relax and push"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Rectocele repair",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

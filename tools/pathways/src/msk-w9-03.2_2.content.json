@@ -1,0 +1,170 @@
+{
+ "name": "hip fracture overview",
+ "title": "Suspected hip fracture worked through the lecture's approach: is it a fracture, is the patient stable, why did they fall and why did the bone break, then surgery within 24 to 48 hours chosen by fracture type (femoral neck non-displaced or displaced, intertrochanteric or subtrochanteric), and the after-surgery plan to prevent complications, falls and the next fracture",
+ "col_w": 250,
+ "root": {
+  "title": "Suspected HIP FRACTURE (= a proximal femur fracture)",
+  "lines": [
+   "risk = whatever raises the risk of FALLS + whatever raises the risk of OSTEOPOROSIS",
+   "high suspicion in an older person even if the pain or the trauma was minimal"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g1",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "1 · Is this a hip fracture?",
+   "lines": [
+    "sudden groin or lateral upper-thigh pain after a fall · worse moving and weight bearing",
+    "leg SHORTENED, EXTERNALLY ROTATED and ABDUCTED · cannot weight bear · painful log roll and straight leg raise"
+   ]
+  }
+ ],
+ "pres": [
+  {
+   "id": "p1",
+   "group": "g1",
+   "title": "Work up in order",
+   "lines": [
+    "1 · X-ray: AP (front-to-back) pelvis + hip · negative but suspicion still high → CT",
+    "2 · STABLE? airway, breathing, circulation (young, high-energy) · pelvic fracture? · check distal pulses + nerves, especially the SCIATIC",
+    "3 · WHY did they fall? complete blood count (CBC), electrolytes, troponin · ECG (atrial fibrillation?) · chest X-ray (pneumonia?)",
+    "4 · WHY did the bone break? a pathologic fracture (bone tumour)? · a fragility fracture qualifies as OSTEOPOROSIS → start that workup"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t1",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "5 · Plan: SURGERY within 24–48 hours for the VAST majority",
+   "lines": [
+    "quicker return to weight bearing · fewer complications of lying still · the X-ray's fracture type picks the operation ↓"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "WORKUP",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "nd",
+   "colour": "teal",
+   "drop_from": "t1",
+   "drop_label": "neck, not displaced",
+   "head": [
+    [
+     [
+      "h",
+      "Femoral neck, NON-displaced",
+      [
+       "neck = subcapital"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Options, not steps",
+      [
+       "• arthroplasty, hemi or total",
+       "• maybe screws across the fracture (internal fixation)",
+       "• maybe NON-operative: only if VERY non-displaced in a poor surgical candidate"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dp",
+   "colour": "magenta",
+   "drop_from": "t1",
+   "drop_label": "neck, displaced",
+   "head": [
+    [
+     [
+      "h",
+      "Femoral neck, DISPLACED",
+      [
+       "the femoral head's blood supply is at stake"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "ARTHROPLASTY, hemi or total",
+      [
+       "• hemi = femoral head only",
+       "• total = head + acetabulum",
+       "• surgery is REQUIRED to preserve the blood supply"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "it",
+   "colour": "orange",
+   "drop_from": "t1",
+   "drop_label": "below the neck",
+   "head": [
+    [
+     [
+      "h",
+      "Intertrochanteric or subtrochanteric",
+      [
+       "treated the same"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Intramedullary nail",
+      [
+       "essentially all are treated surgically"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "6 · After surgery: prevent the harms of lying still",
+   "cols": 1,
+   "items": [
+    "venous thromboembolism (VTE) is common → low-molecular-weight heparin (LMWH) for 14–30 days",
+    "pneumonia: a common cause of death",
+    "delirium · muscle atrophy · infection (urinary) · bedsores"
+   ]
+  },
+  {
+   "title": "Regain function and stop the next one",
+   "cols": 1,
+   "items": [
+    "EARLY MOBILIZATION + interdisciplinary rehab",
+    "falls: optimize illnesses, the home, occupational therapy and physiotherapy, gait aids",
+    "bones: vitamin D, calcium, secondary osteoporosis workup, antiresorptive"
+   ]
+  }
+ ]
+}

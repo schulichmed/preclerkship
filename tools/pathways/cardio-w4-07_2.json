@@ -1,0 +1,887 @@
+{
+ "name": "congenital heart disease overview",
+ "width": 1658,
+ "title": "Congenital heart disease decision chart: pink or blue, then pulmonary blood flow, sorts the lesions into left-to-right shunts (atrial and ventricular septal defects, patent ductus), obstruction (coarctation), right-to-left shunts (tetralogy of Fallot), separate circulations (transposition) and mixing lesions (truncus, TAPVR), each with its presentation, exam and treatment",
+ "kinds": {
+  "asd_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "asd_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "asd_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "vsd_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vsd_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "vsd_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "pda_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pda_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "pda_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "coa_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "coa_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "coa_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "tof_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tof_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "tof_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "tga_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tga_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "tga_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "mix_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mix_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "mix_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 428,
+   "w": 224,
+   "h": 698,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 266,
+   "y": 428,
+   "w": 224,
+   "h": 698,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 492,
+   "y": 428,
+   "w": 224,
+   "h": 698,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 718,
+   "y": 428,
+   "w": 224,
+   "h": 698,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 972,
+   "y": 428,
+   "w": 224,
+   "h": 698,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1198,
+   "y": 428,
+   "w": 224,
+   "h": 698,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1424,
+   "y": 428,
+   "w": 224,
+   "h": 698,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 608,
+   "h": 272,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 920,
+   "h": 198,
+   "text": "COURSE & TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 464,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Suspected congenital heart disease (CHD): is the child PINK or BLUE? Then how much PULMONARY BLOOD FLOW (PBF)?",
+   "lines": [
+    "infant in heart failure: poor feeding, sweating with feeds, failure to thrive, tachypnea, big liver",
+    "ECG + chest X-ray: lung markings show the flow  →  ECHO is usually definitive"
+   ]
+  },
+  {
+   "id": "g_pink",
+   "x": 45,
+   "y": 158,
+   "w": 892,
+   "h": 78,
+   "kind": "plain",
+   "title": "PINK: acyanotic",
+   "lines": [
+    "ALWAYS feel the femoral pulses"
+   ]
+  },
+  {
+   "id": "g_blue",
+   "x": 977,
+   "y": 158,
+   "w": 666,
+   "h": 78,
+   "kind": "plain",
+   "title": "BLUE: is it the HEART? Hyperoxia test",
+   "lines": [
+    "PaO2 stays < 100–150 on 100% oxygen → cardiac (lungs: rises to ~600)",
+    "every cyanotic lesion needs SURGERY to survive"
+   ]
+  },
+  {
+   "id": "t_lr",
+   "x": 45,
+   "y": 276,
+   "w": 666,
+   "h": 80,
+   "kind": "plain",
+   "title": "↑ PBF: LEFT-TO-RIGHT shunt",
+   "lines": [
+    "the SIZE of the hole decides the symptoms"
+   ]
+  },
+  {
+   "id": "t_ob",
+   "x": 723,
+   "y": 276,
+   "w": 214,
+   "h": 80,
+   "kind": "plain",
+   "title": "NORMAL PBF: OBSTRUCTION",
+   "lines": [
+    "no shunt"
+   ]
+  },
+  {
+   "id": "t_lo",
+   "x": 977,
+   "y": 276,
+   "w": 214,
+   "h": 80,
+   "kind": "plain",
+   "title": "↓ PBF: RIGHT-TO-LEFT",
+   "lines": [
+    "also tricuspid atresia: staged single-ventricle palliation"
+   ]
+  },
+  {
+   "id": "t_hi",
+   "x": 1203,
+   "y": 276,
+   "w": 440,
+   "h": 80,
+   "kind": "plain",
+   "title": "Normal or ↑ PBF",
+   "lines": [
+    "separate circuits, or mixing"
+   ]
+  },
+  {
+   "id": "asd_head_0_0",
+   "x": 45,
+   "y": 436,
+   "w": 214,
+   "h": 132,
+   "kind": "asd_h",
+   "title": "Atrial septal defect (ASD)",
+   "lines": [
+    "often first found in ADULTS"
+   ]
+  },
+  {
+   "id": "vsd_head_0_0",
+   "x": 271,
+   "y": 436,
+   "w": 214,
+   "h": 132,
+   "kind": "vsd_h",
+   "title": "Ventricular septal defect (VSD)",
+   "lines": [
+    "atrioventricular septal defect (AVSD) in Down syndrome: septal holes + an abnormal valve"
+   ]
+  },
+  {
+   "id": "pda_head_0_0",
+   "x": 497,
+   "y": 436,
+   "w": 214,
+   "h": 132,
+   "kind": "pda_h",
+   "title": "Patent ductus arteriosus (PDA)",
+   "lines": [
+    "common in very PREMATURE babies"
+   ]
+  },
+  {
+   "id": "coa_head_0_0",
+   "x": 723,
+   "y": 436,
+   "w": 214,
+   "h": 132,
+   "kind": "coa_h",
+   "title": "Coarctation of the aorta",
+   "lines": [
+    "narrowing where the ductus inserts"
+   ]
+  },
+  {
+   "id": "tof_head_0_0",
+   "x": 977,
+   "y": 436,
+   "w": 214,
+   "h": 132,
+   "kind": "tof_h",
+   "title": "Tetralogy of Fallot (ToF)",
+   "lines": [
+    "most common cyanotic CHD overall",
+    "right ventricular (RV) outflow block + VSD + overriding aorta + RV hypertrophy"
+   ]
+  },
+  {
+   "id": "tga_head_0_0",
+   "x": 1203,
+   "y": 436,
+   "w": 214,
+   "h": 132,
+   "kind": "tga_h",
+   "title": "Transposition of the great arteries (TGA)",
+   "lines": [
+    "most common cyanotic CHD in a NEWBORN"
+   ]
+  },
+  {
+   "id": "mix_head_0_0",
+   "x": 1429,
+   "y": 436,
+   "w": 214,
+   "h": 132,
+   "kind": "mix_h",
+   "title": "Mixing lesions",
+   "lines": [
+    "truncus arteriosus, and total anomalous pulmonary venous return (TAPVR)"
+   ]
+  },
+  {
+   "id": "asd_clue_0_0",
+   "x": 45,
+   "y": 608,
+   "w": 214,
+   "h": 126,
+   "kind": "asd_t",
+   "title": "Children: usually NO symptoms",
+   "lines": [
+    "adults: arrhythmia, pulmonary hypertension, heart failure"
+   ]
+  },
+  {
+   "id": "asd_clue_1_0",
+   "x": 45,
+   "y": 756,
+   "w": 214,
+   "h": 124,
+   "kind": "asd_w",
+   "title": "WIDE, FIXED split S2",
+   "lines": [
+    "• right ventricular heave",
+    "• soft ejection murmur, left upper sternal border"
+   ]
+  },
+  {
+   "id": "vsd_clue_0_0",
+   "x": 271,
+   "y": 608,
+   "w": 214,
+   "h": 108,
+   "kind": "vsd_t",
+   "title": "Heart failure at 6–12 WEEKS",
+   "lines": [
+    "if the defect is large"
+   ]
+  },
+  {
+   "id": "vsd_clue_1_0",
+   "x": 271,
+   "y": 738,
+   "w": 214,
+   "h": 142,
+   "kind": "vsd_w",
+   "title": "PANSYSTOLIC murmur",
+   "lines": [
+    "• small: normal S2, no heart failure",
+    "• large: SINGLE S2, almost always heart failure"
+   ]
+  },
+  {
+   "id": "pda_clue_0_0",
+   "x": 497,
+   "y": 608,
+   "w": 214,
+   "h": 125,
+   "kind": "pda_t",
+   "title": "CONTINUOUS murmur",
+   "lines": [
+    "• left infraclavicular, to the back",
+    "• shunts in systole AND diastole"
+   ]
+  },
+  {
+   "id": "pda_clue_1_0",
+   "x": 497,
+   "y": 755,
+   "w": 214,
+   "h": 125,
+   "kind": "pda_w",
+   "title": "Lungs steal perfusion",
+   "lines": [
+    "• BOUNDING pulses",
+    "• WIDE pulse pressure"
+   ]
+  },
+  {
+   "id": "coa_clue_0_0",
+   "x": 723,
+   "y": 608,
+   "w": 214,
+   "h": 89,
+   "kind": "bad",
+   "title": "↓ FEMORAL pulses, low leg BP",
+   "lines": [
+    "less flow to the lower body"
+   ]
+  },
+  {
+   "id": "coa_clue_1_0",
+   "x": 723,
+   "y": 719,
+   "w": 214,
+   "h": 69,
+   "kind": "coa_t",
+   "title": "Critical: a sick NEONATE",
+   "lines": [
+    "poor gut perfusion, heart failure"
+   ]
+  },
+  {
+   "id": "coa_clue_2_0",
+   "x": 723,
+   "y": 810,
+   "w": 214,
+   "h": 69,
+   "kind": "coa_w",
+   "title": "Milder: an older child",
+   "lines": [
+    "murmur, HYPERTENSION"
+   ]
+  },
+  {
+   "id": "tof_clue_0_0",
+   "x": 977,
+   "y": 608,
+   "w": 214,
+   "h": 162,
+   "kind": "tof_t",
+   "title": "Cyanosis tracks the RV OUTFLOW block",
+   "lines": [
+    "• mild: harsh ejection murmur, late cyanosis",
+    "• severe: blue newborn",
+    "• X-ray: 'boot-shaped' heart, ↓ PBF"
+   ]
+  },
+  {
+   "id": "tof_clue_1_0",
+   "x": 977,
+   "y": 792,
+   "w": 214,
+   "h": 88,
+   "kind": "bad",
+   "title": "TET SPELLS",
+   "lines": [
+    "sudden deep cyanosis: life-threatening"
+   ]
+  },
+  {
+   "id": "tga_clue_0_0",
+   "x": 1203,
+   "y": 608,
+   "w": 214,
+   "h": 143,
+   "kind": "bad",
+   "title": "PROFOUND cyanosis at birth",
+   "lines": [
+    "• little respiratory distress for the saturation",
+    "• little or NO murmur"
+   ]
+  },
+  {
+   "id": "tga_clue_1_0",
+   "x": 1203,
+   "y": 773,
+   "w": 214,
+   "h": 107,
+   "kind": "tga_w",
+   "title": "Alive only through fetal shunts",
+   "lines": [
+    "they let red blood reach the body"
+   ]
+  },
+  {
+   "id": "mix_clue_0_0",
+   "x": 1429,
+   "y": 608,
+   "w": 214,
+   "h": 116,
+   "kind": "mix_t",
+   "title": "Truncus: ONE artery leaves the heart",
+   "lines": [
+    "• high lung flow: congestion",
+    "• end-organ failure (gut, coronary)"
+   ]
+  },
+  {
+   "id": "mix_clue_1_0",
+   "x": 1429,
+   "y": 746,
+   "w": 214,
+   "h": 134,
+   "kind": "mix_w",
+   "title": "TAPVR: lung veins drain to the right",
+   "lines": [
+    "• unobstructed: like a big ASD, mild cyanosis",
+    "• OBSTRUCTED: deep cyanosis, lung edema, small heart"
+   ]
+  },
+  {
+   "id": "asd_tx_0_0",
+   "x": 45,
+   "y": 920,
+   "w": 214,
+   "h": 79,
+   "kind": "ok",
+   "title": "May close by 2 years",
+   "lines": []
+  },
+  {
+   "id": "asd_tx_1_0",
+   "x": 45,
+   "y": 1021,
+   "w": 214,
+   "h": 97,
+   "kind": "warn",
+   "title": "Else repair at ~5 years",
+   "lines": [
+    "surgical patch or device"
+   ]
+  },
+  {
+   "id": "vsd_tx_0_0",
+   "x": 271,
+   "y": 920,
+   "w": 214,
+   "h": 70,
+   "kind": "ok",
+   "title": "May close in 1–2 years",
+   "lines": []
+  },
+  {
+   "id": "vsd_tx_1_0",
+   "x": 271,
+   "y": 1012,
+   "w": 214,
+   "h": 106,
+   "kind": "warn",
+   "title": "Large: EARLIER surgery",
+   "lines": [
+    "protects the lungs from high pressure"
+   ]
+  },
+  {
+   "id": "pda_tx_0_0",
+   "x": 497,
+   "y": 920,
+   "w": 214,
+   "h": 198,
+   "kind": "warn",
+   "title": "Size decides, as for VSD",
+   "lines": [
+    "± heart failure"
+   ]
+  },
+  {
+   "id": "coa_tx_0_0",
+   "x": 723,
+   "y": 920,
+   "w": 214,
+   "h": 198,
+   "kind": "warn",
+   "title": "Surgery or stenting",
+   "lines": [
+    "of the narrowed segment"
+   ]
+  },
+  {
+   "id": "tof_tx_0_0",
+   "x": 977,
+   "y": 920,
+   "w": 214,
+   "h": 98,
+   "kind": "ok",
+   "title": "1 · Prostaglandin keeps the PDA open",
+   "lines": [
+    "more pulmonary flow when PBF is low"
+   ]
+  },
+  {
+   "id": "tof_tx_1_0",
+   "x": 977,
+   "y": 1040,
+   "w": 214,
+   "h": 78,
+   "kind": "warn",
+   "title": "2 · Surgery at 4–6 months",
+   "lines": [
+    "close the VSD, open the RV outflow"
+   ]
+  },
+  {
+   "id": "tga_tx_0_0",
+   "x": 1203,
+   "y": 920,
+   "w": 214,
+   "h": 198,
+   "kind": "bad",
+   "title": "Surgery in the FIRST WEEK",
+   "lines": []
+  },
+  {
+   "id": "mix_tx_0_0",
+   "x": 1429,
+   "y": 920,
+   "w": 214,
+   "h": 70,
+   "kind": "warn",
+   "title": "Truncus: surgery in 1–2 weeks",
+   "lines": []
+  },
+  {
+   "id": "mix_tx_1_0",
+   "x": 1429,
+   "y": 1012,
+   "w": 214,
+   "h": 106,
+   "kind": "warn",
+   "title": "TAPVR: surgery at 2–3 months",
+   "lines": [
+    "OBSTRUCTED: EMERGENCY surgery"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_pink",
+   "path": "M844.0 108V133H491.0V158"
+  },
+  {
+   "from": "root",
+   "to": "g_blue",
+   "path": "M844.0 108V133H1310.0V158"
+  },
+  {
+   "from": "g_pink",
+   "to": "t_lr",
+   "from_dx": -113
+  },
+  {
+   "from": "g_pink",
+   "to": "t_ob",
+   "from_dx": 339
+  },
+  {
+   "from": "g_blue",
+   "to": "t_lo",
+   "from_dx": -226
+  },
+  {
+   "from": "g_blue",
+   "to": "t_hi",
+   "from_dx": 113
+  },
+  {
+   "from": "asd_clue_0_0",
+   "to": "asd_clue_1_0"
+  },
+  {
+   "from": "vsd_clue_0_0",
+   "to": "vsd_clue_1_0"
+  },
+  {
+   "from": "pda_clue_0_0",
+   "to": "pda_clue_1_0"
+  },
+  {
+   "from": "coa_clue_0_0",
+   "to": "coa_clue_1_0"
+  },
+  {
+   "from": "coa_clue_1_0",
+   "to": "coa_clue_2_0"
+  },
+  {
+   "from": "tof_clue_0_0",
+   "to": "tof_clue_1_0"
+  },
+  {
+   "from": "tga_clue_0_0",
+   "to": "tga_clue_1_0"
+  },
+  {
+   "from": "mix_clue_0_0",
+   "to": "mix_clue_1_0"
+  },
+  {
+   "from": "asd_tx_0_0",
+   "to": "asd_tx_1_0"
+  },
+  {
+   "from": "vsd_tx_0_0",
+   "to": "vsd_tx_1_0"
+  },
+  {
+   "from": "tof_tx_0_0",
+   "to": "tof_tx_1_0"
+  },
+  {
+   "from": "mix_tx_0_0",
+   "to": "mix_tx_1_0"
+  },
+  {
+   "from": "asd_head_0_0",
+   "to": "asd_clue_0_0"
+  },
+  {
+   "from": "asd_clue_1_0",
+   "to": "asd_tx_0_0"
+  },
+  {
+   "from": "t_lr",
+   "to": "asd_head_0_0",
+   "from_dx": -226,
+   "label": "atria",
+   "label_at": [
+    152.0,
+    396
+   ]
+  },
+  {
+   "from": "vsd_head_0_0",
+   "to": "vsd_clue_0_0"
+  },
+  {
+   "from": "vsd_clue_1_0",
+   "to": "vsd_tx_0_0"
+  },
+  {
+   "from": "t_lr",
+   "to": "vsd_head_0_0",
+   "from_dx": 0,
+   "label": "ventricles",
+   "label_at": [
+    378.0,
+    396
+   ]
+  },
+  {
+   "from": "pda_head_0_0",
+   "to": "pda_clue_0_0"
+  },
+  {
+   "from": "pda_clue_1_0",
+   "to": "pda_tx_0_0"
+  },
+  {
+   "from": "t_lr",
+   "to": "pda_head_0_0",
+   "from_dx": 226,
+   "label": "ductus",
+   "label_at": [
+    604.0,
+    396
+   ]
+  },
+  {
+   "from": "coa_head_0_0",
+   "to": "coa_clue_0_0"
+  },
+  {
+   "from": "coa_clue_2_0",
+   "to": "coa_tx_0_0"
+  },
+  {
+   "from": "t_ob",
+   "to": "coa_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "tof_head_0_0",
+   "to": "tof_clue_0_0"
+  },
+  {
+   "from": "tof_clue_1_0",
+   "to": "tof_tx_0_0"
+  },
+  {
+   "from": "t_lo",
+   "to": "tof_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "tga_head_0_0",
+   "to": "tga_clue_0_0"
+  },
+  {
+   "from": "tga_clue_1_0",
+   "to": "tga_tx_0_0"
+  },
+  {
+   "from": "t_hi",
+   "to": "tga_head_0_0",
+   "from_dx": -113,
+   "label": "PARALLEL circuits",
+   "label_at": [
+    1310.0,
+    396
+   ]
+  },
+  {
+   "from": "mix_head_0_0",
+   "to": "mix_clue_0_0"
+  },
+  {
+   "from": "mix_clue_1_0",
+   "to": "mix_tx_0_0"
+  },
+  {
+   "from": "t_hi",
+   "to": "mix_head_0_0",
+   "from_dx": 113,
+   "label": "MIXING",
+   "label_at": [
+    1536.0,
+    396
+   ]
+  }
+ ],
+ "panels": []
+}

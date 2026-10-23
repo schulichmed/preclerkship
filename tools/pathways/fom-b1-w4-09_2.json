@@ -1,0 +1,648 @@
+{
+ "name": "post-exposure prophylaxis overview",
+ "width": 1294,
+ "title": "After an exposure to measles, varicella, hepatitis A, rabies or HIV: whether the person gets a vaccine, immune globulin or anti-HIV drugs, who gets which and within what window, and what to give before an anticipated exposure",
+ "kinds": {
+  "mea_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mea_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "mea_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "var_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "var_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "var_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "hea_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hea_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "hea_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "rab_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rab_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "rab_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "hiv_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hiv_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "hiv_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 236,
+   "h": 712,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 278,
+   "y": 270,
+   "w": 236,
+   "h": 712,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 544,
+   "y": 270,
+   "w": 236,
+   "h": 712,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 782,
+   "y": 270,
+   "w": 236,
+   "h": 712,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1048,
+   "y": 270,
+   "w": 236,
+   "h": 712,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 378,
+   "h": 114,
+   "text": "EXPOSURE"
+  },
+  {
+   "x": 23,
+   "y": 532,
+   "h": 114,
+   "text": "AFTER: VACCINE OR DRUG"
+  },
+  {
+   "x": 23,
+   "y": 686,
+   "h": 114,
+   "text": "AFTER: IG"
+  },
+  {
+   "x": 23,
+   "y": 840,
+   "h": 134,
+   "text": "BEFORE EXPOSURE"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 282,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Exposed: VACCINE, IMMUNE GLOBULIN (IG), or DRUGS?",
+   "lines": [
+    "a vaccine is PREFERRED (long-lasting) but needs a working immune system · IG gives IMMEDIATE but short-lived protection",
+    "LIVE vaccines: NOT if immunocompromised, pregnant or a neonate → IG instead"
+   ]
+  },
+  {
+   "id": "g_live",
+   "x": 45,
+   "y": 138,
+   "w": 464,
+   "h": 60,
+   "kind": "plain",
+   "title": "LIVE vaccine: the HOST decides",
+   "lines": [
+    "safe host → vaccine · unsafe host → IG"
+   ]
+  },
+  {
+   "id": "g_non",
+   "x": 549,
+   "y": 138,
+   "w": 464,
+   "h": 60,
+   "kind": "plain",
+   "title": "NON-live vaccine",
+   "lines": [
+    "vaccine for almost everyone · IG added for some"
+   ]
+  },
+  {
+   "id": "g_none",
+   "x": 1053,
+   "y": 138,
+   "w": 226,
+   "h": 60,
+   "kind": "plain",
+   "title": "NO vaccine",
+   "lines": [
+    "chemoprophylaxis"
+   ]
+  },
+  {
+   "id": "mea_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 226,
+   "h": 60,
+   "kind": "mea_h",
+   "title": "Measles",
+   "lines": [
+    "LIVE vaccine · airborne"
+   ]
+  },
+  {
+   "id": "var_head_0_0",
+   "x": 283,
+   "y": 278,
+   "w": 226,
+   "h": 60,
+   "kind": "var_h",
+   "title": "Varicella (chickenpox)",
+   "lines": [
+    "LIVE vaccine · airborne + lesions"
+   ]
+  },
+  {
+   "id": "hea_head_0_0",
+   "x": 549,
+   "y": 278,
+   "w": 226,
+   "h": 60,
+   "kind": "hea_h",
+   "title": "Hepatitis A",
+   "lines": [
+    "NON-live vaccine · contact"
+   ]
+  },
+  {
+   "id": "rab_head_0_0",
+   "x": 787,
+   "y": 278,
+   "w": 226,
+   "h": 60,
+   "kind": "rab_h",
+   "title": "Rabies",
+   "lines": [
+    "NON-live vaccine"
+   ]
+  },
+  {
+   "id": "hiv_head_0_0",
+   "x": 1053,
+   "y": 278,
+   "w": 226,
+   "h": 60,
+   "kind": "hiv_h",
+   "title": "HIV",
+   "lines": [
+    "NO vaccine: anti-HIV drugs"
+   ]
+  },
+  {
+   "id": "mea_pres_0_0",
+   "x": 45,
+   "y": 378,
+   "w": 226,
+   "h": 114,
+   "kind": "mea_t",
+   "title": "Same AIRSPACE counts",
+   "lines": [
+    "room, ward, class or home"
+   ]
+  },
+  {
+   "id": "var_pres_0_0",
+   "x": 283,
+   "y": 378,
+   "w": 226,
+   "h": 114,
+   "kind": "var_t",
+   "title": "Same airspace or touching a lesion",
+   "lines": [
+    "chickenpox or multi-dermatomal shingles"
+   ]
+  },
+  {
+   "id": "hea_pres_0_0",
+   "x": 549,
+   "y": 378,
+   "w": 226,
+   "h": 114,
+   "kind": "hea_t",
+   "title": "Contact",
+   "lines": []
+  },
+  {
+   "id": "rab_pres_0_0",
+   "x": 787,
+   "y": 378,
+   "w": 226,
+   "h": 114,
+   "kind": "rab_t",
+   "title": "High-risk bite or scratch",
+   "lines": [
+    "or ANY bat exposure"
+   ]
+  },
+  {
+   "id": "hiv_pres_0_0",
+   "x": 1053,
+   "y": 378,
+   "w": 226,
+   "h": 114,
+   "kind": "hiv_t",
+   "title": "High-risk exposure",
+   "lines": [
+    "• needlestick, sexual assault",
+    "• unprotected sex, HIV-positive partner",
+    "• perinatal"
+   ]
+  },
+  {
+   "id": "mea_vax_0_0",
+   "x": 45,
+   "y": 532,
+   "w": 226,
+   "h": 114,
+   "kind": "ok",
+   "title": "Vaccine within 72 h",
+   "lines": [
+    "unvaccinated, immunocompetent, > 6 months",
+    "~healthy 6–11 months: vaccine by day 3, else IG days 4–6"
+   ]
+  },
+  {
+   "id": "var_vax_0_0",
+   "x": 283,
+   "y": 532,
+   "w": 226,
+   "h": 114,
+   "kind": "ok",
+   "title": "Vaccine within 3–5 days",
+   "lines": [
+    "immunocompetent, > 1 year"
+   ]
+  },
+  {
+   "id": "hea_vax_0_0",
+   "x": 549,
+   "y": 532,
+   "w": 226,
+   "h": 114,
+   "kind": "ok",
+   "title": "Vaccine within 2 weeks",
+   "lines": [
+    "• anyone ≥ 6 months",
+    "• immunosuppressed, liver disease, > 40 too"
+   ]
+  },
+  {
+   "id": "rab_vax_0_0",
+   "x": 787,
+   "y": 532,
+   "w": 226,
+   "h": 114,
+   "kind": "ok",
+   "title": "Vaccine ASAP: EVERYONE",
+   "lines": [
+    "• unvaccinated: 4 doses (5 if immunosuppressed)",
+    "• previously vaccinated: 2 boosters"
+   ]
+  },
+  {
+   "id": "hiv_vax_0_0",
+   "x": 1053,
+   "y": 532,
+   "w": 226,
+   "h": 114,
+   "kind": "ok",
+   "title": "Anti-HIV drugs within 72 h",
+   "lines": [
+    "continue for 28 days"
+   ]
+  },
+  {
+   "id": "mea_ig_0_0",
+   "x": 45,
+   "y": 686,
+   "w": 226,
+   "h": 114,
+   "kind": "warn",
+   "title": "IG within 6 days",
+   "lines": [
+    "• immunocompromised",
+    "• pregnant",
+    "• healthy infant < 6 months"
+   ]
+  },
+  {
+   "id": "var_ig_0_0",
+   "x": 283,
+   "y": 686,
+   "w": 226,
+   "h": 114,
+   "kind": "warn",
+   "title": "IG within 96 h",
+   "lines": [
+    "• immunocompromised",
+    "• pregnant",
+    "• neonates (not > 28 weeks to an immune mother)"
+   ]
+  },
+  {
+   "id": "hea_ig_0_0",
+   "x": 549,
+   "y": 686,
+   "w": 226,
+   "h": 114,
+   "kind": "warn",
+   "title": "IG within 2 weeks",
+   "lines": [
+    "• infant < 6 months: INSTEAD of vaccine",
+    "• immunosuppressed, chronic liver disease, > 40"
+   ]
+  },
+  {
+   "id": "rab_ig_0_0",
+   "x": 787,
+   "y": 686,
+   "w": 226,
+   "h": 114,
+   "kind": "warn",
+   "title": "IG ASAP if UNVACCINATED",
+   "lines": [
+    "not if previously vaccinated"
+   ]
+  },
+  {
+   "id": "hiv_ig_0_0",
+   "x": 1053,
+   "y": 686,
+   "w": 226,
+   "h": 114,
+   "kind": "plain",
+   "title": "No IG",
+   "lines": []
+  },
+  {
+   "id": "mea_prep_0_0",
+   "x": 45,
+   "y": 840,
+   "w": 226,
+   "h": 134,
+   "kind": "plain",
+   "title": "Vaccine ONLY",
+   "lines": [
+    "• unvaccinated, > 6 months, travelling",
+    "• vaccinated but no lab immunity"
+   ]
+  },
+  {
+   "id": "var_prep_0_0",
+   "x": 283,
+   "y": 840,
+   "w": 226,
+   "h": 134,
+   "kind": "plain",
+   "title": "Vaccine ONLY: no IG or drug",
+   "lines": [
+    "immunocompetent, > 1 year, not immune"
+   ]
+  },
+  {
+   "id": "hea_prep_0_0",
+   "x": 549,
+   "y": 840,
+   "w": 226,
+   "h": 134,
+   "kind": "plain",
+   "title": "Travel to an endemic country",
+   "lines": [
+    "• vaccine if ≥ 6 months, leaving > 2 weeks away",
+    "• IG if < 6 months or leaving within 2 weeks"
+   ]
+  },
+  {
+   "id": "rab_prep_0_0",
+   "x": 787,
+   "y": 840,
+   "w": 226,
+   "h": 134,
+   "kind": "plain",
+   "title": "Vaccine (no IG)",
+   "lines": [
+    "• travel > 30 days where rabid animals are common",
+    "• wildlife work, spelunkers, hunters"
+   ]
+  },
+  {
+   "id": "hiv_prep_0_0",
+   "x": 1053,
+   "y": 840,
+   "w": 226,
+   "h": 134,
+   "kind": "plain",
+   "title": "Daily anti-HIV drugs (Truvada)",
+   "lines": [
+    "• injection drug use",
+    "• HIV-positive partner"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_live",
+   "path": "M662.0 88V113H277.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_non",
+   "path": "M662.0 88V113H781.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_none",
+   "path": "M662.0 88V113H1166.0V138"
+  },
+  {
+   "from": "mea_head_0_0",
+   "to": "mea_pres_0_0"
+  },
+  {
+   "from": "mea_pres_0_0",
+   "to": "mea_vax_0_0"
+  },
+  {
+   "from": "mea_vax_0_0",
+   "to": "mea_ig_0_0"
+  },
+  {
+   "from": "mea_ig_0_0",
+   "to": "mea_prep_0_0"
+  },
+  {
+   "from": "g_live",
+   "to": "mea_head_0_0",
+   "from_dx": -119
+  },
+  {
+   "from": "var_head_0_0",
+   "to": "var_pres_0_0"
+  },
+  {
+   "from": "var_pres_0_0",
+   "to": "var_vax_0_0"
+  },
+  {
+   "from": "var_vax_0_0",
+   "to": "var_ig_0_0"
+  },
+  {
+   "from": "var_ig_0_0",
+   "to": "var_prep_0_0"
+  },
+  {
+   "from": "g_live",
+   "to": "var_head_0_0",
+   "from_dx": 119
+  },
+  {
+   "from": "hea_head_0_0",
+   "to": "hea_pres_0_0"
+  },
+  {
+   "from": "hea_pres_0_0",
+   "to": "hea_vax_0_0"
+  },
+  {
+   "from": "hea_vax_0_0",
+   "to": "hea_ig_0_0"
+  },
+  {
+   "from": "hea_ig_0_0",
+   "to": "hea_prep_0_0"
+  },
+  {
+   "from": "g_non",
+   "to": "hea_head_0_0",
+   "from_dx": -119
+  },
+  {
+   "from": "rab_head_0_0",
+   "to": "rab_pres_0_0"
+  },
+  {
+   "from": "rab_pres_0_0",
+   "to": "rab_vax_0_0"
+  },
+  {
+   "from": "rab_vax_0_0",
+   "to": "rab_ig_0_0"
+  },
+  {
+   "from": "rab_ig_0_0",
+   "to": "rab_prep_0_0"
+  },
+  {
+   "from": "g_non",
+   "to": "rab_head_0_0",
+   "from_dx": 119
+  },
+  {
+   "from": "hiv_head_0_0",
+   "to": "hiv_pres_0_0"
+  },
+  {
+   "from": "hiv_pres_0_0",
+   "to": "hiv_vax_0_0"
+  },
+  {
+   "from": "hiv_vax_0_0",
+   "to": "hiv_ig_0_0"
+  },
+  {
+   "from": "hiv_ig_0_0",
+   "to": "hiv_prep_0_0"
+  },
+  {
+   "from": "g_none",
+   "to": "hiv_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

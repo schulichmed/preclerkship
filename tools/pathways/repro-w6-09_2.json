@@ -1,0 +1,130 @@
+{
+ "name": "approach to neonatal care pathway 2",
+ "title": "Neonatal hypoglycemia pathway: which infants are at risk, when to check glucose, and what to do when it is below 2.6 mmol/L with or without symptoms",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 240,
+   "y": 10,
+   "w": 440,
+   "kind": "plain",
+   "title": "At-risk infant",
+   "lines": [
+    "infant of a diabetic mother (IDM)",
+    "large for gestational age (LGA) > 90th",
+    "small for gestational age < 10th",
+    "preterm < 37 weeks"
+   ]
+  },
+  {
+   "id": "B",
+   "x": 270,
+   "y": 160,
+   "w": 380,
+   "kind": "plain",
+   "title": "Check glucose 2 h after the first feed",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 300,
+   "y": 250,
+   "w": 320,
+   "kind": "plain",
+   "title": "Glucose ≥ 2.6 mmol/L?",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 690,
+   "y": 250,
+   "w": 210,
+   "kind": "ok",
+   "title": "2.6, no more sticks",
+   "lines": []
+  },
+  {
+   "id": "E",
+   "x": 230,
+   "y": 350,
+   "w": 460,
+   "kind": "plain",
+   "title": "Symptomatic?",
+   "lines": [
+    "jittery · irritable · lethargic · poor feeding"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 40,
+   "y": 490,
+   "w": 300,
+   "kind": "warn",
+   "title": "Early, frequent feeding",
+   "lines": [
+    "and recheck"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 440,
+   "y": 490,
+   "w": 440,
+   "kind": "bad",
+   "title": "intravenous (IV) DEXTROSE bolus + infusion",
+   "lines": [
+    "not a feed alone · think sepsis"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C"
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "from_side": "right",
+   "to_side": "left",
+   "label": "Yes",
+   "label_at": [
+    655,
+    256
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "label": "No",
+   "label_at": [
+    482,
+    322
+   ]
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "from_dx": -100,
+   "label": "No",
+   "label_at": [
+    248,
+    446
+   ]
+  },
+  {
+   "from": "E",
+   "to": "G",
+   "from_dx": 100,
+   "label": "Yes: medical emergency",
+   "label_at": [
+    752,
+    450
+   ]
+  }
+ ]
+}

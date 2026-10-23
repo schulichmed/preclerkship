@@ -1,0 +1,320 @@
+{
+ "name": "disorders of puberty pathway",
+ "title": "Disorders of puberty pathway: early or late, normal variants, central versus peripheral precocious puberty by luteinizing hormone, and primary, secondary or constitutional delay by LH and FSH",
+ "width": 1120,
+ "nodes": [
+  {
+   "id": "A",
+   "x": 460,
+   "y": 10,
+   "w": 260,
+   "kind": "plain",
+   "title": "Abnormal pubertal timing",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 500,
+   "y": 86,
+   "w": 180,
+   "h": 48,
+   "kind": "plain",
+   "title": "Early or late?",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 130,
+   "y": 178,
+   "w": 200,
+   "h": 48,
+   "kind": "plain",
+   "title": "Normal variant?",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 10,
+   "y": 270,
+   "w": 190,
+   "kind": "ok",
+   "title": "Premature thelarche — benign",
+   "lines": [
+    "~breast only, no growth spurt, no bone age advance"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 215,
+   "y": 270,
+   "w": 240,
+   "kind": "warn",
+   "title": "Premature pubarche — adrenal",
+   "lines": [
+    "~pubic hair only, age 6-8",
+    "linked to insulin resistance and polyendocrine metabolic ovarian syndrome"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 520,
+   "y": 270,
+   "w": 200,
+   "h": 48,
+   "kind": "plain",
+   "title": "Random LH?",
+   "lines": []
+  },
+  {
+   "id": "G",
+   "x": 20,
+   "y": 460,
+   "w": 400,
+   "kind": "anti",
+   "title": "Central precocious puberty (CPP)",
+   "lines": [
+    "~random LH over 0.3, or gonadotropin-releasing hormone (GnRH) stimulation peak over 5",
+    "LH HIGH, steroids HIGH"
+   ]
+  },
+  {
+   "id": "H",
+   "x": 450,
+   "y": 460,
+   "w": 320,
+   "kind": "ana",
+   "title": "Peripheral precocious puberty (PPP)",
+   "lines": [
+    "~random LH low",
+    "LH LOW, steroids HIGH"
+   ]
+  },
+  {
+   "id": "N",
+   "x": 20,
+   "y": 590,
+   "w": 170,
+   "kind": "plain",
+   "title": "Boy: testes BILATERALLY ENLARGED",
+   "lines": [
+    "over 4 mL"
+   ]
+  },
+  {
+   "id": "I",
+   "x": 210,
+   "y": 590,
+   "w": 210,
+   "kind": "plain",
+   "title": "Girls: mostly idiopathic",
+   "lines": [
+    "Boys: under 50% idiopathic — IMAGE THE central nervous system (CNS)"
+   ]
+  },
+  {
+   "id": "J",
+   "x": 210,
+   "y": 716,
+   "w": 210,
+   "kind": "ok",
+   "title": "Treat with luteinizing hormone-releasing hormone (LHRH) analogue",
+   "lines": [
+    "continuous dosing down-regulates the receptor"
+   ]
+  },
+  {
+   "id": "K",
+   "x": 500,
+   "y": 570,
+   "w": 270,
+   "kind": "plain",
+   "title": "Gonadal",
+   "lines": [
+    "cysts, granulosa or Leydig tumour, McCune-Albright, testotoxicosis"
+   ]
+  },
+  {
+   "id": "L",
+   "x": 500,
+   "y": 668,
+   "w": 270,
+   "kind": "plain",
+   "title": "Adrenal",
+   "lines": [
+    "congenital adrenal hyperplasia, virilising tumour, Cushing"
+   ]
+  },
+  {
+   "id": "M",
+   "x": 500,
+   "y": 766,
+   "w": 270,
+   "kind": "plain",
+   "title": "Iatrogenic",
+   "lines": [
+    "exogenous hormones"
+   ]
+  },
+  {
+   "id": "O",
+   "x": 500,
+   "y": 846,
+   "w": 270,
+   "kind": "plain",
+   "title": "Boy: virilised but testes SMALL",
+   "lines": [
+    "under 3 mL"
+   ]
+  },
+  {
+   "id": "P",
+   "x": 810,
+   "y": 178,
+   "w": 300,
+   "kind": "plain",
+   "title": "LH and follicle-stimulating hormone (FSH)?",
+   "lines": []
+  },
+  {
+   "id": "Q",
+   "x": 855,
+   "y": 270,
+   "w": 255,
+   "kind": "bad",
+   "title": "Primary hypogonadism",
+   "lines": [
+    "~HIGH — hypergonadotropic",
+    "Turner, Klinefelter, chemotherapy, radiation"
+   ]
+  },
+  {
+   "id": "R",
+   "x": 855,
+   "y": 390,
+   "w": 255,
+   "kind": "bad",
+   "title": "Secondary — think brain",
+   "lines": [
+    "~LOW — hypogonadotropic",
+    "Kallmann with anosmia, tumour, prolactin, eating disorder, chronic illness"
+   ]
+  },
+  {
+   "id": "S",
+   "x": 855,
+   "y": 510,
+   "w": 255,
+   "kind": "ok",
+   "title": "Constitutional delay of growth and puberty (CDGP) — normal variant",
+   "lines": [
+    "~low but delayed bone age, family history, normal velocity",
+    "commonest cause, especially boys"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "path": "M500 110H230V176",
+   "label": "EARLY — girls under 8, boys under 9",
+   "label_at": [
+    365,
+    100
+   ]
+  },
+  {
+   "from": "B",
+   "to": "P",
+   "path": "M680 110H960V176",
+   "label": "LATE — no signs by 13 girls, 14 boys",
+   "label_at": [
+    820,
+    100
+   ]
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "from_dx": -50
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "from_dx": 50
+  },
+  {
+   "from": "C",
+   "to": "F",
+   "from_side": "right",
+   "label": "true precocity",
+   "label_at": [
+    425,
+    226
+   ]
+  },
+  {
+   "from": "F",
+   "to": "G",
+   "path": "M580 318V430H220V458"
+  },
+  {
+   "from": "F",
+   "to": "H",
+   "to_dx": 10
+  },
+  {
+   "from": "G",
+   "to": "N",
+   "from_dx": -95
+  },
+  {
+   "from": "G",
+   "to": "I",
+   "from_dx": 95
+  },
+  {
+   "from": "I",
+   "to": "J"
+  },
+  {
+   "from": "H",
+   "to": "K",
+   "path": "M475 538V609H498"
+  },
+  {
+   "from": "H",
+   "to": "L",
+   "path": "M475 538V707H498"
+  },
+  {
+   "from": "H",
+   "to": "M",
+   "path": "M475 538V796H498"
+  },
+  {
+   "from": "H",
+   "to": "O",
+   "path": "M475 538V876H498"
+  },
+  {
+   "from": "P",
+   "to": "Q",
+   "path": "M835 240V318H853"
+  },
+  {
+   "from": "P",
+   "to": "R",
+   "path": "M835 240V438H853"
+  },
+  {
+   "from": "P",
+   "to": "S",
+   "path": "M835 240V578H853"
+  }
+ ]
+}

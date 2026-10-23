@@ -1,0 +1,375 @@
+{
+ "name": "chronic liver failure overview",
+ "title": "Chronic liver failure: find the cause (alcohol, primary sclerosing cholangitis, primary biliary cholangitis among others) and manage the complications of cirrhosis (varices by size and risk, ascites, hepatic encephalopathy), each with presentation, investigations and treatment in order",
+ "col_w": 226,
+ "root": {
+  "title": "Chronic liver disease: what is the CAUSE, and has cirrhosis DECOMPENSATED?",
+  "lines": [
+   "failure = synthesis ↓ (albumin, clotting factors) + excretion ↓ (bilirubin, jaundice)",
+   "a MASS in chronic liver disease = hepatocellular carcinoma until proven otherwise",
+   "PORTAL HYPERTENSION from a block PRE-hepatic (portal vein thrombosis), HEPATIC (cirrhosis commonest) or POST-hepatic (right heart failure, constrictive pericarditis, hepatic vein obstruction)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_cause",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "Find and treat the CAUSE",
+   "lines": [
+    "also: hepatitis B or C · hemochromatosis · Wilson · alpha-1 antitrypsin · fatty liver · methotrexate, amiodarone · Budd-Chiari, heart failure"
+   ]
+  },
+  {
+   "id": "g_dec",
+   "cols": [
+    3,
+    5
+   ],
+   "title": "DECOMPENSATED: variceal bleed · ascites · encephalopathy · jaundice",
+   "lines": [
+    "each one raises mortality"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "alc",
+   "colour": "orange",
+   "drop_label": "drinks",
+   "head": [
+    [
+     [
+      "h",
+      "Alcohol-related liver disease",
+      [
+       "fatty liver → fibrosis → cirrhosis"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Chronic heavy drinking",
+      [
+       "higher risk: female, metabolic syndrome, hepatitis B or C, malnutrition, hemochromatosis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Enzyme pattern",
+      [
+       "AST > ALT: ABNORMAL LIVER ENZYMES chart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · ABSTINENCE",
+      [
+       "the first step in management"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "psc",
+   "colour": "teal",
+   "drop_label": "male, bowel disease",
+   "head": [
+    [
+     [
+      "h",
+      "Primary sclerosing cholangitis",
+      [
+       "intra- AND extrahepatic ducts (mostly extra)"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Right upper quadrant pain",
+      [
+       "• MALE",
+       "• inflammatory bowel disease"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Alkaline phosphatase (ALP) ↑",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Imaging: BEADED bile ducts",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Liver transplant",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pbc",
+   "colour": "purple",
+   "drop_label": "female, itch",
+   "head": [
+    [
+     [
+      "h",
+      "Primary biliary cholangitis",
+      [
+       "ONLY the intrahepatic ducts"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Fatigue, ITCH, jaundice",
+      [
+       "FEMALE"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · ANTI-MITOCHONDRIAL antibody +",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Ursodiol",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "var",
+   "colour": "brown",
+   "drop_label": "bleed",
+   "head": [
+    [
+     [
+      "h",
+      "Esophageal varices",
+      [
+       "portal hypertension"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Variceal BLEED",
+      [
+       "screen to find them BEFORE they bleed"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Screening endoscopy when cirrhosis is diagnosed",
+      [
+       "decompensated: EVERY year"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · What size, what RISK?",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "NO prophylaxis",
+      [
+       "• none: repeat endoscopy in 2–3 years",
+       "• SMALL, low risk"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "SMALL high risk or LARGE low risk",
+      [
+       "non-selective BETA-BLOCKER: propranolol, nadolol, carvedilol"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "LARGE, high risk → BAND LIGATION",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "asc",
+   "colour": "blue",
+   "drop_label": "distension",
+   "head": [
+    [
+     [
+      "h",
+      "Ascites",
+      [
+       "the COMMONEST complication"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Abdominal DISTENSION",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Ascites or a distended bowel?",
+      [
+       "BOWEL OBSTRUCTION chart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Sodium < 2 g/day + diuretics",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Fluid restriction ONLY if sodium < 125",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "he",
+   "colour": "magenta",
+   "drop_label": "confused",
+   "head": [
+    [
+     [
+      "h",
+      "Hepatic encephalopathy",
+      [
+       "toxins (ammonia) not cleared + shunting"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Subtle change → COMA",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "warn",
+      "Do NOT follow ammonia levels",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · LACTULOSE",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · RECURRENT → add rifaximin",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

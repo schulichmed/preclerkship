@@ -1,0 +1,590 @@
+{
+ "name": "bleeding in children overview",
+ "width": 1124,
+ "title": "Bleeding in children decision chart: read clotting times against newborn ranges, then mucocutaneous bleeding points to immune thrombocytopenia or von Willebrand disease and deep or umbilical bleeding to hemophilia or vitamin K deficiency (hemorrhagic disease of the newborn); each column gives presentation, investigations and management",
+ "kinds": {
+  "itp_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "itp_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "itp_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "vwd_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vwd_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "vwd_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "hem_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hem_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "hem_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "hdn_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hdn_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "hdn_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 342,
+   "w": 260,
+   "h": 934,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 302,
+   "y": 342,
+   "w": 260,
+   "h": 934,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 592,
+   "y": 342,
+   "w": 260,
+   "h": 934,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 854,
+   "y": 342,
+   "w": 260,
+   "h": 934,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 488,
+   "h": 242,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 770,
+   "h": 180,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 990,
+   "h": 278,
+   "text": "MANAGEMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 197,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Child who bleeds: EXCESSIVE or UNUSUAL, read against NEWBORN normals?",
+   "lines": [
+    "excessive: nosebleed > 10 min, gum bleeding, wide bruising, heavy menses · unusual: brain or joint bleed, umbilical stump, surgery (dental, circumcision)",
+    "liver immature until 6 months: vitamin K factors, protein C, S low → prothrombin time (PT/INR) and activated partial thromboplastin time (aPTT) normally LONGER, worst if premature",
+    "LIFE-THREATENING bleed, no diagnosis yet → fresh frozen plasma (most factors; little VIII, vWF, fibrinogen) · cryoprecipitate = VIII, vWF, XIII + fibrinogen"
+   ]
+  },
+  {
+   "id": "g_pri",
+   "x": 45,
+   "y": 210,
+   "w": 512,
+   "h": 60,
+   "kind": "plain",
+   "title": "MUCOCUTANEOUS: PRIMARY (small vessels)",
+   "lines": [
+    "petechiae, bruising, nosebleeds, heavy menses"
+   ]
+  },
+  {
+   "id": "g_sec",
+   "x": 597,
+   "y": 210,
+   "w": 512,
+   "h": 60,
+   "kind": "plain",
+   "title": "MUSCLE, JOINT, UMBILICAL: SECONDARY (larger vessels)",
+   "lines": [
+    "also factor XIII, X and fibrinogen deficiency"
+   ]
+  },
+  {
+   "id": "itp_head_0_0",
+   "x": 45,
+   "y": 350,
+   "w": 250,
+   "h": 98,
+   "kind": "itp_h",
+   "title": "Immune thrombocytopenia (ITP)",
+   "lines": [
+    "autoimmune · usually after an infection"
+   ]
+  },
+  {
+   "id": "vwd_head_0_0",
+   "x": 307,
+   "y": 350,
+   "w": 250,
+   "h": 98,
+   "kind": "vwd_h",
+   "title": "von Willebrand disease (vWD)",
+   "lines": [
+    "von Willebrand factor (vWF) works in primary AND secondary hemostasis"
+   ]
+  },
+  {
+   "id": "hem_head_0_0",
+   "x": 597,
+   "y": 350,
+   "w": 250,
+   "h": 98,
+   "kind": "hem_h",
+   "title": "Hemophilia A (FVIII) · B (FIX)",
+   "lines": [
+    "X-linked: boys · carrier girls may bleed"
+   ]
+  },
+  {
+   "id": "hdn_head_0_0",
+   "x": 859,
+   "y": 350,
+   "w": 250,
+   "h": 98,
+   "kind": "hdn_h",
+   "title": "Hemorrhagic disease of the newborn (HDN)",
+   "lines": [
+    "vitamin K lack on top of LOW newborn levels"
+   ]
+  },
+  {
+   "id": "itp_pres_0_0",
+   "x": 45,
+   "y": 488,
+   "w": 250,
+   "h": 242,
+   "kind": "itp_t",
+   "title": "Age 2–5, boys = girls",
+   "lines": [
+    "• purpura, petechiae",
+    "• major bleeding uncommon",
+    "• teens: more often secondary"
+   ]
+  },
+  {
+   "id": "vwd_pres_0_0",
+   "x": 307,
+   "y": 488,
+   "w": 250,
+   "h": 101,
+   "kind": "vwd_t",
+   "title": "Mucocutaneous",
+   "lines": [
+    "• nosebleeds, bruising",
+    "• heavy menses"
+   ]
+  },
+  {
+   "id": "vwd_pres_1_0",
+   "x": 307,
+   "y": 611,
+   "w": 250,
+   "h": 119,
+   "kind": "vwd_w",
+   "title": "Severity by type",
+   "lines": [
+    "• 1: MILD (quantitative)",
+    "• 2: MILD–MODERATE (qualitative)",
+    "• 3: SEVERE (absent)"
+   ]
+  },
+  {
+   "id": "hem_pres_0_0",
+   "x": 597,
+   "y": 488,
+   "w": 250,
+   "h": 242,
+   "kind": "hem_t",
+   "title": "Spontaneous JOINT + MUSCLE bleeds",
+   "lines": [
+    "• knees, then ankles",
+    "• shows once WALKING"
+   ]
+  },
+  {
+   "id": "hdn_pres_0_0",
+   "x": 859,
+   "y": 488,
+   "w": 250,
+   "h": 60,
+   "kind": "hdn_t",
+   "title": "EARLY: day 1",
+   "lines": [
+    "maternal drugs (antiepileptics)"
+   ]
+  },
+  {
+   "id": "hdn_pres_1_0",
+   "x": 859,
+   "y": 570,
+   "w": 250,
+   "h": 60,
+   "kind": "hdn_t",
+   "title": "CLASSIC: days 2–7",
+   "lines": [
+    "breastfed infants only"
+   ]
+  },
+  {
+   "id": "hdn_pres_2_0",
+   "x": 859,
+   "y": 652,
+   "w": 250,
+   "h": 78,
+   "kind": "hdn_t",
+   "title": "LATE: 1 week – 6 months",
+   "lines": [
+    "• no vitamin K at birth",
+    "• malabsorption"
+   ]
+  },
+  {
+   "id": "itp_inv_0_0",
+   "x": 45,
+   "y": 770,
+   "w": 250,
+   "h": 180,
+   "kind": "itp_w",
+   "title": "1 · Diagnosis of exclusion",
+   "lines": [
+    "→ THROMBOCYTOPENIA chart"
+   ]
+  },
+  {
+   "id": "vwd_inv_0_0",
+   "x": 307,
+   "y": 770,
+   "w": 250,
+   "h": 98,
+   "kind": "vwd_t",
+   "title": "1 · Pediatric Bleeding Questionnaire (PBQ)",
+   "lines": [
+    "• ≥ 2 positive",
+    "• screens for vWD"
+   ]
+  },
+  {
+   "id": "vwd_inv_1_0",
+   "x": 307,
+   "y": 890,
+   "w": 250,
+   "h": 60,
+   "kind": "vwd_w",
+   "title": "2 · vWD screen",
+   "lines": [
+    "→ BLEEDING PATIENT chart"
+   ]
+  },
+  {
+   "id": "hem_inv_0_0",
+   "x": 597,
+   "y": 770,
+   "w": 250,
+   "h": 180,
+   "kind": "hem_w",
+   "title": "1 · Factor levels",
+   "lines": [
+    "→ BLEEDING PATIENT chart"
+   ]
+  },
+  {
+   "id": "hdn_inv_0_0",
+   "x": 859,
+   "y": 770,
+   "w": 250,
+   "h": 180,
+   "kind": "hdn_w",
+   "title": "Vitamin K factors ↓",
+   "lines": [
+    "II, VII, IX, X"
+   ]
+  },
+  {
+   "id": "itp_tx_0_0",
+   "x": 45,
+   "y": 990,
+   "w": 250,
+   "h": 119,
+   "kind": "ok",
+   "title": "NOT bleeding → observe",
+   "lines": [
+    "85–90% resolve by 12 months"
+   ]
+  },
+  {
+   "id": "itp_tx_1_0",
+   "x": 45,
+   "y": 1131,
+   "w": 250,
+   "h": 137,
+   "kind": "warn",
+   "title": "BLEEDING now",
+   "lines": [
+    "best predictor of a major bleed → treat (THROMBOCYTOPENIA chart)"
+   ]
+  },
+  {
+   "id": "vwd_tx_0_0",
+   "x": 307,
+   "y": 990,
+   "w": 250,
+   "h": 278,
+   "kind": "warn",
+   "title": "Treat by type",
+   "lines": [
+    "BLEEDING PATIENT chart"
+   ]
+  },
+  {
+   "id": "hem_tx_0_0",
+   "x": 597,
+   "y": 990,
+   "w": 250,
+   "h": 114,
+   "kind": "ok",
+   "title": "PREVENT bleeds",
+   "lines": [
+    "• NO aspirin, antiplatelets",
+    "• helmet, protective gear, routine dental care",
+    "• prophylactic factor concentrate"
+   ]
+  },
+  {
+   "id": "hem_tx_1_0",
+   "x": 597,
+   "y": 1126,
+   "w": 250,
+   "h": 60,
+   "kind": "ok",
+   "title": "Factor First card",
+   "lines": [
+    "for every child with hemophilia"
+   ]
+  },
+  {
+   "id": "hem_tx_2_0",
+   "x": 597,
+   "y": 1208,
+   "w": 250,
+   "h": 60,
+   "kind": "warn",
+   "title": "Treat a bleed",
+   "lines": [
+    "BLEEDING PATIENT chart"
+   ]
+  },
+  {
+   "id": "hdn_tx_0_0",
+   "x": 859,
+   "y": 990,
+   "w": 250,
+   "h": 278,
+   "kind": "ok",
+   "title": "PREVENT",
+   "lines": [
+    "vitamin K injection at birth"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_pri",
+   "path": "M577.0 160V185H301.0V210"
+  },
+  {
+   "from": "root",
+   "to": "g_sec",
+   "path": "M577.0 160V185H853.0V210"
+  },
+  {
+   "from": "vwd_pres_0_0",
+   "to": "vwd_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "hdn_pres_0_0",
+   "to": "hdn_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "hdn_pres_1_0",
+   "to": "hdn_pres_2_0",
+   "dashed": true
+  },
+  {
+   "from": "vwd_inv_0_0",
+   "to": "vwd_inv_1_0"
+  },
+  {
+   "from": "itp_tx_0_0",
+   "to": "itp_tx_1_0"
+  },
+  {
+   "from": "hem_tx_0_0",
+   "to": "hem_tx_1_0"
+  },
+  {
+   "from": "hem_tx_1_0",
+   "to": "hem_tx_2_0"
+  },
+  {
+   "from": "itp_head_0_0",
+   "to": "itp_pres_0_0"
+  },
+  {
+   "from": "itp_pres_0_0",
+   "to": "itp_inv_0_0"
+  },
+  {
+   "from": "itp_inv_0_0",
+   "to": "itp_tx_0_0"
+  },
+  {
+   "from": "g_pri",
+   "to": "itp_head_0_0",
+   "from_dx": -131,
+   "label": "platelets LOW",
+   "label_at": [
+    170.0,
+    310
+   ]
+  },
+  {
+   "from": "vwd_head_0_0",
+   "to": "vwd_pres_0_0"
+  },
+  {
+   "from": "vwd_pres_1_0",
+   "to": "vwd_inv_0_0"
+  },
+  {
+   "from": "vwd_inv_1_0",
+   "to": "vwd_tx_0_0"
+  },
+  {
+   "from": "g_pri",
+   "to": "vwd_head_0_0",
+   "from_dx": 131,
+   "label": "PBQ ≥ 2",
+   "label_at": [
+    432.0,
+    310
+   ]
+  },
+  {
+   "from": "hem_head_0_0",
+   "to": "hem_pres_0_0"
+  },
+  {
+   "from": "hem_pres_0_0",
+   "to": "hem_inv_0_0"
+  },
+  {
+   "from": "hem_inv_0_0",
+   "to": "hem_tx_0_0"
+  },
+  {
+   "from": "g_sec",
+   "to": "hem_head_0_0",
+   "from_dx": -131,
+   "label": "joints, muscles",
+   "label_at": [
+    722.0,
+    310
+   ]
+  },
+  {
+   "from": "hdn_head_0_0",
+   "to": "hdn_pres_0_0"
+  },
+  {
+   "from": "hdn_pres_2_0",
+   "to": "hdn_inv_0_0"
+  },
+  {
+   "from": "hdn_inv_0_0",
+   "to": "hdn_tx_0_0"
+  },
+  {
+   "from": "g_sec",
+   "to": "hdn_head_0_0",
+   "from_dx": 131,
+   "label": "newborn",
+   "label_at": [
+    984.0,
+    310
+   ]
+  }
+ ],
+ "panels": []
+}

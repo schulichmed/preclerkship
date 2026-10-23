@@ -1,0 +1,325 @@
+{
+ "name": "gi bleeding overview",
+ "title": "GI bleeding decision chart: resuscitate and correct coagulopathy first, then sort by the ligament of Treitz; an upper bleed is non-variceal (IV pantoprazole and endoscopic therapy) or variceal (pantoprazole, octreotide, antibiotics, banding), a lower bleed goes to colonoscopy if stable or to upper endoscopy, angiography and surgery if unstable",
+ "col_w": 248,
+ "root": {
+  "title": "GI bleed: RESUSCITATE first, then UPPER or LOWER (the ligament of Treitz)?",
+  "lines": [
+   "airway (intubate if needed) · 2 large-bore IVs · fluids · transfuse",
+   "correct coagulopathy: fresh frozen plasma, platelets, vitamin K, Octaplex · STOP anticoagulants and antiplatelets",
+   "NO visible blood (OCCULT: positive fecal occult blood or iron deficiency anemia) → rule out colorectal and other cancers"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_up",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "UPPER: HEMATEMESIS or MELENA",
+   "lines": [
+    "• ↑ urea : creatinine, or fresh blood up a nasogastric tube",
+    "• HIGHER MORTALITY: age > 60, shock, heart disease or cirrhosis, fresh red blood, bleeding that persists or starts in hospital",
+    "• urgent esophagogastroduodenoscopy (EGD) AFTER resuscitation: finds AND treats"
+   ]
+  },
+  {
+   "id": "g_lo",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "LOWER: HEMATOCHEZIA · is the patient STABLE?",
+   "lines": [
+    "• #1 diverticulosis (usually stops), hemorrhoids, fissure",
+    "• inflammatory bowel disease, cancer, ischemic or infectious colitis, radiation, post-polypectomy"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "nv",
+   "colour": "teal",
+   "drop_label": "ulcer, gastritis",
+   "head": [
+    [
+     [
+      "h",
+      "Non-variceal upper bleed",
+      [
+       "ulcer, gastritis, esophagitis, Mallory-Weiss tear, cancer"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Hematemesis or melena",
+      [
+       "• anti-inflammatories (NSAIDs), anticoagulants",
+       "• peptic ulcer, H. pylori",
+       "• aortic aneurysm repair: aortoenteric fistula"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Bloods",
+      [
+       "• complete blood count, INR, PTT, group and cross-match",
+       "• liver and cardiac enzymes, ECG"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Esophagogastroduodenoscopy (EGD)",
+      [
+       "after resuscitation"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · IV PANTOPRAZOLE",
+      [
+       "80 mg bolus + 8 mg/h"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Endoscopic therapy",
+      [
+       "epinephrine injection, cautery, clips"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · Test for H. pylori",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "va",
+   "colour": "purple",
+   "drop_label": "LIVER disease, alcohol",
+   "head": [
+    [
+     [
+      "h",
+      "Variceal upper bleed",
+      [
+       "portal hypertension: esophageal or gastric varices"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Hematemesis or melena",
+      [
+       "• liver disease, alcohol",
+       "• signs of chronic liver disease",
+       "• ↑ liver enzymes"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Urgent EGD after resuscitation",
+      [
+       "diagnoses and bands"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · PANTOPRAZOLE + OCTREOTIDE",
+      [
+       "• pantoprazole 80 mg + 8 mg/h IV",
+       "• octreotide 50 mcg + 50 mcg/h IV"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · ANTIBIOTICS",
+      [
+       "cephalosporin or fluoroquinolone: lowers MORTALITY"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "3 · Band ligation",
+      [
+       "then balloon tamponade, transjugular intrahepatic portosystemic shunt (TIPS)"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ls",
+   "colour": "blue",
+   "drop_label": "STABLE",
+   "head": [
+    [
+     [
+      "h",
+      "Stable lower bleed",
+      []
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Hematochezia, vitals normal",
+      [
+       "• prior episodes, polyps, cancer, radiation",
+       "• last colonoscopy? recent polypectomy?",
+       "• family history of colorectal cancer"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · COLONOSCOPY",
+      [
+       "bowel prep takes time"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Source not found",
+      [
+       "tagged red cell scan or angiography"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat at colonoscopy",
+      [
+       "endoscopy treats as well as finds"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "lu",
+   "colour": "orange",
+   "drop_label": "UNSTABLE",
+   "head": [
+    [
+     [
+      "h",
+      "Unstable lower bleed",
+      [
+       "a brisk UPPER bleed can look like this"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "bad",
+      "Hematochezia + shock",
+      [
+       "• tachycardia, hypotension",
+       "• orthostatic drop"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · UPPER endoscopy FIRST",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · ± Angiography",
+      [
+       "contrast leaks into the gut"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Embolization at angiography",
+      [
+       "interventional radiology: gelfoam, coil"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Surgical consult",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

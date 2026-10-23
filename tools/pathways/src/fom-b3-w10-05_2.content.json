@@ -1,0 +1,73 @@
+{
+ "name": "thrombocytopenia overview",
+ "title": "Thrombocytopenia decision chart: grade the count, then sort by mechanism; marrow underproduction, immune thrombocytopenia, the schistocyte disorders (TTP by low ADAMTS-13, HUS after diarrhea with kidney injury, DIC with deranged clotting tests), heparin-induced thrombocytopenia, and pooled or spurious counts; each column gives clues, numbered investigations and management, with platelet transfusion forbidden where it fuels clotting",
+ "col_w": 206,
+ "root": {
+  "title": "Platelets < 150 × 10⁹/L: how LOW, and are they MADE too few, DESTROYED, POOLED or MISCOUNTED?",
+  "lines": [
+   "10–49: bleeds with trauma or surgery · < 10: SPONTANEOUS bleeding",
+   "first: complete blood count + differential · peripheral film · prothrombin time (PT/INR), activated partial thromboplastin time (aPTT), fibrinogen · liver tests · abdominal ultrasound"
+  ]
+ },
+ "groups": [
+  {"id": "g_prod", "cols": [0, 0], "title": "MADE too few", "lines": ["marrow"]},
+  {"id": "g_des", "cols": [1, 5], "title": "DESTROYED: does it BLEED or CLOT?", "lines": ["BLEEDS: ITP · CLOTS: TTP, HUS, HIT · BOTH: DIC"]},
+  {"id": "g_oth", "cols": [6, 6], "title": "POOLED or not real", "lines": []}
+ ],
+ "tiers": [
+  {"id": "t_iso", "cols": [1, 1], "title": "ONLY platelets low", "lines": ["clotting tests normal"]},
+  {"id": "t_sch", "cols": [2, 4], "title": "SCHISTOCYTES on the film",
+   "lines": ["• clotting tests deranged (INR ↑, D-dimer ↑, fibrinogen < 1) → DIC", "• normal: ADAMTS-13 decides"]},
+  {"id": "t_hep", "cols": [5, 5], "title": "On HEPARIN, day 5–10", "lines": ["CLOTS, does not bleed"]}
+ ],
+ "sections": ["head", "clue", "inv", "tx"],
+ "row_names": {"clue": "CLUES", "inv": "INVESTIGATIONS", "tx": "MANAGEMENT"},
+ "columns": [
+  {"id": "prod", "colour": "slate",
+   "head": [[["h", "Marrow underproduction", []]]],
+   "clue": [[["t", "Causes", ["• aplastic anemia, myelodysplasia, marrow infiltration or fibrosis", "• B12, folate lack", "• liver disease (↓ thrombopoietin)", "• drugs, viruses, toxins"]]]],
+   "inv": [[["w", "1 · History, exam, liver function", []]],
+           [["w", "2 · Bone marrow aspirate + biopsy", []]]],
+   "tx": [[["ok", "Treat the cause", ["• stop the offending drug", "• supportive platelet transfusion"]]]]},
+  {"id": "itp", "colour": "teal", "drop_from": "t_iso",
+   "head": [[["h", "Immune thrombocytopenia (ITP)", ["antibodies → spleen clears platelets"]]]],
+   "clue": [[["t", "Mucocutaneous bleeding, or none", ["• often < 10", "• adults: insidious, relapsing, 2 F : 1 M"]]]],
+   "inv": [[["t", "1 · DIAGNOSIS OF EXCLUSION", ["platelets < 100, other cell lines normal"]]],
+           [["w", "2 · Exclude secondary", ["• lupus, leukemia, lymphoma", "• HIV, hepatitis C", "• drugs: heparin, quinine"]]]],
+   "tx": [[["ok", "1 · Steroids", ["prednisone, dexamethasone"]]],
+          [["ok", "2 · Then", ["• IV immunoglobulin (brief)", "• rituximab, splenectomy", "• thrombopoietin mimetics"]]],
+          [["warn", "Platelets ONLY for emergency bleeding with count < 10", []]]]},
+  {"id": "ttp", "colour": "purple", "drop_from": "t_sch", "drop_label": "ADAMTS-13 LOW",
+   "head": [[["h", "Thrombotic thrombocytopenic purpura (TTP)", ["↓ ADAMTS-13: giant von Willebrand factor multimers clot"]]]],
+   "clue": [[["t", "VERY sick", ["• headache, confusion, focal deficits, seizures", "• hemolytic anemia", "• drugs, pregnancy, infection"]]]],
+   "inv": [[["t", "1 · ADAMTS-13 LOW", ["suspect: hemolytic anemia + acute kidney injury + a trigger"]]]],
+   "tx": [[["ok", "1 · PLASMA EXCHANGE", ["+ steroids, rituximab"]]],
+          [["bad", "NO platelet transfusion", []]]]},
+  {"id": "hus", "colour": "orange", "drop_from": "t_sch", "drop_label": "ADAMTS-13 normal",
+   "head": [[["h", "Hemolytic uremic syndrome (HUS)", ["Shiga toxin (E. coli O157:H7)"]]]],
+   "clue": [[["t", "After DIARRHEA", ["• ↓ urine output, kidney injury", "• peak 6 months – 4 years"]]]],
+   "inv": [[["t", "1 · ADAMTS-13 NORMAL", ["hemolysis + kidney injury after diarrhea"]]]],
+   "tx": [[["ok", "Supportive", ["• IV fluids, monitoring", "• dialysis in some"]]],
+          [["bad", "NO antibiotics · NO platelets", ["some antibiotics worsen it"]]]]},
+  {"id": "dic", "colour": "brown", "drop_from": "t_sch", "drop_label": "clotting deranged",
+   "head": [[["h", "Disseminated intravascular coagulation (DIC)", ["uses up factors AND platelets"]]]],
+   "clue": [[["t", "BLEEDS AND CLOTS", ["• sepsis", "• cancer, acute promyelocytic leukemia", "• trauma, abruption, amniotic fluid embolism"]]]],
+   "inv": [[["t", "1 · ISTH DIC score", ["• underlying condition", "• platelets < 100 · D-dimer ↑", "• fibrinogen < 1 g/L · INR ↑"]]]],
+   "tx": [[["ok", "1 · TREAT THE CAUSE + support", []]],
+          [["warn", "Bleeding: replace", ["• cryoprecipitate if fibrinogen < 1.0", "• platelets if < 50", "• plasma if INR > 1.5", "• red cells if Hb < 70–80"]]]]},
+  {"id": "hit", "colour": "magenta", "drop_from": "t_hep",
+   "head": [[["h", "Heparin-induced thrombocytopenia (HIT)", ["antibodies to heparin–platelet factor 4 (PF4) activate platelets"]]]],
+   "clue": [[["t", "NEW venous AND arterial clots", ["• no bleeding", "• 10× more with unfractionated than low molecular weight heparin"]]]],
+   "inv": [[["t", "1 · 4 T's score", ["thrombocytopenia, timing, thrombosis, other causes"]]],
+           [["w", "2 · Anti-PF4 ELISA", ["→ serotonin release assay"]]]],
+   "tx": [[["bad", "1 · STOP ALL HEPARIN · NO platelets", []]],
+          [["ok", "2 · Non-heparin anticoagulant", ["fondaparinux, argatroban, danaparoid"]]],
+          [["ok", "3 · Warfarin once platelets recover", ["clot → treat ≥ 3 months"]]]]},
+  {"id": "oth", "colour": "olive",
+   "head": [[["h", "Pooled, diluted or clumped", []]]],
+   "clue": [[["t", "Causes", ["• SPLENOMEGALY (> 11–13 cm): moderate, rarely bleeds", "• dilution: massive transfusion, fluids", "• EDTA clumping (lavender tube)"]]]],
+   "inv": [[["w", "1 · Film: CLUMPS", ["= pseudothrombocytopenia"]]],
+           [["w", "2 · Spleen on exam or imaging", []]]],
+   "tx": [[["ok", "Treat the cause", []]]]}
+ ]
+}

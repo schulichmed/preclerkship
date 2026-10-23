@@ -1,0 +1,397 @@
+{
+ "name": "diarrhea and malabsorption overview",
+ "title": "Diarrhea decision chart: acute diarrhea (under 4 weeks, usually infectious) split by blood and fever into non-inflammatory watery, inflammatory bloody and C. difficile; chronic diarrhea (over 4 weeks) split by blood (IBD) and the stool osmotic gap into celiac disease, other malabsorption and secretory causes; each column gives presentation, investigations and management",
+ "col_w": 228,
+ "root": {
+  "title": "Diarrhea (> 3 a day or > 200 g a day): ACUTE (< 4 weeks) or CHRONIC (> 4 weeks)?",
+  "lines": [
+   "ask: onset · blood · how often, day and night · oil droplets (steatorrhea) · travel, antibiotics, hospital, sick contacts, food and water",
+   "small bowel: LARGE volume, not urgent, infrequent · colon: SMALL volume, URGENT, frequent"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ac",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "ACUTE: usually INFECTIOUS · is there BLOOD + FEVER?",
+   "lines": [
+    "every one: ORAL REHYDRATION first (balanced electrolyte solution) · most need NO antibiotics",
+    "ADMIT if severe systemic signs, can't keep up by mouth, infant, elderly or immunocompromised",
+    "complete blood count, electrolytes, urea, creatinine · blood cultures if febrile · abdominal X-ray if severe"
+   ]
+  },
+  {
+   "id": "g_ch",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "CHRONIC: usually NOT infectious · is it BLOODY?",
+   "lines": [
+    "BLOODY → inflammatory bowel disease (IBD): see the INFLAMMATORY BOWEL DISEASE chart",
+    "rapid transit (irritable bowel syndrome) · microscopic colitis"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_gap",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "NON-bloody: stool osmotic gap = 290 − 2(Na + K)",
+   "lines": [
+    "• > 50 → OSMOTIC: malabsorption, laxatives",
+    "• < 50 → SECRETORY: neuroendocrine tumour (Zollinger-Ellison), villous adenoma"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "MANAGE"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "wat",
+   "colour": "teal",
+   "drop_label": "WATERY, no fever",
+   "head": [
+    [
+     [
+      "h",
+      "Non-inflammatory",
+      [
+       "enterotoxin, SMALL bowel",
+       "main danger: DEHYDRATION"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Watery, high volume, no fever",
+      [
+       "• food poisoning: vomiting + diarrhea within HOURS (E. coli, S. aureus, B. cereus)",
+       "• cholera: RICE-WATER, travel",
+       "• rotavirus, norovirus, Giardia, Cryptosporidium"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Stool culture + sensitivity",
+      [
+       "+ ova and parasites"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Rehydrate by mouth",
+      [
+       "• avoid milk for a while (transient lactose intolerance)"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Antimotility agent is OK",
+      [
+       "watery and no fever"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "inf",
+   "colour": "orange",
+   "drop_label": "BLOOD + fever",
+   "head": [
+    [
+     [
+      "h",
+      "Inflammatory (dysentery)",
+      [
+       "cytotoxin or invasion, COLON"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Cramps + fever + BLOODY stool",
+      [
+       "• poultry: Campylobacter",
+       "• Shigella, E. coli O157:H7, Salmonella",
+       "• travel: typhoid, Entamoeba histolytica"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Stool culture, ova and parasites",
+      [
+       "+ blood cultures if febrile"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · ± Sigmoidoscopy + biopsy",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "NO antimotility agents",
+      [
+       "toxic megacolon"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Antibiotics: empiric CIPROFLOXACIN",
+      [
+       "• Shigella, typhoid",
+       "• admitted, or not better after 1 week",
+       "• E. histolytica: metronidazole + paromomycin"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "E. coli O157:H7: AVOID antibiotics",
+      [
+       "↑ hemolytic uremic syndrome"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cd",
+   "colour": "purple",
+   "drop_label": "antibiotics, hospital",
+   "head": [
+    [
+     [
+      "h",
+      "C. difficile",
+      [
+       "takes over when normal flora fall",
+       "cytotoxin"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Watery OR bloody, or none",
+      [
+       "up to TOXIC MEGACOLON"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Risk",
+      [
+       "• antibiotics, hospital",
+       "• proton pump inhibitor, IBD, chronic disease"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Stool C. difficile test",
+      [
+       "enzyme immunoassay for glutamate dehydrogenase (GDH)",
+       "~GDH: toxic AND non-toxic strains"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "NO antimotility agents",
+      [
+       "toxic megacolon"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "ORAL VANCOMYCIN",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cel",
+   "colour": "blue",
+   "drop_from": "t_gap",
+   "drop_label": "TTG +",
+   "head": [
+    [
+     [
+      "h",
+      "Celiac disease",
+      [
+       "immune reaction to GLUTEN",
+       "HLA-DQ2 / DQ8"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Loose NON-bloody stools",
+      [
+       "• abdominal pain, distension",
+       "• IRON deficiency",
+       "• poor growth (child)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Serology",
+      [
+       "• IgA tissue transglutaminase (TTG) + total IgA",
+       "• IgG deamidated gliadin peptide"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · DUODENAL BIOPSY: gold standard",
+      [
+       "flat mucosa, NO villi, T cells",
+       "~serology is not 100%: confirm before a lifelong diet"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "STRICT GLUTEN-FREE diet for life",
+      [
+       "• avoid BROW: barley, rye, oats, wheat",
+       "• dietitian + read every label"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mal",
+   "colour": "brown",
+   "drop_from": "t_gap",
+   "drop_label": "STEATORRHEA",
+   "head": [
+    [
+     [
+      "h",
+      "Other malabsorption",
+      [
+       "proximal small bowel fails to absorb"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Steatorrhea, flatulence, weight loss",
+      [
+       "oil droplets in the stool"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Where is the defect?",
+      [
+       "• pancreas: chronic pancreatitis, cystic fibrosis",
+       "• bile salts: liver disease, bacterial overgrowth",
+       "• mucosa: lactase deficiency, Crohn's, surgery",
+       "• infection: Whipple disease"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Look for what is LOST",
+      [
+       "• iron, B12, folate: anemia",
+       "• vitamin K: bleeding, purpura",
+       "• calcium, vitamin D: osteopenia, tetany",
+       "• protein: edema"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

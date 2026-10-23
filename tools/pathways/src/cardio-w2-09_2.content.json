@@ -1,0 +1,325 @@
+{
+ "name": "infective endocarditis overview",
+ "title": "Infective endocarditis decision chart: blood cultures and echocardiography are counted against the modified Duke criteria, then the valve and the culture result (native valve, prosthetic valve or device, culture-negative) decide the likely organism, the echo route and the antibiotics; panels give the indications and timing for surgery and who gets dental prophylaxis",
+ "col_w": 290,
+ "root": {
+  "title": "Fever + a damaged valve, a device, IV drug use or a new murmur: is it infective endocarditis (IE)?",
+  "lines": [
+   "search every system for EMBOLI and for HEART FAILURE"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_all",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "1 · Three sets of blood cultures  →  2 · Transthoracic echo (TTE)  →  3 · Count the modified DUKE criteria",
+   "lines": [
+    "cultures from 3 sites, all within the first hour if very sick; echo as soon as IE is suspected"
+   ]
+  }
+ ],
+ "pres": [
+  {
+   "id": "p_duke",
+   "group": "g_all",
+   "title": "DEFINITE: 2 major, 1 major + 3 minor, or 5 minor  |  POSSIBLE: 1 major + 1 minor, or 3 minor  →  treat both",
+   "lines": [
+    "• MAJOR: typical organism in 2 cultures, cultures persistently positive (> 12 h apart), Coxiella, or echo showing vegetation, abscess or new regurgitation",
+    "• MINOR: predisposing heart lesion or IV drug use, fever ≥ 38 °C, emboli (Janeway lesions), immune signs (Osler nodes, Roth spots)"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "org",
+  "inv",
+  "tx",
+  "surg"
+ ],
+ "row_names": {
+  "pres": "DUKE",
+  "clue": "PRESENTS AS",
+  "org": "ORGANISMS",
+  "inv": "ECHO",
+  "tx": "ANTIBIOTICS",
+  "surg": "SURGERY?"
+ },
+ "columns": [
+  {
+   "id": "nv",
+   "colour": "teal",
+   "drop_label": "NATIVE valve",
+   "head": [
+    [
+     [
+      "h",
+      "Native valve IE",
+      [
+       "rheumatic, prolapsed, bicuspid or congenitally abnormal valve"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "SUBACUTE: weeks of vague illness",
+      [
+       "• fever, night sweats, weight loss",
+       "• NEW regurgitant murmur, heart failure",
+       "• splinters, Janeway lesions, Osler nodes"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "ACUTE: fulminant sepsis",
+      [
+       "emboli, valve destruction, decompensation"
+      ]
+     ]
+    ]
+   ],
+   "org": [
+    [
+     [
+      "w",
+      "Most",
+      [
+       "• streptococci",
+       "• Staphylococcus aureus",
+       "• enterococci, HACEK"
+      ]
+     ],
+     [
+      "w",
+      "IV drug use",
+      [
+       "• S. aureus",
+       "• usually the TRICUSPID valve"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · TTE first",
+      [
+       "small vegetations can be missed"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Negative TTE + high suspicion",
+      [
+       "→ transesophageal echo (TEE)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "IV vancomycin + IV cefepime",
+      [
+       "6–12 weeks"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pv",
+   "colour": "purple",
+   "drop_label": "PROSTHETIC valve or device",
+   "head": [
+    [
+     [
+      "h",
+      "Prosthetic valve or device IE",
+      [
+       "new fever after valve surgery = IE until proven otherwise"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Fever after valve replacement",
+      [
+       "• or a device with persistent fever",
+       "• even with no new murmur or bacteremia"
+      ]
+     ]
+    ]
+   ],
+   "org": [
+    [
+     [
+      "w",
+      "EARLY < 60 days",
+      [
+       "• coagulase-negative staph",
+       "• then S. aureus"
+      ]
+     ],
+     [
+      "w",
+      "LATE > 60 days",
+      [
+       "• streptococci",
+       "• then S. aureus"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "LOW threshold for TEE",
+      [
+       "• cultures + echo BEFORE assuming another cause",
+       "• TEE finds abscess, perforation, fistula"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "IV vancomycin + IV cefepime",
+      [
+       "6–12 weeks"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cn",
+   "colour": "orange",
+   "drop_label": "cultures NEGATIVE",
+   "head": [
+    [
+     [
+      "h",
+      "Culture-negative IE",
+      [
+       "organisms that do not grow in routine bottles"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "IE picture, sterile cultures",
+      [
+       "• Coxiella burnetii (Q fever)",
+       "• Bartonella, Brucella, Legionella",
+       "• Tropheryma whipplei, Chlamydia"
+      ]
+     ]
+    ]
+   ],
+   "org": [
+    [
+     [
+      "w",
+      "Coxiella can still be MAJOR",
+      [
+       "• one positive culture",
+       "• or anti-phase I IgG > 1:800"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "TTE, then TEE as for native valve",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Three drugs, 6–12 weeks",
+      [
+       "• IV vancomycin",
+       "• IV ceftriaxone",
+       "• IV gentamicin or doxycycline"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "spans": [
+  {
+   "section": "surg",
+   "cols": [
+    0,
+    2
+   ],
+   "rows": [
+    [
+     [
+      "warn",
+      "1 · Major ischemic stroke or intracranial hemorrhage?",
+      [
+       "YES → DELAY surgery at least 4 weeks"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "2 · EARLY surgery if ANY",
+      [
+       "• heart failure from valve dysfunction or a fistula",
+       "• abscess or heart block",
+       "• persistent infection, resistant organism (S. aureus, fungi), relapsing prosthetic IE"
+      ]
+     ],
+     [
+      "warn",
+      "3 · CONSIDER early surgery",
+      [
+       "• mobile vegetation > 10 mm (anterior mitral leaflet)",
+       "• recurrent emboli despite antibiotics"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "None of these",
+      [
+       "continue antibiotics, reassess, re-image"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "name": "drugs in pregnancy and lactation overview",
+ "title": "Whether a medicine is worth it in pregnancy or breastfeeding: in pregnancy most drugs are probably safe and the untreated disease is weighed against the drug, while a few major teratogens are switched or counselled on; in breastfeeding most drugs are safe if the relative infant dose is under 10 percent, a short list is contraindicated, and alcohol, tobacco, coffee and cannabis each have their own rule",
+ "col_w": 238,
+ "root": {
+  "title": "A medicine in pregnancy or breastfeeding: is it worth it?",
+  "lines": [
+   "most drugs reach the baby, and most are still safe · always weigh the risk of the UNTREATED disease",
+   "the risk depends on the drug, the dose, the timing and her disease"
+  ]
+ },
+ "groups": [
+  {"id": "g_preg", "cols": [0, 1], "title": "PREGNANT: the placenta is NOT a barrier", "lines": ["timing of exposure: see the ANTENATAL CARE chart"]},
+  {"id": "g_bf", "cols": [2, 4], "title": "BREASTFEEDING: how much reaches the baby, and can the baby clear it?", "lines": ["most drugs cross into milk, in minute amounts"]}
+ ],
+ "sections": ["head", "clue", "inv", "tx"],
+ "row_names": {"clue": "WHICH", "inv": "WEIGH", "tx": "DO"},
+ "columns": [
+  {
+   "id": "safe", "colour": "teal", "drop_label": "most drugs",
+   "head": [[["h", "Most drugs: probably safe", ["baseline major malformation risk 2–4%, with or without a drug"]]]],
+   "clue": [[["t", "Untreated disease harms too", ["• asthma, epilepsy", "• depression, psychosis", "• infections"]]]],
+   "inv": [[["w", "A malformation is > 99 in 100 times NOT a drug", ["put her risk in perspective: fear harms too"]]]],
+   "tx": [
+    [["ok", "Treat: do NOT deny an effective drug", ["fewest drugs, as little as needed"]]],
+    [["warn", "Careful with NEWER drugs", ["fetal harm often found years after release"]]]
+   ]
+  },
+  {
+   "id": "terat", "colour": "magenta", "drop_label": "known teratogen",
+   "head": [[["h", "Major teratogen", ["even these harm only a fraction of exposed babies"]]]],
+   "clue": [
+    [["bad", "Biggest risk", ["• isotretinoin > 30%, thalidomide ~30%", "• valproate > 15% + cognitive problems", "• mycophenolate ~6%"]]],
+    [["w", "Also", ["• carbamazepine: neural tube defect 1%", "• lithium: Ebstein's anomaly", "• warfarin, angiotensin-converting enzyme (ACE) inhibitors"]]]
+   ],
+   "inv": [[["w", "Uncertain or overstated", ["• selective serotonin reuptake inhibitors (SSRIs): ~1%, uncertain", "• statins: probably a myth"]]]],
+   "tx": [
+    [["ok", "1 · Planning: switch FIRST", ["e.g. mycophenolate → azathioprine"]]],
+    [["warn", "2 · Already exposed", ["counsel on timing and dose: see the ANTENATAL CARE chart"]]]
+   ]
+  },
+  {
+   "id": "rid", "colour": "blue", "drop_label": "a usual medicine",
+   "head": [[["h", "Usually SAFE", ["most medications are not contraindicated"]]]],
+   "clue": [[["t", "Gets INTO milk if", ["• high maternal blood level, fat-soluble", "• not protein-bound", "• small: > 500 daltons stays out (insulin, heparin)"]]]],
+   "inv": [
+    [["t", "1 · Relative infant dose (RID) < 10% = safe", ["baby's dose from milk ÷ mother's dose per kg (fluoxetine 1.2%)"]]],
+    [["w", "2 · Can the baby absorb and clear it?", ["slow clearance → it accumulates"]]]
+   ],
+   "tx": [[["ok", "Keep the drug AND breastfeeding", []]]]
+  },
+  {
+   "id": "ci", "colour": "orange", "drop_label": "on the short list",
+   "head": [[["h", "Contraindicated", ["a short list"]]]],
+   "clue": [[["bad", "Avoid", ["• atenolol (renally cleared beta-blocker)", "• cancer drugs, radioactive iodine", "• cocaine, heroin"]]]],
+   "inv": [
+    [["t", "Why atenolol: RID ~20%", ["newborn kidneys clear it slowly in week 1: slow heart, cyanosis"]]],
+    [["w", "Problematic, not forbidden", ["• lithium, amiodarone, phenobarbital", "• ethosuximide, ergotamine, bromocriptine"]]]
+   ],
+   "tx": [[["bad", "Not while breastfeeding", []]]]
+  },
+  {
+   "id": "soc", "colour": "brown", "drop_label": "alcohol, smoking",
+   "head": [[["h", "Alcohol, tobacco, cannabis, coffee", ["not contraindicated, except as below"]]]],
+   "clue": [[["t", "Alcohol does NOT increase milk", ["keep it minimal"]]]],
+   "inv": [
+    [["w", "Alcohol limit", ["• ≤ 0.5 g/kg (< 2 beers or 1 glass of wine)", "• wait ≥ 2 h before feeding"]]],
+    [["w", "Tobacco", ["risk is infection and sudden infant death, not the milk: not near the baby"]]]
+   ],
+   "tx": [
+    [["ok", "Coffee: fine", []]],
+    [["warn", "Cannabis: encourage quitting", ["risk to the baby unclear"]]]
+   ]
+  }
+ ]
+}

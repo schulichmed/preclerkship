@@ -1,0 +1,39 @@
+{
+ "name": "clostridial species overview",
+ "title": "Clostridia decision chart: anaerobic spore-forming Gram-positive bacilli told apart by what the patient shows: diarrhea after antibiotics (C. difficile), dying or infected tissue (C. perfringens, septicum, sordellii), spastic paralysis (tetanus) or flaccid paralysis (botulism), each with the toxin action that explains it",
+ "col_w": 246,
+ "root": {
+  "title": "Gram-positive, ANAEROBIC, spore-forming bacillus: what is its TOXIN doing to the patient?",
+  "lines": [
+   "spores: inactive, survive for years, hard to destroy",
+   "HARD TO CULTURE → test by PCR, or immunoassay for antigen and toxin"
+  ]
+ },
+ "groups": [
+  {"id": "g_gut", "cols": [0, 0], "title": "GUT: diarrhea", "lines": []},
+  {"id": "g_tis", "cols": [1, 1], "title": "TISSUE: dying or infected", "lines": []},
+  {"id": "g_ner", "cols": [2, 3], "title": "NERVES: paralysis, SPASTIC or FLACCID?", "lines": []}
+ ],
+ "sections": ["head", "pres", "tox"],
+ "row_names": {"pres": "PRESENTS AS", "tox": "TOXIN → EFFECT"},
+ "columns": [
+  {"id": "cdi", "colour": "olive",
+   "head": [[["h", "C. difficile", ["after ANTIBIOTICS kill the normal gut flora"]]]],
+   "pres": [[["t", "Diarrhea → pseudomembranous colitis", []]],
+            [["w", "Test: nucleic acid amplification test (NAAT) for the toxin gene", ["or enzyme-linked immunosorbent assay (ELISA) for antigen + toxin · NOT culture"]]]],
+   "tox": [[["t", "TcdA + TcdB (B most potent)", ["tight junctions lost → fluid secretion, neutrophils, cell death"]]],
+           [["w", "+ binary toxin (CDT)", ["severe strains: ribotypes 027, 078"]]]]},
+  {"id": "gang", "colour": "brown",
+   "head": [[["h", "C. perfringens · septicum · sordellii", []]]],
+   "pres": [[["t", "Gangrene", ["• perfringens: gangrene", "• septicum: gangrene, sepsis, soft tissue", "• sordellii: toxic shock syndrome, gynecologic, soft tissue"]]]],
+   "tox": [[["t", "Blood supply cut off", ["tissue breaks down and dies: greenish-black"]]]]},
+  {"id": "tet", "colour": "orange",
+   "head": [[["h", "C. tetani: TETANUS", []]]],
+   "pres": [[["t", "SPASTIC: muscles stay contracted", ["• trismus (lockjaw)", "• risus sardonicus (sardonic grin)", "• opisthotonos (back arches)"]]]],
+   "tox": [[["t", "Blocks GABA + glycine release", ["the INHIBITORY transmitters are lost → spasm"]]]]},
+  {"id": "bot", "colour": "blue",
+   "head": [[["h", "C. botulinum: BOTULISM", []]]],
+   "pres": [[["t", "FLACCID paralysis", ["• infant ('floppy baby'): honey under 6 months, dust, soil", "• food: home-canned food, prison brew", "• wound, iatrogenic"]]]],
+   "tox": [[["t", "Blocks ACETYLCHOLINE release", ["no muscle contraction · the most potent bacterial toxin"]]]]}
+ ]
+}

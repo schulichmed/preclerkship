@@ -1,0 +1,561 @@
+{
+ "name": "bleeding patient overview",
+ "width": 862,
+ "title": "Bleeding patient decision chart: stabilize first and transfuse only the missing component, then the site of bleeding splits a platelet-type (primary hemostasis) problem from a coagulation-factor (secondary) problem; the platelet count, bleeding score and von Willebrand screen sort von Willebrand disease from platelet function disorders, and an isolated long aPTT points to hemophilia; each column gives presentation, numbered investigations and treatment",
+ "kinds": {
+  "vwd_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vwd_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "vwd_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "pfd_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pfd_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pfd_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "hem_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hem_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "hem_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 498,
+   "w": 260,
+   "h": 866,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 302,
+   "y": 498,
+   "w": 260,
+   "h": 866,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 592,
+   "y": 498,
+   "w": 260,
+   "h": 866,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 624,
+   "h": 96,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 760,
+   "h": 260,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1060,
+   "h": 296,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 66,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Bleeding patient: STABILIZE, then is it a PLATELET problem or a FACTOR problem?",
+   "lines": [
+    "1 · ABCs  ·  2 · find and stop the source; transfuse ONLY what is missing  ·  3 · work up the cause",
+    "transfuse: red cells if hemoglobin (Hb) < 70 g/L (70–90 with coronary disease) · platelets < 10, < 50 for surgery, < 100 for neurosurgery · MASSIVE bleeding → massive transfusion protocol + early fibrinogen + tranexamic acid",
+    "first tests: complete blood count (CBC) + film · prothrombin time (PT/INR) · activated partial thromboplastin time (aPTT) ± thrombin time · fibrinogen · liver + kidney function",
+    "serious bleeding or trauma: treat first, investigate later"
+   ]
+  },
+  {
+   "id": "g_pri",
+   "x": 45,
+   "y": 210,
+   "w": 512,
+   "h": 98,
+   "kind": "plain",
+   "title": "MUCOSAL, SKIN: PRIMARY hemostasis (platelets, von Willebrand factor (vWF), vessels)",
+   "lines": [
+    "petechiae < 2 mm, purpura, bruising · nose, gums, heavy menses · bleeds at once",
+    "NORMAL PT + aPTT do NOT exclude it"
+   ]
+  },
+  {
+   "id": "g_sec",
+   "x": 597,
+   "y": 210,
+   "w": 250,
+   "h": 98,
+   "kind": "plain",
+   "title": "DEEP: SECONDARY hemostasis (factors)",
+   "lines": [
+    "joints, muscles · hematoma, hemarthrosis"
+   ]
+  },
+  {
+   "id": "t_pri",
+   "x": 45,
+   "y": 348,
+   "w": 512,
+   "h": 78,
+   "kind": "plain",
+   "title": "Platelet COUNT normal (LOW → THROMBOCYTOPENIA chart)",
+   "lines": [
+    "• bleeding assessment tool (ISTH BAT) abnormal: ≥ 4 men, ≥ 6 women, ≥ 3 children",
+    "• → von Willebrand (vWD) SCREEN"
+   ]
+  },
+  {
+   "id": "t_sec",
+   "x": 597,
+   "y": 348,
+   "w": 250,
+   "h": 78,
+   "kind": "plain",
+   "title": "aPTT LONG, PT/INR NORMAL",
+   "lines": [
+    "any other pattern → ADULT COAGULOPATHY chart"
+   ]
+  },
+  {
+   "id": "vwd_head_0_0",
+   "x": 45,
+   "y": 506,
+   "w": 250,
+   "h": 78,
+   "kind": "vwd_h",
+   "title": "von Willebrand disease (vWD)",
+   "lines": [
+    "most common inherited · autosomal",
+    "vWF holds platelets AND carries FVIII"
+   ]
+  },
+  {
+   "id": "pfd_head_0_0",
+   "x": 307,
+   "y": 506,
+   "w": 250,
+   "h": 78,
+   "kind": "pfd_h",
+   "title": "Platelet function disorder",
+   "lines": [
+    "inherited or acquired · both sexes",
+    "non-specific type most common"
+   ]
+  },
+  {
+   "id": "hem_head_0_0",
+   "x": 597,
+   "y": 506,
+   "w": 250,
+   "h": 78,
+   "kind": "hem_h",
+   "title": "Hemophilia A (FVIII) · B (FIX)",
+   "lines": [
+    "X-linked: males · 30% new mutations"
+   ]
+  },
+  {
+   "id": "vwd_pres_0_0",
+   "x": 45,
+   "y": 624,
+   "w": 250,
+   "h": 96,
+   "kind": "vwd_t",
+   "title": "Mucosal bleeding",
+   "lines": [
+    "• heavy menses, postpartum, GI",
+    "• easy bruising, post-op bleeding",
+    "~• joints, brain: rare (type 3)"
+   ]
+  },
+  {
+   "id": "pfd_pres_0_0",
+   "x": 307,
+   "y": 624,
+   "w": 250,
+   "h": 96,
+   "kind": "pfd_t",
+   "title": "Mucosal bleeding",
+   "lines": [
+    "• heavy menses, postpartum",
+    "• easy bruising, post-op bleeding"
+   ]
+  },
+  {
+   "id": "hem_pres_0_0",
+   "x": 597,
+   "y": 624,
+   "w": 250,
+   "h": 96,
+   "kind": "hem_t",
+   "title": "JOINT + MUSCLE bleeds",
+   "lines": [
+    "• severe: spontaneous",
+    "• moderate: some spontaneous",
+    "• mild: only major trauma, surgery"
+   ]
+  },
+  {
+   "id": "vwd_inv_0_0",
+   "x": 45,
+   "y": 760,
+   "w": 250,
+   "h": 119,
+   "kind": "vwd_t",
+   "title": "1 · vWD SCREEN",
+   "lines": [
+    "• vWF antigen (amount)",
+    "• vWF activity (function)",
+    "• factor VIII activity"
+   ]
+  },
+  {
+   "id": "vwd_inv_1_0",
+   "x": 45,
+   "y": 901,
+   "w": 250,
+   "h": 119,
+   "kind": "vwd_w",
+   "title": "2 · Hematology: the type",
+   "lines": [
+    "• 1: all ↓ in step (commonest)",
+    "• 2: activity < 70% of antigen",
+    "• 3: vWF absent · 2B: platelets ↓"
+   ]
+  },
+  {
+   "id": "pfd_inv_0_0",
+   "x": 307,
+   "y": 760,
+   "w": 250,
+   "h": 96,
+   "kind": "pfd_t",
+   "title": "1 · EXCLUDE first",
+   "lines": [
+    "• antiplatelets: ASA, clopidogrel, NSAIDs",
+    "• chronic kidney disease"
+   ]
+  },
+  {
+   "id": "pfd_inv_1_0",
+   "x": 307,
+   "y": 878,
+   "w": 250,
+   "h": 60,
+   "kind": "pfd_w",
+   "title": "2 · CBC + film",
+   "lines": [
+    "count may be low, platelets odd-looking"
+   ]
+  },
+  {
+   "id": "pfd_inv_2_0",
+   "x": 307,
+   "y": 960,
+   "w": 250,
+   "h": 60,
+   "kind": "pfd_w",
+   "title": "3 · Hematology",
+   "lines": [
+    "platelet function testing"
+   ]
+  },
+  {
+   "id": "hem_inv_0_0",
+   "x": 597,
+   "y": 760,
+   "w": 250,
+   "h": 128,
+   "kind": "hem_t",
+   "title": "1 · Bleeding + FAMILY history",
+   "lines": [
+    "none does NOT rule out an inherited disorder"
+   ]
+  },
+  {
+   "id": "hem_inv_1_0",
+   "x": 597,
+   "y": 910,
+   "w": 250,
+   "h": 110,
+   "kind": "hem_w",
+   "title": "2 · Factor activity",
+   "lines": [
+    "FVIII ↓ (A) or FIX ↓ (B)"
+   ]
+  },
+  {
+   "id": "vwd_tx_0_0",
+   "x": 45,
+   "y": 1060,
+   "w": 250,
+   "h": 84,
+   "kind": "ok",
+   "title": "Type 1 → DDAVP (desmopressin)",
+   "lines": []
+  },
+  {
+   "id": "vwd_tx_1_0",
+   "x": 45,
+   "y": 1166,
+   "w": 250,
+   "h": 84,
+   "kind": "ok",
+   "title": "Types 2, 3 → IV vWF/FVIII concentrate",
+   "lines": []
+  },
+  {
+   "id": "vwd_tx_2_0",
+   "x": 45,
+   "y": 1272,
+   "w": 250,
+   "h": 84,
+   "kind": "ok",
+   "title": "Mucosal bleed → tranexamic acid",
+   "lines": []
+  },
+  {
+   "id": "pfd_tx_0_0",
+   "x": 307,
+   "y": 1060,
+   "w": 250,
+   "h": 155,
+   "kind": "ok",
+   "title": "By type and severity",
+   "lines": [
+    "• DDAVP",
+    "• tranexamic acid (mucosal)",
+    "• platelet transfusion"
+   ]
+  },
+  {
+   "id": "pfd_tx_1_0",
+   "x": 307,
+   "y": 1237,
+   "w": 250,
+   "h": 119,
+   "kind": "bad",
+   "title": "LIFE-THREATENING",
+   "lines": [
+    "recombinant factor VIIa"
+   ]
+  },
+  {
+   "id": "hem_tx_0_0",
+   "x": 597,
+   "y": 1060,
+   "w": 250,
+   "h": 114,
+   "kind": "ok",
+   "title": "1 · Hemophilia centre",
+   "lines": [
+    "• rest, ice, compression, elevation (RICE)",
+    "• tranexamic acid (mucosal)",
+    "• DDAVP: mild A only"
+   ]
+  },
+  {
+   "id": "hem_tx_1_0",
+   "x": 597,
+   "y": 1196,
+   "w": 250,
+   "h": 78,
+   "kind": "ok",
+   "title": "2 · Factor replacement",
+   "lines": [
+    "• 1 U/kg FVIII → level + 2%",
+    "• 1 U/kg FIX → level + 1%"
+   ]
+  },
+  {
+   "id": "hem_tx_2_0",
+   "x": 597,
+   "y": 1296,
+   "w": 250,
+   "h": 60,
+   "kind": "warn",
+   "title": "Other options",
+   "lines": [
+    "recombinant FVIIa · FEIBA"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_pri",
+   "path": "M446.0 160V185H301.0V210"
+  },
+  {
+   "from": "root",
+   "to": "g_sec",
+   "path": "M446.0 160V185H722.0V210"
+  },
+  {
+   "from": "g_pri",
+   "to": "t_pri",
+   "from_dx": 0
+  },
+  {
+   "from": "g_sec",
+   "to": "t_sec",
+   "from_dx": 0
+  },
+  {
+   "from": "vwd_inv_0_0",
+   "to": "vwd_inv_1_0"
+  },
+  {
+   "from": "pfd_inv_0_0",
+   "to": "pfd_inv_1_0"
+  },
+  {
+   "from": "pfd_inv_1_0",
+   "to": "pfd_inv_2_0"
+  },
+  {
+   "from": "hem_inv_0_0",
+   "to": "hem_inv_1_0"
+  },
+  {
+   "from": "vwd_tx_0_0",
+   "to": "vwd_tx_1_0"
+  },
+  {
+   "from": "vwd_tx_1_0",
+   "to": "vwd_tx_2_0"
+  },
+  {
+   "from": "pfd_tx_0_0",
+   "to": "pfd_tx_1_0"
+  },
+  {
+   "from": "hem_tx_0_0",
+   "to": "hem_tx_1_0"
+  },
+  {
+   "from": "hem_tx_1_0",
+   "to": "hem_tx_2_0"
+  },
+  {
+   "from": "vwd_head_0_0",
+   "to": "vwd_pres_0_0"
+  },
+  {
+   "from": "vwd_pres_0_0",
+   "to": "vwd_inv_0_0"
+  },
+  {
+   "from": "vwd_inv_1_0",
+   "to": "vwd_tx_0_0"
+  },
+  {
+   "from": "t_pri",
+   "to": "vwd_head_0_0",
+   "from_dx": -131,
+   "label": "screen ABNORMAL",
+   "label_at": [
+    170.0,
+    466
+   ]
+  },
+  {
+   "from": "pfd_head_0_0",
+   "to": "pfd_pres_0_0"
+  },
+  {
+   "from": "pfd_pres_0_0",
+   "to": "pfd_inv_0_0"
+  },
+  {
+   "from": "pfd_inv_2_0",
+   "to": "pfd_tx_0_0"
+  },
+  {
+   "from": "t_pri",
+   "to": "pfd_head_0_0",
+   "from_dx": 131,
+   "label": "screen normal",
+   "label_at": [
+    432.0,
+    466
+   ]
+  },
+  {
+   "from": "hem_head_0_0",
+   "to": "hem_pres_0_0"
+  },
+  {
+   "from": "hem_pres_0_0",
+   "to": "hem_inv_0_0"
+  },
+  {
+   "from": "hem_inv_1_0",
+   "to": "hem_tx_0_0"
+  },
+  {
+   "from": "t_sec",
+   "to": "hem_head_0_0",
+   "from_dx": 0,
+   "label": "factor ↓",
+   "label_at": [
+    722.0,
+    466
+   ]
+  }
+ ],
+ "panels": []
+}

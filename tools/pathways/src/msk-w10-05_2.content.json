@@ -1,0 +1,56 @@
+{
+ "name": "MSK infections overview",
+ "title": "Musculoskeletal infections by depth: hand cellulitis (antibiotics) versus closed-space hand infections (incision and drainage), joint infections beyond the usual staphylococcus and streptococcus (gonococcal, Lyme, tuberculous, several joints meaning endocarditis), osteomyelitis including vertebral osteomyelitis, and the diabetic foot; deeper infections need drainage or debridement as well as antibiotics",
+ "col_w": 232,
+ "root": {
+  "title": "Hand, joint, bone or diabetic foot: HOW DEEP is it, and does it need a knife as well as antibiotics?",
+  "lines": [
+   "antibiotics alone will NOT save you: pus in a closed space, a joint or dead bone needs drainage or debridement",
+   "one hot joint (S. aureus, streptococci): aspirate, surgical washout + cefazolin, or vancomycin + ceftriaxone"
+  ]
+ },
+ "groups": [
+  {"id": "g_hand", "cols": [0, 1], "title": "HAND: superficial or deep?", "lines": ["rest and elevation for both"]},
+  {"id": "g_jt", "cols": [2, 2], "title": "JOINT: an unusual organism?", "lines": ["exposure history steers the tests"]},
+  {"id": "g_bone", "cols": [3, 4], "title": "BONE and the diabetic foot", "lines": ["blood supply, chronicity and debridement decide cure"]}
+ ],
+ "sections": ["head", "clue", "inv", "tx"],
+ "row_names": {"clue": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
+ "dashed_sections": ["clue"],
+ "columns": [
+  {"id": "cel", "colour": "teal",
+   "head": [[["h", "Cellulitis", ["superficial skin infection"]]]],
+   "clue": [[["t", "DORSAL hand, wrist to knuckles", ["IRREGULAR margins"]]]],
+   "inv": [[["w", "Clinical", ["no pus, no closed space"]]]],
+   "tx": [[["ok", "Antibiotics", ["+ rest, elevation"]]]]
+  },
+  {"id": "deep", "colour": "blue",
+   "head": [[["h", "Deep (closed-space) infection", ["palm side, fingertip, around joints"]]]],
+   "clue": [[["t", "Where is the pus?", ["• nail fold: PARONYCHIA (S. aureus)", "• fingertip pulp: FELON", "• flexor tendon sheath: TENOSYNOVITIS"]]], [["w", "Bite over a joint", ["• cat, finger joints: Pasteurella multocida", "• human, fist fight, knuckle: Eikenella corrodens"]]]],
+   "inv": [[["t", "Kanavel's 4 signs = tenosynovitis", ["• whole finger swollen", "• held flexed · tender along the sheath", "• intense pain on extension"]]]],
+   "tx": [[["bad", "Incision and drainage", ["+ wound care + antibiotics (bites: broad-spectrum)"]]]]
+  },
+  {"id": "oth", "colour": "purple",
+   "head": [[["h", "Gonococcal, Lyme, tuberculous", ["large-joint monoarthritis (or oligo)"]]]],
+   "clue": [[["t", "Ask: partners, ticks, travel", ["• young, multiple partners: GONOCOCCAL", "• disseminated: tenosynovitis + pustular rash + polyarthralgia", "• endemic country: TUBERCULOSIS"]]], [["bad", "SEVERAL joints, bacterial", ["THINK ENDOCARDITIS"]]]],
+   "inv": [[["w", "Match the test to the bug", ["• gonococcus: urine, rectal, throat nucleic acid test or culture + blood culture (joint fluid + in only 50%)", "• Lyme: serology · tuberculosis: joint fluid for acid-fast bacilli"]]]],
+   "tx": [[["ok", "Bug-specific", ["• gonococcal: ceftriaxone 10–14 days", "• Lyme: IV ceftriaxone 28 days", "• tuberculosis: RIPE four-drug therapy, 9 months–1 year"]]]]
+  },
+  {"id": "om", "colour": "orange",
+   "head": [[["h", "Osteomyelitis", ["blood-borne: spine, children", "contiguous: diabetic foot, trauma, surgery"]]]],
+   "clue": [[["t", "Vertebral: severe back pain", ["• often afebrile · people who inject drugs", "• check strength, reflexes, anal tone"]]], [["w", "Child under 12: metaphysis", ["S. aureus always · Salmonella in sickle cell · Kingella"]]]],
+   "inv": [[["t", "1 · Blood cultures", ["~± spinal biopsy"]]], [["t", "2 · MRI = most sensitive", ["• X-ray, CT not sensitive enough", "• tagged white cell scan takes 2 days", "• don't repeat if improving"]]]],
+   "tx": [[["bad", "Cord compressed or epidural abscess", ["→ neurosurgery"]]], [["ok", "IV vancomycin + ceftriaxone", ["• 6 weeks (vertebral)", "• debride dead bone if needed"]]]]
+  },
+  {"id": "dfi", "colour": "brown",
+   "head": [[["h", "Diabetic foot infection", ["neuropathy + poor blood supply"]]]],
+   "clue": [[["t", "A wound is NOT always infected", ["• swab any wound and bacteria grow", "• smelly? probe to bone? blood supply?"]]], [["w", "Grade", ["• mild: skin only", "• moderate: over 2 cm or deeper", "• severe: + systemic inflammatory response"]]]],
+   "inv": [[["w", "1 · Bloods; swab only a good deep specimen", ["blood count, electrolytes, creatinine, C-reactive protein"]]], [["w", "2 · X-ray first → MRI", ["for osteomyelitis under the ulcer"]]]],
+   "tx": [[["ok", "Mild, one bug (staph, strep)", ["cefazolin (or cephalexin, doxycycline, amoxicillin-clavulanate)"]]], [["warn", "Chronic: polymicrobial", ["amoxicillin-clavulanate · severe: IV ceftriaxone + metronidazole", "Pseudomonas → piperacillin-tazobactam"]]], [["bad", "Severe", ["• exclude necrotizing fasciitis", "• piperacillin-tazobactam ± vancomycin", "• offload, debride, call ortho or vascular"]]]]
+  }
+ ],
+ "panels": [
+  {"title": "Prosthetic joint infection", "items": ["HIGH index of suspicion · less virulent organisms (coagulase-negative staphylococci, Cutibacterium acnes)", "managed by the orthopedic surgeon + infectious diseases"]},
+  {"title": "Viral polyarthritis", "items": ["parvovirus B19 (with anemia) · chikungunya, Zika, dengue (travel) · hepatitis B, C, HIV"]}
+ ]
+}

@@ -1,0 +1,231 @@
+{
+ "name": "topics of antenatal care pathway",
+ "title": "Antenatal antibody screening: the first-trimester group and screen decides between Rh immunoglobulin, routine care, serial titres, and ultrasound follow-up that ends in delivery or intrauterine transfusion",
+ "width": 1120,
+ "nodes": [
+  {
+   "id": "A",
+   "x": 300,
+   "y": 10,
+   "w": 420,
+   "kind": "plain",
+   "title": "Group & screen, 1st trimester",
+   "lines": [
+    "blood type + Rh status + maternal antibodies"
+   ]
+  },
+  {
+   "id": "B",
+   "x": 360,
+   "y": 110,
+   "w": 300,
+   "kind": "plain",
+   "title": "Maternal antibody present?",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 60,
+   "y": 200,
+   "w": 180,
+   "kind": "plain",
+   "title": "Rh negative?",
+   "lines": []
+  },
+  {
+   "id": "E",
+   "x": 340,
+   "y": 200,
+   "w": 180,
+   "kind": "ok",
+   "title": "Routine care",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 30,
+   "y": 310,
+   "w": 300,
+   "kind": "ok",
+   "title": "RhIG",
+   "lines": [
+    "after 8-10 weeks with bleeding /",
+    "invasive procedure / trauma",
+    "routinely 28-30 weeks",
+    "post-partum if baby Rh positive"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 620,
+   "y": 200,
+   "w": 360,
+   "kind": "plain",
+   "title": "Titre + find the source of sensitization",
+   "lines": [
+    "screen partner for zygosity"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 690,
+   "y": 310,
+   "w": 220,
+   "kind": "plain",
+   "title": "Titre ≥ 1/8?",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 380,
+   "y": 310,
+   "w": 240,
+   "kind": "warn",
+   "title": "Serial titres, usually monthly",
+   "lines": []
+  },
+  {
+   "id": "I",
+   "x": 520,
+   "y": 430,
+   "w": 460,
+   "kind": "plain",
+   "title": "Ultrasound: middle cerebral artery peak systolic velocity",
+   "lines": [
+    "correlates with fetal hemoglobin"
+   ]
+  },
+  {
+   "id": "J",
+   "x": 320,
+   "y": 610,
+   "w": 180,
+   "kind": "ok",
+   "title": "Deliver 37-38 weeks",
+   "lines": []
+  },
+  {
+   "id": "K",
+   "x": 525,
+   "y": 610,
+   "w": 190,
+   "kind": "warn",
+   "title": "Deliver",
+   "lines": []
+  },
+  {
+   "id": "L",
+   "x": 790,
+   "y": 610,
+   "w": 220,
+   "kind": "bad",
+   "title": "Intrauterine transfusion",
+   "lines": [
+    "of antigen-negative blood,",
+    "serially if needed"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "path": "M360 134H150V200",
+   "label": "No",
+   "label_at": [
+    255,
+    126
+   ]
+  },
+  {
+   "from": "B",
+   "to": "F",
+   "path": "M660 134H800V200",
+   "label": "Yes",
+   "label_at": [
+    730,
+    126
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "from_side": "right",
+   "to_side": "left",
+   "label": "No",
+   "label_at": [
+    290,
+    216
+   ]
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "to_dx": -30,
+   "label": "Yes",
+   "label_at": [
+    172,
+    285
+   ]
+  },
+  {
+   "from": "F",
+   "to": "G"
+  },
+  {
+   "from": "G",
+   "to": "H",
+   "from_side": "left",
+   "to_side": "right",
+   "label": "No",
+   "label_at": [
+    655,
+    326
+   ]
+  },
+  {
+   "from": "G",
+   "to": "I",
+   "to_dx": 50,
+   "label": "Yes: at risk of severe anemia",
+   "label_at": [
+    685,
+    400
+   ]
+  },
+  {
+   "from": "I",
+   "to": "J",
+   "path": "M520 470H410V610",
+   "label": "Stable",
+   "label_at": [
+    440,
+    545
+   ]
+  },
+  {
+   "from": "I",
+   "to": "K",
+   "from_dx": -130,
+   "label": "Severe anemia, ≥ 34-35 weeks",
+   "label_at": [
+    723,
+    545
+   ]
+  },
+  {
+   "from": "I",
+   "to": "L",
+   "from_dx": 150,
+   "label": "Severe anemia, early gestation",
+   "label_at": [
+    1005,
+    545
+   ]
+  }
+ ]
+}

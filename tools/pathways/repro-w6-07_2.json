@@ -1,0 +1,662 @@
+{
+ "name": "lactation overview",
+ "width": 1344,
+ "title": "Breastfeeding trouble sorted by which of the three needs broke: low supply split by the latch into inadequate production or poor extraction, nipple or breast pain (mastitis pointed to the breast chart), and stopping, either because breastfeeding is contraindicated or because she chooses to wean; each column gives what to look for and how to manage it, with panels on the first week and on contraception while breastfeeding",
+ "kinds": {
+  "prod_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "prod_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "prod_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "extr_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "extr_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "extr_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "pain_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pain_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "pain_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "contra_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "contra_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "contra_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "wean_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "wean_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "wean_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 388,
+   "w": 246,
+   "h": 742,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 288,
+   "y": 388,
+   "w": 246,
+   "h": 742,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 564,
+   "y": 388,
+   "w": 246,
+   "h": 742,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 840,
+   "y": 388,
+   "w": 246,
+   "h": 742,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1088,
+   "y": 388,
+   "w": 246,
+   "h": 742,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 238,
+   "h": 78,
+   "text": "CONFIRM"
+  },
+  {
+   "x": 23,
+   "y": 514,
+   "h": 372,
+   "text": "LOOK FOR"
+  },
+  {
+   "x": 23,
+   "y": 926,
+   "h": 196,
+   "text": "MANAGE"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 307,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Breastfeeding trouble: which of the THREE needs broke?",
+   "lines": [
+    "prolactin MAKES milk · oxytocin EJECTS it · the infant or a pump must REMOVE it, starting by day 3",
+    "from day 3, milk removal (not hormones) drives supply"
+   ]
+  },
+  {
+   "id": "g_low",
+   "x": 45,
+   "y": 138,
+   "w": 484,
+   "h": 60,
+   "kind": "plain",
+   "title": "LOW SUPPLY",
+   "lines": [
+    "the commonest reason to stop breastfeeding"
+   ]
+  },
+  {
+   "id": "g_pain",
+   "x": 569,
+   "y": 138,
+   "w": 236,
+   "h": 60,
+   "kind": "plain",
+   "title": "PAIN while feeding",
+   "lines": []
+  },
+  {
+   "id": "g_stop",
+   "x": 845,
+   "y": 138,
+   "w": 484,
+   "h": 60,
+   "kind": "plain",
+   "title": "Should she STOP?",
+   "lines": [
+    "a contraindication, or her choice"
+   ]
+  },
+  {
+   "id": "p_low",
+   "x": 45,
+   "y": 238,
+   "w": 484,
+   "h": 78,
+   "kind": "info",
+   "title": "1 · Confirm low intake, then watch a feed: is the LATCH good?",
+   "lines": [
+    "• fewer wet and dirty diapers",
+    "• too much infant weight loss"
+   ]
+  },
+  {
+   "id": "prod_head_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 236,
+   "h": 78,
+   "kind": "prod_h",
+   "title": "Inadequate production",
+   "lines": [
+    "milk is not MADE"
+   ]
+  },
+  {
+   "id": "extr_head_0_0",
+   "x": 293,
+   "y": 396,
+   "w": 236,
+   "h": 78,
+   "kind": "extr_h",
+   "title": "Poor extraction",
+   "lines": [
+    "milk is not GOT OUT, so less is made"
+   ]
+  },
+  {
+   "id": "pain_head_0_0",
+   "x": 569,
+   "y": 396,
+   "w": 236,
+   "h": 78,
+   "kind": "pain_h",
+   "title": "Nipple or breast pain",
+   "lines": []
+  },
+  {
+   "id": "contra_head_0_0",
+   "x": 845,
+   "y": 396,
+   "w": 236,
+   "h": 78,
+   "kind": "contra_h",
+   "title": "Do NOT breastfeed",
+   "lines": [
+    "or she declines"
+   ]
+  },
+  {
+   "id": "wean_head_0_0",
+   "x": 1093,
+   "y": 396,
+   "w": 236,
+   "h": 78,
+   "kind": "wean_h",
+   "title": "Weaning",
+   "lines": [
+    "timing is her decision"
+   ]
+  },
+  {
+   "id": "prod_clue_0_0",
+   "x": 45,
+   "y": 514,
+   "w": 236,
+   "h": 211,
+   "kind": "prod_t",
+   "title": "Causes",
+   "lines": [
+    "• retained placenta, Sheehan syndrome",
+    "• little breast growth in pregnancy, breast surgery or radiation",
+    "• polycystic ovary syndrome (PCOS), prolactinoma, insulin resistance"
+   ]
+  },
+  {
+   "id": "prod_clue_1_0",
+   "x": 45,
+   "y": 747,
+   "w": 236,
+   "h": 139,
+   "kind": "prod_w",
+   "title": "Drugs that lower supply",
+   "lines": [
+    "• estrogen",
+    "• decongestants"
+   ]
+  },
+  {
+   "id": "extr_clue_0_0",
+   "x": 293,
+   "y": 514,
+   "w": 236,
+   "h": 372,
+   "kind": "extr_t",
+   "title": "Causes",
+   "lines": [
+    "• poor latch, infrequent feeds",
+    "• preterm, in neonatal intensive care, separated from her",
+    "• cleft lip or palate, sucking or swallowing problem"
+   ]
+  },
+  {
+   "id": "pain_clue_0_0",
+   "x": 569,
+   "y": 514,
+   "w": 236,
+   "h": 201,
+   "kind": "pain_t",
+   "title": "Causes",
+   "lines": [
+    "• cracked nipple: improper latch",
+    "• candida (thrush), dermatitis, Raynaud's",
+    "• engorgement, blocked ducts, too much milk"
+   ]
+  },
+  {
+   "id": "pain_clue_1_0",
+   "x": 569,
+   "y": 737,
+   "w": 236,
+   "h": 149,
+   "kind": "bad",
+   "title": "RED, HOT breast ± fever = MASTITIS",
+   "lines": [
+    "see the BREAST chart"
+   ]
+  },
+  {
+   "id": "contra_clue_0_0",
+   "x": 845,
+   "y": 514,
+   "w": 236,
+   "h": 114,
+   "kind": "contra_t",
+   "title": "Mother",
+   "lines": [
+    "• active psychosis or tuberculosis",
+    "• herpes lesion on the breast",
+    "• cancer drugs: see the DRUGS chart"
+   ]
+  },
+  {
+   "id": "contra_clue_1_0",
+   "x": 845,
+   "y": 650,
+   "w": 236,
+   "h": 96,
+   "kind": "contra_w",
+   "title": "Infant",
+   "lines": [
+    "• galactosemia",
+    "• phenylketonuria (PKU) with high phenylalanine"
+   ]
+  },
+  {
+   "id": "contra_clue_2_0",
+   "x": 845,
+   "y": 768,
+   "w": 236,
+   "h": 118,
+   "kind": "warn",
+   "title": "Human immunodeficiency virus (HIV): avoid in developed countries",
+   "lines": [
+    "World Health Organization: OK if both on antiretroviral therapy"
+   ]
+  },
+  {
+   "id": "wean_clue_0_0",
+   "x": 1093,
+   "y": 514,
+   "w": 236,
+   "h": 372,
+   "kind": "bad",
+   "title": "NOT abruptly",
+   "lines": [
+    "• rapid fall in prolactin may worsen depressive symptoms",
+    "• engorgement, blocked ducts, infection"
+   ]
+  },
+  {
+   "id": "prod_tx_0_0",
+   "x": 45,
+   "y": 926,
+   "w": 236,
+   "h": 96,
+   "kind": "ok",
+   "title": "1 · Augment",
+   "lines": [
+    "• pumping",
+    "• supplement feeds",
+    "• drugs"
+   ]
+  },
+  {
+   "id": "prod_tx_1_0",
+   "x": 45,
+   "y": 1044,
+   "w": 236,
+   "h": 78,
+   "kind": "warn",
+   "title": "2 · Add FORMULA if the baby",
+   "lines": [
+    "• fails to thrive or loses weight",
+    "• is dehydrated or hypoglycemic"
+   ]
+  },
+  {
+   "id": "extr_tx_0_0",
+   "x": 293,
+   "y": 926,
+   "w": 236,
+   "h": 88,
+   "kind": "ok",
+   "title": "1 · Fix the latch, feed on infant cues",
+   "lines": [
+    "lactation consultant"
+   ]
+  },
+  {
+   "id": "extr_tx_1_0",
+   "x": 293,
+   "y": 1036,
+   "w": 236,
+   "h": 86,
+   "kind": "ok",
+   "title": "2 · Too sleepy to feed?",
+   "lines": [
+    "hand-express every 2–3 h, keep it to supplement later"
+   ]
+  },
+  {
+   "id": "pain_tx_0_0",
+   "x": 569,
+   "y": 926,
+   "w": 236,
+   "h": 196,
+   "kind": "ok",
+   "title": "Fix the latch, treat candida",
+   "lines": [
+    "lactation consultant"
+   ]
+  },
+  {
+   "id": "contra_tx_0_0",
+   "x": 845,
+   "y": 926,
+   "w": 236,
+   "h": 196,
+   "kind": "ok",
+   "title": "Stop lactation: cabergoline 1 mg ONCE",
+   "lines": [
+    "a potent dopamine agonist"
+   ]
+  },
+  {
+   "id": "wean_tx_0_0",
+   "x": 1093,
+   "y": 926,
+   "w": 236,
+   "h": 88,
+   "kind": "ok",
+   "title": "1 · Gradual: drop feeds slowly",
+   "lines": [
+    "easiest after 6 months, child-led"
+   ]
+  },
+  {
+   "id": "wean_tx_1_0",
+   "x": 1093,
+   "y": 1036,
+   "w": 236,
+   "h": 86,
+   "kind": "ok",
+   "title": "Comfort",
+   "lines": [
+    "• supportive bra, ice packs",
+    "• analgesics, cabbage leaves"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_low",
+   "path": "M687.0 88V113H287.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_pain",
+   "path": "M687.0 88V113H687.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_stop",
+   "path": "M687.0 88V113H1087.0V138"
+  },
+  {
+   "from": "g_low",
+   "to": "p_low"
+  },
+  {
+   "from": "prod_clue_0_0",
+   "to": "prod_clue_1_0"
+  },
+  {
+   "from": "pain_clue_0_0",
+   "to": "pain_clue_1_0"
+  },
+  {
+   "from": "contra_clue_0_0",
+   "to": "contra_clue_1_0"
+  },
+  {
+   "from": "contra_clue_1_0",
+   "to": "contra_clue_2_0"
+  },
+  {
+   "from": "prod_tx_0_0",
+   "to": "prod_tx_1_0"
+  },
+  {
+   "from": "extr_tx_0_0",
+   "to": "extr_tx_1_0"
+  },
+  {
+   "from": "wean_tx_0_0",
+   "to": "wean_tx_1_0"
+  },
+  {
+   "from": "prod_head_0_0",
+   "to": "prod_clue_0_0"
+  },
+  {
+   "from": "prod_clue_1_0",
+   "to": "prod_tx_0_0"
+  },
+  {
+   "from": "p_low",
+   "to": "prod_head_0_0",
+   "from_dx": -124,
+   "label": "latch GOOD",
+   "label_at": [
+    163.0,
+    356
+   ]
+  },
+  {
+   "from": "extr_head_0_0",
+   "to": "extr_clue_0_0"
+  },
+  {
+   "from": "extr_clue_0_0",
+   "to": "extr_tx_0_0"
+  },
+  {
+   "from": "p_low",
+   "to": "extr_head_0_0",
+   "from_dx": 124,
+   "label": "latch POOR",
+   "label_at": [
+    411.0,
+    356
+   ]
+  },
+  {
+   "from": "pain_head_0_0",
+   "to": "pain_clue_0_0"
+  },
+  {
+   "from": "pain_clue_1_0",
+   "to": "pain_tx_0_0"
+  },
+  {
+   "from": "g_pain",
+   "to": "pain_head_0_0",
+   "from_dx": 0,
+   "label": "nipple or breast",
+   "label_at": [
+    687.0,
+    356
+   ]
+  },
+  {
+   "from": "contra_head_0_0",
+   "to": "contra_clue_0_0"
+  },
+  {
+   "from": "contra_clue_2_0",
+   "to": "contra_tx_0_0"
+  },
+  {
+   "from": "g_stop",
+   "to": "contra_head_0_0",
+   "from_dx": -124,
+   "label": "contraindication",
+   "label_at": [
+    963.0,
+    356
+   ]
+  },
+  {
+   "from": "wean_head_0_0",
+   "to": "wean_clue_0_0"
+  },
+  {
+   "from": "wean_clue_0_0",
+   "to": "wean_tx_0_0"
+  },
+  {
+   "from": "g_stop",
+   "to": "wean_head_0_0",
+   "from_dx": 124,
+   "label": "her choice",
+   "label_at": [
+    1211.0,
+    356
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1156,
+   "w": 635,
+   "title": "The first week",
+   "items": [
+    "start within 1 hour, skin to skin · feed on infant cues",
+    "colostrum alone for 2–4 days: antibodies, cells, vitamins A, D, E, K",
+    "stored milk, laws of 6: room 6 h · fridge 6 days · freezer 6 months"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 694,
+   "y": 1156,
+   "w": 635,
+   "title": "While breastfeeding",
+   "items": [
+    "contraception: NO estrogen (↓ milk quality and quantity) · safe: hormonal or copper intrauterine device (IUD), progestin-only pill, barrier, depot medroxyprogesterone",
+    "more fluids, calories, calcium and vitamins",
+    "medicines, alcohol, smoking: see the DRUGS IN PREGNANCY AND LACTATION chart"
+   ],
+   "cols": 1
+  }
+ ]
+}

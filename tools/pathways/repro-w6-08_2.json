@@ -1,0 +1,727 @@
+{
+ "name": "postpartum care overview",
+ "width": 1336,
+ "title": "A postpartum problem sorted into mood (blues, depression, psychosis, told apart by how long and how severe, with the PHQ-2 and EPDS screen and its cut-offs) or fever and bleeding after the first 24 hours (delayed postpartum hemorrhage, puerperal infection), each with presentation, assessment and treatment in order; panels on the normal return to baseline and on clots, discharge and the perineum",
+ "kinds": {
+  "blues_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "blues_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "blues_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ppd_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ppd_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ppd_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "psy_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "psy_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "psy_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "dpph_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dpph_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "dpph_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "inf_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "inf_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "inf_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 250,
+   "h": 1022,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 292,
+   "y": 270,
+   "w": 250,
+   "h": 1022,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 544,
+   "y": 270,
+   "w": 250,
+   "h": 1022,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 824,
+   "y": 270,
+   "w": 250,
+   "h": 1022,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1076,
+   "y": 270,
+   "w": 250,
+   "h": 1022,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 416,
+   "h": 216,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 672,
+   "h": 356,
+   "text": "ASSESS"
+  },
+  {
+   "x": 23,
+   "y": 1068,
+   "h": 216,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 303,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "After the birth: the normal return to baseline, or a complication?",
+   "lines": [
+    "the complication is whatever breaks the timetable: blues past 2 weeks · bright red bleeding back after 24 h · fever on 2 of the first 10 days"
+   ]
+  },
+  {
+   "id": "g_mood",
+   "x": 45,
+   "y": 138,
+   "w": 744,
+   "h": 60,
+   "kind": "plain",
+   "title": "MOOD: how LONG, how SEVERE, is she in touch with reality?",
+   "lines": []
+  },
+  {
+   "id": "g_body",
+   "x": 829,
+   "y": 138,
+   "w": 492,
+   "h": 60,
+   "kind": "plain",
+   "title": "BLEEDING or FEVER after the first 24 hours",
+   "lines": [
+    "bleeding in the first 24 h: see the POSTPARTUM HEMORRHAGE chart"
+   ]
+  },
+  {
+   "id": "blues_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 240,
+   "h": 98,
+   "kind": "blues_h",
+   "title": "Postpartum blues",
+   "lines": [
+    "very common: life change + hormones"
+   ]
+  },
+  {
+   "id": "ppd_head_0_0",
+   "x": 297,
+   "y": 278,
+   "w": 240,
+   "h": 98,
+   "kind": "ppd_h",
+   "title": "Postpartum depression",
+   "lines": [
+    "major depression within 6 months of delivery"
+   ]
+  },
+  {
+   "id": "psy_head_0_0",
+   "x": 549,
+   "y": 278,
+   "w": 240,
+   "h": 98,
+   "kind": "psy_h",
+   "title": "Postpartum psychosis",
+   "lines": [
+    "rare, often with another mood disorder"
+   ]
+  },
+  {
+   "id": "dpph_head_0_0",
+   "x": 829,
+   "y": 278,
+   "w": 240,
+   "h": 98,
+   "kind": "dpph_h",
+   "title": "Delayed postpartum hemorrhage",
+   "lines": [
+    "bleeding ↑ MORE than 24 h after birth"
+   ]
+  },
+  {
+   "id": "inf_head_0_0",
+   "x": 1081,
+   "y": 278,
+   "w": 240,
+   "h": 98,
+   "kind": "inf_h",
+   "title": "Puerperal infection",
+   "lines": [
+    "temperature > 38.0 °C on any 2 of the first 10 days, NOT counting the first 24 h"
+   ]
+  },
+  {
+   "id": "blues_clue_0_0",
+   "x": 45,
+   "y": 416,
+   "w": 240,
+   "h": 216,
+   "kind": "blues_t",
+   "title": "Onset day 3–10",
+   "lines": [
+    "• weepy, labile mood",
+    "• insomnia, poor concentration",
+    "• anxious, irritable"
+   ]
+  },
+  {
+   "id": "ppd_clue_0_0",
+   "x": 297,
+   "y": 416,
+   "w": 240,
+   "h": 134,
+   "kind": "ppd_t",
+   "title": "Blues > 2 weeks, or SEVERE in the first 2",
+   "lines": [
+    "• low mood, anhedonia, guilt, sleep, energy, appetite",
+    "• severe: poor bonding, suicidal or homicidal ideas"
+   ]
+  },
+  {
+   "id": "ppd_clue_1_0",
+   "x": 297,
+   "y": 572,
+   "w": 240,
+   "h": 60,
+   "kind": "ppd_w",
+   "title": "Highest risk",
+   "lines": [
+    "previous depression: 30% recur"
+   ]
+  },
+  {
+   "id": "psy_clue_0_0",
+   "x": 549,
+   "y": 416,
+   "w": 240,
+   "h": 216,
+   "kind": "psy_t",
+   "title": "Cannot tell real from unreal",
+   "lines": []
+  },
+  {
+   "id": "dpph_clue_0_0",
+   "x": 829,
+   "y": 416,
+   "w": 240,
+   "h": 216,
+   "kind": "dpph_t",
+   "title": "Bright red bleeding RETURNS",
+   "lines": [
+    "± fever, chills, tender uterus"
+   ]
+  },
+  {
+   "id": "inf_clue_0_0",
+   "x": 1081,
+   "y": 416,
+   "w": 240,
+   "h": 216,
+   "kind": "inf_t",
+   "title": "Find the SOURCE",
+   "lines": [
+    "• uterus (endometritis), urine, wound or tear",
+    "• breast, kidney, lungs, pelvic veins",
+    "• necrotizing fasciitis: day 3–5"
+   ]
+  },
+  {
+   "id": "blues_inv_0_0",
+   "x": 45,
+   "y": 672,
+   "w": 240,
+   "h": 356,
+   "kind": "blues_w",
+   "title": "Watch the clock",
+   "lines": [
+    "still there after 2 weeks → DEPRESSION"
+   ]
+  },
+  {
+   "id": "ppd_inv_0_0",
+   "x": 297,
+   "y": 672,
+   "w": 240,
+   "h": 98,
+   "kind": "ppd_t",
+   "title": "1 · Patient Health Questionnaire-2 (PHQ-2) ≥ 3",
+   "lines": [
+    "→ Edinburgh Postnatal Depression Scale (EPDS)"
+   ]
+  },
+  {
+   "id": "ppd_inv_1_0",
+   "x": 297,
+   "y": 792,
+   "w": 240,
+   "h": 98,
+   "kind": "bad",
+   "title": "2 · EPDS item 10 (self-harm) scores 1–3",
+   "lines": [
+    "at ANY total → immediate mental health assessment"
+   ]
+  },
+  {
+   "id": "ppd_inv_2_0",
+   "x": 297.0,
+   "y": 912,
+   "w": 115.0,
+   "h": 116,
+   "kind": "ppd_w",
+   "title": "3 · EPDS 10–12",
+   "lines": [
+    "monitor, support, educate"
+   ]
+  },
+  {
+   "id": "ppd_inv_2_1",
+   "x": 422.0,
+   "y": 912,
+   "w": 115.0,
+   "h": 116,
+   "kind": "ppd_w",
+   "title": "EPDS > 12",
+   "lines": [
+    "full biopsychosocial assessment"
+   ]
+  },
+  {
+   "id": "psy_inv_0_0",
+   "x": 549,
+   "y": 672,
+   "w": 240,
+   "h": 356,
+   "kind": "psy_w",
+   "title": "Highest risk",
+   "lines": [
+    "• previous bipolar or schizoaffective disorder",
+    "• first baby, younger age",
+    "• family history of psychiatric illness"
+   ]
+  },
+  {
+   "id": "dpph_inv_0_0",
+   "x": 829,
+   "y": 672,
+   "w": 240,
+   "h": 167,
+   "kind": "dpph_t",
+   "title": "1 · Ultrasound",
+   "lines": [
+    "retained products of conception (RPOC)?"
+   ]
+  },
+  {
+   "id": "dpph_inv_1_0",
+   "x": 829,
+   "y": 861,
+   "w": 240,
+   "h": 167,
+   "kind": "dpph_w",
+   "title": "Otherwise",
+   "lines": [
+    "• endometritis",
+    "• infected tear or episiotomy"
+   ]
+  },
+  {
+   "id": "inf_inv_0_0",
+   "x": 1081,
+   "y": 672,
+   "w": 240,
+   "h": 186,
+   "kind": "inf_w",
+   "title": "Endometritis: most after CESAREAN",
+   "lines": [
+    "also long labour or rupture of membranes, manual placenta removal"
+   ]
+  },
+  {
+   "id": "inf_inv_1_0",
+   "x": 1081,
+   "y": 880,
+   "w": 240,
+   "h": 148,
+   "kind": "bad",
+   "title": "Can kill",
+   "lines": [
+    "Clostridium sordellii or perfringens, toxic shock syndrome"
+   ]
+  },
+  {
+   "id": "blues_tx_0_0",
+   "x": 45,
+   "y": 1068,
+   "w": 240,
+   "h": 216,
+   "kind": "ok",
+   "title": "None, or supportive",
+   "lines": [
+    "resolves by about 2 weeks"
+   ]
+  },
+  {
+   "id": "ppd_tx_0_0",
+   "x": 297,
+   "y": 1068,
+   "w": 240,
+   "h": 216,
+   "kind": "ok",
+   "title": "Treat",
+   "lines": [
+    "• antidepressants",
+    "• psychiatric assessment",
+    "• support groups"
+   ]
+  },
+  {
+   "id": "psy_tx_0_0",
+   "x": 549,
+   "y": 1068,
+   "w": 240,
+   "h": 216,
+   "kind": "bad",
+   "title": "Could harm the baby",
+   "lines": [
+    "breastfeeding: see the LACTATION chart"
+   ]
+  },
+  {
+   "id": "dpph_tx_0_0",
+   "x": 829,
+   "y": 1068,
+   "w": 240,
+   "h": 79,
+   "kind": "ok",
+   "title": "1 · Antibiotics",
+   "lines": []
+  },
+  {
+   "id": "dpph_tx_1_0",
+   "x": 829,
+   "y": 1169,
+   "w": 240,
+   "h": 115,
+   "kind": "ok",
+   "title": "2 · Tissue present",
+   "lines": [
+    "uterotonic, or dilation and curettage (D&C)"
+   ]
+  },
+  {
+   "id": "inf_tx_0_0",
+   "x": 1081,
+   "y": 1068,
+   "w": 240,
+   "h": 78,
+   "kind": "bad",
+   "title": "1 · SEPTIC",
+   "lines": [
+    "intravenous (IV) clindamycin + gentamicin"
+   ]
+  },
+  {
+   "id": "inf_tx_1_0",
+   "x": 1081,
+   "y": 1168,
+   "w": 240,
+   "h": 116,
+   "kind": "ok",
+   "title": "2 · Endometritis, by mouth, 7–10 days",
+   "lines": [
+    "• amoxicillin-clavulanate 875 mg twice daily",
+    "• or cephalexin + metronidazole"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_mood",
+   "path": "M683.0 88V113H417.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_body",
+   "path": "M683.0 88V113H1075.0V138"
+  },
+  {
+   "from": "ppd_clue_0_0",
+   "to": "ppd_clue_1_0"
+  },
+  {
+   "from": "ppd_inv_0_0",
+   "to": "ppd_inv_1_0"
+  },
+  {
+   "from": "ppd_inv_1_0",
+   "to": "ppd_inv_2_0",
+   "from_dx": -62.5
+  },
+  {
+   "from": "ppd_inv_1_0",
+   "to": "ppd_inv_2_1",
+   "from_dx": 62.5
+  },
+  {
+   "from": "dpph_inv_0_0",
+   "to": "dpph_inv_1_0"
+  },
+  {
+   "from": "inf_inv_0_0",
+   "to": "inf_inv_1_0"
+  },
+  {
+   "from": "dpph_tx_0_0",
+   "to": "dpph_tx_1_0"
+  },
+  {
+   "from": "inf_tx_0_0",
+   "to": "inf_tx_1_0"
+  },
+  {
+   "from": "blues_head_0_0",
+   "to": "blues_clue_0_0"
+  },
+  {
+   "from": "blues_clue_0_0",
+   "to": "blues_inv_0_0"
+  },
+  {
+   "from": "blues_inv_0_0",
+   "to": "blues_tx_0_0"
+  },
+  {
+   "from": "g_mood",
+   "to": "blues_head_0_0",
+   "from_dx": -252,
+   "label": "mild, < 2 weeks",
+   "label_at": [
+    165.0,
+    238
+   ]
+  },
+  {
+   "from": "ppd_head_0_0",
+   "to": "ppd_clue_0_0"
+  },
+  {
+   "from": "ppd_clue_1_0",
+   "to": "ppd_inv_0_0"
+  },
+  {
+   "from": "ppd_inv_2_0",
+   "to": "ppd_tx_0_0",
+   "to_dx": -62.5
+  },
+  {
+   "from": "ppd_inv_2_1",
+   "to": "ppd_tx_0_0",
+   "to_dx": 62.5
+  },
+  {
+   "from": "g_mood",
+   "to": "ppd_head_0_0",
+   "from_dx": 0,
+   "label": "> 2 weeks, or severe",
+   "label_at": [
+    417.0,
+    238
+   ]
+  },
+  {
+   "from": "psy_head_0_0",
+   "to": "psy_clue_0_0"
+  },
+  {
+   "from": "psy_clue_0_0",
+   "to": "psy_inv_0_0"
+  },
+  {
+   "from": "psy_inv_0_0",
+   "to": "psy_tx_0_0"
+  },
+  {
+   "from": "g_mood",
+   "to": "psy_head_0_0",
+   "from_dx": 252,
+   "label": "loses touch with reality",
+   "label_at": [
+    669.0,
+    238
+   ]
+  },
+  {
+   "from": "dpph_head_0_0",
+   "to": "dpph_clue_0_0"
+  },
+  {
+   "from": "dpph_clue_0_0",
+   "to": "dpph_inv_0_0"
+  },
+  {
+   "from": "dpph_inv_1_0",
+   "to": "dpph_tx_0_0"
+  },
+  {
+   "from": "g_body",
+   "to": "dpph_head_0_0",
+   "from_dx": -126,
+   "label": "bleeding again",
+   "label_at": [
+    949.0,
+    238
+   ]
+  },
+  {
+   "from": "inf_head_0_0",
+   "to": "inf_clue_0_0"
+  },
+  {
+   "from": "inf_clue_0_0",
+   "to": "inf_inv_0_0"
+  },
+  {
+   "from": "inf_inv_1_0",
+   "to": "inf_tx_0_0"
+  },
+  {
+   "from": "g_body",
+   "to": "inf_head_0_0",
+   "from_dx": 126,
+   "label": "fever",
+   "label_at": [
+    1201.0,
+    238
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1318,
+   "w": 631,
+   "title": "Back to baseline: the normal timetable",
+   "items": [
+    "lochia for up to 56 days (rubra → serosa → alba) · uterus back to non-pregnant size by 4 weeks",
+    "ovulation can come BEFORE the first period: lactational amenorrhea is NOT contraception · not breastfeeding: ovulation and menses at ~6–8 weeks",
+    "contraception from 6 weeks · NO estrogen before 21 days (clot risk)",
+    "pelvic floor physiotherapy for EVERY patient, from 6 weeks"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 690,
+   "y": 1318,
+   "w": 631,
+   "title": "Clots, sleep and going home",
+   "items": [
+    "venous thromboembolism: greatest risk POSTPARTUM (deep vein thrombosis, pulmonary embolism, septic pelvic thrombophlebitis) → low-molecular-weight heparin",
+    "insomnia: sleep hygiene first · cognitive behavioural therapy if persistent · rule out a mood disorder",
+    "home before 48 h: check bleeding, bowel, bladder, baby care · NOT with preeclampsia, postpartum hemorrhage, fever or an unstable condition",
+    "perineum: clean, dry, sitz baths · NO rectal medicines after a 3rd or 4th degree tear"
+   ],
+   "cols": 1
+  }
+ ]
+}

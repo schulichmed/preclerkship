@@ -1,0 +1,684 @@
+{
+ "name": "microcytic anemia overview",
+ "width": 1052,
+ "title": "Microcytic anemia: ferritin splits iron deficiency from anemia of chronic inflammation, sideroblastic anemia or lead, and thalassemia; each column gives the questions, investigations and treatment in order",
+ "kinds": {
+  "ida_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ida_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ida_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "aci_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "aci_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "aci_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "sid_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sid_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "sid_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "tha_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tha_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "tha_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 242,
+   "h": 1046,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 312,
+   "y": 270,
+   "w": 242,
+   "h": 1046,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 556,
+   "y": 270,
+   "w": 242,
+   "h": 1046,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 800,
+   "y": 270,
+   "w": 242,
+   "h": 1046,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 416,
+   "h": 232,
+   "text": "ASK"
+  },
+  {
+   "x": 23,
+   "y": 688,
+   "h": 318,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1046,
+   "h": 262,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 161,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Microcytic anemia (mean cell volume, MCV < 80 fL): is it IRON?",
+   "lines": [
+    "TAILS: Thalassemia · Anemia of chronic inflammation · Iron deficiency · Lead · Sideroblastic",
+    "every one: complete blood count (CBC) indices · serum ferritin · peripheral film"
+   ]
+  },
+  {
+   "id": "g_lo",
+   "x": 45,
+   "y": 138,
+   "w": 232,
+   "h": 60,
+   "kind": "plain",
+   "title": "Ferritin LOW",
+   "lines": [
+    "iron is MISSING"
+   ]
+  },
+  {
+   "id": "g_ok",
+   "x": 317,
+   "y": 138,
+   "w": 720,
+   "h": 60,
+   "kind": "plain",
+   "title": "Ferritin NORMAL or ↑",
+   "lines": [
+    "iron is there but not used, or globin is missing: the history and the film decide"
+   ]
+  },
+  {
+   "id": "ida_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 232,
+   "h": 98,
+   "kind": "ida_h",
+   "title": "Iron deficiency anemia (IDA)",
+   "lines": [
+    "find the SOURCE"
+   ]
+  },
+  {
+   "id": "aci_head_0_0",
+   "x": 317,
+   "y": 278,
+   "w": 232,
+   "h": 98,
+   "kind": "aci_h",
+   "title": "Anemia of chronic inflammation",
+   "lines": [
+    "hepcidin blocks ferroportin: iron STUCK in stores"
+   ]
+  },
+  {
+   "id": "sid_head_0_0",
+   "x": 561,
+   "y": 278,
+   "w": 232,
+   "h": 98,
+   "kind": "sid_h",
+   "title": "Sideroblastic anemia, lead",
+   "lines": [
+    "iron cannot get into heme"
+   ]
+  },
+  {
+   "id": "tha_head_0_0",
+   "x": 805,
+   "y": 278,
+   "w": 232,
+   "h": 98,
+   "kind": "tha_h",
+   "title": "Thalassemia",
+   "lines": [
+    "too little globin: α or β genes"
+   ]
+  },
+  {
+   "id": "ida_clue_0_0",
+   "x": 45,
+   "y": 416,
+   "w": 232,
+   "h": 132,
+   "kind": "ida_t",
+   "title": "Bleeding? Diet?",
+   "lines": [
+    "• menstrual, fibroids, GI (melena), urinary",
+    "• poor absorption: celiac, gastric bypass",
+    "• vegan, pregnancy"
+   ]
+  },
+  {
+   "id": "ida_clue_1_0",
+   "x": 45,
+   "y": 570,
+   "w": 232,
+   "h": 78,
+   "kind": "ida_w",
+   "title": "Signs",
+   "lines": [
+    "• pica, spoon nails (koilonychia)",
+    "• restless legs, glossitis"
+   ]
+  },
+  {
+   "id": "aci_clue_0_0",
+   "x": 317,
+   "y": 416,
+   "w": 232,
+   "h": 232,
+   "kind": "aci_t",
+   "title": "Infection? Inflammation? Cancer?",
+   "lines": [
+    "• tuberculosis, endocarditis, abscess, HIV",
+    "• rheumatoid arthritis, lupus, inflammatory bowel disease",
+    "• lymphoma, carcinoma, myeloma"
+   ]
+  },
+  {
+   "id": "sid_clue_0_0",
+   "x": 561,
+   "y": 416,
+   "w": 232,
+   "h": 232,
+   "kind": "sid_t",
+   "title": "Old house or paint? Drugs?",
+   "lines": [
+    "• alcohol, vitamin B6 deficiency",
+    "• anti-TB drugs, chemotherapy",
+    "• family history (X-linked)"
+   ]
+  },
+  {
+   "id": "tha_clue_0_0",
+   "x": 805,
+   "y": 416,
+   "w": 232,
+   "h": 232,
+   "kind": "tha_t",
+   "title": "Family history? Prior CBC?",
+   "lines": [
+    "• α: Southeast Asian, African",
+    "• β: Mediterranean",
+    "• early childhood, jaundice, big spleen"
+   ]
+  },
+  {
+   "id": "ida_inv_0_0",
+   "x": 45,
+   "y": 688,
+   "w": 232,
+   "h": 148,
+   "kind": "ida_t",
+   "title": "1 · Ferritin LOW",
+   "lines": [
+    "• red cell distribution width (RDW) ↑",
+    "• platelets ↑, transferrin saturation ↓"
+   ]
+  },
+  {
+   "id": "ida_inv_1_0",
+   "x": 45,
+   "y": 858,
+   "w": 232,
+   "h": 148,
+   "kind": "ida_w",
+   "title": "2 · Film",
+   "lines": [
+    "hypochromic, target cells, elliptocytes"
+   ]
+  },
+  {
+   "id": "aci_inv_0_0",
+   "x": 317,
+   "y": 688,
+   "w": 232,
+   "h": 157,
+   "kind": "aci_t",
+   "title": "1 · Ferritin normal or ↑",
+   "lines": [
+    "mild: MCV rarely < 75 fL"
+   ]
+  },
+  {
+   "id": "aci_inv_1_0",
+   "x": 317,
+   "y": 867,
+   "w": 232,
+   "h": 139,
+   "kind": "aci_w",
+   "title": "2 · Infection workup",
+   "lines": []
+  },
+  {
+   "id": "sid_inv_0_0",
+   "x": 561,
+   "y": 688,
+   "w": 232,
+   "h": 157,
+   "kind": "sid_t",
+   "title": "1 · Film",
+   "lines": [
+    "• basophilic stippling",
+    "• Pappenheimer bodies, RDW ↑"
+   ]
+  },
+  {
+   "id": "sid_inv_1_0",
+   "x": 561,
+   "y": 867,
+   "w": 232,
+   "h": 139,
+   "kind": "sid_w",
+   "title": "2 · Marrow",
+   "lines": [
+    "iron RINGED round the nucleus"
+   ]
+  },
+  {
+   "id": "tha_inv_0_0",
+   "x": 805,
+   "y": 688,
+   "w": 232,
+   "h": 60,
+   "kind": "tha_t",
+   "title": "1 · RDW NORMAL",
+   "lines": [
+    "RBC count high for the MCV"
+   ]
+  },
+  {
+   "id": "tha_inv_1_0",
+   "x": 805,
+   "y": 770,
+   "w": 232,
+   "h": 98,
+   "kind": "tha_t",
+   "title": "2 · Hb electrophoresis or HPLC",
+   "lines": [
+    "high-performance liquid chromatography"
+   ]
+  },
+  {
+   "id": "tha_inv_2_0",
+   "x": 805.0,
+   "y": 890,
+   "w": 111.0,
+   "h": 116,
+   "kind": "tha_w",
+   "title": "↑ HbA2: β",
+   "lines": [
+    "• minor",
+    "• ↑ HbF: major"
+   ]
+  },
+  {
+   "id": "tha_inv_2_1",
+   "x": 926.0,
+   "y": 890,
+   "w": 111.0,
+   "h": 116,
+   "kind": "tha_w",
+   "title": "HbA2 normal: α",
+   "lines": [
+    "• HbH test",
+    "• gene sequencing"
+   ]
+  },
+  {
+   "id": "ida_tx_0_0",
+   "x": 45,
+   "y": 1046,
+   "w": 232,
+   "h": 62,
+   "kind": "ok",
+   "title": "1 · Find and treat the SOURCE",
+   "lines": []
+  },
+  {
+   "id": "ida_tx_1_0",
+   "x": 45,
+   "y": 1130,
+   "w": 232,
+   "h": 96,
+   "kind": "ok",
+   "title": "2 · Oral iron, with vitamin C",
+   "lines": [
+    "• reticulocytes rise at 1 week",
+    "• hemoglobin (Hb) at 2–4 weeks",
+    "• stores at 3–6 months"
+   ]
+  },
+  {
+   "id": "ida_tx_2_0",
+   "x": 45,
+   "y": 1248,
+   "w": 232,
+   "h": 60,
+   "kind": "warn",
+   "title": "IV iron or transfusion",
+   "lines": [
+    "poor absorption · rapid blood loss"
+   ]
+  },
+  {
+   "id": "aci_tx_0_0",
+   "x": 317,
+   "y": 1046,
+   "w": 232,
+   "h": 129,
+   "kind": "ok",
+   "title": "1 · Treat the underlying disease",
+   "lines": [
+    "seldom needs transfusion"
+   ]
+  },
+  {
+   "id": "aci_tx_1_0",
+   "x": 317,
+   "y": 1197,
+   "w": 232,
+   "h": 111,
+   "kind": "warn",
+   "title": "2 · Erythropoietin (EPO) if severe",
+   "lines": []
+  },
+  {
+   "id": "sid_tx_0_0",
+   "x": 561,
+   "y": 1046,
+   "w": 232,
+   "h": 73,
+   "kind": "ok",
+   "title": "1 · Remove the toxin",
+   "lines": [
+    "chelation for lead"
+   ]
+  },
+  {
+   "id": "sid_tx_1_0",
+   "x": 561,
+   "y": 1141,
+   "w": 232,
+   "h": 73,
+   "kind": "ok",
+   "title": "2 · Pyridoxine (B6)",
+   "lines": [
+    "sometimes helps"
+   ]
+  },
+  {
+   "id": "sid_tx_2_0",
+   "x": 561,
+   "y": 1236,
+   "w": 232,
+   "h": 73,
+   "kind": "warn",
+   "title": "Transfusion",
+   "lines": [
+    "marrow transplant rarely"
+   ]
+  },
+  {
+   "id": "tha_tx_0_0",
+   "x": 805,
+   "y": 1046,
+   "w": 232,
+   "h": 147,
+   "kind": "ok",
+   "title": "1 · Transfuse by severity",
+   "lines": [
+    "α genes lost: 1–2 carrier or trait",
+    "3 HbH disease, 4 hydrops fetalis",
+    "+ iron chelation (deferoxamine)"
+   ]
+  },
+  {
+   "id": "tha_tx_1_0",
+   "x": 805,
+   "y": 1215,
+   "w": 232,
+   "h": 93,
+   "kind": "ok",
+   "title": "2 · Genetic counselling",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_lo",
+   "path": "M541.0 88V113H161.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_ok",
+   "path": "M541.0 88V113H677.0V138"
+  },
+  {
+   "from": "ida_clue_0_0",
+   "to": "ida_clue_1_0"
+  },
+  {
+   "from": "ida_inv_0_0",
+   "to": "ida_inv_1_0"
+  },
+  {
+   "from": "aci_inv_0_0",
+   "to": "aci_inv_1_0"
+  },
+  {
+   "from": "sid_inv_0_0",
+   "to": "sid_inv_1_0"
+  },
+  {
+   "from": "tha_inv_0_0",
+   "to": "tha_inv_1_0"
+  },
+  {
+   "from": "tha_inv_1_0",
+   "to": "tha_inv_2_0",
+   "from_dx": -60.5
+  },
+  {
+   "from": "tha_inv_1_0",
+   "to": "tha_inv_2_1",
+   "from_dx": 60.5
+  },
+  {
+   "from": "ida_tx_0_0",
+   "to": "ida_tx_1_0"
+  },
+  {
+   "from": "ida_tx_1_0",
+   "to": "ida_tx_2_0"
+  },
+  {
+   "from": "aci_tx_0_0",
+   "to": "aci_tx_1_0"
+  },
+  {
+   "from": "sid_tx_0_0",
+   "to": "sid_tx_1_0"
+  },
+  {
+   "from": "sid_tx_1_0",
+   "to": "sid_tx_2_0"
+  },
+  {
+   "from": "tha_tx_0_0",
+   "to": "tha_tx_1_0"
+  },
+  {
+   "from": "ida_head_0_0",
+   "to": "ida_clue_0_0"
+  },
+  {
+   "from": "ida_clue_1_0",
+   "to": "ida_inv_0_0"
+  },
+  {
+   "from": "ida_inv_1_0",
+   "to": "ida_tx_0_0"
+  },
+  {
+   "from": "g_lo",
+   "to": "ida_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "aci_head_0_0",
+   "to": "aci_clue_0_0"
+  },
+  {
+   "from": "aci_clue_0_0",
+   "to": "aci_inv_0_0"
+  },
+  {
+   "from": "aci_inv_1_0",
+   "to": "aci_tx_0_0"
+  },
+  {
+   "from": "g_ok",
+   "to": "aci_head_0_0",
+   "from_dx": -244,
+   "label": "infection, inflammation",
+   "label_at": [
+    433.0,
+    238
+   ]
+  },
+  {
+   "from": "sid_head_0_0",
+   "to": "sid_clue_0_0"
+  },
+  {
+   "from": "sid_clue_0_0",
+   "to": "sid_inv_0_0"
+  },
+  {
+   "from": "sid_inv_1_0",
+   "to": "sid_tx_0_0"
+  },
+  {
+   "from": "g_ok",
+   "to": "sid_head_0_0",
+   "from_dx": 0,
+   "label": "toxin, B6, stippling",
+   "label_at": [
+    677.0,
+    238
+   ]
+  },
+  {
+   "from": "tha_head_0_0",
+   "to": "tha_clue_0_0"
+  },
+  {
+   "from": "tha_clue_0_0",
+   "to": "tha_inv_0_0"
+  },
+  {
+   "from": "tha_inv_2_0",
+   "to": "tha_tx_0_0",
+   "to_dx": -60.5
+  },
+  {
+   "from": "tha_inv_2_1",
+   "to": "tha_tx_0_0",
+   "to_dx": 60.5
+  },
+  {
+   "from": "g_ok",
+   "to": "tha_head_0_0",
+   "from_dx": 244,
+   "label": "family history",
+   "label_at": [
+    921.0,
+    238
+   ]
+  }
+ ],
+ "panels": []
+}

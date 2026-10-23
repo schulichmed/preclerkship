@@ -1,0 +1,597 @@
+{
+ "name": "gi bleeding overview",
+ "width": 1116,
+ "title": "GI bleeding decision chart: resuscitate and correct coagulopathy first, then sort by the ligament of Treitz; an upper bleed is non-variceal (IV pantoprazole and endoscopic therapy) or variceal (pantoprazole, octreotide, antibiotics, banding), a lower bleed goes to colonoscopy if stable or to upper endoscopy, angiography and surgery if unstable",
+ "kinds": {
+  "nv_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nv_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "nv_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "va_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "va_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "va_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ls_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ls_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ls_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "lu_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "lu_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "lu_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 360,
+   "w": 258,
+   "h": 880,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 300,
+   "y": 360,
+   "w": 258,
+   "h": 880,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 588,
+   "y": 360,
+   "w": 258,
+   "h": 880,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 848,
+   "y": 360,
+   "w": 258,
+   "h": 880,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 486,
+   "h": 132,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 658,
+   "h": 218,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 916,
+   "h": 316,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 193,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "GI bleed: RESUSCITATE first, then UPPER or LOWER (the ligament of Treitz)?",
+   "lines": [
+    "airway (intubate if needed) · 2 large-bore IVs · fluids · transfuse",
+    "correct coagulopathy: fresh frozen plasma, platelets, vitamin K, Octaplex · STOP anticoagulants and antiplatelets",
+    "NO visible blood (OCCULT: positive fecal occult blood or iron deficiency anemia) → rule out colorectal and other cancers"
+   ]
+  },
+  {
+   "id": "g_up",
+   "x": 45,
+   "y": 156,
+   "w": 508,
+   "h": 132,
+   "kind": "plain",
+   "title": "UPPER: HEMATEMESIS or MELENA",
+   "lines": [
+    "• ↑ urea : creatinine, or fresh blood up a nasogastric tube",
+    "• HIGHER MORTALITY: age > 60, shock, heart disease or cirrhosis, fresh red blood, bleeding that persists or starts in hospital",
+    "• urgent esophagogastroduodenoscopy (EGD) AFTER resuscitation: finds AND treats"
+   ]
+  },
+  {
+   "id": "g_lo",
+   "x": 593,
+   "y": 156,
+   "w": 508,
+   "h": 132,
+   "kind": "plain",
+   "title": "LOWER: HEMATOCHEZIA · is the patient STABLE?",
+   "lines": [
+    "• #1 diverticulosis (usually stops), hemorrhoids, fissure",
+    "• inflammatory bowel disease, cancer, ischemic or infectious colitis, radiation, post-polypectomy"
+   ]
+  },
+  {
+   "id": "nv_head_0_0",
+   "x": 45,
+   "y": 368,
+   "w": 248,
+   "h": 78,
+   "kind": "nv_h",
+   "title": "Non-variceal upper bleed",
+   "lines": [
+    "ulcer, gastritis, esophagitis, Mallory-Weiss tear, cancer"
+   ]
+  },
+  {
+   "id": "va_head_0_0",
+   "x": 305,
+   "y": 368,
+   "w": 248,
+   "h": 78,
+   "kind": "va_h",
+   "title": "Variceal upper bleed",
+   "lines": [
+    "portal hypertension: esophageal or gastric varices"
+   ]
+  },
+  {
+   "id": "ls_head_0_0",
+   "x": 593,
+   "y": 368,
+   "w": 248,
+   "h": 78,
+   "kind": "ls_h",
+   "title": "Stable lower bleed",
+   "lines": []
+  },
+  {
+   "id": "lu_head_0_0",
+   "x": 853,
+   "y": 368,
+   "w": 248,
+   "h": 78,
+   "kind": "lu_h",
+   "title": "Unstable lower bleed",
+   "lines": [
+    "a brisk UPPER bleed can look like this"
+   ]
+  },
+  {
+   "id": "nv_pres_0_0",
+   "x": 45,
+   "y": 486,
+   "w": 248,
+   "h": 132,
+   "kind": "nv_t",
+   "title": "Hematemesis or melena",
+   "lines": [
+    "• anti-inflammatories (NSAIDs), anticoagulants",
+    "• peptic ulcer, H. pylori",
+    "• aortic aneurysm repair: aortoenteric fistula"
+   ]
+  },
+  {
+   "id": "va_pres_0_0",
+   "x": 305,
+   "y": 486,
+   "w": 248,
+   "h": 132,
+   "kind": "va_t",
+   "title": "Hematemesis or melena",
+   "lines": [
+    "• liver disease, alcohol",
+    "• signs of chronic liver disease",
+    "• ↑ liver enzymes"
+   ]
+  },
+  {
+   "id": "ls_pres_0_0",
+   "x": 593,
+   "y": 486,
+   "w": 248,
+   "h": 132,
+   "kind": "ls_t",
+   "title": "Hematochezia, vitals normal",
+   "lines": [
+    "• prior episodes, polyps, cancer, radiation",
+    "• last colonoscopy? recent polypectomy?",
+    "• family history of colorectal cancer"
+   ]
+  },
+  {
+   "id": "lu_pres_0_0",
+   "x": 853,
+   "y": 486,
+   "w": 248,
+   "h": 132,
+   "kind": "bad",
+   "title": "Hematochezia + shock",
+   "lines": [
+    "• tachycardia, hypotension",
+    "• orthostatic drop"
+   ]
+  },
+  {
+   "id": "nv_inv_0_0",
+   "x": 45,
+   "y": 658,
+   "w": 248,
+   "h": 96,
+   "kind": "nv_w",
+   "title": "1 · Bloods",
+   "lines": [
+    "• complete blood count, INR, PTT, group and cross-match",
+    "• liver and cardiac enzymes, ECG"
+   ]
+  },
+  {
+   "id": "nv_inv_1_0",
+   "x": 45,
+   "y": 776,
+   "w": 248,
+   "h": 100,
+   "kind": "nv_t",
+   "title": "2 · Esophagogastroduodenoscopy (EGD)",
+   "lines": [
+    "after resuscitation"
+   ]
+  },
+  {
+   "id": "va_inv_0_0",
+   "x": 305,
+   "y": 658,
+   "w": 248,
+   "h": 218,
+   "kind": "va_t",
+   "title": "1 · Urgent EGD after resuscitation",
+   "lines": [
+    "diagnoses and bands"
+   ]
+  },
+  {
+   "id": "ls_inv_0_0",
+   "x": 593,
+   "y": 658,
+   "w": 248,
+   "h": 98,
+   "kind": "ls_t",
+   "title": "1 · COLONOSCOPY",
+   "lines": [
+    "bowel prep takes time"
+   ]
+  },
+  {
+   "id": "ls_inv_1_0",
+   "x": 593,
+   "y": 778,
+   "w": 248,
+   "h": 98,
+   "kind": "ls_w",
+   "title": "2 · Source not found",
+   "lines": [
+    "tagged red cell scan or angiography"
+   ]
+  },
+  {
+   "id": "lu_inv_0_0",
+   "x": 853,
+   "y": 658,
+   "w": 248,
+   "h": 89,
+   "kind": "lu_t",
+   "title": "1 · UPPER endoscopy FIRST",
+   "lines": []
+  },
+  {
+   "id": "lu_inv_1_0",
+   "x": 853,
+   "y": 769,
+   "w": 248,
+   "h": 107,
+   "kind": "lu_w",
+   "title": "2 · ± Angiography",
+   "lines": [
+    "contrast leaks into the gut"
+   ]
+  },
+  {
+   "id": "nv_tx_0_0",
+   "x": 45,
+   "y": 916,
+   "w": 248,
+   "h": 97,
+   "kind": "ok",
+   "title": "1 · IV PANTOPRAZOLE",
+   "lines": [
+    "80 mg bolus + 8 mg/h"
+   ]
+  },
+  {
+   "id": "nv_tx_1_0",
+   "x": 45,
+   "y": 1035,
+   "w": 248,
+   "h": 97,
+   "kind": "ok",
+   "title": "2 · Endoscopic therapy",
+   "lines": [
+    "epinephrine injection, cautery, clips"
+   ]
+  },
+  {
+   "id": "nv_tx_2_0",
+   "x": 45,
+   "y": 1154,
+   "w": 248,
+   "h": 79,
+   "kind": "ok",
+   "title": "3 · Test for H. pylori",
+   "lines": []
+  },
+  {
+   "id": "va_tx_0_0",
+   "x": 305,
+   "y": 916,
+   "w": 248,
+   "h": 98,
+   "kind": "ok",
+   "title": "1 · PANTOPRAZOLE + OCTREOTIDE",
+   "lines": [
+    "• pantoprazole 80 mg + 8 mg/h IV",
+    "• octreotide 50 mcg + 50 mcg/h IV"
+   ]
+  },
+  {
+   "id": "va_tx_1_0",
+   "x": 305,
+   "y": 1036,
+   "w": 248,
+   "h": 78,
+   "kind": "ok",
+   "title": "2 · ANTIBIOTICS",
+   "lines": [
+    "cephalosporin or fluoroquinolone: lowers MORTALITY"
+   ]
+  },
+  {
+   "id": "va_tx_2_0",
+   "x": 305,
+   "y": 1136,
+   "w": 248,
+   "h": 96,
+   "kind": "warn",
+   "title": "3 · Band ligation",
+   "lines": [
+    "then balloon tamponade, transjugular intrahepatic portosystemic shunt (TIPS)"
+   ]
+  },
+  {
+   "id": "ls_tx_0_0",
+   "x": 593,
+   "y": 916,
+   "w": 248,
+   "h": 316,
+   "kind": "ok",
+   "title": "Treat at colonoscopy",
+   "lines": [
+    "endoscopy treats as well as finds"
+   ]
+  },
+  {
+   "id": "lu_tx_0_0",
+   "x": 853,
+   "y": 916,
+   "w": 248,
+   "h": 156,
+   "kind": "warn",
+   "title": "Embolization at angiography",
+   "lines": [
+    "interventional radiology: gelfoam, coil"
+   ]
+  },
+  {
+   "id": "lu_tx_1_0",
+   "x": 853,
+   "y": 1094,
+   "w": 248,
+   "h": 138,
+   "kind": "bad",
+   "title": "Surgical consult",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_up",
+   "path": "M573.0 106V131H299.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_lo",
+   "path": "M573.0 106V131H847.0V156"
+  },
+  {
+   "from": "nv_inv_0_0",
+   "to": "nv_inv_1_0"
+  },
+  {
+   "from": "ls_inv_0_0",
+   "to": "ls_inv_1_0"
+  },
+  {
+   "from": "lu_inv_0_0",
+   "to": "lu_inv_1_0"
+  },
+  {
+   "from": "nv_tx_0_0",
+   "to": "nv_tx_1_0"
+  },
+  {
+   "from": "nv_tx_1_0",
+   "to": "nv_tx_2_0"
+  },
+  {
+   "from": "va_tx_0_0",
+   "to": "va_tx_1_0"
+  },
+  {
+   "from": "va_tx_1_0",
+   "to": "va_tx_2_0"
+  },
+  {
+   "from": "lu_tx_0_0",
+   "to": "lu_tx_1_0"
+  },
+  {
+   "from": "nv_head_0_0",
+   "to": "nv_pres_0_0"
+  },
+  {
+   "from": "nv_pres_0_0",
+   "to": "nv_inv_0_0"
+  },
+  {
+   "from": "nv_inv_1_0",
+   "to": "nv_tx_0_0"
+  },
+  {
+   "from": "g_up",
+   "to": "nv_head_0_0",
+   "from_dx": -130,
+   "label": "ulcer, gastritis",
+   "label_at": [
+    169.0,
+    328
+   ]
+  },
+  {
+   "from": "va_head_0_0",
+   "to": "va_pres_0_0"
+  },
+  {
+   "from": "va_pres_0_0",
+   "to": "va_inv_0_0"
+  },
+  {
+   "from": "va_inv_0_0",
+   "to": "va_tx_0_0"
+  },
+  {
+   "from": "g_up",
+   "to": "va_head_0_0",
+   "from_dx": 130,
+   "label": "LIVER disease, alcohol",
+   "label_at": [
+    429.0,
+    328
+   ]
+  },
+  {
+   "from": "ls_head_0_0",
+   "to": "ls_pres_0_0"
+  },
+  {
+   "from": "ls_pres_0_0",
+   "to": "ls_inv_0_0"
+  },
+  {
+   "from": "ls_inv_1_0",
+   "to": "ls_tx_0_0"
+  },
+  {
+   "from": "g_lo",
+   "to": "ls_head_0_0",
+   "from_dx": -130,
+   "label": "STABLE",
+   "label_at": [
+    717.0,
+    328
+   ]
+  },
+  {
+   "from": "lu_head_0_0",
+   "to": "lu_pres_0_0"
+  },
+  {
+   "from": "lu_pres_0_0",
+   "to": "lu_inv_0_0"
+  },
+  {
+   "from": "lu_inv_1_0",
+   "to": "lu_tx_0_0"
+  },
+  {
+   "from": "g_lo",
+   "to": "lu_head_0_0",
+   "from_dx": 130,
+   "label": "UNSTABLE",
+   "label_at": [
+    977.0,
+    328
+   ]
+  }
+ ],
+ "panels": []
+}

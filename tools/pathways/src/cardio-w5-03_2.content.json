@@ -1,0 +1,344 @@
+{
+ "name": "syncope overview",
+ "title": "Syncope decision chart: confirm a transient loss of consciousness, then the history's red flags split benign reflex (vasovagal) syncope from cardiac syncope, which is obstructive, bradycardic or tachycardic; each column gives the clues, the investigations in order and the treatment",
+ "col_w": 236,
+ "root": {
+  "title": "A faint: was it SYNCOPE, and are there RED FLAGS for a CARDIAC cause?",
+  "lines": [
+   "syncope = transient loss of consciousness from low brain blood flow, recovering on its own",
+   "first CONFIRM it: not a trip, weakness or dizziness",
+   "not a mimic: seizure, stroke or transient ischemic attack, brain bleed, hypoglycemia, hypoxia, psychogenic",
+   "the HISTORY sorts it: circumstances, prodrome, recovery, witnesses, heart disease, family history of sudden death"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ref",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "NO red flags: a trigger + a prodrome",
+   "lines": [
+    "REFLEX syncope: the most common, benign"
+   ]
+  },
+  {
+   "id": "g_card",
+   "cols": [
+    1,
+    3
+   ],
+   "title": "RED FLAGS → CARDIAC syncope: the worst prognosis",
+   "lines": [
+    "syncope DURING exertion, SUDDEN with no prodrome, known heart disease, an abnormal ECG, or a family history of sudden death or drowning"
+   ]
+  }
+ ],
+ "pres": [
+  {
+   "id": "p_card",
+   "group": "g_card",
+   "title": "1 · Bloods, ECG, ECHO  →  2 · Ambulatory monitor: match symptoms to rhythm  →  3 · Provoke: tilt, stress test, electrophysiology (EP) study",
+   "lines": [
+    "~monitors only help if another episode happens while it is worn: Holter 24–48 h, external or implantable loop recorder"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "WORKUP",
+  "clue": "CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "vv",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Vasovagal (reflex) syncope",
+      [
+       "structurally normal heart, any age",
+       "also situational, orthostatic, carotid sinus"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Trigger",
+      [
+       "• standing long, a warm day, after a meal",
+       "• AFTER exercise, cough, urination",
+       "• pain, anxiety, illness"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Prodrome, then slow recovery",
+      [
+       "• sweating, nausea, pallor, vision dims",
+       "• tired and unwell afterwards"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · More HISTORY first",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Tilt table if unsure",
+      [
+       "• BP falls: vasodepressor",
+       "• HR falls too: cardioinhibitory"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "ECG during an episode",
+      [
+       "sinus slowing + AV block TOGETHER = vasovagal"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Reassure + salt and water",
+      [
+       "• avoid triggers",
+       "• prodrome: SIT or LIE down, cross and squeeze the legs"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Drugs",
+      [
+       "beta blocker, fludrocortisone, midodrine"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Pacemaker: rarely",
+      [
+       "misses the vasodepressor part"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ob",
+   "colour": "orange",
+   "drop_label": "DURING exertion",
+   "head": [
+    [
+     [
+      "h",
+      "Obstruction",
+      [
+       "aortic stenosis, hypertrophic cardiomyopathy (HCM), cardiac tumour, pulmonary embolism"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Faints DURING exercise",
+      [
+       "• never vasovagal",
+       "• HCM: sudden death in the young and healthy"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "ECHO",
+      [
+       "diagnoses HCM and aortic stenosis"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Cardiac MRI or CT",
+      [
+       "if suspicion stays high"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "SURGICAL correction of the obstruction",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "br",
+   "colour": "blue",
+   "drop_label": "SUDDEN, conduction disease",
+   "head": [
+    [
+     [
+      "h",
+      "Bradyarrhythmia",
+      [
+       "see the BRADYCARDIA chart"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "SUDDEN: no warning",
+      [
+       "• 'what is the last thing you remember?'",
+       "• injured: could not protect themselves",
+       "• back to NORMAL straight after"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "ECG: conduction disease",
+      [
+       "• left or right bundle branch block",
+       "• 1st degree AV block"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Ambulatory monitor",
+      [
+       "slow rhythm WITH the symptoms"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "PACEMAKER",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ta",
+   "colour": "magenta",
+   "drop_label": "family history, scar",
+   "head": [
+    [
+     [
+      "h",
+      "Tachyarrhythmia",
+      [
+       "see the TACHYCARDIA chart"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Inherited or structural",
+      [
+       "• LONG QT: alarm clocks, swimming",
+       "• catecholaminergic polymorphic ventricular tachycardia: exercise",
+       "• prior myocardial infarction, poor ejection fraction"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "ECG: arrhythmic substrate",
+      [
+       "• Q waves, long QT",
+       "• Wolff-Parkinson-White delta wave, Brugada"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Monitor, then EP study",
+      [
+       "inducible tachycardia?"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Drugs or catheter ABLATION",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Implantable DEFIBRILLATOR",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

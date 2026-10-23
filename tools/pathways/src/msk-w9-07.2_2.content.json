@@ -1,0 +1,287 @@
+{
+ "name": "knee pain without injury overview",
+ "title": "Knee pain: after trauma the timing of the swelling sorts the injury; without trauma the site of the pain separates patellofemoral pain syndrome and knee bursitis in front, iliotibial band friction syndrome laterally and a popliteal cyst behind; each column gives presentation, workup and treatment; knee injections are compared in a panel",
+ "col_w": 240,
+ "root": {
+  "title": "Knee pain: was there TRAUMA? If not, WHERE does it hurt?",
+  "lines": [
+   "TRAUMA, swelling within 6 h: anterior cruciate ligament (ACL) tear, fracture, patellar dislocation, large chondral injury",
+   "TRAUMA, swelling after 6 h: meniscal injury, posterior cruciate (PCL) injury, high-grade medial collateral (MCL) sprain, arthritis flare",
+   "trauma is worked up on the ACUTE KNEE INJURY chart"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ant",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "NO trauma: FRONT of the knee",
+   "lines": []
+  },
+  {
+   "id": "g_lat",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "OUTSIDE of the knee",
+   "lines": []
+  },
+  {
+   "id": "g_post",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "BEHIND the knee",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "WORKUP",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "pfps",
+   "colour": "teal",
+   "drop_label": "no swelling",
+   "head": [
+    [
+     [
+      "h",
+      "Patellofemoral pain syndrome",
+      [
+       "females, adolescents",
+       "↑ tibiofemoral angle and Q-angle"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Gradual deep anterior ache",
+      [
+       "• worse after activity and with prolonged sitting, stairs",
+       "• NO joint swelling"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Clinical diagnosis: NO imaging",
+      [
+       "~X-ray or MRI only if not responding to treatment"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Activity changes + physiotherapy",
+      [
+       "• balance vastus medialis and lateralis",
+       "• bracing or taping"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "bur",
+   "colour": "orange",
+   "drop_label": "swelling over a bursa",
+   "head": [
+    [
+     [
+      "h",
+      "Knee bursitis",
+      [
+       "prepatellar · infrapatellar · suprapatellar",
+       "chronic friction"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Mild swelling + tenderness over the bursa",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Clinical diagnosis",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Do not miss SEPTIC bursitis or trauma",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "PRICE + anti-inflammatories (NSAIDs)",
+      [
+       "protection, rest, ice, compression, elevation"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "itb",
+   "colour": "purple",
+   "drop_label": "while running",
+   "head": [
+    [
+     [
+      "h",
+      "Iliotibial band friction syndrome",
+      [
+       "band rubs the lateral femoral epicondyle below 30° of flexion"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Aching LATERAL knee during running",
+      [
+       "• downhill especially",
+       "• LESS likely with sprinting"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Clinical, from the running history",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "PRICE + stretch the iliotibial band",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "bak",
+   "colour": "blue",
+   "drop_label": "a lump",
+   "head": [
+    [
+     [
+      "h",
+      "Popliteal (Baker's) cyst",
+      [
+       "synovial fluid through a defect in the back of the capsule"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Uncomfortable swelling behind the knee",
+      [
+       "• may limit flexion",
+       "• can reach mid-calf"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Ultrasound confirms the cyst",
+      [
+       "X-ray for an orthopedic injury"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Rule out",
+      [
+       "• popliteal artery aneurysm",
+       "• deep vein thrombosis · tumour"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Conservative for 6 weeks",
+      [
+       "PRICE, NSAIDs, ± steroid injection"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Not settling, or vessel or nerve compromised",
+      [
+       "MRI + surgical referral, not just cyst removal"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Knee injections",
+   "cols": 2,
+   "items": [
+    "CORTICOSTEROID: rapid · < $20 · lasts < 4–12 weeks · may harm cartilage (weak evidence)",
+    "HYALURONIC ACID: > 26 weeks of relief · $300–500 · good safety",
+    "PLATELET-RICH PLASMA: $500–1,500 · no clinically significant benefit in trials",
+    "STEM CELLS: not shown better than other injections · Health Canada: a drug, needs formal approval"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,570 @@
+{
+ "name": "hemolytic anemia overview",
+ "width": 1084,
+ "title": "Hemolytic anemia: once the hemolysis labs are up, the direct antiglobulin test splits warm and cold autoimmune hemolysis from DAT-negative G6PD deficiency and hereditary spherocytosis, told apart by the film; schistocytes, microspherocytes or parasites on the film point to a cause from outside the cell",
+ "kinds": {
+  "wa_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "wa_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "wa_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "co_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "co_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "co_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "g6_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "g6_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "g6_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "hs_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hs_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "hs_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 406,
+   "w": 250,
+   "h": 576,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 292,
+   "y": 406,
+   "w": 250,
+   "h": 576,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 572,
+   "y": 406,
+   "w": 250,
+   "h": 576,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 824,
+   "y": 406,
+   "w": 250,
+   "h": 576,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 550,
+   "h": 96,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 686,
+   "h": 60,
+   "text": "TESTS"
+  },
+  {
+   "x": 23,
+   "y": 786,
+   "h": 188,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 177,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Hemolysis: is it IMMUNE?",
+   "lines": [
+    "every one: ↑ indirect bilirubin · ↑ lactate dehydrogenase (LDH) · ↑ reticulocytes · ↓ haptoglobin",
+    "then the direct antiglobulin test (DAT) and the film"
+   ]
+  },
+  {
+   "id": "g_pos",
+   "x": 45,
+   "y": 138,
+   "w": 492,
+   "h": 60,
+   "kind": "plain",
+   "title": "DAT POSITIVE: antibody on the cell",
+   "lines": [
+    "autoimmune (AIHA) · alloimmune: transfusion reaction, pregnancy"
+   ]
+  },
+  {
+   "id": "g_neg",
+   "x": 577,
+   "y": 138,
+   "w": 492,
+   "h": 60,
+   "kind": "plain",
+   "title": "DAT NEGATIVE: a defect in the cell",
+   "lines": [
+    "the film decides"
+   ]
+  },
+  {
+   "id": "t_film",
+   "x": 577,
+   "y": 238,
+   "w": 492,
+   "h": 96,
+   "kind": "plain",
+   "title": "Film first: TORN or TINY cells mean a cause from outside",
+   "lines": [
+    "• SCHISTOCYTES: mechanical valve or leak, marathon · DIC, TTP, HUS (THROMBOCYTOPENIA chart)",
+    "• MICROSPHEROCYTES: clostridial sepsis, burns · PARASITES: malaria"
+   ]
+  },
+  {
+   "id": "wa_head_0_0",
+   "x": 45,
+   "y": 414,
+   "w": 240,
+   "h": 96,
+   "kind": "wa_h",
+   "title": "Warm AIHA",
+   "lines": [
+    "IgG, binds at 37°C"
+   ]
+  },
+  {
+   "id": "co_head_0_0",
+   "x": 297,
+   "y": 414,
+   "w": 240,
+   "h": 96,
+   "kind": "co_h",
+   "title": "Cold AIHA",
+   "lines": [
+    "IgM, binds at 4–30°C, fixes complement"
+   ]
+  },
+  {
+   "id": "g6_head_0_0",
+   "x": 577,
+   "y": 414,
+   "w": 240,
+   "h": 96,
+   "kind": "g6_h",
+   "title": "G6PD deficiency",
+   "lines": [
+    "glucose-6-phosphate dehydrogenase",
+    "X-linked · African, Asian, Mediterranean"
+   ]
+  },
+  {
+   "id": "hs_head_0_0",
+   "x": 829,
+   "y": 414,
+   "w": 240,
+   "h": 96,
+   "kind": "hs_h",
+   "title": "Hereditary spherocytosis",
+   "lines": [
+    "dominant · spectrin, ankyrin, band 3"
+   ]
+  },
+  {
+   "id": "wa_clue_0_0",
+   "x": 45,
+   "y": 550,
+   "w": 240,
+   "h": 96,
+   "kind": "wa_t",
+   "title": "Splenomegaly, jaundice",
+   "lines": [
+    "• idiopathic (most)",
+    "• chronic lymphocytic leukemia, lymphoma, lupus, drugs"
+   ]
+  },
+  {
+   "id": "co_clue_0_0",
+   "x": 297,
+   "y": 550,
+   "w": 240,
+   "h": 96,
+   "kind": "co_t",
+   "title": "After an infection",
+   "lines": [
+    "• Mycoplasma, mononucleosis",
+    "• lymphoproliferative, hepatitis"
+   ]
+  },
+  {
+   "id": "g6_clue_0_0",
+   "x": 577,
+   "y": 550,
+   "w": 240,
+   "h": 96,
+   "kind": "g6_t",
+   "title": "Jaundice after a TRIGGER",
+   "lines": [
+    "• infection, fava beans",
+    "• antimalarials, sulfonamides, aspirin"
+   ]
+  },
+  {
+   "id": "hs_clue_0_0",
+   "x": 829,
+   "y": 550,
+   "w": 240,
+   "h": 96,
+   "kind": "hs_t",
+   "title": "Splenomegaly, jaundice",
+   "lines": [
+    "pigment gallstones"
+   ]
+  },
+  {
+   "id": "wa_inv_0_0",
+   "x": 45,
+   "y": 686,
+   "w": 240,
+   "h": 60,
+   "kind": "wa_t",
+   "title": "DAT + for IgG",
+   "lines": [
+    "spherocytes, polychromasia"
+   ]
+  },
+  {
+   "id": "co_inv_0_0",
+   "x": 297,
+   "y": 686,
+   "w": 240,
+   "h": 60,
+   "kind": "co_t",
+   "title": "DAT + for C3",
+   "lines": [
+    "AGGLUTINATION, spherocytes"
+   ]
+  },
+  {
+   "id": "g6_inv_0_0",
+   "x": 577,
+   "y": 686,
+   "w": 240,
+   "h": 60,
+   "kind": "g6_t",
+   "title": "BITE and blister cells",
+   "lines": [
+    "Heinz bodies · neonatal screening"
+   ]
+  },
+  {
+   "id": "hs_inv_0_0",
+   "x": 829,
+   "y": 686,
+   "w": 240,
+   "h": 60,
+   "kind": "hs_t",
+   "title": "SPHEROCYTES",
+   "lines": [
+    "flow cytometry for band 3"
+   ]
+  },
+  {
+   "id": "wa_tx_0_0",
+   "x": 45,
+   "y": 786,
+   "w": 240,
+   "h": 60,
+   "kind": "ok",
+   "title": "1 · Steroids",
+   "lines": [
+    "+ folate"
+   ]
+  },
+  {
+   "id": "wa_tx_1_0",
+   "x": 45,
+   "y": 868,
+   "w": 240,
+   "h": 42,
+   "kind": "ok",
+   "title": "2 · Splenectomy",
+   "lines": []
+  },
+  {
+   "id": "wa_tx_2_0",
+   "x": 45,
+   "y": 932,
+   "w": 240,
+   "h": 42,
+   "kind": "ok",
+   "title": "3 · Immunosuppressants",
+   "lines": []
+  },
+  {
+   "id": "co_tx_0_0",
+   "x": 297,
+   "y": 786,
+   "w": 240,
+   "h": 82,
+   "kind": "ok",
+   "title": "1 · Treat the cause · AVOID COLD",
+   "lines": [
+    "+ folate"
+   ]
+  },
+  {
+   "id": "co_tx_1_0",
+   "x": 297,
+   "y": 890,
+   "w": 240,
+   "h": 84,
+   "kind": "bad",
+   "title": "Steroids, splenectomy, immunosuppressants do NOT work",
+   "lines": []
+  },
+  {
+   "id": "g6_tx_0_0",
+   "x": 577,
+   "y": 786,
+   "w": 240,
+   "h": 92,
+   "kind": "ok",
+   "title": "1 · Avoid the triggers",
+   "lines": [
+    "+ folate"
+   ]
+  },
+  {
+   "id": "g6_tx_1_0",
+   "x": 577,
+   "y": 900,
+   "w": 240,
+   "h": 74,
+   "kind": "warn",
+   "title": "2 · Splenectomy if severe",
+   "lines": []
+  },
+  {
+   "id": "hs_tx_0_0",
+   "x": 829,
+   "y": 786,
+   "w": 240,
+   "h": 42,
+   "kind": "ok",
+   "title": "1 · Folate",
+   "lines": []
+  },
+  {
+   "id": "hs_tx_1_0",
+   "x": 829,
+   "y": 850,
+   "w": 240,
+   "h": 60,
+   "kind": "ok",
+   "title": "2 · Vaccinate",
+   "lines": [
+    "encapsulated bacteria · oral penicillin"
+   ]
+  },
+  {
+   "id": "hs_tx_2_0",
+   "x": 829,
+   "y": 932,
+   "w": 240,
+   "h": 42,
+   "kind": "warn",
+   "title": "3 · Splenectomy if severe",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_pos",
+   "path": "M557.0 88V113H291.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_neg",
+   "path": "M557.0 88V113H823.0V138"
+  },
+  {
+   "from": "g_neg",
+   "to": "t_film",
+   "from_dx": 0
+  },
+  {
+   "from": "wa_tx_0_0",
+   "to": "wa_tx_1_0"
+  },
+  {
+   "from": "wa_tx_1_0",
+   "to": "wa_tx_2_0"
+  },
+  {
+   "from": "co_tx_0_0",
+   "to": "co_tx_1_0"
+  },
+  {
+   "from": "g6_tx_0_0",
+   "to": "g6_tx_1_0"
+  },
+  {
+   "from": "hs_tx_0_0",
+   "to": "hs_tx_1_0"
+  },
+  {
+   "from": "hs_tx_1_0",
+   "to": "hs_tx_2_0"
+  },
+  {
+   "from": "wa_head_0_0",
+   "to": "wa_clue_0_0"
+  },
+  {
+   "from": "wa_clue_0_0",
+   "to": "wa_inv_0_0"
+  },
+  {
+   "from": "wa_inv_0_0",
+   "to": "wa_tx_0_0"
+  },
+  {
+   "from": "g_pos",
+   "to": "wa_head_0_0",
+   "from_dx": -126,
+   "label": "IgG",
+   "label_at": [
+    165.0,
+    374
+   ]
+  },
+  {
+   "from": "co_head_0_0",
+   "to": "co_clue_0_0"
+  },
+  {
+   "from": "co_clue_0_0",
+   "to": "co_inv_0_0"
+  },
+  {
+   "from": "co_inv_0_0",
+   "to": "co_tx_0_0"
+  },
+  {
+   "from": "g_pos",
+   "to": "co_head_0_0",
+   "from_dx": 126,
+   "label": "C3",
+   "label_at": [
+    417.0,
+    374
+   ]
+  },
+  {
+   "from": "g6_head_0_0",
+   "to": "g6_clue_0_0"
+  },
+  {
+   "from": "g6_clue_0_0",
+   "to": "g6_inv_0_0"
+  },
+  {
+   "from": "g6_inv_0_0",
+   "to": "g6_tx_0_0"
+  },
+  {
+   "from": "t_film",
+   "to": "g6_head_0_0",
+   "from_dx": -126,
+   "label": "bite cells",
+   "label_at": [
+    697.0,
+    374
+   ]
+  },
+  {
+   "from": "hs_head_0_0",
+   "to": "hs_clue_0_0"
+  },
+  {
+   "from": "hs_clue_0_0",
+   "to": "hs_inv_0_0"
+  },
+  {
+   "from": "hs_inv_0_0",
+   "to": "hs_tx_0_0"
+  },
+  {
+   "from": "t_film",
+   "to": "hs_head_0_0",
+   "from_dx": 126,
+   "label": "spherocytes",
+   "label_at": [
+    949.0,
+    374
+   ]
+  }
+ ],
+ "panels": []
+}

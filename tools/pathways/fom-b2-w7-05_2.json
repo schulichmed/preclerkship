@@ -1,0 +1,524 @@
+{
+ "name": "cognitive decline overview",
+ "width": 1152,
+ "title": "Cognitive change in an older adult: onset, course and attention tell delirium, depression and the dementia spectrum apart; mild cognitive impairment keeps independence, dementia loses daily function; each column gives the clues, the test and the treatment in order",
+ "kinds": {
+  "del_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "del_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "del_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "dep_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dep_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "dep_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "mci_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mci_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "mci_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "dem_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dem_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "dem_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 344,
+   "w": 260,
+   "h": 820,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 330,
+   "y": 344,
+   "w": 260,
+   "h": 820,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 620,
+   "y": 344,
+   "w": 260,
+   "h": 820,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 882,
+   "y": 344,
+   "w": 260,
+   "h": 820,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 488,
+   "h": 114,
+   "text": "TELL-APART"
+  },
+  {
+   "x": 23,
+   "y": 642,
+   "h": 168,
+   "text": "TEST"
+  },
+  {
+   "x": 23,
+   "y": 850,
+   "h": 306,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 211,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Cognitive change in an older adult: DELIRIUM, DEPRESSION or DEMENTIA?",
+   "lines": [
+    "ONSET, COURSE, ATTENTION and CONSCIOUSNESS tell them apart · always get a COLLATERAL history",
+    "rule out MIMICS: drugs (anticholinergics, sedatives, opioids, alcohol) · bloods: complete blood count (CBC), thyroid-stimulating hormone (TSH), electrolytes, calcium, glucose, B12 · abnormal → investigate that FIRST"
+   ]
+  },
+  {
+   "id": "g_del",
+   "x": 45,
+   "y": 156,
+   "w": 250,
+   "h": 116,
+   "kind": "plain",
+   "title": "ACUTE: hours to days",
+   "lines": [
+    "FLUCTUATING · attention ↓"
+   ]
+  },
+  {
+   "id": "g_dep",
+   "x": 335,
+   "y": 156,
+   "w": 250,
+   "h": 116,
+   "kind": "plain",
+   "title": "Weeks to months",
+   "lines": [
+    "mood changes · attention mostly normal"
+   ]
+  },
+  {
+   "id": "g_dem",
+   "x": 625,
+   "y": 156,
+   "w": 512,
+   "h": 116,
+   "kind": "plain",
+   "title": "Months to years · attention normal until late: OBJECTIVE change? FUNCTION lost?",
+   "lines": [
+    "screen: Montreal Cognitive Assessment (MoCA) < 26 · Mini-Mental State Exam (MMSE) < 24 · Mini-Cog · RUDAS (less biased by culture and language)",
+    "subjective change ONLY + a normal screen = NORMAL AGING"
+   ]
+  },
+  {
+   "id": "del_head_0_0",
+   "x": 45,
+   "y": 352,
+   "w": 250,
+   "h": 96,
+   "kind": "del_h",
+   "title": "Delirium",
+   "lines": [
+    "REVERSIBLE"
+   ]
+  },
+  {
+   "id": "dep_head_0_0",
+   "x": 335,
+   "y": 352,
+   "w": 250,
+   "h": 96,
+   "kind": "dep_h",
+   "title": "Depression",
+   "lines": [
+    "reversible, can recur"
+   ]
+  },
+  {
+   "id": "mci_head_0_0",
+   "x": 625,
+   "y": 352,
+   "w": 250,
+   "h": 96,
+   "kind": "mci_h",
+   "title": "Mild cognitive impairment (MCI)",
+   "lines": [
+    "subjective + OBJECTIVE change"
+   ]
+  },
+  {
+   "id": "dem_head_0_0",
+   "x": 887,
+   "y": 352,
+   "w": 250,
+   "h": 96,
+   "kind": "dem_h",
+   "title": "Dementia",
+   "lines": [
+    "+ daily function LOST: (instrumental) activities of daily living",
+    "never diagnosed DURING a delirium"
+   ]
+  },
+  {
+   "id": "del_clue_0_0",
+   "x": 45,
+   "y": 488,
+   "w": 250,
+   "h": 114,
+   "kind": "del_t",
+   "title": "Consciousness ALTERED",
+   "lines": [
+    "• hypoactive: drowsy, hard to wake",
+    "• hyperactive: agitated",
+    "• hallucinations, chaotic thinking"
+   ]
+  },
+  {
+   "id": "dep_clue_0_0",
+   "x": 335,
+   "y": 488,
+   "w": 250,
+   "h": 114,
+   "kind": "dep_t",
+   "title": "Often NO sadness",
+   "lines": [
+    "• somatic complaints, irritability, withdrawal",
+    "• unexplained functional decline",
+    "• guilty or somatic delusions"
+   ]
+  },
+  {
+   "id": "mci_clue_0_0",
+   "x": 625,
+   "y": 488,
+   "w": 250,
+   "h": 114,
+   "kind": "mci_t",
+   "title": "INDEPENDENCE preserved",
+   "lines": [
+    "≥ 1 domain impaired, not demented"
+   ]
+  },
+  {
+   "id": "dem_clue_0_0",
+   "x": 887,
+   "y": 488,
+   "w": 250,
+   "h": 114,
+   "kind": "dem_t",
+   "title": "Insidious · good and bad days",
+   "lines": [
+    "• attention normal until late",
+    "• commonest delusion: THEFT"
+   ]
+  },
+  {
+   "id": "del_test_0_0",
+   "x": 45,
+   "y": 642,
+   "w": 250,
+   "h": 168,
+   "kind": "bad",
+   "title": "NOT the MoCA: may lack capacity",
+   "lines": [
+    "screen: see the DELIRIUM chart"
+   ]
+  },
+  {
+   "id": "dep_test_0_0",
+   "x": 335,
+   "y": 642,
+   "w": 250,
+   "h": 168,
+   "kind": "dep_w",
+   "title": "Screen ALL > 60 + new long-term care admissions",
+   "lines": [
+    "• Patient Health Questionnaire: PHQ-2 ≥ 3, PHQ-9 ≥ 10",
+    "• Geriatric Depression Scale (GDS)",
+    "• with DEMENTIA: Cornell scale"
+   ]
+  },
+  {
+   "id": "mci_test_0_0",
+   "x": 625,
+   "y": 642,
+   "w": 250,
+   "h": 168,
+   "kind": "mci_w",
+   "title": "MoCA picks it up",
+   "lines": [
+    "the MMSE often misses MCI"
+   ]
+  },
+  {
+   "id": "dem_test_0_0",
+   "x": 887,
+   "y": 642,
+   "w": 250,
+   "h": 168,
+   "kind": "dem_w",
+   "title": "BRAIN → CT first (MRI best)",
+   "lines": [
+    "• Bleeding risk: head trauma, anticoagulant",
+    "• Abnormal: < 60, fast decline, < 2 years",
+    "• Intracranial lesion: cancer, focal signs",
+    "• Normal pressure hydrocephalus: gait, incontinence"
+   ]
+  },
+  {
+   "id": "del_tx_0_0",
+   "x": 45,
+   "y": 850,
+   "w": 250,
+   "h": 306,
+   "kind": "ok",
+   "title": "Find the TRIGGER",
+   "lines": [
+    "see the DELIRIUM chart"
+   ]
+  },
+  {
+   "id": "dep_tx_0_0",
+   "x": 335,
+   "y": 850,
+   "w": 250,
+   "h": 124,
+   "kind": "ok",
+   "title": "Selective serotonin reuptake inhibitor (SSRI)",
+   "lines": [
+    "+ lifestyle (diet, exercise, sleep), counselling"
+   ]
+  },
+  {
+   "id": "dep_tx_1_0",
+   "x": 335,
+   "y": 996,
+   "w": 250,
+   "h": 160,
+   "kind": "bad",
+   "title": "Ask about SUICIDE: more lethal when older",
+   "lines": [
+    "• HIGH: white man 65+, alone, prior attempt",
+    "• the more severe the depression, the higher the risk"
+   ]
+  },
+  {
+   "id": "mci_tx_0_0",
+   "x": 625,
+   "y": 850,
+   "w": 250,
+   "h": 140,
+   "kind": "bad",
+   "title": "NO drugs",
+   "lines": [
+    "no evidence: cholinesterase inhibitors, ginkgo"
+   ]
+  },
+  {
+   "id": "mci_tx_1_0",
+   "x": 625,
+   "y": 1012,
+   "w": 250,
+   "h": 144,
+   "kind": "ok",
+   "title": "Blood pressure control · aerobic exercise · Mediterranean diet",
+   "lines": []
+  },
+  {
+   "id": "dem_tx_0_0",
+   "x": 887,
+   "y": 850,
+   "w": 250,
+   "h": 150,
+   "kind": "ok",
+   "title": "Slow it, keep them safe",
+   "lines": [
+    "• cholinesterase inhibitor or NMDA-receptor antagonist",
+    "• exercise, diet, treat hypertension + diabetes",
+    "• plan: driving, wandering, power of attorney"
+   ]
+  },
+  {
+   "id": "dem_tx_1_0",
+   "x": 887,
+   "y": 1022,
+   "w": 250,
+   "h": 134,
+   "kind": "warn",
+   "title": "Behavioural and psychological symptoms (BPSD): DICE",
+   "lines": [
+    "1 · non-drug + triggers: pain, drugs, constipation",
+    "2 · SSRI: citalopram, escitalopram",
+    "3 · antipsychotic LAST"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_del",
+   "path": "M591.0 106V131H170.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_dep",
+   "path": "M591.0 106V131H460.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_dem",
+   "path": "M591.0 106V131H881.0V156"
+  },
+  {
+   "from": "dep_tx_0_0",
+   "to": "dep_tx_1_0"
+  },
+  {
+   "from": "mci_tx_0_0",
+   "to": "mci_tx_1_0"
+  },
+  {
+   "from": "dem_tx_0_0",
+   "to": "dem_tx_1_0"
+  },
+  {
+   "from": "del_head_0_0",
+   "to": "del_clue_0_0"
+  },
+  {
+   "from": "del_clue_0_0",
+   "to": "del_test_0_0"
+  },
+  {
+   "from": "del_test_0_0",
+   "to": "del_tx_0_0"
+  },
+  {
+   "from": "g_del",
+   "to": "del_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "dep_head_0_0",
+   "to": "dep_clue_0_0"
+  },
+  {
+   "from": "dep_clue_0_0",
+   "to": "dep_test_0_0"
+  },
+  {
+   "from": "dep_test_0_0",
+   "to": "dep_tx_0_0"
+  },
+  {
+   "from": "g_dep",
+   "to": "dep_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "mci_head_0_0",
+   "to": "mci_clue_0_0"
+  },
+  {
+   "from": "mci_clue_0_0",
+   "to": "mci_test_0_0"
+  },
+  {
+   "from": "mci_test_0_0",
+   "to": "mci_tx_0_0"
+  },
+  {
+   "from": "g_dem",
+   "to": "mci_head_0_0",
+   "from_dx": -131
+  },
+  {
+   "from": "dem_head_0_0",
+   "to": "dem_clue_0_0"
+  },
+  {
+   "from": "dem_clue_0_0",
+   "to": "dem_test_0_0"
+  },
+  {
+   "from": "dem_test_0_0",
+   "to": "dem_tx_0_0"
+  },
+  {
+   "from": "g_dem",
+   "to": "dem_head_0_0",
+   "from_dx": 131
+  }
+ ],
+ "panels": []
+}
