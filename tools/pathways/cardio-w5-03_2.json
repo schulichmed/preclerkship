@@ -1,0 +1,631 @@
+{
+ "name": "syncope overview",
+ "width": 1068,
+ "title": "Syncope decision chart: confirm a transient loss of consciousness, then the history's red flags split benign reflex (vasovagal) syncope from cardiac syncope, which is obstructive, bradycardic or tachycardic; each column gives the clues, the investigations in order and the treatment",
+ "kinds": {
+  "vv_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vv_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "vv_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ob_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ob_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ob_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "br_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "br_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "br_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ta_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ta_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ta_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 464,
+   "w": 246,
+   "h": 1004,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 316,
+   "y": 464,
+   "w": 246,
+   "h": 1004,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 564,
+   "y": 464,
+   "w": 246,
+   "h": 1004,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 812,
+   "y": 464,
+   "w": 246,
+   "h": 1004,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 312,
+   "h": 80,
+   "text": "WORKUP"
+  },
+  {
+   "x": 23,
+   "y": 608,
+   "h": 252,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 900,
+   "h": 242,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1182,
+   "h": 278,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 169,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A faint: was it SYNCOPE, and are there RED FLAGS for a CARDIAC cause?",
+   "lines": [
+    "syncope = transient loss of consciousness from low brain blood flow, recovering on its own",
+    "first CONFIRM it: not a trip, weakness or dizziness",
+    "not a mimic: seizure, stroke or transient ischemic attack, brain bleed, hypoglycemia, hypoxia, psychogenic",
+    "the HISTORY sorts it: circumstances, prodrome, recovery, witnesses, heart disease, family history of sudden death"
+   ]
+  },
+  {
+   "id": "g_ref",
+   "x": 45,
+   "y": 174,
+   "w": 236,
+   "h": 98,
+   "kind": "plain",
+   "title": "NO red flags: a trigger + a prodrome",
+   "lines": [
+    "REFLEX syncope: the most common, benign"
+   ]
+  },
+  {
+   "id": "g_card",
+   "x": 321,
+   "y": 174,
+   "w": 732,
+   "h": 98,
+   "kind": "plain",
+   "title": "RED FLAGS → CARDIAC syncope: the worst prognosis",
+   "lines": [
+    "syncope DURING exertion, SUDDEN with no prodrome, known heart disease, an abnormal ECG, or a family history of sudden death or drowning"
+   ]
+  },
+  {
+   "id": "p_card",
+   "x": 321,
+   "y": 312,
+   "w": 732,
+   "h": 80,
+   "kind": "info",
+   "title": "1 · Bloods, ECG, ECHO  →  2 · Ambulatory monitor: match symptoms to rhythm  →  3 · Provoke: tilt, stress test, electrophysiology (EP) study",
+   "lines": [
+    "~monitors only help if another episode happens while it is worn: Holter 24–48 h, external or implantable loop recorder"
+   ]
+  },
+  {
+   "id": "vv_head_0_0",
+   "x": 45,
+   "y": 472,
+   "w": 236,
+   "h": 96,
+   "kind": "vv_h",
+   "title": "Vasovagal (reflex) syncope",
+   "lines": [
+    "structurally normal heart, any age",
+    "also situational, orthostatic, carotid sinus"
+   ]
+  },
+  {
+   "id": "ob_head_0_0",
+   "x": 321,
+   "y": 472,
+   "w": 236,
+   "h": 96,
+   "kind": "ob_h",
+   "title": "Obstruction",
+   "lines": [
+    "aortic stenosis, hypertrophic cardiomyopathy (HCM), cardiac tumour, pulmonary embolism"
+   ]
+  },
+  {
+   "id": "br_head_0_0",
+   "x": 569,
+   "y": 472,
+   "w": 236,
+   "h": 96,
+   "kind": "br_h",
+   "title": "Bradyarrhythmia",
+   "lines": [
+    "see the BRADYCARDIA chart"
+   ]
+  },
+  {
+   "id": "ta_head_0_0",
+   "x": 817,
+   "y": 472,
+   "w": 236,
+   "h": 96,
+   "kind": "ta_h",
+   "title": "Tachyarrhythmia",
+   "lines": [
+    "see the TACHYCARDIA chart"
+   ]
+  },
+  {
+   "id": "vv_clue_0_0",
+   "x": 45,
+   "y": 608,
+   "w": 236,
+   "h": 114,
+   "kind": "vv_t",
+   "title": "Trigger",
+   "lines": [
+    "• standing long, a warm day, after a meal",
+    "• AFTER exercise, cough, urination",
+    "• pain, anxiety, illness"
+   ]
+  },
+  {
+   "id": "vv_clue_1_0",
+   "x": 45,
+   "y": 744,
+   "w": 236,
+   "h": 116,
+   "kind": "vv_w",
+   "title": "Prodrome, then slow recovery",
+   "lines": [
+    "• sweating, nausea, pallor, vision dims",
+    "• tired and unwell afterwards"
+   ]
+  },
+  {
+   "id": "ob_clue_0_0",
+   "x": 321,
+   "y": 608,
+   "w": 236,
+   "h": 252,
+   "kind": "ob_t",
+   "title": "Faints DURING exercise",
+   "lines": [
+    "• never vasovagal",
+    "• HCM: sudden death in the young and healthy"
+   ]
+  },
+  {
+   "id": "br_clue_0_0",
+   "x": 569,
+   "y": 608,
+   "w": 236,
+   "h": 252,
+   "kind": "br_t",
+   "title": "SUDDEN: no warning",
+   "lines": [
+    "• 'what is the last thing you remember?'",
+    "• injured: could not protect themselves",
+    "• back to NORMAL straight after"
+   ]
+  },
+  {
+   "id": "ta_clue_0_0",
+   "x": 817,
+   "y": 608,
+   "w": 236,
+   "h": 252,
+   "kind": "ta_t",
+   "title": "Inherited or structural",
+   "lines": [
+    "• LONG QT: alarm clocks, swimming",
+    "• catecholaminergic polymorphic ventricular tachycardia: exercise",
+    "• prior myocardial infarction, poor ejection fraction"
+   ]
+  },
+  {
+   "id": "vv_inv_0_0",
+   "x": 45,
+   "y": 900,
+   "w": 236,
+   "h": 42,
+   "kind": "vv_t",
+   "title": "1 · More HISTORY first",
+   "lines": []
+  },
+  {
+   "id": "vv_inv_1_0",
+   "x": 45,
+   "y": 964,
+   "w": 236,
+   "h": 78,
+   "kind": "vv_w",
+   "title": "2 · Tilt table if unsure",
+   "lines": [
+    "• BP falls: vasodepressor",
+    "• HR falls too: cardioinhibitory"
+   ]
+  },
+  {
+   "id": "vv_inv_2_0",
+   "x": 45,
+   "y": 1064,
+   "w": 236,
+   "h": 78,
+   "kind": "vv_w",
+   "title": "ECG during an episode",
+   "lines": [
+    "sinus slowing + AV block TOGETHER = vasovagal"
+   ]
+  },
+  {
+   "id": "ob_inv_0_0",
+   "x": 321,
+   "y": 900,
+   "w": 236,
+   "h": 110,
+   "kind": "ob_t",
+   "title": "ECHO",
+   "lines": [
+    "diagnoses HCM and aortic stenosis"
+   ]
+  },
+  {
+   "id": "ob_inv_1_0",
+   "x": 321,
+   "y": 1032,
+   "w": 236,
+   "h": 110,
+   "kind": "ob_w",
+   "title": "Cardiac MRI or CT",
+   "lines": [
+    "if suspicion stays high"
+   ]
+  },
+  {
+   "id": "br_inv_0_0",
+   "x": 569,
+   "y": 900,
+   "w": 236,
+   "h": 119,
+   "kind": "br_t",
+   "title": "ECG: conduction disease",
+   "lines": [
+    "• left or right bundle branch block",
+    "• 1st degree AV block"
+   ]
+  },
+  {
+   "id": "br_inv_1_0",
+   "x": 569,
+   "y": 1041,
+   "w": 236,
+   "h": 101,
+   "kind": "br_w",
+   "title": "Ambulatory monitor",
+   "lines": [
+    "slow rhythm WITH the symptoms"
+   ]
+  },
+  {
+   "id": "ta_inv_0_0",
+   "x": 817,
+   "y": 900,
+   "w": 236,
+   "h": 128,
+   "kind": "ta_t",
+   "title": "ECG: arrhythmic substrate",
+   "lines": [
+    "• Q waves, long QT",
+    "• Wolff-Parkinson-White delta wave, Brugada"
+   ]
+  },
+  {
+   "id": "ta_inv_1_0",
+   "x": 817,
+   "y": 1050,
+   "w": 236,
+   "h": 92,
+   "kind": "ta_w",
+   "title": "Monitor, then EP study",
+   "lines": [
+    "inducible tachycardia?"
+   ]
+  },
+  {
+   "id": "vv_tx_0_0",
+   "x": 45,
+   "y": 1182,
+   "w": 236,
+   "h": 96,
+   "kind": "ok",
+   "title": "1 · Reassure + salt and water",
+   "lines": [
+    "• avoid triggers",
+    "• prodrome: SIT or LIE down, cross and squeeze the legs"
+   ]
+  },
+  {
+   "id": "vv_tx_1_0",
+   "x": 45,
+   "y": 1300,
+   "w": 236,
+   "h": 78,
+   "kind": "warn",
+   "title": "2 · Drugs",
+   "lines": [
+    "beta blocker, fludrocortisone, midodrine"
+   ]
+  },
+  {
+   "id": "vv_tx_2_0",
+   "x": 45,
+   "y": 1400,
+   "w": 236,
+   "h": 60,
+   "kind": "bad",
+   "title": "Pacemaker: rarely",
+   "lines": [
+    "misses the vasodepressor part"
+   ]
+  },
+  {
+   "id": "ob_tx_0_0",
+   "x": 321,
+   "y": 1182,
+   "w": 236,
+   "h": 278,
+   "kind": "warn",
+   "title": "SURGICAL correction of the obstruction",
+   "lines": []
+  },
+  {
+   "id": "br_tx_0_0",
+   "x": 569,
+   "y": 1182,
+   "w": 236,
+   "h": 278,
+   "kind": "warn",
+   "title": "PACEMAKER",
+   "lines": []
+  },
+  {
+   "id": "ta_tx_0_0",
+   "x": 817,
+   "y": 1182,
+   "w": 236,
+   "h": 128,
+   "kind": "warn",
+   "title": "Drugs or catheter ABLATION",
+   "lines": []
+  },
+  {
+   "id": "ta_tx_1_0",
+   "x": 817,
+   "y": 1332,
+   "w": 236,
+   "h": 128,
+   "kind": "bad",
+   "title": "Implantable DEFIBRILLATOR",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ref",
+   "path": "M549.0 124V149H163.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_card",
+   "path": "M549.0 124V149H687.0V174"
+  },
+  {
+   "from": "g_card",
+   "to": "p_card"
+  },
+  {
+   "from": "vv_clue_0_0",
+   "to": "vv_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "vv_inv_0_0",
+   "to": "vv_inv_1_0"
+  },
+  {
+   "from": "vv_inv_1_0",
+   "to": "vv_inv_2_0"
+  },
+  {
+   "from": "ob_inv_0_0",
+   "to": "ob_inv_1_0"
+  },
+  {
+   "from": "br_inv_0_0",
+   "to": "br_inv_1_0"
+  },
+  {
+   "from": "ta_inv_0_0",
+   "to": "ta_inv_1_0"
+  },
+  {
+   "from": "vv_tx_0_0",
+   "to": "vv_tx_1_0"
+  },
+  {
+   "from": "vv_tx_1_0",
+   "to": "vv_tx_2_0"
+  },
+  {
+   "from": "ta_tx_0_0",
+   "to": "ta_tx_1_0"
+  },
+  {
+   "from": "vv_head_0_0",
+   "to": "vv_clue_0_0"
+  },
+  {
+   "from": "vv_clue_1_0",
+   "to": "vv_inv_0_0"
+  },
+  {
+   "from": "vv_inv_2_0",
+   "to": "vv_tx_0_0"
+  },
+  {
+   "from": "g_ref",
+   "to": "vv_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ob_head_0_0",
+   "to": "ob_clue_0_0"
+  },
+  {
+   "from": "ob_clue_0_0",
+   "to": "ob_inv_0_0"
+  },
+  {
+   "from": "ob_inv_1_0",
+   "to": "ob_tx_0_0"
+  },
+  {
+   "from": "p_card",
+   "to": "ob_head_0_0",
+   "from_dx": -248,
+   "label": "DURING exertion",
+   "label_at": [
+    439.0,
+    432
+   ]
+  },
+  {
+   "from": "br_head_0_0",
+   "to": "br_clue_0_0"
+  },
+  {
+   "from": "br_clue_0_0",
+   "to": "br_inv_0_0"
+  },
+  {
+   "from": "br_inv_1_0",
+   "to": "br_tx_0_0"
+  },
+  {
+   "from": "p_card",
+   "to": "br_head_0_0",
+   "from_dx": 0,
+   "label": "SUDDEN, conduction disease",
+   "label_at": [
+    687.0,
+    432
+   ]
+  },
+  {
+   "from": "ta_head_0_0",
+   "to": "ta_clue_0_0"
+  },
+  {
+   "from": "ta_clue_0_0",
+   "to": "ta_inv_0_0"
+  },
+  {
+   "from": "ta_inv_1_0",
+   "to": "ta_tx_0_0"
+  },
+  {
+   "from": "p_card",
+   "to": "ta_head_0_0",
+   "from_dx": 248,
+   "label": "family history, scar",
+   "label_at": [
+    935.0,
+    432
+   ]
+  }
+ ],
+ "panels": []
+}

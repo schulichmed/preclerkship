@@ -1,0 +1,691 @@
+{
+ "name": "bradycardia overview",
+ "width": 1460,
+ "title": "Bradycardia decision chart: a battery problem (sinus node dysfunction, too few P waves), a wiring problem (first-degree, Mobitz I, Mobitz II or complete AV block, P waves without QRS) or bundle branch block; each column gives the ECG, the risk, and whether to pace for mortality, for symptoms, or not at all",
+ "kinds": {
+  "snd_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "snd_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "snd_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "d1_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "d1_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "d1_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "m1_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "m1_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "m1_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "m2_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "m2_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "m2_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "d3_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "d3_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "d3_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "bb_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "bb_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "bb_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 310,
+   "w": 224,
+   "h": 692,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 294,
+   "y": 310,
+   "w": 224,
+   "h": 692,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 520,
+   "y": 310,
+   "w": 224,
+   "h": 692,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 746,
+   "y": 310,
+   "w": 224,
+   "h": 692,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 972,
+   "y": 310,
+   "w": 224,
+   "h": 692,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1226,
+   "y": 310,
+   "w": 224,
+   "h": 692,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 456,
+   "h": 196,
+   "text": "ECG"
+  },
+  {
+   "x": 23,
+   "y": 692,
+   "h": 98,
+   "text": "RISK"
+  },
+  {
+   "x": 23,
+   "y": 830,
+   "h": 164,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 365,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Bradycardia (< 60 bpm): a BATTERY or a WIRING problem? Then: can it KILL, or only cause SYMPTOMS?",
+   "lines": [
+    "UNSTABLE now: IV atropine or IV isoproterenol, then temporary pacing (transcutaneous pads or a transvenous wire)",
+    "the long-term treatment is a permanent PACEMAKER"
+   ]
+  },
+  {
+   "id": "g_bat",
+   "x": 45,
+   "y": 158,
+   "w": 214,
+   "h": 80,
+   "kind": "plain",
+   "title": "BATTERY: too few P waves",
+   "lines": [
+    "sinus node dysfunction"
+   ]
+  },
+  {
+   "id": "g_wire",
+   "x": 299,
+   "y": 158,
+   "w": 892,
+   "h": 80,
+   "kind": "plain",
+   "title": "WIRING: P waves WITHOUT a QRS, atrioventricular (AV) block",
+   "lines": [
+    "the LOWER the block, the worse the prognosis"
+   ]
+  },
+  {
+   "id": "g_bbb",
+   "x": 1231,
+   "y": 158,
+   "w": 214,
+   "h": 80,
+   "kind": "plain",
+   "title": "P = QRS, but the QRS is WIDE",
+   "lines": [
+    "> 120 ms"
+   ]
+  },
+  {
+   "id": "snd_head_0_0",
+   "x": 45,
+   "y": 318,
+   "w": 214,
+   "h": 98,
+   "kind": "snd_h",
+   "title": "Sinus node dysfunction",
+   "lines": [
+    "degenerative, more common with age"
+   ]
+  },
+  {
+   "id": "d1_head_0_0",
+   "x": 299,
+   "y": 318,
+   "w": 214,
+   "h": 98,
+   "kind": "d1_h",
+   "title": "1st degree AV block",
+   "lines": [
+    "a delay, not a true block"
+   ]
+  },
+  {
+   "id": "m1_head_0_0",
+   "x": 525,
+   "y": 318,
+   "w": 214,
+   "h": 98,
+   "kind": "m1_h",
+   "title": "2nd degree, Mobitz I (Wenckebach)",
+   "lines": [
+    "at the AV node; vagal tone, even asleep"
+   ]
+  },
+  {
+   "id": "m2_head_0_0",
+   "x": 751,
+   "y": 318,
+   "w": 214,
+   "h": 98,
+   "kind": "m2_h",
+   "title": "2nd degree, Mobitz II",
+   "lines": [
+    "BELOW the AV node"
+   ]
+  },
+  {
+   "id": "d3_head_0_0",
+   "x": 977,
+   "y": 318,
+   "w": 214,
+   "h": 98,
+   "kind": "d3_h",
+   "title": "3rd degree (complete) AV block",
+   "lines": [
+    "NO P wave conducts"
+   ]
+  },
+  {
+   "id": "bb_head_0_0",
+   "x": 1231,
+   "y": 318,
+   "w": 214,
+   "h": 98,
+   "kind": "bb_h",
+   "title": "Bundle branch block (BBB)",
+   "lines": [
+    "the other bundle still conducts"
+   ]
+  },
+  {
+   "id": "snd_ecg_0_0",
+   "x": 45,
+   "y": 456,
+   "w": 214,
+   "h": 196,
+   "kind": "snd_t",
+   "title": "Slow or missing P waves",
+   "lines": [
+    "• sinus bradycardia, no rise with exercise",
+    "• sinus pauses or arrest",
+    "• tachy-brady: a pause as atrial fibrillation (AF) stops"
+   ]
+  },
+  {
+   "id": "d1_ecg_0_0",
+   "x": 299,
+   "y": 456,
+   "w": 214,
+   "h": 196,
+   "kind": "d1_t",
+   "title": "PR > 200 ms",
+   "lines": [
+    "every P wave conducts"
+   ]
+  },
+  {
+   "id": "m1_ecg_0_0",
+   "x": 525,
+   "y": 456,
+   "w": 214,
+   "h": 196,
+   "kind": "m1_t",
+   "title": "PR LENGTHENS, then a QRS drops",
+   "lines": [
+    "• group beating",
+    "• short PR again after the drop"
+   ]
+  },
+  {
+   "id": "m2_ecg_0_0",
+   "x": 751,
+   "y": 456,
+   "w": 214,
+   "h": 196,
+   "kind": "m2_t",
+   "title": "FIXED PR, then a QRS drops",
+   "lines": [
+    "~2:1 block: cannot tell type I from II"
+   ]
+  },
+  {
+   "id": "d3_ecg_0_0",
+   "x": 977,
+   "y": 456,
+   "w": 214,
+   "h": 196,
+   "kind": "d3_t",
+   "title": "AV DISSOCIATION",
+   "lines": [
+    "• regular QRS, PR varies",
+    "• AF with a REGULAR QRS = complete block"
+   ]
+  },
+  {
+   "id": "bb_ecg_0_0",
+   "x": 1231,
+   "y": 456,
+   "w": 214,
+   "h": 96,
+   "kind": "bb_t",
+   "title": "Which bundle? Look at V1",
+   "lines": [
+    "• LEFT (LBBB): NEGATIVE in V1",
+    "• RIGHT (RBBB): POSITIVE, rabbit ears"
+   ]
+  },
+  {
+   "id": "bb_ecg_1_0",
+   "x": 1231,
+   "y": 574,
+   "w": 214,
+   "h": 78,
+   "kind": "bb_w",
+   "title": "Fascicular block: the axis",
+   "lines": [
+    "• left anterior: LEFT axis",
+    "• left posterior: RIGHT axis"
+   ]
+  },
+  {
+   "id": "snd_risk_0_0",
+   "x": 45,
+   "y": 692,
+   "w": 214,
+   "h": 98,
+   "kind": "snd_w",
+   "title": "No sudden death",
+   "lines": [
+    "fatigue, exertional limits, (pre)syncope"
+   ]
+  },
+  {
+   "id": "d1_risk_0_0",
+   "x": 299,
+   "y": 692,
+   "w": 214,
+   "h": 98,
+   "kind": "d1_w",
+   "title": "Benign",
+   "lines": []
+  },
+  {
+   "id": "m1_risk_0_0",
+   "x": 525,
+   "y": 692,
+   "w": 214,
+   "h": 98,
+   "kind": "m1_w",
+   "title": "Relatively benign",
+   "lines": []
+  },
+  {
+   "id": "m2_risk_0_0",
+   "x": 751,
+   "y": 692,
+   "w": 214,
+   "h": 98,
+   "kind": "bad",
+   "title": "Progresses to complete block",
+   "lines": [
+    "torsades de pointes or asystole: SUDDEN DEATH"
+   ]
+  },
+  {
+   "id": "d3_risk_0_0",
+   "x": 977.0,
+   "y": 692,
+   "w": 102.0,
+   "h": 98,
+   "kind": "d3_w",
+   "title": "Junctional escape",
+   "lines": [
+    "narrow, > 40 bpm"
+   ]
+  },
+  {
+   "id": "d3_risk_0_1",
+   "x": 1089.0,
+   "y": 692,
+   "w": 102.0,
+   "h": 98,
+   "kind": "bad",
+   "title": "Ventricular escape",
+   "lines": [
+    "wide, < 40 bpm"
+   ]
+  },
+  {
+   "id": "bb_risk_0_0",
+   "x": 1231,
+   "y": 692,
+   "w": 214,
+   "h": 98,
+   "kind": "warn",
+   "title": "A warning sign",
+   "lines": [
+    "degenerative disease that may become complete block"
+   ]
+  },
+  {
+   "id": "snd_tx_0_0",
+   "x": 45,
+   "y": 830,
+   "w": 214,
+   "h": 80,
+   "kind": "ok",
+   "title": "SYMPTOMS = sick sinus syndrome",
+   "lines": [
+    "→ pacemaker"
+   ]
+  },
+  {
+   "id": "snd_tx_1_0",
+   "x": 45,
+   "y": 932,
+   "w": 214,
+   "h": 62,
+   "kind": "snd_w",
+   "title": "No symptoms → no treatment",
+   "lines": []
+  },
+  {
+   "id": "d1_tx_0_0",
+   "x": 299,
+   "y": 830,
+   "w": 214,
+   "h": 164,
+   "kind": "ok",
+   "title": "No treatment",
+   "lines": []
+  },
+  {
+   "id": "m1_tx_0_0",
+   "x": 525,
+   "y": 830,
+   "w": 214,
+   "h": 164,
+   "kind": "ok",
+   "title": "No treatment",
+   "lines": [
+    "unless symptomatic → pacemaker"
+   ]
+  },
+  {
+   "id": "m2_tx_0_0",
+   "x": 751,
+   "y": 830,
+   "w": 214,
+   "h": 164,
+   "kind": "bad",
+   "title": "PACEMAKER, even with no symptoms",
+   "lines": []
+  },
+  {
+   "id": "d3_tx_0_0",
+   "x": 977,
+   "y": 830,
+   "w": 214,
+   "h": 164,
+   "kind": "bad",
+   "title": "PACEMAKER, even with no symptoms",
+   "lines": []
+  },
+  {
+   "id": "bb_tx_0_0",
+   "x": 1231,
+   "y": 830,
+   "w": 214,
+   "h": 164,
+   "kind": "ok",
+   "title": "No treatment",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_bat",
+   "path": "M745.0 108V133H152.0V158"
+  },
+  {
+   "from": "root",
+   "to": "g_wire",
+   "path": "M745.0 108V133H745.0V158"
+  },
+  {
+   "from": "root",
+   "to": "g_bbb",
+   "path": "M745.0 108V133H1338.0V158"
+  },
+  {
+   "from": "bb_ecg_0_0",
+   "to": "bb_ecg_1_0"
+  },
+  {
+   "from": "snd_tx_0_0",
+   "to": "snd_tx_1_0"
+  },
+  {
+   "from": "snd_head_0_0",
+   "to": "snd_ecg_0_0"
+  },
+  {
+   "from": "snd_ecg_0_0",
+   "to": "snd_risk_0_0"
+  },
+  {
+   "from": "snd_risk_0_0",
+   "to": "snd_tx_0_0"
+  },
+  {
+   "from": "g_bat",
+   "to": "snd_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "d1_head_0_0",
+   "to": "d1_ecg_0_0"
+  },
+  {
+   "from": "d1_ecg_0_0",
+   "to": "d1_risk_0_0"
+  },
+  {
+   "from": "d1_risk_0_0",
+   "to": "d1_tx_0_0"
+  },
+  {
+   "from": "g_wire",
+   "to": "d1_head_0_0",
+   "from_dx": -339
+  },
+  {
+   "from": "m1_head_0_0",
+   "to": "m1_ecg_0_0"
+  },
+  {
+   "from": "m1_ecg_0_0",
+   "to": "m1_risk_0_0"
+  },
+  {
+   "from": "m1_risk_0_0",
+   "to": "m1_tx_0_0"
+  },
+  {
+   "from": "g_wire",
+   "to": "m1_head_0_0",
+   "from_dx": -113
+  },
+  {
+   "from": "m2_head_0_0",
+   "to": "m2_ecg_0_0"
+  },
+  {
+   "from": "m2_ecg_0_0",
+   "to": "m2_risk_0_0"
+  },
+  {
+   "from": "m2_risk_0_0",
+   "to": "m2_tx_0_0"
+  },
+  {
+   "from": "g_wire",
+   "to": "m2_head_0_0",
+   "from_dx": 113
+  },
+  {
+   "from": "d3_head_0_0",
+   "to": "d3_ecg_0_0"
+  },
+  {
+   "from": "d3_ecg_0_0",
+   "to": "d3_risk_0_0",
+   "from_dx": -56.0
+  },
+  {
+   "from": "d3_ecg_0_0",
+   "to": "d3_risk_0_1",
+   "from_dx": 56.0
+  },
+  {
+   "from": "d3_risk_0_0",
+   "to": "d3_tx_0_0",
+   "to_dx": -56.0
+  },
+  {
+   "from": "d3_risk_0_1",
+   "to": "d3_tx_0_0",
+   "to_dx": 56.0
+  },
+  {
+   "from": "g_wire",
+   "to": "d3_head_0_0",
+   "from_dx": 339
+  },
+  {
+   "from": "bb_head_0_0",
+   "to": "bb_ecg_0_0"
+  },
+  {
+   "from": "bb_ecg_1_0",
+   "to": "bb_risk_0_0"
+  },
+  {
+   "from": "bb_risk_0_0",
+   "to": "bb_tx_0_0"
+  },
+  {
+   "from": "g_bbb",
+   "to": "bb_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

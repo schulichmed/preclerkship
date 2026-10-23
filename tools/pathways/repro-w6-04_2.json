@@ -1,0 +1,644 @@
+{
+ "name": "labour and birth overview",
+ "width": 1316,
+ "title": "Normal labour and birth by stage: the first stage is watched on the cervix, contractions and the fetal heart, with continuous monitoring for high risk read as normal, atypical or abnormal and intrauterine resuscitation when it is not normal; the second stage on station; the third on the signs of placental separation with active management and repair of tears; the fourth on the mother's vitals, with slow labour and postpartum hemorrhage sent to the abnormal labour chart",
+ "kinds": {
+  "s1_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "s1_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "s1_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "fhr_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fhr_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "fhr_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "s2_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "s2_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "s2_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "s3_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "s3_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "s3_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "s4_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "s4_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "s4_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 246,
+   "h": 782,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 288,
+   "y": 270,
+   "w": 246,
+   "h": 782,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 536,
+   "y": 270,
+   "w": 246,
+   "h": 782,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 812,
+   "y": 270,
+   "w": 246,
+   "h": 782,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1060,
+   "y": 270,
+   "w": 246,
+   "h": 782,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 398,
+   "h": 234,
+   "text": "WATCH"
+  },
+  {
+   "x": 23,
+   "y": 672,
+   "h": 116,
+   "text": "DO"
+  },
+  {
+   "x": 23,
+   "y": 828,
+   "h": 216,
+   "text": "IF NOT NORMAL"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 293,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Normal labour: which stage is she in, what do I watch, and when do I act?",
+   "lines": [
+    "labour = regular contractions causing progressive cervical dilation (Braxton Hicks: painless, NO cervical change)",
+    "first check there is no contraindication to labour: see the ABNORMAL LABOUR chart"
+   ]
+  },
+  {
+   "id": "g_in",
+   "x": 45,
+   "y": 138,
+   "w": 732,
+   "h": 60,
+   "kind": "plain",
+   "title": "Baby still IN: watch the cervix and the fetus",
+   "lines": [
+    "is it progressing, and is the fetus coping?"
+   ]
+  },
+  {
+   "id": "g_out",
+   "x": 817,
+   "y": 138,
+   "w": 484,
+   "h": 60,
+   "kind": "plain",
+   "title": "Baby OUT: watch the placenta, then the mother",
+   "lines": [
+    "the danger now is bleeding"
+   ]
+  },
+  {
+   "id": "s1_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 236,
+   "h": 80,
+   "kind": "s1_h",
+   "title": "1st stage: onset → full dilatation",
+   "lines": [
+    "latent 0–4 cm, active 4–10 cm"
+   ]
+  },
+  {
+   "id": "fhr_head_0_0",
+   "x": 293,
+   "y": 278,
+   "w": 236,
+   "h": 80,
+   "kind": "fhr_h",
+   "title": "Continuous FHR monitoring",
+   "lines": [
+    "external, or fetal scalp electrode"
+   ]
+  },
+  {
+   "id": "s2_head_0_0",
+   "x": 541,
+   "y": 278,
+   "w": 236,
+   "h": 80,
+   "kind": "s2_h",
+   "title": "2nd stage: full dilatation → birth",
+   "lines": [
+    "30 min–3 h first baby, 5–30 min after"
+   ]
+  },
+  {
+   "id": "s3_head_0_0",
+   "x": 817,
+   "y": 278,
+   "w": 236,
+   "h": 80,
+   "kind": "s3_h",
+   "title": "3rd stage: birth → placenta",
+   "lines": [
+    "2–30 min"
+   ]
+  },
+  {
+   "id": "s4_head_0_0",
+   "x": 1065,
+   "y": 278,
+   "w": 236,
+   "h": 80,
+   "kind": "s4_h",
+   "title": "4th stage: the first hour",
+   "lines": [
+    "mother and baby"
+   ]
+  },
+  {
+   "id": "s1_watch_0_0",
+   "x": 45,
+   "y": 398,
+   "w": 236,
+   "h": 96,
+   "kind": "s1_w",
+   "title": "Cervix every 2–3 h",
+   "lines": [
+    "dilation, effacement, station",
+    "~sooner for symptoms or a heart rate change"
+   ]
+  },
+  {
+   "id": "s1_watch_1_0",
+   "x": 45,
+   "y": 516,
+   "w": 236,
+   "h": 116,
+   "kind": "s1_w",
+   "title": "Contractions + fetal heart rate (FHR)",
+   "lines": [
+    "• palpate contractions every 30 min",
+    "• low risk: FHR intermittently every 15 min"
+   ]
+  },
+  {
+   "id": "fhr_watch_0_0",
+   "x": 293,
+   "y": 398,
+   "w": 236,
+   "h": 115,
+   "kind": "fhr_w",
+   "title": "Who needs it",
+   "lines": [
+    "• preeclampsia, bleeding, atypical FHR",
+    "• oxytocin induction or augmentation",
+    "• vaginal birth after cesarean"
+   ]
+  },
+  {
+   "id": "fhr_watch_1_0",
+   "x": 293,
+   "y": 535,
+   "w": 236,
+   "h": 97,
+   "kind": "fhr_t",
+   "title": "Decelerations",
+   "lines": [
+    "• early: head compression",
+    "• variable: cord compression",
+    "• late: ↓ flow through the placenta"
+   ]
+  },
+  {
+   "id": "s2_watch_0_0",
+   "x": 541,
+   "y": 398,
+   "w": 236,
+   "h": 106,
+   "kind": "s2_w",
+   "title": "Station (descent)",
+   "lines": [
+    "0 = ischial spines, then +1 to +5 cm"
+   ]
+  },
+  {
+   "id": "s2_watch_1_0",
+   "x": 541,
+   "y": 526,
+   "w": 236,
+   "h": 106,
+   "kind": "s2_w",
+   "title": "FHR every 5 min",
+   "lines": [
+    "or continuous"
+   ]
+  },
+  {
+   "id": "s3_watch_0_0",
+   "x": 817,
+   "y": 398,
+   "w": 236,
+   "h": 234,
+   "kind": "s3_w",
+   "title": "Signs of separation",
+   "lines": [
+    "• uterus firm, globular: the EARLIEST",
+    "• gush of blood, uterus rises",
+    "• cord lengthens"
+   ]
+  },
+  {
+   "id": "s4_watch_0_0",
+   "x": 1065,
+   "y": 398,
+   "w": 236,
+   "h": 234,
+   "kind": "s4_w",
+   "title": "Maternal vitals",
+   "lines": [
+    "up to 500 mL autotransfused back to her → ↑ cardiac work"
+   ]
+  },
+  {
+   "id": "s1_do_0_0",
+   "x": 45,
+   "y": 672,
+   "w": 236,
+   "h": 116,
+   "kind": "ok",
+   "title": "Pain from T10–T12",
+   "lines": [
+    "• epidural: the most common",
+    "• spinal, nitrous oxide, patient-controlled analgesia"
+   ]
+  },
+  {
+   "id": "fhr_do_0_0",
+   "x": 293,
+   "y": 672,
+   "w": 236,
+   "h": 116,
+   "kind": "fhr_w",
+   "title": "Read the tracing",
+   "lines": [
+    "• normal: continue",
+    "• atypical: resuscitate, find the cause",
+    "• abnormal: resuscitate, deliver promptly"
+   ]
+  },
+  {
+   "id": "s2_do_0_0",
+   "x": 541,
+   "y": 672,
+   "w": 236,
+   "h": 116,
+   "kind": "ok",
+   "title": "Pain from S2–S4",
+   "lines": [
+    "pudendal block (local)"
+   ]
+  },
+  {
+   "id": "s3_do_0_0",
+   "x": 817,
+   "y": 672,
+   "w": 236,
+   "h": 116,
+   "kind": "ok",
+   "title": "Active management, every birth",
+   "lines": [
+    "• uterotonic: oxytocin or ergot",
+    "• gentle cord traction",
+    "• fundal massage"
+   ]
+  },
+  {
+   "id": "s4_do_0_0",
+   "x": 1065,
+   "y": 672,
+   "w": 236,
+   "h": 116,
+   "kind": "ok",
+   "title": "Baby",
+   "lines": [
+    "adapting to air, breastfeeding"
+   ]
+  },
+  {
+   "id": "s1_ifnot_0_0",
+   "x": 45,
+   "y": 828,
+   "w": 236,
+   "h": 216,
+   "kind": "warn",
+   "title": "Slower than the Friedman curve",
+   "lines": [
+    "active phase: 1.2 cm/h first baby, 1.5 cm/h after",
+    "→ see ABNORMAL LABOUR chart",
+    "~a guideline, not a rule"
+   ]
+  },
+  {
+   "id": "fhr_ifnot_0_0",
+   "x": 293,
+   "y": 828,
+   "w": 236,
+   "h": 114,
+   "kind": "warn",
+   "title": "Intrauterine resuscitation",
+   "lines": [
+    "1 · scalp clip: is the tracing fetal?",
+    "2 · vaginal exam: cord prolapse?",
+    "3 · left side, oxytocin OFF, oxygen, 500 mL bolus"
+   ]
+  },
+  {
+   "id": "fhr_ifnot_1_0",
+   "x": 293,
+   "y": 964,
+   "w": 236,
+   "h": 80,
+   "kind": "bad",
+   "title": "Persists → decide how to deliver",
+   "lines": [
+    "see ABNORMAL LABOUR chart"
+   ]
+  },
+  {
+   "id": "s2_ifnot_0_0",
+   "x": 541,
+   "y": 828,
+   "w": 236,
+   "h": 216,
+   "kind": "warn",
+   "title": "Too long",
+   "lines": [
+    "→ see ABNORMAL LABOUR chart",
+    "~only a trial of labour truly tests the pelvis"
+   ]
+  },
+  {
+   "id": "s3_ifnot_0_0",
+   "x": 817,
+   "y": 828,
+   "w": 236,
+   "h": 216,
+   "kind": "warn",
+   "title": "Tears: inspect and repair",
+   "lines": [
+    "• 1st–2nd: mucosa, perineal muscle",
+    "• 3rd: anal sphincter",
+    "• 4th: through to rectal mucosa"
+   ]
+  },
+  {
+   "id": "s4_ifnot_0_0",
+   "x": 1065,
+   "y": 828,
+   "w": 236,
+   "h": 216,
+   "kind": "bad",
+   "title": "Heavy bleeding: postpartum hemorrhage",
+   "lines": [
+    "see ABNORMAL LABOUR chart"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_in",
+   "path": "M673.0 88V113H411.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_out",
+   "path": "M673.0 88V113H1059.0V138"
+  },
+  {
+   "from": "s1_watch_0_0",
+   "to": "s1_watch_1_0"
+  },
+  {
+   "from": "fhr_watch_0_0",
+   "to": "fhr_watch_1_0"
+  },
+  {
+   "from": "s2_watch_0_0",
+   "to": "s2_watch_1_0"
+  },
+  {
+   "from": "fhr_ifnot_0_0",
+   "to": "fhr_ifnot_1_0"
+  },
+  {
+   "from": "s1_head_0_0",
+   "to": "s1_watch_0_0"
+  },
+  {
+   "from": "s1_watch_1_0",
+   "to": "s1_do_0_0"
+  },
+  {
+   "from": "s1_do_0_0",
+   "to": "s1_ifnot_0_0"
+  },
+  {
+   "from": "g_in",
+   "to": "s1_head_0_0",
+   "from_dx": -248,
+   "label": "regular contractions",
+   "label_at": [
+    163.0,
+    238
+   ]
+  },
+  {
+   "from": "fhr_head_0_0",
+   "to": "fhr_watch_0_0"
+  },
+  {
+   "from": "fhr_watch_1_0",
+   "to": "fhr_do_0_0"
+  },
+  {
+   "from": "fhr_do_0_0",
+   "to": "fhr_ifnot_0_0"
+  },
+  {
+   "from": "g_in",
+   "to": "fhr_head_0_0",
+   "from_dx": 0,
+   "label": "high risk",
+   "label_at": [
+    411.0,
+    238
+   ]
+  },
+  {
+   "from": "s2_head_0_0",
+   "to": "s2_watch_0_0"
+  },
+  {
+   "from": "s2_watch_1_0",
+   "to": "s2_do_0_0"
+  },
+  {
+   "from": "s2_do_0_0",
+   "to": "s2_ifnot_0_0"
+  },
+  {
+   "from": "g_in",
+   "to": "s2_head_0_0",
+   "from_dx": 248,
+   "label": "fully dilated",
+   "label_at": [
+    659.0,
+    238
+   ]
+  },
+  {
+   "from": "s3_head_0_0",
+   "to": "s3_watch_0_0"
+  },
+  {
+   "from": "s3_watch_0_0",
+   "to": "s3_do_0_0"
+  },
+  {
+   "from": "s3_do_0_0",
+   "to": "s3_ifnot_0_0"
+  },
+  {
+   "from": "g_out",
+   "to": "s3_head_0_0",
+   "from_dx": -124,
+   "label": "baby born",
+   "label_at": [
+    935.0,
+    238
+   ]
+  },
+  {
+   "from": "s4_head_0_0",
+   "to": "s4_watch_0_0"
+  },
+  {
+   "from": "s4_watch_0_0",
+   "to": "s4_do_0_0"
+  },
+  {
+   "from": "s4_do_0_0",
+   "to": "s4_ifnot_0_0"
+  },
+  {
+   "from": "g_out",
+   "to": "s4_head_0_0",
+   "from_dx": 124,
+   "label": "placenta out",
+   "label_at": [
+    1183.0,
+    238
+   ]
+  }
+ ],
+ "panels": []
+}

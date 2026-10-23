@@ -1,0 +1,261 @@
+{
+ "name": "antimicrobial resistance overview",
+ "title": "Antimicrobial resistance decision chart: a resistant organism has either an enzyme that destroys the drug (penicillinase, AmpC in the SPACE organisms, extended-spectrum beta-lactamase, carbapenemase), an altered target (MRSA, penicillin-resistant S. pneumoniae, vancomycin-resistant Enterococcus, vancomycin-intermediate S. aureus), a way to keep the drug out (porins, efflux pumps) or a bypass of the blocked pathway (folate scavenging against sulfonamides); each tells you which drugs it takes out",
+ "col_w": 250,
+ "root": {
+  "title": "The culture says RESISTANT: WHICH MECHANISM, and which drugs does it take OUT?",
+  "lines": [
+   "antibiotics kill the sensitive bugs AND the normal flora → the few resistant ones flourish, and can pass resistance to other bacteria",
+   "which drug to use instead: see the CHOOSING ANTIBIOTICS chart"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_en",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "DESTROY the drug: β-lactamases",
+   "lines": [
+    "the main route in GRAM-NEGATIVES"
+   ]
+  },
+  {
+   "id": "g_tg",
+   "cols": [
+    1,
+    1
+   ],
+   "title": "CHANGE the target",
+   "lines": [
+    "the main route in GRAM-POSITIVE COCCI"
+   ]
+  },
+  {
+   "id": "g_ot",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "Keep the drug OUT, or go AROUND it",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "how",
+  "out"
+ ],
+ "row_names": {
+  "how": "HOW",
+  "out": "TAKES OUT"
+ },
+ "columns": [
+  {
+   "id": "en",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "β-lactamase enzymes",
+      [
+       "break the β-lactam ring"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "w",
+      "Gram-negatives",
+      [
+       "e.g. the SPACE organisms: Serratia, Pseudomonas, Proteus, Acinetobacter, Citrobacter, Enterobacter"
+      ]
+     ]
+    ]
+   ],
+   "out": [
+    [
+     [
+      "warn",
+      "Penicillinase",
+      [
+       "penicillins"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "AmpC (SPACE organisms)",
+      [
+       "cephalosporins + β-lactamase inhibitors"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Extended-spectrum β-lactamase (ESBL)",
+      [
+       "most β-lactams, NOT carbapenems · e.g. ESBL E. coli"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Carbapenemase",
+      [
+       "carbapenems too: the WORST case"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tg",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Altered binding site",
+      [
+       "the drug cannot bind"
+      ]
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "w",
+      "Penicillin-binding protein (PBP) or the cell wall",
+      []
+     ]
+    ]
+   ],
+   "out": [
+    [
+     [
+      "bad",
+      "MRSA: a NEW gene, mecA",
+      [
+       "methicillin-resistant S. aureus · PBP2 → PBP2a: β-lactams cannot bind"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "S. pneumoniae: its OWN gene mutated",
+      [
+       "PBP2 → PBP2x: low β-lactam affinity"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "VRE: D-Ala-D-Ala → D-Ala-D-Lac",
+      [
+       "vancomycin-resistant Enterococcus: vancomycin fails"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "VISA: a THICKENED cell wall",
+      [
+       "vancomycin-intermediate S. aureus"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ot",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Less drug INSIDE",
+      []
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "w",
+      "Mutated PORINS, or EFFLUX pumps",
+      [
+       "entry blocked, or the drug pumped out"
+      ]
+     ]
+    ]
+   ],
+   "out": [
+    [
+     [
+      "warn",
+      "Porins: Klebsiella, Pseudomonas",
+      [
+       "β-lactams cannot get in"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Efflux: Pseudomonas aeruginosa",
+      [
+       "it can use ALL four mechanisms"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "by",
+   "colour": "slate",
+   "head": [
+    [
+     [
+      "h",
+      "BYPASS the blocked pathway",
+      []
+     ]
+    ]
+   ],
+   "how": [
+    [
+     [
+      "w",
+      "Scavenge FOLATE from the environment",
+      [
+       "no need to make it"
+      ]
+     ]
+    ]
+   ],
+   "out": [
+    [
+     [
+      "warn",
+      "Sulfonamides",
+      [
+       "they block folate synthesis"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

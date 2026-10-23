@@ -1,0 +1,430 @@
+{
+ "name": "atrial fibrillation overview",
+ "width": 968,
+ "title": "Atrial fibrillation decision chart: each of its three harms has its own treatment; stroke risk scored by CHADS2 decides anticoagulation, a fast ventricular rate gets AV-nodal blocking drugs, and lost atrial kick gets rhythm control, with cardioversion now only if onset is under 48 hours or the patient is already anticoagulated, otherwise after 3 weeks of anticoagulation",
+ "kinds": {
+  "ac_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ac_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ac_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "rc_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rc_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "rc_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "rh_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rh_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "rh_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 306,
+   "w": 286,
+   "h": 690,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 356,
+   "y": 306,
+   "w": 286,
+   "h": 690,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 672,
+   "y": 306,
+   "w": 286,
+   "h": 690,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 450,
+   "h": 198,
+   "text": "DECIDE BY"
+  },
+  {
+   "x": 23,
+   "y": 688,
+   "h": 300,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 119,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Atrial fibrillation (AF): irregularly irregular, no P waves. Treat EACH of its three harms",
+   "lines": [
+    "fibrillatory baseline waves, irregular RR intervals · risk rises after 50",
+    "look for a reversible cause: hypertension, ischemic or valve disease, alcohol, thyroid, lung disease, sleep apnea",
+    "PAROXYSMAL stops on its own · PERSISTENT needs drugs or cardioversion · PERMANENT: rate control only"
+   ]
+  },
+  {
+   "id": "g1",
+   "x": 45,
+   "y": 156,
+   "w": 276,
+   "h": 78,
+   "kind": "plain",
+   "title": "1 · STROKE",
+   "lines": [
+    "blood stagnates in a big left atrium and clots"
+   ]
+  },
+  {
+   "id": "g2",
+   "x": 361,
+   "y": 156,
+   "w": 276,
+   "h": 78,
+   "kind": "plain",
+   "title": "2 · FAST, irregular ventricular rate",
+   "lines": [
+    "130–170 bpm through the atrioventricular (AV) node"
+   ]
+  },
+  {
+   "id": "g3",
+   "x": 677,
+   "y": 156,
+   "w": 276,
+   "h": 78,
+   "kind": "plain",
+   "title": "3 · LOST atrial kick",
+   "lines": [
+    "less left ventricular filling, less cardiac output"
+   ]
+  },
+  {
+   "id": "ac_head_0_0",
+   "x": 45,
+   "y": 314,
+   "w": 276,
+   "h": 96,
+   "kind": "ac_h",
+   "title": "ANTICOAGULATE",
+   "lines": [
+    "for every patient with a risk factor"
+   ]
+  },
+  {
+   "id": "rc_head_0_0",
+   "x": 361,
+   "y": 314,
+   "w": 276,
+   "h": 96,
+   "kind": "rc_h",
+   "title": "RATE CONTROL",
+   "lines": [
+    "the AV node lets the ventricles race"
+   ]
+  },
+  {
+   "id": "rh_head_0_0",
+   "x": 677,
+   "y": 314,
+   "w": 276,
+   "h": 96,
+   "kind": "rh_h",
+   "title": "RHYTHM CONTROL",
+   "lines": [
+    "a judgement call: young, symptomatic, recent onset",
+    "never in PERMANENT AF"
+   ]
+  },
+  {
+   "id": "ac_clue_0_0",
+   "x": 45,
+   "y": 450,
+   "w": 276,
+   "h": 198,
+   "kind": "ac_t",
+   "title": "CHADS2 score",
+   "lines": [
+    "• Congestive heart failure, Hypertension, Age > 75, Diabetes: 1 each",
+    "• prior Stroke or transient ischemic attack: 2",
+    "~mitral stenosis is a very high risk too"
+   ]
+  },
+  {
+   "id": "rc_clue_0_0",
+   "x": 361,
+   "y": 450,
+   "w": 276,
+   "h": 198,
+   "kind": "rc_t",
+   "title": "Symptoms of the fast rate",
+   "lines": [
+    "• palpitations",
+    "• dyspnea, chest discomfort",
+    "~AF can also run normal or slow: then no slowing needed"
+   ]
+  },
+  {
+   "id": "rh_clue_0_0",
+   "x": 677,
+   "y": 450,
+   "w": 276,
+   "h": 78,
+   "kind": "rh_t",
+   "title": "How long has it been in AF?",
+   "lines": [
+    "a clot can form in the atrial appendage after 48 h"
+   ]
+  },
+  {
+   "id": "rh_clue_1_0",
+   "x": 677.0,
+   "y": 550,
+   "w": 133.0,
+   "h": 98,
+   "kind": "ok",
+   "title": "< 48 h, a clear onset",
+   "lines": [
+    "or already anticoagulated"
+   ]
+  },
+  {
+   "id": "rh_clue_1_1",
+   "x": 820.0,
+   "y": 550,
+   "w": 133.0,
+   "h": 98,
+   "kind": "bad",
+   "title": "> 48 h or UNKNOWN",
+   "lines": [
+    "NO cardioversion yet"
+   ]
+  },
+  {
+   "id": "ac_tx_0_0",
+   "x": 45,
+   "y": 688,
+   "w": 276,
+   "h": 300,
+   "kind": "ok",
+   "title": "CHADS2 ≥ 1 → oral anticoagulant",
+   "lines": [
+    "e.g. apixaban 5 mg twice daily, or warfarin",
+    "~unless a strong contraindication"
+   ]
+  },
+  {
+   "id": "rc_tx_0_0",
+   "x": 361,
+   "y": 688,
+   "w": 276,
+   "h": 157,
+   "kind": "ok",
+   "title": "AV-node blocking drugs",
+   "lines": [
+    "• beta blocker (metoprolol)",
+    "• calcium channel blocker (diltiazem)",
+    "• digoxin"
+   ]
+  },
+  {
+   "id": "rc_tx_1_0",
+   "x": 361,
+   "y": 867,
+   "w": 276,
+   "h": 121,
+   "kind": "rc_w",
+   "title": "Acute: IV metoprolol or diltiazem",
+   "lines": [
+    "then oral on discharge"
+   ]
+  },
+  {
+   "id": "rh_tx_0_0",
+   "x": 677.0,
+   "y": 688,
+   "w": 133.0,
+   "h": 100,
+   "kind": "ok",
+   "title": "Cardiovert NOW",
+   "lines": [
+    "OK without anticoagulation"
+   ]
+  },
+  {
+   "id": "rh_tx_0_1",
+   "x": 820.0,
+   "y": 688,
+   "w": 133.0,
+   "h": 100,
+   "kind": "warn",
+   "title": "Rate control + 3 WEEKS anticoagulation",
+   "lines": [
+    "then cardiovert"
+   ]
+  },
+  {
+   "id": "rh_tx_1_0",
+   "x": 677,
+   "y": 810,
+   "w": 276,
+   "h": 60,
+   "kind": "rh_w",
+   "title": "Direct-current (DC) cardioversion",
+   "lines": [
+    "synchronized, 50–200 J, under propofol"
+   ]
+  },
+  {
+   "id": "rh_tx_2_0",
+   "x": 677,
+   "y": 892,
+   "w": 276,
+   "h": 96,
+   "kind": "rh_w",
+   "title": "Antiarrhythmic drugs",
+   "lines": [
+    "• class I: flecainide, propafenone",
+    "• class III: sotalol, amiodarone, dronedarone"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g1",
+   "path": "M499.0 106V131H183.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g2",
+   "path": "M499.0 106V131H499.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g3",
+   "path": "M499.0 106V131H815.0V156"
+  },
+  {
+   "from": "rh_clue_0_0",
+   "to": "rh_clue_1_0",
+   "from_dx": -71.5
+  },
+  {
+   "from": "rh_clue_0_0",
+   "to": "rh_clue_1_1",
+   "from_dx": 71.5
+  },
+  {
+   "from": "rc_tx_0_0",
+   "to": "rc_tx_1_0"
+  },
+  {
+   "from": "rh_tx_0_0",
+   "to": "rh_tx_1_0",
+   "to_dx": -71.5
+  },
+  {
+   "from": "rh_tx_0_1",
+   "to": "rh_tx_1_0",
+   "to_dx": 71.5
+  },
+  {
+   "from": "rh_tx_1_0",
+   "to": "rh_tx_2_0"
+  },
+  {
+   "from": "ac_head_0_0",
+   "to": "ac_clue_0_0"
+  },
+  {
+   "from": "ac_clue_0_0",
+   "to": "ac_tx_0_0"
+  },
+  {
+   "from": "g1",
+   "to": "ac_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "rc_head_0_0",
+   "to": "rc_clue_0_0"
+  },
+  {
+   "from": "rc_clue_0_0",
+   "to": "rc_tx_0_0"
+  },
+  {
+   "from": "g2",
+   "to": "rc_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "rh_head_0_0",
+   "to": "rh_clue_0_0"
+  },
+  {
+   "from": "rh_clue_1_0",
+   "to": "rh_tx_0_0"
+  },
+  {
+   "from": "rh_clue_1_1",
+   "to": "rh_tx_0_1"
+  },
+  {
+   "from": "g3",
+   "to": "rh_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

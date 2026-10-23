@@ -1,0 +1,620 @@
+{
+ "title": "Contraception as a decision: estrogen allowed or not, how effective it must be, hormones or none, and emergency contraception by days since unprotected intercourse; each method with its failure rate, when to choose it, when to avoid it and what to counsel",
+ "root": "Contraception · sexually transmitted infection (STI) risk? add a condom to any method",
+ "width": 1560,
+ "legend": [
+  {
+   "chip": "LARC",
+   "kind": "plain",
+   "label": "long-acting reversible contraception (LARC): implant + both intrauterine devices"
+  },
+  {
+   "chip": "● progestin only",
+   "kind": "purple",
+   "label": "no estrogen, so no ↑ clot risk"
+  },
+  {
+   "chip": "○ no hormones",
+   "kind": "good",
+   "label": "no estrogen or progestin"
+  },
+  {
+   "chip": "●● estrogen + progestin",
+   "kind": "bad",
+   "label": "contains estrogen: check the contraindications in the estrogen question"
+  },
+  {
+   "chip": "◊ progesterone receptor modulator",
+   "kind": "amber",
+   "label": "acts on the progesterone receptor; not a progestin (ulipristal)"
+  },
+  {
+   "chip": "STI ✓",
+   "kind": "plain",
+   "label": "protects against sexually transmitted infections (STIs)"
+  }
+ ],
+ "panel_cols": 3,
+ "panels": [
+  {
+   "title": "Choosing a pill by complaint",
+   "span": 2,
+   "cols": 2,
+   "items": [
+    "breakthrough bleeding → higher estrogen",
+    "absent or too-light flow → high estrogen, low progestin",
+    "headaches · breast tenderness → low estrogen",
+    "acne or hirsutism → drospirenone (Yaz) or cyproterone (Diane-35); avoid levonorgestrel (Alesse)",
+    "premenstrual dysphoric disorder (PMDD) → Yaz",
+    "sensitive to hormone swings → avoid triphasics",
+    "endometriosis → continuous or short break, low estrogen, high progestin"
+   ]
+  },
+  {
+   "title": "Before stopping or switching",
+   "span": 1,
+   "items": [
+    "chose a less effective method → discuss emergency contraception now"
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "title": "Emergency",
+   "color": "rose",
+   "desc": "After unprotected intercourse, as soon as possible. Acts before implantation, so useless once pregnant.",
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Copper intrauterine device (IUD)",
+       "star": true,
+       "agents": "≤ 7 days",
+       "moa": "Toxic to sperm + oocyte; blocks implantation",
+       "chips": [
+        [
+         "○ no hormones",
+         "good"
+        ],
+        [
+         "best",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "days 1–7, any body mass index (BMI); wants ongoing contraception",
+         "kind": "ok"
+        },
+        {
+         "label": "× Avoid:",
+         "text": "IUD contraindications (under column 2)",
+         "kind": "bad"
+        }
+       ]
+      },
+      {
+       "name": "Ulipristal 30 mg × 1",
+       "agents": "≤ 5 days (120 h) · selective progesterone receptor modulator (SPRM)",
+       "moa": "Blocks follicle rupture, delays ovulation",
+       "chips": [
+        [
+         "◊ progesterone receptor modulator",
+         "amber"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "days 3–5, or high BMI; more effective than levonorgestrel",
+         "kind": "ok"
+        },
+        {
+         "label": "▲ Watch:",
+         "text": "useless after the luteinizing hormone (LH) surge",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Levonorgestrel 1.5 mg × 1",
+       "agents": "Plan B · ≤ 72 h best, up to 5 days",
+       "moa": "Interferes with ovulation",
+       "chips": [
+        [
+         "● progestin only",
+         "purple"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "within 72 h, normal BMI",
+         "kind": "ok"
+        },
+        {
+         "label": "× Avoid:",
+         "text": "high BMI · LH rise already begun",
+         "kind": "bad"
+        }
+       ]
+      },
+      {
+       "name": "Yuzpe",
+       "agents": "ethinyl estradiol (EE) 100 mcg + LNG 500 mcg, 2 doses 12 h apart",
+       "chips": [
+        [
+         "●● estrogen + progestin",
+         "bad"
+        ],
+        [
+         "least effective",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "▲ Watch:",
+         "text": "nausea from the high estrogen dose",
+         "kind": "warn"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "ask": {
+    "q": "Unprotected sex in the last 7 days?",
+    "lines": [],
+    "list": [
+     "already pregnant → ABORTION chart"
+    ],
+    "list_kind": "muted",
+    "list_cols": 1
+   }
+  },
+  {
+   "title": "Long-acting reversible (LARC)",
+   "color": "sens",
+   "desc": "Forgettable, 3–12 years. IUDs are fine with past pelvic inflammatory disease (PID), smoking, HIV, hepatitis C.",
+   "ask": {
+    "q": "Wants the MOST effective, or forgets pills?",
+    "lines": [],
+    "list": [
+     "the implant or an IUD"
+    ],
+    "list_kind": "muted",
+    "list_cols": 1
+   },
+   "sections": [
+    {
+     "subhead": "Implant",
+     "drugs": [
+      {
+       "name": "Implant: Nexplanon (etonogestrel, a progestin)",
+       "star": true,
+       "agents": "single rod · 3 years",
+       "moa": "Blocks ovulation until year 3 · thickens cervical mucus",
+       "chips": [
+        [
+         "● progestin only",
+         "purple"
+        ],
+        [
+         "LARC",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "wants the MOST effective method; right after delivery or abortion",
+         "kind": "ok"
+        },
+        {
+         "label": "▲ Watch:",
+         "text": "irregular bleeding, acne, weight gain",
+         "kind": "warn"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "subhead": "Intrauterine devices (IUDs)",
+     "drugs": [
+      {
+       "name": "Levonorgestrel intrauterine device (IUD)",
+       "star": true,
+       "agents": "10–20 mcg/day · 5 years",
+       "moa": "Mainly local: thick mucus barrier, thin endometrium · blocks ovulation in ≤ 40%",
+       "chips": [
+        [
+         "● progestin only",
+         "purple"
+        ],
+        [
+         "LARC",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "no estrogen + high pregnancy risk + poor adherence",
+         "kind": "ok"
+        },
+        {
+         "label": "× Avoid:",
+         "text": "progestin-receptor-positive breast cancer",
+         "kind": "bad"
+        },
+        {
+         "label": "▲ Watch:",
+         "text": "insertion: perforation",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Copper intrauterine device (IUD)",
+       "agents": "3–12 years",
+       "moa": "Sterile inflammation: toxic to sperm + ovum; mucus unchanged",
+       "chips": [
+        [
+         "○ no hormones",
+         "good"
+        ],
+        [
+         "LARC",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "no hormones; light, regular periods; also emergency ≤ 7 d",
+         "kind": "ok"
+        },
+        {
+         "label": "× Avoid:",
+         "text": "heavy or painful periods: ↑ blood loss + dysmenorrhea",
+         "kind": "bad"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "label": "× Avoid any IUD:",
+     "text": "pregnancy · current PID or cervicitis · just after septic abortion · distorted cavity · unexplained bleeding · pelvic tuberculosis (TB)",
+     "kind": "bad"
+    }
+   ]
+  },
+  {
+   "title": "Barrier · natural · permanent",
+   "color": "secr",
+   "desc": "No hormones. Condoms are the backup for every method and the only STI protection.",
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Condoms",
+       "agents": "latex · polyurethane · female",
+       "chips": [
+        [
+         "○ no hormones",
+         "good"
+        ],
+        [
+         "STI ✓",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "STI risk; backup for any method",
+         "kind": "ok"
+        },
+        {
+         "label": "× Avoid:",
+         "text": "nonoxynol-9 spermicide (↑ HIV) · lambskin (no HIV protection)",
+         "kind": "bad"
+        },
+        {
+         "label": "▲ Watch:",
+         "text": "use errors: on late, off early, no space at the tip",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Natural family planning",
+       "agents": "temperature, calendar, mucus, withdrawal",
+       "chips": [
+        [
+         "○ no hormones",
+         "good"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "only option acceptable for cultural or religious reasons",
+         "kind": "ok"
+        },
+        {
+         "label": "▲ Watch:",
+         "text": "lactational amenorrhea works only with ALL 3: < 6 mo postpartum + fully breastfeeding + no menses",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Vasectomy",
+       "agents": "local anesthetic",
+       "chips": [
+        [
+         "○ no hormones",
+         "good"
+        ],
+        [
+         "permanent",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "childbearing complete + monogamous: safer, more effective than tubal",
+         "kind": "ok"
+        },
+        {
+         "label": "▲ Watch:",
+         "text": "backup until semen analysis: azoospermia",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Tubal interruption",
+       "agents": "laparoscopic · hysteroscopic",
+       "chips": [
+        [
+         "○ no hormones",
+         "good"
+        ],
+        [
+         "permanent",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "childbearing complete",
+         "kind": "ok"
+        },
+        {
+         "label": "× Avoid:",
+         "text": "young age: regret is the commonest complication",
+         "kind": "bad"
+        },
+        {
+         "label": "▲ Watch:",
+         "text": "hysteroscopic: backup ≥ 3 months",
+         "kind": "warn"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "ask": {
+    "q": "Wants NO hormones, or done having children?",
+    "lines": [],
+    "list": [
+     "copper IUD also has no hormones (column 2)"
+    ],
+    "list_kind": "muted",
+    "list_cols": 1
+   }
+  },
+  {
+   "title": "Combined hormonal",
+   "color": "anti",
+   "desc": "Estrogen + progestin. Blocks ovulation every cycle. Estrogen ↓ nuisance bleeding.",
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Combined oral contraceptive pill (COC)",
+       "agents": "ethinyl estradiol + a progestin",
+       "moa": "Blocks ovulation EVERY cycle: ↓ gonadotropins, progestin blocks the LH surge",
+       "chips": [
+        [
+         "●● estrogen + progestin",
+         "bad"
+        ],
+        [
+         "daily",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "wants cycle control; acne, hirsutism, dysmenorrhea, premenstrual syndrome (PMS); ↓ endometrial + ovarian cancer",
+         "kind": "ok"
+        },
+        {
+         "label": "× Avoid:",
+         "text": "the contraindications listed above · enzyme inducers: antiepileptics",
+         "kind": "bad"
+        },
+        {
+         "label": "▲ Watch:",
+         "text": "↑ venous thromboembolism (VTE), still far less than pregnancy · nausea, breakthrough bleeding",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Transdermal patch",
+       "agents": "norelgestromin + ethinyl estradiol",
+       "moa": "Same as the pill: blocks ovulation centrally · skips first-pass metabolism",
+       "chips": [
+        [
+         "●● estrogen + progestin",
+         "bad"
+        ],
+        [
+         "weekly",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "same as the pill but can't manage a daily pill",
+         "kind": "ok"
+        },
+        {
+         "label": "× Avoid:",
+         "text": "weight > 90 kg (less effective)",
+         "kind": "bad"
+        },
+        {
+         "label": "▲ Watch:",
+         "text": "skin irritation · ↑ VTE vs the pill",
+         "kind": "warn"
+        }
+       ]
+      },
+      {
+       "name": "Vaginal ring",
+       "agents": "etonogestrel + ethinyl estradiol",
+       "moa": "Same as the pill: blocks ovulation centrally · best at stopping follicle growth",
+       "chips": [
+        [
+         "●● estrogen + progestin",
+         "bad"
+        ],
+        [
+         "monthly",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "peri-rectal endometriosis; no daily pill",
+         "kind": "ok"
+        },
+        {
+         "label": "▲ Watch:",
+         "text": "vaginal discomfort · out ≤ 3 h a day",
+         "kind": "warn"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "ask": {
+    "q": "Can she take estrogen?",
+    "lines": [],
+    "list_title": "NO if any of:",
+    "list_kind": "bad",
+    "list_cols": 2,
+    "list": [
+     "smoker > 35",
+     "blood pressure ≥ 160/100",
+     "clot, ever",
+     "thrombophilia",
+     "stroke or heart disease",
+     "migraine with aura",
+     "breast cancer",
+     "lupus + antiphospholipid",
+     "< 4 wk postpartum"
+    ],
+    "no": "no: progestin-only"
+   }
+  },
+  {
+   "title": "Progestin-only",
+   "color": "ana",
+   "desc": "No estrogen, so no ↑ clot risk. The implant and levonorgestrel IUD are progestin-only too: see the LARC column.",
+   "sections": [
+    {
+     "drugs": [
+      {
+       "name": "Progestin-only pill",
+       "agents": "norethindrone (Movisse), drospirenone (Slynd)",
+       "moa": "Blocks ovulation in only 50% → relies on thick cervical mucus, ↓ sperm motility, ↓ tubal cilia",
+       "chips": [
+        [
+         "● progestin only",
+         "purple"
+        ],
+        [
+         "daily",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "estrogen contraindicated: VTE risk, smoker > 35, postpartum",
+         "kind": "ok"
+        },
+        {
+         "label": "× Avoid:",
+         "text": "poor adherence: > 3 h late needs backup",
+         "kind": "bad"
+        }
+       ]
+      },
+      {
+       "name": "Injection: Depo-Provera, depot medroxyprogesterone acetate (DMPA)",
+       "agents": "medroxyprogesterone 150 mg intramuscular (IM) every 12–13 wk",
+       "moa": "Blocks ovulation: ↓ pituitary gonadotropins → LOW-ESTROGEN state",
+       "chips": [
+        [
+         "● progestin only",
+         "purple"
+        ],
+        [
+         "3-monthly",
+         "plain"
+        ]
+       ],
+       "lines": [
+        {
+         "label": "√ Choose when:",
+         "text": "wants amenorrhea; endometriosis, pelvic pain, seizures, sickle cell",
+         "kind": "ok"
+        },
+        {
+         "label": "× Avoid:",
+         "text": "wants pregnancy soon (fertility returns late); worried about weight",
+         "kind": "bad"
+        },
+        {
+         "label": "▲ Watch:",
+         "text": "↓ bone density, reversible, no fractures · weight gain ~7 lb in year 1",
+         "kind": "warn"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

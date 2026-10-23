@@ -1,0 +1,676 @@
+{
+ "name": "scrotal pain and masses overview",
+ "width": 1480,
+ "title": "Scrotal pain and masses decision chart: acute pain sorted by onset into testicular torsion (surgery within 6 to 8 hours) or epididymo-orchitis (antibiotics), with trauma pointing to a hematocele; a scrotal mass sorted on exam and ultrasound into hydrocele or inguinal hernia, varicocele, spermatocele or testicular cancer, each with what confirms it and what to do",
+ "kinds": {
+  "tor_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tor_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "tor_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "epi_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "epi_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "epi_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "hy_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hy_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "hy_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "var_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "var_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "var_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "sp_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sp_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "sp_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "ca_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ca_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "ca_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 232,
+   "h": 730,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 274,
+   "y": 288,
+   "w": 232,
+   "h": 730,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 536,
+   "y": 288,
+   "w": 232,
+   "h": 730,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 770,
+   "y": 288,
+   "w": 232,
+   "h": 730,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1004,
+   "y": 288,
+   "w": 232,
+   "h": 730,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 1238,
+   "y": 288,
+   "w": 232,
+   "h": 730,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 398,
+   "h": 132,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 570,
+   "h": 440,
+   "text": "CONFIRM → ACT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 375,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Scrotal pain or a lump: SUDDEN pain, or a MASS?",
+   "lines": [
+    "ask: onset (sudden or gradual) · worse with movement · urinary symptoms · trauma · previous episodes",
+    "the HISTORY separates torsion (surgery) from infection (antibiotics)"
+   ]
+  },
+  {
+   "id": "g_ac",
+   "x": 45,
+   "y": 138,
+   "w": 456,
+   "h": 78,
+   "kind": "plain",
+   "title": "ACUTE PAIN: how did it START?",
+   "lines": [
+    "after TRAUMA → hematocele (blood in the tunica vaginalis): ultrasound to rule out testicular RUPTURE"
+   ]
+  },
+  {
+   "id": "g_m",
+   "x": 541,
+   "y": 138,
+   "w": 924,
+   "h": 78,
+   "kind": "plain",
+   "title": "SUB-ACUTE pain or a MASS: exam + SCROTAL ULTRASOUND",
+   "lines": [
+    "EVERY scrotal mass → urology: think of cancer first"
+   ]
+  },
+  {
+   "id": "tor_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 222,
+   "h": 62,
+   "kind": "tor_h",
+   "title": "Testicular torsion",
+   "lines": [
+    "SURGICAL EMERGENCY"
+   ]
+  },
+  {
+   "id": "epi_head_0_0",
+   "x": 279,
+   "y": 296,
+   "w": 222,
+   "h": 62,
+   "kind": "epi_h",
+   "title": "Epididymo-orchitis",
+   "lines": [
+    "infection of epididymis + testis"
+   ]
+  },
+  {
+   "id": "hy_head_0_0",
+   "x": 541,
+   "y": 296,
+   "w": 222,
+   "h": 62,
+   "kind": "hy_h",
+   "title": "Hydrocele or inguinal hernia",
+   "lines": []
+  },
+  {
+   "id": "var_head_0_0",
+   "x": 775,
+   "y": 296,
+   "w": 222,
+   "h": 62,
+   "kind": "var_h",
+   "title": "Varicocele",
+   "lines": [
+    "dilated scrotal veins"
+   ]
+  },
+  {
+   "id": "sp_head_0_0",
+   "x": 1009,
+   "y": 296,
+   "w": 222,
+   "h": 62,
+   "kind": "sp_h",
+   "title": "Spermatocele",
+   "lines": [
+    "semen-filled sac off the epididymis"
+   ]
+  },
+  {
+   "id": "ca_head_0_0",
+   "x": 1243,
+   "y": 296,
+   "w": 222,
+   "h": 62,
+   "kind": "ca_h",
+   "title": "Testicular cancer",
+   "lines": [
+    "age 13–35"
+   ]
+  },
+  {
+   "id": "tor_pres_0_0",
+   "x": 45,
+   "y": 398,
+   "w": 222,
+   "h": 132,
+   "kind": "tor_t",
+   "title": "SUDDEN, SEVERE pain",
+   "lines": [
+    "• adolescent or young adult",
+    "• testis ROCK HARD (blood in, none out)",
+    "• lies horizontal: free to twist"
+   ]
+  },
+  {
+   "id": "epi_pres_0_0",
+   "x": 279,
+   "y": 398,
+   "w": 222,
+   "h": 132,
+   "kind": "epi_t",
+   "title": "GRADUAL pain",
+   "lines": [
+    "• fever",
+    "• urinary symptoms, e.g. dysuria"
+   ]
+  },
+  {
+   "id": "hy_pres_0_0",
+   "x": 541,
+   "y": 398,
+   "w": 222,
+   "h": 132,
+   "kind": "hy_t",
+   "title": "Smooth bulge, tense or fluctuant",
+   "lines": [
+    "• BABY: hydrocele open to the peritoneum",
+    "• ADULT: fluid in a closed sac"
+   ]
+  },
+  {
+   "id": "var_pres_0_0",
+   "x": 775,
+   "y": 398,
+   "w": 222,
+   "h": 132,
+   "kind": "var_t",
+   "title": "'Bag of worms'",
+   "lines": [
+    "veins visible on the scrotum"
+   ]
+  },
+  {
+   "id": "sp_pres_0_0",
+   "x": 1009,
+   "y": 398,
+   "w": 222,
+   "h": 132,
+   "kind": "sp_t",
+   "title": "Feels like a THIRD TESTICLE",
+   "lines": [
+    "seldom painful, unless large"
+   ]
+  },
+  {
+   "id": "ca_pres_0_0",
+   "x": 1243,
+   "y": 398,
+   "w": 222,
+   "h": 132,
+   "kind": "ca_t",
+   "title": "PAINLESS lump",
+   "lines": [
+    "• found in the shower",
+    "• acute pain in a few · gynecomastia",
+    "• RISK: undescended or atrophic testis, prior cancer"
+   ]
+  },
+  {
+   "id": "tor_inv_0_0",
+   "x": 45,
+   "y": 570,
+   "w": 222,
+   "h": 190,
+   "kind": "tor_w",
+   "title": "Doppler: NO blood flow",
+   "lines": []
+  },
+  {
+   "id": "tor_inv_1_0",
+   "x": 45,
+   "y": 782,
+   "w": 222,
+   "h": 228,
+   "kind": "bad",
+   "title": "SURGERY within 6–8 HOURS",
+   "lines": [
+    "to save the testis"
+   ]
+  },
+  {
+   "id": "epi_inv_0_0",
+   "x": 279,
+   "y": 570,
+   "w": 222,
+   "h": 218,
+   "kind": "epi_w",
+   "title": "Doppler: flow PRESENT",
+   "lines": [
+    "• white count ↑"
+   ]
+  },
+  {
+   "id": "epi_inv_1_0",
+   "x": 279,
+   "y": 810,
+   "w": 222,
+   "h": 200,
+   "kind": "ok",
+   "title": "ANTIBIOTICS",
+   "lines": []
+  },
+  {
+   "id": "hy_inv_0_0",
+   "x": 541,
+   "y": 570,
+   "w": 222,
+   "h": 182,
+   "kind": "hy_w",
+   "title": "PINCH the top of the scrotum",
+   "lines": []
+  },
+  {
+   "id": "hy_inv_1_0",
+   "x": 541.0,
+   "y": 774,
+   "w": 106.0,
+   "h": 236,
+   "kind": "hy_w",
+   "title": "CAN get above",
+   "lines": [
+    "HYDROCELE: light shines through"
+   ]
+  },
+  {
+   "id": "hy_inv_1_1",
+   "x": 657.0,
+   "y": 774,
+   "w": 106.0,
+   "h": 236,
+   "kind": "hy_w",
+   "title": "CAN'T get above",
+   "lines": [
+    "indirect inguinal HERNIA"
+   ]
+  },
+  {
+   "id": "var_inv_0_0",
+   "x": 775,
+   "y": 570,
+   "w": 222,
+   "h": 199,
+   "kind": "var_w",
+   "title": "Usually LEFT",
+   "lines": []
+  },
+  {
+   "id": "var_inv_1_0",
+   "x": 775,
+   "y": 791,
+   "w": 222,
+   "h": 219,
+   "kind": "bad",
+   "title": "RIGHT-sided → image the retroperitoneum",
+   "lines": []
+  },
+  {
+   "id": "sp_inv_0_0",
+   "x": 1009,
+   "y": 570,
+   "w": 222,
+   "h": 440,
+   "kind": "sp_w",
+   "title": "Scrotal ultrasound",
+   "lines": []
+  },
+  {
+   "id": "ca_inv_0_0",
+   "x": 1243,
+   "y": 570,
+   "w": 222,
+   "h": 134,
+   "kind": "ca_w",
+   "title": "1 · Ultrasound + tumour MARKERS",
+   "lines": [
+    "• alpha-fetoprotein",
+    "• beta-hCG (human chorionic gonadotropin)",
+    "• lactate dehydrogenase"
+   ]
+  },
+  {
+   "id": "ca_inv_1_0",
+   "x": 1243,
+   "y": 726,
+   "w": 222,
+   "h": 82,
+   "kind": "ca_w",
+   "title": "2 · Computed tomography (CT) abdomen + chest: staging",
+   "lines": []
+  },
+  {
+   "id": "ca_inv_2_0",
+   "x": 1243,
+   "y": 830,
+   "w": 222,
+   "h": 98,
+   "kind": "warn",
+   "title": "3 · RADICAL ORCHIECTOMY",
+   "lines": [
+    "then surveillance, chemo or radiation by type and stage"
+   ]
+  },
+  {
+   "id": "ca_inv_3_0",
+   "x": 1243,
+   "y": 950,
+   "w": 222,
+   "h": 60,
+   "kind": "ok",
+   "title": "Usually CURED",
+   "lines": [
+    "even when metastatic"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ac",
+   "path": "M755.0 88V113H273.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_m",
+   "path": "M755.0 88V113H1003.0V138"
+  },
+  {
+   "from": "tor_inv_0_0",
+   "to": "tor_inv_1_0"
+  },
+  {
+   "from": "epi_inv_0_0",
+   "to": "epi_inv_1_0"
+  },
+  {
+   "from": "hy_inv_0_0",
+   "to": "hy_inv_1_0",
+   "from_dx": -58.0
+  },
+  {
+   "from": "hy_inv_0_0",
+   "to": "hy_inv_1_1",
+   "from_dx": 58.0
+  },
+  {
+   "from": "var_inv_0_0",
+   "to": "var_inv_1_0"
+  },
+  {
+   "from": "ca_inv_0_0",
+   "to": "ca_inv_1_0"
+  },
+  {
+   "from": "ca_inv_1_0",
+   "to": "ca_inv_2_0"
+  },
+  {
+   "from": "ca_inv_2_0",
+   "to": "ca_inv_3_0"
+  },
+  {
+   "from": "tor_head_0_0",
+   "to": "tor_pres_0_0"
+  },
+  {
+   "from": "tor_pres_0_0",
+   "to": "tor_inv_0_0"
+  },
+  {
+   "from": "g_ac",
+   "to": "tor_head_0_0",
+   "from_dx": -117,
+   "label": "SUDDEN",
+   "label_at": [
+    156.0,
+    256
+   ]
+  },
+  {
+   "from": "epi_head_0_0",
+   "to": "epi_pres_0_0"
+  },
+  {
+   "from": "epi_pres_0_0",
+   "to": "epi_inv_0_0"
+  },
+  {
+   "from": "g_ac",
+   "to": "epi_head_0_0",
+   "from_dx": 117,
+   "label": "GRADUAL · fever",
+   "label_at": [
+    390.0,
+    256
+   ]
+  },
+  {
+   "from": "hy_head_0_0",
+   "to": "hy_pres_0_0"
+  },
+  {
+   "from": "hy_pres_0_0",
+   "to": "hy_inv_0_0"
+  },
+  {
+   "from": "g_m",
+   "to": "hy_head_0_0",
+   "from_dx": -351,
+   "label": "fluid or bowel",
+   "label_at": [
+    652.0,
+    256
+   ]
+  },
+  {
+   "from": "var_head_0_0",
+   "to": "var_pres_0_0"
+  },
+  {
+   "from": "var_pres_0_0",
+   "to": "var_inv_0_0"
+  },
+  {
+   "from": "g_m",
+   "to": "var_head_0_0",
+   "from_dx": -117,
+   "label": "BAG OF WORMS",
+   "label_at": [
+    886.0,
+    256
+   ]
+  },
+  {
+   "from": "sp_head_0_0",
+   "to": "sp_pres_0_0"
+  },
+  {
+   "from": "sp_pres_0_0",
+   "to": "sp_inv_0_0"
+  },
+  {
+   "from": "g_m",
+   "to": "sp_head_0_0",
+   "from_dx": 117,
+   "label": "'third testicle'",
+   "label_at": [
+    1120.0,
+    256
+   ]
+  },
+  {
+   "from": "ca_head_0_0",
+   "to": "ca_pres_0_0"
+  },
+  {
+   "from": "ca_pres_0_0",
+   "to": "ca_inv_0_0"
+  },
+  {
+   "from": "g_m",
+   "to": "ca_head_0_0",
+   "from_dx": 351,
+   "label": "IN the testis",
+   "label_at": [
+    1354.0,
+    256
+   ]
+  }
+ ],
+ "panels": []
+}

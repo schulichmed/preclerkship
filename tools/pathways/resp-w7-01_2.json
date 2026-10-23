@@ -1,0 +1,560 @@
+{
+ "name": "dyspnea overview",
+ "width": 1164,
+ "title": "Dyspnea decision chart: tempo first (acute minutes to hours versus chronic), then system and lung compartment; each compartment column lists the life-threatening acute causes to exclude first and the chronic causes, with alveolar filling by fluid, pus, blood or tumour",
+ "kinds": {
+  "ca_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ca_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ca_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "aw_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "aw_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "aw_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "al_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "al_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "al_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "vp_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vp_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "vp_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 406,
+   "w": 270,
+   "h": 712,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 340,
+   "y": 406,
+   "w": 270,
+   "h": 712,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 612,
+   "y": 406,
+   "w": 270,
+   "h": 712,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 884,
+   "y": 406,
+   "w": 270,
+   "h": 712,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 532,
+   "h": 288,
+   "text": "ACUTE"
+  },
+  {
+   "x": 23,
+   "y": 860,
+   "h": 250,
+   "text": "CHRONIC"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 217,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Dyspnea: ACUTE (minutes to hours) or CHRONIC? Then WHICH SYSTEM, and where in the lung?",
+   "lines": [
+    "acute: exclude the LIFE-THREATENING causes first (red boxes)",
+    "chronic and NOT the heart or lungs: anemia, anxiety, deconditioning, hyperthyroidism, metabolic acidosis"
+   ]
+  },
+  {
+   "id": "g_ca",
+   "x": 45,
+   "y": 138,
+   "w": 260,
+   "h": 42,
+   "kind": "plain",
+   "title": "CARDIAC",
+   "lines": []
+  },
+  {
+   "id": "g_re",
+   "x": 345,
+   "y": 138,
+   "w": 804,
+   "h": 42,
+   "kind": "plain",
+   "title": "RESPIRATORY: find the compartment",
+   "lines": []
+  },
+  {
+   "id": "t_re",
+   "x": 345,
+   "y": 220,
+   "w": 804,
+   "h": 114,
+   "kind": "plain",
+   "title": "What sends you there",
+   "lines": [
+    "• STRIDOR → upper airway",
+    "• WHEEZE → lower airway",
+    "• ABNORMAL chest X-ray (CXR) → parenchyma",
+    "• neither → vessels, pleura, the pump"
+   ]
+  },
+  {
+   "id": "ca_head_0_0",
+   "x": 45,
+   "y": 414,
+   "w": 260,
+   "h": 78,
+   "kind": "ca_h",
+   "title": "Heart",
+   "lines": [
+    "pericardium, muscle, valves, coronaries, rhythm"
+   ]
+  },
+  {
+   "id": "aw_head_0_0",
+   "x": 345,
+   "y": 414,
+   "w": 260,
+   "h": 78,
+   "kind": "aw_h",
+   "title": "Airways",
+   "lines": []
+  },
+  {
+   "id": "al_head_0_0",
+   "x": 617,
+   "y": 414,
+   "w": 260,
+   "h": 78,
+   "kind": "al_h",
+   "title": "Parenchyma",
+   "lines": [
+    "alveoli + interstitium",
+    "blocks gas exchange"
+   ]
+  },
+  {
+   "id": "vp_head_0_0",
+   "x": 889,
+   "y": 414,
+   "w": 260,
+   "h": 78,
+   "kind": "vp_h",
+   "title": "Vessels · pleura · pump",
+   "lines": []
+  },
+  {
+   "id": "ca_ac_0_0",
+   "x": 45,
+   "y": 532,
+   "w": 260,
+   "h": 142,
+   "kind": "bad",
+   "title": "Exclude first",
+   "lines": [
+    "• myocardial infarction (MI)",
+    "• cardiac tamponade"
+   ]
+  },
+  {
+   "id": "ca_ac_1_0",
+   "x": 45,
+   "y": 696,
+   "w": 260,
+   "h": 124,
+   "kind": "ca_t",
+   "title": "Also",
+   "lines": [
+    "congestive heart failure (CHF)"
+   ]
+  },
+  {
+   "id": "aw_ac_0_0",
+   "x": 345.0,
+   "y": 532,
+   "w": 125.0,
+   "h": 170,
+   "kind": "bad",
+   "title": "STRIDOR: upper airway",
+   "lines": [
+    "• aspiration",
+    "• anaphylaxis"
+   ]
+  },
+  {
+   "id": "aw_ac_0_1",
+   "x": 480.0,
+   "y": 532,
+   "w": 125.0,
+   "h": 170,
+   "kind": "bad",
+   "title": "WHEEZE: lower airway",
+   "lines": [
+    "• asthma",
+    "• chronic obstructive pulmonary disease (COPD) flare"
+   ]
+  },
+  {
+   "id": "aw_ac_1_0",
+   "x": 345,
+   "y": 724,
+   "w": 260,
+   "h": 96,
+   "kind": "aw_t",
+   "title": "Also wheeze",
+   "lines": [
+    "• CHF",
+    "• acute respiratory distress syndrome (ARDS)"
+   ]
+  },
+  {
+   "id": "al_ac_0_0",
+   "x": 617,
+   "y": 532,
+   "w": 260,
+   "h": 288,
+   "kind": "al_t",
+   "title": "PUS in the alveoli: pneumonia",
+   "lines": [
+    "see the PNEUMONIA chart"
+   ]
+  },
+  {
+   "id": "vp_ac_0_0",
+   "x": 889,
+   "y": 532,
+   "w": 260,
+   "h": 142,
+   "kind": "bad",
+   "title": "Exclude first",
+   "lines": [
+    "• pulmonary embolism (PE)",
+    "• TENSION pneumothorax"
+   ]
+  },
+  {
+   "id": "vp_ac_1_0",
+   "x": 889,
+   "y": 696,
+   "w": 260,
+   "h": 124,
+   "kind": "vp_t",
+   "title": "Also",
+   "lines": [
+    "pneumothorax"
+   ]
+  },
+  {
+   "id": "ca_ch_0_0",
+   "x": 45,
+   "y": 860,
+   "w": 260,
+   "h": 96,
+   "kind": "ca_t",
+   "title": "Pericardium + muscle",
+   "lines": [
+    "• effusion, constriction",
+    "• systolic or diastolic dysfunction",
+    "• restrictive cardiomyopathy"
+   ]
+  },
+  {
+   "id": "ca_ch_1_0",
+   "x": 45,
+   "y": 978,
+   "w": 260,
+   "h": 132,
+   "kind": "ca_w",
+   "title": "Valves, coronaries, rhythm",
+   "lines": [
+    "• stenosis, regurgitation",
+    "• stable angina (acute coronary syndrome = emergency)",
+    "• atrial fibrillation, brady-, tachyarrhythmia"
+   ]
+  },
+  {
+   "id": "aw_ch_0_0",
+   "x": 345,
+   "y": 860,
+   "w": 260,
+   "h": 132,
+   "kind": "aw_t",
+   "title": "Obstruction",
+   "lines": [
+    "• asthma",
+    "• COPD",
+    "• bronchiectasis"
+   ]
+  },
+  {
+   "id": "aw_ch_1_0",
+   "x": 345,
+   "y": 1014,
+   "w": 260,
+   "h": 96,
+   "kind": "aw_w",
+   "title": "Which one?",
+   "lines": [
+    "OBSTRUCTIVE LUNG DISEASE chart"
+   ]
+  },
+  {
+   "id": "al_ch_0_0",
+   "x": 617.0,
+   "y": 860,
+   "w": 125.0,
+   "h": 250,
+   "kind": "al_t",
+   "title": "ALVEOLI filled",
+   "lines": [
+    "• FLUID: edema",
+    "• PUS: pneumonia",
+    "• BLOOD: hemorrhage",
+    "• TUMOUR"
+   ]
+  },
+  {
+   "id": "al_ch_0_1",
+   "x": 752.0,
+   "y": 860,
+   "w": 125.0,
+   "h": 250,
+   "kind": "al_w",
+   "title": "INTERSTITIUM",
+   "lines": [
+    "• pulmonary fibrosis",
+    "• hypersensitivity pneumonitis",
+    "• sarcoidosis",
+    "• CHF"
+   ]
+  },
+  {
+   "id": "vp_ch_0_0",
+   "x": 889,
+   "y": 860,
+   "w": 260,
+   "h": 105,
+   "kind": "vp_t",
+   "title": "Vessels",
+   "lines": [
+    "• PE (still life-threatening)",
+    "• pulmonary hypertension"
+   ]
+  },
+  {
+   "id": "vp_ch_1_0",
+   "x": 889,
+   "y": 987,
+   "w": 260,
+   "h": 123,
+   "kind": "vp_w",
+   "title": "Pump",
+   "lines": [
+    "• chest wall",
+    "• neuromuscular",
+    "• pleura"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ca",
+   "path": "M597.0 88V113H175.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_re",
+   "path": "M597.0 88V113H747.0V138"
+  },
+  {
+   "from": "g_re",
+   "to": "t_re",
+   "from_dx": 0
+  },
+  {
+   "from": "ca_ac_0_0",
+   "to": "ca_ac_1_0"
+  },
+  {
+   "from": "aw_ac_0_0",
+   "to": "aw_ac_1_0",
+   "to_dx": -67.5
+  },
+  {
+   "from": "aw_ac_0_1",
+   "to": "aw_ac_1_0",
+   "to_dx": 67.5
+  },
+  {
+   "from": "vp_ac_0_0",
+   "to": "vp_ac_1_0"
+  },
+  {
+   "from": "ca_ch_0_0",
+   "to": "ca_ch_1_0"
+  },
+  {
+   "from": "aw_ch_0_0",
+   "to": "aw_ch_1_0"
+  },
+  {
+   "from": "vp_ch_0_0",
+   "to": "vp_ch_1_0"
+  },
+  {
+   "from": "ca_head_0_0",
+   "to": "ca_ac_0_0"
+  },
+  {
+   "from": "ca_ac_1_0",
+   "to": "ca_ch_0_0"
+  },
+  {
+   "from": "g_ca",
+   "to": "ca_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "aw_head_0_0",
+   "to": "aw_ac_0_0",
+   "from_dx": -67.5
+  },
+  {
+   "from": "aw_head_0_0",
+   "to": "aw_ac_0_1",
+   "from_dx": 67.5
+  },
+  {
+   "from": "aw_ac_1_0",
+   "to": "aw_ch_0_0"
+  },
+  {
+   "from": "t_re",
+   "to": "aw_head_0_0",
+   "from_dx": -272,
+   "label": "STRIDOR or WHEEZE",
+   "label_at": [
+    475.0,
+    374
+   ]
+  },
+  {
+   "from": "al_head_0_0",
+   "to": "al_ac_0_0"
+  },
+  {
+   "from": "al_ac_0_0",
+   "to": "al_ch_0_0",
+   "from_dx": -67.5
+  },
+  {
+   "from": "al_ac_0_0",
+   "to": "al_ch_0_1",
+   "from_dx": 67.5
+  },
+  {
+   "from": "t_re",
+   "to": "al_head_0_0",
+   "from_dx": 0,
+   "label": "ABNORMAL CXR",
+   "label_at": [
+    747.0,
+    374
+   ]
+  },
+  {
+   "from": "vp_head_0_0",
+   "to": "vp_ac_0_0"
+  },
+  {
+   "from": "vp_ac_1_0",
+   "to": "vp_ch_0_0"
+  },
+  {
+   "from": "t_re",
+   "to": "vp_head_0_0",
+   "from_dx": 272,
+   "label": "NEITHER",
+   "label_at": [
+    1019.0,
+    374
+   ]
+  }
+ ],
+ "panels": []
+}

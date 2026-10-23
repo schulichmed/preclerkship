@@ -1,0 +1,638 @@
+{
+ "name": "antepartum hemorrhage overview",
+ "width": 1152,
+ "title": "Bleeding in the second or third trimester: after the mother and fetus are assessed and non-obstetric sources and labour are ruled out, pain and whose blood it is separate placental abruption (edge or concealed), placenta previa, the placenta accreta spectrum and vasa previa; each column gives presentation, numbered investigations and treatment in order, and a panel sets delivery by gestation",
+ "kinds": {
+  "abr_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "abr_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "abr_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "prv_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "prv_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "prv_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "acc_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "acc_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "acc_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "vas_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vas_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "vas_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 324,
+   "w": 260,
+   "h": 912,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 330,
+   "y": 324,
+   "w": 260,
+   "h": 912,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 592,
+   "y": 324,
+   "w": 260,
+   "h": 912,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 882,
+   "y": 324,
+   "w": 260,
+   "h": 912,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 486,
+   "h": 216,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 742,
+   "h": 182,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 964,
+   "h": 264,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 211,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Bleeding in the 2nd or 3rd trimester: is it PAINFUL, and WHOSE blood is it?",
+   "lines": [
+    "every one: airway, breathing, circulation for mom (oxygen + intravenous access if unstable) · non-stress test (NST) for the fetus",
+    "stat: complete blood count · international normalized ratio (INR), partial thromboplastin time (PTT), FIBRINOGEN · creatinine · group and screen",
+    "rule out first: non-obstetric (hemorrhoids, varices, bladder infection, stones → treat the cause) and LABOUR (a dilating cervix bleeds: 'show')"
+   ]
+  },
+  {
+   "id": "g_pain",
+   "x": 45,
+   "y": 192,
+   "w": 250,
+   "h": 60,
+   "kind": "plain",
+   "title": "PAINFUL, tender uterus",
+   "lines": [
+    "maternal blood"
+   ]
+  },
+  {
+   "id": "g_painless",
+   "x": 335,
+   "y": 192,
+   "w": 512,
+   "h": 60,
+   "kind": "plain",
+   "title": "PAINLESS: where is the placenta?",
+   "lines": [
+    "maternal blood · placental site from the anatomy scan"
+   ]
+  },
+  {
+   "id": "g_fetal",
+   "x": 887,
+   "y": 192,
+   "w": 250,
+   "h": 60,
+   "kind": "plain",
+   "title": "Small bleed, FETAL DISTRESS",
+   "lines": [
+    "the blood is the FETUS's"
+   ]
+  },
+  {
+   "id": "abr_head_0_0",
+   "x": 45,
+   "y": 332,
+   "w": 250,
+   "h": 114,
+   "kind": "abr_h",
+   "title": "Placental abruption",
+   "lines": [
+    "premature separation of the placenta from the uterus",
+    "most at 35–38 weeks, any gestation"
+   ]
+  },
+  {
+   "id": "prv_head_0_0",
+   "x": 335,
+   "y": 332,
+   "w": 250,
+   "h": 114,
+   "kind": "prv_h",
+   "title": "Placenta previa",
+   "lines": [
+    "implanted over, or within 2 cm of, the internal os",
+    "complete: covers it · marginal: within 2 cm"
+   ]
+  },
+  {
+   "id": "acc_head_0_0",
+   "x": 597,
+   "y": 332,
+   "w": 250,
+   "h": 114,
+   "kind": "acc_h",
+   "title": "Placenta accreta spectrum",
+   "lines": [
+    "accreta · increta · percreta",
+    "placenta INVADES the uterine wall"
+   ]
+  },
+  {
+   "id": "vas_head_0_0",
+   "x": 887,
+   "y": 332,
+   "w": 250,
+   "h": 114,
+   "kind": "vas_h",
+   "title": "Vasa previa",
+   "lines": [
+    "unprotected FETAL vessels cross the cervix or lie within 2 cm"
+   ]
+  },
+  {
+   "id": "abr_pres_0_0",
+   "x": 45,
+   "y": 486,
+   "w": 250,
+   "h": 78,
+   "kind": "abr_t",
+   "title": "Painful active bleeding",
+   "lines": [
+    "• tender, sometimes RIGID uterus",
+    "• 'unrelenting contractions'"
+   ]
+  },
+  {
+   "id": "abr_pres_1_0",
+   "x": 45.0,
+   "y": 586,
+   "w": 120.0,
+   "h": 116,
+   "kind": "abr_w",
+   "title": "At the EDGE (most)",
+   "lines": [
+    "bleeds out · mild–moderate pain"
+   ]
+  },
+  {
+   "id": "abr_pres_1_1",
+   "x": 175.0,
+   "y": 586,
+   "w": 120.0,
+   "h": 116,
+   "kind": "abr_w",
+   "title": "CONCEALED",
+   "lines": [
+    "NO bleeding · severe pain · fetal distress"
+   ]
+  },
+  {
+   "id": "prv_pres_0_0",
+   "x": 335,
+   "y": 486,
+   "w": 250,
+   "h": 216,
+   "kind": "prv_t",
+   "title": "PAINLESS bleeding, mild or severe",
+   "lines": [
+    "• sentinel bleed at 26–28 weeks",
+    "• fetus stable unless the mother is not"
+   ]
+  },
+  {
+   "id": "acc_pres_0_0",
+   "x": 597,
+   "y": 486,
+   "w": 250,
+   "h": 216,
+   "kind": "acc_t",
+   "title": "Bleeding the uterus cannot control",
+   "lines": [
+    "myometrium cannot contract over the invaded site"
+   ]
+  },
+  {
+   "id": "vas_pres_0_0",
+   "x": 887,
+   "y": 486,
+   "w": 250,
+   "h": 97,
+   "kind": "vas_t",
+   "title": "Small bleed, FETAL DISTRESS",
+   "lines": [
+    "a tiny volume is a lot of the fetus's blood"
+   ]
+  },
+  {
+   "id": "vas_pres_1_0",
+   "x": 887,
+   "y": 605,
+   "w": 250,
+   "h": 97,
+   "kind": "vas_w",
+   "title": "Known from the scan?",
+   "lines": [
+    "• type 1: velamentous cord insertion",
+    "• type 2: succenturiate (extra) lobe"
+   ]
+  },
+  {
+   "id": "abr_inv_0_0",
+   "x": 45,
+   "y": 742,
+   "w": 250,
+   "h": 70,
+   "kind": "abr_t",
+   "title": "1 · A diagnosis of EXCLUSION",
+   "lines": [
+    "once the other sources are ruled out"
+   ]
+  },
+  {
+   "id": "abr_inv_1_0",
+   "x": 45,
+   "y": 834,
+   "w": 250,
+   "h": 90,
+   "kind": "abr_w",
+   "title": "2 · Trauma or fetal distress: Kleihauer-Betke",
+   "lines": [
+    "fetal blood in HER circulation"
+   ]
+  },
+  {
+   "id": "prv_inv_0_0",
+   "x": 335,
+   "y": 742,
+   "w": 250,
+   "h": 98,
+   "kind": "prv_w",
+   "title": "1 · Ultrasound: placenta to the os",
+   "lines": [
+    "found at the 18–20 week scan; many move clear by the 3rd trimester"
+   ]
+  },
+  {
+   "id": "prv_inv_1_0",
+   "x": 335,
+   "y": 862,
+   "w": 250,
+   "h": 62,
+   "kind": "bad",
+   "title": "ANY cervical change can start a SUDDEN, SEVERE bleed",
+   "lines": []
+  },
+  {
+   "id": "acc_inv_0_0",
+   "x": 597,
+   "y": 742,
+   "w": 250,
+   "h": 182,
+   "kind": "acc_t",
+   "title": "1 · Ask: previous cesarean or uterine surgery?",
+   "lines": [
+    "the scar lacks a full endometrial cover"
+   ]
+  },
+  {
+   "id": "vas_inv_0_0",
+   "x": 887,
+   "y": 742,
+   "w": 250,
+   "h": 182,
+   "kind": "vas_t",
+   "title": "1 · Apt test",
+   "lines": [
+    "fetal blood in the VAGINAL bleed"
+   ]
+  },
+  {
+   "id": "abr_tx_0_0",
+   "x": 45,
+   "y": 964,
+   "w": 250,
+   "h": 130,
+   "kind": "warn",
+   "title": "Blood irritates the myometrium",
+   "lines": [
+    "• may go into LABOUR",
+    "• may rupture the membranes"
+   ]
+  },
+  {
+   "id": "abr_tx_1_0",
+   "x": 45,
+   "y": 1116,
+   "w": 250,
+   "h": 112,
+   "kind": "ok",
+   "title": "Deliver or wait by gestation",
+   "lines": [
+    "see the panel ↓"
+   ]
+  },
+  {
+   "id": "prv_tx_0_0",
+   "x": 335,
+   "y": 964,
+   "w": 250,
+   "h": 98,
+   "kind": "bad",
+   "title": "1 · Severe bleed: transfuse + clotting factors",
+   "lines": [
+    "no myometrium to clamp the vessels: shock, coagulopathy, hysterectomy"
+   ]
+  },
+  {
+   "id": "prv_tx_1_0",
+   "x": 335,
+   "y": 1084,
+   "w": 250,
+   "h": 62,
+   "kind": "ok",
+   "title": "2 · COMPLETE → cesarean section",
+   "lines": []
+  },
+  {
+   "id": "prv_tx_2_0",
+   "x": 335,
+   "y": 1168,
+   "w": 250,
+   "h": 60,
+   "kind": "warn",
+   "title": "Marginal, > 1 cm from the os",
+   "lines": [
+    "vaginal birth in select cases"
+   ]
+  },
+  {
+   "id": "acc_tx_0_0",
+   "x": 597,
+   "y": 964,
+   "w": 250,
+   "h": 264,
+   "kind": "bad",
+   "title": "Almost always HYSTERECTOMY",
+   "lines": [
+    "unless the invasion is very focal"
+   ]
+  },
+  {
+   "id": "vas_tx_0_0",
+   "x": 887,
+   "y": 964,
+   "w": 250,
+   "h": 264,
+   "kind": "warn",
+   "title": "Fetal status drives delivery",
+   "lines": [
+    "see the panel ↓"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_pain",
+   "path": "M591.0 142V167H170.0V192"
+  },
+  {
+   "from": "root",
+   "to": "g_painless",
+   "path": "M591.0 142V167H591.0V192"
+  },
+  {
+   "from": "root",
+   "to": "g_fetal",
+   "path": "M591.0 142V167H1012.0V192"
+  },
+  {
+   "from": "abr_pres_0_0",
+   "to": "abr_pres_1_0",
+   "from_dx": -65.0,
+   "dashed": true
+  },
+  {
+   "from": "abr_pres_0_0",
+   "to": "abr_pres_1_1",
+   "from_dx": 65.0,
+   "dashed": true
+  },
+  {
+   "from": "vas_pres_0_0",
+   "to": "vas_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "abr_inv_0_0",
+   "to": "abr_inv_1_0"
+  },
+  {
+   "from": "prv_inv_0_0",
+   "to": "prv_inv_1_0"
+  },
+  {
+   "from": "abr_tx_0_0",
+   "to": "abr_tx_1_0"
+  },
+  {
+   "from": "prv_tx_0_0",
+   "to": "prv_tx_1_0"
+  },
+  {
+   "from": "prv_tx_1_0",
+   "to": "prv_tx_2_0"
+  },
+  {
+   "from": "abr_head_0_0",
+   "to": "abr_pres_0_0"
+  },
+  {
+   "from": "abr_pres_1_0",
+   "to": "abr_inv_0_0",
+   "to_dx": -65.0
+  },
+  {
+   "from": "abr_pres_1_1",
+   "to": "abr_inv_0_0",
+   "to_dx": 65.0
+  },
+  {
+   "from": "abr_inv_1_0",
+   "to": "abr_tx_0_0"
+  },
+  {
+   "from": "g_pain",
+   "to": "abr_head_0_0",
+   "from_dx": 0,
+   "label": "painful",
+   "label_at": [
+    170.0,
+    292
+   ]
+  },
+  {
+   "from": "prv_head_0_0",
+   "to": "prv_pres_0_0"
+  },
+  {
+   "from": "prv_pres_0_0",
+   "to": "prv_inv_0_0"
+  },
+  {
+   "from": "prv_inv_1_0",
+   "to": "prv_tx_0_0"
+  },
+  {
+   "from": "g_painless",
+   "to": "prv_head_0_0",
+   "from_dx": -131,
+   "label": "over or near the os",
+   "label_at": [
+    460.0,
+    292
+   ]
+  },
+  {
+   "from": "acc_head_0_0",
+   "to": "acc_pres_0_0"
+  },
+  {
+   "from": "acc_pres_0_0",
+   "to": "acc_inv_0_0"
+  },
+  {
+   "from": "acc_inv_0_0",
+   "to": "acc_tx_0_0"
+  },
+  {
+   "from": "g_painless",
+   "to": "acc_head_0_0",
+   "from_dx": 131,
+   "label": "previous cesarean",
+   "label_at": [
+    722.0,
+    292
+   ]
+  },
+  {
+   "from": "vas_head_0_0",
+   "to": "vas_pres_0_0"
+  },
+  {
+   "from": "vas_pres_1_0",
+   "to": "vas_inv_0_0"
+  },
+  {
+   "from": "vas_inv_0_0",
+   "to": "vas_tx_0_0"
+  },
+  {
+   "from": "g_fetal",
+   "to": "vas_head_0_0",
+   "from_dx": 0,
+   "label": "fetal distress",
+   "label_at": [
+    1012.0,
+    292
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1262,
+   "w": 1092,
+   "title": "Every bleed: mother and fetus, then GESTATION decides",
+   "items": [
+    "≥ 35–36 weeks: DELIVER · induction if mother and fetus are reassuring, cesarean section if not",
+    "PRETERM + active bleed: birthing unit, continuous fetal monitoring · steroids + magnesium sulfate (see the PRETERM LABOUR chart) · neonatal intensive care unit (NICU) or tertiary consult if < 28–32 weeks · bloods every 4–6 h",
+    "PRETERM, stable, bleeding settled: antenatal ward · NST, growth + placental ultrasound, periodic bloods",
+    "the danger: CONSUMPTIVE COAGULOPATHY · the placental bed's huge flow uses up platelets and clotting factors"
+   ],
+   "cols": 1
+  }
+ ]
+}

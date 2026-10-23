@@ -1,0 +1,1307 @@
+{
+ "name": "calcium disorders pathway",
+ "width": 1744,
+ "title": "Calcium disorders pathway: correct for albumin and always send a PTH; high calcium splits into PTH-mediated primary hyperparathyroidism (with FHH told apart by urine calcium excretion) and PTH-independent malignancy or vitamin D causes; low calcium splits by PTH and phosphate into hypoparathyroidism, pseudohypoparathyroidism and vitamin D deficiency",
+ "kinds": {
+  "php_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "php_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "php_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "mal_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mal_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "mal_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "vdx_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vdx_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "vdx_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "hypo_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hypo_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "hypo_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pseudo_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pseudo_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "pseudo_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "vdd_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vdd_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "vdd_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 442,
+   "w": 276,
+   "h": 1432,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 318,
+   "y": 442,
+   "w": 276,
+   "h": 1432,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 596,
+   "y": 442,
+   "w": 276,
+   "h": 1432,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 902,
+   "y": 442,
+   "w": 276,
+   "h": 1432,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 1180,
+   "y": 442,
+   "w": 276,
+   "h": 1432,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1458,
+   "y": 442,
+   "w": 276,
+   "h": 1432,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 256,
+   "h": 114,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 604,
+   "h": 396,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1040,
+   "h": 350,
+   "text": "CAUSES"
+  },
+  {
+   "x": 23,
+   "y": 1430,
+   "h": 436,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 557,
+   "y": 10,
+   "w": 660,
+   "kind": "dark",
+   "title": "Calcium problem: CORRECT for albumin, then ALWAYS send a PTH",
+   "lines": [
+    "corrected Ca = measured Ca + 0.02 × (40 − albumin)",
+    "normal total 2.15–2.55 mmol/L · ionized 1.1–1.3 (50%), protein-bound 40%, complexed 10%"
+   ]
+  },
+  {
+   "id": "g_hi",
+   "x": 45,
+   "y": 138,
+   "w": 822,
+   "kind": "plain",
+   "title": "HIGH calcium: corrected > 2.55 mmol/L",
+   "lines": [
+    "> 90% is hyperparathyroidism or malignancy · then PTH sorts it",
+    "~symptoms depend on the level and how fast it rose"
+   ],
+   "h": 78
+  },
+  {
+   "id": "g_lo",
+   "x": 907,
+   "y": 138,
+   "w": 822,
+   "kind": "plain",
+   "title": "LOW calcium",
+   "lines": [
+    "PTH and PHOSPHATE sort it",
+    "~rarely, acute complexation of calcium"
+   ],
+   "h": 78
+  },
+  {
+   "id": "p_hi",
+   "x": 45,
+   "y": 256,
+   "w": 822,
+   "kind": "info",
+   "title": "Presents as: often ASYMPTOMATIC · stones, bones, groans, psychiatric overtones",
+   "lines": [
+    "GI: abdominal distress, pancreatitis, constipation, vomiting, anorexia",
+    "renal: POLYURIA (nephrogenic diabetes insipidus), stones, renal insufficiency",
+    "bone: pain, cystic lesions, demineralisation, spontaneous fractures",
+    "heart: SHORT QT, arrhythmias, hypertension · brain: confusion, personality change, depression, apathy"
+   ],
+   "h": 114
+  },
+  {
+   "id": "p_lo",
+   "x": 907,
+   "y": 256,
+   "w": 822,
+   "kind": "info",
+   "title": "Presents as",
+   "lines": [
+    "acute, severe: TETANY — perioral paraesthesias, carpopedal spasm, laryngeal spasm, seizures, palpitations",
+    "acute, mild: CHVOSTEK's and TROUSSEAU's signs · heart: PROLONGED QT",
+    "chronic: emotional instability, anxiety, brain fog, paraesthesias · cataracts, dry skin, brittle nails",
+    "~over-treatment: movement disorders, kidney stones"
+   ],
+   "h": 114
+  },
+  {
+   "id": "php_head_0_0",
+   "x": 45,
+   "y": 450,
+   "w": 266,
+   "h": 114,
+   "kind": "php_h",
+   "title": "Primary hyperparathyroidism",
+   "lines": [
+    "PTH-MEDIATED · PTH ↑ or inappropriately normal",
+    "phosphate ↓ (PTH makes the kidney waste it)"
+   ]
+  },
+  {
+   "id": "mal_head_0_0",
+   "x": 323,
+   "y": 450,
+   "w": 266,
+   "h": 114,
+   "kind": "mal_h",
+   "title": "Hypercalcaemia of malignancy",
+   "lines": [
+    "PTH-INDEPENDENT · PTH suppressed",
+    "with hyperparathyroidism, > 90% of cases"
+   ]
+  },
+  {
+   "id": "vdx_head_0_0",
+   "x": 601,
+   "y": 450,
+   "w": 266,
+   "h": 114,
+   "kind": "vdx_h",
+   "title": "Vitamin D and other causes",
+   "lines": [
+    "PTH-INDEPENDENT · PTH suppressed",
+    "minor causes, < 10%"
+   ]
+  },
+  {
+   "id": "hypo_head_0_0",
+   "x": 907,
+   "y": 450,
+   "w": 266,
+   "h": 114,
+   "kind": "hypo_h",
+   "title": "Hypoparathyroidism",
+   "lines": [
+    "PTH DEFICIENT: failure to SECRETE",
+    "Ca ↓ · phosphate ↑ · PTH ↓"
+   ]
+  },
+  {
+   "id": "pseudo_head_0_0",
+   "x": 1185,
+   "y": 450,
+   "w": 266,
+   "h": 114,
+   "kind": "pseudo_h",
+   "title": "Pseudohypoparathyroidism",
+   "lines": [
+    "PTH RESISTANT: failure to RESPOND",
+    "Ca ↓ · phosphate ↑ · PTH ↑"
+   ]
+  },
+  {
+   "id": "vdd_head_0_0",
+   "x": 1463,
+   "y": 450,
+   "w": 266,
+   "h": 114,
+   "kind": "vdd_h",
+   "title": "Vitamin D deficiency",
+   "lines": [
+    "the COMMONEST of the three",
+    "Ca ↓ · phosphate ↓ · PTH ↑"
+   ]
+  },
+  {
+   "id": "php_inv_0_0",
+   "x": 45,
+   "y": 604,
+   "w": 266,
+   "h": 96,
+   "kind": "php_w",
+   "title": "1 · Repeat corrected Ca + PTH",
+   "lines": [
+    "with phosphate and 25-OH-D",
+    "~the case: Ca 2.73, phosphate 0.69, PTH 14 (1.6–6.9)"
+   ]
+  },
+  {
+   "id": "php_inv_1_0",
+   "x": 45,
+   "y": 722,
+   "w": 266,
+   "h": 96,
+   "kind": "php_t",
+   "title": "2 · 24-h urine Ca + creatinine",
+   "lines": [
+    "fractional excretion of calcium (FE_Ca) = (urine Ca × serum Cr/1000) ÷ (serum Ca × urine Cr)"
+   ]
+  },
+  {
+   "id": "php_inv_2_0",
+   "x": 45.0,
+   "y": 840,
+   "w": 128.0,
+   "h": 60,
+   "kind": "php_w",
+   "title": "> 0.02",
+   "lines": [
+    "likely PRIMARY"
+   ]
+  },
+  {
+   "id": "php_inv_2_1",
+   "x": 183.0,
+   "y": 840,
+   "w": 128.0,
+   "h": 60,
+   "kind": "php_w",
+   "title": "< 0.01",
+   "lines": [
+    "FHH"
+   ]
+  },
+  {
+   "id": "php_inv_3_0",
+   "x": 45,
+   "y": 922,
+   "w": 266,
+   "h": 78,
+   "kind": "php_w",
+   "title": "0.01–0.02: overlap (20% of FHH)",
+   "lines": [
+    "~recheck off thiazides × 3 months, normal Mg, 25-OH-D > 50"
+   ]
+  },
+  {
+   "id": "mal_inv_0_0",
+   "x": 323,
+   "y": 604,
+   "w": 266,
+   "h": 178,
+   "kind": "mal_t",
+   "title": "PTH SUPPRESSED",
+   "lines": [
+    "so it is not the parathyroid"
+   ]
+  },
+  {
+   "id": "mal_inv_1_0",
+   "x": 323,
+   "y": 804,
+   "w": 266,
+   "h": 196,
+   "kind": "mal_w",
+   "title": "Humoral cases",
+   "lines": [
+    "the tumour makes PTH-related peptide (PTHrP)"
+   ]
+  },
+  {
+   "id": "vdx_inv_0_0",
+   "x": 601,
+   "y": 604,
+   "w": 266,
+   "h": 396,
+   "kind": "vdx_t",
+   "title": "PTH SUPPRESSED",
+   "lines": [
+    "the history finds most of these"
+   ]
+  },
+  {
+   "id": "hypo_inv_0_0",
+   "x": 907,
+   "y": 604,
+   "w": 266,
+   "h": 111,
+   "kind": "hypo_t",
+   "title": "Persistent low Ca",
+   "lines": [
+    "PTH LOW or inappropriately normal"
+   ]
+  },
+  {
+   "id": "hypo_inv_1_0",
+   "x": 907,
+   "y": 737,
+   "w": 266,
+   "h": 111,
+   "kind": "warn",
+   "title": "≥ 6 months after surgery",
+   "lines": [
+    "before calling it permanent"
+   ]
+  },
+  {
+   "id": "hypo_inv_2_0",
+   "x": 907,
+   "y": 870,
+   "w": 266,
+   "h": 129,
+   "kind": "hypo_w",
+   "title": "Check magnesium",
+   "lines": [
+    "low OR high magnesium is a functional cause"
+   ]
+  },
+  {
+   "id": "pseudo_inv_0_0",
+   "x": 1185,
+   "y": 604,
+   "w": 266,
+   "h": 92,
+   "kind": "pseudo_t",
+   "title": "Low Ca with HIGH PTH",
+   "lines": [
+    "the gland works, the body ignores it"
+   ]
+  },
+  {
+   "id": "pseudo_inv_1_0",
+   "x": 1185,
+   "y": 718,
+   "w": 266,
+   "h": 130,
+   "kind": "pseudo_w",
+   "title": "Type 1a: Albright's hereditary osteodystrophy",
+   "lines": [
+    "round face, short stature, short metacarpals and metatarsals"
+   ]
+  },
+  {
+   "id": "pseudo_inv_2_0",
+   "x": 1185,
+   "y": 870,
+   "w": 266,
+   "h": 130,
+   "kind": "bad",
+   "title": "The trap: pseudopseudo- hypoparathyroidism",
+   "lines": [
+    "SAME look, NO PTH resistance: normal panel"
+   ]
+  },
+  {
+   "id": "vdd_inv_0_0",
+   "x": 1463,
+   "y": 604,
+   "w": 266,
+   "h": 186,
+   "kind": "vdd_t",
+   "title": "Low Ca with LOW phosphate",
+   "lines": [
+    "more common than the PTH disorders"
+   ]
+  },
+  {
+   "id": "vdd_inv_1_0",
+   "x": 1463,
+   "y": 812,
+   "w": 266,
+   "h": 188,
+   "kind": "vdd_w",
+   "title": "Also: failure to RESPOND to vitamin D",
+   "lines": []
+  },
+  {
+   "id": "php_cause_0_0",
+   "x": 45,
+   "y": 1040,
+   "w": 266,
+   "h": 127,
+   "kind": "php_t",
+   "title": "Parathyroid ADENOMA 80%",
+   "lines": [
+    "hyperplasia · carcinoma"
+   ]
+  },
+  {
+   "id": "php_cause_1_0",
+   "x": 45.0,
+   "y": 1189,
+   "w": 128.0,
+   "h": 201,
+   "kind": "php_w",
+   "title": "Familial",
+   "lines": [
+    "isolated · jaw tumour syndrome · MEN"
+   ]
+  },
+  {
+   "id": "php_cause_1_1",
+   "x": 183.0,
+   "y": 1189,
+   "w": 128.0,
+   "h": 201,
+   "kind": "php_w",
+   "title": "Also PTH-mediated",
+   "lines": [
+    "FHH (calcium-sensing receptor) · tertiary (renal failure)"
+   ]
+  },
+  {
+   "id": "mal_cause_0_0",
+   "x": 323,
+   "y": 1040,
+   "w": 266,
+   "h": 77,
+   "kind": "mal_t",
+   "title": "Metastases",
+   "lines": [
+    "breast cancer"
+   ]
+  },
+  {
+   "id": "mal_cause_1_0",
+   "x": 323.0,
+   "y": 1139,
+   "w": 128.0,
+   "h": 131,
+   "kind": "mal_w",
+   "title": "PTHrP",
+   "lines": [
+    "solid tumours: lung, kidney · adult T-cell leukaemia"
+   ]
+  },
+  {
+   "id": "mal_cause_1_1",
+   "x": 461.0,
+   "y": 1139,
+   "w": 128.0,
+   "h": 131,
+   "kind": "mal_w",
+   "title": "Lymphokines",
+   "lines": [
+    "myeloma"
+   ]
+  },
+  {
+   "id": "mal_cause_2_0",
+   "x": 323.0,
+   "y": 1292,
+   "w": 128.0,
+   "h": 97,
+   "kind": "mal_w",
+   "title": "Vitamin D-like steroids",
+   "lines": [
+    "lymphoma"
+   ]
+  },
+  {
+   "id": "mal_cause_2_1",
+   "x": 461.0,
+   "y": 1292,
+   "w": 128.0,
+   "h": 97,
+   "kind": "mal_w",
+   "title": "Prostaglandins",
+   "lines": []
+  },
+  {
+   "id": "vdx_cause_0_0",
+   "x": 601,
+   "y": 1040,
+   "w": 266,
+   "h": 78,
+   "kind": "vdx_t",
+   "title": "Vitamin D related",
+   "lines": [
+    "exogenous ingestion · granulomatous: sarcoid, TB"
+   ]
+  },
+  {
+   "id": "vdx_cause_1_0",
+   "x": 601.0,
+   "y": 1140,
+   "w": 128.0,
+   "h": 132,
+   "kind": "vdx_w",
+   "title": "Immobilisation",
+   "lines": [
+    "on Paget's, thyrotoxicosis, adrenal insufficiency"
+   ]
+  },
+  {
+   "id": "vdx_cause_1_1",
+   "x": 739.0,
+   "y": 1140,
+   "w": 128.0,
+   "h": 132,
+   "kind": "vdx_w",
+   "title": "Drugs",
+   "lines": [
+    "thiazides (usually transient) · milk-alkali (absorbable antacids)"
+   ]
+  },
+  {
+   "id": "vdx_cause_2_0",
+   "x": 601,
+   "y": 1294,
+   "w": 266,
+   "h": 96,
+   "kind": "vdx_w",
+   "title": "Other",
+   "lines": [
+    "hyperthyroidism, acromegaly, pheochromocytoma, adrenal insufficiency, parenteral nutrition"
+   ]
+  },
+  {
+   "id": "hypo_cause_0_0",
+   "x": 907,
+   "y": 1040,
+   "w": 266,
+   "h": 146,
+   "kind": "hypo_t",
+   "title": "POST-SURGICAL 75%",
+   "lines": []
+  },
+  {
+   "id": "hypo_cause_1_0",
+   "x": 907,
+   "y": 1208,
+   "w": 266,
+   "h": 182,
+   "kind": "hypo_w",
+   "title": "Non-surgical 25%",
+   "lines": [
+    "autoimmune · infiltrative · post-radiation · magnesium · metastatic · genetic"
+   ]
+  },
+  {
+   "id": "pseudo_cause_0_0",
+   "x": 1185,
+   "y": 1040,
+   "w": 266,
+   "h": 350,
+   "kind": "pseudo_t",
+   "title": "Inherited",
+   "lines": [
+    "types 1a, 1b and 2"
+   ]
+  },
+  {
+   "id": "vdd_cause_0_0",
+   "x": 1463,
+   "y": 1040,
+   "w": 266,
+   "h": 96,
+   "kind": "vdd_t",
+   "title": "Malabsorption",
+   "lines": [
+    "a fat-soluble vitamin"
+   ]
+  },
+  {
+   "id": "vdd_cause_1_0",
+   "x": 1463.0,
+   "y": 1158,
+   "w": 128.0,
+   "h": 114,
+   "kind": "vdd_w",
+   "title": "Organ failure",
+   "lines": [
+    "renal or liver"
+   ]
+  },
+  {
+   "id": "vdd_cause_1_1",
+   "x": 1601.0,
+   "y": 1158,
+   "w": 128.0,
+   "h": 114,
+   "kind": "vdd_w",
+   "title": "Drugs, diet",
+   "lines": [
+    "phenytoin · diet (rare)"
+   ]
+  },
+  {
+   "id": "vdd_cause_2_0",
+   "x": 1463,
+   "y": 1294,
+   "w": 266,
+   "h": 96,
+   "kind": "vdd_w",
+   "title": "No sun",
+   "lines": [
+    "rickets (child), osteomalacia (adult)"
+   ]
+  },
+  {
+   "id": "php_tx_0_0",
+   "x": 45,
+   "y": 1430,
+   "w": 266,
+   "h": 119,
+   "kind": "php_w",
+   "title": "Mild, asymptomatic, > 50",
+   "lines": [
+    "no treatment, or drugs: bisphosphonates, denosumab, estrogen, cinacalcet"
+   ]
+  },
+  {
+   "id": "php_tx_1_0",
+   "x": 45,
+   "y": 1571,
+   "w": 266,
+   "h": 101,
+   "kind": "ok",
+   "title": "Symptomatic → SURGERY",
+   "lines": [
+    "hydrate · avoid thiazides, lithium"
+   ]
+  },
+  {
+   "id": "php_tx_2_0",
+   "x": 45,
+   "y": 1694,
+   "w": 266,
+   "h": 173,
+   "kind": "warn",
+   "title": "Surgery if any ONE",
+   "lines": [
+    "Ca > 0.25 above upper limit · T-score < −2.5 (spine, femoral neck, total hip, 1/3 radius) · vertebral fracture · CrCl < 60 · 24-h urine Ca > 10 + stone risk · stones or nephrocalcinosis · age < 50"
+   ]
+  },
+  {
+   "id": "mal_tx_0_0",
+   "x": 323,
+   "y": 1430,
+   "w": 266,
+   "h": 216,
+   "kind": "ok",
+   "title": "Acute treatment (below)",
+   "lines": [
+    "saline → furosemide → IV zoledronate → calcitonin"
+   ]
+  },
+  {
+   "id": "mal_tx_1_0",
+   "x": 323,
+   "y": 1668,
+   "w": 266,
+   "h": 198,
+   "kind": "warn",
+   "title": "Prednisone 40–60 mg/day",
+   "lines": [
+    "then taper · for MYELOMA"
+   ]
+  },
+  {
+   "id": "vdx_tx_0_0",
+   "x": 601,
+   "y": 1430,
+   "w": 266,
+   "h": 198,
+   "kind": "ok",
+   "title": "Acute treatment (below)",
+   "lines": [
+    "if corrected Ca > 3"
+   ]
+  },
+  {
+   "id": "vdx_tx_1_0",
+   "x": 601,
+   "y": 1650,
+   "w": 266,
+   "h": 216,
+   "kind": "warn",
+   "title": "Prednisone 40–60 mg/day",
+   "lines": [
+    "then taper · for VITAMIN D INTOXICATION"
+   ]
+  },
+  {
+   "id": "hypo_tx_0_0",
+   "x": 907,
+   "y": 1430,
+   "w": 266,
+   "h": 116,
+   "kind": "ok",
+   "title": "Chronic: calcitriol 0.25 mcg twice daily",
+   "lines": [
+    "+ 1–2 g elemental calcium, divided · keep 25-OH-D > 75 · monitor Ca and phosphate"
+   ]
+  },
+  {
+   "id": "hypo_tx_1_0",
+   "x": 907.0,
+   "y": 1568,
+   "w": 128.0,
+   "h": 98,
+   "kind": "hypo_w",
+   "title": "Thiazide",
+   "lines": [
+    "↓ urine calcium, ↓ stones"
+   ]
+  },
+  {
+   "id": "hypo_tx_1_1",
+   "x": 1045.0,
+   "y": 1568,
+   "w": 128.0,
+   "h": 98,
+   "kind": "hypo_w",
+   "title": "Recombinant PTH",
+   "lines": [
+    "approved in US + Europe"
+   ]
+  },
+  {
+   "id": "hypo_tx_2_0",
+   "x": 907,
+   "y": 1688,
+   "w": 266,
+   "h": 96,
+   "kind": "warn",
+   "title": "Aim for LOW-normal calcium",
+   "lines": [
+    "watch for ectopic calcification: renal ultrasound, head MRI (basal ganglia) · Ca × phosphate < 4.4"
+   ]
+  },
+  {
+   "id": "hypo_tx_3_0",
+   "x": 907,
+   "y": 1806,
+   "w": 266,
+   "h": 60,
+   "kind": "bad",
+   "title": "NOT loop diuretics",
+   "lines": [
+    "key point: not a treatment"
+   ]
+  },
+  {
+   "id": "pseudo_tx_0_0",
+   "x": 1185,
+   "y": 1430,
+   "w": 266,
+   "h": 436,
+   "kind": "ok",
+   "title": "Chronic hypocalcaemia treatment",
+   "lines": [
+    "calcitriol + elemental calcium, as for hypoparathyroidism"
+   ]
+  },
+  {
+   "id": "vdd_tx_0_0",
+   "x": 1463,
+   "y": 1430,
+   "w": 266,
+   "h": 216,
+   "kind": "ok",
+   "title": "Chronic: vitamin D + calcium",
+   "lines": [
+    "keep 25-OH-D > 75 · 1–2 g elemental calcium"
+   ]
+  },
+  {
+   "id": "vdd_tx_1_0",
+   "x": 1463,
+   "y": 1668,
+   "w": 266,
+   "h": 198,
+   "kind": "vdd_w",
+   "title": "Osteomalacia",
+   "lines": [
+    "~see the metabolic bone disease chart"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_hi",
+   "path": "M887.0 88V113H456.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_lo",
+   "path": "M887.0 88V113H1318.0V138"
+  },
+  {
+   "from": "g_hi",
+   "to": "p_hi"
+  },
+  {
+   "from": "g_lo",
+   "to": "p_lo"
+  },
+  {
+   "from": "php_inv_0_0",
+   "to": "php_inv_1_0"
+  },
+  {
+   "from": "php_inv_1_0",
+   "to": "php_inv_2_0",
+   "from_dx": -69.0
+  },
+  {
+   "from": "php_inv_1_0",
+   "to": "php_inv_2_1",
+   "from_dx": 69.0
+  },
+  {
+   "from": "php_inv_2_0",
+   "to": "php_inv_3_0",
+   "to_dx": -69.0
+  },
+  {
+   "from": "php_inv_2_1",
+   "to": "php_inv_3_0",
+   "to_dx": 69.0
+  },
+  {
+   "from": "mal_inv_0_0",
+   "to": "mal_inv_1_0"
+  },
+  {
+   "from": "hypo_inv_0_0",
+   "to": "hypo_inv_1_0"
+  },
+  {
+   "from": "hypo_inv_1_0",
+   "to": "hypo_inv_2_0"
+  },
+  {
+   "from": "pseudo_inv_0_0",
+   "to": "pseudo_inv_1_0"
+  },
+  {
+   "from": "pseudo_inv_1_0",
+   "to": "pseudo_inv_2_0"
+  },
+  {
+   "from": "vdd_inv_0_0",
+   "to": "vdd_inv_1_0"
+  },
+  {
+   "from": "php_cause_0_0",
+   "to": "php_cause_1_0",
+   "from_dx": -69.0,
+   "dashed": true
+  },
+  {
+   "from": "php_cause_0_0",
+   "to": "php_cause_1_1",
+   "from_dx": 69.0,
+   "dashed": true
+  },
+  {
+   "from": "mal_cause_0_0",
+   "to": "mal_cause_1_0",
+   "from_dx": -69.0,
+   "dashed": true
+  },
+  {
+   "from": "mal_cause_0_0",
+   "to": "mal_cause_1_1",
+   "from_dx": 69.0,
+   "dashed": true
+  },
+  {
+   "from": "mal_cause_1_0",
+   "to": "mal_cause_2_0",
+   "dashed": true
+  },
+  {
+   "from": "mal_cause_1_1",
+   "to": "mal_cause_2_1",
+   "dashed": true
+  },
+  {
+   "from": "vdx_cause_0_0",
+   "to": "vdx_cause_1_0",
+   "from_dx": -69.0,
+   "dashed": true
+  },
+  {
+   "from": "vdx_cause_0_0",
+   "to": "vdx_cause_1_1",
+   "from_dx": 69.0,
+   "dashed": true
+  },
+  {
+   "from": "vdx_cause_1_0",
+   "to": "vdx_cause_2_0",
+   "to_dx": -69.0,
+   "dashed": true
+  },
+  {
+   "from": "vdx_cause_1_1",
+   "to": "vdx_cause_2_0",
+   "to_dx": 69.0,
+   "dashed": true
+  },
+  {
+   "from": "hypo_cause_0_0",
+   "to": "hypo_cause_1_0",
+   "dashed": true
+  },
+  {
+   "from": "vdd_cause_0_0",
+   "to": "vdd_cause_1_0",
+   "from_dx": -69.0,
+   "dashed": true
+  },
+  {
+   "from": "vdd_cause_0_0",
+   "to": "vdd_cause_1_1",
+   "from_dx": 69.0,
+   "dashed": true
+  },
+  {
+   "from": "vdd_cause_1_0",
+   "to": "vdd_cause_2_0",
+   "to_dx": -69.0,
+   "dashed": true
+  },
+  {
+   "from": "vdd_cause_1_1",
+   "to": "vdd_cause_2_0",
+   "to_dx": 69.0,
+   "dashed": true
+  },
+  {
+   "from": "php_tx_0_0",
+   "to": "php_tx_1_0"
+  },
+  {
+   "from": "php_tx_1_0",
+   "to": "php_tx_2_0"
+  },
+  {
+   "from": "mal_tx_0_0",
+   "to": "mal_tx_1_0"
+  },
+  {
+   "from": "vdx_tx_0_0",
+   "to": "vdx_tx_1_0"
+  },
+  {
+   "from": "hypo_tx_0_0",
+   "to": "hypo_tx_1_0",
+   "from_dx": -69.0
+  },
+  {
+   "from": "hypo_tx_0_0",
+   "to": "hypo_tx_1_1",
+   "from_dx": 69.0
+  },
+  {
+   "from": "hypo_tx_1_0",
+   "to": "hypo_tx_2_0",
+   "to_dx": -69.0
+  },
+  {
+   "from": "hypo_tx_1_1",
+   "to": "hypo_tx_2_0",
+   "to_dx": 69.0
+  },
+  {
+   "from": "hypo_tx_2_0",
+   "to": "hypo_tx_3_0"
+  },
+  {
+   "from": "vdd_tx_0_0",
+   "to": "vdd_tx_1_0"
+  },
+  {
+   "from": "php_head_0_0",
+   "to": "php_inv_0_0"
+  },
+  {
+   "from": "php_inv_3_0",
+   "to": "php_cause_0_0"
+  },
+  {
+   "from": "php_cause_1_0",
+   "to": "php_tx_0_0",
+   "to_dx": -69.0
+  },
+  {
+   "from": "php_cause_1_1",
+   "to": "php_tx_0_0",
+   "to_dx": 69.0
+  },
+  {
+   "from": "mal_head_0_0",
+   "to": "mal_inv_0_0"
+  },
+  {
+   "from": "mal_inv_1_0",
+   "to": "mal_cause_0_0"
+  },
+  {
+   "from": "mal_cause_2_0",
+   "to": "mal_tx_0_0",
+   "to_dx": -69.0
+  },
+  {
+   "from": "mal_cause_2_1",
+   "to": "mal_tx_0_0",
+   "to_dx": 69.0
+  },
+  {
+   "from": "vdx_head_0_0",
+   "to": "vdx_inv_0_0"
+  },
+  {
+   "from": "vdx_inv_0_0",
+   "to": "vdx_cause_0_0"
+  },
+  {
+   "from": "vdx_cause_2_0",
+   "to": "vdx_tx_0_0"
+  },
+  {
+   "from": "hypo_head_0_0",
+   "to": "hypo_inv_0_0"
+  },
+  {
+   "from": "hypo_inv_2_0",
+   "to": "hypo_cause_0_0"
+  },
+  {
+   "from": "hypo_cause_1_0",
+   "to": "hypo_tx_0_0"
+  },
+  {
+   "from": "pseudo_head_0_0",
+   "to": "pseudo_inv_0_0"
+  },
+  {
+   "from": "pseudo_inv_2_0",
+   "to": "pseudo_cause_0_0"
+  },
+  {
+   "from": "pseudo_cause_0_0",
+   "to": "pseudo_tx_0_0"
+  },
+  {
+   "from": "vdd_head_0_0",
+   "to": "vdd_inv_0_0"
+  },
+  {
+   "from": "vdd_inv_1_0",
+   "to": "vdd_cause_0_0"
+  },
+  {
+   "from": "vdd_cause_2_0",
+   "to": "vdd_tx_0_0"
+  },
+  {
+   "from": "p_hi",
+   "to": "php_head_0_0",
+   "from_dx": -278,
+   "label": "PTH ↑ or inappropriately normal",
+   "label_at": [
+    178.0,
+    410
+   ]
+  },
+  {
+   "from": "p_hi",
+   "to": "mal_head_0_0",
+   "from_dx": 0,
+   "label": "PTH suppressed",
+   "label_at": [
+    456.0,
+    410
+   ]
+  },
+  {
+   "from": "p_hi",
+   "to": "vdx_head_0_0",
+   "from_dx": 278,
+   "label": "PTH suppressed",
+   "label_at": [
+    734.0,
+    410
+   ]
+  },
+  {
+   "from": "p_lo",
+   "to": "hypo_head_0_0",
+   "from_dx": -278,
+   "label": "PTH ↓ · phosphate ↑",
+   "label_at": [
+    1040.0,
+    410
+   ]
+  },
+  {
+   "from": "p_lo",
+   "to": "pseudo_head_0_0",
+   "from_dx": 0,
+   "label": "PTH ↑ · phosphate ↑",
+   "label_at": [
+    1318.0,
+    410
+   ]
+  },
+  {
+   "from": "p_lo",
+   "to": "vdd_head_0_0",
+   "from_dx": 278,
+   "label": "PTH ↑ · phosphate ↓",
+   "label_at": [
+    1596.0,
+    410
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1900,
+   "w": 822,
+   "title": "ACUTE hypercalcaemia: admit if corrected Ca > 3 mmol/L",
+   "cols": 2,
+   "items": [
+    "1. volume: assume a 4–6 L deficit, replace with normal saline",
+    "2. forced diuresis ONLY once well hydrated: 4–10 L saline + furosemide + potassium",
+    "3. intravenous zoledronate (bisphosphonate)",
+    "4. calcitonin",
+    "5. prednisone 40–60 mg/day then taper: myeloma, vitamin D intoxication"
+   ]
+  },
+  {
+   "x": 907,
+   "y": 1900,
+   "w": 822,
+   "title": "ACUTE hypocalcaemia: only if corrected Ca < 1.9 AND symptoms",
+   "cols": 2,
+   "items": [
+    "neurological (tetany, seizures, carpopedal spasm) or cardiac (prolonged QT)",
+    "10% calcium gluconate 1–2 g in 50 mL 5% dextrose over 15–20 min",
+    "then 1–3 mg/kg/h elemental calcium · cardiac monitor, inpatient",
+    "ALWAYS treat low magnesium",
+    "minor causes: low albumin · low magnesium (alcohol, malabsorption) · pancreatitis · tumour lysis, rhabdomyolysis, sepsis · massive transfusion"
+   ]
+  }
+ ]
+}

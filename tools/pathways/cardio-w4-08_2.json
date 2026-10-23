@@ -1,0 +1,745 @@
+{
+ "name": "pediatric heart complaint overview",
+ "width": 1568,
+ "title": "A child with a murmur, chest pain or palpitations: history and exam separate the benign from the cardiac cause; an innocent murmur from a pathologic one, musculoskeletal from cardiac chest pain, and sinus tachycardia from supraventricular tachycardia, which is caught by an ECG during symptoms",
+ "kinds": {
+  "inn_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "inn_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "inn_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pat_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pat_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "pat_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "msk_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "msk_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "msk_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "car_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "car_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "car_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "sin_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sin_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "sin_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "svt_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "svt_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "svt_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 242,
+   "h": 694,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 284,
+   "y": 270,
+   "w": 242,
+   "h": 694,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 556,
+   "y": 270,
+   "w": 242,
+   "h": 694,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 800,
+   "y": 270,
+   "w": 242,
+   "h": 694,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1072,
+   "y": 270,
+   "w": 242,
+   "h": 694,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1316,
+   "y": 270,
+   "w": 242,
+   "h": 694,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 396,
+   "h": 116,
+   "text": "HISTORY"
+  },
+  {
+   "x": 23,
+   "y": 552,
+   "h": 214,
+   "text": "EXAM & ECG"
+  },
+  {
+   "x": 23,
+   "y": 806,
+   "h": 150,
+   "text": "TESTS & NEXT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 419,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A child with a MURMUR, CHEST PAIN or PALPITATIONS: BENIGN, or the HEART?",
+   "lines": [
+    "infants: work of breathing with feeds, sweating with feeds, poor growth, cyanosis · older: syncope, exercise intolerance",
+    "exam: perfusion, heaves or thrills, radial vs femoral pulses, extra sounds, liver size"
+   ]
+  },
+  {
+   "id": "g_mur",
+   "x": 45,
+   "y": 138,
+   "w": 476,
+   "h": 60,
+   "kind": "plain",
+   "title": "MURMUR: most are INNOCENT",
+   "lines": [
+    "congenital heart disease (CHD) in only ~1% of children"
+   ]
+  },
+  {
+   "id": "g_cp",
+   "x": 561,
+   "y": 138,
+   "w": 476,
+   "h": 60,
+   "kind": "plain",
+   "title": "CHEST PAIN: most are BENIGN",
+   "lines": [
+    "normal children do not have heart attacks"
+   ]
+  },
+  {
+   "id": "g_pal",
+   "x": 1077,
+   "y": 138,
+   "w": 476,
+   "h": 60,
+   "kind": "plain",
+   "title": "PALPITATIONS: fast? irregular? hard?",
+   "lines": [
+    "SYNCOPE rather than palpitations → think ventricular tachycardia (VT)"
+   ]
+  },
+  {
+   "id": "inn_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 232,
+   "h": 78,
+   "kind": "inn_h",
+   "title": "Innocent murmur",
+   "lines": [
+    "blood ejected from a NORMAL heart"
+   ]
+  },
+  {
+   "id": "pat_head_0_0",
+   "x": 289,
+   "y": 278,
+   "w": 232,
+   "h": 78,
+   "kind": "pat_h",
+   "title": "Pathologic murmur",
+   "lines": [
+    "may be congenital heart disease"
+   ]
+  },
+  {
+   "id": "msk_head_0_0",
+   "x": 561,
+   "y": 278,
+   "w": 232,
+   "h": 78,
+   "kind": "msk_h",
+   "title": "Benign chest pain",
+   "lines": [
+    "costochondritis commonest"
+   ]
+  },
+  {
+   "id": "car_head_0_0",
+   "x": 805,
+   "y": 278,
+   "w": 232,
+   "h": 78,
+   "kind": "car_h",
+   "title": "Cardiac chest pain",
+   "lines": [
+    "rare, but do not miss it"
+   ]
+  },
+  {
+   "id": "sin_head_0_0",
+   "x": 1077,
+   "y": 278,
+   "w": 232,
+   "h": 78,
+   "kind": "sin_h",
+   "title": "Sinus tachycardia",
+   "lines": [
+    "or awareness of a normal rhythm"
+   ]
+  },
+  {
+   "id": "svt_head_0_0",
+   "x": 1321,
+   "y": 278,
+   "w": 232,
+   "h": 78,
+   "kind": "svt_h",
+   "title": "Supraventricular tachycardia (SVT)",
+   "lines": []
+  },
+  {
+   "id": "inn_hx_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 232,
+   "h": 116,
+   "kind": "inn_t",
+   "title": "No cardiac symptoms",
+   "lines": [
+    "• louder with high output: fever, infection"
+   ]
+  },
+  {
+   "id": "pat_hx_0_0",
+   "x": 289,
+   "y": 396,
+   "w": 232,
+   "h": 116,
+   "kind": "pat_t",
+   "title": "± cardiac symptoms",
+   "lines": [
+    "• or a FAMILY history"
+   ]
+  },
+  {
+   "id": "msk_hx_0_0",
+   "x": 561,
+   "y": 396,
+   "w": 232,
+   "h": 116,
+   "kind": "msk_t",
+   "title": "Random, even AT REST",
+   "lines": [
+    "• worse breathing in or moving",
+    "• eased by rest, distraction, time"
+   ]
+  },
+  {
+   "id": "car_hx_0_0",
+   "x": 805,
+   "y": 396,
+   "w": 232,
+   "h": 116,
+   "kind": "car_t",
+   "title": "With EXERCISE, and only exercise",
+   "lines": [
+    "• predictable by exertion",
+    "• eased by rest ONLY"
+   ]
+  },
+  {
+   "id": "sin_hx_0_0",
+   "x": 1077,
+   "y": 396,
+   "w": 232,
+   "h": 116,
+   "kind": "sin_t",
+   "title": "SLOW onset and offset (> 10–30 s)",
+   "lines": [
+    "• < 150–180 bpm at rest",
+    "• presyncope or dyspnea come FIRST"
+   ]
+  },
+  {
+   "id": "svt_hx_0_0",
+   "x": 1321,
+   "y": 396,
+   "w": 232,
+   "h": 116,
+   "kind": "svt_t",
+   "title": "ABRUPT onset and offset (1–5 s)",
+   "lines": [
+    "• > 200 bpm, too fast to count",
+    "• presyncope, chest pain, dyspnea FOLLOW"
+   ]
+  },
+  {
+   "id": "inn_ex_0_0",
+   "x": 45,
+   "y": 552,
+   "w": 232,
+   "h": 123,
+   "kind": "inn_w",
+   "title": "Sounds like",
+   "lines": [
+    "• mid-systolic (venous hum: continuous)",
+    "• grade 1–3, NEVER a thrill",
+    "• soft, MUSICAL, vibratory"
+   ]
+  },
+  {
+   "id": "inn_ex_1_0",
+   "x": 45,
+   "y": 697,
+   "w": 232,
+   "h": 69,
+   "kind": "inn_w",
+   "title": "LOUDER lying down",
+   "lines": [
+    "~venous hum: GOES when supine"
+   ]
+  },
+  {
+   "id": "pat_ex_0_0",
+   "x": 289,
+   "y": 552,
+   "w": 232,
+   "h": 114,
+   "kind": "pat_w",
+   "title": "Sounds like",
+   "lines": [
+    "• holosystolic, DIASTOLIC or continuous",
+    "• grade 1 up to 6",
+    "• HARSH, rarely musical"
+   ]
+  },
+  {
+   "id": "pat_ex_1_0",
+   "x": 289,
+   "y": 688,
+   "w": 232,
+   "h": 78,
+   "kind": "pat_w",
+   "title": "Associated findings",
+   "lines": [
+    "extra heart sounds, abnormal palpation"
+   ]
+  },
+  {
+   "id": "msk_ex_0_0",
+   "x": 561,
+   "y": 552,
+   "w": 232,
+   "h": 214,
+   "kind": "msk_w",
+   "title": "Reproducible",
+   "lines": [
+    "• DISCRETE spot, often sharp",
+    "• normal heart exam"
+   ]
+  },
+  {
+   "id": "car_ex_0_0",
+   "x": 805,
+   "y": 552,
+   "w": 232,
+   "h": 214,
+   "kind": "car_w",
+   "title": "NOT reproducible",
+   "lines": [
+    "• vague, crushing, squeezing",
+    "• ± murmur or extra sounds"
+   ]
+  },
+  {
+   "id": "sin_ex_0_0",
+   "x": 1077,
+   "y": 552,
+   "w": 232,
+   "h": 96,
+   "kind": "sin_w",
+   "title": "1 · Resting ECG normal",
+   "lines": []
+  },
+  {
+   "id": "sin_ex_1_0",
+   "x": 1077,
+   "y": 670,
+   "w": 232,
+   "h": 96,
+   "kind": "sin_w",
+   "title": "2 · Monitor: sinus captured",
+   "lines": []
+  },
+  {
+   "id": "svt_ex_0_0",
+   "x": 1321,
+   "y": 552,
+   "w": 232,
+   "h": 86,
+   "kind": "svt_w",
+   "title": "1 · Resting ECG",
+   "lines": [
+    "may show Wolff-Parkinson-White (WPW)"
+   ]
+  },
+  {
+   "id": "svt_ex_1_0",
+   "x": 1321,
+   "y": 660,
+   "w": 232,
+   "h": 106,
+   "kind": "svt_w",
+   "title": "2 · CAPTURE it: ECG during symptoms",
+   "lines": [
+    "Holter 24–48 h, or a 3–8 week monitor"
+   ]
+  },
+  {
+   "id": "inn_next_0_0",
+   "x": 45,
+   "y": 806,
+   "w": 232,
+   "h": 150,
+   "kind": "ok",
+   "title": "Normal exam + normal tests",
+   "lines": []
+  },
+  {
+   "id": "pat_next_0_0",
+   "x": 289,
+   "y": 806,
+   "w": 232,
+   "h": 150,
+   "kind": "bad",
+   "title": "Work it up as CHD",
+   "lines": [
+    "see the CONGENITAL HEART DISEASE chart"
+   ]
+  },
+  {
+   "id": "msk_next_0_0",
+   "x": 561,
+   "y": 806,
+   "w": 232,
+   "h": 150,
+   "kind": "ok",
+   "title": "Non-cardiac causes",
+   "lines": [
+    "• musculoskeletal: precordial catch, slipping rib",
+    "• asthma",
+    "• reflux, anxiety"
+   ]
+  },
+  {
+   "id": "car_next_0_0",
+   "x": 805,
+   "y": 806,
+   "w": 232,
+   "h": 150,
+   "kind": "bad",
+   "title": "SYNCOPE is most worrying",
+   "lines": [
+    "• inflammation: pericarditis, myocarditis",
+    "• demand: cardiomyopathy, outflow obstruction",
+    "• coronary anomaly, aortic dissection"
+   ]
+  },
+  {
+   "id": "sin_next_0_0",
+   "x": 1077,
+   "y": 806,
+   "w": 232,
+   "h": 150,
+   "kind": "ok",
+   "title": "Find the cause",
+   "lines": [
+    "• exercise, anxiety",
+    "• dehydration, standing",
+    "• hyperthyroid"
+   ]
+  },
+  {
+   "id": "svt_next_0_0",
+   "x": 1321,
+   "y": 806,
+   "w": 232,
+   "h": 150,
+   "kind": "bad",
+   "title": "SVT captured",
+   "lines": [
+    "see the TACHYCARDIA chart"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_mur",
+   "path": "M799.0 88V113H283.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_cp",
+   "path": "M799.0 88V113H799.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_pal",
+   "path": "M799.0 88V113H1315.0V138"
+  },
+  {
+   "from": "inn_ex_0_0",
+   "to": "inn_ex_1_0"
+  },
+  {
+   "from": "pat_ex_0_0",
+   "to": "pat_ex_1_0"
+  },
+  {
+   "from": "sin_ex_0_0",
+   "to": "sin_ex_1_0"
+  },
+  {
+   "from": "svt_ex_0_0",
+   "to": "svt_ex_1_0"
+  },
+  {
+   "from": "inn_head_0_0",
+   "to": "inn_hx_0_0"
+  },
+  {
+   "from": "inn_hx_0_0",
+   "to": "inn_ex_0_0"
+  },
+  {
+   "from": "inn_ex_1_0",
+   "to": "inn_next_0_0"
+  },
+  {
+   "from": "g_mur",
+   "to": "inn_head_0_0",
+   "from_dx": -122,
+   "label": "normal heart",
+   "label_at": [
+    161.0,
+    238
+   ]
+  },
+  {
+   "from": "pat_head_0_0",
+   "to": "pat_hx_0_0"
+  },
+  {
+   "from": "pat_hx_0_0",
+   "to": "pat_ex_0_0"
+  },
+  {
+   "from": "pat_ex_1_0",
+   "to": "pat_next_0_0"
+  },
+  {
+   "from": "g_mur",
+   "to": "pat_head_0_0",
+   "from_dx": 122,
+   "label": "abnormal",
+   "label_at": [
+    405.0,
+    238
+   ]
+  },
+  {
+   "from": "msk_head_0_0",
+   "to": "msk_hx_0_0"
+  },
+  {
+   "from": "msk_hx_0_0",
+   "to": "msk_ex_0_0"
+  },
+  {
+   "from": "msk_ex_0_0",
+   "to": "msk_next_0_0"
+  },
+  {
+   "from": "g_cp",
+   "to": "msk_head_0_0",
+   "from_dx": -122,
+   "label": "random, sharp",
+   "label_at": [
+    677.0,
+    238
+   ]
+  },
+  {
+   "from": "car_head_0_0",
+   "to": "car_hx_0_0"
+  },
+  {
+   "from": "car_hx_0_0",
+   "to": "car_ex_0_0"
+  },
+  {
+   "from": "car_ex_0_0",
+   "to": "car_next_0_0"
+  },
+  {
+   "from": "g_cp",
+   "to": "car_head_0_0",
+   "from_dx": 122,
+   "label": "exertional",
+   "label_at": [
+    921.0,
+    238
+   ]
+  },
+  {
+   "from": "sin_head_0_0",
+   "to": "sin_hx_0_0"
+  },
+  {
+   "from": "sin_hx_0_0",
+   "to": "sin_ex_0_0"
+  },
+  {
+   "from": "sin_ex_1_0",
+   "to": "sin_next_0_0"
+  },
+  {
+   "from": "g_pal",
+   "to": "sin_head_0_0",
+   "from_dx": -122,
+   "label": "gradual",
+   "label_at": [
+    1193.0,
+    238
+   ]
+  },
+  {
+   "from": "svt_head_0_0",
+   "to": "svt_hx_0_0"
+  },
+  {
+   "from": "svt_hx_0_0",
+   "to": "svt_ex_0_0"
+  },
+  {
+   "from": "svt_ex_1_0",
+   "to": "svt_next_0_0"
+  },
+  {
+   "from": "g_pal",
+   "to": "svt_head_0_0",
+   "from_dx": 122,
+   "label": "abrupt",
+   "label_at": [
+    1437.0,
+    238
+   ]
+  }
+ ],
+ "panels": []
+}

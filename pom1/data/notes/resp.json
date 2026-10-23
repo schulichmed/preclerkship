@@ -1,0 +1,2412 @@
+{
+ "block": "resp",
+ "weeks": [
+  {
+   "n": 6,
+   "label": "Week 6 - Lung Mechanics, Obstructive Disease & the Upper Airway",
+   "lectures": [
+    {
+     "id": "resp-w6-01",
+     "num": "01",
+     "name": "Histology of the Lungs and Airway",
+     "hasNote": false,
+     "coveredBy": {
+      "num": "02",
+      "name": "Gas Exchange and Hypoxia",
+      "key": "resp-w7-02"
+     }
+    },
+    {
+     "id": "resp-w6-02",
+     "num": "02",
+     "name": "Anatomy of the Lungs and Thorax",
+     "hasNote": false
+    },
+    {
+     "id": "resp-w6-03",
+     "num": "03",
+     "name": "Lung Physiology - Ventilation",
+     "hasNote": true,
+     "title": "Ventilation, Lung Mechanics, Gas Transport and ABGs",
+     "framing": "<p>How air gets in and out (compliance, surface tension), how much of it reaches gas exchange (dead space, V/Q), and how the result is measured — <strong>PFTs</strong> for the mechanics and the <strong>ABG</strong> for the gases. The organising idea: <strong>obstruction traps air (↓ FEV1/FVC, ↑ volumes); restriction shrinks the lung (normal/↑ ratio, ↓ volumes)</strong>.</p>",
+     "keypoints": "<p><strong>FEV1/FVC &lt; 0.7 = obstruction</strong>; static volumes then split hyperinflation (&gt; 120%) from restriction (&lt; 80%), and <strong>DLCO separates parenchymal (↓) from extraparenchymal (normal) restriction</strong>. <strong>Shunt (V/Q = 0) does NOT correct with 100% O2; dead space (V/Q = ∞, e.g. PE) does.</strong> Surfactant ↓ surface tension (Laplace ΔP = 2Υ/r) so small alveoli do not collapse. <strong>Right shift = ↓ affinity, ↑ unloading</strong> (↑ H+, temperature, PCO2, 2,3-BPG). CO2 travels mostly as <strong>bicarbonate (70%)</strong>. The body never overcompensates; lungs compensate in minutes, kidneys in a day.</p>",
+     "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/61d9acfbdeb4.svg",
+       "alt": "pulmonary function tests overview.svg",
+       "w": 1124,
+       "h": 872,
+       "interactive": "charts/resp-w6-03_2/"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Ventilation — moving air in and out of the lung</h5><p><strong>Inspiration</strong> — active; contraction of the inspiratory muscles</p><ul><li><strong>Diaphragm</strong> — phrenic nerves (C3-5); referred pain to shoulder and trapezius ridge</li><li><strong>External intercostals</strong> — intercostal nerves</li><li>↑ thoracic cavity volume → ↑ negative intrapleural pressure → lung expands → intrapulmonary pressure -1 mm Hg → <strong>air flows in</strong></li></ul><p><strong>Expiration</strong> — <strong>passive</strong>; elastic recoil of lung and chest wall to their equilibrium positions</p><ul><li>Becomes <strong>active</strong> during exercise and voluntary hyperventilation, using:</li><li>Abdominal wall muscles (rectus abdominis, internal and external obliques, transversus abdominis)</li><li>Internal intercostals</li></ul>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Compliance and surface tension</h5><p><strong>Pulmonary compliance = ΔV / ΔP</strong>; normal = 22 mL/cm H2O</p><ul><li><strong>↑ compliance</strong> = lung easier to fill — emphysema, older adults</li><li><strong>↓ compliance</strong> = lung harder to fill — pulmonary fibrosis, pneumonia, pulmonary edema, ARDS</li></ul><p><strong>Pressure-volume (PV) curves</strong> — non-linear; lungs most compliant between 10-20 mm Hg</p><ul><li><strong>Hysteresis</strong>: inflation and deflation curves differ because of surface tension forces during inflation — ↑ volume during deflation</li><li>1/3 of the pressure to fill the lung overcomes elastic forces; <strong>2/3 overcomes surface tension</strong> at the air-liquid interface</li></ul><p><strong>Law of Laplace: ΔP = 2Υ / r</strong> (Υ = surface tension, r = radius)</p><ul><li>Small lung volumes = small r = small Υ; large lung volumes = large r = large Υ</li><li>When surface tension is high, alveoli collapse easily, especially when the radius is small</li><li><strong>Surfactant</strong> forms a lipid film at the air-liquid interface → ↓ surface tension → ↓ alveolar collapse, ↓ lung recoil, ↑ compliance</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Volume or capacity",
+        "Definition"
+       ],
+       "rows": [
+        [
+         "<strong>Volumes</strong>",
+         "Inspiratory reserve volume (IRV)",
+         "Air that can be forcibly inhaled after a normal inspiration"
+        ],
+        [
+         "",
+         "Tidal volume (TV, VT)",
+         "Air inhaled with each quiet breath; <strong>normal = 500 mL</strong>"
+        ],
+        [
+         "",
+         "Expiratory reserve volume (ERV)",
+         "Air that can be forcibly exhaled after a normal expiration"
+        ],
+        [
+         "",
+         "Residual volume (RV)",
+         "Air remaining in the lungs after maximal expiration"
+        ],
+        [
+         "<strong>Capacities</strong><br>(sum of ≥ 2 volumes)",
+         "Inspiratory capacity (IC) = <strong>IRV + TV</strong>",
+         "Air that can be breathed in after a normal expiration"
+        ]
+       ],
+       "lead": "<p><strong>Lung volumes and capacities</strong></p>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/2c78c2254316.png",
+       "alt": "Spirogram showing IRV, TV, ERV and RV with the capacities IC, FRC, VC and TLC",
+       "cap": "Spirogram of the lung volumes. Read the capacities off the bars: FRC = ERV + RV, VC = IRV + TV + ERV, TLC = VC + RV."
+      },
+      {
+       "t": "list",
+       "html": "<h5>Minute and alveolar ventilation</h5><ul><li><strong>Minute ventilation (VE)</strong> — air entering the lungs per minute: <strong>VE = VT × RR</strong>; normal = 500 × 12 = 6000 mL</li><li><strong>Alveolar ventilation (VA)</strong> — air entering the respiratory zone per minute:<br>VA = (VT − VD) × RR<br>VA = VE × (1 − VD/VT)<br>VA = (VCO2 × 0.863) / PACO2</li><li>VA changes with changes in VT and RR <strong>even at the same minute ventilation</strong></li></ul><h5>Physiologic dead space (VD) — inspired air that does NOT take part in gas exchange</h5><ul><li>Anatomic dead space + alveolar dead space; normal = 150 mL</li><li>Equals anatomic dead space in normal lungs; may be greater in lung disease with V/Q mismatch</li><li>The <strong>apex</strong> of healthy lungs is the largest contributor of alveolar dead space</li><li><strong>Bohr equation: VD = VT × (PaCO2 − PECO2) / PaCO2</strong>, where PECO2 = expired air PCO2</li></ul>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Ventilation-perfusion (V/Q)</h5><ul><li><strong>Ventilation (V)</strong> — gas going into the alveoli; <strong>perfusion (Q)</strong> — blood flow to the alveoli</li><li>Ideal V/Q = 1; <strong>normal V/Q = 0.8</strong></li><li><strong>V/Q = 0 — airway obstruction (shunt)</strong>: V = 0, so 100% O2 does NOT improve PaO2</li><li><strong>V/Q = ∞ — blood obstruction (physiological dead space)</strong>: Q = 0, 100% O2 improves PaO2 — pulmonary embolism</li></ul>"
+      },
+      {
+       "t": "callout",
+       "kind": "note",
+       "title": "Shunt vs dead space on 100% O2",
+       "html": "<p><strong>Shunt (V/Q = 0) does not respond to supplemental O2</strong> — the added oxygen never reaches the unventilated alveoli. Dead space (V/Q = ∞, e.g. PE) does improve.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Zone",
+        "Pressures",
+        "V and Q",
+        "V/Q",
+        "Alveoli"
+       ],
+       "rows": [
+        [
+         "<strong>Zone 1</strong> (apex)",
+         "PA &gt; Pa &gt; Pv",
+         "↓ V, ↓↓ Q",
+         "<strong>↑ V/Q = 3</strong> — wasted ventilation, lack of perfusion",
+         "Large"
+        ],
+        [
+         "<strong>Zone 2</strong> (middle)",
+         "Pa &gt; PA &gt; Pv",
+         "—",
+         "V/Q = 1",
+         "—"
+        ],
+        [
+         "<strong>Zone 3</strong> (base)",
+         "Pa &gt; Pv &gt; PA",
+         "↑ V, ↑↑ Q",
+         "<strong>↓ V/Q = 0.6</strong> — wasted perfusion, lack of ventilation",
+         "Small"
+        ]
+       ],
+       "lead": "<p><strong>West zones of the lung</strong> (PA = alveolar, Pa = arterial, Pv = venous pressure)</p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Pulmonary function tests</h5><p><strong>Spirometry</strong> measures lung volumes and function; <strong>body plethysmography</strong> (body box) is based on Boyle's law (P1V1 = P2V2)</p><ul><li><strong>Indications</strong>: diagnosis of <strong>dyspnea or cough NYD</strong>, prognosis and severity (obstructive, restrictive), monitoring treatment response</li><li><strong>Contraindications</strong>: aneurysms (cerebral &gt; thoracic, abdominal), pneumothorax, recent brain or eye surgery, severe hypertension (&gt; 200/120), recent MI/arrhythmias, stress/strain syncope</li><li><strong>Effort-dependent</strong>: maximal inspiration (FVC) and rapid expiration (FEV1) with prolonged expiratory effort; nose clipped</li><li>Standardized by age, sex, height and ethnicity</li></ul><h5>What is measured</h5><ul><li><strong>FEV1</strong> — fraction of VC expired in 1 second; normal = 80% VC</li><li><strong>FVC</strong> — maximum volume forcibly exhaled after maximal inspiration</li><li><strong>FEV1/FVC (Tiffeneau-Pinelli index)</strong> — defines obstructive lung disease</li><li><strong>Static lung volumes</strong>: most people breathe at 50% (highest compliance); <strong>hyperinflation &gt; 120%</strong> (↑ RV, gas trapping); <strong>restriction &lt; 80%</strong> — parenchymal (lung) or extraparenchymal (diaphragm, chest wall, pleura)</li><li><strong>Diffusion capacity (DLCO)</strong> — conductance of CO from inspired gas to RBCs (CO has a much higher affinity than O2)</li></ul><h5>DLCO details</h5><ul><li>KCO = DLCO/VA; normal &gt; 75%</li><li><strong>↓ CO uptake = parenchymal pathology</strong>; <strong>↓ perfusion, thickened membrane, ↑ volume, ↑ surface area</strong></li><li><strong>Isolated DLCO abnormalities</strong>: anemia (no RBCs to take up CO), pulmonary vascular disorders (PE, pulmonary hypertension), early ILD (not enough to cause restriction), non-obstructive emphysema, early pneumonia</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/6dd0be16021e.png",
+       "alt": "Spirometry volume-time curve with FEV1 4 L and FVC 5 L",
+       "cap": "Volume-time curve: FEV1 = 4 L of an FVC of 5 L gives FEV1/FVC = 0.8 (normal)."
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/36613af2acf8.png",
+       "alt": "Normal flow-volume loop",
+       "cap": "Normal flow-volume loop: peak expiratory flow (PEF) early, expiratory curve down to FVC, inspiratory curve below the axis."
+      },
+      {
+       "t": "list",
+       "html": "<h5>PFT interpretation — three steps</h5><ol><li><strong>Spirometry</strong>: FEV1/FVC ratio — look at the actual values</li><li><strong>Static lung volumes</strong>: hyperinflated (&gt; 120%) or restricted (&lt; 80%) — parenchymal or extraparenchymal</li><li><strong>Diffusion capacity</strong>: reduced or preserved — localizes the anatomical restriction</li></ol>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Obstructive",
+        "Restrictive"
+       ],
+       "rows": [
+        [
+         "<strong>Volumes</strong>",
+         "↑ FRC, ↑ RV (gas trapping, breath stacking, hyperinflation), ↑ TLC",
+         "↓ FRC, ↓ RV, ↓ TLC"
+        ],
+        [
+         "<strong>Spirometry</strong>",
+         "↓↓ FEV1, ↓ FVC, <strong>↓ FEV1/FVC &lt; 0.7</strong>",
+         "↓ FEV1, ↓ FVC, <strong>normal or ↑ FEV1/FVC</strong>"
+        ],
+        [
+         "<strong>Consequence</strong>",
+         "V/Q mismatch",
+         "Short, shallow breaths"
+        ],
+        [
+         "<strong>Examples</strong>",
+         "<strong>COPD</strong> (emphysema, chronic bronchitis), bronchiectasis, asthma, cystic fibrosis",
+         "<strong>Pulmonary = ILD (↓ DLCO)</strong>: IPF, sarcoidosis, GPA, drug toxicity, pneumonia, ARDS<br><strong>Extrapulmonary = altered mechanics (normal DLCO)</strong>: neuromuscular (polio, myasthenia gravis, Guillain-Barré, ALS); chest wall (scoliosis, severe obesity, ascites)"
+        ]
+       ],
+       "lead": "<p><strong>Obstructive vs restrictive lung disease</strong></p>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/c7fe26e40ac3.jpg",
+       "alt": "Obstructive, normal and restrictive flow-volume loops",
+       "cap": "Flow-volume loops: obstruction scoops the expiratory limb and shifts the loop left (higher volumes); restriction makes a narrow loop shifted right (lower volumes)."
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Compartment",
+        "PO2 (mm Hg)",
+        "PCO2 (mm Hg)"
+       ],
+       "rows": [
+        [
+         "<strong>Inspired gas</strong>",
+         "158",
+         "0.3"
+        ],
+        [
+         "<strong>Alveolar gas</strong> (H2O added, dilution with FRC)",
+         "100",
+         "40"
+        ],
+        [
+         "<strong>Expired gas</strong> (dilution with dead space)",
+         "116",
+         "32"
+        ],
+        [
+         "<strong>Arteries</strong>",
+         "95",
+         "40"
+        ],
+        [
+         "<strong>Veins</strong> (plasma), after tissue O2 uptake",
+         "40",
+         "46"
+        ]
+       ],
+       "lead": "<p><strong>Partial pressures along the path</strong> — O2 and CO2 diffuse down these gradients between alveoli and blood, and blood and tissue.</p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Oxygen transport</h5><ul><li><strong>Bound to Hb (major)</strong> — 4 subunits (2 α, 2 β), each heme binds 1 O2 (4 O2 total)<ul><li><strong>1 g Hb = 1.34 mL O2</strong>; 15 g Hb/100 mL → 20.1 mL O2 bound to Hb</li><li>Oxygenated Hb: high affinity (relaxed configuration) — positive cooperativity</li><li>Deoxygenated Hb: low affinity (tense configuration)</li><li>Myoglobin: higher affinity than Hb; monomer with 1 heme</li></ul></li><li><strong>Dissolved (minor)</strong> — Henry's law: concentration = pressure × solubility; <strong>0.3 mL O2/100 mL</strong>, not adequate for tissue demand</li></ul><h5>O2-Hb dissociation curve — sigmoidal</h5><ul><li>Lung PO2 = 100 mm Hg, saturation = 97.5%; a small drop in alveolar PO2 still allows adequate saturation</li><li>The steep portion lets tissue extract large amounts of O2 with a relatively small drop in PO2</li><li><strong>Right shift</strong>: ↓ affinity, ↑ unloading — ↓ pH (↑ H+), ↑ temperature, ↑ PCO2, ↑ 2,3-BPG; exercise</li><li><strong>Left shift</strong>: ↑ affinity, ↓ unloading — ↑ pH (↓ H+), ↓ temperature, ↓ PCO2, ↓ 2,3-BPG; pregnancy (fetal Hb has ↑ O2 affinity)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/6cd7993a096c.png",
+       "alt": "Oxygen binding curves for myoglobin, normal Hb, 50% CO-Hb and anemia",
+       "cap": "O2 content curves: myoglobin saturates at very low PO2; anemia (50% Hb) halves capacity but keeps the shape; 50% CO-Hb both halves capacity and shifts the curve left."
+      },
+      {
+       "t": "list",
+       "html": "<h5>Carbon dioxide transport</h5><ul><li><strong>Bicarbonate (70%)</strong> — HCO3- diffuses into plasma; Cl- enters the RBC to maintain electroneutrality (chloride shift)</li><li><strong>Bound to Hb (20%)</strong> — in the RBC, H+ binds deoxygenated Hb (HHb), which binds CO2 → carbamino-Hb</li><li><strong>Dissolved (10%)</strong> — Henry's law; CO2 is 20× more soluble in blood than O2</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/1f3372ae4b87.jpg",
+       "alt": "CO2 transport in the red blood cell",
+       "cap": "CO2 from tissue: most is converted by carbonic anhydrase to H+ + HCO3- (HCO3- exits in exchange for Cl-), some binds Hb, a little stays dissolved."
+      },
+      {
+       "t": "list",
+       "html": "<h5>Hypoxia vs hypoxemia</h5><ul><li><strong>Hypoxia</strong> — ↓ O2 delivery to tissues; SpO2 = 88-92% (normal SpO2 = 95+%)</li><li><strong>Hypoxemia</strong> — <strong>↓ PaO2 (&lt; 80 mm Hg)</strong>, insufficient oxygenation of blood; O2 is not reaching the alveoli or not diffusing from alveoli to blood</li><li><strong>Hyperventilation = low PaCO2</strong>; <strong>hypoventilation = high PaCO2</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Step",
+        "Look at",
+        "Normal"
+       ],
+       "rows": [
+        [
+         "1",
+         "History and physical",
+         "—"
+        ],
+        [
+         "2",
+         "<strong>pH</strong>: acidemia (↓) or alkalemia (↑)",
+         "7.4 (7.38-7.42)"
+        ],
+        [
+         "3",
+         "<strong>PaO2</strong>: hypoxemia (↓)",
+         "80-100"
+        ],
+        [
+         "4",
+         "<strong>PaCO2</strong>: hypoventilation (↑) or hyperventilation (↓); respiratory or metabolic",
+         "40 (38-42)"
+        ],
+        [
+         "5",
+         "<strong>HCO3-</strong>: respiratory or metabolic",
+         "24 (22-26)"
+        ],
+        [
+         "6",
+         "<strong>Compensation ratio</strong>: acute or chronic",
+         "—"
+        ]
+       ],
+       "lead": "<p><strong>ABG interpretation</strong> — acid-base status + oxygenation</p>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/0a286dae0820.jpg",
+       "alt": "Assessment of acid-base disturbances flowchart",
+       "cap": "Acid-base algorithm with the expected compensation ratios for each primary disorder, acute and chronic."
+      },
+      {
+       "t": "list",
+       "html": "<h5>Compensation rules</h5><ul><li>The body <strong>never overcompensates</strong></li><li><strong>Lungs compensate faster (5-10 min) than kidneys (24 h)</strong></li><li><strong>SMORE</strong> (compare PaCO2 and pH): same direction = metabolic, opposite direction = respiratory</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Disorder",
+        "Causes"
+       ],
+       "rows": [
+        [
+         "<strong>Respiratory acidosis</strong> (hypoventilation)",
+         "COPD, asthma, sleep apnea, scoliosis, cardio exercise"
+        ],
+        [
+         "<strong>Respiratory alkalosis</strong> (hyperventilation)",
+         "Panic/anxiety attacks, trauma, pulmonary embolism"
+        ],
+        [
+         "<strong>Metabolic acidosis</strong>",
+         "Alcohol poisoning, liver failure, hypoglycemia, diabetic ketoacidosis"
+        ],
+        [
+         "<strong>Metabolic alkalosis</strong>",
+         "Prolonged emesis, diuretics/dehydration, hypokalemia"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<h5>Regulation of respiration</h5><p>Spontaneous respiration comes from rhythmic discharges of the motor neurons to the respiratory muscles.</p><ul><li><strong>Voluntary control</strong> — influences ventilation within limits: cerebral cortex → corticospinal tract → spinal neurons</li><li><strong>Automatic control</strong> — keeps blood PO2 and PCO2 in the normal range; three parts:</li></ul><p><strong>1. Respiratory muscles</strong> — receive impulses from the controller</p><p><strong>2. Central controller</strong> — coordinates and responds to receptor input</p><ul><li><strong>Inspiratory area</strong>: dorsal medulla; inspiratory drive — inherent rhythmic excitability</li><li><strong>Pneumotaxic center</strong>: pons; limits the duration of the inspiratory drive — inhibits inspiration</li><li><strong>Apneustic center</strong>: lower pons; prevents termination of the inspiratory drive — stimulates inspiration</li><li><strong>Expiratory area</strong>: ventral medulla; dormant during quiet breathing — forced expiration</li></ul><p><strong>3. Receptors</strong> — report blood gases and other factors</p><ul><li><strong>Central chemoreceptors</strong>: medulla; respond to <strong>blood PCO2</strong> (via change in H+)</li><li><strong>Peripheral chemoreceptors</strong>: carotid and aortic bodies; respond to <strong>blood PO2</strong> (&lt; 60 mm Hg = ↑ RR and VT)</li><li><strong>Lung receptors</strong>: pulmonary stretch (overdistention = ↓ RR), irritant (dust, cigarette smoke)</li><li><strong>Other</strong>: nose and upper airway (chemical, mechanical), joint and muscle (exercise), pain and temperature</li></ul><h5>Responses</h5><ul><li>Responses to <strong>PaCO2 are rapid and sensitive</strong> — ↑ PaCO2 = ↑ ventilation; ↓ PaCO2 = ↓ ventilation</li><li>Responses to PaO2 are less marked — important at high altitude and in certain clinical conditions</li><li>Combined PaCO2 + PaO2 changes can exceed the sum of the individual responses</li><li>During exercise, arterial PCO2, PO2 and pH stay relatively constant</li></ul>"
+      },
+      {
+       "t": "callout",
+       "kind": "tip",
+       "title": "Schulich Reviews",
+       "html": "<ul><li><strong>Bases are more compliant</strong> than the apex at FRC (apical alveoli already distended) → <strong>bases take most of the tidal volume</strong></li><li>Obstruction on spirometry: <strong>reverses with bronchodilator (FEV1 ↑ ≥ 12%) = asthma</strong>; does not reverse = COPD</li></ul>"
+      }
+     ],
+     "covers": [
+      {
+       "num": "04",
+       "name": "Pulmonary Function Testing",
+       "key": "resp-w6-04"
+      }
+     ]
+    },
+    {
+     "id": "resp-w6-04",
+     "num": "04",
+     "name": "Pulmonary Function Testing",
+     "hasNote": false,
+     "coveredBy": {
+      "num": "03",
+      "name": "Lung Physiology - Ventilation",
+      "key": "resp-w6-03"
+     }
+    },
+    {
+     "id": "resp-w6-05",
+     "num": "05",
+     "name": "Anatomy of the Upper Respiratory System",
+     "hasNote": false
+    },
+    {
+     "id": "resp-w6-06",
+     "num": "06",
+     "name": "Obstructive Lung Disease",
+     "hasNote": true,
+     "title": "Obstructive and Restrictive Lung Disease",
+     "framing": "<p>A disease-by-disease comparison of the <strong>obstructive</strong> lungs (emphysema, chronic bronchitis, asthma, bronchiectasis, CF) and the <strong>restrictive</strong> ones (IPF, sarcoidosis, GPA, ARDS, neuromuscular and chest wall). Read each column the same way — cause → pathology → presentation → diagnosis → treatment → prognosis — and the discriminating feature usually sits in the pathology row.</p>",
+     "keypoints": "<p><strong>Pink puffer (emphysema) = matched V/Q, ↓ DLCO; blue bloater (chronic bronchitis) = V/Q mismatch, normal DLCO.</strong> Chronic bronchitis = productive cough &gt; 3 months/year for &gt; 2 consecutive years. <strong>Asthma is reversible</strong> (≥ 12% FEV1 rise after bronchodilator); <strong>bronchiectasis is irreversible dilation</strong>. <strong>CF sweat Cl- &gt; 60 mmol/L</strong> (&gt; 30 under 3 months), confirmed by a second sweat test + mutation analysis. <strong>IPF: corticosteroids are NOT effective</strong> — antifibrotics slow it. ARDS = <strong>PaO2/FIO2 &lt; 300</strong>, not due to HF.</p>",
+     "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/ddedc07e9ec6.svg",
+       "alt": "obstructive lung disease overview.svg",
+       "w": 1084,
+       "h": 1362,
+       "interactive": "charts/resp-w6-06_2/"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Emphysema",
+        "Chronic bronchitis",
+        "Asthma",
+        "Bronchiectasis",
+        "Cystic fibrosis"
+       ],
+       "rows": [
+        [
+         "<strong>Causes</strong>",
+         "<strong>Smoking</strong> → centriacinar (proximal acinus)<br><strong>Hereditary α1-antitrypsin deficiency</strong> → panacinar (entire acinus)",
+         "<strong>Smoking</strong><br><strong>Viral</strong> &gt; bacterial",
+         "<strong>Risk factors</strong>: FHx of atopic dermatitis, asthma, allergic rhinitis; smoking/second-hand smoke<br><strong>Triggers</strong>: viral URIs, allergens, stress",
+         "Infection — <em>Pseudomonas aeruginosa</em><br>Obstruction<br>Smoking<br>Primary ciliary dyskinesia",
+         "Autosomal recessive defect in <strong>CFTR</strong> gene, long arm of chromosome 7<br><strong>ΔF508 in 80%</strong>; ~2000 mutations<br>Carrier rate = 1 in 25-30"
+        ],
+        [
+         "<strong>Pathology</strong>",
+         "Excess elastase or deficient α1-antitrypsin<br><strong>Progressive destruction of alveolar walls and surrounding interstitium</strong><br>Loss of elastic recoil, <strong>↑ compliance</strong>",
+         "Hyperplasia and hypertrophy of bronchial mucous glands<br><strong>Excessive mucus production</strong><br>↑ goblet cells (Reid index &gt; 50%)<br>Damaged cilia → impaired mucus clearance<br>Airway inflammation",
+         "Hyperplasia and hypertrophy of smooth muscle<br><strong>Hyperresponsive bronchi; reversible</strong><br><strong>Chronic airway inflammation</strong><br><strong>Type 1 hypersensitivity</strong><br>Curschmann spirals; mucus plugs<br>Charcot-Leyden crystals; eosinophilic",
+         "<strong>Irreversible dilation of the airways</strong><br>Repeated infection/inflammation destroys bronchi and bronchiole walls",
+         "CFTR = ATP-gated Cl- channel: secretes Cl- in lungs and GI tract, reabsorbs Cl- in sweat glands<br>↑ intracellular Cl- → compensatory ↑ Na+ reabsorption → ↑ H2O reabsorption, dehydration<br><strong>Impaired ciliary clearance</strong>"
+        ],
+        [
+         "<strong>Presentation</strong>",
+         "<strong>\"Pink puffer\"</strong> — matched V/Q<br>Chronic dyspnea ± cough<br>Tripoding, pursed-lip breathing<br>Prolonged expiration, wheezing",
+         "<strong>\"Blue bloater\"</strong> — V/Q mismatch<br>Productive cough with copious mucus and sputum<br>Dyspnea",
+         "Sudden-onset dyspnea<br>Wheezing, coughing<br>Chest tightness, chest pain",
+         "Cough<br>Daily purulent sputum<br>Recurrent infections<br>Hemoptysis",
+         "<strong>Inspissated mucus</strong><br>Allergic bronchopulmonary aspergillosis (ABPA)<br>Chronic bronchitis, bronchiectasis"
+        ],
+        [
+         "<strong>Dx</strong>",
+         "PEx: thin, resonant to percussion<br>CXR: ↑ AP diameter (barrel chest), flattened diaphragm<br><strong>↓ DLCO</strong><br><strong>Winnipeg criteria</strong> (COPD exacerbation): ↑ sputum volume, pus, dyspnea for &gt; 2 days",
+         "<strong>Productive cough &gt; 3 months/year for &gt; 2 consecutive years</strong><br>PEx: obese, clubbing<br>CXR: increased airway markings<br><strong>Normal DLCO</strong>",
+         "PEx: tachypnea<br>Spirometry<br>Methacholine challenge test<br>Normal or ↑ DLCO",
+         "PEx: localized crackles, clubbing<br>CXR: nonspecific abnormal findings",
+         "NBS: <strong>↑ immunoreactive trypsinogen</strong><br>PEx: nasal polyps, clubbing, RHF, DIOS/hepatobiliary disease, nutrition<br><strong>Pilocarpine sweat test</strong> (50-100 mg) — see below"
+        ],
+        [
+         "<strong>Tx</strong>",
+         "<strong>Smoking cessation</strong><br>Bronchodilators: <strong>LABA</strong>, <strong>LAMA</strong>, dual bronchodilators<br><strong>Inhaled corticosteroids</strong><br>Supplemental O2 (88-92%)<br>Lung transplant, palliative care",
+         "Smoking cessation<br><strong>Bronchodilators</strong><br><strong>Inhaled corticosteroids</strong><br>Chest physiotherapy<br>Supplemental O2/BiPAP PRN",
+         "<strong>Inhaled corticosteroids</strong><br>Beta agonists<br>Muscarinic antagonists<br>Antileukotrienes<br>Monoclonal antibodies: anti-IgE, anti-IL-5",
+         "Removal of foreign body/tumour<br>Bronchodilators — obstruction<br><strong>Antibiotics</strong> — infection<br>Bronchopulmonary drainage<br>Chest physiotherapy<br>DNase — CF patients",
+         "Chest physiotherapy<br>DNase — aerosolized dornase alfa<br>Inhaled hypertonic saline<br>Antibiotics — azithromycin<br><strong>Trikafta = ivacaftor + tezacaftor + elexacaftor</strong> ($450 000/year)<br><strong>Lung transplant (FEV1 &lt; 30%)</strong><br>mRNA therapy, gene transfer/editing"
+        ],
+        [
+         "<strong>Px</strong>",
+         "Lifelong and chronic<br>May coexist with chronic bronchitis",
+         "Hypoxemia ↑ risk of pulmonary hypertension and cor pulmonale<br>Secondary polycythemia",
+         "Lifelong or may improve with age<br>Avoid triggers<br><strong>Status asthmaticus can lead to death</strong>",
+         "Cor pulmonale can develop",
+         "Life expectancy = mid-50s; M &gt; F<br>Death most often from lung complications"
+        ]
+       ],
+       "lead": "<p><strong>Obstructive lung diseases</strong></p>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/a62787629d97.jpg",
+       "alt": "FEV1 as percent of value at age 25 against age, for never-smokers, smokers and quitters",
+       "cap": "FEV1 decline with age: a susceptible smoker falls toward disability and death; stopping at 45 or 65 restores a near-normal rate of decline but does not recover lost function."
+      },
+      {
+       "t": "list",
+       "html": "<h5>Asthma — diagnosis and control</h5><ul><li>Adults and children ≥ 6: spirometry showing <strong>reversible</strong> obstruction, or PEF variability, or a positive challenge test (see table)</li><li>Children 1-5: documented airflow obstruction + documented reversibility + no alternative diagnosis</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/f4263f64c0be.jpg",
+       "alt": "Table of pulmonary function criteria for the diagnosis of asthma in children 6 and over and adults",
+       "cap": "Pulmonary function criteria for asthma: reduced FEV1/FVC AND ≥ 12% FEV1 rise after bronchodilator (adults also ≥ 200 mL); alternatives are PEF variability or methacholine PC20 &lt; 4 mg/mL."
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/51d2bbceb84c.jpg",
+       "alt": "Operational diagnostic criteria for asthma in children one to five years of age",
+       "cap": "Children 1-5 years: diagnosis rests on documented obstruction and its reversibility (to SABA ± oral steroids, or a 3-month ICS trial), with no alternative diagnosis."
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Characteristic",
+        "Frequency/value"
+       ],
+       "rows": [
+        [
+         "Daytime symptoms",
+         "&lt; 4 days/week"
+        ],
+        [
+         "Night-time symptoms",
+         "&lt; 1 night/week"
+        ],
+        [
+         "Physical activity",
+         "Normal"
+        ],
+        [
+         "Exacerbations",
+         "Mild, infrequent"
+        ],
+        [
+         "Absence from work or school",
+         "None"
+        ],
+        [
+         "Need for fast-acting β2-agonist",
+         "&lt; 4 doses/week"
+        ],
+        [
+         "FEV1 or PEF",
+         "&gt; 90% personal best"
+        ],
+        [
+         "PEF diurnal variation",
+         "&lt; 10-15%"
+        ]
+       ],
+       "lead": "<p><strong>Asthma control criteria (Canadian Thoracic Society)</strong></p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Asthma predictive index — children 1-3 years</h5><ul><li><strong>≥ 4 wheezing episodes</strong> (&gt; 24 h) in the past year, at least 1 physician-confirmed, <strong>+ 1 major or 2 minor criteria</strong></li><li><strong>Major</strong>: parent with asthma; atopic dermatitis; allergic sensitization to ≥ 1 aeroallergen</li><li><strong>Minor</strong>: wheezing apart from colds; eosinophilia (≥ 4%); allergic sensitization to milk, egg or peanuts</li><li>It is <strong>NOT</strong> a test for who has asthma now or who should be treated — it predicts who will keep wheezing into school age</li></ul><h5>Pediatric respiratory red flags</h5><ul><li>Symptoms before 6 months of age</li><li>Productive daily cough</li><li>No benefit from medications</li><li>Acute onset with no previous history</li><li>Stridor</li><li>Coughing with drinking/eating — risk of aspiration</li><li>Asymmetric sounds and imaging — foreign body</li><li>Family history of CF</li><li>Constitutional symptoms — failure to thrive, digital clubbing</li></ul>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Cystic fibrosis — mechanism</h5><p>CFTR (ATP-gated Cl- channel) is defective, so mucus is dehydrated and cannot be cleared.</p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Cystic fibrosis — diagnosis</h5><ul><li>Newborn screen: <strong>↑ immunoreactive trypsinogen</strong></li><li><strong>Pilocarpine sweat test</strong> (50-100 mg): <strong>[Cl-] &gt; 60 mmol/L</strong> positive; <strong>&lt; 3 months: &gt; 30 mmol/L</strong>; <strong>borderline 30-60 mmol/L</strong></li><li>A positive test must be <strong>confirmed by another sweat test and a mutation analysis</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Class",
+        "CFTR defect"
+       ],
+       "rows": [
+        [
+         "I",
+         "No functional CFTR is made"
+        ],
+        [
+         "II",
+         "Protein misfolds and does not move to the cell surface"
+        ],
+        [
+         "III",
+         "Channel gate does not open properly"
+        ],
+        [
+         "IV",
+         "Function of the channel is faulty"
+        ],
+        [
+         "V",
+         "Insufficient quantities of CFTR protein; increased uptake/recycling"
+        ],
+        [
+         "VI",
+         "CFTR is off a lot"
+        ]
+       ],
+       "lead": "<p><strong>CF mutation classes</strong> — <strong>theratyping</strong> matches therapies to specific mutation types. <strong>Not much working CFTR is needed to prevent CF complications.</strong></p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>CF complications</h5><ul><li><strong>Pancreatic insufficiency</strong> → <strong>malabsorption + maldigestion</strong>, fat-soluble vitamin deficiencies (A, D, E, K)</li><li>GERD</li><li>CF-related diabetes</li><li>Biliary cirrhosis, liver disease</li><li><strong>Meconium ileus</strong> in newborns; distal intestinal obstruction syndrome (DIOS)</li><li>Males: infertility — <strong>absence of vas deferens</strong>; females: subfertility — amenorrhea, thick cervical mucus</li></ul><h5>Other conditions with a positive sweat test</h5><ul><li>Adrenal insufficiency</li><li>Anorexia</li><li>Atopic dermatitis, ectodermal dysplasia</li><li>Celiac disease</li><li>Environmental deprivation — failure to thrive</li><li>Familial cholestasis</li><li>G6P deficiency</li><li>Glycogen storage disease, mucopolysaccharidosis type 1</li><li>Hypoparathyroidism, hypothyroidism</li><li>Nephrogenic diabetes insipidus</li><li>Klinefelter syndrome</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "IPF",
+        "Sarcoidosis",
+        "GPA (Wegener)",
+        "ARDS",
+        "Neuromuscular / chest wall"
+       ],
+       "rows": [
+        [
+         "<strong>Causes</strong>",
+         "Unknown etiology<br><strong>Known ILD etiologies ruled out</strong><br>Associated with smoking, environmental pollutants, genetic defects",
+         "Unknown initial exposure<br>Often found in <strong>asymptomatic patients</strong> with large LNs on CXR",
+         "Unknown etiology",
+         "<strong>Sepsis</strong> (most common)<br>Aspiration pneumonia<br>Trauma<br>Pancreatitis<br>Transfusion-related acute lung injury",
+         "<strong>Neuromuscular</strong>: polio, myasthenia gravis, Guillain-Barré, ALS, diaphragmatic diseases<br><strong>Chest wall</strong>: scoliosis, severe obesity"
+        ],
+        [
+         "<strong>Pathology</strong>",
+         "Cytokine release → repeated cycles of inflammatory lung injury and wound healing<br>Collagen, scar tissue and inflammatory cells accumulate",
+         "Immune-mediated, widespread <strong>noncaseating granulomas</strong><br>Lungs involved in &gt; 90%",
+         "<strong>Autoimmune vasculitis</strong> of small and medium vessels, with surrounding granulomas — mainly upper respiratory tract, lungs, kidneys; also joints, skin, eyes, nervous system",
+         "Acute diffuse alveolar damage (type I pneumocytes, capillary endothelium)<br>Protein-rich fluid leaks into interstitium and alveoli<br>Hypoxemia — shunt, V/Q mismatch<br>Loss of surfactant, alveolar collapse",
+         "Diaphragm and accessory muscles fatigue → hypoventilation: more frequent shallow breaths, ↓ VA, ↑ PaCO2<br>Ineffective cough → ↓ secretion clearance, atelectasis, recurrent infections"
+        ],
+        [
+         "<strong>Presentation</strong>",
+         "Often <strong>40-70 years</strong><br><strong>Insidious onset</strong><br><strong>Progressive dyspnea</strong><br>Fatigue",
+         "African-American female in her <strong>30s</strong> with <strong>progressive dyspnea</strong> and <strong>non-productive cough</strong><br><strong>Constitutional symptoms</strong> common",
+         "Extremely varied<br>Cough, dyspnea, hemoptysis<br>Persistent rhinorrhea, bloody/purulent nasal discharge, nasal pain<br>Nephritic syndrome, eye/ear symptoms, arthritis",
+         "Acute-onset dyspnea<br>Tachypnea<br>Hypoxemia",
+         "Hypoxemia secondary to hypoventilation<br>Dyspnea, especially with exertion"
+        ],
+        [
+         "<strong>Dx</strong>",
+         "PEx: <strong>non-productive cough</strong>, <strong>bibasilar inspiratory crackles</strong>, <strong>clubbing</strong><br>CXR: <strong>honeycombing</strong>, peripheral reticular opacities<br><strong>Biopsy = gold standard</strong>: chronic inflammation; dilated bronchioles proximal to fibrotic alveoli; interstitial fibrosis",
+         "PEx: <strong>often normal lung function</strong><br>CXR: diffuse reticular densities, <strong>bilateral hilar lymphadenopathy</strong><br>Lab: hypercalcemia, hypercalciuria, hypergammaglobulinemia, ↑ serum ACE, ↑ CD4/CD8 in BAL fluid<br><strong>Biopsy required</strong> — lung, LN",
+         "CT: one or several nodules and infiltrates, often cavitating<br><strong>c-ANCA positive</strong> (anti-proteinase 3)<br>Biopsy: necrotizing granulomatous vasculitis",
+         "<strong>ARDS</strong>:<br><strong>A</strong>bnormal CXR — bilateral infiltrates, air bronchograms<br><strong>R</strong>espiratory failure within 1 week<br><strong>D</strong>ecreased PaO2/FIO2 &lt; 300<br><strong>S</strong>ymptoms of respiratory failure NOT due to HF/fluid overload",
+         "—"
+        ],
+        [
+         "<strong>Tx</strong>",
+         "<strong>Lung transplant</strong> — younger patients<br><strong>Antifibrotics: pirfenidone, nintedanib</strong> slow progression<br><strong>Corticosteroids are NOT effective</strong>",
+         "<strong>Many do NOT need treatment</strong><br><strong>Corticosteroids</strong> if symptomatic<br>Other immunosuppressants",
+         "<strong>Prednisone</strong><br>Cytotoxic agents: cyclophosphamide",
+         "Treat the underlying cause<br>Mechanical ventilation: ↓ TV, ↑ PEEP",
+         "Treat the underlying cause<br>Supplemental O2<br>Mechanical ventilation"
+        ],
+        [
+         "<strong>Px</strong>",
+         "Rapid progression; <strong>mean survival 4-5 years</strong><br>Respiratory failure, pulmonary hypertension, cor pulmonale",
+         "Varies widely: spontaneous resolution, persistent non-progressive symptoms, or widespread pulmonary fibrosis",
+         "Complete, long-term remission with proper treatment",
+         "<strong>High mortality (30-50%)</strong>, mostly from the underlying cause rather than the lung injury",
+         "Pulmonary hypertension and cor pulmonale<br>Progressive disease → chronic respiratory acidosis"
+        ]
+       ],
+       "lead": "<p><strong>Restrictive lung diseases</strong> — the first four are parenchymal (ILD, ↓ DLCO); the last is extraparenchymal (normal DLCO).</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Stage",
+        "CXR"
+       ],
+       "rows": [
+        [
+         "I",
+         "Bilateral hilar and mediastinal lymphadenopathy, <strong>no infiltrates</strong>"
+        ],
+        [
+         "II",
+         "Bilateral hilar lymphadenopathy <strong>+ lung infiltrates</strong>"
+        ],
+        [
+         "III",
+         "Lung infiltrates alone"
+        ],
+        [
+         "IV",
+         "End-stage upper lobe interstitial fibrosis"
+        ]
+       ],
+       "lead": "<p><strong>Radiographic stages of sarcoidosis</strong></p>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/4c732cd3a233.jpg",
+       "alt": "Chest X-ray, sarcoidosis example 1",
+       "cap": "Sarcoidosis CXR, first of four examples in stage order (I): bilateral hilar lymphadenopathy."
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/74e7d696c1fe.jpg",
+       "alt": "Chest X-ray, sarcoidosis example 2",
+       "cap": "Sarcoidosis CXR, second example (II): hilar lymphadenopathy with lung infiltrates."
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/67fb0fb606dd.png",
+       "alt": "Chest X-ray, sarcoidosis example 3",
+       "cap": "Sarcoidosis CXR, third example (III): infiltrates without adenopathy."
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/731ec8f37b68.jpg",
+       "alt": "Chest X-ray, sarcoidosis example 4",
+       "cap": "Sarcoidosis CXR, fourth example (IV): upper-lobe fibrosis."
+      },
+      {
+       "t": "callout",
+       "kind": "tip",
+       "title": "Schulich Reviews",
+       "html": "<ul><li>AECOPD, <strong>Anthonisen (Winnipeg) criteria</strong>: ↑ dyspnea, ↑ sputum volume, ↑ sputum purulence → <strong>all 3 = antibiotics</strong> (high likelihood of bacterial infection)</li></ul>"
+      }
+     ],
+     "covers": [
+      {
+       "num": "05",
+       "name": "Interstitial Causes of Dyspnea",
+       "key": "resp-w7-05"
+      }
+     ]
+    },
+    {
+     "id": "resp-w6-07",
+     "num": "07",
+     "name": "Respiratory Pharmacology",
+     "hasNote": true,
+     "title": "Other Common Respiratory Pathologies",
+     "framing": "<p>A tour of the conditions that round out respirology — hemoptysis, DVT/PE, mediastinal and pleural disease, atelectasis, pneumothorax and the Pancoast tumour. Two of them are <strong>algorithms worth knowing cold</strong>: hemoptysis (stabilize → investigate → treat the cause) and pleural effusion (Light's criteria split exudate from transudate).</p>",
+     "keypoints": "<p><strong>Hemoptysis: bleeding side DOWN</strong>, then find the source — <strong>bronchoscopy is the gold standard</strong>. The <strong>bronchial</strong> circulation is the high-pressure one. <strong>Light's criteria</strong>: fluid/serum protein &gt; 0.5, fluid/serum LDH &gt; 0.6, fluid LDH &gt; 2/3 upper limit of normal serum LDH → exudate. <strong>Tension pneumothorax</strong>: air enters but cannot exit → needle decompression. Mesothelioma = <strong>asbestos, not smoking</strong>. Anterior mediastinal masses = <strong>5 Ts</strong>. Pancoast tumour → Horner syndrome, hoarseness, SVC syndrome.</p>",
+     "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/ddedc07e9ec6.svg",
+       "alt": "obstructive lung disease overview.svg",
+       "w": 1084,
+       "h": 1362,
+       "interactive": "charts/resp-w6-06_2/"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Approach to hemoptysis</h5><ul><li>Amount/rate is variable: 100-650 mL over 24 hours; <strong>massive = 100 cc/hour</strong></li><li><strong>Pulmonary artery</strong> circulation = <strong>low-pressure</strong> — supplies lung parenchyma</li><li><strong>Bronchial artery</strong> circulation = <strong>high-pressure</strong> — supplies bronchi and visceral pleura</li></ul><p><strong>1. Stabilize the patient</strong> — vitals, IV access, group and screen; reverse anticoagulation (tranexamic acid)</p><ul><li>Position <strong>lateral decubitus, bleeding side down</strong></li><li>Endotracheal tube to place an endobronchial blocker; ventilate the elevated side</li><li>Control bleeding with argon plasma coagulation or catheter embolization</li></ul><p><strong>2. Investigate the cause</strong> — CXR, chest CT, arteriography, <strong>bronchoscopy = gold standard</strong> (direct visualization, sampling, biopsy)</p><p><strong>3. Treat the cause</strong> — see table</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Cause",
+        "Treatment"
+       ],
+       "rows": [
+        [
+         "Neoplasm",
+         "Radiation, surgery, chemotherapy"
+        ],
+        [
+         "Bronchitis",
+         "Rest, hydration, NSAIDs (<strong>no antibiotics</strong>)"
+        ],
+        [
+         "Bronchiectasis",
+         "Oral antibiotics for most cases"
+        ],
+        [
+         "Pneumonia",
+         "Antibiotics, antivirals, antifungals"
+        ],
+        [
+         "Pulmonary abscess",
+         "Antibiotics (1st line); incision/surgery if very large"
+        ],
+        [
+         "TB",
+         "<strong>RIPE</strong>: rifampin, isoniazid, pyrazinamide, ethambutol"
+        ],
+        [
+         "Pulmonary vasculitis (HHT)",
+         "Prednisone"
+        ]
+       ],
+       "lead": "<p><strong>Treating the cause of hemoptysis</strong></p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Deep vein thrombosis",
+        "Pulmonary embolism"
+       ],
+       "rows": [
+        [
+         "<strong>Definition</strong>",
+         "Clot within a deep vein (iliac, femoral, popliteal)",
+         "Obstruction of the pulmonary artery or its branches by material that originated elsewhere"
+        ],
+        [
+         "<strong>Cause</strong>",
+         "<strong>Virchow triad (SHE)</strong>: stasis, hypercoagulability, endothelial damage",
+         "—"
+        ],
+        [
+         "<strong>Presentation</strong>",
+         "Swelling, redness, warmth, pain",
+         "<strong>Sudden-onset dyspnea</strong>, pleuritic chest pain, tachypnea, tachycardia, hypoxemia, respiratory alkalosis"
+        ],
+        [
+         "<strong>Ix</strong>",
+         "<strong>D-dimer to rule out</strong>; compression ultrasound with Doppler",
+         "Pulmonary angiography; ECG (sinus tachycardia)"
+        ],
+        [
+         "<strong>Tx</strong>",
+         "Prophylaxis/acute: unfractionated heparin, LMWH (enoxaparin)<br>Long-term: DOACs (rivaroxaban, apixaban)",
+         "Anticoagulation: heparin, direct thrombin/factor Xa inhibitors"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<h5>Mediastinum and pleura</h5><ul><li><strong>Anterior mediastinal masses — 5 Ts</strong>: thyroid, thymus, thoracic aorta, terrible lymphoma, teratoma and germ cell tumours</li><li><strong>Mesothelioma</strong> — cancer of the mesothelium lining the lungs; may cause hemorrhagic pleural effusion or pleural thickening; associated with <strong>inhaled asbestos</strong>; <strong>tobacco smoking is NOT a risk factor</strong></li></ul><h5>Atelectasis — alveolar collapse</h5>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Type",
+        "Mechanism",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "<strong>Obstructive</strong>",
+         "Airway obstruction stops new air reaching distal airways",
+         "Foreign body, mucus plug, tumour"
+        ],
+        [
+         "<strong>Compressive</strong>",
+         "External compression ↓ lung volumes",
+         "Space-occupying lesion, pleural effusion"
+        ],
+        [
+         "<strong>Contraction</strong>",
+         "Scarring of parenchyma distorts alveoli",
+         "Sarcoidosis"
+        ],
+        [
+         "<strong>Adhesive</strong>",
+         "Lack of surfactant",
+         "NRDS in premature babies"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<h5>Pleural effusion — excess fluid in the pleural space</h5><ul><li><strong>Light's criteria</strong>: pleural fluid protein / serum protein &gt; 0.5; pleural fluid LDH / serum LDH &gt; 0.6; pleural fluid LDH &gt; 2/3 upper limit of normal serum LDH</li><li><strong>Exudate</strong>: cloudy (cellular) — infection, malignancy, connective tissue disease, lymphatic, trauma</li><li><strong>Transudate</strong>: clear (hypocellular) — ↑ hydrostatic pressure (HF, Na+ retention), ↓ oncotic pressure (cirrhosis)</li><li><strong>Tx</strong>: serial thoracentesis, indwelling pleural catheter, chest tube and talc pleurodesis (irritant to stick lung to chest wall)</li></ul>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Pneumothorax — air in the pleural space</h5><ul><li><strong>Signs</strong>: dyspnea, uneven chest expansion, chest pain, ↓ tactile fremitus, <strong>hyperresonance</strong>, diminished breath sounds on the affected side</li><li><strong>Primary spontaneous</strong>: rupture of apical subpleural bleb or cysts</li><li><strong>Secondary spontaneous</strong>: diseased lung; mechanical ventilation at high pressures (barotrauma)</li><li><strong>Traumatic</strong>: blunt (rib fracture), penetrating (gunshot), iatrogenic (central line placement, lung biopsy, barotrauma)</li><li><strong>Tension</strong>: any of the above; air enters the pleural space but cannot exit, so trapped air increases</li><li><strong>Tx</strong>: needle decompression, chest tube placement</li></ul>"
+      },
+      {
+       "t": "callout",
+       "kind": "red",
+       "title": "Tension pneumothorax",
+       "html": "<p>A one-way valve: air enters the pleural space and cannot leave. Treat with <strong>needle decompression</strong>, then a chest tube.</p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Pancoast (superior sulcus) tumour — carcinoma at the lung apex</h5><p>Pancoast syndrome from invasion/compression of local structures:</p><ul><li>Recurrent laryngeal nerve → hoarseness</li><li>Stellate ganglion → <strong>Horner syndrome</strong></li><li>SVC syndrome; brachiocephalic vein</li><li>Brachial plexus</li><li>Phrenic nerve → hemidiaphragm paralysis</li></ul>"
+      },
+      {
+       "t": "callout",
+       "kind": "tip",
+       "title": "Schulich Reviews",
+       "html": "<ul><li><strong>Spacer</strong> on an MDI: ↑ lung deposition, <strong>↓ systemic absorption</strong></li><li><strong>DPI</strong>: breath-actuated, less coordination, but needs a <strong>deep, forceful inspiration (≥ 60 L/min)</strong></li></ul>"
+      }
+     ],
+     "covers": [
+      {
+       "num": "05",
+       "name": "Pleura and Mediastinum Pathology",
+       "key": "resp-w8-05"
+      }
+     ]
+    },
+    {
+     "id": "resp-w6-08",
+     "num": "08",
+     "name": "Allergic Rhinitis",
+     "hasNote": false,
+     "coveredBy": {
+      "num": "07",
+      "name": "Radiology",
+      "key": "resp-w7-07"
+     }
+    },
+    {
+     "id": "resp-w6-09",
+     "num": "09",
+     "name": "Acute Rhinosinusitis",
+     "hasNote": false,
+     "coveredBy": {
+      "num": "07",
+      "name": "Radiology",
+      "key": "resp-w7-07"
+     }
+    },
+    {
+     "id": "resp-w6-10",
+     "num": "10",
+     "name": "Chronic Sinusitis",
+     "hasNote": false,
+     "coveredBy": {
+      "num": "07",
+      "name": "Radiology",
+      "key": "resp-w7-07"
+     }
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "label": "Week 7 - Gas Exchange, Hypoxia & Interstitial Disease",
+   "lectures": [
+    {
+     "id": "resp-w7-01",
+     "num": "01",
+     "name": "Alveolar Causes of Dyspnea",
+     "hasNote": true,
+     "title": "DDx for Dyspnea",
+     "framing": "<p>The differential for dyspnea is organised by <strong>tempo first</strong> — acute (minutes to hours) vs chronic — and then by <strong>system</strong>: cardiac, pulmonary, other. Within the lung, localise by compartment: airway, parenchyma (alveoli, interstitium), vessels, pleura, pump.</p>",
+     "keypoints": "<p><strong>Acute dyspnea: rule out the life-threatening causes first</strong> — MI, tamponade, tension pneumothorax, PE, asthma/AECOPD, aspiration, anaphylaxis. <strong>Wheeze = lower airway; stridor = upper airway.</strong> Chronic pulmonary causes split into <strong>airways</strong> (asthma, COPD, bronchiectasis), <strong>parenchyma</strong> (abnormal CXR), <strong>vessels</strong> (PE, pulmonary hypertension) and <strong>pump</strong> (chest wall, neuromuscular, pleura). Don't forget the non-cardiopulmonary causes: anemia, anxiety, deconditioning, hyperthyroidism, metabolic acidosis.</p>",
+     "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/4faf47bfbb6c.svg",
+       "alt": "dyspnea overview.svg",
+       "w": 1164,
+       "h": 1132,
+       "interactive": "charts/resp-w7-01_2/"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Acute dyspnea (minutes to hours)</h5><p>* = acutely life-threatening</p><ul><li><strong>Cardiovascular</strong>: myocardial infarction*, cardiac tamponade*, CHF</li><li><strong>Respiratory</strong><ul><li>Pleural: pneumothorax (tension*)</li><li>Parenchymal: pneumonia</li><li>Vascular: pulmonary embolism*</li><li>Lower airway (<strong>wheeze</strong>): asthma*, AECOPD*, CHF, ARDS</li><li>Upper airway (<strong>stridor</strong>): aspiration*, anaphylaxis*</li></ul></li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/5847554b4235.png",
+       "alt": "Flowchart of acute dyspnea causes, cardiovascular and respiratory",
+       "cap": "Acute dyspnea tree: asterisks mark the acutely life-threatening causes to exclude first."
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Chronic cardiac",
+        "Causes"
+       ],
+       "rows": [
+        [
+         "<strong>Pericardial</strong>",
+         "Effusion, cardiac tamponade*, constriction"
+        ],
+        [
+         "<strong>Myocardial</strong>",
+         "Systolic dysfunction, diastolic dysfunction, restrictive cardiomyopathy"
+        ],
+        [
+         "<strong>Valvular</strong>",
+         "Stenosis, regurgitation, sub-valvular disease"
+        ],
+        [
+         "<strong>Coronary artery disease</strong>",
+         "Stable angina, acute coronary syndrome*"
+        ],
+        [
+         "<strong>Arrhythmia</strong>",
+         "Atrial fibrillation, bradyarrhythmia, tachyarrhythmia"
+        ]
+       ],
+       "lead": "<p><strong>Chronic dyspnea — cardiac</strong></p>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/9cd2321b4c41.jpg",
+       "alt": "Flowchart of chronic dyspnea, cardiac causes",
+       "cap": "Chronic dyspnea, cardiac branch: pericardial, myocardial, valvular, coronary and rhythm causes."
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Category",
+        "Compartment",
+        "Causes"
+       ],
+       "rows": [
+        [
+         "<strong>Airways</strong>",
+         "—",
+         "Asthma, COPD, bronchiectasis"
+        ],
+        [
+         "<strong>Parenchyma</strong> (abnormal CXR)",
+         "Alveoli",
+         "Pneumonia"
+        ],
+        [
+         "",
+         "Interstitium",
+         "Interstitial pulmonary fibrosis, hypersensitivity pneumonitis, CHF, sarcoidosis"
+        ],
+        [
+         "",
+         "Vessels",
+         "Pulmonary embolism*, pulmonary hypertension"
+        ],
+        [
+         "<strong>Pump</strong>",
+         "—",
+         "Chest wall, neuromuscular, pleura"
+        ],
+        [
+         "<strong>Other</strong>",
+         "—",
+         "Anemia, anxiety, deconditioning, hyperthyroidism, metabolic acidosis"
+        ]
+       ],
+       "lead": "<p><strong>Chronic dyspnea — pulmonary and other</strong></p>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/549810701fbe.png",
+       "alt": "Flowchart of chronic dyspnea, pulmonary and other causes",
+       "cap": "Chronic dyspnea, pulmonary and other branches: an abnormal CXR points to the parenchyma (alveoli, interstitium, vessels)."
+      },
+      {
+       "t": "callout",
+       "kind": "tip",
+       "title": "Schulich Reviews",
+       "html": "<ul><li>Pneumonia in the <strong>immunocompromised host</strong>: many unusual organisms → often needs <strong>invasive testing (bronchoscopy)</strong>; empiric therapy has to be very broad</li></ul>"
+      }
+     ]
+    },
+    {
+     "id": "resp-w7-02",
+     "num": "02",
+     "name": "Gas Exchange and Hypoxia",
+     "hasNote": true,
+     "title": "Structure and Function of the Lung — Gas Exchange",
+     "covers": [
+      {
+       "num": "03",
+       "name": "Pulmonary Hypertension",
+       "key": "resp-w7-03"
+      },
+      {
+       "num": "01",
+       "name": "Histology of the Lungs and Airway",
+       "key": "resp-w6-01"
+      }
+     ],
+     "framing": "<p>Gas exchange happens across the thin, vast blood-gas barrier, and Fick's law says what speeds or slows it. The clinical tool that falls out of this is the <strong>A-a gradient</strong>: it tells you whether hypoxemia comes from <strong>too little O2 reaching the alveoli</strong> (normal gradient) or <strong>O2 failing to cross into blood</strong> (increased gradient).</p>",
+     "keypoints": "<p><strong>PIO2 = FIO2 × (Patm − PH2O) = 0.21 × (760 − 47) = 150 mm Hg.</strong> <strong>PAO2 = PIO2 − PaCO2/0.8.</strong> <strong>Normal A-a gradient = (age/4) + 4.</strong> Normal gradient: <strong>high altitude, hypoventilation</strong>. Increased gradient: <strong>shunt, V/Q mismatch, diffusion impairment</strong>. Diffusion is fast with large area, large gradient and a thin interface — emphysema cuts area, fibrosis and pneumonia thicken the barrier. Hypoxic vasoconstriction can lead to pulmonary hypertension.</p>",
+     "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/5d4133c8cc21.svg",
+       "alt": "hypoxemia overview.svg",
+       "w": 1544,
+       "h": 912,
+       "interactive": "charts/resp-w7-02_2/"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Airway structure</h5><ul><li>Gas exchange takes place at the <strong>blood-gas barrier (BGB)</strong> in the alveoli — large area, thin interface</li><li>23 generations of airway branching</li><li>Large airways: nose → pharynx → larynx → trachea → bronchi</li><li><strong>Conducting zone</strong>: trachea → bronchi → bronchioles → terminal bronchioles; pseudostratified ciliated columnar cells; <strong>NO gas exchange</strong> — anatomic dead space; warms and humidifies air</li><li><strong>Respiratory zone (acinus)</strong>: respiratory bronchioles → alveolar ducts → alveolar sacs; cuboidal cells, simple squamous cells</li><li><strong>Right lung = 3 lobes</strong>; more common site for inhaled foreign bodies (R main bronchus is wider, shorter and more vertical)</li><li><strong>Left lung = 2 lobes</strong>; lingula (homolog of R middle lobe)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/7212c45daf1d.png",
+       "alt": "Respiratory tract anatomy and bronchial tree",
+       "cap": "Airway tree: trachea → main (primary) → lobar (secondary) → segmental (tertiary) bronchi."
+      },
+      {
+       "t": "list",
+       "html": "<h5>Alveolar cells</h5><ul><li><strong>Type I pneumocytes</strong> — squamous; <strong>97% of alveolar surface</strong>; thinly line the alveoli for optimal gas exchange</li><li><strong>Type II pneumocytes</strong> — cuboidal, clustered; <strong>stem cell precursors</strong> for type I and II (proliferate after lung damage); <strong>secrete surfactant</strong> from lamellar bodies</li><li><strong>Alveolar macrophages</strong> — phagocytose foreign material</li></ul><h5>Circulation and pleura</h5><ul><li>Pulmonary artery branches into a dense capillary network wrapped around the alveoli; in the capillaries blood sees the <strong>largest surface area and lowest velocity</strong></li><li><strong>Intrapleural space</strong>: between lung and chest wall; <strong>negative pressure (-5 mm Hg)</strong> from elastic properties — lungs tend to collapse inward, chest wall to spring outward</li><li>Pressure becomes atmospheric if a pneumothorax (hole in the diaphragm) is created — the lung collapses</li></ul>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Diffusion — Fick's law</h5><p><strong>V_gas = (A / T) × D × (P1 − P2)</strong> — A = area, T = thickness, D = diffusion constant, P1 − P2 = partial pressure gradient</p><ul><li><strong>Fast</strong>: large area, large pressure gradient, thin interface</li><li><strong>Slow</strong>: small area (emphysema), small gradient, thick interface (pneumonia, pulmonary fibrosis)</li></ul><h5>Partial pressures</h5><ul><li><strong>Partial pressure</strong> = pressure exerted by one gas in a mixture = total pressure × fractional concentration</li><li>Partial pressure of a gas in solution = partial pressure of the gas in equilibrium with that solution</li><li><strong>Inspired PO2: PIO2 = FIO2 × (Patm − PH2O) = 0.21 × (760 − 47) = 150 mm Hg</strong> (FIO2 = 21%; sea-level pressure = 760 mm Hg; water-saturated air = 47 mm Hg)</li><li><strong>PAO2</strong> = alveolar partial pressure of O2; <strong>PaO2</strong> = arterial partial pressure of O2</li><li><strong>PACO2 = PaCO2</strong>; normal = 40 mm Hg</li><li><strong>Alveolar gas equation: PAO2 = PIO2 − (PaCO2 / 0.8)</strong></li></ul><h5>A-a gradient = PAO2 − PaO2</h5><ul><li>Difference between alveolar and arterial O2</li><li><strong>Normal = (age/4) + 4</strong>; lower is better</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Cause",
+        "Mechanism / examples"
+       ],
+       "rows": [
+        [
+         "<strong>Normal A-a gradient</strong>",
+         "<strong>↓ PIO2</strong> — high altitude",
+         "↓ PB → ↑ ventilation, ↓ PaCO2, respiratory alkalosis, altitude sickness"
+        ],
+        [
+         "",
+         "<strong>↑ PaCO2</strong> — hypoventilation",
+         "CNS depression, obesity hypoventilation syndrome, muscular weakness"
+        ],
+        [
+         "<strong>Increased A-a gradient</strong>",
+         "<strong>R to L shunt</strong> (normal Q, no V)",
+         "Anatomic (intracardiac shunt); physiologic (Q of non-ventilated alveoli in ARDS)"
+        ],
+        [
+         "",
+         "<strong>V/Q mismatch</strong>",
+         "Normal Q, ↓ V"
+        ],
+        [
+         "",
+         "<strong>Impaired diffusion</strong>",
+         "Fibrosis, ILD; hypoxemia with exercise"
+        ]
+       ],
+       "lead": "<p><strong>Causes of hypoxemia by A-a gradient</strong></p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Hypoxic vasoconstriction</h5><p>↓ PAO2 causes hypoxic arterial vasoconstriction, shifting blood away from poorly ventilated lung toward alveoli that can oxygenate it — <strong>which can lead to pulmonary hypertension</strong>.</p>"
+      },
+      {
+       "t": "callout",
+       "kind": "tip",
+       "title": "Schulich Reviews",
+       "html": "<ul><li>Room-air shortcut: <strong>PAO2 = 150 − (PaCO2 × 1.25)</strong>, then A-a = PAO2 − PaO2 vs age/4 + 4</li></ul>"
+      }
+     ]
+    },
+    {
+     "id": "resp-w7-03",
+     "num": "03",
+     "name": "Pulmonary Hypertension",
+     "hasNote": false,
+     "coveredBy": {
+      "num": "02",
+      "name": "Gas Exchange and Hypoxia",
+      "key": "resp-w7-02"
+     }
+    },
+    {
+     "id": "resp-w7-04",
+     "num": "04",
+     "name": "Blood Gases Interpretation",
+     "hasNote": true,
+     "title": "Blood Gases Interpretation",
+     "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/295a573edcf7.svg",
+       "alt": "blood gas overview.svg",
+       "w": 1204,
+       "h": 780,
+       "interactive": "charts/resp-w7-04_2/"
+      },
+      {
+       "t": "callout",
+       "kind": "tip",
+       "title": "Schulich Reviews",
+       "html": "<ul><li>Expected compensation — <strong>respiratory acidosis</strong>: ↑ 10 PaCO2 → HCO3 ↑ 1 <strong>acute</strong>, ↑ 3 <strong>chronic</strong></li><li><strong>Respiratory alkalosis</strong>: ↓ 10 PaCO2 → HCO3 ↓ 2 <strong>acute</strong>, ↓ 5 <strong>chronic</strong></li><li><strong>Metabolic acidosis</strong>: ↓ 1 HCO3 → PaCO2 ↓ 1; <strong>metabolic alkalosis</strong>: ↑ 1 HCO3 → PaCO2 ↑ 0.5</li><li>Metabolic acidosis (e.g. DKA) → lungs compensate by <strong>hyperventilating</strong> (Kussmaul) → ↓ PaCO2</li></ul>"
+      }
+     ]
+    },
+    {
+     "id": "resp-w7-05",
+     "num": "05",
+     "name": "Interstitial Causes of Dyspnea",
+     "hasNote": false,
+     "coveredBy": {
+      "num": "06",
+      "name": "Obstructive Lung Disease",
+      "key": "resp-w6-06"
+     }
+    },
+    {
+     "id": "resp-w7-06",
+     "num": "06",
+     "name": "Obstructive Sleep Apnea and Sleep Disordered Breathing",
+     "hasNote": false
+    },
+    {
+     "id": "resp-w7-07",
+     "num": "07",
+     "name": "Radiology",
+     "hasNote": true,
+     "title": "Chest Radiology and Rhinology",
+     "framing": "<p>Two halves: a <strong>systematic CXR read (DRS. ABCDE)</strong> with the pattern of each common abnormality, and the <strong>rhinology</strong> comparison — allergic rhinitis, acute and chronic rhinosinusitis, epistaxis. The CXR half is about never skipping a zone; the rhinology half turns on <strong>duration</strong> (10 days, 4 weeks, 8-12 weeks).</p>",
+     "keypoints": "<p><strong>Do NOT miss</strong>: deviated trachea, pneumothorax, subdiaphragmatic free air. <strong>Adequate inspiration</strong> = anterior ribs 5-6 / posterior ribs 8-10 reach the diaphragm. Pulmonary edema = <strong>Kerley B-lines</strong>, peribronchial cuffing, cardiomegaly; LLL collapse = <strong>sail sign</strong>. Acute rhinosinusitis = <strong>10+ days or double-worsening, &lt; 4 weeks</strong> — watch and wait 7-10 days first; chronic = <strong>8-12 weeks</strong> with endoscopic/CT evidence. <strong>Decongestants 3-7 days only</strong> (rhinitis medicamentosa). Anterior epistaxis (90%) comes from <strong>Kiesselbach's plexus</strong>; <strong>do NOT biopsy</strong> a juvenile nasal angiofibroma.</p>",
+     "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/df70ce7301d7.svg",
+       "alt": "chest x-ray overview.svg",
+       "w": 1700,
+       "h": 774,
+       "interactive": "charts/resp-w7-07_2/"
+      },
+      {
+       "t": "list",
+       "html": "<h5>CXR — bones, soft tissues, cardiac silhouette, pleura, diaphragm, airways, lung parenchyma</h5><ul><li><strong>Posteroanterior</strong> (back to front)</li><li><strong>Lateral</strong> (R to L) — mediastinal and hilar structures, costophrenic recesses, localizes pathology</li><li><strong>Lateral decubitus</strong> — effusions, pneumothorax, abnormality hidden by fluid</li><li><strong>Lordotic</strong> — apices</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/579f13a9c715.jpg",
+       "alt": "Normal PA and lateral chest X-rays",
+       "cap": "Normal upright PA (left) and lateral (right) chest films."
+      },
+      {
+       "t": "list",
+       "html": "<h5>Systematic read — DRS. ABCDE</h5><ul><li><strong>D</strong>etails: patient ID — name, DoB, type of film, date/time</li><li><strong>R</strong>IPE: <strong>rotation</strong> (clavicle ends equidistant from spinous process), <strong>inspiration</strong> (anterior ribs 5-6 or posterior ribs 8-10 reach the diaphragm dome), <strong>picture</strong> (angulation, lung fields), <strong>exposure</strong> (vertebral discs visible through cardiac silhouette)</li><li><strong>S</strong>oft tissues and bones: ribs, sternum, spine, clavicles, breast shadows, calcification</li><li><strong>A</strong>irway and mediastinum: trachea, mediastinal width, aortic knob — <strong>do NOT miss deviated trachea</strong></li><li><strong>B</strong>reathing: lung field outlines, symmetry, pleura — <strong>do NOT miss pneumothorax</strong></li><li><strong>C</strong>irculation: heart size on PA film, heart borders, heart shape</li><li><strong>D</strong>iaphragm: hemidiaphragm levels, contour, sharp costophrenic angles — <strong>do NOT miss subdiaphragmatic free air</strong></li><li><strong>E</strong>xtra: NG tube, pacemaker, ECG electrodes, PICC line, foreign body, ET tube, jewelry</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Abnormality",
+        "CXR findings"
+       ],
+       "rows": [
+        [
+         "Airspace disease",
+         "Fluffy opacities (air bronchograms); filled acini coalesce into consolidation"
+        ],
+        [
+         "Left lung consolidation",
+         "Tracheal deviation, volume loss, opacified hemithorax, air bronchograms"
+        ],
+        [
+         "ILD",
+         "Reticular (lines and nets), nodules"
+        ],
+        [
+         "Pleural effusion",
+         "<strong>Blunted costophrenic angle</strong>; compare supine vs sitting and POCUS"
+        ],
+        [
+         "Pulmonary edema",
+         "<strong>Kerley B-lines</strong>, peribronchial cuffing, vascular redistribution/enlargement, pleural effusion, cardiomegaly"
+        ],
+        [
+         "LLL collapse (atelectasis)",
+         "<strong>Sail sign</strong> (dense opacity), volume loss"
+        ],
+        [
+         "Nodule or mass",
+         "Solitary or multiple space-occupying lesion(s)"
+        ],
+        [
+         "Tension pneumothorax",
+         "No lung markings lateral to a shrunken lung, tracheal deviation"
+        ],
+        [
+         "Pulmonary embolism",
+         "Peripheral wedge opacity"
+        ],
+        [
+         "TB",
+         "Ill-defined, patchy opacity; nodular pattern possible"
+        ]
+       ],
+       "lead": "<p><strong>Common CXR abnormalities</strong></p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Modality",
+        "Use"
+       ],
+       "rows": [
+        [
+         "<strong>CT</strong>",
+         "More detail than CXR but high radiation dose; diagnoses ILD"
+        ],
+        [
+         "<strong>Nuclear medicine</strong>",
+         "Lung function; V/Q scan"
+        ],
+        [
+         "<strong>Ultrasound</strong>",
+         "Limited by air in the lungs; POCUS for effusions, consolidation, pleura"
+        ],
+        [
+         "<strong>MRI</strong>",
+         "Limited by air in the lungs; Pancoast tumours, brachial plexus, vascular, cardiac"
+        ]
+       ],
+       "lead": "<p><strong>Other imaging</strong></p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Allergic rhinitis",
+        "Acute rhinosinusitis",
+        "Chronic rhinosinusitis",
+        "Epistaxis"
+       ],
+       "rows": [
+        [
+         "<strong>Definition</strong>",
+         "<strong>Inflammation of the nasal mucosa</strong><br><strong>Seasonal</strong>: certain months<br><strong>Perennial</strong>: all year<br><strong>Intermittent</strong>: &lt; 4 days/wk, &lt; 4 wks/yr<br><strong>Persistent</strong>: &gt; 4 days/wk, &gt; 4 wks/yr<br><strong>Episodic</strong>: atypical settings<br><strong>Non-allergic rhinitis</strong>: similar symptoms, triggered by microbes, chemical irritants, or humidity/temperature change",
+         "Symptoms for <strong>10+ days</strong>, or initially improved then worsened, lasting <strong>&lt; 4 weeks</strong><br><strong>Recurrent ABRS</strong>: ≥ 4 attacks/year with well periods between",
+         "<strong>Inflammation of nasal mucosa and paranasal sinuses ± nasal polyps</strong><br><strong>Symptoms + endoscopic or CT evidence</strong> for <strong>at least 8-12 weeks</strong><br>Quality of life (bodily pain, social functioning) lower than CHF, COPD and back pain",
+         "<strong>Local causes</strong>: trauma, foreign body, tumour, drugs (cocaine), inflammation, barometric change, nasal dryness<br><strong>Systemic causes</strong>: coagulopathy, hypertension, atherosclerosis, HHT, Wegener's granulomatosis"
+        ],
+        [
+         "<strong>Pathology</strong>",
+         "Antigen on MHC II → Th2 differentiation → IgE binds mast cells → degranulation (histamine, prostaglandins, leukotrienes) on re-exposure",
+         "<strong>Viral</strong> (most)<br>Bacterial: <em><strong>Streptococcus pneumoniae</strong></em>, <em><strong>Haemophilus influenzae</strong></em>, <em>Moraxella catarrhalis</em>, <em>Staphylococcus aureus</em>",
+         "Bacterial: <em><strong>Staphylococcus aureus</strong></em>, <strong>Enterobacteriaceae</strong>, <strong><em>Pseudomonas</em></strong>",
+         "<strong>Anterior (90%)</strong>: <strong>Kiesselbach's plexus</strong> in <strong>Little's area</strong> of the septum — anastomosis of anterior ethmoid, superior labial and sphenopalatine arteries<br><strong>Posterior</strong>: entry of sphenopalatine artery"
+        ],
+        [
+         "<strong>Presentation</strong>",
+         "Sneezing, runny nose, <strong>nasal congestion</strong>, post-nasal drip, clear drainage<br>Itchy, congested ears<br>Watery/itchy eyes, <strong>allergic shiners</strong> (dark circles)<br>Midfacial pressure/headache, fatigue",
+         "Purulent rhinorrhea (middle meatus drainage)<br>Nasal obstruction and congestion<br>Facial pressure<br>Intermittent fevers",
+         "Nasal congestion<br>Facial pressure<br>Yellow nasal discharge<br>Post-nasal drip sensation<br>Anosmia",
+         "—"
+        ],
+        [
+         "<strong>Hx</strong>",
+         "<strong>FHx: eczema, asthma, allergies</strong><br>Symptoms + frequency<br>Triggers: foods, allergens, place<br>QoL: sleep, daily activities, social",
+         "Post-nasal drip, infections, loss of smell, sinus surgery, sick contacts, medications, smoking, allergies<br>Fever, headache, photophobia",
+         "Antibiotics for sinusitis",
+         "<strong>Adolescent males: juvenile nasal angiofibroma</strong> — recurrent ipsilateral obstruction; <strong>do NOT biopsy</strong> (highly vascular, hemorrhage)"
+        ],
+        [
+         "<strong>PEx</strong>",
+         "<strong>Nose</strong>: pale mucosa, swollen/boggy turbinates, allergic salute crease<br><strong>Throat</strong>: hard palate erythema, cobblestoning<br><strong>Eyes</strong>: red/watery, allergic shiners, Dennie-Morgan lines<br><strong>TM</strong>: serous otitis media",
+         "Rhinoscopy",
+         "Rhinoscopy — yellow mucus in middle meatus bilaterally<br><strong>Nasal polyps = polyposis</strong>: CT to exclude intracranial extension, biopsy<br><strong>Samter's triad</strong>: nasal polyposis, asthma, aspirin sensitivity",
+         "PPE (gown, mask, gloves); headlamp; nasal speculum; bayonet forceps for packing<br>Patient leans forward, nose to the floor, to find the bleeding side"
+        ],
+        [
+         "<strong>Dx</strong>",
+         "<strong>Clinical</strong>: Hx, symptoms<br><strong>Lab</strong>: serum eosinophils, total IgE<br><strong>Skin prick tests</strong> for the source<br>Imaging NOT usually done",
+         "<strong>2+ major symptoms, including O or D</strong><br><strong>Major (PODS)</strong>: facial Pain/pressure, nasal Obstruction, purulent Discharge, Smell disturbance<br><strong>Minor</strong>: headache, halitosis, fatigue, toothache, cough, ear pain/pressure",
+         "<strong>2+ major symptoms, including O or D</strong><br><strong>Major (PODS + C)</strong>: as acute, plus facial congestion<br><strong>Minor</strong>: as acute",
+         "—"
+        ],
+        [
+         "<strong>Tx</strong>",
+         "Prophylaxis: allergen avoidance<br><strong>Intranasal corticosteroids (&gt; age 2)</strong><br>Epinephrine (EpiPen)<br>Antihistamines, mast cell stabilizers<br>Decongestants — risk of <strong>rhinitis medicamentosa</strong>; <strong>3-7 days ONLY</strong><br>Immunotherapy (allergen shots)<br>Surgery: turbinate reduction",
+         "<strong>Watch and wait 7-10 days</strong> (1st line)<br>Symptom management (1st line): <strong>intranasal corticosteroids</strong>, <strong>saline irrigation</strong><br>Antibiotics (&gt; 7 days or systemically unwell): <strong>amoxicillin</strong>; azithromycin; TMP-SMX",
+         "<strong>Intranasal corticosteroids</strong><br>Saline irrigation<br>FESS: remove obstruction, restore mucociliary function, improve aeration<br><strong>+ polyposis: oral corticosteroids</strong>",
+         "See algorithm below"
+        ],
+        [
+         "<strong>Referral</strong>",
+         "Persistent/severe symptoms, asthma<br>Sinusitis, otitis media, surgery",
+         "Systemic toxicity, altered mental status, severe headache, orbital swelling or ↓ visual acuity",
+         "Acute sinusitis with severe symptoms/systemic toxicity, suspected orbital/intracranial involvement, immunosuppression",
+         "Severe/refractory bleeding, nasal trauma, packing complications, suspected tumour, predisposing conditions, recurrence"
+        ]
+       ],
+       "lead": "<p><strong>Rhinology</strong></p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Epistaxis — stepwise management</h5><ol><li><strong>ABCs</strong> — simple first aid, ATLS, ACLS</li><li><strong>Reverse coagulopathy</strong></li><li><strong>Anterior nasal pressure</strong> (10-15 min)</li><li><strong>Unilateral silver nitrate cautery</strong> — outside in</li><li><strong>Packing</strong>: nasal tampon, ribbon gauze, posterior</li><li><strong>Topical hemostatic agents</strong>: Floseal, tranexamic acid</li><li><strong>Surgery</strong> — ligate anterior ethmoid and sphenopalatine arteries</li><li><strong>Interventional radiology</strong> — embolize external carotid branches, <strong>NOT the anterior ethmoid</strong></li></ol>"
+      },
+      {
+       "t": "callout",
+       "kind": "tip",
+       "title": "Schulich Reviews",
+       "html": "<ul><li><strong>AP (portable) film magnifies the heart</strong> → judge heart size on a <strong>PA</strong> film (heart closest to the film)</li><li>Lateral view <strong>localizes pathology</strong>; posterior lungs should <strong>get darker going down</strong></li><li>Epistaxis: <strong>anterior</strong> (Kiesselbach's) = most common, controlled by pressure/cautery; <strong>posterior</strong> (sphenopalatine) = more severe, <strong>elderly and hypertensive</strong>, needs packing or IR</li></ul>"
+      }
+     ],
+     "covers": [
+      {
+       "num": "08",
+       "name": "Allergic Rhinitis",
+       "key": "resp-w6-08"
+      },
+      {
+       "num": "09",
+       "name": "Acute Rhinosinusitis",
+       "key": "resp-w6-09"
+      },
+      {
+       "num": "10",
+       "name": "Chronic Sinusitis",
+       "key": "resp-w6-10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "label": "Week 8 - Pneumonia, Tuberculosis & Pulmonary Masses",
+   "lectures": [
+    {
+     "id": "resp-w8-01",
+     "num": "01",
+     "name": "Hemoptysis",
+     "hasNote": false,
+     "coveredBy": {
+      "num": "04",
+      "name": "Approach to Pulmonary Nodules and Masses",
+      "key": "resp-w8-04"
+     }
+    },
+    {
+     "id": "resp-w8-02",
+     "num": "02",
+     "name": "Pneumonia",
+     "hasNote": true,
+     "title": "Pneumonia, Tuberculosis and Upper Respiratory Infections",
+     "framing": "<p><strong>Pneumonia = inflammation of the lung parenchyma with alveolar filling by exudate.</strong> The organising split is <strong>typical vs atypical vs hospital-acquired vs TB</strong> — but because typical and atypical are hard to tell apart clinically, <strong>empiric therapy covers both</strong>, chosen by the patient's comorbidities.</p>",
+     "keypoints": "<p><strong>CXR = gold standard</strong> for diagnosing and classifying pneumonia; <strong>atypicals do NOT show on Gram stain</strong>. Empiric CAP: <strong>no comorbidities → macrolide (azithromycin) + 3rd-gen cephalosporin (ceftriaxone)</strong> or doxycycline; <strong>elderly/comorbid → fluoroquinolone (levofloxacin)</strong>. Hospital-acquired (<em>Pseudomonas</em>) → <strong>piperacillin/tazobactam + vancomycin</strong>. TB: <strong>6 months INH + B6 + rifampin, plus pyrazinamide + ethambutol for the first 2</strong>; secondary TB favours the apices. PCP prophylaxis when <strong>CD4 &lt; 200</strong>. Treat strep throat promptly to prevent <strong>rheumatic fever</strong>.</p>",
+     "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/f37bb1d4348f.svg",
+       "alt": "pneumonia overview.svg",
+       "w": 1304,
+       "h": 1426,
+       "interactive": "charts/resp-w8-02_2/"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Typical (bacterial)",
+        "Atypical",
+        "Hospital-acquired",
+        "Tuberculosis"
+       ],
+       "rows": [
+        [
+         "<strong>Causes</strong>",
+         "<strong>Lobar</strong>: <em>S. pneumoniae</em>, <em>Legionella</em>, <em>Klebsiella</em><br><strong>Bronchopneumonia</strong>: <em>S. pneumoniae</em>, <em>S. aureus</em>, <em>H. influenzae</em>, <em>Klebsiella</em>",
+         "<em><strong>Mycoplasma</strong></em>, <em><strong>Chlamydia</strong></em>, <em><strong>Legionella</strong></em><br>Viruses: COVID-19, influenza, RSV, adenovirus",
+         "<em>Pseudomonas aeruginosa</em><br>Risk factors: <strong>extended hospital stay</strong>, decreased consciousness<br>Usually from <strong>microaspiration</strong> of oropharyngeal contents",
+         "<em>Mycobacterium tuberculosis</em><br>Airborne droplet transmission"
+        ],
+        [
+         "<strong>Presentation</strong>",
+         "<strong>Acute onset</strong><br>Fever, dyspnea, productive cough<br><strong>Purulent sputum</strong>, may be blood-tinged or \"rusty\" (ruptured pulmonary microvasculature)<br>Pleuritic chest pain<br>Epigastric pain (elderly)",
+         "<strong>Insidious onset</strong><br><strong>Non-productive cough</strong>; mucoid sputum",
+         "Similar to typical pneumonia",
+         "Chronic productive cough<br>Hemoptysis<br>Respiratory function generally well preserved<br>Weight loss, fever, night sweats"
+        ],
+        [
+         "<strong>CXR pattern</strong>",
+         "<strong>Lobar</strong>: consolidation of an entire lobe; can involve 1+ lobes<br><strong>Bronchopneumonia</strong>: patchy consolidation around bronchioles and adjacent alveoli; often multifocal and bilateral",
+         "<strong>Interstitial</strong>: diffuse patchy inflammation in the interstitium at alveolar walls; sometimes very subtle on CXR",
+         "—",
+         "<strong>Primary</strong>: nonspecific, often lower lobe infiltrate, hilar node enlargement, pleural effusion<br><strong>Secondary</strong>: infiltrates, cavities, nodules, scarring, contraction; <strong>apices</strong> or superior segment of a lower lobe"
+        ],
+        [
+         "<strong>Tx</strong>",
+         "Empiric — see below",
+         "Empiric — see below",
+         "Tailor to <strong>gram-negative rods</strong>: cephalosporins (pseudomonal), carbapenems, <strong>piperacillin/tazobactam + vancomycin</strong>",
+         "<strong>6 months</strong>: isoniazid (INH), pyridoxine (B6), rifampin<br><strong>First 2 months</strong> add: pyrazinamide, ethambutol"
+        ],
+        [
+         "<strong>Px</strong>",
+         "Complete recovery without sequelae in most with appropriate Tx",
+         "As typical",
+         "—",
+         "Most primary TB is asymptomatic<br><strong>10% reactivation risk</strong> in immunocompetent patients"
+        ]
+       ],
+       "lead": "<p><strong>Pneumonia by type</strong></p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Diagnosis — all pneumonia</h5><ul><li><strong>Hx</strong>: host risk factors, travel, animal/environmental exposures</li><li><strong>PEx</strong>: vitals, chest exam</li><li><strong>Bloodwork</strong>: CBC, electrolytes, BUN, creatinine</li><li><strong>ABG</strong>: ↓ PaO2 (hypoxemia); normal or ↓ PaCO2 from tachypnea</li><li><strong>CXR = gold standard</strong> — classifies the pneumonia</li><li><strong>Sputum Gram stain and culture</strong>: identifies the pathogen; <strong>atypical organisms do NOT show up on Gram stain</strong></li><li><strong>CT thorax</strong> if worried about complications</li></ul><h5>Diagnosis — TB</h5><ul><li><strong>Primary TB</strong>: PEx — fever, chest pain, otherwise normal</li><li><strong>Secondary TB</strong>: cough (hemoptysis), weight loss, wasting, night sweats; crackles over affected area</li><li>TB skin test (PPD / Mantoux)</li><li><strong>Organism culture for definitive diagnosis</strong></li></ul>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Treatment</h5><p><strong>Bacterial and atypical etiologies are hard to differentiate, so start empiric therapy based on likely pathogens.</strong></p><ul><li>No comorbidities: <strong>macrolide (azithromycin) + 3rd-generation cephalosporin (ceftriaxone)</strong>; doxycycline</li><li>Elderly and comorbid: <strong>fluoroquinolone (levofloxacin)</strong></li><li>Hospital-acquired: <strong>piperacillin/tazobactam + vancomycin</strong></li><li><strong>Fungal</strong>: endemic mycoses — itraconazole or fluconazole; disseminated — amphotericin B and newer-generation azoles</li><li><strong>HIV with CD4+ &lt; 200 cells/mm3</strong>: prophylaxis against <em>Pneumocystis jirovecii</em> (PCP) — TMP-SMX, pentamidine, dapsone, atovaquone</li><li><strong>Viral</strong>: supportive care; antivirals (oseltamivir, zanamivir) ↓ duration by 24 hours</li></ul><h5>Complications</h5><ul><li><strong>Lung abscess</strong> — localized pus within the parenchyma; unresponsive to antibiotics</li><li><strong>Empyema</strong> — pus in the pleural space; requires drainage</li></ul>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Upper respiratory tract infections (URTI)</h5><p>Fever, sore throat and reddened oropharynx.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Viral pharyngitis",
+        "Bacterial pharyngitis"
+       ],
+       "rows": [
+        [
+         "<strong>Organisms</strong>",
+         "Rhinovirus, <strong>COVID-19</strong>, influenza, parainfluenza, EBV, CMV",
+         "<strong>GAS</strong>, GCS, GGS, gonorrhea, chlamydia, fusobacterium"
+        ],
+        [
+         "<strong>Exudate</strong>",
+         "None",
+         "Tonsillar exudate"
+        ],
+        [
+         "<strong>Lymph nodes</strong>",
+         "Painless lymphadenopathy",
+         "Painful lymphadenopathy"
+        ],
+        [
+         "<strong>Other</strong>",
+         "URTI symptoms",
+         "Systemic symptoms; <strong>test for strep throat</strong> — timely penicillin prevents <strong>rheumatic fever</strong>"
+        ]
+       ],
+       "lead": "<p><strong>Pharyngitis</strong> — inflammation of the pharynx; presents as sore throat</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Epiglottitis",
+        "Croup"
+       ],
+       "rows": [
+        [
+         "<strong>Who</strong>",
+         "Young children",
+         "Common illness in children"
+        ],
+        [
+         "<strong>Organism</strong>",
+         "<em><strong>H. influenzae</strong></em><strong> type B (Hib)</strong>; ↓ incidence with Hib vaccine",
+         "Parainfluenza, influenza, RSV"
+        ],
+        [
+         "<strong>Features</strong>",
+         "Pain, airway obstruction, <strong>uncontrollable drooling</strong>",
+         "Fever, <strong>barking cough</strong>, stridor, hoarseness"
+        ]
+       ]
+      }
+     ],
+     "covers": [
+      {
+       "num": "03",
+       "name": "Tuberculosis and NTM",
+       "key": "resp-w8-03"
+      }
+     ]
+    },
+    {
+     "id": "resp-w8-03",
+     "num": "03",
+     "name": "Tuberculosis and NTM",
+     "hasNote": false,
+     "coveredBy": {
+      "num": "02",
+      "name": "Pneumonia",
+      "key": "resp-w8-02"
+     }
+    },
+    {
+     "id": "resp-w8-04",
+     "num": "04",
+     "name": "Approach to Pulmonary Nodules and Masses",
+     "hasNote": true,
+     "title": "Lung Nodules, Thyroid Nodules and Head and Neck Masses",
+     "covers": [
+      {
+       "num": "01",
+       "name": "Hemoptysis",
+       "key": "resp-w8-01"
+      }
+     ],
+     "framing": "<p>Three kinds of lump, one question each time: <strong>benign or malignant, and what test decides it?</strong> For the lung, size and risk set the follow-up; for the thyroid, <strong>TSH decides the next test</strong> and ultrasound features decide the FNAB; for a lateral neck mass in an adult, <strong>assume cancer until proven otherwise</strong>.</p>",
+     "keypoints": "<p><strong>Mass &gt; 3 cm; nodule &lt; 3 cm</strong>; &lt; 7 mm likely benign. <strong>Pleural or pericardial effusion = stage IV.</strong> Lung cancer: stage I-II resect or radiate, III chemoradiation, IV palliative. Thyroid nodules: <strong>50% incidence, only 5% malignant</strong>; papillary and follicular raise thyroglobulin, <strong>medullary raises calcitonin</strong>. <strong>Rule of 7s</strong> (7 days infection, 7 months neoplasm, 7 years congenital) and the <strong>80% rule</strong> for lateral neck masses. Salivary tumours: <strong>the smaller the gland, the more likely malignant</strong>. HPV-16 → oropharyngeal SCC with good prognosis.</p>",
+     "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/1ff482391be1.svg",
+       "alt": "pulmonary nodule overview.svg",
+       "w": 862,
+       "h": 1484,
+       "interactive": "charts/resp-w8-04_2/"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Pulmonary nodules and masses</h5><ul><li><strong>Mass &gt; 3 cm; nodule &lt; 3 cm</strong></li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Benign",
+        "Malignant"
+       ],
+       "rows": [
+        [
+         "<strong>Solitary</strong><br>(<strong>&lt; 7 mm likely benign, &gt; 7 mm likely malignant</strong>)",
+         "Hamartoma, granuloma, abscess, rheumatoid nodule, infarction",
+         "Lung cancer, lymphoid, carcinoid tumour (airway-centric)"
+        ],
+        [
+         "<strong>Multiple</strong>",
+         "Infection (fungal histoplasmosis, TB); inflammatory (vasculitis); inhalational (silicosis, asbestosis); idiopathic (sarcoidosis)",
+         "Metastatic &gt; benign<br><strong>Pleural effusion = stage IV</strong><br><strong>Pericardial effusion = stage IV</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<h5>Lung cancer</h5><ul><li><strong>Non-small cell</strong>: adenocarcinoma (most common), squamous cell carcinoma, large cell carcinoma</li><li><strong>Small cell</strong> (most common in smokers)</li><li><strong>\"S\" cancers are central</strong> — bulky and symptomatic</li><li><strong>Presentation</strong>: cough, dyspnea, chest pain, hemoptysis, constitutional symptoms, clubbing — or <strong>ASYMPTOMATIC</strong></li><li><strong>Risk factors</strong>: age, smoking, emphysema, FHx; nodule size, spiculation, upper lobe; CT density (semisolid &gt; solid &gt; ground glass); <strong>calcification (↓ risk)</strong></li><li><strong>Metastatic sites</strong>: pleura, liver (jaundice, hepatomegaly), bone (pathologic fracture), brain, adrenals</li><li><strong>Important presentations</strong>: central airway obstruction, SVC obstruction, Pancoast tumour, paraneoplastic syndromes (SIADH, hypercalcemia, Lambert-Eaton, hypertrophic osteoarthropathy)</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/0fdcfbea5ae1.png",
+       "alt": "Single pulmonary nodule follow-up table by size and risk",
+       "cap": "Follow-up of a single nodule by size and risk: &lt; 6 mm low risk needs no routine follow-up; &gt; 8 mm warrants CT at 3 months, PET/CT or tissue sampling."
+      },
+      {
+       "t": "list",
+       "html": "<h5>Workup and treatment</h5><ul><li><strong>PET / MRI brain</strong> — rule out metastasis</li><li><strong>Biopsy</strong> — stage and diagnose</li><li>Stages I-II: surgical resection or radiation</li><li>Stage III: chemotherapy + radiotherapy</li><li>Stage IV: palliative chemotherapy ± radiation</li></ul>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Thyroid nodules</h5><ul><li><strong>Incidence = 50%</strong>, females &gt; males; ↑ with age and low iodine intake</li><li><strong>Only 5% are malignant; 99% are asymptomatic</strong></li></ul><h5>Thyroid axis</h5><p>TRH (hypothalamus) → TSH (anterior pituitary) → T3 + T4 → ↑ metabolic rate, ↑ sympathetic activity, steroid hormone release, erythropoiesis</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Hypothyroidism",
+        "Hyperthyroidism"
+       ],
+       "rows": [
+        [
+         "<strong>Labs</strong>",
+         "↑ TSH, ↓ thyroid hormones",
+         "↓ TSH, ↑ thyroid hormones"
+        ],
+        [
+         "<strong>Features</strong>",
+         "Bradycardia, <strong>diastolic</strong> hypertension, cold intolerance, dry skin, coarse hair, brittle nails",
+         "Tachycardia, <strong>systolic</strong> hypertension, heat intolerance, anxiety, insomnia, weight loss"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Type",
+        "Subtype",
+        "Features"
+       ],
+       "rows": [
+        [
+         "<strong>Benign</strong>",
+         "—",
+         "Toxic/non-toxic multinodular goitre, Hashimoto's thyroiditis, cysts, follicular adenoma"
+        ],
+        [
+         "<strong>Epithelial</strong>",
+         "Papillary (55-65%)",
+         "Lymphatic spread; ↑ thyroglobulin"
+        ],
+        [
+         "",
+         "Follicular (20-30%)",
+         "Hematogenous spread; ↑ thyroglobulin"
+        ],
+        [
+         "",
+         "Medullary (3-8%)",
+         "<strong>↑ calcitonin</strong>"
+        ],
+        [
+         "",
+         "Anaplastic (&lt; 5%)",
+         "Undifferentiated; compressive symptoms"
+        ],
+        [
+         "<strong>Non-epithelial</strong>",
+         "—",
+         "Lymphoma, metastases from other primaries, sarcoma"
+        ]
+       ],
+       "lead": "<p><strong>Thyroid neoplasms</strong></p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Thyroid nodule workup</h5><ul><li><strong>Hx</strong>: H&amp;N irradiation, total body irradiation for BMT, Chernobyl/Fukushima, 1st-degree relative, Filipino</li><li><strong>PEx</strong>: hoarseness, vocal cord paralysis, cervical lymphadenopathy, voice change/swallowing problems<ul><li>Benign: soft/smooth, small, can hurt</li><li>Malignant: fixed/hard/solitary nodule &gt; 4 cm that does not move with swallowing and grows rapidly</li></ul></li><li><strong>Ix: TSH first</strong><ul><li><strong>Low TSH</strong> → radioactive iodine uptake scan (hyperfunction/hot = no further workup; cancer)</li><li><strong>High TSH</strong> → ultrasound</li></ul></li><li><strong>Referral for FNAB to confirm diagnosis</strong> if:<ul><li>Hypoechoic and solid &gt; 1 cm ± suspicious features</li><li>Iso-/hyperechoic or partially cystic without suspicious features &gt; 1.5 cm</li><li>Spongiform or complex cystic &gt; 2 cm</li></ul></li><li><strong>Malignant ultrasound features</strong>: taller than wide, hypoechoic, microcalcifications, irregular borders, lymphadenopathy</li><li>FNAB result reported by the <strong>Bethesda system</strong> (below)</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Class",
+        "Category",
+        "Management",
+        "Malignancy"
+       ],
+       "rows": [
+        [
+         "I",
+         "Non-diagnostic, unsatisfactory",
+         "Repeat FNAB (ultrasound-guided)",
+         "Low (1-4%)"
+        ],
+        [
+         "II",
+         "Benign",
+         "Repeat ultrasound in 12-24 months",
+         "Low (0-3%)"
+        ],
+        [
+         "III",
+         "AUS (atypia of undetermined significance) or FLUS (follicular lesion of undetermined significance)",
+         "Repeat FNAB in 2-3 months",
+         "Low/moderate (5-15%)"
+        ],
+        [
+         "IV",
+         "Follicular neoplasm or suspicious for follicular neoplasm",
+         "If TSH is low, consider radionuclide scan and molecular testing (non-functioning = diagnostic hemithyroidectomy)",
+         "Moderate (15-30%)"
+        ],
+        [
+         "V",
+         "Suspicious for malignancy",
+         "Thyroidectomy, hemithyroidectomy, subtotal thyroidectomy",
+         "High (60-75%)"
+        ],
+        [
+         "VI",
+         "Malignant: papillary, follicular, medullary, anaplastic, poorly differentiated, metastatic to thyroid, non-Hodgkin lymphoma, SQCCA",
+         "Thyroidectomy, hemithyroidectomy, subtotal thyroidectomy",
+         "High (97-99%)"
+        ]
+       ],
+       "lead": "<p><strong>Bethesda system</strong> — total thyroidectomy means supplemental thyroid hormone (levothyroxine) for life.</p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Adult head and neck masses</h5><ul><li><strong>Normal neck structures that feel like masses</strong>: submandibular gland, C2 transverse process, carotid bulb, sternocleidomastoid, hyoid bone, cervical rib</li><li><strong>DDx (CITTENS)</strong>: congenital, infectious, toxins, trauma, endocrine, neoplasms, systemic</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Midline",
+        "Lateral"
+       ],
+       "rows": [
+        [
+         "<strong>Thyroid (90%)</strong>: goitre, tumour, thyroglossal duct cyst<br>Other (10%): lymph node, dermoid cyst, lymphatic malformation, superficial mass",
+         "<strong>Infection</strong>: reactive or infected lymph nodes<br><strong>Congenital</strong>: cysts (second branchial cleft cyst), lymphatic malformations<br><strong>Neoplasms</strong>: cancers"
+        ]
+       ]
+      },
+      {
+       "t": "list",
+       "html": "<h5>Rules for lateral neck masses</h5><ul><li><strong>Rule of 7s</strong>: 7 days = infection; 7 weeks/months = neoplasm; 7 years = congenital</li><li><strong>80% rule</strong>: 80% neoplastic → 80% of those malignant → 80% metastatic → 80% from a primary H&amp;N site</li><li><strong>Age rule</strong>: &lt; 16 years = congenital; &gt; 40 years = neoplastic</li><li><strong>Age + 80% rule</strong>: in an elderly patient, a lateral neck mass is <strong>cancer until proven otherwise</strong></li></ul><h5>Workup</h5><ul><li><strong>Hx</strong>: mass characteristics, recent H&amp;N infections, exposures (animals, travel), skin cancer, dental work, smoking/EtOH, radiation, FHx, immunodeficiency, age</li><li><strong>PEx</strong>: look for the primary, palpate where possible, cervical lymph node exam — <strong>lower lymph node = worse</strong></li><li><strong>Ix</strong>: labs, nasal endoscopy, ultrasound, FNAB, CT/MRI, open neck biopsy (lymphoma), panendoscopy (primary site)</li></ul>"
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Lateral neck mass in an older adult",
+       "html": "<p>By the age rule and the 80% rule, a lateral neck mass in an elderly patient is <strong>cancer until proven otherwise</strong> — usually a metastasis from a head and neck primary.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Major salivary gland",
+        "Drainage",
+        "Share of tumours",
+        "Malignant"
+       ],
+       "rows": [
+        [
+         "<strong>Parotid</strong> (contains lymph nodes)",
+         "<strong>Stensen's duct</strong>: buccal mucosa at the 1st molar",
+         "&gt; 80%",
+         "25%"
+        ],
+        [
+         "<strong>Submandibular</strong>",
+         "<strong>Wharton's duct</strong>: papilla on both sides of the frenulum",
+         "15%",
+         "50%"
+        ],
+        [
+         "<strong>Sublingual</strong>",
+         "Submandibular lymph nodes",
+         "5%",
+         "75%"
+        ]
+       ],
+       "lead": "<p><strong>Salivary glands</strong> — the smaller the gland, the more likely a tumour is malignant.</p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Salivary gland disorders</h5><p><strong>Functional problems</strong> — hypersecretion (rare), drooling, dry mouth (common); treat the underlying cause</p><p><strong>Sialolithiasis (stones)</strong> — submandibular gland</p><ul><li>Pain, swelling; <strong>salivary colic (worse with meals)</strong></li><li>Dx: palpation, sialography (submandibular = radiopaque, parotid = radiolucent), ultrasound, CT, sialendoscopy (rare)</li><li>Complications: fistula, acute suppurative sialadenitis, ductal stricture</li><li>Tx: gland massage, bimanual stone expression, hydration, sialagogues, antibiotics, surgical excision</li></ul><p><strong>Sialadenitis (infection)</strong> — bacterial (<em>S. aureus</em>), viral (HIV, mumps, coxsackie, influenza)</p><ul><li>Risk factors: dehydration, post-surgery, Sjögren's syndrome (autoimmune)</li><li>Pain, swelling, induration, warmth, purulence at the ductal orifice, tender</li><li>Complications: fistula, abscess, deep neck space infection</li><li>Tx: gland massage, warm compress, hydration, sialagogues, antibiotics; reassess for complications in 3 days</li></ul><p><strong>Salivary gland tumours</strong></p><ul><li>Risk factors: radiation (7-30 year latency); <strong>NOT associated with smoking/EtOH, EXCEPT Warthin's</strong></li><li>Larger gland = more likely benign; smaller gland = more likely malignant</li><li>Usually a painless lump; abnormal growth, <strong>facial nerve weakness</strong>, overlying skin changes</li><li>Ix: complete Hx and PEx (skin cancer inspection, facial nerve assessment), ultrasound, CT, FNAB</li><li>Tx: surgical excision (diagnostic + therapeutic) — complete resection, preserve facial nerve; radiation</li></ul>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Head and neck cancers</h5><ul><li>Most skin cancers occur in the H&amp;N; H&amp;N cancer patients have the poorest health-related quality of life of all cancer patients</li><li>Non-melanoma skin cancers are the most common (1 in 6 Canadians)</li><li><strong>Squamous cell carcinoma</strong> — epithelial lining of nose, paranasal sinuses, oral cavity, pharynx, larynx, esophagus, ear</li><li><strong>Risk factors</strong>: smoking/EtOH, <strong>HPV-16</strong> (oropharyngeal; base of tongue, tonsils), <strong>EBV</strong> (nasopharyngeal), sun, previous cancers, radiation, FHx, wood dust/heavy metals, immunosuppression</li><li><strong>HPV-positive</strong>: younger, healthy, educated, high SES, many sexual partners, no smoking/EtOH, lower T-stage, <strong>good prognosis</strong></li><li><strong>PEx / red flags</strong>: persistent otalgia, unilateral otitis media with effusion, hearing loss, aural fullness, pulsatile tinnitus, recurrent epistaxis, unilateral nasal obstruction, persistent rhinorrhea/sinusitis, sore throat &gt; 3 weeks, odynophagia, dysphagia, trismus, non-healing ulcers, halitosis, numbness over teeth, hemoptysis, leukoplakia, erythroplasia, hoarseness, throat pain, stridor, neurologic asymmetry, diplopia, mental status change, constitutional symptoms</li><li><strong>Ix</strong>: flexible endoscopy, FNAB, tissue biopsy, CT/MRI, CT chest (staging), panendoscopy (primary site)</li><li><strong>Tx</strong>: early — surgical excision, radiation; advanced — surgical excision + radiation, or chemotherapy + radiation</li></ul>"
+      },
+      {
+       "t": "callout",
+       "kind": "tip",
+       "title": "Schulich Reviews",
+       "html": "<ul><li>Biopsy route: <strong>peripheral → CT-guided transthoracic needle</strong> (pneumothorax risk); <strong>central → bronchoscopy / EBUS</strong></li><li>Pick the biopsy site that gives <strong>stage and diagnosis in one procedure</strong></li></ul>"
+      }
+     ]
+    },
+    {
+     "id": "resp-w8-05",
+     "num": "05",
+     "name": "Pleura and Mediastinum Pathology",
+     "hasNote": false,
+     "coveredBy": {
+      "num": "07",
+      "name": "Respiratory Pharmacology",
+      "key": "resp-w6-07"
+     }
+    },
+    {
+     "id": "resp-w8-06",
+     "num": "06",
+     "name": "Pediatric Asthma",
+     "hasNote": true,
+     "title": "Asthma Drugs, Pediatric Airway and ENT, and Treatment Review",
+     "covers": [
+      {
+       "num": "07",
+       "name": "Cystic Fibrosis",
+       "key": "resp-w8-07"
+      },
+      {
+       "num": "—",
+       "name": "In Class - Epistaxis",
+       "key": "resp-w8-in-class-epistaxis"
+      }
+     ],
+     "framing": "<p>The respiratory drug classes, organised by <strong>what they do to airway tone and inflammation</strong> (↑ cAMP to relax, block M3 to stop constriction, suppress inflammation), then the <strong>stepwise asthma plan by age</strong>. The rest of the page covers the pediatric airway and ENT problems (congenital neck masses, dysphagia, stridor, hoarseness, tonsils, croup, foreign bodies, head and neck infections) and closes with a treatment review across the block.</p>",
+     "keypoints": "<p><strong>ICS is 1st-line for asthma; never LABA monotherapy</strong> — always with ICS. SABA/LABA work through <strong>↑ cAMP</strong>; methylxanthines and roflumilast stop its breakdown; <strong>ipratropium/tiotropium block M3</strong>. Theophylline has a <strong>narrow therapeutic index</strong> (CYP1A2). Rinse after ICS to prevent <strong>thrush</strong>. <strong>A spacer raises MDI deposition from 2-10% to 30%.</strong> Croup = <strong>subglottic</strong> (biphasic/inspiratory stridor, barking cough, steeple sign); the pediatric airway is <strong>narrowest at the cricoid</strong>. Esophageal dysphagia: <strong>solids only = mechanical, solids + liquids = motility</strong>. Lemierre's = <em>Fusobacterium necrophorum</em> jugular thrombophlebitis.</p>",
+     "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/4e8f32637e5e.svg",
+       "alt": "pediatric asthma overview.svg",
+       "w": 1152,
+       "h": 1374,
+       "interactive": "charts/resp-w8-06_2/"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Autonomic control of the airway</h5><p>Bronchoconstriction is mediated by <strong>inflammatory processes and parasympathetic tone</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Adrenergic receptors (GPCRs)",
+        "Cholinergic receptors"
+       ],
+       "rows": [
+        [
+         "<strong>Ligands</strong>",
+         "Epinephrine, dopamine, norepinephrine",
+         "Acetylcholine"
+        ],
+        [
+         "<strong>Location</strong>",
+         "<strong>Effector organs of the SNS</strong>",
+         "<strong>All ganglia of the SNS and PSNS</strong>; <strong>effector organs of the PSNS</strong>; sweat glands in the SNS<br><strong>Muscarinic</strong>: GPCRs on effector organs (PSNS, sweat glands) and in the brain"
+        ],
+        [
+         "<strong>Termination</strong>",
+         "Neuronal reuptake (avoids resynthesis); breakdown by <strong>monoamine oxidase</strong>; degradation by <strong>COMT</strong>",
+         "—"
+        ],
+        [
+         "<strong>Airway-relevant receptor</strong>",
+         "<strong>β2: vasodilation, bronchodilation, uterine relaxation, glycolysis, direct effect on skeletal muscle</strong>",
+         "<strong>M3: mucus production and bronchoconstriction</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Class",
+        "Examples",
+        "Mechanism",
+        "Indications",
+        "Adverse effects"
+       ],
+       "rows": [
+        [
+         "<strong>Inhaled β2-agonists</strong>",
+         "<strong>SABA</strong>: <strong>salbutamol/albuterol</strong> (MDI, DPI), terbutaline (DPI)<br><strong>LABA</strong>: <strong>formoterol</strong> (DPI), <strong>salmeterol</strong> (DPI)",
+         "Facilitate conversion of adenylate cyclase (AC) to cAMP → relaxes bronchial smooth muscle<br>Vasodilation; enhance mucociliary clearance; inhibit mast cell mediator release; respiratory stimulant",
+         "Acute or recurrent bronchospasm<br>Exercise-induced bronchospasm prophylaxis<br><strong>Do NOT use LABA monotherapy for asthma — combine with ICS</strong>",
+         "Hypoxemia; <strong>tremors</strong>; nervousness, anxiety, insomnia; <strong>palpitations, tachycardia, arrhythmias</strong>; flushing, hypotension; hypokalemia; <strong>tachyphylaxis</strong> (tolerance)"
+        ],
+        [
+         "<strong>Muscarinic antagonists</strong> (anticholinergics)",
+         "<strong>Ipratropium</strong> (MDI, nebulized; 4-6 h)<br><strong>Tiotropium</strong> (24 h)<br>Atropine",
+         "Competitively inhibit the <strong>M3 muscarinic receptor</strong>, preventing bronchoconstriction",
+         "COPD<br>Acute and chronic asthma",
+         "<strong>Dry mouth</strong>; ↑ intraocular pressure, urinary retention, tachycardia"
+        ],
+        [
+         "<strong>Methylxanthines</strong>",
+         "<strong>Theophylline</strong><br>Caffeine (&lt; 5 mg/kg; 2-4 h)",
+         "Inhibit phosphodiesterase (which hydrolyzes cAMP) → ↑ cAMP<br>Block adenosine A1 and A2 receptors; prostaglandin antagonist; inhibit Ca2+ influx into smooth muscle",
+         "<strong>Limited use — narrow therapeutic index</strong><br>COPD (3rd line), asthma (3rd line)",
+         "Neurotoxicity (seizures, tremor); cardiotoxicity (tachycardia, arrhythmias); LES reflux, nausea; diuretic<br><strong>Metabolized by CYP1A2</strong>"
+        ],
+        [
+         "<strong>Inhaled corticosteroids</strong>",
+         "<strong>Budesonide</strong>, <strong>fluticasone</strong>, beclomethasone, mometasone",
+         "Anti-inflammatory; inhibit cytokine synthesis (IL-1, IL-2); inactivate NF-κB, which induces TNF-α",
+         "COPD<br><strong>Acute and chronic asthma (1st line)</strong><br><strong>Reverse β2-agonist tachyphylaxis</strong>",
+         "Sore mouth, hoarseness<br><strong>Oral thrush — rinse after use</strong><br><strong>Metabolized by CYP3A4</strong>"
+        ],
+        [
+         "<strong>Leukotriene receptor antagonists</strong>",
+         "<strong>Montelukast</strong>, <strong>zafirlukast</strong>, zileuton",
+         "Anti-inflammatory; block leukotriene receptors (CysLT1); inhibit bronchoconstriction",
+         "Allergic rhinitis; exercise-induced bronchoconstriction; <strong>aspirin-induced asthma</strong>; post-viral bronchial hyperreactivity",
+         "Nausea"
+        ],
+        [
+         "<strong>PDE-4 inhibitors</strong>",
+         "<strong>Roflumilast</strong>",
+         "Anti-inflammatory; inhibit PDE-4 → ↑ cAMP",
+         "Severe COPD with chronic bronchitis",
+         "N/V/D"
+        ],
+        [
+         "<strong>Anti-IgE mAb</strong>",
+         "<strong>Omalizumab</strong> — SC every 2-4 weeks",
+         "Binds free serum IgE at the Fc region; targets the Th2 pathway",
+         "Severe allergic asthma with ↑ IgE",
+         "Generally well tolerated, but very expensive"
+        ],
+        [
+         "<strong>Anti-IL-5 mAb</strong>",
+         "<strong>Mepolizumab</strong> (IL-5 receptor) — SC every 4 weeks<br><strong>Reslizumab</strong> (IL-5 receptor) — IV every 4 weeks<br><strong>Benralizumab</strong> (IL-5 receptor α)",
+         "Prevent IL-5-mediated eosinophil differentiation, maturation, activation and survival",
+         "Severe eosinophilic asthma",
+         "—"
+        ]
+       ],
+       "lead": "<p><strong>Respiratory drug classes</strong></p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Inhaled delivery</h5><ul><li><strong>Inhalation gives the best lung delivery with limited systemic effects</strong></li><li>Most effective drugs: <strong>1-5 μm</strong> diameter, moderate lipophilicity, low systemic activity, high therapeutic ratio</li><li>&gt; 10 μm deposit in the mouth/pharynx; &lt; 0.5 μm are inhaled and exhaled without depositing</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Device",
+        "Lung deposition"
+       ],
+       "rows": [
+        [
+         "<strong>Metered dose inhaler (MDI)</strong>",
+         "2-10% — improved with a spacer"
+        ],
+        [
+         "<strong>Spacer / aerochamber</strong> — slows particles; recommended for all MDIs",
+         "<strong>30%</strong>"
+        ],
+        [
+         "<strong>Dry powder inhaler (DPI)</strong> — breath-actuated, less coordination needed",
+         "20-30%"
+        ],
+        [
+         "<strong>Nebulizer</strong> — elderly, cognitive impairment, hospitalized; not used under COVID-19 protocols",
+         "2-12% — poor delivery"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Product",
+        "ICS + LABA",
+        "Colour"
+       ],
+       "rows": [
+        [
+         "<strong>Advair</strong>",
+         "Fluticasone + salmeterol",
+         "Purple"
+        ],
+        [
+         "<strong>Symbicort</strong>",
+         "Budesonide + formoterol",
+         "Red"
+        ],
+        [
+         "<strong>Zenhale</strong>",
+         "Mometasone + formoterol",
+         "Blue"
+        ]
+       ],
+       "lead": "<p><strong>Combination asthma products</strong></p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Step",
+        "Children &lt; 5",
+        "Children 6-11",
+        "Children &gt; 12"
+       ],
+       "rows": [
+        [
+         "1",
+         "Environmental control",
+         "Environmental control",
+         "Environmental control"
+        ],
+        [
+         "2",
+         "Low-dose ICS (200 mcg/day)",
+         "Low-dose ICS (200 mcg/day)",
+         "Low-dose ICS"
+        ],
+        [
+         "3",
+         "Medium-dose ICS (201-400 mcg/day)",
+         "Medium-dose ICS (201-400 mcg/day)",
+         "Add LABA"
+        ],
+        [
+         "4",
+         "Add LTRA",
+         "Add <strong>LABA</strong> or LTRA",
+         "Medium-dose ICS and/or add LTRA"
+        ],
+        [
+         "5",
+         "—",
+         "<strong>Prednisone</strong>",
+         "Prednisone"
+        ],
+        [
+         "6",
+         "—",
+         "—",
+         "Consider anti-IgE"
+        ]
+       ],
+       "lead": "<p><strong>Pediatric asthma — stepwise management</strong>. Under 5: <strong>avoid combination inhalers and oral prednisone if possible</strong>.</p>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/137fe1688a3e.jpg",
+       "alt": "2021 Asthma Management Continuum for preschoolers, children and adults",
+       "cap": "2021 asthma continuum: confirm the diagnosis, then SABA or budesonide/formoterol as needed on top of ICS by dose, adding LABA/LTRA by age; reassess control, technique and adherence at every step."
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/a8020f50715c.jpg",
+       "alt": "2017 Severe Asthma Management Continuum",
+       "cap": "Severe asthma: after high-dose ICS + LABA, assess the phenotype, then consider omalizumab (allergic, IgE 30-1300 IU/mL), anti-IL-5 (eosinophils ≥ 150-300 cells/μL) or chronic prednisone."
+      },
+      {
+       "t": "list",
+       "html": "<h5>Using an inhaler with spacer + mouthpiece</h5><ol><li>Open</li><li>Shake</li><li>Insert</li><li>Press down</li><li>Slow deep breath in, hold for 10 s</li><li>If another puff is needed, wait 30 s and repeat steps 2-5</li><li>Drink or brush teeth</li></ol><h5>Asthma exacerbation</h5><ul><li>Target <strong>SpO2 ≥ 90%</strong>; nebulizers (SABA, SAMA); oral steroids; monitor PEF for improvement</li><li><strong>Avoid: NSAIDs, beta blockers, sedatives</strong></li></ul>"
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Never LABA alone in asthma",
+       "html": "<p>LABA monotherapy is contraindicated in asthma — it must be combined with an ICS (as in Advair, Symbicort, Zenhale).</p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Congenital neck masses (&gt; 50%) — present at birth, but may not present at birth</h5><p><strong>Branchial cleft cyst</strong> (17% of masses) — <strong>lateral</strong></p><ul><li>Embryological arches normally fuse, but can form cysts and sinuses</li><li>Second cleft (&gt; 90% of branchial cleft anomalies); M:F</li><li>80% present by age 5; recurrent neck swelling with URTI, recurrent discharge in the lower neck</li><li>Tx: surgical excision of sinus and tract (3% recurrence); 20% recurrence if prior partial excision or abscess drainage</li></ul><p><strong>Thyroglossal duct cyst</strong> (16% of masses; 70% of congenital cysts) — <strong>midline</strong></p><ul><li>Infrahyoid 65%; suprahyoid 20%; hyoid 15%</li><li>Presents around ages 3-5; enlarges after URTI</li><li><strong>Elevates on tongue protrusion</strong></li><li>Tx: cystectomy (20% recurrence); <strong>Sistrunk procedure</strong> (&lt; 5% recurrence) — remove cyst, thyroglossal tract, middle of hyoid bone and base of tongue</li></ul><p><strong>Lymphatic vascular malformations</strong></p><ul><li>Most occur in the H&amp;N; 60% present at birth, 90% by age 2</li><li>Macrocystic: spaces &gt; 2 mL; microcystic: spaces &lt; 2 mL</li><li>Dx: soft mass in the posterior triangle, may change size, compressive symptoms, prone to infection or trauma, fixed to deep tissues</li><li>Ix: ultrasound (superficial), CT (extent), MRI (multiplanar)</li><li>Tx: watch and wait (unlikely to resolve spontaneously); aspiration (symptom control); sclerotherapy; incomplete excision (15-50% recurrence); complete excision (10% recurrence)</li></ul>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Dysphagia</h5><ul><li><strong>Dysphagia</strong> — subjective difficulty or abnormality of swallowing</li><li><strong>Odynophagia</strong> — pain with swallowing</li><li><strong>Globus sensation</strong> — functional esophageal disorder: sensation of a lump, retained bolus or tightness in the throat NOT due to a structural lesion, GERD, mucosal abnormality or motility disorder</li></ul><h5>Phases of swallowing</h5><ol><li><strong>Oral</strong>: preparatory (bolus formed, solids chewed); transit (tongue propels bolus to posterior oral cavity)</li><li><strong>Pharyngeal</strong>: peristalsis toward the UES; epiglottis deflects over the trachea, UES opens</li><li><strong>Esophageal</strong>: peristalsis toward the LES and into the stomach</li></ol>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Assessment",
+        "Who",
+        "Purpose"
+       ],
+       "rows": [
+        [
+         "<strong>Bedside clinical swallowing</strong>",
+         "SLP",
+         "Rules out neurologic impairment and obvious structural issues"
+        ],
+        [
+         "<strong>Modified barium swallow</strong> (MBS; videofluoroscopy) — barium + food",
+         "SLP, radiology",
+         "Rules out aspiration<br><strong>Mouth/throat problems: analyzes all three phases</strong>"
+        ],
+        [
+         "<strong>FEES</strong> (fibreoptic endoscopic evaluation of swallowing)",
+         "SLP",
+         "Laryngoscope views structures; visual feedback on aspiration"
+        ],
+        [
+         "<strong>Barium swallow</strong> (BS) — barium + water and other textures",
+         "Radiology",
+         "Esophageal motility, reflux and structural abnormalities<br><strong>Esophageal problems: throat and propulsion into the esophagus</strong>"
+        ],
+        [
+         "<strong>Upper endoscopy</strong> (EGD)",
+         "Gastroenterology",
+         "Structure and lining of esophagus/stomach; allows biopsy"
+        ]
+       ],
+       "lead": "<p><strong>Swallowing assessment modalities</strong></p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "Oropharyngeal",
+        "Esophageal"
+       ],
+       "rows": [
+        [
+         "<strong>Problem</strong>",
+         "Difficulty initiating a swallow",
+         "Difficulty several seconds after initiating a swallow"
+        ],
+        [
+         "<strong>Location</strong>",
+         "<strong>Cervical</strong>, rarely referred down",
+         "<strong>Retrosternal sticking</strong>, occasionally suprasternal"
+        ],
+        [
+         "<strong>Classification</strong>",
+         "Functional (reflex, coordination) vs structural (anatomic, cancers)<br>Progressive (neurodegenerative) vs non-progressive<br>Acute vs chronic",
+         "<strong>Mechanical</strong> (solids) vs <strong>motility</strong> (solids + liquids) — see algorithm"
+        ],
+        [
+         "<strong>Causes</strong>",
+         "Neurological: stroke, cerebral palsy, ALS, Parkinson's, dementia<br>Myopathic: connective tissue disease, myasthenia gravis<br>Structural: cervical web, oropharyngeal tumours, osteophytes<br>Iatrogenic: benzodiazepines, psychotropics",
+         "See algorithm"
+        ],
+        [
+         "<strong>Presentation</strong>",
+         "<strong>Direct</strong>: food spillage from lips, drooling, nasopharyngeal regurgitation, coughing, choking, residual food in pharynx, avoiding certain consistencies, posture changes<br><strong>Indirect</strong>: weight loss, repeated chest infections, bronchitis/pneumonia, prolonged meals, coughing, voice/articulation/speech/language changes",
+         "Heartburn, weight loss, hematemesis, anemia, regurgitation"
+        ],
+        [
+         "<strong>Ix</strong>",
+         "MBS, FEES",
+         "BS, endoscopy<br>Motility: <strong>high-resolution esophageal manometry = gold standard</strong>"
+        ],
+        [
+         "<strong>Complications</strong>",
+         "<strong>Aspiration</strong>, aspiration pneumonia, pneumonitis, malnutrition, dehydration, weight loss, death",
+         "—"
+        ],
+        [
+         "<strong>Tx</strong>",
+         "Swallowing therapy (SLP), dietary changes, feeding tubes",
+         "<strong>Mechanical</strong>: peptic stricture — treat cause, <strong>esophageal dilatation</strong> (bougie: Maloney, Savary; or balloon); cancer — esophagectomy, stenting, chemo, radiation; Schatzki ring and webs — dilatation; EoE — <strong>PPIs</strong>, swallowed inhaled steroids, dilatation, food elimination<br><strong>Motility</strong>: achalasia — CCBs, nitrates, Botox, <strong>pneumatic dilatation</strong>, <strong>POEM</strong>, <strong>laparoscopic Heller myotomy</strong>; distal esophageal spasm — reassurance, CCBs, nitrates, dilatation; jackhammer — reassurance, CCBs, nitrates; scleroderma — <strong>high-dose PPIs</strong>, dilatation; <strong>360° Nissen fundoplication is contraindicated</strong>"
+        ]
+       ],
+       "lead": "<p><strong>Oropharyngeal vs esophageal dysphagia</strong></p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Stridor — harsh sound from turbulent airflow</h5><ul><li><strong>Inspiratory</strong> = supraglottic, glottic</li><li><strong>Expiratory</strong> = lower airway</li><li><strong>Biphasic</strong> = subglottic</li><li>Surgical airway: <strong>cricothyrotomy</strong> through the cricothyroid membrane; <strong>tracheostomy</strong> below the cricoid cartilage</li></ul><h5>Hoarseness — workup</h5><ul><li><strong>Hx</strong>: age, occupation, voice use/abuse, character of hoarseness, risk factors (cancer, trauma, surgery), other ENT issues, systemic symptoms (weight loss, fever, sore throat)</li><li><strong>PEx</strong>: look, listen, feel</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Cause",
+        "Features",
+        "Tx"
+       ],
+       "rows": [
+        [
+         "<strong>Mechanical</strong>",
+         "Nodule, Reinke's edema, muscle tension dysphonia",
+         "Speech therapy, lifestyle modification"
+        ],
+        [
+         "",
+         "Neoplastic or hemorrhagic polyps",
+         "Surgical excision"
+        ],
+        [
+         "<strong>Vocal cord paralysis</strong>",
+         "<strong>Unilateral</strong> — hoarseness; a nerve problem",
+         "Watch and wait, speech therapy, medialization, injection laryngoplasty"
+        ],
+        [
+         "",
+         "<strong>Bilateral</strong> — airway; a brain problem",
+         "<strong>Secure the airway (tracheostomy)</strong>, address patient complaints"
+        ]
+       ],
+       "lead": "<p><strong>Hoarseness</strong> — red flags: persistent (&gt; 2 weeks) or progressive, positive risk factors, associated symptoms (dysphagia, otalgia, stridor)</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Grade",
+        "Tonsils occupy"
+       ],
+       "rows": [
+        [
+         "0",
+         "Entirely within the tonsillar pillar, or removed"
+        ],
+        [
+         "1",
+         "&lt; 25% of the lateral oropharynx"
+        ],
+        [
+         "2",
+         "26-50%"
+        ],
+        [
+         "3",
+         "51-75%"
+        ],
+        [
+         "4",
+         "&gt; 75%"
+        ]
+       ],
+       "lead": "<p><strong>Tonsillitis — grading tonsils</strong></p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Tonsillitis — workup</h5><ul><li><strong>Hx</strong>: tonsil size, redness, exudate, lymphadenopathy, exposures (previous infections and swabs), vaccinations</li><li><strong>PEx</strong>: trismus, reduced ROM, tonsil grade, size/exudate/cervical nodes</li><li><strong>Red flags</strong>: peritonsillar swelling, uvula deviation (<strong>peritonsillar abscess</strong>), trismus, restricted neck range (<strong>deep neck infection</strong>)</li><li><strong>Ix</strong>: CBC + diff, serology, tumour markers, TSH; CXR, CT, ultrasound</li><li><strong>Tx</strong>: watch and wait (48-72 h); antibiotics (amoxicillin + clavulanic acid); incision and drainage; tonsillectomy (bacterial)</li></ul><h5>Paradise criteria for tonsillectomy</h5><ul><li>7 episodes in 1 year, 5/year for 2 years, or 3/year for 3 years</li><li>Other indications: obstructive sleep apnea, malignancy, ADD, peritonsillar abscess, tonsil stones, chronic tonsillitis, halitosis</li></ul>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Pediatric upper airway</h5><ul><li>Tongue larger in proportion to the mouth</li><li>Pharynx smaller</li><li>Epiglottis larger and floppier</li><li>Larynx anterior and superior (C4 → C6/7 with growth) — protects the airway</li><li><strong>Narrowest at the cricoid</strong> (complete ring, no room to expand) — in adults, narrowest at the vocal folds</li><li>Trachea narrow and less rigid</li></ul><h5>Laryngotracheobronchitis (croup) — subglottic obstruction</h5><ul><li><strong>Most common cause of stridor</strong></li><li>Viral — parainfluenza, RSV, influenza</li><li>Ages 6 months to 3 years; spring and fall</li><li>Low-grade fever, respiratory distress, inspiratory stridor, hoarseness, <strong>barking cough</strong>, <strong>steeple sign</strong> on X-ray</li><li>Tx: hydration, cold humidification; steroids, nebulized epinephrine, intubation (rare)</li></ul><h5>Foreign body aspiration</h5><ul><li><strong>History is most important</strong></li><li>Most common at ages 1-3; boys &gt; girls</li><li><strong>Vegetable matter</strong> is the most common object; if there is one foreign body, check for more</li><li>Ix: inspiratory/expiratory CXR (air trapping in the affected lung); lateral decubitus film (uncooperative children)</li><li>Tx: retrieval in a controlled setting in the OR — laryngoscopy, bronchoscopy</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Source",
+        "Organisms"
+       ],
+       "rows": [
+        [
+         "<strong>Normal skin organisms</strong>",
+         "<em>Staphylococcus aureus</em> (MSSA, MRSA), group A streptococcus"
+        ],
+        [
+         "<strong>Normal oral flora</strong>",
+         "<em>Streptococcus</em> spp. (viridans group), <em>Peptostreptococcus</em>, <em>Fusobacterium</em>, <em>Parvimonas micra</em>, yeast"
+        ],
+        [
+         "<strong>Otitis externa</strong>",
+         "<em>Pseudomonas</em>"
+        ],
+        [
+         "<strong>Bacterial sinusitis / otitis media</strong>",
+         "<em>S. pneumoniae</em>, <em>H. influenzae</em>, <em>M. catarrhalis</em>, <em>S. aureus</em>"
+        ]
+       ],
+       "lead": "<p><strong>Head and neck infections — usual organisms</strong></p>"
+      },
+      {
+       "t": "list",
+       "html": "<h5>Deep neck space infections</h5><ul><li>Arise from a bacterial focus — teeth, tonsils, parotid, deep cervical nodes, middle ear, sinuses</li><li>Ix: CT</li><li>Tx: systemic antibiotics — ceftriaxone + flagyl, + vancomycin (MRSA risk factors), + piperacillin/tazobactam (pseudomonas coverage); incision and drainage</li></ul><h5>Lemierre's syndrome — infectious thrombophlebitis of the internal jugular vein (<em>Fusobacterium necrophorum</em>)</h5><ul><li>Pharyngitis, then fever &lt; 1 week later, chills, rigors, toxic appearance; induration along the internal jugular vein</li><li>Ix: CT with contrast</li><li>Tx: ceftriaxone + flagyl, anticoagulation, drain local abscesses</li><li>Complications: septic emboli to the lungs, intravascular access</li></ul><h5>Mucormycosis — angio-invasive fungal infection, high mortality; respiratory or skin presentation</h5><ul><li>Rapid-onset fever, sinus pain, headache, nasal discharge; <strong>necrotic palate</strong></li><li>Risk factors: severe immunocompromise, diabetes, steroids, iron chelator (deferoxamine)</li><li>Tx: IV amphotericin B, surgical debridement</li></ul>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/21591a684b72.jpg",
+       "alt": "Gram-positive organism classification tree",
+       "cap": "Gram-positive tree: cocci split by catalase (staph vs strep/enterococcus), staph by coagulase (S. aureus positive), strep by hemolysis."
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/5fcb1ba8e49d.jpg",
+       "alt": "Gram-negative organism classification tree",
+       "cap": "Gram-negative tree: aerobic bacilli split by growth on sheep blood agar, oxidase and lactose fermentation (Pseudomonas = oxidase-negative branch here, non-lactose fermenter)."
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/df2e4dd5c2b4.jpg",
+       "alt": "Map of organisms by gram stain and oxygen requirement",
+       "cap": "Organism map: gram-positives left, gram-negatives right, aerobes above, anaerobes below; resistance rises toward MRSA and Pseudomonas at the edges."
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/b52da622b0b1.jpg",
+       "alt": "Antibiotic coverage overlaid on the organism map",
+       "cap": "The same map overlaid with antibiotic coverage: each bar spans the organisms that drug covers, e.g. carbapenems the widest, vancomycin gram-positives only."
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Condition",
+        "Treatment"
+       ],
+       "rows": [
+        [
+         "High altitude",
+         "Rapid descent to sea level, supplemental O2, bedrest"
+        ],
+        [
+         "Obesity hypoventilation syndrome",
+         "Weight loss, positive airway pressure (bi-level PAP)"
+        ],
+        [
+         "COPD",
+         "Palliative care; O2 = 88-92%; LABA, LAMA, dual bronchodilators, inhaled corticosteroids<br><strong>Exacerbation</strong>: bronchodilators (SABA, SAMA), oral prednisone, antibiotics (ceftriaxone + azithromycin), O2 and BiPAP PRN"
+        ],
+        [
+         "Cystic fibrosis",
+         "<strong>Nutrition</strong>: fat-soluble vitamins, pancreatic enzymes, calories (NG feeds, G tube, TPN)<br><strong>Mechanical</strong>: percussion, postural drainage, positive expiratory physiotherapy, oscillating devices, thAIRapy vest, BiPAP, exercise<br><strong>Airway clearance</strong>: slow inhale, long open-mouth exhale; coughing<br>DNase (aerosolized dornase alfa); inhaled hypertonic saline; azithromycin<br><strong>CF modulators — Trikafta = ivacaftor (potentiator; opens Cl- channels) + tezacaftor (corrector; chaperones misfolded protein) + elexacaftor</strong><br>Lung transplant — <strong>FEV1 &lt; 30%</strong>, severe hypoxemia and/or hypercapnia, multiple admissions, major hemoptysis<br>Gene therapy: mRNA, gene transfer, gene editing"
+        ],
+        [
+         "Idiopathic pulmonary fibrosis",
+         "<strong>Lung transplant</strong> — younger patients; <strong>antifibrotics (pirfenidone, nintedanib)</strong> slow progression; <strong>corticosteroids are NOT effective</strong>"
+        ],
+        [
+         "Sarcoidosis",
+         "<strong>Stages I-II: can resolve spontaneously</strong>; stages III-IV: corticosteroids, other immunosuppressants"
+        ],
+        [
+         "Pneumonia",
+         "CAP: <strong>macrolide (azithromycin) + 3rd-gen cephalosporin (ceftriaxone)</strong>; fluoroquinolone (levofloxacin)<br>Nosocomial: <strong>piperacillin/tazobactam + vancomycin</strong><br>Fungal: endemic — itraconazole or fluconazole; disseminated — amphotericin B, newer azoles<br>HIV, CD4+ &lt; 200: <em>P. jirovecii</em> prophylaxis — TMP-SMX, pentamidine, dapsone, atovaquone<br>Viral: supportive; oseltamivir, zanamivir ↓ duration by 24 h"
+        ],
+        [
+         "Hemoptysis",
+         "Treat the cause: neoplasm — radiation, surgery, chemo; bronchitis — rest, hydration, NSAIDs (no antibiotics); bronchiectasis — oral antibiotics; pneumonia — antimicrobials; abscess — antibiotics, surgery if very large; TB — RIPE; vasculitis — prednisone"
+        ],
+        [
+         "DVT",
+         "Prophylaxis/acute: unfractionated heparin, LMWH (enoxaparin); long-term: DOACs (rivaroxaban, apixaban)"
+        ],
+        [
+         "PE",
+         "Anticoagulation: heparin, direct thrombin/factor Xa inhibitors"
+        ],
+        [
+         "Pleural effusion",
+         "Serial thoracentesis, indwelling pleural catheter, chest tube and talc pleurodesis"
+        ],
+        [
+         "Pneumothorax",
+         "Needle decompression, chest tube"
+        ],
+        [
+         "Lung cancer",
+         "Stages I-II: resection or radiation; III: chemo + radiotherapy; IV: palliative chemo ± radiation"
+        ]
+       ],
+       "lead": "<p><strong>Treatment review — lower respiratory</strong></p>"
+      },
+      {
+       "t": "figure",
+       "src": "assets/figures/2d9f2ef0e2b1.jpg",
+       "alt": "COPD management continuum",
+       "cap": "COPD treatment layers build as impairment worsens: integrated care + vaccines + prn short-acting bronchodilator for all, then long-acting inhalers, rehab, oral therapies, long-term O2, transplant."
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Condition",
+        "Treatment"
+       ],
+       "rows": [
+        [
+         "Thyroid nodules",
+         "Bethesda system; total thyroidectomy → levothyroxine for life"
+        ],
+        [
+         "Sialolithiasis",
+         "Gland massage, bimanual stone expression, hydration, sialagogues, antibiotics, surgical excision"
+        ],
+        [
+         "Sialadenitis",
+         "Gland massage, <strong>warm compress</strong>, hydration, sialagogues, <strong>antibiotics</strong>; reassess in 3 days"
+        ],
+        [
+         "Salivary gland tumours",
+         "Surgical excision (diagnostic + therapeutic), preserve facial nerve; radiation"
+        ],
+        [
+         "Head and neck cancer",
+         "Early: excision, radiation; advanced: excision + radiation, chemo + radiation"
+        ],
+        [
+         "Allergic rhinitis",
+         "Allergen avoidance; <strong>intranasal corticosteroids (&gt; age 2)</strong>; EpiPen; antihistamines, mast cell stabilizers; decongestants — <strong>rhinitis medicamentosa, 3-7 days ONLY</strong>; immunotherapy; turbinate reduction"
+        ],
+        [
+         "Acute bacterial rhinosinusitis",
+         "<strong>Watch and wait 7-10 days</strong> (1st line); <strong>intranasal corticosteroids, saline irrigation</strong> (1st line); antibiotics if &gt; 7 days or unwell — <strong>amoxicillin</strong>, azithromycin, TMP-SMX"
+        ],
+        [
+         "Chronic rhinosinusitis",
+         "<strong>Intranasal corticosteroids</strong>, saline irrigation, FESS; <strong>+ polyposis</strong> (more aggressive): <strong>oral corticosteroids</strong>"
+        ],
+        [
+         "Epistaxis",
+         "ABCs; reverse coagulopathy; <strong>anterior nasal pressure</strong> (10-15 min); unilateral silver nitrate cautery (outside in); packing (tampon, <strong>ribbon gauze</strong>, posterior); Floseal, tranexamic acid; surgery (ligate anterior ethmoid and sphenopalatine arteries); IR (embolize external carotid branches, NOT anterior ethmoid arteries)"
+        ]
+       ],
+       "lead": "<p><strong>Treatment review — ENT and head and neck</strong> (conditions treated above — hoarseness, croup, foreign body, tonsillitis, congenital cysts, dysphagia, Lemierre's, mucormycosis — are not repeated)</p>"
+      }
+     ]
+    },
+    {
+     "id": "resp-w8-07",
+     "num": "07",
+     "name": "Cystic Fibrosis",
+     "hasNote": false,
+     "coveredBy": {
+      "num": "06",
+      "name": "Pediatric Asthma",
+      "key": "resp-w8-06"
+     }
+    },
+    {
+     "id": "resp-w8-in-class-epistaxis",
+     "num": "—",
+     "name": "In Class - Epistaxis",
+     "hasNote": false,
+     "coveredBy": {
+      "num": "06",
+      "name": "Pediatric Asthma",
+      "key": "resp-w8-06"
+     }
+    }
+   ]
+  }
+ ],
+ "curated": "hand-edited 2026-09-27; do not regenerate blindly from the PDFs"
+}

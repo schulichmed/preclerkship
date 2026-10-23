@@ -1,0 +1,937 @@
+{
+ "name": "menopause overview",
+ "width": 1742,
+ "title": "Menopause: where she is in the transition (perimenopause, menopause, early menopause at 40 to 45, premature ovarian insufficiency under 40, each with its cycle and hormone cut-offs), then for hot flashes whether she can safely start menopausal hormone therapy (estrogen, plus progesterone if she has a uterus) or needs non-hormonal drugs, and for genitourinary symptoms local treatment in two steps",
+ "kinds": {
+  "pe_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pe_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "pe_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "me_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "me_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "me_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ea_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ea_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ea_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "po_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "po_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "po_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "my_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "my_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "my_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "mn_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mn_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "mn_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "gs_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gs_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "gs_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 344,
+   "w": 232,
+   "h": 1114,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 274,
+   "y": 344,
+   "w": 232,
+   "h": 1114,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 508,
+   "y": 344,
+   "w": 232,
+   "h": 1114,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 742,
+   "y": 344,
+   "w": 232,
+   "h": 1114,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1004,
+   "y": 344,
+   "w": 232,
+   "h": 1114,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 1238,
+   "y": 344,
+   "w": 232,
+   "h": 1114,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1500,
+   "y": 344,
+   "w": 232,
+   "h": 1114,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 490,
+   "h": 170,
+   "text": "DEFINED BY"
+  },
+  {
+   "x": 23,
+   "y": 700,
+   "h": 336,
+   "text": "CHECK"
+  },
+  {
+   "x": 23,
+   "y": 1076,
+   "h": 374,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 506,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Menopause: where is she in the transition, and can she take menopausal hormone therapy (MHT) for her symptom?",
+   "lines": [
+    "history: last menstrual period (LMP) · hot flashes, sleep, mood, genitourinary, libido · a blood clot or breast cancer?",
+    "abnormal or post-menopausal bleeding: see the ABNORMAL BLEEDING chart · bone: see the OSTEOPOROSIS chart"
+   ]
+  },
+  {
+   "id": "g_stage",
+   "x": 45,
+   "y": 158,
+   "w": 924,
+   "h": 114,
+   "kind": "plain",
+   "title": "WHERE IS SHE? set by her AGE and her LAST PERIOD",
+   "lines": [
+    "the same symptoms at every stage; the periods are what differ"
+   ]
+  },
+  {
+   "id": "g_vms",
+   "x": 1009,
+   "y": 158,
+   "w": 456,
+   "h": 114,
+   "kind": "plain",
+   "title": "HOT FLASHES: can she safely start MHT?",
+   "lines": [
+    "everyone first: cognitive behavioural therapy (CBT) · hypnosis · weight loss · cooling, avoid triggers",
+    "YES only if: NO contraindication AND < 60 AND < 10 years post menopause"
+   ]
+  },
+  {
+   "id": "g_gsm",
+   "x": 1505,
+   "y": 158,
+   "w": 222,
+   "h": 114,
+   "kind": "plain",
+   "title": "GENITOURINARY: treat it LOCALLY",
+   "lines": [
+    "estrogen deficiency of the genitourinary tract"
+   ]
+  },
+  {
+   "id": "pe_head_0_0",
+   "x": 45,
+   "y": 352,
+   "w": 222,
+   "h": 98,
+   "kind": "pe_h",
+   "title": "Perimenopause",
+   "lines": [
+    "'around menopause': periods not yet stopped"
+   ]
+  },
+  {
+   "id": "me_head_0_0",
+   "x": 279,
+   "y": 352,
+   "w": 222,
+   "h": 98,
+   "kind": "me_h",
+   "title": "Menopause",
+   "lines": [
+    "average age 51–52 in Canada"
+   ]
+  },
+  {
+   "id": "ea_head_0_0",
+   "x": 513,
+   "y": 352,
+   "w": 222,
+   "h": 98,
+   "kind": "ea_h",
+   "title": "Early menopause",
+   "lines": [
+    "menopause at 40–45"
+   ]
+  },
+  {
+   "id": "po_head_0_0",
+   "x": 747,
+   "y": 352,
+   "w": 222,
+   "h": 98,
+   "kind": "po_h",
+   "title": "Premature ovarian insufficiency (POI)",
+   "lines": [
+    "< 40 · or both ovaries removed before 40"
+   ]
+  },
+  {
+   "id": "my_head_0_0",
+   "x": 1009,
+   "y": 352,
+   "w": 222,
+   "h": 98,
+   "kind": "my_h",
+   "title": "MHT: ESTROGEN",
+   "lines": [
+    "the gold standard for hot flashes"
+   ]
+  },
+  {
+   "id": "mn_head_0_0",
+   "x": 1243,
+   "y": 352,
+   "w": 222,
+   "h": 98,
+   "kind": "mn_h",
+   "title": "NON-HORMONAL",
+   "lines": []
+  },
+  {
+   "id": "gs_head_0_0",
+   "x": 1505,
+   "y": 352,
+   "w": 222,
+   "h": 98,
+   "kind": "gs_h",
+   "title": "Genitourinary syndrome of menopause (GSM)",
+   "lines": []
+  },
+  {
+   "id": "pe_clue_0_0",
+   "x": 45,
+   "y": 490,
+   "w": 222,
+   "h": 170,
+   "kind": "pe_t",
+   "title": "Cycles SHORTEN, LENGTHEN, then CEASE",
+   "lines": [
+    "symptoms can start MANY YEARS before the last period"
+   ]
+  },
+  {
+   "id": "me_clue_0_0",
+   "x": 279,
+   "y": 490,
+   "w": 222,
+   "h": 170,
+   "kind": "me_t",
+   "title": "AMENORRHEA × 12 MONTHS",
+   "lines": []
+  },
+  {
+   "id": "ea_clue_0_0",
+   "x": 513,
+   "y": 490,
+   "w": 222,
+   "h": 170,
+   "kind": "ea_t",
+   "title": "Menopause before 45 = ↑ RISK",
+   "lines": [
+    "• coronary heart disease",
+    "• stroke",
+    "• cardiovascular + all-cause death",
+    "• cognition",
+    "• quality of life",
+    "• bone"
+   ]
+  },
+  {
+   "id": "po_clue_0_0",
+   "x": 747,
+   "y": 490,
+   "w": 222,
+   "h": 170,
+   "kind": "po_t",
+   "title": "BOTH",
+   "lines": [
+    "• disordered menses ≥ 4 months",
+    "• FSH > 25 IU/L"
+   ]
+  },
+  {
+   "id": "my_clue_0_0",
+   "x": 1009,
+   "y": 490,
+   "w": 222,
+   "h": 170,
+   "kind": "my_t",
+   "title": "Has she a UTERUS?",
+   "lines": [
+    "• yes → add PROGESTERONE",
+    "• no → estrogen alone"
+   ]
+  },
+  {
+   "id": "mn_clue_0_0",
+   "x": 1243,
+   "y": 490,
+   "w": 222,
+   "h": 170,
+   "kind": "mn_t",
+   "title": "Not safe to start MHT",
+   "lines": [
+    "• a contraindication",
+    "• or ≥ 60",
+    "• or ≥ 10 years post menopause"
+   ]
+  },
+  {
+   "id": "gs_clue_0_0",
+   "x": 1505,
+   "y": 490,
+   "w": 222,
+   "h": 170,
+   "kind": "gs_t",
+   "title": "Symptoms, any mix",
+   "lines": [
+    "• dryness, burning",
+    "• dyspareunia, ↓ libido",
+    "• urgency, dysuria, recurrent urinary tract infection"
+   ]
+  },
+  {
+   "id": "pe_inv_0_0",
+   "x": 45,
+   "y": 700,
+   "w": 222,
+   "h": 138,
+   "kind": "pe_w",
+   "title": "1 · Early transition",
+   "lines": [
+    "cycle lengths differ by ≥ 7 days, persistently"
+   ]
+  },
+  {
+   "id": "pe_inv_1_0",
+   "x": 45,
+   "y": 860,
+   "w": 222,
+   "h": 176,
+   "kind": "pe_w",
+   "title": "2 · Late transition: 1–3 years",
+   "lines": [
+    "• no period for ≥ 60 days",
+    "• follicle-stimulating hormone (FSH) > 25 IU/L"
+   ]
+  },
+  {
+   "id": "me_inv_0_0",
+   "x": 279,
+   "y": 700,
+   "w": 222,
+   "h": 157,
+   "kind": "me_w",
+   "title": "Early postmenopause",
+   "lines": [
+    "hot flashes most likely"
+   ]
+  },
+  {
+   "id": "me_inv_1_0",
+   "x": 279,
+   "y": 879,
+   "w": 222,
+   "h": 157,
+   "kind": "me_w",
+   "title": "Late postmenopause",
+   "lines": [
+    "genitourinary atrophy increases"
+   ]
+  },
+  {
+   "id": "ea_inv_0_0",
+   "x": 513,
+   "y": 700,
+   "w": 222,
+   "h": 336,
+   "kind": "ea_w",
+   "title": "Same cut-off, earlier",
+   "lines": [
+    "amenorrhea × 12 months, at 40–45"
+   ]
+  },
+  {
+   "id": "po_inv_0_0",
+   "x": 747,
+   "y": 700,
+   "w": 222,
+   "h": 80,
+   "kind": "po_w",
+   "title": "1 · Chemotherapy, pelvic radiation or surgery?",
+   "lines": [
+    "yes → iatrogenic"
+   ]
+  },
+  {
+   "id": "po_inv_1_0",
+   "x": 747,
+   "y": 802,
+   "w": 222,
+   "h": 80,
+   "kind": "po_w",
+   "title": "2 · Karyotype + FMR1 (fragile X) in ALL",
+   "lines": [
+    "after counselling + consent"
+   ]
+  },
+  {
+   "id": "po_inv_2_0",
+   "x": 747,
+   "y": 904,
+   "w": 222,
+   "h": 132,
+   "kind": "po_w",
+   "title": "3 · Autoimmune screen",
+   "lines": [
+    "• 21-hydroxylase antibodies",
+    "• thyroid-stimulating hormone (TSH)",
+    "• abnormal → autoimmune",
+    "• all normal → idiopathic"
+   ]
+  },
+  {
+   "id": "my_inv_0_0",
+   "x": 1009,
+   "y": 700,
+   "w": 222,
+   "h": 336,
+   "kind": "my_w",
+   "title": "Pick the route",
+   "lines": [
+    "• estrogen: pill, patch or gel",
+    "• progesterone: pill, intrauterine device (IUD), 5 years",
+    "• combined: pill, patch"
+   ]
+  },
+  {
+   "id": "mn_inv_0_0",
+   "x": 1243,
+   "y": 700,
+   "w": 222,
+   "h": 131,
+   "kind": "mn_w",
+   "title": "No estrogen OR progestogen",
+   "lines": [
+    "• undiagnosed vaginal bleeding",
+    "• breast cancer, ever"
+   ]
+  },
+  {
+   "id": "mn_inv_1_0",
+   "x": 1243,
+   "y": 853,
+   "w": 222,
+   "h": 183,
+   "kind": "mn_w",
+   "title": "No estrogen",
+   "lines": [
+    "• estrogen-dependent cancer",
+    "• heart disease",
+    "• clot or stroke, EVER",
+    "• thrombophilia",
+    "• liver disease",
+    "• pregnancy"
+   ]
+  },
+  {
+   "id": "gs_inv_0_0",
+   "x": 1505,
+   "y": 700,
+   "w": 222,
+   "h": 336,
+   "kind": "gs_w",
+   "title": "Examine the VULVA",
+   "lines": [
+    "• rule out skin conditions",
+    "• pale, thin",
+    "• vaginal pH > 5.0"
+   ]
+  },
+  {
+   "id": "pe_tx_0_0",
+   "x": 45,
+   "y": 1076,
+   "w": 222,
+   "h": 374,
+   "kind": "warn",
+   "title": "Irregular bleeding makes it HARD to treat",
+   "lines": [
+    "heavy or irregular: see the ABNORMAL BLEEDING chart"
+   ]
+  },
+  {
+   "id": "me_tx_0_0",
+   "x": 279,
+   "y": 1076,
+   "w": 222,
+   "h": 374,
+   "kind": "ok",
+   "title": "Treat the symptom she wants treated",
+   "lines": [
+    "• hot flashes → MHT or non-hormonal",
+    "• genitourinary → local"
+   ]
+  },
+  {
+   "id": "ea_tx_0_0",
+   "x": 513,
+   "y": 1076,
+   "w": 222,
+   "h": 374,
+   "kind": "ok",
+   "title": "MHT before 50",
+   "lines": [
+    "↓ all-cause mortality"
+   ]
+  },
+  {
+   "id": "po_tx_0_0",
+   "x": 747,
+   "y": 1076,
+   "w": 222,
+   "h": 374,
+   "kind": "warn",
+   "title": "Genetic cause",
+   "lines": [
+    "• genetic counselling",
+    "• consider her RELATIVES"
+   ]
+  },
+  {
+   "id": "my_tx_0_0",
+   "x": 1009,
+   "y": 1076,
+   "w": 222,
+   "h": 374,
+   "kind": "ok",
+   "title": "Estrogen, + progesterone with a uterus",
+   "lines": [
+    "75% fewer hot flashes"
+   ]
+  },
+  {
+   "id": "mn_tx_0_0",
+   "x": 1243,
+   "y": 1076,
+   "w": 222,
+   "h": 116,
+   "kind": "ok",
+   "title": "Antidepressants: 27–61% fewer",
+   "lines": [
+    "• venlafaxine, desvenlafaxine",
+    "• paroxetine, citalopram, escitalopram"
+   ]
+  },
+  {
+   "id": "mn_tx_1_0",
+   "x": 1243,
+   "y": 1214,
+   "w": 222,
+   "h": 98,
+   "kind": "ok",
+   "title": "Gabapentinoids: 45–71% fewer",
+   "lines": [
+    "• gabapentin",
+    "• pregabalin"
+   ]
+  },
+  {
+   "id": "mn_tx_2_0",
+   "x": 1243,
+   "y": 1334,
+   "w": 222,
+   "h": 116,
+   "kind": "ok",
+   "title": "Neurokinin receptor antagonists",
+   "lines": [
+    "• fezolinetant",
+    "• elinzanetant: calm the hot-flash neurons"
+   ]
+  },
+  {
+   "id": "gs_tx_0_0",
+   "x": 1505,
+   "y": 1076,
+   "w": 222,
+   "h": 185,
+   "kind": "ok",
+   "title": "1 · Lifestyle · lubricant · moisturizer",
+   "lines": [
+    "• avoid irritants",
+    "• ↓ caffeine",
+    "• regular sex",
+    "• physiotherapy"
+   ]
+  },
+  {
+   "id": "gs_tx_1_0",
+   "x": 1505,
+   "y": 1283,
+   "w": 222,
+   "h": 167,
+   "kind": "ok",
+   "title": "2 · ESTROGEN into the vagina",
+   "lines": [
+    "• or vaginal dehydroepiandrosterone (DHEA)",
+    "• oral ospemifene"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_stage",
+   "path": "M886.0 108V133H507.0V158"
+  },
+  {
+   "from": "root",
+   "to": "g_vms",
+   "path": "M886.0 108V133H1237.0V158"
+  },
+  {
+   "from": "root",
+   "to": "g_gsm",
+   "path": "M886.0 108V133H1616.0V158"
+  },
+  {
+   "from": "pe_inv_0_0",
+   "to": "pe_inv_1_0"
+  },
+  {
+   "from": "me_inv_0_0",
+   "to": "me_inv_1_0"
+  },
+  {
+   "from": "po_inv_0_0",
+   "to": "po_inv_1_0"
+  },
+  {
+   "from": "po_inv_1_0",
+   "to": "po_inv_2_0"
+  },
+  {
+   "from": "mn_inv_0_0",
+   "to": "mn_inv_1_0"
+  },
+  {
+   "from": "mn_tx_0_0",
+   "to": "mn_tx_1_0"
+  },
+  {
+   "from": "mn_tx_1_0",
+   "to": "mn_tx_2_0"
+  },
+  {
+   "from": "gs_tx_0_0",
+   "to": "gs_tx_1_0"
+  },
+  {
+   "from": "pe_head_0_0",
+   "to": "pe_clue_0_0"
+  },
+  {
+   "from": "pe_clue_0_0",
+   "to": "pe_inv_0_0"
+  },
+  {
+   "from": "pe_inv_1_0",
+   "to": "pe_tx_0_0"
+  },
+  {
+   "from": "g_stage",
+   "to": "pe_head_0_0",
+   "from_dx": -351,
+   "label": "periods changing",
+   "label_at": [
+    156.0,
+    312
+   ]
+  },
+  {
+   "from": "me_head_0_0",
+   "to": "me_clue_0_0"
+  },
+  {
+   "from": "me_clue_0_0",
+   "to": "me_inv_0_0"
+  },
+  {
+   "from": "me_inv_1_0",
+   "to": "me_tx_0_0"
+  },
+  {
+   "from": "g_stage",
+   "to": "me_head_0_0",
+   "from_dx": -117,
+   "label": "no period 12 mo",
+   "label_at": [
+    390.0,
+    312
+   ]
+  },
+  {
+   "from": "ea_head_0_0",
+   "to": "ea_clue_0_0"
+  },
+  {
+   "from": "ea_clue_0_0",
+   "to": "ea_inv_0_0"
+  },
+  {
+   "from": "ea_inv_0_0",
+   "to": "ea_tx_0_0"
+  },
+  {
+   "from": "g_stage",
+   "to": "ea_head_0_0",
+   "from_dx": 117,
+   "label": "age 40–45",
+   "label_at": [
+    624.0,
+    312
+   ]
+  },
+  {
+   "from": "po_head_0_0",
+   "to": "po_clue_0_0"
+  },
+  {
+   "from": "po_clue_0_0",
+   "to": "po_inv_0_0"
+  },
+  {
+   "from": "po_inv_2_0",
+   "to": "po_tx_0_0"
+  },
+  {
+   "from": "g_stage",
+   "to": "po_head_0_0",
+   "from_dx": 351,
+   "label": "under 40",
+   "label_at": [
+    858.0,
+    312
+   ]
+  },
+  {
+   "from": "my_head_0_0",
+   "to": "my_clue_0_0"
+  },
+  {
+   "from": "my_clue_0_0",
+   "to": "my_inv_0_0"
+  },
+  {
+   "from": "my_inv_0_0",
+   "to": "my_tx_0_0"
+  },
+  {
+   "from": "g_vms",
+   "to": "my_head_0_0",
+   "from_dx": -117,
+   "label": "YES",
+   "label_at": [
+    1120.0,
+    312
+   ]
+  },
+  {
+   "from": "mn_head_0_0",
+   "to": "mn_clue_0_0"
+  },
+  {
+   "from": "mn_clue_0_0",
+   "to": "mn_inv_0_0"
+  },
+  {
+   "from": "mn_inv_1_0",
+   "to": "mn_tx_0_0"
+  },
+  {
+   "from": "g_vms",
+   "to": "mn_head_0_0",
+   "from_dx": 117,
+   "label": "NO",
+   "label_at": [
+    1354.0,
+    312
+   ]
+  },
+  {
+   "from": "gs_head_0_0",
+   "to": "gs_clue_0_0"
+  },
+  {
+   "from": "gs_clue_0_0",
+   "to": "gs_inv_0_0"
+  },
+  {
+   "from": "gs_inv_0_0",
+   "to": "gs_tx_0_0"
+  },
+  {
+   "from": "g_gsm",
+   "to": "gs_head_0_0",
+   "from_dx": 0,
+   "label": "genitourinary",
+   "label_at": [
+    1616.0,
+    312
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1484,
+   "w": 1682,
+   "title": "Nutrition for every woman in menopause",
+   "items": [
+    "sodium < 1300 mg · vitamin D 800 IU · calcium 1200 mg"
+   ],
+   "cols": 1
+  }
+ ]
+}

@@ -1,0 +1,639 @@
+{
+ "name": "hypoxemia overview",
+ "width": 1544,
+ "title": "Hypoxemia worked out from the arterial blood gas: a normal alveolar-arterial gradient means too little oxygen reaches the alveoli (low inspired oxygen at altitude, or hypoventilation with a high PaCO2); a raised gradient means oxygen fails to cross into blood, sorted by diffusion capacity and imaging (diffusion limitation), the response to 100% oxygen (shunt) or neither (ventilation-perfusion mismatch, the commonest); a normal PaO2 with hypoxia suggests carbon monoxide",
+ "kinds": {
+  "pio_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pio_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "pio_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "hv_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hv_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "hv_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "vq_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vq_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "vq_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "df_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "df_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "df_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "sh_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sh_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "sh_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "co_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "co_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "co_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 390,
+   "w": 238,
+   "h": 508,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 280,
+   "y": 390,
+   "w": 238,
+   "h": 508,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 548,
+   "y": 390,
+   "w": 238,
+   "h": 508,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 788,
+   "y": 390,
+   "w": 238,
+   "h": 508,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1028,
+   "y": 390,
+   "w": 238,
+   "h": 508,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1296,
+   "y": 390,
+   "w": 238,
+   "h": 508,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 516,
+   "h": 80,
+   "text": "TELL IT BY"
+  },
+  {
+   "x": 23,
+   "y": 636,
+   "h": 254,
+   "text": "CAUSES"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 407,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Low O2 saturation: get an ARTERIAL gas. PaO2 < 80? Then: is the A-a GRADIENT normal?",
+   "lines": [
+    "arterial (PaO2) and alveolar (PAO2) O2 · alveolar gas: PAO2 = PIO2 − PaCO2 / 0.8 (room air: 150 − 1.25 × PaCO2)",
+    "alveolar-arterial (A-a) gradient = PAO2 − PaO2 · normal ≤ age / 4 + 4 · a venous gas does not help"
+   ]
+  },
+  {
+   "id": "g_n",
+   "x": 45,
+   "y": 138,
+   "w": 468,
+   "h": 80,
+   "kind": "plain",
+   "title": "A-a gradient NORMAL: too little O2 REACHES the alveoli",
+   "lines": [
+    "the lung itself is working"
+   ]
+  },
+  {
+   "id": "g_i",
+   "x": 553,
+   "y": 138,
+   "w": 708,
+   "h": 80,
+   "kind": "plain",
+   "title": "A-a gradient RAISED: O2 fails to CROSS into the blood",
+   "lines": [
+    "the problem is in the lung or its circulation"
+   ]
+  },
+  {
+   "id": "g_co",
+   "x": 1301,
+   "y": 138,
+   "w": 228,
+   "h": 80,
+   "kind": "plain",
+   "title": "PaO2 NORMAL, but the tissues are hypoxic",
+   "lines": [
+    "hypoxia without hypoxemia"
+   ]
+  },
+  {
+   "id": "t_n",
+   "x": 45,
+   "y": 258,
+   "w": 468,
+   "h": 60,
+   "kind": "plain",
+   "title": "What is the PaCO2?",
+   "lines": []
+  },
+  {
+   "id": "t_i",
+   "x": 553,
+   "y": 258,
+   "w": 708,
+   "h": 60,
+   "kind": "plain",
+   "title": "Check DLCO + imaging, then give 100% O2",
+   "lines": [
+    "V/Q = ventilation-perfusion ratio · DLCO = diffusion capacity"
+   ]
+  },
+  {
+   "id": "pio_head_0_0",
+   "x": 45,
+   "y": 398,
+   "w": 228,
+   "h": 78,
+   "kind": "pio_h",
+   "title": "Low inspired O2 (PIO2)",
+   "lines": [
+    "low barometric pressure"
+   ]
+  },
+  {
+   "id": "hv_head_0_0",
+   "x": 285,
+   "y": 398,
+   "w": 228,
+   "h": 78,
+   "kind": "hv_h",
+   "title": "Hypoventilation",
+   "lines": [
+    "alveolar O2 not replenished"
+   ]
+  },
+  {
+   "id": "vq_head_0_0",
+   "x": 553,
+   "y": 398,
+   "w": 228,
+   "h": 78,
+   "kind": "vq_h",
+   "title": "V/Q mismatch",
+   "lines": [
+    "the MOST COMMON cause"
+   ]
+  },
+  {
+   "id": "df_head_0_0",
+   "x": 793,
+   "y": 398,
+   "w": 228,
+   "h": 78,
+   "kind": "df_h",
+   "title": "Diffusion limitation",
+   "lines": [
+    "a thick, damaged membrane"
+   ]
+  },
+  {
+   "id": "sh_head_0_0",
+   "x": 1033,
+   "y": 398,
+   "w": 228,
+   "h": 78,
+   "kind": "sh_h",
+   "title": "Right-to-left shunt",
+   "lines": [
+    "blood bypasses ventilated lung (V/Q = 0)"
+   ]
+  },
+  {
+   "id": "co_head_0_0",
+   "x": 1301,
+   "y": 398,
+   "w": 228,
+   "h": 78,
+   "kind": "co_h",
+   "title": "Carbon monoxide poisoning",
+   "lines": [
+    "binds hemoglobin 240× more than O2"
+   ]
+  },
+  {
+   "id": "pio_test_0_0",
+   "x": 45,
+   "y": 516,
+   "w": 228,
+   "h": 80,
+   "kind": "pio_t",
+   "title": "HISTORY: high altitude",
+   "lines": [
+    "breathing harder: PaCO2 ↓, respiratory alkalosis"
+   ]
+  },
+  {
+   "id": "hv_test_0_0",
+   "x": 285,
+   "y": 516,
+   "w": 228,
+   "h": 80,
+   "kind": "hv_t",
+   "title": "PaCO2 ↑ with a NORMAL gradient",
+   "lines": [
+    "O2 falls as CO2 rises"
+   ]
+  },
+  {
+   "id": "vq_test_0_0",
+   "x": 553,
+   "y": 516,
+   "w": 228,
+   "h": 80,
+   "kind": "vq_t",
+   "title": "Improves with 100% O2",
+   "lines": [
+    "DLCO and imaging do not point to diffusion"
+   ]
+  },
+  {
+   "id": "df_test_0_0",
+   "x": 793,
+   "y": 516,
+   "w": 228,
+   "h": 80,
+   "kind": "df_t",
+   "title": "Low DLCO + fibrosis on imaging",
+   "lines": [
+    "worse with EXERCISE or altitude"
+   ]
+  },
+  {
+   "id": "sh_test_0_0",
+   "x": 1033,
+   "y": 516,
+   "w": 228,
+   "h": 80,
+   "kind": "sh_t",
+   "title": "PaO2 does NOT rise on 100% O2",
+   "lines": [
+    "PaCO2 usually NOT raised"
+   ]
+  },
+  {
+   "id": "co_test_0_0",
+   "x": 1301,
+   "y": 516,
+   "w": 228,
+   "h": 80,
+   "kind": "bad",
+   "title": "PaO2 AND pulse oximetry look NORMAL",
+   "lines": [
+    "both mislead"
+   ]
+  },
+  {
+   "id": "pio_cause_0_0",
+   "x": 45,
+   "y": 636,
+   "w": 228,
+   "h": 254,
+   "kind": "pio_w",
+   "title": "Can lead to altitude sickness",
+   "lines": []
+  },
+  {
+   "id": "hv_cause_0_0",
+   "x": 285,
+   "y": 636,
+   "w": 228,
+   "h": 254,
+   "kind": "hv_w",
+   "title": "Drive or pump",
+   "lines": [
+    "• opiates, benzodiazepines",
+    "• neuromuscular disease, muscle paralysis",
+    "• chest wall deformity, obesity"
+   ]
+  },
+  {
+   "id": "vq_cause_0_0",
+   "x": 553,
+   "y": 636,
+   "w": 228,
+   "h": 116,
+   "kind": "vq_w",
+   "title": "Too little ventilation (low V/Q)",
+   "lines": [
+    "• asthma, chronic bronchitis, mucus plugs",
+    "• pneumonia, pulmonary edema"
+   ]
+  },
+  {
+   "id": "vq_cause_1_0",
+   "x": 553,
+   "y": 774,
+   "w": 228,
+   "h": 116,
+   "kind": "vq_w",
+   "title": "Too little perfusion (dead space)",
+   "lines": [
+    "• pulmonary embolism",
+    "• chronic obstructive pulmonary disease: lost capillaries"
+   ]
+  },
+  {
+   "id": "df_cause_0_0",
+   "x": 793,
+   "y": 636,
+   "w": 228,
+   "h": 254,
+   "kind": "df_w",
+   "title": "Interstitium",
+   "lines": [
+    "• interstitial lung disease, fibrosis",
+    "• asbestosis, sarcoidosis"
+   ]
+  },
+  {
+   "id": "sh_cause_0_0",
+   "x": 1033,
+   "y": 636,
+   "w": 228,
+   "h": 134,
+   "kind": "sh_w",
+   "title": "Lung",
+   "lines": [
+    "• acute respiratory distress syndrome",
+    "• pulmonary arteriovenous fistula"
+   ]
+  },
+  {
+   "id": "sh_cause_1_0",
+   "x": 1033,
+   "y": 792,
+   "w": 228,
+   "h": 98,
+   "kind": "sh_w",
+   "title": "Heart",
+   "lines": [
+    "intracardiac: tetralogy of Fallot"
+   ]
+  },
+  {
+   "id": "co_cause_0_0",
+   "x": 1301,
+   "y": 636,
+   "w": 228,
+   "h": 254,
+   "kind": "co_w",
+   "title": "O2 CONTENT is low",
+   "lines": [
+    "the O2 dissociation curve shifts LEFT"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_n",
+   "path": "M787.0 88V113H279.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_i",
+   "path": "M787.0 88V113H907.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_co",
+   "path": "M787.0 88V113H1415.0V138"
+  },
+  {
+   "from": "g_n",
+   "to": "t_n",
+   "from_dx": 0
+  },
+  {
+   "from": "g_i",
+   "to": "t_i",
+   "from_dx": 0
+  },
+  {
+   "from": "vq_cause_0_0",
+   "to": "vq_cause_1_0"
+  },
+  {
+   "from": "sh_cause_0_0",
+   "to": "sh_cause_1_0"
+  },
+  {
+   "from": "pio_head_0_0",
+   "to": "pio_test_0_0"
+  },
+  {
+   "from": "pio_test_0_0",
+   "to": "pio_cause_0_0"
+  },
+  {
+   "from": "t_n",
+   "to": "pio_head_0_0",
+   "from_dx": -120,
+   "label": "normal or LOW",
+   "label_at": [
+    159.0,
+    358
+   ]
+  },
+  {
+   "from": "hv_head_0_0",
+   "to": "hv_test_0_0"
+  },
+  {
+   "from": "hv_test_0_0",
+   "to": "hv_cause_0_0"
+  },
+  {
+   "from": "t_n",
+   "to": "hv_head_0_0",
+   "from_dx": 120,
+   "label": "HIGH",
+   "label_at": [
+    399.0,
+    358
+   ]
+  },
+  {
+   "from": "vq_head_0_0",
+   "to": "vq_test_0_0"
+  },
+  {
+   "from": "vq_test_0_0",
+   "to": "vq_cause_0_0"
+  },
+  {
+   "from": "t_i",
+   "to": "vq_head_0_0",
+   "from_dx": -240,
+   "label": "neither",
+   "label_at": [
+    667.0,
+    358
+   ]
+  },
+  {
+   "from": "df_head_0_0",
+   "to": "df_test_0_0"
+  },
+  {
+   "from": "df_test_0_0",
+   "to": "df_cause_0_0"
+  },
+  {
+   "from": "t_i",
+   "to": "df_head_0_0",
+   "from_dx": 0,
+   "label": "DLCO ↓ + fibrosis",
+   "label_at": [
+    907.0,
+    358
+   ]
+  },
+  {
+   "from": "sh_head_0_0",
+   "to": "sh_test_0_0"
+  },
+  {
+   "from": "sh_test_0_0",
+   "to": "sh_cause_0_0"
+  },
+  {
+   "from": "t_i",
+   "to": "sh_head_0_0",
+   "from_dx": 240,
+   "label": "NO rise on 100% O2",
+   "label_at": [
+    1147.0,
+    358
+   ]
+  },
+  {
+   "from": "co_head_0_0",
+   "to": "co_test_0_0"
+  },
+  {
+   "from": "co_test_0_0",
+   "to": "co_cause_0_0"
+  },
+  {
+   "from": "g_co",
+   "to": "co_head_0_0",
+   "from_dx": 0,
+   "label": "O2 content ↓",
+   "label_at": [
+    1415.0,
+    358
+   ]
+  }
+ ],
+ "panels": []
+}

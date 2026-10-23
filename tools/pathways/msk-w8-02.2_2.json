@@ -1,0 +1,482 @@
+{
+ "name": "rotator cuff disease overview",
+ "width": 1152,
+ "title": "Rotator cuff disease staged by how far the tendon has gone: stage I inflamed but intact, stage II partial-thickness and stage III full-thickness defects, and rotator cuff arthropathy with the humerus riding up to the acromion; treatment by stage once nonoperative care fails, with the examination and the causes in panels",
+ "kinds": {
+  "s1_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "s1_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "s1_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "s2_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "s2_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "s2_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "s3_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "s3_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "s3_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ar_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ar_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ar_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 260,
+   "h": 360,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 330,
+   "y": 270,
+   "w": 260,
+   "h": 360,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 592,
+   "y": 270,
+   "w": 260,
+   "h": 360,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 882,
+   "y": 270,
+   "w": 260,
+   "h": 360,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 378,
+   "h": 78,
+   "text": "THE TENDON"
+  },
+  {
+   "x": 23,
+   "y": 496,
+   "h": 126,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 211,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Rotator cuff disease: how far has the TENDON gone?",
+   "lines": [
+    "most common shoulder disorder · onset in the 40s · progressive",
+    "pain · weakness · restricted motion: ACTIVE motion << PASSIVE"
+   ]
+  },
+  {
+   "id": "g_in",
+   "x": 45,
+   "y": 138,
+   "w": 250,
+   "h": 60,
+   "kind": "plain",
+   "title": "TENDON INTACT",
+   "lines": [
+    "impingement"
+   ]
+  },
+  {
+   "id": "g_tr",
+   "x": 335,
+   "y": 138,
+   "w": 512,
+   "h": 60,
+   "kind": "plain",
+   "title": "TENDON TORN",
+   "lines": [
+    "how deep is the defect?"
+   ]
+  },
+  {
+   "id": "g_ma",
+   "x": 887,
+   "y": 138,
+   "w": 250,
+   "h": 60,
+   "kind": "plain",
+   "title": "MASSIVE DEFECT",
+   "lines": [
+    "humerus migrates up"
+   ]
+  },
+  {
+   "id": "s1_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 250,
+   "h": 60,
+   "kind": "s1_h",
+   "title": "Stage I",
+   "lines": [
+    "inflammation"
+   ]
+  },
+  {
+   "id": "s2_head_0_0",
+   "x": 335,
+   "y": 278,
+   "w": 250,
+   "h": 60,
+   "kind": "s2_h",
+   "title": "Stage II",
+   "lines": [
+    "partial-thickness defect"
+   ]
+  },
+  {
+   "id": "s3_head_0_0",
+   "x": 597,
+   "y": 278,
+   "w": 250,
+   "h": 60,
+   "kind": "s3_h",
+   "title": "Stage III",
+   "lines": [
+    "full-thickness defect"
+   ]
+  },
+  {
+   "id": "ar_head_0_0",
+   "x": 887,
+   "y": 278,
+   "w": 250,
+   "h": 60,
+   "kind": "ar_h",
+   "title": "Rotator cuff arthropathy",
+   "lines": [
+    "massive defect in the cuff"
+   ]
+  },
+  {
+   "id": "s1_path_0_0",
+   "x": 45,
+   "y": 378,
+   "w": 250,
+   "h": 78,
+   "kind": "s1_t",
+   "title": "Intact but inflamed",
+   "lines": [
+    "no defect yet"
+   ]
+  },
+  {
+   "id": "s2_path_0_0",
+   "x": 335,
+   "y": 378,
+   "w": 250,
+   "h": 78,
+   "kind": "s2_t",
+   "title": "Part of the tendon torn",
+   "lines": []
+  },
+  {
+   "id": "s3_path_0_0",
+   "x": 597,
+   "y": 378,
+   "w": 250,
+   "h": 78,
+   "kind": "s3_t",
+   "title": "Torn through",
+   "lines": []
+  },
+  {
+   "id": "ar_path_0_0",
+   "x": 887,
+   "y": 378,
+   "w": 250,
+   "h": 78,
+   "kind": "ar_t",
+   "title": "Humerus migrates UP",
+   "lines": [
+    "• abuts the acromion",
+    "• arthritis results"
+   ]
+  },
+  {
+   "id": "s1_tx_0_0",
+   "x": 45,
+   "y": 496,
+   "w": 250,
+   "h": 42,
+   "kind": "ok",
+   "title": "1 · Physiotherapy",
+   "lines": []
+  },
+  {
+   "id": "s1_tx_1_0",
+   "x": 45,
+   "y": 560,
+   "w": 250,
+   "h": 62,
+   "kind": "warn",
+   "title": "2 · Subacromial decompression",
+   "lines": []
+  },
+  {
+   "id": "s2_tx_0_0",
+   "x": 335,
+   "y": 496,
+   "w": 250,
+   "h": 42,
+   "kind": "ok",
+   "title": "1 · Physiotherapy",
+   "lines": []
+  },
+  {
+   "id": "s2_tx_1_0",
+   "x": 335,
+   "y": 560,
+   "w": 250,
+   "h": 62,
+   "kind": "warn",
+   "title": "2 · CONSIDER rotator cuff repair",
+   "lines": []
+  },
+  {
+   "id": "s3_tx_0_0",
+   "x": 597,
+   "y": 496,
+   "w": 250,
+   "h": 52,
+   "kind": "ok",
+   "title": "1 · Physiotherapy",
+   "lines": []
+  },
+  {
+   "id": "s3_tx_1_0",
+   "x": 597,
+   "y": 570,
+   "w": 250,
+   "h": 52,
+   "kind": "warn",
+   "title": "2 · Rotator cuff repair",
+   "lines": []
+  },
+  {
+   "id": "ar_tx_0_0",
+   "x": 887,
+   "y": 496,
+   "w": 250,
+   "h": 42,
+   "kind": "ok",
+   "title": "1 · Physiotherapy",
+   "lines": []
+  },
+  {
+   "id": "ar_tx_1_0",
+   "x": 887,
+   "y": 560,
+   "w": 250,
+   "h": 62,
+   "kind": "bad",
+   "title": "2 · Reverse shoulder replacement",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_in",
+   "path": "M591.0 88V113H170.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_tr",
+   "path": "M591.0 88V113H591.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_ma",
+   "path": "M591.0 88V113H1012.0V138"
+  },
+  {
+   "from": "s1_tx_0_0",
+   "to": "s1_tx_1_0"
+  },
+  {
+   "from": "s2_tx_0_0",
+   "to": "s2_tx_1_0"
+  },
+  {
+   "from": "s3_tx_0_0",
+   "to": "s3_tx_1_0"
+  },
+  {
+   "from": "ar_tx_0_0",
+   "to": "ar_tx_1_0"
+  },
+  {
+   "from": "s1_head_0_0",
+   "to": "s1_path_0_0"
+  },
+  {
+   "from": "s1_path_0_0",
+   "to": "s1_tx_0_0"
+  },
+  {
+   "from": "g_in",
+   "to": "s1_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "s2_head_0_0",
+   "to": "s2_path_0_0"
+  },
+  {
+   "from": "s2_path_0_0",
+   "to": "s2_tx_0_0"
+  },
+  {
+   "from": "g_tr",
+   "to": "s2_head_0_0",
+   "from_dx": -131,
+   "label": "partial",
+   "label_at": [
+    460.0,
+    238
+   ]
+  },
+  {
+   "from": "s3_head_0_0",
+   "to": "s3_path_0_0"
+  },
+  {
+   "from": "s3_path_0_0",
+   "to": "s3_tx_0_0"
+  },
+  {
+   "from": "g_tr",
+   "to": "s3_head_0_0",
+   "from_dx": 131,
+   "label": "full",
+   "label_at": [
+    722.0,
+    238
+   ]
+  },
+  {
+   "from": "ar_head_0_0",
+   "to": "ar_path_0_0"
+  },
+  {
+   "from": "ar_path_0_0",
+   "to": "ar_tx_0_0"
+  },
+  {
+   "from": "g_ma",
+   "to": "ar_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 656,
+   "w": 355,
+   "title": "Physiotherapy FIRST at every stage",
+   "items": [
+    "education · activity modification · pain management (nonsteroidal anti-inflammatory drugs) · physiotherapy (muscle reconditioning) · injections",
+    "nonsurgical in the MAJORITY",
+    "step 2, SURGERY, only when: pain persists · weakness · after an acute injury"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 414,
+   "y": 656,
+   "w": 355,
+   "title": "Examination",
+   "items": [
+    "move: active << passive",
+    "impingement: Neer · Hawkins · painful arc",
+    "strength: supraspinatus · infraspinatus · subscapularis"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 782,
+   "y": 656,
+   "w": 355,
+   "title": "Why the tendon fails",
+   "items": [
+    "INTRINSIC (usual): vascularity · tension overload · tendon degeneration",
+    "EXTRINSIC: acromion shape (subacromial space volume)"
+   ],
+   "cols": 1
+  }
+ ]
+}

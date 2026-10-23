@@ -1,0 +1,109 @@
+{
+ "name": "approach to neonatal care overview",
+ "title": "The newborn needing extra care, sorted by what it must be kept: pink (resuscitation at birth, then respiratory distress told apart by who, timing and chest x-ray), warm (hypothermia), sweet (hypoglycemia screening and treatment), free of sepsis (risk, workup, antibiotics) and the yellow baby (jaundice red flags, investigations, phototherapy); each column gives presentation, numbered assessment and treatment, with a panel on routine care before discharge",
+ "col_w": 226,
+ "root": {
+  "title": "A newborn: keep it PINK, WARM and SWEET, and think SEPSIS in any sick baby",
+  "lines": [
+   "normal: heart rate 120–160 · respiratory rate 40–60 · axillary temperature 36.5–36.8 °C · never ignore tachypnea or tachycardia"
+  ]
+ },
+ "groups": [
+  {"id": "g_pink", "cols": [0, 1], "title": "PINK: is it BREATHING well?", "lines": []},
+  {"id": "g_warm", "cols": [2, 2], "title": "WARM", "lines": []},
+  {"id": "g_sweet", "cols": [3, 3], "title": "SWEET", "lines": []},
+  {"id": "g_sep", "cols": [4, 4], "title": "SICK", "lines": []},
+  {"id": "g_yel", "cols": [5, 5], "title": "YELLOW", "lines": []}
+ ],
+ "sections": ["head", "clue", "inv", "tx"],
+ "row_names": {"clue": "PRESENTS AS", "inv": "ASSESS", "tx": "TREATMENT"},
+ "columns": [
+  {
+   "id": "res", "colour": "teal", "drop_label": "at birth",
+   "head": [[["h", "Resuscitation at birth", ["the goal: ventilation"]]]],
+   "clue": [[["t", "Term? good tone? breathing or crying?", ["• YES → skin to skin, routine care", "• NO → warm, dry, position, stimulate, clear the airway"]]]],
+   "inv": [
+    [["bad", "1 · Apnea, gasping or heart rate < 100", ["→ VENTILATE within the first minute + pulse oximeter"]]],
+    [["w", "2 · Laboured or persistently cyanotic", ["→ pulse oximeter, oxygen if needed, consider continuous positive airway pressure (CPAP)"]]]
+   ],
+   "tx": [[["ok", "Targets", ["• chest rise, breath sounds", "• heart rate > 100", "• oxygen saturation only 85–95% by 10 min: transient hypoxia is normal"]]]]
+  },
+  {
+   "id": "resp", "colour": "blue", "drop_label": "distress later",
+   "head": [[["h", "Respiratory distress", ["work of breathing: grunting"]]]],
+   "clue": [[["t", "Who, and when?", ["• term, cesarean with no labour: at birth, gets better", "• preterm: at birth, worse to day 3–4", "• stressed baby: from birth"]]]],
+   "inv": [
+    [["t", "Chest x-ray", ["• fluid in the fissures: transient tachypnea of the newborn", "• ground glass, low volume, air bronchograms: respiratory distress syndrome (no surfactant)"]]],
+    [["w", "Patchy, like pneumonia", ["meconium aspiration, or pneumonia"]], ["w", "Black rim", ["pneumothorax"]]]
+   ],
+   "tx": [[["bad", "Pneumonia: any time, septic risk factors", ["group B Streptococcus, gram negatives → see SICK"]]]]
+  },
+  {
+   "id": "cold", "colour": "orange", "drop_label": "cold",
+   "head": [[["h", "Hypothermia", ["CANNOT shiver"]]]],
+   "clue": [[["t", "Cold stress", ["• wet, naked, large surface area", "• little fat, few reserves"]]]],
+   "inv": [[["w", "Uses up glucose", ["→ check SWEET"]]]],
+   "tx": [
+    [["ok", "1 · Dry, wrap, hat, warmer room", []]],
+    [["ok", "2 · < 1500 g → incubator", ["radiant warmer, humidity"]]]
+   ]
+  },
+  {
+   "id": "glu", "colour": "purple", "drop_label": "at risk",
+   "head": [[["h", "Hypoglycemia", ["glycogen lasts 8–10 h · gluconeogenesis normal only by day 2–4"]]]],
+   "clue": [
+    [["t", "Jittery, irritable, lethargic, poor feeding", ["can be a sign of SEPSIS"]]],
+    [["w", "Screen if at risk", ["• small (< 10th) or large (> 90th centile)", "• infant of a diabetic mother", "• preterm < 37 weeks, maternal labetalol"]]]
+   ],
+   "inv": [
+    [["t", "1 · Glucose 2 h after the first feed", []]],
+    [["w", "2 · Goal ≥ 2.6 mmol/L", ["≥ 3.3 after 72 h · at goal: no more sticks"]]]
+   ],
+   "tx": [
+    [["bad", "1 · SYMPTOMATIC = emergency", ["intravenous (IV) dextrose bolus + infusion: it injures neurons"]]],
+    [["ok", "2 · Well: early, frequent feeds", ["then IV dextrose, glucagon"]]]
+   ]
+  },
+  {
+   "id": "sep", "colour": "magenta", "drop_label": "unwell",
+   "head": [[["h", "Neonatal sepsis", ["the commonest life-threatening newborn problem · early < 3 days, late > 3 days"]]]],
+   "clue": [
+    [["t", "Subtle", ["• temperature < 36.3 or > 37.2 °C", "• apnea, grunting, poor feeding, glucose < 2.6", "• floppy or jittery, seizure"]]],
+    [["w", "Risk", ["• chorioamnionitis, group B Streptococcus", "• membranes ruptured > 18 h, preterm", "• 5-minute Apgar < 6"]]]
+   ],
+   "inv": [
+    [["bad", "UNWELL or PRETERM → full workup", ["• blood, urine, cerebrospinal fluid cultures", "• blood count, C-reactive protein, clotting", "• herpes simplex virus (HSV) swabs"]]],
+    [["w", "WELL + risk factors", ["observe 24 h before discharge"]]]
+   ],
+   "tx": [
+    [["bad", "1 · Antibiotics ASAP: never wait and see", ["• ampicillin + gentamicin", "• + acyclovir for HSV"]]],
+    [["ok", "2 · Support", ["ventilation, circulation, disseminated intravascular coagulation"]]]
+   ]
+  },
+  {
+   "id": "jaun", "colour": "olive", "drop_label": "yellow",
+   "head": [[["h", "Jaundice", ["most: exaggerated physiologic or breastfeeding jaundice"]]]],
+   "clue": [
+    [["t", "Head to toe: blanch the nose", ["colour does NOT predict the level"]]],
+    [["bad", "RED FLAGS", ["• jaundice in the first 24 h, or > 2 weeks (term)", "• rise > 85 μmol/L/day, or total > 340", "• direct > 30, or > 20% of total"]]]
+   ],
+   "inv": [
+    [["t", "1 · Bilirubin on EVERY baby at 24 h", ["skin meter or blood · plot on the curve"]]],
+    [["w", "2 · Red flag → work up", ["• total + direct bilirubin, hemoglobin", "• direct antiglobulin test (DAT)", "• mother's and baby's blood groups"]]]
+   ],
+   "tx": [
+    [["ok", "1 · Phototherapy + treat the cause", ["start lower if < 38 weeks, albumin < 30, hemolysis, sepsis"]]],
+    [["bad", "2 · Not enough → IV immunoglobulin or exchange transfusion", ["untreated: encephalopathy → kernicterus"]]]
+   ]
+  }
+ ],
+ "panels": [
+  {"title": "Every newborn before going home", "items": [
+   "Apgar at 1 and 5 min, 0–2 each: appearance, pulse (< 100 scores 1), grimace, activity (tone), respiration",
+   "full exam within 24 h: dysmorphic features, heart (may have no murmur), a patent gut · urine and meconium passed",
+   "vitamin K intramuscular + erythromycin eye ointment at birth",
+   "screens: pulse oximetry right hand vs a foot at 24–36 h · Ontario newborn screen · hearing",
+   "weight: loses up to 10%, back to birth weight by 7–10 days · seen 72 h after discharge"
+  ]}
+ ]
+}

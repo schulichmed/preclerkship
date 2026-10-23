@@ -1,0 +1,870 @@
+{
+ "name": "pneumonia overview",
+ "width": 1304,
+ "title": "Pneumonia decision chart: where it was acquired and how sick the patient is choose the empiric antibiotics; community-acquired splits into outpatient and inpatient, nosocomial is hospital- or ventilator-associated, and aspiration or a compromised host changes the organisms; each column gives clues, investigations and treatment in order",
+ "kinds": {
+  "op_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "op_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "op_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ip_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ip_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ip_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ho_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ho_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ho_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "as_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "as_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "as_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "ic_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ic_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ic_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 426,
+   "w": 238,
+   "h": 986,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 280,
+   "y": 426,
+   "w": 238,
+   "h": 986,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 548,
+   "y": 426,
+   "w": 238,
+   "h": 986,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 816,
+   "y": 426,
+   "w": 238,
+   "h": 986,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1056,
+   "y": 426,
+   "w": 238,
+   "h": 986,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 572,
+   "h": 234,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 846,
+   "h": 254,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1140,
+   "h": 264,
+   "text": "EMPIRIC TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 287,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Pneumonia = infection + a NEW infiltrate. WHERE was it caught, WHO is the host, HOW sick?",
+   "lines": [
+    "the setting picks the likely bugs, and so the EMPIRIC antibiotics",
+    "1st dose AS SOON AS POSSIBLE (after blood cultures) · ≥ 5 days, until afebrile 48–72 h",
+    "NOT improving? wrong DRUG (resistance) · wrong BUG (atypical) · a COMPLICATION (empyema, abscess, acute respiratory distress syndrome) · wrong DIAGNOSIS (pulmonary embolism, heart failure)"
+   ]
+  },
+  {
+   "id": "g_cap",
+   "x": 45,
+   "y": 174,
+   "w": 468,
+   "h": 62,
+   "kind": "plain",
+   "title": "COMMUNITY-ACQUIRED (CAP)",
+   "lines": [
+    "typical vs atypical cannot be told apart clinically → treat BOTH"
+   ]
+  },
+  {
+   "id": "g_hap",
+   "x": 553,
+   "y": 174,
+   "w": 228,
+   "h": 62,
+   "kind": "plain",
+   "title": "NOSOCOMIAL: ≥ 48 h in hospital",
+   "lines": []
+  },
+  {
+   "id": "g_host",
+   "x": 821,
+   "y": 174,
+   "w": 468,
+   "h": 62,
+   "kind": "plain",
+   "title": "The HOST changes the bugs",
+   "lines": []
+  },
+  {
+   "id": "t_cap",
+   "x": 45,
+   "y": 276,
+   "w": 468,
+   "h": 78,
+   "kind": "plain",
+   "title": "Severity score → setting of care",
+   "lines": [
+    "• CURB-65 (most used), Pneumonia Severity Index",
+    "• ATS/IDSA score: severe vs non-severe"
+   ]
+  },
+  {
+   "id": "op_head_0_0",
+   "x": 45,
+   "y": 434,
+   "w": 228,
+   "h": 98,
+   "kind": "op_h",
+   "title": "CAP: outpatient",
+   "lines": [
+    "S. pneumoniae, H. influenzae",
+    "atypicals: Mycoplasma, Chlamydia, viruses"
+   ]
+  },
+  {
+   "id": "ip_head_0_0",
+   "x": 285,
+   "y": 434,
+   "w": 228,
+   "h": 98,
+   "kind": "ip_h",
+   "title": "CAP: inpatient",
+   "lines": [
+    "the severity score says ADMIT"
+   ]
+  },
+  {
+   "id": "ho_head_0_0",
+   "x": 553,
+   "y": 434,
+   "w": 228,
+   "h": 98,
+   "kind": "ho_h",
+   "title": "Hospital-acquired (HAP) / ventilator (VAP)",
+   "lines": [
+    "≥ 48 h after admission (HAP) or intubation (VAP)"
+   ]
+  },
+  {
+   "id": "as_head_0_0",
+   "x": 821,
+   "y": 434,
+   "w": 228,
+   "h": 98,
+   "kind": "as_h",
+   "title": "Aspiration / anaerobic",
+   "lines": [
+    "polymicrobial: oral anaerobes",
+    "can CAVITATE → lung abscess"
+   ]
+  },
+  {
+   "id": "ic_head_0_0",
+   "x": 1061,
+   "y": 434,
+   "w": 228,
+   "h": 98,
+   "kind": "ic_h",
+   "title": "Immunocompromised host",
+   "lines": [
+    "any bug: rare and unusual ones too"
+   ]
+  },
+  {
+   "id": "op_pres_0_0",
+   "x": 45.0,
+   "y": 572,
+   "w": 109.0,
+   "h": 134,
+   "kind": "op_t",
+   "title": "Typical (lobar)",
+   "lines": [
+    "• ABRUPT",
+    "• purulent sputum",
+    "• consolidation"
+   ]
+  },
+  {
+   "id": "op_pres_0_1",
+   "x": 164.0,
+   "y": 572,
+   "w": 109.0,
+   "h": 134,
+   "kind": "op_t",
+   "title": "Atypical",
+   "lines": [
+    "• INSIDIOUS",
+    "• dry cough",
+    "• diffuse infiltrates"
+   ]
+  },
+  {
+   "id": "op_pres_1_0",
+   "x": 45,
+   "y": 728,
+   "w": 228,
+   "h": 78,
+   "kind": "op_w",
+   "title": "ELDERLY",
+   "lines": [
+    "• may have NO cough or fever",
+    "• confusion, falls, incontinence"
+   ]
+  },
+  {
+   "id": "ip_pres_0_0",
+   "x": 285,
+   "y": 572,
+   "w": 228,
+   "h": 87,
+   "kind": "ip_t",
+   "title": "NON-severe → ward",
+   "lines": []
+  },
+  {
+   "id": "ip_pres_1_0",
+   "x": 285,
+   "y": 681,
+   "w": 228,
+   "h": 125,
+   "kind": "ip_w",
+   "title": "SEVERE → intensive care (ICU)",
+   "lines": [
+    "ATS/IDSA criteria"
+   ]
+  },
+  {
+   "id": "ho_pres_0_0",
+   "x": 553,
+   "y": 572,
+   "w": 228,
+   "h": 124,
+   "kind": "ho_t",
+   "title": "Gram-NEGATIVE rods",
+   "lines": [
+    "• E. coli, Klebsiella",
+    "• Pseudomonas",
+    "• S. aureus"
+   ]
+  },
+  {
+   "id": "ho_pres_1_0",
+   "x": 553,
+   "y": 718,
+   "w": 228,
+   "h": 88,
+   "kind": "ho_w",
+   "title": "From MICROASPIRATION",
+   "lines": [
+    "long stay, ↓ consciousness"
+   ]
+  },
+  {
+   "id": "as_pres_0_0",
+   "x": 821,
+   "y": 572,
+   "w": 228,
+   "h": 106,
+   "kind": "as_t",
+   "title": "Who",
+   "lines": [
+    "• dysphagia, older",
+    "• alcohol or drugs: ↓ consciousness",
+    "• recent hospital stay"
+   ]
+  },
+  {
+   "id": "as_pres_1_0",
+   "x": 821,
+   "y": 700,
+   "w": 228,
+   "h": 106,
+   "kind": "as_w",
+   "title": "CXR",
+   "lines": [
+    "• LOWER lobes (posterior upper if supine)",
+    "• cavity"
+   ]
+  },
+  {
+   "id": "ic_pres_0_0",
+   "x": 1061,
+   "y": 572,
+   "w": 228,
+   "h": 132,
+   "kind": "ic_t",
+   "title": "Who",
+   "lines": [
+    "• human immunodeficiency virus (HIV), transplant",
+    "• chemotherapy, steroids, immunodeficiency"
+   ]
+  },
+  {
+   "id": "ic_pres_1_0",
+   "x": 1061,
+   "y": 726,
+   "w": 228,
+   "h": 80,
+   "kind": "ic_w",
+   "title": "e.g. Pneumocystis jirovecii (PCP)",
+   "lines": []
+  },
+  {
+   "id": "op_inv_0_0",
+   "x": 45,
+   "y": 846,
+   "w": 228,
+   "h": 107,
+   "kind": "op_t",
+   "title": "1 · Chest X-ray (CXR): the GOLD STANDARD",
+   "lines": [
+    "confirms it, finds complications"
+   ]
+  },
+  {
+   "id": "op_inv_1_0",
+   "x": 45,
+   "y": 975,
+   "w": 228,
+   "h": 125,
+   "kind": "op_w",
+   "title": "2 · Sputum Gram stain + culture",
+   "lines": [
+    "atypicals do NOT show on Gram stain"
+   ]
+  },
+  {
+   "id": "ip_inv_0_0",
+   "x": 285,
+   "y": 846,
+   "w": 228,
+   "h": 107,
+   "kind": "ip_t",
+   "title": "1 · CXR + bloodwork",
+   "lines": [
+    "• complete blood count, electrolytes, urea, creatinine",
+    "• arterial blood gas (ABG): PaO2 ↓"
+   ]
+  },
+  {
+   "id": "ip_inv_1_0",
+   "x": 285,
+   "y": 975,
+   "w": 228,
+   "h": 125,
+   "kind": "ip_w",
+   "title": "2 · Bugs",
+   "lines": [
+    "• blood cultures × 2, sputum",
+    "• nasopharyngeal swab",
+    "• urine antigen: Legionella, pneumococcus"
+   ]
+  },
+  {
+   "id": "ho_inv_0_0",
+   "x": 553,
+   "y": 846,
+   "w": 228,
+   "h": 254,
+   "kind": "ho_t",
+   "title": "1 · CXR + cultures",
+   "lines": [
+    "a PREVIOUS culture guides the cover"
+   ]
+  },
+  {
+   "id": "as_inv_0_0",
+   "x": 821,
+   "y": 846,
+   "w": 228,
+   "h": 97,
+   "kind": "as_t",
+   "title": "1 · CXR shows a CAVITY?",
+   "lines": []
+  },
+  {
+   "id": "as_inv_1_0",
+   "x": 821,
+   "y": 965,
+   "w": 228,
+   "h": 135,
+   "kind": "as_w",
+   "title": "2 · Send FUNGAL + tuberculosis (TB) cultures",
+   "lines": [
+    "common causes of cavities"
+   ]
+  },
+  {
+   "id": "ic_inv_0_0",
+   "x": 1061,
+   "y": 846,
+   "w": 228,
+   "h": 98,
+   "kind": "ic_t",
+   "title": "1 · INVASIVE testing: bronchoscopy",
+   "lines": [
+    "the differential is too broad to guess"
+   ]
+  },
+  {
+   "id": "ic_inv_1_0",
+   "x": 1061,
+   "y": 966,
+   "w": 228,
+   "h": 134,
+   "kind": "ic_w",
+   "title": "2 · Bronchoalveolar lavage (BAL)",
+   "lines": [
+    "• bacterial, fungal, mycobacterial cultures",
+    "• galactomannan (Aspergillus), cytology"
+   ]
+  },
+  {
+   "id": "op_tx_0_0",
+   "x": 45,
+   "y": 1140,
+   "w": 228,
+   "h": 121,
+   "kind": "ok",
+   "title": "NO comorbidities",
+   "lines": [
+    "• macrolide (if local pneumococcal resistance < 25%)",
+    "• or doxycycline",
+    "• or amoxicillin"
+   ]
+  },
+  {
+   "id": "op_tx_1_0",
+   "x": 45,
+   "y": 1283,
+   "w": 228,
+   "h": 121,
+   "kind": "warn",
+   "title": "WITH comorbidities",
+   "lines": [
+    "• fluoroquinolone: levofloxacin, moxifloxacin",
+    "• or amox-clav or cefuroxime + macrolide or doxycycline"
+   ]
+  },
+  {
+   "id": "ip_tx_0_0",
+   "x": 285,
+   "y": 1140,
+   "w": 228,
+   "h": 121,
+   "kind": "ok",
+   "title": "NON-severe (ward)",
+   "lines": [
+    "• fluoroquinolone",
+    "• or IV β-lactam + macrolide"
+   ]
+  },
+  {
+   "id": "ip_tx_1_0",
+   "x": 285,
+   "y": 1283,
+   "w": 228,
+   "h": 121,
+   "kind": "warn",
+   "title": "SEVERE (ICU)",
+   "lines": [
+    "• IV β-lactam + macrolide",
+    "• or IV β-lactam + fluoroquinolone"
+   ]
+  },
+  {
+   "id": "ho_tx_0_0",
+   "x": 553,
+   "y": 1140,
+   "w": 228,
+   "h": 76,
+   "kind": "warn",
+   "title": "Piperacillin-tazobactam (pip-tazo) + vancomycin",
+   "lines": []
+  },
+  {
+   "id": "ho_tx_1_0",
+   "x": 553,
+   "y": 1238,
+   "w": 228,
+   "h": 166,
+   "kind": "bad",
+   "title": "SEVERE + prior culture → cover",
+   "lines": [
+    "• Pseudomonas: pip-tazo, carbapenem, ceftazidime-avibactam",
+    "• methicillin-resistant S. aureus (MRSA): vancomycin, linezolid"
+   ]
+  },
+  {
+   "id": "as_tx_0_0",
+   "x": 821,
+   "y": 1140,
+   "w": 228,
+   "h": 80,
+   "kind": "ok",
+   "title": "β-lactamase inhibitor combination",
+   "lines": [
+    "pip-tazo or amox-clav"
+   ]
+  },
+  {
+   "id": "as_tx_1_0",
+   "x": 821,
+   "y": 1242,
+   "w": 228,
+   "h": 98,
+   "kind": "warn",
+   "title": "Or carbapenem, or moxifloxacin",
+   "lines": [
+    "the only fluoroquinolone that covers anaerobes"
+   ]
+  },
+  {
+   "id": "as_tx_2_0",
+   "x": 821,
+   "y": 1362,
+   "w": 228,
+   "h": 42,
+   "kind": "bad",
+   "title": "Empyema → DRAIN it",
+   "lines": []
+  },
+  {
+   "id": "ic_tx_0_0",
+   "x": 1061,
+   "y": 1140,
+   "w": 228,
+   "h": 102,
+   "kind": "ok",
+   "title": "Treat what the BAL finds",
+   "lines": [
+    "• fungal: azoles; amphotericin B if disseminated"
+   ]
+  },
+  {
+   "id": "ic_tx_1_0",
+   "x": 1061,
+   "y": 1264,
+   "w": 228,
+   "h": 140,
+   "kind": "ok",
+   "title": "HIV, CD4 < 200 → PCP PROPHYLAXIS",
+   "lines": [
+    "trimethoprim-sulfamethoxazole (or pentamidine, dapsone, atovaquone)"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_cap",
+   "path": "M667.0 124V149H279.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_hap",
+   "path": "M667.0 124V149H667.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_host",
+   "path": "M667.0 124V149H1055.0V174"
+  },
+  {
+   "from": "g_cap",
+   "to": "t_cap",
+   "from_dx": 0
+  },
+  {
+   "from": "op_pres_0_0",
+   "to": "op_pres_1_0",
+   "to_dx": -59.5,
+   "dashed": true
+  },
+  {
+   "from": "op_pres_0_1",
+   "to": "op_pres_1_0",
+   "to_dx": 59.5,
+   "dashed": true
+  },
+  {
+   "from": "ip_pres_0_0",
+   "to": "ip_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ho_pres_0_0",
+   "to": "ho_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "as_pres_0_0",
+   "to": "as_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ic_pres_0_0",
+   "to": "ic_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "op_inv_0_0",
+   "to": "op_inv_1_0"
+  },
+  {
+   "from": "ip_inv_0_0",
+   "to": "ip_inv_1_0"
+  },
+  {
+   "from": "as_inv_0_0",
+   "to": "as_inv_1_0"
+  },
+  {
+   "from": "ic_inv_0_0",
+   "to": "ic_inv_1_0"
+  },
+  {
+   "from": "op_tx_0_0",
+   "to": "op_tx_1_0"
+  },
+  {
+   "from": "ip_tx_0_0",
+   "to": "ip_tx_1_0"
+  },
+  {
+   "from": "ho_tx_0_0",
+   "to": "ho_tx_1_0"
+  },
+  {
+   "from": "as_tx_0_0",
+   "to": "as_tx_1_0"
+  },
+  {
+   "from": "as_tx_1_0",
+   "to": "as_tx_2_0"
+  },
+  {
+   "from": "ic_tx_0_0",
+   "to": "ic_tx_1_0"
+  },
+  {
+   "from": "op_head_0_0",
+   "to": "op_pres_0_0",
+   "from_dx": -59.5
+  },
+  {
+   "from": "op_head_0_0",
+   "to": "op_pres_0_1",
+   "from_dx": 59.5
+  },
+  {
+   "from": "op_pres_1_0",
+   "to": "op_inv_0_0"
+  },
+  {
+   "from": "op_inv_1_0",
+   "to": "op_tx_0_0"
+  },
+  {
+   "from": "t_cap",
+   "to": "op_head_0_0",
+   "from_dx": -120,
+   "label": "HOME",
+   "label_at": [
+    159.0,
+    394
+   ]
+  },
+  {
+   "from": "ip_head_0_0",
+   "to": "ip_pres_0_0"
+  },
+  {
+   "from": "ip_pres_1_0",
+   "to": "ip_inv_0_0"
+  },
+  {
+   "from": "ip_inv_1_0",
+   "to": "ip_tx_0_0"
+  },
+  {
+   "from": "t_cap",
+   "to": "ip_head_0_0",
+   "from_dx": 120,
+   "label": "ADMIT",
+   "label_at": [
+    399.0,
+    394
+   ]
+  },
+  {
+   "from": "ho_head_0_0",
+   "to": "ho_pres_0_0"
+  },
+  {
+   "from": "ho_pres_1_0",
+   "to": "ho_inv_0_0"
+  },
+  {
+   "from": "ho_inv_0_0",
+   "to": "ho_tx_0_0"
+  },
+  {
+   "from": "g_hap",
+   "to": "ho_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "as_head_0_0",
+   "to": "as_pres_0_0"
+  },
+  {
+   "from": "as_pres_1_0",
+   "to": "as_inv_0_0"
+  },
+  {
+   "from": "as_inv_1_0",
+   "to": "as_tx_0_0"
+  },
+  {
+   "from": "g_host",
+   "to": "as_head_0_0",
+   "from_dx": -120,
+   "label": "ASPIRATION · ALCOHOL",
+   "label_at": [
+    935.0,
+    394
+   ]
+  },
+  {
+   "from": "ic_head_0_0",
+   "to": "ic_pres_0_0"
+  },
+  {
+   "from": "ic_pres_1_0",
+   "to": "ic_inv_0_0"
+  },
+  {
+   "from": "ic_inv_1_0",
+   "to": "ic_tx_0_0"
+  },
+  {
+   "from": "g_host",
+   "to": "ic_head_0_0",
+   "from_dx": 120,
+   "label": "IMMUNOCOMPROMISED",
+   "label_at": [
+    1175.0,
+    394
+   ]
+  }
+ ],
+ "panels": []
+}

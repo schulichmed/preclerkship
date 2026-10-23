@@ -1,0 +1,666 @@
+{
+ "name": "hip pain overview",
+ "width": 1096,
+ "title": "Hip pain sorted by where the patient points: anterior or groin pain inside the joint (hip osteoarthritis, labral tear), lateral pain (greater trochanteric pain syndrome) and posterior buttock pain (piriformis syndrome), each with its presentation, exam, investigations and treatment in order, plus the socks question that separates lateral hip osteoarthritis from greater trochanteric pain syndrome",
+ "kinds": {
+  "oa_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "oa_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "oa_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "lab_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "lab_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "lab_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "gt_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gt_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "gt_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "pir_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pir_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "pir_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 246,
+   "h": 1006,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 288,
+   "y": 288,
+   "w": 246,
+   "h": 1006,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 564,
+   "y": 288,
+   "w": 246,
+   "h": 1006,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 840,
+   "y": 288,
+   "w": 246,
+   "h": 1006,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 452,
+   "h": 170,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 662,
+   "h": 98,
+   "text": "EXAM"
+  },
+  {
+   "x": 23,
+   "y": 800,
+   "h": 114,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 954,
+   "h": 332,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 183,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "'My hip hurts': ask WHERE",
+   "lines": [
+    "TRUE hip pain (inside the joint) is usually ANTERIOR, in the GROIN",
+    "patients often point to the lateral buttock, sometimes to the buttock itself"
+   ]
+  },
+  {
+   "id": "g_ant",
+   "x": 45,
+   "y": 138,
+   "w": 484,
+   "h": 78,
+   "kind": "plain",
+   "title": "ANTERIOR / GROIN: usually inside the joint",
+   "lines": [
+    "also: rheumatoid or septic arthritis · osteonecrosis · iliopsoas tendinopathy"
+   ]
+  },
+  {
+   "id": "g_lat",
+   "x": 569,
+   "y": 138,
+   "w": 236,
+   "h": 78,
+   "kind": "plain",
+   "title": "LATERAL",
+   "lines": [
+    "hip OA can present here too: ask about SOCKS"
+   ]
+  },
+  {
+   "id": "g_post",
+   "x": 845,
+   "y": 138,
+   "w": 236,
+   "h": 78,
+   "kind": "plain",
+   "title": "POSTERIOR / BUTTOCK",
+   "lines": []
+  },
+  {
+   "id": "oa_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 236,
+   "h": 116,
+   "kind": "oa_h",
+   "title": "Hip osteoarthritis (OA)",
+   "lines": [
+    "primary: idiopathic, elderly · secondary: post-traumatic, younger"
+   ]
+  },
+  {
+   "id": "lab_head_0_0",
+   "x": 293,
+   "y": 296,
+   "w": 236,
+   "h": 116,
+   "kind": "lab_h",
+   "title": "Labral tear",
+   "lines": [
+    "all ages · commonly ACTIVE FEMALES"
+   ]
+  },
+  {
+   "id": "gt_head_0_0",
+   "x": 569,
+   "y": 296,
+   "w": 236,
+   "h": 116,
+   "kind": "gt_h",
+   "title": "Greater trochanteric pain syndrome (GTPS)",
+   "lines": [
+    "gluteus medius + minimus tendinopathy ± bursitis (iliotibial band friction)"
+   ]
+  },
+  {
+   "id": "pir_head_0_0",
+   "x": 845,
+   "y": 296,
+   "w": 236,
+   "h": 116,
+   "kind": "pir_h",
+   "title": "Piriformis syndrome",
+   "lines": [
+    "muscle strain or tendinopathy ± SCIATIC nerve impingement"
+   ]
+  },
+  {
+   "id": "oa_clue_0_0",
+   "x": 45,
+   "y": 452,
+   "w": 236,
+   "h": 170,
+   "kind": "oa_t",
+   "title": "Groin pain, the 'C' sign",
+   "lines": [
+    "• worse with prolonged activity · night pain",
+    "• morning stiffness < 30 min · stiff after long sitting",
+    "• crepitus, locking · TROUBLE PUTTING SOCKS ON"
+   ]
+  },
+  {
+   "id": "lab_clue_0_0",
+   "x": 293,
+   "y": 452,
+   "w": 236,
+   "h": 170,
+   "kind": "lab_t",
+   "title": "Vague groin pain",
+   "lines": [
+    "• CLICKING, catching, snapping",
+    "• locking"
+   ]
+  },
+  {
+   "id": "gt_clue_0_0",
+   "x": 569,
+   "y": 452,
+   "w": 236,
+   "h": 170,
+   "kind": "gt_t",
+   "title": "Pain over the greater trochanter",
+   "lines": [
+    "• CAN'T LIE ON THAT SIDE · worse weight bearing",
+    "• ± to the buttock or down the thigh to the knee",
+    "• no swelling · SOCKS ON FINE · female > male"
+   ]
+  },
+  {
+   "id": "pir_clue_0_0",
+   "x": 845,
+   "y": 452,
+   "w": 236,
+   "h": 170,
+   "kind": "pir_t",
+   "title": "Buttock pain",
+   "lines": [
+    "• worse getting out of bed, sitting long, moving the hip",
+    "• radicular symptoms down the leg if the nerve is caught",
+    "• after buttock trauma, long sitting, anatomic anomalies"
+   ]
+  },
+  {
+   "id": "oa_exam_0_0",
+   "x": 45,
+   "y": 662,
+   "w": 236,
+   "h": 98,
+   "kind": "oa_w",
+   "title": "INTERNAL ROTATION lost first",
+   "lines": [
+    "• FABER, FADIR, Stinchfield",
+    "• antalgic gait · leg length?"
+   ]
+  },
+  {
+   "id": "lab_exam_0_0",
+   "x": 293,
+   "y": 662,
+   "w": 236,
+   "h": 98,
+   "kind": "lab_w",
+   "title": "FABER, FADIR positive",
+   "lines": []
+  },
+  {
+   "id": "gt_exam_0_0",
+   "x": 569,
+   "y": 662,
+   "w": 236,
+   "h": 98,
+   "kind": "gt_w",
+   "title": "POINT TENDERNESS over the trochanter",
+   "lines": [
+    "• highly sensitive · Ober's test +",
+    "• single leg stance for 30 s is painful"
+   ]
+  },
+  {
+   "id": "pir_exam_0_0",
+   "x": 845,
+   "y": 662,
+   "w": 236,
+   "h": 98,
+   "kind": "pir_w",
+   "title": "Tender over piriformis",
+   "lines": [
+    "• Pace, Beatty, FAIR, Freiberg"
+   ]
+  },
+  {
+   "id": "oa_inv_0_0",
+   "x": 45,
+   "y": 800,
+   "w": 236,
+   "h": 114,
+   "kind": "oa_t",
+   "title": "A CLINICAL diagnosis",
+   "lines": [
+    "• X-ray confirms it, and changes may not match symptoms",
+    "• CT or MRI not needed (secondary causes, surgical planning)"
+   ]
+  },
+  {
+   "id": "lab_inv_0_0",
+   "x": 293,
+   "y": 800,
+   "w": 236,
+   "h": 114,
+   "kind": "lab_t",
+   "title": "MR ARTHROGRAM",
+   "lines": [
+    "• the imaging study of choice",
+    "• X-ray only to exclude other causes"
+   ]
+  },
+  {
+   "id": "gt_inv_0_0",
+   "x": 569,
+   "y": 800,
+   "w": 236,
+   "h": 114,
+   "kind": "gt_t",
+   "title": "A CLINICAL diagnosis",
+   "lines": [
+    "• imaging rarely needed",
+    "• ask about a recent increase in activity"
+   ]
+  },
+  {
+   "id": "pir_inv_0_0",
+   "x": 845,
+   "y": 800,
+   "w": 236,
+   "h": 114,
+   "kind": "pir_t",
+   "title": "Electromyography (EMG)",
+   "lines": [
+    "only if the nerve is involved"
+   ]
+  },
+  {
+   "id": "oa_tx_0_0",
+   "x": 45,
+   "y": 954,
+   "w": 236,
+   "h": 96,
+   "kind": "ok",
+   "title": "1 · Non-drug",
+   "lines": [
+    "• education, exercise, physio",
+    "• weight management, work supports",
+    "• tai chi, a cane"
+   ]
+  },
+  {
+   "id": "oa_tx_1_0",
+   "x": 45,
+   "y": 1072,
+   "w": 236,
+   "h": 132,
+   "kind": "ok",
+   "title": "2 · Drugs + injection",
+   "lines": [
+    "• oral anti-inflammatories (NSAIDs), Tylenol, duloxetine",
+    "• image-guided injection: steroid, hyaluronic acid or platelet-rich plasma"
+   ]
+  },
+  {
+   "id": "oa_tx_2_0",
+   "x": 45,
+   "y": 1226,
+   "w": 236,
+   "h": 60,
+   "kind": "warn",
+   "title": "3 · Hip replacement",
+   "lines": [
+    "hemi, total or resurfacing"
+   ]
+  },
+  {
+   "id": "lab_tx_0_0",
+   "x": 293,
+   "y": 954,
+   "w": 236,
+   "h": 155,
+   "kind": "ok",
+   "title": "1 · The general hip pain approach",
+   "lines": []
+  },
+  {
+   "id": "lab_tx_1_0",
+   "x": 293,
+   "y": 1131,
+   "w": 236,
+   "h": 155,
+   "kind": "warn",
+   "title": "2 · Arthroscopic labral debridement or repair",
+   "lines": []
+  },
+  {
+   "id": "gt_tx_0_0",
+   "x": 569,
+   "y": 954,
+   "w": 236,
+   "h": 119,
+   "kind": "ok",
+   "title": "1 · Physio",
+   "lines": [
+    "stretch the iliotibial band, strengthen the hip abductors · load + weight management"
+   ]
+  },
+  {
+   "id": "gt_tx_1_0",
+   "x": 569,
+   "y": 1095,
+   "w": 236,
+   "h": 85,
+   "kind": "ok",
+   "title": "2 · Rest + ice (PRICE), NSAIDs, steroid injection",
+   "lines": []
+  },
+  {
+   "id": "gt_tx_2_0",
+   "x": 569,
+   "y": 1202,
+   "w": 236,
+   "h": 85,
+   "kind": "warn",
+   "title": "3 · Shock-wave therapy (weak evidence) · ?surgery",
+   "lines": []
+  },
+  {
+   "id": "pir_tx_0_0",
+   "x": 845,
+   "y": 954,
+   "w": 236,
+   "h": 107,
+   "kind": "ok",
+   "title": "1 · Physio",
+   "lines": [
+    "stretch piriformis · range of motion · deep massage"
+   ]
+  },
+  {
+   "id": "pir_tx_1_0",
+   "x": 845,
+   "y": 1083,
+   "w": 236,
+   "h": 111,
+   "kind": "ok",
+   "title": "2 · NSAIDs, ultrasound-guided steroid injection",
+   "lines": []
+  },
+  {
+   "id": "pir_tx_2_0",
+   "x": 845,
+   "y": 1216,
+   "w": 236,
+   "h": 71,
+   "kind": "warn",
+   "title": "3 · ?surgery",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ant",
+   "path": "M563.0 88V113H287.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_lat",
+   "path": "M563.0 88V113H687.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_post",
+   "path": "M563.0 88V113H963.0V138"
+  },
+  {
+   "from": "oa_tx_0_0",
+   "to": "oa_tx_1_0"
+  },
+  {
+   "from": "oa_tx_1_0",
+   "to": "oa_tx_2_0"
+  },
+  {
+   "from": "lab_tx_0_0",
+   "to": "lab_tx_1_0"
+  },
+  {
+   "from": "gt_tx_0_0",
+   "to": "gt_tx_1_0"
+  },
+  {
+   "from": "gt_tx_1_0",
+   "to": "gt_tx_2_0"
+  },
+  {
+   "from": "pir_tx_0_0",
+   "to": "pir_tx_1_0"
+  },
+  {
+   "from": "pir_tx_1_0",
+   "to": "pir_tx_2_0"
+  },
+  {
+   "from": "oa_head_0_0",
+   "to": "oa_clue_0_0"
+  },
+  {
+   "from": "oa_clue_0_0",
+   "to": "oa_exam_0_0"
+  },
+  {
+   "from": "oa_exam_0_0",
+   "to": "oa_inv_0_0"
+  },
+  {
+   "from": "oa_inv_0_0",
+   "to": "oa_tx_0_0"
+  },
+  {
+   "from": "g_ant",
+   "to": "oa_head_0_0",
+   "from_dx": -124
+  },
+  {
+   "from": "lab_head_0_0",
+   "to": "lab_clue_0_0"
+  },
+  {
+   "from": "lab_clue_0_0",
+   "to": "lab_exam_0_0"
+  },
+  {
+   "from": "lab_exam_0_0",
+   "to": "lab_inv_0_0"
+  },
+  {
+   "from": "lab_inv_0_0",
+   "to": "lab_tx_0_0"
+  },
+  {
+   "from": "g_ant",
+   "to": "lab_head_0_0",
+   "from_dx": 124
+  },
+  {
+   "from": "gt_head_0_0",
+   "to": "gt_clue_0_0"
+  },
+  {
+   "from": "gt_clue_0_0",
+   "to": "gt_exam_0_0"
+  },
+  {
+   "from": "gt_exam_0_0",
+   "to": "gt_inv_0_0"
+  },
+  {
+   "from": "gt_inv_0_0",
+   "to": "gt_tx_0_0"
+  },
+  {
+   "from": "g_lat",
+   "to": "gt_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "pir_head_0_0",
+   "to": "pir_clue_0_0"
+  },
+  {
+   "from": "pir_clue_0_0",
+   "to": "pir_exam_0_0"
+  },
+  {
+   "from": "pir_exam_0_0",
+   "to": "pir_inv_0_0"
+  },
+  {
+   "from": "pir_inv_0_0",
+   "to": "pir_tx_0_0"
+  },
+  {
+   "from": "g_post",
+   "to": "pir_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1320,
+   "w": 511,
+   "title": "Lateral pain: GTPS or hip OA?",
+   "items": [
+    "GTPS: pain on activity and lying on it · tender trochanter · single leg stance hurts",
+    "hip OA: morning stiffness, groin pain, progressive · socks hard · internal + external rotation painful"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 570,
+   "y": 1320,
+   "w": 511,
+   "title": "Tests and the rest",
+   "items": [
+    "FABER = flexion, abduction, external rotation · FADIR or FAIR = flexion, adduction, internal rotation",
+    "osteonecrosis: trauma, steroids, alcohol, lupus, sickle cell, radiation",
+    "snapping hip: very common · not painful → don't worry about it"
+   ],
+   "cols": 1
+  }
+ ]
+}

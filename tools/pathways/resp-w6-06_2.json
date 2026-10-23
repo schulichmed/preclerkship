@@ -1,0 +1,683 @@
+{
+ "name": "obstructive lung disease overview",
+ "width": 1084,
+ "title": "Obstructive lung disease decision chart: spirometry reversibility separates asthma from chronic obstructive pulmonary disease (COPD); asthma splits into controlled and severe (phenotype to a biologic), COPD into stable and exacerbation; each column gives presentation, numbered investigations and treatment in order",
+ "kinds": {
+  "as_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "as_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "as_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "sv_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sv_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "sv_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "co_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "co_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "co_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ae_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ae_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "ae_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 250,
+   "h": 1076,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 292,
+   "y": 270,
+   "w": 250,
+   "h": 1076,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 572,
+   "y": 270,
+   "w": 250,
+   "h": 1076,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 824,
+   "y": 270,
+   "w": 250,
+   "h": 1076,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 432,
+   "h": 152,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 624,
+   "h": 220,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 884,
+   "h": 454,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 177,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Obstructive lung disease: does the obstruction REVERSE after a bronchodilator?",
+   "lines": [
+    "narrowed airways empty slowly → gas trapping → hyperinflation and dyspnea",
+    "spirometry decides: forced expiratory volume in 1 s (FEV1) / forced vital capacity (FVC)"
+   ]
+  },
+  {
+   "id": "g_as",
+   "x": 45,
+   "y": 138,
+   "w": 492,
+   "h": 60,
+   "kind": "plain",
+   "title": "VARIABLE, REVERSIBLE → ASTHMA",
+   "lines": [
+    "chronic airway inflammation · symptoms that vary over time"
+   ]
+  },
+  {
+   "id": "g_co",
+   "x": 577,
+   "y": 138,
+   "w": 492,
+   "h": 60,
+   "kind": "plain",
+   "title": "PERSISTENT, NOT reversible → COPD",
+   "lines": [
+    "post-bronchodilator FEV1/FVC < 0.7 · lung function never normalizes"
+   ]
+  },
+  {
+   "id": "as_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 240,
+   "h": 114,
+   "kind": "as_h",
+   "title": "Asthma",
+   "lines": [
+    "inflammation → smooth muscle SPASM",
+    "→ bronchoconstriction"
+   ]
+  },
+  {
+   "id": "sv_head_0_0",
+   "x": 297,
+   "y": 278,
+   "w": 240,
+   "h": 114,
+   "kind": "sv_h",
+   "title": "Uncontrolled despite treatment",
+   "lines": [
+    "exacerbations, reliever needed often, night symptoms"
+   ]
+  },
+  {
+   "id": "co_head_0_0",
+   "x": 577,
+   "y": 278,
+   "w": 240,
+   "h": 114,
+   "kind": "co_h",
+   "title": "COPD",
+   "lines": [
+    "chronic obstructive pulmonary disease",
+    "SMOKING (most) · α1-antitrypsin deficiency"
+   ]
+  },
+  {
+   "id": "ae_head_0_0",
+   "x": 829,
+   "y": 278,
+   "w": 240,
+   "h": 114,
+   "kind": "ae_h",
+   "title": "COPD exacerbation",
+   "lines": [
+    "(AECOPD)"
+   ]
+  },
+  {
+   "id": "as_pres_0_0",
+   "x": 45,
+   "y": 432,
+   "w": 240,
+   "h": 152,
+   "kind": "as_t",
+   "title": "Comes and goes",
+   "lines": [
+    "• wheeze, dyspnea, chest tightness, cough",
+    "• worse with triggers: viral infection, allergens, pets",
+    "• atopy in the family: eczema, asthma, rhinitis"
+   ]
+  },
+  {
+   "id": "sv_pres_0_0",
+   "x": 297,
+   "y": 432,
+   "w": 240,
+   "h": 152,
+   "kind": "sv_t",
+   "title": "First, WHY?",
+   "lines": [
+    "1 · CONFIRM it is asthma",
+    "2 · adherence, inhaler technique, environment",
+    "3 · rule out mimics + comorbidities"
+   ]
+  },
+  {
+   "id": "co_pres_0_0",
+   "x": 577,
+   "y": 432,
+   "w": 240,
+   "h": 152,
+   "kind": "co_t",
+   "title": "Persistent dyspnea, cough ± sputum",
+   "lines": [
+    "• EMPHYSEMA: pink puffer, thin, pursed lips",
+    "• CHRONIC BRONCHITIS: blue bloater, productive cough > 3 mo/yr for > 2 yr"
+   ]
+  },
+  {
+   "id": "ae_pres_0_0",
+   "x": 829,
+   "y": 432,
+   "w": 240,
+   "h": 152,
+   "kind": "ae_t",
+   "title": "Anthonisen (Winnipeg) criteria, > 2 days",
+   "lines": [
+    "• ↑ dyspnea",
+    "• ↑ sputum VOLUME",
+    "• ↑ sputum PURULENCE"
+   ]
+  },
+  {
+   "id": "as_inv_0_0",
+   "x": 45,
+   "y": 624,
+   "w": 240,
+   "h": 82,
+   "kind": "as_t",
+   "title": "1 · Spirometry: FEV1 ↑ ≥ 12% (and ≥ 200 mL) after bronchodilator",
+   "lines": []
+  },
+  {
+   "id": "as_inv_1_0",
+   "x": 45,
+   "y": 728,
+   "w": 240,
+   "h": 116,
+   "kind": "as_w",
+   "title": "2 · Spirometry NORMAL? Methacholine challenge",
+   "lines": [
+    "• FEV1 FALLS ≥ 20% → asthma",
+    "• or provocative concentration (PC20) < 4 mg/mL"
+   ]
+  },
+  {
+   "id": "sv_inv_0_0",
+   "x": 297,
+   "y": 624,
+   "w": 240,
+   "h": 45,
+   "kind": "sv_t",
+   "title": "4 · Diagnose SEVERE asthma",
+   "lines": []
+  },
+  {
+   "id": "sv_inv_1_0",
+   "x": 297,
+   "y": 691,
+   "w": 240,
+   "h": 153,
+   "kind": "sv_w",
+   "title": "5 · Phenotype",
+   "lines": [
+    "• blood eosinophils, total IgE, aeroallergen tests",
+    "• ± sputum eosinophils, exhaled nitric oxide (FeNO)",
+    "• Th2 = eosinophils + IgE ↑ · non-Th2 = neutrophils (no biologic)"
+   ]
+  },
+  {
+   "id": "co_inv_0_0",
+   "x": 577,
+   "y": 624,
+   "w": 240,
+   "h": 100,
+   "kind": "co_t",
+   "title": "1 · Spirometry POST-bronchodilator",
+   "lines": [
+    "FEV1/FVC < 0.7, NOT reversible"
+   ]
+  },
+  {
+   "id": "co_inv_1_0",
+   "x": 577,
+   "y": 746,
+   "w": 240,
+   "h": 98,
+   "kind": "co_w",
+   "title": "2 · Stage by FEV1 % predicted",
+   "lines": [
+    "• ≥ 80 mild · ≥ 50 moderate",
+    "• ≥ 30 severe · < 30 VERY severe"
+   ]
+  },
+  {
+   "id": "ae_inv_0_0",
+   "x": 829,
+   "y": 624,
+   "w": 240,
+   "h": 220,
+   "kind": "ae_t",
+   "title": "Count the criteria",
+   "lines": [
+    "ALL 3 → likely BACTERIAL"
+   ]
+  },
+  {
+   "id": "as_tx_0_0",
+   "x": 45,
+   "y": 884,
+   "w": 240,
+   "h": 84,
+   "kind": "ok",
+   "title": "1 · Short-acting beta-agonist (SABA) as RELIEVER",
+   "lines": [
+    "salbutamol"
+   ]
+  },
+  {
+   "id": "as_tx_1_0",
+   "x": 45,
+   "y": 990,
+   "w": 240,
+   "h": 120,
+   "kind": "ok",
+   "title": "2 · Inhaled corticosteroid (ICS) for EVERYONE",
+   "lines": [
+    "• FIRST LINE: it treats the inflammation",
+    "• rinse and gargle after: thrush"
+   ]
+  },
+  {
+   "id": "as_tx_2_0",
+   "x": 45,
+   "y": 1132,
+   "w": 240,
+   "h": 122,
+   "kind": "ok",
+   "title": "3 · Add long-acting beta-agonist (LABA) IN ONE INHALER",
+   "lines": [
+    "or a leukotriene receptor antagonist (LTRA): montelukast"
+   ]
+  },
+  {
+   "id": "as_tx_3_0",
+   "x": 45,
+   "y": 1276,
+   "w": 240,
+   "h": 64,
+   "kind": "bad",
+   "title": "NEVER LABA alone",
+   "lines": [
+    "LABA monotherapy ↑ asthma deaths"
+   ]
+  },
+  {
+   "id": "sv_tx_0_0",
+   "x": 297,
+   "y": 884,
+   "w": 240,
+   "h": 207,
+   "kind": "ok",
+   "title": "ALLERGIC, IgE ↑ → anti-IgE",
+   "lines": [
+    "omalizumab"
+   ]
+  },
+  {
+   "id": "sv_tx_1_0",
+   "x": 297,
+   "y": 1113,
+   "w": 240,
+   "h": 225,
+   "kind": "ok",
+   "title": "EOSINOPHILIC → anti-IL-5",
+   "lines": [
+    "• mepolizumab, reslizumab",
+    "• benralizumab (IL-5 receptor α)"
+   ]
+  },
+  {
+   "id": "co_tx_0_0",
+   "x": 577,
+   "y": 884,
+   "w": 240,
+   "h": 78,
+   "kind": "ok",
+   "title": "1 · STOP SMOKING",
+   "lines": [
+    "slows decline, ↓ mortality (lost function does not return)"
+   ]
+  },
+  {
+   "id": "co_tx_1_0",
+   "x": 577,
+   "y": 984,
+   "w": 240,
+   "h": 98,
+   "kind": "ok",
+   "title": "2 · Bronchodilate: LAMA or LABA → BOTH",
+   "lines": [
+    "long-acting muscarinic antagonist (LAMA): tiotropium"
+   ]
+  },
+  {
+   "id": "co_tx_2_0",
+   "x": 577,
+   "y": 1104,
+   "w": 240,
+   "h": 134,
+   "kind": "warn",
+   "title": "3 · + ICS = triple therapy, ONLY if",
+   "lines": [
+    "• symptoms persist despite bronchodilators",
+    "• frequent exacerbations",
+    "• asthma overlap"
+   ]
+  },
+  {
+   "id": "co_tx_3_0",
+   "x": 577,
+   "y": 1260,
+   "w": 240,
+   "h": 78,
+   "kind": "co_w",
+   "title": "Oxygen: target 88–92%",
+   "lines": [
+    "roflumilast prevents exacerbations (severe + chronic bronchitis)"
+   ]
+  },
+  {
+   "id": "ae_tx_0_0",
+   "x": 829,
+   "y": 884,
+   "w": 240,
+   "h": 120,
+   "kind": "ok",
+   "title": "1 · Short-acting bronchodilators",
+   "lines": [
+    "SABA + short-acting muscarinic antagonist (SAMA): ipratropium"
+   ]
+  },
+  {
+   "id": "ae_tx_1_0",
+   "x": 829,
+   "y": 1026,
+   "w": 240,
+   "h": 64,
+   "kind": "ok",
+   "title": "2 · Oral prednisone",
+   "lines": []
+  },
+  {
+   "id": "ae_tx_2_0",
+   "x": 829,
+   "y": 1112,
+   "w": 240,
+   "h": 102,
+   "kind": "warn",
+   "title": "3 · ALL 3 criteria → ANTIBIOTICS",
+   "lines": [
+    "ceftriaxone + azithromycin"
+   ]
+  },
+  {
+   "id": "ae_tx_3_0",
+   "x": 829,
+   "y": 1236,
+   "w": 240,
+   "h": 100,
+   "kind": "ae_w",
+   "title": "Oxygen + BiPAP as needed",
+   "lines": [
+    "bilevel positive airway pressure (BiPAP)"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_as",
+   "path": "M557.0 88V113H291.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_co",
+   "path": "M557.0 88V113H823.0V138"
+  },
+  {
+   "from": "as_inv_0_0",
+   "to": "as_inv_1_0"
+  },
+  {
+   "from": "sv_inv_0_0",
+   "to": "sv_inv_1_0"
+  },
+  {
+   "from": "co_inv_0_0",
+   "to": "co_inv_1_0"
+  },
+  {
+   "from": "as_tx_0_0",
+   "to": "as_tx_1_0"
+  },
+  {
+   "from": "as_tx_1_0",
+   "to": "as_tx_2_0"
+  },
+  {
+   "from": "as_tx_2_0",
+   "to": "as_tx_3_0"
+  },
+  {
+   "from": "sv_tx_0_0",
+   "to": "sv_tx_1_0"
+  },
+  {
+   "from": "co_tx_0_0",
+   "to": "co_tx_1_0"
+  },
+  {
+   "from": "co_tx_1_0",
+   "to": "co_tx_2_0"
+  },
+  {
+   "from": "co_tx_2_0",
+   "to": "co_tx_3_0"
+  },
+  {
+   "from": "ae_tx_0_0",
+   "to": "ae_tx_1_0"
+  },
+  {
+   "from": "ae_tx_1_0",
+   "to": "ae_tx_2_0"
+  },
+  {
+   "from": "ae_tx_2_0",
+   "to": "ae_tx_3_0"
+  },
+  {
+   "from": "as_head_0_0",
+   "to": "as_pres_0_0"
+  },
+  {
+   "from": "as_pres_0_0",
+   "to": "as_inv_0_0"
+  },
+  {
+   "from": "as_inv_1_0",
+   "to": "as_tx_0_0"
+  },
+  {
+   "from": "g_as",
+   "to": "as_head_0_0",
+   "from_dx": -126,
+   "label": "INFLAMMATION drives it",
+   "label_at": [
+    165.0,
+    238
+   ]
+  },
+  {
+   "from": "sv_head_0_0",
+   "to": "sv_pres_0_0"
+  },
+  {
+   "from": "sv_pres_0_0",
+   "to": "sv_inv_0_0"
+  },
+  {
+   "from": "sv_inv_1_0",
+   "to": "sv_tx_0_0"
+  },
+  {
+   "from": "g_as",
+   "to": "sv_head_0_0",
+   "from_dx": 126,
+   "label": "UNCONTROLLED on treatment",
+   "label_at": [
+    417.0,
+    238
+   ]
+  },
+  {
+   "from": "co_head_0_0",
+   "to": "co_pres_0_0"
+  },
+  {
+   "from": "co_pres_0_0",
+   "to": "co_inv_0_0"
+  },
+  {
+   "from": "co_inv_1_0",
+   "to": "co_tx_0_0"
+  },
+  {
+   "from": "g_co",
+   "to": "co_head_0_0",
+   "from_dx": -126,
+   "label": "STABLE",
+   "label_at": [
+    697.0,
+    238
+   ]
+  },
+  {
+   "from": "ae_head_0_0",
+   "to": "ae_pres_0_0"
+  },
+  {
+   "from": "ae_pres_0_0",
+   "to": "ae_inv_0_0"
+  },
+  {
+   "from": "ae_inv_0_0",
+   "to": "ae_tx_0_0"
+  },
+  {
+   "from": "g_co",
+   "to": "ae_head_0_0",
+   "from_dx": 126,
+   "label": "WORSE than usual",
+   "label_at": [
+    949.0,
+    238
+   ]
+  }
+ ],
+ "panels": []
+}

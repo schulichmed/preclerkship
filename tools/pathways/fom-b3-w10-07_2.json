@@ -1,0 +1,883 @@
+{
+ "name": "anticoagulant reversal overview",
+ "width": 1686,
+ "title": "Anticoagulant decision chart: the antithrombin-dependent injectables (unfractionated heparin, low molecular weight heparin, fondaparinux), the oral agents (warfarin, direct Xa inhibitors, dabigatran) and the IV direct thrombin inhibitors; each column gives when to choose it and when to avoid it, how to monitor it, and how to stop or reverse it",
+ "kinds": {
+  "ufh_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ufh_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ufh_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "lmwh_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "lmwh_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "lmwh_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "fon_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fon_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "fon_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "war_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "war_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "war_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "xa_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "xa_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "xa_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "dab_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dab_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "dab_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "ivd_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ivd_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "ivd_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 272,
+   "w": 224,
+   "h": 822,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 266,
+   "y": 272,
+   "w": 224,
+   "h": 822,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 492,
+   "y": 272,
+   "w": 224,
+   "h": 822,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 746,
+   "y": 272,
+   "w": 224,
+   "h": 822,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 972,
+   "y": 272,
+   "w": 224,
+   "h": 822,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1198,
+   "y": 272,
+   "w": 224,
+   "h": 822,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1452,
+   "y": 272,
+   "w": 224,
+   "h": 822,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 436,
+   "h": 268,
+   "text": "CHOOSE WHEN"
+  },
+  {
+   "x": 23,
+   "y": 744,
+   "h": 100,
+   "text": "MONITOR"
+  },
+  {
+   "x": 23,
+   "y": 884,
+   "h": 202,
+   "text": "STOP · REVERSE"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 478,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Anticoagulant: which one, how do I MONITOR it, and how do I REVERSE it?",
+   "lines": [
+    "none of them with active bleeding, recent brain or spinal (CNS) surgery, or thrombocytopenia"
+   ]
+  },
+  {
+   "id": "g_ind",
+   "x": 45,
+   "y": 120,
+   "w": 666,
+   "h": 80,
+   "kind": "plain",
+   "title": "INDIRECT: need ANTITHROMBIN · injected",
+   "lines": [
+    "the renal ones last longer in renal failure"
+   ]
+  },
+  {
+   "id": "g_or",
+   "x": 751,
+   "y": 120,
+   "w": 666,
+   "h": 80,
+   "kind": "plain",
+   "title": "ORAL",
+   "lines": [
+    "direct oral anticoagulants (Xa inhibitors, dabigatran): no monitoring, but P-glycoprotein and CYP3A4 drugs raise or lower levels"
+   ]
+  },
+  {
+   "id": "g_iv",
+   "x": 1457,
+   "y": 120,
+   "w": 214,
+   "h": 80,
+   "kind": "plain",
+   "title": "IV DIRECT thrombin inhibitors",
+   "lines": [
+    "no antithrombin needed"
+   ]
+  },
+  {
+   "id": "ufh_head_0_0",
+   "x": 45,
+   "y": 280,
+   "w": 214,
+   "h": 116,
+   "kind": "ufh_h",
+   "title": "Unfractionated heparin (UFH)",
+   "lines": [
+    "IIa + Xa · IV or subcutaneous (SC), hospital",
+    "half-life 60–90 min"
+   ]
+  },
+  {
+   "id": "lmwh_head_0_0",
+   "x": 271,
+   "y": 280,
+   "w": 214,
+   "h": 116,
+   "kind": "lmwh_h",
+   "title": "Low molecular weight heparin (LMWH)",
+   "lines": [
+    "Xa > IIa · SC, at home",
+    "half-life 3–6 h"
+   ]
+  },
+  {
+   "id": "fon_head_0_0",
+   "x": 497,
+   "y": 280,
+   "w": 214,
+   "h": 116,
+   "kind": "fon_h",
+   "title": "Fondaparinux",
+   "lines": [
+    "synthetic · Xa ONLY · SC",
+    "half-life 17–21 h"
+   ]
+  },
+  {
+   "id": "war_head_0_0",
+   "x": 751,
+   "y": 280,
+   "w": 214,
+   "h": 116,
+   "kind": "war_h",
+   "title": "Warfarin",
+   "lines": [
+    "vitamin K antagonist: no active II, VII, IX, X, protein C, S",
+    "half-life 36–42 h"
+   ]
+  },
+  {
+   "id": "xa_head_0_0",
+   "x": 977,
+   "y": 280,
+   "w": 214,
+   "h": 116,
+   "kind": "xa_h",
+   "title": "Direct Xa inhibitors",
+   "lines": [
+    "rivaroxaban, apixaban, edoxaban",
+    "half-life 7–14 h"
+   ]
+  },
+  {
+   "id": "dab_head_0_0",
+   "x": 1203,
+   "y": 280,
+   "w": 214,
+   "h": 116,
+   "kind": "dab_h",
+   "title": "Dabigatran",
+   "lines": [
+    "oral direct thrombin (IIa) inhibitor",
+    "half-life 12–18 h"
+   ]
+  },
+  {
+   "id": "ivd_head_0_0",
+   "x": 1457,
+   "y": 280,
+   "w": 214,
+   "h": 116,
+   "kind": "ivd_h",
+   "title": "Bivalirudin · argatroban",
+   "lines": [
+    "IV"
+   ]
+  },
+  {
+   "id": "ufh_use_0_0",
+   "x": 45,
+   "y": 436,
+   "w": 214,
+   "h": 150,
+   "kind": "ok",
+   "title": "Choose",
+   "lines": [
+    "• RENAL FAILURE (liver clears it)",
+    "• coats dialysis, bypass, ECMO circuits",
+    "• after myocardial infarction, unstable angina"
+   ]
+  },
+  {
+   "id": "ufh_use_1_0",
+   "x": 45,
+   "y": 608,
+   "w": 214,
+   "h": 96,
+   "kind": "warn",
+   "title": "Watch the platelets",
+   "lines": [
+    "heparin-induced thrombocytopenia (HIT): THROMBOCYTOPENIA chart"
+   ]
+  },
+  {
+   "id": "lmwh_use_0_0",
+   "x": 271,
+   "y": 436,
+   "w": 214,
+   "h": 268,
+   "kind": "ok",
+   "title": "Choose",
+   "lines": [
+    "• venous thromboembolism (VTE) prevention + treatment",
+    "• CANCER-associated clot",
+    "• PREGNANCY"
+   ]
+  },
+  {
+   "id": "fon_use_0_0",
+   "x": 497,
+   "y": 436,
+   "w": 214,
+   "h": 132,
+   "kind": "ok",
+   "title": "Choose",
+   "lines": [
+    "deep vein thrombosis (DVT), pulmonary embolism (PE)"
+   ]
+  },
+  {
+   "id": "fon_use_1_0",
+   "x": 497,
+   "y": 590,
+   "w": 214,
+   "h": 114,
+   "kind": "warn",
+   "title": "Avoid",
+   "lines": [
+    "SEVERE renal failure"
+   ]
+  },
+  {
+   "id": "war_use_0_0",
+   "x": 751,
+   "y": 436,
+   "w": 214,
+   "h": 132,
+   "kind": "ok",
+   "title": "Choose",
+   "lines": [
+    "• MECHANICAL valve, valve disease",
+    "• renal failure",
+    "• atrial fibrillation, VTE"
+   ]
+  },
+  {
+   "id": "war_use_1_0",
+   "x": 751,
+   "y": 590,
+   "w": 214,
+   "h": 114,
+   "kind": "warn",
+   "title": "Avoid",
+   "lines": [
+    "• PREGNANCY",
+    "• liver disease, unreliable follow-up"
+   ]
+  },
+  {
+   "id": "xa_use_0_0",
+   "x": 977,
+   "y": 436,
+   "w": 214,
+   "h": 123,
+   "kind": "ok",
+   "title": "Choose",
+   "lines": [
+    "VTE prevention + treatment"
+   ]
+  },
+  {
+   "id": "xa_use_1_0",
+   "x": 977,
+   "y": 581,
+   "w": 214,
+   "h": 123,
+   "kind": "warn",
+   "title": "Avoid",
+   "lines": [
+    "renal failure: lasts longer"
+   ]
+  },
+  {
+   "id": "dab_use_0_0",
+   "x": 1203,
+   "y": 436,
+   "w": 214,
+   "h": 268,
+   "kind": "ok",
+   "title": "Choose",
+   "lines": [
+    "fixed dose, wide therapeutic window, fewer interactions than warfarin"
+   ]
+  },
+  {
+   "id": "ivd_use_0_0",
+   "x": 1457,
+   "y": 436,
+   "w": 214,
+   "h": 141,
+   "kind": "ok",
+   "title": "Choose",
+   "lines": [
+    "• acute coronary syndrome, coronary stenting (PCI)",
+    "• HIT"
+   ]
+  },
+  {
+   "id": "ivd_use_1_0",
+   "x": 1457,
+   "y": 599,
+   "w": 214,
+   "h": 105,
+   "kind": "warn",
+   "title": "Avoid",
+   "lines": [
+    "renal or liver failure"
+   ]
+  },
+  {
+   "id": "ufh_mon_0_0",
+   "x": 45,
+   "y": 744,
+   "w": 214,
+   "h": 100,
+   "kind": "ufh_t",
+   "title": "activated partial thromboplastin time (aPTT) 1.5–2.5× (60–80 s)",
+   "lines": [
+    "or anti-Xa 0.3–0.7 U/mL"
+   ]
+  },
+  {
+   "id": "lmwh_mon_0_0",
+   "x": 271,
+   "y": 744,
+   "w": 214,
+   "h": 100,
+   "kind": "lmwh_t",
+   "title": "Usually none",
+   "lines": [
+    "if needed anti-Xa, NOT aPTT"
+   ]
+  },
+  {
+   "id": "fon_mon_0_0",
+   "x": 497,
+   "y": 744,
+   "w": 214,
+   "h": 100,
+   "kind": "fon_t",
+   "title": "Usually none",
+   "lines": [
+    "anti-Xa, NOT aPTT"
+   ]
+  },
+  {
+   "id": "war_mon_0_0",
+   "x": 751,
+   "y": 744,
+   "w": 214,
+   "h": 100,
+   "kind": "war_t",
+   "title": "international normalized ratio (INR) 2.0–3.0",
+   "lines": [
+    "every 1–2 days at start → up to every 4–6 weeks"
+   ]
+  },
+  {
+   "id": "xa_mon_0_0",
+   "x": 977,
+   "y": 744,
+   "w": 214,
+   "h": 100,
+   "kind": "xa_t",
+   "title": "None",
+   "lines": []
+  },
+  {
+   "id": "dab_mon_0_0",
+   "x": 1203,
+   "y": 744,
+   "w": 214,
+   "h": 100,
+   "kind": "dab_t",
+   "title": "None",
+   "lines": []
+  },
+  {
+   "id": "ivd_mon_0_0",
+   "x": 1457,
+   "y": 744,
+   "w": 214,
+   "h": 100,
+   "kind": "ivd_t",
+   "title": "aPTT 1.5–3× baseline",
+   "lines": [
+    "argatroban: every 6 h"
+   ]
+  },
+  {
+   "id": "ufh_rev_0_0",
+   "x": 45,
+   "y": 884,
+   "w": 214,
+   "h": 72,
+   "kind": "ufh_w",
+   "title": "Elective: stop 4 h before",
+   "lines": []
+  },
+  {
+   "id": "ufh_rev_1_0",
+   "x": 45,
+   "y": 978,
+   "w": 214,
+   "h": 108,
+   "kind": "bad",
+   "title": "PROTAMINE",
+   "lines": [
+    "1 mg per 100 U given in the last 2–2.5 h"
+   ]
+  },
+  {
+   "id": "lmwh_rev_0_0",
+   "x": 271,
+   "y": 884,
+   "w": 214,
+   "h": 100,
+   "kind": "lmwh_w",
+   "title": "Elective: stop 12–24 h before",
+   "lines": [
+    "by dose, procedure, kidneys"
+   ]
+  },
+  {
+   "id": "lmwh_rev_1_0",
+   "x": 271,
+   "y": 1006,
+   "w": 214,
+   "h": 80,
+   "kind": "bad",
+   "title": "Protamine: PARTIAL",
+   "lines": [
+    "reverses the anti-IIa effect only"
+   ]
+  },
+  {
+   "id": "fon_rev_0_0",
+   "x": 497,
+   "y": 884,
+   "w": 214,
+   "h": 99,
+   "kind": "fon_w",
+   "title": "Elective: stop before",
+   "lines": [
+    "• prophylactic: 24 h",
+    "• therapeutic: 1–2 days"
+   ]
+  },
+  {
+   "id": "fon_rev_1_0",
+   "x": 497,
+   "y": 1005,
+   "w": 214,
+   "h": 81,
+   "kind": "bad",
+   "title": "Protamine: NO effect",
+   "lines": [
+    "recombinant factor VIIa"
+   ]
+  },
+  {
+   "id": "war_rev_0_0",
+   "x": 751,
+   "y": 884,
+   "w": 214,
+   "h": 62,
+   "kind": "war_w",
+   "title": "Elective: stop 5 days before",
+   "lines": []
+  },
+  {
+   "id": "war_rev_1_0",
+   "x": 751,
+   "y": 968,
+   "w": 214,
+   "h": 118,
+   "kind": "bad",
+   "title": "VITAMIN K 2–10 mg IV + prothrombin complex concentrate (PCC)",
+   "lines": [
+    "vitamin K covers the rebound when PCC wears off"
+   ]
+  },
+  {
+   "id": "xa_rev_0_0",
+   "x": 977,
+   "y": 884,
+   "w": 214,
+   "h": 202,
+   "kind": "bad",
+   "title": "Emergency bleeding",
+   "lines": [
+    "• PCC",
+    "~• andexanet alfa: pending approval"
+   ]
+  },
+  {
+   "id": "dab_rev_0_0",
+   "x": 1203,
+   "y": 884,
+   "w": 214,
+   "h": 202,
+   "kind": "bad",
+   "title": "IDARUCIZUMAB",
+   "lines": [
+    "monoclonal antibody · emergency reversal only (very expensive)"
+   ]
+  },
+  {
+   "id": "ivd_rev_0_0",
+   "x": 1457,
+   "y": 884,
+   "w": 214,
+   "h": 202,
+   "kind": "ivd_w",
+   "title": "Half-life 25–45 min",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ind",
+   "path": "M858.0 70V95H378.0V120"
+  },
+  {
+   "from": "root",
+   "to": "g_or",
+   "path": "M858.0 70V95H1084.0V120"
+  },
+  {
+   "from": "root",
+   "to": "g_iv",
+   "path": "M858.0 70V95H1564.0V120"
+  },
+  {
+   "from": "ufh_use_0_0",
+   "to": "ufh_use_1_0"
+  },
+  {
+   "from": "fon_use_0_0",
+   "to": "fon_use_1_0"
+  },
+  {
+   "from": "war_use_0_0",
+   "to": "war_use_1_0"
+  },
+  {
+   "from": "xa_use_0_0",
+   "to": "xa_use_1_0"
+  },
+  {
+   "from": "ivd_use_0_0",
+   "to": "ivd_use_1_0"
+  },
+  {
+   "from": "ufh_rev_0_0",
+   "to": "ufh_rev_1_0"
+  },
+  {
+   "from": "lmwh_rev_0_0",
+   "to": "lmwh_rev_1_0"
+  },
+  {
+   "from": "fon_rev_0_0",
+   "to": "fon_rev_1_0"
+  },
+  {
+   "from": "war_rev_0_0",
+   "to": "war_rev_1_0"
+  },
+  {
+   "from": "ufh_head_0_0",
+   "to": "ufh_use_0_0"
+  },
+  {
+   "from": "ufh_use_1_0",
+   "to": "ufh_mon_0_0"
+  },
+  {
+   "from": "ufh_mon_0_0",
+   "to": "ufh_rev_0_0"
+  },
+  {
+   "from": "g_ind",
+   "to": "ufh_head_0_0",
+   "from_dx": -226
+  },
+  {
+   "from": "lmwh_head_0_0",
+   "to": "lmwh_use_0_0"
+  },
+  {
+   "from": "lmwh_use_0_0",
+   "to": "lmwh_mon_0_0"
+  },
+  {
+   "from": "lmwh_mon_0_0",
+   "to": "lmwh_rev_0_0"
+  },
+  {
+   "from": "g_ind",
+   "to": "lmwh_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "fon_head_0_0",
+   "to": "fon_use_0_0"
+  },
+  {
+   "from": "fon_use_1_0",
+   "to": "fon_mon_0_0"
+  },
+  {
+   "from": "fon_mon_0_0",
+   "to": "fon_rev_0_0"
+  },
+  {
+   "from": "g_ind",
+   "to": "fon_head_0_0",
+   "from_dx": 226
+  },
+  {
+   "from": "war_head_0_0",
+   "to": "war_use_0_0"
+  },
+  {
+   "from": "war_use_1_0",
+   "to": "war_mon_0_0"
+  },
+  {
+   "from": "war_mon_0_0",
+   "to": "war_rev_0_0"
+  },
+  {
+   "from": "g_or",
+   "to": "war_head_0_0",
+   "from_dx": -226
+  },
+  {
+   "from": "xa_head_0_0",
+   "to": "xa_use_0_0"
+  },
+  {
+   "from": "xa_use_1_0",
+   "to": "xa_mon_0_0"
+  },
+  {
+   "from": "xa_mon_0_0",
+   "to": "xa_rev_0_0"
+  },
+  {
+   "from": "g_or",
+   "to": "xa_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "dab_head_0_0",
+   "to": "dab_use_0_0"
+  },
+  {
+   "from": "dab_use_0_0",
+   "to": "dab_mon_0_0"
+  },
+  {
+   "from": "dab_mon_0_0",
+   "to": "dab_rev_0_0"
+  },
+  {
+   "from": "g_or",
+   "to": "dab_head_0_0",
+   "from_dx": 226
+  },
+  {
+   "from": "ivd_head_0_0",
+   "to": "ivd_use_0_0"
+  },
+  {
+   "from": "ivd_use_1_0",
+   "to": "ivd_mon_0_0"
+  },
+  {
+   "from": "ivd_mon_0_0",
+   "to": "ivd_rev_0_0"
+  },
+  {
+   "from": "g_iv",
+   "to": "ivd_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

@@ -1,0 +1,939 @@
+{
+ "name": "acute coronary syndrome overview",
+ "width": 1658,
+ "title": "Acute coronary syndrome decision chart: the first ECG splits ST-elevation MI (reperfuse now: primary PCI, else fibrinolysis) from no ST elevation, where troponin splits NSTEMI from unstable angina (antithrombotics, then angiography); a second band sorts complications after the MI (right ventricular infarction, pump failure or rupture, arrhythmia and block, post-MI pericarditis) with presentation, investigations and treatment",
+ "kinds": {
+  "st_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "st_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "st_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ns_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ns_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ns_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "rv_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rv_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "rv_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "pf_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pf_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "pf_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ar_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ar_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ar_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pc_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pc_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "pc_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "an_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "an_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "an_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 342,
+   "w": 220,
+   "h": 1070,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 290,
+   "y": 342,
+   "w": 220,
+   "h": 1070,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 540,
+   "y": 342,
+   "w": 220,
+   "h": 1070,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 762,
+   "y": 342,
+   "w": 220,
+   "h": 1070,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 984,
+   "y": 342,
+   "w": 220,
+   "h": 1070,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 1206,
+   "y": 342,
+   "w": 220,
+   "h": 1070,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 1428,
+   "y": 342,
+   "w": 220,
+   "h": 1070,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 488,
+   "h": 326,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 854,
+   "h": 116,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1010,
+   "h": 394,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 464,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Suspected acute coronary syndrome (ACS): stabilize, ASA, 12-lead ECG within 10 MINUTES",
+   "lines": [
+    "> 15–30 min crushing retrosternal pain to the arm or jaw, sweating; atypical or silent in women, the elderly, diabetics",
+    "ASA 162–325 mg chewed, NOT if aortic dissection is possible (arm blood pressures differ > 20 mmHg)",
+    "AFTER every myocardial infarction (MI): ASA for life + 2nd antiplatelet 12 months; rehab + other drugs: see the SECONDARY PREVENTION chart"
+   ]
+  },
+  {
+   "id": "g_st",
+   "x": 45,
+   "y": 174,
+   "w": 210,
+   "h": 96,
+   "kind": "plain",
+   "title": "ST ELEVATION",
+   "lines": [
+    "≥ 1 mm in 2 contiguous leads (2 mm in V2–V3) or NEW left bundle branch block"
+   ]
+  },
+  {
+   "id": "g_nst",
+   "x": 295,
+   "y": 174,
+   "w": 210,
+   "h": 96,
+   "kind": "plain",
+   "title": "NO ST elevation",
+   "lines": [
+    "ST depression, T inversion or a normal ECG"
+   ]
+  },
+  {
+   "id": "g_cx",
+   "x": 545,
+   "y": 174,
+   "w": 1098,
+   "h": 96,
+   "kind": "plain",
+   "title": "AFTER the MI: what is NEW?",
+   "lines": [
+    "the infarct's ARTERY predicts which complication to expect"
+   ]
+  },
+  {
+   "id": "st_head_0_0",
+   "x": 45,
+   "y": 350,
+   "w": 210,
+   "h": 98,
+   "kind": "st_h",
+   "title": "ST-elevation MI (STEMI)",
+   "lines": [
+    "OCCLUSIVE thrombus on a ruptured plaque",
+    "REPERFUSE NOW"
+   ]
+  },
+  {
+   "id": "ns_head_0_0",
+   "x": 295,
+   "y": 350,
+   "w": 210,
+   "h": 98,
+   "kind": "ns_h",
+   "title": "Unstable angina or NSTEMI",
+   "lines": [
+    "NON-occlusive thrombus",
+    "older, multivessel disease"
+   ]
+  },
+  {
+   "id": "rv_head_0_0",
+   "x": 545,
+   "y": 350,
+   "w": 210,
+   "h": 98,
+   "kind": "rv_h",
+   "title": "Right ventricular (RV) infarction",
+   "lines": [
+    "proximal RCA: with an INFERIOR MI"
+   ]
+  },
+  {
+   "id": "pf_head_0_0",
+   "x": 767,
+   "y": 350,
+   "w": 210,
+   "h": 98,
+   "kind": "pf_h",
+   "title": "Pump failure or rupture",
+   "lines": [
+    "a LARGE or transmural MI",
+    "rupture: late presenters"
+   ]
+  },
+  {
+   "id": "ar_head_0_0",
+   "x": 989,
+   "y": 350,
+   "w": 210,
+   "h": 98,
+   "kind": "ar_h",
+   "title": "Arrhythmia or heart block",
+   "lines": [
+    "ventricular tachycardia (VT) or fibrillation (VF) early, scar VT days later"
+   ]
+  },
+  {
+   "id": "pc_head_0_0",
+   "x": 1211,
+   "y": 350,
+   "w": 210,
+   "h": 98,
+   "kind": "pc_h",
+   "title": "Post-MI pericarditis",
+   "lines": [
+    "pleuritic pain + rub",
+    "see the PERICARDIAL DISEASE chart"
+   ]
+  },
+  {
+   "id": "an_head_0_0",
+   "x": 1433,
+   "y": 350,
+   "w": 210,
+   "h": 98,
+   "kind": "an_h",
+   "title": "LV aneurysm or PSEUDOaneurysm",
+   "lines": [
+    "both after a LARGE transmural MI"
+   ]
+  },
+  {
+   "id": "st_clue_0_0",
+   "x": 45,
+   "y": 488,
+   "w": 210,
+   "h": 326,
+   "kind": "st_t",
+   "title": "Which wall?",
+   "lines": [
+    "• V3–V4: ANTERIOR, left anterior descending (LAD)",
+    "• II, III, aVF: INFERIOR, right coronary (RCA)",
+    "• ST DOWN, max V1–V4: POSTERIOR"
+   ]
+  },
+  {
+   "id": "ns_clue_0_0",
+   "x": 295,
+   "y": 488,
+   "w": 210,
+   "h": 326,
+   "kind": "ns_t",
+   "title": "ECG: ST DEPRESSION or T inversion",
+   "lines": [
+    "• or completely NORMAL",
+    "• few develop Q waves"
+   ]
+  },
+  {
+   "id": "rv_clue_0_0",
+   "x": 545,
+   "y": 488,
+   "w": 210,
+   "h": 326,
+   "kind": "bad",
+   "title": "TRIAD",
+   "lines": [
+    "• LOW blood pressure",
+    "• HIGH jugular venous pressure",
+    "• CLEAR lungs"
+   ]
+  },
+  {
+   "id": "pf_clue_0_0",
+   "x": 767,
+   "y": 488,
+   "w": 210,
+   "h": 116,
+   "kind": "pf_t",
+   "title": "Pulmonary edema, cardiogenic SHOCK",
+   "lines": [
+    "• > 1/3 of the left ventricle (LV) lost, anterior MI",
+    "• shock: systolic BP < 90, cold"
+   ]
+  },
+  {
+   "id": "pf_clue_1_0",
+   "x": 767,
+   "y": 626,
+   "w": 210,
+   "h": 188,
+   "kind": "bad",
+   "title": "NEW murmur or tamponade",
+   "lines": [
+    "• SOFT, apex: papillary muscle → acute mitral regurgitation (MR)",
+    "• HARSH, left sternal border: septal rupture",
+    "• free wall rupture: TAMPONADE, often fatal"
+   ]
+  },
+  {
+   "id": "ar_clue_0_0",
+   "x": 989,
+   "y": 488,
+   "w": 210,
+   "h": 326,
+   "kind": "ar_t",
+   "title": "The artery decides",
+   "lines": [
+    "• INFERIOR: sinus bradycardia; AV block, reversible after PCI",
+    "• ANTERIOR: Mobitz II, unstable and irreversible"
+   ]
+  },
+  {
+   "id": "pc_clue_0_0",
+   "x": 1211,
+   "y": 488,
+   "w": 210,
+   "h": 326,
+   "kind": "pc_t",
+   "title": "Two timings",
+   "lines": [
+    "• EARLY: < 5 days, transmural MI",
+    "• LATE: Dressler syndrome, immune, weeks later"
+   ]
+  },
+  {
+   "id": "an_clue_0_0",
+   "x": 1433,
+   "y": 488,
+   "w": 210,
+   "h": 171,
+   "kind": "an_t",
+   "title": "PSEUDO: EARLY, a contained rupture",
+   "lines": [
+    "• NARROW neck, only the pericardium holds",
+    "• can RUPTURE → tamponade"
+   ]
+  },
+  {
+   "id": "an_clue_1_0",
+   "x": 1433,
+   "y": 681,
+   "w": 210,
+   "h": 133,
+   "kind": "an_w",
+   "title": "TRUE aneurysm: LATE",
+   "lines": [
+    "• WIDE neck, all 3 layers",
+    "• LV thrombus, heart failure"
+   ]
+  },
+  {
+   "id": "st_inv_0_0",
+   "x": 45,
+   "y": 854,
+   "w": 210,
+   "h": 116,
+   "kind": "bad",
+   "title": "Do NOT wait for troponin",
+   "lines": [
+    "history + exam + ECG make the diagnosis"
+   ]
+  },
+  {
+   "id": "ns_inv_0_0",
+   "x": 295,
+   "y": 854,
+   "w": 210,
+   "h": 116,
+   "kind": "ns_t",
+   "title": "NSTEMI: troponin RISES and FALLS",
+   "lines": [
+    "~takes hours to appear"
+   ]
+  },
+  {
+   "id": "rv_inv_0_0",
+   "x": 545,
+   "y": 854,
+   "w": 210,
+   "h": 116,
+   "kind": "rv_t",
+   "title": "ST elevation in V4R",
+   "lines": [
+    "the right-sided lead"
+   ]
+  },
+  {
+   "id": "pf_inv_0_0",
+   "x": 767,
+   "y": 854,
+   "w": 210,
+   "h": 116,
+   "kind": "pf_t",
+   "title": "Echo + right heart catheter",
+   "lines": [
+    "• septal rupture: O2 saturation STEPS UP in the RV",
+    "• acute MR: large V wave"
+   ]
+  },
+  {
+   "id": "ar_inv_0_0",
+   "x": 989,
+   "y": 854,
+   "w": 210,
+   "h": 116,
+   "kind": "ar_t",
+   "title": "Monitor",
+   "lines": [
+    "MOST common: accelerated idioventricular rhythm, from reperfusion"
+   ]
+  },
+  {
+   "id": "pc_inv_0_0",
+   "x": 1211,
+   "y": 854,
+   "w": 210,
+   "h": 116,
+   "kind": "pc_t",
+   "title": "Rub > 24 h after the MI",
+   "lines": [
+    "a late finding"
+   ]
+  },
+  {
+   "id": "an_inv_0_0",
+   "x": 1433,
+   "y": 854,
+   "w": 210,
+   "h": 116,
+   "kind": "an_t",
+   "title": "Echo or MRI",
+   "lines": []
+  },
+  {
+   "id": "st_tx_0_0",
+   "x": 45,
+   "y": 1010,
+   "w": 210,
+   "h": 98,
+   "kind": "ok",
+   "title": "1 · Nitroglycerin, morphine, 2nd antiplatelet",
+   "lines": [
+    "~no nitro if hypotensive or RV infarct"
+   ]
+  },
+  {
+   "id": "st_tx_1_0",
+   "x": 45,
+   "y": 1130,
+   "w": 210,
+   "h": 118,
+   "kind": "bad",
+   "title": "2 · PRIMARY percutaneous coronary intervention (PCI)",
+   "lines": [
+    "gold standard; best within 1 h of pain"
+   ]
+  },
+  {
+   "id": "st_tx_2_0",
+   "x": 45,
+   "y": 1270,
+   "w": 210,
+   "h": 134,
+   "kind": "warn",
+   "title": "No PCI without delay → FIBRINOLYSIS",
+   "lines": [
+    "• < 12 h, no bleeding risk; + heparin",
+    "• pain + ST not ↓ 50% → RESCUE PCI"
+   ]
+  },
+  {
+   "id": "ns_tx_0_0",
+   "x": 295,
+   "y": 1010,
+   "w": 210,
+   "h": 92,
+   "kind": "ok",
+   "title": "1 · Control the ischemia",
+   "lines": [
+    "nitrates, beta blocker, oxygen, morphine"
+   ]
+  },
+  {
+   "id": "ns_tx_1_0",
+   "x": 295,
+   "y": 1124,
+   "w": 210,
+   "h": 110,
+   "kind": "ok",
+   "title": "2 · Pacify the plaque",
+   "lines": [
+    "• ASA + clopidogrel or ticagrelor",
+    "• + heparin, enoxaparin or fondaparinux 48–72 h"
+   ]
+  },
+  {
+   "id": "ns_tx_2_0",
+   "x": 295,
+   "y": 1256,
+   "w": 210,
+   "h": 148,
+   "kind": "warn",
+   "title": "3 · ANGIOGRAPHY within 24–48 h",
+   "lines": [
+    "• then PCI or bypass surgery (CABG)",
+    "• SOONER: ongoing pain, ST change, edema, low BP"
+   ]
+  },
+  {
+   "id": "rv_tx_0_0",
+   "x": 545,
+   "y": 1010,
+   "w": 210,
+   "h": 205,
+   "kind": "ok",
+   "title": "IV FLUIDS + PCI of the RCA",
+   "lines": [
+    "RV function recovers in 2–3 days"
+   ]
+  },
+  {
+   "id": "rv_tx_1_0",
+   "x": 545,
+   "y": 1237,
+   "w": 210,
+   "h": 167,
+   "kind": "bad",
+   "title": "AVOID nitroglycerin",
+   "lines": [
+    "the RV depends on preload"
+   ]
+  },
+  {
+   "id": "pf_tx_0_0",
+   "x": 767,
+   "y": 1010,
+   "w": 210,
+   "h": 177,
+   "kind": "ok",
+   "title": "Edema: IV furosemide, nitro, morphine",
+   "lines": [
+    "+ early catheterization"
+   ]
+  },
+  {
+   "id": "pf_tx_1_0",
+   "x": 767,
+   "y": 1209,
+   "w": 210,
+   "h": 195,
+   "kind": "bad",
+   "title": "Rupture: balloon pump → URGENT surgery",
+   "lines": [
+    "tamponade: pericardiocentesis + repair"
+   ]
+  },
+  {
+   "id": "ar_tx_0_0",
+   "x": 989,
+   "y": 1010,
+   "w": 210,
+   "h": 99,
+   "kind": "ok",
+   "title": "Inferior block: rarely needs pacing",
+   "lines": []
+  },
+  {
+   "id": "ar_tx_1_0",
+   "x": 989,
+   "y": 1131,
+   "w": 210,
+   "h": 117,
+   "kind": "warn",
+   "title": "Anterior Mobitz II: temporary pacing",
+   "lines": [
+    "often permanent"
+   ]
+  },
+  {
+   "id": "ar_tx_2_0",
+   "x": 989,
+   "y": 1270,
+   "w": 210,
+   "h": 133,
+   "kind": "bad",
+   "title": "VT or VF: CARDIOVERT",
+   "lines": [
+    "then beta blocker or amiodarone; scar VT: ablation or implantable defibrillator (ICD)"
+   ]
+  },
+  {
+   "id": "pc_tx_0_0",
+   "x": 1211,
+   "y": 1010,
+   "w": 210,
+   "h": 186,
+   "kind": "ok",
+   "title": "Early: HIGH-DOSE ASA + colchicine",
+   "lines": []
+  },
+  {
+   "id": "pc_tx_1_0",
+   "x": 1211,
+   "y": 1218,
+   "w": 210,
+   "h": 186,
+   "kind": "ok",
+   "title": "Dressler: ASA or NSAID + colchicine",
+   "lines": []
+  },
+  {
+   "id": "an_tx_0_0",
+   "x": 1433,
+   "y": 1010,
+   "w": 210,
+   "h": 177,
+   "kind": "bad",
+   "title": "Pseudoaneurysm: SURGICAL repair",
+   "lines": []
+  },
+  {
+   "id": "an_tx_1_0",
+   "x": 1433,
+   "y": 1209,
+   "w": 210,
+   "h": 195,
+   "kind": "warn",
+   "title": "Aneurysm: warfarin 3–6 months",
+   "lines": [
+    "± aneurysmectomy"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_st",
+   "path": "M844.0 124V149H150.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_nst",
+   "path": "M844.0 124V149H400.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_cx",
+   "path": "M844.0 124V149H1094.0V174"
+  },
+  {
+   "from": "pf_clue_0_0",
+   "to": "pf_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "an_clue_0_0",
+   "to": "an_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "st_tx_0_0",
+   "to": "st_tx_1_0"
+  },
+  {
+   "from": "st_tx_1_0",
+   "to": "st_tx_2_0"
+  },
+  {
+   "from": "ns_tx_0_0",
+   "to": "ns_tx_1_0"
+  },
+  {
+   "from": "ns_tx_1_0",
+   "to": "ns_tx_2_0"
+  },
+  {
+   "from": "rv_tx_0_0",
+   "to": "rv_tx_1_0"
+  },
+  {
+   "from": "pf_tx_0_0",
+   "to": "pf_tx_1_0"
+  },
+  {
+   "from": "ar_tx_0_0",
+   "to": "ar_tx_1_0"
+  },
+  {
+   "from": "ar_tx_1_0",
+   "to": "ar_tx_2_0"
+  },
+  {
+   "from": "pc_tx_0_0",
+   "to": "pc_tx_1_0"
+  },
+  {
+   "from": "an_tx_0_0",
+   "to": "an_tx_1_0"
+  },
+  {
+   "from": "st_head_0_0",
+   "to": "st_clue_0_0"
+  },
+  {
+   "from": "st_clue_0_0",
+   "to": "st_inv_0_0"
+  },
+  {
+   "from": "st_inv_0_0",
+   "to": "st_tx_0_0"
+  },
+  {
+   "from": "g_st",
+   "to": "st_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ns_head_0_0",
+   "to": "ns_clue_0_0"
+  },
+  {
+   "from": "ns_clue_0_0",
+   "to": "ns_inv_0_0"
+  },
+  {
+   "from": "ns_inv_0_0",
+   "to": "ns_tx_0_0"
+  },
+  {
+   "from": "g_nst",
+   "to": "ns_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "rv_head_0_0",
+   "to": "rv_clue_0_0"
+  },
+  {
+   "from": "rv_clue_0_0",
+   "to": "rv_inv_0_0"
+  },
+  {
+   "from": "rv_inv_0_0",
+   "to": "rv_tx_0_0"
+  },
+  {
+   "from": "g_cx",
+   "to": "rv_head_0_0",
+   "from_dx": -444
+  },
+  {
+   "from": "pf_head_0_0",
+   "to": "pf_clue_0_0"
+  },
+  {
+   "from": "pf_clue_1_0",
+   "to": "pf_inv_0_0"
+  },
+  {
+   "from": "pf_inv_0_0",
+   "to": "pf_tx_0_0"
+  },
+  {
+   "from": "g_cx",
+   "to": "pf_head_0_0",
+   "from_dx": -222
+  },
+  {
+   "from": "ar_head_0_0",
+   "to": "ar_clue_0_0"
+  },
+  {
+   "from": "ar_clue_0_0",
+   "to": "ar_inv_0_0"
+  },
+  {
+   "from": "ar_inv_0_0",
+   "to": "ar_tx_0_0"
+  },
+  {
+   "from": "g_cx",
+   "to": "ar_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "pc_head_0_0",
+   "to": "pc_clue_0_0"
+  },
+  {
+   "from": "pc_clue_0_0",
+   "to": "pc_inv_0_0"
+  },
+  {
+   "from": "pc_inv_0_0",
+   "to": "pc_tx_0_0"
+  },
+  {
+   "from": "g_cx",
+   "to": "pc_head_0_0",
+   "from_dx": 222
+  },
+  {
+   "from": "an_head_0_0",
+   "to": "an_clue_0_0"
+  },
+  {
+   "from": "an_clue_1_0",
+   "to": "an_inv_0_0"
+  },
+  {
+   "from": "an_inv_0_0",
+   "to": "an_tx_0_0"
+  },
+  {
+   "from": "g_cx",
+   "to": "an_head_0_0",
+   "from_dx": 444
+  }
+ ],
+ "panels": []
+}

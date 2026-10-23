@@ -1,0 +1,158 @@
+{
+ "name": "approach to preterm labour pathway",
+ "title": "Preterm labour pathway: contractions before 37 weeks split by cervical dilatation and by a gush of fluid into threatened preterm labour, preterm labour and preterm prelabour rupture of membranes, then magnesium sulfate and penicillin if birth is imminent before 34 weeks",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 260,
+   "y": 10,
+   "w": 400,
+   "kind": "plain",
+   "title": "Contractions before 37 weeks",
+   "lines": [
+    "(threatened preterm labour)"
+   ]
+  },
+  {
+   "id": "B",
+   "x": 40,
+   "y": 120,
+   "w": 380,
+   "h": 84,
+   "kind": "plain",
+   "title": "Cervical dilatation on exam?",
+   "lines": []
+  },
+  {
+   "id": "E",
+   "x": 500,
+   "y": 120,
+   "w": 400,
+   "h": 84,
+   "kind": "plain",
+   "title": "Gush of fluid?",
+   "lines": [
+    "pooling / nitrazine / ferning / low amniotic fluid index"
+   ]
+  },
+  {
+   "id": "C",
+   "x": 15,
+   "y": 260,
+   "w": 265,
+   "h": 128,
+   "kind": "ok",
+   "title": "Threatened preterm labour (TPTL)",
+   "lines": [
+    "hydrate, treat urinary tract infection (UTI)",
+    "may resolve without delivery"
+   ]
+  },
+  {
+   "id": "D",
+   "x": 300,
+   "y": 260,
+   "w": 285,
+   "h": 128,
+   "kind": "warn",
+   "title": "Preterm labour",
+   "lines": [
+    "tocolysis",
+    "+ antenatal corticosteroids if < 34 weeks",
+    "with or without transfer to tertiary centre"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 605,
+   "y": 260,
+   "w": 300,
+   "h": 128,
+   "kind": "warn",
+   "title": "Preterm prelabour rupture of membranes (PPROM)",
+   "lines": [
+    "antibiotics for latency",
+    "complete steroid course",
+    "watch for chorioamnionitis"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 480,
+   "y": 450,
+   "w": 240,
+   "kind": "plain",
+   "title": "Birth imminent?",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 290,
+   "y": 570,
+   "w": 620,
+   "kind": "bad",
+   "title": "Magnesium sulfate intravenous (IV) bolus + infusion (neuroprotection)",
+   "lines": [
+    "+ IV penicillin if group B streptococcus (GBS) positive or unknown"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B",
+   "from_dx": -120
+  },
+  {
+   "from": "A",
+   "to": "E",
+   "from_dx": 120
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "from_dx": -80,
+   "label": "no",
+   "label_at": [
+    118,
+    236
+   ]
+  },
+  {
+   "from": "B",
+   "to": "D",
+   "from_dx": 80,
+   "label": "yes",
+   "label_at": [
+    350,
+    236
+   ]
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "label": "yes",
+   "label_at": [
+    760,
+    236
+   ]
+  },
+  {
+   "from": "D",
+   "to": "G"
+  },
+  {
+   "from": "F",
+   "to": "G"
+  },
+  {
+   "from": "G",
+   "to": "H",
+   "label": "yes, < 34 weeks",
+   "label_at": [
+    662,
+    530
+   ]
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "name": "approach to common breast problems pathway",
+ "title": "Breast lump pathway: who is investigated now, who is re-examined after the next cycle, and which imaging comes first by age",
+ "nodes": [
+  {"id": "A", "x": 40, "y": 10, "w": 320, "kind": "plain", "title": "Breast lump", "lines": ["History + breast exam + axilla and nodes"]},
+  {"id": "B", "x": 70, "y": 110, "w": 260, "h": 48, "kind": "plain", "title": "Post-menopausal or high risk?", "lines": []},
+  {"id": "C", "x": 70, "y": 200, "w": 260, "h": 48, "kind": "plain", "title": "History and exam benign?", "lines": []},
+  {"id": "INV", "x": 560, "y": 200, "w": 260, "h": 48, "kind": "warn", "title": "INVESTIGATE NOW", "lines": []},
+  {"id": "D", "x": 60, "y": 290, "w": 280, "kind": "plain", "title": "Re-examine after the next menstrual cycle", "lines": []},
+  {"id": "E", "x": 120, "y": 400, "w": 160, "h": 48, "kind": "plain", "title": "Resolved?", "lines": []},
+  {"id": "F", "x": 120, "y": 490, "w": 160, "h": 48, "kind": "ok", "title": "Follow", "lines": []},
+  {"id": "G", "x": 610, "y": 300, "w": 160, "h": 48, "kind": "plain", "title": "Age?", "lines": []},
+  {"id": "H", "x": 490, "y": 410, "w": 200, "kind": "anti", "title": "ULTRASOUND first", "lines": ["MRI if high risk"]},
+  {"id": "I", "x": 710, "y": 410, "w": 195, "kind": "ana", "title": "MAMMOGRAM first", "lines": ["+/- ultrasound (US)"]}
+ ],
+ "edges": [
+  {"from": "A", "to": "B"},
+  {"from": "B", "to": "INV", "path": "M330 134H690V198", "label": "Yes", "label_at": [510, 127]},
+  {"from": "B", "to": "C", "label": "No - pre-menopausal", "label_at": [276, 184]},
+  {"from": "C", "to": "INV", "from_side": "right", "to_side": "left", "from_dx": -10, "to_dx": -10, "label": "No", "label_at": [445, 207]},
+  {"from": "C", "to": "D", "label": "Yes", "label_at": [222, 275]},
+  {"from": "D", "to": "E"},
+  {"from": "E", "to": "F", "label": "Yes", "label_at": [222, 475]},
+  {"from": "E", "to": "INV", "path": "M280 424H470V234H558", "label": "No", "label_at": [375, 417]},
+  {"from": "INV", "to": "G"},
+  {"from": "G", "to": "H", "from_dx": -40, "label": "< 35", "label_at": [555, 385]},
+  {"from": "G", "to": "I", "from_dx": 40, "label": "> 35", "label_at": [830, 385]}
+ ]
+}

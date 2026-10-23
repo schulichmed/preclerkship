@@ -1,0 +1,368 @@
+{
+ "name": "anxiety and stress overview",
+ "title": "Mental health screen decision chart: whether stress symptoms are an expected response, major depression or an anxiety disorder (decided by duration and interference), and whether alcohol or other drugs are involved; each column gives the clues, the screening tool and the score that decides the next step",
+ "col_w": 236,
+ "root": {
+  "title": "Stressed or anxious patient: an EXPECTED response, or a DISORDER? Are substances involved?",
+  "lines": [
+   "a mental health screen at EVERY visit, in the review of systems: mood, anxiety, sleep, appetite, concentration, substances, stressors",
+   "SAFETY FIRST: ask about thoughts of self-harm or of harming others",
+   "they rarely say \"I'm anxious\": they say \"I can't sleep and I have a constant headache\""
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_d",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "A DISORDER? DURATION + INTERFERENCE decide",
+   "lines": [
+    "symptoms come in CLUSTERS: the same one (insomnia) can belong to either"
+   ]
+  },
+  {
+   "id": "g_s",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "SUBSTANCES: ask every visit",
+   "lines": [
+    "\"How much alcohol in an average week? Are you or others concerned?\""
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "tool",
+  "act"
+ ],
+ "row_names": {
+  "clue": "CLUES",
+  "tool": "SCREEN",
+  "act": "SCORE → NEXT"
+ },
+ "columns": [
+  {
+   "id": "no",
+   "colour": "slate",
+   "drop_from": "g_d",
+   "drop_label": "fits the stressor",
+   "head": [
+    [
+     [
+      "h",
+      "Expected stress response",
+      [
+       "NOT a mental disorder"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Fits the stressor or loss",
+      [
+       "• expected or culturally approved (e.g. grief)",
+       "• NOT excessive",
+       "• does NOT disrupt function"
+      ]
+     ]
+    ]
+   ],
+   "tool": [
+    [
+     [
+      "w",
+      "GAD-7 + PHQ-9 low",
+      [
+       "0–4: minimal"
+      ]
+     ]
+    ]
+   ],
+   "act": [
+    [
+     [
+      "ok",
+      "No treatment: formulate the 4 Ps",
+      [
+       "predisposing, precipitating, perpetuating and PROTECTIVE: build on the protective ones"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "md",
+   "colour": "blue",
+   "drop_from": "g_d",
+   "drop_label": "≥ 2 WEEKS + interferes",
+   "head": [
+    [
+     [
+      "h",
+      "Major depressive disorder",
+      [
+       "enough symptoms for ≥ 2 weeks, excessive, interfering"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Depressive cluster",
+      [
+       "• sad, hopeless, worthless, lost interest",
+       "• isolating, eating changes, self-harm",
+       "• insomnia, fatigue, poor concentration, suicidal ideation"
+      ]
+     ]
+    ]
+   ],
+   "tool": [
+    [
+     [
+      "w",
+      "PHQ-9: Patient Health Questionnaire",
+      [
+       "9 items, the last 2 weeks"
+      ]
+     ]
+    ]
+   ],
+   "act": [
+    [
+     [
+      "ok",
+      "5–9 mild: watchful waiting",
+      [
+       "repeat at follow-up"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "10–14: CONSIDER medication or cognitive behavioural therapy (CBT)",
+      [
+       "15–19: medication + CBT"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "20–27 severe: + PSYCHIATRY referral",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "an",
+   "colour": "purple",
+   "drop_from": "g_d",
+   "drop_label": "~6 MONTHS + interferes",
+   "head": [
+    [
+     [
+      "h",
+      "Anxiety disorder",
+      [
+       "usually ≥ 6 months, excessive, interfering"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Anxious cluster",
+      [
+       "• worry, catastrophizing, can't switch off",
+       "• avoidance, reassurance-seeking",
+       "• palpitations, chest pain, headache, tension"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "The thought names the disorder",
+      [
+       "• many topics → generalized anxiety",
+       "• negative evaluation → social anxiety"
+      ]
+     ]
+    ]
+   ],
+   "tool": [
+    [
+     [
+      "w",
+      "GAD-7: Generalized Anxiety Disorder scale",
+      [
+       "7 items, the last 2 weeks",
+       "5 mild · 10 moderate · 15 severe"
+      ]
+     ]
+    ]
+   ],
+   "act": [
+    [
+     [
+      "warn",
+      "≥ 10 → FURTHER EVALUATION",
+      [
+       "also flags panic disorder, social anxiety, post-traumatic stress disorder (PTSD)"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "al",
+   "colour": "orange",
+   "drop_from": "g_s",
+   "drop_label": "alcohol",
+   "head": [
+    [
+     [
+      "h",
+      "Alcohol",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "How much in an average week?",
+      [
+       "• are you, or others, concerned?"
+      ]
+     ]
+    ]
+   ],
+   "tool": [
+    [
+     [
+      "w",
+      "CAGE: 4 yes/no questions",
+      [
+       "• 2–3: HIGH suspicion",
+       "• 4: virtually diagnostic"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "AUDIT: Alcohol Use Disorders Identification Test",
+      [
+       "10 items"
+      ]
+     ]
+    ]
+   ],
+   "act": [
+    [
+     [
+      "ok",
+      "AUDIT 0–7 low: moderate or abstain",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "8–19 medium–high: cut down or stop",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "20+ addiction likely: medication + counselling",
+      [
+       "dependent: do NOT stop without professional help"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dr",
+   "colour": "brown",
+   "drop_from": "g_s",
+   "drop_label": "other drugs",
+   "head": [
+    [
+     [
+      "h",
+      "Other drugs",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "\"Do you use any other drugs?\"",
+      [
+       "cannabis is common"
+      ]
+     ]
+    ]
+   ],
+   "tool": [
+    [
+     [
+      "w",
+      "DAST-10: Drug Abuse Screening Test",
+      [
+       "10 yes/no items, the last 12 months"
+      ]
+     ]
+    ]
+   ],
+   "act": [
+    [
+     [
+      "ok",
+      "Low",
+      [
+       "• 0: encouragement, education",
+       "• 1–2: feedback, advice"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "3–5 moderate: feedback + counselling",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "6–8 substantial: intensive assessment + referral",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

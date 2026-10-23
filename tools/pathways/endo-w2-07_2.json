@@ -1,0 +1,515 @@
+{
+ "name": "metabolic bone disease overview",
+ "width": 950,
+ "title": "Bone disease that is not osteoporosis, told apart by calcium, phosphate and alkaline phosphatase: osteomalacia (all abnormal), Paget's disease (very high alkaline phosphatase alone) and osteogenesis imperfecta (normal panel, fractures from birth); each column gives presentation, investigations and treatment in order",
+ "kinds": {
+  "om_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "om_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "om_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pg_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pg_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "pg_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "oi_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "oi_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "oi_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 290,
+   "w": 280,
+   "h": 826,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 350,
+   "y": 290,
+   "w": 280,
+   "h": 826,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 660,
+   "y": 290,
+   "w": 280,
+   "h": 826,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 436,
+   "h": 196,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 672,
+   "h": 160,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 872,
+   "h": 236,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 110,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Bone pain, deformity or fractures: is it NOT osteoporosis?",
+   "lines": [
+    "first: calcium (Ca) · phosphate (PO4) · alkaline phosphatase (ALP)",
+    "osteoporosis: see the OSTEOPOROSIS chart · calcium disorders: see the CALCIUM chart"
+   ]
+  },
+  {
+   "id": "g_om",
+   "x": 45,
+   "y": 138,
+   "w": 270,
+   "h": 80,
+   "kind": "plain",
+   "title": "Ca ↓ · PO4 ↓ · ALP ↑",
+   "lines": [
+    "urine Ca ↓"
+   ]
+  },
+  {
+   "id": "g_pg",
+   "x": 355,
+   "y": 138,
+   "w": 270,
+   "h": 80,
+   "kind": "plain",
+   "title": "ALP VERY HIGH · Ca, PO4 normal",
+   "lines": [
+    "urine hydroxyproline ↑ · Ca ↑ only if immobile"
+   ]
+  },
+  {
+   "id": "g_oi",
+   "x": 665,
+   "y": 138,
+   "w": 270,
+   "h": 80,
+   "kind": "plain",
+   "title": "Panel NORMAL · fractures from birth",
+   "lines": [
+    "minimal trauma"
+   ]
+  },
+  {
+   "id": "om_head_0_0",
+   "x": 45,
+   "y": 298,
+   "w": 270,
+   "h": 98,
+   "kind": "om_h",
+   "title": "Osteomalacia (adult) · rickets (child)",
+   "lines": [
+    "MINERALIZATION defect: vitamin D deficiency"
+   ]
+  },
+  {
+   "id": "pg_head_0_0",
+   "x": 355,
+   "y": 298,
+   "w": 270,
+   "h": 98,
+   "kind": "pg_h",
+   "title": "Paget's disease of bone",
+   "lines": [
+    "localized REMODELLING: ↑ resorption, then abnormal, fragile new bone"
+   ]
+  },
+  {
+   "id": "oi_head_0_0",
+   "x": 665,
+   "y": 298,
+   "w": 270,
+   "h": 98,
+   "kind": "oi_h",
+   "title": "Osteogenesis imperfecta",
+   "lines": [
+    "TYPE I COLLAGEN (COL1A1, COL1A2) · type 1 normal lifespan, type 2 lethal at birth"
+   ]
+  },
+  {
+   "id": "om_pres_0_0",
+   "x": 45,
+   "y": 436,
+   "w": 270,
+   "h": 106,
+   "kind": "om_t",
+   "title": "OVERT symptoms, unlike osteoporosis",
+   "lines": [
+    "• weak bones that fracture",
+    "• PROXIMAL myopathy: falls"
+   ]
+  },
+  {
+   "id": "om_pres_1_0",
+   "x": 45,
+   "y": 564,
+   "w": 270,
+   "h": 68,
+   "kind": "om_w",
+   "title": "Malabsorption, e.g. celiac disease",
+   "lines": [
+    "other causes: see the CALCIUM chart"
+   ]
+  },
+  {
+   "id": "pg_pres_0_0",
+   "x": 355,
+   "y": 436,
+   "w": 270,
+   "h": 69,
+   "kind": "pg_t",
+   "title": "Usually ASYMPTOMATIC",
+   "lines": [
+    "found on an x-ray or a high ALP"
+   ]
+  },
+  {
+   "id": "pg_pres_1_0",
+   "x": 355,
+   "y": 527,
+   "w": 270,
+   "h": 105,
+   "kind": "pg_w",
+   "title": "Or",
+   "lines": [
+    "• pain + bowing: pelvis, femur, tibia",
+    "• skull: headache, ↑ HAT SIZE, deafness",
+    "• WARMTH over the bone"
+   ]
+  },
+  {
+   "id": "oi_pres_0_0",
+   "x": 665,
+   "y": 436,
+   "w": 270,
+   "h": 96,
+   "kind": "oi_t",
+   "title": "Fragility fractures",
+   "lines": [
+    "• short stature, bowed long bones",
+    "• BLUE sclerae, hearing loss",
+    "• dentinogenesis imperfecta"
+   ]
+  },
+  {
+   "id": "oi_pres_1_0",
+   "x": 665,
+   "y": 554,
+   "w": 270,
+   "h": 78,
+   "kind": "oi_w",
+   "title": "Also",
+   "lines": [
+    "• aortic root dilatation, valve leaks",
+    "• Wormian bones, pectus"
+   ]
+  },
+  {
+   "id": "om_inv_0_0",
+   "x": 45,
+   "y": 672,
+   "w": 270,
+   "h": 69,
+   "kind": "om_t",
+   "title": "X-ray: PSEUDOFRACTURES",
+   "lines": [
+    "healed microfractures"
+   ]
+  },
+  {
+   "id": "om_inv_1_0",
+   "x": 45,
+   "y": 763,
+   "w": 270,
+   "h": 69,
+   "kind": "om_w",
+   "title": "Bone biopsy: the gold standard",
+   "lines": [
+    "usually not needed"
+   ]
+  },
+  {
+   "id": "pg_inv_0_0",
+   "x": 355,
+   "y": 672,
+   "w": 270,
+   "h": 78,
+   "kind": "pg_t",
+   "title": "1 · Bone scan: the extent",
+   "lines": [
+    "x-ray: expanded, denser bone · early lytic lesion"
+   ]
+  },
+  {
+   "id": "pg_inv_1_0",
+   "x": 355,
+   "y": 772,
+   "w": 270,
+   "h": 60,
+   "kind": "bad",
+   "title": "Osteosarcoma (1–3%)",
+   "lines": [
+    "marked pain, new lytic lesion, rising ALP"
+   ]
+  },
+  {
+   "id": "oi_inv_0_0",
+   "x": 665,
+   "y": 672,
+   "w": 270,
+   "h": 160,
+   "kind": "oi_t",
+   "title": "Monitor for life",
+   "lines": [
+    "• yearly spirometry",
+    "• every 2 years: hearing, bone density, electrocardiogram, echocardiogram",
+    "• skeletal x-rays every 1–2 years"
+   ]
+  },
+  {
+   "id": "om_tx_0_0",
+   "x": 45,
+   "y": 872,
+   "w": 270,
+   "h": 153,
+   "kind": "ok",
+   "title": "Vitamin D by the 25-hydroxyvitamin D level",
+   "lines": [
+    "• < 30 nmol/L: ergocalciferol 50,000 international units (IU) for 12 weeks, then 800–2,000 IU",
+    "• 30–75 nmol/L: 800–2,000 IU daily",
+    "• repeat in 3 months"
+   ]
+  },
+  {
+   "id": "om_tx_1_0",
+   "x": 45,
+   "y": 1047,
+   "w": 270,
+   "h": 61,
+   "kind": "ok",
+   "title": "Treat the cause",
+   "lines": [
+    "+ phosphate, calcium if low"
+   ]
+  },
+  {
+   "id": "pg_tx_0_0",
+   "x": 355,
+   "y": 872,
+   "w": 270,
+   "h": 116,
+   "kind": "warn",
+   "title": "ACTIVE (high ALP or active scan) + ANY: treat, even if asymptomatic",
+   "lines": [
+    "• skull, long bone, spine, next to a joint",
+    "• surgery planned at the site",
+    "• heart failure"
+   ]
+  },
+  {
+   "id": "pg_tx_1_0",
+   "x": 355,
+   "y": 1010,
+   "w": 270,
+   "h": 98,
+   "kind": "ok",
+   "title": "Analgesia + intravenous (IV) ZOLEDRONATE",
+   "lines": [
+    "• calcitonin",
+    "• NOT teriparatide, denosumab"
+   ]
+  },
+  {
+   "id": "oi_tx_0_0",
+   "x": 665,
+   "y": 872,
+   "w": 270,
+   "h": 236,
+   "kind": "ok",
+   "title": "IV bisphosphonate (zoledronate) if ANY",
+   "lines": [
+    "• long bone deformity",
+    "• vertebral compression fracture",
+    "• > 3 fractures a year"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_om",
+   "path": "M490.0 88V113H180.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_pg",
+   "path": "M490.0 88V113H490.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_oi",
+   "path": "M490.0 88V113H800.0V138"
+  },
+  {
+   "from": "om_pres_0_0",
+   "to": "om_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "pg_pres_0_0",
+   "to": "pg_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "oi_pres_0_0",
+   "to": "oi_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "om_inv_0_0",
+   "to": "om_inv_1_0"
+  },
+  {
+   "from": "pg_inv_0_0",
+   "to": "pg_inv_1_0"
+  },
+  {
+   "from": "om_tx_0_0",
+   "to": "om_tx_1_0"
+  },
+  {
+   "from": "pg_tx_0_0",
+   "to": "pg_tx_1_0"
+  },
+  {
+   "from": "om_head_0_0",
+   "to": "om_pres_0_0"
+  },
+  {
+   "from": "om_pres_1_0",
+   "to": "om_inv_0_0"
+  },
+  {
+   "from": "om_inv_1_0",
+   "to": "om_tx_0_0"
+  },
+  {
+   "from": "g_om",
+   "to": "om_head_0_0",
+   "from_dx": 0,
+   "label": "mineral + ALP",
+   "label_at": [
+    180.0,
+    258
+   ]
+  },
+  {
+   "from": "pg_head_0_0",
+   "to": "pg_pres_0_0"
+  },
+  {
+   "from": "pg_pres_1_0",
+   "to": "pg_inv_0_0"
+  },
+  {
+   "from": "pg_inv_1_0",
+   "to": "pg_tx_0_0"
+  },
+  {
+   "from": "g_pg",
+   "to": "pg_head_0_0",
+   "from_dx": 0,
+   "label": "ALP alone",
+   "label_at": [
+    490.0,
+    258
+   ]
+  },
+  {
+   "from": "oi_head_0_0",
+   "to": "oi_pres_0_0"
+  },
+  {
+   "from": "oi_pres_1_0",
+   "to": "oi_inv_0_0"
+  },
+  {
+   "from": "oi_inv_0_0",
+   "to": "oi_tx_0_0"
+  },
+  {
+   "from": "g_oi",
+   "to": "oi_head_0_0",
+   "from_dx": 0,
+   "label": "since birth",
+   "label_at": [
+    800.0,
+    258
+   ]
+  }
+ ],
+ "panels": []
+}

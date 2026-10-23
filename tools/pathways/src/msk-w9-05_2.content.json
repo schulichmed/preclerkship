@@ -1,0 +1,158 @@
+{
+ "name": "hip pain overview",
+ "title": "Hip pain sorted by where the patient points: anterior or groin pain inside the joint (hip osteoarthritis, labral tear), lateral pain (greater trochanteric pain syndrome) and posterior buttock pain (piriformis syndrome), each with its presentation, exam, investigations and treatment in order, plus the socks question that separates lateral hip osteoarthritis from greater trochanteric pain syndrome",
+ "col_w": 236,
+ "root": {
+  "title": "'My hip hurts': ask WHERE",
+  "lines": [
+   "TRUE hip pain (inside the joint) is usually ANTERIOR, in the GROIN",
+   "patients often point to the lateral buttock, sometimes to the buttock itself"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ant",
+   "cols": [0, 1],
+   "title": "ANTERIOR / GROIN: usually inside the joint",
+   "lines": ["also: rheumatoid or septic arthritis · osteonecrosis · iliopsoas tendinopathy"]
+  },
+  {
+   "id": "g_lat",
+   "cols": [2, 2],
+   "title": "LATERAL",
+   "lines": ["hip OA can present here too: ask about SOCKS"]
+  },
+  {
+   "id": "g_post",
+   "cols": [3, 3],
+   "title": "POSTERIOR / BUTTOCK",
+   "lines": []
+  }
+ ],
+ "sections": ["head", "clue", "exam", "inv", "tx"],
+ "row_names": {
+  "clue": "PRESENTS AS",
+  "exam": "EXAM",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "oa",
+   "colour": "teal",
+   "head": [[["h", "Hip osteoarthritis (OA)", ["primary: idiopathic, elderly · secondary: post-traumatic, younger"]]]],
+   "clue": [
+    [["t", "Groin pain, the 'C' sign", [
+     "• worse with prolonged activity · night pain",
+     "• morning stiffness < 30 min · stiff after long sitting",
+     "• crepitus, locking · TROUBLE PUTTING SOCKS ON"]]]
+   ],
+   "exam": [
+    [["w", "INTERNAL ROTATION lost first", [
+     "• FABER, FADIR, Stinchfield",
+     "• antalgic gait · leg length?"]]]
+   ],
+   "inv": [
+    [["t", "A CLINICAL diagnosis", [
+     "• X-ray confirms it, and changes may not match symptoms",
+     "• CT or MRI not needed (secondary causes, surgical planning)"]]]
+   ],
+   "tx": [
+    [["ok", "1 · Non-drug", ["• education, exercise, physio", "• weight management, work supports", "• tai chi, a cane"]]],
+    [["ok", "2 · Drugs + injection", ["• oral anti-inflammatories (NSAIDs), Tylenol, duloxetine", "• image-guided injection: steroid, hyaluronic acid or platelet-rich plasma"]]],
+    [["warn", "3 · Hip replacement", ["hemi, total or resurfacing"]]]
+   ]
+  },
+  {
+   "id": "lab",
+   "colour": "purple",
+   "head": [[["h", "Labral tear", ["all ages · commonly ACTIVE FEMALES"]]]],
+   "clue": [
+    [["t", "Vague groin pain", [
+     "• CLICKING, catching, snapping",
+     "• locking"]]]
+   ],
+   "exam": [
+    [["w", "FABER, FADIR positive", []]]
+   ],
+   "inv": [
+    [["t", "MR ARTHROGRAM", [
+     "• the imaging study of choice",
+     "• X-ray only to exclude other causes"]]]
+   ],
+   "tx": [
+    [["ok", "1 · The general hip pain approach", []]],
+    [["warn", "2 · Arthroscopic labral debridement or repair", []]]
+   ]
+  },
+  {
+   "id": "gt",
+   "colour": "orange",
+   "head": [[["h", "Greater trochanteric pain syndrome (GTPS)", ["gluteus medius + minimus tendinopathy ± bursitis (iliotibial band friction)"]]]],
+   "clue": [
+    [["t", "Pain over the greater trochanter", [
+     "• CAN'T LIE ON THAT SIDE · worse weight bearing",
+     "• ± to the buttock or down the thigh to the knee",
+     "• no swelling · SOCKS ON FINE · female > male"]]]
+   ],
+   "exam": [
+    [["w", "POINT TENDERNESS over the trochanter", [
+     "• highly sensitive · Ober's test +",
+     "• single leg stance for 30 s is painful"]]]
+   ],
+   "inv": [
+    [["t", "A CLINICAL diagnosis", [
+     "• imaging rarely needed",
+     "• ask about a recent increase in activity"]]]
+   ],
+   "tx": [
+    [["ok", "1 · Physio", ["stretch the iliotibial band, strengthen the hip abductors · load + weight management"]]],
+    [["ok", "2 · Rest + ice (PRICE), NSAIDs, steroid injection", []]],
+    [["warn", "3 · Shock-wave therapy (weak evidence) · ?surgery", []]]
+   ]
+  },
+  {
+   "id": "pir",
+   "colour": "blue",
+   "head": [[["h", "Piriformis syndrome", ["muscle strain or tendinopathy ± SCIATIC nerve impingement"]]]],
+   "clue": [
+    [["t", "Buttock pain", [
+     "• worse getting out of bed, sitting long, moving the hip",
+     "• radicular symptoms down the leg if the nerve is caught",
+     "• after buttock trauma, long sitting, anatomic anomalies"]]]
+   ],
+   "exam": [
+    [["w", "Tender over piriformis", [
+     "• Pace, Beatty, FAIR, Freiberg"]]]
+   ],
+   "inv": [
+    [["t", "Electromyography (EMG)", [
+     "only if the nerve is involved"]]]
+   ],
+   "tx": [
+    [["ok", "1 · Physio", ["stretch piriformis · range of motion · deep massage"]]],
+    [["ok", "2 · NSAIDs, ultrasound-guided steroid injection", []]],
+    [["warn", "3 · ?surgery", []]]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Lateral pain: GTPS or hip OA?",
+   "cols": 1,
+   "items": [
+    "GTPS: pain on activity and lying on it · tender trochanter · single leg stance hurts",
+    "hip OA: morning stiffness, groin pain, progressive · socks hard · internal + external rotation painful"
+   ]
+  },
+  {
+   "title": "Tests and the rest",
+   "cols": 1,
+   "items": [
+    "FABER = flexion, abduction, external rotation · FADIR or FAIR = flexion, adduction, internal rotation",
+    "osteonecrosis: trauma, steroids, alcohol, lupus, sickle cell, radiation",
+    "snapping hip: very common · not painful → don't worry about it"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,732 @@
+{
+ "name": "lymphadenopathy overview",
+ "width": 1302,
+ "title": "Enlarged lymph node: after history and exam, a benign self-limited cause is treated or explained, autoimmune or serious infection gets specific tests, red flags go to bloods, imaging and excisional biopsy, and unexplained nodes are worked up if generalized or watched for a month if regional; for a regional node the site points to the cause",
+ "kinds": {
+  "be_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "be_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "be_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ai_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ai_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ai_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ma_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ma_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ma_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ge_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ge_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ge_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "re_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "re_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "re_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 232,
+   "h": 1048,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 302,
+   "y": 288,
+   "w": 232,
+   "h": 1048,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 564,
+   "y": 288,
+   "w": 232,
+   "h": 1048,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 826,
+   "y": 288,
+   "w": 232,
+   "h": 1048,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1060,
+   "y": 288,
+   "w": 232,
+   "h": 1048,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 414,
+   "h": 340,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 794,
+   "h": 332,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1166,
+   "h": 162,
+   "text": "NEXT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 286,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Enlarged lymph node: is it REALLY a node, and does it need a BIOPSY?",
+   "lines": [
+    "> 98% are NOT malignant in primary care · usually tested only if > 1 cm",
+    "mimics: lipoma, cyst, hematoma, hemangioma, fibroma · history + exam sort it first ↓"
+   ]
+  },
+  {
+   "id": "g_b",
+   "x": 45,
+   "y": 138,
+   "w": 222,
+   "h": 78,
+   "kind": "plain",
+   "title": "BENIGN or self-limited",
+   "lines": []
+  },
+  {
+   "id": "g_a",
+   "x": 307,
+   "y": 138,
+   "w": 222,
+   "h": 78,
+   "kind": "plain",
+   "title": "AUTOIMMUNE or serious INFECTION",
+   "lines": []
+  },
+  {
+   "id": "g_m",
+   "x": 569,
+   "y": 138,
+   "w": 222,
+   "h": 78,
+   "kind": "plain",
+   "title": "Suggests MALIGNANCY",
+   "lines": []
+  },
+  {
+   "id": "g_u",
+   "x": 831,
+   "y": 138,
+   "w": 456,
+   "h": 78,
+   "kind": "plain",
+   "title": "UNEXPLAINED: review malignancy risk",
+   "lines": [
+    "age, duration, exposures, symptoms, site · HIGH risk → MALIGNANCY column"
+   ]
+  },
+  {
+   "id": "be_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 222,
+   "h": 78,
+   "kind": "be_h",
+   "title": "Reactive node",
+   "lines": [
+    "benign causes more likely the YOUNGER the patient"
+   ]
+  },
+  {
+   "id": "ai_head_0_0",
+   "x": 307,
+   "y": 296,
+   "w": 222,
+   "h": 78,
+   "kind": "ai_h",
+   "title": "Autoimmune or infection",
+   "lines": [
+    "SLE, RA, sarcoid · HIV, TB, syphilis, EBV, CMV"
+   ]
+  },
+  {
+   "id": "ma_head_0_0",
+   "x": 569,
+   "y": 296,
+   "w": 222,
+   "h": 78,
+   "kind": "ma_h",
+   "title": "Red flags",
+   "lines": [
+    "malignant or systemic disease"
+   ]
+  },
+  {
+   "id": "ge_head_0_0",
+   "x": 831,
+   "y": 296,
+   "w": 222,
+   "h": 78,
+   "kind": "ge_h",
+   "title": "Generalized",
+   "lines": [
+    "> 1 region"
+   ]
+  },
+  {
+   "id": "re_head_0_0",
+   "x": 1065,
+   "y": 296,
+   "w": 222,
+   "h": 78,
+   "kind": "re_h",
+   "title": "Regional",
+   "lines": [
+    "one area: the site points to the cause ↓"
+   ]
+  },
+  {
+   "id": "be_clue_0_0",
+   "x": 45,
+   "y": 414,
+   "w": 222,
+   "h": 340,
+   "kind": "be_t",
+   "title": "Clues",
+   "lines": [
+    "• tender, infection in the area it drains",
+    "• ear, nose or throat symptoms",
+    "• e.g. upper respiratory infection, mononucleosis, dental, skin"
+   ]
+  },
+  {
+   "id": "ai_clue_0_0",
+   "x": 307,
+   "y": 414,
+   "w": 222,
+   "h": 340,
+   "kind": "ai_t",
+   "title": "Clues",
+   "lines": [
+    "• rash, arthralgia, myalgia, mouth ulcers",
+    "• cat scratch, tick bite, travel, sexual history",
+    "• drugs: phenytoin, carbamazepine, allopurinol"
+   ]
+  },
+  {
+   "id": "ma_clue_0_0",
+   "x": 569,
+   "y": 414,
+   "w": 222,
+   "h": 150,
+   "kind": "ma_t",
+   "title": "The node",
+   "lines": [
+    "• SUPRACLAVICULAR: abdominal or chest cancer",
+    "• generalized, FIXED, non-tender, MATTED",
+    "• ≥ 2 cm and growing, or no better after 2 weeks of antibiotics"
+   ]
+  },
+  {
+   "id": "ma_clue_1_0",
+   "x": 569,
+   "y": 586,
+   "w": 222,
+   "h": 168,
+   "kind": "ma_w",
+   "title": "The patient",
+   "lines": [
+    "• B symptoms: fever > 1 wk, night sweats, weight loss > 10%",
+    "• abnormal CBC (blasts, cytopenias) or chest X-ray (mediastinal mass)",
+    "• NO ENT symptoms, ESR/CRP rising"
+   ]
+  },
+  {
+   "id": "ge_clue_0_0",
+   "x": 831,
+   "y": 414,
+   "w": 222,
+   "h": 340,
+   "kind": "ge_t",
+   "title": "Common causes",
+   "lines": [
+    "• leukemia, lymphoma, solid tumour",
+    "• sarcoid, SLE, RA",
+    "• HIV, EBV, TB, syphilis, fungi"
+   ]
+  },
+  {
+   "id": "re_clue_0_0",
+   "x": 1065,
+   "y": 414,
+   "w": 222,
+   "h": 186,
+   "kind": "re_t",
+   "title": "The site points to the cause",
+   "lines": [
+    "• NECK: EBV, pharyngitis, mycobacteria · head + neck cancer, lymphoma",
+    "• ARMPIT: breast cancer, melanoma · skin infection",
+    "• GROIN (normally palpable): STI, leg infection · penile, vulvar, anal cancer"
+   ]
+  },
+  {
+   "id": "re_clue_1_0",
+   "x": 1065,
+   "y": 622,
+   "w": 222,
+   "h": 132,
+   "kind": "re_w",
+   "title": "Less common sites",
+   "lines": [
+    "• ELBOW (epitrochlear): secondary syphilis, local infection",
+    "• MEDIASTINUM (on imaging): TB, sarcoidosis, cancer"
+   ]
+  },
+  {
+   "id": "be_inv_0_0",
+   "x": 45,
+   "y": 794,
+   "w": 222,
+   "h": 332,
+   "kind": "be_t",
+   "title": "No specific testing",
+   "lines": [
+    "history + exam made the diagnosis"
+   ]
+  },
+  {
+   "id": "ai_inv_0_0",
+   "x": 307,
+   "y": 794,
+   "w": 222,
+   "h": 332,
+   "kind": "ai_t",
+   "title": "Specific testing",
+   "lines": [
+    "• serology: HIV, hepatitis B + C"
+   ]
+  },
+  {
+   "id": "ma_inv_0_0",
+   "x": 569,
+   "y": 794,
+   "w": 222,
+   "h": 78,
+   "kind": "ma_t",
+   "title": "1 · Bloods",
+   "lines": [
+    "CBC + diff, LDH, calcium, albumin, liver + kidney function"
+   ]
+  },
+  {
+   "id": "ma_inv_1_0",
+   "x": 569,
+   "y": 894,
+   "w": 222,
+   "h": 96,
+   "kind": "ma_w",
+   "title": "2 · Imaging",
+   "lines": [
+    "• ultrasound (first choice < 14 years)",
+    "• CT, chest X-ray"
+   ]
+  },
+  {
+   "id": "ma_inv_2_0",
+   "x": 569,
+   "y": 1012,
+   "w": 222,
+   "h": 114,
+   "kind": "ma_t",
+   "title": "3 · EXCISIONAL biopsy",
+   "lines": [
+    "• histology, flow cytometry",
+    "• Gram stain, AFB, cultures",
+    "• FNA if adenocarcinoma suspected"
+   ]
+  },
+  {
+   "id": "ge_inv_0_0",
+   "x": 831,
+   "y": 794,
+   "w": 222,
+   "h": 172,
+   "kind": "ge_t",
+   "title": "1 · CBC with manual diff",
+   "lines": [
+    "• RPR (syphilis), PPD (TB skin test)",
+    "• HIV, hepatitis B antigen, ANA"
+   ]
+  },
+  {
+   "id": "ge_inv_1_0",
+   "x": 831,
+   "y": 988,
+   "w": 222,
+   "h": 138,
+   "kind": "ge_w",
+   "title": "2 · NEGATIVE: biopsy the most abnormal node",
+   "lines": []
+  },
+  {
+   "id": "re_inv_0_0",
+   "x": 1065,
+   "y": 794,
+   "w": 222,
+   "h": 332,
+   "kind": "re_t",
+   "title": "OBSERVE for ONE MONTH",
+   "lines": []
+  },
+  {
+   "id": "be_tx_0_0",
+   "x": 45,
+   "y": 1166,
+   "w": 222,
+   "h": 78,
+   "kind": "ok",
+   "title": "Treatable → treat",
+   "lines": [
+    "not → reassure, explain the course"
+   ]
+  },
+  {
+   "id": "be_tx_1_0",
+   "x": 45,
+   "y": 1266,
+   "w": 222,
+   "h": 62,
+   "kind": "be_w",
+   "title": "Follow up a persistent or changing node",
+   "lines": []
+  },
+  {
+   "id": "ai_tx_0_0",
+   "x": 307,
+   "y": 1166,
+   "w": 222,
+   "h": 60,
+   "kind": "ok",
+   "title": "POSITIVE → treat",
+   "lines": []
+  },
+  {
+   "id": "ai_tx_1_0",
+   "x": 307,
+   "y": 1248,
+   "w": 222,
+   "h": 80,
+   "kind": "ai_w",
+   "title": "NEGATIVE → UNEXPLAINED",
+   "lines": []
+  },
+  {
+   "id": "ma_tx_0_0",
+   "x": 569,
+   "y": 1166,
+   "w": 222,
+   "h": 69,
+   "kind": "bad",
+   "title": "POSITIVE → treat",
+   "lines": [
+    "lymphoma: LYMPHOMA chart"
+   ]
+  },
+  {
+   "id": "ma_tx_1_0",
+   "x": 569,
+   "y": 1257,
+   "w": 222,
+   "h": 71,
+   "kind": "ma_w",
+   "title": "NEGATIVE → UNEXPLAINED",
+   "lines": []
+  },
+  {
+   "id": "ge_tx_0_0",
+   "x": 831,
+   "y": 1166,
+   "w": 222,
+   "h": 70,
+   "kind": "ok",
+   "title": "POSITIVE → treat",
+   "lines": []
+  },
+  {
+   "id": "ge_tx_1_0",
+   "x": 831,
+   "y": 1258,
+   "w": 222,
+   "h": 70,
+   "kind": "ge_w",
+   "title": "NEGATIVE → follow up",
+   "lines": []
+  },
+  {
+   "id": "re_tx_0_0",
+   "x": 1065,
+   "y": 1166,
+   "w": 222,
+   "h": 60,
+   "kind": "ok",
+   "title": "RESOLVES → follow up",
+   "lines": []
+  },
+  {
+   "id": "re_tx_1_0",
+   "x": 1065,
+   "y": 1248,
+   "w": 222,
+   "h": 80,
+   "kind": "warn",
+   "title": "PERSISTS → biopsy the most abnormal node",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_b",
+   "path": "M666.0 88V113H156.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_a",
+   "path": "M666.0 88V113H418.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_m",
+   "path": "M666.0 88V113H680.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_u",
+   "path": "M666.0 88V113H1059.0V138"
+  },
+  {
+   "from": "ma_clue_0_0",
+   "to": "ma_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "re_clue_0_0",
+   "to": "re_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ma_inv_0_0",
+   "to": "ma_inv_1_0"
+  },
+  {
+   "from": "ma_inv_1_0",
+   "to": "ma_inv_2_0"
+  },
+  {
+   "from": "ge_inv_0_0",
+   "to": "ge_inv_1_0"
+  },
+  {
+   "from": "be_tx_0_0",
+   "to": "be_tx_1_0"
+  },
+  {
+   "from": "ai_tx_0_0",
+   "to": "ai_tx_1_0"
+  },
+  {
+   "from": "ma_tx_0_0",
+   "to": "ma_tx_1_0"
+  },
+  {
+   "from": "ge_tx_0_0",
+   "to": "ge_tx_1_0"
+  },
+  {
+   "from": "re_tx_0_0",
+   "to": "re_tx_1_0"
+  },
+  {
+   "from": "be_head_0_0",
+   "to": "be_clue_0_0"
+  },
+  {
+   "from": "be_clue_0_0",
+   "to": "be_inv_0_0"
+  },
+  {
+   "from": "be_inv_0_0",
+   "to": "be_tx_0_0"
+  },
+  {
+   "from": "g_b",
+   "to": "be_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ai_head_0_0",
+   "to": "ai_clue_0_0"
+  },
+  {
+   "from": "ai_clue_0_0",
+   "to": "ai_inv_0_0"
+  },
+  {
+   "from": "ai_inv_0_0",
+   "to": "ai_tx_0_0"
+  },
+  {
+   "from": "g_a",
+   "to": "ai_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ma_head_0_0",
+   "to": "ma_clue_0_0"
+  },
+  {
+   "from": "ma_clue_1_0",
+   "to": "ma_inv_0_0"
+  },
+  {
+   "from": "ma_inv_2_0",
+   "to": "ma_tx_0_0"
+  },
+  {
+   "from": "g_m",
+   "to": "ma_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ge_head_0_0",
+   "to": "ge_clue_0_0"
+  },
+  {
+   "from": "ge_clue_0_0",
+   "to": "ge_inv_0_0"
+  },
+  {
+   "from": "ge_inv_1_0",
+   "to": "ge_tx_0_0"
+  },
+  {
+   "from": "g_u",
+   "to": "ge_head_0_0",
+   "from_dx": -117,
+   "label": "LOW risk · > 1 region",
+   "label_at": [
+    942.0,
+    256
+   ]
+  },
+  {
+   "from": "re_head_0_0",
+   "to": "re_clue_0_0"
+  },
+  {
+   "from": "re_clue_1_0",
+   "to": "re_inv_0_0"
+  },
+  {
+   "from": "re_inv_0_0",
+   "to": "re_tx_0_0"
+  },
+  {
+   "from": "g_u",
+   "to": "re_head_0_0",
+   "from_dx": 117,
+   "label": "LOW risk · 1 region",
+   "label_at": [
+    1176.0,
+    256
+   ]
+  }
+ ],
+ "panels": []
+}

@@ -1,0 +1,163 @@
+{
+ "name": "pericardial disease overview",
+ "title": "Pericardial disease decision chart: pain from inflammation (acute pericarditis), fluid (effusion, and tamponade when filling fails) or a stiff pericardium (constrictive pericarditis); each column gives presentation, numbered investigations and treatment in order",
+ "col_w": 232,
+ "root": {
+  "title": "Pericardial disease: is the problem PAIN, FLUID or a STIFF pericardium?",
+  "lines": [
+   "fluid and stiffness both stop the heart FILLING in diastole",
+   "how FAST it changes decides how sick the patient is"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_pain",
+   "cols": [0, 0],
+   "title": "PAIN: inflammation",
+   "lines": ["viral is the most common cause"]
+  },
+  {
+   "id": "g_fluid",
+   "cols": [1, 2],
+   "title": "FLUID: is filling impaired?",
+   "lines": ["fast fluid: symptoms at 200–300 mL · slow: up to 2 L before symptoms"]
+  },
+  {
+   "id": "g_stiff",
+   "cols": [3, 3],
+   "title": "STIFF: fibrous, calcified",
+   "lines": ["a late result of pericarditis"]
+  }
+ ],
+ "sections": ["head", "pres", "inv", "tx"],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": ["pres"],
+ "columns": [
+  {
+   "id": "pc",
+   "colour": "orange",
+   "head": [[["h", "Acute pericarditis", ["inflamed pericardium", "viral, autoimmune, uremia, cancer, after a myocardial infarction or surgery"]]]],
+   "pres": [
+    [["t", "SHARP, pleuritic chest pain", [
+     "• worse lying flat",
+     "• better sitting up, leaning FORWARD",
+     "• ± fever"]]],
+    [["w", "Pericardial friction RUB", [
+     "triphasic, scratchy, can come and go"]]]
+   ],
+   "inv": [
+    [["t", "1 · Diagnose: ANY 2 of 4", [
+     "• pleuritic pain",
+     "• rub",
+     "• effusion on echo"]]],
+    [["w", "2 · The 4th: ECG", [
+     "• WIDESPREAD concave ST elevation",
+     "• PR depression",
+     "~supportive: inflammatory markers ↑, CT or MRI"]]]
+   ],
+   "tx": [
+    [["ok", "1 · High-dose anti-inflammatory (NSAID) 1–2 weeks", [
+     "+ proton pump inhibitor (PPI)"]]],
+    [["ok", "2 · COLCHICINE 3 months", [
+     "• fewer recurrences",
+     "• no exercise for 3 months"]]],
+    [["warn", "Autoimmune or refractory", [
+     "• steroid taper",
+     "• anakinra, IV immunoglobulin, azathioprine",
+     "• pericardiectomy"]]]
+   ]
+  },
+  {
+   "id": "ef",
+   "colour": "blue",
+   "drop_label": "NO tamponade",
+   "head": [[["h", "Pericardial effusion", ["extra fluid (normal 50 mL)", "same causes as pericarditis"]]]],
+   "pres": [
+    [["t", "Small or moderate: NO signs", [
+     "~found on echo or a big heart on X-ray"]]],
+    [["w", "Large", [
+     "• Ewart's sign: dull below the left scapula",
+     "• dyspnea, hiccups, dysphagia"]]]
+   ],
+   "inv": [
+    [["t", "1 · Echo: how big? compressing?", []]],
+    [["w", "2 · ECG + chest X-ray", [
+     "• LOW voltage QRS",
+     "• 'water bottle' heart if very large"]]]
+   ],
+   "tx": [
+    [["ok", "Treat the cause", []]],
+    [["warn", "DRAIN to diagnose", [
+     "• large + cancer or infection suspected",
+     "• purulent fluid suspected"]]],
+    [["w", "Send the fluid", [
+     "• cytology: cancer",
+     "• culture, acid-fast stain: tuberculosis (TB)"]]]
+   ]
+  },
+  {
+   "id": "tp",
+   "colour": "magenta",
+   "drop_label": "TAMPONADE",
+   "head": [[["h", "Cardiac tamponade", ["fluid stops the heart FILLING", "an EMERGENCY, at any volume"]]]],
+   "pres": [
+    [["bad", "BECK'S TRIAD", [
+     "• LOW blood pressure",
+     "• HIGH jugular venous pressure (JVP)",
+     "• MUFFLED heart sounds"]]],
+    [["w", "Pulsus paradoxus > 10–12 mmHg", [
+     "• dyspnea, presyncope, tachycardia"]]]
+   ],
+   "inv": [
+    [["t", "1 · Bedside echo", [
+     "• large effusion",
+     "• swinging heart, chamber compression"]]],
+    [["w", "2 · ECG: ELECTRICAL ALTERNANS", [
+     "QRS height alternates beat to beat"]]]
+   ],
+   "tx": [
+    [["warn", "1 · IV fluids or pressors", [
+     "hold the BP while preparing to drain"]]],
+    [["bad", "2 · URGENT drainage", [
+     "• pericardiocentesis (needle)",
+     "• or surgical pericardial window"]]]
+   ]
+  },
+  {
+   "id": "cp",
+   "colour": "olive",
+   "head": [[["h", "Constrictive pericarditis", ["thick, rigid: the chambers cannot fill", "after pericarditis, heart surgery, radiation, TB"]]]],
+   "pres": [
+    [["t", "Heart failure, mostly RIGHT-sided", [
+     "• edema, ascites, big liver",
+     "• exertional dyspnea, orthopnea",
+     "~needs a high index of suspicion"]]],
+    [["w", "Exam", [
+     "• KUSSMAUL's sign: JVP rises on inspiration",
+     "• pericardial KNOCK in early diastole"]]]
+   ],
+   "inv": [
+    [["t", "1 · Echo", [
+     "• NORMAL systolic function",
+     "• septal bounce, plethoric inferior vena cava"]]],
+    [["w", "2 · CT or MRI", [
+     "thick, calcified, enhancing pericardium"]]],
+    [["w", "3 · Catheterization", [
+     "• EQUAL pressures in all 4 chambers",
+     "• 'square root' sign"]]]
+   ],
+   "tx": [
+    [["ok", "1 · Treat the heart failure", [
+     "diuretics, low salt"]]],
+    [["ok", "2 · Inflamed on MRI → anti-inflammatories", [
+     "NSAIDs, colchicine, steroids"]]],
+    [["warn", "3 · PERICARDIECTOMY", [
+     "earlier is better"]]]
+   ]
+  }
+ ]
+}

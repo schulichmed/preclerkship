@@ -1,0 +1,869 @@
+{
+ "name": "leukemia overview",
+ "width": 1286,
+ "title": "Leukemia sorted acute (blasts) or chronic (mature cells), then myeloid or lymphoid: AML, APL, ALL, CML and CLL, each with presentation, numbered investigations and treatment in order, with tumour lysis and leukostasis as the emergencies to watch for in acute leukemia",
+ "kinds": {
+  "aml_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "aml_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "aml_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "apl_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "apl_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "apl_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "all_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "all_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "all_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "cml_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cml_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "cml_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "cll_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cll_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cll_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 388,
+   "w": 240,
+   "h": 1014,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 282,
+   "y": 388,
+   "w": 240,
+   "h": 1014,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 524,
+   "y": 388,
+   "w": 240,
+   "h": 1014,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 794,
+   "y": 388,
+   "w": 240,
+   "h": 1014,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1036,
+   "y": 388,
+   "w": 240,
+   "h": 1014,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 238,
+   "h": 78,
+   "text": "EMERGENCIES"
+  },
+  {
+   "x": 23,
+   "y": 534,
+   "h": 214,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 788,
+   "h": 264,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1092,
+   "h": 302,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 278,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Leukemia: ACUTE (blasts) or CHRONIC (mature cells)? then MYELOID or LYMPHOID?",
+   "lines": [
+    "1 · CBC + differential + film · 2 · bone marrow biopsy: morphology, flow, karyotype, FISH",
+    "acute: cytopenias (fatigue, bleeding, infection) · organ infiltration"
+   ]
+  },
+  {
+   "id": "g_a",
+   "x": 45,
+   "y": 138,
+   "w": 714,
+   "h": 60,
+   "kind": "plain",
+   "title": "ACUTE: BLASTS · progresses fast",
+   "lines": [
+    "stains: myeloperoxidase (MPO) → myeloid · TdT → lymphoblastic"
+   ]
+  },
+  {
+   "id": "g_c",
+   "x": 799,
+   "y": 138,
+   "w": 472,
+   "h": 60,
+   "kind": "plain",
+   "title": "CHRONIC: MATURE cells",
+   "lines": [
+    "which cell is up on the film?"
+   ]
+  },
+  {
+   "id": "p_em",
+   "x": 45,
+   "y": 238,
+   "w": 714,
+   "h": 78,
+   "kind": "info",
+   "title": "ACUTE leukemia: watch for these EMERGENCIES",
+   "lines": [
+    "• TUMOUR LYSIS (↑ potassium, phosphate, urate, ↓ calcium) → hydrate · rasburicase · allopurinol · dialysis",
+    "• LEUKOSTASIS (high blasts: dyspnea, hypoxia, confusion) → IV fluids · leukapheresis"
+   ]
+  },
+  {
+   "id": "aml_head_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 230,
+   "h": 98,
+   "kind": "aml_h",
+   "title": "Acute myeloid leukemia (AML)",
+   "lines": [
+    "ADULTS · myeloblasts fail to mature"
+   ]
+  },
+  {
+   "id": "apl_head_0_0",
+   "x": 287,
+   "y": 396,
+   "w": 230,
+   "h": 98,
+   "kind": "apl_h",
+   "title": "Acute promyelocytic leukemia (APL, AML-M3)",
+   "lines": [
+    "EMERGENCY: early death from BLEEDING"
+   ]
+  },
+  {
+   "id": "all_head_0_0",
+   "x": 529,
+   "y": 396,
+   "w": 230,
+   "h": 98,
+   "kind": "all_h",
+   "title": "Acute lymphoblastic leukemia (ALL)",
+   "lines": [
+    "CHILDREN: most childhood leukemia"
+   ]
+  },
+  {
+   "id": "cml_head_0_0",
+   "x": 799,
+   "y": 396,
+   "w": 230,
+   "h": 98,
+   "kind": "cml_h",
+   "title": "Chronic myeloid leukemia (CML)",
+   "lines": [
+    "t(9;22) Philadelphia → BCR-ABL"
+   ]
+  },
+  {
+   "id": "cll_head_0_0",
+   "x": 1041,
+   "y": 396,
+   "w": 230,
+   "h": 98,
+   "kind": "cll_h",
+   "title": "Chronic lymphocytic leukemia (CLL)",
+   "lines": [
+    "MATURE B cells · OLDER · most common"
+   ]
+  },
+  {
+   "id": "aml_clue_0_0",
+   "x": 45,
+   "y": 534,
+   "w": 230,
+   "h": 214,
+   "kind": "aml_t",
+   "title": "Marrow failure",
+   "lines": [
+    "• anemia, bleeding, infection + fever",
+    "• bone pain, sternal tenderness",
+    "• hepatosplenomegaly, gum swelling"
+   ]
+  },
+  {
+   "id": "apl_clue_0_0",
+   "x": 287,
+   "y": 534,
+   "w": 230,
+   "h": 214,
+   "kind": "apl_t",
+   "title": "Bleeding + DIC",
+   "lines": [
+    "• often fatal INTRACEREBRAL hemorrhage",
+    "• cytopenias, tumour lysis, leukostasis"
+   ]
+  },
+  {
+   "id": "all_clue_0_0",
+   "x": 529,
+   "y": 534,
+   "w": 230,
+   "h": 214,
+   "kind": "all_t",
+   "title": "Child: the classic signs",
+   "lines": [
+    "• bruising, bleeding, PALLOR, fever",
+    "• lymphadenopathy, splenomegaly",
+    "• testicular mass"
+   ]
+  },
+  {
+   "id": "cml_clue_0_0",
+   "x": 799,
+   "y": 534,
+   "w": 230,
+   "h": 214,
+   "kind": "cml_t",
+   "title": "CHRONIC → accelerated → BLAST crisis",
+   "lines": [
+    "• chronic phase: asymptomatic",
+    "• fatigue, sweats, weight loss, splenomegaly",
+    "• blast crisis acts like ACUTE leukemia"
+   ]
+  },
+  {
+   "id": "cll_clue_0_0",
+   "x": 1041,
+   "y": 534,
+   "w": 230,
+   "h": 96,
+   "kind": "cll_t",
+   "title": "Often ASYMPTOMATIC",
+   "lines": [
+    "• lymphadenopathy, hepatosplenomegaly",
+    "• B symptoms, marrow failure"
+   ]
+  },
+  {
+   "id": "cll_clue_1_0",
+   "x": 1041,
+   "y": 652,
+   "w": 230,
+   "h": 96,
+   "kind": "cll_w",
+   "title": "Immune",
+   "lines": [
+    "• autoimmune hemolysis (AIHA), ITP",
+    "• hypogammaglobulinemia"
+   ]
+  },
+  {
+   "id": "aml_inv_0_0",
+   "x": 45,
+   "y": 788,
+   "w": 230,
+   "h": 62,
+   "kind": "aml_t",
+   "title": "1 · Film: large blasts, Auer rod",
+   "lines": []
+  },
+  {
+   "id": "aml_inv_1_0",
+   "x": 45,
+   "y": 872,
+   "w": 230,
+   "h": 96,
+   "kind": "aml_w",
+   "title": "2 · DIC + tumour lysis labs",
+   "lines": [
+    "• INR, aPTT, fibrinogen, FDP",
+    "• ↑ LDH, urate, phosphate, ↓ calcium"
+   ]
+  },
+  {
+   "id": "aml_inv_2_0",
+   "x": 45,
+   "y": 990,
+   "w": 230,
+   "h": 62,
+   "kind": "aml_w",
+   "title": "3 · Before chemo: ECG, MUGA",
+   "lines": []
+  },
+  {
+   "id": "apl_inv_0_0",
+   "x": 287,
+   "y": 788,
+   "w": 230,
+   "h": 87,
+   "kind": "apl_t",
+   "title": "1 · Film: blasts with 2+ Auer rods",
+   "lines": [
+    "flow: HLA-DR NEGATIVE"
+   ]
+  },
+  {
+   "id": "apl_inv_1_0",
+   "x": 287,
+   "y": 897,
+   "w": 230,
+   "h": 49,
+   "kind": "apl_w",
+   "title": "2 · PT, PTT, fibrinogen (DIC)",
+   "lines": []
+  },
+  {
+   "id": "apl_inv_2_0",
+   "x": 287,
+   "y": 968,
+   "w": 230,
+   "h": 85,
+   "kind": "apl_w",
+   "title": "3 · CONFIRM t(15;17)",
+   "lines": [
+    "PML-RARα: karyotype, FISH or NGS"
+   ]
+  },
+  {
+   "id": "all_inv_0_0",
+   "x": 529,
+   "y": 788,
+   "w": 230,
+   "h": 54,
+   "kind": "all_t",
+   "title": "1 · Film: blasts, NO granules",
+   "lines": []
+  },
+  {
+   "id": "all_inv_1_0",
+   "x": 529,
+   "y": 864,
+   "w": 230,
+   "h": 74,
+   "kind": "all_w",
+   "title": "2 · Chest X-ray: MEDIASTINAL mass",
+   "lines": []
+  },
+  {
+   "id": "all_inv_2_0",
+   "x": 529,
+   "y": 960,
+   "w": 230,
+   "h": 92,
+   "kind": "all_w",
+   "title": "3 · Lumbar puncture BEFORE chemo",
+   "lines": [
+    "CNS involvement"
+   ]
+  },
+  {
+   "id": "cml_inv_0_0",
+   "x": 799,
+   "y": 788,
+   "w": 230,
+   "h": 140,
+   "kind": "cml_t",
+   "title": "1 · Film: ↑ basophils + eosinophils",
+   "lines": [
+    "• myelocytes + neutrophils (bimodal)",
+    "• ± ↑ platelets"
+   ]
+  },
+  {
+   "id": "cml_inv_1_0",
+   "x": 799,
+   "y": 950,
+   "w": 230,
+   "h": 102,
+   "kind": "cml_w",
+   "title": "2 · CONFIRM BCR-ABL",
+   "lines": [
+    "FISH, quantitative RT-PCR · marrow"
+   ]
+  },
+  {
+   "id": "cll_inv_0_0",
+   "x": 1041,
+   "y": 788,
+   "w": 230,
+   "h": 55,
+   "kind": "cll_t",
+   "title": "1 · Film: SMUDGE cells",
+   "lines": []
+  },
+  {
+   "id": "cll_inv_1_0",
+   "x": 1041,
+   "y": 865,
+   "w": 230,
+   "h": 93,
+   "kind": "cll_w",
+   "title": "2 · Flow: CD5, CD19, dim CD20, CD23",
+   "lines": [
+    "light-chain restriction · FISH, p53"
+   ]
+  },
+  {
+   "id": "cll_inv_2_0",
+   "x": 1041,
+   "y": 980,
+   "w": 230,
+   "h": 73,
+   "kind": "cll_w",
+   "title": "3 · Rai stage",
+   "lines": [
+    "0 low · 1–2 intermediate · 3–4 high"
+   ]
+  },
+  {
+   "id": "aml_tx_0_0",
+   "x": 45,
+   "y": 1092,
+   "w": 230,
+   "h": 68,
+   "kind": "ok",
+   "title": "1 · INDUCTION: 7+3 chemo",
+   "lines": [
+    "remission · 4–6 weeks in hospital"
+   ]
+  },
+  {
+   "id": "aml_tx_1_0",
+   "x": 45,
+   "y": 1182,
+   "w": 230,
+   "h": 86,
+   "kind": "ok",
+   "title": "2 · CONSOLIDATION",
+   "lines": [
+    "• more chemo, or allogeneic stem cell transplant"
+   ]
+  },
+  {
+   "id": "aml_tx_2_0",
+   "x": 45,
+   "y": 1290,
+   "w": 230,
+   "h": 104,
+   "kind": "warn",
+   "title": "Choose by fitness",
+   "lines": [
+    "• young + poor-risk cytogenetics → transplant: only cure",
+    "• older, sicker → low-dose chemo"
+   ]
+  },
+  {
+   "id": "apl_tx_0_0",
+   "x": 287,
+   "y": 1092,
+   "w": 230,
+   "h": 149,
+   "kind": "bad",
+   "title": "1 · All-trans retinoic acid (ATRA) + arsenic",
+   "lines": [
+    "suspected APL = EMERGENCY"
+   ]
+  },
+  {
+   "id": "apl_tx_1_0",
+   "x": 287,
+   "y": 1263,
+   "w": 230,
+   "h": 131,
+   "kind": "warn",
+   "title": "2 · HIGH risk: add chemotherapy",
+   "lines": []
+  },
+  {
+   "id": "all_tx_0_0",
+   "x": 529,
+   "y": 1092,
+   "w": 230,
+   "h": 118,
+   "kind": "ok",
+   "title": "1 · Induction → consolidation → MAINTENANCE",
+   "lines": [
+    "2–3 years · consolidation: chemo or allogeneic transplant"
+   ]
+  },
+  {
+   "id": "all_tx_1_0",
+   "x": 529,
+   "y": 1232,
+   "w": 230,
+   "h": 60,
+   "kind": "warn",
+   "title": "2 · CNS prophylaxis",
+   "lines": [
+    "sanctuary sites: CNS + TESTES"
+   ]
+  },
+  {
+   "id": "all_tx_2_0",
+   "x": 529,
+   "y": 1314,
+   "w": 230,
+   "h": 80,
+   "kind": "ok",
+   "title": "Newer: blinatumomab (CD19), inotuzumab",
+   "lines": [
+    "e.g. relapsed B-ALL"
+   ]
+  },
+  {
+   "id": "cml_tx_0_0",
+   "x": 799,
+   "y": 1092,
+   "w": 230,
+   "h": 105,
+   "kind": "ok",
+   "title": "1 · Tyrosine kinase inhibitor (TKI)",
+   "lines": [
+    "IMATINIB, nilotinib, dasatinib"
+   ]
+  },
+  {
+   "id": "cml_tx_1_0",
+   "x": 799,
+   "y": 1219,
+   "w": 230,
+   "h": 67,
+   "kind": "ok",
+   "title": "+ allopurinol prophylaxis",
+   "lines": []
+  },
+  {
+   "id": "cml_tx_2_0",
+   "x": 799,
+   "y": 1308,
+   "w": 230,
+   "h": 85,
+   "kind": "warn",
+   "title": "2 · Stem cell transplant",
+   "lines": [
+    "possibly curative"
+   ]
+  },
+  {
+   "id": "cll_tx_0_0",
+   "x": 1041,
+   "y": 1092,
+   "w": 230,
+   "h": 141,
+   "kind": "bad",
+   "title": "LOW risk / asymptomatic: do NOT treat",
+   "lines": [
+    "incurable"
+   ]
+  },
+  {
+   "id": "cll_tx_1_0",
+   "x": 1041,
+   "y": 1255,
+   "w": 230,
+   "h": 139,
+   "kind": "ok",
+   "title": "Symptomatic",
+   "lines": [
+    "• chlorambucil, fludarabine",
+    "• anti-CD20 antibody, ibrutinib"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_a",
+   "path": "M658.0 88V113H402.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_c",
+   "path": "M658.0 88V113H1035.0V138"
+  },
+  {
+   "from": "g_a",
+   "to": "p_em"
+  },
+  {
+   "from": "cll_clue_0_0",
+   "to": "cll_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "aml_inv_0_0",
+   "to": "aml_inv_1_0"
+  },
+  {
+   "from": "aml_inv_1_0",
+   "to": "aml_inv_2_0"
+  },
+  {
+   "from": "apl_inv_0_0",
+   "to": "apl_inv_1_0"
+  },
+  {
+   "from": "apl_inv_1_0",
+   "to": "apl_inv_2_0"
+  },
+  {
+   "from": "all_inv_0_0",
+   "to": "all_inv_1_0"
+  },
+  {
+   "from": "all_inv_1_0",
+   "to": "all_inv_2_0"
+  },
+  {
+   "from": "cml_inv_0_0",
+   "to": "cml_inv_1_0"
+  },
+  {
+   "from": "cll_inv_0_0",
+   "to": "cll_inv_1_0"
+  },
+  {
+   "from": "cll_inv_1_0",
+   "to": "cll_inv_2_0"
+  },
+  {
+   "from": "aml_tx_0_0",
+   "to": "aml_tx_1_0"
+  },
+  {
+   "from": "aml_tx_1_0",
+   "to": "aml_tx_2_0"
+  },
+  {
+   "from": "apl_tx_0_0",
+   "to": "apl_tx_1_0"
+  },
+  {
+   "from": "all_tx_0_0",
+   "to": "all_tx_1_0"
+  },
+  {
+   "from": "all_tx_1_0",
+   "to": "all_tx_2_0"
+  },
+  {
+   "from": "cml_tx_0_0",
+   "to": "cml_tx_1_0"
+  },
+  {
+   "from": "cml_tx_1_0",
+   "to": "cml_tx_2_0"
+  },
+  {
+   "from": "cll_tx_0_0",
+   "to": "cll_tx_1_0"
+  },
+  {
+   "from": "aml_head_0_0",
+   "to": "aml_clue_0_0"
+  },
+  {
+   "from": "aml_clue_0_0",
+   "to": "aml_inv_0_0"
+  },
+  {
+   "from": "aml_inv_2_0",
+   "to": "aml_tx_0_0"
+  },
+  {
+   "from": "p_em",
+   "to": "aml_head_0_0",
+   "from_dx": -242,
+   "label": "MPO+ · adult",
+   "label_at": [
+    160.0,
+    356
+   ]
+  },
+  {
+   "from": "apl_head_0_0",
+   "to": "apl_clue_0_0"
+  },
+  {
+   "from": "apl_clue_0_0",
+   "to": "apl_inv_0_0"
+  },
+  {
+   "from": "apl_inv_2_0",
+   "to": "apl_tx_0_0"
+  },
+  {
+   "from": "p_em",
+   "to": "apl_head_0_0",
+   "from_dx": 0,
+   "label": "BLEEDING · DIC",
+   "label_at": [
+    402.0,
+    356
+   ]
+  },
+  {
+   "from": "all_head_0_0",
+   "to": "all_clue_0_0"
+  },
+  {
+   "from": "all_clue_0_0",
+   "to": "all_inv_0_0"
+  },
+  {
+   "from": "all_inv_2_0",
+   "to": "all_tx_0_0"
+  },
+  {
+   "from": "p_em",
+   "to": "all_head_0_0",
+   "from_dx": 242,
+   "label": "TdT+ · CHILD",
+   "label_at": [
+    644.0,
+    356
+   ]
+  },
+  {
+   "from": "cml_head_0_0",
+   "to": "cml_clue_0_0"
+  },
+  {
+   "from": "cml_clue_0_0",
+   "to": "cml_inv_0_0"
+  },
+  {
+   "from": "cml_inv_1_0",
+   "to": "cml_tx_0_0"
+  },
+  {
+   "from": "g_c",
+   "to": "cml_head_0_0",
+   "from_dx": -121,
+   "label": "neutrophils + basos",
+   "label_at": [
+    914.0,
+    356
+   ]
+  },
+  {
+   "from": "cll_head_0_0",
+   "to": "cll_clue_0_0"
+  },
+  {
+   "from": "cll_clue_1_0",
+   "to": "cll_inv_0_0"
+  },
+  {
+   "from": "cll_inv_2_0",
+   "to": "cll_tx_0_0"
+  },
+  {
+   "from": "g_c",
+   "to": "cll_head_0_0",
+   "from_dx": 121,
+   "label": "mature lymphocytes",
+   "label_at": [
+    1156.0,
+    356
+   ]
+  }
+ ],
+ "panels": []
+}

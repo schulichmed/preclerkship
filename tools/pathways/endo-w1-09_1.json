@@ -1,0 +1,27 @@
+{
+ "name": "introduction to obesity pathway",
+ "title": "Obesity pathway: diagnose by BMI plus waist circumference, then the 5 A's (ask, assess, advise, agree, assist), with escalation to pharmacotherapy or bariatric surgery from the assessment",
+ "nodes": [
+  {"id": "A", "x": 250, "y": 10, "w": 420, "kind": "plain", "title": "BMI ≥ 30", "lines": ["or ≥ 25 in South/East Asian patients"]},
+  {"id": "B", "x": 250, "y": 100, "w": 420, "kind": "plain", "title": "Add waist circumference", "lines": ["BMI alone is insufficient"]},
+  {"id": "C", "x": 250, "y": 190, "w": 420, "kind": "plain", "title": "ASK permission to discuss weight", "lines": []},
+  {"id": "D", "x": 190, "y": 262, "w": 540, "kind": "plain", "title": "ASSESS: Edmonton Obesity Staging System (EOSS) stage + the 4 M's", "lines": ["rule out secondary causes"]},
+  {"id": "E", "x": 20, "y": 410, "w": 420, "kind": "plain", "title": "ADVISE: health and wellness, not a number", "lines": []},
+  {"id": "F", "x": 20, "y": 485, "w": 420, "kind": "plain", "title": "AGREE: SMART goals", "lines": ["(specific, measurable, achievable, relevant, time-bound)", "0.5–1.0 kg/week, 5–10% over 6–12 months"]},
+  {"id": "G", "x": 20, "y": 600, "w": 420, "kind": "plain", "title": "ASSIST: barriers, referrals, follow-up", "lines": []},
+  {"id": "H", "x": 570, "y": 410, "w": 280, "kind": "plain", "title": "Eligible for escalation?", "lines": []},
+  {"id": "I", "x": 470, "y": 500, "w": 200, "kind": "anti", "title": "Pharmacotherapy", "lines": ["BMI ≥ 30, or ≥ 27 with complications"]},
+  {"id": "J", "x": 695, "y": 500, "w": 210, "kind": "ana", "title": "Bariatric surgery", "lines": ["BMI ≥ 40, or ≥ 35 with complications, or ≥ 30 with poorly controlled type 2 diabetes (T2DM)"]}
+ ],
+ "edges": [
+  {"from": "A", "to": "B"},
+  {"from": "B", "to": "C"},
+  {"from": "C", "to": "D"},
+  {"from": "D", "to": "E", "from_dx": -120},
+  {"from": "D", "to": "H", "from_dx": 120},
+  {"from": "E", "to": "F"},
+  {"from": "F", "to": "G"},
+  {"from": "H", "to": "I", "from_dx": -60},
+  {"from": "H", "to": "J", "from_dx": 60}
+ ]
+}

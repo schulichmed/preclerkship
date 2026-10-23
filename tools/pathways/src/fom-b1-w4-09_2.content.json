@@ -1,0 +1,367 @@
+{
+ "name": "post-exposure prophylaxis overview",
+ "title": "After an exposure to measles, varicella, hepatitis A, rabies or HIV: whether the person gets a vaccine, immune globulin or anti-HIV drugs, who gets which and within what window, and what to give before an anticipated exposure",
+ "col_w": 226,
+ "root": {
+  "title": "Exposed: VACCINE, IMMUNE GLOBULIN (IG), or DRUGS?",
+  "lines": [
+   "a vaccine is PREFERRED (long-lasting) but needs a working immune system · IG gives IMMEDIATE but short-lived protection",
+   "LIVE vaccines: NOT if immunocompromised, pregnant or a neonate → IG instead"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_live",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "LIVE vaccine: the HOST decides",
+   "lines": [
+    "safe host → vaccine · unsafe host → IG"
+   ]
+  },
+  {
+   "id": "g_non",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "NON-live vaccine",
+   "lines": [
+    "vaccine for almost everyone · IG added for some"
+   ]
+  },
+  {
+   "id": "g_none",
+   "cols": [
+    4,
+    4
+   ],
+   "title": "NO vaccine",
+   "lines": [
+    "chemoprophylaxis"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "vax",
+  "ig",
+  "prep"
+ ],
+ "row_names": {
+  "pres": "EXPOSURE",
+  "vax": "AFTER: VACCINE OR DRUG",
+  "ig": "AFTER: IG",
+  "prep": "BEFORE EXPOSURE"
+ },
+ "columns": [
+  {
+   "id": "mea",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Measles",
+      [
+       "LIVE vaccine · airborne"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Same AIRSPACE counts",
+      [
+       "room, ward, class or home"
+      ]
+     ]
+    ]
+   ],
+   "vax": [
+    [
+     [
+      "ok",
+      "Vaccine within 72 h",
+      [
+       "unvaccinated, immunocompetent, > 6 months",
+       "~healthy 6–11 months: vaccine by day 3, else IG days 4–6"
+      ]
+     ]
+    ]
+   ],
+   "ig": [
+    [
+     [
+      "warn",
+      "IG within 6 days",
+      [
+       "• immunocompromised",
+       "• pregnant",
+       "• healthy infant < 6 months"
+      ]
+     ]
+    ]
+   ],
+   "prep": [
+    [
+     [
+      "plain",
+      "Vaccine ONLY",
+      [
+       "• unvaccinated, > 6 months, travelling",
+       "• vaccinated but no lab immunity"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "var",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Varicella (chickenpox)",
+      [
+       "LIVE vaccine · airborne + lesions"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Same airspace or touching a lesion",
+      [
+       "chickenpox or multi-dermatomal shingles"
+      ]
+     ]
+    ]
+   ],
+   "vax": [
+    [
+     [
+      "ok",
+      "Vaccine within 3–5 days",
+      [
+       "immunocompetent, > 1 year"
+      ]
+     ]
+    ]
+   ],
+   "ig": [
+    [
+     [
+      "warn",
+      "IG within 96 h",
+      [
+       "• immunocompromised",
+       "• pregnant",
+       "• neonates (not > 28 weeks to an immune mother)"
+      ]
+     ]
+    ]
+   ],
+   "prep": [
+    [
+     [
+      "plain",
+      "Vaccine ONLY: no IG or drug",
+      [
+       "immunocompetent, > 1 year, not immune"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hea",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Hepatitis A",
+      [
+       "NON-live vaccine · contact"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Contact",
+      []
+     ]
+    ]
+   ],
+   "vax": [
+    [
+     [
+      "ok",
+      "Vaccine within 2 weeks",
+      [
+       "• anyone ≥ 6 months",
+       "• immunosuppressed, liver disease, > 40 too"
+      ]
+     ]
+    ]
+   ],
+   "ig": [
+    [
+     [
+      "warn",
+      "IG within 2 weeks",
+      [
+       "• infant < 6 months: INSTEAD of vaccine",
+       "• immunosuppressed, chronic liver disease, > 40"
+      ]
+     ]
+    ]
+   ],
+   "prep": [
+    [
+     [
+      "plain",
+      "Travel to an endemic country",
+      [
+       "• vaccine if ≥ 6 months, leaving > 2 weeks away",
+       "• IG if < 6 months or leaving within 2 weeks"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rab",
+   "colour": "brown",
+   "head": [
+    [
+     [
+      "h",
+      "Rabies",
+      [
+       "NON-live vaccine"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "High-risk bite or scratch",
+      [
+       "or ANY bat exposure"
+      ]
+     ]
+    ]
+   ],
+   "vax": [
+    [
+     [
+      "ok",
+      "Vaccine ASAP: EVERYONE",
+      [
+       "• unvaccinated: 4 doses (5 if immunosuppressed)",
+       "• previously vaccinated: 2 boosters"
+      ]
+     ]
+    ]
+   ],
+   "ig": [
+    [
+     [
+      "warn",
+      "IG ASAP if UNVACCINATED",
+      [
+       "not if previously vaccinated"
+      ]
+     ]
+    ]
+   ],
+   "prep": [
+    [
+     [
+      "plain",
+      "Vaccine (no IG)",
+      [
+       "• travel > 30 days where rabid animals are common",
+       "• wildlife work, spelunkers, hunters"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hiv",
+   "colour": "slate",
+   "head": [
+    [
+     [
+      "h",
+      "HIV",
+      [
+       "NO vaccine: anti-HIV drugs"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "High-risk exposure",
+      [
+       "• needlestick, sexual assault",
+       "• unprotected sex, HIV-positive partner",
+       "• perinatal"
+      ]
+     ]
+    ]
+   ],
+   "vax": [
+    [
+     [
+      "ok",
+      "Anti-HIV drugs within 72 h",
+      [
+       "continue for 28 days"
+      ]
+     ]
+    ]
+   ],
+   "ig": [
+    [
+     [
+      "plain",
+      "No IG",
+      []
+     ]
+    ]
+   ],
+   "prep": [
+    [
+     [
+      "plain",
+      "Daily anti-HIV drugs (Truvada)",
+      [
+       "• injection drug use",
+       "• HIV-positive partner"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

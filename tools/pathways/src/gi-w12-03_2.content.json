@@ -1,0 +1,304 @@
+{
+ "name": "abnormal liver enzymes overview",
+ "title": "Abnormal liver enzymes: the pattern first (hepatocellular ALT and AST, or cholestatic ALP and GGT), then how high and which enzyme leads, sorting into AST-led, ALT-led, severe, non-hepatic, cholestatic and ALP-alone causes, each with what to think of and the next step",
+ "col_w": 222,
+ "root": {
+  "title": "Liver enzymes up: HEPATOCELLULAR or CHOLESTATIC pattern?",
+  "lines": [
+   "enzymes mark DAMAGE or blocked bile flow; they are NOT tests of liver FUNCTION",
+   "is it FAILING? albumin ↓, bilirubin ↑, international normalized ratio (INR) ↑: INR is the fastest readout (short half-life)",
+   "then ask HOW HIGH, how FAST, WHERE (ethnicity, travel) and WHEN (age, drugs, comorbidities)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_hep",
+   "cols": [
+    0,
+    3
+   ],
+   "title": "HEPATOCELLULAR: alanine (ALT) and aspartate (AST) aminotransferase lead",
+   "lines": [
+    "ALT is the liver-specific one; AST is also in red cells, muscle, brain, gut"
+   ]
+  },
+  {
+   "id": "g_chol",
+   "cols": [
+    4,
+    5
+   ],
+   "title": "CHOLESTATIC: alkaline phosphatase (ALP) leads",
+   "lines": [
+    "always read it WITH gamma-glutamyl transferase (GGT)"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_mild",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "MILD: up to 5-10× the upper limit of normal",
+   "lines": [
+    "which one is HIGHER?"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "cause",
+  "next"
+ ],
+ "row_names": {
+  "cause": "THINK OF",
+  "next": "NEXT STEP"
+ },
+ "columns": [
+  {
+   "id": "ast",
+   "colour": "teal",
+   "drop_from": "t_mild",
+   "drop_label": "AST > ALT",
+   "head": [
+    [
+     [
+      "h",
+      "AST > ALT",
+      [
+       "ratio > 2:1 is classic for ALCOHOL"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Alcohol, cirrhosis, poor blood flow",
+      [
+       "• alcoholic liver disease, cirrhosis of any cause",
+       "• ischemic hepatitis, congestive hepatopathy (heart failure)",
+       "• acute Budd-Chiari"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "Alcohol history",
+      [
+       "abstinence is step 1: CHRONIC LIVER FAILURE chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "alt",
+   "colour": "purple",
+   "drop_from": "t_mild",
+   "drop_label": "ALT > AST",
+   "head": [
+    [
+     [
+      "h",
+      "ALT > AST",
+      [
+       "the longest list"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Fat, virus, drug, autoimmune, storage",
+      [
+       "• non-alcoholic fatty liver disease (NAFLD)",
+       "• viral, toxic or autoimmune hepatitis, celiac disease",
+       "• hemochromatosis, Wilson, alpha-1 antitrypsin"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "WHERE and WHEN point the way",
+      [
+       "• hypertension, obesity, dyslipidemia → NAFLD",
+       "• from hepatitis B areas (SE Asia, Africa)",
+       "• new drugs or recent travel"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sev",
+   "colour": "orange",
+   "drop_label": "> 15× normal",
+   "head": [
+    [
+     [
+      "h",
+      "SEVERE: > 15× normal",
+      [
+       "acute injury"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "An ACUTE hit",
+      [
+       "• acute viral, toxic, ischemic or autoimmune hepatitis",
+       "• Wilson disease, acute Budd-Chiari",
+       "• acute choledocholithiasis, hepatic artery ligation"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "bad",
+      "Check clotting + mental state",
+      [
+       "INR > 1.5 + encephalopathy, < 26 weeks = ACUTE LIVER FAILURE"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "non",
+   "colour": "slate",
+   "drop_label": "liver looks fine",
+   "head": [
+    [
+     [
+      "h",
+      "NOT from the liver",
+      [
+       "AST/ALT from elsewhere"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Muscle, heart, blood, glands",
+      [
+       "• rhabdomyolysis, myocardial infarction",
+       "• hemolysis, heat stroke, macro-AST",
+       "• thyroid disease, adrenal insufficiency"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "Look outside the liver",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "chol",
+   "colour": "blue",
+   "drop_from": "g_chol",
+   "drop_label": "GGT ↑ too",
+   "head": [
+    [
+     [
+      "h",
+      "ALP + GGT ↑",
+      [
+       "hepatobiliary: GGT CONFIRMS it"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Blocked or damaged bile flow",
+      [
+       "• bile duct OBSTRUCTION: stones, malignancy",
+       "• primary sclerosing or biliary cholangitis, drugs, sepsis, parenteral nutrition",
+       "• infiltration: sarcoid, tuberculosis, lymphoma, metastases"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "Ultrasound FIRST",
+      [
+       "non-invasive: liver, gallbladder, bile ducts",
+       "duct imaging after it: JAUNDICE chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "alp",
+   "colour": "brown",
+   "drop_from": "g_chol",
+   "drop_label": "GGT normal",
+   "head": [
+    [
+     [
+      "h",
+      "ALP alone",
+      [
+       "probably NOT the liver"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Bone, pregnancy, growth",
+      [
+       "• pregnancy, normal childhood growth, bone disease",
+       "• chronic kidney disease, heart failure",
+       "• lymphoma, infection, inflammation"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "Look for the non-liver source",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

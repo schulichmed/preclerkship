@@ -1,0 +1,768 @@
+{
+ "name": "pelvic pain overview",
+ "title": "Pelvic pain decision chart: acute pain sorted by beta-hCG, fever and hemoglobin into ovarian torsion or ruptured hemorrhagic cyst; chronic pain sorted by cycle and exam into primary dysmenorrhea or structural causes (endometriosis, adenomyosis, leiomyoma, endometrial polyp); each column gives presentation, numbered investigations and treatment in order",
+ "col_w": 212,
+ "root": {
+  "title": "Pelvic pain: ACUTE (find the life- or limb-threat first) or CHRONIC (≥ 6 MONTHS)?",
+  "lines": [
+   "history + physical exam come first: the most important part of any approach",
+   "chronic = below the umbilicus, ≥ 6 months, disabling or needing treatment · up to 50% have experienced abuse or trauma"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ac",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "ACUTE: work it up in this order",
+   "lines": [
+    "1 · quantitative β-hCG: POSITIVE → ECTOPIC (FIRST-TRIMESTER BLEEDING chart)",
+    "2 · FEVER + white count ↑ → PID (SEXUALLY TRANSMITTED INFECTIONS chart)",
+    "3 · neither: CBC hemoglobin + ULTRASOUND decide ↓"
+   ]
+  },
+  {
+   "id": "g_ch",
+   "cols": [
+    2,
+    6
+   ],
+   "title": "CHRONIC: is it CYCLIC with a NORMAL exam?",
+   "lines": [
+    "YES → functional (primary) · NO, or an exam/imaging finding → STRUCTURAL (secondary), more common with AGE"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_ac",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "β-hCG < 1 · afebrile: is the hemoglobin STABLE?",
+   "lines": [
+    "• group and screen",
+    "• repeat the CBC if bleeding may be ongoing"
+   ]
+  },
+  {
+   "id": "t_pr",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "YES: PRIMARY",
+   "lines": [
+    "late teens, 20s, then declines"
+   ]
+  },
+  {
+   "id": "t_st",
+   "cols": [
+    3,
+    6
+   ],
+   "title": "NO: STRUCTURAL · the EXAM points the way",
+   "lines": [
+    "• NODULAR, FIXED → endometriosis",
+    "• BOGGY, tender, enlarged → adenomyosis",
+    "• ENLARGED, MOBILE, mass → fibroid",
+    "• MASS at the os → polyp",
+    "~• always send removed tissue to pathology"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "to",
+   "colour": "orange",
+   "drop_from": "t_ac",
+   "drop_label": "STABLE · tender mass",
+   "head": [
+    [
+     [
+      "h",
+      "Ovarian torsion",
+      [
+       "ovary ± tube twists on its ligaments",
+       "SURGICAL EMERGENCY: save the ovary"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "SUDDEN, SHARP, one-sided",
+      [
+       "• after VIGOROUS activity: intercourse, golf, exercise",
+       "• vomiting",
+       "• may collapse"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Exam",
+      [
+       "• a PALPABLE, TENDER adnexal mass",
+       "• hemoglobin STABLE"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · β-hCG < 1 · Hb stable",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Ultrasound: is the ovary ENLARGED?",
+      [
+       "enlarged ovaries tort far more: a weighted pendulum"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Then the MASS behind it",
+      [
+       "benign vs malignant: PELVIC MASS chart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · SURGERY now: untwist",
+      [
+       "~venous block → edema → ischemia → necrosis"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Can the ovary be saved?",
+      [
+       "decide once untwisted"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Treat the mass behind it",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cy",
+   "colour": "magenta",
+   "drop_from": "t_ac",
+   "drop_label": "Hb FALLING",
+   "head": [
+    [
+     [
+      "h",
+      "Ruptured hemorrhagic ovarian cyst",
+      [
+       "UNCOMMON: most ruptures bleed little"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "SUDDEN pain, mid-cycle",
+      [
+       "~• 2–3 weeks after the last period (ovulation)",
+       "• or after intercourse / blunt trauma"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Blood in the pelvis",
+      [
+       "• shoulder pain lying down",
+       "• tenesmus",
+       "• lightheaded",
+       "• ORTHOSTATIC drop"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · β-hCG < 1",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · CBC: hemoglobin FALLING",
+      [
+       "• e.g. 110 → 78 in a few hours",
+       "• REPEAT it if bleeding may be ongoing"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Group and screen + ultrasound",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · STABLE: observe",
+      [
+       "most are SELF-LIMITED"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Still bleeding or UNSTABLE",
+      [
+       "• SURGERY",
+       "• interventional radiology in some"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Prevent recurrence",
+      [
+       "suppress ovulation: oral contraceptive pill (OCP)"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dy",
+   "colour": "blue",
+   "drop_from": "t_pr",
+   "head": [
+    [
+     [
+      "h",
+      "Primary dysmenorrhea",
+      [
+       "painful menses, NO structural cause"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "CRAMPS on the first 1–2 days of flow",
+      [
+       "• radiate to the back",
+       "• EASE as the period goes on"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Why it hurts",
+      [
+       "PROSTAGLANDINS → contractions → uterine ISCHEMIA"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · History: WHEN does it start?",
+      [
+       "• WITH the flow → primary",
+       "• BEFORE menses → think endometriosis"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · A CLINICAL diagnosis",
+      [
+       "• NO lab abnormality",
+       "• NORMAL exam",
+       "• an exam finding → STRUCTURAL instead"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · NSAIDs",
+      [
+       "nonsteroidal anti-inflammatory drugs"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Ovulatory suppression",
+      [
+       "OCP: less flow, less pain"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "en",
+   "colour": "teal",
+   "drop_from": "t_st",
+   "drop_label": "NODULAR, fixed",
+   "head": [
+    [
+     [
+      "h",
+      "Endometriosis",
+      [
+       "endometrial tissue OUTSIDE the uterus",
+       "ovaries #1 · uterine ligaments #2"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Pain starting BEFORE menses",
+      [
+       "• dysmenorrhea",
+       "• DEEP dyspareunia",
+       "• dyschezia",
+       "• dysuria",
+       "• INFERTILITY",
+       "• severity does NOT match the pain"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Exam",
+      [
+       "• NODULAR uterosacral ligaments / cul-de-sac",
+       "• FIXED uterus",
+       "• adnexal mass (endometrioma)",
+       "~• often NORMAL: does not rule it out"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · History: ASK about dyspareunia",
+      [
+       "many will not raise it unprompted"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · CONFIRM: laparoscopy → biopsy",
+      [
+       "ANY 2 OF 3: endometrial glands · stroma · hemosiderin"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · NSAIDs + OVULATORY SUPPRESSION",
+      [
+       "• pseudopregnancy: OCP, ring, patch, Depo, IUS, Visanne",
+       "• pseudomenopause: GnRH agonist, danazol"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Laparoscopic excision",
+      [
+       "• refractory + WANTS fertility",
+       "• infertility",
+       "• do NOT repeat surgery"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "3 · Hysterectomy ± oophorectomy",
+      [
+       "• NOT first line",
+       "• NOT if fertility wanted"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ad",
+   "colour": "purple",
+   "drop_from": "t_st",
+   "drop_label": "BOGGY",
+   "head": [
+    [
+     [
+      "h",
+      "Adenomyosis",
+      [
+       "endometrium DEEP in the myometrium",
+       "PAROUS · 40s–50s"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "HEAVY periods + pain",
+      [
+       "• MENORRHAGIA ± dysmenorrhea",
+       "• heavy pelvic sensation"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Exam",
+      [
+       "TENDER, ENLARGED, BOGGY uterus"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · CLINICAL: history + exam",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Ultrasound or MRI",
+      [
+       "sometimes helps"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "NOT by biopsy",
+      [
+       "• the glands are too deep",
+       "• often found at hysterectomy"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Ovulatory suppression",
+      [
+       "• OCP",
+       "• danazol",
+       "• GnRH agonist"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Uterine artery embolization",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · Hysterectomy",
+      [
+       "the GOLD STANDARD"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "le",
+   "colour": "brown",
+   "drop_from": "t_st",
+   "drop_label": "ENLARGED, mobile",
+   "head": [
+    [
+     [
+      "h",
+      "Leiomyoma (fibroid)",
+      [
+       "benign smooth-muscle NEOPLASM",
+       "NOT pre-malignant"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "HEAVY bleeding · pressure",
+      [
+       "• #1 cause of AUB (submucosal most)",
+       "• frequency, constipation",
+       "• infertility if it DISTORTS THE CAVITY"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Exam",
+      [
+       "ENLARGED (e.g. 20-week), MOBILE uterus"
+      ]
+     ],
+     [
+      "bad",
+      "Sarcoma?",
+      [
+       "• RAPID growth",
+       "• single",
+       "• older"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · β-hCG + CBC",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Ultrasound: SITE decides treatment",
+      [
+       "• submucosal",
+       "• intramural",
+       "• subserosal",
+       "• pedunculated (torsion risk)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Pathology if removed",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Ovulatory suppression",
+      [
+       "• combined hormonal",
+       "• Depo",
+       "• Mirena",
+       "• GnRH agonist"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Then by SITE",
+      [
+       "• submucosal → HYSTEROSCOPIC resection",
+       "• large or pedunculated → myomectomy or hysterectomy"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "WANTS pregnancy → MYOMECTOMY",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "NOT uterine artery embolization",
+      [
+       "pregnancy after it: case reports only"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "po",
+   "colour": "olive",
+   "drop_from": "t_st",
+   "drop_label": "MASS at the os",
+   "head": [
+    [
+     [
+      "h",
+      "Endometrial polyp",
+      [
+       "benign, HORMONE-dependent overgrowth of endometrium",
+       "linked to estrogen, TAMOXIFEN · common > 40"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Bleeding BETWEEN periods",
+      [
+       "• daily spotting",
+       "• infertility",
+       "• PAIN only if it protrudes through the os"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Exam",
+      [
+       "• small fleshy MASS at the cervical os",
+       "~• a submucosal fibroid can mimic it"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · REMOVE it: pathology makes the diagnosis",
+      [
+       "send the WHOLE polyp"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Pathology",
+      [
+       "• like the background endometrium, or HYPERPLASTIC (linked to endometrial hyperplasia)",
+       "• RARELY malignant"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Removal is the treatment",
+      [
+       "tell her: not a tumour; pathology confirms benign and excludes malignancy"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Fertility wishes change the plan",
+   "items": [
+    "affects fertility: endometriosis · cavity-distorting fibroids · polyps · NOT adenomyosis",
+    "fibroid + wants pregnancy → myomectomy, not embolization",
+    "endometriosis + wants pregnancy → laparoscopic excision, not hysterectomy · avoid endometrioma surgery (costs ovarian reserve)"
+   ]
+  },
+  {
+   "title": "Also on the differential",
+   "items": [
+    "MYOFASCIAL pelvic pain: NOT cyclic · GLOBALLY tender pelvis, normal uterus → physiotherapy (soft-tissue release), trigger-point injection, amitriptyline + gabapentin",
+    "non-gynecologic: appendicitis, irritable bowel, interstitial cystitis, pelvic floor myalgia"
+   ]
+  }
+ ]
+}

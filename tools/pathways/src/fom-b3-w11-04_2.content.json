@@ -1,0 +1,468 @@
+{
+ "name": "leukemia overview",
+ "title": "Leukemia sorted acute (blasts) or chronic (mature cells), then myeloid or lymphoid: AML, APL, ALL, CML and CLL, each with presentation, numbered investigations and treatment in order, with tumour lysis and leukostasis as the emergencies to watch for in acute leukemia",
+ "col_w": 230,
+ "root": {
+  "title": "Leukemia: ACUTE (blasts) or CHRONIC (mature cells)? then MYELOID or LYMPHOID?",
+  "lines": [
+   "1 · CBC + differential + film · 2 · bone marrow biopsy: morphology, flow, karyotype, FISH",
+   "acute: cytopenias (fatigue, bleeding, infection) · organ infiltration"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_a",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "ACUTE: BLASTS · progresses fast",
+   "lines": [
+    "stains: myeloperoxidase (MPO) → myeloid · TdT → lymphoblastic"
+   ]
+  },
+  {
+   "id": "g_c",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "CHRONIC: MATURE cells",
+   "lines": [
+    "which cell is up on the film?"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT",
+  "pres": "EMERGENCIES"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "aml",
+   "colour": "orange",
+   "drop_label": "MPO+ · adult",
+   "head": [
+    [
+     [
+      "h",
+      "Acute myeloid leukemia (AML)",
+      [
+       "ADULTS · myeloblasts fail to mature"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Marrow failure",
+      [
+       "• anemia, bleeding, infection + fever",
+       "• bone pain, sternal tenderness",
+       "• hepatosplenomegaly, gum swelling"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Film: large blasts, Auer rod",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · DIC + tumour lysis labs",
+      [
+       "• INR, aPTT, fibrinogen, FDP",
+       "• ↑ LDH, urate, phosphate, ↓ calcium"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Before chemo: ECG, MUGA",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · INDUCTION: 7+3 chemo",
+      [
+       "remission · 4–6 weeks in hospital"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · CONSOLIDATION",
+      [
+       "• more chemo, or allogeneic stem cell transplant"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Choose by fitness",
+      [
+       "• young + poor-risk cytogenetics → transplant: only cure",
+       "• older, sicker → low-dose chemo"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "apl",
+   "colour": "magenta",
+   "drop_label": "BLEEDING · DIC",
+   "head": [
+    [
+     [
+      "h",
+      "Acute promyelocytic leukemia (APL, AML-M3)",
+      [
+       "EMERGENCY: early death from BLEEDING"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Bleeding + DIC",
+      [
+       "• often fatal INTRACEREBRAL hemorrhage",
+       "• cytopenias, tumour lysis, leukostasis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Film: blasts with 2+ Auer rods",
+      [
+       "flow: HLA-DR NEGATIVE"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · PT, PTT, fibrinogen (DIC)",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · CONFIRM t(15;17)",
+      [
+       "PML-RARα: karyotype, FISH or NGS"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · All-trans retinoic acid (ATRA) + arsenic",
+      [
+       "suspected APL = EMERGENCY"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · HIGH risk: add chemotherapy",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "all",
+   "colour": "teal",
+   "drop_label": "TdT+ · CHILD",
+   "head": [
+    [
+     [
+      "h",
+      "Acute lymphoblastic leukemia (ALL)",
+      [
+       "CHILDREN: most childhood leukemia"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Child: the classic signs",
+      [
+       "• bruising, bleeding, PALLOR, fever",
+       "• lymphadenopathy, splenomegaly",
+       "• testicular mass"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Film: blasts, NO granules",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Chest X-ray: MEDIASTINAL mass",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Lumbar puncture BEFORE chemo",
+      [
+       "CNS involvement"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Induction → consolidation → MAINTENANCE",
+      [
+       "2–3 years · consolidation: chemo or allogeneic transplant"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · CNS prophylaxis",
+      [
+       "sanctuary sites: CNS + TESTES"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Newer: blinatumomab (CD19), inotuzumab",
+      [
+       "e.g. relapsed B-ALL"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cml",
+   "colour": "brown",
+   "drop_label": "neutrophils + basos",
+   "head": [
+    [
+     [
+      "h",
+      "Chronic myeloid leukemia (CML)",
+      [
+       "t(9;22) Philadelphia → BCR-ABL"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "CHRONIC → accelerated → BLAST crisis",
+      [
+       "• chronic phase: asymptomatic",
+       "• fatigue, sweats, weight loss, splenomegaly",
+       "• blast crisis acts like ACUTE leukemia"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Film: ↑ basophils + eosinophils",
+      [
+       "• myelocytes + neutrophils (bimodal)",
+       "• ± ↑ platelets"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · CONFIRM BCR-ABL",
+      [
+       "FISH, quantitative RT-PCR · marrow"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Tyrosine kinase inhibitor (TKI)",
+      [
+       "IMATINIB, nilotinib, dasatinib"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "+ allopurinol prophylaxis",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Stem cell transplant",
+      [
+       "possibly curative"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cll",
+   "colour": "purple",
+   "drop_label": "mature lymphocytes",
+   "head": [
+    [
+     [
+      "h",
+      "Chronic lymphocytic leukemia (CLL)",
+      [
+       "MATURE B cells · OLDER · most common"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Often ASYMPTOMATIC",
+      [
+       "• lymphadenopathy, hepatosplenomegaly",
+       "• B symptoms, marrow failure"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Immune",
+      [
+       "• autoimmune hemolysis (AIHA), ITP",
+       "• hypogammaglobulinemia"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Film: SMUDGE cells",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Flow: CD5, CD19, dim CD20, CD23",
+      [
+       "light-chain restriction · FISH, p53"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Rai stage",
+      [
+       "0 low · 1–2 intermediate · 3–4 high"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "LOW risk / asymptomatic: do NOT treat",
+      [
+       "incurable"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Symptomatic",
+      [
+       "• chlorambucil, fludarabine",
+       "• anti-CD20 antibody, ibrutinib"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "pres": [
+  {
+   "id": "p_em",
+   "group": "g_a",
+   "title": "ACUTE leukemia: watch for these EMERGENCIES",
+   "lines": [
+    "• TUMOUR LYSIS (↑ potassium, phosphate, urate, ↓ calcium) → hydrate · rasburicase · allopurinol · dialysis",
+    "• LEUKOSTASIS (high blasts: dyspnea, hypoxia, confusion) → IV fluids · leukapheresis"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,525 @@
+{
+ "name": "unexpected lab result overview",
+ "width": 1124,
+ "title": "Unexpected lab result decision chart: check pre-analytical, analytical and post-analytical error in order before believing it, each with its sources, an example and what to do; if no error is found the result may be correct and is communicated to the patient; consent before the test, confidentiality after",
+ "kinds": {
+  "pre_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pre_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pre_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ana_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ana_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ana_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "post_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "post_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "post_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "real_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "real_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "real_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 260,
+   "h": 846,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 302,
+   "y": 288,
+   "w": 260,
+   "h": 846,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 564,
+   "y": 288,
+   "w": 260,
+   "h": 846,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 854,
+   "y": 288,
+   "w": 260,
+   "h": 846,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 396,
+   "h": 232,
+   "text": "SOURCES"
+  },
+  {
+   "x": 23,
+   "y": 668,
+   "h": 166,
+   "text": "EXAMPLE"
+  },
+  {
+   "x": 23,
+   "y": 874,
+   "h": 252,
+   "text": "DO"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 197,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A lab result that doesn't fit: an ERROR, or REAL?",
+   "lines": [
+    "1 · Understand the issue: inconsistent with RELATED tests, PREVIOUS values, or the PRESENTATION?",
+    "do NOT diagnose or treat on a questionable result",
+    "before ANY test, valid consent: CAPACITY (not age) · INFORMED of benefits, risks, alternatives · VOLUNTARY"
+   ]
+  },
+  {
+   "id": "g_e",
+   "x": 45,
+   "y": 156,
+   "w": 774,
+   "h": 60,
+   "kind": "plain",
+   "title": "ERROR? Check each phase IN ORDER",
+   "lines": [
+    "then 5 · ask a lab professional · 6 · repeat or use a different method (Choosing Wisely)"
+   ]
+  },
+  {
+   "id": "g_r",
+   "x": 859,
+   "y": 156,
+   "w": 250,
+   "h": 60,
+   "kind": "plain",
+   "title": "7 · No error found",
+   "lines": [
+    "the result may be CORRECT"
+   ]
+  },
+  {
+   "id": "pre_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 250,
+   "h": 60,
+   "kind": "pre_h",
+   "title": "Pre-analytical",
+   "lines": [
+    "the MOST COMMON source"
+   ]
+  },
+  {
+   "id": "ana_head_0_0",
+   "x": 307,
+   "y": 296,
+   "w": 250,
+   "h": 60,
+   "kind": "ana_h",
+   "title": "Analytical",
+   "lines": [
+    "less frequent as technology improves"
+   ]
+  },
+  {
+   "id": "post_head_0_0",
+   "x": 569,
+   "y": 296,
+   "w": 250,
+   "h": 60,
+   "kind": "post_h",
+   "title": "Post-analytical",
+   "lines": [
+    "HUMAN error in reporting"
+   ]
+  },
+  {
+   "id": "real_head_0_0",
+   "x": 859,
+   "y": 296,
+   "w": 250,
+   "h": 60,
+   "kind": "real_h",
+   "title": "A REAL result",
+   "lines": [
+    "still be cautious"
+   ]
+  },
+  {
+   "id": "pre_src_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 250,
+   "h": 132,
+   "kind": "pre_t",
+   "title": "Ordering + collection",
+   "lines": [
+    "• wrong test, wrong tube or order of draw",
+    "• under-filled or unmixed tube, HEMOLYSIS",
+    "• patient preparation"
+   ]
+  },
+  {
+   "id": "pre_src_1_0",
+   "x": 45,
+   "y": 550,
+   "w": 250,
+   "h": 78,
+   "kind": "pre_w",
+   "title": "Transport + processing",
+   "lines": [
+    "• delayed, or extreme temperature",
+    "• long wait before processing"
+   ]
+  },
+  {
+   "id": "ana_src_0_0",
+   "x": 307,
+   "y": 396,
+   "w": 250,
+   "h": 232,
+   "kind": "ana_t",
+   "title": "The measurement",
+   "lines": [
+    "• random error",
+    "• sample mix-up by the lab",
+    "• METHOD differences, interferences"
+   ]
+  },
+  {
+   "id": "post_src_0_0",
+   "x": 569,
+   "y": 396,
+   "w": 250,
+   "h": 232,
+   "kind": "post_t",
+   "title": "The report",
+   "lines": [
+    "• transcription error",
+    "• patient mix-up in reporting",
+    "• the WRONG reference interval"
+   ]
+  },
+  {
+   "id": "real_src_0_0",
+   "x": 859,
+   "y": 396,
+   "w": 250,
+   "h": 232,
+   "kind": "real_t",
+   "title": "Has the PATIENT changed?",
+   "lines": [
+    "think of it when the result contradicts your diagnosis"
+   ]
+  },
+  {
+   "id": "pre_eg_0_0",
+   "x": 45,
+   "y": 668,
+   "w": 250,
+   "h": 82,
+   "kind": "pre_w",
+   "title": "Potassium 6.8 by pneumatic tube in leukemia, NORMAL electrocardiogram",
+   "lines": []
+  },
+  {
+   "id": "pre_eg_1_0",
+   "x": 45,
+   "y": 772,
+   "w": 250,
+   "h": 62,
+   "kind": "pre_w",
+   "title": "Glucose 1.4 reported 23 h after collection",
+   "lines": []
+  },
+  {
+   "id": "ana_eg_0_0",
+   "x": 307,
+   "y": 668,
+   "w": 250,
+   "h": 90,
+   "kind": "ana_w",
+   "title": "CA19-9: lab A 1235, lab B 1604",
+   "lines": [
+    "different METHODS + reference intervals: not comparable"
+   ]
+  },
+  {
+   "id": "ana_eg_1_0",
+   "x": 307,
+   "y": 780,
+   "w": 250,
+   "h": 54,
+   "kind": "ana_w",
+   "title": "Very high protein, sodium 120",
+   "lines": []
+  },
+  {
+   "id": "post_eg_0_0",
+   "x": 569,
+   "y": 668,
+   "w": 250,
+   "h": 166,
+   "kind": "post_w",
+   "title": "44 typed for 4.4",
+   "lines": []
+  },
+  {
+   "id": "real_eg_0_0",
+   "x": 859,
+   "y": 668,
+   "w": 250,
+   "h": 166,
+   "kind": "real_w",
+   "title": "Home blood pressure 150–160 / 90–93 over 2 months",
+   "lines": [
+    "interpret, explain, show the Framingham risk"
+   ]
+  },
+  {
+   "id": "pre_act_0_0",
+   "x": 45,
+   "y": 874,
+   "w": 250,
+   "h": 252,
+   "kind": "ok",
+   "title": "Collect a fresh sample and repeat",
+   "lines": []
+  },
+  {
+   "id": "ana_act_0_0",
+   "x": 307,
+   "y": 874,
+   "w": 250,
+   "h": 252,
+   "kind": "ok",
+   "title": "Ask a lab professional",
+   "lines": [
+    "• why it may be unreliable",
+    "• other tests to rule in or out",
+    "• another method, here or another lab"
+   ]
+  },
+  {
+   "id": "post_act_0_0",
+   "x": 569,
+   "y": 874,
+   "w": 250,
+   "h": 252,
+   "kind": "ok",
+   "title": "Check the report",
+   "lines": [
+    "right patient, right number, right reference interval"
+   ]
+  },
+  {
+   "id": "real_act_0_0",
+   "x": 859,
+   "y": 874,
+   "w": 250,
+   "h": 114,
+   "kind": "ok",
+   "title": "Tell them: ABCDE",
+   "lines": [
+    "• Advance preparation",
+    "• Build the setting, Communicate well",
+    "• Deal with reactions, Encourage emotions"
+   ]
+  },
+  {
+   "id": "real_act_1_0",
+   "x": 859,
+   "y": 1010,
+   "w": 250,
+   "h": 116,
+   "kind": "warn",
+   "title": "Share ONLY with the patient's consent",
+   "lines": [
+    "not the family · MUST report: a child in need of protection, or likely serious harm to others"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_e",
+   "path": "M577.0 106V131H432.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_r",
+   "path": "M577.0 106V131H984.0V156"
+  },
+  {
+   "from": "pre_src_0_0",
+   "to": "pre_src_1_0"
+  },
+  {
+   "from": "pre_eg_0_0",
+   "to": "pre_eg_1_0"
+  },
+  {
+   "from": "ana_eg_0_0",
+   "to": "ana_eg_1_0"
+  },
+  {
+   "from": "real_act_0_0",
+   "to": "real_act_1_0"
+  },
+  {
+   "from": "pre_head_0_0",
+   "to": "pre_src_0_0"
+  },
+  {
+   "from": "pre_src_1_0",
+   "to": "pre_eg_0_0"
+  },
+  {
+   "from": "pre_eg_1_0",
+   "to": "pre_act_0_0"
+  },
+  {
+   "from": "g_e",
+   "to": "pre_head_0_0",
+   "from_dx": -262,
+   "label": "2 · before the analyzer",
+   "label_at": [
+    170.0,
+    256
+   ]
+  },
+  {
+   "from": "ana_head_0_0",
+   "to": "ana_src_0_0"
+  },
+  {
+   "from": "ana_src_0_0",
+   "to": "ana_eg_0_0"
+  },
+  {
+   "from": "ana_eg_1_0",
+   "to": "ana_act_0_0"
+  },
+  {
+   "from": "g_e",
+   "to": "ana_head_0_0",
+   "from_dx": 0,
+   "label": "3 · in the analyzer",
+   "label_at": [
+    432.0,
+    256
+   ]
+  },
+  {
+   "from": "post_head_0_0",
+   "to": "post_src_0_0"
+  },
+  {
+   "from": "post_src_0_0",
+   "to": "post_eg_0_0"
+  },
+  {
+   "from": "post_eg_0_0",
+   "to": "post_act_0_0"
+  },
+  {
+   "from": "g_e",
+   "to": "post_head_0_0",
+   "from_dx": 262,
+   "label": "4 · after the analyzer",
+   "label_at": [
+    694.0,
+    256
+   ]
+  },
+  {
+   "from": "real_head_0_0",
+   "to": "real_src_0_0"
+  },
+  {
+   "from": "real_src_0_0",
+   "to": "real_eg_0_0"
+  },
+  {
+   "from": "real_eg_0_0",
+   "to": "real_act_0_0"
+  },
+  {
+   "from": "g_r",
+   "to": "real_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

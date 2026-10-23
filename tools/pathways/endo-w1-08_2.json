@@ -1,0 +1,532 @@
+{
+ "name": "glycemic goals of care overview",
+ "width": 1124,
+ "title": "Setting an A1c target in an adult with diabetes: if severe lows are unlikely, aim for 6.5% (low-risk type 2) or 7.0% (most people); if lows are likely or dangerous, or life is short, liberalize to 7.1-8.5% or stop measuring; each column gives who, why and what to do",
+ "kinds": {
+  "t65_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "t65_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "t65_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "t70_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "t70_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "t70_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "t85_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "t85_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "t85_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "eol_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "eol_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "eol_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 260,
+   "h": 668,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 302,
+   "y": 270,
+   "w": 260,
+   "h": 668,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 592,
+   "y": 270,
+   "w": 260,
+   "h": 668,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 854,
+   "y": 270,
+   "w": 260,
+   "h": 668,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 396,
+   "h": 178,
+   "text": "WHO"
+  },
+  {
+   "x": 23,
+   "y": 614,
+   "h": 78,
+   "text": "WHY"
+  },
+  {
+   "x": 23,
+   "y": 732,
+   "h": 198,
+   "text": "WHAT TO DO"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 197,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Which A1c target? Weigh fewer complications against HYPOGLYCEMIA",
+   "lines": [
+    "minimum for EVERY patient: free of symptomatic highs AND lows",
+    "decide WITH the patient: benefit vs lows, out-of-pocket cost, feasibility"
+   ]
+  },
+  {
+   "id": "g_tight",
+   "x": 45,
+   "y": 138,
+   "w": 512,
+   "h": 60,
+   "kind": "plain",
+   "title": "Severe lows UNLIKELY: prevent complications",
+   "lines": [
+    "the more years ahead, the more there is to prevent"
+   ]
+  },
+  {
+   "id": "g_lib",
+   "x": 597,
+   "y": 138,
+   "w": 512,
+   "h": 60,
+   "kind": "plain",
+   "title": "Lows LIKELY or DANGEROUS, or life SHORT: LIBERALIZE",
+   "lines": [
+    "the main side effect of insulin and secretagogues is hypoglycemia"
+   ]
+  },
+  {
+   "id": "t65_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 250,
+   "h": 78,
+   "kind": "t65_h",
+   "title": "A1c ≤ 6.5%",
+   "lines": [
+    "type 2 diabetes (T2DM) at LOW risk of hypoglycemia"
+   ]
+  },
+  {
+   "id": "t70_head_0_0",
+   "x": 307,
+   "y": 278,
+   "w": 250,
+   "h": 78,
+   "kind": "t70_h",
+   "title": "A1c ≤ 7.0%",
+   "lines": [
+    "MOST adults with type 1 (T1DM) or type 2 diabetes"
+   ]
+  },
+  {
+   "id": "t85_head_0_0",
+   "x": 597,
+   "y": 278,
+   "w": 250,
+   "h": 78,
+   "kind": "t85_h",
+   "title": "A1c 7.1–8.5%",
+   "lines": [
+    "functionally dependent: 7.1–8.0%"
+   ]
+  },
+  {
+   "id": "eol_head_0_0",
+   "x": 859,
+   "y": 278,
+   "w": 250,
+   "h": 78,
+   "kind": "eol_h",
+   "title": "Limited life or end of life",
+   "lines": [
+    "limited life expectancy: 7.1–8.5%",
+    "end of life: NO A1c"
+   ]
+  },
+  {
+   "id": "t65_clue_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 250,
+   "h": 178,
+   "kind": "t65_t",
+   "title": "Young, short duration",
+   "lines": [
+    "• long life expectancy",
+    "• no complications yet: still preventable",
+    "• not on a drug that causes lows"
+   ]
+  },
+  {
+   "id": "t70_clue_0_0",
+   "x": 307,
+   "y": 396,
+   "w": 250,
+   "h": 178,
+   "kind": "t70_t",
+   "title": "The default",
+   "lines": [
+    "• long duration, on insulin, complications",
+    "• but no severe lows, not frail, not near the end of life"
+   ]
+  },
+  {
+   "id": "t85_clue_0_0",
+   "x": 597,
+   "y": 396,
+   "w": 250,
+   "h": 78,
+   "kind": "t85_t",
+   "title": "Severe lows LIKELY",
+   "lines": [
+    "• recurrent severe lows",
+    "• hypoglycemia unawareness"
+   ]
+  },
+  {
+   "id": "t85_clue_1_0",
+   "x": 597,
+   "y": 496,
+   "w": 250,
+   "h": 78,
+   "kind": "t85_t",
+   "title": "Lows DANGEROUS",
+   "lines": [
+    "• dementia, seizure disorder",
+    "• frail, prone to falls, dependent"
+   ]
+  },
+  {
+   "id": "eol_clue_0_0",
+   "x": 859,
+   "y": 396,
+   "w": 250,
+   "h": 178,
+   "kind": "eol_t",
+   "title": "Life expectancy < ~2 years",
+   "lines": [
+    "or end of life"
+   ]
+  },
+  {
+   "id": "t65_inv_0_0",
+   "x": 45,
+   "y": 614,
+   "w": 250,
+   "h": 78,
+   "kind": "t65_w",
+   "title": "Further ↓ chronic kidney disease (CKD) and retinopathy",
+   "lines": []
+  },
+  {
+   "id": "t70_inv_0_0",
+   "x": 307,
+   "y": 614,
+   "w": 250,
+   "h": 78,
+   "kind": "t70_w",
+   "title": "↓ microvascular complications",
+   "lines": [
+    "cardiovascular too, if started EARLY"
+   ]
+  },
+  {
+   "id": "t85_inv_0_0",
+   "x": 597,
+   "y": 614,
+   "w": 250,
+   "h": 78,
+   "kind": "bad",
+   "title": "A SEVERE low can be fatal",
+   "lines": [
+    "severe = needs someone else's help to treat"
+   ]
+  },
+  {
+   "id": "eol_inv_0_0",
+   "x": 859,
+   "y": 614,
+   "w": 250,
+   "h": 78,
+   "kind": "eol_w",
+   "title": "No time to gain",
+   "lines": [
+    "the benefit on chronic complications is hard to justify against the risks"
+   ]
+  },
+  {
+   "id": "t65_tx_0_0",
+   "x": 45,
+   "y": 732,
+   "w": 250,
+   "h": 198,
+   "kind": "ok",
+   "title": "Tighten while lows stay unlikely",
+   "lines": [
+    "~e.g. 35, T2DM for 2 years, metformin alone",
+    "drug choice: see the GLUCOSE-LOWERING DRUGS tree"
+   ]
+  },
+  {
+   "id": "t70_tx_0_0",
+   "x": 307,
+   "y": 732,
+   "w": 250,
+   "h": 107,
+   "kind": "ok",
+   "title": "Self-monitored glucose (SMBG) targets",
+   "lines": [
+    "• fasting 4.0–7.0 mmol/L",
+    "• 2 h after a meal 5.0–10.0 mmol/L"
+   ]
+  },
+  {
+   "id": "t70_tx_1_0",
+   "x": 307,
+   "y": 861,
+   "w": 250,
+   "h": 69,
+   "kind": "warn",
+   "title": "Over half never reach it",
+   "lines": [
+    "ANY fall still counts (9.5 → 8.5%)"
+   ]
+  },
+  {
+   "id": "t85_tx_0_0",
+   "x": 597,
+   "y": 732,
+   "w": 250,
+   "h": 116,
+   "kind": "ok",
+   "title": "Liberalize + check glucose (SMBG)",
+   "lines": [
+    "SMBG prevents, confirms and treats lows",
+    "~e.g. 85, severe dementia, on gliclazide"
+   ]
+  },
+  {
+   "id": "t85_tx_1_0",
+   "x": 597,
+   "y": 870,
+   "w": 250,
+   "h": 60,
+   "kind": "bad",
+   "title": "But NOT above 8.5%",
+   "lines": [
+    "symptomatic highs + complications"
+   ]
+  },
+  {
+   "id": "eol_tx_0_0",
+   "x": 859,
+   "y": 732,
+   "w": 250,
+   "h": 198,
+   "kind": "ok",
+   "title": "Avoid symptomatic highs and ANY lows",
+   "lines": [
+    "end of life: stop measuring the A1c"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_tight",
+   "path": "M577.0 88V113H301.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_lib",
+   "path": "M577.0 88V113H853.0V138"
+  },
+  {
+   "from": "t85_clue_0_0",
+   "to": "t85_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "t70_tx_0_0",
+   "to": "t70_tx_1_0"
+  },
+  {
+   "from": "t85_tx_0_0",
+   "to": "t85_tx_1_0"
+  },
+  {
+   "from": "t65_head_0_0",
+   "to": "t65_clue_0_0"
+  },
+  {
+   "from": "t65_clue_0_0",
+   "to": "t65_inv_0_0"
+  },
+  {
+   "from": "t65_inv_0_0",
+   "to": "t65_tx_0_0"
+  },
+  {
+   "from": "g_tight",
+   "to": "t65_head_0_0",
+   "from_dx": -131,
+   "label": "T2DM, LOW risk",
+   "label_at": [
+    170.0,
+    238
+   ]
+  },
+  {
+   "from": "t70_head_0_0",
+   "to": "t70_clue_0_0"
+  },
+  {
+   "from": "t70_clue_0_0",
+   "to": "t70_inv_0_0"
+  },
+  {
+   "from": "t70_inv_0_0",
+   "to": "t70_tx_0_0"
+  },
+  {
+   "from": "g_tight",
+   "to": "t70_head_0_0",
+   "from_dx": 131,
+   "label": "MOST",
+   "label_at": [
+    432.0,
+    238
+   ]
+  },
+  {
+   "from": "t85_head_0_0",
+   "to": "t85_clue_0_0"
+  },
+  {
+   "from": "t85_clue_1_0",
+   "to": "t85_inv_0_0"
+  },
+  {
+   "from": "t85_inv_0_0",
+   "to": "t85_tx_0_0"
+  },
+  {
+   "from": "g_lib",
+   "to": "t85_head_0_0",
+   "from_dx": -131,
+   "label": "lows LIKELY or DANGEROUS",
+   "label_at": [
+    722.0,
+    238
+   ]
+  },
+  {
+   "from": "eol_head_0_0",
+   "to": "eol_clue_0_0"
+  },
+  {
+   "from": "eol_clue_0_0",
+   "to": "eol_inv_0_0"
+  },
+  {
+   "from": "eol_inv_0_0",
+   "to": "eol_tx_0_0"
+  },
+  {
+   "from": "g_lib",
+   "to": "eol_head_0_0",
+   "from_dx": 131,
+   "label": "life SHORT",
+   "label_at": [
+    984.0,
+    238
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 964,
+   "w": 1064,
+   "title": "The A1c: the best-validated marker, but it LAGS",
+   "items": [
+    "mean glucose over the last 8–12 weeks, ~50% from the last 30 days: changes lag behind glucose, so SMBG guides medication changes",
+    "misleading with altered red-cell turnover or hemoglobin (iron or B12 deficiency, chronic renal failure, hemoglobinopathies, splenectomy) → follow glucose readings instead"
+   ],
+   "cols": 1
+  }
+ ]
+}

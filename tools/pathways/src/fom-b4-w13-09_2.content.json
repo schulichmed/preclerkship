@@ -1,0 +1,438 @@
+{
+ "name": "fever overview",
+ "title": "Fever decision chart: hyperthermia (normal set point) is told apart from fever; fever is screened for sepsis with qSOFA or SIRS; a stable patient is sorted into a localised infection, a fever with rash or alarm sign, or a fever with no focus (fever of unknown origin), each with clues, investigations in order and management",
+ "col_w": 232,
+ "root": {
+  "title": "A patient with FEVER: is it really fever, is the patient STABLE, and WHERE is the infection?",
+  "lines": [
+   "safety first: hand hygiene + personal protective equipment · methicillin-resistant S. aureus (MRSA) flag → contact precautions",
+   "fever = oral/tympanic ≥ 37.2°C at 6 AM or ≥ 37.8°C any time · children 38°C (rectal, armpit)",
+   "older adults: 37.8°C once, 37.2°C persistent or ≥ 1.1°C over baseline · 30–50% of the frail have NO fever: look for falls, delirium"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_hy",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "Set point NORMAL: HYPERTHERMIA",
+   "lines": [
+    "the body cannot shed heat"
+   ]
+  },
+  {
+   "id": "g_fe",
+   "cols": [
+    1,
+    4
+   ],
+   "title": "Set point RAISED: FEVER · screen for SEPSIS first",
+   "lines": [
+    "adults: quick SOFA (qSOFA) · respiratory rate (RR) ≥ 22 · BP ≤ 100/60 · altered mentation",
+    "children: systemic inflammatory response (SIRS) · temperature, heart rate > 90, RR > 20, white count · 2 or more = HIGH RISK"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_un",
+   "cols": [
+    1,
+    1
+   ],
+   "title": "2 or more points: HIGH RISK",
+   "lines": []
+  },
+  {
+   "id": "t_st",
+   "cols": [
+    2,
+    4
+   ],
+   "title": "STABLE: what do the history and head-to-toe exam point to?",
+   "lines": [
+    "examine the infected area LAST"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "MANAGE"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "hy",
+   "colour": "slate",
+   "head": [
+    [
+     [
+      "h",
+      "Hyperthermia",
+      [
+       "thermoregulation FAILS",
+       "set point unchanged"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Drugs, exercise, heat exposure",
+      [
+       "• heat stroke",
+       "• anesthesia drugs (atropine)",
+       "• no normal daily swing"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Above 41°C?",
+      [
+       "fever rarely is: think hyperthermia"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Did antipyretics work?",
+      [
+       "NO response → hyperthermia"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Antipyretics do NOT work",
+      [
+       "the set point is already normal"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "un",
+   "colour": "magenta",
+   "drop_from": "t_un",
+   "head": [
+    [
+     [
+      "h",
+      "Possible SEPSIS",
+      [
+       "act before the full history"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Alarm signs",
+      [
+       "• dizziness, confusion",
+       "• recent CHEMOTHERAPY: neutropenia",
+       "• temperature > 105.8°F: CNS infection"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · FULL septic work-up",
+      [
+       "• blood + urine cultures, complete blood count (CBC), urinalysis",
+       "• cerebrospinal fluid (CSF): culture, cells, glucose, protein",
+       "• chest X-ray (CXR)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Lactate",
+      [
+       "HIGH = bad: sepsis"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · Resuscitate: ABC",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · EMPIRIC antibiotics NOW",
+      [
+       "• don't wait for cultures",
+       "• cover Listeria, E. coli, group B strep"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Then: SEPSIS chart",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "fo",
+   "colour": "teal",
+   "drop_from": "t_st",
+   "drop_label": "a FOCUS",
+   "head": [
+    [
+     [
+      "h",
+      "Localised infection",
+      [
+       "name the SITE → the SYNDROME",
+       "→ the likely BUGS"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Where is it?",
+      [
+       "• brain, ear/sinus, throat, lung, heart",
+       "• abdomen, biliary, urine, genital",
+       "• bone/joint, skin/soft tissue"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · ALWAYS 2 sets of blood cultures",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · TARGETED tests at the site",
+      [
+       "• urinalysis, lumbar puncture, joint tap",
+       "• CXR · nasal swab: respiratory panel"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Positive urine culture ≠ urinary tract infection (UTI)",
+      [
+       "• NO urinalysis over 65",
+       "• treat bacteriuria only in pregnancy, urologic surgery, child with reflux"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Antibiotics for BACTERIA only",
+      [
+       "choice: ANTIBIOTICS chart"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "ABSCESS: DRAIN it",
+      [
+       "antibiotics cannot cross its avascular wall"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Can't move the joint?",
+      [
+       "SEPTIC ARTHRITIS: an emergency"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ra",
+   "colour": "orange",
+   "drop_from": "t_st",
+   "drop_label": "RASH or alarm",
+   "head": [
+    [
+     [
+      "h",
+      "Fever EMERGENCY?",
+      [
+       "fever + rash, or an alarm sign"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Rule these out",
+      [
+       "• meningococcemia, Rocky Mountain spotted fever (RMSF)",
+       "• necrotizing fasciitis · toxic shock (staph, group A strep)",
+       "• endocarditis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Read the rash",
+      [
+       "• palms + soles, CaRS: Coxsackie, RMSF, Syphilis",
+       "• fever 5 days + conjunctivitis, rash, nodes, strawberry tongue, hands: KAWASAKI"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Not infection?",
+      [
+       "• drugs: DRESS, Stevens-Johnson / TEN, serum sickness",
+       "• lymphoma, leukemia · vasculitis, lupus"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Kawasaki: CORONARY artery aneurysm risk",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "nf",
+   "colour": "purple",
+   "drop_from": "t_st",
+   "drop_label": "NO focus, lasting",
+   "head": [
+    [
+     [
+      "h",
+      "Fever of unknown origin",
+      [
+       "≥ 101°F on several occasions",
+       "a proper first work-up found nothing"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "HOW LONG narrows it",
+      [
+       "• SUBACUTE 1–2 weeks: intra-abdominal abscess",
+       "• CHRONIC > 2 weeks: TB, HIV, cancer, lupus",
+       "• ALL cancers can cause fever"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Routine bloods + imaging",
+      [
+       "• CBC, electrolytes, creatinine, liver, C-reactive protein (CRP)",
+       "• CT, ultrasound, MRI (spare children radiation)"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Hunt NON-infectious causes",
+      [
+       "• rheumatoid factor, ANA (lupus), ANCA (vasculitis)",
+       "• leg Dopplers / CT pulmonary angiogram (clot)",
+       "• thyroid (TSH) · drug history"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Treat the CAUSE",
+      [
+       "• bacteria → antibiotic · virus → antiviral",
+       "• fungus → antifungal · parasite → antiparasitic"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Antipyretics for comfort",
+      [
+       "acetaminophen, NSAIDs"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

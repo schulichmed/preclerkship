@@ -1,0 +1,615 @@
+{
+ "name": "normocytic anemia overview",
+ "width": 1100,
+ "title": "Normocytic anemia: the reticulocyte count splits cells lost or destroyed (acute blood loss, sickle cell disease) from too little production, where the marrow biopsy finds an empty marrow (pure red cell aplasia, aplastic anemia) or a replaced one (myelophthisis)",
+ "kinds": {
+  "bl_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "bl_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "bl_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "sc_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sc_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "sc_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "em_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "em_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "em_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "my_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "my_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "my_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 388,
+   "w": 254,
+   "h": 814,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 296,
+   "y": 388,
+   "w": 254,
+   "h": 814,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 580,
+   "y": 388,
+   "w": 254,
+   "h": 814,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 836,
+   "y": 388,
+   "w": 254,
+   "h": 814,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 496,
+   "h": 178,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 714,
+   "h": 180,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 934,
+   "h": 260,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 185,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Normocytic anemia (mean cell volume, MCV 80–100 fL): is the marrow RESPONDING?",
+   "lines": [
+    "ABCD: Acute blood loss · Bone marrow failure · Chronic disease · Destruction",
+    "1 · reticulocyte count: rises up to 6× when the marrow responds"
+   ]
+  },
+  {
+   "id": "g_up",
+   "x": 45,
+   "y": 138,
+   "w": 500,
+   "h": 60,
+   "kind": "plain",
+   "title": "Reticulocytes ↑: cells LOST or DESTROYED",
+   "lines": [
+    "other destruction: see the HEMOLYTIC ANEMIA chart"
+   ]
+  },
+  {
+   "id": "g_lo",
+   "x": 585,
+   "y": 138,
+   "w": 500,
+   "h": 60,
+   "kind": "plain",
+   "title": "Reticulocytes normal or ↓: too little PRODUCTION",
+   "lines": []
+  },
+  {
+   "id": "t_bm",
+   "x": 585,
+   "y": 238,
+   "w": 500,
+   "h": 78,
+   "kind": "plain",
+   "title": "2 · Bone marrow aspirate + biopsy",
+   "lines": [
+    "• ABNORMAL → see the MYELODYSPLASTIC SYNDROME chart",
+    "• NORMAL → chronic inflammation (MICROCYTIC chart) or kidney disease"
+   ]
+  },
+  {
+   "id": "bl_head_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 244,
+   "h": 60,
+   "kind": "bl_h",
+   "title": "Acute blood loss",
+   "lines": []
+  },
+  {
+   "id": "sc_head_0_0",
+   "x": 301,
+   "y": 396,
+   "w": 244,
+   "h": 60,
+   "kind": "sc_h",
+   "title": "Sickle cell disease",
+   "lines": [
+    "β chain: HbS Glu → Val · recessive"
+   ]
+  },
+  {
+   "id": "em_head_0_0",
+   "x": 585,
+   "y": 396,
+   "w": 244,
+   "h": 60,
+   "kind": "em_h",
+   "title": "Marrow failure",
+   "lines": [
+    "EMPTY marrow · no splenomegaly"
+   ]
+  },
+  {
+   "id": "my_head_0_0",
+   "x": 841,
+   "y": 396,
+   "w": 244,
+   "h": 60,
+   "kind": "my_h",
+   "title": "Myelophthisis",
+   "lines": [
+    "marrow crowded OUT"
+   ]
+  },
+  {
+   "id": "bl_clue_0_0",
+   "x": 45,
+   "y": 496,
+   "w": 244,
+   "h": 178,
+   "kind": "bl_t",
+   "title": "Pallor, bleeding",
+   "lines": [
+    "• GI",
+    "• menstruation, fibroids, urinary",
+    "• bleeding disorder"
+   ]
+  },
+  {
+   "id": "sc_clue_0_0",
+   "x": 301,
+   "y": 496,
+   "w": 244,
+   "h": 69,
+   "kind": "sc_t",
+   "title": "From about age 3",
+   "lines": [
+    "fetal Hb (HbF) protects until then"
+   ]
+  },
+  {
+   "id": "sc_clue_1_0",
+   "x": 301,
+   "y": 587,
+   "w": 244,
+   "h": 87,
+   "kind": "sc_w",
+   "title": "Crises and organ damage",
+   "lines": [
+    "• vaso-occlusive crisis, dactylitis",
+    "• acute chest syndrome, stroke"
+   ]
+  },
+  {
+   "id": "em_clue_0_0",
+   "x": 585,
+   "y": 496,
+   "w": 244,
+   "h": 78,
+   "kind": "em_t",
+   "title": "Pure red cell aplasia (PRCA)",
+   "lines": [
+    "red cells only: Diamond-Blackfan, autoimmune, toxins"
+   ]
+  },
+  {
+   "id": "em_clue_1_0",
+   "x": 585,
+   "y": 596,
+   "w": 244,
+   "h": 78,
+   "kind": "em_t",
+   "title": "Aplastic anemia",
+   "lines": [
+    "ALL lines: idiopathic (most), toxins, Fanconi"
+   ]
+  },
+  {
+   "id": "my_clue_0_0",
+   "x": 841,
+   "y": 496,
+   "w": 244,
+   "h": 178,
+   "kind": "my_t",
+   "title": "Replaced by",
+   "lines": [
+    "• myelofibrosis",
+    "• blood cancer",
+    "• metastatic solid cancer"
+   ]
+  },
+  {
+   "id": "bl_inv_0_0",
+   "x": 45,
+   "y": 714,
+   "w": 244,
+   "h": 180,
+   "kind": "bl_w",
+   "title": "1 · Find the SOURCE",
+   "lines": []
+  },
+  {
+   "id": "sc_inv_0_0",
+   "x": 301,
+   "y": 714,
+   "w": 244,
+   "h": 42,
+   "kind": "sc_t",
+   "title": "1 · Newborn screening",
+   "lines": []
+  },
+  {
+   "id": "sc_inv_1_0",
+   "x": 301,
+   "y": 778,
+   "w": 244,
+   "h": 116,
+   "kind": "sc_w",
+   "title": "2 · Hb electrophoresis or HPLC",
+   "lines": [
+    "high-performance liquid chromatography",
+    "sickle cells · HbF ↑"
+   ]
+  },
+  {
+   "id": "em_inv_0_0",
+   "x": 585,
+   "y": 714,
+   "w": 244,
+   "h": 80,
+   "kind": "em_w",
+   "title": "PRCA: SEVERE reticulocytopenia",
+   "lines": []
+  },
+  {
+   "id": "em_inv_1_0",
+   "x": 585,
+   "y": 816,
+   "w": 244,
+   "h": 78,
+   "kind": "em_w",
+   "title": "Aplastic: PANCYTOPENIA",
+   "lines": [
+    "marrow replaced by fat"
+   ]
+  },
+  {
+   "id": "my_inv_0_0",
+   "x": 841,
+   "y": 714,
+   "w": 244,
+   "h": 180,
+   "kind": "my_t",
+   "title": "Leukoerythroblastic film",
+   "lines": [
+    "teardrop cells"
+   ]
+  },
+  {
+   "id": "bl_tx_0_0",
+   "x": 45,
+   "y": 934,
+   "w": 244,
+   "h": 119,
+   "kind": "ok",
+   "title": "1 · Treat the cause",
+   "lines": []
+  },
+  {
+   "id": "bl_tx_1_0",
+   "x": 45,
+   "y": 1075,
+   "w": 244,
+   "h": 119,
+   "kind": "warn",
+   "title": "2 · Transfuse if necessary",
+   "lines": []
+  },
+  {
+   "id": "sc_tx_0_0",
+   "x": 301,
+   "y": 934,
+   "w": 244,
+   "h": 96,
+   "kind": "bad",
+   "title": "1 · Vaso-occlusive crisis",
+   "lines": [
+    "oxygen, IV fluids, opioids or anti-inflammatories (NSAIDs), treat the trigger"
+   ]
+  },
+  {
+   "id": "sc_tx_1_0",
+   "x": 301,
+   "y": 1052,
+   "w": 244,
+   "h": 78,
+   "kind": "ok",
+   "title": "2 · Long term",
+   "lines": [
+    "• hydroxyurea, folate",
+    "• penicillin prophylaxis to age 5"
+   ]
+  },
+  {
+   "id": "sc_tx_2_0",
+   "x": 301,
+   "y": 1152,
+   "w": 244,
+   "h": 42,
+   "kind": "warn",
+   "title": "3 · Stem cell transplant",
+   "lines": []
+  },
+  {
+   "id": "em_tx_0_0",
+   "x": 585,
+   "y": 934,
+   "w": 244,
+   "h": 65,
+   "kind": "bad",
+   "title": "1 · Febrile neutropenia",
+   "lines": [
+    "blood products + antibiotics"
+   ]
+  },
+  {
+   "id": "em_tx_1_0",
+   "x": 585,
+   "y": 1021,
+   "w": 244,
+   "h": 83,
+   "kind": "ok",
+   "title": "2 · Immunosuppression",
+   "lines": [
+    "antithymocyte globulin, cyclosporine, steroids"
+   ]
+  },
+  {
+   "id": "em_tx_2_0",
+   "x": 585,
+   "y": 1126,
+   "w": 244,
+   "h": 67,
+   "kind": "ok",
+   "title": "3 · Marrow transplant if eligible",
+   "lines": []
+  },
+  {
+   "id": "my_tx_0_0",
+   "x": 841,
+   "y": 934,
+   "w": 244,
+   "h": 260,
+   "kind": "ok",
+   "title": "Manage as marrow failure",
+   "lines": [
+    "see the MARROW FAILURE column"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_up",
+   "path": "M565.0 88V113H295.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_lo",
+   "path": "M565.0 88V113H835.0V138"
+  },
+  {
+   "from": "g_lo",
+   "to": "t_bm",
+   "from_dx": 0
+  },
+  {
+   "from": "sc_clue_0_0",
+   "to": "sc_clue_1_0"
+  },
+  {
+   "from": "em_clue_0_0",
+   "to": "em_clue_1_0"
+  },
+  {
+   "from": "sc_inv_0_0",
+   "to": "sc_inv_1_0"
+  },
+  {
+   "from": "em_inv_0_0",
+   "to": "em_inv_1_0"
+  },
+  {
+   "from": "bl_tx_0_0",
+   "to": "bl_tx_1_0"
+  },
+  {
+   "from": "sc_tx_0_0",
+   "to": "sc_tx_1_0"
+  },
+  {
+   "from": "sc_tx_1_0",
+   "to": "sc_tx_2_0"
+  },
+  {
+   "from": "em_tx_0_0",
+   "to": "em_tx_1_0"
+  },
+  {
+   "from": "em_tx_1_0",
+   "to": "em_tx_2_0"
+  },
+  {
+   "from": "bl_head_0_0",
+   "to": "bl_clue_0_0"
+  },
+  {
+   "from": "bl_clue_0_0",
+   "to": "bl_inv_0_0"
+  },
+  {
+   "from": "bl_inv_0_0",
+   "to": "bl_tx_0_0"
+  },
+  {
+   "from": "g_up",
+   "to": "bl_head_0_0",
+   "from_dx": -128,
+   "label": "bleeding",
+   "label_at": [
+    167.0,
+    356
+   ]
+  },
+  {
+   "from": "sc_head_0_0",
+   "to": "sc_clue_0_0"
+  },
+  {
+   "from": "sc_clue_1_0",
+   "to": "sc_inv_0_0"
+  },
+  {
+   "from": "sc_inv_1_0",
+   "to": "sc_tx_0_0"
+  },
+  {
+   "from": "g_up",
+   "to": "sc_head_0_0",
+   "from_dx": 128,
+   "label": "sickling",
+   "label_at": [
+    423.0,
+    356
+   ]
+  },
+  {
+   "from": "em_head_0_0",
+   "to": "em_clue_0_0"
+  },
+  {
+   "from": "em_clue_1_0",
+   "to": "em_inv_0_0"
+  },
+  {
+   "from": "em_inv_1_0",
+   "to": "em_tx_0_0"
+  },
+  {
+   "from": "t_bm",
+   "to": "em_head_0_0",
+   "from_dx": -128,
+   "label": "EMPTY",
+   "label_at": [
+    707.0,
+    356
+   ]
+  },
+  {
+   "from": "my_head_0_0",
+   "to": "my_clue_0_0"
+  },
+  {
+   "from": "my_clue_0_0",
+   "to": "my_inv_0_0"
+  },
+  {
+   "from": "my_inv_0_0",
+   "to": "my_tx_0_0"
+  },
+  {
+   "from": "t_bm",
+   "to": "my_head_0_0",
+   "from_dx": 128,
+   "label": "REPLACED",
+   "label_at": [
+    963.0,
+    356
+   ]
+  }
+ ],
+ "panels": []
+}

@@ -1,0 +1,382 @@
+{
+ "name": "head and neck infections overview",
+ "title": "Head and neck infection decision chart: a sore throat is pharyngitis unless the signs show spread (peritonsillar abscess with uvula deviation, deep neck space infection with trismus and reduced neck movement); a toxic patient a week after pharyngitis suggests Lemierre syndrome and a diabetic or immunocompromised patient with a necrotic palate suggests mucormycosis; each column gives clues, workup and treatment",
+ "col_w": 250,
+ "root": {
+  "title": "Head and neck infection: is it SPREADING, and is the AIRWAY safe?",
+  "lines": [
+   "RED FLAGS: progressive symptoms, fever, ↓ neck movement, TRISMUS (cannot open the mouth), failed antibiotics",
+   "cover the skin and mouth flora: Gram-positives (S. aureus, strep) + oral ANAEROBES (Fusobacterium)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_th",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "SORE THROAT: how far has it spread?",
+   "lines": [
+    "a drooling child in the tripod position (epiglottitis): see the PEDIATRIC STRIDOR chart"
+   ]
+  },
+  {
+   "id": "g_rare",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "TOXIC or IMMUNOCOMPROMISED: rare and deadly",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "tx": "WORKUP + TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "ph",
+   "colour": "teal",
+   "drop_label": "THROAT only",
+   "head": [
+    [
+     [
+      "h",
+      "Pharyngitis",
+      [
+       "mostly VIRAL"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "VIRAL",
+      [
+       "• rhinovirus, coronavirus, influenza, Epstein-Barr, cytomegalovirus",
+       "• NO exudate",
+       "• PAINLESS nodes"
+      ]
+     ],
+     [
+      "t",
+      "BACTERIAL",
+      [
+       "• group A strep (GAS)",
+       "• tonsillar EXUDATE",
+       "• PAINFUL nodes"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Also consider",
+      [
+       "• gonorrhea, chlamydia",
+       "• unvaccinated: diphtheria, a GREY membrane"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "t",
+      "1 · Test for STREP throat",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · GAS → PENICILLIN promptly",
+      [
+       "prevents rheumatic fever"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Recurrent → tonsillectomy (Paradise)",
+      [
+       "• 7 in 1 year",
+       "• 5 a year for 2 years",
+       "• 3 a year for 3 years",
+       "~also sleep apnea, recurrent abscess, malignancy"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pt",
+   "colour": "orange",
+   "drop_label": "UVULA DEVIATED",
+   "head": [
+    [
+     [
+      "h",
+      "Peritonsillar abscess (PTA)",
+      [
+       "tonsillitis gone further"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Peritonsillar SWELLING",
+      [
+       "• UVULA pushed to the other side",
+       "• large, red tonsil with exudate"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Trismus, ↓ neck movement?",
+      [
+       "→ DEEP NECK infection"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · INCISION + DRAINAGE",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Amoxicillin-clavulanate",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "Recurrent abscess → tonsillectomy",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dn",
+   "colour": "purple",
+   "drop_label": "TRISMUS · ↓ neck movement",
+   "head": [
+    [
+     [
+      "h",
+      "Deep neck space infection",
+      [
+       "spreads from teeth, tonsils, parotid, nodes, ear, sinuses"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "TRISMUS + ↓ neck range of motion",
+      [
+       "fever, progressive symptoms"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Always consider the AIRWAY",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "t",
+      "1 · CT",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Ceftriaxone + metronidazole",
+      [
+       "oral flora"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "ADD for risk",
+      [
+       "• colonized with methicillin-resistant S. aureus (MRSA), or injects drugs → + vancomycin",
+       "• immunocompromised, health-care → + piperacillin-tazobactam (Pseudomonas)"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "3 · Incision + drainage",
+      [
+       "± steroids"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "le",
+   "colour": "brown",
+   "drop_label": "TOXIC a week after pharyngitis",
+   "head": [
+    [
+     [
+      "h",
+      "Lemierre syndrome",
+      [
+       "septic thrombophlebitis of the INTERNAL JUGULAR vein",
+       "Fusobacterium necrophorum"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Pharyngitis, then ~1 WEEK later",
+      [
+       "• fever, chills, rigors",
+       "• looks TOXIC"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Neck",
+      [
+       "firm along the internal jugular vein"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "t",
+      "1 · CT WITH CONTRAST",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Ceftriaxone + metronidazole",
+      [
+       "+ ANTICOAGULATION"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "3 · Drain local abscesses",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Watch for SEPTIC EMBOLI to the lungs",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mu",
+   "colour": "magenta",
+   "drop_label": "DKA · NECROTIC palate",
+   "head": [
+    [
+     [
+      "h",
+      "Rhinocerebral mucormycosis",
+      [
+       "angio-invasive FUNGUS · very high mortality"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Who",
+      [
+       "• diabetic ketoacidosis (DKA), diabetes",
+       "• immunocompromise, steroids",
+       "• iron chelator (deferoxamine)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Rapid",
+      [
+       "• fever, sinus pain, headache, nasal discharge",
+       "• NECROTIC palate"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · Surgical DEBRIDEMENT",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · IV liposomal amphotericin B",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

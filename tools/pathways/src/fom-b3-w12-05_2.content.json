@@ -1,0 +1,260 @@
+{
+ "name": "lymphoma overview",
+ "title": "Suspected lymphoma: excisional biopsy and staging first, then Hodgkin (classical or nodular lymphocyte-predominant, treated by stage) or non-Hodgkin, aggressive (diffuse large B-cell, R-CHOP) or indolent (follicular, watch and wait until symptomatic); Ann Arbor stage sets the treatment",
+ "col_w": 262,
+ "root": {
+  "title": "Suspected lymphoma: get TISSUE, then HODGKIN or NON-HODGKIN, then STAGE",
+  "lines": [
+   "1 · biopsy: EXCISIONAL > core > fine-needle aspiration (FNA loses node architecture)",
+   "2 · bloods (CBC, LDH, hepatitis B + C, HIV) · PET-CT · marrow if indicated · cardiac function · lumbar puncture for CNS",
+   "3 · Ann Arbor: I one region · II ≥ 2, SAME side of diaphragm · III BOTH sides · IV diffuse extranodal (marrow) · B = B symptoms"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_h",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "HODGKIN (HL): young · nodal · CONTIGUOUS spread",
+   "lines": [
+    "TREAT everyone, aim to CURE"
+   ]
+  },
+  {
+   "id": "g_n",
+   "cols": [
+    1,
+    2
+   ],
+   "title": "NON-HODGKIN (NHL): older · nodal or extranodal · MONOCLONAL on flow",
+   "lines": [
+    "AGGRESSIVE → treat now · INDOLENT and well → watch and wait",
+    "small lymphocytic lymphoma = CLL: LEUKEMIA chart"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "PRESENTS AS",
+  "inv": "BIOPSY SHOWS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "hl",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Hodgkin lymphoma",
+      [
+       "median age 26 · males > females"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Painless node, often NECK first",
+      [
+       "• spreads node to next node (predictable)",
+       "• ± B symptoms: fever, drenching night sweats, weight loss",
+       "• pruritus, node pain with ALCOHOL"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Nodular sclerosis: most common",
+      [
+       "young adult · MEDIASTINAL mass"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "CLASSICAL: Reed-Sternberg cells",
+      [
+       "CD15+, CD30+ · inflammatory background",
+       "NOT monoclonal on flow"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Nodular lymphocyte-predominant",
+      [
+       "'popcorn' cells · CD20+ · no EBV"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Stage I–II (not bulky)",
+      [
+       "short chemo → involved-field radiation"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Stage III–IV or BULKY",
+      [
+       "ABVD × 2 → AVD × 4"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "PET-positive residual mass → radiation",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dl",
+   "colour": "orange",
+   "drop_label": "rapidly enlarging",
+   "head": [
+    [
+     [
+      "h",
+      "Diffuse large B-cell (DLBCL)",
+      [
+       "most common NHL · AGGRESSIVE"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Painless, RAPIDLY enlarging mass",
+      [
+       "• B symptoms · nodal or extranodal",
+       "• mostly ADVANCED at diagnosis",
+       "• rapidly FATAL untreated"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "DIFFUSE sheets of LARGE cells",
+      [
+       "CD5−, CD10+ · high mitotic rate"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "R-CHOP every 21 days",
+      [
+       "• stage I–II: 3 cycles",
+       "• stage III–IV: 6 cycles"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "fl",
+   "colour": "purple",
+   "drop_label": "indolent",
+   "head": [
+    [
+     [
+      "h",
+      "Follicular lymphoma",
+      [
+       "2nd most common NHL · INDOLENT · mostly incurable"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Often ASYMPTOMATIC",
+      [
+       "• lymphadenopathy, splenomegaly",
+       "• usually stage III–IV at diagnosis",
+       "• relapses and remits"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "FOLLICULAR pattern of small cells",
+      [
+       "CD5−, CD10+ · t(14;18) BCL-2"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Well: WATCH AND WAIT",
+      [
+       "early treatment does not help"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Stage I → RADIATION",
+      [
+       "potentially curative"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Symptomatic II–IV → BR × 6",
+      [
+       "bendamustine-rituximab + 2 years rituximab"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

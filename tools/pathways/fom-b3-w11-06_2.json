@@ -1,0 +1,594 @@
+{
+ "name": "thrombocytosis overview",
+ "width": 1266,
+ "title": "High platelet count: repeat the count, look for the common reactive causes (infection or inflammation, iron deficiency or bleeding, hemolysis) and treat them, and only if it persists consider a clonal cause, essential thrombocythemia or primary myelofibrosis; pancytopenia is sorted into low production, high destruction or sequestration",
+ "kinds": {
+  "in_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "in_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "in_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ir_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ir_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ir_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "he_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "he_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "he_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "et_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "et_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "et_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "mf_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mf_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "mf_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 306,
+   "w": 236,
+   "h": 882,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 278,
+   "y": 306,
+   "w": 236,
+   "h": 882,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 516,
+   "y": 306,
+   "w": 236,
+   "h": 882,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 782,
+   "y": 306,
+   "w": 236,
+   "h": 882,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1020,
+   "y": 306,
+   "w": 236,
+   "h": 882,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 452,
+   "h": 196,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 688,
+   "h": 170,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 898,
+   "h": 282,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 268,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Platelets ≥ 450 × 10⁹/L (extreme ≥ 1000): is it REAL, REACTIVE or CLONAL?",
+   "lines": [
+    "1 · REPEAT the CBC: is it persistent? · spurious (rare): red cell fragments, cryoglobulins, bacteria counted as platelets",
+    "history + exam look for reactive AND clonal causes together",
+    "ALL three LOW (pancytopenia)? ↓ production (marrow) · ↑ destruction (immune, drugs, infection) · big spleen"
+   ]
+  },
+  {
+   "id": "g_r",
+   "x": 45,
+   "y": 156,
+   "w": 702,
+   "h": 78,
+   "kind": "plain",
+   "title": "2 · REACTIVE: far more COMMON · look first",
+   "lines": [
+    "also: hyposplenism (splenectomy, sickle cell) · non-blood cancer · rebound after myelosuppression",
+    "treat the cause, then REPEAT the CBC: still high → CLONAL"
+   ]
+  },
+  {
+   "id": "g_c",
+   "x": 787,
+   "y": 156,
+   "w": 464,
+   "h": 78,
+   "kind": "plain",
+   "title": "3 · CLONAL: myeloproliferative neoplasm (MPN)",
+   "lines": [
+    "which other line is up? Hb ↑↑ → ERYTHROCYTOSIS chart · WBC ↑↑, Philadelphia + → CML (LEUKEMIA chart)"
+   ]
+  },
+  {
+   "id": "in_head_0_0",
+   "x": 45,
+   "y": 314,
+   "w": 226,
+   "h": 98,
+   "kind": "in_h",
+   "title": "Infection, inflammation, tissue damage",
+   "lines": []
+  },
+  {
+   "id": "ir_head_0_0",
+   "x": 283,
+   "y": 314,
+   "w": 226,
+   "h": 98,
+   "kind": "ir_h",
+   "title": "Iron deficiency or bleeding",
+   "lines": []
+  },
+  {
+   "id": "he_head_0_0",
+   "x": 521,
+   "y": 314,
+   "w": 226,
+   "h": 98,
+   "kind": "he_h",
+   "title": "Hemolysis",
+   "lines": []
+  },
+  {
+   "id": "et_head_0_0",
+   "x": 787,
+   "y": 314,
+   "w": 226,
+   "h": 98,
+   "kind": "et_h",
+   "title": "Essential thrombocythemia (ET)",
+   "lines": [
+    "platelets ↑↑ · RBC normal · Philadelphia −"
+   ]
+  },
+  {
+   "id": "mf_head_0_0",
+   "x": 1025,
+   "y": 314,
+   "w": 226,
+   "h": 98,
+   "kind": "mf_h",
+   "title": "Primary myelofibrosis (PMF)",
+   "lines": [
+    "RBC ↓ or normal · can arise from ET or PV"
+   ]
+  },
+  {
+   "id": "in_clue_0_0",
+   "x": 45,
+   "y": 452,
+   "w": 226,
+   "h": 196,
+   "kind": "in_t",
+   "title": "Clues",
+   "lines": [
+    "• BACTERIAL infection: the most common",
+    "• IBD, RA, SLE",
+    "• trauma, surgery, burns"
+   ]
+  },
+  {
+   "id": "ir_clue_0_0",
+   "x": 283,
+   "y": 452,
+   "w": 226,
+   "h": 196,
+   "kind": "ir_t",
+   "title": "Clues",
+   "lines": [
+    "• MICROCYTIC anemia",
+    "• hemorrhage"
+   ]
+  },
+  {
+   "id": "he_clue_0_0",
+   "x": 521,
+   "y": 452,
+   "w": 226,
+   "h": 196,
+   "kind": "he_t",
+   "title": "Clues",
+   "lines": [
+    "• anemia with hemolysis"
+   ]
+  },
+  {
+   "id": "et_clue_0_0",
+   "x": 787,
+   "y": 452,
+   "w": 226,
+   "h": 196,
+   "kind": "et_t",
+   "title": "Clues",
+   "lines": [
+    "• erythromelalgia, ocular migraine",
+    "• weakness, dizziness, MILD bleeding",
+    "• splenomegaly rare"
+   ]
+  },
+  {
+   "id": "mf_clue_0_0",
+   "x": 1025,
+   "y": 452,
+   "w": 226,
+   "h": 96,
+   "kind": "mf_t",
+   "title": "Clues",
+   "lines": [
+    "• fatigue, early satiety, weight loss",
+    "• bruising, bleeding, B symptoms",
+    "• big SPLEEN"
+   ]
+  },
+  {
+   "id": "mf_clue_1_0",
+   "x": 1025,
+   "y": 570,
+   "w": 226,
+   "h": 78,
+   "kind": "mf_w",
+   "title": "Film",
+   "lines": [
+    "• TEARDROP cells",
+    "• leukoerythroblastic"
+   ]
+  },
+  {
+   "id": "in_inv_0_0",
+   "x": 45,
+   "y": 688,
+   "w": 226,
+   "h": 170,
+   "kind": "in_t",
+   "title": "CBC + differential, film",
+   "lines": [
+    "• C-reactive protein (CRP)"
+   ]
+  },
+  {
+   "id": "ir_inv_0_0",
+   "x": 283,
+   "y": 688,
+   "w": 226,
+   "h": 170,
+   "kind": "ir_t",
+   "title": "Iron studies",
+   "lines": [
+    "if the anemia is microcytic"
+   ]
+  },
+  {
+   "id": "he_inv_0_0",
+   "x": 521,
+   "y": 688,
+   "w": 226,
+   "h": 170,
+   "kind": "he_t",
+   "title": "Hemolytic screen",
+   "lines": [
+    "• total bilirubin, reticulocytes",
+    "• haptoglobin, direct antibody test"
+   ]
+  },
+  {
+   "id": "et_inv_0_0",
+   "x": 787,
+   "y": 688,
+   "w": 226,
+   "h": 170,
+   "kind": "et_t",
+   "title": "Platelets ≥ 450 + ALL 3 (or 1 + 2 + a minor)",
+   "lines": [
+    "1 · marrow: big, hyperlobulated megakaryocytes",
+    "2 · not CML, polycythemia vera (PV), PMF or myelodysplastic syndrome",
+    "3 · JAK2, CALR or MPL mutation"
+   ]
+  },
+  {
+   "id": "mf_inv_0_0",
+   "x": 1025,
+   "y": 688,
+   "w": 226,
+   "h": 170,
+   "kind": "mf_t",
+   "title": "ALL 3 major + ≥ 1 minor",
+   "lines": [
+    "1 · marrow: atypical megakaryocytes + fibrosis grade 2–3",
+    "2 · JAK2, CALR or MPL (or other clonal marker)",
+    "3 · not another myeloid neoplasm"
+   ]
+  },
+  {
+   "id": "in_tx_0_0",
+   "x": 45,
+   "y": 898,
+   "w": 226,
+   "h": 282,
+   "kind": "ok",
+   "title": "Treat the cause",
+   "lines": [
+    "e.g. antibiotics for infection"
+   ]
+  },
+  {
+   "id": "ir_tx_0_0",
+   "x": 283,
+   "y": 898,
+   "w": 226,
+   "h": 282,
+   "kind": "ok",
+   "title": "Iron for iron deficiency",
+   "lines": []
+  },
+  {
+   "id": "he_tx_0_0",
+   "x": 521,
+   "y": 898,
+   "w": 226,
+   "h": 282,
+   "kind": "ok",
+   "title": "Treat the cause",
+   "lines": []
+  },
+  {
+   "id": "et_tx_0_0",
+   "x": 787,
+   "y": 898,
+   "w": 226,
+   "h": 282,
+   "kind": "ok",
+   "title": "Treated: life expectancy close to normal",
+   "lines": []
+  },
+  {
+   "id": "mf_tx_0_0",
+   "x": 1025,
+   "y": 898,
+   "w": 226,
+   "h": 62,
+   "kind": "ok",
+   "title": "Set individual goals up front, revisit",
+   "lines": []
+  },
+  {
+   "id": "mf_tx_1_0",
+   "x": 1025,
+   "y": 982,
+   "w": 226,
+   "h": 114,
+   "kind": "ok",
+   "title": "Symptoms",
+   "lines": [
+    "• transfusion, steroids, hydroxyurea, erythropoietin (EPO)",
+    "• ruxolitinib (JAK inhibitor)"
+   ]
+  },
+  {
+   "id": "mf_tx_2_0",
+   "x": 1025,
+   "y": 1118,
+   "w": 226,
+   "h": 62,
+   "kind": "warn",
+   "title": "CURE: allogeneic stem cell transplant",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_r",
+   "path": "M648.0 106V131H396.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_c",
+   "path": "M648.0 106V131H1019.0V156"
+  },
+  {
+   "from": "mf_clue_0_0",
+   "to": "mf_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "mf_tx_0_0",
+   "to": "mf_tx_1_0"
+  },
+  {
+   "from": "mf_tx_1_0",
+   "to": "mf_tx_2_0"
+  },
+  {
+   "from": "in_head_0_0",
+   "to": "in_clue_0_0"
+  },
+  {
+   "from": "in_clue_0_0",
+   "to": "in_inv_0_0"
+  },
+  {
+   "from": "in_inv_0_0",
+   "to": "in_tx_0_0"
+  },
+  {
+   "from": "g_r",
+   "to": "in_head_0_0",
+   "from_dx": -238
+  },
+  {
+   "from": "ir_head_0_0",
+   "to": "ir_clue_0_0"
+  },
+  {
+   "from": "ir_clue_0_0",
+   "to": "ir_inv_0_0"
+  },
+  {
+   "from": "ir_inv_0_0",
+   "to": "ir_tx_0_0"
+  },
+  {
+   "from": "g_r",
+   "to": "ir_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "he_head_0_0",
+   "to": "he_clue_0_0"
+  },
+  {
+   "from": "he_clue_0_0",
+   "to": "he_inv_0_0"
+  },
+  {
+   "from": "he_inv_0_0",
+   "to": "he_tx_0_0"
+  },
+  {
+   "from": "g_r",
+   "to": "he_head_0_0",
+   "from_dx": 238
+  },
+  {
+   "from": "et_head_0_0",
+   "to": "et_clue_0_0"
+  },
+  {
+   "from": "et_clue_0_0",
+   "to": "et_inv_0_0"
+  },
+  {
+   "from": "et_inv_0_0",
+   "to": "et_tx_0_0"
+  },
+  {
+   "from": "g_c",
+   "to": "et_head_0_0",
+   "from_dx": -119,
+   "label": "platelets alone",
+   "label_at": [
+    900.0,
+    274
+   ]
+  },
+  {
+   "from": "mf_head_0_0",
+   "to": "mf_clue_0_0"
+  },
+  {
+   "from": "mf_clue_1_0",
+   "to": "mf_inv_0_0"
+  },
+  {
+   "from": "mf_inv_0_0",
+   "to": "mf_tx_0_0"
+  },
+  {
+   "from": "g_c",
+   "to": "mf_head_0_0",
+   "from_dx": 119,
+   "label": "RBC ↓ · teardrops",
+   "label_at": [
+    1138.0,
+    274
+   ]
+  }
+ ],
+ "panels": []
+}

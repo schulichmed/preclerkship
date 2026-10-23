@@ -1,0 +1,515 @@
+{
+ "name": "chronic kidney disease overview",
+ "width": 1104,
+ "title": "Chronic kidney disease decision chart: the definition and stages, then four jobs side by side: slow the decline (blood pressure targets by diabetes status, ACE inhibitor or ARB, glycemic target), prevent superimposed injury, treat the complications, and plan renal replacement early",
+ "kinds": {
+  "slow_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "slow_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "slow_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "prot_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "prot_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "prot_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "comp_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "comp_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "comp_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "rrt_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rrt_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "rrt_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 324,
+   "w": 262,
+   "h": 620,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 304,
+   "y": 324,
+   "w": 262,
+   "h": 620,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 568,
+   "y": 324,
+   "w": 262,
+   "h": 620,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 832,
+   "y": 324,
+   "w": 262,
+   "h": 620,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 432,
+   "h": 196,
+   "text": "AIM"
+  },
+  {
+   "x": 23,
+   "y": 668,
+   "h": 268,
+   "text": "DO"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 187,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Chronic kidney disease (CKD): is it CKD, and how do you SLOW it?",
+   "lines": [
+    "kidney DAMAGE (protein or blood in the urine) or estimated glomerular filtration rate (eGFR) < 60 · for ≥ 3 MONTHS · not on dialysis or transplant",
+    "causes: #1 diabetes · #2 hypertension · #3 glomerulonephritis · polycystic kidney disease (genetic)",
+    "after 40, GFR falls 0.7–1 mL/min a year: judge against age"
+   ]
+  },
+  {
+   "id": "g",
+   "x": 45,
+   "y": 174,
+   "w": 1044,
+   "h": 78,
+   "kind": "plain",
+   "title": "STAGE it by GFR, % of normal",
+   "lines": [
+    "1: > 90 · 2: 60–89 · 3: 30–59 · 4: 15–29 · 5: < 15 = KIDNEY FAILURE",
+    "below ~25%: POINT OF NO RETURN, it keeps falling even once the insult is gone"
+   ]
+  },
+  {
+   "id": "slow_head_0_0",
+   "x": 45,
+   "y": 332,
+   "w": 252,
+   "h": 60,
+   "kind": "slow_h",
+   "title": "1 · SLOW the decline",
+   "lines": [
+    "keep glomerular pressure LOW"
+   ]
+  },
+  {
+   "id": "prot_head_0_0",
+   "x": 309,
+   "y": 332,
+   "w": 252,
+   "h": 60,
+   "kind": "prot_h",
+   "title": "2 · PREVENT a second injury",
+   "lines": []
+  },
+  {
+   "id": "comp_head_0_0",
+   "x": 573,
+   "y": 332,
+   "w": 252,
+   "h": 60,
+   "kind": "comp_h",
+   "title": "3 · TREAT what it causes",
+   "lines": []
+  },
+  {
+   "id": "rrt_head_0_0",
+   "x": 837,
+   "y": 332,
+   "w": 252,
+   "h": 60,
+   "kind": "rrt_h",
+   "title": "4 · PLAN renal replacement",
+   "lines": [
+    "prevents wasting (cachexia)"
+   ]
+  },
+  {
+   "id": "slow_aim_0_0",
+   "x": 45,
+   "y": 432,
+   "w": 252,
+   "h": 78,
+   "kind": "slow_t",
+   "title": "Blood pressure target",
+   "lines": []
+  },
+  {
+   "id": "slow_aim_1_0",
+   "x": 45.0,
+   "y": 532,
+   "w": 121.0,
+   "h": 96,
+   "kind": "slow_w",
+   "title": "NO diabetes",
+   "lines": [
+    "< 140/80"
+   ]
+  },
+  {
+   "id": "slow_aim_1_1",
+   "x": 176.0,
+   "y": 532,
+   "w": 121.0,
+   "h": 96,
+   "kind": "slow_w",
+   "title": "DIABETES",
+   "lines": [
+    "< 130/80"
+   ]
+  },
+  {
+   "id": "prot_aim_0_0",
+   "x": 309,
+   "y": 432,
+   "w": 252,
+   "h": 196,
+   "kind": "prot_t",
+   "title": "Nothing ON TOP of the CKD",
+   "lines": []
+  },
+  {
+   "id": "comp_aim_0_0",
+   "x": 573,
+   "y": 432,
+   "w": 252,
+   "h": 96,
+   "kind": "comp_t",
+   "title": "Fluid + electrolytes",
+   "lines": [
+    "• can't clear water: Na ↓, K ↑",
+    "• Na kept: heart failure, lung edema, arrhythmia"
+   ]
+  },
+  {
+   "id": "comp_aim_1_0",
+   "x": 573,
+   "y": 550,
+   "w": 252,
+   "h": 78,
+   "kind": "comp_t",
+   "title": "Blood + acid",
+   "lines": [
+    "• ANEMIA: erythropoietin ↓",
+    "• METABOLIC ACIDOSIS"
+   ]
+  },
+  {
+   "id": "rrt_aim_0_0",
+   "x": 837,
+   "y": 432,
+   "w": 252,
+   "h": 78,
+   "kind": "rrt_t",
+   "title": "START PLANNING EARLY",
+   "lines": [
+    "transplant or dialysis takes time to set up"
+   ]
+  },
+  {
+   "id": "rrt_aim_1_0",
+   "x": 837,
+   "y": 532,
+   "w": 252,
+   "h": 96,
+   "kind": "rrt_w",
+   "title": "Options",
+   "lines": [
+    "• transplant",
+    "• hemodialysis",
+    "• peritoneal dialysis"
+   ]
+  },
+  {
+   "id": "slow_do_0_0",
+   "x": 45,
+   "y": 668,
+   "w": 252,
+   "h": 74,
+   "kind": "ok",
+   "title": "1 · ACE inhibitor or ARB",
+   "lines": [
+    "angiotensin receptor blocker"
+   ]
+  },
+  {
+   "id": "slow_do_1_0",
+   "x": 45,
+   "y": 764,
+   "w": 252,
+   "h": 74,
+   "kind": "ok",
+   "title": "2 · Less protein",
+   "lines": [
+    "if a heavy red-meat eater"
+   ]
+  },
+  {
+   "id": "slow_do_2_0",
+   "x": 45,
+   "y": 860,
+   "w": 252,
+   "h": 76,
+   "kind": "ok",
+   "title": "3 · Glycated hemoglobin (HbA1c) < 7%",
+   "lines": []
+  },
+  {
+   "id": "prot_do_0_0",
+   "x": 309,
+   "y": 668,
+   "w": 252,
+   "h": 132,
+   "kind": "bad",
+   "title": "AVOID",
+   "lines": [
+    "• anti-inflammatories (NSAIDs)",
+    "• aminoglycosides",
+    "• radiographic contrast",
+    "• pregnancy: volume ↑ → glomerular hypertension"
+   ]
+  },
+  {
+   "id": "prot_do_1_0",
+   "x": 309,
+   "y": 822,
+   "w": 252,
+   "h": 114,
+   "kind": "warn",
+   "title": "Act EARLY on",
+   "lines": [
+    "• vomiting or diarrhea: seek care",
+    "• urinary infection, pyelonephritis",
+    "• obstruction: manage the prostate early"
+   ]
+  },
+  {
+   "id": "comp_do_0_0",
+   "x": 573,
+   "y": 668,
+   "w": 252,
+   "h": 106,
+   "kind": "comp_w",
+   "title": "Bone: PO4 ↑ + Ca ↓ → hyperparathyroidism",
+   "lines": []
+  },
+  {
+   "id": "comp_do_1_0",
+   "x": 573,
+   "y": 796,
+   "w": 252,
+   "h": 140,
+   "kind": "ok",
+   "title": "Treat the bone disease",
+   "lines": [
+    "• low-phosphate diet",
+    "• activated vitamin D",
+    "• calcium carbonate: binds phosphate"
+   ]
+  },
+  {
+   "id": "rrt_do_0_0",
+   "x": 837,
+   "y": 668,
+   "w": 252,
+   "h": 268,
+   "kind": "bad",
+   "title": "Dialysis when",
+   "lines": [
+    "• AEIOU: see ACUTE KIDNEY INJURY chart",
+    "• in CKD also uremic ENCEPHALOPATHY, PERICARDITIS"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g",
+   "path": "M567.0 124V149H567.0V174"
+  },
+  {
+   "from": "slow_aim_0_0",
+   "to": "slow_aim_1_0",
+   "from_dx": -65.5
+  },
+  {
+   "from": "slow_aim_0_0",
+   "to": "slow_aim_1_1",
+   "from_dx": 65.5
+  },
+  {
+   "from": "comp_aim_0_0",
+   "to": "comp_aim_1_0"
+  },
+  {
+   "from": "rrt_aim_0_0",
+   "to": "rrt_aim_1_0"
+  },
+  {
+   "from": "slow_do_0_0",
+   "to": "slow_do_1_0"
+  },
+  {
+   "from": "slow_do_1_0",
+   "to": "slow_do_2_0"
+  },
+  {
+   "from": "prot_do_0_0",
+   "to": "prot_do_1_0"
+  },
+  {
+   "from": "comp_do_0_0",
+   "to": "comp_do_1_0"
+  },
+  {
+   "from": "slow_head_0_0",
+   "to": "slow_aim_0_0"
+  },
+  {
+   "from": "slow_aim_1_0",
+   "to": "slow_do_0_0",
+   "to_dx": -65.5
+  },
+  {
+   "from": "slow_aim_1_1",
+   "to": "slow_do_0_0",
+   "to_dx": 65.5
+  },
+  {
+   "from": "g",
+   "to": "slow_head_0_0",
+   "from_dx": -396,
+   "label": "every patient",
+   "label_at": [
+    171.0,
+    292
+   ]
+  },
+  {
+   "from": "prot_head_0_0",
+   "to": "prot_aim_0_0"
+  },
+  {
+   "from": "prot_aim_0_0",
+   "to": "prot_do_0_0"
+  },
+  {
+   "from": "g",
+   "to": "prot_head_0_0",
+   "from_dx": -132,
+   "label": "every patient",
+   "label_at": [
+    435.0,
+    292
+   ]
+  },
+  {
+   "from": "comp_head_0_0",
+   "to": "comp_aim_0_0"
+  },
+  {
+   "from": "comp_aim_1_0",
+   "to": "comp_do_0_0"
+  },
+  {
+   "from": "g",
+   "to": "comp_head_0_0",
+   "from_dx": 132,
+   "label": "as GFR falls",
+   "label_at": [
+    699.0,
+    292
+   ]
+  },
+  {
+   "from": "rrt_head_0_0",
+   "to": "rrt_aim_0_0"
+  },
+  {
+   "from": "rrt_aim_1_0",
+   "to": "rrt_do_0_0"
+  },
+  {
+   "from": "g",
+   "to": "rrt_head_0_0",
+   "from_dx": 396,
+   "label": "stage 5 coming",
+   "label_at": [
+    963.0,
+    292
+   ]
+  }
+ ],
+ "panels": []
+}

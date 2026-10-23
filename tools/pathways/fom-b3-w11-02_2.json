@@ -1,0 +1,693 @@
+{
+ "name": "leukocytosis overview",
+ "width": 1294,
+ "title": "High white count sorted by which cell line is up, how mature the cells are and whether they are clonal: blasts on the film (acute leukemia, call hematology today), reactive or primary neutrophilia, reactive or primary lymphocytosis, with the clues, confirming tests and next step for each",
+ "kinds": {
+  "ac_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ac_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ac_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "rn_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rn_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "rn_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "mp_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mp_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "mp_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "rl_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rl_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "rl_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "cl_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cl_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cl_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 308,
+   "w": 236,
+   "h": 894,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 306,
+   "y": 308,
+   "w": 236,
+   "h": 894,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 544,
+   "y": 308,
+   "w": 236,
+   "h": 894,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 810,
+   "y": 308,
+   "w": 236,
+   "h": 894,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1048,
+   "y": 308,
+   "w": 236,
+   "h": 894,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 472,
+   "h": 268,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 780,
+   "h": 224,
+   "text": "CONFIRM"
+  },
+  {
+   "x": 23,
+   "y": 1044,
+   "h": 150,
+   "text": "NEXT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 282,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "White count (WBC) above 10 × 10⁹/L: WHICH cell line, how MATURE, and is it CLONAL?",
+   "lines": [
+    "complete blood count (CBC) + differential + blood film",
+    "exam: vitals · spleen · lymph nodes · gingival hyperplasia",
+    "EOSINOPHILS (> 0.5 × 10⁹/L), BASOPHILS or MONOCYTES up instead: benign causes first (drugs, allergy, parasites, chronic infection, autoimmune)"
+   ]
+  },
+  {
+   "id": "g_bl",
+   "x": 45,
+   "y": 174,
+   "w": 226,
+   "h": 62,
+   "kind": "plain",
+   "title": "IMMATURE: BLASTS on the film",
+   "lines": []
+  },
+  {
+   "id": "g_ne",
+   "x": 311,
+   "y": 174,
+   "w": 464,
+   "h": 62,
+   "kind": "plain",
+   "title": "Mature NEUTROPHILS (myeloid)",
+   "lines": [
+    "the FILM separates reactive from a marrow neoplasm"
+   ]
+  },
+  {
+   "id": "g_ly",
+   "x": 815,
+   "y": 174,
+   "w": 464,
+   "h": 62,
+   "kind": "plain",
+   "title": "Mature LYMPHOCYTES (lymphoid)",
+   "lines": [
+    "AGE matters: chronic lymphocytic leukemia is NOT common in the young"
+   ]
+  },
+  {
+   "id": "ac_head_0_0",
+   "x": 45,
+   "y": 316,
+   "w": 226,
+   "h": 116,
+   "kind": "ac_h",
+   "title": "Acute leukemia",
+   "lines": [
+    "progresses very QUICKLY"
+   ]
+  },
+  {
+   "id": "rn_head_0_0",
+   "x": 311,
+   "y": 316,
+   "w": 226,
+   "h": 116,
+   "kind": "rn_h",
+   "title": "Reactive neutrophilia",
+   "lines": [
+    "marrow normal: something drives it"
+   ]
+  },
+  {
+   "id": "mp_head_0_0",
+   "x": 549,
+   "y": 316,
+   "w": 226,
+   "h": 116,
+   "kind": "mp_h",
+   "title": "Primary: myeloproliferative neoplasm (MPN)",
+   "lines": [
+    "clonal marrow: chronic myeloid leukemia (CML), polycythemia vera (PV), others"
+   ]
+  },
+  {
+   "id": "rl_head_0_0",
+   "x": 815,
+   "y": 316,
+   "w": 226,
+   "h": 116,
+   "kind": "rl_h",
+   "title": "Reactive lymphocytosis",
+   "lines": [
+    "by far the most common cause: INFECTION"
+   ]
+  },
+  {
+   "id": "cl_head_0_0",
+   "x": 1053,
+   "y": 316,
+   "w": 226,
+   "h": 116,
+   "kind": "cl_h",
+   "title": "Primary: CLL or lymphoproliferative disorder",
+   "lines": [
+    "clonal MATURE lymphocytes"
+   ]
+  },
+  {
+   "id": "ac_clue_0_0",
+   "x": 45,
+   "y": 472,
+   "w": 226,
+   "h": 268,
+   "kind": "ac_t",
+   "title": "Blasts in the blood",
+   "lines": [
+    "• acute myeloid (AML) or lymphoblastic (ALL)",
+    "• YOUNG patient → suspect ALL"
+   ]
+  },
+  {
+   "id": "rn_clue_0_0",
+   "x": 311,
+   "y": 472,
+   "w": 226,
+   "h": 114,
+   "kind": "rn_t",
+   "title": "Film: REACTIVE",
+   "lines": [
+    "• NO blasts or promyelocytes",
+    "• toxic granules, toxic vacuoles, Döhle bodies",
+    "• left shift (infection)"
+   ]
+  },
+  {
+   "id": "rn_clue_1_0",
+   "x": 311,
+   "y": 608,
+   "w": 226,
+   "h": 132,
+   "kind": "rn_w",
+   "title": "Causes",
+   "lines": [
+    "• infection, burns, heart attack, trauma, autoimmune",
+    "• steroids, lithium, smoking",
+    "• stress, exercise (demargination), hyposplenism"
+   ]
+  },
+  {
+   "id": "mp_clue_0_0",
+   "x": 549,
+   "y": 472,
+   "w": 226,
+   "h": 132,
+   "kind": "mp_t",
+   "title": "Film: favours NEOPLASM",
+   "lines": [
+    "• immature myeloid cells",
+    "• WBC > 30 × 10⁹/L",
+    "• ↑ eosinophils and/or basophils"
+   ]
+  },
+  {
+   "id": "mp_clue_1_0",
+   "x": 549,
+   "y": 626,
+   "w": 226,
+   "h": 114,
+   "kind": "mp_w",
+   "title": "History + exam",
+   "lines": [
+    "• pruritus, early satiety (PV)",
+    "• splenomegaly"
+   ]
+  },
+  {
+   "id": "rl_clue_0_0",
+   "x": 815,
+   "y": 472,
+   "w": 226,
+   "h": 150,
+   "kind": "rl_t",
+   "title": "Viral picture",
+   "lines": [
+    "• flu-like illness, sick contacts",
+    "• Epstein-Barr virus (EBV) mononucleosis in the young",
+    "• reactive lymphocytes wrap around red cells"
+   ]
+  },
+  {
+   "id": "rl_clue_1_0",
+   "x": 815,
+   "y": 644,
+   "w": 226,
+   "h": 96,
+   "kind": "rl_w",
+   "title": "Also",
+   "lines": [
+    "inflammation, drug or toxin, other cancers"
+   ]
+  },
+  {
+   "id": "cl_clue_0_0",
+   "x": 1053,
+   "y": 472,
+   "w": 226,
+   "h": 268,
+   "kind": "cl_t",
+   "title": "No secondary cause",
+   "lines": [
+    "• OLDER patient",
+    "• persists past 4–6 weeks",
+    "• lymphadenopathy, splenomegaly"
+   ]
+  },
+  {
+   "id": "ac_inv_0_0",
+   "x": 45,
+   "y": 780,
+   "w": 226,
+   "h": 224,
+   "kind": "ac_t",
+   "title": "Check for complications",
+   "lines": [
+    "• disseminated intravascular coagulation (DIC)",
+    "• leukostasis: headache, dyspnea, chest pain",
+    "• tumour lysis, febrile neutropenia, bleeding"
+   ]
+  },
+  {
+   "id": "rn_inv_0_0",
+   "x": 311,
+   "y": 780,
+   "w": 226,
+   "h": 137,
+   "kind": "rn_t",
+   "title": "Rule out SECONDARY causes",
+   "lines": [
+    "• infection workup, chest X-ray",
+    "• abdominal ultrasound, metabolic + autoimmune workup",
+    "• age-appropriate cancer screening"
+   ]
+  },
+  {
+   "id": "rn_inv_1_0",
+   "x": 311,
+   "y": 939,
+   "w": 226,
+   "h": 65,
+   "kind": "rn_w",
+   "title": "Cytogenetics + molecular NEGATIVE",
+   "lines": []
+  },
+  {
+   "id": "mp_inv_0_0",
+   "x": 549,
+   "y": 780,
+   "w": 226,
+   "h": 224,
+   "kind": "mp_t",
+   "title": "No secondary cause: prove CLONALITY",
+   "lines": [
+    "1 · Philadelphia chromosome: karyotype, FISH t(9;22), BCR-ABL",
+    "2 · JAK2 · next-generation sequencing"
+   ]
+  },
+  {
+   "id": "rl_inv_0_0",
+   "x": 815,
+   "y": 780,
+   "w": 226,
+   "h": 42,
+   "kind": "rl_t",
+   "title": "1 · Monospot test (EBV)",
+   "lines": []
+  },
+  {
+   "id": "rl_inv_1_0",
+   "x": 815,
+   "y": 844,
+   "w": 226,
+   "h": 96,
+   "kind": "rl_w",
+   "title": "2 · Infection workup",
+   "lines": [
+    "cytomegalovirus (CMV), hepatitis B + C, HIV, tuberculosis (TB), toxoplasma"
+   ]
+  },
+  {
+   "id": "rl_inv_2_0",
+   "x": 815,
+   "y": 962,
+   "w": 226,
+   "h": 42,
+   "kind": "rl_w",
+   "title": "3 · REPEAT in 4–6 weeks",
+   "lines": []
+  },
+  {
+   "id": "cl_inv_0_0",
+   "x": 1053,
+   "y": 780,
+   "w": 226,
+   "h": 110,
+   "kind": "cl_t",
+   "title": "1 · Film: MATURE lymphocytes",
+   "lines": [
+    "immature (blasts) → ALL instead"
+   ]
+  },
+  {
+   "id": "cl_inv_1_0",
+   "x": 1053,
+   "y": 912,
+   "w": 226,
+   "h": 92,
+   "kind": "cl_w",
+   "title": "2 · Flow cytometry: CLONAL?",
+   "lines": []
+  },
+  {
+   "id": "ac_tx_0_0",
+   "x": 45,
+   "y": 1044,
+   "w": 226,
+   "h": 150,
+   "kind": "bad",
+   "title": "Call the on-call hematologist TODAY",
+   "lines": [
+    "type + treatment: LEUKEMIA chart"
+   ]
+  },
+  {
+   "id": "rn_tx_0_0",
+   "x": 311,
+   "y": 1044,
+   "w": 226,
+   "h": 150,
+   "kind": "ok",
+   "title": "Treat the cause",
+   "lines": []
+  },
+  {
+   "id": "mp_tx_0_0",
+   "x": 549,
+   "y": 1044,
+   "w": 226,
+   "h": 150,
+   "kind": "mp_w",
+   "title": "Where next",
+   "lines": [
+    "• Philadelphia + → CML: LEUKEMIA chart",
+    "• high hemoglobin → ERYTHROCYTOSIS chart",
+    "• high platelets, fibrosis → THROMBOCYTOSIS chart"
+   ]
+  },
+  {
+   "id": "rl_tx_0_0",
+   "x": 815,
+   "y": 1044,
+   "w": 226,
+   "h": 150,
+   "kind": "ok",
+   "title": "Most clear with time",
+   "lines": [
+    "still there at 4–6 weeks → think lymphoproliferative"
+   ]
+  },
+  {
+   "id": "cl_tx_0_0",
+   "x": 1053,
+   "y": 1044,
+   "w": 226,
+   "h": 150,
+   "kind": "cl_w",
+   "title": "Chronic lymphocytic leukemia (CLL): LEUKEMIA chart",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_bl",
+   "path": "M662.0 124V149H158.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_ne",
+   "path": "M662.0 124V149H543.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_ly",
+   "path": "M662.0 124V149H1047.0V174"
+  },
+  {
+   "from": "rn_clue_0_0",
+   "to": "rn_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "mp_clue_0_0",
+   "to": "mp_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "rl_clue_0_0",
+   "to": "rl_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "rn_inv_0_0",
+   "to": "rn_inv_1_0"
+  },
+  {
+   "from": "rl_inv_0_0",
+   "to": "rl_inv_1_0"
+  },
+  {
+   "from": "rl_inv_1_0",
+   "to": "rl_inv_2_0"
+  },
+  {
+   "from": "cl_inv_0_0",
+   "to": "cl_inv_1_0"
+  },
+  {
+   "from": "ac_head_0_0",
+   "to": "ac_clue_0_0"
+  },
+  {
+   "from": "ac_clue_0_0",
+   "to": "ac_inv_0_0"
+  },
+  {
+   "from": "ac_inv_0_0",
+   "to": "ac_tx_0_0"
+  },
+  {
+   "from": "g_bl",
+   "to": "ac_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "rn_head_0_0",
+   "to": "rn_clue_0_0"
+  },
+  {
+   "from": "rn_clue_1_0",
+   "to": "rn_inv_0_0"
+  },
+  {
+   "from": "rn_inv_1_0",
+   "to": "rn_tx_0_0"
+  },
+  {
+   "from": "g_ne",
+   "to": "rn_head_0_0",
+   "from_dx": -119,
+   "label": "toxic granules",
+   "label_at": [
+    424.0,
+    276
+   ]
+  },
+  {
+   "from": "mp_head_0_0",
+   "to": "mp_clue_0_0"
+  },
+  {
+   "from": "mp_clue_1_0",
+   "to": "mp_inv_0_0"
+  },
+  {
+   "from": "mp_inv_0_0",
+   "to": "mp_tx_0_0"
+  },
+  {
+   "from": "g_ne",
+   "to": "mp_head_0_0",
+   "from_dx": 119,
+   "label": "WBC > 30",
+   "label_at": [
+    662.0,
+    276
+   ]
+  },
+  {
+   "from": "rl_head_0_0",
+   "to": "rl_clue_0_0"
+  },
+  {
+   "from": "rl_clue_1_0",
+   "to": "rl_inv_0_0"
+  },
+  {
+   "from": "rl_inv_2_0",
+   "to": "rl_tx_0_0"
+  },
+  {
+   "from": "g_ly",
+   "to": "rl_head_0_0",
+   "from_dx": -119,
+   "label": "young · viral",
+   "label_at": [
+    928.0,
+    276
+   ]
+  },
+  {
+   "from": "cl_head_0_0",
+   "to": "cl_clue_0_0"
+  },
+  {
+   "from": "cl_clue_0_0",
+   "to": "cl_inv_0_0"
+  },
+  {
+   "from": "cl_inv_1_0",
+   "to": "cl_tx_0_0"
+  },
+  {
+   "from": "g_ly",
+   "to": "cl_head_0_0",
+   "from_dx": 119,
+   "label": "OLDER · persists",
+   "label_at": [
+    1166.0,
+    276
+   ]
+  }
+ ],
+ "panels": []
+}

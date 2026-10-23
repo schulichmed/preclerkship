@@ -1,0 +1,26 @@
+{
+ "name": "abnormal labour pathway 5",
+ "title": "Postpartum hemorrhage management: resuscitate and get help, bimanual exam and fundal massage, look for tears if the uterus is firm or give uterotonic drugs if it is soft, tranexamic acid for both, then escalate if still bleeding",
+ "nodes": [
+  {"id": "A", "x": 250, "y": 10, "w": 420, "kind": "plain", "title": "Bleeding after birth", "lines": [">500 mL vaginal · >1000 mL cesarean", "or ANY loss with instability"]},
+  {"id": "B", "x": 200, "y": 126, "w": 520, "kind": "plain", "title": "Airway, breathing, circulation · resuscitate · GET HELP", "lines": []},
+  {"id": "C", "x": 270, "y": 212, "w": 380, "kind": "plain", "title": "Bimanual exam + fundal massage", "lines": ["empty the bladder"]},
+  {"id": "D", "x": 345, "y": 316, "w": 230, "kind": "plain", "title": "Is the uterus firm?", "lines": []},
+  {"id": "E", "x": 70, "y": 420, "w": 300, "kind": "anti", "title": "Look for vaginal / cervical tears", "lines": []},
+  {"id": "F", "x": 550, "y": 420, "w": 300, "kind": "ana", "title": "Uterotonic drugs", "lines": []},
+  {"id": "G", "x": 345, "y": 524, "w": 230, "kind": "plain", "title": "Tranexamic acid", "lines": []},
+  {"id": "H", "x": 345, "y": 616, "w": 230, "kind": "plain", "title": "Still bleeding?", "lines": []},
+  {"id": "I", "x": 160, "y": 716, "w": 600, "kind": "bad", "title": "Think DIC · balloon tamponade or packing", "lines": ["embolization · compression sutures · artery ligation · hysterectomy", "GET MORE HELP"]}
+ ],
+ "edges": [
+  {"from": "A", "to": "B"},
+  {"from": "B", "to": "C"},
+  {"from": "C", "to": "D"},
+  {"from": "D", "to": "E", "from_dx": -60, "label": "firm", "label_at": [232, 382]},
+  {"from": "D", "to": "F", "from_dx": 60, "label": "soft (atonic)", "label_at": [722, 382]},
+  {"from": "E", "to": "G", "to_dx": -50},
+  {"from": "F", "to": "G", "to_dx": 50},
+  {"from": "G", "to": "H"},
+  {"from": "H", "to": "I", "label": "yes", "label_at": [482, 696]}
+ ]
+}

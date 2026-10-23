@@ -1,0 +1,592 @@
+{
+ "name": "nutritional support overview",
+ "width": 1152,
+ "title": "Nutritional support: if the gut works, feed into it, by nasal tube for under 3 weeks or by gastrostomy or jejunostomy beyond 6 weeks, with a formula matched to the gut; if it does not, parenteral nutrition, peripheral (mostly fat) or central (mostly glucose), started only after 7 days without food (5 if malnourished); watch any route for refeeding syndrome",
+ "kinds": {
+  "st_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "st_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "st_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "lt_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "lt_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "lt_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "pn_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pn_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "pn_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "rf_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rf_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "rf_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 410,
+   "w": 260,
+   "h": 430,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 302,
+   "y": 410,
+   "w": 260,
+   "h": 430,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 592,
+   "y": 410,
+   "w": 260,
+   "h": 702,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 882,
+   "y": 410,
+   "w": 260,
+   "h": 702,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 518,
+   "h": 160,
+   "text": "WHO"
+  },
+  {
+   "x": 23,
+   "y": 718,
+   "h": 114,
+   "text": "HOW · WATCH"
+  },
+  {
+   "x": 23,
+   "y": 872,
+   "h": 232,
+   "text": "WHAT GOES IN"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 211,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A patient who cannot eat enough: does the GUT WORK? If it works, USE it",
+   "lines": [
+    "malnutrition is common in medical inpatients: mostly PROTEIN loss (low albumin, low pre-albumin)"
+   ]
+  },
+  {
+   "id": "g_ent",
+   "x": 45,
+   "y": 120,
+   "w": 512,
+   "h": 80,
+   "kind": "plain",
+   "title": "GUT WORKS: ENTERAL feeding",
+   "lines": [
+    "HOW LONG will it be needed?"
+   ]
+  },
+  {
+   "id": "g_par",
+   "x": 597,
+   "y": 120,
+   "w": 250,
+   "h": 80,
+   "kind": "plain",
+   "title": "GUT DOES NOT WORK: PARENTERAL",
+   "lines": [
+    "into a vein → superior vena cava"
+   ]
+  },
+  {
+   "id": "g_ref",
+   "x": 887,
+   "y": 120,
+   "w": 250,
+   "h": 80,
+   "kind": "plain",
+   "title": "ANY route, after STARVATION",
+   "lines": [
+    "food back too fast"
+   ]
+  },
+  {
+   "id": "t_npo",
+   "x": 597,
+   "y": 240,
+   "w": 250,
+   "h": 98,
+   "kind": "plain",
+   "title": "Start only after nothing by mouth (NPO) for",
+   "lines": [
+    "• ≥ 7 days if well nourished",
+    "• ≥ 5 days if malnourished"
+   ]
+  },
+  {
+   "id": "st_head_0_0",
+   "x": 45,
+   "y": 418,
+   "w": 250,
+   "h": 60,
+   "kind": "st_h",
+   "title": "Nasal tube",
+   "lines": [
+    "short term"
+   ]
+  },
+  {
+   "id": "lt_head_0_0",
+   "x": 307,
+   "y": 418,
+   "w": 250,
+   "h": 60,
+   "kind": "lt_h",
+   "title": "Percutaneous tube",
+   "lines": [
+    "long term"
+   ]
+  },
+  {
+   "id": "pn_head_0_0",
+   "x": 597,
+   "y": 418,
+   "w": 250,
+   "h": 60,
+   "kind": "pn_h",
+   "title": "Parenteral nutrition",
+   "lines": []
+  },
+  {
+   "id": "rf_head_0_0",
+   "x": 887,
+   "y": 418,
+   "w": 250,
+   "h": 60,
+   "kind": "rf_h",
+   "title": "Refeeding syndrome",
+   "lines": []
+  },
+  {
+   "id": "st_who_0_0",
+   "x": 45,
+   "y": 518,
+   "w": 250,
+   "h": 69,
+   "kind": "st_t",
+   "title": "Nasogastric (NG)",
+   "lines": [
+    "e.g. stroke, augmenting intake"
+   ]
+  },
+  {
+   "id": "st_who_1_0",
+   "x": 45,
+   "y": 609,
+   "w": 250,
+   "h": 69,
+   "kind": "st_t",
+   "title": "Nasojejunal or nasoduodenal",
+   "lines": [
+    "aspiration risk with oral or NG feeds"
+   ]
+  },
+  {
+   "id": "lt_who_0_0",
+   "x": 307,
+   "y": 518,
+   "w": 250,
+   "h": 60,
+   "kind": "lt_t",
+   "title": "Gastrostomy (G tube)",
+   "lines": [
+    "low aspiration risk"
+   ]
+  },
+  {
+   "id": "lt_who_1_0",
+   "x": 307,
+   "y": 600,
+   "w": 250,
+   "h": 78,
+   "kind": "lt_t",
+   "title": "Gastrojejunostomy",
+   "lines": [
+    "• aspiration risk",
+    "• continuous feeds 12–16 h a day"
+   ]
+  },
+  {
+   "id": "pn_who_0_0",
+   "x": 597,
+   "y": 518,
+   "w": 250,
+   "h": 160,
+   "kind": "pn_t",
+   "title": "Gut fails or falls short",
+   "lines": [
+    "• abnormal gut function",
+    "• enteral cannot meet needs",
+    "• cannot eat by 5–7 days"
+   ]
+  },
+  {
+   "id": "rf_who_0_0",
+   "x": 887,
+   "y": 518,
+   "w": 250,
+   "h": 160,
+   "kind": "rf_t",
+   "title": "At risk",
+   "lines": [
+    "• anorexia nervosa, chronic malnutrition, alcoholism",
+    "• massive weight loss, prolonged fasting"
+   ]
+  },
+  {
+   "id": "st_how_0_0",
+   "x": 45,
+   "y": 718,
+   "w": 250,
+   "h": 114,
+   "kind": "st_w",
+   "title": "Watch",
+   "lines": [
+    "• aspiration",
+    "• sinusitis, food aversion"
+   ]
+  },
+  {
+   "id": "lt_how_0_0",
+   "x": 307,
+   "y": 718,
+   "w": 250,
+   "h": 114,
+   "kind": "lt_w",
+   "title": "Watch",
+   "lines": [
+    "• insertion, bleeding, peritonitis",
+    "• pulled out, blocked"
+   ]
+  },
+  {
+   "id": "pn_how_0_0",
+   "x": 597,
+   "y": 718,
+   "w": 250,
+   "h": 114,
+   "kind": "bad",
+   "title": "Watch",
+   "lines": [
+    "• line: pneumothorax, bleeding, thrombosis, sepsis",
+    "• electrolytes, liver disease",
+    "• cost"
+   ]
+  },
+  {
+   "id": "rf_how_0_0",
+   "x": 887,
+   "y": 718,
+   "w": 250,
+   "h": 114,
+   "kind": "bad",
+   "title": "LOW PHOSPHATE",
+   "lines": [
+    "• low Mg2+, high glucose, fluid retention",
+    "• cardiac arrest"
+   ]
+  },
+  {
+   "id": "pn_feed_0_0",
+   "x": 597.0,
+   "y": 872,
+   "w": 120.0,
+   "h": 232,
+   "kind": "pn_w",
+   "title": "Peripheral parenteral nutrition (PPN)",
+   "lines": [
+    "mostly FAT + 10% glucose: low osmolarity"
+   ]
+  },
+  {
+   "id": "pn_feed_0_1",
+   "x": 727.0,
+   "y": 872,
+   "w": 120.0,
+   "h": 232,
+   "kind": "pn_w",
+   "title": "Total parenteral nutrition (TPN): central line",
+   "lines": [
+    "mostly 25% GLUCOSE"
+   ]
+  },
+  {
+   "id": "rf_feed_0_0",
+   "x": 887,
+   "y": 872,
+   "w": 250,
+   "h": 232,
+   "kind": "ok",
+   "title": "Prevent it",
+   "lines": [
+    "• LOW dextrose load",
+    "• aggressive IV electrolytes",
+    "• liberal fluids"
+   ]
+  },
+  {
+   "id": "span0_feed_0_0",
+   "x": 45.0,
+   "y": 872,
+   "w": 251.0,
+   "h": 78,
+   "kind": "plain",
+   "title": "Bolus",
+   "lines": [
+    "150–400 mL over minutes: normal GI tract"
+   ]
+  },
+  {
+   "id": "span0_feed_0_1",
+   "x": 306.0,
+   "y": 872,
+   "w": 251.0,
+   "h": 78,
+   "kind": "plain",
+   "title": "Continuous",
+   "lines": [
+    "over 8–24 h: best absorption"
+   ]
+  },
+  {
+   "id": "span0_feed_1_0",
+   "x": 45.0,
+   "y": 972,
+   "w": 251.0,
+   "h": 132,
+   "kind": "ok",
+   "title": "Formula for the gut",
+   "lines": [
+    "• elemental: inflammatory bowel disease, short bowel, pancreatic or bile salt loss",
+    "• semi-elemental: Crohn disease, pancreatitis"
+   ]
+  },
+  {
+   "id": "span0_feed_1_1",
+   "x": 306.0,
+   "y": 972,
+   "w": 251.0,
+   "h": 132,
+   "kind": "ok",
+   "title": "Formula for the need",
+   "lines": [
+    "• high nitrogen: burns, fistulae, sepsis",
+    "• nutrient dense: fluid restriction",
+    "• renal, diabetic, hepatic"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ent",
+   "path": "M591.0 70V95H301.0V120"
+  },
+  {
+   "from": "root",
+   "to": "g_par",
+   "path": "M591.0 70V95H722.0V120"
+  },
+  {
+   "from": "root",
+   "to": "g_ref",
+   "path": "M591.0 70V95H1012.0V120"
+  },
+  {
+   "from": "g_par",
+   "to": "t_npo",
+   "from_dx": 0
+  },
+  {
+   "from": "st_who_0_0",
+   "to": "st_who_1_0"
+  },
+  {
+   "from": "lt_who_0_0",
+   "to": "lt_who_1_0"
+  },
+  {
+   "from": "span0_feed_0_0",
+   "to": "span0_feed_1_0"
+  },
+  {
+   "from": "span0_feed_0_1",
+   "to": "span0_feed_1_1"
+  },
+  {
+   "from": "st_head_0_0",
+   "to": "st_who_0_0"
+  },
+  {
+   "from": "st_who_1_0",
+   "to": "st_how_0_0"
+  },
+  {
+   "from": "st_how_0_0",
+   "to": "span0_feed_0_0",
+   "to_dx": -0.5
+  },
+  {
+   "from": "g_ent",
+   "to": "st_head_0_0",
+   "from_dx": -131,
+   "label": "< 3 WEEKS",
+   "label_at": [
+    170.0,
+    378
+   ]
+  },
+  {
+   "from": "lt_head_0_0",
+   "to": "lt_who_0_0"
+  },
+  {
+   "from": "lt_who_1_0",
+   "to": "lt_how_0_0"
+  },
+  {
+   "from": "lt_how_0_0",
+   "to": "span0_feed_0_1",
+   "to_dx": 0.5
+  },
+  {
+   "from": "g_ent",
+   "to": "lt_head_0_0",
+   "from_dx": 131,
+   "label": "> 6 WEEKS",
+   "label_at": [
+    432.0,
+    378
+   ]
+  },
+  {
+   "from": "pn_head_0_0",
+   "to": "pn_who_0_0"
+  },
+  {
+   "from": "pn_who_0_0",
+   "to": "pn_how_0_0"
+  },
+  {
+   "from": "pn_how_0_0",
+   "to": "pn_feed_0_0",
+   "from_dx": -65.0
+  },
+  {
+   "from": "pn_how_0_0",
+   "to": "pn_feed_0_1",
+   "from_dx": 65.0
+  },
+  {
+   "from": "t_npo",
+   "to": "pn_head_0_0",
+   "from_dx": 0,
+   "label": "NPO long enough",
+   "label_at": [
+    722.0,
+    378
+   ]
+  },
+  {
+   "from": "rf_head_0_0",
+   "to": "rf_who_0_0"
+  },
+  {
+   "from": "rf_who_0_0",
+   "to": "rf_how_0_0"
+  },
+  {
+   "from": "rf_how_0_0",
+   "to": "rf_feed_0_0"
+  },
+  {
+   "from": "g_ref",
+   "to": "rf_head_0_0",
+   "from_dx": 0,
+   "label": "refeeding",
+   "label_at": [
+    1012.0,
+    378
+   ]
+  }
+ ],
+ "panels": []
+}

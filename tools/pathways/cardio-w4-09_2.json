@@ -1,0 +1,557 @@
+{
+ "name": "advanced heart failure overview",
+ "width": 1152,
+ "title": "Advanced (stage D) heart failure, flagged by I NEED HELP: refer to an advanced heart failure centre; a patient who wants advanced therapy and is advanced enough gets a transplant if there is no contraindication or a ventricular assist device as destination therapy if there is; inotropes are a bridge or palliation; palliative care should start early",
+ "kinds": {
+  "tx_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tx_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "tx_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "vad_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vad_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "vad_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ino_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ino_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ino_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "pal_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pal_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "pal_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 478,
+   "w": 260,
+   "h": 742,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 302,
+   "y": 478,
+   "w": 260,
+   "h": 742,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 592,
+   "y": 478,
+   "w": 260,
+   "h": 742,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 882,
+   "y": 478,
+   "w": 260,
+   "h": 742,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 604,
+   "h": 114,
+   "text": "WHO"
+  },
+  {
+   "x": 23,
+   "y": 758,
+   "h": 216,
+   "text": "WHAT IT INVOLVES"
+  },
+  {
+   "x": 23,
+   "y": 1014,
+   "h": 198,
+   "text": "WATCH FOR"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 211,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "COLD despite therapy: is it ADVANCED heart failure (HF), and which option FITS?",
+   "lines": [
+    "I NEED HELP: Inotropes · New York Heart Association (NYHA) III–IV or high B-type natriuretic peptide (BNP)",
+    "End-organ dysfunction · ejection fraction (EF) < 20% · Defibrillator shocks · ≥ 2 HF Hospitalizations in 12 months",
+    "Edema or escalating diuretics · Low systolic BP < 90 · Prognostic drugs cut back",
+    "→ refer to an advanced HF centre: being referred is NOT being listed"
+   ]
+  },
+  {
+   "id": "g_adv",
+   "x": 45,
+   "y": 174,
+   "w": 512,
+   "h": 78,
+   "kind": "plain",
+   "title": "WANTS advanced therapy: is it ADVANCED enough?",
+   "lines": [
+    "severe symptoms + cardiopulmonary exercise testing + invasive hemodynamics",
+    "not advanced enough → keep up medical therapy (see the HEART FAILURE chart)"
+   ]
+  },
+  {
+   "id": "g_ino",
+   "x": 597,
+   "y": 174,
+   "w": 250,
+   "h": 78,
+   "kind": "plain",
+   "title": "Needs FLOW now",
+   "lines": [
+    "prognostic drugs no longer help"
+   ]
+  },
+  {
+   "id": "g_pal",
+   "x": 887,
+   "y": 174,
+   "w": 250,
+   "h": 78,
+   "kind": "plain",
+   "title": "Does NOT want advanced options",
+   "lines": []
+  },
+  {
+   "id": "t_ci",
+   "x": 45,
+   "y": 292,
+   "w": 512,
+   "h": 114,
+   "kind": "plain",
+   "title": "Any CONTRAINDICATION to transplant?",
+   "lines": [
+    "• major comorbidity: cancer in 5 years, lung, kidney or liver disease",
+    "• psychosocial or immunologic issues",
+    "• surgical (prior sternotomy)",
+    "• age"
+   ]
+  },
+  {
+   "id": "tx_head_0_0",
+   "x": 45,
+   "y": 486,
+   "w": 250,
+   "h": 78,
+   "kind": "tx_h",
+   "title": "Heart transplant",
+   "lines": [
+    "orthotopic: donor heart in place of the recipient's"
+   ]
+  },
+  {
+   "id": "vad_head_0_0",
+   "x": 307,
+   "y": 486,
+   "w": 250,
+   "h": 78,
+   "kind": "vad_h",
+   "title": "Ventricular assist device (VAD)",
+   "lines": [
+    "a pump: ventricle → arterial circulation"
+   ]
+  },
+  {
+   "id": "ino_head_0_0",
+   "x": 597,
+   "y": 486,
+   "w": 250,
+   "h": 78,
+   "kind": "ino_h",
+   "title": "Inotropes",
+   "lines": [
+    "dobutamine, milrinone, dopamine"
+   ]
+  },
+  {
+   "id": "pal_head_0_0",
+   "x": 887,
+   "y": 486,
+   "w": 250,
+   "h": 78,
+   "kind": "pal_h",
+   "title": "Palliative care",
+   "lines": [
+    "NO therapy cures HF, not even transplant"
+   ]
+  },
+  {
+   "id": "tx_who_0_0",
+   "x": 45,
+   "y": 604,
+   "w": 250,
+   "h": 114,
+   "kind": "tx_t",
+   "title": "Wants it + advanced enough + NO contraindication",
+   "lines": [
+    "few patients qualify: donors are scarce"
+   ]
+  },
+  {
+   "id": "vad_who_0_0",
+   "x": 307,
+   "y": 604,
+   "w": 250,
+   "h": 114,
+   "kind": "vad_t",
+   "title": "DESTINATION therapy",
+   "lines": [
+    "• not a transplant candidate, but a VAD candidate",
+    "• or a BRIDGE to transplant or a decision"
+   ]
+  },
+  {
+   "id": "ino_who_0_0",
+   "x": 597,
+   "y": 604,
+   "w": 250,
+   "h": 114,
+   "kind": "ino_t",
+   "title": "Cold patient",
+   "lines": [
+    "• BRIDGE to transplant or VAD",
+    "• or for symptoms (palliation)"
+   ]
+  },
+  {
+   "id": "pal_who_0_0",
+   "x": 887,
+   "y": 604,
+   "w": 250,
+   "h": 114,
+   "kind": "pal_t",
+   "title": "Start EARLY",
+   "lines": [
+    "the HF course is unpredictable, so it is often too late"
+   ]
+  },
+  {
+   "id": "tx_tx_0_0",
+   "x": 45,
+   "y": 758,
+   "w": 250,
+   "h": 60,
+   "kind": "ok",
+   "title": "1 · Listed",
+   "lines": [
+    "bridge with a VAD or inotropes"
+   ]
+  },
+  {
+   "id": "tx_tx_1_0",
+   "x": 45,
+   "y": 840,
+   "w": 250,
+   "h": 134,
+   "kind": "ok",
+   "title": "2 · After: lifelong immunosuppression",
+   "lines": [
+    "• tacrolimus + mycophenolate + prednisone",
+    "• prophylaxis: pneumocystis, cytomegalovirus"
+   ]
+  },
+  {
+   "id": "vad_tx_0_0",
+   "x": 307,
+   "y": 758,
+   "w": 250,
+   "h": 216,
+   "kind": "ok",
+   "title": "Implanted pump",
+   "lines": [
+    "driveline out to a controller + battery"
+   ]
+  },
+  {
+   "id": "ino_tx_0_0",
+   "x": 597,
+   "y": 758,
+   "w": 250,
+   "h": 216,
+   "kind": "warn",
+   "title": "Consider REDUCING the beta blocker",
+   "lines": [
+    "its negative inotropy no longer helps"
+   ]
+  },
+  {
+   "id": "pal_tx_0_0",
+   "x": 887,
+   "y": 758,
+   "w": 250,
+   "h": 216,
+   "kind": "ok",
+   "title": "'Palli-active' care",
+   "lines": [
+    "• destination VAD",
+    "• home inotropes, home IV diuretics",
+    "• telehomecare"
+   ]
+  },
+  {
+   "id": "tx_watch_0_0",
+   "x": 45,
+   "y": 1014,
+   "w": 250,
+   "h": 79,
+   "kind": "tx_w",
+   "title": "REJECTION",
+   "lines": [
+    "routine endomyocardial biopsies"
+   ]
+  },
+  {
+   "id": "tx_watch_1_0",
+   "x": 45,
+   "y": 1115,
+   "w": 250,
+   "h": 97,
+   "kind": "tx_w",
+   "title": "Late deaths",
+   "lines": [
+    "• cardiac allograft vasculopathy",
+    "• malignancy, infection"
+   ]
+  },
+  {
+   "id": "vad_watch_0_0",
+   "x": 307,
+   "y": 1014,
+   "w": 250,
+   "h": 42,
+   "kind": "bad",
+   "title": "PULSELESS: continuous flow",
+   "lines": []
+  },
+  {
+   "id": "vad_watch_1_0",
+   "x": 307,
+   "y": 1078,
+   "w": 250,
+   "h": 134,
+   "kind": "vad_w",
+   "title": "Complications, commonest first",
+   "lines": [
+    "• driveline infection",
+    "• GI bleeding",
+    "• stroke or intracranial hemorrhage",
+    "• device thrombosis, pump failure"
+   ]
+  },
+  {
+   "id": "ino_watch_0_0",
+   "x": 597,
+   "y": 1014,
+   "w": 250,
+   "h": 198,
+   "kind": "bad",
+   "title": "Symptoms better, life NOT longer",
+   "lines": [
+    "may trigger arrhythmias"
+   ]
+  },
+  {
+   "id": "pal_watch_0_0",
+   "x": 887,
+   "y": 1014,
+   "w": 250,
+   "h": 198,
+   "kind": "pal_w",
+   "title": "Goal: improve SYMPTOMS",
+   "lines": [
+    "longer life is possible, not promised"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_adv",
+   "path": "M591.0 124V149H301.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_ino",
+   "path": "M591.0 124V149H722.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_pal",
+   "path": "M591.0 124V149H1012.0V174"
+  },
+  {
+   "from": "g_adv",
+   "to": "t_ci",
+   "from_dx": 0
+  },
+  {
+   "from": "tx_tx_0_0",
+   "to": "tx_tx_1_0"
+  },
+  {
+   "from": "tx_watch_0_0",
+   "to": "tx_watch_1_0"
+  },
+  {
+   "from": "vad_watch_0_0",
+   "to": "vad_watch_1_0"
+  },
+  {
+   "from": "tx_head_0_0",
+   "to": "tx_who_0_0"
+  },
+  {
+   "from": "tx_who_0_0",
+   "to": "tx_tx_0_0"
+  },
+  {
+   "from": "tx_tx_1_0",
+   "to": "tx_watch_0_0"
+  },
+  {
+   "from": "t_ci",
+   "to": "tx_head_0_0",
+   "from_dx": -131,
+   "label": "NONE",
+   "label_at": [
+    170.0,
+    446
+   ]
+  },
+  {
+   "from": "vad_head_0_0",
+   "to": "vad_who_0_0"
+  },
+  {
+   "from": "vad_who_0_0",
+   "to": "vad_tx_0_0"
+  },
+  {
+   "from": "vad_tx_0_0",
+   "to": "vad_watch_0_0"
+  },
+  {
+   "from": "t_ci",
+   "to": "vad_head_0_0",
+   "from_dx": 131,
+   "label": "PRESENT",
+   "label_at": [
+    432.0,
+    446
+   ]
+  },
+  {
+   "from": "ino_head_0_0",
+   "to": "ino_who_0_0"
+  },
+  {
+   "from": "ino_who_0_0",
+   "to": "ino_tx_0_0"
+  },
+  {
+   "from": "ino_tx_0_0",
+   "to": "ino_watch_0_0"
+  },
+  {
+   "from": "g_ino",
+   "to": "ino_head_0_0",
+   "from_dx": 0,
+   "label": "bridge or palliation",
+   "label_at": [
+    722.0,
+    446
+   ]
+  },
+  {
+   "from": "pal_head_0_0",
+   "to": "pal_who_0_0"
+  },
+  {
+   "from": "pal_who_0_0",
+   "to": "pal_tx_0_0"
+  },
+  {
+   "from": "pal_tx_0_0",
+   "to": "pal_watch_0_0"
+  },
+  {
+   "from": "g_pal",
+   "to": "pal_head_0_0",
+   "from_dx": 0,
+   "label": "symptoms first",
+   "label_at": [
+    1012.0,
+    446
+   ]
+  }
+ ],
+ "panels": []
+}

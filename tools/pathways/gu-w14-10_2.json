@@ -1,0 +1,1016 @@
+{
+ "name": "sodium disorders overview",
+ "width": 1644,
+ "title": "Sodium disorders decision chart: hypernatremia sorted by ECF volume, urine volume and urine osmolality into non-renal water loss, diabetes insipidus (central or nephrogenic by desmopressin) or renal solute loss; hyponatremia sorted by plasma osmolality, urine osmolality, urine sodium and ECF volume into water excess, low effective volume, endocrine causes including SIADH, or renal salt loss; with the rules for how fast to correct each",
+ "kinds": {
+  "nr_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nr_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "nr_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "di_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "di_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "di_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "sol_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sol_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "sol_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "wx_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "wx_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "wx_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "lv_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "lv_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "lv_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "en_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "en_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "en_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "rs_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rs_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "rs_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 388,
+   "w": 222,
+   "h": 656,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 264,
+   "y": 388,
+   "w": 222,
+   "h": 656,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 488,
+   "y": 388,
+   "w": 222,
+   "h": 656,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 740,
+   "y": 388,
+   "w": 222,
+   "h": 656,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 964,
+   "y": 388,
+   "w": 222,
+   "h": 656,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1188,
+   "y": 388,
+   "w": 222,
+   "h": 656,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1412,
+   "y": 388,
+   "w": 222,
+   "h": 656,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 536,
+   "h": 126,
+   "text": "TEST"
+  },
+  {
+   "x": 23,
+   "y": 702,
+   "h": 334,
+   "text": "CAUSE → FIX"
+  },
+  {
+   "x": 23,
+   "y": 1076,
+   "h": 224,
+   "text": "CORRECT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 457,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Sodium is off: is water LOST (Na > 144) or RETAINED (Na < 136)?",
+   "lines": [
+    "both are almost always WATER problems, not sodium problems",
+    "find the CAUSE, and correct only as fast as the brain can adapt (CORRECT row)"
+   ]
+  },
+  {
+   "id": "g_hyper",
+   "x": 45,
+   "y": 138,
+   "w": 660,
+   "h": 78,
+   "kind": "plain",
+   "title": "HYPERnatremia (Na > 144): free water LOST · cells SHRINK",
+   "lines": [
+    "unusual unless THIRST, ACCESS to water or ability to DRINK fails",
+    "1 · extracellular fluid (ECF) volume HIGH → sodium GAIN: sea water, IV fluids, mineralocorticoid excess"
+   ]
+  },
+  {
+   "id": "g_hypo",
+   "x": 745,
+   "y": 138,
+   "w": 884,
+   "h": 78,
+   "kind": "plain",
+   "title": "HYPOnatremia (Na < 136): water RETAINED · cells SWELL",
+   "lines": [
+    "1 · plasma osmolality (Osm) HIGH or normal → PSEUDOhyponatremia: glucose, mannitol (Na falls 1 per 3–4 rise in glucose)"
+   ]
+  },
+  {
+   "id": "t_hyper",
+   "x": 45,
+   "y": 256,
+   "w": 660,
+   "h": 60,
+   "kind": "plain",
+   "title": "2 · ECF volume LOW: how much URINE, and how concentrated?",
+   "lines": []
+  },
+  {
+   "id": "t_hypo",
+   "x": 745,
+   "y": 256,
+   "w": 884,
+   "h": 60,
+   "kind": "plain",
+   "title": "2 · Plasma Osm LOW (TRUE): URINE Osm, then URINE Na, then ECF",
+   "lines": [
+    "urine Osm > 100 = ADH is ON · urine Na < 20 = the kidney senses low volume"
+   ]
+  },
+  {
+   "id": "nr_head_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 212,
+   "h": 100,
+   "kind": "nr_h",
+   "title": "Water lost OUTSIDE the kidney",
+   "lines": []
+  },
+  {
+   "id": "di_head_0_0",
+   "x": 269,
+   "y": 396,
+   "w": 212,
+   "h": 100,
+   "kind": "di_h",
+   "title": "Diabetes insipidus (DI)",
+   "lines": [
+    "LOTS of DILUTE urine + thirst"
+   ]
+  },
+  {
+   "id": "sol_head_0_0",
+   "x": 493,
+   "y": 396,
+   "w": 212,
+   "h": 100,
+   "kind": "sol_h",
+   "title": "Kidney losing water with SOLUTE",
+   "lines": []
+  },
+  {
+   "id": "wx_head_0_0",
+   "x": 745,
+   "y": 396,
+   "w": 212,
+   "h": 100,
+   "kind": "wx_h",
+   "title": "Too much WATER IN",
+   "lines": [
+    "ADH is OFF: urine maximally dilute"
+   ]
+  },
+  {
+   "id": "lv_head_0_0",
+   "x": 969,
+   "y": 396,
+   "w": 212,
+   "h": 100,
+   "kind": "lv_h",
+   "title": "Kidney senses LOW volume",
+   "lines": [
+    "ADH ON for volume, not osmolality"
+   ]
+  },
+  {
+   "id": "en_head_0_0",
+   "x": 1193,
+   "y": 396,
+   "w": 212,
+   "h": 100,
+   "kind": "en_h",
+   "title": "ENDOCRINE · syndrome of inappropriate ADH (SIADH) · drugs",
+   "lines": [
+    "ADH ON with normal volume"
+   ]
+  },
+  {
+   "id": "rs_head_0_0",
+   "x": 1417,
+   "y": 396,
+   "w": 212,
+   "h": 100,
+   "kind": "rs_h",
+   "title": "Kidney LOSING salt",
+   "lines": []
+  },
+  {
+   "id": "nr_inv_0_0",
+   "x": 45,
+   "y": 536,
+   "w": 212,
+   "h": 126,
+   "kind": "nr_t",
+   "title": "Urine volume LOW",
+   "lines": [
+    "the kidney is not the leak"
+   ]
+  },
+  {
+   "id": "di_inv_0_0",
+   "x": 269,
+   "y": 536,
+   "w": 212,
+   "h": 62,
+   "kind": "di_t",
+   "title": "Give DESMOPRESSIN: urine Osm?",
+   "lines": []
+  },
+  {
+   "id": "di_inv_1_0",
+   "x": 269.0,
+   "y": 620,
+   "w": 101.0,
+   "h": 42,
+   "kind": "di_w",
+   "title": "Osm ↑",
+   "lines": []
+  },
+  {
+   "id": "di_inv_1_1",
+   "x": 380.0,
+   "y": 620,
+   "w": 101.0,
+   "h": 42,
+   "kind": "di_w",
+   "title": "No change",
+   "lines": []
+  },
+  {
+   "id": "sol_inv_0_0",
+   "x": 493,
+   "y": 536,
+   "w": 212,
+   "h": 52,
+   "kind": "sol_t",
+   "title": "Urine Na + K?",
+   "lines": []
+  },
+  {
+   "id": "sol_inv_1_0",
+   "x": 493.0,
+   "y": 610,
+   "w": 101.0,
+   "h": 52,
+   "kind": "sol_w",
+   "title": "LOW",
+   "lines": []
+  },
+  {
+   "id": "sol_inv_1_1",
+   "x": 604.0,
+   "y": 610,
+   "w": 101.0,
+   "h": 52,
+   "kind": "sol_w",
+   "title": "HIGH",
+   "lines": []
+  },
+  {
+   "id": "wx_inv_0_0",
+   "x": 745,
+   "y": 536,
+   "w": 212,
+   "h": 126,
+   "kind": "wx_t",
+   "title": "Urine Osm < 100",
+   "lines": []
+  },
+  {
+   "id": "lv_inv_0_0",
+   "x": 969,
+   "y": 536,
+   "w": 212,
+   "h": 62,
+   "kind": "lv_t",
+   "title": "Urine Na < 20: ECF volume?",
+   "lines": []
+  },
+  {
+   "id": "lv_inv_1_0",
+   "x": 969.0,
+   "y": 620,
+   "w": 101.0,
+   "h": 42,
+   "kind": "lv_w",
+   "title": "ECF LOW",
+   "lines": []
+  },
+  {
+   "id": "lv_inv_1_1",
+   "x": 1080.0,
+   "y": 620,
+   "w": 101.0,
+   "h": 42,
+   "kind": "lv_w",
+   "title": "ECF HIGH",
+   "lines": []
+  },
+  {
+   "id": "en_inv_0_0",
+   "x": 1193,
+   "y": 536,
+   "w": 212,
+   "h": 126,
+   "kind": "en_t",
+   "title": "Urine Na > 20 + ECF NORMAL",
+   "lines": [
+    "glomerular filtration rate (GFR) low or normal"
+   ]
+  },
+  {
+   "id": "rs_inv_0_0",
+   "x": 1417,
+   "y": 536,
+   "w": 212,
+   "h": 126,
+   "kind": "rs_t",
+   "title": "Urine Na > 20 + ECF LOW",
+   "lines": [
+    "GFR VERY low instead → acute or chronic renal failure"
+   ]
+  },
+  {
+   "id": "nr_clue_0_0",
+   "x": 45,
+   "y": 702,
+   "w": 212,
+   "h": 334,
+   "kind": "nr_w",
+   "title": "Non-renal losses",
+   "lines": [
+    "• gut, e.g. osmotic diarrhea",
+    "• skin",
+    "• lungs"
+   ]
+  },
+  {
+   "id": "di_clue_0_0",
+   "x": 269,
+   "y": 702,
+   "w": 212,
+   "h": 334,
+   "kind": "di_w",
+   "title": "CENTRAL or KIDNEY?",
+   "lines": [
+    "• Osm ↑: CENTRAL, brain makes too LITTLE antidiuretic hormone (ADH)",
+    "• no change: KIDNEY (nephrogenic), IGNORES ADH"
+   ]
+  },
+  {
+   "id": "sol_clue_0_0",
+   "x": 493,
+   "y": 702,
+   "w": 212,
+   "h": 334,
+   "kind": "sol_w",
+   "title": "OSMOTIC diuresis or diuretics?",
+   "lines": [
+    "• LOW: OSMOTIC diuresis (glucose, mannitol)",
+    "• HIGH: diuretics, renal insufficiency"
+   ]
+  },
+  {
+   "id": "wx_clue_0_0",
+   "x": 745,
+   "y": 702,
+   "w": 212,
+   "h": 334,
+   "kind": "wx_w",
+   "title": "Excess water drinking or IATROGENIC",
+   "lines": []
+  },
+  {
+   "id": "lv_clue_0_0",
+   "x": 969.0,
+   "y": 702,
+   "w": 101.0,
+   "h": 167,
+   "kind": "lv_w",
+   "title": "Lost outside the kidney",
+   "lines": [
+    "gut, third space"
+   ]
+  },
+  {
+   "id": "lv_clue_0_1",
+   "x": 1080.0,
+   "y": 702,
+   "w": 101.0,
+   "h": 167,
+   "kind": "lv_w",
+   "title": "Low renal blood flow",
+   "lines": [
+    "heart failure, cirrhosis, nephrosis"
+   ]
+  },
+  {
+   "id": "lv_clue_1_0",
+   "x": 969,
+   "y": 891,
+   "w": 212,
+   "h": 145,
+   "kind": "ok",
+   "title": "Fix the volume",
+   "lines": [
+    "• ECF LOW: restore volume",
+    "• ECF HIGH: treat the cause, e.g. heart failure"
+   ]
+  },
+  {
+   "id": "en_clue_0_0",
+   "x": 1193,
+   "y": 702,
+   "w": 212,
+   "h": 114,
+   "kind": "en_w",
+   "title": "Causes",
+   "lines": [
+    "• thyroid disease, adrenal insufficiency",
+    "• SIADH (rare)",
+    "• drugs"
+   ]
+  },
+  {
+   "id": "en_clue_1_0",
+   "x": 1193,
+   "y": 838,
+   "w": 212,
+   "h": 98,
+   "kind": "ok",
+   "title": "Stop the drug · correct the cause",
+   "lines": [
+    "TRUE SIADH: a vaptan or oral urea"
+   ]
+  },
+  {
+   "id": "en_clue_2_0",
+   "x": 1193,
+   "y": 958,
+   "w": 212,
+   "h": 78,
+   "kind": "bad",
+   "title": "NOT 0.9% saline",
+   "lines": [
+    "urine Osm 600 → 1 L in, 0.5 L out: net WATER GAIN"
+   ]
+  },
+  {
+   "id": "rs_clue_0_0",
+   "x": 1417,
+   "y": 702,
+   "w": 212,
+   "h": 173,
+   "kind": "rs_w",
+   "title": "Causes",
+   "lines": [
+    "• diuretics",
+    "• salt-wasting nephropathy",
+    "• mineralocorticoid deficiency"
+   ]
+  },
+  {
+   "id": "rs_clue_1_0",
+   "x": 1417,
+   "y": 897,
+   "w": 212,
+   "h": 139,
+   "kind": "ok",
+   "title": "Stop the diuretic · restore volume",
+   "lines": []
+  },
+  {
+   "id": "span0_tx_0_0",
+   "x": 45,
+   "y": 1076,
+   "w": 660,
+   "h": 60,
+   "kind": "plain",
+   "title": "1 · Water deficit = 0.5 × weight × (Na ÷ 140 − 1)",
+   "lines": [
+    "+ ~1 L a day of ongoing losses"
+   ]
+  },
+  {
+   "id": "span0_tx_1_0",
+   "x": 45,
+   "y": 1158,
+   "w": 660,
+   "h": 60,
+   "kind": "warn",
+   "title": "2 · Replace SLOWLY: Na falls < 10 mmol/L per 24 h",
+   "lines": [
+    "faster → the brain swells"
+   ]
+  },
+  {
+   "id": "span0_tx_2_0",
+   "x": 45.0,
+   "y": 1240,
+   "w": 325.0,
+   "h": 60,
+   "kind": "ok",
+   "title": "By MOUTH or nasogastric tube",
+   "lines": [
+    "if the gut absorbs"
+   ]
+  },
+  {
+   "id": "span0_tx_2_1",
+   "x": 380.0,
+   "y": 1240,
+   "w": 325.0,
+   "h": 60,
+   "kind": "warn",
+   "title": "IV: ONLY 5% dextrose (D5W)",
+   "lines": [
+    "≤ 300–350 mL/h"
+   ]
+  },
+  {
+   "id": "span1_tx_0_0",
+   "x": 745,
+   "y": 1076,
+   "w": 884,
+   "h": 60,
+   "kind": "warn",
+   "title": "1 · EVERYONE: RESTRICT all water",
+   "lines": [
+    "oral, tube feeds, hypotonic IV"
+   ]
+  },
+  {
+   "id": "span1_tx_1_0",
+   "x": 745.0,
+   "y": 1158,
+   "w": 437.0,
+   "h": 78,
+   "kind": "bad",
+   "title": "SYMPTOMS → CORRECT RAPIDLY: 3% saline",
+   "lines": [
+    "• hypertonic to the urine",
+    "• once symptoms improve: ≤ 8–10 mmol/L per day"
+   ]
+  },
+  {
+   "id": "span1_tx_1_1",
+   "x": 1192.0,
+   "y": 1158,
+   "w": 437.0,
+   "h": 78,
+   "kind": "ok",
+   "title": "NO symptoms → GO SLOW",
+   "lines": [
+    "fix the cause, ≤ 8–10 mmol/L per day"
+   ]
+  },
+  {
+   "id": "span1_tx_2_0",
+   "x": 745,
+   "y": 1258,
+   "w": 884,
+   "h": 42,
+   "kind": "bad",
+   "title": "Too FAST → osmotic demyelination",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_hyper",
+   "path": "M837.0 88V113H375.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_hypo",
+   "path": "M837.0 88V113H1187.0V138"
+  },
+  {
+   "from": "g_hyper",
+   "to": "t_hyper",
+   "from_dx": 0
+  },
+  {
+   "from": "g_hypo",
+   "to": "t_hypo",
+   "from_dx": 0
+  },
+  {
+   "from": "di_inv_0_0",
+   "to": "di_inv_1_0",
+   "from_dx": -55.5
+  },
+  {
+   "from": "di_inv_0_0",
+   "to": "di_inv_1_1",
+   "from_dx": 55.5
+  },
+  {
+   "from": "sol_inv_0_0",
+   "to": "sol_inv_1_0",
+   "from_dx": -55.5
+  },
+  {
+   "from": "sol_inv_0_0",
+   "to": "sol_inv_1_1",
+   "from_dx": 55.5
+  },
+  {
+   "from": "lv_inv_0_0",
+   "to": "lv_inv_1_0",
+   "from_dx": -55.5
+  },
+  {
+   "from": "lv_inv_0_0",
+   "to": "lv_inv_1_1",
+   "from_dx": 55.5
+  },
+  {
+   "from": "lv_clue_0_0",
+   "to": "lv_clue_1_0",
+   "to_dx": -55.5
+  },
+  {
+   "from": "lv_clue_0_1",
+   "to": "lv_clue_1_0",
+   "to_dx": 55.5
+  },
+  {
+   "from": "en_clue_0_0",
+   "to": "en_clue_1_0"
+  },
+  {
+   "from": "en_clue_1_0",
+   "to": "en_clue_2_0"
+  },
+  {
+   "from": "rs_clue_0_0",
+   "to": "rs_clue_1_0"
+  },
+  {
+   "from": "span0_tx_0_0",
+   "to": "span0_tx_1_0"
+  },
+  {
+   "from": "span0_tx_1_0",
+   "to": "span0_tx_2_0",
+   "from_dx": -167.5
+  },
+  {
+   "from": "span0_tx_1_0",
+   "to": "span0_tx_2_1",
+   "from_dx": 167.5
+  },
+  {
+   "from": "span1_tx_0_0",
+   "to": "span1_tx_1_0",
+   "from_dx": -223.5
+  },
+  {
+   "from": "span1_tx_0_0",
+   "to": "span1_tx_1_1",
+   "from_dx": 223.5
+  },
+  {
+   "from": "span1_tx_1_0",
+   "to": "span1_tx_2_0",
+   "to_dx": -223.5
+  },
+  {
+   "from": "span1_tx_1_1",
+   "to": "span1_tx_2_0",
+   "to_dx": 223.5
+  },
+  {
+   "from": "nr_head_0_0",
+   "to": "nr_inv_0_0"
+  },
+  {
+   "from": "nr_inv_0_0",
+   "to": "nr_clue_0_0"
+  },
+  {
+   "from": "nr_clue_0_0",
+   "to": "span0_tx_0_0",
+   "to_dx": -224.0
+  },
+  {
+   "from": "t_hyper",
+   "to": "nr_head_0_0",
+   "from_dx": -224,
+   "label": "urine volume LOW",
+   "label_at": [
+    151.0,
+    356
+   ]
+  },
+  {
+   "from": "di_head_0_0",
+   "to": "di_inv_0_0"
+  },
+  {
+   "from": "di_inv_1_0",
+   "to": "di_clue_0_0",
+   "to_dx": -55.5
+  },
+  {
+   "from": "di_inv_1_1",
+   "to": "di_clue_0_0",
+   "to_dx": 55.5
+  },
+  {
+   "from": "di_clue_0_0",
+   "to": "span0_tx_0_0",
+   "to_dx": 0.0
+  },
+  {
+   "from": "t_hyper",
+   "to": "di_head_0_0",
+   "from_dx": 0,
+   "label": "HIGH · urine Osm LOW",
+   "label_at": [
+    375.0,
+    356
+   ]
+  },
+  {
+   "from": "sol_head_0_0",
+   "to": "sol_inv_0_0"
+  },
+  {
+   "from": "sol_inv_1_0",
+   "to": "sol_clue_0_0",
+   "to_dx": -55.5
+  },
+  {
+   "from": "sol_inv_1_1",
+   "to": "sol_clue_0_0",
+   "to_dx": 55.5
+  },
+  {
+   "from": "sol_clue_0_0",
+   "to": "span0_tx_0_0",
+   "to_dx": 224.0
+  },
+  {
+   "from": "t_hyper",
+   "to": "sol_head_0_0",
+   "from_dx": 224,
+   "label": "HIGH · urine Osm HIGH",
+   "label_at": [
+    599.0,
+    356
+   ]
+  },
+  {
+   "from": "wx_head_0_0",
+   "to": "wx_inv_0_0"
+  },
+  {
+   "from": "wx_inv_0_0",
+   "to": "wx_clue_0_0"
+  },
+  {
+   "from": "wx_clue_0_0",
+   "to": "span1_tx_0_0",
+   "to_dx": -336.0
+  },
+  {
+   "from": "t_hypo",
+   "to": "wx_head_0_0",
+   "from_dx": -336,
+   "label": "urine Osm < 100",
+   "label_at": [
+    851.0,
+    356
+   ]
+  },
+  {
+   "from": "lv_head_0_0",
+   "to": "lv_inv_0_0"
+  },
+  {
+   "from": "lv_inv_1_0",
+   "to": "lv_clue_0_0"
+  },
+  {
+   "from": "lv_inv_1_1",
+   "to": "lv_clue_0_1"
+  },
+  {
+   "from": "lv_clue_1_0",
+   "to": "span1_tx_0_0",
+   "to_dx": -112.0
+  },
+  {
+   "from": "t_hypo",
+   "to": "lv_head_0_0",
+   "from_dx": -112,
+   "label": "> 100 · urine Na < 20",
+   "label_at": [
+    1075.0,
+    356
+   ]
+  },
+  {
+   "from": "en_head_0_0",
+   "to": "en_inv_0_0"
+  },
+  {
+   "from": "en_inv_0_0",
+   "to": "en_clue_0_0"
+  },
+  {
+   "from": "en_clue_2_0",
+   "to": "span1_tx_0_0",
+   "to_dx": 112.0
+  },
+  {
+   "from": "t_hypo",
+   "to": "en_head_0_0",
+   "from_dx": 112,
+   "label": "Na > 20 · ECF NORMAL",
+   "label_at": [
+    1299.0,
+    356
+   ]
+  },
+  {
+   "from": "rs_head_0_0",
+   "to": "rs_inv_0_0"
+  },
+  {
+   "from": "rs_inv_0_0",
+   "to": "rs_clue_0_0"
+  },
+  {
+   "from": "rs_clue_1_0",
+   "to": "span1_tx_0_0",
+   "to_dx": 336.0
+  },
+  {
+   "from": "t_hypo",
+   "to": "rs_head_0_0",
+   "from_dx": 336,
+   "label": "Na > 20 · ECF LOW",
+   "label_at": [
+    1523.0,
+    356
+   ]
+  }
+ ],
+ "panels": []
+}

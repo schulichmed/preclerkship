@@ -1,0 +1,216 @@
+{
+ "name": "clinical approach to menopause pathway",
+ "title": "Clinical approach to menopause: history, then GSM or VMS, and for VMS whether estrogen is contraindicated, whether she is in the safe-start window, and whether she has a uterus",
+ "width": 980,
+ "nodes": [
+  {
+   "id": "A",
+   "x": 350,
+   "y": 10,
+   "w": 300,
+   "kind": "plain",
+   "title": "53-year-old with menopause concerns",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 280,
+   "y": 90,
+   "w": 440,
+   "kind": "plain",
+   "title": "History: menses, symptoms,",
+   "lines": [
+    "contraindications to menopausal hormone therapy (MHT)"
+   ]
+  },
+  {
+   "id": "C",
+   "x": 400,
+   "y": 196,
+   "w": 200,
+   "h": 48,
+   "kind": "plain",
+   "title": "Which symptom?",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 15,
+   "y": 290,
+   "w": 330,
+   "kind": "ok",
+   "title": "Lifestyle, lubricants, moisturizers, physiotherapy",
+   "lines": [
+    "2nd line: vaginal estrogen, dehydroepiandrosterone, ospemifene"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 380,
+   "y": 295,
+   "w": 240,
+   "kind": "plain",
+   "title": "Contraindication to estrogen?",
+   "lines": [],
+   "h": 44
+  },
+  {
+   "id": "F",
+   "x": 680,
+   "y": 269,
+   "w": 285,
+   "kind": "warn",
+   "title": "Non-hormonal",
+   "lines": [
+    "antidepressants, gabapentinoids,",
+    "neurokinin 3 receptor antagonists,",
+    "cognitive behavioural therapy, cooling"
+   ],
+   "h": 96
+  },
+  {
+   "id": "G",
+   "x": 370,
+   "y": 420,
+   "w": 260,
+   "kind": "plain",
+   "title": "Younger than 60 and < 10 years post menopause?",
+   "lines": [],
+   "h": 64
+  },
+  {
+   "id": "F2",
+   "x": 680,
+   "y": 412,
+   "w": 285,
+   "kind": "warn",
+   "title": "Outside the deck's safe-start window",
+   "lines": [
+    "weigh risk; non-hormonal options"
+   ],
+   "h": 80
+  },
+  {
+   "id": "H",
+   "x": 380,
+   "y": 540,
+   "w": 240,
+   "h": 48,
+   "kind": "plain",
+   "title": "Does she have a uterus?",
+   "lines": []
+  },
+  {
+   "id": "I",
+   "x": 190,
+   "y": 650,
+   "w": 280,
+   "kind": "ok",
+   "title": "Estrogen + progesterone",
+   "lines": [
+    "(progestin pill or levonorgestrel",
+    "intrauterine device)"
+   ]
+  },
+  {
+   "id": "J",
+   "x": 530,
+   "y": 650,
+   "w": 280,
+   "h": 92,
+   "kind": "ok",
+   "title": "Estrogen alone",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C"
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "from_side": "left",
+   "to_side": "top",
+   "label": "GSM",
+   "label_at": [
+    330,
+    212
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "label": "VMS",
+   "label_at": [
+    525,
+    276
+   ]
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "from_side": "right",
+   "to_side": "left",
+   "label": "Yes",
+   "label_at": [
+    650,
+    309
+   ]
+  },
+  {
+   "from": "E",
+   "to": "G",
+   "label": "No",
+   "label_at": [
+    518,
+    400
+   ]
+  },
+  {
+   "from": "G",
+   "to": "F2",
+   "from_side": "right",
+   "to_side": "left",
+   "label": "No",
+   "label_at": [
+    655,
+    444
+   ]
+  },
+  {
+   "from": "G",
+   "to": "H",
+   "label": "Yes",
+   "label_at": [
+    520,
+    522
+   ]
+  },
+  {
+   "from": "H",
+   "to": "I",
+   "from_dx": -50,
+   "label": "Yes",
+   "label_at": [
+    352,
+    614
+   ]
+  },
+  {
+   "from": "H",
+   "to": "J",
+   "from_dx": 50,
+   "label": "No - hysterectomy",
+   "label_at": [
+    690,
+    614
+   ]
+  }
+ ]
+}

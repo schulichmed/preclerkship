@@ -1,0 +1,482 @@
+{
+ "name": "pulmonary function tests overview",
+ "width": 1124,
+ "title": "Reading pulmonary function tests in three steps: an FEV1/FVC ratio under 0.7 is obstruction with hyperinflation; otherwise static volumes decide, a total lung capacity under 80% is restriction, and the diffusion capacity then separates parenchymal (reduced) from extraparenchymal (normal) restriction; normal volumes with a low diffusion capacity point to anemia, pulmonary vascular disease or early lung disease",
+ "kinds": {
+  "ob_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ob_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ob_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pa_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pa_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "pa_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ex_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ex_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ex_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "dl_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dl_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "dl_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 408,
+   "w": 260,
+   "h": 450,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 330,
+   "y": 408,
+   "w": 260,
+   "h": 450,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 592,
+   "y": 408,
+   "w": 260,
+   "h": 450,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 854,
+   "y": 408,
+   "w": 260,
+   "h": 450,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 516,
+   "h": 78,
+   "text": "VOLUMES · DLCO"
+  },
+  {
+   "x": 23,
+   "y": 634,
+   "h": 216,
+   "text": "CAUSES"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 197,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Dyspnea or cough not yet diagnosed: what do the PULMONARY FUNCTION TESTS (PFTs) show?",
+   "lines": [
+    "read in three steps: SPIROMETRY → static lung VOLUMES → DIFFUSION capacity for carbon monoxide (DLCO)",
+    "do NOT test with: aneurysm · pneumothorax · recent brain or eye surgery · BP > 200/120 · recent heart attack or arrhythmia"
+   ]
+  },
+  {
+   "id": "g_obs",
+   "x": 45,
+   "y": 138,
+   "w": 250,
+   "h": 98,
+   "kind": "plain",
+   "title": "FEV1/FVC < 0.7: OBSTRUCTION",
+   "lines": [
+    "forced expiratory volume in 1 s (FEV1) ↓↓, forced vital capacity (FVC) ↓"
+   ]
+  },
+  {
+   "id": "g_nl",
+   "x": 335,
+   "y": 138,
+   "w": 774,
+   "h": 98,
+   "kind": "plain",
+   "title": "FEV1/FVC NORMAL or ↑: check STATIC LUNG VOLUMES",
+   "lines": [
+    "total lung capacity (TLC) decides"
+   ]
+  },
+  {
+   "id": "t_r",
+   "x": 335,
+   "y": 276,
+   "w": 512,
+   "h": 60,
+   "kind": "plain",
+   "title": "TLC < 80%: RESTRICTION. Then the DLCO?",
+   "lines": [
+    "FEV1 ↓, FVC ↓ · narrow loop · short, shallow breaths"
+   ]
+  },
+  {
+   "id": "t_n",
+   "x": 859,
+   "y": 276,
+   "w": 250,
+   "h": 60,
+   "kind": "plain",
+   "title": "Volumes NORMAL. DLCO?",
+   "lines": []
+  },
+  {
+   "id": "ob_head_0_0",
+   "x": 45,
+   "y": 416,
+   "w": 250,
+   "h": 60,
+   "kind": "ob_h",
+   "title": "Obstructive",
+   "lines": [
+    "scooped-out flow-volume loop"
+   ]
+  },
+  {
+   "id": "pa_head_0_0",
+   "x": 335,
+   "y": 416,
+   "w": 250,
+   "h": 60,
+   "kind": "pa_h",
+   "title": "Parenchymal restriction",
+   "lines": [
+    "interstitial lung disease (ILD)"
+   ]
+  },
+  {
+   "id": "ex_head_0_0",
+   "x": 597,
+   "y": 416,
+   "w": 250,
+   "h": 60,
+   "kind": "ex_h",
+   "title": "Extraparenchymal restriction",
+   "lines": [
+    "diaphragm, chest wall, pleura"
+   ]
+  },
+  {
+   "id": "dl_head_0_0",
+   "x": 859,
+   "y": 416,
+   "w": 250,
+   "h": 60,
+   "kind": "dl_h",
+   "title": "Isolated low DLCO",
+   "lines": [
+    "CO transfer alone is reduced"
+   ]
+  },
+  {
+   "id": "ob_vol_0_0",
+   "x": 45,
+   "y": 516,
+   "w": 250,
+   "h": 78,
+   "kind": "ob_t",
+   "title": "HYPERINFLATION: > 120%",
+   "lines": [
+    "• residual volume ↑: gas trapping",
+    "• TLC ↑"
+   ]
+  },
+  {
+   "id": "pa_vol_0_0",
+   "x": 335,
+   "y": 516,
+   "w": 250,
+   "h": 78,
+   "kind": "pa_t",
+   "title": "TLC < 80% + DLCO ↓",
+   "lines": [
+    "parenchymal disease: less CO taken up"
+   ]
+  },
+  {
+   "id": "ex_vol_0_0",
+   "x": 597,
+   "y": 516,
+   "w": 250,
+   "h": 78,
+   "kind": "ex_t",
+   "title": "TLC < 80%, DLCO normal",
+   "lines": [
+    "altered MECHANICS, not the lung"
+   ]
+  },
+  {
+   "id": "dl_vol_0_0",
+   "x": 859,
+   "y": 516,
+   "w": 250,
+   "h": 78,
+   "kind": "dl_t",
+   "title": "Spirometry + volumes normal",
+   "lines": [
+    "only the DLCO is low"
+   ]
+  },
+  {
+   "id": "ob_cause_0_0",
+   "x": 45,
+   "y": 634,
+   "w": 250,
+   "h": 96,
+   "kind": "ob_w",
+   "title": "Airways",
+   "lines": [
+    "• chronic obstructive pulmonary disease (COPD), asthma",
+    "• bronchiectasis, cystic fibrosis"
+   ]
+  },
+  {
+   "id": "ob_cause_1_0",
+   "x": 45,
+   "y": 752,
+   "w": 250,
+   "h": 98,
+   "kind": "ob_w",
+   "title": "Reverses with a bronchodilator?",
+   "lines": [
+    "see the OBSTRUCTIVE LUNG DISEASE chart"
+   ]
+  },
+  {
+   "id": "pa_cause_0_0",
+   "x": 335,
+   "y": 634,
+   "w": 250,
+   "h": 216,
+   "kind": "pa_w",
+   "title": "The lung",
+   "lines": [
+    "• idiopathic pulmonary fibrosis, sarcoidosis",
+    "• granulomatosis with polyangiitis, drug toxicity",
+    "• pneumonia, acute respiratory distress syndrome"
+   ]
+  },
+  {
+   "id": "ex_cause_0_0",
+   "x": 597,
+   "y": 634,
+   "w": 250,
+   "h": 97,
+   "kind": "ex_w",
+   "title": "Neuromuscular",
+   "lines": [
+    "• myasthenia gravis, Guillain-Barré",
+    "• amyotrophic lateral sclerosis, polio"
+   ]
+  },
+  {
+   "id": "ex_cause_1_0",
+   "x": 597,
+   "y": 753,
+   "w": 250,
+   "h": 97,
+   "kind": "ex_w",
+   "title": "Chest wall",
+   "lines": [
+    "• scoliosis",
+    "• severe obesity, ascites"
+   ]
+  },
+  {
+   "id": "dl_cause_0_0",
+   "x": 859,
+   "y": 634,
+   "w": 250,
+   "h": 106,
+   "kind": "dl_w",
+   "title": "Blood or vessels",
+   "lines": [
+    "• anemia: no red cells to take up CO",
+    "• pulmonary embolism, pulmonary hypertension"
+   ]
+  },
+  {
+   "id": "dl_cause_1_0",
+   "x": 859,
+   "y": 762,
+   "w": 250,
+   "h": 88,
+   "kind": "dl_w",
+   "title": "Early lung disease",
+   "lines": [
+    "• early ILD or pneumonia",
+    "• non-obstructive emphysema"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_obs",
+   "path": "M577.0 88V113H170.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_nl",
+   "path": "M577.0 88V113H722.0V138"
+  },
+  {
+   "from": "g_nl",
+   "to": "t_r",
+   "from_dx": -131
+  },
+  {
+   "from": "g_nl",
+   "to": "t_n",
+   "from_dx": 262
+  },
+  {
+   "from": "ob_cause_0_0",
+   "to": "ob_cause_1_0"
+  },
+  {
+   "from": "ex_cause_0_0",
+   "to": "ex_cause_1_0"
+  },
+  {
+   "from": "dl_cause_0_0",
+   "to": "dl_cause_1_0"
+  },
+  {
+   "from": "ob_head_0_0",
+   "to": "ob_vol_0_0"
+  },
+  {
+   "from": "ob_vol_0_0",
+   "to": "ob_cause_0_0"
+  },
+  {
+   "from": "g_obs",
+   "to": "ob_head_0_0",
+   "from_dx": 0,
+   "label": "air TRAPPED",
+   "label_at": [
+    170.0,
+    376
+   ]
+  },
+  {
+   "from": "pa_head_0_0",
+   "to": "pa_vol_0_0"
+  },
+  {
+   "from": "pa_vol_0_0",
+   "to": "pa_cause_0_0"
+  },
+  {
+   "from": "t_r",
+   "to": "pa_head_0_0",
+   "from_dx": -131,
+   "label": "DLCO ↓",
+   "label_at": [
+    460.0,
+    376
+   ]
+  },
+  {
+   "from": "ex_head_0_0",
+   "to": "ex_vol_0_0"
+  },
+  {
+   "from": "ex_vol_0_0",
+   "to": "ex_cause_0_0"
+  },
+  {
+   "from": "t_r",
+   "to": "ex_head_0_0",
+   "from_dx": 131,
+   "label": "DLCO NORMAL",
+   "label_at": [
+    722.0,
+    376
+   ]
+  },
+  {
+   "from": "dl_head_0_0",
+   "to": "dl_vol_0_0"
+  },
+  {
+   "from": "dl_vol_0_0",
+   "to": "dl_cause_0_0"
+  },
+  {
+   "from": "t_n",
+   "to": "dl_head_0_0",
+   "from_dx": 0,
+   "label": "DLCO ↓",
+   "label_at": [
+    984.0,
+    376
+   ]
+  }
+ ],
+ "panels": []
+}

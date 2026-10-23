@@ -1,0 +1,465 @@
+{
+ "name": "pelvic mass overview",
+ "title": "Ovarian mass: age predicts the lineage (germ cell in the young, epithelial in adults, sex cord/stromal at any age, or a metastasis); each column gives the clues, how the diagnosis is made and whether it is benign, borderline or malignant with its treatment",
+ "col_w": 216,
+ "root": {
+  "title": "Ovarian mass: how OLD is she, and is it benign or malignant?",
+  "lines": [
+   "MOST are NOT malignant · cancer is more likely POST-MENOPAUSAL",
+   "pain (rupture, torsion) · distension (ascites, mass) · bladder or bowel change · weight loss · estrogen or androgen signs · or nothing until late"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_young",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "YOUNG: GERM CELL commonest",
+   "lines": [
+    "from the oocyte"
+   ]
+  },
+  {
+   "id": "g_epi",
+   "cols": [
+    2,
+    4
+   ],
+   "title": "ADULT: EPITHELIAL commonest",
+   "lines": [
+    "serous the commonest subtype, then mucinous",
+    "STROMAL INVASION separates carcinoma from borderline"
+   ]
+  },
+  {
+   "id": "g_sc",
+   "cols": [
+    5,
+    5
+   ],
+   "title": "ANY AGE: SEX CORD / STROMAL",
+   "lines": [
+    "FIBROMA: common, BENIGN, firm white nodular mass, often found at surgery"
+   ]
+  },
+  {
+   "id": "g_met",
+   "cols": [
+    6,
+    6
+   ],
+   "title": "METASTASIS",
+   "lines": [
+    "from the GI tract, pancreas, biliary tract, breast, endometrium"
+   ]
+  }
+ ],
+ "pres": [
+  {
+   "id": "p_young",
+   "group": "g_young",
+   "title": "Young woman + ovarian mass: send SERUM MARKERS",
+   "lines": [
+    "• alpha-fetoprotein (α-FP)",
+    "• lactate dehydrogenase (LDH)",
+    "• beta-hCG (β-hCG)",
+    "• they aid the diagnosis AND post-op monitoring"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "MARKERS",
+  "clue": "PRESENTS AS",
+  "inv": "DIAGNOSIS",
+  "tx": "BEHAVIOUR + TREATMENT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "mct",
+   "colour": "blue",
+   "drop_label": "benign",
+   "head": [
+    [
+     [
+      "h",
+      "Mature cystic teratoma",
+      [
+       "'DERMOID CYST'",
+       "the commonest BENIGN germ cell tumour"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Pain for months",
+      [
+       "a UNILATERAL mass on pelvic exam"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Removed: MATURE tissues",
+      [
+       "hair, teeth, skin, cartilage"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "BENIGN",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "gct",
+   "colour": "magenta",
+   "drop_label": "malignant",
+   "head": [
+    [
+     [
+      "h",
+      "Malignant germ cell",
+      [
+       "dysgerminoma · yolk sac · choriocarcinoma · immature teratoma · embryonal"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "A serum marker RAISED",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "The marker that is +++",
+      [
+       "• α-FP → YOLK SAC tumour",
+       "• LDH → DYSGERMINOMA",
+       "• β-hCG → CHORIOCARCINOMA"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "MALIGNANT",
+      [
+       "follow the same marker after surgery"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ben",
+   "colour": "teal",
+   "drop_label": "benign",
+   "head": [
+    [
+     [
+      "h",
+      "Cystadenoma",
+      [
+       "serous or mucinous"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Girth ↑, vague pain, unwell",
+      [
+       "mucinous can be HUGE"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Imaging: ovarian mass",
+      [
+       "pathology: NO invasion"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "BENIGN",
+      [
+       "resected"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "bdl",
+   "colour": "purple",
+   "drop_label": "pre-cancerous",
+   "head": [
+    [
+     [
+      "h",
+      "Borderline tumour",
+      [
+       "serous or mucinous"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Pain + ovarian mass",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Atypia, complex architecture",
+      [
+       "but NO frank invasion"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Surgical excision",
+      [
+       "most: very good prognosis"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Watch for",
+      [
+       "• implants (serous only)",
+       "• recurrence",
+       "• progression to LOW-GRADE carcinoma"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ca",
+   "colour": "orange",
+   "drop_label": "malignant",
+   "head": [
+    [
+     [
+      "h",
+      "Epithelial carcinoma",
+      [
+       "SEROUS = the #1 'ovarian cancer'"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "ADVANCED at presentation",
+      [
+       "• post-menopausal (younger if familial)",
+       "• often BILATERAL (not mucinous)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "STROMAL INVASION",
+      [
+       "spreads over the peritoneum, omentum, nodes"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · SURGERY first",
+      [
+       "• uterus, tubes, ovaries",
+       "• omentum",
+       "• peritoneal biopsies",
+       "• ± lymph nodes"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Chemotherapy: advanced stage",
+      [
+       "• confined = good",
+       "• higher stage = poor"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "gra",
+   "colour": "brown",
+   "drop_label": "estrogenic",
+   "head": [
+    [
+     [
+      "h",
+      "Granulosa cell tumour",
+      [
+       "uncommon · MALIGNANT"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "ESTROGENIC",
+      [
+       "• vaginal bleeding",
+       "• atypical hyperplasia on endometrial biopsy"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Adnexal mass on imaging",
+      [
+       "the uterus may hold a carcinoma: see the ABNORMAL BLEEDING chart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Hysterectomy + both tubes and ovaries",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Slow, but",
+      [
+       "• recurs LATE (> 10 years)",
+       "• may RUPTURE → hemoperitoneum"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "met",
+   "colour": "slate",
+   "drop_label": "bilateral, nodular",
+   "head": [
+    [
+     [
+      "h",
+      "Metastasis to the ovary",
+      [
+       "BILATERAL, multi-nodular"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Distension + ASCITES",
+      [
+       "bilateral nodular masses"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Two classic patterns",
+      [
+       "• Krukenberg: signet ring, from the STOMACH",
+       "• 'jelly belly': from the APPENDIX"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Bilateral atypical MUCINOUS tumour",
+      [
+       "CHECK THAT APPENDIX"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": []
+}

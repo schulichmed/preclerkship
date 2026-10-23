@@ -1,0 +1,187 @@
+{
+ "name": "approach to the small fetus pathway",
+ "title": "Small fetus pathway: screen by risk factor or fundal height, confirm on ultrasound, find the cause, check fetal well-being, then deliver or monitor by gestational age",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 170,
+   "y": 10,
+   "w": 580,
+   "kind": "plain",
+   "title": "Risk factor, or symphysis-fundus height (SFH)",
+   "lines": [
+    ">2-3 cm less than weeks (after 20 weeks)"
+   ]
+  },
+  {
+   "id": "B",
+   "x": 150,
+   "y": 110,
+   "w": 620,
+   "kind": "plain",
+   "title": "Ultrasound: estimated fetal weight (EFW) by Hadlock",
+   "lines": [
+    "head circumference, abdominal circumference,",
+    "biparietal diameter, femur length"
+   ]
+  },
+  {
+   "id": "C",
+   "x": 320,
+   "y": 236,
+   "w": 280,
+   "kind": "plain",
+   "title": "EFW <10th percentile?",
+   "lines": []
+  },
+  {
+   "id": "D",
+   "x": 660,
+   "y": 220,
+   "w": 245,
+   "kind": "warn",
+   "title": "Can still be IUGR",
+   "lines": [
+    "relative to own potential",
+    "Repeat growth scans"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 150,
+   "y": 330,
+   "w": 620,
+   "kind": "plain",
+   "title": "Find the cause:",
+   "lines": [
+    "enhanced first trimester screen / non-invasive prenatal testing / amniocentesis",
+    "Toxoplasmosis / cytomegalovirus screen"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 150,
+   "y": 460,
+   "w": 620,
+   "kind": "plain",
+   "title": "Fetal well-being:",
+   "lines": [
+    "umbilical artery (UA) Doppler, amniotic fluid volume, non-stress test (NST)"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 340,
+   "y": 568,
+   "w": 240,
+   "kind": "plain",
+   "title": "Gestational age?",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 15,
+   "y": 690,
+   "w": 270,
+   "h": 120,
+   "kind": "ok",
+   "title": "DELIVER",
+   "lines": [
+    "limited benefit to staying in utero"
+   ]
+  },
+  {
+   "id": "I",
+   "x": 315,
+   "y": 690,
+   "w": 290,
+   "h": 120,
+   "kind": "warn",
+   "title": "Deliver if oligohydramnios",
+   "lines": [
+    "or persistently abnormal Dopplers",
+    "(even resistive index >95th percentile alone)"
+   ]
+  },
+  {
+   "id": "J",
+   "x": 635,
+   "y": 690,
+   "w": 270,
+   "h": 120,
+   "kind": "bad",
+   "title": "MONITOR",
+   "lines": [
+    "unless fetal distress:",
+    "abnormal NST, absent or reversed end-diastolic flow (EDF)"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C"
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "from_side": "right",
+   "to_side": "left",
+   "label": "no",
+   "label_at": [
+    630,
+    245
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "label": "yes",
+   "label_at": [
+    480,
+    308
+   ]
+  },
+  {
+   "from": "E",
+   "to": "F"
+  },
+  {
+   "from": "F",
+   "to": "G"
+  },
+  {
+   "from": "G",
+   "to": "H",
+   "from_dx": -80,
+   "label": ">37 weeks",
+   "label_at": [
+    200,
+    638
+   ]
+  },
+  {
+   "from": "G",
+   "to": "I",
+   "label": "32-37 weeks",
+   "label_at": [
+    510,
+    650
+   ]
+  },
+  {
+   "from": "G",
+   "to": "J",
+   "from_dx": 80,
+   "label": "<32 weeks",
+   "label_at": [
+    722,
+    638
+   ]
+  }
+ ]
+}

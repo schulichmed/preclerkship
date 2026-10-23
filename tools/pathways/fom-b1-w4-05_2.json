@@ -1,0 +1,455 @@
+{
+ "name": "ADHD overview",
+ "width": 1084,
+ "title": "Is it attention deficit hyperactivity disorder (ADHD)? All criteria must hold; the symptom counts sort it into inattentive, combined or hyperactive-impulsive presentations; anything better explained by another disorder or typical for age is not ADHD; treatment is multimodal",
+ "kinds": {
+  "ina_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ina_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ina_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "com_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "com_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "com_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "hyp_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hyp_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "hyp_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "not_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "not_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "not_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 250,
+   "h": 352,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 292,
+   "y": 270,
+   "w": 250,
+   "h": 352,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 544,
+   "y": 270,
+   "w": 250,
+   "h": 352,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 824,
+   "y": 270,
+   "w": 250,
+   "h": 588,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 380,
+   "h": 80,
+   "text": "COUNT"
+  },
+  {
+   "x": 23,
+   "y": 500,
+   "h": 114,
+   "text": "LOOKS LIKE"
+  },
+  {
+   "x": 23,
+   "y": 654,
+   "h": 196,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 177,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Is it attention deficit hyperactivity disorder (ADHD), and which presentation?",
+   "lines": [
+    "assess: parent AND child interviews across settings · SNAP-IV rating scale · psychological tests",
+    "judge against what is NORMAL for the child's age: a yes/no checklist alone is not enough"
+   ]
+  },
+  {
+   "id": "g_yes",
+   "x": 45,
+   "y": 138,
+   "w": 744,
+   "h": 60,
+   "kind": "plain",
+   "title": "ADHD only if ALL of these hold",
+   "lines": [
+    "symptoms ≥ 6 months · several before age 12 · in 2+ settings (home, school, friends) · clear impairment of functioning"
+   ]
+  },
+  {
+   "id": "g_no",
+   "x": 829,
+   "y": 138,
+   "w": 240,
+   "h": 60,
+   "kind": "plain",
+   "title": "NOT ADHD",
+   "lines": [
+    "a diagnosis of EXCLUSION"
+   ]
+  },
+  {
+   "id": "ina_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 240,
+   "h": 62,
+   "kind": "ina_h",
+   "title": "Predominantly inattentive",
+   "lines": []
+  },
+  {
+   "id": "com_head_0_0",
+   "x": 297,
+   "y": 278,
+   "w": 240,
+   "h": 62,
+   "kind": "com_h",
+   "title": "Combined",
+   "lines": []
+  },
+  {
+   "id": "hyp_head_0_0",
+   "x": 549,
+   "y": 278,
+   "w": 240,
+   "h": 62,
+   "kind": "hyp_h",
+   "title": "Predominantly hyperactive-impulsive",
+   "lines": []
+  },
+  {
+   "id": "not_head_0_0",
+   "x": 829,
+   "y": 278,
+   "w": 240,
+   "h": 62,
+   "kind": "not_h",
+   "title": "Something else",
+   "lines": []
+  },
+  {
+   "id": "ina_cnt_0_0",
+   "x": 45,
+   "y": 380,
+   "w": 240,
+   "h": 80,
+   "kind": "ina_t",
+   "title": "6+ of 9 INATTENTION",
+   "lines": [
+    "fewer than 6 hyperactive-impulsive"
+   ]
+  },
+  {
+   "id": "com_cnt_0_0",
+   "x": 297,
+   "y": 380,
+   "w": 240,
+   "h": 80,
+   "kind": "com_t",
+   "title": "6+ of 9 in BOTH lists",
+   "lines": [
+    "count each list separately"
+   ]
+  },
+  {
+   "id": "hyp_cnt_0_0",
+   "x": 549,
+   "y": 380,
+   "w": 240,
+   "h": 80,
+   "kind": "hyp_t",
+   "title": "6+ of 9 HYPERACTIVE-IMPULSIVE",
+   "lines": [
+    "fewer than 6 inattentive"
+   ]
+  },
+  {
+   "id": "not_cnt_0_0",
+   "x": 829,
+   "y": 380,
+   "w": 240,
+   "h": 80,
+   "kind": "not_t",
+   "title": "Typical for age?",
+   "lines": [
+    "what if the child were 5? where is the impairment?"
+   ]
+  },
+  {
+   "id": "ina_sx_0_0",
+   "x": 45,
+   "y": 500,
+   "w": 240,
+   "h": 114,
+   "kind": "ina_w",
+   "title": "Often",
+   "lines": [
+    "• careless mistakes, loses things",
+    "• doesn't seem to listen or finish tasks",
+    "• easily distracted, forgetful"
+   ]
+  },
+  {
+   "id": "com_sx_0_0",
+   "x": 297,
+   "y": 500,
+   "w": 240,
+   "h": 114,
+   "kind": "com_w",
+   "title": "Both patterns",
+   "lines": [
+    "inattention AND hyperactivity-impulsivity"
+   ]
+  },
+  {
+   "id": "hyp_sx_0_0",
+   "x": 549,
+   "y": 500,
+   "w": 240,
+   "h": 114,
+   "kind": "hyp_w",
+   "title": "Often",
+   "lines": [
+    "• fidgets, leaves seat, 'driven by a motor'",
+    "• talks excessively, blurts out answers",
+    "• can't wait a turn, interrupts"
+   ]
+  },
+  {
+   "id": "not_sx_0_0",
+   "x": 829,
+   "y": 500,
+   "w": 240,
+   "h": 114,
+   "kind": "not_w",
+   "title": "Better explained by",
+   "lines": [
+    "• mood, anxiety, dissociative or personality disorder",
+    "• substance intoxication or withdrawal",
+    "• only during psychosis"
+   ]
+  },
+  {
+   "id": "not_tx_0_0",
+   "x": 829,
+   "y": 654,
+   "w": 240,
+   "h": 196,
+   "kind": "plain",
+   "title": "Criteria NOT met",
+   "lines": [
+    "no ADHD diagnosis"
+   ]
+  },
+  {
+   "id": "span0_tx_0_0",
+   "x": 45,
+   "y": 654,
+   "w": 744,
+   "h": 96,
+   "kind": "ok",
+   "title": "MULTIMODAL, for every presentation",
+   "lines": [
+    "• psychoeducation",
+    "• parent training / behavioural management",
+    "• school accommodation"
+   ]
+  },
+  {
+   "id": "span0_tx_1_0",
+   "x": 45,
+   "y": 772,
+   "w": 744,
+   "h": 78,
+   "kind": "ok",
+   "title": "+ Medication",
+   "lines": [
+    "• stimulants: no response to one → try the other (90% respond to one or the other)",
+    "• non-stimulants"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_yes",
+   "path": "M557.0 88V113H417.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_no",
+   "path": "M557.0 88V113H949.0V138"
+  },
+  {
+   "from": "span0_tx_0_0",
+   "to": "span0_tx_1_0"
+  },
+  {
+   "from": "ina_head_0_0",
+   "to": "ina_cnt_0_0"
+  },
+  {
+   "from": "ina_cnt_0_0",
+   "to": "ina_sx_0_0"
+  },
+  {
+   "from": "ina_sx_0_0",
+   "to": "span0_tx_0_0",
+   "to_dx": -252.0
+  },
+  {
+   "from": "g_yes",
+   "to": "ina_head_0_0",
+   "from_dx": -252,
+   "label": "6+ inattentive",
+   "label_at": [
+    165.0,
+    238
+   ]
+  },
+  {
+   "from": "com_head_0_0",
+   "to": "com_cnt_0_0"
+  },
+  {
+   "from": "com_cnt_0_0",
+   "to": "com_sx_0_0"
+  },
+  {
+   "from": "com_sx_0_0",
+   "to": "span0_tx_0_0",
+   "to_dx": 0.0
+  },
+  {
+   "from": "g_yes",
+   "to": "com_head_0_0",
+   "from_dx": 0,
+   "label": "6+ of each",
+   "label_at": [
+    417.0,
+    238
+   ]
+  },
+  {
+   "from": "hyp_head_0_0",
+   "to": "hyp_cnt_0_0"
+  },
+  {
+   "from": "hyp_cnt_0_0",
+   "to": "hyp_sx_0_0"
+  },
+  {
+   "from": "hyp_sx_0_0",
+   "to": "span0_tx_0_0",
+   "to_dx": 252.0
+  },
+  {
+   "from": "g_yes",
+   "to": "hyp_head_0_0",
+   "from_dx": 252,
+   "label": "6+ hyperactive",
+   "label_at": [
+    669.0,
+    238
+   ]
+  },
+  {
+   "from": "not_head_0_0",
+   "to": "not_cnt_0_0"
+  },
+  {
+   "from": "not_cnt_0_0",
+   "to": "not_sx_0_0"
+  },
+  {
+   "from": "not_sx_0_0",
+   "to": "not_tx_0_0"
+  },
+  {
+   "from": "g_no",
+   "to": "not_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

@@ -1,0 +1,321 @@
+{
+ "name": "thrombocytosis overview",
+ "title": "High platelet count: repeat the count, look for the common reactive causes (infection or inflammation, iron deficiency or bleeding, hemolysis) and treat them, and only if it persists consider a clonal cause, essential thrombocythemia or primary myelofibrosis; pancytopenia is sorted into low production, high destruction or sequestration",
+ "col_w": 226,
+ "root": {
+  "title": "Platelets ≥ 450 × 10⁹/L (extreme ≥ 1000): is it REAL, REACTIVE or CLONAL?",
+  "lines": [
+   "1 · REPEAT the CBC: is it persistent? · spurious (rare): red cell fragments, cryoglobulins, bacteria counted as platelets",
+   "history + exam look for reactive AND clonal causes together",
+   "ALL three LOW (pancytopenia)? ↓ production (marrow) · ↑ destruction (immune, drugs, infection) · big spleen"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_r",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "2 · REACTIVE: far more COMMON · look first",
+   "lines": [
+    "also: hyposplenism (splenectomy, sickle cell) · non-blood cancer · rebound after myelosuppression",
+    "treat the cause, then REPEAT the CBC: still high → CLONAL"
+   ]
+  },
+  {
+   "id": "g_c",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "3 · CLONAL: myeloproliferative neoplasm (MPN)",
+   "lines": [
+    "which other line is up? Hb ↑↑ → ERYTHROCYTOSIS chart · WBC ↑↑, Philadelphia + → CML (LEUKEMIA chart)"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "in",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Infection, inflammation, tissue damage",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Clues",
+      [
+       "• BACTERIAL infection: the most common",
+       "• IBD, RA, SLE",
+       "• trauma, surgery, burns"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "CBC + differential, film",
+      [
+       "• C-reactive protein (CRP)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat the cause",
+      [
+       "e.g. antibiotics for infection"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ir",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Iron deficiency or bleeding",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Clues",
+      [
+       "• MICROCYTIC anemia",
+       "• hemorrhage"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Iron studies",
+      [
+       "if the anemia is microcytic"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Iron for iron deficiency",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "he",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Hemolysis",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Clues",
+      [
+       "• anemia with hemolysis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Hemolytic screen",
+      [
+       "• total bilirubin, reticulocytes",
+       "• haptoglobin, direct antibody test"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat the cause",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "et",
+   "colour": "purple",
+   "drop_label": "platelets alone",
+   "head": [
+    [
+     [
+      "h",
+      "Essential thrombocythemia (ET)",
+      [
+       "platelets ↑↑ · RBC normal · Philadelphia −"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Clues",
+      [
+       "• erythromelalgia, ocular migraine",
+       "• weakness, dizziness, MILD bleeding",
+       "• splenomegaly rare"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Platelets ≥ 450 + ALL 3 (or 1 + 2 + a minor)",
+      [
+       "1 · marrow: big, hyperlobulated megakaryocytes",
+       "2 · not CML, polycythemia vera (PV), PMF or myelodysplastic syndrome",
+       "3 · JAK2, CALR or MPL mutation"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treated: life expectancy close to normal",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mf",
+   "colour": "brown",
+   "drop_label": "RBC ↓ · teardrops",
+   "head": [
+    [
+     [
+      "h",
+      "Primary myelofibrosis (PMF)",
+      [
+       "RBC ↓ or normal · can arise from ET or PV"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Clues",
+      [
+       "• fatigue, early satiety, weight loss",
+       "• bruising, bleeding, B symptoms",
+       "• big SPLEEN"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Film",
+      [
+       "• TEARDROP cells",
+       "• leukoerythroblastic"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "ALL 3 major + ≥ 1 minor",
+      [
+       "1 · marrow: atypical megakaryocytes + fibrosis grade 2–3",
+       "2 · JAK2, CALR or MPL (or other clonal marker)",
+       "3 · not another myeloid neoplasm"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Set individual goals up front, revisit",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Symptoms",
+      [
+       "• transfusion, steroids, hydroxyurea, erythropoietin (EPO)",
+       "• ruxolitinib (JAK inhibitor)"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "CURE: allogeneic stem cell transplant",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

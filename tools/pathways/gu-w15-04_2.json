@@ -1,0 +1,686 @@
+{
+ "name": "acute kidney injury overview",
+ "width": 1508,
+ "title": "Acute kidney injury decision chart: urine indices and a renal ultrasound sort it into pre-renal, post-renal or intrinsic renal injury, and the intrinsic causes into acute tubular necrosis, acute interstitial nephritis, glomerulonephritis including rapidly progressive glomerulonephritis, and atheroembolic disease; each column gives clues, investigations and management, with the AEIOU indications for dialysis",
+ "kinds": {
+  "pre_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pre_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pre_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "post_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "post_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "post_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "atn_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "atn_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "atn_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ain_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ain_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ain_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "gn_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gn_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "gn_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ath_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ath_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "ath_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 362,
+   "w": 232,
+   "h": 678,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 302,
+   "y": 362,
+   "w": 232,
+   "h": 678,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 564,
+   "y": 362,
+   "w": 232,
+   "h": 678,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 798,
+   "y": 362,
+   "w": 232,
+   "h": 678,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1032,
+   "y": 362,
+   "w": 232,
+   "h": 678,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1266,
+   "y": 362,
+   "w": 232,
+   "h": 678,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 490,
+   "h": 132,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 662,
+   "h": 170,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 872,
+   "h": 160,
+   "text": "MANAGE"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 389,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Creatinine rising fast: BEFORE the kidney, AFTER it, or the kidney ITSELF?",
+   "lines": [
+    "acute kidney injury (AKI) = creatinine ↑ 44 µmol/L, or > 50% over baseline, or clearance ↓ 50%",
+    "rule out pre- and post-renal FIRST: the easiest · glomerular filtration rate (GFR) equations are WRONG while creatinine is changing",
+    "every patient: urinalysis + renal ultrasound",
+    "ANY cause: DIALYSIS NOW for AEIOU = Acidosis, Electrolytes (K ↑), Ingestion of drugs or ischemia, fluid Overload, Uremia"
+   ]
+  },
+  {
+   "id": "g_pre",
+   "x": 45,
+   "y": 192,
+   "w": 222,
+   "h": 98,
+   "kind": "plain",
+   "title": "PRE-RENAL: low blood flow",
+   "lines": []
+  },
+  {
+   "id": "g_post",
+   "x": 307,
+   "y": 192,
+   "w": 222,
+   "h": 98,
+   "kind": "plain",
+   "title": "POST-RENAL: blocked outflow",
+   "lines": [
+    "SUDDEN ANURIA · BOTH sides blocked, or a solitary kidney"
+   ]
+  },
+  {
+   "id": "g_ren",
+   "x": 569,
+   "y": 192,
+   "w": 924,
+   "h": 98,
+   "kind": "plain",
+   "title": "RENAL (intrinsic): urea:creatinine < 20:1 · urine Na ≥ 40 · urine Osm < 350 · FENa ≥ 2%",
+   "lines": [
+    "the history, exam and URINALYSIS point to the part of the kidney"
+   ]
+  },
+  {
+   "id": "pre_head_0_0",
+   "x": 45,
+   "y": 370,
+   "w": 222,
+   "h": 80,
+   "kind": "pre_h",
+   "title": "Pre-renal AKI",
+   "lines": []
+  },
+  {
+   "id": "post_head_0_0",
+   "x": 307,
+   "y": 370,
+   "w": 222,
+   "h": 80,
+   "kind": "post_h",
+   "title": "Post-renal AKI",
+   "lines": []
+  },
+  {
+   "id": "atn_head_0_0",
+   "x": 569,
+   "y": 370,
+   "w": 222,
+   "h": 80,
+   "kind": "atn_h",
+   "title": "Acute tubular necrosis (ATN)",
+   "lines": []
+  },
+  {
+   "id": "ain_head_0_0",
+   "x": 803,
+   "y": 370,
+   "w": 222,
+   "h": 80,
+   "kind": "ain_h",
+   "title": "Acute interstitial nephritis (AIN)",
+   "lines": [
+    "an ALLERGIC reaction"
+   ]
+  },
+  {
+   "id": "gn_head_0_0",
+   "x": 1037,
+   "y": 370,
+   "w": 222,
+   "h": 80,
+   "kind": "gn_h",
+   "title": "Glomerulonephritis",
+   "lines": [
+    "IgA nephropathy the commonest"
+   ]
+  },
+  {
+   "id": "ath_head_0_0",
+   "x": 1271,
+   "y": 370,
+   "w": 222,
+   "h": 80,
+   "kind": "ath_h",
+   "title": "Atheroembolic renal disease",
+   "lines": [
+    "aortic plaque debris"
+   ]
+  },
+  {
+   "id": "pre_clue_0_0",
+   "x": 45,
+   "y": 490,
+   "w": 222,
+   "h": 132,
+   "kind": "pre_t",
+   "title": "Causes",
+   "lines": [
+    "• volume LOSS: bleeding, vomiting, diarrhea, diuretics",
+    "• heart failure, shock, sepsis",
+    "• anti-inflammatories (NSAIDs), contrast, hepatorenal"
+   ]
+  },
+  {
+   "id": "post_clue_0_0",
+   "x": 307,
+   "y": 490,
+   "w": 222,
+   "h": 132,
+   "kind": "post_t",
+   "title": "Causes",
+   "lines": [
+    "• prostate: benign hyperplasia, cancer",
+    "• cervical cancer, stones",
+    "• strictures, retroperitoneal fibrosis"
+   ]
+  },
+  {
+   "id": "atn_clue_0_0",
+   "x": 569,
+   "y": 490,
+   "w": 222,
+   "h": 132,
+   "kind": "atn_t",
+   "title": "Two routes",
+   "lines": [
+    "• ISCHEMIC: a pre-renal cause left too long",
+    "• TOXIC: contrast, aminoglycosides, cisplatin; myoglobin, myeloma light chains"
+   ]
+  },
+  {
+   "id": "ain_clue_0_0",
+   "x": 803,
+   "y": 490,
+   "w": 222,
+   "h": 132,
+   "kind": "ain_t",
+   "title": "Triggers",
+   "lines": [
+    "• DRUGS: antibiotics, NSAIDs, allopurinol",
+    "• infection: group A strep, Legionella, cytomegalovirus"
+   ]
+  },
+  {
+   "id": "gn_clue_0_0",
+   "x": 1037,
+   "y": 490,
+   "w": 222,
+   "h": 132,
+   "kind": "gn_t",
+   "title": "Hematuria + RED CELL CASTS",
+   "lines": [
+    "workup: HEMATURIA chart"
+   ]
+  },
+  {
+   "id": "ath_clue_0_0",
+   "x": 1271,
+   "y": 490,
+   "w": 222,
+   "h": 132,
+   "kind": "ath_t",
+   "title": "Emboli everywhere",
+   "lines": [
+    "• livedo reticularis",
+    "• stroke, gut ischemia"
+   ]
+  },
+  {
+   "id": "pre_inv_0_0",
+   "x": 45,
+   "y": 662,
+   "w": 222,
+   "h": 170,
+   "kind": "pre_w",
+   "title": "Indices: the kidney HOLDS Na",
+   "lines": [
+    "• urea:creatinine ≥ 20:1",
+    "• urine Na < 20",
+    "• urine osmolality (Osm) ≥ 500",
+    "• fractional excretion of Na (FENa) < 1%",
+    "• HYALINE casts are normal here"
+   ]
+  },
+  {
+   "id": "post_inv_0_0",
+   "x": 307,
+   "y": 662,
+   "w": 222,
+   "h": 170,
+   "kind": "post_w",
+   "title": "RENAL ULTRASOUND: hydronephrosis?",
+   "lines": [
+    "~a block can exist WITHOUT it"
+   ]
+  },
+  {
+   "id": "atn_inv_0_0",
+   "x": 569,
+   "y": 662,
+   "w": 222,
+   "h": 170,
+   "kind": "atn_w",
+   "title": "Urine: MUDDY BROWN granular casts",
+   "lines": [
+    "~then urine output lowest for days–weeks; recovery brings a DIURESIS"
+   ]
+  },
+  {
+   "id": "ain_inv_0_0",
+   "x": 803,
+   "y": 662,
+   "w": 222,
+   "h": 170,
+   "kind": "ain_w",
+   "title": "Exam + urine",
+   "lines": [
+    "• fever, rash, eosinophilia",
+    "• white cell casts"
+   ]
+  },
+  {
+   "id": "gn_inv_0_0",
+   "x": 1037,
+   "y": 662,
+   "w": 222,
+   "h": 170,
+   "kind": "gn_w",
+   "title": "Biopsy: CRESCENTS in Bowman's capsule",
+   "lines": [
+    "+ falling fast = RAPIDLY PROGRESSIVE GN (RPGN)"
+   ]
+  },
+  {
+   "id": "ath_inv_0_0",
+   "x": 1271,
+   "y": 662,
+   "w": 222,
+   "h": 170,
+   "kind": "ath_w",
+   "title": "A CLINICAL diagnosis",
+   "lines": [
+    "• imaging shows nothing",
+    "• do NOT biopsy"
+   ]
+  },
+  {
+   "id": "pre_tx_0_0",
+   "x": 45,
+   "y": 872,
+   "w": 222,
+   "h": 160,
+   "kind": "ok",
+   "title": "Restore renal blood flow",
+   "lines": []
+  },
+  {
+   "id": "post_tx_0_0",
+   "x": 307,
+   "y": 872,
+   "w": 222,
+   "h": 160,
+   "kind": "bad",
+   "title": "RELIEVE the block now",
+   "lines": [
+    "see the URINARY TRACT OBSTRUCTION chart"
+   ]
+  },
+  {
+   "id": "atn_tx_0_0",
+   "x": 569,
+   "y": 872,
+   "w": 222,
+   "h": 78,
+   "kind": "ok",
+   "title": "SUPPORTIVE",
+   "lines": [
+    "reverse the cause · fix fluids + electrolytes"
+   ]
+  },
+  {
+   "id": "atn_tx_1_0",
+   "x": 569,
+   "y": 972,
+   "w": 222,
+   "h": 60,
+   "kind": "warn",
+   "title": "Dialysis",
+   "lines": [
+    "while the tubules regenerate"
+   ]
+  },
+  {
+   "id": "ain_tx_0_0",
+   "x": 803,
+   "y": 872,
+   "w": 222,
+   "h": 160,
+   "kind": "warn",
+   "title": "Look at EVERY drug",
+   "lines": [
+    "NOT dose-dependent"
+   ]
+  },
+  {
+   "id": "gn_tx_0_0",
+   "x": 1037,
+   "y": 872,
+   "w": 222,
+   "h": 160,
+   "kind": "bad",
+   "title": "RPGN: fatal if untreated",
+   "lines": [
+    "1 · prednisone",
+    "2 · cyclophosphamide or rituximab",
+    "3 · plasmapheresis"
+   ]
+  },
+  {
+   "id": "ath_tx_0_0",
+   "x": 1271,
+   "y": 872,
+   "w": 222,
+   "h": 160,
+   "kind": "warn",
+   "title": "SUPPORTIVE",
+   "lines": [
+    "creatinine does NOT improve with IV fluids · poor prognosis"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_pre",
+   "path": "M769.0 142V167H156.0V192"
+  },
+  {
+   "from": "root",
+   "to": "g_post",
+   "path": "M769.0 142V167H418.0V192"
+  },
+  {
+   "from": "root",
+   "to": "g_ren",
+   "path": "M769.0 142V167H1031.0V192"
+  },
+  {
+   "from": "atn_tx_0_0",
+   "to": "atn_tx_1_0"
+  },
+  {
+   "from": "pre_head_0_0",
+   "to": "pre_clue_0_0"
+  },
+  {
+   "from": "pre_clue_0_0",
+   "to": "pre_inv_0_0"
+  },
+  {
+   "from": "pre_inv_0_0",
+   "to": "pre_tx_0_0"
+  },
+  {
+   "from": "g_pre",
+   "to": "pre_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "post_head_0_0",
+   "to": "post_clue_0_0"
+  },
+  {
+   "from": "post_clue_0_0",
+   "to": "post_inv_0_0"
+  },
+  {
+   "from": "post_inv_0_0",
+   "to": "post_tx_0_0"
+  },
+  {
+   "from": "g_post",
+   "to": "post_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "atn_head_0_0",
+   "to": "atn_clue_0_0"
+  },
+  {
+   "from": "atn_clue_0_0",
+   "to": "atn_inv_0_0"
+  },
+  {
+   "from": "atn_inv_0_0",
+   "to": "atn_tx_0_0"
+  },
+  {
+   "from": "g_ren",
+   "to": "atn_head_0_0",
+   "from_dx": -351,
+   "label": "the MOST COMMON",
+   "label_at": [
+    680.0,
+    330
+   ]
+  },
+  {
+   "from": "ain_head_0_0",
+   "to": "ain_clue_0_0"
+  },
+  {
+   "from": "ain_clue_0_0",
+   "to": "ain_inv_0_0"
+  },
+  {
+   "from": "ain_inv_0_0",
+   "to": "ain_tx_0_0"
+  },
+  {
+   "from": "g_ren",
+   "to": "ain_head_0_0",
+   "from_dx": -117,
+   "label": "RASH · new drug",
+   "label_at": [
+    914.0,
+    330
+   ]
+  },
+  {
+   "from": "gn_head_0_0",
+   "to": "gn_clue_0_0"
+  },
+  {
+   "from": "gn_clue_0_0",
+   "to": "gn_inv_0_0"
+  },
+  {
+   "from": "gn_inv_0_0",
+   "to": "gn_tx_0_0"
+  },
+  {
+   "from": "g_ren",
+   "to": "gn_head_0_0",
+   "from_dx": 117,
+   "label": "BLOOD + red cell casts",
+   "label_at": [
+    1148.0,
+    330
+   ]
+  },
+  {
+   "from": "ath_head_0_0",
+   "to": "ath_clue_0_0"
+  },
+  {
+   "from": "ath_clue_0_0",
+   "to": "ath_inv_0_0"
+  },
+  {
+   "from": "ath_inv_0_0",
+   "to": "ath_tx_0_0"
+  },
+  {
+   "from": "g_ren",
+   "to": "ath_head_0_0",
+   "from_dx": 351,
+   "label": "after catheterization",
+   "label_at": [
+    1382.0,
+    330
+   ]
+  }
+ ],
+ "panels": []
+}

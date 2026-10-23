@@ -1,0 +1,835 @@
+{
+ "name": "esophageal dysphagia overview",
+ "width": 1456,
+ "title": "Esophageal dysphagia decision chart: solids only points to a mechanical cause (ring, web or stricture, eosinophilic esophagitis, cancer), solids and liquids to a motility disorder (achalasia, distal esophageal spasm or jackhammer, scleroderma esophagus); each column gives presentation, numbered investigations and treatment",
+ "kinds": {
+  "rw_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rw_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "rw_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "eoe_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "eoe_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "eoe_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ca_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ca_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ca_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ach_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ach_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ach_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "spa_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "spa_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "spa_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "scl_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "scl_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "scl_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 228,
+   "h": 906,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 270,
+   "y": 288,
+   "w": 228,
+   "h": 906,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 500,
+   "y": 288,
+   "w": 228,
+   "h": 906,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 758,
+   "y": 288,
+   "w": 228,
+   "h": 906,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 988,
+   "y": 288,
+   "w": 228,
+   "h": 906,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1218,
+   "y": 288,
+   "w": 228,
+   "h": 906,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 470,
+   "h": 234,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 744,
+   "h": 178,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 962,
+   "h": 224,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 363,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Food sticks SECONDS after the swallow, behind the sternum: SOLIDS only, or SOLIDS + LIQUIDS?",
+   "lines": [
+    "can't START the swallow, coughing, choking, nasal regurgitation → OROPHARYNGEAL, not this chart",
+    "ask: where it sticks · progressive or intermittent · heartburn · weight loss, hematemesis, anemia"
+   ]
+  },
+  {
+   "id": "g_mech",
+   "x": 45,
+   "y": 138,
+   "w": 678,
+   "h": 78,
+   "kind": "plain",
+   "title": "SOLIDS only: MECHANICAL",
+   "lines": [
+    "• endoscopy: sees the tissue + biopsy (invasive, perforation risk)",
+    "• barium swallow: easy, shows function, not tissue"
+   ]
+  },
+  {
+   "id": "g_mot",
+   "x": 763,
+   "y": 138,
+   "w": 678,
+   "h": 78,
+   "kind": "plain",
+   "title": "SOLIDS + LIQUIDS: MOTILITY",
+   "lines": [
+    "esophageal MANOMETRY decides · endoscopy helps little"
+   ]
+  },
+  {
+   "id": "rw_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 218,
+   "h": 134,
+   "kind": "rw_h",
+   "title": "Ring, web or benign stricture",
+   "lines": [
+    "peptic (GERD) stricture most common"
+   ]
+  },
+  {
+   "id": "eoe_head_0_0",
+   "x": 275,
+   "y": 296,
+   "w": 218,
+   "h": 134,
+   "kind": "eoe_h",
+   "title": "Eosinophilic esophagitis",
+   "lines": [
+    "chronic ALLERGIC condition",
+    "eosinophils in the esophagus"
+   ]
+  },
+  {
+   "id": "ca_head_0_0",
+   "x": 505,
+   "y": 296,
+   "w": 218,
+   "h": 134,
+   "kind": "ca_h",
+   "title": "Esophageal cancer",
+   "lines": [
+    "adenocarcinoma: DISTAL",
+    "squamous cell: proximal"
+   ]
+  },
+  {
+   "id": "ach_head_0_0",
+   "x": 763,
+   "y": 296,
+   "w": 218,
+   "h": 134,
+   "kind": "ach_h",
+   "title": "Achalasia",
+   "lines": [
+    "lower esophageal sphincter (LES) FAILS TO RELAX",
+    "+ impaired peristalsis"
+   ]
+  },
+  {
+   "id": "spa_head_0_0",
+   "x": 993,
+   "y": 296,
+   "w": 218,
+   "h": 134,
+   "kind": "spa_h",
+   "title": "Distal esophageal spasm or jackhammer",
+   "lines": [
+    "spasm: simultaneous, NON-propulsive",
+    "jackhammer: high-amplitude, repetitive"
+   ]
+  },
+  {
+   "id": "scl_head_0_0",
+   "x": 1223,
+   "y": 296,
+   "w": 218,
+   "h": 134,
+   "kind": "scl_h",
+   "title": "Scleroderma esophagus",
+   "lines": [
+    "autoimmune scarring and thickening"
+   ]
+  },
+  {
+   "id": "rw_pres_0_0",
+   "x": 45,
+   "y": 470,
+   "w": 218,
+   "h": 234,
+   "kind": "rw_t",
+   "title": "Solid-food dysphagia",
+   "lines": [
+    "• Schatzki ring: distal, FULL circle, INTERMITTENT",
+    "• web: anywhere, PARTIAL circle",
+    "• web + iron deficiency anemia, glossitis, cheilosis = Plummer-Vinson"
+   ]
+  },
+  {
+   "id": "eoe_pres_0_0",
+   "x": 275,
+   "y": 470,
+   "w": 218,
+   "h": 234,
+   "kind": "eoe_t",
+   "title": "FOOD BOLUS IMPACTION",
+   "lines": [
+    "• young, MALE",
+    "• asthma, allergic rhinitis"
+   ]
+  },
+  {
+   "id": "ca_pres_0_0",
+   "x": 505,
+   "y": 470,
+   "w": 218,
+   "h": 62,
+   "kind": "ca_t",
+   "title": "PROGRESSIVE solid dysphagia",
+   "lines": []
+  },
+  {
+   "id": "ca_pres_1_0",
+   "x": 505,
+   "y": 554,
+   "w": 218,
+   "h": 150,
+   "kind": "ca_w",
+   "title": "Risk",
+   "lines": [
+    "• adenocarcinoma: long GERD, BARRETT'S, obesity, smoking, men",
+    "• squamous: SMOKING, ALCOHOL, caustic injury, very hot drinks"
+   ]
+  },
+  {
+   "id": "ach_pres_0_0",
+   "x": 763,
+   "y": 470,
+   "w": 218,
+   "h": 234,
+   "kind": "ach_t",
+   "title": "Solids AND liquids stick",
+   "lines": [
+    "food stays in the esophagus"
+   ]
+  },
+  {
+   "id": "spa_pres_0_0",
+   "x": 993,
+   "y": 470,
+   "w": 218,
+   "h": 234,
+   "kind": "spa_t",
+   "title": "Solids AND liquids stick",
+   "lines": []
+  },
+  {
+   "id": "scl_pres_0_0",
+   "x": 1223,
+   "y": 470,
+   "w": 218,
+   "h": 234,
+   "kind": "scl_t",
+   "title": "Dysphagia + HEARTBURN",
+   "lines": [
+    "• women",
+    "• RAYNAUD'S"
+   ]
+  },
+  {
+   "id": "rw_inv_0_0",
+   "x": 45,
+   "y": 744,
+   "w": 218,
+   "h": 78,
+   "kind": "rw_w",
+   "title": "1 · Barium swallow",
+   "lines": [
+    "SYMMETRIC narrowing"
+   ]
+  },
+  {
+   "id": "rw_inv_1_0",
+   "x": 45,
+   "y": 844,
+   "w": 218,
+   "h": 78,
+   "kind": "rw_w",
+   "title": "2 · Endoscopy",
+   "lines": [
+    "see it, biopsy it"
+   ]
+  },
+  {
+   "id": "eoe_inv_0_0",
+   "x": 275,
+   "y": 744,
+   "w": 218,
+   "h": 178,
+   "kind": "eoe_t",
+   "title": "1 · Endoscopy + BIOPSY",
+   "lines": [
+    "• > 15 eosinophils per high-power field, mid esophagus",
+    "• vertical furrows, rings"
+   ]
+  },
+  {
+   "id": "ca_inv_0_0",
+   "x": 505,
+   "y": 744,
+   "w": 218,
+   "h": 87,
+   "kind": "ca_w",
+   "title": "1 · Barium swallow",
+   "lines": [
+    "ASYMMETRIC narrowing"
+   ]
+  },
+  {
+   "id": "ca_inv_1_0",
+   "x": 505,
+   "y": 853,
+   "w": 218,
+   "h": 69,
+   "kind": "ca_t",
+   "title": "2 · Endoscopy + BIOPSY",
+   "lines": []
+  },
+  {
+   "id": "ach_inv_0_0",
+   "x": 763,
+   "y": 744,
+   "w": 218,
+   "h": 68,
+   "kind": "ach_t",
+   "title": "1 · Manometry",
+   "lines": [
+    "absent or failed peristalsis"
+   ]
+  },
+  {
+   "id": "ach_inv_1_0",
+   "x": 763,
+   "y": 834,
+   "w": 218,
+   "h": 88,
+   "kind": "ach_w",
+   "title": "2 · Barium swallow: BIRD BEAK",
+   "lines": [
+    "endoscopy: retained food"
+   ]
+  },
+  {
+   "id": "spa_inv_0_0",
+   "x": 993,
+   "y": 744,
+   "w": 218,
+   "h": 78,
+   "kind": "spa_t",
+   "title": "1 · Manometry",
+   "lines": [
+    "STRONG contraction throughout"
+   ]
+  },
+  {
+   "id": "spa_inv_1_0",
+   "x": 993,
+   "y": 844,
+   "w": 218,
+   "h": 78,
+   "kind": "spa_w",
+   "title": "2 · Barium swallow",
+   "lines": [
+    "CORKSCREW esophagus"
+   ]
+  },
+  {
+   "id": "scl_inv_0_0",
+   "x": 1223,
+   "y": 744,
+   "w": 218,
+   "h": 78,
+   "kind": "scl_t",
+   "title": "1 · Manometry",
+   "lines": [
+    "• APERISTALSIS",
+    "• HYPOTENSIVE LES"
+   ]
+  },
+  {
+   "id": "scl_inv_1_0",
+   "x": 1223,
+   "y": 844,
+   "w": 218,
+   "h": 78,
+   "kind": "scl_w",
+   "title": "Leads to",
+   "lines": [
+    "• strictures",
+    "• Barrett's esophagus"
+   ]
+  },
+  {
+   "id": "rw_tx_0_0",
+   "x": 45,
+   "y": 962,
+   "w": 218,
+   "h": 92,
+   "kind": "ok",
+   "title": "1 · Esophageal DILATATION",
+   "lines": [
+    "rings respond very well"
+   ]
+  },
+  {
+   "id": "rw_tx_1_0",
+   "x": 45,
+   "y": 1076,
+   "w": 218,
+   "h": 110,
+   "kind": "ok",
+   "title": "2 · Stricture: treat the GERD",
+   "lines": [
+    "proton pump inhibitor (PPI) or H2 blocker"
+   ]
+  },
+  {
+   "id": "eoe_tx_0_0",
+   "x": 275,
+   "y": 962,
+   "w": 218,
+   "h": 224,
+   "kind": "ok",
+   "title": "Options",
+   "lines": [
+    "• PPI",
+    "• SWALLOWED topical steroids",
+    "• dilation",
+    "• food elimination"
+   ]
+  },
+  {
+   "id": "ca_tx_0_0",
+   "x": 505,
+   "y": 962,
+   "w": 218,
+   "h": 224,
+   "kind": "warn",
+   "title": "See the LUMINAL GI MALIGNANCIES lecture",
+   "lines": []
+  },
+  {
+   "id": "ach_tx_0_0",
+   "x": 763,
+   "y": 962,
+   "w": 218,
+   "h": 60,
+   "kind": "ok",
+   "title": "Sublingual nifedipine",
+   "lines": [
+    "mild to moderate"
+   ]
+  },
+  {
+   "id": "ach_tx_1_0",
+   "x": 763,
+   "y": 1044,
+   "w": 218,
+   "h": 42,
+   "kind": "ok",
+   "title": "Pneumatic dilatation",
+   "lines": []
+  },
+  {
+   "id": "ach_tx_2_0",
+   "x": 763,
+   "y": 1108,
+   "w": 218,
+   "h": 78,
+   "kind": "warn",
+   "title": "Myotomy",
+   "lines": [
+    "• per-oral endoscopic (POEM)",
+    "• laparoscopic Heller"
+   ]
+  },
+  {
+   "id": "spa_tx_0_0",
+   "x": 993,
+   "y": 962,
+   "w": 218,
+   "h": 92,
+   "kind": "ok",
+   "title": "1 · Reassurance",
+   "lines": []
+  },
+  {
+   "id": "spa_tx_1_0",
+   "x": 993,
+   "y": 1076,
+   "w": 218,
+   "h": 110,
+   "kind": "ok",
+   "title": "2 · Muscle relaxants",
+   "lines": [
+    "e.g. calcium channel blockers"
+   ]
+  },
+  {
+   "id": "scl_tx_0_0",
+   "x": 1223,
+   "y": 962,
+   "w": 218,
+   "h": 102,
+   "kind": "ok",
+   "title": "AGGRESSIVE anti-reflux therapy",
+   "lines": []
+  },
+  {
+   "id": "scl_tx_1_0",
+   "x": 1223,
+   "y": 1086,
+   "w": 218,
+   "h": 100,
+   "kind": "bad",
+   "title": "NO Nissen fundoplication",
+   "lines": [
+    "contraindicated"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_mech",
+   "path": "M743.0 88V113H384.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_mot",
+   "path": "M743.0 88V113H1102.0V138"
+  },
+  {
+   "from": "ca_pres_0_0",
+   "to": "ca_pres_1_0"
+  },
+  {
+   "from": "rw_inv_0_0",
+   "to": "rw_inv_1_0"
+  },
+  {
+   "from": "ca_inv_0_0",
+   "to": "ca_inv_1_0"
+  },
+  {
+   "from": "ach_inv_0_0",
+   "to": "ach_inv_1_0"
+  },
+  {
+   "from": "spa_inv_0_0",
+   "to": "spa_inv_1_0"
+  },
+  {
+   "from": "scl_inv_0_0",
+   "to": "scl_inv_1_0"
+  },
+  {
+   "from": "rw_tx_0_0",
+   "to": "rw_tx_1_0"
+  },
+  {
+   "from": "ach_tx_0_0",
+   "to": "ach_tx_1_0"
+  },
+  {
+   "from": "ach_tx_1_0",
+   "to": "ach_tx_2_0"
+  },
+  {
+   "from": "spa_tx_0_0",
+   "to": "spa_tx_1_0"
+  },
+  {
+   "from": "scl_tx_0_0",
+   "to": "scl_tx_1_0"
+  },
+  {
+   "from": "rw_head_0_0",
+   "to": "rw_pres_0_0"
+  },
+  {
+   "from": "rw_pres_0_0",
+   "to": "rw_inv_0_0"
+  },
+  {
+   "from": "rw_inv_1_0",
+   "to": "rw_tx_0_0"
+  },
+  {
+   "from": "g_mech",
+   "to": "rw_head_0_0",
+   "from_dx": -230,
+   "label": "SYMMETRIC narrowing",
+   "label_at": [
+    154.0,
+    256
+   ]
+  },
+  {
+   "from": "eoe_head_0_0",
+   "to": "eoe_pres_0_0"
+  },
+  {
+   "from": "eoe_pres_0_0",
+   "to": "eoe_inv_0_0"
+  },
+  {
+   "from": "eoe_inv_0_0",
+   "to": "eoe_tx_0_0"
+  },
+  {
+   "from": "g_mech",
+   "to": "eoe_head_0_0",
+   "from_dx": 0,
+   "label": "young, atopic",
+   "label_at": [
+    384.0,
+    256
+   ]
+  },
+  {
+   "from": "ca_head_0_0",
+   "to": "ca_pres_0_0"
+  },
+  {
+   "from": "ca_pres_1_0",
+   "to": "ca_inv_0_0"
+  },
+  {
+   "from": "ca_inv_1_0",
+   "to": "ca_tx_0_0"
+  },
+  {
+   "from": "g_mech",
+   "to": "ca_head_0_0",
+   "from_dx": 230,
+   "label": "PROGRESSIVE",
+   "label_at": [
+    614.0,
+    256
+   ]
+  },
+  {
+   "from": "ach_head_0_0",
+   "to": "ach_pres_0_0"
+  },
+  {
+   "from": "ach_pres_0_0",
+   "to": "ach_inv_0_0"
+  },
+  {
+   "from": "ach_inv_1_0",
+   "to": "ach_tx_0_0"
+  },
+  {
+   "from": "g_mot",
+   "to": "ach_head_0_0",
+   "from_dx": -230,
+   "label": "NO peristalsis",
+   "label_at": [
+    872.0,
+    256
+   ]
+  },
+  {
+   "from": "spa_head_0_0",
+   "to": "spa_pres_0_0"
+  },
+  {
+   "from": "spa_pres_0_0",
+   "to": "spa_inv_0_0"
+  },
+  {
+   "from": "spa_inv_1_0",
+   "to": "spa_tx_0_0"
+  },
+  {
+   "from": "g_mot",
+   "to": "spa_head_0_0",
+   "from_dx": 0,
+   "label": "CORKSCREW",
+   "label_at": [
+    1102.0,
+    256
+   ]
+  },
+  {
+   "from": "scl_head_0_0",
+   "to": "scl_pres_0_0"
+  },
+  {
+   "from": "scl_pres_0_0",
+   "to": "scl_inv_0_0"
+  },
+  {
+   "from": "scl_inv_1_0",
+   "to": "scl_tx_0_0"
+  },
+  {
+   "from": "g_mot",
+   "to": "scl_head_0_0",
+   "from_dx": 230,
+   "label": "+ HEARTBURN",
+   "label_at": [
+    1332.0,
+    256
+   ]
+  }
+ ],
+ "panels": []
+}

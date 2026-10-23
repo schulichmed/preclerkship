@@ -1,0 +1,637 @@
+{
+ "name": "valve surgery overview",
+ "width": 1404,
+ "title": "Valve surgery decision chart: leaky (regurgitant) valves are repaired where possible, tight (stenotic) valves are replaced; severe aortic stenosis is replaced surgically when the patient will live more than 5 to 7 years or by transcatheter implantation in elderly moderate-to-high-risk patients; a replacement valve is mechanical (durable, lifelong anticoagulation) or bioprosthetic (no anticoagulation, wears out in about 15 years), chosen by age, anticoagulation risk and conditions that wear tissue valves out",
+ "kinds": {
+  "rp_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rp_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "rp_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "sv_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sv_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "sv_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ta_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ta_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ta_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "me_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "me_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "me_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "bi_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "bi_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "bi_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 290,
+   "w": 258,
+   "h": 710,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 328,
+   "y": 290,
+   "w": 258,
+   "h": 710,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 588,
+   "y": 290,
+   "w": 258,
+   "h": 710,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 876,
+   "y": 290,
+   "w": 258,
+   "h": 710,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1136,
+   "y": 290,
+   "w": 258,
+   "h": 710,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 436,
+   "h": 180,
+   "text": "CHOOSE WHEN"
+  },
+  {
+   "x": 23,
+   "y": 656,
+   "h": 116,
+   "text": "WHY"
+  },
+  {
+   "x": 23,
+   "y": 812,
+   "h": 180,
+   "text": "THE PRICE"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 337,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A valve needs surgery (WHEN: see the VALVULAR HEART DISEASE chart): REPAIR or REPLACE, and WITH WHAT?",
+   "lines": [
+    "LEAKY (regurgitant) → REPAIR · TIGHT (stenotic: calcific aortic, rheumatic mitral) → must be REPLACED",
+    "the best valve is your own: every prosthesis can deteriorate, leak, clot or get infected"
+   ]
+  },
+  {
+   "id": "g_rp",
+   "x": 45,
+   "y": 158,
+   "w": 248,
+   "h": 60,
+   "kind": "plain",
+   "title": "LEAKY: REPAIR",
+   "lines": [
+    "above all the mitral valve"
+   ]
+  },
+  {
+   "id": "g_as",
+   "x": 333,
+   "y": 158,
+   "w": 508,
+   "h": 60,
+   "kind": "plain",
+   "title": "SEVERE AORTIC STENOSIS: which ROUTE?",
+   "lines": [
+    "no medical therapy; untreated, survival is poor"
+   ]
+  },
+  {
+   "id": "g_pr",
+   "x": 881,
+   "y": 158,
+   "w": 508,
+   "h": 60,
+   "kind": "plain",
+   "title": "REPLACING: which PROSTHESIS?",
+   "lines": [
+    "age, bleeding risk, and what wears tissue out"
+   ]
+  },
+  {
+   "id": "rp_head_0_0",
+   "x": 45,
+   "y": 298,
+   "w": 248,
+   "h": 98,
+   "kind": "rp_h",
+   "title": "Valve REPAIR",
+   "lines": [
+    "resection, neochordae, annular band; aortic root: valve-sparing"
+   ]
+  },
+  {
+   "id": "sv_head_0_0",
+   "x": 333,
+   "y": 298,
+   "w": 248,
+   "h": 98,
+   "kind": "sv_h",
+   "title": "Surgical replacement (SAVR)",
+   "lines": [
+    "sternotomy or minimally invasive"
+   ]
+  },
+  {
+   "id": "ta_head_0_0",
+   "x": 593,
+   "y": 298,
+   "w": 248,
+   "h": 98,
+   "kind": "ta_h",
+   "title": "Transcatheter implantation (TAVI)",
+   "lines": [
+    "femoral artery, under fluoroscopy + echo"
+   ]
+  },
+  {
+   "id": "me_head_0_0",
+   "x": 881,
+   "y": 298,
+   "w": 248,
+   "h": 98,
+   "kind": "me_h",
+   "title": "MECHANICAL valve",
+   "lines": [
+    "bileaflet carbon (St Jude, On-X)"
+   ]
+  },
+  {
+   "id": "bi_head_0_0",
+   "x": 1141,
+   "y": 298,
+   "w": 248,
+   "h": 98,
+   "kind": "bi_h",
+   "title": "BIOPROSTHETIC (tissue) valve",
+   "lines": [
+    "porcine valve or bovine pericardium"
+   ]
+  },
+  {
+   "id": "rp_use_0_0",
+   "x": 45,
+   "y": 436,
+   "w": 248,
+   "h": 180,
+   "kind": "rp_t",
+   "title": "Myxomatous or FLAIL mitral valve",
+   "lines": [
+    "• NEVER replace a flail valve",
+    "• operate EARLY, before New York Heart Association (NYHA) class III–IV"
+   ]
+  },
+  {
+   "id": "sv_use_0_0",
+   "x": 333,
+   "y": 436,
+   "w": 248,
+   "h": 69,
+   "kind": "sv_t",
+   "title": "Expected to live > 5–7 YEARS",
+   "lines": [
+    "the GOLD standard"
+   ]
+  },
+  {
+   "id": "sv_use_1_0",
+   "x": 333,
+   "y": 527,
+   "w": 248,
+   "h": 89,
+   "kind": "sv_w",
+   "title": "Sternotomy if other work is needed",
+   "lines": [
+    "bypass grafting, an arrhythmia ablation"
+   ]
+  },
+  {
+   "id": "ta_use_0_0",
+   "x": 593,
+   "y": 436,
+   "w": 248,
+   "h": 98,
+   "kind": "ta_t",
+   "title": "ELDERLY, moderate-to-HIGH surgical risk",
+   "lines": [
+    "e.g. 80 years with calcific AS: standard of care"
+   ]
+  },
+  {
+   "id": "ta_use_1_0",
+   "x": 593,
+   "y": 556,
+   "w": 248,
+   "h": 60,
+   "kind": "ta_w",
+   "title": "Low-risk patients",
+   "lines": [
+    "long-term data still awaited"
+   ]
+  },
+  {
+   "id": "me_use_0_0",
+   "x": 881,
+   "y": 436,
+   "w": 248,
+   "h": 79,
+   "kind": "me_t",
+   "title": "YOUNGER patient",
+   "lines": [
+    "e.g. 55 with a bicuspid valve (or a Ross procedure)"
+   ]
+  },
+  {
+   "id": "me_use_1_0",
+   "x": 881,
+   "y": 537,
+   "w": 248,
+   "h": 79,
+   "kind": "me_w",
+   "title": "Tissue would wear out fast",
+   "lines": [
+    "• dialysis, diabetes, disordered Ca2+",
+    "• if anticoagulation is acceptable"
+   ]
+  },
+  {
+   "id": "bi_use_0_0",
+   "x": 1141,
+   "y": 436,
+   "w": 248,
+   "h": 70,
+   "kind": "bi_t",
+   "title": "OLDER patient",
+   "lines": []
+  },
+  {
+   "id": "bi_use_1_0",
+   "x": 1141,
+   "y": 528,
+   "w": 248,
+   "h": 88,
+   "kind": "bi_w",
+   "title": "Cannot take anticoagulation",
+   "lines": [
+    "a bleeding history"
+   ]
+  },
+  {
+   "id": "rp_gain_0_0",
+   "x": 45,
+   "y": 656,
+   "w": 248,
+   "h": 116,
+   "kind": "ok",
+   "title": "Restores normal life expectancy",
+   "lines": [
+    "• no anticoagulation, less bleeding",
+    "• less infection and thromboembolism",
+    "• more valve area than a prosthesis"
+   ]
+  },
+  {
+   "id": "sv_gain_0_0",
+   "x": 333,
+   "y": 656,
+   "w": 248,
+   "h": 116,
+   "kind": "ok",
+   "title": "Mortality 1–2%",
+   "lines": [
+    "symptoms resolve, survival improves"
+   ]
+  },
+  {
+   "id": "ta_gain_0_0",
+   "x": 593,
+   "y": 656,
+   "w": 248,
+   "h": 116,
+   "kind": "ok",
+   "title": "Treating AS saves lives",
+   "lines": [
+    "and improves quality of life"
+   ]
+  },
+  {
+   "id": "me_gain_0_0",
+   "x": 881,
+   "y": 656,
+   "w": 248,
+   "h": 116,
+   "kind": "ok",
+   "title": "Lasts",
+   "lines": [
+    "no structural failure"
+   ]
+  },
+  {
+   "id": "bi_gain_0_0",
+   "x": 1141,
+   "y": 656,
+   "w": 248,
+   "h": 116,
+   "kind": "ok",
+   "title": "NO long-term anticoagulation",
+   "lines": [
+    "less thrombosis and endocarditis"
+   ]
+  },
+  {
+   "id": "rp_cost_0_0",
+   "x": 45,
+   "y": 812,
+   "w": 248,
+   "h": 180,
+   "kind": "warn",
+   "title": "Not for stenotic, unrepairable or endocarditis-destroyed valves",
+   "lines": [
+    "→ REPLACE"
+   ]
+  },
+  {
+   "id": "sv_cost_0_0",
+   "x": 333,
+   "y": 812,
+   "w": 248,
+   "h": 180,
+   "kind": "warn",
+   "title": "Bypass + cardioplegic arrest",
+   "lines": [
+    "4–5 days in hospital, 1 month at home"
+   ]
+  },
+  {
+   "id": "ta_cost_0_0",
+   "x": 593,
+   "y": 812,
+   "w": 248,
+   "h": 180,
+   "kind": "bad",
+   "title": "Complications",
+   "lines": [
+    "• septum: heart block, VSD",
+    "• coronary obstruction (MI), paravalvular leak",
+    "• mitral leaflet: MR"
+   ]
+  },
+  {
+   "id": "me_cost_0_0",
+   "x": 881,
+   "y": 812,
+   "w": 248,
+   "h": 60,
+   "kind": "bad",
+   "title": "LIFELONG anticoagulation",
+   "lines": [
+    "INR: aortic 2–3 · mitral 2.5–3.5"
+   ]
+  },
+  {
+   "id": "me_cost_1_0",
+   "x": 881,
+   "y": 894,
+   "w": 248,
+   "h": 98,
+   "kind": "bad",
+   "title": "NOT if anticoagulation is a problem",
+   "lines": [
+    "• pregnancy",
+    "• a bleeding history, the elderly"
+   ]
+  },
+  {
+   "id": "bi_cost_0_0",
+   "x": 1141,
+   "y": 812,
+   "w": 248,
+   "h": 180,
+   "kind": "warn",
+   "title": "WEARS OUT: ~15 years",
+   "lines": [
+    "mitral faster than aortic"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_rp",
+   "path": "M717.0 108V133H169.0V158"
+  },
+  {
+   "from": "root",
+   "to": "g_as",
+   "path": "M717.0 108V133H587.0V158"
+  },
+  {
+   "from": "root",
+   "to": "g_pr",
+   "path": "M717.0 108V133H1135.0V158"
+  },
+  {
+   "from": "sv_use_0_0",
+   "to": "sv_use_1_0"
+  },
+  {
+   "from": "ta_use_0_0",
+   "to": "ta_use_1_0"
+  },
+  {
+   "from": "me_use_0_0",
+   "to": "me_use_1_0"
+  },
+  {
+   "from": "bi_use_0_0",
+   "to": "bi_use_1_0"
+  },
+  {
+   "from": "me_cost_0_0",
+   "to": "me_cost_1_0"
+  },
+  {
+   "from": "rp_head_0_0",
+   "to": "rp_use_0_0"
+  },
+  {
+   "from": "rp_use_0_0",
+   "to": "rp_gain_0_0"
+  },
+  {
+   "from": "rp_gain_0_0",
+   "to": "rp_cost_0_0"
+  },
+  {
+   "from": "g_rp",
+   "to": "rp_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "sv_head_0_0",
+   "to": "sv_use_0_0"
+  },
+  {
+   "from": "sv_use_1_0",
+   "to": "sv_gain_0_0"
+  },
+  {
+   "from": "sv_gain_0_0",
+   "to": "sv_cost_0_0"
+  },
+  {
+   "from": "g_as",
+   "to": "sv_head_0_0",
+   "from_dx": -130
+  },
+  {
+   "from": "ta_head_0_0",
+   "to": "ta_use_0_0"
+  },
+  {
+   "from": "ta_use_1_0",
+   "to": "ta_gain_0_0"
+  },
+  {
+   "from": "ta_gain_0_0",
+   "to": "ta_cost_0_0"
+  },
+  {
+   "from": "g_as",
+   "to": "ta_head_0_0",
+   "from_dx": 130
+  },
+  {
+   "from": "me_head_0_0",
+   "to": "me_use_0_0"
+  },
+  {
+   "from": "me_use_1_0",
+   "to": "me_gain_0_0"
+  },
+  {
+   "from": "me_gain_0_0",
+   "to": "me_cost_0_0"
+  },
+  {
+   "from": "g_pr",
+   "to": "me_head_0_0",
+   "from_dx": -130
+  },
+  {
+   "from": "bi_head_0_0",
+   "to": "bi_use_0_0"
+  },
+  {
+   "from": "bi_use_1_0",
+   "to": "bi_gain_0_0"
+  },
+  {
+   "from": "bi_gain_0_0",
+   "to": "bi_cost_0_0"
+  },
+  {
+   "from": "g_pr",
+   "to": "bi_head_0_0",
+   "from_dx": 130
+  }
+ ],
+ "panels": []
+}

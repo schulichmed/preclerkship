@@ -1,0 +1,50 @@
+{
+ "name": "antivirals overview",
+ "title": "Antivirals decision chart: the virus picks the drug. Herpesviruses: acyclovir or valacyclovir for HSV and VZV, ganciclovir or valganciclovir for CMV, foscarnet for resistant virus. Influenza: oral oseltamivir, inhaled zanamivir or single-dose baloxavir, each with when to choose it, dose and route, and what to watch",
+ "col_w": 212,
+ "root": {
+  "title": "Antivirals: WHICH VIRUS picks the drug",
+  "lines": [
+   "herpesviruses: block viral DNA polymerase · influenza: mostly block neuraminidase, so new virus cannot leave the cell",
+   "almost all are cleared by the kidney: ADJUST the dose in renal dysfunction"
+  ]
+ },
+ "groups": [
+  {"id": "g_hv", "cols": [0, 2], "title": "HERPESVIRUS: which one?", "lines": ["oral prodrugs (VAL-) raise bioavailability to 55%"]},
+  {"id": "g_fl", "cols": [3, 5], "title": "INFLUENZA: shortens symptoms by only ~1 DAY", "lines": ["reasonable to try in the VERY sick · pick by route"]}
+ ],
+ "sections": ["head", "use", "dose", "watch"],
+ "row_names": {"use": "CHOOSE WHEN", "dose": "ROUTE + DOSE", "watch": "WATCH"},
+ "columns": [
+  {"id": "ac", "colour": "teal", "drop_from": "g_hv", "drop_label": "HSV, VZV",
+   "head": [[["h", "Acyclovir / valacyclovir", ["guanosine analogues"]]]],
+   "use": [[["t", "Herpes simplex 1 + 2, varicella-zoster", ["• oral → VALACYCLOVIR (Valtrex)", "• acyclovir alone: 10–20% absorbed"]]]],
+   "dose": [[["w", "Oral or IV", ["• valacyclovir 1 g po TID or 2 g po BID", "• acyclovir 10 mg/kg IV q8h"]]]],
+   "watch": [[["warn", "Kidneys + blood counts", ["• renal dysfunction", "• anemia, neutropenia, low platelets"]]]]},
+  {"id": "ga", "colour": "purple", "drop_from": "g_hv", "drop_label": "CMV",
+   "head": [[["h", "Ganciclovir / valganciclovir", ["guanosine analogues"]]]],
+   "use": [[["t", "Cytomegalovirus (CMV)", ["• oral → VALGANCICLOVIR", "• ganciclovir (Cytovene): IV only"]]]],
+   "dose": [[["w", "Oral or IV", ["• valganciclovir 900 mg po q12h or daily", "• ganciclovir 5 mg/kg IV q12h"]]]],
+   "watch": [[["warn", "Kidneys + blood counts", ["• renal dysfunction, fever", "• anemia, neutropenia, low platelets"]]]]},
+  {"id": "fo", "colour": "orange", "drop_from": "g_hv", "drop_label": "RESISTANT",
+   "head": [[["h", "Foscarnet", ["pyrophosphate analogue"]]]],
+   "use": [[["t", "DRUG-RESISTANT virus, CMV", ["when the guanosine analogue fails"]]]],
+   "dose": [[["w", "IV only", ["• 60 mg/kg IV q8h", "• or 90 mg/kg IV q12h"]]]],
+   "watch": [[["bad", "ELECTROLYTE disturbances", ["• renal dysfunction", "• anemia, granulocytopenia"]]]]},
+  {"id": "os", "colour": "blue", "drop_from": "g_fl", "drop_label": "ORAL",
+   "head": [[["h", "Oseltamivir (Tamiflu)", ["neuraminidase inhibitor"]]]],
+   "use": [[["t", "Treatment or prevention", ["the oral option"]]]],
+   "dose": [[["w", "Oral", ["• treat: 75 mg po q12h × 5 days", "• prevent: 75 mg po daily"]]]],
+   "watch": [[["warn", "ADJUST for kidneys", ["headache, nausea, vomiting"]]]]},
+  {"id": "za", "colour": "magenta", "drop_from": "g_fl", "drop_label": "INHALED",
+   "head": [[["h", "Zanamivir (Relenza)", ["neuraminidase inhibitor"]]]],
+   "use": [[["t", "Treatment or prevention", ["the inhaled option"]]]],
+   "dose": [[["w", "Inhaled", ["• treat: 2 inhalations (10 mg) q12h × 5 days", "• prevent: 2 inhalations daily"]]]],
+   "watch": [[["ok", "NO renal dose adjustment", ["but monitor for accumulation"]]]]},
+  {"id": "ba", "colour": "olive", "drop_from": "g_fl", "drop_label": "ONE DOSE",
+   "head": [[["h", "Baloxavir marboxil", ["blocks viral RNA replication (cap-dependent endonuclease)"]]]],
+   "use": [[["t", "A SINGLE oral dose", ["NOT available in Canada"]]]],
+   "dose": [[["w", "By weight, once", ["• 40–80 kg: 40 mg po", "• ≥ 80 kg: 80 mg po"]]]],
+   "watch": [[["warn", "Also only ~1 day shorter", ["nausea, nasopharyngitis"]]]]}
+ ]
+}

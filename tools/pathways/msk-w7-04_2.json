@@ -1,0 +1,842 @@
+{
+ "name": "axial spine radiology overview",
+ "width": 1600,
+ "title": "Reading a spine X-ray: after the ABCS sweep, each abnormality has its view, its sign and what it means next: fracture (stable or unstable), facet dislocation, pars defect and spondylolisthesis, scoliosis by Cobb angle, ankylosing spondylitis and sacroiliitis, and prevertebral soft-tissue swelling; normal variants are not disease",
+ "kinds": {
+  "frx_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "frx_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "frx_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "fac_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fac_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "fac_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "par_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "par_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "par_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "sco_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sco_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "sco_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "as_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "as_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "as_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "pvs_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pvs_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "pvs_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 238,
+   "h": 764,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 280,
+   "y": 288,
+   "w": 238,
+   "h": 764,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 548,
+   "y": 288,
+   "w": 238,
+   "h": 764,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 816,
+   "y": 288,
+   "w": 238,
+   "h": 764,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1084,
+   "y": 288,
+   "w": 238,
+   "h": 764,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1352,
+   "y": 288,
+   "w": 238,
+   "h": 764,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 414,
+   "h": 254,
+   "text": "VIEW AND SIGN"
+  },
+  {
+   "x": 23,
+   "y": 708,
+   "h": 336,
+   "text": "WHAT IT MEANS"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 435,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Spine X-ray: which view shows it, what is the sign, and what happens next?",
+   "lines": [
+    "every film, ABCS: Alignment · Bones · Cartilage (disc spaces, facets) · Soft tissues, then the whole image",
+    "compare with previous imaging when you have it"
+   ]
+  },
+  {
+   "id": "g_tr",
+   "x": 45,
+   "y": 138,
+   "w": 468,
+   "h": 78,
+   "kind": "plain",
+   "title": "TRAUMA",
+   "lines": [
+    "most acute trauma gets CT, not X-ray",
+    "in a collar: NO oblique views"
+   ]
+  },
+  {
+   "id": "g_pe",
+   "x": 553,
+   "y": 138,
+   "w": 228,
+   "h": 78,
+   "kind": "plain",
+   "title": "POSTERIOR ELEMENTS",
+   "lines": [
+    "low back pain"
+   ]
+  },
+  {
+   "id": "g_cv",
+   "x": 821,
+   "y": 138,
+   "w": 228,
+   "h": 78,
+   "kind": "plain",
+   "title": "CURVE",
+   "lines": [
+    "AP view"
+   ]
+  },
+  {
+   "id": "g_in",
+   "x": 1089,
+   "y": 138,
+   "w": 228,
+   "h": 78,
+   "kind": "plain",
+   "title": "INFLAMMATORY",
+   "lines": [
+    "mostly seronegative"
+   ]
+  },
+  {
+   "id": "g_st",
+   "x": 1357,
+   "y": 138,
+   "w": 228,
+   "h": 78,
+   "kind": "plain",
+   "title": "SOFT TISSUES",
+   "lines": [
+    "lateral cervical view"
+   ]
+  },
+  {
+   "id": "frx_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 228,
+   "h": 78,
+   "kind": "frx_h",
+   "title": "Vertebral fracture",
+   "lines": [
+    "compression · wedge · burst · teardrop"
+   ]
+  },
+  {
+   "id": "fac_head_0_0",
+   "x": 285,
+   "y": 296,
+   "w": 228,
+   "h": 78,
+   "kind": "fac_h",
+   "title": "Facet dislocation",
+   "lines": [
+    "unilateral or bilateral"
+   ]
+  },
+  {
+   "id": "par_head_0_0",
+   "x": 553,
+   "y": 296,
+   "w": 228,
+   "h": 78,
+   "kind": "par_h",
+   "title": "Spondylolysis",
+   "lines": [
+    "defect in the pars interarticularis"
+   ]
+  },
+  {
+   "id": "sco_head_0_0",
+   "x": 821,
+   "y": 296,
+   "w": 228,
+   "h": 78,
+   "kind": "sco_h",
+   "title": "Scoliosis",
+   "lines": [
+    "sideways curve ± rotation"
+   ]
+  },
+  {
+   "id": "as_head_0_0",
+   "x": 1089,
+   "y": 296,
+   "w": 228,
+   "h": 78,
+   "kind": "as_h",
+   "title": "Ankylosing spondylitis",
+   "lines": [
+    "spine + sacroiliac joints"
+   ]
+  },
+  {
+   "id": "pvs_head_0_0",
+   "x": 1357,
+   "y": 296,
+   "w": 228,
+   "h": 78,
+   "kind": "pvs_h",
+   "title": "Prevertebral swelling",
+   "lines": [
+    "abscess · trauma · hematoma"
+   ]
+  },
+  {
+   "id": "frx_look_0_0",
+   "x": 45,
+   "y": 414,
+   "w": 228,
+   "h": 125,
+   "kind": "frx_t",
+   "title": "Lateral view",
+   "lines": [
+    "• loss of vertebral body height",
+    "• break in the alignment lines",
+    "• fragment pushed back to the canal"
+   ]
+  },
+  {
+   "id": "frx_look_1_0",
+   "x": 45,
+   "y": 561,
+   "w": 228,
+   "h": 107,
+   "kind": "frx_w",
+   "title": "Lateral cervical: 4 lines",
+   "lines": [
+    "anterior vertebral · posterior vertebral · spinolaminar · spinous process"
+   ]
+  },
+  {
+   "id": "fac_look_0_0",
+   "x": 285,
+   "y": 414,
+   "w": 228,
+   "h": 125,
+   "kind": "fac_t",
+   "title": "Lateral: PERCHED facets",
+   "lines": [
+    "• facets lose their parallel line",
+    "• vertebra slips forward (spondylolisthesis)"
+   ]
+  },
+  {
+   "id": "fac_look_1_0",
+   "x": 285,
+   "y": 561,
+   "w": 228,
+   "h": 107,
+   "kind": "fac_w",
+   "title": "AP: spinous processes",
+   "lines": [
+    "off the midline, uneven spacing",
+    "~use it when there is no lateral"
+   ]
+  },
+  {
+   "id": "par_look_0_0",
+   "x": 553,
+   "y": 414,
+   "w": 228,
+   "h": 134,
+   "kind": "par_t",
+   "title": "Oblique lumbar: 'Scottie dog'",
+   "lines": [
+    "• COLLAR on the dog's neck = pars defect",
+    "~nose transverse process · ear superior facet · leg inferior facet"
+   ]
+  },
+  {
+   "id": "par_look_1_0",
+   "x": 553,
+   "y": 570,
+   "w": 228,
+   "h": 98,
+   "kind": "par_w",
+   "title": "Lateral: vertebra slipped forward",
+   "lines": [
+    "e.g. L4 on L5, measured in mm",
+    "~pars defect often shows here too"
+   ]
+  },
+  {
+   "id": "sco_look_0_0",
+   "x": 821,
+   "y": 414,
+   "w": 228,
+   "h": 116,
+   "kind": "sco_t",
+   "title": "Cobb angle",
+   "lines": [
+    "superior endplate of the top tilted vertebra, inferior endplate of the bottom one: angle between the perpendiculars"
+   ]
+  },
+  {
+   "id": "sco_look_1_0",
+   "x": 821,
+   "y": 552,
+   "w": 228,
+   "h": 116,
+   "kind": "sco_w",
+   "title": "Rotation",
+   "lines": [
+    "pedicles change shape and position",
+    "~primary curve + compensatory curve"
+   ]
+  },
+  {
+   "id": "as_look_0_0",
+   "x": 1089,
+   "y": 414,
+   "w": 228,
+   "h": 107,
+   "kind": "as_t",
+   "title": "Spine",
+   "lines": [
+    "• ossified longitudinal ligaments",
+    "• bony bridging across discs",
+    "• fused facet joints"
+   ]
+  },
+  {
+   "id": "as_look_1_0",
+   "x": 1089,
+   "y": 543,
+   "w": 228,
+   "h": 125,
+   "kind": "as_w",
+   "title": "Sacroiliitis",
+   "lines": [
+    "• erosions both sides (pseudo-widening)",
+    "• sclerosis, mostly iliac side",
+    "• ankylosis is LATE"
+   ]
+  },
+  {
+   "id": "pvs_look_0_0",
+   "x": 1357,
+   "y": 414,
+   "w": 228,
+   "h": 134,
+   "kind": "pvs_t",
+   "title": "Too wide if",
+   "lines": [
+    "• over 7 mm at C2",
+    "• over 22 mm at C6",
+    "• wider than the vertebral body at C5–C6"
+   ]
+  },
+  {
+   "id": "pvs_look_1_0",
+   "x": 1357,
+   "y": 570,
+   "w": 228,
+   "h": 98,
+   "kind": "pvs_w",
+   "title": "Also check",
+   "lines": [
+    "airway smooth and open · air locules"
+   ]
+  },
+  {
+   "id": "frx_next_0_0",
+   "x": 45,
+   "y": 708,
+   "w": 228,
+   "h": 96,
+   "kind": "ok",
+   "title": "Anterior body only",
+   "lines": [
+    "more likely STABLE",
+    "e.g. simple wedge (front-top corner)"
+   ]
+  },
+  {
+   "id": "frx_next_1_0",
+   "x": 45,
+   "y": 826,
+   "w": 228,
+   "h": 98,
+   "kind": "bad",
+   "title": "Into the POSTERIOR elements",
+   "lines": [
+    "UNSTABLE",
+    "e.g. hangman's (both pars of C2)"
+   ]
+  },
+  {
+   "id": "frx_next_2_0",
+   "x": 45,
+   "y": 946,
+   "w": 228,
+   "h": 98,
+   "kind": "frx_w",
+   "title": "Painful compression fracture",
+   "lines": [
+    "vertebroplasty (cement): pain relief, does NOT restore height"
+   ]
+  },
+  {
+   "id": "fac_next_0_0",
+   "x": 285,
+   "y": 708,
+   "w": 228,
+   "h": 138,
+   "kind": "bad",
+   "title": "Cord at risk: MRI + URGENT neurosurgery",
+   "lines": [
+    "the cord cannot be seen on X-ray"
+   ]
+  },
+  {
+   "id": "fac_next_1_0",
+   "x": 285,
+   "y": 868,
+   "w": 228,
+   "h": 176,
+   "kind": "warn",
+   "title": "Widened disc space or spinous-process gap, no fracture",
+   "lines": [
+    "ligament injury (X-ray misses it) → MRI"
+   ]
+  },
+  {
+   "id": "par_next_0_0",
+   "x": 553,
+   "y": 708,
+   "w": 228,
+   "h": 97,
+   "kind": "warn",
+   "title": "Pars defect + slip",
+   "lines": [
+    "ISTHMIC spondylolisthesis"
+   ]
+  },
+  {
+   "id": "par_next_1_0",
+   "x": 553,
+   "y": 827,
+   "w": 228,
+   "h": 97,
+   "kind": "par_w",
+   "title": "No pars defect, older adult",
+   "lines": [
+    "DEGENERATIVE spondylolisthesis"
+   ]
+  },
+  {
+   "id": "par_next_2_0",
+   "x": 553,
+   "y": 946,
+   "w": 228,
+   "h": 97,
+   "kind": "ok",
+   "title": "Stabilised by",
+   "lines": [
+    "transpedicular screws + rods"
+   ]
+  },
+  {
+   "id": "sco_next_0_0",
+   "x": 821,
+   "y": 708,
+   "w": 228,
+   "h": 91,
+   "kind": "ok",
+   "title": "Under 10°",
+   "lines": [
+    "normal variant"
+   ]
+  },
+  {
+   "id": "sco_next_1_0",
+   "x": 821,
+   "y": 821,
+   "w": 228,
+   "h": 91,
+   "kind": "warn",
+   "title": "Over 10°",
+   "lines": [
+    "scoliosis"
+   ]
+  },
+  {
+   "id": "sco_next_2_0",
+   "x": 821,
+   "y": 934,
+   "w": 228,
+   "h": 109,
+   "kind": "bad",
+   "title": "Over 50°",
+   "lines": [
+    "consider SURGERY (rods + screws)"
+   ]
+  },
+  {
+   "id": "as_next_0_0",
+   "x": 1089,
+   "y": 708,
+   "w": 228,
+   "h": 157,
+   "kind": "bad",
+   "title": "Rigid spine",
+   "lines": [
+    "fractures next to the more mobile segments"
+   ]
+  },
+  {
+   "id": "as_next_1_0",
+   "x": 1089,
+   "y": 887,
+   "w": 228,
+   "h": 157,
+   "kind": "warn",
+   "title": "Active inflammation?",
+   "lines": [
+    "bone marrow edema → MRI (X-ray misses it)"
+   ]
+  },
+  {
+   "id": "pvs_next_0_0",
+   "x": 1357,
+   "y": 708,
+   "w": 228,
+   "h": 336,
+   "kind": "bad",
+   "title": "Wide + airway pushed forward + air",
+   "lines": [
+    "RETROPHARYNGEAL ABSCESS (anaerobic)"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_tr",
+   "path": "M815.0 88V113H279.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_pe",
+   "path": "M815.0 88V113H667.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_cv",
+   "path": "M815.0 88V113H935.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_in",
+   "path": "M815.0 88V113H1203.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_st",
+   "path": "M815.0 88V113H1471.0V138"
+  },
+  {
+   "from": "frx_look_0_0",
+   "to": "frx_look_1_0"
+  },
+  {
+   "from": "fac_look_0_0",
+   "to": "fac_look_1_0"
+  },
+  {
+   "from": "par_look_0_0",
+   "to": "par_look_1_0"
+  },
+  {
+   "from": "sco_look_0_0",
+   "to": "sco_look_1_0"
+  },
+  {
+   "from": "as_look_0_0",
+   "to": "as_look_1_0"
+  },
+  {
+   "from": "pvs_look_0_0",
+   "to": "pvs_look_1_0"
+  },
+  {
+   "from": "frx_next_0_0",
+   "to": "frx_next_1_0"
+  },
+  {
+   "from": "frx_next_1_0",
+   "to": "frx_next_2_0"
+  },
+  {
+   "from": "fac_next_0_0",
+   "to": "fac_next_1_0"
+  },
+  {
+   "from": "par_next_0_0",
+   "to": "par_next_1_0"
+  },
+  {
+   "from": "par_next_1_0",
+   "to": "par_next_2_0"
+  },
+  {
+   "from": "sco_next_0_0",
+   "to": "sco_next_1_0"
+  },
+  {
+   "from": "sco_next_1_0",
+   "to": "sco_next_2_0"
+  },
+  {
+   "from": "as_next_0_0",
+   "to": "as_next_1_0"
+  },
+  {
+   "from": "frx_head_0_0",
+   "to": "frx_look_0_0"
+  },
+  {
+   "from": "frx_look_1_0",
+   "to": "frx_next_0_0"
+  },
+  {
+   "from": "g_tr",
+   "to": "frx_head_0_0",
+   "from_dx": -120
+  },
+  {
+   "from": "fac_head_0_0",
+   "to": "fac_look_0_0"
+  },
+  {
+   "from": "fac_look_1_0",
+   "to": "fac_next_0_0"
+  },
+  {
+   "from": "g_tr",
+   "to": "fac_head_0_0",
+   "from_dx": 120
+  },
+  {
+   "from": "par_head_0_0",
+   "to": "par_look_0_0"
+  },
+  {
+   "from": "par_look_1_0",
+   "to": "par_next_0_0"
+  },
+  {
+   "from": "g_pe",
+   "to": "par_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "sco_head_0_0",
+   "to": "sco_look_0_0"
+  },
+  {
+   "from": "sco_look_1_0",
+   "to": "sco_next_0_0"
+  },
+  {
+   "from": "g_cv",
+   "to": "sco_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "as_head_0_0",
+   "to": "as_look_0_0"
+  },
+  {
+   "from": "as_look_1_0",
+   "to": "as_next_0_0"
+  },
+  {
+   "from": "g_in",
+   "to": "as_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "pvs_head_0_0",
+   "to": "pvs_look_0_0"
+  },
+  {
+   "from": "pvs_look_1_0",
+   "to": "pvs_next_0_0"
+  },
+  {
+   "from": "g_st",
+   "to": "pvs_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1078,
+   "w": 763,
+   "title": "Normal variants: do not call them disease",
+   "items": [
+    "limbus vertebra: triangle of bone at the front-top corner (unfused ring apophysis), teens, often L4: NOT a fracture",
+    "Schmorl's nodes: dents in the upper or lower endplates, usually incidental",
+    "cervical rib off C7 (C7 transverse process over ~2–2.5 cm): neck pain, arm pain if it presses the neurovascular bundle",
+    "transitional vertebra: lumbarization or sacralization"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 822,
+   "y": 1078,
+   "w": 763,
+   "title": "Numbers and landmarks",
+   "items": [
+    "atlantodental interval: under 3 mm adults, under 5 mm children (more = instability)",
+    "open-mouth view: C1 lateral masses line up with C2",
+    "count: T1 meets the 1st rib · L1 sits below the 12th rib",
+    "read BOTH views: a pedicle replaced by a lytic lesion shows on the AP, barely on the lateral"
+   ],
+   "cols": 1
+  }
+ ]
+}

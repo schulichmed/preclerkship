@@ -1,0 +1,374 @@
+{
+ "name": "polyendocrine metabolic ovarian syndrome overview",
+ "width": 1000,
+ "title": "PMOS pathway: oligomenorrhoea or hyperandrogenism; exclude the seven mimics, read the total testosterone, and treat the symptom that distresses her, with the diagnostic triad (all three needed) across the top",
+ "any_of": {
+  "heading": "PMOS is diagnosed when ALL THREE are met:",
+  "joiner": "AND",
+  "items": [
+   {
+    "title": "Hyperandrogenism",
+    "lines": [
+     "~clinical exam OR labs (↑ testosterone)"
+    ]
+   },
+   {
+    "title": "Ovulatory dysfunction",
+    "lines": [
+     "~oligomenorrhoea OR cystic ovaries on ultrasound"
+    ]
+   },
+   {
+    "title": "Other disorders excluded",
+    "lines": [
+     "~the 7 mimics below"
+    ]
+   }
+  ]
+ },
+ "nodes": [
+  {
+   "id": "start",
+   "x": 310,
+   "y": 10,
+   "w": 380,
+   "kind": "plain",
+   "title": "Oligomenorrhoea and/or hyperandrogenism",
+   "lines": [
+    "~renamed from polycystic ovary syndrome (PCOS) in 2026: the follicles are arrested antral follicles, not cysts"
+   ]
+  },
+  {
+   "id": "labs",
+   "x": 290,
+   "y": 124,
+   "w": 420,
+   "kind": "plain",
+   "title": "History, exam + first-line labs",
+   "lines": [
+    "beta-hCG (human chorionic gonadotropin) · prolactin · TSH (thyroid-stimulating hormone) · total testosterone",
+    "~pelvic ultrasound is NOT required"
+   ]
+  },
+  {
+   "id": "mimic",
+   "x": 360,
+   "y": 260,
+   "w": 280,
+   "kind": "plain",
+   "title": "A mimic?",
+   "lines": [
+    "~the lecture's 7: exclude them first"
+   ]
+  },
+  {
+   "id": "m_oligo",
+   "x": 15,
+   "y": 260,
+   "w": 300,
+   "kind": "bad",
+   "title": "NOT PMOS: mimics of oligomenorrhoea",
+   "lines": [
+    "pregnancy: ↑ beta-hCG",
+    "hyperprolactinaemia: GALACTORRHOEA, ↑ prolactin (normal < 20 nmol/L)",
+    "hyperthyroidism: ↓ TSH, ↑ free T4",
+    "early menarche or menopause: menstrual history"
+   ],
+   "h": 170
+  },
+  {
+   "id": "m_andro",
+   "x": 685,
+   "y": 260,
+   "w": 300,
+   "kind": "bad",
+   "title": "NOT PMOS: mimics of hyperandrogenism",
+   "lines": [
+    "exogenous testosterone, incl. a PARTNER's topical gel: medication + social history",
+    "tumour, ovary or adrenal: RAPID onset, ↑↑↑ testosterone → imaging",
+    "non-classic congenital adrenal hyperplasia (CAH): ↑ 17-hydroxyprogesterone"
+   ],
+   "h": 170
+  },
+  {
+   "id": "testo",
+   "x": 330,
+   "y": 470,
+   "w": 340,
+   "kind": "plain",
+   "title": "Read the total testosterone",
+   "lines": [
+    "~the only androgen used (not DHEAS or androstenedione) · female normal < 2 nmol/L"
+   ]
+  },
+  {
+   "id": "t_norm",
+   "x": 15,
+   "y": 598,
+   "w": 300,
+   "kind": "warn",
+   "title": "Normal (< 2 nmol/L)",
+   "lines": [
+    "does NOT exclude PMOS: the exam (terminal male-pattern hair, acne, alopecia) can meet this limb"
+   ],
+   "h": 96
+  },
+  {
+   "id": "t_fit",
+   "x": 350,
+   "y": 598,
+   "w": 300,
+   "kind": "ok",
+   "title": "~2.1–2.5 nmol/L",
+   "lines": [
+    "slightly raised: fits PMOS"
+   ],
+   "h": 96
+  },
+  {
+   "id": "t_tum",
+   "x": 685,
+   "y": 598,
+   "w": 300,
+   "kind": "bad",
+   "title": "~10 nmol/L: the male range",
+   "lines": [
+    "NOT PMOS: think TUMOUR → imaging"
+   ],
+   "h": 96
+  },
+  {
+   "id": "pmos",
+   "x": 330,
+   "y": 734,
+   "w": 340,
+   "kind": "plain",
+   "title": "PMOS: treat what distresses her",
+   "lines": [
+    "~and watch metabolic + endometrial risk in everyone"
+   ]
+  },
+  {
+   "id": "hair",
+   "x": 15,
+   "y": 854,
+   "w": 230,
+   "kind": "anti",
+   "title": "Hirsutism + hair",
+   "lines": [
+    "surface: epilation, shaving, sugaring, waxing, laser",
+    "oral: antiandrogens (spironolactone, cyproterone) · birth control pill",
+    "topical: EFLORNITHINE",
+    "alopecia: MINOXIDIL 5%, antiandrogens, pill, transplant",
+    "~hirsutism is defined by her DISTRESS, not a score"
+   ],
+   "h": 206
+  },
+  {
+   "id": "cyc",
+   "x": 262,
+   "y": 854,
+   "w": 230,
+   "kind": "ana",
+   "title": "Irregular cycles + endometrium",
+   "lines": [
+    "birth control pill or cyclical progesterone · weight loss, exercise",
+    "WITHDRAWAL BLEEDS ≥ 4× a year: endometrial cancer is more common",
+    "ultrasound surveillance for endometrial hypertrophy"
+   ],
+   "h": 206
+  },
+  {
+   "id": "fert",
+   "x": 509,
+   "y": 854,
+   "w": 230,
+   "kind": "info",
+   "title": "Subfertility",
+   "lines": [
+    "lifestyle · induce ovulation with AROMATASE INHIBITORS",
+    "metformin (arguably) for early miscarriage",
+    "ovarian stroma surgery: RARE now"
+   ],
+   "h": 206
+  },
+  {
+   "id": "meta",
+   "x": 756,
+   "y": 854,
+   "w": 230,
+   "kind": "ok",
+   "title": "Metabolic risk",
+   "lines": [
+    "hemoglobin A1c + lipid panel · monitor diabetes, hypertension, cardiovascular disease",
+    "lifestyle: high fibre, low fat · 150 min vigorous exercise a week · MODEST weight loss",
+    "consider BARIATRIC surgery"
+   ],
+   "h": 206
+  },
+  {
+   "id": "x_hair",
+   "x": 15,
+   "y": 1094,
+   "w": 230,
+   "kind": "bad",
+   "title": "NOT topical testosterone",
+   "lines": [
+    "the one wrong treatment"
+   ],
+   "h": 98
+  },
+  {
+   "id": "x_fert",
+   "x": 509,
+   "y": 1094,
+   "w": 230,
+   "kind": "warn",
+   "title": "She CAN conceive spontaneously",
+   "lines": [
+    "→ effective contraception if pregnancy is not wanted"
+   ],
+   "h": 98
+  },
+  {
+   "id": "x_meta",
+   "x": 756,
+   "y": 1094,
+   "w": 230,
+   "kind": "warn",
+   "title": "NO body shaming",
+   "lines": [
+    "NOT all with PMOS are overweight · a GENTLE weight history"
+   ],
+   "h": 98
+  }
+ ],
+ "edges": [
+  {
+   "from": "_any1",
+   "to": "start"
+  },
+  {
+   "from": "start",
+   "to": "labs"
+  },
+  {
+   "from": "labs",
+   "to": "mimic"
+  },
+  {
+   "from": "mimic",
+   "to": "m_oligo",
+   "path": "M360 290H315",
+   "label": "yes",
+   "label_at": [
+    337,
+    281
+   ]
+  },
+  {
+   "from": "mimic",
+   "to": "m_andro",
+   "path": "M640 290H685",
+   "label": "yes",
+   "label_at": [
+    663,
+    281
+   ]
+  },
+  {
+   "from": "mimic",
+   "to": "testo",
+   "label": "no",
+   "label_at": [
+    500,
+    395
+   ]
+  },
+  {
+   "from": "testo",
+   "to": "t_norm",
+   "path": "M500.0 548V573H165.0V598"
+  },
+  {
+   "from": "testo",
+   "to": "t_fit",
+   "path": "M500.0 548V573H500.0V598"
+  },
+  {
+   "from": "testo",
+   "to": "t_tum",
+   "path": "M500.0 548V573H835.0V598"
+  },
+  {
+   "from": "t_norm",
+   "to": "pmos",
+   "path": "M165.0 694V764H330"
+  },
+  {
+   "from": "t_fit",
+   "to": "pmos"
+  },
+  {
+   "from": "pmos",
+   "to": "hair",
+   "path": "M500.0 794V824H130.0V854"
+  },
+  {
+   "from": "pmos",
+   "to": "cyc",
+   "path": "M500.0 794V824H377.0V854"
+  },
+  {
+   "from": "pmos",
+   "to": "fert",
+   "path": "M500.0 794V824H624.0V854"
+  },
+  {
+   "from": "pmos",
+   "to": "meta",
+   "path": "M500.0 794V824H871.0V854"
+  },
+  {
+   "from": "hair",
+   "to": "x_hair"
+  },
+  {
+   "from": "fert",
+   "to": "x_fert"
+  },
+  {
+   "from": "meta",
+   "to": "x_meta"
+  }
+ ],
+ "panels": [
+  {
+   "x": 15,
+   "y": 1226,
+   "w": 480,
+   "title": "History + exam clues",
+   "items": [
+    "menstrual history: how often at first, in the later teens, after 20",
+    "just stopped the pill, now irregular? the pill MASKED it",
+    "TERMINAL male-pattern hair: sides of face, chin, chest, upper arms",
+    "Ferriman-Gallwey score: 9 sites graded 1–4; ignores ethnicity + hair removal",
+    "acanthosis nigricans · skin tags · central adiposity (waist ÷ hip > 0.85)",
+    "PMOS is GRADUAL and has NO galactorrhoea"
+   ]
+  },
+  {
+   "x": 505,
+   "y": 1226,
+   "w": 480,
+   "title": "Myths to dispel",
+   "items": [
+    "TRUE: subfertility + early miscarriage · type 2 diabetes, hypertension, high lipids · endometrial cancer · mood disorders",
+    "FALSE: cannot lose weight · always hungry · an organic or vegan diet helps · cannot conceive",
+    "more common: gestational diabetes · frontal alopecia · NOT adrenal hypertrophy",
+    "no gold-standard test · insulin resistance is ASSOCIATED, not a 4th criterion",
+    "over 170 million women, up to 20% of reproductive age"
+   ]
+  }
+ ]
+}

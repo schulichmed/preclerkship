@@ -1,0 +1,259 @@
+{
+ "name": "pulmonary function tests overview",
+ "title": "Reading pulmonary function tests in three steps: an FEV1/FVC ratio under 0.7 is obstruction with hyperinflation; otherwise static volumes decide, a total lung capacity under 80% is restriction, and the diffusion capacity then separates parenchymal (reduced) from extraparenchymal (normal) restriction; normal volumes with a low diffusion capacity point to anemia, pulmonary vascular disease or early lung disease",
+ "col_w": 250,
+ "root": {
+  "title": "Dyspnea or cough not yet diagnosed: what do the PULMONARY FUNCTION TESTS (PFTs) show?",
+  "lines": [
+   "read in three steps: SPIROMETRY → static lung VOLUMES → DIFFUSION capacity for carbon monoxide (DLCO)",
+   "do NOT test with: aneurysm · pneumothorax · recent brain or eye surgery · BP > 200/120 · recent heart attack or arrhythmia"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_obs",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "FEV1/FVC < 0.7: OBSTRUCTION",
+   "lines": [
+    "forced expiratory volume in 1 s (FEV1) ↓↓, forced vital capacity (FVC) ↓"
+   ]
+  },
+  {
+   "id": "g_nl",
+   "cols": [
+    1,
+    3
+   ],
+   "title": "FEV1/FVC NORMAL or ↑: check STATIC LUNG VOLUMES",
+   "lines": [
+    "total lung capacity (TLC) decides"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_r",
+   "cols": [
+    1,
+    2
+   ],
+   "title": "TLC < 80%: RESTRICTION. Then the DLCO?",
+   "lines": [
+    "FEV1 ↓, FVC ↓ · narrow loop · short, shallow breaths"
+   ]
+  },
+  {
+   "id": "t_n",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "Volumes NORMAL. DLCO?",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "vol",
+  "cause"
+ ],
+ "row_names": {
+  "vol": "VOLUMES · DLCO",
+  "cause": "CAUSES"
+ },
+ "columns": [
+  {
+   "id": "ob",
+   "colour": "teal",
+   "drop_label": "air TRAPPED",
+   "head": [
+    [
+     [
+      "h",
+      "Obstructive",
+      [
+       "scooped-out flow-volume loop"
+      ]
+     ]
+    ]
+   ],
+   "vol": [
+    [
+     [
+      "t",
+      "HYPERINFLATION: > 120%",
+      [
+       "• residual volume ↑: gas trapping",
+       "• TLC ↑"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "w",
+      "Airways",
+      [
+       "• chronic obstructive pulmonary disease (COPD), asthma",
+       "• bronchiectasis, cystic fibrosis"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Reverses with a bronchodilator?",
+      [
+       "see the OBSTRUCTIVE LUNG DISEASE chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pa",
+   "colour": "orange",
+   "drop_from": "t_r",
+   "drop_label": "DLCO ↓",
+   "head": [
+    [
+     [
+      "h",
+      "Parenchymal restriction",
+      [
+       "interstitial lung disease (ILD)"
+      ]
+     ]
+    ]
+   ],
+   "vol": [
+    [
+     [
+      "t",
+      "TLC < 80% + DLCO ↓",
+      [
+       "parenchymal disease: less CO taken up"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "w",
+      "The lung",
+      [
+       "• idiopathic pulmonary fibrosis, sarcoidosis",
+       "• granulomatosis with polyangiitis, drug toxicity",
+       "• pneumonia, acute respiratory distress syndrome"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ex",
+   "colour": "blue",
+   "drop_from": "t_r",
+   "drop_label": "DLCO NORMAL",
+   "head": [
+    [
+     [
+      "h",
+      "Extraparenchymal restriction",
+      [
+       "diaphragm, chest wall, pleura"
+      ]
+     ]
+    ]
+   ],
+   "vol": [
+    [
+     [
+      "t",
+      "TLC < 80%, DLCO normal",
+      [
+       "altered MECHANICS, not the lung"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "w",
+      "Neuromuscular",
+      [
+       "• myasthenia gravis, Guillain-Barré",
+       "• amyotrophic lateral sclerosis, polio"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Chest wall",
+      [
+       "• scoliosis",
+       "• severe obesity, ascites"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dl",
+   "colour": "purple",
+   "drop_from": "t_n",
+   "drop_label": "DLCO ↓",
+   "head": [
+    [
+     [
+      "h",
+      "Isolated low DLCO",
+      [
+       "CO transfer alone is reduced"
+      ]
+     ]
+    ]
+   ],
+   "vol": [
+    [
+     [
+      "t",
+      "Spirometry + volumes normal",
+      [
+       "only the DLCO is low"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "w",
+      "Blood or vessels",
+      [
+       "• anemia: no red cells to take up CO",
+       "• pulmonary embolism, pulmonary hypertension"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Early lung disease",
+      [
+       "• early ILD or pneumonia",
+       "• non-obstructive emphysema"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,322 @@
+{
+ "name": "bleeding in children overview",
+ "title": "Bleeding in children decision chart: read clotting times against newborn ranges, then mucocutaneous bleeding points to immune thrombocytopenia or von Willebrand disease and deep or umbilical bleeding to hemophilia or vitamin K deficiency (hemorrhagic disease of the newborn); each column gives presentation, investigations and management",
+ "col_w": 250,
+ "root": {
+  "title": "Child who bleeds: EXCESSIVE or UNUSUAL, read against NEWBORN normals?",
+  "lines": [
+   "excessive: nosebleed > 10 min, gum bleeding, wide bruising, heavy menses · unusual: brain or joint bleed, umbilical stump, surgery (dental, circumcision)",
+   "liver immature until 6 months: vitamin K factors, protein C, S low → prothrombin time (PT/INR) and activated partial thromboplastin time (aPTT) normally LONGER, worst if premature",
+   "LIFE-THREATENING bleed, no diagnosis yet → fresh frozen plasma (most factors; little VIII, vWF, fibrinogen) · cryoprecipitate = VIII, vWF, XIII + fibrinogen"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_pri",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "MUCOCUTANEOUS: PRIMARY (small vessels)",
+   "lines": [
+    "petechiae, bruising, nosebleeds, heavy menses"
+   ]
+  },
+  {
+   "id": "g_sec",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "MUSCLE, JOINT, UMBILICAL: SECONDARY (larger vessels)",
+   "lines": [
+    "also factor XIII, X and fibrinogen deficiency"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "MANAGEMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "itp",
+   "colour": "teal",
+   "drop_label": "platelets LOW",
+   "head": [
+    [
+     [
+      "h",
+      "Immune thrombocytopenia (ITP)",
+      [
+       "autoimmune · usually after an infection"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Age 2–5, boys = girls",
+      [
+       "• purpura, petechiae",
+       "• major bleeding uncommon",
+       "• teens: more often secondary"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Diagnosis of exclusion",
+      [
+       "→ THROMBOCYTOPENIA chart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "NOT bleeding → observe",
+      [
+       "85–90% resolve by 12 months"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "BLEEDING now",
+      [
+       "best predictor of a major bleed → treat (THROMBOCYTOPENIA chart)"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "vwd",
+   "colour": "purple",
+   "drop_label": "PBQ ≥ 2",
+   "head": [
+    [
+     [
+      "h",
+      "von Willebrand disease (vWD)",
+      [
+       "von Willebrand factor (vWF) works in primary AND secondary hemostasis"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Mucocutaneous",
+      [
+       "• nosebleeds, bruising",
+       "• heavy menses"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Severity by type",
+      [
+       "• 1: MILD (quantitative)",
+       "• 2: MILD–MODERATE (qualitative)",
+       "• 3: SEVERE (absent)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Pediatric Bleeding Questionnaire (PBQ)",
+      [
+       "• ≥ 2 positive",
+       "• screens for vWD"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · vWD screen",
+      [
+       "→ BLEEDING PATIENT chart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Treat by type",
+      [
+       "BLEEDING PATIENT chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hem",
+   "colour": "orange",
+   "drop_label": "joints, muscles",
+   "head": [
+    [
+     [
+      "h",
+      "Hemophilia A (FVIII) · B (FIX)",
+      [
+       "X-linked: boys · carrier girls may bleed"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Spontaneous JOINT + MUSCLE bleeds",
+      [
+       "• knees, then ankles",
+       "• shows once WALKING"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Factor levels",
+      [
+       "→ BLEEDING PATIENT chart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "PREVENT bleeds",
+      [
+       "• NO aspirin, antiplatelets",
+       "• helmet, protective gear, routine dental care",
+       "• prophylactic factor concentrate"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Factor First card",
+      [
+       "for every child with hemophilia"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Treat a bleed",
+      [
+       "BLEEDING PATIENT chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hdn",
+   "colour": "olive",
+   "drop_label": "newborn",
+   "head": [
+    [
+     [
+      "h",
+      "Hemorrhagic disease of the newborn (HDN)",
+      [
+       "vitamin K lack on top of LOW newborn levels"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "EARLY: day 1",
+      [
+       "maternal drugs (antiepileptics)"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "CLASSIC: days 2–7",
+      [
+       "breastfed infants only"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "LATE: 1 week – 6 months",
+      [
+       "• no vitamin K at birth",
+       "• malabsorption"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Vitamin K factors ↓",
+      [
+       "II, VII, IX, X"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "PREVENT",
+      [
+       "vitamin K injection at birth"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

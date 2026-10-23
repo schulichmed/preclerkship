@@ -1,0 +1,363 @@
+{
+ "name": "hypertension diagnosis overview",
+ "title": "Hypertension diagnosis decision chart: one high reading is not hypertension; visit 1 thresholds send the patient to out-of-office measurement (ambulatory preferred, or home) or to repeated office visits, which confirm hypertension or white coat hypertension; every patient then gets baseline tests and is checked for aggravating drugs and habits, obstructive sleep apnea, primary aldosteronism, kidney or renovascular disease and other endocrine causes",
+ "col_w": 214,
+ "root": {
+  "title": "A high blood pressure (BP) reading: is it really HYPERTENSION, and is there a CAUSE?",
+  "lines": [
+   "ONE high reading is not hypertension, and not an emergency on its own · measure properly: seated, back supported, feet flat, arm at heart level, 5 min rest, 2–3 readings · never on an exam table or hospital bed",
+   "then estimate cardiovascular RISK (Framingham) and treat: see the HYPERTENSION TREATMENT chart"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_dx",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "1 · Is it HYPERTENSION?",
+   "lines": [
+    "visit 1: history, exam, tests"
+   ]
+  },
+  {
+   "id": "g_cx",
+   "cols": [
+    2,
+    6
+   ],
+   "title": "2 · Is there a CAUSE? Most have none: PRIMARY (essential) hypertension",
+   "lines": [
+    "EVERY patient: urinalysis · K+, Na+, creatinine · Ca2+ + albumin · TSH · HbA1c · lipids · 12-lead ECG"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_v1",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "Visit 1 reading",
+   "lines": [
+    "• ≥ 180/110 → HYPERTENSION now",
+    "• automated office (AOBP) < 135/85 or office < 140/90 → none: recheck yearly"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "look",
+  "then"
+ ],
+ "row_names": {
+  "look": "LOOK FOR",
+  "then": "THEN"
+ },
+ "columns": [
+  {
+   "id": "oo",
+   "colour": "teal",
+   "drop_from": "t_v1",
+   "drop_label": "AOBP ≥ 135/85 or office ≥ 140/90",
+   "head": [
+    [
+     [
+      "h",
+      "OUT of office: ambulatory (ABPM) or home (HBPM)",
+      [
+       "ABPM is the gold standard: NIGHT readings predict risk best"
+      ]
+     ]
+    ]
+   ],
+   "look": [
+    [
+     [
+      "w",
+      "Visit 2, within 1 MONTH",
+      [
+       "• daytime ABPM or HBPM ≥ 135/85",
+       "• or 24-hour ABPM ≥ 130/80"
+      ]
+     ]
+    ]
+   ],
+   "then": [
+    [
+     [
+      "bad",
+      "Either one → HYPERTENSION",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Both below → WHITE COAT",
+      [
+       "confirm: ABPM, or repeat HBPM"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "of",
+   "colour": "slate",
+   "drop_from": "t_v1",
+   "drop_label": "no ABPM or HBPM",
+   "head": [
+    [
+     [
+      "h",
+      "OFFICE readings only",
+      [
+       "the alternative: more visits"
+      ]
+     ]
+    ]
+   ],
+   "look": [
+    [
+     [
+      "w",
+      "1 · Visit 2",
+      [
+       "≥ 140 systolic or ≥ 90 diastolic → visit 3"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Visit 3",
+      [
+       "• ≥ 160/100 → HYPERTENSION",
+       "• < 160/100 → visits 4–5"
+      ]
+     ]
+    ]
+   ],
+   "then": [
+    [
+     [
+      "bad",
+      "3 · Visits 4–5: ≥ 140/90",
+      [
+       "→ HYPERTENSION"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "< 140/90 → none",
+      [
+       "recheck yearly"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dr",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Habits and DRUGS",
+      [
+       "self- or doctor-inflicted"
+      ]
+     ]
+    ]
+   ],
+   "look": [
+    [
+     [
+      "t",
+      "History",
+      [
+       "• salt, alcohol, stimulants (prescribed, over the counter, street)",
+       "• NSAIDs, steroids, estrogen, cyclosporine, decongestants",
+       "• drug withdrawal, pain"
+      ]
+     ]
+    ]
+   ],
+   "then": [
+    [
+     [
+      "ok",
+      "MODIFIABLE aggravating factors",
+      [
+       "ask about each one"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "os",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Obstructive sleep apnea (OSA)",
+      [
+       "the commonest secondary cause"
+      ]
+     ]
+    ]
+   ],
+   "look": [
+    [
+     [
+      "t",
+      "↑ aldosterone and norepinephrine",
+      []
+     ]
+    ]
+   ],
+   "then": [
+    [
+     [
+      "warn",
+      "Catecholamines ↑?",
+      [
+       "OSA MIMICS pheochromocytoma biochemically"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pa",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Primary aldosteronism",
+      []
+     ]
+    ]
+   ],
+   "look": [
+    [
+     [
+      "t",
+      "LOW serum K+",
+      [
+       "on the baseline chemistry"
+      ]
+     ]
+    ]
+   ],
+   "then": [
+    [
+     [
+      "warn",
+      "Consider it even with a NORMAL K+",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "kd",
+   "colour": "olive",
+   "head": [
+    [
+     [
+      "h",
+      "Kidney: intrinsic or RENOVASCULAR",
+      []
+     ]
+    ]
+   ],
+   "look": [
+    [
+     [
+      "t",
+      "Intrinsic kidney disease",
+      [
+       "urinalysis: blood + protein"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Renal artery stenosis",
+      [
+       "think of it with atherosclerosis"
+      ]
+     ]
+    ]
+   ],
+   "then": [
+    [
+     [
+      "ok",
+      "Urinalysis is cause AND consequence",
+      [
+       "or albumin:creatinine ratio · often forgotten"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "en",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Other endocrine",
+      [
+       "rare"
+      ]
+     ]
+    ]
+   ],
+   "look": [
+    [
+     [
+      "t",
+      "Thyroid or parathyroid",
+      [
+       "TSH, serum Ca2+"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Rarer",
+      [
+       "pheochromocytoma, Cushing, acromegaly"
+      ]
+     ]
+    ]
+   ],
+   "then": [
+    [
+     [
+      "ok",
+      "Special tests ONLY if suspected",
+      [
+       "coarctation: see the CONGENITAL HEART DISEASE chart"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

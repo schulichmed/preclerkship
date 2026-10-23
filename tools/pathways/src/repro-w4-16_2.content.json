@@ -1,0 +1,531 @@
+{
+ "name": "prenatal genetic screening overview",
+ "title": "Prenatal genetic screening: before pregnancy take the family history and offer carrier screening by ancestry; in pregnancy a screen (NT and eFTS, MSS, the anatomy scan's soft markers, NIPT) gives a risk and a positive screen leads to NIPT or a diagnostic test, while CVS and amniocentesis give a definitive diagnosis at a small miscarriage risk",
+ "col_w": 214,
+ "root": {
+  "title": "Prenatal genetics: a SCREEN gives a RISK · a DIAGNOSTIC test gives the ANSWER",
+  "lines": [
+   "BEFORE pregnancy: 3-generation pedigree, red flags → refer · carrier screening by ancestry: the MOTHER first, the partner if she is a carrier",
+   "IN pregnancy: offer every couple screening after discussion; they opt in or out · baseline 2–3% congenital anomaly whatever the screen"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_s",
+   "cols": [
+    0,
+    3
+   ],
+   "title": "SCREEN: non-invasive, gives a RISK",
+   "lines": [
+    "screen POSITIVE → NIPT, or straight to a diagnostic test"
+   ]
+  },
+  {
+   "id": "g_d",
+   "cols": [
+    4,
+    5
+   ],
+   "title": "DIAGNOSE: invasive, gives an ANSWER",
+   "lines": [
+    "karyotype · microarray · single gene"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "when",
+  "det",
+  "next",
+  "risk"
+ ],
+ "row_names": {
+  "when": "WHEN",
+  "det": "DETECTS",
+  "next": "RESULT → NEXT STEP",
+  "risk": "RISK · LIMITS"
+ },
+ "columns": [
+  {
+   "id": "ni",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Non-invasive prenatal testing (NIPT)",
+      [
+       "cell-free fetal DNA in maternal blood"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "After 9 weeks",
+      [
+       "result ~10 days"
+      ]
+     ]
+    ]
+   ],
+   "det": [
+    [
+     [
+      "t",
+      "Common aneuploidies",
+      [
+       "• detects 99%",
+       "• false positive < 1%",
+       "• better than eFTS or MSS"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Offer if",
+      [
+       "• previous trisomy",
+       "• age 40+",
+       "• NT > 3.5",
+       "• positive eFTS",
+       "~• Ontario: NOT first line for low risk"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "bad",
+      "POSITIVE",
+      [
+       "still a SCREEN → CONFIRM by CVS or amnio"
+      ]
+     ],
+     [
+      "ok",
+      "NEGATIVE",
+      [
+       "spares an invasive test"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "w",
+      "No miscarriage risk",
+      [
+       "the DNA is mainly PLACENTAL: a screen, not a diagnosis"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "nt",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "NT ultrasound + eFTS",
+      [
+       "nuchal translucency + 1st-trimester serum markers"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "11 to 13w6d",
+      []
+     ]
+    ]
+   ],
+   "det": [
+    [
+     [
+      "t",
+      "Risk of trisomy 21 (± 18)",
+      [
+       "eFTS detects 85–90%"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "NT > 3.5 mm also flags",
+      [
+       "• trisomy 13, 18, 45,X",
+       "• heart defect",
+       "• Noonan, skeletal dysplasia"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "warn",
+      "POSITIVE or NT > 3.5",
+      [
+       "→ NIPT, or CVS"
+      ]
+     ],
+     [
+      "ok",
+      "NEGATIVE",
+      [
+       "reassuring, not a guarantee"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "w",
+      "No miscarriage risk",
+      [
+       "• false positive 3–6% (eFTS)",
+       "~• NT alone: detects 69–75%"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ms",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Maternal serum screen (MSS)",
+      [
+       "triple or quad serum markers",
+       "needs NO ultrasound"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "16–20 weeks",
+      []
+     ]
+    ]
+   ],
+   "det": [
+    [
+     [
+      "t",
+      "Risk of trisomy 21 (± 18)",
+      [
+       "for a woman too late for eFTS, or with no NT ultrasound"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Choose eFTS vs MSS by",
+      [
+       "• gestational age",
+       "• ultrasound access",
+       "• early result vs detection"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "warn",
+      "POSITIVE",
+      [
+       "→ NIPT, or amniocentesis"
+      ]
+     ],
+     [
+      "ok",
+      "NEGATIVE",
+      [
+       "reassuring, not a guarantee"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "w",
+      "No miscarriage risk",
+      [
+       "a later result than eFTS"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "an",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Anatomy scan",
+      [
+       "detailed fetal ultrasound"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "18–20 weeks",
+      []
+     ]
+    ]
+   ],
+   "det": [
+    [
+     [
+      "t",
+      "Major structural anomalies",
+      [
+       "~views: see the ULTRASOUND chart"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Soft markers",
+      [
+       "• choroid plexus cyst",
+       "• short femur",
+       "• echogenic heart focus",
+       "• echogenic bowel"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "warn",
+      "1 soft marker",
+      [
+       "matters only with ABNORMAL serum markers"
+      ]
+     ],
+     [
+      "bad",
+      "MULTIPLE anomalies",
+      [
+       "→ NIPT or amniocentesis"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "w",
+      "No miscarriage risk",
+      [
+       "NEVER ASSUME what the couple wants: offer all options"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cv",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Chorionic villus sampling (CVS)",
+      [
+       "the earliest diagnosis"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "11–13 weeks",
+      [
+       "microarray ~2 weeks"
+      ]
+     ]
+    ]
+   ],
+   "det": [
+    [
+     [
+      "t",
+      "Chorionic villi, ultrasound-guided",
+      [
+       "chromosomes + biochemical studies"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Order the assay",
+      [
+       "• karyotype > 5 Mb",
+       "• microarray ~3 Mb",
+       "• single gene: down to 1 bp, ~3 weeks"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "ok",
+      "A DIAGNOSIS → counsel",
+      [
+       "offer ALL options, never judge: continue · terminate (< 24 wk) · plan delivery"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "bad",
+      "Miscarriage 1/400 or ~1%",
+      [
+       "~• as printed",
+       "• maternal cell contamination",
+       "• confined placental mosaicism"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "am",
+   "colour": "brown",
+   "head": [
+    [
+     [
+      "h",
+      "Amniocentesis",
+      [
+       "the later diagnosis"
+      ]
+     ]
+    ]
+   ],
+   "when": [
+    [
+     [
+      "t",
+      "15–20 weeks",
+      []
+     ]
+    ]
+   ],
+   "det": [
+    [
+     [
+      "t",
+      "Amniotic fluid, needle through the abdomen",
+      [
+       "fetal cells for chromosomes or genes"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Order the assay",
+      [
+       "• karyotype",
+       "• microarray",
+       "• single gene"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "ok",
+      "A DIAGNOSIS → counsel",
+      [
+       "offer ALL options, never judge: continue · terminate (< 24 wk) · plan delivery"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "bad",
+      "Miscarriage 1/800 or ~0.5%",
+      [
+       "~as printed"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Before pregnancy: carrier screening by ancestry",
+   "items": [
+    "EUROPEAN: cystic fibrosis (recurrent mutation analysis) · carriers 1 in 24",
+    "Middle Eastern, South Asian, or MCV < 80 fL: thalassemia + hemoglobinopathies",
+    "ASHKENAZI JEWISH: panel incl. Tay-Sachs, Canavan, familial dysautonomia",
+    "FRENCH-CANADIAN (Bas-St-Laurent, Gaspésie, New Brunswick): Tay-Sachs, 1 in 14",
+    "Amish + Old Order Mennonite: their community's panel",
+    "test the MOTHER first → the partner only if she is a carrier"
+   ]
+  },
+  {
+   "title": "Before pregnancy: red flags → refer to genetics",
+   "items": [
+    "consanguinity · neonatal deaths · 3 miscarriages",
+    "developmental delay, autism · birth defects",
+    "male infertility from absent vas deferens (cystic fibrosis)",
+    "fragile X: ovarian insufficiency < 40 · male relatives with ataxia + tremor",
+    "folic acid 0.8–1 mg from 3 months before conception"
+   ]
+  },
+  {
+   "title": "A positive screen: what next",
+   "items": [
+    "eFTS / MSS / NT > 3.5 positive → NIPT (a better SCREEN) or straight to CVS / amnio",
+    "NIPT positive → CONFIRM with CVS (11–13 wk) or amnio (15–20 wk)",
+    "ask: do they want to know DEFINITIVELY, and will it change management?"
+   ]
+  }
+ ]
+}

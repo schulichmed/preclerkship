@@ -1,0 +1,376 @@
+{
+ "name": "obstructive lung disease overview",
+ "title": "Obstructive lung disease decision chart: spirometry reversibility separates asthma from chronic obstructive pulmonary disease (COPD); asthma splits into controlled and severe (phenotype to a biologic), COPD into stable and exacerbation; each column gives presentation, numbered investigations and treatment in order",
+ "col_w": 240,
+ "root": {
+  "title": "Obstructive lung disease: does the obstruction REVERSE after a bronchodilator?",
+  "lines": [
+   "narrowed airways empty slowly → gas trapping → hyperinflation and dyspnea",
+   "spirometry decides: forced expiratory volume in 1 s (FEV1) / forced vital capacity (FVC)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_as",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "VARIABLE, REVERSIBLE → ASTHMA",
+   "lines": [
+    "chronic airway inflammation · symptoms that vary over time"
+   ]
+  },
+  {
+   "id": "g_co",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "PERSISTENT, NOT reversible → COPD",
+   "lines": [
+    "post-bronchodilator FEV1/FVC < 0.7 · lung function never normalizes"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "as",
+   "colour": "teal",
+   "drop_label": "INFLAMMATION drives it",
+   "head": [
+    [
+     [
+      "h",
+      "Asthma",
+      [
+       "inflammation → smooth muscle SPASM",
+       "→ bronchoconstriction"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Comes and goes",
+      [
+       "• wheeze, dyspnea, chest tightness, cough",
+       "• worse with triggers: viral infection, allergens, pets",
+       "• atopy in the family: eczema, asthma, rhinitis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Spirometry: FEV1 ↑ ≥ 12% (and ≥ 200 mL) after bronchodilator",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Spirometry NORMAL? Methacholine challenge",
+      [
+       "• FEV1 FALLS ≥ 20% → asthma",
+       "• or provocative concentration (PC20) < 4 mg/mL"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Short-acting beta-agonist (SABA) as RELIEVER",
+      [
+       "salbutamol"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Inhaled corticosteroid (ICS) for EVERYONE",
+      [
+       "• FIRST LINE: it treats the inflammation",
+       "• rinse and gargle after: thrush"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · Add long-acting beta-agonist (LABA) IN ONE INHALER",
+      [
+       "or a leukotriene receptor antagonist (LTRA): montelukast"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "NEVER LABA alone",
+      [
+       "LABA monotherapy ↑ asthma deaths"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sv",
+   "colour": "purple",
+   "drop_label": "UNCONTROLLED on treatment",
+   "head": [
+    [
+     [
+      "h",
+      "Uncontrolled despite treatment",
+      [
+       "exacerbations, reliever needed often, night symptoms"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "First, WHY?",
+      [
+       "1 · CONFIRM it is asthma",
+       "2 · adherence, inhaler technique, environment",
+       "3 · rule out mimics + comorbidities"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "4 · Diagnose SEVERE asthma",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "5 · Phenotype",
+      [
+       "• blood eosinophils, total IgE, aeroallergen tests",
+       "• ± sputum eosinophils, exhaled nitric oxide (FeNO)",
+       "• Th2 = eosinophils + IgE ↑ · non-Th2 = neutrophils (no biologic)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "ALLERGIC, IgE ↑ → anti-IgE",
+      [
+       "omalizumab"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "EOSINOPHILIC → anti-IL-5",
+      [
+       "• mepolizumab, reslizumab",
+       "• benralizumab (IL-5 receptor α)"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "co",
+   "colour": "orange",
+   "drop_label": "STABLE",
+   "head": [
+    [
+     [
+      "h",
+      "COPD",
+      [
+       "chronic obstructive pulmonary disease",
+       "SMOKING (most) · α1-antitrypsin deficiency"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Persistent dyspnea, cough ± sputum",
+      [
+       "• EMPHYSEMA: pink puffer, thin, pursed lips",
+       "• CHRONIC BRONCHITIS: blue bloater, productive cough > 3 mo/yr for > 2 yr"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Spirometry POST-bronchodilator",
+      [
+       "FEV1/FVC < 0.7, NOT reversible"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Stage by FEV1 % predicted",
+      [
+       "• ≥ 80 mild · ≥ 50 moderate",
+       "• ≥ 30 severe · < 30 VERY severe"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · STOP SMOKING",
+      [
+       "slows decline, ↓ mortality (lost function does not return)"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Bronchodilate: LAMA or LABA → BOTH",
+      [
+       "long-acting muscarinic antagonist (LAMA): tiotropium"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "3 · + ICS = triple therapy, ONLY if",
+      [
+       "• symptoms persist despite bronchodilators",
+       "• frequent exacerbations",
+       "• asthma overlap"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Oxygen: target 88–92%",
+      [
+       "roflumilast prevents exacerbations (severe + chronic bronchitis)"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ae",
+   "colour": "brown",
+   "drop_label": "WORSE than usual",
+   "head": [
+    [
+     [
+      "h",
+      "COPD exacerbation",
+      [
+       "(AECOPD)"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Anthonisen (Winnipeg) criteria, > 2 days",
+      [
+       "• ↑ dyspnea",
+       "• ↑ sputum VOLUME",
+       "• ↑ sputum PURULENCE"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Count the criteria",
+      [
+       "ALL 3 → likely BACTERIAL"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Short-acting bronchodilators",
+      [
+       "SABA + short-acting muscarinic antagonist (SAMA): ipratropium"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Oral prednisone",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "3 · ALL 3 criteria → ANTIBIOTICS",
+      [
+       "ceftriaxone + azithromycin"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Oxygen + BiPAP as needed",
+      [
+       "bilevel positive airway pressure (BiPAP)"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

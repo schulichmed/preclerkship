@@ -1,0 +1,241 @@
+{
+ "name": "ADHD overview",
+ "title": "Is it attention deficit hyperactivity disorder (ADHD)? All criteria must hold; the symptom counts sort it into inattentive, combined or hyperactive-impulsive presentations; anything better explained by another disorder or typical for age is not ADHD; treatment is multimodal",
+ "col_w": 240,
+ "root": {
+  "title": "Is it attention deficit hyperactivity disorder (ADHD), and which presentation?",
+  "lines": [
+   "assess: parent AND child interviews across settings · SNAP-IV rating scale · psychological tests",
+   "judge against what is NORMAL for the child's age: a yes/no checklist alone is not enough"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_yes",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "ADHD only if ALL of these hold",
+   "lines": [
+    "symptoms ≥ 6 months · several before age 12 · in 2+ settings (home, school, friends) · clear impairment of functioning"
+   ]
+  },
+  {
+   "id": "g_no",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "NOT ADHD",
+   "lines": [
+    "a diagnosis of EXCLUSION"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "cnt",
+  "sx",
+  "tx"
+ ],
+ "row_names": {
+  "cnt": "COUNT",
+  "sx": "LOOKS LIKE",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "ina",
+   "colour": "blue",
+   "drop_label": "6+ inattentive",
+   "head": [
+    [
+     [
+      "h",
+      "Predominantly inattentive",
+      []
+     ]
+    ]
+   ],
+   "cnt": [
+    [
+     [
+      "t",
+      "6+ of 9 INATTENTION",
+      [
+       "fewer than 6 hyperactive-impulsive"
+      ]
+     ]
+    ]
+   ],
+   "sx": [
+    [
+     [
+      "w",
+      "Often",
+      [
+       "• careless mistakes, loses things",
+       "• doesn't seem to listen or finish tasks",
+       "• easily distracted, forgetful"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "com",
+   "colour": "purple",
+   "drop_label": "6+ of each",
+   "head": [
+    [
+     [
+      "h",
+      "Combined",
+      []
+     ]
+    ]
+   ],
+   "cnt": [
+    [
+     [
+      "t",
+      "6+ of 9 in BOTH lists",
+      [
+       "count each list separately"
+      ]
+     ]
+    ]
+   ],
+   "sx": [
+    [
+     [
+      "w",
+      "Both patterns",
+      [
+       "inattention AND hyperactivity-impulsivity"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hyp",
+   "colour": "orange",
+   "drop_label": "6+ hyperactive",
+   "head": [
+    [
+     [
+      "h",
+      "Predominantly hyperactive-impulsive",
+      []
+     ]
+    ]
+   ],
+   "cnt": [
+    [
+     [
+      "t",
+      "6+ of 9 HYPERACTIVE-IMPULSIVE",
+      [
+       "fewer than 6 inattentive"
+      ]
+     ]
+    ]
+   ],
+   "sx": [
+    [
+     [
+      "w",
+      "Often",
+      [
+       "• fidgets, leaves seat, 'driven by a motor'",
+       "• talks excessively, blurts out answers",
+       "• can't wait a turn, interrupts"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "not",
+   "colour": "slate",
+   "head": [
+    [
+     [
+      "h",
+      "Something else",
+      []
+     ]
+    ]
+   ],
+   "cnt": [
+    [
+     [
+      "t",
+      "Typical for age?",
+      [
+       "what if the child were 5? where is the impairment?"
+      ]
+     ]
+    ]
+   ],
+   "sx": [
+    [
+     [
+      "w",
+      "Better explained by",
+      [
+       "• mood, anxiety, dissociative or personality disorder",
+       "• substance intoxication or withdrawal",
+       "• only during psychosis"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "plain",
+      "Criteria NOT met",
+      [
+       "no ADHD diagnosis"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "spans": [
+  {
+   "section": "tx",
+   "cols": [
+    0,
+    2
+   ],
+   "rows": [
+    [
+     [
+      "ok",
+      "MULTIMODAL, for every presentation",
+      [
+       "• psychoeducation",
+       "• parent training / behavioural management",
+       "• school accommodation"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "+ Medication",
+      [
+       "• stimulants: no response to one → try the other (90% respond to one or the other)",
+       "• non-stimulants"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

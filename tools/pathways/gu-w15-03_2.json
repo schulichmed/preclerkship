@@ -1,0 +1,720 @@
+{
+ "name": "hematuria and proteinuria overview",
+ "width": 1316,
+ "title": "Hematuria and proteinuria decision chart: proteinuria is quantified, then sorted by pattern into transient, orthostatic or persistent glomerular proteinuria; hematuria is confirmed on microscopy, then sorted into glomerular or structural; each column gives the clues, numbered workup and next step, with rapidly progressive glomerulonephritis flagged as the emergency",
+ "kinds": {
+  "tr_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tr_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "tr_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "or_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "or_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "or_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "gp_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gp_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "gp_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "gh_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gh_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "gh_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "sh_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sh_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "sh_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 388,
+   "w": 246,
+   "h": 876,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 288,
+   "y": 388,
+   "w": 246,
+   "h": 876,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 536,
+   "y": 388,
+   "w": 246,
+   "h": 876,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 812,
+   "y": 388,
+   "w": 246,
+   "h": 876,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1060,
+   "y": 388,
+   "w": 246,
+   "h": 876,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 516,
+   "h": 252,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 808,
+   "h": 248,
+   "text": "WORKUP"
+  },
+  {
+   "x": 23,
+   "y": 1096,
+   "h": 160,
+   "text": "THEN"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 293,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Protein or blood in the urine: is it BENIGN, the GLOMERULUS, or the urinary TRACT?",
+   "lines": [
+    "for many kidney diseases, the AMOUNT of protein is prognostic"
+   ]
+  },
+  {
+   "id": "g_pr",
+   "x": 45,
+   "y": 120,
+   "w": 732,
+   "h": 114,
+   "kind": "plain",
+   "title": "PROTEINURIA: normal < 150 mg/day (albumin < 30)",
+   "lines": [
+    "1 · QUANTIFY: 24-hour urine (gold standard) or albumin-creatinine ratio (ACR)",
+    "• micro: ACR 2–20, dipstick NEGATIVE",
+    "• macro: ACR ≥ 20, dipstick +",
+    "• dipstick misses light chains: MULTIPLE MYELOMA → serum + urine electrophoresis"
+   ]
+  },
+  {
+   "id": "g_he",
+   "x": 817,
+   "y": 120,
+   "w": 484,
+   "h": 114,
+   "kind": "plain",
+   "title": "HEMATURIA: ≥ 3 red cells per high-power field",
+   "lines": [
+    "1 · Ask about ANTICOAGULANTS and bleeding disorders",
+    "2 · MICROSCOPY: a dipstick also reacts to hemoglobin + myoglobin; red urine may be beets or phenazopyridine"
+   ]
+  },
+  {
+   "id": "t_pr",
+   "x": 45,
+   "y": 274,
+   "w": 732,
+   "h": 42,
+   "kind": "plain",
+   "title": "2 · PATTERN: does it come and go, or PERSIST?",
+   "lines": []
+  },
+  {
+   "id": "t_he",
+   "x": 817,
+   "y": 274,
+   "w": 484,
+   "h": 42,
+   "kind": "plain",
+   "title": "3 · RED CELL SHAPE, casts and protein",
+   "lines": []
+  },
+  {
+   "id": "tr_head_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 236,
+   "h": 80,
+   "kind": "tr_h",
+   "title": "Transient proteinuria",
+   "lines": []
+  },
+  {
+   "id": "or_head_0_0",
+   "x": 293,
+   "y": 396,
+   "w": 236,
+   "h": 80,
+   "kind": "or_h",
+   "title": "Orthostatic proteinuria",
+   "lines": []
+  },
+  {
+   "id": "gp_head_0_0",
+   "x": 541,
+   "y": 396,
+   "w": 236,
+   "h": 80,
+   "kind": "gp_h",
+   "title": "Glomerular proteinuria",
+   "lines": [
+    "glomerulus LEAKS albumin"
+   ]
+  },
+  {
+   "id": "gh_head_0_0",
+   "x": 817,
+   "y": 396,
+   "w": 236,
+   "h": 80,
+   "kind": "gh_h",
+   "title": "Glomerular hematuria",
+   "lines": [
+    "glomerulonephritis"
+   ]
+  },
+  {
+   "id": "sh_head_0_0",
+   "x": 1065,
+   "y": 396,
+   "w": 236,
+   "h": 80,
+   "kind": "sh_h",
+   "title": "Structural (urinary tract) hematuria",
+   "lines": [
+    "the MOST COMMON type"
+   ]
+  },
+  {
+   "id": "tr_clue_0_0",
+   "x": 45,
+   "y": 516,
+   "w": 236,
+   "h": 252,
+   "kind": "tr_t",
+   "title": "After a trigger",
+   "lines": [
+    "• fever",
+    "• vigorous exercise",
+    "• stress"
+   ]
+  },
+  {
+   "id": "or_clue_0_0",
+   "x": 293,
+   "y": 516,
+   "w": 236,
+   "h": 252,
+   "kind": "or_t",
+   "title": "ADOLESCENT",
+   "lines": [
+    "often thin, young women"
+   ]
+  },
+  {
+   "id": "gp_clue_0_0",
+   "x": 541,
+   "y": 516,
+   "w": 236,
+   "h": 252,
+   "kind": "gp_t",
+   "title": "HEAVY proteinuria",
+   "lines": [
+    "• diabetes",
+    "• nephrotic or nephritic syndrome"
+   ]
+  },
+  {
+   "id": "gh_clue_0_0",
+   "x": 817,
+   "y": 516,
+   "w": 236,
+   "h": 98,
+   "kind": "gh_t",
+   "title": "≥ 70% DYSMORPHIC red cells",
+   "lines": [
+    "• RED CELL CASTS",
+    "• protein > 1 g/day"
+   ]
+  },
+  {
+   "id": "gh_clue_1_0",
+   "x": 817,
+   "y": 636,
+   "w": 236,
+   "h": 132,
+   "kind": "gh_w",
+   "title": "Causes",
+   "lines": [
+    "• CHILD: IgA nephropathy, post-streptococcal, IgA vasculitis, hemolytic uremic syndrome",
+    "• ADULT: anti-GBM, lupus, ANCA vasculitis, endocarditis"
+   ]
+  },
+  {
+   "id": "sh_clue_0_0",
+   "x": 1065,
+   "y": 516,
+   "w": 236,
+   "h": 97,
+   "kind": "sh_t",
+   "title": "≥ 70% NORMAL red cells",
+   "lines": [
+    "• protein normal",
+    "• no casts"
+   ]
+  },
+  {
+   "id": "sh_clue_1_0",
+   "x": 1065,
+   "y": 635,
+   "w": 236,
+   "h": 133,
+   "kind": "sh_w",
+   "title": "Causes",
+   "lines": [
+    "• trauma, infection, stones",
+    "• CANCER: bladder, kidney",
+    "• prostate: benign hyperplasia, cancer, prostatitis"
+   ]
+  },
+  {
+   "id": "tr_inv_0_0",
+   "x": 45,
+   "y": 808,
+   "w": 236,
+   "h": 248,
+   "kind": "tr_w",
+   "title": "Repeat at BASELINE: gone",
+   "lines": []
+  },
+  {
+   "id": "or_inv_0_0",
+   "x": 293,
+   "y": 808,
+   "w": 236,
+   "h": 248,
+   "kind": "or_w",
+   "title": "SPLIT collection",
+   "lines": [
+    "16 h awake vs 8 h asleep: protein only when UPRIGHT"
+   ]
+  },
+  {
+   "id": "gp_inv_0_0",
+   "x": 541,
+   "y": 808,
+   "w": 236,
+   "h": 248,
+   "kind": "gp_w",
+   "title": "Autoimmune screen",
+   "lines": [
+    "• complement C3, C4, CH50",
+    "• anti-neutrophil cytoplasmic antibody (ANCA)",
+    "• anti-glomerular basement membrane (GBM)",
+    "• antinuclear (ANA), anti-DNA, anti-streptolysin O",
+    "• serum + urine electrophoresis",
+    "• hepatitis B, C"
+   ]
+  },
+  {
+   "id": "gh_inv_0_0",
+   "x": 817,
+   "y": 808,
+   "w": 236,
+   "h": 82,
+   "kind": "gh_w",
+   "title": "1 · Urea, creatinine, electrolytes, clotting (INR, PTT)",
+   "lines": []
+  },
+  {
+   "id": "gh_inv_1_0",
+   "x": 817,
+   "y": 912,
+   "w": 236,
+   "h": 80,
+   "kind": "gh_w",
+   "title": "2 · The same autoimmune screen",
+   "lines": [
+    "← glomerular proteinuria"
+   ]
+  },
+  {
+   "id": "gh_inv_2_0",
+   "x": 817,
+   "y": 1014,
+   "w": 236,
+   "h": 42,
+   "kind": "gh_w",
+   "title": "3 · Renal biopsy if indicated",
+   "lines": []
+  },
+  {
+   "id": "sh_inv_0_0",
+   "x": 1065,
+   "y": 808,
+   "w": 236,
+   "h": 82,
+   "kind": "sh_w",
+   "title": "1 · Prostate: rectal exam + prostate-specific antigen (PSA)",
+   "lines": []
+  },
+  {
+   "id": "sh_inv_1_0",
+   "x": 1065,
+   "y": 912,
+   "w": 236,
+   "h": 62,
+   "kind": "sh_w",
+   "title": "2 · Renal ultrasound or computed tomography (CT)",
+   "lines": []
+  },
+  {
+   "id": "sh_inv_2_0",
+   "x": 1065,
+   "y": 996,
+   "w": 236,
+   "h": 60,
+   "kind": "sh_w",
+   "title": "3 · Urine cytology",
+   "lines": [
+    "malignant cells"
+   ]
+  },
+  {
+   "id": "tr_tx_0_0",
+   "x": 45,
+   "y": 1096,
+   "w": 236,
+   "h": 160,
+   "kind": "ok",
+   "title": "NOT clinically significant",
+   "lines": []
+  },
+  {
+   "id": "or_tx_0_0",
+   "x": 293,
+   "y": 1096,
+   "w": 236,
+   "h": 160,
+   "kind": "ok",
+   "title": "BENIGN: resolves with time",
+   "lines": []
+  },
+  {
+   "id": "gp_tx_0_0",
+   "x": 541,
+   "y": 1096,
+   "w": 236,
+   "h": 60,
+   "kind": "warn",
+   "title": "NEPHROTIC: > 3.5 g/day",
+   "lines": [
+    "albumin ↓, edema, lipids ↑"
+   ]
+  },
+  {
+   "id": "gp_tx_1_0",
+   "x": 541.0,
+   "y": 1178,
+   "w": 113.0,
+   "h": 78,
+   "kind": "ok",
+   "title": "CHILD",
+   "lines": [
+    "prednisone, no biopsy"
+   ]
+  },
+  {
+   "id": "gp_tx_1_1",
+   "x": 664.0,
+   "y": 1178,
+   "w": 113.0,
+   "h": 78,
+   "kind": "warn",
+   "title": "ADULT",
+   "lines": [
+    "BIOPSY"
+   ]
+  },
+  {
+   "id": "gh_tx_0_0",
+   "x": 817,
+   "y": 1096,
+   "w": 236,
+   "h": 160,
+   "kind": "bad",
+   "title": "Function FALLING FAST = RPGN",
+   "lines": [
+    "rapidly progressive glomerulonephritis: EMERGENCY · see ACUTE KIDNEY INJURY chart"
+   ]
+  },
+  {
+   "id": "sh_tx_0_0",
+   "x": 1065,
+   "y": 1096,
+   "w": 236,
+   "h": 160,
+   "kind": "warn",
+   "title": "CYSTOSCOPY",
+   "lines": [
+    "bladder cancer, especially OLDER adults"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_pr",
+   "path": "M673.0 70V95H411.0V120"
+  },
+  {
+   "from": "root",
+   "to": "g_he",
+   "path": "M673.0 70V95H1059.0V120"
+  },
+  {
+   "from": "g_pr",
+   "to": "t_pr",
+   "from_dx": 0
+  },
+  {
+   "from": "g_he",
+   "to": "t_he",
+   "from_dx": 0
+  },
+  {
+   "from": "gh_clue_0_0",
+   "to": "gh_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "sh_clue_0_0",
+   "to": "sh_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "gh_inv_0_0",
+   "to": "gh_inv_1_0"
+  },
+  {
+   "from": "gh_inv_1_0",
+   "to": "gh_inv_2_0"
+  },
+  {
+   "from": "sh_inv_0_0",
+   "to": "sh_inv_1_0"
+  },
+  {
+   "from": "sh_inv_1_0",
+   "to": "sh_inv_2_0"
+  },
+  {
+   "from": "gp_tx_0_0",
+   "to": "gp_tx_1_0",
+   "from_dx": -61.5
+  },
+  {
+   "from": "gp_tx_0_0",
+   "to": "gp_tx_1_1",
+   "from_dx": 61.5
+  },
+  {
+   "from": "tr_head_0_0",
+   "to": "tr_clue_0_0"
+  },
+  {
+   "from": "tr_clue_0_0",
+   "to": "tr_inv_0_0"
+  },
+  {
+   "from": "tr_inv_0_0",
+   "to": "tr_tx_0_0"
+  },
+  {
+   "from": "t_pr",
+   "to": "tr_head_0_0",
+   "from_dx": -248,
+   "label": "comes and goes",
+   "label_at": [
+    163.0,
+    356
+   ]
+  },
+  {
+   "from": "or_head_0_0",
+   "to": "or_clue_0_0"
+  },
+  {
+   "from": "or_clue_0_0",
+   "to": "or_inv_0_0"
+  },
+  {
+   "from": "or_inv_0_0",
+   "to": "or_tx_0_0"
+  },
+  {
+   "from": "t_pr",
+   "to": "or_head_0_0",
+   "from_dx": 0,
+   "label": "UPRIGHT only",
+   "label_at": [
+    411.0,
+    356
+   ]
+  },
+  {
+   "from": "gp_head_0_0",
+   "to": "gp_clue_0_0"
+  },
+  {
+   "from": "gp_clue_0_0",
+   "to": "gp_inv_0_0"
+  },
+  {
+   "from": "gp_inv_0_0",
+   "to": "gp_tx_0_0"
+  },
+  {
+   "from": "t_pr",
+   "to": "gp_head_0_0",
+   "from_dx": 248,
+   "label": "PERSISTS · albumin",
+   "label_at": [
+    659.0,
+    356
+   ]
+  },
+  {
+   "from": "gh_head_0_0",
+   "to": "gh_clue_0_0"
+  },
+  {
+   "from": "gh_clue_1_0",
+   "to": "gh_inv_0_0"
+  },
+  {
+   "from": "gh_inv_2_0",
+   "to": "gh_tx_0_0"
+  },
+  {
+   "from": "t_he",
+   "to": "gh_head_0_0",
+   "from_dx": -124,
+   "label": "DYSMORPHIC",
+   "label_at": [
+    935.0,
+    356
+   ]
+  },
+  {
+   "from": "sh_head_0_0",
+   "to": "sh_clue_0_0"
+  },
+  {
+   "from": "sh_clue_1_0",
+   "to": "sh_inv_0_0"
+  },
+  {
+   "from": "sh_inv_2_0",
+   "to": "sh_tx_0_0"
+  },
+  {
+   "from": "t_he",
+   "to": "sh_head_0_0",
+   "from_dx": 124,
+   "label": "NORMAL shape",
+   "label_at": [
+    1183.0,
+    356
+   ]
+  }
+ ],
+ "panels": []
+}

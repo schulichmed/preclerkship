@@ -1,0 +1,518 @@
+{
+ "name": "acute coronary syndrome overview",
+ "title": "Acute coronary syndrome decision chart: the first ECG splits ST-elevation MI (reperfuse now: primary PCI, else fibrinolysis) from no ST elevation, where troponin splits NSTEMI from unstable angina (antithrombotics, then angiography); a second band sorts complications after the MI (right ventricular infarction, pump failure or rupture, arrhythmia and block, post-MI pericarditis) with presentation, investigations and treatment",
+ "col_w": 210,
+ "root": {
+  "title": "Suspected acute coronary syndrome (ACS): stabilize, ASA, 12-lead ECG within 10 MINUTES",
+  "lines": [
+   "> 15–30 min crushing retrosternal pain to the arm or jaw, sweating; atypical or silent in women, the elderly, diabetics",
+   "ASA 162–325 mg chewed, NOT if aortic dissection is possible (arm blood pressures differ > 20 mmHg)",
+   "AFTER every myocardial infarction (MI): ASA for life + 2nd antiplatelet 12 months; rehab + other drugs: see the SECONDARY PREVENTION chart"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_st",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "ST ELEVATION",
+   "lines": [
+    "≥ 1 mm in 2 contiguous leads (2 mm in V2–V3) or NEW left bundle branch block"
+   ]
+  },
+  {
+   "id": "g_nst",
+   "cols": [
+    1,
+    1
+   ],
+   "title": "NO ST elevation",
+   "lines": [
+    "ST depression, T inversion or a normal ECG"
+   ]
+  },
+  {
+   "id": "g_cx",
+   "cols": [
+    2,
+    6
+   ],
+   "title": "AFTER the MI: what is NEW?",
+   "lines": [
+    "the infarct's ARTERY predicts which complication to expect"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "st",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "ST-elevation MI (STEMI)",
+      [
+       "OCCLUSIVE thrombus on a ruptured plaque",
+       "REPERFUSE NOW"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Which wall?",
+      [
+       "• V3–V4: ANTERIOR, left anterior descending (LAD)",
+       "• II, III, aVF: INFERIOR, right coronary (RCA)",
+       "• ST DOWN, max V1–V4: POSTERIOR"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "Do NOT wait for troponin",
+      [
+       "history + exam + ECG make the diagnosis"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Nitroglycerin, morphine, 2nd antiplatelet",
+      [
+       "~no nitro if hypotensive or RV infarct"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "2 · PRIMARY percutaneous coronary intervention (PCI)",
+      [
+       "gold standard; best within 1 h of pain"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "No PCI without delay → FIBRINOLYSIS",
+      [
+       "• < 12 h, no bleeding risk; + heparin",
+       "• pain + ST not ↓ 50% → RESCUE PCI"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ns",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Unstable angina or NSTEMI",
+      [
+       "NON-occlusive thrombus",
+       "older, multivessel disease"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "ECG: ST DEPRESSION or T inversion",
+      [
+       "• or completely NORMAL",
+       "• few develop Q waves"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "NSTEMI: troponin RISES and FALLS",
+      [
+       "~takes hours to appear"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Control the ischemia",
+      [
+       "nitrates, beta blocker, oxygen, morphine"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Pacify the plaque",
+      [
+       "• ASA + clopidogrel or ticagrelor",
+       "• + heparin, enoxaparin or fondaparinux 48–72 h"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "3 · ANGIOGRAPHY within 24–48 h",
+      [
+       "• then PCI or bypass surgery (CABG)",
+       "• SOONER: ongoing pain, ST change, edema, low BP"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rv",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Right ventricular (RV) infarction",
+      [
+       "proximal RCA: with an INFERIOR MI"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "bad",
+      "TRIAD",
+      [
+       "• LOW blood pressure",
+       "• HIGH jugular venous pressure",
+       "• CLEAR lungs"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "ST elevation in V4R",
+      [
+       "the right-sided lead"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "IV FLUIDS + PCI of the RCA",
+      [
+       "RV function recovers in 2–3 days"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "AVOID nitroglycerin",
+      [
+       "the RV depends on preload"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pf",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Pump failure or rupture",
+      [
+       "a LARGE or transmural MI",
+       "rupture: late presenters"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Pulmonary edema, cardiogenic SHOCK",
+      [
+       "• > 1/3 of the left ventricle (LV) lost, anterior MI",
+       "• shock: systolic BP < 90, cold"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "NEW murmur or tamponade",
+      [
+       "• SOFT, apex: papillary muscle → acute mitral regurgitation (MR)",
+       "• HARSH, left sternal border: septal rupture",
+       "• free wall rupture: TAMPONADE, often fatal"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Echo + right heart catheter",
+      [
+       "• septal rupture: O2 saturation STEPS UP in the RV",
+       "• acute MR: large V wave"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Edema: IV furosemide, nitro, morphine",
+      [
+       "+ early catheterization"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Rupture: balloon pump → URGENT surgery",
+      [
+       "tamponade: pericardiocentesis + repair"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ar",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Arrhythmia or heart block",
+      [
+       "ventricular tachycardia (VT) or fibrillation (VF) early, scar VT days later"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "The artery decides",
+      [
+       "• INFERIOR: sinus bradycardia; AV block, reversible after PCI",
+       "• ANTERIOR: Mobitz II, unstable and irreversible"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Monitor",
+      [
+       "MOST common: accelerated idioventricular rhythm, from reperfusion"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Inferior block: rarely needs pacing",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Anterior Mobitz II: temporary pacing",
+      [
+       "often permanent"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "VT or VF: CARDIOVERT",
+      [
+       "then beta blocker or amiodarone; scar VT: ablation or implantable defibrillator (ICD)"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pc",
+   "colour": "olive",
+   "head": [
+    [
+     [
+      "h",
+      "Post-MI pericarditis",
+      [
+       "pleuritic pain + rub",
+       "see the PERICARDIAL DISEASE chart"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Two timings",
+      [
+       "• EARLY: < 5 days, transmural MI",
+       "• LATE: Dressler syndrome, immune, weeks later"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Rub > 24 h after the MI",
+      [
+       "a late finding"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Early: HIGH-DOSE ASA + colchicine",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Dressler: ASA or NSAID + colchicine",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "an",
+   "colour": "brown",
+   "head": [
+    [
+     [
+      "h",
+      "LV aneurysm or PSEUDOaneurysm",
+      [
+       "both after a LARGE transmural MI"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "PSEUDO: EARLY, a contained rupture",
+      [
+       "• NARROW neck, only the pericardium holds",
+       "• can RUPTURE → tamponade"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "TRUE aneurysm: LATE",
+      [
+       "• WIDE neck, all 3 layers",
+       "• LV thrombus, heart failure"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Echo or MRI",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Pseudoaneurysm: SURGICAL repair",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Aneurysm: warfarin 3–6 months",
+      [
+       "± aneurysmectomy"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

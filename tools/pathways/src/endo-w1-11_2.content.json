@@ -1,0 +1,317 @@
+{
+ "name": "diabetes in pregnancy overview",
+ "title": "Diabetes in pregnancy split by when the high glucose starts: pre-existing type 1 or 2 diabetes (planned before conception, then managed trimester by trimester) causes malformations, while gestational diabetes found on the 24-28 week screen does not; a gestational diabetes that does not clear after delivery was type 2 all along; each column gives risks, numbered checks and treatment in order",
+ "col_w": 250,
+ "root": {
+  "title": "Diabetes in pregnancy: was the glucose high BEFORE organogenesis?",
+  "lines": [
+   "organogenesis runs weeks 3–16, often before she knows she is pregnant",
+   "glucose goals for EVERY one: fasting < 5.3 · 1 h after meals < 7.8 mmol/L"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_pre",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "BEFORE conception: type 1 or type 2",
+   "lines": [
+    "high glucose in organogenesis → MALFORMATIONS"
+   ]
+  },
+  {
+   "id": "g_gdm",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "Found at 24–28 weeks: SCREEN every pregnancy",
+   "lines": [
+    "starts AFTER organogenesis → NO malformations"
+   ]
+  }
+ ],
+ "pres": [
+  {
+   "id": "p_screen",
+   "group": "g_gdm",
+   "title": "Screen in order",
+   "lines": [
+    "1 · 50 g glucose, any time of day, 1 h: < 7.8 normal, stop · ≥ 11.1 = gestational diabetes (GDM)",
+    "2 · 7.8–11.0 → FASTING 75 g test: GDM if ANY of fasting ≥ 5.3, 1 h ≥ 10.6, 2 h ≥ 9.0"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "risk",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "SCREEN",
+  "risk": "RISKS",
+  "inv": "CHECK",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "risk"
+ ],
+ "columns": [
+  {
+   "id": "plan",
+   "colour": "teal",
+   "drop_label": "planning a pregnancy",
+   "head": [
+    [
+     [
+      "h",
+      "Before conception",
+      [
+       "the glycated hemoglobin (A1c) at conception sets the malformation risk"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "t",
+      "Malformations",
+      [
+       "• neural tube, caudal regression",
+       "• heart: transposition, coarctation, atrial septal defect",
+       "• gut atresias · kidney agenesis, double ureters"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · A1c ≤ 7%",
+      [
+       "≤ 6.5% even better"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Screen for retinopathy",
+      [
+       "found now → laser before pregnancy"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Conceive only when controlled",
+      [
+       "• folic acid",
+       "• blood pressure drugs safe for a baby: see the HYPERTENSION IN PREGNANCY chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "preg",
+   "colour": "blue",
+   "drop_label": "already pregnant",
+   "head": [
+    [
+     [
+      "h",
+      "Pregnant with type 1 or 2",
+      [
+       "follow closely: endocrinology + obstetrics (timing of delivery)"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "t",
+      "Mother and baby",
+      [
+       "• pre-eclampsia ×2",
+       "• retinopathy, nephropathy WORSEN",
+       "• big baby, newborn LOW glucose"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · A1c monthly: < 6.5%",
+      [
+       "without serious lows"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Eyes: during + within a year after",
+      [
+       "usually settles after delivery"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Insulin needs follow the placenta",
+      [
+       "• 1st trimester ↓: LOWS",
+       "• 2nd ↑ slowly · 3rd ↑↑ (most in type 2)",
+       "• after delivery ↓↓: lows while breastfeeding"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "gdm",
+   "colour": "orange",
+   "drop_label": "screen positive",
+   "head": [
+    [
+     [
+      "h",
+      "Gestational diabetes (GDM)",
+      [
+       "weight + placental hormones → insulin resistance"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "t",
+      "Mother and baby",
+      [
+       "• baby > 4 kg: shoulder dystocia, brachial plexus injury",
+       "• stillbirth · newborn low glucose, calcium",
+       "• hypertension, induction, cesarean"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Home glucose",
+      [
+       "fasting + 1 h after each meal"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "A1c: NOT used",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Diet + walk",
+      [
+       "• 3 meals of 45 g, 3 snacks of 20 g carbohydrate",
+       "• 10 min walk after meals"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Above goal → INSULIN",
+      [
+       "• the gold standard",
+       "• metformin: safe but weak",
+       "• glyburide crosses the placenta: newborn lows"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "3 · STOP all at delivery",
+      [
+       "• 75 g test 6 weeks–6 months after",
+       "• up to 60% get type 2 later"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "true",
+   "colour": "brown",
+   "drop_label": "readings or doses VERY high",
+   "head": [
+    [
+     [
+      "h",
+      "It was TYPE 2 all along",
+      [
+       "less often early type 1"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "t",
+      "Hint in pregnancy",
+      [
+       "glucose or insulin doses unusually HIGH"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "Glucose does NOT return to normal",
+      [
+       "on the 75 g test after delivery"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat as diabetes",
+      [
+       "see the DIAGNOSING DIABETES chart"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": []
+}

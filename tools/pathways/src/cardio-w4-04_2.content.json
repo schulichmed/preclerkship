@@ -1,0 +1,326 @@
+{
+ "name": "heart failure overview",
+ "title": "Heart failure decision chart: confirm with natriuretic peptide, ECG and echo, then sort the unstable patient by congestion (wet or dry) and perfusion (warm or cold) into acute treatment, and the stable patient by ejection fraction into reduced (diuretic, triple therapy, then ARNI, ivabradine, SGLT2 inhibitor and devices in order) or preserved (diuretics and risk factors)",
+ "col_w": 236,
+ "root": {
+  "title": "Breathless, edematous, tired: is it HEART FAILURE (HF), and is the patient UNSTABLE now?",
+  "lines": [
+   "a syndrome: typical symptoms + structural heart disease · the ejection fraction (EF) is not needed to diagnose it",
+   "1 · natriuretic peptide (BNP): LOW rules HF out  →  2 · ECG: normal makes reduced EF very unlikely  →  3 · ECHO, the gold standard: EF"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ac",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "ACUTE decompensated: is it WET (congested)? is it COLD (hypoperfused)?",
+   "lines": [
+    "WARM + DRY: adjust the oral therapy · look for the trigger: infection, anemia, thyroid, ischemia"
+   ]
+  },
+  {
+   "id": "g_ch",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "CHRONIC: what is the EF on echo?",
+   "lines": [
+    "the EF picks the treatment",
+    "New York Heart Association (NYHA) class: I no symptoms · II mild",
+    "III comfortable only at rest · IV symptoms at rest",
+    "every drug: start LOW, double every 2–4 weeks, check K+ and creatinine"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "FINDINGS",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "ww",
+   "colour": "blue",
+   "drop_label": "WET + warm",
+   "head": [
+    [
+     [
+      "h",
+      "WARM + WET",
+      [
+       "congested, still perfused"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Congestion",
+      [
+       "• orthopnea, paroxysmal nocturnal dyspnea",
+       "• crackles, S3, raised jugular venous pressure",
+       "• edema, ascites, big liver"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · IV loop diuretic + oxygen",
+      [
+       "furosemide, + vasodilators"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Diuretic-resistant",
+      [
+       "ultrafiltration"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cw",
+   "colour": "magenta",
+   "drop_label": "WET + COLD",
+   "head": [
+    [
+     [
+      "h",
+      "COLD + WET",
+      [
+       "WORST prognosis",
+       "cardiogenic shock"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Congested AND hypoperfused",
+      [
+       "• cold, sweaty limbs",
+       "• low urine output, confusion",
+       "• NARROW pulse pressure"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Systolic BP < 90",
+      [
+       "• inotrope ± vasopressor",
+       "• diuretics",
+       "• mechanical support"
+      ]
+     ],
+     [
+      "warn",
+      "Systolic BP > 90",
+      [
+       "• vasodilators",
+       "• diuretics",
+       "• inotropes if refractory"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "No response",
+      [
+       "inotropes → balloon pump → LV assist device or transplant"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cd",
+   "colour": "slate",
+   "drop_label": "DRY + COLD",
+   "head": [
+    [
+     [
+      "h",
+      "COLD + DRY",
+      [
+       "hypoperfused, NOT congested"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Poor perfusion, clear lungs",
+      [
+       "• cold extremities",
+       "• dizziness, low urine output"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Fluid challenge",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Still hypoperfused → inotropes",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rf",
+   "colour": "orange",
+   "drop_label": "EF ≤ 40%",
+   "head": [
+    [
+     [
+      "h",
+      "HF with REDUCED EF (HFrEF)",
+      [
+       "DILATED, thin left ventricle (LV) that cannot PUMP",
+       "drugs with proven mortality benefit"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Find the cause",
+      [
+       "• ISCHEMIC most often: angiogram if unclear",
+       "• dilated cardiomyopathy, valve disease, hypertension"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Diuretic + TRIPLE therapy",
+      [
+       "• ACE inhibitor (angiotensin receptor blocker if intolerant)",
+       "• beta blocker (not in asthma)",
+       "• mineralocorticoid antagonist (MRA)"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Still symptomatic (NYHA II–IV)",
+      [
+       "• ACE inhibitor → sacubitril-valsartan (ARNI)",
+       "• + ivabradine if sinus rhythm, heart rate > 70",
+       "• + SGLT2 inhibitor (flozin): now if diabetic"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "3 · EF ≤ 35% → defibrillator (ICD)",
+      [
+       "+ resynchronization (CRT) for left bundle branch block"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "NYHA IV",
+      [
+       "hydralazine + nitrates, advanced HF referral, palliative care"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pf",
+   "colour": "teal",
+   "drop_label": "EF ≥ 50%",
+   "head": [
+    [
+     [
+      "h",
+      "HF with PRESERVED EF (HFpEF)",
+      [
+       "THICK, stiff LV that cannot FILL",
+       "mid-range EF 41–49% sits here"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Pressure overload",
+      [
+       "• hypertension, left ventricular hypertrophy",
+       "• aortic stenosis",
+       "• constrictive pericarditis"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Diuretics for congestion",
+      [
+       "the ONLY proven therapy"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Treat the risk factors",
+      [
+       "• blood pressure, heart rate, diabetes",
+       "~candesartan or spironolactone may help"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

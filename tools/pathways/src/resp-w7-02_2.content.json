@@ -1,0 +1,335 @@
+{
+ "name": "hypoxemia overview",
+ "title": "Hypoxemia worked out from the arterial blood gas: a normal alveolar-arterial gradient means too little oxygen reaches the alveoli (low inspired oxygen at altitude, or hypoventilation with a high PaCO2); a raised gradient means oxygen fails to cross into blood, sorted by diffusion capacity and imaging (diffusion limitation), the response to 100% oxygen (shunt) or neither (ventilation-perfusion mismatch, the commonest); a normal PaO2 with hypoxia suggests carbon monoxide",
+ "col_w": 228,
+ "root": {
+  "title": "Low O2 saturation: get an ARTERIAL gas. PaO2 < 80? Then: is the A-a GRADIENT normal?",
+  "lines": [
+   "arterial (PaO2) and alveolar (PAO2) O2 · alveolar gas: PAO2 = PIO2 − PaCO2 / 0.8 (room air: 150 − 1.25 × PaCO2)",
+   "alveolar-arterial (A-a) gradient = PAO2 − PaO2 · normal ≤ age / 4 + 4 · a venous gas does not help"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_n",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "A-a gradient NORMAL: too little O2 REACHES the alveoli",
+   "lines": [
+    "the lung itself is working"
+   ]
+  },
+  {
+   "id": "g_i",
+   "cols": [
+    2,
+    4
+   ],
+   "title": "A-a gradient RAISED: O2 fails to CROSS into the blood",
+   "lines": [
+    "the problem is in the lung or its circulation"
+   ]
+  },
+  {
+   "id": "g_co",
+   "cols": [
+    5,
+    5
+   ],
+   "title": "PaO2 NORMAL, but the tissues are hypoxic",
+   "lines": [
+    "hypoxia without hypoxemia"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_n",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "What is the PaCO2?",
+   "lines": []
+  },
+  {
+   "id": "t_i",
+   "cols": [
+    2,
+    4
+   ],
+   "title": "Check DLCO + imaging, then give 100% O2",
+   "lines": [
+    "V/Q = ventilation-perfusion ratio · DLCO = diffusion capacity"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "test",
+  "cause"
+ ],
+ "row_names": {
+  "test": "TELL IT BY",
+  "cause": "CAUSES"
+ },
+ "columns": [
+  {
+   "id": "pio",
+   "colour": "slate",
+   "drop_from": "t_n",
+   "drop_label": "normal or LOW",
+   "head": [
+    [
+     [
+      "h",
+      "Low inspired O2 (PIO2)",
+      [
+       "low barometric pressure"
+      ]
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "t",
+      "HISTORY: high altitude",
+      [
+       "breathing harder: PaCO2 ↓, respiratory alkalosis"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "w",
+      "Can lead to altitude sickness",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hv",
+   "colour": "teal",
+   "drop_from": "t_n",
+   "drop_label": "HIGH",
+   "head": [
+    [
+     [
+      "h",
+      "Hypoventilation",
+      [
+       "alveolar O2 not replenished"
+      ]
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "t",
+      "PaCO2 ↑ with a NORMAL gradient",
+      [
+       "O2 falls as CO2 rises"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "w",
+      "Drive or pump",
+      [
+       "• opiates, benzodiazepines",
+       "• neuromuscular disease, muscle paralysis",
+       "• chest wall deformity, obesity"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "vq",
+   "colour": "blue",
+   "drop_from": "t_i",
+   "drop_label": "neither",
+   "head": [
+    [
+     [
+      "h",
+      "V/Q mismatch",
+      [
+       "the MOST COMMON cause"
+      ]
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "t",
+      "Improves with 100% O2",
+      [
+       "DLCO and imaging do not point to diffusion"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "w",
+      "Too little ventilation (low V/Q)",
+      [
+       "• asthma, chronic bronchitis, mucus plugs",
+       "• pneumonia, pulmonary edema"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Too little perfusion (dead space)",
+      [
+       "• pulmonary embolism",
+       "• chronic obstructive pulmonary disease: lost capillaries"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "df",
+   "colour": "orange",
+   "drop_from": "t_i",
+   "drop_label": "DLCO ↓ + fibrosis",
+   "head": [
+    [
+     [
+      "h",
+      "Diffusion limitation",
+      [
+       "a thick, damaged membrane"
+      ]
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "t",
+      "Low DLCO + fibrosis on imaging",
+      [
+       "worse with EXERCISE or altitude"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "w",
+      "Interstitium",
+      [
+       "• interstitial lung disease, fibrosis",
+       "• asbestosis, sarcoidosis"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sh",
+   "colour": "magenta",
+   "drop_from": "t_i",
+   "drop_label": "NO rise on 100% O2",
+   "head": [
+    [
+     [
+      "h",
+      "Right-to-left shunt",
+      [
+       "blood bypasses ventilated lung (V/Q = 0)"
+      ]
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "t",
+      "PaO2 does NOT rise on 100% O2",
+      [
+       "PaCO2 usually NOT raised"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "w",
+      "Lung",
+      [
+       "• acute respiratory distress syndrome",
+       "• pulmonary arteriovenous fistula"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Heart",
+      [
+       "intracardiac: tetralogy of Fallot"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "co",
+   "colour": "purple",
+   "drop_label": "O2 content ↓",
+   "head": [
+    [
+     [
+      "h",
+      "Carbon monoxide poisoning",
+      [
+       "binds hemoglobin 240× more than O2"
+      ]
+     ]
+    ]
+   ],
+   "test": [
+    [
+     [
+      "bad",
+      "PaO2 AND pulse oximetry look NORMAL",
+      [
+       "both mislead"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "w",
+      "O2 CONTENT is low",
+      [
+       "the O2 dissociation curve shifts LEFT"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurology &middot; PoM 2</title>
+<meta name="description" content="Neuroanatomy and the cranial nerves, localization and the spinal cord, stroke, seizures, tumours, movement disorders, the eye and the ear.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Schulich MedFriend">
+<meta property="og:title" content="Neurology &middot; PoM 2">
+<meta property="og:description" content="Neuroanatomy and the cranial nerves, localization and the spinal cord, stroke, seizures, tumours, movement disorders, the eye and the ear.">
+<meta property="og:url" content="https://schulichmed.github.io/preclerkship/pom2/neuro.html">
+<meta property="og:image" content="https://schulichmed.github.io/preclerkship/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%237a3fb0'/><text x='16' y='23' font-family='Georgia,serif' font-size='17' font-weight='600' fill='%23ffffff' text-anchor='middle'>P2</text></svg>">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="theme-color" content="#ffffff">
+<script>
+(function(){
+  var root=document.documentElement,KEY="pc-theme",stored=null,mq=null;
+  try{stored=localStorage.getItem(KEY);}catch(e){}
+  if(stored!=="dark"&&stored!=="light")stored=null;
+  if(window.matchMedia)mq=window.matchMedia("(prefers-color-scheme: dark)");
+  function os(){return mq&&mq.matches?"dark":"light";}
+  function apply(t){
+    root.setAttribute("data-theme",t);
+    var m=document.querySelector('meta[name="theme-color"]');
+    if(m)m.setAttribute("content",t==="dark"?"#140c22":"#ffffff");
+    var b=document.getElementById("theme-btn");
+    if(!b)return;
+    b.setAttribute("aria-pressed",t==="dark"?"true":"false");
+    b.setAttribute("aria-label","Switch to "+(t==="dark"?"light":"dark")+" mode");
+    b.title=b.getAttribute("aria-label");
+  }
+  function follow(){if(!stored)apply(os());}
+  apply(stored||os());
+  if(mq&&mq.addEventListener)mq.addEventListener("change",follow);
+  else if(mq&&mq.addListener)mq.addListener(follow);
+  document.addEventListener("DOMContentLoaded",function(){apply(root.getAttribute("data-theme"));});
+  document.addEventListener("click",function(e){
+    var s=e.target&&e.target.closest?e.target.closest(".skip"):null;
+    if(s){
+      var c=document.getElementById("content");
+      if(c){e.preventDefault();c.focus();c.scrollIntoView();}
+      return;
+    }
+    /* Still gets one tab, reused, so a second click brings the music
+       forward rather than restarting it (see STILL_BTN) */
+    var m=e.target&&e.target.closest?e.target.closest(".still-btn,.still-strip"):null;
+    if(m){
+      if(e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+      var w=null;
+      try{w=window.open("","still-music");}catch(e3){}
+      if(!w)return;
+      e.preventDefault();
+      try{if(w.location.href==="about:blank")w.location.replace(m.href);}catch(e4){}
+      try{w.focus();}catch(e5){}
+      return;
+    }
+    var b=e.target&&e.target.closest?e.target.closest("#theme-btn"):null;
+    if(!b)return;
+    stored=root.getAttribute("data-theme")==="dark"?"light":"dark";
+    try{localStorage.setItem(KEY,stored);}catch(e2){}
+    /* a crossfade between the themes where the browser can draw one and the
+       reader has not asked for less motion; otherwise the switch is instant */
+    var calm=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if(document.startViewTransition&&!calm)document.startViewTransition(function(){apply(stored);});
+    else apply(stored);
+  });
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../base.css?v=00e9aa0f">
+<link rel="stylesheet" href="../portal.css?v=90860f32">
+<style>
+:root{--q-accent:#4b3f96;--q-accent-soft:#e9e6f6;--q-accent-ink:#3e3480;}
+</style>
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d66f0003318d42f1bd62e0a2c3e216af"}'></script>
+<script>
+(function(){
+  var URL_="https://preclerkship-presence.schulichmed.workers.dev/",MINUTE=60000,timer=null,visitor=null;
+  function rid(){return Math.random().toString(36).slice(2,12)+Date.now().toString(36);}
+  try{visitor=localStorage.getItem("pc-visitor");if(!/^[a-z0-9]{8,40}$/.test(visitor||"")){visitor=rid();localStorage.setItem("pc-visitor",visitor);}}catch(e){visitor=rid();}
+  // one id per browser tab, kept in sessionStorage so a refresh or a click to
+  // another portal page is the same reader rather than a new one; the leaving
+  // beacon below cannot be relied on to clear the old id, since blockers drop it
+  var tab=null;
+  try{tab=sessionStorage.getItem("pc-tab");if(!/^[a-z0-9]{8,40}$/.test(tab||"")){tab=rid();sessionStorage.setItem("pc-tab",tab);}}catch(e){tab=rid();}
+  function body(leaving){return JSON.stringify({site:"preclerkship",visitor:visitor,tab:tab,leaving:leaving});}
+  function show(d){
+    var el=document.getElementById("presence");
+    if(!el||typeof d.total!=="number")return;
+    el.querySelector("[data-total]").textContent=d.total.toLocaleString();
+    el.hidden=false;
+  }
+  function ping(){
+    if(!window.fetch)return;
+    fetch(URL_,{method:"POST",headers:{"content-type":"application/json"},body:body(false)})
+      .then(function(r){return r.ok?r.json():null;}).then(function(d){if(d)show(d);}).catch(function(){});
+  }
+  function start(){if(!timer){ping();timer=setInterval(ping,MINUTE);}}
+  function stop(){if(timer){clearInterval(timer);timer=null;}}
+  document.addEventListener("visibilitychange",function(){document.hidden?stop():start();});
+  window.addEventListener("pagehide",function(){stop();if(navigator.sendBeacon)navigator.sendBeacon(URL_,body(true));});
+  window.addEventListener("pageshow",function(e){if(e.persisted&&!document.hidden)start();});
+  if(!document.hidden)start();
+})();
+</script>
+<script>window.PORTAL_SYNC_CFG = {"firebase": {"apiKey": "AIzaSyCW-gbfcaiOv1Dl-hDdDz7c-1m5ZWiWl5k", "authDomain": "public-medfriend.firebaseapp.com", "projectId": "public-medfriend", "storageBucket": "public-medfriend.firebasestorage.app", "messagingSenderId": "1083842121706", "appId": "1:1083842121706:web:c63c6c9132e37a3d876c93"}, "stores": ["nsq.fom.v1.", "nsq.pom1.v1.", "nsq.v1.", "nsq.t2c.v1."]};</script>
+<script defer src="../sync.js?v=a6b059c2"></script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<div class="pom2-page">
+
+<nav class="blocknav" aria-label="Blocks">
+<a class="home" href="https://schulichmed.github.io/preclerkship/">All courses</a>
+<a href="endo.html">1 &middot; Endocrinology</a>
+<a href="repro.html">2 &middot; Reproduction</a>
+<a href="msk.html">3 &middot; Musculoskeletal</a>
+<a href="neuro.html" class="here">4 &middot; Neurology</a>
+<a href="psych.html">5 &middot; Psychiatry</a>
+<a href="qbank.html" class="qbank">Question bank</a>
+<a class="theme-btn still-btn" href="https://ashishsara.github.io/still/" target="_blank" rel="noopener" aria-label="Study music: open Still in a new tab" title="Study music: Still, original music made in your browser"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></a><button class="theme-btn" id="theme-btn" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode"><svg class="moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</nav>
+
+<header class="q-masthead" id="content" tabindex="-1">
+<div>
+<p class="eyebrow" id="m-eyebrow">Schulich PoM 2 · Block 4 · Weeks 12–16</p>
+<h1>Neurology</h1>
+<p class="lead">Neuroanatomy and the cranial nerves, localization and the spinal cord, stroke, seizures, tumours, movement disorders, the eye and the ear.</p>
+</div>
+<div class="scoreboard" id="sb-notes">
+<div class="score"><b><span id="cv-notes">49</span><span class="of" id="cv-of">/49</span></b><span>Notes written</span></div>
+<div class="score"><b><span id="cv-weeks">5</span><span class="of" id="cv-weeks-of">/5</span></b><span>Weeks covered</span></div>
+</div>
+</header>
+
+<main>
+
+<div class="tabs">
+<div class="tabset" role="tablist" aria-label="Notes or Anki">
+<button type="button" id="tab-notes" role="tab" aria-selected="true" aria-controls="panel-notes">Notes <span class="tc" id="tc-notes">49/49</span></button>
+<button type="button" id="tab-anki" role="tab" aria-selected="false" aria-controls="panel-anki" tabindex="-1">Anki <span class="tc">923</span></button>
+</div>
+<a class="tab-out" id="to-qbank" href="qbank.html#block=neuro"><span class="tab-wide">Practice questions</span><span class="tab-narrow" aria-hidden="true">Questions</span> <span class="tc">306</span><span class="done" id="qb-done" hidden></span></a>
+</div>
+
+<div class="q-shell is-solo" id="panel-anki" role="tabpanel" aria-labelledby="tab-anki" hidden>
+<div class="deck">
+<div class="callout k-warning">
+<span class="ct">Draft</span>
+<p>Built from upper-year Christina&rsquo;s Anki deck. Not yet checked against this year&rsquo;s lecture slides.</p>
+</div>
+<div class="deck-head">
+<div class="deck-what">
+<h2>PoM 2, weeks 12–16</h2>
+<p class="deck-sum"><b>923</b> cards from <b>837</b> notes, across 41 lectures. <b>195</b> are marked high-yield.</p>
+<p class="deck-src">Christina&rsquo;s deck, the one the classes pass down, filed by week and lecture the way the notes are. The cards are hers as she wrote them; they have not been checked against this year&rsquo;s lecture slides yet.</p>
+</div>
+<a class="deck-dl" href="anki/neuro.apkg" download>Download the deck <span class="sz">32 MB</span></a>
+</div>
+<div class="deck-how">
+<p><strong>To import it:</strong> open Anki on a computer, then <strong>File &rarr; Import</strong> and pick the file. It arrives as <code>PoM2::Block 4</code> with the week and lecture subdecks intact, so it sits beside whatever you already have rather than merging into it.</p>
+<figure class="deck-preview"><img src="assets/anki_preview.png" alt="The PoM 2 deck in Anki&rsquo;s deck list: the course, then a block, then each week, then one subdeck per lecture" loading="lazy" decoding="async"><figcaption>How it looks once imported: course, block, week, then one subdeck per lecture. The numbers are one student&rsquo;s cards due that day, not the size of each deck.</figcaption></figure>
+</div>
+<div class="deck-weeks">
+<section class="deck-week">
+<p class="panel-h">Week 12 <span class="tc">268</span></p>
+<ul class="deck-lecs">
+<li><span class="lc-n">01 - Understanding and Managing Chronic Pain</span><span class="lc-c"><b>18</b> <span class="hy">&middot; 1 high-yield</span></span></li>
+<li><span class="lc-n">02 - Psychological Factors in Managing Chronic Pain</span><span class="lc-c"><b>3</b></span></li>
+<li><span class="lc-n">04 - Introduction to Neuroanatomy</span><span class="lc-c"><b>16</b> <span class="hy">&middot; 1 high-yield</span></span></li>
+<li><span class="lc-n">05 - Cranial Nerve Anatomy and Function</span><span class="lc-c"><b>57</b> <span class="hy">&middot; 7 high-yield</span></span></li>
+<li><span class="lc-n">06 - Facial Anatomy</span><span class="lc-c"><b>30</b> <span class="hy">&middot; 5 high-yield</span></span></li>
+<li><span class="lc-n">07 - Anatomy of the Cranial Cavity</span><span class="lc-c"><b>72</b> <span class="hy">&middot; 5 high-yield</span></span></li>
+<li><span class="lc-n">08 - Neuroanatomy of the Cortex</span><span class="lc-c"><b>42</b> <span class="hy">&middot; 7 high-yield</span></span></li>
+<li><span class="lc-n">09 - Introduction to Neurophysiology</span><span class="lc-c"><b>30</b> <span class="hy">&middot; 5 high-yield</span></span></li>
+</ul>
+</section>
+<section class="deck-week">
+<p class="panel-h">Week 13 <span class="tc">283</span></p>
+<ul class="deck-lecs">
+<li><span class="lc-n">01 - Orbital Anatomy</span><span class="lc-c"><b>34</b> <span class="hy">&middot; 6 high-yield</span></span></li>
+<li><span class="lc-n">03 - Neuroanatomy of the Brainstem, Basal Ganglia, and Diencephalon</span><span class="lc-c"><b>42</b> <span class="hy">&middot; 6 high-yield</span></span></li>
+<li><span class="lc-n">04 - Neuroanatomy of the Spinal Tracts and Cerebellum</span><span class="lc-c"><b>48</b> <span class="hy">&middot; 8 high-yield</span></span></li>
+<li><span class="lc-n">05 - Neurophysiology of Sensation</span><span class="lc-c"><b>9</b></span></li>
+<li><span class="lc-n">07 - Neurophysiology of Reflexes</span><span class="lc-c"><b>11</b> <span class="hy">&middot; 1 high-yield</span></span></li>
+<li><span class="lc-n">09 - Neurophthalmology</span><span class="lc-c"><b>32</b> <span class="hy">&middot; 22 high-yield</span></span></li>
+<li><span class="lc-n">10 - Cortical Syndromes</span><span class="lc-c"><b>19</b> <span class="hy">&middot; 5 high-yield</span></span></li>
+<li><span class="lc-n">11 - Approach to Weakness</span><span class="lc-c"><b>27</b> <span class="hy">&middot; 21 high-yield</span></span></li>
+<li><span class="lc-n">12 - Approach to Localization</span><span class="lc-c"><b>20</b> <span class="hy">&middot; 15 high-yield</span></span></li>
+<li><span class="lc-n">13 - Neuroembryology</span><span class="lc-c"><b>13</b> <span class="hy">&middot; 1 high-yield</span></span></li>
+<li><span class="lc-n">14 - Autonomic Nervous System</span><span class="lc-c"><b>28</b></span></li>
+</ul>
+</section>
+<section class="deck-week">
+<p class="panel-h">Week 14 <span class="tc">194</span></p>
+<ul class="deck-lecs">
+<li><span class="lc-n">01 - Approach to Head Injuries</span><span class="lc-c"><b>28</b> <span class="hy">&middot; 4 high-yield</span></span></li>
+<li><span class="lc-n">02 - Multiple Sclerosis</span><span class="lc-c"><b>15</b> <span class="hy">&middot; 2 high-yield</span></span></li>
+<li><span class="lc-n">03 - Approach to Stroke</span><span class="lc-c"><b>40</b> <span class="hy">&middot; 17 high-yield</span></span></li>
+<li><span class="lc-n">04 - Approach to Sensory Symptoms</span><span class="lc-c"><b>17</b> <span class="hy">&middot; 2 high-yield</span></span></li>
+<li><span class="lc-n">05 - Neuropathic Pain</span><span class="lc-c"><b>6</b></span></li>
+<li><span class="lc-n">06 - Approach to Headache</span><span class="lc-c"><b>25</b> <span class="hy">&middot; 5 high-yield</span></span></li>
+<li><span class="lc-n">07 - Approach to Altered Level of Consciousness</span><span class="lc-c"><b>11</b> <span class="hy">&middot; 2 high-yield</span></span></li>
+<li><span class="lc-n">08 - Approach to Seizures</span><span class="lc-c"><b>14</b> <span class="hy">&middot; 4 high-yield</span></span></li>
+<li><span class="lc-n">09 - Recovery in the Nervous System</span><span class="lc-c"><b>3</b></span></li>
+<li><span class="lc-n">10 - Neurosurgical Emergencies</span><span class="lc-c"><b>4</b> <span class="hy">&middot; 4 high-yield</span></span></li>
+<li><span class="lc-n">11 - Neuroinfections</span><span class="lc-c"><b>31</b> <span class="hy">&middot; 15 high-yield</span></span></li>
+</ul>
+</section>
+<section class="deck-week">
+<p class="panel-h">Week 15 <span class="tc">148</span></p>
+<ul class="deck-lecs">
+<li><span class="lc-n">01 - Multidisciplinary Care in ALS</span><span class="lc-c"><b>13</b> <span class="hy">&middot; 4 high-yield</span></span></li>
+<li><span class="lc-n">02 - Brain Tumors</span><span class="lc-c"><b>25</b> <span class="hy">&middot; 6 high-yield</span></span></li>
+<li><span class="lc-n">03 - Pediatric Neurology</span><span class="lc-c"><b>22</b></span></li>
+<li><span class="lc-n">04 - Non-Mendelian Genetics</span><span class="lc-c"><b>12</b> <span class="hy">&middot; 1 high-yield</span></span></li>
+<li><span class="lc-n">05 - Movement Disorders</span><span class="lc-c"><b>30</b> <span class="hy">&middot; 6 high-yield</span></span></li>
+<li><span class="lc-n">06 - Monocular Vision Impairment</span><span class="lc-c"><b>16</b> <span class="hy">&middot; 3 high-yield</span></span></li>
+<li><span class="lc-n">07 - Red Eye and Ocular Trauma</span><span class="lc-c"><b>14</b></span></li>
+<li><span class="lc-n">08 - Pediatric Ophthalmology</span><span class="lc-c"><b>16</b> <span class="hy">&middot; 1 high-yield</span></span></li>
+</ul>
+</section>
+<section class="deck-week">
+<p class="panel-h">Week 16 <span class="tc">30</span></p>
+<ul class="deck-lecs">
+<li><span class="lc-n">02 - Integration of Medicine and Neurology</span><span class="lc-c"><b>3</b> <span class="hy">&middot; 3 high-yield</span></span></li>
+<li><span class="lc-n">04 - Hearing Loss</span><span class="lc-c"><b>17</b></span></li>
+<li><span class="lc-n">05 - Vertigo</span><span class="lc-c"><b>10</b></span></li>
+</ul>
+</section>
+</div>
+</div>
+<div class="deck">
+<div class="deck-head">
+<div class="deck-what">
+<h2>Anatomy lab deck: Face, Cranial Cavity, Orbit & Brain</h2>
+<p class="deck-sum"><b>341</b> cards from <b>341</b> notes, across 3 labs.</p>
+<p>Upper-year comprehensive cadaver deck (PoM2 Anatomy Lab Notes Bolded), sorted by lab. Images are credited on each card to the atlases they come from; use it for your own study. Cards with no lab tag were placed by best guess (tagged lab_guessed).</p>
+</div>
+<a class="deck-dl" href="anki/neuro-cadaver.apkg" download>Download the lab deck <span class="sz">22 MB</span></a>
+</div>
+<div class="deck-weeks">
+<section class="deck-week">
+<p class="panel-h">3. Face, Cranial Cavity, Eye&Orbit, Neuro <span class="tc">341</span></p>
+<ul class="deck-lecs">
+<li><span class="lc-n">Lab 08 - Face & Neck</span><span class="lc-c"><b>84</b></span></li>
+<li><span class="lc-n">Lab 09 - Cranial Nerves, Orbit & Skull</span><span class="lc-c"><b>193</b></span></li>
+<li><span class="lc-n">Lab 10 - Brain</span><span class="lc-c"><b>64</b></span></li>
+</ul>
+</section>
+</div>
+</div>
+</div>
+
+<div class="q-shell" id="panel-notes" role="tabpanel" aria-labelledby="tab-notes">
+<aside class="rail">
+
+<section>
+<p class="panel-h"><label for="note-q">Search</label></p>
+<div class="notesearch">
+<input type="search" id="note-q" placeholder="Search every note" autocomplete="off" spellcheck="false" title="Every word must appear somewhere in the note. Press / to jump here, Escape to clear.">
+<button class="ns-clear" id="note-q-clear" type="button" title="Clear the search" aria-label="Clear the search" hidden>&times;</button>
+</div>
+<p class="railnote hits" id="note-q-count" hidden></p>
+<div class="nsnav" id="note-nav" hidden>
+<button class="ns-step" id="note-nav-prev" type="button" title="Previous match (Shift+Enter)" aria-label="Previous match">&uarr;</button>
+<button class="ns-step" id="note-nav-next" type="button" title="Next match (Enter)" aria-label="Next match">&darr;</button>
+<span class="ns-pos" id="note-nav-pos" aria-live="polite"></span>
+</div>
+</section>
+
+<section>
+<p class="panel-h">Week</p>
+<div class="chips" id="note-week-chips"></div>
+</section>
+
+<section>
+<p class="panel-h">Lectures</p>
+<nav class="lecindex" id="note-index" aria-label="Jump to a lecture"></nav>
+</section>
+
+<section>
+<p class="panel-h">Save as PDF</p>
+<button class="print-cta" id="print-all" type="button" disabled>Save every note as one PDF</button>
+<p class="railnote">Each note has its own <strong>PDF</strong> button, and each week can be
+saved in one go. Print it, annotate it, keep it.</p>
+</section>
+
+</aside>
+
+<div class="stream" id="note-stream">
+<div class="q-loading">Loading notes&hellip;</div>
+</div>
+
+<div class="posbar notebar" id="notebar" hidden>
+<button class="pb-step pb-top" id="nb-top" type="button" title="Back to the top" aria-label="Back to the top">Top</button>
+</div>
+</div>
+
+</main>
+
+<script>
+window.QUIZ_BLOCK = {"slug": "neuro", "n": 4, "name": "Neurology", "weeks": "12–16", "course": "PoM 2", "store": "nsq.v1.", "families": [{"key": "meds2029", "name": "Case-Based Questions", "tip": "Cases from student session notes", "blurb": "Cases and questions from student notes from modules, in-class sessions and small-group sessions."}, {"key": "reviews", "name": "Schulich Reviews", "tip": "Upper-year exam review sessions", "blurb": "The Schulich Reviews sessions, run by upper years before each exam. Their own practice questions, keyed by the deck, plus questions written from their high-yield slides. Where a review disagrees with this year's lecture, the lecture wins and the question says so."}, {"key": "hipponotes", "name": "HippoNotes", "tip": "Meds 2025 peer bank; check the key", "blurb": "The question banks at the back of the Meds 2025 HippoNotes (Academic Resources Team, May 2023) - one document per block, written by the class two years ahead. Peer-written like the Workbook, so the key is worth checking rather than trusting; the source groups by week only, with no per-lecture attribution."}, {"key": "workbook", "name": "Pre-Clerkship Workbook", "tip": "Handed-down peer bank; key has errors", "blurb": "The Pre-Clerkship Workbook (2023 edition), the student bank passed down through the Schulich classes of 2015-2025. It has a written key, but the key is peer-written and contains real errors. Every one found is flagged on the question."}, {"key": "offcurriculum", "name": "Off-curriculum", "tip": "Not taught in this year's lectures", "blurb": "Questions from the handed-down banks and older sets that this year's lectures do not teach, or teach differently. Kept here rather than deleted, for anyone who wants them. Each one names the lecture it was checked against and says what that lecture teaches now."}], "qv": "dc3b7b28", "nv": "81566246", "dir": "pom2", "contact": "schulichmedfriend@gmail.com", "report": "https://preclerkship-report.schulichmed.workers.dev/", "lecq": {"neuro-w12-01": {"n": 5, "lec": "w12-01"}, "neuro-w12-02": {"n": 1, "lec": "w12-02"}, "neuro-w12-03": {"n": 2, "lec": "w12-03"}, "neuro-w12-04": {"n": 6, "lec": "w12-04"}, "neuro-w12-05": {"n": 14, "lec": "w12-05"}, "neuro-w12-06": {"n": 13, "lec": "w12-06"}, "neuro-w12-07": {"n": 9, "lec": "w12-07"}, "neuro-w12-08": {"n": 8, "lec": "w12-08"}, "neuro-w12-09": {"n": 4, "lec": "w12-09"}, "neuro-w13-01": {"n": 9, "lec": "w13-01"}, "neuro-w13-02": {"n": 11, "lec": "w13-02"}, "neuro-w13-03": {"n": 8, "lec": "w13-03"}, "neuro-w13-04": {"n": 4, "lec": "w13-04"}, "neuro-w13-05": {"n": 3, "lec": "w13-05"}, "neuro-w13-06": {"n": 3, "lec": "w13-06"}, "neuro-w13-07": {"n": 7, "lec": "w13-07"}, "neuro-w13-08": {"n": 12, "lec": "w13-08"}, "neuro-w13-09": {"n": 7, "lec": "w13-09"}, "neuro-w13-10": {"n": 9, "lec": "w13-10"}, "neuro-w13-11": {"n": 11, "lec": "w13-11"}, "neuro-w13-12": {"n": 9, "lec": "w13-12"}, "neuro-w13-13": {"n": 2, "lec": "w13-13"}, "neuro-w13-14": {"n": 5, "lec": "w13-14"}, "neuro-w13-15": {"n": 4, "lec": "w13-15"}, "neuro-w14-01": {"n": 12, "lec": "w14-01"}, "neuro-w14-02": {"n": 3, "lec": "w14-02"}, "neuro-w14-03": {"n": 19, "lec": "w14-03"}, "neuro-w14-04": {"n": 4, "lec": "w14-04"}, "neuro-w14-05": {"n": 7, "lec": "w14-05"}, "neuro-w14-06": {"n": 13, "lec": "w14-06"}, "neuro-w14-07": {"n": 7, "lec": "w14-07"}, "neuro-w14-08": {"n": 10, "lec": "w14-08"}, "neuro-w14-10": {"n": 18, "lec": "w14-10"}, "neuro-w14-11": {"n": 8, "lec": "w14-11"}, "neuro-w15-01": {"n": 6, "lec": "w15-01"}, "neuro-w15-02": {"n": 11, "lec": "w15-02"}, "neuro-w15-03": {"n": 7, "lec": "w15-03"}, "neuro-w15-04": {"n": 6, "lec": "w15-04"}, "neuro-w15-05": {"n": 10, "lec": "w15-05"}, "neuro-w15-06": {"n": 7, "lec": "w15-06"}, "neuro-w15-07": {"n": 6, "lec": "w15-07"}, "neuro-w15-08": {"n": 5, "lec": "w15-08"}, "neuro-w16-01": {"n": 2, "lec": "w16-01"}, "neuro-w16-02": {"n": 3, "lec": "w16-02"}, "neuro-w16-03": {"n": 2, "lec": "w16-03"}, "neuro-w16-04": {"n": 10, "lec": "w16-04"}, "neuro-w16-05": {"n": 7, "lec": "w16-05"}}};
+</script>
+<script src="../notes.js?v=297ac815"></script>
+<script src="../portal.js?v=1fa577eb"></script>
+
+<footer>
+<p><strong>Unofficial and student-run.</strong> For any inquiries, email <a href="mailto:schulichmedfriend@gmail.com">schulichmedfriend@gmail.com</a>.</p>
+</footer>
+
+</div>
+
+</body>
+</html>

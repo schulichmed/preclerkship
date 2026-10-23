@@ -1,0 +1,758 @@
+{
+ "name": "adult screening overview",
+ "width": 1540,
+ "title": "Adult screening decision chart for a healthy adult at a periodic health encounter: smoking and lung cancer, lipids and diabetes by age and risk, then the average-risk cancer programs (colorectal, breast, cervical) with who is in, the test and interval, and who leaves for a high-risk route; abdominal aortic aneurysm and bone density from 65, no routine PSA",
+ "kinds": {
+  "sm_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sm_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "sm_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "li_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "li_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "li_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "dm_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dm_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "dm_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cr_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cr_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "cr_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "br_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "br_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "br_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "cx_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cx_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "cx_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 460,
+   "w": 242,
+   "h": 782,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 284,
+   "y": 460,
+   "w": 242,
+   "h": 782,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 528,
+   "y": 460,
+   "w": 242,
+   "h": 782,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 800,
+   "y": 460,
+   "w": 242,
+   "h": 782,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1044,
+   "y": 460,
+   "w": 242,
+   "h": 782,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1288,
+   "y": 460,
+   "w": 242,
+   "h": 782,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 292,
+   "h": 96,
+   "text": "ASK"
+  },
+  {
+   "x": 23,
+   "y": 586,
+   "h": 162,
+   "text": "WHO + WHEN"
+  },
+  {
+   "x": 23,
+   "y": 788,
+   "h": 162,
+   "text": "TEST"
+  },
+  {
+   "x": 23,
+   "y": 990,
+   "h": 244,
+   "text": "RESULT → NEXT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 405,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Healthy adult at a periodic health encounter (PHE): WHAT do I screen for, WHEN, and with WHAT?",
+   "lines": [
+    "stable (airway, breathing, circulation + vitals) → history: risk factors → exam: body mass index (BMI), blood pressure (BP), heart rate",
+    "tests chosen by RISK, not a fixed panel: will the result CHANGE MANAGEMENT? (Choosing Wisely)",
+    "screen with a very SENSITIVE test (negative rules OUT), confirm with a very SPECIFIC one (positive rules IN)"
+   ]
+  },
+  {
+   "id": "g_r",
+   "x": 45,
+   "y": 174,
+   "w": 720,
+   "h": 78,
+   "kind": "plain",
+   "title": "RISK FACTORS + CHRONIC DISEASE",
+   "lines": [
+    "by age, earlier if at higher risk",
+    "from 65: bone density, aortic aneurysm → see the OLDER ADULT chart"
+   ]
+  },
+  {
+   "id": "g_c",
+   "x": 805,
+   "y": 174,
+   "w": 720,
+   "h": 78,
+   "kind": "plain",
+   "title": "CANCER: AVERAGE risk and NO symptoms?",
+   "lines": [
+    "yes → the program below · symptoms or HIGH risk → out of it (red / amber boxes)"
+   ]
+  },
+  {
+   "id": "p_r",
+   "x": 45,
+   "y": 292,
+   "w": 720,
+   "h": 96,
+   "kind": "info",
+   "title": "Ask at every PHE",
+   "lines": [
+    "• poverty: \"trouble making ends meet at the end of the month?\"",
+    "• alcohol + drugs · mood + stressors: see the ANXIETY AND STRESS chart",
+    "• exercise + diet: SEDENTARISM is always a risk; BMI alone is not"
+   ]
+  },
+  {
+   "id": "p_c",
+   "x": 805,
+   "y": 292,
+   "w": 720,
+   "h": 96,
+   "kind": "info",
+   "title": "Programs for the ASYMPTOMATIC only",
+   "lines": [
+    "• symptoms → investigate them, don't screen",
+    "• high risk → its own route, earlier or more often",
+    "• prostate: NO routine prostate-specific antigen (PSA) · shared decision from 40 if Black or family history"
+   ]
+  },
+  {
+   "id": "sm_head_0_0",
+   "x": 45,
+   "y": 468,
+   "w": 232,
+   "h": 78,
+   "kind": "sm_h",
+   "title": "Smoking + lung cancer",
+   "lines": [
+    "ask every adult"
+   ]
+  },
+  {
+   "id": "li_head_0_0",
+   "x": 289,
+   "y": 468,
+   "w": 232,
+   "h": 78,
+   "kind": "li_h",
+   "title": "Lipids",
+   "lines": [
+    "high cholesterol → heart disease, stroke"
+   ]
+  },
+  {
+   "id": "dm_head_0_0",
+   "x": 533,
+   "y": 468,
+   "w": 232,
+   "h": 78,
+   "kind": "dm_h",
+   "title": "Type 2 diabetes",
+   "lines": []
+  },
+  {
+   "id": "cr_head_0_0",
+   "x": 805,
+   "y": 468,
+   "w": 232,
+   "h": 78,
+   "kind": "cr_h",
+   "title": "Colorectal cancer (CRC)",
+   "lines": []
+  },
+  {
+   "id": "br_head_0_0",
+   "x": 1049,
+   "y": 468,
+   "w": 232,
+   "h": 78,
+   "kind": "br_h",
+   "title": "Breast cancer",
+   "lines": []
+  },
+  {
+   "id": "cx_head_0_0",
+   "x": 1293,
+   "y": 468,
+   "w": 232,
+   "h": 78,
+   "kind": "cx_h",
+   "title": "Cervical cancer",
+   "lines": []
+  },
+  {
+   "id": "sm_who_0_0",
+   "x": 45,
+   "y": 586,
+   "w": 232,
+   "h": 52,
+   "kind": "sm_t",
+   "title": "Smokes? Every PHE",
+   "lines": []
+  },
+  {
+   "id": "sm_who_1_0",
+   "x": 45,
+   "y": 660,
+   "w": 232,
+   "h": 88,
+   "kind": "sm_w",
+   "title": "LUNG: age 55–74",
+   "lines": [
+    "• ≥ 30 pack-years",
+    "• smoking now, or quit < 15 years"
+   ]
+  },
+  {
+   "id": "li_who_0_0",
+   "x": 289,
+   "y": 586,
+   "w": 232,
+   "h": 42,
+   "kind": "li_t",
+   "title": "MEN ≥ 40",
+   "lines": []
+  },
+  {
+   "id": "li_who_1_0",
+   "x": 289,
+   "y": 650,
+   "w": 232,
+   "h": 98,
+   "kind": "li_t",
+   "title": "WOMEN ≥ 50 or postmenopausal",
+   "lines": [
+    "~earlier if higher risk: diabetes, some ethnic groups"
+   ]
+  },
+  {
+   "id": "dm_who_0_0",
+   "x": 533,
+   "y": 586,
+   "w": 232,
+   "h": 162,
+   "kind": "dm_t",
+   "title": "Age ≥ 40: every 3 YEARS",
+   "lines": [
+    "every 6–12 months if risk factors"
+   ]
+  },
+  {
+   "id": "cr_who_0_0",
+   "x": 805,
+   "y": 586,
+   "w": 232,
+   "h": 162,
+   "kind": "cr_t",
+   "title": "Age 50–74, average risk",
+   "lines": []
+  },
+  {
+   "id": "br_who_0_0",
+   "x": 1049,
+   "y": 586,
+   "w": 232,
+   "h": 162,
+   "kind": "br_t",
+   "title": "Age 40–74, average risk",
+   "lines": [
+    "younger: more false positives (dense breasts)"
+   ]
+  },
+  {
+   "id": "cx_who_0_0",
+   "x": 1293,
+   "y": 586,
+   "w": 232,
+   "h": 162,
+   "kind": "cx_t",
+   "title": "Age ≥ 25, has a cervix, EVER sexually active",
+   "lines": []
+  },
+  {
+   "id": "sm_test_0_0",
+   "x": 45,
+   "y": 788,
+   "w": 232,
+   "h": 162,
+   "kind": "sm_w",
+   "title": "Low-dose CT (LDCT) EVERY YEAR",
+   "lines": []
+  },
+  {
+   "id": "li_test_0_0",
+   "x": 289,
+   "y": 788,
+   "w": 232,
+   "h": 162,
+   "kind": "li_w",
+   "title": "NON-fasting lipid panel",
+   "lines": [
+    "• total, LDL, HDL, non-HDL cholesterol",
+    "• triglycerides"
+   ]
+  },
+  {
+   "id": "dm_test_0_0",
+   "x": 533,
+   "y": 788,
+   "w": 232,
+   "h": 162,
+   "kind": "dm_w",
+   "title": "Fasting plasma glucose (FPG) or HbA1c",
+   "lines": []
+  },
+  {
+   "id": "cr_test_0_0",
+   "x": 805,
+   "y": 788,
+   "w": 232,
+   "h": 62,
+   "kind": "cr_w",
+   "title": "Fecal immunochemical test (FIT) every 2 YEARS",
+   "lines": []
+  },
+  {
+   "id": "cr_test_1_0",
+   "x": 805,
+   "y": 872,
+   "w": 232,
+   "h": 78,
+   "kind": "cr_w",
+   "title": "OR a scope every 10 YEARS",
+   "lines": [
+    "flexible sigmoidoscopy or colonoscopy"
+   ]
+  },
+  {
+   "id": "br_test_0_0",
+   "x": 1049,
+   "y": 788,
+   "w": 232,
+   "h": 162,
+   "kind": "br_w",
+   "title": "Mammogram every 2 YEARS",
+   "lines": []
+  },
+  {
+   "id": "cx_test_0_0",
+   "x": 1293,
+   "y": 788,
+   "w": 232,
+   "h": 162,
+   "kind": "cx_w",
+   "title": "Human papillomavirus (HPV) test every 5 YEARS",
+   "lines": [
+    "cervical swab for high-risk types: replaced the Pap test"
+   ]
+  },
+  {
+   "id": "sm_next_0_0",
+   "x": 45,
+   "y": 990,
+   "w": 232,
+   "h": 244,
+   "kind": "ok",
+   "title": "Every smoker: the 5 A's",
+   "lines": [
+    "• Ask, Advise to quit, Assess readiness",
+    "• Assist: nicotine replacement",
+    "• Arrange follow-up ≤ 1 week after quit date"
+   ]
+  },
+  {
+   "id": "li_next_0_0",
+   "x": 289,
+   "y": 990,
+   "w": 232,
+   "h": 101,
+   "kind": "li_w",
+   "title": "Estimate risk: Framingham",
+   "lines": []
+  },
+  {
+   "id": "li_next_1_0",
+   "x": 289,
+   "y": 1113,
+   "w": 232,
+   "h": 121,
+   "kind": "ok",
+   "title": "Normal → repeat every 5 YEARS",
+   "lines": []
+  },
+  {
+   "id": "dm_next_0_0",
+   "x": 533,
+   "y": 990,
+   "w": 232,
+   "h": 60,
+   "kind": "ok",
+   "title": "Normal → rescreen as due",
+   "lines": [
+    "FPG < 5.6 mmol/L · A1c < 5.5%"
+   ]
+  },
+  {
+   "id": "dm_next_1_0",
+   "x": 533,
+   "y": 1072,
+   "w": 232,
+   "h": 80,
+   "kind": "warn",
+   "title": "At risk or PREDIABETES → rescreen MORE OFTEN",
+   "lines": [
+    "FPG 5.6–6.9 · A1c 5.5–6.4%"
+   ]
+  },
+  {
+   "id": "dm_next_2_0",
+   "x": 533,
+   "y": 1174,
+   "w": 232,
+   "h": 60,
+   "kind": "bad",
+   "title": "DIABETES",
+   "lines": [
+    "FPG > 7.0 · A1c > 6.5%"
+   ]
+  },
+  {
+   "id": "cr_next_0_0",
+   "x": 805,
+   "y": 990,
+   "w": 232,
+   "h": 244,
+   "kind": "bad",
+   "title": "OUT of the average-risk program",
+   "lines": [
+    "• prior CRC or adenomatous polyps, inflammatory bowel disease",
+    "• symptoms: bleeding, anemia, bowel change",
+    "• family: start 10 years before a 1st-degree relative's age at diagnosis"
+   ]
+  },
+  {
+   "id": "br_next_0_0",
+   "x": 1049,
+   "y": 990,
+   "w": 232,
+   "h": 244,
+   "kind": "warn",
+   "title": "HIGH risk: 30–69, EVERY YEAR",
+   "lines": [
+    "• mammogram ± MRI ± ultrasound",
+    "• BRCA1/2 or other mutation, or a carrier's 1st-degree relative",
+    "• personal/family breast or ovarian cancer, chest radiation < 30"
+   ]
+  },
+  {
+   "id": "cx_next_0_0",
+   "x": 1293,
+   "y": 990,
+   "w": 232,
+   "h": 101,
+   "kind": "warn",
+   "title": "IMMUNOCOMPROMISED → every 3 years",
+   "lines": []
+  },
+  {
+   "id": "cx_next_1_0",
+   "x": 1293,
+   "y": 1113,
+   "w": 232,
+   "h": 121,
+   "kind": "cx_w",
+   "title": "A positive result: see the CERVICAL SCREENING chart",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_r",
+   "path": "M785.0 124V149H405.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_c",
+   "path": "M785.0 124V149H1165.0V174"
+  },
+  {
+   "from": "g_r",
+   "to": "p_r"
+  },
+  {
+   "from": "g_c",
+   "to": "p_c"
+  },
+  {
+   "from": "sm_who_0_0",
+   "to": "sm_who_1_0"
+  },
+  {
+   "from": "li_who_0_0",
+   "to": "li_who_1_0"
+  },
+  {
+   "from": "cr_test_0_0",
+   "to": "cr_test_1_0"
+  },
+  {
+   "from": "li_next_0_0",
+   "to": "li_next_1_0"
+  },
+  {
+   "from": "dm_next_0_0",
+   "to": "dm_next_1_0"
+  },
+  {
+   "from": "dm_next_1_0",
+   "to": "dm_next_2_0"
+  },
+  {
+   "from": "cx_next_0_0",
+   "to": "cx_next_1_0"
+  },
+  {
+   "from": "sm_head_0_0",
+   "to": "sm_who_0_0"
+  },
+  {
+   "from": "sm_who_1_0",
+   "to": "sm_test_0_0"
+  },
+  {
+   "from": "sm_test_0_0",
+   "to": "sm_next_0_0"
+  },
+  {
+   "from": "p_r",
+   "to": "sm_head_0_0",
+   "from_dx": -244
+  },
+  {
+   "from": "li_head_0_0",
+   "to": "li_who_0_0"
+  },
+  {
+   "from": "li_who_1_0",
+   "to": "li_test_0_0"
+  },
+  {
+   "from": "li_test_0_0",
+   "to": "li_next_0_0"
+  },
+  {
+   "from": "p_r",
+   "to": "li_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "dm_head_0_0",
+   "to": "dm_who_0_0"
+  },
+  {
+   "from": "dm_who_0_0",
+   "to": "dm_test_0_0"
+  },
+  {
+   "from": "dm_test_0_0",
+   "to": "dm_next_0_0"
+  },
+  {
+   "from": "p_r",
+   "to": "dm_head_0_0",
+   "from_dx": 244
+  },
+  {
+   "from": "cr_head_0_0",
+   "to": "cr_who_0_0"
+  },
+  {
+   "from": "cr_who_0_0",
+   "to": "cr_test_0_0"
+  },
+  {
+   "from": "cr_test_1_0",
+   "to": "cr_next_0_0"
+  },
+  {
+   "from": "p_c",
+   "to": "cr_head_0_0",
+   "from_dx": -244
+  },
+  {
+   "from": "br_head_0_0",
+   "to": "br_who_0_0"
+  },
+  {
+   "from": "br_who_0_0",
+   "to": "br_test_0_0"
+  },
+  {
+   "from": "br_test_0_0",
+   "to": "br_next_0_0"
+  },
+  {
+   "from": "p_c",
+   "to": "br_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "cx_head_0_0",
+   "to": "cx_who_0_0"
+  },
+  {
+   "from": "cx_who_0_0",
+   "to": "cx_test_0_0"
+  },
+  {
+   "from": "cx_test_0_0",
+   "to": "cx_next_0_0"
+  },
+  {
+   "from": "p_c",
+   "to": "cx_head_0_0",
+   "from_dx": 244
+  }
+ ],
+ "panels": []
+}

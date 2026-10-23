@@ -1,0 +1,541 @@
+{
+ "name": "multiple myeloma overview",
+ "width": 1068,
+ "title": "Monoclonal protein sorted by end-organ damage (CRAB) and marrow plasma cells into MGUS, smoldering myeloma, multiple myeloma and plasma cell leukemia, with the workup, CRAB thresholds, emergencies first and follow-up intervals",
+ "kinds": {
+  "mg_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mg_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "mg_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "sm_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sm_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "sm_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "mm_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mm_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "mm_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "pc_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pc_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "pc_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 290,
+   "w": 246,
+   "h": 1096,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 288,
+   "y": 290,
+   "w": 246,
+   "h": 1096,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 564,
+   "y": 290,
+   "w": 246,
+   "h": 1096,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 812,
+   "y": 290,
+   "w": 246,
+   "h": 1096,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 416,
+   "h": 178,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 634,
+   "h": 352,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1026,
+   "h": 352,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 169,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Monoclonal (M) protein: is there END-ORGAN damage (CRAB), and how many plasma cells in the marrow?",
+   "lines": [
+    "every myeloma passes through MGUS, but not every MGUS becomes myeloma",
+    "normal marrow < 3% plasma cells"
+   ]
+  },
+  {
+   "id": "g_n",
+   "x": 45,
+   "y": 158,
+   "w": 484,
+   "h": 60,
+   "kind": "plain",
+   "title": "NO CRAB: asymptomatic · WATCH",
+   "lines": [
+    "marrow plasma cells decide"
+   ]
+  },
+  {
+   "id": "g_y",
+   "x": 569,
+   "y": 158,
+   "w": 484,
+   "h": 60,
+   "kind": "plain",
+   "title": "CRAB present: symptomatic · TREAT",
+   "lines": [
+    "hyperCalcemia · Renal failure · Anemia · Bone lesions"
+   ]
+  },
+  {
+   "id": "mg_head_0_0",
+   "x": 45,
+   "y": 298,
+   "w": 236,
+   "h": 78,
+   "kind": "mg_h",
+   "title": "MGUS",
+   "lines": [
+    "monoclonal gammopathy of undetermined significance"
+   ]
+  },
+  {
+   "id": "sm_head_0_0",
+   "x": 293,
+   "y": 298,
+   "w": 236,
+   "h": 78,
+   "kind": "sm_h",
+   "title": "Smoldering myeloma",
+   "lines": [
+    "between MGUS and myeloma"
+   ]
+  },
+  {
+   "id": "mm_head_0_0",
+   "x": 569,
+   "y": 298,
+   "w": 236,
+   "h": 78,
+   "kind": "mm_h",
+   "title": "Multiple myeloma",
+   "lines": [
+    "median age 66 · M > F"
+   ]
+  },
+  {
+   "id": "pc_head_0_0",
+   "x": 817,
+   "y": 298,
+   "w": 236,
+   "h": 78,
+   "kind": "pc_h",
+   "title": "Plasma cell leukemia",
+   "lines": [
+    "EMERGENCY: myeloma in the blood"
+   ]
+  },
+  {
+   "id": "mg_clue_0_0",
+   "x": 45,
+   "y": 416,
+   "w": 236,
+   "h": 178,
+   "kind": "mg_t",
+   "title": "No symptoms",
+   "lines": [
+    "can last many years"
+   ]
+  },
+  {
+   "id": "sm_clue_0_0",
+   "x": 293,
+   "y": 416,
+   "w": 236,
+   "h": 178,
+   "kind": "sm_t",
+   "title": "No symptoms",
+   "lines": []
+  },
+  {
+   "id": "mm_clue_0_0",
+   "x": 569,
+   "y": 416,
+   "w": 236,
+   "h": 78,
+   "kind": "mm_t",
+   "title": "Bone + blood",
+   "lines": [
+    "• BONE PAIN, fractures (spine most)",
+    "• fatigue (anemia), infections"
+   ]
+  },
+  {
+   "id": "mm_clue_1_0",
+   "x": 569,
+   "y": 516,
+   "w": 236,
+   "h": 78,
+   "kind": "mm_w",
+   "title": "Calcium + kidney",
+   "lines": [
+    "• thirst, polyuria, nausea, confusion",
+    "• kidney impairment"
+   ]
+  },
+  {
+   "id": "pc_clue_0_0",
+   "x": 817,
+   "y": 416,
+   "w": 236,
+   "h": 178,
+   "kind": "pc_t",
+   "title": "Symptomatic myeloma",
+   "lines": []
+  },
+  {
+   "id": "mg_inv_0_0",
+   "x": 45,
+   "y": 634,
+   "w": 236,
+   "h": 352,
+   "kind": "mg_t",
+   "title": "Marrow < 10% plasma cells",
+   "lines": [
+    "M protein · NO CRAB"
+   ]
+  },
+  {
+   "id": "sm_inv_0_0",
+   "x": 293,
+   "y": 634,
+   "w": 236,
+   "h": 352,
+   "kind": "sm_t",
+   "title": "Marrow ≥ 10% plasma cells",
+   "lines": [
+    "NO CRAB"
+   ]
+  },
+  {
+   "id": "mm_inv_0_0",
+   "x": 569,
+   "y": 634,
+   "w": 236,
+   "h": 114,
+   "kind": "mm_t",
+   "title": "1 · Find the M protein",
+   "lines": [
+    "• serum + 24-h urine protein electrophoresis, immunofixation",
+    "• serum free light chains",
+    "• film: ROULEAUX"
+   ]
+  },
+  {
+   "id": "mm_inv_1_0",
+   "x": 569,
+   "y": 770,
+   "w": 236,
+   "h": 114,
+   "kind": "mm_t",
+   "title": "2 · CRAB",
+   "lines": [
+    "• Ca > 2.52, creatinine > 175 (CrCl < 40)",
+    "• Hb < 100 (or 20 below baseline)",
+    "• lytic lesions: SKELETAL SURVEY"
+   ]
+  },
+  {
+   "id": "mm_inv_2_0",
+   "x": 569,
+   "y": 906,
+   "w": 236,
+   "h": 80,
+   "kind": "mm_w",
+   "title": "3 · Marrow > 10% clonal plasma cells",
+   "lines": [
+    "FISH t(4;14), t(14;16), del(17p)"
+   ]
+  },
+  {
+   "id": "pc_inv_0_0",
+   "x": 817,
+   "y": 634,
+   "w": 236,
+   "h": 352,
+   "kind": "pc_t",
+   "title": "Plasma cells in the BLOOD",
+   "lines": []
+  },
+  {
+   "id": "mg_tx_0_0",
+   "x": 45,
+   "y": 1026,
+   "w": 236,
+   "h": 352,
+   "kind": "ok",
+   "title": "Monitor 1–2 × a year",
+   "lines": []
+  },
+  {
+   "id": "sm_tx_0_0",
+   "x": 293,
+   "y": 1026,
+   "w": 236,
+   "h": 352,
+   "kind": "warn",
+   "title": "Close follow-up every 3–6 months",
+   "lines": []
+  },
+  {
+   "id": "mm_tx_0_0",
+   "x": 569,
+   "y": 1026,
+   "w": 236,
+   "h": 114,
+   "kind": "bad",
+   "title": "1 · EMERGENCIES",
+   "lines": [
+    "• cord compression → urgent surgery and/or radiation",
+    "• renal failure → anti-myeloma therapy, dialysis"
+   ]
+  },
+  {
+   "id": "mm_tx_1_0",
+   "x": 569,
+   "y": 1162,
+   "w": 236,
+   "h": 78,
+   "kind": "warn",
+   "title": "2 · Hypercalcemia",
+   "lines": [
+    "IV fluids + pamidronate, zoledronate or denosumab"
+   ]
+  },
+  {
+   "id": "mm_tx_2_0",
+   "x": 569,
+   "y": 1262,
+   "w": 236,
+   "h": 116,
+   "kind": "ok",
+   "title": "3 · Anti-myeloma therapy + support",
+   "lines": [
+    "• transfusion, erythropoietin, G-CSF, antibiotics, IV IgG",
+    "• vertebroplasty, orthopedic surgery"
+   ]
+  },
+  {
+   "id": "pc_tx_0_0",
+   "x": 817,
+   "y": 1026,
+   "w": 236,
+   "h": 352,
+   "kind": "bad",
+   "title": "High-dose combination chemotherapy",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_n",
+   "path": "M549.0 108V133H287.0V158"
+  },
+  {
+   "from": "root",
+   "to": "g_y",
+   "path": "M549.0 108V133H811.0V158"
+  },
+  {
+   "from": "mm_clue_0_0",
+   "to": "mm_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "mm_inv_0_0",
+   "to": "mm_inv_1_0"
+  },
+  {
+   "from": "mm_inv_1_0",
+   "to": "mm_inv_2_0"
+  },
+  {
+   "from": "mm_tx_0_0",
+   "to": "mm_tx_1_0"
+  },
+  {
+   "from": "mm_tx_1_0",
+   "to": "mm_tx_2_0"
+  },
+  {
+   "from": "mg_head_0_0",
+   "to": "mg_clue_0_0"
+  },
+  {
+   "from": "mg_clue_0_0",
+   "to": "mg_inv_0_0"
+  },
+  {
+   "from": "mg_inv_0_0",
+   "to": "mg_tx_0_0"
+  },
+  {
+   "from": "g_n",
+   "to": "mg_head_0_0",
+   "from_dx": -124,
+   "label": "< 10%",
+   "label_at": [
+    163.0,
+    258
+   ]
+  },
+  {
+   "from": "sm_head_0_0",
+   "to": "sm_clue_0_0"
+  },
+  {
+   "from": "sm_clue_0_0",
+   "to": "sm_inv_0_0"
+  },
+  {
+   "from": "sm_inv_0_0",
+   "to": "sm_tx_0_0"
+  },
+  {
+   "from": "g_n",
+   "to": "sm_head_0_0",
+   "from_dx": 124,
+   "label": "≥ 10%",
+   "label_at": [
+    411.0,
+    258
+   ]
+  },
+  {
+   "from": "mm_head_0_0",
+   "to": "mm_clue_0_0"
+  },
+  {
+   "from": "mm_clue_1_0",
+   "to": "mm_inv_0_0"
+  },
+  {
+   "from": "mm_inv_2_0",
+   "to": "mm_tx_0_0"
+  },
+  {
+   "from": "g_y",
+   "to": "mm_head_0_0",
+   "from_dx": -124,
+   "label": "marrow ≥ 10%",
+   "label_at": [
+    687.0,
+    258
+   ]
+  },
+  {
+   "from": "pc_head_0_0",
+   "to": "pc_clue_0_0"
+  },
+  {
+   "from": "pc_clue_0_0",
+   "to": "pc_inv_0_0"
+  },
+  {
+   "from": "pc_inv_0_0",
+   "to": "pc_tx_0_0"
+  },
+  {
+   "from": "g_y",
+   "to": "pc_head_0_0",
+   "from_dx": 124,
+   "label": "cells in BLOOD",
+   "label_at": [
+    935.0,
+    258
+   ]
+  }
+ ],
+ "panels": []
+}

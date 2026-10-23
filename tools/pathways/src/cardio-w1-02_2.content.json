@@ -1,0 +1,50 @@
+{
+ "name": "ECG reading overview",
+ "title": "Reading an ECG decision chart: in the same order every time, check rate, rhythm, intervals, axis, hypertrophy and ischemia or infarction; each step gives how to measure it, the normal range and where an abnormal result sends you next",
+ "col_w": 226,
+ "root": {
+  "title": "Reading an electrocardiogram (ECG): the SAME ORDER every time",
+  "lines": [
+   "depolarization moving TOWARD a positive electrode writes an UPWARD deflection: leads, axis and infarct location all follow from that",
+   "paper: 1 small box = 40 ms · 1 large box = 200 ms · 10 mm = 1 mV"
+  ]
+ },
+ "groups": [
+  {"id": "g_e", "cols": [0, 3], "title": "Is the ELECTRICAL system normal?", "lines": ["P = atria depolarize · QRS = ventricles depolarize · ST + T = ventricles repolarize"]},
+  {"id": "g_m", "cols": [4, 5], "title": "Is the MUSCLE normal?", "lines": ["which chamber, which wall"]}
+ ],
+ "sections": ["head", "how", "norm", "abn"],
+ "row_names": {"how": "HOW", "norm": "NORMAL", "abn": "ABNORMAL → NEXT"},
+ "columns": [
+  {"id": "rt", "colour": "teal",
+   "head": [[["h", "1 · Rate", []]]],
+   "how": [[["w", "LARGE boxes between beats", ["• 1 → 300 · 2 → 150 · 3 → 100", "• 4 → 75 · 5 → 60 · 6 → 50", "• or beats in a 10 s strip × 6"]]]],
+   "norm": [[["t", "60–100 /min", []]]],
+   "abn": [[["warn", "< 60: sinus BRADYCARDIA", ["see the BRADYCARDIA chart"]]], [["warn", "> 100: sinus TACHYCARDIA", ["see the TACHYCARDIA chart"]]]]},
+  {"id": "rh", "colour": "blue",
+   "head": [[["h", "2 · Rhythm", []]]],
+   "how": [[["w", "Every beat", ["• a P before each QRS?", "• a QRS after each P?", "• early beats, pauses, irregularity"]]]],
+   "norm": [[["t", "Sinus rhythm", ["one P → one QRS, regular"]]]],
+   "abn": [[["warn", "P waves WITHOUT a QRS", ["AV block: see the BRADYCARDIA chart"]]], [["warn", "No P waves, irregular QRS", ["see the ATRIAL FIBRILLATION chart"]]]]},
+  {"id": "iv", "colour": "purple",
+   "head": [[["h", "3 · Intervals", []]]],
+   "how": [[["w", "Count small boxes", ["40 ms each"]]]],
+   "norm": [[["t", "Normal ranges", ["• PR 120–200 ms", "• QRS 80–120 ms", "• QT ≤ 440 ms (men), ≤ 460 (women)"]]]],
+   "abn": [[["warn", "PR > 200 ms", ["1st degree AV block"]]], [["warn", "QRS > 120 ms", ["bundle branch block: V1 tells which (BRADYCARDIA chart)"]]], [["bad", "QT LONG", ["genetics, drugs, electrolytes, hypothermia"]]]]},
+  {"id": "ax", "colour": "orange",
+   "head": [[["h", "4 · Axis", []]]],
+   "how": [[["w", "QRS UP or DOWN?", ["• lead I and aVF", "• lead II if aVF is down"]]]],
+   "norm": [[["t", "−30° to +90°", ["• I up, aVF up", "• I up, aVF down, II UP: still normal"]]]],
+   "abn": [[["warn", "Axis deviation", ["• I up, aVF + II down: LEFT", "• I down, aVF up: RIGHT", "• both down: EXTREME right"]]], [["warn", "Deviated? Rule out a hemiblock", []]]]},
+  {"id": "hy", "colour": "brown",
+   "head": [[["h", "5 · Hypertrophy", []]]],
+   "how": [[["w", "P waves = atria", ["QRS height = ventricles"]]]],
+   "norm": [[["t", "No enlargement", []]]],
+   "abn": [[["warn", "ATRIUM enlarged", ["• right: TALL P in II, III, aVF", "• left: long NOTCHED or biphasic P in I, II, V1"]]], [["warn", "VENTRICLE enlarged", ["• right: large R in V1–V3", "• left: S in V1 + R in V6 > 35 mm"]]]]},
+  {"id": "is", "colour": "magenta",
+   "head": [[["h", "6 · Ischemia + infarction", []]]],
+   "how": [[["w", "Q waves · ST segment · T waves", []]]],
+   "norm": [[["t", "ST level with the baseline", []]]],
+   "abn": [[["warn", "What each change means", ["• ST DOWN, T inverted: ischemia", "• ST UP: infarction", "• Q waves: necrosis, past infarct"]]], [["bad", "ST UP + RECIPROCAL ST down = true STEMI", ["which leads = which artery: see the ACS chart"]]], [["warn", "Concave ST UP in > 1 territory + PR down", ["pericarditis: see the PERICARDIAL chart"]]]]}
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "name": "weakness overview",
+ "title": "Weakness: upper motor neuron signs place the lesion in the brain or spinal cord, lower motor neuron signs in the root, nerve, neuromuscular junction or muscle; the pattern of weakness and its companions localize it, and the tempo of onset gives the differential",
+ "col_w": 214,
+ "root": {
+  "title": "WEAKNESS: WHERE is the lesion, and how FAST did it come?",
+  "lines": [
+   "describe → LOCALIZE (upper or lower motor neuron, then the pattern) → differential by TEMPO → plan tests",
+   "cerebellum and basal ganglia do NOT cause weakness: incoordination, parkinsonism or extra movements instead"
+  ]
+ },
+ "groups": [
+  {"id": "g_umn", "cols": [0, 1], "title": "UPPER motor neuron (UMN): CENTRAL", "lines": ["brisk reflexes · Babinski (extensor plantar) · spasticity · NO atrophy, NO fasciculations"]},
+  {"id": "g_lmn", "cols": [2, 5], "title": "LOWER motor neuron (LMN): PERIPHERAL", "lines": ["reflexes ↓ or absent · plantar flexor or absent · normal tone · ATROPHY · fasciculations possible"]}
+ ],
+ "sections": ["head", "clue", "ddx"],
+ "row_names": {"clue": "REFINE", "ddx": "DIFFERENTIAL"},
+ "columns": [
+  {"id": "br", "colour": "purple", "head": [[["h", "Brain", ["hemibody + face or cranial nerves"]]]],
+   "clue": [[["t", "CORTEX clues", ["• language impairment", "• neglect"]]]]},
+  {"id": "sc", "colour": "blue", "head": [[["h", "Spinal cord", ["• hemibody, face SPARED", "• 4 limbs: cervical", "• both legs: thoracic (or lumbar roots)"]]]],
+   "clue": [[["t", "BLADDER symptoms", ["(or cauda equina)"]]], [["bad", "NO head CT for a cord problem", []]]]},
+  {"id": "rt", "colour": "teal", "head": [[["h", "Root", ["one myotome"]]]],
+   "clue": [[["t", "Usually PAINFUL", []]]]},
+  {"id": "nv", "colour": "olive", "head": [[["h", "Nerve", ["one nerve, or several"]]]],
+   "clue": [[["t", "Confirm: nerve conduction study", []]]]},
+  {"id": "nmj", "colour": "orange", "head": [[["h", "Neuromuscular junction", ["EYES + SWALLOWING"]]]],
+   "clue": [[["t", "Sensation SPARED", []]]]},
+  {"id": "mu", "colour": "brown", "head": [[["h", "Muscle", ["generalized, PROXIMAL"]]]],
+   "clue": [[["t", "Sensation SPARED", ["confirm: electromyography (EMG)"]]]]}
+ ],
+ "spans": [
+  {"section": "ddx", "cols": [0, 5], "rows": [
+   [["warn", "Then the TEMPO of onset gives the differential", ["• HYPERACUTE, seconds to minutes: STROKE until proven otherwise · migraine aura (resolves in minutes) · trauma", "• ACUTE, hours to a couple of days: inflammation, infection", "• SUBACUTE, days to weeks: inflammation, infection, tumour, toxic", "• CHRONIC, months to years: degenerative, hereditary"]]]
+  ]}
+ ]
+}

@@ -1,0 +1,376 @@
+{
+ "name": "leukocytosis overview",
+ "title": "High white count sorted by which cell line is up, how mature the cells are and whether they are clonal: blasts on the film (acute leukemia, call hematology today), reactive or primary neutrophilia, reactive or primary lymphocytosis, with the clues, confirming tests and next step for each",
+ "col_w": 226,
+ "root": {
+  "title": "White count (WBC) above 10 × 10⁹/L: WHICH cell line, how MATURE, and is it CLONAL?",
+  "lines": [
+   "complete blood count (CBC) + differential + blood film",
+   "exam: vitals · spleen · lymph nodes · gingival hyperplasia",
+   "EOSINOPHILS (> 0.5 × 10⁹/L), BASOPHILS or MONOCYTES up instead: benign causes first (drugs, allergy, parasites, chronic infection, autoimmune)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_bl",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "IMMATURE: BLASTS on the film",
+   "lines": []
+  },
+  {
+   "id": "g_ne",
+   "cols": [
+    1,
+    2
+   ],
+   "title": "Mature NEUTROPHILS (myeloid)",
+   "lines": [
+    "the FILM separates reactive from a marrow neoplasm"
+   ]
+  },
+  {
+   "id": "g_ly",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "Mature LYMPHOCYTES (lymphoid)",
+   "lines": [
+    "AGE matters: chronic lymphocytic leukemia is NOT common in the young"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "CLUES",
+  "inv": "CONFIRM",
+  "tx": "NEXT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "ac",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Acute leukemia",
+      [
+       "progresses very QUICKLY"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Blasts in the blood",
+      [
+       "• acute myeloid (AML) or lymphoblastic (ALL)",
+       "• YOUNG patient → suspect ALL"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Check for complications",
+      [
+       "• disseminated intravascular coagulation (DIC)",
+       "• leukostasis: headache, dyspnea, chest pain",
+       "• tumour lysis, febrile neutropenia, bleeding"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Call the on-call hematologist TODAY",
+      [
+       "type + treatment: LEUKEMIA chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rn",
+   "colour": "teal",
+   "drop_label": "toxic granules",
+   "head": [
+    [
+     [
+      "h",
+      "Reactive neutrophilia",
+      [
+       "marrow normal: something drives it"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Film: REACTIVE",
+      [
+       "• NO blasts or promyelocytes",
+       "• toxic granules, toxic vacuoles, Döhle bodies",
+       "• left shift (infection)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Causes",
+      [
+       "• infection, burns, heart attack, trauma, autoimmune",
+       "• steroids, lithium, smoking",
+       "• stress, exercise (demargination), hyposplenism"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Rule out SECONDARY causes",
+      [
+       "• infection workup, chest X-ray",
+       "• abdominal ultrasound, metabolic + autoimmune workup",
+       "• age-appropriate cancer screening"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Cytogenetics + molecular NEGATIVE",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat the cause",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mp",
+   "colour": "orange",
+   "drop_label": "WBC > 30",
+   "head": [
+    [
+     [
+      "h",
+      "Primary: myeloproliferative neoplasm (MPN)",
+      [
+       "clonal marrow: chronic myeloid leukemia (CML), polycythemia vera (PV), others"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Film: favours NEOPLASM",
+      [
+       "• immature myeloid cells",
+       "• WBC > 30 × 10⁹/L",
+       "• ↑ eosinophils and/or basophils"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "History + exam",
+      [
+       "• pruritus, early satiety (PV)",
+       "• splenomegaly"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "No secondary cause: prove CLONALITY",
+      [
+       "1 · Philadelphia chromosome: karyotype, FISH t(9;22), BCR-ABL",
+       "2 · JAK2 · next-generation sequencing"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "Where next",
+      [
+       "• Philadelphia + → CML: LEUKEMIA chart",
+       "• high hemoglobin → ERYTHROCYTOSIS chart",
+       "• high platelets, fibrosis → THROMBOCYTOSIS chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rl",
+   "colour": "blue",
+   "drop_label": "young · viral",
+   "head": [
+    [
+     [
+      "h",
+      "Reactive lymphocytosis",
+      [
+       "by far the most common cause: INFECTION"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Viral picture",
+      [
+       "• flu-like illness, sick contacts",
+       "• Epstein-Barr virus (EBV) mononucleosis in the young",
+       "• reactive lymphocytes wrap around red cells"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Also",
+      [
+       "inflammation, drug or toxin, other cancers"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Monospot test (EBV)",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Infection workup",
+      [
+       "cytomegalovirus (CMV), hepatitis B + C, HIV, tuberculosis (TB), toxoplasma"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · REPEAT in 4–6 weeks",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Most clear with time",
+      [
+       "still there at 4–6 weeks → think lymphoproliferative"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cl",
+   "colour": "purple",
+   "drop_label": "OLDER · persists",
+   "head": [
+    [
+     [
+      "h",
+      "Primary: CLL or lymphoproliferative disorder",
+      [
+       "clonal MATURE lymphocytes"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "No secondary cause",
+      [
+       "• OLDER patient",
+       "• persists past 4–6 weeks",
+       "• lymphadenopathy, splenomegaly"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Film: MATURE lymphocytes",
+      [
+       "immature (blasts) → ALL instead"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Flow cytometry: CLONAL?",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "Chronic lymphocytic leukemia (CLL): LEUKEMIA chart",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

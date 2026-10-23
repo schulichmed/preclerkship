@@ -1,0 +1,1365 @@
+/* Tab strip for a course block page, and the boot for the question bank.
+
+   Notes and Anki are two views of the same week and share a page. Questions
+   are not: they live on the course's one qbank.html, where a block is a filter
+   value rather than a page, so the third tab is a link out rather than a panel.
+   It carries the block in its hash, so arriving there lands pre-filtered.
+
+   The tab lives in the hash, so a link can point straight at the notes and the
+   back button steps between them. An old #questions link still works: it is
+   redirected to the qbank, filtered to this block. */
+
+(function () {
+  "use strict";
+
+  var BLOCK = window.QUIZ_BLOCK;
+
+  var TABS = {
+    notes: {
+      tab: "tab-notes",
+      panel: "panel-notes",
+      board: "sb-notes",
+      boot: function () { if (window.POM2_NOTES) window.POM2_NOTES.boot(); }
+    },
+    anki: {
+      tab: "tab-anki",
+      panel: "panel-anki",
+      board: null,          /* the scoreboard counts answers; a deck has none */
+      boot: function () {}
+    }
+  };
+
+  /* Where this block's questions went. One place builds it, so the link in the
+     tab strip and the redirect below cannot drift apart. */
+  function qbankUrl(slug) {
+    return "qbank.html#block=" + (slug || BLOCK.slug);
+  }
+
+  /* A bookmark or an old link pointing at this block's questions still means
+     something; it just means somewhere else now. Replace rather than assign,
+     so Back goes where the reader came from instead of bouncing off a redirect.
+
+     Checked on load AND on hashchange, because #questions arriving from a link
+     on the page is a same-document navigation: nothing reloads, init never
+     runs again, and a load-time check alone would sit there doing nothing. */
+  function leftForQbank() {
+    if ((window.location.hash || "") !== "#questions") return false;
+    window.location.replace(qbankUrl());
+    return true;
+  }
+
+  function byId(id) { return document.getElementById(id); }
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  function html(tag, cls, markup) {
+    var n = el(tag, cls);
+    if (markup) n.innerHTML = markup;
+    return n;
+  }
+
+  /* ---------- one note, rendered the same everywhere ---------- */
+
+  /* A lecture's note is shown in two places: the block page's notes tab and
+     the bank's note dialog, opened from a question's review line. They have
+     to look the same, so the renderer lives here, in the file both pages load,
+     and each caller hands in the two things that differ: the block's name, for
+     the tabs a figure or pathway opens into, and what a PDF button should do
+     - nothing, in the dialog, where printing would take the bank with it. */
+
+  var MERMAID_SRC = "https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js";
+  var HEAD_WRAP = 24;             // a table heading longer than this wraps
+  var MERMAID = null;             // the one load of the diagram library
+  var THEMED = null;              // the theme mermaid was last configured for
+
+
+  function esc(t) {
+    return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
+  function pdfButton(label, title, onClick) {
+    var b = el("button", "pdf-btn", label);
+    b.type = "button";
+    b.title = title;
+    b.addEventListener("click", function (e) {
+      e.preventDefault();
+      onClick();
+    });
+    return b;
+  }
+
+  function buildTable(spec) {
+    var wrap = el("div", "ct-wrap");
+    var t = el("table", "ct");
+    if (spec.cols && spec.cols.length) {
+      var thead = el("thead"), tr = el("tr");
+      /* Headings are set on one line, which is right for "Mechanism of Action"
+         and wrong for anything the extractor mistook for one: a sentence in a
+         th sets the column's width by itself, and the first column is sticky,
+         so it then covers the table while the content scrolls off to the
+         right. Past a short measure the heading wraps instead. */
+      spec.cols.forEach(function (c) {
+        var th = html("th", null, c);
+        if ((th.textContent || "").trim().length > HEAD_WRAP) th.className = "wide";
+        tr.appendChild(th);
+      });
+      thead.appendChild(tr);
+      t.appendChild(thead);
+    }
+    var tb = el("tbody");
+    /* a blank first cell means the row belongs to the group named above it, so
+       that label spans down the group instead of repeating. First column only:
+       anywhere else a blank cell is just a blank cell. */
+    var label = null;
+    (spec.rows || []).forEach(function (row) {
+      var r = el("tr");
+      row.forEach(function (cell, i) {
+        if (i !== 0) { r.appendChild(html("td", null, cell)); return; }
+        if (label && !cell.trim()) { label.rowSpan += 1; return; }
+        label = html("td", "rowlab", cell);
+        r.appendChild(label);
+      });
+      tb.appendChild(r);
+    });
+    t.appendChild(tb);
+    wrap.appendChild(t);
+    return wrap;
+  }
+
+  /* the parts arrive in the order they were written, because the sentence above
+     a table is the reason the table is there - splitting them into separate
+     fields would have shuffled the argument */
+  function buildBlock(b, lec, ctx) {
+    if (b.t === "pathway") {
+      var box = el("div", "pwblock");
+      var p = el("div", "pathway");
+      // mermaid parses the element's own text, so this must not be innerHTML
+      p.textContent = b.mermaid;
+      /* drawing replaces that text with the SVG, and the theme's colours are
+         baked into the SVG, so the source is kept for drawing again after a
+         theme change; see redrawPathways */
+      p.setAttribute("data-src", b.mermaid);
+      box.appendChild(p);
+
+      /* the button sits outside .pathway: mermaid reads that element's text and
+         would swallow anything else put inside it */
+      var open = el("button", "pw-open", "Open full size");
+      open.type = "button";
+      // nothing to open until mermaid has drawn; revealed in drawPathways
+      open.hidden = true;
+      open.title = "Open this pathway in its own tab, big enough to read";
+      open.addEventListener("click", function () { openPathway(p, lec, ctx); });
+      box.appendChild(open);
+
+      // the diagram is the obvious thing to click, so let it be
+      p.addEventListener("click", function () { openPathway(p, lec, ctx); });
+
+      return box;
+    }
+    if (b.t === "figure") {
+      // openable the moment it is built, unlike a pathway, which has to wait
+      // for mermaid to draw before there is anything to open
+      var fbox = el("div", "figblock is-openable");
+      // a drawn SVG (a class tree) is meant to be read where it sits, so it
+      // takes the column's width instead of the illustration height cap
+      if (/\.svg$/i.test(b.src)) fbox.classList.add("is-diagram");
+      /* a big drawn chart prints on a page of its own, sideways when it is
+         wider than tall, so its text is not shrunk to fit beside the note */
+      if (/\.svg$/i.test(b.src) && (b.w > 1000 || b.h > 900)) {
+        fbox.classList.add("is-big", b.w > b.h ? "is-wide" : "is-tall");
+      }
+      var fig = el("figure", "fig");
+
+      var img = el("img");
+      // properties, never markup: a filename is not HTML and must not be parsed
+      img.src = b.src;
+      img.alt = b.alt || "";
+      img.loading = "lazy";
+      img.decoding = "async";
+      /* the intrinsic size reserves the space, so a figure arriving late does
+         not shunt the chart down the page under someone already reading it */
+      if (b.w) img.width = b.w;
+      if (b.h) img.height = b.h;
+      // a width written in the vault (![[x.png|900]]) is a size someone chose,
+      // so it replaces the illustration height cap rather than fighting it
+      if (b.width) {
+        img.style.maxWidth = b.width + "px";
+        img.style.maxHeight = "none";
+        img.style.width = "100%";
+      }
+      fig.appendChild(img);
+
+      if (b.cap) fig.appendChild(html("figcaption", null, b.cap));
+      fbox.appendChild(fig);
+
+      var fopen = el("button", "fig-open", "Open full size");
+      fopen.type = "button";
+      fopen.title = "Open this figure in its own tab, big enough to read";
+      fopen.addEventListener("click", function () { openFigure(b, lec, ctx); });
+      fbox.appendChild(fopen);
+
+      /* A chart that also exists as an interactive page (pom2/charts) gets a
+         button to it, in a new tab. The note keeps the drawn chart: the user
+         tried the interactive page framed inside the note and preferred the
+         picture here and Look / Walk / Test a click away. */
+      if (b.interactive) {
+        var live = el("a", "fig-open fig-live", "Interactive chart");
+        live.href = b.interactive;
+        live.target = "_blank";
+        live.rel = "noopener";
+        live.title = "In a new tab: focus a column or box, walk the chart's questions, or test yourself";
+        fbox.appendChild(live);
+      }
+
+      // the picture is the obvious thing to click, so let it be
+      img.addEventListener("click", function () { openFigure(b, lec, ctx); });
+
+      return fbox;
+    }
+    if (b.t === "table") {
+      var box = el("div", "tblock");
+      if (b.lead) box.appendChild(html("div", "tlead", b.lead));
+      box.appendChild(buildTable(b));
+      return box;
+    }
+    if (b.t === "callout") {
+      var c = el("div", "callout k-" + (/^[a-z]+$/.test(b.kind || "") ? b.kind : "note"));
+      c.appendChild(el("span", "ct", b.title || "Note"));
+      c.appendChild(html("div", null, b.html));
+      return c;
+    }
+    if (b.t === "list") return html("div", "clist", b.html);
+    return html("div", "cnote", b.html);
+  }
+
+  /* A lecture is "covered" when the material is written up, but under a
+     neighbouring lecture's heading - the upper-year notes chart "Esophagus
+     Pathologies" or "Small Bowel Obstruction" across two or three of the
+     course's lectures at once. Counting those as gaps understated the
+     coverage and, worse, sent you looking for a note that is already there. */
+
+  function written(lec) {
+    return lec.hasNote === true || !!lec.coveredBy;
+  }
+
+  function coveredTitle(lec) {
+    var names = [lec.name];
+    (lec.covers || []).forEach(function (c) { names.push(c.name); });
+    return names.join(" + ");
+  }
+
+  /* An in-class session is a live class, not a recorded lecture, and the
+     lecture list should say which is which. tools/charts_from_vault.py sets
+     inClass; the tag then carries what the vault's "In-Class - " prefix said,
+     so the prefix is dropped from the title rather than said twice. */
+  function displayName(lec) {
+    return lec.inClass ? String(lec.name).replace(/^In-Class - /, "") : lec.name;
+  }
+
+  function inClassTag() {
+    var t = el("span", "inclass-tag", "In-class");
+    t.title = "Live in-class session, not a recorded lecture";
+    return t;
+  }
+
+  function buildNote(lec, opts) {
+    opts = opts || {};
+    var art = el("article", "note");
+    /* the block page addresses notes by key; the dialog holds one note and
+       needs no id, and must not plant one that could collide with the page */
+    if (lec.key) {
+      art.id = "n-" + lec.key;
+      art.dataset.id = lec.key;
+    }
+
+    var head = el("div", "note-head");
+    head.appendChild(el("span", "note-num", lec.num));
+    if (lec.inClass) head.appendChild(inClassTag());
+    /* These notes are not written one per lecture: one chart carries two or
+       three of them. The note is titled with every lecture it covers, rather
+       than being filed under one and leaving the rest reading as unwritten. */
+    head.appendChild(el("h4", null, displayName(lec)));
+    head.appendChild(el("span", "spacer"));
+    /* a note is reported by the block it came from, which in the bank's
+       dialog is the question's block and not the page's */
+    if (lec.id && opts.slug) head.appendChild(noteReportButton(lec, opts, art));
+    if (typeof opts.onPrint === "function") {
+      head.appendChild(pdfButton("PDF", "Save this note as a PDF",
+        function () { opts.onPrint(art); }));
+    }
+    art.appendChild(head);
+
+    /* The lectures this note also holds, as a line under the heading. They
+       used to be joined into the heading itself, which with six lectures made
+       a paragraph of a title; the names belong in the heading's shadow, each
+       with its number so it reads like the week's own list. */
+    if (lec.covers && lec.covers.length) {
+      var cv = el("div", "covers");
+      cv.appendChild(el("span", "covers-label", "Also covers"));
+      lec.covers.forEach(function (c, i) {
+        if (i) cv.appendChild(el("span", "covers-sep", "·"));
+        var item = el("span", "covers-item");
+        item.appendChild(el("span", "covers-num", c.num));
+        item.appendChild(document.createTextNode(" " + c.name));
+        cv.appendChild(item);
+      });
+      art.appendChild(cv);
+    }
+
+    /* PDFs pinned to the note (a classmate's notes, a lab handout), opened in
+       a tab of their own so the note stays where the reader left it */
+    if (lec.pdfs && lec.pdfs.length) {
+      var pl = el("div", "note-pdfs");
+      lec.pdfs.forEach(function (p) {
+        var a = el("a", "note-pdf", p.label);
+        a.href = p.href;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.title = "Open as a PDF in a new tab";
+        pl.appendChild(a);
+      });
+      art.appendChild(pl);
+    }
+
+    if (lec.title) art.appendChild(el("p", "note-title", lec.title));
+    /* A reader's report, merged from the pull request the Report button
+       opens. It is kept apart from the chart's own blocks because those are
+       rewritten from the vault on every rebuild, and the report must outlive
+       that until someone has fixed the note it points at. */
+    (lec.flags || []).forEach(function (f) {
+      var c = el("div", "callout k-" + (/^[a-z]+$/.test(f.type || "") ? f.type : "report"));
+      c.appendChild(el("span", "ct", f.title || "Reader report"));
+      c.appendChild(html("div", null, f.html));
+      art.appendChild(c);
+    });
+    if (lec.framing) art.appendChild(html("div", "framing", lec.framing));
+
+    (lec.blocks || []).forEach(function (b) { art.appendChild(buildBlock(b, lec, opts)); });
+
+    if (lec.keypoints) {
+      var kp = el("div", "keypoints");
+      kp.appendChild(el("span", "kt", "High-yield discriminators"));
+      kp.appendChild(html("div", null, lec.keypoints));
+      art.appendChild(kp);
+    }
+
+    /* The end of a note is where you want to test yourself, so it hands you to
+       the bank filtered to this block and to the lectures this note is about:
+       its own and every one it also covers. build_pages.py (lecture_counts)
+       worked out which of those have questions and how many, and a note with
+       none gets no button rather than one that lands on an empty bank. Only
+       the block page passes the counts; the bank's own note dialog is already
+       in the bank. */
+    var lq = opts.lecq && lec.id ? opts.lecq[lec.id] : null;
+    if (lq && lq.n && lq.lec && opts.slug) {
+      var go = el("p", "note-qbank");
+      var a = el("a", null, "Practice questions for this lecture · " + lq.n);
+      a.href = qbankUrl(opts.slug) + "&lecture=" + lq.lec;
+      /* a tab of its own, as the pinned PDFs open, so the note stays where
+         the reader left it to come back to after the questions */
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.title = "Open this lecture's questions in a new tab";
+      go.appendChild(a);
+      art.appendChild(go);
+    }
+
+    return art;
+  }
+
+  /* The preview is read off the rendered note rather than the data, so it
+     is the text the reader was looking at when they pressed the button. */
+  function noteReportButton(lec, opts, art) {
+    return reportButton({
+      kind: "note",
+      id: lec.id,
+      where: (BLOCK && BLOCK.course ? BLOCK.course + " \u00b7 " : "") +
+             (opts.block || opts.slug) + " \u00b7 " + (lec.num ? lec.num + " " : "") + lec.name,
+      get preview() {
+        var f = art.querySelector(".framing, .note-title");
+        return f ? f.textContent : coveredTitle(lec);
+      },
+      fields: {
+        course: (BLOCK && BLOCK.dir) || "", block: opts.slug,
+        lecture: lec.id, num: String(lec.num || ""), name: lec.name || ""
+      }
+    });
+  }
+
+  /* Inside the stream a pathway is capped at the column width, so a wide one is
+     scaled down and its labels go with it. This hands the diagram to a tab of
+     its own, where it has the whole window.
+
+     It goes as SVG, which is what mermaid has already drawn: it stays sharp at
+     any zoom the browser offers, costs the repo no image files and no build
+     step, and works offline. A PNG would be a fixed grid of pixels and would
+     blur at exactly the moment you leaned in, which is the problem being fixed.
+
+     document.write into a blank tab rather than a blob URL: blobs inherit an
+     opaque origin that some browsers refuse to render as a document, and this
+     page has no server to fetch a real one from. */
+  function openPathway(host, lec, ctx) {
+    var svg = host.querySelector("svg");
+    if (!svg) return;            // mermaid never drew it; the source is on screen
+
+    var copy = svg.cloneNode(true);
+    copy.removeAttribute("style");        // mermaid pins a max-width here
+    copy.setAttribute("width", "100%");
+    copy.removeAttribute("height");
+    if (!copy.getAttribute("xmlns")) {
+      copy.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    }
+
+    var w = window.open("", "_blank");
+    if (!w) return;                       // a blocked popup is not worth a dialog
+
+    var title = (lec && lec.name) || "Pathway";
+    var block = (ctx && ctx.block) || (BLOCK && BLOCK.name) || "PoM 2";
+    var num = (lec && lec.num) ? lec.num + " \u00b7 " : "";
+
+    w.document.open();
+    w.document.write([
+      "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">",
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<title>", esc(num + title), " \u00b7 ", esc(block), "</title>",
+      "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+      "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
+      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?",
+      "family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap\">",
+      /* the page's own tokens, so the tab is in the theme the diagram was
+         drawn in; the print rule is light, as it is on the page */
+      "<style>",
+      "*{margin:0;padding:0;box-sizing:border-box}",
+      "body{background:", token("--bg", "#ffffff"), ";color:", token("--text", "#201436"), ";",
+      "font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,sans-serif;",
+      /* the diagram fills the width and scrolls, which is how a flowchart is
+         read anyway and keeps the labels as large as they can be - but not
+         past a comfortable measure on a very wide screen */
+      "max-width:1500px;margin:auto;padding:22px clamp(16px,4vw,40px) 40px}",
+      "p.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.08em;",
+      "text-transform:uppercase;color:", token("--muted", "#6a5e7e"), ";margin-bottom:6px}",
+      "h1{font-family:Fraunces,Georgia,serif;font-size:clamp(1.3rem,3vw,1.9rem);",
+      "font-weight:600;line-height:1.2;text-wrap:balance;margin-bottom:18px}",
+      /* the whole point: the diagram gets the window, not a 900px column */
+      "figure{background:", token("--card-bg", "#fff"), ";border:1px solid ", token("--border", "#e5dcef"), ";",
+      "border-radius:8px;padding:clamp(14px,3vw,30px);overflow-x:auto}",
+      "svg{width:100%;height:auto;display:block}",
+      "footer{margin-top:16px;font-size:.8rem;color:", token("--muted", "#6a5e7e"), "}",
+      "@media print{body{padding:0;background:#fff;color:#201436}",
+      "figure{border:0;padding:0}footer{display:none}}",
+      "</style></head><body>",
+      "<p class=\"eyebrow\">", esc(block), "</p>",
+      "<h1>", esc(num + title), "</h1>",
+      "<figure>", new XMLSerializer().serializeToString(copy), "</figure>",
+      "<footer>Zoom with your browser, or print this page to keep it. ",
+      "The diagram is drawn, not photographed, so it stays sharp at any size.</footer>",
+      "</body></html>"
+    ].join(""));
+    w.document.close();
+  }
+
+  /* The pathway's problem, and the same answer: inside the stream a figure is
+     capped at the note's column, and the labels printed inside an axis diagram
+     go down with it. This hands it a tab of its own.
+
+     The picture is a file, not an inline SVG, so the new document just points
+     at the same asset the browser has already cached - nothing is re-encoded
+     and nothing is copied across.
+
+     The img is built with DOM calls after the write rather than concatenated
+     into the markup, because esc() escapes &<> but NOT quotes, and a src is an
+     attribute. Nothing here would break on the hashed filenames we generate;
+     building it this way means nothing later can. */
+  function openFigure(b, lec, ctx) {
+    var w = window.open("", "_blank");
+    if (!w) return;                       // a blocked popup is not worth a dialog
+
+    var title = (lec && lec.name) || "Figure";
+    var block = (ctx && ctx.block) || (BLOCK && BLOCK.name) || "PoM 2";
+    var num = (lec && lec.num) ? lec.num + " · " : "";
+
+    w.document.open();
+    w.document.write([
+      "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">",
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<title>", esc(num + title), " · ", esc(block), "</title>",
+      "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+      "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
+      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?",
+      "family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap\">",
+      "<style>",
+      "*{margin:0;padding:0;box-sizing:border-box}",
+      "body{background:#f5f0fc;color:#201436;",
+      "font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,sans-serif;",
+      "max-width:1500px;margin:auto;padding:22px clamp(16px,4vw,40px) 40px}",
+      "p.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.08em;",
+      "text-transform:uppercase;color:#6a5e7e;margin-bottom:6px}",
+      "h1{font-family:Fraunces,Georgia,serif;font-size:clamp(1.3rem,3vw,1.9rem);",
+      "font-weight:600;line-height:1.2;text-wrap:balance;margin-bottom:18px}",
+      "figure{background:#fff;border:1px solid #e5dcef;border-radius:8px;",
+      "padding:clamp(14px,3vw,30px)}",
+      "img{width:100%;height:auto;display:block;margin:auto}",
+      "figcaption{margin-top:12px;font-size:.8rem;color:#6a5e7e;text-align:center}",
+      "footer{margin-top:16px;font-size:.8rem;color:#6a5e7e}",
+      "@media print{body{padding:0;background:#fff}",
+      "figure{border:0;padding:0}footer{display:none}}",
+      "</style></head><body>",
+      "<p class=\"eyebrow\">", esc(block), "</p>",
+      "<h1>", esc(num + title), "</h1>",
+      "<figure id=\"fig\"></figure>",
+      "<footer>Zoom with your browser, or print this page to keep it.</footer>",
+      "</body></html>"
+    ].join(""));
+    w.document.close();
+
+    var host = w.document.getElementById("fig");
+    if (!host) return;
+    var big = w.document.createElement("img");
+    big.src = new URL(b.src, location.href).href;   // the popup has no base url
+    big.alt = b.alt || "";
+    host.appendChild(big);
+    if (b.cap) {
+      var cap = w.document.createElement("figcaption");
+      cap.innerHTML = b.cap;
+      host.appendChild(cap);
+    }
+  }
+
+  /* One diagram failing to parse should not take the others' buttons with it, so
+     this asks each block on its own whether it has a drawing to show. */
+  function revealOpen(root) {
+    [].forEach.call(root.querySelectorAll(".pwblock"), function (box) {
+      var drawn = !!box.querySelector(".pathway svg");
+      box.classList.toggle("is-openable", drawn);
+      var btn = box.querySelector(".pw-open");
+      if (btn) btn.hidden = !drawn;
+    });
+  }
+
+  /* The theme the page is in right now: the head script sets data-theme
+     before anything paints, and a page without it is light. */
+  function currentTheme() {
+    return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+  }
+
+  /* A token's value as the browser would paint it. getComputedStyle hands a
+     custom property back as written, and in the dark theme the accent's soft
+     wash and ink are written as color-mix(), which mermaid cannot read: it
+     wants a colour it can parse. Painting the value onto a probe and reading
+     the colour back resolves it, to rgb() or, in a newer browser, to
+     color(srgb ...), which mermaid cannot read either and is turned into
+     rgb() here. Anything else falls back rather than reaching mermaid. */
+  function token(name, fallback) {
+    var got = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    if (!got) return fallback;
+    if (got.indexOf("(") < 0) return got;
+    var probe = document.createElement("span");
+    probe.style.color = got;
+    document.documentElement.appendChild(probe);
+    var seen = getComputedStyle(probe).color;
+    document.documentElement.removeChild(probe);
+    if (seen.indexOf("rgb") === 0) return seen;
+    var m = /^color\(srgb ([\d.]+) ([\d.]+) ([\d.]+)/.exec(seen);
+    if (!m) return fallback;
+    function ch(x) { return Math.round(parseFloat(x) * 255); }
+    return "rgb(" + ch(m[1]) + ", " + ch(m[2]) + ", " + ch(m[3]) + ")";
+  }
+
+  function themeVars() {
+    return {
+      darkMode: currentTheme() === "dark",
+      background: token("--card-bg", "#ffffff"),
+      primaryColor: token("--q-accent-soft", "#eeeeee"),
+      primaryTextColor: token("--text", "#201436"),
+      /* the accent as text, which is the lightened one in the dark theme: the
+         raw accent is dark on a near-black fill and the outline all but goes */
+      primaryBorderColor: token("--q-accent-text", "#4f2683"),
+      lineColor: token("--muted", "#6a5e7e"),
+      secondaryColor: token("--bg", "#ffffff"),
+      tertiaryColor: token("--bg", "#ffffff"),
+      /* named rather than left to mermaid, which lightens them from the
+         colours above and lands on white edge labels in the dark theme */
+      edgeLabelBackground: token("--bg", "#ffffff"),
+      clusterBkg: token("--bg", "#ffffff"),
+      clusterBorder: token("--border", "#e5dcef"),
+      titleColor: token("--text", "#201436"),
+      fontFamily: token("--sans", "Inter, sans-serif"),
+      fontSize: "13px"
+    };
+  }
+
+  /* Mermaid is configured for one theme at a time, and it is told again only
+     when the page's theme has changed since: the tokens are read at that
+     moment, so a diagram is always drawn in the theme the page is in. */
+  function configure(mermaid) {
+    var theme = currentTheme();
+    if (theme === THEMED) return theme;
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "strict",
+      theme: "base",
+      themeVariables: themeVars(),
+      flowchart: { htmlLabels: true, useMaxWidth: true }
+    });
+    THEMED = theme;
+    return theme;
+  }
+
+  /* The library is fetched once per page, the first time any note on it
+     needs a diagram, and every later call waits on that same load. */
+  function loadMermaid() {
+    if (MERMAID) return MERMAID;
+    MERMAID = new Promise(function (resolve, reject) {
+      var s = document.createElement("script");
+      s.src = MERMAID_SRC;
+      s.async = true;
+      s.onload = function () { resolve(window.mermaid || null); };
+      s.onerror = function () { reject(new Error("mermaid did not load")); };
+      document.head.appendChild(s);
+    });
+    return MERMAID;
+  }
+
+  /* Draws these nodes in the page's theme and settles once they are drawn or
+     have fallen back to text. Each node is marked with the theme it was drawn
+     in, which is what redrawPathways reads; and if the theme moved on while
+     the drawing was under way, the drawing is done again. */
+  /* A flowchart box the vault colours yellow with "classDef lo" is a learning
+     objective, the same as a highlight in the text, and it follows the text's
+     night look: gold on a dark amber box. Mermaid scopes a classDef to its own
+     SVG with !important, so the page's CSS cannot reach it; the source is
+     rewritten instead, just before it is drawn. */
+  var LO_NIGHT = "classDef lo fill:#3a3010,stroke:#c9a227,color:#ffd75e";
+  function themedSource(src, theme) {
+    return theme === "dark" ? src.replace(/classDef lo [^\n]*/g, LO_NIGHT) : src;
+  }
+
+  function drawNodes(mermaid, nodes, root) {
+    var theme = configure(mermaid);
+    nodes.forEach(function (n) {
+      n.setAttribute("data-drawn", theme);
+      var src = n.getAttribute("data-src");
+      if (src && !n.hasAttribute("data-processed")) n.textContent = themedSource(src, theme);
+    });
+    function done() {
+      revealOpen(root);
+      if (currentTheme() !== theme) return redrawPathways();
+    }
+    try {
+      var drawing = mermaid.run({ nodes: nodes });
+      if (drawing && drawing.then) return drawing.then(done, done);
+    } catch (e) {
+      // a diagram that will not parse should cost the page nothing; the
+      // source text stays on screen and the rest of the note is unaffected
+    }
+    return done();
+  }
+
+  /* Returns a promise that settles once every diagram is drawn or has fallen
+     back to text. Drawing swaps source text for a taller SVG, which moves
+     everything below it, so a caller that scrolled to a note must re-aim
+     afterwards. */
+  function drawPathways(root) {
+    if (!root) return Promise.resolve();
+    var nodes = [].slice.call(root.querySelectorAll(".pathway"));
+    if (!nodes.length) return Promise.resolve();
+
+    return loadMermaid().then(function (mermaid) {
+      if (!mermaid) return;       // loaded but exposed nothing; the source stays on screen
+      return drawNodes(mermaid, nodes, root);
+    }, function () {
+      nodes.forEach(function (n) {
+        n.textContent = "";
+        n.appendChild(el("p", null, "The diagram library could not be loaded, so this pathway is not drawn."));
+      });
+    });
+  }
+
+  /* Mermaid bakes the theme's colours into each SVG it draws, so a diagram
+     drawn light stays light after the toggle. Drawing again is cheap: the
+     library is already here, the source is kept on the element, and only the
+     diagrams drawn in another theme are asked for, wherever they are on the
+     page, the stream or the note dialog. Settles once they are redrawn, and
+     at once when there is nothing to redraw. */
+  function redrawPathways() {
+    if (!MERMAID) return Promise.resolve();
+    return MERMAID.then(function (mermaid) {
+      if (!mermaid) return;
+      var theme = currentTheme();
+      var nodes = [].filter.call(document.querySelectorAll(".pathway[data-src]"), function (n) {
+        return n.getAttribute("data-drawn") !== theme && !!n.querySelector("svg");
+      });
+      if (!nodes.length) return;
+      /* drawNodes configures too, and has to, for the first draw of a page;
+         this call is the same one made early, before any drawing is taken
+         down, so a theme mermaid will not take leaves the diagrams as they
+         are rather than as source text. It costs nothing the second time. */
+      try { configure(mermaid); } catch (e) { return; }
+      nodes.forEach(function (n) {
+        n.textContent = n.getAttribute("data-src");
+        n.removeAttribute("data-processed");    // mermaid skips a node it has done
+      });
+      return drawNodes(mermaid, nodes, document);
+    }, function () {});
+  }
+
+  /* The head script flips data-theme on the root; nothing else on the page
+     needs telling, only the diagrams. */
+  if (window.MutationObserver) {
+    new MutationObserver(function () { redrawPathways(); })
+      .observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  }
+
+  window.PORTAL_NOTES = {
+    written: written,
+    coveredTitle: coveredTitle,
+    pdfButton: pdfButton,
+    displayName: displayName,
+    inClassTag: inClassTag,
+    build: buildNote,
+    drawPathways: drawPathways,
+    redrawPathways: redrawPathways
+  };
+
+  /* ---------- the report dialog: one for questions and notes ---------- */
+
+  /* Corrections are the most useful thing a reader can send, and a note is
+     as likely to be wrong as a question, so both carry a Report button and
+     both open this dialog. It lives here, in the file the bank and the block
+     pages both load. Send posts to the relay in tools/report-worker/ when
+     the page knows its URL, and otherwise opens an email with the same
+     fields, so the button is useful before the relay exists. Reports are
+     public issues, and the dialog says so.
+
+     A caller describes what is being reported, and nothing else: its kind,
+     the fields the relay and tools/report_to_pr.py read, a line saying where
+     it is, and a stretch of its text so the reader can see it is the right
+     one. The reasons differ by kind - a note has no answer key - and are
+     repeated in the worker and report_to_pr.py: change all three together. */
+  var REPORT_URL = (BLOCK && BLOCK.report) || "";
+  var CONTACT = (BLOCK && BLOCK.contact) || "schulichmedfriend@gmail.com";
+  var REASONS = {
+    question: [
+      ["wrong-key", "The answer key is wrong"],
+      ["explanation", "The explanation is wrong or missing"],
+      ["typo", "A typo or formatting problem"],
+      ["misfiled", "It belongs to a different week or lecture"],
+      ["other", "Something else"]
+    ],
+    note: [
+      ["wrong", "Something in the note is wrong"],
+      ["missing", "Something important is missing"],
+      ["typo", "A typo or formatting problem"],
+      ["misfiled", "It belongs to a different week or lecture"],
+      ["other", "Something else"]
+    ]
+  };
+  var NOTE_MAX = 2000, NOTE_MIN = 3, PREVIEW_MAX = 140;
+  var DIALOG_OK = !!window.HTMLDialogElement;
+  var RDLG = null, ROPENER = null, RT = null, RKIND = null;
+
+  /* the order the fields are listed in an email; absent ones are skipped */
+  var MAIL_ORDER = ["course", "block", "kind", "qid", "lecture", "name", "reason", "page"];
+
+  function reportFields(t, reason, note) {
+    var f = {};
+    Object.keys(t.fields).forEach(function (k) { f[k] = t.fields[k]; });
+    f.site = "preclerkship";
+    f.kind = t.kind;
+    f.reason = reason;
+    f.note = note;
+    f.page = window.location.href.split("#")[0];
+    f.hp = "";
+    return f;
+  }
+
+  /* the same fields, one per line, in an email to the portal's address: what
+     the button does before the relay exists and what it offers if the relay
+     fails, so a report is never stranded in the dialog */
+  function reportMailto(t, reason, note) {
+    var f = reportFields(t, reason, note);
+    var lines = MAIL_ORDER.filter(function (k) { return f[k]; })
+      .map(function (k) { return k + ": " + f[k]; });
+    lines.push("", note);
+    return "mailto:" + CONTACT + "?subject=" + encodeURIComponent("Report: " + t.id) +
+           "&body=" + encodeURIComponent(lines.join("\n"));
+  }
+
+  function reportButton(t) {
+    var label = "Report this " + t.kind;
+    if (!DIALOG_OK) {
+      var a = el("a", "report-q", label);
+      a.href = reportMailto(t, "other", "");
+      return a;
+    }
+    var b = el("button", "report-q", label);
+    b.type = "button";
+    b.addEventListener("click", function () { openReport(t, b); });
+    return b;
+  }
+
+  /* Built once, on first use. The body is the form; the result view is its
+     own box, shown in the form's place once the relay has answered, so a
+     failed send leaves the form and the note untouched. */
+  function ensureReport() {
+    if (RDLG) return RDLG;
+    var d = el("dialog", "reportdlg");
+    d.setAttribute("aria-labelledby", "reportdlg-title");
+
+    var head = el("div", "reportdlg-head");
+    var text = el("div", "reportdlg-text");
+    text.appendChild(el("p", "eyebrow reportdlg-where"));
+    var h = el("h2", null, "Report");
+    h.id = "reportdlg-title";
+    text.appendChild(h);
+    head.appendChild(text);
+    var x = el("button", "reportdlg-close", "×");
+    x.type = "button";
+    x.title = "Close (Esc)";
+    x.setAttribute("aria-label", "Close");
+    x.addEventListener("click", function () { d.close(); });
+    head.appendChild(x);
+    d.appendChild(head);
+
+    var body = el("div", "reportdlg-body");
+    body.appendChild(el("p", "reportdlg-stem"));
+    var l1 = el("label", null, "What is wrong?");
+    l1.htmlFor = "report-reason";
+    body.appendChild(l1);
+    var sel = el("select", "report-reason");
+    sel.id = "report-reason";
+    sel.addEventListener("change", noteChanged);
+    body.appendChild(sel);
+    var l2 = el("label", null, "Tell us what is wrong");
+    l2.htmlFor = "report-note";
+    body.appendChild(l2);
+    var ta = el("textarea", "report-note");
+    ta.id = "report-note";
+    ta.required = true;
+    ta.maxLength = NOTE_MAX;
+    ta.rows = 5;
+    ta.addEventListener("input", noteChanged);
+    body.appendChild(ta);
+    body.appendChild(el("p", "report-count"));
+    body.appendChild(el("p", "small report-public",
+      "Reports are posted publicly on GitHub. Do not include anything personal."));
+    /* a field no person sees or fills; the relay refuses a report that has it */
+    var hp = el("input", "report-hp");
+    hp.type = "text";
+    hp.name = "hp";
+    hp.tabIndex = -1;
+    hp.autocomplete = "off";
+    hp.setAttribute("aria-hidden", "true");
+    body.appendChild(hp);
+    var err = el("p", "report-error");
+    err.hidden = true;
+    body.appendChild(err);
+    var act = el("div", "reportdlg-actions");
+    var cancel = el("button", "btn ghost report-cancel", "Cancel");
+    cancel.type = "button";
+    cancel.addEventListener("click", function () { d.close(); });
+    act.appendChild(cancel);
+    var send;
+    if (REPORT_URL) {
+      send = el("button", "btn report-send", "Send");
+      send.type = "button";
+      send.addEventListener("click", sendReport);
+    } else {
+      send = el("a", "btn report-send", "Send");
+      /* the link keeps its address so it stays a link to assistive tech,
+         and is held shut until the note is long enough to be worth sending */
+      send.addEventListener("click", function (e) {
+        if (send.getAttribute("aria-disabled") === "true") e.preventDefault();
+      });
+    }
+    act.appendChild(send);
+    body.appendChild(act);
+    d.appendChild(body);
+
+    var res = el("div", "reportdlg-body report-result");
+    res.hidden = true;
+    var rp = el("p", null, "Thanks. Your report is here: ");
+    var ra = el("a", "report-link");
+    ra.target = "_blank";
+    ra.rel = "noopener";
+    rp.appendChild(ra);
+    res.appendChild(rp);
+    var ract = el("div", "reportdlg-actions");
+    var close = el("button", "btn report-close", "Close");
+    close.type = "button";
+    close.addEventListener("click", function () { d.close(); });
+    ract.appendChild(close);
+    res.appendChild(ract);
+    d.appendChild(res);
+
+    d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
+    d.addEventListener("close", function () {
+      /* opened over the bank's note dialog, that one is still up and still
+         owns the page's scroll lock */
+      if (!document.querySelector("dialog[open]")) document.body.classList.remove("has-dialog");
+      if (ROPENER && ROPENER.focus) ROPENER.focus();
+      ROPENER = null;
+    });
+    document.body.appendChild(d);
+    RDLG = d;
+    return d;
+  }
+
+  /* the count, the Send control and, with no relay, the email it opens all
+     follow the note as it is typed */
+  function noteChanged() {
+    var d = RDLG;
+    if (!d || !RT) return;
+    var note = d.querySelector(".report-note").value;
+    var ok = note.trim().length >= NOTE_MIN;
+    d.querySelector(".report-count").textContent = note.length + " / " + NOTE_MAX;
+    var send = d.querySelector(".report-send");
+    if (send.tagName === "A") {
+      send.href = reportMailto(RT, d.querySelector(".report-reason").value, note.trim());
+      if (ok) send.removeAttribute("aria-disabled");
+      else send.setAttribute("aria-disabled", "true");
+    } else {
+      send.disabled = !ok;
+    }
+  }
+
+  function openReport(t, opener) {
+    var d = ensureReport();
+    RT = t;
+    ROPENER = opener || null;
+    d.querySelector("#reportdlg-title").textContent = "Report this " + t.kind;
+    d.querySelector(".reportdlg-where").textContent = t.where;
+    var stem = (t.preview || "").replace(/\s+/g, " ").trim();
+    d.querySelector(".reportdlg-stem").textContent = stem.length > PREVIEW_MAX
+      ? stem.slice(0, PREVIEW_MAX).replace(/\s+\S*$/, "") + "…" : stem;
+    var sel = d.querySelector(".report-reason");
+    if (RKIND !== t.kind) {
+      sel.innerHTML = "";
+      REASONS[t.kind].forEach(function (r) {
+        var o = el("option", null, r[1]);
+        o.value = r[0];
+        sel.appendChild(o);
+      });
+      RKIND = t.kind;
+    }
+    sel.value = REASONS[t.kind][0][0];
+    d.querySelector(".report-note").value = "";
+    d.querySelector(".report-hp").value = "";
+    d.querySelector(".report-error").hidden = true;
+    var send = d.querySelector(".report-send");
+    if (send.tagName !== "A") { send.disabled = false; send.textContent = "Send"; }
+    d.querySelector(".report-result").hidden = true;
+    d.querySelector(".reportdlg-body:not(.report-result)").hidden = false;
+    noteChanged();
+    document.body.classList.add("has-dialog");
+    if (!d.open) d.showModal();
+    d.querySelector(".report-note").focus();
+  }
+
+  function sendReport() {
+    var d = RDLG, t = RT;
+    if (!d || !t) return;
+    var reason = d.querySelector(".report-reason").value;
+    var note = d.querySelector(".report-note").value.trim();
+    if (note.length < NOTE_MIN) return;
+    var send = d.querySelector(".report-send"), err = d.querySelector(".report-error");
+    var fields = reportFields(t, reason, note);
+    fields.hp = d.querySelector(".report-hp").value;
+    send.disabled = true;
+    send.textContent = "Sending";
+    err.hidden = true;
+    fetch(REPORT_URL, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(fields)
+    })
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("HTTP " + r.status)); })
+      .then(function (j) {
+        if (!j || !j.url) throw new Error("no url");
+        var a = d.querySelector(".report-link");
+        a.href = j.url;
+        a.textContent = j.url;
+        d.querySelector(".reportdlg-body:not(.report-result)").hidden = true;
+        d.querySelector(".report-result").hidden = false;
+        d.querySelector(".report-close").focus();
+      })
+      .then(null, function () {
+        /* the form stays, note and all: the email route carries the same
+           fields, so nothing typed is lost to a relay that is down */
+        send.disabled = false;
+        send.textContent = "Send";
+        err.innerHTML = "";
+        err.appendChild(document.createTextNode("It could not be sent. "));
+        var a = el("a", null, "Email it instead");
+        a.href = reportMailto(t, reason, note);
+        err.appendChild(a);
+        err.appendChild(document.createTextNode("."));
+        err.hidden = false;
+      });
+  }
+
+  window.PORTAL_REPORT = { button: reportButton };
+
+  /* ---------- search: one rule and one highlighter for both tabs ---------- */
+
+  /* The notes tab and the bank each carry a search box, and for a while they
+     disagreed: the bank wanted every word of the query somewhere in the
+     question, in any order, and the notes tab wanted the phrase whole. The
+     bank's rule is the one people mean, on a note as much as on a stem:
+     "insulin glucagon" is the note that covers both, wherever the two words
+     sit in it. So the rule lives here, in the file both pages load, and each
+     tab keeps only what is its own: which text it reads, and how it paints.
+
+     Below two characters a word is not a search term yet, it is a keystroke:
+     one letter would narrow a bank of hundreds to whichever happen to lack
+     it, and the stream would lurch on every first key pressed. The floor is
+     per word, so "warfarin a" is still the warfarin search while the next
+     word is being typed, and a query with no word past the floor does not
+     narrow at all. */
+  var SEARCH_MIN = 2;
+
+  function searchWords(query) {
+    return (query || "").toLowerCase().split(/\s+/).filter(function (w) {
+      return w.length >= SEARCH_MIN;
+    });
+  }
+
+  /* the haystack is the caller's, already lowercased; an empty word list is
+     the "all" of this facet and matches everything */
+  function searchHit(hay, words) {
+    return words.every(function (w) { return hay.indexOf(w) !== -1; });
+  }
+
+  /* Highlighting is the expensive half of a search, and its cost is the
+     number of hits, not the number of notes. One letter typed into a 43-note
+     block matches about 27,000 times, and painting that many marks locks the
+     page up for seconds. So a word earns highlighting by being long enough
+     to mean something, and even then a pass stops at a budget. Filtering is
+     never capped: the stream and the index always tell the truth, whether or
+     not the words inside them get painted. */
+  var MARK_MIN = 3;               // a word shorter than this filters but is not painted
+  var MARK_BUDGET = 800;          // and never more than this many marks in one pass
+
+  /* the words worth painting; a two-letter word narrows the stream but would
+     light up every "of" and "in" on the page */
+  function paintWords(words) {
+    return (words || []).filter(function (w) { return w.length >= MARK_MIN; });
+  }
+
+  /* Highlighting walks text nodes instead of rewriting innerHTML: a note and
+     a stem are real markup, and a string replace across them would corrupt a
+     tag the moment a search term straddled one. Each text node is cut at the
+     earliest of any word, so several words paint in one pass and two words
+     that overlap ("thyroid" inside "thyroiditis") never nest a mark. The
+     budget is handed in by the caller, who may spend it across several
+     roots; whatever it does not reach stays as it was written.
+
+     skip is a selector for text that must not be touched. The notes tab
+     passes ".pathway", since mermaid parses that element's own text and a
+     mark inside it is a syntax error rather than a highlight. */
+  function markWords(root, words, budget, skip) {
+    if (!document.createTreeWalker || !words.length || !(budget > 0)) return 0;
+    var walk = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+    var targets = [], n;
+    while ((n = walk.nextNode())) {
+      var low = (n.nodeValue || "").toLowerCase();
+      if (!words.some(function (w) { return low.indexOf(w) !== -1; })) continue;
+      var host = n.parentNode;
+      if (skip && host && host.closest && host.closest(skip)) continue;
+      targets.push(n);
+    }
+    var made = 0;
+    targets.forEach(function (node) {
+      if (made >= budget) return;
+      var raw = node.nodeValue, lowv = raw.toLowerCase();
+      var frag = document.createDocumentFragment(), i = 0;
+      while (made < budget) {
+        var best = -1, len = 0;
+        words.forEach(function (w) {
+          var j = lowv.indexOf(w, i);
+          if (j !== -1 && (best === -1 || j < best)) { best = j; len = w.length; }
+        });
+        if (best === -1) break;
+        if (best > i) frag.appendChild(document.createTextNode(raw.slice(i, best)));
+        frag.appendChild(el("mark", "hit", raw.slice(best, best + len)));
+        i = best + len;
+        made++;
+      }
+      if (i < raw.length) frag.appendChild(document.createTextNode(raw.slice(i)));
+      node.parentNode.replaceChild(frag, node);
+    });
+    return made;
+  }
+
+  /* every highlight comes off each element handed in, and the split halves of
+     its text nodes are put back together, so the next search sees whole words
+     rather than the pieces this one left behind */
+  function unmarkWords(arts) {
+    (arts || []).forEach(function (art) {
+      [].forEach.call(art.querySelectorAll("mark.hit"), function (m) {
+        m.parentNode.replaceChild(document.createTextNode(m.textContent), m);
+      });
+      art.normalize();
+    });
+  }
+
+  /* "/" jumps to the search box, the way it does on GitHub and most
+     documentation sites. It is taken only while the tab the box belongs to
+     is showing, no dialog has the keyboard and the key was not typed into
+     some other field. Shift is allowed, and a caller must ask here before
+     its own shift guard, because on many European layouts "/" IS shifted.
+     The text is selected so the next keystroke replaces the old query.
+     Returns true when it took the key, so the caller can stop there. */
+  function jumpKey(e, box, panelId) {
+    if (!box || e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey) return false;
+    var panel = panelId ? byId(panelId) : null;
+    if (panel && panel.hidden) return false;
+    if (document.querySelector("dialog[open]")) return false;
+    var t = e.target;
+    if (t && (t.isContentEditable ||
+              /^(input|textarea|select)$/i.test(t.tagName || ""))) return false;
+    e.preventDefault();
+    box.focus();
+    if (box.select) box.select();
+    return true;
+  }
+
+  window.PORTAL_SEARCH = {
+    words: searchWords,
+    hit: searchHit,
+    MARK_MIN: MARK_MIN,
+    MARK_BUDGET: MARK_BUDGET,
+    paintWords: paintWords,
+    mark: markWords,
+    unmark: unmarkWords,
+    jumpKey: jumpKey
+  };
+
+  /* Notes come first when there are any - they are what you read before you
+     test yourself. A block with none of them written yet would otherwise open
+     on a page of nothing but gaps, so it falls through to the questions. */
+  function fallback() {
+    var tc = byId("tc-notes");
+    var written = tc ? parseInt(tc.textContent, 10) : 0;
+    /* Notes first where any are written - they are what you read before you
+       test yourself. A block with none of them falls through to Anki rather
+       than to questions, which are no longer on this page at all. */
+    return written > 0 ? "notes" : "anki";
+  }
+
+  function wanted() {
+    var h = (window.location.hash || "").replace("#", "");
+    /* #n-<lecture id> names one note, the way the bank's note dialog links
+       back here. The tab is implied by the note. */
+    if (h.indexOf("n-") === 0) return "notes";
+    return TABS[h] ? h : fallback();
+  }
+
+  /* How many of this block's questions have been answered, read straight out
+     of the store. The bank itself is 44 to 269 KB and lives on another page;
+     the answer to "how far in am I" is already here, in a record per question
+     carrying its own status, so it costs one localStorage read and no fetch. */
+  function answeredHere() {
+    var raw = null;
+    var none = { done: 0, due: 0 };
+    try { raw = window.localStorage.getItem((BLOCK.store || "nsq.v1.") + BLOCK.slug); }
+    catch (e) { return none; }
+    if (!raw) return none;
+    var parsed;
+    try { parsed = JSON.parse(raw); }
+    catch (e) { return none; }
+    if (!parsed || typeof parsed !== "object") return none;
+    var n = 0, due = 0, now = Date.now();
+    Object.keys(parsed).forEach(function (qid) {
+      var r = parsed[qid];
+      if (r && (r.status === "correct" || r.status === "wrong")) n++;
+      if (r && r.family !== "offcurriculum" && dueAt(r) <= now) due++;
+    });
+    return { done: n, due: due };
+  }
+
+  /* quiz.js's review schedule (reviewOf), mirrored because a block page does
+     not load quiz.js: wrong, then back after 1, 3, 7 and 21 days of getting it
+     right, by calendar day. Infinity when the record is not in the queue. */
+  var REVIEW_DAYS = [1, 3, 7, 21];
+  function midnight(ts) { var d = new Date(ts); d.setHours(0, 0, 0, 0); return d.getTime(); }
+  function dueAt(r) {
+    var a = Array.isArray(r.attempts) ? r.attempts : [], lastWrong = -1;
+    for (var i = a.length - 1; i >= 0; i--) {
+      if (a[i] && a[i].correct === false) { lastWrong = i; break; }
+    }
+    if (lastWrong === -1) return Infinity;
+    var streak = a.length - 1 - lastWrong, last = a[a.length - 1];
+    if (streak >= REVIEW_DAYS.length || !last || typeof last.ts !== "number") return Infinity;
+    return midnight(midnight(last.ts) + REVIEW_DAYS[streak] * 864e5 + 432e5);
+  }
+
+  function paintDone() {
+    var el = byId("qb-done"), c = answeredHere();
+    if (!el) return;
+    el.hidden = c.done === 0;
+    el.textContent = c.done + " done" + (c.due ? " \u00b7 " + c.due + " due" : "");
+  }
+
+  function show(key) {
+    /* the stylesheet reads this: the questions tab is a working view and drops
+       the block's blurb from the masthead, where the notes tab keeps it */
+    document.body.dataset.tab = key;
+    Object.keys(TABS).forEach(function (k) {
+      var t = TABS[k], on = k === key;
+      byId(t.tab).setAttribute("aria-selected", on ? "true" : "false");
+      /* roving tabindex: Tab stops on the chosen tab only, the arrows move
+         between them (see init) */
+      byId(t.tab).tabIndex = on ? 0 : -1;
+      byId(t.panel).hidden = !on;
+      if (t.board) byId(t.board).hidden = !on;
+    });
+    if (!TABS[key].board) {
+      Object.keys(TABS).forEach(function (k) {
+        if (TABS[k].board) byId(TABS[k].board).hidden = true;
+      });
+    }
+    TABS[key].boot();
+  }
+
+  function init() {
+    /* The question bank has one panel and therefore no tab strip. It says its
+       own eyebrow in QUIZ_BLOCK, because "Block 3 · Weeks 7–11" is not a true
+       thing to say about a page that is every block at once. */
+    if (BLOCK.blocks && BLOCK.blocks.length) {
+      byId("m-eyebrow").textContent =
+        "Schulich " + (BLOCK.course || "PoM 2") + " · " +
+        (BLOCK.eyebrow || "Every block");
+      /* not "questions": that value hides the masthead blurb, which the block
+         pages can afford because their notes tab carries it and this page,
+         having no other tab, cannot */
+      document.body.dataset.tab = "qbank";
+      if (window.POM2_QUIZ) window.POM2_QUIZ.boot();
+      return;
+    }
+
+    /* quiz.js used to write this, but it only runs once questions are booted -
+       landing on the notes tab would have left the masthead blank */
+    byId("m-eyebrow").textContent =
+      "Schulich " + (BLOCK.course || "PoM 2") + " · Block " + BLOCK.n +
+      " · Weeks " + BLOCK.weeks;
+
+    if (leftForQbank()) return;
+
+    Object.keys(TABS).forEach(function (k) {
+      byId(TABS[k].tab).addEventListener("click", function () {
+        if (wanted() === k) { show(k); return; }
+        window.location.hash = k;   // hashchange does the rest, and history keeps it
+      });
+    });
+
+    /* The keyboard half of the ARIA tab pattern: Left and Right (and Home and
+       End) move along the strip and open what they land on, the way a screen
+       reader user is told a tablist behaves. */
+    var order = Object.keys(TABS);
+    order.forEach(function (k, i) {
+      byId(TABS[k].tab).addEventListener("keydown", function (e) {
+        var j = e.key === "ArrowRight" ? i + 1 : e.key === "ArrowLeft" ? i - 1 :
+                e.key === "Home" ? 0 : e.key === "End" ? order.length - 1 : null;
+        if (j === null) return;
+        e.preventDefault();
+        var next = order[(j + order.length) % order.length];
+        byId(TABS[next].tab).focus();
+        byId(TABS[next].tab).click();
+      });
+    });
+
+    paintDone();
+    /* answers another device made, just brought in by sync.js */
+    window.addEventListener("portal:synced", paintDone);
+    window.addEventListener("hashchange", function () {
+      if (leftForQbank()) return;
+      show(wanted());
+    });
+    show(wanted());
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+
+/* Tables that scroll sideways - a chart in a note, a lab table in a question -
+   are reachable from the keyboard. A box that only scrolls under a mouse or a
+   finger strands anyone on a keyboard at its left edge, so each one that
+   actually overflows becomes a focusable, labelled region (the arrow keys then
+   scroll it), and stops being one if a wider window means it no longer has to
+   scroll. Boxes that fit are left alone, so they add no stray Tab stops.
+
+   Cards are built after the data arrives, so new boxes are picked up as they
+   are added rather than looked for once. A ResizeObserver reports each box
+   when it is first laid out, which for a card the browser has skipped
+   (content-visibility) is when it nears the viewport, so off-screen work is
+   never forced. */
+(function () {
+  "use strict";
+  if (!window.ResizeObserver || !window.MutationObserver) return;
+
+  var SEL = ".ct-wrap, .tw";
+
+  var ro = new window.ResizeObserver(function (entries) {
+    entries.forEach(function (e) {
+      var box = e.target;
+      var scrolls = box.scrollWidth > box.clientWidth + 1;
+      if (scrolls === box.hasAttribute("data-scrolls")) return;
+      if (scrolls) {
+        box.setAttribute("data-scrolls", "");
+        box.tabIndex = 0;
+        box.setAttribute("role", "region");
+        box.setAttribute("aria-label", label(box));
+      } else {
+        box.removeAttribute("data-scrolls");
+        box.removeAttribute("tabindex");
+        box.removeAttribute("role");
+        box.removeAttribute("aria-label");
+      }
+    });
+  });
+
+  /* Each region needs its own name, or a screen reader's landmark list is
+     forty identical entries: the line the note sets above the table if there
+     is one, else its first few column headings. */
+  function label(box) {
+    var lead = box.previousElementSibling, name = "";
+    if (lead && lead.classList.contains("tlead")) name = lead.textContent;
+    if (!name.trim()) {
+      var heads = box.querySelectorAll("th"), cols = [];
+      for (var i = 0; i < heads.length && cols.length < 3; i++) {
+        var t = heads[i].textContent.trim();
+        if (t) cols.push(t);
+      }
+      name = cols.join(", ");
+    }
+    name = name.replace(/\s+/g, " ").trim();
+    if (name.length > 70) name = name.slice(0, 69) + "\u2026";
+    return (name ? "Table: " + name : "Table") + " (scrolls sideways)";
+  }
+
+  function watch(node) {
+    if (node.nodeType !== 1) return;
+    if (node.matches(SEL)) ro.observe(node);
+    var boxes = node.querySelectorAll(SEL);
+    for (var i = 0; i < boxes.length; i++) ro.observe(boxes[i]);
+  }
+
+  new window.MutationObserver(function (muts) {
+    for (var i = 0; i < muts.length; i++) {
+      var added = muts[i].addedNodes;
+      for (var j = 0; j < added.length; j++) watch(added[j]);
+    }
+  }).observe(document.documentElement, { childList: true, subtree: true });
+
+  if (document.body) watch(document.body);
+})();

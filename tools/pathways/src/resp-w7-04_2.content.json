@@ -1,0 +1,292 @@
+{
+ "name": "blood gas overview",
+ "title": "Blood gas decision chart: pH sorts acidosis from alkalosis, the value that moved with it names the primary disorder (respiratory if PaCO2, metabolic if bicarbonate), and each column gives the expected compensation and the next split (acute versus chronic, anion gap, extracellular fluid volume)",
+ "col_w": 270,
+ "root": {
+  "title": "Blood gas: is the pH LOW or HIGH, and did PaCO2 or HCO3 move WITH it?",
+  "lines": [
+   "normal: pH 7.40 (7.38–7.42) · PaCO2 40 (38–42) · HCO3 24 (22–26) · PaO2 80–100",
+   "partial pressure of CO2 (PaCO2, mmHg) · bicarbonate (HCO3, mEq/L)",
+   "PaO2 LOW? the alveolar–arterial (A-a) gradient names the cause (see GAS EXCHANGE AND HYPOXIA)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ac",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "pH < 7.38: ACIDOSIS",
+   "lines": []
+  },
+  {
+   "id": "g_al",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "pH > 7.42: ALKALOSIS",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "cause",
+  "comp",
+  "next"
+ ],
+ "row_names": {
+  "cause": "PRIMARY PROBLEM",
+  "comp": "COMPENSATION",
+  "next": "NEXT SPLIT"
+ },
+ "columns": [
+  {
+   "id": "ma",
+   "colour": "blue",
+   "drop_label": "HCO3 ↓",
+   "head": [
+    [
+     [
+      "h",
+      "Metabolic acidosis",
+      [
+       "e.g. diabetic ketoacidosis (DKA)"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Bicarbonate is LOW",
+      []
+     ]
+    ]
+   ],
+   "comp": [
+    [
+     [
+      "t",
+      "Lungs HYPERVENTILATE",
+      [
+       "Kussmaul breathing → PaCO2 ↓"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Expect PaCO2 ↓ 1 per HCO3 ↓ 1",
+      [
+       "FAST (10–15 min): no acute vs chronic"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "Anion gap ↑",
+      [
+       "anion gap metabolic acidosis (AGMA)"
+      ]
+     ],
+     [
+      "w",
+      "NO anion gap",
+      [
+       "non-anion gap metabolic acidosis (NAGMA)"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ra",
+   "colour": "teal",
+   "drop_label": "PaCO2 ↑",
+   "head": [
+    [
+     [
+      "h",
+      "Respiratory acidosis",
+      []
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "HYPOVENTILATION",
+      [
+       "CO2 builds up"
+      ]
+     ]
+    ]
+   ],
+   "comp": [
+    [
+     [
+      "t",
+      "Kidneys RETAIN HCO3",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "SLOW (about 24 h)",
+      [
+       "so acute and chronic expect different HCO3"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "ACUTE",
+      [
+       "HCO3 ↑ 1 per PaCO2 ↑ 10"
+      ]
+     ],
+     [
+      "w",
+      "CHRONIC",
+      [
+       "HCO3 ↑ 3 per PaCO2 ↑ 10"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rl",
+   "colour": "purple",
+   "drop_label": "PaCO2 ↓",
+   "head": [
+    [
+     [
+      "h",
+      "Respiratory alkalosis",
+      []
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "HYPERVENTILATION",
+      [
+       "CO2 blown off"
+      ]
+     ]
+    ]
+   ],
+   "comp": [
+    [
+     [
+      "t",
+      "Kidneys EXCRETE HCO3",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "SLOW (about 24 h)",
+      [
+       "so acute and chronic expect different HCO3"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "ACUTE",
+      [
+       "HCO3 ↓ 2 per PaCO2 ↓ 10"
+      ]
+     ],
+     [
+      "w",
+      "CHRONIC",
+      [
+       "HCO3 ↓ 5 per PaCO2 ↓ 10"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ml",
+   "colour": "orange",
+   "drop_label": "HCO3 ↑",
+   "head": [
+    [
+     [
+      "h",
+      "Metabolic alkalosis",
+      []
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "t",
+      "Bicarbonate is HIGH",
+      []
+     ]
+    ]
+   ],
+   "comp": [
+    [
+     [
+      "t",
+      "Lungs HYPOVENTILATE",
+      [
+       "→ PaCO2 ↑"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Expect PaCO2 ↑ 0.5 per HCO3 ↑ 1",
+      [
+       "FAST (10–15 min): no acute vs chronic"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "Extracellular fluid (ECF) ↑",
+      [
+       "PRIMARY hyperaldosteronism"
+      ]
+     ],
+     [
+      "w",
+      "ECF ↓",
+      [
+       "SECONDARY hyperaldosteronism"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

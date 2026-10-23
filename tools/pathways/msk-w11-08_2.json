@@ -1,0 +1,586 @@
+{
+ "name": "physical activity prescription overview",
+ "width": 1344,
+ "title": "Writing a physical activity prescription: first check it is safe (absolute contraindications stop it; otherwise stratify cardiovascular risk to decide how to start), then write the dose with F.I.T.T., then tailor it for hypertension and blood pressure medications; adjust if pain or swelling follows",
+ "kinds": {
+  "ci_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ci_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ci_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "risk_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "risk_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "risk_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "fitt_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fitt_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "fitt_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "htn_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "htn_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "htn_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "med_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "med_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "med_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 246,
+   "h": 718,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 288,
+   "y": 270,
+   "w": 246,
+   "h": 718,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 564,
+   "y": 270,
+   "w": 246,
+   "h": 718,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 840,
+   "y": 270,
+   "w": 246,
+   "h": 718,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1088,
+   "y": 270,
+   "w": 246,
+   "h": 718,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 396,
+   "h": 204,
+   "text": "CHECK"
+  },
+  {
+   "x": 23,
+   "y": 640,
+   "h": 168,
+   "text": "DO"
+  },
+  {
+   "x": 23,
+   "y": 848,
+   "h": 132,
+   "text": "AVOID"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 307,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Prescribe physical activity like a drug: is it SAFE, then what DOSE?",
+   "lines": [
+    "ask: current activity · intentions · past activity + preferences · is it safe (symptoms, history)?",
+    "biggest gain: from NONE to SOME, so target sedentary patients"
+   ]
+  },
+  {
+   "id": "g_safe",
+   "x": 45,
+   "y": 138,
+   "w": 484,
+   "h": 60,
+   "kind": "plain",
+   "title": "1 · IS IT SAFE?",
+   "lines": [
+    "unstable or uncontrolled → review first"
+   ]
+  },
+  {
+   "id": "g_dose",
+   "x": 569,
+   "y": 138,
+   "w": 236,
+   "h": 60,
+   "kind": "plain",
+   "title": "2 · WRITE THE DOSE",
+   "lines": [
+    "F.I.T.T."
+   ]
+  },
+  {
+   "id": "g_tail",
+   "x": 845,
+   "y": 138,
+   "w": 484,
+   "h": 60,
+   "kind": "plain",
+   "title": "3 · TAILOR IT",
+   "lines": [
+    "blood pressure is not a reason to skip exercise"
+   ]
+  },
+  {
+   "id": "ci_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "ci_h",
+   "title": "Absolute contraindication",
+   "lines": [
+    "any ONE stops it"
+   ]
+  },
+  {
+   "id": "risk_head_0_0",
+   "x": 293,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "risk_h",
+   "title": "Stratify cardiovascular risk",
+   "lines": [
+    "start low, go slow if sedentary"
+   ]
+  },
+  {
+   "id": "fitt_head_0_0",
+   "x": 569,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "fitt_h",
+   "title": "F.I.T.T.",
+   "lines": [
+    "target ≥ 150 min a week, moderate-vigorous"
+   ]
+  },
+  {
+   "id": "htn_head_0_0",
+   "x": 845,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "htn_h",
+   "title": "Hypertension",
+   "lines": []
+  },
+  {
+   "id": "med_head_0_0",
+   "x": 1093,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "med_h",
+   "title": "Blood pressure medications",
+   "lines": []
+  },
+  {
+   "id": "ci_check_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 236,
+   "h": 204,
+   "kind": "ci_t",
+   "title": "Any of these?",
+   "lines": [
+    "• new or uncontrolled arrhythmia",
+    "• resting or uncontrolled tachycardia",
+    "• resting blood pressure (BP) > 180/100",
+    "• symptomatic hypotension",
+    "• unstable or crescendo angina",
+    "• acute or unstable heart failure",
+    "• unstable diabetes",
+    "• acute febrile illness"
+   ]
+  },
+  {
+   "id": "risk_check_0_0",
+   "x": 293,
+   "y": 396,
+   "w": 236,
+   "h": 204,
+   "kind": "risk_t",
+   "title": "Symptoms? Risk factors?",
+   "lines": [
+    "• chest, neck, jaw or arm pain",
+    "• breathless at rest or mild exertion",
+    "• dizziness, syncope, palpitations",
+    "• ankle edema, claudication, murmur"
+   ]
+  },
+  {
+   "id": "fitt_check_0_0",
+   "x": 569,
+   "y": 396,
+   "w": 236,
+   "h": 204,
+   "kind": "fitt_t",
+   "title": "Talk test for intensity",
+   "lines": [
+    "• can SING = light",
+    "• can TALK, not sing = moderate",
+    "• no conversation = vigorous"
+   ]
+  },
+  {
+   "id": "htn_check_0_0",
+   "x": 845,
+   "y": 396,
+   "w": 236,
+   "h": 204,
+   "kind": "htn_t",
+   "title": "BP under 180/100?",
+   "lines": [
+    "if not, control it with medication first"
+   ]
+  },
+  {
+   "id": "med_check_0_0",
+   "x": 1093,
+   "y": 396,
+   "w": 236,
+   "h": 204,
+   "kind": "med_t",
+   "title": "NOT a contraindication",
+   "lines": [
+    "antihypertensives: keep exercising",
+    "diuretic: dehydration risk, toilets nearby"
+   ]
+  },
+  {
+   "id": "ci_do_0_0",
+   "x": 45,
+   "y": 640,
+   "w": 236,
+   "h": 168,
+   "kind": "warn",
+   "title": "Stabilise, then review",
+   "lines": [
+    "BP > 180/100: control with medication BEFORE exercise"
+   ]
+  },
+  {
+   "id": "risk_do_0_0",
+   "x": 293,
+   "y": 640,
+   "w": 236,
+   "h": 168,
+   "kind": "risk_w",
+   "title": "Start by risk",
+   "lines": [
+    "• low risk → self-directed",
+    "• risk factors (↑ BP) → low/moderate intensity",
+    "• high risk → investigations (ECG) first",
+    "• symptoms → supervised, or exercise specialist"
+   ]
+  },
+  {
+   "id": "fitt_do_0_0",
+   "x": 569,
+   "y": 640,
+   "w": 236,
+   "h": 168,
+   "kind": "ok",
+   "title": "Typical prescription",
+   "lines": [
+    "• 5 times a week",
+    "• moderate intensity",
+    "• 30 minutes",
+    "• aerobic: walk, cycle, dance, swim, jog",
+    "• + strength 2 days a week (10-15 reps)"
+   ]
+  },
+  {
+   "id": "htn_do_0_0",
+   "x": 845,
+   "y": 640,
+   "w": 236,
+   "h": 168,
+   "kind": "ok",
+   "title": "Do",
+   "lines": [
+    "• warm-up 15 min, cool-down 10 min",
+    "• keep the feet moving",
+    "• protect joints if obese or inactive",
+    "• one rest day a week"
+   ]
+  },
+  {
+   "id": "med_do_0_0",
+   "x": 1093,
+   "y": 640,
+   "w": 236,
+   "h": 168,
+   "kind": "ok",
+   "title": "Recommended",
+   "lines": [
+    "• angiotensin-converting enzyme (ACE) inhibitor or angiotensin receptor blocker: minimal problems",
+    "• calcium channel blocker: extend the warm-down (postural hypotension)"
+   ]
+  },
+  {
+   "id": "ci_avoid_0_0",
+   "x": 45,
+   "y": 848,
+   "w": 236,
+   "h": 132,
+   "kind": "bad",
+   "title": "Exercise until controlled",
+   "lines": []
+  },
+  {
+   "id": "risk_avoid_0_0",
+   "x": 293,
+   "y": 848,
+   "w": 236,
+   "h": 132,
+   "kind": "bad",
+   "title": "Symptoms DURING exercise",
+   "lines": [
+    "stop and promptly evaluate or refer: warn patients of these"
+   ]
+  },
+  {
+   "id": "fitt_avoid_0_0",
+   "x": 569,
+   "y": 848,
+   "w": 236,
+   "h": 132,
+   "kind": "warn",
+   "title": "Adjust if",
+   "lines": [
+    "• severe pain during exercise",
+    "• pain that does not settle after",
+    "• more night pain or joint swelling"
+   ]
+  },
+  {
+   "id": "htn_avoid_0_0",
+   "x": 845,
+   "y": 848,
+   "w": 236,
+   "h": 132,
+   "kind": "bad",
+   "title": "Don't",
+   "lines": [
+    "• very strenuous resistance training",
+    "• vigorous exercise with left ventricular hypertrophy",
+    "• lying-down (postural hypotension)",
+    "• isometric or overhead exercises"
+   ]
+  },
+  {
+   "id": "med_avoid_0_0",
+   "x": 1093,
+   "y": 848,
+   "w": 236,
+   "h": 132,
+   "kind": "bad",
+   "title": "Beta-blockers",
+   "lines": [
+    "↓ maximum heart rate and performance: BAD for high intensity, avoid in athletes (ACE inhibitor first)",
+    "~but they limit the hypertensive response to exercise"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_safe",
+   "path": "M687.0 88V113H287.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_dose",
+   "path": "M687.0 88V113H687.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_tail",
+   "path": "M687.0 88V113H1087.0V138"
+  },
+  {
+   "from": "ci_head_0_0",
+   "to": "ci_check_0_0"
+  },
+  {
+   "from": "ci_check_0_0",
+   "to": "ci_do_0_0"
+  },
+  {
+   "from": "ci_do_0_0",
+   "to": "ci_avoid_0_0"
+  },
+  {
+   "from": "g_safe",
+   "to": "ci_head_0_0",
+   "from_dx": -124,
+   "label": "unstable",
+   "label_at": [
+    163.0,
+    238
+   ]
+  },
+  {
+   "from": "risk_head_0_0",
+   "to": "risk_check_0_0"
+  },
+  {
+   "from": "risk_check_0_0",
+   "to": "risk_do_0_0"
+  },
+  {
+   "from": "risk_do_0_0",
+   "to": "risk_avoid_0_0"
+  },
+  {
+   "from": "g_safe",
+   "to": "risk_head_0_0",
+   "from_dx": 124,
+   "label": "stable",
+   "label_at": [
+    411.0,
+    238
+   ]
+  },
+  {
+   "from": "fitt_head_0_0",
+   "to": "fitt_check_0_0"
+  },
+  {
+   "from": "fitt_check_0_0",
+   "to": "fitt_do_0_0"
+  },
+  {
+   "from": "fitt_do_0_0",
+   "to": "fitt_avoid_0_0"
+  },
+  {
+   "from": "g_dose",
+   "to": "fitt_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "htn_head_0_0",
+   "to": "htn_check_0_0"
+  },
+  {
+   "from": "htn_check_0_0",
+   "to": "htn_do_0_0"
+  },
+  {
+   "from": "htn_do_0_0",
+   "to": "htn_avoid_0_0"
+  },
+  {
+   "from": "g_tail",
+   "to": "htn_head_0_0",
+   "from_dx": -124
+  },
+  {
+   "from": "med_head_0_0",
+   "to": "med_check_0_0"
+  },
+  {
+   "from": "med_check_0_0",
+   "to": "med_do_0_0"
+  },
+  {
+   "from": "med_do_0_0",
+   "to": "med_avoid_0_0"
+  },
+  {
+   "from": "g_tail",
+   "to": "med_head_0_0",
+   "from_dx": 124
+  }
+ ],
+ "panels": []
+}

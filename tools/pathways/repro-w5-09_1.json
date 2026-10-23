@@ -1,0 +1,165 @@
+{
+ "name": "pathology of 1st trimester bleeding pathway",
+ "title": "First trimester bleeding pathology: what the ultrasound and β-hCG show for ectopic, spontaneous abortion, complete and partial mole, and choriocarcinoma",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 210,
+   "y": 10,
+   "w": 500,
+   "h": 48,
+   "kind": "plain",
+   "title": "Reproductive-age woman: bleeding ± pain, positive β-hCG",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 300,
+   "y": 90,
+   "w": 320,
+   "h": 48,
+   "kind": "plain",
+   "title": "Serum β-hCG + pelvic ultrasound",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 30,
+   "y": 190,
+   "w": 300,
+   "h": 48,
+   "kind": "plain",
+   "title": "Gestational sac in the uterus?",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 560,
+   "y": 180,
+   "w": 345,
+   "kind": "plain",
+   "title": "Persistent, markedly elevated hCG after ANY gestation?",
+   "lines": []
+  },
+  {
+   "id": "I",
+   "x": 590,
+   "y": 290,
+   "w": 285,
+   "kind": "bad",
+   "title": "CHORIOCARCINOMA",
+   "lines": [
+    "malignant trophoblast, no villi"
+   ]
+  },
+  {
+   "id": "D",
+   "x": 520,
+   "y": 378,
+   "w": 385,
+   "h": 62,
+   "kind": "bad",
+   "title": "ECTOPIC",
+   "lines": [
+    "endometrium decidualized, no products of conception"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 520,
+   "y": 458,
+   "w": 385,
+   "h": 62,
+   "kind": "warn",
+   "title": "SPONTANEOUS ABORTION",
+   "lines": [
+    "villi + trophoblast + decidua on curettage"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 520,
+   "y": 538,
+   "w": 385,
+   "h": 48,
+   "kind": "anti",
+   "title": "COMPLETE MOLE",
+   "lines": []
+  },
+  {
+   "id": "G",
+   "x": 520,
+   "y": 604,
+   "w": 385,
+   "h": 48,
+   "kind": "ana",
+   "title": "PARTIAL MOLE",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "from_dx": -80
+  },
+  {
+   "from": "B",
+   "to": "H",
+   "from_dx": 80
+  },
+  {
+   "from": "H",
+   "to": "I",
+   "label": "Yes",
+   "label_at": [
+    755,
+    276
+   ]
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "path": "M165 238V409H518",
+   "label": "No sac, adnexal mass",
+   "label_at": [
+    343,
+    402
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "path": "M165 238V489H518",
+   "label": "Sac, no fetal heart",
+   "label_at": [
+    343,
+    482
+   ]
+  },
+  {
+   "from": "C",
+   "to": "F",
+   "path": "M165 238V562H518",
+   "label": "Snow storm, no fetus, hCG markedly high",
+   "label_at": [
+    343,
+    555
+   ]
+  },
+  {
+   "from": "C",
+   "to": "G",
+   "path": "M165 238V628H518",
+   "label": "Focal cystic change with a fetus, hCG low-normal",
+   "label_at": [
+    343,
+    621
+   ]
+  }
+ ]
+}

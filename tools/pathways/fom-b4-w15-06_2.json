@@ -1,0 +1,779 @@
+{
+ "name": "allergy overview",
+ "width": 1316,
+ "title": "Allergy decision chart: first decide whether this is anaphylaxis now (any one of three criteria, intramuscular epinephrine first); otherwise sort by trigger into allergic rhinitis, food allergy, drug (penicillin) allergy and venom allergy, each with clues, the test that decides it and management in order",
+ "kinds": {
+  "an_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "an_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "an_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "rh_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rh_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "rh_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "fo_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fo_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "fo_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "dr_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dr_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "dr_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ve_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ve_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "ve_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 246,
+   "h": 1070,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 316,
+   "y": 288,
+   "w": 246,
+   "h": 1070,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 564,
+   "y": 288,
+   "w": 246,
+   "h": 1070,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 812,
+   "y": 288,
+   "w": 246,
+   "h": 1070,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1060,
+   "y": 288,
+   "w": 246,
+   "h": 1070,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 414,
+   "h": 268,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 722,
+   "h": 254,
+   "text": "TEST"
+  },
+  {
+   "x": 23,
+   "y": 1016,
+   "h": 334,
+   "text": "MANAGE"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 293,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A suspected ALLERGIC reaction: is it ANAPHYLAXIS right now? If not, WHAT was the trigger?",
+   "lines": [
+    "the HISTORY is the best allergy test · an oral CHALLENGE is the gold standard",
+    "skin prick or intradermal test POSITIVE = wheal ≥ 3 mm larger than the saline control"
+   ]
+  },
+  {
+   "id": "g_an",
+   "x": 45,
+   "y": 138,
+   "w": 236,
+   "h": 78,
+   "kind": "plain",
+   "title": "NOW: ANAPHYLAXIS?",
+   "lines": [
+    "sudden: minutes, almost always < 1 hour"
+   ]
+  },
+  {
+   "id": "g_tr",
+   "x": 321,
+   "y": 138,
+   "w": 980,
+   "h": 78,
+   "kind": "plain",
+   "title": "Not now: WHAT was the trigger?",
+   "lines": [
+    "IMMEDIATE (type I, IgE) or DELAYED (types II–IV: antibody, immune complex, T cell)?"
+   ]
+  },
+  {
+   "id": "an_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 236,
+   "h": 78,
+   "kind": "an_h",
+   "title": "Anaphylaxis",
+   "lines": [
+    "mean time to ARREST: drug 5 · sting 15 · food 30 min"
+   ]
+  },
+  {
+   "id": "rh_head_0_0",
+   "x": 321,
+   "y": 296,
+   "w": 236,
+   "h": 78,
+   "kind": "rh_h",
+   "title": "Allergic rhinitis",
+   "lines": [
+    "onset usually before age 30"
+   ]
+  },
+  {
+   "id": "fo_head_0_0",
+   "x": 569,
+   "y": 296,
+   "w": 236,
+   "h": 78,
+   "kind": "fo_h",
+   "title": "Food allergy",
+   "lines": [
+    "mostly children"
+   ]
+  },
+  {
+   "id": "dr_head_0_0",
+   "x": 817,
+   "y": 296,
+   "w": 236,
+   "h": 78,
+   "kind": "dr_h",
+   "title": "Drug (penicillin) allergy",
+   "lines": [
+    "> 90% who report it are NOT allergic"
+   ]
+  },
+  {
+   "id": "ve_head_0_0",
+   "x": 1065,
+   "y": 296,
+   "w": 236,
+   "h": 78,
+   "kind": "ve_h",
+   "title": "Venom allergy",
+   "lines": [
+    "yellowjackets sting most"
+   ]
+  },
+  {
+   "id": "an_pres_0_0",
+   "x": 45,
+   "y": 414,
+   "w": 236,
+   "h": 268,
+   "kind": "an_t",
+   "title": "ANY ONE of 3",
+   "lines": [
+    "• skin / mucosa + breathing OR ↓ BP",
+    "• ≥ 2 systems after a LIKELY allergen (skin, breathing, BP, gut)",
+    "• ↓ BP after a KNOWN allergen: adult systolic < 90 or a > 30% fall"
+   ]
+  },
+  {
+   "id": "rh_pres_0_0",
+   "x": 321,
+   "y": 414,
+   "w": 236,
+   "h": 123,
+   "kind": "rh_t",
+   "title": "ITCH: nose + eyes",
+   "lines": [
+    "• sneezing, congestion, watery red eyes",
+    "• seasonal: pollen, mould · year-round: dust mites, pets"
+   ]
+  },
+  {
+   "id": "rh_pres_1_0",
+   "x": 321,
+   "y": 559,
+   "w": 236,
+   "h": 123,
+   "kind": "rh_w",
+   "title": "Probably NOT allergic",
+   "lines": [
+    "• NO response to allergy treatment",
+    "• no itch: vasomotor",
+    "• anosmia: nasal polyps",
+    "• fever, sore throat: infection"
+   ]
+  },
+  {
+   "id": "fo_pres_0_0",
+   "x": 569,
+   "y": 414,
+   "w": 236,
+   "h": 132,
+   "kind": "fo_t",
+   "title": "Minutes, < 1 h after the food",
+   "lines": [
+    "• hives, wheeze, vomiting, ↓ BP",
+    "• peanut, tree nut, milk, egg, wheat, soy, fish",
+    "• HOURS later + vomiting / diarrhea: delayed, non-IgE"
+   ]
+  },
+  {
+   "id": "fo_pres_1_0",
+   "x": 569,
+   "y": 568,
+   "w": 236,
+   "h": 114,
+   "kind": "fo_w",
+   "title": "Or not allergy at all?",
+   "lines": [
+    "• intolerance: a known non-immune cause (lactose)",
+    "• aversion: not reproduced when blinded"
+   ]
+  },
+  {
+   "id": "dr_pres_0_0",
+   "x": 817,
+   "y": 414,
+   "w": 236,
+   "h": 132,
+   "kind": "dr_t",
+   "title": "IMMEDIATE or DELAYED?",
+   "lines": [
+    "• immediate (type I): hives, anaphylaxis",
+    "• delayed (types II–IV): cytopenias, serum sickness, blistering (Stevens-Johnson)"
+   ]
+  },
+  {
+   "id": "dr_pres_1_0",
+   "x": 817,
+   "y": 568,
+   "w": 236,
+   "h": 114,
+   "kind": "dr_w",
+   "title": "Why the label is often wrong",
+   "lines": [
+    "• another cause: the INFECTION, another drug, intolerance",
+    "• 80% lose it after 10 years' avoidance"
+   ]
+  },
+  {
+   "id": "ve_pres_0_0",
+   "x": 1065,
+   "y": 414,
+   "w": 236,
+   "h": 150,
+   "kind": "ve_t",
+   "title": "Which reaction?",
+   "lines": [
+    "• LARGE LOCAL: > 10 cm over 1–2 days",
+    "• CUTANEOUS only: hives away from the sting (children)",
+    "• EXTRACUTANEOUS: airway, ↓ BP, gut = anaphylaxis"
+   ]
+  },
+  {
+   "id": "ve_pres_1_0",
+   "x": 1065,
+   "y": 586,
+   "w": 236,
+   "h": 96,
+   "kind": "ve_w",
+   "title": "Worse with",
+   "lines": [
+    "β-blockers, ACE inhibitors, older age, frequent stings, mast cell disorder"
+   ]
+  },
+  {
+   "id": "an_inv_0_0",
+   "x": 45,
+   "y": 722,
+   "w": 236,
+   "h": 254,
+   "kind": "an_w",
+   "title": "No test: a CLINICAL call",
+   "lines": [
+    "over 1 hour after exposure? probably not anaphylaxis, or the wrong allergen"
+   ]
+  },
+  {
+   "id": "rh_inv_0_0",
+   "x": 321,
+   "y": 722,
+   "w": 236,
+   "h": 254,
+   "kind": "rh_w",
+   "title": "Skin prick or serum IgE (RAST)",
+   "lines": []
+  },
+  {
+   "id": "fo_inv_0_0",
+   "x": 569,
+   "y": 722,
+   "w": 236,
+   "h": 254,
+   "kind": "fo_w",
+   "title": "Skin prick, serum IgE → ORAL FOOD CHALLENGE",
+   "lines": []
+  },
+  {
+   "id": "dr_inv_0_0",
+   "x": 817,
+   "y": 722,
+   "w": 236,
+   "h": 116,
+   "kind": "ok",
+   "title": "1 · LOW-risk history → DIRECT oral challenge",
+   "lines": [
+    "GI symptoms only, itch without rash, family history only, remote vague reaction"
+   ]
+  },
+  {
+   "id": "dr_inv_1_0",
+   "x": 817,
+   "y": 860,
+   "w": 236,
+   "h": 116,
+   "kind": "dr_w",
+   "title": "2 · Immediate → SKIN TEST first",
+   "lines": [
+    "• > 95% negative predictive value",
+    "• then challenge: full dose, or 10% then 90%"
+   ]
+  },
+  {
+   "id": "ve_inv_0_0",
+   "x": 1065,
+   "y": 722,
+   "w": 236,
+   "h": 254,
+   "kind": "ve_w",
+   "title": "Skin prick testing",
+   "lines": []
+  },
+  {
+   "id": "an_tx_0_0",
+   "x": 45,
+   "y": 1016,
+   "w": 236,
+   "h": 176,
+   "kind": "bad",
+   "title": "1 · Remove trigger + INTRAMUSCULAR EPINEPHRINE",
+   "lines": [
+    "• 0.01 mg/kg of 1:1000, max 0.3 mg",
+    "• repeat every 5–15 min"
+   ]
+  },
+  {
+   "id": "an_tx_1_0",
+   "x": 45,
+   "y": 1214,
+   "w": 236,
+   "h": 136,
+   "kind": "ok",
+   "title": "2 · ONLY THEN the rest",
+   "lines": [
+    "O2, fluids, antihistamine, salbutamol, steroids"
+   ]
+  },
+  {
+   "id": "rh_tx_0_0",
+   "x": 321,
+   "y": 1016,
+   "w": 236,
+   "h": 96,
+   "kind": "ok",
+   "title": "1 · AVOID the allergen",
+   "lines": [
+    "• mites: hot-wash sheets weekly",
+    "• pollen: A/C, windows shut",
+    "• pets: out of the home"
+   ]
+  },
+  {
+   "id": "rh_tx_1_0",
+   "x": 321,
+   "y": 1134,
+   "w": 236,
+   "h": 134,
+   "kind": "ok",
+   "title": "2 · 2nd-gen ANTIHISTAMINE + daily NASAL STEROID",
+   "lines": [
+    "• cetirizine, loratadine; NOT diphenhydramine",
+    "• then immunotherapy (subcutaneous or sublingual)"
+   ]
+  },
+  {
+   "id": "rh_tx_2_0",
+   "x": 321,
+   "y": 1290,
+   "w": 236,
+   "h": 60,
+   "kind": "bad",
+   "title": "NO decongestant sprays",
+   "lines": [
+    "dependence"
+   ]
+  },
+  {
+   "id": "fo_tx_0_0",
+   "x": 569,
+   "y": 1016,
+   "w": 236,
+   "h": 109,
+   "kind": "bad",
+   "title": "1 · AVOID + carry EPINEPHRINE",
+   "lines": [
+    "EpiPen: blue to the sky, orange to the thigh"
+   ]
+  },
+  {
+   "id": "fo_tx_1_0",
+   "x": 569,
+   "y": 1147,
+   "w": 236,
+   "h": 71,
+   "kind": "ok",
+   "title": "2 · Oral immunotherapy",
+   "lines": [
+    "tiny rising doses · baked milk + egg"
+   ]
+  },
+  {
+   "id": "fo_tx_2_0",
+   "x": 569,
+   "y": 1240,
+   "w": 236,
+   "h": 109,
+   "kind": "ok",
+   "title": "PREVENT: allergenic foods EARLY (4–6 months)",
+   "lines": [
+    "• NOT rubbed on the skin",
+    "• no honey for infants"
+   ]
+  },
+  {
+   "id": "dr_tx_0_0",
+   "x": 817,
+   "y": 1016,
+   "w": 236,
+   "h": 175,
+   "kind": "bad",
+   "title": "NEVER challenge a SEVERE type II–IV reaction",
+   "lines": [
+    "e.g. blistering with mucosa: avoid for LIFE"
+   ]
+  },
+  {
+   "id": "dr_tx_1_0",
+   "x": 817,
+   "y": 1213,
+   "w": 236,
+   "h": 137,
+   "kind": "warn",
+   "title": "True type I: DESENSITIZE",
+   "lines": [
+    "if the drug is needed"
+   ]
+  },
+  {
+   "id": "ve_tx_0_0",
+   "x": 1065,
+   "y": 1016,
+   "w": 236,
+   "h": 95,
+   "kind": "ok",
+   "title": "1 · AVOID stings",
+   "lines": [
+    "• no eating outdoors, bare feet",
+    "• cover trash, check for nests"
+   ]
+  },
+  {
+   "id": "ve_tx_1_0",
+   "x": 1065,
+   "y": 1133,
+   "w": 236,
+   "h": 115,
+   "kind": "bad",
+   "title": "EXTRACUTANEOUS → EpiPen REQUIRED",
+   "lines": [
+    "+ VENOM IMMUNOTHERAPY (cuts sting deaths)"
+   ]
+  },
+  {
+   "id": "ve_tx_2_0",
+   "x": 1065,
+   "y": 1270,
+   "w": 236,
+   "h": 79,
+   "kind": "ve_w",
+   "title": "Cutaneous only: NO immunotherapy",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_an",
+   "path": "M673.0 88V113H163.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_tr",
+   "path": "M673.0 88V113H811.0V138"
+  },
+  {
+   "from": "rh_pres_0_0",
+   "to": "rh_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "fo_pres_0_0",
+   "to": "fo_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "dr_pres_0_0",
+   "to": "dr_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ve_pres_0_0",
+   "to": "ve_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "dr_inv_0_0",
+   "to": "dr_inv_1_0"
+  },
+  {
+   "from": "an_tx_0_0",
+   "to": "an_tx_1_0"
+  },
+  {
+   "from": "rh_tx_0_0",
+   "to": "rh_tx_1_0"
+  },
+  {
+   "from": "rh_tx_1_0",
+   "to": "rh_tx_2_0"
+  },
+  {
+   "from": "fo_tx_0_0",
+   "to": "fo_tx_1_0"
+  },
+  {
+   "from": "fo_tx_1_0",
+   "to": "fo_tx_2_0"
+  },
+  {
+   "from": "dr_tx_0_0",
+   "to": "dr_tx_1_0"
+  },
+  {
+   "from": "ve_tx_0_0",
+   "to": "ve_tx_1_0"
+  },
+  {
+   "from": "ve_tx_1_0",
+   "to": "ve_tx_2_0"
+  },
+  {
+   "from": "an_head_0_0",
+   "to": "an_pres_0_0"
+  },
+  {
+   "from": "an_pres_0_0",
+   "to": "an_inv_0_0"
+  },
+  {
+   "from": "an_inv_0_0",
+   "to": "an_tx_0_0"
+  },
+  {
+   "from": "g_an",
+   "to": "an_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "rh_head_0_0",
+   "to": "rh_pres_0_0"
+  },
+  {
+   "from": "rh_pres_1_0",
+   "to": "rh_inv_0_0"
+  },
+  {
+   "from": "rh_inv_0_0",
+   "to": "rh_tx_0_0"
+  },
+  {
+   "from": "g_tr",
+   "to": "rh_head_0_0",
+   "from_dx": -372,
+   "label": "AIRBORNE",
+   "label_at": [
+    439.0,
+    256
+   ]
+  },
+  {
+   "from": "fo_head_0_0",
+   "to": "fo_pres_0_0"
+  },
+  {
+   "from": "fo_pres_1_0",
+   "to": "fo_inv_0_0"
+  },
+  {
+   "from": "fo_inv_0_0",
+   "to": "fo_tx_0_0"
+  },
+  {
+   "from": "g_tr",
+   "to": "fo_head_0_0",
+   "from_dx": -124,
+   "label": "A FOOD",
+   "label_at": [
+    687.0,
+    256
+   ]
+  },
+  {
+   "from": "dr_head_0_0",
+   "to": "dr_pres_0_0"
+  },
+  {
+   "from": "dr_pres_1_0",
+   "to": "dr_inv_0_0"
+  },
+  {
+   "from": "dr_inv_1_0",
+   "to": "dr_tx_0_0"
+  },
+  {
+   "from": "g_tr",
+   "to": "dr_head_0_0",
+   "from_dx": 124,
+   "label": "A DRUG",
+   "label_at": [
+    935.0,
+    256
+   ]
+  },
+  {
+   "from": "ve_head_0_0",
+   "to": "ve_pres_0_0"
+  },
+  {
+   "from": "ve_pres_1_0",
+   "to": "ve_inv_0_0"
+  },
+  {
+   "from": "ve_inv_0_0",
+   "to": "ve_tx_0_0"
+  },
+  {
+   "from": "g_tr",
+   "to": "ve_head_0_0",
+   "from_dx": 372,
+   "label": "A STING",
+   "label_at": [
+    1183.0,
+    256
+   ]
+  }
+ ],
+ "panels": []
+}

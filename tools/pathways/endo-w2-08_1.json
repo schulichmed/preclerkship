@@ -1,0 +1,138 @@
+{
+ "name": "embryology histology pathway",
+ "title": "Early embryogenesis in order: fertilization, zygote, cleavage, blastulation and implantation in week 1, the bilaminar disc in week 2, gastrulation in week 3, and neural tube closure and folding in week 4.",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 200,
+   "y": 10,
+   "w": 520,
+   "h": 78,
+   "kind": "plain",
+   "title": "WEEK 1 - Fertilization in the ampulla",
+   "lines": [
+    "acrosomal enzymes cross corona radiata and zona pellucida",
+    "ZONAL REACTION blocks polyspermy"
+   ]
+  },
+  {
+   "id": "B",
+   "x": 200,
+   "y": 122,
+   "w": 520,
+   "h": 42,
+   "kind": "plain",
+   "title": "Zygote, 44 + XX or XY",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 200,
+   "y": 198,
+   "w": 520,
+   "h": 78,
+   "kind": "plain",
+   "title": "Cleavage - division with NO growth",
+   "lines": [
+    "blastomeres get smaller",
+    "MORULA, same size as the zygote"
+   ]
+  },
+  {
+   "id": "D",
+   "x": 200,
+   "y": 310,
+   "w": 520,
+   "h": 96,
+   "kind": "plain",
+   "title": "Blastulation, day 4",
+   "lines": [
+    "EMBRYOBLAST inner mass to embryo proper",
+    "TROPHOBLAST outer mass to placenta",
+    "reaches the uterus"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 200,
+   "y": 440,
+   "w": 520,
+   "h": 78,
+   "kind": "plain",
+   "title": "Implantation, day 5",
+   "lines": [
+    "blastocyst hatches from the zona pellucida",
+    "THE ZONA MUST DEGENERATE FIRST"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 200,
+   "y": 552,
+   "w": 520,
+   "h": 78,
+   "kind": "plain",
+   "title": "WEEK 2 - the twos",
+   "lines": [
+    "embryoblast splits into hypoblast and epiblast, the BILAMINAR DISC",
+    "trophoblast splits into cyto- and syncytiotrophoblast"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 200,
+   "y": 664,
+   "w": 520,
+   "h": 78,
+   "kind": "plain",
+   "title": "WEEK 3 - primitive streak, then GASTRULATION",
+   "lines": [
+    "bilaminar disc becomes TRILAMINAR",
+    "notochord induces the neural tube"
+   ]
+  },
+  {
+   "id": "H",
+   "x": 200,
+   "y": 776,
+   "w": 520,
+   "h": 78,
+   "kind": "plain",
+   "title": "WEEK 4 - neural tube closes, embryo folds",
+   "lines": [
+    "cranial neuropore day 24, caudal day 26",
+    "HEART is the first organ to function"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C"
+  },
+  {
+   "from": "C",
+   "to": "D"
+  },
+  {
+   "from": "D",
+   "to": "E"
+  },
+  {
+   "from": "E",
+   "to": "F"
+  },
+  {
+   "from": "F",
+   "to": "G"
+  },
+  {
+   "from": "G",
+   "to": "H"
+  }
+ ]
+}

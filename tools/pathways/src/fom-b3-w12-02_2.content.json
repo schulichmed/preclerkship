@@ -1,0 +1,397 @@
+{
+ "name": "lymphadenopathy overview",
+ "title": "Enlarged lymph node: after history and exam, a benign self-limited cause is treated or explained, autoimmune or serious infection gets specific tests, red flags go to bloods, imaging and excisional biopsy, and unexplained nodes are worked up if generalized or watched for a month if regional; for a regional node the site points to the cause",
+ "col_w": 222,
+ "root": {
+  "title": "Enlarged lymph node: is it REALLY a node, and does it need a BIOPSY?",
+  "lines": [
+   "> 98% are NOT malignant in primary care · usually tested only if > 1 cm",
+   "mimics: lipoma, cyst, hematoma, hemangioma, fibroma · history + exam sort it first ↓"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_b",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "BENIGN or self-limited",
+   "lines": []
+  },
+  {
+   "id": "g_a",
+   "cols": [
+    1,
+    1
+   ],
+   "title": "AUTOIMMUNE or serious INFECTION",
+   "lines": []
+  },
+  {
+   "id": "g_m",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "Suggests MALIGNANCY",
+   "lines": []
+  },
+  {
+   "id": "g_u",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "UNEXPLAINED: review malignancy risk",
+   "lines": [
+    "age, duration, exposures, symptoms, site · HIGH risk → MALIGNANCY column"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "NEXT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "be",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Reactive node",
+      [
+       "benign causes more likely the YOUNGER the patient"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Clues",
+      [
+       "• tender, infection in the area it drains",
+       "• ear, nose or throat symptoms",
+       "• e.g. upper respiratory infection, mononucleosis, dental, skin"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "No specific testing",
+      [
+       "history + exam made the diagnosis"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treatable → treat",
+      [
+       "not → reassure, explain the course"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Follow up a persistent or changing node",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ai",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Autoimmune or infection",
+      [
+       "SLE, RA, sarcoid · HIV, TB, syphilis, EBV, CMV"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Clues",
+      [
+       "• rash, arthralgia, myalgia, mouth ulcers",
+       "• cat scratch, tick bite, travel, sexual history",
+       "• drugs: phenytoin, carbamazepine, allopurinol"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Specific testing",
+      [
+       "• serology: HIV, hepatitis B + C"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "POSITIVE → treat",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "NEGATIVE → UNEXPLAINED",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ma",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Red flags",
+      [
+       "malignant or systemic disease"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "The node",
+      [
+       "• SUPRACLAVICULAR: abdominal or chest cancer",
+       "• generalized, FIXED, non-tender, MATTED",
+       "• ≥ 2 cm and growing, or no better after 2 weeks of antibiotics"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "The patient",
+      [
+       "• B symptoms: fever > 1 wk, night sweats, weight loss > 10%",
+       "• abnormal CBC (blasts, cytopenias) or chest X-ray (mediastinal mass)",
+       "• NO ENT symptoms, ESR/CRP rising"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Bloods",
+      [
+       "CBC + diff, LDH, calcium, albumin, liver + kidney function"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Imaging",
+      [
+       "• ultrasound (first choice < 14 years)",
+       "• CT, chest X-ray"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "3 · EXCISIONAL biopsy",
+      [
+       "• histology, flow cytometry",
+       "• Gram stain, AFB, cultures",
+       "• FNA if adenocarcinoma suspected"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "POSITIVE → treat",
+      [
+       "lymphoma: LYMPHOMA chart"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "NEGATIVE → UNEXPLAINED",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ge",
+   "colour": "blue",
+   "drop_label": "LOW risk · > 1 region",
+   "head": [
+    [
+     [
+      "h",
+      "Generalized",
+      [
+       "> 1 region"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Common causes",
+      [
+       "• leukemia, lymphoma, solid tumour",
+       "• sarcoid, SLE, RA",
+       "• HIV, EBV, TB, syphilis, fungi"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · CBC with manual diff",
+      [
+       "• RPR (syphilis), PPD (TB skin test)",
+       "• HIV, hepatitis B antigen, ANA"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · NEGATIVE: biopsy the most abnormal node",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "POSITIVE → treat",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "NEGATIVE → follow up",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "re",
+   "colour": "brown",
+   "drop_label": "LOW risk · 1 region",
+   "head": [
+    [
+     [
+      "h",
+      "Regional",
+      [
+       "one area: the site points to the cause ↓"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "The site points to the cause",
+      [
+       "• NECK: EBV, pharyngitis, mycobacteria · head + neck cancer, lymphoma",
+       "• ARMPIT: breast cancer, melanoma · skin infection",
+       "• GROIN (normally palpable): STI, leg infection · penile, vulvar, anal cancer"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Less common sites",
+      [
+       "• ELBOW (epitrochlear): secondary syphilis, local infection",
+       "• MEDIASTINUM (on imaging): TB, sarcoidosis, cancer"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "OBSERVE for ONE MONTH",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "RESOLVES → follow up",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "PERSISTS → biopsy the most abnormal node",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

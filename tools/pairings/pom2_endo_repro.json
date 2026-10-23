@@ -1,0 +1,120 @@
+[
+ {
+  "qid": "workbook-endo-Q6",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match the food type with the calories per gram.</strong></p>",
+  "pairs": {
+   "leftLabel": "Food type",
+   "rightLabel": "Calories per gram",
+   "items": [
+    {
+     "left": "Carbohydrate",
+     "right": "4 Calories per gram"
+    },
+    {
+     "left": "Protein",
+     "right": "4 Calories per gram"
+    },
+    {
+     "left": "Fat",
+     "right": "9 Calories per gram"
+    },
+    {
+     "left": "Alcohol",
+     "right": "7 Calories per gram"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Food type</th><th>Calories per gram</th></tr></thead><tbody><tr><td>Carbohydrate</td><td>4 Calories per gram</td></tr><tr><td>Protein</td><td>4 Calories per gram</td></tr><tr><td>Fat</td><td>9 Calories per gram</td></tr><tr><td>Alcohol</td><td>7 Calories per gram</td></tr></tbody></table><p>Carbohydrate and protein both have <strong>4</strong> Calories per gram. Fat has <strong>9</strong> Calories per gram, while alcohol has <strong>7</strong> Calories per gram.</p>",
+  "note": "keyed option C + answer prose"
+ },
+ {
+  "qid": "hippo-endo-Q63",
+  "bank": "pom2/data/questions/endo.json",
+  "stem": "<p><strong>Match the structures to the lymph nodes that drain them (one answer per choice).</strong></p>",
+  "pairs": {
+   "leftLabel": "Structure",
+   "rightLabel": "Lymph nodes",
+   "items": [
+    {
+     "left": "Skin",
+     "right": "Superficial inguinal lymph nodes"
+    },
+    {
+     "left": "Erectile bodies",
+     "right": "Deep inguinal lymph nodes"
+    },
+    {
+     "left": "Cervix",
+     "right": "External iliac lymph nodes"
+    },
+    {
+     "left": "Cavernous bodies",
+     "right": "Internal iliac lymph nodes"
+    },
+    {
+     "left": "Inferior vagina",
+     "right": "Sacral lymph nodes"
+    },
+    {
+     "left": "Uterine fundus",
+     "right": "Lumbar lymph nodes"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Structure</th><th>Lymph nodes</th></tr></thead><tbody><tr><td>Skin</td><td>Superficial inguinal lymph nodes</td></tr><tr><td>Erectile bodies</td><td>Deep inguinal lymph nodes</td></tr><tr><td>Cervix</td><td>External iliac lymph nodes</td></tr><tr><td>Cavernous bodies</td><td>Internal iliac lymph nodes</td></tr><tr><td>Inferior vagina</td><td>Sacral lymph nodes</td></tr><tr><td>Uterine fundus</td><td>Lumbar lymph nodes</td></tr></tbody></table><p>Note that both the internal and external iliac lymph nodes could drain the cervix.</p>",
+  "flags": [
+   {
+    "type": "warning",
+    "title": "The cervix has two acceptable answers",
+    "html": "<p>The source's own note says both the internal and external iliac nodes could drain the cervix, but the key pairs the cervix with the external iliac nodes and the cavernous bodies with the internal iliac nodes. The grid marks only the keyed pairing.</p>"
+   },
+   {
+    "type": "note",
+    "title": "Key restored from a garbled answer line",
+    "html": "<p>The source's key reads \"A. v, B - iii, C - i, D - ii, E - vi, F - iv\": the \"A -\" ran into \"The correct answer is A\". A and v are the only unpaired letter and numeral, so sacral nodes = inferior vagina.</p>"
+   }
+  ],
+  "note": "answer prose 'A. v, B - iii, C - i, D - ii, E - vi, F - iv' (letters = node options, numerals = structures); the leading 'A -' was swallowed by 'The correct answer is A.' - A/v are the only unpaired letter and numeral, so A (sacral) = v (inferior vagina) is forced"
+ },
+ {
+  "qid": "hippo-repro-Q34",
+  "bank": "pom2/data/questions/repro.json",
+  "stem": "<p><strong>Match the correct marker substance for each pathology.</strong></p>",
+  "pairs": {
+   "leftLabel": "Pathology",
+   "rightLabel": "Marker",
+   "items": [
+    {
+     "left": "Dysgerminoma",
+     "right": "LDH"
+    },
+    {
+     "left": "Yolk sac tumor",
+     "right": "a-FP"
+    },
+    {
+     "left": "Choriocarcinoma",
+     "right": "b-hCG"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Pathology</th><th>Marker</th></tr></thead><tbody><tr><td>Dysgerminoma</td><td>LDH</td></tr><tr><td>Yolk sac tumor</td><td>a-FP</td></tr><tr><td>Choriocarcinoma</td><td>b-hCG</td></tr></tbody></table><p><strong>Each germ cell tumour is named by the tissue it is trying to be, and the marker follows from that.</strong> The lecture's marker table sets out three strong associations:</p><ul><li><strong>Dysgerminoma &rarr; LDH.</strong> The ovarian counterpart of the seminoma; LDH is its marker.</li><li><strong>Yolk sac tumour &rarr; alpha-fetoprotein.</strong> AFP is what a yolk sac makes, so a tumour differentiating towards yolk sac makes it too. Most common in toddlers, and Schiller-Duval bodies on histology are pathognomonic.</li><li><strong>Choriocarcinoma &rarr; beta-hCG.</strong> It arises from placental tissue, and beta-hCG is the placental hormone.</li></ul><p>Worth holding onto: immature teratoma and embryonal carcinoma each raise <em>two</em> of the three weakly, which is why the table marks the three above as the strong, discriminating associations rather than the only ones.</p>",
+  "note": "answer prose 'A. iii/ b-ii/ c-i' (A dysgerminoma-iii LDH, B yolk sac-ii a-FP, C choriocarcinoma-i b-hCG); the 'A -' ran into 'The correct answer is A' but only iii is left for A"
+ },
+ {
+  "qid": "workbook-repro-Q28",
+  "bank": "pom2/data/questions/endo.json",
+  "skip": "single-best-answer MCQ ('which is matched incorrectly')"
+ },
+ {
+  "qid": "hippo-repro-Q1",
+  "bank": "pom2/data/questions/repro.json",
+  "skip": "single-best-answer MCQ ('INCORRECTLY matched')"
+ },
+ {
+  "qid": "hippo-repro-Q9",
+  "bank": "pom2/data/questions/repro.json",
+  "skip": "select-all list rewritten as MCQ, not a matching task"
+ }
+]

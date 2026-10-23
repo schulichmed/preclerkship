@@ -1,0 +1,239 @@
+{
+ "name": "sepsis overview",
+ "title": "Sepsis decision chart: recognise sepsis early from physiology, symptoms and high-risk groups, then act on three fronts at once: broad-spectrum antibiotics without delay, finding and controlling the source, and life support for failing organs (vasopressors when blood pressure does not respond to fluids)",
+ "col_w": 270,
+ "root": {
+  "title": "A SICK patient: could this be SEPSIS?",
+  "lines": [
+   "sepsis = life-threatening ORGAN DYSFUNCTION from a dysregulated host response to infection (bacteria, viruses, fungi)",
+   "an emergency: mortality 30–40% · the more organs fail, the likelier death"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_rec",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "1 · RECOGNISE IT",
+   "lines": [
+    "wherever you work: have a plan to NOT miss it"
+   ]
+  },
+  {
+   "id": "g_act",
+   "cols": [
+    1,
+    3
+   ],
+   "title": "2 · Then act on ALL THREE at once",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "spot",
+  "do"
+ ],
+ "row_names": {
+  "spot": "LOOK FOR",
+  "do": "DO"
+ },
+ "columns": [
+  {
+   "id": "re",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Early recognition",
+      [
+       "inflammation is no longer local"
+      ]
+     ]
+    ]
+   ],
+   "spot": [
+    [
+     [
+      "t",
+      "Physiology",
+      [
+       "• lung: tachypnea, hypoxia",
+       "• heart: tachycardia, hypotension",
+       "• kidney: oliguria"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Symptoms",
+      [
+       "• rapid decline in function, family concerned",
+       "• new confusion, looks very unwell",
+       "• fever OR hypothermia, warm, flushed"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "t",
+      "Suspect it EARLY in",
+      [
+       "• recent surgery or chemotherapy",
+       "• the immunosuppressed",
+       "• the elderly"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ab",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Early antibiotics",
+      [
+       "NOTHING saves more lives"
+      ]
+     ]
+    ]
+   ],
+   "spot": [
+    [
+     [
+      "bad",
+      "MINUTES COUNT",
+      [
+       "about 8% ↑ mortality per HOUR of delay once hypotension starts"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "warn",
+      "1 · Cultures FIRST, only if they will not delay the dose",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · BROAD spectrum, ASAP",
+      [
+       "• often multidrug",
+       "• whatever it takes to get it into the blood"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "so",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Source control",
+      [
+       "find it fast, control it fast"
+      ]
+     ]
+    ]
+   ],
+   "spot": [
+    [
+     [
+      "t",
+      "FIND the source",
+      [
+       "• exam: wound, rash",
+       "• imaging: CT, ultrasound"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "ok",
+      "CONTROL it",
+      [
+       "• surgery (e.g. appendectomy)",
+       "• DRAIN an abscess",
+       "• REMOVE the infected line or implant"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ls",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Life support",
+      [
+       "invasive support for FAILING organs"
+      ]
+     ]
+    ]
+   ],
+   "spot": [
+    [
+     [
+      "t",
+      "BP not responding to FLUIDS?",
+      [
+       "= SEPTIC SHOCK: arterioles dilate, capillaries leak"
+      ]
+     ]
+    ]
+   ],
+   "do": [
+    [
+     [
+      "ok",
+      "1 · Shock: VASOPRESSORS ± inotropes",
+      [
+       "raise the BP without drowning the tissues in fluid (edema)"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · The other organs",
+      [
+       "• lung: lung-protective ventilation, prone, extracorporeal membrane oxygenation (ECMO)",
+       "• kidney: dialysis, continuous renal replacement",
+       "• brain: sedation, delirium drugs"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Buys TIME, fixes nothing",
+      [
+       "can harm: a last resort"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

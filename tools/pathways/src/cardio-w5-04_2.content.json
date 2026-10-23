@@ -1,0 +1,386 @@
+{
+ "name": "tachycardia overview",
+ "title": "Tachycardia decision chart: cardiovert if unstable, then sort by QRS width; narrow complex tachycardia is split by blocking the AV node (continues: atrial tachycardias; stops: AVNRT or AVRT), wide complex tachycardia by adenosine (slows or stops: SVT with aberrancy; no effect: monomorphic or polymorphic VT), each with its ECG and acute then long-term treatment",
+ "col_w": 220,
+ "root": {
+  "title": "Tachycardia (> 100 bpm): is the patient UNSTABLE? Then: is the QRS NARROW or WIDE?",
+  "lines": [
+   "UNSTABLE, deteriorating or UNSURE what it is → synchronized CARDIOVERSION: always appropriate"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_n",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "NARROW QRS (< 120 ms): supraventricular tachycardia (SVT)",
+   "lines": [
+    "recurrent symptoms but NO sudden death: an excellent prognosis"
+   ]
+  },
+  {
+   "id": "g_w",
+   "cols": [
+    3,
+    5
+   ],
+   "title": "WIDE QRS (> 120 ms): ventricular tachycardia (VT) until proven otherwise",
+   "lines": [
+    "can cause collapse and SUDDEN DEATH"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_n",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "Block the atrioventricular (AV) node: vagal manoeuvre or IV adenosine. Does it STOP?",
+   "lines": [
+    "carotid sinus massage; adenosine lasts about 10 seconds"
+   ]
+  },
+  {
+   "id": "t_w",
+   "cols": [
+    3,
+    5
+   ],
+   "title": "Stable but unsure: give IV ADENOSINE. Does it stop or slow?",
+   "lines": [
+    "then cardiovert whenever in doubt"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "ecg",
+  "tx"
+ ],
+ "row_names": {
+  "ecg": "ECG",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "at",
+   "colour": "olive",
+   "drop_from": "t_n",
+   "drop_label": "CONTINUES",
+   "head": [
+    [
+     [
+      "h",
+      "AV-node INDEPENDENT",
+      [
+       "sinus, ectopic atrial tachycardia, atrial flutter",
+       "atrial fibrillation: see the ATRIAL FIBRILLATION chart"
+      ]
+     ]
+    ]
+   ],
+   "ecg": [
+    [
+     [
+      "w",
+      "Sinus",
+      [
+       "P UPRIGHT in I, II, III"
+      ]
+     ],
+     [
+      "t",
+      "Atrial",
+      [
+       "P INVERTED in I, II, III"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Flutter",
+      [
+       "flutter waves keep circling while the AV node is blocked"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "Sinus: driven by something",
+      [
+       "hyperthyroidism, fever, anemia, exercise"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Atrial or flutter: restore sinus",
+      [
+       "• cardioversion",
+       "• procainamide or ibutilide"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "nr",
+   "colour": "teal",
+   "drop_from": "t_n",
+   "drop_label": "STOPS",
+   "head": [
+    [
+     [
+      "h",
+      "AV nodal re-entry (AVNRT)",
+      [
+       "the circuit is INSIDE the AV node"
+      ]
+     ]
+    ]
+   ],
+   "ecg": [
+    [
+     [
+      "t",
+      "Regular, narrow, 100–200+ bpm",
+      [
+       "sudden racing episodes"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Acute: adenosine or vagal STOPS it",
+      [
+       "IV verapamil or diltiazem last longer"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Long term",
+      [
+       "• rare, mild spells: nothing",
+       "• beta blocker or calcium channel blocker",
+       "• catheter ABLATION"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rt",
+   "colour": "blue",
+   "drop_from": "t_n",
+   "drop_label": "STOPS",
+   "head": [
+    [
+     [
+      "h",
+      "AV re-entry (AVRT)",
+      [
+       "uses an ACCESSORY pathway (Wolff-Parkinson-White, WPW)"
+      ]
+     ]
+    ]
+   ],
+   "ecg": [
+    [
+     [
+      "t",
+      "WPW in sinus rhythm",
+      [
+       "DELTA wave + fused QRS"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "In tachycardia",
+      [
+       "• down the normal path: NARROW",
+       "• down the accessory path: WIDE",
+       "• with atrial fibrillation: irregularly irregular"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "As for AVNRT",
+      [
+       "• acute: adenosine or vagal",
+       "• long term: catheter ABLATION"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ab",
+   "colour": "purple",
+   "drop_from": "t_w",
+   "drop_label": "STOPS or slows",
+   "head": [
+    [
+     [
+      "h",
+      "SVT with aberrancy",
+      [
+       "SVT + bundle branch block, or over an accessory pathway"
+      ]
+     ]
+    ]
+   ],
+   "ecg": [
+    [
+     [
+      "t",
+      "Wide, but AV-node DEPENDENT",
+      [
+       "e.g. SVT with a left bundle branch block pattern at 200 bpm"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat as the SVT it is",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mv",
+   "colour": "orange",
+   "drop_from": "t_w",
+   "drop_label": "NO effect",
+   "head": [
+    [
+     [
+      "h",
+      "Monomorphic VT",
+      [
+       "every QRS looks the SAME",
+       "scar (coronary disease, cardiomyopathy) or idiopathic"
+      ]
+     ]
+    ]
+   ],
+   "ecg": [
+    [
+     [
+      "t",
+      "Wide, regular, identical QRS",
+      [
+       "• very abnormal axis",
+       "• adenosine does NOT stop it"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Acute",
+      [
+       "• IV procainamide: any monomorphic VT",
+       "• IV lidocaine: ischemic VT",
+       "• cardiovert if unsure"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Long term",
+      [
+       "• sotalol, propafenone, amiodarone",
+       "• defibrillator (ICD) or ablation"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pv",
+   "colour": "magenta",
+   "drop_from": "t_w",
+   "drop_label": "NO effect",
+   "head": [
+    [
+     [
+      "h",
+      "Polymorphic VT, VF",
+      [
+       "QRS changes beat to beat",
+       "ACUTE ISCHEMIA most often; long QT"
+      ]
+     ]
+    ]
+   ],
+   "ecg": [
+    [
+     [
+      "bad",
+      "SYNCOPE or ARREST, not palpitations",
+      [
+       "• torsades de pointes: long QT",
+       "• VF: chaotic, the shockable arrest"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Shock + IV AMIODARONE",
+      [
+       "refractory VT not from long QT, or VF"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Ischemia → treat as an ST-elevation MI",
+      [
+       "cath lab for primary angioplasty (PCI)"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Long term: ICD",
+      [
+       "~long QT syndromes need their own plan"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

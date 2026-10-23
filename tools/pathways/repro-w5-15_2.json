@@ -1,0 +1,861 @@
+{
+ "name": "antenatal care overview",
+ "width": 1618,
+ "title": "Antenatal care from first suspicion to term: what to assess, test and act on at each stage (confirm and date, first visit, second trimester, third trimester), then how the first-visit group and screen splits into Rh negative without an antibody (Rh immunoglobulin) and an antibody found (titre, middle cerebral artery Doppler, timing of delivery); panels on checking a medication or exposure and on who cares for her",
+ "kinds": {
+  "conf_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "conf_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "conf_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "first_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "first_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "first_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "second_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "second_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "second_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "third_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "third_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "third_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "rhneg_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rhneg_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "rhneg_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ab_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ab_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "ab_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 255,
+   "h": 1138,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 297,
+   "y": 270,
+   "w": 255,
+   "h": 1138,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 554,
+   "y": 270,
+   "w": 255,
+   "h": 1138,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 811,
+   "y": 270,
+   "w": 255,
+   "h": 1138,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1096,
+   "y": 270,
+   "w": 255,
+   "h": 1138,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1353,
+   "y": 270,
+   "w": 255,
+   "h": 1138,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 396,
+   "h": 286,
+   "text": "ASSESS"
+  },
+  {
+   "x": 23,
+   "y": 722,
+   "h": 394,
+   "text": "TEST"
+  },
+  {
+   "x": 23,
+   "y": 1156,
+   "h": 244,
+   "text": "ACT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 444,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Antenatal care: what do I assess, test and act on at THIS visit?",
+   "lines": [
+    "after 20 weeks, ANY headache or sudden severe edema: exclude preeclampsia → HYPERTENSION chart",
+    "lifestyle, food, nausea and safe medicines: see the EARLY PREGNANCY COUNSELLING chart"
+   ]
+  },
+  {
+   "id": "g_time",
+   "x": 45,
+   "y": 138,
+   "w": 1016,
+   "h": 60,
+   "kind": "plain",
+   "title": "Visit by visit, in order",
+   "lines": [
+    "each stage adds to the last"
+   ]
+  },
+  {
+   "id": "g_gs",
+   "x": 1101,
+   "y": 138,
+   "w": 502,
+   "h": 60,
+   "kind": "plain",
+   "title": "The first-visit GROUP AND SCREEN decides",
+   "lines": [
+    "is she Rh negative, and is there an ANTIBODY?"
+   ]
+  },
+  {
+   "id": "conf_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 245,
+   "h": 78,
+   "kind": "conf_h",
+   "title": "1 · Suspect, confirm, date",
+   "lines": [
+    "before the first visit"
+   ]
+  },
+  {
+   "id": "first_head_0_0",
+   "x": 302,
+   "y": 278,
+   "w": 245,
+   "h": 78,
+   "kind": "first_h",
+   "title": "2 · First visit",
+   "lines": [
+    "first trimester, to 14 weeks"
+   ]
+  },
+  {
+   "id": "second_head_0_0",
+   "x": 559,
+   "y": 278,
+   "w": 245,
+   "h": 78,
+   "kind": "second_h",
+   "title": "3 · Second trimester",
+   "lines": [
+    "14–28 weeks"
+   ]
+  },
+  {
+   "id": "third_head_0_0",
+   "x": 816,
+   "y": 278,
+   "w": 245,
+   "h": 78,
+   "kind": "third_h",
+   "title": "4 · Third trimester → term",
+   "lines": [
+    "28 weeks on"
+   ]
+  },
+  {
+   "id": "rhneg_head_0_0",
+   "x": 1101,
+   "y": 278,
+   "w": 245,
+   "h": 78,
+   "kind": "rhneg_h",
+   "title": "Rh NEGATIVE, no antibody",
+   "lines": [
+    "Rh immunoglobulin (RhIG) PREVENTS one"
+   ]
+  },
+  {
+   "id": "ab_head_0_0",
+   "x": 1358,
+   "y": 278,
+   "w": 245,
+   "h": 78,
+   "kind": "ab_h",
+   "title": "ANTIBODY found",
+   "lines": [
+    "it can cross the placenta: fetal anemia"
+   ]
+  },
+  {
+   "id": "conf_assess_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 245,
+   "h": 286,
+   "kind": "conf_t",
+   "title": "Missed period",
+   "lines": [
+    "• the first sign if cycles are regular",
+    "• irregular cycles or on the pill: spotting or lighter menses instead",
+    "• symptoms alone never confirm it"
+   ]
+  },
+  {
+   "id": "first_assess_0_0",
+   "x": 302,
+   "y": 396,
+   "w": 245,
+   "h": 132,
+   "kind": "first_t",
+   "title": "GTPAL",
+   "lines": [
+    "• gravida (incl. this one)",
+    "• term ≥ 37 wk",
+    "• preterm 20–37 wk",
+    "• abortions < 20 wk",
+    "• living children"
+   ]
+  },
+  {
+   "id": "first_assess_1_0",
+   "x": 302,
+   "y": 550,
+   "w": 245,
+   "h": 132,
+   "kind": "first_w",
+   "title": "Also ask",
+   "lines": [
+    "• every medication + exposure → MEDICATION panel",
+    "• cramps ± spotting → FIRST-TRIMESTER BLEEDING chart"
+   ]
+  },
+  {
+   "id": "second_assess_0_0",
+   "x": 559,
+   "y": 396,
+   "w": 245,
+   "h": 114,
+   "kind": "second_t",
+   "title": "Fundus",
+   "lines": [
+    "• at the UMBILICUS by 20 weeks",
+    "• then symphysis-fundus height (cm) ≈ weeks"
+   ]
+  },
+  {
+   "id": "second_assess_1_0",
+   "x": 559,
+   "y": 532,
+   "w": 245,
+   "h": 150,
+   "kind": "second_w",
+   "title": "Spotting: normal or assess?",
+   "lines": [
+    "• normal: liner only, on wiping, brownish; after walking, exercise, sex",
+    "• ASSESS: frank red, fills a pad, pain, contractions, trauma"
+   ]
+  },
+  {
+   "id": "third_assess_0_0",
+   "x": 816,
+   "y": 396,
+   "w": 245,
+   "h": 114,
+   "kind": "third_t",
+   "title": "Contractions: labour or not?",
+   "lines": [
+    "• LABOUR: rhythmic, regular, 20–60 s, minutes apart, stronger",
+    "• Braxton Hicks: painless, sporadic, nonrhythmic"
+   ]
+  },
+  {
+   "id": "third_assess_1_0",
+   "x": 816,
+   "y": 532,
+   "w": 245,
+   "h": 150,
+   "kind": "bad",
+   "title": "Abdominal pain: rule out",
+   "lines": [
+    "• placental abruption",
+    "• preeclampsia + HELLP (hemolysis, elevated liver enzymes, low platelets)",
+    "• acute fatty liver",
+    "• after ANY trauma: seen in person"
+   ]
+  },
+  {
+   "id": "rhneg_assess_0_0",
+   "x": 1101,
+   "y": 396,
+   "w": 245,
+   "h": 286,
+   "kind": "rhneg_t",
+   "title": "Fetal cells reach her blood",
+   "lines": [
+    "• RhIG clears them before she makes an antibody",
+    "• useless once an antibody exists"
+   ]
+  },
+  {
+   "id": "ab_assess_0_0",
+   "x": 1358,
+   "y": 396,
+   "w": 245,
+   "h": 286,
+   "kind": "ab_t",
+   "title": "Why, and will the fetus carry it?",
+   "lines": [
+    "• previous pregnancy",
+    "• transfusion",
+    "• drug use",
+    "• screen the partner (zygosity)"
+   ]
+  },
+  {
+   "id": "conf_test_0_0",
+   "x": 45,
+   "y": 722,
+   "w": 245,
+   "h": 394,
+   "kind": "conf_t",
+   "title": "1 · Human chorionic gonadotropin (hCG), urine or serum",
+   "lines": [
+    "• serum > 25 = pregnant",
+    "• most useful: irregular cycles, recurrent miscarriage, previous ectopic",
+    "2 · where is it? → FIRST-TRIMESTER BLEEDING chart"
+   ]
+  },
+  {
+   "id": "first_test_0_0",
+   "x": 302,
+   "y": 722,
+   "w": 245,
+   "h": 240,
+   "kind": "first_t",
+   "title": "1 · For ALL",
+   "lines": [
+    "• complete blood count",
+    "• group and screen",
+    "• rubella immunity",
+    "• hepatitis B",
+    "• HIV",
+    "• syphilis",
+    "• gonorrhea + chlamydia",
+    "• urine culture",
+    "• 11–14 wk: genetic screen → PRENATAL GENETIC SCREENING chart"
+   ]
+  },
+  {
+   "id": "first_test_1_0",
+   "x": 302,
+   "y": 984,
+   "w": 245,
+   "h": 132,
+   "kind": "first_w",
+   "title": "2 · Only if selected",
+   "lines": [
+    "• thyroid-stimulating hormone: known thyroid disease",
+    "• hemoglobinopathy: Mediterranean, Southeast Asian, African, or low mean cell volume"
+   ]
+  },
+  {
+   "id": "second_test_0_0",
+   "x": 559,
+   "y": 722,
+   "w": 245,
+   "h": 394,
+   "kind": "second_t",
+   "title": "Anatomy scan, 18–22 weeks",
+   "lines": [
+    "• → ULTRASOUND THROUGH PREGNANCY chart",
+    "• low-lying placenta or previa: ANY spotting is investigated"
+   ]
+  },
+  {
+   "id": "third_test_0_0",
+   "x": 816,
+   "y": 722,
+   "w": 245,
+   "h": 394,
+   "kind": "third_t",
+   "title": "Recheck hemoglobin + ferritin",
+   "lines": [
+    "low: anemia work-up + iron on the PHYSIOLOGIC CHANGES chart"
+   ]
+  },
+  {
+   "id": "rhneg_test_0_0",
+   "x": 1101,
+   "y": 722,
+   "w": 245,
+   "h": 394,
+   "kind": "rhneg_w",
+   "title": "Baby's Rh type at birth",
+   "lines": []
+  },
+  {
+   "id": "ab_test_0_0",
+   "x": 1358.0,
+   "y": 722,
+   "w": 117.5,
+   "h": 167,
+   "kind": "ab_w",
+   "title": "1 · Titre < 1/8",
+   "lines": [
+    "repeat MONTHLY"
+   ]
+  },
+  {
+   "id": "ab_test_0_1",
+   "x": 1485.5,
+   "y": 722,
+   "w": 117.5,
+   "h": 167,
+   "kind": "bad",
+   "title": "1 · Titre ≥ 1/8",
+   "lines": [
+    "risk of SEVERE anemia"
+   ]
+  },
+  {
+   "id": "ab_test_1_0",
+   "x": 1358,
+   "y": 911,
+   "w": 245,
+   "h": 205,
+   "kind": "ab_t",
+   "title": "2 · Middle cerebral artery Doppler",
+   "lines": [
+    "• peak systolic velocity tracks fetal hemoglobin",
+    "• worse: polyhydramnios, hydrops"
+   ]
+  },
+  {
+   "id": "conf_act_0_0",
+   "x": 45,
+   "y": 1156,
+   "w": 245,
+   "h": 244,
+   "kind": "ok",
+   "title": "Set the due date EARLY",
+   "lines": [
+    "• Naegele: last normal menstrual period + 7 days − 3 months + 1 year",
+    "• dating scan → ULTRASOUND THROUGH PREGNANCY chart"
+   ]
+  },
+  {
+   "id": "first_act_0_0",
+   "x": 302,
+   "y": 1156,
+   "w": 245,
+   "h": 244,
+   "kind": "ok",
+   "title": "Prenatal multivitamin DAILY",
+   "lines": [
+    "• folic acid (600 mcg) + iron (27 mg): most often needed",
+    "• +350–450 kcal/day: healthy eating over weight gain"
+   ]
+  },
+  {
+   "id": "second_act_0_0",
+   "x": 559,
+   "y": 1156,
+   "w": 245,
+   "h": 101,
+   "kind": "ok",
+   "title": "Vaccinate EVERY pregnancy",
+   "lines": [
+    "• pertussis (Tdap) at 27–32 wk: her antibodies protect the baby",
+    "• influenza: any week, in flu season"
+   ]
+  },
+  {
+   "id": "second_act_1_0",
+   "x": 559,
+   "y": 1279,
+   "w": 245,
+   "h": 121,
+   "kind": "bad",
+   "title": "NO live vaccines → post-partum",
+   "lines": [
+    "• measles-mumps-rubella",
+    "• varicella",
+    "• bacille Calmette-Guérin"
+   ]
+  },
+  {
+   "id": "third_act_0_0",
+   "x": 816,
+   "y": 1156,
+   "w": 245,
+   "h": 244,
+   "kind": "ok",
+   "title": "Anemia: PHYSIOLOGIC CHANGES chart",
+   "lines": []
+  },
+  {
+   "id": "rhneg_act_0_0",
+   "x": 1101,
+   "y": 1156,
+   "w": 245,
+   "h": 119,
+   "kind": "ok",
+   "title": "Give RhIG",
+   "lines": [
+    "1 · ROUTINELY at 28–30 weeks",
+    "2 · post-partum if the baby is Rh POSITIVE"
+   ]
+  },
+  {
+   "id": "rhneg_act_1_0",
+   "x": 1101,
+   "y": 1297,
+   "w": 245,
+   "h": 103,
+   "kind": "rhneg_w",
+   "title": "Also after bleeding, a procedure or trauma",
+   "lines": [
+    "from 8–10 weeks"
+   ]
+  },
+  {
+   "id": "ab_act_0_0",
+   "x": 1358,
+   "y": 1156,
+   "w": 245,
+   "h": 78,
+   "kind": "bad",
+   "title": "1 · Early + severe anemia",
+   "lines": [
+    "intrauterine transfusion of antigen-negative blood, serially"
+   ]
+  },
+  {
+   "id": "ab_act_1_0",
+   "x": 1358,
+   "y": 1256,
+   "w": 245,
+   "h": 80,
+   "kind": "warn",
+   "title": "2 · Severe anemia after 34–35 wk",
+   "lines": [
+    "deliver"
+   ]
+  },
+  {
+   "id": "ab_act_2_0",
+   "x": 1358,
+   "y": 1358,
+   "w": 245,
+   "h": 42,
+   "kind": "ok",
+   "title": "3 · Stable: deliver at 37–38 wk",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_time",
+   "path": "M824.0 88V113H553.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_gs",
+   "path": "M824.0 88V113H1352.0V138"
+  },
+  {
+   "from": "first_assess_0_0",
+   "to": "first_assess_1_0"
+  },
+  {
+   "from": "second_assess_0_0",
+   "to": "second_assess_1_0"
+  },
+  {
+   "from": "third_assess_0_0",
+   "to": "third_assess_1_0"
+  },
+  {
+   "from": "first_test_0_0",
+   "to": "first_test_1_0"
+  },
+  {
+   "from": "ab_test_0_0",
+   "to": "ab_test_1_0",
+   "to_dx": -63.8
+  },
+  {
+   "from": "ab_test_0_1",
+   "to": "ab_test_1_0",
+   "to_dx": 63.8
+  },
+  {
+   "from": "second_act_0_0",
+   "to": "second_act_1_0"
+  },
+  {
+   "from": "rhneg_act_0_0",
+   "to": "rhneg_act_1_0"
+  },
+  {
+   "from": "ab_act_0_0",
+   "to": "ab_act_1_0"
+  },
+  {
+   "from": "ab_act_1_0",
+   "to": "ab_act_2_0"
+  },
+  {
+   "from": "conf_head_0_0",
+   "to": "conf_assess_0_0"
+  },
+  {
+   "from": "conf_assess_0_0",
+   "to": "conf_test_0_0"
+  },
+  {
+   "from": "conf_test_0_0",
+   "to": "conf_act_0_0"
+  },
+  {
+   "from": "g_time",
+   "to": "conf_head_0_0",
+   "from_dx": -386
+  },
+  {
+   "from": "first_head_0_0",
+   "to": "first_assess_0_0"
+  },
+  {
+   "from": "first_assess_1_0",
+   "to": "first_test_0_0"
+  },
+  {
+   "from": "first_test_1_0",
+   "to": "first_act_0_0"
+  },
+  {
+   "from": "g_time",
+   "to": "first_head_0_0",
+   "from_dx": -128
+  },
+  {
+   "from": "second_head_0_0",
+   "to": "second_assess_0_0"
+  },
+  {
+   "from": "second_assess_1_0",
+   "to": "second_test_0_0"
+  },
+  {
+   "from": "second_test_0_0",
+   "to": "second_act_0_0"
+  },
+  {
+   "from": "g_time",
+   "to": "second_head_0_0",
+   "from_dx": 128
+  },
+  {
+   "from": "third_head_0_0",
+   "to": "third_assess_0_0"
+  },
+  {
+   "from": "third_assess_1_0",
+   "to": "third_test_0_0"
+  },
+  {
+   "from": "third_test_0_0",
+   "to": "third_act_0_0"
+  },
+  {
+   "from": "g_time",
+   "to": "third_head_0_0",
+   "from_dx": 386
+  },
+  {
+   "from": "rhneg_head_0_0",
+   "to": "rhneg_assess_0_0"
+  },
+  {
+   "from": "rhneg_assess_0_0",
+   "to": "rhneg_test_0_0"
+  },
+  {
+   "from": "rhneg_test_0_0",
+   "to": "rhneg_act_0_0"
+  },
+  {
+   "from": "g_gs",
+   "to": "rhneg_head_0_0",
+   "from_dx": -128,
+   "label": "Rh −, no antibody",
+   "label_at": [
+    1223.5,
+    238
+   ]
+  },
+  {
+   "from": "ab_head_0_0",
+   "to": "ab_assess_0_0"
+  },
+  {
+   "from": "ab_assess_0_0",
+   "to": "ab_test_0_0",
+   "from_dx": -63.8
+  },
+  {
+   "from": "ab_assess_0_0",
+   "to": "ab_test_0_1",
+   "from_dx": 63.8
+  },
+  {
+   "from": "ab_test_1_0",
+   "to": "ab_act_0_0"
+  },
+  {
+   "from": "g_gs",
+   "to": "ab_head_0_0",
+   "from_dx": 128,
+   "label": "antibody found",
+   "label_at": [
+    1480.5,
+    238
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1434,
+   "w": 772,
+   "title": "Medication or exposure at any visit: what to check",
+   "items": [
+    "WHEN: weeks 1–2 insensitive · weeks 3–8 (organogenesis) → MAJOR anomalies · later → function + minor anomalies",
+    "WHAT: radiation, hyperthermia · TORCH infections · maternal diabetes · drugs, herbals, recreational drugs, toxins",
+    "US Food and Drug Administration (FDA) category: A human studies safe · D human risk, benefit may win · X risk outweighs any benefit",
+    "Planning pregnancy: optimize the disease · fewest drugs, lowest dose · switch if possible · folic acid 1 mg on antiepileptics · ask FRAME (Fetal Risk After Maternal Exposure)"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 831,
+   "y": 1434,
+   "w": 772,
+   "title": "Who looks after her",
+   "items": [
+    "LOW risk: family physician (cares for the baby too, for years) or midwife (home, birth centre or hospital; mother + baby to 6 weeks)",
+    "CONSULT obstetrics: diabetes, essential hypertension, prior preeclampsia, high body mass index, lupus · abnormal fetal surveillance · planned cesarean",
+    "fetal anomaly → maternal fetal medicine (MFM)",
+    "labour: dystocia, operative or cesarean birth, preeclampsia · post-partum: major hemorrhage, 3rd/4th-degree tear"
+   ],
+   "cols": 1
+  }
+ ]
+}

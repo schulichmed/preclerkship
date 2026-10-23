@@ -1,0 +1,170 @@
+{
+ "name": "approach to and pathology of a pelvic mass pathway",
+ "title": "Approach to an ovarian mass: age points to germ cell or epithelial lineage, bilateral multi-nodular masses suggest metastasis, and estrogenic endocrine features point to a granulosa cell tumour",
+ "width": 980,
+ "nodes": [
+  {
+   "id": "A",
+   "x": 320,
+   "y": 10,
+   "w": 280,
+   "kind": "plain",
+   "title": "Ovarian mass on exam / imaging",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 390,
+   "y": 100,
+   "w": 140,
+   "h": 44,
+   "kind": "plain",
+   "title": "Age?",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 680,
+   "y": 100,
+   "w": 245,
+   "h": 44,
+   "kind": "plain",
+   "title": "Endocrine features?",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 15,
+   "y": 200,
+   "w": 310,
+   "kind": "ok",
+   "title": "Germ cell lineage likely",
+   "lines": [
+    "Send serum markers: alpha-fetoprotein (α-FP),",
+    "lactate dehydrogenase (LDH),",
+    "beta human chorionic gonadotropin (β-hCG)"
+   ]
+  },
+  {
+   "id": "D",
+   "x": 345,
+   "y": 200,
+   "w": 230,
+   "kind": "plain",
+   "title": "Epithelial lineage likely",
+   "lines": [
+    "Cancer more likely after menopause"
+   ]
+  },
+  {
+   "id": "I",
+   "x": 660,
+   "y": 200,
+   "w": 285,
+   "kind": "ok",
+   "title": "Granulosa cell tumour",
+   "lines": [
+    "~abnormal uterine bleeding, endometrial hyperplasia / cancer"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 350,
+   "y": 340,
+   "w": 220,
+   "h": 48,
+   "kind": "plain",
+   "title": "Bilateral, multi-nodular?",
+   "lines": []
+  },
+  {
+   "id": "F",
+   "x": 15,
+   "y": 450,
+   "w": 340,
+   "kind": "bad",
+   "title": "Think METASTASIS",
+   "lines": [
+    "gastrointestinal (appendix, stomach, colon), pancreatobiliary, breast, endometrium"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 600,
+   "y": 450,
+   "w": 360,
+   "kind": "ok",
+   "title": "Primary epithelial tumour",
+   "lines": [
+    "Behaviour set by invasion: benign / borderline / carcinoma"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "A",
+   "to": "H",
+   "from_side": "right",
+   "to_side": "top"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "from_side": "left",
+   "to_side": "top",
+   "label": "Young (0-25)",
+   "label_at": [
+    330,
+    114
+   ]
+  },
+  {
+   "from": "B",
+   "to": "D",
+   "label": "Adult / post-menopausal",
+   "label_at": [
+    546,
+    176
+   ]
+  },
+  {
+   "from": "H",
+   "to": "I",
+   "label": "Estrogenic",
+   "label_at": [
+    848,
+    176
+   ]
+  },
+  {
+   "from": "D",
+   "to": "E"
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "from_side": "left",
+   "to_side": "top",
+   "label": "Yes",
+   "label_at": [
+    318,
+    356
+   ]
+  },
+  {
+   "from": "E",
+   "to": "G",
+   "from_side": "right",
+   "to_side": "top",
+   "label": "No",
+   "label_at": [
+    600,
+    356
+   ]
+  }
+ ]
+}

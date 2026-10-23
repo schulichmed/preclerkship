@@ -1,0 +1,865 @@
+{
+ "name": "pelvic mass overview",
+ "width": 1728,
+ "title": "Ovarian mass: age predicts the lineage (germ cell in the young, epithelial in adults, sex cord/stromal at any age, or a metastasis); each column gives the clues, how the diagnosis is made and whether it is benign, borderline or malignant with its treatment",
+ "kinds": {
+  "mct_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mct_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "mct_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "gct_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gct_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "gct_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ben_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ben_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ben_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "bdl_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "bdl_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "bdl_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ca_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ca_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ca_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "gra_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gra_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "gra_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "met_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "met_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "met_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 498,
+   "w": 226,
+   "h": 714,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 268,
+   "y": 498,
+   "w": 226,
+   "h": 714,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 524,
+   "y": 498,
+   "w": 226,
+   "h": 714,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 752,
+   "y": 498,
+   "w": 226,
+   "h": 714,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 980,
+   "y": 498,
+   "w": 226,
+   "h": 714,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1236,
+   "y": 498,
+   "w": 226,
+   "h": 714,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1492,
+   "y": 498,
+   "w": 226,
+   "h": 714,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 312,
+   "h": 114,
+   "text": "MARKERS"
+  },
+  {
+   "x": 23,
+   "y": 642,
+   "h": 134,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 816,
+   "h": 114,
+   "text": "DIAGNOSIS"
+  },
+  {
+   "x": 23,
+   "y": 970,
+   "h": 234,
+   "text": "BEHAVIOUR + TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 499,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Ovarian mass: how OLD is she, and is it benign or malignant?",
+   "lines": [
+    "MOST are NOT malignant · cancer is more likely POST-MENOPAUSAL",
+    "pain (rupture, torsion) · distension (ascites, mass) · bladder or bowel change · weight loss · estrogen or androgen signs · or nothing until late"
+   ]
+  },
+  {
+   "id": "g_young",
+   "x": 45,
+   "y": 156,
+   "w": 444,
+   "h": 116,
+   "kind": "plain",
+   "title": "YOUNG: GERM CELL commonest",
+   "lines": [
+    "from the oocyte"
+   ]
+  },
+  {
+   "id": "g_epi",
+   "x": 529,
+   "y": 156,
+   "w": 672,
+   "h": 116,
+   "kind": "plain",
+   "title": "ADULT: EPITHELIAL commonest",
+   "lines": [
+    "serous the commonest subtype, then mucinous",
+    "STROMAL INVASION separates carcinoma from borderline"
+   ]
+  },
+  {
+   "id": "g_sc",
+   "x": 1241,
+   "y": 156,
+   "w": 216,
+   "h": 116,
+   "kind": "plain",
+   "title": "ANY AGE: SEX CORD / STROMAL",
+   "lines": [
+    "FIBROMA: common, BENIGN, firm white nodular mass, often found at surgery"
+   ]
+  },
+  {
+   "id": "g_met",
+   "x": 1497,
+   "y": 156,
+   "w": 216,
+   "h": 116,
+   "kind": "plain",
+   "title": "METASTASIS",
+   "lines": [
+    "from the GI tract, pancreas, biliary tract, breast, endometrium"
+   ]
+  },
+  {
+   "id": "p_young",
+   "x": 45,
+   "y": 312,
+   "w": 444,
+   "h": 114,
+   "kind": "info",
+   "title": "Young woman + ovarian mass: send SERUM MARKERS",
+   "lines": [
+    "• alpha-fetoprotein (α-FP)",
+    "• lactate dehydrogenase (LDH)",
+    "• beta-hCG (β-hCG)",
+    "• they aid the diagnosis AND post-op monitoring"
+   ]
+  },
+  {
+   "id": "mct_head_0_0",
+   "x": 45,
+   "y": 506,
+   "w": 216,
+   "h": 96,
+   "kind": "mct_h",
+   "title": "Mature cystic teratoma",
+   "lines": [
+    "'DERMOID CYST'",
+    "the commonest BENIGN germ cell tumour"
+   ]
+  },
+  {
+   "id": "gct_head_0_0",
+   "x": 273,
+   "y": 506,
+   "w": 216,
+   "h": 96,
+   "kind": "gct_h",
+   "title": "Malignant germ cell",
+   "lines": [
+    "dysgerminoma · yolk sac · choriocarcinoma · immature teratoma · embryonal"
+   ]
+  },
+  {
+   "id": "ben_head_0_0",
+   "x": 529,
+   "y": 506,
+   "w": 216,
+   "h": 96,
+   "kind": "ben_h",
+   "title": "Cystadenoma",
+   "lines": [
+    "serous or mucinous"
+   ]
+  },
+  {
+   "id": "bdl_head_0_0",
+   "x": 757,
+   "y": 506,
+   "w": 216,
+   "h": 96,
+   "kind": "bdl_h",
+   "title": "Borderline tumour",
+   "lines": [
+    "serous or mucinous"
+   ]
+  },
+  {
+   "id": "ca_head_0_0",
+   "x": 985,
+   "y": 506,
+   "w": 216,
+   "h": 96,
+   "kind": "ca_h",
+   "title": "Epithelial carcinoma",
+   "lines": [
+    "SEROUS = the #1 'ovarian cancer'"
+   ]
+  },
+  {
+   "id": "gra_head_0_0",
+   "x": 1241,
+   "y": 506,
+   "w": 216,
+   "h": 96,
+   "kind": "gra_h",
+   "title": "Granulosa cell tumour",
+   "lines": [
+    "uncommon · MALIGNANT"
+   ]
+  },
+  {
+   "id": "met_head_0_0",
+   "x": 1497,
+   "y": 506,
+   "w": 216,
+   "h": 96,
+   "kind": "met_h",
+   "title": "Metastasis to the ovary",
+   "lines": [
+    "BILATERAL, multi-nodular"
+   ]
+  },
+  {
+   "id": "mct_clue_0_0",
+   "x": 45,
+   "y": 642,
+   "w": 216,
+   "h": 134,
+   "kind": "mct_t",
+   "title": "Pain for months",
+   "lines": [
+    "a UNILATERAL mass on pelvic exam"
+   ]
+  },
+  {
+   "id": "gct_clue_0_0",
+   "x": 273,
+   "y": 642,
+   "w": 216,
+   "h": 134,
+   "kind": "gct_t",
+   "title": "A serum marker RAISED",
+   "lines": []
+  },
+  {
+   "id": "ben_clue_0_0",
+   "x": 529,
+   "y": 642,
+   "w": 216,
+   "h": 134,
+   "kind": "ben_t",
+   "title": "Girth ↑, vague pain, unwell",
+   "lines": [
+    "mucinous can be HUGE"
+   ]
+  },
+  {
+   "id": "bdl_clue_0_0",
+   "x": 757,
+   "y": 642,
+   "w": 216,
+   "h": 134,
+   "kind": "bdl_t",
+   "title": "Pain + ovarian mass",
+   "lines": []
+  },
+  {
+   "id": "ca_clue_0_0",
+   "x": 985,
+   "y": 642,
+   "w": 216,
+   "h": 134,
+   "kind": "ca_t",
+   "title": "ADVANCED at presentation",
+   "lines": [
+    "• post-menopausal (younger if familial)",
+    "• often BILATERAL (not mucinous)"
+   ]
+  },
+  {
+   "id": "gra_clue_0_0",
+   "x": 1241,
+   "y": 642,
+   "w": 216,
+   "h": 134,
+   "kind": "gra_t",
+   "title": "ESTROGENIC",
+   "lines": [
+    "• vaginal bleeding",
+    "• atypical hyperplasia on endometrial biopsy"
+   ]
+  },
+  {
+   "id": "met_clue_0_0",
+   "x": 1497,
+   "y": 642,
+   "w": 216,
+   "h": 134,
+   "kind": "met_t",
+   "title": "Distension + ASCITES",
+   "lines": [
+    "bilateral nodular masses"
+   ]
+  },
+  {
+   "id": "mct_inv_0_0",
+   "x": 45,
+   "y": 816,
+   "w": 216,
+   "h": 114,
+   "kind": "mct_w",
+   "title": "Removed: MATURE tissues",
+   "lines": [
+    "hair, teeth, skin, cartilage"
+   ]
+  },
+  {
+   "id": "gct_inv_0_0",
+   "x": 273,
+   "y": 816,
+   "w": 216,
+   "h": 114,
+   "kind": "gct_t",
+   "title": "The marker that is +++",
+   "lines": [
+    "• α-FP → YOLK SAC tumour",
+    "• LDH → DYSGERMINOMA",
+    "• β-hCG → CHORIOCARCINOMA"
+   ]
+  },
+  {
+   "id": "ben_inv_0_0",
+   "x": 529,
+   "y": 816,
+   "w": 216,
+   "h": 114,
+   "kind": "ben_w",
+   "title": "Imaging: ovarian mass",
+   "lines": [
+    "pathology: NO invasion"
+   ]
+  },
+  {
+   "id": "bdl_inv_0_0",
+   "x": 757,
+   "y": 816,
+   "w": 216,
+   "h": 114,
+   "kind": "bdl_w",
+   "title": "Atypia, complex architecture",
+   "lines": [
+    "but NO frank invasion"
+   ]
+  },
+  {
+   "id": "ca_inv_0_0",
+   "x": 985,
+   "y": 816,
+   "w": 216,
+   "h": 114,
+   "kind": "ca_t",
+   "title": "STROMAL INVASION",
+   "lines": [
+    "spreads over the peritoneum, omentum, nodes"
+   ]
+  },
+  {
+   "id": "gra_inv_0_0",
+   "x": 1241,
+   "y": 816,
+   "w": 216,
+   "h": 114,
+   "kind": "gra_w",
+   "title": "Adnexal mass on imaging",
+   "lines": [
+    "the uterus may hold a carcinoma: see the ABNORMAL BLEEDING chart"
+   ]
+  },
+  {
+   "id": "met_inv_0_0",
+   "x": 1497,
+   "y": 816,
+   "w": 216,
+   "h": 114,
+   "kind": "met_w",
+   "title": "Two classic patterns",
+   "lines": [
+    "• Krukenberg: signet ring, from the STOMACH",
+    "• 'jelly belly': from the APPENDIX"
+   ]
+  },
+  {
+   "id": "mct_tx_0_0",
+   "x": 45,
+   "y": 970,
+   "w": 216,
+   "h": 234,
+   "kind": "ok",
+   "title": "BENIGN",
+   "lines": []
+  },
+  {
+   "id": "gct_tx_0_0",
+   "x": 273,
+   "y": 970,
+   "w": 216,
+   "h": 234,
+   "kind": "bad",
+   "title": "MALIGNANT",
+   "lines": [
+    "follow the same marker after surgery"
+   ]
+  },
+  {
+   "id": "ben_tx_0_0",
+   "x": 529,
+   "y": 970,
+   "w": 216,
+   "h": 234,
+   "kind": "ok",
+   "title": "BENIGN",
+   "lines": [
+    "resected"
+   ]
+  },
+  {
+   "id": "bdl_tx_0_0",
+   "x": 757,
+   "y": 970,
+   "w": 216,
+   "h": 79,
+   "kind": "ok",
+   "title": "1 · Surgical excision",
+   "lines": [
+    "most: very good prognosis"
+   ]
+  },
+  {
+   "id": "bdl_tx_1_0",
+   "x": 757,
+   "y": 1071,
+   "w": 216,
+   "h": 133,
+   "kind": "warn",
+   "title": "Watch for",
+   "lines": [
+    "• implants (serous only)",
+    "• recurrence",
+    "• progression to LOW-GRADE carcinoma"
+   ]
+  },
+  {
+   "id": "ca_tx_0_0",
+   "x": 985,
+   "y": 970,
+   "w": 216,
+   "h": 114,
+   "kind": "ok",
+   "title": "1 · SURGERY first",
+   "lines": [
+    "• uterus, tubes, ovaries",
+    "• omentum",
+    "• peritoneal biopsies",
+    "• ± lymph nodes"
+   ]
+  },
+  {
+   "id": "ca_tx_1_0",
+   "x": 985,
+   "y": 1106,
+   "w": 216,
+   "h": 98,
+   "kind": "warn",
+   "title": "2 · Chemotherapy: advanced stage",
+   "lines": [
+    "• confined = good",
+    "• higher stage = poor"
+   ]
+  },
+  {
+   "id": "gra_tx_0_0",
+   "x": 1241,
+   "y": 970,
+   "w": 216,
+   "h": 89,
+   "kind": "ok",
+   "title": "Hysterectomy + both tubes and ovaries",
+   "lines": []
+  },
+  {
+   "id": "gra_tx_1_0",
+   "x": 1241,
+   "y": 1081,
+   "w": 216,
+   "h": 123,
+   "kind": "bad",
+   "title": "Slow, but",
+   "lines": [
+    "• recurs LATE (> 10 years)",
+    "• may RUPTURE → hemoperitoneum"
+   ]
+  },
+  {
+   "id": "met_tx_0_0",
+   "x": 1497,
+   "y": 970,
+   "w": 216,
+   "h": 234,
+   "kind": "bad",
+   "title": "Bilateral atypical MUCINOUS tumour",
+   "lines": [
+    "CHECK THAT APPENDIX"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_young",
+   "path": "M879.0 106V131H267.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_epi",
+   "path": "M879.0 106V131H865.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_sc",
+   "path": "M879.0 106V131H1349.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_met",
+   "path": "M879.0 106V131H1605.0V156"
+  },
+  {
+   "from": "g_young",
+   "to": "p_young"
+  },
+  {
+   "from": "bdl_tx_0_0",
+   "to": "bdl_tx_1_0"
+  },
+  {
+   "from": "ca_tx_0_0",
+   "to": "ca_tx_1_0"
+  },
+  {
+   "from": "gra_tx_0_0",
+   "to": "gra_tx_1_0"
+  },
+  {
+   "from": "mct_head_0_0",
+   "to": "mct_clue_0_0"
+  },
+  {
+   "from": "mct_clue_0_0",
+   "to": "mct_inv_0_0"
+  },
+  {
+   "from": "mct_inv_0_0",
+   "to": "mct_tx_0_0"
+  },
+  {
+   "from": "p_young",
+   "to": "mct_head_0_0",
+   "from_dx": -114,
+   "label": "benign",
+   "label_at": [
+    153.0,
+    466
+   ]
+  },
+  {
+   "from": "gct_head_0_0",
+   "to": "gct_clue_0_0"
+  },
+  {
+   "from": "gct_clue_0_0",
+   "to": "gct_inv_0_0"
+  },
+  {
+   "from": "gct_inv_0_0",
+   "to": "gct_tx_0_0"
+  },
+  {
+   "from": "p_young",
+   "to": "gct_head_0_0",
+   "from_dx": 114,
+   "label": "malignant",
+   "label_at": [
+    381.0,
+    466
+   ]
+  },
+  {
+   "from": "ben_head_0_0",
+   "to": "ben_clue_0_0"
+  },
+  {
+   "from": "ben_clue_0_0",
+   "to": "ben_inv_0_0"
+  },
+  {
+   "from": "ben_inv_0_0",
+   "to": "ben_tx_0_0"
+  },
+  {
+   "from": "g_epi",
+   "to": "ben_head_0_0",
+   "from_dx": -228,
+   "label": "benign",
+   "label_at": [
+    637.0,
+    466
+   ]
+  },
+  {
+   "from": "bdl_head_0_0",
+   "to": "bdl_clue_0_0"
+  },
+  {
+   "from": "bdl_clue_0_0",
+   "to": "bdl_inv_0_0"
+  },
+  {
+   "from": "bdl_inv_0_0",
+   "to": "bdl_tx_0_0"
+  },
+  {
+   "from": "g_epi",
+   "to": "bdl_head_0_0",
+   "from_dx": 0,
+   "label": "pre-cancerous",
+   "label_at": [
+    865.0,
+    466
+   ]
+  },
+  {
+   "from": "ca_head_0_0",
+   "to": "ca_clue_0_0"
+  },
+  {
+   "from": "ca_clue_0_0",
+   "to": "ca_inv_0_0"
+  },
+  {
+   "from": "ca_inv_0_0",
+   "to": "ca_tx_0_0"
+  },
+  {
+   "from": "g_epi",
+   "to": "ca_head_0_0",
+   "from_dx": 228,
+   "label": "malignant",
+   "label_at": [
+    1093.0,
+    466
+   ]
+  },
+  {
+   "from": "gra_head_0_0",
+   "to": "gra_clue_0_0"
+  },
+  {
+   "from": "gra_clue_0_0",
+   "to": "gra_inv_0_0"
+  },
+  {
+   "from": "gra_inv_0_0",
+   "to": "gra_tx_0_0"
+  },
+  {
+   "from": "g_sc",
+   "to": "gra_head_0_0",
+   "from_dx": 0,
+   "label": "estrogenic",
+   "label_at": [
+    1349.0,
+    466
+   ]
+  },
+  {
+   "from": "met_head_0_0",
+   "to": "met_clue_0_0"
+  },
+  {
+   "from": "met_clue_0_0",
+   "to": "met_inv_0_0"
+  },
+  {
+   "from": "met_inv_0_0",
+   "to": "met_tx_0_0"
+  },
+  {
+   "from": "g_met",
+   "to": "met_head_0_0",
+   "from_dx": 0,
+   "label": "bilateral, nodular",
+   "label_at": [
+    1605.0,
+    466
+   ]
+  }
+ ],
+ "panels": []
+}

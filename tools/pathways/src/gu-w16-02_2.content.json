@@ -1,0 +1,306 @@
+{
+ "name": "urinary tract obstruction overview",
+ "title": "Urinary tract obstruction decision chart: an upper-tract block from a stone (renal colic) sorted by fever and stone size into an infected obstructing stone needing urgent drainage, a small stone likely to pass, or a large or failing stone needing lithotripsy or nephrolithotomy; a lower-tract block (urinary retention at the bladder outlet) relieved by catheter with watch for post-obstructive diuresis; plus how to prevent the next stone",
+ "col_w": 240,
+ "root": {
+  "title": "Urine flow BLOCKED: WHERE, and how BAD?",
+  "lines": [
+   "hydronephrosis (dilated pelvis + calyces) on ultrasound or computed tomography (CT) · it can occur WITHOUT a block (reflux)",
+   "worse if: COMPLETE · BOTH sides · INFECTED (speeds nephron loss) · > 6 WEEKS complete = function lost for good"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_up",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "UPPER tract, one side: RENAL COLIC from a stone",
+   "lines": [
+    "severe one-sided flank pain in WAVES → groin, scrotum or labia · hematuria · vomiting",
+    "1 · CT (most sensitive) · ultrasound sees every stone · plain x-ray MISSES uric acid stones",
+    "~also think: aortic aneurysm, pyelonephritis, a mass, musculoskeletal"
+   ]
+  },
+  {
+   "id": "g_lo",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "LOWER tract: the BLADDER OUTLET",
+   "lines": [
+    "both kidneys back up"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_up",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "2 · FEVER? Then the stone's SIZE",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "tx",
+  "next"
+ ],
+ "row_names": {
+  "clue": "CLUES",
+  "tx": "TREATMENT",
+  "next": "AFTERWARDS"
+ },
+ "columns": [
+  {
+   "id": "inf",
+   "colour": "magenta",
+   "drop_from": "t_up",
+   "drop_label": "FEVER",
+   "head": [
+    [
+     [
+      "h",
+      "Obstructing stone + FEVER",
+      [
+       "SURGICAL EMERGENCY"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Infection BEHIND the block",
+      [
+       "• sepsis can come on FAST",
+       "• antibiotics can't work until it drains"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "1 · DRAIN the kidney now",
+      [
+       "ureteric stent or nephrostomy tube"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · IV antibiotics",
+      [
+       "effective once it drains"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sm",
+   "colour": "teal",
+   "drop_from": "t_up",
+   "drop_label": "small · pain controlled",
+   "head": [
+    [
+     [
+      "h",
+      "Stone likely to PASS",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Passes on its own",
+      [
+       "• < 4 mm: 90%",
+       "• 4–8 mm: 50%"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Analgesia",
+      [
+       "anti-inflammatory (ketorolac) or a short opioid course"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · More fluids",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · Tamsulosin (alpha blocker)",
+      [
+       "relaxes the ureter: medical expulsive therapy"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "lg",
+   "colour": "orange",
+   "drop_from": "t_up",
+   "drop_label": "> 8 mm or failing",
+   "head": [
+    [
+     [
+      "h",
+      "Stone to REMOVE",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Surgery if",
+      [
+       "• > 8 mm: < 10% pass",
+       "• pain despite analgesia",
+       "• renal failure: solitary kidney, poor function",
+       "• job: pilot, bus driver"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "By SIZE and SITE",
+      [
+       "• > 2 cm: percutaneous nephrolithotomy",
+       "• ≤ 2 cm: shock wave lithotripsy",
+       "• in the URETER: ureteroscopic laser lithotripsy"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ret",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "Urinary retention",
+      [
+       "can't void"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Causes",
+      [
+       "• MEN: benign prostatic hyperplasia (most)",
+       "• prostate cancer, urethral stricture",
+       "• neurogenic"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Check K + acid",
+      [
+       "urine can't be concentrated → K ↑, metabolic acidosis"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · URETHRAL CATHETER first",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Watch: POST-OBSTRUCTIVE DIURESIS",
+      [
+       "• Na + water lost after BOTH sides are relieved",
+       "• usually mild · can be life-threatening"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "The prostate",
+      [
+       "see the BENIGN PROSTATIC HYPERPLASIA chart"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "spans": [
+  {
+   "section": "next",
+   "cols": [
+    0,
+    2
+   ],
+   "rows": [
+    [
+     [
+      "ok",
+      "PREVENT the next stone: everyone",
+      [
+       "• drink MORE",
+       "• keep NORMAL dietary calcium: low calcium ↑ oxalate",
+       "• less salt + protein, more fruit + vegetables"
+      ]
+     ],
+     [
+      "info",
+      "FIND a cause, then treat it",
+      [
+       "• hyperparathyroidism → treat the cause",
+       "• malabsorption → more calcium, less oxalate",
+       "• renal tubular acidosis → potassium citrate",
+       "• topiramate → stop it"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,692 @@
+{
+ "name": "choosing antibiotics overview",
+ "width": 1442,
+ "title": "Choosing antibiotics decision chart: name the syndrome (skin and soft tissue with or without MRSA risk, urinary tract, intra-abdominal, community-acquired pneumonia), the bugs it targets, the empiric drug to choose (oral if stable, IV if septic or deep) and what to avoid, then narrow on culture results",
+ "kinds": {
+  "s1_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "s1_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "s1_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "s2_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "s2_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "s2_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ut_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ut_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ut_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ia_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ia_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ia_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cp_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cp_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "cp_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 328,
+   "w": 260,
+   "h": 758,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 302,
+   "y": 328,
+   "w": 260,
+   "h": 758,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 592,
+   "y": 328,
+   "w": 260,
+   "h": 758,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 882,
+   "y": 328,
+   "w": 260,
+   "h": 758,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1172,
+   "y": 328,
+   "w": 260,
+   "h": 758,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 490,
+   "h": 114,
+   "text": "TARGET BUGS"
+  },
+  {
+   "x": 23,
+   "y": 644,
+   "h": 234,
+   "text": "CHOOSE"
+  },
+  {
+   "x": 23,
+   "y": 918,
+   "h": 160,
+   "text": "AVOID"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 356,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Choosing an antibiotic: which SYNDROME → which BUGS → the NARROWEST empiric drug → narrow again when cultures return",
+   "lines": [
+    "only for BACTERIA: not fever alone, not viruses",
+    "WHEN: sepsis IMMEDIATELY · stable subacute (osteomyelitis) can wait · mild infection in a healthy patient: none",
+    "the patient changes it: site, age, kidneys, allergies, immune status, pregnancy (β-lactams SAFEST) · check interactions",
+    "PENICILLIN allergy reported? assess it first (ALLERGY chart): going broad ↑ C. difficile, methicillin-resistant S. aureus (MRSA)"
+   ]
+  },
+  {
+   "id": "g_ss",
+   "x": 45,
+   "y": 194,
+   "w": 512,
+   "h": 62,
+   "kind": "plain",
+   "title": "SKIN + SOFT TISSUE (SSTI): any MRSA risk?",
+   "lines": [
+    "stable → oral · sepsis or deep-seated → IV"
+   ]
+  },
+  {
+   "id": "g_ut",
+   "x": 597,
+   "y": 194,
+   "w": 250,
+   "h": 62,
+   "kind": "plain",
+   "title": "URINARY TRACT (UTI)",
+   "lines": []
+  },
+  {
+   "id": "g_ia",
+   "x": 887,
+   "y": 194,
+   "w": 250,
+   "h": 62,
+   "kind": "plain",
+   "title": "INTRA-ABDOMINAL",
+   "lines": []
+  },
+  {
+   "id": "g_cp",
+   "x": 1177,
+   "y": 194,
+   "w": 250,
+   "h": 62,
+   "kind": "plain",
+   "title": "PNEUMONIA (community-acquired)",
+   "lines": []
+  },
+  {
+   "id": "s1_head_0_0",
+   "x": 45,
+   "y": 336,
+   "w": 250,
+   "h": 114,
+   "kind": "s1_h",
+   "title": "SSTI, no MRSA risk",
+   "lines": [
+    "needs an ANTI-STAPHYLOCOCCAL drug",
+    "cephalexin, cefazolin = 1st-gen cephalosporins"
+   ]
+  },
+  {
+   "id": "s2_head_0_0",
+   "x": 307,
+   "y": 336,
+   "w": 250,
+   "h": 114,
+   "kind": "s2_h",
+   "title": "SSTI, MRSA risk",
+   "lines": [
+    "β-lactams FAIL (see the RESISTANCE chart)",
+    "TMP-SMX = trimethoprim-sulfamethoxazole"
+   ]
+  },
+  {
+   "id": "ut_head_0_0",
+   "x": 597,
+   "y": 336,
+   "w": 250,
+   "h": 114,
+   "kind": "ut_h",
+   "title": "UTI",
+   "lines": [
+    "Gram-negative mostly"
+   ]
+  },
+  {
+   "id": "ia_head_0_0",
+   "x": 887,
+   "y": 336,
+   "w": 250,
+   "h": 114,
+   "kind": "ia_h",
+   "title": "Intra-abdominal",
+   "lines": [
+    "mixed gut flora"
+   ]
+  },
+  {
+   "id": "cp_head_0_0",
+   "x": 1177,
+   "y": 336,
+   "w": 250,
+   "h": 114,
+   "kind": "cp_h",
+   "title": "Community-acquired pneumonia",
+   "lines": [
+    "typical + ATYPICAL bugs"
+   ]
+  },
+  {
+   "id": "s1_bugs_0_0",
+   "x": 45,
+   "y": 490,
+   "w": 250,
+   "h": 114,
+   "kind": "s1_t",
+   "title": "Gram-positive cocci",
+   "lines": [
+    "• Streptococcus pyogenes",
+    "• Staphylococcus aureus"
+   ]
+  },
+  {
+   "id": "s2_bugs_0_0",
+   "x": 307,
+   "y": 490,
+   "w": 250,
+   "h": 114,
+   "kind": "s2_t",
+   "title": "Same bugs + MRSA",
+   "lines": [
+    "• S. pyogenes",
+    "• MRSA"
+   ]
+  },
+  {
+   "id": "ut_bugs_0_0",
+   "x": 597,
+   "y": 490,
+   "w": 250,
+   "h": 114,
+   "kind": "ut_t",
+   "title": "KEEPS",
+   "lines": [
+    "• Klebsiella, E. coli, Enterococcus",
+    "• Proteus, S. saprophyticus"
+   ]
+  },
+  {
+   "id": "ia_bugs_0_0",
+   "x": 887,
+   "y": 490,
+   "w": 250,
+   "h": 114,
+   "kind": "ia_t",
+   "title": "Gram-negatives + ANAEROBES",
+   "lines": [
+    "• + Enterococcus, S. anginosus",
+    "• yeast: Candida"
+   ]
+  },
+  {
+   "id": "cp_bugs_0_0",
+   "x": 1177,
+   "y": 490,
+   "w": 250,
+   "h": 114,
+   "kind": "cp_t",
+   "title": "Cover both",
+   "lines": [
+    "• S. pneumoniae, S. aureus, H. influenzae, Moraxella",
+    "• atypical: Mycoplasma, Legionella, Chlamydia"
+   ]
+  },
+  {
+   "id": "s1_pick_0_0",
+   "x": 45.0,
+   "y": 644,
+   "w": 120.0,
+   "h": 234,
+   "kind": "ok",
+   "title": "STABLE: oral",
+   "lines": [
+    "• cephalexin",
+    "• cloxacillin",
+    "• clindamycin"
+   ]
+  },
+  {
+   "id": "s1_pick_0_1",
+   "x": 175.0,
+   "y": 644,
+   "w": 120.0,
+   "h": 234,
+   "kind": "ok",
+   "title": "SEPSIS / deep: IV",
+   "lines": [
+    "• cefazolin",
+    "• cloxacillin"
+   ]
+  },
+  {
+   "id": "s2_pick_0_0",
+   "x": 307.0,
+   "y": 644,
+   "w": 120.0,
+   "h": 234,
+   "kind": "ok",
+   "title": "STABLE: oral",
+   "lines": [
+    "• TMP-SMX",
+    "• doxycycline",
+    "• clindamycin",
+    "• linezolid ($$)"
+   ]
+  },
+  {
+   "id": "s2_pick_0_1",
+   "x": 437.0,
+   "y": 644,
+   "w": 120.0,
+   "h": 234,
+   "kind": "ok",
+   "title": "SEPSIS / deep: IV",
+   "lines": [
+    "• vancomycin",
+    "• daptomycin",
+    "• linezolid"
+   ]
+  },
+  {
+   "id": "ut_pick_0_0",
+   "x": 597,
+   "y": 644,
+   "w": 250,
+   "h": 234,
+   "kind": "ok",
+   "title": "Oral options",
+   "lines": [
+    "• amoxicillin",
+    "• TMP-SMX (Septra)",
+    "• nitrofurantoin (Macrobid)"
+   ]
+  },
+  {
+   "id": "ia_pick_0_0",
+   "x": 887,
+   "y": 644,
+   "w": 250,
+   "h": 116,
+   "kind": "ok",
+   "title": "1 · Aerobic drug + METRONIDAZOLE",
+   "lines": [
+    "• ceftriaxone + metronidazole",
+    "• gentamicin / tobramycin + metronidazole"
+   ]
+  },
+  {
+   "id": "ia_pick_1_0",
+   "x": 887,
+   "y": 782,
+   "w": 250,
+   "h": 96,
+   "kind": "warn",
+   "title": "2 · Broader",
+   "lines": [
+    "• piperacillin-tazobactam",
+    "• carbapenem: ONLY if life-threatening or multidrug-resistant"
+   ]
+  },
+  {
+   "id": "cp_pick_0_0",
+   "x": 1177,
+   "y": 644,
+   "w": 250,
+   "h": 115,
+   "kind": "ok",
+   "title": "Admitted: CEFTRIAXONE + AZITHROMYCIN",
+   "lines": [
+    "β-lactam for typicals · macrolide for atypicals"
+   ]
+  },
+  {
+   "id": "cp_pick_1_0",
+   "x": 1177,
+   "y": 781,
+   "w": 250,
+   "h": 97,
+   "kind": "ok",
+   "title": "S. pneumoniae proven: PENICILLIN",
+   "lines": [
+    "narrower"
+   ]
+  },
+  {
+   "id": "s1_avoid_0_0",
+   "x": 45,
+   "y": 918,
+   "w": 250,
+   "h": 160,
+   "kind": "bad",
+   "title": "Plain penicillin, amoxicillin",
+   "lines": [
+    "miss S. aureus: only the anti-staph penicillins cover it"
+   ]
+  },
+  {
+   "id": "s2_avoid_0_0",
+   "x": 307,
+   "y": 918,
+   "w": 250,
+   "h": 160,
+   "kind": "warn",
+   "title": "Vancomycin is NEPHROTOXIC",
+   "lines": [
+    "covers MRSA, only weakly bactericidal"
+   ]
+  },
+  {
+   "id": "ut_avoid_0_0",
+   "x": 597,
+   "y": 918,
+   "w": 250,
+   "h": 160,
+   "kind": "bad",
+   "title": "Ciprofloxacin only if nothing else",
+   "lines": [
+    "• C. difficile, tendon rupture, aortic aneurysm, delirium",
+    "• moxifloxacin is NOT in urine: never for UTI"
+   ]
+  },
+  {
+   "id": "ia_avoid_0_0",
+   "x": 887,
+   "y": 918,
+   "w": 250,
+   "h": 60,
+   "kind": "bad",
+   "title": "Metronidazole ALONE",
+   "lines": [
+    "anaerobes only: always pair it"
+   ]
+  },
+  {
+   "id": "ia_avoid_1_0",
+   "x": 887,
+   "y": 1000,
+   "w": 250,
+   "h": 78,
+   "kind": "warn",
+   "title": "Aminoglycosides",
+   "lines": [
+    "• kidney + ear toxic",
+    "• no Gram-positive or anaerobe cover"
+   ]
+  },
+  {
+   "id": "cp_avoid_0_0",
+   "x": 1177,
+   "y": 918,
+   "w": 250,
+   "h": 160,
+   "kind": "warn",
+   "title": "Levo- / moxifloxacin",
+   "lines": [
+    "respiratory quinolones: only if no other option"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ss",
+   "path": "M736.0 144V169H301.0V194"
+  },
+  {
+   "from": "root",
+   "to": "g_ut",
+   "path": "M736.0 144V169H722.0V194"
+  },
+  {
+   "from": "root",
+   "to": "g_ia",
+   "path": "M736.0 144V169H1012.0V194"
+  },
+  {
+   "from": "root",
+   "to": "g_cp",
+   "path": "M736.0 144V169H1302.0V194"
+  },
+  {
+   "from": "ia_pick_0_0",
+   "to": "ia_pick_1_0"
+  },
+  {
+   "from": "cp_pick_0_0",
+   "to": "cp_pick_1_0"
+  },
+  {
+   "from": "ia_avoid_0_0",
+   "to": "ia_avoid_1_0"
+  },
+  {
+   "from": "s1_head_0_0",
+   "to": "s1_bugs_0_0"
+  },
+  {
+   "from": "s1_bugs_0_0",
+   "to": "s1_pick_0_0",
+   "from_dx": -65.0
+  },
+  {
+   "from": "s1_bugs_0_0",
+   "to": "s1_pick_0_1",
+   "from_dx": 65.0
+  },
+  {
+   "from": "s1_pick_0_0",
+   "to": "s1_avoid_0_0",
+   "to_dx": -65.0
+  },
+  {
+   "from": "s1_pick_0_1",
+   "to": "s1_avoid_0_0",
+   "to_dx": 65.0
+  },
+  {
+   "from": "g_ss",
+   "to": "s1_head_0_0",
+   "from_dx": -131,
+   "label": "NO MRSA risk",
+   "label_at": [
+    170.0,
+    296
+   ]
+  },
+  {
+   "from": "s2_head_0_0",
+   "to": "s2_bugs_0_0"
+  },
+  {
+   "from": "s2_bugs_0_0",
+   "to": "s2_pick_0_0",
+   "from_dx": -65.0
+  },
+  {
+   "from": "s2_bugs_0_0",
+   "to": "s2_pick_0_1",
+   "from_dx": 65.0
+  },
+  {
+   "from": "s2_pick_0_0",
+   "to": "s2_avoid_0_0",
+   "to_dx": -65.0
+  },
+  {
+   "from": "s2_pick_0_1",
+   "to": "s2_avoid_0_0",
+   "to_dx": 65.0
+  },
+  {
+   "from": "g_ss",
+   "to": "s2_head_0_0",
+   "from_dx": 131,
+   "label": "MRSA risk",
+   "label_at": [
+    432.0,
+    296
+   ]
+  },
+  {
+   "from": "ut_head_0_0",
+   "to": "ut_bugs_0_0"
+  },
+  {
+   "from": "ut_bugs_0_0",
+   "to": "ut_pick_0_0"
+  },
+  {
+   "from": "ut_pick_0_0",
+   "to": "ut_avoid_0_0"
+  },
+  {
+   "from": "g_ut",
+   "to": "ut_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ia_head_0_0",
+   "to": "ia_bugs_0_0"
+  },
+  {
+   "from": "ia_bugs_0_0",
+   "to": "ia_pick_0_0"
+  },
+  {
+   "from": "ia_pick_1_0",
+   "to": "ia_avoid_0_0"
+  },
+  {
+   "from": "g_ia",
+   "to": "ia_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "cp_head_0_0",
+   "to": "cp_bugs_0_0"
+  },
+  {
+   "from": "cp_bugs_0_0",
+   "to": "cp_pick_0_0"
+  },
+  {
+   "from": "cp_pick_1_0",
+   "to": "cp_avoid_0_0"
+  },
+  {
+   "from": "g_cp",
+   "to": "cp_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

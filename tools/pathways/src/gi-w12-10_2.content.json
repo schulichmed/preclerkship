@@ -1,0 +1,561 @@
+{
+ "name": "jaundice overview",
+ "title": "Jaundice sorted by where bilirubin is held up: pre-hepatic hemolysis, hepatic problems of conjugation (Gilbert, Crigler-Najjar, newborn jaundice), excretion (Dubin-Johnson, Rotor) or intrahepatic cholestasis, and post-hepatic obstruction or biliary atresia; urine bilirubin and the reticulocyte count make the first splits, then ultrasound, MRCP, ERCP or PTC image and relieve an obstruction",
+ "col_w": 214,
+ "root": {
+  "title": "Jaundice: is the bilirubin held up BEFORE, IN or AFTER the liver?",
+  "lines": [
+   "bilirubin > 17.1 μmol/L = hyperbilirubinemia · > 51.3 = visible jaundice (sclera first)",
+   "1 · bilirubin in the URINE? NO → UNCONJUGATED (indirect) · YES → CONJUGATED (direct)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_pre",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "PRE-HEPATIC: too much made",
+   "lines": [
+    "unconjugated · RETICULOCYTES ↑"
+   ]
+  },
+  {
+   "id": "g_hep",
+   "cols": [
+    1,
+    4
+   ],
+   "title": "HEPATIC: uptake, conjugation or excretion fails",
+   "lines": [
+    "ALT and AST ↑ = hepatocellular injury: ABNORMAL LIVER ENZYMES chart"
+   ]
+  },
+  {
+   "id": "g_post",
+   "cols": [
+    5,
+    6
+   ],
+   "title": "POST-HEPATIC: the ducts are blocked",
+   "lines": [
+    "conjugated · ALP + GGT ↑"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_unc",
+   "cols": [
+    1,
+    2
+   ],
+   "title": "UNCONJUGATED · reticulocytes NORMAL",
+   "lines": [
+    "not hemolysis: conjugation is slow"
+   ]
+  },
+  {
+   "id": "t_con",
+   "cols": [
+    3,
+    4
+   ],
+   "title": "CONJUGATED: what do ALP and GGT do?",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "CAUSES · MANAGE"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "hem",
+   "colour": "orange",
+   "drop_label": "retics ↑",
+   "head": [
+    [
+     [
+      "h",
+      "Hemolysis",
+      [
+       "red cells destroyed → excess bilirubin"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "No bilirubin in the urine",
+      [
+       "anemia with a high reticulocyte count"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Reticulocytes ↑, blood film",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · COOMBS (antiglobulin) test",
+      [
+       "autoimmune or not?"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Coombs +",
+      [
+       "• Rh disease",
+       "• ABO disease of the newborn"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Coombs −",
+      [
+       "• membrane: spherocytosis",
+       "• enzyme: G6PD",
+       "• thalassemia, sickle cell",
+       "• drugs"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "gil",
+   "colour": "teal",
+   "drop_from": "t_unc",
+   "drop_label": "hereditary",
+   "head": [
+    [
+     [
+      "h",
+      "Gilbert · Crigler-Najjar",
+      [
+       "hereditary: too little conjugating enzyme (UDP-glucuronosyltransferase)"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Isolated unconjugated rise",
+      [
+       "otherwise well"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Family history",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Liver tests, genetic studies",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Gilbert",
+      [
+       "milder: 10-30% of enzyme activity left"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Crigler-Najjar",
+      [
+       "rare: enzyme absent or reduced"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "neo",
+   "colour": "magenta",
+   "drop_from": "t_unc",
+   "drop_label": "newborn",
+   "head": [
+    [
+     [
+      "h",
+      "Newborn jaundice",
+      [
+       "over half of births; most settle alone"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "WHEN did it start?",
+      [
+       "• physiologic: red cell turnover after birth",
+       "• breastFEEDING: EARLY, days 2-3",
+       "• breastMILK: LATE, days 6-14"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Bilirubin on a nomogram",
+      [
+       "e.g. BiliTool"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "RAPIDLY rising > 340 μmol/L",
+      [
+       "KERNICTERUS risk: lethargy, poor suck, hypotonia → seizures"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · PHOTOTHERAPY",
+      [
+       "the standard treatment"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "2 · Exchange transfusion",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Still jaundiced > 2 WEEKS",
+      [
+       "→ BILIARY ATRESIA column"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dj",
+   "colour": "slate",
+   "drop_from": "t_con",
+   "drop_label": "NORMAL",
+   "head": [
+    [
+     [
+      "h",
+      "Dubin-Johnson · Rotor",
+      [
+       "conjugated, but EXCRETION fails"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Liver enzymes NORMAL",
+      [
+       "hereditary"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Family history, genetic studies, histology",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Dubin-Johnson",
+      [
+       "• BLACK liver",
+       "• gallbladder NOT seen"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Rotor",
+      [
+       "• normal liver",
+       "• gallbladder seen"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ihc",
+   "colour": "purple",
+   "drop_from": "t_con",
+   "drop_label": "ALP + GGT ↑",
+   "head": [
+    [
+     [
+      "h",
+      "Intrahepatic cholestasis",
+      [
+       "the liver secretes too little bile"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "A new drug? Pregnant? A child?",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Duct imaging as for obstruction →",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "DRUGS",
+      [
+       "• oral contraceptives",
+       "• anabolic steroids",
+       "• warfarin",
+       "• prochlorperazine"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "PREGNANCY, 3rd trimester",
+      [
+       "intense itch · preterm birth, meconium, stillbirth"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Children",
+      [
+       "• Alagille: too few ducts",
+       "• progressive familial intrahepatic cholestasis: transporter defects"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "obs",
+   "colour": "blue",
+   "drop_from": "g_post",
+   "drop_label": "stone, stricture, tumour",
+   "head": [
+    [
+     [
+      "h",
+      "Extrahepatic obstruction",
+      [
+       "the biliary tree is blocked"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Pain + fever, or PAINLESS?",
+      [
+       "• stones, cholangitis: GALLSTONE chart",
+       "• painless + weight loss: PANCREATIC chart"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Ultrasound of the bile ducts",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · MRCP: DIAGNOSTIC only",
+      [
+       "magnetic resonance cholangiopancreatography"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "3 · ERCP: diagnostic + THERAPEUTIC",
+      [
+       "endoscopic retrograde cholangiopancreatography"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · RELIEVE it at ERCP",
+      [
+       "• sphincterotomy",
+       "• stone removal",
+       "• stent"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · ERCP failed or not possible → PTC",
+      [
+       "percutaneous transhepatic cholangiogram: best for the PROXIMAL tree"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ba",
+   "colour": "brown",
+   "drop_from": "g_post",
+   "drop_label": "newborn",
+   "head": [
+    [
+     [
+      "h",
+      "Biliary atresia",
+      [
+       "the extrahepatic ducts fail to form"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Jaundice past 2 WEEKS",
+      [
+       "• PALE stools, dark urine",
+       "• big liver"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "1 · Total + direct bilirubin NOW",
+      [
+       "direct > 20% of total → refer"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "DO NOT MISS: early surgery",
+      [
+       "KASAI procedure"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Then liver transplant",
+      [
+       "its #1 cause in children"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": []
+}

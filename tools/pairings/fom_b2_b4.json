@@ -1,0 +1,409 @@
+[
+ {
+  "qid": "b2-w5-meds2024-q20-20",
+  "bank": "fom/data/questions/b2.json",
+  "skip": "false positive: 'match' is only the HTML class match-items; i/ii/iii combination MCQ"
+ },
+ {
+  "qid": "b2-w8-meds2024-q12-12",
+  "bank": "fom/data/questions/b2.json",
+  "skip": "false positive: 'match' is only the HTML class match-items; i/ii/iii combination MCQ"
+ },
+ {
+  "qid": "b2-w6-new-q11-11",
+  "bank": "fom/data/questions/b2.json",
+  "stem": "<p><strong>Match each presentation of a breast mass to the appropriate description.</strong></p>",
+  "pairs": {
+   "leftLabel": "Breast mass",
+   "rightLabel": "Description",
+   "items": [
+    {
+     "left": "Cyst",
+     "right": "Well demarcated and circumscribed sac filled with air, fluid or semi-solid"
+    },
+    {
+     "left": "Fibrocystic Change",
+     "right": "Lumpy nodular breast tissue with tenderness that varies through the menstrual cycle."
+    },
+    {
+     "left": "Abscess",
+     "right": "Collection of pus that is usually red, hot, swollen and tender"
+    },
+    {
+     "left": "Fibroadenoma",
+     "right": "Single breast nodule that is well circumscribed and demarcated, firm and mobile."
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Breast mass</th><th>Description</th></tr></thead><tbody><tr><td>Cyst</td><td>Well demarcated and circumscribed sac filled with air, fluid or semi-solid</td></tr><tr><td>Fibrocystic Change</td><td>Lumpy nodular breast tissue with tenderness that varies through the menstrual cycle.</td></tr><tr><td>Abscess</td><td>Collection of pus that is usually red, hot, swollen and tender</td></tr><tr><td>Fibroadenoma</td><td>Single breast nodule that is well circumscribed and demarcated, firm and mobile.</td></tr></tbody></table><p><em>From 04 - Diagnostic Pathway for Breast Mass</em> (its benign-lesion table).</p><ul><li><strong>Fibroadenoma</strong> - a benign neoplasm: a single nodule, well circumscribed and demarcated, firm and mobile.</li><li><strong>Abscess</strong> - a collection of pus (acute inflammation, neutrophils) with warmth, redness, swelling and tenderness.</li><li><strong>Cyst</strong> - a sac of air, fluid or semi-solid, well demarcated with smooth margins, collapsing when the fluid is drawn off.</li><li><strong>Fibrocystic change</strong> - lumpy, nodular breasts whose pain or tenderness varies with the menstrual cycle; not a neoplasm.</li></ul>",
+  "note": "prose key 'A=4; B=3; C=1; D=2' in the answer"
+ },
+ {
+  "qid": "b2-w6-new-q16-16",
+  "bank": "fom/data/questions/b2.json",
+  "stem": "<p><strong>Rank each pathology report term from least (1) to most (5) malignant.</strong></p>",
+  "pairs": {
+   "leftLabel": "Terminology",
+   "rightLabel": "Rank (1 least to 5 most malignant)",
+   "items": [
+    {
+     "left": "Atypia Present, Cannot exclude malignancy",
+     "right": "3"
+    },
+    {
+     "left": "Suspicion for Malignancy",
+     "right": "4"
+    },
+    {
+     "left": "Atypia Present, Favour Reactive",
+     "right": "2"
+    },
+    {
+     "left": "Positive for malignancy",
+     "right": "5 - most malignant"
+    },
+    {
+     "left": "Negative for malignancy",
+     "right": "1 - least malignant"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Terminology</th><th>Rank (1 least to 5 most malignant)</th></tr></thead><tbody><tr><td>Atypia Present, Cannot exclude malignancy</td><td>3</td></tr><tr><td>Suspicion for Malignancy</td><td>4</td></tr><tr><td>Atypia Present, Favour Reactive</td><td>2</td></tr><tr><td>Positive for malignancy</td><td>5 - most malignant</td></tr><tr><td>Negative for malignancy</td><td>1 - least malignant</td></tr></tbody></table><p><em>From 06 - Communication of the Pathology Report.</em> When a diagnosis is not clear-cut the pathologist writes a narrative report using a graded vocabulary of malignancy risk. The lecture's scale runs positive &rarr; suspicious &rarr; atypia (cannot exclude malignancy) &rarr; atypia (favour reactive) &rarr; negative; reversed for least-to-most:</p><ul><li><strong>1</strong> - negative for malignancy.</li><li><strong>2</strong> - atypia present, favour reactive: abnormal cells, but the pathologist leans benign.</li><li><strong>3</strong> - atypia present, cannot exclude malignancy: abnormal cells with malignancy left open.</li><li><strong>4</strong> - suspicious for malignancy: probably cancer, short of certainty.</li><li><strong>5</strong> - positive for malignancy.</li></ul><p>The two atypia terms are the trap: <em>favour reactive</em> leans benign, <em>cannot exclude</em> does not.</p>",
+  "note": "prose key 'A=3, B=4, C=2, D=5, E=1' in the answer; ranks are the dropdown values"
+ },
+ {
+  "qid": "b2-w6-new-q17-17",
+  "bank": "fom/data/questions/b2.json",
+  "stem": "<p><strong>Match each statement to the member of the cancer care team it describes.</strong></p>",
+  "pairs": {
+   "leftLabel": "Statement",
+   "rightLabel": "Team member",
+   "items": [
+    {
+     "left": "Perform biopsies for cancer diagnosis and play a role in removal and cancer staging.",
+     "right": "General Surgeon"
+    },
+    {
+     "left": "Involved in cancer screening, symptom relief, counselling and referrals",
+     "right": "Primary Care Physician"
+    },
+    {
+     "left": "Provide education, resources and support to help patients and families navigate the cancer journey",
+     "right": "Social Worker"
+    },
+    {
+     "left": "Helps relieve suffering and improve quality of life at any stage in a serious illness",
+     "right": "Palliative care physician"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Statement</th><th>Team member</th></tr></thead><tbody><tr><td>Perform biopsies for cancer diagnosis and play a role in removal and cancer staging.</td><td>General Surgeon</td></tr><tr><td>Involved in cancer screening, symptom relief, counselling and referrals</td><td>Primary Care Physician</td></tr><tr><td>Provide education, resources and support to help patients and families navigate the cancer journey</td><td>Social Worker</td></tr><tr><td>Helps relieve suffering and improve quality of life at any stage in a serious illness</td><td>Palliative care physician</td></tr></tbody></table><p><em>From 03 - Cancer Genetics</em> (its interprofessional management table).</p><ul><li><strong>General surgeon</strong>: diagnostic biopsy, removal and staging, lymph node dissection.</li><li><strong>Primary care physician</strong>: screening, symptom relief, counselling and referrals - the lecture's wording almost exactly.</li><li><strong>Social worker</strong>: counselling through education, resources and supports, and advocacy in navigating recovery.</li><li><strong>Palliative care physician</strong>: relieves suffering and improves quality of life in curable, chronic or life-threatening illness - at any stage, not only at the end of life.</li></ul><p>The near-miss for the education-and-support statement is the <strong>Indigenous health navigator</strong>, who also counsels and advocates, but the lecture defines that role as navigating the <em>health care system</em>. The pathologist makes the diagnosis on the tissue but does not perform the biopsy or the removal.</p>",
+  "note": "prose key 'A=2; B=8, C=11; D=6', professions numbered 1-11 in the order listed (as the existing flag and explanation assume)"
+ },
+ {
+  "qid": "b2-wb-fom-q94",
+  "bank": "fom/data/questions/b2.json",
+  "stem": "<p><strong>Identify each activity as either an Activity of Daily Living (ADL) or an Instrumental Activity of Daily Living (IADL).</strong></p>",
+  "pairs": {
+   "leftLabel": "Activity",
+   "rightLabel": "ADL or IADL",
+   "items": [
+    {
+     "left": "Ambulating",
+     "right": "ADL (activity of daily living)"
+    },
+    {
+     "left": "Cooking",
+     "right": "IADL (instrumental activity of daily living)"
+    },
+    {
+     "left": "Dressing",
+     "right": "ADL (activity of daily living)"
+    },
+    {
+     "left": "Eating",
+     "right": "ADL (activity of daily living)"
+    },
+    {
+     "left": "Finances",
+     "right": "IADL (instrumental activity of daily living)"
+    },
+    {
+     "left": "Hygiene (bathing)",
+     "right": "ADL (activity of daily living)"
+    },
+    {
+     "left": "Medication management",
+     "right": "IADL (instrumental activity of daily living)"
+    },
+    {
+     "left": "Shopping",
+     "right": "IADL (instrumental activity of daily living)"
+    },
+    {
+     "left": "Social engagement",
+     "right": "IADL (instrumental activity of daily living)"
+    },
+    {
+     "left": "Telephone",
+     "right": "IADL (instrumental activity of daily living)"
+    },
+    {
+     "left": "Toileting",
+     "right": "ADL (activity of daily living)"
+    },
+    {
+     "left": "Transportation",
+     "right": "IADL (instrumental activity of daily living)"
+    },
+    {
+     "left": "Transferring",
+     "right": "ADL (activity of daily living)"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Activity</th><th>ADL or IADL</th></tr></thead><tbody><tr><td>Ambulating</td><td>ADL (activity of daily living)</td></tr><tr><td>Cooking</td><td>IADL (instrumental activity of daily living)</td></tr><tr><td>Dressing</td><td>ADL (activity of daily living)</td></tr><tr><td>Eating</td><td>ADL (activity of daily living)</td></tr><tr><td>Finances</td><td>IADL (instrumental activity of daily living)</td></tr><tr><td>Hygiene (bathing)</td><td>ADL (activity of daily living)</td></tr><tr><td>Medication management</td><td>IADL (instrumental activity of daily living)</td></tr><tr><td>Shopping</td><td>IADL (instrumental activity of daily living)</td></tr><tr><td>Social engagement</td><td>IADL (instrumental activity of daily living)</td></tr><tr><td>Telephone</td><td>IADL (instrumental activity of daily living)</td></tr><tr><td>Toileting</td><td>ADL (activity of daily living)</td></tr><tr><td>Transportation</td><td>IADL (instrumental activity of daily living)</td></tr><tr><td>Transferring</td><td>ADL (activity of daily living)</td></tr></tbody></table><p><em>From 04 - Comprehensive Geriatric Assessment.</em></p><ul><li>Ambulating is the A of <strong>DEATH</strong>, a basic ADL: moving from one position to another (transfers) and walking independently. It is physical self-care, not a household task that needs planning.</li><li>Cooking is the F of <strong>SHAFT</strong> (Food preparation), an IADL: it needs planning, sequencing and safety judgment, not just the physical ability to feed oneself. Do not confuse it with <em>eating</em>, which is a basic ADL.</li><li>Dressing is the D of <strong>DEATH</strong>, a basic ADL: selecting appropriate clothing and putting it on.</li><li>Eating is the E of <strong>DEATH</strong>, a basic ADL: the ability to feed oneself. Preparing the food is a different task - cooking is an IADL.</li><li>Finances are the A of <strong>SHAFT</strong> (Accounting), an IADL: the ability to pay bills and manage money, a cognitively demanding task of running a household rather than self-care.</li><li>Hygiene is the H of <strong>DEATH</strong>, a basic ADL: bathing and grooming oneself and keeping up dental, nail and hair care.</li><li>Managing medications is the extra M the SHAFT note adds to the IADLs: obtaining medications and taking them as prescribed. It depends on memory and organization rather than physical self-care.</li><li>Shopping is the S of <strong>SHAFT</strong>, an IADL: acquiring food and clothing.</li><li>Social engagement is not one of the named SHAFT items, but it belongs on the IADL side by the same logic: it is a higher-order activity of living in the community, not basic self-care of the body - and none of the DEATH items (Dressing, Eating, Ambulating, Toileting, Hygiene) covers it.</li><li>Using the telephone is a T of <strong>SHAFT</strong>, an IADL, along with mail, internet and email.</li><li>Toileting is the T of <strong>DEATH</strong>, a basic ADL: getting to and from the toilet, using it appropriately and cleaning oneself, plus continence - control of bladder and bowel.</li><li>Transportation is a T of <strong>SHAFT</strong>, an IADL: driving or using public transport.</li></ul><p>The split to remember: ADLs = <strong>DEATH</strong> (Dressing, Eating, Ambulating, Toileting, Hygiene), the basic self-care tasks; IADLs = <strong>SHAFT</strong> (Shopping, Housework, Accounting, Food preparation, Telephone/Transportation) plus managing medications, the household tasks that need more cognitive skill.</p><p>Activities of Daily Living (ADLs) can be remembered by the mnemonic DEAT(T)H: Dressing, Eating, Ambulating, Toileting, Transferring, Hygiene (Bathing). Instrumental ADLs are shopping, transportation, cooking, finances, telephone, medications, social engagement.</p>",
+  "absorbs": [
+   "b2-wb-fom-q95",
+   "b2-wb-fom-q96",
+   "b2-wb-fom-q97",
+   "b2-wb-fom-q98",
+   "b2-wb-fom-q99",
+   "b2-wb-fom-q100",
+   "b2-wb-fom-q101",
+   "b2-wb-fom-q102",
+   "b2-wb-fom-q103",
+   "b2-wb-fom-q104",
+   "b2-wb-fom-q105",
+   "b2-wb-fom-q106"
+  ],
+  "flags": [
+   {
+    "type": "warning",
+    "title": "Social engagement is not covered by the notes",
+    "html": "<p>No lecture note covers this; the reasoning is from general principles. Verify it before relying on it.</p><p>The notes' ADL and IADL lists (DEATH, SHAFT plus medications) do not name social engagement; the IADL classification follows the key and the logic of the split, not a lecture statement.</p>"
+   }
+  ],
+  "note": "split series q94-q106 (workbook 101-113, shared ADL/IADL instruction); each item's key is the first word of its own answer",
+  "preamble": null
+ },
+ {
+  "qid": "b2-wb-fom-q131",
+  "bank": "fom/data/questions/b2.json",
+  "stem": "<p><strong>Match each prescription abbreviation to its meaning.</strong></p>",
+  "pairs": {
+   "leftLabel": "Abbreviation",
+   "rightLabel": "Meaning",
+   "items": [
+    {
+     "left": "PO",
+     "right": "Orally"
+    },
+    {
+     "left": "BID",
+     "right": "Twice a day"
+    },
+    {
+     "left": "PRN",
+     "right": "As needed"
+    },
+    {
+     "left": "AC",
+     "right": "Before meal"
+    },
+    {
+     "left": "OD",
+     "right": "Right eye"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Abbreviation</th><th>Meaning</th></tr></thead><tbody><tr><td>PO</td><td>Orally</td></tr><tr><td>BID</td><td>Twice a day</td></tr><tr><td>PRN</td><td>As needed</td></tr><tr><td>AC</td><td>Before meal</td></tr><tr><td>OD</td><td>Right eye</td></tr></tbody></table><p><em>From 05 - Principles of Clinical Pharmacology</em> (its prescription abbreviations table).</p><ul><li><strong>PO - orally</strong>.</li><li><strong>BID - twice a day</strong>; the frequency series is q.d., b.i.d., t.i.d., q.i.d. for once to four times a day.</li><li><strong>PRN - as needed</strong>; 01 - Approach To Prescribing adds that a PRN order still needs a maximum frequency.</li><li><strong>AC - before meals</strong>; p.c. is after meals.</li><li><strong>OD - right eye</strong>, paired with O.S. (left eye) and O.U. (both eyes).</li></ul><p>OD is the trap: it reads like &ldquo;once daily&rdquo;, but the lecture's once-daily abbreviation is q.d.</p>",
+  "note": "prose key 'A-5, B-1, C-2, D-4, E-3'; meanings 1-5 recovered from the list fused into option E",
+  "drop_flags": [
+   "The meanings were fused onto option E"
+  ]
+ },
+ {
+  "qid": "b3-w9-meds2024-q25-25",
+  "bank": "fom/data/questions/b3.json",
+  "skip": "false positive: 'match' is only the HTML class match-items; i/ii/iii combination MCQ"
+ },
+ {
+  "qid": "b3-w9-meds2024-q31-31",
+  "bank": "fom/data/questions/b3.json",
+  "skip": "false positive: 'match' is only the HTML class match-items; i/ii/iii combination MCQ"
+ },
+ {
+  "qid": "b3-w10-meds2024-q15-15",
+  "bank": "fom/data/questions/b3.json",
+  "skip": "false positive: 'match' is only the HTML class match-items; i/ii/iii combination MCQ"
+ },
+ {
+  "qid": "b3-w10-meds2024-q19-19",
+  "bank": "fom/data/questions/b3.json",
+  "skip": "false positive: 'match' is only the HTML class match-items; i/ii/iii combination MCQ"
+ },
+ {
+  "qid": "b3-w10-meds2024-q29-29",
+  "bank": "fom/data/questions/b3.json",
+  "skip": "false positive: 'match' is only the HTML class match-items; i/ii/iii combination MCQ"
+ },
+ {
+  "qid": "b3-w11-meds2024-q34-34",
+  "bank": "fom/data/questions/b3.json",
+  "skip": "false positive: 'match' is only the HTML class match-items; i/ii/iii combination MCQ"
+ },
+ {
+  "qid": "b3-w12-meds2024-q42-42",
+  "bank": "fom/data/questions/b3.json",
+  "skip": "false positive: 'match' is only the HTML class match-items; i/ii/iii combination MCQ"
+ },
+ {
+  "qid": "b3-w12-new-q10-10",
+  "bank": "fom/data/questions/b3.json",
+  "skip": "false positive: 'match' is only the HTML class match-items; i/ii/iii combination MCQ"
+ },
+ {
+  "qid": "b4-w13-meds2024-q22-22",
+  "bank": "fom/data/questions/b4.json",
+  "skip": "single-best-answer MCQ ('correctly matches')"
+ },
+ {
+  "qid": "b4-w13-new-q7-7",
+  "bank": "fom/data/questions/b4.json",
+  "stem": "<p>Thermoregulation is the homeostatic balance between heat dissipation and heat production.</p><p><strong>Categorize each term below as an effector, thermoreceptors, regulated variable, or feedforward system.</strong></p>",
+  "pairs": {
+   "leftLabel": "Term",
+   "rightLabel": "Category",
+   "items": [
+    {
+     "left": "Body temperature at 37C",
+     "right": "Regulated variable"
+    },
+    {
+     "left": "Primary sensory neurons in the skin, spinal cord, abdominal viscera, and brain",
+     "right": "Thermoreceptors"
+    },
+    {
+     "left": "Body temperature during hyperthermia",
+     "right": "Feedforward system"
+    },
+    {
+     "left": "Sweat glands",
+     "right": "Effector"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Term</th><th>Category</th></tr></thead><tbody><tr><td>Body temperature at 37C</td><td>Regulated variable</td></tr><tr><td>Primary sensory neurons in the skin, spinal cord, abdominal viscera, and brain</td><td>Thermoreceptors</td></tr><tr><td>Body temperature during hyperthermia</td><td>Feedforward system</td></tr><tr><td>Sweat glands</td><td>Effector</td></tr></tbody></table><p><em>From 01 - Homeostatic Control of Body Temperature.</em> The note frames thermoregulation as a negative-feedback loop: thermoreceptors &rarr; hypothalamus &rarr; effectors, holding the regulated variable at its set point.</p><ul><li><strong>Effector</strong>: sweat glands carry out heat loss.</li><li><strong>Thermoreceptors</strong>: sensory neurons activated by warmth or cold, found in the skin, spinal cord, abdominal viscera and brain.</li><li><strong>Regulated variable</strong>: core temperature held at about 37&deg;C (normal 35.5-37.7&deg;C).</li><li><strong>Feedforward</strong>: body temperature during hyperthermia is left here by elimination. The note defines feedforward as the body acting in <em>anticipation</em> of a thermal change (e.g. responding to a cold breeze before core temperature drops).</li></ul>",
+  "note": "prose key 'i = D, ii = B, iii = A, iv = C' (i-iv = effector, thermoreceptors, regulated variable, feedforward)"
+ },
+ {
+  "qid": "b4-w13-new-q24-24",
+  "bank": "fom/data/questions/b4.json",
+  "skip": "single-best-answer MCQ ('incorrectly matched')"
+ },
+ {
+  "qid": "b4-w13-new-q26-26",
+  "bank": "fom/data/questions/b4.json",
+  "stem": "<p><strong>Match each cause of fever with its expected timing of onset.</strong></p>",
+  "pairs": {
+   "leftLabel": "Cause of fever",
+   "rightLabel": "Timing of onset",
+   "items": [
+    {
+     "left": "UTI",
+     "right": "Acute"
+    },
+    {
+     "left": "TB",
+     "right": "Chronic"
+    },
+    {
+     "left": "HIV",
+     "right": "Chronic"
+    },
+    {
+     "left": "Intraabdominal abscess",
+     "right": "Subacute"
+    },
+    {
+     "left": "Soft tissue bacterial infection",
+     "right": "Acute"
+    },
+    {
+     "left": "Connective tissue disorders",
+     "right": "Chronic"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Cause of fever</th><th>Timing of onset</th></tr></thead><tbody><tr><td>UTI</td><td>Acute</td></tr><tr><td>TB</td><td>Chronic</td></tr><tr><td>HIV</td><td>Chronic</td></tr><tr><td>Intraabdominal abscess</td><td>Subacute</td></tr><tr><td>Soft tissue bacterial infection</td><td>Acute</td></tr><tr><td>Connective tissue disorders</td><td>Chronic</td></tr></tbody></table><p><em>From In-Class - Fever.</em> The lecture classifies fever by onset: <strong>acute (&lt; 7 days)</strong>, <strong>subacute (1&ndash;2 weeks)</strong> and <strong>chronic/persistent (&gt; 2 weeks)</strong>.</p><ul><li><strong>Acute:</strong> UTI and bacterial soft tissue infection are listed with viral infection and pneumonia.</li><li><strong>Subacute:</strong> intra-abdominal abscess is the lecture's example.</li><li><strong>Chronic:</strong> TB, HIV and connective tissue disorders such as SLE are listed with cancer.</li></ul><p>The timing itself narrows the differential: a fever past two weeks shifts the search away from ordinary acute infections toward TB, HIV, malignancy and autoimmune disease.</p>",
+  "note": "prose key 'A-I; B-III; C-III; D-II; E-I; F-III' (I acute, II subacute, III chronic)"
+ },
+ {
+  "qid": "b4-w14-new-q2-2",
+  "bank": "fom/data/questions/b4.json",
+  "skip": "key unrecoverable: option C was lost in transcription and the key gives C to both C. difficile and C. botulinum (existing red flag says the key looks wrong)"
+ },
+ {
+  "qid": "b4-w14-new-q3-3",
+  "bank": "fom/data/questions/b4.json",
+  "stem": "<p><strong>Match each antibiotic class to its site of action.</strong></p>",
+  "pairs": {
+   "leftLabel": "Antibiotic class",
+   "rightLabel": "Site of action",
+   "items": [
+    {
+     "left": "Beta-Lactams",
+     "right": "Cell wall synthesis"
+    },
+    {
+     "left": "Macrolides",
+     "right": "Protein synthesis"
+    },
+    {
+     "left": "Quinolones",
+     "right": "Nucleic acid synthesis"
+    },
+    {
+     "left": "Aminoglycosides",
+     "right": "Protein synthesis"
+    },
+    {
+     "left": "Carbapenems",
+     "right": "Cell wall synthesis"
+    },
+    {
+     "left": "Sulfonamides",
+     "right": "Folate synthesis"
+    }
+   ]
+  },
+  "answer": "<p><strong>The pairings:</strong></p><table><thead><tr><th>Antibiotic class</th><th>Site of action</th></tr></thead><tbody><tr><td>Beta-Lactams</td><td>Cell wall synthesis</td></tr><tr><td>Macrolides</td><td>Protein synthesis</td></tr><tr><td>Quinolones</td><td>Nucleic acid synthesis</td></tr><tr><td>Aminoglycosides</td><td>Protein synthesis</td></tr><tr><td>Carbapenems</td><td>Cell wall synthesis</td></tr><tr><td>Sulfonamides</td><td>Folate synthesis</td></tr></tbody></table><p><em>From 02 - Choosing Antibiotics Wisely Lecture 1.</em> The lecture groups antibiotics by the bacterial process they hit:</p><ul><li><strong>&beta;-lactams &rarr; cell wall</strong>: bind penicillin-binding proteins and block peptidoglycan cross-linking.</li><li><strong>Macrolides &rarr; protein synthesis</strong>: bind the 50S subunit.</li><li><strong>Quinolones &rarr; nucleic acid synthesis</strong>: inhibit DNA gyrase, a type II topoisomerase.</li><li><strong>Aminoglycosides &rarr; protein synthesis</strong>: bind 30S and cause mRNA misreading.</li><li><strong>Carbapenems &rarr; cell wall</strong>: they are &beta;-lactams, the broadest-spectrum ones.</li><li><strong>Sulfonamides &rarr; folate synthesis</strong>: folate synthesis inhibitors (e.g. TMP-SMX).</li></ul>",
+  "note": "prose key 'I-B; II-C; III-D; IV-C; V-B; VI-A'; stem's truncated 'site of' completed as 'site of action'"
+ },
+ {
+  "qid": "b4-w15-new-q24-24",
+  "bank": "fom/data/questions/b4.json",
+  "skip": "single-best-answer MCQ ('matches the class ... with its mechanism')"
+ },
+ {
+  "qid": "b4-wb-ii-q16",
+  "bank": "fom/data/questions/b4.json",
+  "skip": "key gives several functions per class (IgG: opsonization and neonatal immunity) and naive B-cell receptor to both IgD and IgM; one dropdown per row cannot grade it"
+ },
+ {
+  "qid": "b4-wb-ii-q64",
+  "bank": "fom/data/questions/b4.json",
+  "skip": "not a matching task: an a-e single-best-answer MCQ (key D) mis-kinded as 'matching' with options left in the stem"
+ },
+ {
+  "qid": "reviews-b4-Q15",
+  "bank": "fom/data/questions/b4.json",
+  "skip": "no key: the review deck gives no answer to this matching exercise"
+ },
+ {
+  "qid": "b2-wb-fom-q87",
+  "bank": "fom/data/questions/b2.json",
+  "skip": "fill-in-the-blank series q87-q90 sharing options (no 'match' in stem); q87 needs two answers, so it cannot fold into one-dropdown rows"
+ }
+]

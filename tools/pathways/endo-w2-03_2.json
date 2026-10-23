@@ -1,0 +1,1322 @@
+{
+ "name": "thyroid function pathway",
+ "width": 1924,
+ "title": "Thyroid function pathway: TSH case-finds and free T4 confirms; hypothyroidism splits into primary (Hashimoto's), subclinical and central by TSH and free T4; thyrotoxicosis splits on radioactive iodine uptake into Graves, toxic nodules and thyroiditis or exogenous hormone, plus subclinical hyperthyroidism; each column gives causes and clues, tests and treatment",
+ "kinds": {
+  "prim_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "prim_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "prim_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "sub_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sub_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "sub_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "cen_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cen_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cen_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "gr_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gr_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "gr_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "nod_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nod_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "nod_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "thy_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "thy_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "thy_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "subh_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "subh_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "subh_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 560,
+   "w": 262,
+   "h": 1144,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 304,
+   "y": 560,
+   "w": 262,
+   "h": 1144,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 568,
+   "y": 560,
+   "w": 262,
+   "h": 1144,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 860,
+   "y": 560,
+   "w": 262,
+   "h": 1144,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1124,
+   "y": 560,
+   "w": 262,
+   "h": 1144,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1388,
+   "y": 560,
+   "w": 262,
+   "h": 1144,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1652,
+   "y": 560,
+   "w": 262,
+   "h": 1144,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 238,
+   "h": 132,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 706,
+   "h": 318,
+   "text": "CAUSES & CLUES"
+  },
+  {
+   "x": 23,
+   "y": 1064,
+   "h": 178,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1282,
+   "h": 414,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 617,
+   "y": 10,
+   "w": 720,
+   "kind": "dark",
+   "title": "Thyroid function: TSH case-finds, free T4 (± T3) confirms",
+   "lines": [
+    "primary disease is commonest: TSH moves OPPOSITE the hormone",
+    "central disease is the trap: TSH moves WITH it, or not at all"
+   ]
+  },
+  {
+   "id": "g_lo",
+   "x": 45,
+   "y": 138,
+   "w": 780,
+   "kind": "plain",
+   "title": "HYPOTHYROID: too little thyroid hormone",
+   "lines": [
+    "TSH ↑ (primary) · up to 2% · female 5–8 : 1"
+   ],
+   "h": 60
+  },
+  {
+   "id": "g_hi",
+   "x": 865,
+   "y": 138,
+   "w": 1044,
+   "kind": "plain",
+   "title": "THYROTOXIC: too much thyroid hormone, from any cause",
+   "lines": [
+    "TSH ↓ · up to 1.5% · female 5 : 1 · hyperthyroidism = from PRODUCTION"
+   ],
+   "h": 60
+  },
+  {
+   "id": "p_lo",
+   "x": 45,
+   "y": 238,
+   "w": 780,
+   "kind": "info",
+   "title": "Presents as",
+   "lines": [
+    "COLD intolerance · weight GAIN despite ↓ appetite",
+    "fatigue, slow mentation, apathy, depression · constipation · cool, pale skin",
+    "bradycardia · diastolic hypertension, NARROW pulse pressure · ↓ cardiac output",
+    "slow RELAXATION of the reflexes · short of breath, heart failure"
+   ],
+   "h": 132
+  },
+  {
+   "id": "p_hi",
+   "x": 865,
+   "y": 238,
+   "w": 1044,
+   "kind": "info",
+   "title": "Presents as",
+   "lines": [
+    "HEAT intolerance, sweating · weight LOSS despite ↑ appetite",
+    "hyperactivity, insomnia, anxiety, emotional lability · hyperdefecation · soft, warm skin · TREMOR",
+    "tachycardia · WIDE pulse pressure · ↑ cardiac output · palpitations · heart failure",
+    "eyes in ANY thyrotoxicosis: stare, lid retraction, lid lag",
+    "urgent: storm / instability (Graves) · high-output failure · visual loss · mental health crisis"
+   ],
+   "h": 132
+  },
+  {
+   "id": "rai",
+   "x": 865,
+   "y": 410,
+   "w": 780,
+   "kind": "plain",
+   "title": "Confirm (repeat ↓TSH + ↑FT4 + ↑FT3), then: is the gland MAKING it or LEAKING it?",
+   "lines": [
+    "RAI uptake + scan: the best single test for the cause · 2-day test · expensive · NOT in pregnancy",
+    "~TRAb blood test is sensitive and specific for Graves"
+   ]
+  },
+  {
+   "id": "prim_head_0_0",
+   "x": 45,
+   "y": 568,
+   "w": 252,
+   "h": 98,
+   "kind": "prim_h",
+   "title": "Primary hypothyroidism",
+   "lines": [
+    "TSH ↑ · FT4 ↓",
+    "commonest: HASHIMOTO's"
+   ]
+  },
+  {
+   "id": "sub_head_0_0",
+   "x": 309,
+   "y": 568,
+   "w": 252,
+   "h": 98,
+   "kind": "sub_h",
+   "title": "Subclinical hypothyroidism",
+   "lines": [
+    "TSH ↑ · FT4 + FT3 normal",
+    "up to 10% · TSH usually < 10–20"
+   ]
+  },
+  {
+   "id": "cen_head_0_0",
+   "x": 573,
+   "y": 568,
+   "w": 252,
+   "h": 98,
+   "kind": "cen_h",
+   "title": "Central hypothyroidism",
+   "lines": [
+    "TSH ↔ or ↓ · FT4 ↓",
+    "PITUITARY or hypothalamus"
+   ]
+  },
+  {
+   "id": "gr_head_0_0",
+   "x": 865,
+   "y": 568,
+   "w": 252,
+   "h": 98,
+   "kind": "gr_h",
+   "title": "Graves disease",
+   "lines": [
+    "the COMMONEST cause",
+    "TSH-receptor antibodies drive it"
+   ]
+  },
+  {
+   "id": "nod_head_0_0",
+   "x": 1129,
+   "y": 568,
+   "w": 252,
+   "h": 98,
+   "kind": "nod_h",
+   "title": "Toxic adenoma / multinodular goiter",
+   "lines": [
+    "autonomous nodule(s)",
+    "TMNG = toxic multinodular goiter"
+   ]
+  },
+  {
+   "id": "thy_head_0_0",
+   "x": 1393,
+   "y": 568,
+   "w": 252,
+   "h": 98,
+   "kind": "thy_h",
+   "title": "Thyroiditis or exogenous",
+   "lines": [
+    "LOW uptake: hormone LEAKING",
+    "out of a damaged gland, or from a bottle"
+   ]
+  },
+  {
+   "id": "subh_head_0_0",
+   "x": 1657,
+   "y": 568,
+   "w": 252,
+   "h": 98,
+   "kind": "subh_h",
+   "title": "Subclinical hyperthyroidism",
+   "lines": [
+    "TSH ↓ · FT4 + FT3 normal",
+    "same causes as overt"
+   ]
+  },
+  {
+   "id": "prim_clue_0_0",
+   "x": 45,
+   "y": 706,
+   "w": 252,
+   "h": 97,
+   "kind": "prim_t",
+   "title": "Hashimoto's thyroiditis",
+   "lines": [
+    "female · family history of autoimmune disease · iodine load",
+    "~symptoms variable, signs not sensitive"
+   ]
+  },
+  {
+   "id": "prim_clue_1_0",
+   "x": 45,
+   "y": 825,
+   "w": 252,
+   "h": 79,
+   "kind": "prim_w",
+   "title": "Other causes",
+   "lines": [
+    "drugs: lithium, amiodarone · surgery or radioactive iodine"
+   ]
+  },
+  {
+   "id": "prim_clue_2_0",
+   "x": 45,
+   "y": 926,
+   "w": 252,
+   "h": 99,
+   "kind": "prim_w",
+   "title": "No treatment history, no pituitary risk",
+   "lines": [
+    "→ you may simply ASSUME Hashimoto's"
+   ]
+  },
+  {
+   "id": "sub_clue_0_0",
+   "x": 309,
+   "y": 706,
+   "w": 252,
+   "h": 318,
+   "kind": "sub_t",
+   "title": "Often resolves on its own",
+   "lines": [
+    "especially TSH < 10 in the elderly"
+   ]
+  },
+  {
+   "id": "cen_clue_0_0",
+   "x": 573,
+   "y": 706,
+   "w": 252,
+   "h": 148,
+   "kind": "cen_t",
+   "title": "Suspect it with",
+   "lines": [
+    "other pituitary deficiencies or a known pituitary mass"
+   ]
+  },
+  {
+   "id": "cen_clue_1_0",
+   "x": 573,
+   "y": 876,
+   "w": 252,
+   "h": 148,
+   "kind": "cen_w",
+   "title": "Causes",
+   "lines": [
+    "↓ stimulation: trauma, surgery, tumour, infiltrative disease"
+   ]
+  },
+  {
+   "id": "gr_clue_0_0",
+   "x": 865,
+   "y": 706,
+   "w": 252,
+   "h": 78,
+   "kind": "gr_t",
+   "title": "Risk factors",
+   "lines": [
+    "female · age ~30–50 · family history of autoimmune (esp. thyroid) · iodine load"
+   ]
+  },
+  {
+   "id": "gr_clue_1_0",
+   "x": 865.0,
+   "y": 806,
+   "w": 121.0,
+   "h": 80,
+   "kind": "gr_w",
+   "title": "Acute or subacute",
+   "lines": [
+    "new neck mass"
+   ]
+  },
+  {
+   "id": "gr_clue_1_1",
+   "x": 996.0,
+   "y": 806,
+   "w": 121.0,
+   "h": 80,
+   "kind": "gr_w",
+   "title": "SYMMETRIC goiter",
+   "lines": []
+  },
+  {
+   "id": "gr_clue_2_0",
+   "x": 865,
+   "y": 908,
+   "w": 252,
+   "h": 116,
+   "kind": "gr_w",
+   "title": "Graves only: orbitopathy, dermopathy",
+   "lines": [
+    "proptosis, periorbital edema, diplopia · VISUAL LOSS = ocular emergency · SMOKING the major risk"
+   ]
+  },
+  {
+   "id": "nod_clue_0_0",
+   "x": 1129,
+   "y": 706,
+   "w": 252,
+   "h": 129,
+   "kind": "nod_t",
+   "title": "Risk factors",
+   "lines": [
+    "iodine deficiency moving to sufficiency, or an iodine load"
+   ]
+  },
+  {
+   "id": "nod_clue_1_0",
+   "x": 1129.0,
+   "y": 857,
+   "w": 121.0,
+   "h": 167,
+   "kind": "nod_w",
+   "title": "Gradually progressive",
+   "lines": [
+    "MILDLY thyrotoxic · neck mass(es)"
+   ]
+  },
+  {
+   "id": "nod_clue_1_1",
+   "x": 1260.0,
+   "y": 857,
+   "w": 121.0,
+   "h": 167,
+   "kind": "nod_w",
+   "title": "ASYMMETRIC goiter",
+   "lines": []
+  },
+  {
+   "id": "thy_clue_0_0",
+   "x": 1393,
+   "y": 706,
+   "w": 252,
+   "h": 84,
+   "kind": "thy_t",
+   "title": "Subacute (post-viral)",
+   "lines": [
+    "recent upper respiratory infection · tender, PAIN, odynophagia"
+   ]
+  },
+  {
+   "id": "thy_clue_1_0",
+   "x": 1393.0,
+   "y": 812,
+   "w": 121.0,
+   "h": 124,
+   "kind": "thy_w",
+   "title": "Post-partum or autoimmune",
+   "lines": [
+    "also radiation, trauma"
+   ]
+  },
+  {
+   "id": "thy_clue_1_1",
+   "x": 1524.0,
+   "y": 812,
+   "w": 121.0,
+   "h": 124,
+   "kind": "thy_w",
+   "title": "Exogenous",
+   "lines": [
+    "over-treatment, factitious"
+   ]
+  },
+  {
+   "id": "thy_clue_2_0",
+   "x": 1393,
+   "y": 958,
+   "w": 252,
+   "h": 66,
+   "kind": "thy_w",
+   "title": "Goiter",
+   "lines": [
+    "asymmetric, symmetric or NONE"
+   ]
+  },
+  {
+   "id": "subh_clue_0_0",
+   "x": 1657,
+   "y": 706,
+   "w": 252,
+   "h": 139,
+   "kind": "subh_t",
+   "title": "Linked to",
+   "lines": [
+    "bone loss · atrial fibrillation"
+   ]
+  },
+  {
+   "id": "subh_clue_1_0",
+   "x": 1657,
+   "y": 867,
+   "w": 252,
+   "h": 157,
+   "kind": "subh_w",
+   "title": "Rarely assay interference",
+   "lines": [
+    "look up interfering substances, repeat TSH + FT4/FT3"
+   ]
+  },
+  {
+   "id": "prim_inv_0_0",
+   "x": 45,
+   "y": 1064,
+   "w": 252,
+   "h": 60,
+   "kind": "prim_t",
+   "title": "CONFIRM: repeat ↑TSH + ↓FT4",
+   "lines": [
+    "free T3 not needed"
+   ]
+  },
+  {
+   "id": "prim_inv_1_0",
+   "x": 45,
+   "y": 1146,
+   "w": 252,
+   "h": 96,
+   "kind": "warn",
+   "title": "Leave these alone",
+   "lines": [
+    "anti-TPO, anti-thyroglobulin: rarely change decisions · ultrasound: only for a nodule felt on exam"
+   ]
+  },
+  {
+   "id": "sub_inv_0_0",
+   "x": 309,
+   "y": 1064,
+   "w": 252,
+   "h": 78,
+   "kind": "sub_t",
+   "title": "Repeat TSH + FT4",
+   "lines": [
+    "TSH ↑ with normal free hormone"
+   ]
+  },
+  {
+   "id": "sub_inv_1_0",
+   "x": 309,
+   "y": 1164,
+   "w": 252,
+   "h": 78,
+   "kind": "sub_w",
+   "title": "Higher risk of progression",
+   "lines": [
+    "TSH > 10 · anti-TPO positive"
+   ]
+  },
+  {
+   "id": "cen_inv_0_0",
+   "x": 573,
+   "y": 1064,
+   "w": 252,
+   "h": 178,
+   "kind": "bad",
+   "title": "Order TSH + FT4 TOGETHER",
+   "lines": [
+    "here TSH moves WITH the hormone, or not at all: a normal TSH does NOT reassure"
+   ]
+  },
+  {
+   "id": "gr_inv_0_0",
+   "x": 865,
+   "y": 1064,
+   "w": 252,
+   "h": 87,
+   "kind": "gr_t",
+   "title": "TSH receptor antibody (TRAb)",
+   "lines": [
+    "sensitive AND specific · a blood test · not covered by OHIP"
+   ]
+  },
+  {
+   "id": "gr_inv_1_0",
+   "x": 865,
+   "y": 1173,
+   "w": 252,
+   "h": 69,
+   "kind": "gr_w",
+   "title": "RAI uptake + scan",
+   "lines": [
+    "DIFFUSE high uptake"
+   ]
+  },
+  {
+   "id": "nod_inv_0_0",
+   "x": 1129,
+   "y": 1064,
+   "w": 252,
+   "h": 178,
+   "kind": "nod_t",
+   "title": "RAI uptake + scan",
+   "lines": [
+    "ONE hot nodule (adenoma) · SEVERAL (TMNG)"
+   ]
+  },
+  {
+   "id": "thy_inv_0_0",
+   "x": 1393,
+   "y": 1064,
+   "w": 252,
+   "h": 178,
+   "kind": "thy_t",
+   "title": "RAI uptake LOW",
+   "lines": [
+    "almost none on the scan"
+   ]
+  },
+  {
+   "id": "subh_inv_0_0",
+   "x": 1657,
+   "y": 1064,
+   "w": 252,
+   "h": 178,
+   "kind": "subh_t",
+   "title": "Repeat TSH + FT4/FT3",
+   "lines": []
+  },
+  {
+   "id": "prim_tx_0_0",
+   "x": 45,
+   "y": 1282,
+   "w": 252,
+   "h": 96,
+   "kind": "ok",
+   "title": "Levothyroxine once daily",
+   "lines": [
+    "about 1.5 mcg/kg/day, titrated to a normal TSH",
+    "start LOW if elderly or heart disease"
+   ]
+  },
+  {
+   "id": "prim_tx_1_0",
+   "x": 45,
+   "y": 1400,
+   "w": 252,
+   "h": 78,
+   "kind": "prim_w",
+   "title": "Half-life 1 WEEK",
+   "lines": [
+    "TSH every 4–6 weeks until normal · don't follow FT4/FT3 on replacement"
+   ]
+  },
+  {
+   "id": "prim_tx_2_0",
+   "x": 45,
+   "y": 1500,
+   "w": 252,
+   "h": 96,
+   "kind": "prim_w",
+   "title": "How to take it",
+   "lines": [
+    "≥ 1 h before, ≥ 2 h after food · 4 h from calcium, iron, magnesium, multivitamin · e.g. at bedtime"
+   ]
+  },
+  {
+   "id": "prim_tx_3_0",
+   "x": 45,
+   "y": 1618,
+   "w": 252,
+   "h": 78,
+   "kind": "bad",
+   "title": "Myxedema coma: very rare",
+   "lines": [
+    "obtundation, hypothermia · low BP, HR, Na, glucose · hypoventilation"
+   ]
+  },
+  {
+   "id": "sub_tx_0_0",
+   "x": 309,
+   "y": 1282,
+   "w": 252,
+   "h": 187,
+   "kind": "warn",
+   "title": "No evidence treatment helps",
+   "lines": [
+    "EXCEPT in pregnancy"
+   ]
+  },
+  {
+   "id": "sub_tx_1_0",
+   "x": 309,
+   "y": 1491,
+   "w": 252,
+   "h": 205,
+   "kind": "ok",
+   "title": "Consider treating if",
+   "lines": [
+    "TSH > 10 · anti-TPO positive · a therapeutic trial for possible symptoms"
+   ]
+  },
+  {
+   "id": "cen_tx_0_0",
+   "x": 573,
+   "y": 1282,
+   "w": 252,
+   "h": 414,
+   "kind": "ok",
+   "title": "Levothyroxine, dosed on FREE T4",
+   "lines": [
+    "~pituitary lecture: replace the adrenal axis first"
+   ]
+  },
+  {
+   "id": "gr_tx_0_0",
+   "x": 865,
+   "y": 1282,
+   "w": 252,
+   "h": 117,
+   "kind": "ok",
+   "title": "Methimazole FIRST line",
+   "lines": [
+    "Graves can REMIT · ~4–6 weeks to euthyroid · favoured over PTU"
+   ]
+  },
+  {
+   "id": "gr_tx_1_0",
+   "x": 865,
+   "y": 1421,
+   "w": 252,
+   "h": 117,
+   "kind": "warn",
+   "title": "Methimazole risks (rare)",
+   "lines": [
+    "agranulocytosis · liver dysfunction · drug-induced lupus · birth defects"
+   ]
+  },
+  {
+   "id": "gr_tx_2_0",
+   "x": 865.0,
+   "y": 1560,
+   "w": 121.0,
+   "h": 137,
+   "kind": "gr_w",
+   "title": "No remission → RAI",
+   "lines": [
+    "may worsen eye disease"
+   ]
+  },
+  {
+   "id": "gr_tx_2_1",
+   "x": 996.0,
+   "y": 1560,
+   "w": 121.0,
+   "h": 137,
+   "kind": "gr_w",
+   "title": "Surgery",
+   "lines": [
+    "total thyroid-ectomy, rarely"
+   ]
+  },
+  {
+   "id": "nod_tx_0_0",
+   "x": 1129,
+   "y": 1282,
+   "w": 252,
+   "h": 123,
+   "kind": "ok",
+   "title": "RAI FIRST line",
+   "lines": [
+    "permanent cure · ~6–12 weeks · ~10% need a 2nd dose"
+   ]
+  },
+  {
+   "id": "nod_tx_1_0",
+   "x": 1129,
+   "y": 1427,
+   "w": 252,
+   "h": 125,
+   "kind": "warn",
+   "title": "High risk of permanent hypothyroidism",
+   "lines": [
+    "RAI NEVER in pregnancy"
+   ]
+  },
+  {
+   "id": "nod_tx_2_0",
+   "x": 1129,
+   "y": 1574,
+   "w": 252,
+   "h": 123,
+   "kind": "nod_w",
+   "title": "Surgery",
+   "lines": [
+    "hemithyroidectomy (adenoma) · total (TMNG)"
+   ]
+  },
+  {
+   "id": "thy_tx_0_0",
+   "x": 1393,
+   "y": 1282,
+   "w": 252,
+   "h": 129,
+   "kind": "ok",
+   "title": "SUPPORTIVE only",
+   "lines": [
+    "beta-blocker · NSAIDs, then glucocorticoids for the pain"
+   ]
+  },
+  {
+   "id": "thy_tx_1_0",
+   "x": 1393,
+   "y": 1433,
+   "w": 252,
+   "h": 131,
+   "kind": "warn",
+   "title": "Watch for the HYPOthyroid phase",
+   "lines": [
+    "thyroiditis burns out"
+   ]
+  },
+  {
+   "id": "thy_tx_2_0",
+   "x": 1393,
+   "y": 1586,
+   "w": 252,
+   "h": 111,
+   "kind": "thy_w",
+   "title": "Exogenous",
+   "lines": [
+    "remove the excess"
+   ]
+  },
+  {
+   "id": "subh_tx_0_0",
+   "x": 1657,
+   "y": 1282,
+   "w": 252,
+   "h": 196,
+   "kind": "ok",
+   "title": "TREAT if older and/or TSH lower",
+   "lines": []
+  },
+  {
+   "id": "subh_tx_1_0",
+   "x": 1657,
+   "y": 1500,
+   "w": 252,
+   "h": 196,
+   "kind": "subh_w",
+   "title": "MONITOR if younger and/or borderline low",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_lo",
+   "path": "M977.0 88V113H435.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_hi",
+   "path": "M977.0 88V113H1387.0V138"
+  },
+  {
+   "from": "g_lo",
+   "to": "p_lo"
+  },
+  {
+   "from": "g_hi",
+   "to": "p_hi"
+  },
+  {
+   "from": "p_hi",
+   "to": "rai",
+   "from_dx": -132
+  },
+  {
+   "from": "prim_clue_0_0",
+   "to": "prim_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "prim_clue_1_0",
+   "to": "prim_clue_2_0",
+   "dashed": true
+  },
+  {
+   "from": "cen_clue_0_0",
+   "to": "cen_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "gr_clue_0_0",
+   "to": "gr_clue_1_0",
+   "from_dx": -65.5,
+   "dashed": true
+  },
+  {
+   "from": "gr_clue_0_0",
+   "to": "gr_clue_1_1",
+   "from_dx": 65.5,
+   "dashed": true
+  },
+  {
+   "from": "gr_clue_1_0",
+   "to": "gr_clue_2_0",
+   "to_dx": -65.5,
+   "dashed": true
+  },
+  {
+   "from": "gr_clue_1_1",
+   "to": "gr_clue_2_0",
+   "to_dx": 65.5,
+   "dashed": true
+  },
+  {
+   "from": "nod_clue_0_0",
+   "to": "nod_clue_1_0",
+   "from_dx": -65.5,
+   "dashed": true
+  },
+  {
+   "from": "nod_clue_0_0",
+   "to": "nod_clue_1_1",
+   "from_dx": 65.5,
+   "dashed": true
+  },
+  {
+   "from": "thy_clue_0_0",
+   "to": "thy_clue_1_0",
+   "from_dx": -65.5,
+   "dashed": true
+  },
+  {
+   "from": "thy_clue_0_0",
+   "to": "thy_clue_1_1",
+   "from_dx": 65.5,
+   "dashed": true
+  },
+  {
+   "from": "thy_clue_1_0",
+   "to": "thy_clue_2_0",
+   "to_dx": -65.5,
+   "dashed": true
+  },
+  {
+   "from": "thy_clue_1_1",
+   "to": "thy_clue_2_0",
+   "to_dx": 65.5,
+   "dashed": true
+  },
+  {
+   "from": "subh_clue_0_0",
+   "to": "subh_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "prim_inv_0_0",
+   "to": "prim_inv_1_0"
+  },
+  {
+   "from": "sub_inv_0_0",
+   "to": "sub_inv_1_0"
+  },
+  {
+   "from": "gr_inv_0_0",
+   "to": "gr_inv_1_0"
+  },
+  {
+   "from": "prim_tx_0_0",
+   "to": "prim_tx_1_0"
+  },
+  {
+   "from": "prim_tx_1_0",
+   "to": "prim_tx_2_0"
+  },
+  {
+   "from": "prim_tx_2_0",
+   "to": "prim_tx_3_0"
+  },
+  {
+   "from": "sub_tx_0_0",
+   "to": "sub_tx_1_0"
+  },
+  {
+   "from": "gr_tx_0_0",
+   "to": "gr_tx_1_0"
+  },
+  {
+   "from": "gr_tx_1_0",
+   "to": "gr_tx_2_0",
+   "from_dx": -65.5
+  },
+  {
+   "from": "gr_tx_1_0",
+   "to": "gr_tx_2_1",
+   "from_dx": 65.5
+  },
+  {
+   "from": "nod_tx_0_0",
+   "to": "nod_tx_1_0"
+  },
+  {
+   "from": "nod_tx_1_0",
+   "to": "nod_tx_2_0"
+  },
+  {
+   "from": "thy_tx_0_0",
+   "to": "thy_tx_1_0"
+  },
+  {
+   "from": "thy_tx_1_0",
+   "to": "thy_tx_2_0"
+  },
+  {
+   "from": "subh_tx_0_0",
+   "to": "subh_tx_1_0"
+  },
+  {
+   "from": "prim_head_0_0",
+   "to": "prim_clue_0_0"
+  },
+  {
+   "from": "prim_clue_2_0",
+   "to": "prim_inv_0_0"
+  },
+  {
+   "from": "prim_inv_1_0",
+   "to": "prim_tx_0_0"
+  },
+  {
+   "from": "sub_head_0_0",
+   "to": "sub_clue_0_0"
+  },
+  {
+   "from": "sub_clue_0_0",
+   "to": "sub_inv_0_0"
+  },
+  {
+   "from": "sub_inv_1_0",
+   "to": "sub_tx_0_0"
+  },
+  {
+   "from": "cen_head_0_0",
+   "to": "cen_clue_0_0"
+  },
+  {
+   "from": "cen_clue_1_0",
+   "to": "cen_inv_0_0"
+  },
+  {
+   "from": "cen_inv_0_0",
+   "to": "cen_tx_0_0"
+  },
+  {
+   "from": "gr_head_0_0",
+   "to": "gr_clue_0_0"
+  },
+  {
+   "from": "gr_clue_2_0",
+   "to": "gr_inv_0_0"
+  },
+  {
+   "from": "gr_inv_1_0",
+   "to": "gr_tx_0_0"
+  },
+  {
+   "from": "nod_head_0_0",
+   "to": "nod_clue_0_0"
+  },
+  {
+   "from": "nod_clue_1_0",
+   "to": "nod_inv_0_0",
+   "to_dx": -65.5
+  },
+  {
+   "from": "nod_clue_1_1",
+   "to": "nod_inv_0_0",
+   "to_dx": 65.5
+  },
+  {
+   "from": "nod_inv_0_0",
+   "to": "nod_tx_0_0"
+  },
+  {
+   "from": "thy_head_0_0",
+   "to": "thy_clue_0_0"
+  },
+  {
+   "from": "thy_clue_2_0",
+   "to": "thy_inv_0_0"
+  },
+  {
+   "from": "thy_inv_0_0",
+   "to": "thy_tx_0_0"
+  },
+  {
+   "from": "subh_head_0_0",
+   "to": "subh_clue_0_0"
+  },
+  {
+   "from": "subh_clue_1_0",
+   "to": "subh_inv_0_0"
+  },
+  {
+   "from": "subh_inv_0_0",
+   "to": "subh_tx_0_0"
+  },
+  {
+   "from": "p_lo",
+   "to": "prim_head_0_0",
+   "from_dx": -264,
+   "label": "TSH ↑ · FT4 ↓",
+   "label_at": [
+    171.0,
+    528
+   ]
+  },
+  {
+   "from": "p_lo",
+   "to": "sub_head_0_0",
+   "from_dx": 0,
+   "label": "TSH ↑ · FT4 normal",
+   "label_at": [
+    435.0,
+    528
+   ]
+  },
+  {
+   "from": "p_lo",
+   "to": "cen_head_0_0",
+   "from_dx": 264,
+   "label": "TSH ↔/↓ · FT4 ↓",
+   "label_at": [
+    699.0,
+    528
+   ]
+  },
+  {
+   "from": "rai",
+   "to": "gr_head_0_0",
+   "from_dx": -264,
+   "label": "HIGH, diffuse",
+   "label_at": [
+    991.0,
+    528
+   ]
+  },
+  {
+   "from": "rai",
+   "to": "nod_head_0_0",
+   "from_dx": 0,
+   "label": "HIGH, hot nodule(s)",
+   "label_at": [
+    1255.0,
+    528
+   ]
+  },
+  {
+   "from": "rai",
+   "to": "thy_head_0_0",
+   "from_dx": 264,
+   "label": "LOW",
+   "label_at": [
+    1519.0,
+    528
+   ]
+  },
+  {
+   "from": "p_hi",
+   "to": "subh_head_0_0",
+   "from_dx": 396,
+   "label": "TSH ↓ · FT4/FT3 normal",
+   "label_at": [
+    1783.0,
+    528
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1730,
+   "w": 612,
+   "title": "Screen with a TSH when",
+   "items": [
+    "compatible symptoms · dyslipidemia · anemia · hyponatremia",
+    "personal or family autoimmune disease · Down or Turner syndrome",
+    "previous thyroid disease or therapy · drugs · pregnancy",
+    "suspected pituitary or hypothalamic disease: add FT4",
+    "rare: central HYPERthyroidism, TSH ↔/↑ with FT4 ↑"
+   ]
+  },
+  {
+   "x": 671,
+   "y": 1730,
+   "w": 612,
+   "title": "Lowering production: which first?",
+   "items": [
+    "methimazole first for GRAVES: it can remit",
+    "RAI first for toxic ADENOMA or TMNG, and Graves without remission",
+    "surgery rarely: large symptomatic goiter · suspected cancer · can't take drugs in pregnancy · storm refractory to treatment",
+    "supportive care for everyone: beta-blocker for palpitations, tachycardia, tremor"
+   ]
+  },
+  {
+   "x": 1297,
+   "y": 1730,
+   "w": 612,
+   "title": "Iodine cuts both ways",
+   "items": [
+    "Wolff-Chaikoff: a normal gland CUTS production under an iodine load, then escapes",
+    "subclinical Hashimoto's may not escape → HYPOthyroid",
+    "Jod-Basedow: autonomous nodules or mild Graves use the iodine → HYPERthyroid"
+   ]
+  }
+ ]
+}

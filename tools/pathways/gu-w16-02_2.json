@@ -1,0 +1,554 @@
+{
+ "name": "urinary tract obstruction overview",
+ "width": 1084,
+ "title": "Urinary tract obstruction decision chart: an upper-tract block from a stone (renal colic) sorted by fever and stone size into an infected obstructing stone needing urgent drainage, a small stone likely to pass, or a large or failing stone needing lithotripsy or nephrolithotomy; a lower-tract block (urinary retention at the bladder outlet) relieved by catheter with watch for post-obstructive diuresis; plus how to prevent the next stone",
+ "kinds": {
+  "inf_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "inf_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "inf_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "sm_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sm_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "sm_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "lg_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "lg_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "lg_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ret_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ret_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ret_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 388,
+   "w": 250,
+   "h": 612,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 292,
+   "y": 388,
+   "w": 250,
+   "h": 612,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 544,
+   "y": 388,
+   "w": 250,
+   "h": 612,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 824,
+   "y": 388,
+   "w": 250,
+   "h": 766,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 496,
+   "h": 214,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 750,
+   "h": 242,
+   "text": "TREATMENT"
+  },
+  {
+   "x": 23,
+   "y": 1032,
+   "h": 114,
+   "text": "AFTERWARDS"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 177,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Urine flow BLOCKED: WHERE, and how BAD?",
+   "lines": [
+    "hydronephrosis (dilated pelvis + calyces) on ultrasound or computed tomography (CT) · it can occur WITHOUT a block (reflux)",
+    "worse if: COMPLETE · BOTH sides · INFECTED (speeds nephron loss) · > 6 WEEKS complete = function lost for good"
+   ]
+  },
+  {
+   "id": "g_up",
+   "x": 45,
+   "y": 138,
+   "w": 744,
+   "h": 96,
+   "kind": "plain",
+   "title": "UPPER tract, one side: RENAL COLIC from a stone",
+   "lines": [
+    "severe one-sided flank pain in WAVES → groin, scrotum or labia · hematuria · vomiting",
+    "1 · CT (most sensitive) · ultrasound sees every stone · plain x-ray MISSES uric acid stones",
+    "~also think: aortic aneurysm, pyelonephritis, a mass, musculoskeletal"
+   ]
+  },
+  {
+   "id": "g_lo",
+   "x": 829,
+   "y": 138,
+   "w": 240,
+   "h": 96,
+   "kind": "plain",
+   "title": "LOWER tract: the BLADDER OUTLET",
+   "lines": [
+    "both kidneys back up"
+   ]
+  },
+  {
+   "id": "t_up",
+   "x": 45,
+   "y": 274,
+   "w": 744,
+   "h": 42,
+   "kind": "plain",
+   "title": "2 · FEVER? Then the stone's SIZE",
+   "lines": []
+  },
+  {
+   "id": "inf_head_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 240,
+   "h": 60,
+   "kind": "inf_h",
+   "title": "Obstructing stone + FEVER",
+   "lines": [
+    "SURGICAL EMERGENCY"
+   ]
+  },
+  {
+   "id": "sm_head_0_0",
+   "x": 297,
+   "y": 396,
+   "w": 240,
+   "h": 60,
+   "kind": "sm_h",
+   "title": "Stone likely to PASS",
+   "lines": []
+  },
+  {
+   "id": "lg_head_0_0",
+   "x": 549,
+   "y": 396,
+   "w": 240,
+   "h": 60,
+   "kind": "lg_h",
+   "title": "Stone to REMOVE",
+   "lines": []
+  },
+  {
+   "id": "ret_head_0_0",
+   "x": 829,
+   "y": 396,
+   "w": 240,
+   "h": 60,
+   "kind": "ret_h",
+   "title": "Urinary retention",
+   "lines": [
+    "can't void"
+   ]
+  },
+  {
+   "id": "inf_clue_0_0",
+   "x": 45,
+   "y": 496,
+   "w": 240,
+   "h": 214,
+   "kind": "inf_t",
+   "title": "Infection BEHIND the block",
+   "lines": [
+    "• sepsis can come on FAST",
+    "• antibiotics can't work until it drains"
+   ]
+  },
+  {
+   "id": "sm_clue_0_0",
+   "x": 297,
+   "y": 496,
+   "w": 240,
+   "h": 214,
+   "kind": "sm_t",
+   "title": "Passes on its own",
+   "lines": [
+    "• < 4 mm: 90%",
+    "• 4–8 mm: 50%"
+   ]
+  },
+  {
+   "id": "lg_clue_0_0",
+   "x": 549,
+   "y": 496,
+   "w": 240,
+   "h": 214,
+   "kind": "lg_t",
+   "title": "Surgery if",
+   "lines": [
+    "• > 8 mm: < 10% pass",
+    "• pain despite analgesia",
+    "• renal failure: solitary kidney, poor function",
+    "• job: pilot, bus driver"
+   ]
+  },
+  {
+   "id": "ret_clue_0_0",
+   "x": 829,
+   "y": 496,
+   "w": 240,
+   "h": 114,
+   "kind": "ret_t",
+   "title": "Causes",
+   "lines": [
+    "• MEN: benign prostatic hyperplasia (most)",
+    "• prostate cancer, urethral stricture",
+    "• neurogenic"
+   ]
+  },
+  {
+   "id": "ret_clue_1_0",
+   "x": 829,
+   "y": 632,
+   "w": 240,
+   "h": 78,
+   "kind": "ret_w",
+   "title": "Check K + acid",
+   "lines": [
+    "urine can't be concentrated → K ↑, metabolic acidosis"
+   ]
+  },
+  {
+   "id": "inf_tx_0_0",
+   "x": 45,
+   "y": 750,
+   "w": 240,
+   "h": 110,
+   "kind": "bad",
+   "title": "1 · DRAIN the kidney now",
+   "lines": [
+    "ureteric stent or nephrostomy tube"
+   ]
+  },
+  {
+   "id": "inf_tx_1_0",
+   "x": 45,
+   "y": 882,
+   "w": 240,
+   "h": 110,
+   "kind": "warn",
+   "title": "2 · IV antibiotics",
+   "lines": [
+    "effective once it drains"
+   ]
+  },
+  {
+   "id": "sm_tx_0_0",
+   "x": 297,
+   "y": 750,
+   "w": 240,
+   "h": 78,
+   "kind": "ok",
+   "title": "1 · Analgesia",
+   "lines": [
+    "anti-inflammatory (ketorolac) or a short opioid course"
+   ]
+  },
+  {
+   "id": "sm_tx_1_0",
+   "x": 297,
+   "y": 850,
+   "w": 240,
+   "h": 42,
+   "kind": "ok",
+   "title": "2 · More fluids",
+   "lines": []
+  },
+  {
+   "id": "sm_tx_2_0",
+   "x": 297,
+   "y": 914,
+   "w": 240,
+   "h": 78,
+   "kind": "ok",
+   "title": "3 · Tamsulosin (alpha blocker)",
+   "lines": [
+    "relaxes the ureter: medical expulsive therapy"
+   ]
+  },
+  {
+   "id": "lg_tx_0_0",
+   "x": 549,
+   "y": 750,
+   "w": 240,
+   "h": 242,
+   "kind": "warn",
+   "title": "By SIZE and SITE",
+   "lines": [
+    "• > 2 cm: percutaneous nephrolithotomy",
+    "• ≤ 2 cm: shock wave lithotripsy",
+    "• in the URETER: ureteroscopic laser lithotripsy"
+   ]
+  },
+  {
+   "id": "ret_tx_0_0",
+   "x": 829,
+   "y": 750,
+   "w": 240,
+   "h": 73,
+   "kind": "ok",
+   "title": "1 · URETHRAL CATHETER first",
+   "lines": []
+  },
+  {
+   "id": "ret_tx_1_0",
+   "x": 829,
+   "y": 845,
+   "w": 240,
+   "h": 147,
+   "kind": "warn",
+   "title": "2 · Watch: POST-OBSTRUCTIVE DIURESIS",
+   "lines": [
+    "• Na + water lost after BOTH sides are relieved",
+    "• usually mild · can be life-threatening"
+   ]
+  },
+  {
+   "id": "ret_next_0_0",
+   "x": 829,
+   "y": 1032,
+   "w": 240,
+   "h": 114,
+   "kind": "ret_w",
+   "title": "The prostate",
+   "lines": [
+    "see the BENIGN PROSTATIC HYPERPLASIA chart"
+   ]
+  },
+  {
+   "id": "span0_next_0_0",
+   "x": 45.0,
+   "y": 1032,
+   "w": 367.0,
+   "h": 114,
+   "kind": "ok",
+   "title": "PREVENT the next stone: everyone",
+   "lines": [
+    "• drink MORE",
+    "• keep NORMAL dietary calcium: low calcium ↑ oxalate",
+    "• less salt + protein, more fruit + vegetables"
+   ]
+  },
+  {
+   "id": "span0_next_0_1",
+   "x": 422.0,
+   "y": 1032,
+   "w": 367.0,
+   "h": 114,
+   "kind": "info",
+   "title": "FIND a cause, then treat it",
+   "lines": [
+    "• hyperparathyroidism → treat the cause",
+    "• malabsorption → more calcium, less oxalate",
+    "• renal tubular acidosis → potassium citrate",
+    "• topiramate → stop it"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_up",
+   "path": "M557.0 88V113H417.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_lo",
+   "path": "M557.0 88V113H949.0V138"
+  },
+  {
+   "from": "g_up",
+   "to": "t_up",
+   "from_dx": 0
+  },
+  {
+   "from": "ret_clue_0_0",
+   "to": "ret_clue_1_0"
+  },
+  {
+   "from": "inf_tx_0_0",
+   "to": "inf_tx_1_0"
+  },
+  {
+   "from": "sm_tx_0_0",
+   "to": "sm_tx_1_0"
+  },
+  {
+   "from": "sm_tx_1_0",
+   "to": "sm_tx_2_0"
+  },
+  {
+   "from": "ret_tx_0_0",
+   "to": "ret_tx_1_0"
+  },
+  {
+   "from": "inf_head_0_0",
+   "to": "inf_clue_0_0"
+  },
+  {
+   "from": "inf_clue_0_0",
+   "to": "inf_tx_0_0"
+  },
+  {
+   "from": "inf_tx_1_0",
+   "to": "span0_next_0_0",
+   "to_dx": -63.5
+  },
+  {
+   "from": "t_up",
+   "to": "inf_head_0_0",
+   "from_dx": -252,
+   "label": "FEVER",
+   "label_at": [
+    165.0,
+    356
+   ]
+  },
+  {
+   "from": "sm_head_0_0",
+   "to": "sm_clue_0_0"
+  },
+  {
+   "from": "sm_clue_0_0",
+   "to": "sm_tx_0_0"
+  },
+  {
+   "from": "sm_tx_2_0",
+   "to": "span0_next_0_1",
+   "to_dx": -188.5
+  },
+  {
+   "from": "t_up",
+   "to": "sm_head_0_0",
+   "from_dx": 0,
+   "label": "small · pain controlled",
+   "label_at": [
+    417.0,
+    356
+   ]
+  },
+  {
+   "from": "lg_head_0_0",
+   "to": "lg_clue_0_0"
+  },
+  {
+   "from": "lg_clue_0_0",
+   "to": "lg_tx_0_0"
+  },
+  {
+   "from": "lg_tx_0_0",
+   "to": "span0_next_0_1",
+   "to_dx": 63.5
+  },
+  {
+   "from": "t_up",
+   "to": "lg_head_0_0",
+   "from_dx": 252,
+   "label": "> 8 mm or failing",
+   "label_at": [
+    669.0,
+    356
+   ]
+  },
+  {
+   "from": "ret_head_0_0",
+   "to": "ret_clue_0_0"
+  },
+  {
+   "from": "ret_clue_1_0",
+   "to": "ret_tx_0_0"
+  },
+  {
+   "from": "ret_tx_1_0",
+   "to": "ret_next_0_0"
+  },
+  {
+   "from": "g_lo",
+   "to": "ret_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

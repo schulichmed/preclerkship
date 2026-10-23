@@ -1,0 +1,729 @@
+{
+ "name": "breast overview",
+ "title": "A breast complaint divided by how she presents: a lump (benign, fat necrosis or invasive carcinoma, imaged by age then sampled), breast pain (cyclical, mastitis, or inflammatory carcinoma that mimics it), the nipple (galactorrhea, papilloma, or Paget's disease with an underlying cancer), and screening (carcinoma in situ); each column gives presentation, numbered investigations and management",
+ "col_w": 214,
+ "root": {
+  "title": "A breast problem: how is she PRESENTING?",
+  "lines": [
+   "most breast lumps are NOT cancer · the OLDER she is, the more likely any complaint is serious",
+   "every one: history (age, cycle, family history) · offer a chaperone · examine both breasts + every node group"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_lump",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "A LUMP: benign or WORRISOME on exam?",
+   "lines": []
+  },
+  {
+   "id": "g_pain",
+   "cols": [
+    3,
+    5
+   ],
+   "title": "BREAST PAIN",
+   "lines": []
+  },
+  {
+   "id": "g_dis",
+   "cols": [
+    6,
+    8
+   ],
+   "title": "THE NIPPLE: discharge, or a changed nipple",
+   "lines": []
+  },
+  {
+   "id": "g_scr",
+   "cols": [
+    9,
+    9
+   ],
+   "title": "SCREENING: no symptoms",
+   "lines": []
+  }
+ ],
+ "pres": [
+  {
+   "id": "p_lump",
+   "group": "g_lump",
+   "title": "When you investigate",
+   "lines": [
+    "• IMAGE BY AGE: < 35 ULTRASOUND (breast too dense, risk too low for a mammogram; MRI if high risk), > 35 MAMMOGRAM ± ultrasound",
+    "• then SAMPLE: fine needle aspiration → core biopsy → excision"
+   ]
+  },
+  {
+   "id": "p_pain",
+   "group": "g_pain",
+   "title": "Exam: a mass or suspicious finding?",
+   "lines": [
+    "• YES → the LUMP route",
+    "• NO → is the pain CYCLICAL?"
+   ]
+  },
+  {
+   "id": "p_dis",
+   "group": "g_dis",
+   "title": "Compress the areola",
+   "lines": [
+    "• colour, consistency, volume, which duct",
+    "• normal in lactation"
+   ]
+  },
+  {
+   "id": "p_scr",
+   "group": "g_scr",
+   "title": "Mammogram by RISK",
+   "lines": [
+    "• usual risk, 50–74: every 2 years",
+    "• 40–49: not routinely",
+    "• HIGH risk: YEARLY (see the panel)"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "WORKUP",
+  "clue": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "MANAGEMENT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "ben",
+   "colour": "teal",
+   "drop_label": "benign",
+   "head": [
+    [
+     [
+      "h",
+      "Benign lump",
+      [
+       "fibroglandular tissue · cyst · FIBROADENOMA · fibrocystic change"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "SMOOTH",
+      [
+       "• fibroadenoma: 20s–30s, discrete, MOBILE, rubbery",
+       "• fibrocystic: lumpy, changes with her CYCLE"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Pre-menopausal: recheck after her NEXT PERIOD",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Not resolved → image by age, sample",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Resolved: follow",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Benign biopsy: the report sets her risk",
+      [
+       "see the panel"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "fn",
+   "colour": "brown",
+   "drop_label": "irregular, after trauma",
+   "head": [
+    [
+     [
+      "h",
+      "Fat necrosis",
+      [
+       "BENIGN, but closely MIMICS cancer"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Firm, IRREGULAR mass",
+      [
+       "• ± red skin, retraction, dimpling",
+       "• often superficial",
+       "• may follow TRAUMA"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Image by age, then BIOPSY",
+      [
+       "it feels like cancer: only the biopsy tells them apart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Biopsy confirms: BENIGN",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ca",
+   "colour": "magenta",
+   "drop_label": "worrisome",
+   "head": [
+    [
+     [
+      "h",
+      "Invasive carcinoma",
+      [
+       "malignant cells invade the stroma"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "SINGLE · HARD · FIXED",
+      [
+       "• irregular border",
+       "• > 2 cm",
+       "• skin change, peau d'orange, nipple retraction: LATE"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "1 · Investigate NOW",
+      [
+       "also if post-menopausal or high risk"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Image by age, then BIOPSY",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Receptors pick the drug",
+      [
+       "• estrogen / progesterone receptor (ER/PR) POSITIVE → tamoxifen or an aromatase inhibitor",
+       "• HER2/neu overexpressed → trastuzumab"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Axillary NODES: the key prognostic factor",
+      [
+       "if no distant metastases"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cyc",
+   "colour": "olive",
+   "drop_label": "cyclical",
+   "head": [
+    [
+     [
+      "h",
+      "Cyclical pain",
+      [
+       "hormonal: ducts (estrogen), stroma (progesterone)"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Phasic with her periods",
+      [
+       "luteal phase: day 14 to menstruation"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "ok",
+      "< 35 + normal exam: NO tests",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "Older: more likely real pathology",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Stop an offending pill",
+      [
+       "birth control pill or hormone replacement therapy (HRT)"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · SEVERE and > 7 days: treat",
+      [
+       "• supportive bra",
+       "• compresses",
+       "• nonsteroidal anti-inflammatories (NSAIDs), acetaminophen",
+       "• tamoxifen"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mas",
+   "colour": "orange",
+   "drop_label": "non-cyclical",
+   "head": [
+    [
+     [
+      "h",
+      "Mastitis",
+      [
+       "also non-cyclical: medicines, Cooper's ligament stretch, extramammary"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Tense, HOT, painful breast",
+      [
+       "• ± fever, tender axillary nodes",
+       "• mostly LACTATING: fissures, engorgement"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Antibiotics fail → ultrasound",
+      [
+       "ABSCESS?"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "2 · Not lactating, or not settling",
+      [
+       "→ INFLAMMATORY CARCINOMA? next column"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Antibiotics",
+      [
+       "• lactating: KEEP breastfeeding, empty the breast",
+       "• not lactating: imaging OK → repeat in 3 months"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "2 · Abscess",
+      [
+       "ultrasound-guided aspiration, or incision + drainage"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ic",
+   "colour": "magenta",
+   "drop_label": "red, swollen, not settling",
+   "head": [
+    [
+     [
+      "h",
+      "Inflammatory carcinoma",
+      [
+       "looks like MASTITIS, but it is CANCER",
+       "T4 disease"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Diffuse red, swollen breast",
+      [
+       "• resembles acute mastitis",
+       "• often PEAU D'ORANGE",
+       "• peau d'orange WITHOUT the mastitis look is NOT inflammatory carcinoma"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "1 · Mammogram, BIOPSY",
+      [
+       "tumour blocking the skin's lymphatics"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat as breast cancer",
+      [
+       "receptors and nodes: see INVASIVE CARCINOMA"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "gal",
+   "colour": "blue",
+   "drop_label": "both, many ducts",
+   "head": [
+    [
+     [
+      "h",
+      "Galactorrhea",
+      [
+       "physiological: not pregnancy or lactation",
+       "not from a breast lesion"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Usually BILATERAL · MULTIPLE ducts",
+      [
+       "• only on compression",
+       "• clear, yellow, grey, brown or green"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "Look for the cause",
+      [
+       "• pituitary: HYPERPROLACTINEMIA, dopamine-suppressing drugs (methyldopa)",
+       "• nipple stimulation",
+       "• hypothyroid, kidney disease, cirrhosis"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat the cause",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pap",
+   "colour": "purple",
+   "drop_label": "1 side, 1 duct",
+   "head": [
+    [
+     [
+      "h",
+      "Pathological: PAPILLOMA",
+      [
+       "the commonest · also duct ectasia, fibrocystic change, CANCER"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "UNILATERAL · SINGLE duct · SPONTANEOUS",
+      [
+       "• BLOODY or serous",
+       "• with a mass",
+       "• over 50"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "1 · Inspect the nipple",
+      [
+       "rule out PAGET'S: next column"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Periareolar ultrasound + mammogram",
+      [
+       "galactogram maps the duct, but is NOT diagnostic"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Surgical consult → EXCISE",
+      [
+       "the only way to be sure"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pg",
+   "colour": "magenta",
+   "drop_label": "eczema-like nipple",
+   "head": [
+    [
+     [
+      "h",
+      "Paget's disease of the nipple",
+      [
+       "ALWAYS an underlying CANCER: DCIS or invasive"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Red, scaly, ECZEMA-like nipple + areola",
+      [
+       "• erosion, ulceration",
+       "• a palpable mass → usually INVASIVE"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "1 · Find the underlying cancer",
+      [
+       "image by age, then BIOPSY"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat the underlying cancer",
+      [
+       "see INVASIVE CARCINOMA or CARCINOMA IN SITU"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cis",
+   "colour": "slate",
+   "drop_label": "abnormal",
+   "head": [
+    [
+     [
+      "h",
+      "Carcinoma IN SITU",
+      [
+       "ductal (DCIS) or lobular (LCIS)",
+       "intact myoepithelial layer: NOT invaded"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "DCIS: CALCIFICATIONS",
+      [
+       "on a mammogram"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "LCIS: INCIDENTAL",
+      [
+       "on a biopsy for something else"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "DCIS: a PRECURSOR",
+      [
+       "of invasive cancer"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "LCIS: a RISK FACTOR",
+      [
+       "a non-obligate precursor"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "DCIS: EXCISE",
+      [
+       "complete, negative margins"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "LCIS: close follow-up",
+      [
+       "yearly screen"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "The benign biopsy report sets her cancer risk",
+   "items": [
+    "non-proliferative, ×1: fibrocystic change, cyst, fibroadenoma",
+    "proliferative without atypia, ×1.5–2: papilloma, sclerosing adenosis, radial scar",
+    "ATYPICAL hyperplasia, ×4–5 (×9–10 with a family history) → screen YEARLY"
+   ]
+  },
+  {
+   "title": "Screening + genes",
+   "items": [
+    "HIGH risk, YEARLY mammogram: 1st-degree relative < 50, or two at any age · ovarian cancer · male breast cancer in the family · atypia, LCIS, radial scar, phyllodes · density > 75%",
+    "usual risk: NOT ultrasound, MRI, clinical breast exam or self-exam",
+    "GENETIC TESTING if she has breast cancer and is < 35 · < 50 with two affected relatives · male · Ashkenazi Jewish",
+    "BRCA carrier: yearly MRI + mammogram · prophylactic mastectomy ± oophorectomy · tamoxifen"
+   ]
+  }
+ ]
+}

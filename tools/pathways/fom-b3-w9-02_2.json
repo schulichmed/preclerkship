@@ -1,0 +1,386 @@
+{
+ "name": "anemia by cell size overview",
+ "width": 1100,
+ "title": "Anemia sorted by the mean cell volume on the complete blood count: microcytic, normocytic or macrocytic, plus hemolysis at any size, each pointing to its own approach chart",
+ "kinds": {
+  "mi_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mi_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "mi_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "no_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "no_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "no_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ma_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ma_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ma_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "he_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "he_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "he_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 252,
+   "w": 240,
+   "h": 298,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 310,
+   "y": 252,
+   "w": 240,
+   "h": 298,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 580,
+   "y": 252,
+   "w": 240,
+   "h": 298,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 850,
+   "y": 252,
+   "w": 240,
+   "h": 298,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 378,
+   "h": 164,
+   "text": "NEXT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 185,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Anemia: how BIG are the red cells?",
+   "lines": [
+    "anemia = hemoglobin (Hb) below range: men < 135, women < 115 g/L",
+    "read the mean cell volume (MCV) on the complete blood count (CBC)"
+   ]
+  },
+  {
+   "id": "g_mi",
+   "x": 45,
+   "y": 138,
+   "w": 230,
+   "h": 42,
+   "kind": "plain",
+   "title": "MCV < 80 fL",
+   "lines": []
+  },
+  {
+   "id": "g_no",
+   "x": 315,
+   "y": 138,
+   "w": 230,
+   "h": 42,
+   "kind": "plain",
+   "title": "MCV 80–100 fL",
+   "lines": []
+  },
+  {
+   "id": "g_ma",
+   "x": 585,
+   "y": 138,
+   "w": 230,
+   "h": 42,
+   "kind": "plain",
+   "title": "MCV > 100 fL",
+   "lines": []
+  },
+  {
+   "id": "g_he",
+   "x": 855,
+   "y": 138,
+   "w": 230,
+   "h": 42,
+   "kind": "plain",
+   "title": "ANY MCV",
+   "lines": []
+  },
+  {
+   "id": "mi_head_0_0",
+   "x": 45,
+   "y": 260,
+   "w": 230,
+   "h": 78,
+   "kind": "mi_h",
+   "title": "Microcytic",
+   "lines": [
+    "too little Hb made: heme or globin"
+   ]
+  },
+  {
+   "id": "no_head_0_0",
+   "x": 315,
+   "y": 260,
+   "w": 230,
+   "h": 78,
+   "kind": "no_h",
+   "title": "Normocytic",
+   "lines": [
+    "normal cells, too few of them"
+   ]
+  },
+  {
+   "id": "ma_head_0_0",
+   "x": 585,
+   "y": 260,
+   "w": 230,
+   "h": 78,
+   "kind": "ma_h",
+   "title": "Macrocytic",
+   "lines": [
+    "big cells, but too few of them"
+   ]
+  },
+  {
+   "id": "he_head_0_0",
+   "x": 855,
+   "y": 260,
+   "w": 230,
+   "h": 78,
+   "kind": "he_h",
+   "title": "Hemolysis",
+   "lines": [
+    "can be micro-, normo- or macrocytic"
+   ]
+  },
+  {
+   "id": "mi_next_0_0",
+   "x": 45,
+   "y": 378,
+   "w": 230,
+   "h": 70,
+   "kind": "mi_t",
+   "title": "Is it IRON?",
+   "lines": [
+    "ferritin + film"
+   ]
+  },
+  {
+   "id": "mi_next_1_0",
+   "x": 45,
+   "y": 470,
+   "w": 230,
+   "h": 72,
+   "kind": "mi_w",
+   "title": "see the MICROCYTIC ANEMIA chart",
+   "lines": []
+  },
+  {
+   "id": "no_next_0_0",
+   "x": 315,
+   "y": 378,
+   "w": 230,
+   "h": 80,
+   "kind": "no_t",
+   "title": "Is the marrow RESPONDING?",
+   "lines": [
+    "reticulocyte count"
+   ]
+  },
+  {
+   "id": "no_next_1_0",
+   "x": 315,
+   "y": 480,
+   "w": 230,
+   "h": 62,
+   "kind": "no_w",
+   "title": "see the NORMOCYTIC ANEMIA chart",
+   "lines": []
+  },
+  {
+   "id": "ma_next_0_0",
+   "x": 585,
+   "y": 378,
+   "w": 230,
+   "h": 70,
+   "kind": "ma_t",
+   "title": "Is it MEGALOBLASTIC?",
+   "lines": [
+    "the film first"
+   ]
+  },
+  {
+   "id": "ma_next_1_0",
+   "x": 585,
+   "y": 470,
+   "w": 230,
+   "h": 72,
+   "kind": "ma_w",
+   "title": "see the MACROCYTIC ANEMIA chart",
+   "lines": []
+  },
+  {
+   "id": "he_next_0_0",
+   "x": 855,
+   "y": 378,
+   "w": 230,
+   "h": 70,
+   "kind": "he_t",
+   "title": "Is it IMMUNE?",
+   "lines": [
+    "direct antiglobulin test"
+   ]
+  },
+  {
+   "id": "he_next_1_0",
+   "x": 855,
+   "y": 470,
+   "w": 230,
+   "h": 72,
+   "kind": "he_w",
+   "title": "see the HEMOLYTIC ANEMIA chart",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_mi",
+   "path": "M565.0 88V113H160.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_no",
+   "path": "M565.0 88V113H430.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_ma",
+   "path": "M565.0 88V113H700.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_he",
+   "path": "M565.0 88V113H970.0V138"
+  },
+  {
+   "from": "mi_next_0_0",
+   "to": "mi_next_1_0"
+  },
+  {
+   "from": "no_next_0_0",
+   "to": "no_next_1_0"
+  },
+  {
+   "from": "ma_next_0_0",
+   "to": "ma_next_1_0"
+  },
+  {
+   "from": "he_next_0_0",
+   "to": "he_next_1_0"
+  },
+  {
+   "from": "mi_head_0_0",
+   "to": "mi_next_0_0"
+  },
+  {
+   "from": "g_mi",
+   "to": "mi_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "no_head_0_0",
+   "to": "no_next_0_0"
+  },
+  {
+   "from": "g_no",
+   "to": "no_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ma_head_0_0",
+   "to": "ma_next_0_0"
+  },
+  {
+   "from": "g_ma",
+   "to": "ma_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "he_head_0_0",
+   "to": "he_next_0_0"
+  },
+  {
+   "from": "g_he",
+   "to": "he_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

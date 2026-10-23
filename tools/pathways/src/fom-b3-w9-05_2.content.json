@@ -1,0 +1,404 @@
+{
+ "name": "macrocytic anemia overview",
+ "title": "Macrocytic anemia: the film splits megaloblastic (vitamin B12 or folate deficiency, told apart by methylmalonic acid and homocysteine) from non-megaloblastic causes (liver disease and alcohol, reticulocytosis, pseudo-macrocytosis, hypothyroidism)",
+ "col_w": 218,
+ "root": {
+  "title": "Macrocytic anemia (mean cell volume, MCV > 100 fL): is it MEGALOBLASTIC?",
+  "lines": [
+   "ABCDEF: Alcohol · B12 · Compensatory reticulocytosis · Drugs, dysplasia · Endocrine · Folate, fetus",
+   "1 · complete blood count (CBC) + reticulocytes + film"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_mb",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "MEGALOBLASTIC: DNA synthesis impaired",
+   "lines": [
+    "oval macrocytes, hypersegmented neutrophils"
+   ]
+  },
+  {
+   "id": "g_nm",
+   "cols": [
+    2,
+    5
+   ],
+   "title": "NON-megaloblastic: more membrane, DNA normal",
+   "lines": [
+    "dysplasia: see the MYELODYSPLASTIC SYNDROME chart"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_mm",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "2 · Methylmalonic acid (MMA) + homocysteine",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "b12",
+   "colour": "teal",
+   "drop_from": "t_mm",
+   "drop_label": "MMA ↑ + homocysteine ↑",
+   "head": [
+    [
+     [
+      "h",
+      "Vitamin B12 deficiency",
+      [
+       "stores last 3–4 years"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "NEUROLOGIC signs",
+      [
+       "• lost proprioception, neuropathy",
+       "• cognition, mood; children: delay"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Causes",
+      [
+       "• pernicious anemia, gastrectomy",
+       "• ileal resection, Crohn's",
+       "• vegan diet"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · BOTH ↑",
+      [
+       "serum B12 low"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Antibody workup",
+      [
+       "± colonoscopy"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "B12 replacement",
+      [
+       "• IM cobalamin 100 mcg daily, 1–2 weeks",
+       "• or oral 1 mg"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Prevent",
+      [
+       "B12 after bowel resection"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "fol",
+   "colour": "blue",
+   "drop_from": "t_mm",
+   "drop_label": "homocysteine ↑ only",
+   "head": [
+    [
+     [
+      "h",
+      "Folate deficiency",
+      [
+       "stores last 3–6 months"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "NO neurologic signs",
+      [
+       "glossitis, mild jaundice, diarrhea"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Causes",
+      [
+       "• alcohol, poor diet, jejunal resection",
+       "• anticonvulsants, sulfasalazine, the pill",
+       "• pregnancy, hemolysis, dialysis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Homocysteine ↑ ONLY",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Oral folate 1–5 mg",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Prevent",
+      [
+       "• 0.4 mg in pregnancy",
+       "• B12 + folate in active hemolysis"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "liv",
+   "colour": "orange",
+   "drop_label": "round cells",
+   "head": [
+    [
+     [
+      "h",
+      "Liver disease, alcohol",
+      [
+       "lipid added to the membrane"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Alcohol, liver disease",
+      [
+       "alcohol: marrow toxic, platelets ↓"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Film: ROUND macrocytes",
+      [
+       "neutrophils NORMAL · target cells"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat the liver · stop alcohol",
+      [
+       "replace nutritional deficiencies"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ret",
+   "colour": "magenta",
+   "drop_label": "retics ↑",
+   "head": [
+    [
+     [
+      "h",
+      "Reticulocytosis",
+      [
+       "marrow compensating"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Bleeding or hemolysis",
+      []
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Reticulocytes ↑",
+      [
+       "hemolysis: see the HEMOLYTIC ANEMIA chart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat the bleed or the hemolysis",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ps",
+   "colour": "slate",
+   "drop_label": "clumps",
+   "head": [
+    [
+     [
+      "h",
+      "Pseudo-macrocytosis",
+      [
+       "clumps counted as one big cell"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Multiple myeloma",
+      [
+       "rouleaux"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Cold agglutinin disease",
+      [
+       "agglutination"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "MCV falsely high",
+      [
+       "a counter artifact"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "Not true macrocytosis",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "thy",
+   "colour": "olive",
+   "drop_label": "hypothyroid",
+   "head": [
+    [
+     [
+      "h",
+      "Hypothyroidism",
+      []
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Cold intolerance, weight gain",
+      [
+       "• constipation, hair loss",
+       "• depression, slow heart rate"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Can come with pernicious anemia",
+      [
+       "autoimmune"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Thyroid replacement",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

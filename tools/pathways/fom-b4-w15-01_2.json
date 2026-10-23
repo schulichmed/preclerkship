@@ -1,0 +1,773 @@
+{
+ "name": "immunocompromised host overview",
+ "width": 1364,
+ "title": "Immunocompromised host decision chart: fever or illness sorted by presentation and immune defect into the opportunistic infections tuberculosis, Mycobacterium avium complex, Pneumocystis pneumonia, Cryptococcus and cytomegalovirus, each with clues, investigations in order and management, with the timing of risk after stem cell transplant and how to prevent infection",
+ "kinds": {
+  "tb_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tb_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "tb_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "ma_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ma_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "ma_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "pj_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pj_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "pj_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "cr_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cr_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cr_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cm_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cm_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "cm_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 480,
+   "w": 250,
+   "h": 890,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 292,
+   "y": 480,
+   "w": 250,
+   "h": 890,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 544,
+   "y": 480,
+   "w": 250,
+   "h": 890,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 824,
+   "y": 480,
+   "w": 250,
+   "h": 890,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1104,
+   "y": 480,
+   "w": 250,
+   "h": 890,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 608,
+   "h": 150,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 798,
+   "h": 300,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1138,
+   "h": 224,
+   "text": "MANAGE"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 317,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Fever in an IMMUNOCOMPROMISED host: which DEFECT, and which OPPORTUNIST does it let in?",
+   "lines": [
+    "the usual differential + OPPORTUNISTIC infections + context: immune deficiency is dynamic, TIMING is everything",
+    "STEM CELL transplant: weeks 3–4 Gram-negatives · > 3 months (CD4 last) encapsulated bacteria, fungi, viruses",
+    "the presentation is blunted: fever may be ABSENT on cytokine blockers (anakinra, rilonacept, tocilizumab, anti-TNF)",
+    "PREVENT: vaccinate BEFORE immunosuppression (LIVE vaccines generally unsafe) · no vaccine → PROPHYLAXIS"
+   ]
+  },
+  {
+   "id": "g_lu",
+   "x": 45,
+   "y": 174,
+   "w": 744,
+   "h": 98,
+   "kind": "plain",
+   "title": "COUGH, DYSPNEA: the LUNG",
+   "lines": []
+  },
+  {
+   "id": "g_cn",
+   "x": 829,
+   "y": 174,
+   "w": 240,
+   "h": 98,
+   "kind": "plain",
+   "title": "HEADACHE + FEVER",
+   "lines": [
+    "meningitis-like"
+   ]
+  },
+  {
+   "id": "g_cm",
+   "x": 1109,
+   "y": 174,
+   "w": 240,
+   "h": 98,
+   "kind": "plain",
+   "title": "PROLONGED FEVER, low counts",
+   "lines": [
+    "HIV CD4 < 100 · transplant · chemotherapy, immunosuppressants"
+   ]
+  },
+  {
+   "id": "t_lu",
+   "x": 45,
+   "y": 312,
+   "w": 744,
+   "h": 96,
+   "kind": "plain",
+   "title": "What RISK, and how fast?",
+   "lines": [
+    "• cough > 3 weeks + TB risk, ANY CD4 count → TB",
+    "• structural lung disease, or HIV with CD4 < 50 → MAC",
+    "• CD4 < 200, steroids, transplant + HYPOXEMIA → PJP"
+   ]
+  },
+  {
+   "id": "tb_head_0_0",
+   "x": 45,
+   "y": 488,
+   "w": 240,
+   "h": 80,
+   "kind": "tb_h",
+   "title": "Tuberculosis (TB)",
+   "lines": [
+    "M. tuberculosis · AIRBORNE"
+   ]
+  },
+  {
+   "id": "ma_head_0_0",
+   "x": 297,
+   "y": 488,
+   "w": 240,
+   "h": 80,
+   "kind": "ma_h",
+   "title": "M. avium complex (MAC)",
+   "lines": [
+    "water, HOT TUBS",
+    "NOT person to person"
+   ]
+  },
+  {
+   "id": "pj_head_0_0",
+   "x": 549,
+   "y": 488,
+   "w": 240,
+   "h": 80,
+   "kind": "pj_h",
+   "title": "Pneumocystis pneumonia (PJP)",
+   "lines": [
+    "P. jirovecii, a yeast-like fungus"
+   ]
+  },
+  {
+   "id": "cr_head_0_0",
+   "x": 829,
+   "y": 488,
+   "w": 240,
+   "h": 80,
+   "kind": "cr_h",
+   "title": "Cryptococcus",
+   "lines": [
+    "C. neoformans, C. gattii",
+    "trees, bird droppings"
+   ]
+  },
+  {
+   "id": "cm_head_0_0",
+   "x": 1109,
+   "y": 488,
+   "w": 240,
+   "h": 80,
+   "kind": "cm_h",
+   "title": "Cytomegalovirus (CMV)",
+   "lines": [
+    "latent in monocytes: REACTIVATES"
+   ]
+  },
+  {
+   "id": "tb_pres_0_0",
+   "x": 45,
+   "y": 608,
+   "w": 240,
+   "h": 150,
+   "kind": "tb_t",
+   "title": "Cough > 3 weeks",
+   "lines": [
+    "• hemoptysis, night sweats, weight loss",
+    "• born abroad, contacts, Indigenous, prison, elderly",
+    "• REACTIVATION: prior TB, HIV, transplant, steroids"
+   ]
+  },
+  {
+   "id": "ma_pres_0_0",
+   "x": 297,
+   "y": 608,
+   "w": 240,
+   "h": 150,
+   "kind": "ma_t",
+   "title": "Two settings",
+   "lines": [
+    "• cystic fibrosis, COPD, bronchiectasis → LUNG disease",
+    "• HIV, CD4 < 50 → DISSEMINATED",
+    "• dyspnea, abdominal pain, anemia"
+   ]
+  },
+  {
+   "id": "pj_pres_0_0",
+   "x": 549,
+   "y": 608,
+   "w": 240,
+   "h": 150,
+   "kind": "pj_t",
+   "title": "Fever, cough, dyspnea + HYPOXEMIA",
+   "lines": [
+    "• O2 saturation < 93%",
+    "• HALF are not HIV: transplant, malignancy, long-term STEROIDS"
+   ]
+  },
+  {
+   "id": "cr_pres_0_0",
+   "x": 829,
+   "y": 608,
+   "w": 240,
+   "h": 150,
+   "kind": "cr_t",
+   "title": "MENINGITIS",
+   "lines": [
+    "• headache, fever, stiff neck",
+    "• lung: nodules, cough, hemoptysis",
+    "• skin: umbilicated papules"
+   ]
+  },
+  {
+   "id": "cm_pres_0_0",
+   "x": 1109,
+   "y": 608,
+   "w": 240,
+   "h": 150,
+   "kind": "cm_t",
+   "title": "CMV syndrome ± organ disease",
+   "lines": [
+    "• fever, low platelets + whites, mild hepatitis",
+    "• pneumonia, colitis, RETINITIS, encephalitis"
+   ]
+  },
+  {
+   "id": "tb_inv_0_0",
+   "x": 45,
+   "y": 798,
+   "w": 240,
+   "h": 98,
+   "kind": "bad",
+   "title": "1 · AIRBORNE precautions now",
+   "lines": [
+    "off only with another diagnosis + infectious diseases / infection control"
+   ]
+  },
+  {
+   "id": "tb_inv_1_0",
+   "x": 45,
+   "y": 918,
+   "w": 240,
+   "h": 98,
+   "kind": "tb_t",
+   "title": "2 · 3 sputa, ≥ 1 h apart, 1 early morning",
+   "lines": [
+    "• acid-fast stain + culture",
+    "• X-ray / CT: upper lobe, CAVITIES"
+   ]
+  },
+  {
+   "id": "tb_inv_2_0",
+   "x": 45,
+   "y": 1038,
+   "w": 240,
+   "h": 60,
+   "kind": "warn",
+   "title": "3 negative smears ≠ no TB",
+   "lines": [
+    "sensitivity only 65–70%"
+   ]
+  },
+  {
+   "id": "ma_inv_0_0",
+   "x": 297,
+   "y": 798,
+   "w": 240,
+   "h": 130,
+   "kind": "ma_t",
+   "title": "1 · Imaging + respiratory culture",
+   "lines": []
+  },
+  {
+   "id": "ma_inv_1_0",
+   "x": 297,
+   "y": 950,
+   "w": 240,
+   "h": 148,
+   "kind": "ma_w",
+   "title": "2 · Disseminated: blood + stool",
+   "lines": [
+    "mycobacterial culture"
+   ]
+  },
+  {
+   "id": "pj_inv_0_0",
+   "x": 549,
+   "y": 798,
+   "w": 240,
+   "h": 158,
+   "kind": "pj_t",
+   "title": "1 · ↑ lactate dehydrogenase (LDH)",
+   "lines": [
+    "• X-ray: interstitial pattern",
+    "• CT: GROUND-GLASS"
+   ]
+  },
+  {
+   "id": "pj_inv_1_0",
+   "x": 549,
+   "y": 978,
+   "w": 240,
+   "h": 120,
+   "kind": "pj_w",
+   "title": "2 · Bronchoscopy + lavage",
+   "lines": [
+    "calcofluor and silver (GMS) stains"
+   ]
+  },
+  {
+   "id": "cr_inv_0_0",
+   "x": 829,
+   "y": 798,
+   "w": 240,
+   "h": 130,
+   "kind": "bad",
+   "title": "1 · ALWAYS test for HIV",
+   "lines": [
+    "cryptococcus in blood, lung or CSF"
+   ]
+  },
+  {
+   "id": "cr_inv_1_0",
+   "x": 829,
+   "y": 950,
+   "w": 240,
+   "h": 148,
+   "kind": "cr_t",
+   "title": "2 · SERIAL lumbar punctures",
+   "lines": [
+    "• raised intracranial pressure",
+    "• culture clearance"
+   ]
+  },
+  {
+   "id": "cm_inv_0_0",
+   "x": 1109,
+   "y": 798,
+   "w": 240,
+   "h": 139,
+   "kind": "cm_t",
+   "title": "1 · Before transplant: donor + recipient IgG",
+   "lines": [
+    "recipient NEGATIVE + donor POSITIVE = HIGHEST risk"
+   ]
+  },
+  {
+   "id": "cm_inv_1_0",
+   "x": 1109,
+   "y": 959,
+   "w": 240,
+   "h": 139,
+   "kind": "cm_w",
+   "title": "2 · Immunocompromised: CMV PCR",
+   "lines": [
+    "• monitor + diagnose",
+    "• tissue: 'owl eye' cells"
+   ]
+  },
+  {
+   "id": "tb_tx_0_0",
+   "x": 45,
+   "y": 1138,
+   "w": 240,
+   "h": 110,
+   "kind": "ok",
+   "title": "RIPE: 4 drugs",
+   "lines": [
+    "rifampin, isoniazid, pyrazinamide, ethambutol"
+   ]
+  },
+  {
+   "id": "tb_tx_1_0",
+   "x": 45,
+   "y": 1270,
+   "w": 240,
+   "h": 92,
+   "kind": "tb_w",
+   "title": "TB ↔ HIV",
+   "lines": [
+    "see one, test for the other"
+   ]
+  },
+  {
+   "id": "ma_tx_0_0",
+   "x": 297,
+   "y": 1138,
+   "w": 240,
+   "h": 224,
+   "kind": "ok",
+   "title": "Azithromycin + rifampin + ethambutol",
+   "lines": [
+    "• NOT the TB regimen",
+    "• prolonged: with respirology or ID"
+   ]
+  },
+  {
+   "id": "pj_tx_0_0",
+   "x": 549,
+   "y": 1138,
+   "w": 240,
+   "h": 78,
+   "kind": "ok",
+   "title": "1 · TMP-SMX",
+   "lines": [
+    "trimethoprim-sulfamethoxazole",
+    "+ steroids if SEVERE"
+   ]
+  },
+  {
+   "id": "pj_tx_1_0",
+   "x": 549,
+   "y": 1238,
+   "w": 240,
+   "h": 42,
+   "kind": "pj_w",
+   "title": "2 · Clindamycin-primaquine",
+   "lines": []
+  },
+  {
+   "id": "pj_tx_2_0",
+   "x": 549,
+   "y": 1302,
+   "w": 240,
+   "h": 60,
+   "kind": "ok",
+   "title": "PREVENT while CD4 < 200",
+   "lines": [
+    "prophylaxis in HIV + transplant"
+   ]
+  },
+  {
+   "id": "cr_tx_0_0",
+   "x": 829,
+   "y": 1138,
+   "w": 240,
+   "h": 111,
+   "kind": "ok",
+   "title": "Induction → consolidation → maintenance",
+   "lines": [
+    "drugs and doses: see the ANTIFUNGALS chart"
+   ]
+  },
+  {
+   "id": "cr_tx_1_0",
+   "x": 829,
+   "y": 1271,
+   "w": 240,
+   "h": 91,
+   "kind": "cr_w",
+   "title": "HIV: watch immune recovery",
+   "lines": [
+    "CD4 > 100 + very low viral load for > 3 months"
+   ]
+  },
+  {
+   "id": "cm_tx_0_0",
+   "x": 1109,
+   "y": 1138,
+   "w": 240,
+   "h": 118,
+   "kind": "ok",
+   "title": "Prevent in transplant",
+   "lines": [
+    "• PCR monitoring + pre-emptive therapy",
+    "• or prophylaxis (letermovir)"
+   ]
+  },
+  {
+   "id": "cm_tx_1_0",
+   "x": 1109,
+   "y": 1278,
+   "w": 240,
+   "h": 84,
+   "kind": "cm_w",
+   "title": "Treat: see the ANTIVIRALS chart",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_lu",
+   "path": "M697.0 124V149H417.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_cn",
+   "path": "M697.0 124V149H949.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_cm",
+   "path": "M697.0 124V149H1229.0V174"
+  },
+  {
+   "from": "g_lu",
+   "to": "t_lu",
+   "from_dx": 0
+  },
+  {
+   "from": "tb_inv_0_0",
+   "to": "tb_inv_1_0"
+  },
+  {
+   "from": "tb_inv_1_0",
+   "to": "tb_inv_2_0"
+  },
+  {
+   "from": "ma_inv_0_0",
+   "to": "ma_inv_1_0"
+  },
+  {
+   "from": "pj_inv_0_0",
+   "to": "pj_inv_1_0"
+  },
+  {
+   "from": "cr_inv_0_0",
+   "to": "cr_inv_1_0"
+  },
+  {
+   "from": "cm_inv_0_0",
+   "to": "cm_inv_1_0"
+  },
+  {
+   "from": "tb_tx_0_0",
+   "to": "tb_tx_1_0"
+  },
+  {
+   "from": "pj_tx_0_0",
+   "to": "pj_tx_1_0"
+  },
+  {
+   "from": "pj_tx_1_0",
+   "to": "pj_tx_2_0"
+  },
+  {
+   "from": "cr_tx_0_0",
+   "to": "cr_tx_1_0"
+  },
+  {
+   "from": "cm_tx_0_0",
+   "to": "cm_tx_1_0"
+  },
+  {
+   "from": "tb_head_0_0",
+   "to": "tb_pres_0_0"
+  },
+  {
+   "from": "tb_pres_0_0",
+   "to": "tb_inv_0_0"
+  },
+  {
+   "from": "tb_inv_2_0",
+   "to": "tb_tx_0_0"
+  },
+  {
+   "from": "t_lu",
+   "to": "tb_head_0_0",
+   "from_dx": -252,
+   "label": "> 3 WEEKS, TB risk",
+   "label_at": [
+    165.0,
+    448
+   ]
+  },
+  {
+   "from": "ma_head_0_0",
+   "to": "ma_pres_0_0"
+  },
+  {
+   "from": "ma_pres_0_0",
+   "to": "ma_inv_0_0"
+  },
+  {
+   "from": "ma_inv_1_0",
+   "to": "ma_tx_0_0"
+  },
+  {
+   "from": "t_lu",
+   "to": "ma_head_0_0",
+   "from_dx": 0,
+   "label": "LUNG DISEASE · CD4 < 50",
+   "label_at": [
+    417.0,
+    448
+   ]
+  },
+  {
+   "from": "pj_head_0_0",
+   "to": "pj_pres_0_0"
+  },
+  {
+   "from": "pj_pres_0_0",
+   "to": "pj_inv_0_0"
+  },
+  {
+   "from": "pj_inv_1_0",
+   "to": "pj_tx_0_0"
+  },
+  {
+   "from": "t_lu",
+   "to": "pj_head_0_0",
+   "from_dx": 252,
+   "label": "CD4 < 200 · steroids",
+   "label_at": [
+    669.0,
+    448
+   ]
+  },
+  {
+   "from": "cr_head_0_0",
+   "to": "cr_pres_0_0"
+  },
+  {
+   "from": "cr_pres_0_0",
+   "to": "cr_inv_0_0"
+  },
+  {
+   "from": "cr_inv_1_0",
+   "to": "cr_tx_0_0"
+  },
+  {
+   "from": "g_cn",
+   "to": "cr_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "cm_head_0_0",
+   "to": "cm_pres_0_0"
+  },
+  {
+   "from": "cm_pres_0_0",
+   "to": "cm_inv_0_0"
+  },
+  {
+   "from": "cm_inv_1_0",
+   "to": "cm_tx_0_0"
+  },
+  {
+   "from": "g_cm",
+   "to": "cm_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

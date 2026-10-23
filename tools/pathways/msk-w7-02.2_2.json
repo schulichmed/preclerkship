@@ -1,0 +1,594 @@
+{
+ "name": "mechanical back and neck pain overview",
+ "width": 1324,
+ "title": "Mechanical back and neck pain: axial pain worse with movement and better with rest, with no red flags, sorted by the structure it comes from (disc, disc herniation, facet joint, muscle, whiplash); each column gives what tells it apart, investigations and treatment, with the rule for who to image below",
+ "kinds": {
+  "dis_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dis_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "dis_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "her_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "her_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "her_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "fac_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fac_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "fac_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "mus_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mus_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "mus_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "wad_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "wad_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "wad_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 242,
+   "h": 644,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 284,
+   "y": 288,
+   "w": 242,
+   "h": 644,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 556,
+   "y": 288,
+   "w": 242,
+   "h": 644,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 828,
+   "y": 288,
+   "w": 242,
+   "h": 644,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1072,
+   "y": 288,
+   "w": 242,
+   "h": 644,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 434,
+   "h": 152,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 626,
+   "h": 98,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 764,
+   "h": 160,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 297,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Axial neck or back pain, WORSE with movement, BETTER with rest: which structure?",
+   "lines": [
+    "history with OLDCARS + red flags every time · mechanical pain has NO red flags",
+    "any red flag → image now: see the NON-MECHANICAL chart"
+   ]
+  },
+  {
+   "id": "g_disc",
+   "x": 45,
+   "y": 138,
+   "w": 476,
+   "h": 78,
+   "kind": "plain",
+   "title": "The DISC",
+   "lines": [
+    "repeated loading → end-plate damage → tears in the anulus → disc loses height"
+   ]
+  },
+  {
+   "id": "g_facet",
+   "x": 561,
+   "y": 138,
+   "w": 232,
+   "h": 78,
+   "kind": "plain",
+   "title": "The FACET joint",
+   "lines": [
+    "a synovial joint: it gets arthritis"
+   ]
+  },
+  {
+   "id": "g_musc",
+   "x": 833,
+   "y": 138,
+   "w": 476,
+   "h": 78,
+   "kind": "plain",
+   "title": "The MUSCLES",
+   "lines": [
+    "no test proves it: investigate only to rule other things out"
+   ]
+  },
+  {
+   "id": "dis_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 232,
+   "h": 98,
+   "kind": "dis_h",
+   "title": "Discogenic pain",
+   "lines": [
+    "internal disc disruption: nucleus pushes into tears, anulus INTACT"
+   ]
+  },
+  {
+   "id": "her_head_0_0",
+   "x": 289,
+   "y": 296,
+   "w": 232,
+   "h": 98,
+   "kind": "her_h",
+   "title": "Disc herniation",
+   "lines": [
+    "nucleus goes OUT through the anulus"
+   ]
+  },
+  {
+   "id": "fac_head_0_0",
+   "x": 561,
+   "y": 296,
+   "w": 232,
+   "h": 98,
+   "kind": "fac_h",
+   "title": "Facet (zygapophyseal) pain",
+   "lines": [
+    "arthritis of the facet joint"
+   ]
+  },
+  {
+   "id": "mus_head_0_0",
+   "x": 833,
+   "y": 296,
+   "w": 232,
+   "h": 98,
+   "kind": "mus_h",
+   "title": "Muscle",
+   "lines": [
+    "• acute strain or spasm",
+    "• repetitive strain",
+    "• myofascial trigger points"
+   ]
+  },
+  {
+   "id": "wad_head_0_0",
+   "x": 1077,
+   "y": 296,
+   "w": 232,
+   "h": 98,
+   "kind": "wad_h",
+   "title": "Whiplash associated disorder",
+   "lines": [
+    "acceleration-deceleration, e.g. car crash"
+   ]
+  },
+  {
+   "id": "dis_pres_0_0",
+   "x": 45,
+   "y": 434,
+   "w": 232,
+   "h": 152,
+   "kind": "dis_t",
+   "title": "Axial > leg",
+   "lines": [
+    "• WORSE bending FORWARD (flexion)",
+    "• 20-40% of back pain"
+   ]
+  },
+  {
+   "id": "her_pres_0_0",
+   "x": 289,
+   "y": 434,
+   "w": 232,
+   "h": 152,
+   "kind": "her_t",
+   "title": "Younger · lifting · SUDDEN axial pain",
+   "lines": [
+    "• WORSE with cough or sneeze",
+    "• goes posterolateral, toward the roots"
+   ]
+  },
+  {
+   "id": "fac_pres_0_0",
+   "x": 561,
+   "y": 434,
+   "w": 232,
+   "h": 152,
+   "kind": "fac_t",
+   "title": "Localized axial, ? one-sided",
+   "lines": [
+    "• WORSE with EXTENSION, eased by flexion",
+    "• neck → headache · low back: rarely past the knee"
+   ]
+  },
+  {
+   "id": "mus_pres_0_0",
+   "x": 833,
+   "y": 434,
+   "w": 232,
+   "h": 152,
+   "kind": "mus_t",
+   "title": "Movement-related, no red flags",
+   "lines": [
+    "• repetitive strain: repetitive or forceful tasks, vibration, awkward postures",
+    "• trigger point: tender when pressed, can refer pain"
+   ]
+  },
+  {
+   "id": "wad_pres_0_0",
+   "x": 1077,
+   "y": 434,
+   "w": 232,
+   "h": 152,
+   "kind": "wad_t",
+   "title": "Neck: MUSCLES most often",
+   "lines": [
+    "less often: facets > anterior longitudinal ligament > bone > cord"
+   ]
+  },
+  {
+   "id": "dis_inv_0_0",
+   "x": 45,
+   "y": 626,
+   "w": 232,
+   "h": 98,
+   "kind": "dis_w",
+   "title": "No imaging at first",
+   "lines": [
+    "see who to image, below"
+   ]
+  },
+  {
+   "id": "her_inv_0_0",
+   "x": 289,
+   "y": 626,
+   "w": 232,
+   "h": 98,
+   "kind": "her_w",
+   "title": "Uncomplicated: image only after",
+   "lines": [
+    "a failed 4-6 week conservative trial"
+   ]
+  },
+  {
+   "id": "fac_inv_0_0",
+   "x": 561,
+   "y": 626,
+   "w": 232,
+   "h": 98,
+   "kind": "fac_w",
+   "title": "Imaging may not help",
+   "lines": [
+    "facet degeneration does not match symptoms"
+   ]
+  },
+  {
+   "id": "mus_inv_0_0",
+   "x": 833,
+   "y": 626,
+   "w": 232,
+   "h": 98,
+   "kind": "mus_w",
+   "title": "No test diagnoses it",
+   "lines": [
+    "rule out red flags; image only if concerned"
+   ]
+  },
+  {
+   "id": "wad_inv_0_0",
+   "x": 1077,
+   "y": 626,
+   "w": 232,
+   "h": 98,
+   "kind": "wad_w",
+   "title": "More than pain, stiffness, ↓ range?",
+   "lines": [
+    "• X-ray if fracture is a worry",
+    "• MRI if any neurological sign"
+   ]
+  },
+  {
+   "id": "dis_tx_0_0",
+   "x": 45,
+   "y": 764,
+   "w": 232,
+   "h": 160,
+   "kind": "ok",
+   "title": "Conservative",
+   "lines": [
+    "• therapy, exercise",
+    "• NSAIDs acutely, acetaminophen"
+   ]
+  },
+  {
+   "id": "her_tx_0_0",
+   "x": 289,
+   "y": 764,
+   "w": 232,
+   "h": 160,
+   "kind": "ok",
+   "title": "Conservative first",
+   "lines": [
+    "leg pain in a dermatome = radiculopathy: see the NON-MECHANICAL chart"
+   ]
+  },
+  {
+   "id": "fac_tx_0_0",
+   "x": 561,
+   "y": 764,
+   "w": 232,
+   "h": 60,
+   "kind": "ok",
+   "title": "1 · Flexion-based therapy",
+   "lines": [
+    "NSAIDs acutely, acetaminophen"
+   ]
+  },
+  {
+   "id": "fac_tx_1_0",
+   "x": 561,
+   "y": 846,
+   "w": 232,
+   "h": 78,
+   "kind": "ok",
+   "title": "2 · ? Joint injection",
+   "lines": [
+    "• medial branch block",
+    "• or ablation"
+   ]
+  },
+  {
+   "id": "mus_tx_0_0",
+   "x": 833,
+   "y": 764,
+   "w": 232,
+   "h": 160,
+   "kind": "ok",
+   "title": "Reassure: EXCELLENT prognosis",
+   "lines": [
+    "• relative rest, ice or heat, topicals",
+    "• short oral anti-inflammatory",
+    "• physiotherapy: postural support"
+   ]
+  },
+  {
+   "id": "wad_tx_0_0",
+   "x": 1077,
+   "y": 764,
+   "w": 232,
+   "h": 160,
+   "kind": "ok",
+   "title": "Keep moving: NO collar",
+   "lines": [
+    "• heat, ice · acetaminophen, NSAID",
+    "• MODEST physio: aggressive can worsen it"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_disc",
+   "path": "M677.0 88V113H283.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_facet",
+   "path": "M677.0 88V113H677.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_musc",
+   "path": "M677.0 88V113H1071.0V138"
+  },
+  {
+   "from": "fac_tx_0_0",
+   "to": "fac_tx_1_0"
+  },
+  {
+   "from": "dis_head_0_0",
+   "to": "dis_pres_0_0"
+  },
+  {
+   "from": "dis_pres_0_0",
+   "to": "dis_inv_0_0"
+  },
+  {
+   "from": "dis_inv_0_0",
+   "to": "dis_tx_0_0"
+  },
+  {
+   "from": "g_disc",
+   "to": "dis_head_0_0",
+   "from_dx": -122
+  },
+  {
+   "from": "her_head_0_0",
+   "to": "her_pres_0_0"
+  },
+  {
+   "from": "her_pres_0_0",
+   "to": "her_inv_0_0"
+  },
+  {
+   "from": "her_inv_0_0",
+   "to": "her_tx_0_0"
+  },
+  {
+   "from": "g_disc",
+   "to": "her_head_0_0",
+   "from_dx": 122
+  },
+  {
+   "from": "fac_head_0_0",
+   "to": "fac_pres_0_0"
+  },
+  {
+   "from": "fac_pres_0_0",
+   "to": "fac_inv_0_0"
+  },
+  {
+   "from": "fac_inv_0_0",
+   "to": "fac_tx_0_0"
+  },
+  {
+   "from": "g_facet",
+   "to": "fac_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "mus_head_0_0",
+   "to": "mus_pres_0_0"
+  },
+  {
+   "from": "mus_pres_0_0",
+   "to": "mus_inv_0_0"
+  },
+  {
+   "from": "mus_inv_0_0",
+   "to": "mus_tx_0_0"
+  },
+  {
+   "from": "g_musc",
+   "to": "mus_head_0_0",
+   "from_dx": -122
+  },
+  {
+   "from": "wad_head_0_0",
+   "to": "wad_pres_0_0"
+  },
+  {
+   "from": "wad_pres_0_0",
+   "to": "wad_inv_0_0"
+  },
+  {
+   "from": "wad_inv_0_0",
+   "to": "wad_tx_0_0"
+  },
+  {
+   "from": "g_musc",
+   "to": "wad_head_0_0",
+   "from_dx": 122
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 958,
+   "w": 1264,
+   "title": "Who to image (no red flags)",
+   "items": [
+    "UNDER 6 weeks → NO imaging",
+    "OVER 6 weeks DESPITE good conservative care → X-ray can be the starting point",
+    "imaging indicated → MRI is best · CT only if MRI is contraindicated or unavailable",
+    "imaging is often normal, and disc degeneration is common in adults with NO back pain"
+   ],
+   "cols": 1
+  }
+ ]
+}

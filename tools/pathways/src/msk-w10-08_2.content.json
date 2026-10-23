@@ -1,0 +1,70 @@
+{
+ "name": "juvenile idiopathic arthritis overview",
+ "title": "Juvenile idiopathic arthritis: fever with rash marks systemic JIA; otherwise the joint count in the first 6 months splits oligoarticular from polyarticular, and enthesitis or psoriasis marks the twins; each column gives presentation, investigations and treatment in order, with uveitis screening and first steps below",
+ "col_w": 236,
+ "root": {
+  "title": "Child with arthritis > 6 weeks, other causes excluded: which JIA subtype?",
+  "lines": [
+   "onset < 16 · 1 or more joints · a CLINICAL diagnosis of exclusion",
+   "red flags (constitutional, acute, severe or night pain, can't walk, red joint) → think of something else"
+  ]
+ },
+ "groups": [
+  {"id": "g_sys", "cols": [0, 0], "title": "Spiking FEVER + rash", "lines": []},
+  {"id": "g_cnt", "cols": [1, 2], "title": "No fever: COUNT the joints", "lines": ["in the first 6 months"]},
+  {"id": "g_twin", "cols": [3, 4], "title": "Entheses, spine or psoriasis", "lines": ["the 'twins' of adult spondyloarthritis"]}
+ ],
+ "sections": ["head", "pres", "inv", "tx"],
+ "row_names": {"pres": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
+ "dashed_sections": ["pres"],
+ "columns": [
+  {"id": "sys", "colour": "magenta",
+   "head": [[["h", "Systemic (Still's disease)", ["10% · any age · boys = girls"]]]],
+   "pres": [[["t", "Fever ≥ 39 °C once or twice daily", ["• well between spikes", "• salmon rash with the fever", "• aches WITHOUT swelling early"]]],
+            [["w", "Systemic signs", ["• big liver and spleen, nodes", "• serositis"]]]],
+   "inv": [[["t", "1 · Complete blood count", ["• white cells ↑ · platelets ↑", "• anemia"]]],
+           [["bad", "Often mistaken for infection or leukemia", []]]],
+   "tx": [[["ok", "1 · Anti-inflammatory (NSAID) + systemic steroids", []]],
+          [["ok", "2 · Fever persists → biologic", ["• interleukin-1 blocker (anakinra)", "• interleukin-6 blocker (tocilizumab)"]]],
+          [["warn", "No fever → treat as oligo or poly", []]],
+          [["bad", "Macrophage activation syndrome", ["the life-threatening complication"]]]]},
+  {"id": "oli", "colour": "teal", "drop_label": "≤ 4 joints",
+   "head": [[["h", "Oligoarticular", ["35% · girls 4:1 · under 6"]]]],
+   "pres": [[["t", "'Painless limp'", ["• warm, swollen, not very tender", "• knee, ankle, wrist, elbow"]]],
+            [["bad", "Almost NEVER the hip", []]]],
+   "inv": [[["t", "Antinuclear antibody (ANA) + → highest uveitis risk", ["ANA does NOT diagnose JIA"]]],
+           [["w", "X-ray: compare the OTHER side", ["one joint → rule out tumour"]]]],
+   "tx": [[["ok", "1 · NSAIDs and/or steroid joint injection", []]],
+          [["warn", "Not improving or extends → poly course", ["⅓ remit · ⅓ stay ≤ 4 · ⅓ extend"]]]]},
+  {"id": "pol", "colour": "blue", "drop_label": "≥ 5 joints",
+   "head": [[["h", "Polyarticular", ["girls 3:1 · stiff ≥ 60 min · fatigue", "rheumatoid factor (RF) splits it"]]]],
+   "pres": [[["w", "RF negative", ["• 15%", "• younger", "• fewer joints", "• asymmetric"]], ["w", "RF positive", ["• 5%", "• older", "• many joints", "• like adult rheumatoid arthritis"]]]],
+   "inv": [[["t", "Check RF", ["classifies and prognosticates"]]]],
+   "tx": [[["ok", "1 · NSAIDs ± steroid bridge", ["joint injection or oral"]]],
+          [["ok", "2 · Methotrexate or leflunomide", []]],
+          [["ok", "3 · Biologic: shared decision", ["• etanercept, adalimumab", "• tocilizumab, abatacept"]]]]},
+  {"id": "era", "colour": "orange",
+   "head": [[["h", "Enthesitis-related", ["10% · boys · over 10"]]]],
+   "pres": [[["t", "Enthesitis · sacroiliitis · dactylitis", ["• ± peripheral joints", "• family history: ankylosing spondylitis, bowel disease, psoriasis"]]],
+            [["bad", "Uveitis SYMPTOMATIC", ["painful red eye, photophobia"]]]],
+   "inv": [[["t", "HLA-B27 + in 50%", ["30% → ankylosing spondylitis"]]]],
+   "tx": [[["ok", "1 · Exercise + NSAIDs", []]],
+          [["ok", "2 · Peripheral → disease-modifying drug (DMARD)", []]],
+          [["ok", "3 · Axial → tumour necrosis factor (TNF) blocker", ["uveitis: topical steroids"]]]]},
+  {"id": "pso", "colour": "olive",
+   "head": [[["h", "Psoriatic", ["10% · girls · young + preteen peaks"]]]],
+   "pres": [[["t", "Family history of psoriasis", ["• nail pitting", "• onycholysis", "• dactylitis"]]]],
+   "inv": [[["w", "Fits 2 categories (or none)?", ["→ UNDIFFERENTIATED (15%)"]]]],
+   "tx": [[["ok", "By joint count", ["oligo or polyarticular course"]]]]}
+ ],
+ "panels": [
+  {"title": "Uveitis: SILENT in oligo + poly, so SCREEN", "items": [
+   "risk: ANA +, girl, young, recent onset",
+   "slit lamp every 3 months if ANA + and onset ≤ 6 (first 4 years)",
+   "treat: drops → oral steroids → methotrexate → infliximab or adalimumab"]},
+  {"title": "Every new child: first steps", "items": [
+   "preliminary bloods SUPPORT, they do not diagnose",
+   "start an NSAID",
+   "refer to rheumatology AND ophthalmology"]}
+ ]
+}

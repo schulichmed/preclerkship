@@ -1,0 +1,192 @@
+{
+ "name": "antepartum hemorrhage abnormal placentation pathway",
+ "title": "Antepartum hemorrhage pathway: assess mother and fetus, rule out a non-obstetrical source and labour, then separate placental abruption, placenta previa and vasa previa by pain, ultrasound and fetal blood",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 250,
+   "y": 10,
+   "w": 420,
+   "kind": "plain",
+   "title": "2nd/3rd trimester vaginal bleeding",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 170,
+   "y": 90,
+   "w": 580,
+   "kind": "plain",
+   "title": "Airway, breathing, circulation for mom:",
+   "lines": [
+    "oxygen + intravenous access if unstable",
+    "Non-stress test for the fetus: baseline, accelerations, decelerations"
+   ]
+  },
+  {
+   "id": "C",
+   "x": 210,
+   "y": 218,
+   "w": 500,
+   "kind": "plain",
+   "title": "Non-obstetrical source?",
+   "lines": [
+    "hemorrhoids/varices, bladder infection/renal stones,",
+    "masses, lacerations"
+   ]
+  },
+  {
+   "id": "D",
+   "x": 725,
+   "y": 302,
+   "w": 185,
+   "kind": "ok",
+   "title": "Treat the cause",
+   "lines": [
+    "as in a non-pregnant patient"
+   ]
+  },
+  {
+   "id": "E",
+   "x": 250,
+   "y": 346,
+   "w": 420,
+   "kind": "plain",
+   "title": "Labour?",
+   "lines": [
+    "cervical dilatation frequently causes bleeding/show"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 250,
+   "y": 460,
+   "w": 420,
+   "kind": "plain",
+   "title": "Painful, with a tender or rigid uterus?",
+   "lines": []
+  },
+  {
+   "id": "G",
+   "x": 710,
+   "y": 444,
+   "w": 200,
+   "kind": "bad",
+   "title": "PLACENTAL ABRUPTION",
+   "lines": [
+    "a diagnosis of exclusion"
+   ]
+  },
+  {
+   "id": "H",
+   "x": 230,
+   "y": 570,
+   "w": 460,
+   "kind": "plain",
+   "title": "Ultrasound: placenta over, or within 2 cm of, the internal os?",
+   "lines": []
+  },
+  {
+   "id": "I",
+   "x": 70,
+   "y": 700,
+   "w": 330,
+   "kind": "warn",
+   "title": "PLACENTA PREVIA",
+   "lines": [
+    "complete = cesarean section (C/S); no cervical exam"
+   ]
+  },
+  {
+   "id": "J",
+   "x": 520,
+   "y": 700,
+   "w": 330,
+   "kind": "bad",
+   "title": "VASA PREVIA",
+   "lines": [
+    "fetal distress out of keeping with the volume",
+    "Apt test positive = fetal blood"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C"
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "from_side": "right",
+   "to_side": "top",
+   "label": "yes",
+   "label_at": [
+    775,
+    260
+   ]
+  },
+  {
+   "from": "C",
+   "to": "E",
+   "label": "no",
+   "label_at": [
+    478,
+    330
+   ]
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "label": "no",
+   "label_at": [
+    478,
+    444
+   ]
+  },
+  {
+   "from": "F",
+   "to": "G",
+   "from_side": "right",
+   "to_side": "left",
+   "label": "yes",
+   "label_at": [
+    690,
+    472
+   ]
+  },
+  {
+   "from": "F",
+   "to": "H",
+   "label": "no - painless",
+   "label_at": [
+    520,
+    552
+   ]
+  },
+  {
+   "from": "H",
+   "to": "I",
+   "from_dx": -100,
+   "label": "yes",
+   "label_at": [
+    222,
+    662
+   ]
+  },
+  {
+   "from": "H",
+   "to": "J",
+   "from_dx": 100,
+   "label": "no",
+   "label_at": [
+    698,
+    662
+   ]
+  }
+ ]
+}

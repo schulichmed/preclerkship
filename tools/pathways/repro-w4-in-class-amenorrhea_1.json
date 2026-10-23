@@ -1,0 +1,249 @@
+{
+ "name": "in class amenorrhea pathway",
+ "title": "Approach to amenorrhea: beta-hCG first, then whether a uterus is present, then prolactin and TSH, then serum FSH sorting ovarian, hypothalamic or pituitary, and anovulation causes",
+ "width": 980,
+ "nodes": [
+  {
+   "id": "A",
+   "x": 400,
+   "y": 10,
+   "w": 180,
+   "kind": "plain",
+   "title": "Amenorrhea",
+   "lines": []
+  },
+  {
+   "id": "B",
+   "x": 400,
+   "y": 90,
+   "w": 180,
+   "h": 48,
+   "kind": "plain",
+   "title": "beta-hCG?",
+   "lines": []
+  },
+  {
+   "id": "C",
+   "x": 50,
+   "y": 82,
+   "w": 220,
+   "h": 64,
+   "kind": "warn",
+   "title": "PREGNANCY",
+   "lines": [
+    "exclude first, every time"
+   ]
+  },
+  {
+   "id": "D",
+   "x": 415,
+   "y": 180,
+   "w": 150,
+   "h": 48,
+   "kind": "plain",
+   "title": "Uterus present?",
+   "lines": []
+  },
+  {
+   "id": "E",
+   "x": 15,
+   "y": 162,
+   "w": 255,
+   "h": 84,
+   "kind": "ok",
+   "title": "Mayer-Rokitansky-Kuster-Hauser syndrome (MRKH)",
+   "lines": [
+    "46,XX"
+   ]
+  },
+  {
+   "id": "F",
+   "x": 740,
+   "y": 172,
+   "w": 225,
+   "h": 64,
+   "kind": "ok",
+   "title": "Androgen insensitivity",
+   "lines": [
+    "46,XY"
+   ]
+  },
+  {
+   "id": "G",
+   "x": 350,
+   "y": 280,
+   "w": 280,
+   "kind": "plain",
+   "title": "Prolactin, thyroid-stimulating hormone (TSH)?",
+   "lines": []
+  },
+  {
+   "id": "H",
+   "x": 20,
+   "y": 282,
+   "w": 220,
+   "kind": "ok",
+   "title": "Prolactinoma or drug · hypothyroidism",
+   "lines": []
+  },
+  {
+   "id": "I",
+   "x": 405,
+   "y": 400,
+   "w": 170,
+   "h": 48,
+   "kind": "plain",
+   "title": "serum FSH?",
+   "lines": []
+  },
+  {
+   "id": "J",
+   "x": 15,
+   "y": 510,
+   "w": 300,
+   "h": 110,
+   "kind": "ok",
+   "title": "OVARIAN",
+   "lines": [
+    "karyotype:",
+    "abnormal = Turner,",
+    "normal = primary ovarian insufficiency"
+   ]
+  },
+  {
+   "id": "K",
+   "x": 340,
+   "y": 510,
+   "w": 300,
+   "h": 110,
+   "kind": "ok",
+   "title": "HYPOTHALAMIC / PITUITARY",
+   "lines": [
+    "functional first,",
+    "MRI only if no stressor"
+   ]
+  },
+  {
+   "id": "L",
+   "x": 665,
+   "y": 510,
+   "w": 300,
+   "h": 110,
+   "kind": "ok",
+   "title": "ANOVULATION",
+   "lines": [
+    "androgens:",
+    "PMOS (previously PCOS), tumour,",
+    "late-onset congenital adrenal hyperplasia"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "from_side": "left",
+   "to_side": "right",
+   "label": "POSITIVE",
+   "label_at": [
+    335,
+    106
+   ]
+  },
+  {
+   "from": "B",
+   "to": "D",
+   "label": "NEGATIVE",
+   "label_at": [
+    530,
+    164
+   ]
+  },
+  {
+   "from": "D",
+   "to": "E",
+   "from_side": "left",
+   "to_side": "right",
+   "label": "NO — and pubarche",
+   "label_at": [
+    342,
+    196
+   ]
+  },
+  {
+   "from": "D",
+   "to": "F",
+   "from_side": "right",
+   "to_side": "left",
+   "label": "NO — no pubarche",
+   "label_at": [
+    652,
+    196
+   ]
+  },
+  {
+   "from": "D",
+   "to": "G",
+   "label": "Yes",
+   "label_at": [
+    508,
+    258
+   ]
+  },
+  {
+   "from": "G",
+   "to": "H",
+   "from_side": "left",
+   "to_side": "right",
+   "label": "Abnormal",
+   "label_at": [
+    285,
+    300
+   ]
+  },
+  {
+   "from": "G",
+   "to": "I",
+   "label": "Normal",
+   "label_at": [
+    520,
+    382
+   ]
+  },
+  {
+   "from": "I",
+   "to": "J",
+   "from_side": "left",
+   "to_side": "top",
+   "label": "HIGH",
+   "label_at": [
+    350,
+    416
+   ]
+  },
+  {
+   "from": "I",
+   "to": "K",
+   "label": "LOW",
+   "label_at": [
+    508,
+    485
+   ]
+  },
+  {
+   "from": "I",
+   "to": "L",
+   "from_side": "right",
+   "to_side": "top",
+   "label": "NORMAL",
+   "label_at": [
+    630,
+    416
+   ]
+  }
+ ]
+}

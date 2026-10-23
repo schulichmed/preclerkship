@@ -1,0 +1,30 @@
+{
+ "name": "clinical approach to acute pelvic pain pathway",
+ "title": "Acute pelvic pain: vitals first, then a quantitative beta-hCG splits ruptured ectopic and intrauterine pregnancy from pelvic inflammatory disease, ovarian torsion and ruptured ovarian cyst.",
+ "width": 1000,
+ "nodes": [
+  {"id": "a", "x": 370, "y": 10, "w": 260, "kind": "plain", "title": "Acute pelvic pain", "lines": []},
+  {"id": "b", "x": 310, "y": 90, "w": 380, "kind": "plain", "title": "Check vitals FIRST — is she stable?", "lines": []},
+  {"id": "c", "x": 380, "y": 170, "w": 240, "h": 44, "kind": "plain", "title": "Quantitative beta-hCG", "lines": []},
+  {"id": "d", "x": 20, "y": 270, "w": 380, "kind": "plain", "title": "Signs of rupture?", "lines": ["shoulder pain, tenesmus,", "postural drop, falling haemoglobin (Hb)"]},
+  {"id": "g", "x": 560, "y": 270, "w": 400, "kind": "plain", "title": "Fever and elevated white blood cell count (WBC)?", "lines": []},
+  {"id": "e", "x": 20, "y": 430, "w": 180, "kind": "bad", "title": "RUPTURED ECTOPIC", "lines": ["to the operating room"]},
+  {"id": "f", "x": 220, "y": 430, "w": 260, "kind": "plain", "title": "Transvaginal ultrasound", "lines": ["an intrauterine pregnancy should be", "seen above a beta-hCG of 1500"]},
+  {"id": "i", "x": 500, "y": 430, "w": 250, "kind": "plain", "title": "Sudden onset with an adnexal mass?", "lines": []},
+  {"id": "h", "x": 770, "y": 430, "w": 220, "kind": "warn", "title": "Pelvic inflammatory disease", "lines": ["chandelier sign,", "discharge, dyspareunia"]},
+  {"id": "j", "x": 430, "y": 580, "w": 220, "kind": "bad", "title": "OVARIAN TORSION", "lines": ["surgical emergency", "after exertion, Hb stable"]},
+  {"id": "k", "x": 670, "y": 580, "w": 300, "kind": "bad", "title": "RUPTURED OVARIAN CYST", "lines": ["with haemorrhage", "falling Hb, 2-3 weeks from", "last menstrual period"]}
+ ],
+ "edges": [
+  {"from": "a", "to": "b"},
+  {"from": "b", "to": "c"},
+  {"from": "c", "to": "d", "path": "M380 192H210V268", "label": "POSITIVE", "label_at": [295, 184]},
+  {"from": "c", "to": "g", "path": "M620 192H760V268", "label": "NEGATIVE", "label_at": [690, 184]},
+  {"from": "d", "to": "e", "from_dx": -100, "label": "yes", "label_at": [130, 404]},
+  {"from": "d", "to": "f", "from_dx": 140, "label": "no", "label_at": [368, 404]},
+  {"from": "g", "to": "i", "from_dx": -135, "label": "no", "label_at": [643, 404]},
+  {"from": "g", "to": "h", "from_dx": 120, "label": "yes", "label_at": [900, 404]},
+  {"from": "i", "to": "j", "from_dx": -85},
+  {"from": "i", "to": "k", "from_dx": 85, "to_dx": -110}
+ ]
+}

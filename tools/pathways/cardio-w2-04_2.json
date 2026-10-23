@@ -1,0 +1,640 @@
+{
+ "name": "valvular heart disease overview",
+ "width": 1068,
+ "title": "Valvular heart disease decision chart: a murmur is sorted by timing (systolic or diastolic) and site into aortic stenosis, mitral regurgitation, aortic regurgitation or mitral stenosis; each column gives the murmur and signs, the echocardiogram findings that grade severity, and treatment in order",
+ "kinds": {
+  "as_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "as_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "as_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "mr_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mr_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "mr_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ar_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ar_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ar_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ms_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ms_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ms_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 306,
+   "w": 246,
+   "h": 974,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 288,
+   "y": 306,
+   "w": 246,
+   "h": 974,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 564,
+   "y": 306,
+   "w": 246,
+   "h": 974,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 812,
+   "y": 306,
+   "w": 246,
+   "h": 974,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 468,
+   "h": 290,
+   "text": "MURMUR & SIGNS"
+  },
+  {
+   "x": 23,
+   "y": 798,
+   "h": 114,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 952,
+   "h": 320,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 169,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A murmur: SYSTOLIC or DIASTOLIC, and WHERE is it loudest?",
+   "lines": [
+    "an echocardiogram (echo) is the test of choice for every valve lesion; ECG and chest X-ray only show the consequences",
+    "atrial or ventricular septal defect: see the CONGENITAL HEART DISEASE chart"
+   ]
+  },
+  {
+   "id": "g_sys",
+   "x": 45,
+   "y": 138,
+   "w": 484,
+   "h": 96,
+   "kind": "plain",
+   "title": "SYSTOLIC: between S1 and S2",
+   "lines": [
+    "the BASE and the radiation decide",
+    "NOT these: left sternal border, LOUDER on inspiration = tricuspid regurgitation",
+    "mid-systolic CLICK = mitral valve prolapse"
+   ]
+  },
+  {
+   "id": "g_dia",
+   "x": 569,
+   "y": 138,
+   "w": 484,
+   "h": 96,
+   "kind": "plain",
+   "title": "DIASTOLIC: right after S2",
+   "lines": [
+    "always pathological: the site decides"
+   ]
+  },
+  {
+   "id": "as_head_0_0",
+   "x": 45,
+   "y": 314,
+   "w": 236,
+   "h": 114,
+   "kind": "as_h",
+   "title": "Aortic stenosis (AS)",
+   "lines": [
+    "calcific in the elderly, bicuspid valve in men in their 40s–50s"
+   ]
+  },
+  {
+   "id": "mr_head_0_0",
+   "x": 293,
+   "y": 314,
+   "w": 236,
+   "h": 114,
+   "kind": "mr_h",
+   "title": "Mitral regurgitation (MR)",
+   "lines": [
+    "chronic: prolapse, rheumatic, cardiomyopathy",
+    "acute: papillary muscle or chordae rupture"
+   ]
+  },
+  {
+   "id": "ar_head_0_0",
+   "x": 569,
+   "y": 314,
+   "w": 236,
+   "h": 114,
+   "kind": "ar_h",
+   "title": "Aortic regurgitation (AR)",
+   "lines": [
+    "LEAFLET (bicuspid, endocarditis) → left of the sternum",
+    "aortic ROOT (Marfan, hypertension) → right"
+   ]
+  },
+  {
+   "id": "ms_head_0_0",
+   "x": 817,
+   "y": 314,
+   "w": 236,
+   "h": 114,
+   "kind": "ms_h",
+   "title": "Mitral stenosis (MS)",
+   "lines": [
+    "almost always RHEUMATIC (after group A strep)"
+   ]
+  },
+  {
+   "id": "as_clue_0_0",
+   "x": 45,
+   "y": 468,
+   "w": 236,
+   "h": 153,
+   "kind": "as_t",
+   "title": "Mid-systolic, crescendo-decrescendo",
+   "lines": [
+    "• radiates to the CAROTIDS",
+    "• LATER peak = more severe (loudness is not)",
+    "• soft S2, slow and weak pulse"
+   ]
+  },
+  {
+   "id": "as_clue_1_0",
+   "x": 45,
+   "y": 643,
+   "w": 236,
+   "h": 115,
+   "kind": "as_w",
+   "title": "Late symptoms: act now",
+   "lines": [
+    "• angina",
+    "• syncope on exertion",
+    "• dyspnea (heart failure)"
+   ]
+  },
+  {
+   "id": "mr_clue_0_0",
+   "x": 293,
+   "y": 468,
+   "w": 236,
+   "h": 161,
+   "kind": "mr_t",
+   "title": "Holosystolic, blowing, at the APEX",
+   "lines": [
+    "• radiates to the AXILLA",
+    "• S3, displaced apex beat",
+    "• NORMAL carotid upstroke (unlike AS)"
+   ]
+  },
+  {
+   "id": "mr_clue_1_0",
+   "x": 293,
+   "y": 651,
+   "w": 236,
+   "h": 107,
+   "kind": "bad",
+   "title": "ACUTE: pulmonary edema, low BP, shock",
+   "lines": [
+    "murmur may be SOFT or absent"
+   ]
+  },
+  {
+   "id": "ar_clue_0_0",
+   "x": 569,
+   "y": 468,
+   "w": 236,
+   "h": 152,
+   "kind": "ar_t",
+   "title": "Early diastolic, high-pitched decrescendo",
+   "lines": [
+    "• Erb's point, leaning FORWARD",
+    "• LENGTH tracks severity, not loudness",
+    "• WIDE pulse pressure, collapsing pulse"
+   ]
+  },
+  {
+   "id": "ar_clue_1_0",
+   "x": 569,
+   "y": 642,
+   "w": 236,
+   "h": 116,
+   "kind": "bad",
+   "title": "ACUTE (endocarditis, dissection)",
+   "lines": [
+    "• sudden dyspnea, low BP, pulmonary edema",
+    "• short or inaudible murmur"
+   ]
+  },
+  {
+   "id": "ms_clue_0_0",
+   "x": 817,
+   "y": 468,
+   "w": 236,
+   "h": 153,
+   "kind": "ms_t",
+   "title": "Opening SNAP + low diastolic RUMBLE",
+   "lines": [
+    "• at the apex, left lateral position",
+    "• loud S1",
+    "• exertional DYSPNEA, first in pregnancy, anemia, fever"
+   ]
+  },
+  {
+   "id": "ms_clue_1_0",
+   "x": 817,
+   "y": 643,
+   "w": 236,
+   "h": 115,
+   "kind": "ms_w",
+   "title": "The left atrium (LA) dilates",
+   "lines": [
+    "• AF → LA clot → STROKE",
+    "• pulmonary hypertension → right heart failure"
+   ]
+  },
+  {
+   "id": "as_inv_0_0",
+   "x": 45,
+   "y": 798,
+   "w": 236,
+   "h": 114,
+   "kind": "as_t",
+   "title": "1 · Transthoracic echo (TTE)",
+   "lines": [
+    "• SEVERE: valve area < 1.0 cm²",
+    "• or mean gradient > 40 mmHg"
+   ]
+  },
+  {
+   "id": "mr_inv_0_0",
+   "x": 293,
+   "y": 798,
+   "w": 236,
+   "h": 114,
+   "kind": "mr_t",
+   "title": "1 · Echo (gold standard)",
+   "lines": [
+    "• cause and severity",
+    "• left ventricle (LV) size and function"
+   ]
+  },
+  {
+   "id": "ar_inv_0_0",
+   "x": 569,
+   "y": 798,
+   "w": 236,
+   "h": 114,
+   "kind": "ar_t",
+   "title": "1 · Echo",
+   "lines": [
+    "• cause and severity",
+    "• LV response and aortic root size"
+   ]
+  },
+  {
+   "id": "ms_inv_0_0",
+   "x": 817,
+   "y": 798,
+   "w": 236,
+   "h": 114,
+   "kind": "ms_t",
+   "title": "1 · Echo (gold standard)",
+   "lines": [
+    "• SEVERE: area < 1.0 cm²",
+    "• mean gradient > 10 mmHg",
+    "• pulmonary artery pressure > 50 mmHg"
+   ]
+  },
+  {
+   "id": "as_tx_0_0",
+   "x": 45,
+   "y": 952,
+   "w": 236,
+   "h": 140,
+   "kind": "ok",
+   "title": "No symptoms: follow for them",
+   "lines": [
+    "no drug slows it (statins do not)"
+   ]
+  },
+  {
+   "id": "as_tx_1_0",
+   "x": 45,
+   "y": 1114,
+   "w": 236,
+   "h": 158,
+   "kind": "warn",
+   "title": "SYMPTOMS or severe → VALVE REPLACEMENT",
+   "lines": [
+    "• which valve: see the VALVE SURGERY chart"
+   ]
+  },
+  {
+   "id": "mr_tx_0_0",
+   "x": 293,
+   "y": 952,
+   "w": 236,
+   "h": 139,
+   "kind": "ok",
+   "title": "1 · Medical",
+   "lines": [
+    "• low salt, diuretics for volume",
+    "• BP control: ACE inhibitor or beta blocker",
+    "• atrial fibrillation (AF): anticoagulate + rate control"
+   ]
+  },
+  {
+   "id": "mr_tx_1_0",
+   "x": 293,
+   "y": 1113,
+   "w": 236,
+   "h": 159,
+   "kind": "warn",
+   "title": "2 · SURGERY: severe primary MR",
+   "lines": [
+    "• with symptoms",
+    "• or no symptoms but the LV starting to fail",
+    "• REPAIR (or MitraClip) over replacement"
+   ]
+  },
+  {
+   "id": "ar_tx_0_0",
+   "x": 569,
+   "y": 952,
+   "w": 236,
+   "h": 62,
+   "kind": "bad",
+   "title": "ACUTE → EMERGENCY surgery",
+   "lines": []
+  },
+  {
+   "id": "ar_tx_1_0",
+   "x": 569,
+   "y": 1036,
+   "w": 236,
+   "h": 98,
+   "kind": "ok",
+   "title": "Chronic + SYMPTOMS → surgery",
+   "lines": [
+    "• leaflet → valve replacement",
+    "• root → valve-sparing operation"
+   ]
+  },
+  {
+   "id": "ar_tx_2_0",
+   "x": 569,
+   "y": 1156,
+   "w": 236,
+   "h": 116,
+   "kind": "warn",
+   "title": "No symptoms: operate if the LV is failing",
+   "lines": [
+    "• ejection fraction (EF) < 50%",
+    "• end-systolic diameter > 50 mm",
+    "• end-diastolic diameter > 65 mm"
+   ]
+  },
+  {
+   "id": "ms_tx_0_0",
+   "x": 817,
+   "y": 952,
+   "w": 236,
+   "h": 130,
+   "kind": "ok",
+   "title": "1 · Medical",
+   "lines": [
+    "• low salt, diuretics if congested",
+    "• AF: beta blocker + ANTICOAGULATE"
+   ]
+  },
+  {
+   "id": "ms_tx_1_0",
+   "x": 817,
+   "y": 1104,
+   "w": 236,
+   "h": 168,
+   "kind": "warn",
+   "title": "2 · SEVERE + symptoms: open the valve",
+   "lines": [
+    "• balloon VALVULOPLASTY if rheumatic",
+    "• REPLACEMENT if calcific, LA clot or severe MR"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_sys",
+   "path": "M549.0 88V113H287.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_dia",
+   "path": "M549.0 88V113H811.0V138"
+  },
+  {
+   "from": "as_clue_0_0",
+   "to": "as_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "mr_clue_0_0",
+   "to": "mr_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ar_clue_0_0",
+   "to": "ar_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ms_clue_0_0",
+   "to": "ms_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "as_tx_0_0",
+   "to": "as_tx_1_0"
+  },
+  {
+   "from": "mr_tx_0_0",
+   "to": "mr_tx_1_0"
+  },
+  {
+   "from": "ar_tx_0_0",
+   "to": "ar_tx_1_0"
+  },
+  {
+   "from": "ar_tx_1_0",
+   "to": "ar_tx_2_0"
+  },
+  {
+   "from": "ms_tx_0_0",
+   "to": "ms_tx_1_0"
+  },
+  {
+   "from": "as_head_0_0",
+   "to": "as_clue_0_0"
+  },
+  {
+   "from": "as_clue_1_0",
+   "to": "as_inv_0_0"
+  },
+  {
+   "from": "as_inv_0_0",
+   "to": "as_tx_0_0"
+  },
+  {
+   "from": "g_sys",
+   "to": "as_head_0_0",
+   "from_dx": -124,
+   "label": "BASE → carotids",
+   "label_at": [
+    163.0,
+    274
+   ]
+  },
+  {
+   "from": "mr_head_0_0",
+   "to": "mr_clue_0_0"
+  },
+  {
+   "from": "mr_clue_1_0",
+   "to": "mr_inv_0_0"
+  },
+  {
+   "from": "mr_inv_0_0",
+   "to": "mr_tx_0_0"
+  },
+  {
+   "from": "g_sys",
+   "to": "mr_head_0_0",
+   "from_dx": 124,
+   "label": "APEX → axilla",
+   "label_at": [
+    411.0,
+    274
+   ]
+  },
+  {
+   "from": "ar_head_0_0",
+   "to": "ar_clue_0_0"
+  },
+  {
+   "from": "ar_clue_1_0",
+   "to": "ar_inv_0_0"
+  },
+  {
+   "from": "ar_inv_0_0",
+   "to": "ar_tx_0_0"
+  },
+  {
+   "from": "g_dia",
+   "to": "ar_head_0_0",
+   "from_dx": -124,
+   "label": "left sternal BORDER",
+   "label_at": [
+    687.0,
+    274
+   ]
+  },
+  {
+   "from": "ms_head_0_0",
+   "to": "ms_clue_0_0"
+  },
+  {
+   "from": "ms_clue_1_0",
+   "to": "ms_inv_0_0"
+  },
+  {
+   "from": "ms_inv_0_0",
+   "to": "ms_tx_0_0"
+  },
+  {
+   "from": "g_dia",
+   "to": "ms_head_0_0",
+   "from_dx": 124,
+   "label": "APEX + opening snap",
+   "label_at": [
+    935.0,
+    274
+   ]
+  }
+ ],
+ "panels": []
+}

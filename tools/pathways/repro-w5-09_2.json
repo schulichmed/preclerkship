@@ -1,0 +1,935 @@
+{
+ "name": "first trimester bleeding overview",
+ "width": 1460,
+ "title": "Bleeding in early pregnancy: ultrasound read against beta-hCG decides whether the pregnancy is in the uterus and viable, sorting it into threatened, open-cervix or missed miscarriage, molar pregnancy, pregnancy of unknown location or ectopic; each column gives presentation, numbered investigations and treatment in order",
+ "kinds": {
+  "thr_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "thr_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "thr_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "opn_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "opn_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "opn_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "mis_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mis_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "mis_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "mol_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mol_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "mol_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "pul_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pul_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "pul_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "ect_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ect_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ect_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 224,
+   "h": 1212,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 266,
+   "y": 288,
+   "w": 224,
+   "h": 1212,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 492,
+   "y": 288,
+   "w": 224,
+   "h": 1212,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 746,
+   "y": 288,
+   "w": 224,
+   "h": 1212,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1000,
+   "y": 288,
+   "w": 224,
+   "h": 1212,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 1226,
+   "y": 288,
+   "w": 224,
+   "h": 1212,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 450,
+   "h": 234,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 724,
+   "h": 216,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 980,
+   "h": 512,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 365,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Bleeding in early pregnancy: is it IN the uterus, and is it VIABLE?",
+   "lines": [
+    "every one: vitals · complete blood count · group and screen · quantitative beta-hCG (β-hCG) · transvaginal ultrasound",
+    "Rh NEGATIVE + bleeding → Rh immunoglobulin · send any tissue passed to pathology"
+   ]
+  },
+  {
+   "id": "g_sa",
+   "x": 45,
+   "y": 138,
+   "w": 666,
+   "h": 78,
+   "kind": "plain",
+   "title": "Pregnancy IN the uterus: MISCARRIAGE",
+   "lines": [
+    "the CERVIX (open or closed) and the FETAL HEART decide the type"
+   ]
+  },
+  {
+   "id": "g_gtd",
+   "x": 751,
+   "y": 138,
+   "w": 214,
+   "h": 78,
+   "kind": "plain",
+   "title": "'Snow storm' or cysts",
+   "lines": [
+    "abnormal trophoblast"
+   ]
+  },
+  {
+   "id": "g_out",
+   "x": 1005,
+   "y": 138,
+   "w": 440,
+   "h": 78,
+   "kind": "plain",
+   "title": "NOTHING in the uterus: β-hCG decides",
+   "lines": [
+    "pain + bleeding + positive β-hCG = ECTOPIC until proven otherwise (an IUD too)"
+   ]
+  },
+  {
+   "id": "thr_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 214,
+   "h": 114,
+   "kind": "thr_h",
+   "title": "Threatened",
+   "lines": [
+    "cervix CLOSED · heart PRESENT"
+   ]
+  },
+  {
+   "id": "opn_head_0_0",
+   "x": 271,
+   "y": 296,
+   "w": 214,
+   "h": 114,
+   "kind": "opn_h",
+   "title": "Inevitable · incomplete · complete",
+   "lines": [
+    "cervix OPEN"
+   ]
+  },
+  {
+   "id": "mis_head_0_0",
+   "x": 497,
+   "y": 296,
+   "w": 214,
+   "h": 114,
+   "kind": "mis_h",
+   "title": "Missed",
+   "lines": [
+    "cervix CLOSED · NO heart",
+    "non-viable pregnancy retained"
+   ]
+  },
+  {
+   "id": "mol_head_0_0",
+   "x": 751,
+   "y": 296,
+   "w": 214,
+   "h": 114,
+   "kind": "mol_h",
+   "title": "Molar pregnancy",
+   "lines": [
+    "complete: 46, all paternal, NO fetus",
+    "partial: 69 (triploid), fetus possible"
+   ]
+  },
+  {
+   "id": "pul_head_0_0",
+   "x": 1005,
+   "y": 296,
+   "w": 214,
+   "h": 114,
+   "kind": "pul_h",
+   "title": "Pregnancy of unknown location",
+   "lines": [
+    "positive β-hCG, nothing seen in or out of the uterus"
+   ]
+  },
+  {
+   "id": "ect_head_0_0",
+   "x": 1231,
+   "y": 296,
+   "w": 214,
+   "h": 114,
+   "kind": "ect_h",
+   "title": "Ectopic pregnancy",
+   "lines": [
+    "most in the fallopian tube",
+    "leading cause of early pregnancy death"
+   ]
+  },
+  {
+   "id": "thr_pres_0_0",
+   "x": 45,
+   "y": 450,
+   "w": 214,
+   "h": 234,
+   "kind": "thr_t",
+   "title": "Bleeding ± cramps",
+   "lines": [
+    "nothing passed"
+   ]
+  },
+  {
+   "id": "opn_pres_0_0",
+   "x": 271,
+   "y": 450,
+   "w": 214,
+   "h": 234,
+   "kind": "opn_t",
+   "title": "Bleeding + cramps",
+   "lines": [
+    "• inevitable: nothing passed yet",
+    "• incomplete: partly passed",
+    "• complete: all passed"
+   ]
+  },
+  {
+   "id": "mis_pres_0_0",
+   "x": 497,
+   "y": 450,
+   "w": 214,
+   "h": 234,
+   "kind": "mis_t",
+   "title": "± bleeding",
+   "lines": [
+    "no symptoms, nothing passed"
+   ]
+  },
+  {
+   "id": "mol_pres_0_0",
+   "x": 751,
+   "y": 450,
+   "w": 214,
+   "h": 234,
+   "kind": "mol_t",
+   "title": "Bleeding · uterus LARGE for dates",
+   "lines": [
+    "• hyperemesis",
+    "• early pre-eclampsia",
+    "• hyperthyroid (complete)"
+   ]
+  },
+  {
+   "id": "pul_pres_0_0",
+   "x": 1005,
+   "y": 450,
+   "w": 214,
+   "h": 234,
+   "kind": "pul_t",
+   "title": "Bleeding ± pain",
+   "lines": [
+    "could still be viable, failing or ectopic"
+   ]
+  },
+  {
+   "id": "ect_pres_0_0",
+   "x": 1231,
+   "y": 450,
+   "w": 214,
+   "h": 98,
+   "kind": "ect_t",
+   "title": "Pain + amenorrhea + bleeding",
+   "lines": [
+    "unstable: shoulder-tip pain, lightheaded, orthostatic"
+   ]
+  },
+  {
+   "id": "ect_pres_1_0",
+   "x": 1231,
+   "y": 570,
+   "w": 214,
+   "h": 114,
+   "kind": "ect_w",
+   "title": "Risk",
+   "lines": [
+    "• previous ectopic",
+    "• tubal surgery or sterilization",
+    "• IUD",
+    "• in vitro fertilization"
+   ]
+  },
+  {
+   "id": "thr_inv_0_0",
+   "x": 45,
+   "y": 724,
+   "w": 214,
+   "h": 216,
+   "kind": "thr_w",
+   "title": "1 · Ultrasound",
+   "lines": [
+    "fetal heart present: still viable"
+   ]
+  },
+  {
+   "id": "opn_inv_0_0",
+   "x": 271,
+   "y": 724,
+   "w": 214,
+   "h": 97,
+   "kind": "opn_w",
+   "title": "1 · Speculum",
+   "lines": [
+    "tissue at the os"
+   ]
+  },
+  {
+   "id": "opn_inv_1_0",
+   "x": 271,
+   "y": 843,
+   "w": 214,
+   "h": 97,
+   "kind": "opn_w",
+   "title": "2 · Ultrasound",
+   "lines": [
+    "retained products? (incomplete)"
+   ]
+  },
+  {
+   "id": "mis_inv_0_0",
+   "x": 497,
+   "y": 724,
+   "w": 214,
+   "h": 134,
+   "kind": "mis_t",
+   "title": "1 · DIAGNOSTIC of non-viability",
+   "lines": [
+    "• crown-rump length > 7 mm, no heartbeat",
+    "• mean sac diameter ≥ 25 mm, no embryo"
+   ]
+  },
+  {
+   "id": "mis_inv_1_0",
+   "x": 497,
+   "y": 880,
+   "w": 214,
+   "h": 60,
+   "kind": "mis_w",
+   "title": "Below those: SUSPICIOUS",
+   "lines": [
+    "→ rescan before calling it"
+   ]
+  },
+  {
+   "id": "mol_inv_0_0",
+   "x": 751,
+   "y": 724,
+   "w": 214,
+   "h": 79,
+   "kind": "mol_t",
+   "title": "1 · β-hCG MARKEDLY ↑",
+   "lines": [
+    "partial: low to normal"
+   ]
+  },
+  {
+   "id": "mol_inv_1_0",
+   "x": 751,
+   "y": 825,
+   "w": 214,
+   "h": 115,
+   "kind": "mol_w",
+   "title": "2 · Ultrasound",
+   "lines": [
+    "• complete: 'snow storm', no fetus",
+    "• partial: cysts WITH a fetus"
+   ]
+  },
+  {
+   "id": "pul_inv_0_0",
+   "x": 1005,
+   "y": 724,
+   "w": 214,
+   "h": 79,
+   "kind": "pul_t",
+   "title": "1 · Repeat β-hCG in 48 h",
+   "lines": [
+    "ONE value never settles it"
+   ]
+  },
+  {
+   "id": "pul_inv_1_0",
+   "x": 1005,
+   "y": 825,
+   "w": 214,
+   "h": 115,
+   "kind": "pul_w",
+   "title": "2 · Discriminatory zone",
+   "lines": [
+    "above ~1500–3000 a sac SHOULD be seen on transvaginal ultrasound"
+   ]
+  },
+  {
+   "id": "ect_inv_0_0",
+   "x": 1231,
+   "y": 724,
+   "w": 214,
+   "h": 124,
+   "kind": "ect_t",
+   "title": "1 · β-hCG above the zone + EMPTY uterus",
+   "lines": [
+    "• adnexal mass",
+    "• 'ring of fire'",
+    "• free fluid"
+   ]
+  },
+  {
+   "id": "ect_inv_1_0",
+   "x": 1231,
+   "y": 870,
+   "w": 214,
+   "h": 70,
+   "kind": "bad",
+   "title": "A normal β-hCG rise does NOT exclude it",
+   "lines": []
+  },
+  {
+   "id": "thr_tx_0_0",
+   "x": 45,
+   "y": 980,
+   "w": 214,
+   "h": 263,
+   "kind": "ok",
+   "title": "Expectant",
+   "lines": [
+    "• treat bacterial vaginosis if found",
+    "~• 43% still go on to miscarry"
+   ]
+  },
+  {
+   "id": "thr_tx_1_0",
+   "x": 45,
+   "y": 1265,
+   "w": 214,
+   "h": 227,
+   "kind": "bad",
+   "title": "NO progesterone",
+   "lines": []
+  },
+  {
+   "id": "opn_tx_0_0",
+   "x": 271,
+   "y": 980,
+   "w": 214,
+   "h": 255,
+   "kind": "ok",
+   "title": "1 · Remove tissue at the os",
+   "lines": [
+    "then expectant (91% complete), medical or surgical"
+   ]
+  },
+  {
+   "id": "opn_tx_1_0",
+   "x": 271,
+   "y": 1257,
+   "w": 214,
+   "h": 235,
+   "kind": "bad",
+   "title": "FEVER: septic",
+   "lines": [
+    "IV broad-spectrum antibiotics + dilation and curettage (D&C)"
+   ]
+  },
+  {
+   "id": "mis_tx_0_0",
+   "x": 497,
+   "y": 980,
+   "w": 214,
+   "h": 512,
+   "kind": "ok",
+   "title": "Expectant (76%), medical or surgical",
+   "lines": [
+    "her choice: see the panel"
+   ]
+  },
+  {
+   "id": "mol_tx_0_0",
+   "x": 751,
+   "y": 980,
+   "w": 214,
+   "h": 227,
+   "kind": "ok",
+   "title": "1 · Suction curettage",
+   "lines": [
+    "then serial β-hCG to baseline"
+   ]
+  },
+  {
+   "id": "mol_tx_1_0",
+   "x": 751,
+   "y": 1229,
+   "w": 214,
+   "h": 263,
+   "kind": "bad",
+   "title": "β-hCG stays HIGH",
+   "lines": [
+    "invasive mole or CHORIOCARCINOMA (lungs first) → chemotherapy"
+   ]
+  },
+  {
+   "id": "pul_tx_0_0",
+   "x": 1005,
+   "y": 980,
+   "w": 214,
+   "h": 143,
+   "kind": "ok",
+   "title": "Rises ≥ 53% in 48 h",
+   "lines": [
+    "likely viable intrauterine pregnancy → rescan"
+   ]
+  },
+  {
+   "id": "pul_tx_1_0",
+   "x": 1005,
+   "y": 1145,
+   "w": 214,
+   "h": 179,
+   "kind": "warn",
+   "title": "Falls",
+   "lines": [
+    "• failing pregnancy → follow to < 5",
+    "~• a slow fall can still be an ectopic"
+   ]
+  },
+  {
+   "id": "pul_tx_2_0",
+   "x": 1005,
+   "y": 1346,
+   "w": 214,
+   "h": 145,
+   "kind": "bad",
+   "title": "Above the zone, uterus EMPTY",
+   "lines": [
+    "no tissue passed → ECTOPIC"
+   ]
+  },
+  {
+   "id": "ect_tx_0_0",
+   "x": 1231,
+   "y": 980,
+   "w": 214,
+   "h": 80,
+   "kind": "bad",
+   "title": "1 · UNSTABLE or ruptured → SURGERY",
+   "lines": [
+    "salpingectomy or salpingostomy"
+   ]
+  },
+  {
+   "id": "ect_tx_1_0",
+   "x": 1231,
+   "y": 1082,
+   "w": 214,
+   "h": 116,
+   "kind": "ok",
+   "title": "2 · Stable, unruptured → METHOTREXATE",
+   "lines": [
+    "• 50 mg/m² IM once",
+    "• β-hCG must fall 15% from day 4 → 7, else repeat"
+   ]
+  },
+  {
+   "id": "ect_tx_2_0",
+   "x": 1231,
+   "y": 1220,
+   "w": 214,
+   "h": 154,
+   "kind": "bad",
+   "title": "NO methotrexate if ANY of these → SURGERY instead",
+   "lines": [
+    "• β-hCG > 5000",
+    "• fetal heart activity",
+    "• an intrauterine pregnancy",
+    "• breastfeeding"
+   ]
+  },
+  {
+   "id": "ect_tx_3_0",
+   "x": 1231,
+   "y": 1396,
+   "w": 214,
+   "h": 96,
+   "kind": "ok",
+   "title": "3 · Expectant",
+   "lines": [
+    "• β-hCG falling AND < 200",
+    "• mass < 3.5 cm",
+    "• no symptoms"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_sa",
+   "path": "M745.0 88V113H378.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_gtd",
+   "path": "M745.0 88V113H858.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_out",
+   "path": "M745.0 88V113H1225.0V138"
+  },
+  {
+   "from": "ect_pres_0_0",
+   "to": "ect_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "opn_inv_0_0",
+   "to": "opn_inv_1_0"
+  },
+  {
+   "from": "mis_inv_0_0",
+   "to": "mis_inv_1_0"
+  },
+  {
+   "from": "mol_inv_0_0",
+   "to": "mol_inv_1_0"
+  },
+  {
+   "from": "pul_inv_0_0",
+   "to": "pul_inv_1_0"
+  },
+  {
+   "from": "ect_inv_0_0",
+   "to": "ect_inv_1_0"
+  },
+  {
+   "from": "thr_tx_0_0",
+   "to": "thr_tx_1_0"
+  },
+  {
+   "from": "opn_tx_0_0",
+   "to": "opn_tx_1_0"
+  },
+  {
+   "from": "mol_tx_0_0",
+   "to": "mol_tx_1_0"
+  },
+  {
+   "from": "pul_tx_0_0",
+   "to": "pul_tx_1_0"
+  },
+  {
+   "from": "pul_tx_1_0",
+   "to": "pul_tx_2_0"
+  },
+  {
+   "from": "ect_tx_0_0",
+   "to": "ect_tx_1_0"
+  },
+  {
+   "from": "ect_tx_1_0",
+   "to": "ect_tx_2_0"
+  },
+  {
+   "from": "ect_tx_2_0",
+   "to": "ect_tx_3_0"
+  },
+  {
+   "from": "thr_head_0_0",
+   "to": "thr_pres_0_0"
+  },
+  {
+   "from": "thr_pres_0_0",
+   "to": "thr_inv_0_0"
+  },
+  {
+   "from": "thr_inv_0_0",
+   "to": "thr_tx_0_0"
+  },
+  {
+   "from": "g_sa",
+   "to": "thr_head_0_0",
+   "from_dx": -226,
+   "label": "os CLOSED, heart +",
+   "label_at": [
+    152.0,
+    256
+   ]
+  },
+  {
+   "from": "opn_head_0_0",
+   "to": "opn_pres_0_0"
+  },
+  {
+   "from": "opn_pres_0_0",
+   "to": "opn_inv_0_0"
+  },
+  {
+   "from": "opn_inv_1_0",
+   "to": "opn_tx_0_0"
+  },
+  {
+   "from": "g_sa",
+   "to": "opn_head_0_0",
+   "from_dx": 0,
+   "label": "os OPEN",
+   "label_at": [
+    378.0,
+    256
+   ]
+  },
+  {
+   "from": "mis_head_0_0",
+   "to": "mis_pres_0_0"
+  },
+  {
+   "from": "mis_pres_0_0",
+   "to": "mis_inv_0_0"
+  },
+  {
+   "from": "mis_inv_1_0",
+   "to": "mis_tx_0_0"
+  },
+  {
+   "from": "g_sa",
+   "to": "mis_head_0_0",
+   "from_dx": 226,
+   "label": "os CLOSED, heart −",
+   "label_at": [
+    604.0,
+    256
+   ]
+  },
+  {
+   "from": "mol_head_0_0",
+   "to": "mol_pres_0_0"
+  },
+  {
+   "from": "mol_pres_0_0",
+   "to": "mol_inv_0_0"
+  },
+  {
+   "from": "mol_inv_1_0",
+   "to": "mol_tx_0_0"
+  },
+  {
+   "from": "g_gtd",
+   "to": "mol_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "pul_head_0_0",
+   "to": "pul_pres_0_0"
+  },
+  {
+   "from": "pul_pres_0_0",
+   "to": "pul_inv_0_0"
+  },
+  {
+   "from": "pul_inv_1_0",
+   "to": "pul_tx_0_0"
+  },
+  {
+   "from": "g_out",
+   "to": "pul_head_0_0",
+   "from_dx": -113,
+   "label": "nothing seen",
+   "label_at": [
+    1112.0,
+    256
+   ]
+  },
+  {
+   "from": "ect_head_0_0",
+   "to": "ect_pres_0_0"
+  },
+  {
+   "from": "ect_pres_1_0",
+   "to": "ect_inv_0_0"
+  },
+  {
+   "from": "ect_inv_1_0",
+   "to": "ect_tx_0_0"
+  },
+  {
+   "from": "g_out",
+   "to": "ect_head_0_0",
+   "from_dx": 113,
+   "label": "adnexal mass",
+   "label_at": [
+    1338.0,
+    256
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1526,
+   "w": 693,
+   "title": "Managing a miscarriage: her choice",
+   "items": [
+    "EXPECTANT up to 13+6 weeks: most complete within 2 weeks",
+    "MEDICAL up to 12+6: misoprostol 800 mcg vaginally (the one indicated for miscarriage in Canada) · mifepristone first raises success but is approved for abortion only",
+    "SURGICAL: D&C, 95–100% successful"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 752,
+   "y": 1526,
+   "w": 693,
+   "title": "What to tell her",
+   "items": [
+    "about half of miscarriages are chromosomal: trisomy 16 commonest",
+    "3 or more losses → work-up + medical genetics"
+   ],
+   "cols": 1
+  }
+ ]
+}

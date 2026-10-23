@@ -1,0 +1,258 @@
+{
+ "name": "benign prostatic hyperplasia overview",
+ "title": "Benign prostatic hyperplasia decision chart: after a mandatory assessment and lifestyle changes, treatment is chosen by how bothersome the symptoms are and how large the prostate is (watchful waiting, alpha blocker, 5-alpha reductase inhibitor or both), with referral for transurethral resection when complicated or failing; plus how to recognise prostatitis instead",
+ "col_w": 236,
+ "root": {
+  "title": "Lower urinary tract symptoms (LUTS) in an older man: how BOTHERSOME, how BIG, and is it COMPLICATED?",
+  "lines": [
+   "every man: history (antihistamines, decongestants, diuretics, opioids, tricyclics, caffeine) · rectal exam: size, nodules, tenderness · urinalysis: not an infection?",
+   "International Prostate Symptom Score (IPSS) grades and tracks it · prostate-specific antigen (PSA) if life expectancy ≥ 10 years and cancer would change management",
+   "first: LIFESTYLE · less fluid at night · treat sleep apnea · compression stockings · diuretic earlier in the day",
+   "PROSTATITIS instead? ACUTE: sudden dysuria · CHRONIC: recurrent urinary infections → four-glass test · CHRONIC PELVIC PAIN: pelvic floor physiotherapy before drugs or surgery"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_no",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "Symptoms NOT a bother",
+   "lines": [
+    "mild, or moderate–severe that don't affect his life"
+   ]
+  },
+  {
+   "id": "g_bo",
+   "cols": [
+    1,
+    2
+   ],
+   "title": "BOTHERSOME (moderate–severe) despite lifestyle",
+   "lines": [
+    "prostate SIZE picks the drug: rectal exam, PSA"
+   ]
+  },
+  {
+   "id": "g_ref",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "REFER to urology if",
+   "lines": [
+    "• medical therapy FAILS",
+    "• infections, hematuria",
+    "• PSA ↑ or abnormal rectal exam",
+    "• ANY PSA rise on a 5-alpha reductase inhibitor (5-ARI)"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "tx",
+  "watch"
+ ],
+ "row_names": {
+  "tx": "TREAT",
+  "watch": "WATCH FOR"
+ },
+ "columns": [
+  {
+   "id": "ww",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Watchful waiting",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "SMALL prostate",
+      [
+       "watch"
+      ]
+     ],
+     [
+      "ok",
+      "LARGE prostate",
+      [
+       "watch, or a 5-ARI"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "w",
+      "Repeat the IPSS",
+      [
+       "are symptoms progressing?"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ab",
+   "colour": "purple",
+   "drop_label": "SMALL prostate",
+   "head": [
+    [
+     [
+      "h",
+      "Alpha blocker",
+      [
+       "relaxes prostate + bladder neck muscle"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Alpha blocker",
+      [
+       "tamsulosin, alfuzosin, silodosin, doxazosin, terazosin"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "or surgery",
+      []
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "w",
+      "Works within 2 WEEKS",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Cataract surgery: FLOPPY IRIS",
+      [
+       "current or past use, tamsulosin most · dizziness, orthostatic BP drop"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ar",
+   "colour": "orange",
+   "drop_label": "LARGE prostate",
+   "head": [
+    [
+     [
+      "h",
+      "Alpha blocker ± 5-ARI",
+      [
+       "the 5-ARI SHRINKS the prostate"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Alpha blocker, 5-ARI, or BOTH",
+      [
+       "finasteride, dutasteride · the combination controls symptoms best"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "or surgery",
+      [
+       "~a phosphodiesterase-5 inhibitor also eases LUTS"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "w",
+      "5-ARI works in 3–6 MONTHS",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "5-ARI HALVES the PSA",
+      [
+       "new baseline at 6 months: any rise → refer"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tu",
+   "colour": "slate",
+   "head": [
+    [
+     [
+      "h",
+      "Transurethral resection (TURP)",
+      [
+       "the GOLD STANDARD surgery"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "ABSOLUTE indication",
+      [
+       "• bladder outlet obstruction",
+       "• intractable retention"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "w",
+      "Retrograde ejaculation",
+      [
+       "most men"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "TURP SYNDROME: Na ↓",
+      [
+       "irrigation fluid absorbed → use saline + BIPOLAR cautery"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

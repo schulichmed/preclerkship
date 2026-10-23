@@ -1,0 +1,390 @@
+{
+ "name": "inflammatory bowel disease overview",
+ "title": "Inflammatory bowel disease decision chart: Crohn's disease (skip lesions, transmural, anywhere in the gut) split into medical disease and its stricturing or fistulizing complications, and ulcerative colitis (continuous from the rectum, mucosal) split by severity into mild to moderate and severe or fulminant disease; each column gives presentation, numbered investigations and treatment in order",
+ "col_w": 240,
+ "root": {
+  "title": "Chronic diarrhea, pain, bleeding, weight loss: inflammatory bowel disease (IBD), and CROHN'S or ULCERATIVE COLITIS?",
+  "lines": [
+   "flares and remissions · peak 20s–30s, second peak 50s–70s · rule out INFECTION first (stool tests)",
+   "colonoscopy + BIOPSY makes the diagnosis in both",
+   "BOTH: follow up every 3 months (bloodwork, side effects) · colorectal cancer risk ↑: see the COLORECTAL CANCER SCREENING lecture"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_cd",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "SKIP lesions · TRANSMURAL · mouth to anus: CROHN'S",
+   "lines": [
+    "terminal ileum most often · smoking makes it WORSE"
+   ]
+  },
+  {
+   "id": "g_uc",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "CONTINUOUS from the RECTUM · MUCOSAL: ULCERATIVE COLITIS",
+   "lines": [
+    "colon only · how many stools a day sets the severity"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "cd",
+   "colour": "teal",
+   "drop_label": "inflammation",
+   "head": [
+    [
+     [
+      "h",
+      "Crohn's disease",
+      [
+       "granulomas, deep fissuring ulcers"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "RIGHT LOWER QUADRANT PAIN",
+      [
+       "• diarrhea ± blood or steatorrhea",
+       "• fever, weight loss"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Outside the gut",
+      [
+       "erythema nodosum, oral ulcers, eye inflammation, arthritis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Colonoscopy + biopsy",
+      [
+       "skip lesions, NON-caseating granulomas"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Bloodwork",
+      [
+       "C-reactive protein (CRP), fecal calprotectin, ferritin, albumin, ↓ B12"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · INDUCE remission",
+      [
+       "• mild (ileum, right colon): BUDESONIDE",
+       "• moderate–severe: prednisone, biologic",
+       "• exclusive enteral nutrition"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · MAINTAIN",
+      [
+       "• azathioprine, methotrexate",
+       "• biologic (anti-tumour necrosis factor)"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "NO steroids for maintenance",
+      [
+       "5-aminosalicylic acid (5-ASA) works in only a few"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cx",
+   "colour": "purple",
+   "drop_label": "stricture, fistula",
+   "head": [
+    [
+     [
+      "h",
+      "Crohn's complications",
+      [
+       "from the transmural, fissuring ulcers"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Obstruction",
+      [
+       "fibrotic STRICTURE"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Fistula, abscess, perforation",
+      [
+       "perianal disease"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · CT",
+      [
+       "shows fistulas and abscesses",
+       "~radiation adds up"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "1 · Stricture: relieve it MECHANICALLY",
+      [
+       "• endoscopic balloon dilation",
+       "• cannot be treated medically"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "2 · Surgery: up to half need it",
+      [
+       "colectomy is NOT curative"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "STOP SMOKING",
+      [
+       "earlier recurrence, more complications"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ucm",
+   "colour": "blue",
+   "drop_label": "≤ 6 stools a day",
+   "head": [
+    [
+     [
+      "h",
+      "Ulcerative colitis: mild to moderate",
+      [
+       "mild < 4 stools a day, normal CRP",
+       "moderate ≥ 4, little toxicity"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "BLOODY DIARRHEA with mucus",
+      [
+       "• tenesmus",
+       "• pain around bowel movements"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Outside the gut",
+      [
+       "pyoderma gangrenosum, ankylosing spondylitis, primary sclerosing cholangitis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Sigmoidoscopy + biopsy",
+      [
+       "continuous, NO granulomas, crypt abscesses"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Colonoscopy for EXTENT",
+      [
+       "proctitis, left-sided or pancolitis"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Follow CRP + fecal calprotectin",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · 5-ASA (MESALAMINE)",
+      [
+       "induces AND maintains"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Steroids",
+      [
+       "budesonide, prednisone: not to maintain"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · Planned proctocolectomy or J pouch",
+      [
+       "CURATIVE: dysplasia, cancer, poor quality of life"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ucs",
+   "colour": "orange",
+   "drop_label": "> 6 bloody stools",
+   "head": [
+    [
+     [
+      "h",
+      "Ulcerative colitis: severe or fulminant",
+      [
+       "risk of TOXIC MEGACOLON"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "bad",
+      "Severe",
+      [
+       "> 6 bloody stools + fever, tachycardia, anemia or ↑ CRP"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Fulminant",
+      [
+       "> 10 stools, continuous bleeding, distension, needs transfusion"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Abdominal X-ray",
+      [
+       "DILATED colon → fulminant"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "NO loperamide",
+      [
+       "toxic megacolon"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "1 · Steroids + BIOLOGICS",
+      [
+       "infliximab, adalimumab"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "2 · Not responding, perforation, megacolon: EMERGENCY SURGERY",
+      [
+       "subtotal colectomy + ileostomy"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

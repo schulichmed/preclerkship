@@ -1,0 +1,344 @@
+{
+ "name": "pediatric neck mass overview",
+ "title": "Pediatric neck mass decision chart: congenital masses are most likely and location decides between a midline thyroglossal duct cyst, a lateral second branchial cleft cyst and a posterior-triangle lymphatic malformation; an enlarged node over 2 cm is worked up for infection or malignancy; each column gives clues, investigations and treatment",
+ "col_w": 245,
+ "root": {
+  "title": "Child's neck mass: CONGENITAL is most likely. WHERE is it, and WHEN did it appear?",
+  "lines": [
+   "adults: neoplasm until proven otherwise · children: congenital, inflammatory, or neoplastic"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_con",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "CONGENITAL: the LOCATION decides",
+   "lines": []
+  },
+  {
+   "id": "g_ln",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "LYMPH NODE > 2 cm: not normal",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "tg",
+   "colour": "teal",
+   "drop_label": "MIDLINE",
+   "head": [
+    [
+     [
+      "h",
+      "Thyroglossal duct cyst",
+      [
+       "the MOST COMMON congenital neck mass",
+       "thyroid cells left behind on the descent"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "RISES when the tongue sticks out",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "Appears or enlarges after a cold",
+      [
+       "• after an upper respiratory tract infection (URTI)",
+       "• ages 3–5",
+       "• infrahyoid in 65%"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Ultrasound",
+      [
+       "solid vs cystic"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "SISTRUNK procedure: < 5% recur",
+      [
+       "• cyst + tract + middle of the HYOID (+ tongue base)",
+       "• NOT during an acute infection"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Simple cystectomy: 20% recur",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "bc",
+   "colour": "orange",
+   "drop_label": "LATERAL",
+   "head": [
+    [
+     [
+      "h",
+      "2nd branchial cleft cyst",
+      [
+       "> 90% of branchial cleft anomalies"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Lateral, usually RIGHT",
+      [
+       "10% both sides"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Recurs with colds",
+      [
+       "• swelling with each URTI",
+       "• DISCHARGE from the lower neck",
+       "• 80% present by age 5"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Ultrasound ± CT",
+      [
+       "cyst, and its relation to nearby structures"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "COMPLETE excision of sinus + tract",
+      [
+       "3% recur"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Do NOT drain it",
+      [
+       "drainage or partial excision first → 20% recur"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "lm",
+   "colour": "purple",
+   "drop_label": "POSTERIOR triangle",
+   "head": [
+    [
+     [
+      "h",
+      "Lymphatic malformation",
+      [
+       "SEEN AT BIRTH (60%), 90% by age 2",
+       "grows WITH the child"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Soft, fluctuant, lobulated",
+      [
+       "• posterior triangle",
+       "• changes size",
+       "• fixed to deep tissue"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Complications",
+      [
+       "• dysphagia, AIRWAY obstruction",
+       "• infection, trauma"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Ultrasound",
+      [
+       "superficial lesions"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · CT: extent · MRI: best detail",
+      [
+       "MRI needs sedation in children"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "SURGERY: treatment of choice",
+      [
+       "complete excision: 10% recur · incomplete: 15–50%"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Sclerotherapy",
+      [
+       "an inflammatory agent is injected to scar it"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ln",
+   "colour": "slate",
+   "drop_label": "ENLARGED NODE",
+   "head": [
+    [
+     [
+      "h",
+      "Infection or malignancy?",
+      [
+       "check spleen, axilla, groin too"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Growth + feel",
+      [
+       "• SLOW growth → benign",
+       "• RAPID, FIRM → infection or malignancy",
+       "• FIXED → malignancy",
+       "• FLUCTUANT → cyst or abscess"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "History",
+      [
+       "• B symptoms → malignancy",
+       "• travel, tuberculosis (TB), CAT SCRATCH",
+       "• swells with EATING → salivary gland"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Start SIMPLE: bloods",
+      [
+       "• complete blood count (CBC) + differential",
+       "• cat-scratch serology",
+       "• tumour marker: vanillylmandelic acid (VMA)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Chest X-ray",
+      [
+       "TB, sarcoidosis, malignancy"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Ultrasound, then CT with contrast",
+      [
+       "CT: cellulitis vs ABSCESS"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "w",
+      "Treat the cause the workup finds",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,634 @@
+{
+ "name": "pediatric neck mass overview",
+ "width": 1104,
+ "title": "Pediatric neck mass decision chart: congenital masses are most likely and location decides between a midline thyroglossal duct cyst, a lateral second branchial cleft cyst and a posterior-triangle lymphatic malformation; an enlarged node over 2 cm is worked up for infection or malignancy; each column gives clues, investigations and treatment",
+ "kinds": {
+  "tg_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tg_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "tg_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "bc_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "bc_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "bc_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "lm_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "lm_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "lm_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ln_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ln_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "ln_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 254,
+   "w": 255,
+   "h": 996,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 297,
+   "y": 254,
+   "w": 255,
+   "h": 996,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 554,
+   "y": 254,
+   "w": 255,
+   "h": 996,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 839,
+   "y": 254,
+   "w": 255,
+   "h": 996,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 398,
+   "h": 268,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 706,
+   "h": 316,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1062,
+   "h": 180,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 187,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Child's neck mass: CONGENITAL is most likely. WHERE is it, and WHEN did it appear?",
+   "lines": [
+    "adults: neoplasm until proven otherwise · children: congenital, inflammatory, or neoplastic"
+   ]
+  },
+  {
+   "id": "g_con",
+   "x": 45,
+   "y": 120,
+   "w": 759,
+   "h": 62,
+   "kind": "plain",
+   "title": "CONGENITAL: the LOCATION decides",
+   "lines": []
+  },
+  {
+   "id": "g_ln",
+   "x": 844,
+   "y": 120,
+   "w": 245,
+   "h": 62,
+   "kind": "plain",
+   "title": "LYMPH NODE > 2 cm: not normal",
+   "lines": []
+  },
+  {
+   "id": "tg_head_0_0",
+   "x": 45,
+   "y": 262,
+   "w": 245,
+   "h": 96,
+   "kind": "tg_h",
+   "title": "Thyroglossal duct cyst",
+   "lines": [
+    "the MOST COMMON congenital neck mass",
+    "thyroid cells left behind on the descent"
+   ]
+  },
+  {
+   "id": "bc_head_0_0",
+   "x": 302,
+   "y": 262,
+   "w": 245,
+   "h": 96,
+   "kind": "bc_h",
+   "title": "2nd branchial cleft cyst",
+   "lines": [
+    "> 90% of branchial cleft anomalies"
+   ]
+  },
+  {
+   "id": "lm_head_0_0",
+   "x": 559,
+   "y": 262,
+   "w": 245,
+   "h": 96,
+   "kind": "lm_h",
+   "title": "Lymphatic malformation",
+   "lines": [
+    "SEEN AT BIRTH (60%), 90% by age 2",
+    "grows WITH the child"
+   ]
+  },
+  {
+   "id": "ln_head_0_0",
+   "x": 844,
+   "y": 262,
+   "w": 245,
+   "h": 96,
+   "kind": "ln_h",
+   "title": "Infection or malignancy?",
+   "lines": [
+    "check spleen, axilla, groin too"
+   ]
+  },
+  {
+   "id": "tg_pres_0_0",
+   "x": 45,
+   "y": 398,
+   "w": 245,
+   "h": 87,
+   "kind": "tg_t",
+   "title": "RISES when the tongue sticks out",
+   "lines": []
+  },
+  {
+   "id": "tg_pres_1_0",
+   "x": 45,
+   "y": 507,
+   "w": 245,
+   "h": 159,
+   "kind": "tg_w",
+   "title": "Appears or enlarges after a cold",
+   "lines": [
+    "• after an upper respiratory tract infection (URTI)",
+    "• ages 3–5",
+    "• infrahyoid in 65%"
+   ]
+  },
+  {
+   "id": "bc_pres_0_0",
+   "x": 302,
+   "y": 398,
+   "w": 245,
+   "h": 105,
+   "kind": "bc_t",
+   "title": "Lateral, usually RIGHT",
+   "lines": [
+    "10% both sides"
+   ]
+  },
+  {
+   "id": "bc_pres_1_0",
+   "x": 302,
+   "y": 525,
+   "w": 245,
+   "h": 141,
+   "kind": "bc_w",
+   "title": "Recurs with colds",
+   "lines": [
+    "• swelling with each URTI",
+    "• DISCHARGE from the lower neck",
+    "• 80% present by age 5"
+   ]
+  },
+  {
+   "id": "lm_pres_0_0",
+   "x": 559,
+   "y": 398,
+   "w": 245,
+   "h": 132,
+   "kind": "lm_t",
+   "title": "Soft, fluctuant, lobulated",
+   "lines": [
+    "• posterior triangle",
+    "• changes size",
+    "• fixed to deep tissue"
+   ]
+  },
+  {
+   "id": "lm_pres_1_0",
+   "x": 559,
+   "y": 552,
+   "w": 245,
+   "h": 114,
+   "kind": "lm_w",
+   "title": "Complications",
+   "lines": [
+    "• dysphagia, AIRWAY obstruction",
+    "• infection, trauma"
+   ]
+  },
+  {
+   "id": "ln_pres_0_0",
+   "x": 844,
+   "y": 398,
+   "w": 245,
+   "h": 132,
+   "kind": "ln_t",
+   "title": "Growth + feel",
+   "lines": [
+    "• SLOW growth → benign",
+    "• RAPID, FIRM → infection or malignancy",
+    "• FIXED → malignancy",
+    "• FLUCTUANT → cyst or abscess"
+   ]
+  },
+  {
+   "id": "ln_pres_1_0",
+   "x": 844,
+   "y": 552,
+   "w": 245,
+   "h": 114,
+   "kind": "ln_w",
+   "title": "History",
+   "lines": [
+    "• B symptoms → malignancy",
+    "• travel, tuberculosis (TB), CAT SCRATCH",
+    "• swells with EATING → salivary gland"
+   ]
+  },
+  {
+   "id": "tg_inv_0_0",
+   "x": 45,
+   "y": 706,
+   "w": 245,
+   "h": 316,
+   "kind": "tg_t",
+   "title": "Ultrasound",
+   "lines": [
+    "solid vs cystic"
+   ]
+  },
+  {
+   "id": "bc_inv_0_0",
+   "x": 302,
+   "y": 706,
+   "w": 245,
+   "h": 316,
+   "kind": "bc_t",
+   "title": "Ultrasound ± CT",
+   "lines": [
+    "cyst, and its relation to nearby structures"
+   ]
+  },
+  {
+   "id": "lm_inv_0_0",
+   "x": 559,
+   "y": 706,
+   "w": 245,
+   "h": 147,
+   "kind": "lm_t",
+   "title": "1 · Ultrasound",
+   "lines": [
+    "superficial lesions"
+   ]
+  },
+  {
+   "id": "lm_inv_1_0",
+   "x": 559,
+   "y": 875,
+   "w": 245,
+   "h": 147,
+   "kind": "lm_w",
+   "title": "2 · CT: extent · MRI: best detail",
+   "lines": [
+    "MRI needs sedation in children"
+   ]
+  },
+  {
+   "id": "ln_inv_0_0",
+   "x": 844,
+   "y": 706,
+   "w": 245,
+   "h": 132,
+   "kind": "ln_t",
+   "title": "1 · Start SIMPLE: bloods",
+   "lines": [
+    "• complete blood count (CBC) + differential",
+    "• cat-scratch serology",
+    "• tumour marker: vanillylmandelic acid (VMA)"
+   ]
+  },
+  {
+   "id": "ln_inv_1_0",
+   "x": 844,
+   "y": 860,
+   "w": 245,
+   "h": 60,
+   "kind": "ln_w",
+   "title": "2 · Chest X-ray",
+   "lines": [
+    "TB, sarcoidosis, malignancy"
+   ]
+  },
+  {
+   "id": "ln_inv_2_0",
+   "x": 844,
+   "y": 942,
+   "w": 245,
+   "h": 80,
+   "kind": "ln_w",
+   "title": "3 · Ultrasound, then CT with contrast",
+   "lines": [
+    "CT: cellulitis vs ABSCESS"
+   ]
+  },
+  {
+   "id": "tg_tx_0_0",
+   "x": 45,
+   "y": 1062,
+   "w": 245,
+   "h": 116,
+   "kind": "ok",
+   "title": "SISTRUNK procedure: < 5% recur",
+   "lines": [
+    "• cyst + tract + middle of the HYOID (+ tongue base)",
+    "• NOT during an acute infection"
+   ]
+  },
+  {
+   "id": "tg_tx_1_0",
+   "x": 45,
+   "y": 1200,
+   "w": 245,
+   "h": 42,
+   "kind": "bad",
+   "title": "Simple cystectomy: 20% recur",
+   "lines": []
+  },
+  {
+   "id": "bc_tx_0_0",
+   "x": 302,
+   "y": 1062,
+   "w": 245,
+   "h": 80,
+   "kind": "ok",
+   "title": "COMPLETE excision of sinus + tract",
+   "lines": [
+    "3% recur"
+   ]
+  },
+  {
+   "id": "bc_tx_1_0",
+   "x": 302,
+   "y": 1164,
+   "w": 245,
+   "h": 78,
+   "kind": "bad",
+   "title": "Do NOT drain it",
+   "lines": [
+    "drainage or partial excision first → 20% recur"
+   ]
+  },
+  {
+   "id": "lm_tx_0_0",
+   "x": 559,
+   "y": 1062,
+   "w": 245,
+   "h": 79,
+   "kind": "ok",
+   "title": "SURGERY: treatment of choice",
+   "lines": [
+    "complete excision: 10% recur · incomplete: 15–50%"
+   ]
+  },
+  {
+   "id": "lm_tx_1_0",
+   "x": 559,
+   "y": 1163,
+   "w": 245,
+   "h": 79,
+   "kind": "warn",
+   "title": "Sclerotherapy",
+   "lines": [
+    "an inflammatory agent is injected to scar it"
+   ]
+  },
+  {
+   "id": "ln_tx_0_0",
+   "x": 844,
+   "y": 1062,
+   "w": 245,
+   "h": 180,
+   "kind": "ln_w",
+   "title": "Treat the cause the workup finds",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_con",
+   "path": "M567.0 70V95H424.5V120"
+  },
+  {
+   "from": "root",
+   "to": "g_ln",
+   "path": "M567.0 70V95H966.5V120"
+  },
+  {
+   "from": "tg_pres_0_0",
+   "to": "tg_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "bc_pres_0_0",
+   "to": "bc_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "lm_pres_0_0",
+   "to": "lm_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ln_pres_0_0",
+   "to": "ln_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "lm_inv_0_0",
+   "to": "lm_inv_1_0"
+  },
+  {
+   "from": "ln_inv_0_0",
+   "to": "ln_inv_1_0"
+  },
+  {
+   "from": "ln_inv_1_0",
+   "to": "ln_inv_2_0"
+  },
+  {
+   "from": "tg_tx_0_0",
+   "to": "tg_tx_1_0"
+  },
+  {
+   "from": "bc_tx_0_0",
+   "to": "bc_tx_1_0"
+  },
+  {
+   "from": "lm_tx_0_0",
+   "to": "lm_tx_1_0"
+  },
+  {
+   "from": "tg_head_0_0",
+   "to": "tg_pres_0_0"
+  },
+  {
+   "from": "tg_pres_1_0",
+   "to": "tg_inv_0_0"
+  },
+  {
+   "from": "tg_inv_0_0",
+   "to": "tg_tx_0_0"
+  },
+  {
+   "from": "g_con",
+   "to": "tg_head_0_0",
+   "from_dx": -257,
+   "label": "MIDLINE",
+   "label_at": [
+    167.5,
+    222
+   ]
+  },
+  {
+   "from": "bc_head_0_0",
+   "to": "bc_pres_0_0"
+  },
+  {
+   "from": "bc_pres_1_0",
+   "to": "bc_inv_0_0"
+  },
+  {
+   "from": "bc_inv_0_0",
+   "to": "bc_tx_0_0"
+  },
+  {
+   "from": "g_con",
+   "to": "bc_head_0_0",
+   "from_dx": 0,
+   "label": "LATERAL",
+   "label_at": [
+    424.5,
+    222
+   ]
+  },
+  {
+   "from": "lm_head_0_0",
+   "to": "lm_pres_0_0"
+  },
+  {
+   "from": "lm_pres_1_0",
+   "to": "lm_inv_0_0"
+  },
+  {
+   "from": "lm_inv_1_0",
+   "to": "lm_tx_0_0"
+  },
+  {
+   "from": "g_con",
+   "to": "lm_head_0_0",
+   "from_dx": 257,
+   "label": "POSTERIOR triangle",
+   "label_at": [
+    681.5,
+    222
+   ]
+  },
+  {
+   "from": "ln_head_0_0",
+   "to": "ln_pres_0_0"
+  },
+  {
+   "from": "ln_pres_1_0",
+   "to": "ln_inv_0_0"
+  },
+  {
+   "from": "ln_inv_2_0",
+   "to": "ln_tx_0_0"
+  },
+  {
+   "from": "g_ln",
+   "to": "ln_head_0_0",
+   "from_dx": 0,
+   "label": "ENLARGED NODE",
+   "label_at": [
+    966.5,
+    222
+   ]
+  }
+ ],
+ "panels": []
+}

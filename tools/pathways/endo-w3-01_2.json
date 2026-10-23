@@ -1,0 +1,1331 @@
+{
+ "name": "adrenal diseases pathway",
+ "title": "Adrenal diseases pathway: too little cortisol is sorted by a morning cortisol and paired ACTH into primary and secondary insufficiency; too much is sorted by product into Cushing syndrome, primary hyperaldosteronism and pheochromocytoma; each column gives how it presents, the tests, the causes and the treatment",
+ "width": 1420,
+ "kinds": {
+  "pai_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pai_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pai_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "sai_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sai_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "sai_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cs_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cs_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cs_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "pa_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pa_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "pa_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "pc_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pc_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "pc_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 9.0,
+   "y": 254.0,
+   "w": 278.0,
+   "h": 1344.0,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 289.0,
+   "y": 254.0,
+   "w": 278.0,
+   "h": 1344.0,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 569.0,
+   "y": 254.0,
+   "w": 278.0,
+   "h": 1344.0,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 849.0,
+   "y": 254.0,
+   "w": 278.0,
+   "h": 1344.0,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1129.0,
+   "y": 254.0,
+   "w": 278.0,
+   "h": 1344.0,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 460,
+   "y": 10,
+   "w": 500,
+   "kind": "dark",
+   "title": "Adrenal disease: one zone making too much, or the whole cortex too little",
+   "lines": [
+    "always ask about exogenous steroid use"
+   ]
+  },
+  {
+   "id": "lo",
+   "x": 75,
+   "y": 122,
+   "w": 426,
+   "kind": "plain",
+   "title": "Too little? AM cortisol 6–9 am + paired ACTH",
+   "lines": [
+    "~a random cortisol is uninterpretable"
+   ]
+  },
+  {
+   "id": "hi",
+   "x": 715,
+   "y": 122,
+   "w": 546,
+   "kind": "plain",
+   "title": "Too much? One screening test per product",
+   "lines": [
+    "~an incidentaloma is screened for all three"
+   ]
+  },
+  {
+   "id": "pai_head_0_0",
+   "x": 15,
+   "y": 262,
+   "w": 266,
+   "h": 98,
+   "kind": "pai_h",
+   "title": "Primary adrenal insufficiency (Addison)",
+   "lines": [
+    "cortisol ↓ + aldosterone ↓",
+    "ACTH ↑ drives the pigmentation"
+   ]
+  },
+  {
+   "id": "sai_head_0_0",
+   "x": 295,
+   "y": 262,
+   "w": 266,
+   "h": 98,
+   "kind": "sai_h",
+   "title": "Secondary (central) adrenal insufficiency",
+   "lines": [
+    "cortisol ↓ · aldosterone axis preserved",
+    "the MORE prevalent form"
+   ]
+  },
+  {
+   "id": "cs_head_0_0",
+   "x": 575,
+   "y": 262,
+   "w": 266,
+   "h": 98,
+   "kind": "cs_h",
+   "title": "Cushing syndrome",
+   "lines": [
+    "cortisol ↑ · zona fasciculata",
+    "lost diurnal rhythm and suppressibility"
+   ]
+  },
+  {
+   "id": "pa_head_0_0",
+   "x": 855,
+   "y": 262,
+   "w": 266,
+   "h": 98,
+   "kind": "pa_h",
+   "title": "Primary hyperaldosteronism (Conn)",
+   "lines": [
+    "aldosterone ↑ · zona glomerulosa",
+    "no longer renin-dependent"
+   ]
+  },
+  {
+   "id": "pc_head_0_0",
+   "x": 1135,
+   "y": 262,
+   "w": 266,
+   "h": 98,
+   "kind": "pc_h",
+   "title": "Pheochromocytoma",
+   "lines": [
+    "catecholamines ↑ · adrenal medulla",
+    "in sympathetic ganglia: paraganglioma"
+   ]
+  },
+  {
+   "id": "pai_pres_0_0",
+   "x": 15,
+   "y": 400,
+   "w": 266,
+   "h": 114,
+   "kind": "pai_t",
+   "title": "Presents as",
+   "lines": [
+    "weight loss, weakness, nausea, vomiting, abdominal pain",
+    "recurrent infection",
+    "~female predominance · peaks 30–50 y"
+   ]
+  },
+  {
+   "id": "pai_pres_1_0",
+   "x": 15.0,
+   "y": 536,
+   "w": 128.0,
+   "h": 96,
+   "kind": "pai_w",
+   "title": "Pigmented",
+   "lines": [
+    "hyperpigmentation, vitiligo"
+   ]
+  },
+  {
+   "id": "pai_pres_1_1",
+   "x": 153.0,
+   "y": 536,
+   "w": 128.0,
+   "h": 96,
+   "kind": "pai_w",
+   "title": "Salt-wasting",
+   "lines": [
+    "salt craving, orthostatic presyncope"
+   ]
+  },
+  {
+   "id": "sai_pres_0_0",
+   "x": 295,
+   "y": 400,
+   "w": 266,
+   "h": 95,
+   "kind": "sai_t",
+   "title": "Presents as",
+   "lines": [
+    "as primary, but:",
+    "~peaks 50–59 y"
+   ]
+  },
+  {
+   "id": "sai_pres_1_0",
+   "x": 295.0,
+   "y": 517,
+   "w": 128.0,
+   "h": 115,
+   "kind": "sai_w",
+   "title": "NO pigmentation",
+   "lines": [
+    "ACTH is not high"
+   ]
+  },
+  {
+   "id": "sai_pres_1_1",
+   "x": 433.0,
+   "y": 517,
+   "w": 128.0,
+   "h": 115,
+   "kind": "sai_w",
+   "title": "NO salt craving",
+   "lines": [
+    "aldosterone spared"
+   ]
+  },
+  {
+   "id": "cs_pres_0_0",
+   "x": 575,
+   "y": 400,
+   "w": 266,
+   "h": 114,
+   "kind": "cs_t",
+   "title": "Strongest signs (likelihood ratio)",
+   "lines": [
+    "ECCHYMOSES 10–11 · FRACTURE 8–14",
+    "PROXIMAL WEAKNESS 8–13: stand from a chair, arms folded"
+   ]
+  },
+  {
+   "id": "cs_pres_1_0",
+   "x": 575.0,
+   "y": 536,
+   "w": 128.0,
+   "h": 96,
+   "kind": "cs_w",
+   "title": "Also",
+   "lines": [
+    "hypertension, striae > 1 cm, plethora, hirsutism"
+   ]
+  },
+  {
+   "id": "cs_pres_1_1",
+   "x": 713.0,
+   "y": 536,
+   "w": 128.0,
+   "h": 96,
+   "kind": "bad",
+   "title": "Weakest sign",
+   "lines": [
+    "weight gain, obesity"
+   ]
+  },
+  {
+   "id": "pa_pres_0_0",
+   "x": 855,
+   "y": 400,
+   "w": 266,
+   "h": 114,
+   "kind": "pa_t",
+   "title": "Presents as",
+   "lines": [
+    "RESISTANT hypertension on > 3 drugs",
+    "~5–10% of all hypertension"
+   ]
+  },
+  {
+   "id": "pa_pres_1_0",
+   "x": 855.0,
+   "y": 536,
+   "w": 128.0,
+   "h": 96,
+   "kind": "pa_w",
+   "title": "Low K⁺",
+   "lines": [
+    "often, not always"
+   ]
+  },
+  {
+   "id": "pa_pres_1_1",
+   "x": 993.0,
+   "y": 536,
+   "w": 128.0,
+   "h": 96,
+   "kind": "pa_w",
+   "title": "NO edema",
+   "lines": [
+    "unlike heart failure"
+   ]
+  },
+  {
+   "id": "pc_pres_0_0",
+   "x": 1135,
+   "y": 400,
+   "w": 266,
+   "h": 114,
+   "kind": "pc_t",
+   "title": "SPELLS: the triad",
+   "lines": [
+    "HEADACHE · PALPITATIONS · SWEATING",
+    "with pallor"
+   ]
+  },
+  {
+   "id": "pc_pres_1_0",
+   "x": 1135,
+   "y": 536,
+   "w": 266,
+   "h": 96,
+   "kind": "pc_w",
+   "title": "Sustained",
+   "lines": [
+    "hypertension, anxiety, cold hands, orthostatic drop"
+   ]
+  },
+  {
+   "id": "pai_inv_0_0",
+   "x": 15,
+   "y": 672,
+   "w": 266,
+   "h": 70,
+   "kind": "pai_w",
+   "title": "1 · AM cortisol 6–9 am",
+   "lines": [
+    "< 80 rules in · > 450 rules out"
+   ]
+  },
+  {
+   "id": "pai_inv_1_0",
+   "x": 15.0,
+   "y": 764,
+   "w": 128.0,
+   "h": 124,
+   "kind": "pai_w",
+   "title": "2 · ACTH HIGH",
+   "lines": [
+    "paired with the cortisol"
+   ]
+  },
+  {
+   "id": "pai_inv_1_1",
+   "x": 153.0,
+   "y": 764,
+   "w": 128.0,
+   "h": 124,
+   "kind": "pai_w",
+   "title": "3 · Lytes",
+   "lines": [
+    "Na↓ K↑ HCO₃↓ Ca↑",
+    "aldosterone ↓ renin ↑"
+   ]
+  },
+  {
+   "id": "pai_inv_2_0",
+   "x": 15,
+   "y": 910,
+   "w": 266,
+   "h": 106,
+   "kind": "pai_t",
+   "title": "4 · Cosyntropin confirms",
+   "lines": [
+    "rise > 450 is normal · 97% sens, 95% spec",
+    "~stop estrogen ≥ 6 weeks before"
+   ]
+  },
+  {
+   "id": "sai_inv_0_0",
+   "x": 295,
+   "y": 672,
+   "w": 266,
+   "h": 63,
+   "kind": "sai_w",
+   "title": "1 · AM cortisol LOW",
+   "lines": [
+    "ACTH low or inappropriately normal"
+   ]
+  },
+  {
+   "id": "sai_inv_1_0",
+   "x": 295.0,
+   "y": 757,
+   "w": 128.0,
+   "h": 155,
+   "kind": "sai_w",
+   "title": "2 · K⁺ normal",
+   "lines": [
+    "sometimes ↑"
+   ]
+  },
+  {
+   "id": "sai_inv_1_1",
+   "x": 433.0,
+   "y": 757,
+   "w": 128.0,
+   "h": 155,
+   "kind": "sai_w",
+   "title": "3 · Gold standard",
+   "lines": [
+    "INSULIN TOLERANCE TEST",
+    "~cosyntropin less reliable"
+   ]
+  },
+  {
+   "id": "sai_inv_2_0",
+   "x": 295,
+   "y": 934,
+   "w": 266,
+   "h": 81,
+   "kind": "sai_t",
+   "title": "4 · MRI pituitary",
+   "lines": [
+    "and screen the other anterior pituitary axes"
+   ]
+  },
+  {
+   "id": "cs_inv_0_0",
+   "x": 575,
+   "y": 672,
+   "w": 266,
+   "h": 131,
+   "kind": "cs_t",
+   "title": "1 · SCREEN: TWO of three positive",
+   "lines": [
+    "1 mg dexamethasone: AM cortisol > 50",
+    "24-h urine free cortisol > normal",
+    "late-night saliva > 4"
+   ]
+  },
+  {
+   "id": "cs_inv_1_0",
+   "x": 575.0,
+   "y": 825,
+   "w": 128.0,
+   "h": 75,
+   "kind": "cs_w",
+   "title": "2 · ACTH HIGH",
+   "lines": [
+    "dependent"
+   ]
+  },
+  {
+   "id": "cs_inv_1_1",
+   "x": 713.0,
+   "y": 825,
+   "w": 128.0,
+   "h": 75,
+   "kind": "cs_w",
+   "title": "2 · ACTH LOW",
+   "lines": [
+    "independent"
+   ]
+  },
+  {
+   "id": "cs_inv_2_0",
+   "x": 575,
+   "y": 922,
+   "w": 266,
+   "h": 93,
+   "kind": "cs_w",
+   "title": "3 · Localise",
+   "lines": [
+    "MRI pituitary · CT adrenal · CT chest/abdomen"
+   ]
+  },
+  {
+   "id": "pa_inv_0_0",
+   "x": 855,
+   "y": 672,
+   "w": 266,
+   "h": 60,
+   "kind": "pa_w",
+   "title": "1 · BP + electrolytes",
+   "lines": [
+    "low K⁺, spontaneous or on a thiazide"
+   ]
+  },
+  {
+   "id": "pa_inv_1_0",
+   "x": 855,
+   "y": 754,
+   "w": 266,
+   "h": 80,
+   "kind": "pa_t",
+   "title": "2 · SCREEN: aldosterone/renin ratio",
+   "lines": [
+    "aldosterone ↑ · renin ↓"
+   ]
+  },
+  {
+   "id": "pa_inv_2_0",
+   "x": 855,
+   "y": 856,
+   "w": 266,
+   "h": 60,
+   "kind": "pa_w",
+   "title": "3 · CONFIRM",
+   "lines": [
+    "saline infusion, fludrocortisone or high salt"
+   ]
+  },
+  {
+   "id": "pa_inv_3_0",
+   "x": 855,
+   "y": 938,
+   "w": 266,
+   "h": 78,
+   "kind": "pa_w",
+   "title": "4 · LOCALISE",
+   "lines": [
+    "CT ± ADRENAL VEIN SAMPLING, the gold standard"
+   ]
+  },
+  {
+   "id": "pc_inv_0_0",
+   "x": 1135,
+   "y": 672,
+   "w": 266,
+   "h": 137,
+   "kind": "pc_t",
+   "title": "1 · SCREEN: plasma free metanephrines",
+   "lines": [
+    "99% sensitive: the best single test",
+    "~urinary VMA: most specific (95%), least sensitive (64%)"
+   ]
+  },
+  {
+   "id": "pc_inv_1_0",
+   "x": 1135,
+   "y": 831,
+   "w": 266,
+   "h": 81,
+   "kind": "pc_w",
+   "title": "2 · Localise",
+   "lines": [
+    "CT abdomen or ⁶⁸Ga-DOTATATE PET"
+   ]
+  },
+  {
+   "id": "pc_inv_2_0",
+   "x": 1135,
+   "y": 934,
+   "w": 266,
+   "h": 81,
+   "kind": "pc_w",
+   "title": "3 · GENETIC TESTING",
+   "lines": [
+    "for every patient"
+   ]
+  },
+  {
+   "id": "pai_cause_0_0",
+   "x": 15,
+   "y": 1056,
+   "w": 266,
+   "h": 60,
+   "kind": "pai_t",
+   "title": "AUTOIMMUNE 80–90%",
+   "lines": [
+    "in the West · 40% polyglandular"
+   ]
+  },
+  {
+   "id": "pai_cause_1_0",
+   "x": 15,
+   "y": 1138,
+   "w": 266,
+   "h": 114,
+   "kind": "pai_w",
+   "title": "Other causes",
+   "lines": [
+    "tuberculosis, fungal, metastases, haemorrhage, drugs",
+    "congenital adrenal hyperplasia, adrenoleukodystrophy"
+   ]
+  },
+  {
+   "id": "sai_cause_0_0",
+   "x": 295,
+   "y": 1056,
+   "w": 266,
+   "h": 96,
+   "kind": "sai_t",
+   "title": "EXOGENOUS GLUCOCORTICOID",
+   "lines": [
+    "the commonest cause: always ask"
+   ]
+  },
+  {
+   "id": "sai_cause_1_0",
+   "x": 295,
+   "y": 1174,
+   "w": 266,
+   "h": 78,
+   "kind": "sai_w",
+   "title": "Pituitary or hypothalamic disease",
+   "lines": []
+  },
+  {
+   "id": "cs_cause_0_0",
+   "x": 575,
+   "y": 1056,
+   "w": 266,
+   "h": 69,
+   "kind": "cs_t",
+   "title": "EXOGENOUS STEROID",
+   "lines": [
+    "the commonest overall"
+   ]
+  },
+  {
+   "id": "cs_cause_1_0",
+   "x": 575.0,
+   "y": 1147,
+   "w": 128.0,
+   "h": 105,
+   "kind": "cs_w",
+   "title": "Dependent",
+   "lines": [
+    "pituitary, ectopic ACTH or CRH"
+   ]
+  },
+  {
+   "id": "cs_cause_1_1",
+   "x": 713.0,
+   "y": 1147,
+   "w": 128.0,
+   "h": 105,
+   "kind": "cs_w",
+   "title": "Independent",
+   "lines": [
+    "adenoma, hyperplasia, carcinoma"
+   ]
+  },
+  {
+   "id": "pa_cause_0_0",
+   "x": 855.0,
+   "y": 1056,
+   "w": 128.0,
+   "h": 96,
+   "kind": "pa_w",
+   "title": "Unilateral",
+   "lines": [
+    "adenoma"
+   ]
+  },
+  {
+   "id": "pa_cause_0_1",
+   "x": 993.0,
+   "y": 1056,
+   "w": 128.0,
+   "h": 96,
+   "kind": "pa_w",
+   "title": "Bilateral",
+   "lines": [
+    "hyperplasia"
+   ]
+  },
+  {
+   "id": "pa_cause_1_0",
+   "x": 855,
+   "y": 1174,
+   "w": 266,
+   "h": 78,
+   "kind": "pa_t",
+   "title": "~1% of incidentalomas",
+   "lines": []
+  },
+  {
+   "id": "pc_cause_0_0",
+   "x": 1135,
+   "y": 1056,
+   "w": 266,
+   "h": 95,
+   "kind": "pc_t",
+   "title": "30–40% FAMILIAL",
+   "lines": [
+    "MEN 2A/2B, von Hippel-Lindau, NF1, SDH"
+   ]
+  },
+  {
+   "id": "pc_cause_1_0",
+   "x": 1135.0,
+   "y": 1173,
+   "w": 128.0,
+   "h": 79,
+   "kind": "pc_w",
+   "title": "10% extra-adrenal",
+   "lines": []
+  },
+  {
+   "id": "pc_cause_1_1",
+   "x": 1273.0,
+   "y": 1173,
+   "w": 128.0,
+   "h": 79,
+   "kind": "pc_w",
+   "title": "10% bilateral",
+   "lines": []
+  },
+  {
+   "id": "pai_tx_0_0",
+   "x": 15,
+   "y": 1292,
+   "w": 266,
+   "h": 116,
+   "kind": "ok",
+   "title": "Hydrocortisone + FLUDROCORTISONE",
+   "lines": [
+    "hydrocortisone 10–20 mg AM + 5–10 mg PM",
+    "fludrocortisone 0.05–0.1 mg"
+   ]
+  },
+  {
+   "id": "pai_tx_1_0",
+   "x": 15,
+   "y": 1430,
+   "w": 266,
+   "h": 60,
+   "kind": "warn",
+   "title": "Stress dosing: rule of 3s",
+   "lines": [
+    "sick → 3× the dose for 3 days"
+   ]
+  },
+  {
+   "id": "pai_tx_2_0",
+   "x": 15,
+   "y": 1512,
+   "w": 266,
+   "h": 78,
+   "kind": "bad",
+   "title": "CRISIS: do NOT wait for results",
+   "lines": [
+    "2–3 L saline/dextrose + hydrocortisone 100 mg IV"
+   ]
+  },
+  {
+   "id": "sai_tx_0_0",
+   "x": 295,
+   "y": 1292,
+   "w": 266,
+   "h": 129,
+   "kind": "ok",
+   "title": "Hydrocortisone ALONE",
+   "lines": [
+    "fludrocortisone usually not needed"
+   ]
+  },
+  {
+   "id": "sai_tx_1_0",
+   "x": 295,
+   "y": 1443,
+   "w": 266,
+   "h": 147,
+   "kind": "warn",
+   "title": "Stress dosing education",
+   "lines": [
+    "~too much: weight gain, hyperglycaemia, hypertension, osteopenia"
+   ]
+  },
+  {
+   "id": "cs_tx_0_0",
+   "x": 575,
+   "y": 1292,
+   "w": 266,
+   "h": 120,
+   "kind": "ok",
+   "title": "Resect the culprit tumour",
+   "lines": []
+  },
+  {
+   "id": "cs_tx_1_0",
+   "x": 575,
+   "y": 1434,
+   "w": 266,
+   "h": 156,
+   "kind": "warn",
+   "title": "In remission, NOT cured",
+   "lines": [
+    "recurrence even after 10 years",
+    "monitor 24-h urine + late-night saliva"
+   ]
+  },
+  {
+   "id": "pa_tx_0_0",
+   "x": 855.0,
+   "y": 1292,
+   "w": 128.0,
+   "h": 298,
+   "kind": "ok",
+   "title": "Unilateral",
+   "lines": [
+    "adrenalectomy",
+    "CURABLE"
+   ]
+  },
+  {
+   "id": "pa_tx_0_1",
+   "x": 993.0,
+   "y": 1292,
+   "w": 128.0,
+   "h": 298,
+   "kind": "ok",
+   "title": "Bilateral",
+   "lines": [
+    "mineralocorticoid receptor antagonist"
+   ]
+  },
+  {
+   "id": "pc_tx_0_0",
+   "x": 1135,
+   "y": 1292,
+   "w": 266,
+   "h": 85,
+   "kind": "bad",
+   "title": "1 · ALPHA blockade FIRST",
+   "lines": [
+    "phenoxybenzamine"
+   ]
+  },
+  {
+   "id": "pc_tx_1_0",
+   "x": 1135,
+   "y": 1399,
+   "w": 266,
+   "h": 85,
+   "kind": "warn",
+   "title": "2 · then beta",
+   "lines": [
+    "propranolol"
+   ]
+  },
+  {
+   "id": "pc_tx_2_0",
+   "x": 1135,
+   "y": 1506,
+   "w": 266,
+   "h": 85,
+   "kind": "ok",
+   "title": "3 · Surgery",
+   "lines": [
+    "~PASS < 4 benign, > 4 aggressive"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "lo",
+   "from_dx": -150
+  },
+  {
+   "from": "root",
+   "to": "hi",
+   "from_dx": 150
+  },
+  {
+   "from": "pai_pres_0_0",
+   "to": "pai_pres_1_0",
+   "from_dx": -60,
+   "dashed": true
+  },
+  {
+   "from": "pai_pres_0_0",
+   "to": "pai_pres_1_1",
+   "from_dx": 60,
+   "dashed": true
+  },
+  {
+   "from": "sai_pres_0_0",
+   "to": "sai_pres_1_0",
+   "from_dx": -60,
+   "dashed": true
+  },
+  {
+   "from": "sai_pres_0_0",
+   "to": "sai_pres_1_1",
+   "from_dx": 60,
+   "dashed": true
+  },
+  {
+   "from": "cs_pres_0_0",
+   "to": "cs_pres_1_0",
+   "from_dx": -60,
+   "dashed": true
+  },
+  {
+   "from": "cs_pres_0_0",
+   "to": "cs_pres_1_1",
+   "from_dx": 60,
+   "dashed": true
+  },
+  {
+   "from": "pa_pres_0_0",
+   "to": "pa_pres_1_0",
+   "from_dx": -60,
+   "dashed": true
+  },
+  {
+   "from": "pa_pres_0_0",
+   "to": "pa_pres_1_1",
+   "from_dx": 60,
+   "dashed": true
+  },
+  {
+   "from": "pc_pres_0_0",
+   "to": "pc_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "pai_inv_0_0",
+   "to": "pai_inv_1_0",
+   "from_dx": -60
+  },
+  {
+   "from": "pai_inv_0_0",
+   "to": "pai_inv_1_1",
+   "from_dx": 60
+  },
+  {
+   "from": "pai_inv_1_0",
+   "to": "pai_inv_2_0",
+   "to_dx": -60
+  },
+  {
+   "from": "pai_inv_1_1",
+   "to": "pai_inv_2_0",
+   "to_dx": 60
+  },
+  {
+   "from": "sai_inv_0_0",
+   "to": "sai_inv_1_0",
+   "from_dx": -60
+  },
+  {
+   "from": "sai_inv_0_0",
+   "to": "sai_inv_1_1",
+   "from_dx": 60
+  },
+  {
+   "from": "sai_inv_1_0",
+   "to": "sai_inv_2_0",
+   "to_dx": -60
+  },
+  {
+   "from": "sai_inv_1_1",
+   "to": "sai_inv_2_0",
+   "to_dx": 60
+  },
+  {
+   "from": "cs_inv_0_0",
+   "to": "cs_inv_1_0",
+   "from_dx": -60
+  },
+  {
+   "from": "cs_inv_0_0",
+   "to": "cs_inv_1_1",
+   "from_dx": 60
+  },
+  {
+   "from": "cs_inv_1_0",
+   "to": "cs_inv_2_0",
+   "to_dx": -60
+  },
+  {
+   "from": "cs_inv_1_1",
+   "to": "cs_inv_2_0",
+   "to_dx": 60
+  },
+  {
+   "from": "pa_inv_0_0",
+   "to": "pa_inv_1_0"
+  },
+  {
+   "from": "pa_inv_1_0",
+   "to": "pa_inv_2_0"
+  },
+  {
+   "from": "pa_inv_2_0",
+   "to": "pa_inv_3_0"
+  },
+  {
+   "from": "pc_inv_0_0",
+   "to": "pc_inv_1_0"
+  },
+  {
+   "from": "pc_inv_1_0",
+   "to": "pc_inv_2_0"
+  },
+  {
+   "from": "pai_cause_0_0",
+   "to": "pai_cause_1_0",
+   "dashed": true
+  },
+  {
+   "from": "sai_cause_0_0",
+   "to": "sai_cause_1_0",
+   "dashed": true
+  },
+  {
+   "from": "cs_cause_0_0",
+   "to": "cs_cause_1_0",
+   "from_dx": -60,
+   "dashed": true
+  },
+  {
+   "from": "cs_cause_0_0",
+   "to": "cs_cause_1_1",
+   "from_dx": 60,
+   "dashed": true
+  },
+  {
+   "from": "pa_cause_0_0",
+   "to": "pa_cause_1_0",
+   "to_dx": -60,
+   "dashed": true
+  },
+  {
+   "from": "pa_cause_0_1",
+   "to": "pa_cause_1_0",
+   "to_dx": 60,
+   "dashed": true
+  },
+  {
+   "from": "pc_cause_0_0",
+   "to": "pc_cause_1_0",
+   "from_dx": -60,
+   "dashed": true
+  },
+  {
+   "from": "pc_cause_0_0",
+   "to": "pc_cause_1_1",
+   "from_dx": 60,
+   "dashed": true
+  },
+  {
+   "from": "pai_tx_0_0",
+   "to": "pai_tx_1_0"
+  },
+  {
+   "from": "pai_tx_1_0",
+   "to": "pai_tx_2_0"
+  },
+  {
+   "from": "sai_tx_0_0",
+   "to": "sai_tx_1_0"
+  },
+  {
+   "from": "cs_tx_0_0",
+   "to": "cs_tx_1_0"
+  },
+  {
+   "from": "pc_tx_0_0",
+   "to": "pc_tx_1_0"
+  },
+  {
+   "from": "pc_tx_1_0",
+   "to": "pc_tx_2_0"
+  },
+  {
+   "from": "pai_head_0_0",
+   "to": "pai_pres_0_0"
+  },
+  {
+   "from": "pai_pres_1_0",
+   "to": "pai_inv_0_0",
+   "to_dx": -60
+  },
+  {
+   "from": "pai_pres_1_1",
+   "to": "pai_inv_0_0",
+   "to_dx": 60
+  },
+  {
+   "from": "pai_inv_2_0",
+   "to": "pai_cause_0_0"
+  },
+  {
+   "from": "pai_cause_1_0",
+   "to": "pai_tx_0_0"
+  },
+  {
+   "from": "sai_head_0_0",
+   "to": "sai_pres_0_0"
+  },
+  {
+   "from": "sai_pres_1_0",
+   "to": "sai_inv_0_0",
+   "to_dx": -60
+  },
+  {
+   "from": "sai_pres_1_1",
+   "to": "sai_inv_0_0",
+   "to_dx": 60
+  },
+  {
+   "from": "sai_inv_2_0",
+   "to": "sai_cause_0_0"
+  },
+  {
+   "from": "sai_cause_1_0",
+   "to": "sai_tx_0_0"
+  },
+  {
+   "from": "cs_head_0_0",
+   "to": "cs_pres_0_0"
+  },
+  {
+   "from": "cs_pres_1_0",
+   "to": "cs_inv_0_0",
+   "to_dx": -60
+  },
+  {
+   "from": "cs_pres_1_1",
+   "to": "cs_inv_0_0",
+   "to_dx": 60
+  },
+  {
+   "from": "cs_inv_2_0",
+   "to": "cs_cause_0_0"
+  },
+  {
+   "from": "cs_cause_1_0",
+   "to": "cs_tx_0_0",
+   "to_dx": -60
+  },
+  {
+   "from": "cs_cause_1_1",
+   "to": "cs_tx_0_0",
+   "to_dx": 60
+  },
+  {
+   "from": "pa_head_0_0",
+   "to": "pa_pres_0_0"
+  },
+  {
+   "from": "pa_pres_1_0",
+   "to": "pa_inv_0_0",
+   "to_dx": -60
+  },
+  {
+   "from": "pa_pres_1_1",
+   "to": "pa_inv_0_0",
+   "to_dx": 60
+  },
+  {
+   "from": "pa_inv_3_0",
+   "to": "pa_cause_0_0",
+   "from_dx": -60
+  },
+  {
+   "from": "pa_inv_3_0",
+   "to": "pa_cause_0_1",
+   "from_dx": 60
+  },
+  {
+   "from": "pa_cause_1_0",
+   "to": "pa_tx_0_0",
+   "from_dx": -60
+  },
+  {
+   "from": "pa_cause_1_0",
+   "to": "pa_tx_0_1",
+   "from_dx": 60
+  },
+  {
+   "from": "pc_head_0_0",
+   "to": "pc_pres_0_0"
+  },
+  {
+   "from": "pc_pres_1_0",
+   "to": "pc_inv_0_0"
+  },
+  {
+   "from": "pc_inv_2_0",
+   "to": "pc_cause_0_0"
+  },
+  {
+   "from": "pc_cause_1_0",
+   "to": "pc_tx_0_0",
+   "to_dx": -60
+  },
+  {
+   "from": "pc_cause_1_1",
+   "to": "pc_tx_0_0",
+   "to_dx": 60
+  },
+  {
+   "from": "lo",
+   "to": "pai_head_0_0",
+   "from_dx": -130,
+   "label": "ACTH HIGH"
+  },
+  {
+   "from": "lo",
+   "to": "sai_head_0_0",
+   "from_dx": 130,
+   "label": "ACTH low / normal"
+  },
+  {
+   "from": "hi",
+   "to": "cs_head_0_0",
+   "from_dx": -250,
+   "label": "cortisol"
+  },
+  {
+   "from": "hi",
+   "to": "pa_head_0_0",
+   "from_dx": 0,
+   "label": "aldosterone"
+  },
+  {
+   "from": "hi",
+   "to": "pc_head_0_0",
+   "from_dx": 250,
+   "label": "catecholamines"
+  }
+ ],
+ "panels": [
+  {
+   "x": 15,
+   "y": 1624,
+   "w": 1390,
+   "title": "Adrenal incidentaloma: screen ALL THREE",
+   "cols": 2,
+   "items": [
+    "cortisol: 1 mg dexamethasone, 24-h urine",
+    "aldosterone: BP + potassium, then aldosterone/renin if indicated",
+    "catecholamines: urine or plasma metanephrines",
+    "2–3% of adults over 50, 7% over 70",
+    "only absolute sign of malignancy: distant metastasis",
+    "NEVER biopsy until pheochromocytoma excluded (70% complications)"
+   ]
+  }
+ ]
+}

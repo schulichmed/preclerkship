@@ -1,0 +1,322 @@
+{
+ "name": "bleeding patient overview",
+ "title": "Bleeding patient decision chart: stabilize first and transfuse only the missing component, then the site of bleeding splits a platelet-type (primary hemostasis) problem from a coagulation-factor (secondary) problem; the platelet count, bleeding score and von Willebrand screen sort von Willebrand disease from platelet function disorders, and an isolated long aPTT points to hemophilia; each column gives presentation, numbered investigations and treatment",
+ "col_w": 250,
+ "root": {
+  "title": "Bleeding patient: STABILIZE, then is it a PLATELET problem or a FACTOR problem?",
+  "lines": [
+   "1 · ABCs  ·  2 · find and stop the source; transfuse ONLY what is missing  ·  3 · work up the cause",
+   "transfuse: red cells if hemoglobin (Hb) < 70 g/L (70–90 with coronary disease) · platelets < 10, < 50 for surgery, < 100 for neurosurgery · MASSIVE bleeding → massive transfusion protocol + early fibrinogen + tranexamic acid",
+   "first tests: complete blood count (CBC) + film · prothrombin time (PT/INR) · activated partial thromboplastin time (aPTT) ± thrombin time · fibrinogen · liver + kidney function",
+   "serious bleeding or trauma: treat first, investigate later"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_pri",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "MUCOSAL, SKIN: PRIMARY hemostasis (platelets, von Willebrand factor (vWF), vessels)",
+   "lines": [
+    "petechiae < 2 mm, purpura, bruising · nose, gums, heavy menses · bleeds at once",
+    "NORMAL PT + aPTT do NOT exclude it"
+   ]
+  },
+  {
+   "id": "g_sec",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "DEEP: SECONDARY hemostasis (factors)",
+   "lines": [
+    "joints, muscles · hematoma, hemarthrosis"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_pri",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "Platelet COUNT normal (LOW → THROMBOCYTOPENIA chart)",
+   "lines": [
+    "• bleeding assessment tool (ISTH BAT) abnormal: ≥ 4 men, ≥ 6 women, ≥ 3 children",
+    "• → von Willebrand (vWD) SCREEN"
+   ]
+  },
+  {
+   "id": "t_sec",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "aPTT LONG, PT/INR NORMAL",
+   "lines": [
+    "any other pattern → ADULT COAGULOPATHY chart"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "vwd",
+   "colour": "purple",
+   "drop_from": "t_pri",
+   "drop_label": "screen ABNORMAL",
+   "head": [
+    [
+     [
+      "h",
+      "von Willebrand disease (vWD)",
+      [
+       "most common inherited · autosomal",
+       "vWF holds platelets AND carries FVIII"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Mucosal bleeding",
+      [
+       "• heavy menses, postpartum, GI",
+       "• easy bruising, post-op bleeding",
+       "~• joints, brain: rare (type 3)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · vWD SCREEN",
+      [
+       "• vWF antigen (amount)",
+       "• vWF activity (function)",
+       "• factor VIII activity"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Hematology: the type",
+      [
+       "• 1: all ↓ in step (commonest)",
+       "• 2: activity < 70% of antigen",
+       "• 3: vWF absent · 2B: platelets ↓"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Type 1 → DDAVP (desmopressin)",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Types 2, 3 → IV vWF/FVIII concentrate",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "Mucosal bleed → tranexamic acid",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pfd",
+   "colour": "teal",
+   "drop_from": "t_pri",
+   "drop_label": "screen normal",
+   "head": [
+    [
+     [
+      "h",
+      "Platelet function disorder",
+      [
+       "inherited or acquired · both sexes",
+       "non-specific type most common"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Mucosal bleeding",
+      [
+       "• heavy menses, postpartum",
+       "• easy bruising, post-op bleeding"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · EXCLUDE first",
+      [
+       "• antiplatelets: ASA, clopidogrel, NSAIDs",
+       "• chronic kidney disease"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · CBC + film",
+      [
+       "count may be low, platelets odd-looking"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Hematology",
+      [
+       "platelet function testing"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "By type and severity",
+      [
+       "• DDAVP",
+       "• tranexamic acid (mucosal)",
+       "• platelet transfusion"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "LIFE-THREATENING",
+      [
+       "recombinant factor VIIa"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hem",
+   "colour": "orange",
+   "drop_from": "t_sec",
+   "drop_label": "factor ↓",
+   "head": [
+    [
+     [
+      "h",
+      "Hemophilia A (FVIII) · B (FIX)",
+      [
+       "X-linked: males · 30% new mutations"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "JOINT + MUSCLE bleeds",
+      [
+       "• severe: spontaneous",
+       "• moderate: some spontaneous",
+       "• mild: only major trauma, surgery"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Bleeding + FAMILY history",
+      [
+       "none does NOT rule out an inherited disorder"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Factor activity",
+      [
+       "FVIII ↓ (A) or FIX ↓ (B)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Hemophilia centre",
+      [
+       "• rest, ice, compression, elevation (RICE)",
+       "• tranexamic acid (mucosal)",
+       "• DDAVP: mild A only"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Factor replacement",
+      [
+       "• 1 U/kg FVIII → level + 2%",
+       "• 1 U/kg FIX → level + 1%"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Other options",
+      [
+       "recombinant FVIIa · FEIBA"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

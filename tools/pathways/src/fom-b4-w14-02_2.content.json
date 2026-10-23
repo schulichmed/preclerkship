@@ -1,0 +1,373 @@
+{
+ "name": "choosing antibiotics overview",
+ "title": "Choosing antibiotics decision chart: name the syndrome (skin and soft tissue with or without MRSA risk, urinary tract, intra-abdominal, community-acquired pneumonia), the bugs it targets, the empiric drug to choose (oral if stable, IV if septic or deep) and what to avoid, then narrow on culture results",
+ "col_w": 250,
+ "root": {
+  "title": "Choosing an antibiotic: which SYNDROME → which BUGS → the NARROWEST empiric drug → narrow again when cultures return",
+  "lines": [
+   "only for BACTERIA: not fever alone, not viruses",
+   "WHEN: sepsis IMMEDIATELY · stable subacute (osteomyelitis) can wait · mild infection in a healthy patient: none",
+   "the patient changes it: site, age, kidneys, allergies, immune status, pregnancy (β-lactams SAFEST) · check interactions",
+   "PENICILLIN allergy reported? assess it first (ALLERGY chart): going broad ↑ C. difficile, methicillin-resistant S. aureus (MRSA)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ss",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "SKIN + SOFT TISSUE (SSTI): any MRSA risk?",
+   "lines": [
+    "stable → oral · sepsis or deep-seated → IV"
+   ]
+  },
+  {
+   "id": "g_ut",
+   "cols": [
+    2,
+    2
+   ],
+   "title": "URINARY TRACT (UTI)",
+   "lines": []
+  },
+  {
+   "id": "g_ia",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "INTRA-ABDOMINAL",
+   "lines": []
+  },
+  {
+   "id": "g_cp",
+   "cols": [
+    4,
+    4
+   ],
+   "title": "PNEUMONIA (community-acquired)",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "bugs",
+  "pick",
+  "avoid"
+ ],
+ "row_names": {
+  "bugs": "TARGET BUGS",
+  "pick": "CHOOSE",
+  "avoid": "AVOID"
+ },
+ "columns": [
+  {
+   "id": "s1",
+   "colour": "teal",
+   "drop_from": "g_ss",
+   "drop_label": "NO MRSA risk",
+   "head": [
+    [
+     [
+      "h",
+      "SSTI, no MRSA risk",
+      [
+       "needs an ANTI-STAPHYLOCOCCAL drug",
+       "cephalexin, cefazolin = 1st-gen cephalosporins"
+      ]
+     ]
+    ]
+   ],
+   "bugs": [
+    [
+     [
+      "t",
+      "Gram-positive cocci",
+      [
+       "• Streptococcus pyogenes",
+       "• Staphylococcus aureus"
+      ]
+     ]
+    ]
+   ],
+   "pick": [
+    [
+     [
+      "ok",
+      "STABLE: oral",
+      [
+       "• cephalexin",
+       "• cloxacillin",
+       "• clindamycin"
+      ]
+     ],
+     [
+      "ok",
+      "SEPSIS / deep: IV",
+      [
+       "• cefazolin",
+       "• cloxacillin"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "bad",
+      "Plain penicillin, amoxicillin",
+      [
+       "miss S. aureus: only the anti-staph penicillins cover it"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "s2",
+   "colour": "orange",
+   "drop_from": "g_ss",
+   "drop_label": "MRSA risk",
+   "head": [
+    [
+     [
+      "h",
+      "SSTI, MRSA risk",
+      [
+       "β-lactams FAIL (see the RESISTANCE chart)",
+       "TMP-SMX = trimethoprim-sulfamethoxazole"
+      ]
+     ]
+    ]
+   ],
+   "bugs": [
+    [
+     [
+      "t",
+      "Same bugs + MRSA",
+      [
+       "• S. pyogenes",
+       "• MRSA"
+      ]
+     ]
+    ]
+   ],
+   "pick": [
+    [
+     [
+      "ok",
+      "STABLE: oral",
+      [
+       "• TMP-SMX",
+       "• doxycycline",
+       "• clindamycin",
+       "• linezolid ($$)"
+      ]
+     ],
+     [
+      "ok",
+      "SEPSIS / deep: IV",
+      [
+       "• vancomycin",
+       "• daptomycin",
+       "• linezolid"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "warn",
+      "Vancomycin is NEPHROTOXIC",
+      [
+       "covers MRSA, only weakly bactericidal"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ut",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "UTI",
+      [
+       "Gram-negative mostly"
+      ]
+     ]
+    ]
+   ],
+   "bugs": [
+    [
+     [
+      "t",
+      "KEEPS",
+      [
+       "• Klebsiella, E. coli, Enterococcus",
+       "• Proteus, S. saprophyticus"
+      ]
+     ]
+    ]
+   ],
+   "pick": [
+    [
+     [
+      "ok",
+      "Oral options",
+      [
+       "• amoxicillin",
+       "• TMP-SMX (Septra)",
+       "• nitrofurantoin (Macrobid)"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "bad",
+      "Ciprofloxacin only if nothing else",
+      [
+       "• C. difficile, tendon rupture, aortic aneurysm, delirium",
+       "• moxifloxacin is NOT in urine: never for UTI"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ia",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Intra-abdominal",
+      [
+       "mixed gut flora"
+      ]
+     ]
+    ]
+   ],
+   "bugs": [
+    [
+     [
+      "t",
+      "Gram-negatives + ANAEROBES",
+      [
+       "• + Enterococcus, S. anginosus",
+       "• yeast: Candida"
+      ]
+     ]
+    ]
+   ],
+   "pick": [
+    [
+     [
+      "ok",
+      "1 · Aerobic drug + METRONIDAZOLE",
+      [
+       "• ceftriaxone + metronidazole",
+       "• gentamicin / tobramycin + metronidazole"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Broader",
+      [
+       "• piperacillin-tazobactam",
+       "• carbapenem: ONLY if life-threatening or multidrug-resistant"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "bad",
+      "Metronidazole ALONE",
+      [
+       "anaerobes only: always pair it"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Aminoglycosides",
+      [
+       "• kidney + ear toxic",
+       "• no Gram-positive or anaerobe cover"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cp",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Community-acquired pneumonia",
+      [
+       "typical + ATYPICAL bugs"
+      ]
+     ]
+    ]
+   ],
+   "bugs": [
+    [
+     [
+      "t",
+      "Cover both",
+      [
+       "• S. pneumoniae, S. aureus, H. influenzae, Moraxella",
+       "• atypical: Mycoplasma, Legionella, Chlamydia"
+      ]
+     ]
+    ]
+   ],
+   "pick": [
+    [
+     [
+      "ok",
+      "Admitted: CEFTRIAXONE + AZITHROMYCIN",
+      [
+       "β-lactam for typicals · macrolide for atypicals"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "S. pneumoniae proven: PENICILLIN",
+      [
+       "narrower"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "warn",
+      "Levo- / moxifloxacin",
+      [
+       "respiratory quinolones: only if no other option"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

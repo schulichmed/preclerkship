@@ -1,0 +1,86 @@
+{
+ "name": "chronic kidney disease overview",
+ "title": "Chronic kidney disease decision chart: the definition and stages, then four jobs side by side: slow the decline (blood pressure targets by diabetes status, ACE inhibitor or ARB, glycemic target), prevent superimposed injury, treat the complications, and plan renal replacement early",
+ "col_w": 252,
+ "root": {
+  "title": "Chronic kidney disease (CKD): is it CKD, and how do you SLOW it?",
+  "lines": [
+   "kidney DAMAGE (protein or blood in the urine) or estimated glomerular filtration rate (eGFR) < 60 · for ≥ 3 MONTHS · not on dialysis or transplant",
+   "causes: #1 diabetes · #2 hypertension · #3 glomerulonephritis · polycystic kidney disease (genetic)",
+   "after 40, GFR falls 0.7–1 mL/min a year: judge against age"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g",
+   "cols": [0, 3],
+   "title": "STAGE it by GFR, % of normal",
+   "lines": [
+    "1: > 90 · 2: 60–89 · 3: 30–59 · 4: 15–29 · 5: < 15 = KIDNEY FAILURE",
+    "below ~25%: POINT OF NO RETURN, it keeps falling even once the insult is gone"
+   ]
+  }
+ ],
+ "sections": ["head", "aim", "do"],
+ "row_names": {
+  "aim": "AIM",
+  "do": "DO"
+ },
+ "columns": [
+  {
+   "id": "slow",
+   "colour": "teal",
+   "drop_label": "every patient",
+   "head": [[["h", "1 · SLOW the decline", ["keep glomerular pressure LOW"]]]],
+   "aim": [
+    [["t", "Blood pressure target", []]],
+    [["w", "NO diabetes", ["< 140/80"]], ["w", "DIABETES", ["< 130/80"]]]
+   ],
+   "do": [
+    [["ok", "1 · ACE inhibitor or ARB", ["angiotensin receptor blocker"]]],
+    [["ok", "2 · Less protein", ["if a heavy red-meat eater"]]],
+    [["ok", "3 · Glycated hemoglobin (HbA1c) < 7%", []]]
+   ]
+  },
+  {
+   "id": "prot",
+   "colour": "orange",
+   "drop_label": "every patient",
+   "head": [[["h", "2 · PREVENT a second injury", []]]],
+   "aim": [
+    [["t", "Nothing ON TOP of the CKD", []]]
+   ],
+   "do": [
+    [["bad", "AVOID", ["• anti-inflammatories (NSAIDs)", "• aminoglycosides", "• radiographic contrast", "• pregnancy: volume ↑ → glomerular hypertension"]]],
+    [["warn", "Act EARLY on", ["• vomiting or diarrhea: seek care", "• urinary infection, pyelonephritis", "• obstruction: manage the prostate early"]]]
+   ]
+  },
+  {
+   "id": "comp",
+   "colour": "purple",
+   "drop_label": "as GFR falls",
+   "head": [[["h", "3 · TREAT what it causes", []]]],
+   "aim": [
+    [["t", "Fluid + electrolytes", ["• can't clear water: Na ↓, K ↑", "• Na kept: heart failure, lung edema, arrhythmia"]]],
+    [["t", "Blood + acid", ["• ANEMIA: erythropoietin ↓", "• METABOLIC ACIDOSIS"]]]
+   ],
+   "do": [
+    [["w", "Bone: PO4 ↑ + Ca ↓ → hyperparathyroidism", []]],
+    [["ok", "Treat the bone disease", ["• low-phosphate diet", "• activated vitamin D", "• calcium carbonate: binds phosphate"]]]
+   ]
+  },
+  {
+   "id": "rrt",
+   "colour": "brown",
+   "drop_label": "stage 5 coming",
+   "head": [[["h", "4 · PLAN renal replacement", ["prevents wasting (cachexia)"]]]],
+   "aim": [
+    [["t", "START PLANNING EARLY", ["transplant or dialysis takes time to set up"]]],
+    [["w", "Options", ["• transplant", "• hemodialysis", "• peritoneal dialysis"]]]
+   ],
+   "do": [
+    [["bad", "Dialysis when", ["• AEIOU: see ACUTE KIDNEY INJURY chart", "• in CKD also uremic ENCEPHALOPATHY, PERICARDITIS"]]]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,438 @@
+{
+ "name": "cardiac investigations overview",
+ "title": "Investigating suspected ischemic heart disease decision chart: the pretest probability picks the test, from no testing in asymptomatic low-risk patients, to CT coronary angiography as a test of exclusion, to exercise or pharmacologic stress testing at intermediate probability, to coronary angiography after a high-risk result; for chambers, valves and left ventricular function the gold-standard imaging test is chosen by the structure",
+ "col_w": 214,
+ "root": {
+  "title": "Suspected ischemic heart disease: WHICH TEST? Match it to the PRETEST PROBABILITY and the QUESTION",
+  "lines": [
+   "history + exam are the most important tests · pretest probability: age, male sex, the type of chest pain, risk factors",
+   "a NORMAL ECG does NOT exclude ischemia · chest pain is the LAST step of the ischemic cascade, after perfusion, wall motion and ECG change"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_lo",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "LOW: no symptoms",
+   "lines": []
+  },
+  {
+   "id": "g_lm",
+   "cols": [
+    1,
+    1
+   ],
+   "title": "LOW to MODERATE",
+   "lines": []
+  },
+  {
+   "id": "g_in",
+   "cols": [
+    2,
+    4
+   ],
+   "title": "INTERMEDIATE (25–75%): a STRESS test",
+   "lines": [
+    "can they WALK on a treadmill, and is the resting ECG normal?"
+   ]
+  },
+  {
+   "id": "g_hi",
+   "cols": [
+    5,
+    5
+   ],
+   "title": "HIGH-RISK result",
+   "lines": []
+  },
+  {
+   "id": "g_st",
+   "cols": [
+    6,
+    6
+   ],
+   "title": "Not the arteries?",
+   "lines": []
+  }
+ ],
+ "sections": [
+  "head",
+  "use",
+  "read",
+  "watch"
+ ],
+ "row_names": {
+  "use": "CHOOSE WHEN",
+  "read": "READ IT",
+  "watch": "WATCH FOR"
+ },
+ "columns": [
+  {
+   "id": "no",
+   "colour": "slate",
+   "head": [
+    [
+     [
+      "h",
+      "NO testing",
+      [
+       "false positives harm: anxiety, insurance, further tests"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "Asymptomatic, LOW risk",
+      [
+       "Framingham 10-year risk < 10%"
+      ]
+     ]
+    ]
+   ],
+   "read": [
+    [
+     [
+      "ok",
+      "Lifestyle advice",
+      [
+       "re-estimate the risk in 5 years"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "warn",
+      "New atypical pain or risk factors",
+      [
+       "→ a STRESS test"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ct",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "CT coronary angiogram (CTCA)",
+      [
+       "a test of EXCLUSION: negative predictive value 99%"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "Low–moderate probability",
+      [
+       "beta blocker 1 h before: slows the heart, less motion"
+      ]
+     ]
+    ]
+   ],
+   "read": [
+    [
+     [
+      "w",
+      "Plaque and anatomy",
+      [
+       "calcium score > 300: ↑ risk of events"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "bad",
+      "Not specific for FLOW-limiting lesions",
+      [
+       "• contrast: allergy, kidney disease",
+       "• 400–800 chest X-rays of radiation"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ex",
+   "colour": "blue",
+   "drop_label": "walks, ECG normal",
+   "head": [
+    [
+     [
+      "h",
+      "Exercise stress ECG",
+      [
+       "simple, inexpensive"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "Walks + interpretable NORMAL resting ECG",
+      []
+     ]
+    ]
+   ],
+   "read": [
+    [
+     [
+      "w",
+      "Ischemic ST depression",
+      [
+       "exercise < 6 min = the strongest prognostic sign"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "bad",
+      "NOT in",
+      [
+       "• acute MI (< 2 days), unstable angina",
+       "• symptomatic severe aortic stenosis",
+       "• uncontrolled HF or arrhythmia, PE, dissection"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "im",
+   "colour": "purple",
+   "drop_label": "ECG abnormal",
+   "head": [
+    [
+     [
+      "h",
+      "Stress IMAGING",
+      [
+       "nuclear perfusion (MPI) or stress echo"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "ABNORMAL resting ECG",
+      [
+       "more accurate than the ECG alone"
+      ]
+     ]
+    ]
+   ],
+   "read": [
+    [
+     [
+      "w",
+      "Rest vs stress",
+      [
+       "• REVERSIBLE defect = ISCHEMIA",
+       "• FIXED defect = INFARCT"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "warn",
+      "Radiation",
+      [
+       "• nuclear: ~100 chest X-rays",
+       "• stress echo: none, but body habitus limits it"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ph",
+   "colour": "orange",
+   "drop_label": "cannot walk",
+   "head": [
+    [
+     [
+      "h",
+      "DRUG stress imaging",
+      [
+       "orthopedic, vascular, neuropathy, rate-slowing drugs"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "Dipyridamole (vasodilator)",
+      [
+       "hold caffeine + theophylline 48 h"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Dobutamine (β1)",
+      [
+       "PREFERRED for stress echo · or caffeine in the last 12 h"
+      ]
+     ]
+    ]
+   ],
+   "read": [
+    [
+     [
+      "w",
+      "Rest vs stress, as for any MPI",
+      [
+       "reversible defect = ischemia"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "bad",
+      "NO dipyridamole",
+      [
+       "sick sinus, asthma"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "NO dobutamine",
+      [
+       "sustained VT, recent MI, severe hypertension"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "an",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "Coronary angiogram",
+      [
+       "GOLD standard for coronary anatomy; treat it at once (PCI)"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "Choose when",
+      [
+       "• HIGH-RISK stress result",
+       "• unstable, shock, severe LV dysfunction",
+       "• angina despite medical therapy"
+      ]
+     ]
+    ]
+   ],
+   "read": [
+    [
+     [
+      "warn",
+      "A tight lesion does NOT prove the pain is ischemic",
+      [
+       "correlate with function"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "bad",
+      "Invasive",
+      [
+       "• MI, stroke, death: 1 in 1000 each",
+       "• vascular injury commonest · contrast kidney injury"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sx",
+   "colour": "olive",
+   "head": [
+    [
+     [
+      "h",
+      "Chambers, valves, LV function",
+      [
+       "start with chest X-ray + transthoracic echo (TTE)"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "Gold standard by structure",
+      [
+       "• valves: ECHO (TEE if TTE falls short)",
+       "• chambers, global function: MRI"
+      ]
+     ]
+    ]
+   ],
+   "read": [
+    [
+     [
+      "w",
+      "After an MI: LV FUNCTION",
+      [
+       "the strongest predictor of survival"
+      ]
+     ]
+    ]
+   ],
+   "watch": [
+    [
+     [
+      "warn",
+      "Ejection fraction (EF)",
+      [
+       "normal > 50% · prognosis falls < 30–35% · echo or MUGA"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

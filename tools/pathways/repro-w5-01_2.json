@@ -1,0 +1,579 @@
+{
+ "name": "hysterectomy overview",
+ "width": 1344,
+ "title": "Hysterectomy routes from least to most invasive: the vaginal route and laparoscopic-assisted vaginal hysterectomy when the anatomy allows, total laparoscopic or robotic hysterectomy in place of the abdominal route, and abdominal hysterectomy as the last resort; each column gives who the route suits and its limits, with the types of hysterectomy named by what comes out",
+ "kinds": {
+  "vh_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vh_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "vh_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "lavh_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "lavh_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "lavh_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "tlh_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tlh_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "tlh_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "rob_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rob_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "rob_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "abd_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "abd_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "abd_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 246,
+   "h": 604,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 288,
+   "y": 288,
+   "w": 246,
+   "h": 604,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 564,
+   "y": 288,
+   "w": 246,
+   "h": 604,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 812,
+   "y": 288,
+   "w": 246,
+   "h": 604,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1088,
+   "y": 288,
+   "w": 246,
+   "h": 604,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 434,
+   "h": 196,
+   "text": "WHO IT SUITS"
+  },
+  {
+   "x": 23,
+   "y": 670,
+   "h": 214,
+   "text": "LIMITS"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 307,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Hysterectomy: choose the LEAST invasive route the anatomy allows",
+   "lines": [
+    "for bleeding: medical options FIRST; hysterectomy after failed medical management or in special circumstances",
+    "every route but abdominal is minimally invasive: a short stay, same-day discharge"
+   ]
+  },
+  {
+   "id": "g_vag",
+   "x": 45,
+   "y": 138,
+   "w": 484,
+   "h": 78,
+   "kind": "plain",
+   "title": "1st: the VAGINAL route, if the anatomy allows",
+   "lines": [
+    "the uterus comes out through the vagina"
+   ]
+  },
+  {
+   "id": "g_lap",
+   "x": 569,
+   "y": 138,
+   "w": 484,
+   "h": 78,
+   "kind": "plain",
+   "title": "2nd: LAPAROSCOPIC, in place of abdominal",
+   "lines": [
+    "should NOT replace vaginal or LAVH"
+   ]
+  },
+  {
+   "id": "g_abd",
+   "x": 1093,
+   "y": 138,
+   "w": 236,
+   "h": 78,
+   "kind": "plain",
+   "title": "LAST: ABDOMINAL",
+   "lines": [
+    "when no minimally invasive route will do"
+   ]
+  },
+  {
+   "id": "vh_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 236,
+   "h": 98,
+   "kind": "vh_h",
+   "title": "Vaginal hysterectomy",
+   "lines": [
+    "NO abdominal incisions: the least invasive"
+   ]
+  },
+  {
+   "id": "lavh_head_0_0",
+   "x": 293,
+   "y": 296,
+   "w": 236,
+   "h": 98,
+   "kind": "lavh_h",
+   "title": "Laparoscopic-assisted vaginal hysterectomy (LAVH)",
+   "lines": [
+    "enters the abdomen; uterus out via the vagina"
+   ]
+  },
+  {
+   "id": "tlh_head_0_0",
+   "x": 569,
+   "y": 296,
+   "w": 236,
+   "h": 98,
+   "kind": "tlh_h",
+   "title": "Total laparoscopic hysterectomy (TLH)",
+   "lines": [
+    "total or subtotal · enters the abdomen"
+   ]
+  },
+  {
+   "id": "rob_head_0_0",
+   "x": 817,
+   "y": 296,
+   "w": 236,
+   "h": 98,
+   "kind": "rob_h",
+   "title": "Robotic-assisted hysterectomy",
+   "lines": [
+    "enters the abdomen"
+   ]
+  },
+  {
+   "id": "abd_head_0_0",
+   "x": 1093,
+   "y": 296,
+   "w": 236,
+   "h": 98,
+   "kind": "abd_h",
+   "title": "Abdominal hysterectomy",
+   "lines": [
+    "open: NOT minimally invasive"
+   ]
+  },
+  {
+   "id": "vh_suits_0_0",
+   "x": 45,
+   "y": 434,
+   "w": 236,
+   "h": 196,
+   "kind": "vh_t",
+   "title": "The FIRST option",
+   "lines": [
+    "whenever the anatomy allows a vaginal approach"
+   ]
+  },
+  {
+   "id": "lavh_suits_0_0",
+   "x": 293,
+   "y": 434,
+   "w": 236,
+   "h": 196,
+   "kind": "lavh_t",
+   "title": "What the laparoscope adds",
+   "lines": [
+    "• assess the pelvis, scarring",
+    "• bladder flap",
+    "• remove tubes, ovaries",
+    "• a 'second look' for hemostasis"
+   ]
+  },
+  {
+   "id": "tlh_suits_0_0",
+   "x": 569,
+   "y": 434,
+   "w": 236,
+   "h": 196,
+   "kind": "tlh_t",
+   "title": "Instead of an open abdomen",
+   "lines": [
+    "an alternative to abdominal hysterectomy"
+   ]
+  },
+  {
+   "id": "rob_suits_0_0",
+   "x": 817,
+   "y": 434,
+   "w": 236,
+   "h": 196,
+   "kind": "rob_t",
+   "title": "MORBIDLY OBESE patients",
+   "lines": [
+    "may be an excellent option"
+   ]
+  },
+  {
+   "id": "abd_suits_0_0",
+   "x": 1093,
+   "y": 434,
+   "w": 236,
+   "h": 114,
+   "kind": "abd_t",
+   "title": "Reserved for",
+   "lines": [
+    "• VERY LARGE uterus",
+    "• more complex cancers",
+    "• patient factors unsuited to the other routes"
+   ]
+  },
+  {
+   "id": "abd_suits_1_0",
+   "x": 1093,
+   "y": 570,
+   "w": 236,
+   "h": 60,
+   "kind": "bad",
+   "title": "COMPLICATIONS",
+   "lines": [
+    "during a minimally invasive attempt"
+   ]
+  },
+  {
+   "id": "vh_lim_0_0",
+   "x": 45,
+   "y": 670,
+   "w": 236,
+   "h": 96,
+   "kind": "vh_w",
+   "title": "Scarring, adnexa → LAVH",
+   "lines": [
+    "• prior pelvic surgery",
+    "• extensive scarring",
+    "• tubes, ovaries not as accessible"
+   ]
+  },
+  {
+   "id": "vh_lim_1_0",
+   "x": 45,
+   "y": 788,
+   "w": 236,
+   "h": 96,
+   "kind": "vh_w",
+   "title": "Anatomy",
+   "lines": [
+    "• large uterus",
+    "• narrow introitus or pelvis",
+    "• poor uterine descent"
+   ]
+  },
+  {
+   "id": "lavh_lim_0_0",
+   "x": 293,
+   "y": 670,
+   "w": 236,
+   "h": 214,
+   "kind": "lavh_w",
+   "title": "Anatomy",
+   "lines": [
+    "• large uterus",
+    "• narrow introitus or pelvis",
+    "• poor uterine descent"
+   ]
+  },
+  {
+   "id": "tlh_lim_0_0",
+   "x": 569,
+   "y": 670,
+   "w": 236,
+   "h": 87,
+   "kind": "tlh_w",
+   "title": "Large uterus",
+   "lines": []
+  },
+  {
+   "id": "tlh_lim_1_0",
+   "x": 569,
+   "y": 779,
+   "w": 236,
+   "h": 105,
+   "kind": "tlh_w",
+   "title": "Laparoscopic suturing",
+   "lines": [
+    "takes skill and more operative time"
+   ]
+  },
+  {
+   "id": "rob_lim_0_0",
+   "x": 817,
+   "y": 670,
+   "w": 236,
+   "h": 105,
+   "kind": "rob_w",
+   "title": "Large uterus",
+   "lines": [
+    "articulating instruments make it more manageable"
+   ]
+  },
+  {
+   "id": "rob_lim_1_0",
+   "x": 817,
+   "y": 797,
+   "w": 236,
+   "h": 87,
+   "kind": "rob_w",
+   "title": "Laparoscopic suturing",
+   "lines": [
+    "takes skill and more operative time"
+   ]
+  },
+  {
+   "id": "abd_lim_0_0",
+   "x": 1093,
+   "y": 670,
+   "w": 236,
+   "h": 214,
+   "kind": "abd_w",
+   "title": "A 2–3 day hospital stay",
+   "lines": [
+    "the only route without same-day discharge"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_vag",
+   "path": "M687.0 88V113H287.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_lap",
+   "path": "M687.0 88V113H811.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_abd",
+   "path": "M687.0 88V113H1211.0V138"
+  },
+  {
+   "from": "abd_suits_0_0",
+   "to": "abd_suits_1_0"
+  },
+  {
+   "from": "vh_lim_0_0",
+   "to": "vh_lim_1_0"
+  },
+  {
+   "from": "tlh_lim_0_0",
+   "to": "tlh_lim_1_0"
+  },
+  {
+   "from": "rob_lim_0_0",
+   "to": "rob_lim_1_0"
+  },
+  {
+   "from": "vh_head_0_0",
+   "to": "vh_suits_0_0"
+  },
+  {
+   "from": "vh_suits_0_0",
+   "to": "vh_lim_0_0"
+  },
+  {
+   "from": "g_vag",
+   "to": "vh_head_0_0",
+   "from_dx": -124,
+   "label": "anatomy amenable",
+   "label_at": [
+    163.0,
+    256
+   ]
+  },
+  {
+   "from": "lavh_head_0_0",
+   "to": "lavh_suits_0_0"
+  },
+  {
+   "from": "lavh_suits_0_0",
+   "to": "lavh_lim_0_0"
+  },
+  {
+   "from": "g_vag",
+   "to": "lavh_head_0_0",
+   "from_dx": 124,
+   "label": "pelvis needs a look",
+   "label_at": [
+    411.0,
+    256
+   ]
+  },
+  {
+   "from": "tlh_head_0_0",
+   "to": "tlh_suits_0_0"
+  },
+  {
+   "from": "tlh_suits_0_0",
+   "to": "tlh_lim_0_0"
+  },
+  {
+   "from": "g_lap",
+   "to": "tlh_head_0_0",
+   "from_dx": -124,
+   "label": "total laparoscopic",
+   "label_at": [
+    687.0,
+    256
+   ]
+  },
+  {
+   "from": "rob_head_0_0",
+   "to": "rob_suits_0_0"
+  },
+  {
+   "from": "rob_suits_0_0",
+   "to": "rob_lim_0_0"
+  },
+  {
+   "from": "g_lap",
+   "to": "rob_head_0_0",
+   "from_dx": 124,
+   "label": "robotic",
+   "label_at": [
+    935.0,
+    256
+   ]
+  },
+  {
+   "from": "abd_head_0_0",
+   "to": "abd_suits_0_0"
+  },
+  {
+   "from": "abd_suits_1_0",
+   "to": "abd_lim_0_0"
+  },
+  {
+   "from": "g_abd",
+   "to": "abd_head_0_0",
+   "from_dx": 0,
+   "label": "reserved",
+   "label_at": [
+    1211.0,
+    256
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 918,
+   "w": 1284,
+   "title": "Named by what comes out",
+   "items": [
+    "Total: uterus + cervix",
+    "Subtotal: uterus; cervix retained",
+    "+ salpingectomy: the tubes",
+    "+ salpingo-oophorectomy: tubes AND ovaries",
+    "'Partial' (lay term): ovaries kept, so NO surgical menopause"
+   ],
+   "cols": 2
+  }
+ ]
+}

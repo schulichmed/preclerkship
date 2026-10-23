@@ -1,0 +1,438 @@
+{
+ "name": "antiarrhythmic drugs overview",
+ "title": "Antiarrhythmic drugs: stable patients get drugs, unstable get electricity, arrested get CPR, electricity and drugs; after treating precipitants, AV-nodal drugs (beta blocker, calcium channel blocker, digoxin, adenosine) serve supraventricular rhythms and channel blockers (class I procainamide and lidocaine, class III amiodarone and sotalol) reach ventricular ones; each drug's use and what rules it out, plus torsades de pointes caused by QT-prolonging drugs",
+ "col_w": 224,
+ "root": {
+  "title": "Arrhythmia: STABLE → drugs · UNSTABLE → electricity · DEAD → CPR + electricity + drugs",
+  "lines": [
+   "FIRST treat precipitants: low K+, Mg2+, phosphate · ischemia · hypoxemia · catecholamines · QT-prolonging drugs",
+   "sinus tachycardia: treat the CAUSE (bleeding → fluids, blood), never slow it · every antiarrhythmic can CAUSE arrhythmia",
+   "arrest: CPR, shock ventricular fibrillation (VF) or pulseless ventricular tachycardia (VT), epinephrine every 3–5 min,",
+   "then amiodarone or lidocaine if it persists"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_av",
+   "cols": [
+    0,
+    3
+   ],
+   "title": "Slow the ATRIOVENTRICULAR (AV) NODE: SUPRAVENTRICULAR rhythms",
+   "lines": [
+    "the ventricular rate falls; a ventricular rhythm is untouched"
+   ]
+  },
+  {
+   "id": "g_ch",
+   "cols": [
+    4,
+    5
+   ],
+   "title": "Block Na+ or K+ channels: VENTRICULAR too",
+   "lines": [
+    "they change the ECG"
+   ]
+  },
+  {
+   "id": "g_pro",
+   "cols": [
+    6,
+    6
+   ],
+   "title": "The DRUG caused it",
+   "lines": [
+    "proarrhythmia"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "use",
+  "avoid"
+ ],
+ "row_names": {
+  "use": "CHOOSE WHEN",
+  "avoid": "AVOID · WATCH"
+ },
+ "columns": [
+  {
+   "id": "bb",
+   "colour": "teal",
+   "drop_label": "class II",
+   "head": [
+    [
+     [
+      "h",
+      "Beta blocker",
+      [
+       "metoprolol · phase 4",
+       "slows the sinus rate + AV node"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "Rate control",
+      [
+       "• fast atrial fibrillation (AF)",
+       "• already on it and tolerating it"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Also protects the heart",
+      [
+       "• after a myocardial infarction (MI)",
+       "• systolic heart failure"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "bad",
+      "LOW blood pressure",
+      [
+       "• unstable: too slow, drops BP → cardiovert",
+       "• can cause bradycardia"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ccb",
+   "colour": "blue",
+   "drop_label": "class IV",
+   "head": [
+    [
+     [
+      "h",
+      "Calcium channel blocker (CCB)",
+      [
+       "verapamil, diltiazem · phase 2",
+       "slows the AV node"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "Supraventricular arrhythmias",
+      [
+       "• rate control in AF",
+       "• IV acutely, then oral"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "bad",
+      "HEART FAILURE",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "VENTRICULAR arrhythmias",
+      [
+       "no effect on them"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "IV bolus drops BP",
+      [
+       "can cause bradycardia"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dig",
+   "colour": "olive",
+   "drop_label": "no class",
+   "head": [
+    [
+     [
+      "h",
+      "Digoxin",
+      [
+       "blocks Na+/K+ ATPase (↑ Ca2+)",
+       "+ a vagal effect on the AV node"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "Rate control in AF",
+      [
+       "SEDENTARY patients"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "bad",
+      "When it FAILS",
+      [
+       "• converting AF: it cannot",
+       "• high sympathetic tone: intensive care, exercise",
+       "• recurrent AF",
+       "• urgent: needs a loading dose"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Toxicity: ANY arrhythmia",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ade",
+   "colour": "purple",
+   "drop_label": "no class",
+   "head": [
+    [
+     [
+      "h",
+      "Adenosine",
+      [
+       "blocks the AV node for SECONDS"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "Stop or DIAGNOSE a regular rhythm",
+      [
+       "• AV-node re-entry: converts to sinus",
+       "• AF or sinus: only slows it",
+       "• regular monomorphic wide: diagnostic"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "How",
+      [
+       "• vagal manoeuvre first",
+       "• FAST IV bolus on a monitor",
+       "• fails → repeat at DOUBLE dose"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "bad",
+      "Asthma or chronic obstructive pulmonary disease (COPD)",
+      [
+       "bronchospasm"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Warn the patient",
+      [
+       "flushing, chest pain, a few seconds of asystole"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "c1",
+   "colour": "orange",
+   "drop_label": "class I",
+   "head": [
+    [
+     [
+      "h",
+      "Na+ channel blockers",
+      [
+       "phase 0: WIDENS the QRS"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "Ia · Procainamide",
+      [
+       "• supraventricular tachycardia",
+       "• AF → sinus rhythm",
+       "• ventricular arrhythmias"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Ib · Lidocaine: VENTRICULAR only",
+      [
+       "• VT with ischemia",
+       "• a shock that fails"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "w",
+      "Procainamide",
+      [
+       "metabolite prolongs the QT"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Lidocaine",
+      [
+       "• AF: it will NOT slow it",
+       "• liver failure: CNS toxicity, collapse"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "c3",
+   "colour": "magenta",
+   "drop_label": "class III",
+   "head": [
+    [
+     [
+      "h",
+      "K+ channel blockers",
+      [
+       "phase 3: PROLONGS the QT"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "Amiodarone: acts in ALL classes",
+      [
+       "• supraventricular + ventricular",
+       "• refractory VF or pulseless VT",
+       "• emergency rate control, fast AF"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Sotalol",
+      [
+       "a beta blocker + K+ block"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "w",
+      "Amiodarone",
+      [
+       "• IV bolus drops BP",
+       "• loading dose: half-life months",
+       "• lung, thyroid, cornea, skin"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Sotalol",
+      [
+       "QT ↑: can CAUSE arrhythmia"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tdp",
+   "colour": "slate",
+   "drop_label": "long QT",
+   "head": [
+    [
+     [
+      "h",
+      "Torsades de pointes",
+      [
+       "polymorphic VT from a long QT"
+      ]
+     ]
+    ]
+   ],
+   "use": [
+    [
+     [
+      "t",
+      "Cause: low K+ + QT drugs",
+      [
+       "• haloperidol, levofloxacin, methadone",
+       "~QT already long: NO QT drug"
+      ]
+     ]
+    ]
+   ],
+   "avoid": [
+    [
+     [
+      "bad",
+      "After circulation returns",
+      [
+       "1 · check the QT · give Mg2+",
+       "2 · correct K+ SLOWLY",
+       "3 · stop QT drugs (not methadone)",
+       "4 · RAISE the heart rate: QT shortens"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

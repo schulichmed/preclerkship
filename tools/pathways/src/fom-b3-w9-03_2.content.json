@@ -1,0 +1,368 @@
+{
+ "name": "microcytic anemia overview",
+ "title": "Microcytic anemia: ferritin splits iron deficiency from anemia of chronic inflammation, sideroblastic anemia or lead, and thalassemia; each column gives the questions, investigations and treatment in order",
+ "col_w": 232,
+ "root": {
+  "title": "Microcytic anemia (mean cell volume, MCV < 80 fL): is it IRON?",
+  "lines": [
+   "TAILS: Thalassemia · Anemia of chronic inflammation · Iron deficiency · Lead · Sideroblastic",
+   "every one: complete blood count (CBC) indices · serum ferritin · peripheral film"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_lo",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "Ferritin LOW",
+   "lines": [
+    "iron is MISSING"
+   ]
+  },
+  {
+   "id": "g_ok",
+   "cols": [
+    1,
+    3
+   ],
+   "title": "Ferritin NORMAL or ↑",
+   "lines": [
+    "iron is there but not used, or globin is missing: the history and the film decide"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "ASK",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "ida",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Iron deficiency anemia (IDA)",
+      [
+       "find the SOURCE"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Bleeding? Diet?",
+      [
+       "• menstrual, fibroids, GI (melena), urinary",
+       "• poor absorption: celiac, gastric bypass",
+       "• vegan, pregnancy"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Signs",
+      [
+       "• pica, spoon nails (koilonychia)",
+       "• restless legs, glossitis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Ferritin LOW",
+      [
+       "• red cell distribution width (RDW) ↑",
+       "• platelets ↑, transferrin saturation ↓"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Film",
+      [
+       "hypochromic, target cells, elliptocytes"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Find and treat the SOURCE",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Oral iron, with vitamin C",
+      [
+       "• reticulocytes rise at 1 week",
+       "• hemoglobin (Hb) at 2–4 weeks",
+       "• stores at 3–6 months"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "IV iron or transfusion",
+      [
+       "poor absorption · rapid blood loss"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "aci",
+   "colour": "orange",
+   "drop_label": "infection, inflammation",
+   "head": [
+    [
+     [
+      "h",
+      "Anemia of chronic inflammation",
+      [
+       "hepcidin blocks ferroportin: iron STUCK in stores"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Infection? Inflammation? Cancer?",
+      [
+       "• tuberculosis, endocarditis, abscess, HIV",
+       "• rheumatoid arthritis, lupus, inflammatory bowel disease",
+       "• lymphoma, carcinoma, myeloma"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Ferritin normal or ↑",
+      [
+       "mild: MCV rarely < 75 fL"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Infection workup",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Treat the underlying disease",
+      [
+       "seldom needs transfusion"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Erythropoietin (EPO) if severe",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sid",
+   "colour": "purple",
+   "drop_label": "toxin, B6, stippling",
+   "head": [
+    [
+     [
+      "h",
+      "Sideroblastic anemia, lead",
+      [
+       "iron cannot get into heme"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Old house or paint? Drugs?",
+      [
+       "• alcohol, vitamin B6 deficiency",
+       "• anti-TB drugs, chemotherapy",
+       "• family history (X-linked)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Film",
+      [
+       "• basophilic stippling",
+       "• Pappenheimer bodies, RDW ↑"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Marrow",
+      [
+       "iron RINGED round the nucleus"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Remove the toxin",
+      [
+       "chelation for lead"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Pyridoxine (B6)",
+      [
+       "sometimes helps"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Transfusion",
+      [
+       "marrow transplant rarely"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tha",
+   "colour": "blue",
+   "drop_label": "family history",
+   "head": [
+    [
+     [
+      "h",
+      "Thalassemia",
+      [
+       "too little globin: α or β genes"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Family history? Prior CBC?",
+      [
+       "• α: Southeast Asian, African",
+       "• β: Mediterranean",
+       "• early childhood, jaundice, big spleen"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · RDW NORMAL",
+      [
+       "RBC count high for the MCV"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Hb electrophoresis or HPLC",
+      [
+       "high-performance liquid chromatography"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "↑ HbA2: β",
+      [
+       "• minor",
+       "• ↑ HbF: major"
+      ]
+     ],
+     [
+      "w",
+      "HbA2 normal: α",
+      [
+       "• HbH test",
+       "• gene sequencing"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Transfuse by severity",
+      [
+       "α genes lost: 1–2 carrier or trait",
+       "3 HbH disease, 4 hydrops fetalis",
+       "+ iron chelation (deferoxamine)"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Genetic counselling",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

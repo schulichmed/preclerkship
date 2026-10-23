@@ -1,0 +1,262 @@
+{
+ "name": "erythrocytosis overview",
+ "title": "High hemoglobin sorted by serum EPO: low EPO is primary (polycythemia vera, confirmed by JAK2 or marrow) and normal or high EPO is secondary (systemic hypoxia, renal hypoxia or an EPO-secreting tumour, and drugs), with clues, tests and treatment for each",
+ "col_w": 240,
+ "root": {
+  "title": "Hemoglobin > 170 g/L (men), > 160 g/L (women): is the MARROW driving itself, or is something driving EPO?",
+  "lines": [
+   "measure serum erythropoietin (EPO)",
+   "Hb, platelets AND white cells all high → treat it as erythrocytosis (think PV)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_p",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "EPO LOW: PRIMARY",
+   "lines": [
+    "the marrow is autonomous (clonal)"
+   ]
+  },
+  {
+   "id": "g_s",
+   "cols": [
+    1,
+    2
+   ],
+   "title": "EPO NORMAL or HIGH: SECONDARY",
+   "lines": [
+    "ask first: EPO, androgen or steroid use · thrombosis risk far lower than in PV"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "CLUES",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "clue"
+ ],
+ "columns": [
+  {
+   "id": "pv",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Polycythemia vera (PV)",
+      [
+       "JAK2 stuck 'on' · median age 60–65"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Too many cells",
+      [
+       "• itch after a hot bath (aquagenic pruritus)",
+       "• early satiety · splenomegaly · ruddy face",
+       "• burning hands/feet (erythromelalgia), ocular migraine"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · EPO LOW",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · JAK2 V617F or exon 12",
+      [
+       "positive → PV"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · NEGATIVE: bone marrow biopsy",
+      [
+       "• hypercellular, abnormal megakaryocytes → PV",
+       "• normal → congenital EPO receptor mutation"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · EVERYONE: acetylsalicylic acid (ASA) 81 mg daily",
+      [
+       "keep hematocrit (Hct) < 0.45"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "HIGH risk",
+      [
+       "age ≥ 60 or prior clot",
+       "→ hydroxyurea ± phlebotomy"
+      ]
+     ],
+     [
+      "ok",
+      "LOW risk",
+      [
+       "→ phlebotomy"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Cut cardiovascular risk",
+      [
+       "smoking, diabetes, blood pressure, lipids"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hy",
+   "colour": "teal",
+   "drop_label": "snoring, smoker",
+   "head": [
+    [
+     [
+      "h",
+      "Systemic hypoxia",
+      [
+       "chronic obstructive pulmonary disease (COPD) · sleep apnea · smoking · altitude · shunt"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "History",
+      [
+       "• snoring, gasping at night: obstructive sleep apnea (OSA)",
+       "• smoking ± COPD · high altitude in last 3 months",
+       "• heart failure, congenital heart disease"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Exam",
+      [
+       "• signs of hypoxia · murmur · clubbing"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "Find the hypoxia",
+      [
+       "• pulmonary function tests (COPD)",
+       "• sleep study (OSA)",
+       "• echocardiogram (right-to-left shunt)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat the cause",
+      []
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Do NOT phlebotomize",
+      [
+       "hypoxia-driven erythrocytosis"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tu",
+   "colour": "brown",
+   "drop_label": "workup negative",
+   "head": [
+    [
+     [
+      "h",
+      "Renal hypoxia or EPO-secreting tumour",
+      [
+       "renal artery stenosis, cysts, transplant · renal cell or hepatocellular carcinoma, cerebellar hemangioblastoma, pheochromocytoma"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Clues",
+      [
+       "• constitutional symptoms (malignancy)",
+       "• kidney disease or transplant"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "CT scan",
+      [
+       "when all the other workup is NEGATIVE"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "Treat the cause",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

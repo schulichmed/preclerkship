@@ -1,0 +1,611 @@
+{
+ "name": "infective endocarditis overview",
+ "width": 954,
+ "title": "Infective endocarditis decision chart: blood cultures and echocardiography are counted against the modified Duke criteria, then the valve and the culture result (native valve, prosthetic valve or device, culture-negative) decide the likely organism, the echo route and the antibiotics; panels give the indications and timing for surgery and who gets dental prophylaxis",
+ "kinds": {
+  "nv_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nv_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "nv_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "pv_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pv_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "pv_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "cn_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cn_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cn_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 388,
+   "w": 300,
+   "h": 802,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 342,
+   "y": 388,
+   "w": 300,
+   "h": 802,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 644,
+   "y": 388,
+   "w": 300,
+   "h": 802,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 220,
+   "h": 96,
+   "text": "DUKE"
+  },
+  {
+   "x": 23,
+   "y": 514,
+   "h": 178,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 732,
+   "h": 132,
+   "text": "ORGANISMS"
+  },
+  {
+   "x": 23,
+   "y": 904,
+   "h": 142,
+   "text": "ECHO"
+  },
+  {
+   "x": 23,
+   "y": 1086,
+   "h": 96,
+   "text": "ANTIBIOTICS"
+  },
+  {
+   "x": 23,
+   "y": 1222,
+   "h": 278,
+   "text": "SURGERY?"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 112,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Fever + a damaged valve, a device, IV drug use or a new murmur: is it infective endocarditis (IE)?",
+   "lines": [
+    "search every system for EMBOLI and for HEART FAILURE"
+   ]
+  },
+  {
+   "id": "g_all",
+   "x": 45,
+   "y": 120,
+   "w": 894,
+   "h": 60,
+   "kind": "plain",
+   "title": "1 · Three sets of blood cultures  →  2 · Transthoracic echo (TTE)  →  3 · Count the modified DUKE criteria",
+   "lines": [
+    "cultures from 3 sites, all within the first hour if very sick; echo as soon as IE is suspected"
+   ]
+  },
+  {
+   "id": "p_duke",
+   "x": 45,
+   "y": 220,
+   "w": 894,
+   "h": 96,
+   "kind": "info",
+   "title": "DEFINITE: 2 major, 1 major + 3 minor, or 5 minor  |  POSSIBLE: 1 major + 1 minor, or 3 minor  →  treat both",
+   "lines": [
+    "• MAJOR: typical organism in 2 cultures, cultures persistently positive (> 12 h apart), Coxiella, or echo showing vegetation, abscess or new regurgitation",
+    "• MINOR: predisposing heart lesion or IV drug use, fever ≥ 38 °C, emboli (Janeway lesions), immune signs (Osler nodes, Roth spots)"
+   ]
+  },
+  {
+   "id": "nv_head_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 290,
+   "h": 78,
+   "kind": "nv_h",
+   "title": "Native valve IE",
+   "lines": [
+    "rheumatic, prolapsed, bicuspid or congenitally abnormal valve"
+   ]
+  },
+  {
+   "id": "pv_head_0_0",
+   "x": 347,
+   "y": 396,
+   "w": 290,
+   "h": 78,
+   "kind": "pv_h",
+   "title": "Prosthetic valve or device IE",
+   "lines": [
+    "new fever after valve surgery = IE until proven otherwise"
+   ]
+  },
+  {
+   "id": "cn_head_0_0",
+   "x": 649,
+   "y": 396,
+   "w": 290,
+   "h": 78,
+   "kind": "cn_h",
+   "title": "Culture-negative IE",
+   "lines": [
+    "organisms that do not grow in routine bottles"
+   ]
+  },
+  {
+   "id": "nv_clue_0_0",
+   "x": 45,
+   "y": 514,
+   "w": 290,
+   "h": 96,
+   "kind": "nv_t",
+   "title": "SUBACUTE: weeks of vague illness",
+   "lines": [
+    "• fever, night sweats, weight loss",
+    "• NEW regurgitant murmur, heart failure",
+    "• splinters, Janeway lesions, Osler nodes"
+   ]
+  },
+  {
+   "id": "nv_clue_1_0",
+   "x": 45,
+   "y": 632,
+   "w": 290,
+   "h": 60,
+   "kind": "bad",
+   "title": "ACUTE: fulminant sepsis",
+   "lines": [
+    "emboli, valve destruction, decompensation"
+   ]
+  },
+  {
+   "id": "pv_clue_0_0",
+   "x": 347,
+   "y": 514,
+   "w": 290,
+   "h": 178,
+   "kind": "pv_t",
+   "title": "Fever after valve replacement",
+   "lines": [
+    "• or a device with persistent fever",
+    "• even with no new murmur or bacteremia"
+   ]
+  },
+  {
+   "id": "cn_clue_0_0",
+   "x": 649,
+   "y": 514,
+   "w": 290,
+   "h": 178,
+   "kind": "cn_t",
+   "title": "IE picture, sterile cultures",
+   "lines": [
+    "• Coxiella burnetii (Q fever)",
+    "• Bartonella, Brucella, Legionella",
+    "• Tropheryma whipplei, Chlamydia"
+   ]
+  },
+  {
+   "id": "nv_org_0_0",
+   "x": 45.0,
+   "y": 732,
+   "w": 140.0,
+   "h": 132,
+   "kind": "nv_w",
+   "title": "Most",
+   "lines": [
+    "• streptococci",
+    "• Staphylococcus aureus",
+    "• enterococci, HACEK"
+   ]
+  },
+  {
+   "id": "nv_org_0_1",
+   "x": 195.0,
+   "y": 732,
+   "w": 140.0,
+   "h": 132,
+   "kind": "nv_w",
+   "title": "IV drug use",
+   "lines": [
+    "• S. aureus",
+    "• usually the TRICUSPID valve"
+   ]
+  },
+  {
+   "id": "pv_org_0_0",
+   "x": 347.0,
+   "y": 732,
+   "w": 140.0,
+   "h": 132,
+   "kind": "pv_w",
+   "title": "EARLY < 60 days",
+   "lines": [
+    "• coagulase-negative staph",
+    "• then S. aureus"
+   ]
+  },
+  {
+   "id": "pv_org_0_1",
+   "x": 497.0,
+   "y": 732,
+   "w": 140.0,
+   "h": 132,
+   "kind": "pv_w",
+   "title": "LATE > 60 days",
+   "lines": [
+    "• streptococci",
+    "• then S. aureus"
+   ]
+  },
+  {
+   "id": "cn_org_0_0",
+   "x": 649,
+   "y": 732,
+   "w": 290,
+   "h": 132,
+   "kind": "cn_w",
+   "title": "Coxiella can still be MAJOR",
+   "lines": [
+    "• one positive culture",
+    "• or anti-phase I IgG > 1:800"
+   ]
+  },
+  {
+   "id": "nv_inv_0_0",
+   "x": 45,
+   "y": 904,
+   "w": 290,
+   "h": 60,
+   "kind": "nv_t",
+   "title": "1 · TTE first",
+   "lines": [
+    "small vegetations can be missed"
+   ]
+  },
+  {
+   "id": "nv_inv_1_0",
+   "x": 45,
+   "y": 986,
+   "w": 290,
+   "h": 60,
+   "kind": "nv_w",
+   "title": "2 · Negative TTE + high suspicion",
+   "lines": [
+    "→ transesophageal echo (TEE)"
+   ]
+  },
+  {
+   "id": "pv_inv_0_0",
+   "x": 347,
+   "y": 904,
+   "w": 290,
+   "h": 142,
+   "kind": "pv_t",
+   "title": "LOW threshold for TEE",
+   "lines": [
+    "• cultures + echo BEFORE assuming another cause",
+    "• TEE finds abscess, perforation, fistula"
+   ]
+  },
+  {
+   "id": "cn_inv_0_0",
+   "x": 649,
+   "y": 904,
+   "w": 290,
+   "h": 142,
+   "kind": "cn_t",
+   "title": "TTE, then TEE as for native valve",
+   "lines": []
+  },
+  {
+   "id": "nv_tx_0_0",
+   "x": 45,
+   "y": 1086,
+   "w": 290,
+   "h": 96,
+   "kind": "ok",
+   "title": "IV vancomycin + IV cefepime",
+   "lines": [
+    "6–12 weeks"
+   ]
+  },
+  {
+   "id": "pv_tx_0_0",
+   "x": 347,
+   "y": 1086,
+   "w": 290,
+   "h": 96,
+   "kind": "ok",
+   "title": "IV vancomycin + IV cefepime",
+   "lines": [
+    "6–12 weeks"
+   ]
+  },
+  {
+   "id": "cn_tx_0_0",
+   "x": 649,
+   "y": 1086,
+   "w": 290,
+   "h": 96,
+   "kind": "ok",
+   "title": "Three drugs, 6–12 weeks",
+   "lines": [
+    "• IV vancomycin",
+    "• IV ceftriaxone",
+    "• IV gentamicin or doxycycline"
+   ]
+  },
+  {
+   "id": "span0_surg_0_0",
+   "x": 45,
+   "y": 1222,
+   "w": 894,
+   "h": 60,
+   "kind": "warn",
+   "title": "1 · Major ischemic stroke or intracranial hemorrhage?",
+   "lines": [
+    "YES → DELAY surgery at least 4 weeks"
+   ]
+  },
+  {
+   "id": "span0_surg_1_0",
+   "x": 45.0,
+   "y": 1304,
+   "w": 442.0,
+   "h": 114,
+   "kind": "bad",
+   "title": "2 · EARLY surgery if ANY",
+   "lines": [
+    "• heart failure from valve dysfunction or a fistula",
+    "• abscess or heart block",
+    "• persistent infection, resistant organism (S. aureus, fungi), relapsing prosthetic IE"
+   ]
+  },
+  {
+   "id": "span0_surg_1_1",
+   "x": 497.0,
+   "y": 1304,
+   "w": 442.0,
+   "h": 114,
+   "kind": "warn",
+   "title": "3 · CONSIDER early surgery",
+   "lines": [
+    "• mobile vegetation > 10 mm (anterior mitral leaflet)",
+    "• recurrent emboli despite antibiotics"
+   ]
+  },
+  {
+   "id": "span0_surg_2_0",
+   "x": 45,
+   "y": 1440,
+   "w": 894,
+   "h": 60,
+   "kind": "ok",
+   "title": "None of these",
+   "lines": [
+    "continue antibiotics, reassess, re-image"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_all",
+   "path": "M492.0 70V95H492.0V120"
+  },
+  {
+   "from": "g_all",
+   "to": "p_duke"
+  },
+  {
+   "from": "nv_clue_0_0",
+   "to": "nv_clue_1_0"
+  },
+  {
+   "from": "nv_inv_0_0",
+   "to": "nv_inv_1_0"
+  },
+  {
+   "from": "span0_surg_0_0",
+   "to": "span0_surg_1_0",
+   "from_dx": -226.0
+  },
+  {
+   "from": "span0_surg_0_0",
+   "to": "span0_surg_1_1",
+   "from_dx": 226.0
+  },
+  {
+   "from": "span0_surg_1_0",
+   "to": "span0_surg_2_0",
+   "to_dx": -226.0
+  },
+  {
+   "from": "span0_surg_1_1",
+   "to": "span0_surg_2_0",
+   "to_dx": 226.0
+  },
+  {
+   "from": "nv_head_0_0",
+   "to": "nv_clue_0_0"
+  },
+  {
+   "from": "nv_clue_1_0",
+   "to": "nv_org_0_0",
+   "from_dx": -75.0
+  },
+  {
+   "from": "nv_clue_1_0",
+   "to": "nv_org_0_1",
+   "from_dx": 75.0
+  },
+  {
+   "from": "nv_org_0_0",
+   "to": "nv_inv_0_0",
+   "to_dx": -75.0
+  },
+  {
+   "from": "nv_org_0_1",
+   "to": "nv_inv_0_0",
+   "to_dx": 75.0
+  },
+  {
+   "from": "nv_inv_1_0",
+   "to": "nv_tx_0_0"
+  },
+  {
+   "from": "nv_tx_0_0",
+   "to": "span0_surg_0_0",
+   "to_dx": -302.0
+  },
+  {
+   "from": "p_duke",
+   "to": "nv_head_0_0",
+   "from_dx": -302,
+   "label": "NATIVE valve",
+   "label_at": [
+    190.0,
+    356
+   ]
+  },
+  {
+   "from": "pv_head_0_0",
+   "to": "pv_clue_0_0"
+  },
+  {
+   "from": "pv_clue_0_0",
+   "to": "pv_org_0_0",
+   "from_dx": -75.0
+  },
+  {
+   "from": "pv_clue_0_0",
+   "to": "pv_org_0_1",
+   "from_dx": 75.0
+  },
+  {
+   "from": "pv_org_0_0",
+   "to": "pv_inv_0_0",
+   "to_dx": -75.0
+  },
+  {
+   "from": "pv_org_0_1",
+   "to": "pv_inv_0_0",
+   "to_dx": 75.0
+  },
+  {
+   "from": "pv_inv_0_0",
+   "to": "pv_tx_0_0"
+  },
+  {
+   "from": "pv_tx_0_0",
+   "to": "span0_surg_0_0",
+   "to_dx": 0.0
+  },
+  {
+   "from": "p_duke",
+   "to": "pv_head_0_0",
+   "from_dx": 0,
+   "label": "PROSTHETIC valve or device",
+   "label_at": [
+    492.0,
+    356
+   ]
+  },
+  {
+   "from": "cn_head_0_0",
+   "to": "cn_clue_0_0"
+  },
+  {
+   "from": "cn_clue_0_0",
+   "to": "cn_org_0_0"
+  },
+  {
+   "from": "cn_org_0_0",
+   "to": "cn_inv_0_0"
+  },
+  {
+   "from": "cn_inv_0_0",
+   "to": "cn_tx_0_0"
+  },
+  {
+   "from": "cn_tx_0_0",
+   "to": "span0_surg_0_0",
+   "to_dx": 302.0
+  },
+  {
+   "from": "p_duke",
+   "to": "cn_head_0_0",
+   "from_dx": 302,
+   "label": "cultures NEGATIVE",
+   "label_at": [
+    794.0,
+    356
+   ]
+  }
+ ],
+ "panels": []
+}

@@ -1,0 +1,978 @@
+{
+ "name": "thrombocytopenia overview",
+ "width": 1630,
+ "title": "Thrombocytopenia decision chart: grade the count, then sort by mechanism; marrow underproduction, immune thrombocytopenia, the schistocyte disorders (TTP by low ADAMTS-13, HUS after diarrhea with kidney injury, DIC with deranged clotting tests), heparin-induced thrombocytopenia, and pooled or spurious counts; each column gives clues, numbered investigations and management, with platelet transfusion forbidden where it fuels clotting",
+ "kinds": {
+  "prod_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "prod_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "prod_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "itp_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "itp_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "itp_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ttp_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ttp_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ttp_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "hus_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hus_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "hus_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "dic_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dic_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "dic_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "hit_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hit_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "hit_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "oth_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "oth_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "oth_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 426,
+   "w": 216,
+   "h": 922,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 286,
+   "y": 426,
+   "w": 216,
+   "h": 922,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 504,
+   "y": 426,
+   "w": 216,
+   "h": 922,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 722,
+   "y": 426,
+   "w": 216,
+   "h": 922,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 940,
+   "y": 426,
+   "w": 216,
+   "h": 922,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1158,
+   "y": 426,
+   "w": 216,
+   "h": 922,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1404,
+   "y": 426,
+   "w": 216,
+   "h": 922,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 592,
+   "h": 168,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 800,
+   "h": 216,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 1056,
+   "h": 284,
+   "text": "MANAGEMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 450,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Platelets < 150 × 10⁹/L: how LOW, and are they MADE too few, DESTROYED, POOLED or MISCOUNTED?",
+   "lines": [
+    "10–49: bleeds with trauma or surgery · < 10: SPONTANEOUS bleeding",
+    "first: complete blood count + differential · peripheral film · prothrombin time (PT/INR), activated partial thromboplastin time (aPTT), fibrinogen · liver tests · abdominal ultrasound"
+   ]
+  },
+  {
+   "id": "g_prod",
+   "x": 45,
+   "y": 176,
+   "w": 206,
+   "h": 60,
+   "kind": "plain",
+   "title": "MADE too few",
+   "lines": [
+    "marrow"
+   ]
+  },
+  {
+   "id": "g_des",
+   "x": 291,
+   "y": 176,
+   "w": 1078,
+   "h": 60,
+   "kind": "plain",
+   "title": "DESTROYED: does it BLEED or CLOT?",
+   "lines": [
+    "BLEEDS: ITP · CLOTS: TTP, HUS, HIT · BOTH: DIC"
+   ]
+  },
+  {
+   "id": "g_oth",
+   "x": 1409,
+   "y": 176,
+   "w": 206,
+   "h": 60,
+   "kind": "plain",
+   "title": "POOLED or not real",
+   "lines": []
+  },
+  {
+   "id": "t_iso",
+   "x": 291,
+   "y": 276,
+   "w": 206,
+   "h": 78,
+   "kind": "plain",
+   "title": "ONLY platelets low",
+   "lines": [
+    "clotting tests normal"
+   ]
+  },
+  {
+   "id": "t_sch",
+   "x": 509,
+   "y": 276,
+   "w": 642,
+   "h": 78,
+   "kind": "plain",
+   "title": "SCHISTOCYTES on the film",
+   "lines": [
+    "• clotting tests deranged (INR ↑, D-dimer ↑, fibrinogen < 1) → DIC",
+    "• normal: ADAMTS-13 decides"
+   ]
+  },
+  {
+   "id": "t_hep",
+   "x": 1163,
+   "y": 276,
+   "w": 206,
+   "h": 78,
+   "kind": "plain",
+   "title": "On HEPARIN, day 5–10",
+   "lines": [
+    "CLOTS, does not bleed"
+   ]
+  },
+  {
+   "id": "prod_head_0_0",
+   "x": 45,
+   "y": 434,
+   "w": 206,
+   "h": 118,
+   "kind": "prod_h",
+   "title": "Marrow underproduction",
+   "lines": []
+  },
+  {
+   "id": "itp_head_0_0",
+   "x": 291,
+   "y": 434,
+   "w": 206,
+   "h": 118,
+   "kind": "itp_h",
+   "title": "Immune thrombocytopenia (ITP)",
+   "lines": [
+    "antibodies → spleen clears platelets"
+   ]
+  },
+  {
+   "id": "ttp_head_0_0",
+   "x": 509,
+   "y": 434,
+   "w": 206,
+   "h": 118,
+   "kind": "ttp_h",
+   "title": "Thrombotic thrombocytopenic purpura (TTP)",
+   "lines": [
+    "↓ ADAMTS-13: giant von Willebrand factor multimers clot"
+   ]
+  },
+  {
+   "id": "hus_head_0_0",
+   "x": 727,
+   "y": 434,
+   "w": 206,
+   "h": 118,
+   "kind": "hus_h",
+   "title": "Hemolytic uremic syndrome (HUS)",
+   "lines": [
+    "Shiga toxin (E. coli O157:H7)"
+   ]
+  },
+  {
+   "id": "dic_head_0_0",
+   "x": 945,
+   "y": 434,
+   "w": 206,
+   "h": 118,
+   "kind": "dic_h",
+   "title": "Disseminated intravascular coagulation (DIC)",
+   "lines": [
+    "uses up factors AND platelets"
+   ]
+  },
+  {
+   "id": "hit_head_0_0",
+   "x": 1163,
+   "y": 434,
+   "w": 206,
+   "h": 118,
+   "kind": "hit_h",
+   "title": "Heparin-induced thrombocytopenia (HIT)",
+   "lines": [
+    "antibodies to heparin–platelet factor 4 (PF4) activate platelets"
+   ]
+  },
+  {
+   "id": "oth_head_0_0",
+   "x": 1409,
+   "y": 434,
+   "w": 206,
+   "h": 118,
+   "kind": "oth_h",
+   "title": "Pooled, diluted or clumped",
+   "lines": []
+  },
+  {
+   "id": "prod_clue_0_0",
+   "x": 45,
+   "y": 592,
+   "w": 206,
+   "h": 168,
+   "kind": "prod_t",
+   "title": "Causes",
+   "lines": [
+    "• aplastic anemia, myelodysplasia, marrow infiltration or fibrosis",
+    "• B12, folate lack",
+    "• liver disease (↓ thrombopoietin)",
+    "• drugs, viruses, toxins"
+   ]
+  },
+  {
+   "id": "itp_clue_0_0",
+   "x": 291,
+   "y": 592,
+   "w": 206,
+   "h": 168,
+   "kind": "itp_t",
+   "title": "Mucocutaneous bleeding, or none",
+   "lines": [
+    "• often < 10",
+    "• adults: insidious, relapsing, 2 F : 1 M"
+   ]
+  },
+  {
+   "id": "ttp_clue_0_0",
+   "x": 509,
+   "y": 592,
+   "w": 206,
+   "h": 168,
+   "kind": "ttp_t",
+   "title": "VERY sick",
+   "lines": [
+    "• headache, confusion, focal deficits, seizures",
+    "• hemolytic anemia",
+    "• drugs, pregnancy, infection"
+   ]
+  },
+  {
+   "id": "hus_clue_0_0",
+   "x": 727,
+   "y": 592,
+   "w": 206,
+   "h": 168,
+   "kind": "hus_t",
+   "title": "After DIARRHEA",
+   "lines": [
+    "• ↓ urine output, kidney injury",
+    "• peak 6 months – 4 years"
+   ]
+  },
+  {
+   "id": "dic_clue_0_0",
+   "x": 945,
+   "y": 592,
+   "w": 206,
+   "h": 168,
+   "kind": "dic_t",
+   "title": "BLEEDS AND CLOTS",
+   "lines": [
+    "• sepsis",
+    "• cancer, acute promyelocytic leukemia",
+    "• trauma, abruption, amniotic fluid embolism"
+   ]
+  },
+  {
+   "id": "hit_clue_0_0",
+   "x": 1163,
+   "y": 592,
+   "w": 206,
+   "h": 168,
+   "kind": "hit_t",
+   "title": "NEW venous AND arterial clots",
+   "lines": [
+    "• no bleeding",
+    "• 10× more with unfractionated than low molecular weight heparin"
+   ]
+  },
+  {
+   "id": "oth_clue_0_0",
+   "x": 1409,
+   "y": 592,
+   "w": 206,
+   "h": 168,
+   "kind": "oth_t",
+   "title": "Causes",
+   "lines": [
+    "• SPLENOMEGALY (> 11–13 cm): moderate, rarely bleeds",
+    "• dilution: massive transfusion, fluids",
+    "• EDTA clumping (lavender tube)"
+   ]
+  },
+  {
+   "id": "prod_inv_0_0",
+   "x": 45,
+   "y": 800,
+   "w": 206,
+   "h": 97,
+   "kind": "prod_w",
+   "title": "1 · History, exam, liver function",
+   "lines": []
+  },
+  {
+   "id": "prod_inv_1_0",
+   "x": 45,
+   "y": 919,
+   "w": 206,
+   "h": 97,
+   "kind": "prod_w",
+   "title": "2 · Bone marrow aspirate + biopsy",
+   "lines": []
+  },
+  {
+   "id": "itp_inv_0_0",
+   "x": 291,
+   "y": 800,
+   "w": 206,
+   "h": 98,
+   "kind": "itp_t",
+   "title": "1 · DIAGNOSIS OF EXCLUSION",
+   "lines": [
+    "platelets < 100, other cell lines normal"
+   ]
+  },
+  {
+   "id": "itp_inv_1_0",
+   "x": 291,
+   "y": 920,
+   "w": 206,
+   "h": 96,
+   "kind": "itp_w",
+   "title": "2 · Exclude secondary",
+   "lines": [
+    "• lupus, leukemia, lymphoma",
+    "• HIV, hepatitis C",
+    "• drugs: heparin, quinine"
+   ]
+  },
+  {
+   "id": "ttp_inv_0_0",
+   "x": 509,
+   "y": 800,
+   "w": 206,
+   "h": 216,
+   "kind": "ttp_t",
+   "title": "1 · ADAMTS-13 LOW",
+   "lines": [
+    "suspect: hemolytic anemia + acute kidney injury + a trigger"
+   ]
+  },
+  {
+   "id": "hus_inv_0_0",
+   "x": 727,
+   "y": 800,
+   "w": 206,
+   "h": 216,
+   "kind": "hus_t",
+   "title": "1 · ADAMTS-13 NORMAL",
+   "lines": [
+    "hemolysis + kidney injury after diarrhea"
+   ]
+  },
+  {
+   "id": "dic_inv_0_0",
+   "x": 945,
+   "y": 800,
+   "w": 206,
+   "h": 216,
+   "kind": "dic_t",
+   "title": "1 · ISTH DIC score",
+   "lines": [
+    "• underlying condition",
+    "• platelets < 100 · D-dimer ↑",
+    "• fibrinogen < 1 g/L · INR ↑"
+   ]
+  },
+  {
+   "id": "hit_inv_0_0",
+   "x": 1163,
+   "y": 800,
+   "w": 206,
+   "h": 106,
+   "kind": "hit_t",
+   "title": "1 · 4 T's score",
+   "lines": [
+    "thrombocytopenia, timing, thrombosis, other causes"
+   ]
+  },
+  {
+   "id": "hit_inv_1_0",
+   "x": 1163,
+   "y": 928,
+   "w": 206,
+   "h": 88,
+   "kind": "hit_w",
+   "title": "2 · Anti-PF4 ELISA",
+   "lines": [
+    "→ serotonin release assay"
+   ]
+  },
+  {
+   "id": "oth_inv_0_0",
+   "x": 1409,
+   "y": 800,
+   "w": 206,
+   "h": 96,
+   "kind": "oth_w",
+   "title": "1 · Film: CLUMPS",
+   "lines": [
+    "= pseudothrombocytopenia"
+   ]
+  },
+  {
+   "id": "oth_inv_1_0",
+   "x": 1409,
+   "y": 918,
+   "w": 206,
+   "h": 98,
+   "kind": "oth_w",
+   "title": "2 · Spleen on exam or imaging",
+   "lines": []
+  },
+  {
+   "id": "prod_tx_0_0",
+   "x": 45,
+   "y": 1056,
+   "w": 206,
+   "h": 284,
+   "kind": "ok",
+   "title": "Treat the cause",
+   "lines": [
+    "• stop the offending drug",
+    "• supportive platelet transfusion"
+   ]
+  },
+  {
+   "id": "itp_tx_0_0",
+   "x": 291,
+   "y": 1056,
+   "w": 206,
+   "h": 61,
+   "kind": "ok",
+   "title": "1 · Steroids",
+   "lines": [
+    "prednisone, dexamethasone"
+   ]
+  },
+  {
+   "id": "itp_tx_1_0",
+   "x": 291,
+   "y": 1139,
+   "w": 206,
+   "h": 97,
+   "kind": "ok",
+   "title": "2 · Then",
+   "lines": [
+    "• IV immunoglobulin (brief)",
+    "• rituximab, splenectomy",
+    "• thrombopoietin mimetics"
+   ]
+  },
+  {
+   "id": "itp_tx_2_0",
+   "x": 291,
+   "y": 1258,
+   "w": 206,
+   "h": 83,
+   "kind": "warn",
+   "title": "Platelets ONLY for emergency bleeding with count < 10",
+   "lines": []
+  },
+  {
+   "id": "ttp_tx_0_0",
+   "x": 509,
+   "y": 1056,
+   "w": 206,
+   "h": 140,
+   "kind": "ok",
+   "title": "1 · PLASMA EXCHANGE",
+   "lines": [
+    "+ steroids, rituximab"
+   ]
+  },
+  {
+   "id": "ttp_tx_1_0",
+   "x": 509,
+   "y": 1218,
+   "w": 206,
+   "h": 122,
+   "kind": "bad",
+   "title": "NO platelet transfusion",
+   "lines": []
+  },
+  {
+   "id": "hus_tx_0_0",
+   "x": 727,
+   "y": 1056,
+   "w": 206,
+   "h": 130,
+   "kind": "ok",
+   "title": "Supportive",
+   "lines": [
+    "• IV fluids, monitoring",
+    "• dialysis in some"
+   ]
+  },
+  {
+   "id": "hus_tx_1_0",
+   "x": 727,
+   "y": 1208,
+   "w": 206,
+   "h": 132,
+   "kind": "bad",
+   "title": "NO antibiotics · NO platelets",
+   "lines": [
+    "some antibiotics worsen it"
+   ]
+  },
+  {
+   "id": "dic_tx_0_0",
+   "x": 945,
+   "y": 1056,
+   "w": 206,
+   "h": 96,
+   "kind": "ok",
+   "title": "1 · TREAT THE CAUSE + support",
+   "lines": []
+  },
+  {
+   "id": "dic_tx_1_0",
+   "x": 945,
+   "y": 1174,
+   "w": 206,
+   "h": 166,
+   "kind": "warn",
+   "title": "Bleeding: replace",
+   "lines": [
+    "• cryoprecipitate if fibrinogen < 1.0",
+    "• platelets if < 50",
+    "• plasma if INR > 1.5",
+    "• red cells if Hb < 70–80"
+   ]
+  },
+  {
+   "id": "hit_tx_0_0",
+   "x": 1163,
+   "y": 1056,
+   "w": 206,
+   "h": 62,
+   "kind": "bad",
+   "title": "1 · STOP ALL HEPARIN · NO platelets",
+   "lines": []
+  },
+  {
+   "id": "hit_tx_1_0",
+   "x": 1163,
+   "y": 1140,
+   "w": 206,
+   "h": 98,
+   "kind": "ok",
+   "title": "2 · Non-heparin anticoagulant",
+   "lines": [
+    "fondaparinux, argatroban, danaparoid"
+   ]
+  },
+  {
+   "id": "hit_tx_2_0",
+   "x": 1163,
+   "y": 1260,
+   "w": 206,
+   "h": 80,
+   "kind": "ok",
+   "title": "3 · Warfarin once platelets recover",
+   "lines": [
+    "clot → treat ≥ 3 months"
+   ]
+  },
+  {
+   "id": "oth_tx_0_0",
+   "x": 1409,
+   "y": 1056,
+   "w": 206,
+   "h": 284,
+   "kind": "ok",
+   "title": "Treat the cause",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_prod",
+   "path": "M830.0 126V151H148.0V176"
+  },
+  {
+   "from": "root",
+   "to": "g_des",
+   "path": "M830.0 126V151H830.0V176"
+  },
+  {
+   "from": "root",
+   "to": "g_oth",
+   "path": "M830.0 126V151H1512.0V176"
+  },
+  {
+   "from": "g_des",
+   "to": "t_iso",
+   "from_dx": -436
+  },
+  {
+   "from": "g_des",
+   "to": "t_sch",
+   "from_dx": 0
+  },
+  {
+   "from": "g_des",
+   "to": "t_hep",
+   "from_dx": 436
+  },
+  {
+   "from": "prod_inv_0_0",
+   "to": "prod_inv_1_0"
+  },
+  {
+   "from": "itp_inv_0_0",
+   "to": "itp_inv_1_0"
+  },
+  {
+   "from": "hit_inv_0_0",
+   "to": "hit_inv_1_0"
+  },
+  {
+   "from": "oth_inv_0_0",
+   "to": "oth_inv_1_0"
+  },
+  {
+   "from": "itp_tx_0_0",
+   "to": "itp_tx_1_0"
+  },
+  {
+   "from": "itp_tx_1_0",
+   "to": "itp_tx_2_0"
+  },
+  {
+   "from": "ttp_tx_0_0",
+   "to": "ttp_tx_1_0"
+  },
+  {
+   "from": "hus_tx_0_0",
+   "to": "hus_tx_1_0"
+  },
+  {
+   "from": "dic_tx_0_0",
+   "to": "dic_tx_1_0"
+  },
+  {
+   "from": "hit_tx_0_0",
+   "to": "hit_tx_1_0"
+  },
+  {
+   "from": "hit_tx_1_0",
+   "to": "hit_tx_2_0"
+  },
+  {
+   "from": "prod_head_0_0",
+   "to": "prod_clue_0_0"
+  },
+  {
+   "from": "prod_clue_0_0",
+   "to": "prod_inv_0_0"
+  },
+  {
+   "from": "prod_inv_1_0",
+   "to": "prod_tx_0_0"
+  },
+  {
+   "from": "g_prod",
+   "to": "prod_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "itp_head_0_0",
+   "to": "itp_clue_0_0"
+  },
+  {
+   "from": "itp_clue_0_0",
+   "to": "itp_inv_0_0"
+  },
+  {
+   "from": "itp_inv_1_0",
+   "to": "itp_tx_0_0"
+  },
+  {
+   "from": "t_iso",
+   "to": "itp_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ttp_head_0_0",
+   "to": "ttp_clue_0_0"
+  },
+  {
+   "from": "ttp_clue_0_0",
+   "to": "ttp_inv_0_0"
+  },
+  {
+   "from": "ttp_inv_0_0",
+   "to": "ttp_tx_0_0"
+  },
+  {
+   "from": "t_sch",
+   "to": "ttp_head_0_0",
+   "from_dx": -218,
+   "label": "ADAMTS-13 LOW",
+   "label_at": [
+    612.0,
+    394
+   ]
+  },
+  {
+   "from": "hus_head_0_0",
+   "to": "hus_clue_0_0"
+  },
+  {
+   "from": "hus_clue_0_0",
+   "to": "hus_inv_0_0"
+  },
+  {
+   "from": "hus_inv_0_0",
+   "to": "hus_tx_0_0"
+  },
+  {
+   "from": "t_sch",
+   "to": "hus_head_0_0",
+   "from_dx": 0,
+   "label": "ADAMTS-13 normal",
+   "label_at": [
+    830.0,
+    394
+   ]
+  },
+  {
+   "from": "dic_head_0_0",
+   "to": "dic_clue_0_0"
+  },
+  {
+   "from": "dic_clue_0_0",
+   "to": "dic_inv_0_0"
+  },
+  {
+   "from": "dic_inv_0_0",
+   "to": "dic_tx_0_0"
+  },
+  {
+   "from": "t_sch",
+   "to": "dic_head_0_0",
+   "from_dx": 218,
+   "label": "clotting deranged",
+   "label_at": [
+    1048.0,
+    394
+   ]
+  },
+  {
+   "from": "hit_head_0_0",
+   "to": "hit_clue_0_0"
+  },
+  {
+   "from": "hit_clue_0_0",
+   "to": "hit_inv_0_0"
+  },
+  {
+   "from": "hit_inv_1_0",
+   "to": "hit_tx_0_0"
+  },
+  {
+   "from": "t_hep",
+   "to": "hit_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "oth_head_0_0",
+   "to": "oth_clue_0_0"
+  },
+  {
+   "from": "oth_clue_0_0",
+   "to": "oth_inv_0_0"
+  },
+  {
+   "from": "oth_inv_1_0",
+   "to": "oth_tx_0_0"
+  },
+  {
+   "from": "g_oth",
+   "to": "oth_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

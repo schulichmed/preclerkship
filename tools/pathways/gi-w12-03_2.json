@@ -1,0 +1,583 @@
+{
+ "name": "abnormal liver enzymes overview",
+ "width": 1480,
+ "title": "Abnormal liver enzymes: the pattern first (hepatocellular ALT and AST, or cholestatic ALP and GGT), then how high and which enzyme leads, sorting into AST-led, ALT-led, severe, non-hepatic, cholestatic and ALP-alone causes, each with what to think of and the next step",
+ "kinds": {
+  "ast_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ast_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ast_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "alt_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "alt_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "alt_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "sev_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sev_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "sev_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "non_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "non_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "non_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "chol_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "chol_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "chol_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "alp_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "alp_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "alp_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 388,
+   "w": 232,
+   "h": 496,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 274,
+   "y": 388,
+   "w": 232,
+   "h": 496,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 508,
+   "y": 388,
+   "w": 232,
+   "h": 496,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 742,
+   "y": 388,
+   "w": 232,
+   "h": 496,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 1004,
+   "y": 388,
+   "w": 232,
+   "h": 496,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1238,
+   "y": 388,
+   "w": 232,
+   "h": 496,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 496,
+   "h": 188,
+   "text": "THINK OF"
+  },
+  {
+   "x": 23,
+   "y": 724,
+   "h": 152,
+   "text": "NEXT STEP"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 375,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Liver enzymes up: HEPATOCELLULAR or CHOLESTATIC pattern?",
+   "lines": [
+    "enzymes mark DAMAGE or blocked bile flow; they are NOT tests of liver FUNCTION",
+    "is it FAILING? albumin ↓, bilirubin ↑, international normalized ratio (INR) ↑: INR is the fastest readout (short half-life)",
+    "then ask HOW HIGH, how FAST, WHERE (ethnicity, travel) and WHEN (age, drugs, comorbidities)"
+   ]
+  },
+  {
+   "id": "g_hep",
+   "x": 45,
+   "y": 156,
+   "w": 924,
+   "h": 60,
+   "kind": "plain",
+   "title": "HEPATOCELLULAR: alanine (ALT) and aspartate (AST) aminotransferase lead",
+   "lines": [
+    "ALT is the liver-specific one; AST is also in red cells, muscle, brain, gut"
+   ]
+  },
+  {
+   "id": "g_chol",
+   "x": 1009,
+   "y": 156,
+   "w": 456,
+   "h": 60,
+   "kind": "plain",
+   "title": "CHOLESTATIC: alkaline phosphatase (ALP) leads",
+   "lines": [
+    "always read it WITH gamma-glutamyl transferase (GGT)"
+   ]
+  },
+  {
+   "id": "t_mild",
+   "x": 45,
+   "y": 256,
+   "w": 456,
+   "h": 60,
+   "kind": "plain",
+   "title": "MILD: up to 5-10× the upper limit of normal",
+   "lines": [
+    "which one is HIGHER?"
+   ]
+  },
+  {
+   "id": "ast_head_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 222,
+   "h": 60,
+   "kind": "ast_h",
+   "title": "AST > ALT",
+   "lines": [
+    "ratio > 2:1 is classic for ALCOHOL"
+   ]
+  },
+  {
+   "id": "alt_head_0_0",
+   "x": 279,
+   "y": 396,
+   "w": 222,
+   "h": 60,
+   "kind": "alt_h",
+   "title": "ALT > AST",
+   "lines": [
+    "the longest list"
+   ]
+  },
+  {
+   "id": "sev_head_0_0",
+   "x": 513,
+   "y": 396,
+   "w": 222,
+   "h": 60,
+   "kind": "sev_h",
+   "title": "SEVERE: > 15× normal",
+   "lines": [
+    "acute injury"
+   ]
+  },
+  {
+   "id": "non_head_0_0",
+   "x": 747,
+   "y": 396,
+   "w": 222,
+   "h": 60,
+   "kind": "non_h",
+   "title": "NOT from the liver",
+   "lines": [
+    "AST/ALT from elsewhere"
+   ]
+  },
+  {
+   "id": "chol_head_0_0",
+   "x": 1009,
+   "y": 396,
+   "w": 222,
+   "h": 60,
+   "kind": "chol_h",
+   "title": "ALP + GGT ↑",
+   "lines": [
+    "hepatobiliary: GGT CONFIRMS it"
+   ]
+  },
+  {
+   "id": "alp_head_0_0",
+   "x": 1243,
+   "y": 396,
+   "w": 222,
+   "h": 60,
+   "kind": "alp_h",
+   "title": "ALP alone",
+   "lines": [
+    "probably NOT the liver"
+   ]
+  },
+  {
+   "id": "ast_cause_0_0",
+   "x": 45,
+   "y": 496,
+   "w": 222,
+   "h": 188,
+   "kind": "ast_t",
+   "title": "Alcohol, cirrhosis, poor blood flow",
+   "lines": [
+    "• alcoholic liver disease, cirrhosis of any cause",
+    "• ischemic hepatitis, congestive hepatopathy (heart failure)",
+    "• acute Budd-Chiari"
+   ]
+  },
+  {
+   "id": "alt_cause_0_0",
+   "x": 279,
+   "y": 496,
+   "w": 222,
+   "h": 188,
+   "kind": "alt_t",
+   "title": "Fat, virus, drug, autoimmune, storage",
+   "lines": [
+    "• non-alcoholic fatty liver disease (NAFLD)",
+    "• viral, toxic or autoimmune hepatitis, celiac disease",
+    "• hemochromatosis, Wilson, alpha-1 antitrypsin"
+   ]
+  },
+  {
+   "id": "sev_cause_0_0",
+   "x": 513,
+   "y": 496,
+   "w": 222,
+   "h": 188,
+   "kind": "sev_t",
+   "title": "An ACUTE hit",
+   "lines": [
+    "• acute viral, toxic, ischemic or autoimmune hepatitis",
+    "• Wilson disease, acute Budd-Chiari",
+    "• acute choledocholithiasis, hepatic artery ligation"
+   ]
+  },
+  {
+   "id": "non_cause_0_0",
+   "x": 747,
+   "y": 496,
+   "w": 222,
+   "h": 188,
+   "kind": "non_t",
+   "title": "Muscle, heart, blood, glands",
+   "lines": [
+    "• rhabdomyolysis, myocardial infarction",
+    "• hemolysis, heat stroke, macro-AST",
+    "• thyroid disease, adrenal insufficiency"
+   ]
+  },
+  {
+   "id": "chol_cause_0_0",
+   "x": 1009,
+   "y": 496,
+   "w": 222,
+   "h": 188,
+   "kind": "chol_t",
+   "title": "Blocked or damaged bile flow",
+   "lines": [
+    "• bile duct OBSTRUCTION: stones, malignancy",
+    "• primary sclerosing or biliary cholangitis, drugs, sepsis, parenteral nutrition",
+    "• infiltration: sarcoid, tuberculosis, lymphoma, metastases"
+   ]
+  },
+  {
+   "id": "alp_cause_0_0",
+   "x": 1243,
+   "y": 496,
+   "w": 222,
+   "h": 188,
+   "kind": "alp_t",
+   "title": "Bone, pregnancy, growth",
+   "lines": [
+    "• pregnancy, normal childhood growth, bone disease",
+    "• chronic kidney disease, heart failure",
+    "• lymphoma, infection, inflammation"
+   ]
+  },
+  {
+   "id": "ast_next_0_0",
+   "x": 45,
+   "y": 724,
+   "w": 222,
+   "h": 152,
+   "kind": "ast_w",
+   "title": "Alcohol history",
+   "lines": [
+    "abstinence is step 1: CHRONIC LIVER FAILURE chart"
+   ]
+  },
+  {
+   "id": "alt_next_0_0",
+   "x": 279,
+   "y": 724,
+   "w": 222,
+   "h": 152,
+   "kind": "alt_w",
+   "title": "WHERE and WHEN point the way",
+   "lines": [
+    "• hypertension, obesity, dyslipidemia → NAFLD",
+    "• from hepatitis B areas (SE Asia, Africa)",
+    "• new drugs or recent travel"
+   ]
+  },
+  {
+   "id": "sev_next_0_0",
+   "x": 513,
+   "y": 724,
+   "w": 222,
+   "h": 152,
+   "kind": "bad",
+   "title": "Check clotting + mental state",
+   "lines": [
+    "INR > 1.5 + encephalopathy, < 26 weeks = ACUTE LIVER FAILURE"
+   ]
+  },
+  {
+   "id": "non_next_0_0",
+   "x": 747,
+   "y": 724,
+   "w": 222,
+   "h": 152,
+   "kind": "non_w",
+   "title": "Look outside the liver",
+   "lines": []
+  },
+  {
+   "id": "chol_next_0_0",
+   "x": 1009,
+   "y": 724,
+   "w": 222,
+   "h": 152,
+   "kind": "chol_w",
+   "title": "Ultrasound FIRST",
+   "lines": [
+    "non-invasive: liver, gallbladder, bile ducts",
+    "duct imaging after it: JAUNDICE chart"
+   ]
+  },
+  {
+   "id": "alp_next_0_0",
+   "x": 1243,
+   "y": 724,
+   "w": 222,
+   "h": 152,
+   "kind": "alp_w",
+   "title": "Look for the non-liver source",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_hep",
+   "path": "M755.0 106V131H507.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_chol",
+   "path": "M755.0 106V131H1237.0V156"
+  },
+  {
+   "from": "g_hep",
+   "to": "t_mild",
+   "from_dx": -234
+  },
+  {
+   "from": "ast_head_0_0",
+   "to": "ast_cause_0_0"
+  },
+  {
+   "from": "ast_cause_0_0",
+   "to": "ast_next_0_0"
+  },
+  {
+   "from": "t_mild",
+   "to": "ast_head_0_0",
+   "from_dx": -117,
+   "label": "AST > ALT",
+   "label_at": [
+    156.0,
+    356
+   ]
+  },
+  {
+   "from": "alt_head_0_0",
+   "to": "alt_cause_0_0"
+  },
+  {
+   "from": "alt_cause_0_0",
+   "to": "alt_next_0_0"
+  },
+  {
+   "from": "t_mild",
+   "to": "alt_head_0_0",
+   "from_dx": 117,
+   "label": "ALT > AST",
+   "label_at": [
+    390.0,
+    356
+   ]
+  },
+  {
+   "from": "sev_head_0_0",
+   "to": "sev_cause_0_0"
+  },
+  {
+   "from": "sev_cause_0_0",
+   "to": "sev_next_0_0"
+  },
+  {
+   "from": "g_hep",
+   "to": "sev_head_0_0",
+   "from_dx": 117,
+   "label": "> 15× normal",
+   "label_at": [
+    624.0,
+    356
+   ]
+  },
+  {
+   "from": "non_head_0_0",
+   "to": "non_cause_0_0"
+  },
+  {
+   "from": "non_cause_0_0",
+   "to": "non_next_0_0"
+  },
+  {
+   "from": "g_hep",
+   "to": "non_head_0_0",
+   "from_dx": 351,
+   "label": "liver looks fine",
+   "label_at": [
+    858.0,
+    356
+   ]
+  },
+  {
+   "from": "chol_head_0_0",
+   "to": "chol_cause_0_0"
+  },
+  {
+   "from": "chol_cause_0_0",
+   "to": "chol_next_0_0"
+  },
+  {
+   "from": "g_chol",
+   "to": "chol_head_0_0",
+   "from_dx": -117,
+   "label": "GGT ↑ too",
+   "label_at": [
+    1120.0,
+    356
+   ]
+  },
+  {
+   "from": "alp_head_0_0",
+   "to": "alp_cause_0_0"
+  },
+  {
+   "from": "alp_cause_0_0",
+   "to": "alp_next_0_0"
+  },
+  {
+   "from": "g_chol",
+   "to": "alp_head_0_0",
+   "from_dx": 117,
+   "label": "GGT normal",
+   "label_at": [
+    1354.0,
+    356
+   ]
+  }
+ ],
+ "panels": []
+}

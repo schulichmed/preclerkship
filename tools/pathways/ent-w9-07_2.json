@@ -1,0 +1,482 @@
+{
+ "name": "pediatric stridor overview",
+ "width": 922,
+ "title": "Pediatric stridor decision chart: the phase of stridor localizes the narrowing; an infectious cause is croup (barking cough, steeple sign, the most common) or epiglottitis (drooling, tripod, secure the airway), and a choking episode points to foreign body aspiration (inspiratory and expiratory chest X-ray, rigid bronchoscopy if history, exam or imaging is positive)",
+ "kinds": {
+  "cr_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cr_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "cr_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ep_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ep_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ep_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "fb_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fb_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "fb_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 308,
+   "w": 280,
+   "h": 808,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 322,
+   "y": 308,
+   "w": 280,
+   "h": 808,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 632,
+   "y": 308,
+   "w": 280,
+   "h": 808,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 452,
+   "h": 262,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 754,
+   "h": 116,
+   "text": "INVESTIGATIONS"
+  },
+  {
+   "x": 23,
+   "y": 910,
+   "h": 198,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 96,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Child with STRIDOR: where is the narrowing, and WHAT is it?",
+   "lines": [
+    "INSPIRATORY = supraglottic or glottic · BIPHASIC = subglottic · EXPIRATORY = lower airway",
+    "a child's airway is narrowest at the CRICOID: a complete ring that cannot expand",
+    "less likely: subglottic stenosis (scarring after intubation), subglottic hemangioma, vocal cord paralysis"
+   ]
+  },
+  {
+   "id": "g_inf",
+   "x": 45,
+   "y": 156,
+   "w": 552,
+   "h": 80,
+   "kind": "plain",
+   "title": "INFECTION: barking, or drooling?",
+   "lines": []
+  },
+  {
+   "id": "g_fb",
+   "x": 637,
+   "y": 156,
+   "w": 270,
+   "h": 80,
+   "kind": "plain",
+   "title": "A CHOKING episode, witnessed or not",
+   "lines": [
+    "HISTORY is the most important part"
+   ]
+  },
+  {
+   "id": "cr_head_0_0",
+   "x": 45,
+   "y": 316,
+   "w": 270,
+   "h": 96,
+   "kind": "cr_h",
+   "title": "Croup (laryngotracheobronchitis)",
+   "lines": [
+    "the MOST COMMON cause of stridor",
+    "viral: parainfluenza, respiratory syncytial virus (RSV), influenza"
+   ]
+  },
+  {
+   "id": "ep_head_0_0",
+   "x": 327,
+   "y": 316,
+   "w": 270,
+   "h": 96,
+   "kind": "ep_h",
+   "title": "Epiglottitis",
+   "lines": [
+    "Haemophilus influenzae type b (Hib)",
+    "UNCOMMON since the Hib vaccine, but life-threatening"
+   ]
+  },
+  {
+   "id": "fb_head_0_0",
+   "x": 637,
+   "y": 316,
+   "w": 270,
+   "h": 96,
+   "kind": "fb_h",
+   "title": "Foreign body aspiration",
+   "lines": [
+    "ages 1–3, boys more"
+   ]
+  },
+  {
+   "id": "cr_pres_0_0",
+   "x": 45,
+   "y": 452,
+   "w": 270,
+   "h": 102,
+   "kind": "cr_t",
+   "title": "6 months to 3 years",
+   "lines": [
+    "spring and fall"
+   ]
+  },
+  {
+   "id": "cr_pres_1_0",
+   "x": 45,
+   "y": 576,
+   "w": 270,
+   "h": 138,
+   "kind": "cr_w",
+   "title": "SUBGLOTTIC obstruction",
+   "lines": [
+    "• BARKING (seal) cough, hoarse",
+    "• inspiratory stridor",
+    "• low-grade fever"
+   ]
+  },
+  {
+   "id": "ep_pres_0_0",
+   "x": 327,
+   "y": 452,
+   "w": 270,
+   "h": 147,
+   "kind": "ep_t",
+   "title": "Swollen epiglottis",
+   "lines": [
+    "• uncontrollable DROOLING",
+    "• HOT-POTATO voice, pain",
+    "• TRIPOD position"
+   ]
+  },
+  {
+   "id": "ep_pres_1_0",
+   "x": 327,
+   "y": 621,
+   "w": 270,
+   "h": 93,
+   "kind": "bad",
+   "title": "Acute airway obstruction",
+   "lines": []
+  },
+  {
+   "id": "fb_pres_0_0",
+   "x": 637,
+   "y": 452,
+   "w": 270,
+   "h": 80,
+   "kind": "fb_t",
+   "title": "1 · ACUTE: choking, gagging, coughing",
+   "lines": [
+    "or obstruction, at the moment of aspiration"
+   ]
+  },
+  {
+   "id": "fb_pres_1_0",
+   "x": 637,
+   "y": 554,
+   "w": 270,
+   "h": 78,
+   "kind": "fb_w",
+   "title": "2 · QUIET: hours to weeks",
+   "lines": [
+    "• lodged, reflexes fatigue",
+    "• may wheeze"
+   ]
+  },
+  {
+   "id": "fb_pres_2_0",
+   "x": 637,
+   "y": 654,
+   "w": 270,
+   "h": 60,
+   "kind": "fb_w",
+   "title": "3 · COMPLICATIONS",
+   "lines": [
+    "obstruction, erosion, infection"
+   ]
+  },
+  {
+   "id": "cr_inv_0_0",
+   "x": 45,
+   "y": 754,
+   "w": 270,
+   "h": 116,
+   "kind": "cr_t",
+   "title": "X-ray: STEEPLE sign",
+   "lines": [
+    "subglottic narrowing"
+   ]
+  },
+  {
+   "id": "ep_inv_0_0",
+   "x": 327,
+   "y": 754,
+   "w": 270,
+   "h": 116,
+   "kind": "bad",
+   "title": "Do NOT agitate the child",
+   "lines": []
+  },
+  {
+   "id": "fb_inv_0_0",
+   "x": 637,
+   "y": 754,
+   "w": 270,
+   "h": 116,
+   "kind": "fb_t",
+   "title": "Inspiratory + expiratory chest X-ray (CXR)",
+   "lines": [
+    "• AIR TRAPPING behind the object",
+    "• often RIGHT main bronchus",
+    "• uncooperative: lateral decubitus film"
+   ]
+  },
+  {
+   "id": "cr_tx_0_0",
+   "x": 45,
+   "y": 910,
+   "w": 270,
+   "h": 45,
+   "kind": "ok",
+   "title": "1 · Hydration, cold humidified air",
+   "lines": []
+  },
+  {
+   "id": "cr_tx_1_0",
+   "x": 45,
+   "y": 977,
+   "w": 270,
+   "h": 65,
+   "kind": "warn",
+   "title": "2 · Moderate–severe: STEROIDS + nebulized EPINEPHRINE",
+   "lines": []
+  },
+  {
+   "id": "cr_tx_2_0",
+   "x": 45,
+   "y": 1064,
+   "w": 270,
+   "h": 45,
+   "kind": "bad",
+   "title": "3 · Intubation: rare",
+   "lines": []
+  },
+  {
+   "id": "ep_tx_0_0",
+   "x": 327,
+   "y": 910,
+   "w": 270,
+   "h": 198,
+   "kind": "bad",
+   "title": "SECURE THE AIRWAY",
+   "lines": []
+  },
+  {
+   "id": "fb_tx_0_0",
+   "x": 637,
+   "y": 910,
+   "w": 270,
+   "h": 116,
+   "kind": "bad",
+   "title": "RIGID BRONCHOSCOPY if ANY 1 is positive",
+   "lines": [
+    "• history",
+    "• exam",
+    "• chest X-ray"
+   ]
+  },
+  {
+   "id": "fb_tx_1_0",
+   "x": 637,
+   "y": 1048,
+   "w": 270,
+   "h": 60,
+   "kind": "ok",
+   "title": "Retrieve in the operating room",
+   "lines": [
+    "one foreign body? look for MORE"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_inf",
+   "path": "M476.0 106V131H321.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_fb",
+   "path": "M476.0 106V131H772.0V156"
+  },
+  {
+   "from": "cr_pres_0_0",
+   "to": "cr_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ep_pres_0_0",
+   "to": "ep_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "fb_pres_0_0",
+   "to": "fb_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "fb_pres_1_0",
+   "to": "fb_pres_2_0",
+   "dashed": true
+  },
+  {
+   "from": "cr_tx_0_0",
+   "to": "cr_tx_1_0"
+  },
+  {
+   "from": "cr_tx_1_0",
+   "to": "cr_tx_2_0"
+  },
+  {
+   "from": "fb_tx_0_0",
+   "to": "fb_tx_1_0"
+  },
+  {
+   "from": "cr_head_0_0",
+   "to": "cr_pres_0_0"
+  },
+  {
+   "from": "cr_pres_1_0",
+   "to": "cr_inv_0_0"
+  },
+  {
+   "from": "cr_inv_0_0",
+   "to": "cr_tx_0_0"
+  },
+  {
+   "from": "g_inf",
+   "to": "cr_head_0_0",
+   "from_dx": -141,
+   "label": "BARKING cough",
+   "label_at": [
+    180.0,
+    276
+   ]
+  },
+  {
+   "from": "ep_head_0_0",
+   "to": "ep_pres_0_0"
+  },
+  {
+   "from": "ep_pres_1_0",
+   "to": "ep_inv_0_0"
+  },
+  {
+   "from": "ep_inv_0_0",
+   "to": "ep_tx_0_0"
+  },
+  {
+   "from": "g_inf",
+   "to": "ep_head_0_0",
+   "from_dx": 141,
+   "label": "DROOLING, tripod",
+   "label_at": [
+    462.0,
+    276
+   ]
+  },
+  {
+   "from": "fb_head_0_0",
+   "to": "fb_pres_0_0"
+  },
+  {
+   "from": "fb_pres_2_0",
+   "to": "fb_inv_0_0"
+  },
+  {
+   "from": "fb_inv_0_0",
+   "to": "fb_tx_0_0"
+  },
+  {
+   "from": "g_fb",
+   "to": "fb_head_0_0",
+   "from_dx": 0,
+   "label": "CHOKING",
+   "label_at": [
+    772.0,
+    276
+   ]
+  }
+ ],
+ "panels": []
+}

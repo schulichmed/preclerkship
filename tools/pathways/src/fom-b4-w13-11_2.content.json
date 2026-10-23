@@ -1,0 +1,49 @@
+{
+ "name": "gram-negative bacteria overview",
+ "title": "Gram-negative identification chart: shape, then oxygen, then growth on sheep blood agar, the oxidase test and lactose fermentation name the organism group; acid-fast mycobacteria are split into the tuberculosis complex and rapid- and slow-growing non-tuberculous species",
+ "col_w": 206,
+ "root": {
+  "title": "PINK on the Gram stain, or ACID-FAST: which TESTS name the organism?",
+  "lines": [
+   "Gram-negative: thin wall + outer membrane · its lipopolysaccharide (LPS) triggers TLR4 → notorious for SEPSIS"
+  ]
+ },
+ "groups": [
+  {"id": "g_coc", "cols": [0, 0], "title": "COCCI", "lines": ["aerobic"]},
+  {"id": "g_ana", "cols": [1, 1], "title": "BACILLI, ANAEROBIC", "lines": []},
+  {"id": "g_aer", "cols": [2, 5], "title": "BACILLI, AEROBIC: does it GROW on sheep blood agar?", "lines": []},
+  {"id": "g_afb", "cols": [6, 6], "title": "ACID-FAST", "lines": ["mycolic-acid wall keeps the stain"]}
+ ],
+ "tiers": [
+  {"id": "t_ox", "cols": [3, 5], "title": "GROWS → OXIDASE test, then LACTOSE fermentation", "lines": []}
+ ],
+ "sections": ["head", "org"],
+ "row_names": {"org": "ORGANISMS"},
+ "columns": [
+  {"id": "coc", "colour": "slate",
+   "head": [[["h", "Gram-negative cocci", []]]],
+   "org": [[["t", "Neisseria · Moraxella", ["• N. gonorrhoeae", "• N. meningitidis"]]]]},
+  {"id": "ana", "colour": "brown",
+   "head": [[["h", "Anaerobic bacilli", []]]],
+   "org": [[["t", "Gut and mouth anaerobes", ["• Bacteroides fragilis", "• Fusobacterium", "• Prevotella, Porphyromonas"]]]]},
+  {"id": "ng", "colour": "purple", "drop_label": "NO growth",
+   "head": [[["h", "No growth on sheep blood agar", []]]],
+   "org": [[["t", "Fastidious", ["• Haemophilus influenzae", "• Legionella pneumophila"]]]]},
+  {"id": "oxp", "colour": "teal", "drop_from": "t_ox", "drop_label": "oxidase +",
+   "head": [[["h", "Oxidase POSITIVE", []]]],
+   "org": [[["t", "Ferments glucose", ["Vibrio cholerae"]]],
+           [["t", "Does NOT ferment glucose", ["• Bordetella pertussis", "• Campylobacter"]]]]},
+  {"id": "lac", "colour": "blue", "drop_from": "t_ox", "drop_label": "oxidase −, lactose +",
+   "head": [[["h", "Oxidase −, LACTOSE fermenter", []]]],
+   "org": [[["t", "Enterics", ["• Escherichia coli", "• Klebsiella pneumoniae", "• Enterobacter, Citrobacter"]]],
+           [["bad", "E. coli O157:H7 (Shiga toxin)", ["bloody diarrhea, from cattle (hamburger) → HUS: see the THROMBOCYTOPENIA chart"]]]]},
+  {"id": "nlf", "colour": "orange", "drop_from": "t_ox", "drop_label": "oxidase −, lactose −",
+   "head": [[["h", "Oxidase −, NON-lactose fermenter", []]]],
+   "org": [[["t", "Invaders", ["• Salmonella typhi", "• Shigella dysenteriae", "• Yersinia pestis"]]],
+           [["w", "INVADE the gut lining → colitis", ["S. typhi also grows in macrophages → systemic"]]]]},
+  {"id": "afb", "colour": "magenta",
+   "head": [[["h", "Mycobacteria", ["acid-fast bacilli (AFB): acid-alcohol cannot wash the stain out"]]]],
+   "org": [[["t", "Which group?", ["• TB complex: M. tuberculosis, M. bovis", "• non-tuberculous, RAPID (5–7 days): M. abscessus, M. fortuitum", "• non-tuberculous, SLOW: M. avium complex, M. kansasii, M. marinum"]]],
+           [["w", "Test", ["• AFB stain, culture, susceptibility", "• mycobacterial PCR · lateral flow assay"]]]]}
+ ]
+}

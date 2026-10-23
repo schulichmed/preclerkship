@@ -1,0 +1,620 @@
+{
+ "name": "polyarthritis overview",
+ "width": 1316,
+ "title": "Polyarthritis (four or more joints): decide inflammatory or degenerative and acute or chronic; acute inflammatory polyarthritis is infection, crystals or early autoimmune disease, and chronic polyarthritis is sorted by its joint pattern into rheumatoid arthritis, psoriatic arthritis, axial spondyloarthropathy and osteoarthritis, each with its own extra-articular clues and targeted tests",
+ "kinds": {
+  "acu_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "acu_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "acu_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "ra_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ra_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ra_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "psa_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "psa_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "psa_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "axs_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "axs_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "axs_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "oa_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "oa_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "oa_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 246,
+   "h": 642,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 316,
+   "y": 270,
+   "w": 246,
+   "h": 642,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 564,
+   "y": 270,
+   "w": 246,
+   "h": 642,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 812,
+   "y": 270,
+   "w": 246,
+   "h": 642,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1060,
+   "y": 270,
+   "w": 246,
+   "h": 642,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 396,
+   "h": 234,
+   "text": "LOOK FOR"
+  },
+  {
+   "x": 23,
+   "y": 670,
+   "h": 234,
+   "text": "INVESTIGATIONS"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 293,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "FOUR or more joints: inflammatory or degenerative, acute or chronic, and in what PATTERN?",
+   "lines": [
+    "inflamed synovium (synovitis) = swelling, warmth, pain, stiffness · redness only with infection or crystals",
+    "every inflammatory arthritis is a CLINICAL diagnosis: history, extra-articular clues, then targeted tests"
+   ]
+  },
+  {
+   "id": "g_ac",
+   "x": 45,
+   "y": 138,
+   "w": 236,
+   "h": 60,
+   "kind": "plain",
+   "title": "ACUTE: 6 weeks or less",
+   "lines": [
+    "onset in hours to days"
+   ]
+  },
+  {
+   "id": "g_ch",
+   "x": 321,
+   "y": 138,
+   "w": 980,
+   "h": 60,
+   "kind": "plain",
+   "title": "CHRONIC: over 6 weeks · the PATTERN decides",
+   "lines": [
+    "insidious, weeks to months · progressive and additive"
+   ]
+  },
+  {
+   "id": "acu_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "acu_h",
+   "title": "Acute polyarthritis",
+   "lines": [
+    "infection · crystals · early autoimmune"
+   ]
+  },
+  {
+   "id": "ra_head_0_0",
+   "x": 321,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "ra_h",
+   "title": "Rheumatoid arthritis",
+   "lines": [
+    "also symmetric: lupus, connective tissue disease"
+   ]
+  },
+  {
+   "id": "psa_head_0_0",
+   "x": 569,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "psa_h",
+   "title": "Psoriatic arthritis",
+   "lines": [
+    "also asymmetric: gout, reactive"
+   ]
+  },
+  {
+   "id": "axs_head_0_0",
+   "x": 817,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "axs_h",
+   "title": "Axial spondyloarthropathy",
+   "lines": [
+    "e.g. ankylosing spondylitis"
+   ]
+  },
+  {
+   "id": "oa_head_0_0",
+   "x": 1065,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "oa_h",
+   "title": "Osteoarthritis",
+   "lines": [
+    "DEGENERATIVE, not inflammatory"
+   ]
+  },
+  {
+   "id": "acu_clue_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 236,
+   "h": 115,
+   "kind": "acu_t",
+   "title": "Causes",
+   "lines": [
+    "• viral or post-infectious (see the MSK INFECTIONS chart)",
+    "• polyarticular gout · rheumatic fever",
+    "• drug reaction (serum sickness)"
+   ]
+  },
+  {
+   "id": "acu_clue_1_0",
+   "x": 45,
+   "y": 533,
+   "w": 236,
+   "h": 97,
+   "kind": "acu_w",
+   "title": "Course",
+   "lines": [
+    "• episodic: crystals",
+    "• migratory: palindromic, rheumatic fever, early gonococcal"
+   ]
+  },
+  {
+   "id": "ra_clue_0_0",
+   "x": 321,
+   "y": 396,
+   "w": 236,
+   "h": 134,
+   "kind": "ra_t",
+   "title": "Wrists, knuckles, finger joints, ankles, feet",
+   "lines": [
+    "• knuckles (MCPs) + middle finger joints (PIPs)",
+    "• distal finger joints (DIPs) SPARED",
+    "• ulnar deviation, knuckle subluxation"
+   ]
+  },
+  {
+   "id": "ra_clue_1_0",
+   "x": 321,
+   "y": 552,
+   "w": 236,
+   "h": 78,
+   "kind": "ra_w",
+   "title": "Extra-articular",
+   "lines": [
+    "• rheumatoid nodules, lung nodules",
+    "• episcleritis"
+   ]
+  },
+  {
+   "id": "psa_clue_0_0",
+   "x": 569,
+   "y": 396,
+   "w": 236,
+   "h": 97,
+   "kind": "psa_t",
+   "title": "DIPs involved · dactylitis",
+   "lines": [
+    "• sausage digit · enthesitis (Achilles)"
+   ]
+  },
+  {
+   "id": "psa_clue_1_0",
+   "x": 569,
+   "y": 515,
+   "w": 236,
+   "h": 115,
+   "kind": "psa_w",
+   "title": "Extra-articular",
+   "lines": [
+    "• skin psoriasis · nail pitting",
+    "• uveitis"
+   ]
+  },
+  {
+   "id": "axs_clue_0_0",
+   "x": 817,
+   "y": 396,
+   "w": 236,
+   "h": 97,
+   "kind": "axs_t",
+   "title": "Spine and sacroiliac joints",
+   "lines": [
+    "+ a few large peripheral joints"
+   ]
+  },
+  {
+   "id": "axs_clue_1_0",
+   "x": 817,
+   "y": 515,
+   "w": 236,
+   "h": 115,
+   "kind": "axs_w",
+   "title": "Ask",
+   "lines": [
+    "psoriasis · inflammatory bowel disease · recent infection"
+   ]
+  },
+  {
+   "id": "oa_clue_0_0",
+   "x": 1065,
+   "y": 396,
+   "w": 236,
+   "h": 97,
+   "kind": "oa_t",
+   "title": "Weight-bearing joints, spine",
+   "lines": [
+    "• DIPs, PIPs, thumb base, big toe"
+   ]
+  },
+  {
+   "id": "oa_clue_1_0",
+   "x": 1065,
+   "y": 515,
+   "w": 236,
+   "h": 115,
+   "kind": "oa_w",
+   "title": "Hands",
+   "lines": [
+    "Heberden's (DIP) and Bouchard's (PIP) nodes"
+   ]
+  },
+  {
+   "id": "acu_inv_0_0",
+   "x": 45,
+   "y": 670,
+   "w": 236,
+   "h": 106,
+   "kind": "bad",
+   "title": "Red, hot joint → ASPIRATE",
+   "lines": [
+    "infection? crystals?",
+    "~gout: needles, negative · pseudogout: rhomboid, positive"
+   ]
+  },
+  {
+   "id": "acu_inv_1_0",
+   "x": 45,
+   "y": 798,
+   "w": 236,
+   "h": 106,
+   "kind": "acu_w",
+   "title": "Viral: serologies",
+   "lines": [
+    "self-limited · supportive; anti-inflammatories or a short prednisone course if severe"
+   ]
+  },
+  {
+   "id": "ra_inv_0_0",
+   "x": 321,
+   "y": 670,
+   "w": 236,
+   "h": 134,
+   "kind": "ra_t",
+   "title": "Rheumatoid factor (RF) + anti-CCP: only if suspected",
+   "lines": [
+    "• anti-cyclic citrullinated peptide: 95% specific · RF is not",
+    "• positive = more aggressive · NEVER to monitor"
+   ]
+  },
+  {
+   "id": "ra_inv_1_0",
+   "x": 321,
+   "y": 826,
+   "w": 236,
+   "h": 78,
+   "kind": "ra_w",
+   "title": "X-ray",
+   "lines": [
+    "erosions, periarticular osteopenia, SYMMETRIC narrowing"
+   ]
+  },
+  {
+   "id": "psa_inv_0_0",
+   "x": 569,
+   "y": 670,
+   "w": 236,
+   "h": 234,
+   "kind": "psa_w",
+   "title": "No specific antibody",
+   "lines": [
+    "clinical diagnosis · X-ray: erosions",
+    "detail: the SERONEGATIVE ARTHRITIDES chart"
+   ]
+  },
+  {
+   "id": "axs_inv_0_0",
+   "x": 817,
+   "y": 670,
+   "w": 236,
+   "h": 234,
+   "kind": "axs_w",
+   "title": "Human leukocyte antigen B27 (HLA-B27)",
+   "lines": [
+    "X-ray: erosions",
+    "detail: the SERONEGATIVE ARTHRITIDES chart"
+   ]
+  },
+  {
+   "id": "oa_inv_0_0",
+   "x": 1065,
+   "y": 670,
+   "w": 236,
+   "h": 234,
+   "kind": "oa_w",
+   "title": "X-ray",
+   "lines": [
+    "osteophytes, subchondral sclerosis and cysts, ASYMMETRIC narrowing"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ac",
+   "path": "M673.0 88V113H163.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_ch",
+   "path": "M673.0 88V113H811.0V138"
+  },
+  {
+   "from": "acu_clue_0_0",
+   "to": "acu_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "ra_clue_0_0",
+   "to": "ra_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "psa_clue_0_0",
+   "to": "psa_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "axs_clue_0_0",
+   "to": "axs_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "oa_clue_0_0",
+   "to": "oa_clue_1_0",
+   "dashed": true
+  },
+  {
+   "from": "acu_inv_0_0",
+   "to": "acu_inv_1_0"
+  },
+  {
+   "from": "ra_inv_0_0",
+   "to": "ra_inv_1_0"
+  },
+  {
+   "from": "acu_head_0_0",
+   "to": "acu_clue_0_0"
+  },
+  {
+   "from": "acu_clue_1_0",
+   "to": "acu_inv_0_0"
+  },
+  {
+   "from": "g_ac",
+   "to": "acu_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ra_head_0_0",
+   "to": "ra_clue_0_0"
+  },
+  {
+   "from": "ra_clue_1_0",
+   "to": "ra_inv_0_0"
+  },
+  {
+   "from": "g_ch",
+   "to": "ra_head_0_0",
+   "from_dx": -372,
+   "label": "symmetric, small + large",
+   "label_at": [
+    439.0,
+    238
+   ]
+  },
+  {
+   "from": "psa_head_0_0",
+   "to": "psa_clue_0_0"
+  },
+  {
+   "from": "psa_clue_1_0",
+   "to": "psa_inv_0_0"
+  },
+  {
+   "from": "g_ch",
+   "to": "psa_head_0_0",
+   "from_dx": -124,
+   "label": "asymmetric, small + large",
+   "label_at": [
+    687.0,
+    238
+   ]
+  },
+  {
+   "from": "axs_head_0_0",
+   "to": "axs_clue_0_0"
+  },
+  {
+   "from": "axs_clue_1_0",
+   "to": "axs_inv_0_0"
+  },
+  {
+   "from": "g_ch",
+   "to": "axs_head_0_0",
+   "from_dx": 124,
+   "label": "axial + large",
+   "label_at": [
+    935.0,
+    238
+   ]
+  },
+  {
+   "from": "oa_head_0_0",
+   "to": "oa_clue_0_0"
+  },
+  {
+   "from": "oa_clue_1_0",
+   "to": "oa_inv_0_0"
+  },
+  {
+   "from": "g_ch",
+   "to": "oa_head_0_0",
+   "from_dx": 372,
+   "label": "symmetric, weight-bearing",
+   "label_at": [
+    1183.0,
+    238
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 938,
+   "w": 621,
+   "title": "Tests for everyone (safety + inflammation)",
+   "items": [
+    "blood count: anemia of chronic disease, platelets ↑ (inflammation), low counts (autoimmune)",
+    "creatinine and liver enzymes (drug clearance) · C-reactive protein (sedimentation rate not routine)"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 680,
+   "y": 938,
+   "w": 621,
+   "title": "Antinuclear antibody (ANA)",
+   "items": [
+    "positive in up to 30% of healthy people: a positive ANA does NOT rule in connective tissue disease",
+    "a negative ANA rules it out · don't order ANA and RF reflexively"
+   ],
+   "cols": 1
+  }
+ ]
+}

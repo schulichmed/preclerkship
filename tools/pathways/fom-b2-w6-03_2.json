@@ -1,0 +1,330 @@
+{
+ "name": "hereditary cancer overview",
+ "width": 834,
+ "title": "Hereditary cancer: red flags on a three-generation family history prompt referral for genetic counselling when a test could change management and the patient wants it; test an affected relative first, then unaffected adult relatives, never children for adult-onset conditions; a BRCA1/2 result leads to surveillance or prophylactic surgery for women and men",
+ "kinds": {
+  "aff_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "aff_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "aff_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "una_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "una_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "una_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "chi_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "chi_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "chi_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 424,
+   "w": 260,
+   "h": 214,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 302,
+   "y": 424,
+   "w": 260,
+   "h": 214,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 564,
+   "y": 424,
+   "w": 260,
+   "h": 504,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 256,
+   "h": 96,
+   "text": "REFER"
+  },
+  {
+   "x": 23,
+   "y": 532,
+   "h": 98,
+   "text": "TEST?"
+  },
+  {
+   "x": 23,
+   "y": 670,
+   "h": 250,
+   "text": "THEN"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 60,
+   "y": 10,
+   "w": 744,
+   "kind": "dark",
+   "title": "Cancer in the patient or family: could it be HEREDITARY, and WHO do I test?",
+   "lines": [
+    "most cancer is SPORADIC (one somatic cell, NOT passed on) or FAMILIAL (shared genes + environment)",
+    "take ≥ 3 generations on BOTH sides: cancer types, age at diagnosis, new primary or metastasis"
+   ]
+  },
+  {
+   "id": "g_her",
+   "x": 45,
+   "y": 138,
+   "w": 774,
+   "h": 78,
+   "kind": "plain",
+   "title": "A RED FLAG → suspect HEREDITARY (a mutation in EVERY cell, inherited)",
+   "lines": [
+    "early onset (breast < 50, ovarian < 60) · several primaries in one person · several relatives on ONE side · a family pattern · Ashkenazi Jewish ancestry (BRCA1/2)"
+   ]
+  },
+  {
+   "id": "p_ref",
+   "x": 45,
+   "y": 256,
+   "w": 774,
+   "h": 96,
+   "kind": "info",
+   "title": "REFER for genetic counselling if ALL of these",
+   "lines": [
+    "• personal or family history of cancer",
+    "• a test exists and its result can be interpreted",
+    "• the result could change management, AND the patient wants to know"
+   ]
+  },
+  {
+   "id": "aff_head_0_0",
+   "x": 45,
+   "y": 432,
+   "w": 250,
+   "h": 60,
+   "kind": "aff_h",
+   "title": "AFFECTED relative",
+   "lines": [
+    "has had the cancer"
+   ]
+  },
+  {
+   "id": "una_head_0_0",
+   "x": 307,
+   "y": 432,
+   "w": 250,
+   "h": 60,
+   "kind": "una_h",
+   "title": "UNAFFECTED adult relative",
+   "lines": []
+  },
+  {
+   "id": "chi_head_0_0",
+   "x": 569,
+   "y": 432,
+   "w": 250,
+   "h": 60,
+   "kind": "chi_h",
+   "title": "A CHILD",
+   "lines": []
+  },
+  {
+   "id": "aff_test_0_0",
+   "x": 45,
+   "y": 532,
+   "w": 250,
+   "h": 98,
+   "kind": "aff_t",
+   "title": "1 · Test FIRST",
+   "lines": [
+    "confirms the family's mutation"
+   ]
+  },
+  {
+   "id": "una_test_0_0",
+   "x": 307,
+   "y": 532,
+   "w": 250,
+   "h": 98,
+   "kind": "una_t",
+   "title": "2 · Offer testing only AFTER the mutation is confirmed",
+   "lines": [
+    "their choice: test or not, and who knows"
+   ]
+  },
+  {
+   "id": "chi_test_0_0",
+   "x": 569,
+   "y": 532,
+   "w": 250,
+   "h": 98,
+   "kind": "bad",
+   "title": "Do NOT test for ADULT-onset conditions",
+   "lines": []
+  },
+  {
+   "id": "chi_tx_0_0",
+   "x": 569,
+   "y": 670,
+   "w": 250,
+   "h": 250,
+   "kind": "chi_w",
+   "title": "Why not",
+   "lines": [
+    "• stigma",
+    "• more anxiety",
+    "• 'vulnerable child' parenting"
+   ]
+  },
+  {
+   "id": "span0_tx_0_0",
+   "x": 45,
+   "y": 670,
+   "w": 512,
+   "h": 60,
+   "kind": "plain",
+   "title": "BRCA1/2 POSITIVE: hereditary breast and ovarian cancer (HBOC)",
+   "lines": [
+    "surveillance or prophylactic surgery"
+   ]
+  },
+  {
+   "id": "span0_tx_1_0",
+   "x": 45.0,
+   "y": 752,
+   "w": 251.0,
+   "h": 168,
+   "kind": "ok",
+   "title": "WOMAN",
+   "lines": [
+    "• breast: HIGH-risk screening (see the ADULT SCREENING chart) or prophylactic mastectomy + reconstruction",
+    "• ovaries: prophylactic surgery at 35 (BRCA1), 40 (BRCA2)",
+    "• oral contraceptive over age 20"
+   ]
+  },
+  {
+   "id": "span0_tx_1_1",
+   "x": 306.0,
+   "y": 752,
+   "w": 251.0,
+   "h": 168,
+   "kind": "ok",
+   "title": "MAN",
+   "lines": [
+    "• clinical breast exam every 6–12 months",
+    "• from 45, yearly: digital rectal exam + prostate-specific antigen (PSA)",
+    "• yearly physical exam"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_her",
+   "path": "M432.0 88V113H432.0V138"
+  },
+  {
+   "from": "g_her",
+   "to": "p_ref"
+  },
+  {
+   "from": "span0_tx_0_0",
+   "to": "span0_tx_1_0",
+   "from_dx": -130.5
+  },
+  {
+   "from": "span0_tx_0_0",
+   "to": "span0_tx_1_1",
+   "from_dx": 130.5
+  },
+  {
+   "from": "aff_head_0_0",
+   "to": "aff_test_0_0"
+  },
+  {
+   "from": "aff_test_0_0",
+   "to": "span0_tx_0_0",
+   "to_dx": -131.0
+  },
+  {
+   "from": "p_ref",
+   "to": "aff_head_0_0",
+   "from_dx": -262
+  },
+  {
+   "from": "una_head_0_0",
+   "to": "una_test_0_0"
+  },
+  {
+   "from": "una_test_0_0",
+   "to": "span0_tx_0_0",
+   "to_dx": 131.0
+  },
+  {
+   "from": "p_ref",
+   "to": "una_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "chi_head_0_0",
+   "to": "chi_test_0_0"
+  },
+  {
+   "from": "chi_test_0_0",
+   "to": "chi_tx_0_0"
+  },
+  {
+   "from": "p_ref",
+   "to": "chi_head_0_0",
+   "from_dx": 262
+  }
+ ],
+ "panels": []
+}

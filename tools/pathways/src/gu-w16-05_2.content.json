@@ -1,0 +1,112 @@
+{
+ "name": "scrotal pain and masses overview",
+ "title": "Scrotal pain and masses decision chart: acute pain sorted by onset into testicular torsion (surgery within 6 to 8 hours) or epididymo-orchitis (antibiotics), with trauma pointing to a hematocele; a scrotal mass sorted on exam and ultrasound into hydrocele or inguinal hernia, varicocele, spermatocele or testicular cancer, each with what confirms it and what to do",
+ "col_w": 222,
+ "root": {
+  "title": "Scrotal pain or a lump: SUDDEN pain, or a MASS?",
+  "lines": [
+   "ask: onset (sudden or gradual) · worse with movement · urinary symptoms · trauma · previous episodes",
+   "the HISTORY separates torsion (surgery) from infection (antibiotics)"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ac",
+   "cols": [0, 1],
+   "title": "ACUTE PAIN: how did it START?",
+   "lines": ["after TRAUMA → hematocele (blood in the tunica vaginalis): ultrasound to rule out testicular RUPTURE"]
+  },
+  {
+   "id": "g_m",
+   "cols": [2, 5],
+   "title": "SUB-ACUTE pain or a MASS: exam + SCROTAL ULTRASOUND",
+   "lines": ["EVERY scrotal mass → urology: think of cancer first"]
+  }
+ ],
+ "sections": ["head", "pres", "inv"],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "CONFIRM → ACT"
+ },
+ "columns": [
+  {
+   "id": "tor",
+   "colour": "magenta",
+   "drop_label": "SUDDEN",
+   "head": [[["h", "Testicular torsion", ["SURGICAL EMERGENCY"]]]],
+   "pres": [
+    [["t", "SUDDEN, SEVERE pain", ["• adolescent or young adult", "• testis ROCK HARD (blood in, none out)", "• lies horizontal: free to twist"]]]
+   ],
+   "inv": [
+    [["w", "Doppler: NO blood flow", []]],
+    [["bad", "SURGERY within 6–8 HOURS", ["to save the testis"]]]
+   ]
+  },
+  {
+   "id": "epi",
+   "colour": "orange",
+   "drop_label": "GRADUAL · fever",
+   "head": [[["h", "Epididymo-orchitis", ["infection of epididymis + testis"]]]],
+   "pres": [
+    [["t", "GRADUAL pain", ["• fever", "• urinary symptoms, e.g. dysuria"]]]
+   ],
+   "inv": [
+    [["w", "Doppler: flow PRESENT", ["• white count ↑"]]],
+    [["ok", "ANTIBIOTICS", []]]
+   ]
+  },
+  {
+   "id": "hy",
+   "colour": "blue",
+   "drop_label": "fluid or bowel",
+   "head": [[["h", "Hydrocele or inguinal hernia", []]]],
+   "pres": [
+    [["t", "Smooth bulge, tense or fluctuant", ["• BABY: hydrocele open to the peritoneum", "• ADULT: fluid in a closed sac"]]]
+   ],
+   "inv": [
+    [["w", "PINCH the top of the scrotum", []]],
+    [["w", "CAN get above", ["HYDROCELE: light shines through"]], ["w", "CAN'T get above", ["indirect inguinal HERNIA"]]]
+   ]
+  },
+  {
+   "id": "var",
+   "colour": "purple",
+   "drop_label": "BAG OF WORMS",
+   "head": [[["h", "Varicocele", ["dilated scrotal veins"]]]],
+   "pres": [
+    [["t", "'Bag of worms'", ["veins visible on the scrotum"]]]
+   ],
+   "inv": [
+    [["w", "Usually LEFT", []]],
+    [["bad", "RIGHT-sided → image the retroperitoneum", []]]
+   ]
+  },
+  {
+   "id": "sp",
+   "colour": "olive",
+   "drop_label": "'third testicle'",
+   "head": [[["h", "Spermatocele", ["semen-filled sac off the epididymis"]]]],
+   "pres": [
+    [["t", "Feels like a THIRD TESTICLE", ["seldom painful, unless large"]]]
+   ],
+   "inv": [
+    [["w", "Scrotal ultrasound", []]]
+   ]
+  },
+  {
+   "id": "ca",
+   "colour": "brown",
+   "drop_label": "IN the testis",
+   "head": [[["h", "Testicular cancer", ["age 13–35"]]]],
+   "pres": [
+    [["t", "PAINLESS lump", ["• found in the shower", "• acute pain in a few · gynecomastia", "• RISK: undescended or atrophic testis, prior cancer"]]]
+   ],
+   "inv": [
+    [["w", "1 · Ultrasound + tumour MARKERS", ["• alpha-fetoprotein", "• beta-hCG (human chorionic gonadotropin)", "• lactate dehydrogenase"]]],
+    [["w", "2 · Computed tomography (CT) abdomen + chest: staging", []]],
+    [["warn", "3 · RADICAL ORCHIECTOMY", ["then surveillance, chemo or radiation by type and stage"]]],
+    [["ok", "Usually CURED", ["even when metastatic"]]]
+   ]
+  }
+ ]
+}

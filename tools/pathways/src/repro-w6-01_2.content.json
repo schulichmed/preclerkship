@@ -1,0 +1,120 @@
+{
+ "name": "antepartum hemorrhage overview",
+ "title": "Bleeding in the second or third trimester: after the mother and fetus are assessed and non-obstetric sources and labour are ruled out, pain and whose blood it is separate placental abruption (edge or concealed), placenta previa, the placenta accreta spectrum and vasa previa; each column gives presentation, numbered investigations and treatment in order, and a panel sets delivery by gestation",
+ "col_w": 250,
+ "root": {
+  "title": "Bleeding in the 2nd or 3rd trimester: is it PAINFUL, and WHOSE blood is it?",
+  "lines": [
+   "every one: airway, breathing, circulation for mom (oxygen + intravenous access if unstable) · non-stress test (NST) for the fetus",
+   "stat: complete blood count · international normalized ratio (INR), partial thromboplastin time (PTT), FIBRINOGEN · creatinine · group and screen",
+   "rule out first: non-obstetric (hemorrhoids, varices, bladder infection, stones → treat the cause) and LABOUR (a dilating cervix bleeds: 'show')"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_pain",
+   "cols": [0, 0],
+   "title": "PAINFUL, tender uterus",
+   "lines": ["maternal blood"]
+  },
+  {
+   "id": "g_painless",
+   "cols": [1, 2],
+   "title": "PAINLESS: where is the placenta?",
+   "lines": ["maternal blood · placental site from the anatomy scan"]
+  },
+  {
+   "id": "g_fetal",
+   "cols": [3, 3],
+   "title": "Small bleed, FETAL DISTRESS",
+   "lines": ["the blood is the FETUS's"]
+  }
+ ],
+ "sections": ["head", "pres", "inv", "tx"],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": ["pres"],
+ "columns": [
+  {
+   "id": "abr",
+   "colour": "teal",
+   "drop_label": "painful",
+   "head": [[["h", "Placental abruption", ["premature separation of the placenta from the uterus", "most at 35–38 weeks, any gestation"]]]],
+   "pres": [
+    [["t", "Painful active bleeding", ["• tender, sometimes RIGID uterus", "• 'unrelenting contractions'"]]],
+    [["w", "At the EDGE (most)", ["bleeds out · mild–moderate pain"]], ["w", "CONCEALED", ["NO bleeding · severe pain · fetal distress"]]]
+   ],
+   "inv": [
+    [["t", "1 · A diagnosis of EXCLUSION", ["once the other sources are ruled out"]]],
+    [["w", "2 · Trauma or fetal distress: Kleihauer-Betke", ["fetal blood in HER circulation"]]]
+   ],
+   "tx": [
+    [["warn", "Blood irritates the myometrium", ["• may go into LABOUR", "• may rupture the membranes"]]],
+    [["ok", "Deliver or wait by gestation", ["see the panel ↓"]]]
+   ]
+  },
+  {
+   "id": "prv",
+   "colour": "blue",
+   "drop_label": "over or near the os",
+   "head": [[["h", "Placenta previa", ["implanted over, or within 2 cm of, the internal os", "complete: covers it · marginal: within 2 cm"]]]],
+   "pres": [
+    [["t", "PAINLESS bleeding, mild or severe", ["• sentinel bleed at 26–28 weeks", "• fetus stable unless the mother is not"]]]
+   ],
+   "inv": [
+    [["w", "1 · Ultrasound: placenta to the os", ["found at the 18–20 week scan; many move clear by the 3rd trimester"]]],
+    [["bad", "ANY cervical change can start a SUDDEN, SEVERE bleed", []]]
+   ],
+   "tx": [
+    [["bad", "1 · Severe bleed: transfuse + clotting factors", ["no myometrium to clamp the vessels: shock, coagulopathy, hysterectomy"]]],
+    [["ok", "2 · COMPLETE → cesarean section", []]],
+    [["warn", "Marginal, > 1 cm from the os", ["vaginal birth in select cases"]]]
+   ]
+  },
+  {
+   "id": "acc",
+   "colour": "purple",
+   "drop_label": "previous cesarean",
+   "head": [[["h", "Placenta accreta spectrum", ["accreta · increta · percreta", "placenta INVADES the uterine wall"]]]],
+   "pres": [
+    [["t", "Bleeding the uterus cannot control", ["myometrium cannot contract over the invaded site"]]]
+   ],
+   "inv": [
+    [["t", "1 · Ask: previous cesarean or uterine surgery?", ["the scar lacks a full endometrial cover"]]]
+   ],
+   "tx": [
+    [["bad", "Almost always HYSTERECTOMY", ["unless the invasion is very focal"]]]
+   ]
+  },
+  {
+   "id": "vas",
+   "colour": "orange",
+   "drop_label": "fetal distress",
+   "head": [[["h", "Vasa previa", ["unprotected FETAL vessels cross the cervix or lie within 2 cm"]]]],
+   "pres": [
+    [["t", "Small bleed, FETAL DISTRESS", ["a tiny volume is a lot of the fetus's blood"]]],
+    [["w", "Known from the scan?", ["• type 1: velamentous cord insertion", "• type 2: succenturiate (extra) lobe"]]]
+   ],
+   "inv": [
+    [["t", "1 · Apt test", ["fetal blood in the VAGINAL bleed"]]]
+   ],
+   "tx": [
+    [["warn", "Fetal status drives delivery", ["see the panel ↓"]]]
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "title": "Every bleed: mother and fetus, then GESTATION decides",
+   "items": [
+    "≥ 35–36 weeks: DELIVER · induction if mother and fetus are reassuring, cesarean section if not",
+    "PRETERM + active bleed: birthing unit, continuous fetal monitoring · steroids + magnesium sulfate (see the PRETERM LABOUR chart) · neonatal intensive care unit (NICU) or tertiary consult if < 28–32 weeks · bloods every 4–6 h",
+    "PRETERM, stable, bleeding settled: antenatal ward · NST, growth + placental ultrasound, periodic bloods",
+    "the danger: CONSUMPTIVE COAGULOPATHY · the placental bed's huge flow uses up platelets and clotting factors"
+   ]
+  }
+ ]
+}

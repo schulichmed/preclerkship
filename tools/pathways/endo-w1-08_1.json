@@ -1,0 +1,28 @@
+{
+ "name": "glycemic goals of care in adults with diabetes pathway",
+ "title": "Setting a glycated hemoglobin (A1c) target by risk of hypoglycemia: 6.5% or less for selected type 2 diabetes, 7.0% or less for most, 7.1 to 8.5% for the frail, with what drives the tight and the relaxed targets",
+ "nodes": [
+  {"id": "A", "x": 250, "y": 10, "w": 420, "kind": "plain",
+   "title": "Setting a glycated hemoglobin (A1c) target", "lines": []},
+  {"id": "B", "x": 320, "y": 88, "w": 280, "kind": "plain",
+   "title": "Risk of hypoglycemia?", "lines": []},
+  {"id": "C", "x": 15, "y": 220, "w": 286, "h": 96, "kind": "ok",
+   "title": "A1c ≤ 6.5%", "lines": ["selected type 2 diabetes (T2DM)", "~wants cardiovascular/renal/eye benefit"]},
+  {"id": "D", "x": 317, "y": 220, "w": 286, "h": 96, "kind": "info",
+   "title": "A1c ≤ 7.0%", "lines": ["most type 1 diabetes (T1DM) and T2DM"]},
+  {"id": "E", "x": 619, "y": 220, "w": 286, "h": 96, "kind": "warn",
+   "title": "A1c 7.1–8.5%", "lines": ["frail / dementia / limited life expectancy"]},
+  {"id": "G", "x": 15, "y": 360, "w": 286, "kind": "plain",
+   "title": "Drivers:", "lines": ["young, long life expectancy, short duration, no structural complications yet, not on a drug that causes hypoglycemia"]},
+  {"id": "F", "x": 619, "y": 360, "w": 286, "kind": "plain",
+   "title": "Drivers:", "lines": ["recurrent severe hypoglycemia or unawareness, dementia, seizure disorder, frailty, falls, functional dependence, life expectancy under ~2 years"]}
+ ],
+ "edges": [
+  {"from": "A", "to": "B"},
+  {"from": "B", "to": "C", "from_dx": -100, "label": "LOW risk", "label_at": [190, 168]},
+  {"from": "B", "to": "D", "label": "Standard", "label_at": [500, 172]},
+  {"from": "B", "to": "E", "from_dx": 100, "label": "HIGH risk or limited benefit", "label_at": [800, 162]},
+  {"from": "C", "to": "G"},
+  {"from": "E", "to": "F"}
+ ]
+}

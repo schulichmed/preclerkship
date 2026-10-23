@@ -1,0 +1,315 @@
+{
+ "name": "hip fracture overview",
+ "width": 834,
+ "title": "Suspected hip fracture worked through the lecture's approach: is it a fracture, is the patient stable, why did they fall and why did the bone break, then surgery within 24 to 48 hours chosen by fracture type (femoral neck non-displaced or displaced, intertrochanteric or subtrochanteric), and the after-surgery plan to prevent complications, falls and the next fracture",
+ "kinds": {
+  "nd_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "nd_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "nd_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "dp_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dp_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "dp_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "it_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "it_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "it_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 578,
+   "w": 260,
+   "h": 286,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 302,
+   "y": 578,
+   "w": 260,
+   "h": 286,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 564,
+   "y": 578,
+   "w": 260,
+   "h": 286,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 256,
+   "h": 150,
+   "text": "WORKUP"
+  },
+  {
+   "x": 23,
+   "y": 706,
+   "h": 150,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 60,
+   "y": 10,
+   "w": 744,
+   "kind": "dark",
+   "title": "Suspected HIP FRACTURE (= a proximal femur fracture)",
+   "lines": [
+    "risk = whatever raises the risk of FALLS + whatever raises the risk of OSTEOPOROSIS",
+    "high suspicion in an older person even if the pain or the trauma was minimal"
+   ]
+  },
+  {
+   "id": "g1",
+   "x": 45,
+   "y": 138,
+   "w": 774,
+   "h": 78,
+   "kind": "plain",
+   "title": "1 · Is this a hip fracture?",
+   "lines": [
+    "sudden groin or lateral upper-thigh pain after a fall · worse moving and weight bearing",
+    "leg SHORTENED, EXTERNALLY ROTATED and ABDUCTED · cannot weight bear · painful log roll and straight leg raise"
+   ]
+  },
+  {
+   "id": "p1",
+   "x": 45,
+   "y": 256,
+   "w": 774,
+   "h": 150,
+   "kind": "info",
+   "title": "Work up in order",
+   "lines": [
+    "1 · X-ray: AP (front-to-back) pelvis + hip · negative but suspicion still high → CT",
+    "2 · STABLE? airway, breathing, circulation (young, high-energy) · pelvic fracture? · check distal pulses + nerves, especially the SCIATIC",
+    "3 · WHY did they fall? complete blood count (CBC), electrolytes, troponin · ECG (atrial fibrillation?) · chest X-ray (pneumonia?)",
+    "4 · WHY did the bone break? a pathologic fracture (bone tumour)? · a fragility fracture qualifies as OSTEOPOROSIS → start that workup"
+   ]
+  },
+  {
+   "id": "t1",
+   "x": 45,
+   "y": 446,
+   "w": 774,
+   "h": 60,
+   "kind": "plain",
+   "title": "5 · Plan: SURGERY within 24–48 hours for the VAST majority",
+   "lines": [
+    "quicker return to weight bearing · fewer complications of lying still · the X-ray's fracture type picks the operation ↓"
+   ]
+  },
+  {
+   "id": "nd_head_0_0",
+   "x": 45,
+   "y": 586,
+   "w": 250,
+   "h": 80,
+   "kind": "nd_h",
+   "title": "Femoral neck, NON-displaced",
+   "lines": [
+    "neck = subcapital"
+   ]
+  },
+  {
+   "id": "dp_head_0_0",
+   "x": 307,
+   "y": 586,
+   "w": 250,
+   "h": 80,
+   "kind": "dp_h",
+   "title": "Femoral neck, DISPLACED",
+   "lines": [
+    "the femoral head's blood supply is at stake"
+   ]
+  },
+  {
+   "id": "it_head_0_0",
+   "x": 569,
+   "y": 586,
+   "w": 250,
+   "h": 80,
+   "kind": "it_h",
+   "title": "Intertrochanteric or subtrochanteric",
+   "lines": [
+    "treated the same"
+   ]
+  },
+  {
+   "id": "nd_tx_0_0",
+   "x": 45,
+   "y": 706,
+   "w": 250,
+   "h": 150,
+   "kind": "ok",
+   "title": "Options, not steps",
+   "lines": [
+    "• arthroplasty, hemi or total",
+    "• maybe screws across the fracture (internal fixation)",
+    "• maybe NON-operative: only if VERY non-displaced in a poor surgical candidate"
+   ]
+  },
+  {
+   "id": "dp_tx_0_0",
+   "x": 307,
+   "y": 706,
+   "w": 250,
+   "h": 150,
+   "kind": "bad",
+   "title": "ARTHROPLASTY, hemi or total",
+   "lines": [
+    "• hemi = femoral head only",
+    "• total = head + acetabulum",
+    "• surgery is REQUIRED to preserve the blood supply"
+   ]
+  },
+  {
+   "id": "it_tx_0_0",
+   "x": 569,
+   "y": 706,
+   "w": 250,
+   "h": 150,
+   "kind": "ok",
+   "title": "Intramedullary nail",
+   "lines": [
+    "essentially all are treated surgically"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g1",
+   "path": "M432.0 88V113H432.0V138"
+  },
+  {
+   "from": "g1",
+   "to": "p1"
+  },
+  {
+   "from": "p1",
+   "to": "t1",
+   "from_dx": 0
+  },
+  {
+   "from": "nd_head_0_0",
+   "to": "nd_tx_0_0"
+  },
+  {
+   "from": "t1",
+   "to": "nd_head_0_0",
+   "from_dx": -262,
+   "label": "neck, not displaced",
+   "label_at": [
+    170.0,
+    546
+   ]
+  },
+  {
+   "from": "dp_head_0_0",
+   "to": "dp_tx_0_0"
+  },
+  {
+   "from": "t1",
+   "to": "dp_head_0_0",
+   "from_dx": 0,
+   "label": "neck, displaced",
+   "label_at": [
+    432.0,
+    546
+   ]
+  },
+  {
+   "from": "it_head_0_0",
+   "to": "it_tx_0_0"
+  },
+  {
+   "from": "t1",
+   "to": "it_head_0_0",
+   "from_dx": 262,
+   "label": "below the neck",
+   "label_at": [
+    694.0,
+    546
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 890,
+   "w": 380,
+   "title": "6 · After surgery: prevent the harms of lying still",
+   "items": [
+    "venous thromboembolism (VTE) is common → low-molecular-weight heparin (LMWH) for 14–30 days",
+    "pneumonia: a common cause of death",
+    "delirium · muscle atrophy · infection (urinary) · bedsores"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 439,
+   "y": 890,
+   "w": 380,
+   "title": "Regain function and stop the next one",
+   "items": [
+    "EARLY MOBILIZATION + interdisciplinary rehab",
+    "falls: optimize illnesses, the home, occupational therapy and physiotherapy, gait aids",
+    "bones: vitamin D, calcium, secondary osteoporosis workup, antiresorptive"
+   ],
+   "cols": 1
+  }
+ ]
+}

@@ -1,0 +1,449 @@
+{
+ "name": "delirium overview",
+ "width": 870,
+ "title": "Delirium decision chart: a 4-AT of 4 or more means possible delirium, then hunt every trigger (DIMES + 3 Ps): drugs and the environment, acute illness, and pee, poo and pain that the patient may not report; each column gives what to look for, how to find it and how to treat it",
+ "kinds": {
+  "de_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "de_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "de_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ims_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ims_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ims_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ppp_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ppp_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "ppp_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 306,
+   "w": 272,
+   "h": 958,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 314,
+   "y": 306,
+   "w": 272,
+   "h": 958,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 588,
+   "y": 306,
+   "w": 272,
+   "h": 958,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 396,
+   "h": 232,
+   "text": "LOOK FOR"
+  },
+  {
+   "x": 23,
+   "y": 668,
+   "h": 142,
+   "text": "FIND IT BY"
+  },
+  {
+   "x": 23,
+   "y": 850,
+   "h": 406,
+   "text": "TREAT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 70,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Acutely confused older adult: DELIRIUM? Then FIND THE TRIGGER",
+   "lines": [
+    "delirium = an ACUTE, FLUCTUATING change in attention and awareness",
+    "the QUIET one is missed: HYPOACTIVE (drowsy, lethargic) is the commonest, mistaken for DEPRESSION",
+    "screen with the 4-AT: < 2 minutes, no special training"
+   ]
+  },
+  {
+   "id": "g_4",
+   "x": 45,
+   "y": 156,
+   "w": 810,
+   "h": 78,
+   "kind": "plain",
+   "title": "4-AT ≥ 4: POSSIBLE DELIRIUM → hunt EVERY trigger (DIMES + 3 Ps)",
+   "lines": [
+    "• clearly abnormal ALERTNESS, or an ACUTE change / fluctuation: 4 points EACH",
+    "• 1–3: possible cognitive impairment (COGNITIVE DECLINE chart) · 0: neither"
+   ]
+  },
+  {
+   "id": "de_head_0_0",
+   "x": 45,
+   "y": 314,
+   "w": 262,
+   "h": 42,
+   "kind": "de_h",
+   "title": "Drugs · Environment",
+   "lines": []
+  },
+  {
+   "id": "ims_head_0_0",
+   "x": 319,
+   "y": 314,
+   "w": 262,
+   "h": 42,
+   "kind": "ims_h",
+   "title": "Infection · Metabolic · Structural",
+   "lines": []
+  },
+  {
+   "id": "ppp_head_0_0",
+   "x": 593,
+   "y": 314,
+   "w": 262,
+   "h": 42,
+   "kind": "ppp_h",
+   "title": "Pee · Poo · Pain",
+   "lines": []
+  },
+  {
+   "id": "de_look_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 262,
+   "h": 114,
+   "kind": "de_t",
+   "title": "Drugs",
+   "lines": [
+    "• benzodiazepines, anticholinergics, antihistamines",
+    "• narcotics, antipsychotics, alcohol",
+    "• polypharmacy"
+   ]
+  },
+  {
+   "id": "de_look_1_0",
+   "x": 45,
+   "y": 532,
+   "w": 262,
+   "h": 96,
+   "kind": "de_w",
+   "title": "Environment",
+   "lines": [
+    "• glasses, hearing aids out of reach",
+    "• noise, light, broken sleep",
+    "• restraints, immobility"
+   ]
+  },
+  {
+   "id": "ims_look_0_0",
+   "x": 319,
+   "y": 396,
+   "w": 262,
+   "h": 114,
+   "kind": "ims_t",
+   "title": "Acute illness",
+   "lines": [
+    "• infection",
+    "• sodium or calcium ↓ or ↑, glucose ↑",
+    "• central nervous system event"
+   ]
+  },
+  {
+   "id": "ims_look_1_0",
+   "x": 319,
+   "y": 532,
+   "w": 262,
+   "h": 96,
+   "kind": "warn",
+   "title": "It may show ONLY as delirium",
+   "lines": [
+    "atypical presentations: see the FRAILTY AND FALLS chart"
+   ]
+  },
+  {
+   "id": "ppp_look_0_0",
+   "x": 593,
+   "y": 396,
+   "w": 262,
+   "h": 232,
+   "kind": "ppp_t",
+   "title": "What they can't report reliably",
+   "lines": [
+    "• urinary tract infection (UTI), retention",
+    "• constipation, impaction",
+    "• uncontrolled pain, or its medication"
+   ]
+  },
+  {
+   "id": "de_find_0_0",
+   "x": 45,
+   "y": 668,
+   "w": 262,
+   "h": 142,
+   "kind": "de_w",
+   "title": "Medication + alcohol history",
+   "lines": []
+  },
+  {
+   "id": "ims_find_0_0",
+   "x": 319,
+   "y": 668,
+   "w": 262,
+   "h": 142,
+   "kind": "ims_w",
+   "title": "Labs",
+   "lines": [
+    "• complete blood count (CBC), electrolytes (extended), glucose",
+    "• creatinine, urea, creatine kinase",
+    "• liver tests, thyroid-stimulating hormone (TSH), B12"
+   ]
+  },
+  {
+   "id": "ppp_find_0_0",
+   "x": 593,
+   "y": 668,
+   "w": 262,
+   "h": 78,
+   "kind": "warn",
+   "title": "COLLATERAL history",
+   "lines": [
+    "caregiver, personal support worker, nursing"
+   ]
+  },
+  {
+   "id": "ppp_find_1_0",
+   "x": 593,
+   "y": 768,
+   "w": 262,
+   "h": 42,
+   "kind": "ppp_w",
+   "title": "Examine even if they deny it",
+   "lines": []
+  },
+  {
+   "id": "de_tx_0_0",
+   "x": 45,
+   "y": 850,
+   "w": 262,
+   "h": 60,
+   "kind": "ok",
+   "title": "STOP offending drugs",
+   "lines": [
+    "lower psychoactive doses"
+   ]
+  },
+  {
+   "id": "de_tx_1_0",
+   "x": 45,
+   "y": 932,
+   "w": 262,
+   "h": 114,
+   "kind": "ok",
+   "title": "Fix the environment",
+   "lines": [
+    "• glasses + hearing aids, reorientation",
+    "• sleep: less noise and light, ear plugs",
+    "• mobilize early, fewest restraints, family at the bedside"
+   ]
+  },
+  {
+   "id": "de_tx_2_0",
+   "x": 45,
+   "y": 1068,
+   "w": 262,
+   "h": 188,
+   "kind": "warn",
+   "title": "Drugs for SYMPTOMS: NOT evidence based",
+   "lines": [
+    "• hyperactive: antipsychotic first; watch the QT; avoid in seizures, Parkinson's, Lewy body dementia",
+    "• alcohol withdrawal → a benzodiazepine instead",
+    "• anticholinergic toxidrome → physostigmine"
+   ]
+  },
+  {
+   "id": "ims_tx_0_0",
+   "x": 319,
+   "y": 850,
+   "w": 262,
+   "h": 182,
+   "kind": "ok",
+   "title": "Treat each trigger",
+   "lines": []
+  },
+  {
+   "id": "ims_tx_1_0",
+   "x": 319,
+   "y": 1054,
+   "w": 262,
+   "h": 202,
+   "kind": "warn",
+   "title": "Slow to clear? Hunt for NEW triggers",
+   "lines": []
+  },
+  {
+   "id": "ppp_tx_0_0",
+   "x": 593,
+   "y": 850,
+   "w": 262,
+   "h": 406,
+   "kind": "ok",
+   "title": "Treat each one",
+   "lines": [
+    "keep them hydrated and fed"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_4",
+   "path": "M450.0 106V131H450.0V156"
+  },
+  {
+   "from": "de_look_0_0",
+   "to": "de_look_1_0"
+  },
+  {
+   "from": "ims_look_0_0",
+   "to": "ims_look_1_0"
+  },
+  {
+   "from": "ppp_find_0_0",
+   "to": "ppp_find_1_0"
+  },
+  {
+   "from": "de_tx_0_0",
+   "to": "de_tx_1_0"
+  },
+  {
+   "from": "de_tx_1_0",
+   "to": "de_tx_2_0"
+  },
+  {
+   "from": "ims_tx_0_0",
+   "to": "ims_tx_1_0"
+  },
+  {
+   "from": "de_head_0_0",
+   "to": "de_look_0_0"
+  },
+  {
+   "from": "de_look_1_0",
+   "to": "de_find_0_0"
+  },
+  {
+   "from": "de_find_0_0",
+   "to": "de_tx_0_0"
+  },
+  {
+   "from": "g_4",
+   "to": "de_head_0_0",
+   "from_dx": -274,
+   "label": "D + E: what we gave or changed",
+   "label_at": [
+    176.0,
+    274
+   ]
+  },
+  {
+   "from": "ims_head_0_0",
+   "to": "ims_look_0_0"
+  },
+  {
+   "from": "ims_look_1_0",
+   "to": "ims_find_0_0"
+  },
+  {
+   "from": "ims_find_0_0",
+   "to": "ims_tx_0_0"
+  },
+  {
+   "from": "g_4",
+   "to": "ims_head_0_0",
+   "from_dx": 0,
+   "label": "I, M, S: acute illness",
+   "label_at": [
+    450.0,
+    274
+   ]
+  },
+  {
+   "from": "ppp_head_0_0",
+   "to": "ppp_look_0_0"
+  },
+  {
+   "from": "ppp_look_0_0",
+   "to": "ppp_find_0_0"
+  },
+  {
+   "from": "ppp_find_1_0",
+   "to": "ppp_tx_0_0"
+  },
+  {
+   "from": "g_4",
+   "to": "ppp_head_0_0",
+   "from_dx": 274,
+   "label": "3 Ps: they may not say",
+   "label_at": [
+    724.0,
+    274
+   ]
+  }
+ ],
+ "panels": []
+}

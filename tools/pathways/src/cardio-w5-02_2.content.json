@@ -1,0 +1,365 @@
+{
+ "name": "bradycardia overview",
+ "title": "Bradycardia decision chart: a battery problem (sinus node dysfunction, too few P waves), a wiring problem (first-degree, Mobitz I, Mobitz II or complete AV block, P waves without QRS) or bundle branch block; each column gives the ECG, the risk, and whether to pace for mortality, for symptoms, or not at all",
+ "col_w": 214,
+ "root": {
+  "title": "Bradycardia (< 60 bpm): a BATTERY or a WIRING problem? Then: can it KILL, or only cause SYMPTOMS?",
+  "lines": [
+   "UNSTABLE now: IV atropine or IV isoproterenol, then temporary pacing (transcutaneous pads or a transvenous wire)",
+   "the long-term treatment is a permanent PACEMAKER"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_bat",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "BATTERY: too few P waves",
+   "lines": [
+    "sinus node dysfunction"
+   ]
+  },
+  {
+   "id": "g_wire",
+   "cols": [
+    1,
+    4
+   ],
+   "title": "WIRING: P waves WITHOUT a QRS, atrioventricular (AV) block",
+   "lines": [
+    "the LOWER the block, the worse the prognosis"
+   ]
+  },
+  {
+   "id": "g_bbb",
+   "cols": [
+    5,
+    5
+   ],
+   "title": "P = QRS, but the QRS is WIDE",
+   "lines": [
+    "> 120 ms"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "ecg",
+  "risk",
+  "tx"
+ ],
+ "row_names": {
+  "ecg": "ECG",
+  "risk": "RISK",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "snd",
+   "colour": "teal",
+   "head": [
+    [
+     [
+      "h",
+      "Sinus node dysfunction",
+      [
+       "degenerative, more common with age"
+      ]
+     ]
+    ]
+   ],
+   "ecg": [
+    [
+     [
+      "t",
+      "Slow or missing P waves",
+      [
+       "• sinus bradycardia, no rise with exercise",
+       "• sinus pauses or arrest",
+       "• tachy-brady: a pause as atrial fibrillation (AF) stops"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "w",
+      "No sudden death",
+      [
+       "fatigue, exertional limits, (pre)syncope"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "SYMPTOMS = sick sinus syndrome",
+      [
+       "→ pacemaker"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "No symptoms → no treatment",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "d1",
+   "colour": "olive",
+   "head": [
+    [
+     [
+      "h",
+      "1st degree AV block",
+      [
+       "a delay, not a true block"
+      ]
+     ]
+    ]
+   ],
+   "ecg": [
+    [
+     [
+      "t",
+      "PR > 200 ms",
+      [
+       "every P wave conducts"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "w",
+      "Benign",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "No treatment",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "m1",
+   "colour": "blue",
+   "head": [
+    [
+     [
+      "h",
+      "2nd degree, Mobitz I (Wenckebach)",
+      [
+       "at the AV node; vagal tone, even asleep"
+      ]
+     ]
+    ]
+   ],
+   "ecg": [
+    [
+     [
+      "t",
+      "PR LENGTHENS, then a QRS drops",
+      [
+       "• group beating",
+       "• short PR again after the drop"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "w",
+      "Relatively benign",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "No treatment",
+      [
+       "unless symptomatic → pacemaker"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "m2",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "2nd degree, Mobitz II",
+      [
+       "BELOW the AV node"
+      ]
+     ]
+    ]
+   ],
+   "ecg": [
+    [
+     [
+      "t",
+      "FIXED PR, then a QRS drops",
+      [
+       "~2:1 block: cannot tell type I from II"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "bad",
+      "Progresses to complete block",
+      [
+       "torsades de pointes or asystole: SUDDEN DEATH"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "PACEMAKER, even with no symptoms",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "d3",
+   "colour": "magenta",
+   "head": [
+    [
+     [
+      "h",
+      "3rd degree (complete) AV block",
+      [
+       "NO P wave conducts"
+      ]
+     ]
+    ]
+   ],
+   "ecg": [
+    [
+     [
+      "t",
+      "AV DISSOCIATION",
+      [
+       "• regular QRS, PR varies",
+       "• AF with a REGULAR QRS = complete block"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "w",
+      "Junctional escape",
+      [
+       "narrow, > 40 bpm"
+      ]
+     ],
+     [
+      "bad",
+      "Ventricular escape",
+      [
+       "wide, < 40 bpm"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "PACEMAKER, even with no symptoms",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "bb",
+   "colour": "purple",
+   "head": [
+    [
+     [
+      "h",
+      "Bundle branch block (BBB)",
+      [
+       "the other bundle still conducts"
+      ]
+     ]
+    ]
+   ],
+   "ecg": [
+    [
+     [
+      "t",
+      "Which bundle? Look at V1",
+      [
+       "• LEFT (LBBB): NEGATIVE in V1",
+       "• RIGHT (RBBB): POSITIVE, rabbit ears"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Fascicular block: the axis",
+      [
+       "• left anterior: LEFT axis",
+       "• left posterior: RIGHT axis"
+      ]
+     ]
+    ]
+   ],
+   "risk": [
+    [
+     [
+      "warn",
+      "A warning sign",
+      [
+       "degenerative disease that may become complete block"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "No treatment",
+      []
+     ]
+    ]
+   ]
+  }
+ ]
+}

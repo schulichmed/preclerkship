@@ -1,0 +1,660 @@
+{
+ "name": "drug response overview",
+ "width": 1544,
+ "title": "Prescribing for this patient: after the WHO steps, verify the standard treatment suits them; age at both ends of life, kidney and liver disease, other drugs and food, and genes, race and sex each change how much drug reaches the target or how it responds, and each column gives what changes and what to do",
+ "kinds": {
+  "ch_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ch_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ch_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "old_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "old_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "old_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "kid_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "kid_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "kid_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "liv_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "liv_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "liv_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "int_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "int_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "int_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "gen_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gen_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "gen_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 306,
+   "w": 238,
+   "h": 798,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 280,
+   "y": 306,
+   "w": 238,
+   "h": 798,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 548,
+   "y": 306,
+   "w": 238,
+   "h": 798,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 788,
+   "y": 306,
+   "w": 238,
+   "h": 798,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1056,
+   "y": 306,
+   "w": 238,
+   "h": 798,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1296,
+   "y": 306,
+   "w": 238,
+   "h": 798,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 432,
+   "h": 252,
+   "text": "WHAT CHANGES"
+  },
+  {
+   "x": 23,
+   "y": 724,
+   "h": 372,
+   "text": "DO · AVOID"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 407,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Prescribing for THIS patient: what changes the DRUG or the DOSE?",
+   "lines": [
+    "World Health Organization (WHO) steps: 1 define the problem → 2 the goal, WITH the patient → 3a the standard treatment (number needed to treat low, to harm high) → 3b VERIFY it suits them → 4 start → 5 inform + warn → 6 monitor, stop",
+    "verify: every other medication + supplement · allergies (what happened?) · past history · cost, access · does the patient AGREE?"
+   ]
+  },
+  {
+   "id": "g_age",
+   "x": 45,
+   "y": 174,
+   "w": 468,
+   "h": 60,
+   "kind": "plain",
+   "title": "AGE: both ends of life",
+   "lines": [
+    "healthy adults: usually the standard dose"
+   ]
+  },
+  {
+   "id": "g_org",
+   "x": 553,
+   "y": 174,
+   "w": 468,
+   "h": 60,
+   "kind": "plain",
+   "title": "ELIMINATION: kidney or liver disease?",
+   "lines": [
+    "may need a dose change + monitoring"
+   ]
+  },
+  {
+   "id": "g_oth",
+   "x": 1061,
+   "y": 174,
+   "w": 468,
+   "h": 60,
+   "kind": "plain",
+   "title": "What ELSE changes the response?",
+   "lines": [
+    "the same dose, a different effect"
+   ]
+  },
+  {
+   "id": "ch_head_0_0",
+   "x": 45,
+   "y": 314,
+   "w": 228,
+   "h": 78,
+   "kind": "ch_h",
+   "title": "Child",
+   "lines": [
+    "few child-sized formulations"
+   ]
+  },
+  {
+   "id": "old_head_0_0",
+   "x": 285,
+   "y": 314,
+   "w": 228,
+   "h": 78,
+   "kind": "old_h",
+   "title": "Older adult",
+   "lines": [
+    "polypharmacy: 5–10+ medications"
+   ]
+  },
+  {
+   "id": "kid_head_0_0",
+   "x": 553,
+   "y": 314,
+   "w": 228,
+   "h": 78,
+   "kind": "kid_h",
+   "title": "Kidney disease",
+   "lines": [
+    "glomerular filtration rate (GFR) falls"
+   ]
+  },
+  {
+   "id": "liv_head_0_0",
+   "x": 793,
+   "y": 314,
+   "w": 228,
+   "h": 78,
+   "kind": "liv_h",
+   "title": "Liver disease",
+   "lines": [
+    "severity: Child-Turcotte-Pugh"
+   ]
+  },
+  {
+   "id": "int_head_0_0",
+   "x": 1061,
+   "y": 314,
+   "w": 228,
+   "h": 78,
+   "kind": "int_h",
+   "title": "Other drugs · food",
+   "lines": [
+    "risk: polypharmacy, several prescribers, narrow window"
+   ]
+  },
+  {
+   "id": "gen_head_0_0",
+   "x": 1301,
+   "y": 314,
+   "w": 228,
+   "h": 78,
+   "kind": "gen_h",
+   "title": "Genes · race · sex",
+   "lines": []
+  },
+  {
+   "id": "ch_why_0_0",
+   "x": 45,
+   "y": 432,
+   "w": 228,
+   "h": 252,
+   "kind": "ch_t",
+   "title": "Immature at birth",
+   "lines": [
+    "• kidney: adult GFR by 6–12 months",
+    "• liver enzymes: past adult by 3–6 years",
+    "• skin absorbs MORE (big surface area)"
+   ]
+  },
+  {
+   "id": "old_why_0_0",
+   "x": 285,
+   "y": 432,
+   "w": 228,
+   "h": 252,
+   "kind": "old_t",
+   "title": "Clearance ↓, sensitivity ↑",
+   "lines": [
+    "• benzodiazepines, anticholinergics: falls, confusion",
+    "• alpha-1 blockers: orthostatic drop",
+    "• digoxin"
+   ]
+  },
+  {
+   "id": "kid_why_0_0",
+   "x": 553,
+   "y": 432,
+   "w": 228,
+   "h": 252,
+   "kind": "kid_t",
+   "title": "Renally cleared drugs",
+   "lines": [
+    "adjust by CREATININE CLEARANCE, e.g. penicillin:"
+   ]
+  },
+  {
+   "id": "liv_why_0_0",
+   "x": 793,
+   "y": 432,
+   "w": 228,
+   "h": 252,
+   "kind": "liv_t",
+   "title": "Hepatic elimination ↓",
+   "lines": [
+    "• albumin ↓: more drug in tissues",
+    "• ascites, edema store some drugs"
+   ]
+  },
+  {
+   "id": "int_why_0_0",
+   "x": 1061,
+   "y": 432,
+   "w": 228,
+   "h": 134,
+   "kind": "int_t",
+   "title": "INHIBITOR → level ↑ → TOXIC",
+   "lines": [
+    "• azoles, macrolides, protease inhibitors",
+    "• grapefruit (CYP3A4, 3 days) → statin myopathy"
+   ]
+  },
+  {
+   "id": "int_why_1_0",
+   "x": 1061,
+   "y": 588,
+   "w": 228,
+   "h": 96,
+   "kind": "int_t",
+   "title": "INDUCER → level ↓ → FAILS",
+   "lines": [
+    "• rifampin, phenytoin, carbamazepine, St John's wort",
+    "~reversed for a PRODRUG"
+   ]
+  },
+  {
+   "id": "gen_why_0_0",
+   "x": 1301,
+   "y": 432,
+   "w": 228,
+   "h": 252,
+   "kind": "gen_t",
+   "title": "Warfarin: 16-fold dose range",
+   "lines": [
+    "VKORC1 + CYP2C9 variants · narrow window"
+   ]
+  },
+  {
+   "id": "ch_act_0_0",
+   "x": 45,
+   "y": 724,
+   "w": 228,
+   "h": 120,
+   "kind": "ok",
+   "title": "Dose by AGE and WEIGHT",
+   "lines": []
+  },
+  {
+   "id": "ch_act_1_0",
+   "x": 45,
+   "y": 866,
+   "w": 228,
+   "h": 230,
+   "kind": "bad",
+   "title": "AVOID: child-specific reactions",
+   "lines": [
+    "• aspirin → Reye syndrome",
+    "• chloramphenicol → grey baby",
+    "• sulfonamides → kernicterus",
+    "• tetracycline → stained teeth",
+    "• valproic acid < 4 years → liver"
+   ]
+  },
+  {
+   "id": "old_act_0_0",
+   "x": 285,
+   "y": 724,
+   "w": 228,
+   "h": 62,
+   "kind": "ok",
+   "title": "Start LOWER · monitor renal function",
+   "lines": []
+  },
+  {
+   "id": "old_act_1_0",
+   "x": 285,
+   "y": 808,
+   "w": 228,
+   "h": 134,
+   "kind": "ok",
+   "title": "Review at least YEARLY + at every transition",
+   "lines": [
+    "• bring the bottles",
+    "• duplicates, prescribing CASCADES",
+    "• deprescribe, simplify"
+   ]
+  },
+  {
+   "id": "old_act_2_0",
+   "x": 285,
+   "y": 964,
+   "w": 228,
+   "h": 132,
+   "kind": "warn",
+   "title": "Before a NEW drug, ask",
+   "lines": [
+    "• am I treating another drug's effect?",
+    "• does it fit frailty + goals?",
+    "• can one drug treat two conditions?"
+   ]
+  },
+  {
+   "id": "kid_act_0_0",
+   "x": 553,
+   "y": 724,
+   "w": 228,
+   "h": 109,
+   "kind": "ok",
+   "title": "> 50 mL/min: usual dose",
+   "lines": []
+  },
+  {
+   "id": "kid_act_1_0",
+   "x": 553,
+   "y": 855,
+   "w": 228,
+   "h": 109,
+   "kind": "warn",
+   "title": "10–50: 75%",
+   "lines": []
+  },
+  {
+   "id": "kid_act_2_0",
+   "x": 553,
+   "y": 986,
+   "w": 228,
+   "h": 109,
+   "kind": "bad",
+   "title": "< 10: 20–50%",
+   "lines": []
+  },
+  {
+   "id": "liv_act_0_0",
+   "x": 793,
+   "y": 724,
+   "w": 228,
+   "h": 372,
+   "kind": "warn",
+   "title": "Dosing is IMPRECISE: guide it by RESPONSE",
+   "lines": []
+  },
+  {
+   "id": "int_act_0_0",
+   "x": 1061,
+   "y": 724,
+   "w": 228,
+   "h": 372,
+   "kind": "bad",
+   "title": "AVOID these pairs",
+   "lines": [
+    "• angiotensin-converting enzyme (ACE) inhibitor + potassium-sparing diuretic → hyperkalemia",
+    "• monoamine oxidase inhibitor (MAOI) + cheese or cold medicine → hypertension",
+    "• two antithrombotics → gastrointestinal bleed",
+    "• warfarin + leafy greens → effect ↓"
+   ]
+  },
+  {
+   "id": "gen_act_0_0",
+   "x": 1301,
+   "y": 724,
+   "w": 228,
+   "h": 193,
+   "kind": "gen_w",
+   "title": "Race may be considered",
+   "lines": [
+    "• rosuvastatin: Asian 2× levels → rhabdomyolysis",
+    "• ACE inhibitor alone: less effective in Black patients",
+    "• tacrolimus: 2× dose in African Americans"
+   ]
+  },
+  {
+   "id": "gen_act_1_0",
+   "x": 1301,
+   "y": 939,
+   "w": 228,
+   "h": 157,
+   "kind": "gen_w",
+   "title": "Women",
+   "lines": [
+    "• zolpidem: next-day sedation, impaired driving",
+    "• more QT prolongation, statin myopathy, ACE-inhibitor cough"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_age",
+   "path": "M787.0 124V149H279.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_org",
+   "path": "M787.0 124V149H787.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_oth",
+   "path": "M787.0 124V149H1295.0V174"
+  },
+  {
+   "from": "int_why_0_0",
+   "to": "int_why_1_0"
+  },
+  {
+   "from": "ch_act_0_0",
+   "to": "ch_act_1_0"
+  },
+  {
+   "from": "old_act_0_0",
+   "to": "old_act_1_0"
+  },
+  {
+   "from": "old_act_1_0",
+   "to": "old_act_2_0"
+  },
+  {
+   "from": "kid_act_0_0",
+   "to": "kid_act_1_0"
+  },
+  {
+   "from": "kid_act_1_0",
+   "to": "kid_act_2_0"
+  },
+  {
+   "from": "gen_act_0_0",
+   "to": "gen_act_1_0"
+  },
+  {
+   "from": "ch_head_0_0",
+   "to": "ch_why_0_0"
+  },
+  {
+   "from": "ch_why_0_0",
+   "to": "ch_act_0_0"
+  },
+  {
+   "from": "g_age",
+   "to": "ch_head_0_0",
+   "from_dx": -120
+  },
+  {
+   "from": "old_head_0_0",
+   "to": "old_why_0_0"
+  },
+  {
+   "from": "old_why_0_0",
+   "to": "old_act_0_0"
+  },
+  {
+   "from": "g_age",
+   "to": "old_head_0_0",
+   "from_dx": 120
+  },
+  {
+   "from": "kid_head_0_0",
+   "to": "kid_why_0_0"
+  },
+  {
+   "from": "kid_why_0_0",
+   "to": "kid_act_0_0"
+  },
+  {
+   "from": "g_org",
+   "to": "kid_head_0_0",
+   "from_dx": -120
+  },
+  {
+   "from": "liv_head_0_0",
+   "to": "liv_why_0_0"
+  },
+  {
+   "from": "liv_why_0_0",
+   "to": "liv_act_0_0"
+  },
+  {
+   "from": "g_org",
+   "to": "liv_head_0_0",
+   "from_dx": 120
+  },
+  {
+   "from": "int_head_0_0",
+   "to": "int_why_0_0"
+  },
+  {
+   "from": "int_why_1_0",
+   "to": "int_act_0_0"
+  },
+  {
+   "from": "g_oth",
+   "to": "int_head_0_0",
+   "from_dx": -120
+  },
+  {
+   "from": "gen_head_0_0",
+   "to": "gen_why_0_0"
+  },
+  {
+   "from": "gen_why_0_0",
+   "to": "gen_act_0_0"
+  },
+  {
+   "from": "g_oth",
+   "to": "gen_head_0_0",
+   "from_dx": 120
+  }
+ ],
+ "panels": []
+}

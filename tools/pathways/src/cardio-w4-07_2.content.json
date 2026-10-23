@@ -1,0 +1,475 @@
+{
+ "name": "congenital heart disease overview",
+ "title": "Congenital heart disease decision chart: pink or blue, then pulmonary blood flow, sorts the lesions into left-to-right shunts (atrial and ventricular septal defects, patent ductus), obstruction (coarctation), right-to-left shunts (tetralogy of Fallot), separate circulations (transposition) and mixing lesions (truncus, TAPVR), each with its presentation, exam and treatment",
+ "col_w": 214,
+ "root": {
+  "title": "Suspected congenital heart disease (CHD): is the child PINK or BLUE? Then how much PULMONARY BLOOD FLOW (PBF)?",
+  "lines": [
+   "infant in heart failure: poor feeding, sweating with feeds, failure to thrive, tachypnea, big liver",
+   "ECG + chest X-ray: lung markings show the flow  →  ECHO is usually definitive"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_pink",
+   "cols": [
+    0,
+    3
+   ],
+   "title": "PINK: acyanotic",
+   "lines": [
+    "ALWAYS feel the femoral pulses"
+   ]
+  },
+  {
+   "id": "g_blue",
+   "cols": [
+    4,
+    6
+   ],
+   "title": "BLUE: is it the HEART? Hyperoxia test",
+   "lines": [
+    "PaO2 stays < 100–150 on 100% oxygen → cardiac (lungs: rises to ~600)",
+    "every cyanotic lesion needs SURGERY to survive"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_lr",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "↑ PBF: LEFT-TO-RIGHT shunt",
+   "lines": [
+    "the SIZE of the hole decides the symptoms"
+   ]
+  },
+  {
+   "id": "t_ob",
+   "cols": [
+    3,
+    3
+   ],
+   "title": "NORMAL PBF: OBSTRUCTION",
+   "lines": [
+    "no shunt"
+   ]
+  },
+  {
+   "id": "t_lo",
+   "cols": [
+    4,
+    4
+   ],
+   "title": "↓ PBF: RIGHT-TO-LEFT",
+   "lines": [
+    "also tricuspid atresia: staged single-ventricle palliation"
+   ]
+  },
+  {
+   "id": "t_hi",
+   "cols": [
+    5,
+    6
+   ],
+   "title": "Normal or ↑ PBF",
+   "lines": [
+    "separate circuits, or mixing"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "clue",
+  "tx"
+ ],
+ "row_names": {
+  "clue": "PRESENTS AS",
+  "tx": "COURSE & TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "asd",
+   "colour": "teal",
+   "drop_from": "t_lr",
+   "drop_label": "atria",
+   "head": [
+    [
+     [
+      "h",
+      "Atrial septal defect (ASD)",
+      [
+       "often first found in ADULTS"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Children: usually NO symptoms",
+      [
+       "adults: arrhythmia, pulmonary hypertension, heart failure"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "WIDE, FIXED split S2",
+      [
+       "• right ventricular heave",
+       "• soft ejection murmur, left upper sternal border"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "May close by 2 years",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Else repair at ~5 years",
+      [
+       "surgical patch or device"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "vsd",
+   "colour": "blue",
+   "drop_from": "t_lr",
+   "drop_label": "ventricles",
+   "head": [
+    [
+     [
+      "h",
+      "Ventricular septal defect (VSD)",
+      [
+       "atrioventricular septal defect (AVSD) in Down syndrome: septal holes + an abnormal valve"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Heart failure at 6–12 WEEKS",
+      [
+       "if the defect is large"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "PANSYSTOLIC murmur",
+      [
+       "• small: normal S2, no heart failure",
+       "• large: SINGLE S2, almost always heart failure"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "May close in 1–2 years",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Large: EARLIER surgery",
+      [
+       "protects the lungs from high pressure"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pda",
+   "colour": "purple",
+   "drop_from": "t_lr",
+   "drop_label": "ductus",
+   "head": [
+    [
+     [
+      "h",
+      "Patent ductus arteriosus (PDA)",
+      [
+       "common in very PREMATURE babies"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "CONTINUOUS murmur",
+      [
+       "• left infraclavicular, to the back",
+       "• shunts in systole AND diastole"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Lungs steal perfusion",
+      [
+       "• BOUNDING pulses",
+       "• WIDE pulse pressure"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Size decides, as for VSD",
+      [
+       "± heart failure"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "coa",
+   "colour": "orange",
+   "drop_from": "t_ob",
+   "head": [
+    [
+     [
+      "h",
+      "Coarctation of the aorta",
+      [
+       "narrowing where the ductus inserts"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "bad",
+      "↓ FEMORAL pulses, low leg BP",
+      [
+       "less flow to the lower body"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "Critical: a sick NEONATE",
+      [
+       "poor gut perfusion, heart failure"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Milder: an older child",
+      [
+       "murmur, HYPERTENSION"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Surgery or stenting",
+      [
+       "of the narrowed segment"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tof",
+   "colour": "magenta",
+   "drop_from": "t_lo",
+   "head": [
+    [
+     [
+      "h",
+      "Tetralogy of Fallot (ToF)",
+      [
+       "most common cyanotic CHD overall",
+       "right ventricular (RV) outflow block + VSD + overriding aorta + RV hypertrophy"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Cyanosis tracks the RV OUTFLOW block",
+      [
+       "• mild: harsh ejection murmur, late cyanosis",
+       "• severe: blue newborn",
+       "• X-ray: 'boot-shaped' heart, ↓ PBF"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "TET SPELLS",
+      [
+       "sudden deep cyanosis: life-threatening"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Prostaglandin keeps the PDA open",
+      [
+       "more pulmonary flow when PBF is low"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Surgery at 4–6 months",
+      [
+       "close the VSD, open the RV outflow"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tga",
+   "colour": "brown",
+   "drop_from": "t_hi",
+   "drop_label": "PARALLEL circuits",
+   "head": [
+    [
+     [
+      "h",
+      "Transposition of the great arteries (TGA)",
+      [
+       "most common cyanotic CHD in a NEWBORN"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "bad",
+      "PROFOUND cyanosis at birth",
+      [
+       "• little respiratory distress for the saturation",
+       "• little or NO murmur"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Alive only through fetal shunts",
+      [
+       "they let red blood reach the body"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "bad",
+      "Surgery in the FIRST WEEK",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mix",
+   "colour": "olive",
+   "drop_from": "t_hi",
+   "drop_label": "MIXING",
+   "head": [
+    [
+     [
+      "h",
+      "Mixing lesions",
+      [
+       "truncus arteriosus, and total anomalous pulmonary venous return (TAPVR)"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "t",
+      "Truncus: ONE artery leaves the heart",
+      [
+       "• high lung flow: congestion",
+       "• end-organ failure (gut, coronary)"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "TAPVR: lung veins drain to the right",
+      [
+       "• unobstructed: like a big ASD, mild cyanosis",
+       "• OBSTRUCTED: deep cyanosis, lung edema, small heart"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Truncus: surgery in 1–2 weeks",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "TAPVR: surgery at 2–3 months",
+      [
+       "OBSTRUCTED: EMERGENCY surgery"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

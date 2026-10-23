@@ -1,0 +1,43 @@
+{
+ "name": "radiation oncology overview",
+ "title": "Radiation therapy decision chart: radiate to cure a localized tumour (definitive or adjuvant, by external beam, brachytherapy or stereotactic beam) or to palliate a symptomatic one (urgent indications listed); then recognise toxicity by timing, acute during the course, subacute weeks later (pneumonitis treated with steroids) and late (hypothyroidism treated with replacement, infertility, second cancers)",
+ "col_w": 236,
+ "root": {
+  "title": "Radiation: to CURE or to PALLIATE, and which TOXICITY do I watch for, and WHEN?",
+  "lines": [
+   "damages DNA in normal and cancer cells alike → split into daily FRACTIONS (standard 1.8–2 Gy) so normal tissue repairs between them",
+   "every tissue has a TOLERANCE dose: spinal cord, bowel, kidney and lung often limit it · fast-growing tumours respond soonest"
+  ]
+ },
+ "groups": [
+  {"id": "g_why", "cols": [0, 1], "title": "WHY radiate?", "lines": []},
+  {"id": "g_tox", "cols": [2, 4], "title": "Toxicity: HOW LONG since treatment?", "lines": []}
+ ],
+ "sections": ["head", "what", "do"],
+ "row_names": {"what": "WHEN · WHAT", "do": "DO"},
+ "dashed_sections": ["what"],
+ "columns": [
+  {"id": "cure", "colour": "teal",
+   "head": [[["h", "CURE", ["destroy a LOCALIZED tumour"]]]],
+   "what": [[["t", "Definitive or ADJUVANT", ["• definitive: e.g. breast, prostate, lung, head and neck, lymphoma", "• adjuvant: kill microscopic disease left after surgery or chemo"]]]],
+   "do": [[["ok", "Pick the delivery", ["• external beam: 5 days a week, 1–10 weeks", "• brachytherapy: isotope beside a gynecologic or prostate tumour", "• stereotactic ablative radiotherapy (SABR): very high dose in 1–5 treatments"]]]]},
+  {"id": "pal", "colour": "orange",
+   "head": [[["h", "PALLIATE", ["the tumour is causing SYMPTOMS"]]]],
+   "what": [[["bad", "URGENT", ["• spinal cord compression", "• superior vena cava (SVC) syndrome", "• bronchial or esophageal obstruction · gastrointestinal or gynecologic bleeding"]]]],
+   "do": [[["ok", "Radiate to SHRINK it", ["relieves pain and neurologic symptoms"]]]]},
+  {"id": "acu", "colour": "blue",
+   "head": [[["h", "ACUTE", ["during the course, by the site treated"]]]],
+   "what": [[["t", "In the field", ["• fatigue (any site)", "• skin redness, hair loss", "• chest: esophagitis, cough · pelvis: diarrhea, urinary frequency"]]]],
+   "do": [[["warn", "Expect them WORST near the END of the course", ["fatigue may become chronic"]]]]},
+  {"id": "sub", "colour": "purple",
+   "head": [[["h", "SUBACUTE", ["weeks later"]]]],
+   "what": [[["t", "PNEUMONITIS", ["6–12 weeks after mediastinal radiation: fever, cough, dyspnea"]]],
+            [["w", "Also", ["• myelosuppression (large pelvic field)", "• pericarditis", "• Lhermitte sign: tingling into the limbs on neck flexion"]]]],
+   "do": [[["ok", "Pneumonitis → STEROIDS", []]]]},
+  {"id": "late", "colour": "magenta",
+   "head": [[["h", "LATE", ["months to years"]]]],
+   "what": [[["t", "HYPOTHYROIDISM", ["thyroid in the field"]]],
+            [["w", "Also", ["• shingles in the irradiated dermatomes", "• infertility: sterile if > 2 Gy to the ovaries", "• second cancers: large fields, > 40 Gy, older techniques"]]]],
+   "do": [[["ok", "Hypothyroidism → thyroid REPLACEMENT", []]]]}
+ ]
+}

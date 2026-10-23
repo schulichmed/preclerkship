@@ -1,0 +1,943 @@
+{
+ "name": "approach to neonatal care overview",
+ "width": 1588,
+ "title": "The newborn needing extra care, sorted by what it must be kept: pink (resuscitation at birth, then respiratory distress told apart by who, timing and chest x-ray), warm (hypothermia), sweet (hypoglycemia screening and treatment), free of sepsis (risk, workup, antibiotics) and the yellow baby (jaundice red flags, investigations, phototherapy); each column gives presentation, numbered assessment and treatment, with a panel on routine care before discharge",
+ "kinds": {
+  "res_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "res_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "res_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "resp_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "resp_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "resp_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "cold_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cold_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cold_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "glu_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "glu_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "glu_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "sep_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sep_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "sep_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "jaun_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "jaun_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "jaun_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 252,
+   "w": 236,
+   "h": 1008,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 278,
+   "y": 252,
+   "w": 236,
+   "h": 1008,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 544,
+   "y": 252,
+   "w": 236,
+   "h": 1008,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 810,
+   "y": 252,
+   "w": 236,
+   "h": 1008,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1076,
+   "y": 252,
+   "w": 236,
+   "h": 1008,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1342,
+   "y": 252,
+   "w": 236,
+   "h": 1008,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 396,
+   "h": 268,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 704,
+   "h": 270,
+   "text": "ASSESS"
+  },
+  {
+   "x": 23,
+   "y": 1014,
+   "h": 238,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 429,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A newborn: keep it PINK, WARM and SWEET, and think SEPSIS in any sick baby",
+   "lines": [
+    "normal: heart rate 120–160 · respiratory rate 40–60 · axillary temperature 36.5–36.8 °C · never ignore tachypnea or tachycardia"
+   ]
+  },
+  {
+   "id": "g_pink",
+   "x": 45,
+   "y": 138,
+   "w": 464,
+   "h": 42,
+   "kind": "plain",
+   "title": "PINK: is it BREATHING well?",
+   "lines": []
+  },
+  {
+   "id": "g_warm",
+   "x": 549,
+   "y": 138,
+   "w": 226,
+   "h": 42,
+   "kind": "plain",
+   "title": "WARM",
+   "lines": []
+  },
+  {
+   "id": "g_sweet",
+   "x": 815,
+   "y": 138,
+   "w": 226,
+   "h": 42,
+   "kind": "plain",
+   "title": "SWEET",
+   "lines": []
+  },
+  {
+   "id": "g_sep",
+   "x": 1081,
+   "y": 138,
+   "w": 226,
+   "h": 42,
+   "kind": "plain",
+   "title": "SICK",
+   "lines": []
+  },
+  {
+   "id": "g_yel",
+   "x": 1347,
+   "y": 138,
+   "w": 226,
+   "h": 42,
+   "kind": "plain",
+   "title": "YELLOW",
+   "lines": []
+  },
+  {
+   "id": "res_head_0_0",
+   "x": 45,
+   "y": 260,
+   "w": 226,
+   "h": 96,
+   "kind": "res_h",
+   "title": "Resuscitation at birth",
+   "lines": [
+    "the goal: ventilation"
+   ]
+  },
+  {
+   "id": "resp_head_0_0",
+   "x": 283,
+   "y": 260,
+   "w": 226,
+   "h": 96,
+   "kind": "resp_h",
+   "title": "Respiratory distress",
+   "lines": [
+    "work of breathing: grunting"
+   ]
+  },
+  {
+   "id": "cold_head_0_0",
+   "x": 549,
+   "y": 260,
+   "w": 226,
+   "h": 96,
+   "kind": "cold_h",
+   "title": "Hypothermia",
+   "lines": [
+    "CANNOT shiver"
+   ]
+  },
+  {
+   "id": "glu_head_0_0",
+   "x": 815,
+   "y": 260,
+   "w": 226,
+   "h": 96,
+   "kind": "glu_h",
+   "title": "Hypoglycemia",
+   "lines": [
+    "glycogen lasts 8–10 h · gluconeogenesis normal only by day 2–4"
+   ]
+  },
+  {
+   "id": "sep_head_0_0",
+   "x": 1081,
+   "y": 260,
+   "w": 226,
+   "h": 96,
+   "kind": "sep_h",
+   "title": "Neonatal sepsis",
+   "lines": [
+    "the commonest life-threatening newborn problem · early < 3 days, late > 3 days"
+   ]
+  },
+  {
+   "id": "jaun_head_0_0",
+   "x": 1347,
+   "y": 260,
+   "w": 226,
+   "h": 96,
+   "kind": "jaun_h",
+   "title": "Jaundice",
+   "lines": [
+    "most: exaggerated physiologic or breastfeeding jaundice"
+   ]
+  },
+  {
+   "id": "res_clue_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 226,
+   "h": 268,
+   "kind": "res_t",
+   "title": "Term? good tone? breathing or crying?",
+   "lines": [
+    "• YES → skin to skin, routine care",
+    "• NO → warm, dry, position, stimulate, clear the airway"
+   ]
+  },
+  {
+   "id": "resp_clue_0_0",
+   "x": 283,
+   "y": 396,
+   "w": 226,
+   "h": 268,
+   "kind": "resp_t",
+   "title": "Who, and when?",
+   "lines": [
+    "• term, cesarean with no labour: at birth, gets better",
+    "• preterm: at birth, worse to day 3–4",
+    "• stressed baby: from birth"
+   ]
+  },
+  {
+   "id": "cold_clue_0_0",
+   "x": 549,
+   "y": 396,
+   "w": 226,
+   "h": 268,
+   "kind": "cold_t",
+   "title": "Cold stress",
+   "lines": [
+    "• wet, naked, large surface area",
+    "• little fat, few reserves"
+   ]
+  },
+  {
+   "id": "glu_clue_0_0",
+   "x": 815,
+   "y": 396,
+   "w": 226,
+   "h": 97,
+   "kind": "glu_t",
+   "title": "Jittery, irritable, lethargic, poor feeding",
+   "lines": [
+    "can be a sign of SEPSIS"
+   ]
+  },
+  {
+   "id": "glu_clue_1_0",
+   "x": 815,
+   "y": 515,
+   "w": 226,
+   "h": 149,
+   "kind": "glu_w",
+   "title": "Screen if at risk",
+   "lines": [
+    "• small (< 10th) or large (> 90th centile)",
+    "• infant of a diabetic mother",
+    "• preterm < 37 weeks, maternal labetalol"
+   ]
+  },
+  {
+   "id": "sep_clue_0_0",
+   "x": 1081,
+   "y": 396,
+   "w": 226,
+   "h": 114,
+   "kind": "sep_t",
+   "title": "Subtle",
+   "lines": [
+    "• temperature < 36.3 or > 37.2 °C",
+    "• apnea, grunting, poor feeding, glucose < 2.6",
+    "• floppy or jittery, seizure"
+   ]
+  },
+  {
+   "id": "sep_clue_1_0",
+   "x": 1081,
+   "y": 532,
+   "w": 226,
+   "h": 132,
+   "kind": "sep_w",
+   "title": "Risk",
+   "lines": [
+    "• chorioamnionitis, group B Streptococcus",
+    "• membranes ruptured > 18 h, preterm",
+    "• 5-minute Apgar < 6"
+   ]
+  },
+  {
+   "id": "jaun_clue_0_0",
+   "x": 1347,
+   "y": 396,
+   "w": 226,
+   "h": 97,
+   "kind": "jaun_t",
+   "title": "Head to toe: blanch the nose",
+   "lines": [
+    "colour does NOT predict the level"
+   ]
+  },
+  {
+   "id": "jaun_clue_1_0",
+   "x": 1347,
+   "y": 515,
+   "w": 226,
+   "h": 149,
+   "kind": "bad",
+   "title": "RED FLAGS",
+   "lines": [
+    "• jaundice in the first 24 h, or > 2 weeks (term)",
+    "• rise > 85 μmol/L/day, or total > 340",
+    "• direct > 30, or > 20% of total"
+   ]
+  },
+  {
+   "id": "res_inv_0_0",
+   "x": 45,
+   "y": 704,
+   "w": 226,
+   "h": 115,
+   "kind": "bad",
+   "title": "1 · Apnea, gasping or heart rate < 100",
+   "lines": [
+    "→ VENTILATE within the first minute + pulse oximeter"
+   ]
+  },
+  {
+   "id": "res_inv_1_0",
+   "x": 45,
+   "y": 841,
+   "w": 226,
+   "h": 133,
+   "kind": "res_w",
+   "title": "2 · Laboured or persistently cyanotic",
+   "lines": [
+    "→ pulse oximeter, oxygen if needed, consider continuous positive airway pressure (CPAP)"
+   ]
+  },
+  {
+   "id": "resp_inv_0_0",
+   "x": 283,
+   "y": 704,
+   "w": 226,
+   "h": 132,
+   "kind": "resp_t",
+   "title": "Chest x-ray",
+   "lines": [
+    "• fluid in the fissures: transient tachypnea of the newborn",
+    "• ground glass, low volume, air bronchograms: respiratory distress syndrome (no surfactant)"
+   ]
+  },
+  {
+   "id": "resp_inv_1_0",
+   "x": 283.0,
+   "y": 858,
+   "w": 108.0,
+   "h": 116,
+   "kind": "resp_w",
+   "title": "Patchy, like pneumonia",
+   "lines": [
+    "meconium aspiration, or pneumonia"
+   ]
+  },
+  {
+   "id": "resp_inv_1_1",
+   "x": 401.0,
+   "y": 858,
+   "w": 108.0,
+   "h": 116,
+   "kind": "resp_w",
+   "title": "Black rim",
+   "lines": [
+    "pneumothorax"
+   ]
+  },
+  {
+   "id": "cold_inv_0_0",
+   "x": 549,
+   "y": 704,
+   "w": 226,
+   "h": 270,
+   "kind": "cold_w",
+   "title": "Uses up glucose",
+   "lines": [
+    "→ check SWEET"
+   ]
+  },
+  {
+   "id": "glu_inv_0_0",
+   "x": 815,
+   "y": 704,
+   "w": 226,
+   "h": 116,
+   "kind": "glu_t",
+   "title": "1 · Glucose 2 h after the first feed",
+   "lines": []
+  },
+  {
+   "id": "glu_inv_1_0",
+   "x": 815,
+   "y": 842,
+   "w": 226,
+   "h": 132,
+   "kind": "glu_w",
+   "title": "2 · Goal ≥ 2.6 mmol/L",
+   "lines": [
+    "≥ 3.3 after 72 h · at goal: no more sticks"
+   ]
+  },
+  {
+   "id": "sep_inv_0_0",
+   "x": 1081,
+   "y": 704,
+   "w": 226,
+   "h": 179,
+   "kind": "bad",
+   "title": "UNWELL or PRETERM → full workup",
+   "lines": [
+    "• blood, urine, cerebrospinal fluid cultures",
+    "• blood count, C-reactive protein, clotting",
+    "• herpes simplex virus (HSV) swabs"
+   ]
+  },
+  {
+   "id": "sep_inv_1_0",
+   "x": 1081,
+   "y": 905,
+   "w": 226,
+   "h": 69,
+   "kind": "sep_w",
+   "title": "WELL + risk factors",
+   "lines": [
+    "observe 24 h before discharge"
+   ]
+  },
+  {
+   "id": "jaun_inv_0_0",
+   "x": 1347,
+   "y": 704,
+   "w": 226,
+   "h": 125,
+   "kind": "jaun_t",
+   "title": "1 · Bilirubin on EVERY baby at 24 h",
+   "lines": [
+    "skin meter or blood · plot on the curve"
+   ]
+  },
+  {
+   "id": "jaun_inv_1_0",
+   "x": 1347,
+   "y": 851,
+   "w": 226,
+   "h": 123,
+   "kind": "jaun_w",
+   "title": "2 · Red flag → work up",
+   "lines": [
+    "• total + direct bilirubin, hemoglobin",
+    "• direct antiglobulin test (DAT)",
+    "• mother's and baby's blood groups"
+   ]
+  },
+  {
+   "id": "res_tx_0_0",
+   "x": 45,
+   "y": 1014,
+   "w": 226,
+   "h": 238,
+   "kind": "ok",
+   "title": "Targets",
+   "lines": [
+    "• chest rise, breath sounds",
+    "• heart rate > 100",
+    "• oxygen saturation only 85–95% by 10 min: transient hypoxia is normal"
+   ]
+  },
+  {
+   "id": "resp_tx_0_0",
+   "x": 283,
+   "y": 1014,
+   "w": 226,
+   "h": 238,
+   "kind": "bad",
+   "title": "Pneumonia: any time, septic risk factors",
+   "lines": [
+    "group B Streptococcus, gram negatives → see SICK"
+   ]
+  },
+  {
+   "id": "cold_tx_0_0",
+   "x": 549,
+   "y": 1014,
+   "w": 226,
+   "h": 109,
+   "kind": "ok",
+   "title": "1 · Dry, wrap, hat, warmer room",
+   "lines": []
+  },
+  {
+   "id": "cold_tx_1_0",
+   "x": 549,
+   "y": 1145,
+   "w": 226,
+   "h": 107,
+   "kind": "ok",
+   "title": "2 · < 1500 g → incubator",
+   "lines": [
+    "radiant warmer, humidity"
+   ]
+  },
+  {
+   "id": "glu_tx_0_0",
+   "x": 815,
+   "y": 1014,
+   "w": 226,
+   "h": 117,
+   "kind": "bad",
+   "title": "1 · SYMPTOMATIC = emergency",
+   "lines": [
+    "intravenous (IV) dextrose bolus + infusion: it injures neurons"
+   ]
+  },
+  {
+   "id": "glu_tx_1_0",
+   "x": 815,
+   "y": 1153,
+   "w": 226,
+   "h": 99,
+   "kind": "ok",
+   "title": "2 · Well: early, frequent feeds",
+   "lines": [
+    "then IV dextrose, glucagon"
+   ]
+  },
+  {
+   "id": "sep_tx_0_0",
+   "x": 1081,
+   "y": 1014,
+   "w": 226,
+   "h": 109,
+   "kind": "bad",
+   "title": "1 · Antibiotics ASAP: never wait and see",
+   "lines": [
+    "• ampicillin + gentamicin",
+    "• + acyclovir for HSV"
+   ]
+  },
+  {
+   "id": "sep_tx_1_0",
+   "x": 1081,
+   "y": 1145,
+   "w": 226,
+   "h": 107,
+   "kind": "ok",
+   "title": "2 · Support",
+   "lines": [
+    "ventilation, circulation, disseminated intravascular coagulation"
+   ]
+  },
+  {
+   "id": "jaun_tx_0_0",
+   "x": 1347,
+   "y": 1014,
+   "w": 226,
+   "h": 98,
+   "kind": "ok",
+   "title": "1 · Phototherapy + treat the cause",
+   "lines": [
+    "start lower if < 38 weeks, albumin < 30, hemolysis, sepsis"
+   ]
+  },
+  {
+   "id": "jaun_tx_1_0",
+   "x": 1347,
+   "y": 1134,
+   "w": 226,
+   "h": 118,
+   "kind": "bad",
+   "title": "2 · Not enough → IV immunoglobulin or exchange transfusion",
+   "lines": [
+    "untreated: encephalopathy → kernicterus"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_pink",
+   "path": "M809.0 88V113H277.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_warm",
+   "path": "M809.0 88V113H662.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_sweet",
+   "path": "M809.0 88V113H928.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_sep",
+   "path": "M809.0 88V113H1194.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_yel",
+   "path": "M809.0 88V113H1460.0V138"
+  },
+  {
+   "from": "glu_clue_0_0",
+   "to": "glu_clue_1_0"
+  },
+  {
+   "from": "sep_clue_0_0",
+   "to": "sep_clue_1_0"
+  },
+  {
+   "from": "jaun_clue_0_0",
+   "to": "jaun_clue_1_0"
+  },
+  {
+   "from": "res_inv_0_0",
+   "to": "res_inv_1_0"
+  },
+  {
+   "from": "resp_inv_0_0",
+   "to": "resp_inv_1_0",
+   "from_dx": -59.0
+  },
+  {
+   "from": "resp_inv_0_0",
+   "to": "resp_inv_1_1",
+   "from_dx": 59.0
+  },
+  {
+   "from": "glu_inv_0_0",
+   "to": "glu_inv_1_0"
+  },
+  {
+   "from": "sep_inv_0_0",
+   "to": "sep_inv_1_0"
+  },
+  {
+   "from": "jaun_inv_0_0",
+   "to": "jaun_inv_1_0"
+  },
+  {
+   "from": "cold_tx_0_0",
+   "to": "cold_tx_1_0"
+  },
+  {
+   "from": "glu_tx_0_0",
+   "to": "glu_tx_1_0"
+  },
+  {
+   "from": "sep_tx_0_0",
+   "to": "sep_tx_1_0"
+  },
+  {
+   "from": "jaun_tx_0_0",
+   "to": "jaun_tx_1_0"
+  },
+  {
+   "from": "res_head_0_0",
+   "to": "res_clue_0_0"
+  },
+  {
+   "from": "res_clue_0_0",
+   "to": "res_inv_0_0"
+  },
+  {
+   "from": "res_inv_1_0",
+   "to": "res_tx_0_0"
+  },
+  {
+   "from": "g_pink",
+   "to": "res_head_0_0",
+   "from_dx": -119,
+   "label": "at birth",
+   "label_at": [
+    158.0,
+    220
+   ]
+  },
+  {
+   "from": "resp_head_0_0",
+   "to": "resp_clue_0_0"
+  },
+  {
+   "from": "resp_clue_0_0",
+   "to": "resp_inv_0_0"
+  },
+  {
+   "from": "resp_inv_1_0",
+   "to": "resp_tx_0_0",
+   "to_dx": -59.0
+  },
+  {
+   "from": "resp_inv_1_1",
+   "to": "resp_tx_0_0",
+   "to_dx": 59.0
+  },
+  {
+   "from": "g_pink",
+   "to": "resp_head_0_0",
+   "from_dx": 119,
+   "label": "distress later",
+   "label_at": [
+    396.0,
+    220
+   ]
+  },
+  {
+   "from": "cold_head_0_0",
+   "to": "cold_clue_0_0"
+  },
+  {
+   "from": "cold_clue_0_0",
+   "to": "cold_inv_0_0"
+  },
+  {
+   "from": "cold_inv_0_0",
+   "to": "cold_tx_0_0"
+  },
+  {
+   "from": "g_warm",
+   "to": "cold_head_0_0",
+   "from_dx": 0,
+   "label": "cold",
+   "label_at": [
+    662.0,
+    220
+   ]
+  },
+  {
+   "from": "glu_head_0_0",
+   "to": "glu_clue_0_0"
+  },
+  {
+   "from": "glu_clue_1_0",
+   "to": "glu_inv_0_0"
+  },
+  {
+   "from": "glu_inv_1_0",
+   "to": "glu_tx_0_0"
+  },
+  {
+   "from": "g_sweet",
+   "to": "glu_head_0_0",
+   "from_dx": 0,
+   "label": "at risk",
+   "label_at": [
+    928.0,
+    220
+   ]
+  },
+  {
+   "from": "sep_head_0_0",
+   "to": "sep_clue_0_0"
+  },
+  {
+   "from": "sep_clue_1_0",
+   "to": "sep_inv_0_0"
+  },
+  {
+   "from": "sep_inv_1_0",
+   "to": "sep_tx_0_0"
+  },
+  {
+   "from": "g_sep",
+   "to": "sep_head_0_0",
+   "from_dx": 0,
+   "label": "unwell",
+   "label_at": [
+    1194.0,
+    220
+   ]
+  },
+  {
+   "from": "jaun_head_0_0",
+   "to": "jaun_clue_0_0"
+  },
+  {
+   "from": "jaun_clue_1_0",
+   "to": "jaun_inv_0_0"
+  },
+  {
+   "from": "jaun_inv_1_0",
+   "to": "jaun_tx_0_0"
+  },
+  {
+   "from": "g_yel",
+   "to": "jaun_head_0_0",
+   "from_dx": 0,
+   "label": "yellow",
+   "label_at": [
+    1460.0,
+    220
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1286,
+   "w": 1528,
+   "title": "Every newborn before going home",
+   "items": [
+    "Apgar at 1 and 5 min, 0–2 each: appearance, pulse (< 100 scores 1), grimace, activity (tone), respiration",
+    "full exam within 24 h: dysmorphic features, heart (may have no murmur), a patent gut · urine and meconium passed",
+    "vitamin K intramuscular + erythromycin eye ointment at birth",
+    "screens: pulse oximetry right hand vs a foot at 24–36 h · Ontario newborn screen · hearing",
+    "weight: loses up to 10%, back to birth weight by 7–10 days · seen 72 h after discharge"
+   ],
+   "cols": 1
+  }
+ ]
+}

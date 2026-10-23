@@ -1,0 +1,578 @@
+{
+ "name": "diabetes in pregnancy overview",
+ "width": 1124,
+ "title": "Diabetes in pregnancy split by when the high glucose starts: pre-existing type 1 or 2 diabetes (planned before conception, then managed trimester by trimester) causes malformations, while gestational diabetes found on the 24-28 week screen does not; a gestational diabetes that does not clear after delivery was type 2 all along; each column gives risks, numbered checks and treatment in order",
+ "kinds": {
+  "plan_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "plan_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "plan_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "preg_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "preg_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "preg_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "gdm_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gdm_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "gdm_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "true_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "true_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "true_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 406,
+   "w": 260,
+   "h": 840,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 302,
+   "y": 406,
+   "w": 260,
+   "h": 840,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 592,
+   "y": 406,
+   "w": 260,
+   "h": 840,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 854,
+   "y": 406,
+   "w": 260,
+   "h": 840,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 238,
+   "h": 96,
+   "text": "SCREEN"
+  },
+  {
+   "x": 23,
+   "y": 532,
+   "h": 132,
+   "text": "RISKS"
+  },
+  {
+   "x": 23,
+   "y": 704,
+   "h": 162,
+   "text": "CHECK"
+  },
+  {
+   "x": 23,
+   "y": 906,
+   "h": 332,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 197,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Diabetes in pregnancy: was the glucose high BEFORE organogenesis?",
+   "lines": [
+    "organogenesis runs weeks 3–16, often before she knows she is pregnant",
+    "glucose goals for EVERY one: fasting < 5.3 · 1 h after meals < 7.8 mmol/L"
+   ]
+  },
+  {
+   "id": "g_pre",
+   "x": 45,
+   "y": 138,
+   "w": 512,
+   "h": 60,
+   "kind": "plain",
+   "title": "BEFORE conception: type 1 or type 2",
+   "lines": [
+    "high glucose in organogenesis → MALFORMATIONS"
+   ]
+  },
+  {
+   "id": "g_gdm",
+   "x": 597,
+   "y": 138,
+   "w": 512,
+   "h": 60,
+   "kind": "plain",
+   "title": "Found at 24–28 weeks: SCREEN every pregnancy",
+   "lines": [
+    "starts AFTER organogenesis → NO malformations"
+   ]
+  },
+  {
+   "id": "p_screen",
+   "x": 597,
+   "y": 238,
+   "w": 512,
+   "h": 96,
+   "kind": "info",
+   "title": "Screen in order",
+   "lines": [
+    "1 · 50 g glucose, any time of day, 1 h: < 7.8 normal, stop · ≥ 11.1 = gestational diabetes (GDM)",
+    "2 · 7.8–11.0 → FASTING 75 g test: GDM if ANY of fasting ≥ 5.3, 1 h ≥ 10.6, 2 h ≥ 9.0"
+   ]
+  },
+  {
+   "id": "plan_head_0_0",
+   "x": 45,
+   "y": 414,
+   "w": 250,
+   "h": 78,
+   "kind": "plan_h",
+   "title": "Before conception",
+   "lines": [
+    "the glycated hemoglobin (A1c) at conception sets the malformation risk"
+   ]
+  },
+  {
+   "id": "preg_head_0_0",
+   "x": 307,
+   "y": 414,
+   "w": 250,
+   "h": 78,
+   "kind": "preg_h",
+   "title": "Pregnant with type 1 or 2",
+   "lines": [
+    "follow closely: endocrinology + obstetrics (timing of delivery)"
+   ]
+  },
+  {
+   "id": "gdm_head_0_0",
+   "x": 597,
+   "y": 414,
+   "w": 250,
+   "h": 78,
+   "kind": "gdm_h",
+   "title": "Gestational diabetes (GDM)",
+   "lines": [
+    "weight + placental hormones → insulin resistance"
+   ]
+  },
+  {
+   "id": "true_head_0_0",
+   "x": 859,
+   "y": 414,
+   "w": 250,
+   "h": 78,
+   "kind": "true_h",
+   "title": "It was TYPE 2 all along",
+   "lines": [
+    "less often early type 1"
+   ]
+  },
+  {
+   "id": "plan_risk_0_0",
+   "x": 45,
+   "y": 532,
+   "w": 250,
+   "h": 132,
+   "kind": "plan_t",
+   "title": "Malformations",
+   "lines": [
+    "• neural tube, caudal regression",
+    "• heart: transposition, coarctation, atrial septal defect",
+    "• gut atresias · kidney agenesis, double ureters"
+   ]
+  },
+  {
+   "id": "preg_risk_0_0",
+   "x": 307,
+   "y": 532,
+   "w": 250,
+   "h": 132,
+   "kind": "preg_t",
+   "title": "Mother and baby",
+   "lines": [
+    "• pre-eclampsia ×2",
+    "• retinopathy, nephropathy WORSEN",
+    "• big baby, newborn LOW glucose"
+   ]
+  },
+  {
+   "id": "gdm_risk_0_0",
+   "x": 597,
+   "y": 532,
+   "w": 250,
+   "h": 132,
+   "kind": "gdm_t",
+   "title": "Mother and baby",
+   "lines": [
+    "• baby > 4 kg: shoulder dystocia, brachial plexus injury",
+    "• stillbirth · newborn low glucose, calcium",
+    "• hypertension, induction, cesarean"
+   ]
+  },
+  {
+   "id": "true_risk_0_0",
+   "x": 859,
+   "y": 532,
+   "w": 250,
+   "h": 132,
+   "kind": "true_t",
+   "title": "Hint in pregnancy",
+   "lines": [
+    "glucose or insulin doses unusually HIGH"
+   ]
+  },
+  {
+   "id": "plan_inv_0_0",
+   "x": 45,
+   "y": 704,
+   "w": 250,
+   "h": 70,
+   "kind": "plan_t",
+   "title": "1 · A1c ≤ 7%",
+   "lines": [
+    "≤ 6.5% even better"
+   ]
+  },
+  {
+   "id": "plan_inv_1_0",
+   "x": 45,
+   "y": 796,
+   "w": 250,
+   "h": 70,
+   "kind": "plan_w",
+   "title": "2 · Screen for retinopathy",
+   "lines": [
+    "found now → laser before pregnancy"
+   ]
+  },
+  {
+   "id": "preg_inv_0_0",
+   "x": 307,
+   "y": 704,
+   "w": 250,
+   "h": 60,
+   "kind": "preg_t",
+   "title": "1 · A1c monthly: < 6.5%",
+   "lines": [
+    "without serious lows"
+   ]
+  },
+  {
+   "id": "preg_inv_1_0",
+   "x": 307,
+   "y": 786,
+   "w": 250,
+   "h": 80,
+   "kind": "preg_w",
+   "title": "2 · Eyes: during + within a year after",
+   "lines": [
+    "usually settles after delivery"
+   ]
+  },
+  {
+   "id": "gdm_inv_0_0",
+   "x": 597,
+   "y": 704,
+   "w": 250,
+   "h": 79,
+   "kind": "gdm_t",
+   "title": "1 · Home glucose",
+   "lines": [
+    "fasting + 1 h after each meal"
+   ]
+  },
+  {
+   "id": "gdm_inv_1_0",
+   "x": 597,
+   "y": 805,
+   "w": 250,
+   "h": 61,
+   "kind": "gdm_w",
+   "title": "A1c: NOT used",
+   "lines": []
+  },
+  {
+   "id": "true_inv_0_0",
+   "x": 859,
+   "y": 704,
+   "w": 250,
+   "h": 162,
+   "kind": "bad",
+   "title": "Glucose does NOT return to normal",
+   "lines": [
+    "on the 75 g test after delivery"
+   ]
+  },
+  {
+   "id": "plan_tx_0_0",
+   "x": 45,
+   "y": 906,
+   "w": 250,
+   "h": 332,
+   "kind": "ok",
+   "title": "Conceive only when controlled",
+   "lines": [
+    "• folic acid",
+    "• blood pressure drugs safe for a baby: see the HYPERTENSION IN PREGNANCY chart"
+   ]
+  },
+  {
+   "id": "preg_tx_0_0",
+   "x": 307,
+   "y": 906,
+   "w": 250,
+   "h": 332,
+   "kind": "warn",
+   "title": "Insulin needs follow the placenta",
+   "lines": [
+    "• 1st trimester ↓: LOWS",
+    "• 2nd ↑ slowly · 3rd ↑↑ (most in type 2)",
+    "• after delivery ↓↓: lows while breastfeeding"
+   ]
+  },
+  {
+   "id": "gdm_tx_0_0",
+   "x": 597,
+   "y": 906,
+   "w": 250,
+   "h": 96,
+   "kind": "ok",
+   "title": "1 · Diet + walk",
+   "lines": [
+    "• 3 meals of 45 g, 3 snacks of 20 g carbohydrate",
+    "• 10 min walk after meals"
+   ]
+  },
+  {
+   "id": "gdm_tx_1_0",
+   "x": 597,
+   "y": 1024,
+   "w": 250,
+   "h": 114,
+   "kind": "ok",
+   "title": "2 · Above goal → INSULIN",
+   "lines": [
+    "• the gold standard",
+    "• metformin: safe but weak",
+    "• glyburide crosses the placenta: newborn lows"
+   ]
+  },
+  {
+   "id": "gdm_tx_2_0",
+   "x": 597,
+   "y": 1160,
+   "w": 250,
+   "h": 78,
+   "kind": "warn",
+   "title": "3 · STOP all at delivery",
+   "lines": [
+    "• 75 g test 6 weeks–6 months after",
+    "• up to 60% get type 2 later"
+   ]
+  },
+  {
+   "id": "true_tx_0_0",
+   "x": 859,
+   "y": 906,
+   "w": 250,
+   "h": 332,
+   "kind": "ok",
+   "title": "Treat as diabetes",
+   "lines": [
+    "see the DIAGNOSING DIABETES chart"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_pre",
+   "path": "M577.0 88V113H301.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_gdm",
+   "path": "M577.0 88V113H853.0V138"
+  },
+  {
+   "from": "g_gdm",
+   "to": "p_screen"
+  },
+  {
+   "from": "plan_inv_0_0",
+   "to": "plan_inv_1_0"
+  },
+  {
+   "from": "preg_inv_0_0",
+   "to": "preg_inv_1_0"
+  },
+  {
+   "from": "gdm_inv_0_0",
+   "to": "gdm_inv_1_0"
+  },
+  {
+   "from": "gdm_tx_0_0",
+   "to": "gdm_tx_1_0"
+  },
+  {
+   "from": "gdm_tx_1_0",
+   "to": "gdm_tx_2_0"
+  },
+  {
+   "from": "plan_head_0_0",
+   "to": "plan_risk_0_0"
+  },
+  {
+   "from": "plan_risk_0_0",
+   "to": "plan_inv_0_0"
+  },
+  {
+   "from": "plan_inv_1_0",
+   "to": "plan_tx_0_0"
+  },
+  {
+   "from": "g_pre",
+   "to": "plan_head_0_0",
+   "from_dx": -131,
+   "label": "planning a pregnancy",
+   "label_at": [
+    170.0,
+    374
+   ]
+  },
+  {
+   "from": "preg_head_0_0",
+   "to": "preg_risk_0_0"
+  },
+  {
+   "from": "preg_risk_0_0",
+   "to": "preg_inv_0_0"
+  },
+  {
+   "from": "preg_inv_1_0",
+   "to": "preg_tx_0_0"
+  },
+  {
+   "from": "g_pre",
+   "to": "preg_head_0_0",
+   "from_dx": 131,
+   "label": "already pregnant",
+   "label_at": [
+    432.0,
+    374
+   ]
+  },
+  {
+   "from": "gdm_head_0_0",
+   "to": "gdm_risk_0_0"
+  },
+  {
+   "from": "gdm_risk_0_0",
+   "to": "gdm_inv_0_0"
+  },
+  {
+   "from": "gdm_inv_1_0",
+   "to": "gdm_tx_0_0"
+  },
+  {
+   "from": "p_screen",
+   "to": "gdm_head_0_0",
+   "from_dx": -131,
+   "label": "screen positive",
+   "label_at": [
+    722.0,
+    374
+   ]
+  },
+  {
+   "from": "true_head_0_0",
+   "to": "true_risk_0_0"
+  },
+  {
+   "from": "true_risk_0_0",
+   "to": "true_inv_0_0"
+  },
+  {
+   "from": "true_inv_0_0",
+   "to": "true_tx_0_0"
+  },
+  {
+   "from": "p_screen",
+   "to": "true_head_0_0",
+   "from_dx": 131,
+   "label": "readings or doses VERY high",
+   "label_at": [
+    984.0,
+    374
+   ]
+  }
+ ],
+ "panels": []
+}

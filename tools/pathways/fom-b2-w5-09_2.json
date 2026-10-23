@@ -1,0 +1,685 @@
+{
+ "name": "anxiety and stress overview",
+ "width": 1316,
+ "title": "Mental health screen decision chart: whether stress symptoms are an expected response, major depression or an anxiety disorder (decided by duration and interference), and whether alcohol or other drugs are involved; each column gives the clues, the screening tool and the score that decides the next step",
+ "kinds": {
+  "no_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "no_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "no_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "md_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "md_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "md_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "an_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "an_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "an_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "al_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "al_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "al_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "dr_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dr_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "dr_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 306,
+   "w": 246,
+   "h": 930,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 288,
+   "y": 306,
+   "w": 246,
+   "h": 930,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 536,
+   "y": 306,
+   "w": 246,
+   "h": 930,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 812,
+   "y": 306,
+   "w": 246,
+   "h": 930,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1060,
+   "y": 306,
+   "w": 246,
+   "h": 930,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 432,
+   "h": 270,
+   "text": "CLUES"
+  },
+  {
+   "x": 23,
+   "y": 742,
+   "h": 180,
+   "text": "SCREEN"
+  },
+  {
+   "x": 23,
+   "y": 962,
+   "h": 266,
+   "text": "SCORE → NEXT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 293,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Stressed or anxious patient: an EXPECTED response, or a DISORDER? Are substances involved?",
+   "lines": [
+    "a mental health screen at EVERY visit, in the review of systems: mood, anxiety, sleep, appetite, concentration, substances, stressors",
+    "SAFETY FIRST: ask about thoughts of self-harm or of harming others",
+    "they rarely say \"I'm anxious\": they say \"I can't sleep and I have a constant headache\""
+   ]
+  },
+  {
+   "id": "g_d",
+   "x": 45,
+   "y": 174,
+   "w": 732,
+   "h": 60,
+   "kind": "plain",
+   "title": "A DISORDER? DURATION + INTERFERENCE decide",
+   "lines": [
+    "symptoms come in CLUSTERS: the same one (insomnia) can belong to either"
+   ]
+  },
+  {
+   "id": "g_s",
+   "x": 817,
+   "y": 174,
+   "w": 484,
+   "h": 60,
+   "kind": "plain",
+   "title": "SUBSTANCES: ask every visit",
+   "lines": [
+    "\"How much alcohol in an average week? Are you or others concerned?\""
+   ]
+  },
+  {
+   "id": "no_head_0_0",
+   "x": 45,
+   "y": 314,
+   "w": 236,
+   "h": 78,
+   "kind": "no_h",
+   "title": "Expected stress response",
+   "lines": [
+    "NOT a mental disorder"
+   ]
+  },
+  {
+   "id": "md_head_0_0",
+   "x": 293,
+   "y": 314,
+   "w": 236,
+   "h": 78,
+   "kind": "md_h",
+   "title": "Major depressive disorder",
+   "lines": [
+    "enough symptoms for ≥ 2 weeks, excessive, interfering"
+   ]
+  },
+  {
+   "id": "an_head_0_0",
+   "x": 541,
+   "y": 314,
+   "w": 236,
+   "h": 78,
+   "kind": "an_h",
+   "title": "Anxiety disorder",
+   "lines": [
+    "usually ≥ 6 months, excessive, interfering"
+   ]
+  },
+  {
+   "id": "al_head_0_0",
+   "x": 817,
+   "y": 314,
+   "w": 236,
+   "h": 78,
+   "kind": "al_h",
+   "title": "Alcohol",
+   "lines": []
+  },
+  {
+   "id": "dr_head_0_0",
+   "x": 1065,
+   "y": 314,
+   "w": 236,
+   "h": 78,
+   "kind": "dr_h",
+   "title": "Other drugs",
+   "lines": []
+  },
+  {
+   "id": "no_clue_0_0",
+   "x": 45,
+   "y": 432,
+   "w": 236,
+   "h": 270,
+   "kind": "no_t",
+   "title": "Fits the stressor or loss",
+   "lines": [
+    "• expected or culturally approved (e.g. grief)",
+    "• NOT excessive",
+    "• does NOT disrupt function"
+   ]
+  },
+  {
+   "id": "md_clue_0_0",
+   "x": 293,
+   "y": 432,
+   "w": 236,
+   "h": 270,
+   "kind": "md_t",
+   "title": "Depressive cluster",
+   "lines": [
+    "• sad, hopeless, worthless, lost interest",
+    "• isolating, eating changes, self-harm",
+    "• insomnia, fatigue, poor concentration, suicidal ideation"
+   ]
+  },
+  {
+   "id": "an_clue_0_0",
+   "x": 541,
+   "y": 432,
+   "w": 236,
+   "h": 132,
+   "kind": "an_t",
+   "title": "Anxious cluster",
+   "lines": [
+    "• worry, catastrophizing, can't switch off",
+    "• avoidance, reassurance-seeking",
+    "• palpitations, chest pain, headache, tension"
+   ]
+  },
+  {
+   "id": "an_clue_1_0",
+   "x": 541,
+   "y": 586,
+   "w": 236,
+   "h": 116,
+   "kind": "an_w",
+   "title": "The thought names the disorder",
+   "lines": [
+    "• many topics → generalized anxiety",
+    "• negative evaluation → social anxiety"
+   ]
+  },
+  {
+   "id": "al_clue_0_0",
+   "x": 817,
+   "y": 432,
+   "w": 236,
+   "h": 270,
+   "kind": "al_t",
+   "title": "How much in an average week?",
+   "lines": [
+    "• are you, or others, concerned?"
+   ]
+  },
+  {
+   "id": "dr_clue_0_0",
+   "x": 1065,
+   "y": 432,
+   "w": 236,
+   "h": 270,
+   "kind": "dr_t",
+   "title": "\"Do you use any other drugs?\"",
+   "lines": [
+    "cannabis is common"
+   ]
+  },
+  {
+   "id": "no_tool_0_0",
+   "x": 45,
+   "y": 742,
+   "w": 236,
+   "h": 180,
+   "kind": "no_w",
+   "title": "GAD-7 + PHQ-9 low",
+   "lines": [
+    "0–4: minimal"
+   ]
+  },
+  {
+   "id": "md_tool_0_0",
+   "x": 293,
+   "y": 742,
+   "w": 236,
+   "h": 180,
+   "kind": "md_w",
+   "title": "PHQ-9: Patient Health Questionnaire",
+   "lines": [
+    "9 items, the last 2 weeks"
+   ]
+  },
+  {
+   "id": "an_tool_0_0",
+   "x": 541,
+   "y": 742,
+   "w": 236,
+   "h": 180,
+   "kind": "an_w",
+   "title": "GAD-7: Generalized Anxiety Disorder scale",
+   "lines": [
+    "7 items, the last 2 weeks",
+    "5 mild · 10 moderate · 15 severe"
+   ]
+  },
+  {
+   "id": "al_tool_0_0",
+   "x": 817,
+   "y": 742,
+   "w": 236,
+   "h": 78,
+   "kind": "al_w",
+   "title": "CAGE: 4 yes/no questions",
+   "lines": [
+    "• 2–3: HIGH suspicion",
+    "• 4: virtually diagnostic"
+   ]
+  },
+  {
+   "id": "al_tool_1_0",
+   "x": 817,
+   "y": 842,
+   "w": 236,
+   "h": 80,
+   "kind": "al_w",
+   "title": "AUDIT: Alcohol Use Disorders Identification Test",
+   "lines": [
+    "10 items"
+   ]
+  },
+  {
+   "id": "dr_tool_0_0",
+   "x": 1065,
+   "y": 742,
+   "w": 236,
+   "h": 180,
+   "kind": "dr_w",
+   "title": "DAST-10: Drug Abuse Screening Test",
+   "lines": [
+    "10 yes/no items, the last 12 months"
+   ]
+  },
+  {
+   "id": "no_act_0_0",
+   "x": 45,
+   "y": 962,
+   "w": 236,
+   "h": 266,
+   "kind": "ok",
+   "title": "No treatment: formulate the 4 Ps",
+   "lines": [
+    "predisposing, precipitating, perpetuating and PROTECTIVE: build on the protective ones"
+   ]
+  },
+  {
+   "id": "md_act_0_0",
+   "x": 293,
+   "y": 962,
+   "w": 236,
+   "h": 60,
+   "kind": "ok",
+   "title": "5–9 mild: watchful waiting",
+   "lines": [
+    "repeat at follow-up"
+   ]
+  },
+  {
+   "id": "md_act_1_0",
+   "x": 293,
+   "y": 1044,
+   "w": 236,
+   "h": 100,
+   "kind": "warn",
+   "title": "10–14: CONSIDER medication or cognitive behavioural therapy (CBT)",
+   "lines": [
+    "15–19: medication + CBT"
+   ]
+  },
+  {
+   "id": "md_act_2_0",
+   "x": 293,
+   "y": 1166,
+   "w": 236,
+   "h": 62,
+   "kind": "bad",
+   "title": "20–27 severe: + PSYCHIATRY referral",
+   "lines": []
+  },
+  {
+   "id": "an_act_0_0",
+   "x": 541,
+   "y": 962,
+   "w": 236,
+   "h": 266,
+   "kind": "warn",
+   "title": "≥ 10 → FURTHER EVALUATION",
+   "lines": [
+    "also flags panic disorder, social anxiety, post-traumatic stress disorder (PTSD)"
+   ]
+  },
+  {
+   "id": "al_act_0_0",
+   "x": 817,
+   "y": 962,
+   "w": 236,
+   "h": 62,
+   "kind": "ok",
+   "title": "AUDIT 0–7 low: moderate or abstain",
+   "lines": []
+  },
+  {
+   "id": "al_act_1_0",
+   "x": 817,
+   "y": 1046,
+   "w": 236,
+   "h": 62,
+   "kind": "warn",
+   "title": "8–19 medium–high: cut down or stop",
+   "lines": []
+  },
+  {
+   "id": "al_act_2_0",
+   "x": 817,
+   "y": 1130,
+   "w": 236,
+   "h": 98,
+   "kind": "bad",
+   "title": "20+ addiction likely: medication + counselling",
+   "lines": [
+    "dependent: do NOT stop without professional help"
+   ]
+  },
+  {
+   "id": "dr_act_0_0",
+   "x": 1065,
+   "y": 962,
+   "w": 236,
+   "h": 85,
+   "kind": "ok",
+   "title": "Low",
+   "lines": [
+    "• 0: encouragement, education",
+    "• 1–2: feedback, advice"
+   ]
+  },
+  {
+   "id": "dr_act_1_0",
+   "x": 1065,
+   "y": 1069,
+   "w": 236,
+   "h": 69,
+   "kind": "warn",
+   "title": "3–5 moderate: feedback + counselling",
+   "lines": []
+  },
+  {
+   "id": "dr_act_2_0",
+   "x": 1065,
+   "y": 1160,
+   "w": 236,
+   "h": 69,
+   "kind": "bad",
+   "title": "6–8 substantial: intensive assessment + referral",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_d",
+   "path": "M673.0 124V149H411.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_s",
+   "path": "M673.0 124V149H1059.0V174"
+  },
+  {
+   "from": "an_clue_0_0",
+   "to": "an_clue_1_0"
+  },
+  {
+   "from": "al_tool_0_0",
+   "to": "al_tool_1_0"
+  },
+  {
+   "from": "md_act_0_0",
+   "to": "md_act_1_0"
+  },
+  {
+   "from": "md_act_1_0",
+   "to": "md_act_2_0"
+  },
+  {
+   "from": "al_act_0_0",
+   "to": "al_act_1_0"
+  },
+  {
+   "from": "al_act_1_0",
+   "to": "al_act_2_0"
+  },
+  {
+   "from": "dr_act_0_0",
+   "to": "dr_act_1_0"
+  },
+  {
+   "from": "dr_act_1_0",
+   "to": "dr_act_2_0"
+  },
+  {
+   "from": "no_head_0_0",
+   "to": "no_clue_0_0"
+  },
+  {
+   "from": "no_clue_0_0",
+   "to": "no_tool_0_0"
+  },
+  {
+   "from": "no_tool_0_0",
+   "to": "no_act_0_0"
+  },
+  {
+   "from": "g_d",
+   "to": "no_head_0_0",
+   "from_dx": -248,
+   "label": "fits the stressor",
+   "label_at": [
+    163.0,
+    274
+   ]
+  },
+  {
+   "from": "md_head_0_0",
+   "to": "md_clue_0_0"
+  },
+  {
+   "from": "md_clue_0_0",
+   "to": "md_tool_0_0"
+  },
+  {
+   "from": "md_tool_0_0",
+   "to": "md_act_0_0"
+  },
+  {
+   "from": "g_d",
+   "to": "md_head_0_0",
+   "from_dx": 0,
+   "label": "≥ 2 WEEKS + interferes",
+   "label_at": [
+    411.0,
+    274
+   ]
+  },
+  {
+   "from": "an_head_0_0",
+   "to": "an_clue_0_0"
+  },
+  {
+   "from": "an_clue_1_0",
+   "to": "an_tool_0_0"
+  },
+  {
+   "from": "an_tool_0_0",
+   "to": "an_act_0_0"
+  },
+  {
+   "from": "g_d",
+   "to": "an_head_0_0",
+   "from_dx": 248,
+   "label": "~6 MONTHS + interferes",
+   "label_at": [
+    659.0,
+    274
+   ]
+  },
+  {
+   "from": "al_head_0_0",
+   "to": "al_clue_0_0"
+  },
+  {
+   "from": "al_clue_0_0",
+   "to": "al_tool_0_0"
+  },
+  {
+   "from": "al_tool_1_0",
+   "to": "al_act_0_0"
+  },
+  {
+   "from": "g_s",
+   "to": "al_head_0_0",
+   "from_dx": -124,
+   "label": "alcohol",
+   "label_at": [
+    935.0,
+    274
+   ]
+  },
+  {
+   "from": "dr_head_0_0",
+   "to": "dr_clue_0_0"
+  },
+  {
+   "from": "dr_clue_0_0",
+   "to": "dr_tool_0_0"
+  },
+  {
+   "from": "dr_tool_0_0",
+   "to": "dr_act_0_0"
+  },
+  {
+   "from": "g_s",
+   "to": "dr_head_0_0",
+   "from_dx": 124,
+   "label": "other drugs",
+   "label_at": [
+    1183.0,
+    274
+   ]
+  }
+ ],
+ "panels": []
+}

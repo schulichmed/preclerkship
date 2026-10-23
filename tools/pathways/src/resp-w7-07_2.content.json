@@ -1,0 +1,329 @@
+{
+ "name": "chest x-ray overview",
+ "title": "Reading a chest X-ray with DRS. ABCDE so no zone is skipped, then telling the common abnormalities apart: white where air should be (airspace disease, pulmonary edema, pleural effusion, collapse, with the midline pushed away by an effusion and pulled toward a collapse), black where lung should be (pneumothorax, tension if the trachea deviates), and lines or spots (interstitial lung disease, nodules and masses)",
+ "col_w": 216,
+ "root": {
+  "title": "Chest X-ray (CXR): read it the SAME WAY every time, DRS. ABCDE, so nothing is missed",
+  "lines": [
+   "Details · RIPE: Rotation (clavicle ends equidistant), Inspiration (anterior ribs 5–6 or posterior 8–10), Picture, Exposure",
+   "Soft tissue, bones · Airway, mediastinum: TRACHEA deviated? · Breathing: PNEUMOTHORAX?",
+   "Circulation: heart size on a back-to-front (PA) film; a portable front-to-back film magnifies it",
+   "Diaphragm: FREE AIR? (see the ACUTE ABDOMEN chart) · Extras: tubes, lines, devices · compare with OLD films"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_w",
+   "cols": [
+    0,
+    3
+   ],
+   "title": "WHITE where air should be",
+   "lines": [
+    "a whole side white? the MIDLINE (trachea, heart borders) tells you which"
+   ]
+  },
+  {
+   "id": "g_b",
+   "cols": [
+    4,
+    4
+   ],
+   "title": "BLACK where lung should be",
+   "lines": [
+    "air, no vessels"
+   ]
+  },
+  {
+   "id": "g_s",
+   "cols": [
+    5,
+    6
+   ],
+   "title": "LINES or SPOTS",
+   "lines": [
+    "the CXR screens; CT gives the detail"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "film",
+  "next"
+ ],
+ "row_names": {
+  "film": "ON THE FILM",
+  "next": "THEN"
+ },
+ "columns": [
+  {
+   "id": "air",
+   "colour": "orange",
+   "drop_label": "fluffy",
+   "head": [
+    [
+     [
+      "h",
+      "Airspace disease",
+      [
+       "alveoli filled with pus or fluid"
+      ]
+     ]
+    ]
+   ],
+   "film": [
+    [
+     [
+      "t",
+      "FLUFFY opacities + air bronchograms",
+      [
+       "• acini coalesce: CONSOLIDATION",
+       "• confined to a lobe: pneumonia"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "Pneumonia?",
+      [
+       "see the PNEUMONIA chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ed",
+   "colour": "blue",
+   "drop_label": "Kerley lines",
+   "head": [
+    [
+     [
+      "h",
+      "Pulmonary edema",
+      []
+     ]
+    ]
+   ],
+   "film": [
+    [
+     [
+      "t",
+      "KERLEY B lines",
+      [
+       "• peribronchial cuffing",
+       "• vessels redistributed, enlarged",
+       "• effusions, CARDIOMEGALY"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "Severe: looks like pneumonia",
+      [
+       "fluid, not pus, fills the alveoli"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ef",
+   "colour": "teal",
+   "drop_label": "angle blunted",
+   "head": [
+    [
+     [
+      "h",
+      "Pleural effusion",
+      [
+       "non-specific: pneumonia, embolism, cancer"
+      ]
+     ]
+    ]
+   ],
+   "film": [
+    [
+     [
+      "t",
+      "BLUNTED costophrenic angle",
+      [
+       "• MENISCUS up the side",
+       "• confirm: lateral decubitus or point-of-care ultrasound"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "bad",
+      "Whole side white: midline PUSHED AWAY",
+      [
+       "space-occupying: effusion or tumour"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "col",
+   "colour": "purple",
+   "drop_label": "volume loss",
+   "head": [
+    [
+     [
+      "h",
+      "Collapse (atelectasis)",
+      []
+     ]
+    ]
+   ],
+   "film": [
+    [
+     [
+      "t",
+      "VOLUME LOSS",
+      [
+       "left lower lobe: SAIL sign behind the heart"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "bad",
+      "Whole side white: midline PULLED TOWARD",
+      [
+       "space-restricting: collapse or pneumonectomy"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ptx",
+   "colour": "magenta",
+   "drop_label": "no markings",
+   "head": [
+    [
+     [
+      "h",
+      "Pneumothorax",
+      []
+     ]
+    ]
+   ],
+   "film": [
+    [
+     [
+      "t",
+      "NO lung markings",
+      [
+       "lateral to a small, collapsed lung"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "bad",
+      "TRACHEA deviated: TENSION",
+      [
+       "do NOT miss it"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ild",
+   "colour": "olive",
+   "drop_label": "lines",
+   "head": [
+    [
+     [
+      "h",
+      "Interstitial lung disease (ILD)",
+      []
+     ]
+    ]
+   ],
+   "film": [
+    [
+     [
+      "t",
+      "RETICULAR: lines and nets",
+      [
+       "± small nodules"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "CT diagnoses ILD",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "nod",
+   "colour": "slate",
+   "drop_label": "spots",
+   "head": [
+    [
+     [
+      "h",
+      "Nodule or mass",
+      [
+       "a space-occupying lesion"
+      ]
+     ]
+    ]
+   ],
+   "film": [
+    [
+     [
+      "t",
+      "ONE large mass",
+      [
+       "primary lung tumour"
+      ]
+     ]
+    ],
+    [
+     [
+      "t",
+      "MANY small round 'cannonballs'",
+      [
+       "metastases"
+      ]
+     ]
+    ]
+   ],
+   "next": [
+    [
+     [
+      "w",
+      "CT stages it",
+      [
+       "see the PULMONARY NODULE chart"
+      ]
+     ]
+    ]
+   ]
+  }
+ ]
+}

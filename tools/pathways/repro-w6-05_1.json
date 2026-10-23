@@ -1,0 +1,154 @@
+{
+ "name": "abnormal labour pathway 1",
+ "title": "Induction of labour pathway: a reason to deliver, cesarean section if labour is contraindicated, otherwise pre-induction assessment, cervical ripening if the Bishop score is under 6, then artificial rupture of membranes and intravenous oxytocin",
+ "nodes": [
+  {
+   "id": "A",
+   "x": 10,
+   "y": 20,
+   "w": 160,
+   "h": 76,
+   "kind": "plain",
+   "title": "Reason to deliver",
+   "lines": [
+    "(list above)"
+   ]
+  },
+  {
+   "id": "B",
+   "x": 205,
+   "y": 20,
+   "w": 160,
+   "h": 76,
+   "kind": "plain",
+   "title": "Contraindication to labour?",
+   "lines": []
+  },
+  {
+   "id": "P",
+   "x": 400,
+   "y": 20,
+   "w": 160,
+   "h": 76,
+   "kind": "lo",
+   "title": "Pre-induction assessment",
+   "lines": []
+  },
+  {
+   "id": "BS",
+   "x": 590,
+   "y": 20,
+   "w": 150,
+   "h": 76,
+   "kind": "plain",
+   "title": "Bishop under 6?",
+   "lines": []
+  },
+  {
+   "id": "CS",
+   "x": 205,
+   "y": 170,
+   "w": 160,
+   "kind": "bad",
+   "title": "Cesarean section",
+   "lines": []
+  },
+  {
+   "id": "R",
+   "x": 555,
+   "y": 170,
+   "w": 220,
+   "kind": "lo",
+   "title": "① Ripen the cervix",
+   "lines": [
+    "prostaglandin or Foley"
+   ],
+   "h": 60
+  },
+  {
+   "id": "ARM",
+   "x": 795,
+   "y": 170,
+   "w": 110,
+   "kind": "plain",
+   "title": "② ARM",
+   "lines": [],
+   "h": 60
+  },
+  {
+   "id": "O",
+   "x": 715,
+   "y": 290,
+   "w": 190,
+   "kind": "ok",
+   "title": "IV oxytocin",
+   "lines": [
+    "if labour does not start"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "A",
+   "to": "B",
+   "from_side": "right",
+   "to_side": "left"
+  },
+  {
+   "from": "B",
+   "to": "CS",
+   "label": "yes",
+   "label_at": [
+    305,
+    134
+   ]
+  },
+  {
+   "from": "B",
+   "to": "P",
+   "from_side": "right",
+   "to_side": "left",
+   "label": "no",
+   "label_at": [
+    382,
+    46
+   ]
+  },
+  {
+   "from": "P",
+   "to": "BS",
+   "from_side": "right",
+   "to_side": "left"
+  },
+  {
+   "from": "BS",
+   "to": "R",
+   "label": "yes",
+   "label_at": [
+    685,
+    134
+   ]
+  },
+  {
+   "from": "BS",
+   "to": "ARM",
+   "path": "M740 58H850V168",
+   "label": "no",
+   "label_at": [
+    795,
+    46
+   ]
+  },
+  {
+   "from": "R",
+   "to": "ARM",
+   "from_side": "right",
+   "to_side": "left"
+  },
+  {
+   "from": "ARM",
+   "to": "O",
+   "to_dx": 40
+  }
+ ]
+}

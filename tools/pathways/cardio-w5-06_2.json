@@ -1,0 +1,835 @@
+{
+ "name": "antiarrhythmic drugs overview",
+ "width": 1756,
+ "title": "Antiarrhythmic drugs: stable patients get drugs, unstable get electricity, arrested get CPR, electricity and drugs; after treating precipitants, AV-nodal drugs (beta blocker, calcium channel blocker, digoxin, adenosine) serve supraventricular rhythms and channel blockers (class I procainamide and lidocaine, class III amiodarone and sotalol) reach ventricular ones; each drug's use and what rules it out, plus torsades de pointes caused by QT-prolonging drugs",
+ "kinds": {
+  "bb_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "bb_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "bb_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ccb_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ccb_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "ccb_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "dig_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dig_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "dig_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "ade_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ade_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ade_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "c1_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "c1_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "c1_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "c3_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "c3_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "c3_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "tdp_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "tdp_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "tdp_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 306,
+   "w": 234,
+   "h": 670,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 276,
+   "y": 306,
+   "w": 234,
+   "h": 670,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 512,
+   "y": 306,
+   "w": 234,
+   "h": 670,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 748,
+   "y": 306,
+   "w": 234,
+   "h": 670,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1012,
+   "y": 306,
+   "w": 234,
+   "h": 670,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 1248,
+   "y": 306,
+   "w": 234,
+   "h": 670,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1512,
+   "y": 306,
+   "w": 234,
+   "h": 670,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 452,
+   "h": 270,
+   "text": "CHOOSE WHEN"
+  },
+  {
+   "x": 23,
+   "y": 762,
+   "h": 206,
+   "text": "AVOID · WATCH"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 513,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Arrhythmia: STABLE → drugs · UNSTABLE → electricity · DEAD → CPR + electricity + drugs",
+   "lines": [
+    "FIRST treat precipitants: low K+, Mg2+, phosphate · ischemia · hypoxemia · catecholamines · QT-prolonging drugs",
+    "sinus tachycardia: treat the CAUSE (bleeding → fluids, blood), never slow it · every antiarrhythmic can CAUSE arrhythmia",
+    "arrest: CPR, shock ventricular fibrillation (VF) or pulseless ventricular tachycardia (VT), epinephrine every 3–5 min,",
+    "then amiodarone or lidocaine if it persists"
+   ]
+  },
+  {
+   "id": "g_av",
+   "x": 45,
+   "y": 174,
+   "w": 932,
+   "h": 60,
+   "kind": "plain",
+   "title": "Slow the ATRIOVENTRICULAR (AV) NODE: SUPRAVENTRICULAR rhythms",
+   "lines": [
+    "the ventricular rate falls; a ventricular rhythm is untouched"
+   ]
+  },
+  {
+   "id": "g_ch",
+   "x": 1017,
+   "y": 174,
+   "w": 460,
+   "h": 60,
+   "kind": "plain",
+   "title": "Block Na+ or K+ channels: VENTRICULAR too",
+   "lines": [
+    "they change the ECG"
+   ]
+  },
+  {
+   "id": "g_pro",
+   "x": 1517,
+   "y": 174,
+   "w": 224,
+   "h": 60,
+   "kind": "plain",
+   "title": "The DRUG caused it",
+   "lines": [
+    "proarrhythmia"
+   ]
+  },
+  {
+   "id": "bb_head_0_0",
+   "x": 45,
+   "y": 314,
+   "w": 224,
+   "h": 98,
+   "kind": "bb_h",
+   "title": "Beta blocker",
+   "lines": [
+    "metoprolol · phase 4",
+    "slows the sinus rate + AV node"
+   ]
+  },
+  {
+   "id": "ccb_head_0_0",
+   "x": 281,
+   "y": 314,
+   "w": 224,
+   "h": 98,
+   "kind": "ccb_h",
+   "title": "Calcium channel blocker (CCB)",
+   "lines": [
+    "verapamil, diltiazem · phase 2",
+    "slows the AV node"
+   ]
+  },
+  {
+   "id": "dig_head_0_0",
+   "x": 517,
+   "y": 314,
+   "w": 224,
+   "h": 98,
+   "kind": "dig_h",
+   "title": "Digoxin",
+   "lines": [
+    "blocks Na+/K+ ATPase (↑ Ca2+)",
+    "+ a vagal effect on the AV node"
+   ]
+  },
+  {
+   "id": "ade_head_0_0",
+   "x": 753,
+   "y": 314,
+   "w": 224,
+   "h": 98,
+   "kind": "ade_h",
+   "title": "Adenosine",
+   "lines": [
+    "blocks the AV node for SECONDS"
+   ]
+  },
+  {
+   "id": "c1_head_0_0",
+   "x": 1017,
+   "y": 314,
+   "w": 224,
+   "h": 98,
+   "kind": "c1_h",
+   "title": "Na+ channel blockers",
+   "lines": [
+    "phase 0: WIDENS the QRS"
+   ]
+  },
+  {
+   "id": "c3_head_0_0",
+   "x": 1253,
+   "y": 314,
+   "w": 224,
+   "h": 98,
+   "kind": "c3_h",
+   "title": "K+ channel blockers",
+   "lines": [
+    "phase 3: PROLONGS the QT"
+   ]
+  },
+  {
+   "id": "tdp_head_0_0",
+   "x": 1517,
+   "y": 314,
+   "w": 224,
+   "h": 98,
+   "kind": "tdp_h",
+   "title": "Torsades de pointes",
+   "lines": [
+    "polymorphic VT from a long QT"
+   ]
+  },
+  {
+   "id": "bb_use_0_0",
+   "x": 45,
+   "y": 452,
+   "w": 224,
+   "h": 124,
+   "kind": "bb_t",
+   "title": "Rate control",
+   "lines": [
+    "• fast atrial fibrillation (AF)",
+    "• already on it and tolerating it"
+   ]
+  },
+  {
+   "id": "bb_use_1_0",
+   "x": 45,
+   "y": 598,
+   "w": 224,
+   "h": 124,
+   "kind": "bb_w",
+   "title": "Also protects the heart",
+   "lines": [
+    "• after a myocardial infarction (MI)",
+    "• systolic heart failure"
+   ]
+  },
+  {
+   "id": "ccb_use_0_0",
+   "x": 281,
+   "y": 452,
+   "w": 224,
+   "h": 270,
+   "kind": "ccb_t",
+   "title": "Supraventricular arrhythmias",
+   "lines": [
+    "• rate control in AF",
+    "• IV acutely, then oral"
+   ]
+  },
+  {
+   "id": "dig_use_0_0",
+   "x": 517,
+   "y": 452,
+   "w": 224,
+   "h": 270,
+   "kind": "dig_t",
+   "title": "Rate control in AF",
+   "lines": [
+    "SEDENTARY patients"
+   ]
+  },
+  {
+   "id": "ade_use_0_0",
+   "x": 753,
+   "y": 452,
+   "w": 224,
+   "h": 152,
+   "kind": "ade_t",
+   "title": "Stop or DIAGNOSE a regular rhythm",
+   "lines": [
+    "• AV-node re-entry: converts to sinus",
+    "• AF or sinus: only slows it",
+    "• regular monomorphic wide: diagnostic"
+   ]
+  },
+  {
+   "id": "ade_use_1_0",
+   "x": 753,
+   "y": 626,
+   "w": 224,
+   "h": 96,
+   "kind": "ade_w",
+   "title": "How",
+   "lines": [
+    "• vagal manoeuvre first",
+    "• FAST IV bolus on a monitor",
+    "• fails → repeat at DOUBLE dose"
+   ]
+  },
+  {
+   "id": "c1_use_0_0",
+   "x": 1017,
+   "y": 452,
+   "w": 224,
+   "h": 123,
+   "kind": "c1_t",
+   "title": "Ia · Procainamide",
+   "lines": [
+    "• supraventricular tachycardia",
+    "• AF → sinus rhythm",
+    "• ventricular arrhythmias"
+   ]
+  },
+  {
+   "id": "c1_use_1_0",
+   "x": 1017,
+   "y": 597,
+   "w": 224,
+   "h": 125,
+   "kind": "c1_t",
+   "title": "Ib · Lidocaine: VENTRICULAR only",
+   "lines": [
+    "• VT with ischemia",
+    "• a shock that fails"
+   ]
+  },
+  {
+   "id": "c3_use_0_0",
+   "x": 1253,
+   "y": 452,
+   "w": 224,
+   "h": 152,
+   "kind": "c3_t",
+   "title": "Amiodarone: acts in ALL classes",
+   "lines": [
+    "• supraventricular + ventricular",
+    "• refractory VF or pulseless VT",
+    "• emergency rate control, fast AF"
+   ]
+  },
+  {
+   "id": "c3_use_1_0",
+   "x": 1253,
+   "y": 626,
+   "w": 224,
+   "h": 96,
+   "kind": "c3_t",
+   "title": "Sotalol",
+   "lines": [
+    "a beta blocker + K+ block"
+   ]
+  },
+  {
+   "id": "tdp_use_0_0",
+   "x": 1517,
+   "y": 452,
+   "w": 224,
+   "h": 270,
+   "kind": "tdp_t",
+   "title": "Cause: low K+ + QT drugs",
+   "lines": [
+    "• haloperidol, levofloxacin, methadone",
+    "~QT already long: NO QT drug"
+   ]
+  },
+  {
+   "id": "bb_avoid_0_0",
+   "x": 45,
+   "y": 762,
+   "w": 224,
+   "h": 206,
+   "kind": "bad",
+   "title": "LOW blood pressure",
+   "lines": [
+    "• unstable: too slow, drops BP → cardiovert",
+    "• can cause bradycardia"
+   ]
+  },
+  {
+   "id": "ccb_avoid_0_0",
+   "x": 281,
+   "y": 762,
+   "w": 224,
+   "h": 42,
+   "kind": "bad",
+   "title": "HEART FAILURE",
+   "lines": []
+  },
+  {
+   "id": "ccb_avoid_1_0",
+   "x": 281,
+   "y": 826,
+   "w": 224,
+   "h": 60,
+   "kind": "bad",
+   "title": "VENTRICULAR arrhythmias",
+   "lines": [
+    "no effect on them"
+   ]
+  },
+  {
+   "id": "ccb_avoid_2_0",
+   "x": 281,
+   "y": 908,
+   "w": 224,
+   "h": 60,
+   "kind": "ccb_w",
+   "title": "IV bolus drops BP",
+   "lines": [
+    "can cause bradycardia"
+   ]
+  },
+  {
+   "id": "dig_avoid_0_0",
+   "x": 517,
+   "y": 762,
+   "w": 224,
+   "h": 137,
+   "kind": "bad",
+   "title": "When it FAILS",
+   "lines": [
+    "• converting AF: it cannot",
+    "• high sympathetic tone: intensive care, exercise",
+    "• recurrent AF",
+    "• urgent: needs a loading dose"
+   ]
+  },
+  {
+   "id": "dig_avoid_1_0",
+   "x": 517,
+   "y": 921,
+   "w": 224,
+   "h": 47,
+   "kind": "dig_w",
+   "title": "Toxicity: ANY arrhythmia",
+   "lines": []
+  },
+  {
+   "id": "ade_avoid_0_0",
+   "x": 753,
+   "y": 762,
+   "w": 224,
+   "h": 103,
+   "kind": "bad",
+   "title": "Asthma or chronic obstructive pulmonary disease (COPD)",
+   "lines": [
+    "bronchospasm"
+   ]
+  },
+  {
+   "id": "ade_avoid_1_0",
+   "x": 753,
+   "y": 887,
+   "w": 224,
+   "h": 81,
+   "kind": "ade_w",
+   "title": "Warn the patient",
+   "lines": [
+    "flushing, chest pain, a few seconds of asystole"
+   ]
+  },
+  {
+   "id": "c1_avoid_0_0",
+   "x": 1017,
+   "y": 762,
+   "w": 224,
+   "h": 74,
+   "kind": "c1_w",
+   "title": "Procainamide",
+   "lines": [
+    "metabolite prolongs the QT"
+   ]
+  },
+  {
+   "id": "c1_avoid_1_0",
+   "x": 1017,
+   "y": 858,
+   "w": 224,
+   "h": 110,
+   "kind": "bad",
+   "title": "Lidocaine",
+   "lines": [
+    "• AF: it will NOT slow it",
+    "• liver failure: CNS toxicity, collapse"
+   ]
+  },
+  {
+   "id": "c3_avoid_0_0",
+   "x": 1253,
+   "y": 762,
+   "w": 224,
+   "h": 110,
+   "kind": "c3_w",
+   "title": "Amiodarone",
+   "lines": [
+    "• IV bolus drops BP",
+    "• loading dose: half-life months",
+    "• lung, thyroid, cornea, skin"
+   ]
+  },
+  {
+   "id": "c3_avoid_1_0",
+   "x": 1253,
+   "y": 894,
+   "w": 224,
+   "h": 74,
+   "kind": "bad",
+   "title": "Sotalol",
+   "lines": [
+    "QT ↑: can CAUSE arrhythmia"
+   ]
+  },
+  {
+   "id": "tdp_avoid_0_0",
+   "x": 1517,
+   "y": 762,
+   "w": 224,
+   "h": 206,
+   "kind": "bad",
+   "title": "After circulation returns",
+   "lines": [
+    "1 · check the QT · give Mg2+",
+    "2 · correct K+ SLOWLY",
+    "3 · stop QT drugs (not methadone)",
+    "4 · RAISE the heart rate: QT shortens"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_av",
+   "path": "M893.0 124V149H511.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_ch",
+   "path": "M893.0 124V149H1247.0V174"
+  },
+  {
+   "from": "root",
+   "to": "g_pro",
+   "path": "M893.0 124V149H1629.0V174"
+  },
+  {
+   "from": "bb_use_0_0",
+   "to": "bb_use_1_0"
+  },
+  {
+   "from": "ade_use_0_0",
+   "to": "ade_use_1_0"
+  },
+  {
+   "from": "c1_use_0_0",
+   "to": "c1_use_1_0"
+  },
+  {
+   "from": "c3_use_0_0",
+   "to": "c3_use_1_0"
+  },
+  {
+   "from": "ccb_avoid_0_0",
+   "to": "ccb_avoid_1_0"
+  },
+  {
+   "from": "ccb_avoid_1_0",
+   "to": "ccb_avoid_2_0"
+  },
+  {
+   "from": "dig_avoid_0_0",
+   "to": "dig_avoid_1_0"
+  },
+  {
+   "from": "ade_avoid_0_0",
+   "to": "ade_avoid_1_0"
+  },
+  {
+   "from": "c1_avoid_0_0",
+   "to": "c1_avoid_1_0"
+  },
+  {
+   "from": "c3_avoid_0_0",
+   "to": "c3_avoid_1_0"
+  },
+  {
+   "from": "bb_head_0_0",
+   "to": "bb_use_0_0"
+  },
+  {
+   "from": "bb_use_1_0",
+   "to": "bb_avoid_0_0"
+  },
+  {
+   "from": "g_av",
+   "to": "bb_head_0_0",
+   "from_dx": -354,
+   "label": "class II",
+   "label_at": [
+    157.0,
+    274
+   ]
+  },
+  {
+   "from": "ccb_head_0_0",
+   "to": "ccb_use_0_0"
+  },
+  {
+   "from": "ccb_use_0_0",
+   "to": "ccb_avoid_0_0"
+  },
+  {
+   "from": "g_av",
+   "to": "ccb_head_0_0",
+   "from_dx": -118,
+   "label": "class IV",
+   "label_at": [
+    393.0,
+    274
+   ]
+  },
+  {
+   "from": "dig_head_0_0",
+   "to": "dig_use_0_0"
+  },
+  {
+   "from": "dig_use_0_0",
+   "to": "dig_avoid_0_0"
+  },
+  {
+   "from": "g_av",
+   "to": "dig_head_0_0",
+   "from_dx": 118,
+   "label": "no class",
+   "label_at": [
+    629.0,
+    274
+   ]
+  },
+  {
+   "from": "ade_head_0_0",
+   "to": "ade_use_0_0"
+  },
+  {
+   "from": "ade_use_1_0",
+   "to": "ade_avoid_0_0"
+  },
+  {
+   "from": "g_av",
+   "to": "ade_head_0_0",
+   "from_dx": 354,
+   "label": "no class",
+   "label_at": [
+    865.0,
+    274
+   ]
+  },
+  {
+   "from": "c1_head_0_0",
+   "to": "c1_use_0_0"
+  },
+  {
+   "from": "c1_use_1_0",
+   "to": "c1_avoid_0_0"
+  },
+  {
+   "from": "g_ch",
+   "to": "c1_head_0_0",
+   "from_dx": -118,
+   "label": "class I",
+   "label_at": [
+    1129.0,
+    274
+   ]
+  },
+  {
+   "from": "c3_head_0_0",
+   "to": "c3_use_0_0"
+  },
+  {
+   "from": "c3_use_1_0",
+   "to": "c3_avoid_0_0"
+  },
+  {
+   "from": "g_ch",
+   "to": "c3_head_0_0",
+   "from_dx": 118,
+   "label": "class III",
+   "label_at": [
+    1365.0,
+    274
+   ]
+  },
+  {
+   "from": "tdp_head_0_0",
+   "to": "tdp_use_0_0"
+  },
+  {
+   "from": "tdp_use_0_0",
+   "to": "tdp_avoid_0_0"
+  },
+  {
+   "from": "g_pro",
+   "to": "tdp_head_0_0",
+   "from_dx": 0,
+   "label": "long QT",
+   "label_at": [
+    1629.0,
+    274
+   ]
+  }
+ ],
+ "panels": []
+}

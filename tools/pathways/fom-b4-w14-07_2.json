@@ -1,0 +1,499 @@
+{
+ "name": "vaccine adverse events overview",
+ "width": 1296,
+ "title": "Vaccine adverse event decision chart: an event within 6 weeks of immunisation is reported whatever its cause; sort it into allergy to a component, a known reaction to the vaccine, a defective vaccine, a problem with how it was given, or coincidence, then decide whether the next dose is contraindicated, needs a precaution, or is left to public health",
+ "kinds": {
+  "alg_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "alg_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "alg_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "known_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "known_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "known_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "def_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "def_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "def_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "proc_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "proc_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "proc_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "coin_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "coin_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "coin_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 288,
+   "w": 242,
+   "h": 816,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 284,
+   "y": 288,
+   "w": 242,
+   "h": 816,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 528,
+   "y": 288,
+   "w": 242,
+   "h": 558,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 772,
+   "y": 288,
+   "w": 242,
+   "h": 558,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1044,
+   "y": 288,
+   "w": 242,
+   "h": 558,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 416,
+   "h": 422,
+   "text": "LOOKS LIKE"
+  },
+  {
+   "x": 23,
+   "y": 878,
+   "h": 218,
+   "text": "NEXT DOSE"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 283,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Event within 6 weeks of a vaccine: did the VACCINE cause it, and can the NEXT dose go ahead?",
+   "lines": [
+    "EVERY adverse event following immunisation (AEFI) → AEFI form to the local Public Health Unit: MANDATORY for immunisers",
+    "PRECAUTIONS before any dose: moderate or severe acute illness · a LIVE vaccine when immunocompromised or pregnant"
+   ]
+  },
+  {
+   "id": "g_vac",
+   "x": 45,
+   "y": 156,
+   "w": 964,
+   "h": 60,
+   "kind": "plain",
+   "title": "The VACCINE, how it was MADE, or how it was GIVEN",
+   "lines": [
+    "the shot caused it"
+   ]
+  },
+  {
+   "id": "g_ind",
+   "x": 1049,
+   "y": 156,
+   "w": 232,
+   "h": 60,
+   "kind": "plain",
+   "title": "NOT the vaccine",
+   "lines": [
+    "after it in time, not caused by it"
+   ]
+  },
+  {
+   "id": "alg_head_0_0",
+   "x": 45,
+   "y": 296,
+   "w": 232,
+   "h": 80,
+   "kind": "alg_h",
+   "title": "Allergy to a component",
+   "lines": [
+    "e.g. polyethylene glycol (PEG) in the Pfizer mRNA vaccine"
+   ]
+  },
+  {
+   "id": "known_head_0_0",
+   "x": 289,
+   "y": 296,
+   "w": 232,
+   "h": 80,
+   "kind": "known_h",
+   "title": "A known reaction to the vaccine",
+   "lines": [
+    "the event fits that vaccine type"
+   ]
+  },
+  {
+   "id": "def_head_0_0",
+   "x": 533,
+   "y": 296,
+   "w": 232,
+   "h": 80,
+   "kind": "def_h",
+   "title": "A defective vaccine",
+   "lines": [
+    "a component made wrongly"
+   ]
+  },
+  {
+   "id": "proc_head_0_0",
+   "x": 777,
+   "y": 296,
+   "w": 232,
+   "h": 80,
+   "kind": "proc_h",
+   "title": "How it was GIVEN",
+   "lines": [
+    "an error, or the patient's anxiety"
+   ]
+  },
+  {
+   "id": "coin_head_0_0",
+   "x": 1049,
+   "y": 296,
+   "w": 232,
+   "h": 80,
+   "kind": "coin_h",
+   "title": "Coincidence",
+   "lines": [
+    "independent of the vaccine"
+   ]
+  },
+  {
+   "id": "alg_pres_0_0",
+   "x": 45,
+   "y": 416,
+   "w": 232,
+   "h": 422,
+   "kind": "alg_t",
+   "title": "ANAPHYLAXIS",
+   "lines": [
+    "after MMR, tetanus, hepatitis B or mRNA vaccines"
+   ]
+  },
+  {
+   "id": "known_pres_0_0",
+   "x": 289,
+   "y": 416,
+   "w": 232,
+   "h": 96,
+   "kind": "known_t",
+   "title": "Live",
+   "lines": [
+    "• rotavirus → intussusception",
+    "• MMR → febrile seizures, low platelets"
+   ]
+  },
+  {
+   "id": "known_pres_1_0",
+   "x": 289,
+   "y": 534,
+   "w": 232,
+   "h": 132,
+   "kind": "known_t",
+   "title": "Inactivated · toxoid",
+   "lines": [
+    "• whole-cell pertussis → prolonged crying, seizures, hypotonic hyporesponsive episode",
+    "• diphtheria → high fever, febrile seizures"
+   ]
+  },
+  {
+   "id": "known_pres_2_0",
+   "x": 289,
+   "y": 688,
+   "w": 232,
+   "h": 150,
+   "kind": "known_t",
+   "title": "Newer platforms",
+   "lines": [
+    "• viral vector → vaccine-induced immune thrombotic thrombocytopenia (VITT), Guillain-Barré syndrome (GBS)",
+    "• mRNA → myocarditis (dose 2), Bell's palsy"
+   ]
+  },
+  {
+   "id": "def_pres_0_0",
+   "x": 533,
+   "y": 416,
+   "w": 232,
+   "h": 422,
+   "kind": "def_t",
+   "title": "e.g. PARALYSIS",
+   "lines": [
+    "after oral polio vaccine that was not inactivated enough"
+   ]
+  },
+  {
+   "id": "proc_pres_0_0",
+   "x": 777,
+   "y": 416,
+   "w": 232,
+   "h": 200,
+   "kind": "proc_t",
+   "title": "Error",
+   "lines": [
+    "contaminated vial → abscess at the injection site"
+   ]
+  },
+  {
+   "id": "proc_pres_1_0",
+   "x": 777,
+   "y": 638,
+   "w": 232,
+   "h": 200,
+   "kind": "proc_t",
+   "title": "Anxiety",
+   "lines": [
+    "• fainting (syncope)",
+    "• hyperventilation"
+   ]
+  },
+  {
+   "id": "coin_pres_0_0",
+   "x": 1049,
+   "y": 416,
+   "w": 232,
+   "h": 422,
+   "kind": "coin_t",
+   "title": "e.g. a fractured radius, a UTI",
+   "lines": [
+    "still counts as an AEFI"
+   ]
+  },
+  {
+   "id": "alg_next_0_0",
+   "x": 45,
+   "y": 878,
+   "w": 232,
+   "h": 218,
+   "kind": "bad",
+   "title": "ABSOLUTE contraindication",
+   "lines": [
+    "to that vaccine or component",
+    "treat it now: see the ALLERGY chart"
+   ]
+  },
+  {
+   "id": "known_next_0_0",
+   "x": 289,
+   "y": 878,
+   "w": 232,
+   "h": 62,
+   "kind": "bad",
+   "title": "ABSOLUTE: encephalopathy after a pertussis vaccine",
+   "lines": []
+  },
+  {
+   "id": "known_next_1_0",
+   "x": 289,
+   "y": 962,
+   "w": 232,
+   "h": 134,
+   "kind": "warn",
+   "title": "PRECAUTION before the next dose",
+   "lines": [
+    "• extensive limb swelling or high fever after the last dose",
+    "• GBS within 6 weeks of a flu vaccine"
+   ]
+  },
+  {
+   "id": "span0_next_0_0",
+   "x": 533,
+   "y": 878,
+   "w": 748,
+   "h": 218,
+   "kind": "plain",
+   "title": "Public health advises on the next dose",
+   "lines": [
+    "the medical officer of health (MOH) or public health nurse reviews the report"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_vac",
+   "path": "M663.0 106V131H527.0V156"
+  },
+  {
+   "from": "root",
+   "to": "g_ind",
+   "path": "M663.0 106V131H1165.0V156"
+  },
+  {
+   "from": "known_pres_0_0",
+   "to": "known_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "known_pres_1_0",
+   "to": "known_pres_2_0",
+   "dashed": true
+  },
+  {
+   "from": "proc_pres_0_0",
+   "to": "proc_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "known_next_0_0",
+   "to": "known_next_1_0"
+  },
+  {
+   "from": "alg_head_0_0",
+   "to": "alg_pres_0_0"
+  },
+  {
+   "from": "alg_pres_0_0",
+   "to": "alg_next_0_0"
+  },
+  {
+   "from": "g_vac",
+   "to": "alg_head_0_0",
+   "from_dx": -366
+  },
+  {
+   "from": "known_head_0_0",
+   "to": "known_pres_0_0"
+  },
+  {
+   "from": "known_pres_2_0",
+   "to": "known_next_0_0"
+  },
+  {
+   "from": "g_vac",
+   "to": "known_head_0_0",
+   "from_dx": -122
+  },
+  {
+   "from": "def_head_0_0",
+   "to": "def_pres_0_0"
+  },
+  {
+   "from": "def_pres_0_0",
+   "to": "span0_next_0_0",
+   "to_dx": -258.0
+  },
+  {
+   "from": "g_vac",
+   "to": "def_head_0_0",
+   "from_dx": 122
+  },
+  {
+   "from": "proc_head_0_0",
+   "to": "proc_pres_0_0"
+  },
+  {
+   "from": "proc_pres_1_0",
+   "to": "span0_next_0_0",
+   "to_dx": -14.0
+  },
+  {
+   "from": "g_vac",
+   "to": "proc_head_0_0",
+   "from_dx": 366
+  },
+  {
+   "from": "coin_head_0_0",
+   "to": "coin_pres_0_0"
+  },
+  {
+   "from": "coin_pres_0_0",
+   "to": "span0_next_0_0",
+   "to_dx": 258.0
+  },
+  {
+   "from": "g_ind",
+   "to": "coin_head_0_0",
+   "from_dx": 0
+  }
+ ],
+ "panels": []
+}

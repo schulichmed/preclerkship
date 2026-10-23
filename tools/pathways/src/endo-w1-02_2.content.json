@@ -1,0 +1,345 @@
+{
+ "name": "diagnosing diabetes overview",
+ "title": "High glucose: the same cut-offs decide prediabetes or diabetes for both types; below the line sit the grey zone and pre-symptomatic type 1 (autoantibodies), above it the presentation, C-peptide and anti-GAD antibodies separate new-onset type 1 from type 2; each column gives presentation, numbered investigations and treatment in order",
+ "col_w": 250,
+ "root": {
+  "title": "High glucose: is it DIABETES, and WHICH TYPE?",
+  "lines": [
+   "the same cut-offs for type 1 and type 2: they mark where RETINOPATHY risk rises",
+   "symptoms (thirst, polyuria, weight loss) → ONE abnormal test is enough · none → repeat on ANOTHER day",
+   "acutely ill (heart attack, sepsis, high-dose steroids) → suspect, confirm once recovered"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_below",
+   "cols": [
+    0,
+    1
+   ],
+   "title": "BELOW the line: NOT YET diabetes",
+   "lines": [
+    "grey zone: fasting 6.1–6.9 · 2-h 75 g 7.8–11.0 mmol/L · glycated hemoglobin (A1c) 6.0–6.4%"
+   ]
+  },
+  {
+   "id": "g_dm",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "AT or ABOVE the line: DIABETES",
+   "lines": [
+    "ANY ONE: fasting ≥ 7.0 · 2-h 75 g or random ≥ 11.1 mmol/L · A1c ≥ 6.5% (adults, NOT if type 1 is suspected)"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_type",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "WHICH TYPE? Usually time and the response to treatment tell",
+   "lines": [
+    "still unsure → C-peptide (is she making insulin?) + anti-glutamic acid decarboxylase (anti-GAD) antibodies"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "pre",
+   "colour": "olive",
+   "drop_label": "grey-zone glucose",
+   "head": [
+    [
+     [
+      "h",
+      "Prediabetes",
+      [
+       "impaired fasting glucose (IFG) or impaired glucose tolerance (IGT)"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "No symptoms",
+      [
+       "type 2 can sit here for YEARS first"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Look for metabolic syndrome",
+      [
+       "• high blood pressure",
+       "• low high-density lipoprotein (HDL), high triglycerides",
+       "• waist-to-hip ratio ↑ (visceral fat)"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "The TARGET for prevention",
+      [
+       "see the PREVENTION OF TYPE 2 DIABETES chart"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "t1e",
+   "colour": "teal",
+   "drop_label": "islet autoantibodies",
+   "head": [
+    [
+     [
+      "h",
+      "Type 1, stages 1–2",
+      [
+       "beta-cell autoimmunity, NO symptoms yet"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Often a relative with type 1",
+      [
+       "• identical twin 50%",
+       "• sibling 5% (no family: 0.4%)"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · COUNT the islet autoantibodies",
+      [
+       "• 1 alone: no added risk",
+       "• 2 or more: risk climbs with each"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Stage 1",
+      [
+       "glucose NORMAL"
+      ]
+     ],
+     [
+      "w",
+      "Stage 2",
+      [
+       "glucose in the GREY ZONE"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "warn",
+      "Stage 3 = SYMPTOMS",
+      [
+       "→ treat as new-onset type 1"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "t1",
+   "colour": "purple",
+   "drop_from": "t_type",
+   "drop_label": "C-peptide ↓ · anti-GAD +",
+   "head": [
+    [
+     [
+      "h",
+      "Type 1: new onset (stage 3)",
+      [
+       "autoimmune beta-cell loss → ABSOLUTE insulin deficiency"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "ACUTE: polyuria, thirst, weight LOSS",
+      [
+       "• new bed-wetting, nocturia",
+       "• appetite unchanged"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Vomiting · abdominal pain · fast breathing · drowsy",
+      [
+       "→ diabetic ketoacidosis (DKA): see the COMPLICATIONS chart"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Random glucose ≥ 11.1",
+      [
+       "+ urine dipstick: glucose AND ketones"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Fasting glucose, A1c: usually unnecessary",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · INSULIN: basal + bolus",
+      [
+       "• 3/day: intermediate (NPH) + fast-acting",
+       "• 4/day: long-acting + fast-acting, or a pump",
+       "~lows: see the COMPLICATIONS chart"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Teach: a multidisciplinary team",
+      [
+       "• glucose 4×/day, every 2–3 h when ill",
+       "• carbohydrate counting",
+       "• pumps, continuous glucose monitors"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "t2",
+   "colour": "orange",
+   "drop_from": "t_type",
+   "drop_label": "C-peptide ↑ · anti-GAD −",
+   "head": [
+    [
+     [
+      "h",
+      "Type 2",
+      [
+       "insulin RESISTANCE + RELATIVE deficiency: both present by diagnosis"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "SLOW: years in the grey zone",
+      [
+       "• few or no symptoms",
+       "• recent weight GAIN, or stopped exercising"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Risk",
+      [
+       "• parent with type 2, previous gestational diabetes",
+       "• Asian, South Asian, Hispanic, Indigenous, African descent"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · Few symptoms → REPEAT the test",
+      [
+       "on another day"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Metabolic syndrome as well?",
+      [
+       "→ even higher cardiovascular risk",
+       "• also ask about sleep apnea"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · Weight, activity, diet",
+      [
+       "glucose can fall BELOW the line → recheck periodically"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Pancreas too weak: stays high",
+      [
+       "needs drugs: see the GLUCOSE-LOWERING DRUGS tree"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": []
+}

@@ -1,0 +1,463 @@
+{
+ "name": "pancreatic disease overview",
+ "title": "Pancreatic disease sorted by acute pain (acute pancreatitis), chronic pain (chronic pancreatitis) or a mass, which is cystic (pseudocyst, or a serous, mucinous or intraductal papillary mucinous neoplasm) or solid (ductal adenocarcinoma), each with presentation, numbered investigations and treatment in order",
+ "col_w": 232,
+ "root": {
+  "title": "Pancreas: ACUTE pain, CHRONIC pain, or a MASS?",
+  "lines": [
+   "acute pancreatitis is a common cause of epigastric pain in the emergency room; chronic pancreatitis an uncommon cause of chronic pain"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_ac",
+   "cols": [
+    0,
+    0
+   ],
+   "title": "ACUTE epigastric pain",
+   "lines": []
+  },
+  {
+   "id": "g_ch",
+   "cols": [
+    1,
+    1
+   ],
+   "title": "CHRONIC pain",
+   "lines": []
+  },
+  {
+   "id": "g_mass",
+   "cols": [
+    2,
+    4
+   ],
+   "title": "A MASS: cystic or solid?",
+   "lines": [
+    "inflammatory · autoimmune · neoplastic · cystic"
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "id": "t_cyst",
+   "cols": [
+    2,
+    3
+   ],
+   "title": "CYSTIC: most are benign pseudocysts",
+   "lines": [
+    "5-15% are neoplasms"
+   ]
+  }
+ ],
+ "sections": [
+  "head",
+  "pres",
+  "inv",
+  "tx"
+ ],
+ "row_names": {
+  "pres": "PRESENTS AS",
+  "inv": "INVESTIGATIONS",
+  "tx": "TREATMENT"
+ },
+ "dashed_sections": [
+  "pres"
+ ],
+ "columns": [
+  {
+   "id": "ap",
+   "colour": "orange",
+   "head": [
+    [
+     [
+      "h",
+      "Acute pancreatitis",
+      [
+       "GALLSTONES #1, then alcohol, after endoscopic retrograde cholangiopancreatography (ERCP)"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "SUDDEN sharp epigastric pain to the BACK",
+      [
+       "• better LEANING FORWARD",
+       "• after a big meal or a binge",
+       "• nausea, vomiting"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "t",
+      "1 · LIPASE ↑",
+      [
+       "more specific than amylase"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Ultrasound: gallstones?",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "3 · Common bile duct stone likely?",
+      [
+       "• HIGH → ERCP",
+       "• LOW → magnetic resonance (MRCP) or endoscopic ultrasound first"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Severe → early CT",
+      [
+       "necrosis?"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · IV fluids, nothing by mouth, analgesia",
+      [
+       "NO prophylactic antibiotics"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Severe: nasojejunal tube or parenteral nutrition",
+      [
+       "necrosis → necrosectomy"
+      ]
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · Gallstone: ERCP, then cholecystectomy",
+      [
+       "ERCP itself: 5% pancreatitis risk"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cp",
+   "colour": "brown",
+   "head": [
+    [
+     [
+      "h",
+      "Chronic pancreatitis",
+      [
+       "ALCOHOL in 70%"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Persistent deep pain",
+      [
+       "• worse with FAT and ALCOHOL",
+       "• STEATORRHEA, weight loss",
+       "• diabetes when severe"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "bad",
+      "Lipase and amylase NOT helpful",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "1 · CT (or MRI): CALCIFICATION",
+      []
+     ]
+    ],
+    [
+     [
+      "w",
+      "2 · Endoscopic ultrasound",
+      [
+       "most sensitive, less available"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Histology can MIMIC cancer",
+      [
+       "correlate clinically"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · STOP alcohol and smoking",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "2 · Pain: often opioids",
+      []
+     ]
+    ],
+    [
+     [
+      "ok",
+      "3 · Malabsorption: pancreatic ENZYME replacement",
+      []
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pc",
+   "colour": "slate",
+   "drop_from": "t_cyst",
+   "drop_label": "after pancreatitis",
+   "head": [
+    [
+     [
+      "h",
+      "Pseudocyst",
+      [
+       "walled-off pancreatic juice, NO epithelial lining",
+       "takes > 4 weeks"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "Pain, vomiting, jaundice",
+      [
+       "recurrent pancreatitis"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · History: pancreatitis > 4 weeks ago?",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "No symptoms → conservative",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "Symptoms or complications → DRAIN",
+      [
+       "endoscopic, percutaneous or surgical"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Complications",
+      [
+       "• infection",
+       "• hemorrhage",
+       "• rupture"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cn",
+   "colour": "purple",
+   "drop_from": "t_cyst",
+   "drop_label": "cystic neoplasm",
+   "head": [
+    [
+     [
+      "h",
+      "Cystic neoplasms",
+      [
+       "always cystic: serous, mucinous, intraductal papillary mucinous"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "A pancreatic CYST",
+      [
+       "may turn malignant"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · Type it: sex, site, look",
+      [
+       "• serous: FEMALE, body or tail, many SMALL cysts",
+       "• mucinous: FEMALE, body or tail",
+       "• intraductal papillary: MALE, HEAD"
+      ]
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "SEROUS: always benign",
+      [
+       "mimic: metastatic renal cell carcinoma (tell the pathologist)"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "MUCINOUS: 15-30% harbour cancer",
+      []
+     ]
+    ],
+    [
+     [
+      "warn",
+      "INTRADUCTAL PAPILLARY: may turn malignant",
+      [
+       "depends on the duct involved"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "ca",
+   "colour": "blue",
+   "drop_label": "solid",
+   "head": [
+    [
+     [
+      "h",
+      "Ductal adenocarcinoma",
+      [
+       "older, male, SMOKER, chronic pancreatitis, family history"
+      ]
+     ]
+    ]
+   ],
+   "pres": [
+    [
+     [
+      "t",
+      "PAINLESS JAUNDICE + weight loss",
+      [
+       "• pain to the mid-back",
+       "• migratory thrombophlebitis (Trousseau)",
+       "• new diabetes"
+      ]
+     ]
+    ]
+   ],
+   "inv": [
+    [
+     [
+      "w",
+      "1 · CT",
+      []
+     ]
+    ],
+    [
+     [
+      "t",
+      "2 · Biopsy: endoscopic ultrasound FNA",
+      [
+       "fine needle aspiration: higher yield than ERCP brushing"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "CA 19-9 to MONITOR",
+      []
+     ]
+    ]
+   ],
+   "tx": [
+    [
+     [
+      "ok",
+      "1 · EARLY, no spread → SURGERY + chemotherapy",
+      [
+       "• head: Whipple",
+       "• tail: distal pancreatectomy"
+      ]
+     ]
+    ],
+    [
+     [
+      "warn",
+      "2 · Usually incurable → PALLIATE",
+      [
+       "• bile duct: ERCP stent or percutaneous drain",
+       "• gastric outlet: duodenal stent or gastrojejunostomy",
+       "• pain: celiac plexus block"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "panels": []
+}

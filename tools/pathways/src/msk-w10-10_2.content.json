@@ -1,0 +1,56 @@
+{
+ "name": "spondyloarthritis overview",
+ "title": "Spondyloarthritis: inflammatory back pain points to ankylosing spondylitis, psoriasis to psoriatic arthritis, and a gut or genital infection weeks before to reactive arthritis; each column gives presentation, exam and tests, and treatment in order",
+ "col_w": 300,
+ "root": {
+  "title": "Inflammatory back pain or lower-limb oligoarthritis, rheumatoid factor NEGATIVE: which spondyloarthritis (SpA)?",
+  "lines": [
+   "shared: sacroiliitis · enthesitis · dactylitis · anterior uveitis · HLA-B27 · raised sedimentation rate and C-reactive protein · good response to anti-inflammatories (NSAIDs)"
+  ]
+ },
+ "groups": [
+  {"id": "g_as", "cols": [0, 0], "title": "Back pain, INFLAMMATORY pattern", "lines": []},
+  {"id": "g_ps", "cols": [1, 1], "title": "Psoriasis (or hidden psoriasis)", "lines": []},
+  {"id": "g_re", "cols": [2, 2], "title": "Gut or genital infection 1-3 weeks before", "lines": []}
+ ],
+ "sections": ["head", "pres", "inv", "tx"],
+ "row_names": {"pres": "PRESENTS AS", "inv": "EXAM · TESTS", "tx": "TREATMENT"},
+ "dashed_sections": ["pres"],
+ "columns": [
+  {"id": "as", "colour": "teal",
+   "head": [[["h", "Ankylosing spondylitis", ["the prototype · HLA-B27 in > 90% (white patients)", "but 8% of white people carry HLA-B27"]]]],
+   "pres": [[["t", "Starts at the sacroiliac joints, climbs", ["• onset < 40, insidious, > 3 months", "• stiffness > 60 min, night pain", "• BETTER with activity"]]],
+            [["w", "Beyond the spine", ["• anterior uveitis (25-30%)", "• aortitis, aortic regurgitation, conduction block", "• upper-lobe fibrosis · lower-limb oligoarthritis"]]]],
+   "inv": [[["t", "1 · Spinal mobility", ["• modified Schober · chest expansion", "• occiput-to-wall, tragus-to-wall"]]],
+           [["t", "2 · Sacroiliac X-ray", ["bilateral, symmetric: iliac-side erosion → sclerosis → fusion", "late: 'bamboo spine'"]]],
+           [["w", "X-ray normal → MRI", ["bone marrow edema = non-radiographic axial SpA"]]]],
+   "tx": [[["ok", "1 · Physiotherapy for ALL", ["posture, chest expansion"]]],
+          [["ok", "2 · NSAIDs (indomethacin best)", ["mild-moderate · watch the gut"]]],
+          [["ok", "3 · Tumour necrosis factor (TNF) or interleukin-17 (IL-17) inhibitor", ["conventional disease-modifying drugs do NOT work in the spine", "~ use them for peripheral disease only"]]]]},
+  {"id": "psa", "colour": "magenta",
+   "head": [[["h", "Psoriatic arthritis", ["5-7% of people with psoriasis", "HLA-B27, B38, B39, DR4"]]]],
+   "pres": [[["t", "Psoriasis comes first in ⅔", ["• arthritis first or together in ⅓", "• hidden: scalp, navel, behind ears, perianal, nails"]]],
+            [["w", "Patterns", ["• asymmetric oligoarthritis (> 50%)", "• axial 20-40% · rheumatoid-like 15-25%", "• mostly distal finger joints 5-10% · arthritis mutilans 5%"]]]],
+   "inv": [[["t", "Nails in 80% · dactylitis", ["• pitting, onycholysis, oil spots", "• conjunctivitis 20% · uveitis 7%"]]],
+           [["w", "Axial: ASYMMETRIC sacroiliitis", ["big non-marginal 'jug-handle' syndesmophytes"]]]],
+   "tx": [[["ok", "1 · Methotrexate (skin + joints)", ["or sulfasalazine, leflunomide", "~ little proof they stop X-ray damage"]]],
+          [["bad", "AVOID hydroxychloroquine", ["severe psoriasis flares"]]],
+          [["ok", "2 · Apremilast or a biologic", ["• TNF inhibitor: skin, joints, spine, nails", "• IL-17: skin, spine + joints · IL-12/23: NOT the spine", "~ apremilast: weaker than biologics"]]]]},
+  {"id": "rea", "colour": "orange",
+   "head": [[["h", "Reactive arthritis", ["young men, 20-40 · HLA-B27 linked", "NOT 'Reiter's syndrome'"]]]],
+   "pres": [[["t", "Trigger 1-3 weeks earlier", ["• gut: Salmonella, Shigella, Campylobacter", "• genitourinary: Chlamydia, other sexual infections"]]],
+            [["w", "Can't see, can't pee, can't climb a tree", ["• conjunctivitis or uveitis", "• urethritis or cervicitis", "• large-joint oligoarthritis, sacroiliitis, enthesitis"]]]],
+   "inv": [[["t", "Psoriasis-like skin", ["• keratoderma blennorrhagicum", "• circinate balanitis"]]],
+           [["bad", "NOT an infection of the joint", ["that is septic arthritis"]]]],
+   "tx": [[["ok", "Treat by symptoms", ["self-limiting, chronic or progressive"]]],
+          [["warn", "Chronic arthritis or sacroiliitis", ["in 15-30%"]]]]}
+ ],
+ "panels": [
+  {"title": "Inflammatory vs mechanical back pain", "items": [
+   "inflammatory: under 40 · insidious · > 3 months · stiffness > 60 min · night pain · BETTER with activity · sacroiliac tender · chest expansion ↓ · neuro deficit unlikely",
+   "mechanical: any age · acute · < 4 weeks · stiffness < 30 min · WORSE with activity · neuro deficit possible"]},
+  {"title": "Also in the family", "items": [
+   "arthritis with Crohn's or ulcerative colitis",
+   "acute anterior uveitis · undifferentiated SpA · juvenile (enthesitis-related)"]}
+ ]
+}
