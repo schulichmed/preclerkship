@@ -1,0 +1,468 @@
+{
+ "name": "soft tissue mass overview",
+ "width": 1124,
+ "title": "A soft tissue mass: under 5 cm with no suspicious feature is excised; over 5 cm or with any suspicious feature is imaged and core-biopsied first, then a benign result is observed, a resectable sarcoma is staged and treated by surgery with radiation, and a non-curable one goes to palliative care",
+ "kinds": {
+  "ex_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ex_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ex_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ben_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ben_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "ben_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "sar_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sar_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "sar_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "pal_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "pal_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "pal_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 426,
+   "w": 260,
+   "h": 634,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 330,
+   "y": 426,
+   "w": 260,
+   "h": 634,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 592,
+   "y": 426,
+   "w": 260,
+   "h": 634,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 854,
+   "y": 426,
+   "w": 260,
+   "h": 634,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 276,
+   "h": 78,
+   "text": "WORKUP"
+  },
+  {
+   "x": 23,
+   "y": 534,
+   "h": 162,
+   "text": "NEXT"
+  },
+  {
+   "x": 23,
+   "y": 736,
+   "h": 316,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 197,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "A soft tissue lump: could it be a SARCOMA? Decide BEFORE anyone cuts it out",
+   "lines": [
+    "benign tumours are 100 times more common · a sarcoma shelled out like a benign lump, with little or no margin, is the 'WHOOPS'"
+   ]
+  },
+  {
+   "id": "g_ok",
+   "x": 45,
+   "y": 138,
+   "w": 250,
+   "h": 98,
+   "kind": "plain",
+   "title": "Under 5 cm, NO suspicious feature",
+   "lines": [
+    "limited growth · minimal symptoms · superficial"
+   ]
+  },
+  {
+   "id": "g_sus",
+   "x": 335,
+   "y": 138,
+   "w": 774,
+   "h": 98,
+   "kind": "plain",
+   "title": "Over 5 cm, OR under 5 cm with ANY suspicious feature",
+   "lines": [
+    "rapid growth · pain · recurrent · deep · fixed · difficult location"
+   ]
+  },
+  {
+   "id": "p_sus",
+   "x": 335,
+   "y": 276,
+   "w": 774,
+   "h": 78,
+   "kind": "info",
+   "title": "IMAGE before biopsy",
+   "lines": [
+    "MRI preferred · CT · rarely ultrasound · or a surgical expert",
+    "then CORE biopsy by someone experienced in sarcoma · NOT fine needle aspiration"
+   ]
+  },
+  {
+   "id": "ex_head_0_0",
+   "x": 45,
+   "y": 434,
+   "w": 250,
+   "h": 60,
+   "kind": "ex_h",
+   "title": "Low risk",
+   "lines": []
+  },
+  {
+   "id": "ben_head_0_0",
+   "x": 335,
+   "y": 434,
+   "w": 250,
+   "h": 60,
+   "kind": "ben_h",
+   "title": "Benign on biopsy",
+   "lines": [
+    "e.g. spindle cell/pleomorphic lipoma"
+   ]
+  },
+  {
+   "id": "sar_head_0_0",
+   "x": 597,
+   "y": 434,
+   "w": 250,
+   "h": 60,
+   "kind": "sar_h",
+   "title": "Sarcoma, resectable",
+   "lines": [
+    "usually a PAINLESS lump"
+   ]
+  },
+  {
+   "id": "pal_head_0_0",
+   "x": 859,
+   "y": 434,
+   "w": 250,
+   "h": 60,
+   "kind": "pal_h",
+   "title": "Not curable",
+   "lines": [
+    "e.g. lung metastases, non-resectable"
+   ]
+  },
+  {
+   "id": "ex_inv_0_0",
+   "x": 45,
+   "y": 534,
+   "w": 250,
+   "h": 162,
+   "kind": "ex_w",
+   "title": "Excisional biopsy is acceptable",
+   "lines": [
+    "complete removal with minimal surrounding tissue"
+   ]
+  },
+  {
+   "id": "ben_inv_0_0",
+   "x": 335,
+   "y": 534,
+   "w": 250,
+   "h": 162,
+   "kind": "ben_w",
+   "title": "Lipoma or liposarcoma?",
+   "lines": [
+    "immunohistochemistry: MDM2 negative, CD34 positive → lipoma"
+   ]
+  },
+  {
+   "id": "sar_inv_0_0",
+   "x": 597,
+   "y": 534,
+   "w": 250,
+   "h": 60,
+   "kind": "sar_w",
+   "title": "1 · Stage: CT chest",
+   "lines": [
+    "the lung is where it spreads"
+   ]
+  },
+  {
+   "id": "sar_inv_1_0",
+   "x": 597,
+   "y": 616,
+   "w": 250,
+   "h": 80,
+   "kind": "sar_w",
+   "title": "2 · Multidisciplinary tumour board",
+   "lines": [
+    "every possible sarcoma"
+   ]
+  },
+  {
+   "id": "pal_inv_0_0",
+   "x": 859,
+   "y": 534,
+   "w": 250,
+   "h": 162,
+   "kind": "pal_w",
+   "title": "Medical oncology",
+   "lines": [
+    "no standard chemotherapy · goals of care · clinical trials"
+   ]
+  },
+  {
+   "id": "ex_tx_0_0",
+   "x": 45,
+   "y": 736,
+   "w": 250,
+   "h": 316,
+   "kind": "ok",
+   "title": "Excise",
+   "lines": []
+  },
+  {
+   "id": "ben_tx_0_0",
+   "x": 335,
+   "y": 736,
+   "w": 250,
+   "h": 316,
+   "kind": "ok",
+   "title": "Observe",
+   "lines": []
+  },
+  {
+   "id": "sar_tx_0_0",
+   "x": 597,
+   "y": 736,
+   "w": 250,
+   "h": 60,
+   "kind": "ok",
+   "title": "Surgery: WIDE resection",
+   "lines": [
+    "a marginal resection is the 'whoops'"
+   ]
+  },
+  {
+   "id": "sar_tx_1_0",
+   "x": 597,
+   "y": 818,
+   "w": 250,
+   "h": 98,
+   "kind": "ok",
+   "title": "± Radiation, mostly PRE-operative",
+   "lines": [
+    "• local recurrence 30% → 10%",
+    "• pre-op: better long-term function"
+   ]
+  },
+  {
+   "id": "sar_tx_2_0",
+   "x": 597,
+   "y": 938,
+   "w": 250,
+   "h": 114,
+   "kind": "warn",
+   "title": "± Chemotherapy: uncommon",
+   "lines": [
+    "• NOT standard after surgery",
+    "• curable with it: osteosarcoma, Ewing sarcoma, rhabdomyosarcoma in young adults"
+   ]
+  },
+  {
+   "id": "pal_tx_0_0",
+   "x": 859,
+   "y": 736,
+   "w": 250,
+   "h": 316,
+   "kind": "ok",
+   "title": "Palliative care",
+   "lines": [
+    "can greatly improve quality of life"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_ok",
+   "path": "M577.0 88V113H170.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_sus",
+   "path": "M577.0 88V113H722.0V138"
+  },
+  {
+   "from": "g_sus",
+   "to": "p_sus"
+  },
+  {
+   "from": "sar_inv_0_0",
+   "to": "sar_inv_1_0"
+  },
+  {
+   "from": "sar_tx_0_0",
+   "to": "sar_tx_1_0"
+  },
+  {
+   "from": "sar_tx_1_0",
+   "to": "sar_tx_2_0"
+  },
+  {
+   "from": "ex_head_0_0",
+   "to": "ex_inv_0_0"
+  },
+  {
+   "from": "ex_inv_0_0",
+   "to": "ex_tx_0_0"
+  },
+  {
+   "from": "g_ok",
+   "to": "ex_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ben_head_0_0",
+   "to": "ben_inv_0_0"
+  },
+  {
+   "from": "ben_inv_0_0",
+   "to": "ben_tx_0_0"
+  },
+  {
+   "from": "p_sus",
+   "to": "ben_head_0_0",
+   "from_dx": -262,
+   "label": "benign",
+   "label_at": [
+    460.0,
+    394
+   ]
+  },
+  {
+   "from": "sar_head_0_0",
+   "to": "sar_inv_0_0"
+  },
+  {
+   "from": "sar_inv_1_0",
+   "to": "sar_tx_0_0"
+  },
+  {
+   "from": "p_sus",
+   "to": "sar_head_0_0",
+   "from_dx": 0,
+   "label": "sarcoma",
+   "label_at": [
+    722.0,
+    394
+   ]
+  },
+  {
+   "from": "pal_head_0_0",
+   "to": "pal_inv_0_0"
+  },
+  {
+   "from": "pal_inv_0_0",
+   "to": "pal_tx_0_0"
+  },
+  {
+   "from": "p_sus",
+   "to": "pal_head_0_0",
+   "from_dx": 262,
+   "label": "metastatic",
+   "label_at": [
+    984.0,
+    394
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "x": 45,
+   "y": 1086,
+   "w": 1064,
+   "title": "History and exam",
+   "items": [
+    "has it GROWN? when first noticed, how big then and now (compare to fruit or nuts)",
+    "pain or numbness: sarcomas are usually painless; significant symptoms → think metastases · recurrence · other lumps · family history",
+    "superficial (subcutaneous) or deep (muscle) · mobile, tethered or fixed · nodes rarely involved"
+   ],
+   "cols": 1
+  }
+ ]
+}
