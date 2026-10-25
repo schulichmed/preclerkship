@@ -4,14 +4,17 @@ Purpose: Draw the upper extremity radiology overview: a visual map of the module
          X-rays, read in order (systematic read -> shoulder -> elbow -> wrist -> osteoarthritis).
 Author:  Noor Simsam
 Date:    2026-10-24
-Input:   the module PDF "Upper Limb Radiology" (--pdf); every picture is cropped from it
+Input:   the module PDF "Upper Limb Radiology" (--pdf), which every picture is cropped from,
+         and the giant cell tumour slide (--gct), which the PDF export drops after its caption
 Output:  an SVG with the crops embedded as JPEG data URIs (--out), optional PNG preview (--png)
 
 Unlike the other drawn charts this one is mostly pictures, which pathway_svg cannot place,
 so it lays itself out. Text is measured with pathway_svg's fonts, so it wraps the same way.
-The deck has no Grashey or giant cell tumour image; those two stay text only.
+The module has no Grashey image; that view stays text only. Each elbow check shows the
+slide's normal films, and the same slide's abnormal films become a finding of their own.
 
     python3 tools/pathways/src/msk-w9-02_2.py --pdf "<Upper Limb Radiology.pdf>" \
+        --gct "<vault>/Attachments/giant cell tumour of the distal radius - lecture slide.jpg" \
         --out "<vault>/Attachments/upper extremity radiology overview.svg" --png /tmp/p.png
 """
 
@@ -47,7 +50,8 @@ FIT = 0.88                  # wrap short of the box: a substitute face runs wide
 HEADER_H = 34
 
 # (page, image index on the page) -> crop box as fractions of the slide image, keeping
-# the annotated panel where a slide pairs a plain film with a labelled one
+# the annotated panel where a slide pairs a plain film with a labelled one; a list of
+# sources is set side by side
 CROPS = {
     "bone": ((13, 0), (0.52, 0, 1, 1)),
     "ap_shoulder": ((17, 0), (0.5, 0, 1, 1)),
@@ -59,8 +63,11 @@ CROPS = {
     "ap_elbow": ((33, 0), (0.52, 0, 1, 1)),
     "lat_elbow": ((39, 0), (0, 0, 1, 1)),             # p34's labelled lateral carries a logo
     "fat_pads": ((41, 0), (0, 0, 1, 1)),
-    "humeral_line": ((42, 0), (0, 0, 1, 1)),
-    "radiocapitellar": ((44, 0), (0, 0, 1, 1)),
+    "effusion": [((41, 1), (0, 0, 1, 1)), ((41, 2), (0, 0, 1, 1))],   # normal | effusion
+    "humeral_line": ((42, 0), (0, 0, 0.475, 1)),          # two normal children
+    "supracondylar": ((42, 0), (0.49, 0, 1, 1)),          # line off the capitellum's centre
+    "radiocapitellar": ((44, 0), (0, 0, 0.454, 1)),       # normal A-D
+    "radiocapitellar_abn": ((44, 0), (0.535, 0, 1, 1)),
     "oa_elbow": ((45, 0), (0.5, 0, 1, 1)),
     "lipoma": ((46, 0), (0.5, 0, 1, 1)),
     "carpals": ((50, 0), (0.53, 0, 1, 1)),
@@ -125,26 +132,37 @@ BANDS = [
                 "• Radius: head, neck, **tuberosity** (biceps)",
                 "• **The best view for alignment**"]},
         ]},
-        {"label": "CHECK ON THE LATERAL: fat pads + two lines", "cards": [
+        {"label": "CHECK ON THE LATERAL: fat pads + two lines (normal films)", "cards": [
             {"title": "Fat pads", "img": "fat_pads", "lines": [
                 "• Anterior fat pad = **normal**",
-                "• **Posterior fat pad seen = ALWAYS abnormal** (fracture or effusion)",
-                "• Child → **supracondylar fracture** · adult → **radial head or neck fracture**"]},
+                "• Posterior fat pad: **not normally seen**",
+                "• Olecranon bursa: not normally distended"]},
             {"title": "Anterior humeral line", "img": "humeral_line", "lines": [
-                "• Along the anterior humeral cortex → **centre of the capitellum**",
-                "• Through its anterior part + posterior fat pad in a child → supracondylar fracture"]},
+                "• Along the anterior humeral cortex → **centre of the capitellum** (slight variation is fine)",
+                "• Wider physis = younger child"]},
             {"title": "Radiocapitellar line", "img": "radiocapitellar", "lines": [
-                "• Along the radial shaft → **centre of the capitellum on EVERY view**",
-                "• Misses → **radial head dislocation**"]},
+                "• Along the radial shaft → **centre of the capitellum on EVERY view** (AP, oblique, lateral)"]},
         ]},
-        {"label": "FINDINGS (osteoarthritis: see the last band)", "cards": [
+        {"label": "FINDINGS: TRAUMA", "cards": [
+            {"title": "Effusion: posterior fat pad sign", "img": "effusion", "kind": "bad", "lines": [
+                "• Normal (left) | prominent anterior + **visible posterior fat pad** (right)",
+                "• **Posterior fat pad seen = ALWAYS abnormal**",
+                "• Child → **supracondylar fracture** · adult → **radial head or neck fracture**"]},
+            {"title": "Supracondylar fracture (child)", "img": "supracondylar", "kind": "bad", "lines": [
+                "• Anterior humeral line through the **anterior part** of the capitellum",
+                "• + elevated posterior fat pad + open physis"]},
+            {"title": "Radiocapitellar line misses", "img": "radiocapitellar_abn", "kind": "bad", "lines": [
+                "• Supracondylar fractures, one with an elevated posterior fat pad",
+                "• Last film: **anterior radial head dislocation**, the head fully in front of the capitellum"]},
+        ]},
+        {"label": "FINDINGS: SOFT TISSUES (osteoarthritis: see the last band)", "cards": [
             {"title": "Soft-tissue mass, normal bones", "img": "lipoma", "kind": "bad", "lines": [
                 "• Well-defined, low-density oval mass = **lipoma** (confirmed on CT or MRI)",
                 "• **Always look at the soft tissues**"]},
         ]},
     ]},
     {"name": "WRIST", "colour": "orange", "rows": [
-        {"label": "STANDARD VIEWS: AP · lateral", "cards": [
+        {"label": "STANDARD VIEWS: AP · lateral, then the arcs of Gilula on the AP", "cards": [
             {"title": "AP: carpal bones, radial → ulnar", "img": "carpals", "lines": [
                 "• Proximal row: **scaphoid, lunate, triquetrum, pisiform**",
                 "• Distal row: **trapezium, trapezoid, capitate, hamate**",
@@ -153,24 +171,23 @@ BANDS = [
             {"title": "Lateral", "img": "lat_wrist", "lines": [
                 "• **Lister's tubercle** (dorsal radius): check it for fracture",
                 "• Carpals overlap, so **the AP is essential for fractures**"]},
-        ]},
-        {"label": "CHECK THE ARCS OF GILULA, THEN EVERY BONE: a fracture can keep the arcs intact", "cards": [
             {"title": "Arcs of Gilula (AP)", "img": "gilula", "lines": [
                 "1 · Proximal surfaces of the proximal row",
                 "2 · Distal surfaces of the proximal row",
                 "3 · Proximal surfaces of the distal row",
                 "• **Break, step-off or widening → carpal injury**"]},
+        ]},
+        {"label": "FINDINGS: check every bone, since a fracture can keep the arcs intact", "cards": [
             {"title": "Scaphoid + triquetrum fractures", "img": "scaphoid", "kind": "bad", "lines": [
                 "• Lucent line through the scaphoid's proximal pole and the triquetrum",
                 "• Arcs preserved"]},
             {"title": "Distal radius + ulnar styloid", "img": "radius_fracture", "kind": "bad", "lines": [
                 "• Transverse distal radius fracture + ulnar styloid base",
                 "• Arcs intact"]},
-            {"title": "Giant cell tumour", "img": None, "kind": "bad", "lines": [
-                "• Of bone, in the distal radius: expanded",
-                "• Large **lytic** lesion, thin cortex",
-                "• Reaches the joint surface",
-                "(no image in the module)"]},
+            {"title": "Giant cell tumour of bone", "img": "gct", "kind": "bad", "wide": True, "lines": [
+                "• **Expanded** distal radius, large **lytic** lesion",
+                "• Markedly thinned cortex",
+                "• Reaches the subarticular surface"]},
         ]},
     ]},
     {"name": "OSTEOARTHRITIS", "colour": "brown", "rows": [
@@ -188,16 +205,34 @@ BANDS = [
 ]
 
 
-def load_crops(pdf: Path) -> dict:
-    """Crop every picture out of the module PDF, keyed as in CROPS."""
+def load_crops(pdf: Path, gct: Path) -> dict:
+    """Crop every picture out of the module PDF, keyed as in CROPS, plus the tumour slide."""
     doc = pymupdf.open(pdf)
-    out = {}
-    for key, ((page, idx), (a, b, c, d)) in CROPS.items():
+
+    def crop(source: tuple) -> Image.Image:
+        (page, idx), (a, b, c, d) = source
         xref = doc[page - 1].get_images(full=True)[idx][0]
         im = Image.open(io.BytesIO(doc.extract_image(xref)["image"])).convert("RGB")
         w, h = im.size
-        out[key] = trim_white(im.crop((int(a * w), int(b * h), int(c * w), int(d * h))))
+        return trim_white(im.crop((int(a * w), int(b * h), int(c * w), int(d * h))))
+
+    out = {key: side_by_side([crop(s) for s in src]) if isinstance(src, list) else crop(src)
+           for key, src in CROPS.items()}
+    out["gct"] = Image.open(gct).convert("RGB")
     return out
+
+
+def side_by_side(ims: list) -> Image.Image:
+    """Films at one height in a row, on black with a thin gap."""
+    h = min(im.height for im in ims)
+    ims = [im.resize((round(im.width * h / im.height), h)) for im in ims]
+    gap = 6
+    row = Image.new("RGB", (sum(im.width for im in ims) + gap * (len(ims) - 1), h), "black")
+    x = 0
+    for im in ims:
+        row.paste(im, (x, 0))
+        x += im.width + gap
+    return row
 
 
 def trim_white(im: Image.Image) -> Image.Image:
@@ -415,11 +450,12 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[1])
     ap.add_argument("--pdf", type=Path, required=True)
+    ap.add_argument("--gct", type=Path, required=True, help="the giant cell tumour slide image")
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--png", type=Path)
     args = ap.parse_args()
 
-    crops = load_crops(args.pdf)
+    crops = load_crops(args.pdf, args.gct)
     body, height = build(crops)
     colours = [MUTED] + [PALETTE[b["colour"]][0] for b in BANDS]
     markers = "".join(f'<marker id="ah{c[1:]}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" '
