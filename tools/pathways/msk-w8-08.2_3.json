@@ -1,0 +1,765 @@
+{
+ "name": "wrist and hand overview",
+ "width": 1324,
+ "title": "A wrist or hand complaint splits first on a fall or a numb hand: after a fall on an outstretched hand, a distal radius fracture is judged on X-ray as crooked, short or not smooth and reduced closed, or surgically if that fails, and a scaphoid fracture is treated as fractured even with a normal X-ray, cast if undisplaced or distal and operated if displaced or proximal; numbness splits by which fingers into carpal tunnel syndrome (median) and ulnar neuropathy at the wrist in Guyon's canal, each worked up against its nerve-root mimic with EMG and nerve conduction studies and treated in order from education to surgical release",
+ "kinds": {
+  "dr_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "dr_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "dr_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "sc_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sc_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "sc_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "cts_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cts_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "cts_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "uln_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "uln_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "uln_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ]
+ },
+ "bands": [
+  {
+   "x": 40,
+   "y": 270,
+   "w": 310,
+   "h": 1060,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
+  },
+  {
+   "x": 352,
+   "y": 270,
+   "w": 310,
+   "h": 1060,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 692,
+   "y": 270,
+   "w": 310,
+   "h": 1060,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 1004,
+   "y": 270,
+   "w": 310,
+   "h": 1060,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  }
+ ],
+ "row_labels": [
+  {
+   "x": 23,
+   "y": 396,
+   "h": 198,
+   "text": "PRESENTS AS"
+  },
+  {
+   "x": 23,
+   "y": 634,
+   "h": 150,
+   "text": "CAUSES & RISKS"
+  },
+  {
+   "x": 23,
+   "y": 824,
+   "h": 142,
+   "text": "WORKUP"
+  },
+  {
+   "x": 23,
+   "y": 1006,
+   "h": 316,
+   "text": "TREATMENT"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "root",
+   "x": 297,
+   "y": 10,
+   "w": 760,
+   "kind": "dark",
+   "title": "Wrist or hand complaint: a FALL, or a NUMB, TINGLING hand?",
+   "lines": [
+    "fracture: age, activity level and displacement decide the treatment",
+    "nerve: which fingers, and is it the wrist or the neck?"
+   ]
+  },
+  {
+   "id": "g_fall",
+   "x": 45,
+   "y": 138,
+   "w": 612,
+   "h": 60,
+   "kind": "plain",
+   "title": "Fall on an outstretched hand (FOOSH): WHICH BONE?",
+   "lines": [
+    "localized pain · tenderness over the bone"
+   ]
+  },
+  {
+   "id": "g_numb",
+   "x": 697,
+   "y": 138,
+   "w": 612,
+   "h": 60,
+   "kind": "plain",
+   "title": "Numbness or tingling: WHICH FINGERS?",
+   "lines": [
+    "both are entrapments AT THE WRIST"
+   ]
+  },
+  {
+   "id": "dr_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 300,
+   "h": 78,
+   "kind": "dr_h",
+   "title": "Distal radius fracture",
+   "lines": [
+    "very common"
+   ]
+  },
+  {
+   "id": "sc_head_0_0",
+   "x": 357,
+   "y": 278,
+   "w": 300,
+   "h": 78,
+   "kind": "sc_h",
+   "title": "Scaphoid fracture",
+   "lines": [
+    "the most common carpal fracture",
+    "young people"
+   ]
+  },
+  {
+   "id": "cts_head_0_0",
+   "x": 697,
+   "y": 278,
+   "w": 300,
+   "h": 78,
+   "kind": "cts_h",
+   "title": "Carpal tunnel syndrome (CTS)",
+   "lines": [
+    "median nerve in the carpal tunnel"
+   ]
+  },
+  {
+   "id": "uln_head_0_0",
+   "x": 1009,
+   "y": 278,
+   "w": 300,
+   "h": 78,
+   "kind": "uln_h",
+   "title": "Ulnar neuropathy at the wrist",
+   "lines": [
+    "ulnar nerve in Guyon's canal"
+   ]
+  },
+  {
+   "id": "dr_clue_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 300,
+   "h": 198,
+   "kind": "dr_t",
+   "title": "Localized pain after a FOOSH",
+   "lines": [
+    "poor function if the anatomy is not restored"
+   ]
+  },
+  {
+   "id": "sc_clue_0_0",
+   "x": 357,
+   "y": 396,
+   "w": 300,
+   "h": 198,
+   "kind": "sc_t",
+   "title": "Swelling + localized tenderness",
+   "lines": [
+    "in the snuffbox"
+   ]
+  },
+  {
+   "id": "cts_clue_0_0",
+   "x": 697,
+   "y": 396,
+   "w": 300,
+   "h": 96,
+   "kind": "cts_t",
+   "title": "Thumb, index, middle + ½ ring finger",
+   "lines": [
+    "• numbness and tingling, often AT NIGHT",
+    "• worse with the wrist flexed or extended",
+    "• ± thumb weakness (abductor pollicis brevis)"
+   ]
+  },
+  {
+   "id": "cts_clue_1_0",
+   "x": 697,
+   "y": 514,
+   "w": 300,
+   "h": 80,
+   "kind": "cts_w",
+   "title": "Median function ABOVE the tunnel normal",
+   "lines": [
+    "maybe Tinel's and Phalen's signs"
+   ]
+  },
+  {
+   "id": "uln_clue_0_0",
+   "x": 1009,
+   "y": 396,
+   "w": 300,
+   "h": 198,
+   "kind": "uln_t",
+   "title": "Little finger + ½ ring finger",
+   "lines": [
+    "• reduced feeling (hypoesthesia)",
+    "• weak intrinsic hand muscles"
+   ]
+  },
+  {
+   "id": "dr_cause_0_0",
+   "x": 45,
+   "y": 634,
+   "w": 300,
+   "h": 150,
+   "kind": "dr_w",
+   "title": "Left uncorrected",
+   "lines": [
+    "• crooked: forearm rotation restricted",
+    "• short: ulnar impaction syndrome",
+    "• step > 1 mm: radiocarpal arthritis → fusion"
+   ]
+  },
+  {
+   "id": "sc_cause_0_0",
+   "x": 357,
+   "y": 634,
+   "w": 300,
+   "h": 150,
+   "kind": "sc_w",
+   "title": "Retrograde blood flow",
+   "lines": [
+    "• a missed fracture → nonunion",
+    "• osteonecrosis",
+    "• late arthrosis"
+   ]
+  },
+  {
+   "id": "cts_cause_0_0",
+   "x": 697.0,
+   "y": 634,
+   "w": 145.0,
+   "h": 150,
+   "kind": "cts_w",
+   "title": "Less space",
+   "lines": [
+    "• fracture, ganglia",
+    "• flexor tenosynovitis",
+    "• rheumatologic inflammation",
+    "• pregnancy, acromegaly"
+   ]
+  },
+  {
+   "id": "cts_cause_0_1",
+   "x": 852.0,
+   "y": 634,
+   "w": 145.0,
+   "h": 150,
+   "kind": "cts_w",
+   "title": "Vulnerable nerve",
+   "lines": [
+    "• diabetes",
+    "• amyloidosis",
+    "• alcohol",
+    "• very often IDIOPATHIC"
+   ]
+  },
+  {
+   "id": "uln_cause_0_0",
+   "x": 1009,
+   "y": 634,
+   "w": 300,
+   "h": 150,
+   "kind": "uln_w",
+   "title": "Less space",
+   "lines": [
+    "• fracture, ganglia",
+    "• rheumatologic inflammation",
+    "• COMPRESSION: 'handlebar neuropathy'"
+   ]
+  },
+  {
+   "id": "dr_inv_0_0",
+   "x": 45,
+   "y": 824,
+   "w": 300,
+   "h": 142,
+   "kind": "dr_t",
+   "title": "X-ray: 3 questions",
+   "lines": [
+    "• CROOKED? normal 12° palmar tilt on the lateral",
+    "• SHORT? ulnar variance > neutral (compare sides)",
+    "• SMOOTH? a step > 1 mm"
+   ]
+  },
+  {
+   "id": "sc_inv_0_0",
+   "x": 357,
+   "y": 824,
+   "w": 300,
+   "h": 60,
+   "kind": "sc_t",
+   "title": "1 · X-ray",
+   "lines": [
+    "usually sufficient"
+   ]
+  },
+  {
+   "id": "sc_inv_1_0",
+   "x": 357,
+   "y": 906,
+   "w": 300,
+   "h": 60,
+   "kind": "sc_t",
+   "title": "2 · X-ray NORMAL → be SUSPICIOUS",
+   "lines": [
+    "treat it as fractured + CT or MRI"
+   ]
+  },
+  {
+   "id": "cts_inv_0_0",
+   "x": 697,
+   "y": 824,
+   "w": 300,
+   "h": 60,
+   "kind": "cts_t",
+   "title": "1 · Think of C6 RADICULOPATHY",
+   "lines": [
+    "also tendinopathy, thumb-base arthritis"
+   ]
+  },
+  {
+   "id": "cts_inv_1_0",
+   "x": 697,
+   "y": 906,
+   "w": 300,
+   "h": 60,
+   "kind": "cts_t",
+   "title": "2 · EMG + nerve conduction studies",
+   "lines": [
+    "nerve? CTS or C6? how severe?"
+   ]
+  },
+  {
+   "id": "uln_inv_0_0",
+   "x": 1009,
+   "y": 824,
+   "w": 300,
+   "h": 60,
+   "kind": "uln_t",
+   "title": "1 · Think of C8 RADICULOPATHY",
+   "lines": [
+    "also the ulnar nerve at the ELBOW"
+   ]
+  },
+  {
+   "id": "uln_inv_1_0",
+   "x": 1009,
+   "y": 906,
+   "w": 300,
+   "h": 60,
+   "kind": "uln_t",
+   "title": "2 · EMG + nerve conduction studies",
+   "lines": [
+    "nerve? elbow, wrist or C8? how severe?"
+   ]
+  },
+  {
+   "id": "dr_tx_0_0",
+   "x": 45,
+   "y": 1006,
+   "w": 300,
+   "h": 132,
+   "kind": "ok",
+   "title": "1 · CLOSED reduction + cast",
+   "lines": [
+    "• analgesia: hematoma block (1% lidocaine), regional, sedation",
+    "• traction → INCREASE the deformity → correct",
+    "• 3-point mould: well moulded is NOT tight",
+    "~ forgiving at the extremes of age"
+   ]
+  },
+  {
+   "id": "dr_tx_1_0",
+   "x": 45,
+   "y": 1160,
+   "w": 300,
+   "h": 98,
+   "kind": "warn",
+   "title": "2 · Still crooked, short or not smooth → SURGERY",
+   "lines": [
+    "open reduction internal fixation (ORIF) or external fixation"
+   ]
+  },
+  {
+   "id": "dr_tx_2_0",
+   "x": 45,
+   "y": 1280,
+   "w": 300,
+   "h": 42,
+   "kind": "ok",
+   "title": "3 · Rehabilitate",
+   "lines": []
+  },
+  {
+   "id": "sc_tx_0_0",
+   "x": 357.0,
+   "y": 1006,
+   "w": 145.0,
+   "h": 316,
+   "kind": "ok",
+   "title": "Undisplaced or DISTAL pole",
+   "lines": [
+    "cast until union"
+   ]
+  },
+  {
+   "id": "sc_tx_0_1",
+   "x": 512.0,
+   "y": 1006,
+   "w": 145.0,
+   "h": 316,
+   "kind": "warn",
+   "title": "Displaced or PROXIMAL pole",
+   "lines": [
+    "surgery (volar approach)"
+   ]
+  },
+  {
+   "id": "cts_tx_0_0",
+   "x": 697,
+   "y": 1006,
+   "w": 300,
+   "h": 66,
+   "kind": "ok",
+   "title": "1 · Education",
+   "lines": [
+    "reversible if caught early"
+   ]
+  },
+  {
+   "id": "cts_tx_1_0",
+   "x": 697,
+   "y": 1094,
+   "w": 300,
+   "h": 86,
+   "kind": "ok",
+   "title": "2 · Rigid wrist-hand orthosis, OVERNIGHT",
+   "lines": [
+    "avoid aggravating positions, vibrating tools"
+   ]
+  },
+  {
+   "id": "cts_tx_2_0",
+   "x": 697,
+   "y": 1202,
+   "w": 300,
+   "h": 48,
+   "kind": "ok",
+   "title": "3 · Corticosteroid injection",
+   "lines": []
+  },
+  {
+   "id": "cts_tx_3_0",
+   "x": 697,
+   "y": 1272,
+   "w": 300,
+   "h": 48,
+   "kind": "warn",
+   "title": "4 · Carpal tunnel release",
+   "lines": []
+  },
+  {
+   "id": "uln_tx_0_0",
+   "x": 1009,
+   "y": 1006,
+   "w": 300,
+   "h": 97,
+   "kind": "ok",
+   "title": "1 · Education",
+   "lines": [
+    "reversible if caught early"
+   ]
+  },
+  {
+   "id": "uln_tx_1_0",
+   "x": 1009,
+   "y": 1125,
+   "w": 300,
+   "h": 97,
+   "kind": "ok",
+   "title": "2 · Relieve the pressure",
+   "lines": [
+    "specialized gloves · change the handlebars"
+   ]
+  },
+  {
+   "id": "uln_tx_2_0",
+   "x": 1009,
+   "y": 1244,
+   "w": 300,
+   "h": 79,
+   "kind": "warn",
+   "title": "3 · Guyon's canal release",
+   "lines": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "root",
+   "to": "g_fall",
+   "path": "M677.0 88V113H351.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_numb",
+   "path": "M677.0 88V113H1003.0V138"
+  },
+  {
+   "from": "cts_clue_0_0",
+   "to": "cts_clue_1_0"
+  },
+  {
+   "from": "sc_inv_0_0",
+   "to": "sc_inv_1_0"
+  },
+  {
+   "from": "cts_inv_0_0",
+   "to": "cts_inv_1_0"
+  },
+  {
+   "from": "uln_inv_0_0",
+   "to": "uln_inv_1_0"
+  },
+  {
+   "from": "dr_tx_0_0",
+   "to": "dr_tx_1_0"
+  },
+  {
+   "from": "dr_tx_1_0",
+   "to": "dr_tx_2_0"
+  },
+  {
+   "from": "cts_tx_0_0",
+   "to": "cts_tx_1_0"
+  },
+  {
+   "from": "cts_tx_1_0",
+   "to": "cts_tx_2_0"
+  },
+  {
+   "from": "cts_tx_2_0",
+   "to": "cts_tx_3_0"
+  },
+  {
+   "from": "uln_tx_0_0",
+   "to": "uln_tx_1_0"
+  },
+  {
+   "from": "uln_tx_1_0",
+   "to": "uln_tx_2_0"
+  },
+  {
+   "from": "dr_head_0_0",
+   "to": "dr_clue_0_0"
+  },
+  {
+   "from": "dr_clue_0_0",
+   "to": "dr_cause_0_0"
+  },
+  {
+   "from": "dr_cause_0_0",
+   "to": "dr_inv_0_0"
+  },
+  {
+   "from": "dr_inv_0_0",
+   "to": "dr_tx_0_0"
+  },
+  {
+   "from": "g_fall",
+   "to": "dr_head_0_0",
+   "from_dx": -156,
+   "label": "RADIUS",
+   "label_at": [
+    195.0,
+    238
+   ]
+  },
+  {
+   "from": "sc_head_0_0",
+   "to": "sc_clue_0_0"
+  },
+  {
+   "from": "sc_clue_0_0",
+   "to": "sc_cause_0_0"
+  },
+  {
+   "from": "sc_cause_0_0",
+   "to": "sc_inv_0_0"
+  },
+  {
+   "from": "sc_inv_1_0",
+   "to": "sc_tx_0_0",
+   "from_dx": -77.5
+  },
+  {
+   "from": "sc_inv_1_0",
+   "to": "sc_tx_0_1",
+   "from_dx": 77.5
+  },
+  {
+   "from": "g_fall",
+   "to": "sc_head_0_0",
+   "from_dx": 156,
+   "label": "SCAPHOID",
+   "label_at": [
+    507.0,
+    238
+   ]
+  },
+  {
+   "from": "cts_head_0_0",
+   "to": "cts_clue_0_0"
+  },
+  {
+   "from": "cts_clue_1_0",
+   "to": "cts_cause_0_0",
+   "from_dx": -77.5
+  },
+  {
+   "from": "cts_clue_1_0",
+   "to": "cts_cause_0_1",
+   "from_dx": 77.5
+  },
+  {
+   "from": "cts_cause_0_0",
+   "to": "cts_inv_0_0",
+   "to_dx": -77.5
+  },
+  {
+   "from": "cts_cause_0_1",
+   "to": "cts_inv_0_0",
+   "to_dx": 77.5
+  },
+  {
+   "from": "cts_inv_1_0",
+   "to": "cts_tx_0_0"
+  },
+  {
+   "from": "g_numb",
+   "to": "cts_head_0_0",
+   "from_dx": -156,
+   "label": "MEDIAN 3½",
+   "label_at": [
+    847.0,
+    238
+   ]
+  },
+  {
+   "from": "uln_head_0_0",
+   "to": "uln_clue_0_0"
+  },
+  {
+   "from": "uln_clue_0_0",
+   "to": "uln_cause_0_0"
+  },
+  {
+   "from": "uln_cause_0_0",
+   "to": "uln_inv_0_0"
+  },
+  {
+   "from": "uln_inv_1_0",
+   "to": "uln_tx_0_0"
+  },
+  {
+   "from": "g_numb",
+   "to": "uln_head_0_0",
+   "from_dx": 156,
+   "label": "ULNAR 1½",
+   "label_at": [
+    1159.0,
+    238
+   ]
+  }
+ ],
+ "panels": []
+}

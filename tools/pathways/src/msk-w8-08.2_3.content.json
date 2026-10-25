@@ -1,0 +1,134 @@
+{
+ "name": "wrist and hand overview",
+ "title": "A wrist or hand complaint splits first on a fall or a numb hand: after a fall on an outstretched hand, a distal radius fracture is judged on X-ray as crooked, short or not smooth and reduced closed, or surgically if that fails, and a scaphoid fracture is treated as fractured even with a normal X-ray, cast if undisplaced or distal and operated if displaced or proximal; numbness splits by which fingers into carpal tunnel syndrome (median) and ulnar neuropathy at the wrist in Guyon's canal, each worked up against its nerve-root mimic with EMG and nerve conduction studies and treated in order from education to surgical release",
+ "col_w": 300,
+ "root": {
+  "title": "Wrist or hand complaint: a FALL, or a NUMB, TINGLING hand?",
+  "lines": [
+   "fracture: age, activity level and displacement decide the treatment",
+   "nerve: which fingers, and is it the wrist or the neck?"
+  ]
+ },
+ "groups": [
+  {
+   "id": "g_fall",
+   "cols": [0, 1],
+   "title": "Fall on an outstretched hand (FOOSH): WHICH BONE?",
+   "lines": ["localized pain · tenderness over the bone"]
+  },
+  {
+   "id": "g_numb",
+   "cols": [2, 3],
+   "title": "Numbness or tingling: WHICH FINGERS?",
+   "lines": ["both are entrapments AT THE WRIST"]
+  }
+ ],
+ "sections": ["head", "clue", "cause", "inv", "tx"],
+ "row_names": {
+  "clue": "PRESENTS AS",
+  "cause": "CAUSES & RISKS",
+  "inv": "WORKUP",
+  "tx": "TREATMENT"
+ },
+ "columns": [
+  {
+   "id": "dr",
+   "colour": "blue",
+   "drop_label": "RADIUS",
+   "head": [[["h", "Distal radius fracture", ["very common"]]]],
+   "clue": [[["t", "Localized pain after a FOOSH", ["poor function if the anatomy is not restored"]]]],
+   "cause": [[["w", "Left uncorrected", [
+    "• crooked: forearm rotation restricted",
+    "• short: ulnar impaction syndrome",
+    "• step > 1 mm: radiocarpal arthritis → fusion"]]]],
+   "inv": [[["t", "X-ray: 3 questions", [
+    "• CROOKED? normal 12° palmar tilt on the lateral",
+    "• SHORT? ulnar variance > neutral (compare sides)",
+    "• SMOOTH? a step > 1 mm"]]]],
+   "tx": [
+    [["ok", "1 · CLOSED reduction + cast", [
+     "• analgesia: hematoma block (1% lidocaine), regional, sedation",
+     "• traction → INCREASE the deformity → correct",
+     "• 3-point mould: well moulded is NOT tight",
+     "~ forgiving at the extremes of age"]]],
+    [["warn", "2 · Still crooked, short or not smooth → SURGERY", ["open reduction internal fixation (ORIF) or external fixation"]]],
+    [["ok", "3 · Rehabilitate", []]]
+   ]
+  },
+  {
+   "id": "sc",
+   "colour": "magenta",
+   "drop_label": "SCAPHOID",
+   "head": [[["h", "Scaphoid fracture", ["the most common carpal fracture", "young people"]]]],
+   "clue": [[["t", "Swelling + localized tenderness", ["in the snuffbox"]]]],
+   "cause": [[["w", "Retrograde blood flow", [
+    "• a missed fracture → nonunion",
+    "• osteonecrosis",
+    "• late arthrosis"]]]],
+   "inv": [
+    [["t", "1 · X-ray", ["usually sufficient"]]],
+    [["t", "2 · X-ray NORMAL → be SUSPICIOUS", ["treat it as fractured + CT or MRI"]]]
+   ],
+   "tx": [
+    [["ok", "Undisplaced or DISTAL pole", ["cast until union"]],
+     ["warn", "Displaced or PROXIMAL pole", ["surgery (volar approach)"]]]
+   ]
+  },
+  {
+   "id": "cts",
+   "colour": "teal",
+   "drop_label": "MEDIAN 3½",
+   "head": [[["h", "Carpal tunnel syndrome (CTS)", ["median nerve in the carpal tunnel"]]]],
+   "clue": [
+    [["t", "Thumb, index, middle + ½ ring finger", [
+     "• numbness and tingling, often AT NIGHT",
+     "• worse with the wrist flexed or extended",
+     "• ± thumb weakness (abductor pollicis brevis)"]]],
+    [["w", "Median function ABOVE the tunnel normal", ["maybe Tinel's and Phalen's signs"]]]
+   ],
+   "cause": [[["w", "Less space", [
+    "• fracture, ganglia",
+    "• flexor tenosynovitis",
+    "• rheumatologic inflammation",
+    "• pregnancy, acromegaly"]],
+    ["w", "Vulnerable nerve", [
+    "• diabetes",
+    "• amyloidosis",
+    "• alcohol",
+    "• very often IDIOPATHIC"]]]],
+   "inv": [
+    [["t", "1 · Think of C6 RADICULOPATHY", ["also tendinopathy, thumb-base arthritis"]]],
+    [["t", "2 · EMG + nerve conduction studies", ["nerve? CTS or C6? how severe?"]]]
+   ],
+   "tx": [
+    [["ok", "1 · Education", ["reversible if caught early"]]],
+    [["ok", "2 · Rigid wrist-hand orthosis, OVERNIGHT", ["avoid aggravating positions, vibrating tools"]]],
+    [["ok", "3 · Corticosteroid injection", []]],
+    [["warn", "4 · Carpal tunnel release", []]]
+   ]
+  },
+  {
+   "id": "uln",
+   "colour": "orange",
+   "drop_label": "ULNAR 1½",
+   "head": [[["h", "Ulnar neuropathy at the wrist", ["ulnar nerve in Guyon's canal"]]]],
+   "clue": [[["t", "Little finger + ½ ring finger", [
+    "• reduced feeling (hypoesthesia)",
+    "• weak intrinsic hand muscles"]]]],
+   "cause": [[["w", "Less space", [
+    "• fracture, ganglia",
+    "• rheumatologic inflammation",
+    "• COMPRESSION: 'handlebar neuropathy'"]]]],
+   "inv": [
+    [["t", "1 · Think of C8 RADICULOPATHY", ["also the ulnar nerve at the ELBOW"]]],
+    [["t", "2 · EMG + nerve conduction studies", ["nerve? elbow, wrist or C8? how severe?"]]]
+   ],
+   "tx": [
+    [["ok", "1 · Education", ["reversible if caught early"]]],
+    [["ok", "2 · Relieve the pressure", ["specialized gloves · change the handlebars"]]],
+    [["warn", "3 · Guyon's canal release", []]]
+   ]
+  }
+ ],
+ "panels": []
+}
