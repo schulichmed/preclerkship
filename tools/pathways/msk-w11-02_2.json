@@ -1,75 +1,93 @@
 {
- "name": "rheumatology investigations overview",
- "width": 1124,
- "title": "Lab tests for a suspected connective tissue disease: the ANA is the screen and is ordered only when a connective tissue disease is suspected; anti-DNA follows only a positive ANA, the ENA panel names the antibody, and complement is a specialist's test; each column gives when to order the test, what a result means, and when not to order it",
+ "name": "polyarthritis overview",
+ "width": 1316,
+ "title": "Polyarthritis (four or more joints): decide inflammatory or degenerative and acute or chronic; acute inflammatory polyarthritis is infection, crystals or early autoimmune disease, and chronic polyarthritis is sorted by its joint pattern into rheumatoid arthritis, psoriatic arthritis, axial spondyloarthropathy and osteoarthritis, each with its own extra-articular clues and targeted tests",
  "kinds": {
-  "ana_h": [
+  "acu_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "acu_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "acu_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "ra_h": [
    "#1f6f8b",
    "#1f6f8b",
    "#ffffff",
    "#ffffff"
   ],
-  "ana_t": [
+  "ra_t": [
    "#dceef4",
    "#1f6f8b",
    "#1f6f8b",
    "#18212e"
   ],
-  "ana_w": [
+  "ra_w": [
    "#ffffff",
    "#1f6f8b",
    "#1f6f8b",
    "#18212e"
   ],
-  "dna_h": [
-   "#1f5f9e",
-   "#1f5f9e",
+  "psa_h": [
+   "#a3336b",
+   "#a3336b",
    "#ffffff",
    "#ffffff"
   ],
-  "dna_t": [
-   "#dde9f7",
-   "#1f5f9e",
-   "#1f5f9e",
+  "psa_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
    "#18212e"
   ],
-  "dna_w": [
+  "psa_w": [
    "#ffffff",
-   "#1f5f9e",
-   "#1f5f9e",
+   "#a3336b",
+   "#a3336b",
    "#18212e"
   ],
-  "ena_h": [
+  "axs_h": [
    "#6a4aa8",
    "#6a4aa8",
    "#ffffff",
    "#ffffff"
   ],
-  "ena_t": [
+  "axs_t": [
    "#ebe4f7",
    "#6a4aa8",
    "#6a4aa8",
    "#18212e"
   ],
-  "ena_w": [
+  "axs_w": [
    "#ffffff",
    "#6a4aa8",
    "#6a4aa8",
    "#18212e"
   ],
-  "cpl_h": [
+  "oa_h": [
    "#b5600f",
    "#b5600f",
    "#ffffff",
    "#ffffff"
   ],
-  "cpl_t": [
+  "oa_t": [
    "#fbe8d3",
    "#b5600f",
    "#b5600f",
    "#18212e"
   ],
-  "cpl_w": [
+  "oa_w": [
    "#ffffff",
    "#b5600f",
    "#b5600f",
@@ -79,33 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 290,
+   "y": 270,
    "w": 246,
-   "h": 746,
+   "h": 642,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 316,
+   "y": 270,
+   "w": 246,
+   "h": 642,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
-   "x": 316,
-   "y": 290,
+   "x": 564,
+   "y": 270,
    "w": 246,
-   "h": 746,
-   "fill": "#eff5fc",
-   "stroke": "#1f5f9e"
+   "h": 642,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
   },
   {
-   "x": 592,
-   "y": 290,
+   "x": 812,
+   "y": 270,
    "w": 246,
-   "h": 746,
+   "h": 642,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
-   "x": 868,
-   "y": 290,
+   "x": 1060,
+   "y": 270,
    "w": 246,
-   "h": 746,
+   "h": 642,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -113,427 +139,482 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 398,
-   "h": 150,
-   "text": "ORDER WHEN"
+   "y": 396,
+   "h": 234,
+   "text": "LOOK FOR"
   },
   {
    "x": 23,
-   "y": 588,
-   "h": 168,
-   "text": "A RESULT MEANS"
-  },
-  {
-   "x": 23,
-   "y": 796,
-   "h": 232,
-   "text": "DO NOT"
+   "y": 670,
+   "h": 234,
+   "text": "INVESTIGATIONS"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 197,
+   "x": 293,
    "y": 10,
    "w": 760,
    "kind": "dark",
-   "title": "Suspected connective tissue disease (CTD): which lab test, and when NOT to order it?",
+   "title": "FOUR or more joints: inflammatory or degenerative, acute or chronic, and in what PATTERN?",
    "lines": [
-    "no blood test diagnoses a CTD alone: clinical features are needed too",
-    "about 1 in 3 women are ANA positive; lupus (SLE) is 1 in 1,000"
+    "inflamed synovium (synovitis) = swelling, warmth, pain, stiffness · redness only with infection or crystals",
+    "every inflammatory arthritis is a CLINICAL diagnosis: history, extra-articular clues, then targeted tests"
    ]
   },
   {
-   "id": "g_scr",
+   "id": "g_ac",
    "x": 45,
    "y": 138,
    "w": 236,
-   "h": 80,
+   "h": 60,
    "kind": "plain",
-   "title": "SCREEN FIRST",
+   "title": "ACUTE: 6 weeks or less",
    "lines": [
-    "antinuclear antibody (ANA)"
+    "onset in hours to days"
    ]
   },
   {
-   "id": "g_aft",
+   "id": "g_ch",
    "x": 321,
    "y": 138,
-   "w": 236,
-   "h": 80,
+   "w": 980,
+   "h": 60,
    "kind": "plain",
-   "title": "ONLY AFTER A POSITIVE ANA",
+   "title": "CHRONIC: over 6 weeks · the PATTERN decides",
    "lines": [
-    "ANA negative → no anti-DNA"
+    "insidious, weeks to months · progressive and additive"
    ]
   },
   {
-   "id": "g_ena",
-   "x": 597,
-   "y": 138,
-   "w": 236,
-   "h": 80,
-   "kind": "plain",
-   "title": "WHICH ANTIBODY?",
-   "lines": [
-    "lab screen, then specific assays"
-   ]
-  },
-  {
-   "id": "g_cpl",
-   "x": 873,
-   "y": 138,
-   "w": 236,
-   "h": 80,
-   "kind": "plain",
-   "title": "SPECIALIST TEST",
-   "lines": []
-  },
-  {
-   "id": "ana_head_0_0",
+   "id": "acu_head_0_0",
    "x": 45,
-   "y": 298,
+   "y": 278,
    "w": 236,
-   "h": 60,
-   "kind": "ana_h",
-   "title": "ANA",
+   "h": 78,
+   "kind": "acu_h",
+   "title": "Acute polyarthritis",
    "lines": [
-    "antibodies against the cell nucleus"
+    "infection · crystals · early autoimmune"
    ]
   },
   {
-   "id": "dna_head_0_0",
+   "id": "ra_head_0_0",
    "x": 321,
-   "y": 298,
+   "y": 278,
    "w": 236,
-   "h": 60,
-   "kind": "dna_h",
-   "title": "Anti-DNA",
+   "h": 78,
+   "kind": "ra_h",
+   "title": "Rheumatoid arthritis",
    "lines": [
-    "against DNA in the nucleus"
+    "also symmetric: lupus, connective tissue disease"
    ]
   },
   {
-   "id": "ena_head_0_0",
-   "x": 597,
-   "y": 298,
+   "id": "psa_head_0_0",
+   "x": 569,
+   "y": 278,
    "w": 236,
-   "h": 60,
-   "kind": "ena_h",
-   "title": "ENA panel",
+   "h": 78,
+   "kind": "psa_h",
+   "title": "Psoriatic arthritis",
    "lines": [
-    "extractable nuclear antigens"
+    "also asymmetric: gout, reactive"
    ]
   },
   {
-   "id": "cpl_head_0_0",
-   "x": 873,
-   "y": 298,
+   "id": "axs_head_0_0",
+   "x": 817,
+   "y": 278,
    "w": 236,
-   "h": 60,
-   "kind": "cpl_h",
-   "title": "Complement C3, C4",
-   "lines": []
+   "h": 78,
+   "kind": "axs_h",
+   "title": "Axial spondyloarthropathy",
+   "lines": [
+    "e.g. ankylosing spondylitis"
+   ]
   },
   {
-   "id": "ana_when_0_0",
+   "id": "oa_head_0_0",
+   "x": 1065,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "oa_h",
+   "title": "Osteoarthritis",
+   "lines": [
+    "DEGENERATIVE, not inflammatory"
+   ]
+  },
+  {
+   "id": "acu_clue_0_0",
    "x": 45,
-   "y": 398,
+   "y": 396,
    "w": 236,
-   "h": 150,
-   "kind": "ana_t",
-   "title": "A CTD is suspected",
+   "h": 115,
+   "kind": "acu_t",
+   "title": "Causes",
    "lines": [
-    "• sun rash, high creatine kinase, new weakness",
-    "• oral ulcers, hair loss, low white cells + platelets",
-    "• new glomerulonephritis, cause unknown (maybe)"
+    "• viral or post-infectious (see the MSK INFECTIONS chart)",
+    "• polyarticular gout · rheumatic fever",
+    "• drug reaction (serum sickness)"
    ]
   },
   {
-   "id": "dna_when_0_0",
-   "x": 321,
-   "y": 398,
-   "w": 236,
-   "h": 150,
-   "kind": "dna_t",
-   "title": "ANA POSITIVE + SLE expected",
-   "lines": []
-  },
-  {
-   "id": "ena_when_0_0",
-   "x": 597,
-   "y": 398,
-   "w": 236,
-   "h": 150,
-   "kind": "ena_t",
-   "title": "Screen positive",
-   "lines": [
-    "assays find which antibody"
-   ]
-  },
-  {
-   "id": "cpl_when_0_0",
-   "x": 873,
-   "y": 398,
-   "w": 236,
-   "h": 150,
-   "kind": "cpl_t",
-   "title": "SPECIALISTS only",
-   "lines": []
-  },
-  {
-   "id": "ana_means_0_0",
-   "x": 45.0,
-   "y": 588,
-   "w": 113.0,
-   "h": 168,
-   "kind": "ana_w",
-   "title": "POSITIVE",
-   "lines": [
-    "does NOT rule in disease",
-    "titre 1/1280 = strong (bigger denominator)"
-   ]
-  },
-  {
-   "id": "ana_means_0_1",
-   "x": 168.0,
-   "y": 588,
-   "w": 113.0,
-   "h": 168,
-   "kind": "ana_w",
-   "title": "NEGATIVE",
-   "lines": [
-    "most CTDs LESS likely"
-   ]
-  },
-  {
-   "id": "dna_means_0_0",
-   "x": 321,
-   "y": 588,
-   "w": 236,
-   "h": 168,
-   "kind": "dna_w",
-   "title": "Very SPECIFIC for SLE",
-   "lines": [
-    "positive in only ~50%",
-    "tracks renal SLE + activity",
-    "may turn negative with treatment"
-   ]
-  },
-  {
-   "id": "ena_means_0_0",
-   "x": 597,
-   "y": 588,
-   "w": 236,
-   "h": 168,
-   "kind": "ena_w",
-   "title": "Antibody → disease",
-   "lines": [
-    "• Ro: SLE photosensitive rash; baby: heart block",
-    "• Ro + La: Sjögren's",
-    "• Sm: fairly specific for SLE",
-    "• RNP: mixed CTD + SLE",
-    "• Scl-70: scleroderma + lung disease",
-    "• Jo1: polymyositis + lung disease"
-   ]
-  },
-  {
-   "id": "cpl_means_0_0",
-   "x": 873,
-   "y": 588,
-   "w": 236,
-   "h": 168,
-   "kind": "cpl_w",
-   "title": "LOW",
-   "lines": [
-    "active SLE, esp. lupus nephritis (used up)",
-    "or an inherited deficiency"
-   ]
-  },
-  {
-   "id": "ana_dont_0_0",
+   "id": "acu_clue_1_0",
    "x": 45,
-   "y": 796,
+   "y": 533,
    "w": 236,
-   "h": 114,
-   "kind": "bad",
-   "title": "No CTD features",
+   "h": 97,
+   "kind": "acu_w",
+   "title": "Course",
    "lines": [
-    "• low white count from myelodysplasia",
-    "• fatigue + widespread pain (fibromyalgia)"
+    "• episodic: crystals",
+    "• migratory: palindromic, rheumatic fever, early gonococcal"
    ]
   },
   {
-   "id": "ana_dont_1_0",
+   "id": "ra_clue_0_0",
+   "x": 321,
+   "y": 396,
+   "w": 236,
+   "h": 134,
+   "kind": "ra_t",
+   "title": "Wrists, knuckles, finger joints, ankles, feet",
+   "lines": [
+    "• knuckles (MCPs) + middle finger joints (PIPs)",
+    "• distal finger joints (DIPs) SPARED",
+    "• ulnar deviation, knuckle subluxation"
+   ]
+  },
+  {
+   "id": "ra_clue_1_0",
+   "x": 321,
+   "y": 552,
+   "w": 236,
+   "h": 78,
+   "kind": "ra_w",
+   "title": "Extra-articular",
+   "lines": [
+    "• rheumatoid nodules, lung nodules",
+    "• episcleritis"
+   ]
+  },
+  {
+   "id": "psa_clue_0_0",
+   "x": 569,
+   "y": 396,
+   "w": 236,
+   "h": 97,
+   "kind": "psa_t",
+   "title": "DIPs involved · dactylitis",
+   "lines": [
+    "• sausage digit · enthesitis (Achilles)"
+   ]
+  },
+  {
+   "id": "psa_clue_1_0",
+   "x": 569,
+   "y": 515,
+   "w": 236,
+   "h": 115,
+   "kind": "psa_w",
+   "title": "Extra-articular",
+   "lines": [
+    "• skin psoriasis · nail pitting",
+    "• uveitis"
+   ]
+  },
+  {
+   "id": "axs_clue_0_0",
+   "x": 817,
+   "y": 396,
+   "w": 236,
+   "h": 97,
+   "kind": "axs_t",
+   "title": "Spine and sacroiliac joints",
+   "lines": [
+    "+ a few large peripheral joints"
+   ]
+  },
+  {
+   "id": "axs_clue_1_0",
+   "x": 817,
+   "y": 515,
+   "w": 236,
+   "h": 115,
+   "kind": "axs_w",
+   "title": "Ask",
+   "lines": [
+    "psoriasis · inflammatory bowel disease · recent infection"
+   ]
+  },
+  {
+   "id": "oa_clue_0_0",
+   "x": 1065,
+   "y": 396,
+   "w": 236,
+   "h": 97,
+   "kind": "oa_t",
+   "title": "Weight-bearing joints, spine",
+   "lines": [
+    "• DIPs, PIPs, thumb base, big toe"
+   ]
+  },
+  {
+   "id": "oa_clue_1_0",
+   "x": 1065,
+   "y": 515,
+   "w": 236,
+   "h": 115,
+   "kind": "oa_w",
+   "title": "Hands",
+   "lines": [
+    "Heberden's (DIP) and Bouchard's (PIP) nodes"
+   ]
+  },
+  {
+   "id": "acu_inv_0_0",
    "x": 45,
-   "y": 932,
+   "y": 670,
    "w": 236,
-   "h": 96,
+   "h": 106,
    "kind": "bad",
-   "title": "Never repeat or follow it",
+   "title": "Red, hot joint → ASPIRATE",
    "lines": [
-    "• negative a year ago, no new symptoms",
-    "• a past positive still counts for SLE"
+    "infection? crystals?",
+    "~gout: needles, negative · pseudogout: rhomboid, positive"
    ]
   },
   {
-   "id": "dna_dont_0_0",
+   "id": "acu_inv_1_0",
+   "x": 45,
+   "y": 798,
+   "w": 236,
+   "h": 106,
+   "kind": "acu_w",
+   "title": "Viral: serologies",
+   "lines": [
+    "self-limited · supportive; anti-inflammatories or a short prednisone course if severe"
+   ]
+  },
+  {
+   "id": "ra_inv_0_0",
    "x": 321,
-   "y": 796,
+   "y": 670,
    "w": 236,
-   "h": 96,
-   "kind": "bad",
-   "title": "ANA not done or negative",
+   "h": 134,
+   "kind": "ra_t",
+   "title": "Rheumatoid factor (RF) + anti-CCP: only if suspected",
    "lines": [
-    "order the ANA first"
+    "• anti-cyclic citrullinated peptide: 95% specific · RF is not",
+    "• positive = more aggressive · NEVER to monitor"
    ]
   },
   {
-   "id": "dna_dont_1_0",
+   "id": "ra_inv_1_0",
    "x": 321,
-   "y": 914,
+   "y": 826,
    "w": 236,
-   "h": 114,
-   "kind": "warn",
-   "title": "Outside-lab kits",
+   "h": 78,
+   "kind": "ra_w",
+   "title": "X-ray",
    "lines": [
-    "also detect single-stranded DNA: neither sensitive nor specific"
+    "erosions, periarticular osteopenia, SYMMETRIC narrowing"
    ]
   },
   {
-   "id": "ena_dont_0_0",
-   "x": 597,
-   "y": 796,
+   "id": "psa_inv_0_0",
+   "x": 569,
+   "y": 670,
    "w": 236,
-   "h": 232,
-   "kind": "bad",
-   "title": "Diagnose from an antibody alone",
+   "h": 234,
+   "kind": "psa_w",
+   "title": "No specific antibody",
    "lines": [
-    "CTDs need characteristic clinical AND lab features"
+    "clinical diagnosis · X-ray: erosions",
+    "detail: the SERONEGATIVE ARTHRITIDES chart"
    ]
   },
   {
-   "id": "cpl_dont_0_0",
-   "x": 873,
-   "y": 796,
+   "id": "axs_inv_0_0",
+   "x": 817,
+   "y": 670,
    "w": 236,
-   "h": 232,
-   "kind": "bad",
-   "title": "Family physician",
+   "h": 234,
+   "kind": "axs_w",
+   "title": "Human leukocyte antigen B27 (HLA-B27)",
    "lines": [
-    "a waste of money"
+    "X-ray: erosions",
+    "detail: the SERONEGATIVE ARTHRITIDES chart"
+   ]
+  },
+  {
+   "id": "oa_inv_0_0",
+   "x": 1065,
+   "y": 670,
+   "w": 236,
+   "h": 234,
+   "kind": "oa_w",
+   "title": "X-ray",
+   "lines": [
+    "osteophytes, subchondral sclerosis and cysts, ASYMMETRIC narrowing"
    ]
   }
  ],
  "edges": [
   {
    "from": "root",
-   "to": "g_scr",
-   "path": "M577.0 88V113H163.0V138"
+   "to": "g_ac",
+   "path": "M673.0 88V113H163.0V138"
   },
   {
    "from": "root",
-   "to": "g_aft",
-   "path": "M577.0 88V113H439.0V138"
+   "to": "g_ch",
+   "path": "M673.0 88V113H811.0V138"
   },
   {
-   "from": "root",
-   "to": "g_ena",
-   "path": "M577.0 88V113H715.0V138"
+   "from": "acu_clue_0_0",
+   "to": "acu_clue_1_0",
+   "dashed": true
   },
   {
-   "from": "root",
-   "to": "g_cpl",
-   "path": "M577.0 88V113H991.0V138"
+   "from": "ra_clue_0_0",
+   "to": "ra_clue_1_0",
+   "dashed": true
   },
   {
-   "from": "ana_dont_0_0",
-   "to": "ana_dont_1_0"
+   "from": "psa_clue_0_0",
+   "to": "psa_clue_1_0",
+   "dashed": true
   },
   {
-   "from": "dna_dont_0_0",
-   "to": "dna_dont_1_0"
+   "from": "axs_clue_0_0",
+   "to": "axs_clue_1_0",
+   "dashed": true
   },
   {
-   "from": "ana_head_0_0",
-   "to": "ana_when_0_0"
+   "from": "oa_clue_0_0",
+   "to": "oa_clue_1_0",
+   "dashed": true
   },
   {
-   "from": "ana_when_0_0",
-   "to": "ana_means_0_0",
-   "from_dx": -61.5
+   "from": "acu_inv_0_0",
+   "to": "acu_inv_1_0"
   },
   {
-   "from": "ana_when_0_0",
-   "to": "ana_means_0_1",
-   "from_dx": 61.5
+   "from": "ra_inv_0_0",
+   "to": "ra_inv_1_0"
   },
   {
-   "from": "ana_means_0_0",
-   "to": "ana_dont_0_0",
-   "to_dx": -61.5
+   "from": "acu_head_0_0",
+   "to": "acu_clue_0_0"
   },
   {
-   "from": "ana_means_0_1",
-   "to": "ana_dont_0_0",
-   "to_dx": 61.5
+   "from": "acu_clue_1_0",
+   "to": "acu_inv_0_0"
   },
   {
-   "from": "g_scr",
-   "to": "ana_head_0_0",
+   "from": "g_ac",
+   "to": "acu_head_0_0",
    "from_dx": 0
   },
   {
-   "from": "dna_head_0_0",
-   "to": "dna_when_0_0"
+   "from": "ra_head_0_0",
+   "to": "ra_clue_0_0"
   },
   {
-   "from": "dna_when_0_0",
-   "to": "dna_means_0_0"
+   "from": "ra_clue_1_0",
+   "to": "ra_inv_0_0"
   },
   {
-   "from": "dna_means_0_0",
-   "to": "dna_dont_0_0"
+   "from": "g_ch",
+   "to": "ra_head_0_0",
+   "from_dx": -372,
+   "label": "symmetric, small + large",
+   "label_at": [
+    439.0,
+    238
+   ]
   },
   {
-   "from": "g_aft",
-   "to": "dna_head_0_0",
-   "from_dx": 0
+   "from": "psa_head_0_0",
+   "to": "psa_clue_0_0"
   },
   {
-   "from": "ena_head_0_0",
-   "to": "ena_when_0_0"
+   "from": "psa_clue_1_0",
+   "to": "psa_inv_0_0"
   },
   {
-   "from": "ena_when_0_0",
-   "to": "ena_means_0_0"
+   "from": "g_ch",
+   "to": "psa_head_0_0",
+   "from_dx": -124,
+   "label": "asymmetric, small + large",
+   "label_at": [
+    687.0,
+    238
+   ]
   },
   {
-   "from": "ena_means_0_0",
-   "to": "ena_dont_0_0"
+   "from": "axs_head_0_0",
+   "to": "axs_clue_0_0"
   },
   {
-   "from": "g_ena",
-   "to": "ena_head_0_0",
-   "from_dx": 0
+   "from": "axs_clue_1_0",
+   "to": "axs_inv_0_0"
   },
   {
-   "from": "cpl_head_0_0",
-   "to": "cpl_when_0_0"
+   "from": "g_ch",
+   "to": "axs_head_0_0",
+   "from_dx": 124,
+   "label": "axial + large",
+   "label_at": [
+    935.0,
+    238
+   ]
   },
   {
-   "from": "cpl_when_0_0",
-   "to": "cpl_means_0_0"
+   "from": "oa_head_0_0",
+   "to": "oa_clue_0_0"
   },
   {
-   "from": "cpl_means_0_0",
-   "to": "cpl_dont_0_0"
+   "from": "oa_clue_1_0",
+   "to": "oa_inv_0_0"
   },
   {
-   "from": "g_cpl",
-   "to": "cpl_head_0_0",
-   "from_dx": 0
+   "from": "g_ch",
+   "to": "oa_head_0_0",
+   "from_dx": 372,
+   "label": "symmetric, weight-bearing",
+   "label_at": [
+    1183.0,
+    238
+   ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 938,
+   "w": 621,
+   "title": "Tests for everyone (safety + inflammation)",
+   "items": [
+    "blood count: anemia of chronic disease, platelets ↑ (inflammation), low counts (autoimmune)",
+    "creatinine and liver enzymes (drug clearance) · C-reactive protein (sedimentation rate not routine)"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 680,
+   "y": 938,
+   "w": 621,
+   "title": "Antinuclear antibody (ANA)",
+   "items": [
+    "positive in up to 30% of healthy people: a positive ANA does NOT rule in connective tissue disease",
+    "a negative ANA rules it out · don't order ANA and RF reflexively"
+   ],
+   "cols": 1
+  }
+ ]
 }

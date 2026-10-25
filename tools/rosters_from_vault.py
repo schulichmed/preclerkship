@@ -14,8 +14,8 @@ VAULT = os.environ.get(
 BLOCKS = [
     ("endo",  u"01 - Endocrinology", [1, 2, 3]),
     ("repro", u"02 - Repro",         [4, 5, 6]),
-    ("msk",   u"03 - MSK",           [7, 8, 9, 10, 11]),
-    ("neuro", u"04 - Neuro",         [12, 13, 14, 15, 16]),
+    ("msk",   u"03 - MSK",           [7, 8, 9, 10, 11, 12]),
+    ("neuro", u"04 - Neuro",         [13, 14, 15, 16]),
     ("psych", u"05 - Psych",         [17, 18, 19, 20]),
 ]
 

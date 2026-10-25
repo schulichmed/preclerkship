@@ -128,8 +128,8 @@ COURSES = [
         "blocks": [
             ("endo",  1, u"Endocrinology",   u"1–3"),
             ("repro", 2, u"Reproduction",    u"4–6"),
-            ("msk",   3, u"Musculoskeletal", u"7–11"),
-            ("neuro", 4, u"Neurology",       u"12–16"),
+            ("msk",   3, u"Musculoskeletal", u"7–12"),
+            ("neuro", 4, u"Neurology",       u"13–16"),
             ("psych", 5, u"Psychiatry",      u"17–20"),
         ],
         "families": [

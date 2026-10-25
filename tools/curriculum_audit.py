@@ -85,8 +85,8 @@ READ_FAMILIES = ("workbook", "hipponotes", "reviews")
 REFILING_VERDICT = "misfiled"
 
 # block slug -> the course weeks it spans, as tools/portal.py's roster states them
-BLOCK_WEEKS = {"endo": range(1, 4), "repro": range(4, 7), "msk": range(7, 12),
-               "neuro": range(12, 17), "psych": range(17, 21)}
+BLOCK_WEEKS = {"endo": range(1, 4), "repro": range(4, 7), "msk": range(7, 13),
+               "neuro": range(13, 17), "psych": range(17, 21)}
 
 
 def block_for_week(week: int) -> str | None:

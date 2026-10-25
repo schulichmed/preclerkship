@@ -1,602 +1,586 @@
 {
- "name": "spondyloarthritis overview",
- "width": 1040,
- "title": "Spondyloarthritis: inflammatory back pain points to ankylosing spondylitis, psoriasis to psoriatic arthritis, and a gut or genital infection weeks before to reactive arthritis; each column gives presentation, exam and tests, and treatment in order",
+ "name": "physical activity prescription overview",
+ "width": 1344,
+ "title": "Writing a physical activity prescription: first check it is safe (absolute contraindications stop it; otherwise stratify cardiovascular risk to decide how to start), then write the dose with F.I.T.T., then tailor it for hypertension and blood pressure medications; adjust if pain or swelling follows",
  "kinds": {
-  "as_h": [
-   "#1f6f8b",
-   "#1f6f8b",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "as_t": [
-   "#dceef4",
-   "#1f6f8b",
-   "#1f6f8b",
-   "#18212e"
-  ],
-  "as_w": [
-   "#ffffff",
-   "#1f6f8b",
-   "#1f6f8b",
-   "#18212e"
-  ],
-  "psa_h": [
-   "#a3336b",
-   "#a3336b",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "psa_t": [
-   "#f8e0ec",
-   "#a3336b",
-   "#a3336b",
-   "#18212e"
-  ],
-  "psa_w": [
-   "#ffffff",
-   "#a3336b",
-   "#a3336b",
-   "#18212e"
-  ],
-  "rea_h": [
+  "ci_h": [
    "#b5600f",
    "#b5600f",
    "#ffffff",
    "#ffffff"
   ],
-  "rea_t": [
+  "ci_t": [
    "#fbe8d3",
    "#b5600f",
    "#b5600f",
    "#18212e"
   ],
-  "rea_w": [
+  "ci_w": [
    "#ffffff",
    "#b5600f",
    "#b5600f",
+   "#18212e"
+  ],
+  "risk_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "risk_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "risk_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "fitt_h": [
+   "#1f5f9e",
+   "#1f5f9e",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fitt_t": [
+   "#dde9f7",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "fitt_w": [
+   "#ffffff",
+   "#1f5f9e",
+   "#1f5f9e",
+   "#18212e"
+  ],
+  "htn_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "htn_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "htn_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "med_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "med_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "med_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
    "#18212e"
   ]
  },
  "bands": [
   {
    "x": 40,
-   "y": 292,
-   "w": 310,
-   "h": 1056,
+   "y": 270,
+   "w": 246,
+   "h": 718,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 288,
+   "y": 270,
+   "w": 246,
+   "h": 718,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
-   "x": 380,
-   "y": 292,
-   "w": 310,
-   "h": 1056,
-   "fill": "#fcf0f6",
-   "stroke": "#a3336b"
+   "x": 564,
+   "y": 270,
+   "w": 246,
+   "h": 718,
+   "fill": "#eff5fc",
+   "stroke": "#1f5f9e"
   },
   {
-   "x": 720,
-   "y": 292,
-   "w": 310,
-   "h": 1056,
-   "fill": "#fdf4ea",
-   "stroke": "#b5600f"
+   "x": 840,
+   "y": 270,
+   "w": 246,
+   "h": 718,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1088,
+   "y": 270,
+   "w": 246,
+   "h": 718,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
   }
  ],
  "row_labels": [
   {
    "x": 23,
-   "y": 436,
-   "h": 232,
-   "text": "PRESENTS AS"
+   "y": 396,
+   "h": 204,
+   "text": "CHECK"
   },
   {
    "x": 23,
-   "y": 708,
-   "h": 296,
-   "text": "EXAM · TESTS"
+   "y": 640,
+   "h": 168,
+   "text": "DO"
   },
   {
    "x": 23,
-   "y": 1044,
-   "h": 296,
-   "text": "TREATMENT"
+   "y": 848,
+   "h": 132,
+   "text": "AVOID"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 155,
+   "x": 307,
    "y": 10,
    "w": 760,
    "kind": "dark",
-   "title": "Inflammatory back pain or lower-limb oligoarthritis, rheumatoid factor NEGATIVE: which spondyloarthritis (SpA)?",
+   "title": "Prescribe physical activity like a drug: is it SAFE, then what DOSE?",
    "lines": [
-    "shared: sacroiliitis · enthesitis · dactylitis · anterior uveitis · HLA-B27 · raised sedimentation rate and C-reactive protein · good response to anti-inflammatories (NSAIDs)"
+    "ask: current activity · intentions · past activity + preferences · is it safe (symptoms, history)?",
+    "biggest gain: from NONE to SOME, so target sedentary patients"
    ]
   },
   {
-   "id": "g_as",
+   "id": "g_safe",
    "x": 45,
-   "y": 158,
-   "w": 300,
-   "h": 62,
-   "kind": "plain",
-   "title": "Back pain, INFLAMMATORY pattern",
-   "lines": []
-  },
-  {
-   "id": "g_ps",
-   "x": 385,
-   "y": 158,
-   "w": 300,
-   "h": 62,
-   "kind": "plain",
-   "title": "Psoriasis (or hidden psoriasis)",
-   "lines": []
-  },
-  {
-   "id": "g_re",
-   "x": 725,
-   "y": 158,
-   "w": 300,
-   "h": 62,
-   "kind": "plain",
-   "title": "Gut or genital infection 1-3 weeks before",
-   "lines": []
-  },
-  {
-   "id": "as_head_0_0",
-   "x": 45,
-   "y": 300,
-   "w": 300,
-   "h": 96,
-   "kind": "as_h",
-   "title": "Ankylosing spondylitis",
-   "lines": [
-    "the prototype · HLA-B27 in > 90% (white patients)",
-    "but 8% of white people carry HLA-B27"
-   ]
-  },
-  {
-   "id": "psa_head_0_0",
-   "x": 385,
-   "y": 300,
-   "w": 300,
-   "h": 96,
-   "kind": "psa_h",
-   "title": "Psoriatic arthritis",
-   "lines": [
-    "5-7% of people with psoriasis",
-    "HLA-B27, B38, B39, DR4"
-   ]
-  },
-  {
-   "id": "rea_head_0_0",
-   "x": 725,
-   "y": 300,
-   "w": 300,
-   "h": 96,
-   "kind": "rea_h",
-   "title": "Reactive arthritis",
-   "lines": [
-    "young men, 20-40 · HLA-B27 linked",
-    "NOT 'Reiter's syndrome'"
-   ]
-  },
-  {
-   "id": "as_pres_0_0",
-   "x": 45,
-   "y": 436,
-   "w": 300,
-   "h": 105,
-   "kind": "as_t",
-   "title": "Starts at the sacroiliac joints, climbs",
-   "lines": [
-    "• onset < 40, insidious, > 3 months",
-    "• stiffness > 60 min, night pain",
-    "• BETTER with activity"
-   ]
-  },
-  {
-   "id": "as_pres_1_0",
-   "x": 45,
-   "y": 563,
-   "w": 300,
-   "h": 105,
-   "kind": "as_w",
-   "title": "Beyond the spine",
-   "lines": [
-    "• anterior uveitis (25-30%)",
-    "• aortitis, aortic regurgitation, conduction block",
-    "• upper-lobe fibrosis · lower-limb oligoarthritis"
-   ]
-  },
-  {
-   "id": "psa_pres_0_0",
-   "x": 385,
-   "y": 436,
-   "w": 300,
-   "h": 96,
-   "kind": "psa_t",
-   "title": "Psoriasis comes first in ⅔",
-   "lines": [
-    "• arthritis first or together in ⅓",
-    "• hidden: scalp, navel, behind ears, perianal, nails"
-   ]
-  },
-  {
-   "id": "psa_pres_1_0",
-   "x": 385,
-   "y": 554,
-   "w": 300,
-   "h": 114,
-   "kind": "psa_w",
-   "title": "Patterns",
-   "lines": [
-    "• asymmetric oligoarthritis (> 50%)",
-    "• axial 20-40% · rheumatoid-like 15-25%",
-    "• mostly distal finger joints 5-10% · arthritis mutilans 5%"
-   ]
-  },
-  {
-   "id": "rea_pres_0_0",
-   "x": 725,
-   "y": 436,
-   "w": 300,
-   "h": 105,
-   "kind": "rea_t",
-   "title": "Trigger 1-3 weeks earlier",
-   "lines": [
-    "• gut: Salmonella, Shigella, Campylobacter",
-    "• genitourinary: Chlamydia, other sexual infections"
-   ]
-  },
-  {
-   "id": "rea_pres_1_0",
-   "x": 725,
-   "y": 563,
-   "w": 300,
-   "h": 105,
-   "kind": "rea_w",
-   "title": "Can't see, can't pee, can't climb a tree",
-   "lines": [
-    "• conjunctivitis or uveitis",
-    "• urethritis or cervicitis",
-    "• large-joint oligoarthritis, sacroiliitis, enthesitis"
-   ]
-  },
-  {
-   "id": "as_inv_0_0",
-   "x": 45,
-   "y": 708,
-   "w": 300,
-   "h": 78,
-   "kind": "as_t",
-   "title": "1 · Spinal mobility",
-   "lines": [
-    "• modified Schober · chest expansion",
-    "• occiput-to-wall, tragus-to-wall"
-   ]
-  },
-  {
-   "id": "as_inv_1_0",
-   "x": 45,
-   "y": 808,
-   "w": 300,
-   "h": 96,
-   "kind": "as_t",
-   "title": "2 · Sacroiliac X-ray",
-   "lines": [
-    "bilateral, symmetric: iliac-side erosion → sclerosis → fusion",
-    "late: 'bamboo spine'"
-   ]
-  },
-  {
-   "id": "as_inv_2_0",
-   "x": 45,
-   "y": 926,
-   "w": 300,
-   "h": 78,
-   "kind": "as_w",
-   "title": "X-ray normal → MRI",
-   "lines": [
-    "bone marrow edema = non-radiographic axial SpA"
-   ]
-  },
-  {
-   "id": "psa_inv_0_0",
-   "x": 385,
-   "y": 708,
-   "w": 300,
-   "h": 146,
-   "kind": "psa_t",
-   "title": "Nails in 80% · dactylitis",
-   "lines": [
-    "• pitting, onycholysis, oil spots",
-    "• conjunctivitis 20% · uveitis 7%"
-   ]
-  },
-  {
-   "id": "psa_inv_1_0",
-   "x": 385,
-   "y": 876,
-   "w": 300,
-   "h": 128,
-   "kind": "psa_w",
-   "title": "Axial: ASYMMETRIC sacroiliitis",
-   "lines": [
-    "big non-marginal 'jug-handle' syndesmophytes"
-   ]
-  },
-  {
-   "id": "rea_inv_0_0",
-   "x": 725,
-   "y": 708,
-   "w": 300,
-   "h": 146,
-   "kind": "rea_t",
-   "title": "Psoriasis-like skin",
-   "lines": [
-    "• keratoderma blennorrhagicum",
-    "• circinate balanitis"
-   ]
-  },
-  {
-   "id": "rea_inv_1_0",
-   "x": 725,
-   "y": 876,
-   "w": 300,
-   "h": 128,
-   "kind": "bad",
-   "title": "NOT an infection of the joint",
-   "lines": [
-    "that is septic arthritis"
-   ]
-  },
-  {
-   "id": "as_tx_0_0",
-   "x": 45,
-   "y": 1044,
-   "w": 300,
-   "h": 65,
-   "kind": "ok",
-   "title": "1 · Physiotherapy for ALL",
-   "lines": [
-    "posture, chest expansion"
-   ]
-  },
-  {
-   "id": "as_tx_1_0",
-   "x": 45,
-   "y": 1131,
-   "w": 300,
-   "h": 65,
-   "kind": "ok",
-   "title": "2 · NSAIDs (indomethacin best)",
-   "lines": [
-    "mild-moderate · watch the gut"
-   ]
-  },
-  {
-   "id": "as_tx_2_0",
-   "x": 45,
-   "y": 1218,
-   "w": 300,
-   "h": 121,
-   "kind": "ok",
-   "title": "3 · Tumour necrosis factor (TNF) or interleukin-17 (IL-17) inhibitor",
-   "lines": [
-    "conventional disease-modifying drugs do NOT work in the spine",
-    "~ use them for peripheral disease only"
-   ]
-  },
-  {
-   "id": "psa_tx_0_0",
-   "x": 385,
-   "y": 1044,
-   "w": 300,
-   "h": 78,
-   "kind": "ok",
-   "title": "1 · Methotrexate (skin + joints)",
-   "lines": [
-    "or sulfasalazine, leflunomide",
-    "~ little proof they stop X-ray damage"
-   ]
-  },
-  {
-   "id": "psa_tx_1_0",
-   "x": 385,
-   "y": 1144,
-   "w": 300,
+   "y": 138,
+   "w": 484,
    "h": 60,
-   "kind": "bad",
-   "title": "AVOID hydroxychloroquine",
+   "kind": "plain",
+   "title": "1 · IS IT SAFE?",
    "lines": [
-    "severe psoriasis flares"
+    "unstable or uncontrolled → review first"
    ]
   },
   {
-   "id": "psa_tx_2_0",
-   "x": 385,
-   "y": 1226,
-   "w": 300,
-   "h": 114,
-   "kind": "ok",
-   "title": "2 · Apremilast or a biologic",
+   "id": "g_dose",
+   "x": 569,
+   "y": 138,
+   "w": 236,
+   "h": 60,
+   "kind": "plain",
+   "title": "2 · WRITE THE DOSE",
    "lines": [
-    "• TNF inhibitor: skin, joints, spine, nails",
-    "• IL-17: skin, spine + joints · IL-12/23: NOT the spine",
-    "~ apremilast: weaker than biologics"
+    "F.I.T.T."
    ]
   },
   {
-   "id": "rea_tx_0_0",
-   "x": 725,
-   "y": 1044,
-   "w": 300,
-   "h": 137,
-   "kind": "ok",
-   "title": "Treat by symptoms",
+   "id": "g_tail",
+   "x": 845,
+   "y": 138,
+   "w": 484,
+   "h": 60,
+   "kind": "plain",
+   "title": "3 · TAILOR IT",
    "lines": [
-    "self-limiting, chronic or progressive"
+    "blood pressure is not a reason to skip exercise"
    ]
   },
   {
-   "id": "rea_tx_1_0",
-   "x": 725,
-   "y": 1203,
-   "w": 300,
-   "h": 137,
+   "id": "ci_head_0_0",
+   "x": 45,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "ci_h",
+   "title": "Absolute contraindication",
+   "lines": [
+    "any ONE stops it"
+   ]
+  },
+  {
+   "id": "risk_head_0_0",
+   "x": 293,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "risk_h",
+   "title": "Stratify cardiovascular risk",
+   "lines": [
+    "start low, go slow if sedentary"
+   ]
+  },
+  {
+   "id": "fitt_head_0_0",
+   "x": 569,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "fitt_h",
+   "title": "F.I.T.T.",
+   "lines": [
+    "target ≥ 150 min a week, moderate-vigorous"
+   ]
+  },
+  {
+   "id": "htn_head_0_0",
+   "x": 845,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "htn_h",
+   "title": "Hypertension",
+   "lines": []
+  },
+  {
+   "id": "med_head_0_0",
+   "x": 1093,
+   "y": 278,
+   "w": 236,
+   "h": 78,
+   "kind": "med_h",
+   "title": "Blood pressure medications",
+   "lines": []
+  },
+  {
+   "id": "ci_check_0_0",
+   "x": 45,
+   "y": 396,
+   "w": 236,
+   "h": 204,
+   "kind": "ci_t",
+   "title": "Any of these?",
+   "lines": [
+    "• new or uncontrolled arrhythmia",
+    "• resting or uncontrolled tachycardia",
+    "• resting blood pressure (BP) > 180/100",
+    "• symptomatic hypotension",
+    "• unstable or crescendo angina",
+    "• acute or unstable heart failure",
+    "• unstable diabetes",
+    "• acute febrile illness"
+   ]
+  },
+  {
+   "id": "risk_check_0_0",
+   "x": 293,
+   "y": 396,
+   "w": 236,
+   "h": 204,
+   "kind": "risk_t",
+   "title": "Symptoms? Risk factors?",
+   "lines": [
+    "• chest, neck, jaw or arm pain",
+    "• breathless at rest or mild exertion",
+    "• dizziness, syncope, palpitations",
+    "• ankle edema, claudication, murmur"
+   ]
+  },
+  {
+   "id": "fitt_check_0_0",
+   "x": 569,
+   "y": 396,
+   "w": 236,
+   "h": 204,
+   "kind": "fitt_t",
+   "title": "Talk test for intensity",
+   "lines": [
+    "• can SING = light",
+    "• can TALK, not sing = moderate",
+    "• no conversation = vigorous"
+   ]
+  },
+  {
+   "id": "htn_check_0_0",
+   "x": 845,
+   "y": 396,
+   "w": 236,
+   "h": 204,
+   "kind": "htn_t",
+   "title": "BP under 180/100?",
+   "lines": [
+    "if not, control it with medication first"
+   ]
+  },
+  {
+   "id": "med_check_0_0",
+   "x": 1093,
+   "y": 396,
+   "w": 236,
+   "h": 204,
+   "kind": "med_t",
+   "title": "NOT a contraindication",
+   "lines": [
+    "antihypertensives: keep exercising",
+    "diuretic: dehydration risk, toilets nearby"
+   ]
+  },
+  {
+   "id": "ci_do_0_0",
+   "x": 45,
+   "y": 640,
+   "w": 236,
+   "h": 168,
    "kind": "warn",
-   "title": "Chronic arthritis or sacroiliitis",
+   "title": "Stabilise, then review",
    "lines": [
-    "in 15-30%"
+    "BP > 180/100: control with medication BEFORE exercise"
+   ]
+  },
+  {
+   "id": "risk_do_0_0",
+   "x": 293,
+   "y": 640,
+   "w": 236,
+   "h": 168,
+   "kind": "risk_w",
+   "title": "Start by risk",
+   "lines": [
+    "• low risk → self-directed",
+    "• risk factors (↑ BP) → low/moderate intensity",
+    "• high risk → investigations (ECG) first",
+    "• symptoms → supervised, or exercise specialist"
+   ]
+  },
+  {
+   "id": "fitt_do_0_0",
+   "x": 569,
+   "y": 640,
+   "w": 236,
+   "h": 168,
+   "kind": "ok",
+   "title": "Typical prescription",
+   "lines": [
+    "• 5 times a week",
+    "• moderate intensity",
+    "• 30 minutes",
+    "• aerobic: walk, cycle, dance, swim, jog",
+    "• + strength 2 days a week (10-15 reps)"
+   ]
+  },
+  {
+   "id": "htn_do_0_0",
+   "x": 845,
+   "y": 640,
+   "w": 236,
+   "h": 168,
+   "kind": "ok",
+   "title": "Do",
+   "lines": [
+    "• warm-up 15 min, cool-down 10 min",
+    "• keep the feet moving",
+    "• protect joints if obese or inactive",
+    "• one rest day a week"
+   ]
+  },
+  {
+   "id": "med_do_0_0",
+   "x": 1093,
+   "y": 640,
+   "w": 236,
+   "h": 168,
+   "kind": "ok",
+   "title": "Recommended",
+   "lines": [
+    "• angiotensin-converting enzyme (ACE) inhibitor or angiotensin receptor blocker: minimal problems",
+    "• calcium channel blocker: extend the warm-down (postural hypotension)"
+   ]
+  },
+  {
+   "id": "ci_avoid_0_0",
+   "x": 45,
+   "y": 848,
+   "w": 236,
+   "h": 132,
+   "kind": "bad",
+   "title": "Exercise until controlled",
+   "lines": []
+  },
+  {
+   "id": "risk_avoid_0_0",
+   "x": 293,
+   "y": 848,
+   "w": 236,
+   "h": 132,
+   "kind": "bad",
+   "title": "Symptoms DURING exercise",
+   "lines": [
+    "stop and promptly evaluate or refer: warn patients of these"
+   ]
+  },
+  {
+   "id": "fitt_avoid_0_0",
+   "x": 569,
+   "y": 848,
+   "w": 236,
+   "h": 132,
+   "kind": "warn",
+   "title": "Adjust if",
+   "lines": [
+    "• severe pain during exercise",
+    "• pain that does not settle after",
+    "• more night pain or joint swelling"
+   ]
+  },
+  {
+   "id": "htn_avoid_0_0",
+   "x": 845,
+   "y": 848,
+   "w": 236,
+   "h": 132,
+   "kind": "bad",
+   "title": "Don't",
+   "lines": [
+    "• very strenuous resistance training",
+    "• vigorous exercise with left ventricular hypertrophy",
+    "• lying-down (postural hypotension)",
+    "• isometric or overhead exercises"
+   ]
+  },
+  {
+   "id": "med_avoid_0_0",
+   "x": 1093,
+   "y": 848,
+   "w": 236,
+   "h": 132,
+   "kind": "bad",
+   "title": "Beta-blockers",
+   "lines": [
+    "↓ maximum heart rate and performance: BAD for high intensity, avoid in athletes (ACE inhibitor first)",
+    "~but they limit the hypertensive response to exercise"
    ]
   }
  ],
  "edges": [
   {
    "from": "root",
-   "to": "g_as",
-   "path": "M535.0 108V133H195.0V158"
+   "to": "g_safe",
+   "path": "M687.0 88V113H287.0V138"
   },
   {
    "from": "root",
-   "to": "g_ps",
-   "path": "M535.0 108V133H535.0V158"
+   "to": "g_dose",
+   "path": "M687.0 88V113H687.0V138"
   },
   {
    "from": "root",
-   "to": "g_re",
-   "path": "M535.0 108V133H875.0V158"
+   "to": "g_tail",
+   "path": "M687.0 88V113H1087.0V138"
   },
   {
-   "from": "as_pres_0_0",
-   "to": "as_pres_1_0",
-   "dashed": true
+   "from": "ci_head_0_0",
+   "to": "ci_check_0_0"
   },
   {
-   "from": "psa_pres_0_0",
-   "to": "psa_pres_1_0",
-   "dashed": true
+   "from": "ci_check_0_0",
+   "to": "ci_do_0_0"
   },
   {
-   "from": "rea_pres_0_0",
-   "to": "rea_pres_1_0",
-   "dashed": true
+   "from": "ci_do_0_0",
+   "to": "ci_avoid_0_0"
   },
   {
-   "from": "as_inv_0_0",
-   "to": "as_inv_1_0"
+   "from": "g_safe",
+   "to": "ci_head_0_0",
+   "from_dx": -124,
+   "label": "unstable",
+   "label_at": [
+    163.0,
+    238
+   ]
   },
   {
-   "from": "as_inv_1_0",
-   "to": "as_inv_2_0"
+   "from": "risk_head_0_0",
+   "to": "risk_check_0_0"
   },
   {
-   "from": "psa_inv_0_0",
-   "to": "psa_inv_1_0"
+   "from": "risk_check_0_0",
+   "to": "risk_do_0_0"
   },
   {
-   "from": "rea_inv_0_0",
-   "to": "rea_inv_1_0"
+   "from": "risk_do_0_0",
+   "to": "risk_avoid_0_0"
   },
   {
-   "from": "as_tx_0_0",
-   "to": "as_tx_1_0"
+   "from": "g_safe",
+   "to": "risk_head_0_0",
+   "from_dx": 124,
+   "label": "stable",
+   "label_at": [
+    411.0,
+    238
+   ]
   },
   {
-   "from": "as_tx_1_0",
-   "to": "as_tx_2_0"
+   "from": "fitt_head_0_0",
+   "to": "fitt_check_0_0"
   },
   {
-   "from": "psa_tx_0_0",
-   "to": "psa_tx_1_0"
+   "from": "fitt_check_0_0",
+   "to": "fitt_do_0_0"
   },
   {
-   "from": "psa_tx_1_0",
-   "to": "psa_tx_2_0"
+   "from": "fitt_do_0_0",
+   "to": "fitt_avoid_0_0"
   },
   {
-   "from": "rea_tx_0_0",
-   "to": "rea_tx_1_0"
-  },
-  {
-   "from": "as_head_0_0",
-   "to": "as_pres_0_0"
-  },
-  {
-   "from": "as_pres_1_0",
-   "to": "as_inv_0_0"
-  },
-  {
-   "from": "as_inv_2_0",
-   "to": "as_tx_0_0"
-  },
-  {
-   "from": "g_as",
-   "to": "as_head_0_0",
+   "from": "g_dose",
+   "to": "fitt_head_0_0",
    "from_dx": 0
   },
   {
-   "from": "psa_head_0_0",
-   "to": "psa_pres_0_0"
+   "from": "htn_head_0_0",
+   "to": "htn_check_0_0"
   },
   {
-   "from": "psa_pres_1_0",
-   "to": "psa_inv_0_0"
+   "from": "htn_check_0_0",
+   "to": "htn_do_0_0"
   },
   {
-   "from": "psa_inv_1_0",
-   "to": "psa_tx_0_0"
+   "from": "htn_do_0_0",
+   "to": "htn_avoid_0_0"
   },
   {
-   "from": "g_ps",
-   "to": "psa_head_0_0",
-   "from_dx": 0
+   "from": "g_tail",
+   "to": "htn_head_0_0",
+   "from_dx": -124
   },
   {
-   "from": "rea_head_0_0",
-   "to": "rea_pres_0_0"
+   "from": "med_head_0_0",
+   "to": "med_check_0_0"
   },
   {
-   "from": "rea_pres_1_0",
-   "to": "rea_inv_0_0"
+   "from": "med_check_0_0",
+   "to": "med_do_0_0"
   },
   {
-   "from": "rea_inv_1_0",
-   "to": "rea_tx_0_0"
+   "from": "med_do_0_0",
+   "to": "med_avoid_0_0"
   },
   {
-   "from": "g_re",
-   "to": "rea_head_0_0",
-   "from_dx": 0
+   "from": "g_tail",
+   "to": "med_head_0_0",
+   "from_dx": 124
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1374,
-   "w": 483,
-   "title": "Inflammatory vs mechanical back pain",
-   "items": [
-    "inflammatory: under 40 · insidious · > 3 months · stiffness > 60 min · night pain · BETTER with activity · sacroiliac tender · chest expansion ↓ · neuro deficit unlikely",
-    "mechanical: any age · acute · < 4 weeks · stiffness < 30 min · WORSE with activity · neuro deficit possible"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 542,
-   "y": 1374,
-   "w": 483,
-   "title": "Also in the family",
-   "items": [
-    "arthritis with Crohn's or ulcerative colitis",
-    "acute anterior uveitis · undifferentiated SpA · juvenile (enthesitis-related)"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

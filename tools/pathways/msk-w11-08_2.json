@@ -1,586 +1,557 @@
 {
- "name": "physical activity prescription overview",
- "width": 1344,
- "title": "Writing a physical activity prescription: first check it is safe (absolute contraindications stop it; otherwise stratify cardiovascular risk to decide how to start), then write the dose with F.I.T.T., then tailor it for hypertension and blood pressure medications; adjust if pain or swelling follows",
+ "name": "acute monoarthritis overview",
+ "width": 982,
+ "title": "Acute monoarthritis: one hot, red joint for under six weeks is infected until the aspirate says otherwise; the three C's (cell count, culture with Gram stain, crystals) separate septic arthritis from gout (needle-shaped, negatively birefringent urate) and pseudogout (rhomboid, positively birefringent calcium pyrophosphate), each with its own treatment",
  "kinds": {
-  "ci_h": [
+  "sep_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sep_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "sep_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "gout_h": [
    "#b5600f",
    "#b5600f",
    "#ffffff",
    "#ffffff"
   ],
-  "ci_t": [
+  "gout_t": [
    "#fbe8d3",
    "#b5600f",
    "#b5600f",
    "#18212e"
   ],
-  "ci_w": [
+  "gout_w": [
    "#ffffff",
    "#b5600f",
    "#b5600f",
    "#18212e"
   ],
-  "risk_h": [
+  "cppd_h": [
    "#1f6f8b",
    "#1f6f8b",
    "#ffffff",
    "#ffffff"
   ],
-  "risk_t": [
+  "cppd_t": [
    "#dceef4",
    "#1f6f8b",
    "#1f6f8b",
    "#18212e"
   ],
-  "risk_w": [
+  "cppd_w": [
    "#ffffff",
    "#1f6f8b",
    "#1f6f8b",
-   "#18212e"
-  ],
-  "fitt_h": [
-   "#1f5f9e",
-   "#1f5f9e",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "fitt_t": [
-   "#dde9f7",
-   "#1f5f9e",
-   "#1f5f9e",
-   "#18212e"
-  ],
-  "fitt_w": [
-   "#ffffff",
-   "#1f5f9e",
-   "#1f5f9e",
-   "#18212e"
-  ],
-  "htn_h": [
-   "#6a4aa8",
-   "#6a4aa8",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "htn_t": [
-   "#ebe4f7",
-   "#6a4aa8",
-   "#6a4aa8",
-   "#18212e"
-  ],
-  "htn_w": [
-   "#ffffff",
-   "#6a4aa8",
-   "#6a4aa8",
-   "#18212e"
-  ],
-  "med_h": [
-   "#4f6d1f",
-   "#4f6d1f",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "med_t": [
-   "#e7eed9",
-   "#4f6d1f",
-   "#4f6d1f",
-   "#18212e"
-  ],
-  "med_w": [
-   "#ffffff",
-   "#4f6d1f",
-   "#4f6d1f",
    "#18212e"
   ]
  },
  "bands": [
   {
    "x": 40,
-   "y": 270,
-   "w": 246,
-   "h": 718,
+   "y": 290,
+   "w": 300,
+   "h": 966,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 370,
+   "y": 290,
+   "w": 300,
+   "h": 966,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
-   "x": 288,
-   "y": 270,
-   "w": 246,
-   "h": 718,
+   "x": 672,
+   "y": 290,
+   "w": 300,
+   "h": 966,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
-  },
-  {
-   "x": 564,
-   "y": 270,
-   "w": 246,
-   "h": 718,
-   "fill": "#eff5fc",
-   "stroke": "#1f5f9e"
-  },
-  {
-   "x": 840,
-   "y": 270,
-   "w": 246,
-   "h": 718,
-   "fill": "#f5f1fb",
-   "stroke": "#6a4aa8"
-  },
-  {
-   "x": 1088,
-   "y": 270,
-   "w": 246,
-   "h": 718,
-   "fill": "#f4f7ee",
-   "stroke": "#4f6d1f"
   }
  ],
  "row_labels": [
   {
    "x": 23,
-   "y": 396,
-   "h": 204,
-   "text": "CHECK"
+   "y": 434,
+   "h": 250,
+   "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 640,
-   "h": 168,
-   "text": "DO"
+   "y": 724,
+   "h": 214,
+   "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 848,
-   "h": 132,
-   "text": "AVOID"
+   "y": 978,
+   "h": 270,
+   "text": "TREATMENT"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 307,
+   "x": 126,
    "y": 10,
    "w": 760,
    "kind": "dark",
-   "title": "Prescribe physical activity like a drug: is it SAFE, then what DOSE?",
+   "title": "ONE hot, red, swollen joint for under 6 weeks: INFECTION until proven otherwise",
    "lines": [
-    "ask: current activity · intentions · past activity + preferences · is it safe (symptoms, history)?",
-    "biggest gain: from NONE to SOME, so target sedentary patients"
+    "IF THE JOINT IS RED, ASPIRATE IT → the 3 C's: cell count (hours) · culture + Gram stain (24–48 h) · crystals (hours)",
+    "differential: infection · infection · infection · gout · pseudogout (rarely reactive or psoriatic arthritis)"
    ]
   },
   {
-   "id": "g_safe",
+   "id": "g_inf",
    "x": 45,
    "y": 138,
-   "w": 484,
-   "h": 60,
+   "w": 290,
+   "h": 80,
    "kind": "plain",
-   "title": "1 · IS IT SAFE?",
+   "title": "NO crystals, organisms seen or grown",
    "lines": [
-    "unstable or uncontrolled → review first"
+    "a MEDICAL EMERGENCY"
    ]
   },
   {
-   "id": "g_dose",
-   "x": 569,
+   "id": "g_cry",
+   "x": 375,
    "y": 138,
-   "w": 236,
-   "h": 60,
+   "w": 592,
+   "h": 80,
    "kind": "plain",
-   "title": "2 · WRITE THE DOSE",
+   "title": "CRYSTALS under polarized light",
    "lines": [
-    "F.I.T.T."
+    "both can look exactly like an infected joint, fever included"
    ]
   },
   {
-   "id": "g_tail",
-   "x": 845,
-   "y": 138,
-   "w": 484,
-   "h": 60,
-   "kind": "plain",
-   "title": "3 · TAILOR IT",
-   "lines": [
-    "blood pressure is not a reason to skip exercise"
-   ]
-  },
-  {
-   "id": "ci_head_0_0",
+   "id": "sep_head_0_0",
    "x": 45,
-   "y": 278,
-   "w": 236,
-   "h": 78,
-   "kind": "ci_h",
-   "title": "Absolute contraindication",
+   "y": 298,
+   "w": 290,
+   "h": 96,
+   "kind": "sep_h",
+   "title": "Septic arthritis",
    "lines": [
-    "any ONE stops it"
+    "Staphylococcus 60%+ · streptococcus 20%",
+    "gram-negatives 15% (immunocompromised, elderly, intravenous (IV) drug use)"
    ]
   },
   {
-   "id": "risk_head_0_0",
-   "x": 293,
-   "y": 278,
-   "w": 236,
-   "h": 78,
-   "kind": "risk_h",
-   "title": "Stratify cardiovascular risk",
+   "id": "gout_head_0_0",
+   "x": 375,
+   "y": 298,
+   "w": 290,
+   "h": 96,
+   "kind": "gout_h",
+   "title": "Gout",
    "lines": [
-    "start low, go slow if sedentary"
+    "monosodium urate (uric acid) crystals"
    ]
   },
   {
-   "id": "fitt_head_0_0",
-   "x": 569,
-   "y": 278,
-   "w": 236,
-   "h": 78,
-   "kind": "fitt_h",
-   "title": "F.I.T.T.",
+   "id": "cppd_head_0_0",
+   "x": 677,
+   "y": 298,
+   "w": 290,
+   "h": 96,
+   "kind": "cppd_h",
+   "title": "Pseudogout",
    "lines": [
-    "target ≥ 150 min a week, moderate-vigorous"
+    "calcium pyrophosphate (CPP) crystals"
    ]
   },
   {
-   "id": "htn_head_0_0",
-   "x": 845,
-   "y": 278,
-   "w": 236,
-   "h": 78,
-   "kind": "htn_h",
-   "title": "Hypertension",
-   "lines": []
-  },
-  {
-   "id": "med_head_0_0",
-   "x": 1093,
-   "y": 278,
-   "w": 236,
-   "h": 78,
-   "kind": "med_h",
-   "title": "Blood pressure medications",
-   "lines": []
-  },
-  {
-   "id": "ci_check_0_0",
+   "id": "sep_clue_0_0",
    "x": 45,
-   "y": 396,
-   "w": 236,
-   "h": 204,
-   "kind": "ci_t",
-   "title": "Any of these?",
+   "y": 434,
+   "w": 290,
+   "h": 87,
+   "kind": "sep_t",
+   "title": "Fever, unwell, can't bear weight",
    "lines": [
-    "• new or uncontrolled arrhythmia",
-    "• resting or uncontrolled tachycardia",
-    "• resting blood pressure (BP) > 180/100",
-    "• symptomatic hypotension",
-    "• unstable or crescendo angina",
-    "• acute or unstable heart failure",
-    "• unstable diabetes",
-    "• acute febrile illness"
+    "red flags: fever · pain · range of motion ↓"
    ]
   },
   {
-   "id": "risk_check_0_0",
-   "x": 293,
-   "y": 396,
-   "w": 236,
-   "h": 204,
-   "kind": "risk_t",
-   "title": "Symptoms? Risk factors?",
-   "lines": [
-    "• chest, neck, jaw or arm pain",
-    "• breathless at rest or mild exertion",
-    "• dizziness, syncope, palpitations",
-    "• ankle edema, claudication, murmur"
-   ]
-  },
-  {
-   "id": "fitt_check_0_0",
-   "x": 569,
-   "y": 396,
-   "w": 236,
-   "h": 204,
-   "kind": "fitt_t",
-   "title": "Talk test for intensity",
-   "lines": [
-    "• can SING = light",
-    "• can TALK, not sing = moderate",
-    "• no conversation = vigorous"
-   ]
-  },
-  {
-   "id": "htn_check_0_0",
-   "x": 845,
-   "y": 396,
-   "w": 236,
-   "h": 204,
-   "kind": "htn_t",
-   "title": "BP under 180/100?",
-   "lines": [
-    "if not, control it with medication first"
-   ]
-  },
-  {
-   "id": "med_check_0_0",
-   "x": 1093,
-   "y": 396,
-   "w": 236,
-   "h": 204,
-   "kind": "med_t",
-   "title": "NOT a contraindication",
-   "lines": [
-    "antihypertensives: keep exercising",
-    "diuretic: dehydration risk, toilets nearby"
-   ]
-  },
-  {
-   "id": "ci_do_0_0",
+   "id": "sep_clue_1_0",
    "x": 45,
-   "y": 640,
-   "w": 236,
-   "h": 168,
+   "y": 543,
+   "w": 290,
+   "h": 141,
+   "kind": "sep_w",
+   "title": "HIGH risk",
+   "lines": [
+    "• prosthetic joint or recent joint surgery",
+    "• immunosuppressed (diabetes, methotrexate, prednisone, biologics)",
+    "• IV drugs, alcohol, very young or old"
+   ]
+  },
+  {
+   "id": "gout_clue_0_0",
+   "x": 375,
+   "y": 434,
+   "w": 290,
+   "h": 96,
+   "kind": "gout_t",
+   "title": "Peaks in HOURS, exquisitely painful",
+   "lines": [
+    "• can't stand the bedsheet touching it",
+    "• big toe (1st metatarsophalangeal joint) in 50%"
+   ]
+  },
+  {
+   "id": "gout_clue_1_0",
+   "x": 375,
+   "y": 552,
+   "w": 290,
+   "h": 132,
+   "kind": "gout_w",
+   "title": "Who and why",
+   "lines": [
+    "• men 35–50 · women after menopause",
+    "• diuretics, alcohol, kidney impairment",
+    "• SMARTS: surgery, mechanical injury, alcohol, recent illness, travel, starting or stopping allopurinol"
+   ]
+  },
+  {
+   "id": "cppd_clue_0_0",
+   "x": 677,
+   "y": 434,
+   "w": 290,
+   "h": 115,
+   "kind": "cppd_t",
+   "title": "Less intense, SLOWER to peak, lasts longer",
+   "lines": [
+    "days to a few weeks untreated"
+   ]
+  },
+  {
+   "id": "cppd_clue_1_0",
+   "x": 677,
+   "y": 571,
+   "w": 290,
+   "h": 113,
+   "kind": "cppd_w",
+   "title": "Who",
+   "lines": [
+    "• older people, often with osteoarthritis",
+    "• KNEE most common"
+   ]
+  },
+  {
+   "id": "sep_inv_0_0",
+   "x": 45,
+   "y": 724,
+   "w": 290,
+   "h": 96,
+   "kind": "sep_t",
+   "title": "1 · Aspirate: cells HIGH",
+   "lines": [
+    "• over 50 000 points to infection",
+    "• Gram stain: e.g. Gram-positive cocci in clusters"
+   ]
+  },
+  {
+   "id": "sep_inv_1_0",
+   "x": 45,
+   "y": 842,
+   "w": 290,
+   "h": 96,
+   "kind": "sep_w",
+   "title": "2 · Bloods",
+   "lines": [
+    "• blood cultures",
+    "• blood count, electrolytes, creatinine, C-reactive protein"
+   ]
+  },
+  {
+   "id": "gout_inv_0_0",
+   "x": 375,
+   "y": 724,
+   "w": 290,
+   "h": 87,
+   "kind": "gout_t",
+   "title": "1 · NEEDLE-shaped, NEGATIVELY birefringent",
+   "lines": [
+    "culture: no growth"
+   ]
+  },
+  {
+   "id": "gout_inv_1_0",
+   "x": 375,
+   "y": 833,
+   "w": 290,
+   "h": 105,
+   "kind": "gout_w",
+   "title": "2 · Uric acid may be NORMAL in an attack",
+   "lines": [
+    "• high uric acid alone ≠ gout: don't treat it",
+    "• creatinine, fasting glucose, lipids"
+   ]
+  },
+  {
+   "id": "cppd_inv_0_0",
+   "x": 677,
+   "y": 724,
+   "w": 290,
+   "h": 97,
+   "kind": "cppd_t",
+   "title": "1 · RHOMBOID, intracellular, POSITIVELY birefringent",
+   "lines": [
+    "culture: no growth"
+   ]
+  },
+  {
+   "id": "cppd_inv_1_0",
+   "x": 677,
+   "y": 843,
+   "w": 290,
+   "h": 95,
+   "kind": "cppd_w",
+   "title": "2 · Chondrocalcinosis on X-ray",
+   "lines": [
+    "CPP in cartilage: an X-ray finding, not the attack"
+   ]
+  },
+  {
+   "id": "sep_tx_0_0",
+   "x": 45,
+   "y": 978,
+   "w": 290,
+   "h": 116,
+   "kind": "bad",
+   "title": "1 · ADMIT + urgent incision and drainage (I&D)",
+   "lines": [
+    "• orthopedic surgery consulted",
+    "• a closed space: drain it, repeat until clean"
+   ]
+  },
+  {
+   "id": "sep_tx_1_0",
+   "x": 45,
+   "y": 1116,
+   "w": 290,
+   "h": 132,
+   "kind": "ok",
+   "title": "2 · Empiric IV antibiotics",
+   "lines": [
+    "• cefazolin 2 g IV every 8 h",
+    "• methicillin-resistant S. aureus (MRSA) risk: vancomycin + ceftriaxone",
+    "• 4–6 weeks in all"
+   ]
+  },
+  {
+   "id": "gout_tx_0_0",
+   "x": 375,
+   "y": 978,
+   "w": 290,
+   "h": 132,
+   "kind": "ok",
+   "title": "1 · Settle the attack",
+   "lines": [
+    "• steroid injected into the joint",
+    "• indomethacin 50 mg three times daily",
+    "• or colchicine 0.6 mg every 8 h",
+    "• or prednisone 30 mg, down 5 mg every 2 days"
+   ]
+  },
+  {
+   "id": "gout_tx_1_0",
+   "x": 375,
+   "y": 1132,
+   "w": 290,
+   "h": 116,
    "kind": "warn",
-   "title": "Stabilise, then review",
+   "title": "2 · Allopurinol: NEVER during an attack",
    "lines": [
-    "BP > 180/100: control with medication BEFORE exercise"
+    "• recurrent attacks, tophi · lifelong",
+    "• cover with an anti-inflammatory (NSAID) or colchicine"
    ]
   },
   {
-   "id": "risk_do_0_0",
-   "x": 293,
-   "y": 640,
-   "w": 236,
-   "h": 168,
-   "kind": "risk_w",
-   "title": "Start by risk",
-   "lines": [
-    "• low risk → self-directed",
-    "• risk factors (↑ BP) → low/moderate intensity",
-    "• high risk → investigations (ECG) first",
-    "• symptoms → supervised, or exercise specialist"
-   ]
-  },
-  {
-   "id": "fitt_do_0_0",
-   "x": 569,
-   "y": 640,
-   "w": 236,
-   "h": 168,
+   "id": "cppd_tx_0_0",
+   "x": 677,
+   "y": 978,
+   "w": 290,
+   "h": 142,
    "kind": "ok",
-   "title": "Typical prescription",
+   "title": "Settle the attack",
    "lines": [
-    "• 5 times a week",
-    "• moderate intensity",
-    "• 30 minutes",
-    "• aerobic: walk, cycle, dance, swim, jog",
-    "• + strength 2 days a week (10-15 reps)"
+    "• steroid injected into the joint",
+    "• indomethacin 50 mg three times daily",
+    "• or the prednisone taper"
    ]
   },
   {
-   "id": "htn_do_0_0",
-   "x": 845,
-   "y": 640,
-   "w": 236,
-   "h": 168,
-   "kind": "ok",
-   "title": "Do",
+   "id": "cppd_tx_1_0",
+   "x": 677,
+   "y": 1142,
+   "w": 290,
+   "h": 106,
+   "kind": "cppd_w",
+   "title": "Rest, ice, elevation, hydration",
    "lines": [
-    "• warm-up 15 min, cool-down 10 min",
-    "• keep the feet moving",
-    "• protect joints if obese or inactive",
-    "• one rest day a week"
-   ]
-  },
-  {
-   "id": "med_do_0_0",
-   "x": 1093,
-   "y": 640,
-   "w": 236,
-   "h": 168,
-   "kind": "ok",
-   "title": "Recommended",
-   "lines": [
-    "• angiotensin-converting enzyme (ACE) inhibitor or angiotensin receptor blocker: minimal problems",
-    "• calcium channel blocker: extend the warm-down (postural hypotension)"
-   ]
-  },
-  {
-   "id": "ci_avoid_0_0",
-   "x": 45,
-   "y": 848,
-   "w": 236,
-   "h": 132,
-   "kind": "bad",
-   "title": "Exercise until controlled",
-   "lines": []
-  },
-  {
-   "id": "risk_avoid_0_0",
-   "x": 293,
-   "y": 848,
-   "w": 236,
-   "h": 132,
-   "kind": "bad",
-   "title": "Symptoms DURING exercise",
-   "lines": [
-    "stop and promptly evaluate or refer: warn patients of these"
-   ]
-  },
-  {
-   "id": "fitt_avoid_0_0",
-   "x": 569,
-   "y": 848,
-   "w": 236,
-   "h": 132,
-   "kind": "warn",
-   "title": "Adjust if",
-   "lines": [
-    "• severe pain during exercise",
-    "• pain that does not settle after",
-    "• more night pain or joint swelling"
-   ]
-  },
-  {
-   "id": "htn_avoid_0_0",
-   "x": 845,
-   "y": 848,
-   "w": 236,
-   "h": 132,
-   "kind": "bad",
-   "title": "Don't",
-   "lines": [
-    "• very strenuous resistance training",
-    "• vigorous exercise with left ventricular hypertrophy",
-    "• lying-down (postural hypotension)",
-    "• isometric or overhead exercises"
-   ]
-  },
-  {
-   "id": "med_avoid_0_0",
-   "x": 1093,
-   "y": 848,
-   "w": 236,
-   "h": 132,
-   "kind": "bad",
-   "title": "Beta-blockers",
-   "lines": [
-    "↓ maximum heart rate and performance: BAD for high intensity, avoid in athletes (ACE inhibitor first)",
-    "~but they limit the hypertensive response to exercise"
+    "allopurinol is for gout only"
    ]
   }
  ],
  "edges": [
   {
    "from": "root",
-   "to": "g_safe",
-   "path": "M687.0 88V113H287.0V138"
+   "to": "g_inf",
+   "path": "M506.0 88V113H190.0V138"
   },
   {
    "from": "root",
-   "to": "g_dose",
-   "path": "M687.0 88V113H687.0V138"
+   "to": "g_cry",
+   "path": "M506.0 88V113H671.0V138"
   },
   {
-   "from": "root",
-   "to": "g_tail",
-   "path": "M687.0 88V113H1087.0V138"
+   "from": "sep_clue_0_0",
+   "to": "sep_clue_1_0",
+   "dashed": true
   },
   {
-   "from": "ci_head_0_0",
-   "to": "ci_check_0_0"
+   "from": "gout_clue_0_0",
+   "to": "gout_clue_1_0",
+   "dashed": true
   },
   {
-   "from": "ci_check_0_0",
-   "to": "ci_do_0_0"
+   "from": "cppd_clue_0_0",
+   "to": "cppd_clue_1_0",
+   "dashed": true
   },
   {
-   "from": "ci_do_0_0",
-   "to": "ci_avoid_0_0"
+   "from": "sep_inv_0_0",
+   "to": "sep_inv_1_0"
   },
   {
-   "from": "g_safe",
-   "to": "ci_head_0_0",
-   "from_dx": -124,
-   "label": "unstable",
+   "from": "gout_inv_0_0",
+   "to": "gout_inv_1_0"
+  },
+  {
+   "from": "cppd_inv_0_0",
+   "to": "cppd_inv_1_0"
+  },
+  {
+   "from": "sep_tx_0_0",
+   "to": "sep_tx_1_0"
+  },
+  {
+   "from": "gout_tx_0_0",
+   "to": "gout_tx_1_0"
+  },
+  {
+   "from": "cppd_tx_0_0",
+   "to": "cppd_tx_1_0"
+  },
+  {
+   "from": "sep_head_0_0",
+   "to": "sep_clue_0_0"
+  },
+  {
+   "from": "sep_clue_1_0",
+   "to": "sep_inv_0_0"
+  },
+  {
+   "from": "sep_inv_1_0",
+   "to": "sep_tx_0_0"
+  },
+  {
+   "from": "g_inf",
+   "to": "sep_head_0_0",
+   "from_dx": 0,
+   "label": "Gram stain, culture",
    "label_at": [
-    163.0,
-    238
+    190.0,
+    258
    ]
   },
   {
-   "from": "risk_head_0_0",
-   "to": "risk_check_0_0"
+   "from": "gout_head_0_0",
+   "to": "gout_clue_0_0"
   },
   {
-   "from": "risk_check_0_0",
-   "to": "risk_do_0_0"
+   "from": "gout_clue_1_0",
+   "to": "gout_inv_0_0"
   },
   {
-   "from": "risk_do_0_0",
-   "to": "risk_avoid_0_0"
+   "from": "gout_inv_1_0",
+   "to": "gout_tx_0_0"
   },
   {
-   "from": "g_safe",
-   "to": "risk_head_0_0",
-   "from_dx": 124,
-   "label": "stable",
+   "from": "g_cry",
+   "to": "gout_head_0_0",
+   "from_dx": -151,
+   "label": "NEEDLES",
    "label_at": [
-    411.0,
-    238
+    520.0,
+    258
    ]
   },
   {
-   "from": "fitt_head_0_0",
-   "to": "fitt_check_0_0"
+   "from": "cppd_head_0_0",
+   "to": "cppd_clue_0_0"
   },
   {
-   "from": "fitt_check_0_0",
-   "to": "fitt_do_0_0"
+   "from": "cppd_clue_1_0",
+   "to": "cppd_inv_0_0"
   },
   {
-   "from": "fitt_do_0_0",
-   "to": "fitt_avoid_0_0"
+   "from": "cppd_inv_1_0",
+   "to": "cppd_tx_0_0"
   },
   {
-   "from": "g_dose",
-   "to": "fitt_head_0_0",
-   "from_dx": 0
-  },
-  {
-   "from": "htn_head_0_0",
-   "to": "htn_check_0_0"
-  },
-  {
-   "from": "htn_check_0_0",
-   "to": "htn_do_0_0"
-  },
-  {
-   "from": "htn_do_0_0",
-   "to": "htn_avoid_0_0"
-  },
-  {
-   "from": "g_tail",
-   "to": "htn_head_0_0",
-   "from_dx": -124
-  },
-  {
-   "from": "med_head_0_0",
-   "to": "med_check_0_0"
-  },
-  {
-   "from": "med_check_0_0",
-   "to": "med_do_0_0"
-  },
-  {
-   "from": "med_do_0_0",
-   "to": "med_avoid_0_0"
-  },
-  {
-   "from": "g_tail",
-   "to": "med_head_0_0",
-   "from_dx": 124
+   "from": "g_cry",
+   "to": "cppd_head_0_0",
+   "from_dx": 151,
+   "label": "RHOMBOIDS",
+   "label_at": [
+    822.0,
+    258
+   ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1282,
+   "w": 454,
+   "title": "The cell count does not decide",
+   "items": [
+    "the lecture's cases: septic 59 · gout 15 · pseudogout 18 (× 10⁹ cells/L), all inflammatory",
+    "Gram stain and culture find the infection · crystals split gout from pseudogout"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 513,
+   "y": 1282,
+   "w": 454,
+   "title": "Gout: after the attack",
+   "items": [
+    "recurrence 60% in 1 year · 80% in 2 · 90% in 5",
+    "less meat and seafood, less alcohol; vegetables and low-fat dairy are good"
+   ],
+   "cols": 1
+  }
+ ]
 }

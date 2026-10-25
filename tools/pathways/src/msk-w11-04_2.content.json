@@ -1,67 +1,46 @@
 {
- "name": "pediatric orthopedics overview",
- "title": "Pediatric orthopedics: an injury (fracture pattern, growth plate, apophysis) or a developmental problem (hip dysplasia, clubfoot, leg shape, scoliosis); each column gives presentation, exam and x-ray, and treatment",
- "col_w": 214,
- "root": {"title": "A child's bone or joint problem: an INJURY, or a DEVELOPMENTAL problem?",
-  "lines": ["children's bone is porous and pliable, the periosteum thick, and the growth plate (physis) the weak point: a child FRACTURES where an adult sprains"]},
+ "name": "osteoarthritis overview",
+ "title": "Osteoarthritis as a chronic monoarthritis: rule out red flags, make the clinical diagnosis, stage it on X-ray, then treat with biomechanical and education measures at every stage, medicines for symptoms, and joint replacement only for end-stage disease; arthroscopy is not recommended",
+ "col_w": 236,
+ "root": {
+  "title": "ONE joint aching for over 6 weeks, worse with activity: osteoarthritis (OA) until a red flag says otherwise",
+  "lines": [
+   "OA is a CLINICAL diagnosis: typical symptoms + NO other cause · the X-ray STAGES it, it does not diagnose it",
+   "first set aside mechanical and sports causes of knee pain (no arthritis)"
+  ]
+ },
  "groups": [
-  {"id": "g_inj", "cols": [0, 2], "title": "INJURY", "lines": ["falls from low heights · sport · pedestrian struck · infant or toddler: NON-ACCIDENTAL injury"]},
-  {"id": "g_dev", "cols": [3, 6], "title": "DEVELOPMENTAL", "lines": ["screen, then treat early; do not overtreat normal variants"]}
+  {"id": "g_dx", "cols": [0, 1], "title": "IS IT OA?", "lines": ["knee >> hip; ankle; shoulder >> big toe"]},
+  {"id": "g_tx", "cols": [2, 4], "title": "TREAT IT: what stage, what can be fixed?", "lines": ["no treatment preserves the joint; all improve life WITH it"]}
  ],
- "sections": ["head", "pres", "inv", "tx"],
- "row_names": {"pres": "PRESENTS AS", "inv": "EXAM & X-RAY", "tx": "TREATMENT"},
- "dashed_sections": ["pres"],
+ "sections": ["head", "clue", "tx"],
+ "row_names": {"clue": "LOOK FOR", "tx": "THEN"},
+ "dashed_sections": ["clue"],
  "columns": [
-  {"id": "frac", "colour": "teal",
-   "head": [[["h", "Fractures of pliable bone", ["buckle · greenstick · plastic deformation"]]]],
-   "pres": [[["t", "Bone bends or buckles", ["less ligament injury or dislocation than adults"]]]],
-   "inv": [[["w", "Remodels WELL if", ["• ≥ 2 years of growth left", "• metaphyseal", "• defect IN the joint's plane"]]],
-           [["w", "Remodels POORLY if", ["• displaced intra-articular", "• mid-shaft angulation or rotation", "• defect OUT of plane"]]]],
-   "tx": [[["ok", "Closed reduction → cast", ["hematoma block or conscious sedation"]]],
-          [["warn", "ALWAYS post-reduction films", ["then timely follow-up"]]]]},
-  {"id": "sh", "colour": "purple",
-   "head": [[["h", "Growth plate: Salter-Harris", ["risk: growth ARREST → leg length or angular deformity"]]]],
-   "pres": [[["t", "A 'sprain' in a child", ["sprains are rare in kids: think Salter-Harris I"]]]],
-   "inv": [[["w", "I and II", ["• II most common (distal radius)", "• stable with closed reduction"]]],
-           [["w", "III and IV: INTRA-ARTICULAR", ["• need ANATOMIC reduction", "• IV: bony bridge risk"]]],
-           [["w", "V: compression", ["often missed; found late as growth arrest"]]]],
-   "tx": [[["bad", "EVERY growth plate injury is serious", ["• follow ≥ 1 year (preferably 2)", "• warn the family"]]]]},
-  {"id": "apo", "colour": "orange",
-   "head": [[["h", "Apophysis", ["tendon insertion: pulled by fast growth + tight muscle"]]]],
-   "pres": [[["t", "SUDDEN burst → AVULSION", ["• pelvis", "• 5th metatarsal", "• medial epicondyle"]]],
-            [["w", "GRADUAL → APOPHYSITIS", ["• Osgood-Schlatter: tibial tuberosity", "• Sinding-Larsen: distal patella", "• Sever's: calcaneus"]]]],
-   "inv": [[["w", "Apophysitis: CLINICAL diagnosis", ["Osgood-Schlatter: girls 8-14, boys 10-15"]]]],
-   "tx": [[["ok", "Usually non-surgical", ["• apophysitis: rest, ice, compression, elevation; activity as tolerated; anti-inflammatories as needed", "• settles within 2 years"]]]]},
-  {"id": "ddh", "colour": "blue",
-   "head": [[["h", "Developmental dysplasia of the hip", ["shallow acetabulum → subluxation or dislocation"]]]],
-   "pres": [[["t", "Risk factors", ["• first-born · female · breech", "• family history · oligohydramnios", "• torticollis · clubfoot"]]]],
-   "inv": [[["w", "Up to 3-6 months", ["• Barlow: hip slips OUT (adduct, push back)", "• Ortolani: hip slips back IN (abduct, lift)"]]],
-           [["w", "After that: unreliable", ["• limited ABDUCTION", "• Galeazzi: leg length difference", "• painless waddling limp"]]]],
-   "tx": [[["ok", "Up to 6 months: Pavlik harness", []]],
-          [["warn", "Older: closed reduction + spica cast", ["or open reduction ± osteotomy"]]]]},
-  {"id": "club", "colour": "magenta",
-   "head": [[["h", "Clubfoot", ["ankle plantarflexed · heel and forefoot in varus"]]]],
-   "pres": [[["t", "At birth", ["• genetic component", "• spina bifida, other syndromes"]]]],
-   "inv": [[["w", "Untreated", ["progressive deformity and stiffness; walking and footwear suffer"]]]],
-   "tx": [[["ok", "Ponseti, from the first weeks", ["1 · weekly casting 4-6 weeks", "2 · percutaneous Achilles lengthening", "3 · cast 3 weeks"]]],
-          [["ok", "4 · Boots and bar", ["full time 3 months, then nights 2-3 years"]]],
-          [["warn", "Resistant or recurrent", ["posteromedial release surgery"]]]]},
-  {"id": "leg", "colour": "olive",
-   "head": [[["h", "Leg shape", ["in-toeing · out-toeing · bow legs · knock knees"]]]],
-   "pres": [[["t", "NORMAL for age", ["• bow legs (varum): birth to 2", "• knock knees (valgum): 3 to 7"]]]],
-   "inv": [[["bad", "Warning signs", ["• asymmetric · progressive varum · short stature", "• persists beyond 7-8 years", "• bone or nutritional disease"]]]],
-   "tx": [[["ok", "Normal variant: reassure", ["avoid overtreatment"]]]]},
-  {"id": "sco", "colour": "slate",
-   "head": [[["h", "Scoliosis", ["lateral curve + rotation · idiopathic: adolescent, F > M"]]]],
-   "pres": [[["t", "Rib HUMP, rarely PAIN", ["often noticed incidentally"]]]],
-   "inv": [[["w", "Adams forward bend", ["• rib prominence on the convex side", "• full neuro exam, skin over the spine"]]],
-           [["w", "X-ray", ["location · levels · direction · degrees"]]],
-           [["w", "Progresses if", ["• pre-menarchal (young)", "• large or double curve", "• thoracic"]]]],
-   "tx": [[["ok", "Monitor ± Boston brace", ["no drug treatment"]]],
-          [["warn", "Surgery: fusion", ["to STOP progression · by curve size and risk"]]]]}
- ],
- "panels": [
-  {"title": "Pediatric elbow", "items": ["ossification centres appear in order CRITOE at about 1 · 3 · 5 · 7 · 9 · 11 years: capitellum, radial head, internal (medial) epicondyle, trochlea, olecranon, external (lateral) epicondyle", "swelling = suspect a bony injury · call pediatric orthopedics for a very swollen elbow, instability, a displaced fracture or an incongruously reduced dislocation"]},
-  {"title": "A limping child", "items": ["causes differ by AGE: missed hip dysplasia · clubfoot · hip disease (transient synovitis, Perthes, slipped capital femoral epiphysis) · overuse · trauma, accidental or not", "warning signs in any abnormal gait: asymmetry · progressive · leg length difference · pain · deformity", "see the CHILD WITH A LIMP chart"]}
+  {"id": "red", "colour": "slate",
+   "head": [[["h", "Red flag → NOT OA", ["think something else"]]]],
+   "clue": [[["bad", "Any ONE of these", ["• warm or hot joint: infection, crystals", "• autoimmune (rheumatoid, seronegative)", "• malignancy · fracture · avascular necrosis"]]], [["w", "Widespread pain", ["not OA: look elsewhere"]]]],
+   "tx": [[["w", "Work up that cause", ["MRI or bone scan only when the diagnosis is in DOUBT"]]]]
+  },
+  {"id": "oa", "colour": "teal",
+   "head": [[["h", "Osteoarthritis", ["a 'sick joint': every tissue fails to heal"]]]],
+   "clue": [[["t", "Pain or stiffness with ACTIVITY", ["• morning stiffness < 30 min (usually < 5)", "• cool or barely warm effusion", "• joint-line tenderness, crepitus, thickening"]]], [["w", "Risk", ["• obesity · age · trauma, alignment · genes", "• female 1.4× · post-traumatic OA (after an anterior cruciate ligament tear) starts young"]]]],
+   "tx": [[["t", "X-ray: Kellgren-Lawrence (K/L) grade", ["• 1–2 = early · 3–4 = late to end stage", "• joint space narrowing, osteophytes"]]]]
+  },
+  {"id": "bio", "colour": "blue",
+   "head": [[["h", "Every stage: biomechanics + education", ["alignment · overuse · weakness · gait"]]]],
+   "clue": [[["ok", "ACTIVE therapy", ["• neuromuscular exercise physiotherapy, ≥ 3 months (Tai-Chi, GLA:D program)", "• 150 min of activity a week", "• lose 5% of body weight"]]]],
+   "tx": [[["w", "Also", ["• walking aids, insoles, unloader brace", "• occupational therapy: joint protection", "• cognitive behavioural therapy · topical heat"]]], [["bad", "PASSIVE therapy not recommended", ["ultrasound, nerve stimulation (TENS), laser, acupuncture"]]]]
+  },
+  {"id": "med", "colour": "purple",
+   "head": [[["h", "Medicines: symptoms only", ["less pain, better function"]]]],
+   "clue": [[["ok", "Evidence-based", ["• topical anti-inflammatory (NSAID): diclofenac 2–3 × a day", "• oral NSAID if no contraindication (not in kidney failure)", "• refractory: steroid injection (short-term), then a duloxetine trial 2–3 months"]]]],
+   "tx": [[["warn", "Weak or unproven", ["• acetaminophen: meaningful effect?", "• glucosamine, herbal remedies", "• injected hyaluronic acid, platelet-rich plasma, stem cells"]]], [["bad", "AVOID", ["• opioids: generally avoid (tramadol at most; others: risks > benefit)", "• neuropathic pain drugs, capsaicin, chondroitin"]]]]
+  },
+  {"id": "surg", "colour": "orange",
+   "head": [[["h", "Surgery: END STAGE only", ["unacceptable symptoms despite all of the rest"]]]],
+   "clue": [[["ok", "Joint replacement (arthroplasty)", ["a salvage procedure · strong evidence of benefit", "• X-ray bone on bone → refer to orthopedics"]]]],
+   "tx": [[["bad", "NO knee arthroscopy", ["± meniscectomy or repair: no meaningful benefit"]]]]
+  }
  ]
 }

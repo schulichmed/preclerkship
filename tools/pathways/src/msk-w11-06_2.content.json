@@ -1,40 +1,70 @@
 {
- "name": "soft tissue mass overview",
- "title": "A soft tissue mass: under 5 cm with no suspicious feature is excised; over 5 cm or with any suspicious feature is imaged and core-biopsied first, then a benign result is observed, a resectable sarcoma is staged and treated by surgery with radiation, and a non-curable one goes to palliative care",
- "col_w": 250,
- "root": {"title": "A soft tissue lump: could it be a SARCOMA? Decide BEFORE anyone cuts it out",
-  "lines": ["benign tumours are 100 times more common · a sarcoma shelled out like a benign lump, with little or no margin, is the 'WHOOPS'"]},
+ "name": "connective tissue disease overview",
+ "title": "Connective tissue diseases: the signature feature sorts lupus and antiphospholipid syndrome, Sjogren's syndrome, inflammatory myositis and systemic sclerosis; each column gives presentation, the antibodies and tests in order, and treatment, with Raynaud's and lupus care below",
+ "col_w": 236,
+ "root": {
+  "title": "Woman, several organs, often Raynaud's: which connective tissue disease?",
+  "lines": [
+   "all more common in women · most are antinuclear antibody (ANA) positive",
+   "ANA negative → lupus highly unlikely · ANA positive alone proves nothing (common in the healthy)"
+  ]
+ },
  "groups": [
-  {"id": "g_ok", "cols": [0, 0], "title": "Under 5 cm, NO suspicious feature", "lines": ["limited growth · minimal symptoms · superficial"]},
-  {"id": "g_sus", "cols": [1, 3], "title": "Over 5 cm, OR under 5 cm with ANY suspicious feature", "lines": ["rapid growth · pain · recurrent · deep · fixed · difficult location"]}
+  {"id": "g_sle", "cols": [0, 1], "title": "Rash in the sun, mouth ulcers, organs, or CLOTS", "lines": []},
+  {"id": "g_ss", "cols": [2, 2], "title": "Dry eyes + dry mouth", "lines": []},
+  {"id": "g_my", "cols": [3, 3], "title": "Proximal muscle weakness", "lines": []},
+  {"id": "g_ssc", "cols": [4, 4], "title": "Tight skin + Raynaud's", "lines": []}
  ],
- "pres": [
-  {"id": "p_sus", "group": "g_sus", "title": "IMAGE before biopsy", "lines": ["MRI preferred · CT · rarely ultrasound · or a surgical expert", "then CORE biopsy by someone experienced in sarcoma · NOT fine needle aspiration"]}
- ],
- "row_names": {"pres": "WORKUP", "inv": "NEXT", "tx": "TREATMENT"},
- "sections": ["head", "inv", "tx"],
+ "sections": ["head", "pres", "inv", "tx"],
+ "row_names": {"pres": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREAT · WATCH"},
+ "dashed_sections": ["pres"],
  "columns": [
-  {"id": "ex", "colour": "teal",
-   "head": [[["h", "Low risk", []]]],
-   "inv": [[["w", "Excisional biopsy is acceptable", ["complete removal with minimal surrounding tissue"]]]],
-   "tx": [[["ok", "Excise", []]]]},
-  {"id": "ben", "colour": "olive", "drop_label": "benign",
-   "head": [[["h", "Benign on biopsy", ["e.g. spindle cell/pleomorphic lipoma"]]]],
-   "inv": [[["w", "Lipoma or liposarcoma?", ["immunohistochemistry: MDM2 negative, CD34 positive → lipoma"]]]],
-   "tx": [[["ok", "Observe", []]]]},
-  {"id": "sar", "colour": "orange", "drop_label": "sarcoma",
-   "head": [[["h", "Sarcoma, resectable", ["usually a PAINLESS lump"]]]],
-   "inv": [[["w", "1 · Stage: CT chest", ["the lung is where it spreads"]]],
-           [["w", "2 · Multidisciplinary tumour board", ["every possible sarcoma"]]]],
-   "tx": [[["ok", "Surgery: WIDE resection", ["a marginal resection is the 'whoops'"]]],
-          [["ok", "± Radiation, mostly PRE-operative", ["• local recurrence 30% → 10%", "• pre-op: better long-term function"]]],
-          [["warn", "± Chemotherapy: uncommon", ["• NOT standard after surgery", "• curable with it: osteosarcoma, Ewing sarcoma, rhabdomyosarcoma in young adults"]]]]},
-  {"id": "pal", "colour": "slate", "drop_label": "metastatic",
-   "head": [[["h", "Not curable", ["e.g. lung metastases, non-resectable"]]]],
-   "inv": [[["w", "Medical oncology", ["no standard chemotherapy · goals of care · clinical trials"]]]],
-   "tx": [[["ok", "Palliative care", ["can greatly improve quality of life"]]]]}
+  {"id": "sle", "colour": "purple",
+   "head": [[["h", "Systemic lupus erythematosus (SLE)", ["1 in 1000 · women 9:1 · young"]]]],
+   "pres": [[["t", "Classify: ≥ 4 of 11, over 6 weeks", ["• malar rash (spares the nasolabial folds), discoid, photosensitive", "• mouth or nose ulcers · non-erosive arthritis"]]],
+            [["w", "Organs", ["• pleurisy, pericarditis · nephritis", "• seizure, psychosis · counts ↓"]]]],
+   "inv": [[["t", "1 · ANA: positive in > 95%", ["+ blood count, creatinine, urinalysis"]]],
+           [["w", "2 · ONLY if ANA + → anti-DNA", ["• anti-Smith (extractable antigens)", "• complement C3, C4 low"]]]],
+   "tx": [[["ok", "Hydroxychloroquine for EVERY patient", ["the anchor: skin, joints, fewer flares"]]],
+          [["ok", "Minor organ (skin, joints)", ["• topical or low-dose steroid", "• anti-inflammatories (NSAIDs)"]]],
+          [["bad", "Major organ → high-dose steroid + immune suppressant", ["mycophenolate, azathioprine, cyclophosphamide"]]]]},
+  {"id": "aps", "colour": "slate",
+   "head": [[["h", "Antiphospholipid syndrome (APS)", ["half with SLE · in 10-20% of SLE"]]]],
+   "pres": [[["t", "RECURRENT clots or pregnancy loss", ["• venous (deep vein thrombosis) or arterial", "• livedo reticularis · platelets ↓"]]]],
+   "inv": [[["t", "Antibodies, PERSISTENT", ["• anticardiolipin", "• lupus anticoagulant (clotting time falsely ↑)", "• false-positive syphilis test (VDRL)"]]]],
+   "tx": [[["ok", "Antibody, no event", ["nothing or aspirin (ASA) 81 mg"]]],
+          [["ok", "Thrombosis → long-term warfarin", []]],
+          [["ok", "Fetal loss → ASA + heparin", []]],
+          [["bad", "Catastrophic → IV heparin + IV steroids", ["± plasmapheresis or IV immunoglobulin"]]]]},
+  {"id": "sjo", "colour": "teal",
+   "head": [[["h", "Sjögren's syndrome", ["2 in 10,000 · lymphocytes in exocrine glands"]]]],
+   "pres": [[["t", "Dry eyes + dry mouth (sicca)", ["• gritty eyes, worse through the day", "• dental caries · parotid swelling"]]],
+            [["w", "Beyond the glands", ["• Raynaud's · purpura on the shins", "• arthritis · neuropathy"]]]],
+   "inv": [[["t", "ANA 80-90% · rheumatoid factor 90%", ["• anti-Ro, anti-La", "• sedimentation rate (ESR) very high"]]]],
+   "tx": [[["bad", "Watch: B-cell lymphoma (MALT)", ["the higher risk"]]]]},
+  {"id": "myo", "colour": "orange",
+   "head": [[["h", "Inflammatory myositis", ["1 in 100,000 · shoulders, hips, neck"]]]],
+   "pres": [[["t", "Dermatomyositis", ["• children, older adults · may be cancer", "• heliotrope rash, Gottron's papules"]]],
+            [["w", "Polymyositis", ["any age · NO rash · not cancer-linked"]]]],
+   "inv": [[["t", "1 · Rule out mimics FIRST", ["• drugs: statins, steroids, colchicine, hydroxychloroquine", "• alcohol · thyroid · potassium, phosphate, magnesium"]]],
+           [["w", "2 · Creatine kinase ↑ · ANA 80%", ["anti-Jo-1 → lung disease, bad prognosis"]]]],
+   "tx": [[["ok", "High-dose steroids", ["then steroid-sparing: azathioprine, methotrexate"]]],
+          [["bad", "Danger", ["• swallowing, heart, lung", "• lung disease: treat aggressively", "• cancer (older, dermatomyositis)"]]]]},
+  {"id": "ssc", "colour": "blue",
+   "head": [[["h", "Systemic sclerosis (scleroderma)", ["1 in 10,000 · highest mortality"]]]],
+   "pres": [[["t", "Fibrosis + vessels + autoimmunity", ["• Raynaud's, reflux in nearly all", "• tight fingers · dysphagia · ulcers"]]],
+            [["w", "Limited", ["• below elbows, knees", "• anticentromere"]], ["w", "Diffuse", ["• + arms, thighs, trunk", "• Scl-70"]]]],
+   "inv": [[["t", "ANA > 95%", ["• Scl-70 → lung fibrosis", "• RNA polymerase → renal crisis", "• limited: pulmonary hypertension late"]]]],
+   "tx": [[["ok", "Raynaud's", ["• avoid cold · stop smoking", "• nifedipine (calcium channel blocker)"]]],
+          [["bad", "Renal crisis: blood pressure ↑, hemolysis, kidneys fail", ["→ ACE inhibitor; > 80% die if missed"]]],
+          [["ok", "Treat the organ involved", ["methotrexate softens skin in early diffuse"]]]]}
  ],
  "panels": [
-  {"title": "History and exam", "items": ["has it GROWN? when first noticed, how big then and now (compare to fruit or nuts)", "pain or numbness: sarcomas are usually painless; significant symptoms → think metastases · recurrence · other lumps · family history", "superficial (subcutaneous) or deep (muscle) · mobile, tethered or fixed · nodes rarely involved"]}
+  {"title": "Raynaud's: primary or secondary?", "items": [
+   "primary: no disease, often no drug needed",
+   "Raynaud's + dilated nailfold capillaries + anticentromere → ⅓ get scleroderma in 5 years"]},
+  {"title": "Every lupus patient", "items": [
+   "sun avoidance, SPF 30 · cardiovascular risk (50× events)",
+   "die of cardiovascular events, infection, SLE, drug complications"]}
  ]
 }

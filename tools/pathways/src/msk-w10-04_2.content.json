@@ -1,43 +1,52 @@
 {
- "name": "acute monoarthritis overview",
- "title": "Acute monoarthritis: one hot, red joint for under six weeks is infected until the aspirate says otherwise; the three C's (cell count, culture with Gram stain, crystals) separate septic arthritis from gout (needle-shaped, negatively birefringent urate) and pseudogout (rhomboid, positively birefringent calcium pyrophosphate), each with its own treatment",
- "col_w": 290,
- "root": {
-  "title": "ONE hot, red, swollen joint for under 6 weeks: INFECTION until proven otherwise",
-  "lines": [
-   "IF THE JOINT IS RED, ASPIRATE IT → the 3 C's: cell count (hours) · culture + Gram stain (24–48 h) · crystals (hours)",
-   "differential: infection · infection · infection · gout · pseudogout (rarely reactive or psoriatic arthritis)"
-  ]
- },
+ "name": "fracture radiology overview",
+ "title": "Describing a fracture on x-ray in a fixed order: views, location, type, descriptors, joint surface, other findings and bone quality, then how healing looks on follow-up films; each column gives what to look for and what it tells you",
+ "col_w": 214,
+ "root": {"title": "A fracture on x-ray: TRACE the cortex, look for SECONDARY signs, then describe it in the same order every time",
+  "lines": ["body in anatomic position · more than one descriptor for each fracture", "OLD ACIDS: open · location · degree · articular surface · comminution · intrinsic bone quality · displacement · soft tissue"]},
  "groups": [
-  {"id": "g_inf", "cols": [0, 0], "title": "NO crystals, organisms seen or grown", "lines": ["a MEDICAL EMERGENCY"]},
-  {"id": "g_cry", "cols": [1, 2], "title": "CRYSTALS under polarized light", "lines": ["both can look exactly like an infected joint, fever included"]}
+  {"id": "g_desc", "cols": [0, 5], "title": "DESCRIBE IT", "lines": ["what you say on the phone so the consultant can picture it"]},
+  {"id": "g_heal", "cols": [6, 6], "title": "FOLLOW IT", "lines": ["follow-up films"]}
  ],
- "sections": ["head", "clue", "inv", "tx"],
- "row_names": {"clue": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
- "dashed_sections": ["clue"],
+ "sections": ["head", "pres", "inv"],
+ "row_names": {"pres": "LOOK FOR", "inv": "WHAT IT TELLS YOU"},
  "columns": [
-  {"id": "sep", "colour": "magenta", "drop_label": "Gram stain, culture",
-   "head": [[["h", "Septic arthritis", ["Staphylococcus 60%+ · streptococcus 20%", "gram-negatives 15% (immunocompromised, elderly, intravenous (IV) drug use)"]]]],
-   "clue": [[["t", "Fever, unwell, can't bear weight", ["red flags: fever · pain · range of motion ↓"]]], [["w", "HIGH risk", ["• prosthetic joint or recent joint surgery", "• immunosuppressed (diabetes, methotrexate, prednisone, biologics)", "• IV drugs, alcohol, very young or old"]]]],
-   "inv": [[["t", "1 · Aspirate: cells HIGH", ["• over 50 000 points to infection", "• Gram stain: e.g. Gram-positive cocci in clusters"]]], [["w", "2 · Bloods", ["• blood cultures", "• blood count, electrolytes, creatinine, C-reactive protein"]]]],
-   "tx": [[["bad", "1 · ADMIT + urgent incision and drainage (I&D)", ["• orthopedic surgery consulted", "• a closed space: drain it, repeat until clean"]]], [["ok", "2 · Empiric IV antibiotics", ["• cefazolin 2 g IV every 8 h", "• methicillin-resistant S. aureus (MRSA) risk: vancomycin + ceftriaxone", "• 4–6 weeks in all"]]]]
-  },
-  {"id": "gout", "colour": "orange", "drop_label": "NEEDLES",
-   "head": [[["h", "Gout", ["monosodium urate (uric acid) crystals"]]]],
-   "clue": [[["t", "Peaks in HOURS, exquisitely painful", ["• can't stand the bedsheet touching it", "• big toe (1st metatarsophalangeal joint) in 50%"]]], [["w", "Who and why", ["• men 35–50 · women after menopause", "• diuretics, alcohol, kidney impairment", "• SMARTS: surgery, mechanical injury, alcohol, recent illness, travel, starting or stopping allopurinol"]]]],
-   "inv": [[["t", "1 · NEEDLE-shaped, NEGATIVELY birefringent", ["culture: no growth"]]], [["w", "2 · Uric acid may be NORMAL in an attack", ["• high uric acid alone ≠ gout: don't treat it", "• creatinine, fasting glucose, lipids"]]]],
-   "tx": [[["ok", "1 · Settle the attack", ["• steroid injected into the joint", "• indomethacin 50 mg three times daily", "• or colchicine 0.6 mg every 8 h", "• or prednisone 30 mg, down 5 mg every 2 days"]]], [["warn", "2 · Allopurinol: NEVER during an attack", ["• recurrent attacks, tophi · lifelong", "• cover with an anti-inflammatory (NSAID) or colchicine"]]]]
-  },
-  {"id": "cppd", "colour": "teal", "drop_label": "RHOMBOIDS",
-   "head": [[["h", "Pseudogout", ["calcium pyrophosphate (CPP) crystals"]]]],
-   "clue": [[["t", "Less intense, SLOWER to peak, lasts longer", ["days to a few weeks untreated"]]], [["w", "Who", ["• older people, often with osteoarthritis", "• KNEE most common"]]]],
-   "inv": [[["t", "1 · RHOMBOID, intracellular, POSITIVELY birefringent", ["culture: no growth"]]], [["w", "2 · Chondrocalcinosis on X-ray", ["CPP in cartilage: an X-ray finding, not the attack"]]]],
-   "tx": [[["ok", "Settle the attack", ["• steroid injected into the joint", "• indomethacin 50 mg three times daily", "• or the prednisone taper"]]], [["w", "Rest, ice, elevation, hydration", ["allopurinol is for gout only"]]]]
-  }
+  {"id": "view", "colour": "teal",
+   "head": [[["h", "1 · Views", ["anteroposterior (AP) · lateral · oblique"]]]],
+   "pres": [[["t", "Special views", ["• ankle: MORTISE view", "• scaphoid: ulnar deviation, clenched fist", "• shoulder: Y-view"]]]],
+   "inv": [[["w", "Needs more than one view", ["• oblique: seen on one view", "• spiral: seen only on multiple views"]]]]},
+  {"id": "loc", "colour": "purple",
+   "head": [[["h", "2 · Location", ["side · which bone · where in it"]]]],
+   "pres": [[["t", "Part of the bone", ["• epiphysis · physis · metaphysis", "• diaphysis", "• apophysis: muscle or tendon attachment"]]]],
+   "inv": [[["w", "Physis = immature skeleton", ["growth plate involved → Salter-Harris (see the PEDIATRIC ORTHOPEDICS chart)"]]]]},
+  {"id": "type", "colour": "orange",
+   "head": [[["h", "3 · Type", ["complete or incomplete"]]]],
+   "pres": [[["t", "COMPLETE", ["• transverse · oblique · longitudinal", "• spiral: a TWISTING injury", "• comminuted: segmental, butterfly"]]],
+            [["w", "INCOMPLETE", ["bowing · buckle · greenstick"]]]],
+   "inv": [[["w", "Others", ["• avulsion: tendon pulls off a fragment", "• open"]]]]},
+  {"id": "desc", "colour": "blue",
+   "head": [[["h", "4 · Descriptors", ["DISTAL fragment relative to proximal", "except the CLAVICLE: proximal to distal"]]]],
+   "pres": [[["t", "Translation", ["in shaft widths · more than one width = OFF-ENDED"]]],
+            [["t", "Angulation", ["by the apex: varus = apex LATERAL, valgus = apex MEDIAL"]]],
+            [["t", "Rotation", ["internal or external · look at the joints above and below"]]]],
+   "inv": [[["w", "Length", ["• distraction: pulled apart", "• impaction: telescoped in", "• override: fragments overlap"]]]]},
+  {"id": "joint", "colour": "magenta",
+   "head": [[["h", "5 · Joint surface", ["into the joint or not?"]]]],
+   "pres": [[["t", "Step-off or depression", ["trace the articular cortex"]]],
+            [["w", "Fracture not seen?", ["• hemarthrosis (effusion)", "• FAT-FLUID level", "• subluxation or dislocation"]]]],
+   "inv": [[["bad", "INTRA-articular", ["• reduction must be ANATOMIC", "• secondary osteoarthritis · heals slower"]]],
+           [["ok", "EXTRA-articular", ["reduction relatively anatomic: bone remodels, especially with weight-bearing"]]]]},
+  {"id": "other", "colour": "brown",
+   "head": [[["h", "6-7 · Other findings, bone quality", []]]],
+   "pres": [[["t", "Other findings", ["• open · foreign body · hardware", "• periprosthetic · amputation", "• diastasis: pubic symphysis, acromioclavicular joint"]]]],
+   "inv": [[["bad", "PATHOLOGICAL fracture", ["• weakened bone, usually TRANSVERSE", "• spontaneous or trivial trauma"]]]]},
+  {"id": "heal", "colour": "olive",
+   "head": [[["h", "8 · Healing", ["mostly SECONDARY (callus) · PRIMARY with internal fixation: no callus"]]]],
+   "pres": [[["t", "On x-ray", ["• fracture line WIDENS at 10-14 days", "• callus from 2 weeks", "• union: bridging callus, medullary space back"]]]],
+   "inv": [[["ok", "Healed is a CLINICAL call", ["no tenderness, no motion at the site, can bear weight"]]],
+           [["w", "Expected time", ["• upper limb 3-10 weeks (distal humerus 8-10)", "• lower limb 6-12 weeks (femoral neck, shaft longest)"]]]]}
  ],
  "panels": [
-  {"title": "The cell count does not decide", "items": ["the lecture's cases: septic 59 · gout 15 · pseudogout 18 (× 10⁹ cells/L), all inflammatory", "Gram stain and culture find the infection · crystals split gout from pseudogout"]},
-  {"title": "Gout: after the attack", "items": ["recurrence 60% in 1 year · 80% in 2 · 90% in 5", "less meat and seafood, less alcohol; vegetables and low-fat dairy are good"]}
+  {"title": "When it does not heal", "items": ["delayed union: takes TWICE as long as expected · non-union: no healing in 6-9 months · malunion: heals out of anatomic position", "what to do about them: see the FRACTURE MANAGEMENT chart"]}
  ]
 }

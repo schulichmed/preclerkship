@@ -1,96 +1,78 @@
 {
- "name": "connective tissue disease overview",
- "width": 1372,
- "title": "Connective tissue diseases: the signature feature sorts lupus and antiphospholipid syndrome, Sjogren's syndrome, inflammatory myositis and systemic sclerosis; each column gives presentation, the antibodies and tests in order, and treatment, with Raynaud's and lupus care below",
+ "name": "child with a limp overview",
+ "width": 1068,
+ "title": "A child with a limp or hip pain: first exclude a septic hip with the Kocher criteria, then age separates transient synovitis, Legg-Calve-Perthes disease and slipped capital femoral epiphysis; each column gives presentation, investigations and treatment",
  "kinds": {
-  "sle_h": [
-   "#6a4aa8",
-   "#6a4aa8",
+  "sep_h": [
+   "#a3336b",
+   "#a3336b",
    "#ffffff",
    "#ffffff"
   ],
-  "sle_t": [
-   "#ebe4f7",
-   "#6a4aa8",
-   "#6a4aa8",
+  "sep_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
    "#18212e"
   ],
-  "sle_w": [
+  "sep_w": [
    "#ffffff",
-   "#6a4aa8",
-   "#6a4aa8",
+   "#a3336b",
+   "#a3336b",
    "#18212e"
   ],
-  "aps_h": [
-   "#46607a",
-   "#46607a",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "aps_t": [
-   "#e2e8ee",
-   "#46607a",
-   "#46607a",
-   "#18212e"
-  ],
-  "aps_w": [
-   "#ffffff",
-   "#46607a",
-   "#46607a",
-   "#18212e"
-  ],
-  "sjo_h": [
+  "ts_h": [
    "#1f6f8b",
    "#1f6f8b",
    "#ffffff",
    "#ffffff"
   ],
-  "sjo_t": [
+  "ts_t": [
    "#dceef4",
    "#1f6f8b",
    "#1f6f8b",
    "#18212e"
   ],
-  "sjo_w": [
+  "ts_w": [
    "#ffffff",
    "#1f6f8b",
    "#1f6f8b",
    "#18212e"
   ],
-  "myo_h": [
+  "lcp_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "lcp_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "lcp_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "scfe_h": [
    "#b5600f",
    "#b5600f",
    "#ffffff",
    "#ffffff"
   ],
-  "myo_t": [
+  "scfe_t": [
    "#fbe8d3",
    "#b5600f",
    "#b5600f",
    "#18212e"
   ],
-  "myo_w": [
+  "scfe_w": [
    "#ffffff",
    "#b5600f",
    "#b5600f",
-   "#18212e"
-  ],
-  "ssc_h": [
-   "#1f5f9e",
-   "#1f5f9e",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "ssc_t": [
-   "#dde9f7",
-   "#1f5f9e",
-   "#1f5f9e",
-   "#18212e"
-  ],
-  "ssc_w": [
-   "#ffffff",
-   "#1f5f9e",
-   "#1f5f9e",
    "#18212e"
   ]
  },
@@ -99,753 +81,478 @@
    "x": 40,
    "y": 252,
    "w": 246,
-   "h": 1012,
-   "fill": "#f5f1fb",
-   "stroke": "#6a4aa8"
+   "h": 744,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
   },
   {
-   "x": 288,
+   "x": 316,
    "y": 252,
    "w": 246,
-   "h": 1012,
-   "fill": "#f2f5f8",
-   "stroke": "#46607a"
+   "h": 744,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
   },
   {
    "x": 564,
    "y": 252,
    "w": 246,
-   "h": 1012,
-   "fill": "#eef7fa",
-   "stroke": "#1f6f8b"
+   "h": 744,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
   },
   {
-   "x": 840,
+   "x": 812,
    "y": 252,
    "w": 246,
-   "h": 1012,
+   "h": 744,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
-  },
-  {
-   "x": 1116,
-   "y": 252,
-   "w": 246,
-   "h": 1012,
-   "fill": "#eff5fc",
-   "stroke": "#1f5f9e"
   }
  ],
  "row_labels": [
   {
    "x": 23,
-   "y": 380,
-   "h": 234,
+   "y": 398,
+   "h": 196,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 654,
-   "h": 234,
+   "y": 634,
+   "h": 98,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 928,
-   "h": 328,
-   "text": "TREAT · WATCH"
+   "y": 772,
+   "h": 216,
+   "text": "TREATMENT"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 321,
+   "x": 169,
    "y": 10,
    "w": 760,
    "kind": "dark",
-   "title": "Woman, several organs, often Raynaud's: which connective tissue disease?",
+   "title": "A child with a limp: is it a SEPTIC hip? If not, AGE narrows the rest",
    "lines": [
-    "all more common in women · most are antinuclear antibody (ANA) positive",
-    "ANA negative → lupus highly unlikely · ANA positive alone proves nothing (common in the healthy)"
+    "every one: blood count, ESR (erythrocyte sedimentation rate) and CRP (C-reactive protein), hip x-ray ± ultrasound"
    ]
   },
   {
-   "id": "g_sle",
+   "id": "g_sep",
    "x": 45,
-   "y": 138,
-   "w": 484,
-   "h": 42,
-   "kind": "plain",
-   "title": "Rash in the sun, mouth ulcers, organs, or CLOTS",
-   "lines": []
-  },
-  {
-   "id": "g_ss",
-   "x": 569,
-   "y": 138,
-   "w": 236,
-   "h": 42,
-   "kind": "plain",
-   "title": "Dry eyes + dry mouth",
-   "lines": []
-  },
-  {
-   "id": "g_my",
-   "x": 845,
-   "y": 138,
-   "w": 236,
-   "h": 42,
-   "kind": "plain",
-   "title": "Proximal muscle weakness",
-   "lines": []
-  },
-  {
-   "id": "g_ssc",
-   "x": 1121,
-   "y": 138,
-   "w": 236,
-   "h": 42,
-   "kind": "plain",
-   "title": "Tight skin + Raynaud's",
-   "lines": []
-  },
-  {
-   "id": "sle_head_0_0",
-   "x": 45,
-   "y": 260,
-   "w": 236,
-   "h": 80,
-   "kind": "sle_h",
-   "title": "Systemic lupus erythematosus (SLE)",
-   "lines": [
-    "1 in 1000 · women 9:1 · young"
-   ]
-  },
-  {
-   "id": "aps_head_0_0",
-   "x": 293,
-   "y": 260,
-   "w": 236,
-   "h": 80,
-   "kind": "aps_h",
-   "title": "Antiphospholipid syndrome (APS)",
-   "lines": [
-    "half with SLE · in 10-20% of SLE"
-   ]
-  },
-  {
-   "id": "sjo_head_0_0",
-   "x": 569,
-   "y": 260,
-   "w": 236,
-   "h": 80,
-   "kind": "sjo_h",
-   "title": "Sjögren's syndrome",
-   "lines": [
-    "2 in 10,000 · lymphocytes in exocrine glands"
-   ]
-  },
-  {
-   "id": "myo_head_0_0",
-   "x": 845,
-   "y": 260,
-   "w": 236,
-   "h": 80,
-   "kind": "myo_h",
-   "title": "Inflammatory myositis",
-   "lines": [
-    "1 in 100,000 · shoulders, hips, neck"
-   ]
-  },
-  {
-   "id": "ssc_head_0_0",
-   "x": 1121,
-   "y": 260,
-   "w": 236,
-   "h": 80,
-   "kind": "ssc_h",
-   "title": "Systemic sclerosis (scleroderma)",
-   "lines": [
-    "1 in 10,000 · highest mortality"
-   ]
-  },
-  {
-   "id": "sle_pres_0_0",
-   "x": 45,
-   "y": 380,
-   "w": 236,
-   "h": 134,
-   "kind": "sle_t",
-   "title": "Classify: ≥ 4 of 11, over 6 weeks",
-   "lines": [
-    "• malar rash (spares the nasolabial folds), discoid, photosensitive",
-    "• mouth or nose ulcers · non-erosive arthritis"
-   ]
-  },
-  {
-   "id": "sle_pres_1_0",
-   "x": 45,
-   "y": 536,
-   "w": 236,
-   "h": 78,
-   "kind": "sle_w",
-   "title": "Organs",
-   "lines": [
-    "• pleurisy, pericarditis · nephritis",
-    "• seizure, psychosis · counts ↓"
-   ]
-  },
-  {
-   "id": "aps_pres_0_0",
-   "x": 293,
-   "y": 380,
-   "w": 236,
-   "h": 234,
-   "kind": "aps_t",
-   "title": "RECURRENT clots or pregnancy loss",
-   "lines": [
-    "• venous (deep vein thrombosis) or arterial",
-    "• livedo reticularis · platelets ↓"
-   ]
-  },
-  {
-   "id": "sjo_pres_0_0",
-   "x": 569,
-   "y": 380,
-   "w": 236,
-   "h": 106,
-   "kind": "sjo_t",
-   "title": "Dry eyes + dry mouth (sicca)",
-   "lines": [
-    "• gritty eyes, worse through the day",
-    "• dental caries · parotid swelling"
-   ]
-  },
-  {
-   "id": "sjo_pres_1_0",
-   "x": 569,
-   "y": 508,
-   "w": 236,
-   "h": 106,
-   "kind": "sjo_w",
-   "title": "Beyond the glands",
-   "lines": [
-    "• Raynaud's · purpura on the shins",
-    "• arthritis · neuropathy"
-   ]
-  },
-  {
-   "id": "myo_pres_0_0",
-   "x": 845,
-   "y": 380,
-   "w": 236,
-   "h": 115,
-   "kind": "myo_t",
-   "title": "Dermatomyositis",
-   "lines": [
-    "• children, older adults · may be cancer",
-    "• heliotrope rash, Gottron's papules"
-   ]
-  },
-  {
-   "id": "myo_pres_1_0",
-   "x": 845,
-   "y": 517,
-   "w": 236,
-   "h": 97,
-   "kind": "myo_w",
-   "title": "Polymyositis",
-   "lines": [
-    "any age · NO rash · not cancer-linked"
-   ]
-  },
-  {
-   "id": "ssc_pres_0_0",
-   "x": 1121,
-   "y": 380,
-   "w": 236,
-   "h": 107,
-   "kind": "ssc_t",
-   "title": "Fibrosis + vessels + autoimmunity",
-   "lines": [
-    "• Raynaud's, reflux in nearly all",
-    "• tight fingers · dysphagia · ulcers"
-   ]
-  },
-  {
-   "id": "ssc_pres_1_0",
-   "x": 1121.0,
-   "y": 509,
-   "w": 113.0,
-   "h": 105,
-   "kind": "ssc_w",
-   "title": "Limited",
-   "lines": [
-    "• below elbows, knees",
-    "• anticentromere"
-   ]
-  },
-  {
-   "id": "ssc_pres_1_1",
-   "x": 1244.0,
-   "y": 509,
-   "w": 113.0,
-   "h": 105,
-   "kind": "ssc_w",
-   "title": "Diffuse",
-   "lines": [
-    "• + arms, thighs, trunk",
-    "• Scl-70"
-   ]
-  },
-  {
-   "id": "sle_inv_0_0",
-   "x": 45,
-   "y": 654,
-   "w": 236,
-   "h": 97,
-   "kind": "sle_t",
-   "title": "1 · ANA: positive in > 95%",
-   "lines": [
-    "+ blood count, creatinine, urinalysis"
-   ]
-  },
-  {
-   "id": "sle_inv_1_0",
-   "x": 45,
-   "y": 773,
-   "w": 236,
-   "h": 115,
-   "kind": "sle_w",
-   "title": "2 · ONLY if ANA + → anti-DNA",
-   "lines": [
-    "• anti-Smith (extractable antigens)",
-    "• complement C3, C4 low"
-   ]
-  },
-  {
-   "id": "aps_inv_0_0",
-   "x": 293,
-   "y": 654,
-   "w": 236,
-   "h": 234,
-   "kind": "aps_t",
-   "title": "Antibodies, PERSISTENT",
-   "lines": [
-    "• anticardiolipin",
-    "• lupus anticoagulant (clotting time falsely ↑)",
-    "• false-positive syphilis test (VDRL)"
-   ]
-  },
-  {
-   "id": "sjo_inv_0_0",
-   "x": 569,
-   "y": 654,
-   "w": 236,
-   "h": 234,
-   "kind": "sjo_t",
-   "title": "ANA 80-90% · rheumatoid factor 90%",
-   "lines": [
-    "• anti-Ro, anti-La",
-    "• sedimentation rate (ESR) very high"
-   ]
-  },
-  {
-   "id": "myo_inv_0_0",
-   "x": 845,
-   "y": 654,
-   "w": 236,
-   "h": 114,
-   "kind": "myo_t",
-   "title": "1 · Rule out mimics FIRST",
-   "lines": [
-    "• drugs: statins, steroids, colchicine, hydroxychloroquine",
-    "• alcohol · thyroid · potassium, phosphate, magnesium"
-   ]
-  },
-  {
-   "id": "myo_inv_1_0",
-   "x": 845,
-   "y": 790,
-   "w": 236,
-   "h": 98,
-   "kind": "myo_w",
-   "title": "2 · Creatine kinase ↑ · ANA 80%",
-   "lines": [
-    "anti-Jo-1 → lung disease, bad prognosis"
-   ]
-  },
-  {
-   "id": "ssc_inv_0_0",
-   "x": 1121,
-   "y": 654,
-   "w": 236,
-   "h": 234,
-   "kind": "ssc_t",
-   "title": "ANA > 95%",
-   "lines": [
-    "• Scl-70 → lung fibrosis",
-    "• RNA polymerase → renal crisis",
-    "• limited: pulmonary hypertension late"
-   ]
-  },
-  {
-   "id": "sle_tx_0_0",
-   "x": 45,
-   "y": 928,
-   "w": 236,
-   "h": 83,
-   "kind": "ok",
-   "title": "Hydroxychloroquine for EVERY patient",
-   "lines": [
-    "the anchor: skin, joints, fewer flares"
-   ]
-  },
-  {
-   "id": "sle_tx_1_0",
-   "x": 45,
-   "y": 1033,
-   "w": 236,
-   "h": 81,
-   "kind": "ok",
-   "title": "Minor organ (skin, joints)",
-   "lines": [
-    "• topical or low-dose steroid",
-    "• anti-inflammatories (NSAIDs)"
-   ]
-  },
-  {
-   "id": "sle_tx_2_0",
-   "x": 45,
-   "y": 1136,
-   "w": 236,
-   "h": 121,
-   "kind": "bad",
-   "title": "Major organ → high-dose steroid + immune suppressant",
-   "lines": [
-    "mycophenolate, azathioprine, cyclophosphamide"
-   ]
-  },
-  {
-   "id": "aps_tx_0_0",
-   "x": 293,
-   "y": 928,
+   "y": 120,
    "w": 236,
    "h": 60,
-   "kind": "ok",
-   "title": "Antibody, no event",
+   "kind": "plain",
+   "title": "FEVER, unwell, will not walk",
    "lines": [
-    "nothing or aspirin (ASA) 81 mg"
+    "infection until proven otherwise"
    ]
   },
   {
-   "id": "aps_tx_1_0",
-   "x": 293,
-   "y": 1010,
-   "w": 236,
-   "h": 62,
-   "kind": "ok",
-   "title": "Thrombosis → long-term warfarin",
-   "lines": []
+   "id": "g_age",
+   "x": 321,
+   "y": 120,
+   "w": 732,
+   "h": 60,
+   "kind": "plain",
+   "title": "Afebrile and well: AGE decides",
+   "lines": [
+    "under 10: transient synovitis · 4-8: Perthes · teenager: slipped epiphysis"
+   ]
   },
   {
-   "id": "aps_tx_2_0",
-   "x": 293,
-   "y": 1094,
+   "id": "sep_head_0_0",
+   "x": 45,
+   "y": 260,
    "w": 236,
-   "h": 42,
-   "kind": "ok",
-   "title": "Fetal loss → ASA + heparin",
-   "lines": []
+   "h": 98,
+   "kind": "sep_h",
+   "title": "Septic hip or osteomyelitis",
+   "lines": [
+    "the one not to miss"
+   ]
   },
   {
-   "id": "aps_tx_3_0",
-   "x": 293,
-   "y": 1158,
+   "id": "ts_head_0_0",
+   "x": 321,
+   "y": 260,
+   "w": 236,
+   "h": 98,
+   "kind": "ts_h",
+   "title": "Transient synovitis",
+   "lines": [
+    "non-infectious hip inflammation after a virus"
+   ]
+  },
+  {
+   "id": "lcp_head_0_0",
+   "x": 569,
+   "y": 260,
+   "w": 236,
+   "h": 98,
+   "kind": "lcp_h",
+   "title": "Legg-Calvé-Perthes disease",
+   "lines": [
+    "avascular necrosis of the femoral head"
+   ]
+  },
+  {
+   "id": "scfe_head_0_0",
+   "x": 817,
+   "y": 260,
+   "w": 236,
+   "h": 98,
+   "kind": "scfe_h",
+   "title": "Slipped capital femoral epiphysis",
+   "lines": [
+    "the head slips posterior and inferior on the neck"
+   ]
+  },
+  {
+   "id": "sep_pres_0_0",
+   "x": 45,
+   "y": 398,
+   "w": 236,
+   "h": 196,
+   "kind": "sep_t",
+   "title": "Kocher criteria",
+   "lines": [
+    "• temperature > 38.5 °C",
+    "• white count > 12 × 10⁹/L · ESR > 40 mm/h",
+    "• cannot walk on it"
+   ]
+  },
+  {
+   "id": "ts_pres_0_0",
+   "x": 321,
+   "y": 398,
+   "w": 236,
+   "h": 96,
+   "kind": "ts_t",
+   "title": "Age 3-10, boys",
+   "lines": [
+    "• SUDDEN hip pain 7-10 days after a cold or sore throat",
+    "• afebrile or LOW fever, looks well"
+   ]
+  },
+  {
+   "id": "ts_pres_1_0",
+   "x": 321,
+   "y": 516,
+   "w": 236,
+   "h": 78,
+   "kind": "ts_w",
+   "title": "Exam",
+   "lines": [
+    "hip held flexed, abducted, externally rotated"
+   ]
+  },
+  {
+   "id": "lcp_pres_0_0",
+   "x": 569,
+   "y": 398,
+   "w": 236,
+   "h": 105,
+   "kind": "lcp_t",
+   "title": "Age 4-8, boys",
+   "lines": [
+    "• GRADUAL painless limp, then pain",
+    "• pain referred to the KNEE, better with rest"
+   ]
+  },
+  {
+   "id": "lcp_pres_1_0",
+   "x": 569,
+   "y": 525,
+   "w": 236,
+   "h": 69,
+   "kind": "lcp_w",
+   "title": "Exam",
+   "lines": [
+    "less abduction and internal rotation"
+   ]
+  },
+  {
+   "id": "scfe_pres_0_0",
+   "x": 817,
+   "y": 398,
+   "w": 236,
+   "h": 87,
+   "kind": "scfe_t",
+   "title": "Teenager (11-15), OBESE",
+   "lines": [
+    "• gradual hip, thigh or KNEE pain",
+    "• left more often · 1 in 5 both hips"
+   ]
+  },
+  {
+   "id": "scfe_pres_1_0",
+   "x": 817,
+   "y": 507,
+   "w": 236,
+   "h": 87,
+   "kind": "scfe_w",
+   "title": "Exam",
+   "lines": [
+    "hip rolls into EXTERNAL rotation on flexion (Drehmann sign)"
+   ]
+  },
+  {
+   "id": "sep_inv_0_0",
+   "x": 45,
+   "y": 634,
+   "w": 236,
+   "h": 98,
+   "kind": "sep_w",
+   "title": "URGENT workup",
+   "lines": [
+    "see the MSK INFECTIONS chart"
+   ]
+  },
+  {
+   "id": "ts_inv_0_0",
+   "x": 321,
+   "y": 634,
+   "w": 236,
+   "h": 98,
+   "kind": "ts_w",
+   "title": "Bloodwork, x-ray, ultrasound",
+   "lines": [
+    "• NORMAL (ESR, CRP may be slightly up)",
+    "• done to rule out septic arthritis"
+   ]
+  },
+  {
+   "id": "lcp_inv_0_0",
+   "x": 569,
+   "y": 634,
+   "w": 236,
+   "h": 98,
+   "kind": "lcp_w",
+   "title": "X-ray: anteroposterior (AP) pelvis + frog-leg",
+   "lines": [
+    "flattened, fragmented femoral head · bone scan, MRI"
+   ]
+  },
+  {
+   "id": "scfe_inv_0_0",
+   "x": 817,
+   "y": 634,
+   "w": 236,
+   "h": 98,
+   "kind": "scfe_w",
+   "title": "X-ray: AP pelvis + frog-leg",
+   "lines": [
+    "• Klein's line along the neck MISSES the head",
+    "• 'melting ice cream cone'"
+   ]
+  },
+  {
+   "id": "sep_tx_0_0",
+   "x": 45,
+   "y": 772,
+   "w": 236,
+   "h": 216,
+   "kind": "bad",
+   "title": "Never call it transient synovitis",
+   "lines": [
+    "until infection is excluded"
+   ]
+  },
+  {
+   "id": "ts_tx_0_0",
+   "x": 321,
+   "y": 772,
+   "w": 236,
+   "h": 216,
+   "kind": "ok",
+   "title": "Anti-inflammatory (NSAID) + reassure",
+   "lines": [
+    "self-limiting in 7-10 days"
+   ]
+  },
+  {
+   "id": "lcp_tx_0_0",
+   "x": 569,
+   "y": 772,
+   "w": 236,
+   "h": 133,
+   "kind": "ok",
+   "title": "Refer to orthopedics",
+   "lines": [
+    "• keep the range of motion (physiotherapy)",
+    "• off-load: crutches, brace, swim, cycle",
+    "• NSAIDs · osteotomy for some"
+   ]
+  },
+  {
+   "id": "lcp_tx_1_0",
+   "x": 569,
+   "y": 927,
+   "w": 236,
+   "h": 61,
+   "kind": "warn",
+   "title": "Poorly treated",
+   "lines": [
+    "early osteoarthritis"
+   ]
+  },
+  {
+   "id": "scfe_tx_0_0",
+   "x": 817,
+   "y": 772,
    "w": 236,
    "h": 98,
    "kind": "bad",
-   "title": "Catastrophic → IV heparin + IV steroids",
+   "title": "STOP weight-bearing + EMERGENCY orthopedics",
    "lines": [
-    "± plasmapheresis or IV immunoglobulin"
+    "further slip → avascular necrosis (25%)"
    ]
   },
   {
-   "id": "sjo_tx_0_0",
-   "x": 569,
-   "y": 928,
+   "id": "scfe_tx_1_0",
+   "x": 817,
+   "y": 892,
    "w": 236,
-   "h": 328,
-   "kind": "bad",
-   "title": "Watch: B-cell lymphoma (MALT)",
-   "lines": [
-    "the higher risk"
-   ]
-  },
-  {
-   "id": "myo_tx_0_0",
-   "x": 845,
-   "y": 928,
-   "w": 236,
-   "h": 144,
+   "h": 96,
    "kind": "ok",
-   "title": "High-dose steroids",
+   "title": "Fix it where it lies",
    "lines": [
-    "then steroid-sparing: azathioprine, methotrexate"
-   ]
-  },
-  {
-   "id": "myo_tx_1_0",
-   "x": 845,
-   "y": 1094,
-   "w": 236,
-   "h": 162,
-   "kind": "bad",
-   "title": "Danger",
-   "lines": [
-    "• swallowing, heart, lung",
-    "• lung disease: treat aggressively",
-    "• cancer (older, dermatomyositis)"
-   ]
-  },
-  {
-   "id": "ssc_tx_0_0",
-   "x": 1121,
-   "y": 928,
-   "w": 236,
-   "h": 106,
-   "kind": "ok",
-   "title": "Raynaud's",
-   "lines": [
-    "• avoid cold · stop smoking",
-    "• nifedipine (calcium channel blocker)"
-   ]
-  },
-  {
-   "id": "ssc_tx_1_0",
-   "x": 1121,
-   "y": 1056,
-   "w": 236,
-   "h": 90,
-   "kind": "bad",
-   "title": "Renal crisis: blood pressure ↑, hemolysis, kidneys fail",
-   "lines": [
-    "→ ACE inhibitor; > 80% die if missed"
-   ]
-  },
-  {
-   "id": "ssc_tx_2_0",
-   "x": 1121,
-   "y": 1168,
-   "w": 236,
-   "h": 88,
-   "kind": "ok",
-   "title": "Treat the organ involved",
-   "lines": [
-    "methotrexate softens skin in early diffuse"
+    "• stable: one screw in situ",
+    "• unstable: open reduction + internal fixation"
    ]
   }
  ],
  "edges": [
   {
    "from": "root",
-   "to": "g_sle",
-   "path": "M701.0 88V113H287.0V138"
+   "to": "g_sep",
+   "path": "M549.0 70V95H163.0V120"
   },
   {
    "from": "root",
-   "to": "g_ss",
-   "path": "M701.0 88V113H687.0V138"
+   "to": "g_age",
+   "path": "M549.0 70V95H687.0V120"
   },
   {
-   "from": "root",
-   "to": "g_my",
-   "path": "M701.0 88V113H963.0V138"
-  },
-  {
-   "from": "root",
-   "to": "g_ssc",
-   "path": "M701.0 88V113H1239.0V138"
-  },
-  {
-   "from": "sle_pres_0_0",
-   "to": "sle_pres_1_0",
+   "from": "ts_pres_0_0",
+   "to": "ts_pres_1_0",
    "dashed": true
   },
   {
-   "from": "sjo_pres_0_0",
-   "to": "sjo_pres_1_0",
+   "from": "lcp_pres_0_0",
+   "to": "lcp_pres_1_0",
    "dashed": true
   },
   {
-   "from": "myo_pres_0_0",
-   "to": "myo_pres_1_0",
+   "from": "scfe_pres_0_0",
+   "to": "scfe_pres_1_0",
    "dashed": true
   },
   {
-   "from": "ssc_pres_0_0",
-   "to": "ssc_pres_1_0",
-   "from_dx": -61.5,
-   "dashed": true
+   "from": "lcp_tx_0_0",
+   "to": "lcp_tx_1_0"
   },
   {
-   "from": "ssc_pres_0_0",
-   "to": "ssc_pres_1_1",
-   "from_dx": 61.5,
-   "dashed": true
+   "from": "scfe_tx_0_0",
+   "to": "scfe_tx_1_0"
   },
   {
-   "from": "sle_inv_0_0",
-   "to": "sle_inv_1_0"
+   "from": "sep_head_0_0",
+   "to": "sep_pres_0_0"
   },
   {
-   "from": "myo_inv_0_0",
-   "to": "myo_inv_1_0"
+   "from": "sep_pres_0_0",
+   "to": "sep_inv_0_0"
   },
   {
-   "from": "sle_tx_0_0",
-   "to": "sle_tx_1_0"
+   "from": "sep_inv_0_0",
+   "to": "sep_tx_0_0"
   },
   {
-   "from": "sle_tx_1_0",
-   "to": "sle_tx_2_0"
-  },
-  {
-   "from": "aps_tx_0_0",
-   "to": "aps_tx_1_0"
-  },
-  {
-   "from": "aps_tx_1_0",
-   "to": "aps_tx_2_0"
-  },
-  {
-   "from": "aps_tx_2_0",
-   "to": "aps_tx_3_0"
-  },
-  {
-   "from": "myo_tx_0_0",
-   "to": "myo_tx_1_0"
-  },
-  {
-   "from": "ssc_tx_0_0",
-   "to": "ssc_tx_1_0"
-  },
-  {
-   "from": "ssc_tx_1_0",
-   "to": "ssc_tx_2_0"
-  },
-  {
-   "from": "sle_head_0_0",
-   "to": "sle_pres_0_0"
-  },
-  {
-   "from": "sle_pres_1_0",
-   "to": "sle_inv_0_0"
-  },
-  {
-   "from": "sle_inv_1_0",
-   "to": "sle_tx_0_0"
-  },
-  {
-   "from": "g_sle",
-   "to": "sle_head_0_0",
-   "from_dx": -124
-  },
-  {
-   "from": "aps_head_0_0",
-   "to": "aps_pres_0_0"
-  },
-  {
-   "from": "aps_pres_0_0",
-   "to": "aps_inv_0_0"
-  },
-  {
-   "from": "aps_inv_0_0",
-   "to": "aps_tx_0_0"
-  },
-  {
-   "from": "g_sle",
-   "to": "aps_head_0_0",
-   "from_dx": 124
-  },
-  {
-   "from": "sjo_head_0_0",
-   "to": "sjo_pres_0_0"
-  },
-  {
-   "from": "sjo_pres_1_0",
-   "to": "sjo_inv_0_0"
-  },
-  {
-   "from": "sjo_inv_0_0",
-   "to": "sjo_tx_0_0"
-  },
-  {
-   "from": "g_ss",
-   "to": "sjo_head_0_0",
+   "from": "g_sep",
+   "to": "sep_head_0_0",
    "from_dx": 0
   },
   {
-   "from": "myo_head_0_0",
-   "to": "myo_pres_0_0"
+   "from": "ts_head_0_0",
+   "to": "ts_pres_0_0"
   },
   {
-   "from": "myo_pres_1_0",
-   "to": "myo_inv_0_0"
+   "from": "ts_pres_1_0",
+   "to": "ts_inv_0_0"
   },
   {
-   "from": "myo_inv_1_0",
-   "to": "myo_tx_0_0"
+   "from": "ts_inv_0_0",
+   "to": "ts_tx_0_0"
   },
   {
-   "from": "g_my",
-   "to": "myo_head_0_0",
+   "from": "g_age",
+   "to": "ts_head_0_0",
+   "from_dx": -248
+  },
+  {
+   "from": "lcp_head_0_0",
+   "to": "lcp_pres_0_0"
+  },
+  {
+   "from": "lcp_pres_1_0",
+   "to": "lcp_inv_0_0"
+  },
+  {
+   "from": "lcp_inv_0_0",
+   "to": "lcp_tx_0_0"
+  },
+  {
+   "from": "g_age",
+   "to": "lcp_head_0_0",
    "from_dx": 0
   },
   {
-   "from": "ssc_head_0_0",
-   "to": "ssc_pres_0_0"
+   "from": "scfe_head_0_0",
+   "to": "scfe_pres_0_0"
   },
   {
-   "from": "ssc_pres_1_0",
-   "to": "ssc_inv_0_0",
-   "to_dx": -61.5
+   "from": "scfe_pres_1_0",
+   "to": "scfe_inv_0_0"
   },
   {
-   "from": "ssc_pres_1_1",
-   "to": "ssc_inv_0_0",
-   "to_dx": 61.5
+   "from": "scfe_inv_0_0",
+   "to": "scfe_tx_0_0"
   },
   {
-   "from": "ssc_inv_0_0",
-   "to": "ssc_tx_0_0"
-  },
-  {
-   "from": "g_ssc",
-   "to": "ssc_head_0_0",
-   "from_dx": 0
+   "from": "g_age",
+   "to": "scfe_head_0_0",
+   "from_dx": 248
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 1290,
-   "w": 649,
-   "title": "Raynaud's: primary or secondary?",
+   "y": 1022,
+   "w": 497,
+   "title": "The rest of the differential, by age",
    "items": [
-    "primary: no disease, often no drug needed",
-    "Raynaud's + dilated nailfold capillaries + anticentromere → ⅓ get scleroderma in 5 years"
+    "under 4: transient synovitis · infection · juvenile idiopathic arthritis · non-accidental injury · pain referred from the limb",
+    "4-10: transient synovitis · Perthes · infection · 10-16: slipped epiphysis · avulsion fracture · infection",
+    "uncommon at any age: leukemia and bone tumours"
    ],
    "cols": 1
   },
   {
-   "x": 708,
-   "y": 1290,
-   "w": 649,
-   "title": "Every lupus patient",
+   "x": 556,
+   "y": 1022,
+   "w": 497,
+   "title": "Any abnormal gait: warning signs",
    "items": [
-    "sun avoidance, SPF 30 · cardiovascular risk (50× events)",
-    "die of cardiovascular events, infection, SLE, drug complications"
+    "asymmetry · progression · leg length difference · pain · deformity · a suspected associated condition",
+    "also: missed hip dysplasia, clubfoot, overuse, trauma (see the PEDIATRIC ORTHOPEDICS chart)"
    ],
    "cols": 1
   }
