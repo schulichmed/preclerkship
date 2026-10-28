@@ -7,7 +7,10 @@ Date:    2026-09-21
 Input:   tools/portal.py and each course's data/
 Output:  index.html
 
-Run from the repo root, last. A course with nothing in it still gets a card,
+Run from the repo root, last. A course's card opens its first block, not a course page:
+every block page's bar reaches the other blocks and the question bank, so a course page
+was one more click with nothing on it the bar does not already give. A course with
+nothing in it still gets a card,
 greyed and unlinked, saying so - the portal shows the gap rather than hiding it,
 which is the same reason a lecture with no note still renders on the notes tab.
 """
@@ -32,13 +35,13 @@ def cards():
             continue
         notes = (u'<span><b>%d</b> lecture notes</span>' % w) if l else u''
         out.append(
-            u'<a class="block-card" href="%s/index.html" style="--hue:%s">\n'
+            u'<a class="block-card" href="%s/%s.html" style="--hue:%s">\n'
             u'<p class="bmeta">%s &middot; %d blocks</p>\n'
             u'<h2>%s</h2>\n<p>%s</p>\n'
             u'<span class="tally">\n%s\n'
             u'<span><b>%s</b> practice questions</span>\n'
             u'</span>\n'
-            u'</a>' % (c["slug"], c["accent"], c["year"], len(c["blocks"]),
+            u'</a>' % (c["slug"], c["blocks"][0][0], c["accent"], c["year"], len(c["blocks"]),
                        c["name"], c["blurb"], notes, "{:,}".format(q)))
     return "\n".join(out)
 
