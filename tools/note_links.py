@@ -245,12 +245,17 @@ def labels(text, m):
             or after[0] in ":(\u2014\u2013=<" or after.startswith("- "))
 
 
-def home(entry, slug, reviewed, single):
+def home(entry, slug, reviewed, single, weeks=()):
     homes = entry["homes"]
     if single:
         # one plain word ("Potassium", "Squamous") means what the block it
         # is read in means by it; another block's note on it is a stretch
         homes = {h: n for h, n in homes.items() if h[0] == slug}
+        # and, when the question names its lecture, what that lecture's week
+        # means by it: "orthosis" in a cubital tunnel answer is not the ankle
+        # lecture's orthosis two weeks on
+        if weeks:
+            homes = {h: n for h, n in homes.items() if h[1] in reviewed or weeks(h[1])}
         if not homes:
             return None
     mine = [h for h in homes if h[1] in reviewed]
@@ -292,7 +297,8 @@ def reviewed_ids(q, week):
     out = set()
     for r in q.get("review") or []:
         n, w = str(r.get("n") or ""), r.get("w")
-        if not n.isdigit():
+        # a split lecture's part ("07.2") is a lecture of its own
+        if not re.fullmatch(r"\d+(?:\.\d+)?", n):
             continue
         for lid, lw in week.items():
             if lw == w and lid.endswith("-w%s-%s" % (w, n)):
@@ -331,6 +337,8 @@ def wiki_link(text, slug, reviewed, index, loose, titles):
 
 def link_question(q, slug, index, week, loose=None, titles=None):
     reviewed = reviewed_ids(q, week)
+    taught = {week.get(lid) for lid in reviewed}
+    near = (lambda lid: week.get(lid) in taught) if reviewed else ()
     out, used = [], set()
     for run, wl in text_runs(q.get("answer")):
         if wl and len(out) < MAX_LINKS:
@@ -348,7 +356,7 @@ def link_question(q, slug, index, week, loose=None, titles=None):
             for s, e, k in scan([sp[2] for sp in spans], index):
                 if k in used or len(out) >= MAX_LINKS:
                     continue
-                h = home(index[k], slug, reviewed, len(k) == 1)
+                h = home(index[k], slug, reviewed, len(k) == 1, near)
                 if not h:
                     continue
                 used.add(k)
