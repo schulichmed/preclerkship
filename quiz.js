@@ -726,11 +726,12 @@
     return null;
   }
 
-  /* The id the notes file gives the lecture: <block>-w<week>-<number>. An
-     in-class session carries no number and resolves to nothing; the line
-     still names it, it just cannot be opened. */
+  /* The id the notes file gives the lecture: <block>-w<week>-<number>, the
+     number whole ("05") or a split lecture's part ("05.2"). An in-class
+     session carries no number and resolves to nothing; the line still names
+     it, it just cannot be opened. */
   function noteIdFor(r) {
-    if (!r || !/^\d+$/.test(String(r.n || ""))) return null;
+    if (!r || !/^\d+(\.\d+)?$/.test(String(r.n || ""))) return null;
     var slug = blockForWeek(r.w);
     return slug ? slug + "-w" + r.w + "-" + r.n : null;
   }

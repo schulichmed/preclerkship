@@ -67,3 +67,20 @@ def test_never_across_punctuation():
     assert note_links.link_question(q, "b1", index, {"b1-w1-01": 1}) == []
     q = {"answer": "<p>Assessment of fetal well-being by BPP.</p>"}
     assert note_links.link_question(q, "b1", index, {"b1-w1-01": 1})[0][0] == "fetal well-being"
+
+
+def test_a_split_lecture_counts_as_reviewed():
+    """A question that reviews "07.2" has reviewed msk-w8-07.2, so a
+    one-word term it uses stays with that lecture instead of drifting to another."""
+    week = {"msk-w8-07.2": 8, "msk-w8-07.1": 8, "msk-w8-07": 8}
+    q = {"review": [{"w": 8, "n": "07.2", "t": "Clinical Approach"}]}
+    assert note_links.reviewed_ids(q, week) == {"msk-w8-07.2"}
+
+
+def test_a_one_word_term_stays_in_the_reviewed_week():
+    """"orthosis" is bold in a lecture two weeks on; a cubital tunnel answer
+    that reviews week 8 must not link there."""
+    entry = {"surface": "orthosis", "homes": {("msk", "msk-w10-01.2"): 1}}
+    near = lambda lid: lid.startswith("msk-w8")  # noqa: E731
+    assert note_links.home(entry, "msk", {"msk-w8-07.2"}, True, near) is None
+    assert note_links.home(entry, "msk", {"msk-w8-07.2"}, True) == ("msk", "msk-w10-01.2")
