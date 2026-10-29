@@ -263,4 +263,38 @@ if (EMBED && window.parent !== window) {
   var tell = function () { window.parent.postMessage({ chartHeight: document.querySelector(".wrap").getBoundingClientRect().height }, "*"); };
   tell(); if (window.ResizeObserver) new ResizeObserver(tell).observe(document.querySelector(".wrap"));
 }
+
+/* #col=<column id> opens the chart with that diagnosis focused (the body map links straight to one) */
+function focusFromHash() {
+  var m = /col=([\w-]+)/.exec(location.hash), col = m && map.querySelector('[data-k="c:' + m[1] + '"]');
+  if (!col) return;
+  focus = null; col.click(); setTimeout(function () { scrollToCol("c:" + m[1]); drawLinks(); }, 80);
+}
+window.addEventListener("hashchange", focusFromHash); focusFromHash();
+
+/* a picture of each diagnosis under its name, from charts/figures.json (openly licensed, credited at the foot); tap for full size */
+var CHART = location.pathname.replace(/\/(index\.html)?$/, "").split("/").pop();
+fetch("../figures.json").then(function (r) { return r.ok ? r.json() : {}; }).then(function (all) {
+  var figs = all[CHART]; if (!figs) return;
+  var used = [];
+  S.columns.forEach(function (c) {
+    var f = figs[c.id], col = f && map.querySelector('.col[data-k="c:' + c.id + '"]'); if (!col) return;
+    var fig = el("figure", "colfig"), a = el("a"); a.href = "../img/" + CHART + "/" + f.file; a.target = "_blank"; a.rel = "noopener";
+    a.addEventListener("click", function (e) { e.stopPropagation(); });
+    var img = el("img"); img.src = a.href; img.alt = f.caption; img.loading = "lazy"; a.appendChild(img); fig.appendChild(a);
+    fig.appendChild(el("figcaption", null, f.caption));
+    col.querySelector(".colhead").after(fig); used.push(f);
+  });
+  if (!used.length) return;
+  var cr = el("section", "credits"); cr.appendChild(el("h3", null, "Image credits"));
+  cr.appendChild(el("p", null, "Pictures reused under their open licences (Creative Commons or public domain); drawn ones were made for this page. Tap a picture to open it full size."));
+  var ul = el("ul"); cr.appendChild(ul);
+  used.forEach(function (f) {
+    var li = el("li", null, f.caption + ": " + f.author + ", " + f.licence + (f.source_page_url ? ", " : ""));
+    if (f.source_page_url) { var s = el("a", null, "source"); s.href = f.source_page_url; s.rel = "noopener"; li.appendChild(s); }
+    ul.appendChild(li);
+  });
+  document.querySelector(".wrap").appendChild(cr);
+  drawLinks();
+}).catch(function () {});
 })();
