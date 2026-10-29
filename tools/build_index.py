@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Regenerate each course's landing page so its cards state the real counts.
+"""Point each course's old landing page at its first block.
 
-Purpose: build one landing page per course from the shared shell, keeping the
-         hand-written prose that already sits on the page.
+Purpose: each course's index.html is now a redirect to its first block page. The portal's
+         landing cards open that block directly, and every block page's bar reaches the
+         other blocks and the question bank, so the course page only added a click. The
+         template and card builder below are kept unused, in case the page comes back.
 Author:  Noor Sims
 Date:    2026-09-21
 Input:   tools/portal.py, each course's data/ and block pages, and the landing
@@ -134,23 +136,29 @@ TEMPLATE = u"""<!DOCTYPE html>
 """
 
 
+REDIRECT = u"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0; url={first}.html">
+<link rel="canonical" href="{first}.html">
+<title>{short}</title>
+</head>
+<body><p><a href="{first}.html">{short}</a></p></body>
+</html>
+"""
+
+
 def main():
+    """Write each course's index.html as a redirect to its first block. The landing cards
+    open that block directly; the redirect keeps old links and bookmarks working."""
     for course in portal.COURSES:
-        hero, prose = existing(course)
-        label, fill = FAVICON[course["slug"]]
-        html = TEMPLATE.format(
-            short=course["short"], desc=course["blurb"],
-            favicon=portal.favicon(label, fill), fonts=portal.FONTS, nocache=portal.NOCACHE,
-            base_css=portal.asset("base.css"), portal_css=portal.asset("portal.css"),
-            accent=course["accent"], cf=portal.CF + portal.sync_tag(), uplink=portal.uplink(1),
-            hero=hero, cards=cards(course) or "",
-            prose=prose, footer=portal.footer(),
-            theme=portal.THEME_SCRIPT, toggle=portal.THEME_BTN)
-        io.open(os.path.join(course["slug"], "index.html"), "w",
-                encoding="utf-8", newline="\n").write(portal.share(html, course["slug"] + "/"))
-        q, w, l = portal.counts(course)
-        print("%-5s %d blocks  %d/%d lecture notes  %d questions"
-              % (course["slug"], len(course["blocks"]), w, l, q))
+        if not course["blocks"]:
+            continue
+        first = course["blocks"][0][0]
+        io.open(os.path.join(course["slug"], "index.html"), "w", encoding="utf-8",
+                newline="\n").write(REDIRECT.format(first=first, short=course["short"]))
+        print("%-5s index.html -> %s.html" % (course["slug"], first))
 
 
 if __name__ == "__main__":
