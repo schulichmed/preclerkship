@@ -64,7 +64,9 @@ dialog::backdrop{background:var(--shade)}
 dialog .bar{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--card)}
 dialog .bar b{flex:1;font-family:Fraunces,Georgia,serif;font-size:18px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 dialog .bar a,dialog .bar button{font:inherit;font-size:14px;color:var(--accent);background:none;border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer;text-decoration:none}
-dialog iframe{display:block;width:100%;height:calc(100% - 54px);border:0;background:var(--bg)}
+dialog .body{height:calc(100% - 54px);overflow:auto;padding:14px}
+dialog .body img{display:block;width:100%;height:auto;margin:0 auto;cursor:zoom-in;border-radius:10px}
+dialog .body .why{color:var(--muted);font-size:14px;margin:0 0 10px}
 @media (max-width:600px){dialog{width:100vw;height:100vh;max-width:100vw;max-height:100vh;border-radius:0}dialog .bar a{display:none}}
 .credit{color:var(--muted);font-size:12px;margin-top:18px}
 .credit a{color:var(--accent)}
@@ -164,12 +166,12 @@ ul.terr{list-style:none;padding:0;font-size:13.5px}ul.terr li{margin:0 0 7px;lin
   </div>
   <aside class="panel" id="panel"></aside>
 </div>
-<p class="credit main">Skeleton: BodyParts3D, &copy; The Database Center for Life Science, CC BY 4.0. Charts are the interactive overview charts from the PoM 2 MSK notes.</p>
+<p class="credit main">Skeleton: BodyParts3D, &copy; The Database Center for Life Science, CC BY 4.0. Charts are the overview charts from the PoM 2 MSK notes.</p>
 </div>
 
 <dialog id="pop">
-  <div class="bar"><b id="popTitle"></b><a id="popNew" target="_blank" rel="noopener">Open in a new tab</a><button id="popClose">Close</button></div>
-  <iframe id="popFrame" title="Interactive chart"></iframe>
+  <div class="bar"><b id="popTitle"></b><a id="popNew" target="_blank" rel="noopener" title="In a new tab: focus a column or box, walk the chart's questions, or test yourself">Interactive chart</a><button id="popClose">Close</button></div>
+  <div class="body" id="popBody"></div>
 </dialog>
 
 <script type="module">
@@ -269,23 +271,47 @@ const KCOL = { muscle: 0xc8524a, lig: 0xe8c547, bursa: 0x4f9fd8, nerve: 0xf2e14c
 
 /* ---------- panel and pop-up ---------- */
 const panel = document.getElementById("panel");
-const pop = document.getElementById("pop"), popFrame = document.getElementById("popFrame");
-function openChart(key, col) {
+const pop = document.getElementById("pop"), popBody = document.getElementById("popBody");
+/* The pop-up shows the very picture the MSK notes show for that chart (the figure whose
+   "interactive" link is the chart's folder), so the two can never drift apart; the
+   interactive page stays a click away, as it is in the notes. */
+let noteFigures = null;
+function figuresFor(dir) {
+  noteFigures ??= fetch("../data/notes/msk.json").then(r => r.json()).then(d => {
+    const m = {};
+    d.weeks.forEach(w => w.lectures.forEach(l => (l.blocks || []).forEach(b => {
+      const k = b.t === "figure" && (b.interactive || "").replace(/^charts\/|\/$/g, "");
+      if (k && !(m[k] ||= []).some(f => f.src === b.src)) m[k].push(b);
+    })));
+    return m;
+  });
+  return noteFigures.then(m => m[dir] || []);
+}
+async function openChart(key, col, why) {
   const [dir, title] = CH[key], url = `../charts/${dir}/` + (col ? `#col=${col}` : "");
   document.getElementById("popTitle").textContent = title;
   document.getElementById("popNew").href = url;
-  popFrame.src = `../charts/${dir}/?embed=1` + (col ? `#col=${col}` : "");
+  popBody.innerHTML = `<p class="empty">Loading the chart…</p>`;
   pop.showModal();
+  const figs = await figuresFor(dir).catch(() => []);
+  popBody.innerHTML = "";
+  if (why) { const p = document.createElement("p"); p.className = "why"; p.textContent = why; popBody.appendChild(p); }
+  if (!figs.length) { const p = document.createElement("p"); p.className = "empty"; p.textContent = "This chart isn't in the notes yet: use the interactive chart."; popBody.appendChild(p); }
+  figs.forEach(f => {
+    const img = document.createElement("img"), src = `../${f.src}`;
+    img.src = src; img.alt = title; img.width = f.w; img.height = f.h;
+    img.title = "Open full size in a new tab"; img.onclick = () => window.open(src, "_blank", "noopener");
+    popBody.appendChild(img);
+  });
 }
 document.getElementById("popClose").onclick = () => pop.close();
 pop.addEventListener("click", e => { if (e.target === pop) pop.close(); });
-pop.addEventListener("close", () => { popFrame.src = "about:blank"; });
 
 function item([key, col, why]) {
   const li = document.createElement("li"), b = document.createElement("button");
   b.className = "ch"; b.innerHTML = `<b></b><small></small>`;
   b.querySelector("b").textContent = CH[key][1]; b.querySelector("small").textContent = why || "";
-  b.onclick = () => openChart(key, col); li.appendChild(b); return li;
+  b.onclick = () => openChart(key, col, why); li.appendChild(b); return li;
 }
 function list(title, rows, cls) {
   const frag = document.createDocumentFragment(), h = document.createElement("h3"); h.textContent = title; frag.appendChild(h);
@@ -410,7 +436,7 @@ function selectStructure(sk) {
   selectRegion(s[1], false);
   const obj = structs.find(o => o.userData.st === sk);
   if (obj) { const c = new THREE.Box3().setFromObject(obj).getCenter(new THREE.Vector3()); flyTo(c, 0.5); }
-  openChart(s[2], s[3]);
+  openChart(s[2], s[3], s[0]);
 }
 const HINT = {
   region: "Drag to turn · pinch or scroll to zoom · tap a body part",
@@ -1355,7 +1381,7 @@ function selectLig(id) {
   else { const p = document.createElement("p"); p.className = "sub"; p.textContent = "Named on the slides, with nothing more about it."; panel.appendChild(p); }
   if (i.src) { const src = document.createElement("p"); src.className = "src"; src.textContent = srcLine(i.src); panel.appendChild(src); }
   const a = document.createElement("div"); a.className = "acts";
-  if (ST[id]) { const c = document.createElement("button"); c.textContent = "Open its chart"; c.onclick = () => openChart(ST[id][2], ST[id][3]); a.appendChild(c); }
+  if (ST[id]) { const c = document.createElement("button"); c.textContent = "Open its chart"; c.onclick = () => openChart(ST[id][2], ST[id][3], ST[id][0]); a.appendChild(c); }
   const b = document.createElement("button"); b.textContent = "All ligaments"; b.onclick = showLigIntro; a.appendChild(b);
   backToTables(a); panel.appendChild(a);
 }
