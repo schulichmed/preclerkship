@@ -121,6 +121,8 @@ class Exam:
     clips: dict = field(default_factory=dict)
     extra_cards: dict = field(default_factory=dict)
     walk: dict = field(default_factory=dict)
+    # region key -> {test name: (problem, picture)}, overriding tests for that region only
+    region_tests: dict = field(default_factory=dict)
     # region_video from the course's own suggested list (MSK Medicine for MSK) plays before
     # Hamzah Algodi's walk-throughs; a teaching channel picked for the page (Geeky Medics) plays after
     official_region_video: bool = False
@@ -336,10 +338,13 @@ def read_note(exam: Exam) -> list[dict]:
         if len(cells) < 4 or cells[2] in ("Steps", exam.steps_label) or cells[1] == "Looks for":
             continue
         steps = [re.sub(r"^\d+\.\s*", "", s) for s in cells[2].split("<br>")]
+        # a leading "N. " on the name numbers the card (the order to do the region's tests in)
+        num = re.match(r"(\d+)\.\s+", cells[0])
+        cells[0] = cells[0][num.end():] if num else cells[0]
         # an advanced or extra tag on the name moves to the looks-for line, so the name stays the key
         tags = re.findall(r"\((?:advanced|extra):[^()]+\)", cells[0])
         name = re.sub(r"\s*\((?:advanced|extra):[^()]+\)", "", cells[0])
-        rows.append({"section": section, "name": plain(name), "for": inline(" ".join([cells[1], *tags])),
+        rows.append({"section": section, "num": num.group(1) if num else "", "name": plain(name), "for": inline(" ".join([cells[1], *tags])),
                      "steps": [inline(s) for s in steps], "pos": inline(cells[3])})
     return rows
 
@@ -388,7 +393,7 @@ def problems_for(exam: Exam, rows: list[dict], num: int, key: str) -> list[dict]
     """Group one region's tests under their problem headings."""
     problems: dict[str, list] = {}
     for r in (r for r in rows if r["section"] == num):
-        problem, img = exam.tests[r["name"]]
+        problem, img = exam.region_tests.get(key, {}).get(r["name"]) or exam.tests[r["name"]]
         problems.setdefault(problem, []).append({**r, "img": img})
     for extra in exam.extra_cards.get(key, []):
         problems.setdefault(extra["problem"], []).append(extra)
@@ -402,7 +407,7 @@ def card(exam: Exam, t: dict) -> str:
     steps = "".join(f"<li>{s}</li>" for s in t["steps"])
     words = " ".join([t["name"], re.sub(r"<[^>]+>", "", t["for"])]).lower()
     return (f'<article class="test" tabindex="0" data-words="{html.escape(words)}">'
-            f'<h4>{html.escape(t["name"])}</h4><p class="for">{t["for"]}</p>{img}'
+            f'<h4>{f"""<span class="num">{t["num"]}.</span> """ if t.get("num") else ""}{html.escape(t["name"])}</h4><p class="for">{t["for"]}</p>{img}'
             f'<div class="hide h1"><span class="lbl">{html.escape(exam.steps_label)}</span><ol>{steps}</ol></div>'
             f'<div class="hide h2 pos"><span class="lbl">{html.escape(exam.pos_label)}</span><p>{t["pos"]}</p></div>'
             f'{f"""<div class="hide h2 vids">{video(exam, exam.video[t["name"]])}</div>""" if t["name"] in exam.video else ""}'
@@ -528,7 +533,7 @@ html{scroll-behavior:smooth}
 .say{margin:0 0 8px;padding:8px 10px;border-left:3px solid var(--c);background:color-mix(in srgb,var(--c) 8%,var(--card));border-radius:6px}
 .tests{display:grid;align-items:start;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
 .test{background:var(--card);border:1.5px solid color-mix(in srgb,var(--c) 45%,var(--line));border-radius:10px;padding:10px 12px;position:relative;outline-offset:2px}
-.test h4{margin:0;font-size:15px}
+.test h4{margin:0;font-size:15px}.test h4 .num{color:var(--c)}
 .test .for{margin:2px 0 6px;color:var(--muted);font-size:13px}
 .test img{display:block;width:100%;height:170px;object-fit:contain;background:#fff;border-radius:8px;border:1px solid var(--line);margin-bottom:6px}
 .test ol{margin:2px 0 0;padding-left:20px;font-size:13.5px}.test ol li{margin:2px 0}

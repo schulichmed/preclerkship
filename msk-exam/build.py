@@ -82,6 +82,7 @@ TESTS = {
     "Stinchfield test": ("Inside the hip joint", "stinchfield-test.jpg"),
     "FABER test (Flexion, ABduction, External Rotation)": ("SI joint (or hip)", "faber-patrick-test.jpg"),
     "Thigh thrust": ("SI joint (or hip)", "thigh-thrust.jpg"),
+    "FADIR test (Flexion, ADduction, Internal Rotation)": ("Hip joint or SI joint", None),
     "Ober's test": ("IT band", "obers-test-drawn.jpg"),
     "True and apparent leg length": ("Leg length", "true-leg-length-measurement.jpg"),
     "Wipe (bulge) test": ("Effusion", "wipe-bulge-test.jpg"),
@@ -125,6 +126,7 @@ VIDEO = {
     "Finkelstein's test": "finkelsteins-test", "Thomas test": "thomas-flexion-contracture-test",
     "Trendelenburg sign": "trendelenberg-sign", "Stinchfield test": "stinchfields-test",
     "FABER test (Flexion, ABduction, External Rotation)": "faber-test", "Ober's test": "obers-test",
+    "FADIR test (Flexion, ADduction, Internal Rotation)": "fadir-test",
     "True and apparent leg length": "true-leg-length-measurement",
     "Valgus / varus stress": "knee-valgus-and-varus-stress-tests", "Lachman test": "lachman-maneuvers",
     "Anterior drawer": "anterior-drawer-knee", "Posterior drawer": "posterior-drawer-sign-pcl",
@@ -184,6 +186,12 @@ EXAM = exam_page.Exam(
     other_video=json.loads((HERE / "videos_other.json").read_text(encoding="utf-8")),
     extra_cards={"ankle": [OTTAWA]},
     clips=json.loads((HERE / "clips.json").read_text(encoding="utf-8")),
+    # on the hip, FABER, FADIR and the extra thigh thrust share one heading (they are the
+    # lumbar spine's SI joint tests there)
+    region_tests={"hip": {
+        "FABER test (Flexion, ABduction, External Rotation)": ("Hip joint or SI joint", "faber-patrick-test.jpg"),
+        "Thigh thrust": ("Hip joint or SI joint", "thigh-thrust.jpg"),
+    }},
 )
 
 # Hamzah Algodi's own demonstration videos (his permission, 2026-11); shown on the spine cards
