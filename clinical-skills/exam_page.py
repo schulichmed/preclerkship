@@ -416,11 +416,15 @@ def wide_card(exam: Exam, title: str, body: str, slugs: list[str] | None = None,
     """Render a full-width card of prose (a spine routine, gait, pearls), with its
     videos and a picture (side) beside the text when given; clip_key names its video files."""
     words = (title + " " + re.sub(r"<[^>]+>", " ", body)).lower()
-    # official videos first (library clips, then the course's suggested list), then Hamzah's, then the rest
-    side += clips(exam, clip_key) if clip_key else ""
+    # official videos first (the course's suggested list), then Hamzah's, then the library's
+    # range-of-motion clips folded into their own "Movements" accordion
+    moves = exam.clips.get(clip_key, []) if clip_key else []
     walk = walks(exam, clip_key) if clip_key else ""
     region = "".join(video(exam, v, thumb=i == 0 and not (side or walk)) for i, v in enumerate(slugs or []))
     side += region + walk if exam.official_region_video else walk + region
+    if moves:
+        side += (f'<details class="acc moves"><summary>Movements ({len(moves)})</summary>'
+                 f'<div>{clips(exam, clip_key)}</div></details>')
     return (f'<article class="test wide" tabindex="0" data-words="{html.escape(words)}">'
             f'<h4>{html.escape(title)}</h4><div class="hide h1 split"><div class="xprose">{body}</div>'
             f'{f"""<div class="aside">{side}</div>""" if side else ""}</div>'
@@ -562,7 +566,8 @@ body.quiz.hideimg .test img{display:none}
 .acc>summary::-webkit-details-marker{display:none}
 .acc>summary::after{content:"+";font-size:18px;color:var(--muted)}
 .acc[open]>summary::after{content:"-"}
-.acc>p,.acc>ul{margin:0 14px 12px}.acc>ul{padding-left:18px}
+.acc>p,.acc>ul{margin:0 14px 12px}
+.acc.moves{border-radius:8px}.acc.moves>summary{padding:6px 8px;font-size:13px}.acc.moves>div{padding:0 8px 8px}.acc>ul{padding-left:18px}
 :focus-visible{outline:3px solid var(--accent)}
 </style>
 {{NAV}}
@@ -606,8 +611,8 @@ body.quiz.hideimg .test img{display:none}
   });
   function step(t){ if(!body.classList.contains('quiz'))return; t.dataset.s=String(Math.min(2,(+t.dataset.s||0)+1)); }
   document.querySelectorAll('.test').forEach(function(t){
-    t.addEventListener('click',function(){step(t)});
-    t.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();step(t)}});
+    t.addEventListener('click',function(e){if(!e.target.closest('summary'))step(t)});
+    t.addEventListener('keydown',function(e){if(e.target.closest('summary'))return;if(e.key==='Enter'||e.key===' '){e.preventDefault();step(t)}});
   });
   document.addEventListener('click',function(e){
     var b=e.target.closest('.vid[data-yt],.vid[data-mp4]'); if(!b)return; e.stopPropagation();
