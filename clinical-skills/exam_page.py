@@ -450,8 +450,14 @@ def landmarks(exam: Exam, key: str) -> str:
 
 def render(exam: Exam, regions: list[dict], credits: list[dict]) -> str:
     """Render the whole page."""
+    def numbered(r: dict) -> int:
+        """How many numbered tests a region has (tests done together share one number)."""
+        return len({t["num"] for p in r["problems"] for t in p["tests"] if t.get("num")})
+
     chips = "".join(f'<a class="rchip" href="#{r["key"]}" style="--c:{r["color"]}">'
-                    f'<b>{r["title"]}</b><span>{r["week"]}</span></a>' for r in regions)
+                    f'<b>{r["title"]}</b><span>{r["week"]}</span>'
+                    f'{f"""<span class="rn">{numbered(r)} {exam.count_noun}</span>""" if numbered(r) else ""}</a>'
+                    for r in regions)
     bands = []
     for r in regions:
         wides = [("", t, b, exam.region_video.get(t), "", t) for t, b in r["wide"]]
@@ -463,10 +469,15 @@ def render(exam: Exam, regions: list[dict], credits: list[dict]) -> str:
         probs = "".join(f'<div class="prob" style="--n:{min(len(p["tests"]), 4)}"><h3>{html.escape(p["name"])}</h3>'
                         f'<div class="tests">{"".join(card(exam, t) for t in p["tests"])}</div></div>'
                         for p in r["problems"])
-        probs = f'<div class="probs">{probs}</div>'
+        # the hand-off from look, feel, move to the tests, for regions with numbered tests
+        cue = (f'<p class="stcue">Now the <b>{numbered(r)} {html.escape(exam.count_noun)}</b></p>'
+               if numbered(r) else "")
+        probs = f'{cue}<div class="probs">{probs}</div>'
         foot = (f'<div class="prob"><h3>{html.escape(exam.pearls_heading)}</h3><div class="tests">'
                 f'{wide_card(exam, "Remember", r["pearls"])}</div></div>' if r["pearls"] else "")
-        n = sum(len(p["tests"]) for p in r["problems"])
+        # a region whose tests are numbered counts the numbers (tests done together share one;
+        # extras have none); otherwise every test card counts
+        n = numbered(r) or sum(len(p["tests"]) for p in r["problems"])
         noun = exam.region_text.get(r["key"], {}).get("count_noun", exam.count_noun)
         count = f" · {n} {noun}" if n else ""
         bands.append(f'<section class="band" id="{r["key"]}" style="--c:{r["color"]}">'
@@ -519,7 +530,7 @@ html{scroll-behavior:smooth}
 .rchip{position:relative;display:block;text-align:center;text-decoration:none;color:#fff;background:var(--c);border-radius:10px;padding:8px 6px}
 .rchip::before{content:"";position:absolute;top:-18px;left:50%;width:2px;height:12px;background:var(--rail)}
 .rchip::after{content:"";position:absolute;top:-7px;left:calc(50% - 5px);border:5px solid transparent;border-top:6px solid var(--rail)}
-.rchip b{display:block;font-size:14px}.rchip span{font-size:12px;opacity:.9}
+.rchip b{display:block;font-size:14px}.rchip span{font-size:12px;opacity:.9}.rchip .rn{display:block;font-size:11px}
 @media (max-width:980px){.fan{grid-template-columns:repeat(5,1fr);padding-top:12px}.fan::before,.rchip::before,.rchip::after{display:none}.stem{display:none}}
 @media (max-width:420px){.fan{grid-template-columns:repeat(2,1fr)}}
 /* region bands */
@@ -527,6 +538,7 @@ html{scroll-behavior:smooth}
 .bandhead{background:var(--c);color:#fff;border-radius:10px;padding:9px 14px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
 .bandhead h2{font-size:22px}.bandhead span{font-size:13px;opacity:.9}
 .prob{margin-top:12px}
+.stcue{margin:16px 4px 0;font-size:15px;color:color-mix(in srgb,var(--c) 80%,var(--ink))}
 .prob h3{font-size:16px;color:color-mix(in srgb,var(--c) 80%,var(--ink));margin:0 4px 6px}
 .probs{display:flex;flex-wrap:wrap;gap:0 14px}
 .probs>.prob{flex:var(--n) 1 calc(var(--n) * 250px + (var(--n) - 1) * 10px);min-width:0;max-width:calc(var(--n) * 380px + (var(--n) - 1) * 10px)}
