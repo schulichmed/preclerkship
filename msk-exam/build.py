@@ -164,7 +164,7 @@ OPENING = {key: f"I would normally inspect the other side and examine the joint 
 
 # fracture rules the note gives as prose: one card, no picture
 OTTAWA = {
-    "name": "Ottawa ankle and foot rules", "problem": "Fracture: X-ray or not?", "img": None,
+    "num": "6", "name": "Ottawa ankle and foot rules", "problem": "Fracture: X-ray or not?", "img": None,
     "for": "Who needs an <b>X-ray</b> (age 18 or over)",
     "steps": ["Press the <b>back edge and tip of each malleolus</b> (distal 6 cm of tibia and fibula)",
               "Press the <b>base of the 5th metatarsal</b> and the <b>navicular</b>",
