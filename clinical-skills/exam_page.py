@@ -19,6 +19,7 @@ come from the exam's row in SKILLS.
 """
 
 import html
+import math
 import importlib.util
 import json
 import logging
@@ -126,6 +127,17 @@ class Exam:
     # region_video from the course's own suggested list (MSK Medicine for MSK) plays before
     # Hamzah Algodi's walk-throughs; a teaching channel picked for the page (Geeky Medics) plays after
     official_region_video: bool = False
+    # general card title -> how to lay it out instead of plain prose:
+    # gait = {"title", "watch": [(label, slug)], "videos": {gait name: [(label, slug)]}} renders the
+    # gait section as watch chips, definitions, assessment and one "seen with" card per abnormal gait;
+    # roots = {"title", "upper"/"lower": {"myotome", "dermatome", "reflex": slug}, "mrc": slug} splits
+    # the root table into upper and lower limb panels, each video beside what it demonstrates
+    gait: dict = field(default_factory=dict)
+    roots: dict = field(default_factory=dict)
+    # region key -> [(movement, degrees)], drawn as dials under the region's look, feel, move;
+    # degrees is the end of a 0-N range, or a (low, high) pair for a range that starts past 0
+    rom: dict = field(default_factory=dict)
+    rom_source: str = ""
     videos: dict = field(default_factory=dict, init=False)
 
 
@@ -163,7 +175,7 @@ def walks(exam: Exam, key: str) -> str:
         for v in exam.walk.get(key, []))
 
 
-def video(exam: Exam, slug: str, thumb: bool = False) -> str:
+def video(exam: Exam, slug: str, thumb: bool = False, label: str = "") -> str:
     """Render a click-to-play video from the exam's main channel (YouTube loads only when tapped).
 
     Parameters
@@ -174,6 +186,8 @@ def video(exam: Exam, slug: str, thumb: bool = False) -> str:
         The video's slug in videos.json.
     thumb : bool
         Show the video's thumbnail as the button, for the spine cards.
+    label : str
+        A short name for the button instead of the video's title (the gait and root chips).
 
     Returns
     -------
@@ -182,7 +196,7 @@ def video(exam: Exam, slug: str, thumb: bool = False) -> str:
     """
     v = exam.videos[slug]
     page = exam.video_page.format(slug=slug)
-    title = html.escape(v["title"])
+    title = html.escape(label or v["title"])
     if not v["id"]:
         return f'<a class="vid link" href="{page}" target="_blank" rel="noopener">{title} (page)</a>'
     img = (f'<img src="https://i.ytimg.com/vi/{v["id"]}/hqdefault.jpg" alt="" loading="lazy">'
@@ -306,6 +320,155 @@ def md_block(lines: list[str]) -> str:
     return "".join(out)
 
 
+def table_lines(lines: list[str]) -> list[str]:
+    """The markdown table rows in a block, header and separator included."""
+    return [l for l in lines if l.startswith("|")]
+
+
+def cells(line: str) -> list[str]:
+    """One markdown table row's cells, stripped."""
+    return [c.strip() for c in re.split(r"(?<!\\)\|", line)[1:-1]]
+
+
+def labelled(lines: list[str]) -> dict[str, list[str]]:
+    """Group a section's prose under its bold-only label lines ("**Definitions**"); the lines
+    before the first label go under "". Table rows are left out."""
+    groups, current = {"": []}, ""
+    for line in lines:
+        label = re.fullmatch(r"\*\*([^*]+)\*\*", line.strip())
+        if label:
+            current = label.group(1)
+            groups[current] = []
+        elif not line.startswith("|"):
+            groups[current].append(line)
+    return groups
+
+
+def chips(buttons: str) -> str:
+    """A row of small video buttons; a tapped one opens full width under the row."""
+    return f'<div class="chips">{buttons}</div>' if buttons else ""
+
+
+def gait_body(exam: Exam, lines: list[str]) -> str:
+    """Render the gait section: watch, definitions beside assessment, then one card per gait.
+
+    The note's section holds an opening line, a **Definitions** list ("- **Term**: meaning"),
+    an **Assessment** list, and a table of Gait | Seen with | What you see, whose last cell
+    separates its points with " · ".
+    """
+    groups = labelled(lines)
+    defs = "".join(f"<dt>{inline(m.group(1))}</dt><dd>{inline(m.group(2))}</dd>"
+                   for m in (re.match(r"- \*\*(.+?)\*\*:\s*(.*)", l) for l in groups.get("Definitions", [])) if m)
+    cards = []
+    for row in table_lines(lines)[2:]:
+        name, seen, see = cells(row)[:3]
+        name = plain(name)
+        points = "".join(f"<li>{inline(p.strip())}</li>" for p in see.split(" · "))
+        vids = "".join(video(exam, v, label=t) for t, v in exam.gait.get("videos", {}).get(name, []))
+        cards.append(f'<div class="gcard"><span class="eyebrow">Seen with</span><h5>{html.escape(name)} gait</h5>'
+                     f'<p class="seen">{inline(seen)}</p><ul>{points}</ul>{chips(vids)}</div>')
+    # the course videos, then any library clip filed under the card (a patient walking)
+    watch = "".join(video(exam, v, label=t) for t, v in exam.gait.get("watch", [])) + clips(exam, exam.gait["title"])
+    return (md_block(groups[""])
+            + (f'<h5 class="sub">Watch</h5>{chips(watch)}' if watch else "")
+            + f'<div class="pair"><div><h5 class="sub">Definitions</h5><dl class="defs">{defs}</dl></div>'
+              f'<div><h5 class="sub">Assessment</h5>{md_block(groups.get("Assessment", []))}</div></div>'
+            + f'<h5 class="sub">Common abnormal gaits</h5><div class="gcards">{"".join(cards)}</div>')
+
+
+def roots_body(exam: Exam, lines: list[str]) -> str:
+    """Render the neuro screen as an upper limb panel (C and T roots) and a lower limb panel
+    (L and S roots), each with its myotome, dermatome and reflex videos over the table.
+
+    A note bullet naming the lumbar spine goes under the lower limb panel, one naming the cervical
+    spine under the upper; the MRC scale line carries the muscle testing video.
+    """
+    rows = table_lines(lines)
+    head, body = rows[:2], rows[2:]
+    upper = [r for r in body if plain(cells(r)[0])[:1] in "CT"]
+    lower = [r for r in body if r not in upper]
+    prose = [l for l in lines if not l.startswith("|")]
+    bullets = [l for l in prose if l.startswith("- ")]
+    notes = {"upper": [l for l in bullets if "cervical" in l.lower()],
+             "lower": [l for l in bullets if "lumbar" in l.lower() and "cervical" not in l.lower()]}
+    rest = [l for l in prose if l not in notes["upper"] + notes["lower"]]
+
+    def span(group: list[str]) -> str:
+        return f'{plain(cells(group[0])[0]).split("-")[0]} to {plain(cells(group[-1])[0]).split("-")[-1]}'
+
+    panels = []
+    for key, title, group in (("upper", "Upper limb", upper), ("lower", "Lower limb", lower)):
+        if not group:
+            continue
+        vids = exam.roots.get(key, {})
+        buttons = "".join(video(exam, vids[k], label=t) for k, t in
+                          (("myotome", "Myotomes"), ("dermatome", "Dermatomes"), ("reflex", "Reflexes")) if k in vids)
+        panels.append(f'<div class="rpanel"><h5 class="sub">{title} <span>{span(group)}</span></h5>{chips(buttons)}'
+                      f'{md_block(head + group)}{md_block(notes[key])}</div>')
+    out = []
+    for line in rest:
+        part = md_block([line])
+        if "MRC" in line and exam.roots.get("mrc"):
+            part = f'<div class="mrc">{part}{chips(video(exam, exam.roots["mrc"], label="Muscle testing, MRC scale"))}</div>'
+        out.append(part)
+    return f'<div class="rpanels">{"".join(panels)}</div>{"".join(out)}'
+
+
+def general_body(exam: Exam, title: str, lines: list[str]) -> str:
+    """A general card's body: the gait or root layout when the exam asks for it, else prose."""
+    if exam.gait and title == exam.gait["title"]:
+        return gait_body(exam, lines)
+    if exam.roots and title == exam.roots["title"]:
+        return roots_body(exam, lines)
+    return md_block(lines)
+
+
+def dial(label: str, deg) -> str:
+    """One range-of-motion dial: a half circle from 0 to 180 degrees, the normal range shaded.
+
+    Parameters
+    ----------
+    label : str
+        The movement, e.g. "Flexion".
+    deg : int or tuple
+        The end of a 0-N range, or (low, high) for a range that starts past 0.
+
+    Returns
+    -------
+    str
+        A figure with an inline SVG and the range written under it.
+    """
+    lo, hi = deg if isinstance(deg, tuple) else (0, deg)
+    cx, cy, r = 60, 56, 46
+    pt = lambda a, rad=r: (cx - rad * math.cos(math.radians(a)), cy - rad * math.sin(math.radians(a)))
+    a0, a1 = min(lo, 180), min(hi, 180)
+    x0, y0 = pt(a0)
+    x1, y1 = pt(a1)
+    ticks = "".join(f'<line x1="{pt(a, r + 4)[0]:.1f}" y1="{pt(a, r + 4)[1]:.1f}" x2="{pt(a, r + 9)[0]:.1f}" '
+                    f'y2="{pt(a, r + 9)[1]:.1f}"/>' for a in (0, 30, 60, 90, 120, 150, 180))
+    wedge = f'M{cx},{cy} L{x0:.1f},{y0:.1f} A{r},{r} 0 0 1 {x1:.1f},{y1:.1f} Z'
+    text = f"{lo}–{hi}°" if lo else f"0–{hi}°"
+    return (f'<figure class="dial"><svg viewBox="0 0 120 66" aria-hidden="true">'
+            f'<path class="track" d="M{cx - r},{cy} A{r},{r} 0 0 1 {cx + r},{cy}"/>'
+            f'<g class="ticks">{ticks}</g><path class="arc" d="{wedge}"/>'
+            f'<line class="base" x1="{cx - r - 6}" y1="{cy}" x2="{cx}" y2="{cy}"/>'
+            f'<line class="arm" x1="{cx}" y1="{cy}" x2="{x1:.1f}" y2="{y1:.1f}"/>'
+            f'<circle cx="{cx}" cy="{cy}" r="3.2"/></svg>'
+            f'<figcaption><b>{text}</b><span>{html.escape(label)}</span></figcaption></figure>')
+
+
+def rom_block(exam: Exam, key: str) -> str:
+    """The region's normal ranges of motion as a row of dials, or nothing."""
+    moves = exam.rom.get(key)
+    if not moves:
+        return ""
+    source = f'<span>{html.escape(exam.rom_source)}</span>' if exam.rom_source else ""
+    if isinstance(moves, str):  # a region with no numbers: what to check instead
+        return f'<div class="rom"><h5 class="sub">Normal range of motion {source}</h5><p>{moves}</p></div>'
+    return (f'<div class="rom"><h5 class="sub">Normal range of motion {source}</h5>'
+            f'<div class="dials">{"".join(dial(l, d) for l, d in moves)}</div></div>')
+
+
 def split_region(lines: list[str]) -> tuple[list[str], list[str]]:
     """Split a region section into the spine lines (look, feel, move for MSK) before its test table
     and the pearls after it."""
@@ -374,12 +537,12 @@ def build_regions(exam: Exam, rows: list[dict], sections: dict[int, list[str]]) 
     if exam.general:
         regions.append({"key": "general", "title": exam.general_title, "week": exam.general_week,
                         "color": exam.general_color, "exam": None, "pearls": None,
-                        "wide": [(title, md_block(sections[num])) for num, title in exam.general],
+                        "wide": [(title, general_body(exam, title, sections[num])) for num, title in exam.general],
                         "problems": []})
     for num, (key, title, week, color) in exam.regions.items():
         before, after = split_or_all(sections[num])
         regions.append({"key": key, "title": title, "week": week, "color": color,
-                        "exam": md_block(before), "pearls": md_block(after), "wide": []})
+                        "exam": md_block(before) + rom_block(exam, key), "pearls": md_block(after), "wide": []})
         regions[-1]["problems"] = problems_for(exam, rows, num, key)
     return regions
 
@@ -431,7 +594,7 @@ def wide_card(exam: Exam, title: str, body: str, slugs: list[str] | None = None,
         side += (f'<details class="acc moves"><summary>Movements ({len(moves)})</summary>'
                  f'<div>{clips(exam, clip_key)}</div></details>')
     return (f'<article class="test wide" tabindex="0" data-words="{html.escape(words)}">'
-            f'<h4>{html.escape(title)}</h4><div class="hide h1 split"><div class="xprose">{body}</div>'
+            f'<h4>{html.escape(title)}</h4><div class="hide h1{" split" if side else ""}"><div class="xprose">{body}</div>'
             f'{f"""<div class="aside">{side}</div>""" if side else ""}</div>'
             f'<span class="pill">Tap to reveal</span></article>')
 
@@ -458,9 +621,12 @@ def render(exam: Exam, regions: list[dict], credits: list[dict]) -> str:
                     f'<b>{r["title"]}</b><span>{r["week"]}</span>'
                     f'{f"""<span class="rn">{numbered(r)} {exam.count_noun}</span>""" if numbered(r) else ""}</a>'
                     for r in regions)
+    tabs = "".join(f'<a href="#{r["key"]}" style="--c:{r["color"]}">{html.escape(r["title"])}</a>' for r in regions)
     bands = []
     for r in regions:
-        wides = [("", t, b, exam.region_video.get(t), "", t) for t, b in r["wide"]]
+        # the gait and root cards carry their videos inside, beside what each shows, not in a side column
+        inside = {exam.gait.get("title"), exam.roots.get("title")} - {None}
+        wides = [("", t, b, exam.region_video.get(t), "", "" if t in inside else t) for t, b in r["wide"]]
         if r["exam"]:
             wides.insert(0, (exam.spine_heading, exam.region_text.get(r["key"], {}).get("spine_title", exam.spine_title), opening(exam, r["key"]) + r["exam"],
                              exam.region_video.get(r["key"]), landmarks(exam, r["key"]), r["key"]))
@@ -502,7 +668,7 @@ def render(exam: Exam, regions: list[dict], credits: list[dict]) -> str:
             "EYEBROW": eyebrow,
             "H1": exam.h1, "LEAD": exam.lead, "FIND": exam.find, "ROOT": exam.root, "ROOT_NOTE": exam.root_note,
             "VIDEO_CREDIT": exam.video_credit, "COLS": str(len(regions)), "EDGE": f"{50 / len(regions):.1f}",
-            "CHIPS": chips, "BANDS": "".join(bands), "CREDITS": cred}
+            "CHIPS": chips, "TABS": tabs, "BANDS": "".join(bands), "CREDITS": cred}
     return re.sub(r"\{\{([A-Z0-9_]+)\}\}", lambda m: fill[m.group(1)], PAGE)
 
 
@@ -534,7 +700,7 @@ html{scroll-behavior:smooth}
 @media (max-width:980px){.fan{grid-template-columns:repeat(5,1fr);padding-top:12px}.fan::before,.rchip::before,.rchip::after{display:none}.stem{display:none}}
 @media (max-width:420px){.fan{grid-template-columns:repeat(2,1fr)}}
 /* region bands */
-.band{margin-top:28px;border-radius:14px;padding:10px;background:color-mix(in srgb,var(--c) 9%,transparent);scroll-margin-top:110px}
+.band{margin-top:28px;border-radius:14px;padding:10px;background:color-mix(in srgb,var(--c) 9%,transparent);scroll-margin-top:150px}
 .bandhead{background:var(--c);color:#fff;border-radius:10px;padding:9px 14px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
 .bandhead h2{font-size:22px}.bandhead span{font-size:13px;opacity:.9}
 .prob{margin-top:12px}
@@ -585,6 +751,40 @@ body.quiz.hideimg .test img{display:none}
 .acc[open]>summary::after{content:"-"}
 .acc>p,.acc>ul{margin:0 14px 12px}
 .acc.moves{border-radius:8px}.acc.moves>summary{padding:6px 8px;font-size:13px}.acc.moves>div{padding:0 8px 8px}.acc>ul{padding-left:18px}
+/* the region tabs in the sticky bar: the band in view is underlined */
+.rtabs{order:-1;width:100%;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line);margin:-4px 0 2px}
+.rtabs::-webkit-scrollbar{display:none}
+.rtabs a{flex:none;padding:6px 10px 7px;font:600 13.5px var(--sans);color:var(--muted);text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.rtabs a:hover{color:var(--ink)}
+.rtabs a.on{color:var(--ink);border-bottom-color:var(--c)}
+/* gait, root and range-of-motion layouts */
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 8px}
+.chips .vid{width:auto;margin:0;border-radius:999px;border-color:transparent;background:color-mix(in srgb,var(--c) 15%,var(--card));padding:4px 11px;font-size:12.5px;font-weight:600}
+.chips .player{flex-basis:100%;margin:0}
+.xprose h5.sub{font-size:14.5px;margin:14px 0 4px}.xprose h5.sub span{font-weight:500;color:var(--muted);font-size:12.5px;margin-left:6px}
+.xprose>h5.sub:first-child,.rpanel>h5.sub{margin-top:4px}
+.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:0 24px}
+.defs{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;margin:4px 0}.defs dt{font-weight:600}.defs dd{margin:0;color:var(--muted)}
+.gcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:10px;margin-top:4px}
+.gcard{border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:3px;background:var(--card)}
+.gcard .eyebrow{font:600 11px ui-monospace,Consolas,monospace;letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb,var(--c) 75%,var(--ink))}
+.gcard h5{margin:0;font-size:14.5px}.gcard .seen{margin:0 0 2px;color:var(--muted);font-size:13px}
+.xprose .gcard ul{margin:2px 0;padding-left:18px}.gcard .chips{margin:auto 0 0;padding-top:6px}
+.rpanels{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:4px 18px}
+.rpanel{min-width:0}.rpanel .tw{margin-top:0}
+.mrc{margin-top:8px}.mrc p{margin:0}.mrc .chips{margin-top:6px}
+.rom{margin-top:12px}
+.dials{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
+.dial{margin:0;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:8px 6px 6px;text-align:center}
+.dial svg{display:block;width:100%;max-width:120px;margin:0 auto}
+.dial .track{fill:none;stroke:var(--line);stroke-width:1.5}
+.dial .ticks line{stroke:var(--muted);stroke-width:1.2;opacity:.6}
+.dial .arc{fill:color-mix(in srgb,var(--c) 22%,transparent);stroke:none}
+.dial .base{stroke:var(--ink);stroke-width:2.5;stroke-linecap:round}
+.dial .arm{stroke:var(--c);stroke-width:2.5;stroke-linecap:round}
+.dial circle{fill:var(--ink)}
+.dial figcaption b{display:block;font:700 15px ui-monospace,Consolas,monospace}
+.dial figcaption span{display:block;font-size:12px;color:var(--muted);line-height:1.25}
 :focus-visible{outline:3px solid var(--accent)}
 </style>
 {{NAV}}
@@ -601,6 +801,7 @@ body.quiz.hideimg .test img{display:none}
 <div class="bar">
 <div class="mode" role="group" aria-label="Mode"><button data-m="look" aria-pressed="true">Look</button><button data-m="quiz" aria-pressed="false">Test</button><button data-m="blind" aria-pressed="false">Test, no pictures</button></div>
 <input type="search" id="q" placeholder="{{FIND}}">
+<div class="rtabs" role="navigation" aria-label="Regions">{{TABS}}</div>
 <p class="hint" id="hint">Look: everything shown. Pick a region below to jump to it.</p>
 </div>
 <div class="tree">
@@ -639,6 +840,17 @@ body.quiz.hideimg .test img{display:none}
     d.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?autoplay=1&rel=0'+(+b.dataset.start?'&start='+b.dataset.start:'')+'" title="'+b.textContent.replace(/"/g,'')+'" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
     b.replaceWith(d);
   },true);
+  // underline the tab of the band under the sticky bar, and keep that tab scrolled into the row
+  var tabs=[].slice.call(document.querySelectorAll('.rtabs a')), bar=document.querySelector('.bar');
+  function mark(){
+    var line=bar.getBoundingClientRect().bottom+60, cur=null;
+    tabs.forEach(function(a){var b=document.getElementById(a.getAttribute('href').slice(1)); if(b&&b.getBoundingClientRect().top<=line)cur=a;});
+    tabs.forEach(function(a){
+      var on=a===cur, row=a.parentNode;
+      if(on&&!a.classList.contains('on'))row.scrollTo({left:a.offsetLeft-row.clientWidth/2+a.offsetWidth/2,behavior:'smooth'});
+      a.classList.toggle('on',on);});
+  }
+  if(tabs.length){window.addEventListener('scroll',mark,{passive:true});mark();}
   document.getElementById('q').addEventListener('input',function(e){
     var q=e.target.value.trim().toLowerCase();
     document.querySelectorAll('.prob').forEach(function(p){
