@@ -143,12 +143,46 @@ REGION_VIDEO = {
     "shoulder": ["shoulder-look-feel-move"], "elbow": ["elbow-exam-look-feel-move"],
     "wrist": ["hand-wrist-look-feel-move"], "hip": ["hip-exam-look-feel-move"],
     "knee": ["knee-exam-look-feel-move"], "ankle": ["ankle-exam-look-feel-move"],
-    "Gait": ["gait-assessment", "gait-cycle", "antalgic-gait", "trendelenberg-gait",
-             "steppage-foot-slap-gait-patterns-foot-drop", "ataxic-gait-pattern"],
-    "Neuro screen: sensation, muscle strength, reflexes": [
-        "sensory-dermatomal-screen-upper", "sensory-dermatomal-screen-lower", "myotomal-motor-screen-upper",
-        "myotomal-motor-screen-lower", "manual-muscle-testing-mmt-mrc-scale", "upper-extremity-reflexes",
-        "lower-extermity-reflexes"],
+}
+
+# the gait card: the two overview videos, then each abnormal gait's own (gait name as the note's table has it)
+GAIT = {
+    "title": "Gait",
+    "watch": [("Gait cycle", "gait-cycle"), ("Gait assessment", "gait-assessment")],
+    "videos": {
+        "Antalgic": [("Antalgic gait", "antalgic-gait")],
+        "Trendelenburg": [("Trendelenburg gait", "trendelenberg-gait")],
+        "Foot drop": [("Steppage & foot slap", "steppage-foot-slap-gait-patterns-foot-drop"),
+                      ("Circumduction", "circumduction-gait")],
+        "Ataxic": [("Ataxic gait", "ataxic-gait-pattern")],
+    },
+}
+
+# the neuro screen card: each limb's videos sit over its own half of the root table
+ROOTS = {
+    "title": "Neuro screen: sensation, muscle strength, reflexes",
+    "upper": {"myotome": "myotomal-motor-screen-upper", "dermatome": "sensory-dermatomal-screen-upper",
+              "reflex": "upper-extremity-reflexes"},
+    "lower": {"myotome": "myotomal-motor-screen-lower", "dermatome": "sensory-dermatomal-screen-lower",
+              "reflex": "lower-extermity-reflexes"},
+    "mrc": "manual-muscle-testing-mmt-mrc-scale",
+}
+
+# normal range of motion, from the course objectives (degrees: 0 to N), drawn as dials
+ROM = {
+    "shoulder": [("Flexion", 180), ("Extension", 50), ("Abduction", 180), ("Adduction", 45),
+                 ("External rotation", 50), ("Internal rotation", 50)],
+    "elbow": [("Extension", 5), ("Flexion", 145), ("Pronation", 90), ("Supination", 90)],
+    "wrist": [("Wrist extension", 80), ("Wrist flexion", 80), ("Pronation", 90), ("Supination", 90),
+              ("Ulnar deviation", 30), ("Radial deviation", 20)],
+    "hip": [("Flexion", 135), ("External rotation", 45), ("Internal rotation", 35), ("Abduction", 45),
+            ("Adduction", 20)],
+    "knee": [("Flexion (from full extension)", 135)],
+    "ankle": [("Plantar flexion", 50), ("Dorsiflexion", 20), ("Inversion", 35), ("Eversion", 20),
+              ("1st MTP flexion", 45), ("1st MTP extension", 70)],
+    "cspine": [("Flexion", 90), ("Extension", 90), ("Rotation", 90), ("Lateral flexion", 45)],
+    "lspine": "No numeric norms in the objectives. Check extension, flexion, lateral flexion and rotation "
+              "for smoothness and symmetry.",
 }
 
 # region -> (the complaint, the joints above and below), for the line to say at the start of a TOSCE
@@ -186,6 +220,7 @@ EXAM = exam_page.Exam(
     other_video=json.loads((HERE / "videos_other.json").read_text(encoding="utf-8")),
     extra_cards={"ankle": [OTTAWA]},
     clips=json.loads((HERE / "clips.json").read_text(encoding="utf-8")),
+    gait=GAIT, roots=ROOTS, rom=ROM, rom_source="Values from the course objectives",
     # on the hip, FABER, FADIR and the extra thigh thrust share one heading (they are the
     # lumbar spine's SI joint tests there)
     region_tests={"hip": {
