@@ -79,7 +79,7 @@
  "bands": [
   {
    "x": 40,
-   "y": 252,
+   "y": 460,
    "w": 246,
    "h": 744,
    "fill": "#fcf0f6",
@@ -87,7 +87,7 @@
   },
   {
    "x": 316,
-   "y": 252,
+   "y": 460,
    "w": 246,
    "h": 744,
    "fill": "#eef7fa",
@@ -95,7 +95,7 @@
   },
   {
    "x": 564,
-   "y": 252,
+   "y": 460,
    "w": 246,
    "h": 744,
    "fill": "#f4f7ee",
@@ -103,7 +103,7 @@
   },
   {
    "x": 812,
-   "y": 252,
+   "y": 460,
    "w": 246,
    "h": 744,
    "fill": "#fdf4ea",
@@ -113,19 +113,19 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 398,
+   "y": 606,
    "h": 196,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 634,
+   "y": 842,
    "h": 98,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 772,
+   "y": 980,
    "h": 216,
    "text": "TREATMENT"
   }
@@ -147,11 +147,12 @@
    "x": 45,
    "y": 120,
    "w": 236,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "FEVER, unwell, will not walk",
    "lines": [
-    "infection until proven otherwise"
+    "infection until proven otherwise",
+    "on the list at EVERY age"
    ]
   },
   {
@@ -159,17 +160,56 @@
    "x": 321,
    "y": 120,
    "w": 732,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "Afebrile and well: AGE decides",
    "lines": [
-    "under 10: transient synovitis · 4-8: Perthes · teenager: slipped epiphysis"
+    "the lecture's three bands: under 4 · 4-10 · 10-16"
+   ]
+  },
+  {
+   "id": "t_young",
+   "x": 321,
+   "y": 238,
+   "w": 236,
+   "h": 150,
+   "kind": "plain",
+   "title": "UNDER 4 (and on to 10)",
+   "lines": [
+    "• also: infection · juvenile idiopathic arthritis · non-accidental injury · pain referred from the limb",
+    "~uncommon: leukemia · eosinophilic granuloma · neuroblastoma metastases"
+   ]
+  },
+  {
+   "id": "t_mid",
+   "x": 569,
+   "y": 238,
+   "w": 236,
+   "h": 150,
+   "kind": "plain",
+   "title": "4-10 YEARS",
+   "lines": [
+    "• also: transient synovitis · infection",
+    "~uncommon: leukemia · Ewing sarcoma"
+   ]
+  },
+  {
+   "id": "t_teen",
+   "x": 817,
+   "y": 238,
+   "w": 236,
+   "h": 150,
+   "kind": "plain",
+   "title": "10-16 YEARS",
+   "lines": [
+    "• also: avulsion fractures · infection",
+    "~uncommon: leukemia · osteoid osteoma · Ewing sarcoma · osteosarcoma"
    ]
   },
   {
    "id": "sep_head_0_0",
    "x": 45,
-   "y": 260,
+   "y": 468,
    "w": 236,
    "h": 98,
    "kind": "sep_h",
@@ -181,7 +221,7 @@
   {
    "id": "ts_head_0_0",
    "x": 321,
-   "y": 260,
+   "y": 468,
    "w": 236,
    "h": 98,
    "kind": "ts_h",
@@ -193,7 +233,7 @@
   {
    "id": "lcp_head_0_0",
    "x": 569,
-   "y": 260,
+   "y": 468,
    "w": 236,
    "h": 98,
    "kind": "lcp_h",
@@ -205,7 +245,7 @@
   {
    "id": "scfe_head_0_0",
    "x": 817,
-   "y": 260,
+   "y": 468,
    "w": 236,
    "h": 98,
    "kind": "scfe_h",
@@ -217,7 +257,7 @@
   {
    "id": "sep_pres_0_0",
    "x": 45,
-   "y": 398,
+   "y": 606,
    "w": 236,
    "h": 196,
    "kind": "sep_t",
@@ -231,7 +271,7 @@
   {
    "id": "ts_pres_0_0",
    "x": 321,
-   "y": 398,
+   "y": 606,
    "w": 236,
    "h": 96,
    "kind": "ts_t",
@@ -244,7 +284,7 @@
   {
    "id": "ts_pres_1_0",
    "x": 321,
-   "y": 516,
+   "y": 724,
    "w": 236,
    "h": 78,
    "kind": "ts_w",
@@ -256,7 +296,7 @@
   {
    "id": "lcp_pres_0_0",
    "x": 569,
-   "y": 398,
+   "y": 606,
    "w": 236,
    "h": 105,
    "kind": "lcp_t",
@@ -269,7 +309,7 @@
   {
    "id": "lcp_pres_1_0",
    "x": 569,
-   "y": 525,
+   "y": 733,
    "w": 236,
    "h": 69,
    "kind": "lcp_w",
@@ -281,7 +321,7 @@
   {
    "id": "scfe_pres_0_0",
    "x": 817,
-   "y": 398,
+   "y": 606,
    "w": 236,
    "h": 87,
    "kind": "scfe_t",
@@ -294,7 +334,7 @@
   {
    "id": "scfe_pres_1_0",
    "x": 817,
-   "y": 507,
+   "y": 715,
    "w": 236,
    "h": 87,
    "kind": "scfe_w",
@@ -306,7 +346,7 @@
   {
    "id": "sep_inv_0_0",
    "x": 45,
-   "y": 634,
+   "y": 842,
    "w": 236,
    "h": 98,
    "kind": "sep_w",
@@ -318,7 +358,7 @@
   {
    "id": "ts_inv_0_0",
    "x": 321,
-   "y": 634,
+   "y": 842,
    "w": 236,
    "h": 98,
    "kind": "ts_w",
@@ -331,7 +371,7 @@
   {
    "id": "lcp_inv_0_0",
    "x": 569,
-   "y": 634,
+   "y": 842,
    "w": 236,
    "h": 98,
    "kind": "lcp_w",
@@ -343,7 +383,7 @@
   {
    "id": "scfe_inv_0_0",
    "x": 817,
-   "y": 634,
+   "y": 842,
    "w": 236,
    "h": 98,
    "kind": "scfe_w",
@@ -356,7 +396,7 @@
   {
    "id": "sep_tx_0_0",
    "x": 45,
-   "y": 772,
+   "y": 980,
    "w": 236,
    "h": 216,
    "kind": "bad",
@@ -368,7 +408,7 @@
   {
    "id": "ts_tx_0_0",
    "x": 321,
-   "y": 772,
+   "y": 980,
    "w": 236,
    "h": 216,
    "kind": "ok",
@@ -380,7 +420,7 @@
   {
    "id": "lcp_tx_0_0",
    "x": 569,
-   "y": 772,
+   "y": 980,
    "w": 236,
    "h": 133,
    "kind": "ok",
@@ -394,7 +434,7 @@
   {
    "id": "lcp_tx_1_0",
    "x": 569,
-   "y": 927,
+   "y": 1135,
    "w": 236,
    "h": 61,
    "kind": "warn",
@@ -406,7 +446,7 @@
   {
    "id": "scfe_tx_0_0",
    "x": 817,
-   "y": 772,
+   "y": 980,
    "w": 236,
    "h": 98,
    "kind": "bad",
@@ -418,7 +458,7 @@
   {
    "id": "scfe_tx_1_0",
    "x": 817,
-   "y": 892,
+   "y": 1100,
    "w": 236,
    "h": 96,
    "kind": "ok",
@@ -439,6 +479,21 @@
    "from": "root",
    "to": "g_age",
    "path": "M549.0 70V95H687.0V120"
+  },
+  {
+   "from": "g_age",
+   "to": "t_young",
+   "from_dx": -248
+  },
+  {
+   "from": "g_age",
+   "to": "t_mid",
+   "from_dx": 0
+  },
+  {
+   "from": "g_age",
+   "to": "t_teen",
+   "from_dx": 248
   },
   {
    "from": "ts_pres_0_0",
@@ -493,9 +548,9 @@
    "to": "ts_tx_0_0"
   },
   {
-   "from": "g_age",
+   "from": "t_young",
    "to": "ts_head_0_0",
-   "from_dx": -248
+   "from_dx": 0
   },
   {
    "from": "lcp_head_0_0",
@@ -510,7 +565,7 @@
    "to": "lcp_tx_0_0"
   },
   {
-   "from": "g_age",
+   "from": "t_mid",
    "to": "lcp_head_0_0",
    "from_dx": 0
   },
@@ -527,28 +582,16 @@
    "to": "scfe_tx_0_0"
   },
   {
-   "from": "g_age",
+   "from": "t_teen",
    "to": "scfe_head_0_0",
-   "from_dx": 248
+   "from_dx": 0
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 1022,
-   "w": 497,
-   "title": "The rest of the differential, by age",
-   "items": [
-    "under 4: transient synovitis · infection · juvenile idiopathic arthritis · non-accidental injury · pain referred from the limb",
-    "4-10: transient synovitis · Perthes · infection · 10-16: slipped epiphysis · avulsion fracture · infection",
-    "uncommon at any age: leukemia and bone tumours"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 556,
-   "y": 1022,
-   "w": 497,
+   "y": 1230,
+   "w": 1008,
    "title": "Any abnormal gait: warning signs",
    "items": [
     "asymmetry · progression · leg length difference · pain · deformity · a suspected associated condition",

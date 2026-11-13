@@ -44,7 +44,15 @@ A section is a list of rows; a row holds one box or two side by side. A box is
 [kind, title, lines]. kind "h" = solid header, "t" = tinted, "w" = white with the
 column's colour; or a fixed kind: ok (treatment), warn, bad (danger), info, plain.
 A line starting with "~" is drawn muted and italic (a qualifier, not a fact).
-Colours: teal purple orange blue magenta brown olive slate red-free only.
+Colours: teal purple orange blue magenta brown olive slate indigo gold, red-free only.
+
+PHOTOS (optional): a column may carry
+   "pics": [{"file": "ra-nodules.jpg", "caption": "Rheumatoid nodules", "credit": "..."}]
+with "pics_dir" at the top level (repo-relative, e.g. "pom2/charts/img/<chart id>").
+Put "pic" in "sections" where the photos go; each photo becomes a picture box there
+(the drawing embeds the file; the interactive page shows the same files under the
+column's name and credits them). A column with no photos needs a "pic" section of its
+own, like any other section.
 """
 import json
 import sys
@@ -62,6 +70,8 @@ PALETTE = {  # name -> (strong, soft, band)
     "brown": ("#8a5a2b", "#f3e6d8", "#faf4ee"),
     "olive": ("#4f6d1f", "#e7eed9", "#f4f7ee"),
     "slate": ("#46607a", "#e2e8ee", "#f2f5f8"),
+    "indigo": ("#3f4fa0", "#e3e6f6", "#f1f3fb"),
+    "gold": ("#7d6200", "#f5edcc", "#fbf7e6"),
 }
 GAP, X0, LABEL_W, GROUP_GAP = 12, 15, 30, 40
 SUB_GAP, ROW_GAP, SIDE_GAP = 22, 40, 10
@@ -95,6 +105,21 @@ def build(c: dict) -> dict:
         ps.KIND[k] = tuple(v)
     chart = ps.Chart({"title": "", "nodes": [], "edges": [], "width": width})
 
+    # photos become picture boxes in the column's "pic" section: [kind, caption, [], {"img": path}]
+    if c.get("pics_dir"):
+        cols = [dict(col) for col in cols]
+        for col in cols:
+            if col.get("pics"):
+                col["pic"] = [[[col["id"] + "_w", p["caption"], [],
+                                {"img": c["pics_dir"].rstrip("/") + "/" + p["file"]}]] for p in col["pics"]]
+
+    def box_h(box, w):
+        kind, title, lines = box[:3]
+        extra = box[3] if len(box) > 3 else {}
+        if extra.get("img"):
+            return ps.picture_height(chart, title, extra["img"], w)
+        return height(title, lines, w)
+
     def height(title, lines, w):
         r = chart.layout_text({"title": title, "lines": lines, "id": title}, w)
         block = sum(t[3] for t in r) - r[-1][3] + (ps.TITLE_SIZE if r[-1][1] == "bold" else ps.BODY_SIZE)
@@ -107,7 +132,7 @@ def build(c: dict) -> dict:
         return w if len(row) == 1 else (w - SIDE_GAP) / 2
 
     def row_h(row, w=col_w):
-        return max(height(t, ls, box_w(row, w)) for _, t, ls in row)
+        return max(box_h(b, box_w(row, w)) for b in row)
 
     def section_h(rows, w=col_w):
         return sum(row_h(r, w) for r in rows) + SUB_GAP * (len(rows) - 1)
@@ -194,10 +219,14 @@ def build(c: dict) -> dict:
             h = round(row_h(row, w) + pad)
             bw = box_w(row, w)
             ids = []
-            for b_i, (kind, title, lines) in enumerate(row):
+            for b_i, b in enumerate(row):
+                kind, title, lines = b[:3]
                 nid = f"{prefix}_{r_i}_{b_i}"
-                nodes.append({"id": nid, "x": round(x0 + b_i * (bw + SIDE_GAP), 1), "y": round(yy),
-                              "w": round(bw, 1), "h": h, "kind": kind_of(kind), "title": title, "lines": lines})
+                node = {"id": nid, "x": round(x0 + b_i * (bw + SIDE_GAP), 1), "y": round(yy),
+                        "w": round(bw, 1), "h": h, "kind": kind_of(kind), "title": title, "lines": lines}
+                if len(b) > 3 and b[3].get("img"):
+                    node["img"] = b[3]["img"]
+                nodes.append(node)
                 ids.append(nid)
             if prev:
                 edges += link(prev, ids, dashed=dashed, w=w)

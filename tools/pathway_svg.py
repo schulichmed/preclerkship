@@ -108,8 +108,38 @@ PAD_X, PAD_Y = 10, 12          # inside a box, each side
 WRAP = 0.95                    # fill to this share of the inner width, for wider substitute faces
 WIDTH = 920
 ANY_TOP = 175                  # the OR row's height, when there is one
+IMG_MAX_H, IMG_GAP = 150, 8    # a picture box: the photo fits this tall, then its caption
+REPO = Path(__file__).resolve().parents[1]   # picture paths are relative to the repo root
 
 _fonts = {}
+
+
+def picture_fit(path: str, w: float):
+    """(width, height) a photo is drawn at inside a box w wide: fit to the inner width and IMG_MAX_H."""
+    from PIL import Image
+    with Image.open(REPO / path) as im:
+        iw, ih = im.size
+    s = min((w - 2 * PAD_X) / iw, IMG_MAX_H / ih)
+    return iw * s, ih * s
+
+
+def picture_height(chart, caption: str, path: str, w: float) -> int:
+    rows = chart.layout_text({"title": caption, "lines": [], "id": caption}, w)
+    block = sum(r[3] for r in rows) - rows[-1][3] + TITLE_SIZE
+    return round(picture_fit(path, w)[1] + IMG_GAP + block + 2 * PAD_Y + 4)
+
+
+def picture_data(path: str, w: float) -> str:
+    """The photo as a JPEG data URI, at twice its drawn width so it stays sharp when zoomed."""
+    import base64
+    import io
+    from PIL import Image
+    with Image.open(REPO / path) as im:
+        im = im.convert("RGB")
+        im.thumbnail((round(2 * w), 10000))
+        buf = io.BytesIO()
+        im.save(buf, "JPEG", quality=80, optimize=True)
+    return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode("ascii")
 
 
 def font(style: str, size: float) -> ImageFont.FreeTypeFont:
@@ -207,6 +237,8 @@ class Chart(object):
             kind = "plain"
         fill, stroke, tcol, bcol = KIND[kind]
         x, y, w = node["x"], node["y"] + dy, node["w"]
+        if node.get("img"):
+            return self.picture(node, x, y, w, stroke_override or stroke, tcol, stroke_width)
         rows = self.layout_text(node, w)
         block = sum(r[3] for r in rows) - rows[-1][3] + (TITLE_SIZE if rows[-1][1] == "bold" else BODY_SIZE)
         h = node.get("h") or round(block + 2 * PAD_Y + 4)
@@ -228,6 +260,25 @@ class Chart(object):
         if "id" in node:
             if node["id"] in self.boxes:
                 self.errors.append("duplicate node id %r" % node["id"])
+            self.boxes[node["id"]] = (x, y, w, h)
+        return h
+
+    def picture(self, node, x, y, w, stroke, tcol, stroke_width):
+        """A photo box: the picture centred at the top, its caption under it."""
+        need = picture_height(self, node["title"], node["img"], w)
+        h = node.get("h") or need
+        if h < need - 2:
+            self.errors.append("%s: h=%s is too short for its picture (needs %d)" % (node.get("id"), h, need))
+        self.rect(x, y, w, h, P["surface"], stroke, stroke_width)
+        pw, ph = picture_fit(node["img"], w)
+        top = y + (h - need) / 2 + PAD_Y
+        self.parts.append('<image x="%.1f" y="%.1f" width="%.1f" height="%.1f" href="%s"/>'
+                          % (x + (w - pw) / 2, top, pw, ph, picture_data(node["img"], pw)))
+        cy = top + ph + IMG_GAP + TITLE_SIZE * 0.8
+        for line, style, size, step, *indent in self.layout_text(node, w):
+            self.text(x + w / 2, cy, line, size, 700, tcol)
+            cy += step
+        if "id" in node:
             self.boxes[node["id"]] = (x, y, w, h)
         return h
 
