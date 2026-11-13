@@ -130,6 +130,13 @@ sharing one figure four copies of it. `tools/question_figures.py` is the
 backfill and the check; the three places that could put one back -
 `tools/embed_image.py` and FoM's two PDF parsers - write files now.
 
+## Schulich Casebook
+
+The [Casebook](casebook/) is a Doctordle-style diagnosis game with a daily case
+and practice by block. Edit `casebook/cases.js` to add cases and
+`casebook/diagnoses.js` to add accepted guesses that can appear in autocomplete.
+Case explanations link back to the corresponding portal notes.
+
 ## Run it
 
 ```bash
