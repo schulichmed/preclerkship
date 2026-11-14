@@ -135,7 +135,7 @@
    "x": 40,
    "y": 344,
    "w": 232,
-   "h": 1114,
+   "h": 1234,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
@@ -143,7 +143,7 @@
    "x": 274,
    "y": 344,
    "w": 232,
-   "h": 1114,
+   "h": 1234,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -151,7 +151,7 @@
    "x": 508,
    "y": 344,
    "w": 232,
-   "h": 1114,
+   "h": 1234,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -159,7 +159,7 @@
    "x": 742,
    "y": 344,
    "w": 232,
-   "h": 1114,
+   "h": 1234,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -167,7 +167,7 @@
    "x": 1004,
    "y": 344,
    "w": 232,
-   "h": 1114,
+   "h": 1234,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -175,7 +175,7 @@
    "x": 1238,
    "y": 344,
    "w": 232,
-   "h": 1114,
+   "h": 1234,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
@@ -183,7 +183,7 @@
    "x": 1500,
    "y": 344,
    "w": 232,
-   "h": 1114,
+   "h": 1234,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   }
@@ -204,7 +204,7 @@
   {
    "x": 23,
    "y": 1076,
-   "h": 374,
+   "h": 494,
    "text": "TREATMENT"
   }
  ],
@@ -594,7 +594,7 @@
    "x": 45,
    "y": 1076,
    "w": 222,
-   "h": 374,
+   "h": 494,
    "kind": "warn",
    "title": "Irregular bleeding makes it HARD to treat",
    "lines": [
@@ -606,7 +606,7 @@
    "x": 279,
    "y": 1076,
    "w": 222,
-   "h": 374,
+   "h": 494,
    "kind": "ok",
    "title": "Treat the symptom she wants treated",
    "lines": [
@@ -619,7 +619,7 @@
    "x": 513,
    "y": 1076,
    "w": 222,
-   "h": 374,
+   "h": 494,
    "kind": "ok",
    "title": "MHT before 50",
    "lines": [
@@ -631,7 +631,7 @@
    "x": 747,
    "y": 1076,
    "w": 222,
-   "h": 374,
+   "h": 494,
    "kind": "warn",
    "title": "Genetic cause",
    "lines": [
@@ -644,7 +644,7 @@
    "x": 1009,
    "y": 1076,
    "w": 222,
-   "h": 374,
+   "h": 494,
    "kind": "ok",
    "title": "Estrogen, + progesterone with a uterus",
    "lines": [
@@ -691,11 +691,23 @@
    ]
   },
   {
+   "id": "mn_tx_3_0",
+   "x": 1243,
+   "y": 1472,
+   "w": 222,
+   "h": 98,
+   "kind": "ok",
+   "title": "Clonidine 0.05 mg twice daily",
+   "lines": [
+    "~not in The Menopause Society guideline"
+   ]
+  },
+  {
    "id": "gs_tx_0_0",
    "x": 1505,
    "y": 1076,
    "w": 222,
-   "h": 185,
+   "h": 150,
    "kind": "ok",
    "title": "1 · Lifestyle · lubricant · moisturizer",
    "lines": [
@@ -708,14 +720,27 @@
   {
    "id": "gs_tx_1_0",
    "x": 1505,
-   "y": 1283,
+   "y": 1248,
    "w": 222,
-   "h": 167,
+   "h": 186,
    "kind": "ok",
    "title": "2 · ESTROGEN into the vagina",
    "lines": [
     "• or vaginal dehydroepiandrosterone (DHEA)",
-    "• oral ospemifene"
+    "• oral ospemifene",
+    "~vaginal estrogen: NO systemic absorption, does NOT treat hot flashes"
+   ]
+  },
+  {
+   "id": "gs_tx_2_0",
+   "x": 1505,
+   "y": 1456,
+   "w": 222,
+   "h": 114,
+   "kind": "warn",
+   "title": "Urinary incontinence: oxybutynin",
+   "lines": [
+    "dry mouth, GI upset, constipation, blurred vision"
    ]
   }
  ],
@@ -764,8 +789,16 @@
    "to": "mn_tx_2_0"
   },
   {
+   "from": "mn_tx_2_0",
+   "to": "mn_tx_3_0"
+  },
+  {
    "from": "gs_tx_0_0",
    "to": "gs_tx_1_0"
+  },
+  {
+   "from": "gs_tx_1_0",
+   "to": "gs_tx_2_0"
   },
   {
    "from": "pe_head_0_0",
@@ -925,11 +958,38 @@
  "panels": [
   {
    "x": 45,
-   "y": 1484,
-   "w": 1682,
-   "title": "Nutrition for every woman in menopause",
+   "y": 1604,
+   "w": 551,
+   "title": "MHT: benefits vs risks",
    "items": [
-    "sodium < 1300 mg · vitamin D 800 IU · calcium 1200 mg"
+    "BENEFITS: hot flashes ↓ 75% · sleep, mood, anxiety, aches ↓ · PREVENTS OSTEOPOROSIS · reverses atrophic vaginitis · started before 50: ↓ all-cause mortality",
+    "RISKS: ↑ venous thromboembolism · ↑ stroke · ↑ breast cancer · coronary artery disease if > 60 or > 10 years post menopause · endometrial hyperplasia, cancer on ESTROGEN ALONE"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 610,
+   "y": 1604,
+   "w": 551,
+   "title": "Using MHT",
+   "items": [
+    "LOWEST effective dose, titrate up · review risk-benefit ANNUALLY · stop abruptly or taper",
+    "TRANSDERMAL estrogen skips first-pass metabolism → better clot profile than oral",
+    "continuous combined: estrogen + progesterone every day · CYCLIC: progesterone 12–14 days a month → monthly bleed",
+    "evaluate the ENDOMETRIUM: bleeding > 6 months into continuous · bleeding after amenorrhea on continuous · abnormal bleeding on cyclic",
+    "MHT can under-treat GSM: some need vaginal estrogen too"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 1176,
+   "y": 1604,
+   "w": 551,
+   "title": "Lifestyle + nutrition for every woman",
+   "items": [
+    "sodium < 1300 mg · vitamin D 800 IU · calcium 1200 mg",
+    "natural health products: NO benefit shown",
+    "exercise, yoga: healthy, but NOT recommended for hot flashes"
    ],
    "cols": 1
   }

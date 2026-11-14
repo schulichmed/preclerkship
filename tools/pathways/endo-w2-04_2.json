@@ -1,7 +1,7 @@
 {
  "name": "calcium disorders pathway",
  "width": 1744,
- "title": "Calcium disorders pathway: correct for albumin and always send a PTH; high calcium splits into PTH-mediated primary hyperparathyroidism (with FHH told apart by urine calcium excretion) and PTH-independent malignancy or vitamin D causes; low calcium splits by PTH and phosphate into hypoparathyroidism, pseudohypoparathyroidism and vitamin D deficiency",
+ "title": "Calcium disorders pathway: correct for albumin and always send a PTH; high calcium splits into PTH-mediated primary hyperparathyroidism (with FHH told apart by urine calcium excretion) and PTH-independent malignancy or vitamin D causes; low calcium splits by PTH and phosphate into hypoparathyroidism, pseudohypoparathyroidism and vitamin D deficiency; below, acute treatment of each side and primary vs secondary vs tertiary hyperparathyroidism",
  "kinds": {
   "php_h": [
    "#b5600f",
@@ -1283,9 +1283,9 @@
    "cols": 2,
    "items": [
     "1. volume: assume a 4–6 L deficit, replace with normal saline",
-    "2. forced diuresis ONLY once well hydrated: 4–10 L saline + furosemide + potassium",
+    "2. forced diuresis ONLY once well hydrated: 4–10 L saline + furosemide + potassium · LOOP diuretics only, NEVER thiazides (they raise calcium)",
     "3. intravenous zoledronate (bisphosphonate)",
-    "4. calcitonin",
+    "4. calcitonin: tachyphylaxis at 24–48 h, a BRIDGE not a treatment",
     "5. prednisone 40–60 mg/day then taper: myeloma, vitamin D intoxication"
    ]
   },
@@ -1301,6 +1301,24 @@
     "then 1–3 mg/kg/h elemental calcium · cardiac monitor, inpatient",
     "ALWAYS treat low magnesium",
     "minor causes: low albumin · low magnesium (alcohol, malabsorption) · pancreatitis · tumour lysis, rhabdomyolysis, sepsis · massive transfusion"
+   ]
+  },
+  {
+   "x": 45,
+   "y": 2096,
+   "w": 1684,
+   "cols": 3,
+   "title": "Hyperparathyroidism: PRIMARY vs SECONDARY vs TERTIARY (phosphate separates primary from tertiary)",
+   "items": [
+    "PRIMARY: autonomous secretion · 80% adenoma; hyperplasia, carcinoma, familial",
+    "PTH ↑ or inappropriately normal · Ca ↑ · phosphate ↓ (PTH makes the kidney waste it) · vitamin D ↑",
+    "FE_Ca separates it from FHH · symptomatic → parathyroidectomy (curative)",
+    "SECONDARY: chronic kidney disease, the kidney cannot make vitamin D · APPROPRIATE compensation",
+    "PTH ↑ · Ca NORMAL · phosphate ↑ or ↓ · vitamin D ↓ · check eGFR, creatinine",
+    "treat the CKD · phosphate binders, activated vitamin D · resolves if the kidney is fixed",
+    "TERTIARY: secondary gone AUTONOMOUS, almost always long-standing CKD",
+    "PTH ↑↑ · Ca ↑ · phosphate ↑ (failing kidney cannot excrete it) · vitamin D ↓",
+    "keeps secreting despite high calcium · parathyroid imaging, then parathyroidectomy"
    ]
   }
  ]

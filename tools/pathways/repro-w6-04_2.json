@@ -99,7 +99,7 @@
    "x": 40,
    "y": 270,
    "w": 246,
-   "h": 782,
+   "h": 818,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -107,7 +107,7 @@
    "x": 288,
    "y": 270,
    "w": 246,
-   "h": 782,
+   "h": 818,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -115,7 +115,7 @@
    "x": 536,
    "y": 270,
    "w": 246,
-   "h": 782,
+   "h": 818,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -123,7 +123,7 @@
    "x": 812,
    "y": 270,
    "w": 246,
-   "h": 782,
+   "h": 818,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -131,7 +131,7 @@
    "x": 1060,
    "y": 270,
    "w": 246,
-   "h": 782,
+   "h": 818,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   }
@@ -139,19 +139,19 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 398,
-   "h": 234,
+   "y": 416,
+   "h": 252,
    "text": "WATCH"
   },
   {
    "x": 23,
-   "y": 672,
+   "y": 708,
    "h": 116,
    "text": "DO"
   },
   {
    "x": 23,
-   "y": 828,
+   "y": 864,
    "h": 216,
    "text": "IF NOT NORMAL"
   }
@@ -198,11 +198,12 @@
    "x": 45,
    "y": 278,
    "w": 236,
-   "h": 80,
+   "h": 98,
    "kind": "s1_h",
    "title": "1st stage: onset → full dilatation",
    "lines": [
-    "latent 0–4 cm, active 4–10 cm"
+    "latent 0–4 cm, active 4–10 cm",
+    "first baby 6–18 h · after 2–10 h"
    ]
   },
   {
@@ -210,7 +211,7 @@
    "x": 293,
    "y": 278,
    "w": 236,
-   "h": 80,
+   "h": 98,
    "kind": "fhr_h",
    "title": "Continuous FHR monitoring",
    "lines": [
@@ -222,7 +223,7 @@
    "x": 541,
    "y": 278,
    "w": 236,
-   "h": 80,
+   "h": 98,
    "kind": "s2_h",
    "title": "2nd stage: full dilatation → birth",
    "lines": [
@@ -234,7 +235,7 @@
    "x": 817,
    "y": 278,
    "w": 236,
-   "h": 80,
+   "h": 98,
    "kind": "s3_h",
    "title": "3rd stage: birth → placenta",
    "lines": [
@@ -246,7 +247,7 @@
    "x": 1065,
    "y": 278,
    "w": 236,
-   "h": 80,
+   "h": 98,
    "kind": "s4_h",
    "title": "4th stage: the first hour",
    "lines": [
@@ -256,20 +257,21 @@
   {
    "id": "s1_watch_0_0",
    "x": 45,
-   "y": 398,
+   "y": 416,
    "w": 236,
-   "h": 96,
+   "h": 114,
    "kind": "s1_w",
    "title": "Cervix every 2–3 h",
    "lines": [
     "dilation, effacement, station",
-    "~sooner for symptoms or a heart rate change"
+    "~sooner for symptoms or a heart rate change",
+    "~more exams = ↑ chorioamnionitis"
    ]
   },
   {
    "id": "s1_watch_1_0",
    "x": 45,
-   "y": 516,
+   "y": 552,
    "w": 236,
    "h": 116,
    "kind": "s1_w",
@@ -282,9 +284,9 @@
   {
    "id": "fhr_watch_0_0",
    "x": 293,
-   "y": 398,
+   "y": 416,
    "w": 236,
-   "h": 115,
+   "h": 124,
    "kind": "fhr_w",
    "title": "Who needs it",
    "lines": [
@@ -296,9 +298,9 @@
   {
    "id": "fhr_watch_1_0",
    "x": 293,
-   "y": 535,
+   "y": 562,
    "w": 236,
-   "h": 97,
+   "h": 106,
    "kind": "fhr_t",
    "title": "Decelerations",
    "lines": [
@@ -310,19 +312,20 @@
   {
    "id": "s2_watch_0_0",
    "x": 541,
-   "y": 398,
+   "y": 416,
    "w": 236,
-   "h": 106,
+   "h": 124,
    "kind": "s2_w",
    "title": "Station (descent)",
    "lines": [
-    "0 = ischial spines, then +1 to +5 cm"
+    "0 = ischial spines, then +1 to +5 cm",
+    "do NOT push before 0"
    ]
   },
   {
    "id": "s2_watch_1_0",
    "x": 541,
-   "y": 526,
+   "y": 562,
    "w": 236,
    "h": 106,
    "kind": "s2_w",
@@ -334,9 +337,9 @@
   {
    "id": "s3_watch_0_0",
    "x": 817,
-   "y": 398,
+   "y": 416,
    "w": 236,
-   "h": 234,
+   "h": 252,
    "kind": "s3_w",
    "title": "Signs of separation",
    "lines": [
@@ -348,9 +351,9 @@
   {
    "id": "s4_watch_0_0",
    "x": 1065,
-   "y": 398,
+   "y": 416,
    "w": 236,
-   "h": 234,
+   "h": 252,
    "kind": "s4_w",
    "title": "Maternal vitals",
    "lines": [
@@ -360,7 +363,7 @@
   {
    "id": "s1_do_0_0",
    "x": 45,
-   "y": 672,
+   "y": 708,
    "w": 236,
    "h": 116,
    "kind": "ok",
@@ -373,7 +376,7 @@
   {
    "id": "fhr_do_0_0",
    "x": 293,
-   "y": 672,
+   "y": 708,
    "w": 236,
    "h": 116,
    "kind": "fhr_w",
@@ -387,7 +390,7 @@
   {
    "id": "s2_do_0_0",
    "x": 541,
-   "y": 672,
+   "y": 708,
    "w": 236,
    "h": 116,
    "kind": "ok",
@@ -399,7 +402,7 @@
   {
    "id": "s3_do_0_0",
    "x": 817,
-   "y": 672,
+   "y": 708,
    "w": 236,
    "h": 116,
    "kind": "ok",
@@ -413,7 +416,7 @@
   {
    "id": "s4_do_0_0",
    "x": 1065,
-   "y": 672,
+   "y": 708,
    "w": 236,
    "h": 116,
    "kind": "ok",
@@ -425,7 +428,7 @@
   {
    "id": "s1_ifnot_0_0",
    "x": 45,
-   "y": 828,
+   "y": 864,
    "w": 236,
    "h": 216,
    "kind": "warn",
@@ -439,7 +442,7 @@
   {
    "id": "fhr_ifnot_0_0",
    "x": 293,
-   "y": 828,
+   "y": 864,
    "w": 236,
    "h": 114,
    "kind": "warn",
@@ -453,7 +456,7 @@
   {
    "id": "fhr_ifnot_1_0",
    "x": 293,
-   "y": 964,
+   "y": 1000,
    "w": 236,
    "h": 80,
    "kind": "bad",
@@ -465,7 +468,7 @@
   {
    "id": "s2_ifnot_0_0",
    "x": 541,
-   "y": 828,
+   "y": 864,
    "w": 236,
    "h": 216,
    "kind": "warn",
@@ -478,7 +481,7 @@
   {
    "id": "s3_ifnot_0_0",
    "x": 817,
-   "y": 828,
+   "y": 864,
    "w": 236,
    "h": 216,
    "kind": "warn",
@@ -492,7 +495,7 @@
   {
    "id": "s4_ifnot_0_0",
    "x": 1065,
-   "y": 828,
+   "y": 864,
    "w": 236,
    "h": 216,
    "kind": "bad",
@@ -640,5 +643,45 @@
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1114,
+   "w": 409,
+   "title": "Lie · presentation · position (vaginal exam)",
+   "items": [
+    "lie (long axis vs mother's): LONGITUDINAL 99% · transverse or oblique 1%",
+    "presentation (part foremost in the canal): vertex 95% · breech 4%",
+    "breech: FRANK 70% (thighs flexed, knees extended) → vaginal OK · complete (thighs + knees flexed) · FOOTLING (feet below buttocks) → NOT vaginal, unless the second twin",
+    "position: occiput, sacrum or chin vs left or right, anterior or posterior · LEFT OCCIPUT ANTERIOR most common",
+    "occiput ANTERIOR: biparietal diameter (9.5 cm, narrowest) first, easier · occiput POSTERIOR: widest part first, very long pushing"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 468,
+   "y": 1114,
+   "w": 409,
+   "title": "Leopold maneuvers (+ vaginal exam, ultrasound)",
+   "items": [
+    "1 · fundus: consistency, shape, mobility (head or bottom up there?)",
+    "2 · both sides: which side is the fetal BACK on?",
+    "3 · part at the pelvic inlet + its mobility: engaged or not?",
+    "4 · attitude: feel the brow, head flexed or extended?"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 892,
+   "y": 1114,
+   "w": 409,
+   "title": "2nd stage: the cardinal movements",
+   "items": [
+    "engagement → descent → flexion → internal rotation → extension → external rotation (restitution) → expulsion",
+    "expulsion: ANTERIOR shoulder under the pubis first, then posterior",
+    "pelvis: gynecoid + android do best · platypelloid + anthropoid (narrow or flat) inhibit the movements"
+   ],
+   "cols": 1
+  }
+ ]
 }

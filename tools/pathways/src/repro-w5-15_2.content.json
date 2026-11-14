@@ -1,6 +1,6 @@
 {
  "name": "antenatal care overview",
- "title": "Antenatal care from first suspicion to term: what to assess, test and act on at each stage (confirm and date, first visit, second trimester, third trimester), then how the first-visit group and screen splits into Rh negative without an antibody (Rh immunoglobulin) and an antibody found (titre, middle cerebral artery Doppler, timing of delivery); panels on checking a medication or exposure and on who cares for her",
+ "title": "Antenatal care from first suspicion to term: what to assess, test and act on at each stage (confirm and date, first visit, second trimester, third trimester), then how the first-visit group and screen splits into Rh negative without an antibody (Rh immunoglobulin) and an antibody found (titre, middle cerebral artery Doppler, timing of delivery); panels on teratogens (timing, physical, infectious, maternal), drug risk categories and counselling, and who cares for her",
  "col_w": 245,
  "root": {
   "title": "Antenatal care: what do I assess, test and act on at THIS visit?",
@@ -78,9 +78,11 @@
       "t",
       "1 · Human chorionic gonadotropin (hCG), urine or serum",
       [
-       "• serum > 25 = pregnant",
+       "• serum < 5 negative · 5–25 very early or error · > 25 = pregnant",
+       "• 1500: sac visible TRANSVAGINAL · 5000: TRANSABDOMINAL",
        "• most useful: irregular cycles, recurrent miscarriage, previous ectopic",
-       "2 · where is it? → FIRST-TRIMESTER BLEEDING chart"
+       "2 · ultrasound: YOLK SAC needed, a gestational sac alone does not confirm",
+       "3 · where is it? → FIRST-TRIMESTER BLEEDING chart"
       ]
      ]
     ]
@@ -92,6 +94,9 @@
       "Set the due date EARLY",
       [
        "• Naegele: last normal menstrual period + 7 days − 3 months + 1 year",
+       "• in vitro fertilization: embryo TRANSFER DATE overrides every ultrasound",
+       "• else first-trimester crown-rump length; any scan < 23 wk beats the period",
+       "• once set, FIXED: a later different scan = growth, not a new date",
        "• dating scan → ULTRASOUND THROUGH PREGNANCY chart"
       ]
      ]
@@ -131,8 +136,18 @@
       "w",
       "Also ask",
       [
-       "• every medication + exposure → MEDICATION panel",
+       "• every medication + exposure → TERATOGEN + DRUG RISK panels",
        "• cramps ± spotting → FIRST-TRIMESTER BLEEDING chart"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Uterus by 12 weeks",
+      [
+       "• fist → small grapefruit",
+       "• fundus at pelvic brim / symphysis"
       ]
      ]
     ]
@@ -161,7 +176,8 @@
       "2 · Only if selected",
       [
        "• thyroid-stimulating hormone: known thyroid disease",
-       "• hemoglobinopathy: Mediterranean, Southeast Asian, African, or low mean cell volume"
+       "• hemoglobinopathy: Mediterranean, Southeast Asian, African, or low mean cell volume",
+       "• hepatitis C, herpes simplex: high risk only, NOT routine"
       ]
      ]
     ]
@@ -456,18 +472,31 @@
  ],
  "panels": [
   {
-   "title": "Medication or exposure at any visit: what to check",
+   "title": "Teratogen exposure: when and what",
    "items": [
-    "WHEN: weeks 1–2 insensitive · weeks 3–8 (organogenesis) → MAJOR anomalies · later → function + minor anomalies",
-    "WHAT: radiation, hyperthermia · TORCH infections · maternal diabetes · drugs, herbals, recreational drugs, toxins",
-    "US Food and Drug Administration (FDA) category: A human studies safe · D human risk, benefit may win · X risk outweighs any benefit",
+    "WHEN: weeks 1–2 usually NOT susceptible · weeks 3–8 (organogenesis) → MAJOR anomalies · fetal period → function + minor anomalies; central nervous system, eyes, genitalia sensitive to term",
+    "PHYSICAL: radiation, fetal dose NOT over 50 rads · hyperthermia, core ≥ 39°C (exercise does NOT reach it: keep exercising) → spontaneous abortion, neural tube, heart, abdominal wall defects",
+    "TORCH: cytomegalovirus = #1 infectious cause of birth defects, 40% on a first infection · herpes simplex in the last 3 months: 30–50% → CESAREAN · rubella: check titres · toxoplasmosis: NOT routinely screened",
+    "Maternal DIABETES: neural tube, central nervous system, spine, heart, limb defects → glycemic control + folic acid BEFORE conception"
+   ]
+  },
+  {
+   "title": "Drug risk: US Food and Drug Administration (FDA) category",
+   "items": [
+    "A: controlled HUMAN studies, no risk · doxylamine-pyridoxine, folic acid, levothyroxine",
+    "B: no human studies, ANIMALS show no risk · amoxicillin, loratadine, ondansetron",
+    "C: NO studies in animals or humans = no data, NOT 'safe' · fluconazole, metoprolol, sertraline",
+    "D: HUMAN risk, benefit may outweigh it · paroxetine, diazepam, lisinopril, phenytoin, lithium",
+    "X: risk outweighs ANY benefit · methotrexate, simvastatin, warfarin",
+    "nausea: Diclectin (doxylamine-pyridoxine) is the ONLY approved antiemetic",
     "Planning pregnancy: optimize the disease · fewest drugs, lowest dose · switch if possible · folic acid 1 mg on antiepileptics · ask FRAME (Fetal Risk After Maternal Exposure)"
    ]
   },
   {
    "title": "Who looks after her",
    "items": [
-    "LOW risk: family physician (cares for the baby too, for years) or midwife (home, birth centre or hospital; mother + baby to 6 weeks)",
+    "LOW risk: family physician (cares for the baby too, for years) or midwife (home, birth centre or hospital; mother + baby to 6 weeks; informed CHOICE, not informed consent)",
+    "obstetrician: consultant for the complicated case · every form of delivery incl. cesarean · NO infant care, no lactation training",
     "CONSULT obstetrics: diabetes, essential hypertension, prior preeclampsia, high body mass index, lupus · abnormal fetal surveillance · planned cesarean",
     "fetal anomaly → maternal fetal medicine (MFM)",
     "labour: dystocia, operative or cesarean birth, preeclampsia · post-partum: major hemorrhage, 3rd/4th-degree tear"

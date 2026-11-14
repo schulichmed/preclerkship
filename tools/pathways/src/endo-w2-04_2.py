@@ -248,7 +248,8 @@ spec = {
  "title": ("Calcium disorders pathway: correct for albumin and always send a PTH; high calcium splits into "
            "PTH-mediated primary hyperparathyroidism (with FHH told apart by urine calcium excretion) and "
            "PTH-independent malignancy or vitamin D causes; low calcium splits by PTH and phosphate into "
-           "hypoparathyroidism, pseudohypoparathyroidism and vitamin D deficiency"),
+           "hypoparathyroidism, pseudohypoparathyroidism and vitamin D deficiency; below, acute treatment of each "
+           "side and primary vs secondary vs tertiary hyperparathyroidism"),
  "kinds": KINDS,
  "bands": bands,
  "row_labels": row_labels,
@@ -257,9 +258,9 @@ spec = {
  "panels": [
   {"x": XS[0], "y": py, "w": hi_w, "title": "ACUTE hypercalcaemia: admit if corrected Ca > 3 mmol/L", "cols": 2, "items": [
       "1. volume: assume a 4–6 L deficit, replace with normal saline",
-      "2. forced diuresis ONLY once well hydrated: 4–10 L saline + furosemide + potassium",
+      "2. forced diuresis ONLY once well hydrated: 4–10 L saline + furosemide + potassium · LOOP diuretics only, NEVER thiazides (they raise calcium)",
       "3. intravenous zoledronate (bisphosphonate)",
-      "4. calcitonin",
+      "4. calcitonin: tachyphylaxis at 24–48 h, a BRIDGE not a treatment",
       "5. prednisone 40–60 mg/day then taper: myeloma, vitamin D intoxication"]},
   {"x": XS[3], "y": py, "w": lo_w, "title": "ACUTE hypocalcaemia: only if corrected Ca < 1.9 AND symptoms", "cols": 2, "items": [
       "neurological (tetany, seizures, carpopedal spasm) or cardiac (prolonged QT)",
@@ -268,5 +269,36 @@ spec = {
       "ALWAYS treat low magnesium",
       "minor causes: low albumin · low magnesium (alcohol, malabsorption) · pancreatitis · tumour lysis, rhabdomyolysis, sepsis · massive transfusion"]}],
 }
+
+
+def panel_h(p: dict) -> int:
+    """The height pathway_svg.Chart.panel will give this panel (same measuring)."""
+    cols = p.get("cols", 1)
+    per = -(-len(p["items"]) // cols)
+    groups = [p["items"][c * per:(c + 1) * per] for c in range(cols)]
+    bullet = ps.measure("• ", "reg", ps.BODY_SIZE)
+    natural = [max(ps.measure(it, "reg", ps.BODY_SIZE) for it in g) / ps.WRAP + bullet + 26 for g in groups]
+    if sum(natural) <= p["w"] - 32:
+        widths = natural[:-1] + [p["w"] - 32 - sum(natural[:-1])]
+    else:
+        widths = [(p["w"] - 32) / cols] * cols
+    n = max(sum(len(ps.wrap(it, "reg", ps.BODY_SIZE, cw - 24 - bullet)) for it in g) for g, cw in zip(groups, widths))
+    return round(50 + n * 20 + 6)
+
+
+# Primary vs secondary vs tertiary, full width under the two acute panels
+spec["panels"].append({
+    "x": XS[0], "y": py + max(panel_h(p) for p in spec["panels"]) + 20, "w": XS[5] + COL_W - XS[0], "cols": 3,
+    "title": "Hyperparathyroidism: PRIMARY vs SECONDARY vs TERTIARY (phosphate separates primary from tertiary)",
+    "items": [
+        "PRIMARY: autonomous secretion · 80% adenoma; hyperplasia, carcinoma, familial",
+        "PTH ↑ or inappropriately normal · Ca ↑ · phosphate ↓ (PTH makes the kidney waste it) · vitamin D ↑",
+        "FE_Ca separates it from FHH · symptomatic → parathyroidectomy (curative)",
+        "SECONDARY: chronic kidney disease, the kidney cannot make vitamin D · APPROPRIATE compensation",
+        "PTH ↑ · Ca NORMAL · phosphate ↑ or ↓ · vitamin D ↓ · check eGFR, creatinine",
+        "treat the CKD · phosphate binders, activated vitamin D · resolves if the kidney is fixed",
+        "TERTIARY: secondary gone AUTONOMOUS, almost always long-standing CKD",
+        "PTH ↑↑ · Ca ↑ · phosphate ↑ (failing kidney cannot excrete it) · vitamin D ↓",
+        "keeps secreting despite high calcium · parathyroid imaging, then parathyroidectomy"]})
 Path(sys.argv[1]).write_text(json.dumps(spec, indent=1, ensure_ascii=False), encoding="utf-8")
 print("wrote", sys.argv[1], len(nodes), "nodes, width", W)
