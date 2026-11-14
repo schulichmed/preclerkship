@@ -1,7 +1,7 @@
 {
  "name": "neuro-ophthalmology overview",
  "width": 1168,
- "title": "Visual symptoms not from the eyeball: double vision sorts by which nerve palsy (third, fourth or sixth), a gaze-evoked nystagmus points to the cerebellum or brainstem, unequal pupils sort by whether the difference is worse in light (parasympathetic) or dark (sympathetic, Horner), and a relative afferent pupillary defect points to one optic nerve",
+ "title": "Visual symptoms not from the eyeball: double vision sorts by which nerve palsy (third, fourth or sixth), a gaze-evoked nystagmus points to the cerebellum or brainstem, unequal pupils sort by whether the difference is worse in light (parasympathetic) or dark (sympathetic, Horner), and a relative afferent pupillary defect points to one optic nerve; nystagmus is pendular or (mostly) jerk, and the panel below localizes each visual field defect along the visual pathway",
  "kinds": {
   "cn3_h": [
    "#8a5a2b",
@@ -133,7 +133,7 @@
  "bands": [
   {
    "x": 40,
-   "y": 390,
+   "y": 426,
    "w": 150,
    "h": 570,
    "fill": "#faf4ee",
@@ -141,7 +141,7 @@
   },
   {
    "x": 192,
-   "y": 390,
+   "y": 426,
    "w": 150,
    "h": 570,
    "fill": "#f4f7ee",
@@ -149,7 +149,7 @@
   },
   {
    "x": 344,
-   "y": 390,
+   "y": 426,
    "w": 150,
    "h": 570,
    "fill": "#eef7fa",
@@ -157,7 +157,7 @@
   },
   {
    "x": 524,
-   "y": 390,
+   "y": 426,
    "w": 150,
    "h": 570,
    "fill": "#f5f1fb",
@@ -165,7 +165,7 @@
   },
   {
    "x": 704,
-   "y": 390,
+   "y": 426,
    "w": 150,
    "h": 570,
    "fill": "#eff5fc",
@@ -173,7 +173,7 @@
   },
   {
    "x": 856,
-   "y": 390,
+   "y": 426,
    "w": 150,
    "h": 570,
    "fill": "#fdf4ea",
@@ -181,7 +181,7 @@
   },
   {
    "x": 1008,
-   "y": 390,
+   "y": 426,
    "w": 150,
    "h": 570,
    "fill": "#fcf0f6",
@@ -191,13 +191,13 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 554,
+   "y": 590,
    "h": 170,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 764,
+   "y": 800,
    "h": 188,
    "text": "CAUSE · MEANING"
   }
@@ -211,15 +211,16 @@
    "kind": "dark",
    "title": "A visual symptom NOT from the eyeball: which kind?",
    "lines": [
-    "each one localizes to a nerve or a pathway"
+    "each one localizes to a nerve or a pathway",
+    "a missing part of the visual field: see the panel below"
    ]
   },
   {
    "id": "g_dip",
    "x": 45,
-   "y": 120,
+   "y": 138,
    "w": 444,
-   "h": 78,
+   "h": 96,
    "kind": "plain",
    "title": "DOUBLE VISION (diplopia)",
    "lines": [
@@ -230,21 +231,21 @@
   {
    "id": "g_nys",
    "x": 529,
-   "y": 120,
+   "y": 138,
    "w": 140,
-   "h": 78,
+   "h": 96,
    "kind": "plain",
    "title": "EYES DRIFT",
    "lines": [
-    "nystagmus"
+    "nystagmus · pendular (wobble) or JERK (most)"
    ]
   },
   {
    "id": "g_pup",
    "x": 709,
-   "y": 120,
+   "y": 138,
    "w": 444,
-   "h": 78,
+   "h": 96,
    "kind": "plain",
    "title": "THE PUPILS",
    "lines": [
@@ -255,7 +256,7 @@
   {
    "id": "t_aniso",
    "x": 709,
-   "y": 238,
+   "y": 274,
    "w": 292,
    "h": 80,
    "kind": "plain",
@@ -267,7 +268,7 @@
   {
    "id": "cn3_head_0_0",
    "x": 45,
-   "y": 398,
+   "y": 434,
    "w": 140,
    "h": 116,
    "kind": "cn3_h",
@@ -279,7 +280,7 @@
   {
    "id": "cn4_head_0_0",
    "x": 197,
-   "y": 398,
+   "y": 434,
    "w": 140,
    "h": 116,
    "kind": "cn4_h",
@@ -291,7 +292,7 @@
   {
    "id": "cn6_head_0_0",
    "x": 349,
-   "y": 398,
+   "y": 434,
    "w": 140,
    "h": 116,
    "kind": "cn6_h",
@@ -303,7 +304,7 @@
   {
    "id": "nys_head_0_0",
    "x": 529,
-   "y": 398,
+   "y": 434,
    "w": 140,
    "h": 116,
    "kind": "nys_h",
@@ -315,7 +316,7 @@
   {
    "id": "para_head_0_0",
    "x": 709,
-   "y": 398,
+   "y": 434,
    "w": 140,
    "h": 116,
    "kind": "para_h",
@@ -327,7 +328,7 @@
   {
    "id": "symp_head_0_0",
    "x": 861,
-   "y": 398,
+   "y": 434,
    "w": 140,
    "h": 116,
    "kind": "symp_h",
@@ -340,7 +341,7 @@
   {
    "id": "rapd_head_0_0",
    "x": 1013,
-   "y": 398,
+   "y": 434,
    "w": 140,
    "h": 116,
    "kind": "rapd_h",
@@ -352,7 +353,7 @@
   {
    "id": "cn3_pres_0_0",
    "x": 45,
-   "y": 554,
+   "y": 590,
    "w": 140,
    "h": 170,
    "kind": "cn3_t",
@@ -365,7 +366,7 @@
   {
    "id": "cn4_pres_0_0",
    "x": 197,
-   "y": 554,
+   "y": 590,
    "w": 140,
    "h": 170,
    "kind": "cn4_t",
@@ -377,7 +378,7 @@
   {
    "id": "cn6_pres_0_0",
    "x": 349,
-   "y": 554,
+   "y": 590,
    "w": 140,
    "h": 170,
    "kind": "cn6_t",
@@ -390,7 +391,7 @@
   {
    "id": "nys_pres_0_0",
    "x": 529,
-   "y": 554,
+   "y": 590,
    "w": 140,
    "h": 170,
    "kind": "nys_t",
@@ -404,7 +405,7 @@
   {
    "id": "para_pres_0_0",
    "x": 709,
-   "y": 554,
+   "y": 590,
    "w": 140,
    "h": 170,
    "kind": "para_t",
@@ -416,7 +417,7 @@
   {
    "id": "symp_pres_0_0",
    "x": 861,
-   "y": 554,
+   "y": 590,
    "w": 140,
    "h": 170,
    "kind": "symp_t",
@@ -429,7 +430,7 @@
   {
    "id": "rapd_pres_0_0",
    "x": 1013,
-   "y": 554,
+   "y": 590,
    "w": 140,
    "h": 170,
    "kind": "rapd_t",
@@ -442,7 +443,7 @@
   {
    "id": "cn3_cause_0_0",
    "x": 45,
-   "y": 764,
+   "y": 800,
    "w": 140,
    "h": 188,
    "kind": "bad",
@@ -455,7 +456,7 @@
   {
    "id": "cn4_cause_0_0",
    "x": 197,
-   "y": 764,
+   "y": 800,
    "w": 140,
    "h": 188,
    "kind": "cn4_w",
@@ -465,7 +466,7 @@
   {
    "id": "cn6_cause_0_0",
    "x": 349,
-   "y": 764,
+   "y": 800,
    "w": 140,
    "h": 188,
    "kind": "bad",
@@ -477,7 +478,7 @@
   {
    "id": "nys_cause_0_0",
    "x": 529,
-   "y": 764,
+   "y": 800,
    "w": 140,
    "h": 188,
    "kind": "nys_w",
@@ -492,7 +493,7 @@
   {
    "id": "para_cause_0_0",
    "x": 709,
-   "y": 764,
+   "y": 800,
    "w": 140,
    "h": 188,
    "kind": "bad",
@@ -504,7 +505,7 @@
   {
    "id": "symp_cause_0_0",
    "x": 861,
-   "y": 764,
+   "y": 800,
    "w": 140,
    "h": 188,
    "kind": "bad",
@@ -514,13 +515,14 @@
   {
    "id": "rapd_cause_0_0",
    "x": 1013,
-   "y": 764,
+   "y": 800,
    "w": 140,
    "h": 188,
    "kind": "rapd_w",
    "title": "That optic nerve",
    "lines": [
-    "the afferent arm of the light reflex"
+    "the afferent arm of the light reflex",
+    "• often optic neuritis (multiple sclerosis)"
    ]
   }
  ],
@@ -528,17 +530,17 @@
   {
    "from": "root",
    "to": "g_dip",
-   "path": "M599.0 70V95H267.0V120"
+   "path": "M599.0 88V113H267.0V138"
   },
   {
    "from": "root",
    "to": "g_nys",
-   "path": "M599.0 70V95H599.0V120"
+   "path": "M599.0 88V113H599.0V138"
   },
   {
    "from": "root",
    "to": "g_pup",
-   "path": "M599.0 70V95H931.0V120"
+   "path": "M599.0 88V113H931.0V138"
   },
   {
    "from": "g_pup",
@@ -612,7 +614,7 @@
    "label": "LIGHT",
    "label_at": [
     779.0,
-    358
+    394
    ]
   },
   {
@@ -630,7 +632,7 @@
    "label": "DARK",
    "label_at": [
     931.0,
-    358
+    394
    ]
   },
   {
@@ -647,5 +649,26 @@
    "from_dx": 152
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1022,
+   "w": 1108,
+   "title": "Visual field defects: where is the lesion? (left-side lesion shown)",
+   "items": [
+    "NASAL fibres cross at the chiasm, temporal do not · each side of the brain sees the opposite field",
+    "optic nerve: vision ↓ in THAT eye only",
+    "back of the optic nerve: that eye blind + junctional scotoma (upper temporal) in the other eye",
+    "chiasm: BITEMPORAL hemianopia (pituitary macroadenoma from below)",
+    "optic tract: right HOMONYMOUS hemianopia",
+    "lateral geniculate nucleus: right homonymous sectoranopias (wedges)",
+    "temporal lobe (lower radiation): right homonymous SUPERIOR defect",
+    "parietal lobe (upper radiation): right homonymous INFERIOR defect",
+    "occipital upper bank: inferior quadrantanopia · lower bank: superior quadrantanopia",
+    "occipital lobe: right homonymous hemianopia with MACULAR SPARING",
+    "tip of the occipital lobe: right homonymous central scotomas"
+   ],
+   "cols": 3
+  }
+ ]
 }

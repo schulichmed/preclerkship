@@ -1,6 +1,6 @@
 {
  "name": "chronic pain overview",
- "title": "Chronic pain: pain over 3 months is mostly a processing problem, so everyone gets education and supervised exercise first; then the drug is matched to what the pain looks like (tissue source, neuropathic, poor sleep, low mood), adjuvants come before opioids, and a patient who is not responding is referred and gets an opioid trial only under the START principle",
+ "title": "Chronic pain: pain over 3 months is mostly a processing problem, so everyone gets education and supervised exercise first; then the drug is matched to what the pain looks like (tissue source, neuropathic, poor sleep, low mood), adjuvants come before opioids, and a patient who is not responding is referred and gets an opioid trial only under the START principle; below, acute vs subacute vs chronic pain, what each team member does, and which opioid to step to and how to switch",
  "col_w": 232,
  "root": {"title": "Pain over 3 months: which treatment matches THIS patient?",
   "lines": ["mostly a PROCESSING problem (sensitized nervous system) · goal = manage pain and function, NOT cure", "acute phase first: fully investigate and treat the injury, then early return to low-impact activity"]},
@@ -43,10 +43,27 @@
    "head": [[["h", "Refer to a pain clinic", ["multidisciplinary chronic pain clinic"]]]],
    "feat": [[["t", "ANY of these", ["• not responding to standard analgesics", "• activity, mood, isolation getting WORSE", "• leaning on medication"]]]],
    "tx": [[["bad", "Opioid ONLY after adjuvants: START", ["S · Should I start?", "• high risk (Opioid Risk Tool): male, age 16-45, personal or family substance use, psychiatric history", "• urine drug screen · taper benzodiazepines · signed agreement"]]],
-          [["ok", "T · Trial", ["• start low, go slow", "• aim 30% less pain or better function"]]]],
-   "watch": [[["warn", "A · Monitor", ["• analgesia, activity, side effects", "• aberrant behaviour"]]],
-             [["bad", "R · Restrict", ["history of addiction: strong recommendation AGAINST (under 20 mg morphine equivalent if used)"]]],
+          [["ok", "T · Trial", ["• start low, go slow · no driving until the dose is stable", "• aim 30% less pain or better function", "• which opioid: see the panel below"]]]],
+   "watch": [[["warn", "A · Monitor", ["• analgesia, activity, side effects", "• opioid-induced hyperalgesia", "• aberrant behaviour"]]],
+             [["bad", "R · Restrict", ["• history of addiction: strong recommendation AGAINST (under 20 mg morphine equivalent if used)", "• active psychiatric disorder: weak against, stabilize first", "• elderly: lower, slower, longer interval, stop benzodiazepines", "• adolescents: only after adjuvants fail", "• pregnancy: taper to the lowest dose or off"]]],
              [["bad", "T · Terminate", ["addiction, misuse, poor effect", "• taper 10%; slow by half once a third is left"]]],
              [["warn", "Watchful dose", ["90 mg morphine equivalent/day"]]]]}
+ ],
+ "panels": [
+  {"title": "Acute vs subacute vs chronic", "items": [
+   "acute: SECONDS, at the same time as the cause · proportional to it · nociceptive",
+   "subacute: HOURS TO DAYS · primary or secondary hyperalgesia, allodynia, spontaneous pain · mostly nociceptive, some neuropathic",
+   "chronic: over 3 months · can outlast tissue healing · a long-term disease, big emotional part · mostly NEUROPATHIC, some nociceptive"]},
+  {"title": "The team: who does what", "items": [
+   "physiotherapist: prescribes + supervises activity · MOBILITY, strengthening, flexibility · spinal mobilization, some acupuncture · modalities only as an add-on",
+   "occupational therapist: activity participation, PACING, modification, ergonomics for daily activities and work · optimize the activity, not avoid it",
+   "kinesiologist: GENERAL EXERCISE prescription and supervision",
+   "psychologist: group + individual therapy for DEPRESSION, ANXIETY · cognitive behavioural therapy, pacing · family education",
+   "physicians: review, trial drugs, interventions · long-term plan for the family physician · nurses: support, documentation, triage"]},
+  {"title": "Opioids: which one, and switching", "items": [
+   "mild to moderate pain: codeine or tramadol → morphine, oxycodone or hydromorphone",
+   "severe pain: morphine, oxycodone or hydromorphone → fentanyl → methadone",
+   "switching from a HIGH dose: 50% or less of the morphine equivalent (+ breakthrough doses) · from a moderate or low dose: 60-70%",
+   "why: an EQUAL dose of a new opioid can be life-threatening after tolerance to a high dose"]}
  ]
 }

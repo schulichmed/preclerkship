@@ -1,7 +1,7 @@
 {
  "name": "spondyloarthritis overview",
  "width": 1040,
- "title": "Spondyloarthritis: inflammatory back pain points to ankylosing spondylitis, psoriasis to psoriatic arthritis, and a gut or genital infection weeks before to reactive arthritis; each column gives presentation, exam and tests, and treatment in order",
+ "title": "Spondyloarthritis: inflammatory back pain points to ankylosing spondylitis, psoriasis to psoriatic arthritis, and a gut or genital infection weeks before to reactive arthritis; each column gives presentation, exam and tests, and treatment in order, with the SpA features, classification criteria and psoriatic vs rheumatoid arthritis below",
  "kinds": {
   "as_h": [
    "#1f6f8b",
@@ -61,25 +61,25 @@
  "bands": [
   {
    "x": 40,
-   "y": 292,
+   "y": 346,
    "w": 310,
-   "h": 1056,
+   "h": 1556,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 380,
-   "y": 292,
+   "y": 346,
    "w": 310,
-   "h": 1056,
+   "h": 1556,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 720,
-   "y": 292,
+   "y": 346,
    "w": 310,
-   "h": 1056,
+   "h": 1556,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -87,20 +87,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 436,
-   "h": 232,
+   "y": 526,
+   "h": 440,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 708,
-   "h": 296,
+   "y": 1006,
+   "h": 316,
    "text": "EXAM · TESTS"
   },
   {
    "x": 23,
-   "y": 1044,
-   "h": 296,
+   "y": 1362,
+   "h": 532,
    "text": "TREATMENT"
   }
  ],
@@ -113,13 +113,15 @@
    "kind": "dark",
    "title": "Inflammatory back pain or lower-limb oligoarthritis, rheumatoid factor NEGATIVE: which spondyloarthritis (SpA)?",
    "lines": [
-    "shared: sacroiliitis · enthesitis · dactylitis · anterior uveitis · HLA-B27 · raised sedimentation rate and C-reactive protein · good response to anti-inflammatories (NSAIDs)"
+    "SpA features: inflammatory back pain · arthritis · enthesitis (heel) · anterior uveitis · dactylitis · psoriasis · Crohn's or colitis · good response to NSAIDs · family history · HLA-B27 · raised CRP",
+    "imaging: sacroiliitis on X-ray or MRI · predisposing: infection (Chlamydia) · psoriasis · Crohn's, ulcerative colitis",
+    "family: ankylosing spondylitis · psoriatic · reactive · arthritis with Crohn's or ulcerative colitis · acute anterior uveitis · undifferentiated · juvenile (enthesitis-related)"
    ]
   },
   {
    "id": "g_as",
    "x": 45,
-   "y": 158,
+   "y": 212,
    "w": 300,
    "h": 62,
    "kind": "plain",
@@ -129,7 +131,7 @@
   {
    "id": "g_ps",
    "x": 385,
-   "y": 158,
+   "y": 212,
    "w": 300,
    "h": 62,
    "kind": "plain",
@@ -139,7 +141,7 @@
   {
    "id": "g_re",
    "x": 725,
-   "y": 158,
+   "y": 212,
    "w": 300,
    "h": 62,
    "kind": "plain",
@@ -149,35 +151,37 @@
   {
    "id": "as_head_0_0",
    "x": 45,
-   "y": 300,
+   "y": 354,
    "w": 300,
-   "h": 96,
+   "h": 132,
    "kind": "as_h",
    "title": "Ankylosing spondylitis",
    "lines": [
     "the prototype · HLA-B27 in > 90% (white patients)",
-    "but 8% of white people carry HLA-B27"
+    "but 8% of white people carry HLA-B27",
+    "HLA-B27+ = 50-100× the risk · prevalence 0.1-1.4%"
    ]
   },
   {
    "id": "psa_head_0_0",
    "x": 385,
-   "y": 300,
+   "y": 354,
    "w": 300,
-   "h": 96,
+   "h": 132,
    "kind": "psa_h",
    "title": "Psoriatic arthritis",
    "lines": [
-    "5-7% of people with psoriasis",
-    "HLA-B27, B38, B39, DR4"
+    "5-7% of people with psoriasis · axial 2%",
+    "HLA-B27, B38, B39, DR4",
+    "first-degree relatives 50× the risk"
    ]
   },
   {
    "id": "rea_head_0_0",
    "x": 725,
-   "y": 300,
+   "y": 354,
    "w": 300,
-   "h": 96,
+   "h": 132,
    "kind": "rea_h",
    "title": "Reactive arthritis",
    "lines": [
@@ -188,37 +192,54 @@
   {
    "id": "as_pres_0_0",
    "x": 45,
-   "y": 436,
+   "y": 526,
    "w": 300,
-   "h": 105,
+   "h": 114,
    "kind": "as_t",
    "title": "Starts at the sacroiliac joints, climbs",
    "lines": [
     "• onset < 40, insidious, > 3 months",
     "• stiffness > 60 min, night pain",
-    "• BETTER with activity"
+    "• BETTER with activity",
+    "• can start as a lower-limb oligoarthritis"
    ]
   },
   {
    "id": "as_pres_1_0",
    "x": 45,
-   "y": 563,
+   "y": 662,
    "w": 300,
-   "h": 105,
+   "h": 96,
    "kind": "as_w",
-   "title": "Beyond the spine",
+   "title": "Enthesitis",
    "lines": [
-    "• anterior uveitis (25-30%)",
-    "• aortitis, aortic regurgitation, conduction block",
-    "• upper-lobe fibrosis · lower-limb oligoarthritis"
+    "• heels: Achilles, plantar fascia",
+    "• iliac crests, trochanters, patellae, pubic symphysis, manubriosternal joint, clavicles"
+   ]
+  },
+  {
+   "id": "as_pres_2_0",
+   "x": 45,
+   "y": 780,
+   "w": 300,
+   "h": 186,
+   "kind": "as_w",
+   "title": "Beyond the spine: A-N-K-S-P-O-N-D",
+   "lines": [
+    "• Aortitis, aortic regurgitation, conduction block, pericarditis",
+    "• Neuro: atlantoaxial subluxation, cauda equina",
+    "• Kidney: amyloid, prostatitis · Nephropathy: IgA",
+    "• Spine: neck fracture, stenosis, osteoporosis",
+    "• Pulmonary: upper-lobe fibrosis · Ocular: anterior uveitis 25-30%",
+    "• Discitis · microscopic colitis 30-60%"
    ]
   },
   {
    "id": "psa_pres_0_0",
    "x": 385,
-   "y": 436,
+   "y": 526,
    "w": 300,
-   "h": 96,
+   "h": 200,
    "kind": "psa_t",
    "title": "Psoriasis comes first in ⅔",
    "lines": [
@@ -229,9 +250,9 @@
   {
    "id": "psa_pres_1_0",
    "x": 385,
-   "y": 554,
+   "y": 748,
    "w": 300,
-   "h": 114,
+   "h": 218,
    "kind": "psa_w",
    "title": "Patterns",
    "lines": [
@@ -243,22 +264,22 @@
   {
    "id": "rea_pres_0_0",
    "x": 725,
-   "y": 436,
+   "y": 526,
    "w": 300,
-   "h": 105,
+   "h": 209,
    "kind": "rea_t",
    "title": "Trigger 1-3 weeks earlier",
    "lines": [
     "• gut: Salmonella, Shigella, Campylobacter",
-    "• genitourinary: Chlamydia, other sexual infections"
+    "• genitourinary: Chlamydia trachomatis, other sexual infections"
    ]
   },
   {
    "id": "rea_pres_1_0",
    "x": 725,
-   "y": 563,
+   "y": 757,
    "w": 300,
-   "h": 105,
+   "h": 209,
    "kind": "rea_w",
    "title": "Can't see, can't pee, can't climb a tree",
    "lines": [
@@ -270,7 +291,7 @@
   {
    "id": "as_inv_0_0",
    "x": 45,
-   "y": 708,
+   "y": 1006,
    "w": 300,
    "h": 78,
    "kind": "as_t",
@@ -283,11 +304,11 @@
   {
    "id": "as_inv_1_0",
    "x": 45,
-   "y": 808,
+   "y": 1106,
    "w": 300,
-   "h": 96,
+   "h": 116,
    "kind": "as_t",
-   "title": "2 · Sacroiliac X-ray",
+   "title": "2 · Sacroiliac X-ray + ESR, CRP, HLA-B27",
    "lines": [
     "bilateral, symmetric: iliac-side erosion → sclerosis → fusion",
     "late: 'bamboo spine'"
@@ -296,34 +317,46 @@
   {
    "id": "as_inv_2_0",
    "x": 45,
-   "y": 926,
+   "y": 1244,
    "w": 300,
    "h": 78,
    "kind": "as_w",
    "title": "X-ray normal → MRI",
    "lines": [
-    "bone marrow edema = non-radiographic axial SpA"
+    "bone marrow edema (dark T1, bright STIR) = non-radiographic axial SpA"
    ]
   },
   {
    "id": "psa_inv_0_0",
    "x": 385,
-   "y": 708,
+   "y": 1006,
    "w": 300,
-   "h": 146,
+   "h": 103,
    "kind": "psa_t",
-   "title": "Nails in 80% · dactylitis",
+   "title": "Nails in 80% (30% in psoriasis alone)",
    "lines": [
-    "• pitting, onycholysis, oil spots",
-    "• conjunctivitis 20% · uveitis 7%"
+    "• pitting, ridging, onycholysis, hyperkeratosis",
+    "• oil spots, splinter hemorrhages, red lunula"
    ]
   },
   {
    "id": "psa_inv_1_0",
    "x": 385,
-   "y": 876,
+   "y": 1131,
    "w": 300,
-   "h": 128,
+   "h": 85,
+   "kind": "psa_t",
+   "title": "Dactylitis · enthesitis",
+   "lines": [
+    "• conjunctivitis 20% · uveitis 7% (more if axial)"
+   ]
+  },
+  {
+   "id": "psa_inv_2_0",
+   "x": 385,
+   "y": 1238,
+   "w": 300,
+   "h": 85,
    "kind": "psa_w",
    "title": "Axial: ASYMMETRIC sacroiliitis",
    "lines": [
@@ -333,9 +366,9 @@
   {
    "id": "rea_inv_0_0",
    "x": 725,
-   "y": 708,
+   "y": 1006,
    "w": 300,
-   "h": 146,
+   "h": 156,
    "kind": "rea_t",
    "title": "Psoriasis-like skin",
    "lines": [
@@ -346,9 +379,9 @@
   {
    "id": "rea_inv_1_0",
    "x": 725,
-   "y": 876,
+   "y": 1184,
    "w": 300,
-   "h": 128,
+   "h": 138,
    "kind": "bad",
    "title": "NOT an infection of the joint",
    "lines": [
@@ -358,57 +391,84 @@
   {
    "id": "as_tx_0_0",
    "x": 45,
-   "y": 1044,
+   "y": 1362,
    "w": 300,
-   "h": 65,
+   "h": 94,
    "kind": "ok",
    "title": "1 · Physiotherapy for ALL",
    "lines": [
-    "posture, chest expansion"
+    "posture, chest expansion, fewer deformities"
    ]
   },
   {
    "id": "as_tx_1_0",
    "x": 45,
-   "y": 1131,
+   "y": 1478,
    "w": 300,
-   "h": 65,
+   "h": 112,
    "kind": "ok",
    "title": "2 · NSAIDs (indomethacin best)",
    "lines": [
-    "mild-moderate · watch the gut"
+    "mild-moderate symptoms",
+    "~ potentially disease modifying · watch the gut"
    ]
   },
   {
    "id": "as_tx_2_0",
-   "x": 45,
-   "y": 1218,
-   "w": 300,
-   "h": 121,
+   "x": 45.0,
+   "y": 1612,
+   "w": 145.0,
+   "h": 148,
    "kind": "ok",
-   "title": "3 · Tumour necrosis factor (TNF) or interleukin-17 (IL-17) inhibitor",
+   "title": "3 · TNF inhibitor",
    "lines": [
-    "conventional disease-modifying drugs do NOT work in the spine",
-    "~ use them for peripheral disease only"
+    "symptoms, range of motion, fatigue",
+    "~ likely disease modifying early"
+   ]
+  },
+  {
+   "id": "as_tx_2_1",
+   "x": 200.0,
+   "y": 1612,
+   "w": 145.0,
+   "h": 148,
+   "kind": "ok",
+   "title": "or IL-17 inhibitor",
+   "lines": [
+    "same benefits",
+    "~ disease modifying: unknown"
+   ]
+  },
+  {
+   "id": "as_tx_3_0",
+   "x": 45,
+   "y": 1782,
+   "w": 300,
+   "h": 114,
+   "kind": "bad",
+   "title": "Conventional DMARDs do NOT work in the spine",
+   "lines": [
+    "peripheral-predominant disease only"
    ]
   },
   {
    "id": "psa_tx_0_0",
    "x": 385,
-   "y": 1044,
+   "y": 1362,
    "w": 300,
-   "h": 78,
+   "h": 96,
    "kind": "ok",
-   "title": "1 · Methotrexate (skin + joints)",
+   "title": "1 · Conventional DMARDs",
    "lines": [
-    "or sulfasalazine, leflunomide",
-    "~ little proof they stop X-ray damage"
+    "• methotrexate: skin + joints",
+    "• sulfasalazine, leflunomide",
+    "~ little proof they stop X-ray progression"
    ]
   },
   {
    "id": "psa_tx_1_0",
    "x": 385,
-   "y": 1144,
+   "y": 1480,
    "w": 300,
    "h": 60,
    "kind": "bad",
@@ -420,23 +480,51 @@
   {
    "id": "psa_tx_2_0",
    "x": 385,
-   "y": 1226,
+   "y": 1562,
+   "w": 300,
+   "h": 78,
+   "kind": "ok",
+   "title": "2 · Apremilast (PDE4 inhibitor)",
+   "lines": [
+    "skin + joints · prevents X-ray progression",
+    "~ weaker than biologics"
+   ]
+  },
+  {
+   "id": "psa_tx_3_0",
+   "x": 385,
+   "y": 1662,
+   "w": 300,
+   "h": 96,
+   "kind": "ok",
+   "title": "3 · TNF inhibitor",
+   "lines": [
+    "• skin, joints, SPINE",
+    "• enthesitis, dactylitis, nails",
+    "• prevents X-ray progression"
+   ]
+  },
+  {
+   "id": "psa_tx_4_0",
+   "x": 385,
+   "y": 1780,
    "w": 300,
    "h": 114,
    "kind": "ok",
-   "title": "2 · Apremilast or a biologic",
+   "title": "or another targeted drug",
    "lines": [
-    "• TNF inhibitor: skin, joints, spine, nails",
-    "• IL-17: skin, spine + joints · IL-12/23: NOT the spine",
-    "~ apremilast: weaker than biologics"
+    "• IL-17: skin +++, spine + joints",
+    "• IL-12/23: skin +++, joints · NOT the spine",
+    "• IL-23: skin +++, joints · spine ?",
+    "• JAK: skin +, peripheral joints · spine ?"
    ]
   },
   {
    "id": "rea_tx_0_0",
    "x": 725,
-   "y": 1044,
+   "y": 1362,
    "w": 300,
-   "h": 137,
+   "h": 255,
    "kind": "ok",
    "title": "Treat by symptoms",
    "lines": [
@@ -446,9 +534,9 @@
   {
    "id": "rea_tx_1_0",
    "x": 725,
-   "y": 1203,
+   "y": 1639,
    "w": 300,
-   "h": 137,
+   "h": 255,
    "kind": "warn",
    "title": "Chronic arthritis or sacroiliitis",
    "lines": [
@@ -460,21 +548,26 @@
   {
    "from": "root",
    "to": "g_as",
-   "path": "M535.0 108V133H195.0V158"
+   "path": "M535.0 162V187H195.0V212"
   },
   {
    "from": "root",
    "to": "g_ps",
-   "path": "M535.0 108V133H535.0V158"
+   "path": "M535.0 162V187H535.0V212"
   },
   {
    "from": "root",
    "to": "g_re",
-   "path": "M535.0 108V133H875.0V158"
+   "path": "M535.0 162V187H875.0V212"
   },
   {
    "from": "as_pres_0_0",
    "to": "as_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "as_pres_1_0",
+   "to": "as_pres_2_0",
    "dashed": true
   },
   {
@@ -500,6 +593,10 @@
    "to": "psa_inv_1_0"
   },
   {
+   "from": "psa_inv_1_0",
+   "to": "psa_inv_2_0"
+  },
+  {
    "from": "rea_inv_0_0",
    "to": "rea_inv_1_0"
   },
@@ -509,7 +606,23 @@
   },
   {
    "from": "as_tx_1_0",
-   "to": "as_tx_2_0"
+   "to": "as_tx_2_0",
+   "from_dx": -77.5
+  },
+  {
+   "from": "as_tx_1_0",
+   "to": "as_tx_2_1",
+   "from_dx": 77.5
+  },
+  {
+   "from": "as_tx_2_0",
+   "to": "as_tx_3_0",
+   "to_dx": -77.5
+  },
+  {
+   "from": "as_tx_2_1",
+   "to": "as_tx_3_0",
+   "to_dx": 77.5
   },
   {
    "from": "psa_tx_0_0",
@@ -520,6 +633,14 @@
    "to": "psa_tx_2_0"
   },
   {
+   "from": "psa_tx_2_0",
+   "to": "psa_tx_3_0"
+  },
+  {
+   "from": "psa_tx_3_0",
+   "to": "psa_tx_4_0"
+  },
+  {
    "from": "rea_tx_0_0",
    "to": "rea_tx_1_0"
   },
@@ -528,7 +649,7 @@
    "to": "as_pres_0_0"
   },
   {
-   "from": "as_pres_1_0",
+   "from": "as_pres_2_0",
    "to": "as_inv_0_0"
   },
   {
@@ -549,7 +670,7 @@
    "to": "psa_inv_0_0"
   },
   {
-   "from": "psa_inv_1_0",
+   "from": "psa_inv_2_0",
    "to": "psa_tx_0_0"
   },
   {
@@ -578,23 +699,37 @@
  "panels": [
   {
    "x": 45,
-   "y": 1374,
-   "w": 483,
-   "title": "Inflammatory vs mechanical back pain",
+   "y": 1928,
+   "w": 317,
+   "title": "Inflammatory vs mechanical",
    "items": [
-    "inflammatory: under 40 · insidious · > 3 months · stiffness > 60 min · night pain · BETTER with activity · sacroiliac tender · chest expansion ↓ · neuro deficit unlikely",
-    "mechanical: any age · acute · < 4 weeks · stiffness < 30 min · WORSE with activity · neuro deficit possible"
+    "inflammatory: under 40 · insidious · > 3 months · stiffness > 60 min · night pain · BETTER with activity · sacroiliac tender · lost mobility in all planes · chest expansion ↓ · neuro deficit unlikely",
+    "mechanical: any age · acute · < 4 weeks · stiffness < 30 min · no night pain · WORSE with activity · abnormal flexion · normal chest expansion · neuro deficit possible"
    ],
    "cols": 1
   },
   {
-   "x": 542,
-   "y": 1374,
-   "w": 483,
-   "title": "Also in the family",
+   "x": 376,
+   "y": 1928,
+   "w": 317,
+   "title": "Classification",
    "items": [
-    "arthritis with Crohn's or ulcerative colitis",
-    "acute anterior uveitis · undifferentiated SpA · juvenile (enthesitis-related)"
+    "Modified New York (ankylosing spondylitis): X-ray sacroiliitis grade ≥ 2 both sides or 3-4 one side + ≥ 1 clinical: back pain > 3 months, better with exercise, not rest · limited lumbar motion (sagittal + frontal) · limited chest expansion",
+    "ASAS axial SpA: back pain ≥ 3 months, onset < 45 → sacroiliitis on imaging (MRI inflammation or definite X-ray) + ≥ 1 SpA feature, OR HLA-B27 + ≥ 2 other SpA features"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 708,
+   "y": 1928,
+   "w": 317,
+   "title": "Psoriatic vs rheumatoid",
+   "items": [
+    "rheumatoid factor: < 10% vs 80%",
+    "ASYMMETRIC 'ray' vs symmetric 'row' · distal finger joints 30-50% vs uncommon",
+    "spine: sacroiliac or any level 35% vs neck, late",
+    "dactylitis, enthesitis, skin + nails vs nodules, dry eyes and mouth, vasculitis",
+    "X-ray: distal erosions + periostitis vs periarticular osteopenia + wrist erosions"
    ],
    "cols": 1
   }

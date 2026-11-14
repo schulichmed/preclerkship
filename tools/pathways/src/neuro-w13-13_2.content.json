@@ -1,6 +1,6 @@
 {
  "name": "neuroimaging modalities overview",
- "title": "Choosing a neuroimaging modality: different objects need different kinds of resolution (spatial, contrast, temporal); radiography, fluoroscopy and CT use X-rays, ultrasound and MRI do not, and each trades its resolution against cost, availability, invasiveness, radiation and scan length",
+ "title": "Choosing a neuroimaging modality: different objects need different kinds of resolution (spatial, contrast, temporal); radiography, fluoroscopy and CT use X-rays, ultrasound and MRI do not, and each trades its resolution against cost, availability, invasiveness, radiation and scan length; below, what each MRI sequence (T1, T2, FLAIR, DWI, SWI) shows and the order of imaging in a suspected stroke",
  "col_w": 176,
  "root": {
   "title": "Which modality best RESOLVES the object of interest?",
@@ -64,10 +64,24 @@
   {
    "id": "mri",
    "colour": "purple",
-   "head": [[["h", "MRI", ["proton energy states · choose the sequence"]]]],
+   "head": [[["h", "MRI", ["proton energy states · choose the sequence (panel below)"]]]],
    "res": [[["t", "CONTRAST +++", ["• spatial ++", "• temporal 0/+"]]]],
    "pro": [[["w", "Best contrast resolution", []]]],
    "con": [[["w", "Expensive · limited availability", ["• long scan"]]]]
   }
+ ],
+ "panels": [
+  {"title": "MRI: choose the sequence", "items": [
+   "T1, 'anatomic': fluid DARK · structural abnormality · enhancement with contrast",
+   "T2, 'pathologic': fluid WHITE ('water is white on T2') · edema",
+   "FLAIR: fluid white EXCEPT CSF (inversion recovery suppresses it) · edema stands out",
+   "DWI / ADC map: RESTRICTED water diffusion · a measure of cellularity · T2-weighted",
+   "SWI: BLOOD products (hemoglobin in its oxidation states, hemosiderin)",
+   "advanced: MR angiography · MR perfusion · MR spectroscopy · functional MRI"]},
+  {"title": "Putting it to work: a suspected stroke, in order", "items": [
+   "1 · non-contrast CT",
+   "2 · CT angiography (CTA) + CT perfusion (CTP)",
+   "3 · catheter angiography (fluoroscopy, digital subtraction) + thrombectomy to pull the clot",
+   "4 · DWI afterwards"]}
  ]
 }

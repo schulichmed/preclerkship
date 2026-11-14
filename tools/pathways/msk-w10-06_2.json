@@ -1,7 +1,7 @@
 {
  "name": "chronic pain overview",
  "width": 1296,
- "title": "Chronic pain: pain over 3 months is mostly a processing problem, so everyone gets education and supervised exercise first; then the drug is matched to what the pain looks like (tissue source, neuropathic, poor sleep, low mood), adjuvants come before opioids, and a patient who is not responding is referred and gets an opioid trial only under the START principle",
+ "title": "Chronic pain: pain over 3 months is mostly a processing problem, so everyone gets education and supervised exercise first; then the drug is matched to what the pain looks like (tissue source, neuropathic, poor sleep, low mood), adjuvants come before opioids, and a patient who is not responding is referred and gets an opioid trial only under the START principle; below, acute vs subacute vs chronic pain, what each team member does, and which opioid to step to and how to switch",
  "kinds": {
   "noc_h": [
    "#1f6f8b",
@@ -99,7 +99,7 @@
    "x": 40,
    "y": 442,
    "w": 242,
-   "h": 1030,
+   "h": 1246,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -107,7 +107,7 @@
    "x": 284,
    "y": 442,
    "w": 242,
-   "h": 1030,
+   "h": 1246,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -115,7 +115,7 @@
    "x": 528,
    "y": 442,
    "w": 242,
-   "h": 1030,
+   "h": 1246,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -123,7 +123,7 @@
    "x": 772,
    "y": 442,
    "w": 242,
-   "h": 1030,
+   "h": 1246,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -131,7 +131,7 @@
    "x": 1044,
    "y": 442,
    "w": 242,
-   "h": 1030,
+   "h": 1246,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -152,13 +152,13 @@
   {
    "x": 23,
    "y": 722,
-   "h": 306,
+   "h": 342,
    "text": "FIRST CHOICE"
   },
   {
    "x": 23,
-   "y": 1068,
-   "h": 396,
+   "y": 1104,
+   "h": 576,
    "text": "DOSE · WATCH"
   }
  ],
@@ -338,7 +338,7 @@
    "x": 45,
    "y": 722,
    "w": 232,
-   "h": 160,
+   "h": 178,
    "kind": "ok",
    "title": "NSAID",
    "lines": [
@@ -349,9 +349,9 @@
   {
    "id": "noc_tx_1_0",
    "x": 45,
-   "y": 904,
+   "y": 922,
    "w": 232,
-   "h": 124,
+   "h": 142,
    "kind": "ok",
    "title": "OR acetaminophen",
    "lines": [
@@ -363,7 +363,7 @@
    "x": 289,
    "y": 722,
    "w": 232,
-   "h": 306,
+   "h": 342,
    "kind": "ok",
    "title": "Gabapentin or pregabalin",
    "lines": [
@@ -375,7 +375,7 @@
    "x": 533,
    "y": 722,
    "w": 232,
-   "h": 306,
+   "h": 342,
    "kind": "ok",
    "title": "Tricyclic antidepressant",
    "lines": [
@@ -388,7 +388,7 @@
    "x": 777,
    "y": 722,
    "w": 232,
-   "h": 141,
+   "h": 159,
    "kind": "ok",
    "title": "SNRI",
    "lines": [
@@ -399,9 +399,9 @@
   {
    "id": "mood_tx_1_0",
    "x": 777,
-   "y": 885,
+   "y": 903,
    "w": 232,
-   "h": 143,
+   "h": 161,
    "kind": "bad",
    "title": "SSRI: no significant effect on pain alone",
    "lines": [
@@ -427,20 +427,21 @@
    "x": 1049,
    "y": 932,
    "w": 232,
-   "h": 96,
+   "h": 132,
    "kind": "ok",
    "title": "T · Trial",
    "lines": [
-    "• start low, go slow",
-    "• aim 30% less pain or better function"
+    "• start low, go slow · no driving until the dose is stable",
+    "• aim 30% less pain or better function",
+    "• which opioid: see the panel below"
    ]
   },
   {
    "id": "noc_watch_0_0",
    "x": 45,
-   "y": 1068,
+   "y": 1104,
    "w": 232,
-   "h": 205,
+   "h": 295,
    "kind": "warn",
    "title": "NSAID: 2-3 week trial",
    "lines": [
@@ -450,9 +451,9 @@
   {
    "id": "noc_watch_1_0",
    "x": 45,
-   "y": 1295,
+   "y": 1421,
    "w": 232,
-   "h": 169,
+   "h": 259,
    "kind": "bad",
    "title": "Acetaminophen max 4 g/day",
    "lines": []
@@ -460,9 +461,9 @@
   {
    "id": "neu_watch_0_0",
    "x": 289,
-   "y": 1068,
+   "y": 1104,
    "w": 232,
-   "h": 187,
+   "h": 277,
    "kind": "bad",
    "title": "SEDATION: start low",
    "lines": [
@@ -473,9 +474,9 @@
   {
    "id": "neu_watch_1_0",
    "x": 289,
-   "y": 1277,
+   "y": 1403,
    "w": 232,
-   "h": 187,
+   "h": 277,
    "kind": "warn",
    "title": "Raise every 4-7 days",
    "lines": [
@@ -485,9 +486,9 @@
   {
    "id": "slp_watch_0_0",
    "x": 533,
-   "y": 1068,
+   "y": 1104,
    "w": 232,
-   "h": 168,
+   "h": 258,
    "kind": "warn",
    "title": "10-50 mg daily",
    "lines": [
@@ -497,9 +498,9 @@
   {
    "id": "slp_watch_1_0",
    "x": 533,
-   "y": 1258,
+   "y": 1384,
    "w": 232,
-   "h": 206,
+   "h": 296,
    "kind": "info",
    "title": "Cannabinoid (pain, sleep, anxiety)",
    "lines": [
@@ -510,9 +511,9 @@
   {
    "id": "mood_watch_0_0",
    "x": 777,
-   "y": 1068,
+   "y": 1104,
    "w": 232,
-   "h": 396,
+   "h": 576,
    "kind": "warn",
    "title": "Duloxetine 60 mg/day for pain",
    "lines": [
@@ -522,32 +523,37 @@
   {
    "id": "ref_watch_0_0",
    "x": 1049,
-   "y": 1068,
+   "y": 1104,
    "w": 232,
-   "h": 78,
+   "h": 96,
    "kind": "warn",
    "title": "A · Monitor",
    "lines": [
     "• analgesia, activity, side effects",
+    "• opioid-induced hyperalgesia",
     "• aberrant behaviour"
    ]
   },
   {
    "id": "ref_watch_1_0",
    "x": 1049,
-   "y": 1168,
+   "y": 1222,
    "w": 232,
-   "h": 96,
+   "h": 258,
    "kind": "bad",
    "title": "R · Restrict",
    "lines": [
-    "history of addiction: strong recommendation AGAINST (under 20 mg morphine equivalent if used)"
+    "• history of addiction: strong recommendation AGAINST (under 20 mg morphine equivalent if used)",
+    "• active psychiatric disorder: weak against, stabilize first",
+    "• elderly: lower, slower, longer interval, stop benzodiazepines",
+    "• adolescents: only after adjuvants fail",
+    "• pregnancy: taper to the lowest dose or off"
    ]
   },
   {
    "id": "ref_watch_2_0",
    "x": 1049,
-   "y": 1286,
+   "y": 1502,
    "w": 232,
    "h": 96,
    "kind": "bad",
@@ -560,7 +566,7 @@
   {
    "id": "ref_watch_3_0",
    "x": 1049,
-   "y": 1404,
+   "y": 1620,
    "w": 232,
    "h": 60,
    "kind": "warn",
@@ -707,5 +713,45 @@
    "from_dx": 0
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1714,
+   "w": 403,
+   "title": "Acute vs subacute vs chronic",
+   "items": [
+    "acute: SECONDS, at the same time as the cause · proportional to it · nociceptive",
+    "subacute: HOURS TO DAYS · primary or secondary hyperalgesia, allodynia, spontaneous pain · mostly nociceptive, some neuropathic",
+    "chronic: over 3 months · can outlast tissue healing · a long-term disease, big emotional part · mostly NEUROPATHIC, some nociceptive"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 462,
+   "y": 1714,
+   "w": 403,
+   "title": "The team: who does what",
+   "items": [
+    "physiotherapist: prescribes + supervises activity · MOBILITY, strengthening, flexibility · spinal mobilization, some acupuncture · modalities only as an add-on",
+    "occupational therapist: activity participation, PACING, modification, ergonomics for daily activities and work · optimize the activity, not avoid it",
+    "kinesiologist: GENERAL EXERCISE prescription and supervision",
+    "psychologist: group + individual therapy for DEPRESSION, ANXIETY · cognitive behavioural therapy, pacing · family education",
+    "physicians: review, trial drugs, interventions · long-term plan for the family physician · nurses: support, documentation, triage"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 878,
+   "y": 1714,
+   "w": 403,
+   "title": "Opioids: which one, and switching",
+   "items": [
+    "mild to moderate pain: codeine or tramadol → morphine, oxycodone or hydromorphone",
+    "severe pain: morphine, oxycodone or hydromorphone → fentanyl → methadone",
+    "switching from a HIGH dose: 50% or less of the morphine equivalent (+ breakthrough doses) · from a moderate or low dose: 60-70%",
+    "why: an EQUAL dose of a new opioid can be life-threatening after tolerance to a high dose"
+   ],
+   "cols": 1
+  }
+ ]
 }

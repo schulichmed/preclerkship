@@ -1,7 +1,7 @@
 {
  "name": "antenatal care overview",
  "width": 1618,
- "title": "Antenatal care from first suspicion to term: what to assess, test and act on at each stage (confirm and date, first visit, second trimester, third trimester), then how the first-visit group and screen splits into Rh negative without an antibody (Rh immunoglobulin) and an antibody found (titre, middle cerebral artery Doppler, timing of delivery); panels on checking a medication or exposure and on who cares for her",
+ "title": "Antenatal care from first suspicion to term: what to assess, test and act on at each stage (confirm and date, first visit, second trimester, third trimester), then how the first-visit group and screen splits into Rh negative without an antibody (Rh immunoglobulin) and an antibody found (titre, middle cerebral artery Doppler, timing of delivery); panels on teratogens (timing, physical, infectious, maternal), drug risk categories and counselling, and who cares for her",
  "kinds": {
   "conf_h": [
    "#1f6f8b",
@@ -117,7 +117,7 @@
    "x": 40,
    "y": 270,
    "w": 255,
-   "h": 1138,
+   "h": 1288,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -125,7 +125,7 @@
    "x": 297,
    "y": 270,
    "w": 255,
-   "h": 1138,
+   "h": 1288,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -133,7 +133,7 @@
    "x": 554,
    "y": 270,
    "w": 255,
-   "h": 1138,
+   "h": 1288,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -141,7 +141,7 @@
    "x": 811,
    "y": 270,
    "w": 255,
-   "h": 1138,
+   "h": 1288,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -149,7 +149,7 @@
    "x": 1096,
    "y": 270,
    "w": 255,
-   "h": 1138,
+   "h": 1288,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -157,7 +157,7 @@
    "x": 1353,
    "y": 270,
    "w": 255,
-   "h": 1138,
+   "h": 1288,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -166,19 +166,19 @@
   {
    "x": 23,
    "y": 396,
-   "h": 286,
+   "h": 386,
    "text": "ASSESS"
   },
   {
    "x": 23,
-   "y": 722,
-   "h": 394,
+   "y": 822,
+   "h": 430,
    "text": "TEST"
   },
   {
    "x": 23,
-   "y": 1156,
-   "h": 244,
+   "y": 1292,
+   "h": 258,
    "text": "ACT"
   }
  ],
@@ -296,7 +296,7 @@
    "x": 45,
    "y": 396,
    "w": 245,
-   "h": 286,
+   "h": 386,
    "kind": "conf_t",
    "title": "Missed period",
    "lines": [
@@ -330,8 +330,21 @@
    "kind": "first_w",
    "title": "Also ask",
    "lines": [
-    "• every medication + exposure → MEDICATION panel",
+    "• every medication + exposure → TERATOGEN + DRUG RISK panels",
     "• cramps ± spotting → FIRST-TRIMESTER BLEEDING chart"
+   ]
+  },
+  {
+   "id": "first_assess_2_0",
+   "x": 302,
+   "y": 704,
+   "w": 245,
+   "h": 78,
+   "kind": "first_w",
+   "title": "Uterus by 12 weeks",
+   "lines": [
+    "• fist → small grapefruit",
+    "• fundus at pelvic brim / symphysis"
    ]
   },
   {
@@ -339,7 +352,7 @@
    "x": 559,
    "y": 396,
    "w": 245,
-   "h": 114,
+   "h": 164,
    "kind": "second_t",
    "title": "Fundus",
    "lines": [
@@ -350,9 +363,9 @@
   {
    "id": "second_assess_1_0",
    "x": 559,
-   "y": 532,
+   "y": 582,
    "w": 245,
-   "h": 150,
+   "h": 200,
    "kind": "second_w",
    "title": "Spotting: normal or assess?",
    "lines": [
@@ -365,7 +378,7 @@
    "x": 816,
    "y": 396,
    "w": 245,
-   "h": 114,
+   "h": 164,
    "kind": "third_t",
    "title": "Contractions: labour or not?",
    "lines": [
@@ -376,9 +389,9 @@
   {
    "id": "third_assess_1_0",
    "x": 816,
-   "y": 532,
+   "y": 582,
    "w": 245,
-   "h": 150,
+   "h": 200,
    "kind": "bad",
    "title": "Abdominal pain: rule out",
    "lines": [
@@ -393,7 +406,7 @@
    "x": 1101,
    "y": 396,
    "w": 245,
-   "h": 286,
+   "h": 386,
    "kind": "rhneg_t",
    "title": "Fetal cells reach her blood",
    "lines": [
@@ -406,7 +419,7 @@
    "x": 1358,
    "y": 396,
    "w": 245,
-   "h": 286,
+   "h": 386,
    "kind": "ab_t",
    "title": "Why, and will the fetus carry it?",
    "lines": [
@@ -419,21 +432,23 @@
   {
    "id": "conf_test_0_0",
    "x": 45,
-   "y": 722,
+   "y": 822,
    "w": 245,
-   "h": 394,
+   "h": 430,
    "kind": "conf_t",
    "title": "1 · Human chorionic gonadotropin (hCG), urine or serum",
    "lines": [
-    "• serum > 25 = pregnant",
+    "• serum < 5 negative · 5–25 very early or error · > 25 = pregnant",
+    "• 1500: sac visible TRANSVAGINAL · 5000: TRANSABDOMINAL",
     "• most useful: irregular cycles, recurrent miscarriage, previous ectopic",
-    "2 · where is it? → FIRST-TRIMESTER BLEEDING chart"
+    "2 · ultrasound: YOLK SAC needed, a gestational sac alone does not confirm",
+    "3 · where is it? → FIRST-TRIMESTER BLEEDING chart"
    ]
   },
   {
    "id": "first_test_0_0",
    "x": 302,
-   "y": 722,
+   "y": 822,
    "w": 245,
    "h": 240,
    "kind": "first_t",
@@ -453,22 +468,23 @@
   {
    "id": "first_test_1_0",
    "x": 302,
-   "y": 984,
+   "y": 1084,
    "w": 245,
-   "h": 132,
+   "h": 168,
    "kind": "first_w",
    "title": "2 · Only if selected",
    "lines": [
     "• thyroid-stimulating hormone: known thyroid disease",
-    "• hemoglobinopathy: Mediterranean, Southeast Asian, African, or low mean cell volume"
+    "• hemoglobinopathy: Mediterranean, Southeast Asian, African, or low mean cell volume",
+    "• hepatitis C, herpes simplex: high risk only, NOT routine"
    ]
   },
   {
    "id": "second_test_0_0",
    "x": 559,
-   "y": 722,
+   "y": 822,
    "w": 245,
-   "h": 394,
+   "h": 430,
    "kind": "second_t",
    "title": "Anatomy scan, 18–22 weeks",
    "lines": [
@@ -479,9 +495,9 @@
   {
    "id": "third_test_0_0",
    "x": 816,
-   "y": 722,
+   "y": 822,
    "w": 245,
-   "h": 394,
+   "h": 430,
    "kind": "third_t",
    "title": "Recheck hemoglobin + ferritin",
    "lines": [
@@ -491,9 +507,9 @@
   {
    "id": "rhneg_test_0_0",
    "x": 1101,
-   "y": 722,
+   "y": 822,
    "w": 245,
-   "h": 394,
+   "h": 430,
    "kind": "rhneg_w",
    "title": "Baby's Rh type at birth",
    "lines": []
@@ -501,9 +517,9 @@
   {
    "id": "ab_test_0_0",
    "x": 1358.0,
-   "y": 722,
+   "y": 822,
    "w": 117.5,
-   "h": 167,
+   "h": 185,
    "kind": "ab_w",
    "title": "1 · Titre < 1/8",
    "lines": [
@@ -513,9 +529,9 @@
   {
    "id": "ab_test_0_1",
    "x": 1485.5,
-   "y": 722,
+   "y": 822,
    "w": 117.5,
-   "h": 167,
+   "h": 185,
    "kind": "bad",
    "title": "1 · Titre ≥ 1/8",
    "lines": [
@@ -525,9 +541,9 @@
   {
    "id": "ab_test_1_0",
    "x": 1358,
-   "y": 911,
+   "y": 1029,
    "w": 245,
-   "h": 205,
+   "h": 223,
    "kind": "ab_t",
    "title": "2 · Middle cerebral artery Doppler",
    "lines": [
@@ -538,22 +554,25 @@
   {
    "id": "conf_act_0_0",
    "x": 45,
-   "y": 1156,
+   "y": 1292,
    "w": 245,
-   "h": 244,
+   "h": 258,
    "kind": "ok",
    "title": "Set the due date EARLY",
    "lines": [
     "• Naegele: last normal menstrual period + 7 days − 3 months + 1 year",
+    "• in vitro fertilization: embryo TRANSFER DATE overrides every ultrasound",
+    "• else first-trimester crown-rump length; any scan < 23 wk beats the period",
+    "• once set, FIXED: a later different scan = growth, not a new date",
     "• dating scan → ULTRASOUND THROUGH PREGNANCY chart"
    ]
   },
   {
    "id": "first_act_0_0",
    "x": 302,
-   "y": 1156,
+   "y": 1292,
    "w": 245,
-   "h": 244,
+   "h": 258,
    "kind": "ok",
    "title": "Prenatal multivitamin DAILY",
    "lines": [
@@ -564,9 +583,9 @@
   {
    "id": "second_act_0_0",
    "x": 559,
-   "y": 1156,
+   "y": 1292,
    "w": 245,
-   "h": 101,
+   "h": 108,
    "kind": "ok",
    "title": "Vaccinate EVERY pregnancy",
    "lines": [
@@ -577,9 +596,9 @@
   {
    "id": "second_act_1_0",
    "x": 559,
-   "y": 1279,
+   "y": 1422,
    "w": 245,
-   "h": 121,
+   "h": 128,
    "kind": "bad",
    "title": "NO live vaccines → post-partum",
    "lines": [
@@ -591,9 +610,9 @@
   {
    "id": "third_act_0_0",
    "x": 816,
-   "y": 1156,
+   "y": 1292,
    "w": 245,
-   "h": 244,
+   "h": 258,
    "kind": "ok",
    "title": "Anemia: PHYSIOLOGIC CHANGES chart",
    "lines": []
@@ -601,9 +620,9 @@
   {
    "id": "rhneg_act_0_0",
    "x": 1101,
-   "y": 1156,
+   "y": 1292,
    "w": 245,
-   "h": 119,
+   "h": 126,
    "kind": "ok",
    "title": "Give RhIG",
    "lines": [
@@ -614,9 +633,9 @@
   {
    "id": "rhneg_act_1_0",
    "x": 1101,
-   "y": 1297,
+   "y": 1440,
    "w": 245,
-   "h": 103,
+   "h": 110,
    "kind": "rhneg_w",
    "title": "Also after bleeding, a procedure or trauma",
    "lines": [
@@ -626,9 +645,9 @@
   {
    "id": "ab_act_0_0",
    "x": 1358,
-   "y": 1156,
+   "y": 1292,
    "w": 245,
-   "h": 78,
+   "h": 83,
    "kind": "bad",
    "title": "1 · Early + severe anemia",
    "lines": [
@@ -638,9 +657,9 @@
   {
    "id": "ab_act_1_0",
    "x": 1358,
-   "y": 1256,
+   "y": 1397,
    "w": 245,
-   "h": 80,
+   "h": 85,
    "kind": "warn",
    "title": "2 · Severe anemia after 34–35 wk",
    "lines": [
@@ -650,9 +669,9 @@
   {
    "id": "ab_act_2_0",
    "x": 1358,
-   "y": 1358,
+   "y": 1504,
    "w": 245,
-   "h": 42,
+   "h": 47,
    "kind": "ok",
    "title": "3 · Stable: deliver at 37–38 wk",
    "lines": []
@@ -672,6 +691,10 @@
   {
    "from": "first_assess_0_0",
    "to": "first_assess_1_0"
+  },
+  {
+   "from": "first_assess_1_0",
+   "to": "first_assess_2_0"
   },
   {
    "from": "second_assess_0_0",
@@ -733,7 +756,7 @@
    "to": "first_assess_0_0"
   },
   {
-   "from": "first_assess_1_0",
+   "from": "first_assess_2_0",
    "to": "first_test_0_0"
   },
   {
@@ -833,24 +856,41 @@
  "panels": [
   {
    "x": 45,
-   "y": 1434,
-   "w": 772,
-   "title": "Medication or exposure at any visit: what to check",
+   "y": 1584,
+   "w": 510,
+   "title": "Teratogen exposure: when and what",
    "items": [
-    "WHEN: weeks 1–2 insensitive · weeks 3–8 (organogenesis) → MAJOR anomalies · later → function + minor anomalies",
-    "WHAT: radiation, hyperthermia · TORCH infections · maternal diabetes · drugs, herbals, recreational drugs, toxins",
-    "US Food and Drug Administration (FDA) category: A human studies safe · D human risk, benefit may win · X risk outweighs any benefit",
+    "WHEN: weeks 1–2 usually NOT susceptible · weeks 3–8 (organogenesis) → MAJOR anomalies · fetal period → function + minor anomalies; central nervous system, eyes, genitalia sensitive to term",
+    "PHYSICAL: radiation, fetal dose NOT over 50 rads · hyperthermia, core ≥ 39°C (exercise does NOT reach it: keep exercising) → spontaneous abortion, neural tube, heart, abdominal wall defects",
+    "TORCH: cytomegalovirus = #1 infectious cause of birth defects, 40% on a first infection · herpes simplex in the last 3 months: 30–50% → CESAREAN · rubella: check titres · toxoplasmosis: NOT routinely screened",
+    "Maternal DIABETES: neural tube, central nervous system, spine, heart, limb defects → glycemic control + folic acid BEFORE conception"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 569,
+   "y": 1584,
+   "w": 510,
+   "title": "Drug risk: US Food and Drug Administration (FDA) category",
+   "items": [
+    "A: controlled HUMAN studies, no risk · doxylamine-pyridoxine, folic acid, levothyroxine",
+    "B: no human studies, ANIMALS show no risk · amoxicillin, loratadine, ondansetron",
+    "C: NO studies in animals or humans = no data, NOT 'safe' · fluconazole, metoprolol, sertraline",
+    "D: HUMAN risk, benefit may outweigh it · paroxetine, diazepam, lisinopril, phenytoin, lithium",
+    "X: risk outweighs ANY benefit · methotrexate, simvastatin, warfarin",
+    "nausea: Diclectin (doxylamine-pyridoxine) is the ONLY approved antiemetic",
     "Planning pregnancy: optimize the disease · fewest drugs, lowest dose · switch if possible · folic acid 1 mg on antiepileptics · ask FRAME (Fetal Risk After Maternal Exposure)"
    ],
    "cols": 1
   },
   {
-   "x": 831,
-   "y": 1434,
-   "w": 772,
+   "x": 1093,
+   "y": 1584,
+   "w": 510,
    "title": "Who looks after her",
    "items": [
-    "LOW risk: family physician (cares for the baby too, for years) or midwife (home, birth centre or hospital; mother + baby to 6 weeks)",
+    "LOW risk: family physician (cares for the baby too, for years) or midwife (home, birth centre or hospital; mother + baby to 6 weeks; informed CHOICE, not informed consent)",
+    "obstetrician: consultant for the complicated case · every form of delivery incl. cesarean · NO infant care, no lactation training",
     "CONSULT obstetrics: diabetes, essential hypertension, prior preeclampsia, high body mass index, lupus · abnormal fetal surveillance · planned cesarean",
     "fetal anomaly → maternal fetal medicine (MFM)",
     "labour: dystocia, operative or cesarean birth, preeclampsia · post-partum: major hemorrhage, 3rd/4th-degree tear"
