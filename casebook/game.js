@@ -5,13 +5,15 @@ const dateParts = new Intl.DateTimeFormat('en-CA',{timeZone:'America/Toronto',ye
   .formatToParts(new Date()).filter(p => p.type !== 'literal');
 const today = Object.fromEntries(dateParts.map(p => [p.type,Number(p.value)]));
 const day = Math.max(0,Math.floor((Date.UTC(today.year,today.month-1,today.day)-epoch)/86400000));
-const dailyCase = cases[day % cases.length];
+// Keep the published daily lineup for the dates it already covered.
+const dailyCase = cases[day < 40 ? day : day % cases.length];
 const fresh = () => ({turns:[],status:'playing'});
 let saved = {};
 try { saved = JSON.parse(localStorage.getItem(storageKey)) || {}; } catch {}
 let mode = 'daily';
 let practiceCase;
 let practiceState;
+const practiceCompleted = new Set();
 let suggestions = [];
 let active = -1;
 const input = $('guess');
@@ -33,27 +35,52 @@ const add = (parent,tag,copy,cls) => {
   return el;
 };
 
+function practicePool() {
+  const block = $('block').value;
+  return cases.filter(entry => !block || entry.note.startsWith(block + '-'));
+}
+
 function pickPractice() {
-  const pool = cases.filter(entry => !$('block').value || entry.note.startsWith($('block').value+'-'));
-  const alternatives = pool.filter(entry => entry !== practiceCase && entry !== dailyCase);
-  const choices = alternatives.length ? alternatives : pool;
-  practiceCase = choices[Math.floor(Math.random()*choices.length)];
+  const remaining = practicePool().filter(entry => !practiceCompleted.has(entry));
+  const alternatives = remaining.filter(entry => entry !== practiceCase && entry !== dailyCase);
+  const choices = alternatives.length ? alternatives : remaining;
+  practiceCase = choices[Math.floor(Math.random() * choices.length)];
   practiceState = fresh();
 }
+
+function advancePractice() {
+  const pool = practicePool();
+  if (pool.every(entry => practiceCompleted.has(entry))) {
+    for (const entry of pool) practiceCompleted.delete(entry);
+  }
+  pickPractice();
+  render();
+  if (practiceCase) input.focus();
+}
+
 $('block').add(new Option('All blocks',''));
 for (const [id,[label]] of Object.entries(blocks)) $('block').add(new Option(label,id));
 
 function render(message = '') {
+  $('daily').setAttribute('aria-pressed',mode==='daily');
+  $('practice').setAttribute('aria-pressed',mode==='practice');
+  $('practice-controls').hidden = mode==='daily';
+  $('practice-count').hidden = mode==='daily';
+  if (mode === 'practice') {
+    const pool = practicePool();
+    const completed = pool.filter(entry => practiceCompleted.has(entry)).length;
+    $('practice-count').textContent = completed + ' completed · ' + (pool.length - completed) + ' left';
+    $('next').textContent = completed === pool.length ? 'Restart practice ↻' : 'New case ↻';
+  }
   const entry = getCase();
+  $('case-sheet').hidden = !entry;
+  if (!entry) return;
   const state = getState();
   const done = state.status !== 'playing';
   const [block,course] = blocks[entry.note.split('-')[0]];
   const shown = done ? 6 : state.turns.length+1;
   $('case-meta').textContent = mode === 'daily' ? 'Daily case #'+(day+1) : block;
   $('counter').textContent = done ? (state.status === 'won' ? 'Solved in '+state.turns.length+'/6' : 'Case complete') : 'Clue '+shown+' of 6';
-  $('daily').setAttribute('aria-pressed',mode==='daily');
-  $('practice').setAttribute('aria-pressed',mode==='practice');
-  $('practice-controls').hidden = mode==='daily';
   $('progress').replaceChildren();
   $('clues').replaceChildren();
   entry.clues.forEach((clue,index) => {
@@ -82,7 +109,7 @@ function render(message = '') {
   source.href = '../'+course+'/'+entry.note.split('-')[0]+'.html#n-'+entry.note;
   source.target = '_blank';
   source.rel = 'noopener noreferrer';
-  const button = add(result,'button',mode==='daily'?'Copy result':'Next case','utility');
+  const button = add(result,'button',mode==='daily'?'Copy result':$('next').textContent.startsWith('Restart')?'Restart practice':'Next case','utility');
   button.type = 'button';
   button.onclick = mode==='daily' ? async () => {
     const marks = state.turns.map(turn=>turn.hit?'🟩':turn.guess?'🟪':'⬜').join('');
@@ -90,12 +117,12 @@ function render(message = '') {
       await navigator.clipboard.writeText('Schulich Casebook #'+(day+1)+' · '+(state.status==='won'?state.turns.length:'X')+'/6\n'+marks);
       button.textContent = 'Copied!';
     } catch { button.textContent = 'Copy unavailable'; }
-  } : () => { pickPractice();render();$('guess').focus(); };
+  } : advancePractice;
 }
 
 function submit(guess) {
   const state = getState();
-  if(state.status !== 'playing') return;
+  if(!getCase() || state.status !== 'playing') return;
   const entry = getCase();
   const query = norm(guess);
   const exactName = diagnosisIndex.find(item => item.name === query);
@@ -119,6 +146,7 @@ function submit(guess) {
   if(mode==='daily') {
     try { localStorage.setItem(storageKey,JSON.stringify(saved)); } catch {}
   }
+  if (mode === 'practice' && state.status !== 'playing') practiceCompleted.add(entry);
   render(guess ? 'Try again with the next clue.' : '');
   if(state.status === 'playing') input.focus();
   else {
@@ -191,7 +219,8 @@ $('guess-form').onsubmit = event => {
 $('skip').onclick = () => submit('');
 $('daily').onclick = () => { mode='daily';render(); };
 $('practice').onclick = () => { mode='practice';if(!practiceCase) pickPractice();render(); };
-$('block').onchange = $('next').onclick = () => { pickPractice();render(); };
+$('block').onchange = () => { pickPractice();render(); };
+$('next').onclick = advancePractice;
 
 $('help').onclick = () => {
   $('dialog-title').textContent = 'How to play';

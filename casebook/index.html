@@ -25,7 +25,8 @@
 <div class="game">
 <nav class="modes" aria-label="Game mode"><button id="daily" aria-pressed="true">Daily case</button><button id="practice" aria-pressed="false">Practice</button></nav>
 <div id="practice-controls" hidden><label for="block">Block</label><select id="block"></select><button id="next" class="utility">New case ↻</button></div>
-<section class="sheet" aria-labelledby="case-title">
+<p id="practice-count" role="status" hidden></p>
+<section id="case-sheet" class="sheet" aria-labelledby="case-title">
 <div class="case-head"><div><p class="eyebrow" id="case-meta"></p><h2 id="case-title">Clinical presentation</h2></div><span class="counter" id="counter"></span></div>
 <div id="progress" class="progress" aria-hidden="true"></div>
 <ol id="clues" class="clues" aria-label="Clinical clues"></ol>

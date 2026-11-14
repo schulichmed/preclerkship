@@ -29,7 +29,7 @@ h1 em{color:var(--purple);font-weight:400}
 .modes{display:flex;padding:4px;border:1px solid var(--line);background:#eee8f4;border-radius:12px;width:max-content;gap:4px;margin:0 auto 15px}
 .modes button{border:0;background:transparent;color:var(--muted);border-radius:8px;padding:8px 20px;font-size:13px;font-weight:700}
 .modes button[aria-pressed=true]{background:white;color:var(--purple);box-shadow:0 1px 4px #30204416}
-#practice-controls{display:flex;align-items:center;gap:9px;margin:0 0 12px;font-size:13px;color:var(--muted)}
+#practice-controls{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:0 0 12px;font-size:13px;color:var(--muted)}
 select{min-width:0;border:1px solid var(--line);border-radius:8px;background:white;padding:7px;color:var(--ink)}
 #next{margin-left:auto;white-space:nowrap}
 .sheet{background:white;border:1px solid var(--line);border-radius:19px;padding:26px 30px 21px;box-shadow:0 15px 38px #3e20500b}
@@ -79,3 +79,5 @@ dialog li{margin-bottom:7px}
 .stats-grid div{padding:10px;text-align:center;background:var(--light);border-radius:8px}
 .stats-grid b{display:block;font-size:23px;color:var(--purple)}
 @media(max-width:520px){.top-inner,footer{padding-inline:15px}.top-inner{min-height:62px}.brand{font-size:14px;gap:6px}.mark{width:28px;height:28px}.tools{gap:4px}.utility{padding:6px 7px;font-size:11px}main{padding:34px 12px}.intro{margin-bottom:23px}.sheet{padding:19px 14px 13px}.case-head h2{font-size:30px}.form-row{gap:5px}.primary{padding:8px;font-size:12px}.primary span{display:none}input{font-size:16px}.subtitle{font-size:14px}.clues li{font-size:13px}}
+
+#practice-count{margin:0 0 12px;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
