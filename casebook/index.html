@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A daily diagnosis puzzle drawn from the Schulich preclerkship notes.">
+<title>Schulich Casebook</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="cases.js"></script>
+<script defer src="diagnoses.js"></script>
+<script defer src="game.js"></script>
+</head>
+<body>
+<header class="top"><div class="top-inner">
+<a class="brand" href="./"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-6 4 12 3-6h4"/></svg></span><span>Schulich <strong>Casebook</strong></span></a>
+<div class="tools"><button id="help" class="utility"><span aria-hidden="true">ⓘ</span> How to play</button><button id="stats" class="utility"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19v-5m7 5V5m7 14v-9"/></svg> Stats</button></div>
+</div></header>
+<main>
+<section class="intro" aria-labelledby="title">
+<p class="eyebrow"><span></span> PRECLERKSHIP DIAGNOSIS GAME</p>
+<h1 id="title">What’s the <em>diagnosis?</em></h1>
+<p class="subtitle">Work through a clinical case, one clue at a time.</p>
+</section>
+<div class="game">
+<nav class="modes" aria-label="Game mode"><button id="daily" aria-pressed="true">Daily case</button><button id="practice" aria-pressed="false">Practice</button></nav>
+<div id="practice-controls" hidden><label for="block">Block</label><select id="block"></select><button id="next" class="utility">New case ↻</button></div>
+<p id="practice-count" role="status" hidden></p>
+<section id="case-sheet" class="sheet" aria-labelledby="case-title">
+<div class="case-head"><div><p class="eyebrow" id="case-meta"></p><h2 id="case-title">Clinical presentation</h2></div><span class="counter" id="counter"></span></div>
+<div id="progress" class="progress" aria-hidden="true"></div>
+<ol id="clues" class="clues" aria-label="Clinical clues"></ol>
+<div id="finish" class="finish" hidden></div>
+<form id="guess-form" autocomplete="off">
+<label for="guess">Your diagnosis</label>
+<div class="form-row"><div class="input-wrap"><input id="guess" placeholder="Start typing a diagnosis…" aria-autocomplete="list" aria-controls="suggestions" aria-expanded="false" role="combobox" spellcheck="false"><ul id="suggestions" class="suggestions" role="listbox" hidden></ul></div><button class="primary" type="submit">Submit guess <span aria-hidden="true">→</span></button></div>
+<div class="under-form"><p id="feedback" role="status"></p><button type="button" id="skip" class="skip">Reveal next clue <span aria-hidden="true">↘</span></button></div>
+</form>
+</section>
+</div>
+</main>
+<footer><span>Independent study game for preclerkship</span><a href="../">Back to Schulich MedFriend</a></footer>
+<dialog id="dialog"><div class="dialog-head"><h2 id="dialog-title"></h2><form method="dialog"><button class="utility" aria-label="Close">✕</button></form></div><div id="dialog-body"></div></dialog>
+</body>
+</html>

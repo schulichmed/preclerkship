@@ -51,6 +51,12 @@ def cards():
         u'<p>Every history and exam, one page each, arranged by skill rather than by semester.</p>\n'
         u'<span class="tally">\n<span><b>10</b> exams</span>\n<span><b>10</b> histories and other skills</span>\n</span>\n'
         u'</a>')
+    out.append(
+        u'<a class="block-card is-side" href="casebook/" style="--hue:#4f2683">\n'
+        u'<p class="bmeta">Daily puzzle &middot; block practice</p>\n'
+        u'<h2>Schulich Casebook</h2>\n'
+        u'<p>Guess the diagnosis as clues unfold, then review the lecture behind the case.</p>\n'
+        u'</a>')
     return "\n".join(out)
 
 
