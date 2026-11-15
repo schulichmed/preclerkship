@@ -6,12 +6,15 @@
   "title": "FOUR or more joints: inflammatory or degenerative, acute or chronic, and in what PATTERN?",
   "lines": [
    "inflamed synovium (synovitis) = swelling, warmth, pain, stiffness · redness only with infection or crystals",
-   "every inflammatory arthritis is a CLINICAL diagnosis: history, extra-articular clues, then targeted tests"
+   "every inflammatory arthritis is a CLINICAL diagnosis: history, extra-articular clues, then targeted tests",
+   "mono 1 · oligo 2-3 · POLY 4+ joints · inflammatory: autoimmune, infection, crystals · non-inflammatory: osteoarthritis, trauma, avascular necrosis, Charcot, recurrent hemarthrosis, hemochromatosis",
+   "history: onset + course · pattern (symmetry; small, large, axial) · risk: age, sex, ethnicity, family history, psoriasis, IBD, CKD · triggers: infection, drugs, injury, diet",
+   "look for: synovitis · tenosynovitis · dactylitis · enthesitis · bursitis · deformity (nodes, swan-neck, boutonnière, ulnar deviation)"
   ]
  },
  "groups": [
   {"id": "g_ac", "cols": [0, 0], "title": "ACUTE: 6 weeks or less", "lines": ["onset in hours to days"]},
-  {"id": "g_ch", "cols": [1, 4], "title": "CHRONIC: over 6 weeks · the PATTERN decides", "lines": ["insidious, weeks to months · progressive and additive"]}
+  {"id": "g_ch", "cols": [1, 4], "title": "CHRONIC: over 6 weeks · the PATTERN decides", "lines": ["insidious, weeks to months · progressive and additive", "also: connective tissue disease, reactive, palindromic, vasculitis, polyarticular JIA, adult-onset Still's, sarcoidosis, drugs"]}
  ],
  "sections": ["head", "clue", "inv"],
  "row_names": {"clue": "LOOK FOR", "inv": "INVESTIGATIONS"},
@@ -19,13 +22,13 @@
  "columns": [
   {"id": "acu", "colour": "slate",
    "head": [[["h", "Acute polyarthritis", ["infection · crystals · early autoimmune"]]]],
-   "clue": [[["t", "Causes", ["• viral or post-infectious (see the MSK INFECTIONS chart)", "• polyarticular gout · rheumatic fever", "• drug reaction (serum sickness)"]]], [["w", "Course", ["• episodic: crystals", "• migratory: palindromic, rheumatic fever, early gonococcal"]]]],
-   "inv": [[["bad", "Red, hot joint → ASPIRATE", ["infection? crystals?", "~gout: needles, negative · pseudogout: rhomboid, positive"]]], [["w", "Viral: serologies", ["self-limited · supportive; anti-inflammatories or a short prednisone course if severe"]]]]
+   "clue": [[["t", "Causes", ["• viral or post-infectious (see the MSK INFECTIONS chart)", "• polyarticular gout · rheumatic fever", "• drug reaction (serum sickness)", "• EARLY rheumatoid, connective tissue disease, vasculitis, seronegative: autoimmune ones turn CHRONIC"]]], [["w", "Course", ["• episodic: crystals", "• migratory: palindromic, rheumatic fever, early gonococcal"]]]],
+   "inv": [[["bad", "Red, hot joint → ASPIRATE", ["infection? crystals?", "~gout: needles, negative · pseudogout: rhomboid, positive"]]], [["w", "Viral: serologies", ["during or weeks after: hepatitis A, B, C · HIV, CMV, EBV · parvovirus · chikungunya · influenza · COVID-19", "self-limited · supportive; anti-inflammatories or a short prednisone course if severe"]]], [["w", "Special labs", ["• gout: uric acid", "• pseudogout: look for hemochromatosis, hyperparathyroidism, hypothyroidism"]]]]
   },
   {"id": "ra", "colour": "teal", "drop_label": "symmetric, small + large",
    "head": [[["h", "Rheumatoid arthritis", ["also symmetric: lupus, connective tissue disease"]]]],
-   "clue": [[["t", "Wrists, knuckles, finger joints, ankles, feet", ["• knuckles (MCPs) + middle finger joints (PIPs)", "• distal finger joints (DIPs) SPARED", "• ulnar deviation, knuckle subluxation"]]], [["w", "Extra-articular", ["• rheumatoid nodules, lung nodules", "• episcleritis"]]]],
-   "inv": [[["t", "Rheumatoid factor (RF) + anti-CCP: only if suspected", ["• anti-cyclic citrullinated peptide: 95% specific · RF is not", "• positive = more aggressive · NEVER to monitor"]]], [["w", "X-ray", ["erosions, periarticular osteopenia, SYMMETRIC narrowing"]]]]
+   "clue": [[["t", "Wrists, knuckles, finger joints, ankles, feet", ["• knuckles (MCPs) + middle finger joints (PIPs)", "• distal finger joints (DIPs) SPARED", "• also shoulders, elbows (MCPs, wrists also in pseudogout)", "• ulnar deviation, knuckle subluxation · swan-neck, boutonnière"]]], [["w", "Extra-articular", ["• rheumatoid nodules, lung nodules", "• episcleritis"]]]],
+   "inv": [[["t", "Rheumatoid factor (RF) + anti-CCP: only if suspected", ["• RF (IgM against IgG Fc): 70-80% of RA, 5-20% of healthy (↑ with age)", "• RF also: Sjögren's, lupus, myositis · hepatitis B, C, TB, syphilis, endocarditis · lung fibrosis, silicosis, sarcoid · lymphoma", "• anti-cyclic citrullinated peptide: 95% specific · present YEARS before arthritis", "• order with true swollen joints + raised markers", "• seropositive = more joints, erosions, extra-articular · NEVER to monitor"]]], [["w", "X-ray", ["erosions, periarticular osteopenia, SYMMETRIC narrowing", "• fusiform soft tissue swelling · periostitis · subluxation", "• erosive: RA, psoriatic, SpA, gout, septic · NOT lupus, Sjögren's", "~ little use early: damage takes years · baseline before treatment"]]]]
   },
   {"id": "psa", "colour": "magenta", "drop_label": "asymmetric, small + large",
    "head": [[["h", "Psoriatic arthritis", ["also asymmetric: gout, reactive"]]]],
@@ -40,12 +43,12 @@
   {"id": "oa", "colour": "orange", "drop_label": "symmetric, weight-bearing",
    "head": [[["h", "Osteoarthritis", ["DEGENERATIVE, not inflammatory"]]]],
    "clue": [[["t", "Weight-bearing joints, spine", ["• DIPs, PIPs, thumb base, big toe"]]], [["w", "Hands", ["Heberden's (DIP) and Bouchard's (PIP) nodes"]]]],
-   "inv": [[["w", "X-ray", ["osteophytes, subchondral sclerosis and cysts, ASYMMETRIC narrowing"]]]]
+   "inv": [[["w", "X-ray", ["osteophytes, subchondral sclerosis and cysts, ASYMMETRIC narrowing", "erosions only in erosive OA · deviation from extra bone"]]]]
   }
  ],
  "panels": [
-  {"title": "Tests for everyone (safety + inflammation)", "items": ["blood count: anemia of chronic disease, platelets ↑ (inflammation), low counts (autoimmune)", "creatinine and liver enzymes (drug clearance) · C-reactive protein (sedimentation rate not routine)"]},
-  {"title": "Antinuclear antibody (ANA)", "items": ["positive in up to 30% of healthy people: a positive ANA does NOT rule in connective tissue disease", "a negative ANA rules it out · don't order ANA and RF reflexively"]},
-  {"title": "Extra-articular clues for the rest", "items": ["reactive arthritis: CONJUNCTIVITIS + URETHRITIS + arthritis (can't see, can't pee, can't climb a tree) · vesicopustular skin lesions", "gout: TOPHI · podagra · olecranon bursitis", "lupus: MALAR RASH · discoid lupus · oral ulcers · subacute lupus rash", "dermatomyositis: heliotrope · GOTTRON'S sign and papules · shawl, V and holster signs · mechanic's hands", "scleroderma: SCLERODACTYLY · Raynaud's · calcinosis · nail-fold capillary changes"]}
+  {"title": "Tests", "items": ["everyone: blood count (anemia of chronic disease, platelets ↑, autoimmune cytopenias) · creatinine (glomerulonephritis, vasculitis, drug clearance) · liver enzymes (drug clearance, autoimmune hepatitis) · CRP (ESR not routine)", "ANA: up to 30% of healthy people · positive does NOT rule in, NEGATIVE rules out connective tissue disease · don't order ANA and RF reflexively", "ENA: dsDNA, Sm → lupus · Ro, La → Sjögren's · centromere, Scl-70, RNA pol III → scleroderma · Jo-1 → myositis · RNP → mixed · histone → drug-induced lupus", "lupus flare: anti-dsDNA ↑, C3, C4 ↓ (seroconcordant)"]},
+  {"title": "Management (briefly)", "items": ["acetaminophen, NSAIDs · steroids: prednisone, IM methylprednisolone, joint injection", "DMARDs: conventional (methotrexate) · targeted synthetic (tofacitinib) · biologic (adalimumab)", "gout: colchicine, NSAIDs, steroids, allopurinol, febuxostat · pseudogout: colchicine, NSAIDs, steroids", "gentle physio, strengthening · warm or cool compresses · rest"]},
+  {"title": "Extra-articular clues for the rest", "items": ["reactive arthritis: CONJUNCTIVITIS + URETHRITIS + arthritis (can't see, can't pee, can't climb a tree) · vesicopustular skin lesions", "gout: TOPHI · podagra · olecranon bursitis", "lupus: MALAR RASH · discoid lupus · oral ulcers · subacute lupus rash", "dermatomyositis: heliotrope · GOTTRON'S sign and papules · shawl, V and holster signs · mechanic's hands", "scleroderma: SCLERODACTYLY · Raynaud's · calcinosis · nail-fold capillary changes", "organs: uveitis, scleritis, sicca · mouth ulcers · interstitial lung disease, effusions · pericarditis · glomerulonephritis · hemolysis, low platelets, lymphopenia · erythema nodosum, livedo"]}
  ]
 }

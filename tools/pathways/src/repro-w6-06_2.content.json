@@ -5,8 +5,8 @@
  "root": {
   "title": "A bleeding woman: is she in SHOCK, and what do I do first?",
   "lines": [
-   "shock = tissue hypoxia; hemorrhagic: blood lost → ↓ preload → ↓ cardiac output",
-   "signs: tachycardia, hypotension, oliguria, confusion, tachypnea, cool clammy skin, acidosis, ↑ lactate"
+   "shock = cell + tissue hypoxia (↓ oxygen delivery, ↑ use, or poor use) · hemorrhagic: blood lost → ↓ preload → ↓ cardiac output",
+   "signs: tachycardia, hypotension, oliguria, confusion, tachypnea, cool clammy cyanotic skin, metabolic acidosis, ↑ lactate"
   ]
  },
  "groups": [
@@ -19,18 +19,18 @@
  "columns": [
   {
    "id": "cmp", "colour": "teal", "drop_label": "pressure normal",
-   "head": [[["h", "Class I–II: up to 30% lost", ["up to 1500 mL"]]]],
+   "head": [[["h", "Class I–II: up to 30% lost", ["I: up to 750 mL (15%) · II: 750–1500 mL (15–30%)"]]]],
    "one": [
-    [["t", "Pulse rises FIRST", ["• I: < 100", "• II: 100–120, pulse pressure ↓"]]],
+    [["t", "Pulse rises FIRST", ["• I: < 100, pulse pressure normal or ↑", "• II: 100–120, pulse pressure ↓", "• breathing: I 14–20, II 20–30"]]],
     [["t", "Blood pressure still NORMAL", ["• urine: I > 30, II 20–30 mL/h", "• slightly to mildly anxious"]]]
    ],
    "two": [[["warn", "Young, post-partum: LOOKS WELL", ["her pregnancy-expanded blood volume hides a large loss"]]]]
   },
   {
    "id": "dec", "colour": "orange", "drop_label": "pressure falls",
-   "head": [[["h", "Class III–IV: over 30% lost", ["over 1500 mL"]]]],
+   "head": [[["h", "Class III–IV: over 30% lost", ["III: 1500–2000 mL (30–40%) · IV: > 2000 mL (> 40%)"]]]],
    "one": [
-    [["t", "Pulse > 120, blood pressure FALLS", ["• III: 120–140", "• IV: > 140"]]],
+    [["t", "Pulse > 120, blood pressure FALLS", ["• III: 120–140 · IV: > 140", "• pulse pressure ↓", "• breathing: III 30–40, IV > 35"]]],
     [["t", "Urine and mind fail", ["• III: 5–15 mL/h, anxious, confused", "• IV: negligible, lethargic"]]]
    ],
    "two": [[["bad", "A low blood pressure is LATE", ["she has already lost 30–40% or more"]]]]
@@ -57,7 +57,7 @@
    "id": "tri", "colour": "slate", "drop_label": "lethal triad",
    "head": [[["h", "Prevent the LETHAL TRIAD", ["acidosis, hypothermia, coagulopathy"]]]],
    "one": [
-    [["t", "Acidosis", ["• pH 7.0: factor VIIa activity ↓ 90%", "• keep perfusion: oxygen, fluids, red cells"]]],
+    [["t", "Acidosis", ["• hits calcium-dependent clotting complexes", "• pH 7.0: factor VIIa activity ↓ 90%", "• keep perfusion: oxygen, fluids, red cells"]]],
     [["t", "Hypothermia (< 35 °C)", ["• warmed IV fluids", "• Bair Hugger, Level I warmer"]]]
    ],
    "two": [[["t", "Coagulopathy: DILUTION", ["• worse at 10, 20, 30 units", "• LIMIT the blood loss"]]]]

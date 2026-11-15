@@ -1,7 +1,7 @@
 {
  "name": "pediatric ataxia overview",
  "width": 1211,
- "title": "A child with ataxia: localize it (hemisphere for limb ataxia, vermis for truncal ataxia), then sort the three most common causes (intoxication, acute postinfectious cerebellar ataxia, brain tumour) from the can't-miss causes (stroke or hemorrhage, meningitis or encephalitis, brain tumour) by the history; each column says whether to image and what to do",
+ "title": "A child with ataxia: localize it (hemisphere for limb ataxia, vermis for truncal ataxia), then sort the three most common causes (intoxication, acute postinfectious cerebellar ataxia, brain tumour) from the can't-miss causes (stroke or hemorrhage, meningitis or encephalitis, brain tumour) by the history; each column says whether to image and what to do, with the exam of a young child and Friedreich ataxia below",
  "kinds": {
   "tox_h": [
    "#1f6f8b",
@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 288,
+   "y": 360,
    "w": 225,
-   "h": 556,
+   "h": 786,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 267,
-   "y": 288,
+   "y": 360,
    "w": 225,
-   "h": 556,
+   "h": 786,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 494,
-   "y": 288,
+   "y": 360,
    "w": 225,
-   "h": 556,
+   "h": 786,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 749,
-   "y": 288,
+   "y": 360,
    "w": 225,
-   "h": 556,
+   "h": 786,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 976,
-   "y": 288,
+   "y": 360,
    "w": 225,
-   "h": 556,
+   "h": 786,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -139,19 +139,19 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 414,
-   "h": 150,
+   "y": 506,
+   "h": 306,
    "text": "HISTORY"
   },
   {
    "x": 23,
-   "y": 604,
-   "h": 96,
+   "y": 852,
+   "h": 150,
    "text": "IMAGING"
   },
   {
    "x": 23,
-   "y": 740,
+   "y": 1042,
    "h": 96,
    "text": "MANAGEMENT"
   }
@@ -165,15 +165,17 @@
    "kind": "dark",
    "title": "Child with ataxia: a SIGN, not a diagnosis",
    "lines": [
+    "cerebellum: trouble walking or sitting, falls to one side, slurred speech, low tone, intention tremor",
     "cerebellar HEMISPHERE → limbs: over- or undershoots, clumsy · VERMIS → trunk: can't sit, wide-based gait",
-    "also from vestibular disease (vertigo, vomiting) or weakness, sensory or position-sense loss",
-    "IMAGE (MRI preferred, CT more accessible) if: ANY other neurologic finding · SUBACUTE course · TRAUMA"
+    "also from vestibular disease (severe vertigo, vomiting, positional) or weakness, sensory or position-sense loss",
+    "by stage: not walking → can't sit unsupported, misreaches · walking → wide-based, unsteady, clumsy, dysmetria, intention tremor",
+    "IMAGE (MRI preferred, CT more accessible) if: ANY other neurologic finding · SUBACUTE course (weeks to months) · TRAUMA"
    ]
   },
   {
    "id": "g_c",
    "x": 45,
-   "y": 156,
+   "y": 228,
    "w": 669,
    "h": 60,
    "kind": "plain",
@@ -185,7 +187,7 @@
   {
    "id": "g_m",
    "x": 754,
-   "y": 156,
+   "y": 228,
    "w": 442,
    "h": 60,
    "kind": "plain",
@@ -197,9 +199,9 @@
   {
    "id": "tox_head_0_0",
    "x": 45,
-   "y": 296,
+   "y": 368,
    "w": 215,
-   "h": 78,
+   "h": 98,
    "kind": "tox_h",
    "title": "Intoxication",
    "lines": [
@@ -209,19 +211,21 @@
   {
    "id": "pi_head_0_0",
    "x": 272,
-   "y": 296,
+   "y": 368,
    "w": 215,
-   "h": 78,
+   "h": 98,
    "kind": "pi_h",
    "title": "Acute postinfectious cerebellar ataxia",
-   "lines": []
+   "lines": [
+    "direct viral infection or autoimmune"
+   ]
   },
   {
    "id": "tum_head_0_0",
    "x": 499,
-   "y": 296,
+   "y": 368,
    "w": 215,
-   "h": 78,
+   "h": 98,
    "kind": "tum_h",
    "title": "Brain tumour",
    "lines": [
@@ -231,19 +235,21 @@
   {
    "id": "str_head_0_0",
    "x": 754,
-   "y": 296,
+   "y": 368,
    "w": 215,
-   "h": 78,
+   "h": 98,
    "kind": "str_h",
    "title": "Stroke · hemorrhage · infarction",
-   "lines": []
+   "lines": [
+    "cerebellar vessel blocked or bleeding"
+   ]
   },
   {
    "id": "men_head_0_0",
    "x": 981,
-   "y": 296,
+   "y": 368,
    "w": 215,
-   "h": 78,
+   "h": 98,
    "kind": "men_h",
    "title": "Meningitis · encephalitis",
    "lines": [
@@ -253,37 +259,62 @@
   {
    "id": "tox_pres_0_0",
    "x": 45,
-   "y": 414,
+   "y": 506,
    "w": 215,
-   "h": 150,
+   "h": 168,
    "kind": "tox_t",
    "title": "Access + ingestion",
    "lines": [
     "• ethanol, anticonvulsants, cough syrup",
     "• witnessed or known; unsupervised time",
-    "• abuse red flags",
+    "• abuse red flags: bruises, changing story",
     "• improves with supportive care"
+   ]
+  },
+  {
+   "id": "tox_pres_1_0",
+   "x": 45,
+   "y": 696,
+   "w": 215,
+   "h": 116,
+   "kind": "tox_w",
+   "title": "case: 2, unsteady + slow for 2 hours",
+   "lines": [
+    "somnolent · sibling's carbamazepine within reach → poison control"
    ]
   },
   {
    "id": "pi_pres_0_0",
    "x": 272,
-   "y": 414,
+   "y": 506,
    "w": 215,
-   "h": 150,
+   "h": 179,
    "kind": "pi_t",
    "title": "Viral illness 1-4 weeks before",
    "lines": [
-    "• well, afebrile",
-    "• no headache"
+    "• varicella, mono, respiratory or gut virus",
+    "• ABRUPT, worse over 1-2 days, better over weeks",
+    "• well, afebrile · no headache"
+   ]
+  },
+  {
+   "id": "pi_pres_1_0",
+   "x": 272,
+   "y": 707,
+   "w": 215,
+   "h": 105,
+   "kind": "pi_w",
+   "title": "case: 3, 'drunk' for 2 days",
+   "lines": [
+    "afebrile, well · daycare viruses within a month · wide-based gait"
    ]
   },
   {
    "id": "tum_pres_0_0",
    "x": 499,
-   "y": 414,
+   "y": 506,
    "w": 215,
-   "h": 150,
+   "h": 152,
    "kind": "tum_t",
    "title": "PROGRESSIVE over weeks",
    "lines": [
@@ -292,11 +323,23 @@
    ]
   },
   {
+   "id": "tum_pres_1_0",
+   "x": 499,
+   "y": 680,
+   "w": 215,
+   "h": 132,
+   "kind": "tum_w",
+   "title": "case: 5, clumsy 1 month",
+   "lines": [
+    "after a virus · headaches (family migraine) · marked LEFT dysmetria → medulloblastoma"
+   ]
+  },
+  {
    "id": "str_pres_0_0",
    "x": 754,
-   "y": 414,
+   "y": 506,
    "w": 215,
-   "h": 150,
+   "h": 306,
    "kind": "str_t",
    "title": "ABRUPT onset",
    "lines": [
@@ -308,9 +351,9 @@
   {
    "id": "men_pres_0_0",
    "x": 981,
-   "y": 414,
+   "y": 506,
    "w": 215,
-   "h": 150,
+   "h": 306,
    "kind": "men_t",
    "title": "FEVER + meningismus",
    "lines": [
@@ -321,21 +364,22 @@
   {
    "id": "tox_inv_0_0",
    "x": 45,
-   "y": 604,
+   "y": 852,
    "w": 215,
-   "h": 96,
+   "h": 150,
    "kind": "ok",
    "title": "NO imaging",
    "lines": [
-    "if not very altered and can be watched in the emergency department"
+    "if not very altered and can be watched in the emergency department",
+    "case: 4, empty dextromethorphan bottle → no imaging"
    ]
   },
   {
    "id": "pi_inv_0_0",
    "x": 272,
-   "y": 604,
+   "y": 852,
    "w": 215,
-   "h": 96,
+   "h": 150,
    "kind": "warn",
    "title": "LOW threshold to image",
    "lines": [
@@ -345,39 +389,44 @@
   {
    "id": "tum_inv_0_0",
    "x": 499,
-   "y": 604,
+   "y": 852,
    "w": 215,
-   "h": 96,
+   "h": 150,
    "kind": "bad",
    "title": "IMAGE",
-   "lines": []
+   "lines": [
+    "case: 6, clumsy + headaches 3 months, dysmetria only"
+   ]
   },
   {
    "id": "str_inv_0_0",
    "x": 754,
-   "y": 604,
+   "y": 852,
    "w": 215,
-   "h": 96,
+   "h": 150,
    "kind": "bad",
    "title": "IMAGE",
-   "lines": []
+   "lines": [
+    "case: 3, unsteady after a chiropractor that afternoon"
+   ]
   },
   {
    "id": "men_inv_0_0",
    "x": 981,
-   "y": 604,
+   "y": 852,
    "w": 215,
-   "h": 96,
+   "h": 150,
    "kind": "bad",
    "title": "IMAGE",
    "lines": [
-    "then lumbar puncture"
+    "then lumbar puncture",
+    "case: 7, fever 4 days, vomiting, overshoots, stiff neck"
    ]
   },
   {
    "id": "tox_tx_0_0",
    "x": 45,
-   "y": 740,
+   "y": 1042,
    "w": 215,
    "h": 96,
    "kind": "warn",
@@ -389,7 +438,7 @@
   {
    "id": "pi_tx_0_0",
    "x": 272,
-   "y": 740,
+   "y": 1042,
    "w": 215,
    "h": 96,
    "kind": "ok",
@@ -402,7 +451,7 @@
   {
    "id": "tum_tx_0_0",
    "x": 499,
-   "y": 740,
+   "y": 1042,
    "w": 215,
    "h": 96,
    "kind": "bad",
@@ -414,7 +463,7 @@
   {
    "id": "str_tx_0_0",
    "x": 754,
-   "y": 740,
+   "y": 1042,
    "w": 215,
    "h": 96,
    "kind": "bad",
@@ -426,7 +475,7 @@
   {
    "id": "men_tx_0_0",
    "x": 981,
-   "y": 740,
+   "y": 1042,
    "w": 215,
    "h": 96,
    "kind": "bad",
@@ -438,19 +487,34 @@
   {
    "from": "root",
    "to": "g_c",
-   "path": "M620.5 106V131H379.5V156"
+   "path": "M620.5 178V203H379.5V228"
   },
   {
    "from": "root",
    "to": "g_m",
-   "path": "M620.5 106V131H975.0V156"
+   "path": "M620.5 178V203H975.0V228"
+  },
+  {
+   "from": "tox_pres_0_0",
+   "to": "tox_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "pi_pres_0_0",
+   "to": "pi_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "tum_pres_0_0",
+   "to": "tum_pres_1_0",
+   "dashed": true
   },
   {
    "from": "tox_head_0_0",
    "to": "tox_pres_0_0"
   },
   {
-   "from": "tox_pres_0_0",
+   "from": "tox_pres_1_0",
    "to": "tox_inv_0_0"
   },
   {
@@ -464,7 +528,7 @@
    "label": "ingestion",
    "label_at": [
     152.5,
-    256
+    328
    ]
   },
   {
@@ -472,7 +536,7 @@
    "to": "pi_pres_0_0"
   },
   {
-   "from": "pi_pres_0_0",
+   "from": "pi_pres_1_0",
    "to": "pi_inv_0_0"
   },
   {
@@ -486,7 +550,7 @@
    "label": "after a virus",
    "label_at": [
     379.5,
-    256
+    328
    ]
   },
   {
@@ -494,7 +558,7 @@
    "to": "tum_pres_0_0"
   },
   {
-   "from": "tum_pres_0_0",
+   "from": "tum_pres_1_0",
    "to": "tum_inv_0_0"
   },
   {
@@ -508,7 +572,7 @@
    "label": "progressive",
    "label_at": [
     606.5,
-    256
+    328
    ]
   },
   {
@@ -530,7 +594,7 @@
    "label": "abrupt",
    "label_at": [
     861.5,
-    256
+    328
    ]
   },
   {
@@ -552,9 +616,37 @@
    "label": "fever",
    "label_at": [
     1088.5,
-    256
+    328
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1172,
+   "w": 568,
+   "title": "Examining a child under 5",
+   "items": [
+    "over 5: full adult neurologic exam",
+    "dysmetria: reach for a favourite toy or food with each hand · watch for tremor",
+    "nystagmus: follow a toy across the visual field",
+    "sensation: poke a foot while distracted, does the child look?",
+    "gait: caregiver steps away · toddlers are wide-based anyway, ask if it is NEW",
+    "speech: slurred?"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 628,
+   "y": 1172,
+   "w": 568,
+   "title": "Hereditary: Friedreich ataxia",
+   "items": [
+    "autosomal RECESSIVE",
+    "slowly progressive ataxia · dysarthria",
+    "ABSENT tendon reflexes · nystagmus"
+   ],
+   "cols": 1
+  }
+ ]
 }

@@ -123,7 +123,8 @@
       "h",
       "Type 1, stages 1–2",
       [
-       "beta-cell autoimmunity, NO symptoms yet"
+       "beta-cell autoimmunity, NO symptoms yet",
+      "autoantibodies in up to 85%: insulin, GAD (most specific, 70%), IA-2, zinc transporter 8"
       ]
      ]
     ]
@@ -147,7 +148,7 @@
       "1 · COUNT the islet autoantibodies",
       [
        "• 1 alone: no added risk",
-       "• 2 or more: risk climbs with each"
+       "• 2: 25% in 5 years · 3: 40%"
       ]
      ]
     ],
@@ -166,7 +167,8 @@
        "glucose in the GREY ZONE"
       ]
      ]
-    ]
+    ],
+    [["w", "case: sibling with type 1", ["anti-GAD + anti-insulin · fasting 6.5 → STAGE 2"]]]
    ],
    "tx": [
     [
@@ -191,7 +193,8 @@
       "h",
       "Type 1: new onset (stage 3)",
       [
-       "autoimmune beta-cell loss → ABSOLUTE insulin deficiency"
+       "autoimmune beta-cell loss → ABSOLUTE insulin deficiency",
+       "alpha cells SPARED · 'starvation': glycogenolysis + gluconeogenesis"
       ]
      ]
     ]
@@ -215,7 +218,8 @@
        "→ diabetic ketoacidosis (DKA): see the COMPLICATIONS chart"
       ]
      ]
-    ]
+    ],
+    [["t", "Exam", ["• hydration · weight loss · consciousness", "• Kussmaul breathing · acetone breath"]]]
    ],
    "inv": [
     [
@@ -223,15 +227,17 @@
       "t",
       "1 · Random glucose ≥ 11.1",
       [
-       "+ urine dipstick: glucose AND ketones"
+       "+ urine dipstick: glucose AND ketones",
+       "case: 8-year-old · random 18.9 · urine glucose ++, ketones +"
       ]
      ]
     ],
+    [["w", "2 · C-peptide · blood gas if DKA suspected", []]],
     [
      [
       "w",
       "Fasting glucose, A1c: usually unnecessary",
-      []
+      ["A1c is NOT a type 1 criterion"]
      ]
     ]
    ],
@@ -243,6 +249,7 @@
       [
        "• 3/day: intermediate (NPH) + fast-acting",
        "• 4/day: long-acting + fast-acting, or a pump",
+       "• units/kg/day: onset < 0.5 · pre-puberty 0.7–1.0 · puberty 1.0–2.0",
        "~lows: see the COMPLICATIONS chart"
       ]
      ]
@@ -254,10 +261,13 @@
       [
        "• glucose 4×/day, every 2–3 h when ill",
        "• carbohydrate counting",
-       "• pumps, continuous glucose monitors"
+       "• pumps, continuous glucose monitors",
+       "• under 18: fasting 4–8 · after meals 5–10 · A1c < 7.5%",
+       "• annual urine albumin"
       ]
      ]
-    ]
+    ],
+    [["warn", "Intensive insulin (DCCT): A1c 7% vs 9%", ["• microvascular complications ↓", "• but HYPOGLYCEMIA ↑ (pumps, monitors offset it)"]]]
    ]
   },
   {
@@ -271,7 +281,8 @@
       "h",
       "Type 2",
       [
-       "insulin RESISTANCE + RELATIVE deficiency: both present by diagnosis"
+       "insulin RESISTANCE + RELATIVE deficiency: both present by diagnosis",
+       "> 90% of all diabetes · no autoantibodies"
       ]
      ]
     ]
@@ -293,7 +304,9 @@
       "Risk",
       [
        "• parent with type 2, previous gestational diabetes",
-       "• Asian, South Asian, Hispanic, Indigenous, African descent"
+       "• Asian, South Asian, Hispanic, Indigenous, African descent",
+       "• identical twin 90% (type 1: 50%) · 40% have an affected parent",
+       "• birth-weight extremes · high glucose in utero"
       ]
      ]
     ]
@@ -314,6 +327,7 @@
       "2 · Metabolic syndrome as well?",
       [
        "→ even higher cardiovascular risk",
+       "• triglycerides ↑, HDL ↓, small dense LDL",
        "• also ask about sleep apnea"
       ]
      ]
@@ -341,5 +355,12 @@
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {"title": "Type 2: the ominous octet (each a drug target)", "items": [
+   "beta cell: insulin ↓, 80% of function lost by PREDIABETES → sulfonylureas, incretins",
+   "alpha cell: glucagon ↑ · liver: glucose output ↑ → metformin",
+   "kidney: SGLT2 ↑ reabsorption → SGLT2 inhibitors · brain: satiety ↓ → GLP-1 agonists",
+   "muscle: uptake ↓ → thiazolidinediones · fat: lipolysis ↑, free fatty acids ↑",
+   "gut: GIP ↑ but response ↓, GLP-1 ↓ → GLP-1 agonists, DPP-4 inhibitors"]}
+ ]
 }

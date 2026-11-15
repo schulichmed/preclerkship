@@ -5,7 +5,8 @@
  "root": {
   "title": "Shoulder bones and joints: WHERE is it, and is PASSIVE motion lost too?",
   "lines": [
-   "rotator cuff disease (active motion << passive) is on the MUSCLES OF THE SHOULDER chart"
+   "acute injury = AC instability · gradual = arthritis · stiff with a normal X-ray, no trauma = adhesive capsulitis",
+   "always conservative first: surgery only once it is exhausted · rotator cuff disease (active motion << passive) is on the MUSCLES OF THE SHOULDER chart"
   ]
  },
  "groups": [
@@ -20,7 +21,7 @@
   {
    "id": "acs", "colour": "teal", "drop_label": "injury",
    "head": [[["h", "AC separation", ["acute injury"]]]],
-   "pres": [[["t", "Blow to the tip of the shoulder", ["clavicle rides up, acromion stands out"]]]],
+   "pres": [[["t", "Blow to the tip of the shoulder", ["clavicle rides up, acromion stands out", "case: 47 rower → education, ice, sling, early motion"]]]],
    "inv": [[["w", "X-ray: type I → V", ["by increasing displacement"]]]],
    "tx": [
     [["ok", "Types I–III", ["education · sling · analgesics · ice · early exercises"]]],
@@ -45,7 +46,8 @@
    "tx": [
     [["ok", "1 · Nonoperative", ["education · activity modification · medications · physiotherapy"]]],
     [["warn", "2 · Debridement", ["young: eases 'catching', NOT curative"]]],
-    [["warn", "3 · Replacement", ["anatomic or reverse · 85% good or excellent", "90% last 10 years"]]]
+    [["warn", "3 · Replacement", ["anatomic (reverse rarely needed) · 85% good or excellent", "90% last 10 years"]]],
+    [["bad", "Replacement complications", ["infection · loosening · instability · fracture · progressive cuff disease"]]]
    ]
   },
   {
@@ -55,12 +57,12 @@
    "inv": [[["w", "X-ray", ["• SYMMETRIC joint space", "• erosions · bone deformity", "• osteopenia"]]]],
    "tx": [
     [["ok", "1 · Nonoperative", ["education · activity modification · medications · physiotherapy"]]],
-    [["warn", "2 · Replacement", ["anatomic or reverse · 85% good or excellent", "90% last 10 years"]]]
+    [["warn", "2 · Replacement", ["anatomic or REVERSE (inflammatory, cuff disease) · 85% good or excellent", "90% last 10 years"]]]
    ]
   },
   {
    "id": "tri", "colour": "orange", "drop_label": "trauma",
-   "head": [[["h", "Traumatic", ["'torn loose' · ONE direction"]]]],
+   "head": [[["h", "Traumatic", ["'torn loose' · ONE direction · surgery often"]]]],
    "pres": [[["t", "Dislocation after injury", ["anterior >> posterior"]]]],
    "inv": [[["w", "X-ray before and after reduction", ["• direction", "• subluxed or dislocated"]]]],
    "tx": [
@@ -71,7 +73,7 @@
   {
    "id": "atr", "colour": "purple", "drop_label": "no trauma",
    "head": [[["h", "Atraumatic", ["'born loose' · AMBRI"]]]],
-   "pres": [[["t", "Multidirectional · Bilateral", ["motor control poor"]]]],
+   "pres": [[["t", "Multidirectional · Bilateral", ["motor control poor", "case: a dozen dislocations, both shoulders, pops out on its own → physiotherapy"]]]],
    "inv": [[["w", "Ligament laxity", ["? connective tissue disorder · ? poor motor control"]]]],
    "tx": [
     [["ok", "1 · REHAB", ["physiotherapy · muscle control"]]],
@@ -80,8 +82,8 @@
   },
   {
    "id": "adh", "colour": "blue",
-   "head": [[["h", "Adhesive capsulitis", ["20% of diabetics · 40s–50s"]]]],
-   "pres": [[["t", "Spontaneous GLOBAL stiffness", ["active AND passive lost"]]]],
+   "head": [[["h", "Adhesive capsulitis", ["2% of adults · 20% of diabetics · 40s–50s", "mostly idiopathic"]]]],
+   "pres": [[["t", "Spontaneous GLOBAL stiffness", ["active AND passive lost", "• with diabetes, cervical disc, thyroid, cardiac disease", "case: 47, diabetic, 4 months of pain, progressive loss of motion"]]]],
    "inv": [[["w", "X-ray NORMAL, no trauma", ["rules out arthritis and post-traumatic deformity"]]]],
    "tx": [
     [["ok", "1 · Education · pain control", ["usually self-limited · physiotherapy unproven"]]],
@@ -91,7 +93,7 @@
   }
  ],
  "panels": [
-  {"title": "Frozen shoulder runs in stages", "items": ["freezing (inflammatory) → frozen → thawing"]},
-  {"title": "What keeps the head centred", "items": ["ligaments + labrum matter most · bones · rotator cuff · nerves", "reduced → subluxated → dislocated is a continuum"]}
+  {"title": "Stiff shoulder: causes and stages", "items": ["intra-articular: arthritis, post-traumatic deformity · extra-articular: capsular, muscular, heterotopic bone · combined", "frozen shoulder: freezing (inflammatory) → frozen → thawing"]},
+  {"title": "What keeps the head centred", "items": ["ligaments + labrum matter most · bones · rotator cuff · nerves", "labrum: more surface area, more depth, bumper effect", "reduced → subluxated → dislocated is a continuum", "diagnose by onset (traumatic or not) · direction (anterior, posterior, inferior) · degree"]}
  ]
 }

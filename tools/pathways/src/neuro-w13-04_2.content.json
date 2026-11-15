@@ -5,8 +5,9 @@
  "root": {
   "title": "Abnormal movement, power NORMAL: cerebellum or basal ganglia?",
   "lines": [
-   "both are SIDE LOOPS: cortex → loop → thalamus → cortex",
-   "no upper motor neurons of their own, so NOT an upper motor neuron disorder"
+   "both are SIDE LOOPS: cortex → loop → thalamus → cortex · both also project to the brainstem",
+   "no upper motor neurons of their own, so NOT an upper motor neuron disorder",
+   "cerebellum: corrects errors + learns skills · basal ganglia: release wanted, suppress unwanted movement"
   ]
  },
  "groups": [
@@ -19,7 +20,8 @@
    "title": "CEREBELLUM: movement starts, but is INACCURATE",
    "lines": [
     "signs on the SAME side as the lesion",
-    "stable or slowly improve"
+    "stable or slowly improve",
+    "the REPAIR SHOP: masks lesions elsewhere · its own lesions last"
    ]
   },
   {
@@ -30,6 +32,7 @@
    ],
    "title": "BASAL GANGLIA: release vs suppress is off",
    "lines": [
+    "globus pallidus fires at rest → inhibits thalamus",
     "dopamine: direct pathway UP, indirect DOWN"
    ]
   }
@@ -109,6 +112,7 @@
       [
        "• ataxic gait, poor leg control",
        "• falls walking heel-to-toe",
+       "• \"drunk-driver test\"",
        "• hypotonia: LOW tone"
       ]
      ]
@@ -120,6 +124,7 @@
       "w",
       "Tunes ongoing movement + tone",
       [
+       "in: vision, hearing, skin + muscle afferents",
        "out: fastigial and interposed nuclei → spinal cord"
       ]
      ]
@@ -148,8 +153,9 @@
       [
        "• dysmetria: misses the target",
        "• dyssynergia: segments uncoordinated",
-       "• INTENTION tremor, near the end",
-       "• fails finger-to-nose"
+       "• INTENTION tremor: near the end or holding a position",
+       "• fails finger-to-nose",
+       "• often one-sided (stroke)"
       ]
      ]
     ]
@@ -160,8 +166,10 @@
       "w",
       "Adds skill + coordination",
       [
+       "in: copy of the cortical motor command",
        "out: dentate nucleus → motor and premotor cortex",
-       "no tremor at rest"
+       "no tremor at rest",
+       "tremor: long-loop reflex via cortex over-responds"
       ]
      ]
     ]
@@ -188,9 +196,10 @@
       "Can't START",
       [
        "• akinesia: needs an outside cue",
-       "• slow (bradykinesia), freezing",
-       "• tremor at REST, eases with movement",
-       "• RIGIDITY: HIGH tone"
+       "• slow (bradykinesia), freezing, shuffling",
+       "• tremor at REST: pill-rolling, hand first, eases with movement",
+       "• RIGIDITY: agonist + antagonist co-contract",
+       "• spared: practised or cued acts (rides a bike)"
       ]
      ]
     ]
@@ -202,8 +211,9 @@
       "Pars compacta dopamine cells die",
       [
        "→ too much inhibition of the thalamus",
+       "→ too little drive to motor cortex",
        "WORSENS over time",
-       "treat: L-dopa"
+       "treat: L-dopa (precursor, crosses blood-brain barrier)"
       ]
      ]
     ]
@@ -229,7 +239,8 @@
       "t",
       "Can't SUPPRESS",
       [
-       "• spontaneous, unwanted movements"
+       "• spontaneous, unwanted movements",
+       "• Tourette: inappropriate utterances released"
       ]
      ]
     ]
@@ -248,5 +259,21 @@
     ]
    ]
   }
+ ],
+ "panels": [
+  {"title": "Cerebellar circuit + motor learning", "items": [
+   "same circuit in every zone · half the brain's neurons",
+   "mossy → parallel fibres → Purkinje: weak, wide (~200,000 per cell)",
+   "Purkinje cells INHIBIT deep nuclei: the ONLY output",
+   "climbing fibre = error signal: teacher · parallel fibre = student",
+   "adjusts vestibulo-ocular reflex gain (aging, new glasses)",
+   "cerebellar patient + prisms: NO adaptation, no after-effect"]},
+  {"title": "Basal ganglia circuit", "items": [
+   "in: cortex → striatum (caudate + putamen)",
+   "out: globus pallidus → thalamus → motor cortex",
+   "direct: striatum inhibits pallidus → DISINHIBITS thalamus → movement",
+
+   "indirect: extra pallidal synapse + subthalamic loop → inhibits",
+   "pars reticulata → superior colliculus: eye movements"]}
  ]
 }

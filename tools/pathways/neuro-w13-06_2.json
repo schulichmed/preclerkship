@@ -115,49 +115,49 @@
  "bands": [
   {
    "x": 40,
-   "y": 306,
+   "y": 342,
    "w": 168,
-   "h": 584,
+   "h": 828,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
   {
    "x": 210,
-   "y": 306,
+   "y": 342,
    "w": 168,
-   "h": 584,
+   "h": 828,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 380,
-   "y": 306,
+   "y": 342,
    "w": 168,
-   "h": 584,
+   "h": 828,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 550,
-   "y": 306,
+   "y": 342,
    "w": 168,
-   "h": 584,
+   "h": 828,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 748,
-   "y": 306,
+   "y": 342,
    "w": 168,
-   "h": 584,
+   "h": 828,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 918,
-   "y": 306,
+   "y": 342,
    "w": 168,
-   "h": 584,
+   "h": 828,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -165,14 +165,14 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 432,
-   "h": 222,
+   "y": 468,
+   "h": 448,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 694,
-   "h": 188,
+   "y": 956,
+   "h": 206,
    "text": "CAUSES"
   }
  ],
@@ -187,13 +187,15 @@
    "lines": [
     "upper motor neuron (UMN), brain or cord: subtle bulk loss, tone ↑, hyperreflexia, upgoing toe",
     "lower motor neuron (LMN), root or nerve: wasting, tone ↓, reflexes ↓ or absent",
-    "NO motor or sensory function below the level, incl. rectal tone + perianal sensation = COMPLETE"
+    "NO motor or sensory function below the level, incl. rectal tone + perianal sensation = COMPLETE",
+    "corticospinal crosses at the medullary PYRAMIDS · light touch uses both sensory pathways",
+    "cord: UMN signs + a SYNDROME · root: LMN signs, more isolated · cord ends ~L1/L2, then cauda equina"
    ]
   },
   {
    "id": "g_cord",
    "x": 45,
-   "y": 156,
+   "y": 192,
    "w": 668,
    "h": 78,
    "kind": "plain",
@@ -206,7 +208,7 @@
   {
    "id": "g_root",
    "x": 753,
-   "y": 156,
+   "y": 192,
    "w": 328,
    "h": 78,
    "kind": "plain",
@@ -219,7 +221,7 @@
   {
    "id": "ant_head_0_0",
    "x": 45,
-   "y": 314,
+   "y": 350,
    "w": 158,
    "h": 78,
    "kind": "ant_h",
@@ -231,7 +233,7 @@
   {
    "id": "post_head_0_0",
    "x": 215,
-   "y": 314,
+   "y": 350,
    "w": 158,
    "h": 78,
    "kind": "post_h",
@@ -243,7 +245,7 @@
   {
    "id": "cent_head_0_0",
    "x": 385,
-   "y": 314,
+   "y": 350,
    "w": 158,
    "h": 78,
    "kind": "cent_h",
@@ -255,7 +257,7 @@
   {
    "id": "bs_head_0_0",
    "x": 555,
-   "y": 314,
+   "y": 350,
    "w": 158,
    "h": 78,
    "kind": "bs_h",
@@ -267,7 +269,7 @@
   {
    "id": "ce_head_0_0",
    "x": 753,
-   "y": 314,
+   "y": 350,
    "w": 158,
    "h": 78,
    "kind": "ce_h",
@@ -279,7 +281,7 @@
   {
    "id": "rad_head_0_0",
    "x": 923,
-   "y": 314,
+   "y": 350,
    "w": 158,
    "h": 78,
    "kind": "rad_h",
@@ -291,9 +293,9 @@
   {
    "id": "ant_pres_0_0",
    "x": 45,
-   "y": 432,
+   "y": 468,
    "w": 158,
-   "h": 222,
+   "h": 448,
    "kind": "ant_t",
    "title": "Motor + pain LOST",
    "lines": [
@@ -307,9 +309,9 @@
   {
    "id": "post_pres_0_0",
    "x": 215,
-   "y": 432,
+   "y": 468,
    "w": 158,
-   "h": 222,
+   "h": 448,
    "kind": "post_t",
    "title": "Vibration + position LOST",
    "lines": [
@@ -320,36 +322,38 @@
   {
    "id": "cent_pres_0_0",
    "x": 385,
-   "y": 432,
+   "y": 468,
    "w": 158,
-   "h": 222,
+   "h": 448,
    "kind": "cent_t",
    "title": "HANDS worst",
    "lines": [
     "• strength returns up the arm",
-    "• 'cape-like' pain, temperature loss",
+    "• 'cape-like' (suspended) pain, temperature loss",
+    "• dissociated sensory loss",
     "• light touch, dorsal columns spared"
    ]
   },
   {
    "id": "bs_pres_0_0",
    "x": 555,
-   "y": 432,
+   "y": 468,
    "w": 158,
-   "h": 222,
+   "h": 448,
    "kind": "bs_t",
    "title": "Split by side",
    "lines": [
-    "• SAME side: motor, vibration, position",
-    "• OPPOSITE side: pain, temperature"
+    "• SAME side below: paralysis, vibration, position lost",
+    "• OPPOSITE side below: pain, temperature lost",
+    "• opposite strength kept"
    ]
   },
   {
    "id": "ce_pres_0_0",
    "x": 753,
-   "y": 432,
+   "y": 468,
    "w": 158,
-   "h": 222,
+   "h": 448,
    "kind": "ce_t",
    "title": "Both legs",
    "lines": [
@@ -362,9 +366,9 @@
   {
    "id": "rad_pres_0_0",
    "x": 923,
-   "y": 432,
+   "y": 468,
    "w": 158,
-   "h": 222,
+   "h": 150,
    "kind": "rad_t",
    "title": "One root",
    "lines": [
@@ -375,26 +379,39 @@
    ]
   },
   {
+   "id": "rad_pres_1_0",
+   "x": 923,
+   "y": 640,
+   "w": 158,
+   "h": 276,
+   "kind": "rad_w",
+   "title": "Cases",
+   "lines": [
+    "• right C6: wakes with neck pain, can't lift toolbox, thumb 'wooden' · biceps, brachioradialis 4/5 + reflexes ↓ · outer arm, radial forearm numb",
+    "• right S1: back pain down the back of the leg to the sole · weak plantar flexion, ankle reflex ↓ · sole numb · straight leg raise +"
+   ]
+  },
+  {
    "id": "ant_cause_0_0",
    "x": 45,
-   "y": 694,
+   "y": 956,
    "w": 158,
-   "h": 188,
+   "h": 206,
    "kind": "ant_w",
    "title": "Anterior spinal artery occluded",
    "lines": [
     "• atherosclerosis",
     "• aortic aneurysm, dissection, thrombosis, surgery",
-    "• compression: disc, tumour, osteophyte",
+    "• compression: disc, tumour, osteophyte, kyphoscoliosis",
     "• stab wound"
    ]
   },
   {
    "id": "post_cause_0_0",
    "x": 215,
-   "y": 694,
+   "y": 956,
    "w": 158,
-   "h": 188,
+   "h": 206,
    "kind": "post_w",
    "title": "Causes",
    "lines": [
@@ -407,9 +424,9 @@
   {
    "id": "cent_cause_0_0",
    "x": 385,
-   "y": 694,
+   "y": 956,
    "w": 158,
-   "h": 188,
+   "h": 206,
    "kind": "cent_w",
    "title": "Causes",
    "lines": [
@@ -422,9 +439,9 @@
   {
    "id": "bs_cause_0_0",
    "x": 555,
-   "y": 694,
+   "y": 956,
    "w": 158,
-   "h": 188,
+   "h": 206,
    "kind": "bs_w",
    "title": "Causes",
    "lines": [
@@ -435,9 +452,9 @@
   {
    "id": "ce_cause_0_0",
    "x": 753,
-   "y": 694,
+   "y": 956,
    "w": 158,
-   "h": 188,
+   "h": 206,
    "kind": "ce_w",
    "title": "Not the cord itself",
    "lines": [
@@ -447,9 +464,9 @@
   {
    "id": "rad_cause_0_0",
    "x": 923,
-   "y": 694,
+   "y": 956,
    "w": 158,
-   "h": 188,
+   "h": 206,
    "kind": "rad_w",
    "title": "Disc herniation",
    "lines": [
@@ -463,12 +480,17 @@
   {
    "from": "root",
    "to": "g_cord",
-   "path": "M563.0 106V131H379.0V156"
+   "path": "M563.0 142V167H379.0V192"
   },
   {
    "from": "root",
    "to": "g_root",
-   "path": "M563.0 106V131H917.0V156"
+   "path": "M563.0 142V167H917.0V192"
+  },
+  {
+   "from": "rad_pres_0_0",
+   "to": "rad_pres_1_0",
+   "dashed": true
   },
   {
    "from": "ant_head_0_0",
@@ -540,7 +562,7 @@
    "to": "rad_pres_0_0"
   },
   {
-   "from": "rad_pres_0_0",
+   "from": "rad_pres_1_0",
    "to": "rad_cause_0_0"
   },
   {
@@ -549,5 +571,19 @@
    "from_dx": 85
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1196,
+   "w": 1036,
+   "title": "Cord causes: not just trauma or tumour",
+   "items": [
+    "vascular: stroke, AVM, fistula · infectious: epidural abscess, viral, syphilis (tabes dorsalis)",
+    "trauma: fracture, stab, disc, radiation · autoimmune: lupus · metabolic: B12 (subacute combined degeneration)",
+    "inflammatory: multiple sclerosis · also: transverse myelitis, syrinx · neoplastic: metastatic, extradural, intrinsic",
+    "congenital: achondroplasia · degenerative: disc herniation, arthritis, motor neuron disease (ALS)"
+   ],
+   "cols": 1
+  }
+ ]
 }

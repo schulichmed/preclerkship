@@ -1,488 +1,75 @@
 {
  "name": "monocular vision loss overview",
- "title": "Vision loss in one eye: sudden painless loss is sorted by the pupils and the fundus into central retinal artery occlusion, giant cell arteritis, optic neuritis, retinal detachment and vitreous hemorrhage; gradual loss is sorted by which part of vision goes into glaucoma, cataract and macular degeneration; each column gives the presentation, the exam finding that decides it and what to do",
+ "title": "Vision loss in one eye: sudden painless loss is sorted by the pupils and the fundus into central retinal artery occlusion, giant cell arteritis, optic neuritis, retinal detachment and vitreous hemorrhage; gradual loss is sorted by which part of vision goes into glaucoma, cataract and macular degeneration; each column gives the presentation, the exam finding that decides it and what to do, with glaucoma and cataract risk factors below",
  "col_w": 196,
  "root": {
   "title": "Vision loss in ONE eye: the problem is in FRONT of the optic chiasm",
   "lines": [
-   "ask: pain? sudden or gradual? all or part of the field? baseline acuity? diabetes, hypertension, eye history",
-   "examine: acuity · confrontation fields · swinging flashlight (RAPD = retina or optic nerve) · red reflex · pressure",
+   "both eyes → behind the chiasm",
+   "ask: pain? transient, persistent or progressive? abrupt or over hours, days, weeks? all or part of the field? baseline acuity? diabetes, vascular, autoimmune, hypertension · retinopathy, glaucoma, eye surgery, contact lenses",
+   "examine: acuity · confrontation fields · swinging flashlight: RAPD (Marcus Gunn) = pupil DILATES when light moves to the bad eye → retina or optic nerve · red reflex: dull = media opacity (cornea, lens, vitreous) · pressure",
    "PAINFUL: cornea, uveitis, acute angle closure (see the RED EYE chart)"
   ]
  },
  "groups": [
-  {
-   "id": "g_ac",
-   "cols": [
-    0,
-    4
-   ],
-   "title": "SUDDEN + PAINLESS: what do the pupil and the fundus show?",
-   "lines": [
-    "emergency measures + ophthalmology for CRAO, ischemic optic neuropathy, GCA"
-   ]
-  },
-  {
-   "id": "g_ch",
-   "cols": [
-    5,
-    7
-   ],
-   "title": "GRADUAL: which part of vision goes?",
-   "lines": [
-    "refer, but not same-day unless pressure > 30"
-   ]
-  }
+  {"id": "g_ac", "cols": [0, 4], "title": "SUDDEN + PAINLESS: what do the pupil and the fundus show?", "lines": ["emergency measures + ophthalmology for CRAO, ischemic optic neuropathy, GCA"]},
+  {"id": "g_ch", "cols": [5, 7], "title": "GRADUAL: which part of vision goes?", "lines": ["refer, but not same-day unless pressure > 30"]}
  ],
- "sections": [
-  "head",
-  "pres",
-  "inv",
-  "tx"
- ],
- "row_names": {
-  "pres": "PRESENTS AS",
-  "inv": "EXAM",
-  "tx": "WHAT TO DO"
- },
+ "sections": ["head", "pres", "inv", "tx"],
+ "row_names": {"pres": "PRESENTS AS", "inv": "EXAM", "tx": "WHAT TO DO"},
  "columns": [
-  {
-   "id": "crao",
-   "colour": "slate",
-   "drop_label": "white retina",
-   "head": [
-    [
-     [
-      "h",
-      "Central retinal artery occlusion",
-      [
-       "EMERGENCY"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Sudden, SEVERE",
-      [
-       "• older, hypertension",
-       "• acuity: hand motion"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "RAPD + retina",
-      [
-       "• WHITE opacified retina",
-       "• CHERRY-RED macular spot"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "bad",
-      "Ocular massage NOW",
-      [
-       "• heel of hand: 10 s press, 10 s release, for 5 min",
-       "• EMERGENT referral"
-      ]
-     ]
-    ],
-    [
-     [
-      "warn",
-      "Find the source",
-      [
-       "carotid atheroma, heart valves"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "gca",
-   "colour": "orange",
-   "drop_label": "swollen disc, older",
-   "head": [
-    [
-     [
-      "h",
-      "Giant cell arteritis",
-      [
-       "EMERGENCY: can blind both eyes"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Older + new headache",
-      [
-       "• jaw claudication",
-       "• scalp tenderness",
-       "• weight loss, polymyalgia rheumatica"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "RAPD + SWOLLEN disc",
-      [
-       "• flame-shaped hemorrhages",
-       "• ESR + CRP NOW (ESR usually > 60)"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "bad",
-      "Steroids NOW",
-      [
-       "• visual symptoms: IV methylprednisolone 1 g × 3 days",
-       "• none: prednisone 40-60 mg daily"
-      ]
-     ]
-    ],
-    [
-     [
-      "warn",
-      "EMERGENT referral",
-      [
-       "temporal artery biopsy"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "on",
-   "colour": "purple",
-   "drop_label": "swollen disc, young",
-   "head": [
-    [
-     [
-      "h",
-      "Optic neuritis",
-      []
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Healthy YOUNG woman",
-      [
-       "• sudden, painless",
-       "• acuity reduced"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "RAPD + SWOLLEN disc",
-      [
-       "• clear media, clear red reflex",
-       "• normal front of the eye"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "Consult",
-      [
-       "• neuro-ophthalmology",
-       "• MRI, possible IV corticosteroids",
-       "• neurology: rule out multiple sclerosis"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "rd",
-   "colour": "blue",
-   "drop_label": "flashes, floaters",
-   "head": [
-    [
-     [
-      "h",
-      "Retinal detachment",
-      []
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Flashes, floaters, curtain",
-      [
-       "• floaters = blood from a retinal tear",
-       "• peripheral field loss",
-       "• acuity may be normal"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Red reflex",
-      [
-       "• dark mobile spots",
-       "~usually not seen with a direct ophthalmoscope"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "warn",
-      "Refer promptly",
-      [
-       "ophthalmology evaluation"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "vh",
-   "colour": "brown",
-   "drop_label": "diabetic",
-   "head": [
-    [
-     [
-      "h",
-      "Vitreous hemorrhage",
-      []
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Long-standing diabetes",
-      [
-       "• acuity: hand motion",
-       "• pressure normal"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Proliferative retinopathy",
-      [
-       "fragile new vessels bleed into the vitreous"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "Retina specialist",
-      [
-       "pan-retinal laser photocoagulation"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "gl",
-   "colour": "teal",
-   "drop_label": "periphery first",
-   "head": [
-    [
-     [
-      "h",
-      "Primary open-angle glaucoma",
-      [
-       "progressive, irreversible optic neuropathy"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "SILENT until very late",
-      [
-       "• peripheral field goes first",
-       "• acuity falls LAST"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Pressure + disc + field",
-      [
-       "• pressure > 21 (normal 10-21; can be normal)",
-       "• cup-to-disc ≥ 0.5, or eyes differ > 0.2",
-       "• arcuate defect, nasal step"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "Lower the pressure",
-      [
-       "• the ONLY treatment",
-       "• drops → laser → surgery",
-       "• same-day referral only if > 30"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "cat",
-   "colour": "olive",
-   "drop_label": "hazy, glare",
-   "head": [
-    [
-     [
-      "h",
-      "Cataract",
-      [
-       "leading cause of REVERSIBLE blindness"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Hazy vision, glare",
-      [
-       "• halos, night driving",
-       "• 'second sight': better near vision"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Acuity ↓, hazy view",
-      [
-       "• dense: dull red reflex or white pupil",
-       "• pressure normal"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "Non-urgent referral",
-      [
-       "visually significant → extraction + intraocular lens"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "amd",
-   "colour": "magenta",
-   "drop_label": "central, distorted",
-   "head": [
-    [
-     [
-      "h",
-      "Age-related macular degeneration",
-      [
-       "leading IRREVERSIBLE cause over 50"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Central loss + distortion",
-      [
-       "• metamorphopsia: Amsler grid",
-       "• wet: sudden severe drop"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Refer if ANY",
-      [
-       "• central acuity ↓",
-       "• new distortion",
-       "• drusen or blood at the macula"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "WET ~20%",
-      [
-       "• anti-VEGF",
-       "• injected into the eye"
-      ]
-     ],
-     [
-      "ok",
-      "DRY ~80%",
-      [
-       "• AREDS2 vitamins",
-       "• stop smoking"
-      ]
-     ]
-    ]
-   ]
-  }
+  {"id": "crao", "colour": "slate", "drop_label": "white retina",
+   "head": [[["h", "Central retinal artery occlusion", ["EMERGENCY: ganglion cells die"]]]],
+   "pres": [[["t", "Sudden, SEVERE", ["• older, hypertension", "• acuity: hand motion", "case: 72, 1.5 hours, right hand motion, left 20/20"]]]],
+   "inv": [[["w", "RAPD + retina", ["• WHITE opacified retina", "• CHERRY-RED macular spot"]]]],
+   "tx": [[["bad", "Ocular massage NOW", ["• heel of hand: 10 s press, 10 s release, for 5 min", "• may dislodge the embolus", "• EMERGENT referral"]]],
+          [["warn", "Find the source", ["carotid atheroma, heart valves"]]]]},
+  {"id": "gca", "colour": "orange", "drop_label": "swollen disc, older",
+   "head": [[["h", "Giant cell arteritis", ["EMERGENCY: can blind both eyes", "large + medium vessels, cranial arteries, aorta"]]]],
+   "pres": [[["t", "Older + new headache", ["• jaw claudication", "• scalp tenderness · thick, tender temporal artery", "• weight loss, fever, night sweats, malaise", "• polymyalgia rheumatica: neck, shoulders", "case: 67, pain chewing, combing hair, shoulder pain 2 months · 20/80, inferior field loss"]]]],
+   "inv": [[["w", "RAPD + SWOLLEN disc", ["• flame-shaped hemorrhages", "• ESR + CRP NOW (ESR usually > 60)"]]]],
+   "tx": [[["bad", "Steroids NOW", ["• visual symptoms: IV methylprednisolone 1 g × 3 days", "• none: prednisone 40-60 mg daily", "~ saves the other eye, prevents stroke, aortic arch syndrome"]]],
+          [["warn", "EMERGENT referral", ["temporal artery biopsy"]]]]},
+  {"id": "on", "colour": "purple", "drop_label": "swollen disc, young",
+   "head": [[["h", "Optic neuritis", []]]],
+   "pres": [[["t", "Healthy YOUNG woman", ["• sudden, painless", "• acuity reduced", "case: 30, left 20/100"]]]],
+   "inv": [[["w", "RAPD + SWOLLEN disc", ["• clear media, clear red reflex", "• normal front of the eye"]]]],
+   "tx": [[["ok", "Consult", ["• neuro-ophthalmology", "• MRI, possible IV corticosteroids", "• neurology: rule out multiple sclerosis"]]]]},
+  {"id": "rd", "colour": "blue", "drop_label": "flashes, floaters",
+   "head": [[["h", "Retinal detachment", []]]],
+   "pres": [[["t", "Flashes, floaters, curtain", ["• flashes: retina tears or detaches", "• floaters = blood from a retinal tear", "• peripheral field loss", "• acuity may be normal", "case: 56, 20/20 both eyes, temporal field loss"]]]],
+   "inv": [[["w", "Red reflex", ["• dark mobile spots", "~usually not seen with a direct ophthalmoscope"]]]],
+   "tx": [[["warn", "Refer promptly", ["ophthalmology evaluation"]]]]},
+  {"id": "vh", "colour": "brown", "drop_label": "diabetic",
+   "head": [[["h", "Vitreous hemorrhage", []]]],
+   "pres": [[["t", "Long-standing diabetes", ["• acuity: hand motion", "• pressure normal", "case: 74, type 2 diabetes 30 years, HbA1c 8.0%"]]]],
+   "inv": [[["w", "Proliferative retinopathy", ["fragile new vessels bleed into the vitreous"]]]],
+   "tx": [[["ok", "Retina specialist", ["pan-retinal laser photocoagulation"]]]]},
+  {"id": "gl", "colour": "teal", "drop_label": "periphery first",
+   "head": [[["h", "Primary open-angle glaucoma", ["progressive, irreversible optic neuropathy", "3.54% of the world"]]]],
+   "pres": [[["t", "SILENT until very late", ["• peripheral field goes first", "• acuity falls LAST"]]]],
+   "inv": [[["w", "Pressure + disc + field", ["• pressure > 21 (normal 10-21; can be normal: normal-tension glaucoma)", "• Goldmann applanation, Tono-Pen, air puff", "• cup-to-disc ≥ 0.5, or eyes differ > 0.2", "• arcuate defect, nasal step"]]]],
+   "tx": [[["ok", "Lower the pressure", ["• the ONLY treatment", "• drops → laser → surgery", "• refer: pressure > 21 or suspicious nerve", "• same-day referral only if > 30"]]]]},
+  {"id": "cat", "colour": "olive", "drop_label": "hazy, glare",
+   "head": [[["h", "Cataract", ["lens opacity · leading cause of REVERSIBLE blindness"]]]],
+   "pres": [[["t", "Hazy vision, glare", ["• halos, starbursts, night driving", "• 'second sight': lenticular myopia, better near vision", "• varies with where the opacity is"]]]],
+   "inv": [[["w", "Acuity ↓, hazy view", ["• dense: dull red reflex or white pupil", "• pressure normal"]]]],
+   "tx": [[["ok", "Non-urgent referral", ["visually significant or blocks the view of the retina → extraction + intraocular lens"]]]]},
+  {"id": "amd", "colour": "magenta", "drop_label": "central, distorted",
+   "head": [[["h", "Age-related macular degeneration", ["leading IRREVERSIBLE cause over 50"]]]],
+   "pres": [[["t", "Central loss + distortion", ["• metamorphopsia: Amsler grid", "• wet: choroidal new vessels bleed, leak into the macula → sudden severe drop", "• dry: retinal atrophy, drusen"]]]],
+   "inv": [[["w", "Refer if ANY", ["• central acuity ↓", "• new distortion", "• drusen or blood at the macula"]]]],
+   "tx": [[["ok", "WET ~20%", ["• anti-VEGF injected into the eye", "• bevacizumab, ranibizumab, aflibercept"]]],
+          [["ok", "DRY ~80%", ["• AREDS2: vitamins C, E, lutein, zeaxanthin, zinc, copper", "• stop smoking, nutrition"]]]]}
+ ],
+ "panels": [
+  {"title": "Glaucoma risk factors", "items": [
+   "both: family history · older age",
+   "open angle: Black · high pressure · MYOPIA · eye trauma · steroids · vasospasm (Raynaud's, migraine)",
+   "angle closure: Asian · female · HYPEROPIA"]},
+  {"title": "Cataract risk factors and types", "items": [
+   "age · genetics · trauma · steroids · eye inflammation · diabetes, metabolic",
+   "radiation · prior eye surgery · excess UV",
+   "types: posterior subcapsular · cortical · nuclear sclerosis"]}
  ]
 }

@@ -79,33 +79,33 @@
  "bands": [
   {
    "x": 40,
-   "y": 426,
+   "y": 480,
    "w": 260,
-   "h": 634,
+   "h": 832,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 330,
-   "y": 426,
+   "y": 480,
    "w": 260,
-   "h": 634,
+   "h": 832,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
   {
    "x": 592,
-   "y": 426,
+   "y": 480,
    "w": 260,
-   "h": 634,
+   "h": 832,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 854,
-   "y": 426,
+   "y": 480,
    "w": 260,
-   "h": 634,
+   "h": 832,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -113,20 +113,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 276,
+   "y": 330,
    "h": 78,
    "text": "WORKUP"
   },
   {
    "x": 23,
-   "y": 534,
+   "y": 660,
    "h": 162,
    "text": "NEXT"
   },
   {
    "x": 23,
-   "y": 736,
-   "h": 316,
+   "y": 862,
+   "h": 442,
    "text": "TREATMENT"
   }
  ],
@@ -139,13 +139,15 @@
    "kind": "dark",
    "title": "A soft tissue lump: could it be a SARCOMA? Decide BEFORE anyone cuts it out",
    "lines": [
-    "benign tumours are 100 times more common · a sarcoma shelled out like a benign lump, with little or no margin, is the 'WHOOPS'"
+    "benign tumours are 100 times more common (300 vs 2 per 100 000) · a sarcoma shelled out like a benign lump, with little or no margin, is the 'WHOOPS': less chance of cure, possible amputation",
+    "history: has it GROWN? first noticed when, how big then and now (be persistent: fruit, nuts) · trauma · pain or numbness (sarcoma usually painless; big symptoms → metastases) · recurrence · other lumps · family history",
+    "exam: location, size, skin · superficial (subcutaneous) or DEEP (muscle) · mobile, tethered or FIXED · nodes rarely involved"
    ]
   },
   {
    "id": "g_ok",
    "x": 45,
-   "y": 138,
+   "y": 192,
    "w": 250,
    "h": 98,
    "kind": "plain",
@@ -157,7 +159,7 @@
   {
    "id": "g_sus",
    "x": 335,
-   "y": 138,
+   "y": 192,
    "w": 774,
    "h": 98,
    "kind": "plain",
@@ -169,7 +171,7 @@
   {
    "id": "p_sus",
    "x": 335,
-   "y": 276,
+   "y": 330,
    "w": 774,
    "h": 78,
    "kind": "info",
@@ -182,43 +184,47 @@
   {
    "id": "ex_head_0_0",
    "x": 45,
-   "y": 434,
+   "y": 488,
    "w": 250,
-   "h": 60,
+   "h": 132,
    "kind": "ex_h",
    "title": "Low risk",
-   "lines": []
+   "lines": [
+    "limited growth, minimal symptoms, superficial"
+   ]
   },
   {
    "id": "ben_head_0_0",
    "x": 335,
-   "y": 434,
+   "y": 488,
    "w": 250,
-   "h": 60,
+   "h": 132,
    "kind": "ben_h",
    "title": "Benign on biopsy",
    "lines": [
-    "e.g. spindle cell/pleomorphic lipoma"
+    "e.g. spindle cell/pleomorphic lipoma",
+    "case: 33 M, 17 cm flank mass for 6 years, mobile, subcutaneous, many lipomas, uncle too · ultrasound: probable lipoma → MRI"
    ]
   },
   {
    "id": "sar_head_0_0",
    "x": 597,
-   "y": 434,
+   "y": 488,
    "w": 250,
-   "h": 60,
+   "h": 132,
    "kind": "sar_h",
    "title": "Sarcoma, resectable",
    "lines": [
-    "usually a PAINLESS lump"
+    "usually a PAINLESS lump",
+    "curable by surgery + radiation: leiomyosarcoma, liposarcoma"
    ]
   },
   {
    "id": "pal_head_0_0",
    "x": 859,
-   "y": 434,
+   "y": 488,
    "w": 250,
-   "h": 60,
+   "h": 132,
    "kind": "pal_h",
    "title": "Not curable",
    "lines": [
@@ -228,31 +234,33 @@
   {
    "id": "ex_inv_0_0",
    "x": 45,
-   "y": 534,
+   "y": 660,
    "w": 250,
    "h": 162,
    "kind": "ex_w",
    "title": "Excisional biopsy is acceptable",
    "lines": [
-    "complete removal with minimal surrounding tissue"
+    "complete removal with minimal surrounding tissue",
+    "NOT ideal if it is a sarcoma"
    ]
   },
   {
    "id": "ben_inv_0_0",
    "x": 335,
-   "y": 534,
+   "y": 660,
    "w": 250,
    "h": 162,
    "kind": "ben_w",
    "title": "Lipoma or liposarcoma?",
    "lines": [
+    "vs well-differentiated liposarcoma (atypical lipomatous tumour)",
     "immunohistochemistry: MDM2 negative, CD34 positive → lipoma"
    ]
   },
   {
    "id": "sar_inv_0_0",
    "x": 597,
-   "y": 534,
+   "y": 660,
    "w": 250,
    "h": 60,
    "kind": "sar_w",
@@ -264,7 +272,7 @@
   {
    "id": "sar_inv_1_0",
    "x": 597,
-   "y": 616,
+   "y": 742,
    "w": 250,
    "h": 80,
    "kind": "sar_w",
@@ -276,7 +284,7 @@
   {
    "id": "pal_inv_0_0",
    "x": 859,
-   "y": 534,
+   "y": 660,
    "w": 250,
    "h": 162,
    "kind": "pal_w",
@@ -288,9 +296,9 @@
   {
    "id": "ex_tx_0_0",
    "x": 45,
-   "y": 736,
+   "y": 862,
    "w": 250,
-   "h": 316,
+   "h": 442,
    "kind": "ok",
    "title": "Excise",
    "lines": []
@@ -298,9 +306,9 @@
   {
    "id": "ben_tx_0_0",
    "x": 335,
-   "y": 736,
+   "y": 862,
    "w": 250,
-   "h": 316,
+   "h": 442,
    "kind": "ok",
    "title": "Observe",
    "lines": []
@@ -308,51 +316,66 @@
   {
    "id": "sar_tx_0_0",
    "x": 597,
-   "y": 736,
+   "y": 862,
    "w": 250,
-   "h": 60,
+   "h": 96,
    "kind": "ok",
    "title": "Surgery: WIDE resection",
    "lines": [
-    "a marginal resection is the 'whoops'"
+    "a marginal resection is the 'whoops'",
+    "wide = 1-2 cm (rare) · close or positive margin common → radiation"
    ]
   },
   {
    "id": "sar_tx_1_0",
    "x": 597,
-   "y": 818,
+   "y": 980,
    "w": 250,
-   "h": 98,
+   "h": 170,
    "kind": "ok",
    "title": "± Radiation, mostly PRE-operative",
    "lines": [
     "• local recurrence 30% → 10%",
-    "• pre-op: better long-term function"
+    "• pre-op: better long-term function: only the tumour radiated, surgery removes the radiated tissue",
+    "• case: radiation 6 weeks → surgery 6-8 weeks later"
    ]
   },
   {
    "id": "sar_tx_2_0",
    "x": 597,
-   "y": 938,
+   "y": 1172,
    "w": 250,
-   "h": 114,
+   "h": 132,
    "kind": "warn",
    "title": "± Chemotherapy: uncommon",
    "lines": [
-    "• NOT standard after surgery",
+    "• NOT standard after surgery (no survival gain) · select subtypes, trials",
     "• curable with it: osteosarcoma, Ewing sarcoma, rhabdomyosarcoma in young adults"
    ]
   },
   {
    "id": "pal_tx_0_0",
    "x": 859,
-   "y": 736,
+   "y": 862,
    "w": 250,
-   "h": 316,
+   "h": 165,
    "kind": "ok",
    "title": "Palliative care",
    "lines": [
     "can greatly improve quality of life"
+   ]
+  },
+  {
+   "id": "pal_tx_1_0",
+   "x": 859,
+   "y": 1049,
+   "w": 250,
+   "h": 255,
+   "kind": "pal_w",
+   "title": "Follow-up after cure",
+   "lines": [
+    "clinic every 6 months · chest x-ray yearly or CT chest every 6 months",
+    "case: 55 M, neurofibromatosis, thigh mass doubled, aching → malignant peripheral nerve sheath tumour → lung metastases at 1 year"
    ]
   }
  ],
@@ -360,12 +383,12 @@
   {
    "from": "root",
    "to": "g_ok",
-   "path": "M577.0 88V113H170.0V138"
+   "path": "M577.0 142V167H170.0V192"
   },
   {
    "from": "root",
    "to": "g_sus",
-   "path": "M577.0 88V113H722.0V138"
+   "path": "M577.0 142V167H722.0V192"
   },
   {
    "from": "g_sus",
@@ -382,6 +405,10 @@
   {
    "from": "sar_tx_1_0",
    "to": "sar_tx_2_0"
+  },
+  {
+   "from": "pal_tx_0_0",
+   "to": "pal_tx_1_0"
   },
   {
    "from": "ex_head_0_0",
@@ -411,7 +438,7 @@
    "label": "benign",
    "label_at": [
     460.0,
-    394
+    448
    ]
   },
   {
@@ -429,7 +456,7 @@
    "label": "sarcoma",
    "label_at": [
     722.0,
-    394
+    448
    ]
   },
   {
@@ -447,20 +474,45 @@
    "label": "metastatic",
    "label_at": [
     984.0,
-    394
+    448
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 1086,
-   "w": 1064,
-   "title": "History and exam",
+   "y": 1338,
+   "w": 345,
+   "title": "Biopsy options",
    "items": [
-    "has it GROWN? when first noticed, how big then and now (compare to fruit or nuts)",
-    "pain or numbness: sarcomas are usually painless; significant symptoms → think metastases · recurrence · other lumps · family history",
-    "superficial (subcutaneous) or deep (muscle) · mobile, tethered or fixed · nodes rarely involved"
+    "fine needle aspiration: cheap, fast, atraumatic BUT poor yield, hard to type · not for primary diagnosis",
+    "excisional: whole lump, little margin · NOT if sarcoma · incisional: more tissue, more invasive",
+    "CORE: the best compromise · less invasive, adequate tissue · then expert pathology: histology, immunohistochemistry, cytogenetics, molecular"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 404,
+   "y": 1338,
+   "w": 345,
+   "title": "Classification",
+   "items": [
+    "named for the adult tissue it resembles: lipoma/liposarcoma · rhabdomyoma/rhabdomyosarcoma · leiomyoma/leiomyosarcoma · fibroma/fibrosarcoma · neurofibroma/neurofibrosarcoma",
+    "benign: may recur, no metastasis · intermediate: locally aggressive, or metastasizes 5-10% · malignant: frequent metastasis",
+    "well-differentiated liposarcoma recurs locally only · DEDIFFERENTIATED also metastasizes (case: 55 M abdominal mass, early satiety, 20 lb loss · 5-year survival 40%)",
+    "incidence rises with age · children: neuroblastoma, rhabdomyosarcoma, Ewing sarcoma"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 764,
+   "y": 1338,
+   "w": 345,
+   "title": "Causes (99% unknown)",
+   "items": [
+    "asbestos → mesothelioma · vinyl chloride → angiosarcoma · herbicides, dioxin, radiation → undifferentiated",
+    "human herpesvirus 8 → Kaposi · chronic lymphedema (Stewart-Treves) → angiosarcoma · trauma → myositis ossificans",
+    "Li-Fraumeni (p53) · retinoblastoma (Rb) · neurofibromatosis"
    ],
    "cols": 1
   }

@@ -7,7 +7,9 @@
   "lines": [
    "shock or low blood pressure · low glucose · diabetic ketoacidosis · hypertensive encephalopathy · drug intoxication",
    "bacterial or fungal meningitis · herpes simplex encephalitis · brain abscess · epidural or subdural hematoma",
-   "then EXAMINE: is the patient AWAKE (alertness) and AWARE (awareness)?"
+   "also consider: syncope · seizure, post-ictal state · encephalopathy, delirium",
+   "then EXAMINE: is the patient AWAKE (alertness = VOLUME) and AWARE (awareness = TUNING, the cortex)?",
+   "alertness: ascending reticular activating system, upper pons + midbrain → thalamus, hypothalamus → cortex"
   ]
  },
  "groups": [
@@ -26,13 +28,13 @@
    "eeg": [[["bad", "Electrocerebral silence", ["legally dead"]]]]},
   {"id": "coma", "colour": "blue", "drop_label": "eyes closed",
    "head": [[["h", "Coma", ["both hemispheres, both thalami, or brainstem above the mid-pons"]]]],
-   "awake": [[["t", "Not awake, not aware", ["• NO eye opening", "• NO sleep-wake cycles"]]]],
-   "exam": [[["w", "Primitive reflexes only", ["• decorticate: arms FLEX, legs extend → above the red nucleus", "• decerebrate: all EXTEND → below the red nucleus", "• GCS ≤ 8 = severe brain injury"]]]],
+   "awake": [[["t", "Not awake, not aware", ["• NO eye opening", "• NO sleep-wake cycles", "• cortex: metabolic, toxic, hypoxic-ischemic, trauma", "• thalami: tip-of-the-basilar stroke, bleed, tumour", "• brainstem: trauma, stroke, HERNIATION", "case: 79 y, 36 h headache, stiff neck, 39.5 °C · antibiotics · intubated within 12 h", "case: 67 y cardiac arrest, ~15 min to rhythm · day 2 extends right arm to pain"]]]],
+   "exam": [[["w", "Primitive reflexes only", ["• decorticate: arms FLEX, legs extend → above the red nucleus", "• decerebrate: all EXTEND → below the red nucleus", "• triple flexion (hip, knee, ankle): SPINAL, no brainstem needed", "• GCS ≤ 8 = severe brain injury"]]]],
    "eeg": [[["warn", "Polymorphic delta, burst-suppression", ["prognosis variable"]]]]},
   {"id": "vs", "colour": "teal", "drop_label": "eyes open",
    "head": [[["h", "Vegetative state", ["aka UNRESPONSIVE WAKEFULNESS syndrome"]]]],
    "awake": [[["t", "AWAKE, not aware", ["• eyes open, SLEEP-WAKE cycles", "• autonomic function kept"]]]],
-   "exam": [[["w", "Reflexive, never purposeful", ["• grimace, yawn, roving eyes, flexion withdrawal", "• brief, UNSUSTAINED pursuit only", "• no words, no commands"]]]],
+   "exam": [[["w", "Reflexive, never purposeful", ["• grimace, yawn, roving eyes, flexion withdrawal", "• brief, UNSUSTAINED pursuit only", "• sounds but no words, no commands", "• incontinent · cranial nerve reflexes variable", "case: 26 y, head injury, 2 years on · eyes open, yawns, sleep-wake cycles"]]]],
    "eeg": [[["warn", "Delta, theta or silence", ["prognosis variable"]]]]},
   {"id": "mcsm", "colour": "orange", "drop_label": "no",
    "head": [[["h", "Minimally conscious MINUS", ["MCS-"]]]],
@@ -49,5 +51,19 @@
    "awake": [[["t", "Awake AND fully aware", ["cognition preserved"]]]],
    "exam": [[["w", "Only UPWARD GAZE + eye opening", ["• quadriplegia, pseudobulbar palsy", "• breathing intact"]]]],
    "eeg": [[["ok", "EEG usually normal", ["other mimics: Guillain-Barré, myasthenia, neuromuscular blockade, akinetic mutism, psychogenic"]]]]}
+ ],
+ "panels": [
+  {"title": "Brainstem reflexes: in → out", "items": [
+   "pupil: II → III (Edinger-Westphal) · blown pupil = uncal herniation",
+   "Horner: ptosis, miosis ± anhidrosis · 3-neuron sympathetic path",
+   "doll's eyes (no C-spine concern) + calorics: VIII → III, IV, VI",
+   "calorics in COMA: only SLOW deviation toward cold · COWS is the awake fast phase",
+   "corneal: V → VII · gag: IX → X · cough: often the LAST lost"]},
+  {"title": "Coma scales", "items": [
+   "GCS 3-15: eye 4 · verbal 5 · motor 6 · e.g. E2V3M4 = 9 · intubated E2VTM4 = 6T",
+   "GCS shortcomings: intubation, brainstem barely assessed",
+   "FOUR score: eye, motor, brainstem reflexes, respiration, 0-4 each",
+   "FOUR: NO verbal part, works when intubated",
+   "pain: central (sternum, trapezius, supraorbital, jaw) + nail bed"]}
  ]
 }

@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 290,
+   "y": 380,
    "w": 242,
-   "h": 1066,
+   "h": 1210,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 284,
-   "y": 290,
+   "y": 380,
    "w": 242,
-   "h": 1066,
+   "h": 1210,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 556,
-   "y": 290,
+   "y": 380,
    "w": 242,
-   "h": 1066,
+   "h": 1210,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 828,
-   "y": 290,
+   "y": 380,
    "w": 242,
-   "h": 1066,
+   "h": 1210,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 1072,
-   "y": 290,
+   "y": 380,
    "w": 242,
-   "h": 1066,
+   "h": 1210,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   }
@@ -139,20 +139,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 434,
-   "h": 270,
+   "y": 560,
+   "h": 342,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 744,
+   "y": 942,
    "h": 196,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 980,
-   "h": 368,
+   "y": 1178,
+   "h": 404,
    "text": "TREATMENT"
   }
  ],
@@ -166,13 +166,15 @@
    "title": "Hand, joint, bone or diabetic foot: HOW DEEP is it, and does it need a knife as well as antibiotics?",
    "lines": [
     "antibiotics alone will NOT save you: pus in a closed space, a joint or dead bone needs drainage or debridement",
-    "one hot joint (S. aureus, streptococci): aspirate, surgical washout + cefazolin, or vancomycin + ceftriaxone"
+    "one hot joint: red flags FEVER · pain · much less range of motion · risk: immune compromise, type 2 diabetes, alcohol, age > 80, injection drug use, rheumatoid arthritis",
+    "septic arthritis (S. aureus, group A strep; gram negatives rare): blood count, electrolytes, creatinine, CRP, blood cultures, ASPIRATE (cells > 20 000-50 000, Gram stain) ± imaging",
+    "surgical washout (decompress, irrigate, debride, save the synovium) + cefazolin 2 g IV q8h, or vancomycin 15 mg/kg + ceftriaxone 2 g IV q24h · S. aureus 4-6 weeks"
    ]
   },
   {
    "id": "g_hand",
    "x": 45,
-   "y": 138,
+   "y": 228,
    "w": 476,
    "h": 80,
    "kind": "plain",
@@ -184,7 +186,7 @@
   {
    "id": "g_jt",
    "x": 561,
-   "y": 138,
+   "y": 228,
    "w": 232,
    "h": 80,
    "kind": "plain",
@@ -196,7 +198,7 @@
   {
    "id": "g_bone",
    "x": 833,
-   "y": 138,
+   "y": 228,
    "w": 476,
    "h": 80,
    "kind": "plain",
@@ -208,9 +210,9 @@
   {
    "id": "cel_head_0_0",
    "x": 45,
-   "y": 298,
+   "y": 388,
    "w": 232,
-   "h": 96,
+   "h": 132,
    "kind": "cel_h",
    "title": "Cellulitis",
    "lines": [
@@ -220,9 +222,9 @@
   {
    "id": "deep_head_0_0",
    "x": 289,
-   "y": 298,
+   "y": 388,
    "w": 232,
-   "h": 96,
+   "h": 132,
    "kind": "deep_h",
    "title": "Deep (closed-space) infection",
    "lines": [
@@ -232,9 +234,9 @@
   {
    "id": "oth_head_0_0",
    "x": 561,
-   "y": 298,
+   "y": 388,
    "w": 232,
-   "h": 96,
+   "h": 132,
    "kind": "oth_h",
    "title": "Gonococcal, Lyme, tuberculous",
    "lines": [
@@ -244,22 +246,23 @@
   {
    "id": "om_head_0_0",
    "x": 833,
-   "y": 298,
+   "y": 388,
    "w": 232,
-   "h": 96,
+   "h": 132,
    "kind": "om_h",
    "title": "Osteomyelitis",
    "lines": [
     "blood-borne: spine, children",
-    "contiguous: diabetic foot, trauma, surgery"
+    "contiguous: diabetic foot, trauma, surgery, sacral wound",
+    "biofilm, survives inside osteoblasts · chronic: NECROTIC bone"
    ]
   },
   {
    "id": "dfi_head_0_0",
    "x": 1077,
-   "y": 298,
+   "y": 388,
    "w": 232,
-   "h": 96,
+   "h": 132,
    "kind": "dfi_h",
    "title": "Diabetic foot infection",
    "lines": [
@@ -269,25 +272,25 @@
   {
    "id": "cel_clue_0_0",
    "x": 45,
-   "y": 434,
+   "y": 560,
    "w": 232,
-   "h": 270,
+   "h": 342,
    "kind": "cel_t",
    "title": "DORSAL hand, wrist to knuckles",
    "lines": [
-    "IRREGULAR margins"
+    "IRREGULAR margins · superficial"
    ]
   },
   {
    "id": "deep_clue_0_0",
    "x": 289,
-   "y": 434,
+   "y": 560,
    "w": 232,
-   "h": 133,
+   "h": 169,
    "kind": "deep_t",
    "title": "Where is the pus?",
    "lines": [
-    "• nail fold: PARONYCHIA (S. aureus)",
+    "• nail fold: PARONYCHIA, F > M (S. aureus · mixed in diabetes · fungus if immunocompromised)",
     "• fingertip pulp: FELON",
     "• flexor tendon sheath: TENOSYNOVITIS"
    ]
@@ -295,26 +298,26 @@
   {
    "id": "deep_clue_1_0",
    "x": 289,
-   "y": 589,
+   "y": 751,
    "w": 232,
-   "h": 115,
+   "h": 151,
    "kind": "deep_w",
    "title": "Bite over a joint",
    "lines": [
-    "• cat, finger joints: Pasteurella multocida",
-    "• human, fist fight, knuckle: Eikenella corrodens"
+    "• cat, finger PIP or DIP joints: Pasteurella multocida, mixed",
+    "• human, young men, fist fight, knuckle (MCP): Eikenella corrodens, mixed"
    ]
   },
   {
    "id": "oth_clue_0_0",
    "x": 561,
-   "y": 434,
+   "y": 560,
    "w": 232,
-   "h": 169,
+   "h": 214,
    "kind": "oth_t",
    "title": "Ask: partners, ticks, travel",
    "lines": [
-    "• young, multiple partners: GONOCOCCAL",
+    "• young, multiple partners, MSM, F > M: GONOCOCCAL (knee, wrist, ankle)",
     "• disseminated: tenosynovitis + pustular rash + polyarthralgia",
     "• endemic country: TUBERCULOSIS"
    ]
@@ -322,9 +325,9 @@
   {
    "id": "oth_clue_1_0",
    "x": 561,
-   "y": 625,
+   "y": 796,
    "w": 232,
-   "h": 79,
+   "h": 106,
    "kind": "bad",
    "title": "SEVERAL joints, bacterial",
    "lines": [
@@ -334,22 +337,24 @@
   {
    "id": "om_clue_0_0",
    "x": 833,
-   "y": 434,
+   "y": 560,
    "w": 232,
-   "h": 133,
+   "h": 232,
    "kind": "om_t",
    "title": "Vertebral: severe back pain",
    "lines": [
-    "• often afebrile · people who inject drugs",
-    "• check strength, reflexes, anal tone"
+    "• often afebrile · people who inject drugs, middle-aged men",
+    "• check strength, reflexes, anal tone",
+    "• TB (Pott's), Brucella: exposure history · M. bovis after BCG for bladder cancer",
+    "case: 55 M, 5 days of 9/10 back pain, afebrile, neuro normal → MRI L3-L4 spondylodiscitis: look for paravertebral, epidural abscess"
    ]
   },
   {
    "id": "om_clue_1_0",
    "x": 833,
-   "y": 589,
+   "y": 814,
    "w": 232,
-   "h": 115,
+   "h": 88,
    "kind": "om_w",
    "title": "Child under 12: metaphysis",
    "lines": [
@@ -359,20 +364,21 @@
   {
    "id": "dfi_clue_0_0",
    "x": 1077,
-   "y": 434,
+   "y": 560,
    "w": 232,
-   "h": 134,
+   "h": 206,
    "kind": "dfi_t",
    "title": "A wound is NOT always infected",
    "lines": [
     "• swab any wound and bacteria grow",
-    "• smelly? probe to bone? blood supply?"
+    "• smelly? probe to bone? blood supply?",
+    "• why? new shoes, injury, not wearing the boot, can't afford meds, vascular disease, Charcot, old ulcer"
    ]
   },
   {
    "id": "dfi_clue_1_0",
    "x": 1077,
-   "y": 590,
+   "y": 788,
    "w": 232,
    "h": 114,
    "kind": "dfi_w",
@@ -386,7 +392,7 @@
   {
    "id": "cel_inv_0_0",
    "x": 45,
-   "y": 744,
+   "y": 942,
    "w": 232,
    "h": 196,
    "kind": "cel_w",
@@ -398,7 +404,7 @@
   {
    "id": "deep_inv_0_0",
    "x": 289,
-   "y": 744,
+   "y": 942,
    "w": 232,
    "h": 196,
    "kind": "deep_t",
@@ -412,20 +418,20 @@
   {
    "id": "oth_inv_0_0",
    "x": 561,
-   "y": 744,
+   "y": 942,
    "w": 232,
    "h": 196,
    "kind": "oth_w",
    "title": "Match the test to the bug",
    "lines": [
     "• gonococcus: urine, rectal, throat nucleic acid test or culture + blood culture (joint fluid + in only 50%)",
-    "• Lyme: serology · tuberculosis: joint fluid for acid-fast bacilli"
+    "• Lyme: serology (joint fluid PCR lower yield) · tuberculosis: joint fluid for acid-fast bacilli"
    ]
   },
   {
    "id": "om_inv_0_0",
    "x": 833,
-   "y": 744,
+   "y": 942,
    "w": 232,
    "h": 60,
    "kind": "om_t",
@@ -437,7 +443,7 @@
   {
    "id": "om_inv_1_0",
    "x": 833,
-   "y": 826,
+   "y": 1024,
    "w": 232,
    "h": 114,
    "kind": "om_t",
@@ -451,7 +457,7 @@
   {
    "id": "dfi_inv_0_0",
    "x": 1077,
-   "y": 744,
+   "y": 942,
    "w": 232,
    "h": 106,
    "kind": "dfi_w",
@@ -463,7 +469,7 @@
   {
    "id": "dfi_inv_1_0",
    "x": 1077,
-   "y": 872,
+   "y": 1070,
    "w": 232,
    "h": 68,
    "kind": "dfi_w",
@@ -475,9 +481,9 @@
   {
    "id": "cel_tx_0_0",
    "x": 45,
-   "y": 980,
+   "y": 1178,
    "w": 232,
-   "h": 368,
+   "h": 404,
    "kind": "ok",
    "title": "Antibiotics",
    "lines": [
@@ -487,9 +493,9 @@
   {
    "id": "deep_tx_0_0",
    "x": 289,
-   "y": 980,
+   "y": 1178,
    "w": 232,
-   "h": 368,
+   "h": 404,
    "kind": "bad",
    "title": "Incision and drainage",
    "lines": [
@@ -499,9 +505,9 @@
   {
    "id": "oth_tx_0_0",
    "x": 561,
-   "y": 980,
+   "y": 1178,
    "w": 232,
-   "h": 368,
+   "h": 404,
    "kind": "ok",
    "title": "Bug-specific",
    "lines": [
@@ -513,9 +519,9 @@
   {
    "id": "om_tx_0_0",
    "x": 833,
-   "y": 980,
+   "y": 1178,
    "w": 232,
-   "h": 174,
+   "h": 120,
    "kind": "bad",
    "title": "Cord compressed or epidural abscess",
    "lines": [
@@ -525,20 +531,22 @@
   {
    "id": "om_tx_1_0",
    "x": 833,
-   "y": 1176,
+   "y": 1320,
    "w": 232,
-   "h": 172,
+   "h": 262,
    "kind": "ok",
    "title": "IV vancomycin + ceftriaxone",
    "lines": [
-    "• 6 weeks (vertebral)",
-    "• debride dead bone if needed"
+    "• HIGH doses (ceftriaxone 2 g IV q24h) · 6 weeks (vertebral)",
+    "• debride dead bone if needed · sacral ulcer: offload, debride, plastics",
+    "• cure depends on blood supply, chronicity, debridement, patient engagement",
+    "~ OVIVA trial: oral as good as IV for many (quinolones)"
    ]
   },
   {
    "id": "dfi_tx_0_0",
    "x": 1077,
-   "y": 980,
+   "y": 1178,
    "w": 232,
    "h": 78,
    "kind": "ok",
@@ -550,7 +558,7 @@
   {
    "id": "dfi_tx_1_0",
    "x": 1077,
-   "y": 1080,
+   "y": 1278,
    "w": 232,
    "h": 114,
    "kind": "warn",
@@ -563,15 +571,16 @@
   {
    "id": "dfi_tx_2_0",
    "x": 1077,
-   "y": 1216,
+   "y": 1414,
    "w": 232,
-   "h": 132,
+   "h": 168,
    "kind": "bad",
    "title": "Severe",
    "lines": [
     "• exclude necrotizing fasciitis",
     "• piperacillin-tazobactam ± vancomycin",
-    "• offload, debride, call ortho or vascular"
+    "• blood cultures · offload, debride, call ortho or vascular",
+    "• vancomycin if MRSA history or risk · revascularize?"
    ]
   }
  ],
@@ -579,17 +588,17 @@
   {
    "from": "root",
    "to": "g_hand",
-   "path": "M677.0 88V113H283.0V138"
+   "path": "M677.0 178V203H283.0V228"
   },
   {
    "from": "root",
    "to": "g_jt",
-   "path": "M677.0 88V113H677.0V138"
+   "path": "M677.0 178V203H677.0V228"
   },
   {
    "from": "root",
    "to": "g_bone",
-   "path": "M677.0 88V113H1071.0V138"
+   "path": "M677.0 178V203H1071.0V228"
   },
   {
    "from": "deep_clue_0_0",
@@ -720,19 +729,31 @@
  "panels": [
   {
    "x": 45,
-   "y": 1382,
-   "w": 625,
+   "y": 1616,
+   "w": 412,
    "title": "Prosthetic joint infection",
    "items": [
     "HIGH index of suspicion · less virulent organisms (coagulase-negative staphylococci, Cutibacterium acnes)",
-    "managed by the orthopedic surgeon + infectious diseases"
+    "managed by the orthopedic surgeon + infectious diseases · early vs late"
    ],
    "cols": 1
   },
   {
-   "x": 684,
-   "y": 1382,
-   "w": 625,
+   "x": 471,
+   "y": 1616,
+   "w": 412,
+   "title": "Septic arthritis vs gout (older patients)",
+   "items": [
+    "septic: ± fever · high white count · POSITIVE Gram stain or culture",
+    "gout: ± fever · joint fluid 20 000-50 000 · monosodium urate crystals on microscopy",
+    "reactive arthritis: days to weeks after a gut (Campylobacter, Salmonella, Shigella, Yersinia, C. difficile) or genital (Chlamydia) infection · mono- or oligoarthritis, dactylitis, enthesitis · HLA-B27"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 897,
+   "y": 1616,
+   "w": 412,
    "title": "Viral polyarthritis",
    "items": [
     "parvovirus B19 (with anemia) · chikungunya, Zika, dengue (travel) · hepatitis B, C, HIV"

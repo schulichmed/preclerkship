@@ -6,7 +6,8 @@
   "title": "Which A1c target? Weigh fewer complications against HYPOGLYCEMIA",
   "lines": [
    "minimum for EVERY patient: free of symptomatic highs AND lows",
-   "decide WITH the patient: benefit vs lows, out-of-pocket cost, feasibility"
+   "decide WITH the patient: benefit vs lows, out-of-pocket cost, feasibility",
+   "A1c > 7%: microvascular AND cardiovascular risk ↑ · fasting and after-meal glucose both track risk"
   ]
  },
  "groups": [
@@ -43,7 +44,7 @@
    ]]]],
    "inv": [[["w", "Further ↓ chronic kidney disease (CKD) and retinopathy", []]]],
    "tx": [[["ok", "Tighten while lows stay unlikely", [
-     "~e.g. 35, T2DM for 2 years, metformin alone",
+     "case: 35 · T2DM 2 years · metformin alone · no complications",
      "drug choice: see the GLUCOSE-LOWERING DRUGS tree"
    ]]]]
   },
@@ -58,14 +59,16 @@
    ]]]],
    "inv": [[["w", "↓ microvascular complications", [
      "cardiovascular too, if started EARLY"
-   ]]]],
+   ]]],
+    [["warn", "A1c 6.0%: harm in some", ["older, frail · long duration · advanced coronary disease · past severe lows"]]]],
    "tx": [
     [["ok", "Self-monitored glucose (SMBG) targets", [
      "• fasting 4.0–7.0 mmol/L",
      "• 2 h after a meal 5.0–10.0 mmol/L"
     ]]],
     [["warn", "Over half never reach it", [
-     "ANY fall still counts (9.5 → 8.5%)"
+     "ANY fall still counts (9.5 → 8.5%)",
+     "case: 52 · type 1 for 30 years, insulin · coronary disease, neuropathy · no severe lows"
     ]]]
    ]
   },
@@ -90,7 +93,7 @@
    "tx": [
     [["ok", "Liberalize + check glucose (SMBG)", [
      "SMBG prevents, confirms and treats lows",
-     "~e.g. 85, severe dementia, on gliclazide"
+     "case: 85 · severe dementia, dependent · on gliclazide"
     ]]],
     [["bad", "But NOT above 8.5%", [
      "symptomatic highs + complications"
@@ -118,7 +121,17 @@
    "title": "The A1c: the best-validated marker, but it LAGS",
    "items": [
     "mean glucose over the last 8–12 weeks, ~50% from the last 30 days: changes lag behind glucose, so SMBG guides medication changes",
-    "misleading with altered red-cell turnover or hemoglobin (iron or B12 deficiency, chronic renal failure, hemoglobinopathies, splenectomy) → follow glucose readings instead"
+    "misleading with altered red-cell turnover or hemoglobin (iron or B12 deficiency, chronic renal failure, hemoglobinopathies, splenectomy) → follow glucose readings instead",
+    "SMBG frequency: individualize (type, drugs, control, literacy, lows, awareness, job, illness)"
+   ]
+  },
+  {
+   "title": "Lows: glucose ≤ 4.0 on insulin or a secretagogue",
+   "items": [
+    "no symptoms → think UNAWARENESS · mild: autonomic, self-treated",
+    "moderate: autonomic + neuroglycopenic, self-treated · SEVERE: needs someone's help",
+    "sweating, dizziness, fast heart, hunger · confusion, seizure, coma",
+    "highs (double digits): polyuria, nocturia, thirst, weight loss, fatigue → DKA, HHS"
    ]
   }
  ]

@@ -6,11 +6,13 @@
   "title": "ONE joint aching for over 6 weeks, worse with activity: osteoarthritis (OA) until a red flag says otherwise",
   "lines": [
    "OA is a CLINICAL diagnosis: typical symptoms + NO other cause · the X-ray STAGES it, it does not diagnose it",
-   "first set aside mechanical and sports causes of knee pain (no arthritis)"
+   "first set aside mechanical and sports causes of knee pain (no arthritis)",
+   "chronic monoarthritis: OA, OA, OA, then chronic crystals (gout, pseudogout, basic calcium phosphate) · less often autoimmune, Charcot (diabetes, syphilis), chronic infection (atypical mycobacteria), tumour (pigmented villonodular synovitis, synovial chondromatosis), osteonecrosis",
+   "1 in 7 Canadian adults · most common joint disorder · 11th cause of disability worldwide (above TB, heart disease) · knee OA mostly starts at 35-55"
   ]
  },
  "groups": [
-  {"id": "g_dx", "cols": [0, 1], "title": "IS IT OA?", "lines": ["knee >> hip; ankle; shoulder >> big toe"]},
+  {"id": "g_dx", "cols": [0, 1], "title": "IS IT OA?", "lines": ["knee >> hip; ankle; shoulder >> big toe · hand, thumb base usually with polyarthritis"]},
   {"id": "g_tx", "cols": [2, 4], "title": "TREAT IT: what stage, what can be fixed?", "lines": ["no treatment preserves the joint; all improve life WITH it"]}
  ],
  "sections": ["head", "clue", "tx"],
@@ -19,28 +21,32 @@
  "columns": [
   {"id": "red", "colour": "slate",
    "head": [[["h", "Red flag → NOT OA", ["think something else"]]]],
-   "clue": [[["bad", "Any ONE of these", ["• warm or hot joint: infection, crystals", "• autoimmune (rheumatoid, seronegative)", "• malignancy · fracture · avascular necrosis"]]], [["w", "Widespread pain", ["not OA: look elsewhere"]]]],
+   "clue": [[["bad", "Any ONE of these", ["• warm or hot joint: infection, crystals", "• autoimmune (rheumatoid, seronegative)", "• malignancy · fracture · avascular necrosis", "• rule out tendinopathy too"]]], [["w", "Widespread pain", ["not OA: look elsewhere"]]]],
    "tx": [[["w", "Work up that cause", ["MRI or bone scan only when the diagnosis is in DOUBT"]]]]
   },
   {"id": "oa", "colour": "teal",
    "head": [[["h", "Osteoarthritis", ["a 'sick joint': every tissue fails to heal"]]]],
-   "clue": [[["t", "Pain or stiffness with ACTIVITY", ["• morning stiffness < 30 min (usually < 5)", "• cool or barely warm effusion", "• joint-line tenderness, crepitus, thickening"]]], [["w", "Risk", ["• obesity · age · trauma, alignment · genes", "• female 1.4× · post-traumatic OA (after an anterior cruciate ligament tear) starts young"]]]],
-   "tx": [[["t", "X-ray: Kellgren-Lawrence (K/L) grade", ["• 1–2 = early · 3–4 = late to end stage", "• joint space narrowing, osteophytes"]]]]
+   "clue": [[["t", "Pain or stiffness with ACTIVITY", ["• morning stiffness < 30 min (usually < 5)", "• cool or barely warm effusion", "• joint-line tenderness, crepitus, thickening", "• most days, > 6 weeks", "case: 52 F, type 2 diabetes, knee pain since 45, 5 min stiffness, cool swelling, joint-line tender, crepitus"]]], [["w", "Risk", ["• obesity · age · trauma, alignment · genes", "• female 1.4× · muscle weakness · occupation", "• post-traumatic OA starts young · case: 36 F, ACL tear at 23 → > 50% need a knee replacement by 55"]]]],
+   "tx": [[["t", "X-ray: Kellgren-Lawrence (K/L) grade", ["• 1–2 = early · 3–4 = late to end stage", "• joint space narrowing, osteophytes", "• MRI, bone scan almost never"]]]]
   },
   {"id": "bio", "colour": "blue",
    "head": [[["h", "Every stage: biomechanics + education", ["alignment · overuse · weakness · gait"]]]],
-   "clue": [[["ok", "ACTIVE therapy", ["• neuromuscular exercise physiotherapy, ≥ 3 months (Tai-Chi, GLA:D program)", "• 150 min of activity a week", "• lose 5% of body weight"]]]],
-   "tx": [[["w", "Also", ["• walking aids, insoles, unloader brace", "• occupational therapy: joint protection", "• cognitive behavioural therapy · topical heat"]]], [["bad", "PASSIVE therapy not recommended", ["ultrasound, nerve stimulation (TENS), laser, acupuncture"]]]]
+   "clue": [[["ok", "ACTIVE therapy", ["• neuromuscular exercise physiotherapy, ≥ 3 months (Tai-Chi, GLA:D program)", "• 150 min of activity a week (walk, swim, bike)", "• lose 5% of body weight"]]]],
+   "tx": [[["w", "Also", ["• walking aids, insoles, unloader brace", "• occupational therapy: joint protection, avoid risky movements", "• cognitive behavioural therapy · topical heat"]]], [["bad", "PASSIVE therapy not recommended", ["ultrasound, nerve stimulation (TENS), laser, acupuncture"]]]]
   },
   {"id": "med", "colour": "purple",
    "head": [[["h", "Medicines: symptoms only", ["less pain, better function"]]]],
-   "clue": [[["ok", "Evidence-based", ["• topical anti-inflammatory (NSAID): diclofenac 2–3 × a day", "• oral NSAID if no contraindication (not in kidney failure)", "• refractory: steroid injection (short-term), then a duloxetine trial 2–3 months"]]]],
-   "tx": [[["warn", "Weak or unproven", ["• acetaminophen: meaningful effect?", "• glucosamine, herbal remedies", "• injected hyaluronic acid, platelet-rich plasma, stem cells"]]], [["bad", "AVOID", ["• opioids: generally avoid (tramadol at most; others: risks > benefit)", "• neuropathic pain drugs, capsaicin, chondroitin"]]]]
+   "clue": [[["ok", "Evidence-based", ["• topical anti-inflammatory (NSAID): diclofenac 2–3 × a day", "• oral NSAID if no contraindication (not in kidney failure)", "• refractory: steroid injection (short-term), then a duloxetine (SNRI) trial 2–3 months", "case: 68 M, varus knee, chronic renal failure → physio 3 months, OT, TOPICAL NSAID (no oral), injection, duloxetine"]]]],
+   "tx": [[["warn", "Weak or unproven", ["• acetaminophen: meaningful effect?", "• glucosamine, herbal remedies · topical NSAID for HIP OA", "• injected hyaluronic acid, platelet-rich plasma, stem cells"]]], [["bad", "AVOID", ["• opioids: generally avoid (tramadol at most; others: risks > benefit)", "• neuropathic pain drugs, capsaicin, chondroitin"]]]]
   },
   {"id": "surg", "colour": "orange",
    "head": [[["h", "Surgery: END STAGE only", ["unacceptable symptoms despite all of the rest"]]]],
-   "clue": [[["ok", "Joint replacement (arthroplasty)", ["a salvage procedure · strong evidence of benefit", "• X-ray bone on bone → refer to orthopedics"]]]],
+   "clue": [[["ok", "Joint replacement (arthroplasty)", ["a salvage procedure · strong evidence of benefit", "• X-ray bone on bone → refer to orthopedics", "case: same man 2 years later, cane, bone on bone despite all → knee arthroplasty"]]]],
    "tx": [[["bad", "NO knee arthroscopy", ["± meniscectomy or repair: no meaningful benefit"]]]]
   }
+ ],
+ "panels": [
+  {"title": "Primary vs secondary OA", "items": ["primary (most): risk factors, no clear cause", "secondary: post-traumatic (ACL, meniscus tear) · acromegaly, hyperparathyroidism, hemochromatosis · rare monogenic (Stickler, Marshall, dysplasias) · after rheumatoid or other inflammatory arthritis"]},
+  {"title": "Why OA happens", "items": ["NOT wear and tear or age: cartilage thins with age, raising the risk", "chronic metabolic, mechanical stress → inflammation, pain, breakdown of every joint tissue", "joint FAILURE, like heart failure: tissues fail to heal · treat what impairs healing (obesity, inactivity)"]}
  ]
 }

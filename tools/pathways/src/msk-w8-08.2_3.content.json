@@ -52,7 +52,8 @@
      "• 3-point mould: well moulded is NOT tight",
      "~ forgiving at the extremes of age"]]],
     [["warn", "2 · Still crooked, short or not smooth → SURGERY", ["open reduction internal fixation (ORIF) or external fixation"]]],
-    [["ok", "3 · Rehabilitate", []]]
+    [["ok", "3 · Rehabilitate", []]],
+    [["bad", "Cast TOO TIGHT: acute CTS ± compartment syndrome", ["split cast + padding · elevate · recheck every 15-20 min · no masking analgesia"]]]
    ]
   },
   {
@@ -67,7 +68,7 @@
     "• late arthrosis"]]]],
    "inv": [
     [["t", "1 · X-ray", ["usually sufficient"]]],
-    [["t", "2 · X-ray NORMAL → be SUSPICIOUS", ["treat it as fractured + CT or MRI"]]]
+    [["t", "2 · X-ray NORMAL → be SUSPICIOUS", ["cast, repeat X-ray in 10-14 days", "still normal, still suspected → CT or MRI"]]]
    ],
    "tx": [
     [["ok", "Undisplaced or DISTAL pole", ["cast until union"]],
@@ -78,7 +79,7 @@
    "id": "cts",
    "colour": "teal",
    "drop_label": "MEDIAN 3½",
-   "head": [[["h", "Carpal tunnel syndrome (CTS)", ["median nerve in the carpal tunnel"]]]],
+   "head": [[["h", "Carpal tunnel syndrome (CTS)", ["median nerve in the carpal tunnel", "with FPL, FDS, FDP tendons"]]]],
    "clue": [
     [["t", "Thumb, index, middle + ½ ring finger", [
      "• numbness and tingling, often AT NIGHT",
@@ -111,7 +112,7 @@
    "id": "uln",
    "colour": "orange",
    "drop_label": "ULNAR 1½",
-   "head": [[["h", "Ulnar neuropathy at the wrist", ["ulnar nerve in Guyon's canal"]]]],
+   "head": [[["h", "Ulnar neuropathy at the wrist", ["ulnar nerve in Guyon's canal", "with the ulnar artery"]]]],
    "clue": [[["t", "Little finger + ½ ring finger", [
     "• reduced feeling (hypoesthesia)",
     "• weak intrinsic hand muscles"]]]],
@@ -130,5 +131,11 @@
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {"title": "Hand muscles: which nerve", "items": [
+   "thenar (APB, FPB, opponens pollicis): RECURRENT branch of the median nerve",
+   "case: palm cut, recurrent median branch only → loses thumb OPPOSITION; keeps abduction (APL, radial), adduction (adductor pollicis, ulnar), IP flexion (FPL)",
+   "hypothenar, adductor pollicis, medial 2 lumbricals: ULNAR · lateral 2 lumbricals: median",
+   "interossei: palmar ADduct (PAD) · dorsal ABduct (DAB)"]}
+ ]
 }

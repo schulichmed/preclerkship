@@ -35,25 +35,26 @@
    "kind": "plain",
    "title": "Oligomenorrhoea and/or hyperandrogenism",
    "lines": [
-    "~renamed from polycystic ovary syndrome (PCOS) in 2026: the follicles are arrested antral follicles, not cysts"
+    "~renamed from polycystic ovary syndrome (PCOS) in 2026: the follicles are arrested antral follicles, not cysts",
+    "~no single cause: GnRH dysregulation, LH ↑ FSH ↓ → theca androgens · ovaries carry insulin + IGF receptors · fat converts adrenal hormones to testosterone"
    ]
   },
   {
    "id": "labs",
    "x": 290,
-   "y": 124,
+   "y": 178,
    "w": 420,
    "kind": "plain",
    "title": "History, exam + first-line labs",
    "lines": [
     "beta-hCG (human chorionic gonadotropin) · prolactin · TSH (thyroid-stimulating hormone) · total testosterone",
-    "~pelvic ultrasound is NOT required"
+    "~pelvic ultrasound is NOT required: cystic ovaries also occur soon after menarche and in normally cycling women"
    ]
   },
   {
    "id": "mimic",
    "x": 360,
-   "y": 260,
+   "y": 332,
    "w": 280,
    "kind": "plain",
    "title": "A mimic?",
@@ -64,7 +65,7 @@
   {
    "id": "m_oligo",
    "x": 15,
-   "y": 260,
+   "y": 332,
    "w": 300,
    "kind": "bad",
    "title": "NOT PMOS: mimics of oligomenorrhoea",
@@ -79,7 +80,7 @@
   {
    "id": "m_andro",
    "x": 685,
-   "y": 260,
+   "y": 332,
    "w": 300,
    "kind": "bad",
    "title": "NOT PMOS: mimics of hyperandrogenism",
@@ -93,18 +94,18 @@
   {
    "id": "testo",
    "x": 330,
-   "y": 470,
+   "y": 542,
    "w": 340,
    "kind": "plain",
    "title": "Read the total testosterone",
    "lines": [
-    "~the only androgen used (not DHEAS or androstenedione) · female normal < 2 nmol/L"
+    "~the only androgen used (not DHEAS or androstenedione) · female normal < 2 nmol/L · male range starts ~8"
    ]
   },
   {
    "id": "t_norm",
    "x": 15,
-   "y": 598,
+   "y": 688,
    "w": 300,
    "kind": "warn",
    "title": "Normal (< 2 nmol/L)",
@@ -116,7 +117,7 @@
   {
    "id": "t_fit",
    "x": 350,
-   "y": 598,
+   "y": 688,
    "w": 300,
    "kind": "ok",
    "title": "~2.1–2.5 nmol/L",
@@ -128,7 +129,7 @@
   {
    "id": "t_tum",
    "x": 685,
-   "y": 598,
+   "y": 688,
    "w": 300,
    "kind": "bad",
    "title": "~10 nmol/L: the male range",
@@ -140,18 +141,20 @@
   {
    "id": "pmos",
    "x": 330,
-   "y": 734,
+   "y": 824,
    "w": 340,
    "kind": "plain",
    "title": "PMOS: treat what distresses her",
    "lines": [
-    "~and watch metabolic + endometrial risk in everyone"
+    "~and watch metabolic + endometrial risk in everyone",
+    "case: menses 4×/yr · hirsute (waxes) · testosterone mildly ↑ · clean exclusions → PMOS, no scan needed",
+    "→ pill + eflornithine: response SLOW, maybe partial · hair removal does NOT worsen it"
    ]
   },
   {
    "id": "hair",
    "x": 15,
-   "y": 854,
+   "y": 1016,
    "w": 230,
    "kind": "anti",
    "title": "Hirsutism + hair",
@@ -167,7 +170,7 @@
   {
    "id": "cyc",
    "x": 262,
-   "y": 854,
+   "y": 1016,
    "w": 230,
    "kind": "ana",
    "title": "Irregular cycles + endometrium",
@@ -181,21 +184,21 @@
   {
    "id": "fert",
    "x": 509,
-   "y": 854,
+   "y": 1016,
    "w": 230,
    "kind": "info",
    "title": "Subfertility",
    "lines": [
     "lifestyle · induce ovulation with AROMATASE INHIBITORS",
     "metformin (arguably) for early miscarriage",
-    "ovarian stroma surgery: RARE now"
+    "ovarian stroma surgery (resection, drilling, thermal ablation): RARE now"
    ],
    "h": 206
   },
   {
    "id": "meta",
    "x": 756,
-   "y": 854,
+   "y": 1016,
    "w": 230,
    "kind": "ok",
    "title": "Metabolic risk",
@@ -209,7 +212,7 @@
   {
    "id": "x_hair",
    "x": 15,
-   "y": 1094,
+   "y": 1256,
    "w": 230,
    "kind": "bad",
    "title": "NOT topical testosterone",
@@ -221,7 +224,7 @@
   {
    "id": "x_fert",
    "x": 509,
-   "y": 1094,
+   "y": 1256,
    "w": 230,
    "kind": "warn",
    "title": "She CAN conceive spontaneously",
@@ -233,7 +236,7 @@
   {
    "id": "x_meta",
    "x": 756,
-   "y": 1094,
+   "y": 1256,
    "w": 230,
    "kind": "warn",
    "title": "NO body shaming",
@@ -259,21 +262,21 @@
   {
    "from": "mimic",
    "to": "m_oligo",
-   "path": "M360 290H315",
+   "path": "M360 362H315",
    "label": "yes",
    "label_at": [
     337,
-    281
+    353
    ]
   },
   {
    "from": "mimic",
    "to": "m_andro",
-   "path": "M640 290H685",
+   "path": "M640 362H685",
    "label": "yes",
    "label_at": [
     663,
-    281
+    353
    ]
   },
   {
@@ -282,28 +285,28 @@
    "label": "no",
    "label_at": [
     500,
-    395
+    467
    ]
   },
   {
    "from": "testo",
    "to": "t_norm",
-   "path": "M500.0 548V573H165.0V598"
+   "path": "M500.0 638V663H165.0V688"
   },
   {
    "from": "testo",
    "to": "t_fit",
-   "path": "M500.0 548V573H500.0V598"
+   "path": "M500.0 638V663H500.0V688"
   },
   {
    "from": "testo",
    "to": "t_tum",
-   "path": "M500.0 548V573H835.0V598"
+   "path": "M500.0 638V663H835.0V688"
   },
   {
    "from": "t_norm",
    "to": "pmos",
-   "path": "M165.0 694V764H330"
+   "path": "M165.0 784V890H330"
   },
   {
    "from": "t_fit",
@@ -312,22 +315,22 @@
   {
    "from": "pmos",
    "to": "hair",
-   "path": "M500.0 794V824H130.0V854"
+   "path": "M500.0 956V986H130.0V1016"
   },
   {
    "from": "pmos",
    "to": "cyc",
-   "path": "M500.0 794V824H377.0V854"
+   "path": "M500.0 956V986H377.0V1016"
   },
   {
    "from": "pmos",
    "to": "fert",
-   "path": "M500.0 794V824H624.0V854"
+   "path": "M500.0 956V986H624.0V1016"
   },
   {
    "from": "pmos",
    "to": "meta",
-   "path": "M500.0 794V824H871.0V854"
+   "path": "M500.0 956V986H871.0V1016"
   },
   {
    "from": "hair",
@@ -345,21 +348,23 @@
  "panels": [
   {
    "x": 15,
-   "y": 1226,
+   "y": 1388,
    "w": 480,
    "title": "History + exam clues",
    "items": [
     "menstrual history: how often at first, in the later teens, after 20",
     "just stopped the pill, now irregular? the pill MASKED it",
-    "TERMINAL male-pattern hair: sides of face, chin, chest, upper arms",
+    "TERMINAL male-pattern hair: sides of face, chin, chest, upper arms · lower arms, upper lip can be NORMAL",
+    "judge hair against rate of onset, ethnicity, parents' appearance",
     "Ferriman-Gallwey score: 9 sites graded 1–4; ignores ethnicity + hair removal",
-    "acanthosis nigricans · skin tags · central adiposity (waist ÷ hip > 0.85)",
+    "acanthosis nigricans · skin tags · central adiposity (waist ÷ hip > 0.85) · visual assessment suffices",
+    "GENTLE weight history: irregular only after weight gain? not all are overweight",
     "PMOS is GRADUAL and has NO galactorrhoea"
    ]
   },
   {
    "x": 505,
-   "y": 1226,
+   "y": 1388,
    "w": 480,
    "title": "Myths to dispel",
    "items": [

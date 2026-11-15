@@ -1,297 +1,65 @@
 {
  "name": "pediatric ataxia overview",
- "title": "A child with ataxia: localize it (hemisphere for limb ataxia, vermis for truncal ataxia), then sort the three most common causes (intoxication, acute postinfectious cerebellar ataxia, brain tumour) from the can't-miss causes (stroke or hemorrhage, meningitis or encephalitis, brain tumour) by the history; each column says whether to image and what to do",
+ "title": "A child with ataxia: localize it (hemisphere for limb ataxia, vermis for truncal ataxia), then sort the three most common causes (intoxication, acute postinfectious cerebellar ataxia, brain tumour) from the can't-miss causes (stroke or hemorrhage, meningitis or encephalitis, brain tumour) by the history; each column says whether to image and what to do, with the exam of a young child and Friedreich ataxia below",
  "col_w": 215,
  "root": {
   "title": "Child with ataxia: a SIGN, not a diagnosis",
   "lines": [
+   "cerebellum: trouble walking or sitting, falls to one side, slurred speech, low tone, intention tremor",
    "cerebellar HEMISPHERE → limbs: over- or undershoots, clumsy · VERMIS → trunk: can't sit, wide-based gait",
-   "also from vestibular disease (vertigo, vomiting) or weakness, sensory or position-sense loss",
-   "IMAGE (MRI preferred, CT more accessible) if: ANY other neurologic finding · SUBACUTE course · TRAUMA"
+   "also from vestibular disease (severe vertigo, vomiting, positional) or weakness, sensory or position-sense loss",
+   "by stage: not walking → can't sit unsupported, misreaches · walking → wide-based, unsteady, clumsy, dysmetria, intention tremor",
+   "IMAGE (MRI preferred, CT more accessible) if: ANY other neurologic finding · SUBACUTE course (weeks to months) · TRAUMA"
   ]
  },
  "groups": [
-  {
-   "id": "g_c",
-   "cols": [
-    0,
-    2
-   ],
-   "title": "3 MOST COMMON",
-   "lines": [
-    "the history sorts them"
-   ]
-  },
-  {
-   "id": "g_m",
-   "cols": [
-    3,
-    4
-   ],
-   "title": "CAN'T MISS: rule in or out every time",
-   "lines": [
-    "brain tumour is one too"
-   ]
-  }
+  {"id": "g_c", "cols": [0, 2], "title": "3 MOST COMMON", "lines": ["the history sorts them"]},
+  {"id": "g_m", "cols": [3, 4], "title": "CAN'T MISS: rule in or out every time", "lines": ["brain tumour is one too"]}
  ],
- "sections": [
-  "head",
-  "pres",
-  "inv",
-  "tx"
- ],
- "row_names": {
-  "pres": "HISTORY",
-  "inv": "IMAGING",
-  "tx": "MANAGEMENT"
- },
- "dashed_sections": [
-  "pres"
- ],
+ "sections": ["head", "pres", "inv", "tx"],
+ "row_names": {"pres": "HISTORY", "inv": "IMAGING", "tx": "MANAGEMENT"},
+ "dashed_sections": ["pres"],
  "columns": [
-  {
-   "id": "tox",
-   "colour": "teal",
-   "drop_label": "ingestion",
-   "head": [
-    [
-     [
-      "h",
-      "Intoxication",
-      [
-       "any sedative-hypnotic"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Access + ingestion",
-      [
-       "• ethanol, anticonvulsants, cough syrup",
-       "• witnessed or known; unsupervised time",
-       "• abuse red flags",
-       "• improves with supportive care"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "ok",
-      "NO imaging",
-      [
-       "if not very altered and can be watched in the emergency department"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "warn",
-      "Call POISON CONTROL",
-      [
-       "• ABCs compromised → resuscitate"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "pi",
-   "colour": "blue",
-   "drop_label": "after a virus",
-   "head": [
-    [
-     [
-      "h",
-      "Acute postinfectious cerebellar ataxia",
-      []
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Viral illness 1-4 weeks before",
-      [
-       "• well, afebrile",
-       "• no headache"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "warn",
-      "LOW threshold to image",
-      [
-       "a recent virus does not confirm it"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "Supportive",
-      [
-       "• vomiting → IV fluids, anti-emetics",
-       "• supervise walking, no stairs"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "tum",
-   "colour": "purple",
-   "drop_label": "progressive",
-   "head": [
-    [
-     [
-      "h",
-      "Brain tumour",
-      [
-       "medulloblastoma · cerebellar astrocytoma"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "PROGRESSIVE over weeks",
-      [
-       "• headache, worse on waking",
-       "• invades cerebellum or blocks CSF → hydrocephalus"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "bad",
-      "IMAGE",
-      []
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "bad",
-      "Neurosurgery + oncology",
-      [
-       "• hydrocephalus → NEUROSURGERY emergently"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "str",
-   "colour": "magenta",
-   "drop_label": "abrupt",
-   "head": [
-    [
-     [
-      "h",
-      "Stroke · hemorrhage · infarction",
-      []
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "ABRUPT onset",
-      [
-       "• loss of consciousness or seizure",
-       "• trigger: chiropractic neck adjustment (dissection), car crash",
-       "• clotting disorder"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "bad",
-      "IMAGE",
-      []
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "bad",
-      "Pediatric neurology + ICU",
-      [
-       "• Code Stroke if applicable"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "men",
-   "colour": "orange",
-   "drop_label": "fever",
-   "head": [
-    [
-     [
-      "h",
-      "Meningitis · encephalitis",
-      [
-       "viral or bacterial"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "FEVER + meningismus",
-      [
-       "• headache, vomiting",
-       "• altered consciousness, seizures"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "bad",
-      "IMAGE",
-      [
-       "then lumbar puncture"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "bad",
-      "Antibiotics",
-      []
-     ]
-    ]
-   ]
-  }
+  {"id": "tox", "colour": "teal", "drop_label": "ingestion",
+   "head": [[["h", "Intoxication", ["any sedative-hypnotic"]]]],
+   "pres": [[["t", "Access + ingestion", ["• ethanol, anticonvulsants, cough syrup", "• witnessed or known; unsupervised time", "• abuse red flags: bruises, changing story", "• improves with supportive care"]]],
+            [["w", "case: 2, unsteady + slow for 2 hours", ["somnolent · sibling's carbamazepine within reach → poison control"]]]],
+   "inv": [[["ok", "NO imaging", ["if not very altered and can be watched in the emergency department", "case: 4, empty dextromethorphan bottle → no imaging"]]]],
+   "tx": [[["warn", "Call POISON CONTROL", ["• ABCs compromised → resuscitate"]]]]},
+  {"id": "pi", "colour": "blue", "drop_label": "after a virus",
+   "head": [[["h", "Acute postinfectious cerebellar ataxia", ["direct viral infection or autoimmune"]]]],
+   "pres": [[["t", "Viral illness 1-4 weeks before", ["• varicella, mono, respiratory or gut virus", "• ABRUPT, worse over 1-2 days, better over weeks", "• well, afebrile · no headache"]]],
+            [["w", "case: 3, 'drunk' for 2 days", ["afebrile, well · daycare viruses within a month · wide-based gait"]]]],
+   "inv": [[["warn", "LOW threshold to image", ["a recent virus does not confirm it"]]]],
+   "tx": [[["ok", "Supportive", ["• vomiting → IV fluids, anti-emetics", "• supervise walking, no stairs"]]]]},
+  {"id": "tum", "colour": "purple", "drop_label": "progressive",
+   "head": [[["h", "Brain tumour", ["medulloblastoma · cerebellar astrocytoma"]]]],
+   "pres": [[["t", "PROGRESSIVE over weeks", ["• headache, worse on waking", "• invades cerebellum or blocks CSF → hydrocephalus"]]],
+            [["w", "case: 5, clumsy 1 month", ["after a virus · headaches (family migraine) · marked LEFT dysmetria → medulloblastoma"]]]],
+   "inv": [[["bad", "IMAGE", ["case: 6, clumsy + headaches 3 months, dysmetria only"]]]],
+   "tx": [[["bad", "Neurosurgery + oncology", ["• hydrocephalus → NEUROSURGERY emergently"]]]]},
+  {"id": "str", "colour": "magenta", "drop_label": "abrupt",
+   "head": [[["h", "Stroke · hemorrhage · infarction", ["cerebellar vessel blocked or bleeding"]]]],
+   "pres": [[["t", "ABRUPT onset", ["• loss of consciousness or seizure", "• trigger: chiropractic neck adjustment (dissection), car crash", "• clotting disorder"]]]],
+   "inv": [[["bad", "IMAGE", ["case: 3, unsteady after a chiropractor that afternoon"]]]],
+   "tx": [[["bad", "Pediatric neurology + ICU", ["• Code Stroke if applicable"]]]]},
+  {"id": "men", "colour": "orange", "drop_label": "fever",
+   "head": [[["h", "Meningitis · encephalitis", ["viral or bacterial"]]]],
+   "pres": [[["t", "FEVER + meningismus", ["• headache, vomiting", "• altered consciousness, seizures"]]]],
+   "inv": [[["bad", "IMAGE", ["then lumbar puncture", "case: 7, fever 4 days, vomiting, overshoots, stiff neck"]]]],
+   "tx": [[["bad", "Antibiotics", []]]]}
+ ],
+ "panels": [
+  {"title": "Examining a child under 5", "items": [
+   "over 5: full adult neurologic exam",
+   "dysmetria: reach for a favourite toy or food with each hand · watch for tremor",
+   "nystagmus: follow a toy across the visual field",
+   "sensation: poke a foot while distracted, does the child look?",
+   "gait: caregiver steps away · toddlers are wide-based anyway, ask if it is NEW",
+   "speech: slurred?"]},
+  {"title": "Hereditary: Friedreich ataxia", "items": [
+   "autosomal RECESSIVE",
+   "slowly progressive ataxia · dysarthria",
+   "ABSENT tendon reflexes · nystagmus"]}
  ]
 }

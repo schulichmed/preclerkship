@@ -1,7 +1,7 @@
 {
  "name": "brain tumours overview",
  "width": 1068,
- "title": "Suspected brain tumour: progressive symptoms and raised intracranial pressure prompt a contrast MRI; metastasis is treated by resection and radiation, a glioma by its grade (an enhancing high-grade glioma is treated at once, a non-enhancing low-grade glioma can be watched), and primary CNS lymphoma is suspected in the immunosuppressed",
+ "title": "Suspected brain tumour: progressive symptoms and raised intracranial pressure prompt a contrast MRI; metastasis is treated by resection and radiation, a glioma by its grade (an enhancing high-grade glioma is treated at once, a non-enhancing low-grade glioma can be watched), and primary CNS lymphoma is suspected in the immunosuppressed; raised pressure and herniation, tumour classification and paraneoplastic syndromes are compared below",
  "kinds": {
   "met_h": [
    "#1f6f8b",
@@ -79,33 +79,33 @@
  "bands": [
   {
    "x": 40,
-   "y": 424,
+   "y": 514,
    "w": 246,
-   "h": 522,
+   "h": 1064,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 316,
-   "y": 424,
+   "y": 514,
    "w": 246,
-   "h": 522,
+   "h": 1064,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 564,
-   "y": 424,
+   "y": 514,
    "w": 246,
-   "h": 522,
+   "h": 1064,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 812,
-   "y": 424,
+   "y": 514,
    "w": 246,
-   "h": 522,
+   "h": 1064,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   }
@@ -113,14 +113,14 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 550,
-   "h": 96,
+   "y": 694,
+   "h": 306,
    "text": "CLUES"
   },
   {
    "x": 23,
-   "y": 686,
-   "h": 252,
+   "y": 1040,
+   "h": 530,
    "text": "TREATMENT"
   }
  ],
@@ -133,17 +133,18 @@
    "kind": "dark",
    "title": "Could it be a brain TUMOUR? The red flag is PROGRESSIVE symptoms",
    "lines": [
+    "• neuro symptoms or signs progressing over days to weeks · SHORT history (weeks to a few months) = highly malignant · LONG (months or more) = benign or slow-growing",
     "• raised pressure: ↓ consciousness · headache, nausea, vomiting · Cushing response · papilledema (LATE) · herniation",
     "• headache: persistent, progressive, worse lying down and in the morning, wakes from sleep, worse with cough or Valsalva",
-    "• focal deficit · mental status change (mistaken for depression or dementia) · seizures, especially focal",
-    "• CONTRAST MRI (gadolinium) = test of choice · CT only WITH contrast · tissue diagnosis still needed",
-    "• steroids for brain swelling · anti-seizure drugs only once there is a seizure"
+    "• focal deficit (weakness, sensory loss, dysphasia, gait, vision), insidious · mental status change: apathy, personality change (mistaken for depression or dementia) · seizures, especially FOCAL",
+    "• diagnosis: history · exam · CONTRAST MRI (gadolinium) = test of choice · CT only WITH contrast · TISSUE diagnosis (biopsy or resection) still needed",
+    "• steroids for brain swelling · anti-seizure drugs only once there is a seizure · seizure → no driving, Ministry of Transportation notified"
    ]
   },
   {
    "id": "g_sec",
    "x": 45,
-   "y": 192,
+   "y": 282,
    "w": 236,
    "h": 60,
    "kind": "plain",
@@ -155,7 +156,7 @@
   {
    "id": "g_pri",
    "x": 321,
-   "y": 192,
+   "y": 282,
    "w": 732,
    "h": 60,
    "kind": "plain",
@@ -167,7 +168,7 @@
   {
    "id": "t_enh",
    "x": 321,
-   "y": 292,
+   "y": 382,
    "w": 484,
    "h": 60,
    "kind": "plain",
@@ -179,21 +180,23 @@
   {
    "id": "met_head_0_0",
    "x": 45,
-   "y": 432,
+   "y": 522,
    "w": 236,
-   "h": 78,
+   "h": 132,
    "kind": "met_h",
    "title": "Brain metastasis",
    "lines": [
-    "most common CNS tumour"
+    "most common CNS tumour",
+    "15% of cancer deaths: brain mets at autopsy",
+    "15-20% of cancers PRESENT as a brain met"
    ]
   },
   {
    "id": "hgg_head_0_0",
    "x": 321,
-   "y": 432,
+   "y": 522,
    "w": 236,
-   "h": 78,
+   "h": 132,
    "kind": "hgg_h",
    "title": "High-grade glioma",
    "lines": [
@@ -203,47 +206,63 @@
   {
    "id": "lgg_head_0_0",
    "x": 569,
-   "y": 432,
+   "y": 522,
    "w": 236,
-   "h": 78,
+   "h": 132,
    "kind": "lgg_h",
    "title": "Low-grade glioma",
    "lines": [
-    "grade 2 · slow, but still malignant"
+    "grade 2 · slow, but still MALIGNANT",
+    "only grade 1 (pilocytic) is not"
    ]
   },
   {
    "id": "pcl_head_0_0",
    "x": 817,
-   "y": 432,
+   "y": 522,
    "w": 236,
-   "h": 78,
+   "h": 132,
    "kind": "pcl_h",
    "title": "Primary CNS lymphoma",
    "lines": [
-    "non-neural tissue, confined to the CNS"
+    "non-neural tissue, confined to the CNS",
+    "NOT spread from systemic lymphoma",
+    "rising incidence"
    ]
   },
   {
    "id": "met_pres_0_0",
    "x": 45,
-   "y": 550,
+   "y": 694,
    "w": 236,
-   "h": 96,
+   "h": 150,
    "kind": "met_t",
    "title": "Where from?",
    "lines": [
-    "• lung (small cell, adenocarcinoma)",
+    "• lung: 16% of brain mets (small cell, adenocarcinoma)",
     "• breast · melanoma · renal cell",
+    "• rare: prostate, gut, bladder, gynecologic",
     "• often multiple, enhancing lesions"
+   ]
+  },
+  {
+   "id": "met_pres_1_0",
+   "x": 45,
+   "y": 866,
+   "w": 236,
+   "h": 134,
+   "kind": "met_w",
+   "title": "case: 75, 60 pack-years, 3 weeks",
+   "lines": [
+    "progressive positional headache, confusion, word finding, vomiting, right arm twitching · right hemiparesis → lung primary"
    ]
   },
   {
    "id": "hgg_pres_0_0",
    "x": 321,
-   "y": 550,
+   "y": 694,
    "w": 236,
-   "h": 96,
+   "h": 106,
    "kind": "hgg_t",
    "title": "SHORT history",
    "lines": [
@@ -251,11 +270,23 @@
    ]
   },
   {
+   "id": "hgg_pres_1_0",
+   "x": 321,
+   "y": 822,
+   "w": 236,
+   "h": 178,
+   "kind": "hgg_w",
+   "title": "case: 78, 2 months",
+   "lines": [
+    "headache, confusion, memory loss · normal exam → MRI: deep glioblastoma → steroids, stereotactic biopsy, palliative radiation + chemo · died at 5 months"
+   ]
+  },
+  {
    "id": "lgg_pres_0_0",
    "x": 569,
-   "y": 550,
+   "y": 694,
    "w": 236,
-   "h": 96,
+   "h": 133,
    "kind": "lgg_t",
    "title": "LONG history",
    "lines": [
@@ -264,11 +295,23 @@
    ]
   },
   {
+   "id": "lgg_pres_1_0",
+   "x": 569,
+   "y": 849,
+   "w": 236,
+   "h": 151,
+   "kind": "lgg_w",
+   "title": "case: 32, resident on call",
+   "lines": [
+    "first tonic-clonic seizure, no headache → non-enhancing glioma · seizure-free on anti-seizure drugs"
+   ]
+  },
+  {
    "id": "pcl_pres_0_0",
    "x": 817,
-   "y": 550,
+   "y": 694,
    "w": 236,
-   "h": 96,
+   "h": 306,
    "kind": "pcl_t",
    "title": "Who gets it?",
    "lines": [
@@ -280,38 +323,79 @@
   {
    "id": "met_tx_0_0",
    "x": 45,
-   "y": 686,
+   "y": 1040,
    "w": 236,
-   "h": 252,
+   "h": 282,
    "kind": "ok",
    "title": "Accessible + causing symptoms",
    "lines": [
     "1 · resection (biopsy only if difficult)",
     "2 · then radiation: whole-brain or stereotactic radiosurgery",
-    "3 · treat the primary cancer too"
+    "3 · treat the primary cancer too",
+    "~ choice depends on clinical status, prognosis"
+   ]
+  },
+  {
+   "id": "met_tx_1_0",
+   "x": 45,
+   "y": 1344,
+   "w": 236,
+   "h": 226,
+   "kind": "met_w",
+   "title": "case outcome",
+   "lines": [
+    "steroids, anti-seizure drug · resected even though lung biopsy possible (symptomatic) · brain + chest radiation · died at 14 months"
    ]
   },
   {
    "id": "hgg_tx_0_0",
    "x": 321,
-   "y": 686,
+   "y": 1040,
    "w": 236,
-   "h": 252,
+   "h": 168,
    "kind": "bad",
    "title": "TREAT IMMEDIATELY",
    "lines": [
     "1 · maximal safe resection (deep → stereotactic biopsy)",
     "2 · radiation, 15-30 treatments",
     "3 · temozolomide (oral) during and 6-12 months after",
-    "~ glioblastoma: median survival 14-18 months"
+    "~ resecting all visible tumour helps, but NOT curative"
+   ]
+  },
+  {
+   "id": "hgg_tx_1_0",
+   "x": 321,
+   "y": 1230,
+   "w": 236,
+   "h": 186,
+   "kind": "hgg_w",
+   "title": "Glioblastoma survival",
+   "lines": [
+    "• radiation alone: 10-12 months · 2-year 10%",
+    "• + temozolomide: 14-15 months · 2-year 26%",
+    "• surgery + both: 18 months · 2-year 40%",
+    "~ worse with age, poor performance status"
+   ]
+  },
+  {
+   "id": "hgg_tx_2_0",
+   "x": 321,
+   "y": 1438,
+   "w": 236,
+   "h": 132,
+   "kind": "warn",
+   "title": "Radiation side effects",
+   "lines": [
+    "• early: neuro worsening, hair loss, dermatitis, otitis externa, fatigue",
+    "• late: cognitive decline, focal necrosis, radiation vasculitis (stroke), second cancer"
    ]
   },
   {
    "id": "lgg_tx_0_0",
    "x": 569,
-   "y": 686,
+   "y": 1040,
    "w": 236,
-   "h": 80,
+   "h": 90,
    "kind": "ok",
    "title": "No symptoms or seizures controlled",
    "lines": [
@@ -321,24 +405,50 @@
   {
    "id": "lgg_tx_1_0",
    "x": 569,
-   "y": 788,
+   "y": 1152,
    "w": 236,
-   "h": 150,
+   "h": 142,
    "kind": "warn",
    "title": "TREAT if ANY of these",
    "lines": [
     "• new or progressive symptoms",
     "• clear progression on MRI (starts to enhance)",
-    "• patient preference · older, very large",
-    "→ biopsy or resection, then radiation"
+    "• patient preference · older, very large"
+   ]
+  },
+  {
+   "id": "lgg_tx_2_0",
+   "x": 569,
+   "y": 1316,
+   "w": 236,
+   "h": 142,
+   "kind": "ok",
+   "title": "Then",
+   "lines": [
+    "1 · biopsy or resection to confirm",
+    "2 · radiation (most common)",
+    "• chemo alone: some oligodendrogliomas",
+    "• complete resection: may observe"
+   ]
+  },
+  {
+   "id": "lgg_tx_3_0",
+   "x": 569,
+   "y": 1480,
+   "w": 236,
+   "h": 88,
+   "kind": "lgg_w",
+   "title": "Median survival 5-15 years",
+   "lines": [
+    "BETTER: oligodendroglioma with 1p/19q deletion"
    ]
   },
   {
    "id": "pcl_tx_0_0",
    "x": 817,
-   "y": 686,
+   "y": 1040,
    "w": 236,
-   "h": 252,
+   "h": 530,
    "kind": "pcl_w",
    "title": "Tissue diagnosis",
    "lines": [
@@ -350,12 +460,12 @@
   {
    "from": "root",
    "to": "g_sec",
-   "path": "M549.0 142V167H163.0V192"
+   "path": "M549.0 232V257H163.0V282"
   },
   {
    "from": "root",
    "to": "g_pri",
-   "path": "M549.0 142V167H687.0V192"
+   "path": "M549.0 232V257H687.0V282"
   },
   {
    "from": "g_pri",
@@ -363,15 +473,47 @@
    "from_dx": -124
   },
   {
+   "from": "met_pres_0_0",
+   "to": "met_pres_1_0"
+  },
+  {
+   "from": "hgg_pres_0_0",
+   "to": "hgg_pres_1_0"
+  },
+  {
+   "from": "lgg_pres_0_0",
+   "to": "lgg_pres_1_0"
+  },
+  {
+   "from": "met_tx_0_0",
+   "to": "met_tx_1_0"
+  },
+  {
+   "from": "hgg_tx_0_0",
+   "to": "hgg_tx_1_0"
+  },
+  {
+   "from": "hgg_tx_1_0",
+   "to": "hgg_tx_2_0"
+  },
+  {
    "from": "lgg_tx_0_0",
    "to": "lgg_tx_1_0"
+  },
+  {
+   "from": "lgg_tx_1_0",
+   "to": "lgg_tx_2_0"
+  },
+  {
+   "from": "lgg_tx_2_0",
+   "to": "lgg_tx_3_0"
   },
   {
    "from": "met_head_0_0",
    "to": "met_pres_0_0"
   },
   {
-   "from": "met_pres_0_0",
+   "from": "met_pres_1_0",
    "to": "met_tx_0_0"
   },
   {
@@ -381,7 +523,7 @@
    "label": "known cancer, smoker",
    "label_at": [
     163.0,
-    392
+    482
    ]
   },
   {
@@ -389,7 +531,7 @@
    "to": "hgg_pres_0_0"
   },
   {
-   "from": "hgg_pres_0_0",
+   "from": "hgg_pres_1_0",
    "to": "hgg_tx_0_0"
   },
   {
@@ -399,7 +541,7 @@
    "label": "ENHANCES",
    "label_at": [
     439.0,
-    392
+    482
    ]
   },
   {
@@ -407,7 +549,7 @@
    "to": "lgg_pres_0_0"
   },
   {
-   "from": "lgg_pres_0_0",
+   "from": "lgg_pres_1_0",
    "to": "lgg_tx_0_0"
   },
   {
@@ -417,7 +559,7 @@
    "label": "does NOT enhance",
    "label_at": [
     687.0,
-    392
+    482
    ]
   },
   {
@@ -435,9 +577,54 @@
    "label": "immunosuppressed",
    "label_at": [
     935.0,
-    392
+    482
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1604,
+   "w": 327,
+   "title": "Raised pressure and herniation",
+   "items": [
+    "normal: adults 7.5-20 cm water (5-15 mmHg) · children 3-7 · infants 1.5-6",
+    "Monro-Kellie: rigid skull · brain + CSF + blood + mass · compensates only up to a point",
+    "mass effect: focal (tumour, bleed, abscess, infarct) · generalized (hydrocephalus, meningitis, edema after trauma, hypoxia, CPR)",
+    "lumbar puncture: CAUTION with a mass · monitor or ventricular drain (drains CSF)",
+    "uncal: ipsilateral CN III palsy + dilated pupil · contralateral weakness",
+    "central: ↓ consciousness · tonsillar: medulla compressed, FATAL",
+    "descending: CN III (most common), IV, VI · PCA, ACA stroke · Duret hemorrhage · Cushing triad: hypertension, bradycardia, apnea"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 386,
+   "y": 1604,
+   "w": 327,
+   "title": "Primary tumour classification",
+   "items": [
+    "glioma (astrocytoma, oligodendroglioma, ependymoma) · meningioma · lymphoma · schwannoma, neurofibroma · pituitary, craniopharyngioma · germ cell",
+    "WHO grade: 1 pilocytic astrocytoma · 2 low grade · 3 anaplastic · 4 glioblastoma",
+    "IDH mutant + 1p/19q co-deleted → BETTER prognosis · IDH wild-type, 1p/19q intact → worse",
+    "integrated diagnosis = histology + grade + biomarkers · astrocytoma more aggressive than oligodendroglioma"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 726,
+   "y": 1604,
+   "w": 327,
+   "title": "Paraneoplastic neurologic syndromes",
+   "items": [
+    "rare (0.01% of cancers) · mostly immune · neuro symptoms PRECEDE the cancer by weeks to months",
+    "Lambert-Eaton: 3% of small cell lung · anti-voltage-gated calcium channel",
+    "myasthenia gravis: 15% of thymoma",
+    "cerebellar degeneration: ovarian, breast, lung · anti-Yo",
+    "limbic encephalitis, encephalomyelitis: small cell lung · anti-Hu",
+    "neuropathy: small cell lung, osteosclerotic myeloma · opsoclonus-myoclonus: childhood neuroblastoma"
+   ],
+   "cols": 1
+  }
+ ]
 }

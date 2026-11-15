@@ -187,81 +187,81 @@
  "bands": [
   {
    "x": 40,
-   "y": 426,
+   "y": 460,
    "w": 224,
-   "h": 856,
+   "h": 914,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 266,
-   "y": 426,
+   "y": 460,
    "w": 224,
-   "h": 856,
+   "h": 914,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
   {
    "x": 492,
-   "y": 426,
+   "y": 460,
    "w": 224,
-   "h": 856,
+   "h": 914,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 746,
-   "y": 426,
+   "y": 460,
    "w": 224,
-   "h": 856,
+   "h": 914,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
   {
    "x": 972,
-   "y": 426,
+   "y": 460,
    "w": 224,
-   "h": 856,
+   "h": 914,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 1198,
-   "y": 426,
+   "y": 460,
    "w": 224,
-   "h": 856,
+   "h": 914,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 1452,
-   "y": 426,
+   "y": 460,
    "w": 224,
-   "h": 856,
+   "h": 914,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 1678,
-   "y": 426,
+   "y": 460,
    "w": 224,
-   "h": 856,
+   "h": 914,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 1904,
-   "y": 426,
+   "y": 460,
    "w": 224,
-   "h": 856,
+   "h": 914,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 2158,
-   "y": 426,
+   "y": 460,
    "w": 224,
-   "h": 856,
+   "h": 914,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -269,26 +269,26 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 240,
-   "h": 114,
+   "y": 256,
+   "h": 132,
    "text": "WORKUP"
   },
   {
    "x": 23,
-   "y": 572,
+   "y": 606,
    "h": 152,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 764,
-   "h": 200,
+   "y": 798,
+   "h": 204,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 1004,
-   "h": 270,
+   "y": 1042,
+   "h": 324,
    "text": "MANAGEMENT"
   }
  ],
@@ -310,37 +310,44 @@
    "x": 45,
    "y": 138,
    "w": 666,
-   "h": 62,
+   "h": 78,
    "kind": "plain",
    "title": "A LUMP: benign or WORRISOME on exam?",
-   "lines": []
+   "lines": [
+    "cancer in ~10% of masses · mammogram misses 12–15%"
+   ]
   },
   {
    "id": "g_pain",
    "x": 751,
    "y": 138,
    "w": 666,
-   "h": 62,
+   "h": 78,
    "kind": "plain",
    "title": "BREAST PAIN",
-   "lines": []
+   "lines": [
+    "> 45% of women · usually hormonal · only 8% of cancers include pain",
+    "normal exam: CYCLICAL (2/3) or non-cyclical?"
+   ]
   },
   {
    "id": "g_dis",
    "x": 1457,
    "y": 138,
    "w": 666,
-   "h": 62,
+   "h": 78,
    "kind": "plain",
    "title": "THE NIPPLE: discharge, or a changed nipple",
-   "lines": []
+   "lines": [
+    "lactation normal · galactorrhea physiologic · pathologic = a lesion, MALIGNANT in 5–10%"
+   ]
   },
   {
    "id": "g_scr",
    "x": 2163,
    "y": 138,
    "w": 214,
-   "h": 62,
+   "h": 78,
    "kind": "plain",
    "title": "SCREENING: no symptoms",
    "lines": []
@@ -348,9 +355,9 @@
   {
    "id": "p_lump",
    "x": 45,
-   "y": 240,
+   "y": 256,
    "w": 666,
-   "h": 114,
+   "h": 132,
    "kind": "info",
    "title": "When you investigate",
    "lines": [
@@ -361,9 +368,9 @@
   {
    "id": "p_pain",
    "x": 751,
-   "y": 240,
+   "y": 256,
    "w": 666,
-   "h": 114,
+   "h": 132,
    "kind": "info",
    "title": "Exam: a mass or suspicious finding?",
    "lines": [
@@ -374,9 +381,9 @@
   {
    "id": "p_dis",
    "x": 1457,
-   "y": 240,
+   "y": 256,
    "w": 666,
-   "h": 114,
+   "h": 132,
    "kind": "info",
    "title": "Compress the areola",
    "lines": [
@@ -387,13 +394,13 @@
   {
    "id": "p_scr",
    "x": 2163,
-   "y": 240,
+   "y": 256,
    "w": 214,
-   "h": 114,
+   "h": 132,
    "kind": "info",
    "title": "Mammogram by RISK",
    "lines": [
-    "• usual risk, 50–74: every 2 years",
+    "• usual risk, 50–74: every 2 years · ↓ mortality 25%",
     "• 40–49: not routinely",
     "• HIGH risk: YEARLY (see the panel)"
    ]
@@ -401,7 +408,7 @@
   {
    "id": "ben_head_0_0",
    "x": 45,
-   "y": 434,
+   "y": 468,
    "w": 214,
    "h": 98,
    "kind": "ben_h",
@@ -413,7 +420,7 @@
   {
    "id": "fn_head_0_0",
    "x": 271,
-   "y": 434,
+   "y": 468,
    "w": 214,
    "h": 98,
    "kind": "fn_h",
@@ -425,7 +432,7 @@
   {
    "id": "ca_head_0_0",
    "x": 497,
-   "y": 434,
+   "y": 468,
    "w": 214,
    "h": 98,
    "kind": "ca_h",
@@ -437,7 +444,7 @@
   {
    "id": "cyc_head_0_0",
    "x": 751,
-   "y": 434,
+   "y": 468,
    "w": 214,
    "h": 98,
    "kind": "cyc_h",
@@ -449,7 +456,7 @@
   {
    "id": "mas_head_0_0",
    "x": 977,
-   "y": 434,
+   "y": 468,
    "w": 214,
    "h": 98,
    "kind": "mas_h",
@@ -461,7 +468,7 @@
   {
    "id": "ic_head_0_0",
    "x": 1203,
-   "y": 434,
+   "y": 468,
    "w": 214,
    "h": 98,
    "kind": "ic_h",
@@ -474,7 +481,7 @@
   {
    "id": "gal_head_0_0",
    "x": 1457,
-   "y": 434,
+   "y": 468,
    "w": 214,
    "h": 98,
    "kind": "gal_h",
@@ -487,7 +494,7 @@
   {
    "id": "pap_head_0_0",
    "x": 1683,
-   "y": 434,
+   "y": 468,
    "w": 214,
    "h": 98,
    "kind": "pap_h",
@@ -499,7 +506,7 @@
   {
    "id": "pg_head_0_0",
    "x": 1909,
-   "y": 434,
+   "y": 468,
    "w": 214,
    "h": 98,
    "kind": "pg_h",
@@ -511,7 +518,7 @@
   {
    "id": "cis_head_0_0",
    "x": 2163,
-   "y": 434,
+   "y": 468,
    "w": 214,
    "h": 98,
    "kind": "cis_h",
@@ -524,7 +531,7 @@
   {
    "id": "ben_clue_0_0",
    "x": 45,
-   "y": 572,
+   "y": 606,
    "w": 214,
    "h": 152,
    "kind": "ben_t",
@@ -537,7 +544,7 @@
   {
    "id": "fn_clue_0_0",
    "x": 271,
-   "y": 572,
+   "y": 606,
    "w": 214,
    "h": 152,
    "kind": "fn_t",
@@ -551,7 +558,7 @@
   {
    "id": "ca_clue_0_0",
    "x": 497,
-   "y": 572,
+   "y": 606,
    "w": 214,
    "h": 152,
    "kind": "ca_t",
@@ -565,7 +572,7 @@
   {
    "id": "cyc_clue_0_0",
    "x": 751,
-   "y": 572,
+   "y": 606,
    "w": 214,
    "h": 152,
    "kind": "cyc_t",
@@ -577,7 +584,7 @@
   {
    "id": "mas_clue_0_0",
    "x": 977,
-   "y": 572,
+   "y": 606,
    "w": 214,
    "h": 152,
    "kind": "mas_t",
@@ -590,7 +597,7 @@
   {
    "id": "ic_clue_0_0",
    "x": 1203,
-   "y": 572,
+   "y": 606,
    "w": 214,
    "h": 152,
    "kind": "ic_t",
@@ -604,7 +611,7 @@
   {
    "id": "gal_clue_0_0",
    "x": 1457,
-   "y": 572,
+   "y": 606,
    "w": 214,
    "h": 152,
    "kind": "gal_t",
@@ -617,7 +624,7 @@
   {
    "id": "pap_clue_0_0",
    "x": 1683,
-   "y": 572,
+   "y": 606,
    "w": 214,
    "h": 152,
    "kind": "pap_t",
@@ -631,7 +638,7 @@
   {
    "id": "pg_clue_0_0",
    "x": 1909,
-   "y": 572,
+   "y": 606,
    "w": 214,
    "h": 152,
    "kind": "pg_t",
@@ -644,7 +651,7 @@
   {
    "id": "cis_clue_0_0",
    "x": 2163,
-   "y": 572,
+   "y": 606,
    "w": 214,
    "h": 65,
    "kind": "cis_t",
@@ -656,7 +663,7 @@
   {
    "id": "cis_clue_1_0",
    "x": 2163,
-   "y": 659,
+   "y": 693,
    "w": 214,
    "h": 65,
    "kind": "cis_t",
@@ -668,9 +675,9 @@
   {
    "id": "ben_inv_0_0",
    "x": 45,
-   "y": 764,
+   "y": 798,
    "w": 214,
-   "h": 99,
+   "h": 101,
    "kind": "ben_w",
    "title": "1 · Pre-menopausal: recheck after her NEXT PERIOD",
    "lines": []
@@ -678,9 +685,9 @@
   {
    "id": "ben_inv_1_0",
    "x": 45,
-   "y": 885,
+   "y": 921,
    "w": 214,
-   "h": 79,
+   "h": 81,
    "kind": "ben_w",
    "title": "2 · Not resolved → image by age, sample",
    "lines": []
@@ -688,9 +695,9 @@
   {
    "id": "fn_inv_0_0",
    "x": 271,
-   "y": 764,
+   "y": 798,
    "w": 214,
-   "h": 200,
+   "h": 204,
    "kind": "fn_w",
    "title": "1 · Image by age, then BIOPSY",
    "lines": [
@@ -700,9 +707,9 @@
   {
    "id": "ca_inv_0_0",
    "x": 497,
-   "y": 764,
+   "y": 798,
    "w": 214,
-   "h": 97,
+   "h": 99,
    "kind": "bad",
    "title": "1 · Investigate NOW",
    "lines": [
@@ -712,9 +719,9 @@
   {
    "id": "ca_inv_1_0",
    "x": 497,
-   "y": 883,
+   "y": 919,
    "w": 214,
-   "h": 81,
+   "h": 83,
    "kind": "ca_w",
    "title": "2 · Image by age, then BIOPSY",
    "lines": []
@@ -722,9 +729,9 @@
   {
    "id": "cyc_inv_0_0",
    "x": 751,
-   "y": 764,
+   "y": 798,
    "w": 214,
-   "h": 89,
+   "h": 91,
    "kind": "ok",
    "title": "< 35 + normal exam: NO tests",
    "lines": []
@@ -732,9 +739,9 @@
   {
    "id": "cyc_inv_1_0",
    "x": 751,
-   "y": 875,
+   "y": 911,
    "w": 214,
-   "h": 89,
+   "h": 91,
    "kind": "cyc_w",
    "title": "Older: more likely real pathology",
    "lines": []
@@ -742,9 +749,9 @@
   {
    "id": "mas_inv_0_0",
    "x": 977,
-   "y": 764,
+   "y": 798,
    "w": 214,
-   "h": 80,
+   "h": 82,
    "kind": "mas_w",
    "title": "1 · Antibiotics fail → ultrasound",
    "lines": [
@@ -754,9 +761,9 @@
   {
    "id": "mas_inv_1_0",
    "x": 977,
-   "y": 866,
+   "y": 902,
    "w": 214,
-   "h": 98,
+   "h": 100,
    "kind": "bad",
    "title": "2 · Not lactating, or not settling",
    "lines": [
@@ -766,9 +773,9 @@
   {
    "id": "ic_inv_0_0",
    "x": 1203,
-   "y": 764,
+   "y": 798,
    "w": 214,
-   "h": 200,
+   "h": 204,
    "kind": "bad",
    "title": "1 · Mammogram, BIOPSY",
    "lines": [
@@ -778,23 +785,24 @@
   {
    "id": "gal_inv_0_0",
    "x": 1457,
-   "y": 764,
+   "y": 798,
    "w": 214,
-   "h": 200,
+   "h": 204,
    "kind": "gal_w",
    "title": "Look for the cause",
    "lines": [
     "• pituitary: HYPERPROLACTINEMIA, dopamine-suppressing drugs (methyldopa)",
     "• nipple stimulation",
-    "• hypothyroid, kidney disease, cirrhosis"
+    "• hypothyroid, kidney disease, cirrhosis",
+    "• chest wall injury, thoracotomy · stress"
    ]
   },
   {
    "id": "pap_inv_0_0",
    "x": 1683,
-   "y": 764,
+   "y": 798,
    "w": 214,
-   "h": 70,
+   "h": 72,
    "kind": "bad",
    "title": "1 · Inspect the nipple",
    "lines": [
@@ -804,9 +812,9 @@
   {
    "id": "pap_inv_1_0",
    "x": 1683,
-   "y": 856,
+   "y": 892,
    "w": 214,
-   "h": 108,
+   "h": 110,
    "kind": "pap_w",
    "title": "2 · Periareolar ultrasound + mammogram",
    "lines": [
@@ -816,9 +824,9 @@
   {
    "id": "pg_inv_0_0",
    "x": 1909,
-   "y": 764,
+   "y": 798,
    "w": 214,
-   "h": 200,
+   "h": 204,
    "kind": "bad",
    "title": "1 · Find the underlying cancer",
    "lines": [
@@ -828,9 +836,9 @@
   {
    "id": "cis_inv_0_0",
    "x": 2163,
-   "y": 764,
+   "y": 798,
    "w": 214,
-   "h": 89,
+   "h": 91,
    "kind": "cis_w",
    "title": "DCIS: a PRECURSOR",
    "lines": [
@@ -840,9 +848,9 @@
   {
    "id": "cis_inv_1_0",
    "x": 2163,
-   "y": 875,
+   "y": 911,
    "w": 214,
-   "h": 89,
+   "h": 91,
    "kind": "cis_w",
    "title": "LCIS: a RISK FACTOR",
    "lines": [
@@ -852,9 +860,9 @@
   {
    "id": "ben_tx_0_0",
    "x": 45,
-   "y": 1004,
+   "y": 1042,
    "w": 214,
-   "h": 105,
+   "h": 132,
    "kind": "ok",
    "title": "Resolved: follow",
    "lines": []
@@ -862,9 +870,9 @@
   {
    "id": "ben_tx_1_0",
    "x": 45,
-   "y": 1131,
+   "y": 1196,
    "w": 214,
-   "h": 143,
+   "h": 170,
    "kind": "ok",
    "title": "Benign biopsy: the report sets her risk",
    "lines": [
@@ -874,9 +882,9 @@
   {
    "id": "fn_tx_0_0",
    "x": 271,
-   "y": 1004,
+   "y": 1042,
    "w": 214,
-   "h": 270,
+   "h": 324,
    "kind": "ok",
    "title": "Biopsy confirms: BENIGN",
    "lines": []
@@ -884,9 +892,9 @@
   {
    "id": "ca_tx_0_0",
    "x": 497,
-   "y": 1004,
+   "y": 1042,
    "w": 214,
-   "h": 159,
+   "h": 186,
    "kind": "ok",
    "title": "Receptors pick the drug",
    "lines": [
@@ -897,9 +905,9 @@
   {
    "id": "ca_tx_1_0",
    "x": 497,
-   "y": 1185,
+   "y": 1250,
    "w": 214,
-   "h": 89,
+   "h": 116,
    "kind": "warn",
    "title": "Axillary NODES: the key prognostic factor",
    "lines": [
@@ -909,7 +917,7 @@
   {
    "id": "cyc_tx_0_0",
    "x": 751,
-   "y": 1004,
+   "y": 1042,
    "w": 214,
    "h": 78,
    "kind": "ok",
@@ -921,35 +929,37 @@
   {
    "id": "cyc_tx_1_0",
    "x": 751,
-   "y": 1104,
+   "y": 1142,
    "w": 214,
-   "h": 170,
+   "h": 224,
    "kind": "ok",
    "title": "2 · SEVERE and > 7 days: treat",
    "lines": [
     "• supportive bra",
     "• compresses",
     "• nonsteroidal anti-inflammatories (NSAIDs), acetaminophen",
-    "• tamoxifen"
+    "• tamoxifen",
+    "~• low-fat, high complex-carb diet · ↓ nicotine · NO evidence for less coffee, herbals"
    ]
   },
   {
    "id": "mas_tx_0_0",
    "x": 977,
-   "y": 1004,
+   "y": 1042,
    "w": 214,
-   "h": 142,
+   "h": 196,
    "kind": "ok",
    "title": "1 · Antibiotics",
    "lines": [
     "• lactating: KEEP breastfeeding, empty the breast",
-    "• not lactating: imaging OK → repeat in 3 months"
+    "• not lactating: imaging OK → repeat in 3 months",
+    "• persistent: RULE OUT malignancy (mammogram, biopsy)"
    ]
   },
   {
    "id": "mas_tx_1_0",
    "x": 977,
-   "y": 1168,
+   "y": 1260,
    "w": 214,
    "h": 106,
    "kind": "bad",
@@ -961,9 +971,9 @@
   {
    "id": "ic_tx_0_0",
    "x": 1203,
-   "y": 1004,
+   "y": 1042,
    "w": 214,
-   "h": 270,
+   "h": 324,
    "kind": "ok",
    "title": "Treat as breast cancer",
    "lines": [
@@ -973,9 +983,9 @@
   {
    "id": "gal_tx_0_0",
    "x": 1457,
-   "y": 1004,
+   "y": 1042,
    "w": 214,
-   "h": 270,
+   "h": 324,
    "kind": "ok",
    "title": "Treat the cause",
    "lines": []
@@ -983,9 +993,9 @@
   {
    "id": "pap_tx_0_0",
    "x": 1683,
-   "y": 1004,
+   "y": 1042,
    "w": 214,
-   "h": 270,
+   "h": 324,
    "kind": "ok",
    "title": "Surgical consult → EXCISE",
    "lines": [
@@ -995,9 +1005,9 @@
   {
    "id": "pg_tx_0_0",
    "x": 1909,
-   "y": 1004,
+   "y": 1042,
    "w": 214,
-   "h": 270,
+   "h": 324,
    "kind": "ok",
    "title": "Treat the underlying cancer",
    "lines": [
@@ -1007,9 +1017,9 @@
   {
    "id": "cis_tx_0_0",
    "x": 2163,
-   "y": 1004,
+   "y": 1042,
    "w": 214,
-   "h": 124,
+   "h": 151,
    "kind": "ok",
    "title": "DCIS: EXCISE",
    "lines": [
@@ -1019,9 +1029,9 @@
   {
    "id": "cis_tx_1_0",
    "x": 2163,
-   "y": 1150,
+   "y": 1215,
    "w": 214,
-   "h": 124,
+   "h": 151,
    "kind": "ok",
    "title": "LCIS: close follow-up",
    "lines": [
@@ -1134,7 +1144,7 @@
    "label": "benign",
    "label_at": [
     152.0,
-    394
+    428
    ]
   },
   {
@@ -1156,7 +1166,7 @@
    "label": "irregular, after trauma",
    "label_at": [
     378.0,
-    394
+    428
    ]
   },
   {
@@ -1178,7 +1188,7 @@
    "label": "worrisome",
    "label_at": [
     604.0,
-    394
+    428
    ]
   },
   {
@@ -1200,7 +1210,7 @@
    "label": "cyclical",
    "label_at": [
     858.0,
-    394
+    428
    ]
   },
   {
@@ -1222,7 +1232,7 @@
    "label": "non-cyclical",
    "label_at": [
     1084.0,
-    394
+    428
    ]
   },
   {
@@ -1244,7 +1254,7 @@
    "label": "red, swollen, not settling",
    "label_at": [
     1310.0,
-    394
+    428
    ]
   },
   {
@@ -1266,7 +1276,7 @@
    "label": "both, many ducts",
    "label_at": [
     1564.0,
-    394
+    428
    ]
   },
   {
@@ -1288,7 +1298,7 @@
    "label": "1 side, 1 duct",
    "label_at": [
     1790.0,
-    394
+    428
    ]
   },
   {
@@ -1310,7 +1320,7 @@
    "label": "eczema-like nipple",
    "label_at": [
     2016.0,
-    394
+    428
    ]
   },
   {
@@ -1332,15 +1342,15 @@
    "label": "abnormal",
    "label_at": [
     2270.0,
-    394
+    428
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 1308,
-   "w": 1159,
+   "y": 1400,
+   "w": 768,
    "title": "The benign biopsy report sets her cancer risk",
    "items": [
     "non-proliferative, ×1: fibrocystic change, cyst, fibroadenoma",
@@ -1350,15 +1360,27 @@
    "cols": 1
   },
   {
-   "x": 1218,
-   "y": 1308,
-   "w": 1159,
+   "x": 827,
+   "y": 1400,
+   "w": 768,
    "title": "Screening + genes",
    "items": [
     "HIGH risk, YEARLY mammogram: 1st-degree relative < 50, or two at any age · ovarian cancer · male breast cancer in the family · atypia, LCIS, radial scar, phyllodes · density > 75%",
     "usual risk: NOT ultrasound, MRI, clinical breast exam or self-exam",
-    "GENETIC TESTING if she has breast cancer and is < 35 · < 50 with two affected relatives · male · Ashkenazi Jewish",
-    "BRCA carrier: yearly MRI + mammogram · prophylactic mastectomy ± oophorectomy · tamoxifen"
+    "GENETIC TESTING if she has breast cancer and is < 35 · < 50 with two 1st/2nd-degree relatives (one < 50, bilateral, or serous ovarian) · 3+ relatives any age · male · Ashkenazi Jewish",
+    "BRCA: breast 55–85%, ovary 15–65% lifetime · yearly MRI + mammogram · mastectomy (↓ 90%) ± oophorectomy (↓ 50%) · tamoxifen (↓ ~50%)"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 1609,
+   "y": 1400,
+   "w": 768,
+   "title": "Risk factors: the big ones are fixed",
+   "items": [
+    "lifetime 1 in 8 · 99% are women · rises with AGE · 5% carry a gene (BRCA 1/2, Li-Fraumeni p53)",
+    "family: two 1st-degree RR 4–5 · one 1st-degree 2–3 · one 2nd-degree 1.2–1.5",
+    "minor, RR 1.1–1.3: inactivity · BMI > 30 · > 2 drinks/day · early menarche, late menopause · no children or breastfeeding · pill > 5 yr · estrogen + progestin HRT"
    ],
    "cols": 1
   }

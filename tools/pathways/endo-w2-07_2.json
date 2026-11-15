@@ -63,7 +63,7 @@
    "x": 40,
    "y": 290,
    "w": 280,
-   "h": 826,
+   "h": 1080,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -71,7 +71,7 @@
    "x": 350,
    "y": 290,
    "w": 280,
-   "h": 826,
+   "h": 1080,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -79,7 +79,7 @@
    "x": 660,
    "y": 290,
    "w": 280,
-   "h": 826,
+   "h": 1080,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   }
@@ -87,20 +87,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 436,
-   "h": 196,
+   "y": 452,
+   "h": 288,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 672,
-   "h": 160,
+   "y": 780,
+   "h": 270,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 872,
-   "h": 236,
+   "y": 1090,
+   "h": 272,
    "text": "TREATMENT"
   }
  ],
@@ -158,7 +158,7 @@
    "x": 45,
    "y": 298,
    "w": 270,
-   "h": 98,
+   "h": 114,
    "kind": "om_h",
    "title": "Osteomalacia (adult) · rickets (child)",
    "lines": [
@@ -170,11 +170,12 @@
    "x": 355,
    "y": 298,
    "w": 270,
-   "h": 98,
+   "h": 114,
    "kind": "pg_h",
    "title": "Paget's disease of bone",
    "lines": [
-    "localized REMODELLING: ↑ resorption, then abnormal, fragile new bone"
+    "localized REMODELLING: ↑ resorption, then abnormal, fragile new bone",
+    "5% of people · 10% over 80"
    ]
   },
   {
@@ -182,44 +183,48 @@
    "x": 665,
    "y": 298,
    "w": 270,
-   "h": 98,
+   "h": 114,
    "kind": "oi_h",
    "title": "Osteogenesis imperfecta",
    "lines": [
-    "TYPE I COLLAGEN (COL1A1, COL1A2) · type 1 normal lifespan, type 2 lethal at birth"
+    "TYPE I COLLAGEN (COL1A1, COL1A2: 85–90%) · type 1 normal lifespan, type 2 lethal at birth",
+    "1 in 15–20,000 births · 16+ subtypes"
    ]
   },
   {
    "id": "om_pres_0_0",
    "x": 45,
-   "y": 436,
+   "y": 452,
    "w": 270,
-   "h": 106,
+   "h": 116,
    "kind": "om_t",
    "title": "OVERT symptoms, unlike osteoporosis",
    "lines": [
     "• weak bones that fracture",
-    "• PROXIMAL myopathy: falls"
+    "• PROXIMAL myopathy: falls",
+    "• often MISTAKEN for osteoporosis"
    ]
   },
   {
    "id": "om_pres_1_0",
    "x": 45,
-   "y": 564,
+   "y": 590,
    "w": 270,
-   "h": 68,
+   "h": 150,
    "kind": "om_w",
    "title": "Malabsorption, e.g. celiac disease",
    "lines": [
-    "other causes: see the CALCIUM chart"
+    "• low sun, poor diet, hydroxylation defects, nephrotic syndrome",
+    "• liver disease · chronic renal failure · ANTICONVULSANTS",
+    "case: 23 F, celiac · falls, weakness · femur pseudofractures"
    ]
   },
   {
    "id": "pg_pres_0_0",
    "x": 355,
-   "y": 436,
+   "y": 452,
    "w": 270,
-   "h": 69,
+   "h": 106,
    "kind": "pg_t",
    "title": "Usually ASYMPTOMATIC",
    "lines": [
@@ -229,13 +234,14 @@
   {
    "id": "pg_pres_1_0",
    "x": 355,
-   "y": 527,
+   "y": 580,
    "w": 270,
-   "h": 105,
+   "h": 160,
    "kind": "pg_w",
    "title": "Or",
    "lines": [
-    "• pain + bowing: pelvis, femur, tibia",
+    "• SEVERE pain: pelvis, femur, tibia",
+    "• bowed tibia, kyphosis, frequent fractures",
     "• skull: headache, ↑ HAT SIZE, deafness",
     "• WARMTH over the bone"
    ]
@@ -243,9 +249,9 @@
   {
    "id": "oi_pres_0_0",
    "x": 665,
-   "y": 436,
+   "y": 452,
    "w": 270,
-   "h": 96,
+   "h": 133,
    "kind": "oi_t",
    "title": "Fragility fractures",
    "lines": [
@@ -257,34 +263,35 @@
   {
    "id": "oi_pres_1_0",
    "x": 665,
-   "y": 554,
+   "y": 607,
    "w": 270,
-   "h": 78,
+   "h": 133,
    "kind": "oi_w",
    "title": "Also",
    "lines": [
     "• aortic root dilatation, valve leaks",
-    "• Wormian bones, pectus"
+    "• Wormian bones, pectus · basilar skull deformity"
    ]
   },
   {
    "id": "om_inv_0_0",
    "x": 45,
-   "y": 672,
+   "y": 780,
    "w": 270,
-   "h": 69,
+   "h": 133,
    "kind": "om_t",
    "title": "X-ray: PSEUDOFRACTURES",
    "lines": [
-    "healed microfractures"
+    "healed microfractures",
+    "Ca ↓, PO4 ↓, ALP ↑, urine Ca ↓"
    ]
   },
   {
    "id": "om_inv_1_0",
    "x": 45,
-   "y": 763,
+   "y": 935,
    "w": 270,
-   "h": 69,
+   "h": 115,
    "kind": "om_w",
    "title": "Bone biopsy: the gold standard",
    "lines": [
@@ -294,47 +301,49 @@
   {
    "id": "pg_inv_0_0",
    "x": 355,
-   "y": 672,
+   "y": 780,
    "w": 270,
    "h": 78,
    "kind": "pg_t",
    "title": "1 · Bone scan: the extent",
    "lines": [
-    "x-ray: expanded, denser bone · early lytic lesion"
+    "x-ray: expanded, denser bone · early lytic lesion · fissure fractures"
    ]
   },
   {
    "id": "pg_inv_1_0",
    "x": 355,
-   "y": 772,
+   "y": 880,
    "w": 270,
-   "h": 60,
+   "h": 170,
    "kind": "bad",
-   "title": "Osteosarcoma (1–3%)",
+   "title": "Complications: OSTEOSARCOMA 1–3%",
    "lines": [
-    "marked pain, new lytic lesion, rising ALP"
+    "sarcoma: marked pain, new lytic lesion, rising ALP",
+    "also: fractures · Ca ↑ if immobile · deafness (cranial nerve), cord compression · high-output HEART FAILURE · osteoarthritis"
    ]
   },
   {
    "id": "oi_inv_0_0",
    "x": 665,
-   "y": 672,
+   "y": 780,
    "w": 270,
-   "h": 160,
+   "h": 270,
    "kind": "oi_t",
    "title": "Monitor for life",
    "lines": [
     "• yearly spirometry",
     "• every 2 years: hearing, bone density, electrocardiogram, echocardiogram",
-    "• skeletal x-rays every 1–2 years"
+    "• skeletal x-rays every 1–2 years",
+    "• growth, head circumference · neuro exam if symptoms"
    ]
   },
   {
    "id": "om_tx_0_0",
    "x": 45,
-   "y": 872,
+   "y": 1090,
    "w": 270,
-   "h": 153,
+   "h": 171,
    "kind": "ok",
    "title": "Vitamin D by the 25-hydroxyvitamin D level",
    "lines": [
@@ -346,9 +355,9 @@
   {
    "id": "om_tx_1_0",
    "x": 45,
-   "y": 1047,
+   "y": 1283,
    "w": 270,
-   "h": 61,
+   "h": 79,
    "kind": "ok",
    "title": "Treat the cause",
    "lines": [
@@ -358,7 +367,7 @@
   {
    "id": "pg_tx_0_0",
    "x": 355,
-   "y": 872,
+   "y": 1090,
    "w": 270,
    "h": 116,
    "kind": "warn",
@@ -372,28 +381,30 @@
   {
    "id": "pg_tx_1_0",
    "x": 355,
-   "y": 1010,
+   "y": 1228,
    "w": 270,
-   "h": 98,
+   "h": 134,
    "kind": "ok",
    "title": "Analgesia + intravenous (IV) ZOLEDRONATE",
    "lines": [
     "• calcitonin",
-    "• NOT teriparatide, denosumab"
+    "• NOT teriparatide, denosumab",
+    "case: femur, ALP 3× normal → ZOLEDRONATE"
    ]
   },
   {
    "id": "oi_tx_0_0",
    "x": 665,
-   "y": 872,
+   "y": 1090,
    "w": 270,
-   "h": 236,
+   "h": 272,
    "kind": "ok",
    "title": "IV bisphosphonate (zoledronate) if ANY",
    "lines": [
     "• long bone deformity",
     "• vertebral compression fracture",
-    "• > 3 fractures a year"
+    "• > 3 fractures a year",
+    "case: 17 F, type 1, 5 fractures in a year → ZOLEDRONATE"
    ]
   }
  ],

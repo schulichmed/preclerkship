@@ -47,10 +47,11 @@ def node(nid, x, y, w, kind, title, lines=(), h=None):
 
 # spine
 y = node("start", 310, 10, 380, "plain", "Oligomenorrhoea and/or hyperandrogenism",
-         ["~renamed from polycystic ovary syndrome (PCOS) in 2026: the follicles are arrested antral follicles, not cysts"])
+         ["~renamed from polycystic ovary syndrome (PCOS) in 2026: the follicles are arrested antral follicles, not cysts",
+          "~no single cause: GnRH dysregulation, LH ↑ FSH ↓ → theca androgens · ovaries carry insulin + IGF receptors · fat converts adrenal hormones to testosterone"])
 y = node("labs", 290, y + 36, 420, "plain", "History, exam + first-line labs",
          ["beta-hCG (human chorionic gonadotropin) · prolactin · TSH (thyroid-stimulating hormone) · total testosterone",
-          "~pelvic ultrasound is NOT required"])
+          "~pelvic ultrasound is NOT required: cystic ovaries also occur soon after menarche and in normally cycling women"])
 q_y = y + 40
 edges += [{"from": "_any1", "to": "start"}, {"from": "start", "to": "labs"}]
 q_bottom = node("mimic", 360, q_y, 280, "plain", "A mimic?", ["~the lecture's 7: exclude them first"])
@@ -72,7 +73,7 @@ edges += [{"from": "mimic", "to": "m_oligo", "path": f"M{mq[0]} {my}H315", "labe
 
 t_y = max(q_bottom, side_y + side_h) + 40
 y = node("testo", 330, t_y, 340, "plain", "Read the total testosterone",
-         ["~the only androgen used (not DHEAS or androstenedione) · female normal < 2 nmol/L"])
+         ["~the only androgen used (not DHEAS or androstenedione) · female normal < 2 nmol/L · male range starts ~8"])
 edges.append({"from": "mimic", "to": "testo", "label": "no", "label_at": [500, round((q_bottom + t_y) / 2)]})
 
 o_y = y + 50
@@ -86,7 +87,9 @@ edges += [rail("testo", "t_norm"), rail("testo", "t_fit"), rail("testo", "t_tum"
 
 p_y = o_y + oh + 40
 p_bottom = node("pmos", 330, p_y, 340, "plain", "PMOS: treat what distresses her",
-                ["~and watch metabolic + endometrial risk in everyone"])
+                ["~and watch metabolic + endometrial risk in everyone",
+                 "case: menses 4×/yr · hirsute (waxes) · testosterone mildly ↑ · clean exclusions → PMOS, no scan needed",
+                 "→ pill + eflornithine: response SLOW, maybe partial · hair removal does NOT worsen it"])
 tn, pm = geo["t_norm"], geo["pmos"]
 pm_mid = round(pm[1] + pm[3] / 2)
 edges += [{"from": "t_norm", "to": "pmos", "path": f"M{tn[0] + tn[2] / 2} {tn[1] + tn[3]}V{pm_mid}H{pm[0]}"},
@@ -105,7 +108,7 @@ arms = [
    "ultrasound surveillance for endometrial hypertrophy"], "cycles"),
  ("fert", "info", "Subfertility", ["lifestyle · induce ovulation with AROMATASE INHIBITORS",
    "metformin (arguably) for early miscarriage",
-   "ovarian stroma surgery: RARE now"], "fertility"),
+   "ovarian stroma surgery (resection, drilling, thermal ablation): RARE now"], "fertility"),
  ("meta", "ok", "Metabolic risk", ["hemoglobin A1c + lipid panel · monitor diabetes, hypertension, cardiovascular disease",
    "lifestyle: high fibre, low fat · 150 min vigorous exercise a week · MODEST weight loss",
    "consider BARIATRIC surgery"], "metabolic"),
@@ -141,9 +144,11 @@ spec = {
   {"x": 15, "y": panel_y, "w": 480, "title": "History + exam clues", "items": [
       "menstrual history: how often at first, in the later teens, after 20",
       "just stopped the pill, now irregular? the pill MASKED it",
-      "TERMINAL male-pattern hair: sides of face, chin, chest, upper arms",
+      "TERMINAL male-pattern hair: sides of face, chin, chest, upper arms · lower arms, upper lip can be NORMAL",
+      "judge hair against rate of onset, ethnicity, parents' appearance",
       "Ferriman-Gallwey score: 9 sites graded 1–4; ignores ethnicity + hair removal",
-      "acanthosis nigricans · skin tags · central adiposity (waist ÷ hip > 0.85)",
+      "acanthosis nigricans · skin tags · central adiposity (waist ÷ hip > 0.85) · visual assessment suffices",
+      "GENTLE weight history: irregular only after weight gain? not all are overweight",
       "PMOS is GRADUAL and has NO galactorrhoea"]},
   {"x": 505, "y": panel_y, "w": 480, "title": "Myths to dispel", "items": [
       "TRUE: subfertility + early miscarriage · type 2 diabetes, hypertension, high lipids · endometrial cancer · mood disorders",

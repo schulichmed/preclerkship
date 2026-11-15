@@ -117,7 +117,7 @@
    "x": 40,
    "y": 270,
    "w": 242,
-   "h": 504,
+   "h": 540,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -125,7 +125,7 @@
    "x": 284,
    "y": 270,
    "w": 242,
-   "h": 504,
+   "h": 540,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -133,7 +133,7 @@
    "x": 556,
    "y": 270,
    "w": 242,
-   "h": 504,
+   "h": 540,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -141,7 +141,7 @@
    "x": 800,
    "y": 270,
    "w": 242,
-   "h": 504,
+   "h": 540,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -149,7 +149,7 @@
    "x": 1044,
    "y": 270,
    "w": 242,
-   "h": 504,
+   "h": 540,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -157,7 +157,7 @@
    "x": 1316,
    "y": 270,
    "w": 242,
-   "h": 504,
+   "h": 540,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -172,8 +172,8 @@
    "kind": "dark",
    "title": "A bleeding woman: is she in SHOCK, and what do I do first?",
    "lines": [
-    "shock = tissue hypoxia; hemorrhagic: blood lost → ↓ preload → ↓ cardiac output",
-    "signs: tachycardia, hypotension, oliguria, confusion, tachypnea, cool clammy skin, acidosis, ↑ lactate"
+    "shock = cell + tissue hypoxia (↓ oxygen delivery, ↑ use, or poor use) · hemorrhagic: blood lost → ↓ preload → ↓ cardiac output",
+    "signs: tachycardia, hypotension, oliguria, confusion, tachypnea, cool clammy cyanotic skin, metabolic acidosis, ↑ lactate"
    ]
   },
   {
@@ -221,7 +221,7 @@
    "kind": "cmp_h",
    "title": "Class I–II: up to 30% lost",
    "lines": [
-    "up to 1500 mL"
+    "I: up to 750 mL (15%) · II: 750–1500 mL (15–30%)"
    ]
   },
   {
@@ -233,7 +233,7 @@
    "kind": "dec_h",
    "title": "Class III–IV: over 30% lost",
    "lines": [
-    "over 1500 mL"
+    "III: 1500–2000 mL (30–40%) · IV: > 2000 mL (> 40%)"
    ]
   },
   {
@@ -289,18 +289,19 @@
    "x": 45,
    "y": 396,
    "w": 232,
-   "h": 78,
+   "h": 114,
    "kind": "cmp_t",
    "title": "Pulse rises FIRST",
    "lines": [
-    "• I: < 100",
-    "• II: 100–120, pulse pressure ↓"
+    "• I: < 100, pulse pressure normal or ↑",
+    "• II: 100–120, pulse pressure ↓",
+    "• breathing: I 14–20, II 20–30"
    ]
   },
   {
    "id": "cmp_one_1_0",
    "x": 45,
-   "y": 496,
+   "y": 532,
    "w": 232,
    "h": 98,
    "kind": "cmp_t",
@@ -315,20 +316,21 @@
    "x": 289,
    "y": 396,
    "w": 232,
-   "h": 98,
+   "h": 125,
    "kind": "dec_t",
    "title": "Pulse > 120, blood pressure FALLS",
    "lines": [
-    "• III: 120–140",
-    "• IV: > 140"
+    "• III: 120–140 · IV: > 140",
+    "• pulse pressure ↓",
+    "• breathing: III 30–40, IV > 35"
    ]
   },
   {
    "id": "dec_one_1_0",
    "x": 289,
-   "y": 516,
+   "y": 543,
    "w": 232,
-   "h": 78,
+   "h": 87,
    "kind": "dec_t",
    "title": "Urine and mind fail",
    "lines": [
@@ -341,7 +343,7 @@
    "x": 561,
    "y": 396,
    "w": 232,
-   "h": 198,
+   "h": 234,
    "kind": "abc_w",
    "title": "Monitor",
    "lines": [
@@ -355,7 +357,7 @@
    "x": 805,
    "y": 396,
    "w": 232,
-   "h": 198,
+   "h": 234,
    "kind": "ok",
    "title": "2 large-bore IVs + oxygen",
    "lines": [
@@ -367,7 +369,7 @@
    "x": 1049,
    "y": 396,
    "w": 232,
-   "h": 198,
+   "h": 234,
    "kind": "ok",
    "title": "Identify and treat the cause",
    "lines": [
@@ -380,10 +382,11 @@
    "x": 1321,
    "y": 396,
    "w": 232,
-   "h": 97,
+   "h": 133,
    "kind": "tri_t",
    "title": "Acidosis",
    "lines": [
+    "• hits calcium-dependent clotting complexes",
     "• pH 7.0: factor VIIa activity ↓ 90%",
     "• keep perfusion: oxygen, fluids, red cells"
    ]
@@ -391,7 +394,7 @@
   {
    "id": "tri_one_1_0",
    "x": 1321,
-   "y": 515,
+   "y": 551,
    "w": 232,
    "h": 79,
    "kind": "tri_t",
@@ -404,7 +407,7 @@
   {
    "id": "cmp_two_0_0",
    "x": 45,
-   "y": 634,
+   "y": 670,
    "w": 232,
    "h": 132,
    "kind": "warn",
@@ -416,7 +419,7 @@
   {
    "id": "dec_two_0_0",
    "x": 289,
-   "y": 634,
+   "y": 670,
    "w": 232,
    "h": 132,
    "kind": "bad",
@@ -428,7 +431,7 @@
   {
    "id": "abc_two_0_0",
    "x": 561,
-   "y": 634,
+   "y": 670,
    "w": 232,
    "h": 132,
    "kind": "abc_w",
@@ -442,7 +445,7 @@
   {
    "id": "res_two_0_0",
    "x": 805,
-   "y": 634,
+   "y": 670,
    "w": 232,
    "h": 132,
    "kind": "ok",
@@ -456,7 +459,7 @@
   {
    "id": "cau_two_0_0",
    "x": 1049,
-   "y": 634,
+   "y": 670,
    "w": 232,
    "h": 132,
    "kind": "warn",
@@ -468,7 +471,7 @@
   {
    "id": "tri_two_0_0",
    "x": 1321,
-   "y": 634,
+   "y": 670,
    "w": 232,
    "h": 132,
    "kind": "tri_t",

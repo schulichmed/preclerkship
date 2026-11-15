@@ -133,57 +133,57 @@
  "bands": [
   {
    "x": 40,
-   "y": 442,
+   "y": 532,
    "w": 232,
-   "h": 914,
+   "h": 1002,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 274,
-   "y": 442,
+   "y": 532,
    "w": 232,
-   "h": 914,
+   "h": 1002,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 536,
-   "y": 442,
+   "y": 532,
    "w": 232,
-   "h": 914,
+   "h": 1002,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 770,
-   "y": 442,
+   "y": 532,
    "w": 232,
-   "h": 914,
+   "h": 1002,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
   {
    "x": 1032,
-   "y": 442,
+   "y": 532,
    "w": 232,
-   "h": 914,
+   "h": 1002,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 1266,
-   "y": 442,
+   "y": 532,
    "w": 232,
-   "h": 914,
+   "h": 1002,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 1500,
-   "y": 442,
+   "y": 532,
    "w": 232,
-   "h": 914,
+   "h": 1002,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   }
@@ -192,24 +192,24 @@
   {
    "x": 23,
    "y": 256,
-   "h": 114,
+   "h": 204,
    "text": "WORKUP"
   },
   {
    "x": 23,
-   "y": 586,
+   "y": 694,
    "h": 270,
    "text": "CLUES"
   },
   {
    "x": 23,
-   "y": 896,
-   "h": 126,
+   "y": 1004,
+   "h": 196,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 1062,
+   "y": 1240,
    "h": 286,
    "text": "TREATMENT"
   }
@@ -268,22 +268,24 @@
    "x": 1037,
    "y": 256,
    "w": 690,
-   "h": 114,
+   "h": 204,
    "kind": "info",
    "title": "Work up in order",
    "lines": [
     "1 · Exam with a SPECULUM: a negative Pap test does not end it",
-    "2 · Transvaginal ultrasound: endometrium < 5 mm is normal",
-    "3 · ENDOMETRIAL BIOPSY if > 5 mm, or bleeding recurs · HYSTEROSCOPY for a focal lesion or a failed biopsy",
+    "2 · Transvaginal ultrasound: endometrium < 5 mm is normal · on HRT > 50% are > 5 mm (< 4% pathology)",
+    "3 · ENDOMETRIAL BIOPSY if > 5 mm, or bleeding RECURS (skip it: 4% cancers missed) · 99.6% sensitive, blind: misses polyps",
+    "• focal lesion → saline sonohysterogram (93–100% sensitive, cannot tell benign from malignant) or HYSTEROSCOPY · D&C samples < 60% in half",
+    "• refer: risk factors, > 5 mm or vascular pedicle, recurrent bleeding with a polyp · no PMB: no routine sampling, no routine scan on tamoxifen",
     "• the biopsy report picks the column ↓"
    ]
   },
   {
    "id": "pa_head_0_0",
    "x": 45,
-   "y": 450,
+   "y": 540,
    "w": 222,
-   "h": 96,
+   "h": 114,
    "kind": "pa_h",
    "title": "Structural: PALM",
    "lines": [
@@ -293,9 +295,9 @@
   {
    "id": "co_head_0_0",
    "x": 279,
-   "y": 450,
+   "y": 540,
    "w": 222,
-   "h": 96,
+   "h": 114,
    "kind": "co_h",
    "title": "Functional: COEIN",
    "lines": [
@@ -305,9 +307,9 @@
   {
    "id": "ad_head_0_0",
    "x": 541,
-   "y": 450,
+   "y": 540,
    "w": 222,
-   "h": 96,
+   "h": 114,
    "kind": "ad_h",
    "title": "Adolescence",
    "lines": [
@@ -317,9 +319,9 @@
   {
    "id": "pe_head_0_0",
    "x": 775,
-   "y": 450,
+   "y": 540,
    "w": 222,
-   "h": 96,
+   "h": 114,
    "kind": "pe_h",
    "title": "Perimenopause",
    "lines": [
@@ -329,9 +331,9 @@
   {
    "id": "at_head_0_0",
    "x": 1037,
-   "y": 450,
+   "y": 540,
    "w": 222,
-   "h": 96,
+   "h": 114,
    "kind": "at_h",
    "title": "Atrophy",
    "lines": [
@@ -341,9 +343,9 @@
   {
    "id": "hy_head_0_0",
    "x": 1271,
-   "y": 450,
+   "y": 540,
    "w": 222,
-   "h": 96,
+   "h": 114,
    "kind": "hy_h",
    "title": "Endometrial hyperplasia",
    "lines": [
@@ -353,19 +355,20 @@
   {
    "id": "ca_head_0_0",
    "x": 1505,
-   "y": 450,
+   "y": 540,
    "w": 222,
-   "h": 96,
+   "h": 114,
    "kind": "ca_h",
    "title": "Endometrial carcinoma",
    "lines": [
-    "#1 gynecologic malignancy"
+    "#1 gynecologic malignancy",
+    "4th cancer in women · 90% present with BLEEDING · 72% stage 1"
    ]
   },
   {
    "id": "pa_clue_0_0",
    "x": 45,
-   "y": 586,
+   "y": 694,
    "w": 222,
    "h": 270,
    "kind": "pa_t",
@@ -379,7 +382,7 @@
   {
    "id": "co_clue_0_0",
    "x": 279,
-   "y": 586,
+   "y": 694,
    "w": 222,
    "h": 134,
    "kind": "co_t",
@@ -393,7 +396,7 @@
   {
    "id": "co_clue_1_0",
    "x": 279,
-   "y": 742,
+   "y": 850,
    "w": 222,
    "h": 114,
    "kind": "co_w",
@@ -407,7 +410,7 @@
   {
    "id": "ad_clue_0_0",
    "x": 541,
-   "y": 586,
+   "y": 694,
    "w": 222,
    "h": 270,
    "kind": "ad_t",
@@ -421,7 +424,7 @@
   {
    "id": "pe_clue_0_0",
    "x": 775,
-   "y": 586,
+   "y": 694,
    "w": 222,
    "h": 270,
    "kind": "pe_t",
@@ -433,19 +436,19 @@
   {
    "id": "at_clue_0_0",
    "x": 1037,
-   "y": 586,
+   "y": 694,
    "w": 222,
    "h": 270,
    "kind": "at_t",
    "title": "Exam",
    "lines": [
-    "thin, pale, dry vaginal epithelium"
+    "thin, pale, dry epithelium · lost labial fullness · narrow introitus · lost urethral meatal turgor"
    ]
   },
   {
    "id": "hy_clue_0_0",
    "x": 1271,
-   "y": 586,
+   "y": 694,
    "w": 222,
    "h": 270,
    "kind": "hy_t",
@@ -454,29 +457,31 @@
     "• obesity",
     "• PCOS",
     "• estrogen-only HRT",
-    "• tamoxifen"
+    "• tamoxifen",
+    "• also: estrogen-secreting tumour (granulosa) · nulliparity, infertility, early menarche, late menopause",
+    "• HRT: PMB in 63% in first 6 cycles · estrogen alone → hyperplasia 10% at 1 yr, 50% at 2"
    ]
   },
   {
    "id": "ca_clue_0_0",
    "x": 1505,
-   "y": 586,
+   "y": 694,
    "w": 222,
    "h": 270,
    "kind": "ca_t",
    "title": "Type 1 (90%) or type 2",
    "lines": [
-    "• 1: estrogen-driven, like hyperplasia",
-    "• 2: serous, older, atrophic background",
-    "• Lynch syndrome"
+    "• 1: endometrioid, estrogen-driven, hyperplasia precursor · BETTER prognosis",
+    "• 2 (10%): serous, older, atrophic background · POORER",
+    "• Lynch: 40–70% lifetime risk, often the SENTINEL cancer"
    ]
   },
   {
    "id": "pa_inv_0_0",
    "x": 45,
-   "y": 896,
+   "y": 1004,
    "w": 222,
-   "h": 43,
+   "h": 78,
    "kind": "pa_w",
    "title": "1 · Ultrasound",
    "lines": []
@@ -484,9 +489,9 @@
   {
    "id": "pa_inv_1_0",
    "x": 45,
-   "y": 961,
+   "y": 1104,
    "w": 222,
-   "h": 61,
+   "h": 96,
    "kind": "pa_t",
    "title": "2 · Pap ± swabs · BIOPSY",
    "lines": [
@@ -496,9 +501,9 @@
   {
    "id": "co_inv_0_0",
    "x": 279,
-   "y": 896,
+   "y": 1004,
    "w": 222,
-   "h": 42,
+   "h": 77,
    "kind": "co_w",
    "title": "1 · CBC, INR, PTT",
    "lines": []
@@ -506,9 +511,9 @@
   {
    "id": "co_inv_1_0",
    "x": 279,
-   "y": 960,
+   "y": 1103,
    "w": 222,
-   "h": 62,
+   "h": 97,
    "kind": "co_w",
    "title": "2 · TSH, prolactin · FSH, LH, estradiol · androgens",
    "lines": []
@@ -516,9 +521,9 @@
   {
    "id": "ad_inv_0_0",
    "x": 541,
-   "y": 896,
+   "y": 1004,
    "w": 222,
-   "h": 126,
+   "h": 196,
    "kind": "ad_t",
    "title": "Remember the β-hCG",
    "lines": []
@@ -526,9 +531,9 @@
   {
    "id": "pe_inv_0_0",
    "x": 775,
-   "y": 896,
+   "y": 1004,
    "w": 222,
-   "h": 126,
+   "h": 196,
    "kind": "pe_t",
    "title": "Remember to BIOPSY",
    "lines": []
@@ -536,9 +541,9 @@
   {
    "id": "at_inv_0_0",
    "x": 1037,
-   "y": 896,
+   "y": 1004,
    "w": 222,
-   "h": 62,
+   "h": 97,
    "kind": "at_t",
    "title": "Report: scant atrophic tissue",
    "lines": []
@@ -546,53 +551,54 @@
   {
    "id": "at_inv_1_0",
    "x": 1037,
-   "y": 980,
+   "y": 1123,
    "w": 222,
-   "h": 42,
+   "h": 77,
    "kind": "bad",
    "title": "A diagnosis of EXCLUSION",
    "lines": []
   },
   {
    "id": "hy_inv_0_0",
-   "x": 1271.0,
-   "y": 896,
-   "w": 106.0,
-   "h": 126,
+   "x": 1271,
+   "y": 1004,
+   "w": 222,
+   "h": 78,
    "kind": "hy_w",
    "title": "No atypia",
    "lines": [
-    "cancer risk 1–3%"
+    "cancer risk 1% simple, 3% complex"
    ]
   },
   {
-   "id": "hy_inv_0_1",
-   "x": 1387.0,
-   "y": 896,
-   "w": 106.0,
-   "h": 126,
+   "id": "hy_inv_1_0",
+   "x": 1271,
+   "y": 1104,
+   "w": 222,
+   "h": 96,
    "kind": "hy_t",
    "title": "ATYPIA",
    "lines": [
-    "cancer risk 8–29%"
+    "cancer risk 8% simple, 29% complex · 30–40% have cancer at hysterectomy"
    ]
   },
   {
    "id": "ca_inv_0_0",
    "x": 1505,
-   "y": 896,
+   "y": 1004,
    "w": 222,
-   "h": 126,
+   "h": 196,
    "kind": "ca_t",
    "title": "Report: adenocarcinoma",
    "lines": [
-    "test for mismatch repair (Lynch)"
+    "test for mismatch repair (Lynch)",
+    "spread: myometrium, cervix → nodes (rare) · transtubal → peritoneum (rare) · TNM by pathologist → FIGO"
    ]
   },
   {
    "id": "pa_tx_0_0",
    "x": 45,
-   "y": 1062,
+   "y": 1240,
    "w": 222,
    "h": 286,
    "kind": "ok",
@@ -604,7 +610,7 @@
   {
    "id": "co_tx_0_0",
    "x": 279,
-   "y": 1062,
+   "y": 1240,
    "w": 222,
    "h": 96,
    "kind": "ok",
@@ -618,7 +624,7 @@
   {
    "id": "co_tx_1_0",
    "x": 279,
-   "y": 1180,
+   "y": 1358,
    "w": 222,
    "h": 168,
    "kind": "ok",
@@ -635,7 +641,7 @@
   {
    "id": "ad_tx_0_0",
    "x": 541,
-   "y": 1062,
+   "y": 1240,
    "w": 222,
    "h": 63,
    "kind": "ok",
@@ -645,7 +651,7 @@
   {
    "id": "ad_tx_1_0",
    "x": 541,
-   "y": 1147,
+   "y": 1325,
    "w": 222,
    "h": 81,
    "kind": "ok",
@@ -657,7 +663,7 @@
   {
    "id": "ad_tx_2_0",
    "x": 541,
-   "y": 1250,
+   "y": 1428,
    "w": 222,
    "h": 99,
    "kind": "bad",
@@ -669,7 +675,7 @@
   {
    "id": "pe_tx_0_0",
    "x": 775,
-   "y": 1062,
+   "y": 1240,
    "w": 222,
    "h": 132,
    "kind": "bad",
@@ -684,7 +690,7 @@
   {
    "id": "pe_tx_1_0",
    "x": 775,
-   "y": 1216,
+   "y": 1394,
    "w": 222,
    "h": 132,
    "kind": "ok",
@@ -698,51 +704,53 @@
   {
    "id": "at_tx_0_0",
    "x": 1037,
-   "y": 1062,
+   "y": 1240,
    "w": 222,
    "h": 286,
    "kind": "ok",
    "title": "Local estrogen",
    "lines": [
     "• vaginal cream, pill or ring",
-    "• nothing if not bothered"
+    "• or HRT · nothing if not bothered"
    ]
   },
   {
    "id": "hy_tx_0_0",
-   "x": 1271.0,
-   "y": 1062,
-   "w": 106.0,
-   "h": 286,
+   "x": 1271,
+   "y": 1240,
+   "w": 222,
+   "h": 132,
    "kind": "ok",
-   "title": "MEDICAL",
+   "title": "No atypia → MEDICAL",
    "lines": [
-    "• progesterone",
+    "• progestin: Megace, LNG-IUD",
+    "• remove estrogen, lose weight",
     "• rebiopsy at 3 months"
    ]
   },
   {
-   "id": "hy_tx_0_1",
-   "x": 1387.0,
-   "y": 1062,
-   "w": 106.0,
-   "h": 286,
+   "id": "hy_tx_1_0",
+   "x": 1271,
+   "y": 1394,
+   "w": 222,
+   "h": 132,
    "kind": "warn",
-   "title": "SURGICAL",
+   "title": "ATYPIA → SURGICAL",
    "lines": [
-    "hysterectomy + tubes, ovaries"
+    "• hysterectomy + tubes, ovaries",
+    "• high-dose progestin only if surgery contraindicated"
    ]
   },
   {
    "id": "ca_tx_0_0",
    "x": 1505,
-   "y": 1062,
+   "y": 1240,
    "w": 222,
    "h": 286,
    "kind": "ok",
    "title": "Hysterectomy + tubes, ovaries",
    "lines": [
-    "stage decides radiation, chemotherapy"
+    "± lymphadenectomy · stage decides radiation, chemotherapy"
    ]
   }
  ],
@@ -784,6 +792,10 @@
    "to": "at_inv_1_0"
   },
   {
+   "from": "hy_inv_0_0",
+   "to": "hy_inv_1_0"
+  },
+  {
    "from": "co_tx_0_0",
    "to": "co_tx_1_0"
   },
@@ -798,6 +810,10 @@
   {
    "from": "pe_tx_0_0",
    "to": "pe_tx_1_0"
+  },
+  {
+   "from": "hy_tx_0_0",
+   "to": "hy_tx_1_0"
   },
   {
    "from": "pa_head_0_0",
@@ -818,7 +834,7 @@
    "label": "YES: structural",
    "label_at": [
     156.0,
-    410
+    500
    ]
   },
   {
@@ -840,7 +856,7 @@
    "label": "NO: functional",
    "label_at": [
     390.0,
-    410
+    500
    ]
   },
   {
@@ -862,7 +878,7 @@
    "label": "adolescent",
    "label_at": [
     652.0,
-    410
+    500
    ]
   },
   {
@@ -884,7 +900,7 @@
    "label": "perimenopausal",
    "label_at": [
     886.0,
-    410
+    500
    ]
   },
   {
@@ -906,7 +922,7 @@
    "label": "atrophic",
    "label_at": [
     1148.0,
-    410
+    500
    ]
   },
   {
@@ -915,21 +931,11 @@
   },
   {
    "from": "hy_clue_0_0",
-   "to": "hy_inv_0_0",
-   "from_dx": -58.0
+   "to": "hy_inv_0_0"
   },
   {
-   "from": "hy_clue_0_0",
-   "to": "hy_inv_0_1",
-   "from_dx": 58.0
-  },
-  {
-   "from": "hy_inv_0_0",
+   "from": "hy_inv_1_0",
    "to": "hy_tx_0_0"
-  },
-  {
-   "from": "hy_inv_0_1",
-   "to": "hy_tx_0_1"
   },
   {
    "from": "p_pmb",
@@ -938,7 +944,7 @@
    "label": "hyperplasia",
    "label_at": [
     1382.0,
-    410
+    500
    ]
   },
   {
@@ -960,14 +966,14 @@
    "label": "adenocarcinoma",
    "label_at": [
     1616.0,
-    410
+    500
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 1382,
+   "y": 1560,
    "w": 1682,
    "title": "Choosing a hormonal agent",
    "items": [

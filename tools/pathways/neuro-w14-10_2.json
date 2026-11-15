@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 270,
+   "y": 306,
    "w": 230,
-   "h": 724,
+   "h": 852,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 272,
-   "y": 270,
+   "y": 306,
    "w": 230,
-   "h": 724,
+   "h": 852,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 504,
-   "y": 270,
+   "y": 306,
    "w": 230,
-   "h": 724,
+   "h": 852,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 764,
-   "y": 270,
+   "y": 306,
    "w": 230,
-   "h": 724,
+   "h": 852,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 1024,
-   "y": 270,
+   "y": 306,
    "w": 230,
-   "h": 724,
+   "h": 852,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   }
@@ -139,20 +139,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 414,
-   "h": 132,
+   "y": 450,
+   "h": 204,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 586,
+   "y": 694,
    "h": 98,
    "text": "IMAGING"
   },
   {
    "x": 23,
-   "y": 724,
-   "h": 262,
+   "y": 832,
+   "h": 318,
    "text": "TREATMENT"
   }
  ],
@@ -165,14 +165,15 @@
    "kind": "dark",
    "title": "Headache · coma · new neurological deficit · trauma: the cause is PRESSURE",
    "lines": [
-    "examine to LOCALIZE: Glasgow Coma Scale (GCS), PUPILS, cranial nerves, power side to side, sensory level",
+    "examine to LOCALIZE: Glasgow Coma Scale (GCS), PUPILS, cranial nerves, pronator drift, power side to side, sensory level",
+    "\"GCS 15, moving x 4\" can hide 1/5 hand intrinsics + 0/5 legs = T1 cord injury · E1 V3 M5, right arm weaker, ICP 20 = brain injury",
     "INTUBATE for GCS < 9 (airway protection) → image → emergency neurosurgery = DECOMPRESSION"
    ]
   },
   {
    "id": "g_blood",
    "x": 45,
-   "y": 138,
+   "y": 174,
    "w": 684,
    "h": 60,
    "kind": "plain",
@@ -184,7 +185,7 @@
   {
    "id": "g_mass",
    "x": 769,
-   "y": 138,
+   "y": 174,
    "w": 220,
    "h": 60,
    "kind": "plain",
@@ -196,7 +197,7 @@
   {
    "id": "g_csf",
    "x": 1029,
-   "y": 138,
+   "y": 174,
    "w": 220,
    "h": 60,
    "kind": "plain",
@@ -208,7 +209,7 @@
   {
    "id": "edh_head_0_0",
    "x": 45,
-   "y": 278,
+   "y": 314,
    "w": 220,
    "h": 96,
    "kind": "edh_h",
@@ -221,7 +222,7 @@
   {
    "id": "sdh_head_0_0",
    "x": 277,
-   "y": 278,
+   "y": 314,
    "w": 220,
    "h": 96,
    "kind": "sdh_h",
@@ -234,7 +235,7 @@
   {
    "id": "sah_head_0_0",
    "x": 509,
-   "y": 278,
+   "y": 314,
    "w": 220,
    "h": 96,
    "kind": "sah_h",
@@ -246,7 +247,7 @@
   {
    "id": "tum_head_0_0",
    "x": 769,
-   "y": 278,
+   "y": 314,
    "w": 220,
    "h": 96,
    "kind": "tum_h",
@@ -258,7 +259,7 @@
   {
    "id": "hyd_head_0_0",
    "x": 1029,
-   "y": 278,
+   "y": 314,
    "w": 220,
    "h": 96,
    "kind": "hyd_h",
@@ -270,74 +271,79 @@
   {
    "id": "edh_pres_0_0",
    "x": 45,
-   "y": 414,
+   "y": 450,
    "w": 220,
-   "h": 132,
+   "h": 204,
    "kind": "edh_t",
    "title": "LUCID interval, then coma",
    "lines": [
     "• stunned, then fine, then cannot be woken",
     "• BLOWN PUPIL on the SAME side (third nerve)",
-    "• opposite side weaker"
+    "• opposite side weaker",
+    "case: 24 y, baseball to the right head · played on · unrousable 4 h later · E3 V3 M5, right pupil 4 mm vs 3 mm, left weaker"
    ]
   },
   {
    "id": "sdh_pres_0_0",
    "x": 277,
-   "y": 414,
+   "y": 450,
    "w": 220,
-   "h": 132,
+   "h": 204,
    "kind": "sdh_t",
    "title": "Falling consciousness",
    "lines": [
     "• intoxicated, on ASA",
-    "• fixed dilated pupil, posturing"
+    "• fixed dilated pupil, posturing",
+    "case: 54 y, rolled + ejected, drunk, ASA 325 mg · E1 VT M3, extends left, flexes right · right pupil fixed 5 mm"
    ]
   },
   {
    "id": "sah_pres_0_0",
    "x": 509,
-   "y": 414,
+   "y": 450,
    "w": 220,
-   "h": 132,
+   "h": 204,
    "kind": "sah_t",
    "title": "Explosive headache UNLIKE ANY OTHER",
    "lines": [
     "• vomiting, photophobia",
     "• stiff neck, retinal hemorrhage",
-    "• GCS may be 15"
+    "• GCS may be 15",
+    "case: 43 y, a migraineur · bat to the back of the head · BP 160/90, normal exam"
    ]
   },
   {
    "id": "tum_pres_0_0",
    "x": 769,
-   "y": 414,
+   "y": 450,
    "w": 220,
-   "h": 132,
+   "h": 204,
    "kind": "tum_t",
    "title": "Weeks of progressive deficit",
    "lines": [
     "• word-finding, one weak hand",
-    "• then a rapid fall in consciousness"
+    "• then a rapid fall in consciousness",
+    "case: 69 y, 4 weeks word-finding, slurred, drops cup in right hand · 12 h decline · E1 V2 M4"
    ]
   },
   {
    "id": "hyd_pres_0_0",
    "x": 1029,
-   "y": 414,
+   "y": 450,
    "w": 220,
-   "h": 132,
+   "h": 204,
    "kind": "hyd_t",
    "title": "Not rousable",
    "lines": [
     "• dysconjugate gaze",
-    "• fever if infection"
+    "• fever if infection",
+    "case: 14 y, 48 h malaise, fever · E3 V4 M5, pupils 4 mm reactive"
    ]
   },
   {
    "id": "edh_inv_0_0",
    "x": 45,
-   "y": 586,
+   "y": 694,
    "w": 220,
    "h": 98,
    "kind": "edh_w",
@@ -347,7 +353,7 @@
   {
    "id": "sdh_inv_0_0",
    "x": 277,
-   "y": 586,
+   "y": 694,
    "w": 220,
    "h": 98,
    "kind": "sdh_w",
@@ -357,7 +363,7 @@
   {
    "id": "sah_inv_0_0",
    "x": 509,
-   "y": 586,
+   "y": 694,
    "w": 220,
    "h": 98,
    "kind": "sah_w",
@@ -369,7 +375,7 @@
   {
    "id": "tum_inv_0_0",
    "x": 769,
-   "y": 586,
+   "y": 694,
    "w": 220,
    "h": 98,
    "kind": "tum_w",
@@ -379,7 +385,7 @@
   {
    "id": "hyd_inv_0_0",
    "x": 1029,
-   "y": 586,
+   "y": 694,
    "w": 220,
    "h": 98,
    "kind": "hyd_w",
@@ -391,21 +397,22 @@
   {
    "id": "edh_tx_0_0",
    "x": 45,
-   "y": 724,
+   "y": 832,
    "w": 220,
-   "h": 262,
+   "h": 318,
    "kind": "ok",
    "title": "EARLY decompression",
    "lines": [
-    "predictably good results"
+    "• emergency burr hole (case: right)",
+    "• predictably good results: normal in 48 h"
    ]
   },
   {
    "id": "sdh_tx_0_0",
    "x": 277,
-   "y": 724,
+   "y": 832,
    "w": 220,
-   "h": 262,
+   "h": 318,
    "kind": "warn",
    "title": "Evacuate the hematoma",
    "lines": [
@@ -415,20 +422,22 @@
   {
    "id": "sah_tx_0_0",
    "x": 509,
-   "y": 724,
+   "y": 832,
    "w": 220,
-   "h": 262,
+   "h": 318,
    "kind": "bad",
    "title": "EARLY aneurysm repair",
    "lines": [
+    "• one bleed: 50% DIE, 75% disabled",
     "• re-rupture 6% day 1, 20% at 2 weeks, 50% at 6 months",
-    "• protects against the NEXT bleed only"
+    "• protects against the NEXT bleed only",
+    "• outcome follows the PRESENTING neurological state"
    ]
   },
   {
    "id": "tum_tx_0_0",
    "x": 769,
-   "y": 724,
+   "y": 832,
    "w": 220,
    "h": 98,
    "kind": "ok",
@@ -440,11 +449,11 @@
   {
    "id": "tum_tx_1_0",
    "x": 769,
-   "y": 844,
+   "y": 952,
    "w": 220,
-   "h": 78,
+   "h": 98,
    "kind": "ok",
-   "title": "+ MANNITOL 20% IV push",
+   "title": "+ MANNITOL 20% IV push (300 cc)",
    "lines": [
     "shrinks brain with an INTACT barrier"
    ]
@@ -452,23 +461,25 @@
   {
    "id": "tum_tx_2_0",
    "x": 769,
-   "y": 944,
+   "y": 1072,
    "w": 220,
-   "h": 42,
+   "h": 78,
    "kind": "ok",
    "title": "Resect once stable",
-   "lines": []
+   "lines": [
+    "case: GCS 15 again → resected at 72 h"
+   ]
   },
   {
    "id": "hyd_tx_0_0",
    "x": 1029,
-   "y": 724,
+   "y": 832,
    "w": 220,
-   "h": 262,
+   "h": 318,
    "kind": "bad",
    "title": "DIVERT the CSF: untreated it KILLS by herniation",
    "lines": [
-    "• now: EXTERNAL VENTRICULAR DRAIN",
+    "• now: EXTERNAL VENTRICULAR DRAIN (case: GCS 14 in 4 h)",
     "• long term: ventriculoperitoneal SHUNT",
     "• treat the cause (antibiotics)"
    ]
@@ -478,17 +489,17 @@
   {
    "from": "root",
    "to": "g_blood",
-   "path": "M647.0 88V113H387.0V138"
+   "path": "M647.0 124V149H387.0V174"
   },
   {
    "from": "root",
    "to": "g_mass",
-   "path": "M647.0 88V113H879.0V138"
+   "path": "M647.0 124V149H879.0V174"
   },
   {
    "from": "root",
    "to": "g_csf",
-   "path": "M647.0 88V113H1139.0V138"
+   "path": "M647.0 124V149H1139.0V174"
   },
   {
    "from": "tum_tx_0_0",

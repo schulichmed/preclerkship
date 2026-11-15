@@ -97,7 +97,7 @@
  "bands": [
   {
    "x": 40,
-   "y": 324,
+   "y": 378,
    "w": 224,
    "h": 214,
    "fill": "#eef7fa",
@@ -105,7 +105,7 @@
   },
   {
    "x": 266,
-   "y": 324,
+   "y": 378,
    "w": 224,
    "h": 214,
    "fill": "#f5f1fb",
@@ -113,7 +113,7 @@
   },
   {
    "x": 520,
-   "y": 324,
+   "y": 378,
    "w": 224,
    "h": 214,
    "fill": "#fdf4ea",
@@ -121,7 +121,7 @@
   },
   {
    "x": 746,
-   "y": 324,
+   "y": 378,
    "w": 224,
    "h": 214,
    "fill": "#eff5fc",
@@ -129,7 +129,7 @@
   },
   {
    "x": 1000,
-   "y": 324,
+   "y": 378,
    "w": 224,
    "h": 214,
    "fill": "#f2f5f8",
@@ -139,14 +139,14 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 452,
+   "y": 506,
    "h": 78,
    "text": "CHOOSE IT FOR"
   },
   {
    "x": 23,
-   "y": 570,
-   "h": 124,
+   "y": 624,
+   "h": 142,
    "text": "THEN"
   }
  ],
@@ -161,13 +161,15 @@
    "lines": [
     "sounds like: electrical · shooting · burning, hot or cold · pins and needles",
     "allodynia: a non-painful touch hurts · hyperpathia: a painful stimulus hurts far too much · dysesthesia: uncomfortable sensations (burning)",
-    "EVALUATE THE CAUSE and examine: some are reversible · nociceptive pain (tissue injury) takes acetaminophen, NSAIDs, opioids instead"
+    "peripheral causes: length-dependent (diabetic, small fibre, chemotherapy) · radiculopathy · postherpetic neuralgia · trigeminal neuralgia · nerve injury",
+    "central causes: thalamus · brainstem · spinal cord · phantom limb pain partly central",
+    "EVALUATE THE CAUSE and examine: an important neurological diagnosis? some are reversible · nociceptive pain (tissue injury: somatic or visceral) takes acetaminophen, NSAIDs, opioids instead"
    ]
   },
   {
    "id": "g_ad",
    "x": 45,
-   "y": 192,
+   "y": 246,
    "w": 440,
    "h": 60,
    "kind": "plain",
@@ -179,7 +181,7 @@
   {
    "id": "g_ac",
    "x": 525,
-   "y": 192,
+   "y": 246,
    "w": 440,
    "h": 60,
    "kind": "plain",
@@ -191,7 +193,7 @@
   {
    "id": "g_ot",
    "x": 1005,
-   "y": 192,
+   "y": 246,
    "w": 214,
    "h": 60,
    "kind": "plain",
@@ -201,7 +203,7 @@
   {
    "id": "tca_head_0_0",
    "x": 45,
-   "y": 332,
+   "y": 386,
    "w": 214,
    "h": 80,
    "kind": "tca_h",
@@ -213,7 +215,7 @@
   {
    "id": "snri_head_0_0",
    "x": 271,
-   "y": 332,
+   "y": 386,
    "w": 214,
    "h": 80,
    "kind": "snri_h",
@@ -225,7 +227,7 @@
   {
    "id": "gab_head_0_0",
    "x": 525,
-   "y": 332,
+   "y": 386,
    "w": 214,
    "h": 80,
    "kind": "gab_h",
@@ -237,7 +239,7 @@
   {
    "id": "carb_head_0_0",
    "x": 751,
-   "y": 332,
+   "y": 386,
    "w": 214,
    "h": 80,
    "kind": "carb_h",
@@ -249,7 +251,7 @@
   {
    "id": "oth_head_0_0",
    "x": 1005,
-   "y": 332,
+   "y": 386,
    "w": 214,
    "h": 80,
    "kind": "oth_h",
@@ -261,7 +263,7 @@
   {
    "id": "tca_clue_0_0",
    "x": 45,
-   "y": 452,
+   "y": 506,
    "w": 214,
    "h": 78,
    "kind": "ok",
@@ -274,7 +276,7 @@
   {
    "id": "snri_clue_0_0",
    "x": 271,
-   "y": 452,
+   "y": 506,
    "w": 214,
    "h": 78,
    "kind": "ok",
@@ -286,7 +288,7 @@
   {
    "id": "gab_clue_0_0",
    "x": 525,
-   "y": 452,
+   "y": 506,
    "w": 214,
    "h": 78,
    "kind": "ok",
@@ -298,7 +300,7 @@
   {
    "id": "carb_clue_0_0",
    "x": 751,
-   "y": 452,
+   "y": 506,
    "w": 214,
    "h": 78,
    "kind": "ok",
@@ -310,7 +312,7 @@
   {
    "id": "oth_clue_0_0",
    "x": 1005,
-   "y": 452,
+   "y": 506,
    "w": 214,
    "h": 78,
    "kind": "bad",
@@ -322,17 +324,19 @@
   {
    "id": "span0_tx_0_0",
    "x": 45,
-   "y": 570,
+   "y": 624,
    "w": 1174,
-   "h": 42,
+   "h": 60,
    "kind": "plain",
    "title": "TRIAL AND ERROR: one agent, titrated up SLOWLY to the maximum dose",
-   "lines": []
+   "lines": [
+    "if no co-existing issue or cost decides"
+   ]
   },
   {
    "id": "span0_tx_1_0",
    "x": 45.0,
-   "y": 634,
+   "y": 706,
    "w": 582.0,
    "h": 60,
    "kind": "warn",
@@ -344,7 +348,7 @@
   {
    "id": "span0_tx_1_1",
    "x": 637.0,
-   "y": 634,
+   "y": 706,
    "w": 582.0,
    "h": 60,
    "kind": "warn",
@@ -358,17 +362,17 @@
   {
    "from": "root",
    "to": "g_ad",
-   "path": "M632.0 142V167H265.0V192"
+   "path": "M632.0 196V221H265.0V246"
   },
   {
    "from": "root",
    "to": "g_ac",
-   "path": "M632.0 142V167H745.0V192"
+   "path": "M632.0 196V221H745.0V246"
   },
   {
    "from": "root",
    "to": "g_ot",
-   "path": "M632.0 142V167H1112.0V192"
+   "path": "M632.0 196V221H1112.0V246"
   },
   {
    "from": "span0_tx_0_0",
@@ -451,5 +455,32 @@
    "from_dx": 0
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 800,
+   "w": 580,
+   "title": "Complex regional pain syndrome (CRPS)",
+   "items": [
+    "after a focal tissue or nerve injury · uncommon · inflammatory + autonomic",
+    "pain GREATER than the injury, LONGER than healing",
+    "limb: severe pain, allodynia, swelling, temperature, colour, skin + hair change",
+    "treatment hard: multidisciplinary pain management"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 639,
+   "y": 800,
+   "w": 580,
+   "title": "Mechanism (nice to know)",
+   "items": [
+    "nerve damage: sodium channels ↑, potassium ↓ → ectopic firing",
+    "spontaneous + paroxysmal pain",
+    "CENTRAL SENSITIZATION in the cord · early treatment avoids it",
+    "norepinephrine + serotonin drive descending inhibition"
+   ],
+   "cols": 1
+  }
+ ]
 }

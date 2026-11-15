@@ -3,7 +3,9 @@
  "title": "A soft tissue mass: under 5 cm with no suspicious feature is excised; over 5 cm or with any suspicious feature is imaged and core-biopsied first, then a benign result is observed, a resectable sarcoma is staged and treated by surgery with radiation, and a non-curable one goes to palliative care",
  "col_w": 250,
  "root": {"title": "A soft tissue lump: could it be a SARCOMA? Decide BEFORE anyone cuts it out",
-  "lines": ["benign tumours are 100 times more common · a sarcoma shelled out like a benign lump, with little or no margin, is the 'WHOOPS'"]},
+  "lines": ["benign tumours are 100 times more common (300 vs 2 per 100 000) · a sarcoma shelled out like a benign lump, with little or no margin, is the 'WHOOPS': less chance of cure, possible amputation",
+   "history: has it GROWN? first noticed when, how big then and now (be persistent: fruit, nuts) · trauma · pain or numbness (sarcoma usually painless; big symptoms → metastases) · recurrence · other lumps · family history",
+   "exam: location, size, skin · superficial (subcutaneous) or DEEP (muscle) · mobile, tethered or FIXED · nodes rarely involved"]},
  "groups": [
   {"id": "g_ok", "cols": [0, 0], "title": "Under 5 cm, NO suspicious feature", "lines": ["limited growth · minimal symptoms · superficial"]},
   {"id": "g_sus", "cols": [1, 3], "title": "Over 5 cm, OR under 5 cm with ANY suspicious feature", "lines": ["rapid growth · pain · recurrent · deep · fixed · difficult location"]}
@@ -15,26 +17,29 @@
  "sections": ["head", "inv", "tx"],
  "columns": [
   {"id": "ex", "colour": "teal",
-   "head": [[["h", "Low risk", []]]],
-   "inv": [[["w", "Excisional biopsy is acceptable", ["complete removal with minimal surrounding tissue"]]]],
+   "head": [[["h", "Low risk", ["limited growth, minimal symptoms, superficial"]]]],
+   "inv": [[["w", "Excisional biopsy is acceptable", ["complete removal with minimal surrounding tissue", "NOT ideal if it is a sarcoma"]]]],
    "tx": [[["ok", "Excise", []]]]},
   {"id": "ben", "colour": "olive", "drop_label": "benign",
-   "head": [[["h", "Benign on biopsy", ["e.g. spindle cell/pleomorphic lipoma"]]]],
-   "inv": [[["w", "Lipoma or liposarcoma?", ["immunohistochemistry: MDM2 negative, CD34 positive → lipoma"]]]],
+   "head": [[["h", "Benign on biopsy", ["e.g. spindle cell/pleomorphic lipoma", "case: 33 M, 17 cm flank mass for 6 years, mobile, subcutaneous, many lipomas, uncle too · ultrasound: probable lipoma → MRI"]]]],
+   "inv": [[["w", "Lipoma or liposarcoma?", ["vs well-differentiated liposarcoma (atypical lipomatous tumour)", "immunohistochemistry: MDM2 negative, CD34 positive → lipoma"]]]],
    "tx": [[["ok", "Observe", []]]]},
   {"id": "sar", "colour": "orange", "drop_label": "sarcoma",
-   "head": [[["h", "Sarcoma, resectable", ["usually a PAINLESS lump"]]]],
+   "head": [[["h", "Sarcoma, resectable", ["usually a PAINLESS lump", "curable by surgery + radiation: leiomyosarcoma, liposarcoma"]]]],
    "inv": [[["w", "1 · Stage: CT chest", ["the lung is where it spreads"]]],
            [["w", "2 · Multidisciplinary tumour board", ["every possible sarcoma"]]]],
-   "tx": [[["ok", "Surgery: WIDE resection", ["a marginal resection is the 'whoops'"]]],
-          [["ok", "± Radiation, mostly PRE-operative", ["• local recurrence 30% → 10%", "• pre-op: better long-term function"]]],
-          [["warn", "± Chemotherapy: uncommon", ["• NOT standard after surgery", "• curable with it: osteosarcoma, Ewing sarcoma, rhabdomyosarcoma in young adults"]]]]},
+   "tx": [[["ok", "Surgery: WIDE resection", ["a marginal resection is the 'whoops'", "wide = 1-2 cm (rare) · close or positive margin common → radiation"]]],
+          [["ok", "± Radiation, mostly PRE-operative", ["• local recurrence 30% → 10%", "• pre-op: better long-term function: only the tumour radiated, surgery removes the radiated tissue", "• case: radiation 6 weeks → surgery 6-8 weeks later"]]],
+          [["warn", "± Chemotherapy: uncommon", ["• NOT standard after surgery (no survival gain) · select subtypes, trials", "• curable with it: osteosarcoma, Ewing sarcoma, rhabdomyosarcoma in young adults"]]]]},
   {"id": "pal", "colour": "slate", "drop_label": "metastatic",
    "head": [[["h", "Not curable", ["e.g. lung metastases, non-resectable"]]]],
    "inv": [[["w", "Medical oncology", ["no standard chemotherapy · goals of care · clinical trials"]]]],
-   "tx": [[["ok", "Palliative care", ["can greatly improve quality of life"]]]]}
+   "tx": [[["ok", "Palliative care", ["can greatly improve quality of life"]]],
+          [["w", "Follow-up after cure", ["clinic every 6 months · chest x-ray yearly or CT chest every 6 months", "case: 55 M, neurofibromatosis, thigh mass doubled, aching → malignant peripheral nerve sheath tumour → lung metastases at 1 year"]]]]}
  ],
  "panels": [
-  {"title": "History and exam", "items": ["has it GROWN? when first noticed, how big then and now (compare to fruit or nuts)", "pain or numbness: sarcomas are usually painless; significant symptoms → think metastases · recurrence · other lumps · family history", "superficial (subcutaneous) or deep (muscle) · mobile, tethered or fixed · nodes rarely involved"]}
+  {"title": "Biopsy options", "items": ["fine needle aspiration: cheap, fast, atraumatic BUT poor yield, hard to type · not for primary diagnosis", "excisional: whole lump, little margin · NOT if sarcoma · incisional: more tissue, more invasive", "CORE: the best compromise · less invasive, adequate tissue · then expert pathology: histology, immunohistochemistry, cytogenetics, molecular"]},
+  {"title": "Classification", "items": ["named for the adult tissue it resembles: lipoma/liposarcoma · rhabdomyoma/rhabdomyosarcoma · leiomyoma/leiomyosarcoma · fibroma/fibrosarcoma · neurofibroma/neurofibrosarcoma", "benign: may recur, no metastasis · intermediate: locally aggressive, or metastasizes 5-10% · malignant: frequent metastasis", "well-differentiated liposarcoma recurs locally only · DEDIFFERENTIATED also metastasizes (case: 55 M abdominal mass, early satiety, 20 lb loss · 5-year survival 40%)", "incidence rises with age · children: neuroblastoma, rhabdomyosarcoma, Ewing sarcoma"]},
+  {"title": "Causes (99% unknown)", "items": ["asbestos → mesothelioma · vinyl chloride → angiosarcoma · herbicides, dioxin, radiation → undifferentiated", "human herpesvirus 8 → Kaposi · chronic lymphedema (Stewart-Treves) → angiosarcoma · trauma → myositis ossificans", "Li-Fraumeni (p53) · retinoblastoma (Rb) · neurofibromatosis"]}
  ]
 }

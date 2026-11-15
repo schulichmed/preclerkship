@@ -81,7 +81,7 @@
    "x": 40,
    "y": 270,
    "w": 310,
-   "h": 1060,
+   "h": 1198,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -89,7 +89,7 @@
    "x": 352,
    "y": 270,
    "w": 310,
-   "h": 1060,
+   "h": 1198,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -97,7 +97,7 @@
    "x": 692,
    "y": 270,
    "w": 310,
-   "h": 1060,
+   "h": 1198,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -105,7 +105,7 @@
    "x": 1004,
    "y": 270,
    "w": 310,
-   "h": 1060,
+   "h": 1198,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -126,13 +126,13 @@
   {
    "x": 23,
    "y": 824,
-   "h": 142,
+   "h": 160,
    "text": "WORKUP"
   },
   {
    "x": 23,
-   "y": 1006,
-   "h": 316,
+   "y": 1024,
+   "h": 436,
    "text": "TREATMENT"
   }
  ],
@@ -207,7 +207,8 @@
    "kind": "cts_h",
    "title": "Carpal tunnel syndrome (CTS)",
    "lines": [
-    "median nerve in the carpal tunnel"
+    "median nerve in the carpal tunnel",
+    "with FPL, FDS, FDP tendons"
    ]
   },
   {
@@ -219,7 +220,8 @@
    "kind": "uln_h",
    "title": "Ulnar neuropathy at the wrist",
    "lines": [
-    "ulnar nerve in Guyon's canal"
+    "ulnar nerve in Guyon's canal",
+    "with the ulnar artery"
    ]
   },
   {
@@ -362,7 +364,7 @@
    "x": 45,
    "y": 824,
    "w": 300,
-   "h": 142,
+   "h": 160,
    "kind": "dr_t",
    "title": "X-ray: 3 questions",
    "lines": [
@@ -388,11 +390,12 @@
    "x": 357,
    "y": 906,
    "w": 300,
-   "h": 60,
+   "h": 78,
    "kind": "sc_t",
    "title": "2 · X-ray NORMAL → be SUSPICIOUS",
    "lines": [
-    "treat it as fractured + CT or MRI"
+    "cast, repeat X-ray in 10-14 days",
+    "still normal, still suspected → CT or MRI"
    ]
   },
   {
@@ -400,7 +403,7 @@
    "x": 697,
    "y": 824,
    "w": 300,
-   "h": 60,
+   "h": 69,
    "kind": "cts_t",
    "title": "1 · Think of C6 RADICULOPATHY",
    "lines": [
@@ -410,9 +413,9 @@
   {
    "id": "cts_inv_1_0",
    "x": 697,
-   "y": 906,
+   "y": 915,
    "w": 300,
-   "h": 60,
+   "h": 69,
    "kind": "cts_t",
    "title": "2 · EMG + nerve conduction studies",
    "lines": [
@@ -424,7 +427,7 @@
    "x": 1009,
    "y": 824,
    "w": 300,
-   "h": 60,
+   "h": 69,
    "kind": "uln_t",
    "title": "1 · Think of C8 RADICULOPATHY",
    "lines": [
@@ -434,9 +437,9 @@
   {
    "id": "uln_inv_1_0",
    "x": 1009,
-   "y": 906,
+   "y": 915,
    "w": 300,
-   "h": 60,
+   "h": 69,
    "kind": "uln_t",
    "title": "2 · EMG + nerve conduction studies",
    "lines": [
@@ -446,7 +449,7 @@
   {
    "id": "dr_tx_0_0",
    "x": 45,
-   "y": 1006,
+   "y": 1024,
    "w": 300,
    "h": 132,
    "kind": "ok",
@@ -461,7 +464,7 @@
   {
    "id": "dr_tx_1_0",
    "x": 45,
-   "y": 1160,
+   "y": 1178,
    "w": 300,
    "h": 98,
    "kind": "warn",
@@ -473,7 +476,7 @@
   {
    "id": "dr_tx_2_0",
    "x": 45,
-   "y": 1280,
+   "y": 1298,
    "w": 300,
    "h": 42,
    "kind": "ok",
@@ -481,11 +484,23 @@
    "lines": []
   },
   {
+   "id": "dr_tx_3_0",
+   "x": 45,
+   "y": 1362,
+   "w": 300,
+   "h": 98,
+   "kind": "bad",
+   "title": "Cast TOO TIGHT: acute CTS ± compartment syndrome",
+   "lines": [
+    "split cast + padding · elevate · recheck every 15-20 min · no masking analgesia"
+   ]
+  },
+  {
    "id": "sc_tx_0_0",
    "x": 357.0,
-   "y": 1006,
+   "y": 1024,
    "w": 145.0,
-   "h": 316,
+   "h": 436,
    "kind": "ok",
    "title": "Undisplaced or DISTAL pole",
    "lines": [
@@ -495,9 +510,9 @@
   {
    "id": "sc_tx_0_1",
    "x": 512.0,
-   "y": 1006,
+   "y": 1024,
    "w": 145.0,
-   "h": 316,
+   "h": 436,
    "kind": "warn",
    "title": "Displaced or PROXIMAL pole",
    "lines": [
@@ -507,9 +522,9 @@
   {
    "id": "cts_tx_0_0",
    "x": 697,
-   "y": 1006,
+   "y": 1024,
    "w": 300,
-   "h": 66,
+   "h": 96,
    "kind": "ok",
    "title": "1 · Education",
    "lines": [
@@ -519,9 +534,9 @@
   {
    "id": "cts_tx_1_0",
    "x": 697,
-   "y": 1094,
+   "y": 1142,
    "w": 300,
-   "h": 86,
+   "h": 116,
    "kind": "ok",
    "title": "2 · Rigid wrist-hand orthosis, OVERNIGHT",
    "lines": [
@@ -531,9 +546,9 @@
   {
    "id": "cts_tx_2_0",
    "x": 697,
-   "y": 1202,
+   "y": 1280,
    "w": 300,
-   "h": 48,
+   "h": 78,
    "kind": "ok",
    "title": "3 · Corticosteroid injection",
    "lines": []
@@ -541,9 +556,9 @@
   {
    "id": "cts_tx_3_0",
    "x": 697,
-   "y": 1272,
+   "y": 1380,
    "w": 300,
-   "h": 48,
+   "h": 78,
    "kind": "warn",
    "title": "4 · Carpal tunnel release",
    "lines": []
@@ -551,9 +566,9 @@
   {
    "id": "uln_tx_0_0",
    "x": 1009,
-   "y": 1006,
+   "y": 1024,
    "w": 300,
-   "h": 97,
+   "h": 137,
    "kind": "ok",
    "title": "1 · Education",
    "lines": [
@@ -563,9 +578,9 @@
   {
    "id": "uln_tx_1_0",
    "x": 1009,
-   "y": 1125,
+   "y": 1183,
    "w": 300,
-   "h": 97,
+   "h": 137,
    "kind": "ok",
    "title": "2 · Relieve the pressure",
    "lines": [
@@ -575,9 +590,9 @@
   {
    "id": "uln_tx_2_0",
    "x": 1009,
-   "y": 1244,
+   "y": 1342,
    "w": 300,
-   "h": 79,
+   "h": 119,
    "kind": "warn",
    "title": "3 · Guyon's canal release",
    "lines": []
@@ -617,6 +632,10 @@
   {
    "from": "dr_tx_1_0",
    "to": "dr_tx_2_0"
+  },
+  {
+   "from": "dr_tx_2_0",
+   "to": "dr_tx_3_0"
   },
   {
    "from": "cts_tx_0_0",
@@ -761,5 +780,19 @@
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1494,
+   "w": 1264,
+   "title": "Hand muscles: which nerve",
+   "items": [
+    "thenar (APB, FPB, opponens pollicis): RECURRENT branch of the median nerve",
+    "case: palm cut, recurrent median branch only → loses thumb OPPOSITION; keeps abduction (APL, radial), adduction (adductor pollicis, ulnar), IP flexion (FPL)",
+    "hypothenar, adductor pollicis, medial 2 lumbricals: ULNAR · lateral 2 lumbricals: median",
+    "interossei: palmar ADduct (PAD) · dorsal ABduct (DAB)"
+   ],
+   "cols": 1
+  }
+ ]
 }
