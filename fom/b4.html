@@ -79,8 +79,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../base.css?v=00e9aa0f">
-<link rel="stylesheet" href="../portal.css?v=139b55a1">
+<link rel="stylesheet" href="../base.css?v=a2a6cb52">
+<link rel="stylesheet" href="../portal.css?v=1d258fc1">
 <style>
 :root{--q-accent:#3d4f8f;--q-accent-soft:#e5e8f5;--q-accent-ink:#333f75;}
 </style>
@@ -116,7 +116,7 @@
 })();
 </script>
 <script>window.PORTAL_SYNC_CFG = {"firebase": {"apiKey": "AIzaSyCW-gbfcaiOv1Dl-hDdDz7c-1m5ZWiWl5k", "authDomain": "public-medfriend.firebaseapp.com", "projectId": "public-medfriend", "storageBucket": "public-medfriend.firebasestorage.app", "messagingSenderId": "1083842121706", "appId": "1:1083842121706:web:c63c6c9132e37a3d876c93"}, "stores": ["nsq.fom.v1.", "nsq.pom1.v1.", "nsq.v1.", "nsq.t2c.v1."]};</script>
-<script defer src="../sync.js?v=a6b059c2"></script>
+<script defer src="../sync.js?v=0d4c6fe0"></script>
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -161,26 +161,24 @@ year&rsquo;s lecture slides. Nothing has been uploaded into it yet.</p>
 </div>
 
 <div class="q-shell" id="panel-notes" role="tabpanel" aria-labelledby="tab-notes">
-<aside class="rail">
-
-<section>
-<p class="panel-h"><label for="note-q">Search</label></p>
+<div class="notefilter" id="note-filter">
+<div class="nf-search">
+<label class="sr-only" for="note-q">Search every note</label>
 <div class="notesearch">
 <input type="search" id="note-q" placeholder="Search every note" autocomplete="off" spellcheck="false" title="Every word must appear somewhere in the note; the best matches come first. Put &quot;quotes&quot; round words that belong together. Press / to jump here, Escape to clear.">
 <button class="ns-clear" id="note-q-clear" type="button" title="Clear the search" aria-label="Clear the search" hidden>&times;</button>
 </div>
-<p class="railnote hits" id="note-q-count" hidden></p>
 <div class="nsnav" id="note-nav" hidden>
 <button class="ns-step" id="note-nav-prev" type="button" title="Previous match (Shift+Enter)" aria-label="Previous match">&uarr;</button>
 <button class="ns-step" id="note-nav-next" type="button" title="Next match (Enter)" aria-label="Next match">&darr;</button>
 <span class="ns-pos" id="note-nav-pos" aria-live="polite"></span>
 </div>
-</section>
+</div>
+<div class="chips nf-weeks" id="note-week-chips" role="group" aria-label="Week"></div>
+<p class="railnote hits" id="note-q-count" hidden></p>
+</div>
 
-<section>
-<p class="panel-h">Week</p>
-<div class="chips" id="note-week-chips"></div>
-</section>
+<aside class="rail">
 
 <section>
 <p class="panel-h">Lectures</p>
@@ -203,8 +201,8 @@ year&rsquo;s lecture slides. Nothing has been uploaded into it yet.</p>
 <script>
 window.QUIZ_BLOCK = {"slug": "b4", "n": 4, "name": "Infection & Immunity", "weeks": "13–15", "course": "FoM", "store": "nsq.fom.v1.", "families": [{"key": "meds2024", "name": "Meds 2024 bank", "tip": "Class of 2024 bank, mostly faculty-edited", "blurb": "The student-written, instructor-approved bank built by the Class of 2024 Academic Directors in December 2020, re-filed week by week. Its questions went to the teaching faculty and the instructors' edits are folded in, except for a tail of each week that time ran out on."}, {"key": "new", "name": "Meds 2025", "tip": "Meds 2025 volunteers' bank, not faculty-checked", "blurb": "Written fresh by the Meds 2025 volunteers in December 2021. The bank states on its own second page that these were not verified by faculty, so treat a disagreement as a question worth chasing rather than a correction to accept."}, {"key": "workbook", "name": "Pre-Clerkship Workbook", "tip": "Handed-down peer bank; key has errors", "blurb": "The 2023 edition of the workbook handed down through the Schulich classes of 2015 to 2025: its Foundations, Hematology and Infection & Immunity chapters. The workbook files by subject rather than by week, so the block is its own but the week here is inferred; where nothing in a question placed it, it says so on its face. The Foundations chapter's own subject labels are in the Topic filter."}, {"key": "reviews", "name": "Schulich Reviews", "tip": "Upper-year exam review sessions", "blurb": "The Schulich Reviews sessions, run by upper years before each exam. Their own practice questions, keyed by the deck, plus questions written from their high-yield slides. Where a review disagrees with this year's lecture, the lecture wins and the question says so."}], "qv": "7aa7d7e4", "nv": "d9be6f84", "dir": "fom", "contact": "schulichmedfriend@gmail.com", "report": "https://preclerkship-report.schulichmed.workers.dev/", "lecq": {"b4-w13-01": {"n": 3, "lec": "w13-01"}, "b4-w13-03": {"n": 23, "lec": "w13-03,w13-04"}, "b4-w13-05": {"n": 28, "lec": "w13-05,w13-02,w13-06,w13-08"}, "b4-w13-07": {"n": 3, "lec": "w13-07"}, "b4-w13-09": {"n": 8, "lec": "w13-09,w13-12,w13-10"}, "b4-w13-11": {"n": 5, "lec": "w13-11"}, "b4-w13-14": {"n": 8, "lec": "w13-14"}, "b4-w13-15": {"n": 5, "lec": "w13-15"}, "b4-w13-16": {"n": 10, "lec": "w13-16"}, "b4-w14-02": {"n": 24, "lec": "w14-02,w14-03"}, "b4-w14-04": {"n": 4, "lec": "w14-01"}, "b4-w14-07": {"n": 5, "lec": "w14-07"}, "b4-w14-08": {"n": 10, "lec": "w14-08,w14-06"}, "b4-w14-09": {"n": 13, "lec": "w14-09"}, "b4-w14-10": {"n": 11, "lec": "w14-10"}, "b4-w14-11": {"n": 7, "lec": "w14-11"}, "b4-w14-in-class-outbreak-management-and-antibiotics": {"n": 7, "lec": "w14-05"}, "b4-w15-01": {"n": 4, "lec": "w15-01"}, "b4-w15-02": {"n": 3, "lec": "w15-02"}, "b4-w15-04": {"n": 11, "lec": "w15-04"}, "b4-w15-05": {"n": 19, "lec": "w15-05"}, "b4-w15-06": {"n": 22, "lec": "w15-06,w15-07,w15-09,w15-10"}, "b4-w15-08": {"n": 14, "lec": "w15-08,w15-03,w15-11"}}, "bodymap": null};
 </script>
-<script src="../notes.js?v=acf8e27e"></script>
-<script src="../portal.js?v=9ae81d0e"></script>
+<script src="../notes.js?v=1b917b7c"></script>
+<script src="../portal.js?v=ca502937"></script>
 
 <footer>
 <p><strong>Unofficial and student-run.</strong> For any inquiries, email <a href="mailto:schulichmedfriend@gmail.com">schulichmedfriend@gmail.com</a>.</p>
