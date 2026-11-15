@@ -117,24 +117,36 @@ def measure(text, style, size, spacing=0.0):
 
 def wrap(runs, width, size):
     """Greedy-wrap styled runs [(text, style, colour)] into lines of runs."""
-    words = []
+    # A word is a list of (piece, style, colour): a run that starts with no space
+    # carries on the word before it, so **C**ataracts stays one word.
+    words, open_word = [], False
     for text, style, colour in runs:
-        for w in text.split(" "):
-            if w:
-                words.append((w, style, colour))
+        for i, w in enumerate(text.split(" ")):
+            if i:
+                open_word = False
+            if not w:
+                continue
+            if open_word and words:
+                words[-1].append((w, style, colour))
+            else:
+                words.append([(w, style, colour)])
+            open_word = True
     lines, cur, cur_w = [], [], 0.0
     limit = width * WRAP
-    for w, style, colour in words:
+    for word in words:
         sep = " " if cur else ""
-        add = measure(sep + w, style, size)
+        rest = sum(measure(p, s, size) for p, s, _ in word[1:])
+        add = measure(sep + word[0][0], word[0][1], size) + rest
         if cur and cur_w + add > limit:
             lines.append(cur)
             cur, cur_w, sep = [], 0.0, ""
-            add = measure(w, style, size)
-        if cur and cur[-1][1] == style and cur[-1][2] == colour:
-            cur[-1] = (cur[-1][0] + sep + w, style, colour)
-        else:
-            cur.append((sep + w, style, colour))
+            add = measure(word[0][0], word[0][1], size) + rest
+        for j, (w, style, colour) in enumerate(word):
+            lead = sep if j == 0 else ""
+            if cur and cur[-1][1] == style and cur[-1][2] == colour:
+                cur[-1] = (cur[-1][0] + lead + w, style, colour)
+            else:
+                cur.append((lead + w, style, colour))
         cur_w += add
     if cur:
         lines.append(cur)
@@ -187,14 +199,20 @@ class Svg(object):
         return cy + h - y
 
 
+def bold_runs(text, colour):
+    """Split text on ** so **X** draws bold, e.g. the first letters of a mnemonic."""
+    return [(part, "bold" if i % 2 else "reg", colour)
+            for i, part in enumerate(text.split("**")) if part]
+
+
 def line_runs(item, base_colour):
     colour = LINE_KIND.get(item.get("kind", "muted"), base_colour)
     runs = []
     if item.get("label"):
         runs.append((item["label"], "bold", colour))
-        runs.append((" " + item["text"], "reg", colour))
+        runs.extend(bold_runs(" " + item["text"], colour))
     else:
-        runs.append((item["text"], "reg", colour))
+        runs.extend(bold_runs(item["text"], colour))
     return runs
 
 
