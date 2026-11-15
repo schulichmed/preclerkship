@@ -243,6 +243,24 @@
     box.appendChild(frag);
   }
 
+  /* the filter bar is pinned over the top of the notes, so a note brought to
+     the top has to land below it rather than under it */
+  function barH() {
+    var f = byId("note-filter");
+    return f ? f.getBoundingClientRect().height : 0;
+  }
+
+  /* keep --nf-h at the bar's height, which wraps on a narrow window and grows a
+     line when a search is counting hits; the sticky rail sits below it */
+  function initFilterBar() {
+    var f = byId("note-filter"), shell = byId("panel-notes");
+    if (!f || !shell) return;
+    function set() { shell.style.setProperty("--nf-h", f.offsetHeight + "px"); }
+    set();
+    if (window.ResizeObserver) new window.ResizeObserver(set).observe(f);
+    else window.addEventListener("resize", set);
+  }
+
   /* the same scroll the questions tab does, so a jump from the rail and a jump
      from the position bar put a note in the same place */
   /* spot, when given, is a word inside the note to land on instead of the
@@ -252,7 +270,7 @@
     if (!art) return;
     var at = spot || art;
     function gap() {
-      return spot ? (window.innerHeight - spot.getBoundingClientRect().height) / 2 : 16;
+      return spot ? (window.innerHeight - spot.getBoundingClientRect().height) / 2 : 16 + barH();
     }
     PENDING = id;
     mark(id);
@@ -885,7 +903,7 @@
     show.type = "button";
     show.className = "rail-show";
     show.textContent = "Sidebar \u00bb";
-    show.title = "Bring back the search, weeks and lecture list";
+    show.title = "Bring back the lecture list";
     shell.appendChild(show);
 
     function set(tucked, remember) {
@@ -960,7 +978,7 @@
     /* already where goTo aims means the earlier scroll landed, and scrolling
        again would only restart it */
     var at = spot || art;
-    var gap = spot ? (window.innerHeight - spot.getBoundingClientRect().height) / 2 : 16;
+    var gap = spot ? (window.innerHeight - spot.getBoundingClientRect().height) / 2 : 16 + barH();
     if (Math.abs(at.getBoundingClientRect().top - gap) < 2) return;
     goTo(want.id, spot);
   }
@@ -981,6 +999,7 @@
     initSpy();
     initTop();
     initTuck();
+    initFilterBar();
     goToWanted();
     shared().drawPathways(byId("note-stream")).then(goToWanted);
     window.addEventListener("hashchange", goToWanted);

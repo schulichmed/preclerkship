@@ -592,26 +592,24 @@ PAGE = u"""<!DOCTYPE html>
 </div>
 
 <div class="q-shell" id="panel-notes" role="tabpanel" aria-labelledby="tab-notes">
-<aside class="rail">
-
-<section>
-<p class="panel-h"><label for="note-q">Search</label></p>
+<div class="notefilter" id="note-filter">
+<div class="nf-search">
+<label class="sr-only" for="note-q">Search every note</label>
 <div class="notesearch">
 <input type="search" id="note-q" placeholder="Search every note" autocomplete="off" spellcheck="false" title="Every word must appear somewhere in the note; the best matches come first. Put &quot;quotes&quot; round words that belong together. Press / to jump here, Escape to clear.">
 <button class="ns-clear" id="note-q-clear" type="button" title="Clear the search" aria-label="Clear the search" hidden>&times;</button>
 </div>
-<p class="railnote hits" id="note-q-count" hidden></p>
 <div class="nsnav" id="note-nav" hidden>
 <button class="ns-step" id="note-nav-prev" type="button" title="Previous match (Shift+Enter)" aria-label="Previous match">&uarr;</button>
 <button class="ns-step" id="note-nav-next" type="button" title="Next match (Enter)" aria-label="Next match">&darr;</button>
 <span class="ns-pos" id="note-nav-pos" aria-live="polite"></span>
 </div>
-</section>
+</div>
+<div class="chips nf-weeks" id="note-week-chips" role="group" aria-label="Week"></div>
+<p class="railnote hits" id="note-q-count" hidden></p>
+</div>
 
-<section>
-<p class="panel-h">Week</p>
-<div class="chips" id="note-week-chips"></div>
-</section>
+<aside class="rail">
 
 <section>
 <p class="panel-h">Lectures</p>
