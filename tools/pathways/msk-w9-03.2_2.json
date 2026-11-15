@@ -61,25 +61,25 @@
  "bands": [
   {
    "x": 40,
-   "y": 578,
+   "y": 650,
    "w": 260,
-   "h": 286,
+   "h": 338,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 302,
-   "y": 578,
+   "y": 650,
    "w": 260,
-   "h": 286,
+   "h": 338,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 564,
-   "y": 578,
+   "y": 650,
    "w": 260,
-   "h": 286,
+   "h": 338,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -87,13 +87,13 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 256,
-   "h": 150,
+   "y": 310,
+   "h": 168,
    "text": "WORKUP"
   },
   {
    "x": 23,
-   "y": 706,
+   "y": 830,
    "h": 150,
    "text": "TREATMENT"
   }
@@ -116,33 +116,35 @@
    "x": 45,
    "y": 138,
    "w": 774,
-   "h": 78,
+   "h": 132,
    "kind": "plain",
    "title": "1 · Is this a hip fracture?",
    "lines": [
     "sudden groin or lateral upper-thigh pain after a fall · worse moving and weight bearing",
-    "leg SHORTENED, EXTERNALLY ROTATED and ABDUCTED · cannot weight bear · painful log roll and straight leg raise"
+    "leg SHORTENED, EXTERNALLY ROTATED and ABDUCTED · cannot weight bear · painful log roll and straight leg raise",
+    "case: 86, fell at home, can't get up or weight bear",
+    "not a dislocation: POSTERIOR (common) = shortened, INTERNALLY rotated, adducted · anterior = externally rotated, abducted, flexed"
    ]
   },
   {
    "id": "p1",
    "x": 45,
-   "y": 256,
+   "y": 310,
    "w": 774,
-   "h": 150,
+   "h": 168,
    "kind": "info",
    "title": "Work up in order",
    "lines": [
     "1 · X-ray: AP (front-to-back) pelvis + hip · negative but suspicion still high → CT",
     "2 · STABLE? airway, breathing, circulation (young, high-energy) · pelvic fracture? · check distal pulses + nerves, especially the SCIATIC",
-    "3 · WHY did they fall? complete blood count (CBC), electrolytes, troponin · ECG (atrial fibrillation?) · chest X-ray (pneumonia?)",
+    "3 · WHY did they fall? recent illness, dehydration, (pre)syncope, cardiac · CBC, electrolytes, troponin · ECG (atrial fibrillation?) · chest X-ray (pneumonia?)",
     "4 · WHY did the bone break? a pathologic fracture (bone tumour)? · a fragility fracture qualifies as OSTEOPOROSIS → start that workup"
    ]
   },
   {
    "id": "t1",
    "x": 45,
-   "y": 446,
+   "y": 518,
    "w": 774,
    "h": 60,
    "kind": "plain",
@@ -154,9 +156,9 @@
   {
    "id": "nd_head_0_0",
    "x": 45,
-   "y": 586,
+   "y": 658,
    "w": 250,
-   "h": 80,
+   "h": 132,
    "kind": "nd_h",
    "title": "Femoral neck, NON-displaced",
    "lines": [
@@ -166,21 +168,22 @@
   {
    "id": "dp_head_0_0",
    "x": 307,
-   "y": 586,
+   "y": 658,
    "w": 250,
-   "h": 80,
+   "h": 132,
    "kind": "dp_h",
    "title": "Femoral neck, DISPLACED",
    "lines": [
-    "the femoral head's blood supply is at stake"
+    "the femoral head's blood supply is at stake",
+    "medial + lateral circumflex femoral (from profunda femoris) · artery of the ligament of the head"
    ]
   },
   {
    "id": "it_head_0_0",
    "x": 569,
-   "y": 586,
+   "y": 658,
    "w": 250,
-   "h": 80,
+   "h": 132,
    "kind": "it_h",
    "title": "Intertrochanteric or subtrochanteric",
    "lines": [
@@ -190,7 +193,7 @@
   {
    "id": "nd_tx_0_0",
    "x": 45,
-   "y": 706,
+   "y": 830,
    "w": 250,
    "h": 150,
    "kind": "ok",
@@ -204,7 +207,7 @@
   {
    "id": "dp_tx_0_0",
    "x": 307,
-   "y": 706,
+   "y": 830,
    "w": 250,
    "h": 150,
    "kind": "bad",
@@ -218,7 +221,7 @@
   {
    "id": "it_tx_0_0",
    "x": 569,
-   "y": 706,
+   "y": 830,
    "w": 250,
    "h": 150,
    "kind": "ok",
@@ -254,7 +257,7 @@
    "label": "neck, not displaced",
    "label_at": [
     170.0,
-    546
+    618
    ]
   },
   {
@@ -268,7 +271,7 @@
    "label": "neck, displaced",
    "label_at": [
     432.0,
-    546
+    618
    ]
   },
   {
@@ -282,32 +285,35 @@
    "label": "below the neck",
    "label_at": [
     694.0,
-    546
+    618
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 890,
+   "y": 1014,
    "w": 380,
-   "title": "6 · After surgery: prevent the harms of lying still",
+   "title": "6 · After surgery: lying still harms, then the next one",
    "items": [
     "venous thromboembolism (VTE) is common → low-molecular-weight heparin (LMWH) for 14–30 days",
     "pneumonia: a common cause of death",
-    "delirium · muscle atrophy · infection (urinary) · bedsores"
+    "delirium · muscle atrophy · infection (urinary) · bedsores",
+    "EARLY MOBILIZATION + interdisciplinary rehab",
+    "falls: optimize illnesses, the home, occupational therapy and physiotherapy, gait aids",
+    "bones: vitamin D, calcium, secondary osteoporosis workup, antiresorptive"
    ],
    "cols": 1
   },
   {
    "x": 439,
-   "y": 890,
+   "y": 1014,
    "w": 380,
-   "title": "Regain function and stop the next one",
+   "title": "Who breaks a hip · who gets a BMD",
    "items": [
-    "EARLY MOBILIZATION + interdisciplinary rehab",
-    "falls: optimize illnesses, the home, occupational therapy and physiotherapy, gait aids",
-    "bones: vitamin D, calcium, secondary osteoporosis workup, antiresorptive"
+    "falls: previous falls · PVD, COPD, stroke, weakness · polypharmacy (sedatives, diuretics, psychotropics, antiarrhythmics) · poor nutrition, eyesight · environment",
+    "bone mineral density: EVERYONE 65+ · 50-64 with fragility fracture, glucocorticoids, parental hip fracture, smoking, alcohol, weight < 60 kg or loss > 10% since 25, RA",
+    "under 50: fragility fracture, glucocorticoids, hypogonadism, menopause before 45, malabsorption, primary hyperparathyroidism"
    ],
    "cols": 1
   }

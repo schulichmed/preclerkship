@@ -1,7 +1,7 @@
 {
  "name": "aphasia syndromes overview",
  "width": 1048,
- "title": "Aphasia syndromes: test comprehension first, then fluency and repetition; the pattern names the aphasia and localizes it in the dominant hemisphere (Broca's inferior frontal, Wernicke's posterior temporal, global full MCA territory; conduction and the transcortical aphasias for keeners)",
+ "title": "Cortical syndromes: test comprehension first, then fluency and repetition; the pattern names the aphasia and localizes it in the dominant hemisphere (Broca's inferior frontal, Wernicke's posterior temporal, global full MCA territory; conduction and the transcortical aphasias for keeners); neglect points to the non-dominant hemisphere, and apraxia, cortical sensory signs and extinction also localize to the cortex",
  "kinds": {
   "broca_h": [
    "#1f6f8b",
@@ -115,49 +115,49 @@
  "bands": [
   {
    "x": 40,
-   "y": 270,
+   "y": 324,
    "w": 160,
-   "h": 372,
+   "h": 408,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 202,
-   "y": 270,
+   "y": 324,
    "w": 160,
-   "h": 372,
+   "h": 408,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
    "x": 364,
-   "y": 270,
+   "y": 324,
    "w": 160,
-   "h": 372,
+   "h": 408,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
   {
    "x": 554,
-   "y": 270,
+   "y": 324,
    "w": 160,
-   "h": 372,
+   "h": 408,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 716,
-   "y": 270,
+   "y": 324,
    "w": 160,
-   "h": 372,
+   "h": 408,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 878,
-   "y": 270,
+   "y": 324,
    "w": 160,
-   "h": 372,
+   "h": 408,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   }
@@ -165,13 +165,13 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 398,
-   "h": 114,
+   "y": 452,
+   "h": 150,
    "text": "FLUENCY · REPETITION"
   },
   {
    "x": 23,
-   "y": 552,
+   "y": 642,
    "h": 82,
    "text": "LESION"
   }
@@ -185,14 +185,17 @@
    "kind": "dark",
    "title": "Trouble with LANGUAGE (aphasia), not articulation (dysarthria)?",
    "lines": [
-    "aphasia = DOMINANT hemisphere (left in right-handers)",
-    "test naming · comprehension · fluency · repetition · reading · writing"
+    "aphasia = DOMINANT hemisphere (left in right-handers) · dominant MCA stroke usually has some",
+    "left-handers: 60% left · 19% right · 20% bilateral",
+    "matters: an aphasic patient is NOT confused or delirious",
+    "test naming · comprehension · fluency · repetition · reading · writing",
+    "comprehension: MOTOR commands, 1 → 3 step · fluency: nonsense sounds still = fluent · repetition: \"no ifs, ands or buts\""
    ]
   },
   {
    "id": "g_int",
    "x": 45,
-   "y": 138,
+   "y": 192,
    "w": 474,
    "h": 60,
    "kind": "plain",
@@ -204,7 +207,7 @@
   {
    "id": "g_low",
    "x": 559,
-   "y": 138,
+   "y": 192,
    "w": 474,
    "h": 60,
    "kind": "plain",
@@ -216,7 +219,7 @@
   {
    "id": "broca_head_0_0",
    "x": 45,
-   "y": 278,
+   "y": 332,
    "w": 150,
    "h": 80,
    "kind": "broca_h",
@@ -228,7 +231,7 @@
   {
    "id": "tcm_head_0_0",
    "x": 207,
-   "y": 278,
+   "y": 332,
    "w": 150,
    "h": 80,
    "kind": "tcm_h",
@@ -240,7 +243,7 @@
   {
    "id": "cond_head_0_0",
    "x": 369,
-   "y": 278,
+   "y": 332,
    "w": 150,
    "h": 80,
    "kind": "cond_h",
@@ -252,7 +255,7 @@
   {
    "id": "wern_head_0_0",
    "x": 559,
-   "y": 278,
+   "y": 332,
    "w": 150,
    "h": 80,
    "kind": "wern_h",
@@ -264,7 +267,7 @@
   {
    "id": "glob_head_0_0",
    "x": 721,
-   "y": 278,
+   "y": 332,
    "w": 150,
    "h": 80,
    "kind": "glob_h",
@@ -276,7 +279,7 @@
   {
    "id": "tcs_head_0_0",
    "x": 883,
-   "y": 278,
+   "y": 332,
    "w": 150,
    "h": 80,
    "kind": "tcs_h",
@@ -288,14 +291,16 @@
   {
    "id": "broca_clue_0_0",
    "x": 45,
-   "y": 398,
+   "y": 452,
    "w": 150,
-   "h": 114,
+   "h": 150,
    "kind": "broca_t",
    "title": "Fluency ↓",
    "lines": [
     "• slow, halting",
     "• none if severe",
+    "• paraphasic errors",
+    "• speech AND writing",
     "• repetition ↓",
     "• naming ↓"
    ]
@@ -303,9 +308,9 @@
   {
    "id": "tcm_clue_0_0",
    "x": 207,
-   "y": 398,
+   "y": 452,
    "w": 150,
-   "h": 114,
+   "h": 150,
    "kind": "tcm_t",
    "title": "Fluency ↓",
    "lines": [
@@ -316,9 +321,9 @@
   {
    "id": "cond_clue_0_0",
    "x": 369,
-   "y": 398,
+   "y": 452,
    "w": 150,
-   "h": 114,
+   "h": 150,
    "kind": "cond_t",
    "title": "Fluency normal",
    "lines": [
@@ -329,13 +334,14 @@
   {
    "id": "wern_clue_0_0",
    "x": 559,
-   "y": 398,
+   "y": 452,
    "w": 150,
-   "h": 114,
+   "h": 150,
    "kind": "wern_t",
    "title": "Fluent nonsense",
    "lines": [
     "• like a foreign language if severe",
+    "• mild: real words, not coherent",
     "• repetition ↓",
     "• naming ↓"
    ]
@@ -343,9 +349,9 @@
   {
    "id": "glob_clue_0_0",
    "x": 721,
-   "y": 398,
+   "y": 452,
    "w": 150,
-   "h": 114,
+   "h": 150,
    "kind": "glob_t",
    "title": "No verbal output",
    "lines": [
@@ -356,9 +362,9 @@
   {
    "id": "tcs_clue_0_0",
    "x": 883,
-   "y": 398,
+   "y": 452,
    "w": 150,
-   "h": 114,
+   "h": 150,
    "kind": "tcs_t",
    "title": "Fluent",
    "lines": [
@@ -369,7 +375,7 @@
   {
    "id": "broca_inv_0_0",
    "x": 45,
-   "y": 552,
+   "y": 642,
    "w": 150,
    "h": 82,
    "kind": "broca_w",
@@ -379,7 +385,7 @@
   {
    "id": "tcm_inv_0_0",
    "x": 207,
-   "y": 552,
+   "y": 642,
    "w": 150,
    "h": 82,
    "kind": "tcm_w",
@@ -389,7 +395,7 @@
   {
    "id": "cond_inv_0_0",
    "x": 369,
-   "y": 552,
+   "y": 642,
    "w": 150,
    "h": 82,
    "kind": "cond_w",
@@ -399,7 +405,7 @@
   {
    "id": "wern_inv_0_0",
    "x": 559,
-   "y": 552,
+   "y": 642,
    "w": 150,
    "h": 82,
    "kind": "wern_w",
@@ -409,7 +415,7 @@
   {
    "id": "glob_inv_0_0",
    "x": 721,
-   "y": 552,
+   "y": 642,
    "w": 150,
    "h": 82,
    "kind": "glob_w",
@@ -419,7 +425,7 @@
   {
    "id": "tcs_inv_0_0",
    "x": 883,
-   "y": 552,
+   "y": 642,
    "w": 150,
    "h": 82,
    "kind": "tcs_w",
@@ -431,12 +437,12 @@
   {
    "from": "root",
    "to": "g_int",
-   "path": "M539.0 88V113H282.0V138"
+   "path": "M539.0 142V167H282.0V192"
   },
   {
    "from": "root",
    "to": "g_low",
-   "path": "M539.0 88V113H796.0V138"
+   "path": "M539.0 142V167H796.0V192"
   },
   {
    "from": "broca_head_0_0",
@@ -517,5 +523,46 @@
    "from_dx": 162
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 758,
+   "w": 320,
+   "title": "Non-dominant hemisphere: neglect",
+   "items": [
+    "visual neglect: ignores one side · blink to threat may stay",
+    "sensory neglect: ignores touch on one side",
+    "asomatognosia: own body part not recognized",
+    "anosognosia: deficit not recognized",
+    "dressing apraxia: can't put clothes on"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 379,
+   "y": 758,
+   "w": 320,
+   "title": "Other cortical signs",
+   "items": [
+    "apraxia: can't do a motor task DESPITE power · parietal or frontal",
+    "e.g. pretend hammer, hand postures, dressing, whistle, draw",
+    "cortical sensory (primary intact): graphesthesia, stereognosis, direction",
+    "primary sensory loss can't localize to cortex",
+    "extinction: misses one side only when BOTH stimulated · touch → parietal, vision → occipital"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 713,
+   "y": 758,
+   "w": 320,
+   "title": "Localization pearls",
+   "items": [
+    "CORTEX: aphasia, neglect, apraxia, cortical sensory · homonymous hemianopia",
+    "SUBCORTICAL: pure motor or pure sensory face + arm + leg · ataxic hemiparesis",
+    "BRAINSTEM: vertigo or diplopia PLUS another symptom · crossed face vs body sensory"
+   ],
+   "cols": 1
+  }
+ ]
 }

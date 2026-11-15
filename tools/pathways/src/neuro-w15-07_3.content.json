@@ -5,328 +5,46 @@
  "root": {
   "title": "Eye trauma: is the globe OPEN?",
   "lines": [
-   "look for: PEAKED pupil · Seidel sign · 360° subconjunctival hemorrhage · dark tissue at the limbus (extruded uvea) · shallow chamber",
-   "also: orbital rim pain or step-off · air under the skin · lid lacerations · forehead and cheek sensation · eye movements · proptosis or sunken eye"
+   "look for: PEAKED pupil (in EVERY trauma) · Seidel sign · 360° subconjunctival hemorrhage · dark tissue at the limbus (extruded uvea) · depth of the wound · shallow chamber",
+   "also: orbital rim pain or step-off · air under the skin · lid lacerations (full thickness? tear duct?) · forehead and cheek sensation (V1, V2) · eye movements · proptosis or sunken eye",
+   "ONLY ophthalmologists prescribe topical steroids"
   ]
  },
  "groups": [
-  {
-   "id": "g_s",
-   "cols": [
-    0,
-    1
-   ],
-   "title": "SURFACE or LID",
-   "lines": []
-  },
-  {
-   "id": "g_b",
-   "cols": [
-    2,
-    3
-   ],
-   "title": "BLUNT trauma to the globe",
-   "lines": []
-  },
-  {
-   "id": "g_p",
-   "cols": [
-    4,
-    4
-   ],
-   "title": "STAB or POKE",
-   "lines": []
-  }
+  {"id": "g_s", "cols": [0, 1], "title": "SURFACE or LID", "lines": []},
+  {"id": "g_b", "cols": [2, 3], "title": "BLUNT trauma to the globe", "lines": []},
+  {"id": "g_p", "cols": [4, 4], "title": "STAB or POKE", "lines": []}
  ],
- "sections": [
-  "head",
-  "pres",
-  "inv",
-  "tx"
- ],
- "row_names": {
-  "pres": "PRESENTS AS",
-  "inv": "EXAM",
-  "tx": "WHAT TO DO"
- },
+ "sections": ["head", "pres", "inv", "tx"],
+ "row_names": {"pres": "PRESENTS AS", "inv": "EXAM", "tx": "WHAT TO DO"},
  "columns": [
-  {
-   "id": "fb",
-   "colour": "slate",
-   "drop_label": "foreign body",
-   "head": [
-    [
-     [
-      "h",
-      "Metallic foreign body",
-      []
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Metal on metal",
-      [
-       "• foreign-body feeling, tearing",
-       "• acuity normal or ↓"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "On the cornea ± rust ring",
-      [
-       "• epithelial defect, Seidel sign",
-       "• evert the lid: hidden body?"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "warn",
-      "High speed? X-ray or CT",
-      [
-       "rule out an intraocular body"
-      ]
-     ]
-    ],
-    [
-     [
-      "ok",
-      "Remove + antibiotics",
-      [
-       "• tuberculin syringe, then burr",
-       "• antibiotic drops × 7 days"
-      ]
-     ]
-    ],
-    [
-     [
-      "bad",
-      "Refer if",
-      [
-       "• intraocular body possible",
-       "• hard to remove, or in the visual axis"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "lid",
-   "colour": "brown",
-   "drop_label": "bite, punch",
-   "head": [
-    [
-     [
-      "h",
-      "Lid laceration",
-      []
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Dog bite, punch",
-      [
-       "• tearing (epiphora)",
-       "• vision may be normal"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "MEDIAL lower lid cut?",
-      [
-       "• suspect the canaliculus",
-       "• examine the rest of the eye"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "warn",
-      "Refer: oculoplastics",
-      [
-       "• lid margin or canaliculus involved",
-       "~poor repair: lid notch, chronic tearing"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "hy",
-   "colour": "orange",
-   "drop_label": "blood",
-   "head": [
-    [
-     [
-      "h",
-      "Hyphema",
-      []
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Blow to the globe",
-      [
-       "• pain, photophobia",
-       "• acuity ↓"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "BLOOD in the anterior chamber",
-      [
-       "• full = black '8-ball'",
-       "• pressure normal or ↑"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "bad",
-      "Shield + refer ASAP",
-      [
-       "• restrict activity",
-       "• avoid blood thinners"
-      ]
-     ]
-    ],
-    [
-     [
-      "warn",
-      "Ophthalmology treats",
-      [
-       "steroid drops + pressure drops if ↑"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "ti",
-   "colour": "purple",
-   "drop_label": "cells",
-   "head": [
-    [
-     [
-      "h",
-      "Traumatic iritis",
-      []
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Red eye after a blow",
-      [
-       "• photophobia",
-       "• acuity ↓"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "CELLS in the anterior chamber",
-      [
-       "• ciliary flush",
-       "• sluggish or irregular pupil"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "warn",
-      "Refer",
-      [
-       "• steroid drops ± pressure drops",
-       "• cycloplegic if photophobic"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "cl",
-   "colour": "magenta",
-   "drop_label": "open globe",
-   "head": [
-    [
-     [
-      "h",
-      "Corneal laceration",
-      [
-       "with iris prolapse"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Usually painful",
-      [
-       "• vision normal or ↓"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "PEAKED pupil, Seidel +",
-      [
-       "• ± hyphema",
-       "• pressure may be normal (wound self-seals)"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "bad",
-      "Shield + refer NOW",
-      [
-       "surgery: corneal sutures or glue"
-      ]
-     ]
-    ]
-   ]
-  }
+  {"id": "fb", "colour": "slate", "drop_label": "foreign body",
+   "head": [[["h", "Metallic foreign body", []]]],
+   "pres": [[["t", "Metal on metal", ["• foreign-body feeling, tearing", "• acuity normal or ↓"]]]],
+   "inv": [[["w", "On the cornea ± rust ring", ["• epithelial defect, Seidel sign", "• iris or lens defects?", "• evert the lid: hidden body?"]]]],
+   "tx": [[["warn", "High speed? X-ray or CT", ["rule out an intraocular body"]]],
+          [["ok", "Remove + antibiotics", ["• tuberculin syringe, then polish with a burr", "• antibiotic drops × 7 days"]]],
+          [["bad", "Refer if", ["• intraocular body possible", "• hard to remove, or in the visual axis"]]]]},
+  {"id": "lid", "colour": "brown", "drop_label": "bite, punch",
+   "head": [[["h", "Lid laceration", []]]],
+   "pres": [[["t", "Dog bite, punch", ["• tearing (epiphora)", "• vision may be normal"]]]],
+   "inv": [[["w", "MEDIAL lower lid cut?", ["• suspect the canaliculus", "• examine the rest of the eye"]]]],
+   "tx": [[["warn", "Refer: oculoplastics", ["• lid margin or canaliculus involved", "~poor repair: lid notch, chronic tearing"]]]]},
+  {"id": "hy", "colour": "orange", "drop_label": "blood",
+   "head": [[["h", "Hyphema", []]]],
+   "pres": [[["t", "Blow to the globe", ["• pain, photophobia", "• acuity ↓ (variable)"]]]],
+   "inv": [[["w", "BLOOD in the anterior chamber", ["• full = black '8-ball'", "• pressure normal or ↑"]]]],
+   "tx": [[["bad", "Shield + refer ASAP", ["• restrict activity", "• avoid blood thinners"]]],
+          [["warn", "Ophthalmology treats", ["steroid drops + pressure drops if ↑"]]]]},
+  {"id": "ti", "colour": "purple", "drop_label": "cells",
+   "head": [[["h", "Traumatic iritis", []]]],
+   "pres": [[["t", "Red eye after a blow", ["• photophobia", "• acuity ↓"]]]],
+   "inv": [[["w", "CELLS in the anterior chamber", ["• ciliary flush", "• sluggish or irregular pupil", "• pressure normal or ↑"]]]],
+   "tx": [[["warn", "Refer", ["• steroid drops ± pressure drops", "• cycloplegic if photophobic"]]]]},
+  {"id": "cl", "colour": "magenta", "drop_label": "open globe",
+   "head": [[["h", "Corneal laceration", ["with iris prolapse"]]]],
+   "pres": [[["t", "Usually painful", ["• stab or poke", "• vision normal or ↓"]]]],
+   "inv": [[["w", "PEAKED pupil, Seidel +", ["• ± hyphema", "• pressure may be normal (wound self-seals)"]]]],
+   "tx": [[["bad", "Shield + refer NOW", ["surgery: corneal sutures or glue"]]]]}
  ]
 }

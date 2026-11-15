@@ -115,49 +115,49 @@
  "bands": [
   {
    "x": 40,
-   "y": 460,
+   "y": 514,
    "w": 216,
-   "h": 688,
+   "h": 1130,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 258,
-   "y": 460,
+   "y": 514,
    "w": 216,
-   "h": 688,
+   "h": 1130,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 476,
-   "y": 460,
+   "y": 514,
    "w": 216,
-   "h": 688,
+   "h": 1130,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 694,
-   "y": 460,
+   "y": 514,
    "w": 216,
-   "h": 688,
+   "h": 1130,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 912,
-   "y": 460,
+   "y": 514,
    "w": 216,
-   "h": 688,
+   "h": 1130,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 1158,
-   "y": 460,
+   "y": 514,
    "w": 216,
-   "h": 688,
+   "h": 1130,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   }
@@ -165,26 +165,26 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 256,
+   "y": 310,
    "h": 132,
    "text": "ACT FIRST"
   },
   {
    "x": 23,
-   "y": 622,
-   "h": 116,
+   "y": 712,
+   "h": 242,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 778,
-   "h": 170,
+   "y": 994,
+   "h": 150,
    "text": "CT"
   },
   {
    "x": 23,
-   "y": 988,
-   "h": 152,
+   "y": 1184,
+   "h": 452,
    "text": "TREATMENT"
   }
  ],
@@ -198,13 +198,15 @@
    "title": "Head injury: a TRAUMA patient first",
    "lines": [
     "A airway + C-spine precautions · B breathing · C circulation: large-bore IV, bloods for coagulopathy · D disability: neurological exam + Glasgow Coma Scale (GCS) · E expose other injuries",
-    "GCS grades it: SEVERE 3-8 · MODERATE 9-12 · MILD 13-14 · MINOR 15"
+    "GCS grades it: SEVERE 3-8 · MODERATE 9-12 · MILD 13-14 · MINOR 15",
+    "severe death by admission GCS: over 8 → 12% · 5-7 → 27% · under 5 → 78% · coma over 1 day 30-50% · intracranial pressure over 20 (normal under 15) → 50%",
+    "20 per 100,000 a year · peak 15-24 · young → car crashes · old → falls"
    ]
   },
   {
    "id": "g_sev",
    "x": 45,
-   "y": 156,
+   "y": 210,
    "w": 1078,
    "h": 60,
    "kind": "plain",
@@ -216,7 +218,7 @@
   {
    "id": "g_mild",
    "x": 1163,
-   "y": 156,
+   "y": 210,
    "w": 206,
    "h": 60,
    "kind": "plain",
@@ -228,7 +230,7 @@
   {
    "id": "p_sev",
    "x": 45,
-   "y": 256,
+   "y": 310,
    "w": 1078,
    "h": 132,
    "kind": "info",
@@ -242,7 +244,7 @@
   {
    "id": "p_mild",
    "x": 1163,
-   "y": 256,
+   "y": 310,
    "w": 206,
    "h": 132,
    "kind": "info",
@@ -256,22 +258,22 @@
   {
    "id": "edh_head_0_0",
    "x": 45,
-   "y": 468,
+   "y": 522,
    "w": 206,
-   "h": 114,
+   "h": 150,
    "kind": "edh_h",
    "title": "Epidural hematoma",
    "lines": [
     "skull ↔ dura",
-    "middle meningeal ARTERY"
+    "middle meningeal ARTERY 50% · vein 33% · diploic vein, sinus 17%"
    ]
   },
   {
    "id": "sdh_head_0_0",
    "x": 263,
-   "y": 468,
+   "y": 522,
    "w": 206,
-   "h": 114,
+   "h": 150,
    "kind": "sdh_h",
    "title": "Acute subdural hematoma",
    "lines": [
@@ -282,35 +284,35 @@
   {
    "id": "cont_head_0_0",
    "x": 481,
-   "y": 468,
+   "y": 522,
    "w": 206,
-   "h": 114,
+   "h": 150,
    "kind": "cont_h",
    "title": "Cerebral contusion",
    "lines": [
-    "COUP under the impact",
-    "CONTRECOUP opposite it"
+    "COUP under the impact: skull bends in, springs back",
+    "CONTRECOUP opposite it: acceleration"
    ]
   },
   {
    "id": "ich_head_0_0",
    "x": 699,
-   "y": 468,
+   "y": 522,
    "w": 206,
-   "h": 114,
+   "h": 150,
    "kind": "ich_h",
    "title": "Intracerebral hemorrhage",
    "lines": [
-    "deceleration or contact",
-    "frontal, temporal lobes"
+    "deceleration or contact · 1-3%",
+    "frontal, temporal lobes 80-90%"
    ]
   },
   {
    "id": "dai_head_0_0",
    "x": 917,
-   "y": 468,
+   "y": 522,
    "w": 206,
-   "h": 114,
+   "h": 150,
    "kind": "dai_h",
    "title": "Diffuse axonal injury · traumatic SAH",
    "lines": [
@@ -321,98 +323,113 @@
   {
    "id": "conc_head_0_0",
    "x": 1163,
-   "y": 468,
+   "y": 522,
    "w": 206,
-   "h": 114,
+   "h": 150,
    "kind": "conc_h",
    "title": "Concussion",
    "lines": [
     "rotational acceleration · NO impact needed",
-    "81-92% no LOC · helmets don't prevent it"
+    "81-92% no LOC · helmets don't prevent it",
+    "a chest blow can whiplash the brain"
    ]
   },
   {
    "id": "edh_clue_0_0",
    "x": 45,
-   "y": 622,
+   "y": 712,
    "w": 206,
-   "h": 116,
+   "h": 242,
    "kind": "edh_t",
    "title": "CONTACT injury + fracture",
    "lines": [
     "• LOC → LUCID interval → coma",
-    "• skull fracture in 75-90%"
+    "• skull fracture in 75-90%",
+    "• NOT head acceleration · 33% another brain lesion",
+    "case: 19 y ejected · lucid in the ambulance · 2 h later right pupil fixed 7 mm, left hemiplegia · BP 160/90, pulse 55, apneic → craniotomy, recovered"
    ]
   },
   {
    "id": "sdh_clue_0_0",
    "x": 263,
-   "y": 622,
+   "y": 712,
    "w": 206,
-   "h": 116,
+   "h": 242,
    "kind": "sdh_t",
    "title": "Acceleration-deceleration",
    "lines": [
     "• a fall, head strikes a broad surface",
-    "• comatose from the scene"
+    "• comatose from the scene",
+    "• 10-15% of severe injuries · within 3 days · 30% of fatal ones",
+    "case: 75 y slipped on ice · comatose · right pupil fixed · decerebrate"
    ]
   },
   {
    "id": "cont_clue_0_0",
    "x": 481,
-   "y": 622,
+   "y": 712,
    "w": 206,
-   "h": 116,
+   "h": 242,
    "kind": "cont_t",
    "title": "Depends on size and site",
    "lines": [
     "• e.g. confusion, personality change, loss of smell",
-    "• mass effect, ↑ pressure"
+    "• mass effect, ↑ pressure",
+    "• turns necrotic + patchily hemorrhagic",
+    "case: 43 y fell off a bike · confused, personality change, no smell · died of DVT at day 10"
    ]
   },
   {
    "id": "ich_clue_0_0",
    "x": 699,
-   "y": 622,
+   "y": 712,
    "w": 206,
-   "h": 116,
+   "h": 242,
    "kind": "ich_t",
    "title": "A confluent bleed in the brain",
    "lines": [
-    "• blood dissects the brain around it"
+    "• blood dissects the brain around it",
+    "• the brain around it is normal",
+    "• in 25% of closed head injuries"
    ]
   },
   {
    "id": "dai_clue_0_0",
    "x": 917,
-   "y": 622,
+   "y": 712,
    "w": 206,
-   "h": 116,
+   "h": 242,
    "kind": "dai_t",
    "title": "LOC at the scene → PERSISTENT coma",
    "lines": [
-    "• axonal injury is 50% of severe brain injury"
+    "• axonal injury is 50% of severe brain injury",
+    "• shaken baby syndrome",
+    "• co-exist with other injuries",
+    "case: 43 y high-speed crash · GCS 4 at scene · persistent coma"
    ]
   },
   {
    "id": "conc_clue_0_0",
    "x": 1163,
-   "y": 622,
+   "y": 712,
    "w": 206,
-   "h": 116,
+   "h": 242,
    "kind": "conc_t",
    "title": "No focal deficit",
    "lines": [
     "• headache, dizziness, nausea",
-    "• imbalance, 'seeing stars'"
+    "• imbalance, 'seeing stars'",
+    "• 85% of first ones recover in 1-4 weeks",
+    "• risk: young brain, FEMALE, a previous concussion",
+    "case: 17 y, soccer ball to the occiput · headache, neck pain · no LOC, GCS 15, no focal signs"
    ]
   },
   {
    "id": "edh_inv_0_0",
    "x": 45,
-   "y": 778,
+   "y": 994,
    "w": 206,
-   "h": 170,
+   "h": 150,
    "kind": "edh_w",
    "title": "LENS-shaped",
    "lines": [
@@ -422,9 +439,9 @@
   {
    "id": "sdh_inv_0_0",
    "x": 263,
-   "y": 778,
+   "y": 994,
    "w": 206,
-   "h": 170,
+   "h": 150,
    "kind": "sdh_w",
    "title": "CRESCENT-shaped",
    "lines": [
@@ -434,9 +451,9 @@
   {
    "id": "cont_inv_0_0",
    "x": 481,
-   "y": 778,
+   "y": 994,
    "w": 206,
-   "h": 170,
+   "h": 150,
    "kind": "cont_w",
    "title": "MIXED high + low density",
    "lines": [
@@ -446,9 +463,9 @@
   {
    "id": "ich_inv_0_0",
    "x": 699,
-   "y": 778,
+   "y": 994,
    "w": 206,
-   "h": 170,
+   "h": 150,
    "kind": "ich_w",
    "title": "HOMOGENEOUS, well-defined",
    "lines": [
@@ -457,34 +474,27 @@
   },
   {
    "id": "dai_inv_0_0",
-   "x": 917.0,
-   "y": 778,
-   "w": 98.0,
-   "h": 170,
+   "x": 917,
+   "y": 994,
+   "w": 206,
+   "h": 150,
    "kind": "dai_w",
    "title": "Axonal: petechiae",
    "lines": [
-    "grey-white junction, corpus callosum, pons · hard to see"
-   ]
-  },
-  {
-   "id": "dai_inv_0_1",
-   "x": 1025.0,
-   "y": 778,
-   "w": 98.0,
-   "h": 170,
-   "kind": "dai_w",
-   "title": "SAH",
-   "lines": [
-    "pial vessels rupture"
+    "• grey-white junction",
+    "• corpus callosum",
+    "• dorsolateral pons",
+    "• cervicomedullary junction",
+    "hard to see on CT",
+    "SAH: pial vessels rupture"
    ]
   },
   {
    "id": "conc_inv_0_0",
    "x": 1163,
-   "y": 778,
+   "y": 994,
    "w": 206,
-   "h": 170,
+   "h": 150,
    "kind": "conc_w",
    "title": "CLINICAL diagnosis",
    "lines": [
@@ -494,9 +504,9 @@
   {
    "id": "edh_tx_0_0",
    "x": 45,
-   "y": 988,
+   "y": 1184,
    "w": 206,
-   "h": 152,
+   "h": 233,
    "kind": "bad",
    "title": "CRANIOTOMY if ANY",
    "lines": [
@@ -507,61 +517,76 @@
    ]
   },
   {
+   "id": "edh_tx_1_0",
+   "x": 45,
+   "y": 1439,
+   "w": 206,
+   "h": 197,
+   "kind": "warn",
+   "title": "Mortality 20-25%",
+   "lines": [
+    "children 5-10% · over 40: 35-50%"
+   ]
+  },
+  {
    "id": "sdh_tx_0_0",
    "x": 263,
-   "y": 988,
+   "y": 1184,
    "w": 206,
-   "h": 152,
+   "h": 251,
    "kind": "bad",
    "title": "SURGERY within 4 HOURS",
    "lines": [
     "• within 4 h: 30% mortality",
     "• after 4 h: 90%",
-    "• over 65: 82% mortality"
+    "• post-op pressure under 20: 40%",
+    "• over 65: 82% mortality, 5% recover"
+   ]
+  },
+  {
+   "id": "sdh_tx_1_0",
+   "x": 263,
+   "y": 1457,
+   "w": 206,
+   "h": 179,
+   "kind": "warn",
+   "title": "Death from the BRAIN injury beneath",
+   "lines": [
+    "GCS 3 → 90% · 4 → 76% · 5 → 62% · 6-7 → 51%"
    ]
   },
   {
    "id": "cont_tx_0_0",
-   "x": 481.0,
-   "y": 988,
-   "w": 98.0,
-   "h": 152,
-   "kind": "ok",
-   "title": "Small or deep",
+   "x": 481,
+   "y": 1184,
+   "w": 206,
+   "h": 452,
+   "kind": "warn",
+   "title": "Size decides",
    "lines": [
-    "no surgery"
-   ]
-  },
-  {
-   "id": "cont_tx_0_1",
-   "x": 589.0,
-   "y": 988,
-   "w": 98.0,
-   "h": 152,
-   "kind": "bad",
-   "title": "Large + mass effect",
-   "lines": [
-    "SURGERY"
+    "• small or deep → no surgery",
+    "• large + mass effect → SURGERY"
    ]
   },
   {
    "id": "ich_tx_0_0",
    "x": 699,
-   "y": 988,
+   "y": 1184,
    "w": 206,
-   "h": 152,
+   "h": 452,
    "kind": "bad",
    "title": "SURGERY if large",
    "lines": [
-    "with shift + ↓ consciousness + focal deficits"
+    "with shift + ↓ consciousness + focal deficits",
+    "mortality 25-72%"
    ]
   },
   {
    "id": "dai_tx_0_0",
    "x": 917,
-   "y": 988,
+   "y": 1184,
    "w": 206,
-   "h": 152,
+   "h": 452,
    "kind": "warn",
    "title": "High morbidity and mortality",
    "lines": []
@@ -569,15 +594,32 @@
   {
    "id": "conc_tx_0_0",
    "x": 1163,
-   "y": 988,
+   "y": 1184,
    "w": 206,
-   "h": 152,
+   "h": 224,
    "kind": "ok",
    "title": "RECOGNISE and REMOVE",
    "lines": [
-    "1 · rest 24-48 h, not longer",
-    "2 · return to LEARN once symptom-free",
+    "when in doubt, remove from play, work, school",
+    "1 · mental + physical rest 24-48 h, not longer",
+    "2 · return to LEARN once symptom-free: part time, easiest classes, no phys ed",
     "3 · return to PLAY after full-time school + medical clearance"
+   ]
+  },
+  {
+   "id": "conc_tx_1_0",
+   "x": 1163,
+   "y": 1430,
+   "w": 206,
+   "h": 206,
+   "kind": "ok",
+   "title": "Graduated return to play (~1 week)",
+   "lines": [
+    "1 · light aerobic: walk, swim, bike",
+    "2 · sport drills, no head impact",
+    "3 · non-contact, then harder drills",
+    "4 · full contact after MEDICAL CLEARANCE",
+    "5 · normal game play"
    ]
   }
  ],
@@ -585,12 +627,12 @@
   {
    "from": "root",
    "to": "g_sev",
-   "path": "M707.0 106V131H584.0V156"
+   "path": "M707.0 160V185H584.0V210"
   },
   {
    "from": "root",
    "to": "g_mild",
-   "path": "M707.0 106V131H1266.0V156"
+   "path": "M707.0 160V185H1266.0V210"
   },
   {
    "from": "g_sev",
@@ -599,6 +641,18 @@
   {
    "from": "g_mild",
    "to": "p_mild"
+  },
+  {
+   "from": "edh_tx_0_0",
+   "to": "edh_tx_1_0"
+  },
+  {
+   "from": "sdh_tx_0_0",
+   "to": "sdh_tx_1_0"
+  },
+  {
+   "from": "conc_tx_0_0",
+   "to": "conc_tx_1_0"
   },
   {
    "from": "edh_head_0_0",
@@ -644,13 +698,7 @@
   },
   {
    "from": "cont_inv_0_0",
-   "to": "cont_tx_0_0",
-   "from_dx": -54.0
-  },
-  {
-   "from": "cont_inv_0_0",
-   "to": "cont_tx_0_1",
-   "from_dx": 54.0
+   "to": "cont_tx_0_0"
   },
   {
    "from": "p_sev",
@@ -680,23 +728,11 @@
   },
   {
    "from": "dai_clue_0_0",
-   "to": "dai_inv_0_0",
-   "from_dx": -54.0
-  },
-  {
-   "from": "dai_clue_0_0",
-   "to": "dai_inv_0_1",
-   "from_dx": 54.0
+   "to": "dai_inv_0_0"
   },
   {
    "from": "dai_inv_0_0",
-   "to": "dai_tx_0_0",
-   "to_dx": -54.0
-  },
-  {
-   "from": "dai_inv_0_1",
-   "to": "dai_tx_0_0",
-   "to_dx": 54.0
+   "to": "dai_tx_0_0"
   },
   {
    "from": "p_sev",
@@ -721,5 +757,46 @@
    "from_dx": 0
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1670,
+   "w": 432,
+   "title": "Herniation",
+   "items": [
+    "subfalcine · central: ↓ consciousness · transcalvarial",
+    "UNCAL: same-side third nerve palsy, dilated pupil + opposite weakness",
+    "TONSILLAR: medulla compressed → fatal cardiorespiratory failure",
+    "descending: nerves III, IV, VI · PCA, ACA stroke · Duret hemorrhage",
+    "Cushing's triad: hypertension, bradycardia, apnea"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 491,
+   "y": 1670,
+   "w": 432,
+   "title": "Skull fractures",
+   "items": [
+    "linear · depressed · open or closed: CONTACT injury",
+    "BASILAR: raccoon eyes · Battle sign · CSF from ear or nose · hemotympanum",
+    "basilar: may be missed on CT · risk of MENINGITIS"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 937,
+   "y": 1670,
+   "w": 432,
+   "title": "Concussion: what can follow",
+   "items": [
+    "second-impact syndrome: cerebral swelling",
+    "post-concussion syndrome: over 2 weeks adults, 4 weeks youth → permanent removal",
+    "post-traumatic epilepsy · depression, anxiety, suicide",
+    "CTE: repeated concussions · tau tangles · NEUROPATHOLOGICAL diagnosis",
+    "prevent: no checks to the head, no headers · return-to-play protocol"
+   ],
+   "cols": 1
+  }
+ ]
 }

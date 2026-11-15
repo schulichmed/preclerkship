@@ -79,33 +79,33 @@
  "bands": [
   {
    "x": 40,
-   "y": 270,
+   "y": 288,
    "w": 260,
-   "h": 668,
+   "h": 786,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 302,
-   "y": 270,
+   "y": 288,
    "w": 260,
-   "h": 668,
+   "h": 786,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 592,
-   "y": 270,
+   "y": 288,
    "w": 260,
-   "h": 668,
+   "h": 786,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 854,
-   "y": 270,
+   "y": 288,
    "w": 260,
-   "h": 668,
+   "h": 786,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -113,20 +113,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 396,
+   "y": 414,
    "h": 178,
    "text": "WHO"
   },
   {
    "x": 23,
-   "y": 614,
-   "h": 78,
+   "y": 632,
+   "h": 160,
    "text": "WHY"
   },
   {
    "x": 23,
-   "y": 732,
-   "h": 198,
+   "y": 832,
+   "h": 234,
    "text": "WHAT TO DO"
   }
  ],
@@ -140,13 +140,14 @@
    "title": "Which A1c target? Weigh fewer complications against HYPOGLYCEMIA",
    "lines": [
     "minimum for EVERY patient: free of symptomatic highs AND lows",
-    "decide WITH the patient: benefit vs lows, out-of-pocket cost, feasibility"
+    "decide WITH the patient: benefit vs lows, out-of-pocket cost, feasibility",
+    "A1c > 7%: microvascular AND cardiovascular risk ↑ · fasting and after-meal glucose both track risk"
    ]
   },
   {
    "id": "g_tight",
    "x": 45,
-   "y": 138,
+   "y": 156,
    "w": 512,
    "h": 60,
    "kind": "plain",
@@ -158,7 +159,7 @@
   {
    "id": "g_lib",
    "x": 597,
-   "y": 138,
+   "y": 156,
    "w": 512,
    "h": 60,
    "kind": "plain",
@@ -170,7 +171,7 @@
   {
    "id": "t65_head_0_0",
    "x": 45,
-   "y": 278,
+   "y": 296,
    "w": 250,
    "h": 78,
    "kind": "t65_h",
@@ -182,7 +183,7 @@
   {
    "id": "t70_head_0_0",
    "x": 307,
-   "y": 278,
+   "y": 296,
    "w": 250,
    "h": 78,
    "kind": "t70_h",
@@ -194,7 +195,7 @@
   {
    "id": "t85_head_0_0",
    "x": 597,
-   "y": 278,
+   "y": 296,
    "w": 250,
    "h": 78,
    "kind": "t85_h",
@@ -206,7 +207,7 @@
   {
    "id": "eol_head_0_0",
    "x": 859,
-   "y": 278,
+   "y": 296,
    "w": 250,
    "h": 78,
    "kind": "eol_h",
@@ -219,7 +220,7 @@
   {
    "id": "t65_clue_0_0",
    "x": 45,
-   "y": 396,
+   "y": 414,
    "w": 250,
    "h": 178,
    "kind": "t65_t",
@@ -233,7 +234,7 @@
   {
    "id": "t70_clue_0_0",
    "x": 307,
-   "y": 396,
+   "y": 414,
    "w": 250,
    "h": 178,
    "kind": "t70_t",
@@ -246,7 +247,7 @@
   {
    "id": "t85_clue_0_0",
    "x": 597,
-   "y": 396,
+   "y": 414,
    "w": 250,
    "h": 78,
    "kind": "t85_t",
@@ -259,7 +260,7 @@
   {
    "id": "t85_clue_1_0",
    "x": 597,
-   "y": 496,
+   "y": 514,
    "w": 250,
    "h": 78,
    "kind": "t85_t",
@@ -272,7 +273,7 @@
   {
    "id": "eol_clue_0_0",
    "x": 859,
-   "y": 396,
+   "y": 414,
    "w": 250,
    "h": 178,
    "kind": "eol_t",
@@ -284,9 +285,9 @@
   {
    "id": "t65_inv_0_0",
    "x": 45,
-   "y": 614,
+   "y": 632,
    "w": 250,
-   "h": 78,
+   "h": 160,
    "kind": "t65_w",
    "title": "Further ↓ chronic kidney disease (CKD) and retinopathy",
    "lines": []
@@ -294,9 +295,9 @@
   {
    "id": "t70_inv_0_0",
    "x": 307,
-   "y": 614,
+   "y": 632,
    "w": 250,
-   "h": 78,
+   "h": 60,
    "kind": "t70_w",
    "title": "↓ microvascular complications",
    "lines": [
@@ -304,11 +305,23 @@
    ]
   },
   {
-   "id": "t85_inv_0_0",
-   "x": 597,
-   "y": 614,
+   "id": "t70_inv_1_0",
+   "x": 307,
+   "y": 714,
    "w": 250,
    "h": 78,
+   "kind": "warn",
+   "title": "A1c 6.0%: harm in some",
+   "lines": [
+    "older, frail · long duration · advanced coronary disease · past severe lows"
+   ]
+  },
+  {
+   "id": "t85_inv_0_0",
+   "x": 597,
+   "y": 632,
+   "w": 250,
+   "h": 160,
    "kind": "bad",
    "title": "A SEVERE low can be fatal",
    "lines": [
@@ -318,9 +331,9 @@
   {
    "id": "eol_inv_0_0",
    "x": 859,
-   "y": 614,
+   "y": 632,
    "w": 250,
-   "h": 78,
+   "h": 160,
    "kind": "eol_w",
    "title": "No time to gain",
    "lines": [
@@ -330,22 +343,22 @@
   {
    "id": "t65_tx_0_0",
    "x": 45,
-   "y": 732,
+   "y": 832,
    "w": 250,
-   "h": 198,
+   "h": 234,
    "kind": "ok",
    "title": "Tighten while lows stay unlikely",
    "lines": [
-    "~e.g. 35, T2DM for 2 years, metformin alone",
+    "case: 35 · T2DM 2 years · metformin alone · no complications",
     "drug choice: see the GLUCOSE-LOWERING DRUGS tree"
    ]
   },
   {
    "id": "t70_tx_0_0",
    "x": 307,
-   "y": 732,
+   "y": 832,
    "w": 250,
-   "h": 107,
+   "h": 98,
    "kind": "ok",
    "title": "Self-monitored glucose (SMBG) targets",
    "lines": [
@@ -356,34 +369,35 @@
   {
    "id": "t70_tx_1_0",
    "x": 307,
-   "y": 861,
+   "y": 952,
    "w": 250,
-   "h": 69,
+   "h": 114,
    "kind": "warn",
    "title": "Over half never reach it",
    "lines": [
-    "ANY fall still counts (9.5 → 8.5%)"
+    "ANY fall still counts (9.5 → 8.5%)",
+    "case: 52 · type 1 for 30 years, insulin · coronary disease, neuropathy · no severe lows"
    ]
   },
   {
    "id": "t85_tx_0_0",
    "x": 597,
-   "y": 732,
+   "y": 832,
    "w": 250,
-   "h": 116,
+   "h": 143,
    "kind": "ok",
    "title": "Liberalize + check glucose (SMBG)",
    "lines": [
     "SMBG prevents, confirms and treats lows",
-    "~e.g. 85, severe dementia, on gliclazide"
+    "case: 85 · severe dementia, dependent · on gliclazide"
    ]
   },
   {
    "id": "t85_tx_1_0",
    "x": 597,
-   "y": 870,
+   "y": 997,
    "w": 250,
-   "h": 60,
+   "h": 69,
    "kind": "bad",
    "title": "But NOT above 8.5%",
    "lines": [
@@ -393,9 +407,9 @@
   {
    "id": "eol_tx_0_0",
    "x": 859,
-   "y": 732,
+   "y": 832,
    "w": 250,
-   "h": 198,
+   "h": 234,
    "kind": "ok",
    "title": "Avoid symptomatic highs and ANY lows",
    "lines": [
@@ -407,17 +421,21 @@
   {
    "from": "root",
    "to": "g_tight",
-   "path": "M577.0 88V113H301.0V138"
+   "path": "M577.0 106V131H301.0V156"
   },
   {
    "from": "root",
    "to": "g_lib",
-   "path": "M577.0 88V113H853.0V138"
+   "path": "M577.0 106V131H853.0V156"
   },
   {
    "from": "t85_clue_0_0",
    "to": "t85_clue_1_0",
    "dashed": true
+  },
+  {
+   "from": "t70_inv_0_0",
+   "to": "t70_inv_1_0"
   },
   {
    "from": "t70_tx_0_0",
@@ -446,7 +464,7 @@
    "label": "T2DM, LOW risk",
    "label_at": [
     170.0,
-    238
+    256
    ]
   },
   {
@@ -458,7 +476,7 @@
    "to": "t70_inv_0_0"
   },
   {
-   "from": "t70_inv_0_0",
+   "from": "t70_inv_1_0",
    "to": "t70_tx_0_0"
   },
   {
@@ -468,7 +486,7 @@
    "label": "MOST",
    "label_at": [
     432.0,
-    238
+    256
    ]
   },
   {
@@ -490,7 +508,7 @@
    "label": "lows LIKELY or DANGEROUS",
    "label_at": [
     722.0,
-    238
+    256
    ]
   },
   {
@@ -512,19 +530,33 @@
    "label": "life SHORT",
    "label_at": [
     984.0,
-    238
+    256
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 964,
-   "w": 1064,
+   "y": 1100,
+   "w": 525,
    "title": "The A1c: the best-validated marker, but it LAGS",
    "items": [
     "mean glucose over the last 8–12 weeks, ~50% from the last 30 days: changes lag behind glucose, so SMBG guides medication changes",
-    "misleading with altered red-cell turnover or hemoglobin (iron or B12 deficiency, chronic renal failure, hemoglobinopathies, splenectomy) → follow glucose readings instead"
+    "misleading with altered red-cell turnover or hemoglobin (iron or B12 deficiency, chronic renal failure, hemoglobinopathies, splenectomy) → follow glucose readings instead",
+    "SMBG frequency: individualize (type, drugs, control, literacy, lows, awareness, job, illness)"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 584,
+   "y": 1100,
+   "w": 525,
+   "title": "Lows: glucose ≤ 4.0 on insulin or a secretagogue",
+   "items": [
+    "no symptoms → think UNAWARENESS · mild: autonomic, self-treated",
+    "moderate: autonomic + neuroglycopenic, self-treated · SEVERE: needs someone's help",
+    "sweating, dizziness, fast heart, hunger · confusion, seizure, coma",
+    "highs (double digits): polyuria, nocturia, thirst, weight loss, fatigue → DKA, HHS"
    ],
    "cols": 1
   }

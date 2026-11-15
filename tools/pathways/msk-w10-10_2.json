@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 270,
+   "y": 360,
    "w": 246,
-   "h": 718,
+   "h": 790,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 288,
-   "y": 270,
+   "y": 360,
    "w": 246,
-   "h": 718,
+   "h": 790,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 564,
-   "y": 270,
+   "y": 360,
    "w": 246,
-   "h": 718,
+   "h": 790,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 840,
-   "y": 270,
+   "y": 360,
    "w": 246,
-   "h": 718,
+   "h": 790,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 1088,
-   "y": 270,
+   "y": 360,
    "w": 246,
-   "h": 718,
+   "h": 790,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   }
@@ -139,20 +139,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 396,
+   "y": 486,
    "h": 204,
    "text": "CHECK"
   },
   {
    "x": 23,
-   "y": 640,
-   "h": 168,
+   "y": 730,
+   "h": 222,
    "text": "DO"
   },
   {
    "x": 23,
-   "y": 848,
-   "h": 132,
+   "y": 992,
+   "h": 150,
    "text": "AVOID"
   }
  ],
@@ -165,14 +165,18 @@
    "kind": "dark",
    "title": "Prescribe physical activity like a drug: is it SAFE, then what DOSE?",
    "lines": [
-    "ask: current activity · intentions · past activity + preferences · is it safe (symptoms, history)?",
-    "biggest gain: from NONE to SOME, so target sedentary patients"
+    "3 A's: ASK (activity, aware of benefits?) · ADVISE (benefits) · ACT (signpost to help)",
+    "ask: current activity · intentions · past activity + preferences, barriers, goals · is it safe (symptoms, history)?",
+    "biggest gain: from NONE to SOME, so target sedentary patients · some is good, more is better",
+    "LOW FITNESS: independent risk of death, as big as smoking, hypertension, cholesterol · hip fractures ↓ 55% (fewer falls) · bone density + 1-3% with high impact",
+    "only 25% of physicians counsel · 92% of patients would follow · a prescription raises activity 10%",
+    "case: 68 F, sedentary, fears falling, new untreated hypertension 140/85 · father MI at 70, mother hip fracture at 73"
    ]
   },
   {
    "id": "g_safe",
    "x": 45,
-   "y": 138,
+   "y": 228,
    "w": 484,
    "h": 60,
    "kind": "plain",
@@ -184,7 +188,7 @@
   {
    "id": "g_dose",
    "x": 569,
-   "y": 138,
+   "y": 228,
    "w": 236,
    "h": 60,
    "kind": "plain",
@@ -196,7 +200,7 @@
   {
    "id": "g_tail",
    "x": 845,
-   "y": 138,
+   "y": 228,
    "w": 484,
    "h": 60,
    "kind": "plain",
@@ -208,7 +212,7 @@
   {
    "id": "ci_head_0_0",
    "x": 45,
-   "y": 278,
+   "y": 368,
    "w": 236,
    "h": 78,
    "kind": "ci_h",
@@ -220,7 +224,7 @@
   {
    "id": "risk_head_0_0",
    "x": 293,
-   "y": 278,
+   "y": 368,
    "w": 236,
    "h": 78,
    "kind": "risk_h",
@@ -232,7 +236,7 @@
   {
    "id": "fitt_head_0_0",
    "x": 569,
-   "y": 278,
+   "y": 368,
    "w": 236,
    "h": 78,
    "kind": "fitt_h",
@@ -244,7 +248,7 @@
   {
    "id": "htn_head_0_0",
    "x": 845,
-   "y": 278,
+   "y": 368,
    "w": 236,
    "h": 78,
    "kind": "htn_h",
@@ -254,7 +258,7 @@
   {
    "id": "med_head_0_0",
    "x": 1093,
-   "y": 278,
+   "y": 368,
    "w": 236,
    "h": 78,
    "kind": "med_h",
@@ -264,7 +268,7 @@
   {
    "id": "ci_check_0_0",
    "x": 45,
-   "y": 396,
+   "y": 486,
    "w": 236,
    "h": 204,
    "kind": "ci_t",
@@ -283,7 +287,7 @@
   {
    "id": "risk_check_0_0",
    "x": 293,
-   "y": 396,
+   "y": 486,
    "w": 236,
    "h": 204,
    "kind": "risk_t",
@@ -292,13 +296,14 @@
     "• chest, neck, jaw or arm pain",
     "• breathless at rest or mild exertion",
     "• dizziness, syncope, palpitations",
-    "• ankle edema, claudication, murmur"
+    "• ankle edema, claudication, murmur",
+    "• orthopnea, nocturnal dyspnea · unusual fatigue"
    ]
   },
   {
    "id": "fitt_check_0_0",
    "x": 569,
-   "y": 396,
+   "y": 486,
    "w": 236,
    "h": 204,
    "kind": "fitt_t",
@@ -306,13 +311,14 @@
    "lines": [
     "• can SING = light",
     "• can TALK, not sing = moderate",
-    "• no conversation = vigorous"
+    "• no conversation = vigorous",
+    "moderate: ↑ breathing + heart rate, warm, may sweat · vigorous: sport, running, aerobics"
    ]
   },
   {
    "id": "htn_check_0_0",
    "x": 845,
-   "y": 396,
+   "y": 486,
    "w": 236,
    "h": 204,
    "kind": "htn_t",
@@ -324,7 +330,7 @@
   {
    "id": "med_check_0_0",
    "x": 1093,
-   "y": 396,
+   "y": 486,
    "w": 236,
    "h": 204,
    "kind": "med_t",
@@ -337,9 +343,9 @@
   {
    "id": "ci_do_0_0",
    "x": 45,
-   "y": 640,
+   "y": 730,
    "w": 236,
-   "h": 168,
+   "h": 222,
    "kind": "warn",
    "title": "Stabilise, then review",
    "lines": [
@@ -349,9 +355,9 @@
   {
    "id": "risk_do_0_0",
    "x": 293,
-   "y": 640,
+   "y": 730,
    "w": 236,
-   "h": 168,
+   "h": 222,
    "kind": "risk_w",
    "title": "Start by risk",
    "lines": [
@@ -364,9 +370,9 @@
   {
    "id": "fitt_do_0_0",
    "x": 569,
-   "y": 640,
+   "y": 730,
    "w": 236,
-   "h": 168,
+   "h": 222,
    "kind": "ok",
    "title": "Typical prescription",
    "lines": [
@@ -374,15 +380,16 @@
     "• moderate intensity",
     "• 30 minutes",
     "• aerobic: walk, cycle, dance, swim, jog",
-    "• + strength 2 days a week (10-15 reps)"
+    "• + strength 2 days a week (10-15 reps): stand from sitting, stairs, heavy gardening, bands",
+    "• build strength, sit less, improve balance"
    ]
   },
   {
    "id": "htn_do_0_0",
    "x": 845,
-   "y": 640,
+   "y": 730,
    "w": 236,
-   "h": 168,
+   "h": 222,
    "kind": "ok",
    "title": "Do",
    "lines": [
@@ -395,9 +402,9 @@
   {
    "id": "med_do_0_0",
    "x": 1093,
-   "y": 640,
+   "y": 730,
    "w": 236,
-   "h": 168,
+   "h": 222,
    "kind": "ok",
    "title": "Recommended",
    "lines": [
@@ -408,9 +415,9 @@
   {
    "id": "ci_avoid_0_0",
    "x": 45,
-   "y": 848,
+   "y": 992,
    "w": 236,
-   "h": 132,
+   "h": 150,
    "kind": "bad",
    "title": "Exercise until controlled",
    "lines": []
@@ -418,9 +425,9 @@
   {
    "id": "risk_avoid_0_0",
    "x": 293,
-   "y": 848,
+   "y": 992,
    "w": 236,
-   "h": 132,
+   "h": 150,
    "kind": "bad",
    "title": "Symptoms DURING exercise",
    "lines": [
@@ -430,9 +437,9 @@
   {
    "id": "fitt_avoid_0_0",
    "x": 569,
-   "y": 848,
+   "y": 992,
    "w": 236,
-   "h": 132,
+   "h": 150,
    "kind": "warn",
    "title": "Adjust if",
    "lines": [
@@ -444,13 +451,13 @@
   {
    "id": "htn_avoid_0_0",
    "x": 845,
-   "y": 848,
+   "y": 992,
    "w": 236,
-   "h": 132,
+   "h": 150,
    "kind": "bad",
    "title": "Don't",
    "lines": [
-    "• very strenuous resistance training",
+    "• very strenuous resistance training (left ventricle > 300 mmHg)",
     "• vigorous exercise with left ventricular hypertrophy",
     "• lying-down (postural hypotension)",
     "• isometric or overhead exercises"
@@ -459,9 +466,9 @@
   {
    "id": "med_avoid_0_0",
    "x": 1093,
-   "y": 848,
+   "y": 992,
    "w": 236,
-   "h": 132,
+   "h": 150,
    "kind": "bad",
    "title": "Beta-blockers",
    "lines": [
@@ -474,17 +481,17 @@
   {
    "from": "root",
    "to": "g_safe",
-   "path": "M687.0 88V113H287.0V138"
+   "path": "M687.0 178V203H287.0V228"
   },
   {
    "from": "root",
    "to": "g_dose",
-   "path": "M687.0 88V113H687.0V138"
+   "path": "M687.0 178V203H687.0V228"
   },
   {
    "from": "root",
    "to": "g_tail",
-   "path": "M687.0 88V113H1087.0V138"
+   "path": "M687.0 178V203H1087.0V228"
   },
   {
    "from": "ci_head_0_0",
@@ -505,7 +512,7 @@
    "label": "unstable",
    "label_at": [
     163.0,
-    238
+    328
    ]
   },
   {
@@ -527,7 +534,7 @@
    "label": "stable",
    "label_at": [
     411.0,
-    238
+    328
    ]
   },
   {

@@ -117,7 +117,7 @@
    "x": 40,
    "y": 326,
    "w": 220,
-   "h": 1306,
+   "h": 1636,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -125,7 +125,7 @@
    "x": 262,
    "y": 326,
    "w": 220,
-   "h": 1306,
+   "h": 1636,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -133,7 +133,7 @@
    "x": 512,
    "y": 326,
    "w": 220,
-   "h": 1306,
+   "h": 1636,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -141,7 +141,7 @@
    "x": 762,
    "y": 326,
    "w": 220,
-   "h": 1306,
+   "h": 1636,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -149,7 +149,7 @@
    "x": 984,
    "y": 326,
    "w": 220,
-   "h": 1306,
+   "h": 1636,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
@@ -157,7 +157,7 @@
    "x": 1234,
    "y": 326,
    "w": 220,
-   "h": 1306,
+   "h": 1636,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   }
@@ -165,20 +165,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 490,
-   "h": 252,
+   "y": 580,
+   "h": 342,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 782,
-   "h": 290,
+   "y": 962,
+   "h": 350,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 1112,
-   "h": 512,
+   "y": 1352,
+   "h": 602,
    "text": "TREATMENT"
   }
  ],
@@ -192,7 +192,7 @@
    "title": "STI: sort by HOW IT PRESENTS, and that picks the test",
    "lines": [
     "most are ASYMPTOMATIC: screening finds them, not symptoms",
-    "REPORTABLE: chlamydia · gonorrhea · syphilis ·HIV ·hepatitis B + C → trace + treat contacts",
+    "REPORTABLE: chlamydia · gonorrhea · syphilis · HIV · hepatitis B + C → trace + treat contacts",
     "trichomonas + yeast: VAGINAL DISCHARGE chart · molluscum: VULVAR LESIONS chart"
    ]
   },
@@ -252,7 +252,7 @@
    "x": 45,
    "y": 334,
    "w": 210,
-   "h": 116,
+   "h": 206,
    "kind": "ct_h",
    "title": "Chlamydia",
    "lines": [
@@ -265,12 +265,13 @@
    "x": 267,
    "y": 334,
    "w": 210,
-   "h": 116,
+   "h": 206,
    "kind": "ng_h",
    "title": "Gonorrhea",
    "lines": [
     "gram-negative DIPLOCOCCUS",
-    "incubation 3–7 days"
+    "incubation 3–7 days",
+    "periurethral glands, endocervical crypts · dies outside the body"
    ]
   },
   {
@@ -278,12 +279,14 @@
    "x": 517,
    "y": 334,
    "w": 210,
-   "h": 116,
+   "h": 206,
    "kind": "pid_h",
    "title": "Pelvic inflammatory disease",
    "lines": [
     "POLYMICROBIAL",
-    "< 50% culture chlamydia or gonorrhea"
+    "< 50% culture chlamydia or gonorrhea",
+    "10–15% of women in a lifetime",
+    "also anaerobes, G. vaginalis, H. influenzae, enteric gram-negatives, GBS: BROAD cover"
    ]
   },
   {
@@ -291,7 +294,7 @@
    "x": 767,
    "y": 334,
    "w": 210,
-   "h": 116,
+   "h": 206,
    "kind": "hsv_h",
    "title": "Genital herpes",
    "lines": [
@@ -304,7 +307,7 @@
    "x": 989,
    "y": 334,
    "w": 210,
-   "h": 116,
+   "h": 206,
    "kind": "tp_h",
    "title": "Syphilis",
    "lines": [
@@ -317,7 +320,7 @@
    "x": 1239,
    "y": 334,
    "w": 210,
-   "h": 116,
+   "h": 206,
    "kind": "ot_h",
    "title": "Warts + bloodborne",
    "lines": [
@@ -327,9 +330,9 @@
   {
    "id": "ct_pres_0_0",
    "x": 45,
-   "y": 490,
+   "y": 580,
    "w": 210,
-   "h": 78,
+   "h": 123,
    "kind": "ct_t",
    "title": "MOSTLY ASYMPTOMATIC",
    "lines": []
@@ -337,9 +340,9 @@
   {
    "id": "ct_pres_1_0",
    "x": 45,
-   "y": 590,
+   "y": 725,
    "w": 210,
-   "h": 152,
+   "h": 197,
    "kind": "ct_w",
    "title": "Mucopurulent CERVICITIS",
    "lines": [
@@ -351,9 +354,9 @@
   {
    "id": "ng_pres_0_0",
    "x": 267,
-   "y": 490,
+   "y": 580,
    "w": 210,
-   "h": 79,
+   "h": 124,
    "kind": "ng_t",
    "title": "Mild or ABSENT in 50%",
    "lines": []
@@ -361,9 +364,9 @@
   {
    "id": "ng_pres_1_0",
    "x": 267,
-   "y": 591,
+   "y": 726,
    "w": 210,
-   "h": 151,
+   "h": 196,
    "kind": "ng_w",
    "title": "PURULENT discharge",
    "lines": [
@@ -376,9 +379,9 @@
   {
    "id": "pid_pres_0_0",
    "x": 517,
-   "y": 490,
+   "y": 580,
    "w": 210,
-   "h": 114,
+   "h": 123,
    "kind": "pid_t",
    "title": "Pelvic pain + fever",
    "lines": [
@@ -390,35 +393,36 @@
   {
    "id": "pid_pres_1_0",
    "x": 517,
-   "y": 626,
+   "y": 725,
    "w": 210,
-   "h": 116,
+   "h": 197,
    "kind": "pid_w",
    "title": "CERVICAL MOTION TENDERNESS",
    "lines": [
     "• chandelier sign",
-    "• pelvic mass"
+    "• pelvic mass",
+    "case: 17 y, fever, chills, nausea, dyspareunia, foul discharge · WBC 22 · β-hCG negative · chandelier sign"
    ]
   },
   {
    "id": "hsv_pres_0_0",
    "x": 767,
-   "y": 490,
+   "y": 580,
    "w": 210,
-   "h": 106,
+   "h": 160,
    "kind": "hsv_t",
    "title": "PAINFUL blisters + ulcers",
    "lines": [
-    "• 24–72 h after contact",
+    "• incubation 3–7 days · blisters in 24–72 h",
     "• heal in 2–6 weeks"
    ]
   },
   {
    "id": "hsv_pres_1_0",
    "x": 767,
-   "y": 618,
+   "y": 762,
    "w": 210,
-   "h": 124,
+   "h": 160,
    "kind": "hsv_w",
    "title": "URINARY RETENTION",
    "lines": [
@@ -429,7 +433,7 @@
   {
    "id": "tp_pres_0_0",
    "x": 989,
-   "y": 490,
+   "y": 580,
    "w": 210,
    "h": 96,
    "kind": "tp_t",
@@ -443,23 +447,25 @@
   {
    "id": "tp_pres_1_0",
    "x": 989,
-   "y": 608,
+   "y": 698,
    "w": 210,
-   "h": 134,
+   "h": 224,
    "kind": "tp_w",
    "title": "2° RASH ON PALMS + SOLES",
    "lines": [
     "• condyloma lata (flat warts)",
     "• nodes",
-    "• then latent → 3°: neuro, aortitis, gummas"
+    "• weeks to months, lasts 4–6 wk · fever, headache, malaise",
+    "• LATENT: seropositive, no symptoms, 20+ years",
+    "• 3° (1–30 yr): neurosyphilis, TABES dorsalis, aortitis, gummas (skin, bone)"
    ]
   },
   {
    "id": "ot_pres_0_0",
    "x": 1239,
-   "y": 490,
+   "y": 580,
    "w": 210,
-   "h": 124,
+   "h": 169,
    "kind": "ot_t",
    "title": "HPV WARTS",
    "lines": [
@@ -470,9 +476,9 @@
   {
    "id": "ot_pres_1_0",
    "x": 1239,
-   "y": 636,
+   "y": 771,
    "w": 210,
-   "h": 106,
+   "h": 151,
    "kind": "ot_w",
    "title": "Hep B · HIV",
    "lines": [
@@ -482,9 +488,9 @@
   {
    "id": "ct_inv_0_0",
    "x": 45,
-   "y": 782,
+   "y": 962,
    "w": 210,
-   "h": 80,
+   "h": 110,
    "kind": "ct_t",
    "title": "1 · Swab or first-catch urine",
    "lines": [
@@ -494,9 +500,9 @@
   {
    "id": "ct_inv_1_0",
    "x": 45,
-   "y": 884,
+   "y": 1094,
    "w": 210,
-   "h": 188,
+   "h": 218,
    "kind": "ct_w",
    "title": "2 · TEST OF CURE: NOT routine",
    "lines": [
@@ -508,9 +514,9 @@
   {
    "id": "ng_inv_0_0",
    "x": 267,
-   "y": 782,
+   "y": 962,
    "w": 210,
-   "h": 108,
+   "h": 138,
    "kind": "ng_t",
    "title": "1 · Swab or first-catch urine",
    "lines": [
@@ -520,9 +526,9 @@
   {
    "id": "ng_inv_1_0",
    "x": 267,
-   "y": 912,
+   "y": 1122,
    "w": 210,
-   "h": 160,
+   "h": 190,
    "kind": "bad",
    "title": "2 · Disseminated? 0.5–3%",
    "lines": [
@@ -535,11 +541,11 @@
   {
    "id": "pid_inv_0_0",
    "x": 517,
-   "y": 782,
+   "y": 962,
    "w": 210,
-   "h": 76,
+   "h": 91,
    "kind": "pid_w",
-   "title": "1 · β-hCG · CBC · cultures",
+   "title": "1 · β-hCG · CBC · electrolytes · cultures",
    "lines": [
     "vaginal, urine, blood"
    ]
@@ -547,21 +553,22 @@
   {
    "id": "pid_inv_1_0",
    "x": 517,
-   "y": 880,
+   "y": 1075,
    "w": 210,
-   "h": 76,
+   "h": 125,
    "kind": "pid_w",
    "title": "2 · Ultrasound / MRI",
    "lines": [
-    "tubo-ovarian abscess?"
+    "tubo-ovarian abscess?",
+    "severe: abscess, Fitz-Hugh-Curtis (perihepatic adhesions)"
    ]
   },
   {
    "id": "pid_inv_2_0",
    "x": 517,
-   "y": 978,
+   "y": 1222,
    "w": 210,
-   "h": 94,
+   "h": 89,
    "kind": "pid_t",
    "title": "3 · LAPAROSCOPY",
    "lines": [
@@ -571,9 +578,9 @@
   {
    "id": "hsv_inv_0_0",
    "x": 767,
-   "y": 782,
+   "y": 962,
    "w": 210,
-   "h": 134,
+   "h": 164,
    "kind": "hsv_t",
    "title": "1 · UNROOF the lesion",
    "lines": [
@@ -583,9 +590,9 @@
   {
    "id": "hsv_inv_1_0",
    "x": 767,
-   "y": 938,
+   "y": 1148,
    "w": 210,
-   "h": 134,
+   "h": 164,
    "kind": "hsv_w",
    "title": "Ulcer-base viral culture",
    "lines": [
@@ -595,9 +602,9 @@
   {
    "id": "tp_inv_0_0",
    "x": 989,
-   "y": 782,
+   "y": 962,
    "w": 210,
-   "h": 88,
+   "h": 108,
    "kind": "tp_t",
    "title": "1 · Scrape the ulcer",
    "lines": [
@@ -607,9 +614,9 @@
   {
    "id": "tp_inv_1_0",
    "x": 989,
-   "y": 892,
+   "y": 1092,
    "w": 210,
-   "h": 70,
+   "h": 90,
    "kind": "tp_w",
    "title": "2 · SCREEN: VDRL",
    "lines": []
@@ -617,9 +624,9 @@
   {
    "id": "tp_inv_2_0",
    "x": 989,
-   "y": 984,
+   "y": 1204,
    "w": 210,
-   "h": 88,
+   "h": 108,
    "kind": "tp_w",
    "title": "3 · CONFIRM: FTA",
    "lines": [
@@ -629,9 +636,9 @@
   {
    "id": "ot_inv_0_0",
    "x": 1239,
-   "y": 782,
+   "y": 962,
    "w": 210,
-   "h": 70,
+   "h": 60,
    "kind": "ot_t",
    "title": "Warts: CLINICAL",
    "lines": [
@@ -641,35 +648,38 @@
   {
    "id": "ot_inv_1_0",
    "x": 1239,
-   "y": 874,
+   "y": 1044,
    "w": 210,
-   "h": 106,
+   "h": 168,
    "kind": "ot_w",
    "title": "Hepatitis B",
    "lines": [
     "• HBsAg = infected",
     "• IgM anti-HBc = ACUTE",
-    "• anti-HBs only = vaccinated"
+    "• anti-HBs only = vaccinated",
+    "• HBsAg + anti-HBc, IgM negative = CHRONIC",
+    "• total anti-HBc alone: uninterpretable"
    ]
   },
   {
    "id": "ot_inv_2_0",
    "x": 1239,
-   "y": 1002,
+   "y": 1234,
    "w": 210,
-   "h": 70,
+   "h": 78,
    "kind": "ot_w",
    "title": "HIV",
    "lines": [
-    "antigen/antibody combo"
+    "antigen/antibody combo",
+    "untreated: CD4 ↓ → AIDS"
    ]
   },
   {
    "id": "ct_tx_0_0",
    "x": 45,
-   "y": 1112,
+   "y": 1352,
    "w": 210,
-   "h": 193,
+   "h": 211,
    "kind": "ok",
    "title": "Azithromycin 1 g by mouth ONCE",
    "lines": [
@@ -680,9 +690,9 @@
   {
    "id": "ct_tx_1_0",
    "x": 45,
-   "y": 1327,
+   "y": 1585,
    "w": 210,
-   "h": 139,
+   "h": 157,
    "kind": "warn",
    "title": "REPORTABLE: treat contacts",
    "lines": [
@@ -692,22 +702,23 @@
   {
    "id": "ct_tx_2_0",
    "x": 45,
-   "y": 1488,
+   "y": 1764,
    "w": 210,
-   "h": 137,
+   "h": 191,
    "kind": "bad",
    "title": "Untreated: 30% → PID",
    "lines": [
     "• tubal INFERTILITY",
-    "• ECTOPIC pregnancy"
+    "• ECTOPIC pregnancy",
+    "• Fitz-Hugh-Curtis: perihepatic adhesions"
    ]
   },
   {
    "id": "ng_tx_0_0",
    "x": 267,
-   "y": 1112,
+   "y": 1352,
    "w": 210,
-   "h": 194,
+   "h": 224,
    "kind": "ok",
    "title": "Ceftriaxone 250 mg IM, or cefixime 400 mg by mouth",
    "lines": [
@@ -718,9 +729,9 @@
   {
    "id": "ng_tx_1_0",
    "x": 267,
-   "y": 1328,
+   "y": 1598,
    "w": 210,
-   "h": 138,
+   "h": 168,
    "kind": "warn",
    "title": "REPORTABLE: treat contacts",
    "lines": [
@@ -730,9 +741,9 @@
   {
    "id": "ng_tx_2_0",
    "x": 267,
-   "y": 1488,
+   "y": 1788,
    "w": 210,
-   "h": 136,
+   "h": 166,
    "kind": "bad",
    "title": "Growing RESISTANCE",
    "lines": [
@@ -742,7 +753,7 @@
   {
    "id": "pid_tx_0_0",
    "x": 517,
-   "y": 1112,
+   "y": 1352,
    "w": 210,
    "h": 186,
    "kind": "bad",
@@ -758,47 +769,39 @@
   },
   {
    "id": "pid_tx_1_0",
-   "x": 517.0,
-   "y": 1320,
-   "w": 100.0,
-   "h": 204,
+   "x": 517,
+   "y": 1560,
+   "w": 210,
+   "h": 258,
    "kind": "ok",
-   "title": "Yes: IV",
+   "title": "Admit → IV · else oral",
    "lines": [
-    "• cefoxitin 2 g q6h + doxycycline 100 mg q12h",
-    "• improved at 24 h → oral doxycycline to 14 days"
-   ]
-  },
-  {
-   "id": "pid_tx_1_1",
-   "x": 627.0,
-   "y": 1320,
-   "w": 100.0,
-   "h": 204,
-   "kind": "ok",
-   "title": "No: oral",
-   "lines": [
-    "ceftriaxone 250 mg IM once + doxycycline 100 mg twice daily × 14 days"
+    "• IV: cefoxitin 2 g q6h + doxycycline 100 mg q12h",
+    "~• or clindamycin 900 mg q8h + gentamicin",
+    "• improved at 24 h → oral doxycycline to 14 days",
+    "• ORAL: ceftriaxone 250 mg IM once + doxycycline 100 mg twice daily × 14 days",
+    "~• ± metronidazole · or ofloxacin / levofloxacin + metronidazole × 14 days"
    ]
   },
   {
    "id": "pid_tx_2_0",
    "x": 517,
-   "y": 1546,
+   "y": 1840,
    "w": 210,
-   "h": 78,
+   "h": 114,
    "kind": "warn",
    "title": "SURGERY",
    "lines": [
-    "failed medical or abscess: drain, laparoscopy"
+    "• failed medical or abscess: IR drain, laparoscopy, laparotomy",
+    "• hard to operate AND keep fertility"
    ]
   },
   {
    "id": "hsv_tx_0_0",
    "x": 767,
-   "y": 1112,
+   "y": 1352,
    "w": 210,
-   "h": 174,
+   "h": 204,
    "kind": "ok",
    "title": "Antivirals",
    "lines": [
@@ -810,9 +813,9 @@
   {
    "id": "hsv_tx_1_0",
    "x": 767,
-   "y": 1308,
+   "y": 1578,
    "w": 210,
-   "h": 156,
+   "h": 186,
    "kind": "warn",
    "title": "No cure: it recurs",
    "lines": [
@@ -822,9 +825,9 @@
   {
    "id": "hsv_tx_2_0",
    "x": 767,
-   "y": 1486,
+   "y": 1786,
    "w": 210,
-   "h": 138,
+   "h": 168,
    "kind": "bad",
    "title": "PREGNANCY",
    "lines": [
@@ -834,9 +837,9 @@
   {
    "id": "tp_tx_0_0",
    "x": 989,
-   "y": 1112,
+   "y": 1352,
    "w": 210,
-   "h": 151,
+   "h": 181,
    "kind": "ok",
    "title": "Penicillin G 2.4 million units IM ONCE",
    "lines": []
@@ -844,9 +847,9 @@
   {
    "id": "tp_tx_1_0",
    "x": 989,
-   "y": 1285,
+   "y": 1555,
    "w": 210,
-   "h": 151,
+   "h": 181,
    "kind": "warn",
    "title": "REPORTABLE: treat contacts",
    "lines": []
@@ -854,9 +857,9 @@
   {
    "id": "tp_tx_2_0",
    "x": 989,
-   "y": 1458,
+   "y": 1758,
    "w": 210,
-   "h": 167,
+   "h": 197,
    "kind": "bad",
    "title": "Penicillin ALLERGY",
    "lines": [
@@ -866,9 +869,9 @@
   {
    "id": "ot_tx_0_0",
    "x": 1239,
-   "y": 1112,
+   "y": 1352,
    "w": 210,
-   "h": 174,
+   "h": 204,
    "kind": "ok",
    "title": "Warts",
    "lines": [
@@ -879,9 +882,9 @@
   {
    "id": "ot_tx_1_0",
    "x": 1239,
-   "y": 1308,
+   "y": 1578,
    "w": 210,
-   "h": 138,
+   "h": 168,
    "kind": "ok",
    "title": "Hep B: SUPPORTIVE",
    "lines": [
@@ -891,9 +894,9 @@
   {
    "id": "ot_tx_2_0",
    "x": 1239,
-   "y": 1468,
+   "y": 1768,
    "w": 210,
-   "h": 156,
+   "h": 186,
    "kind": "warn",
    "title": "PREVENT",
    "lines": [
@@ -1007,23 +1010,11 @@
   },
   {
    "from": "pid_tx_0_0",
-   "to": "pid_tx_1_0",
-   "from_dx": -55.0
-  },
-  {
-   "from": "pid_tx_0_0",
-   "to": "pid_tx_1_1",
-   "from_dx": 55.0
+   "to": "pid_tx_1_0"
   },
   {
    "from": "pid_tx_1_0",
-   "to": "pid_tx_2_0",
-   "to_dx": -55.0
-  },
-  {
-   "from": "pid_tx_1_1",
-   "to": "pid_tx_2_0",
-   "to_dx": 55.0
+   "to": "pid_tx_2_0"
   },
   {
    "from": "hsv_tx_0_0",
@@ -1180,7 +1171,7 @@
  "panels": [
   {
    "x": 45,
-   "y": 1658,
+   "y": 1988,
    "w": 695,
    "title": "One test per STI",
    "items": [
@@ -1193,7 +1184,7 @@
   },
   {
    "x": 754,
-   "y": 1658,
+   "y": 1988,
    "w": 695,
    "title": "After treatment",
    "items": [

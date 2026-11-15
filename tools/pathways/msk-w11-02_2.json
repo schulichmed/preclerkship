@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 270,
+   "y": 378,
    "w": 246,
-   "h": 642,
+   "h": 1018,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
    "x": 316,
-   "y": 270,
+   "y": 378,
    "w": 246,
-   "h": 642,
+   "h": 1018,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 564,
-   "y": 270,
+   "y": 378,
    "w": 246,
-   "h": 642,
+   "h": 1018,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 812,
-   "y": 270,
+   "y": 378,
    "w": 246,
-   "h": 642,
+   "h": 1018,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 1060,
-   "y": 270,
+   "y": 378,
    "w": 246,
-   "h": 642,
+   "h": 1018,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -139,14 +139,14 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 396,
-   "h": 234,
+   "y": 504,
+   "h": 304,
    "text": "LOOK FOR"
   },
   {
    "x": 23,
-   "y": 670,
-   "h": 234,
+   "y": 848,
+   "h": 540,
    "text": "INVESTIGATIONS"
   }
  ],
@@ -160,15 +160,18 @@
    "title": "FOUR or more joints: inflammatory or degenerative, acute or chronic, and in what PATTERN?",
    "lines": [
     "inflamed synovium (synovitis) = swelling, warmth, pain, stiffness · redness only with infection or crystals",
-    "every inflammatory arthritis is a CLINICAL diagnosis: history, extra-articular clues, then targeted tests"
+    "every inflammatory arthritis is a CLINICAL diagnosis: history, extra-articular clues, then targeted tests",
+    "mono 1 · oligo 2-3 · POLY 4+ joints · inflammatory: autoimmune, infection, crystals · non-inflammatory: osteoarthritis, trauma, avascular necrosis, Charcot, recurrent hemarthrosis, hemochromatosis",
+    "history: onset + course · pattern (symmetry; small, large, axial) · risk: age, sex, ethnicity, family history, psoriasis, IBD, CKD · triggers: infection, drugs, injury, diet",
+    "look for: synovitis · tenosynovitis · dactylitis · enthesitis · bursitis · deformity (nodes, swan-neck, boutonnière, ulnar deviation)"
    ]
   },
   {
    "id": "g_ac",
    "x": 45,
-   "y": 138,
+   "y": 228,
    "w": 236,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "ACUTE: 6 weeks or less",
    "lines": [
@@ -178,19 +181,20 @@
   {
    "id": "g_ch",
    "x": 321,
-   "y": 138,
+   "y": 228,
    "w": 980,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "CHRONIC: over 6 weeks · the PATTERN decides",
    "lines": [
-    "insidious, weeks to months · progressive and additive"
+    "insidious, weeks to months · progressive and additive",
+    "also: connective tissue disease, reactive, palindromic, vasculitis, polyarticular JIA, adult-onset Still's, sarcoidosis, drugs"
    ]
   },
   {
    "id": "acu_head_0_0",
    "x": 45,
-   "y": 278,
+   "y": 386,
    "w": 236,
    "h": 78,
    "kind": "acu_h",
@@ -202,7 +206,7 @@
   {
    "id": "ra_head_0_0",
    "x": 321,
-   "y": 278,
+   "y": 386,
    "w": 236,
    "h": 78,
    "kind": "ra_h",
@@ -214,7 +218,7 @@
   {
    "id": "psa_head_0_0",
    "x": 569,
-   "y": 278,
+   "y": 386,
    "w": 236,
    "h": 78,
    "kind": "psa_h",
@@ -226,7 +230,7 @@
   {
    "id": "axs_head_0_0",
    "x": 817,
-   "y": 278,
+   "y": 386,
    "w": 236,
    "h": 78,
    "kind": "axs_h",
@@ -238,7 +242,7 @@
   {
    "id": "oa_head_0_0",
    "x": 1065,
-   "y": 278,
+   "y": 386,
    "w": 236,
    "h": 78,
    "kind": "oa_h",
@@ -250,23 +254,24 @@
   {
    "id": "acu_clue_0_0",
    "x": 45,
-   "y": 396,
+   "y": 504,
    "w": 236,
-   "h": 115,
+   "h": 186,
    "kind": "acu_t",
    "title": "Causes",
    "lines": [
     "• viral or post-infectious (see the MSK INFECTIONS chart)",
     "• polyarticular gout · rheumatic fever",
-    "• drug reaction (serum sickness)"
+    "• drug reaction (serum sickness)",
+    "• EARLY rheumatoid, connective tissue disease, vasculitis, seronegative: autoimmune ones turn CHRONIC"
    ]
   },
   {
    "id": "acu_clue_1_0",
    "x": 45,
-   "y": 533,
+   "y": 712,
    "w": 236,
-   "h": 97,
+   "h": 96,
    "kind": "acu_w",
    "title": "Course",
    "lines": [
@@ -277,23 +282,24 @@
   {
    "id": "ra_clue_0_0",
    "x": 321,
-   "y": 396,
+   "y": 504,
    "w": 236,
-   "h": 134,
+   "h": 196,
    "kind": "ra_t",
    "title": "Wrists, knuckles, finger joints, ankles, feet",
    "lines": [
     "• knuckles (MCPs) + middle finger joints (PIPs)",
     "• distal finger joints (DIPs) SPARED",
-    "• ulnar deviation, knuckle subluxation"
+    "• also shoulders, elbows (MCPs, wrists also in pseudogout)",
+    "• ulnar deviation, knuckle subluxation · swan-neck, boutonnière"
    ]
   },
   {
    "id": "ra_clue_1_0",
    "x": 321,
-   "y": 552,
+   "y": 722,
    "w": 236,
-   "h": 78,
+   "h": 86,
    "kind": "ra_w",
    "title": "Extra-articular",
    "lines": [
@@ -304,9 +310,9 @@
   {
    "id": "psa_clue_0_0",
    "x": 569,
-   "y": 396,
+   "y": 504,
    "w": 236,
-   "h": 97,
+   "h": 132,
    "kind": "psa_t",
    "title": "DIPs involved · dactylitis",
    "lines": [
@@ -316,9 +322,9 @@
   {
    "id": "psa_clue_1_0",
    "x": 569,
-   "y": 515,
+   "y": 658,
    "w": 236,
-   "h": 115,
+   "h": 150,
    "kind": "psa_w",
    "title": "Extra-articular",
    "lines": [
@@ -329,9 +335,9 @@
   {
    "id": "axs_clue_0_0",
    "x": 817,
-   "y": 396,
+   "y": 504,
    "w": 236,
-   "h": 97,
+   "h": 132,
    "kind": "axs_t",
    "title": "Spine and sacroiliac joints",
    "lines": [
@@ -341,9 +347,9 @@
   {
    "id": "axs_clue_1_0",
    "x": 817,
-   "y": 515,
+   "y": 658,
    "w": 236,
-   "h": 115,
+   "h": 150,
    "kind": "axs_w",
    "title": "Ask",
    "lines": [
@@ -353,9 +359,9 @@
   {
    "id": "oa_clue_0_0",
    "x": 1065,
-   "y": 396,
+   "y": 504,
    "w": 236,
-   "h": 97,
+   "h": 132,
    "kind": "oa_t",
    "title": "Weight-bearing joints, spine",
    "lines": [
@@ -365,9 +371,9 @@
   {
    "id": "oa_clue_1_0",
    "x": 1065,
-   "y": 515,
+   "y": 658,
    "w": 236,
-   "h": 115,
+   "h": 150,
    "kind": "oa_w",
    "title": "Hands",
    "lines": [
@@ -377,9 +383,9 @@
   {
    "id": "acu_inv_0_0",
    "x": 45,
-   "y": 670,
+   "y": 848,
    "w": 236,
-   "h": 106,
+   "h": 135,
    "kind": "bad",
    "title": "Red, hot joint → ASPIRATE",
    "lines": [
@@ -390,46 +396,66 @@
   {
    "id": "acu_inv_1_0",
    "x": 45,
-   "y": 798,
+   "y": 1005,
    "w": 236,
-   "h": 106,
+   "h": 189,
    "kind": "acu_w",
    "title": "Viral: serologies",
    "lines": [
+    "during or weeks after: hepatitis A, B, C · HIV, CMV, EBV · parvovirus · chikungunya · influenza · COVID-19",
     "self-limited · supportive; anti-inflammatories or a short prednisone course if severe"
+   ]
+  },
+  {
+   "id": "acu_inv_2_0",
+   "x": 45,
+   "y": 1216,
+   "w": 236,
+   "h": 171,
+   "kind": "acu_w",
+   "title": "Special labs",
+   "lines": [
+    "• gout: uric acid",
+    "• pseudogout: look for hemochromatosis, hyperparathyroidism, hypothyroidism"
    ]
   },
   {
    "id": "ra_inv_0_0",
    "x": 321,
-   "y": 670,
+   "y": 848,
    "w": 236,
-   "h": 134,
+   "h": 332,
    "kind": "ra_t",
    "title": "Rheumatoid factor (RF) + anti-CCP: only if suspected",
    "lines": [
-    "• anti-cyclic citrullinated peptide: 95% specific · RF is not",
-    "• positive = more aggressive · NEVER to monitor"
+    "• RF (IgM against IgG Fc): 70-80% of RA, 5-20% of healthy (↑ with age)",
+    "• RF also: Sjögren's, lupus, myositis · hepatitis B, C, TB, syphilis, endocarditis · lung fibrosis, silicosis, sarcoid · lymphoma",
+    "• anti-cyclic citrullinated peptide: 95% specific · present YEARS before arthritis",
+    "• order with true swollen joints + raised markers",
+    "• seropositive = more joints, erosions, extra-articular · NEVER to monitor"
    ]
   },
   {
    "id": "ra_inv_1_0",
    "x": 321,
-   "y": 826,
+   "y": 1202,
    "w": 236,
-   "h": 78,
+   "h": 186,
    "kind": "ra_w",
    "title": "X-ray",
    "lines": [
-    "erosions, periarticular osteopenia, SYMMETRIC narrowing"
+    "erosions, periarticular osteopenia, SYMMETRIC narrowing",
+    "• fusiform soft tissue swelling · periostitis · subluxation",
+    "• erosive: RA, psoriatic, SpA, gout, septic · NOT lupus, Sjögren's",
+    "~ little use early: damage takes years · baseline before treatment"
    ]
   },
   {
    "id": "psa_inv_0_0",
    "x": 569,
-   "y": 670,
+   "y": 848,
    "w": 236,
-   "h": 234,
+   "h": 540,
    "kind": "psa_w",
    "title": "No specific antibody",
    "lines": [
@@ -440,9 +466,9 @@
   {
    "id": "axs_inv_0_0",
    "x": 817,
-   "y": 670,
+   "y": 848,
    "w": 236,
-   "h": 234,
+   "h": 540,
    "kind": "axs_w",
    "title": "Human leukocyte antigen B27 (HLA-B27)",
    "lines": [
@@ -453,13 +479,14 @@
   {
    "id": "oa_inv_0_0",
    "x": 1065,
-   "y": 670,
+   "y": 848,
    "w": 236,
-   "h": 234,
+   "h": 540,
    "kind": "oa_w",
    "title": "X-ray",
    "lines": [
-    "osteophytes, subchondral sclerosis and cysts, ASYMMETRIC narrowing"
+    "osteophytes, subchondral sclerosis and cysts, ASYMMETRIC narrowing",
+    "erosions only in erosive OA · deviation from extra bone"
    ]
   }
  ],
@@ -467,12 +494,12 @@
   {
    "from": "root",
    "to": "g_ac",
-   "path": "M673.0 88V113H163.0V138"
+   "path": "M673.0 178V203H163.0V228"
   },
   {
    "from": "root",
    "to": "g_ch",
-   "path": "M673.0 88V113H811.0V138"
+   "path": "M673.0 178V203H811.0V228"
   },
   {
    "from": "acu_clue_0_0",
@@ -502,6 +529,10 @@
   {
    "from": "acu_inv_0_0",
    "to": "acu_inv_1_0"
+  },
+  {
+   "from": "acu_inv_1_0",
+   "to": "acu_inv_2_0"
   },
   {
    "from": "ra_inv_0_0",
@@ -535,7 +566,7 @@
    "label": "symmetric, small + large",
    "label_at": [
     439.0,
-    238
+    346
    ]
   },
   {
@@ -553,7 +584,7 @@
    "label": "asymmetric, small + large",
    "label_at": [
     687.0,
-    238
+    346
    ]
   },
   {
@@ -571,7 +602,7 @@
    "label": "axial + large",
    "label_at": [
     935.0,
-    238
+    346
    ]
   },
   {
@@ -589,36 +620,40 @@
    "label": "symmetric, weight-bearing",
    "label_at": [
     1183.0,
-    238
+    346
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 938,
+   "y": 1422,
    "w": 409,
-   "title": "Tests for everyone (safety + inflammation)",
+   "title": "Tests",
    "items": [
-    "blood count: anemia of chronic disease, platelets ↑ (inflammation), low counts (autoimmune)",
-    "creatinine and liver enzymes (drug clearance) · C-reactive protein (sedimentation rate not routine)"
+    "everyone: blood count (anemia of chronic disease, platelets ↑, autoimmune cytopenias) · creatinine (glomerulonephritis, vasculitis, drug clearance) · liver enzymes (drug clearance, autoimmune hepatitis) · CRP (ESR not routine)",
+    "ANA: up to 30% of healthy people · positive does NOT rule in, NEGATIVE rules out connective tissue disease · don't order ANA and RF reflexively",
+    "ENA: dsDNA, Sm → lupus · Ro, La → Sjögren's · centromere, Scl-70, RNA pol III → scleroderma · Jo-1 → myositis · RNP → mixed · histone → drug-induced lupus",
+    "lupus flare: anti-dsDNA ↑, C3, C4 ↓ (seroconcordant)"
    ],
    "cols": 1
   },
   {
    "x": 468,
-   "y": 938,
+   "y": 1422,
    "w": 409,
-   "title": "Antinuclear antibody (ANA)",
+   "title": "Management (briefly)",
    "items": [
-    "positive in up to 30% of healthy people: a positive ANA does NOT rule in connective tissue disease",
-    "a negative ANA rules it out · don't order ANA and RF reflexively"
+    "acetaminophen, NSAIDs · steroids: prednisone, IM methylprednisolone, joint injection",
+    "DMARDs: conventional (methotrexate) · targeted synthetic (tofacitinib) · biologic (adalimumab)",
+    "gout: colchicine, NSAIDs, steroids, allopurinol, febuxostat · pseudogout: colchicine, NSAIDs, steroids",
+    "gentle physio, strengthening · warm or cool compresses · rest"
    ],
    "cols": 1
   },
   {
    "x": 892,
-   "y": 938,
+   "y": 1422,
    "w": 409,
    "title": "Extra-articular clues for the rest",
    "items": [
@@ -626,7 +661,8 @@
     "gout: TOPHI · podagra · olecranon bursitis",
     "lupus: MALAR RASH · discoid lupus · oral ulcers · subacute lupus rash",
     "dermatomyositis: heliotrope · GOTTRON'S sign and papules · shawl, V and holster signs · mechanic's hands",
-    "scleroderma: SCLERODACTYLY · Raynaud's · calcinosis · nail-fold capillary changes"
+    "scleroderma: SCLERODACTYLY · Raynaud's · calcinosis · nail-fold capillary changes",
+    "organs: uveitis, scleritis, sicca · mouth ulcers · interstitial lung disease, effusions · pericarditis · glomerulonephritis · hemolysis, low platelets, lymphopenia · erythema nodosum, livedo"
    ],
    "cols": 1
   }

@@ -6,7 +6,8 @@
   "title": "Spine X-ray: which view shows it, what is the sign, and what happens next?",
   "lines": [
    "every film, ABCS: Alignment · Bones · Cartilage (disc spaces, facets) · Soft tissues, then the whole image",
-   "compare with previous imaging when you have it"
+   "compare with previous imaging when you have it · start with alignment: a break shows where to look",
+   "any bone, TIMS-C: Trauma, tumour · Infection, inflammatory, idiopathic · Metabolic, malignancy · Systemic, senile · Congenital"
   ]
  },
  "groups": [
@@ -21,22 +22,23 @@
  "columns": [
   {
    "id": "frx", "colour": "teal",
-   "head": [[["h", "Vertebral fracture", ["compression · wedge · burst · teardrop"]]]],
+   "head": [[["h", "Vertebral fracture", ["compression · wedge · burst · teardrop · distraction", "hyperflexion or hyperextension"]]]],
    "look": [
     [["t", "Lateral view", ["• loss of vertebral body height", "• break in the alignment lines", "• fragment pushed back to the canal"]]],
-    [["w", "Lateral cervical: 4 lines", ["anterior vertebral · posterior vertebral · spinolaminar · spinous process"]]]
+    [["w", "Lateral cervical: 4 lines", ["anterior vertebral · posterior vertebral · spinolaminar · spinous process"]]],
+    [["t", "Named cervical fractures", ["• Jefferson: C1 ring broken in several places", "• extension teardrop: anteroinferior corner (C2)", "• flexion teardrop: front of body + cord, posterior column", "• dens: I tip · II base · III into the C2 body", "• widened spinous-process gap: interspinous ligament torn"]]]
    ],
    "next": [
     [["ok", "Anterior body only", ["more likely STABLE", "e.g. simple wedge (front-top corner)"]]],
-    [["bad", "Into the POSTERIOR elements", ["UNSTABLE", "e.g. hangman's (both pars of C2)"]]],
-    [["w", "Painful compression fracture", ["vertebroplasty (cement): pain relief, does NOT restore height"]]]
+    [["bad", "Into the POSTERIOR elements", ["UNSTABLE", "e.g. hangman's (both pars of C2) · unstable wedge", "any break in the posterior vertebral line"]]],
+    [["w", "Painful compression fracture", ["vertebroplasty (cement): pain relief, slows progression, does NOT restore height"]]]
    ]
   },
   {
    "id": "fac", "colour": "orange",
    "head": [[["h", "Facet dislocation", ["unilateral or bilateral"]]]],
    "look": [
-    [["t", "Lateral: PERCHED facets", ["• facets lose their parallel line", "• vertebra slips forward (spondylolisthesis)"]]],
+    [["t", "Lateral: PERCHED facets", ["• facets lose their parallel line", "• vertebra slips forward (spondylolisthesis)", "• bilateral slips FURTHER than unilateral"]]],
     [["w", "AP: spinous processes", ["off the midline, uneven spacing", "~use it when there is no lateral"]]]
    ],
    "next": [
@@ -106,6 +108,12 @@
    "open-mouth view: C1 lateral masses line up with C2",
    "count: T1 meets the 1st rib · L1 sits below the 12th rib",
    "read BOTH views: a pedicle replaced by a lytic lesion shows on the AP, barely on the lateral"
+  ]},
+  {"title": "Which view, when", "items": [
+   "cervical: AP · LATERAL (most important) · obliques (neural foramina) · open-mouth (dens)",
+   "flexion + extension: only if instability suspected · thoracic: swimmer's view for the upper levels",
+   "lumbar: AP + lateral · oblique only on request (pars) · AP: both pedicles every level, stones, free air",
+   "cervical spondylosis (commonest non-traumatic): disc narrowing, marginal osteophytes, endplate sclerosis, straightened lordosis"
   ]}
  ]
 }

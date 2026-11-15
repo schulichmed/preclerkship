@@ -6,7 +6,8 @@
   "title": "Fever · headache · stiff neck · altered mental status: think MENINGITIS",
   "lines": [
    "classic triad: FEVER, ALTERED MENTAL STATUS, NUCHAL RIGIDITY (Kernig's, Brudzinski's)",
-   "language trouble, confusion, focal seizures → think ENCEPHALITIS (the brain itself)"
+   "language trouble, confusion, focal seizures → think ENCEPHALITIS (the brain itself)",
+   "4 kinds of CNS infection: bacterial (meningitis, abscess) · viral (meningitis, encephalitis) · fungal (cryptococcal) · protozoal (neurocysticercosis)"
   ]
  },
  "groups": [
@@ -28,8 +29,8 @@
    "lines": [
     "1 · CULTURE a blood sample",
     "2 · START EMPIRIC treatment now: never wait for the CT or the tap",
-    "3 · CT/MRI FIRST only if focal signs or ↓ consciousness (PUNISH: Papilledema, Unconscious, Neurologic deficit, Immunocompromised, Seizure, History of CNS disease) → mass = NEUROSURGERY",
-    "4 · LUMBAR PUNCTURE → adjust treatment to the CSF"
+    "3 · CT/MRI FIRST only if focal signs or ↓ consciousness (PUNISH: Papilledema, Unconscious, Neurologic deficit, Immunocompromised, Seizure, History of CNS disease) · also poorly seen fundi, from a NEUROCYSTICERCOSIS area → mass = NEUROSURGERY",
+    "4 · LUMBAR PUNCTURE (cell count, protein, glucose + a SERUM glucose, Gram stain, culture) → adjust treatment to the CSF"
    ]
   }
  ],
@@ -70,7 +71,9 @@
       [
        "• fever, stiff neck, ↓ awareness",
        "• RASH can occur (meningococcus)",
-       "• no language disturbance"
+       "• no language disturbance",
+       "• bloods: CRP over 40, blood cultures",
+       "case: 34 y teacher, 2 days · T 38.9, oriented, moderate neck stiffness · CT normal"
       ]
      ]
     ]
@@ -81,10 +84,12 @@
       "w",
       "Cloudy, PUS",
       [
-       "• ↑ pressure",
-       "• white cells > 500, NEUTROPHILS",
-       "• protein HIGH · glucose LOW (CSF:serum < 0.3-0.4)",
-       "• Gram stain POSITIVE"
+       "• ↑ pressure (over 30)",
+       "• white cells > 500 (to 50,000), NEUTROPHILS",
+       "• protein HIGH (500-10,000) · glucose LOW (under 2.5; CSF:serum < 0.3-0.4, normal > 0.6)",
+       "• ratio under 0.3 catches 70%",
+       "• Gram stain POSITIVE",
+       "case: cloudy, 10,500 polys, Gram + diplococci, glucose 1.5, protein 2500 → NEISSERIA"
       ]
      ]
     ],
@@ -93,7 +98,8 @@
       "w",
       "Organisms",
       [
-       "• adults: S. pneumoniae, N. meningitidis, H. influenzae",
+       "• adults: S. pneumoniae (Gram + lance diplococci), N. meningitidis (Gram − kidney diplococci, vaccine), H. influenzae (fewer since vaccine)",
+       "• Listeria: Gram + rods",
        "• > 50 or immunocompromised: LISTERIA",
        "• neonates: E. coli, group B strep",
        "• after surgery: Staphylococcus"
@@ -107,9 +113,9 @@
       "ok",
       "Empiric, IV",
       [
-       "• CEFTRIAXONE 2 g q12h",
-       "• + VANCOMYCIN 1 g q8h",
-       "• + AMPICILLIN 2 g q4h if > 50 or immunocompromised",
+       "• CEFTRIAXONE 2 g q12h: H. flu, meningococcus, sensitive pneumococcus, MSSA",
+       "• + VANCOMYCIN 1 g q8h: resistant pneumococcus, MRSA",
+       "• + AMPICILLIN 2 g q4h if > 50 or immunocompromised: Listeria",
        "• + ACYCLOVIR 10 mg/kg q8h (herpes)"
       ]
      ]
@@ -120,7 +126,7 @@
       "+ DEXAMETHASONE 10 mg IV",
       [
        "with the FIRST antibiotic dose, then q6h for 4 days",
-       "~ most benefit in S. pneumoniae"
+       "~ ↓ morbidity + mortality, most in S. pneumoniae"
       ]
      ]
     ]
@@ -149,7 +155,8 @@
       [
        "• headache, fever, photophobia, rash",
        "• MILD meningeal signs",
-       "• neuro exam normal"
+       "• neuro exam normal",
+       "case: 20 y student, aches, T 37.8, irritable, mild neck stiffness"
       ]
      ]
     ]
@@ -163,7 +170,8 @@
        "• pressure normal or mildly ↑",
        "• white cells ↑ but < 1000, LYMPHOCYTES",
        "• protein mildly ↑ · glucose NORMAL",
-       "• Gram stain negative"
+       "• Gram stain negative",
+       "case: 50 lymphocytes, glucose 3.5 (serum 5.0), protein 450"
       ]
      ]
     ]
@@ -203,7 +211,8 @@
       [
        "• LANGUAGE trouble (word salad), confusion",
        "• focal seizures, impaired memory, focal deficits",
-       "• fever, ↓ awareness · usually NO stiff neck"
+       "• fever, ↓ awareness · usually NO stiff neck · OLDER patients",
+       "case: 47 y, 3 days fever, turned the wrong way on the 401 · T 38.1, nonsensical, not following commands"
       ]
      ]
     ]
@@ -216,7 +225,8 @@
       [
        "• CONFIRM: CSF HSV PCR",
        "• MRI: temporal lobe signal change",
-       "• EEG: temporal spikes"
+       "• EEG: temporal spikes · biopsy",
+       "case: 230 lymphocytes, 56 red cells, glucose 4.0, protein 2000 · MRI + EEG both temporal lobes"
       ]
      ]
     ]
@@ -228,11 +238,24 @@
       "IV ACYCLOVIR 10 mg/kg q8h",
       [
        "dosed on IDEAL body weight",
-       "started empirically, with the antibiotics"
+       "started empirically, with the antibiotics",
+       "e.g. 700 mg IV q8h",
+       "meningoencephalitis (stiff neck + weakness + seizures) → antibiotics + acyclovir, then CT/MRI"
       ]
      ]
     ]
    ]
   }
+ ],
+ "panels": [
+  {"title": "CSF: normal values", "items": [
+   "opening pressure under 20-25 cm",
+   "clear · white cells 0-5, lymphocytes",
+   "protein 250-450 mg/L · glucose 2.2-4.4 mmol/L",
+   "CSF:serum glucose over 0.6 · Gram stain empty"]},
+  {"title": "Complications of meningitis", "items": [
+   "sepsis · hydrocephalus · cranial nerve palsies",
+   "vasculitis · stroke · cerebritis · abscess",
+   "seizures · coma · death"]}
  ]
 }

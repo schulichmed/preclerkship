@@ -1,7 +1,7 @@
 {
  "name": "autopsy and cause of death overview",
  "width": 982,
- "title": "After a death: any coroner indication makes it a medicolegal case under the Coroner's Act; an expected natural death is certified by the doctor, who writes the cause of death in the WHO format, and a hospital autopsy needs informed authorization from the estate trustee or next of kin in order",
+ "title": "After a death: any coroner indication makes it a medicolegal case under the Coroner's Act; an expected natural death is certified by the doctor, who writes the cause of death in the WHO format, and a hospital autopsy needs informed authorization from the estate trustee or next of kin in order; the steps of an autopsy and what the death certificate is for are below",
  "kinds": {
   "ml_h": [
    "#46607a",
@@ -61,25 +61,25 @@
  "bands": [
   {
    "x": 40,
-   "y": 306,
+   "y": 324,
    "w": 300,
-   "h": 622,
+   "h": 818,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
    "x": 370,
-   "y": 306,
+   "y": 324,
    "w": 300,
-   "h": 622,
+   "h": 818,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 672,
-   "y": 306,
+   "y": 324,
    "w": 300,
-   "h": 622,
+   "h": 818,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   }
@@ -87,14 +87,14 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 432,
-   "h": 252,
+   "y": 486,
+   "h": 322,
    "text": "AUTHORITY · FORMAT"
   },
   {
    "x": 23,
-   "y": 724,
-   "h": 196,
+   "y": 848,
+   "h": 286,
    "text": "KEY POINTS"
   }
  ],
@@ -107,13 +107,14 @@
    "kind": "dark",
    "title": "A patient has died: does the coroner need to know?",
    "lines": [
-    "call the coroner if ANY: family concerned about care · sudden and unexpected (no potentially fatal illness) · unnatural (accident, suicide, homicide) · death on a psychiatry ward · maternal death · seizure disorder · Children's Aid involved in a child's death"
+    "call the coroner if ANY: family concerned about care · sudden and unexpected (no potentially fatal illness) · unnatural (accident, suicide, homicide) · death on a psychiatry ward · maternal death · seizure disorder · Children's Aid involved in a child's death",
+    "autopsy (necropsy, postmortem): same procedure either way, different focus · always by a pathologist"
    ]
   },
   {
    "id": "g_yes",
    "x": 45,
-   "y": 156,
+   "y": 174,
    "w": 290,
    "h": 78,
    "kind": "plain",
@@ -125,7 +126,7 @@
   {
    "id": "g_no",
    "x": 375,
-   "y": 156,
+   "y": 174,
    "w": 592,
    "h": 78,
    "kind": "plain",
@@ -135,45 +136,48 @@
   {
    "id": "ml_head_0_0",
    "x": 45,
-   "y": 314,
+   "y": 332,
    "w": 290,
-   "h": 78,
+   "h": 114,
    "kind": "ml_h",
    "title": "Medicolegal autopsy",
    "lines": [
-    "forensic pathologist · death investigation ± police"
+    "forensic pathologist · death investigation ± police",
+    "most do NOT come from hospital"
    ]
   },
   {
    "id": "cert_head_0_0",
    "x": 375,
-   "y": 314,
+   "y": 332,
    "w": 290,
-   "h": 78,
+   "h": 114,
    "kind": "cert_h",
-   "title": "Death certificate",
+   "title": "Death certificate (Form 16)",
    "lines": [
-    "doctor or certain nurses sign · NOT for stillbirths"
+    "doctor or certain nurses sign · NOT for stillbirths",
+    "identity · cause · MANNER · autopsy done?"
    ]
   },
   {
    "id": "hosp_head_0_0",
    "x": 677,
-   "y": 314,
+   "y": 332,
    "w": 290,
-   "h": 78,
+   "h": 114,
    "kind": "hosp_h",
    "title": "Hospital autopsy",
    "lines": [
-    "hospital pathologist"
+    "hospital pathologist · died in hospital, already investigated",
+    "natural death: family request, genetics, teaching, research, quality assurance"
    ]
   },
   {
    "id": "ml_who_0_0",
    "x": 45,
-   "y": 432,
+   "y": 486,
    "w": 290,
-   "h": 252,
+   "h": 322,
    "kind": "bad",
    "title": "The CORONER'S ACT",
    "lines": [
@@ -183,34 +187,37 @@
   {
    "id": "cert_who_0_0",
    "x": 375,
-   "y": 432,
+   "y": 486,
    "w": 290,
-   "h": 133,
+   "h": 222,
    "kind": "cert_t",
    "title": "Part I: the causal chain, backwards",
    "lines": [
-    "(a) immediate ← (b) ← (c) underlying",
-    "~hemopericardium ← ruptured myocardial infarct ← coronary atherosclerosis"
+    "(a) immediate ← (b) intermediate ← (c) underlying",
+    "each line causes the one above it",
+    "~hemopericardium ← ruptured myocardial infarct ← coronary atherosclerosis + thrombosis · II: diabetes",
+    "~upper GI bleed ← ruptured esophageal varix ← alcoholic cirrhosis · II: hemophilia",
+    "~right lung squamous cell carcinoma · II: tobacco smoking"
    ]
   },
   {
    "id": "cert_who_1_0",
    "x": 375,
-   "y": 587,
+   "y": 730,
    "w": 290,
-   "h": 97,
+   "h": 78,
    "kind": "cert_w",
    "title": "Part II: contributed, outside the chain",
    "lines": [
-    "~e.g. diabetes, tobacco smoking"
+    "often risk factors, e.g. diabetes, tobacco smoking"
    ]
   },
   {
    "id": "hosp_who_0_0",
    "x": 677,
-   "y": 432,
+   "y": 486,
    "w": 290,
-   "h": 152,
+   "h": 205,
    "kind": "hosp_t",
    "title": "INFORMED authorization, in this ORDER",
    "lines": [
@@ -218,15 +225,16 @@
     "2 · spouse and adult children",
     "3 · parents",
     "4 · siblings",
-    "5 · any other capable next of kin"
+    "5 · any other capable next of kin",
+    "~same duties as with a patient: consent, professionalism, confidentiality"
    ]
   },
   {
    "id": "hosp_who_1_0",
    "x": 677,
-   "y": 606,
+   "y": 713,
    "w": 290,
-   "h": 78,
+   "h": 95,
    "kind": "hosp_w",
    "title": "They may RESTRICT it",
    "lines": [
@@ -237,9 +245,9 @@
   {
    "id": "ml_do_0_0",
    "x": 45,
-   "y": 724,
+   "y": 848,
    "w": 290,
-   "h": 196,
+   "h": 286,
    "kind": "ml_w",
    "title": "Coroner or medical examiner",
    "lines": [
@@ -249,39 +257,40 @@
   {
    "id": "cert_do_0_0",
    "x": 375,
-   "y": 724,
+   "y": 848,
    "w": 290,
-   "h": 78,
+   "h": 132,
    "kind": "ok",
    "title": "Be SPECIFIC",
    "lines": [
-    "• infection: disease or organism + site",
-    "• cancer: origin + spread + type"
+    "• infection: disease or organism + site (COVID-19 pneumonia, H. influenzae meningoencephalitis)",
+    "• cancer: origin + spread + type (pulmonary metastasis of colonic adenocarcinoma)"
    ]
   },
   {
    "id": "cert_do_1_0",
    "x": 375,
-   "y": 824,
+   "y": 1002,
    "w": 290,
-   "h": 96,
+   "h": 132,
    "kind": "bad",
    "title": "NEVER a mechanism",
    "lines": [
+    "the physiological process of dying adds nothing:",
     "cardiac arrest · arrhythmia · exsanguination · respiratory arrest · multisystem organ failure · sepsis"
    ]
   },
   {
    "id": "hosp_do_0_0",
    "x": 677,
-   "y": 724,
+   "y": 848,
    "w": 290,
-   "h": 196,
+   "h": 286,
    "kind": "ok",
    "title": "Why do it",
    "lines": [
     "• diagnosis, extent, effect of treatment",
-    "• accuracy of clinical tests and imaging",
+    "• accuracy of clinical tests and imaging · unresolved questions",
     "• SUSPECTED GENETIC disease: tell living relatives",
     "• grief · teaching · research · the death certificate"
    ]
@@ -291,12 +300,12 @@
   {
    "from": "root",
    "to": "g_yes",
-   "path": "M506.0 106V131H190.0V156"
+   "path": "M506.0 124V149H190.0V174"
   },
   {
    "from": "root",
    "to": "g_no",
-   "path": "M506.0 106V131H671.0V156"
+   "path": "M506.0 124V149H671.0V174"
   },
   {
    "from": "cert_who_0_0",
@@ -338,7 +347,7 @@
    "label": "always",
    "label_at": [
     520.0,
-    274
+    292
    ]
   },
   {
@@ -356,9 +365,38 @@
    "label": "if wanted",
    "label_at": [
     822.0,
-    274
+    292
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1168,
+   "w": 454,
+   "title": "Steps of the autopsy",
+   "items": [
+    "1 · history: records, ambulance call report, clinician, consultation form",
+    "2 · external: nutrition, identifying marks, all surfaces, disease, anomalies, injuries, resuscitation",
+    "3 · internal: Y-shaped incision · organ block, weighed · brain removed · special dissections",
+    "not routine: eyes, bowel lumen, limb bones, joints, ears, spinal cord, back muscles, parathyroids",
+    "4 · ancillary tests, consults → provisional anatomical diagnosis",
+    "5 · OPINION: an integration in context · NOT 'all is revealed by dissection'"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 513,
+   "y": 1168,
+   "w": 454,
+   "title": "What the certificate is for",
+   "items": [
+    "permanent legal record: proof of death for family, legal, insurance",
+    "statistics (ICD): the UNDERLYING cause is what gets coded",
+    "research · surveillance · public health planning · research funding",
+    "causation (Hume): a time-ordered, linked chain A → B → C → death · the initiating event sets the manner"
+   ],
+   "cols": 1
+  }
+ ]
 }

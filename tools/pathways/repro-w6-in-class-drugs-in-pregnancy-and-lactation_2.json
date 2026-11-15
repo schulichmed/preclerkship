@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 270,
+   "y": 342,
    "w": 248,
-   "h": 882,
+   "h": 1114,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 290,
-   "y": 270,
+   "y": 342,
    "w": 248,
-   "h": 882,
+   "h": 1114,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 568,
-   "y": 270,
+   "y": 342,
    "w": 248,
-   "h": 882,
+   "h": 1114,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 818,
-   "y": 270,
+   "y": 342,
    "w": 248,
-   "h": 882,
+   "h": 1114,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 1068,
-   "y": 270,
+   "y": 342,
    "w": 248,
-   "h": 882,
+   "h": 1114,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   }
@@ -139,19 +139,19 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 398,
-   "h": 286,
+   "y": 504,
+   "h": 412,
    "text": "WHICH"
   },
   {
    "x": 23,
-   "y": 724,
-   "h": 200,
+   "y": 956,
+   "h": 272,
    "text": "WEIGH"
   },
   {
    "x": 23,
-   "y": 964,
+   "y": 1268,
    "h": 180,
    "text": "DO"
   }
@@ -166,27 +166,29 @@
    "title": "A medicine in pregnancy or breastfeeding: is it worth it?",
    "lines": [
     "most drugs reach the baby, and most are still safe · always weigh the risk of the UNTREATED disease",
-    "the risk depends on the drug, the dose, the timing and her disease"
+    "the risk depends on the drug, the dose, the timing, genetic susceptibility and her disease",
+    "> 90% of pregnant women take a medicine (2.9 on average) · < 10% of drugs (1980–2010) have fetal risk data · < 50% of pregnancies planned",
+    "counsel by context: BEFORE (planning) · DURING (taking it) · AFTER (a baby with a malformation) · unsure → FRAME clinic"
    ]
   },
   {
    "id": "g_preg",
    "x": 45,
-   "y": 138,
+   "y": 192,
    "w": 488,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "PREGNANT: the placenta is NOT a barrier",
    "lines": [
-    "timing of exposure: see the ANTENATAL CARE chart"
+    "preimplantation: ALL OR NONE (miscarriage) · embryonic (organogenesis): MAJOR malformations · fetal: FUNCTIONAL defects"
    ]
   },
   {
    "id": "g_bf",
    "x": 573,
-   "y": 138,
+   "y": 192,
    "w": 738,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "BREASTFEEDING: how much reaches the baby, and can the baby clear it?",
    "lines": [
@@ -196,21 +198,22 @@
   {
    "id": "safe_head_0_0",
    "x": 45,
-   "y": 278,
+   "y": 350,
    "w": 238,
-   "h": 80,
+   "h": 114,
    "kind": "safe_h",
    "title": "Most drugs: probably safe",
    "lines": [
-    "baseline major malformation risk 2–4%, with or without a drug"
+    "baseline major malformation risk 2–4%: 97% have a healthy baby",
+    "causes: genetic 25% · drugs 1% · unknown 50%"
    ]
   },
   {
    "id": "terat_head_0_0",
    "x": 295,
-   "y": 278,
+   "y": 350,
    "w": 238,
-   "h": 80,
+   "h": 114,
    "kind": "terat_h",
    "title": "Major teratogen",
    "lines": [
@@ -220,9 +223,9 @@
   {
    "id": "rid_head_0_0",
    "x": 573,
-   "y": 278,
+   "y": 350,
    "w": 238,
-   "h": 80,
+   "h": 114,
    "kind": "rid_h",
    "title": "Usually SAFE",
    "lines": [
@@ -232,9 +235,9 @@
   {
    "id": "ci_head_0_0",
    "x": 823,
-   "y": 278,
+   "y": 350,
    "w": 238,
-   "h": 80,
+   "h": 114,
    "kind": "ci_h",
    "title": "Contraindicated",
    "lines": [
@@ -244,9 +247,9 @@
   {
    "id": "soc_head_0_0",
    "x": 1073,
-   "y": 278,
+   "y": 350,
    "w": 238,
-   "h": 80,
+   "h": 114,
    "kind": "soc_h",
    "title": "Alcohol, tobacco, cannabis, coffee",
    "lines": [
@@ -256,9 +259,9 @@
   {
    "id": "safe_clue_0_0",
    "x": 45,
-   "y": 398,
+   "y": 504,
    "w": 238,
-   "h": 286,
+   "h": 412,
    "kind": "safe_t",
    "title": "Untreated disease harms too",
    "lines": [
@@ -270,7 +273,7 @@
   {
    "id": "terat_clue_0_0",
    "x": 295,
-   "y": 398,
+   "y": 504,
    "w": 238,
    "h": 132,
    "kind": "bad",
@@ -284,37 +287,40 @@
   {
    "id": "terat_clue_1_0",
    "x": 295,
-   "y": 552,
+   "y": 658,
    "w": 238,
-   "h": 132,
+   "h": 258,
    "kind": "terat_w",
    "title": "Also",
    "lines": [
     "• carbamazepine: neural tube defect 1%",
-    "• lithium: Ebstein's anomaly",
-    "• warfarin, angiotensin-converting enzyme (ACE) inhibitors"
+    "• lithium: Ebstein's anomaly (1 in 5000)",
+    "• warfarin: fetal warfarin syndrome (rare)",
+    "• ACE inhibitors, ARBs · methotrexate · DES",
+    "• alcohol · phenytoin, topiramate · methimazole · tetracycline, trimethoprim · misoprostol · lead, mercury"
    ]
   },
   {
    "id": "rid_clue_0_0",
    "x": 573,
-   "y": 398,
+   "y": 504,
    "w": 238,
-   "h": 286,
+   "h": 412,
    "kind": "rid_t",
    "title": "Gets INTO milk if",
    "lines": [
-    "• high maternal blood level, fat-soluble",
+    "• high maternal blood level, fat-soluble or transported (BCRP)",
     "• not protein-bound",
-    "• small: > 500 daltons stays out (insulin, heparin)"
+    "• small: > 500 daltons stays out (insulin > 6000, heparin 40,000; ethanol 200 gets in)",
+    "• then must be absorbed from the baby's gut"
    ]
   },
   {
    "id": "ci_clue_0_0",
    "x": 823,
-   "y": 398,
+   "y": 504,
    "w": 238,
-   "h": 286,
+   "h": 412,
    "kind": "bad",
    "title": "Avoid",
    "lines": [
@@ -326,9 +332,9 @@
   {
    "id": "soc_clue_0_0",
    "x": 1073,
-   "y": 398,
+   "y": 504,
    "w": 238,
-   "h": 286,
+   "h": 412,
    "kind": "soc_t",
    "title": "Alcohol does NOT increase milk",
    "lines": [
@@ -338,21 +344,23 @@
   {
    "id": "safe_inv_0_0",
    "x": 45,
-   "y": 724,
+   "y": 956,
    "w": 238,
-   "h": 200,
+   "h": 272,
    "kind": "safe_w",
    "title": "A malformation is > 99 in 100 times NOT a drug",
    "lines": [
-    "put her risk in perspective: fear harms too"
+    "• put her risk in perspective: fear harms too",
+    "• post-Chernobyl: 10,000–15,000 unwarranted terminations",
+    "• animal data mislead: > 1200 drugs malformative in animals, not humans"
    ]
   },
   {
    "id": "terat_inv_0_0",
    "x": 295,
-   "y": 724,
+   "y": 956,
    "w": 238,
-   "h": 200,
+   "h": 272,
    "kind": "terat_w",
    "title": "Uncertain or overstated",
    "lines": [
@@ -363,19 +371,21 @@
   {
    "id": "rid_inv_0_0",
    "x": 573,
-   "y": 724,
+   "y": 956,
    "w": 238,
-   "h": 98,
+   "h": 170,
    "kind": "rid_t",
    "title": "1 · Relative infant dose (RID) < 10% = safe",
    "lines": [
-    "baby's dose from milk ÷ mother's dose per kg (fluoxetine 1.2%)"
+    "• milk concentration × 150 mL/kg/day ÷ maternal dose per kg per day",
+    "• fluoxetine 1.2%",
+    "• milk/plasma ratio > 1 = concentrates in milk, but often harmless"
    ]
   },
   {
    "id": "rid_inv_1_0",
    "x": 573,
-   "y": 844,
+   "y": 1148,
    "w": 238,
    "h": 80,
    "kind": "rid_w",
@@ -387,21 +397,22 @@
   {
    "id": "ci_inv_0_0",
    "x": 823,
-   "y": 724,
+   "y": 956,
    "w": 238,
-   "h": 80,
+   "h": 134,
    "kind": "ci_t",
    "title": "Why atenolol: RID ~20%",
    "lines": [
-    "newborn kidneys clear it slowly in week 1: slow heart, cyanosis"
+    "• newborn kidneys clear it slowly in week 1: slow heart, cyanosis",
+    "• same for water-soluble acebutolol, nadolol, sotalol"
    ]
   },
   {
    "id": "ci_inv_1_0",
    "x": 823,
-   "y": 826,
+   "y": 1112,
    "w": 238,
-   "h": 98,
+   "h": 116,
    "kind": "ci_w",
    "title": "Problematic, not forbidden",
    "lines": [
@@ -412,32 +423,33 @@
   {
    "id": "soc_inv_0_0",
    "x": 1073,
-   "y": 724,
+   "y": 956,
    "w": 238,
-   "h": 98,
+   "h": 134,
    "kind": "soc_w",
    "title": "Alcohol limit",
    "lines": [
     "• ≤ 0.5 g/kg (< 2 beers or 1 glass of wine)",
-    "• wait ≥ 2 h before feeding"
+    "• wait ≥ 2 h before feeding",
+    "• half-life lengthens at higher doses"
    ]
   },
   {
    "id": "soc_inv_1_0",
    "x": 1073,
-   "y": 844,
+   "y": 1112,
    "w": 238,
-   "h": 80,
+   "h": 116,
    "kind": "soc_w",
    "title": "Tobacco",
    "lines": [
-    "risk is infection and sudden infant death, not the milk: not near the baby"
+    "risk is infection and sudden infant death, not the milk: not near the baby, change clothes"
    ]
   },
   {
    "id": "safe_tx_0_0",
    "x": 45,
-   "y": 964,
+   "y": 1268,
    "w": 238,
    "h": 80,
    "kind": "ok",
@@ -449,7 +461,7 @@
   {
    "id": "safe_tx_1_0",
    "x": 45,
-   "y": 1066,
+   "y": 1370,
    "w": 238,
    "h": 78,
    "kind": "warn",
@@ -461,7 +473,7 @@
   {
    "id": "terat_tx_0_0",
    "x": 295,
-   "y": 964,
+   "y": 1268,
    "w": 238,
    "h": 70,
    "kind": "ok",
@@ -473,7 +485,7 @@
   {
    "id": "terat_tx_1_0",
    "x": 295,
-   "y": 1056,
+   "y": 1360,
    "w": 238,
    "h": 88,
    "kind": "warn",
@@ -485,7 +497,7 @@
   {
    "id": "rid_tx_0_0",
    "x": 573,
-   "y": 964,
+   "y": 1268,
    "w": 238,
    "h": 180,
    "kind": "ok",
@@ -495,7 +507,7 @@
   {
    "id": "ci_tx_0_0",
    "x": 823,
-   "y": 964,
+   "y": 1268,
    "w": 238,
    "h": 180,
    "kind": "bad",
@@ -505,7 +517,7 @@
   {
    "id": "soc_tx_0_0",
    "x": 1073,
-   "y": 964,
+   "y": 1268,
    "w": 238,
    "h": 70,
    "kind": "ok",
@@ -515,7 +527,7 @@
   {
    "id": "soc_tx_1_0",
    "x": 1073,
-   "y": 1056,
+   "y": 1360,
    "w": 238,
    "h": 88,
    "kind": "warn",
@@ -529,12 +541,12 @@
   {
    "from": "root",
    "to": "g_preg",
-   "path": "M678.0 88V113H289.0V138"
+   "path": "M678.0 142V167H289.0V192"
   },
   {
    "from": "root",
    "to": "g_bf",
-   "path": "M678.0 88V113H942.0V138"
+   "path": "M678.0 142V167H942.0V192"
   },
   {
    "from": "terat_clue_0_0",
@@ -583,7 +595,7 @@
    "label": "most drugs",
    "label_at": [
     164.0,
-    238
+    310
    ]
   },
   {
@@ -605,7 +617,7 @@
    "label": "known teratogen",
    "label_at": [
     414.0,
-    238
+    310
    ]
   },
   {
@@ -627,7 +639,7 @@
    "label": "a usual medicine",
    "label_at": [
     692.0,
-    238
+    310
    ]
   },
   {
@@ -649,7 +661,7 @@
    "label": "on the short list",
    "label_at": [
     942.0,
-    238
+    310
    ]
   },
   {
@@ -671,9 +683,35 @@
    "label": "alcohol, smoking",
    "label_at": [
     1192.0,
-    238
+    310
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1482,
+   "w": 626,
+   "title": "What a drug can do to the fetus",
+   "items": [
+    "miscarriage: mifepristone, misoprostol · growth restriction: beta-blockers, cigarettes",
+    "malformation: thalidomide, valproate, isotretinoin, methotrexate · neonatal withdrawal: heroin",
+    "neonatal toxicity: chlorpropamide, lithium · neurodevelopment: alcohol, lead, mercury",
+    "cancer later: diethylstilbestrol (DES)"
+   ],
+   "cols": 2
+  },
+  {
+   "x": 685,
+   "y": 1482,
+   "w": 626,
+   "title": "Why keep breastfeeding",
+   "items": [
+    "WHO: breast milk alone for 6 months · the standard of care",
+    "↓ diarrhea, pneumonia, otitis media, bronchiolitis · less eczema · ↓ necrotizing enterocolitis · IQ ~+4",
+    "look it up: LactMed · Hale's Medications and Mothers' Milk · FRAME"
+   ],
+   "cols": 1
+  }
+ ]
 }

@@ -101,7 +101,8 @@ c_y = max(b_bot, geo["fert"][1] + geo["fert"][3]) + 50
 c_bot = node("crit", C - 260, c_y, 520, "plain", "Criteria for hormones",
              ["ADULTS (WPATH): persistent, well-documented dysphoria · capacity to consent · age of majority · medical or mental health concerns reasonably well-CONTROLLED",
               "ADOLESCENTS: confirmed persistence · able to consent · preferably parental support · usually ~16 y · decided by the team, adolescent + family",
-              "~after a psychosocial assessment + informed consent, with a referral from the assessing mental health professional"])
+              "~after a psychosocial assessment + informed consent, with a referral from the assessing mental health professional",
+              "~endocrinologist: supports start-up + troubleshooting, not necessarily the diagnosis"])
 down("block", "crit")
 node("adult", 15, c_y, 200, "plain", "Adult", ["~starts here"])
 side("adult", "crit")
@@ -111,7 +112,8 @@ h_y = c_bot + 60
 hw, hx = 480, [15, 505]
 mas = ["two goals: SUPPRESS the designated sex hormones, then REPLACE, as for a hypogonadal patient",
        "enanthate or cypionate 100–200 mg IM every 2 wk (or SC 50% weekly) · undecanoate 1000 mg every 12 wk · gel 1.6% 50–100 mg/d · patch 2.5–7.5 mg/d",
-       "~injection: \"roller coaster\" levels · oral: 2–3× daily with fatty food, CANNOT be monitored"]
+       "~injection: \"roller coaster\" levels, check T HALFWAY between doses · patch: skin irritation · gel: contaminates others, sweating · oral: 2–3× daily with fatty food, CANNOT be monitored",
+       "~free androgen index = T ÷ SHBG · SHBG ↓ in obesity"]
 fem = ["two goals: SUPPRESS the designated sex hormones, then REPLACE, as for a hypogonadal patient",
        "estradiol: oral 2–6 mg/d · patch 0.025–0.2 mg/d every 3–5 d · IM valerate or cypionate 5–30 mg every 2 wk",
        "anti-androgen: spironolactone 100–300 mg/d · cyproterone acetate 25–50 mg/d · or GnRH agonist 3.75 mg SC monthly"]

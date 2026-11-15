@@ -6,11 +6,13 @@
   "title": "A medicine in pregnancy or breastfeeding: is it worth it?",
   "lines": [
    "most drugs reach the baby, and most are still safe · always weigh the risk of the UNTREATED disease",
-   "the risk depends on the drug, the dose, the timing and her disease"
+   "the risk depends on the drug, the dose, the timing, genetic susceptibility and her disease",
+   "> 90% of pregnant women take a medicine (2.9 on average) · < 10% of drugs (1980–2010) have fetal risk data · < 50% of pregnancies planned",
+   "counsel by context: BEFORE (planning) · DURING (taking it) · AFTER (a baby with a malformation) · unsure → FRAME clinic"
   ]
  },
  "groups": [
-  {"id": "g_preg", "cols": [0, 1], "title": "PREGNANT: the placenta is NOT a barrier", "lines": ["timing of exposure: see the ANTENATAL CARE chart"]},
+  {"id": "g_preg", "cols": [0, 1], "title": "PREGNANT: the placenta is NOT a barrier", "lines": ["preimplantation: ALL OR NONE (miscarriage) · embryonic (organogenesis): MAJOR malformations · fetal: FUNCTIONAL defects"]},
   {"id": "g_bf", "cols": [2, 4], "title": "BREASTFEEDING: how much reaches the baby, and can the baby clear it?", "lines": ["most drugs cross into milk, in minute amounts"]}
  ],
  "sections": ["head", "clue", "inv", "tx"],
@@ -18,9 +20,9 @@
  "columns": [
   {
    "id": "safe", "colour": "teal", "drop_label": "most drugs",
-   "head": [[["h", "Most drugs: probably safe", ["baseline major malformation risk 2–4%, with or without a drug"]]]],
+   "head": [[["h", "Most drugs: probably safe", ["baseline major malformation risk 2–4%: 97% have a healthy baby", "causes: genetic 25% · drugs 1% · unknown 50%"]]]],
    "clue": [[["t", "Untreated disease harms too", ["• asthma, epilepsy", "• depression, psychosis", "• infections"]]]],
-   "inv": [[["w", "A malformation is > 99 in 100 times NOT a drug", ["put her risk in perspective: fear harms too"]]]],
+   "inv": [[["w", "A malformation is > 99 in 100 times NOT a drug", ["• put her risk in perspective: fear harms too", "• post-Chernobyl: 10,000–15,000 unwarranted terminations", "• animal data mislead: > 1200 drugs malformative in animals, not humans"]]]],
    "tx": [
     [["ok", "Treat: do NOT deny an effective drug", ["fewest drugs, as little as needed"]]],
     [["warn", "Careful with NEWER drugs", ["fetal harm often found years after release"]]]
@@ -31,7 +33,7 @@
    "head": [[["h", "Major teratogen", ["even these harm only a fraction of exposed babies"]]]],
    "clue": [
     [["bad", "Biggest risk", ["• isotretinoin > 30%, thalidomide ~30%", "• valproate > 15% + cognitive problems", "• mycophenolate ~6%"]]],
-    [["w", "Also", ["• carbamazepine: neural tube defect 1%", "• lithium: Ebstein's anomaly", "• warfarin, angiotensin-converting enzyme (ACE) inhibitors"]]]
+    [["w", "Also", ["• carbamazepine: neural tube defect 1%", "• lithium: Ebstein's anomaly (1 in 5000)", "• warfarin: fetal warfarin syndrome (rare)", "• ACE inhibitors, ARBs · methotrexate · DES", "• alcohol · phenytoin, topiramate · methimazole · tetracycline, trimethoprim · misoprostol · lead, mercury"]]]
    ],
    "inv": [[["w", "Uncertain or overstated", ["• selective serotonin reuptake inhibitors (SSRIs): ~1%, uncertain", "• statins: probably a myth"]]]],
    "tx": [
@@ -42,9 +44,9 @@
   {
    "id": "rid", "colour": "blue", "drop_label": "a usual medicine",
    "head": [[["h", "Usually SAFE", ["most medications are not contraindicated"]]]],
-   "clue": [[["t", "Gets INTO milk if", ["• high maternal blood level, fat-soluble", "• not protein-bound", "• small: > 500 daltons stays out (insulin, heparin)"]]]],
+   "clue": [[["t", "Gets INTO milk if", ["• high maternal blood level, fat-soluble or transported (BCRP)", "• not protein-bound", "• small: > 500 daltons stays out (insulin > 6000, heparin 40,000; ethanol 200 gets in)", "• then must be absorbed from the baby's gut"]]]],
    "inv": [
-    [["t", "1 · Relative infant dose (RID) < 10% = safe", ["baby's dose from milk ÷ mother's dose per kg (fluoxetine 1.2%)"]]],
+    [["t", "1 · Relative infant dose (RID) < 10% = safe", ["• milk concentration × 150 mL/kg/day ÷ maternal dose per kg per day", "• fluoxetine 1.2%", "• milk/plasma ratio > 1 = concentrates in milk, but often harmless"]]],
     [["w", "2 · Can the baby absorb and clear it?", ["slow clearance → it accumulates"]]]
    ],
    "tx": [[["ok", "Keep the drug AND breastfeeding", []]]]
@@ -54,7 +56,7 @@
    "head": [[["h", "Contraindicated", ["a short list"]]]],
    "clue": [[["bad", "Avoid", ["• atenolol (renally cleared beta-blocker)", "• cancer drugs, radioactive iodine", "• cocaine, heroin"]]]],
    "inv": [
-    [["t", "Why atenolol: RID ~20%", ["newborn kidneys clear it slowly in week 1: slow heart, cyanosis"]]],
+    [["t", "Why atenolol: RID ~20%", ["• newborn kidneys clear it slowly in week 1: slow heart, cyanosis", "• same for water-soluble acebutolol, nadolol, sotalol"]]],
     [["w", "Problematic, not forbidden", ["• lithium, amiodarone, phenobarbital", "• ethosuximide, ergotamine, bromocriptine"]]]
    ],
    "tx": [[["bad", "Not while breastfeeding", []]]]
@@ -64,13 +66,26 @@
    "head": [[["h", "Alcohol, tobacco, cannabis, coffee", ["not contraindicated, except as below"]]]],
    "clue": [[["t", "Alcohol does NOT increase milk", ["keep it minimal"]]]],
    "inv": [
-    [["w", "Alcohol limit", ["• ≤ 0.5 g/kg (< 2 beers or 1 glass of wine)", "• wait ≥ 2 h before feeding"]]],
-    [["w", "Tobacco", ["risk is infection and sudden infant death, not the milk: not near the baby"]]]
+    [["w", "Alcohol limit", ["• ≤ 0.5 g/kg (< 2 beers or 1 glass of wine)", "• wait ≥ 2 h before feeding", "• half-life lengthens at higher doses"]]],
+    [["w", "Tobacco", ["risk is infection and sudden infant death, not the milk: not near the baby, change clothes"]]]
    ],
    "tx": [
     [["ok", "Coffee: fine", []]],
     [["warn", "Cannabis: encourage quitting", ["risk to the baby unclear"]]]
    ]
   }
+ ],
+ "panels": [
+  {"title": "What a drug can do to the fetus", "cols": 2, "items": [
+   "miscarriage: mifepristone, misoprostol · growth restriction: beta-blockers, cigarettes",
+   "malformation: thalidomide, valproate, isotretinoin, methotrexate · neonatal withdrawal: heroin",
+   "neonatal toxicity: chlorpropamide, lithium · neurodevelopment: alcohol, lead, mercury",
+   "cancer later: diethylstilbestrol (DES)"
+  ]},
+  {"title": "Why keep breastfeeding", "items": [
+   "WHO: breast milk alone for 6 months · the standard of care",
+   "↓ diarrhea, pneumonia, otitis media, bronchiolitis · less eczema · ↓ necrotizing enterocolitis · IQ ~+4",
+   "look it up: LactMed · Hale's Medications and Mothers' Milk · FRAME"
+  ]}
  ]
 }

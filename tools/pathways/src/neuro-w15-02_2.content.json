@@ -1,239 +1,74 @@
 {
  "name": "brain tumours overview",
- "title": "Suspected brain tumour: progressive symptoms and raised intracranial pressure prompt a contrast MRI; metastasis is treated by resection and radiation, a glioma by its grade (an enhancing high-grade glioma is treated at once, a non-enhancing low-grade glioma can be watched), and primary CNS lymphoma is suspected in the immunosuppressed",
+ "title": "Suspected brain tumour: progressive symptoms and raised intracranial pressure prompt a contrast MRI; metastasis is treated by resection and radiation, a glioma by its grade (an enhancing high-grade glioma is treated at once, a non-enhancing low-grade glioma can be watched), and primary CNS lymphoma is suspected in the immunosuppressed; raised pressure and herniation, tumour classification and paraneoplastic syndromes are compared below",
  "col_w": 236,
  "root": {
   "title": "Could it be a brain TUMOUR? The red flag is PROGRESSIVE symptoms",
   "lines": [
+   "• neuro symptoms or signs progressing over days to weeks · SHORT history (weeks to a few months) = highly malignant · LONG (months or more) = benign or slow-growing",
    "• raised pressure: ↓ consciousness · headache, nausea, vomiting · Cushing response · papilledema (LATE) · herniation",
    "• headache: persistent, progressive, worse lying down and in the morning, wakes from sleep, worse with cough or Valsalva",
-   "• focal deficit · mental status change (mistaken for depression or dementia) · seizures, especially focal",
-   "• CONTRAST MRI (gadolinium) = test of choice · CT only WITH contrast · tissue diagnosis still needed",
-   "• steroids for brain swelling · anti-seizure drugs only once there is a seizure"
+   "• focal deficit (weakness, sensory loss, dysphasia, gait, vision), insidious · mental status change: apathy, personality change (mistaken for depression or dementia) · seizures, especially FOCAL",
+   "• diagnosis: history · exam · CONTRAST MRI (gadolinium) = test of choice · CT only WITH contrast · TISSUE diagnosis (biopsy or resection) still needed",
+   "• steroids for brain swelling · anti-seizure drugs only once there is a seizure · seizure → no driving, Ministry of Transportation notified"
   ]
  },
  "groups": [
-  {
-   "id": "g_sec",
-   "cols": [
-    0,
-    0
-   ],
-   "title": "SECONDARY: metastasis",
-   "lines": [
-    "the MORE common kind"
-   ]
-  },
-  {
-   "id": "g_pri",
-   "cols": [
-    1,
-    3
-   ],
-   "title": "PRIMARY",
-   "lines": [
-    "gliomas are the most common primary"
-   ]
-  }
+  {"id": "g_sec", "cols": [0, 0], "title": "SECONDARY: metastasis", "lines": ["the MORE common kind"]},
+  {"id": "g_pri", "cols": [1, 3], "title": "PRIMARY", "lines": ["gliomas are the most common primary"]}
  ],
  "tiers": [
-  {
-   "id": "t_enh",
-   "cols": [
-    1,
-    2
-   ],
-   "title": "Glioma: does it ENHANCE with contrast?",
-   "lines": [
-    "enhancement = high grade (3 or 4)"
-   ]
-  }
+  {"id": "t_enh", "cols": [1, 2], "title": "Glioma: does it ENHANCE with contrast?", "lines": ["enhancement = high grade (3 or 4)"]}
  ],
- "sections": [
-  "head",
-  "pres",
-  "tx"
- ],
- "row_names": {
-  "pres": "CLUES",
-  "tx": "TREATMENT"
- },
+ "sections": ["head", "pres", "tx"],
+ "row_names": {"pres": "CLUES", "tx": "TREATMENT"},
  "columns": [
-  {
-   "id": "met",
-   "colour": "teal",
-   "drop_label": "known cancer, smoker",
-   "head": [
-    [
-     [
-      "h",
-      "Brain metastasis",
-      [
-       "most common CNS tumour"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Where from?",
-      [
-       "• lung (small cell, adenocarcinoma)",
-       "• breast · melanoma · renal cell",
-       "• often multiple, enhancing lesions"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "Accessible + causing symptoms",
-      [
-       "1 · resection (biopsy only if difficult)",
-       "2 · then radiation: whole-brain or stereotactic radiosurgery",
-       "3 · treat the primary cancer too"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "hgg",
-   "colour": "orange",
-   "drop_from": "t_enh",
-   "drop_label": "ENHANCES",
-   "head": [
-    [
-     [
-      "h",
-      "High-grade glioma",
-      [
-       "grade 3 anaplastic · grade 4 glioblastoma"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "SHORT history",
-      [
-       "weeks to a few months"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "bad",
-      "TREAT IMMEDIATELY",
-      [
-       "1 · maximal safe resection (deep → stereotactic biopsy)",
-       "2 · radiation, 15-30 treatments",
-       "3 · temozolomide (oral) during and 6-12 months after",
-       "~ glioblastoma: median survival 14-18 months"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "lgg",
-   "colour": "blue",
-   "drop_from": "t_enh",
-   "drop_label": "does NOT enhance",
-   "head": [
-    [
-     [
-      "h",
-      "Low-grade glioma",
-      [
-       "grade 2 · slow, but still malignant"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "LONG history",
-      [
-       "• months or longer",
-       "• may be seizures only"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "No symptoms or seizures controlled",
-      [
-       "serial MRI · biopsy deferred"
-      ]
-     ]
-    ],
-    [
-     [
-      "warn",
-      "TREAT if ANY of these",
-      [
-       "• new or progressive symptoms",
-       "• clear progression on MRI (starts to enhance)",
-       "• patient preference · older, very large",
-       "→ biopsy or resection, then radiation"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "pcl",
-   "colour": "purple",
-   "drop_label": "immunosuppressed",
-   "head": [
-    [
-     [
-      "h",
-      "Primary CNS lymphoma",
-      [
-       "non-neural tissue, confined to the CNS"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Who gets it?",
-      [
-       "• HIV, immunosuppressed",
-       "• also immunocompetent people",
-       "• B-cell non-Hodgkin in 90%"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "w",
-      "Tissue diagnosis",
-      [
-       "biopsy, as for every brain tumour"
-      ]
-     ]
-    ]
-   ]
-  }
+  {"id": "met", "colour": "teal", "drop_label": "known cancer, smoker",
+   "head": [[["h", "Brain metastasis", ["most common CNS tumour", "15% of cancer deaths: brain mets at autopsy", "15-20% of cancers PRESENT as a brain met"]]]],
+   "pres": [[["t", "Where from?", ["• lung: 16% of brain mets (small cell, adenocarcinoma)", "• breast · melanoma · renal cell", "• rare: prostate, gut, bladder, gynecologic", "• often multiple, enhancing lesions"]]],
+            [["w", "case: 75, 60 pack-years, 3 weeks", ["progressive positional headache, confusion, word finding, vomiting, right arm twitching · right hemiparesis → lung primary"]]]],
+   "tx": [[["ok", "Accessible + causing symptoms", ["1 · resection (biopsy only if difficult)", "2 · then radiation: whole-brain or stereotactic radiosurgery", "3 · treat the primary cancer too", "~ choice depends on clinical status, prognosis"]]],
+          [["w", "case outcome", ["steroids, anti-seizure drug · resected even though lung biopsy possible (symptomatic) · brain + chest radiation · died at 14 months"]]]]},
+  {"id": "hgg", "colour": "orange", "drop_from": "t_enh", "drop_label": "ENHANCES",
+   "head": [[["h", "High-grade glioma", ["grade 3 anaplastic · grade 4 glioblastoma"]]]],
+   "pres": [[["t", "SHORT history", ["weeks to a few months"]]],
+            [["w", "case: 78, 2 months", ["headache, confusion, memory loss · normal exam → MRI: deep glioblastoma → steroids, stereotactic biopsy, palliative radiation + chemo · died at 5 months"]]]],
+   "tx": [[["bad", "TREAT IMMEDIATELY", ["1 · maximal safe resection (deep → stereotactic biopsy)", "2 · radiation, 15-30 treatments", "3 · temozolomide (oral) during and 6-12 months after", "~ resecting all visible tumour helps, but NOT curative"]]],
+          [["w", "Glioblastoma survival", ["• radiation alone: 10-12 months · 2-year 10%", "• + temozolomide: 14-15 months · 2-year 26%", "• surgery + both: 18 months · 2-year 40%", "~ worse with age, poor performance status"]]],
+          [["warn", "Radiation side effects", ["• early: neuro worsening, hair loss, dermatitis, otitis externa, fatigue", "• late: cognitive decline, focal necrosis, radiation vasculitis (stroke), second cancer"]]]]},
+  {"id": "lgg", "colour": "blue", "drop_from": "t_enh", "drop_label": "does NOT enhance",
+   "head": [[["h", "Low-grade glioma", ["grade 2 · slow, but still MALIGNANT", "only grade 1 (pilocytic) is not"]]]],
+   "pres": [[["t", "LONG history", ["• months or longer", "• may be seizures only"]]],
+            [["w", "case: 32, resident on call", ["first tonic-clonic seizure, no headache → non-enhancing glioma · seizure-free on anti-seizure drugs"]]]],
+   "tx": [[["ok", "No symptoms or seizures controlled", ["serial MRI · biopsy deferred"]]],
+          [["warn", "TREAT if ANY of these", ["• new or progressive symptoms", "• clear progression on MRI (starts to enhance)", "• patient preference · older, very large"]]],
+          [["ok", "Then", ["1 · biopsy or resection to confirm", "2 · radiation (most common)", "• chemo alone: some oligodendrogliomas", "• complete resection: may observe"]]],
+          [["w", "Median survival 5-15 years", ["BETTER: oligodendroglioma with 1p/19q deletion"]]]]},
+  {"id": "pcl", "colour": "purple", "drop_label": "immunosuppressed",
+   "head": [[["h", "Primary CNS lymphoma", ["non-neural tissue, confined to the CNS", "NOT spread from systemic lymphoma", "rising incidence"]]]],
+   "pres": [[["t", "Who gets it?", ["• HIV, immunosuppressed", "• also immunocompetent people", "• B-cell non-Hodgkin in 90%"]]]],
+   "tx": [[["w", "Tissue diagnosis", ["biopsy, as for every brain tumour"]]]]}
+ ],
+ "panels": [
+  {"title": "Raised pressure and herniation", "items": [
+   "normal: adults 7.5-20 cm water (5-15 mmHg) · children 3-7 · infants 1.5-6",
+   "Monro-Kellie: rigid skull · brain + CSF + blood + mass · compensates only up to a point",
+   "mass effect: focal (tumour, bleed, abscess, infarct) · generalized (hydrocephalus, meningitis, edema after trauma, hypoxia, CPR)",
+   "lumbar puncture: CAUTION with a mass · monitor or ventricular drain (drains CSF)",
+   "uncal: ipsilateral CN III palsy + dilated pupil · contralateral weakness",
+   "central: ↓ consciousness · tonsillar: medulla compressed, FATAL",
+   "descending: CN III (most common), IV, VI · PCA, ACA stroke · Duret hemorrhage · Cushing triad: hypertension, bradycardia, apnea"]},
+  {"title": "Primary tumour classification", "items": [
+   "glioma (astrocytoma, oligodendroglioma, ependymoma) · meningioma · lymphoma · schwannoma, neurofibroma · pituitary, craniopharyngioma · germ cell",
+   "WHO grade: 1 pilocytic astrocytoma · 2 low grade · 3 anaplastic · 4 glioblastoma",
+   "IDH mutant + 1p/19q co-deleted → BETTER prognosis · IDH wild-type, 1p/19q intact → worse",
+   "integrated diagnosis = histology + grade + biomarkers · astrocytoma more aggressive than oligodendroglioma"]},
+  {"title": "Paraneoplastic neurologic syndromes", "items": [
+   "rare (0.01% of cancers) · mostly immune · neuro symptoms PRECEDE the cancer by weeks to months",
+   "Lambert-Eaton: 3% of small cell lung · anti-voltage-gated calcium channel",
+   "myasthenia gravis: 15% of thymoma",
+   "cerebellar degeneration: ovarian, breast, lung · anti-Yo",
+   "limbic encephalitis, encephalomyelitis: small cell lung · anti-Hu",
+   "neuropathy: small cell lung, osteosclerotic myeloma · opsoclonus-myoclonus: childhood neuroblastoma"]}
  ]
 }

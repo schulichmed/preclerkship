@@ -169,73 +169,73 @@
  "bands": [
   {
    "x": 40,
-   "y": 328,
+   "y": 364,
    "w": 246,
-   "h": 852,
+   "h": 1010,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 288,
-   "y": 328,
+   "y": 364,
    "w": 246,
-   "h": 852,
+   "h": 1010,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 564,
-   "y": 328,
+   "y": 364,
    "w": 246,
-   "h": 852,
+   "h": 1010,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 812,
-   "y": 328,
+   "y": 364,
    "w": 246,
-   "h": 852,
+   "h": 1010,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 1060,
-   "y": 328,
+   "y": 364,
    "w": 246,
-   "h": 852,
+   "h": 1010,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 1336,
-   "y": 328,
+   "y": 364,
    "w": 246,
-   "h": 852,
+   "h": 1010,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
   {
    "x": 1584,
-   "y": 328,
+   "y": 364,
    "w": 246,
-   "h": 852,
+   "h": 1010,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
   {
    "x": 1860,
-   "y": 328,
+   "y": 364,
    "w": 246,
-   "h": 852,
+   "h": 1010,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
    "x": 2136,
-   "y": 328,
+   "y": 364,
    "w": 246,
-   "h": 852,
+   "h": 1010,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   }
@@ -243,20 +243,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 492,
-   "h": 116,
+   "y": 582,
+   "h": 150,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 648,
-   "h": 182,
+   "y": 772,
+   "h": 198,
    "text": "EXAM, IMAGING & WORKUP"
   },
   {
    "x": 23,
-   "y": 870,
-   "h": 302,
+   "y": 1010,
+   "h": 356,
    "text": "TREATMENT"
   }
  ],
@@ -270,6 +270,7 @@
    "title": "Knee problem: was there TRAUMA? If so, what was the MECHANISM and how fast did it SWELL? If not, WHERE does it hurt?",
    "lines": [
     "every injury: history and exam first · X-ray to rule out a fracture (usually normal) · MRI only when the exam cannot decide",
+    "ask: pain · inflammatory (swelling, warmth) · neurologic · function (giving way, locking, limping) · provoked by weight bearing, stairs, sitting, inactivity",
     "TRAUMA, swelling within 6 h: anterior cruciate ligament (ACL) tear, fracture, patellar dislocation, large chondral injury",
     "TRAUMA, swelling after 6 h: meniscal injury, posterior cruciate (PCL) injury, high-grade medial collateral (MCL) sprain, arthritis flare"
    ]
@@ -277,7 +278,7 @@
   {
    "id": "g_twist",
    "x": 45,
-   "y": 194,
+   "y": 230,
    "w": 484,
    "h": 62,
    "kind": "plain",
@@ -289,7 +290,7 @@
   {
    "id": "g_blow",
    "x": 569,
-   "y": 194,
+   "y": 230,
    "w": 732,
    "h": 62,
    "kind": "plain",
@@ -301,7 +302,7 @@
   {
    "id": "g_ant",
    "x": 1341,
-   "y": 194,
+   "y": 230,
    "w": 484,
    "h": 62,
    "kind": "plain",
@@ -311,7 +312,7 @@
   {
    "id": "g_lat",
    "x": 1865,
-   "y": 194,
+   "y": 230,
    "w": 236,
    "h": 62,
    "kind": "plain",
@@ -321,7 +322,7 @@
   {
    "id": "g_post",
    "x": 2141,
-   "y": 194,
+   "y": 230,
    "w": 236,
    "h": 62,
    "kind": "plain",
@@ -331,35 +332,37 @@
   {
    "id": "acl_head_0_0",
    "x": 45,
-   "y": 336,
+   "y": 372,
    "w": 236,
-   "h": 116,
+   "h": 170,
    "kind": "acl_h",
    "title": "Anterior cruciate ligament (ACL) tear",
    "lines": [
-    "non-contact in 60–80%",
+    "non-contact in 60–80% · contact 30%: blow → hyperextension or valgus",
+    "case: 27, football pivot, knee 'moves', can't weight bear",
     "female 4.5 : 1 · pivoting sports"
    ]
   },
   {
    "id": "men_head_0_0",
    "x": 293,
-   "y": 336,
+   "y": 372,
    "w": 236,
-   "h": 116,
+   "h": 170,
    "kind": "men_h",
    "title": "Meniscal tear",
    "lines": [
     "twisting with the foot planted",
-    "or degenerative with age"
+    "or degenerative with age",
+    "case: 23, hockey, knee rotates: medial pain, swells that NIGHT"
    ]
   },
   {
    "id": "pcl_head_0_0",
    "x": 569,
-   "y": 336,
+   "y": 372,
    "w": 236,
-   "h": 116,
+   "h": 170,
    "kind": "pcl_h",
    "title": "Posterior cruciate ligament (PCL) tear",
    "lines": [
@@ -370,9 +373,9 @@
   {
    "id": "mcl_head_0_0",
    "x": 817,
-   "y": 336,
+   "y": 372,
    "w": 236,
-   "h": 116,
+   "h": 170,
    "kind": "mcl_h",
    "title": "Medial collateral ligament (MCL) injury",
    "lines": [
@@ -383,48 +386,49 @@
   {
    "id": "lcl_head_0_0",
    "x": 1065,
-   "y": 336,
+   "y": 372,
    "w": 236,
-   "h": 116,
+   "h": 170,
    "kind": "lcl_h",
    "title": "Lateral collateral ligament (LCL) injury",
    "lines": [
     "high-energy VARUS force",
-    "uncommon on its own"
+    "uncommon on its own · collisions"
    ]
   },
   {
    "id": "pfps_head_0_0",
    "x": 1341,
-   "y": 336,
+   "y": 372,
    "w": 236,
-   "h": 116,
+   "h": 170,
    "kind": "pfps_h",
    "title": "Patellofemoral pain syndrome",
    "lines": [
-    "females, adolescents",
+    "females, adolescents · 30% lifetime",
+    "repetitive loading of the extensor mechanism",
     "↑ tibiofemoral angle and Q-angle"
    ]
   },
   {
    "id": "bur_head_0_0",
    "x": 1589,
-   "y": 336,
+   "y": 372,
    "w": 236,
-   "h": 116,
+   "h": 170,
    "kind": "bur_h",
    "title": "Knee bursitis",
    "lines": [
     "prepatellar · infrapatellar · suprapatellar",
-    "chronic friction"
+    "chronic friction · common"
    ]
   },
   {
    "id": "itb_head_0_0",
    "x": 1865,
-   "y": 336,
+   "y": 372,
    "w": 236,
-   "h": 116,
+   "h": 170,
    "kind": "itb_h",
    "title": "Iliotibial band friction syndrome",
    "lines": [
@@ -434,21 +438,22 @@
   {
    "id": "bak_head_0_0",
    "x": 2141,
-   "y": 336,
+   "y": 372,
    "w": 236,
-   "h": 116,
+   "h": 170,
    "kind": "bak_h",
    "title": "Popliteal (Baker's) cyst",
    "lines": [
-    "synovial fluid through a defect in the back of the capsule"
+    "synovial fluid through a defect in the back of the capsule",
+    "from the gastrocnemius-semimembranosus bursa · adults"
    ]
   },
   {
    "id": "acl_pres_0_0",
    "x": 45,
-   "y": 492,
+   "y": 582,
    "w": 236,
-   "h": 116,
+   "h": 150,
    "kind": "acl_t",
    "title": "\"Pop\" + IMMEDIATE swelling",
    "lines": [
@@ -460,9 +465,9 @@
   {
    "id": "men_pres_0_0",
    "x": 293,
-   "y": 492,
+   "y": 582,
    "w": 236,
-   "h": 116,
+   "h": 150,
    "kind": "men_t",
    "title": "Joint-line pain · DELAYED or on-and-off swelling",
    "lines": [
@@ -472,22 +477,23 @@
   {
    "id": "pcl_pres_0_0",
    "x": 569,
-   "y": 492,
+   "y": 582,
    "w": 236,
-   "h": 116,
+   "h": 150,
    "kind": "pcl_t",
    "title": "Vague pain, sometimes posterior",
    "lines": [
     "• MINIMAL swelling",
-    "• less common than ACL"
+    "• less common than ACL",
+    "• with meniscal, chondral injury"
    ]
   },
   {
    "id": "mcl_pres_0_0",
    "x": 817,
-   "y": 492,
+   "y": 582,
    "w": 236,
-   "h": 116,
+   "h": 150,
    "kind": "mcl_t",
    "title": "Medial pain · minimal to no swelling",
    "lines": [
@@ -498,9 +504,9 @@
   {
    "id": "lcl_pres_0_0",
    "x": 1065,
-   "y": 492,
+   "y": 582,
    "w": 236,
-   "h": 116,
+   "h": 150,
    "kind": "lcl_t",
    "title": "No swelling if isolated",
    "lines": [
@@ -510,22 +516,23 @@
   {
    "id": "pfps_pres_0_0",
    "x": 1341,
-   "y": 492,
+   "y": 582,
    "w": 236,
-   "h": 116,
+   "h": 150,
    "kind": "pfps_t",
    "title": "Gradual deep anterior ache",
    "lines": [
     "• worse after activity and with prolonged sitting, stairs",
-    "• NO joint swelling"
+    "• NO joint swelling · or after a patellar contusion",
+    "case: 18, new runner, 3 months bilateral, now sitting + stairs"
    ]
   },
   {
    "id": "bur_pres_0_0",
    "x": 1589,
-   "y": 492,
+   "y": 582,
    "w": 236,
-   "h": 116,
+   "h": 150,
    "kind": "bur_t",
    "title": "Mild swelling + tenderness over the bursa",
    "lines": []
@@ -533,9 +540,9 @@
   {
    "id": "itb_pres_0_0",
    "x": 1865,
-   "y": 492,
+   "y": 582,
    "w": 236,
-   "h": 116,
+   "h": 150,
    "kind": "itb_t",
    "title": "Aching LATERAL knee during running",
    "lines": [
@@ -546,9 +553,9 @@
   {
    "id": "bak_pres_0_0",
    "x": 2141,
-   "y": 492,
+   "y": 582,
    "w": 236,
-   "h": 116,
+   "h": 150,
    "kind": "bak_t",
    "title": "Uncomfortable swelling behind the knee",
    "lines": [
@@ -559,9 +566,9 @@
   {
    "id": "acl_inv_0_0",
    "x": 45,
-   "y": 648,
+   "y": 772,
    "w": 236,
-   "h": 90,
+   "h": 98,
    "kind": "acl_w",
    "title": "1 · Lachman (best) · anterior drawer · pivot shift",
    "lines": []
@@ -569,9 +576,9 @@
   {
    "id": "acl_inv_1_0",
    "x": 45,
-   "y": 760,
+   "y": 892,
    "w": 236,
-   "h": 70,
+   "h": 78,
    "kind": "acl_w",
    "title": "2 · MRI if the exam is unsure",
    "lines": []
@@ -579,9 +586,9 @@
   {
    "id": "men_inv_0_0",
    "x": 293,
-   "y": 648,
+   "y": 772,
    "w": 236,
-   "h": 90,
+   "h": 98,
    "kind": "men_w",
    "title": "1 · Effusion · joint-line tenderness · McMurray · Thessaly",
    "lines": []
@@ -589,9 +596,9 @@
   {
    "id": "men_inv_1_0",
    "x": 293,
-   "y": 760,
+   "y": 892,
    "w": 236,
-   "h": 70,
+   "h": 78,
    "kind": "men_w",
    "title": "2 · MRI if conservative care fails or the tear is large",
    "lines": []
@@ -599,9 +606,9 @@
   {
    "id": "pcl_inv_0_0",
    "x": 569,
-   "y": 648,
+   "y": 772,
    "w": 236,
-   "h": 62,
+   "h": 70,
    "kind": "pcl_w",
    "title": "1 · Posterior drawer · sag sign · reverse Lachman",
    "lines": []
@@ -609,9 +616,9 @@
   {
    "id": "pcl_inv_1_0",
    "x": 569,
-   "y": 732,
+   "y": 864,
    "w": 236,
-   "h": 98,
+   "h": 106,
    "kind": "pcl_w",
    "title": "2 · X-ray + stress X-ray (grading)",
    "lines": [
@@ -621,9 +628,9 @@
   {
    "id": "mcl_inv_0_0",
    "x": 817,
-   "y": 648,
+   "y": 772,
    "w": 236,
-   "h": 182,
+   "h": 198,
    "kind": "mcl_w",
    "title": "Valgus stress on the flexed knee",
    "lines": [
@@ -633,9 +640,9 @@
   {
    "id": "lcl_inv_0_0",
    "x": 1065,
-   "y": 648,
+   "y": 772,
    "w": 236,
-   "h": 182,
+   "h": 198,
    "kind": "lcl_w",
    "title": "Varus stress on the flexed knee",
    "lines": [
@@ -645,9 +652,9 @@
   {
    "id": "pfps_inv_0_0",
    "x": 1341,
-   "y": 648,
+   "y": 772,
    "w": 236,
-   "h": 182,
+   "h": 198,
    "kind": "pfps_w",
    "title": "Clinical diagnosis: NO imaging",
    "lines": [
@@ -657,9 +664,9 @@
   {
    "id": "bur_inv_0_0",
    "x": 1589,
-   "y": 648,
+   "y": 772,
    "w": 236,
-   "h": 70,
+   "h": 78,
    "kind": "bur_w",
    "title": "Clinical diagnosis",
    "lines": []
@@ -667,9 +674,9 @@
   {
    "id": "bur_inv_1_0",
    "x": 1589,
-   "y": 740,
+   "y": 872,
    "w": 236,
-   "h": 90,
+   "h": 98,
    "kind": "bad",
    "title": "Do not miss SEPTIC bursitis or trauma",
    "lines": []
@@ -677,9 +684,9 @@
   {
    "id": "itb_inv_0_0",
    "x": 1865,
-   "y": 648,
+   "y": 772,
    "w": 236,
-   "h": 182,
+   "h": 198,
    "kind": "itb_w",
    "title": "Clinical, from the running history",
    "lines": [
@@ -689,9 +696,9 @@
   {
    "id": "bak_inv_0_0",
    "x": 2141,
-   "y": 648,
+   "y": 772,
    "w": 236,
-   "h": 81,
+   "h": 80,
    "kind": "bak_w",
    "title": "1 · Ultrasound confirms the cyst",
    "lines": [
@@ -701,22 +708,22 @@
   {
    "id": "bak_inv_1_0",
    "x": 2141,
-   "y": 751,
+   "y": 874,
    "w": 236,
-   "h": 79,
+   "h": 96,
    "kind": "bad",
    "title": "Rule out",
    "lines": [
     "• popliteal artery aneurysm",
-    "• deep vein thrombosis · tumour"
+    "• deep vein thrombosis · tumour · meniscal cyst"
    ]
   },
   {
    "id": "acl_tx_0_0",
    "x": 45,
-   "y": 870,
+   "y": 1010,
    "w": 236,
-   "h": 140,
+   "h": 167,
    "kind": "ok",
    "title": "1 · Rest, ice, compression, elevation (RICE) · crutches",
    "lines": [
@@ -727,19 +734,19 @@
   {
    "id": "acl_tx_1_0",
    "x": 45,
-   "y": 1032,
+   "y": 1199,
    "w": 236,
-   "h": 140,
+   "h": 167,
    "kind": "ok",
    "title": "2 · Orthopedic referral → reconstruction",
    "lines": [
-    "back to sport 9–12 months after surgery"
+    "back to sport 9–12 months after surgery · 3-6% reinjure"
    ]
   },
   {
    "id": "men_tx_0_0",
    "x": 293,
-   "y": 870,
+   "y": 1010,
    "w": 236,
    "h": 82,
    "kind": "ok",
@@ -749,7 +756,7 @@
   {
    "id": "men_tx_1_0",
    "x": 293,
-   "y": 974,
+   "y": 1114,
    "w": 236,
    "h": 78,
    "kind": "ok",
@@ -762,33 +769,34 @@
   {
    "id": "men_tx_2_0",
    "x": 293,
-   "y": 1074,
+   "y": 1214,
    "w": 236,
-   "h": 98,
+   "h": 152,
    "kind": "warn",
    "title": "White zone or chronic degenerative → RESECT",
    "lines": [
-    "degenerative: surgery depends on arthritis"
+    "degenerative: oral OTC, steroid injection, bracing · arthroscopic repair or debridement by the arthritis · arthroplasty last",
+    "return to play 6 weeks to 3 months"
    ]
   },
   {
    "id": "pcl_tx_0_0",
    "x": 569,
-   "y": 870,
+   "y": 1010,
    "w": 236,
-   "h": 129,
+   "h": 165,
    "kind": "ok",
    "title": "Physiotherapy + PCL brace",
    "lines": [
-    "usually enough"
+    "usually enough · 50% return to the same level or higher"
    ]
   },
   {
    "id": "pcl_tx_1_0",
    "x": 569,
-   "y": 1021,
+   "y": 1197,
    "w": 236,
-   "h": 151,
+   "h": 169,
    "kind": "warn",
    "title": "Rotatory instability or posterolateral corner → reconstruction",
    "lines": []
@@ -796,9 +804,9 @@
   {
    "id": "mcl_tx_0_0",
    "x": 817,
-   "y": 870,
+   "y": 1010,
    "w": 236,
-   "h": 302,
+   "h": 356,
    "kind": "ok",
    "title": "Early range of motion + bracing",
    "lines": []
@@ -806,9 +814,9 @@
   {
    "id": "lcl_tx_0_0",
    "x": 1065,
-   "y": 870,
+   "y": 1010,
    "w": 236,
-   "h": 130,
+   "h": 157,
    "kind": "ok",
    "title": "Bracing",
    "lines": []
@@ -816,9 +824,9 @@
   {
    "id": "lcl_tx_1_0",
    "x": 1065,
-   "y": 1022,
+   "y": 1189,
    "w": 236,
-   "h": 150,
+   "h": 177,
    "kind": "warn",
    "title": "Other injuries or instability → surgical repair",
    "lines": []
@@ -826,9 +834,9 @@
   {
    "id": "pfps_tx_0_0",
    "x": 1341,
-   "y": 870,
+   "y": 1010,
    "w": 236,
-   "h": 302,
+   "h": 356,
    "kind": "ok",
    "title": "Activity changes + physiotherapy",
    "lines": [
@@ -839,9 +847,9 @@
   {
    "id": "bur_tx_0_0",
    "x": 1589,
-   "y": 870,
+   "y": 1010,
    "w": 236,
-   "h": 302,
+   "h": 356,
    "kind": "ok",
    "title": "PRICE + anti-inflammatories (NSAIDs)",
    "lines": [
@@ -851,9 +859,9 @@
   {
    "id": "itb_tx_0_0",
    "x": 1865,
-   "y": 870,
+   "y": 1010,
    "w": 236,
-   "h": 302,
+   "h": 356,
    "kind": "ok",
    "title": "PRICE + stretch the iliotibial band",
    "lines": []
@@ -861,9 +869,9 @@
   {
    "id": "bak_tx_0_0",
    "x": 2141,
-   "y": 870,
+   "y": 1010,
    "w": 236,
-   "h": 121,
+   "h": 148,
    "kind": "ok",
    "title": "1 · Conservative for 6 weeks",
    "lines": [
@@ -873,9 +881,9 @@
   {
    "id": "bak_tx_1_0",
    "x": 2141,
-   "y": 1013,
+   "y": 1180,
    "w": 236,
-   "h": 159,
+   "h": 186,
    "kind": "warn",
    "title": "Not settling, or vessel or nerve compromised",
    "lines": [
@@ -887,27 +895,27 @@
   {
    "from": "root",
    "to": "g_twist",
-   "path": "M1211.0 144V169H287.0V194"
+   "path": "M1211.0 180V205H287.0V230"
   },
   {
    "from": "root",
    "to": "g_blow",
-   "path": "M1211.0 144V169H935.0V194"
+   "path": "M1211.0 180V205H935.0V230"
   },
   {
    "from": "root",
    "to": "g_ant",
-   "path": "M1211.0 144V169H1583.0V194"
+   "path": "M1211.0 180V205H1583.0V230"
   },
   {
    "from": "root",
    "to": "g_lat",
-   "path": "M1211.0 144V169H1983.0V194"
+   "path": "M1211.0 180V205H1983.0V230"
   },
   {
    "from": "root",
    "to": "g_post",
-   "path": "M1211.0 144V169H2259.0V194"
+   "path": "M1211.0 180V205H2259.0V230"
   },
   {
    "from": "acl_inv_0_0",
@@ -972,7 +980,7 @@
    "label": "cutting, slowing",
    "label_at": [
     163.0,
-    296
+    332
    ]
   },
   {
@@ -994,7 +1002,7 @@
    "label": "rotation",
    "label_at": [
     411.0,
-    296
+    332
    ]
   },
   {
@@ -1016,7 +1024,7 @@
    "label": "front of tibia",
    "label_at": [
     687.0,
-    296
+    332
    ]
   },
   {
@@ -1038,7 +1046,7 @@
    "label": "VALGUS",
    "label_at": [
     935.0,
-    296
+    332
    ]
   },
   {
@@ -1060,7 +1068,7 @@
    "label": "VARUS",
    "label_at": [
     1183.0,
-    296
+    332
    ]
   },
   {
@@ -1082,7 +1090,7 @@
    "label": "no swelling",
    "label_at": [
     1459.0,
-    296
+    332
    ]
   },
   {
@@ -1104,7 +1112,7 @@
    "label": "swelling over a bursa",
    "label_at": [
     1707.0,
-    296
+    332
    ]
   },
   {
@@ -1126,7 +1134,7 @@
    "label": "while running",
    "label_at": [
     1983.0,
-    296
+    332
    ]
   },
   {
@@ -1148,15 +1156,15 @@
    "label": "a lump",
    "label_at": [
     2259.0,
-    296
+    332
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 1206,
-   "w": 1159,
+   "y": 1400,
+   "w": 768,
    "title": "Unhappy triad: VALGUS force on a flexed, externally rotated knee",
    "items": [
     "valgus tears the MCL",
@@ -1166,17 +1174,31 @@
    "cols": 1
   },
   {
-   "x": 1218,
-   "y": 1206,
-   "w": 1159,
+   "x": 827,
+   "y": 1400,
+   "w": 768,
    "title": "Knee injections",
    "items": [
     "CORTICOSTEROID: rapid · < $20 · lasts < 4–12 weeks · may harm cartilage (weak evidence)",
     "HYALURONIC ACID: > 26 weeks of relief · $300–500 · good safety",
     "PLATELET-RICH PLASMA: $500–1,500 · no clinically significant benefit in trials",
-    "STEM CELLS: not shown better than other injections · Health Canada: a drug, needs formal approval"
+    "STEM CELLS: not shown better than other injections · $3,000-10,000 · Health Canada: a drug, needs formal approval"
    ],
    "cols": 2
+  },
+  {
+   "x": 1609,
+   "y": 1400,
+   "w": 768,
+   "title": "No trauma: the wider differential by site",
+   "items": [
+    "FRONT: PFPS · patellar, quadriceps tendinopathy · pre-, infrapatellar bursitis · apophysitis · patellar stress fracture",
+    "BEHIND: PCL · popliteus, gastrocnemius, biceps femoris tendinopathy · Baker's cyst · DVT",
+    "OUTSIDE: IT band · biceps femoris · lateral meniscus · peroneal nerve · lateral OA · superior tib-fib joint",
+    "INSIDE: medial meniscus · medial OA · pes anserine bursitis · MCL",
+    "anywhere: referred from the HIP · radiculopathy · neoplasm"
+   ],
+   "cols": 1
   }
  ]
 }

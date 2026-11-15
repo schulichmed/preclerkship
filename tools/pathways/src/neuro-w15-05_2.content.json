@@ -6,177 +6,37 @@
   "title": "Floppy infant: UNSTABLE? → ABCDE first",
   "lines": [
    "hypotonia = less resistance to PASSIVE stretch · NOT the same as weakness",
-   "Dextrose: check glucose, treat hypoglycemia NOW · Expose: injury or bleeding",
-   "acute onset: most often INFECTION · always consider non-accidental trauma"
+   "Airway · Breathing: oxygen, assist · Circulation: femoral pulses, isotonic fluid (saline), ± inotrope (epinephrine)",
+   "Disability, Dextrose: consciousness, glucose, treat hypoglycemia NOW · Expose: injury or bleeding",
+   "acute onset: INFECTION most often (sepsis, meningitis) · CNS (stroke, seizure) · endocrine (hypoglycemia, electrolytes, thyroid, congenital adrenal hyperplasia) · surgical (volvulus, necrotizing enterocolitis) · toxin · metabolic (urea cycle)",
+   "always consider NON-ACCIDENTAL trauma: history that does not fit, or keeps changing"
   ]
  },
  "groups": [
-  {
-   "id": "g",
-   "cols": [
-    0,
-    1
-   ],
-   "title": "Stable: confirm LOW TONE, then CENTRAL or PERIPHERAL?",
-   "lines": [
-    "vertical suspension: slips through your hands · horizontal: drapes in a U",
-    "pull to sit: big head lag (normal head lag gone by 2-6 months)"
-   ]
-  }
+  {"id": "g", "cols": [0, 1], "title": "Stable: confirm LOW TONE, then CENTRAL or PERIPHERAL?", "lines": [
+   "history + exam find the cause in about 50%",
+   "history: onset · milestones, LOSS of skills (degenerative, metabolic) · pregnancy drugs, infections, gestation, delivery, APGAR, NICU · family history",
+   "exam: limbs hang loose, poor head control · respiratory distress · dysmorphism · weight, length, head circumference on a curve",
+   "vertical suspension: slips through your hands · horizontal: drapes in a U (normal: lifts head, extends trunk)",
+   "pull to sit: big head lag, no help from arms or trunk (normal head lag gone by 2-6 months)"]}
  ],
- "sections": [
-  "head",
-  "pres",
-  "cause",
-  "inv",
-  "tx"
- ],
- "row_names": {
-  "pres": "PRESENTS AS",
-  "cause": "CAUSES",
-  "inv": "INVESTIGATIONS",
-  "tx": "TREATMENT"
- },
- "dashed_sections": [
-  "pres"
- ],
+ "sections": ["head", "pres", "cause", "inv", "tx"],
+ "row_names": {"pres": "PRESENTS AS", "cause": "CAUSES", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
+ "dashed_sections": ["pres"],
  "columns": [
-  {
-   "id": "cen",
-   "colour": "purple",
-   "drop_label": "strong, brisk reflexes",
-   "head": [
-    [
-     [
-      "h",
-      "Central hypotonia",
-      [
-       "most common in NEWBORNS"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Brain is affected",
-      [
-       "• ↓ level of consciousness",
-       "• GLOBAL developmental delay",
-       "• NORMAL strength",
-       "• NORMAL or BRISK reflexes, ± clonus",
-       "• primitive reflexes persist",
-       "• dysmorphic features (trisomy 21)"
-      ]
-     ]
-    ]
-   ],
-   "cause": [
-    [
-     [
-      "w",
-      "Central causes",
-      [
-       "• AT BIRTH: hypoxic-ischemic encephalopathy, trisomy 21, Prader-Willi",
-       "• AFTER DAY 1: metabolic disorder",
-       "• infection: sepsis, meningitis, herpes simplex, TORCH"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Brain + blood",
-      [
-       "• CT or MRI of the brain",
-       "• electrolytes, TSH, AMMONIA, metabolic tests",
-       "• karyotype, genetic tests"
-      ]
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "per",
-   "colour": "teal",
-   "drop_label": "weak, no reflexes",
-   "head": [
-    [
-     [
-      "h",
-      "Peripheral hypotonia",
-      [
-       "motor neuron · junction · muscle"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "ALERT, but WEAK",
-      [
-       "• normal speech and cognition",
-       "• delayed gross + fine MOTOR only",
-       "• can't lift limbs against gravity",
-       "• ↓ or ABSENT reflexes",
-       "• facial weakness: feeding, breathing trouble"
-      ]
-     ]
-    ]
-   ],
-   "cause": [
-    [
-     [
-      "w",
-      "By site",
-      [
-       "• motor neuron: spinal muscular atrophy",
-       "• junction: congenital myasthenic syndrome, infant botulism",
-       "• drug: aminoglycosides",
-       "• muscle: congenital muscular dystrophy"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Nerve + muscle",
-      [
-       "• CREATINE KINASE: ↑ in most muscle disorders",
-       "• electromyography (EMG)",
-       "• muscle biopsy"
-      ]
-     ]
-    ]
-   ]
-  }
+  {"id": "cen", "colour": "purple", "drop_label": "strong, brisk reflexes",
+   "head": [[["h", "Central hypotonia", ["most common in NEWBORNS"]]]],
+   "pres": [[["t", "Brain is affected", ["• ↓ level of consciousness", "• GLOBAL developmental delay", "• NORMAL strength", "• NORMAL or BRISK reflexes, ± clonus", "• primitive reflexes persist", "• dysmorphic features (trisomy 21)"]]]],
+   "cause": [[["w", "Central causes", ["• AT BIRTH: hypoxic-ischemic encephalopathy, trisomy 21, Prader-Willi", "• AFTER DAY 1: metabolic disorder", "• infection: sepsis, meningitis, herpes simplex, TORCH"]]],
+             [["w", "Full exam clues", ["• liver, spleen big: lysosomal or glycogen storage", "• heart failure: mitochondrial (or muscle disease)"]]]],
+   "inv": [[["w", "Brain + blood", ["• CT or MRI of the brain", "• electrolytes, TSH, AMMONIA, metabolic tests", "• karyotype, genetic tests"]]]]},
+  {"id": "per", "colour": "teal", "drop_label": "weak, no reflexes",
+   "head": [[["h", "Peripheral hypotonia", ["motor neuron · junction · muscle"]]]],
+   "pres": [[["t", "ALERT, but WEAK", ["• normal speech and cognition", "• delayed gross + fine MOTOR only", "• can't lift limbs against gravity", "• ↓ or ABSENT reflexes", "• facial weakness: feeding, breathing trouble"]]]],
+   "cause": [[["w", "By site", ["• motor neuron: spinal muscular atrophy", "• junction: congenital myasthenic syndrome, infant botulism", "• drug: aminoglycosides", "• muscle: congenital muscular dystrophy (may cause heart failure)"]]]],
+   "inv": [[["w", "Nerve + muscle", ["• CREATINE KINASE: ↑ in most muscle disorders", "• electromyography (EMG): muscle + motor neuron", "• muscle biopsy"]]]]}
  ],
  "spans": [
-  {
-   "section": "tx",
-   "cols": [
-    0,
-    1
-   ],
-   "rows": [
-    [
-     [
-      "ok",
-      "Treat the CAUSE",
-      [
-       "• EARLY referral: pediatric neurology, metabolics, genetics",
-       "• physiotherapy · occupational therapy · nutrition · psychology · speech-language pathology"
-      ]
-     ]
-    ]
-   ]
-  }
+  {"section": "tx", "cols": [0, 1], "rows": [[["ok", "Treat the CAUSE", ["• EARLY referral: pediatric neurology, metabolics, genetics", "• physiotherapy · occupational therapy · nutrition · psychology · speech-language pathology"]]]]}
  ]
 }

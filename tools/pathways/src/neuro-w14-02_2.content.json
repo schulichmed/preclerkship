@@ -3,9 +3,10 @@
  "title": "Multiple sclerosis: a relapse is new neurological dysfunction lasting 24 hours or more with no other cause; the typical relapses are myelitis, optic neuritis and brainstem or cerebellar syndromes; the diagnosis needs dissemination in space and time on MRI, with CSF oligoclonal bands able to stand in for time, once better explanations are ruled out; treatment is disease-modifying therapy by category plus symptomatic therapy",
  "col_w": 282,
  "root": {"title": "Could it be MULTIPLE SCLEROSIS (MS)?",
-  "lines": ["an immune attack (B and T cells) on central nervous system myelin → axonal damage, then loss",
-            "most common disabling neurological disease of young adults in Canada · women 3:1 · age 20-40",
-            "risk: Epstein-Barr virus (EBV, 32-fold) · adolescent obesity · smoking · low vitamin D or sunlight · shift work"]},
+  "lines": ["an immune attack (B and T cells) on central nervous system myelin (oligodendrocytes) → axonal damage, then loss",
+            "most common disabling neurological disease of young adults in Canada (240 per 100,000) · women 3:1 · age 20-40 · white, Northern European",
+            "risk: Epstein-Barr virus (EBV, 32-fold: necessary, NOT sufficient) · genes explain 20-30% · adolescent obesity · smoking · diet · low vitamin D or sunlight · shift work",
+            "lesions: cortical or juxtacortical · periventricular · brainstem · cerebellum · spinal cord"]},
  "groups": [
   {"id": "g_rel", "cols": [0, 2], "title": "A RELAPSE: which kind?",
    "lines": ["NEW neurological symptoms · acute or subacute onset · lasting 24 HOURS or more · no other cause · not a pseudo-relapse", "other features: sensory disturbances · fatigue · Lhermitte's sign (an electric shock down the back on bending the neck)"]}
@@ -21,7 +22,7 @@
    "clue": [[["t", "Vision", ["• vision loss", "• PAIN with eye movement"]]]]},
   {"id": "bs", "colour": "orange",
    "head": [[["h", "Brainstem or cerebellar syndrome", ["about 15% at onset"]]]],
-   "clue": [[["t", "Eyes and balance", ["• double vision · vertigo", "• ataxia · slurred speech (dysarthria)"]]]]}
+   "clue": [[["t", "Eyes and balance", ["• double vision · vertigo", "• ataxia · slurred speech (dysarthria)", "case: man in his 20s · vertigo, nausea, some double vision"]]]]}
  ],
  "spans": [
   {"section": "inv", "cols": [0, 2], "rows": [
@@ -31,9 +32,16 @@
    [["bad", "ALWAYS rule out a better explanation", ["neuromyelitis optica (NMO) · myelin oligodendrocyte glycoprotein disease (MOGAD) · vascular · infection · metabolic (B12)"]]]
   ]},
   {"section": "tx", "cols": [0, 2], "rows": [
-   [["plain", "Course: relapsing-remitting (85% at onset) → secondary progressive · or primary progressive from the start", ["score disability on the Expanded Disability Status Scale (EDSS, 0-10)"]]],
-   [["ok", "Disease-modifying therapy: think in CATEGORIES", ["• injectable platforms: interferons, glatiramer (Copaxone)", "• standard orals: dimethyl fumarate, teriflunomide, fingolimod", "• induction: cladribine", "• high efficacy: natalizumab, B-cell therapies (ocrelizumab, ofatumumab, rituximab)"]],
-    ["ok", "Treat the symptoms too", ["• spasticity: baclofen, tizanidine", "• pain, tingling: amitriptyline, gabapentin, duloxetine", "• bladder: solifenacin · erections: sildenafil", "• fatigue: amantadine, modafinil · walking: fampridine"]]]
+   [["plain", "Course: clinically isolated syndrome → relapsing-remitting (85% at onset) → secondary progressive · or primary progressive from the start", ["each labelled active or not, progressing or not · score disability on the Expanded Disability Status Scale (EDSS, 0-10)", "prognosis: 50% minor disability at 6-8 y · 21% need a walking aid at 15 y · median 27.9 y (age 59) to need one"]]],
+   [["ok", "Disease-modifying therapy: think in CATEGORIES", ["• injectable platforms: interferons, glatiramer (Copaxone) · long-term safety data, LOW adherence", "• standard orals: dimethyl fumarate, teriflunomide, fingolimod · easier than injections", "• induction: cladribine · oral, effect lasts ~4 y", "• high efficacy: natalizumab, B-cell therapies (ocrelizumab, ofatumumab, rituximab) · B-cell therapies now very common"]],
+    ["ok", "Treat the symptoms too", ["• spasticity: baclofen, tizanidine, stretching, physiotherapy", "• pain, tingling: amitriptyline, gabapentin, duloxetine, CBD", "• bladder: solifenacin, urology referral · erections: sildenafil", "• depression: antidepressants", "• fatigue: amantadine, modafinil · walking: fampridine"]]]
   ]}
+ ],
+ "panels": [
+  {"title": "Differential: VITAMIN", "items": [
+   "V vascular: migraine, stroke, CADASIL · I infection: HIV, syphilis, Lyme, West Nile",
+   "T toxins: cocaine, additives · A autoimmune: NMO, MOG · Sjögren's, Behçet's",
+   "M metabolic: B12 · I inflammatory: sarcoid · N neoplastic: lymphoma",
+   "top differential, how common: MS 1500 · NMOSD 30 · MOGAD 30 · sarcoid 15 · lymphoma 6 · ADEM 3 · Sjögren's 2"]}
  ]
 }

@@ -5,12 +5,13 @@
  "root": {
   "title": "A neurological problem in a medically ill patient: how is the illness reaching the nervous system?",
   "lines": [
-   "localize first, as for any weakness: muscle · neuromuscular junction · nerve · root · anterior horn cell · spinal cord · brain"
+   "localize first, as for any weakness: muscle · neuromuscular junction · nerve · plexus · root · anterior horn cell · spinal cord · brain",
+   "UMN or LMN? one site, or MANY? · time course: subacute and progressive → metastases, abscesses · acute and STEPWISE → infarcts"
   ]
  },
  "groups": [
   {"id": "g_onc", "cols": [0, 0], "title": "Cancer", "lines": []},
-  {"id": "g_resp", "cols": [1, 1], "title": "Breathless", "lines": ["cardiac · pulmonary · anemia · NEUROLOGICAL"]},
+  {"id": "g_resp", "cols": [1, 1], "title": "Breathless", "lines": ["cardiac (failure, ischemia, outflow) · pulmonary (obstructive, restrictive, infiltrative, shunt) · anemia · NEUROLOGICAL"]},
   {"id": "g_nut", "cols": [2, 3], "title": "Nutrition", "lines": []},
   {"id": "g_card", "cols": [4, 4], "title": "Heart", "lines": []}
  ],
@@ -21,37 +22,37 @@
    "id": "onc", "colour": "magenta",
    "head": [[["h", "Five ways cancer reaches the nerves", []]]],
    "pres": [[["t", "Which mechanism?", ["• compression: cord, root, nerve", "• invasion: nerve, plexus, brain, cord", "• paraneoplastic antibodies: limbic encephalitis, dermatomyositis, myasthenia gravis, cerebellitis", "• treatment toxicity: chemotherapy, radiation, surgery", "• CHECKPOINT INHIBITOR autoimmunity"]]],
-            [["w", "Checkpoint inhibitor (ipilimumab, nivolumab)", ["ptosis, neck and proximal weakness, normal reflexes and sensation"]]]],
+            [["w", "Checkpoint inhibitor (ipilimumab, nivolumab)", ["ptosis, neck and proximal weakness, normal reflexes and sensation", "• tumours make PD-L1, which damps immunity; blocking the checkpoint unleashes T cells, and autoimmunity", "• also hepatitis, colitis, inflammatory myopathy", "case: 64, metastatic melanoma, 3 weeks · mild ptosis, neck flexion 4-, head drop, Trendelenburg gait"]]]],
    "inv": [[["w", "Junction or muscle?", ["• CK", "• acetylcholine receptor antibody", "• EMG / nerve conduction studies"]]]],
    "tx": [[["ok", "With oncology: STOP the inhibitor and/or STEROIDS", ["~steroids may blunt the tumour treatment"]]]]
   },
   {
    "id": "phr", "colour": "teal",
    "head": [[["h", "Bilateral phrenic nerve palsies", ["weak diaphragm"]]]],
-   "pres": [[["t", "Dyspnea WORSE LYING DOWN", ["• sleeps upright in a chair", "• normal heart, chest, limbs, cranial nerves", "~lying down the diaphragm does the work; upright, the intercostals"]]]],
+   "pres": [[["t", "Dyspnea WORSE LYING DOWN", ["• sleeps upright in a chair", "• normal heart, chest, limbs, cranial nerves", "case: 48, healthy, 2 months, dry cough", "~lying down the diaphragm does the work; upright, the intercostals"]]]],
    "inv": [[["w", "Confirm and find the cause", ["1 · chest X-ray", "2 · diaphragm fluoroscopy in and out", "3 · lung function seated vs supine", "4 · phrenic nerve conduction studies", "5 · image the neck and mediastinum"]]]],
    "tx": [[["w", "Other levels of breathing weakness", ["• muscle: myopathies", "• junction: myasthenia gravis", "• nerve: Guillain-Barré", "• roots: multilevel C3-5", "• anterior horn: ALS", "• cord: high cervical myelopathy"]]]]
   },
   {
    "id": "wer", "colour": "orange",
    "head": [[["h", "Thiamine (B1) deficiency: Wernicke encephalopathy", []]]],
-   "pres": [[["t", "Triad", ["• ataxia", "• ophthalmoplegia (e.g. both 6th nerves)", "• confusion", "~poor intake, then REFEEDING without thiamine"]]]],
+   "pres": [[["t", "Triad", ["• ataxia", "• ophthalmoplegia (e.g. both 6th nerves)", "• confusion", "case: 9, ate nothing after choking, then NG feeds → next day diplopia, confusion, ataxia", "~poor intake, then REFEEDING without thiamine"]]]],
    "inv": [[["w", "Will not localize to one place", ["global dysfunction + strong pons involvement"]]]],
    "tx": [[["ok", "THIAMINE", ["give it BEFORE glucose if nutrition is in doubt"]]]]
   },
   {
    "id": "nut", "colour": "olive",
    "head": [[["h", "Other nutrition", []]]],
-   "pres": [[["t", "Deficiency or excess", ["• B1: dry beriberi = neuropathy · wet = cardiomyopathy", "• B12: subacute combined degeneration", "• copper (after bariatric surgery): myelopathy", "• B6 EXCESS: sensory neuropathy"]]]],
-   "inv": [[["bad", "Refeeding syndrome", ["after long starvation, electrolytes shift into cells: ↓ sodium, potassium, calcium, magnesium, phosphate", "→ confusion → weakness → seizures, arrhythmias"]]]],
+   "pres": [[["t", "Deficiency or excess", ["• B1: dry beriberi = neuropathy · wet = cardiomyopathy", "• B12: subacute combined degeneration (dorsal columns), neuropathy, encephalopathy", "• copper (after bariatric surgery): myelopathy", "• B6 EXCESS: sensory neuropathy"]]]],
+   "inv": [[["bad", "Refeeding syndrome", ["after long starvation, electrolytes shift into cells: ↓ sodium, potassium, calcium, magnesium, phosphate", "→ confusion, unsteadiness → weakness → seizures, arrhythmias"]]]],
    "tx": [[["ok", "Refeed SLOWLY", ["check electrolytes often"]]]]
   },
   {
    "id": "ce", "colour": "blue",
    "head": [[["h", "Multiple cardioembolic strokes", ["atrial fibrillation · endocarditis (infective, cancer, Libman-Sacks) · cardiac tumours"]]]],
-   "pres": [[["t", "Deficits in SEVERAL territories, ACUTE and STEPWISE", ["~subacute, slowly progressive → metastases or abscesses", "~else: vasculitis · tumours · abscesses · demyelination"]]],
-            [["w", "Endocarditis?", ["• fever, tachycardia", "• murmur", "• splinter hemorrhages, Janeway lesions, Osler nodes, Roth spots"]]]],
-   "inv": [[["w", "Suspected endocarditis", ["1 · blood cultures × 2 (keep for HACEK)", "2 · transthoracic ± transesophageal echo", "3 · find the source (dental)", "~cultures negative → non-bacterial endocarditis of cancer"]]]],
+   "pres": [[["t", "Deficits in SEVERAL territories, ACUTE and STEPWISE", ["~subacute, slowly progressive → metastases or abscesses", "~else: vasculitis · tumours (mets, lymphoma) · abscesses · demyelination (MS, ADEM)"]]],
+            [["w", "Endocarditis?", ["• fever, tachycardia", "• murmur", "• splinter hemorrhages, Janeway lesions, Osler nodes, Roth spots", "case: 68, left arm numb, then word-finding 2 days later · 37.9°C, pulse 108 · aphasia, left hemianopia, mild left weakness"]]]],
+   "inv": [[["w", "Suspected endocarditis", ["1 · blood cultures × 2 (keep for HACEK: Haemophilus, Aggregatibacter, Cardiobacterium, Eikenella, Kingella)", "2 · transthoracic ± transesophageal echo", "3 · find the source (dental)", "~cultures negative → non-bacterial endocarditis of cancer"]]]],
    "tx": [[["bad", "NO tPA", ["~cultures and echo instead"]]]]
   }
  ]

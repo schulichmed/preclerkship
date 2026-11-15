@@ -43,17 +43,17 @@
  "bands": [
   {
    "x": 40,
-   "y": 306,
+   "y": 522,
    "w": 310,
-   "h": 592,
+   "h": 746,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 352,
-   "y": 306,
+   "y": 522,
    "w": 310,
-   "h": 592,
+   "h": 746,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   }
@@ -61,25 +61,25 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 414,
+   "y": 630,
    "h": 150,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 604,
-   "h": 132,
+   "y": 820,
+   "h": 268,
    "text": "CAUSES"
   },
   {
    "x": 23,
-   "y": 776,
-   "h": 114,
+   "y": 1128,
+   "h": 132,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 930,
+   "y": 1300,
    "h": 78,
    "text": "TREATMENT"
   }
@@ -94,27 +94,32 @@
    "title": "Floppy infant: UNSTABLE? → ABCDE first",
    "lines": [
     "hypotonia = less resistance to PASSIVE stretch · NOT the same as weakness",
-    "Dextrose: check glucose, treat hypoglycemia NOW · Expose: injury or bleeding",
-    "acute onset: most often INFECTION · always consider non-accidental trauma"
+    "Airway · Breathing: oxygen, assist · Circulation: femoral pulses, isotonic fluid (saline), ± inotrope (epinephrine)",
+    "Disability, Dextrose: consciousness, glucose, treat hypoglycemia NOW · Expose: injury or bleeding",
+    "acute onset: INFECTION most often (sepsis, meningitis) · CNS (stroke, seizure) · endocrine (hypoglycemia, electrolytes, thyroid, congenital adrenal hyperplasia) · surgical (volvulus, necrotizing enterocolitis) · toxin · metabolic (urea cycle)",
+    "always consider NON-ACCIDENTAL trauma: history that does not fit, or keeps changing"
    ]
   },
   {
    "id": "g",
    "x": 45,
-   "y": 156,
+   "y": 264,
    "w": 612,
-   "h": 78,
+   "h": 186,
    "kind": "plain",
    "title": "Stable: confirm LOW TONE, then CENTRAL or PERIPHERAL?",
    "lines": [
-    "vertical suspension: slips through your hands · horizontal: drapes in a U",
-    "pull to sit: big head lag (normal head lag gone by 2-6 months)"
+    "history + exam find the cause in about 50%",
+    "history: onset · milestones, LOSS of skills (degenerative, metabolic) · pregnancy drugs, infections, gestation, delivery, APGAR, NICU · family history",
+    "exam: limbs hang loose, poor head control · respiratory distress · dysmorphism · weight, length, head circumference on a curve",
+    "vertical suspension: slips through your hands · horizontal: drapes in a U (normal: lifts head, extends trunk)",
+    "pull to sit: big head lag, no help from arms or trunk (normal head lag gone by 2-6 months)"
    ]
   },
   {
    "id": "cen_head_0_0",
    "x": 45,
-   "y": 314,
+   "y": 530,
    "w": 300,
    "h": 60,
    "kind": "cen_h",
@@ -126,7 +131,7 @@
   {
    "id": "per_head_0_0",
    "x": 357,
-   "y": 314,
+   "y": 530,
    "w": 300,
    "h": 60,
    "kind": "per_h",
@@ -138,7 +143,7 @@
   {
    "id": "cen_pres_0_0",
    "x": 45,
-   "y": 414,
+   "y": 630,
    "w": 300,
    "h": 150,
    "kind": "cen_t",
@@ -155,7 +160,7 @@
   {
    "id": "per_pres_0_0",
    "x": 357,
-   "y": 414,
+   "y": 630,
    "w": 300,
    "h": 150,
    "kind": "per_t",
@@ -171,7 +176,7 @@
   {
    "id": "cen_cause_0_0",
    "x": 45,
-   "y": 604,
+   "y": 820,
    "w": 300,
    "h": 132,
    "kind": "cen_w",
@@ -183,26 +188,39 @@
    ]
   },
   {
+   "id": "cen_cause_1_0",
+   "x": 45,
+   "y": 974,
+   "w": 300,
+   "h": 114,
+   "kind": "cen_w",
+   "title": "Full exam clues",
+   "lines": [
+    "• liver, spleen big: lysosomal or glycogen storage",
+    "• heart failure: mitochondrial (or muscle disease)"
+   ]
+  },
+  {
    "id": "per_cause_0_0",
    "x": 357,
-   "y": 604,
+   "y": 820,
    "w": 300,
-   "h": 132,
+   "h": 268,
    "kind": "per_w",
    "title": "By site",
    "lines": [
     "• motor neuron: spinal muscular atrophy",
     "• junction: congenital myasthenic syndrome, infant botulism",
     "• drug: aminoglycosides",
-    "• muscle: congenital muscular dystrophy"
+    "• muscle: congenital muscular dystrophy (may cause heart failure)"
    ]
   },
   {
    "id": "cen_inv_0_0",
    "x": 45,
-   "y": 776,
+   "y": 1128,
    "w": 300,
-   "h": 114,
+   "h": 132,
    "kind": "cen_w",
    "title": "Brain + blood",
    "lines": [
@@ -214,21 +232,21 @@
   {
    "id": "per_inv_0_0",
    "x": 357,
-   "y": 776,
+   "y": 1128,
    "w": 300,
-   "h": 114,
+   "h": 132,
    "kind": "per_w",
    "title": "Nerve + muscle",
    "lines": [
     "• CREATINE KINASE: ↑ in most muscle disorders",
-    "• electromyography (EMG)",
+    "• electromyography (EMG): muscle + motor neuron",
     "• muscle biopsy"
    ]
   },
   {
    "id": "span0_tx_0_0",
    "x": 45,
-   "y": 930,
+   "y": 1300,
    "w": 612,
    "h": 78,
    "kind": "ok",
@@ -243,7 +261,11 @@
   {
    "from": "root",
    "to": "g",
-   "path": "M351.0 106V131H351.0V156"
+   "path": "M351.0 214V239H351.0V264"
+  },
+  {
+   "from": "cen_cause_0_0",
+   "to": "cen_cause_1_0"
   },
   {
    "from": "cen_head_0_0",
@@ -254,7 +276,7 @@
    "to": "cen_cause_0_0"
   },
   {
-   "from": "cen_cause_0_0",
+   "from": "cen_cause_1_0",
    "to": "cen_inv_0_0"
   },
   {
@@ -269,7 +291,7 @@
    "label": "strong, brisk reflexes",
    "label_at": [
     195.0,
-    274
+    490
    ]
   },
   {
@@ -296,7 +318,7 @@
    "label": "weak, no reflexes",
    "label_at": [
     507.0,
-    274
+    490
    ]
   }
  ],

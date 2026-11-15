@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 388,
+   "y": 406,
    "w": 246,
-   "h": 742,
+   "h": 798,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 288,
-   "y": 388,
+   "y": 406,
    "w": 246,
-   "h": 742,
+   "h": 798,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 564,
-   "y": 388,
+   "y": 406,
    "w": 246,
-   "h": 742,
+   "h": 798,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 840,
-   "y": 388,
+   "y": 406,
    "w": 246,
-   "h": 742,
+   "h": 798,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 1088,
-   "y": 388,
+   "y": 406,
    "w": 246,
-   "h": 742,
+   "h": 798,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   }
@@ -139,20 +139,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 238,
+   "y": 256,
    "h": 78,
    "text": "CONFIRM"
   },
   {
    "x": 23,
-   "y": 514,
+   "y": 532,
    "h": 372,
    "text": "LOOK FOR"
   },
   {
    "x": 23,
-   "y": 926,
-   "h": 196,
+   "y": 944,
+   "h": 252,
    "text": "MANAGE"
   }
  ],
@@ -166,13 +166,14 @@
    "title": "Breastfeeding trouble: which of the THREE needs broke?",
    "lines": [
     "prolactin MAKES milk · oxytocin EJECTS it · the infant or a pump must REMOVE it, starting by day 3",
-    "from day 3, milk removal (not hormones) drives supply"
+    "placenta out → progesterone + dopamine ↓ → prolactin ↑ · from day 3, milk REMOVAL (autocrine, not hormones) drives supply",
+    "breast milk ALONE for 6 months, then with foods to 2 years or beyond (WHO)"
    ]
   },
   {
    "id": "g_low",
    "x": 45,
-   "y": 138,
+   "y": 156,
    "w": 484,
    "h": 60,
    "kind": "plain",
@@ -184,7 +185,7 @@
   {
    "id": "g_pain",
    "x": 569,
-   "y": 138,
+   "y": 156,
    "w": 236,
    "h": 60,
    "kind": "plain",
@@ -194,7 +195,7 @@
   {
    "id": "g_stop",
    "x": 845,
-   "y": 138,
+   "y": 156,
    "w": 484,
    "h": 60,
    "kind": "plain",
@@ -206,7 +207,7 @@
   {
    "id": "p_low",
    "x": 45,
-   "y": 238,
+   "y": 256,
    "w": 484,
    "h": 78,
    "kind": "info",
@@ -219,7 +220,7 @@
   {
    "id": "prod_head_0_0",
    "x": 45,
-   "y": 396,
+   "y": 414,
    "w": 236,
    "h": 78,
    "kind": "prod_h",
@@ -231,7 +232,7 @@
   {
    "id": "extr_head_0_0",
    "x": 293,
-   "y": 396,
+   "y": 414,
    "w": 236,
    "h": 78,
    "kind": "extr_h",
@@ -243,7 +244,7 @@
   {
    "id": "pain_head_0_0",
    "x": 569,
-   "y": 396,
+   "y": 414,
    "w": 236,
    "h": 78,
    "kind": "pain_h",
@@ -253,7 +254,7 @@
   {
    "id": "contra_head_0_0",
    "x": 845,
-   "y": 396,
+   "y": 414,
    "w": 236,
    "h": 78,
    "kind": "contra_h",
@@ -265,7 +266,7 @@
   {
    "id": "wean_head_0_0",
    "x": 1093,
-   "y": 396,
+   "y": 414,
    "w": 236,
    "h": 78,
    "kind": "wean_h",
@@ -277,23 +278,23 @@
   {
    "id": "prod_clue_0_0",
    "x": 45,
-   "y": 514,
+   "y": 532,
    "w": 236,
-   "h": 211,
+   "h": 220,
    "kind": "prod_t",
    "title": "Causes",
    "lines": [
     "• retained placenta, Sheehan syndrome",
     "• little breast growth in pregnancy, breast surgery or radiation",
-    "• polycystic ovary syndrome (PCOS), prolactinoma, insulin resistance"
+    "• polycystic ovary syndrome (PCOS), high androgens, prolactinoma, insulin resistance"
    ]
   },
   {
    "id": "prod_clue_1_0",
    "x": 45,
-   "y": 747,
+   "y": 774,
    "w": 236,
-   "h": 139,
+   "h": 130,
    "kind": "prod_w",
    "title": "Drugs that lower supply",
    "lines": [
@@ -304,7 +305,7 @@
   {
    "id": "extr_clue_0_0",
    "x": 293,
-   "y": 514,
+   "y": 532,
    "w": 236,
    "h": 372,
    "kind": "extr_t",
@@ -312,39 +313,42 @@
    "lines": [
     "• poor latch, infrequent feeds",
     "• preterm, in neonatal intensive care, separated from her",
-    "• cleft lip or palate, sucking or swallowing problem"
+    "• cleft lip or palate, sucking or swallowing problem",
+    "• neuromotor delay · Pierre Robin (small jaw), trisomy 21"
    ]
   },
   {
    "id": "pain_clue_0_0",
    "x": 569,
-   "y": 514,
+   "y": 532,
    "w": 236,
-   "h": 201,
+   "h": 174,
    "kind": "pain_t",
    "title": "Causes",
    "lines": [
     "• cracked nipple: improper latch",
-    "• candida (thrush), dermatitis, Raynaud's",
+    "• candida (thrush), dermatitis, psoriasis",
+    "• nipple vasoconstriction (Raynaud's)",
     "• engorgement, blocked ducts, too much milk"
    ]
   },
   {
    "id": "pain_clue_1_0",
    "x": 569,
-   "y": 737,
+   "y": 728,
    "w": 236,
-   "h": 149,
+   "h": 176,
    "kind": "bad",
    "title": "RED, HOT breast ± fever = MASTITIS",
    "lines": [
-    "see the BREAST chart"
+    "• risk: prior mastitis, blocked ducts, cracked nipples, pump, nipple creams (antifungal)",
+    "• abscess: rare, Staph aureus · see the BREAST chart"
    ]
   },
   {
    "id": "contra_clue_0_0",
    "x": 845,
-   "y": 514,
+   "y": 532,
    "w": 236,
    "h": 114,
    "kind": "contra_t",
@@ -358,7 +362,7 @@
   {
    "id": "contra_clue_1_0",
    "x": 845,
-   "y": 650,
+   "y": 668,
    "w": 236,
    "h": 96,
    "kind": "contra_w",
@@ -371,7 +375,7 @@
   {
    "id": "contra_clue_2_0",
    "x": 845,
-   "y": 768,
+   "y": 786,
    "w": 236,
    "h": 118,
    "kind": "warn",
@@ -383,7 +387,7 @@
   {
    "id": "wean_clue_0_0",
    "x": 1093,
-   "y": 514,
+   "y": 532,
    "w": 236,
    "h": 372,
    "kind": "bad",
@@ -396,9 +400,9 @@
   {
    "id": "prod_tx_0_0",
    "x": 45,
-   "y": 926,
+   "y": 944,
    "w": 236,
-   "h": 96,
+   "h": 115,
    "kind": "ok",
    "title": "1 · Augment",
    "lines": [
@@ -410,22 +414,23 @@
   {
    "id": "prod_tx_1_0",
    "x": 45,
-   "y": 1044,
+   "y": 1081,
    "w": 236,
-   "h": 78,
+   "h": 115,
    "kind": "warn",
    "title": "2 · Add FORMULA if the baby",
    "lines": [
     "• fails to thrive or loses weight",
-    "• is dehydrated or hypoglycemic"
+    "• is dehydrated or hypoglycemic",
+    "• or she chooses it"
    ]
   },
   {
    "id": "extr_tx_0_0",
    "x": 293,
-   "y": 926,
+   "y": 944,
    "w": 236,
-   "h": 88,
+   "h": 116,
    "kind": "ok",
    "title": "1 · Fix the latch, feed on infant cues",
    "lines": [
@@ -435,9 +440,9 @@
   {
    "id": "extr_tx_1_0",
    "x": 293,
-   "y": 1036,
+   "y": 1082,
    "w": 236,
-   "h": 86,
+   "h": 114,
    "kind": "ok",
    "title": "2 · Too sleepy to feed?",
    "lines": [
@@ -447,9 +452,9 @@
   {
    "id": "pain_tx_0_0",
    "x": 569,
-   "y": 926,
+   "y": 944,
    "w": 236,
-   "h": 196,
+   "h": 60,
    "kind": "ok",
    "title": "Fix the latch, treat candida",
    "lines": [
@@ -457,11 +462,25 @@
    ]
   },
   {
+   "id": "pain_tx_1_0",
+   "x": 569,
+   "y": 1026,
+   "w": 236,
+   "h": 170,
+   "kind": "ok",
+   "title": "Mastitis: KEEP nursing + cloxacillin",
+   "lines": [
+    "• 500 mg by mouth 4 times daily × 7–10 days",
+    "• manual pressure, bra, analgesia, empty the breast",
+    "• abscess → incise + drain or needle aspirate"
+   ]
+  },
+  {
    "id": "contra_tx_0_0",
    "x": 845,
-   "y": 926,
+   "y": 944,
    "w": 236,
-   "h": 196,
+   "h": 252,
    "kind": "ok",
    "title": "Stop lactation: cabergoline 1 mg ONCE",
    "lines": [
@@ -471,9 +490,9 @@
   {
    "id": "wean_tx_0_0",
    "x": 1093,
-   "y": 926,
+   "y": 944,
    "w": 236,
-   "h": 88,
+   "h": 116,
    "kind": "ok",
    "title": "1 · Gradual: drop feeds slowly",
    "lines": [
@@ -483,9 +502,9 @@
   {
    "id": "wean_tx_1_0",
    "x": 1093,
-   "y": 1036,
+   "y": 1082,
    "w": 236,
-   "h": 86,
+   "h": 114,
    "kind": "ok",
    "title": "Comfort",
    "lines": [
@@ -498,17 +517,17 @@
   {
    "from": "root",
    "to": "g_low",
-   "path": "M687.0 88V113H287.0V138"
+   "path": "M687.0 106V131H287.0V156"
   },
   {
    "from": "root",
    "to": "g_pain",
-   "path": "M687.0 88V113H687.0V138"
+   "path": "M687.0 106V131H687.0V156"
   },
   {
    "from": "root",
    "to": "g_stop",
-   "path": "M687.0 88V113H1087.0V138"
+   "path": "M687.0 106V131H1087.0V156"
   },
   {
    "from": "g_low",
@@ -539,6 +558,10 @@
    "to": "extr_tx_1_0"
   },
   {
+   "from": "pain_tx_0_0",
+   "to": "pain_tx_1_0"
+  },
+  {
    "from": "wean_tx_0_0",
    "to": "wean_tx_1_0"
   },
@@ -557,7 +580,7 @@
    "label": "latch GOOD",
    "label_at": [
     163.0,
-    356
+    374
    ]
   },
   {
@@ -575,7 +598,7 @@
    "label": "latch POOR",
    "label_at": [
     411.0,
-    356
+    374
    ]
   },
   {
@@ -593,7 +616,7 @@
    "label": "nipple or breast",
    "label_at": [
     687.0,
-    356
+    374
    ]
   },
   {
@@ -611,7 +634,7 @@
    "label": "contraindication",
    "label_at": [
     963.0,
-    356
+    374
    ]
   },
   {
@@ -629,32 +652,44 @@
    "label": "her choice",
    "label_at": [
     1211.0,
-    356
+    374
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 1156,
-   "w": 635,
+   "y": 1230,
+   "w": 419,
    "title": "The first week",
    "items": [
     "start within 1 hour, skin to skin · feed on infant cues",
-    "colostrum alone for 2–4 days: antibodies, cells, vitamins A, D, E, K",
+    "colostrum alone for 2–4 days: antibodies, cells, vitamins A, D, E, K · then transitional milk ~2 weeks",
     "stored milk, laws of 6: room 6 h · fridge 6 days · freezer 6 months"
    ],
    "cols": 1
   },
   {
-   "x": 694,
-   "y": 1156,
-   "w": 635,
+   "x": 478,
+   "y": 1230,
+   "w": 419,
    "title": "While breastfeeding",
    "items": [
     "contraception: NO estrogen (↓ milk quality and quantity) · safe: hormonal or copper intrauterine device (IUD), progestin-only pill, barrier, depot medroxyprogesterone",
     "more fluids, calories, calcium and vitamins",
-    "medicines, alcohol, smoking: see the DRUGS IN PREGNANCY AND LACTATION chart"
+    "medicines: aim < 10% of the maternal weight-adjusted dose · smoking: AVOID · see the DRUGS IN PREGNANCY AND LACTATION chart"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 910,
+   "y": 1230,
+   "w": 419,
+   "title": "Why breastfeed",
+   "items": [
+    "infant gut: faster gastric emptying · ↓ necrotizing enterocolitis in preterm infants",
+    "infant, while fed: ↓ gastroenteritis, respiratory illness, otitis media, UTI, sepsis",
+    "mother: uterine involution (oxytocin) · ↓ stress · longer anovulation · ↓ breast + ovarian cancer · ↓ cardiovascular disease"
    ],
    "cols": 1
   }

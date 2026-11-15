@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 288,
+   "y": 324,
    "w": 182,
-   "h": 510,
+   "h": 620,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 224,
-   "y": 288,
+   "y": 324,
    "w": 182,
-   "h": 510,
+   "h": 620,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 408,
-   "y": 288,
+   "y": 324,
    "w": 182,
-   "h": 510,
+   "h": 620,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 620,
-   "y": 288,
+   "y": 324,
    "w": 182,
-   "h": 510,
+   "h": 620,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 804,
-   "y": 288,
+   "y": 324,
    "w": 182,
-   "h": 510,
+   "h": 620,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   }
@@ -139,14 +139,14 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 414,
-   "h": 168,
+   "y": 450,
+   "h": 240,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 622,
-   "h": 168,
+   "y": 730,
+   "h": 206,
    "text": "WHAT FAILED"
   }
  ],
@@ -159,39 +159,42 @@
    "kind": "dark",
    "title": "Abnormal movement, power NORMAL: cerebellum or basal ganglia?",
    "lines": [
-    "both are SIDE LOOPS: cortex → loop → thalamus → cortex",
-    "no upper motor neurons of their own, so NOT an upper motor neuron disorder"
+    "both are SIDE LOOPS: cortex → loop → thalamus → cortex · both also project to the brainstem",
+    "no upper motor neurons of their own, so NOT an upper motor neuron disorder",
+    "cerebellum: corrects errors + learns skills · basal ganglia: release wanted, suppress unwanted movement"
    ]
   },
   {
    "id": "g_cb",
    "x": 45,
-   "y": 138,
+   "y": 156,
    "w": 540,
-   "h": 78,
+   "h": 96,
    "kind": "plain",
    "title": "CEREBELLUM: movement starts, but is INACCURATE",
    "lines": [
     "signs on the SAME side as the lesion",
-    "stable or slowly improve"
+    "stable or slowly improve",
+    "the REPAIR SHOP: masks lesions elsewhere · its own lesions last"
    ]
   },
   {
    "id": "g_bg",
    "x": 625,
-   "y": 138,
+   "y": 156,
    "w": 356,
-   "h": 78,
+   "h": 96,
    "kind": "plain",
    "title": "BASAL GANGLIA: release vs suppress is off",
    "lines": [
+    "globus pallidus fires at rest → inhibits thalamus",
     "dopamine: direct pathway UP, indirect DOWN"
    ]
   },
   {
    "id": "vest_head_0_0",
    "x": 45,
-   "y": 296,
+   "y": 332,
    "w": 172,
    "h": 78,
    "kind": "vest_h",
@@ -203,7 +206,7 @@
   {
    "id": "spin_head_0_0",
    "x": 229,
-   "y": 296,
+   "y": 332,
    "w": 172,
    "h": 78,
    "kind": "spin_h",
@@ -215,7 +218,7 @@
   {
    "id": "cereb_head_0_0",
    "x": 413,
-   "y": 296,
+   "y": 332,
    "w": 172,
    "h": 78,
    "kind": "cereb_h",
@@ -227,7 +230,7 @@
   {
    "id": "pd_head_0_0",
    "x": 625,
-   "y": 296,
+   "y": 332,
    "w": 172,
    "h": 78,
    "kind": "pd_h",
@@ -239,7 +242,7 @@
   {
    "id": "chor_head_0_0",
    "x": 809,
-   "y": 296,
+   "y": 332,
    "w": 172,
    "h": 78,
    "kind": "chor_h",
@@ -251,9 +254,9 @@
   {
    "id": "vest_sign_0_0",
    "x": 45,
-   "y": 414,
+   "y": 450,
    "w": 172,
-   "h": 168,
+   "h": 240,
    "kind": "vest_t",
    "title": "Balance",
    "lines": [
@@ -265,65 +268,69 @@
   {
    "id": "spin_sign_0_0",
    "x": 229,
-   "y": 414,
+   "y": 450,
    "w": 172,
-   "h": 168,
+   "h": 240,
    "kind": "spin_t",
    "title": "Gait + tone",
    "lines": [
     "• ataxic gait, poor leg control",
     "• falls walking heel-to-toe",
+    "• \"drunk-driver test\"",
     "• hypotonia: LOW tone"
    ]
   },
   {
    "id": "cereb_sign_0_0",
    "x": 413,
-   "y": 414,
+   "y": 450,
    "w": 172,
-   "h": 168,
+   "h": 240,
    "kind": "cereb_t",
    "title": "Skilled movement",
    "lines": [
     "• dysmetria: misses the target",
     "• dyssynergia: segments uncoordinated",
-    "• INTENTION tremor, near the end",
-    "• fails finger-to-nose"
+    "• INTENTION tremor: near the end or holding a position",
+    "• fails finger-to-nose",
+    "• often one-sided (stroke)"
    ]
   },
   {
    "id": "pd_sign_0_0",
    "x": 625,
-   "y": 414,
+   "y": 450,
    "w": 172,
-   "h": 168,
+   "h": 240,
    "kind": "pd_t",
    "title": "Can't START",
    "lines": [
     "• akinesia: needs an outside cue",
-    "• slow (bradykinesia), freezing",
-    "• tremor at REST, eases with movement",
-    "• RIGIDITY: HIGH tone"
+    "• slow (bradykinesia), freezing, shuffling",
+    "• tremor at REST: pill-rolling, hand first, eases with movement",
+    "• RIGIDITY: agonist + antagonist co-contract",
+    "• spared: practised or cued acts (rides a bike)"
    ]
   },
   {
    "id": "chor_sign_0_0",
    "x": 809,
-   "y": 414,
+   "y": 450,
    "w": 172,
-   "h": 168,
+   "h": 240,
    "kind": "chor_t",
    "title": "Can't SUPPRESS",
    "lines": [
-    "• spontaneous, unwanted movements"
+    "• spontaneous, unwanted movements",
+    "• Tourette: inappropriate utterances released"
    ]
   },
   {
    "id": "vest_circuit_0_0",
    "x": 45,
-   "y": 622,
+   "y": 730,
    "w": 172,
-   "h": 168,
+   "h": 206,
    "kind": "vest_w",
    "title": "Tunes balance + the vestibulo-ocular reflex",
    "lines": [
@@ -334,48 +341,52 @@
   {
    "id": "spin_circuit_0_0",
    "x": 229,
-   "y": 622,
+   "y": 730,
    "w": 172,
-   "h": 168,
+   "h": 206,
    "kind": "spin_w",
    "title": "Tunes ongoing movement + tone",
    "lines": [
+    "in: vision, hearing, skin + muscle afferents",
     "out: fastigial and interposed nuclei → spinal cord"
    ]
   },
   {
    "id": "cereb_circuit_0_0",
    "x": 413,
-   "y": 622,
+   "y": 730,
    "w": 172,
-   "h": 168,
+   "h": 206,
    "kind": "cereb_w",
    "title": "Adds skill + coordination",
    "lines": [
+    "in: copy of the cortical motor command",
     "out: dentate nucleus → motor and premotor cortex",
-    "no tremor at rest"
+    "no tremor at rest",
+    "tremor: long-loop reflex via cortex over-responds"
    ]
   },
   {
    "id": "pd_circuit_0_0",
    "x": 625,
-   "y": 622,
+   "y": 730,
    "w": 172,
-   "h": 168,
+   "h": 206,
    "kind": "pd_w",
    "title": "Pars compacta dopamine cells die",
    "lines": [
     "→ too much inhibition of the thalamus",
+    "→ too little drive to motor cortex",
     "WORSENS over time",
-    "treat: L-dopa"
+    "treat: L-dopa (precursor, crosses blood-brain barrier)"
    ]
   },
   {
    "id": "chor_circuit_0_0",
    "x": 809,
-   "y": 622,
+   "y": 730,
    "w": 172,
-   "h": 168,
+   "h": 206,
    "kind": "chor_w",
    "title": "Either cause",
    "lines": [
@@ -389,12 +400,12 @@
   {
    "from": "root",
    "to": "g_cb",
-   "path": "M513.0 88V113H315.0V138"
+   "path": "M513.0 106V131H315.0V156"
   },
   {
    "from": "root",
    "to": "g_bg",
-   "path": "M513.0 88V113H803.0V138"
+   "path": "M513.0 106V131H803.0V156"
   },
   {
    "from": "vest_head_0_0",
@@ -462,5 +473,35 @@
    "from_dx": 92
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 970,
+   "w": 461,
+   "title": "Cerebellar circuit + motor learning",
+   "items": [
+    "same circuit in every zone · half the brain's neurons",
+    "mossy → parallel fibres → Purkinje: weak, wide (~200,000 per cell)",
+    "Purkinje cells INHIBIT deep nuclei: the ONLY output",
+    "climbing fibre = error signal: teacher · parallel fibre = student",
+    "adjusts vestibulo-ocular reflex gain (aging, new glasses)",
+    "cerebellar patient + prisms: NO adaptation, no after-effect"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 520,
+   "y": 970,
+   "w": 461,
+   "title": "Basal ganglia circuit",
+   "items": [
+    "in: cortex → striatum (caudate + putamen)",
+    "out: globus pallidus → thalamus → motor cortex",
+    "direct: striatum inhibits pallidus → DISINHIBITS thalamus → movement",
+    "indirect: extra pallidal synapse + subthalamic loop → inhibits",
+    "pars reticulata → superior colliculus: eye movements"
+   ],
+   "cols": 1
+  }
+ ]
 }

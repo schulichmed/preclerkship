@@ -81,7 +81,7 @@
    "x": 40,
    "y": 406,
    "w": 260,
-   "h": 840,
+   "h": 1092,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -89,7 +89,7 @@
    "x": 302,
    "y": 406,
    "w": 260,
-   "h": 840,
+   "h": 1092,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -97,7 +97,7 @@
    "x": 592,
    "y": 406,
    "w": 260,
-   "h": 840,
+   "h": 1092,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -105,7 +105,7 @@
    "x": 854,
    "y": 406,
    "w": 260,
-   "h": 840,
+   "h": 1092,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   }
@@ -119,20 +119,20 @@
   },
   {
    "x": 23,
-   "y": 532,
-   "h": 132,
+   "y": 568,
+   "h": 276,
    "text": "RISKS"
   },
   {
    "x": 23,
-   "y": 704,
+   "y": 884,
    "h": 162,
    "text": "CHECK"
   },
   {
    "x": 23,
-   "y": 906,
-   "h": 332,
+   "y": 1086,
+   "h": 404,
    "text": "TREATMENT"
   }
  ],
@@ -191,11 +191,12 @@
    "x": 45,
    "y": 414,
    "w": 250,
-   "h": 78,
+   "h": 114,
    "kind": "plan_h",
    "title": "Before conception",
    "lines": [
-    "the glycated hemoglobin (A1c) at conception sets the malformation risk"
+    "the glycated hemoglobin (A1c) at conception sets the malformation risk",
+    "1–2% of pregnancies · malformations 1.7–9.4% (general 2–4%)"
    ]
   },
   {
@@ -203,7 +204,7 @@
    "x": 307,
    "y": 414,
    "w": 250,
-   "h": 78,
+   "h": 114,
    "kind": "preg_h",
    "title": "Pregnant with type 1 or 2",
    "lines": [
@@ -215,11 +216,12 @@
    "x": 597,
    "y": 414,
    "w": 250,
-   "h": 78,
+   "h": 114,
    "kind": "gdm_h",
    "title": "Gestational diabetes (GDM)",
    "lines": [
-    "weight + placental hormones → insulin resistance"
+    "weight + placental hormones → insulin resistance",
+    "common: 16.9% of pregnancies worldwide · resolves after delivery"
    ]
   },
   {
@@ -227,7 +229,7 @@
    "x": 859,
    "y": 414,
    "w": 250,
-   "h": 78,
+   "h": 114,
    "kind": "true_h",
    "title": "It was TYPE 2 all along",
    "lines": [
@@ -237,51 +239,57 @@
   {
    "id": "plan_risk_0_0",
    "x": 45,
-   "y": 532,
+   "y": 568,
    "w": 250,
-   "h": 132,
+   "h": 276,
    "kind": "plan_t",
    "title": "Malformations",
    "lines": [
-    "• neural tube, caudal regression",
-    "• heart: transposition, coarctation, atrial septal defect",
-    "• gut atresias · kidney agenesis, double ureters"
+    "• neural tube: anencephaly, spina bifida · caudal regression",
+    "• heart: transposition, coarctation, ATRIAL SEPTAL DEFECT, pulmonary stenosis",
+    "• duodenal atresia, imperforate anus, situs inversus",
+    "• renal agenesis, duplex ureters, hydronephrosis",
+    "• mostly IRREVERSIBLE"
    ]
   },
   {
    "id": "preg_risk_0_0",
    "x": 307,
-   "y": 532,
+   "y": 568,
    "w": 250,
-   "h": 132,
+   "h": 276,
    "kind": "preg_t",
    "title": "Mother and baby",
    "lines": [
-    "• pre-eclampsia ×2",
-    "• retinopathy, nephropathy WORSEN",
-    "• big baby, newborn LOW glucose"
+    "• pre-eclampsia ×2 (10% vs 5%): after 20 weeks, cure = delivery",
+    "• retinopathy WORSENS: high blood pressure, pre-eclampsia, worse baseline, big A1c drop",
+    "• nephropathy: settles after delivery",
+    "• cesarean 32–45% · born < 34 weeks 15% · fetal distress",
+    "• big baby (> 4 kg) or small (vascular disease: poor placental flow)",
+    "• newborn LOW glucose, low calcium, high red cells, bilirubin",
+    "• baby NOT born with diabetes"
    ]
   },
   {
    "id": "gdm_risk_0_0",
    "x": 597,
-   "y": 532,
+   "y": 568,
    "w": 250,
-   "h": 132,
+   "h": 276,
    "kind": "gdm_t",
    "title": "Mother and baby",
    "lines": [
     "• baby > 4 kg: shoulder dystocia, brachial plexus injury",
-    "• stillbirth · newborn low glucose, calcium",
+    "• asphyxia, stillbirth · newborn low glucose, calcium, high bilirubin",
     "• hypertension, induction, cesarean"
    ]
   },
   {
    "id": "true_risk_0_0",
    "x": 859,
-   "y": 532,
+   "y": 568,
    "w": 250,
-   "h": 132,
+   "h": 276,
    "kind": "true_t",
    "title": "Hint in pregnancy",
    "lines": [
@@ -291,21 +299,22 @@
   {
    "id": "plan_inv_0_0",
    "x": 45,
-   "y": 704,
+   "y": 884,
    "w": 250,
-   "h": 70,
+   "h": 79,
    "kind": "plan_t",
    "title": "1 · A1c ≤ 7%",
    "lines": [
-    "≤ 6.5% even better"
+    "≤ 6.5% even better",
+    "good control → anomalies ↓ 70%"
    ]
   },
   {
    "id": "plan_inv_1_0",
    "x": 45,
-   "y": 796,
+   "y": 985,
    "w": 250,
-   "h": 70,
+   "h": 61,
    "kind": "plan_w",
    "title": "2 · Screen for retinopathy",
    "lines": [
@@ -315,7 +324,7 @@
   {
    "id": "preg_inv_0_0",
    "x": 307,
-   "y": 704,
+   "y": 884,
    "w": 250,
    "h": 60,
    "kind": "preg_t",
@@ -327,7 +336,7 @@
   {
    "id": "preg_inv_1_0",
    "x": 307,
-   "y": 786,
+   "y": 966,
    "w": 250,
    "h": 80,
    "kind": "preg_w",
@@ -339,7 +348,7 @@
   {
    "id": "gdm_inv_0_0",
    "x": 597,
-   "y": 704,
+   "y": 884,
    "w": 250,
    "h": 79,
    "kind": "gdm_t",
@@ -351,7 +360,7 @@
   {
    "id": "gdm_inv_1_0",
    "x": 597,
-   "y": 805,
+   "y": 985,
    "w": 250,
    "h": 61,
    "kind": "gdm_w",
@@ -361,7 +370,7 @@
   {
    "id": "true_inv_0_0",
    "x": 859,
-   "y": 704,
+   "y": 884,
    "w": 250,
    "h": 162,
    "kind": "bad",
@@ -373,47 +382,49 @@
   {
    "id": "plan_tx_0_0",
    "x": 45,
-   "y": 906,
+   "y": 1086,
    "w": 250,
-   "h": 332,
+   "h": 404,
    "kind": "ok",
    "title": "Conceive only when controlled",
    "lines": [
     "• folic acid",
-    "• blood pressure drugs safe for a baby: see the HYPERTENSION IN PREGNANCY chart"
+    "• control blood pressure before + during: beta blockers, calcium channel blockers",
+    "• ACE inhibitors, ARBs CONTRAINDICATED · more: see the HYPERTENSION IN PREGNANCY chart"
    ]
   },
   {
    "id": "preg_tx_0_0",
    "x": 307,
-   "y": 906,
+   "y": 1086,
    "w": 250,
-   "h": 332,
+   "h": 404,
    "kind": "warn",
    "title": "Insulin needs follow the placenta",
    "lines": [
     "• 1st trimester ↓: LOWS",
     "• 2nd ↑ slowly · 3rd ↑↑ (most in type 2)",
+    "• why: prolactin, cortisol, growth hormone · bigger placenta, more resistance",
     "• after delivery ↓↓: lows while breastfeeding"
    ]
   },
   {
    "id": "gdm_tx_0_0",
    "x": 597,
-   "y": 906,
+   "y": 1086,
    "w": 250,
    "h": 96,
    "kind": "ok",
    "title": "1 · Diet + walk",
    "lines": [
-    "• 3 meals of 45 g, 3 snacks of 20 g carbohydrate",
+    "• low simple sugar: 3 meals of 45 g, 3 snacks of 20 g carbohydrate",
     "• 10 min walk after meals"
    ]
   },
   {
    "id": "gdm_tx_1_0",
    "x": 597,
-   "y": 1024,
+   "y": 1204,
    "w": 250,
    "h": 114,
    "kind": "ok",
@@ -427,22 +438,23 @@
   {
    "id": "gdm_tx_2_0",
    "x": 597,
-   "y": 1160,
+   "y": 1340,
    "w": 250,
-   "h": 78,
+   "h": 150,
    "kind": "warn",
    "title": "3 · STOP all at delivery",
    "lines": [
     "• 75 g test 6 weeks–6 months after",
-    "• up to 60% get type 2 later"
+    "• up to 60% get type 2 later · GDM again next time",
+    "case: 50 g 8.5 → 75 g 6.5/10.9/10.6 · insulin · 4.5 kg baby, NICU lows, jaundice"
    ]
   },
   {
    "id": "true_tx_0_0",
    "x": 859,
-   "y": 906,
+   "y": 1086,
    "w": 250,
-   "h": 332,
+   "h": 404,
    "kind": "ok",
    "title": "Treat as diabetes",
    "lines": [

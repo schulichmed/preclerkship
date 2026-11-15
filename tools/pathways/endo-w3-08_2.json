@@ -137,13 +137,14 @@
    "x": 240,
    "y": 700,
    "w": 520,
-   "h": 150,
+   "h": 168,
    "kind": "plain",
    "title": "Criteria for hormones",
    "lines": [
     "ADULTS (WPATH): persistent, well-documented dysphoria · capacity to consent · age of majority · medical or mental health concerns reasonably well-CONTROLLED",
     "ADOLESCENTS: confirmed persistence · able to consent · preferably parental support · usually ~16 y · decided by the team, adolescent + family",
-    "~after a psychosocial assessment + informed consent, with a referral from the assessing mental health professional"
+    "~after a psychosocial assessment + informed consent, with a referral from the assessing mental health professional",
+    "~endocrinologist: supports start-up + troubleshooting, not necessarily the diagnosis"
    ]
   },
   {
@@ -161,23 +162,24 @@
   {
    "id": "mas",
    "x": 15,
-   "y": 910,
+   "y": 928,
    "w": 480,
-   "h": 168,
+   "h": 204,
    "kind": "anti",
    "title": "2 · MASCULINIZING: TESTOSTERONE",
    "lines": [
     "two goals: SUPPRESS the designated sex hormones, then REPLACE, as for a hypogonadal patient",
     "enanthate or cypionate 100–200 mg IM every 2 wk (or SC 50% weekly) · undecanoate 1000 mg every 12 wk · gel 1.6% 50–100 mg/d · patch 2.5–7.5 mg/d",
-    "~injection: \"roller coaster\" levels · oral: 2–3× daily with fatty food, CANNOT be monitored"
+    "~injection: \"roller coaster\" levels, check T HALFWAY between doses · patch: skin irritation · gel: contaminates others, sweating · oral: 2–3× daily with fatty food, CANNOT be monitored",
+    "~free androgen index = T ÷ SHBG · SHBG ↓ in obesity"
    ]
   },
   {
    "id": "fem",
    "x": 505,
-   "y": 910,
+   "y": 928,
    "w": 480,
-   "h": 168,
+   "h": 204,
    "kind": "ana",
    "title": "2 · FEMINIZING: ESTROGEN ± anti-androgen",
    "lines": [
@@ -189,7 +191,7 @@
   {
    "id": "mas_e",
    "x": 15,
-   "y": 1112,
+   "y": 1166,
    "w": 480,
    "h": 168,
    "kind": "plain",
@@ -204,7 +206,7 @@
   {
    "id": "fem_e",
    "x": 505,
-   "y": 1112,
+   "y": 1166,
    "w": 480,
    "h": 168,
    "kind": "plain",
@@ -219,7 +221,7 @@
   {
    "id": "mas_r",
    "x": 15,
-   "y": 1314,
+   "y": 1368,
    "w": 480,
    "h": 132,
    "kind": "warn",
@@ -233,7 +235,7 @@
   {
    "id": "fem_r",
    "x": 505,
-   "y": 1314,
+   "y": 1368,
    "w": 480,
    "h": 132,
    "kind": "warn",
@@ -247,7 +249,7 @@
   {
    "id": "surg",
    "x": 250,
-   "y": 1506,
+   "y": 1560,
    "w": 500,
    "h": 168,
    "kind": "bad",
@@ -326,58 +328,58 @@
   {
    "from": "crit",
    "to": "mas",
-   "path": "M500.0 850V880H255.0V910",
+   "path": "M500.0 868V898H255.0V928",
    "label": "transgender males (FTM)",
    "label_at": [
     259.0,
-    895
+    913
    ]
   },
   {
    "from": "crit",
    "to": "fem",
-   "path": "M500.0 850V880H745.0V910",
+   "path": "M500.0 868V898H745.0V928",
    "label": "transgender females (MTF)",
    "label_at": [
     749.0,
-    895
+    913
    ]
   },
   {
    "from": "mas",
    "to": "mas_e",
-   "path": "M255.0 1078V1112"
+   "path": "M255.0 1132V1166"
   },
   {
    "from": "fem",
    "to": "fem_e",
-   "path": "M745.0 1078V1112"
+   "path": "M745.0 1132V1166"
   },
   {
    "from": "mas_e",
    "to": "mas_r",
-   "path": "M255.0 1280V1314"
+   "path": "M255.0 1334V1368"
   },
   {
    "from": "fem_e",
    "to": "fem_r",
-   "path": "M745.0 1280V1314"
+   "path": "M745.0 1334V1368"
   },
   {
    "from": "mas_r",
    "to": "surg",
-   "path": "M255.0 1446V1476H500V1506"
+   "path": "M255.0 1500V1530H500V1560"
   },
   {
    "from": "fem_r",
    "to": "surg",
-   "path": "M745.0 1446V1476H500"
+   "path": "M745.0 1500V1530H500"
   }
  ],
  "panels": [
   {
    "x": 15,
-   "y": 1708,
+   "y": 1762,
    "w": 480,
    "title": "Before starting hormones (WPATH)",
    "items": [
@@ -390,7 +392,7 @@
   },
   {
    "x": 505,
-   "y": 1708,
+   "y": 1762,
    "w": 480,
    "title": "Terms + screening",
    "items": [

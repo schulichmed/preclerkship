@@ -133,57 +133,57 @@
  "bands": [
   {
    "x": 40,
-   "y": 444,
+   "y": 498,
    "w": 230,
-   "h": 640,
+   "h": 748,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 272,
-   "y": 444,
+   "y": 498,
    "w": 230,
-   "h": 640,
+   "h": 748,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 504,
-   "y": 444,
+   "y": 498,
    "w": 230,
-   "h": 640,
+   "h": 748,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 764,
-   "y": 444,
+   "y": 498,
    "w": 230,
-   "h": 422,
+   "h": 530,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 996,
-   "y": 444,
+   "y": 498,
    "w": 230,
-   "h": 422,
+   "h": 530,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 1228,
-   "y": 444,
+   "y": 498,
    "w": 230,
-   "h": 422,
+   "h": 530,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
   {
    "x": 1460,
-   "y": 444,
+   "y": 498,
    "w": 230,
-   "h": 422,
+   "h": 530,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   }
@@ -191,19 +191,19 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 570,
-   "h": 132,
+   "y": 624,
+   "h": 170,
    "text": "WHAT"
   },
   {
    "x": 23,
-   "y": 742,
-   "h": 116,
+   "y": 834,
+   "h": 186,
    "text": "KEY"
   },
   {
    "x": 23,
-   "y": 898,
+   "y": 1060,
    "h": 178,
    "text": "DO NEXT"
   }
@@ -219,29 +219,32 @@
    "lines": [
     "ASSESS EVERY patient first:",
     "history: duration, nature, physical AND psychological symptoms incl. SUICIDAL THOUGHTS, what was tried, effect on function",
-    "review past investigations, new only if indicated · pain diary: rate the sensation and the distress SEPARATELY"
+    "review past investigations, new only if indicated · pain diary: rate the sensation and the distress SEPARATELY",
+    "pain scores: words · 0-10 · faces · visual analogue · McGill questionnaire",
+    "case: 47 M, crush injury, tibia + fibula fixed and healed · 1 year on: pain, disability, off work on compensation"
    ]
   },
   {
    "id": "g_no",
    "x": 45,
-   "y": 176,
+   "y": 212,
    "w": 684,
-   "h": 96,
+   "h": 114,
    "kind": "plain",
    "title": "NO: chronic pain",
    "lines": [
     "multimodal, multidisciplinary",
     "realistic, measurable goals · MANAGE, not cure",
-    "start EARLY, before 12 weeks"
+    "start EARLY, before 12 weeks · stay active, return to work",
+    "patient as PARTNER · liaise with work, family · reassess"
    ]
   },
   {
    "id": "g_yes",
    "x": 769,
-   "y": 176,
+   "y": 212,
    "w": 916,
-   "h": 96,
+   "h": 114,
    "kind": "plain",
    "title": "YES: which fits?",
    "lines": [
@@ -251,7 +254,7 @@
   {
    "id": "t1",
    "x": 1233,
-   "y": 312,
+   "y": 366,
    "w": 452,
    "h": 60,
    "kind": "plain",
@@ -263,7 +266,7 @@
   {
    "id": "bio_head_0_0",
    "x": 45,
-   "y": 452,
+   "y": 506,
    "w": 220,
    "h": 78,
    "kind": "bio_h",
@@ -275,7 +278,7 @@
   {
    "id": "psy_head_0_0",
    "x": 277,
-   "y": 452,
+   "y": 506,
    "w": 220,
    "h": 78,
    "kind": "psy_h",
@@ -287,7 +290,7 @@
   {
    "id": "reh_head_0_0",
    "x": 509,
-   "y": 452,
+   "y": 506,
    "w": 220,
    "h": 78,
    "kind": "reh_h",
@@ -299,7 +302,7 @@
   {
    "id": "ssd_head_0_0",
    "x": 769,
-   "y": 452,
+   "y": 506,
    "w": 220,
    "h": 78,
    "kind": "ssd_h",
@@ -311,7 +314,7 @@
   {
    "id": "cnv_head_0_0",
    "x": 1001,
-   "y": 452,
+   "y": 506,
    "w": 220,
    "h": 78,
    "kind": "cnv_h",
@@ -323,7 +326,7 @@
   {
    "id": "fac_head_0_0",
    "x": 1233,
-   "y": 452,
+   "y": 506,
    "w": 220,
    "h": 78,
    "kind": "fac_h",
@@ -335,7 +338,7 @@
   {
    "id": "mal_head_0_0",
    "x": 1465,
-   "y": 452,
+   "y": 506,
    "w": 220,
    "h": 78,
    "kind": "mal_h",
@@ -347,83 +350,90 @@
   {
    "id": "bio_pres_0_0",
    "x": 45,
-   "y": 570,
+   "y": 624,
    "w": 220,
-   "h": 132,
+   "h": 170,
    "kind": "bio_t",
    "title": "WHO pain ladder",
    "lines": [
-    "1 · non-opioid ± adjuvant",
-    "2 · weak opioid + non-opioid ± adjuvant",
-    "3 · strong opioid + non-opioid ± adjuvant"
+    "1 · non-opioid ± adjuvant: NSAID, acetaminophen",
+    "2 · weak opioid + non-opioid ± adjuvant: Tylenol #3",
+    "3 · strong opioid + non-opioid ± adjuvant: morphine + acetaminophen"
    ]
   },
   {
    "id": "psy_pres_0_0",
    "x": 277,
-   "y": 570,
+   "y": 624,
    "w": 220,
-   "h": 132,
+   "h": 170,
    "kind": "psy_t",
    "title": "Cognitive behavioural therapy (CBT)",
    "lines": [
     "links thoughts, feelings and behaviours to pain",
-    "individual or group"
+    "MANAGE, not cure · individual or group",
+    "~ level III evidence · chronic headache: 53% improve"
    ]
   },
   {
    "id": "reh_pres_0_0",
    "x": 509,
-   "y": 570,
+   "y": 624,
    "w": 220,
-   "h": 132,
+   "h": 170,
    "kind": "reh_t",
    "title": "Pacing",
    "lines": [
-    "education and adaptation"
+    "education and adaptation",
+    "• exercise: aerobic, stretching, strengthening, meditative"
    ]
   },
   {
    "id": "ssd_pres_0_0",
    "x": 769,
-   "y": 570,
+   "y": 624,
    "w": 220,
-   "h": 132,
+   "h": 170,
    "kind": "ssd_t",
    "title": "Distressing symptoms plus",
    "lines": [
+    "• one or more symptoms: distressing or disrupting daily life",
     "• EXCESSIVE thoughts, feelings, behaviours",
-    "• lasting over 6 months"
+    "• SYMPTOMATIC state lasting over 6 months (any one symptom may come and go)"
    ]
   },
   {
    "id": "cnv_pres_0_0",
    "x": 1001,
-   "y": 570,
+   "y": 624,
    "w": 220,
-   "h": 132,
+   "h": 170,
    "kind": "cnv_t",
    "title": "Altered voluntary motor or sensory function",
-   "lines": []
+   "lines": [
+    "• not better explained by another disorder",
+    "• distress or impaired function"
+   ]
   },
   {
    "id": "fac_pres_0_0",
    "x": 1233,
-   "y": 570,
+   "y": 624,
    "w": 220,
-   "h": 132,
+   "h": 170,
    "kind": "fac_t",
    "title": "Presents self or another as ill",
    "lines": [
-    "deception even without obvious external reward"
+    "deception even without obvious external reward",
+    "imposed on self or on another (was 'by proxy')"
    ]
   },
   {
    "id": "mal_pres_0_0",
    "x": 1465,
-   "y": 570,
+   "y": 624,
    "w": 220,
-   "h": 132,
+   "h": 170,
    "kind": "mal_t",
    "title": "Deception",
    "lines": [
@@ -433,9 +443,9 @@
   {
    "id": "bio_inv_0_0",
    "x": 45,
-   "y": 742,
+   "y": 834,
    "w": 220,
-   "h": 116,
+   "h": 186,
    "kind": "bio_w",
    "title": "Adjuvants",
    "lines": [
@@ -447,23 +457,24 @@
   {
    "id": "psy_inv_0_0",
    "x": 277,
-   "y": 742,
+   "y": 834,
    "w": 220,
-   "h": 116,
+   "h": 186,
    "kind": "psy_w",
    "title": "CBT targets",
    "lines": [
     "• MENTAL FILTER",
     "• CATASTROPHIZING",
-    "• EMOTIONAL REASONING"
+    "• EMOTIONAL REASONING",
+    "components: education, goals, relaxation, problem-solving, communication, distraction, behavioural activation, cognitive restructuring"
    ]
   },
   {
    "id": "reh_inv_0_0",
    "x": 509,
-   "y": 742,
+   "y": 834,
    "w": 220,
-   "h": 116,
+   "h": 186,
    "kind": "reh_w",
    "title": "Why avoidance hurts",
    "lines": [
@@ -474,9 +485,9 @@
   {
    "id": "ssd_inv_0_0",
    "x": 769,
-   "y": 742,
+   "y": 834,
    "w": 220,
-   "h": 116,
+   "h": 186,
    "kind": "ssd_w",
    "title": "Unconscious",
    "lines": [
@@ -486,9 +497,9 @@
   {
    "id": "cnv_inv_0_0",
    "x": 1001,
-   "y": 742,
+   "y": 834,
    "w": 220,
-   "h": 116,
+   "h": 186,
    "kind": "cnv_w",
    "title": "INCOMPATIBLE with disease",
    "lines": [
@@ -499,9 +510,9 @@
   {
    "id": "fac_inv_0_0",
    "x": 1233,
-   "y": 742,
+   "y": 834,
    "w": 220,
-   "h": 116,
+   "h": 186,
    "kind": "fac_w",
    "title": "Behaviour CONSCIOUS",
    "lines": [
@@ -511,9 +522,9 @@
   {
    "id": "mal_inv_0_0",
    "x": 1465,
-   "y": 742,
+   "y": 834,
    "w": 220,
-   "h": 116,
+   "h": 186,
    "kind": "mal_w",
    "title": "Behaviour CONSCIOUS",
    "lines": [
@@ -523,7 +534,7 @@
   {
    "id": "bio_tx_0_0",
    "x": 45,
-   "y": 898,
+   "y": 1060,
    "w": 220,
    "h": 178,
    "kind": "ok",
@@ -531,13 +542,14 @@
    "lines": [
     "• transcutaneous electrical nerve stimulation (TENS)",
     "• heat and cold · physiotherapy",
+    "• acupuncture, acupressure · massage",
     "• injections, nerve blocks"
    ]
   },
   {
    "id": "psy_tx_0_0",
    "x": 277,
-   "y": 898,
+   "y": 1060,
    "w": 220,
    "h": 96,
    "kind": "ok",
@@ -550,7 +562,7 @@
   {
    "id": "psy_tx_1_0",
    "x": 277,
-   "y": 1016,
+   "y": 1178,
    "w": 220,
    "h": 60,
    "kind": "bad",
@@ -562,7 +574,7 @@
   {
    "id": "reh_tx_0_0",
    "x": 509,
-   "y": 898,
+   "y": 1060,
    "w": 220,
    "h": 178,
    "kind": "ok",
@@ -575,7 +587,7 @@
   {
    "id": "span0_tx_0_0",
    "x": 769,
-   "y": 898,
+   "y": 1060,
    "w": 452,
    "h": 178,
    "kind": "ok",
@@ -589,7 +601,7 @@
   {
    "id": "span1_tx_0_0",
    "x": 1233,
-   "y": 898,
+   "y": 1060,
    "w": 452,
    "h": 178,
    "kind": "warn",
@@ -597,6 +609,8 @@
    "lines": [
     "• timeline with inconsistent or misleading information",
     "• symptoms out of proportion · collateral information",
+    "• gap between the event and the symptoms",
+    "• many tests, consults, treatments with little benefit",
     "• inconsistent exam · neuropsychological testing"
    ]
   }
@@ -605,12 +619,12 @@
   {
    "from": "root",
    "to": "g_no",
-   "path": "M865.0 126V151H387.0V176"
+   "path": "M865.0 162V187H387.0V212"
   },
   {
    "from": "root",
    "to": "g_yes",
-   "path": "M865.0 126V151H1227.0V176"
+   "path": "M865.0 162V187H1227.0V212"
   },
   {
    "from": "g_yes",
@@ -728,7 +742,7 @@
    "label": "NO",
    "label_at": [
     1343.0,
-    412
+    466
    ]
   },
   {
@@ -751,9 +765,23 @@
    "label": "YES",
    "label_at": [
     1575.0,
-    412
+    466
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1272,
+   "w": 1640,
+   "title": "Somatic symptom and related disorders (DSM-5)",
+   "items": [
+    "family: somatic symptom disorder · illness anxiety · conversion · psychological factors affecting other medical conditions · factitious",
+    "medically unexplained symptoms: 15-25% primary care · 39-52% specialist clinics · > 60% neurology",
+    "functional somatic syndromes: irritable bowel, chronic fatigue, fibromyalgia · F > M · overlap with anxiety, depression",
+    "psychodynamic psychotherapy: a SECONDARY approach for lifelong behaviour patterns"
+   ],
+   "cols": 1
+  }
+ ]
 }

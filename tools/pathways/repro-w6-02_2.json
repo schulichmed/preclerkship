@@ -115,49 +115,49 @@
  "bands": [
   {
    "x": 40,
-   "y": 306,
+   "y": 342,
    "w": 224,
-   "h": 604,
+   "h": 658,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 266,
-   "y": 306,
+   "y": 342,
    "w": 224,
-   "h": 604,
+   "h": 658,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 492,
-   "y": 306,
+   "y": 342,
    "w": 224,
-   "h": 604,
+   "h": 658,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 746,
-   "y": 306,
+   "y": 342,
    "w": 224,
-   "h": 604,
+   "h": 658,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
    "x": 972,
-   "y": 306,
+   "y": 342,
    "w": 224,
-   "h": 604,
+   "h": 658,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 1198,
-   "y": 306,
+   "y": 342,
    "w": 224,
-   "h": 604,
+   "h": 658,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   }
@@ -165,19 +165,19 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 432,
-   "h": 114,
+   "y": 468,
+   "h": 168,
    "text": "CLUES"
   },
   {
    "x": 23,
-   "y": 586,
+   "y": 676,
    "h": 178,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 804,
+   "y": 894,
    "h": 98,
    "text": "ACTION"
   }
@@ -192,14 +192,15 @@
    "title": "A small fetus: is it GROWTH-RESTRICTED, and is it time to DELIVER?",
    "lines": [
     "suspect: symphysis-fundus height (SFH) more than 2–3 cm behind the weeks (after 20 weeks), or a risk factor",
-    "confirm ONLY by ultrasound: estimated fetal weight (EFW) < 10th percentile = small for gestational age (SGA) · < 3rd = real risk of a bad outcome",
-    "intrauterine growth restriction (IUGR) is a PROCESS: it can sit above the 10th percentile"
+    "confirm ONLY by ultrasound: estimated fetal weight (EFW, Hadlock: head + abdominal circumference, biparietal diameter, femur length)",
+    "normal 10th–90th percentile · > 90th large (LGA) · < 10th small for gestational age (SGA) · < 3rd = real risk of a bad outcome",
+    "SGA = constitutionally small (normal intrinsic factors) · intrauterine growth restriction (IUGR) = a PATHOLOGICAL process: it can sit above the 10th percentile"
    ]
   },
   {
    "id": "g_cause",
    "x": 45,
-   "y": 174,
+   "y": 210,
    "w": 666,
    "h": 60,
    "kind": "plain",
@@ -211,7 +212,7 @@
   {
    "id": "g_ga",
    "x": 751,
-   "y": 174,
+   "y": 210,
    "w": 666,
    "h": 60,
    "kind": "plain",
@@ -223,7 +224,7 @@
   {
    "id": "mat_head_0_0",
    "x": 45,
-   "y": 314,
+   "y": 350,
    "w": 214,
    "h": 78,
    "kind": "mat_h",
@@ -235,7 +236,7 @@
   {
    "id": "fet_head_0_0",
    "x": 271,
-   "y": 314,
+   "y": 350,
    "w": 214,
    "h": 78,
    "kind": "fet_h",
@@ -247,7 +248,7 @@
   {
    "id": "pla_head_0_0",
    "x": 497,
-   "y": 314,
+   "y": 350,
    "w": 214,
    "h": 78,
    "kind": "pla_h",
@@ -259,7 +260,7 @@
   {
    "id": "lt32_head_0_0",
    "x": 751,
-   "y": 314,
+   "y": 350,
    "w": 214,
    "h": 78,
    "kind": "lt32_h",
@@ -271,7 +272,7 @@
   {
    "id": "mid_head_0_0",
    "x": 977,
-   "y": 314,
+   "y": 350,
    "w": 214,
    "h": 78,
    "kind": "mid_h",
@@ -281,7 +282,7 @@
   {
    "id": "ge37_head_0_0",
    "x": 1203,
-   "y": 314,
+   "y": 350,
    "w": 214,
    "h": 78,
    "kind": "ge37_h",
@@ -291,9 +292,9 @@
   {
    "id": "mat_clue_0_0",
    "x": 45,
-   "y": 432,
+   "y": 468,
    "w": 214,
-   "h": 114,
+   "h": 168,
    "kind": "mat_t",
    "title": "Ask about",
    "lines": [
@@ -306,9 +307,9 @@
   {
    "id": "fet_clue_0_0",
    "x": 271,
-   "y": 432,
+   "y": 468,
    "w": 214,
-   "h": 114,
+   "h": 168,
    "kind": "fet_t",
    "title": "Think",
    "lines": [
@@ -321,23 +322,25 @@
   {
    "id": "pla_clue_0_0",
    "x": 497,
-   "y": 432,
+   "y": 468,
    "w": 214,
-   "h": 114,
+   "h": 168,
    "kind": "pla_t",
    "title": "Think",
    "lines": [
     "• placental insufficiency",
     "• abruption",
-    "• small clots: lupus, smoking"
+    "• small clots: lupus, smoking",
+    "• hypertension → abruption, poor connection",
+    "• chromosomal abnormality of the placenta"
    ]
   },
   {
    "id": "lt32_clue_0_0",
    "x": 751,
-   "y": 432,
+   "y": 468,
    "w": 214,
-   "h": 114,
+   "h": 168,
    "kind": "lt32_t",
    "title": "Fetal DISTRESS?",
    "lines": [
@@ -348,9 +351,9 @@
   {
    "id": "mid_clue_0_0",
    "x": 977,
-   "y": 432,
+   "y": 468,
    "w": 214,
-   "h": 114,
+   "h": 168,
    "kind": "mid_t",
    "title": "Oligohydramnios? Abnormal Doppler?",
    "lines": [
@@ -360,9 +363,9 @@
   {
    "id": "ge37_clue_0_0",
    "x": 1203,
-   "y": 432,
+   "y": 468,
    "w": 214,
-   "h": 114,
+   "h": 168,
    "kind": "ge37_t",
    "title": "Little to gain by waiting",
    "lines": [
@@ -372,7 +375,7 @@
   {
    "id": "mat_inv_0_0",
    "x": 45,
-   "y": 586,
+   "y": 676,
    "w": 214,
    "h": 178,
    "kind": "mat_w",
@@ -386,7 +389,7 @@
   {
    "id": "fet_inv_0_0",
    "x": 271,
-   "y": 586,
+   "y": 676,
    "w": 214,
    "h": 96,
    "kind": "fet_w",
@@ -400,7 +403,7 @@
   {
    "id": "fet_inv_1_0",
    "x": 271,
-   "y": 704,
+   "y": 794,
    "w": 214,
    "h": 60,
    "kind": "fet_w",
@@ -412,21 +415,21 @@
   {
    "id": "pla_inv_0_0",
    "x": 497,
-   "y": 586,
+   "y": 676,
    "w": 214,
    "h": 178,
    "kind": "pla_w",
    "title": "1 · UA Doppler: it worsens in order",
    "lines": [
     "• ↑ resistive or pulsatility index",
-    "• ABSENT end-diastolic flow (EDF)",
-    "• REVERSED EDF"
+    "• ABSENT end-diastolic flow (EDF): ~50% of microvessels damaged",
+    "• REVERSED EDF: ~70% damaged"
    ]
   },
   {
    "id": "lt32_inv_0_0",
    "x": 751,
-   "y": 586,
+   "y": 676,
    "w": 214,
    "h": 178,
    "kind": "lt32_w",
@@ -438,7 +441,7 @@
   {
    "id": "mid_inv_0_0",
    "x": 977,
-   "y": 586,
+   "y": 676,
    "w": 214,
    "h": 178,
    "kind": "mid_w",
@@ -450,7 +453,7 @@
   {
    "id": "ge37_inv_0_0",
    "x": 1203,
-   "y": 586,
+   "y": 676,
    "w": 214,
    "h": 178,
    "kind": "ge37_w",
@@ -462,7 +465,7 @@
   {
    "id": "mat_tx_0_0",
    "x": 45,
-   "y": 804,
+   "y": 894,
    "w": 214,
    "h": 98,
    "kind": "ok",
@@ -475,7 +478,7 @@
   {
    "id": "fet_tx_0_0",
    "x": 271,
-   "y": 804,
+   "y": 894,
    "w": 214,
    "h": 98,
    "kind": "warn",
@@ -485,7 +488,7 @@
   {
    "id": "pla_tx_0_0",
    "x": 497,
-   "y": 804,
+   "y": 894,
    "w": 214,
    "h": 98,
    "kind": "warn",
@@ -497,7 +500,7 @@
   {
    "id": "lt32_tx_0_0",
    "x": 751.0,
-   "y": 804,
+   "y": 894,
    "w": 102.0,
    "h": 98,
    "kind": "ok",
@@ -507,7 +510,7 @@
   {
    "id": "lt32_tx_0_1",
    "x": 863.0,
-   "y": 804,
+   "y": 894,
    "w": 102.0,
    "h": 98,
    "kind": "bad",
@@ -517,7 +520,7 @@
   {
    "id": "mid_tx_0_0",
    "x": 977.0,
-   "y": 804,
+   "y": 894,
    "w": 102.0,
    "h": 98,
    "kind": "ok",
@@ -527,7 +530,7 @@
   {
    "id": "mid_tx_0_1",
    "x": 1089.0,
-   "y": 804,
+   "y": 894,
    "w": 102.0,
    "h": 98,
    "kind": "bad",
@@ -537,7 +540,7 @@
   {
    "id": "ge37_tx_0_0",
    "x": 1203,
-   "y": 804,
+   "y": 894,
    "w": 214,
    "h": 98,
    "kind": "ok",
@@ -549,12 +552,12 @@
   {
    "from": "root",
    "to": "g_cause",
-   "path": "M731.0 124V149H378.0V174"
+   "path": "M731.0 160V185H378.0V210"
   },
   {
    "from": "root",
    "to": "g_ga",
-   "path": "M731.0 124V149H1084.0V174"
+   "path": "M731.0 160V185H1084.0V210"
   },
   {
    "from": "fet_inv_0_0",
@@ -579,7 +582,7 @@
    "label": "maternal",
    "label_at": [
     152.0,
-    274
+    310
    ]
   },
   {
@@ -601,7 +604,7 @@
    "label": "fetal",
    "label_at": [
     378.0,
-    274
+    310
    ]
   },
   {
@@ -623,7 +626,7 @@
    "label": "placental",
    "label_at": [
     604.0,
-    274
+    310
    ]
   },
   {
@@ -651,7 +654,7 @@
    "label": "< 32 weeks",
    "label_at": [
     858.0,
-    274
+    310
    ]
   },
   {
@@ -679,7 +682,7 @@
    "label": "32–37 weeks",
    "label_at": [
     1084.0,
-    274
+    310
    ]
   },
   {
@@ -701,14 +704,14 @@
    "label": "≥ 37 weeks",
    "label_at": [
     1310.0,
-    274
+    310
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 936,
+   "y": 1026,
    "w": 679,
    "title": "Delivering preterm",
    "items": [
@@ -719,7 +722,7 @@
   },
   {
    "x": 738,
-   "y": 936,
+   "y": 1026,
    "w": 679,
    "title": "A weight, not a percentile (any gestation)",
    "items": [

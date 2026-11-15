@@ -79,33 +79,33 @@
  "bands": [
   {
    "x": 40,
-   "y": 288,
+   "y": 324,
    "w": 272,
-   "h": 916,
+   "h": 1524,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 314,
-   "y": 288,
+   "y": 324,
    "w": 272,
-   "h": 916,
+   "h": 1524,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 616,
-   "y": 288,
+   "y": 324,
    "w": 272,
-   "h": 1188,
+   "h": 1868,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 890,
-   "y": 288,
+   "y": 324,
    "w": 272,
-   "h": 1188,
+   "h": 1868,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   }
@@ -113,26 +113,26 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 414,
-   "h": 198,
+   "y": 450,
+   "h": 364,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 652,
-   "h": 200,
+   "y": 854,
+   "h": 270,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 892,
-   "h": 304,
+   "y": 1164,
+   "h": 676,
    "text": "TREATMENT"
   },
   {
    "x": 23,
-   "y": 1236,
-   "h": 232,
+   "y": 1880,
+   "h": 304,
    "text": "THEN"
   }
  ],
@@ -146,14 +146,15 @@
    "title": "Sudden focal neurological deficit: STROKE PROTOCOL · TIME IS BRAIN",
    "lines": [
     "point-of-care glucose (low sugar mimics a stroke) · 2 IV lines, labs (INR, creatinine, CBC) · NIH Stroke Scale",
-    "LOCALIZE before you look at the scan · door to imaging under 25 min, door to needle under 60 min",
+    "LOCALIZE before you look at the scan: where to look for early change, which vessel (posterior → ALWAYS CTA: missed basilar thrombosis → locked-in), what is incidental",
+    "door to imaging under 25 min · door to needle under 60 min · history + meds decide cause and tPA risk",
     "NON-CONTRAST CT first: any hemorrhage is an ABSOLUTE contraindication to tPA"
    ]
   },
   {
    "id": "g_isch",
    "x": 45,
-   "y": 156,
+   "y": 192,
    "w": 536,
    "h": 60,
    "kind": "plain",
@@ -165,7 +166,7 @@
   {
    "id": "g_hem",
    "x": 621,
-   "y": 156,
+   "y": 192,
    "w": 536,
    "h": 60,
    "kind": "plain",
@@ -177,7 +178,7 @@
   {
    "id": "isch_head_0_0",
    "x": 45,
-   "y": 296,
+   "y": 332,
    "w": 262,
    "h": 78,
    "kind": "isch_h",
@@ -189,7 +190,7 @@
   {
    "id": "tia_head_0_0",
    "x": 319,
-   "y": 296,
+   "y": 332,
    "w": 262,
    "h": 78,
    "kind": "tia_h",
@@ -201,7 +202,7 @@
   {
    "id": "ich_head_0_0",
    "x": 621,
-   "y": 296,
+   "y": 332,
    "w": 262,
    "h": 78,
    "kind": "ich_h",
@@ -213,7 +214,7 @@
   {
    "id": "sah_head_0_0",
    "x": 895,
-   "y": 296,
+   "y": 332,
    "w": 262,
    "h": 78,
    "kind": "sah_h",
@@ -225,46 +226,53 @@
   {
    "id": "isch_clue_0_0",
    "x": 45,
-   "y": 414,
+   "y": 450,
    "w": 262,
-   "h": 198,
+   "h": 364,
    "kind": "isch_t",
    "title": "The territory's syndrome",
    "lines": [
     "• LEFT MCA: aphasia + right face, arm > leg",
     "• RIGHT MCA: left neglect, anosognosia + left face, arm > leg",
-    "• ACA: opposite leg · PCA: opposite hemianopsia"
+    "• ACA: opposite leg · PCA: opposite hemianopsia",
+    "• BASILAR: eye movement palsy, crossed sensory, vertigo",
+    "• LACUNAR: clumsy hand-dysarthria · pure motor (face = arm = leg) · pure sensory · ataxic hemiparesis · sensorimotor",
+    "case: 57 y slumps at breakfast · eyes forced RIGHT · left hemianopsia, left face (forehead spared) + arm + leg plegic · ignores own left arm · dysarthria, no aphasia → RIGHT MCA"
    ]
   },
   {
    "id": "tia_clue_0_0",
    "x": 319,
-   "y": 414,
+   "y": 450,
    "w": 262,
-   "h": 198,
+   "h": 364,
    "kind": "tia_t",
    "title": "Resolves COMPLETELY",
    "lines": [
-    "• e.g. 10 minutes of face and hand weakness",
+    "• case: 65 y smoker, 10 min right face droop + hand weakness · BP 138/88, exam normal, no murmur, no bruit",
+    "• listen for a murmur (cardioembolic) and carotid bruit",
     "• crescendo TIAs → admit (neurology)"
    ]
   },
   {
    "id": "ich_clue_0_0",
    "x": 621,
-   "y": 414,
+   "y": 450,
    "w": 262,
-   "h": 42,
+   "h": 168,
    "kind": "ich_t",
    "title": "Cause by SITE",
-   "lines": []
+   "lines": [
+    "in order: hypertension · amyloid · tumour · AVM, cavernoma, aneurysm · coagulopathy",
+    "case: 57 y, sudden right-sided tingling, can't walk · BP 185/90 · right face, arm, leg weak, dense right sensory loss → LEFT basal ganglia bleed"
+   ]
   },
   {
    "id": "ich_clue_1_0",
    "x": 621.0,
-   "y": 478,
+   "y": 640,
    "w": 126.0,
-   "h": 134,
+   "h": 174,
    "kind": "ich_w",
    "title": "DEEP: hypertension",
    "lines": [
@@ -274,70 +282,60 @@
   {
    "id": "ich_clue_1_1",
    "x": 757.0,
-   "y": 478,
+   "y": 640,
    "w": 126.0,
-   "h": 134,
+   "h": 174,
    "kind": "ich_w",
-   "title": "LOBAR: amyloid angiopathy",
+   "title": "LOBAR: amyloid (congophilic) angiopathy",
    "lines": [
-    "just under the cortex"
+    "white matter just under frontal, parietal, occipital cortex"
    ]
   },
   {
    "id": "sah_clue_0_0",
    "x": 895,
-   "y": 414,
+   "y": 450,
    "w": 262,
-   "h": 198,
+   "h": 364,
    "kind": "sah_t",
    "title": "THUNDERCLAP",
    "lines": [
-    "• sudden, explosive, worst headache of her life",
+    "• 41 y: sudden, explosive, worst headache of her life",
     "• then nausea, vomiting"
    ]
   },
   {
    "id": "isch_inv_0_0",
    "x": 45,
-   "y": 652,
+   "y": 854,
    "w": 262,
-   "h": 60,
+   "h": 114,
    "kind": "isch_w",
    "title": "1 · CT: early ischemic change",
    "lines": [
-    "dead brain · over 1/3 of MCA → no tPA"
+    "dead brain · over 1/3 of MCA → no tPA · more change, more tPA bleeding",
+    "case: CT normal except right MCA DOT sign"
    ]
   },
   {
    "id": "isch_inv_1_0",
-   "x": 45.0,
-   "y": 734,
-   "w": 126.0,
-   "h": 118,
+   "x": 45,
+   "y": 990,
+   "w": 262,
+   "h": 134,
    "kind": "isch_w",
-   "title": "2 · CT angiogram (CTA)",
+   "title": "2 · CT angiogram (CTA) → 3 · CT perfusion",
    "lines": [
-    "large vessel occlusion?"
-   ]
-  },
-  {
-   "id": "isch_inv_1_1",
-   "x": 181.0,
-   "y": 734,
-   "w": 126.0,
-   "h": 118,
-   "kind": "isch_w",
-   "title": "3 · CT perfusion",
-   "lines": [
-    "mismatch = salvageable"
+    "• CTA: large vessel occlusion?",
+    "• perfusion mismatch = salvageable PENUMBRA (stunned, still viable, around the dead core)"
    ]
   },
   {
    "id": "tia_inv_0_0",
    "x": 319,
-   "y": 652,
+   "y": 854,
    "w": 262,
-   "h": 80,
+   "h": 106,
    "kind": "tia_w",
    "title": "CT head",
    "lines": [
@@ -347,21 +345,21 @@
   {
    "id": "tia_inv_1_0",
    "x": 319,
-   "y": 754,
+   "y": 982,
    "w": 262,
-   "h": 98,
+   "h": 142,
    "kind": "tia_w",
    "title": "Rapid TIA clinic",
    "lines": [
-    "echo · Holter · CTA or carotid Dopplers · lipids, glucose, BP"
+    "echo · Holter · CTA or carotid Dopplers · lipids, glucose, BP · then manage as secondary prevention"
    ]
   },
   {
    "id": "ich_inv_0_0",
    "x": 621,
-   "y": 652,
+   "y": 854,
    "w": 262,
-   "h": 200,
+   "h": 270,
    "kind": "ich_w",
    "title": "Find the cause: MRI, CTA",
    "lines": [
@@ -371,9 +369,9 @@
   {
    "id": "sah_inv_0_0",
    "x": 895,
-   "y": 652,
+   "y": 854,
    "w": 262,
-   "h": 200,
+   "h": 270,
    "kind": "sah_w",
    "title": "Urgent vessel imaging",
    "lines": [
@@ -383,48 +381,55 @@
   {
    "id": "isch_tx_0_0",
    "x": 45,
-   "y": 892,
+   "y": 1164,
    "w": 262,
-   "h": 168,
+   "h": 294,
    "kind": "bad",
    "title": "First check: NO tPA if ANY",
    "lines": [
     "• hemorrhage now or ever · SAH symptoms, seizure at onset",
     "• BP over 185/110 despite treatment",
     "• INR over 1.4 · PTT over 40 s · platelets under 100,000",
-    "• factor Xa inhibitor in 24-48 h · glucose under 3 or over 22"
+    "• factor Xa inhibitor in 24-48 h · glucose under 3 or over 22",
+    "• stroke or serious head trauma under 3 months · major surgery under 14 days · GI or GU bleed under 21 days",
+    "• arterial puncture (non-compressible) or LP under 7 days",
+    "~ caution: pregnancy, pericarditis, endocarditis"
    ]
   },
   {
    "id": "isch_tx_1_0",
-   "x": 45.0,
-   "y": 1082,
-   "w": 126.0,
-   "h": 114,
+   "x": 45,
+   "y": 1480,
+   "w": 262,
+   "h": 206,
    "kind": "ok",
-   "title": "tPA up to 4.5 h",
+   "title": "tPA up to 4.5 h, the EARLIER the better",
    "lines": [
-    "0.9 mg/kg, 10% bolus · bleed risk 6%"
+    "• 0.9 mg/kg: 10% bolus over 1 min, rest over 1 h",
+    "• bleed risk 6%: reperfused, ischemic vessels leak",
+    "• +13% minimal or no disability (NNT 7.7)",
+    "• only 10-20% are candidates (time, unwitnessed onset, anticoagulated, too mild, hemorrhage)"
    ]
   },
   {
-   "id": "isch_tx_1_1",
-   "x": 181.0,
-   "y": 1082,
-   "w": 126.0,
-   "h": 114,
+   "id": "isch_tx_2_0",
+   "x": 45,
+   "y": 1708,
+   "w": 262,
+   "h": 132,
    "kind": "ok",
    "title": "Thrombectomy",
    "lines": [
-    "proximal occlusion + mismatch, even without tPA"
+    "• proximal occlusion + mismatch, even WITHOUT tPA (anticoagulated, over 4.5 h)",
+    "• under 5% are candidates · stent retriever, sedation or anesthesia"
    ]
   },
   {
    "id": "tia_tx_0_0",
    "x": 319,
-   "y": 892,
+   "y": 1164,
    "w": 262,
-   "h": 304,
+   "h": 676,
    "kind": "ok",
    "title": "Start ASA",
    "lines": [
@@ -434,24 +439,25 @@
   {
    "id": "ich_tx_0_0",
    "x": 621,
-   "y": 892,
+   "y": 1164,
    "w": 262,
-   "h": 304,
+   "h": 676,
    "kind": "bad",
    "title": "NO tPA",
    "lines": [
-    "• BP under 160/110",
+    "• BP under 160/110 (some say under 140/90)",
     "• HOLD all antiplatelets and anticoagulants",
     "• MECHANICAL DVT prophylaxis",
-    "• surgery very rarely"
+    "• surgery very rarely: only raised pressure + accessible clot",
+    "• good prognosis if no shift or herniation"
    ]
   },
   {
    "id": "sah_tx_0_0",
    "x": 895,
-   "y": 892,
+   "y": 1164,
    "w": 262,
-   "h": 304,
+   "h": 676,
    "kind": "ok",
    "title": "Admit to NEUROSURGERY",
    "lines": [
@@ -461,9 +467,9 @@
   {
    "id": "ich_after_0_0",
    "x": 621,
-   "y": 1236,
+   "y": 1880,
    "w": 262,
-   "h": 232,
+   "h": 304,
    "kind": "warn",
    "title": "At 24 hours",
    "lines": [
@@ -473,9 +479,9 @@
   {
    "id": "sah_after_0_0",
    "x": 895,
-   "y": 1236,
+   "y": 1880,
    "w": 262,
-   "h": 232,
+   "h": 304,
    "kind": "bad",
    "title": "Watch for",
    "lines": [
@@ -487,21 +493,22 @@
   {
    "id": "span0_after_0_0",
    "x": 45,
-   "y": 1236,
+   "y": 1880,
    "w": 536,
-   "h": 78,
+   "h": 114,
    "kind": "plain",
    "title": "SECONDARY PREVENTION, chosen by the CAUSE",
    "lines": [
-    "admit to the stroke unit: BP watch and imaging at 24 h, nothing by mouth until a swallowing assessment · rehabilitation beats even tPA"
+    "admit to the stroke unit: BP watch, telemetry, echo, imaging at 24 h, bed rest 24 h, nothing by mouth until a swallowing assessment · PT, OT, social work",
+    "no bleed at 24 h → ASA, DVT prophylaxis, statin · rehabilitation beats even tPA · most recovery in 3 months, some up to a year"
    ]
   },
   {
    "id": "span0_after_1_0",
    "x": 45.0,
-   "y": 1336,
+   "y": 2016,
    "w": 263.0,
-   "h": 132,
+   "h": 168,
    "kind": "ok",
    "title": "Antithrombotic",
    "lines": [
@@ -512,14 +519,15 @@
   {
    "id": "span0_after_1_1",
    "x": 318.0,
-   "y": 1336,
+   "y": 2016,
    "w": 263.0,
-   "h": 132,
+   "h": 168,
    "kind": "ok",
    "title": "And",
    "lines": [
-    "• symptomatic carotid stenosis over 70% → endarterectomy or stent",
-    "• BP under 140/90 · high-dose statin · glucose · smoking"
+    "• symptomatic carotid stenosis over 70% → endarterectomy or stent · under 70% or asymptomatic → medical",
+    "• BP under 140/90 · high-dose statin · glucose · smoking · activity, diet, weight",
+    "• ASA + clopidogrel for some high-risk patients"
    ]
   }
  ],
@@ -527,12 +535,12 @@
   {
    "from": "root",
    "to": "g_isch",
-   "path": "M601.0 106V131H313.0V156"
+   "path": "M601.0 142V167H313.0V192"
   },
   {
    "from": "root",
    "to": "g_hem",
-   "path": "M601.0 106V131H889.0V156"
+   "path": "M601.0 142V167H889.0V192"
   },
   {
    "from": "ich_clue_0_0",
@@ -546,13 +554,7 @@
   },
   {
    "from": "isch_inv_0_0",
-   "to": "isch_inv_1_0",
-   "from_dx": -68.0
-  },
-  {
-   "from": "isch_inv_0_0",
-   "to": "isch_inv_1_1",
-   "from_dx": 68.0
+   "to": "isch_inv_1_0"
   },
   {
    "from": "tia_inv_0_0",
@@ -560,13 +562,11 @@
   },
   {
    "from": "isch_tx_0_0",
-   "to": "isch_tx_1_0",
-   "from_dx": -68.0
+   "to": "isch_tx_1_0"
   },
   {
-   "from": "isch_tx_0_0",
-   "to": "isch_tx_1_1",
-   "from_dx": 68.0
+   "from": "isch_tx_1_0",
+   "to": "isch_tx_2_0"
   },
   {
    "from": "span0_after_0_0",
@@ -588,21 +588,10 @@
   },
   {
    "from": "isch_inv_1_0",
-   "to": "isch_tx_0_0",
-   "to_dx": -68.0
+   "to": "isch_tx_0_0"
   },
   {
-   "from": "isch_inv_1_1",
-   "to": "isch_tx_0_0",
-   "to_dx": 68.0
-  },
-  {
-   "from": "isch_tx_1_0",
-   "to": "span0_after_0_0",
-   "to_dx": -137.0
-  },
-  {
-   "from": "isch_tx_1_1",
+   "from": "isch_tx_2_0",
    "to": "span0_after_0_0",
    "to_dx": -137.0
   },
@@ -682,5 +671,46 @@
    "from_dx": 137
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 2218,
+   "w": 361,
+   "title": "Ischemic causes → directed workup",
+   "items": [
+    "artery to artery: carotid, intracranial, aorta → carotid imaging (anterior) or vertebrobasilar (posterior): MRA, CTA, Doppler",
+    "CARDIOEMBOLIC → echo (TTE, TEE, bubble study for PFO/ASD) · telemetry, Holter for atrial fibrillation",
+    "lacunar (small vessel) · dissection (vertebral, carotid) · cryptogenic",
+    "hypoperfusion → WATERSHED infarcts · laminar necrosis of the cortical ribbon"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 420,
+   "y": 2218,
+   "w": 361,
+   "title": "Acute weakness: stroke or mimic?",
+   "items": [
+    "ischemic stroke: FOLLOWS a vascular territory",
+    "hemorrhage: may not follow one · more often headache",
+    "migraine: weakness MARCHES, slow on and off, minutes · young women",
+    "Todd's paresis: unwitnessed seizure · improves over hours",
+    "hypoglycemia (esp. old strokes) · psychogenic: inconsistent, better distracted"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 796,
+   "y": 2218,
+   "w": 361,
+   "title": "Risk factors + primary prevention",
+   "items": [
+    "modifiable: hypertension, diabetes, cholesterol, smoking, atrial fibrillation, heart disease",
+    "sedentary, obesity, cocaine or amphetamines, postpartum, bleeding disorders, anticoagulants",
+    "fixed: age, sex, ethnicity, family history",
+    "primary: treat risk factors · low-dose ASA if several · atrial fibrillation + high CHADS2 → anticoagulate"
+   ],
+   "cols": 1
+  }
+ ]
 }

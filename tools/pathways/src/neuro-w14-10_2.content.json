@@ -5,7 +5,8 @@
  "root": {
   "title": "Headache · coma · new neurological deficit · trauma: the cause is PRESSURE",
   "lines": [
-   "examine to LOCALIZE: Glasgow Coma Scale (GCS), PUPILS, cranial nerves, power side to side, sensory level",
+   "examine to LOCALIZE: Glasgow Coma Scale (GCS), PUPILS, cranial nerves, pronator drift, power side to side, sensory level",
+   "\"GCS 15, moving x 4\" can hide 1/5 hand intrinsics + 0/5 legs = T1 cord injury · E1 V3 M5, right arm weaker, ICP 20 = brain injury",
    "INTUBATE for GCS < 9 (airway protection) → image → emergency neurosurgery = DECOMPRESSION"
   ]
  },
@@ -20,30 +21,31 @@
  "columns": [
   {"id": "edh", "colour": "teal",
    "head": [[["h", "Epidural hematoma", ["middle meningeal ARTERY", "contact blow to the side of the head"]]]],
-   "pres": [[["t", "LUCID interval, then coma", ["• stunned, then fine, then cannot be woken", "• BLOWN PUPIL on the SAME side (third nerve)", "• opposite side weaker"]]]],
+   "pres": [[["t", "LUCID interval, then coma", ["• stunned, then fine, then cannot be woken", "• BLOWN PUPIL on the SAME side (third nerve)", "• opposite side weaker", "case: 24 y, baseball to the right head · played on · unrousable 4 h later · E3 V3 M5, right pupil 4 mm vs 3 mm, left weaker"]]]],
    "inv": [[["w", "CT: LENS-shaped (convex)", []]]],
-   "tx": [[["ok", "EARLY decompression", ["predictably good results"]]]]},
+   "tx": [[["ok", "EARLY decompression", ["• emergency burr hole (case: right)", "• predictably good results: normal in 48 h"]]]]},
   {"id": "sdh", "colour": "blue",
    "head": [[["h", "Acute subdural hematoma", ["BRIDGING VEINS", "acceleration-deceleration"]]]],
-   "pres": [[["t", "Falling consciousness", ["• intoxicated, on ASA", "• fixed dilated pupil, posturing"]]]],
+   "pres": [[["t", "Falling consciousness", ["• intoxicated, on ASA", "• fixed dilated pupil, posturing", "case: 54 y, rolled + ejected, drunk, ASA 325 mg · E1 VT M3, extends left, flexes right · right pupil fixed 5 mm"]]]],
    "inv": [[["w", "CT: CRESCENT (concave)", []]]],
    "tx": [[["warn", "Evacuate the hematoma", ["outcome UNPREDICTABLE: depends on the brain injury underneath"]]]]},
   {"id": "sah", "colour": "orange",
    "head": [[["h", "Subarachnoid hemorrhage", ["ruptured ANEURYSM"]]]],
-   "pres": [[["t", "Explosive headache UNLIKE ANY OTHER", ["• vomiting, photophobia", "• stiff neck, retinal hemorrhage", "• GCS may be 15"]]]],
+   "pres": [[["t", "Explosive headache UNLIKE ANY OTHER", ["• vomiting, photophobia", "• stiff neck, retinal hemorrhage", "• GCS may be 15", "case: 43 y, a migraineur · bat to the back of the head · BP 160/90, normal exam"]]]],
    "inv": [[["w", "CT: blood in the subarachnoid space", ["lumbar puncture: blood in the CSF"]]]],
-   "tx": [[["bad", "EARLY aneurysm repair", ["• re-rupture 6% day 1, 20% at 2 weeks, 50% at 6 months", "• protects against the NEXT bleed only"]]]]},
+   "tx": [[["bad", "EARLY aneurysm repair", ["• one bleed: 50% DIE, 75% disabled", "• re-rupture 6% day 1, 20% at 2 weeks, 50% at 6 months", "• protects against the NEXT bleed only", "• outcome follows the PRESENTING neurological state"]]]]},
   {"id": "tum", "colour": "purple",
    "head": [[["h", "Tumour with edema", ["leaky tumour vessels: VASOGENIC edema"]]]],
-   "pres": [[["t", "Weeks of progressive deficit", ["• word-finding, one weak hand", "• then a rapid fall in consciousness"]]]],
+   "pres": [[["t", "Weeks of progressive deficit", ["• word-finding, one weak hand", "• then a rapid fall in consciousness", "case: 69 y, 4 weeks word-finding, slurred, drops cup in right hand · 12 h decline · E1 V2 M4"]]]],
    "inv": [[["w", "Mass with surrounding edema", []]]],
    "tx": [[["ok", "DEXAMETHASONE 10 mg IV", ["restores the blood-brain barrier → edema shrinks"]]],
-          [["ok", "+ MANNITOL 20% IV push", ["shrinks brain with an INTACT barrier"]]],
-          [["ok", "Resect once stable", []]]]},
+          [["ok", "+ MANNITOL 20% IV push (300 cc)", ["shrinks brain with an INTACT barrier"]]],
+          [["ok", "Resect once stable", ["case: GCS 15 again → resected at 72 h"]]]]},
   {"id": "hyd", "colour": "magenta",
    "head": [[["h", "Hydrocephalus", ["e.g. after bacterial meningitis"]]]],
-   "pres": [[["t", "Not rousable", ["• dysconjugate gaze", "• fever if infection"]]]],
+   "pres": [[["t", "Not rousable", ["• dysconjugate gaze", "• fever if infection", "case: 14 y, 48 h malaise, fever · E3 V4 M5, pupils 4 mm reactive"]]]],
    "inv": [[["w", "Enlarged ventricles", ["cloudy CSF = bacterial meningitis"]]]],
-   "tx": [[["bad", "DIVERT the CSF: untreated it KILLS by herniation", ["• now: EXTERNAL VENTRICULAR DRAIN", "• long term: ventriculoperitoneal SHUNT", "• treat the cause (antibiotics)"]]]]}
+   "tx": [[["bad", "DIVERT the CSF: untreated it KILLS by herniation", ["• now: EXTERNAL VENTRICULAR DRAIN (case: GCS 14 in 4 h)",
+ "• long term: ventriculoperitoneal SHUNT", "• treat the cause (antibiotics)"]]]]}
  ]
 }

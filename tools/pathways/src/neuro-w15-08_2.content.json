@@ -6,7 +6,9 @@
   "title": "A child's eyes: acuity in EACH eye, alignment, red reflex",
   "lines": [
    "anything that blurs, blocks or misaligns one eye while vision develops → AMBLYOPIA",
-   "early detection and early treatment are what restore vision"
+   "early detection and early treatment are what restore vision",
+   "red reflex: the most important pediatric eye test · no contact, no dilating drops, seconds · ophthalmoscope, retinoscope, flash photos, or parents notice asymmetry",
+   "strabismus exam: acuity · obvious turn? · NYSTAGMUS · cardinal gazes · corneal light reflexes · cover test · red reflex"
   ]
  },
  "groups": [
@@ -20,7 +22,7 @@
   {"id": "dim", "colour": "blue", "drop_label": "dimmer",
    "head": [[["h", "Dim or different reflex", []]]],
    "pres": [[["t", "One reflex DIMMER", ["• or a visible opacity in it", "• the eye with the larger refractive error is dimmer"]]]],
-   "inv": [[["w", "Refractive error or opacity", ["• myopia, hyperopia, astigmatism", "• cataract (not always white)", "• cornea, chamber, vitreous, retina"]]]],
+   "inv": [[["w", "Refractive error or opacity", ["• myopia, hyperopia, astigmatism", "• keratoconus: 'oil droplet' sign", "• cataract (not always white)", "• abrasion, hyphema, vitreous hemorrhage, retinal pigment change"]]]],
    "tx": [[["warn", "Timely referral", ["amblyopia risk"]]]]},
   {"id": "bright", "colour": "teal", "drop_label": "brighter",
    "head": [[["h", "Brighter reflex", []]]],
@@ -30,11 +32,11 @@
   {"id": "white", "colour": "magenta", "drop_label": "white",
    "head": [[["h", "Leukocoria", ["a WHITE pupillary reflex"]]]],
    "pres": [[["t", "White reflex", ["• may be the first sign of a life-threatening disease", "~physiologic white reflex ~15° off axis: still refer"]]]],
-   "inv": [[["w", "RETINOBLASTOMA first", ["• retinopathy of prematurity", "• congenital cataract", "• Coats' disease, toxocariasis, coloboma"]]]],
+   "inv": [[["w", "RETINOBLASTOMA first", ["• retinopathy of prematurity", "• congenital cataract", "• Coats' disease, persistent hyperplastic primary vitreous", "• toxocariasis, congenital CMV, endophthalmitis", "• coloboma, familial exudative vitreoretinopathy, retinal detachment, trauma"]]]],
    "tx": [[["bad", "IMMEDIATE referral", ["• family history of eye disease", "• bring old photographs", "~without needless alarm"]]]]},
   {"id": "con", "colour": "purple", "drop_label": "same angle",
    "head": [[["h", "Concomitant strabismus", ["non-paralytic"]]]],
-   "pres": [[["t", "SAME angle in every gaze", ["• muscles work, eyes not aimed together", "• starts in childhood"]]]],
+   "pres": [[["t", "SAME angle in every gaze", ["• muscles work, eyes not aimed together", "• starts in childhood", "• adults: DIPLOPIA · children: suppression"]]]],
    "inv": [[["w", "Name the direction", ["• eso- in · exo- out", "• hyper- up · hypo- down", "~epicanthal folds: pseudostrabismus"]]]],
    "tx": [[["warn", "Refer if", ["• constant turn at any age", "• occasional turn beyond 3-4 months", "• any nystagmus"]]], [["ok", "Patching, glasses, surgery", ["no role for eye exercises"]]]]},
   {"id": "inc", "colour": "orange", "drop_label": "angle changes",
@@ -43,9 +45,17 @@
    "inv": [[["w", "Look for", ["• 3rd, 4th or 6th nerve palsy", "• orbital blowout fracture", "• thyroid eye disease"]]]],
    "tx": [[["warn", "Refer to ophthalmology", []]]]},
   {"id": "amb", "colour": "olive", "drop_label": "amblyopia",
-   "head": [[["h", "Amblyopia", ["usually one eye"]]]],
+   "head": [[["h", "Amblyopia", ["↓ acuity, NO organic disease", "disrupted visual development · usually one eye, can be both"]]]],
    "pres": [[["t", "Test EACH eye", ["• newborn: light reflexes, pupils, fundus", "• to age 2: fusses when the GOOD eye is covered", "• 2-5: HOTV, tumbling E charts"]]]],
-   "inv": [[["w", "Three causes", ["• strabismic: turned eye suppressed", "• refractive: unequal refractive error", "• deprivation: cataract, corneal scar, ptosis"]]]],
-   "tx": [[["bad", "IMMEDIATE referral", ["pediatric ophthalmologist"]]], [["ok", "Patch the GOOD eye", ["+ glasses, or surgery for cataract or strabismus"]]]]}
+   "inv": [[["w", "Three causes", ["• strabismic: turned eye suppressed", "• refractive: unequal refractive error, the blurrier eye", "• deprivation: cataract, corneal scar, ptosis"]]]],
+   "tx": [[["bad", "IMMEDIATE referral", ["pediatric ophthalmologist"]]], [["ok", "Patch the GOOD eye", ["+ glasses (unequal error), or surgery for cataract or strabismus"]]]]}
+ ],
+ "panels": [
+  {"title": "Retinoblastoma: rule it out FIRST", "items": [
+   "1 in 180,000 births · embryonic retina, so most under 4",
+   "90% no family history (usually ONE eye) · 15% of one-eye cases carry a germline RB1 mutation · BOTH eyes → family history ~100%",
+   "enucleation · chemotherapy · radiotherapy · laser ± cryotherapy",
+   "3-year survival ~96% · > 95% cured with optimal care · up to 70% die when diagnosed late worldwide",
+   "germline RB1: more die of a SECOND cancer than of the tumour"]}
  ]
 }
