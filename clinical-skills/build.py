@@ -26,7 +26,7 @@ SECTIONS = [
     ("history", "History taking", "FoM to T2C", "#8c3566",
      "The interview every history is built on, then the special histories: obstetric, psychiatric, paediatric and geriatric."),
     ("exam", "Physical exam", "FoM to T2C", "#2f5d7c",
-     "One page per system, from vital signs to the pelvic exam: each region's look, feel and move, its special tests, and a test-yourself mode."),
+     "One page per system, from vital signs to the pelvic exam: each region's look, feel and move and its special tests."),
     ("ultrasound", "Ultrasound", "PoM 1 and T2C", "#0d6154",
      "Point-of-care views of the heart and the abdomen."),
     ("osce", "OSCE prep", "Every TOSCE and the OSCE", "#4b3f96",
