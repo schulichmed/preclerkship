@@ -151,65 +151,65 @@
  "bands": [
   {
    "x": 40,
-   "y": 342,
+   "y": 396,
    "w": 196,
-   "h": 880,
+   "h": 1202,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 238,
-   "y": 342,
+   "y": 396,
    "w": 196,
-   "h": 880,
+   "h": 1202,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 436,
-   "y": 342,
+   "y": 396,
    "w": 196,
-   "h": 880,
+   "h": 1202,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
   {
    "x": 634,
-   "y": 342,
+   "y": 396,
    "w": 196,
-   "h": 880,
+   "h": 1202,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
    "x": 832,
-   "y": 342,
+   "y": 396,
    "w": 196,
-   "h": 880,
+   "h": 1202,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
   {
    "x": 1058,
-   "y": 342,
+   "y": 396,
    "w": 196,
-   "h": 880,
+   "h": 1202,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 1256,
-   "y": 342,
+   "y": 396,
    "w": 196,
-   "h": 880,
+   "h": 1202,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 1454,
-   "y": 342,
+   "y": 396,
    "w": 196,
-   "h": 880,
+   "h": 1202,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   }
@@ -217,20 +217,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 488,
-   "h": 170,
+   "y": 630,
+   "h": 242,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 698,
-   "h": 170,
+   "y": 912,
+   "h": 188,
    "text": "DIAGNOSIS"
   },
   {
    "x": 23,
-   "y": 908,
-   "h": 306,
+   "y": 1140,
+   "h": 450,
    "text": "TREATMENT"
   }
  ],
@@ -243,14 +243,16 @@
    "kind": "dark",
    "title": "Headache: rule OUT a secondary cause while you name the primary one",
    "lines": [
+    "history of the pain: NILDOCAAFIAT · Nature, Intensity, Location, Duration, Onset, Contributing, Aggravating, Alleviating, Frequency, Impact, Attribute, Treatment tried",
     "SNOOP4 red flags: Systemic (fever, weight loss) · Neurological deficits · Older onset (over 50) · Onset sudden (thunderclap) · Papilledema · Positional · Precipitated by Valsalva · Progressive or a new pattern",
+    "positional: worse LYING → raised pressure, mass · worse UPRIGHT → intracranial HYPOTENSION",
     "examine: vital signs · fundi (papilledema) · pupils, eye movements, visual fields · neurological exam · body habitus · neck · scalp · jaw joint"
    ]
   },
   {
    "id": "g_sec",
    "x": 45,
-   "y": 174,
+   "y": 228,
    "w": 978,
    "h": 96,
    "kind": "plain",
@@ -262,7 +264,7 @@
   {
    "id": "g_pri",
    "x": 1063,
-   "y": 174,
+   "y": 228,
    "w": 582,
    "h": 96,
    "kind": "plain",
@@ -275,9 +277,9 @@
   {
    "id": "sah_head_0_0",
    "x": 45,
-   "y": 350,
+   "y": 404,
    "w": 186,
-   "h": 98,
+   "h": 186,
    "kind": "sah_h",
    "title": "Subarachnoid hemorrhage",
    "lines": [
@@ -287,9 +289,9 @@
   {
    "id": "men_head_0_0",
    "x": 243,
-   "y": 350,
+   "y": 404,
    "w": 186,
-   "h": 98,
+   "h": 186,
    "kind": "men_h",
    "title": "Bacterial meningitis",
    "lines": []
@@ -297,9 +299,9 @@
   {
    "id": "gca_head_0_0",
    "x": 441,
-   "y": 350,
+   "y": 404,
    "w": 186,
-   "h": 98,
+   "h": 186,
    "kind": "gca_h",
    "title": "Giant cell arteritis",
    "lines": [
@@ -309,9 +311,9 @@
   {
    "id": "tum_head_0_0",
    "x": 639,
-   "y": 350,
+   "y": 404,
    "w": 186,
-   "h": 98,
+   "h": 186,
    "kind": "tum_h",
    "title": "Brain tumour",
    "lines": [
@@ -321,9 +323,9 @@
   {
    "id": "iih_head_0_0",
    "x": 837,
-   "y": 350,
+   "y": 404,
    "w": 186,
-   "h": 98,
+   "h": 186,
    "kind": "iih_h",
    "title": "Idiopathic intracranial hypertension",
    "lines": [
@@ -333,167 +335,180 @@
   {
    "id": "mig_head_0_0",
    "x": 1063,
-   "y": 350,
+   "y": 404,
    "w": 186,
-   "h": 98,
+   "h": 186,
    "kind": "mig_h",
    "title": "Migraine",
    "lines": [
-    "prodrome · aura (25-30%) · headache · postdrome"
+    "prodrome (2-48 h) · aura (25-30%, 5-60 min) · headache · postdrome (24-48 h)",
+    "trigeminovascular · CGRP release",
+    "3rd most prevalent, 7th most disabling"
    ]
   },
   {
    "id": "tth_head_0_0",
    "x": 1261,
-   "y": 350,
+   "y": 404,
    "w": 186,
-   "h": 98,
+   "h": 186,
    "kind": "tth_h",
    "title": "Tension-type",
    "lines": [
-    "the most prevalent"
+    "the most prevalent (38% a year)"
    ]
   },
   {
    "id": "clu_head_0_0",
    "x": 1459,
-   "y": 350,
+   "y": 404,
    "w": 186,
-   "h": 98,
+   "h": 186,
    "kind": "clu_h",
    "title": "Cluster",
    "lines": [
-    "men 3:1 · ~30 · smokers · alcohol"
+    "0.1% · men 3:1 · ~30 · 85% smokers · alcohol",
+    "lasts ~15 years · \"suicide headache\""
    ]
   },
   {
    "id": "sah_clue_0_0",
    "x": 45,
-   "y": 488,
+   "y": 630,
    "w": 186,
-   "h": 170,
+   "h": 242,
    "kind": "sah_t",
    "title": "THUNDERCLAP",
    "lines": [
     "• worst ever, peaks in seconds",
-    "• vomiting, photophobia, stiff neck"
+    "• vomiting, photophobia, stiff neck",
+    "case: 52 y lifting groceries · BP 185/100 · stiff neck, alert, no focal signs"
    ]
   },
   {
    "id": "men_clue_0_0",
    "x": 243,
-   "y": 488,
+   "y": 630,
    "w": 186,
-   "h": 170,
+   "h": 242,
    "kind": "men_t",
    "title": "Fever + stiff neck",
    "lines": [
     "• photophobia",
     "• confused, hard to wake",
-    "• Kernig, Brudzinski signs"
+    "• Kernig: knee extension hurts neck or back",
+    "• Brudzinski: neck flexion flexes hips + knees",
+    "case: 21 y student, 1 day · T 39.4, HR 124 · drowsy, 1-step commands"
    ]
   },
   {
    "id": "gca_clue_0_0",
    "x": 441,
-   "y": 488,
+   "y": 630,
    "w": 186,
-   "h": 170,
+   "h": 242,
    "kind": "gca_t",
    "title": "NEW temporal headache",
    "lines": [
     "• scalp tenderness · jaw claudication",
     "• transient vision loss",
-    "• polymyalgic symptoms"
+    "• polymyalgic symptoms · limb claudication",
+    "case: 74 y, 2 weeks left temporal · hurts to brush hair, chewing · 2 episodes transient left vision loss · tender thick temporal artery"
    ]
   },
   {
    "id": "tum_clue_0_0",
    "x": 639,
-   "y": 488,
+   "y": 630,
    "w": 186,
-   "h": 170,
+   "h": 242,
    "kind": "tum_t",
    "title": "PROGRESSIVE, worse on waking",
    "lines": [
     "• vomiting · worse with cough, position",
-    "• personality change, seizure, focal deficit"
+    "• personality change, seizure, focal deficit",
+    "case: 58 y, 2 months · forgetful, first seizure · left pronator drift, BOTH discs swollen"
    ]
   },
   {
    "id": "iih_clue_0_0",
    "x": 837,
-   "y": 488,
+   "y": 630,
    "w": 186,
-   "h": 170,
+   "h": 242,
    "kind": "iih_t",
    "title": "Worse LYING flat, coughing",
    "lines": [
     "• whooshing (pulsatile) tinnitus",
     "• vision greys out for seconds",
-    "• double vision (6th nerve)"
+    "• double vision (6th nerve)",
+    "case: 27 y, BMI 37, gained 15 kg · 6 weeks daily headache · papilledema, acuity normal"
    ]
   },
   {
    "id": "mig_clue_0_0",
    "x": 1063,
-   "y": 488,
+   "y": 630,
    "w": 186,
-   "h": 170,
+   "h": 242,
    "kind": "mig_t",
    "title": "ONE side, PULSATING",
    "lines": [
     "• 4-72 h · moderate-severe",
     "• worse with activity",
-    "• nausea · light AND sound sensitivity"
+    "• nausea · light AND sound sensitivity",
+    "• aura: spreading, fully reversible · visual (zigzags), sensory, language",
+    "case: 4 h + photophobia + nausea → migraine, not tension"
    ]
   },
   {
    "id": "tth_clue_0_0",
    "x": 1261,
-   "y": 488,
+   "y": 630,
    "w": 186,
-   "h": 170,
+   "h": 242,
    "kind": "tth_t",
    "title": "BOTH sides, PRESSING",
    "lines": [
     "• 30 min-7 days · mild-moderate",
+    "• 10+ episodes, or 3+ months (chronic)",
     "• not worse with activity"
    ]
   },
   {
    "id": "clu_clue_0_0",
    "x": 1459,
-   "y": 488,
+   "y": 630,
    "w": 186,
-   "h": 170,
+   "h": 242,
    "kind": "clu_t",
    "title": "STRICTLY one side, at the eye",
    "lines": [
-    "• severe · 15-180 min, up to 8 a day",
+    "• severe · 15-180 min · every other day to 8 a day",
     "• same-side tearing, red eye, runny nose, ptosis",
-    "• RESTLESS, paces · same time of day or year"
+    "• RESTLESS, paces (migraine lies still) · same time of day or year",
+    "• also miosis, sweating, eyelid edema"
    ]
   },
   {
    "id": "sah_inv_0_0",
    "x": 45,
-   "y": 698,
+   "y": 912,
    "w": 186,
-   "h": 170,
+   "h": 188,
    "kind": "sah_w",
    "title": "Urgent NON-CONTRAST CT",
    "lines": [
-    "• sensitivity 98% day 0 → 50% at 1 week",
+    "• sensitivity 98% day 0 · 76% day 2 · 50% at 1 week · 30% at 2 weeks",
     "• negative → LP for xanthochromia"
    ]
   },
   {
    "id": "men_inv_0_0",
    "x": 243,
-   "y": 698,
+   "y": 912,
    "w": 186,
-   "h": 170,
+   "h": 188,
    "kind": "men_w",
    "title": "Blood cultures · LP if safe",
    "lines": [
@@ -503,9 +518,9 @@
   {
    "id": "gca_inv_0_0",
    "x": 441,
-   "y": 698,
+   "y": 912,
    "w": 186,
-   "h": 170,
+   "h": 188,
    "kind": "gca_w",
    "title": "ESR + CRP",
    "lines": [
@@ -516,9 +531,9 @@
   {
    "id": "tum_inv_0_0",
    "x": 639,
-   "y": 698,
+   "y": 912,
    "w": 186,
-   "h": 170,
+   "h": 188,
    "kind": "tum_w",
    "title": "Urgent MRI with contrast",
    "lines": [
@@ -529,21 +544,23 @@
   {
    "id": "iih_inv_0_0",
    "x": 837,
-   "y": 698,
+   "y": 912,
    "w": 186,
-   "h": 170,
+   "h": 188,
    "kind": "iih_w",
    "title": "MRI + MR venogram FIRST",
    "lines": [
+    "• excludes a mass or venous sinus thrombosis",
+    "• MRI: empty sella, flat back of globe, venous sinus stenosis",
     "• then LP: opening pressure over 250 mm H2O"
    ]
   },
   {
    "id": "mig_inv_0_0",
    "x": 1063,
-   "y": 698,
+   "y": 912,
    "w": 186,
-   "h": 170,
+   "h": 188,
    "kind": "mig_w",
    "title": "5-4-3-2-1",
    "lines": [
@@ -553,9 +570,9 @@
   {
    "id": "tth_inv_0_0",
    "x": 1261,
-   "y": 698,
+   "y": 912,
    "w": 186,
-   "h": 170,
+   "h": 188,
    "kind": "tth_w",
    "title": "NO nausea or vomiting",
    "lines": [
@@ -565,21 +582,21 @@
   {
    "id": "clu_inv_0_0",
    "x": 1459,
-   "y": 698,
+   "y": 912,
    "w": 186,
-   "h": 170,
+   "h": 188,
    "kind": "clu_w",
    "title": "A trigeminal autonomic cephalalgia",
    "lines": [
-    "the hypothalamus drives it"
+    "the hypothalamus drives it → circadian, circannual rhythm"
    ]
   },
   {
    "id": "sah_tx_0_0",
    "x": 45,
-   "y": 908,
+   "y": 1140,
    "w": 186,
-   "h": 306,
+   "h": 450,
    "kind": "bad",
    "title": "Secure the aneurysm",
    "lines": [
@@ -590,9 +607,9 @@
   {
    "id": "men_tx_0_0",
    "x": 243,
-   "y": 908,
+   "y": 1140,
    "w": 186,
-   "h": 306,
+   "h": 450,
    "kind": "bad",
    "title": "IV antibiotics NOW",
    "lines": [
@@ -605,21 +622,21 @@
   {
    "id": "gca_tx_0_0",
    "x": 441,
-   "y": 908,
+   "y": 1140,
    "w": 186,
-   "h": 306,
+   "h": 450,
    "kind": "bad",
    "title": "HIGH-DOSE steroids TODAY",
    "lines": [
-    "don't wait for the biopsy · untreated → permanent vision loss"
+    "don't wait for the biopsy · untreated → permanent vision loss · then taper"
    ]
   },
   {
    "id": "tum_tx_0_0",
    "x": 639,
-   "y": 908,
+   "y": 1140,
    "w": 186,
-   "h": 306,
+   "h": 450,
    "kind": "warn",
    "title": "Usual remedies fail",
    "lines": [
@@ -629,9 +646,9 @@
   {
    "id": "iih_tx_0_0",
    "x": 837,
-   "y": 908,
+   "y": 1140,
    "w": 186,
-   "h": 306,
+   "h": 450,
    "kind": "ok",
    "title": "Weight loss + acetazolamide",
    "lines": [
@@ -642,7 +659,7 @@
   {
    "id": "mig_tx_0_0",
    "x": 1063,
-   "y": 908,
+   "y": 1140,
    "w": 186,
    "h": 132,
    "kind": "ok",
@@ -656,23 +673,26 @@
   {
    "id": "mig_tx_1_0",
    "x": 1063,
-   "y": 1062,
+   "y": 1294,
    "w": 186,
-   "h": 152,
+   "h": 296,
    "kind": "warn",
    "title": "PREVENT if over 4 a month or disabling",
    "lines": [
+    "• or acute drugs fail, not tolerated, overuse risk",
     "• first: beta-blocker or amitriptyline",
-    "• high BMI: topiramate",
-    "• chronic: onabotulinumtoxinA"
+    "• high BMI: topiramate (weight loss)",
+    "• chronic: onabotulinumtoxinA every 12 weeks, ~50% respond",
+    "• CGRP inhibitors · magnesium, riboflavin",
+    "• SEEDS: Sleep, Exercise, Eat, Diary, Stress"
    ]
   },
   {
    "id": "tth_tx_0_0",
    "x": 1261,
-   "y": 908,
+   "y": 1140,
    "w": 186,
-   "h": 142,
+   "h": 214,
    "kind": "ok",
    "title": "ACUTE",
    "lines": [
@@ -682,9 +702,9 @@
   {
    "id": "tth_tx_1_0",
    "x": 1261,
-   "y": 1072,
+   "y": 1376,
    "w": 186,
-   "h": 142,
+   "h": 214,
    "kind": "warn",
    "title": "PREVENT",
    "lines": [
@@ -694,26 +714,27 @@
   {
    "id": "clu_tx_0_0",
    "x": 1459,
-   "y": 908,
+   "y": 1140,
    "w": 186,
-   "h": 142,
+   "h": 196,
    "kind": "ok",
    "title": "ACUTE",
    "lines": [
-    "• 100% oxygen 12-15 L/min for 15 min",
+    "• 100% oxygen 12-15 L/min for 15 min, non-rebreather",
     "• sumatriptan 6 mg under the skin"
    ]
   },
   {
    "id": "clu_tx_1_0",
    "x": 1459,
-   "y": 1072,
+   "y": 1358,
    "w": 186,
-   "h": 142,
+   "h": 232,
    "kind": "warn",
    "title": "PREVENT",
    "lines": [
     "• verapamil first · lithium · topiramate",
+    "• galcanezumab: episodic cluster",
     "• bridge: prednisone, nerve block"
    ]
   }
@@ -722,12 +743,12 @@
   {
    "from": "root",
    "to": "g_sec",
-   "path": "M845.0 124V149H534.0V174"
+   "path": "M845.0 178V203H534.0V228"
   },
   {
    "from": "root",
    "to": "g_pri",
-   "path": "M845.0 124V149H1354.0V174"
+   "path": "M845.0 178V203H1354.0V228"
   },
   {
    "from": "mig_tx_0_0",
@@ -878,5 +899,44 @@
    "from_dx": 198
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1624,
+   "w": 524,
+   "title": "Secondary causes to exclude",
+   "items": [
+    "vascular: stroke, ICH, SAH, venous thrombosis, PRES, RCVS, dissection, vasculitis",
+    "inflammatory: giant cell arteritis, idiopathic intracranial hypertension",
+    "trauma: after dural puncture, concussion · drugs: medication overuse",
+    "tumour: meningioma, schwannoma, pituitary apoplexy, choriocarcinoma",
+    "infection: meningitis, encephalitis, systemic"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 583,
+   "y": 1624,
+   "w": 524,
+   "title": "Migraine: acute drugs",
+   "items": [
+    "TRIPTAN: 5-HT1B/1D agonist · at onset, repeat in 2-24 h · chest, jaw tightness, flushing",
+    "NO triptan: coronary or cerebrovascular disease, uncontrolled BP, Raynaud's, peripheral vascular disease",
+    "NO NSAID: GI bleed, ulcer, bleeding risk, renal impairment, pregnancy",
+    "antiemetic: metoclopramide, prochlorperazine, promethazine · ondansetron, antihistamines"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 1121,
+   "y": 1624,
+   "w": 524,
+   "title": "Medication overuse headache",
+   "items": [
+    "15+ headache days a month in a primary headache",
+    "usually resolves once stopped · frequent acute use → start PREVENTION"
+   ],
+   "cols": 1
+  }
+ ]
 }

@@ -22,7 +22,7 @@
    "id": "ana", "colour": "teal",
    "head": [[["h", "ANA", ["antibodies against the cell nucleus"]]]],
    "when": [[["t", "A CTD is suspected", ["• sun rash, high creatine kinase, new weakness", "• oral ulcers, hair loss, low white cells + platelets", "• new glomerulonephritis, cause unknown (maybe)"]]]],
-   "means": [[["w", "POSITIVE", ["does NOT rule in disease", "titre 1/1280 = strong (bigger denominator)"]], ["w", "NEGATIVE", ["most CTDs LESS likely"]]]],
+   "means": [[["w", "POSITIVE or NEGATIVE", ["• POSITIVE: does NOT rule in disease", "• titre 1/1280 = strong (bigger denominator)", "• pattern changes with dilution: 1/80 speckled + homogeneous, 1/640 homogeneous", "• NEGATIVE: most CTDs LESS likely"]]]],
    "dont": [[["bad", "No CTD features", ["• low white count from myelodysplasia", "• fatigue + widespread pain (fibromyalgia)"]]], [["bad", "Never repeat or follow it", ["• negative a year ago, no new symptoms", "• a past positive still counts for SLE"]]]]
   },
   {
@@ -30,20 +30,20 @@
    "head": [[["h", "Anti-DNA", ["against DNA in the nucleus"]]]],
    "when": [[["t", "ANA POSITIVE + SLE expected", []]]],
    "means": [[["w", "Very SPECIFIC for SLE", ["positive in only ~50%", "tracks renal SLE + activity", "may turn negative with treatment"]]]],
-   "dont": [[["bad", "ANA not done or negative", ["order the ANA first"]]], [["warn", "Outside-lab kits", ["also detect single-stranded DNA: neither sensitive nor specific"]]]]
+   "dont": [[["bad", "ANA not done or negative", ["order the ANA first", "case: 22 F, low white cells, lymphocytes, platelets, malar rash, hair loss → ANA, NOT anti-DNA"]]], [["warn", "Outside-lab kits", ["also detect single-stranded DNA: neither sensitive nor specific"]]]]
   },
   {
    "id": "ena", "colour": "purple",
    "head": [[["h", "ENA panel", ["extractable nuclear antigens"]]]],
    "when": [[["t", "Screen positive", ["assays find which antibody"]]]],
-   "means": [[["w", "Antibody → disease", ["• Ro: SLE photosensitive rash; baby: heart block", "• Ro + La: Sjögren's", "• Sm: fairly specific for SLE", "• RNP: mixed CTD + SLE", "• Scl-70: scleroderma + lung disease", "• Jo1: polymyositis + lung disease"]]]],
+   "means": [[["w", "Antibody → disease", ["• Ro: SLE photosensitive rash; baby: heart block", "• Ro + La: Sjögren's", "• Sm: fairly specific for SLE", "• RNP: mixed CTD + SLE", "• Scl-70: scleroderma + lung disease", "• Jo1: polymyositis + lung disease", "• PM-Scl: myositis-scleroderma overlap · RNA polymerase III: scleroderma renal crisis", "~ Ro = SSA, La = SSB (La rarely without Ro) · Scl-70 = topoisomerase 1"]]]],
    "dont": [[["bad", "Diagnose from an antibody alone", ["CTDs need characteristic clinical AND lab features"]]]]
   },
   {
    "id": "cpl", "colour": "orange",
    "head": [[["h", "Complement C3, C4", []]]],
    "when": [[["t", "SPECIALISTS only", []]]],
-   "means": [[["w", "LOW", ["active SLE, esp. lupus nephritis (used up)", "or an inherited deficiency"]]]],
+   "means": [[["w", "LOW", ["active SLE, esp. lupus nephritis (used up)", "or an inherited deficiency", "~ antibody binds tissue → complement activated, consumed"]]]],
    "dont": [[["bad", "Family physician", ["a waste of money"]]]]
   }
  ]

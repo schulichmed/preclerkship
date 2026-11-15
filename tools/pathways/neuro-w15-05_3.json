@@ -1,7 +1,7 @@
 {
  "name": "pediatric seizures overview",
  "width": 922,
- "title": "A child with a seizure: ABCDE and a bedside glucose and blood gas for every child, then fever and the seizure's features sort a simple from a complex febrile seizure, and a seizure past 5 minutes is convulsive status epilepticus treated by the clock with benzodiazepines, then a second-line load, then the intensive care unit",
+ "title": "A child with a seizure: ABCDE and a bedside glucose and blood gas for every child, then fever and the seizure's features sort a simple from a complex febrile seizure, and a seizure past 5 minutes is convulsive status epilepticus treated by the clock with benzodiazepines, then a second-line load, then the intensive care unit; causes by age and cause-specific treatment are below",
  "kinds": {
   "sfs_h": [
    "#1f6f8b",
@@ -61,25 +61,25 @@
  "bands": [
   {
    "x": 40,
-   "y": 324,
+   "y": 450,
    "w": 280,
-   "h": 810,
+   "h": 1036,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 322,
-   "y": 324,
+   "y": 450,
    "w": 280,
-   "h": 810,
+   "h": 1036,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 632,
-   "y": 324,
+   "y": 450,
    "w": 280,
-   "h": 810,
+   "h": 1036,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   }
@@ -87,20 +87,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 432,
-   "h": 132,
+   "y": 594,
+   "h": 268,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 604,
-   "h": 150,
+   "y": 902,
+   "h": 186,
    "text": "WORKUP"
   },
   {
    "x": 23,
-   "y": 794,
-   "h": 332,
+   "y": 1128,
+   "h": 350,
    "text": "TREATMENT"
   }
  ],
@@ -113,15 +113,18 @@
    "kind": "dark",
    "title": "Child seizing: ABCDE + time it",
    "lines": [
+    "Airway: bag-mask, laryngeal mask or tube if needed · Circulation: early fast pulse, high BP tolerated, LOW BP → fluid bolus",
+    "Disability: pupils (dilated or pinpoint → overdose · blown or fixed → raised pressure, bleed) · glucose · Exposure: safe space, skin",
     "EVERY child: bedside GLUCOSE + blood GAS with electrolytes",
-    "low glucose → IV dextrose (D10 5 mL/kg) · low sodium → 3% saline 3-5 mL/kg",
-    "subtle in newborns: lip smacking, eye deviation, bicycling, apnea, vital sign changes"
+    "history: onset, timing, duration · movements, eyes, focal or generalized · consciousness during and after, recovery · fever, trauma, toxins, drugs or withdrawal · milestones, family epilepsy",
+    "exam: vitals · pupils, cranial nerves, tone, reflexes, focal deficits · raised pressure (bulging fontanelle, papilledema) · café au lait spots (neurofibromatosis)",
+    "subtle in newborns: lip smacking, sucking, chewing, eye deviation or fluttering, bicycling, apnea, vital sign changes · subclinical: EEG only"
    ]
   },
   {
    "id": "g_feb",
    "x": 45,
-   "y": 156,
+   "y": 282,
    "w": 552,
    "h": 96,
    "kind": "plain",
@@ -134,7 +137,7 @@
   {
    "id": "g_se",
    "x": 637,
-   "y": 156,
+   "y": 282,
    "w": 270,
    "h": 96,
    "kind": "plain",
@@ -146,9 +149,9 @@
   {
    "id": "sfs_head_0_0",
    "x": 45,
-   "y": 332,
+   "y": 458,
    "w": 270,
-   "h": 60,
+   "h": 96,
    "kind": "sfs_h",
    "title": "Simple febrile seizure",
    "lines": []
@@ -156,9 +159,9 @@
   {
    "id": "cfs_head_0_0",
    "x": 327,
-   "y": 332,
+   "y": 458,
    "w": 270,
-   "h": 60,
+   "h": 96,
    "kind": "cfs_h",
    "title": "Complex febrile seizure",
    "lines": []
@@ -166,21 +169,22 @@
   {
    "id": "cse_head_0_0",
    "x": 637,
-   "y": 332,
+   "y": 458,
    "w": 270,
-   "h": 60,
+   "h": 96,
    "kind": "cse_h",
    "title": "Convulsive status epilepticus",
    "lines": [
-    "> 30 min, or 2+ seizures without recovery"
+    "> 30 min, or 2+ seizures without recovery",
+    "10-73 per 100,000 children a year · most under 2"
    ]
   },
   {
    "id": "sfs_pres_0_0",
    "x": 45,
-   "y": 432,
+   "y": 594,
    "w": 270,
-   "h": 132,
+   "h": 141,
    "kind": "sfs_t",
    "title": "Typical",
    "lines": [
@@ -191,11 +195,23 @@
    ]
   },
   {
+   "id": "sfs_pres_1_0",
+   "x": 45,
+   "y": 757,
+   "w": 270,
+   "h": 105,
+   "kind": "sfs_w",
+   "title": "case: 15 months",
+   "lines": [
+    "fever · generalized tonic-clonic 3 min · now alert, playful"
+   ]
+  },
+  {
    "id": "cfs_pres_0_0",
    "x": 327,
-   "y": 432,
+   "y": 594,
    "w": 270,
-   "h": 132,
+   "h": 150,
    "kind": "cfs_t",
    "title": "Any ONE of",
    "lines": [
@@ -207,24 +223,49 @@
    ]
   },
   {
+   "id": "cfs_pres_1_0",
+   "x": 327,
+   "y": 766,
+   "w": 270,
+   "h": 96,
+   "kind": "cfs_w",
+   "title": "case: 14 months, 38.8°C, cold",
+   "lines": [
+    "2 right-sided seizures (4 min) in one day · now normal"
+   ]
+  },
+  {
    "id": "cse_pres_0_0",
    "x": 637,
-   "y": 432,
+   "y": 594,
    "w": 270,
-   "h": 132,
+   "h": 96,
    "kind": "cse_t",
    "title": "Tonic-clonic, not stopping",
    "lines": [
     "• most seizures stop within 5 minutes",
-    "• longer = more brain injury: time matters"
+    "• longer = ↑ brain oxygen demand, cell death: time matters"
+   ]
+  },
+  {
+   "id": "cse_pres_1_0",
+   "x": 637,
+   "y": 712,
+   "w": 270,
+   "h": 150,
+   "kind": "cse_w",
+   "title": "cases",
+   "lines": [
+    "• 3, no past seizures, convulsing 10 min → status",
+    "• 2-day newborn: lip smacking, eye deviation, apnea, not stopped by 2 lorazepam, glucose normal → PHENOBARBITAL"
    ]
   },
   {
    "id": "sfs_inv_0_0",
    "x": 45,
-   "y": 604,
+   "y": 902,
    "w": 270,
-   "h": 150,
+   "h": 186,
    "kind": "sfs_w",
    "title": "Often NO further workup",
    "lines": [
@@ -234,9 +275,9 @@
   {
    "id": "cfs_inv_0_0",
    "x": 327,
-   "y": 604,
+   "y": 902,
    "w": 270,
-   "h": 150,
+   "h": 186,
    "kind": "cfs_w",
    "title": "Observe or admit",
    "lines": [
@@ -246,24 +287,25 @@
   {
    "id": "cse_inv_0_0",
    "x": 637,
-   "y": 604,
+   "y": 902,
    "w": 270,
-   "h": 150,
+   "h": 186,
    "kind": "cse_w",
    "title": "Stepwise, by the differential",
    "lines": [
     "• calcium, magnesium, drug levels",
     "• infection: blood count, CRP, cultures, CSF if stable",
-    "• head CT: head injury, focal signs, raised pressure",
-    "• EEG: subtle or non-convulsive"
+    "• head CT: head injury, focal signs, raised pressure (pupils, high BP + slow pulse, vomiting, lethargy)",
+    "• EEG: subtle or non-convulsive",
+    "• MRI once stable: structure"
    ]
   },
   {
    "id": "sfs_tx_0_0",
    "x": 45,
-   "y": 794,
+   "y": 1128,
    "w": 270,
-   "h": 332,
+   "h": 350,
    "kind": "ok",
    "title": "Discharge + reassure",
    "lines": [
@@ -274,9 +316,9 @@
   {
    "id": "cfs_tx_0_0",
    "x": 327,
-   "y": 794,
+   "y": 1128,
    "w": 270,
-   "h": 332,
+   "h": 350,
    "kind": "warn",
    "title": "Consider NEUROLOGY referral",
    "lines": [
@@ -286,21 +328,22 @@
   {
    "id": "cse_tx_0_0",
    "x": 637,
-   "y": 794,
+   "y": 1128,
    "w": 270,
-   "h": 114,
+   "h": 132,
    "kind": "ok",
    "title": "1 · BENZODIAZEPINE",
    "lines": [
     "• IV lorazepam or midazolam",
     "• no IV access: sublingual lorazepam or intranasal midazolam",
-    "• repeat every 3-5 min, 2-3 doses"
+    "• repeat every 3-5 min, 2-3 doses",
+    "• watch: breathing, airway, low BP"
    ]
   },
   {
    "id": "cse_tx_1_0",
    "x": 637,
-   "y": 930,
+   "y": 1282,
    "w": 270,
    "h": 114,
    "kind": "warn",
@@ -315,7 +358,7 @@
   {
    "id": "cse_tx_2_0",
    "x": 637,
-   "y": 1066,
+   "y": 1418,
    "w": 270,
    "h": 60,
    "kind": "bad",
@@ -329,12 +372,27 @@
   {
    "from": "root",
    "to": "g_feb",
-   "path": "M476.0 106V131H321.0V156"
+   "path": "M476.0 232V257H321.0V282"
   },
   {
    "from": "root",
    "to": "g_se",
-   "path": "M476.0 106V131H772.0V156"
+   "path": "M476.0 232V257H772.0V282"
+  },
+  {
+   "from": "sfs_pres_0_0",
+   "to": "sfs_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "cfs_pres_0_0",
+   "to": "cfs_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "cse_pres_0_0",
+   "to": "cse_pres_1_0",
+   "dashed": true
   },
   {
    "from": "cse_tx_0_0",
@@ -349,7 +407,7 @@
    "to": "sfs_pres_0_0"
   },
   {
-   "from": "sfs_pres_0_0",
+   "from": "sfs_pres_1_0",
    "to": "sfs_inv_0_0"
   },
   {
@@ -363,7 +421,7 @@
    "label": "ALL of these",
    "label_at": [
     180.0,
-    292
+    418
    ]
   },
   {
@@ -371,7 +429,7 @@
    "to": "cfs_pres_0_0"
   },
   {
-   "from": "cfs_pres_0_0",
+   "from": "cfs_pres_1_0",
    "to": "cfs_inv_0_0"
   },
   {
@@ -385,7 +443,7 @@
    "label": "ANY one",
    "label_at": [
     462.0,
-    292
+    418
    ]
   },
   {
@@ -393,7 +451,7 @@
    "to": "cse_pres_0_0"
   },
   {
-   "from": "cse_pres_0_0",
+   "from": "cse_pres_1_0",
    "to": "cse_inv_0_0"
   },
   {
@@ -407,9 +465,50 @@
    "label": "> 5 min",
    "label_at": [
     772.0,
-    292
+    418
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1512,
+   "w": 278,
+   "title": "Treat the cause",
+   "items": [
+    "low glucose → IV dextrose, rule of 50: D10 5 mL/kg (or D5 10 mL/kg) · D25, D50 NOT peripheral (thrombosis, phlebitis)",
+    "low sodium → 3% saline 3-5 mL/kg IV",
+    "meningitis → antibiotics",
+    "inborn error of metabolism → D10 (anabolic) + nothing by mouth",
+    "bleed → EMERGENCY neurosurgery"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 337,
+   "y": 1512,
+   "w": 278,
+   "title": "Causes of status (over 1 month)",
+   "items": [
+    "acute: CNS infection · anoxia · glucose high or low, low sodium, low calcium · trauma · missed or stopped anti-seizure drug, overdose",
+    "prolonged febrile seizure",
+    "remote: brain malformation · perinatal hypoxic-ischemic encephalopathy · neurodegenerative · old stroke, trauma, meningitis",
+    "idiopathic epilepsy · triggers: fever, dehydration, missed drug, toxins"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 629,
+   "y": 1512,
+   "w": 278,
+   "title": "Newborn causes",
+   "items": [
+    "inborn errors of metabolism · genetic epilepsy syndromes",
+    "low glucose, calcium, magnesium",
+    "intracranial bleed, stroke",
+    "infection in utero or at birth · hypoxic-ischemic encephalopathy"
+   ],
+   "cols": 1
+  }
+ ]
 }

@@ -1,7 +1,7 @@
 {
  "name": "vertigo overview",
  "width": 1324,
- "title": "Dizziness: first decide whether it is true vertigo; non-vestibular dizziness has organic and psychiatric causes, while peripheral vertigo is named by how long attacks last and whether hearing is affected: BPPV, Meniere's disease, vestibular neuronitis or labyrinthitis, superior canal dehiscence, and aminoglycoside toxicity; each column gives presentation, investigations and treatment",
+ "title": "Dizziness: first decide whether it is true vertigo; non-vestibular dizziness has organic and psychiatric causes, while peripheral vertigo is named by how long attacks last and whether hearing is affected: BPPV, Meniere's disease, vestibular neuronitis or labyrinthitis, superior canal dehiscence, and aminoglycoside toxicity; each column gives presentation, investigations and treatment, with nystagmus types and vestibular physiology below",
  "kinds": {
   "diz_h": [
    "#46607a",
@@ -115,49 +115,49 @@
  "bands": [
   {
    "x": 40,
-   "y": 388,
+   "y": 460,
    "w": 206,
-   "h": 1064,
+   "h": 1364,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
    "x": 276,
-   "y": 388,
+   "y": 460,
    "w": 206,
-   "h": 1064,
+   "h": 1364,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 484,
-   "y": 388,
+   "y": 460,
    "w": 206,
-   "h": 1064,
+   "h": 1364,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 692,
-   "y": 388,
+   "y": 460,
    "w": 206,
-   "h": 1064,
+   "h": 1364,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 900,
-   "y": 388,
+   "y": 460,
    "w": 206,
-   "h": 1064,
+   "h": 1364,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 1108,
-   "y": 388,
+   "y": 460,
    "w": 206,
-   "h": 1064,
+   "h": 1364,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   }
@@ -165,20 +165,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 534,
-   "h": 304,
+   "y": 658,
+   "h": 322,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 878,
-   "h": 146,
+   "y": 1020,
+   "h": 214,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 1064,
-   "h": 380,
+   "y": 1274,
+   "h": 542,
    "text": "TREATMENT"
   }
  ],
@@ -191,13 +191,16 @@
    "kind": "dark",
    "title": "\"Dizzy\": is it TRUE VERTIGO, an illusion of rotary movement?",
    "lines": [
-    "history is 80% of the workup · exam: nystagmus (named by its FAST phase) and ataxia"
+    "history is 80% of the workup · exam: nystagmus (named by its FAST phase) and ataxia · CT, MRI",
+    "balance: vestibular + vision + position sense → brainstem, cerebellum → eye and limb muscles",
+    "one ear fails → imbalance read as rotation: eye muscles = NYSTAGMUS · higher centres = VERTIGO · limbs = ataxia · vagal nucleus = nausea, vomiting",
+    "anxiety: often the cause OR the effect · vestibular schwannoma: one-sided hearing loss + tinnitus, rarely vertigo"
    ]
   },
   {
    "id": "g_not",
    "x": 45,
-   "y": 120,
+   "y": 192,
    "w": 196,
    "h": 78,
    "kind": "plain",
@@ -209,19 +212,19 @@
   {
    "id": "g_v",
    "x": 281,
-   "y": 120,
+   "y": 192,
    "w": 1028,
    "h": 78,
    "kind": "plain",
    "title": "YES: vestibular",
    "lines": [
-    "episodic, limited duration · hearing symptoms · nausea, vomiting, sweating · worse with head movement"
+    "episodic, limited duration · hearing symptoms · nausea, vomiting, sweating, bowels · worse with head movement"
    ]
   },
   {
    "id": "t1",
    "x": 281,
-   "y": 238,
+   "y": 310,
    "w": 1028,
    "h": 78,
    "kind": "plain",
@@ -233,9 +236,9 @@
   {
    "id": "diz_head_0_0",
    "x": 45,
-   "y": 396,
+   "y": 468,
    "w": 196,
-   "h": 98,
+   "h": 150,
    "kind": "diz_h",
    "title": "Not vestibular",
    "lines": []
@@ -243,9 +246,9 @@
   {
    "id": "bppv_head_0_0",
    "x": 281,
-   "y": 396,
+   "y": 468,
    "w": 196,
-   "h": 98,
+   "h": 150,
    "kind": "bppv_h",
    "title": "BPPV",
    "lines": [
@@ -255,9 +258,9 @@
   {
    "id": "scd_head_0_0",
    "x": 489,
-   "y": 396,
+   "y": 468,
    "w": 196,
-   "h": 98,
+   "h": 150,
    "kind": "scd_h",
    "title": "Superior canal dehiscence",
    "lines": [
@@ -267,21 +270,23 @@
   {
    "id": "men_head_0_0",
    "x": 697,
-   "y": 396,
+   "y": 468,
    "w": 196,
-   "h": 98,
+   "h": 150,
    "kind": "men_h",
    "title": "Ménière's disease",
    "lines": [
-    "endolymphatic hydrops · 2nd commonest"
+    "endolymphatic hydrops · 2nd commonest",
+    "50-100 per 100,000 · 10% of dizzy clinic visits",
+    "onset 40s, then 50s, 30s · familial < 10%"
    ]
   },
   {
    "id": "neu_head_0_0",
    "x": 905,
-   "y": 396,
+   "y": 468,
    "w": 196,
-   "h": 98,
+   "h": 150,
    "kind": "neu_h",
    "title": "Vestibular neuronitis / labyrinthitis",
    "lines": [
@@ -291,9 +296,9 @@
   {
    "id": "ami_head_0_0",
    "x": 1113,
-   "y": 396,
+   "y": 468,
    "w": 196,
-   "h": 98,
+   "h": 150,
    "kind": "ami_h",
    "title": "Aminoglycoside toxicity",
    "lines": [
@@ -303,9 +308,9 @@
   {
    "id": "diz_pres_0_0",
    "x": 45,
-   "y": 534,
+   "y": 658,
    "w": 196,
-   "h": 168,
+   "h": 177,
    "kind": "diz_t",
    "title": "Organic",
    "lines": [
@@ -320,9 +325,9 @@
   {
    "id": "diz_pres_1_0",
    "x": 45,
-   "y": 724,
+   "y": 857,
    "w": 196,
-   "h": 114,
+   "h": 123,
    "kind": "diz_w",
    "title": "Psychiatric",
    "lines": [
@@ -334,50 +339,78 @@
   {
    "id": "bppv_pres_0_0",
    "x": 281,
-   "y": 534,
+   "y": 658,
    "w": 196,
-   "h": 304,
+   "h": 114,
    "kind": "bppv_t",
    "title": "10-30 s of spinning",
    "lines": [
     "• set off by specific head movements",
-    "• hearing NORMAL",
-    "~idiopathic, or head trauma"
+    "• severe: motion sensitivity",
+    "• hearing NORMAL"
+   ]
+  },
+  {
+   "id": "bppv_pres_1_0",
+   "x": 281,
+   "y": 794,
+   "w": 196,
+   "h": 186,
+   "kind": "bppv_w",
+   "title": "Cause",
+   "lines": [
+    "• otoconia loose from the utricle float in the POSTERIOR canal (canalithiasis)",
+    "• idiopathic (degenerative) or head trauma (commonest cause of bilateral)",
+    "~rare: lateral or superior canal"
    ]
   },
   {
    "id": "scd_pres_0_0",
    "x": 489,
-   "y": 534,
+   "y": 658,
    "w": 196,
-   "h": 304,
+   "h": 322,
    "kind": "scd_t",
    "title": "Vertigo with LOUD SOUND or PRESSURE",
    "lines": [
-    "• hears own voice, footsteps, eye movements",
-    "• conductive loss, acoustic reflexes PRESERVED"
+    "• oscillopsia too",
+    "• hears own voice (autophony), footsteps, eye movements",
+    "• conductive loss, acoustic reflexes PRESERVED",
+    "• sound evokes vertical-torsional eye movements in the superior canal's plane"
    ]
   },
   {
    "id": "men_pres_0_0",
    "x": 697,
-   "y": 534,
+   "y": 658,
    "w": 196,
-   "h": 304,
+   "h": 196,
    "kind": "men_t",
    "title": "Episodic vertigo, 24 min to 24 h",
    "lines": [
     "• FLUCTUATING LOW-frequency sensorineural loss",
     "• tinnitus · aural fullness",
-    "~both ears in 25-30%"
+    "~both ears in 25-30%, usually within 5 years"
+   ]
+  },
+  {
+   "id": "men_pres_1_0",
+   "x": 697,
+   "y": 876,
+   "w": 196,
+   "h": 104,
+   "kind": "men_w",
+   "title": "Unpredictable",
+   "lines": [
+    "exacerbations, remissions · hard to judge treatment"
    ]
   },
   {
    "id": "neu_pres_0_0",
    "x": 905,
-   "y": 534,
+   "y": 658,
    "w": 196,
-   "h": 304,
+   "h": 322,
    "kind": "neu_t",
    "title": "Vertigo for DAYS",
    "lines": [
@@ -388,9 +421,9 @@
   {
    "id": "ami_pres_0_0",
    "x": 1113,
-   "y": 534,
+   "y": 658,
    "w": 196,
-   "h": 141,
+   "h": 150,
    "kind": "ami_t",
    "title": "One ear (drops)",
    "lines": [
@@ -400,9 +433,9 @@
   {
    "id": "ami_pres_1_0",
    "x": 1113,
-   "y": 697,
+   "y": 830,
    "w": 196,
-   "h": 141,
+   "h": 150,
    "kind": "ami_w",
    "title": "Systemic (both ears)",
    "lines": [
@@ -412,9 +445,9 @@
   {
    "id": "diz_inv_0_0",
    "x": 45,
-   "y": 878,
+   "y": 1020,
    "w": 196,
-   "h": 146,
+   "h": 214,
    "kind": "diz_w",
    "title": "Look for",
    "lines": [
@@ -424,21 +457,23 @@
   {
    "id": "bppv_inv_0_0",
    "x": 281,
-   "y": 878,
+   "y": 1020,
    "w": 196,
-   "h": 146,
+   "h": 214,
    "kind": "bppv_w",
    "title": "Dix-Hallpike",
    "lines": [
-    "torsional nystagmus with latency, fades, reverses on sitting up"
+    "• torsional nystagmus after a LATENCY",
+    "• left ear clockwise, right counterclockwise",
+    "• brief, fades, reverses on sitting up"
    ]
   },
   {
    "id": "scd_inv_0_0",
    "x": 489,
-   "y": 878,
+   "y": 1020,
    "w": 196,
-   "h": 146,
+   "h": 214,
    "kind": "scd_w",
    "title": "Audiometry + temporal bone CT",
    "lines": []
@@ -446,9 +481,9 @@
   {
    "id": "men_inv_0_0",
    "x": 697,
-   "y": 878,
+   "y": 1020,
    "w": 196,
-   "h": 146,
+   "h": 78,
    "kind": "men_w",
    "title": "Ménière's syndrome?",
    "lines": [
@@ -456,11 +491,23 @@
    ]
   },
   {
+   "id": "men_inv_1_0",
+   "x": 697,
+   "y": 1120,
+   "w": 196,
+   "h": 114,
+   "kind": "men_w",
+   "title": "Why",
+   "lines": [
+    "↓ endolymph resorption or ↑ production (stria vascularis, dark cells) · hydrops ≠ always Ménière's"
+   ]
+  },
+  {
    "id": "neu_inv_0_0",
    "x": 905,
-   "y": 878,
+   "y": 1020,
    "w": 196,
-   "h": 62,
+   "h": 96,
    "kind": "neu_w",
    "title": "Hearing kept → NEURONITIS",
    "lines": []
@@ -468,9 +515,9 @@
   {
    "id": "neu_inv_1_0",
    "x": 905,
-   "y": 962,
+   "y": 1138,
    "w": 196,
-   "h": 62,
+   "h": 96,
    "kind": "neu_w",
    "title": "Hearing loss + tinnitus → LABYRINTHITIS",
    "lines": []
@@ -478,9 +525,9 @@
   {
    "id": "ami_inv_0_0",
    "x": 1113,
-   "y": 878,
+   "y": 1020,
    "w": 196,
-   "h": 146,
+   "h": 214,
    "kind": "ami_w",
    "title": "Usually diagnosed 'after the fact'",
    "lines": []
@@ -488,9 +535,9 @@
   {
    "id": "diz_tx_0_0",
    "x": 45,
-   "y": 1064,
+   "y": 1274,
    "w": 196,
-   "h": 380,
+   "h": 542,
    "kind": "diz_w",
    "title": "Not a vestibular problem",
    "lines": [
@@ -500,22 +547,23 @@
   {
    "id": "bppv_tx_0_0",
    "x": 281,
-   "y": 1064,
+   "y": 1274,
    "w": 196,
-   "h": 380,
+   "h": 542,
    "kind": "ok",
    "title": "Particle repositioning (Epley, Semont)",
    "lines": [
     "80% after 1 session · 95% after 3",
+    "• cure: same-direction nystagmus 80% · reversed 10% · none 50%",
     "~intractable: posterior canal occlusion"
    ]
   },
   {
    "id": "scd_tx_0_0",
    "x": 489,
-   "y": 1064,
+   "y": 1274,
    "w": 196,
-   "h": 380,
+   "h": 542,
    "kind": "ok",
    "title": "Avoid triggers, or surgery",
    "lines": []
@@ -523,7 +571,7 @@
   {
    "id": "men_tx_0_0",
    "x": 697,
-   "y": 1064,
+   "y": 1274,
    "w": 196,
    "h": 98,
    "kind": "ok",
@@ -535,45 +583,49 @@
   {
    "id": "men_tx_1_0",
    "x": 697,
-   "y": 1184,
+   "y": 1394,
    "w": 196,
-   "h": 78,
+   "h": 114,
    "kind": "ok",
    "title": "2 · Attacks",
    "lines": [
-    "vestibular suppressant · diuretic · betahistine"
+    "vestibular suppressant · diuretic · betahistine (Serc)",
+    "~conservative care controls vertigo in 80%"
    ]
   },
   {
    "id": "men_tx_2_0",
    "x": 697,
-   "y": 1284,
+   "y": 1530,
    "w": 196,
-   "h": 60,
+   "h": 150,
    "kind": "warn",
    "title": "3 · Failing: into the ear",
    "lines": [
-    "steroids → gentamicin"
+    "steroids → pressure pulse → gentamicin",
+    "• or endolymphatic sac surgery",
+    "~intratympanic has largely replaced surgery"
    ]
   },
   {
    "id": "men_tx_3_0",
    "x": 697,
-   "y": 1366,
+   "y": 1702,
    "w": 196,
-   "h": 78,
+   "h": 114,
    "kind": "bad",
    "title": "4 · Last: surgery",
    "lines": [
-    "vestibular neurectomy → labyrinthectomy"
+    "vestibular neurectomy → labyrinthectomy",
+    "~ablation does NOT cure the disease"
    ]
   },
   {
    "id": "neu_tx_0_0",
    "x": 905,
-   "y": 1064,
+   "y": 1274,
    "w": 196,
-   "h": 380,
+   "h": 542,
    "kind": "ok",
    "title": "Symptoms, short-term",
    "lines": [
@@ -585,9 +637,9 @@
   {
    "id": "ami_tx_0_0",
    "x": 1113,
-   "y": 1064,
+   "y": 1274,
    "w": 196,
-   "h": 380,
+   "h": 542,
    "kind": "bad",
    "title": "STOP the aminoglycoside",
    "lines": [
@@ -599,12 +651,12 @@
   {
    "from": "root",
    "to": "g_not",
-   "path": "M677.0 70V95H143.0V120"
+   "path": "M677.0 142V167H143.0V192"
   },
   {
    "from": "root",
    "to": "g_v",
-   "path": "M677.0 70V95H795.0V120"
+   "path": "M677.0 142V167H795.0V192"
   },
   {
    "from": "g_v",
@@ -616,8 +668,20 @@
    "to": "diz_pres_1_0"
   },
   {
+   "from": "bppv_pres_0_0",
+   "to": "bppv_pres_1_0"
+  },
+  {
+   "from": "men_pres_0_0",
+   "to": "men_pres_1_0"
+  },
+  {
    "from": "ami_pres_0_0",
    "to": "ami_pres_1_0"
+  },
+  {
+   "from": "men_inv_0_0",
+   "to": "men_inv_1_0"
   },
   {
    "from": "neu_inv_0_0",
@@ -657,7 +721,7 @@
    "to": "bppv_pres_0_0"
   },
   {
-   "from": "bppv_pres_0_0",
+   "from": "bppv_pres_1_0",
    "to": "bppv_inv_0_0"
   },
   {
@@ -671,7 +735,7 @@
    "label": "seconds",
    "label_at": [
     379.0,
-    356
+    428
    ]
   },
   {
@@ -693,7 +757,7 @@
    "label": "sound, pressure",
    "label_at": [
     587.0,
-    356
+    428
    ]
   },
   {
@@ -701,11 +765,11 @@
    "to": "men_pres_0_0"
   },
   {
-   "from": "men_pres_0_0",
+   "from": "men_pres_1_0",
    "to": "men_inv_0_0"
   },
   {
-   "from": "men_inv_0_0",
+   "from": "men_inv_1_0",
    "to": "men_tx_0_0"
   },
   {
@@ -715,7 +779,7 @@
    "label": "min-hours",
    "label_at": [
     795.0,
-    356
+    428
    ]
   },
   {
@@ -737,7 +801,7 @@
    "label": "days",
    "label_at": [
     1003.0,
-    356
+    428
    ]
   },
   {
@@ -759,9 +823,39 @@
    "label": "on gentamicin",
    "label_at": [
     1211.0,
-    356
+    428
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1850,
+   "w": 625,
+   "title": "Nystagmus",
+   "items": [
+    "slow phase = vestibulo-ocular reflex · fast phase = saccade that resets the eye",
+    "physiologic: rotation · caloric · optokinetic · end-point",
+    "caloric COWS: Cold → fast phase Opposite, Warm → Same · tests the brainstem in coma (needs the MLF for conjugate eyes)",
+    "peripheral (spontaneous vestibular): direction FIXED, mostly horizontal, SUPPRESSED by fixation",
+    "other pathologic: positional · gaze-paretic · rebound · fixation · congenital · dissociated"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 684,
+   "y": 1850,
+   "w": 625,
+   "title": "Vestibular physiology",
+   "items": [
+    "hair cells (CN VIII): bending toward the kinocilium opens K+ channels → depolarizes",
+    "resting firing ~100/s, so each afferent signals BOTH directions",
+    "otoliths (utricle, saccule): linear movement, tilt vs gravity · posture",
+    "canals: rotation · endolymph lags, pushes the cupula · gaze stabilization",
+    "canals work in PAIRS: the brain reads the difference, so one dead ear = false rotation",
+    "VOR: 3 neurons, eyes compensate in 10-15 ms"
+   ],
+   "cols": 1
+  }
+ ]
 }

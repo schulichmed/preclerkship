@@ -115,49 +115,49 @@
  "bands": [
   {
    "x": 40,
-   "y": 288,
+   "y": 306,
    "w": 238,
-   "h": 764,
+   "h": 1076,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 280,
-   "y": 288,
+   "y": 306,
    "w": 238,
-   "h": 764,
+   "h": 1076,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 548,
-   "y": 288,
+   "y": 306,
    "w": 238,
-   "h": 764,
+   "h": 1076,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 816,
-   "y": 288,
+   "y": 306,
    "w": 238,
-   "h": 764,
+   "h": 1076,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 1084,
-   "y": 288,
+   "y": 306,
    "w": 238,
-   "h": 764,
+   "h": 1076,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 1352,
-   "y": 288,
+   "y": 306,
    "w": 238,
-   "h": 764,
+   "h": 1076,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   }
@@ -165,14 +165,14 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 414,
-   "h": 254,
+   "y": 450,
+   "h": 476,
    "text": "VIEW AND SIGN"
   },
   {
    "x": 23,
-   "y": 708,
-   "h": 336,
+   "y": 966,
+   "h": 408,
    "text": "WHAT IT MEANS"
   }
  ],
@@ -186,13 +186,14 @@
    "title": "Spine X-ray: which view shows it, what is the sign, and what happens next?",
    "lines": [
     "every film, ABCS: Alignment · Bones · Cartilage (disc spaces, facets) · Soft tissues, then the whole image",
-    "compare with previous imaging when you have it"
+    "compare with previous imaging when you have it · start with alignment: a break shows where to look",
+    "any bone, TIMS-C: Trauma, tumour · Infection, inflammatory, idiopathic · Metabolic, malignancy · Systemic, senile · Congenital"
    ]
   },
   {
    "id": "g_tr",
    "x": 45,
-   "y": 138,
+   "y": 156,
    "w": 468,
    "h": 78,
    "kind": "plain",
@@ -205,7 +206,7 @@
   {
    "id": "g_pe",
    "x": 553,
-   "y": 138,
+   "y": 156,
    "w": 228,
    "h": 78,
    "kind": "plain",
@@ -217,7 +218,7 @@
   {
    "id": "g_cv",
    "x": 821,
-   "y": 138,
+   "y": 156,
    "w": 228,
    "h": 78,
    "kind": "plain",
@@ -229,7 +230,7 @@
   {
    "id": "g_in",
    "x": 1089,
-   "y": 138,
+   "y": 156,
    "w": 228,
    "h": 78,
    "kind": "plain",
@@ -241,7 +242,7 @@
   {
    "id": "g_st",
    "x": 1357,
-   "y": 138,
+   "y": 156,
    "w": 228,
    "h": 78,
    "kind": "plain",
@@ -253,21 +254,22 @@
   {
    "id": "frx_head_0_0",
    "x": 45,
-   "y": 296,
+   "y": 314,
    "w": 228,
-   "h": 78,
+   "h": 96,
    "kind": "frx_h",
    "title": "Vertebral fracture",
    "lines": [
-    "compression · wedge · burst · teardrop"
+    "compression · wedge · burst · teardrop · distraction",
+    "hyperflexion or hyperextension"
    ]
   },
   {
    "id": "fac_head_0_0",
    "x": 285,
-   "y": 296,
+   "y": 314,
    "w": 228,
-   "h": 78,
+   "h": 96,
    "kind": "fac_h",
    "title": "Facet dislocation",
    "lines": [
@@ -277,9 +279,9 @@
   {
    "id": "par_head_0_0",
    "x": 553,
-   "y": 296,
+   "y": 314,
    "w": 228,
-   "h": 78,
+   "h": 96,
    "kind": "par_h",
    "title": "Spondylolysis",
    "lines": [
@@ -289,9 +291,9 @@
   {
    "id": "sco_head_0_0",
    "x": 821,
-   "y": 296,
+   "y": 314,
    "w": 228,
-   "h": 78,
+   "h": 96,
    "kind": "sco_h",
    "title": "Scoliosis",
    "lines": [
@@ -301,9 +303,9 @@
   {
    "id": "as_head_0_0",
    "x": 1089,
-   "y": 296,
+   "y": 314,
    "w": 228,
-   "h": 78,
+   "h": 96,
    "kind": "as_h",
    "title": "Ankylosing spondylitis",
    "lines": [
@@ -313,9 +315,9 @@
   {
    "id": "pvs_head_0_0",
    "x": 1357,
-   "y": 296,
+   "y": 314,
    "w": 228,
-   "h": 78,
+   "h": 96,
    "kind": "pvs_h",
    "title": "Prevertebral swelling",
    "lines": [
@@ -325,9 +327,9 @@
   {
    "id": "frx_look_0_0",
    "x": 45,
-   "y": 414,
+   "y": 450,
    "w": 228,
-   "h": 125,
+   "h": 114,
    "kind": "frx_t",
    "title": "Lateral view",
    "lines": [
@@ -339,9 +341,9 @@
   {
    "id": "frx_look_1_0",
    "x": 45,
-   "y": 561,
+   "y": 586,
    "w": 228,
-   "h": 107,
+   "h": 96,
    "kind": "frx_w",
    "title": "Lateral cervical: 4 lines",
    "lines": [
@@ -349,24 +351,41 @@
    ]
   },
   {
+   "id": "frx_look_2_0",
+   "x": 45,
+   "y": 704,
+   "w": 228,
+   "h": 222,
+   "kind": "frx_t",
+   "title": "Named cervical fractures",
+   "lines": [
+    "• Jefferson: C1 ring broken in several places",
+    "• extension teardrop: anteroinferior corner (C2)",
+    "• flexion teardrop: front of body + cord, posterior column",
+    "• dens: I tip · II base · III into the C2 body",
+    "• widened spinous-process gap: interspinous ligament torn"
+   ]
+  },
+  {
    "id": "fac_look_0_0",
    "x": 285,
-   "y": 414,
+   "y": 450,
    "w": 228,
-   "h": 125,
+   "h": 254,
    "kind": "fac_t",
    "title": "Lateral: PERCHED facets",
    "lines": [
     "• facets lose their parallel line",
-    "• vertebra slips forward (spondylolisthesis)"
+    "• vertebra slips forward (spondylolisthesis)",
+    "• bilateral slips FURTHER than unilateral"
    ]
   },
   {
    "id": "fac_look_1_0",
    "x": 285,
-   "y": 561,
+   "y": 726,
    "w": 228,
-   "h": 107,
+   "h": 200,
    "kind": "fac_w",
    "title": "AP: spinous processes",
    "lines": [
@@ -377,9 +396,9 @@
   {
    "id": "par_look_0_0",
    "x": 553,
-   "y": 414,
+   "y": 450,
    "w": 228,
-   "h": 134,
+   "h": 245,
    "kind": "par_t",
    "title": "Oblique lumbar: 'Scottie dog'",
    "lines": [
@@ -390,9 +409,9 @@
   {
    "id": "par_look_1_0",
    "x": 553,
-   "y": 570,
+   "y": 717,
    "w": 228,
-   "h": 98,
+   "h": 209,
    "kind": "par_w",
    "title": "Lateral: vertebra slipped forward",
    "lines": [
@@ -403,9 +422,9 @@
   {
    "id": "sco_look_0_0",
    "x": 821,
-   "y": 414,
+   "y": 450,
    "w": 228,
-   "h": 116,
+   "h": 227,
    "kind": "sco_t",
    "title": "Cobb angle",
    "lines": [
@@ -415,9 +434,9 @@
   {
    "id": "sco_look_1_0",
    "x": 821,
-   "y": 552,
+   "y": 699,
    "w": 228,
-   "h": 116,
+   "h": 227,
    "kind": "sco_w",
    "title": "Rotation",
    "lines": [
@@ -428,9 +447,9 @@
   {
    "id": "as_look_0_0",
    "x": 1089,
-   "y": 414,
+   "y": 450,
    "w": 228,
-   "h": 107,
+   "h": 218,
    "kind": "as_t",
    "title": "Spine",
    "lines": [
@@ -442,9 +461,9 @@
   {
    "id": "as_look_1_0",
    "x": 1089,
-   "y": 543,
+   "y": 690,
    "w": 228,
-   "h": 125,
+   "h": 236,
    "kind": "as_w",
    "title": "Sacroiliitis",
    "lines": [
@@ -456,9 +475,9 @@
   {
    "id": "pvs_look_0_0",
    "x": 1357,
-   "y": 414,
+   "y": 450,
    "w": 228,
-   "h": 134,
+   "h": 245,
    "kind": "pvs_t",
    "title": "Too wide if",
    "lines": [
@@ -470,9 +489,9 @@
   {
    "id": "pvs_look_1_0",
    "x": 1357,
-   "y": 570,
+   "y": 717,
    "w": 228,
-   "h": 98,
+   "h": 209,
    "kind": "pvs_w",
    "title": "Also check",
    "lines": [
@@ -482,7 +501,7 @@
   {
    "id": "frx_next_0_0",
    "x": 45,
-   "y": 708,
+   "y": 966,
    "w": 228,
    "h": 96,
    "kind": "ok",
@@ -495,34 +514,35 @@
   {
    "id": "frx_next_1_0",
    "x": 45,
-   "y": 826,
+   "y": 1084,
    "w": 228,
-   "h": 98,
+   "h": 152,
    "kind": "bad",
    "title": "Into the POSTERIOR elements",
    "lines": [
     "UNSTABLE",
-    "e.g. hangman's (both pars of C2)"
+    "e.g. hangman's (both pars of C2) · unstable wedge",
+    "any break in the posterior vertebral line"
    ]
   },
   {
    "id": "frx_next_2_0",
    "x": 45,
-   "y": 946,
+   "y": 1258,
    "w": 228,
-   "h": 98,
+   "h": 116,
    "kind": "frx_w",
    "title": "Painful compression fracture",
    "lines": [
-    "vertebroplasty (cement): pain relief, does NOT restore height"
+    "vertebroplasty (cement): pain relief, slows progression, does NOT restore height"
    ]
   },
   {
    "id": "fac_next_0_0",
    "x": 285,
-   "y": 708,
+   "y": 966,
    "w": 228,
-   "h": 138,
+   "h": 174,
    "kind": "bad",
    "title": "Cord at risk: MRI + URGENT neurosurgery",
    "lines": [
@@ -532,9 +552,9 @@
   {
    "id": "fac_next_1_0",
    "x": 285,
-   "y": 868,
+   "y": 1162,
    "w": 228,
-   "h": 176,
+   "h": 212,
    "kind": "warn",
    "title": "Widened disc space or spinous-process gap, no fracture",
    "lines": [
@@ -544,9 +564,9 @@
   {
    "id": "par_next_0_0",
    "x": 553,
-   "y": 708,
+   "y": 966,
    "w": 228,
-   "h": 97,
+   "h": 121,
    "kind": "warn",
    "title": "Pars defect + slip",
    "lines": [
@@ -556,9 +576,9 @@
   {
    "id": "par_next_1_0",
    "x": 553,
-   "y": 827,
+   "y": 1109,
    "w": 228,
-   "h": 97,
+   "h": 121,
    "kind": "par_w",
    "title": "No pars defect, older adult",
    "lines": [
@@ -568,9 +588,9 @@
   {
    "id": "par_next_2_0",
    "x": 553,
-   "y": 946,
+   "y": 1252,
    "w": 228,
-   "h": 97,
+   "h": 121,
    "kind": "ok",
    "title": "Stabilised by",
    "lines": [
@@ -580,9 +600,9 @@
   {
    "id": "sco_next_0_0",
    "x": 821,
-   "y": 708,
+   "y": 966,
    "w": 228,
-   "h": 91,
+   "h": 115,
    "kind": "ok",
    "title": "Under 10°",
    "lines": [
@@ -592,9 +612,9 @@
   {
    "id": "sco_next_1_0",
    "x": 821,
-   "y": 821,
+   "y": 1103,
    "w": 228,
-   "h": 91,
+   "h": 115,
    "kind": "warn",
    "title": "Over 10°",
    "lines": [
@@ -604,9 +624,9 @@
   {
    "id": "sco_next_2_0",
    "x": 821,
-   "y": 934,
+   "y": 1240,
    "w": 228,
-   "h": 109,
+   "h": 133,
    "kind": "bad",
    "title": "Over 50°",
    "lines": [
@@ -616,9 +636,9 @@
   {
    "id": "as_next_0_0",
    "x": 1089,
-   "y": 708,
+   "y": 966,
    "w": 228,
-   "h": 157,
+   "h": 193,
    "kind": "bad",
    "title": "Rigid spine",
    "lines": [
@@ -628,9 +648,9 @@
   {
    "id": "as_next_1_0",
    "x": 1089,
-   "y": 887,
+   "y": 1181,
    "w": 228,
-   "h": 157,
+   "h": 193,
    "kind": "warn",
    "title": "Active inflammation?",
    "lines": [
@@ -640,9 +660,9 @@
   {
    "id": "pvs_next_0_0",
    "x": 1357,
-   "y": 708,
+   "y": 966,
    "w": 228,
-   "h": 336,
+   "h": 408,
    "kind": "bad",
    "title": "Wide + airway pushed forward + air",
    "lines": [
@@ -654,31 +674,35 @@
   {
    "from": "root",
    "to": "g_tr",
-   "path": "M815.0 88V113H279.0V138"
+   "path": "M815.0 106V131H279.0V156"
   },
   {
    "from": "root",
    "to": "g_pe",
-   "path": "M815.0 88V113H667.0V138"
+   "path": "M815.0 106V131H667.0V156"
   },
   {
    "from": "root",
    "to": "g_cv",
-   "path": "M815.0 88V113H935.0V138"
+   "path": "M815.0 106V131H935.0V156"
   },
   {
    "from": "root",
    "to": "g_in",
-   "path": "M815.0 88V113H1203.0V138"
+   "path": "M815.0 106V131H1203.0V156"
   },
   {
    "from": "root",
    "to": "g_st",
-   "path": "M815.0 88V113H1471.0V138"
+   "path": "M815.0 106V131H1471.0V156"
   },
   {
    "from": "frx_look_0_0",
    "to": "frx_look_1_0"
+  },
+  {
+   "from": "frx_look_1_0",
+   "to": "frx_look_2_0"
   },
   {
    "from": "fac_look_0_0",
@@ -737,7 +761,7 @@
    "to": "frx_look_0_0"
   },
   {
-   "from": "frx_look_1_0",
+   "from": "frx_look_2_0",
    "to": "frx_next_0_0"
   },
   {
@@ -814,8 +838,8 @@
  "panels": [
   {
    "x": 45,
-   "y": 1078,
-   "w": 763,
+   "y": 1408,
+   "w": 504,
    "title": "Normal variants: do not call them disease",
    "items": [
     "limbus vertebra: triangle of bone at the front-top corner (unfused ring apophysis), teens, often L4: NOT a fracture",
@@ -826,15 +850,28 @@
    "cols": 1
   },
   {
-   "x": 822,
-   "y": 1078,
-   "w": 763,
+   "x": 563,
+   "y": 1408,
+   "w": 504,
    "title": "Numbers and landmarks",
    "items": [
     "atlantodental interval: under 3 mm adults, under 5 mm children (more = instability)",
     "open-mouth view: C1 lateral masses line up with C2",
     "count: T1 meets the 1st rib · L1 sits below the 12th rib",
     "read BOTH views: a pedicle replaced by a lytic lesion shows on the AP, barely on the lateral"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 1081,
+   "y": 1408,
+   "w": 504,
+   "title": "Which view, when",
+   "items": [
+    "cervical: AP · LATERAL (most important) · obliques (neural foramina) · open-mouth (dens)",
+    "flexion + extension: only if instability suspected · thoracic: swimmer's view for the upper levels",
+    "lumbar: AP + lateral · oblique only on request (pars) · AP: both pedicles every level, stones, free air",
+    "cervical spondylosis (commonest non-traumatic): disc narrowing, marginal osteophytes, endplate sclerosis, straightened lordosis"
    ],
    "cols": 1
   }

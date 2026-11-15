@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 270,
+   "y": 360,
    "w": 246,
-   "h": 960,
+   "h": 1176,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 316,
-   "y": 270,
+   "y": 360,
    "w": 246,
-   "h": 960,
+   "h": 1176,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 564,
-   "y": 270,
+   "y": 360,
    "w": 246,
-   "h": 960,
+   "h": 1176,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 840,
-   "y": 270,
+   "y": 360,
    "w": 246,
-   "h": 960,
+   "h": 1176,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 1088,
-   "y": 270,
+   "y": 360,
    "w": 246,
-   "h": 960,
+   "h": 1176,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   }
@@ -139,19 +139,19 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 396,
-   "h": 216,
+   "y": 522,
+   "h": 342,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 652,
-   "h": 182,
+   "y": 904,
+   "h": 236,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 874,
+   "y": 1180,
    "h": 348,
    "text": "TREATMENT"
   }
@@ -166,13 +166,16 @@
    "title": "Child with arthritis > 6 weeks, other causes excluded: which JIA subtype?",
    "lines": [
     "onset < 16 · 1 or more joints · a CLINICAL diagnosis of exclusion",
+    "1 in 1000 children (rheumatoid arthritis 1% of adults) · the most common chronic rheumatic disease of childhood · mostly girls · rare before 6 months",
+    "inflammatory: morning stiffness, BETTER with movement, responds to NSAIDs · subacute or chronic · altered weight-bearing",
+    "screen with pGALS (gait, arms, legs, spine): joint or bone pain, fever + rash, limp, lost motor milestones, chronic disease with MSK links",
     "red flags (constitutional, acute, severe or night pain, can't walk, red joint) → think of something else"
    ]
   },
   {
    "id": "g_sys",
    "x": 45,
-   "y": 138,
+   "y": 228,
    "w": 236,
    "h": 60,
    "kind": "plain",
@@ -182,7 +185,7 @@
   {
    "id": "g_cnt",
    "x": 321,
-   "y": 138,
+   "y": 228,
    "w": 484,
    "h": 60,
    "kind": "plain",
@@ -194,7 +197,7 @@
   {
    "id": "g_twin",
    "x": 845,
-   "y": 138,
+   "y": 228,
    "w": 484,
    "h": 60,
    "kind": "plain",
@@ -206,100 +209,104 @@
   {
    "id": "sys_head_0_0",
    "x": 45,
-   "y": 278,
+   "y": 368,
    "w": 236,
-   "h": 78,
+   "h": 114,
    "kind": "sys_h",
    "title": "Systemic (Still's disease)",
    "lines": [
-    "10% · any age · boys = girls"
+    "10% · any age · boys = girls",
+    "the most SERIOUS subtype"
    ]
   },
   {
    "id": "oli_head_0_0",
    "x": 321,
-   "y": 278,
+   "y": 368,
    "w": 236,
-   "h": 78,
+   "h": 114,
    "kind": "oli_h",
    "title": "Oligoarticular",
    "lines": [
-    "35% · girls 4:1 · under 6"
+    "35% · girls 4:1 · under 6 (usually 1-3)"
    ]
   },
   {
    "id": "pol_head_0_0",
    "x": 569,
-   "y": 278,
+   "y": 368,
    "w": 236,
-   "h": 78,
+   "h": 114,
    "kind": "pol_h",
    "title": "Polyarticular",
    "lines": [
-    "girls 3:1 · stiff ≥ 60 min · fatigue",
+    "girls 3:1 · peaks 2-5 and 10-14",
+    "insidious, ≥ 5 joints in 6 months · stiff ≥ 60 min · fatigue",
     "rheumatoid factor (RF) splits it"
    ]
   },
   {
    "id": "era_head_0_0",
    "x": 845,
-   "y": 278,
+   "y": 368,
    "w": 236,
-   "h": 78,
+   "h": 114,
    "kind": "era_h",
    "title": "Enthesitis-related",
    "lines": [
-    "10% · boys · over 10"
+    "10% · boys · over 10 (early teens) · often good prognosis"
    ]
   },
   {
    "id": "pso_head_0_0",
    "x": 1093,
-   "y": 278,
+   "y": 368,
    "w": 236,
-   "h": 78,
+   "h": 114,
    "kind": "pso_h",
    "title": "Psoriatic",
    "lines": [
-    "10% · girls · young + preteen peaks"
+    "10% · girls · BIPHASIC: young + preteen"
    ]
   },
   {
    "id": "sys_pres_0_0",
    "x": 45,
-   "y": 396,
+   "y": 522,
    "w": 236,
-   "h": 116,
+   "h": 170,
    "kind": "sys_t",
    "title": "Fever ≥ 39 °C once or twice daily",
    "lines": [
-    "• well between spikes",
-    "• salmon rash with the fever",
-    "• aches WITHOUT swelling early"
+    "• peaks late afternoon to evening · well between spikes",
+    "• evanescent salmon rash with the fever",
+    "• aches WITHOUT swelling early, effusions later"
    ]
   },
   {
    "id": "sys_pres_1_0",
    "x": 45,
-   "y": 534,
+   "y": 714,
    "w": 236,
-   "h": 78,
+   "h": 150,
    "kind": "sys_w",
    "title": "Systemic signs",
    "lines": [
     "• big liver and spleen, nodes",
-    "• serositis"
+    "• serositis · lethargy, weight loss, growth disturbance",
+    "case: 3 M, 3 months of fevers, faint rash for hours, pale, big spleen, knee + ankle effusions"
    ]
   },
   {
    "id": "oli_pres_0_0",
    "x": 321,
-   "y": 396,
+   "y": 522,
    "w": 236,
-   "h": 115,
+   "h": 187,
    "kind": "oli_t",
    "title": "'Painless limp'",
    "lines": [
+    "• 1-2 joints at first",
     "• warm, swollen, not very tender",
     "• knee, ankle, wrist, elbow"
    ]
@@ -307,74 +314,57 @@
   {
    "id": "oli_pres_1_0",
    "x": 321,
-   "y": 533,
+   "y": 731,
    "w": 236,
-   "h": 79,
+   "h": 133,
    "kind": "bad",
    "title": "Almost NEVER the hip",
    "lines": []
   },
   {
    "id": "pol_pres_0_0",
-   "x": 569.0,
-   "y": 396,
-   "w": 113.0,
-   "h": 216,
+   "x": 569,
+   "y": 522,
+   "w": 236,
+   "h": 342,
    "kind": "pol_w",
-   "title": "RF negative",
+   "title": "RF negative or positive",
    "lines": [
-    "• 15%",
-    "• younger",
-    "• fewer joints",
-    "• asymmetric"
-   ]
-  },
-  {
-   "id": "pol_pres_0_1",
-   "x": 692.0,
-   "y": 396,
-   "w": 113.0,
-   "h": 216,
-   "kind": "pol_w",
-   "title": "RF positive",
-   "lines": [
-    "• 5%",
-    "• older",
-    "• many joints",
-    "• like adult rheumatoid arthritis"
+    "• NEGATIVE 15%: younger, fewer joints, asymmetric",
+    "• POSITIVE 5% (3-5% of JIA): older, late teens, many joints, like adult rheumatoid arthritis"
    ]
   },
   {
    "id": "era_pres_0_0",
    "x": 845,
-   "y": 396,
+   "y": 522,
    "w": 236,
-   "h": 134,
+   "h": 188,
    "kind": "era_t",
    "title": "Enthesitis · sacroiliitis · dactylitis",
    "lines": [
     "• ± peripheral joints",
-    "• family history: ankylosing spondylitis, bowel disease, psoriasis"
+    "• family history: ankylosing spondylitis, bowel disease, psoriasis, uveitis, reactive arthritis"
    ]
   },
   {
    "id": "era_pres_1_0",
    "x": 845,
-   "y": 552,
+   "y": 732,
    "w": 236,
-   "h": 60,
+   "h": 132,
    "kind": "bad",
    "title": "Uveitis SYMPTOMATIC",
    "lines": [
-    "painful red eye, photophobia"
+    "painful red eye, photophobia, less vision · recurrent, may be both eyes"
    ]
   },
   {
    "id": "pso_pres_0_0",
    "x": 1093,
-   "y": 396,
+   "y": 522,
    "w": 236,
-   "h": 216,
+   "h": 342,
    "kind": "pso_t",
    "title": "Family history of psoriasis",
    "lines": [
@@ -386,9 +376,9 @@
   {
    "id": "sys_inv_0_0",
    "x": 45,
-   "y": 652,
+   "y": 904,
    "w": 236,
-   "h": 88,
+   "h": 115,
    "kind": "sys_t",
    "title": "1 · Complete blood count",
    "lines": [
@@ -399,9 +389,9 @@
   {
    "id": "sys_inv_1_0",
    "x": 45,
-   "y": 762,
+   "y": 1041,
    "w": 236,
-   "h": 72,
+   "h": 99,
    "kind": "bad",
    "title": "Often mistaken for infection or leukemia",
    "lines": []
@@ -409,7 +399,7 @@
   {
    "id": "oli_inv_0_0",
    "x": 321,
-   "y": 652,
+   "y": 904,
    "w": 236,
    "h": 80,
    "kind": "oli_t",
@@ -421,33 +411,35 @@
   {
    "id": "oli_inv_1_0",
    "x": 321,
-   "y": 754,
+   "y": 1006,
    "w": 236,
-   "h": 80,
+   "h": 134,
    "kind": "oli_w",
    "title": "X-ray: compare the OTHER side",
    "lines": [
-    "one joint → rule out tumour"
+    "one joint → rule out tumour",
+    "soft tissue swelling, effusion, periarticular osteopenia · erosions UNCOMMON"
    ]
   },
   {
    "id": "pol_inv_0_0",
    "x": 569,
-   "y": 652,
+   "y": 904,
    "w": 236,
-   "h": 182,
+   "h": 236,
    "kind": "pol_t",
    "title": "Check RF",
    "lines": [
-    "classifies and prognosticates"
+    "classifies and prognosticates",
+    "case: 5 F, 3 months of knee swelling, morning limp · both knees, left wrist, many small hand joints"
    ]
   },
   {
    "id": "era_inv_0_0",
    "x": 845,
-   "y": 652,
+   "y": 904,
    "w": 236,
-   "h": 182,
+   "h": 236,
    "kind": "era_t",
    "title": "HLA-B27 + in 50%",
    "lines": [
@@ -457,19 +449,20 @@
   {
    "id": "pso_inv_0_0",
    "x": 1093,
-   "y": 652,
+   "y": 904,
    "w": 236,
-   "h": 182,
+   "h": 236,
    "kind": "pso_w",
    "title": "Fits 2 categories (or none)?",
    "lines": [
-    "→ UNDIFFERENTIATED (15%)"
+    "→ UNDIFFERENTIATED (15%)",
+    "e.g. 8 F, oligoarthritis, family psoriasis, HLA-B27 +"
    ]
   },
   {
    "id": "sys_tx_0_0",
    "x": 45,
-   "y": 874,
+   "y": 1180,
    "w": 236,
    "h": 62,
    "kind": "ok",
@@ -479,7 +472,7 @@
   {
    "id": "sys_tx_1_0",
    "x": 45,
-   "y": 958,
+   "y": 1264,
    "w": 236,
    "h": 78,
    "kind": "ok",
@@ -492,7 +485,7 @@
   {
    "id": "sys_tx_2_0",
    "x": 45,
-   "y": 1058,
+   "y": 1364,
    "w": 236,
    "h": 62,
    "kind": "warn",
@@ -502,7 +495,7 @@
   {
    "id": "sys_tx_3_0",
    "x": 45,
-   "y": 1142,
+   "y": 1448,
    "w": 236,
    "h": 80,
    "kind": "bad",
@@ -514,29 +507,31 @@
   {
    "id": "oli_tx_0_0",
    "x": 321,
-   "y": 874,
+   "y": 1180,
    "w": 236,
-   "h": 154,
+   "h": 163,
    "kind": "ok",
    "title": "1 · NSAIDs and/or steroid joint injection",
-   "lines": []
+   "lines": [
+    "naproxen, indomethacin, piroxicam, meloxicam, diclofenac, celecoxib"
+   ]
   },
   {
    "id": "oli_tx_1_0",
    "x": 321,
-   "y": 1050,
+   "y": 1365,
    "w": 236,
-   "h": 172,
+   "h": 163,
    "kind": "warn",
    "title": "Not improving or extends → poly course",
    "lines": [
-    "⅓ remit · ⅓ stay ≤ 4 · ⅓ extend"
+    "⅓ remit · ⅓ stay ≤ 4 · ⅓ extend (extended oligoarthritis)"
    ]
   },
   {
    "id": "pol_tx_0_0",
    "x": 569,
-   "y": 874,
+   "y": 1180,
    "w": 236,
    "h": 95,
    "kind": "ok",
@@ -548,7 +543,7 @@
   {
    "id": "pol_tx_1_0",
    "x": 569,
-   "y": 991,
+   "y": 1297,
    "w": 236,
    "h": 97,
    "kind": "ok",
@@ -558,7 +553,7 @@
   {
    "id": "pol_tx_2_0",
    "x": 569,
-   "y": 1110,
+   "y": 1416,
    "w": 236,
    "h": 113,
    "kind": "ok",
@@ -571,7 +566,7 @@
   {
    "id": "era_tx_0_0",
    "x": 845,
-   "y": 874,
+   "y": 1180,
    "w": 236,
    "h": 75,
    "kind": "ok",
@@ -581,7 +576,7 @@
   {
    "id": "era_tx_1_0",
    "x": 845,
-   "y": 971,
+   "y": 1277,
    "w": 236,
    "h": 115,
    "kind": "ok",
@@ -591,7 +586,7 @@
   {
    "id": "era_tx_2_0",
    "x": 845,
-   "y": 1108,
+   "y": 1414,
    "w": 236,
    "h": 113,
    "kind": "ok",
@@ -603,7 +598,7 @@
   {
    "id": "pso_tx_0_0",
    "x": 1093,
-   "y": 874,
+   "y": 1180,
    "w": 236,
    "h": 348,
    "kind": "ok",
@@ -617,17 +612,17 @@
   {
    "from": "root",
    "to": "g_sys",
-   "path": "M687.0 88V113H163.0V138"
+   "path": "M687.0 178V203H163.0V228"
   },
   {
    "from": "root",
    "to": "g_cnt",
-   "path": "M687.0 88V113H563.0V138"
+   "path": "M687.0 178V203H563.0V228"
   },
   {
    "from": "root",
    "to": "g_twin",
-   "path": "M687.0 88V113H1087.0V138"
+   "path": "M687.0 178V203H1087.0V228"
   },
   {
    "from": "sys_pres_0_0",
@@ -720,28 +715,16 @@
    "label": "≤ 4 joints",
    "label_at": [
     439.0,
-    238
+    328
    ]
   },
   {
    "from": "pol_head_0_0",
-   "to": "pol_pres_0_0",
-   "from_dx": -61.5
-  },
-  {
-   "from": "pol_head_0_0",
-   "to": "pol_pres_0_1",
-   "from_dx": 61.5
+   "to": "pol_pres_0_0"
   },
   {
    "from": "pol_pres_0_0",
-   "to": "pol_inv_0_0",
-   "to_dx": -61.5
-  },
-  {
-   "from": "pol_pres_0_1",
-   "to": "pol_inv_0_0",
-   "to_dx": 61.5
+   "to": "pol_inv_0_0"
   },
   {
    "from": "pol_inv_0_0",
@@ -754,7 +737,7 @@
    "label": "≥ 5 joints",
    "label_at": [
     687.0,
-    238
+    328
    ]
   },
   {
@@ -795,25 +778,40 @@
  "panels": [
   {
    "x": 45,
-   "y": 1256,
-   "w": 635,
+   "y": 1562,
+   "w": 419,
    "title": "Uveitis: SILENT in oligo + poly, so SCREEN",
    "items": [
     "risk: ANA +, girl, young, recent onset",
     "slit lamp every 3 months if ANA + and onset ≤ 6 (first 4 years)",
+    "the most common extra-articular feature · first 4 years · does NOT follow the arthritis",
+    "complications: synechiae, glaucoma, cataract, band keratopathy, cystoid macular edema → BLINDNESS",
     "treat: drops → oral steroids → methotrexate → infliximab or adalimumab"
    ],
    "cols": 1
   },
   {
-   "x": 694,
-   "y": 1256,
-   "w": 635,
+   "x": 478,
+   "y": 1562,
+   "w": 419,
    "title": "Every new child: first steps",
    "items": [
-    "preliminary bloods SUPPORT, they do not diagnose",
+    "preliminary bloods SUPPORT, they do not diagnose: CBC (white cells, platelets ↑ in systemic; anemia) · ESR, CRP normal or ↑ · ANA = uveitis risk · RF (poly) · HLA-B27 (enthesitis-related)",
+    "team: physio, OT (assistive devices), nutrition, psychology, school · aims: comfort, function, no deformity, normal growth",
     "start an NSAID",
-    "refer to rheumatology AND ophthalmology"
+    "refer to rheumatology AND ophthalmology or optometry"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 910,
+   "y": 1562,
+   "w": 419,
+   "title": "Untreated synovitis: complications",
+   "items": [
+    "muscle atrophy · contracture · joint narrowing, erosion, deformity · leg length difference",
+    "growth slows with active disease · early physis closure → short limb, small jaw (micrognathia) · inflamed in adolescence → LONG limb",
+    "ankylosis of neck, wrist · rarely joint replacement · lower school and work attainment"
    ],
    "cols": 1
   }

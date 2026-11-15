@@ -79,33 +79,33 @@
  "bands": [
   {
    "x": 40,
-   "y": 270,
+   "y": 378,
    "w": 272,
-   "h": 286,
+   "h": 628,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 314,
-   "y": 270,
+   "y": 378,
    "w": 272,
-   "h": 286,
+   "h": 628,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 616,
-   "y": 270,
+   "y": 378,
    "w": 272,
-   "h": 558,
+   "h": 1054,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 890,
-   "y": 270,
+   "y": 378,
    "w": 272,
-   "h": 558,
+   "h": 1054,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -113,19 +113,19 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 398,
-   "h": 150,
+   "y": 540,
+   "h": 458,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 588,
-   "h": 232,
+   "y": 1038,
+   "h": 386,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 860,
+   "y": 1464,
    "h": 78,
    "text": "TREATMENT"
   }
@@ -140,27 +140,30 @@
    "title": "Non-Mendelian inheritance: WHAT does the family tree and the patient show?",
    "lines": [
     "• high-energy tissues (brain, retina, skeletal muscle, heart) in 2 or more systems → MITOCHONDRIAL",
+    "• suggestive: CNS (hypotonia, ataxia, intellectual disability, seizures, migraine, dementia, sensorineural hearing loss) · eyes (retinitis pigmentosa, optic atrophy, nystagmus, ophthalmoplegia) · muscle weakness, exercise intolerance · heart (hypertrophic cardiomyopathy, arrhythmia, heart block)",
+    "• also: macrocytic anemia, pancytopenia · diabetes mellitus or insipidus, exocrine pancreas, short stature · gut pseudo-obstruction · liver failure · renal tubular acidosis, Fanconi",
     "• worse and EARLIER in each generation → triple nucleotide REPEAT (anticipation)"
    ]
   },
   {
    "id": "g_mito",
    "x": 45,
-   "y": 138,
+   "y": 228,
    "w": 536,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "MITOCHONDRIAL disorders",
    "lines": [
-    "↓ ATP · dual control by nuclear + mitochondrial genes"
+    "↓ ATP · dual control by nuclear + mitochondrial genes",
+    "pyruvate dehydrogenase · Krebs cycle · respiratory chain · mtDNA upkeep"
    ]
   },
   {
    "id": "g_rep",
    "x": 621,
-   "y": 138,
+   "y": 228,
    "w": 536,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "Triple nucleotide REPEAT disorders",
    "lines": [
@@ -170,21 +173,22 @@
   {
    "id": "mt_head_0_0",
    "x": 45,
-   "y": 278,
+   "y": 386,
    "w": 262,
-   "h": 80,
+   "h": 114,
    "kind": "mt_h",
    "title": "Mitochondrial DNA disease",
    "lines": [
-    "point mutations: MATERNAL · deletions, duplications: sporadic"
+    "point mutations: MATERNAL · deletions, duplications: sporadic",
+    "circular mtDNA, 37 genes · 1-10 copies per mitochondrion"
    ]
   },
   {
    "id": "nu_head_0_0",
    "x": 319,
-   "y": 278,
+   "y": 386,
    "w": 262,
-   "h": 80,
+   "h": 114,
    "kind": "nu_h",
    "title": "Nuclear-gene mitochondrial disease",
    "lines": [
@@ -194,21 +198,22 @@
   {
    "id": "hd_head_0_0",
    "x": 621,
-   "y": 278,
+   "y": 386,
    "w": 262,
-   "h": 80,
+   "h": 114,
    "kind": "hd_h",
    "title": "Huntington disease",
    "lines": [
-    "polyglutamine huntingtin aggregates in neurons"
+    "polyglutamine huntingtin aggregates in neurons",
+    "death about 54-55, 15-25 years after onset"
    ]
   },
   {
    "id": "dm_head_0_0",
    "x": 895,
-   "y": 278,
+   "y": 386,
    "w": 262,
-   "h": 80,
+   "h": 114,
    "kind": "dm_h",
    "title": "Myotonic dystrophy",
    "lines": [
@@ -218,23 +223,35 @@
   {
    "id": "mt_pres_0_0",
    "x": 45,
-   "y": 398,
+   "y": 540,
    "w": 262,
-   "h": 150,
+   "h": 254,
    "kind": "mt_t",
    "title": "Varies by tissue and worsens",
    "lines": [
     "• HETEROPLASMY: mutant + normal mtDNA, shared out at random",
     "• symptoms once a tissue passes its THRESHOLD",
-    "• mutant mtDNA accumulates → progressive"
+    "• mutant mtDNA accumulates in neurons, muscle → progressive"
+   ]
+  },
+  {
+   "id": "mt_pres_1_0",
+   "x": 45,
+   "y": 816,
+   "w": 262,
+   "h": 182,
+   "kind": "mt_w",
+   "title": "Why only the mother",
+   "lines": [
+    "egg: many mitochondria · sperm: few · genetic bottleneck"
    ]
   },
   {
    "id": "nu_pres_0_0",
    "x": 319,
-   "y": 398,
+   "y": 540,
    "w": 262,
-   "h": 150,
+   "h": 458,
    "kind": "nu_t",
    "title": "e.g. depletion syndromes",
    "lines": [
@@ -245,34 +262,76 @@
   {
    "id": "hd_pres_0_0",
    "x": 621,
-   "y": 398,
+   "y": 540,
    "w": 262,
-   "h": 150,
+   "h": 132,
    "kind": "hd_t",
    "title": "Onset 35-44 years",
    "lines": [
     "• 2/3 neurologic (chorea), 1/3 psychiatric",
-    "• MRI: caudate atrophy",
-    "• JUVENILE (60-100 repeats): rigidity, seizures, little chorea"
+    "• MRI: CAUDATE atrophy, diffuse cortical atrophy",
+    "• JUVENILE (60-100 repeats): rigidity, seizures, little chorea, rapid"
+   ]
+  },
+  {
+   "id": "hd_pres_1_0",
+   "x": 621,
+   "y": 694,
+   "w": 262,
+   "h": 168,
+   "kind": "hd_w",
+   "title": "Stages",
+   "lines": [
+    "• early: clumsy, minor movements, personality, psychiatric · still works",
+    "• middle: chorea, dysarthria, dysphagia, weight loss, cognitive decline · basic self-care kept",
+    "• late: dependent, mute, incontinent, rigid, cannot walk, choking"
+   ]
+  },
+  {
+   "id": "hd_pres_2_0",
+   "x": 621,
+   "y": 884,
+   "w": 262,
+   "h": 114,
+   "kind": "hd_w",
+   "title": "cases",
+   "lines": [
+    "• 45, arm and leg movements · mother had head movements",
+    "• 13, juvenile HD, 65 repeats · father 40, 47 repeats, still healthy (anticipation)"
    ]
   },
   {
    "id": "dm_pres_0_0",
    "x": 895,
-   "y": 398,
+   "y": 540,
    "w": 262,
-   "h": 150,
+   "h": 191,
    "kind": "dm_t",
    "title": "Grip will not let go",
    "lines": [
     "• ptosis · narrow face · balding · cataracts · arrhythmia",
-    "• CONGENITAL: floppy newborn, respiratory failure"
+    "• case: 25, cannot let go of jars, keys · fatigue · father had cataracts in his 40s"
+   ]
+  },
+  {
+   "id": "dm_pres_1_0",
+   "x": 895,
+   "y": 753,
+   "w": 262,
+   "h": 245,
+   "kind": "bad",
+   "title": "CONGENITAL",
+   "lines": [
+    "• floppy newborn, respiratory failure, high neonatal death",
+    "• myopathic face: expressionless, sunken cheeks, ptosis",
+    "• survivors: hypotonia improves · conduction defects, cognition",
+    "• check the MOTHER"
    ]
   },
   {
    "id": "hd_inv_0_0",
    "x": 621,
-   "y": 588,
+   "y": 1038,
    "w": 262,
    "h": 114,
    "kind": "hd_w",
@@ -287,22 +346,35 @@
   {
    "id": "hd_inv_1_0",
    "x": 621,
-   "y": 724,
+   "y": 1174,
    "w": 262,
-   "h": 96,
+   "h": 150,
    "kind": "warn",
    "title": "Pre-symptomatic test",
    "lines": [
     "• only after counselling by a geneticist or genetic counsellor",
-    "• 70-80% of relatives decline"
+    "• 70-80% of relatives decline · some never return for results",
+    "• ask: support, coping, reasons (uncertainty, children)"
+   ]
+  },
+  {
+   "id": "hd_inv_2_0",
+   "x": 621,
+   "y": 1346,
+   "w": 262,
+   "h": 78,
+   "kind": "ok",
+   "title": "Symptomatic test",
+   "lines": [
+    "any physician (usually neurology), any age"
    ]
   },
   {
    "id": "dm_inv_0_0",
    "x": 895,
-   "y": 588,
+   "y": 1038,
    "w": 262,
-   "h": 232,
+   "h": 386,
    "kind": "dm_w",
    "title": "CTG repeat count",
    "lines": [
@@ -315,33 +387,34 @@
   {
    "id": "span0_inv_0_0",
    "x": 45,
-   "y": 588,
+   "y": 1038,
    "w": 536,
-   "h": 232,
+   "h": 386,
    "kind": "plain",
    "title": "Suspect it: 2 or more systems",
    "lines": [
     "• ↑ blood and cerebrospinal fluid lactate",
-    "• MRI or spectroscopy: lactate peak, basal ganglia, leukodystrophy",
-    "• muscle biopsy · mtDNA and nuclear gene panels"
+    "• MRI or spectroscopy: lactate peak, basal ganglia, leukodystrophy, atrophy",
+    "• muscle biopsy: immunohistochemistry, respiratory chain enzymes",
+    "• mtDNA and nuclear gene panels"
    ]
   },
   {
    "id": "span1_tx_0_0",
    "x": 45,
-   "y": 860,
+   "y": 1464,
    "w": 536,
    "h": 78,
    "kind": "bad",
    "title": "No effective treatment",
    "lines": [
-    "• mitochondrial cocktail: riboflavin, coenzyme Q10, thiamine"
+    "• mitochondrial cocktail (respiratory chain cofactors): riboflavin, coenzyme Q10, thiamine"
    ]
   },
   {
    "id": "span2_tx_0_0",
    "x": 621,
-   "y": 860,
+   "y": 1464,
    "w": 536,
    "h": 78,
    "kind": "ok",
@@ -356,23 +429,43 @@
   {
    "from": "root",
    "to": "g_mito",
-   "path": "M601.0 88V113H313.0V138"
+   "path": "M601.0 178V203H313.0V228"
   },
   {
    "from": "root",
    "to": "g_rep",
-   "path": "M601.0 88V113H889.0V138"
+   "path": "M601.0 178V203H889.0V228"
+  },
+  {
+   "from": "mt_pres_0_0",
+   "to": "mt_pres_1_0"
+  },
+  {
+   "from": "hd_pres_0_0",
+   "to": "hd_pres_1_0"
+  },
+  {
+   "from": "hd_pres_1_0",
+   "to": "hd_pres_2_0"
+  },
+  {
+   "from": "dm_pres_0_0",
+   "to": "dm_pres_1_0"
   },
   {
    "from": "hd_inv_0_0",
    "to": "hd_inv_1_0"
   },
   {
+   "from": "hd_inv_1_0",
+   "to": "hd_inv_2_0"
+  },
+  {
    "from": "mt_head_0_0",
    "to": "mt_pres_0_0"
   },
   {
-   "from": "mt_pres_0_0",
+   "from": "mt_pres_1_0",
    "to": "span0_inv_0_0",
    "to_dx": -137.0
   },
@@ -383,7 +476,7 @@
    "label": "mother only",
    "label_at": [
     176.0,
-    238
+    346
    ]
   },
   {
@@ -402,7 +495,7 @@
    "label": "AR · XL · AD",
    "label_at": [
     450.0,
-    238
+    346
    ]
   },
   {
@@ -410,11 +503,11 @@
    "to": "hd_pres_0_0"
   },
   {
-   "from": "hd_pres_0_0",
+   "from": "hd_pres_2_0",
    "to": "hd_inv_0_0"
   },
   {
-   "from": "hd_inv_1_0",
+   "from": "hd_inv_2_0",
    "to": "span2_tx_0_0",
    "to_dx": -137.0
   },
@@ -425,7 +518,7 @@
    "label": "CAG in HTT",
    "label_at": [
     752.0,
-    238
+    346
    ]
   },
   {
@@ -433,7 +526,7 @@
    "to": "dm_pres_0_0"
   },
   {
-   "from": "dm_pres_0_0",
+   "from": "dm_pres_1_0",
    "to": "dm_inv_0_0"
   },
   {
@@ -448,7 +541,7 @@
    "label": "CTG in DMPK",
    "label_at": [
     1026.0,
-    238
+    346
    ]
   }
  ],

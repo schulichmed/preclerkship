@@ -61,25 +61,25 @@
  "bands": [
   {
    "x": 40,
-   "y": 424,
+   "y": 460,
    "w": 300,
-   "h": 846,
+   "h": 1134,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 342,
-   "y": 424,
+   "y": 460,
    "w": 300,
-   "h": 846,
+   "h": 1134,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 644,
-   "y": 424,
+   "y": 460,
    "w": 300,
-   "h": 846,
+   "h": 1134,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   }
@@ -87,26 +87,26 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 220,
+   "y": 256,
    "h": 132,
    "text": "WORKUP"
   },
   {
    "x": 23,
-   "y": 532,
-   "h": 114,
+   "y": 568,
+   "h": 186,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 686,
-   "h": 286,
+   "y": 794,
+   "h": 448,
    "text": "CSF"
   },
   {
    "x": 23,
-   "y": 1012,
-   "h": 250,
+   "y": 1282,
+   "h": 304,
    "text": "TREATMENT"
   }
  ],
@@ -120,13 +120,14 @@
    "title": "Fever · headache · stiff neck · altered mental status: think MENINGITIS",
    "lines": [
     "classic triad: FEVER, ALTERED MENTAL STATUS, NUCHAL RIGIDITY (Kernig's, Brudzinski's)",
-    "language trouble, confusion, focal seizures → think ENCEPHALITIS (the brain itself)"
+    "language trouble, confusion, focal seizures → think ENCEPHALITIS (the brain itself)",
+    "4 kinds of CNS infection: bacterial (meningitis, abscess) · viral (meningitis, encephalitis) · fungal (cryptococcal) · protozoal (neurocysticercosis)"
    ]
   },
   {
    "id": "g",
    "x": 45,
-   "y": 138,
+   "y": 174,
    "w": 894,
    "h": 42,
    "kind": "plain",
@@ -136,7 +137,7 @@
   {
    "id": "p",
    "x": 45,
-   "y": 220,
+   "y": 256,
    "w": 894,
    "h": 132,
    "kind": "info",
@@ -144,14 +145,14 @@
    "lines": [
     "1 · CULTURE a blood sample",
     "2 · START EMPIRIC treatment now: never wait for the CT or the tap",
-    "3 · CT/MRI FIRST only if focal signs or ↓ consciousness (PUNISH: Papilledema, Unconscious, Neurologic deficit, Immunocompromised, Seizure, History of CNS disease) → mass = NEUROSURGERY",
-    "4 · LUMBAR PUNCTURE → adjust treatment to the CSF"
+    "3 · CT/MRI FIRST only if focal signs or ↓ consciousness (PUNISH: Papilledema, Unconscious, Neurologic deficit, Immunocompromised, Seizure, History of CNS disease) · also poorly seen fundi, from a NEUROCYSTICERCOSIS area → mass = NEUROSURGERY",
+    "4 · LUMBAR PUNCTURE (cell count, protein, glucose + a SERUM glucose, Gram stain, culture) → adjust treatment to the CSF"
    ]
   },
   {
    "id": "bac_head_0_0",
    "x": 45,
-   "y": 432,
+   "y": 468,
    "w": 290,
    "h": 60,
    "kind": "bac_h",
@@ -163,7 +164,7 @@
   {
    "id": "asep_head_0_0",
    "x": 347,
-   "y": 432,
+   "y": 468,
    "w": 290,
    "h": 60,
    "kind": "asep_h",
@@ -175,7 +176,7 @@
   {
    "id": "hsv_head_0_0",
    "x": 649,
-   "y": 432,
+   "y": 468,
    "w": 290,
    "h": 60,
    "kind": "hsv_h",
@@ -187,70 +188,77 @@
   {
    "id": "bac_clue_0_0",
    "x": 45,
-   "y": 532,
+   "y": 568,
    "w": 290,
-   "h": 114,
+   "h": 186,
    "kind": "bac_t",
    "title": "Very sick",
    "lines": [
     "• fever, stiff neck, ↓ awareness",
     "• RASH can occur (meningococcus)",
-    "• no language disturbance"
+    "• no language disturbance",
+    "• bloods: CRP over 40, blood cultures",
+    "case: 34 y teacher, 2 days · T 38.9, oriented, moderate neck stiffness · CT normal"
    ]
   },
   {
    "id": "asep_clue_0_0",
    "x": 347,
-   "y": 532,
+   "y": 568,
    "w": 290,
-   "h": 114,
+   "h": 186,
    "kind": "asep_t",
    "title": "Uncomfortable, not very sick",
    "lines": [
     "• headache, fever, photophobia, rash",
     "• MILD meningeal signs",
-    "• neuro exam normal"
+    "• neuro exam normal",
+    "case: 20 y student, aches, T 37.8, irritable, mild neck stiffness"
    ]
   },
   {
    "id": "hsv_clue_0_0",
    "x": 649,
-   "y": 532,
+   "y": 568,
    "w": 290,
-   "h": 114,
+   "h": 186,
    "kind": "hsv_t",
    "title": "Cortical signs",
    "lines": [
     "• LANGUAGE trouble (word salad), confusion",
     "• focal seizures, impaired memory, focal deficits",
-    "• fever, ↓ awareness · usually NO stiff neck"
+    "• fever, ↓ awareness · usually NO stiff neck · OLDER patients",
+    "case: 47 y, 3 days fever, turned the wrong way on the 401 · T 38.1, nonsensical, not following commands"
    ]
   },
   {
    "id": "bac_csf_0_0",
    "x": 45,
-   "y": 686,
+   "y": 794,
    "w": 290,
-   "h": 132,
+   "h": 240,
    "kind": "bac_w",
    "title": "Cloudy, PUS",
    "lines": [
-    "• ↑ pressure",
-    "• white cells > 500, NEUTROPHILS",
-    "• protein HIGH · glucose LOW (CSF:serum < 0.3-0.4)",
-    "• Gram stain POSITIVE"
+    "• ↑ pressure (over 30)",
+    "• white cells > 500 (to 50,000), NEUTROPHILS",
+    "• protein HIGH (500-10,000) · glucose LOW (under 2.5; CSF:serum < 0.3-0.4, normal > 0.6)",
+    "• ratio under 0.3 catches 70%",
+    "• Gram stain POSITIVE",
+    "case: cloudy, 10,500 polys, Gram + diplococci, glucose 1.5, protein 2500 → NEISSERIA"
    ]
   },
   {
    "id": "bac_csf_1_0",
    "x": 45,
-   "y": 840,
+   "y": 1056,
    "w": 290,
-   "h": 132,
+   "h": 186,
    "kind": "bac_w",
    "title": "Organisms",
    "lines": [
-    "• adults: S. pneumoniae, N. meningitidis, H. influenzae",
+    "• adults: S. pneumoniae (Gram + lance diplococci), N. meningitidis (Gram − kidney diplococci, vaccine), H. influenzae (fewer since vaccine)",
+    "• Listeria: Gram + rods",
     "• > 50 or immunocompromised: LISTERIA",
     "• neonates: E. coli, group B strep",
     "• after surgery: Staphylococcus"
@@ -259,66 +267,68 @@
   {
    "id": "asep_csf_0_0",
    "x": 347,
-   "y": 686,
+   "y": 794,
    "w": 290,
-   "h": 286,
+   "h": 448,
    "kind": "asep_w",
    "title": "Clear",
    "lines": [
     "• pressure normal or mildly ↑",
     "• white cells ↑ but < 1000, LYMPHOCYTES",
     "• protein mildly ↑ · glucose NORMAL",
-    "• Gram stain negative"
+    "• Gram stain negative",
+    "case: 50 lymphocytes, glucose 3.5 (serum 5.0), protein 450"
    ]
   },
   {
    "id": "hsv_csf_0_0",
    "x": 649,
-   "y": 686,
+   "y": 794,
    "w": 290,
-   "h": 286,
+   "h": 448,
    "kind": "hsv_w",
    "title": "Lymphocytes, red cells, glucose normal",
    "lines": [
     "• CONFIRM: CSF HSV PCR",
     "• MRI: temporal lobe signal change",
-    "• EEG: temporal spikes"
+    "• EEG: temporal spikes · biopsy",
+    "case: 230 lymphocytes, 56 red cells, glucose 4.0, protein 2000 · MRI + EEG both temporal lobes"
    ]
   },
   {
    "id": "bac_tx_0_0",
    "x": 45,
-   "y": 1012,
+   "y": 1282,
    "w": 290,
-   "h": 132,
+   "h": 186,
    "kind": "ok",
    "title": "Empiric, IV",
    "lines": [
-    "• CEFTRIAXONE 2 g q12h",
-    "• + VANCOMYCIN 1 g q8h",
-    "• + AMPICILLIN 2 g q4h if > 50 or immunocompromised",
+    "• CEFTRIAXONE 2 g q12h: H. flu, meningococcus, sensitive pneumococcus, MSSA",
+    "• + VANCOMYCIN 1 g q8h: resistant pneumococcus, MRSA",
+    "• + AMPICILLIN 2 g q4h if > 50 or immunocompromised: Listeria",
     "• + ACYCLOVIR 10 mg/kg q8h (herpes)"
    ]
   },
   {
    "id": "bac_tx_1_0",
    "x": 45,
-   "y": 1166,
+   "y": 1490,
    "w": 290,
    "h": 96,
    "kind": "ok",
    "title": "+ DEXAMETHASONE 10 mg IV",
    "lines": [
     "with the FIRST antibiotic dose, then q6h for 4 days",
-    "~ most benefit in S. pneumoniae"
+    "~ ↓ morbidity + mortality, most in S. pneumoniae"
    ]
   },
   {
    "id": "asep_tx_0_0",
    "x": 347,
-   "y": 1012,
+   "y": 1282,
    "w": 290,
-   "h": 250,
+   "h": 304,
    "kind": "ok",
    "title": "Supportive: REHYDRATION",
    "lines": [
@@ -328,14 +338,16 @@
   {
    "id": "hsv_tx_0_0",
    "x": 649,
-   "y": 1012,
+   "y": 1282,
    "w": 290,
-   "h": 250,
+   "h": 304,
    "kind": "ok",
    "title": "IV ACYCLOVIR 10 mg/kg q8h",
    "lines": [
     "dosed on IDEAL body weight",
-    "started empirically, with the antibiotics"
+    "started empirically, with the antibiotics",
+    "e.g. 700 mg IV q8h",
+    "meningoencephalitis (stiff neck + weakness + seizures) → antibiotics + acyclovir, then CT/MRI"
    ]
   }
  ],
@@ -343,7 +355,7 @@
   {
    "from": "root",
    "to": "g",
-   "path": "M492.0 88V113H492.0V138"
+   "path": "M492.0 124V149H492.0V174"
   },
   {
    "from": "g",
@@ -376,7 +388,7 @@
    "label": "neutrophils, low glucose",
    "label_at": [
     190.0,
-    392
+    428
    ]
   },
   {
@@ -398,7 +410,7 @@
    "label": "lymphocytes, normal glucose",
    "label_at": [
     492.0,
-    392
+    428
    ]
   },
   {
@@ -420,9 +432,35 @@
    "label": "lymphocytes + red cells",
    "label_at": [
     794.0,
-    392
+    428
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1620,
+   "w": 440,
+   "title": "CSF: normal values",
+   "items": [
+    "opening pressure under 20-25 cm",
+    "clear · white cells 0-5, lymphocytes",
+    "protein 250-450 mg/L · glucose 2.2-4.4 mmol/L",
+    "CSF:serum glucose over 0.6 · Gram stain empty"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 499,
+   "y": 1620,
+   "w": 440,
+   "title": "Complications of meningitis",
+   "items": [
+    "sepsis · hydrocephalus · cranial nerve palsies",
+    "vasculitis · stroke · cerebritis · abscess",
+    "seizures · coma · death"
+   ],
+   "cols": 1
+  }
+ ]
 }

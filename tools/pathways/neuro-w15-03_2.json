@@ -1,7 +1,7 @@
 {
  "name": "movement disorders overview",
  "width": 1012,
- "title": "Tremor or slowness: a symmetric postural or action tremor that improves with alcohol is essential tremor; asymmetric rest tremor with rigidity, bradykinesia and postural instability is parkinsonism, which is Parkinson's disease only once drugs, basal ganglia lesions, head trauma, toxins, PSP and MSA are excluded; each with its treatment",
+ "title": "Tremor or slowness: a symmetric postural or action tremor that improves with alcohol is essential tremor; asymmetric rest tremor with rigidity, bradykinesia and postural instability is parkinsonism, which is Parkinson's disease only once drugs, basal ganglia lesions, head trauma, toxins, PSP and MSA are excluded; each with its treatment and the lecture's video cases",
  "kinds": {
   "et_h": [
    "#1f6f8b",
@@ -61,25 +61,25 @@
  "bands": [
   {
    "x": 40,
-   "y": 270,
+   "y": 324,
    "w": 310,
-   "h": 888,
+   "h": 1282,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 380,
-   "y": 270,
+   "y": 324,
    "w": 310,
-   "h": 888,
+   "h": 1282,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 692,
-   "y": 270,
+   "y": 324,
    "w": 310,
-   "h": 888,
+   "h": 1282,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -87,14 +87,14 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 396,
-   "h": 344,
+   "y": 468,
+   "h": 494,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 780,
-   "h": 370,
+   "y": 1002,
+   "h": 596,
    "text": "TREATMENT"
   }
  ],
@@ -108,13 +108,15 @@
    "title": "Tremor or slowness: WHEN is the tremor worst, and is it on ONE side?",
    "lines": [
     "• hyperkinetic (too much movement): ballismus · chorea · athetosis · tremor · dystonia · tics",
-    "• hypokinetic (too little): parkinsonism, with bradykinesia (slow) and akinesia (hard to start)"
+    "• hypokinetic (too little): parkinsonism, with bradykinesia (slow) and akinesia (hard to start)",
+    "• rest + ASYMMETRIC + slow + small writing → parkinsonism · posture or action + SYMMETRIC + large writing → essential tremor",
+    "• parkinsonism needs NO treatment until symptoms limit function"
    ]
   },
   {
    "id": "g_et",
    "x": 45,
-   "y": 138,
+   "y": 192,
    "w": 300,
    "h": 60,
    "kind": "plain",
@@ -126,7 +128,7 @@
   {
    "id": "g_pk",
    "x": 385,
-   "y": 138,
+   "y": 192,
    "w": 612,
    "h": 60,
    "kind": "plain",
@@ -138,9 +140,9 @@
   {
    "id": "et_head_0_0",
    "x": 45,
-   "y": 278,
+   "y": 332,
    "w": 300,
-   "h": 78,
+   "h": 96,
    "kind": "et_h",
    "title": "Essential tremor",
    "lines": [
@@ -150,21 +152,23 @@
   {
    "id": "pd_head_0_0",
    "x": 385,
-   "y": 278,
+   "y": 332,
    "w": 300,
-   "h": 78,
+   "h": 96,
    "kind": "pd_h",
    "title": "Parkinson's disease",
    "lines": [
-    "dopamine neurons of the substantia nigra die · onset about 60"
+    "dopamine neurons of the substantia nigra die",
+    "1% of people over 60 · onset about 60",
+    "mostly sporadic, rarely hereditary"
    ]
   },
   {
    "id": "oth_head_0_0",
    "x": 697,
-   "y": 278,
+   "y": 332,
    "w": 300,
-   "h": 78,
+   "h": 96,
    "kind": "oth_h",
    "title": "Parkinsonism from ANOTHER cause",
    "lines": [
@@ -174,40 +178,80 @@
   {
    "id": "et_pres_0_0",
    "x": 45,
-   "y": 396,
+   "y": 468,
    "w": 300,
-   "h": 344,
+   "h": 245,
    "kind": "et_t",
    "title": "Postural or action tremor",
    "lines": [
     "• both sides alike",
     "• arms most, also head and voice",
     "• improves with ALCOHOL",
-    "• LARGE, shaky handwriting"
+    "• LARGE, shaky handwriting (PD: micrographia)"
+   ]
+  },
+  {
+   "id": "et_pres_1_0",
+   "x": 45,
+   "y": 735,
+   "w": 300,
+   "h": 227,
+   "kind": "et_w",
+   "title": "case: 62, shaky hands 5+ years",
+   "lines": [
+    "now spills food and drink · no other illness → reassure: NOT Parkinson's · beta-blocker after discussing side effects"
    ]
   },
   {
    "id": "pd_pres_0_0",
    "x": 385,
-   "y": 396,
+   "y": 468,
    "w": 300,
-   "h": 344,
+   "h": 186,
    "kind": "pd_t",
    "title": "T.R.A.P., ASYMMETRIC",
    "lines": [
-    "• Tremor at REST, pill-rolling",
-    "• Rigidity: same at any speed, ↑ with augmentation",
-    "• Akinesia / bradykinesia",
-    "• Postural instability",
-    "• small handwriting · masked face · soft voice · less arm swing · stooped, turns en bloc"
+    "• Tremor at REST early, pill-rolling, hands or feet",
+    "• Rigidity: same at any speed (spasticity is velocity dependent), ↑ with augmentation",
+    "• Akinesia: rising from a chair, starting to walk",
+    "• Bradykinesia: finger or foot tapping, fist open-close, turning a doorknob",
+    "• Postural instability"
+   ]
+  },
+  {
+   "id": "pd_pres_1_0",
+   "x": 385,
+   "y": 676,
+   "w": 300,
+   "h": 114,
+   "kind": "pd_w",
+   "title": "Top to bottom",
+   "lines": [
+    "• less blinking · masked face · soft, mumbling voice",
+    "• rigid, NOT spastic tone · small handwriting",
+    "• less arm swing · stooped, turns en bloc"
+   ]
+  },
+  {
+   "id": "pd_pres_2_0",
+   "x": 385,
+   "y": 812,
+   "w": 300,
+   "h": 150,
+   "kind": "pd_w",
+   "title": "Video cases",
+   "lines": [
+    "• 74, no medications, told 'maybe PD' → agree, start LEVODOPA",
+    "• 60, 1 year subtle left tremor, slowness, mild rigidity → early PD, NO treatment yet",
+    "• 10 years of PD, gait worsens → medication WORE OFF"
    ]
   },
   {
    "id": "oth_pres_0_0",
    "x": 697,
-   "y": 396,
+   "y": 468,
    "w": 300,
-   "h": 132,
+   "h": 168,
    "kind": "oth_t",
    "title": "Ask about",
    "lines": [
@@ -218,24 +262,24 @@
   },
   {
    "id": "oth_pres_1_0",
-   "x": 697.0,
-   "y": 550,
-   "w": 145.0,
-   "h": 190,
+   "x": 697,
+   "y": 658,
+   "w": 300,
+   "h": 150,
    "kind": "oth_w",
    "title": "Progressive supranuclear palsy (PSP)",
    "lines": [
-    "• VERTICAL gaze palsy, overcome by vestibular reflexes",
-    "• EARLY falls",
-    "• axial tone > limb tone"
+    "• VERTICAL gaze palsy: pursuit and saccades overcome by vestibular reflexes",
+    "• EARLY falls, poor balance",
+    "• axial tone > limb tone · parkinsonism"
    ]
   },
   {
-   "id": "oth_pres_1_1",
-   "x": 852.0,
-   "y": 550,
-   "w": 145.0,
-   "h": 190,
+   "id": "oth_pres_2_0",
+   "x": 697,
+   "y": 830,
+   "w": 300,
+   "h": 132,
    "kind": "oth_w",
    "title": "Multiple system atrophy (MSA)",
    "lines": [
@@ -246,9 +290,9 @@
   {
    "id": "et_tx_0_0",
    "x": 45,
-   "y": 780,
+   "y": 1002,
    "w": 300,
-   "h": 97,
+   "h": 172,
    "kind": "ok",
    "title": "Mild → no treatment",
    "lines": []
@@ -256,9 +300,9 @@
   {
    "id": "et_tx_1_0",
    "x": 45,
-   "y": 899,
+   "y": 1196,
    "w": 300,
-   "h": 115,
+   "h": 190,
    "kind": "ok",
    "title": "Beta-blocker or primidone",
    "lines": [
@@ -268,9 +312,9 @@
   {
    "id": "et_tx_2_0",
    "x": 45,
-   "y": 1036,
+   "y": 1408,
    "w": 300,
-   "h": 115,
+   "h": 190,
    "kind": "warn",
    "title": "Refractory → deep brain stimulation",
    "lines": [
@@ -280,7 +324,7 @@
   {
    "id": "pd_tx_0_0",
    "x": 385,
-   "y": 780,
+   "y": 1002,
    "w": 300,
    "h": 62,
    "kind": "plain",
@@ -290,39 +334,53 @@
   {
    "id": "pd_tx_1_0",
    "x": 385,
-   "y": 864,
+   "y": 1086,
    "w": 300,
-   "h": 150,
+   "h": 222,
    "kind": "ok",
    "title": "Limiting → LEVODOPA + carbidopa",
    "lines": [
+    "• dopamine cannot cross the blood-brain barrier; levodopa CAN",
+    "• with a peripheral decarboxylase inhibitor: carbidopa (Sinemet) or benserazide (Prolopa)",
     "• most effective: bradykinesia, rigidity best · tremor variable",
-    "• start low, titrate slowly",
-    "• NEVER stop suddenly",
-    "• watch: on-off, wearing off · dyskinesia (50% by 5 years)"
+    "• start low, titrate slowly · NEVER stop suddenly (sudden worsening)",
+    "• watch: on-off, wearing off · dyskinesia, chorea or dystonia (50% by 5 years)"
    ]
   },
   {
    "id": "pd_tx_2_0",
    "x": 385,
-   "y": 1036,
+   "y": 1330,
    "w": 300,
-   "h": 114,
+   "h": 150,
    "kind": "ok",
    "title": "Other options",
    "lines": [
-    "• early: MAO-B inhibitor",
+    "• early: MAO-B inhibitor (less dopamine breakdown)",
     "• dopamine agonist (pramipexole, ropinirole)",
     "• tremor: anticholinergic",
-    "• severe: deep brain stimulation"
+    "• severe: deep brain stimulation",
+    "~ no proven neuroprotective drug"
+   ]
+  },
+  {
+   "id": "pd_tx_3_0",
+   "x": 385,
+   "y": 1502,
+   "w": 300,
+   "h": 96,
+   "kind": "bad",
+   "title": "Prognosis",
+   "lines": [
+    "slowly worsens · dyskinesia · depression · dementia · death usually from ASPIRATION pneumonia"
    ]
   },
   {
    "id": "oth_tx_0_0",
    "x": 697,
-   "y": 780,
+   "y": 1002,
    "w": 300,
-   "h": 370,
+   "h": 596,
    "kind": "bad",
    "title": "Do NOT call it Parkinson's disease",
    "lines": [
@@ -335,22 +393,32 @@
   {
    "from": "root",
    "to": "g_et",
-   "path": "M521.0 88V113H195.0V138"
+   "path": "M521.0 142V167H195.0V192"
   },
   {
    "from": "root",
    "to": "g_pk",
-   "path": "M521.0 88V113H691.0V138"
+   "path": "M521.0 142V167H691.0V192"
+  },
+  {
+   "from": "et_pres_0_0",
+   "to": "et_pres_1_0"
+  },
+  {
+   "from": "pd_pres_0_0",
+   "to": "pd_pres_1_0"
+  },
+  {
+   "from": "pd_pres_1_0",
+   "to": "pd_pres_2_0"
   },
   {
    "from": "oth_pres_0_0",
-   "to": "oth_pres_1_0",
-   "from_dx": -77.5
+   "to": "oth_pres_1_0"
   },
   {
-   "from": "oth_pres_0_0",
-   "to": "oth_pres_1_1",
-   "from_dx": 77.5
+   "from": "oth_pres_1_0",
+   "to": "oth_pres_2_0"
   },
   {
    "from": "et_tx_0_0",
@@ -369,11 +437,15 @@
    "to": "pd_tx_2_0"
   },
   {
+   "from": "pd_tx_2_0",
+   "to": "pd_tx_3_0"
+  },
+  {
    "from": "et_head_0_0",
    "to": "et_pres_0_0"
   },
   {
-   "from": "et_pres_0_0",
+   "from": "et_pres_1_0",
    "to": "et_tx_0_0"
   },
   {
@@ -383,7 +455,7 @@
    "label": "better with alcohol",
    "label_at": [
     195.0,
-    238
+    292
    ]
   },
   {
@@ -391,7 +463,7 @@
    "to": "pd_pres_0_0"
   },
   {
-   "from": "pd_pres_0_0",
+   "from": "pd_pres_2_0",
    "to": "pd_tx_0_0"
   },
   {
@@ -401,7 +473,7 @@
    "label": "no other cause",
    "label_at": [
     535.0,
-    238
+    292
    ]
   },
   {
@@ -409,14 +481,8 @@
    "to": "oth_pres_0_0"
   },
   {
-   "from": "oth_pres_1_0",
-   "to": "oth_tx_0_0",
-   "to_dx": -77.5
-  },
-  {
-   "from": "oth_pres_1_1",
-   "to": "oth_tx_0_0",
-   "to_dx": 77.5
+   "from": "oth_pres_2_0",
+   "to": "oth_tx_0_0"
   },
   {
    "from": "g_pk",
@@ -425,7 +491,7 @@
    "label": "a cause, or red flags",
    "label_at": [
     847.0,
-    238
+    292
    ]
   }
  ],

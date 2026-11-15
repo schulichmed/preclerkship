@@ -99,7 +99,7 @@
    "x": 40,
    "y": 524,
    "w": 238,
-   "h": 722,
+   "h": 810,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -107,7 +107,7 @@
    "x": 280,
    "y": 524,
    "w": 238,
-   "h": 722,
+   "h": 810,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -115,7 +115,7 @@
    "x": 520,
    "y": 524,
    "w": 238,
-   "h": 722,
+   "h": 810,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -123,7 +123,7 @@
    "x": 760,
    "y": 524,
    "w": 238,
-   "h": 722,
+   "h": 810,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -131,7 +131,7 @@
    "x": 1000,
    "y": 524,
    "w": 238,
-   "h": 722,
+   "h": 810,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   }
@@ -145,19 +145,19 @@
   },
   {
    "x": 23,
-   "y": 688,
-   "h": 134,
+   "y": 740,
+   "h": 170,
    "text": "CLUES"
   },
   {
    "x": 23,
-   "y": 862,
+   "y": 950,
    "h": 202,
    "text": "NEXT"
   },
   {
    "x": 23,
-   "y": 1104,
+   "y": 1192,
    "h": 134,
    "text": "TREATMENT"
   }
@@ -171,7 +171,7 @@
    "kind": "dark",
    "title": "Thyroid nodule: which one earns a NEEDLE, and which result earns SURGERY?",
    "lines": [
-    "most are benign · not always thyroid: parathyroid, lymph node, skin, soft tissue",
+    "common: 0.1% a year, 10% lifetime · most are benign · not always thyroid: parathyroid, lymph node, skin, soft tissue",
     "cancer risk: child · male · first-degree family history · neck radiation · firm or fixed · suspicious nodes",
     "URGENT: rapid growth · stridor · progressive dysphagia · large, fixed, firm mass"
    ]
@@ -243,7 +243,7 @@
    "x": 45,
    "y": 532,
    "w": 228,
-   "h": 116,
+   "h": 168,
    "kind": "ben_h",
    "title": "Benign nodule",
    "lines": [
@@ -255,11 +255,13 @@
    "x": 285,
    "y": 532,
    "w": 228,
-   "h": 116,
+   "h": 168,
    "kind": "fol_h",
    "title": "Follicular neoplasm",
    "lines": [
-    "adenoma or follicular carcinoma: microfollicles, scant colloid"
+    "adenoma or follicular carcinoma: microfollicles, scant colloid",
+    "adenoma: 3–5% · F:M 5:1 · 40s–50s · encapsulated, mostly COLD · RAS",
+    "carcinoma: 5–10% of cancers · RAS (arises from adenoma)"
    ]
   },
   {
@@ -267,11 +269,13 @@
    "x": 525,
    "y": 532,
    "w": 228,
-   "h": 116,
+   "h": 168,
    "kind": "pap_h",
    "title": "Papillary carcinoma",
    "lines": [
-    "85–90% · nuclear grooves, clearing, inclusions: DIAGNOSTIC on FNA"
+    "85–90% · nuclei enlarged, elongated, irregular, grooves, clearing, inclusions: DIAGNOSTIC on FNA",
+    "papillae: fibrovascular cores · BRAF, RET-PTC translocation",
+    "good prognosis: 93% at 10 years"
    ]
   },
   {
@@ -279,7 +283,7 @@
    "x": 765,
    "y": 532,
    "w": 228,
-   "h": 116,
+   "h": 168,
    "kind": "med_h",
    "title": "Medullary carcinoma",
    "lines": [
@@ -291,32 +295,34 @@
    "x": 1005,
    "y": 532,
    "w": 228,
-   "h": 116,
+   "h": 168,
    "kind": "ana_h",
    "title": "Anaplastic carcinoma or lymphoma",
    "lines": [
-    "sheets of cells, no follicles: a differentiated cancer that progressed"
+    "sheets of cells, no follicles: a differentiated cancer that progressed",
+    "< 5% · extends into neck tissue · often LETHAL"
    ]
   },
   {
    "id": "ben_clue_0_0",
    "x": 45,
-   "y": 688,
+   "y": 740,
    "w": 228,
-   "h": 134,
+   "h": 170,
    "kind": "ben_t",
    "title": "Colloid + sheets of follicular cells",
    "lines": [
-    "• goitre: many nodules, usually euthyroid",
+    "• goitre (6–23% F, 1.5–5% M): many nodules, usually euthyroid",
+    "• goitre: cysts, hemorrhage, fibrosis, calcification common",
     "• cyst: clear fluid, gone after aspiration"
    ]
   },
   {
    "id": "fol_clue_0_0",
    "x": 285,
-   "y": 688,
+   "y": 740,
    "w": 228,
-   "h": 134,
+   "h": 170,
    "kind": "fol_t",
    "title": "FNA CAN'T tell them apart",
    "lines": [
@@ -326,11 +332,11 @@
   {
    "id": "pap_clue_0_0",
    "x": 525,
-   "y": 688,
+   "y": 740,
    "w": 228,
-   "h": 134,
+   "h": 170,
    "kind": "pap_t",
-   "title": "Mostly women 40–60, often multifocal",
+   "title": "F:M 3:1, age 40–60, often multifocal",
    "lines": [
     "a neck node may be the first sign: spreads by LYMPH"
    ]
@@ -338,21 +344,22 @@
   {
    "id": "med_clue_0_0",
    "x": 765,
-   "y": 688,
+   "y": 740,
    "w": 228,
-   "h": 134,
+   "h": 170,
    "kind": "med_t",
    "title": "25% hereditary: RET point mutation",
    "lines": [
-    "multiple endocrine neoplasia (MEN) 2A, 2B"
+    "multiple endocrine neoplasia (MEN) 2A, 2B · 2% of cancers · 75% sporadic",
+    "negative for thyroid markers"
    ]
   },
   {
    "id": "ana_clue_0_0",
    "x": 1005,
-   "y": 688,
+   "y": 740,
    "w": 228,
-   "h": 134,
+   "h": 170,
    "kind": "bad",
    "title": "URGENT: rapidly growing, older",
    "lines": [
@@ -363,7 +370,7 @@
   {
    "id": "ben_inv_0_0",
    "x": 45,
-   "y": 862,
+   "y": 950,
    "w": 228,
    "h": 202,
    "kind": "ben_w",
@@ -377,7 +384,7 @@
   {
    "id": "fol_inv_0_0",
    "x": 285,
-   "y": 862,
+   "y": 950,
    "w": 228,
    "h": 82,
    "kind": "fol_w",
@@ -389,7 +396,7 @@
   {
    "id": "fol_inv_1_0",
    "x": 285,
-   "y": 966,
+   "y": 1054,
    "w": 228,
    "h": 98,
    "kind": "fol_w",
@@ -402,7 +409,7 @@
   {
    "id": "pap_inv_0_0",
    "x": 525,
-   "y": 862,
+   "y": 950,
    "w": 228,
    "h": 202,
    "kind": "pap_w",
@@ -416,7 +423,7 @@
   {
    "id": "med_inv_0_0",
    "x": 765,
-   "y": 862,
+   "y": 950,
    "w": 228,
    "h": 202,
    "kind": "bad",
@@ -430,7 +437,7 @@
   {
    "id": "ana_inv_0_0",
    "x": 1005,
-   "y": 862,
+   "y": 950,
    "w": 228,
    "h": 82,
    "kind": "ana_t",
@@ -440,7 +447,7 @@
   {
    "id": "ana_inv_1_0",
    "x": 1005,
-   "y": 966,
+   "y": 1054,
    "w": 228,
    "h": 98,
    "kind": "ana_t",
@@ -452,7 +459,7 @@
   {
    "id": "ben_tx_0_0",
    "x": 45,
-   "y": 1104,
+   "y": 1192,
    "w": 228,
    "h": 134,
    "kind": "ok",
@@ -465,20 +472,21 @@
   {
    "id": "fol_tx_0_0",
    "x": 285,
-   "y": 1104,
+   "y": 1192,
    "w": 228,
    "h": 134,
    "kind": "ok",
    "title": "Hemithyroidectomy",
    "lines": [
     "• adenoma: cured, no recurrence",
-    "• carcinoma: spreads by BLOOD"
+    "• carcinoma: spreads by BLOOD",
+    "case: 42 F · 3.2 cm, TI-RADS 3 · FNA atypia (III) → chose hemithyroidectomy"
    ]
   },
   {
    "id": "pap_tx_0_0",
    "x": 525,
-   "y": 1104,
+   "y": 1192,
    "w": 228,
    "h": 134,
    "kind": "ok",
@@ -492,7 +500,7 @@
   {
    "id": "med_tx_0_0",
    "x": 765,
-   "y": 1104,
+   "y": 1192,
    "w": 228,
    "h": 134,
    "kind": "ok",
@@ -505,7 +513,7 @@
   {
    "id": "ana_tx_0_0",
    "x": 1005,
-   "y": 1104,
+   "y": 1192,
    "w": 228,
    "h": 134,
    "kind": "bad",
@@ -663,12 +671,25 @@
  "panels": [
   {
    "x": 45,
-   "y": 1272,
-   "w": 1188,
+   "y": 1360,
+   "w": 587,
    "title": "After treatment",
    "items": [
     "ultrasound 6–12 months after, then periodically: the remaining lobe + neck nodes",
-    "biopsy a suspicious node > 8–10 mm in its smallest dimension"
+    "biopsy a suspicious node > 8–10 mm in its smallest dimension",
+    "pathology report sets stage, prognosis, more surgery, RAI: type, size, focality, capsule, lymphatic + vessel invasion, extension, nodes, margins"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 646,
+   "y": 1360,
+   "w": 587,
+   "title": "Not a neoplasm: hyperplasia or inflammation (no atypia)",
+   "items": [
+    "multinodular goitre: follicles of DIFFERENT function · sporadic or iodine-deficient",
+    "Graves: 1%, F:M 8:1 · TSH-receptor antibodies → diffuse hyperplasia, papillary infoldings · eyes 25–50%, pretibial myxedema 0.5–4%",
+    "Hashimoto: 1–2%, F:M 4:1 · lymphocytes, HURTHLE cells (pink cytoplasm), fibrosis · early leak → thyrotoxic, later small fibrotic gland"
    ],
    "cols": 1
   }

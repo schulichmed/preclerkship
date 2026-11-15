@@ -81,7 +81,7 @@
    "x": 40,
    "y": 424,
    "w": 260,
-   "h": 916,
+   "h": 1400,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
@@ -89,7 +89,7 @@
    "x": 302,
    "y": 424,
    "w": 260,
-   "h": 916,
+   "h": 1400,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -97,7 +97,7 @@
    "x": 592,
    "y": 424,
    "w": 260,
-   "h": 916,
+   "h": 1400,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -105,7 +105,7 @@
    "x": 854,
    "y": 424,
    "w": 260,
-   "h": 916,
+   "h": 1400,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -113,20 +113,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 550,
-   "h": 232,
+   "y": 604,
+   "h": 336,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 822,
-   "h": 200,
+   "y": 980,
+   "h": 298,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 1062,
-   "h": 270,
+   "y": 1318,
+   "h": 498,
    "text": "TREATMENT"
   }
  ],
@@ -185,7 +185,7 @@
    "x": 45,
    "y": 432,
    "w": 250,
-   "h": 78,
+   "h": 132,
    "kind": "pre_h",
    "title": "Prediabetes",
    "lines": [
@@ -197,11 +197,12 @@
    "x": 307,
    "y": 432,
    "w": 250,
-   "h": 78,
+   "h": 132,
    "kind": "t1e_h",
    "title": "Type 1, stages 1–2",
    "lines": [
-    "beta-cell autoimmunity, NO symptoms yet"
+    "beta-cell autoimmunity, NO symptoms yet",
+    "autoantibodies in up to 85%: insulin, GAD (most specific, 70%), IA-2, zinc transporter 8"
    ]
   },
   {
@@ -209,11 +210,12 @@
    "x": 597,
    "y": 432,
    "w": 250,
-   "h": 78,
+   "h": 132,
    "kind": "t1_h",
    "title": "Type 1: new onset (stage 3)",
    "lines": [
-    "autoimmune beta-cell loss → ABSOLUTE insulin deficiency"
+    "autoimmune beta-cell loss → ABSOLUTE insulin deficiency",
+    "alpha cells SPARED · 'starvation': glycogenolysis + gluconeogenesis"
    ]
   },
   {
@@ -221,19 +223,20 @@
    "x": 859,
    "y": 432,
    "w": 250,
-   "h": 78,
+   "h": 132,
    "kind": "t2_h",
    "title": "Type 2",
    "lines": [
-    "insulin RESISTANCE + RELATIVE deficiency: both present by diagnosis"
+    "insulin RESISTANCE + RELATIVE deficiency: both present by diagnosis",
+    "> 90% of all diabetes · no autoantibodies"
    ]
   },
   {
    "id": "pre_pres_0_0",
    "x": 45,
-   "y": 550,
+   "y": 604,
    "w": 250,
-   "h": 232,
+   "h": 336,
    "kind": "pre_t",
    "title": "No symptoms",
    "lines": [
@@ -243,9 +246,9 @@
   {
    "id": "t1e_pres_0_0",
    "x": 307,
-   "y": 550,
+   "y": 604,
    "w": 250,
-   "h": 232,
+   "h": 336,
    "kind": "t1e_t",
    "title": "Often a relative with type 1",
    "lines": [
@@ -256,9 +259,9 @@
   {
    "id": "t1_pres_0_0",
    "x": 597,
-   "y": 550,
+   "y": 604,
    "w": 250,
-   "h": 105,
+   "h": 98,
    "kind": "t1_t",
    "title": "ACUTE: polyuria, thirst, weight LOSS",
    "lines": [
@@ -269,9 +272,9 @@
   {
    "id": "t1_pres_1_0",
    "x": 597,
-   "y": 677,
+   "y": 724,
    "w": 250,
-   "h": 105,
+   "h": 98,
    "kind": "bad",
    "title": "Vomiting · abdominal pain · fast breathing · drowsy",
    "lines": [
@@ -279,11 +282,24 @@
    ]
   },
   {
-   "id": "t2_pres_0_0",
-   "x": 859,
-   "y": 550,
+   "id": "t1_pres_2_0",
+   "x": 597,
+   "y": 844,
    "w": 250,
    "h": 96,
+   "kind": "t1_t",
+   "title": "Exam",
+   "lines": [
+    "• hydration · weight loss · consciousness",
+    "• Kussmaul breathing · acetone breath"
+   ]
+  },
+  {
+   "id": "t2_pres_0_0",
+   "x": 859,
+   "y": 604,
+   "w": 250,
+   "h": 112,
    "kind": "t2_t",
    "title": "SLOW: years in the grey zone",
    "lines": [
@@ -294,22 +310,24 @@
   {
    "id": "t2_pres_1_0",
    "x": 859,
-   "y": 668,
+   "y": 738,
    "w": 250,
-   "h": 114,
+   "h": 202,
    "kind": "t2_w",
    "title": "Risk",
    "lines": [
     "• parent with type 2, previous gestational diabetes",
-    "• Asian, South Asian, Hispanic, Indigenous, African descent"
+    "• Asian, South Asian, Hispanic, Indigenous, African descent",
+    "• identical twin 90% (type 1: 50%) · 40% have an affected parent",
+    "• birth-weight extremes · high glucose in utero"
    ]
   },
   {
    "id": "pre_inv_0_0",
    "x": 45,
-   "y": 822,
+   "y": 980,
    "w": 250,
-   "h": 200,
+   "h": 298,
    "kind": "pre_w",
    "title": "1 · Look for metabolic syndrome",
    "lines": [
@@ -321,22 +339,22 @@
   {
    "id": "t1e_inv_0_0",
    "x": 307,
-   "y": 822,
+   "y": 980,
    "w": 250,
-   "h": 99,
+   "h": 98,
    "kind": "t1e_w",
    "title": "1 · COUNT the islet autoantibodies",
    "lines": [
     "• 1 alone: no added risk",
-    "• 2 or more: risk climbs with each"
+    "• 2: 25% in 5 years · 3: 40%"
    ]
   },
   {
    "id": "t1e_inv_1_0",
    "x": 307.0,
-   "y": 943,
+   "y": 1100,
    "w": 120.0,
-   "h": 79,
+   "h": 78,
    "kind": "t1e_w",
    "title": "Stage 1",
    "lines": [
@@ -346,9 +364,9 @@
   {
    "id": "t1e_inv_1_1",
    "x": 437.0,
-   "y": 943,
+   "y": 1100,
    "w": 120.0,
-   "h": 79,
+   "h": 78,
    "kind": "t1e_w",
    "title": "Stage 2",
    "lines": [
@@ -356,33 +374,58 @@
    ]
   },
   {
+   "id": "t1e_inv_2_0",
+   "x": 307,
+   "y": 1200,
+   "w": 250,
+   "h": 78,
+   "kind": "t1e_w",
+   "title": "case: sibling with type 1",
+   "lines": [
+    "anti-GAD + anti-insulin · fasting 6.5 → STAGE 2"
+   ]
+  },
+  {
    "id": "t1_inv_0_0",
    "x": 597,
-   "y": 822,
+   "y": 980,
    "w": 250,
-   "h": 88,
+   "h": 101,
    "kind": "t1_t",
    "title": "1 · Random glucose ≥ 11.1",
    "lines": [
-    "+ urine dipstick: glucose AND ketones"
+    "+ urine dipstick: glucose AND ketones",
+    "case: 8-year-old · random 18.9 · urine glucose ++, ketones +"
    ]
   },
   {
    "id": "t1_inv_1_0",
    "x": 597,
-   "y": 932,
+   "y": 1103,
    "w": 250,
-   "h": 90,
+   "h": 67,
+   "kind": "t1_w",
+   "title": "2 · C-peptide · blood gas if DKA suspected",
+   "lines": []
+  },
+  {
+   "id": "t1_inv_2_0",
+   "x": 597,
+   "y": 1192,
+   "w": 250,
+   "h": 85,
    "kind": "t1_w",
    "title": "Fasting glucose, A1c: usually unnecessary",
-   "lines": []
+   "lines": [
+    "A1c is NOT a type 1 criterion"
+   ]
   },
   {
    "id": "t2_inv_0_0",
    "x": 859,
-   "y": 822,
+   "y": 980,
    "w": 250,
-   "h": 80,
+   "h": 111,
    "kind": "t2_t",
    "title": "1 · Few symptoms → REPEAT the test",
    "lines": [
@@ -392,22 +435,23 @@
   {
    "id": "t2_inv_1_0",
    "x": 859,
-   "y": 924,
+   "y": 1113,
    "w": 250,
-   "h": 98,
+   "h": 165,
    "kind": "t2_w",
    "title": "2 · Metabolic syndrome as well?",
    "lines": [
     "→ even higher cardiovascular risk",
+    "• triglycerides ↑, HDL ↓, small dense LDL",
     "• also ask about sleep apnea"
    ]
   },
   {
    "id": "pre_tx_0_0",
    "x": 45,
-   "y": 1062,
+   "y": 1318,
    "w": 250,
-   "h": 270,
+   "h": 498,
    "kind": "ok",
    "title": "The TARGET for prevention",
    "lines": [
@@ -417,9 +461,9 @@
   {
    "id": "t1e_tx_0_0",
    "x": 307,
-   "y": 1062,
+   "y": 1318,
    "w": 250,
-   "h": 270,
+   "h": 498,
    "kind": "warn",
    "title": "Stage 3 = SYMPTOMS",
    "lines": [
@@ -429,37 +473,53 @@
   {
    "id": "t1_tx_0_0",
    "x": 597,
-   "y": 1062,
+   "y": 1318,
    "w": 250,
-   "h": 132,
+   "h": 168,
    "kind": "ok",
    "title": "1 · INSULIN: basal + bolus",
    "lines": [
     "• 3/day: intermediate (NPH) + fast-acting",
     "• 4/day: long-acting + fast-acting, or a pump",
+    "• units/kg/day: onset < 0.5 · pre-puberty 0.7–1.0 · puberty 1.0–2.0",
     "~lows: see the COMPLICATIONS chart"
    ]
   },
   {
    "id": "t1_tx_1_0",
    "x": 597,
-   "y": 1216,
+   "y": 1508,
    "w": 250,
-   "h": 116,
+   "h": 170,
    "kind": "ok",
    "title": "2 · Teach: a multidisciplinary team",
    "lines": [
     "• glucose 4×/day, every 2–3 h when ill",
     "• carbohydrate counting",
-    "• pumps, continuous glucose monitors"
+    "• pumps, continuous glucose monitors",
+    "• under 18: fasting 4–8 · after meals 5–10 · A1c < 7.5%",
+    "• annual urine albumin"
+   ]
+  },
+  {
+   "id": "t1_tx_2_0",
+   "x": 597,
+   "y": 1700,
+   "w": 250,
+   "h": 116,
+   "kind": "warn",
+   "title": "Intensive insulin (DCCT): A1c 7% vs 9%",
+   "lines": [
+    "• microvascular complications ↓",
+    "• but HYPOGLYCEMIA ↑ (pumps, monitors offset it)"
    ]
   },
   {
    "id": "t2_tx_0_0",
    "x": 859,
-   "y": 1062,
+   "y": 1318,
    "w": 250,
-   "h": 124,
+   "h": 238,
    "kind": "ok",
    "title": "1 · Weight, activity, diet",
    "lines": [
@@ -469,9 +529,9 @@
   {
    "id": "t2_tx_1_0",
    "x": 859,
-   "y": 1208,
+   "y": 1578,
    "w": 250,
-   "h": 124,
+   "h": 238,
    "kind": "warn",
    "title": "Pancreas too weak: stays high",
    "lines": [
@@ -501,6 +561,11 @@
    "dashed": true
   },
   {
+   "from": "t1_pres_1_0",
+   "to": "t1_pres_2_0",
+   "dashed": true
+  },
+  {
    "from": "t2_pres_0_0",
    "to": "t2_pres_1_0",
    "dashed": true
@@ -516,8 +581,22 @@
    "from_dx": 65.0
   },
   {
+   "from": "t1e_inv_1_0",
+   "to": "t1e_inv_2_0",
+   "to_dx": -65.0
+  },
+  {
+   "from": "t1e_inv_1_1",
+   "to": "t1e_inv_2_0",
+   "to_dx": 65.0
+  },
+  {
    "from": "t1_inv_0_0",
    "to": "t1_inv_1_0"
+  },
+  {
+   "from": "t1_inv_1_0",
+   "to": "t1_inv_2_0"
   },
   {
    "from": "t2_inv_0_0",
@@ -526,6 +605,10 @@
   {
    "from": "t1_tx_0_0",
    "to": "t1_tx_1_0"
+  },
+  {
+   "from": "t1_tx_1_0",
+   "to": "t1_tx_2_0"
   },
   {
    "from": "t2_tx_0_0",
@@ -562,14 +645,8 @@
    "to": "t1e_inv_0_0"
   },
   {
-   "from": "t1e_inv_1_0",
-   "to": "t1e_tx_0_0",
-   "to_dx": -65.0
-  },
-  {
-   "from": "t1e_inv_1_1",
-   "to": "t1e_tx_0_0",
-   "to_dx": 65.0
+   "from": "t1e_inv_2_0",
+   "to": "t1e_tx_0_0"
   },
   {
    "from": "g_below",
@@ -586,11 +663,11 @@
    "to": "t1_pres_0_0"
   },
   {
-   "from": "t1_pres_1_0",
+   "from": "t1_pres_2_0",
    "to": "t1_inv_0_0"
   },
   {
-   "from": "t1_inv_1_0",
+   "from": "t1_inv_2_0",
    "to": "t1_tx_0_0"
   },
   {
@@ -626,5 +703,20 @@
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1850,
+   "w": 1064,
+   "title": "Type 2: the ominous octet (each a drug target)",
+   "items": [
+    "beta cell: insulin ↓, 80% of function lost by PREDIABETES → sulfonylureas, incretins",
+    "alpha cell: glucagon ↑ · liver: glucose output ↑ → metformin",
+    "kidney: SGLT2 ↑ reabsorption → SGLT2 inhibitors · brain: satiety ↓ → GLP-1 agonists",
+    "muscle: uptake ↓ → thiazolidinediones · fat: lipolysis ↑, free fatty acids ↑",
+    "gut: GIP ↑ but response ↓, GLP-1 ↓ → GLP-1 agonists, DPP-4 inhibitors"
+   ],
+   "cols": 1
+  }
+ ]
 }

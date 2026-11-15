@@ -6,7 +6,9 @@
   "title": "Hand, joint, bone or diabetic foot: HOW DEEP is it, and does it need a knife as well as antibiotics?",
   "lines": [
    "antibiotics alone will NOT save you: pus in a closed space, a joint or dead bone needs drainage or debridement",
-   "one hot joint (S. aureus, streptococci): aspirate, surgical washout + cefazolin, or vancomycin + ceftriaxone"
+   "one hot joint: red flags FEVER · pain · much less range of motion · risk: immune compromise, type 2 diabetes, alcohol, age > 80, injection drug use, rheumatoid arthritis",
+   "septic arthritis (S. aureus, group A strep; gram negatives rare): blood count, electrolytes, creatinine, CRP, blood cultures, ASPIRATE (cells > 20 000-50 000, Gram stain) ± imaging",
+   "surgical washout (decompress, irrigate, debride, save the synovium) + cefazolin 2 g IV q8h, or vancomycin 15 mg/kg + ceftriaxone 2 g IV q24h · S. aureus 4-6 weeks"
   ]
  },
  "groups": [
@@ -20,37 +22,38 @@
  "columns": [
   {"id": "cel", "colour": "teal",
    "head": [[["h", "Cellulitis", ["superficial skin infection"]]]],
-   "clue": [[["t", "DORSAL hand, wrist to knuckles", ["IRREGULAR margins"]]]],
+   "clue": [[["t", "DORSAL hand, wrist to knuckles", ["IRREGULAR margins · superficial"]]]],
    "inv": [[["w", "Clinical", ["no pus, no closed space"]]]],
    "tx": [[["ok", "Antibiotics", ["+ rest, elevation"]]]]
   },
   {"id": "deep", "colour": "blue",
    "head": [[["h", "Deep (closed-space) infection", ["palm side, fingertip, around joints"]]]],
-   "clue": [[["t", "Where is the pus?", ["• nail fold: PARONYCHIA (S. aureus)", "• fingertip pulp: FELON", "• flexor tendon sheath: TENOSYNOVITIS"]]], [["w", "Bite over a joint", ["• cat, finger joints: Pasteurella multocida", "• human, fist fight, knuckle: Eikenella corrodens"]]]],
+   "clue": [[["t", "Where is the pus?", ["• nail fold: PARONYCHIA, F > M (S. aureus · mixed in diabetes · fungus if immunocompromised)", "• fingertip pulp: FELON", "• flexor tendon sheath: TENOSYNOVITIS"]]], [["w", "Bite over a joint", ["• cat, finger PIP or DIP joints: Pasteurella multocida, mixed", "• human, young men, fist fight, knuckle (MCP): Eikenella corrodens, mixed"]]]],
    "inv": [[["t", "Kanavel's 4 signs = tenosynovitis", ["• whole finger swollen", "• held flexed · tender along the sheath", "• intense pain on extension"]]]],
    "tx": [[["bad", "Incision and drainage", ["+ wound care + antibiotics (bites: broad-spectrum)"]]]]
   },
   {"id": "oth", "colour": "purple",
    "head": [[["h", "Gonococcal, Lyme, tuberculous", ["large-joint monoarthritis (or oligo)"]]]],
-   "clue": [[["t", "Ask: partners, ticks, travel", ["• young, multiple partners: GONOCOCCAL", "• disseminated: tenosynovitis + pustular rash + polyarthralgia", "• endemic country: TUBERCULOSIS"]]], [["bad", "SEVERAL joints, bacterial", ["THINK ENDOCARDITIS"]]]],
-   "inv": [[["w", "Match the test to the bug", ["• gonococcus: urine, rectal, throat nucleic acid test or culture + blood culture (joint fluid + in only 50%)", "• Lyme: serology · tuberculosis: joint fluid for acid-fast bacilli"]]]],
+   "clue": [[["t", "Ask: partners, ticks, travel", ["• young, multiple partners, MSM, F > M: GONOCOCCAL (knee, wrist, ankle)", "• disseminated: tenosynovitis + pustular rash + polyarthralgia", "• endemic country: TUBERCULOSIS"]]], [["bad", "SEVERAL joints, bacterial", ["THINK ENDOCARDITIS"]]]],
+   "inv": [[["w", "Match the test to the bug", ["• gonococcus: urine, rectal, throat nucleic acid test or culture + blood culture (joint fluid + in only 50%)", "• Lyme: serology (joint fluid PCR lower yield) · tuberculosis: joint fluid for acid-fast bacilli"]]]],
    "tx": [[["ok", "Bug-specific", ["• gonococcal: ceftriaxone 10–14 days", "• Lyme: IV ceftriaxone 28 days", "• tuberculosis: RIPE four-drug therapy, 9 months–1 year"]]]]
   },
   {"id": "om", "colour": "orange",
-   "head": [[["h", "Osteomyelitis", ["blood-borne: spine, children", "contiguous: diabetic foot, trauma, surgery"]]]],
-   "clue": [[["t", "Vertebral: severe back pain", ["• often afebrile · people who inject drugs", "• check strength, reflexes, anal tone"]]], [["w", "Child under 12: metaphysis", ["S. aureus always · Salmonella in sickle cell · Kingella"]]]],
+   "head": [[["h", "Osteomyelitis", ["blood-borne: spine, children", "contiguous: diabetic foot, trauma, surgery, sacral wound", "biofilm, survives inside osteoblasts · chronic: NECROTIC bone"]]]],
+   "clue": [[["t", "Vertebral: severe back pain", ["• often afebrile · people who inject drugs, middle-aged men", "• check strength, reflexes, anal tone", "• TB (Pott's), Brucella: exposure history · M. bovis after BCG for bladder cancer", "case: 55 M, 5 days of 9/10 back pain, afebrile, neuro normal → MRI L3-L4 spondylodiscitis: look for paravertebral, epidural abscess"]]], [["w", "Child under 12: metaphysis", ["S. aureus always · Salmonella in sickle cell · Kingella"]]]],
    "inv": [[["t", "1 · Blood cultures", ["~± spinal biopsy"]]], [["t", "2 · MRI = most sensitive", ["• X-ray, CT not sensitive enough", "• tagged white cell scan takes 2 days", "• don't repeat if improving"]]]],
-   "tx": [[["bad", "Cord compressed or epidural abscess", ["→ neurosurgery"]]], [["ok", "IV vancomycin + ceftriaxone", ["• 6 weeks (vertebral)", "• debride dead bone if needed"]]]]
+   "tx": [[["bad", "Cord compressed or epidural abscess", ["→ neurosurgery"]]], [["ok", "IV vancomycin + ceftriaxone", ["• HIGH doses (ceftriaxone 2 g IV q24h) · 6 weeks (vertebral)", "• debride dead bone if needed · sacral ulcer: offload, debride, plastics", "• cure depends on blood supply, chronicity, debridement, patient engagement", "~ OVIVA trial: oral as good as IV for many (quinolones)"]]]]
   },
   {"id": "dfi", "colour": "brown",
    "head": [[["h", "Diabetic foot infection", ["neuropathy + poor blood supply"]]]],
-   "clue": [[["t", "A wound is NOT always infected", ["• swab any wound and bacteria grow", "• smelly? probe to bone? blood supply?"]]], [["w", "Grade", ["• mild: skin only", "• moderate: over 2 cm or deeper", "• severe: + systemic inflammatory response"]]]],
+   "clue": [[["t", "A wound is NOT always infected", ["• swab any wound and bacteria grow", "• smelly? probe to bone? blood supply?", "• why? new shoes, injury, not wearing the boot, can't afford meds, vascular disease, Charcot, old ulcer"]]], [["w", "Grade", ["• mild: skin only", "• moderate: over 2 cm or deeper", "• severe: + systemic inflammatory response"]]]],
    "inv": [[["w", "1 · Bloods; swab only a good deep specimen", ["blood count, electrolytes, creatinine, C-reactive protein"]]], [["w", "2 · X-ray first → MRI", ["for osteomyelitis under the ulcer"]]]],
-   "tx": [[["ok", "Mild, one bug (staph, strep)", ["cefazolin (or cephalexin, doxycycline, amoxicillin-clavulanate)"]]], [["warn", "Chronic: polymicrobial", ["amoxicillin-clavulanate · severe: IV ceftriaxone + metronidazole", "Pseudomonas → piperacillin-tazobactam"]]], [["bad", "Severe", ["• exclude necrotizing fasciitis", "• piperacillin-tazobactam ± vancomycin", "• offload, debride, call ortho or vascular"]]]]
+   "tx": [[["ok", "Mild, one bug (staph, strep)", ["cefazolin (or cephalexin, doxycycline, amoxicillin-clavulanate)"]]], [["warn", "Chronic: polymicrobial", ["amoxicillin-clavulanate · severe: IV ceftriaxone + metronidazole", "Pseudomonas → piperacillin-tazobactam"]]], [["bad", "Severe", ["• exclude necrotizing fasciitis", "• piperacillin-tazobactam ± vancomycin", "• blood cultures · offload, debride, call ortho or vascular", "• vancomycin if MRSA history or risk · revascularize?"]]]]
   }
  ],
  "panels": [
-  {"title": "Prosthetic joint infection", "items": ["HIGH index of suspicion · less virulent organisms (coagulase-negative staphylococci, Cutibacterium acnes)", "managed by the orthopedic surgeon + infectious diseases"]},
+  {"title": "Prosthetic joint infection", "items": ["HIGH index of suspicion · less virulent organisms (coagulase-negative staphylococci, Cutibacterium acnes)", "managed by the orthopedic surgeon + infectious diseases · early vs late"]},
+  {"title": "Septic arthritis vs gout (older patients)", "items": ["septic: ± fever · high white count · POSITIVE Gram stain or culture", "gout: ± fever · joint fluid 20 000-50 000 · monosodium urate crystals on microscopy", "reactive arthritis: days to weeks after a gut (Campylobacter, Salmonella, Shigella, Yersinia, C. difficile) or genital (Chlamydia) infection · mono- or oligoarthritis, dactylitis, enthesitis · HLA-B27"]},
   {"title": "Viral polyarthritis", "items": ["parvovirus B19 (with anemia) · chikungunya, Zika, dengue (travel) · hepatitis B, C, HIV"]}
  ]
 }

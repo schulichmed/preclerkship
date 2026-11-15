@@ -81,7 +81,7 @@
    "x": 40,
    "y": 290,
    "w": 246,
-   "h": 746,
+   "h": 854,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -89,7 +89,7 @@
    "x": 316,
    "y": 290,
    "w": 246,
-   "h": 746,
+   "h": 854,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -97,7 +97,7 @@
    "x": 592,
    "y": 290,
    "w": 246,
-   "h": 746,
+   "h": 854,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -105,7 +105,7 @@
    "x": 868,
    "y": 290,
    "w": 246,
-   "h": 746,
+   "h": 854,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -120,12 +120,12 @@
   {
    "x": 23,
    "y": 588,
-   "h": 168,
+   "h": 276,
    "text": "A RESULT MEANS"
   },
   {
    "x": 23,
-   "y": 796,
+   "y": 904,
    "h": 232,
    "text": "DO NOT"
   }
@@ -283,27 +283,17 @@
   },
   {
    "id": "ana_means_0_0",
-   "x": 45.0,
+   "x": 45,
    "y": 588,
-   "w": 113.0,
-   "h": 168,
+   "w": 236,
+   "h": 276,
    "kind": "ana_w",
-   "title": "POSITIVE",
+   "title": "POSITIVE or NEGATIVE",
    "lines": [
-    "does NOT rule in disease",
-    "titre 1/1280 = strong (bigger denominator)"
-   ]
-  },
-  {
-   "id": "ana_means_0_1",
-   "x": 168.0,
-   "y": 588,
-   "w": 113.0,
-   "h": 168,
-   "kind": "ana_w",
-   "title": "NEGATIVE",
-   "lines": [
-    "most CTDs LESS likely"
+    "• POSITIVE: does NOT rule in disease",
+    "• titre 1/1280 = strong (bigger denominator)",
+    "• pattern changes with dilution: 1/80 speckled + homogeneous, 1/640 homogeneous",
+    "• NEGATIVE: most CTDs LESS likely"
    ]
   },
   {
@@ -311,7 +301,7 @@
    "x": 321,
    "y": 588,
    "w": 236,
-   "h": 168,
+   "h": 276,
    "kind": "dna_w",
    "title": "Very SPECIFIC for SLE",
    "lines": [
@@ -325,7 +315,7 @@
    "x": 597,
    "y": 588,
    "w": 236,
-   "h": 168,
+   "h": 276,
    "kind": "ena_w",
    "title": "Antibody → disease",
    "lines": [
@@ -334,7 +324,9 @@
     "• Sm: fairly specific for SLE",
     "• RNP: mixed CTD + SLE",
     "• Scl-70: scleroderma + lung disease",
-    "• Jo1: polymyositis + lung disease"
+    "• Jo1: polymyositis + lung disease",
+    "• PM-Scl: myositis-scleroderma overlap · RNA polymerase III: scleroderma renal crisis",
+    "~ Ro = SSA, La = SSB (La rarely without Ro) · Scl-70 = topoisomerase 1"
    ]
   },
   {
@@ -342,18 +334,19 @@
    "x": 873,
    "y": 588,
    "w": 236,
-   "h": 168,
+   "h": 276,
    "kind": "cpl_w",
    "title": "LOW",
    "lines": [
     "active SLE, esp. lupus nephritis (used up)",
-    "or an inherited deficiency"
+    "or an inherited deficiency",
+    "~ antibody binds tissue → complement activated, consumed"
    ]
   },
   {
    "id": "ana_dont_0_0",
    "x": 45,
-   "y": 796,
+   "y": 904,
    "w": 236,
    "h": 114,
    "kind": "bad",
@@ -366,7 +359,7 @@
   {
    "id": "ana_dont_1_0",
    "x": 45,
-   "y": 932,
+   "y": 1040,
    "w": 236,
    "h": 96,
    "kind": "bad",
@@ -379,21 +372,22 @@
   {
    "id": "dna_dont_0_0",
    "x": 321,
-   "y": 796,
+   "y": 904,
    "w": 236,
-   "h": 96,
+   "h": 123,
    "kind": "bad",
    "title": "ANA not done or negative",
    "lines": [
-    "order the ANA first"
+    "order the ANA first",
+    "case: 22 F, low white cells, lymphocytes, platelets, malar rash, hair loss → ANA, NOT anti-DNA"
    ]
   },
   {
    "id": "dna_dont_1_0",
    "x": 321,
-   "y": 914,
+   "y": 1049,
    "w": 236,
-   "h": 114,
+   "h": 87,
    "kind": "warn",
    "title": "Outside-lab kits",
    "lines": [
@@ -403,7 +397,7 @@
   {
    "id": "ena_dont_0_0",
    "x": 597,
-   "y": 796,
+   "y": 904,
    "w": 236,
    "h": 232,
    "kind": "bad",
@@ -415,7 +409,7 @@
   {
    "id": "cpl_dont_0_0",
    "x": 873,
-   "y": 796,
+   "y": 904,
    "w": 236,
    "h": 232,
    "kind": "bad",
@@ -460,23 +454,11 @@
   },
   {
    "from": "ana_when_0_0",
-   "to": "ana_means_0_0",
-   "from_dx": -61.5
-  },
-  {
-   "from": "ana_when_0_0",
-   "to": "ana_means_0_1",
-   "from_dx": 61.5
+   "to": "ana_means_0_0"
   },
   {
    "from": "ana_means_0_0",
-   "to": "ana_dont_0_0",
-   "to_dx": -61.5
-  },
-  {
-   "from": "ana_means_0_1",
-   "to": "ana_dont_0_0",
-   "to_dx": 61.5
+   "to": "ana_dont_0_0"
   },
   {
    "from": "g_scr",

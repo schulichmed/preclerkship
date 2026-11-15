@@ -63,7 +63,7 @@
    "x": 40,
    "y": 290,
    "w": 300,
-   "h": 966,
+   "h": 1362,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -71,7 +71,7 @@
    "x": 370,
    "y": 290,
    "w": 300,
-   "h": 966,
+   "h": 1362,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -79,7 +79,7 @@
    "x": 672,
    "y": 290,
    "w": 300,
-   "h": 966,
+   "h": 1362,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   }
@@ -87,20 +87,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 434,
-   "h": 250,
+   "y": 506,
+   "h": 430,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 724,
-   "h": 214,
+   "y": 976,
+   "h": 286,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 978,
-   "h": 270,
+   "y": 1302,
+   "h": 342,
    "text": "TREATMENT"
   }
  ],
@@ -146,12 +146,14 @@
    "x": 45,
    "y": 298,
    "w": 290,
-   "h": 96,
+   "h": 168,
    "kind": "sep_h",
    "title": "Septic arthritis",
    "lines": [
     "Staphylococcus 60%+ · streptococcus 20%",
-    "gram-negatives 15% (immunocompromised, elderly, intravenous (IV) drug use)"
+    "gram-negatives 15% (immunocompromised, elderly, neonates, intravenous (IV) drug use) · anaerobes",
+    "spread: blood (#1) · direct inoculation · nearby infected bone",
+    "untreated: rapid joint destruction"
    ]
   },
   {
@@ -159,7 +161,7 @@
    "x": 375,
    "y": 298,
    "w": 290,
-   "h": 96,
+   "h": 168,
    "kind": "gout_h",
    "title": "Gout",
    "lines": [
@@ -171,7 +173,7 @@
    "x": 677,
    "y": 298,
    "w": 290,
-   "h": 96,
+   "h": 168,
    "kind": "cppd_h",
    "title": "Pseudogout",
    "lines": [
@@ -181,9 +183,9 @@
   {
    "id": "sep_clue_0_0",
    "x": 45,
-   "y": 434,
+   "y": 506,
    "w": 290,
-   "h": 87,
+   "h": 150,
    "kind": "sep_t",
    "title": "Fever, unwell, can't bear weight",
    "lines": [
@@ -193,50 +195,56 @@
   {
    "id": "sep_clue_1_0",
    "x": 45,
-   "y": 543,
+   "y": 678,
    "w": 290,
-   "h": 141,
+   "h": 258,
    "kind": "sep_w",
    "title": "HIGH risk",
    "lines": [
     "• prosthetic joint or recent joint surgery",
     "• immunosuppressed (diabetes, methotrexate, prednisone, biologics)",
-    "• IV drugs, alcohol, very young or old"
+    "• cancer · leflunomide · recent infection",
+    "• IV drugs, alcohol, very young or old",
+    "• damaged joint (arthritis) · penetrating trauma · skin infection"
    ]
   },
   {
    "id": "gout_clue_0_0",
    "x": 375,
-   "y": 434,
+   "y": 506,
    "w": 290,
-   "h": 96,
+   "h": 114,
    "kind": "gout_t",
    "title": "Peaks in HOURS, exquisitely painful",
    "lines": [
     "• can't stand the bedsheet touching it",
-    "• big toe (1st metatarsophalangeal joint) in 50%"
+    "• big toe (1st metatarsophalangeal joint) in 50% · usually one lower-limb joint",
+    "• untreated: 7-10 days"
    ]
   },
   {
    "id": "gout_clue_1_0",
    "x": 375,
-   "y": 552,
+   "y": 642,
    "w": 290,
-   "h": 132,
+   "h": 294,
    "kind": "gout_w",
    "title": "Who and why",
    "lines": [
     "• men 35–50 · women after menopause",
-    "• diuretics, alcohol, kidney impairment",
-    "• SMARTS: surgery, mechanical injury, alcohol, recent illness, travel, starting or stopping allopurinol"
+    "• UNDER-excretion of uric acid: the commonest cause",
+    "• diuretics (furosemide, hydrochlorothiazide), alcohol, kidney impairment, family history, male",
+    "• 'disease of plenty': obesity, hypertension, diabetes, high lipids",
+    "• SMARTS: surgery, mechanical injury, alcohol, recent illness, travel or dehydration, starting or stopping allopurinol",
+    "case: 48 M brewery worker on hydrochlorothiazide, 2 days after cholecystectomy → red big toe · cells 15"
    ]
   },
   {
    "id": "cppd_clue_0_0",
    "x": 677,
-   "y": 434,
+   "y": 506,
    "w": 290,
-   "h": 115,
+   "h": 187,
    "kind": "cppd_t",
    "title": "Less intense, SLOWER to peak, lasts longer",
    "lines": [
@@ -246,33 +254,35 @@
   {
    "id": "cppd_clue_1_0",
    "x": 677,
-   "y": 571,
+   "y": 715,
    "w": 290,
-   "h": 113,
+   "h": 221,
    "kind": "cppd_w",
    "title": "Who",
    "lines": [
     "• older people, often with osteoarthritis",
-    "• KNEE most common"
+    "• KNEE most common · one lower-limb joint",
+    "case: 78 F, knee OA, after a brisk walk: right knee swollen, warm, flexes < 100° · cells 18"
    ]
   },
   {
    "id": "sep_inv_0_0",
    "x": 45,
-   "y": 724,
+   "y": 976,
    "w": 290,
-   "h": 96,
+   "h": 168,
    "kind": "sep_t",
    "title": "1 · Aspirate: cells HIGH",
    "lines": [
     "• over 50 000 points to infection",
-    "• Gram stain: e.g. Gram-positive cocci in clusters"
+    "• Gram stain: e.g. Gram-positive cocci in clusters",
+    "case: 62 M, diabetes, knee replacement, recent pedicure · 38.6 °C, red ankle, can't bear weight · cells 59, no crystals, cocci in clusters"
    ]
   },
   {
    "id": "sep_inv_1_0",
    "x": 45,
-   "y": 842,
+   "y": 1166,
    "w": 290,
    "h": 96,
    "kind": "sep_w",
@@ -285,9 +295,9 @@
   {
    "id": "gout_inv_0_0",
    "x": 375,
-   "y": 724,
+   "y": 976,
    "w": 290,
-   "h": 87,
+   "h": 114,
    "kind": "gout_t",
    "title": "1 · NEEDLE-shaped, NEGATIVELY birefringent",
    "lines": [
@@ -297,22 +307,22 @@
   {
    "id": "gout_inv_1_0",
    "x": 375,
-   "y": 833,
+   "y": 1112,
    "w": 290,
-   "h": 105,
+   "h": 150,
    "kind": "gout_w",
    "title": "2 · Uric acid may be NORMAL in an attack",
    "lines": [
     "• high uric acid alone ≠ gout: don't treat it",
-    "• creatinine, fasting glucose, lipids"
+    "• blood count (white cells, platelets may ↑) · creatinine, fasting glucose, lipids"
    ]
   },
   {
    "id": "cppd_inv_0_0",
    "x": 677,
-   "y": 724,
+   "y": 976,
    "w": 290,
-   "h": 97,
+   "h": 133,
    "kind": "cppd_t",
    "title": "1 · RHOMBOID, intracellular, POSITIVELY birefringent",
    "lines": [
@@ -322,9 +332,9 @@
   {
    "id": "cppd_inv_1_0",
    "x": 677,
-   "y": 843,
+   "y": 1131,
    "w": 290,
-   "h": 95,
+   "h": 131,
    "kind": "cppd_w",
    "title": "2 · Chondrocalcinosis on X-ray",
    "lines": [
@@ -334,9 +344,9 @@
   {
    "id": "sep_tx_0_0",
    "x": 45,
-   "y": 978,
+   "y": 1302,
    "w": 290,
-   "h": 116,
+   "h": 143,
    "kind": "bad",
    "title": "1 · ADMIT + urgent incision and drainage (I&D)",
    "lines": [
@@ -347,51 +357,54 @@
   {
    "id": "sep_tx_1_0",
    "x": 45,
-   "y": 1116,
+   "y": 1467,
    "w": 290,
-   "h": 132,
+   "h": 177,
    "kind": "ok",
    "title": "2 · Empiric IV antibiotics",
    "lines": [
     "• cefazolin 2 g IV every 8 h",
     "• methicillin-resistant S. aureus (MRSA) risk: vancomycin + ceftriaxone",
-    "• 4–6 weeks in all"
+    "• 4–6 weeks in all",
+    "• analgesia, rest"
    ]
   },
   {
    "id": "gout_tx_0_0",
    "x": 375,
-   "y": 978,
+   "y": 1302,
    "w": 290,
-   "h": 132,
+   "h": 150,
    "kind": "ok",
    "title": "1 · Settle the attack",
    "lines": [
     "• steroid injected into the joint",
     "• indomethacin 50 mg three times daily",
     "• or colchicine 0.6 mg every 8 h",
-    "• or prednisone 30 mg, down 5 mg every 2 days"
+    "• or prednisone 30 mg daily × 2 days, then down 5 mg every 2 days",
+    "• rest, ice, elevate · hydrate"
    ]
   },
   {
    "id": "gout_tx_1_0",
    "x": 375,
-   "y": 1132,
+   "y": 1474,
    "w": 290,
-   "h": 116,
+   "h": 170,
    "kind": "warn",
    "title": "2 · Allopurinol: NEVER during an attack",
    "lines": [
-    "• recurrent attacks, tophi · lifelong",
+    "• recurrent attacks hurting life · risky attack drugs · tophi · accepts LIFELONG",
+    "• xanthine oxidase inhibitor: target the LOWER limit of normal uric acid",
     "• cover with an anti-inflammatory (NSAID) or colchicine"
    ]
   },
   {
    "id": "cppd_tx_0_0",
    "x": 677,
-   "y": 978,
+   "y": 1302,
    "w": 290,
-   "h": 142,
+   "h": 178,
    "kind": "ok",
    "title": "Settle the attack",
    "lines": [
@@ -403,9 +416,9 @@
   {
    "id": "cppd_tx_1_0",
    "x": 677,
-   "y": 1142,
+   "y": 1502,
    "w": 290,
-   "h": 106,
+   "h": 142,
    "kind": "cppd_w",
    "title": "Rest, ice, elevation, hydration",
    "lines": [
@@ -533,7 +546,7 @@
  "panels": [
   {
    "x": 45,
-   "y": 1282,
+   "y": 1678,
    "w": 454,
    "title": "The cell count does not decide",
    "items": [
@@ -544,12 +557,13 @@
   },
   {
    "x": 513,
-   "y": 1282,
+   "y": 1678,
    "w": 454,
    "title": "Gout: after the attack",
    "items": [
     "recurrence 60% in 1 year · 80% in 2 · 90% in 5",
-    "less meat and seafood, less alcohol; vegetables and low-fat dairy are good"
+    "less meat and seafood, less alcohol; vegetables and low-fat dairy are good · hydrate",
+    "years of high uric acid → TOPHI in skin, bone: lower it"
    ],
    "cols": 1
   }

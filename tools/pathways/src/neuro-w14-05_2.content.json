@@ -5,7 +5,9 @@
  "root": {"title": "NEUROPATHIC pain: a neurological cause, peripheral or central",
   "lines": ["sounds like: electrical · shooting · burning, hot or cold · pins and needles",
             "allodynia: a non-painful touch hurts · hyperpathia: a painful stimulus hurts far too much · dysesthesia: uncomfortable sensations (burning)",
-            "EVALUATE THE CAUSE and examine: some are reversible · nociceptive pain (tissue injury) takes acetaminophen, NSAIDs, opioids instead"]},
+            "peripheral causes: length-dependent (diabetic, small fibre, chemotherapy) · radiculopathy · postherpetic neuralgia · trigeminal neuralgia · nerve injury",
+            "central causes: thalamus · brainstem · spinal cord · phantom limb pain partly central",
+            "EVALUATE THE CAUSE and examine: an important neurological diagnosis? some are reversible · nociceptive pain (tissue injury: somatic or visceral) takes acetaminophen, NSAIDs, opioids instead"]},
  "groups": [
   {"id": "g_ad", "cols": [0, 1], "title": "ANTIDEPRESSANTS", "lines": ["↑ norepinephrine and serotonin → stronger descending pain inhibition"]},
   {"id": "g_ac", "cols": [2, 3], "title": "ANTICONVULSANTS", "lines": ["in specific situations a sodium-channel drug"]},
@@ -32,8 +34,20 @@
  ],
  "spans": [
   {"section": "tx", "cols": [0, 4], "rows": [
-   [["plain", "TRIAL AND ERROR: one agent, titrated up SLOWLY to the maximum dose", []]],
+   [["plain", "TRIAL AND ERROR: one agent, titrated up SLOWLY to the maximum dose", ["if no co-existing issue or cost decides"]]],
    [["warn", "Side effects before an effect?", ["→ change the drug"]], ["warn", "1 month at the highest dose, no effect?", ["→ change the drug"]]]
   ]}
+ ],
+ "panels": [
+  {"title": "Complex regional pain syndrome (CRPS)", "items": [
+   "after a focal tissue or nerve injury · uncommon · inflammatory + autonomic",
+   "pain GREATER than the injury, LONGER than healing",
+   "limb: severe pain, allodynia, swelling, temperature, colour, skin + hair change",
+   "treatment hard: multidisciplinary pain management"]},
+  {"title": "Mechanism (nice to know)", "items": [
+   "nerve damage: sodium channels ↑, potassium ↓ → ectopic firing",
+   "spontaneous + paroxysmal pain",
+   "CENTRAL SENSITIZATION in the cord · early treatment avoids it",
+   "norepinephrine + serotonin drive descending inhibition"]}
  ]
 }

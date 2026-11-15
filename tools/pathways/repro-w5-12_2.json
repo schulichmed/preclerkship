@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 308,
+   "y": 326,
    "w": 250,
-   "h": 806,
+   "h": 1110,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 292,
-   "y": 308,
+   "y": 326,
    "w": 250,
-   "h": 806,
+   "h": 1110,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 572,
-   "y": 308,
+   "y": 326,
    "w": 250,
-   "h": 806,
+   "h": 1110,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 824,
-   "y": 308,
+   "y": 326,
    "w": 250,
-   "h": 806,
+   "h": 1110,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 1076,
-   "y": 308,
+   "y": 326,
    "w": 250,
-   "h": 806,
+   "h": 1110,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   }
@@ -139,20 +139,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 454,
-   "h": 150,
+   "y": 560,
+   "h": 222,
    "text": "DIAGNOSIS"
   },
   {
    "x": 23,
-   "y": 644,
-   "h": 150,
+   "y": 822,
+   "h": 258,
    "text": "WATCH FOR"
   },
   {
    "x": 23,
-   "y": 834,
-   "h": 272,
+   "y": 1120,
+   "h": 308,
    "text": "TREATMENT"
   }
  ],
@@ -166,13 +166,14 @@
    "title": "High blood pressure (BP) in pregnancy: WHEN did it start, and is the BP the PROBLEM or a SYMPTOM?",
    "lines": [
     "MILD: systolic > 140 or diastolic > 90 · SEVERE: systolic > 160 or diastolic > 110 · each on 2 readings > 15 min apart",
-    "exclude white-coat and transient (pain-driven) elevation"
+    "exclude white-coat and transient (pain-driven) elevation",
+    "normal pregnancy: BP FALLS from 8–12 wk, back to baseline by 20–24 wk · pre-eclampsia: vessels fail to relax, SVR ↑"
    ]
   },
   {
    "id": "g_prob",
    "x": 45,
-   "y": 158,
+   "y": 176,
    "w": 492,
    "h": 78,
    "kind": "plain",
@@ -184,7 +185,7 @@
   {
    "id": "g_symp",
    "x": 577,
-   "y": 158,
+   "y": 176,
    "w": 744,
    "h": 78,
    "kind": "plain",
@@ -197,9 +198,9 @@
   {
    "id": "chr_head_0_0",
    "x": 45,
-   "y": 316,
+   "y": 334,
    "w": 240,
-   "h": 98,
+   "h": 186,
    "kind": "chr_h",
    "title": "Chronic (pre-existing) hypertension",
    "lines": [
@@ -209,9 +210,9 @@
   {
    "id": "ges_head_0_0",
    "x": 297,
-   "y": 316,
+   "y": 334,
    "w": 240,
-   "h": 98,
+   "h": 186,
    "kind": "ges_h",
    "title": "Gestational hypertension",
    "lines": [
@@ -221,48 +222,52 @@
   {
    "id": "pe_head_0_0",
    "x": 577,
-   "y": 316,
+   "y": 334,
    "w": 240,
-   "h": 98,
+   "h": 186,
    "kind": "pe_h",
    "title": "Pre-eclampsia",
    "lines": [
     "hypertension + PROTEINURIA",
-    "late gestation · more often a first pregnancy"
+    "late gestation · more often a first pregnancy",
+    "de novo, or on top of chronic or gestational",
+    "abnormal response to vasoactive substances → end-organ vasoconstriction"
    ]
   },
   {
    "id": "ecl_head_0_0",
    "x": 829,
-   "y": 316,
+   "y": 334,
    "w": 240,
-   "h": 98,
+   "h": 186,
    "kind": "ecl_h",
    "title": "Eclampsia",
    "lines": [
     "pre-eclampsia + SEIZURES",
-    "usually poorly controlled pre-eclampsia"
+    "usually poorly controlled pre-eclampsia",
+    "RARELY de novo: likelier with chronic hypertension, kidney disease"
    ]
   },
   {
    "id": "hel_head_0_0",
    "x": 1081,
-   "y": 316,
+   "y": 334,
    "w": 240,
-   "h": 98,
+   "h": 186,
    "kind": "hel_h",
    "title": "HELLP syndrome",
    "lines": [
     "Hemolysis · Elevated Liver enzymes · Low Platelets",
-    "atypical pre-eclampsia / eclampsia"
+    "atypical pre-eclampsia / eclampsia",
+    "from a hypertensive disorder or de novo"
    ]
   },
   {
    "id": "chr_dx_0_0",
    "x": 45,
-   "y": 454,
+   "y": 560,
    "w": 240,
-   "h": 150,
+   "h": 222,
    "kind": "chr_t",
    "title": "The EARLIER the onset",
    "lines": [
@@ -273,9 +278,9 @@
   {
    "id": "ges_dx_0_0",
    "x": 297,
-   "y": 454,
+   "y": 560,
    "w": 240,
-   "h": 150,
+   "h": 222,
    "kind": "ges_t",
    "title": "NORMAL BPs documented up to 20 weeks",
    "lines": [
@@ -285,26 +290,26 @@
   {
    "id": "pe_dx_0_0",
    "x": 577,
-   "y": 454,
+   "y": 560,
    "w": 240,
-   "h": 150,
+   "h": 222,
    "kind": "pe_t",
    "title": "Adverse conditions?",
    "lines": [
-    "• headache, visual change",
+    "• headache, visual change · nausea, vomiting",
     "• chest pain, saturation < 97%",
     "• right upper quadrant pain",
-    "• ↑ creatinine, liver enzymes",
-    "• ↓ platelets",
-    "• fetal growth restriction"
+    "• ↑ creatinine, uric acid, liver enzymes · ↓ albumin",
+    "• ↓ platelets · ↑ WBC, INR, PTT",
+    "• fetal growth restriction, oligohydramnios, absent or reversed end-diastolic flow"
    ]
   },
   {
    "id": "ecl_dx_0_0",
    "x": 829,
-   "y": 454,
+   "y": 560,
    "w": 240,
-   "h": 150,
+   "h": 222,
    "kind": "ecl_t",
    "title": "Warning signs",
    "lines": [
@@ -317,9 +322,9 @@
   {
    "id": "hel_dx_0_0",
    "x": 1081,
-   "y": 454,
+   "y": 560,
    "w": 240,
-   "h": 150,
+   "h": 222,
    "kind": "bad",
    "title": "BP can be NORMAL",
    "lines": [
@@ -329,9 +334,9 @@
   {
    "id": "chr_watch_0_0",
    "x": 45,
-   "y": 644,
+   "y": 822,
    "w": 240,
-   "h": 150,
+   "h": 258,
    "kind": "chr_w",
    "title": "Diabetes, kidney disease",
    "lines": [
@@ -341,9 +346,9 @@
   {
    "id": "ges_watch_0_0",
    "x": 297,
-   "y": 644,
+   "y": 822,
    "w": 240,
-   "h": 150,
+   "h": 258,
    "kind": "ges_w",
    "title": "Co-morbid conditions",
    "lines": [
@@ -353,25 +358,25 @@
   {
    "id": "pe_watch_0_0",
    "x": 577,
-   "y": 644,
+   "y": 822,
    "w": 240,
-   "h": 150,
+   "h": 258,
    "kind": "bad",
    "title": "SEVERE complications",
    "lines": [
-    "• eclampsia, stroke",
-    "• pulmonary edema, saturation < 90%",
-    "• acute kidney injury",
+    "• eclampsia, PRES, TIA or stroke, GCS < 13, retinal detachment, cortical blindness",
+    "• pulmonary edema, saturation < 90%, MI, inotropes",
+    "• acute kidney injury, dialysis · platelets < 50 or transfusion",
     "• international normalized ratio (INR) > 2",
-    "• abruption"
+    "• abruption with compromise · reversed ductus venosus flow · fetal death"
    ]
   },
   {
    "id": "ecl_watch_0_0",
    "x": 829,
-   "y": 644,
+   "y": 822,
    "w": 240,
-   "h": 150,
+   "h": 258,
    "kind": "bad",
    "title": "Neurological symptoms",
    "lines": [
@@ -381,9 +386,9 @@
   {
    "id": "hel_watch_0_0",
    "x": 1081,
-   "y": 644,
+   "y": 822,
    "w": 240,
-   "h": 150,
+   "h": 258,
    "kind": "bad",
    "title": "SEVERE if",
    "lines": [
@@ -395,9 +400,9 @@
   {
    "id": "chr_tx_0_0",
    "x": 45,
-   "y": 834,
+   "y": 1120,
    "w": 240,
-   "h": 272,
+   "h": 308,
    "kind": "ok",
    "title": "ORAL antihypertensives",
    "lines": [
@@ -409,9 +414,9 @@
   {
    "id": "ges_tx_0_0",
    "x": 297,
-   "y": 834,
+   "y": 1120,
    "w": 240,
-   "h": 89,
+   "h": 107,
    "kind": "ok",
    "title": "The same ORAL drugs",
    "lines": [
@@ -421,34 +426,34 @@
   {
    "id": "ges_tx_1_0",
    "x": 297,
-   "y": 945,
+   "y": 1249,
    "w": 240,
-   "h": 161,
+   "h": 179,
    "kind": "bad",
    "title": "AVOID in any pregnancy",
    "lines": [
     "• diuretics: cut intravascular volume",
-    "• angiotensin-converting enzyme (ACE) inhibitors, angiotensin receptor blockers: fetal kidney failure, oligohydramnios"
+    "• ACE inhibitors, angiotensin receptor blockers: fetal kidney failure, oligohydramnios (2nd, 3rd trimester) · maybe teratogenic in the 1st"
    ]
   },
   {
    "id": "pe_tx_0_0",
    "x": 577,
-   "y": 834,
+   "y": 1120,
    "w": 240,
-   "h": 152,
+   "h": 188,
    "kind": "bad",
    "title": "1 · SEVERE BP: intravenous (IV)",
    "lines": [
-    "• labetalol 20 mg IV, then 20–80 mg every 30 min (max 300 mg)",
-    "• hydralazine 5 mg IV, then 5–10 mg every 30 min",
+    "• labetalol 20 mg IV, then 20–80 mg every 30 min (max 300 mg) or 1–2 mg/min, then oral",
+    "• hydralazine 5 mg IV, then 5–10 mg every 30 min or 0.5–10 mg/h (max 20 mg)",
     "• nifedipine 5–10 mg every 30 min"
    ]
   },
   {
    "id": "pe_tx_1_0",
    "x": 577,
-   "y": 1008,
+   "y": 1330,
    "w": 240,
    "h": 98,
    "kind": "ok",
@@ -460,23 +465,23 @@
   {
    "id": "ecl_tx_0_0",
    "x": 829,
-   "y": 834,
+   "y": 1120,
    "w": 240,
-   "h": 272,
+   "h": 308,
    "kind": "ok",
    "title": "Magnesium sulfate (MgSO4)",
    "lines": [
     "• raises the seizure threshold",
-    "• load 4 g IV over 20 min, then 1–2 g/h",
+    "• load 4 g IV in 100 mL saline over 20 min, then 1–2 g/h",
     "• until delivery + 12–48 h post-partum"
    ]
   },
   {
    "id": "hel_tx_0_0",
    "x": 1081,
-   "y": 834,
+   "y": 1120,
    "w": 240,
-   "h": 272,
+   "h": 308,
    "kind": "ok",
    "title": "As pre-eclampsia",
    "lines": [
@@ -488,12 +493,12 @@
   {
    "from": "root",
    "to": "g_prob",
-   "path": "M683.0 108V133H291.0V158"
+   "path": "M683.0 126V151H291.0V176"
   },
   {
    "from": "root",
    "to": "g_symp",
-   "path": "M683.0 108V133H949.0V158"
+   "path": "M683.0 126V151H949.0V176"
   },
   {
    "from": "ges_tx_0_0",
@@ -522,7 +527,7 @@
    "label": "before 20 weeks",
    "label_at": [
     165.0,
-    276
+    294
    ]
   },
   {
@@ -544,7 +549,7 @@
    "label": "after 20 weeks",
    "label_at": [
     417.0,
-    276
+    294
    ]
   },
   {
@@ -566,7 +571,7 @@
    "label": "+ proteinuria",
    "label_at": [
     697.0,
-    276
+    294
    ]
   },
   {
@@ -588,7 +593,7 @@
    "label": "+ seizures",
    "label_at": [
     949.0,
-    276
+    294
    ]
   },
   {
@@ -610,14 +615,14 @@
    "label": "± hypertension",
    "label_at": [
     1201.0,
-    276
+    294
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 1140,
+   "y": 1462,
    "w": 1276,
    "title": "Severe BP EARLY in pregnancy? think",
    "items": [

@@ -79,33 +79,33 @@
  "bands": [
   {
    "x": 40,
-   "y": 288,
+   "y": 360,
    "w": 250,
-   "h": 726,
+   "h": 814,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 292,
-   "y": 288,
+   "y": 360,
    "w": 250,
-   "h": 726,
+   "h": 814,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 572,
-   "y": 288,
+   "y": 360,
    "w": 250,
-   "h": 726,
+   "h": 814,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 852,
-   "y": 288,
+   "y": 360,
    "w": 250,
-   "h": 726,
+   "h": 814,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -113,20 +113,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 416,
-   "h": 80,
+   "y": 488,
+   "h": 114,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 536,
+   "y": 642,
    "h": 96,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 672,
-   "h": 334,
+   "y": 778,
+   "h": 388,
    "text": "TREATMENT"
   }
  ],
@@ -140,13 +140,15 @@
    "title": "Contractions or fluid before 37 weeks: what has CHANGED, and what does each step buy?",
    "lines": [
     "history: gestational age · previous preterm birth, cone biopsy, smoking · contractions: when, how often, how long · bleeding? leaking fluid? infection?",
-    "exam: Leopold's for presentation · fetal heart rate · cervix: dilatation, consistency"
+    "exam: Leopold's for presentation · fetal heart rate · cervix: dilatation, consistency",
+    "causes: early maternal or fetal HPA axis activation · inflammation, infection · decidual hemorrhage · uterine overdistension · idiopathic",
+    "case: 25 y G3P2 at 29+2 · previous births at 36 + 32 weeks · cone biopsy · smokes 1 pack/day · on vaginal progesterone · contractions every 5–10 min"
    ]
   },
   {
    "id": "g_int",
    "x": 45,
-   "y": 156,
+   "y": 228,
    "w": 492,
    "h": 60,
    "kind": "plain",
@@ -158,7 +160,7 @@
   {
    "id": "g_rom",
    "x": 577,
-   "y": 156,
+   "y": 228,
    "w": 240,
    "h": 60,
    "kind": "plain",
@@ -170,7 +172,7 @@
   {
    "id": "g_imm",
    "x": 857,
-   "y": 156,
+   "y": 228,
    "w": 240,
    "h": 60,
    "kind": "plain",
@@ -182,7 +184,7 @@
   {
    "id": "tptl_head_0_0",
    "x": 45,
-   "y": 296,
+   "y": 368,
    "w": 240,
    "h": 80,
    "kind": "tptl_h",
@@ -194,7 +196,7 @@
   {
    "id": "ptl_head_0_0",
    "x": 297,
-   "y": 296,
+   "y": 368,
    "w": 240,
    "h": 80,
    "kind": "ptl_h",
@@ -206,7 +208,7 @@
   {
    "id": "pprom_head_0_0",
    "x": 577,
-   "y": 296,
+   "y": 368,
    "w": 240,
    "h": 80,
    "kind": "pprom_h",
@@ -218,7 +220,7 @@
   {
    "id": "imm_head_0_0",
    "x": 857,
-   "y": 296,
+   "y": 368,
    "w": 240,
    "h": 80,
    "kind": "imm_h",
@@ -230,9 +232,9 @@
   {
    "id": "tptl_pres_0_0",
    "x": 45,
-   "y": 416,
+   "y": 488,
    "w": 240,
-   "h": 80,
+   "h": 114,
    "kind": "tptl_t",
    "title": "Contractions, cervix NOT changing",
    "lines": [
@@ -242,9 +244,9 @@
   {
    "id": "ptl_pres_0_0",
    "x": 297,
-   "y": 416,
+   "y": 488,
    "w": 240,
-   "h": 80,
+   "h": 114,
    "kind": "ptl_t",
    "title": "Regular contractions + cervical change",
    "lines": [
@@ -254,22 +256,23 @@
   {
    "id": "pprom_pres_0_0",
    "x": 577,
-   "y": 416,
+   "y": 488,
    "w": 240,
-   "h": 80,
+   "h": 114,
    "kind": "pprom_t",
    "title": "Gush of clear fluid",
    "lines": [
     "• risk: preterm birth, chorioamnionitis",
-    "• abruption, cord prolapse"
+    "• abruption, cord prolapse",
+    "• cause: infection, inflammation, mechanical stress, bleeding"
    ]
   },
   {
    "id": "imm_pres_0_0",
    "x": 857,
-   "y": 416,
+   "y": 488,
    "w": 240,
-   "h": 80,
+   "h": 114,
    "kind": "imm_t",
    "title": "Active labour",
    "lines": [
@@ -279,7 +282,7 @@
   {
    "id": "tptl_inv_0_0",
    "x": 45,
-   "y": 536,
+   "y": 642,
    "w": 240,
    "h": 96,
    "kind": "tptl_w",
@@ -291,7 +294,7 @@
   {
    "id": "ptl_inv_0_0",
    "x": 297,
-   "y": 536,
+   "y": 642,
    "w": 240,
    "h": 96,
    "kind": "ptl_w",
@@ -303,7 +306,7 @@
   {
    "id": "pprom_inv_0_0",
    "x": 577,
-   "y": 536,
+   "y": 642,
    "w": 240,
    "h": 96,
    "kind": "pprom_w",
@@ -317,7 +320,7 @@
   {
    "id": "imm_inv_0_0",
    "x": 857,
-   "y": 536,
+   "y": 642,
    "w": 240,
    "h": 96,
    "kind": "imm_w",
@@ -329,9 +332,9 @@
   {
    "id": "tptl_tx_0_0",
    "x": 45,
-   "y": 672,
+   "y": 778,
    "w": 240,
-   "h": 115,
+   "h": 133,
    "kind": "ok",
    "title": "1 · HYDRATE",
    "lines": [
@@ -341,9 +344,9 @@
   {
    "id": "tptl_tx_1_0",
    "x": 45,
-   "y": 809,
+   "y": 933,
    "w": 240,
-   "h": 79,
+   "h": 97,
    "kind": "ok",
    "title": "2 · Treat a UTI",
    "lines": []
@@ -351,9 +354,9 @@
   {
    "id": "tptl_tx_2_0",
    "x": 45,
-   "y": 910,
+   "y": 1052,
    "w": 240,
-   "h": 97,
+   "h": 115,
    "kind": "warn",
    "title": "No response → tocolysis",
    "lines": [
@@ -363,7 +366,7 @@
   {
    "id": "ptl_tx_0_0",
    "x": 297,
-   "y": 672,
+   "y": 778,
    "w": 240,
    "h": 116,
    "kind": "ok",
@@ -377,20 +380,21 @@
   {
    "id": "ptl_tx_1_0",
    "x": 297,
-   "y": 810,
+   "y": 916,
    "w": 240,
-   "h": 114,
+   "h": 168,
    "kind": "ok",
    "title": "2 · STEROIDS if < 34 weeks",
    "lines": [
     "• betamethasone 12 mg intramuscular × 2, 24 h apart",
-    "• surfactant → ↓ respiratory distress syndrome"
+    "• surfactant (type 2 pneumocytes) → ↓ respiratory distress syndrome",
+    "• also ↓ intraventricular hemorrhage, necrotizing enterocolitis, perinatal death"
    ]
   },
   {
    "id": "ptl_tx_2_0",
    "x": 297,
-   "y": 946,
+   "y": 1106,
    "w": 240,
    "h": 60,
    "kind": "ok",
@@ -402,19 +406,20 @@
   {
    "id": "pprom_tx_0_0",
    "x": 577,
-   "y": 672,
+   "y": 778,
    "w": 240,
-   "h": 109,
+   "h": 163,
    "kind": "ok",
    "title": "1 · ANTIBIOTICS prolong the pregnancy",
    "lines": [
-    "longer = better for the baby"
+    "• < 32 weeks untreated: 50% deliver in 48 h, 75% in 7 days",
+    "• antibiotics lengthen latency: longer = better for the baby"
    ]
   },
   {
    "id": "pprom_tx_1_0",
    "x": 577,
-   "y": 803,
+   "y": 963,
    "w": 240,
    "h": 91,
    "kind": "ok",
@@ -424,7 +429,7 @@
   {
    "id": "pprom_tx_2_0",
    "x": 577,
-   "y": 916,
+   "y": 1076,
    "w": 240,
    "h": 91,
    "kind": "warn",
@@ -434,9 +439,9 @@
   {
    "id": "imm_tx_0_0",
    "x": 857,
-   "y": 672,
+   "y": 778,
    "w": 240,
-   "h": 183,
+   "h": 201,
    "kind": "ok",
    "title": "1 · MAGNESIUM SULFATE if < 34 weeks",
    "lines": [
@@ -447,13 +452,13 @@
   {
    "id": "imm_tx_1_0",
    "x": 857,
-   "y": 877,
+   "y": 1001,
    "w": 240,
-   "h": 129,
+   "h": 165,
    "kind": "ok",
    "title": "2 · IV PENICILLIN if GBS + or unknown",
    "lines": [
-    "↓ GBS sepsis in the newborn"
+    "↓ GBS sepsis in the newborn · penicillin first-line if no allergy"
    ]
   }
  ],
@@ -461,17 +466,17 @@
   {
    "from": "root",
    "to": "g_int",
-   "path": "M571.0 106V131H291.0V156"
+   "path": "M571.0 178V203H291.0V228"
   },
   {
    "from": "root",
    "to": "g_rom",
-   "path": "M571.0 106V131H697.0V156"
+   "path": "M571.0 178V203H697.0V228"
   },
   {
    "from": "root",
    "to": "g_imm",
-   "path": "M571.0 106V131H977.0V156"
+   "path": "M571.0 178V203H977.0V228"
   },
   {
    "from": "tptl_tx_0_0",
@@ -520,7 +525,7 @@
    "label": "not changing",
    "label_at": [
     165.0,
-    256
+    328
    ]
   },
   {
@@ -542,7 +547,7 @@
    "label": "dilating",
    "label_at": [
     417.0,
-    256
+    328
    ]
   },
   {
@@ -564,7 +569,7 @@
    "label": "ruptured",
    "label_at": [
     697.0,
-    256
+    328
    ]
   },
   {
@@ -586,21 +591,36 @@
    "label": "imminent",
    "label_at": [
     977.0,
-    256
+    328
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 1040,
-   "w": 1052,
+   "y": 1200,
+   "w": 519,
    "title": "Who is at risk",
    "items": [
     "previous SPONTANEOUS preterm birth",
-    "multiple gestation",
-    "cervical surgery (cone > loop excision)",
-    "short cervix · cervicitis"
+    "multiple gestation · assisted reproduction · age at either extreme",
+    "cervical surgery (cone > loop excision) · uterine malformation, fibroids",
+    "chronic disease (diabetes, hypertension, renal, autoimmune) · connective tissue (Ehlers-Danlos)",
+    "smoking, substances · no prenatal care · non-Hispanic Black (socioeconomic confounders?)",
+    "short cervix · infection, esp cervicitis: gonorrhea, chlamydia, bacterial vaginosis, trichomonas, ureaplasma, mycoplasma"
+   ],
+   "cols": 2
+  },
+  {
+   "x": 578,
+   "y": 1200,
+   "w": 519,
+   "title": "Why preterm birth matters (risk depends on GESTATION)",
+   "items": [
+    "respiratory: respiratory distress syndrome, apnea of prematurity, bronchopulmonary dysplasia",
+    "intraventricular hemorrhage · necrotizing enterocolitis · retinopathy of prematurity",
+    "glucose abnormalities · sepsis · perinatal death",
+    "long NICU stay · high health-system cost"
    ],
    "cols": 2
   }

@@ -79,33 +79,33 @@
  "bands": [
   {
    "x": 40,
-   "y": 324,
+   "y": 342,
    "w": 260,
-   "h": 912,
+   "h": 1222,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 330,
-   "y": 324,
+   "y": 342,
    "w": 260,
-   "h": 912,
+   "h": 1222,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 592,
-   "y": 324,
+   "y": 342,
    "w": 260,
-   "h": 912,
+   "h": 1222,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 882,
-   "y": 324,
+   "y": 342,
    "w": 260,
-   "h": 912,
+   "h": 1222,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -113,20 +113,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 486,
-   "h": 216,
+   "y": 522,
+   "h": 406,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 742,
+   "y": 968,
    "h": 182,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 964,
-   "h": 264,
+   "y": 1190,
+   "h": 366,
    "text": "TREATMENT"
   }
  ],
@@ -140,14 +140,15 @@
    "title": "Bleeding in the 2nd or 3rd trimester: is it PAINFUL, and WHOSE blood is it?",
    "lines": [
     "every one: airway, breathing, circulation for mom (oxygen + intravenous access if unstable) · non-stress test (NST) for the fetus",
-    "stat: complete blood count · international normalized ratio (INR), partial thromboplastin time (PTT), FIBRINOGEN · creatinine · group and screen",
+    "history: placental site from the anatomy scan · previous bleeding · hypertension, autoimmune disease",
+    "stat: complete blood count · international normalized ratio (INR), partial thromboplastin time (PTT), FIBRINOGEN · creatinine · group and screen · ± liver tests (preeclampsia)",
     "rule out first: non-obstetric (hemorrhoids, varices, bladder infection, stones → treat the cause) and LABOUR (a dilating cervix bleeds: 'show')"
    ]
   },
   {
    "id": "g_pain",
    "x": 45,
-   "y": 192,
+   "y": 210,
    "w": 250,
    "h": 60,
    "kind": "plain",
@@ -159,7 +160,7 @@
   {
    "id": "g_painless",
    "x": 335,
-   "y": 192,
+   "y": 210,
    "w": 512,
    "h": 60,
    "kind": "plain",
@@ -171,7 +172,7 @@
   {
    "id": "g_fetal",
    "x": 887,
-   "y": 192,
+   "y": 210,
    "w": 250,
    "h": 60,
    "kind": "plain",
@@ -183,35 +184,36 @@
   {
    "id": "abr_head_0_0",
    "x": 45,
-   "y": 332,
+   "y": 350,
    "w": 250,
-   "h": 114,
+   "h": 132,
    "kind": "abr_h",
    "title": "Placental abruption",
    "lines": [
     "premature separation of the placenta from the uterus",
-    "most at 35–38 weeks, any gestation"
+    "1 in 200–300 · most at 35–38 weeks, any gestation"
    ]
   },
   {
    "id": "prv_head_0_0",
    "x": 335,
-   "y": 332,
+   "y": 350,
    "w": 250,
-   "h": 114,
+   "h": 132,
    "kind": "prv_h",
    "title": "Placenta previa",
    "lines": [
     "implanted over, or within 2 cm of, the internal os",
-    "complete: covers it · marginal: within 2 cm"
+    "complete: covers it · marginal: within 2 cm",
+    "1 in 300 at term"
    ]
   },
   {
    "id": "acc_head_0_0",
    "x": 597,
-   "y": 332,
+   "y": 350,
    "w": 250,
-   "h": 114,
+   "h": 132,
    "kind": "acc_h",
    "title": "Placenta accreta spectrum",
    "lines": [
@@ -222,32 +224,48 @@
   {
    "id": "vas_head_0_0",
    "x": 887,
-   "y": 332,
+   "y": 350,
    "w": 250,
-   "h": 114,
+   "h": 132,
    "kind": "vas_h",
    "title": "Vasa previa",
    "lines": [
-    "unprotected FETAL vessels cross the cervix or lie within 2 cm"
+    "unprotected FETAL vessels cross the cervix or lie within 2 cm",
+    "1 in 2500"
    ]
   },
   {
    "id": "abr_pres_0_0",
    "x": 45,
-   "y": 486,
+   "y": 522,
    "w": 250,
-   "h": 78,
+   "h": 96,
    "kind": "abr_t",
    "title": "Painful active bleeding",
    "lines": [
     "• tender, sometimes RIGID uterus",
-    "• 'unrelenting contractions'"
+    "• 'unrelenting contractions'",
+    "• stable mother + fetus unless severe"
    ]
   },
   {
    "id": "abr_pres_1_0",
+   "x": 45,
+   "y": 640,
+   "w": 250,
+   "h": 150,
+   "kind": "abr_w",
+   "title": "Risk factors",
+   "lines": [
+    "• hypertension · trauma · previous abruption",
+    "• autoimmune · preterm rupture of membranes (PPROM)",
+    "• smoking, cocaine · intrauterine infection"
+   ]
+  },
+  {
+   "id": "abr_pres_2_0",
    "x": 45.0,
-   "y": 586,
+   "y": 812,
    "w": 120.0,
    "h": 116,
    "kind": "abr_w",
@@ -257,9 +275,9 @@
    ]
   },
   {
-   "id": "abr_pres_1_1",
+   "id": "abr_pres_2_1",
    "x": 175.0,
-   "y": 586,
+   "y": 812,
    "w": 120.0,
    "h": 116,
    "kind": "abr_w",
@@ -271,22 +289,23 @@
   {
    "id": "prv_pres_0_0",
    "x": 335,
-   "y": 486,
+   "y": 522,
    "w": 250,
-   "h": 216,
+   "h": 406,
    "kind": "prv_t",
    "title": "PAINLESS bleeding, mild or severe",
    "lines": [
     "• sentinel bleed at 26–28 weeks",
+    "• 30–40% rebleed from then on",
     "• fetus stable unless the mother is not"
    ]
   },
   {
    "id": "acc_pres_0_0",
    "x": 597,
-   "y": 486,
+   "y": 522,
    "w": 250,
-   "h": 216,
+   "h": 406,
    "kind": "acc_t",
    "title": "Bleeding the uterus cannot control",
    "lines": [
@@ -296,9 +315,9 @@
   {
    "id": "vas_pres_0_0",
    "x": 887,
-   "y": 486,
+   "y": 522,
    "w": 250,
-   "h": 97,
+   "h": 192,
    "kind": "vas_t",
    "title": "Small bleed, FETAL DISTRESS",
    "lines": [
@@ -308,9 +327,9 @@
   {
    "id": "vas_pres_1_0",
    "x": 887,
-   "y": 605,
+   "y": 736,
    "w": 250,
-   "h": 97,
+   "h": 192,
    "kind": "vas_w",
    "title": "Known from the scan?",
    "lines": [
@@ -321,9 +340,9 @@
   {
    "id": "abr_inv_0_0",
    "x": 45,
-   "y": 742,
+   "y": 968,
    "w": 250,
-   "h": 70,
+   "h": 61,
    "kind": "abr_t",
    "title": "1 · A diagnosis of EXCLUSION",
    "lines": [
@@ -333,19 +352,19 @@
   {
    "id": "abr_inv_1_0",
    "x": 45,
-   "y": 834,
+   "y": 1051,
    "w": 250,
-   "h": 90,
+   "h": 99,
    "kind": "abr_w",
    "title": "2 · Trauma or fetal distress: Kleihauer-Betke",
    "lines": [
-    "fetal blood in HER circulation"
+    "fetal blood in HER circulation · car crash, fall down stairs"
    ]
   },
   {
    "id": "prv_inv_0_0",
    "x": 335,
-   "y": 742,
+   "y": 968,
    "w": 250,
    "h": 98,
    "kind": "prv_w",
@@ -357,7 +376,7 @@
   {
    "id": "prv_inv_1_0",
    "x": 335,
-   "y": 862,
+   "y": 1088,
    "w": 250,
    "h": 62,
    "kind": "bad",
@@ -367,7 +386,7 @@
   {
    "id": "acc_inv_0_0",
    "x": 597,
-   "y": 742,
+   "y": 968,
    "w": 250,
    "h": 182,
    "kind": "acc_t",
@@ -379,21 +398,21 @@
   {
    "id": "vas_inv_0_0",
    "x": 887,
-   "y": 742,
+   "y": 968,
    "w": 250,
    "h": 182,
    "kind": "vas_t",
    "title": "1 · Apt test",
    "lines": [
-    "fetal blood in the VAGINAL bleed"
+    "fetal blood in the VAGINAL bleed · high concern if known vasa previa or velamentous cord"
    ]
   },
   {
    "id": "abr_tx_0_0",
    "x": 45,
-   "y": 964,
+   "y": 1190,
    "w": 250,
-   "h": 130,
+   "h": 181,
    "kind": "warn",
    "title": "Blood irritates the myometrium",
    "lines": [
@@ -404,9 +423,9 @@
   {
    "id": "abr_tx_1_0",
    "x": 45,
-   "y": 1116,
+   "y": 1393,
    "w": 250,
-   "h": 112,
+   "h": 163,
    "kind": "ok",
    "title": "Deliver or wait by gestation",
    "lines": [
@@ -416,7 +435,7 @@
   {
    "id": "prv_tx_0_0",
    "x": 335,
-   "y": 964,
+   "y": 1190,
    "w": 250,
    "h": 98,
    "kind": "bad",
@@ -428,7 +447,7 @@
   {
    "id": "prv_tx_1_0",
    "x": 335,
-   "y": 1084,
+   "y": 1310,
    "w": 250,
    "h": 62,
    "kind": "ok",
@@ -438,7 +457,7 @@
   {
    "id": "prv_tx_2_0",
    "x": 335,
-   "y": 1168,
+   "y": 1394,
    "w": 250,
    "h": 60,
    "kind": "warn",
@@ -448,11 +467,23 @@
    ]
   },
   {
+   "id": "prv_tx_3_0",
+   "x": 335,
+   "y": 1476,
+   "w": 250,
+   "h": 80,
+   "kind": "warn",
+   "title": "↑ hysterectomy risk post partum",
+   "lines": [
+    "bleeding cannot be controlled"
+   ]
+  },
+  {
    "id": "acc_tx_0_0",
    "x": 597,
-   "y": 964,
+   "y": 1190,
    "w": 250,
-   "h": 264,
+   "h": 366,
    "kind": "bad",
    "title": "Almost always HYSTERECTOMY",
    "lines": [
@@ -462,9 +493,9 @@
   {
    "id": "vas_tx_0_0",
    "x": 887,
-   "y": 964,
+   "y": 1190,
    "w": 250,
-   "h": 264,
+   "h": 366,
    "kind": "warn",
    "title": "Fetal status drives delivery",
    "lines": [
@@ -476,27 +507,32 @@
   {
    "from": "root",
    "to": "g_pain",
-   "path": "M591.0 142V167H170.0V192"
+   "path": "M591.0 160V185H170.0V210"
   },
   {
    "from": "root",
    "to": "g_painless",
-   "path": "M591.0 142V167H591.0V192"
+   "path": "M591.0 160V185H591.0V210"
   },
   {
    "from": "root",
    "to": "g_fetal",
-   "path": "M591.0 142V167H1012.0V192"
+   "path": "M591.0 160V185H1012.0V210"
   },
   {
    "from": "abr_pres_0_0",
    "to": "abr_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "abr_pres_1_0",
+   "to": "abr_pres_2_0",
    "from_dx": -65.0,
    "dashed": true
   },
   {
-   "from": "abr_pres_0_0",
-   "to": "abr_pres_1_1",
+   "from": "abr_pres_1_0",
+   "to": "abr_pres_2_1",
    "from_dx": 65.0,
    "dashed": true
   },
@@ -526,16 +562,20 @@
    "to": "prv_tx_2_0"
   },
   {
+   "from": "prv_tx_2_0",
+   "to": "prv_tx_3_0"
+  },
+  {
    "from": "abr_head_0_0",
    "to": "abr_pres_0_0"
   },
   {
-   "from": "abr_pres_1_0",
+   "from": "abr_pres_2_0",
    "to": "abr_inv_0_0",
    "to_dx": -65.0
   },
   {
-   "from": "abr_pres_1_1",
+   "from": "abr_pres_2_1",
    "to": "abr_inv_0_0",
    "to_dx": 65.0
   },
@@ -550,7 +590,7 @@
    "label": "painful",
    "label_at": [
     170.0,
-    292
+    310
    ]
   },
   {
@@ -572,7 +612,7 @@
    "label": "over or near the os",
    "label_at": [
     460.0,
-    292
+    310
    ]
   },
   {
@@ -594,7 +634,7 @@
    "label": "previous cesarean",
    "label_at": [
     722.0,
-    292
+    310
    ]
   },
   {
@@ -616,14 +656,14 @@
    "label": "fetal distress",
    "label_at": [
     1012.0,
-    292
+    310
    ]
   }
  ],
  "panels": [
   {
    "x": 45,
-   "y": 1262,
+   "y": 1590,
    "w": 1092,
    "title": "Every bleed: mother and fetus, then GESTATION decides",
    "items": [

@@ -97,7 +97,7 @@
  "bands": [
   {
    "x": 40,
-   "y": 388,
+   "y": 424,
    "w": 246,
    "h": 640,
    "fill": "#f4f7ee",
@@ -105,7 +105,7 @@
   },
   {
    "x": 288,
-   "y": 388,
+   "y": 424,
    "w": 246,
    "h": 640,
    "fill": "#fdf4ea",
@@ -113,7 +113,7 @@
   },
   {
    "x": 536,
-   "y": 388,
+   "y": 424,
    "w": 246,
    "h": 640,
    "fill": "#fcf0f6",
@@ -121,7 +121,7 @@
   },
   {
    "x": 784,
-   "y": 388,
+   "y": 424,
    "w": 246,
    "h": 640,
    "fill": "#faf4ee",
@@ -129,7 +129,7 @@
   },
   {
    "x": 1060,
-   "y": 388,
+   "y": 424,
    "w": 246,
    "h": 640,
    "fill": "#eff5fc",
@@ -139,13 +139,13 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 552,
+   "y": 588,
    "h": 232,
    "text": "MEANS → FIRST STEP"
   },
   {
    "x": 23,
-   "y": 824,
+   "y": 860,
    "h": 196,
    "text": "THEN"
   }
@@ -161,27 +161,29 @@
    "lines": [
     "WHO: any ASYMPTOMATIC person with a cervix who has EVER been sexually active, from ≈ AGE 25",
     "SAMPLE: provider-collected (speculum + broom/brush) OR self-collected vaginal swab",
-    "test for high-risk HPV FIRST · cytology (LBC) only triages a positive · inadequate sample → repeat"
+    "test for high-risk HPV FIRST · cytology (LBC) only triages a positive · inadequate sample → repeat",
+    "cervical cancer: Canada 16th diagnosed, 17th death · worldwide 4th + 4th · PREVENTABLE: vaccine + screening"
    ]
   },
   {
    "id": "g_hpv",
    "x": 45,
-   "y": 156,
+   "y": 174,
    "w": 980,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "SCREEN: the HPV result picks the branch",
    "lines": [
-    "HPV is the cause: test for it directly · 16/18 carry the highest cancer risk"
+    "HPV is the cause: test for it directly · 16/18 carry the highest cancer risk",
+    "≥ 75% exposed in a lifetime · sexual, condoms only PARTLY protect · risk: many partners, early onset, high-risk partner, SMOKING"
    ]
   },
   {
    "id": "g_vac",
    "x": 1065,
-   "y": 156,
+   "y": 174,
    "w": 236,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "PREVENT",
    "lines": [
@@ -191,7 +193,7 @@
   {
    "id": "t_neg",
    "x": 45,
-   "y": 256,
+   "y": 292,
    "w": 236,
    "h": 60,
    "kind": "plain",
@@ -201,7 +203,7 @@
   {
    "id": "t_oth",
    "x": 293,
-   "y": 256,
+   "y": 292,
    "w": 484,
    "h": 60,
    "kind": "plain",
@@ -213,7 +215,7 @@
   {
    "id": "t_16",
    "x": 789,
-   "y": 256,
+   "y": 292,
    "w": 236,
    "h": 60,
    "kind": "plain",
@@ -223,7 +225,7 @@
   {
    "id": "neg_head_0_0",
    "x": 45,
-   "y": 396,
+   "y": 432,
    "w": 236,
    "h": 116,
    "kind": "neg_h",
@@ -235,7 +237,7 @@
   {
    "id": "low_head_0_0",
    "x": 293,
-   "y": 396,
+   "y": 432,
    "w": 236,
    "h": 116,
    "kind": "low_h",
@@ -248,7 +250,7 @@
   {
    "id": "high_head_0_0",
    "x": 541,
-   "y": 396,
+   "y": 432,
    "w": 236,
    "h": 116,
    "kind": "high_h",
@@ -260,7 +262,7 @@
   {
    "id": "h16_head_0_0",
    "x": 789,
-   "y": 396,
+   "y": 432,
    "w": 236,
    "h": 116,
    "kind": "h16_h",
@@ -272,7 +274,7 @@
   {
    "id": "vac_head_0_0",
    "x": 1065,
-   "y": 396,
+   "y": 432,
    "w": 236,
    "h": 116,
    "kind": "vac_h",
@@ -284,7 +286,7 @@
   {
    "id": "neg_first_0_0",
    "x": 45,
-   "y": 552,
+   "y": 588,
    "w": 236,
    "h": 104,
    "kind": "neg_t",
@@ -296,7 +298,7 @@
   {
    "id": "neg_first_1_0",
    "x": 45,
-   "y": 678,
+   "y": 714,
    "w": 236,
    "h": 106,
    "kind": "ok",
@@ -308,7 +310,7 @@
   {
    "id": "low_first_0_0",
    "x": 293,
-   "y": 552,
+   "y": 588,
    "w": 236,
    "h": 86,
    "kind": "warn",
@@ -320,7 +322,7 @@
   {
    "id": "low_first_1_0",
    "x": 293,
-   "y": 660,
+   "y": 696,
    "w": 236,
    "h": 124,
    "kind": "low_w",
@@ -334,7 +336,7 @@
   {
    "id": "high_first_0_0",
    "x": 541,
-   "y": 552,
+   "y": 588,
    "w": 236,
    "h": 132,
    "kind": "high_t",
@@ -346,7 +348,7 @@
   {
    "id": "high_first_1_0",
    "x": 541,
-   "y": 706,
+   "y": 742,
    "w": 236,
    "h": 78,
    "kind": "bad",
@@ -356,7 +358,7 @@
   {
    "id": "h16_first_0_0",
    "x": 789,
-   "y": 552,
+   "y": 588,
    "w": 236,
    "h": 87,
    "kind": "h16_t",
@@ -368,7 +370,7 @@
   {
    "id": "h16_first_1_0",
    "x": 789,
-   "y": 661,
+   "y": 697,
    "w": 236,
    "h": 123,
    "kind": "h16_w",
@@ -381,7 +383,7 @@
   {
    "id": "vac_first_0_0",
    "x": 1065,
-   "y": 552,
+   "y": 588,
    "w": 236,
    "h": 96,
    "kind": "vac_t",
@@ -395,7 +397,7 @@
   {
    "id": "vac_first_1_0",
    "x": 1065,
-   "y": 670,
+   "y": 706,
    "w": 236,
    "h": 114,
    "kind": "vac_w",
@@ -410,7 +412,7 @@
   {
    "id": "neg_then_0_0",
    "x": 45,
-   "y": 824,
+   "y": 860,
    "w": 236,
    "h": 196,
    "kind": "neg_w",
@@ -422,7 +424,7 @@
   {
    "id": "low_then_0_0",
    "x": 293,
-   "y": 824,
+   "y": 860,
    "w": 236,
    "h": 96,
    "kind": "low_w",
@@ -435,7 +437,7 @@
   {
    "id": "low_then_1_0",
    "x": 293.0,
-   "y": 942,
+   "y": 978,
    "w": 113.0,
    "h": 78,
    "kind": "ok",
@@ -447,7 +449,7 @@
   {
    "id": "low_then_1_1",
    "x": 416.0,
-   "y": 942,
+   "y": 978,
    "w": 113.0,
    "h": 78,
    "kind": "bad",
@@ -459,7 +461,7 @@
   {
    "id": "high_then_0_0",
    "x": 541,
-   "y": 824,
+   "y": 860,
    "w": 236,
    "h": 196,
    "kind": "ok",
@@ -471,7 +473,7 @@
   {
    "id": "h16_then_0_0",
    "x": 789,
-   "y": 824,
+   "y": 860,
    "w": 236,
    "h": 196,
    "kind": "bad",
@@ -481,7 +483,7 @@
   {
    "id": "vac_then_0_0",
    "x": 1065,
-   "y": 824,
+   "y": 860,
    "w": 236,
    "h": 196,
    "kind": "bad",
@@ -496,12 +498,12 @@
   {
    "from": "root",
    "to": "g_hpv",
-   "path": "M673.0 106V131H535.0V156"
+   "path": "M673.0 124V149H535.0V174"
   },
   {
    "from": "root",
    "to": "g_vac",
-   "path": "M673.0 106V131H1183.0V156"
+   "path": "M673.0 124V149H1183.0V174"
   },
   {
    "from": "g_hpv",
@@ -576,7 +578,7 @@
    "label": "NILM · ASC-US · LSIL",
    "label_at": [
     411.0,
-    356
+    392
    ]
   },
   {
@@ -594,7 +596,7 @@
    "label": "ASC-H · HSIL · AGC · AIS",
    "label_at": [
     659.0,
-    356
+    392
    ]
   },
   {
@@ -627,38 +629,40 @@
  "panels": [
   {
    "x": 45,
-   "y": 1054,
+   "y": 1090,
    "w": 409,
    "title": "Taking the sample",
    "items": [
     "ThinPrep: do NOT leave the broom in the vial · SurePath: may be left",
     "label: full name, date of birth, collection date · expired vial = rejected",
     "self-collected: for UNDER- + NEVER-screened; HPV test sensitive enough on vaginal cells",
-    "not for symptomatic people · include the transformation zone"
+    "not for symptomatic people · include the transformation zone",
+    "speculum: lukewarm WATER · gel only water-based, sparingly"
    ],
    "cols": 1
   },
   {
    "x": 468,
-   "y": 1054,
+   "y": 1090,
    "w": 409,
    "title": "Reading the reflex cytology",
    "items": [
     "LOW grade → repeat in 1 year: NILM (95% of results) · ASC-US · LSIL",
     "HIGH grade → colposcopy: HSIL · ASC-H · squamous cell carcinoma",
-    "GLANDULAR → colposcopy: AGC · AIS"
+    "GLANDULAR → colposcopy: AIS · atypical glandular, endocervical or endometrial cells"
    ],
    "cols": 1
   },
   {
    "x": 892,
-   "y": 1054,
+   "y": 1090,
    "w": 409,
    "title": "Why HPV first, cytology second",
    "items": [
     "HPV more SENSITIVE: finds high-grade lesions earlier → 5-year interval",
     "BUT lower positive predictive value: HPV + ≠ a lesion, so cytology triages",
-    "low-risk HPV 6, 11 = warts + LSIL, NOT cancer"
+    "vaccinated population: less disease → cytology PPV falls further",
+    "oncogenic 16, 18, the 30s, 45: LSIL or HSIL · low-risk 6, 11 = warts + LSIL, NOT cancer"
    ],
    "cols": 1
   }

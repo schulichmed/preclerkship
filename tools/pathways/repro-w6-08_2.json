@@ -99,7 +99,7 @@
    "x": 40,
    "y": 270,
    "w": 250,
-   "h": 1022,
+   "h": 1216,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -107,7 +107,7 @@
    "x": 292,
    "y": 270,
    "w": 250,
-   "h": 1022,
+   "h": 1216,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -115,7 +115,7 @@
    "x": 544,
    "y": 270,
    "w": 250,
-   "h": 1022,
+   "h": 1216,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -123,7 +123,7 @@
    "x": 824,
    "y": 270,
    "w": 250,
-   "h": 1022,
+   "h": 1216,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -131,7 +131,7 @@
    "x": 1076,
    "y": 270,
    "w": 250,
-   "h": 1022,
+   "h": 1216,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   }
@@ -139,20 +139,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 416,
-   "h": 216,
+   "y": 486,
+   "h": 342,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 672,
-   "h": 356,
+   "y": 868,
+   "h": 336,
    "text": "ASSESS"
   },
   {
    "x": 23,
-   "y": 1068,
-   "h": 216,
+   "y": 1244,
+   "h": 234,
    "text": "TREATMENT"
   }
  ],
@@ -195,11 +195,11 @@
    "x": 45,
    "y": 278,
    "w": 240,
-   "h": 98,
+   "h": 168,
    "kind": "blues_h",
    "title": "Postpartum blues",
    "lines": [
-    "very common: life change + hormones"
+    "up to 85% · life change + hormones"
    ]
   },
   {
@@ -207,11 +207,12 @@
    "x": 297,
    "y": 278,
    "w": 240,
-   "h": 98,
+   "h": 168,
    "kind": "ppd_h",
    "title": "Postpartum depression",
    "lines": [
-    "major depression within 6 months of delivery"
+    "10–20% · major depression within 6 months of delivery",
+    "MSIGECAPS: mood, sleep, interest, guilt, energy, concentration, appetite, psychomotor, suicidal"
    ]
   },
   {
@@ -219,11 +220,11 @@
    "x": 549,
    "y": 278,
    "w": 240,
-   "h": 98,
+   "h": 168,
    "kind": "psy_h",
    "title": "Postpartum psychosis",
    "lines": [
-    "rare, often with another mood disorder"
+    "1–4 per 1000 · often with another mood disorder"
    ]
   },
   {
@@ -231,7 +232,7 @@
    "x": 829,
    "y": 278,
    "w": 240,
-   "h": 98,
+   "h": 168,
    "kind": "dpph_h",
    "title": "Delayed postpartum hemorrhage",
    "lines": [
@@ -243,21 +244,23 @@
    "x": 1081,
    "y": 278,
    "w": 240,
-   "h": 98,
+   "h": 168,
    "kind": "inf_h",
    "title": "Puerperal infection",
    "lines": [
-    "temperature > 38.0 °C on any 2 of the first 10 days, NOT counting the first 24 h"
+    "temperature > 38.0 °C on any 2 of the first 10 days, NOT counting the first 24 h",
+    "oral, at least 4 times a day",
+    "the COMMONEST postpartum complication · 4% of maternal deaths worldwide"
    ]
   },
   {
    "id": "blues_clue_0_0",
    "x": 45,
-   "y": 416,
+   "y": 486,
    "w": 240,
-   "h": 216,
+   "h": 342,
    "kind": "blues_t",
-   "title": "Onset day 3–10",
+   "title": "Onset day 3–10, peak day 2–4",
    "lines": [
     "• weepy, labile mood",
     "• insomnia, poor concentration",
@@ -267,7 +270,7 @@
   {
    "id": "ppd_clue_0_0",
    "x": 297,
-   "y": 416,
+   "y": 486,
    "w": 240,
    "h": 134,
    "kind": "ppd_t",
@@ -280,21 +283,24 @@
   {
    "id": "ppd_clue_1_0",
    "x": 297,
-   "y": 572,
+   "y": 642,
    "w": 240,
-   "h": 60,
+   "h": 186,
    "kind": "ppd_w",
-   "title": "Highest risk",
+   "title": "Risk factors",
    "lines": [
-    "previous depression: 30% recur"
+    "• previous depression: 30% recur",
+    "• stress: NICU baby, stillbirth, conflict, feeding trouble",
+    "• poor support · age < 25 · single · family history",
+    "• partner violence · unwanted pregnancy · perinatal anxiety, poor sleep"
    ]
   },
   {
    "id": "psy_clue_0_0",
    "x": 549,
-   "y": 416,
+   "y": 486,
    "w": 240,
-   "h": 216,
+   "h": 342,
    "kind": "psy_t",
    "title": "Cannot tell real from unreal",
    "lines": []
@@ -302,9 +308,9 @@
   {
    "id": "dpph_clue_0_0",
    "x": 829,
-   "y": 416,
+   "y": 486,
    "w": 240,
-   "h": 216,
+   "h": 342,
    "kind": "dpph_t",
    "title": "Bright red bleeding RETURNS",
    "lines": [
@@ -314,23 +320,24 @@
   {
    "id": "inf_clue_0_0",
    "x": 1081,
-   "y": 416,
+   "y": 486,
    "w": 240,
-   "h": 216,
+   "h": 342,
    "kind": "inf_t",
    "title": "Find the SOURCE",
    "lines": [
-    "• uterus (endometritis), urine, wound or tear",
-    "• breast, kidney, lungs, pelvic veins",
+    "• uterus (endometritis), urine (catheter, atony), wound or tear",
+    "• breast, kidney, pelvic veins (thrombophlebitis)",
+    "• lungs: atelectasis, aspiration, pneumonia",
     "• necrotizing fasciitis: day 3–5"
    ]
   },
   {
    "id": "blues_inv_0_0",
    "x": 45,
-   "y": 672,
+   "y": 868,
    "w": 240,
-   "h": 356,
+   "h": 336,
    "kind": "blues_w",
    "title": "Watch the clock",
    "lines": [
@@ -340,7 +347,7 @@
   {
    "id": "ppd_inv_0_0",
    "x": 297,
-   "y": 672,
+   "y": 868,
    "w": 240,
    "h": 98,
    "kind": "ppd_t",
@@ -352,7 +359,7 @@
   {
    "id": "ppd_inv_1_0",
    "x": 297,
-   "y": 792,
+   "y": 988,
    "w": 240,
    "h": 98,
    "kind": "bad",
@@ -363,34 +370,23 @@
   },
   {
    "id": "ppd_inv_2_0",
-   "x": 297.0,
-   "y": 912,
-   "w": 115.0,
-   "h": 116,
+   "x": 297,
+   "y": 1108,
+   "w": 240,
+   "h": 96,
    "kind": "ppd_w",
-   "title": "3 · EPDS 10–12",
+   "title": "3 · EPDS total",
    "lines": [
-    "monitor, support, educate"
-   ]
-  },
-  {
-   "id": "ppd_inv_2_1",
-   "x": 422.0,
-   "y": 912,
-   "w": 115.0,
-   "h": 116,
-   "kind": "ppd_w",
-   "title": "EPDS > 12",
-   "lines": [
-    "full biopsychosocial assessment"
+    "• 10–12: monitor, support, educate",
+    "• > 12: full biopsychosocial assessment"
    ]
   },
   {
    "id": "psy_inv_0_0",
    "x": 549,
-   "y": 672,
+   "y": 868,
    "w": 240,
-   "h": 356,
+   "h": 336,
    "kind": "psy_w",
    "title": "Highest risk",
    "lines": [
@@ -402,9 +398,9 @@
   {
    "id": "dpph_inv_0_0",
    "x": 829,
-   "y": 672,
+   "y": 868,
    "w": 240,
-   "h": 167,
+   "h": 157,
    "kind": "dpph_t",
    "title": "1 · Ultrasound",
    "lines": [
@@ -414,9 +410,9 @@
   {
    "id": "dpph_inv_1_0",
    "x": 829,
-   "y": 861,
+   "y": 1047,
    "w": 240,
-   "h": 167,
+   "h": 157,
    "kind": "dpph_w",
    "title": "Otherwise",
    "lines": [
@@ -427,33 +423,36 @@
   {
    "id": "inf_inv_0_0",
    "x": 1081,
-   "y": 672,
+   "y": 868,
    "w": 240,
-   "h": 186,
+   "h": 185,
    "kind": "inf_w",
    "title": "Endometritis: most after CESAREAN",
    "lines": [
-    "also long labour or rupture of membranes, manual placenta removal"
+    "• urgent C/S 30% · elective 7% · vaginal 3%",
+    "• long labour or rupture of membranes, many cervical exams, internal monitoring, manual placenta removal"
    ]
   },
   {
    "id": "inf_inv_1_0",
    "x": 1081,
-   "y": 880,
+   "y": 1075,
    "w": 240,
-   "h": 148,
+   "h": 129,
    "kind": "bad",
    "title": "Can kill",
    "lines": [
-    "Clostridium sordellii or perfringens, toxic shock syndrome"
+    "• Clostridium sordellii: toxic shock-like",
+    "• Clostridium perfringens: necrotizing endomyometritis",
+    "• strep or staph toxic shock syndrome"
    ]
   },
   {
    "id": "blues_tx_0_0",
    "x": 45,
-   "y": 1068,
+   "y": 1244,
    "w": 240,
-   "h": 216,
+   "h": 234,
    "kind": "ok",
    "title": "None, or supportive",
    "lines": [
@@ -463,9 +462,9 @@
   {
    "id": "ppd_tx_0_0",
    "x": 297,
-   "y": 1068,
+   "y": 1244,
    "w": 240,
-   "h": 216,
+   "h": 234,
    "kind": "ok",
    "title": "Treat",
    "lines": [
@@ -477,9 +476,9 @@
   {
    "id": "psy_tx_0_0",
    "x": 549,
-   "y": 1068,
+   "y": 1244,
    "w": 240,
-   "h": 216,
+   "h": 234,
    "kind": "bad",
    "title": "Could harm the baby",
    "lines": [
@@ -489,9 +488,9 @@
   {
    "id": "dpph_tx_0_0",
    "x": 829,
-   "y": 1068,
+   "y": 1244,
    "w": 240,
-   "h": 79,
+   "h": 88,
    "kind": "ok",
    "title": "1 · Antibiotics",
    "lines": []
@@ -499,9 +498,9 @@
   {
    "id": "dpph_tx_1_0",
    "x": 829,
-   "y": 1169,
+   "y": 1354,
    "w": 240,
-   "h": 115,
+   "h": 124,
    "kind": "ok",
    "title": "2 · Tissue present",
    "lines": [
@@ -511,26 +510,26 @@
   {
    "id": "inf_tx_0_0",
    "x": 1081,
-   "y": 1068,
+   "y": 1244,
    "w": 240,
    "h": 78,
    "kind": "bad",
    "title": "1 · SEPTIC",
    "lines": [
-    "intravenous (IV) clindamycin + gentamicin"
+    "IV clindamycin 900 mg every 8 h + gentamicin 5 mg/kg every 24–48 h"
    ]
   },
   {
    "id": "inf_tx_1_0",
    "x": 1081,
-   "y": 1168,
+   "y": 1344,
    "w": 240,
-   "h": 116,
+   "h": 134,
    "kind": "ok",
    "title": "2 · Endometritis, by mouth, 7–10 days",
    "lines": [
     "• amoxicillin-clavulanate 875 mg twice daily",
-    "• or cephalexin + metronidazole"
+    "• or cephalexin 500 mg 4 times daily + metronidazole 500 mg twice daily"
    ]
   }
  ],
@@ -555,13 +554,7 @@
   },
   {
    "from": "ppd_inv_1_0",
-   "to": "ppd_inv_2_0",
-   "from_dx": -62.5
-  },
-  {
-   "from": "ppd_inv_1_0",
-   "to": "ppd_inv_2_1",
-   "from_dx": 62.5
+   "to": "ppd_inv_2_0"
   },
   {
    "from": "dpph_inv_0_0",
@@ -611,13 +604,7 @@
   },
   {
    "from": "ppd_inv_2_0",
-   "to": "ppd_tx_0_0",
-   "to_dx": -62.5
-  },
-  {
-   "from": "ppd_inv_2_1",
-   "to": "ppd_tx_0_0",
-   "to_dx": 62.5
+   "to": "ppd_tx_0_0"
   },
   {
    "from": "g_mood",
@@ -699,27 +686,30 @@
  "panels": [
   {
    "x": 45,
-   "y": 1318,
+   "y": 1512,
    "w": 631,
    "title": "Back to baseline: the normal timetable",
    "items": [
-    "lochia for up to 56 days (rubra → serosa → alba) · uterus back to non-pregnant size by 4 weeks",
+    "uterus: cervix reforms in 1 week (50% of HSIL regress) · corpus non-pregnant size by 4 weeks · endometrium 3 weeks · placental site 6 weeks · lochia up to 56 days (rubra → serosa → alba)",
+    "urinary: diuresis day 2–5 · ureters normal by 2–8 weeks · normal voiding by 3 months · blood: volume normal by 1 week, cardiac output ↑ for 48 h, heart normal by 2 weeks",
+    "breasts: colostrum day 2 to ~4 · milk from day 3–5 · weight: −5–6 kg at birth, −2–3 kg diuresis, most back to baseline by 6 months · hypoestrogenic state",
     "ovulation can come BEFORE the first period: lactational amenorrhea is NOT contraception · not breastfeeding: ovulation and menses at ~6–8 weeks",
-    "contraception from 6 weeks · NO estrogen before 21 days (clot risk)",
+    "contraception from 6 weeks · NO estrogen before 21 days (clot risk); estrogen may ↓ milk (debated)",
     "pelvic floor physiotherapy for EVERY patient, from 6 weeks"
    ],
    "cols": 1
   },
   {
    "x": 690,
-   "y": 1318,
+   "y": 1512,
    "w": 631,
    "title": "Clots, sleep and going home",
    "items": [
-    "venous thromboembolism: greatest risk POSTPARTUM (deep vein thrombosis, pulmonary embolism, septic pelvic thrombophlebitis) → low-molecular-weight heparin",
-    "insomnia: sleep hygiene first · cognitive behavioural therapy if persistent · rule out a mood disorder",
-    "home before 48 h: check bleeding, bowel, bladder, baby care · NOT with preeclampsia, postpartum hemorrhage, fever or an unstable condition",
-    "perineum: clean, dry, sitz baths · NO rectal medicines after a 3rd or 4th degree tear"
+    "venous thromboembolism: 0.5–3 per 1000, greatest risk POSTPARTUM, 9% of maternal deaths (deep vein thrombosis, pulmonary embolism, septic pelvic thrombophlebitis) → low-molecular-weight heparin",
+    "insomnia: night feeds, stress, night light, low estrogen · sleep hygiene first (no caffeine, alcohol, screens 1–2 h before bed) · cognitive behavioural therapy if persistent · rule out a mood disorder",
+    "stay: vaginal 1–2 days, C/S 2–3 days · early (2–6 h minimum) only with community follow-up",
+    "home before 48 h: check bleeding, bowel, bladder, baby care · RhIg + MMR given · NOT with preeclampsia, postpartum hemorrhage, fever or an unstable condition",
+    "perineum: clean, dry, sitz baths, peri bottle · infected tear opens, heals by secondary intention · constipation: fibre, fluids, laxatives · NO rectal medicines after a 3rd or 4th degree tear"
    ],
    "cols": 1
   }

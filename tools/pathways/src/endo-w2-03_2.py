@@ -42,10 +42,10 @@ COLS = list(COLOURS)
 COLUMN = {
  "prim": {
   "head": [[("h", "Primary hypothyroidism", ["TSH ↑ · FT4 ↓", "commonest: HASHIMOTO's"])]],
-  "clue": [[("t", "Hashimoto's thyroiditis", ["female · family history of autoimmune disease · iodine load", "~symptoms variable, signs not sensitive"])],
+  "clue": [[("t", "Hashimoto's thyroiditis", ["female · family history of autoimmune disease · iodine load", "~symptoms variable, signs not sensitive: goiter, slow pulse, hung reflexes"])],
            [("w", "Other causes", ["drugs: lithium, amiodarone · surgery or radioactive iodine"])],
            [("w", "No treatment history, no pituitary risk", ["→ you may simply ASSUME Hashimoto's"])]],
-  "inv": [[("t", "CONFIRM: repeat ↑TSH + ↓FT4", ["free T3 not needed"])],
+  "inv": [[("t", "CONFIRM: repeat ↑TSH + ↓FT4", ["free T3 not needed", "case: type 1 diabetes, tired, +10 lb · pulse 56, BP 106/92 · rubbery goiter · hung reflexes · TSH 84, FT4 4"])],
           [("warn", "Leave these alone", ["anti-TPO, anti-thyroglobulin: rarely change decisions · ultrasound: only for a nodule felt on exam"])]],
   "tx": [[("ok", "Levothyroxine once daily", ["about 1.5 mcg/kg/day, titrated to a normal TSH", "start LOW if elderly or heart disease"])],
          [("w", "Half-life 1 WEEK", ["TSH every 4–6 weeks until normal · don't follow FT4/FT3 on replacement"])],
@@ -68,15 +68,15 @@ COLUMN = {
   "tx": [[("ok", "Levothyroxine, dosed on FREE T4", ["~pituitary lecture: replace the adrenal axis first"])]],
  },
  "gr": {
-  "head": [[("h", "Graves disease", ["the COMMONEST cause", "TSH-receptor antibodies drive it"])]],
+  "head": [[("h", "Graves disease", ["the COMMONEST cause", "TSH-receptor antibodies drive it", "also TSH-receptor driven: pregnancy (hCG)"])]],
   "clue": [[("t", "Risk factors", ["female · age ~30–50 · family history of autoimmune (esp. thyroid) · iodine load"])],
            [("w", "Acute or subacute", ["new neck mass"]), ("w", "SYMMETRIC goiter", [])],
-           [("w", "Graves only: orbitopathy, dermopathy", ["proptosis, periorbital edema, diplopia · VISUAL LOSS = ocular emergency · SMOKING the major risk"])]],
+           [("w", "Graves only: orbitopathy, dermopathy", ["proptosis, periorbital edema, diplopia · VISUAL LOSS = ocular emergency · SMOKING the major risk", "retro-orbital tissue + muscles swell: inflammation, glycosaminoglycans, fat"])]],
   "inv": [[("t", "TSH receptor antibody (TRAb)", ["sensitive AND specific · a blood test · not covered by OHIP"])],
           [("w", "RAI uptake + scan", ["DIFFUSE high uptake"])]],
   "tx": [[("ok", "Methimazole FIRST line", ["Graves can REMIT · ~4–6 weeks to euthyroid · favoured over PTU"])],
          [("warn", "Methimazole risks (rare)", ["agranulocytosis · liver dysfunction · drug-induced lupus · birth defects"])],
-         [("w", "No remission → RAI", ["may worsen eye disease"]), ("w", "Surgery", ["total thyroid-ectomy, rarely"])]],
+         [("w", "No remission → RAI", ["may worsen eye disease, esp. SMOKERS"]), ("w", "Surgery", ["total thyroid-ectomy, rarely"])]],
  },
  "nod": {
   "head": [[("h", "Toxic adenoma / multinodular goiter", ["autonomous nodule(s)", "TMNG = toxic multinodular goiter"])]],
@@ -279,7 +279,8 @@ spec = {
   {"x": round(XS[0] + 2 * third + 28), "y": py, "w": round(third), "title": "Iodine cuts both ways", "items": [
       "Wolff-Chaikoff: a normal gland CUTS production under an iodine load, then escapes",
       "subclinical Hashimoto's may not escape → HYPOthyroid",
-      "Jod-Basedow: autonomous nodules or mild Graves use the iodine → HYPERthyroid"]}],
+      "Jod-Basedow: autonomous nodules or mild Graves use the iodine → HYPERthyroid",
+      "case: rapid atrial fibrillation 2 days after cardiac catheterization · diffuse goiter · TSH < 0.01, FT4 75, FT3 11 · uptake SUPPRESSED (2%)"]}],
 }
 Path(sys.argv[1]).write_text(json.dumps(spec, indent=1, ensure_ascii=False), encoding="utf-8")
 print("wrote", sys.argv[1], len(nodes), "nodes, width", W)

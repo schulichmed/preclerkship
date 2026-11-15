@@ -135,7 +135,7 @@
    "x": 40,
    "y": 390,
    "w": 224,
-   "h": 1058,
+   "h": 1290,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -143,7 +143,7 @@
    "x": 266,
    "y": 390,
    "w": 224,
-   "h": 1058,
+   "h": 1290,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -151,7 +151,7 @@
    "x": 492,
    "y": 390,
    "w": 224,
-   "h": 1058,
+   "h": 1290,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -159,7 +159,7 @@
    "x": 746,
    "y": 390,
    "w": 224,
-   "h": 1058,
+   "h": 1290,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -167,7 +167,7 @@
    "x": 972,
    "y": 390,
    "w": 224,
-   "h": 1058,
+   "h": 1290,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
@@ -175,7 +175,7 @@
    "x": 1198,
    "y": 390,
    "w": 224,
-   "h": 1058,
+   "h": 1290,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
@@ -183,7 +183,7 @@
    "x": 1452,
    "y": 390,
    "w": 224,
-   "h": 1058,
+   "h": 1290,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -191,19 +191,19 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 554,
-   "h": 252,
+   "y": 590,
+   "h": 324,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 846,
-   "h": 200,
+   "y": 954,
+   "h": 324,
    "text": "TEST / SCREEN"
   },
   {
    "x": 23,
-   "y": 1086,
+   "y": 1318,
    "h": 354,
    "text": "TREAT / PREVENT"
   }
@@ -273,11 +273,12 @@
    "x": 45,
    "y": 398,
    "w": 214,
-   "h": 116,
+   "h": 152,
    "kind": "dka_h",
    "title": "Diabetic ketoacidosis (DKA)",
    "lines": [
     "type 1, younger · over HOURS",
+    "NO insulin → fat breaks down → ketones, acid",
     "children: CEREBRAL EDEMA risk"
    ]
   },
@@ -286,11 +287,12 @@
    "x": 271,
    "y": 398,
    "w": 214,
-   "h": 116,
+   "h": 152,
    "kind": "hhs_h",
    "title": "Hyperosmolar hyperglycemic state (HHS)",
    "lines": [
-    "type 2, older · over DAYS"
+    "type 2, older · over DAYS",
+    "SOME insulin: blocks ketones, not hyperglycemia"
    ]
   },
   {
@@ -298,7 +300,7 @@
    "x": 497,
    "y": 398,
    "w": 214,
-   "h": 116,
+   "h": 152,
    "kind": "hypo_h",
    "title": "Hypoglycemia",
    "lines": [
@@ -310,7 +312,7 @@
    "x": 751,
    "y": 398,
    "w": 214,
-   "h": 116,
+   "h": 152,
    "kind": "ret_h",
    "title": "Retinopathy",
    "lines": [
@@ -322,11 +324,12 @@
    "x": 977,
    "y": 398,
    "w": 214,
-   "h": 116,
+   "h": 152,
    "kind": "neph_h",
    "title": "Nephropathy",
    "lines": [
-    "leading cause of kidney failure"
+    "leading cause of kidney failure",
+    "thick basement membrane, matrix → fibrosis"
    ]
   },
   {
@@ -334,7 +337,7 @@
    "x": 1203,
    "y": 398,
    "w": 214,
-   "h": 116,
+   "h": 152,
    "kind": "neur_h",
    "title": "Neuropathy",
    "lines": [
@@ -346,7 +349,7 @@
    "x": 1457,
    "y": 398,
    "w": 214,
-   "h": 116,
+   "h": 152,
    "kind": "mac_h",
    "title": "Heart attack · stroke · peripheral vascular disease",
    "lines": [
@@ -356,7 +359,7 @@
   {
    "id": "dka_pres_0_0",
    "x": 45,
-   "y": 554,
+   "y": 590,
    "w": 214,
    "h": 97,
    "kind": "dka_t",
@@ -370,22 +373,24 @@
   {
    "id": "dka_pres_1_0",
    "x": 45,
-   "y": 673,
+   "y": 709,
    "w": 214,
-   "h": 133,
+   "h": 205,
    "kind": "dka_w",
    "title": "Why now?",
    "lines": [
-    "• new type 1, missed or rationed insulin",
+    "• new type 1, missed or rationed insulin, pump failure",
+    "• insulin WITHHELD for weight control",
+    "• illness: gastroenteritis, MI, stroke, sepsis, pancreatitis",
     "• steroids, sodium-glucose cotransporter 2 (SGLT2) inhibitors, cocaine"
    ]
   },
   {
    "id": "hhs_pres_0_0",
    "x": 271,
-   "y": 554,
+   "y": 590,
    "w": 214,
-   "h": 115,
+   "h": 142,
    "kind": "hhs_t",
    "title": "Lethargy → obtundation",
    "lines": [
@@ -397,22 +402,23 @@
   {
    "id": "hhs_pres_1_0",
    "x": 271,
-   "y": 691,
+   "y": 754,
    "w": 214,
-   "h": 115,
+   "h": 160,
    "kind": "hhs_w",
    "title": "Why now?",
    "lines": [
     "• illness: gastroenteritis, sepsis, heart attack, stroke",
+    "• surgery, trauma, thyrotoxicosis",
     "• steroids, missed doses"
    ]
   },
   {
    "id": "hypo_pres_0_0",
    "x": 497,
-   "y": 554,
+   "y": 590,
    "w": 214,
-   "h": 115,
+   "h": 151,
    "kind": "hypo_t",
    "title": "EARLY: adrenaline surge",
    "lines": [
@@ -423,9 +429,9 @@
   {
    "id": "hypo_pres_1_0",
    "x": 497,
-   "y": 691,
+   "y": 763,
    "w": 214,
-   "h": 115,
+   "h": 151,
    "kind": "bad",
    "title": "LATE: the brain is starved",
    "lines": [
@@ -436,23 +442,23 @@
   {
    "id": "ret_pres_0_0",
    "x": 751,
-   "y": 554,
+   "y": 590,
    "w": 214,
-   "h": 252,
+   "h": 324,
    "kind": "ret_t",
    "title": "Stage on the retina",
    "lines": [
-    "• background: dots, microaneurysms",
-    "• pre-proliferative: cotton wool, exudates, macular edema",
-    "• PROLIFERATIVE: new fragile vessels"
+    "• background: dots, microaneurysms (can IMPROVE)",
+    "• pre-proliferative: cotton wool infarcts, lipid exudates, macular edema",
+    "• PROLIFERATIVE: new fragile vessels, vitreous bleed: THREATENS vision"
    ]
   },
   {
    "id": "neph_pres_0_0",
    "x": 977,
-   "y": 554,
+   "y": 590,
    "w": 214,
-   "h": 252,
+   "h": 324,
    "kind": "neph_t",
    "title": "Silent: albumin leaks first",
    "lines": [
@@ -463,37 +469,38 @@
   {
    "id": "neur_pres_0_0",
    "x": 1203,
-   "y": 554,
+   "y": 590,
    "w": 214,
-   "h": 116,
+   "h": 170,
    "kind": "neur_t",
    "title": "Numb, tingling, burning feet",
    "lines": [
     "• glove and stocking",
     "• proprioception lost EARLY",
-    "• pain wakes them at night"
+    "• pain wakes them at night",
+    "• no protective sensation → ulcer, infection, amputation, CHARCOT foot (rocker bottom)"
    ]
   },
   {
    "id": "neur_pres_1_0",
    "x": 1203,
-   "y": 692,
+   "y": 782,
    "w": 214,
-   "h": 114,
+   "h": 132,
    "kind": "neur_w",
    "title": "Other kinds",
    "lines": [
     "• autonomic: gastroparesis, erectile dysfunction",
-    "• cranial: 3rd nerve palsy",
+    "• cranial: 3rd nerve palsy (most common), Bell's palsy",
     "• amyotrophy: proximal wasting"
    ]
   },
   {
    "id": "mac_pres_0_0",
    "x": 1457,
-   "y": 554,
+   "y": 590,
    "w": 214,
-   "h": 252,
+   "h": 324,
    "kind": "mac_t",
    "title": "Ask EVERY visit",
    "lines": [
@@ -505,35 +512,38 @@
   {
    "id": "dka_inv_0_0",
    "x": 45,
-   "y": 846,
+   "y": 954,
    "w": 214,
-   "h": 97,
+   "h": 186,
    "kind": "dka_t",
    "title": "1 · Venous gas + ketones",
    "lines": [
     "• pH ≤ 7.3, bicarbonate < 18",
     "• anion gap > 12: follow it",
-    "• glucose usually > 15"
+    "• glucose usually > 15 (not always)",
+    "• creatinine ↑ (dehydrated) · osmolality mildly ↑",
+    "case: 22 y · Na 130 · K 3.2 · HCO3 10 · glucose 25"
    ]
   },
   {
    "id": "dka_inv_1_0",
    "x": 45,
-   "y": 965,
+   "y": 1162,
    "w": 214,
-   "h": 81,
+   "h": 116,
    "kind": "dka_w",
    "title": "2 · Potassium normal or LOW",
    "lines": [
-    "the body's store is EMPTY"
+    "the body's store is EMPTY",
+    "sodium looks LOW: correct it for the glucose"
    ]
   },
   {
    "id": "hhs_inv_0_0",
    "x": 271,
-   "y": 846,
+   "y": 954,
    "w": 214,
-   "h": 98,
+   "h": 142,
    "kind": "hhs_t",
    "title": "1 · Glucose > 30 · osmolality > 320",
    "lines": [
@@ -544,21 +554,22 @@
   {
    "id": "hhs_inv_1_0",
    "x": 271,
-   "y": 966,
+   "y": 1118,
    "w": 214,
-   "h": 80,
+   "h": 160,
    "kind": "hhs_w",
    "title": "2 · Potassium usually normal",
    "lines": [
-    "HIGH if the kidneys fail"
+    "HIGH if the kidneys fail",
+    "sodium may be LOW · creatinine ↑"
    ]
   },
   {
    "id": "hypo_inv_0_0",
    "x": 497,
-   "y": 846,
+   "y": 954,
    "w": 214,
-   "h": 200,
+   "h": 324,
    "kind": "hypo_w",
    "title": "Find the cause",
    "lines": [
@@ -569,9 +580,9 @@
   {
    "id": "ret_inv_0_0",
    "x": 751,
-   "y": 846,
+   "y": 954,
    "w": 214,
-   "h": 200,
+   "h": 324,
    "kind": "ret_w",
    "title": "Eye exam EVERY YEAR",
    "lines": [
@@ -581,9 +592,9 @@
   {
    "id": "neph_inv_0_0",
    "x": 977,
-   "y": 846,
+   "y": 954,
    "w": 214,
-   "h": 200,
+   "h": 324,
    "kind": "neph_w",
    "title": "Kidney function",
    "lines": [
@@ -593,9 +604,9 @@
   {
    "id": "neur_inv_0_0",
    "x": 1203,
-   "y": 846,
+   "y": 954,
    "w": 214,
-   "h": 200,
+   "h": 324,
    "kind": "neur_w",
    "title": "Foot exam EVERY visit",
    "lines": [
@@ -606,9 +617,9 @@
   {
    "id": "mac_inv_0_0",
    "x": 1457,
-   "y": 846,
+   "y": 954,
    "w": 214,
-   "h": 98,
+   "h": 160,
    "kind": "mac_w",
    "title": "Blood pressure ≤ 130/80",
    "lines": [
@@ -618,9 +629,9 @@
   {
    "id": "mac_inv_1_0",
    "x": 1457,
-   "y": 966,
+   "y": 1136,
    "w": 214,
-   "h": 80,
+   "h": 142,
    "kind": "mac_w",
    "title": "LDL < 2.0 mmol/L",
    "lines": []
@@ -628,7 +639,7 @@
   {
    "id": "dka_tx_0_0",
    "x": 45,
-   "y": 1086,
+   "y": 1318,
    "w": 214,
    "h": 86,
    "kind": "bad",
@@ -640,7 +651,7 @@
   {
    "id": "dka_tx_1_0",
    "x": 45,
-   "y": 1194,
+   "y": 1426,
    "w": 214,
    "h": 102,
    "kind": "ok",
@@ -653,7 +664,7 @@
   {
    "id": "dka_tx_2_0",
    "x": 45,
-   "y": 1318,
+   "y": 1550,
    "w": 214,
    "h": 122,
    "kind": "bad",
@@ -666,7 +677,7 @@
   {
    "id": "hhs_tx_0_0",
    "x": 271,
-   "y": 1086,
+   "y": 1318,
    "w": 214,
    "h": 165,
    "kind": "ok",
@@ -679,7 +690,7 @@
   {
    "id": "hhs_tx_1_0",
    "x": 271,
-   "y": 1273,
+   "y": 1505,
    "w": 214,
    "h": 167,
    "kind": "warn",
@@ -691,7 +702,7 @@
   {
    "id": "hypo_tx_0_0",
    "x": 497,
-   "y": 1086,
+   "y": 1318,
    "w": 214,
    "h": 156,
    "kind": "ok",
@@ -704,7 +715,7 @@
   {
    "id": "hypo_tx_1_0",
    "x": 497,
-   "y": 1264,
+   "y": 1496,
    "w": 214,
    "h": 176,
    "kind": "bad",
@@ -717,7 +728,7 @@
   {
    "id": "ret_tx_0_0",
    "x": 751,
-   "y": 1086,
+   "y": 1318,
    "w": 214,
    "h": 157,
    "kind": "ok",
@@ -729,7 +740,7 @@
   {
    "id": "ret_tx_1_0",
    "x": 751,
-   "y": 1265,
+   "y": 1497,
    "w": 214,
    "h": 175,
    "kind": "bad",
@@ -741,7 +752,7 @@
   {
    "id": "neph_tx_0_0",
    "x": 977,
-   "y": 1086,
+   "y": 1318,
    "w": 214,
    "h": 214,
    "kind": "ok",
@@ -754,7 +765,7 @@
   {
    "id": "neph_tx_1_0",
    "x": 977,
-   "y": 1322,
+   "y": 1554,
    "w": 214,
    "h": 118,
    "kind": "ok",
@@ -766,7 +777,7 @@
   {
    "id": "neur_tx_0_0",
    "x": 1203,
-   "y": 1086,
+   "y": 1318,
    "w": 214,
    "h": 157,
    "kind": "ok",
@@ -778,7 +789,7 @@
   {
    "id": "neur_tx_1_0",
    "x": 1203,
-   "y": 1265,
+   "y": 1497,
    "w": 214,
    "h": 175,
    "kind": "bad",
@@ -790,7 +801,7 @@
   {
    "id": "mac_tx_0_0",
    "x": 1457,
-   "y": 1086,
+   "y": 1318,
    "w": 214,
    "h": 98,
    "kind": "ok",
@@ -802,7 +813,7 @@
   {
    "id": "mac_tx_1_0",
    "x": 1457,
-   "y": 1206,
+   "y": 1438,
    "w": 214,
    "h": 96,
    "kind": "ok",
@@ -816,7 +827,7 @@
   {
    "id": "mac_tx_2_0",
    "x": 1457,
-   "y": 1324,
+   "y": 1556,
    "w": 214,
    "h": 116,
    "kind": "ok",
@@ -1074,8 +1085,8 @@
  "panels": [
   {
    "x": 45,
-   "y": 1474,
-   "w": 806,
+   "y": 1706,
+   "w": 533,
    "title": "Sick-day rules: prevent the next DKA or HHS",
    "items": [
     "type 1: keep SOME insulin even when not eating · check glucose AND urine ketones often",
@@ -1084,13 +1095,26 @@
    "cols": 1
   },
   {
-   "x": 865,
-   "y": 1474,
-   "w": 806,
+   "x": 592,
+   "y": 1706,
+   "w": 533,
    "title": "From diagnosis",
    "items": [
     "refer: dietitian · diabetes nurse educator · optometrist",
     "first drug: very symptomatic → INSULIN · otherwise METFORMIN if liver and kidneys are fine (then see the GLUCOSE-LOWERING DRUGS tree)"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 1138,
+   "y": 1706,
+   "w": 533,
+   "title": "Why chronic damage happens (no single cause)",
+   "items": [
+    "glucose: directly toxic · oxidative stress · sorbitol swells cells · VEGF → new vessels · glycated proteins",
+    "also: high blood pressure · high cholesterol · inflammation · hypercoagulable",
+    "other complications: cataract · glaucoma",
+    "never use complications to SCARE a patient into compliance"
    ],
    "cols": 1
   }

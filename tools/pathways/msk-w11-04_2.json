@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 290,
+   "y": 398,
    "w": 246,
-   "h": 770,
+   "h": 896,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
    "x": 288,
-   "y": 290,
+   "y": 398,
    "w": 246,
-   "h": 770,
+   "h": 896,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 564,
-   "y": 290,
+   "y": 398,
    "w": 246,
-   "h": 770,
+   "h": 896,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 812,
-   "y": 290,
+   "y": 398,
    "w": 246,
-   "h": 770,
+   "h": 896,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 1060,
-   "y": 290,
+   "y": 398,
    "w": 246,
-   "h": 770,
+   "h": 896,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -139,13 +139,13 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 436,
-   "h": 306,
+   "y": 544,
+   "h": 432,
    "text": "LOOK FOR"
   },
   {
    "x": 23,
-   "y": 782,
+   "y": 1016,
    "h": 270,
    "text": "THEN"
   }
@@ -160,27 +160,29 @@
    "title": "ONE joint aching for over 6 weeks, worse with activity: osteoarthritis (OA) until a red flag says otherwise",
    "lines": [
     "OA is a CLINICAL diagnosis: typical symptoms + NO other cause · the X-ray STAGES it, it does not diagnose it",
-    "first set aside mechanical and sports causes of knee pain (no arthritis)"
+    "first set aside mechanical and sports causes of knee pain (no arthritis)",
+    "chronic monoarthritis: OA, OA, OA, then chronic crystals (gout, pseudogout, basic calcium phosphate) · less often autoimmune, Charcot (diabetes, syphilis), chronic infection (atypical mycobacteria), tumour (pigmented villonodular synovitis, synovial chondromatosis), osteonecrosis",
+    "1 in 7 Canadian adults · most common joint disorder · 11th cause of disability worldwide (above TB, heart disease) · knee OA mostly starts at 35-55"
    ]
   },
   {
    "id": "g_dx",
    "x": 45,
-   "y": 158,
+   "y": 248,
    "w": 484,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "IS IT OA?",
    "lines": [
-    "knee >> hip; ankle; shoulder >> big toe"
+    "knee >> hip; ankle; shoulder >> big toe · hand, thumb base usually with polyarthritis"
    ]
   },
   {
    "id": "g_tx",
    "x": 569,
-   "y": 158,
+   "y": 248,
    "w": 732,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "TREAT IT: what stage, what can be fixed?",
    "lines": [
@@ -190,7 +192,7 @@
   {
    "id": "red_head_0_0",
    "x": 45,
-   "y": 298,
+   "y": 406,
    "w": 236,
    "h": 98,
    "kind": "red_h",
@@ -202,7 +204,7 @@
   {
    "id": "oa_head_0_0",
    "x": 293,
-   "y": 298,
+   "y": 406,
    "w": 236,
    "h": 98,
    "kind": "oa_h",
@@ -214,7 +216,7 @@
   {
    "id": "bio_head_0_0",
    "x": 569,
-   "y": 298,
+   "y": 406,
    "w": 236,
    "h": 98,
    "kind": "bio_h",
@@ -226,7 +228,7 @@
   {
    "id": "med_head_0_0",
    "x": 817,
-   "y": 298,
+   "y": 406,
    "w": 236,
    "h": 98,
    "kind": "med_h",
@@ -238,7 +240,7 @@
   {
    "id": "surg_head_0_0",
    "x": 1065,
-   "y": 298,
+   "y": 406,
    "w": 236,
    "h": 98,
    "kind": "surg_h",
@@ -250,23 +252,24 @@
   {
    "id": "red_clue_0_0",
    "x": 45,
-   "y": 436,
+   "y": 544,
    "w": 236,
-   "h": 178,
+   "h": 250,
    "kind": "bad",
    "title": "Any ONE of these",
    "lines": [
     "• warm or hot joint: infection, crystals",
     "• autoimmune (rheumatoid, seronegative)",
-    "• malignancy · fracture · avascular necrosis"
+    "• malignancy · fracture · avascular necrosis",
+    "• rule out tendinopathy too"
    ]
   },
   {
    "id": "red_clue_1_0",
    "x": 45,
-   "y": 636,
+   "y": 816,
    "w": 236,
-   "h": 106,
+   "h": 160,
    "kind": "red_w",
    "title": "Widespread pain",
    "lines": [
@@ -276,75 +279,80 @@
   {
    "id": "oa_clue_0_0",
    "x": 293,
-   "y": 436,
+   "y": 544,
    "w": 236,
-   "h": 152,
+   "h": 224,
    "kind": "oa_t",
    "title": "Pain or stiffness with ACTIVITY",
    "lines": [
     "• morning stiffness < 30 min (usually < 5)",
     "• cool or barely warm effusion",
-    "• joint-line tenderness, crepitus, thickening"
+    "• joint-line tenderness, crepitus, thickening",
+    "• most days, > 6 weeks",
+    "case: 52 F, type 2 diabetes, knee pain since 45, 5 min stiffness, cool swelling, joint-line tender, crepitus"
    ]
   },
   {
    "id": "oa_clue_1_0",
    "x": 293,
-   "y": 610,
+   "y": 790,
    "w": 236,
-   "h": 132,
+   "h": 186,
    "kind": "oa_w",
    "title": "Risk",
    "lines": [
     "• obesity · age · trauma, alignment · genes",
-    "• female 1.4× · post-traumatic OA (after an anterior cruciate ligament tear) starts young"
+    "• female 1.4× · muscle weakness · occupation",
+    "• post-traumatic OA starts young · case: 36 F, ACL tear at 23 → > 50% need a knee replacement by 55"
    ]
   },
   {
    "id": "bio_clue_0_0",
    "x": 569,
-   "y": 436,
+   "y": 544,
    "w": 236,
-   "h": 306,
+   "h": 432,
    "kind": "ok",
    "title": "ACTIVE therapy",
    "lines": [
     "• neuromuscular exercise physiotherapy, ≥ 3 months (Tai-Chi, GLA:D program)",
-    "• 150 min of activity a week",
+    "• 150 min of activity a week (walk, swim, bike)",
     "• lose 5% of body weight"
    ]
   },
   {
    "id": "med_clue_0_0",
    "x": 817,
-   "y": 436,
+   "y": 544,
    "w": 236,
-   "h": 306,
+   "h": 432,
    "kind": "ok",
    "title": "Evidence-based",
    "lines": [
     "• topical anti-inflammatory (NSAID): diclofenac 2–3 × a day",
     "• oral NSAID if no contraindication (not in kidney failure)",
-    "• refractory: steroid injection (short-term), then a duloxetine trial 2–3 months"
+    "• refractory: steroid injection (short-term), then a duloxetine (SNRI) trial 2–3 months",
+    "case: 68 M, varus knee, chronic renal failure → physio 3 months, OT, TOPICAL NSAID (no oral), injection, duloxetine"
    ]
   },
   {
    "id": "surg_clue_0_0",
    "x": 1065,
-   "y": 436,
+   "y": 544,
    "w": 236,
-   "h": 306,
+   "h": 432,
    "kind": "ok",
    "title": "Joint replacement (arthroplasty)",
    "lines": [
     "a salvage procedure · strong evidence of benefit",
-    "• X-ray bone on bone → refer to orthopedics"
+    "• X-ray bone on bone → refer to orthopedics",
+    "case: same man 2 years later, cane, bone on bone despite all → knee arthroplasty"
    ]
   },
   {
    "id": "red_tx_0_0",
    "x": 45,
-   "y": 782,
+   "y": 1016,
    "w": 236,
    "h": 270,
    "kind": "red_w",
@@ -356,34 +364,35 @@
   {
    "id": "oa_tx_0_0",
    "x": 293,
-   "y": 782,
+   "y": 1016,
    "w": 236,
    "h": 270,
    "kind": "oa_t",
    "title": "X-ray: Kellgren-Lawrence (K/L) grade",
    "lines": [
     "• 1–2 = early · 3–4 = late to end stage",
-    "• joint space narrowing, osteophytes"
+    "• joint space narrowing, osteophytes",
+    "• MRI, bone scan almost never"
    ]
   },
   {
    "id": "bio_tx_0_0",
    "x": 569,
-   "y": 782,
+   "y": 1016,
    "w": 236,
    "h": 150,
    "kind": "bio_w",
    "title": "Also",
    "lines": [
     "• walking aids, insoles, unloader brace",
-    "• occupational therapy: joint protection",
+    "• occupational therapy: joint protection, avoid risky movements",
     "• cognitive behavioural therapy · topical heat"
    ]
   },
   {
    "id": "bio_tx_1_0",
    "x": 569,
-   "y": 954,
+   "y": 1188,
    "w": 236,
    "h": 98,
    "kind": "bad",
@@ -395,23 +404,23 @@
   {
    "id": "med_tx_0_0",
    "x": 817,
-   "y": 782,
+   "y": 1016,
    "w": 236,
-   "h": 124,
+   "h": 133,
    "kind": "warn",
    "title": "Weak or unproven",
    "lines": [
     "• acetaminophen: meaningful effect?",
-    "• glucosamine, herbal remedies",
+    "• glucosamine, herbal remedies · topical NSAID for HIP OA",
     "• injected hyaluronic acid, platelet-rich plasma, stem cells"
    ]
   },
   {
    "id": "med_tx_1_0",
    "x": 817,
-   "y": 928,
+   "y": 1171,
    "w": 236,
-   "h": 124,
+   "h": 115,
    "kind": "bad",
    "title": "AVOID",
    "lines": [
@@ -422,7 +431,7 @@
   {
    "id": "surg_tx_0_0",
    "x": 1065,
-   "y": 782,
+   "y": 1016,
    "w": 236,
    "h": 270,
    "kind": "bad",
@@ -436,12 +445,12 @@
   {
    "from": "root",
    "to": "g_dx",
-   "path": "M673.0 108V133H287.0V158"
+   "path": "M673.0 198V223H287.0V248"
   },
   {
    "from": "root",
    "to": "g_tx",
-   "path": "M673.0 108V133H935.0V158"
+   "path": "M673.0 198V223H935.0V248"
   },
   {
    "from": "red_clue_0_0",
@@ -527,5 +536,29 @@
    "from_dx": 248
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1320,
+   "w": 621,
+   "title": "Primary vs secondary OA",
+   "items": [
+    "primary (most): risk factors, no clear cause",
+    "secondary: post-traumatic (ACL, meniscus tear) · acromegaly, hyperparathyroidism, hemochromatosis · rare monogenic (Stickler, Marshall, dysplasias) · after rheumatoid or other inflammatory arthritis"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 680,
+   "y": 1320,
+   "w": 621,
+   "title": "Why OA happens",
+   "items": [
+    "NOT wear and tear or age: cartilage thins with age, raising the risk",
+    "chronic metabolic, mechanical stress → inflammation, pain, breakdown of every joint tissue",
+    "joint FAILURE, like heart failure: tissues fail to heal · treat what impairs healing (obesity, inactivity)"
+   ],
+   "cols": 1
+  }
+ ]
 }

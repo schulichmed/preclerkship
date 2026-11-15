@@ -1,7 +1,7 @@
 {
  "name": "end of life decisions overview",
  "width": 1052,
- "title": "End of life: a patient who cannot decide gets a substitute decision maker in a fixed order; palliative care is reached by four routes and aims at comfort; a patient who asks for medical assistance in dying must meet every eligibility criterion, and the stream (natural death foreseeable or not) sets the safeguards",
+ "title": "End of life: a patient who cannot decide gets a substitute decision maker in a fixed order; palliative care is reached by four routes and aims at comfort; a patient who asks for medical assistance in dying must meet every eligibility criterion, and the stream (natural death foreseeable or not) sets the safeguards; palliative pearls, MAiD in practice and conscientious objection are below",
  "kinds": {
   "sdm_h": [
    "#1f6f8b",
@@ -79,33 +79,33 @@
  "bands": [
   {
    "x": 40,
-   "y": 478,
+   "y": 550,
    "w": 235,
-   "h": 894,
+   "h": 1002,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 305,
-   "y": 478,
+   "y": 550,
    "w": 235,
-   "h": 894,
+   "h": 1002,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 570,
-   "y": 478,
+   "y": 550,
    "w": 235,
-   "h": 894,
+   "h": 1002,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 807,
-   "y": 478,
+   "y": 550,
    "w": 235,
-   "h": 894,
+   "h": 1002,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   }
@@ -113,26 +113,26 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 256,
-   "h": 150,
+   "y": 310,
+   "h": 168,
    "text": "ELIGIBLE?"
   },
   {
    "x": 23,
-   "y": 624,
+   "y": 732,
    "h": 168,
    "text": "WHEN"
   },
   {
    "x": 23,
-   "y": 832,
+   "y": 940,
    "h": 132,
    "text": "ASSESS"
   },
   {
    "x": 23,
-   "y": 1004,
-   "h": 360,
+   "y": 1112,
+   "h": 432,
    "text": "DO"
   }
  ],
@@ -145,14 +145,16 @@
    "kind": "dark",
    "title": "End of life: who decides, and what can be offered?",
    "lines": [
-    "capacity = UNDERSTAND the information + APPRECIATE the foreseeable consequences · specific to each decision · can fluctuate",
-    "code status (which resuscitation, if any) needs informed consent from the patient or SDM · it is NOT the same as goals of care"
+    "capacity (Health Care Consent Act s. 4) = able to UNDERSTAND the information + APPRECIATE the foreseeable consequences of deciding or not · specific to each decision · can fluctuate",
+    "code status (which resuscitation, if any) needs informed consent from the patient or SDM · it is NOT the same as goals of care",
+    "goals of care: who the patient is, how their values shape their goals, how these fit the clinical picture · prepares for consent decisions",
+    "family-centred: dignity and respect for patient, family, significant others throughout"
    ]
   },
   {
    "id": "g_cap",
    "x": 45,
-   "y": 156,
+   "y": 210,
    "w": 225,
    "h": 60,
    "kind": "plain",
@@ -164,7 +166,7 @@
   {
    "id": "g_pal",
    "x": 310,
-   "y": 156,
+   "y": 210,
    "w": 225,
    "h": 60,
    "kind": "plain",
@@ -174,59 +176,63 @@
   {
    "id": "g_maid",
    "x": 575,
-   "y": 156,
+   "y": 210,
    "w": 462,
    "h": 60,
    "kind": "plain",
    "title": "Patient asks for medical assistance in dying (MAiD)",
-   "lines": []
+   "lines": [
+    "legal in Canada June 2016 · 2 streams since March 2021"
+   ]
   },
   {
    "id": "p_maid",
    "x": 575,
-   "y": 256,
+   "y": 310,
    "w": 462,
-   "h": 150,
+   "h": 168,
    "kind": "info",
    "title": "Eligible? ALL of these",
    "lines": [
     "• eligible for publicly funded health care",
     "• 18 or older and capable",
-    "• grievous and irremediable: serious illness, advanced irreversible decline, unbearable suffering",
+    "• grievous and irremediable: serious illness, advanced irreversible decline, unbearable suffering not relievable in ways they accept",
     "• voluntary, free of outside pressure",
-    "• informed consent, including palliative options"
+    "• informed consent: diagnosis, treatments, ways to relieve suffering including palliative care"
    ]
   },
   {
    "id": "sdm_head_0_0",
    "x": 45,
-   "y": 486,
+   "y": 558,
    "w": 225,
-   "h": 98,
+   "h": 134,
    "kind": "sdm_h",
    "title": "Substitute decision maker (SDM)",
    "lines": [
-    "gives or refuses consent for the patient"
+    "gives or refuses consent for the patient",
+    "hierarchy: Health Care Consent Act s. 20"
    ]
   },
   {
    "id": "pal_head_0_0",
    "x": 310,
-   "y": 486,
+   "y": 558,
    "w": 225,
-   "h": 98,
+   "h": 134,
    "kind": "pal_h",
    "title": "Palliative care",
    "lines": [
-    "quality of life: physical, psychosocial, spiritual · patient AND family"
+    "quality of life: physical, psychosocial, spiritual · patient AND family",
+    "team · practical needs · bereavement"
    ]
   },
   {
    "id": "s1_head_0_0",
    "x": 575,
-   "y": 486,
+   "y": 558,
    "w": 225,
-   "h": 98,
+   "h": 134,
    "kind": "s1_h",
    "title": "Stream 1",
    "lines": [
@@ -236,9 +242,9 @@
   {
    "id": "s2_head_0_0",
    "x": 812,
-   "y": 486,
+   "y": 558,
    "w": 225,
-   "h": 98,
+   "h": 134,
    "kind": "s2_h",
    "title": "Stream 2",
    "lines": [
@@ -248,7 +254,7 @@
   {
    "id": "sdm_when_0_0",
    "x": 45,
-   "y": 624,
+   "y": 732,
    "w": 225,
    "h": 168,
    "kind": "sdm_t",
@@ -261,7 +267,7 @@
   {
    "id": "pal_when_0_0",
    "x": 310,
-   "y": 624,
+   "y": 732,
    "w": 225,
    "h": 168,
    "kind": "pal_t",
@@ -276,19 +282,19 @@
   {
    "id": "s1_when_0_0",
    "x": 575,
-   "y": 624,
+   "y": 732,
    "w": 225,
    "h": 168,
    "kind": "s1_t",
    "title": "Written request",
    "lines": [
-    "signed before an independent witness"
+    "signed before an independent witness (another person may sign if the patient cannot)"
    ]
   },
   {
    "id": "s2_when_0_0",
    "x": 812,
-   "y": 624,
+   "y": 732,
    "w": 225,
    "h": 168,
    "kind": "s2_t",
@@ -300,7 +306,7 @@
   {
    "id": "sdm_check_0_0",
    "x": 45,
-   "y": 832,
+   "y": 940,
    "w": 225,
    "h": 132,
    "kind": "sdm_w",
@@ -313,7 +319,7 @@
   {
    "id": "pal_check_0_0",
    "x": 310,
-   "y": 832,
+   "y": 940,
    "w": 225,
    "h": 132,
    "kind": "pal_w",
@@ -326,7 +332,7 @@
   {
    "id": "s1_check_0_0",
    "x": 575,
-   "y": 832,
+   "y": 940,
    "w": 225,
    "h": 132,
    "kind": "s1_w",
@@ -338,7 +344,7 @@
   {
    "id": "s2_check_0_0",
    "x": 812,
-   "y": 832,
+   "y": 940,
    "w": 225,
    "h": 132,
    "kind": "s2_w",
@@ -350,9 +356,9 @@
   {
    "id": "sdm_do_0_0",
    "x": 45,
-   "y": 1004,
+   "y": 1112,
    "w": 225,
-   "h": 260,
+   "h": 296,
    "kind": "ok",
    "title": "Ask the SDM, in this ORDER",
    "lines": [
@@ -360,31 +366,32 @@
     "2 · attorney for PERSONAL CARE (not property)",
     "3 · Consent and Capacity Board representative",
     "4 · spouse or partner",
-    "5 · child (16+) or custodial parent",
+    "5 · child (16+), custodial parent or Children's Aid Society",
     "6 · parent with right of access",
     "7 · siblings",
-    "8 · any other relative",
+    "8 · any other relative (blood, marriage, adoption)",
     "9 · Public Guardian and Trustee"
    ]
   },
   {
    "id": "sdm_do_1_0",
    "x": 45,
-   "y": 1286,
+   "y": 1430,
    "w": 225,
-   "h": 78,
+   "h": 114,
    "kind": "sdm_w",
    "title": "Advance care planning",
    "lines": [
-    "WISHES that guide the SDM, NOT advance consent"
+    "WISHES that guide the SDM, NOT advance consent",
+    "~speculation about a future illness, but prepares both"
    ]
   },
   {
    "id": "pal_do_0_0",
    "x": 310,
-   "y": 1004,
+   "y": 1112,
    "w": 225,
-   "h": 360,
+   "h": 432,
    "kind": "ok",
    "title": "Comfort, at home where possible",
    "lines": [
@@ -396,9 +403,9 @@
   {
    "id": "s1_do_0_0",
    "x": 575,
-   "y": 1004,
+   "y": 1112,
    "w": 225,
-   "h": 360,
+   "h": 432,
    "kind": "ok",
    "title": "Consent AGAIN at the time of MAiD",
    "lines": [
@@ -408,9 +415,9 @@
   {
    "id": "s2_do_0_0",
    "x": 812,
-   "y": 1004,
+   "y": 1112,
    "w": 225,
-   "h": 360,
+   "h": 432,
    "kind": "bad",
    "title": "90-day wait · NO waiver",
    "lines": [
@@ -422,17 +429,17 @@
   {
    "from": "root",
    "to": "g_cap",
-   "path": "M541.0 106V131H157.5V156"
+   "path": "M541.0 160V185H157.5V210"
   },
   {
    "from": "root",
    "to": "g_pal",
-   "path": "M541.0 106V131H422.5V156"
+   "path": "M541.0 160V185H422.5V210"
   },
   {
    "from": "root",
    "to": "g_maid",
-   "path": "M541.0 106V131H806.0V156"
+   "path": "M541.0 160V185H806.0V210"
   },
   {
    "from": "g_maid",
@@ -495,7 +502,7 @@
    "label": "death foreseeable",
    "label_at": [
     687.5,
-    446
+    518
    ]
   },
   {
@@ -517,9 +524,52 @@
    "label": "NOT foreseeable",
    "label_at": [
     924.5,
-    446
+    518
    ]
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1578,
+   "w": 321,
+   "title": "Palliative pearls and myths",
+   "items": [
+    "UNCERTAINTY: outcomes fall along a spectrum · families may be angry when the patient does better",
+    "TEMPORARY improvement for hours to days after stopping feeds or fluids: reassure · re-evaluate if it lasts days",
+    "moral distress: 'it's not my journey' · trust the SDM",
+    "NOT starving: organs shut down, no hunger or thirst · sips for comfort",
+    "turning every 4 hours = comfort + exam · MOTTLING → call the family",
+    "patients often die as they lived · let family step away, rest"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 380,
+   "y": 1578,
+   "w": 321,
+   "title": "MAiD in practice",
+   "items": [
+    "regional coordination service · home, long-term care or hospital",
+    "organ donation possible (usually in hospital)",
+    "IV: benzodiazepine → high-dose propofol → neuromuscular blocker · 10 min infusion, death within 10 more",
+    "oral lethal drug: an option, rarely used",
+    "Ontario: reported to the CORONER"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 716,
+   "y": 1578,
+   "w": 321,
+   "title": "Conscientious objection (CPSO)",
+   "items": [
+    "no physician has to provide MAiD",
+    "respect dignity · do NOT impede access",
+    "tell the patient directly: a personal, not clinical, reason",
+    "never abandon · timely EFFECTIVE referral"
+   ],
+   "cols": 1
+  }
+ ]
 }

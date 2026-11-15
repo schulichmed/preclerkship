@@ -153,7 +153,7 @@
    "x": 40,
    "y": 272,
    "w": 226,
-   "h": 1046,
+   "h": 1264,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -161,7 +161,7 @@
    "x": 296,
    "y": 272,
    "w": 226,
-   "h": 1046,
+   "h": 1264,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -169,7 +169,7 @@
    "x": 552,
    "y": 272,
    "w": 226,
-   "h": 1046,
+   "h": 1264,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -177,7 +177,7 @@
    "x": 780,
    "y": 272,
    "w": 226,
-   "h": 1046,
+   "h": 1264,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -185,7 +185,7 @@
    "x": 1008,
    "y": 272,
    "w": 226,
-   "h": 1046,
+   "h": 1264,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -193,7 +193,7 @@
    "x": 1236,
    "y": 272,
    "w": 226,
-   "h": 1046,
+   "h": 1264,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
@@ -201,7 +201,7 @@
    "x": 1464,
    "y": 272,
    "w": 226,
-   "h": 1046,
+   "h": 1264,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
@@ -209,7 +209,7 @@
    "x": 1692,
    "y": 272,
    "w": 226,
-   "h": 1046,
+   "h": 1264,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -218,19 +218,19 @@
   {
    "x": 23,
    "y": 416,
-   "h": 268,
+   "h": 358,
    "text": "RECOGNISE"
   },
   {
    "x": 23,
-   "y": 724,
-   "h": 132,
+   "y": 814,
+   "h": 152,
    "text": "SORT IT"
   },
   {
    "x": 23,
-   "y": 896,
-   "h": 414,
+   "y": 1006,
+   "h": 522,
    "text": "MANAGE"
   }
  ],
@@ -380,7 +380,7 @@
    "x": 45,
    "y": 416,
    "w": 216,
-   "h": 268,
+   "h": 358,
    "kind": "all_t",
    "title": "1 · Resuscitate",
    "lines": [
@@ -392,7 +392,7 @@
    "x": 301,
    "y": 416,
    "w": 216,
-   "h": 268,
+   "h": 358,
    "kind": "open_t",
    "title": "ANY wound, even distant",
    "lines": [
@@ -404,19 +404,21 @@
    "x": 557,
    "y": 416,
    "w": 216,
-   "h": 132,
+   "h": 222,
    "kind": "cs_t",
    "title": "A CLINICAL diagnosis",
    "lines": [
     "• pain OUT OF PROPORTION, rising narcotic need",
     "• pain on PASSIVE STRETCH",
+    "• tibia: pain ↑ dorsiflexing (anterior), plantarflexing (posterior)",
+    "• muscle, nerve injured within 2 h of ischemia",
     "~paresthesia mid · paralysis late · pulse loss = missed"
    ]
   },
   {
    "id": "cs_pres_1_0",
    "x": 557,
-   "y": 570,
+   "y": 660,
    "w": 216,
    "h": 114,
    "kind": "cs_w",
@@ -431,7 +433,7 @@
    "x": 785,
    "y": 416,
    "w": 216,
-   "h": 268,
+   "h": 358,
    "kind": "vte_t",
    "title": "Highest risk",
    "lines": [
@@ -445,7 +447,7 @@
    "x": 1013,
    "y": 416,
    "w": 216,
-   "h": 268,
+   "h": 358,
    "kind": "nu_t",
    "title": "Non-union type",
    "lines": [
@@ -459,7 +461,7 @@
    "x": 1241,
    "y": 416,
    "w": 216,
-   "h": 268,
+   "h": 358,
    "kind": "avn_t",
    "title": "Pain",
    "lines": [
@@ -473,7 +475,7 @@
    "x": 1469,
    "y": 416,
    "w": 216,
-   "h": 268,
+   "h": 358,
    "kind": "pta_t",
    "title": "Pain, worse weight-bearing",
    "lines": [
@@ -485,19 +487,20 @@
    "x": 1697,
    "y": 416,
    "w": 216,
-   "h": 114,
+   "h": 168,
    "kind": "ho_t",
    "title": "Stiffness → ankylosis",
    "lines": [
-    "• hip, knee, elbow"
+    "• hip, knee, elbow",
+    "• early: red, swollen, tender"
    ]
   },
   {
    "id": "ho_pres_1_0",
    "x": 1697,
-   "y": 552,
+   "y": 606,
    "w": 216,
-   "h": 132,
+   "h": 168,
    "kind": "ho_w",
    "title": "Risk",
    "lines": [
@@ -507,9 +510,9 @@
   {
    "id": "all_inv_0_0",
    "x": 45,
-   "y": 724,
+   "y": 814,
    "w": 216,
-   "h": 132,
+   "h": 152,
    "kind": "all_w",
    "title": "2 · Choose the reduction by",
    "lines": [
@@ -521,9 +524,9 @@
   {
    "id": "open_inv_0_0",
    "x": 301,
-   "y": 724,
+   "y": 814,
    "w": 216,
-   "h": 132,
+   "h": 152,
    "kind": "open_w",
    "title": "More energy = worse",
    "lines": [
@@ -534,12 +537,13 @@
   {
    "id": "cs_inv_0_0",
    "x": 557,
-   "y": 724,
+   "y": 814,
    "w": 216,
-   "h": 132,
+   "h": 152,
    "kind": "cs_w",
    "title": "Cannot tell you? MEASURE",
    "lines": [
+    "uncooperative, obtunded or sedated, a child",
     "• diastolic blood pressure − compartment < 20 mmHg",
     "• compartment > 30 mmHg"
    ]
@@ -547,9 +551,9 @@
   {
    "id": "vte_inv_0_0",
    "x": 785,
-   "y": 724,
+   "y": 814,
    "w": 216,
-   "h": 132,
+   "h": 152,
    "kind": "vte_w",
    "title": "Choose by the patient",
    "lines": [
@@ -559,9 +563,9 @@
   {
    "id": "nu_inv_0_0",
    "x": 1013,
-   "y": 724,
+   "y": 814,
    "w": 216,
-   "h": 132,
+   "h": 152,
    "kind": "nu_w",
    "title": "Malunion",
    "lines": [
@@ -571,9 +575,9 @@
   {
    "id": "avn_inv_0_0",
    "x": 1241,
-   "y": 724,
+   "y": 814,
    "w": 216,
-   "h": 132,
+   "h": 152,
    "kind": "avn_w",
    "title": "Bone cell death",
    "lines": [
@@ -583,9 +587,9 @@
   {
    "id": "pta_inv_0_0",
    "x": 1469,
-   "y": 724,
+   "y": 814,
    "w": 216,
-   "h": 132,
+   "h": 152,
    "kind": "pta_w",
    "title": "Where",
    "lines": [
@@ -597,9 +601,9 @@
   {
    "id": "ho_inv_0_0",
    "x": 1697,
-   "y": 724,
+   "y": 814,
    "w": 216,
-   "h": 132,
+   "h": 152,
    "kind": "ho_w",
    "title": "Early: x-ray, CT NEGATIVE",
    "lines": [
@@ -609,7 +613,7 @@
   {
    "id": "all_tx_0_0",
    "x": 45,
-   "y": 896,
+   "y": 1006,
    "w": 216,
    "h": 114,
    "kind": "ok",
@@ -622,20 +626,21 @@
   {
    "id": "all_tx_1_0",
    "x": 45,
-   "y": 1032,
+   "y": 1142,
    "w": 216,
-   "h": 96,
+   "h": 132,
    "kind": "ok",
    "title": "3 · Hold it",
    "lines": [
     "• cast or splint · external fixator",
-    "• internal fixation: plates, screws, pins, nails"
+    "• internal fixation: plates, screws, pins, nails",
+    "• open reduction + internal fixation = ORIF"
    ]
   },
   {
    "id": "all_tx_2_0",
    "x": 45,
-   "y": 1150,
+   "y": 1296,
    "w": 216,
    "h": 60,
    "kind": "warn",
@@ -647,21 +652,23 @@
   {
    "id": "all_tx_3_0",
    "x": 45,
-   "y": 1232,
+   "y": 1378,
    "w": 216,
-   "h": 78,
+   "h": 150,
    "kind": "ok",
    "title": "5 · Rehabilitate",
    "lines": [
-    "move as much as is safe, as soon as possible"
+    "move as much as is safe, as soon as possible",
+    "• protect weight-bearing as orthopedics directs",
+    "• physio, occupational therapy · prevent contractures"
    ]
   },
   {
    "id": "open_tx_0_0",
    "x": 301,
-   "y": 896,
+   "y": 1006,
    "w": 216,
-   "h": 118,
+   "h": 124,
    "kind": "bad",
    "title": "1 · EARLY antibiotics + tetanus",
    "lines": [
@@ -671,9 +678,9 @@
   {
    "id": "open_tx_1_0",
    "x": 301,
-   "y": 1036,
+   "y": 1152,
    "w": 216,
-   "h": 136,
+   "h": 142,
    "kind": "ok",
    "title": "2 · Splint, then EARLY surgery",
    "lines": [
@@ -684,34 +691,36 @@
   {
    "id": "open_tx_2_0",
    "x": 301,
-   "y": 1194,
+   "y": 1316,
    "w": 216,
-   "h": 116,
+   "h": 212,
    "kind": "ok",
    "title": "3 · Close early",
    "lines": [
-    "direct closure, or a plastic surgery flap"
+    "direct closure at ORIF, or a plastic surgery flap",
+    "goal: contaminated wound → stable, clean",
+    "case: open spiral distal tibia → cefazolin 2 g IV, tetanus in ER, intramedullary nail, direct closure"
    ]
   },
   {
    "id": "cs_tx_0_0",
    "x": 557,
-   "y": 896,
+   "y": 1006,
    "w": 216,
-   "h": 414,
+   "h": 522,
    "kind": "bad",
    "title": "URGENT call to orthopedics",
    "lines": [
-    "• remove casts, dressings · elevate · cool",
+    "• remove casts, dressings · elevate · cool · monitor",
     "• definitive: FASCIOTOMY"
    ]
   },
   {
    "id": "vte_tx_0_0",
    "x": 785,
-   "y": 896,
+   "y": 1006,
    "w": 216,
-   "h": 414,
+   "h": 522,
    "kind": "ok",
    "title": "Prevent",
    "lines": [
@@ -723,9 +732,9 @@
   {
    "id": "nu_tx_0_0",
    "x": 1013,
-   "y": 896,
+   "y": 1006,
    "w": 216,
-   "h": 214,
+   "h": 268,
    "kind": "ok",
    "title": "Non-union",
    "lines": [
@@ -736,9 +745,9 @@
   {
    "id": "nu_tx_1_0",
    "x": 1013,
-   "y": 1132,
+   "y": 1296,
    "w": 216,
-   "h": 178,
+   "h": 232,
    "kind": "ok",
    "title": "Malunion hurting function",
    "lines": [
@@ -748,9 +757,9 @@
   {
    "id": "avn_tx_0_0",
    "x": 1241,
-   "y": 896,
+   "y": 1006,
    "w": 216,
-   "h": 414,
+   "h": 522,
    "kind": "ok",
    "title": "Surgical",
    "lines": []
@@ -758,9 +767,9 @@
   {
    "id": "pta_tx_0_0",
    "x": 1469,
-   "y": 896,
+   "y": 1006,
    "w": 216,
-   "h": 414,
+   "h": 522,
    "kind": "ok",
    "title": "As for osteoarthritis",
    "lines": [
@@ -770,9 +779,9 @@
   {
    "id": "ho_tx_0_0",
    "x": 1697,
-   "y": 896,
+   "y": 1006,
    "w": 216,
-   "h": 414,
+   "h": 522,
    "kind": "ok",
    "title": "Settle inflammation",
    "lines": [
@@ -968,7 +977,7 @@
  "panels": [
   {
    "x": 45,
-   "y": 1344,
+   "y": 1562,
    "w": 1868,
    "title": "How a fracture heals",
    "items": [

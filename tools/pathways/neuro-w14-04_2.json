@@ -115,49 +115,49 @@
  "bands": [
   {
    "x": 40,
-   "y": 288,
+   "y": 324,
    "w": 222,
-   "h": 578,
+   "h": 810,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
    "x": 264,
-   "y": 288,
+   "y": 324,
    "w": 222,
-   "h": 578,
+   "h": 810,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 516,
-   "y": 288,
+   "y": 324,
    "w": 222,
-   "h": 578,
+   "h": 810,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 740,
-   "y": 288,
+   "y": 324,
    "w": 222,
-   "h": 578,
+   "h": 810,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 964,
-   "y": 288,
+   "y": 324,
    "w": 222,
-   "h": 578,
+   "h": 810,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 1188,
-   "y": 288,
+   "y": 324,
    "w": 222,
-   "h": 578,
+   "h": 810,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   }
@@ -165,20 +165,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 434,
-   "h": 132,
+   "y": 522,
+   "h": 186,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 606,
-   "h": 116,
+   "y": 748,
+   "h": 206,
    "text": "THE TELL"
   },
   {
    "x": 23,
-   "y": 762,
-   "h": 96,
+   "y": 994,
+   "h": 132,
    "text": "NEXT STEP"
   }
  ],
@@ -192,13 +192,15 @@
    "title": "Numbness and tingling: WHERE is the lesion?",
    "lines": [
     "first: CENTRAL or PERIPHERAL?",
-    "characterize a neuropathy: sensory, motor or autonomic · acute (days-6 weeks), subacute (to 6 months) or chronic · its pattern · axonal or demyelinating (EMG)"
+    "characterize a neuropathy: sensory, motor or autonomic · acute (days-6 weeks), subacute (to 6 months) or chronic · its pattern · axonal or demyelinating (EMG)",
+    "pattern (root, plexus excluded): length-dependent polyneuropathy · mononeuropathy · mononeuritis multiplex",
+    "cord vs nerve, acute: a TRUNCAL SENSORY LEVEL settles it"
    ]
   },
   {
    "id": "g_cns",
    "x": 45,
-   "y": 156,
+   "y": 192,
    "w": 436,
    "h": 60,
    "kind": "plain",
@@ -210,7 +212,7 @@
   {
    "id": "g_pns",
    "x": 521,
-   "y": 156,
+   "y": 192,
    "w": 884,
    "h": 60,
    "kind": "plain",
@@ -222,9 +224,9 @@
   {
    "id": "thal_head_0_0",
    "x": 45,
-   "y": 296,
+   "y": 332,
    "w": 212,
-   "h": 98,
+   "h": 150,
    "kind": "thal_h",
    "title": "Brain: thalamus",
    "lines": [
@@ -234,9 +236,9 @@
   {
    "id": "cord_head_0_0",
    "x": 269,
-   "y": 296,
+   "y": 332,
    "w": 212,
-   "h": 98,
+   "h": 150,
    "kind": "cord_h",
    "title": "Spinal cord",
    "lines": [
@@ -246,9 +248,9 @@
   {
    "id": "root_head_0_0",
    "x": 521,
-   "y": 296,
+   "y": 332,
    "w": 212,
-   "h": 98,
+   "h": 150,
    "kind": "root_h",
    "title": "Root (radiculopathy)",
    "lines": [
@@ -258,9 +260,9 @@
   {
    "id": "mono_head_0_0",
    "x": 745,
-   "y": 296,
+   "y": 332,
    "w": 212,
-   "h": 98,
+   "h": 150,
    "kind": "mono_h",
    "title": "Mononeuropathy",
    "lines": [
@@ -270,9 +272,9 @@
   {
    "id": "poly_head_0_0",
    "x": 969,
-   "y": 296,
+   "y": 332,
    "w": 212,
-   "h": 98,
+   "h": 150,
    "kind": "poly_h",
    "title": "Length-dependent polyneuropathy",
    "lines": [
@@ -282,99 +284,106 @@
   {
    "id": "gbs_head_0_0",
    "x": 1193,
-   "y": 296,
+   "y": 332,
    "w": 212,
-   "h": 98,
+   "h": 150,
    "kind": "gbs_h",
    "title": "Guillain-Barré syndrome",
    "lines": [
-    "acute inflammatory demyelinating polyneuropathy"
+    "acute inflammatory demyelinating polyneuropathy (AIDP)",
+    "autoimmune, antibody: ANTIGEN MIMICRY after infection"
    ]
   },
   {
    "id": "thal_clue_0_0",
    "x": 45,
-   "y": 434,
+   "y": 522,
    "w": 212,
-   "h": 132,
+   "h": 186,
    "kind": "thal_t",
    "title": "The OPPOSITE side",
    "lines": [
     "• a clumsy hand",
-    "• burning pain"
+    "• burning pain",
+    "case: 78 y, LEFT thalamic bleed → right hand clumsy, right-sided burning"
    ]
   },
   {
    "id": "cord_clue_0_0",
    "x": 269,
-   "y": 434,
+   "y": 522,
    "w": 212,
-   "h": 132,
+   "h": 186,
    "kind": "cord_t",
    "title": "Below a level on the trunk",
    "lines": [
     "• tingling from mid-chest down",
-    "• bladder urgency"
+    "• bladder urgency",
+    "case: 41 y, 3 weeks: worse over 10 days, levels off, improves · 2 y ago left arm + face numb for 2 months"
    ]
   },
   {
    "id": "root_clue_0_0",
    "x": 521,
-   "y": 434,
+   "y": 522,
    "w": 212,
-   "h": 132,
+   "h": 186,
    "kind": "root_t",
    "title": "Back pain down one leg",
    "lines": [
     "• SHOOTING pain",
-    "• S1: little toe and sole"
+    "• S1: little toe and sole",
+    "case: 52 y nurse, lifted a patient · back pain down the left leg · pinprick, temperature lost on little toe + sole"
    ]
   },
   {
    "id": "mono_clue_0_0",
    "x": 745,
-   "y": 434,
+   "y": 522,
    "w": 212,
-   "h": 132,
+   "h": 186,
    "kind": "mono_t",
    "title": "One nerve's territory",
    "lines": [
     "• hands: intermittent, NOCTURNAL",
-    "• relieved by shaking the hands"
+    "• relieved by shaking the hands",
+    "case: 29 y office worker, 6 months · cousin has MS, worried"
    ]
   },
   {
    "id": "poly_clue_0_0",
    "x": 969,
-   "y": 434,
+   "y": 522,
    "w": 212,
-   "h": 132,
+   "h": 186,
    "kind": "poly_t",
    "title": "Distal, symmetric, years",
    "lines": [
     "• painful, BURNING feet (stocking-glove)",
-    "• autonomic: postural light-headedness, urinary hesitancy, constipation"
+    "• autonomic: postural light-headedness, urinary hesitancy, constipation",
+    "case: 78 y, type 2 diabetes · years of burning feet, poor sleep · no weakness"
    ]
   },
   {
    "id": "gbs_clue_0_0",
    "x": 1193,
-   "y": 434,
+   "y": 522,
    "w": 212,
-   "h": 132,
+   "h": 186,
    "kind": "gbs_t",
    "title": "ASCENDING over DAYS",
    "lines": [
     "• after an infection (a cold)",
-    "• toes → knees, then fingertips → legs give out"
+    "• toes → knees, then fingertips → legs give out",
+    "case: 26 y, cold 3 weeks ago · 3 days tingling toes, soles · weak all 4 limbs, proximal + distal"
    ]
   },
   {
    "id": "thal_inv_0_0",
    "x": 45,
-   "y": 606,
+   "y": 748,
    "w": 212,
-   "h": 116,
+   "h": 206,
    "kind": "thal_w",
    "title": "Not neglect or atrophy",
    "lines": [
@@ -384,22 +393,24 @@
   {
    "id": "cord_inv_0_0",
    "x": 269,
-   "y": 606,
+   "y": 748,
    "w": 212,
-   "h": 116,
+   "h": 206,
    "kind": "cord_w",
    "title": "A TRUNCAL SENSORY LEVEL",
    "lines": [
     "• BRISK reflexes below it",
-    "• Babinski signs · Romberg can be positive"
+    "• Babinski signs · Romberg can be positive",
+    "• case: pin level at T6, brisk legs",
+    "• stocking loss + ↓ reflexes would be SURPRISING"
    ]
   },
   {
    "id": "root_inv_0_0",
    "x": 521,
-   "y": 606,
+   "y": 748,
    "w": 212,
-   "h": 116,
+   "h": 206,
    "kind": "root_w",
    "title": "One root's pattern",
    "lines": [
@@ -409,9 +420,9 @@
   {
    "id": "mono_inv_0_0",
    "x": 745,
-   "y": 606,
+   "y": 748,
    "w": 212,
-   "h": 116,
+   "h": 206,
    "kind": "mono_w",
    "title": "Exam can be NORMAL",
    "lines": [
@@ -421,34 +432,37 @@
   {
    "id": "poly_inv_0_0",
    "x": 969,
-   "y": 606,
+   "y": 748,
    "w": 212,
-   "h": 116,
+   "h": 206,
    "kind": "poly_w",
    "title": "Axonal, sensorimotor",
    "lines": [
-    "large and small fibres · distal dying back"
+    "large and small fibres · distal dying back · often painful",
+    "other causes: infection (HIV, leprosy) · drugs · metabolic (uremia, thyroid) · autoimmune · hereditary · idiopathic"
    ]
   },
   {
    "id": "gbs_inv_0_0",
    "x": 1193,
-   "y": 606,
+   "y": 748,
    "w": 212,
-   "h": 116,
+   "h": 206,
    "kind": "gbs_w",
    "title": "WEAKNESS >> sensory loss",
    "lines": [
     "• AREFLEXIA, down-going toes",
-    "• EMG: demyelinating (some axonal)"
+    "• EMG: demyelinating (some axonal)",
+    "• vibration mildly ↓ · pinprick normal",
+    "• NOT muscle or cord: paresthesias + lost reflexes = NERVE"
    ]
   },
   {
    "id": "thal_tx_0_0",
    "x": 45,
-   "y": 762,
+   "y": 994,
    "w": 212,
-   "h": 96,
+   "h": 132,
    "kind": "warn",
    "title": "Expect it as he recovers",
    "lines": [
@@ -458,9 +472,9 @@
   {
    "id": "cord_tx_0_0",
    "x": 269,
-   "y": 762,
+   "y": 994,
    "w": 212,
-   "h": 96,
+   "h": 132,
    "kind": "warn",
    "title": "MRI of the cord",
    "lines": [
@@ -470,9 +484,9 @@
   {
    "id": "root_tx_0_0",
    "x": 521,
-   "y": 762,
+   "y": 994,
    "w": 212,
-   "h": 96,
+   "h": 132,
    "kind": "warn",
    "title": "Not a diabetic neuropathy",
    "lines": [
@@ -482,9 +496,9 @@
   {
    "id": "mono_tx_0_0",
    "x": 745,
-   "y": 762,
+   "y": 994,
    "w": 212,
-   "h": 96,
+   "h": 132,
    "kind": "ok",
    "title": "Reassure · no imaging",
    "lines": [
@@ -494,25 +508,26 @@
   {
    "id": "poly_tx_0_0",
    "x": 969,
-   "y": 762,
+   "y": 994,
    "w": 212,
-   "h": 96,
+   "h": 132,
    "kind": "ok",
    "title": "Treat the PAIN",
    "lines": [
-    "an analgesic or an antidepressant for neuropathic pain"
+    "an analgesic or an antidepressant for neuropathic pain · best for quality of life"
    ]
   },
   {
    "id": "gbs_tx_0_0",
    "x": 1193,
-   "y": 762,
+   "y": 994,
    "w": 212,
-   "h": 96,
+   "h": 132,
    "kind": "bad",
    "title": "IVIG · a neurologist",
    "lines": [
-    "can reach the cranial nerves and breathing muscles → intubation"
+    "• IVIG shortens the course · slow recovery, weeks to months",
+    "• can reach the cranial nerves and breathing muscles → intubation"
    ]
   }
  ],
@@ -520,12 +535,12 @@
   {
    "from": "root",
    "to": "g_cns",
-   "path": "M725.0 106V131H263.0V156"
+   "path": "M725.0 142V167H263.0V192"
   },
   {
    "from": "root",
    "to": "g_pns",
-   "path": "M725.0 106V131H963.0V156"
+   "path": "M725.0 142V167H963.0V192"
   },
   {
    "from": "thal_head_0_0",
@@ -630,5 +645,32 @@
    "from_dx": 336
   }
  ],
- "panels": []
+ "panels": [
+  {
+   "x": 45,
+   "y": 1160,
+   "w": 673,
+   "title": "Nerve pathology",
+   "items": [
+    "FUNCTIONAL BLOCK: reversible channel failure · lidocaine, cold, brief compression",
+    "WALLERIAN: axon breaks down distal to an injury · regrows 1-2 mm/day, months to years",
+    "DYING BACK: distal → proximal · diabetes, renal failure · vincristine, cisplatin, metronidazole · lead, arsenic, mercury, acrylamide",
+    "DEMYELINATION: GBS, CIDP, diphtheria, hereditary · remyelinates in up to 12 weeks",
+    "NEURONOPATHY: cell body · ALS, polio, West Nile · sensory: paraneoplastic, Sjögren's, B6, cisplatin"
+   ],
+   "cols": 1
+  },
+  {
+   "x": 732,
+   "y": 1160,
+   "w": 673,
+   "title": "Nerve injury after trauma",
+   "items": [
+    "NEURAPRAXIA: block + demyelination, axon intact · full recovery, weeks to 3 months",
+    "AXONOTMESIS: Wallerian, Schwann cells + endoneurium kept (crush) · 3-12 months, may be incomplete",
+    "NEUROTMESIS: axon + connective tissue cut · limited regrowth · SURGICAL repair"
+   ],
+   "cols": 1
+  }
+ ]
 }
