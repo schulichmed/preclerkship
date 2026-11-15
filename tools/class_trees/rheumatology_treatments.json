@@ -65,7 +65,7 @@
         {"text": "**I**nfection · **N**ecrosis (avascular)", "kind": "warn"},
         {"text": "**G**ain weight · **O**steoporosis", "kind": "warn"},
         {"text": "**I**nsomnia, psychosis · **D**iabetes", "kind": "warn"},
-        {"text": "+ proximal myopathy", "kind": "muted"}
+        {"text": "+ proximal myopathy · acne · slow wound healing · gastritis · Cushing's appearance", "kind": "muted"}
        ]
       }
      ]
@@ -108,7 +108,8 @@
       {
        "name": "Opioids",
        "lines": [
-        {"text": "Hardly ever: they do not treat inflammation", "kind": "bad"}
+        {"text": "Hardly ever: they do not treat inflammation", "kind": "bad"},
+        {"label": "Watch:", "text": "impaired cognition · constipation · dependence, withdrawal", "kind": "warn"}
        ]
       }
      ]
@@ -122,7 +123,8 @@
    "sections": [
     {
      "note": [
-      {"label": "All share GHMI:", "text": "**G**I · **H**epatotoxicity · **M**yelosuppression · **I**nfection, so monthly blood work", "kind": "warn"}
+      {"label": "All share GHMI:", "text": "**G**I · **H**epatotoxicity · **M**yelosuppression · **I**nfection, so monthly blood work", "kind": "warn"},
+      {"label": "Maternal Lung:", "text": "**M**ethotrexate and **L**eflunomide are teratogenic and cause pneumonitis", "kind": "bad"}
      ],
      "drugs": [
       {
@@ -131,7 +133,7 @@
        "agents": "20-25 mg WEEKLY + folic acid 5 mg weekly",
        "chips": [["6-8 wk", "warn"], ["teratogenic", "bad"]],
        "lines": [
-        {"label": "Also:", "text": "acute PNEUMONITIS · mouth ulcers", "kind": "warn"},
+        {"label": "Also:", "text": "acute PNEUMONITIS · mouth ulcers · fatigue · hair loss", "kind": "warn"},
         {"label": "Avoid:", "text": "alcohol · sulfa antibiotics", "kind": "bad"}
        ]
       },
@@ -140,14 +142,15 @@
        "chips": [["6-12 wk", "warn"], ["safe in pregnancy", "good"]],
        "lines": [
         {"label": "NOT GHMI:", "text": "no myelosuppression, no blood work", "kind": "ok"},
-        {"label": "Retinal toxicity:", "text": "baseline + yearly EYE exam", "kind": "warn"}
+        {"label": "Retinal toxicity:", "text": "bull's eye maculopathy, rare. Baseline + yearly EYE exam", "kind": "warn"},
+        {"label": "Also:", "text": "↓ visual acuity (accommodation) · GI upset · rash · sun sensitivity · headache", "kind": "warn"}
        ]
       },
       {
        "name": "Sulfasalazine",
        "chips": [["6-8 wk", "warn"], ["safe in pregnancy", "good"]],
        "lines": [
-        {"label": "Also:", "text": "APLASTIC ANEMIA · headache · reversible low sperm", "kind": "warn"},
+        {"label": "Also:", "text": "APLASTIC ANEMIA · headache · lightheadedness · rash, photosensitivity · reversible low sperm count", "kind": "warn"},
         {"label": "Avoid:", "text": "sulfa allergy · G6PD deficiency (screen)", "kind": "bad"}
        ]
       },
@@ -155,7 +158,7 @@
        "name": "Leflunomide",
        "chips": [["6-8 wk", "warn"], ["teratogenic", "bad"]],
        "lines": [
-        {"label": "Also:", "text": "HYPERTENSION (BP at baseline) · neuropathy · pneumonitis", "kind": "warn"},
+        {"label": "Also:", "text": "HYPERTENSION (BP at baseline) · peripheral neuropathy · pneumonitis · weight loss · hair loss", "kind": "warn"},
         {"label": "Pregnancy:", "text": "cholestyramine washout", "kind": "bad"}
        ]
       }
@@ -174,12 +177,15 @@
     {
      "drugs": [
       {
-       "name": "TNF inhibitors",
+       "name": "TNF inhibitors: read the name",
        "agents": "adalimumab, etanercept, infliximab (IV)",
        "chips": [["2 wk - 3 mo", "plain"]],
        "lines": [
-        {"label": "Avoid:", "text": "active, recent or recurrent infection · HEART FAILURE III-IV · active cancer · MS or a family history of it", "kind": "bad"},
-        {"label": "Can cause:", "text": "TB reactivation · worse heart failure · demyelination · skin cancer · drug-induced lupus", "kind": "warn"},
+        {"text": "**T** TB, opportunistic infections · tumours: skin cancer (<1%), possibly lymphoma", "kind": "warn"},
+        {"text": "**N** nerves: demyelination", "kind": "warn"},
+        {"text": "**F** failing heart · face rash (lupus)", "kind": "warn"},
+        {"text": "+ injection or infusion reactions", "kind": "muted"},
+        {"label": "TNF in, TNF out. Avoid if already:", "text": "active, recent or recurrent infection · active cancer · MS or a family history · HEART FAILURE III-IV", "kind": "bad"},
         {"label": "Hold for:", "text": "fever · infection · antibiotics · surgery", "kind": "warn"}
        ]
       },
