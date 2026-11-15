@@ -132,6 +132,7 @@ html{scroll-behavior:smooth}
 .vid.big{flex-direction:column;align-items:stretch;padding:0;overflow:hidden}
 .vid.big img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
 .vid.big span{padding:6px 8px}
+.vid.on{border-color:var(--c)}.vid.big.on img{display:none}
 .player{position:relative;aspect-ratio:16/9;margin-top:6px;border-radius:8px;overflow:hidden;background:#000}
 .player iframe,.player video{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
 .split{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:16px}
@@ -236,11 +237,16 @@ html{scroll-behavior:smooth}
 (function(){
   document.addEventListener('click',function(e){
     var b=e.target.closest('.vid[data-yt],.vid[data-mp4]'); if(!b)return; e.stopPropagation();
+    // a second tap on the button closes the player it opened
+    var span=b.querySelector('span');
+    if(b._player){b._player.remove(); b._player=null; b.classList.remove('on'); b.setAttribute('aria-expanded','false');
+      if(span)span.textContent=span.textContent.replace(/^✕ Close: /,'▶ '); return;}
     var d=document.createElement('div'); d.className='player';
     if(b.dataset.mp4){var v=document.createElement('video');v.src=b.dataset.mp4;v.controls=true;v.autoplay=true;v.playsInline=true;v.preload='metadata';
-      d.appendChild(v);b.replaceWith(d);return;}
-    d.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?autoplay=1&rel=0'+(+b.dataset.start?'&start='+b.dataset.start:'')+'" title="'+b.textContent.replace(/"/g,'')+'" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-    b.replaceWith(d);
+      d.appendChild(v);}
+    else d.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?autoplay=1&rel=0'+(+b.dataset.start?'&start='+b.dataset.start:'')+'" title="'+b.textContent.replace(/"/g,'')+'" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+    b.after(d); b._player=d; b.classList.add('on'); b.setAttribute('aria-expanded','true');
+    if(span)span.textContent=span.textContent.replace(/^▶ /,'✕ Close: ');
   },true);
   // the region chips: stuck under the search bar they shrink to names, keeping the page from jumping,
   // and the chip of the band in view is ringed
