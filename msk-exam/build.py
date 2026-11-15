@@ -209,8 +209,8 @@ OTTAWA = {
 
 EXAM = exam_page.Exam(
     key="msk", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening=OPENING,
-    h1="MSK exam, by region",
-    lead='Every exam from the suggested-videos list: the general exam first (approach, gait, neuro screen), then each region\'s look, feel and move, its special tests grouped under the problem you suspect, and its pearls. Built from the course objectives; videos for each test are at <a href="https://mskmedicine.com">mskmedicine.com</a>. For the dermatomes and myotomes drawn on a body, see the body map.',
+    h1="MSK exams",
+    lead='Look, feel, move and special tests for every joint, with a video for each test.',
     find='Find a test or a problem (e.g. meniscus, ulnar)',
     root='Every joint: Look → Feel → Move → Special tests → Neurovascular',
     root_note="Compare left with right · examine the joint above and below · watch gait for the back and legs. A test counts only when it reproduces the patient's own symptom or differs from the other side.",

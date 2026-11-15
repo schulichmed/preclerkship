@@ -3,7 +3,7 @@ Purpose: The shared engine for every clinical skills exam page (msk-exam is the 
          an exam's vault note "Summary Notes - <System> Clinical Skills" and renders the page:
          the clinical skills bar, the root-to-regions fan, a colour band per region opening on
          its spine card and TOSCE line, the tests grouped side by side under the problem you
-         suspect (picture, steps, positive, video), the pearls, search, Look/Test modes, credits.
+         suspect (picture, steps, positive, video), the pearls, search, credits.
 Author: Noor Simsam
 Date: 2026-10-28
 Input: an Exam (one per <system>-exam/build.py): the note path, its regions, tests, videos and
@@ -464,9 +464,11 @@ def rom_block(exam: Exam, key: str) -> str:
         return ""
     source = f'<span>{html.escape(exam.rom_source)}</span>' if exam.rom_source else ""
     if isinstance(moves, str):  # a region with no numbers: what to check instead
-        return f'<div class="rom"><h5 class="sub">Normal range of motion {source}</h5><p>{moves}</p></div>'
-    return (f'<div class="rom"><h5 class="sub">Normal range of motion {source}</h5>'
-            f'<div class="dials">{"".join(dial(l, d) for l, d in moves)}</div></div>')
+        inner = f'<p>{moves}</p>'
+    else:
+        inner = f'<div class="dials">{"".join(dial(l, d) for l, d in moves)}</div>'
+    return (f'<details class="acc moves rom"><summary>Normal range of motion</summary>'
+            f'<div>{f"""<p class="romsrc">{source}</p>""" if source else ""}{inner}</div></details>')
 
 
 def split_region(lines: list[str]) -> tuple[list[str], list[str]]:
@@ -542,7 +544,7 @@ def build_regions(exam: Exam, rows: list[dict], sections: dict[int, list[str]]) 
     for num, (key, title, week, color) in exam.regions.items():
         before, after = split_or_all(sections[num])
         regions.append({"key": key, "title": title, "week": week, "color": color,
-                        "exam": md_block(before) + rom_block(exam, key), "pearls": md_block(after), "wide": []})
+                        "exam": md_block(before), "pearls": md_block(after), "wide": []})
         regions[-1]["problems"] = problems_for(exam, rows, num, key)
     return regions
 
@@ -565,7 +567,8 @@ def problems_for(exam: Exam, rows: list[dict], num: int, key: str) -> list[dict]
 
 def card(exam: Exam, t: dict) -> str:
     """Render one test card."""
-    img = (f'<img src="img/{t["img"]}" alt="{html.escape(t["name"])}" loading="lazy">'
+    img = (f'<details class="acc moves pic"><summary>Picture</summary>'
+           f'<div><img src="img/{t["img"]}" alt="{html.escape(t["name"])}" loading="lazy"></div></details>'
            if t.get("img") else "")
     steps = "".join(f"<li>{s}</li>" for s in t["steps"])
     words = " ".join([t["name"], re.sub(r"<[^>]+>", "", t["for"])]).lower()
@@ -576,7 +579,7 @@ def card(exam: Exam, t: dict) -> str:
             f'{f"""<div class="hide h2 vids">{video(exam, exam.video[t["name"]])}</div>""" if t["name"] in exam.video else ""}'
             f'{f"""<div class="hide h2 vids">{other_video(exam, t["name"])}</div>""" if t["name"] in exam.other_video else ""}'
             f'{f"""<div class="hide h2 vids">{clips(exam, t["name"])}</div>""" if t["name"] in exam.clips else ""}'
-            f'<span class="pill">Tap to reveal</span></article>')
+            f'</article>')
 
 
 def wide_card(exam: Exam, title: str, body: str, slugs: list[str] | None = None, side: str = "",
@@ -593,10 +596,11 @@ def wide_card(exam: Exam, title: str, body: str, slugs: list[str] | None = None,
     if moves:
         side += (f'<details class="acc moves"><summary>Movements ({len(moves)})</summary>'
                  f'<div>{clips(exam, clip_key)}</div></details>')
+    side += rom_block(exam, clip_key) if clip_key else ""
     return (f'<article class="test wide" tabindex="0" data-words="{html.escape(words)}">'
             f'<h4>{html.escape(title)}</h4><div class="hide h1{" split" if side else ""}"><div class="xprose">{body}</div>'
             f'{f"""<div class="aside">{side}</div>""" if side else ""}</div>'
-            f'<span class="pill">Tap to reveal</span></article>')
+            f'</article>')
 
 
 def landmarks(exam: Exam, key: str) -> str:
@@ -621,7 +625,6 @@ def render(exam: Exam, regions: list[dict], credits: list[dict]) -> str:
                     f'<b>{r["title"]}</b><span>{r["week"]}</span>'
                     f'{f"""<span class="rn">{numbered(r)} {exam.count_noun}</span>""" if numbered(r) else ""}</a>'
                     for r in regions)
-    tabs = "".join(f'<a href="#{r["key"]}" style="--c:{r["color"]}">{html.escape(r["title"])}</a>' for r in regions)
     bands = []
     for r in regions:
         # the gait and root cards carry their videos inside, beside what each shows, not in a side column
@@ -668,7 +671,7 @@ def render(exam: Exam, regions: list[dict], credits: list[dict]) -> str:
             "EYEBROW": eyebrow,
             "H1": exam.h1, "LEAD": exam.lead, "FIND": exam.find, "ROOT": exam.root, "ROOT_NOTE": exam.root_note,
             "VIDEO_CREDIT": exam.video_credit, "COLS": str(len(regions)), "EDGE": f"{50 / len(regions):.1f}",
-            "CHIPS": chips, "TABS": tabs, "BANDS": "".join(bands), "CREDITS": cred}
+            "CHIPS": chips, "BANDS": "".join(bands), "CREDITS": cred}
     return re.sub(r"\{\{([A-Z0-9_]+)\}\}", lambda m: fill[m.group(1)], PAGE)
 
 
@@ -680,9 +683,6 @@ html{scroll-behavior:smooth}
 .q-masthead .lead a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
 .xm h2,.xm h3{font-family:var(--serif);font-weight:600;margin:0;letter-spacing:-.01em}
 .bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);padding:10px 0;margin:4px 0 6px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;border-bottom:1px solid var(--line)}
-.mode{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}
-.mode button{border:0;background:none;color:var(--ink);font:500 .85rem var(--sans);padding:7px 14px;cursor:pointer}
-.mode button[aria-pressed="true"]{background:var(--q-accent,var(--accent));color:#fff}
 .bar input{flex:1;min-width:180px;font:.88rem var(--sans);padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
 .hint{font-size:.8rem;color:var(--muted);width:100%;margin:0}
 /* the tree: root fans out to every region */
@@ -700,7 +700,7 @@ html{scroll-behavior:smooth}
 @media (max-width:980px){.fan{grid-template-columns:repeat(5,1fr);padding-top:12px}.fan::before,.rchip::before,.rchip::after{display:none}.stem{display:none}}
 @media (max-width:420px){.fan{grid-template-columns:repeat(2,1fr)}}
 /* region bands */
-.band{margin-top:28px;border-radius:14px;padding:10px;background:color-mix(in srgb,var(--c) 9%,transparent);scroll-margin-top:150px}
+.band{margin-top:28px;border-radius:14px;padding:10px;background:color-mix(in srgb,var(--c) 9%,transparent);scroll-margin-top:calc(var(--barh,58px) + 64px)}
 .bandhead{background:var(--c);color:#fff;border-radius:10px;padding:9px 14px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
 .bandhead h2{font-size:22px}.bandhead span{font-size:13px;opacity:.9}
 .prob{margin-top:12px}
@@ -709,17 +709,19 @@ html{scroll-behavior:smooth}
 .probs{display:flex;flex-wrap:wrap;gap:0 14px}
 .probs>.prob{flex:var(--n) 1 calc(var(--n) * 250px + (var(--n) - 1) * 10px);min-width:0;max-width:calc(var(--n) * 380px + (var(--n) - 1) * 10px)}
 .say{margin:0 0 8px;padding:8px 10px;border-left:3px solid var(--c);background:color-mix(in srgb,var(--c) 8%,var(--card));border-radius:6px}
-.tests{display:grid;align-items:start;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
-.test{background:var(--card);border:1.5px solid color-mix(in srgb,var(--c) 45%,var(--line));border-radius:10px;padding:10px 12px;position:relative;outline-offset:2px}
+.tests{display:grid;align-items:stretch;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
+.test{display:flex;flex-direction:column;background:var(--card);border:1.5px solid color-mix(in srgb,var(--c) 45%,var(--line));border-radius:10px;padding:10px 12px;position:relative;outline-offset:2px}
 .test h4{margin:0;font-size:15px}.test h4 .num{color:var(--c)}
 .test .for{margin:2px 0 6px;color:var(--muted);font-size:13px}
-.test img{display:block;width:100%;height:170px;object-fit:contain;background:#fff;border-radius:8px;border:1px solid var(--line);margin-bottom:6px}
+.test img{display:block;width:100%;height:170px;object-fit:contain;background:#fff;border-radius:8px;border:1px solid var(--line)}
+.test .pic{margin:0 0 4px}
+.test .vids{margin-top:auto;padding-top:8px}
+.probs>.prob{display:flex;flex-direction:column}.probs>.prob>.tests{flex:1}
 .test ol{margin:2px 0 0;padding-left:20px;font-size:13.5px}.test ol li{margin:2px 0}
 .lbl{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:6px}
 .pos{background:var(--ok-bg);border-radius:8px;padding:2px 8px 6px;margin-top:8px}
 .pos .lbl{color:var(--ok)}.pos p{margin:2px 0 0;font-size:13.5px}
 .pill{display:none}
-.vids{margin-top:8px}
 .vid{display:flex;align-items:center;gap:6px;width:100%;text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 8px;font:500 13px var(--sans);cursor:pointer;margin-top:6px;text-decoration:none}
 .vid:hover{border-color:var(--c)}
 .vid.big{flex-direction:column;align-items:stretch;padding:0;overflow:hidden}
@@ -737,12 +739,6 @@ html{scroll-behavior:smooth}
 .xprose th,.xprose td{border:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
 .xprose th{background:color-mix(in srgb,var(--c) 14%,var(--card))}
 .test.gone{display:none}.prob.gone,.band.gone{display:none}
-/* test mode: reveal steps, then the positive */
-body.quiz .test{cursor:pointer}
-body.quiz .test .hide{display:none}
-body.quiz .test[data-s="1"] .h1,body.quiz .test[data-s="2"] .h1,body.quiz .test[data-s="2"] .h2{display:block}
-body.quiz .test:not([data-s="2"]) .pill{display:inline-block;margin-top:8px;font-size:12px;font-weight:600;color:var(--c);border:1px solid var(--c);border-radius:999px;padding:2px 10px}
-body.quiz.hideimg .test img{display:none}
 .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 7px;margin-left:2px;vertical-align:1px}
 .credits{margin-top:40px;font-size:12.5px;color:var(--muted)}.credits .credits ul{padding-left:18px}.acc{border:1px solid var(--line);border-radius:10px;margin-top:10px;background:var(--card)}
 .acc>summary{cursor:pointer;padding:10px 14px;font-weight:600;font-size:14px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center}
@@ -751,12 +747,14 @@ body.quiz.hideimg .test img{display:none}
 .acc[open]>summary::after{content:"-"}
 .acc>p,.acc>ul{margin:0 14px 12px}
 .acc.moves{border-radius:8px}.acc.moves>summary{padding:6px 8px;font-size:13px}.acc.moves>div{padding:0 8px 8px}.acc>ul{padding-left:18px}
-/* the region tabs in the sticky bar: the band in view is underlined */
-.rtabs{order:-1;width:100%;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line);margin:-4px 0 2px}
-.rtabs::-webkit-scrollbar{display:none}
-.rtabs a{flex:none;padding:6px 10px 7px;font:600 13.5px var(--sans);color:var(--muted);text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-1px;white-space:nowrap}
-.rtabs a:hover{color:var(--ink)}
-.rtabs a.on{color:var(--ink);border-bottom-color:var(--c)}
+/* the region chips stick under the search bar; once stuck they shrink to names only, the band in view ringed */
+.fan{position:sticky;top:var(--barh,58px);z-index:4}
+.fan.stuck{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;padding:6px 4px;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.fan.stuck::before,.fan.stuck .rchip::before,.fan.stuck .rchip::after,.fan.stuck .rchip span{display:none}
+.fan.stuck .rchip{flex:1 0 auto;padding:5px 12px;white-space:nowrap}
+.fan.stuck .rchip b{font-size:13px}
+.fan.stuck .rchip.on{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--c)}
+@media (max-width:600px){.fan.stuck{gap:5px;padding:5px 2px}.fan.stuck .rchip{flex:0 1 auto;padding:3px 9px;border-radius:999px}.fan.stuck .rchip b{font-size:12px}}
 /* gait, root and range-of-motion layouts */
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 8px}
 .chips .vid{width:auto;margin:0;border-radius:999px;border-color:transparent;background:color-mix(in srgb,var(--c) 15%,var(--card));padding:4px 11px;font-size:12.5px;font-weight:600}
@@ -773,7 +771,7 @@ body.quiz.hideimg .test img{display:none}
 .rpanels{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:4px 18px}
 .rpanel{min-width:0}.rpanel .tw{margin-top:0}
 .mrc{margin-top:8px}.mrc p{margin:0}.mrc .chips{margin-top:6px}
-.rom{margin-top:12px}
+.romsrc{margin:0 0 6px;font-size:12px;color:var(--muted)}.romsrc span{margin:0}
 .dials{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
 .dial{margin:0;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:8px 6px 6px;text-align:center}
 .dial svg{display:block;width:100%;max-width:120px;margin:0 auto}
@@ -799,39 +797,21 @@ body.quiz.hideimg .test img{display:none}
 
 <main class="xm">
 <div class="bar">
-<div class="mode" role="group" aria-label="Mode"><button data-m="look" aria-pressed="true">Look</button><button data-m="quiz" aria-pressed="false">Test</button><button data-m="blind" aria-pressed="false">Test, no pictures</button></div>
 <input type="search" id="q" placeholder="{{FIND}}">
-<div class="rtabs" role="navigation" aria-label="Regions">{{TABS}}</div>
-<p class="hint" id="hint">Look: everything shown. Pick a region below to jump to it.</p>
+<p class="hint" id="hint">Pick a region below to jump to it.</p>
 </div>
 <div class="tree">
 <div class="root"><b>{{ROOT}}</b>
 <p>{{ROOT_NOTE}}</p></div>
 <div class="stem"></div>
-<nav class="fan">{{CHIPS}}</nav>
 </div>
+<div class="fanmark" aria-hidden="true"></div>
+<nav class="fan" aria-label="Regions">{{CHIPS}}</nav>
 {{BANDS}}
 <section class="credits"><details class="acc"><summary>Video credits</summary><p>{{VIDEO_CREDIT}}</p></details>{{CREDITS}}</section>
 </main>
 <script>
 (function(){
-  var body=document.body, hint=document.getElementById('hint');
-  var hints={look:'Look: everything shown. Pick a region below to jump to it.',
-    quiz:'Test: say the steps, then tap the card to check them; tap again for the positive finding.',
-    blind:'Test, no pictures: picture the test from its name alone, then tap to check.'};
-  document.querySelectorAll('.mode button').forEach(function(b){
-    b.addEventListener('click',function(){
-      document.querySelectorAll('.mode button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
-      var m=b.dataset.m; body.classList.toggle('quiz',m!=='look'); body.classList.toggle('hideimg',m==='blind');
-      document.querySelectorAll('.test').forEach(function(t){t.dataset.s='0'});
-      hint.textContent=hints[m];
-    });
-  });
-  function step(t){ if(!body.classList.contains('quiz'))return; t.dataset.s=String(Math.min(2,(+t.dataset.s||0)+1)); }
-  document.querySelectorAll('.test').forEach(function(t){
-    t.addEventListener('click',function(e){if(!e.target.closest('summary'))step(t)});
-    t.addEventListener('keydown',function(e){if(e.target.closest('summary'))return;if(e.key==='Enter'||e.key===' '){e.preventDefault();step(t)}});
-  });
   document.addEventListener('click',function(e){
     var b=e.target.closest('.vid[data-yt],.vid[data-mp4]'); if(!b)return; e.stopPropagation();
     var d=document.createElement('div'); d.className='player';
@@ -840,17 +820,28 @@ body.quiz.hideimg .test img{display:none}
     d.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?autoplay=1&rel=0'+(+b.dataset.start?'&start='+b.dataset.start:'')+'" title="'+b.textContent.replace(/"/g,'')+'" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
     b.replaceWith(d);
   },true);
-  // underline the tab of the band under the sticky bar, and keep that tab scrolled into the row
-  var tabs=[].slice.call(document.querySelectorAll('.rtabs a')), bar=document.querySelector('.bar');
+  // the region chips: stuck under the search bar they shrink to names, keeping the page from jumping,
+  // and the chip of the band in view is ringed
+  var bar=document.querySelector('.bar'), fan=document.querySelector('.fan'), fanmark=document.querySelector('.fanmark');
+  var tabs=[].slice.call(document.querySelectorAll('.fan .rchip')), full=0;
   function mark(){
-    var line=bar.getBoundingClientRect().bottom+60, cur=null;
-    tabs.forEach(function(a){var b=document.getElementById(a.getAttribute('href').slice(1)); if(b&&b.getBoundingClientRect().top<=line)cur=a;});
+    var barh=bar.offsetHeight; document.documentElement.style.setProperty('--barh',barh+'px');
+    var stuck=fanmark.getBoundingClientRect().top<barh;
+    if(stuck!==fan.classList.contains('stuck')){
+      if(stuck){full=fan.offsetHeight; fan.classList.add('stuck'); fan.style.marginBottom=(full-fan.offsetHeight)+'px';}
+      else{fan.classList.remove('stuck'); fan.style.marginBottom='';}
+    }
+    var line=fan.getBoundingClientRect().bottom+40, cur=null;
+    tabs.forEach(function(a){var b=document.getElementById(a.getAttribute('href').slice(1)); if(stuck&&b&&b.getBoundingClientRect().top<=line)cur=a;});
     tabs.forEach(function(a){
-      var on=a===cur, row=a.parentNode;
-      if(on&&!a.classList.contains('on'))row.scrollTo({left:a.offsetLeft-row.clientWidth/2+a.offsetWidth/2,behavior:'smooth'});
+      var on=a===cur;
       a.classList.toggle('on',on);});
   }
-  if(tabs.length){window.addEventListener('scroll',mark,{passive:true});mark();}
+  if(fan){
+    window.addEventListener('scroll',mark,{passive:true});
+    window.addEventListener('resize',function(){fan.classList.remove('stuck');fan.style.marginBottom='';mark();});
+    mark();
+  }
   document.getElementById('q').addEventListener('input',function(e){
     var q=e.target.value.trim().toLowerCase();
     document.querySelectorAll('.prob').forEach(function(p){
