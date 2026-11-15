@@ -246,8 +246,11 @@
   /* the filter bar is pinned over the top of the notes, so a note brought to
      the top has to land below it rather than under it */
   function barH() {
+    /* where the bar's bottom edge sits once pinned: below the course nav, which
+       is pinned too on a wide screen */
     var f = byId("note-filter");
-    return f ? f.getBoundingClientRect().height : 0;
+    if (!f) return 0;
+    return (parseFloat(window.getComputedStyle(f).top) || 0) + f.offsetHeight;
   }
 
   /* keep --nf-h at the bar's height, which wraps on a narrow window and grows a

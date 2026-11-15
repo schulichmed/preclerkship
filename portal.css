@@ -137,6 +137,21 @@
     border-radius:8px;
 }
 
+/* On a laptop or wider the course nav pins to the top of the window, so another
+   block or the question bank is one click away from anywhere on a long page.
+   A shadow in the page colour fills the strip above it, so text scrolling up
+   disappears behind it instead of showing through the gap. portal.js keeps
+   --bn-h at its height (0 when it is not pinned) for the bars and rails
+   pinned below it. On a phone it wraps to four rows, too tall to pin. */
+@media (min-width:961px){
+    .blocknav{
+        position:sticky;
+        top:8px;
+        z-index:16;
+        box-shadow:0 -8px 0 8px var(--bg);
+    }
+}
+
 .blocknav a{
     padding:6px 12px;
     border-radius:4px;
@@ -308,7 +323,7 @@ body[data-tab="questions"] .q-masthead .lead{display:none;}
     grid-column:1 / -1;
     min-width:0;
     position:sticky;
-    top:0;
+    top:var(--bn-h, 0px);
     z-index:15;
     display:flex;
     flex-wrap:wrap;
@@ -326,11 +341,17 @@ body[data-tab="questions"] .q-masthead .lead{display:none;}
 /* the weeks read as the sections of the block, like a page's own nav, rather
    than as filter pills: plain labels, the open week underlined on the bar's
    bottom rule */
-.notefilter{align-items:flex-end;padding-bottom:0;}
-.nf-search{margin-bottom:10px;}
-.notefilter .nf-weeks{gap:2px;align-self:stretch;align-items:flex-end;}
+/* balanced end to end: the search box and the week labels share one centre
+   line, and the weeks share out the rest of the width evenly instead of
+   bunching on the left */
+.notefilter{align-items:center;padding:0;}
+.nf-search{padding:10px 0;}
+.notefilter .nf-weeks{gap:0;align-self:stretch;align-items:stretch;}
 .notefilter .nf-weeks .chip{
-    padding:10px 12px 9px;
+    flex:1 1 0;
+    justify-content:center;
+    white-space:nowrap;
+    padding:0 10px;
     margin-bottom:-1px;
     font-size:.86rem;
     font-weight:500;
@@ -348,8 +369,8 @@ body[data-tab="questions"] .q-masthead .lead{display:none;}
 }
 .notefilter .railnote.hits{margin-bottom:10px;}
 #panel-notes > .rail{
-    top:calc(var(--nf-h, 64px) + 16px);
-    max-height:calc(100vh - var(--nf-h, 64px) - 32px);
+    top:calc(var(--bn-h, 0px) + var(--nf-h, 64px) + 16px);
+    max-height:calc(100vh - var(--bn-h, 0px) - var(--nf-h, 64px) - 32px);
 }
 .sr-only{
     position:absolute;
@@ -368,7 +389,7 @@ body[data-tab="questions"] .q-masthead .lead{display:none;}
     .nf-search{flex-basis:100%;}
     .notefilter .nf-weeks{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;}
     .notefilter .nf-weeks::-webkit-scrollbar{display:none;}
-    .notefilter .nf-weeks .chip{flex-shrink:0;}
+    .notefilter .nf-weeks .chip{flex:0 0 auto;padding:10px 12px 9px;}
 }
 @media (max-width:960px){#panel-notes > .rail{max-height:none;}}
 @media print{.notefilter{display:none !important;}}
@@ -620,8 +641,8 @@ body[data-tab="questions"] .q-masthead .lead{display:none;}
    itself. On a screen tall enough to fit it, nothing changes. */
 .rail{
     position:sticky;
-    top:24px;
-    max-height:calc(100vh - 48px);
+    top:calc(var(--bn-h, 0px) + 24px);
+    max-height:calc(100vh - var(--bn-h, 0px) - 48px);
     overflow-y:auto;
     scrollbar-gutter:stable;
     display:grid;

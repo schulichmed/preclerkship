@@ -1454,3 +1454,21 @@
 
   if (document.body) watch(document.body);
 })();
+
+/* The course nav is pinned to the top on a wide screen (portal.css). Keep
+   --bn-h at the depth it covers, nav plus the gap above it, so the bars and
+   rails pinned below it sit under it rather than behind it; 0 when it is
+   not pinned. */
+(function () {
+  var nav = document.querySelector(".blocknav");
+  if (!nav) return;
+  var root = document.documentElement;
+  function set() {
+    var pinned = window.getComputedStyle(nav).position === "sticky";
+    var top = parseFloat(window.getComputedStyle(nav).top) || 0;
+    root.style.setProperty("--bn-h", pinned ? (nav.offsetHeight + top) + "px" : "0px");
+  }
+  set();
+  if (window.ResizeObserver) new window.ResizeObserver(set).observe(nav);
+  window.addEventListener("resize", set);
+})();
