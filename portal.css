@@ -368,6 +368,13 @@ body[data-tab="questions"] .q-masthead .lead{display:none;}
     font-weight:600;
 }
 .notefilter .railnote.hits{margin-bottom:10px;}
+/* beside the sidebar, the bar uses the shell's own columns: the search box is
+   exactly as wide as the sidebar under it, and the weeks start where the
+   notes start */
+@media (min-width:961px){
+    .notefilter{display:grid;grid-template-columns:250px 1fr;column-gap:44px;row-gap:0;}
+    .notefilter .railnote.hits{grid-column:1 / -1;}
+}
 #panel-notes > .rail{
     top:calc(var(--bn-h, 0px) + var(--nf-h, 64px) + 16px);
     max-height:calc(100vh - var(--bn-h, 0px) - var(--nf-h, 64px) - 32px);
