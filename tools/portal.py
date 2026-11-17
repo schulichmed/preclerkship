@@ -69,6 +69,12 @@ COURSES = [
                       u"Their own practice questions, keyed by the deck, plus questions "
                       u"written from their high-yield slides. Where a review disagrees "
                       u"with this year's lecture, the lecture wins and the question says so."},
+            {"key": "offcurriculum", "name": u"Off-curriculum",
+             "tip": u"Not taught in this block's lectures",
+             "blurb": u"Questions the banks filed under this block that its lectures do "
+                      u"not teach, such as a sleep-medicine run the Meds 2024 bank left in "
+                      u"the hematology weeks. Kept here rather than deleted, and left out "
+                      u"of the scoreboard. Each one names where it is taught instead."},
         ],
     },
     {
