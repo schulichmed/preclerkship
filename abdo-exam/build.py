@@ -81,11 +81,8 @@ OPENING = {}
 
 EXAM = exam_page.Exam(
     key="abdo", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening=OPENING,
-    h1="Abdominal exam, in order",
-    lead="Inspect, auscultate, percuss, palpate, then the organs and a check for ascites. Each part is below in the order you "
-         "do it: what to look for, each manoeuvre grouped under the problem you suspect (numbered steps and what counts as "
-         "positive), and its pearls. Built from the Week 3 session and the course objectives; anything only the Gastroenterology "
-         "session adds is tagged <i>later</i>.",
+    h1="Abdominal exam",
+    lead='Inspect, listen, percuss and palpate, then the liver, spleen, ascites and appendicitis tests.',
     find="Find a manoeuvre (e.g. spleen)",
     root="Inspect → Auscultate → Percuss → Palpate → Organs → Ascites",
     root_note="Listen before you touch, and ask where it hurts and examine that spot last, watching the patient's face "

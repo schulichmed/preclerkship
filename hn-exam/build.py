@@ -86,11 +86,8 @@ OTHER_VIDEO = {
 
 EXAM = exam_page.Exam(
     key="hn", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening={},
-    h1="Head and neck, eye and ear",
-    lead="The general approach first, then each region in the faculty's order: what to look for, each manoeuvre "
-         "grouped under what it checks (numbered steps and what counts as positive), and its pearls. "
-         "Built from the Week 7 Head and Neck objectives; the eye in more depth (swinging flashlight, red reflex, "
-         "slit lamp) is tagged <i>later</i> and comes from the Transition to Clerkship Ophthalmology objectives.",
+    h1="Head and neck exam",
+    lead='Eye, ear, nose, mouth and face, then the neck.',
     find="Find a manoeuvre or a structure (e.g. Weber, thyroid, pupil)",
     root="Eye → Ear → Nose → Mouth → Face and head → Neck",
     root_note="Sit the patient up, look first, then use the instrument or your hands, and compare left with right. "

@@ -198,7 +198,8 @@ OPENING = {key: f"I would normally inspect the other side and examine the joint 
 
 # fracture rules the note gives as prose: one card, no picture
 OTTAWA = {
-    "num": "6", "name": "Ottawa ankle and foot rules", "problem": "Fracture: X-ray or not?", "img": None,
+    "num": "4", "name": "Ottawa ankle and foot rules", "problem": "Fracture: X-ray or not?", "img": None,
+    "after": "Deep vein thrombosis",  # after the talar tilt and Homan's, hands already on the malleoli
     "for": "Who needs an <b>X-ray</b> (age 18 or over)",
     "steps": ["Press the <b>back edge and tip of each malleolus</b> (distal 6 cm of tibia and fibula)",
               "Press the <b>base of the 5th metatarsal</b> and the <b>navicular</b>",
@@ -209,8 +210,8 @@ OTTAWA = {
 
 EXAM = exam_page.Exam(
     key="msk", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening=OPENING,
-    h1="MSK exams",
-    lead='Look, feel, move and special tests for every joint, with a video for each test.',
+    h1="MSK exam",
+    lead='Look, feel, move, then special tests for every joint. <a href="msk-one-pager.pdf">One-page summary (PDF)</a>',
     find='Find a test or a problem (e.g. meniscus, ulnar)',
     root='Every joint: Look → Feel → Move → Special tests → Neurovascular',
     root_note="Compare left with right · examine the joint above and below · watch gait for the back and legs. A test counts only when it reproduces the patient's own symptom or differs from the other side.",

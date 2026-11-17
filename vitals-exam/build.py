@@ -55,9 +55,8 @@ OPENING = {
 
 EXAM = exam_page.Exam(
     key="vitals", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening=OPENING,
-    h1="Vital signs and general inspection",
-    lead="The first thing you do in every exam: look at the patient, then pulse, breathing and blood pressure. "
-         "Each part has its numbered steps and what counts as positive. This is the core Year 1 session only.",
+    h1="Vital signs exam",
+    lead='Look at the patient, then pulse, breathing and blood pressure.',
     find="Find a sign or a vital (e.g. jaundice, orthostatic)",
     root="General inspection → Pulse → Respiratory rate → Blood pressure → (Temperature, SpO2)",
     root_note="The survey starts the moment you meet the patient. Anything paired is checked on both sides and compared.",

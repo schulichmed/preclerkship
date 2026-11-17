@@ -66,11 +66,8 @@ TESTS = {
 
 EXAM = exam_page.Exam(
     key="resp", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening={},
-    h1="Respiratory exam, front to back",
-    lead="The general approach and the history first, then each part of the exam in the order you do it: what to look for, "
-         "each manoeuvre grouped under what it tests (numbered steps and what counts as positive), and its pearls. "
-         "Built from the course objectives; anything only the PoM 1 Respirology session teaches is tagged "
-         "<i>later</i>. Each side of the chest goes inspect, palpate, percuss, auscultate, always comparing left with right.",
+    h1="Respiratory exam",
+    lead='Inspect, palpate, percuss and listen, back then front.',
     find="Find a manoeuvre or a finding (e.g. fremitus, crackles)",
     root="General inspection → Posterior chest → Anterior chest → Finish",
     root_note="Inspect, palpate, percuss, auscultate; compare left with right at the same level, and cover every lung "

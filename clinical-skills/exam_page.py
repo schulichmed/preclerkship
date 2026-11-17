@@ -562,6 +562,12 @@ def problems_for(exam: Exam, rows: list[dict], num: int, key: str) -> list[dict]
         problems.setdefault(problem, []).append({**r, "img": img})
     for extra in exam.extra_cards.get(key, []):
         problems.setdefault(extra["problem"], []).append(extra)
+        # "after": the problem heading this card's heading follows (so it sits in the exam order)
+        if extra.get("after") in problems:
+            order = list(problems)
+            order.remove(extra["problem"])
+            order.insert(order.index(extra["after"]) + 1, extra["problem"])
+            problems = {k: problems[k] for k in order}
     return [{"name": k, "tests": v} for k, v in problems.items()]
 
 

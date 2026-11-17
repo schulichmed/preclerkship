@@ -62,10 +62,7 @@ EXAM = exam_page.Exam(
         "rectal": "I'm going to place a gloved, lubricated finger in your rectum. It may feel like you need a bowel movement; tell me if you want me to stop.",
     },
     h1="Male genital and rectal exam",
-    lead="Consent and chaperone first, then each part in the order you do it: penis, scrotum and testes, "
-         "groin and hernia check (standing), then the anus, rectum and prostate (lying on the side). "
-         "Built from the Year 2 course objectives, because no faculty slides were found for this session; "
-         "anything beyond the objectives is tagged <i>extra</i>. Pictures are drawn schematics only.",
+    lead='Penis, scrotum and testes, groin and hernias, then the rectal exam.',
     find="Find a step or a finding (e.g. hernia, prostate)",
     root="Consent → Penis → Scrotum and testes → Groin and hernia → Anus, rectum and prostate → Explain",
     root_note="Look, then feel, comparing left with right. Say what you are about to do before you do it, "
