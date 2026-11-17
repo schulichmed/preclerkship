@@ -60,7 +60,7 @@ TESTS = {
     "Extra heart sounds": ("Normal and extra sounds", "heart-sounds-cycle.jpg"),
     "Describing a murmur": ("Murmurs", "describing-a-murmur.jpg"),
     "Aortic regurgitation position": ("Murmurs", "murmur-aortic-regurgitation.jpg"),
-    "Carotid auscultation": ("Murmurs", None),
+    "Carotid auscultation": ("Where and how to listen", None),  # still reclined, before the left-side and sitting-forward steps
     "Radial pulse": ("Arm pulses", "radial-pulse.jpg"),
     "Brachial pulse": ("Arm pulses", "brachial-pulse.jpg"),
     "Femoral pulse": ("Leg pulses", "femoral-pulse.jpg"),
