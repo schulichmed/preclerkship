@@ -34,19 +34,30 @@ WHAT AN ENTRY MAY SAY
       "lead":       "<p>...</p>", replaces the first paragraph of the answer
       "answer":     "<p>...</p>", replaces the whole answer (when the extractor glued
                                   another question's explanation onto this one)
+      "refile":     {"week": 12,  re-file under another week and lecture of the
+                     "weekLabel": "...",   same block (the extractor guessed the
+                     "review": [{"w", "n", "t"}]},   week, or the source misfiled it)
+      "offcurriculum": {"reason": "not-covered", "against": "..."}
+                                  move it to the block's Off-curriculum set:
+                                  kept to drill, never counted, and the flag says
+                                  where it is taught instead
+      "drop_flags": ["..."],      remove hand-added flags whose html contains this
+                                  text (a stopgap the repair now replaces)
       "why":        "..."         required: the lecture evidence, shown to readers
     }
 
 Every repaired question keeps the source's key in view: its "The key looks
 wrong" flag becomes a "Key corrected" note that names what the source said and
-why it changed, so nothing is silently rewritten.
+why it changed, so nothing is silently rewritten. The flag is rebuilt on every
+run, so editing an entry's "why" updates what readers see.
 """
 
-import glob, html, io, json, os, sys
+import datetime, glob, html, io, json, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-DONE = ("Key corrected", "Key repaired", "Not scored: no defensible key")
+DONE = ("Key corrected", "Key repaired", "Not scored: no defensible key",
+        "Off-curriculum", "Re-filed")
 
 
 def letters(xs):
@@ -106,23 +117,50 @@ def apply(q, fix):
             q["answer"] = lead + a[len(first):]
             changed.append("answer line")
 
+    refile = fix.get("refile")
+    if refile:
+        for k in ("week", "weekLabel", "review"):
+            if q.get(k) != refile[k]:
+                if k == "week" and "refiled" not in q:
+                    q["refiled"] = {"from": {"week": q.get("week"), "review": q.get("review")}}
+                q[k] = refile[k]
+                changed.append("re-filed %s" % k)
+    off = fix.get("offcurriculum")
+    if off and q.get("family") != "offcurriculum":
+        q["offCurriculum"] = {"reason": off.get("reason", "not-covered"), "from": q.get("family"),
+                              "against": off["against"],
+                              "checked": datetime.date.today().isoformat()}
+        q["family"] = "offcurriculum"
+        changed.append("off-curriculum")
+
     flags = q.get("flags") or []
-    if not any(f.get("title") in DONE for f in flags):
-        why = "<p>%s</p>" % html.escape(fix["why"], quote=False)
-        if fix.get("unscorable"):
-            title = "Not scored: no defensible key"
-            body = why
-        elif "correct" in fix and fix["correct"] != src and src:
-            title = "Key corrected"
-            body = "<p>The source keyed <strong>%s</strong>; the bank now scores <strong>%s</strong>.</p>%s" % (
-                letters(src), letters(q["correct"]), why)
-        else:
-            title = "Key repaired"
-            body = why
-        kept = [f for f in flags if not (f.get("type") == "red" and
-                                         (f.get("title") or "").startswith("The key looks"))]
-        q["flags"] = kept + [{"type": "warning" if fix.get("unscorable") else "note",
-                              "title": title, "html": body}]
+    for needle in fix.get("drop_flags") or []:
+        keep = [f for f in flags if needle not in (f.get("html") or "")]
+        if len(keep) != len(flags):
+            flags = keep
+            changed.append("old flag dropped")
+    why = "<p>%s</p>" % html.escape(fix["why"], quote=False)
+    if fix.get("unscorable"):
+        title = "Not scored: no defensible key"
+        body = why
+    elif "correct" in fix and fix["correct"] != src and src:
+        title = "Key corrected"
+        body = "<p>The source keyed <strong>%s</strong>; the bank now scores <strong>%s</strong>.</p>%s" % (
+            letters(src), letters(q["correct"]), why)
+    elif off:
+        title = "Off-curriculum"
+        body = why
+    elif refile:
+        title = "Re-filed"
+        body = why
+    else:
+        title = "Key repaired"
+        body = why
+    want = {"type": "warning" if fix.get("unscorable") else "note", "title": title, "html": body}
+    kept = [f for f in flags if f.get("title") not in DONE and
+            not (f.get("type") == "red" and (f.get("title") or "").startswith("The key looks"))]
+    if q.get("flags") != kept + [want]:
+        q["flags"] = kept + [want]
         changed.append("flag")
     return changed
 
