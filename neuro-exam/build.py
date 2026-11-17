@@ -120,11 +120,8 @@ OTHER_VIDEO = {
 
 EXAM = exam_page.Exam(
     key="neuro", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening={},
-    h1="Neurological exam, top down",
-    lead="The general approach first, then each part of the exam in the order you do it: what to look for, "
-         "each manoeuvre grouped under what it tests (numbered steps and what counts as positive), and its pearls. "
-         "Built from the course objectives and the PoM 2 Neurology lectures; anything only the PoM 2 Neurology session teaches is tagged "
-         "<i>later</i>. For the dermatomes and myotomes drawn on a body, see the body map.",
+    h1="Neurological exam",
+    lead='Mental status, cranial nerves, motor, sensory, reflexes, coordination, then gait.',
     find="Find a manoeuvre or a level (e.g. C7, cerebellum)",
     root="Mental status → Cranial nerves → Motor → Sensory → Reflexes → Coordination → Gait",
     root_note="Compare left with right, and near the trunk with far. Every finding answers one question: where is "

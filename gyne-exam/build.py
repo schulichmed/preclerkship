@@ -69,10 +69,8 @@ EXAM = exam_page.Exam(
         "bimanual": "Now I'll place two gloved fingers in the vagina and press gently on your lower tummy with my other hand, to feel your uterus and ovaries.",
         "obstetric": "I'm going to feel your tummy to check how the baby is growing and lying, then listen to the heartbeat. Tell me if anything is uncomfortable.",
     },
-    h1="Pelvic exam and obstetrical abdominal exam",
-    lead="Consent and a chaperone first, then each part in the order you do it: position and look, the speculum, the "
-         "bimanual exam, and for a pregnant patient the obstetrical abdominal exam. Built from the course objectives "
-         "(the session has no slides in the course notebook); the pictures are published illustrations, instruments and concept diagrams.",
+    h1="Pelvic exam",
+    lead='Position and look, speculum, bimanual, then the obstetrical abdominal exam.',
     find="Find a step or a finding (e.g. cervix, fundal height)",
     root="Consent → Position → Look → Speculum → Bimanual → Explain  |  Pregnant: fundal height → Leopold → heart",
     root_note="Say what you will do before you do it, and the patient can stop at any time. Stop means stop.",

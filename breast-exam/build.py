@@ -62,10 +62,8 @@ EXAM = exam_page.Exam(
         "axilla": "Last, I'd like to feel the lymph nodes under your arms, and above and below your collarbone. May I?",
         "male": "I'd like to look at and feel your chest and the tissue under your nipples. May I?",
     },
-    h1="Breast exam, look then feel",
-    lead="The general approach first (chaperone, draping, timing), then each part of the exam in the order you do it: "
-         "what to look for, each manoeuvre (numbered steps and what counts as positive), and its pearls. Built from the "
-         "Breast Exam session guide; pictures are line drawings and diagrams; the leaning-forward view and nipple palpation have none.",
+    h1="Breast exam",
+    lead='Inspect, palpate the breast, then the axillary nodes.',
     find="Find a manoeuvre or a finding (e.g. dimpling, nipple)",
     root="Inspect, sitting → Palpate the breast, lying → Palpate the nipple → Axillary nodes",
     root_note="Compare one side with the other. Be systematic (the same pattern every time), and protect modesty and comfort: "

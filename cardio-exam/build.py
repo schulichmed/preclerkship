@@ -90,11 +90,8 @@ OPENING = {
 TAUGHT_VIDEO = "https://geekymedics.com/cardiovascular-examination-2/"
 EXAM = exam_page.Exam(
     key="cardio", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening=OPENING,
-    h1="Cardiovascular exam: inspect, palpate, percuss, auscultate",
-    lead="The general approach and cardiac history first, then each part of the exam in the order you do it: "
-         "what to look for, each manoeuvre grouped under the problem you suspect (numbered steps and what counts "
-         "as positive), and the four classic murmurs. Built from the Week 4 session and the course objectives; "
-         "anything only the PoM 1 Cardiology session teaches is tagged <i>later</i>.",
+    h1="Cardiovascular exam",
+    lead='Inspect, then the neck, palpate and listen, then pulses and edema.',
     find="Find a manoeuvre or a murmur (e.g. JVP, apex, mitral)",
     root="Inspect → Palpate → Percuss → Auscultate",
     root_note="Neck veins and carotids, then the precordium and its four listening areas, then the pulses and the legs. "
