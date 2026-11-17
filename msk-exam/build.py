@@ -211,7 +211,7 @@ OTTAWA = {
 EXAM = exam_page.Exam(
     key="msk", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening=OPENING,
     h1="MSK exams",
-    lead='Look, feel, move and special tests for every joint, with a video for each test.',
+    lead='Look, feel, move and special tests for every joint, with a video for each test. <a href="msk-one-pager.pdf">Open the one-page summary (PDF)</a> to print or study from.',
     find='Find a test or a problem (e.g. meniscus, ulnar)',
     root='Every joint: Look → Feel → Move → Special tests → Neurovascular',
     root_note="Compare left with right · examine the joint above and below · watch gait for the back and legs. A test counts only when it reproduces the patient's own symptom or differs from the other side.",
