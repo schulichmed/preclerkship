@@ -21,11 +21,11 @@ has been drafted with AI help and is marked as reasoned.
 
 | Block | Weeks | Questions | Lecture notes |
 |---|---|---|---|
-| 1 · Cardiology | 1–5 | 619 | 26 of 43 |
-| 2 · Respirology | 6–8 | 259 | 16 of 25 |
-| 3 · Ear, Nose & Throat | 9 | 121 | 0 of 7 |
-| 4 · Gastroenterology | 10–13 | 596 | 12 of 41 |
-| 5 · Nephrology & Urology | 14–17 | 514 | 0 of 33 |
+| 1 · Cardiology | 1–5 | 619 | 33 of 43 |
+| 2 · Respirology | 6–8 | 259 | 10 of 25 |
+| 3 · Ear, Nose & Throat | 9 | 121 | 7 of 7 |
+| 4 · Gastroenterology | 10–13 | 596 | 21 of 41 |
+| 5 · Nephrology & Urology | 14–17 | 514 | 33 of 33 |
 
 95 questions carry a figure — ECGs, rhythm strips, chest films, angiograms,
 histology, anatomical diagrams.
@@ -127,13 +127,20 @@ running text.
 
 Every lecture in the course is listed whether or not a note has been written
 for it, so the tab reads as a map of the block rather than a list of whatever
-happens to be done. **54 of 149** carry a written note today, with 425 figures
-between them, lifted out of the upper-year study notes by
-[`tools/pom1/notes_from_pdf.py`](../tools/pom1/notes_from_pdf.py).
+happens to be done. **104 of 149** carry a written note today, with 500 figures
+between them. Cardiology, Respirology and Gastroenterology were lifted out of
+the upper-year study notes by
+[`tools/pom1/notes_from_pdf.py`](../tools/pom1/notes_from_pdf.py) and then
+cleaned by hand.
 
-The ENT and Nephrology & Urology blocks have no note at all yet, because no
-source covering them has been handed in. They render as a full block of
-placeholders, which is the point of the tab.
+ENT and Nephrology & Urology were written by hand in November 2026, every
+lecture of both. Nephrology & Urology comes from a separate upper-year GU
+document, read page by page because its uppercase headings do not fit the
+extractor. ENT comes from the last pages of the respiratory notes, which the
+extractor had filed under two Respirology lectures; those sections now live in
+the ENT block. The lectures neither document covers (the neck, pharynx, retroperitoneum and
+pelvis anatomy) were written from the medwiki lecture notes. Where the sources
+disagreed, the medwiki note settled it.
 
 ## Rebuilding
 
