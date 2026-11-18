@@ -138,6 +138,9 @@ class Exam:
     # degrees is the end of a 0-N range, or a (low, high) pair for a range that starts past 0
     rom: dict = field(default_factory=dict)
     rom_source: str = ""
+    # region key -> [{"file", "caption", "credit"}]: extra pictures in a collapsed accordion beside
+    # the region's look, feel, move (for figures the note embeds that are not test pictures)
+    region_pictures: dict = field(default_factory=dict)
     videos: dict = field(default_factory=dict, init=False)
 
 
@@ -411,7 +414,7 @@ def roots_body(exam: Exam, lines: list[str]) -> str:
         if "MRC" in line and exam.roots.get("mrc"):
             part = f'<div class="mrc">{part}{chips(video(exam, exam.roots["mrc"], label="Muscle testing, MRC scale"))}</div>'
         out.append(part)
-    return f'<div class="rpanels">{"".join(panels)}</div>{"".join(out)}'
+    return f'<div class="rpanels">{"".join(panels)}</div>{region_pictures(exam, "roots")}{"".join(out)}'
 
 
 def general_body(exam: Exam, title: str, lines: list[str]) -> str:
@@ -621,6 +624,19 @@ def landmarks(exam: Exam, key: str) -> str:
             f'<figcaption>{html.escape(caption) if caption else "Landmarks to feel · tap to enlarge"}</figcaption></figure>')
 
 
+def region_pictures(exam: Exam, key: str) -> str:
+    """Render a region's extra pictures (exam.region_pictures) as one collapsed accordion."""
+    pics = exam.region_pictures.get(key, [])
+    if not pics:
+        return ""
+    figs = "".join(f'<figure class="lm"><a href="img/{html.escape(p["file"])}" target="_blank" rel="noopener">'
+                   f'<img src="img/{html.escape(p["file"])}" alt="{html.escape(p["caption"])}" loading="lazy"></a>'
+                   f'<figcaption>{html.escape(p["caption"])}<br><i>{html.escape(p["credit"])}</i></figcaption></figure>'
+                   for p in pics)
+    label = exam.region_text.get(key, {}).get("pictures_label", "Pictures")
+    return f'<details class="acc moves pic"><summary>{html.escape(label)} ({len(pics)})</summary><div>{figs}</div></details>'
+
+
 def render(exam: Exam, regions: list[dict], credits: list[dict]) -> str:
     """Render the whole page."""
     def numbered(r: dict) -> int:
@@ -638,7 +654,7 @@ def render(exam: Exam, regions: list[dict], credits: list[dict]) -> str:
         wides = [("", t, b, exam.region_video.get(t), "", "" if t in inside else t) for t, b in r["wide"]]
         if r["exam"]:
             wides.insert(0, (exam.spine_heading, exam.region_text.get(r["key"], {}).get("spine_title", exam.spine_title), opening(exam, r["key"]) + r["exam"],
-                             exam.region_video.get(r["key"]), landmarks(exam, r["key"]), r["key"]))
+                             exam.region_video.get(r["key"]), landmarks(exam, r["key"]) + region_pictures(exam, r["key"]), r["key"]))
         top = "".join(f'<div class="prob">{f"<h3>{html.escape(h)}</h3>" if h else ""}'
                       f'<div class="tests">{wide_card(exam, t, b, v, side, k)}</div></div>' for h, t, b, v, side, k in wides)
         probs = "".join(f'<div class="prob" style="--n:{min(len(p["tests"]), 4)}"><h3>{html.escape(p["name"])}</h3>'
