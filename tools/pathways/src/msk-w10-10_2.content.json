@@ -5,329 +5,47 @@
  "root": {
   "title": "Prescribe physical activity like a drug: is it SAFE, then what DOSE?",
   "lines": [
-   "3 A's: ASK (activity, aware of benefits?) · ADVISE (benefits) · ACT (signpost to help)",
-   "ask: current activity · intentions · past activity + preferences, barriers, goals · is it safe (symptoms, history)?",
-   "biggest gain: from NONE to SOME, so target sedentary patients · some is good, more is better",
-   "LOW FITNESS: independent risk of death, as big as smoking, hypertension, cholesterol · hip fractures ↓ 55% (fewer falls) · bone density + 1-3% with high impact",
-   "only 25% of physicians counsel · 92% of patients would follow · a prescription raises activity 10%",
-   "case: 68 F, sedentary, fears falling, new untreated hypertension 140/85 · father MI at 70, mother hip fracture at 73"
+   "3 A's: ASK · ADVISE · ACT",
+   "biggest gain: from NONE to SOME"
   ]
  },
  "groups": [
-  {
-   "id": "g_safe",
-   "cols": [
-    0,
-    1
-   ],
-   "title": "1 · IS IT SAFE?",
-   "lines": [
-    "unstable or uncontrolled → review first"
-   ]
-  },
-  {
-   "id": "g_dose",
-   "cols": [
-    2,
-    2
-   ],
-   "title": "2 · WRITE THE DOSE",
-   "lines": [
-    "F.I.T.T."
-   ]
-  },
-  {
-   "id": "g_tail",
-   "cols": [
-    3,
-    4
-   ],
-   "title": "3 · TAILOR IT",
-   "lines": [
-    "blood pressure is not a reason to skip exercise"
-   ]
-  }
+  {"id": "g_safe", "cols": [0, 1], "title": "1 · IS IT SAFE?", "lines": ["unstable → review first"]},
+  {"id": "g_dose", "cols": [2, 2], "title": "2 · WRITE THE DOSE", "lines": ["F.I.T.T."]},
+  {"id": "g_tail", "cols": [3, 4], "title": "3 · TAILOR IT", "lines": ["BP is no reason to skip exercise"]}
  ],
- "sections": [
-  "head",
-  "check",
-  "do",
-  "avoid"
- ],
- "row_names": {
-  "check": "CHECK",
-  "do": "DO",
-  "avoid": "AVOID"
- },
+ "sections": ["head", "check", "do", "avoid"],
+ "row_names": {"check": "CHECK", "do": "DO", "avoid": "AVOID"},
  "columns": [
-  {
-   "id": "ci",
-   "colour": "orange",
-   "drop_label": "unstable",
-   "head": [
-    [
-     [
-      "h",
-      "Absolute contraindication",
-      [
-       "any ONE stops it"
-      ]
-     ]
-    ]
-   ],
-   "check": [
-    [
-     [
-      "t",
-      "Any of these?",
-      [
-       "• new or uncontrolled arrhythmia",
-       "• resting or uncontrolled tachycardia",
-       "• resting blood pressure (BP) > 180/100",
-       "• symptomatic hypotension",
-       "• unstable or crescendo angina",
-       "• acute or unstable heart failure",
-       "• unstable diabetes",
-       "• acute febrile illness"
-      ]
-     ]
-    ]
-   ],
-   "do": [
-    [
-     [
-      "warn",
-      "Stabilise, then review",
-      [
-       "BP > 180/100: control with medication BEFORE exercise"
-      ]
-     ]
-    ]
-   ],
-   "avoid": [
-    [
-     [
-      "bad",
-      "Exercise until controlled",
-      []
-     ]
-    ]
-   ]
+  {"id": "ci", "colour": "orange", "drop_label": "unstable",
+   "head": [[["h", "Absolute contraindication", ["any ONE stops it"]]]],
+   "check": [[["t", "Any of these?", ["• resting BP > 180/100", "• unstable angina or HF", "• uncontrolled arrhythmia", "• acute febrile illness"]]]],
+   "do": [[["warn", "Stabilise, then review", ["control BP BEFORE exercise"]]]],
+   "avoid": [[["bad", "Exercise until controlled", []]]]
   },
-  {
-   "id": "risk",
-   "colour": "teal",
-   "drop_label": "stable",
-   "head": [
-    [
-     [
-      "h",
-      "Stratify cardiovascular risk",
-      [
-       "start low, go slow if sedentary"
-      ]
-     ]
-    ]
-   ],
-   "check": [
-    [
-     [
-      "t",
-      "Symptoms? Risk factors?",
-      [
-       "• chest, neck, jaw or arm pain",
-       "• breathless at rest or mild exertion",
-       "• dizziness, syncope, palpitations",
-       "• ankle edema, claudication, murmur",
-       "• orthopnea, nocturnal dyspnea · unusual fatigue"
-      ]
-     ]
-    ]
-   ],
-   "do": [
-    [
-     [
-      "w",
-      "Start by risk",
-      [
-       "• low risk → self-directed",
-       "• risk factors (↑ BP) → low/moderate intensity",
-       "• high risk → investigations (ECG) first",
-       "• symptoms → supervised, or exercise specialist"
-      ]
-     ]
-    ]
-   ],
-   "avoid": [
-    [
-     [
-      "bad",
-      "Symptoms DURING exercise",
-      [
-       "stop and promptly evaluate or refer: warn patients of these"
-      ]
-     ]
-    ]
-   ]
+  {"id": "risk", "colour": "teal", "drop_label": "stable",
+   "head": [[["h", "Stratify cardiovascular risk", ["start low, go slow"]]]],
+   "check": [[["t", "Symptoms? Risk factors?", ["• chest pain", "• breathless at mild exertion", "• syncope, palpitations"]]]],
+   "do": [[["w", "Start by risk", ["• low risk → self-directed", "• high risk → ECG first", "• symptoms → supervised"]]]],
+   "avoid": [[["bad", "Symptoms DURING exercise", ["stop and evaluate"]]]]
   },
-  {
-   "id": "fitt",
-   "colour": "blue",
-   "head": [
-    [
-     [
-      "h",
-      "F.I.T.T.",
-      [
-       "target ≥ 150 min a week, moderate-vigorous"
-      ]
-     ]
-    ]
-   ],
-   "check": [
-    [
-     [
-      "t",
-      "Talk test for intensity",
-      [
-       "• can SING = light",
-       "• can TALK, not sing = moderate",
-       "• no conversation = vigorous",
-       "moderate: ↑ breathing + heart rate, warm, may sweat · vigorous: sport, running, aerobics"
-      ]
-     ]
-    ]
-   ],
-   "do": [
-    [
-     [
-      "ok",
-      "Typical prescription",
-      [
-       "• 5 times a week",
-       "• moderate intensity",
-       "• 30 minutes",
-       "• aerobic: walk, cycle, dance, swim, jog",
-       "• + strength 2 days a week (10-15 reps): stand from sitting, stairs, heavy gardening, bands",
-       "• build strength, sit less, improve balance"
-      ]
-     ]
-    ]
-   ],
-   "avoid": [
-    [
-     [
-      "warn",
-      "Adjust if",
-      [
-       "• severe pain during exercise",
-       "• pain that does not settle after",
-       "• more night pain or joint swelling"
-      ]
-     ]
-    ]
-   ]
+  {"id": "fitt", "colour": "blue",
+   "head": [[["h", "F.I.T.T.", ["≥ 150 min a week"]]]],
+   "check": [[["t", "Talk test for intensity", ["• can SING = light", "• TALK, not sing = moderate", "• no conversation = vigorous"]]]],
+   "do": [[["ok", "Typical prescription", ["• 5 times a week, 30 min", "• moderate, aerobic", "• + strength 2 days a week"]]]],
+   "avoid": [[["warn", "Adjust if", ["• severe pain during exercise", "• more night pain or swelling"]]]]
   },
-  {
-   "id": "htn",
-   "colour": "purple",
-   "head": [
-    [
-     [
-      "h",
-      "Hypertension",
-      []
-     ]
-    ]
-   ],
-   "check": [
-    [
-     [
-      "t",
-      "BP under 180/100?",
-      [
-       "if not, control it with medication first"
-      ]
-     ]
-    ]
-   ],
-   "do": [
-    [
-     [
-      "ok",
-      "Do",
-      [
-       "• warm-up 15 min, cool-down 10 min",
-       "• keep the feet moving",
-       "• protect joints if obese or inactive",
-       "• one rest day a week"
-      ]
-     ]
-    ]
-   ],
-   "avoid": [
-    [
-     [
-      "bad",
-      "Don't",
-      [
-       "• very strenuous resistance training (left ventricle > 300 mmHg)",
-       "• vigorous exercise with left ventricular hypertrophy",
-       "• lying-down (postural hypotension)",
-       "• isometric or overhead exercises"
-      ]
-     ]
-    ]
-   ]
+  {"id": "htn", "colour": "purple",
+   "head": [[["h", "Hypertension", []]]],
+   "check": [[["t", "BP under 180/100?", ["if not, medication first"]]]],
+   "do": [[["ok", "Do", ["• long warm-up, cool-down", "• keep the feet moving"]]]],
+   "avoid": [[["bad", "Don't", ["• heavy resistance training", "• isometric or overhead work"]]]]
   },
-  {
-   "id": "med",
-   "colour": "olive",
-   "head": [
-    [
-     [
-      "h",
-      "Blood pressure medications",
-      []
-     ]
-    ]
-   ],
-   "check": [
-    [
-     [
-      "t",
-      "NOT a contraindication",
-      [
-       "antihypertensives: keep exercising",
-       "diuretic: dehydration risk, toilets nearby"
-      ]
-     ]
-    ]
-   ],
-   "do": [
-    [
-     [
-      "ok",
-      "Recommended",
-      [
-       "• angiotensin-converting enzyme (ACE) inhibitor or angiotensin receptor blocker: minimal problems",
-       "• calcium channel blocker: extend the warm-down (postural hypotension)"
-      ]
-     ]
-    ]
-   ],
-   "avoid": [
-    [
-     [
-      "bad",
-      "Beta-blockers",
-      [
-       "↓ maximum heart rate and performance: BAD for high intensity, avoid in athletes (ACE inhibitor first)",
-       "~but they limit the hypertensive response to exercise"
-      ]
-     ]
-    ]
-   ]
+  {"id": "med", "colour": "olive",
+   "head": [[["h", "Blood pressure medications", []]]],
+   "check": [[["t", "NOT a contraindication", ["diuretic: dehydration risk"]]]],
+   "do": [[["ok", "Recommended", ["• ACE inhibitor or ARB", "• CCB: longer warm-down"]]]],
+   "avoid": [[["bad", "Beta-blockers", ["↓ maximum heart rate", "avoid in athletes"]]]]
   }
  ]
 }

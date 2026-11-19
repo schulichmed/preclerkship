@@ -5,508 +5,61 @@
  "root": {
   "title": "Foot or ankle pain: was there an INJURY? If not, WHERE does it hurt?",
   "lines": [
-   "almost all: education first, with a long, slow recovery expected · surgery is the exception"
+   "education first: a long, slow recovery",
+   "surgery is the exception"
   ]
  },
  "groups": [
-  {
-   "id": "g_inj",
-   "cols": [
-    0,
-    0
-   ],
-   "title": "INJURY: a twisted ankle",
-   "lines": []
-  },
-  {
-   "id": "g_heel",
-   "cols": [
-    1,
-    2
-   ],
-   "title": "NO injury: the HEEL",
-   "lines": []
-  },
-  {
-   "id": "g_med",
-   "cols": [
-    3,
-    3
-   ],
-   "title": "MEDIAL ankle, arch dropping",
-   "lines": []
-  },
-  {
-   "id": "g_fore",
-   "cols": [
-    4,
-    5
-   ],
-   "title": "The FOREFOOT",
-   "lines": []
-  },
-  {
-   "id": "g_dm",
-   "cols": [
-    6,
-    6
-   ],
-   "title": "DIABETES",
-   "lines": []
-  }
+  {"id": "g_inj", "cols": [0, 0], "title": "INJURY: a twisted ankle", "lines": []},
+  {"id": "g_heel", "cols": [1, 2], "title": "NO injury: the HEEL", "lines": []},
+  {"id": "g_med", "cols": [3, 3], "title": "MEDIAL ankle, arch dropping", "lines": []},
+  {"id": "g_fore", "cols": [4, 5], "title": "The FOREFOOT", "lines": []},
+  {"id": "g_dm", "cols": [6, 6], "title": "DIABETES", "lines": []}
  ],
- "sections": [
-  "head",
-  "pres",
-  "inv",
-  "tx"
- ],
- "row_names": {
-  "pres": "PRESENTS AS",
-  "inv": "WORKUP",
-  "tx": "TREATMENT"
- },
+ "sections": ["head", "pres", "inv", "tx"],
+ "row_names": {"pres": "PRESENTS AS", "inv": "WORKUP", "tx": "TREATMENT"},
  "columns": [
-  {
-   "id": "spr",
-   "colour": "teal",
-   "head": [
-    [
-     [
-      "h",
-      "Ankle sprain",
-      [
-       "85% lateral: twist in plantarflexion + inversion",
-       "medial: deltoid (foot caught on turf)"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Swelling · bruising · pain over the ligament",
-      [
-       "• anterior talofibular (ATFL) > calcaneofibular > posterior talofibular",
-       "• anterior drawer test: ATFL",
-       "• partial to full tear · all three torn → dislocation"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "t",
-      "Ottawa rules: X-ray if ANY",
-      [
-       "• bone tenderness: back 6 cm or tip of either malleolus, navicular, 5th metatarsal base",
-       "• cannot bear weight at once AND in the emergency department"
-      ]
-     ]
-    ],
-    [
-     [
-      "bad",
-      "X-ray: a sprain that is a FRACTURE",
-      [
-       "• unimalleolar: non-operative if the talus is stable",
-       "• bimalleolar (forceful EVERSION): usually surgery",
-       "• trimalleolar: unstable → surgery",
-       "• Maisonneuve (forceful external rotation): interosseous ligament torn ± medial malleolus avulsion or deltoid rupture → surgery"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "1 · Rest, ice, compression, elevation (RICE)",
-      [
-       "• brief immobilization only if needed",
-       "• EARLY mobilization, strengthening, proprioception",
-       "• NSAIDs, analgesics · bracing or taping: pros and cons",
-       "• education: most improve · avoid recurrence"
-      ]
-     ]
-    ],
-    [
-     [
-      "warn",
-      "Ongoing instability → ligament reconstruction",
-      []
-     ]
-    ]
-   ]
+  {"id": "spr", "colour": "teal",
+   "head": [[["h", "Ankle sprain", ["mostly LATERAL: inversion twist", "medial: deltoid"]]]],
+   "pres": [[["t", "Swelling, bruising over the ligament", ["• ATFL most often", "• anterior drawer: ATFL"]]]],
+   "inv": [[["t", "Ottawa: X-ray if ANY", ["• tender malleolus: back 6 cm or tip", "• tender navicular, 5th MT base", "• can't weight bear"]]], [["bad", "Or a FRACTURE", ["• unimalleolar, talus stable: non-op", "• bi-, trimalleolar → surgery", "• Maisonneuve → surgery"]]]],
+   "tx": [[["ok", "1 · RICE, EARLY mobilization", ["• strength, proprioception", "• educate: most improve"]]], [["warn", "Ongoing instability → reconstruction", []]]]
   },
-  {
-   "id": "ach",
-   "colour": "orange",
-   "drop_label": "BACK of the heel",
-   "head": [
-    [
-     [
-      "h",
-      "Achilles tendinopathy",
-      [
-       "runners, after a rise in training"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Pain at or just above the calcaneal insertion",
-      [
-       "• tender",
-       "• worse with passive dorsiflexion"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Clinical",
-      []
-     ]
-    ],
-    [
-     [
-      "bad",
-      "RUPTURE: active people in their 30s-40s",
-      [
-       "surgery vs cast or boot: decide WITH the patient",
-       "surgery: slightly fewer re-ruptures but infection, wound problems, scarring, sural nerve injury"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "Activity change · footwear that does not press",
-      [
-       "• heel wedge, cautiously",
-       "• physio: stretching, ECCENTRIC strengthening, friction massage, shockwave",
-       "• NSAIDs topical or oral · ? topical nitrites",
-       "• intervention or surgery rare"
-      ]
-     ]
-    ]
-   ]
+  {"id": "ach", "colour": "orange", "drop_label": "BACK of the heel",
+   "head": [[["h", "Achilles tendinopathy", ["runners, after a rise in training"]]]],
+   "pres": [[["t", "Pain at or above the insertion", ["• worse with passive dorsiflexion"]]]],
+   "inv": [[["w", "Clinical", []]], [["bad", "RUPTURE: active, 30s-40s", ["surgery or boot: decide WITH patient"]]]],
+   "tx": [[["ok", "Activity change · footwear", ["• physio: ECCENTRIC strengthening", "• NSAIDs · surgery rare"]]]]
   },
-  {
-   "id": "pf",
-   "colour": "olive",
-   "drop_label": "UNDER the heel",
-   "head": [
-    [
-     [
-      "h",
-      "Plantar fasciitis",
-      [
-       "age 40-60, F > M",
-       "plantar fascia overworked: chronic insertional inflammation"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Anteromedial heel pain on the FIRST morning steps",
-      [
-       "• and with ongoing activity"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Exam",
-      [
-       "• tender",
-       "• worse with passive dorsiflexion",
-       "• tight Achilles"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "Heel pad · arch-support shoes · weight loss",
-      [
-       "• heel lift or wedge: careful long term",
-       "• fascia stretching · strengthen arch stabilizers: tibialis posterior, intrinsics",
-       "• night splints · oral NSAIDs (rarely injected)"
-      ]
-     ]
-    ],
-    [
-     [
-      "warn",
-      "Surgical release: very, very rarely",
-      []
-     ]
-    ]
-   ]
+  {"id": "pf", "colour": "olive", "drop_label": "UNDER the heel",
+   "head": [[["h", "Plantar fasciitis", ["age 40-60, F > M", "overworked fascia insertion"]]]],
+   "pres": [[["t", "Heel pain on FIRST morning steps", ["• anteromedial heel"]]]],
+   "inv": [[["w", "Exam", ["• tender · tight Achilles"]]]],
+   "tx": [[["ok", "Heel pad · arch support", ["• fascia stretching", "• night splints · oral NSAIDs"]]], [["warn", "Surgical release: very rare", []]]]
   },
-  {
-   "id": "tp",
-   "colour": "purple",
-   "head": [
-    [
-     [
-      "h",
-      "Tibialis posterior dysfunction",
-      [
-       "tendon hypovascular below the medial malleolus",
-       "risk: trauma, steroids, inflammatory arthritis, obesity, diabetes"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Medial ankle pain ± swelling",
-      [
-       "• mild, then significant weakness",
-       "• flat foot: FLEXIBLE, then RIGID (dropped talus)"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "\"Too many toes\" sign",
-      [
-       "is the flat foot flexible or rigid?"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "RICE · physio for the arch stabilizers · orthosis",
-      [
-       "• orthosis: foot or ankle-foot · corrective vs accommodative",
-       "• NSAIDs if needed · modify risk factors"
-      ]
-     ]
-    ],
-    [
-     [
-      "warn",
-      "Surgery by severity",
-      []
-     ]
-    ]
-   ]
+  {"id": "tp", "colour": "purple",
+   "head": [[["h", "Tibialis posterior dysfunction", ["hypovascular below medial malleolus"]]]],
+   "pres": [[["t", "Medial ankle pain ± swelling", ["• weakness", "• flat foot: FLEXIBLE, then RIGID"]]]],
+   "inv": [[["w", "\"Too many toes\" sign", ["flat foot flexible or rigid?"]]]],
+   "tx": [[["ok", "RICE · physio · orthosis", ["• modify risk factors"]]], [["warn", "Surgery by severity", []]]]
   },
-  {
-   "id": "bun",
-   "colour": "brown",
-   "drop_label": "big toe",
-   "head": [
-    [
-     [
-      "h",
-      "Bunion (hallux valgus)",
-      [
-       "footwear (F > M) · metatarsus varus"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Pain at the medial first metatarsophalangeal joint",
-      [
-       "• tops of toes in a tight shoe",
-       "• other toes overwork at toe-off",
-       "• secondary toe deformities"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Is it still FLEXIBLE?",
-      [
-       "positioning works only if it is"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "Treat EARLY and often to avoid surgery",
-      [
-       "• wider toe box · positioning if flexible",
-       "• no real drug (topical NSAID?)"
-      ]
-     ]
-    ],
-    [
-     [
-      "warn",
-      "Surgical realignment",
-      []
-     ]
-    ]
-   ]
+  {"id": "bun", "colour": "brown", "drop_label": "big toe",
+   "head": [[["h", "Bunion (hallux valgus)", ["footwear (F > M)"]]]],
+   "pres": [[["t", "Pain at the medial 1st MTP joint", ["• tight shoes", "• secondary toe deformities"]]]],
+   "inv": [[["w", "Is it still FLEXIBLE?", ["positioning works only if it is"]]]],
+   "tx": [[["ok", "Treat EARLY to avoid surgery", ["• wider toe box", "• positioning if flexible"]]], [["warn", "Surgical realignment", []]]]
   },
-  {
-   "id": "mor",
-   "colour": "magenta",
-   "drop_label": "burning",
-   "head": [
-    [
-     [
-      "h",
-      "Morton's neuroma",
-      [
-       "common digital nerve fibrosis, usually 3rd-4th metatarsal space"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Burning dysesthesia",
-      [
-       "• middle-aged, F > M",
-       "• high heels, narrow toe box"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Squeeze or press reproduces it",
-      [
-       "sensory findings only, NO motor"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "Lower heel · wider, taller toe box",
-      [
-       "• metatarsal pad in a foot orthosis",
-       "• neuropathic pain drugs",
-       "• steroid injection"
-      ]
-     ]
-    ],
-    [
-     [
-      "warn",
-      "Excision",
-      []
-     ]
-    ]
-   ]
+  {"id": "mor", "colour": "magenta", "drop_label": "burning",
+   "head": [[["h", "Morton's neuroma", ["digital nerve fibrosis, 3rd-4th space"]]]],
+   "pres": [[["t", "BURNING dysesthesia", ["• high heels, narrow toe box"]]]],
+   "inv": [[["w", "Squeeze reproduces it", ["sensory only, NO motor"]]]],
+   "tx": [[["ok", "Lower heel · wider toe box", ["• metatarsal pad", "• steroid injection"]]], [["warn", "Excision", []]]]
   },
-  {
-   "id": "dm",
-   "colour": "slate",
-   "head": [
-    [
-     [
-      "h",
-      "Diabetic foot",
-      [
-       "neuropathy + poor blood flow",
-       "ulcer in 15% of people with diabetes"
-      ]
-     ]
-    ]
-   ],
-   "pres": [
-    [
-     [
-      "t",
-      "Cannot feel injuries",
-      [
-       "• less sweat → dry skin · callus",
-       "• intrinsic atrophy → arch, shape change",
-       "• Charcot (neuropathic) joint"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Monofilament sensation test",
-      []
-     ]
-    ],
-    [
-     [
-      "w",
-      "Pulses: dorsalis pedis + posterior tibial",
-      [
-       "• both sides together: SYMMETRY",
-       "• diminished → arterial disease",
-       "• occlusion: pain, pallor, paresthesia, paralysis, pulselessness"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "PREVENTION: daily mirror checks",
-      [
-       "• proper socks and shoes"
-      ]
-     ]
-    ],
-    [
-     [
-      "bad",
-      "Ulcer → specialized care",
-      [
-       "debridement or amputation may be needed"
-      ]
-     ]
-    ]
-   ]
+  {"id": "dm", "colour": "slate",
+   "head": [[["h", "Diabetic foot", ["neuropathy + poor blood flow"]]]],
+   "pres": [[["t", "Cannot feel injuries", ["• dry skin · callus", "• Charcot joint"]]]],
+   "inv": [[["w", "Monofilament test", []]], [["w", "Pulses: DP + posterior tibial", ["• compare both sides", "• diminished → arterial disease"]]]],
+   "tx": [[["ok", "PREVENTION: daily mirror checks", ["• proper socks and shoes"]]], [["bad", "Ulcer → specialized care", ["debridement or amputation"]]]]
   }
  ]
 }

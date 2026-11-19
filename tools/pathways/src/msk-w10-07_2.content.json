@@ -2,60 +2,53 @@
  "name": "psychological factors in chronic pain overview",
  "title": "A patient with chronic pain: assess everyone, then decide whether the distress is more than chronic pain. If not, manage biologically, psychologically and by rehabilitation. If so, tell somatic symptom disorder, conversion disorder, factitious disorder and malingering apart by whether the behaviour is conscious and whether the gain is external, and assess and manage each",
  "col_w": 220,
- "root": {"title": "Chronic pain: is the distress MORE than chronic pain? (distressing symptoms with abnormal thoughts, feelings or behaviours)",
-  "lines": ["ASSESS EVERY patient first:", "history: duration, nature, physical AND psychological symptoms incl. SUICIDAL THOUGHTS, what was tried, effect on function", "review past investigations, new only if indicated · pain diary: rate the sensation and the distress SEPARATELY", "pain scores: words · 0-10 · faces · visual analogue · McGill questionnaire", "case: 47 M, crush injury, tibia + fibula fixed and healed · 1 year on: pain, disability, off work on compensation"]},
+ "root": {"title": "Chronic pain: is the distress MORE than chronic pain?",
+  "lines": ["assess EVERY patient · ask about SUICIDE", "rate sensation and distress SEPARATELY"]},
  "groups": [
-  {"id": "g_no", "cols": [0, 2], "title": "NO: chronic pain", "lines": ["multimodal, multidisciplinary", "realistic, measurable goals · MANAGE, not cure", "start EARLY, before 12 weeks · stay active, return to work", "patient as PARTNER · liaise with work, family · reassess"]},
-  {"id": "g_yes", "cols": [3, 6], "title": "YES: which fits?", "lines": ["unconscious or conscious? external gain?"]}
+  {"id": "g_no", "cols": [0, 2], "title": "NO: chronic pain", "lines": ["MANAGE, not cure", "start EARLY, before 12 weeks"]},
+  {"id": "g_yes", "cols": [3, 6], "title": "YES: which fits?", "lines": ["conscious? external gain?"]}
  ],
  "tiers": [
-  {"id": "t1", "cols": [5, 6], "title": "Motivated by EXTERNAL gain?", "lines": ["presents self or another as ill"]}
+  {"id": "t1", "cols": [5, 6], "title": "Motivated by **EXTERNAL gain**?", "lines": [], "em": "#8a5a2b"}
  ],
  "sections": ["head", "pres", "inv", "tx"],
  "row_names": {"pres": "WHAT", "inv": "KEY", "tx": "DO NEXT"},
  "columns": [
   {"id": "bio", "colour": "teal",
    "head": [[["h", "Biological", ["drugs + physical"]]]],
-   "pres": [[["t", "WHO pain ladder", ["1 · non-opioid ± adjuvant: NSAID, acetaminophen", "2 · weak opioid + non-opioid ± adjuvant: Tylenol #3", "3 · strong opioid + non-opioid ± adjuvant: morphine + acetaminophen"]]]],
-   "inv": [[["w", "Adjuvants", ["• analgesic antidepressants", "• anticonvulsants", "drug choices: see the CHRONIC PAIN chart"]]]],
-   "tx": [[["ok", "Physical", ["• transcutaneous electrical nerve stimulation (TENS)", "• heat and cold · physiotherapy", "• acupuncture, acupressure · massage", "• injections, nerve blocks"]]]]},
+   "pres": [[["t", "WHO pain ladder", ["1 · non-opioid ± adjuvant", "2 · + weak opioid", "3 · + strong opioid"]]]],
+   "inv": [[["w", "Adjuvants", ["• analgesic antidepressants", "• anticonvulsants"]]]],
+   "tx": [[["ok", "Physical", ["• TENS · heat and cold", "• physiotherapy · nerve blocks"]]]]},
   {"id": "psy", "colour": "purple",
    "head": [[["h", "Psychological", ["thoughts, feelings, behaviours"]]]],
-   "pres": [[["t", "Cognitive behavioural therapy (CBT)", ["links thoughts, feelings and behaviours to pain", "MANAGE, not cure · individual or group", "~ level III evidence · chronic headache: 53% improve"]]]],
-   "inv": [[["w", "CBT targets", ["• MENTAL FILTER", "• CATASTROPHIZING", "• EMOTIONAL REASONING", "components: education, goals, relaxation, problem-solving, communication, distraction, behavioural activation, cognitive restructuring"]]]],
-   "tx": [[["ok", "Relaxation, meditation", ["refocus from pain to the breath", "use breathing, mindfulness, visualization"]]],
+   "pres": [[["t", "Cognitive behavioural therapy", ["links thoughts to pain"]]]],
+   "inv": [[["w", "CBT targets", ["• MENTAL FILTER", "• CATASTROPHIZING", "• EMOTIONAL REASONING"]]]],
+   "tx": [[["ok", "Relaxation, meditation", ["breath, mindfulness"]]],
           [["bad", "AVOID", ["progressive muscle relaxation"]]]]},
   {"id": "reh", "colour": "orange",
    "head": [[["h", "Rehabilitation", ["stay active, return to work"]]]],
-   "pres": [[["t", "Pacing", ["education and adaptation", "• exercise: aerobic, stretching, strengthening, meditative"]]]],
-   "inv": [[["w", "Why avoidance hurts", ["catastrophizing → fear → AVOIDANCE → disuse, disability", "no fear → confrontation → recovery"]]]],
-   "tx": [[["ok", "Adapt and return", ["• ergonomic design, new ways to do old things", "• vocational: service coordination, work modification"]]]]},
+   "pres": [[["t", "Pacing", ["• graded exercise"]]]],
+   "inv": [[["w", "Why avoidance hurts", ["fear → AVOIDANCE → disability"]]]],
+   "tx": [[["ok", "Adapt and return", ["• ergonomics", "• work modification"]]]]},
   {"id": "ssd", "colour": "blue",
    "head": [[["h", "Somatic symptom disorder", ["unconscious inner gain"]]]],
-   "pres": [[["t", "Distressing symptoms plus", ["• one or more symptoms: distressing or disrupting daily life", "• EXCESSIVE thoughts, feelings, behaviours", "• SYMPTOMATIC state lasting over 6 months (any one symptom may come and go)"]]]],
+   "pres": [[["t", "Distressing symptoms", ["• EXCESSIVE thoughts, behaviours", "• symptomatic over 6 months"]]]],
    "inv": [[["w", "Unconscious", ["inner psychic gain"]]]]},
   {"id": "cnv", "colour": "magenta",
-   "head": [[["h", "Conversion disorder", ["functional neurological symptom disorder"]]]],
-   "pres": [[["t", "Altered voluntary motor or sensory function", ["• not better explained by another disorder", "• distress or impaired function"]]]],
-   "inv": [[["w", "INCOMPATIBLE with disease", ["findings fit no recognized neurological or medical condition", "gain unconscious"]]]]},
+   "head": [[["h", "Conversion disorder", ["functional neurological"]]]],
+   "pres": [[["t", "Altered motor or sensory function", []]]],
+   "inv": [[["w", "INCOMPATIBLE with disease", ["gain unconscious"]]]]},
   {"id": "fac", "colour": "brown", "drop_from": "t1", "drop_label": "NO",
    "head": [[["h", "Factitious disorder", ["the sick role"]]]],
-   "pres": [[["t", "Presents self or another as ill", ["deception even without obvious external reward", "imposed on self or on another (was 'by proxy')"]]]],
+   "pres": [[["t", "Presents self or another as ill", ["no obvious external reward"]]]],
    "inv": [[["w", "Behaviour CONSCIOUS", ["gain UNCONSCIOUS"]]]]},
   {"id": "mal", "colour": "olive", "drop_from": "t1", "drop_label": "YES",
    "head": [[["h", "Malingering", ["for external gain"]]]],
-   "pres": [[["t", "Deception", ["presents self or another as ill"]]]],
-   "inv": [[["w", "Behaviour CONSCIOUS", ["EXTERNAL gain, conscious"]]]]}
+   "pres": [[["t", "Deception", ["presents self as ill"]]]],
+   "inv": [[["w", "Behaviour CONSCIOUS", ["gain EXTERNAL"]]]]}
  ],
  "spans": [
-  {"section": "tx", "cols": [3, 4], "rows": [[["ok", "General strategies (all chronic pain)", ["• ONE physician, regular visits", "• LIMIT investigations and operations", "• goal-directed, monitor yourself"]]]]},
-  {"section": "tx", "cols": [5, 6], "rows": [[["warn", "Before labelling: look for", ["• timeline with inconsistent or misleading information", "• symptoms out of proportion · collateral information", "• gap between the event and the symptoms", "• many tests, consults, treatments with little benefit", "• inconsistent exam · neuropsychological testing"]]]]}
- ],
- "panels": [
-  {"title": "Somatic symptom and related disorders (DSM-5)", "items": [
-   "family: somatic symptom disorder · illness anxiety · conversion · psychological factors affecting other medical conditions · factitious",
-   "medically unexplained symptoms: 15-25% primary care · 39-52% specialist clinics · > 60% neurology",
-   "functional somatic syndromes: irritable bowel, chronic fatigue, fibromyalgia · F > M · overlap with anxiety, depression",
-   "psychodynamic psychotherapy: a SECONDARY approach for lifelong behaviour patterns"]}
+  {"section": "tx", "cols": [3, 4], "rows": [[["ok", "General strategies", ["• ONE physician, regular visits", "• LIMIT investigations"]]]]},
+  {"section": "tx", "cols": [5, 6], "rows": [[["warn", "Before labelling: look for", ["• inconsistent history or exam", "• symptoms out of proportion", "• collateral information"]]]]}
  ]
 }

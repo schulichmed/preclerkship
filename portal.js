@@ -209,12 +209,58 @@
          Both are drawn from the same content file, and interactive_charts.py
          re-renders the picture whenever it rebuilds the page, so they agree. */
       if (b.interactive) {
-        var live = el("a", "fig-open fig-live", "Interactive chart");
+        /* People did not know the chart could be used, so the way in is a filled
+           button that says what it does, not a grey pill */
+        var live = el("a", "fig-open fig-live", "▶ Interactive: focus, walk, test yourself");
         live.href = b.interactive;
         live.target = "_blank";
         live.rel = "noopener";
         live.title = "In a new tab: focus a column or box, walk the chart's questions, or test yourself";
         fbox.appendChild(live);
+      }
+
+      /* A box that names another chart ("→ Acute Monoarthritis") opens that lecture's
+         note. The links are laid over the picture rather than drawn into it, so the
+         note keeps a plain picture that prints; tools/interactive_charts.py records
+         each box as [x, y, w, h, lecture id, label] in the picture's own pixels. */
+      if (b.hot && b.hot.length && b.w) {
+        fig.classList.add("has-hot");
+        var layer = el("div", "fig-hot");
+        var spots = b.hot.map(function (h) {
+          var a = el("a", "fig-hotlink");
+          a.href = "#n-" + h[4];
+          a.title = h[5];
+          a.setAttribute("aria-label", h[5]);
+          /* the lecture list's own button scrolls there properly (notes off screen have
+             no height yet, so a bare #anchor jump lands short); the href stays for a new tab */
+          a.addEventListener("click", function (e) {
+            e.stopPropagation();
+            var row = document.querySelector('.lecrow[data-id="' + h[4] + '"]');
+            if (!row || e.ctrlKey || e.metaKey || e.shiftKey) return;
+            e.preventDefault();
+            row.click();
+            try { history.replaceState(null, "", "#n-" + h[4]); } catch (err) {}
+          });
+          layer.appendChild(a);
+          return [a, h];
+        });
+        fig.appendChild(layer);
+        var place = function () {
+          var s = img.clientWidth / b.w;
+          if (!s) return;
+          layer.style.left = img.offsetLeft + "px";
+          layer.style.top = img.offsetTop + "px";
+          layer.style.width = img.clientWidth + "px";
+          layer.style.height = img.clientHeight + "px";
+          spots.forEach(function (p) {
+            var h = p[1], st = p[0].style;
+            st.left = (h[0] * s) + "px"; st.top = (h[1] * s) + "px";
+            st.width = (h[2] * s) + "px"; st.height = (h[3] * s) + "px";
+          });
+        };
+        img.addEventListener("load", place);
+        if (window.ResizeObserver) new ResizeObserver(place).observe(img);
+        else window.addEventListener("resize", place);
       }
 
       // the picture is the obvious thing to click, so let it be

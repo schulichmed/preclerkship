@@ -1,7 +1,7 @@
 {
  "name": "non-mechanical back and neck pain overview",
  "width": 1672,
- "title": "Non-mechanical back and neck pain: a nerve squeezed at the side (radiculopathy) or in the centre (lumbar stenosis, cauda equina syndrome, cervical myelopathy), or everything else flagged by red flags (inflammatory, fracture, infection or neoplasm); each column gives presentation, investigations and treatment, with visceral causes and the no-red-flag starting treatment below",
+ "title": "Non-mechanical back and neck pain: a nerve squeezed at the side (radiculopathy) or in the centre (lumbar stenosis, cauda equina syndrome, cervical myelopathy), or everything else flagged by red flags (inflammatory, fracture, infection or neoplasm); each column gives presentation, investigations and treatment",
  "kinds": {
   "rad_h": [
    "#1f6f8b",
@@ -135,7 +135,7 @@
    "x": 40,
    "y": 288,
    "w": 222,
-   "h": 1270,
+   "h": 1028,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -143,7 +143,7 @@
    "x": 292,
    "y": 288,
    "w": 222,
-   "h": 1270,
+   "h": 1028,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -151,7 +151,7 @@
    "x": 516,
    "y": 288,
    "w": 222,
-   "h": 1270,
+   "h": 1028,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -159,7 +159,7 @@
    "x": 740,
    "y": 288,
    "w": 222,
-   "h": 1270,
+   "h": 1028,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -167,7 +167,7 @@
    "x": 992,
    "y": 288,
    "w": 222,
-   "h": 548,
+   "h": 470,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -175,7 +175,7 @@
    "x": 1216,
    "y": 288,
    "w": 222,
-   "h": 1270,
+   "h": 1028,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
@@ -183,7 +183,7 @@
    "x": 1440,
    "y": 288,
    "w": 222,
-   "h": 1270,
+   "h": 1028,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -191,20 +191,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 468,
-   "h": 360,
+   "y": 414,
+   "h": 336,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 868,
-   "h": 306,
+   "y": 790,
+   "h": 234,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 1214,
-   "h": 336,
+   "y": 1064,
+   "h": 244,
    "text": "TREATMENT"
   }
  ],
@@ -217,45 +217,46 @@
    "kind": "dark",
    "title": "Back or neck pain that is NOT just mechanical: where is the problem?",
    "lines": [
-    "OLDCARS + red flags every time · first exclude non-spinal causes: hip, visceral, vascular, systemic, viral",
-    "nerve compression can come from ANYTHING: disc, spondylosis, abscess, tumour, bleed, slipped vertebra",
-    "primary-care triage: serious spinal disease < 1% · radicular pain, radiculopathy, stenosis 5-10% · non-specific 90-95%"
+    "OLDCARS + red flags every time",
+    "exclude non-spinal causes: hip, visceral, vascular"
    ]
   },
   {
    "id": "g_side",
    "x": 45,
-   "y": 156,
+   "y": 138,
    "w": 212,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "To the SIDE: a ROOT",
    "lines": [
-    "in or around the neural foramen"
+    "in the neural foramen"
    ]
   },
   {
    "id": "g_ctr",
    "x": 297,
-   "y": 156,
+   "y": 138,
    "w": 660,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "In the CENTRE: canal stenosis",
    "lines": [
-    "the cord ends at ~L1: lumbar stenosis squeezes ROOTS, cervical squeezes the CORD"
+    "• lumbar squeezes ROOTS",
+    "• cervical squeezes the CORD"
    ]
   },
   {
    "id": "g_else",
    "x": 997,
-   "y": 156,
+   "y": 138,
    "w": 660,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
-   "title": "EVERYTHING ELSE: found by red flags",
+   "title": "EVERYTHING ELSE: RED FLAGS",
    "lines": [
-    "red flag → plain films for fracture · MRI for neurological compromise, infection, neoplasm"
+    "• fracture → plain films",
+    "• deficit, infection, tumour → MRI"
    ]
   },
   {
@@ -263,12 +264,12 @@
    "x": 45,
    "y": 296,
    "w": 212,
-   "h": 132,
+   "h": 78,
    "kind": "rad_h",
    "title": "Radiculopathy",
    "lines": [
-    "degenerative (disc, spondylosis) by far the commonest",
-    "also tumour, abscess, TB, sarcoid, diabetic root, trauma, AVM"
+    "a ROOT in the foramen",
+    "mostly disc or spondylosis"
    ]
   },
   {
@@ -276,7 +277,7 @@
    "x": 297,
    "y": 296,
    "w": 212,
-   "h": 132,
+   "h": 78,
    "kind": "lss_h",
    "title": "Lumbar central stenosis",
    "lines": [
@@ -288,7 +289,7 @@
    "x": 521,
    "y": 296,
    "w": 212,
-   "h": 132,
+   "h": 78,
    "kind": "ces_h",
    "title": "Cauda equina syndrome",
    "lines": [
@@ -300,11 +301,11 @@
    "x": 745,
    "y": 296,
    "w": 212,
-   "h": 132,
+   "h": 78,
    "kind": "myl_h",
    "title": "Cervical myelopathy",
    "lines": [
-    "central stenosis squeezes the CORD"
+    "stenosis squeezes the CORD"
    ]
   },
   {
@@ -312,7 +313,7 @@
    "x": 997,
    "y": 296,
    "w": 212,
-   "h": 132,
+   "h": 78,
    "kind": "inf_h",
    "title": "Inflammatory",
    "lines": [
@@ -324,11 +325,11 @@
    "x": 1221,
    "y": 296,
    "w": 212,
-   "h": 132,
+   "h": 78,
    "kind": "frx_h",
    "title": "Fracture",
    "lines": [
-    "fall or trauma · osteoporosis · past fragility fracture"
+    "trauma · osteoporosis"
    ]
   },
   {
@@ -336,61 +337,72 @@
    "x": 1445,
    "y": 296,
    "w": 212,
-   "h": 132,
+   "h": 78,
    "kind": "neo_h",
    "title": "Infection · Neoplasm",
    "lines": [
-    "osteomyelitis, discitis, epidural abscess · bone tumour, epidural or intradural mass, drop metastases · referred: renal, ovarian"
+    "abscess, discitis · tumour, metastasis"
    ]
   },
   {
    "id": "rad_pres_0_0",
    "x": 45,
-   "y": 468,
+   "y": 414,
    "w": 212,
-   "h": 169,
+   "h": 116,
    "kind": "rad_t",
-   "title": "Limb > neck or back, dermatomal",
+   "title": "Limb > back, DERMATOMAL",
    "lines": [
-    "• burning, tingling, electrical",
-    "• EASED by slackening the nerve: arm overhead, legs curled",
-    "• myotomal weakness, ↓ reflex"
+    "• burning, tingling, electric",
+    "• fuzzy borders, myotome weak",
+    "• EASED with the arm overhead"
    ]
   },
   {
    "id": "rad_pres_1_0",
    "x": 45,
-   "y": 659,
+   "y": 552,
    "w": 212,
-   "h": 169,
+   "h": 98,
    "kind": "rad_w",
    "title": "The disc hits the LOWER root",
    "lines": [
-    "• C4/5 → C5 · L4/5 → L5 · L5/S1 → S1",
-    "• FAR-LATERAL disc → the exiting root (L4/5 → L4)",
-    "• commonest: L5, S1 · C7, C6"
+    "• L4/5 → L5 · L5/S1 → S1",
+    "• far-lateral → the exiting root"
+   ]
+  },
+  {
+   "id": "rad_pres_2_0",
+   "x": 45,
+   "y": 672,
+   "w": 212,
+   "h": 78,
+   "kind": "rad_w",
+   "title": "Which root?",
+   "lines": [
+    "• numb thumb → C6",
+    "• foot drop → L5"
    ]
   },
   {
    "id": "lss_pres_0_0",
    "x": 297,
-   "y": 468,
+   "y": 414,
    "w": 212,
-   "h": 231,
+   "h": 183,
    "kind": "lss_t",
-   "title": "Legs > back, distal worse",
+   "title": "Legs > back",
    "lines": [
-    "• NEUROGENIC CLAUDICATION: worse walking a distance",
-    "• eased by flexion: grocery cart, uphill, sitting (slower than vascular)",
-    "• roots' blood supply compressed"
+    "• NEUROGENIC CLAUDICATION",
+    "• eased by FLEXION: cart, sitting"
    ]
   },
   {
    "id": "lss_pres_1_0",
    "x": 297,
-   "y": 721,
+   "y": 619,
    "w": 212,
-   "h": 107,
+   "h": 131,
    "kind": "ok",
    "title": "NO bowel or bladder change",
    "lines": []
@@ -398,9 +410,9 @@
   {
    "id": "ces_pres_0_0",
    "x": 521,
-   "y": 468,
+   "y": 414,
    "w": 212,
-   "h": 360,
+   "h": 336,
    "kind": "bad",
    "title": "RED FLAGS",
    "lines": [
@@ -412,36 +424,33 @@
   {
    "id": "myl_pres_0_0",
    "x": 745,
-   "y": 468,
+   "y": 414,
    "w": 212,
-   "h": 188,
+   "h": 193,
    "kind": "myl_t",
-   "title": "Atraumatic cord injury picture",
+   "title": "Cord signs",
    "lines": [
-    "• ↓ hand dexterity, wasted hand intrinsics",
-    "• gait, balance · urinary incontinence (retention + overflow)",
-    "• UPPER motor neuron signs below the level"
+    "• clumsy hands, wasted intrinsics",
+    "• gait and balance off",
+    "• UPPER motor neuron signs"
    ]
   },
   {
    "id": "myl_pres_1_0",
    "x": 745,
-   "y": 678,
+   "y": 629,
    "w": 212,
-   "h": 150,
+   "h": 121,
    "kind": "myl_w",
    "title": "Often a radiculopathy too",
-   "lines": [
-    "hard to squeeze the cord and miss a root",
-    "case: 73 · neck pain to thumb + index · dropping dishes · new incontinence, UTI excluded → MRI"
-   ]
+   "lines": []
   },
   {
    "id": "inf_pres_0_0",
    "x": 997,
-   "y": 468,
+   "y": 414,
    "w": 212,
-   "h": 360,
+   "h": 336,
    "kind": "inf_w",
    "title": "→ Polyarthritis",
    "lines": [
@@ -451,98 +460,99 @@
   {
    "id": "frx_pres_0_0",
    "x": 1221,
-   "y": 468,
+   "y": 414,
    "w": 212,
-   "h": 178,
+   "h": 166,
    "kind": "frx_t",
    "title": "Osteoporotic compression",
    "lines": [
-    "elderly, on steroids · minor or NO trauma · axial pain with radiation"
+    "• elderly, on steroids",
+    "• minor or NO trauma"
    ]
   },
   {
    "id": "frx_pres_1_0",
    "x": 1221,
-   "y": 668,
+   "y": 602,
    "w": 212,
-   "h": 160,
+   "h": 148,
    "kind": "frx_w",
    "title": "Spondylolysis: PARS fracture",
    "lines": [
-    "young athletes who EXTEND: gymnasts, football, weightlifters"
+    "young athletes who EXTEND"
    ]
   },
   {
    "id": "neo_pres_0_0",
    "x": 1445,
-   "y": 468,
+   "y": 414,
    "w": 212,
-   "h": 169,
+   "h": 166,
    "kind": "neo_t",
    "title": "Infection",
    "lines": [
     "• fever, sweats",
-    "• IV drug use · immunosuppression"
+    "• IV drug use, immunosuppressed"
    ]
   },
   {
    "id": "neo_pres_1_0",
    "x": 1445,
-   "y": 659,
+   "y": 602,
    "w": 212,
-   "h": 169,
+   "h": 148,
    "kind": "neo_t",
    "title": "Neoplasm",
    "lines": [
-    "• young · severe night pain · weight loss, night sweats",
-    "• cancer history · hematuria"
+    "• severe NIGHT pain",
+    "• weight loss · cancer history"
    ]
   },
   {
    "id": "rad_inv_0_0",
    "x": 45,
-   "y": 868,
+   "y": 790,
    "w": 212,
    "h": 98,
    "kind": "rad_w",
    "title": "1 · No red flags: no imaging",
    "lines": [
-    "image if the deficit is severe or progressing"
+    "image a severe or worsening deficit"
    ]
   },
   {
    "id": "rad_inv_1_0",
    "x": 45,
-   "y": 988,
+   "y": 910,
    "w": 212,
-   "h": 186,
+   "h": 114,
    "kind": "rad_w",
    "title": "2 · MRI if needed",
    "lines": [
-    "• neck: neurological signs, or pain > 4 weeks of conservative care",
-    "• X-ray NOT indicated: degeneration from early middle age, unrelated to symptoms",
-    "• CT only if MRI contraindicated · EMG tests the root"
+    "• X-ray NOT indicated",
+    "• EMG: one ROOT, several nerves",
+    "• paraspinals ABNORMAL"
    ]
   },
   {
    "id": "lss_inv_0_0",
    "x": 297,
-   "y": 868,
+   "y": 790,
    "w": 212,
-   "h": 306,
+   "h": 234,
    "kind": "lss_w",
-   "title": "Mild to moderate claudication",
+   "title": "Mild to moderate",
    "lines": [
     "• no imaging",
-    "• or NON-urgent MRI (surgical candidate)"
+    "• or non-urgent MRI"
    ]
   },
   {
    "id": "ces_inv_0_0",
    "x": 521,
-   "y": 868,
+   "y": 790,
    "w": 212,
-   "h": 306,
+   "h": 234,
    "kind": "bad",
    "title": "URGENT MRI",
    "lines": []
@@ -550,57 +560,51 @@
   {
    "id": "myl_inv_0_0",
    "x": 745,
-   "y": 868,
+   "y": 790,
    "w": 212,
-   "h": 306,
+   "h": 234,
    "kind": "myl_t",
    "title": "MRI",
-   "lines": [
-    "the imaging of choice"
-   ]
+   "lines": []
   },
   {
    "id": "frx_inv_0_0",
    "x": 1221,
-   "y": 868,
+   "y": 790,
    "w": 212,
-   "h": 306,
+   "h": 234,
    "kind": "frx_w",
    "title": "Plain films (X-ray)",
-   "lines": [
-    "when fracture is the worry"
-   ]
+   "lines": []
   },
   {
    "id": "neo_inv_0_0",
    "x": 1445,
-   "y": 868,
+   "y": 790,
    "w": 212,
-   "h": 306,
+   "h": 234,
    "kind": "bad",
    "title": "MRI",
    "lines": [
-    "• infection: blood work, cultures",
-    "• neoplasm: abdominal or other imaging"
+    "infection: bloods, cultures"
    ]
   },
   {
    "id": "rad_tx_0_0",
    "x": 45,
-   "y": 1214,
+   "y": 1064,
    "w": 212,
-   "h": 114,
+   "h": 60,
    "kind": "ok",
    "title": "1 · Conservative",
    "lines": [
-    "• excellent prognosis: most settle over months",
-    "• SHORT opioid course if pain is severe"
+    "most settle over months"
    ]
   },
   {
    "id": "rad_tx_1_0",
    "x": 45,
-   "y": 1350,
+   "y": 1146,
    "w": 212,
    "h": 62,
    "kind": "ok",
@@ -610,70 +614,68 @@
   {
    "id": "rad_tx_2_0",
    "x": 45,
-   "y": 1434,
+   "y": 1230,
    "w": 212,
-   "h": 116,
+   "h": 78,
    "kind": "warn",
-   "title": "3 · Decompression surgery",
+   "title": "3 · Decompression",
    "lines": [
-    "• refractory · progressive or severe deficit",
-    "• tumour, large abscess, trauma"
+    "• refractory",
+    "• severe or progressive deficit"
    ]
   },
   {
    "id": "lss_tx_0_0",
    "x": 297,
-   "y": 1214,
+   "y": 1064,
    "w": 212,
-   "h": 336,
+   "h": 244,
    "kind": "ok",
-   "title": "Flexion-based activity + physiotherapy",
-   "lines": [
-    "the mainstay for manageable symptoms"
-   ]
+   "title": "Flexion exercise + physiotherapy",
+   "lines": []
   },
   {
    "id": "ces_tx_0_0",
    "x": 521,
-   "y": 1214,
+   "y": 1064,
    "w": 212,
-   "h": 336,
+   "h": 244,
    "kind": "bad",
    "title": "Neurosurgical EMERGENCY",
    "lines": [
-    "decompress within 48 h of onset: much better outcomes"
+    "decompress within 48 h"
    ]
   },
   {
    "id": "myl_tx_0_0",
    "x": 745,
-   "y": 1214,
+   "y": 1064,
    "w": 212,
-   "h": 336,
+   "h": 244,
    "kind": "bad",
-   "title": "URGENT neurosurgery or spine consult",
+   "title": "URGENT spine consult",
    "lines": [
-    "for decompression"
+    "decompression"
    ]
   },
   {
    "id": "frx_tx_0_0",
    "x": 1221,
-   "y": 1214,
+   "y": 1064,
    "w": 212,
-   "h": 175,
+   "h": 111,
    "kind": "ok",
-   "title": "Pain management",
+   "title": "Pain control",
    "lines": [
-    "+ TREAT THE OSTEOPOROSIS (bisphosphonate)"
+    "+ TREAT the osteoporosis"
    ]
   },
   {
    "id": "frx_tx_1_0",
    "x": 1221,
-   "y": 1411,
+   "y": 1197,
    "w": 212,
-   "h": 139,
+   "h": 111,
    "kind": "warn",
    "title": "Spondylolysis can slip",
    "lines": [
@@ -683,13 +685,13 @@
   {
    "id": "neo_tx_0_0",
    "x": 1445,
-   "y": 1214,
+   "y": 1064,
    "w": 212,
-   "h": 336,
+   "h": 244,
    "kind": "bad",
    "title": "Treat the cause",
    "lines": [
-    "tumour or large abscess on a nerve → decompression"
+    "compressing mass → decompress"
    ]
   }
  ],
@@ -697,21 +699,26 @@
   {
    "from": "root",
    "to": "g_side",
-   "path": "M851.0 106V131H151.0V156"
+   "path": "M851.0 88V113H151.0V138"
   },
   {
    "from": "root",
    "to": "g_ctr",
-   "path": "M851.0 106V131H627.0V156"
+   "path": "M851.0 88V113H627.0V138"
   },
   {
    "from": "root",
    "to": "g_else",
-   "path": "M851.0 106V131H1327.0V156"
+   "path": "M851.0 88V113H1327.0V138"
   },
   {
    "from": "rad_pres_0_0",
    "to": "rad_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "rad_pres_1_0",
+   "to": "rad_pres_2_0",
    "dashed": true
   },
   {
@@ -755,7 +762,7 @@
    "to": "rad_pres_0_0"
   },
   {
-   "from": "rad_pres_1_0",
+   "from": "rad_pres_2_0",
    "to": "rad_inv_0_0"
   },
   {
@@ -862,45 +869,5 @@
    "from_dx": 224
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1584,
-   "w": 528,
-   "title": "No red flags: start here (radicular, stenosis, non-specific)",
-   "items": [
-    "advice + reassurance: good prognosis, NO immediate imaging",
-    "radicular pain: exercise, physiotherapy · neuropathic agents · opioids for rescue",
-    "acute non-specific: STAY ACTIVE, no bed rest · physiotherapy · NSAIDs, muscle relaxants, weak opioids",
-    "persistent non-specific: exercise, psychological therapies, multidisciplinary care · NSAIDs with caution"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 587,
-   "y": 1584,
-   "w": 528,
-   "title": "Visceral pain felt in the back",
-   "items": [
-    "abdominal aortic aneurysm: pulsatile mass · vertebral artery insufficiency: dizziness, cranial nerve findings · atypical cardiac",
-    "GI: peptic ulcer, pancreatitis · GU: pyelonephritis, kidney stones, endometriosis"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 1129,
-   "y": 1584,
-   "w": 528,
-   "title": "Testing a root: dermatome · myotome · reflex",
-   "items": [
-    "C5: lateral shoulder to elbow · abduction, elbow flexion · biceps, brachioradialis",
-    "C6: lateral forearm, digits I-II · elbow flexion, wrist extension · biceps, brachioradialis",
-    "C7: digit III · elbow extension · triceps",
-    "L4: medial leg, medial malleolus · dorsiflexion · patellar",
-    "L5: dorsum of foot · great toe extension · hamstrings",
-    "S1: lateral foot, heel · plantar flexion · Achilles"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }
