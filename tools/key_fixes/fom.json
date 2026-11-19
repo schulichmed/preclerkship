@@ -101,7 +101,12 @@
     "convert": "mcq",
     "multi": true,
     "lead": "<p><strong>The correct answer is A, C, D, F.</strong></p>",
-    "why": "The workbook key gives A, C, D, F, so the question is now scored as a select-all instead of shown as a self-marked answer."
+    "why": "The workbook key gives A, C, D, F, so the question is now scored as a select-all instead of shown as a self-marked answer. The stem said \"Choose 5\" but the workbook keys four, and no fifth option is a feature of the disease. The stem now asks for all that apply, so the page no longer tells readers to pick five. Reader reports #166 and #191.",
+    "stem": "<p>Which of the following are features of sickle cell disease? Select all that apply.</p>",
+    "answer": "<p><strong>The correct answer is A, C, D, F.</strong></p><p><em>From 04 - Approach to Normocytic Anemia.</em> Sickle cell disease is a chronic <strong>hemolytic anemia</strong> (A). Sickled, adhesive cells cause <strong>sickle and vaso-occlusive crises</strong> (C, D: dactylitis, acute chest syndrome, stroke). Chronic organ damage explains the <strong>shorter life expectancy</strong> (F).</p><ul><li><strong>I</strong> is backwards: heterozygotes have <strong>increased resistance</strong> to malaria.</li><li><strong>E, H</strong>: IBS and COPD are unrelated to sickling.</li><li><strong>G</strong>: bronze skin belongs to iron overload (hemochromatosis); jaundice is the hemolytic skin sign.</li><li><strong>B</strong>: fever is not a feature of the disease itself. In a patient with sickle cell disease it signals a complication (infection, acute chest syndrome) and needs urgent assessment.</li></ul>",
+    "drop_flags": [
+      "the workbook key lists only A, C, D and F"
+    ]
   },
   "b2-w7-new-q15-15": {
     "stem": "<p>Which are essential components of a preventative health visit for older adults?</p>",
@@ -447,5 +452,177 @@
   "b3-w9-meds2024-q8-8": {
     "answer": "<p><strong>The correct answer is A, C, G.</strong></p><p>A low reticulocyte count with all three lines down (pancytopenia) points to the marrow. Aplastic anemia is a hypocellular, fatty marrow that makes too few red cells, white cells and platelets. Myelodysplastic syndrome and myelofibrosis are marrow disorders that can also cause pancytopenia.</p><p>Hemolysis and blood loss raise the reticulocyte count. Anemia of chronic inflammation lowers it, since hepcidin traps iron and inflammatory cytokines blunt the marrow's response to erythropoietin, but it lowers the red cells only, not the white cells and platelets. Pure red cell aplasia also spares the white cells and platelets.</p>",
     "why": "Reader report #148 is right: anemia of chronic inflammation is a hypoproliferative anemia with a low reticulocyte count. 04 - Approach to Normocytic Anemia counts chronic disease among the causes whose reticulocytes are not raised. It is ruled out here because it does not cause pancytopenia, not because of the reticulocytes."
+  },
+  "b3-wb-heme-q12": {
+    "stem": "<p>Anemia directly relating to liver disease is best associated with:</p>",
+    "why": "The stem said \"live disease\"; it means liver disease. Reader reports #172, #193 and #208."
+  },
+  "b3-w12-new-q10-10": {
+    "stem": "<p>Which of the following statements are true?</p><ol class=\"match-items\"><li>Classical HL has a contiguous spread, whereas Non-Hodgkin Lymphoma spread can be contiguous or non-contiguous</li><li>Classical HL can have nodal and extra-nodal sites, whereas Non-Hodgkin Lymphoma has mostly nodal sites</li><li>In classical HL, all cells are mature, while in Non-Hodgkin Lymphoma, the cells can be mature or immature</li></ol>",
+    "drop_flags": [
+      "Only the first statement carries its label"
+    ],
+    "why": "The first statement had been glued into the question line, so the list numbered the other two as i and ii and there was no statement iii. All three are now listed as i, ii and iii. Reader reports #152 and #202."
+  },
+  "b3-w12-new-q15-15": {
+    "stem": "<p>Which chromosomal abnormalities do <strong>not</strong> indicate R-ISS stage 3 in multiple myeloma? Select all that apply.</p>",
+    "options": [
+      "t(4;14)",
+      "t(6;14)",
+      "t(14;16)",
+      "t(11;14)"
+    ],
+    "answer": "<p><strong>The correct answer is B, D.</strong></p><p><em>From 06 - Multiple Myeloma.</em> R-ISS stage 3 requires &beta;2-microglobulin &ge; 5.5 together with high-risk FISH or a high LDH. The high-risk FISH abnormalities the lecture lists are <strong>t(4;14), t(14;16) and del(17p)</strong>.</p><ul><li><strong>A t(4;14)</strong> and <strong>C t(14;16)</strong>: both on that high-risk list, so both point towards stage 3.</li><li><strong>B t(6;14)</strong> and <strong>D t(11;14)</strong>: neither is on the list, so neither makes a patient stage 3.</li></ul>",
+    "drop_flags": [
+      "yet option E is"
+    ],
+    "why": "Option E (\"B and D\") repeated the key as a fifth choice, so a reader who picked E was marked wrong. E is removed and the question is a select-all; t(14;6) is written the usual way, t(6;14). Reader report #199."
+  },
+  "b3-w11-meds2024-q12-12": {
+    "stem": "<p>A 70-year-old hospital volunteer requires a blood film examination before starting placement. The following blood film is obtained despite the patient feeling entirely well: it shows many small, mature-looking lymphocytes and smudge cells. Which of the following pathologies is most likely?</p><figure><img loading=\"lazy\" src=\"assets/figures/f58571e9cdfa.jpg\" alt=\"Blood film from the question bank, page 73: small mature lymphocytes and smudge cells\"></figure>",
+    "why": "The bank embeds this film at 117 by 89 pixels, so no enlargement makes the cells readable. The stem now says what the film shows (small mature lymphocytes and smudge cells), which is what the question turns on. Reader report #158."
+  },
+  "b3-w11-meds2024-q34-34": {
+    "answer": "<p><strong>The correct answer is C.</strong></p><p><em>From 06 - Approach to Thrombocytosis.</em></p><ul><li><strong>i</strong>: inflammation and tissue damage stimulate platelet production (secondary, or reactive, thrombocytosis), the commonest cause.</li><li><strong>ii</strong>: the Philadelphia chromosome means chronic myeloid leukemia, a myeloproliferative neoplasm that can raise the platelet count (primary thrombocytosis).</li><li><strong>iii</strong>: red cell fragments (schistocytes, microspherocytes) are small enough for the automated counter to count as platelets, a <strong>spurious</strong> thrombocytosis.</li></ul>",
+    "why": "The explanation did not say why statement iii is true. 06 - Approach to Thrombocytosis lists red cell fragments first among the causes of a spurious (falsely high) platelet count. Reader report #170."
+  },
+  "b3-w10-meds2024-q38-38": {
+    "answer": "<p><strong>The correct answer is A.</strong></p><p><em>From 06 - Thrombosis.</em> A non-diagnostic V/Q scan neither confirms nor excludes PE. The lecture's next step is a <strong>bilateral compression ultrasound of the legs</strong>: the ultrasound is not imaging the lungs, it looks for a DVT, and a proximal DVT is treated with the same anticoagulation, so finding one settles the question. If the ultrasound is negative and PE is still likely with a positive D-dimer, go on to CTPA or a repeat ultrasound. A D-dimer is used before imaging, not after it, and a venogram is no longer a first-line test.</p>",
+    "why": "The key stands. 06 - Thrombosis gives the PE algorithm as pretest probability, D-dimer, V/Q or CTPA, and \"a non-diagnostic V/Q leads to bilateral compression ultrasound\". The explanation now says why an ultrasound of the legs answers a question about the lungs. Reader report #168."
+  },
+  "b3-w9-new-q2-2": {
+    "answer": "<p><strong>The correct answer is D.</strong></p><p><em>From 01 - Hematopoiesis</em>, which lists the sites in this order: yolk sac (from day 18), the aorta/gonad/mesonephros region, liver (5 to 6 weeks), spleen (about 4 months), lymph plexuses and thymus (lymphopoiesis from 9 weeks), and bone marrow, the major site after about 24 weeks and the only one after birth. The sites overlap rather than hand over cleanly, but bone marrow is always last, which rules out A, B and C.</p>",
+    "why": "The key stands: this is still taught, in Week 9, 01 - Hematopoiesis, and D is the order the lecture lists the sites. The explanation now gives that sequence with its timings. Reader report #174."
+  },
+  "b3-wb-heme-q2": {
+    "answer": "<p><strong>The correct answer is A.</strong></p><p>Folate is recommended when trying to conceive and in pregnancy (to prevent neural tube defects), and replaced in alcoholism and celiac disease, which both cause deficiency. Methotrexate is a folate antagonist, so it is the only option where folate works against the treatment, and the intended answer.</p><p>The reader who reported this is right that it is not absolute. Patients on <strong>low-dose weekly methotrexate</strong> (rheumatoid arthritis, psoriasis) are routinely prescribed folic acid to reduce side effects (mouth ulcers, nausea, liver enzyme rise) without losing benefit, and high-dose chemotherapy is followed by a timed folinic acid (leucovorin) rescue. Read the question as \"which is not a reason to supplement folate\".</p>",
+    "why": "The key stands, but the explanation said supplementation in methotrexate use would be counterproductive. Folic acid is routinely given with low-dose methotrexate to reduce toxicity, and leucovorin rescue follows high-dose therapy; the explanation now says so. Reader report #188."
+  },
+  "b3-wb-heme-q83": {
+    "answer": "<p><strong>The correct answer is D.</strong></p><p>Jaundice, splenomegaly, a high reticulocyte count and bilirubin with a low haptoglobin say <strong>hemolysis</strong>; a negative DAT says it is not autoimmune, and spherocytes on the film point to <strong>hereditary spherocytosis</strong>.</p><p>Hemolytic anemia (A) is true but is the category, not the diagnosis: the question asks for the most likely diagnosis, and hereditary spherocytosis is the specific cause the DAT and film identify. When one option is a more specific version of another and the findings support it, choose the specific one.</p>",
+    "why": "The key stands. The explanation had the next question's answer glued onto it, and did not say why hemolytic anemia, which is also true, is not the best answer. Reader report #217."
+  },
+  "b3-wb-heme-q42": {
+    "option": {
+      "A": "Most cases (type 1) are inherited in an autosomal dominant manner"
+    },
+    "answer": "<p><strong>The correct answer is E.</strong></p><p>vWF anchors platelets to damaged endothelium and carries factor VIII, so vWD is mainly a disorder of <strong>primary</strong> hemostasis (mucocutaneous bleeding: epistaxis, menorrhagia), with secondary hemostasis affected only in severe disease when factor VIII falls. E has it backwards.</p><p>A: inheritance depends on the type. <em>04 - Coagulopathy in Children</em> gives type 1 (80%) as autosomal dominant, type 2 as dominant or recessive, and type 3 (severe, under 1%) as autosomal recessive. B, C and D (desmopressin, a vasopressin analogue, releases stored vWF) are true.</p>",
+    "refile": {
+      "week": 10,
+      "weekLabel": "Week 10 - Hemostasis, Bleeding & Thrombosis",
+      "review": [
+        {
+          "w": 10,
+          "n": "04",
+          "t": "Coagulopathy in Children"
+        }
+      ]
+    },
+    "why": "The key stands. Option A said vWD is autosomal dominant, which is true only of most types: 04 - Coagulopathy in Children gives type 1 as dominant, type 2 as either, and type 3 as recessive. Option A now says \"most cases (type 1)\", so E is the only false statement. Reader report #219."
+  },
+  "b3-wb-heme-q87": {
+    "option": {
+      "D": "When started for an acute venous thrombosis, it requires initial co-treatment with heparin"
+    },
+    "answer": "<p><strong>The correct answer is D.</strong></p><p><em>From 07 - Pharmacology and Reversal of Anticoagulants.</em> The INR rises first because factor VII has the shortest half-life, but the real anticoagulant effect follows the fall in thrombin (factor II, half-life 60 to 72 hours). So when warfarin is started for an acute clot it is <strong>overlapped with UFH or LMWH for 5 to 7 days</strong>. Where there is no acute clot to treat, for example stroke prevention in atrial fibrillation, warfarin can be started alone.</p><p>A: warfarin is a vitamin K <strong>antagonist</strong>. B: it is contraindicated in pregnancy. C: HIT is caused by heparin, not warfarin. E: warfarin is used for both VTE prophylaxis and treatment.</p>",
+    "refile": {
+      "week": 10,
+      "weekLabel": "Week 10 - Hemostasis, Bleeding & Thrombosis",
+      "review": [
+        {
+          "w": 10,
+          "n": "07",
+          "t": "Pharmacology and Reversal of Anticoagulants"
+        }
+      ]
+    },
+    "why": "The key stands. Option D said warfarin always needs heparin co-treatment, but the 5 to 7 day overlap in 07 - Pharmacology and Reversal of Anticoagulants is for treating an acute clot; it is not needed when warfarin is started without one. Option D now says when it applies. Reader report #212."
+  },
+  "b3-wb-heme-q61": {
+    "answer": "<p><strong>The correct answer is B.</strong></p><p>Essential thrombocythemia is a myeloproliferative neoplasm with a <strong>high</strong> platelet count (a primary thrombocytosis), not a low one. <em>06 - Approach to Thrombocytosis</em> lists thrombosis among the clues to a primary cause, and either bleeding or thrombosis can occur.</p><ul><li><strong>A</strong>: no. The count is at least 450 and is not reliably above or below 1000; most extreme counts (82% of those of 1000 or more) have a secondary cause, so the number alone does not separate ET from reactive thrombocytosis.</li><li><strong>C</strong>: infection points to a reactive (secondary) thrombocytosis.</li><li><strong>D</strong>: PV, CML and myelofibrosis can raise the platelets, but ET is diagnosed only once they are excluded.</li><li><strong>E</strong>: iron deficiency is a cause of secondary thrombocytosis.</li></ul>",
+    "refile": {
+      "week": 11,
+      "weekLabel": "Week 11 - White Cells & Leukemia",
+      "review": [
+        {
+          "w": 11,
+          "n": "06",
+          "t": "Approach to Thrombocytosis"
+        }
+      ]
+    },
+    "drop_flags": [
+      "It is parked in week 10"
+    ],
+    "why": "Essential thrombocythemia is a high platelet count; the explanation mixed thrombocythemia with thrombocytosis and claimed ET counts usually exceed 1000, which 06 - Approach to Thrombocytosis contradicts (82% of counts of 1000 or more are secondary). Rewritten from the lecture and re-filed to Week 11, where thrombocytosis is taught. Reader report #214."
+  },
+  "b3-w12-meds2024-q40-40": {
+    "option": {
+      "A": "Ibrutinib is a Bruton's tyrosine kinase inhibitor used in the treatment of CLL."
+    },
+    "answer": "<p><strong>The correct answer is A, C, D.</strong></p><p><em>From 07 - Pharmacology of Hematological Malignancies.</em> Ibrutinib inhibits Bruton's tyrosine kinase and is used to treat CLL (toxicity: bruising, atrial fibrillation, diarrhea); it is now used first line as well as at relapse. CAR-T cells are the patient's own T cells, engineered and infused back. Rituximab targets CD20 on B cells. Imatinib is a small-molecule tyrosine kinase inhibitor for CML, not a conjugated antibody, and glucocorticoids are not alkylating agents.</p>",
+    "why": "Option A limited ibrutinib to relapsed CLL. 07 - Pharmacology of Hematological Malignancies gives it simply as a CLL drug, and it is now used first line, so the option no longer says \"relapsed\". Reader report #160."
+  },
+  "b3-w12-meds2024-q13-13": {
+    "answer": "<p><strong>The correct answer is A.</strong></p><p><em>From 04 - Classification and Testing for Lymphomas and 05 - Approach to Lymphoma</em>, which rank the options <strong>excisional &gt; core &gt; fine needle</strong>. An excised node is always representative and shows the architecture, so it has no false negatives. A core biopsy is widely used when excision cannot be done but may sample too little tissue. FNA loses the architecture and is not recommended for lymphoma. Punch biopsy is for skin.</p><p>A reader reports that this year's lecturer said you will not be asked to choose between excision and core biopsy. The ranking above is still what the lecture slides teach.</p>",
+    "refile": {
+      "week": 12,
+      "weekLabel": "Week 12 - Adaptive Immunity & Lymphoma",
+      "review": [
+        {
+          "w": 12,
+          "n": "05",
+          "t": "Approach to Lymphoma"
+        }
+      ]
+    },
+    "why": "The key stands and is not out of date: 04 - Classification and Testing for Lymphomas calls excisional biopsy the best option and 05 - Approach to Lymphoma ranks excisional over core over needle. The explanation now cites them and records the lecturer's remark. Reader report #204."
+  },
+  "b3-wb-heme-q35": {
+    "correct": [
+      "B"
+    ],
+    "answer": "<p><strong>The correct answer is B.</strong></p><p>An isolated low platelet count a week or two after a viral illness, with a normal hemoglobin, is acute <strong>immune thrombocytopenia (ITP)</strong>. <em>05 - Approach to Thrombocytopenia</em> gives <strong>glucocorticoids (prednisone) as first line</strong>; IVIg is an alternative with only a temporary effect. A child who is not bleeding can be observed, but this child is bleeding, so treat. Platelet transfusion is reserved for life-threatening bleeding because transfused platelets are destroyed, and splenectomy is a later line for chronic ITP.</p>",
+    "refile": {
+      "week": 10,
+      "weekLabel": "Week 10 - Hemostasis, Bleeding & Thrombosis",
+      "review": [
+        {
+          "w": 10,
+          "n": "05",
+          "t": "Approach to Thrombocytopenia"
+        }
+      ]
+    },
+    "why": "05 - Approach to Thrombocytopenia gives glucocorticoids as first-line ITP treatment and IVIg as usually temporary; the vault's ITP note adds that children who are not bleeding can be observed. No Block 3 lecture or module puts IVIg first in children. Reader report #162."
+  },
+  "b3-w9-new-q13-13": {
+    "answer": "<p><strong>The correct answer is B.</strong></p><p>Effective goals are <strong>SMART</strong>: specific, measurable, achievable, relevant and time-bound. \"Time-sensitive\" is not one of the five, although it is close to time-bound.</p>",
+    "refile": {
+      "week": 12,
+      "weekLabel": "Week 12 - Adaptive Immunity & Lymphoma",
+      "review": [
+        {
+          "w": 12,
+          "n": "08",
+          "t": "Radiation Oncology"
+        }
+      ]
+    },
+    "why": "The explanation expanded the S in SMART as \"smart\"; it is specific. The Block 3 lecture that teaches SMART goals, in its quality improvement section, is Week 12, 08 - Radiation Oncology, and it says time-bound, so B is the one that is not a SMART trait. Re-filed there from Week 9. Reader report #164."
+  },
+  "b3-w9-new-q5-5": {
+    "offcurriculum": {
+      "reason": "not-covered",
+      "against": "FoM Block 1, Week 1: Cultural Competence in Health Care and the Care of Refugees"
+    },
+    "why": "A question on the language of sexuality and gender, not on anemia; the Meds 2025 bank filed it under Week 9 with its implicit-bias question (Q6). No Block 3 lecture teaches it. The nearest lecture is FoM Block 1, Week 1, Cultural Competence in Health Care and the Care of Refugees. Moved to Off-curriculum. Reader reports #154, #176 and #197."
+  },
+  "b3-w12-meds2024-q41-41": {
+    "offcurriculum": {
+      "reason": "not-covered",
+      "against": "FoM Block 2, Week 8: 07 - Individual Variability in Drug Response"
+    },
+    "why": "A pharmacogenomics question (germline versus somatic, polymorphism versus mutation), filed under Week 12, 01 - Adaptive Immunity. No Block 3 lecture teaches it; germline and somatic variation are taught in FoM Block 2, Week 8, 07 - Individual Variability in Drug Response. Moved to Off-curriculum. Reader reports #156 and #206."
   }
 }
