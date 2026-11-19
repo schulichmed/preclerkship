@@ -2523,6 +2523,18 @@ body.has-dialog{overflow:hidden;}
 .figblock:hover .fig-open{border-color:var(--muted);}
 .fig-live{right:auto;left:8px;text-decoration:none;}
 .fig-open:hover{color:var(--q-accent-text);border-color:var(--q-accent);}
+/* the way into the interactive chart: filled and labelled, so it reads as a thing to do */
+.fig-open.fig-live{color:#fff;background:var(--q-accent);border-color:var(--q-accent);font-weight:600;
+    font-size:.78rem;padding:5px 12px;box-shadow:0 1px 3px rgba(0,0,0,.18);}
+.fig-open.fig-live:hover{color:#fff;filter:brightness(1.1);}
+/* boxes that open another lecture's note, laid over the picture */
+.fig.has-hot{position:relative;}
+.fig-hot{position:absolute;pointer-events:none;}
+.fig-hotlink{position:absolute;pointer-events:auto;border-radius:8px;border:2px dashed transparent;
+    transition:background .15s,border-color .15s;}
+.fig.has-hot:hover .fig-hotlink{border-color:var(--q-accent);}
+.fig-hotlink:hover,.fig-hotlink:focus-visible{border-color:var(--q-accent);border-style:solid;
+    background:rgba(127,127,127,.12);outline:none;}
 
 .workup{
     font-size:.88rem;
@@ -3506,7 +3518,7 @@ select.ps:disabled{cursor:default;opacity:1;}
 /* a note is a one-pager by design, so printing gives one per sheet and drops
    every control - the gaps go too, they are screen bookkeeping */
 @media print{
-    .uplink,.blocknav,.tabs,.rail,.qbar,.testbar,.pagebar,.scoreboard,.storenote,footer,.pdf-btn,.pw-open,.fig-open,.posbar,.keyhelp,.deck-dl{display:none !important;}
+    .uplink,.blocknav,.tabs,.rail,.qbar,.testbar,.pagebar,.scoreboard,.storenote,footer,.pdf-btn,.pw-open,.fig-open,.posbar,.keyhelp,.deck-dl,.fig-hot{display:none !important;}
 
     /* one note, one week, or the lot: whatever was marked survives the print
        and everything else steps out of the way */

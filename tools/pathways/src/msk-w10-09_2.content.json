@@ -5,12 +5,12 @@
  "root": {
   "title": "A child with a limp: is it a SEPTIC hip? If not, AGE narrows the rest",
   "lines": [
-   "every one: blood count, ESR (erythrocyte sedimentation rate) and CRP (C-reactive protein), hip x-ray ± ultrasound"
+   "every one: CBC, ESR, CRP, hip x-ray"
   ]
  },
  "groups": [
   {"id": "g_sep", "cols": [0, 0], "title": "FEVER, unwell, will not walk", "lines": ["infection until proven otherwise"]},
-  {"id": "g_age", "cols": [1, 3], "title": "Afebrile and well: AGE decides", "lines": ["3-10: transient synovitis · 4-8: Perthes · 8-15, obese: slipped epiphysis"]}
+  {"id": "g_age", "cols": [1, 3], "title": "Afebrile and well: AGE decides", "lines": []}
  ],
  "sections": ["head", "pres", "inv", "tx"],
  "row_names": {"pres": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
@@ -23,26 +23,22 @@
    "tx": []
   },
   {"id": "ts", "colour": "teal",
-   "head": [[["h", "Transient synovitis", ["non-infectious hip inflammation after a virus", "the most common cause of hip pain under 10"]]]],
-   "pres": [[["t", "Age 3-10, boys 2:1", ["• SUDDEN hip pain 7-10 days after a cold or sore throat", "• pain to thigh or knee, better through the day", "• afebrile or LOW fever (< 38), looks well"]]], [["w", "Exam", ["hip held flexed, abducted, externally rotated · less internal rotation, abduction"]]]],
-   "inv": [[["w", "Bloodwork, x-ray, ultrasound", ["• NORMAL (ESR, CRP may be slightly up)", "• done to rule out septic arthritis"]]]],
-   "tx": [[["ok", "Anti-inflammatory (NSAID) + reassure", ["self-limiting in 7-10 days · full recovery"]]]]
+   "head": [[["h", "Transient synovitis", ["post-viral hip inflammation"]]]],
+   "pres": [[["t", "AGE 3-10, boys", ["• SUDDEN, after a cold", "• afebrile or low fever, looks well"]]], [["w", "Exam", ["hip held flexed, externally rotated"]]]],
+   "inv": [[["w", "Bloods, x-ray, ultrasound", ["• NORMAL", "• rule out septic arthritis"]]]],
+   "tx": [[["ok", "NSAID + reassure", ["settles in 7-10 days"]]]]
   },
   {"id": "lcp", "colour": "olive",
-   "head": [[["h", "Legg-Calvé-Perthes disease", ["IDIOPATHIC avascular necrosis of the femoral head", "the most common childhood hip disorder"]]]],
-   "pres": [[["t", "Age 4-8, boys 5:1", ["• GRADUAL painless limp, then pain over weeks to months", "• mild pain referred to the KNEE, worse with activity, better with rest", "• family history, low birth weight, second-hand smoke", "• early on can look like transient synovitis"]]], [["w", "Exam", ["looks well · less abduction and internal rotation", "apparent leg length difference (tight adductors)"]]]],
-   "inv": [[["w", "X-ray: anteroposterior (AP) pelvis + frog-leg", ["flattened, fragmented femoral head · bone scan, MRI"]]]],
-   "tx": [[["ok", "Refer to orthopedics", ["• keep the range of motion (physiotherapy)", "• off-load: crutches, brace, swim, cycle", "• NSAIDs, acetaminophen · osteotomy for some", "better motion = better outcome"]]], [["warn", "Poorly treated", ["early osteoarthritis"]]]]
+   "head": [[["h", "Legg-Calvé-Perthes disease", ["IDIOPATHIC avascular necrosis", "of the femoral head"]]]],
+   "pres": [[["t", "AGE 4-8, boys", ["• GRADUAL painless limp", "• pain referred to the KNEE"]]], [["w", "Exam", ["less abduction, internal rotation"]]]],
+   "inv": [[["w", "X-ray: AP pelvis + frog-leg", ["flattened, fragmented head"]]]],
+   "tx": [[["ok", "Refer to orthopedics", ["• keep range of motion", "• off-load: crutches, swim, cycle"]]], [["warn", "Poorly treated", ["early osteoarthritis"]]]]
   },
   {"id": "scfe", "colour": "orange",
-   "head": [[["h", "Slipped capital femoral epiphysis", ["the head slips posterior and inferior on the neck"]]]],
-   "pres": [[["t", "Age 8-15 (girls ~12, boys ~14), OBESE", ["• gradual painful limp: hip, thigh or KNEE pain", "• obesity #1 · growth spurt, endocrine disease, radiation, family history", "• left more often · 1 in 5 both hips", "• atypical age or weight → endocrine cause (hypothyroid, growth hormone deficiency)"]]], [["w", "Exam", ["• antalgic, may not bear weight · thigh wasting", "• hip rolls into EXTERNAL rotation on flexion (Drehmann sign)", "• less internal rotation, abduction"]]]],
-   "inv": [[["w", "X-ray: AP pelvis + frog-leg", ["• earliest: WIDE, irregular physis", "• Klein's line along the neck MISSES the head (Trethowan sign)", "• 'melting ice cream cone' · MRI if unclear"]]]],
-   "tx": [[["bad", "STOP weight-bearing + EMERGENCY orthopedics", ["further slip → avascular necrosis (25%)", "also arthritis · fixed physis stops growing"]]], [["ok", "Fix it where it lies: do NOT force a reduction", ["• stable: one screw in situ", "• unstable: open reduction + internal fixation"]]]]
+   "head": [[["h", "Slipped capital femoral epiphysis", ["head slips posterior, inferior"]]]],
+   "pres": [[["t", "AGE 8-15, OBESE", ["• painful limp: hip, thigh, KNEE", "• 1 in 5 both hips"]]], [["w", "Exam", ["• EXTERNAL rotation on flexion", "• less internal rotation"]]]],
+   "inv": [[["w", "X-ray: AP pelvis + frog-leg", ["• Klein's line MISSES the head", "• 'melting ice cream cone'"]]]],
+   "tx": [[["bad", "STOP weight-bearing", ["EMERGENCY orthopedics", "further slip → avascular necrosis"]]], [["ok", "Fix in situ: do NOT force a reduction", []]]]
   }
- ],
- "panels": [
-  {"title": "The rest of the differential, by age", "items": ["under 4: transient synovitis · infection · juvenile idiopathic arthritis · non-accidental injury · pain referred from the limb", "4-10: transient synovitis · Perthes · infection · 10-16: slipped epiphysis · avulsion fracture · infection", "uncommon at any age: leukemia · under 4: neuroblastoma metastases, eosinophilic granuloma · 4-16: Ewing sarcoma · teens: osteoid osteoma, osteosarcoma"]},
-  {"title": "Any abnormal gait: warning signs", "items": ["asymmetry · progression · leg length difference · pain · deformity · a suspected associated condition", "also: missed hip dysplasia (painless waddle, leg length difference), clubfoot, overuse, trauma, neuromuscular, inflammatory arthritis (see the PEDIATRIC ORTHOPEDICS chart)"]}
  ]
 }

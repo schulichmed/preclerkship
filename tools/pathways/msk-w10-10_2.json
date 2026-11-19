@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 360,
+   "y": 270,
    "w": 246,
-   "h": 790,
+   "h": 484,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 288,
-   "y": 360,
+   "y": 270,
    "w": 246,
-   "h": 790,
+   "h": 484,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 564,
-   "y": 360,
+   "y": 270,
    "w": 246,
-   "h": 790,
+   "h": 484,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 840,
-   "y": 360,
+   "y": 270,
    "w": 246,
-   "h": 790,
+   "h": 484,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 1088,
-   "y": 360,
+   "y": 270,
    "w": 246,
-   "h": 790,
+   "h": 484,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   }
@@ -139,20 +139,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 486,
-   "h": 204,
+   "y": 378,
+   "h": 114,
    "text": "CHECK"
   },
   {
    "x": 23,
-   "y": 730,
-   "h": 222,
+   "y": 532,
+   "h": 96,
    "text": "DO"
   },
   {
    "x": 23,
-   "y": 992,
-   "h": 150,
+   "y": 668,
+   "h": 78,
    "text": "AVOID"
   }
  ],
@@ -165,30 +165,26 @@
    "kind": "dark",
    "title": "Prescribe physical activity like a drug: is it SAFE, then what DOSE?",
    "lines": [
-    "3 A's: ASK (activity, aware of benefits?) · ADVISE (benefits) · ACT (signpost to help)",
-    "ask: current activity · intentions · past activity + preferences, barriers, goals · is it safe (symptoms, history)?",
-    "biggest gain: from NONE to SOME, so target sedentary patients · some is good, more is better",
-    "LOW FITNESS: independent risk of death, as big as smoking, hypertension, cholesterol · hip fractures ↓ 55% (fewer falls) · bone density + 1-3% with high impact",
-    "only 25% of physicians counsel · 92% of patients would follow · a prescription raises activity 10%",
-    "case: 68 F, sedentary, fears falling, new untreated hypertension 140/85 · father MI at 70, mother hip fracture at 73"
+    "3 A's: ASK · ADVISE · ACT",
+    "biggest gain: from NONE to SOME"
    ]
   },
   {
    "id": "g_safe",
    "x": 45,
-   "y": 228,
+   "y": 138,
    "w": 484,
    "h": 60,
    "kind": "plain",
    "title": "1 · IS IT SAFE?",
    "lines": [
-    "unstable or uncontrolled → review first"
+    "unstable → review first"
    ]
   },
   {
    "id": "g_dose",
    "x": 569,
-   "y": 228,
+   "y": 138,
    "w": 236,
    "h": 60,
    "kind": "plain",
@@ -200,21 +196,21 @@
   {
    "id": "g_tail",
    "x": 845,
-   "y": 228,
+   "y": 138,
    "w": 484,
    "h": 60,
    "kind": "plain",
    "title": "3 · TAILOR IT",
    "lines": [
-    "blood pressure is not a reason to skip exercise"
+    "BP is no reason to skip exercise"
    ]
   },
   {
    "id": "ci_head_0_0",
    "x": 45,
-   "y": 368,
+   "y": 278,
    "w": 236,
-   "h": 78,
+   "h": 60,
    "kind": "ci_h",
    "title": "Absolute contraindication",
    "lines": [
@@ -224,33 +220,33 @@
   {
    "id": "risk_head_0_0",
    "x": 293,
-   "y": 368,
+   "y": 278,
    "w": 236,
-   "h": 78,
+   "h": 60,
    "kind": "risk_h",
    "title": "Stratify cardiovascular risk",
    "lines": [
-    "start low, go slow if sedentary"
+    "start low, go slow"
    ]
   },
   {
    "id": "fitt_head_0_0",
    "x": 569,
-   "y": 368,
+   "y": 278,
    "w": 236,
-   "h": 78,
+   "h": 60,
    "kind": "fitt_h",
    "title": "F.I.T.T.",
    "lines": [
-    "target ≥ 150 min a week, moderate-vigorous"
+    "≥ 150 min a week"
    ]
   },
   {
    "id": "htn_head_0_0",
    "x": 845,
-   "y": 368,
+   "y": 278,
    "w": 236,
-   "h": 78,
+   "h": 60,
    "kind": "htn_h",
    "title": "Hypertension",
    "lines": []
@@ -258,9 +254,9 @@
   {
    "id": "med_head_0_0",
    "x": 1093,
-   "y": 368,
+   "y": 278,
    "w": 236,
-   "h": 78,
+   "h": 60,
    "kind": "med_h",
    "title": "Blood pressure medications",
    "lines": []
@@ -268,156 +264,142 @@
   {
    "id": "ci_check_0_0",
    "x": 45,
-   "y": 486,
+   "y": 378,
    "w": 236,
-   "h": 204,
+   "h": 114,
    "kind": "ci_t",
    "title": "Any of these?",
    "lines": [
-    "• new or uncontrolled arrhythmia",
-    "• resting or uncontrolled tachycardia",
-    "• resting blood pressure (BP) > 180/100",
-    "• symptomatic hypotension",
-    "• unstable or crescendo angina",
-    "• acute or unstable heart failure",
-    "• unstable diabetes",
+    "• resting BP > 180/100",
+    "• unstable angina or HF",
+    "• uncontrolled arrhythmia",
     "• acute febrile illness"
    ]
   },
   {
    "id": "risk_check_0_0",
    "x": 293,
-   "y": 486,
+   "y": 378,
    "w": 236,
-   "h": 204,
+   "h": 114,
    "kind": "risk_t",
    "title": "Symptoms? Risk factors?",
    "lines": [
-    "• chest, neck, jaw or arm pain",
-    "• breathless at rest or mild exertion",
-    "• dizziness, syncope, palpitations",
-    "• ankle edema, claudication, murmur",
-    "• orthopnea, nocturnal dyspnea · unusual fatigue"
+    "• chest pain",
+    "• breathless at mild exertion",
+    "• syncope, palpitations"
    ]
   },
   {
    "id": "fitt_check_0_0",
    "x": 569,
-   "y": 486,
+   "y": 378,
    "w": 236,
-   "h": 204,
+   "h": 114,
    "kind": "fitt_t",
    "title": "Talk test for intensity",
    "lines": [
     "• can SING = light",
-    "• can TALK, not sing = moderate",
-    "• no conversation = vigorous",
-    "moderate: ↑ breathing + heart rate, warm, may sweat · vigorous: sport, running, aerobics"
+    "• TALK, not sing = moderate",
+    "• no conversation = vigorous"
    ]
   },
   {
    "id": "htn_check_0_0",
    "x": 845,
-   "y": 486,
+   "y": 378,
    "w": 236,
-   "h": 204,
+   "h": 114,
    "kind": "htn_t",
    "title": "BP under 180/100?",
    "lines": [
-    "if not, control it with medication first"
+    "if not, medication first"
    ]
   },
   {
    "id": "med_check_0_0",
    "x": 1093,
-   "y": 486,
+   "y": 378,
    "w": 236,
-   "h": 204,
+   "h": 114,
    "kind": "med_t",
    "title": "NOT a contraindication",
    "lines": [
-    "antihypertensives: keep exercising",
-    "diuretic: dehydration risk, toilets nearby"
+    "diuretic: dehydration risk"
    ]
   },
   {
    "id": "ci_do_0_0",
    "x": 45,
-   "y": 730,
+   "y": 532,
    "w": 236,
-   "h": 222,
+   "h": 96,
    "kind": "warn",
    "title": "Stabilise, then review",
    "lines": [
-    "BP > 180/100: control with medication BEFORE exercise"
+    "control BP BEFORE exercise"
    ]
   },
   {
    "id": "risk_do_0_0",
    "x": 293,
-   "y": 730,
+   "y": 532,
    "w": 236,
-   "h": 222,
+   "h": 96,
    "kind": "risk_w",
    "title": "Start by risk",
    "lines": [
     "• low risk → self-directed",
-    "• risk factors (↑ BP) → low/moderate intensity",
-    "• high risk → investigations (ECG) first",
-    "• symptoms → supervised, or exercise specialist"
+    "• high risk → ECG first",
+    "• symptoms → supervised"
    ]
   },
   {
    "id": "fitt_do_0_0",
    "x": 569,
-   "y": 730,
+   "y": 532,
    "w": 236,
-   "h": 222,
+   "h": 96,
    "kind": "ok",
    "title": "Typical prescription",
    "lines": [
-    "• 5 times a week",
-    "• moderate intensity",
-    "• 30 minutes",
-    "• aerobic: walk, cycle, dance, swim, jog",
-    "• + strength 2 days a week (10-15 reps): stand from sitting, stairs, heavy gardening, bands",
-    "• build strength, sit less, improve balance"
+    "• 5 times a week, 30 min",
+    "• moderate, aerobic",
+    "• + strength 2 days a week"
    ]
   },
   {
    "id": "htn_do_0_0",
    "x": 845,
-   "y": 730,
+   "y": 532,
    "w": 236,
-   "h": 222,
+   "h": 96,
    "kind": "ok",
    "title": "Do",
    "lines": [
-    "• warm-up 15 min, cool-down 10 min",
-    "• keep the feet moving",
-    "• protect joints if obese or inactive",
-    "• one rest day a week"
+    "• long warm-up, cool-down",
+    "• keep the feet moving"
    ]
   },
   {
    "id": "med_do_0_0",
    "x": 1093,
-   "y": 730,
+   "y": 532,
    "w": 236,
-   "h": 222,
+   "h": 96,
    "kind": "ok",
    "title": "Recommended",
    "lines": [
-    "• angiotensin-converting enzyme (ACE) inhibitor or angiotensin receptor blocker: minimal problems",
-    "• calcium channel blocker: extend the warm-down (postural hypotension)"
+    "• ACE inhibitor or ARB",
+    "• CCB: longer warm-down"
    ]
   },
   {
    "id": "ci_avoid_0_0",
    "x": 45,
-   "y": 992,
+   "y": 668,
    "w": 236,
-   "h": 150,
+   "h": 78,
    "kind": "bad",
    "title": "Exercise until controlled",
    "lines": []
@@ -425,55 +407,52 @@
   {
    "id": "risk_avoid_0_0",
    "x": 293,
-   "y": 992,
+   "y": 668,
    "w": 236,
-   "h": 150,
+   "h": 78,
    "kind": "bad",
    "title": "Symptoms DURING exercise",
    "lines": [
-    "stop and promptly evaluate or refer: warn patients of these"
+    "stop and evaluate"
    ]
   },
   {
    "id": "fitt_avoid_0_0",
    "x": 569,
-   "y": 992,
+   "y": 668,
    "w": 236,
-   "h": 150,
+   "h": 78,
    "kind": "warn",
    "title": "Adjust if",
    "lines": [
     "• severe pain during exercise",
-    "• pain that does not settle after",
-    "• more night pain or joint swelling"
+    "• more night pain or swelling"
    ]
   },
   {
    "id": "htn_avoid_0_0",
    "x": 845,
-   "y": 992,
+   "y": 668,
    "w": 236,
-   "h": 150,
+   "h": 78,
    "kind": "bad",
    "title": "Don't",
    "lines": [
-    "• very strenuous resistance training (left ventricle > 300 mmHg)",
-    "• vigorous exercise with left ventricular hypertrophy",
-    "• lying-down (postural hypotension)",
-    "• isometric or overhead exercises"
+    "• heavy resistance training",
+    "• isometric or overhead work"
    ]
   },
   {
    "id": "med_avoid_0_0",
    "x": 1093,
-   "y": 992,
+   "y": 668,
    "w": 236,
-   "h": 150,
+   "h": 78,
    "kind": "bad",
    "title": "Beta-blockers",
    "lines": [
-    "↓ maximum heart rate and performance: BAD for high intensity, avoid in athletes (ACE inhibitor first)",
-    "~but they limit the hypertensive response to exercise"
+    "↓ maximum heart rate",
+    "avoid in athletes"
    ]
   }
  ],
@@ -481,17 +460,17 @@
   {
    "from": "root",
    "to": "g_safe",
-   "path": "M687.0 178V203H287.0V228"
+   "path": "M687.0 88V113H287.0V138"
   },
   {
    "from": "root",
    "to": "g_dose",
-   "path": "M687.0 178V203H687.0V228"
+   "path": "M687.0 88V113H687.0V138"
   },
   {
    "from": "root",
    "to": "g_tail",
-   "path": "M687.0 178V203H1087.0V228"
+   "path": "M687.0 88V113H1087.0V138"
   },
   {
    "from": "ci_head_0_0",
@@ -512,7 +491,7 @@
    "label": "unstable",
    "label_at": [
     163.0,
-    328
+    238
    ]
   },
   {
@@ -534,7 +513,7 @@
    "label": "stable",
    "label_at": [
     411.0,
-    328
+    238
    ]
   },
   {
