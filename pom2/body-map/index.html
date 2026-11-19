@@ -215,9 +215,9 @@ const CH = {
 /* Each region: its own charts first, then the cross-cutting ones, as [chart, column to light, why] */
 const REGIONS = {
   neck: { name: "Neck", first: [["mech", null, "discs, facets, muscle, whiplash"], ["nonmech", "myl", "radiculopathy, cervical myelopathy, red flags"], ["spinerad", null, "C-spine films: fractures, facet dislocation, prevertebral swelling"]],
-    also: [["nerve", "rad", "pain or numbness down the arm: which root?"], ["poly", "as", "inflammatory: morning stiffness, better with movement"], ["fxmgmt", null, "after trauma"]] },
+    also: [["nonmech", "rad", "pain or numbness down the arm: which root?"], ["poly", "as", "inflammatory: morning stiffness, better with movement"], ["fxmgmt", null, "after trauma"]] },
   back: { name: "Low back", first: [["mech", null, "discogenic pain, disc herniation, facet, muscle"], ["nonmech", null, "stenosis, cauda equina, inflammatory, fracture, infection or cancer"], ["spinerad", null, "vertebral fracture, spondylolysis, scoliosis, ankylosing spondylitis"]],
-    also: [["nerve", "rad", "pain down the leg: radiculopathy, or foot drop from L5"], ["poly", "as", "young, morning stiffness, night pain, sacroiliac joints"], ["inf", "om", "fever, injection drug use: vertebral osteomyelitis"], ["peds", "sco", "a teenager: scoliosis"]] },
+    also: [["nonmech", "rad", "pain down the leg: radiculopathy, or foot drop from L5"], ["poly", "as", "young, morning stiffness, night pain, sacroiliac joints"], ["inf", "om", "fever, injection drug use: vertebral osteomyelitis"], ["peds", "sco", "a teenager: scoliosis"]] },
   shoulder: { name: "Shoulder", first: [["proxue", null, "AC joint, glenohumeral arthritis, instability, frozen shoulder"], ["shoulder", null, "rotator cuff impingement, stages I to III, cuff arthropathy"], ["arm", null, "biceps tendon, SLAP tear, bursitis"]],
     also: [["mono", "sep", "one hot swollen joint: septic until proven otherwise"], ["poly", null, "both shoulders plus other joints"], ["vasc", "gca", "over 50, stiff shoulders and hips, headache: polymyalgia and giant cell arteritis"], ["bodypain", "pmr", "over 50, both shoulders and hips stiff: polymyalgia rheumatica"], ["fxrad", null, "after a fall"], ["fxmgmt", null, "after a fall"]] },
   arm: { name: "Upper arm", first: [["arm", null, "biceps and rotator cuff pain felt in the arm"]],

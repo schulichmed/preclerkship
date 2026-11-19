@@ -196,18 +196,6 @@ OPENING = {key: f"I would normally inspect the other side and examine the joint 
               f"but in the interest of time I will focus on the {complaint} complaint."
            for key, (complaint, joints) in JOINTS.items()}
 
-# fracture rules the note gives as prose: one card, no picture
-OTTAWA = {
-    "num": "4", "name": "Ottawa ankle and foot rules", "problem": "Fracture: X-ray or not?", "img": None,
-    "after": "Deep vein thrombosis",  # after the talar tilt and Homan's, hands already on the malleoli
-    "for": "Who needs an <b>X-ray</b> (age 18 or over)",
-    "steps": ["Press the <b>back edge and tip of each malleolus</b> (distal 6 cm of tibia and fibula)",
-              "Press the <b>base of the 5th metatarsal</b> and the <b>navicular</b>",
-              "Ask them to <b>walk 4 steps</b>"],
-    "pos": "<b>Any bony tenderness there</b>, or <b>cannot bear weight for 4 steps</b> (right after the injury and in the emergency department) → X-ray",
-}
-
-
 EXAM = exam_page.Exam(
     key="msk", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening=OPENING,
     h1="MSK exam",
@@ -219,9 +207,20 @@ EXAM = exam_page.Exam(
     general_week="Week 1 · every joint", pearls_heading="Pearls and X-rays",
     video=VIDEO, video_page="https://mskmedicine.com/clinical_skills/{slug}/", region_video=REGION_VIDEO, official_region_video=True,
     other_video=json.loads((HERE / "videos_other.json").read_text(encoding="utf-8")),
-    extra_cards={"ankle": [OTTAWA]},
     clips=json.loads((HERE / "clips.json").read_text(encoding="utf-8")),
     gait=GAIT, roots=ROOTS, rom=ROM, rom_source="Values from the course objectives",
+    region_text={"wrist": {"pictures_label": "OA vs RA pictures"}, "roots": {"pictures_label": "ASIA dermatome map"}},
+    region_pictures={"roots": [
+        {"file": "asia-dermatome-map.jpg",
+         "caption": "ASIA dermatome map: the dots are the key sensory points tested for each root (the chart used in Canadian emergency departments)",
+         "credit": "American Spinal Injury Association, ISNCSCI worksheet, used with permission"}],
+     "wrist": [
+        {"file": "oa-vs-ra-hands.jpg",
+         "caption": "OA (left): Heberden's (DIP) and Bouchard's (PIP) nodes, MCPs spared · RA (right): fusiform swelling, ulnar deviation, rheumatoid nodule, muscle wasting, boutonnière and swan neck",
+         "credit": "Bates' Guide to Physical Examination, Wolters Kluwer 2009, used with permission"},
+        {"file": "hand-oa-photo-xray.jpg",
+         "caption": "Hand OA: DIP and PIP nodes and deformity, bony enlargement, slight squaring of the thumb base · X-ray: osteophytes, joint space narrowing, subchondral sclerosis",
+         "credit": "Nature Reviews Rheumatology 2018 (s41584-018-0095-4), Fig. 1, used with permission"}]},
     # on the hip, FABER, FADIR and the extra thigh thrust share one heading (they are the
     # lumbar spine's SI joint tests there)
     region_tests={"hip": {

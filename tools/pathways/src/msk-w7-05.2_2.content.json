@@ -5,24 +5,24 @@
  "root": {
   "title": "Shoulder bones and joints: WHERE is it, and is PASSIVE motion lost too?",
   "lines": [
-   "acute injury = AC instability · gradual = arthritis · stiff with a normal X-ray, no trauma = adhesive capsulitis",
-   "always conservative first: surgery only once it is exhausted · rotator cuff disease (active motion << passive) is on the MUSCLES OF THE SHOULDER chart"
+   "acute injury = AC · gradual = arthritis",
+   "stiff, X-ray normal = adhesive capsulitis"
   ]
  },
  "groups": [
-  {"id": "g_ac", "cols": [0, 1], "title": "ACROMIOCLAVICULAR (AC) JOINT", "lines": ["acute injury or gradual onset?"]},
-  {"id": "g_ar", "cols": [2, 3], "title": "GLENOHUMERAL ARTHRITIS", "lines": ["deep ache: is PASSIVE motion lost too?"]},
-  {"id": "g_in", "cols": [4, 5], "title": "INSTABILITY", "lines": ["head won't stay centred: onset · direction · degree"]},
-  {"id": "g_st", "cols": [6, 6], "title": "STIFF, X-RAY NORMAL", "lines": ["no trauma"]}
+  {"id": "g_ac", "cols": [0, 1], "title": "ACROMIOCLAVICULAR (AC) JOINT", "lines": ["• acute injury or gradual?"]},
+  {"id": "g_ar", "cols": [2, 3], "title": "GLENOHUMERAL ARTHRITIS", "lines": ["• is PASSIVE motion lost too?"]},
+  {"id": "g_in", "cols": [4, 5], "title": "INSTABILITY", "lines": ["• head won't stay centred"]},
+  {"id": "g_st", "cols": [6, 6], "title": "STIFF, X-RAY NORMAL", "lines": ["• no trauma"]}
  ],
  "sections": ["head", "pres", "inv", "tx"],
  "row_names": {"pres": "PRESENTS AS", "inv": "EXAM AND X-RAY", "tx": "TREATMENT"},
  "columns": [
   {"id": "acs", "colour": "teal", "drop_label": "injury",
    "head": [[["h", "AC separation", ["acute injury"]]]],
-   "pres": [[["t", "Blow to the tip of the shoulder", ["clavicle rides up, acromion stands out", "case: 47 rower → education, ice, sling, early motion"]]]],
-   "inv": [[["w", "X-ray: type I → V", ["by increasing displacement"]]]],
-   "tx": [[["ok", "Types I–III", ["education · sling · analgesics · ice · early exercises"]]], [["bad", "Types IV–V", ["SURGERY"]]]]
+   "pres": [[["t", "Blow to the shoulder tip", ["clavicle rides up"]]]],
+   "inv": [[["w", "X-ray: type I → V", ["by displacement"]]]],
+   "tx": [[["ok", "Types I–III", ["sling · ice · early exercises"]]], [["bad", "Types IV–V", ["SURGERY"]]]]
   },
   {"id": "aco", "colour": "slate", "drop_label": "gradual", "home": {"chart": "msk-w11-04_2", "col": "oa", "name": "Osteoarthritis"},
    "head": [[["h", "AC osteoarthritis", ["gradual · no injury"]]]],
@@ -43,26 +43,22 @@
    "tx": []
   },
   {"id": "tri", "colour": "orange", "drop_label": "trauma",
-   "head": [[["h", "Traumatic", ["'torn loose' · ONE direction · surgery often"]]]],
+   "head": [[["h", "Traumatic", ["'torn loose' · ONE direction"]]]],
    "pres": [[["t", "Dislocation after injury", ["anterior >> posterior"]]]],
-   "inv": [[["w", "X-ray before and after reduction", ["• direction", "• subluxed or dislocated"]]]],
-   "tx": [[["ok", "1 · REDUCE", ["• monitors + analgesia, then manipulate", "• re-check neurovascular status"]]], [["warn", "2 · Young or recurrent dislocator", ["labral repair: 85% success"]]]]
+   "inv": [[["w", "X-ray before + after reduction", []]]],
+   "tx": [[["ok", "1 · REDUCE", ["• analgesia, then manipulate", "• re-check neurovascular status"]]], [["warn", "2 · Young or recurrent", ["labral repair"]]]]
   },
   {"id": "atr", "colour": "purple", "drop_label": "no trauma",
    "head": [[["h", "Atraumatic", ["'born loose' · AMBRI"]]]],
-   "pres": [[["t", "Multidirectional · Bilateral", ["motor control poor", "case: a dozen dislocations, both shoulders, pops out on its own → physiotherapy"]]]],
-   "inv": [[["w", "Ligament laxity", ["? connective tissue disorder · ? poor motor control"]]]],
-   "tx": [[["ok", "1 · REHAB", ["physiotherapy · muscle control"]]], [["warn", "2 · Surgery uncommon", ["inferior capsular shift: 70% success"]]]]
+   "pres": [[["t", "Multidirectional · Bilateral", ["poor motor control"]]]],
+   "inv": [[["w", "Ligament laxity", ["? connective tissue disorder"]]]],
+   "tx": [[["ok", "1 · REHAB", ["physiotherapy"]]], [["warn", "2 · Surgery uncommon", ["inferior capsular shift"]]]]
   },
   {"id": "adh", "colour": "blue",
-   "head": [[["h", "Adhesive capsulitis", ["2% of adults · 20% of diabetics · 40s–50s", "mostly idiopathic"]]]],
-   "pres": [[["t", "Spontaneous GLOBAL stiffness", ["active AND passive lost", "• with diabetes, cervical disc, thyroid, cardiac disease", "case: 47, diabetic, 4 months of pain, progressive loss of motion"]]]],
-   "inv": [[["w", "X-ray NORMAL, no trauma", ["rules out arthritis and post-traumatic deformity"]]]],
-   "tx": [[["ok", "1 · Education · pain control", ["usually self-limited · physiotherapy unproven"]]], [["warn", "2 · Intra-articular steroid", ["beats physiotherapy, same by 1 year · or hydrodistension"]]], [["warn", "3 · Manipulation or capsulectomy", ["faster motion, same by 2 years"]]]]
+   "head": [[["h", "Adhesive capsulitis", ["20% of diabetics · 40s–50s", "freezing → frozen → thawing"]]]],
+   "pres": [[["t", "Spontaneous GLOBAL stiffness", ["• active AND passive lost", "• diabetes, thyroid disease"]]]],
+   "inv": [[["w", "X-ray NORMAL, no trauma", ["rules out arthritis"]]]],
+   "tx": [[["ok", "1 · Education · pain control", ["usually self-limited"]]], [["warn", "2 · Intra-articular steroid", ["faster, same by 1 year"]]], [["warn", "3 · Manipulation or capsulectomy", []]]]
   }
- ],
- "panels": [
-  {"title": "Stiff shoulder: causes and stages", "items": ["intra-articular: arthritis, post-traumatic deformity · extra-articular: capsular, muscular, heterotopic bone · combined", "frozen shoulder: freezing (inflammatory) → frozen → thawing"]},
-  {"title": "What keeps the head centred", "items": ["ligaments + labrum matter most · bones · rotator cuff · nerves", "labrum: more surface area, more depth, bumper effect", "reduced → subluxated → dislocated is a continuum", "diagnose by onset (traumatic or not) · direction (anterior, posterior, inferior) · degree"]}
  ]
 }

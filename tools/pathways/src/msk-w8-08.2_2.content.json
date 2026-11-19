@@ -5,262 +5,39 @@
  "root": {
   "title": "Fall on an outstretched hand (FOOSH): which bone, and does it need SURGERY?",
   "lines": [
-   "treatment is dictated by age and activity level, and by how displaced the fracture is"
+   "age, activity and displacement decide"
   ]
  },
  "groups": [
-  {
-   "id": "g_dr",
-   "cols": [
-    0,
-    1
-   ],
-   "title": "DISTAL RADIUS: very common",
-   "lines": [
-    "localized pain · poor function if the anatomy is not restored"
-   ]
-  },
-  {
-   "id": "g_sc",
-   "cols": [
-    2,
-    3
-   ],
-   "title": "SCAPHOID: young people",
-   "lines": [
-    "the most common carpal fracture · usually heals uneventfully",
-    "swelling + localized tenderness",
-    "retrograde blood flow → nonunion, osteonecrosis, late arthrosis",
-    "DELAYED diagnosis brings the complications"
-   ]
-  }
+  {"id": "g_dr", "cols": [0, 1], "title": "DISTAL RADIUS: very common", "lines": ["poor function if anatomy not restored"]},
+  {"id": "g_sc", "cols": [2, 3], "title": "SCAPHOID: young people", "lines": ["retrograde blood supply", "missed → nonunion, osteonecrosis"]}
  ],
  "pres": [
-  {
-   "id": "p_dr",
-   "group": "g_dr",
-   "title": "X-ray: 3 questions",
-   "lines": [
-    "• CROOKED? normal 12° palmar tilt on the lateral",
-    "• SHORT? more than neutral ulnar variance (compare the other side)",
-    "• SMOOTH? a step > 1 mm → post-traumatic arthrosis",
-    "case: 26, bike fall: extra-articular, radius SHORT + dorsally tilted → closed reduction"
-   ]
-  },
-  {
-   "id": "p_sc",
-   "group": "g_sc",
-   "title": "Be SUSPICIOUS",
-   "lines": [
-    "• X-ray usually sufficient",
-    "• snuffbox swelling + tenderness, X-ray NORMAL → CAST, repeat X-ray in 10-14 days",
-    "• still normal, still suspected → CT (or MRI)",
-    "case: 19, motocross, pain at the thumb base"
-   ]
-  }
+  {"id": "p_dr", "group": "g_dr", "title": "X-ray: 3 questions", "lines": ["• CROOKED? normal palmar tilt 12°", "• SHORT? ulnar variance past neutral", "• SMOOTH? step > 1 mm"]},
+  {"id": "p_sc", "group": "g_sc", "title": "Be SUSPICIOUS", "lines": ["• snuffbox tender, X-ray NORMAL → cast", "• repeat X-ray in 10-14 days", "• still suspected → CT or MRI"]}
  ],
- "sections": [
-  "head",
-  "inv",
-  "tx"
- ],
- "row_names": {
-  "pres": "WORKUP",
-  "inv": "STEPS",
-  "tx": "TREATMENT"
- },
+ "sections": ["head", "inv", "tx"],
+ "row_names": {"pres": "WORKUP", "inv": "STEPS", "tx": "TREATMENT"},
  "columns": [
-  {
-   "id": "drc",
-   "colour": "blue",
-   "drop_label": "displaced",
-   "head": [
-    [
-     [
-      "h",
-      "CLOSED reduction + cast",
-      [
-       "forgiving at the extremes of age",
-       "case: 81, imperfect but cast: surgery NOT better when old"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "1 · Adequate analgesia",
-      [
-       "• hematoma block (1% lidocaine)",
-       "• regional anaesthesia",
-       "• conscious sedation"
-      ]
-     ]
-    ],
-    [
-     [
-      "w",
-      "2 · Reduce",
-      [
-       "traction → INCREASE the deformity (unlocks the fragments) → correct it"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "3 · Cast with a 3-point mould",
-      [
-       "well moulded does NOT mean tight"
-      ]
-     ]
-    ],
-    [
-     [
-      "ok",
-      "4 · Rehabilitate",
-      ["cast until healed, then range of motion + strengthening"]
-     ]
-    ]
-   ]
+  {"id": "drc", "colour": "blue", "drop_label": "displaced",
+   "head": [[["h", "CLOSED reduction + cast", ["forgiving at the extremes of age"]]]],
+   "inv": [[["w", "1 · Analgesia", ["• hematoma block (1% lidocaine)", "• regional or conscious sedation"]]], [["w", "2 · Reduce", ["traction: INCREASE, then correct"]]]],
+   "tx": [[["ok", "3 · Cast, 3-point mould", ["well moulded is NOT tight"]]], [["ok", "4 · Rehabilitate", ["range of motion + strength"]]], [["bad", "Cast TOO TIGHT", ["acute CTS ± compartment syndrome", "split cast + padding, elevate"]]]]
   },
-  {
-   "id": "dro",
-   "colour": "orange",
-   "drop_label": "reduction inadequate",
-   "head": [
-    [
-     [
-      "h",
-      "SURGICAL reduction",
-      [
-       "still crooked, short or not smooth"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Left uncorrected",
-      [
-       "• crooked: radio-ulnar joint motion altered, rotation restricted",
-       "• short: ulnar impaction syndrome"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "Open reduction internal fixation (ORIF) or external fixation",
-      [
-       "then rehabilitate"
-      ]
-     ]
-    ],
-    [
-     [
-      "bad",
-      "Joint left NOT smooth",
-      [
-       "radiocarpal arthritis: pain, stiffness → fusion"
-      ]
-     ]
-    ]
-   ]
+  {"id": "dro", "colour": "orange", "drop_label": "reduction inadequate",
+   "head": [[["h", "SURGICAL reduction", ["still crooked, short or not smooth"]]]],
+   "inv": [[["w", "Left uncorrected", ["• crooked: rotation restricted", "• short: ulnar impaction"]]]],
+   "tx": [[["ok", "ORIF or external fixation", ["then rehabilitate"]]], [["bad", "Joint NOT smooth", ["radiocarpal arthritis → fusion"]]], [["bad", "After ORIF: FPL RUPTURE", ["can't flex thumb IP, sensation normal"]]]]
   },
-  {
-   "id": "scc",
-   "colour": "teal",
-   "drop_label": "undisplaced or DISTAL",
-   "head": [
-    [
-     [
-      "h",
-      "Cast",
-      [
-       "undisplaced, or distal pole"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "A normal X-ray can hide it",
-      [
-       "lecture case (25-year-old man): CT showed the line",
-       "scaphoid tubercle fracture: distal → cast"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "Cast until union",
-      [
-       "lecture case: healed on CT at 8 weeks"
-      ]
-     ]
-    ]
-   ]
+  {"id": "scc", "colour": "teal", "drop_label": "undisplaced or DISTAL",
+   "head": [[["h", "Cast", ["undisplaced, or distal pole"]]]],
+   "inv": [[["w", "A normal X-ray can hide it", ["• CT can show the line", "• tubercle fracture = distal"]]]],
+   "tx": [[["ok", "Cast until union", []]]]
   },
-  {
-   "id": "scs",
-   "colour": "magenta",
-   "drop_label": "displaced or PROXIMAL",
-   "head": [
-    [
-     [
-      "h",
-      "Surgery",
-      [
-       "displaced, or proximal pole"
-      ]
-     ]
-    ]
-   ],
-   "inv": [
-    [
-     [
-      "w",
-      "Displaced proximal pole",
-      [
-       "seen on X-ray + CT (lecture case)"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "ok",
-      "Operative fixation",
-      [
-       "volar approach · screw on the post-op X-ray"
-      ]
-     ]
-    ]
-   ]
+  {"id": "scs", "colour": "magenta", "drop_label": "displaced or PROXIMAL",
+   "head": [[["h", "Surgery", ["displaced, or proximal pole"]]]],
+   "inv": [[["w", "Displaced proximal pole", ["seen on X-ray + CT"]]]],
+   "tx": [[["ok", "Operative fixation", ["volar approach, screw"]]]]
   }
- ],
- "panels": [
-  {"title": "After the fracture: complications to catch", "items": [
-   "cast TOO TIGHT (days later): pain, numb thumb + index + long, pain on passive finger motion = acute carpal tunnel ± early COMPARTMENT syndrome",
-   "→ split the cast AND padding to skin · elevate · recheck every 15-20 min · NO stronger analgesia (masks it) · then a bivalved cast",
-   "3 months after ORIF: suddenly can't flex the thumb IP joint, sensation normal → flexor pollicis longus RUPTURE"]},
-  {"title": "Cast materials", "items": [
-   "plaster of Paris: cheaper, easily moulded · heavy, poor resistance to water",
-   "fiberglass: light yet strong, waterproof options, more radiolucent · expensive, harder to mould",
-   "padding: cotton (cheap, under either) or synthetic (waterproof)"]}
  ]
 }

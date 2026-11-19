@@ -138,6 +138,7 @@ function buildMap(host) {
       g.appendChild(col);
     });
   }
+  var outer = host, fit = el("div", "fit"); outer.appendChild(fit); host = fit;
   host.appendChild(g);
   if (PANELS.length) {
     var p = el("div", "panels"); p.style.minWidth = g.style.minWidth;
@@ -147,11 +148,31 @@ function buildMap(host) {
     });
     host.appendChild(p);
   }
-  return host;
+  return outer;
 }
 
 var map = buildMap(document.getElementById("map")), bar = document.getElementById("bar");
 var mode = "look", trail = [], lit = [], focus = null;
+
+/* A wide chart is never cut off at the sides: on the page it may use the whole window, not just
+   the text column, and if it is still wider it is shrunk to fit. Below FLOOR the text would be too
+   small to read, so it stops shrinking there and scrolls sideways instead. */
+var SCALE = 1, FLOOR = 0.6;
+function fitMap() {
+  var fit = map.querySelector(".fit"), g = map.querySelector(".grid"), sec = map.parentElement;
+  var need = parseFloat(g.style.minWidth) || 0, colW = sec.clientWidth, vw = document.documentElement.clientWidth;
+  var W = EMBED ? colW : Math.min(Math.max(colW, vw - 32), Math.max(colW, need));
+  if (W > colW) {
+    map.style.width = W + "px";
+    map.style.marginLeft = Math.round((vw - W) / 2 - sec.getBoundingClientRect().left) + "px";
+  } else { map.style.width = ""; map.style.marginLeft = ""; }
+  SCALE = need > W ? Math.max(FLOOR, (W - 2) / need) : 1;
+  if (SCALE < 1) {
+    fit.style.width = need + "px"; fit.style.transform = "scale(" + SCALE + ")"; fit.style.transformOrigin = "0 0";
+    fit.style.marginRight = -Math.ceil(need * (1 - SCALE)) + "px";
+    fit.style.marginBottom = -Math.ceil(fit.offsetHeight * (1 - SCALE)) + "px";
+  } else { fit.style.width = fit.style.transform = fit.style.marginRight = fit.style.marginBottom = ""; }
+}
 
 /* connectors drawn like the chart in the notes: elbows that branch from a box, straight drops into each diagnosis through its label */
 var NS = "http://www.w3.org/2000/svg";
@@ -160,7 +181,7 @@ function drawLinks() {
   var gr = g.getBoundingClientRect(), svg = document.createElementNS(NS, "svg");
   svg.setAttribute("class", "links"); svg.setAttribute("width", g.scrollWidth); svg.setAttribute("height", g.scrollHeight);
   svg.innerHTML = '<defs><marker id="lk-ah" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0 0L10 5L0 10z"/></marker></defs>';
-  function box(e) { var r = e.getBoundingClientRect(); return { t: r.top - gr.top, b: r.bottom - gr.top, x: (r.left + r.right) / 2 - gr.left }; }
+  function box(e) { var r = e.getBoundingClientRect(), s = SCALE; return { t: (r.top - gr.top) / s, b: (r.bottom - gr.top) / s, x: ((r.left + r.right) / 2 - gr.left) / s }; }
   function path(d, key, arrow) {
     var p = document.createElementNS(NS, "path"); p.setAttribute("d", d); p.setAttribute("data-a", key);
     if (arrow) p.setAttribute("marker-end", "url(#lk-ah)"); svg.appendChild(p);
@@ -213,7 +234,7 @@ function trailEl() { var ul = el("ul", "trail"); trail.forEach(function (t) { ul
 function again(a) { var r = el("button", "ghost", "Start again"); r.addEventListener("click", walkStart); a.appendChild(r); }
 function scrollToCol(k) {
   var col = map.querySelector('[data-k="' + k + '"]');
-  if (col) map.scrollTo({ left: col.offsetLeft - map.clientWidth / 2 + col.offsetWidth / 2, behavior: "smooth" });
+  if (col) map.scrollTo({ left: (col.offsetLeft + col.offsetWidth / 2) * SCALE - map.clientWidth / 2, behavior: "smooth" });
 }
 
 /* Look */
@@ -300,9 +321,11 @@ document.querySelectorAll("#modes .chip").forEach(function (b) {
   });
 });
 map.classList.add("is-look"); lookStart();
-drawLinks();
-if (window.ResizeObserver) new ResizeObserver(function () { drawLinks(); }).observe(map.querySelector(".grid"));
-if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawLinks);
+function relayout() { fitMap(); drawLinks(); }
+relayout();
+if (window.ResizeObserver) { var ro = new ResizeObserver(relayout); ro.observe(map.querySelector(".grid")); ro.observe(map.parentElement); }
+window.addEventListener("resize", relayout);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(relayout);
 if (EMBED && window.parent !== window) {
   var tell = function () { window.parent.postMessage({ chartHeight: document.querySelector(".wrap").getBoundingClientRect().height }, "*"); };
   tell(); if (window.ResizeObserver) new ResizeObserver(tell).observe(document.querySelector(".wrap"));

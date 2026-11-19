@@ -81,7 +81,7 @@
    "x": 40,
    "y": 252,
    "w": 246,
-   "h": 548,
+   "h": 314,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -89,7 +89,7 @@
    "x": 316,
    "y": 252,
    "w": 246,
-   "h": 1032,
+   "h": 634,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -97,7 +97,7 @@
    "x": 564,
    "y": 252,
    "w": 246,
-   "h": 1032,
+   "h": 634,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
@@ -105,7 +105,7 @@
    "x": 812,
    "y": 252,
    "w": 246,
-   "h": 1032,
+   "h": 634,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -113,20 +113,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 414,
-   "h": 378,
+   "y": 380,
+   "h": 178,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 832,
-   "h": 132,
+   "y": 598,
+   "h": 78,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 1004,
-   "h": 272,
+   "y": 716,
+   "h": 162,
    "text": "TREATMENT"
   }
  ],
@@ -139,7 +139,7 @@
    "kind": "dark",
    "title": "A child with a limp: is it a SEPTIC hip? If not, AGE narrows the rest",
    "lines": [
-    "every one: blood count, ESR (erythrocyte sedimentation rate) and CRP (C-reactive protein), hip x-ray ± ultrasound"
+    "every one: CBC, ESR, CRP, hip x-ray"
    ]
   },
   {
@@ -162,16 +162,14 @@
    "h": 60,
    "kind": "plain",
    "title": "Afebrile and well: AGE decides",
-   "lines": [
-    "3-10: transient synovitis · 4-8: Perthes · 8-15, obese: slipped epiphysis"
-   ]
+   "lines": []
   },
   {
    "id": "sep_head_0_0",
    "x": 45,
    "y": 260,
    "w": 236,
-   "h": 114,
+   "h": 80,
    "kind": "sep_h",
    "title": "Septic hip or osteomyelitis",
    "lines": [
@@ -183,12 +181,11 @@
    "x": 321,
    "y": 260,
    "w": 236,
-   "h": 114,
+   "h": 80,
    "kind": "ts_h",
    "title": "Transient synovitis",
    "lines": [
-    "non-infectious hip inflammation after a virus",
-    "the most common cause of hip pain under 10"
+    "post-viral hip inflammation"
    ]
   },
   {
@@ -196,12 +193,12 @@
    "x": 569,
    "y": 260,
    "w": 236,
-   "h": 114,
+   "h": 80,
    "kind": "lcp_h",
    "title": "Legg-Calvé-Perthes disease",
    "lines": [
-    "IDIOPATHIC avascular necrosis of the femoral head",
-    "the most common childhood hip disorder"
+    "IDIOPATHIC avascular necrosis",
+    "of the femoral head"
    ]
   },
   {
@@ -209,19 +206,19 @@
    "x": 817,
    "y": 260,
    "w": 236,
-   "h": 114,
+   "h": 80,
    "kind": "scfe_h",
    "title": "Slipped capital femoral epiphysis",
    "lines": [
-    "the head slips posterior and inferior on the neck"
+    "head slips posterior, inferior"
    ]
   },
   {
    "id": "sep_pres_0_0",
    "x": 45,
-   "y": 414,
+   "y": 380,
    "w": 236,
-   "h": 378,
+   "h": 178,
    "kind": "sep_w",
    "title": "→ Acute Monoarthritis",
    "lines": [
@@ -231,158 +228,148 @@
   {
    "id": "ts_pres_0_0",
    "x": 321,
-   "y": 414,
+   "y": 380,
    "w": 236,
-   "h": 205,
+   "h": 87,
    "kind": "ts_t",
-   "title": "Age 3-10, boys 2:1",
+   "title": "AGE 3-10, boys",
    "lines": [
-    "• SUDDEN hip pain 7-10 days after a cold or sore throat",
-    "• pain to thigh or knee, better through the day",
-    "• afebrile or LOW fever (< 38), looks well"
+    "• SUDDEN, after a cold",
+    "• afebrile or low fever, looks well"
    ]
   },
   {
    "id": "ts_pres_1_0",
    "x": 321,
-   "y": 641,
+   "y": 489,
    "w": 236,
-   "h": 151,
+   "h": 69,
    "kind": "ts_w",
    "title": "Exam",
    "lines": [
-    "hip held flexed, abducted, externally rotated · less internal rotation, abduction"
+    "hip held flexed, externally rotated"
    ]
   },
   {
    "id": "lcp_pres_0_0",
    "x": 569,
-   "y": 414,
+   "y": 380,
    "w": 236,
-   "h": 214,
+   "h": 87,
    "kind": "lcp_t",
-   "title": "Age 4-8, boys 5:1",
+   "title": "AGE 4-8, boys",
    "lines": [
-    "• GRADUAL painless limp, then pain over weeks to months",
-    "• mild pain referred to the KNEE, worse with activity, better with rest",
-    "• family history, low birth weight, second-hand smoke",
-    "• early on can look like transient synovitis"
+    "• GRADUAL painless limp",
+    "• pain referred to the KNEE"
    ]
   },
   {
    "id": "lcp_pres_1_0",
    "x": 569,
-   "y": 650,
+   "y": 489,
    "w": 236,
-   "h": 142,
+   "h": 69,
    "kind": "lcp_w",
    "title": "Exam",
    "lines": [
-    "looks well · less abduction and internal rotation",
-    "apparent leg length difference (tight adductors)"
+    "less abduction, internal rotation"
    ]
   },
   {
    "id": "scfe_pres_0_0",
    "x": 817,
-   "y": 414,
+   "y": 380,
    "w": 236,
-   "h": 224,
+   "h": 78,
    "kind": "scfe_t",
-   "title": "Age 8-15 (girls ~12, boys ~14), OBESE",
+   "title": "AGE 8-15, OBESE",
    "lines": [
-    "• gradual painful limp: hip, thigh or KNEE pain",
-    "• obesity #1 · growth spurt, endocrine disease, radiation, family history",
-    "• left more often · 1 in 5 both hips",
-    "• atypical age or weight → endocrine cause (hypothyroid, growth hormone deficiency)"
+    "• painful limp: hip, thigh, KNEE",
+    "• 1 in 5 both hips"
    ]
   },
   {
    "id": "scfe_pres_1_0",
    "x": 817,
-   "y": 660,
+   "y": 480,
    "w": 236,
-   "h": 132,
+   "h": 78,
    "kind": "scfe_w",
    "title": "Exam",
    "lines": [
-    "• antalgic, may not bear weight · thigh wasting",
-    "• hip rolls into EXTERNAL rotation on flexion (Drehmann sign)",
-    "• less internal rotation, abduction"
+    "• EXTERNAL rotation on flexion",
+    "• less internal rotation"
    ]
   },
   {
    "id": "ts_inv_0_0",
    "x": 321,
-   "y": 832,
+   "y": 598,
    "w": 236,
-   "h": 132,
+   "h": 78,
    "kind": "ts_w",
-   "title": "Bloodwork, x-ray, ultrasound",
+   "title": "Bloods, x-ray, ultrasound",
    "lines": [
-    "• NORMAL (ESR, CRP may be slightly up)",
-    "• done to rule out septic arthritis"
+    "• NORMAL",
+    "• rule out septic arthritis"
    ]
   },
   {
    "id": "lcp_inv_0_0",
    "x": 569,
-   "y": 832,
+   "y": 598,
    "w": 236,
-   "h": 132,
+   "h": 78,
    "kind": "lcp_w",
-   "title": "X-ray: anteroposterior (AP) pelvis + frog-leg",
+   "title": "X-ray: AP pelvis + frog-leg",
    "lines": [
-    "flattened, fragmented femoral head · bone scan, MRI"
+    "flattened, fragmented head"
    ]
   },
   {
    "id": "scfe_inv_0_0",
    "x": 817,
-   "y": 832,
+   "y": 598,
    "w": 236,
-   "h": 132,
+   "h": 78,
    "kind": "scfe_w",
    "title": "X-ray: AP pelvis + frog-leg",
    "lines": [
-    "• earliest: WIDE, irregular physis",
-    "• Klein's line along the neck MISSES the head (Trethowan sign)",
-    "• 'melting ice cream cone' · MRI if unclear"
+    "• Klein's line MISSES the head",
+    "• 'melting ice cream cone'"
    ]
   },
   {
    "id": "ts_tx_0_0",
    "x": 321,
-   "y": 1004,
+   "y": 716,
    "w": 236,
-   "h": 272,
+   "h": 162,
    "kind": "ok",
-   "title": "Anti-inflammatory (NSAID) + reassure",
+   "title": "NSAID + reassure",
    "lines": [
-    "self-limiting in 7-10 days · full recovery"
+    "settles in 7-10 days"
    ]
   },
   {
    "id": "lcp_tx_0_0",
    "x": 569,
-   "y": 1004,
+   "y": 716,
    "w": 236,
-   "h": 179,
+   "h": 79,
    "kind": "ok",
    "title": "Refer to orthopedics",
    "lines": [
-    "• keep the range of motion (physiotherapy)",
-    "• off-load: crutches, brace, swim, cycle",
-    "• NSAIDs, acetaminophen · osteotomy for some",
-    "better motion = better outcome"
+    "• keep range of motion",
+    "• off-load: crutches, swim, cycle"
    ]
   },
   {
    "id": "lcp_tx_1_0",
    "x": 569,
-   "y": 1205,
+   "y": 817,
    "w": 236,
-   "h": 71,
+   "h": 61,
    "kind": "warn",
    "title": "Poorly treated",
    "lines": [
@@ -392,28 +379,25 @@
   {
    "id": "scfe_tx_0_0",
    "x": 817,
-   "y": 1004,
+   "y": 716,
    "w": 236,
-   "h": 134,
+   "h": 78,
    "kind": "bad",
-   "title": "STOP weight-bearing + EMERGENCY orthopedics",
+   "title": "STOP weight-bearing",
    "lines": [
-    "further slip → avascular necrosis (25%)",
-    "also arthritis · fixed physis stops growing"
+    "EMERGENCY orthopedics",
+    "further slip → avascular necrosis"
    ]
   },
   {
    "id": "scfe_tx_1_0",
    "x": 817,
-   "y": 1160,
+   "y": 816,
    "w": 236,
-   "h": 116,
+   "h": 62,
    "kind": "ok",
-   "title": "Fix it where it lies: do NOT force a reduction",
-   "lines": [
-    "• stable: one screw in situ",
-    "• unstable: open reduction + internal fixation"
-   ]
+   "title": "Fix in situ: do NOT force a reduction",
+   "lines": []
   }
  ],
  "edges": [
@@ -511,29 +495,5 @@
    "from_dx": 248
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1310,
-   "w": 497,
-   "title": "The rest of the differential, by age",
-   "items": [
-    "under 4: transient synovitis · infection · juvenile idiopathic arthritis · non-accidental injury · pain referred from the limb",
-    "4-10: transient synovitis · Perthes · infection · 10-16: slipped epiphysis · avulsion fracture · infection",
-    "uncommon at any age: leukemia · under 4: neuroblastoma metastases, eosinophilic granuloma · 4-16: Ewing sarcoma · teens: osteoid osteoma, osteosarcoma"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 556,
-   "y": 1310,
-   "w": 497,
-   "title": "Any abnormal gait: warning signs",
-   "items": [
-    "asymmetry · progression · leg length difference · pain · deformity · a suspected associated condition",
-    "also: missed hip dysplasia (painless waddle, leg length difference), clubfoot, overuse, trauma, neuromuscular, inflammatory arthritis (see the PEDIATRIC ORTHOPEDICS chart)"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }
