@@ -194,7 +194,28 @@ def draw(repo: Path, chart_id: str, content: dict, vault: Path) -> tuple:
         asset.write_bytes(raw)
         log.info("%s: new picture %s", chart_id, asset.name)
     w, h = SVG_SIZE.search(svg).groups()
-    return svg, {"src": f"assets/figures/{digest}.svg", "w": int(float(w)), "h": int(float(h))}
+    row = {"src": f"assets/figures/{digest}.svg", "w": int(float(w)), "h": int(float(h))}
+    hot = hotspots(content, spec)
+    if hot:
+        row["hot"] = hot
+    return svg, row
+
+
+def hotspots(content: dict, spec: dict) -> list:
+    """The boxes of a drawn chart that open another lecture's note: each pointer column's
+    arrow box ("home": the chart that holds the condition in full). [x, y, w, h, lecture id,
+    label] in the picture's own pixels; portal.js lays a link over each, so the picture stays
+    a picture (it prints) and the box still takes you there."""
+    boxes = {n["id"]: n for n in spec["nodes"]}
+    first = content["sections"][1] if len(content["sections"]) > 1 else None
+    out = []
+    for col in content["columns"]:
+        home = col.get("home")
+        n = boxes.get(f"{col['id']}_{first}_0_0") if home and first else None
+        if n:
+            out.append([n["x"], n["y"], n["w"], n["h"], re.sub(r"_\d+$", "", home["chart"]),
+                        "Open " + home["name"]])
+    return out
 
 
 def stamp_figures(repo: Path, rows: dict) -> None:

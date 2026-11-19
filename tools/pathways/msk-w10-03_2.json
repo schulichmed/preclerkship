@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 324,
+   "y": 288,
    "w": 246,
-   "h": 878,
+   "h": 214,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 288,
-   "y": 324,
+   "y": 288,
    "w": 246,
-   "h": 878,
+   "h": 572,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 564,
-   "y": 324,
+   "y": 288,
    "w": 246,
-   "h": 878,
+   "h": 572,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
   {
    "x": 812,
-   "y": 324,
+   "y": 288,
    "w": 246,
-   "h": 878,
+   "h": 572,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 1060,
-   "y": 324,
+   "y": 288,
    "w": 246,
-   "h": 878,
+   "h": 572,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   }
@@ -139,20 +139,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 468,
-   "h": 206,
+   "y": 414,
+   "h": 80,
    "text": "CLINICAL CLUES"
   },
   {
    "x": 23,
-   "y": 714,
+   "y": 534,
    "h": 98,
    "text": "ELECTRODIAGNOSIS"
   },
   {
    "x": 23,
-   "y": 852,
-   "h": 342,
+   "y": 672,
+   "h": 180,
    "text": "EXAMPLE · RECOVERY"
   }
  ],
@@ -165,55 +165,53 @@
    "kind": "dark",
    "title": "Numbness, tingling or weakness: is it a NERVE, WHERE is it, HOW BAD is it?",
    "lines": [
-    "first exclude a tendon (weakness) or poor blood flow (numbness) · TRUE sensory loss is always neurogenic: central or peripheral?",
-    "negative symptoms: numbness, weakness, lost reflexes · positive: pain, paresthesia (tingling)",
-    "levels: motor neuronopathy (anterior horn cell) · radiculopathy · plexopathy · mononeuropathy · polyneuropathy (diffuse)"
+    "first exclude a tendon (weakness) or poor blood flow",
+    "then: WHERE is the lesion, and HOW BAD?"
    ]
   },
   {
    "id": "g_where",
    "x": 45,
-   "y": 174,
+   "y": 138,
    "w": 484,
    "h": 78,
    "kind": "plain",
    "title": "WHERE: root or named nerve?",
    "lines": [
-    "the map of the numbness and WHICH muscles are weak decide"
+    "• the map of the numbness",
+    "• WHICH muscles are weak"
    ]
   },
   {
    "id": "g_bad",
    "x": 569,
-   "y": 174,
+   "y": 138,
    "w": 732,
    "h": 78,
    "kind": "plain",
    "title": "HOW BAD: Seddon grade",
    "lines": [
-    "which layer is cut decides recovery",
-    "epineurium wraps the nerve · perineurium each fascicle · endoneurium each axon"
+    "which layer is cut decides recovery"
    ]
   },
   {
    "id": "rad_head_0_0",
    "x": 45,
-   "y": 332,
+   "y": 296,
    "w": 236,
-   "h": 96,
+   "h": 78,
    "kind": "rad_h",
    "title": "Radiculopathy",
    "lines": [
-    "spinal nerve ROOT",
-    "compressed in the intervertebral foramen"
+    "ROOT: fuzzy borders, paraspinals +"
    ]
   },
   {
    "id": "mono_head_0_0",
    "x": 293,
-   "y": 332,
+   "y": 296,
    "w": 236,
-   "h": 96,
+   "h": 78,
    "kind": "mono_h",
    "title": "Mononeuropathy",
    "lines": [
@@ -224,9 +222,9 @@
   {
    "id": "npx_head_0_0",
    "x": 569,
-   "y": 332,
+   "y": 296,
    "w": 236,
-   "h": 96,
+   "h": 78,
    "kind": "npx_h",
    "title": "Neurapraxia",
    "lines": [
@@ -237,9 +235,9 @@
   {
    "id": "axo_head_0_0",
    "x": 817,
-   "y": 332,
+   "y": 296,
    "w": 236,
-   "h": 96,
+   "h": 78,
    "kind": "axo_h",
    "title": "Axonotmesis",
    "lines": [
@@ -250,9 +248,9 @@
   {
    "id": "nts_head_0_0",
    "x": 1065,
-   "y": 332,
+   "y": 296,
    "w": 236,
-   "h": 96,
+   "h": 78,
    "kind": "nts_h",
    "title": "Neurotmesis",
    "lines": [
@@ -263,40 +261,32 @@
   {
    "id": "rad_clue_0_0",
    "x": 45,
-   "y": 468,
+   "y": 414,
    "w": 236,
-   "h": 206,
-   "kind": "rad_t",
-   "title": "Neck or back pain radiating down the limb",
-   "lines": [
-    "• DERMATOME, fuzzy borders",
-    "• MYOTOME weakness + reflex loss",
-    "• eased by taking tension off (arm overhead)",
-    "• clear onset · lasts months · worse in some positions (neck extension) · can be severe"
-   ]
+   "h": 80,
+   "kind": "rad_w",
+   "title": "→ Back & Neck Pain",
+   "lines": []
   },
   {
    "id": "mono_clue_0_0",
    "x": 293,
-   "y": 468,
+   "y": 414,
    "w": 236,
-   "h": 206,
+   "h": 80,
    "kind": "mono_t",
-   "title": "Well-circumscribed patch, CLEAR borders",
+   "title": "CLEAR-bordered patch",
    "lines": [
-    "• weak in THAT nerve's muscles only",
-    "• not same-root muscles of other nerves",
-    "• worse leaning, driving, typing",
-    "• chronic compression: insidious, common · transection: acute",
-    "• may radiate: symptoms, NOT signs, outside the territory"
+    "• weak in THAT nerve's muscles",
+    "• worse leaning, driving, typing"
    ]
   },
   {
    "id": "npx_clue_0_0",
    "x": 569,
-   "y": 468,
+   "y": 414,
    "w": 236,
-   "h": 206,
+   "h": 80,
    "kind": "npx_t",
    "title": "Conduction slowed or BLOCKED",
    "lines": [
@@ -306,23 +296,22 @@
   {
    "id": "axo_clue_0_0",
    "x": 817,
-   "y": 468,
+   "y": 414,
    "w": 236,
-   "h": 206,
+   "h": 80,
    "kind": "axo_t",
    "title": "Wallerian degeneration",
    "lines": [
-    "axon beyond the injury breaks down",
-    "the intact tube guides regrowth",
-    "Schwann cells clear debris, release growth factors"
+    "• axon beyond the cut breaks down",
+    "• the intact tube guides regrowth"
    ]
   },
   {
    "id": "nts_clue_0_0",
    "x": 1065,
-   "y": 468,
+   "y": 414,
    "w": 236,
-   "h": 206,
+   "h": 80,
    "kind": "nts_t",
    "title": "No tube to keep fibres in line",
    "lines": [
@@ -330,58 +319,45 @@
    ]
   },
   {
-   "id": "rad_inv_0_0",
-   "x": 45,
-   "y": 714,
-   "w": 236,
-   "h": 98,
-   "kind": "rad_w",
-   "title": "Electromyography (EMG): one ROOT's muscles",
-   "lines": [
-    "• across several named nerves",
-    "• paraspinals abnormal"
-   ]
-  },
-  {
    "id": "mono_inv_0_0",
    "x": 293,
-   "y": 714,
+   "y": 534,
    "w": 236,
    "h": 98,
    "kind": "mono_w",
-   "title": "EMG: that nerve's muscles only",
+   "title": "EMG: that nerve only",
    "lines": [
-    "paraspinals normal"
+    "paraspinals NORMAL"
    ]
   },
   {
    "id": "npx_inv_0_0",
    "x": 569,
-   "y": 714,
+   "y": 534,
    "w": 236,
    "h": 98,
    "kind": "npx_w",
-   "title": "Nerve conduction (NCS): speed ↓ (myelin)",
+   "title": "NCS: SPEED ↓ (myelin)",
    "lines": [
-    "EMG: no denervation at rest"
+    "EMG: no denervation"
    ]
   },
   {
    "id": "axo_inv_0_0",
    "x": 817,
-   "y": 714,
+   "y": 534,
    "w": 236,
    "h": 98,
    "kind": "axo_w",
-   "title": "NCS: size ↓ (axon)",
+   "title": "NCS: SIZE ↓ (axon)",
    "lines": [
-    "EMG: denervation at rest, few or no motor units"
+    "EMG: denervation at rest"
    ]
   },
   {
    "id": "nts_inv_0_0",
    "x": 1065,
-   "y": 714,
+   "y": 534,
    "w": 236,
    "h": 98,
    "kind": "nts_w",
@@ -391,63 +367,36 @@
    ]
   },
   {
-   "id": "rad_tx_0_0",
-   "x": 45,
-   "y": 852,
-   "w": 236,
-   "h": 169,
-   "kind": "rad_w",
-   "title": "Numb thumb → C6",
-   "lines": [
-    "C6 dermatome: lateral arm, forearm, thumb",
-    "• biceps weak, lateral forearm numb"
-   ]
-  },
-  {
-   "id": "rad_tx_1_0",
-   "x": 45,
-   "y": 1043,
-   "w": 236,
-   "h": 151,
-   "kind": "rad_w",
-   "title": "Foot drop → L5",
-   "lines": [
-    "gluteus medius, tibialis posterior, paraspinals also abnormal"
-   ]
-  },
-  {
    "id": "mono_tx_0_0",
    "x": 293,
-   "y": 852,
+   "y": 672,
    "w": 236,
-   "h": 96,
+   "h": 60,
    "kind": "mono_w",
    "title": "Numb thumb → carpal tunnel",
    "lines": [
-    "median nerve territory",
-    "• abductor pollicis brevis weak (C8 root)"
+    "abductor pollicis brevis weak"
    ]
   },
   {
    "id": "mono_tx_1_0",
    "x": 293,
-   "y": 970,
+   "y": 754,
    "w": 236,
-   "h": 224,
+   "h": 98,
    "kind": "mono_w",
    "title": "Foot drop → common peroneal",
    "lines": [
-    "at the fibular head: dorsiflexion, toe extension, eversion 0/5",
-    "case: knee into a fence, thrown from a horse · dorsum of foot numb, CLEAR borders · reflexes intact",
-    "NCS no response + EMG denervation → AXONAL; axonotmesis or neurotmesis only time tells"
+    "• at the fibular head",
+    "• foot dorsum numb, CLEAR borders"
    ]
   },
   {
    "id": "npx_tx_0_0",
    "x": 569,
-   "y": 852,
+   "y": 672,
    "w": 236,
-   "h": 342,
+   "h": 180,
    "kind": "ok",
    "title": "Recovers in WEEKS (6–12)",
    "lines": [
@@ -457,22 +406,21 @@
   {
    "id": "axo_tx_0_0",
    "x": 817,
-   "y": 852,
+   "y": 672,
    "w": 236,
-   "h": 342,
+   "h": 180,
    "kind": "warn",
    "title": "Regrows on its own, SLOWLY",
    "lines": [
-    "• 1 mm a day = 1 inch a month",
-    "• repeat studies to follow it"
+    "1 mm a day = 1 inch a month"
    ]
   },
   {
    "id": "nts_tx_0_0",
    "x": 1065,
-   "y": 852,
+   "y": 672,
    "w": 236,
-   "h": 342,
+   "h": 180,
    "kind": "bad",
    "title": "NO spontaneous recovery",
    "lines": [
@@ -484,16 +432,12 @@
   {
    "from": "root",
    "to": "g_where",
-   "path": "M673.0 124V149H287.0V174"
+   "path": "M673.0 88V113H287.0V138"
   },
   {
    "from": "root",
    "to": "g_bad",
-   "path": "M673.0 124V149H935.0V174"
-  },
-  {
-   "from": "rad_tx_0_0",
-   "to": "rad_tx_1_0"
+   "path": "M673.0 88V113H935.0V138"
   },
   {
    "from": "mono_tx_0_0",
@@ -502,14 +446,6 @@
   {
    "from": "rad_head_0_0",
    "to": "rad_clue_0_0"
-  },
-  {
-   "from": "rad_clue_0_0",
-   "to": "rad_inv_0_0"
-  },
-  {
-   "from": "rad_inv_0_0",
-   "to": "rad_tx_0_0"
   },
   {
    "from": "g_where",
@@ -585,19 +521,5 @@
    "from_dx": 248
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1228,
-   "w": 1256,
-   "title": "Electrodiagnostic studies (EDX) = nerve conduction studies (NCS) + needle electromyography (EMG)",
-   "items": [
-    "NCS: SIZE of the response = axon health · SPEED = myelin health",
-    "EMG: is the muscle quiet at rest (denervated muscle is not)? does it fire on command? which muscle exactly?",
-    "Answers: is it a nerve, where, how bad (myelin or axon, in continuity?), the likely timeline, or a muscle problem (myopathy)",
-    "NOT for musculoskeletal pain (rotator cuff tear) or central nervous system disease (stroke)"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

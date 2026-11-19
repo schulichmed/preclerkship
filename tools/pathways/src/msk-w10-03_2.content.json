@@ -5,9 +5,8 @@
  "root": {
   "title": "Numbness, tingling or weakness: is it a NERVE, WHERE is it, HOW BAD is it?",
   "lines": [
-   "first exclude a tendon (weakness) or poor blood flow (numbness) · TRUE sensory loss is always neurogenic: central or peripheral?",
-   "negative symptoms: numbness, weakness, lost reflexes · positive: pain, paresthesia (tingling)",
-   "levels: motor neuronopathy (anterior horn cell) · radiculopathy · plexopathy · mononeuropathy · polyneuropathy (diffuse)"
+   "first exclude a tendon (weakness) or poor blood flow",
+   "then: WHERE is the lesion, and HOW BAD?"
   ]
  },
  "groups": [
@@ -19,7 +18,8 @@
    ],
    "title": "WHERE: root or named nerve?",
    "lines": [
-    "the map of the numbness and WHICH muscles are weak decide"
+    "• the map of the numbness",
+    "• WHICH muscles are weak"
    ]
   },
   {
@@ -30,8 +30,7 @@
    ],
    "title": "HOW BAD: Seddon grade",
    "lines": [
-    "which layer is cut decides recovery",
-    "epineurium wraps the nerve · perineurium each fascicle · endoneurium each axon"
+    "which layer is cut decides recovery"
    ]
   }
  ],
@@ -59,8 +58,7 @@
       "h",
       "Radiculopathy",
       [
-       "spinal nerve ROOT",
-       "compressed in the intervertebral foramen"
+       "ROOT: fuzzy borders, paraspinals +"
       ]
      ]
     ]
@@ -68,50 +66,19 @@
    "clue": [
     [
      [
-      "t",
-      "Neck or back pain radiating down the limb",
-      [
-       "• DERMATOME, fuzzy borders",
-       "• MYOTOME weakness + reflex loss",
-       "• eased by taking tension off (arm overhead)",
-       "• clear onset · lasts months · worse in some positions (neck extension) · can be severe"
-      ]
+      "w",
+      "→ Back & Neck Pain",
+      []
      ]
     ]
    ],
-   "inv": [
-    [
-     [
-      "w",
-      "Electromyography (EMG): one ROOT's muscles",
-      [
-       "• across several named nerves",
-       "• paraspinals abnormal"
-      ]
-     ]
-    ]
-   ],
-   "tx": [
-    [
-     [
-      "w",
-      "Numb thumb → C6",
-      [
-       "C6 dermatome: lateral arm, forearm, thumb",
-       "• biceps weak, lateral forearm numb"
-      ]
-     ]
-    ],
-    [
-     [
-      "w",
-      "Foot drop → L5",
-      [
-       "gluteus medius, tibialis posterior, paraspinals also abnormal"
-      ]
-     ]
-    ]
-   ]
+   "inv": [],
+   "tx": [],
+   "home": {
+    "chart": "msk-w7-03.2_2",
+    "col": "rad",
+    "name": "Back & Neck Pain"
+   }
   },
   {
    "id": "mono",
@@ -132,13 +99,10 @@
     [
      [
       "t",
-      "Well-circumscribed patch, CLEAR borders",
+      "CLEAR-bordered patch",
       [
-       "• weak in THAT nerve's muscles only",
-       "• not same-root muscles of other nerves",
-       "• worse leaning, driving, typing",
-       "• chronic compression: insidious, common · transection: acute",
-       "• may radiate: symptoms, NOT signs, outside the territory"
+       "• weak in THAT nerve's muscles",
+       "• worse leaning, driving, typing"
       ]
      ]
     ]
@@ -147,9 +111,9 @@
     [
      [
       "w",
-      "EMG: that nerve's muscles only",
+      "EMG: that nerve only",
       [
-       "paraspinals normal"
+       "paraspinals NORMAL"
       ]
      ]
     ]
@@ -160,8 +124,7 @@
       "w",
       "Numb thumb → carpal tunnel",
       [
-       "median nerve territory",
-       "• abductor pollicis brevis weak (C8 root)"
+       "abductor pollicis brevis weak"
       ]
      ]
     ],
@@ -170,9 +133,8 @@
       "w",
       "Foot drop → common peroneal",
       [
-       "at the fibular head: dorsiflexion, toe extension, eversion 0/5",
-       "case: knee into a fence, thrown from a horse · dorsum of foot numb, CLEAR borders · reflexes intact",
-       "NCS no response + EMG denervation → AXONAL; axonotmesis or neurotmesis only time tells"
+       "• at the fibular head",
+       "• foot dorsum numb, CLEAR borders"
       ]
      ]
     ]
@@ -208,9 +170,9 @@
     [
      [
       "w",
-      "Nerve conduction (NCS): speed ↓ (myelin)",
+      "NCS: SPEED ↓ (myelin)",
       [
-       "EMG: no denervation at rest"
+       "EMG: no denervation"
       ]
      ]
     ]
@@ -248,9 +210,8 @@
       "t",
       "Wallerian degeneration",
       [
-       "axon beyond the injury breaks down",
-       "the intact tube guides regrowth",
-       "Schwann cells clear debris, release growth factors"
+       "• axon beyond the cut breaks down",
+       "• the intact tube guides regrowth"
       ]
      ]
     ]
@@ -259,9 +220,9 @@
     [
      [
       "w",
-      "NCS: size ↓ (axon)",
+      "NCS: SIZE ↓ (axon)",
       [
-       "EMG: denervation at rest, few or no motor units"
+       "EMG: denervation at rest"
       ]
      ]
     ]
@@ -272,8 +233,7 @@
       "warn",
       "Regrows on its own, SLOWLY",
       [
-       "• 1 mm a day = 1 inch a month",
-       "• repeat studies to follow it"
+       "1 mm a day = 1 inch a month"
       ]
      ]
     ]
@@ -326,17 +286,6 @@
       ]
      ]
     ]
-   ]
-  }
- ],
- "panels": [
-  {
-   "title": "Electrodiagnostic studies (EDX) = nerve conduction studies (NCS) + needle electromyography (EMG)",
-   "items": [
-    "NCS: SIZE of the response = axon health · SPEED = myelin health",
-    "EMG: is the muscle quiet at rest (denervated muscle is not)? does it fire on command? which muscle exactly?",
-    "Answers: is it a nerve, where, how bad (myelin or axon, in continuity?), the likely timeline, or a muscle problem (myopathy)",
-    "NOT for musculoskeletal pain (rotator cuff tear) or central nervous system disease (stroke)"
    ]
   }
  ]

@@ -79,7 +79,7 @@
  "bands": [
   {
    "x": 40,
-   "y": 524,
+   "y": 488,
    "w": 260,
    "h": 230,
    "fill": "#eef7fa",
@@ -87,7 +87,7 @@
   },
   {
    "x": 302,
-   "y": 524,
+   "y": 488,
    "w": 260,
    "h": 230,
    "fill": "#fdf4ea",
@@ -95,7 +95,7 @@
   },
   {
    "x": 564,
-   "y": 524,
+   "y": 488,
    "w": 260,
    "h": 230,
    "fill": "#f5f1fb",
@@ -103,7 +103,7 @@
   },
   {
    "x": 826,
-   "y": 524,
+   "y": 488,
    "w": 260,
    "h": 230,
    "fill": "#fcf0f6",
@@ -113,20 +113,20 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 256,
+   "y": 220,
    "h": 96,
    "text": "EXAM"
   },
   {
    "x": 23,
-   "y": 668,
+   "y": 632,
    "h": 78,
    "text": "THE TENDON"
   },
   {
    "x": 23,
-   "y": 786,
-   "h": 160,
+   "y": 750,
+   "h": 196,
    "text": "TREAT FIRST"
   },
   {
@@ -145,16 +145,14 @@
    "kind": "dark",
    "title": "Rotator cuff disease: how far has the TENDON gone?",
    "lines": [
-    "most common shoulder disorder · onset in the 40s · progressive · very common in middle age",
-    "the cuff stabilises the humeral head in the glenoid, then moves the arm",
-    "INTRINSIC (usual): vascularity · tension overload · tendon degeneration",
-    "EXTRINSIC: acromion shape (subacromial space volume) · or a combination"
+    "most common shoulder disorder · from the 40s",
+    "usually INTRINSIC: tendon degeneration"
    ]
   },
   {
    "id": "g_all",
    "x": 45,
-   "y": 174,
+   "y": 138,
    "w": 1036,
    "h": 42,
    "kind": "plain",
@@ -164,94 +162,97 @@
   {
    "id": "p_exam",
    "x": 45,
-   "y": 256,
+   "y": 220,
    "w": 1036,
    "h": 96,
    "kind": "info",
    "title": "Examine the shoulder",
    "lines": [
-    "move: ACTIVE << PASSIVE",
-    "impingement signs: NEER · HAWKINS · PAINFUL ARC",
-    "strength: supraspinatus · infraspinatus · subscapularis"
+    "• ACTIVE << PASSIVE",
+    "• NEER · HAWKINS · PAINFUL ARC",
+    "• cuff strength"
    ]
   },
   {
    "id": "t_in",
    "x": 45,
-   "y": 392,
+   "y": 356,
    "w": 250,
    "h": 60,
    "kind": "plain",
-   "title": "TENDON INTACT",
+   "title": "**TENDON INTACT**",
    "lines": [
     "impingement"
-   ]
+   ],
+   "em": "#1f6f8b"
   },
   {
    "id": "t_tr",
    "x": 307,
-   "y": 392,
+   "y": 356,
    "w": 512,
    "h": 60,
    "kind": "plain",
-   "title": "TENDON TORN",
+   "title": "**TENDON TORN**",
    "lines": [
     "how deep is the defect?"
-   ]
+   ],
+   "em": "#b5600f"
   },
   {
    "id": "t_ma",
    "x": 831,
-   "y": 392,
+   "y": 356,
    "w": 250,
    "h": 60,
    "kind": "plain",
-   "title": "MASSIVE DEFECT",
+   "title": "**MASSIVE DEFECT**",
    "lines": [
     "humerus migrates up"
-   ]
+   ],
+   "em": "#a3336b"
   },
   {
    "id": "s1_head_0_0",
    "x": 45,
-   "y": 532,
+   "y": 496,
    "w": 250,
    "h": 96,
    "kind": "s1_h",
    "title": "Stage I",
    "lines": [
     "inflammation",
-    "aka SHOULDER IMPINGEMENT SYNDROME"
+    "SHOULDER IMPINGEMENT SYNDROME"
    ]
   },
   {
    "id": "s2_head_0_0",
    "x": 307,
-   "y": 532,
+   "y": 496,
    "w": 250,
    "h": 96,
    "kind": "s2_h",
    "title": "Stage II",
    "lines": [
-    "partial-thickness defect"
+    "PARTIAL-thickness defect"
    ]
   },
   {
    "id": "s3_head_0_0",
    "x": 569,
-   "y": 532,
+   "y": 496,
    "w": 250,
    "h": 96,
    "kind": "s3_h",
    "title": "Stage III",
    "lines": [
-    "full-thickness defect"
+    "FULL-thickness defect"
    ]
   },
   {
    "id": "ar_head_0_0",
    "x": 831,
-   "y": 532,
+   "y": 496,
    "w": 250,
    "h": 96,
    "kind": "ar_h",
@@ -263,7 +264,7 @@
   {
    "id": "s1_path_0_0",
    "x": 45,
-   "y": 668,
+   "y": 632,
    "w": 250,
    "h": 78,
    "kind": "s1_t",
@@ -275,7 +276,7 @@
   {
    "id": "s2_path_0_0",
    "x": 307,
-   "y": 668,
+   "y": 632,
    "w": 250,
    "h": 78,
    "kind": "s2_t",
@@ -285,7 +286,7 @@
   {
    "id": "s3_path_0_0",
    "x": 569,
-   "y": 668,
+   "y": 632,
    "w": 250,
    "h": 78,
    "kind": "s3_t",
@@ -295,7 +296,7 @@
   {
    "id": "ar_path_0_0",
    "x": 831,
-   "y": 668,
+   "y": 632,
    "w": 250,
    "h": 78,
    "kind": "ar_t",
@@ -308,26 +309,28 @@
   {
    "id": "span0_first_0_0",
    "x": 45,
-   "y": 786,
+   "y": 750,
    "w": 1036,
-   "h": 78,
+   "h": 96,
    "kind": "ok",
-   "title": "Nonoperative, every stage: enough in the MAJORITY",
+   "title": "Nonoperative, every stage",
    "lines": [
-    "education · activity modification · pain management (nonsteroidal anti-inflammatory drugs)",
-    "physiotherapy (muscle reconditioning) · injections"
+    "• enough in the MAJORITY",
+    "• education · NSAIDs",
+    "• physiotherapy · injections"
    ]
   },
   {
    "id": "span0_first_1_0",
    "x": 45,
-   "y": 886,
+   "y": 868,
    "w": 1036,
-   "h": 60,
+   "h": 78,
    "kind": "warn",
-   "title": "SURGERY when: pain persists · weakness · after an acute injury",
+   "title": "SURGERY when",
    "lines": [
-    "the best surgeons know when NOT to operate"
+    "• pain persists · weakness",
+    "• after an acute injury"
    ]
   },
   {
@@ -385,7 +388,7 @@
   {
    "from": "root",
    "to": "g_all",
-   "path": "M563.0 124V149H563.0V174"
+   "path": "M563.0 88V113H563.0V138"
   },
   {
    "from": "g_all",
@@ -454,7 +457,7 @@
    "label": "partial",
    "label_at": [
     432.0,
-    492
+    456
    ]
   },
   {
@@ -478,7 +481,7 @@
    "label": "full",
    "label_at": [
     694.0,
-    492
+    456
    ]
   },
   {
@@ -501,30 +504,5 @@
    "from_dx": 0
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1146,
-   "w": 511,
-   "title": "Cuff muscles: action · nerve (C5, C6)",
-   "items": [
-    "supraspinatus: FIRST 15° of abduction · suprascapular nerve",
-    "infraspinatus: lateral rotation · suprascapular nerve",
-    "teres minor: lateral rotation · axillary nerve",
-    "subscapularis: medial rotation · upper + lower subscapular nerves"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 570,
-   "y": 1146,
-   "w": 511,
-   "title": "Other shoulder nerves",
-   "items": [
-    "long thoracic nerve (C5-C7) → serratus anterior → WINGED scapula on pushing",
-    "axillary nerve (C5, C6) → deltoid: flexion, abduction, extension of the arm"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

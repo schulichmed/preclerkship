@@ -5,10 +5,8 @@
  "root": {
   "title": "Rotator cuff disease: how far has the TENDON gone?",
   "lines": [
-   "most common shoulder disorder · onset in the 40s · progressive · very common in middle age",
-   "the cuff stabilises the humeral head in the glenoid, then moves the arm",
-   "INTRINSIC (usual): vascularity · tension overload · tendon degeneration",
-   "EXTRINSIC: acromion shape (subacromial space volume) · or a combination"
+   "most common shoulder disorder · from the 40s",
+   "usually INTRINSIC: tendon degeneration"
   ]
  },
  "groups": [
@@ -16,22 +14,22 @@
  ],
  "pres": [
   {"id": "p_exam", "group": "g_all", "title": "Examine the shoulder", "lines": [
-   "move: ACTIVE << PASSIVE",
-   "impingement signs: NEER · HAWKINS · PAINFUL ARC",
-   "strength: supraspinatus · infraspinatus · subscapularis"
+   "• ACTIVE << PASSIVE",
+   "• NEER · HAWKINS · PAINFUL ARC",
+   "• cuff strength"
   ]}
  ],
  "tiers": [
-  {"id": "t_in", "cols": [0, 0], "title": "TENDON INTACT", "lines": ["impingement"]},
-  {"id": "t_tr", "cols": [1, 2], "title": "TENDON TORN", "lines": ["how deep is the defect?"]},
-  {"id": "t_ma", "cols": [3, 3], "title": "MASSIVE DEFECT", "lines": ["humerus migrates up"]}
+  {"id": "t_in", "cols": [0, 0], "title": "**TENDON INTACT**", "lines": ["impingement"], "em": "#1f6f8b"},
+  {"id": "t_tr", "cols": [1, 2], "title": "**TENDON TORN**", "lines": ["how deep is the defect?"], "em": "#b5600f"},
+  {"id": "t_ma", "cols": [3, 3], "title": "**MASSIVE DEFECT**", "lines": ["humerus migrates up"], "em": "#a3336b"}
  ],
  "sections": ["head", "path", "first", "tx"],
  "row_names": {"pres": "EXAM", "path": "THE TENDON", "first": "TREAT FIRST", "tx": "BY STAGE"},
  "columns": [
   {
    "id": "s1", "colour": "teal", "drop_from": "t_in",
-   "head": [[["h", "Stage I", ["inflammation", "aka SHOULDER IMPINGEMENT SYNDROME"]]]],
+   "head": [[["h", "Stage I", ["inflammation", "SHOULDER IMPINGEMENT SYNDROME"]]]],
    "path": [[["t", "Intact but inflamed", ["no defect yet"]]]],
    "tx": [
     [["ok", "1 · Physiotherapy", []]],
@@ -40,13 +38,13 @@
   },
   {
    "id": "s2", "colour": "orange", "drop_from": "t_tr", "drop_label": "partial",
-   "head": [[["h", "Stage II", ["partial-thickness defect"]]]],
+   "head": [[["h", "Stage II", ["PARTIAL-thickness defect"]]]],
    "path": [[["t", "Part of the tendon torn", []]]],
    "tx": [[["warn", "CONSIDER rotator cuff repair", []]]]
   },
   {
    "id": "s3", "colour": "purple", "drop_from": "t_tr", "drop_label": "full",
-   "head": [[["h", "Stage III", ["full-thickness defect"]]]],
+   "head": [[["h", "Stage III", ["FULL-thickness defect"]]]],
    "path": [[["t", "Torn through", []]]],
    "tx": [[["warn", "Rotator cuff repair", []]]]
   },
@@ -59,20 +57,11 @@
  ],
  "spans": [
   {"section": "first", "cols": [0, 3], "rows": [
-   [["ok", "Nonoperative, every stage: enough in the MAJORITY", [
-    "education · activity modification · pain management (nonsteroidal anti-inflammatory drugs)",
-    "physiotherapy (muscle reconditioning) · injections"]]],
-   [["warn", "SURGERY when: pain persists · weakness · after an acute injury", ["the best surgeons know when NOT to operate"]]]
+   [["ok", "Nonoperative, every stage", [
+    "• enough in the MAJORITY",
+    "• education · NSAIDs",
+    "• physiotherapy · injections"]]],
+   [["warn", "SURGERY when", ["• pain persists · weakness", "• after an acute injury"]]]
   ]}
- ],
- "panels": [
-  {"title": "Cuff muscles: action · nerve (C5, C6)", "items": [
-   "supraspinatus: FIRST 15° of abduction · suprascapular nerve",
-   "infraspinatus: lateral rotation · suprascapular nerve",
-   "teres minor: lateral rotation · axillary nerve",
-   "subscapularis: medial rotation · upper + lower subscapular nerves"]},
-  {"title": "Other shoulder nerves", "items": [
-   "long thoracic nerve (C5-C7) → serratus anterior → WINGED scapula on pushing",
-   "axillary nerve (C5, C6) → deltoid: flexion, abduction, extension of the arm"]}
  ]
 }

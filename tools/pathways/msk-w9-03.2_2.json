@@ -61,25 +61,25 @@
  "bands": [
   {
    "x": 40,
-   "y": 650,
+   "y": 560,
    "w": 260,
-   "h": 338,
+   "h": 232,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 302,
-   "y": 650,
+   "y": 560,
    "w": 260,
-   "h": 338,
+   "h": 232,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 564,
-   "y": 650,
+   "y": 560,
    "w": 260,
-   "h": 338,
+   "h": 232,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -87,15 +87,21 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 310,
-   "h": 168,
+   "y": 274,
+   "h": 96,
    "text": "WORKUP"
   },
   {
    "x": 23,
-   "y": 830,
-   "h": 150,
+   "y": 688,
+   "h": 96,
    "text": "TREATMENT"
+  },
+  {
+   "x": 23,
+   "y": 824,
+   "h": 160,
+   "text": "AFTER SURGERY"
   }
  ],
  "nodes": [
@@ -107,8 +113,8 @@
    "kind": "dark",
    "title": "Suspected HIP FRACTURE (= a proximal femur fracture)",
    "lines": [
-    "risk = whatever raises the risk of FALLS + whatever raises the risk of OSTEOPOROSIS",
-    "high suspicion in an older person even if the pain or the trauma was minimal"
+    "older person: suspect it even after minor trauma",
+    "risk = FALLS + OSTEOPOROSIS"
    ]
   },
   {
@@ -116,49 +122,48 @@
    "x": 45,
    "y": 138,
    "w": 774,
-   "h": 132,
+   "h": 96,
    "kind": "plain",
    "title": "1 · Is this a hip fracture?",
    "lines": [
-    "sudden groin or lateral upper-thigh pain after a fall · worse moving and weight bearing",
-    "leg SHORTENED, EXTERNALLY ROTATED and ABDUCTED · cannot weight bear · painful log roll and straight leg raise",
-    "case: 86, fell at home, can't get up or weight bear",
-    "not a dislocation: POSTERIOR (common) = shortened, INTERNALLY rotated, adducted · anterior = externally rotated, abducted, flexed"
+    "• groin pain after a fall",
+    "• leg SHORT, EXTERNALLY rotated",
+    "• cannot weight bear"
    ]
   },
   {
    "id": "p1",
    "x": 45,
-   "y": 310,
+   "y": 274,
    "w": 774,
-   "h": 168,
+   "h": 96,
    "kind": "info",
-   "title": "Work up in order",
+   "title": "Work up",
    "lines": [
-    "1 · X-ray: AP (front-to-back) pelvis + hip · negative but suspicion still high → CT",
-    "2 · STABLE? airway, breathing, circulation (young, high-energy) · pelvic fracture? · check distal pulses + nerves, especially the SCIATIC",
-    "3 · WHY did they fall? recent illness, dehydration, (pre)syncope, cardiac · CBC, electrolytes, troponin · ECG (atrial fibrillation?) · chest X-ray (pneumonia?)",
-    "4 · WHY did the bone break? a pathologic fracture (bone tumour)? · a fragility fracture qualifies as OSTEOPOROSIS → start that workup"
+    "1 · X-ray AP pelvis + hip, then CT",
+    "2 · STABLE? pulses, sciatic nerve",
+    "3 · WHY the fall? WHY the break?"
    ]
   },
   {
    "id": "t1",
    "x": 45,
-   "y": 518,
+   "y": 410,
    "w": 774,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
-   "title": "5 · Plan: SURGERY within 24–48 hours for the VAST majority",
+   "title": "SURGERY within 24–48 h",
    "lines": [
-    "quicker return to weight bearing · fewer complications of lying still · the X-ray's fracture type picks the operation ↓"
+    "• for the VAST majority",
+    "• X-ray fracture type picks it ↓"
    ]
   },
   {
    "id": "nd_head_0_0",
    "x": 45,
-   "y": 658,
+   "y": 568,
    "w": 250,
-   "h": 132,
+   "h": 80,
    "kind": "nd_h",
    "title": "Femoral neck, NON-displaced",
    "lines": [
@@ -168,22 +173,22 @@
   {
    "id": "dp_head_0_0",
    "x": 307,
-   "y": 658,
+   "y": 568,
    "w": 250,
-   "h": 132,
+   "h": 80,
    "kind": "dp_h",
    "title": "Femoral neck, DISPLACED",
    "lines": [
-    "the femoral head's blood supply is at stake",
-    "medial + lateral circumflex femoral (from profunda femoris) · artery of the ligament of the head"
+    "head's BLOOD SUPPLY at stake",
+    "circumflex femoral arteries"
    ]
   },
   {
    "id": "it_head_0_0",
    "x": 569,
-   "y": 658,
+   "y": 568,
    "w": 250,
-   "h": 132,
+   "h": 80,
    "kind": "it_h",
    "title": "Intertrochanteric or subtrochanteric",
    "lines": [
@@ -193,41 +198,65 @@
   {
    "id": "nd_tx_0_0",
    "x": 45,
-   "y": 830,
+   "y": 688,
    "w": 250,
-   "h": 150,
+   "h": 96,
    "kind": "ok",
-   "title": "Options, not steps",
+   "title": "Options",
    "lines": [
-    "• arthroplasty, hemi or total",
-    "• maybe screws across the fracture (internal fixation)",
-    "• maybe NON-operative: only if VERY non-displaced in a poor surgical candidate"
+    "• hemi or total arthroplasty",
+    "• or screws (internal fixation)",
+    "• poor candidate: maybe non-op"
    ]
   },
   {
    "id": "dp_tx_0_0",
    "x": 307,
-   "y": 830,
+   "y": 688,
    "w": 250,
-   "h": 150,
+   "h": 96,
    "kind": "bad",
    "title": "ARTHROPLASTY, hemi or total",
    "lines": [
     "• hemi = femoral head only",
-    "• total = head + acetabulum",
-    "• surgery is REQUIRED to preserve the blood supply"
+    "• total = head + acetabulum"
    ]
   },
   {
    "id": "it_tx_0_0",
    "x": 569,
-   "y": 830,
+   "y": 688,
    "w": 250,
-   "h": 150,
+   "h": 96,
    "kind": "ok",
    "title": "Intramedullary nail",
    "lines": [
-    "essentially all are treated surgically"
+    "essentially all surgical"
+   ]
+  },
+  {
+   "id": "span0_after_0_0",
+   "x": 45,
+   "y": 824,
+   "w": 774,
+   "h": 78,
+   "kind": "bad",
+   "title": "Lying still harms",
+   "lines": [
+    "• VTE → LMWH for 14–30 days",
+    "• pneumonia · delirium · bedsores"
+   ]
+  },
+  {
+   "id": "span0_after_1_0",
+   "x": 45,
+   "y": 924,
+   "w": 774,
+   "h": 60,
+   "kind": "ok",
+   "title": "EARLY MOBILIZATION + rehab",
+   "lines": [
+    "then prevent the next fall + fracture"
    ]
   }
  ],
@@ -247,8 +276,17 @@
    "from_dx": 0
   },
   {
+   "from": "span0_after_0_0",
+   "to": "span0_after_1_0"
+  },
+  {
    "from": "nd_head_0_0",
    "to": "nd_tx_0_0"
+  },
+  {
+   "from": "nd_tx_0_0",
+   "to": "span0_after_0_0",
+   "to_dx": -262.0
   },
   {
    "from": "t1",
@@ -257,12 +295,17 @@
    "label": "neck, not displaced",
    "label_at": [
     170.0,
-    618
+    528
    ]
   },
   {
    "from": "dp_head_0_0",
    "to": "dp_tx_0_0"
+  },
+  {
+   "from": "dp_tx_0_0",
+   "to": "span0_after_0_0",
+   "to_dx": 0.0
   },
   {
    "from": "t1",
@@ -271,12 +314,17 @@
    "label": "neck, displaced",
    "label_at": [
     432.0,
-    618
+    528
    ]
   },
   {
    "from": "it_head_0_0",
    "to": "it_tx_0_0"
+  },
+  {
+   "from": "it_tx_0_0",
+   "to": "span0_after_0_0",
+   "to_dx": 262.0
   },
   {
    "from": "t1",
@@ -285,37 +333,9 @@
    "label": "below the neck",
    "label_at": [
     694.0,
-    618
+    528
    ]
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1014,
-   "w": 380,
-   "title": "6 · After surgery: lying still harms, then the next one",
-   "items": [
-    "venous thromboembolism (VTE) is common → low-molecular-weight heparin (LMWH) for 14–30 days",
-    "pneumonia: a common cause of death",
-    "delirium · muscle atrophy · infection (urinary) · bedsores",
-    "EARLY MOBILIZATION + interdisciplinary rehab",
-    "falls: optimize illnesses, the home, occupational therapy and physiotherapy, gait aids",
-    "bones: vitamin D, calcium, secondary osteoporosis workup, antiresorptive"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 439,
-   "y": 1014,
-   "w": 380,
-   "title": "Who breaks a hip · who gets a BMD",
-   "items": [
-    "falls: previous falls · PVD, COPD, stroke, weakness · polypharmacy (sedatives, diuretics, psychotropics, antiarrhythmics) · poor nutrition, eyesight · environment",
-    "bone mineral density: EVERYONE 65+ · 50-64 with fragility fracture, glucocorticoids, parental hip fracture, smoking, alcohol, weight < 60 kg or loss > 10% since 25, RA",
-    "under 50: fragility fracture, glucocorticoids, hypogonadism, menopause before 45, malabsorption, primary hyperparathyroidism"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

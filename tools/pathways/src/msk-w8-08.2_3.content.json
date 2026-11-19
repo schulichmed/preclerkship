@@ -5,137 +5,70 @@
  "root": {
   "title": "Wrist or hand complaint: a FALL, or a NUMB, TINGLING hand?",
   "lines": [
-   "fracture: age, activity level and displacement decide the treatment",
-   "nerve: which fingers, and is it the wrist or the neck?"
+   "fracture: age, activity, displacement decide",
+   "nerve: which fingers? wrist or neck?"
   ]
  },
  "groups": [
-  {
-   "id": "g_fall",
-   "cols": [0, 1],
-   "title": "Fall on an outstretched hand (FOOSH): WHICH BONE?",
-   "lines": ["localized pain · tenderness over the bone"]
-  },
-  {
-   "id": "g_numb",
-   "cols": [2, 3],
-   "title": "Numbness or tingling: WHICH FINGERS?",
-   "lines": ["both are entrapments AT THE WRIST"]
-  }
+  {"id": "g_fall", "cols": [0, 1], "title": "Fall on outstretched hand: WHICH BONE?", "lines": ["localized bony tenderness"]},
+  {"id": "g_numb", "cols": [2, 3], "title": "Numb or tingling: WHICH FINGERS?", "lines": ["both entrapped AT THE WRIST"]}
  ],
  "sections": ["head", "clue", "cause", "inv", "tx"],
- "row_names": {
-  "clue": "PRESENTS AS",
-  "cause": "CAUSES & RISKS",
-  "inv": "WORKUP",
-  "tx": "TREATMENT"
- },
+ "row_names": {"clue": "PRESENTS AS", "cause": "CAUSES & RISKS", "inv": "WORKUP", "tx": "TREATMENT"},
  "columns": [
-  {
-   "id": "dr",
-   "colour": "blue",
-   "drop_label": "RADIUS",
-   "head": [[["h", "Distal radius fracture", ["very common"]]]],
-   "clue": [[["t", "Localized pain after a FOOSH", ["poor function if the anatomy is not restored"]]]],
-   "cause": [[["w", "Left uncorrected", [
-    "• crooked: forearm rotation restricted",
-    "• short: ulnar impaction syndrome",
-    "• step > 1 mm: radiocarpal arthritis → fusion"]]]],
-   "inv": [[["t", "X-ray: 3 questions", [
-    "• CROOKED? normal 12° palmar tilt on the lateral",
-    "• SHORT? ulnar variance > neutral (compare sides)",
-    "• SMOOTH? a step > 1 mm"]]]],
+  {"id": "dr", "colour": "blue", "drop_label": "RADIUS",
+   "head": [[["h", "Distal radius fracture", ["very common", "forgiving at the extremes of age"]]]],
+   "clue": [[["t", "Localized pain after a fall", ["poor function if anatomy not restored"]]]],
+   "cause": [[["w", "Left uncorrected", ["• crooked: rotation restricted", "• short: ulnar impaction", "• step > 1 mm: arthritis → fusion"]]]],
+   "inv": [[["t", "X-ray: 3 questions", ["• CROOKED? normal palmar tilt 12°", "• SHORT? ulnar variance past neutral", "• SMOOTH? step > 1 mm"]]]],
    "tx": [
-    [["ok", "1 · CLOSED reduction + cast", [
-     "• analgesia: hematoma block (1% lidocaine), regional, sedation",
-     "• traction → INCREASE the deformity → correct",
-     "• 3-point mould: well moulded is NOT tight",
-     "~ forgiving at the extremes of age"]]],
-    [["warn", "2 · Still crooked, short or not smooth → SURGERY", ["open reduction internal fixation (ORIF) or external fixation"]]],
+    [["ok", "1 · CLOSED reduction + cast", ["• hematoma block, then traction", "• 3-point mould, NOT tight"]]],
+    [["warn", "2 · Reduction fails → SURGERY", ["ORIF or external fixation"]]],
     [["ok", "3 · Rehabilitate", []]],
-    [["bad", "Cast TOO TIGHT: acute CTS ± compartment syndrome", ["split cast + padding · elevate · recheck every 15-20 min · no masking analgesia"]]]
+    [["bad", "Cast TOO TIGHT", ["acute CTS ± compartment syndrome", "split cast + padding, elevate"]]]
    ]
   },
-  {
-   "id": "sc",
-   "colour": "magenta",
-   "drop_label": "SCAPHOID",
-   "head": [[["h", "Scaphoid fracture", ["the most common carpal fracture", "young people"]]]],
-   "clue": [[["t", "Swelling + localized tenderness", ["in the snuffbox"]]]],
-   "cause": [[["w", "Retrograde blood flow", [
-    "• a missed fracture → nonunion",
-    "• osteonecrosis",
-    "• late arthrosis"]]]],
+  {"id": "sc", "colour": "magenta", "drop_label": "SCAPHOID",
+   "head": [[["h", "Scaphoid fracture", ["most common carpal fracture", "young people"]]]],
+   "clue": [[["t", "SNUFFBOX swelling + tenderness", []]]],
+   "cause": [[["w", "Retrograde blood flow", ["• missed → nonunion", "• osteonecrosis · late arthrosis"]]]],
    "inv": [
     [["t", "1 · X-ray", ["usually sufficient"]]],
-    [["t", "2 · X-ray NORMAL → be SUSPICIOUS", ["cast, repeat X-ray in 10-14 days", "still normal, still suspected → CT or MRI"]]]
+    [["t", "2 · X-ray NORMAL → SUSPICIOUS", ["cast, repeat X-ray in 10-14 days", "still suspected → CT or MRI"]]]
    ],
-   "tx": [
-    [["ok", "Undisplaced or DISTAL pole", ["cast until union"]],
-     ["warn", "Displaced or PROXIMAL pole", ["surgery (volar approach)"]]]
-   ]
+   "tx": [[["ok", "Undisplaced or DISTAL", ["cast until union"]], ["warn", "Displaced or PROXIMAL", ["surgery"]]]]
   },
-  {
-   "id": "cts",
-   "colour": "teal",
-   "drop_label": "MEDIAN 3½",
-   "head": [[["h", "Carpal tunnel syndrome (CTS)", ["median nerve in the carpal tunnel", "with FPL, FDS, FDP tendons"]]]],
+  {"id": "cts", "colour": "teal", "drop_label": "MEDIAN 3½",
+   "head": [[["h", "Carpal tunnel syndrome (CTS)", ["median nerve in the carpal tunnel"]]]],
    "clue": [
-    [["t", "Thumb, index, middle + ½ ring finger", [
-     "• numbness and tingling, often AT NIGHT",
-     "• worse with the wrist flexed or extended",
-     "• ± thumb weakness (abductor pollicis brevis)"]]],
-    [["w", "Median function ABOVE the tunnel normal", ["maybe Tinel's and Phalen's signs"]]]
+    [["t", "Thumb, index, middle + ½ ring finger", ["• tingling, often AT NIGHT", "• ± thumb weakness (APB)"]]],
+    [["w", "Median function ABOVE the tunnel normal", ["± Tinel's, Phalen's"]]]
    ],
-   "cause": [[["w", "Less space", [
-    "• fracture, ganglia",
-    "• flexor tenosynovitis",
-    "• rheumatologic inflammation",
-    "• pregnancy, acromegaly"]],
-    ["w", "Vulnerable nerve", [
-    "• diabetes",
-    "• amyloidosis",
-    "• alcohol",
-    "• very often IDIOPATHIC"]]]],
+   "cause": [[["w", "Less space", ["• fracture, ganglia", "• tenosynovitis", "• pregnancy"]], ["w", "Vulnerable nerve", ["• diabetes", "• amyloid, alcohol", "• often IDIOPATHIC"]]]],
    "inv": [
-    [["t", "1 · Think of C6 RADICULOPATHY", ["also tendinopathy, thumb-base arthritis"]]],
-    [["t", "2 · EMG + nerve conduction studies", ["nerve? CTS or C6? how severe?"]]]
+    [["t", "1 · Rule out C6 RADICULOPATHY", []]],
+    [["t", "2 · EMG + nerve conduction", ["CTS or C6? how severe?"]]]
    ],
    "tx": [
     [["ok", "1 · Education", ["reversible if caught early"]]],
-    [["ok", "2 · Rigid wrist-hand orthosis, OVERNIGHT", ["avoid aggravating positions, vibrating tools"]]],
-    [["ok", "3 · Corticosteroid injection", []]],
+    [["ok", "2 · Wrist orthosis, OVERNIGHT", ["avoid vibrating tools"]]],
+    [["ok", "3 · Steroid injection", []]],
     [["warn", "4 · Carpal tunnel release", []]]
    ]
   },
-  {
-   "id": "uln",
-   "colour": "orange",
-   "drop_label": "ULNAR 1½",
-   "head": [[["h", "Ulnar neuropathy at the wrist", ["ulnar nerve in Guyon's canal", "with the ulnar artery"]]]],
-   "clue": [[["t", "Little finger + ½ ring finger", [
-    "• reduced feeling (hypoesthesia)",
-    "• weak intrinsic hand muscles"]]]],
-   "cause": [[["w", "Less space", [
-    "• fracture, ganglia",
-    "• rheumatologic inflammation",
-    "• COMPRESSION: 'handlebar neuropathy'"]]]],
+  {"id": "uln", "colour": "orange", "drop_label": "ULNAR 1½",
+   "head": [[["h", "Ulnar neuropathy at the wrist", ["ulnar nerve in Guyon's canal"]]]],
+   "clue": [[["t", "Little finger + ½ ring finger", ["• reduced feeling", "• weak intrinsic hand muscles"]]]],
+   "cause": [[["w", "Less space", ["• fracture, ganglia", "• COMPRESSION: handlebars"]]]],
    "inv": [
-    [["t", "1 · Think of C8 RADICULOPATHY", ["also the ulnar nerve at the ELBOW"]]],
-    [["t", "2 · EMG + nerve conduction studies", ["nerve? elbow, wrist or C8? how severe?"]]]
+    [["t", "1 · Rule out C8 RADICULOPATHY", ["or the ulnar nerve at the ELBOW"]]],
+    [["t", "2 · EMG + nerve conduction", ["elbow, wrist or C8?"]]]
    ],
    "tx": [
     [["ok", "1 · Education", ["reversible if caught early"]]],
-    [["ok", "2 · Relieve the pressure", ["specialized gloves · change the handlebars"]]],
+    [["ok", "2 · Relieve the pressure", ["gloves · change the handlebars"]]],
     [["warn", "3 · Guyon's canal release", []]]
    ]
   }
- ],
- "panels": [
-  {"title": "Hand muscles: which nerve", "items": [
-   "thenar (APB, FPB, opponens pollicis): RECURRENT branch of the median nerve",
-   "case: palm cut, recurrent median branch only → loses thumb OPPOSITION; keeps abduction (APL, radial), adduction (adductor pollicis, ulnar), IP flexion (FPL)",
-   "hypothenar, adductor pollicis, medial 2 lumbricals: ULNAR · lateral 2 lumbricals: median",
-   "interossei: palmar ADduct (PAD) · dorsal ABduct (DAB)"]}
  ]
 }

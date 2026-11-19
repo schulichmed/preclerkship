@@ -81,7 +81,7 @@
    "x": 40,
    "y": 270,
    "w": 310,
-   "h": 1198,
+   "h": 1014,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -89,7 +89,7 @@
    "x": 352,
    "y": 270,
    "w": 310,
-   "h": 1198,
+   "h": 1014,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -97,7 +97,7 @@
    "x": 692,
    "y": 270,
    "w": 310,
-   "h": 1198,
+   "h": 1014,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -105,7 +105,7 @@
    "x": 1004,
    "y": 270,
    "w": 310,
-   "h": 1198,
+   "h": 1014,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   }
@@ -114,25 +114,25 @@
   {
    "x": 23,
    "y": 396,
-   "h": 198,
+   "h": 180,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 634,
-   "h": 150,
+   "y": 616,
+   "h": 96,
    "text": "CAUSES & RISKS"
   },
   {
    "x": 23,
-   "y": 824,
+   "y": 752,
    "h": 160,
    "text": "WORKUP"
   },
   {
    "x": 23,
-   "y": 1024,
-   "h": 436,
+   "y": 952,
+   "h": 324,
    "text": "TREATMENT"
   }
  ],
@@ -145,8 +145,8 @@
    "kind": "dark",
    "title": "Wrist or hand complaint: a FALL, or a NUMB, TINGLING hand?",
    "lines": [
-    "fracture: age, activity level and displacement decide the treatment",
-    "nerve: which fingers, and is it the wrist or the neck?"
+    "fracture: age, activity, displacement decide",
+    "nerve: which fingers? wrist or neck?"
    ]
   },
   {
@@ -156,9 +156,9 @@
    "w": 612,
    "h": 60,
    "kind": "plain",
-   "title": "Fall on an outstretched hand (FOOSH): WHICH BONE?",
+   "title": "Fall on outstretched hand: WHICH BONE?",
    "lines": [
-    "localized pain · tenderness over the bone"
+    "localized bony tenderness"
    ]
   },
   {
@@ -168,9 +168,9 @@
    "w": 612,
    "h": 60,
    "kind": "plain",
-   "title": "Numbness or tingling: WHICH FINGERS?",
+   "title": "Numb or tingling: WHICH FINGERS?",
    "lines": [
-    "both are entrapments AT THE WRIST"
+    "both entrapped AT THE WRIST"
    ]
   },
   {
@@ -182,7 +182,8 @@
    "kind": "dr_h",
    "title": "Distal radius fracture",
    "lines": [
-    "very common"
+    "very common",
+    "forgiving at the extremes of age"
    ]
   },
   {
@@ -194,7 +195,7 @@
    "kind": "sc_h",
    "title": "Scaphoid fracture",
    "lines": [
-    "the most common carpal fracture",
+    "most common carpal fracture",
     "young people"
    ]
   },
@@ -207,8 +208,7 @@
    "kind": "cts_h",
    "title": "Carpal tunnel syndrome (CTS)",
    "lines": [
-    "median nerve in the carpal tunnel",
-    "with FPL, FDS, FDP tendons"
+    "median nerve in the carpal tunnel"
    ]
   },
   {
@@ -220,8 +220,7 @@
    "kind": "uln_h",
    "title": "Ulnar neuropathy at the wrist",
    "lines": [
-    "ulnar nerve in Guyon's canal",
-    "with the ulnar artery"
+    "ulnar nerve in Guyon's canal"
    ]
   },
   {
@@ -229,11 +228,11 @@
    "x": 45,
    "y": 396,
    "w": 300,
-   "h": 198,
+   "h": 180,
    "kind": "dr_t",
-   "title": "Localized pain after a FOOSH",
+   "title": "Localized pain after a fall",
    "lines": [
-    "poor function if the anatomy is not restored"
+    "poor function if anatomy not restored"
    ]
   },
   {
@@ -241,37 +240,34 @@
    "x": 357,
    "y": 396,
    "w": 300,
-   "h": 198,
+   "h": 180,
    "kind": "sc_t",
-   "title": "Swelling + localized tenderness",
-   "lines": [
-    "in the snuffbox"
-   ]
+   "title": "SNUFFBOX swelling + tenderness",
+   "lines": []
   },
   {
    "id": "cts_clue_0_0",
    "x": 697,
    "y": 396,
    "w": 300,
-   "h": 96,
+   "h": 78,
    "kind": "cts_t",
    "title": "Thumb, index, middle + ½ ring finger",
    "lines": [
-    "• numbness and tingling, often AT NIGHT",
-    "• worse with the wrist flexed or extended",
-    "• ± thumb weakness (abductor pollicis brevis)"
+    "• tingling, often AT NIGHT",
+    "• ± thumb weakness (APB)"
    ]
   },
   {
    "id": "cts_clue_1_0",
    "x": 697,
-   "y": 514,
+   "y": 496,
    "w": 300,
    "h": 80,
    "kind": "cts_w",
    "title": "Median function ABOVE the tunnel normal",
    "lines": [
-    "maybe Tinel's and Phalen's signs"
+    "± Tinel's, Phalen's"
    ]
   },
   {
@@ -279,104 +275,100 @@
    "x": 1009,
    "y": 396,
    "w": 300,
-   "h": 198,
+   "h": 180,
    "kind": "uln_t",
    "title": "Little finger + ½ ring finger",
    "lines": [
-    "• reduced feeling (hypoesthesia)",
+    "• reduced feeling",
     "• weak intrinsic hand muscles"
    ]
   },
   {
    "id": "dr_cause_0_0",
    "x": 45,
-   "y": 634,
+   "y": 616,
    "w": 300,
-   "h": 150,
+   "h": 96,
    "kind": "dr_w",
    "title": "Left uncorrected",
    "lines": [
-    "• crooked: forearm rotation restricted",
-    "• short: ulnar impaction syndrome",
-    "• step > 1 mm: radiocarpal arthritis → fusion"
+    "• crooked: rotation restricted",
+    "• short: ulnar impaction",
+    "• step > 1 mm: arthritis → fusion"
    ]
   },
   {
    "id": "sc_cause_0_0",
    "x": 357,
-   "y": 634,
+   "y": 616,
    "w": 300,
-   "h": 150,
+   "h": 96,
    "kind": "sc_w",
    "title": "Retrograde blood flow",
    "lines": [
-    "• a missed fracture → nonunion",
-    "• osteonecrosis",
-    "• late arthrosis"
+    "• missed → nonunion",
+    "• osteonecrosis · late arthrosis"
    ]
   },
   {
    "id": "cts_cause_0_0",
    "x": 697.0,
-   "y": 634,
+   "y": 616,
    "w": 145.0,
-   "h": 150,
+   "h": 96,
    "kind": "cts_w",
    "title": "Less space",
    "lines": [
     "• fracture, ganglia",
-    "• flexor tenosynovitis",
-    "• rheumatologic inflammation",
-    "• pregnancy, acromegaly"
+    "• tenosynovitis",
+    "• pregnancy"
    ]
   },
   {
    "id": "cts_cause_0_1",
    "x": 852.0,
-   "y": 634,
+   "y": 616,
    "w": 145.0,
-   "h": 150,
+   "h": 96,
    "kind": "cts_w",
    "title": "Vulnerable nerve",
    "lines": [
     "• diabetes",
-    "• amyloidosis",
-    "• alcohol",
-    "• very often IDIOPATHIC"
+    "• amyloid, alcohol",
+    "• often IDIOPATHIC"
    ]
   },
   {
    "id": "uln_cause_0_0",
    "x": 1009,
-   "y": 634,
+   "y": 616,
    "w": 300,
-   "h": 150,
+   "h": 96,
    "kind": "uln_w",
    "title": "Less space",
    "lines": [
     "• fracture, ganglia",
-    "• rheumatologic inflammation",
-    "• COMPRESSION: 'handlebar neuropathy'"
+    "• COMPRESSION: handlebars"
    ]
   },
   {
    "id": "dr_inv_0_0",
    "x": 45,
-   "y": 824,
+   "y": 752,
    "w": 300,
    "h": 160,
    "kind": "dr_t",
    "title": "X-ray: 3 questions",
    "lines": [
-    "• CROOKED? normal 12° palmar tilt on the lateral",
-    "• SHORT? ulnar variance > neutral (compare sides)",
-    "• SMOOTH? a step > 1 mm"
+    "• CROOKED? normal palmar tilt 12°",
+    "• SHORT? ulnar variance past neutral",
+    "• SMOOTH? step > 1 mm"
    ]
   },
   {
    "id": "sc_inv_0_0",
    "x": 357,
-   "y": 824,
+   "y": 752,
    "w": 300,
    "h": 60,
    "kind": "sc_t",
@@ -388,95 +380,91 @@
   {
    "id": "sc_inv_1_0",
    "x": 357,
-   "y": 906,
+   "y": 834,
    "w": 300,
    "h": 78,
    "kind": "sc_t",
-   "title": "2 · X-ray NORMAL → be SUSPICIOUS",
+   "title": "2 · X-ray NORMAL → SUSPICIOUS",
    "lines": [
     "cast, repeat X-ray in 10-14 days",
-    "still normal, still suspected → CT or MRI"
+    "still suspected → CT or MRI"
    ]
   },
   {
    "id": "cts_inv_0_0",
    "x": 697,
-   "y": 824,
+   "y": 752,
    "w": 300,
-   "h": 69,
+   "h": 60,
    "kind": "cts_t",
-   "title": "1 · Think of C6 RADICULOPATHY",
-   "lines": [
-    "also tendinopathy, thumb-base arthritis"
-   ]
+   "title": "1 · Rule out C6 RADICULOPATHY",
+   "lines": []
   },
   {
    "id": "cts_inv_1_0",
    "x": 697,
-   "y": 915,
+   "y": 834,
    "w": 300,
-   "h": 69,
+   "h": 78,
    "kind": "cts_t",
-   "title": "2 · EMG + nerve conduction studies",
+   "title": "2 · EMG + nerve conduction",
    "lines": [
-    "nerve? CTS or C6? how severe?"
+    "CTS or C6? how severe?"
    ]
   },
   {
    "id": "uln_inv_0_0",
    "x": 1009,
-   "y": 824,
+   "y": 752,
    "w": 300,
    "h": 69,
    "kind": "uln_t",
-   "title": "1 · Think of C8 RADICULOPATHY",
+   "title": "1 · Rule out C8 RADICULOPATHY",
    "lines": [
-    "also the ulnar nerve at the ELBOW"
+    "or the ulnar nerve at the ELBOW"
    ]
   },
   {
    "id": "uln_inv_1_0",
    "x": 1009,
-   "y": 915,
+   "y": 843,
    "w": 300,
    "h": 69,
    "kind": "uln_t",
-   "title": "2 · EMG + nerve conduction studies",
+   "title": "2 · EMG + nerve conduction",
    "lines": [
-    "nerve? elbow, wrist or C8? how severe?"
+    "elbow, wrist or C8?"
    ]
   },
   {
    "id": "dr_tx_0_0",
    "x": 45,
-   "y": 1024,
+   "y": 952,
    "w": 300,
-   "h": 132,
+   "h": 78,
    "kind": "ok",
    "title": "1 · CLOSED reduction + cast",
    "lines": [
-    "• analgesia: hematoma block (1% lidocaine), regional, sedation",
-    "• traction → INCREASE the deformity → correct",
-    "• 3-point mould: well moulded is NOT tight",
-    "~ forgiving at the extremes of age"
+    "• hematoma block, then traction",
+    "• 3-point mould, NOT tight"
    ]
   },
   {
    "id": "dr_tx_1_0",
    "x": 45,
-   "y": 1178,
+   "y": 1052,
    "w": 300,
-   "h": 98,
+   "h": 60,
    "kind": "warn",
-   "title": "2 · Still crooked, short or not smooth → SURGERY",
+   "title": "2 · Reduction fails → SURGERY",
    "lines": [
-    "open reduction internal fixation (ORIF) or external fixation"
+    "ORIF or external fixation"
    ]
   },
   {
    "id": "dr_tx_2_0",
    "x": 45,
-   "y": 1298,
+   "y": 1134,
    "w": 300,
    "h": 42,
    "kind": "ok",
@@ -486,23 +474,24 @@
   {
    "id": "dr_tx_3_0",
    "x": 45,
-   "y": 1362,
+   "y": 1198,
    "w": 300,
-   "h": 98,
+   "h": 78,
    "kind": "bad",
-   "title": "Cast TOO TIGHT: acute CTS ± compartment syndrome",
+   "title": "Cast TOO TIGHT",
    "lines": [
-    "split cast + padding · elevate · recheck every 15-20 min · no masking analgesia"
+    "acute CTS ± compartment syndrome",
+    "split cast + padding, elevate"
    ]
   },
   {
    "id": "sc_tx_0_0",
    "x": 357.0,
-   "y": 1024,
+   "y": 952,
    "w": 145.0,
-   "h": 436,
+   "h": 324,
    "kind": "ok",
-   "title": "Undisplaced or DISTAL pole",
+   "title": "Undisplaced or DISTAL",
    "lines": [
     "cast until union"
    ]
@@ -510,21 +499,21 @@
   {
    "id": "sc_tx_0_1",
    "x": 512.0,
-   "y": 1024,
+   "y": 952,
    "w": 145.0,
-   "h": 436,
+   "h": 324,
    "kind": "warn",
-   "title": "Displaced or PROXIMAL pole",
+   "title": "Displaced or PROXIMAL",
    "lines": [
-    "surgery (volar approach)"
+    "surgery"
    ]
   },
   {
    "id": "cts_tx_0_0",
    "x": 697,
-   "y": 1024,
+   "y": 952,
    "w": 300,
-   "h": 96,
+   "h": 74,
    "kind": "ok",
    "title": "1 · Education",
    "lines": [
@@ -534,31 +523,31 @@
   {
    "id": "cts_tx_1_0",
    "x": 697,
-   "y": 1142,
+   "y": 1048,
    "w": 300,
-   "h": 116,
+   "h": 74,
    "kind": "ok",
-   "title": "2 · Rigid wrist-hand orthosis, OVERNIGHT",
+   "title": "2 · Wrist orthosis, OVERNIGHT",
    "lines": [
-    "avoid aggravating positions, vibrating tools"
+    "avoid vibrating tools"
    ]
   },
   {
    "id": "cts_tx_2_0",
    "x": 697,
-   "y": 1280,
+   "y": 1144,
    "w": 300,
-   "h": 78,
+   "h": 56,
    "kind": "ok",
-   "title": "3 · Corticosteroid injection",
+   "title": "3 · Steroid injection",
    "lines": []
   },
   {
    "id": "cts_tx_3_0",
    "x": 697,
-   "y": 1380,
+   "y": 1222,
    "w": 300,
-   "h": 78,
+   "h": 56,
    "kind": "warn",
    "title": "4 · Carpal tunnel release",
    "lines": []
@@ -566,9 +555,9 @@
   {
    "id": "uln_tx_0_0",
    "x": 1009,
-   "y": 1024,
+   "y": 952,
    "w": 300,
-   "h": 137,
+   "h": 99,
    "kind": "ok",
    "title": "1 · Education",
    "lines": [
@@ -578,21 +567,21 @@
   {
    "id": "uln_tx_1_0",
    "x": 1009,
-   "y": 1183,
+   "y": 1073,
    "w": 300,
-   "h": 137,
+   "h": 99,
    "kind": "ok",
    "title": "2 · Relieve the pressure",
    "lines": [
-    "specialized gloves · change the handlebars"
+    "gloves · change the handlebars"
    ]
   },
   {
    "id": "uln_tx_2_0",
    "x": 1009,
-   "y": 1342,
+   "y": 1194,
    "w": 300,
-   "h": 119,
+   "h": 81,
    "kind": "warn",
    "title": "3 · Guyon's canal release",
    "lines": []
@@ -780,19 +769,5 @@
    ]
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1494,
-   "w": 1264,
-   "title": "Hand muscles: which nerve",
-   "items": [
-    "thenar (APB, FPB, opponens pollicis): RECURRENT branch of the median nerve",
-    "case: palm cut, recurrent median branch only → loses thumb OPPOSITION; keeps abduction (APL, radial), adduction (adductor pollicis, ulnar), IP flexion (FPL)",
-    "hypothenar, adductor pollicis, medial 2 lumbricals: ULNAR · lateral 2 lumbricals: median",
-    "interossei: palmar ADduct (PAD) · dorsal ABduct (DAB)"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }
