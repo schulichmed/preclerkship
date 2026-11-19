@@ -1,0 +1,55 @@
+{
+ "name": "body pain overview",
+ "title": "Body pain without swollen joints: normal inflammatory markers with widespread, migratory pain is fibromyalgia, a central pain syndrome; an older patient with shoulder and hip girdle stiffness and high markers has polymyalgia rheumatica; myositis, inflammatory arthritis, osteoarthritis, cancer and infection are the mimics, each told apart by what PMR lacks; each column gives the presentation, the same row of labs, and treatment",
+ "col_w": 236,
+ "root": {
+  "title": "Pain all over WITHOUT swollen joints: ESR, CRP and CK sort it",
+  "lines": [
+   "first: ESR, CRP · CBC · CK · RF, ANA only if the exam points there",
+   "none of the mimics respond as fast or as dramatically to prednisone as PMR"
+  ]
+ },
+ "groups": [
+  {"id": "g0", "cols": [0, 0], "title": "ESR, CRP **NORMAL** · CK normal", "lines": ["• CBC normal", "• a + RF or ANA doesn't exclude it", "• diagnose by the **2010 criteria**"], "em": "#6a4aa8"},
+  {"id": "g1", "cols": [1, 1], "title": "ESR + CRP **HIGH** · CK NORMAL", "lines": ["• Hb ↓ · platelets ↑", "• RF, CCP **−**", "• Avery: ESR 73, CRP 65", "• Hb 103, platelets 489"], "em": "#1f6f8b"},
+  {"id": "g2", "cols": [2, 2], "title": "**CK HIGH**", "lines": ["• ESR ↑ in half", "• ANA 80% · **anti-Jo-1**"], "em": "#b5600f"},
+  {"id": "g3", "cols": [3, 3], "title": "**RF, anti-CCP +** · ESR, CRP ↑", "lines": ["• joint fluid **inflammatory**"], "em": "#a3336b"},
+  {"id": "g4", "cols": [4, 4], "title": "Everything **NORMAL**", "lines": ["• joint fluid **< 2000**"], "em": "#8a5a2b"},
+  {"id": "g5", "cols": [5, 5], "title": "**Gram, culture +** · or cancer screen +", "lines": ["• ESR, CRP ↑"], "em": "#46607a"}
+ ],
+ "sections": ["head", "clue", "tx"],
+ "row_names": {"clue": "PRESENTS AS", "tx": "TREATMENT"},
+ "dashed_sections": ["clue"],
+ "columns": [
+  {"id": "fm", "colour": "purple", "drop_label": "diffuse, migratory",
+   "head": [[["h", "Fibromyalgia", ["CENTRAL pain · 1 in 100, mostly women"]]]],
+   "clue": [[["t", "Widespread pain, 3+ months", ["• 'I hurt everywhere' · 'it hurts to be hugged'", "• exhausted · 'fog' · unrefreshed after 8 hours' sleep", "• light, noise, smells bother · waxes, wanes, migrates", "• jaw, bowel, bladder, chest pain, headache: other specialists first"]]], [["w", "2010 criteria: all three", ["• pain index 7+ and severity 5+, or index 3-6 and severity 9+", "• at a similar level for 3+ months · nothing else explains it", "~ NOT a diagnosis of exclusion: often fibromyalgia PLUS another disease"]]]],
+   "tx": [[["ok", "1 · Education + EXERCISE (best evidence)", ["• graded · Tai Chi, yoga, warm pool", "• CBT: sleep hygiene, pacing, mindfulness", "• treat other inputs: sleep apnea, OA, mood, RA, IBD"]]], [["ok", "2 · One drug, low dose, slow", ["• duloxetine (best evidence), venlafaxine · no help for sleep", "• pregabalin, gabapentin · HELP sleep", "• low-dose amitriptyline: pain, fatigue, sleep · not mood", "~ half get a 30% improvement"]]], [["bad", "NEVER opioids", ["no better for pain · worse sleep and disability"]]]]
+  },
+  {"id": "pmr", "colour": "teal", "drop_label": "over 50, girdle stiffness",
+   "head": [[["h", "Polymyalgia rheumatica", ["over 50 · muscles NORMAL · linked to GCA"]]]],
+   "clue": [[["t", "Shoulders, neck, hips: pain + stiffness", ["• PROFOUND morning stiffness · insidious", "• NO weakness · exam normal apart from pain", "• fatigue, weight loss, low fever, night sweats", "case: Avery, 70: stiff shoulders for 3 months, lost 10 lb"]]], [["bad", "New headache, jaw claudication, vision?", ["giant cell arteritis: high-dose prednisone TODAY (see VASCULITIS)"]]]],
+   "tx": [[["ok", "1 · Prednisone 15-20 mg a day", ["• better within 48 hours (Avery: 12 hours)", "• hold until well + markers normal, 1-2 months"]]], [["warn", "No dramatic response in 3 days → rethink", []]], [["ok", "2 · Taper slowly", ["• 15 → 12.5 → 10 mg, a month each, then ↓ 1 mg a month (16-18 months)", "• about 2 years on steroids · relapses common", "• over 7.5 mg for over 3 months: calcium 1500 mg, vitamin D 1000-2000 IU, antiresorptive"]]], [["bad", "Never treat raised markers alone", ["exclude cancer and infection first"]]]]
+  },
+  {"id": "myo", "colour": "orange", "drop_label": "weakness", "home": {"chart": "msk-w11-06_2", "col": "myo", "name": "Connective Tissue"},
+   "head": [[["h", "Inflammatory myositis", ["proximal WEAKNESS · CK ↑"]]]],
+   "clue": [[["w", "→ Connective Tissue", []]]],
+   "tx": []
+  },
+  {"id": "ia", "colour": "magenta", "drop_label": "distal joints swollen", "home": {"chart": "msk-w11-02_2", "col": "ra", "name": "Polyarthritis"},
+   "head": [[["h", "Inflammatory arthritis", ["DISTAL joints swollen"]]]],
+   "clue": [[["w", "→ Polyarthritis", []]]],
+   "tx": []
+  },
+  {"id": "oa", "colour": "brown", "drop_label": "worse with activity", "home": {"chart": "msk-w11-04_2", "col": "oa", "name": "Osteoarthritis"},
+   "head": [[["h", "Osteoarthritis", ["WORSE with activity"]]]],
+   "clue": [[["w", "→ Osteoarthritis", []]]],
+   "tx": []
+  },
+  {"id": "ci", "colour": "slate", "drop_label": "asymmetric",
+   "head": [[["h", "Cancer or infection", ["why markers are never treated alone"]]]],
+   "clue": [[["t", "ASYMMETRIC · other symptoms", ["• infection: a warm, swollen joint"]]]],
+   "tx": [[["bad", "Find and treat the cause", ["before any steroid"]]]]
+  }
+ ]
+}

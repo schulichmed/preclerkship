@@ -23,40 +23,34 @@
    "head": [[["h", "Elbow dislocation", ["humero-ulnar joint", "POSTERIOR is most common"]]]],
    "pres": [[["t", "Fall onto an outstretched hand (FOOSH)", ["capsule and ligaments rupture"]]]],
    "inv": [[["bad", "RED FLAG: check", ["• ULNAR nerve: most at risk by location", "• skin integrity", "• compartment syndrome"]]]],
-   "tx": [[["ok", "1 · Closed reduction", ["splint at 90°"]]],
-          [["warn", "2 · Open reduction internal fixation (ORIF)", ["soft tissue in the way, or it will not stay reduced"]]]]},
+   "tx": [[["ok", "1 · Closed reduction", ["splint at 90°"]]], [["warn", "2 · Open reduction internal fixation (ORIF)", ["soft tissue in the way, or it will not stay reduced"]]]]
+  },
   {"id": "nm", "colour": "magenta",
    "head": [[["h", "Radial head subluxation", ["nursemaid's elbow", "proximal radioulnar joint", "child's annular ligament thinner, weaker distally"]]]],
    "pres": [[["t", "Child: rare after age 5", ["• girls, left arm more often", "• a PULL along the arm → acute pain", "• will not use it, holds it flexed against the body", "case: 2-year-old swung up by the hands → cradles arm, semi-prone"]]]],
    "inv": [[["w", "Clinical diagnosis", ["imaging ONLY to rule out a fracture"]]]],
-   "tx": [[["ok", "Closed reduction", ["• pronation + extension", "• NO cast or orthosis"]]]]},
+   "tx": [[["ok", "Closed reduction", ["• pronation + extension", "• NO cast or orthosis"]]]]
+  },
   {"id": "ucl", "colour": "blue",
    "head": [[["h", "Ulnar collateral ligament injury", ["stabilises the medial elbow", "baseball pitcher"]]]],
    "pres": [[["t", "Medial elbow pain", ["• sudden tear: a pop", "• tender to palpation"]]]],
-   "inv": [[["w", "1 · Valgus stress: NO end point", ["excessive motion"]]],
-           [["w", "2 · Sports medicine or orthopaedic exam", ["MRI may help"]]]],
-   "tx": [[["ok", "1 · Conservative", ["• ligaments heal slowly, if at all", "• physiotherapy: dynamic stabilisers, proprioception", "• orthosis for stability", "• topical anti-inflammatory, acetaminophen, NSAID"]]],
-          [["warn", "2 · Reconstruction (Tommy John)", ["only for functional goals · years of physiotherapy", "graft: palmaris longus, semitendinosus"]]]]},
-  {"id": "oa", "colour": "teal",
-   "head": [[["h", "Osteoarthritis of the elbow", ["post-traumatic: earlier onset", "inflammatory: rheumatology charts"]]]],
-   "pres": [[["t", "Gradual, achy, with flares", ["• stiffness, loss of range of motion", "• locking"]]]],
-   "inv": [[["w", "X-ray", ["• loss of joint space · osteophytes", "• subchondral sclerosis or cysts"]]]],
-   "tx": [[["ok", "1 · Conservative", ["• no cure: a grumbling course", "• ice · physiotherapy · occupational therapy", "• anti-inflammatory, acetaminophen, steroid injection"]]],
-          [["warn", "2 · Intolerable end stage", ["debridement or arthroplasty"]]]]},
+   "inv": [[["w", "1 · Valgus stress: NO end point", ["excessive motion"]]], [["w", "2 · Sports medicine or orthopaedic exam", ["MRI may help"]]]],
+   "tx": [[["ok", "1 · Conservative", ["• ligaments heal slowly, if at all", "• physiotherapy: dynamic stabilisers, proprioception", "• orthosis for stability", "• topical anti-inflammatory, acetaminophen, NSAID"]]], [["warn", "2 · Reconstruction (Tommy John)", ["only for functional goals · years of physiotherapy", "graft: palmaris longus, semitendinosus"]]]]
+  },
+  {"id": "oa", "colour": "teal", "home": {"chart": "msk-w11-04_2", "col": "oa", "name": "Osteoarthritis"},
+   "head": [[["h", "Osteoarthritis of the elbow", ["locking · post-traumatic"]]]],
+   "pres": [[["w", "→ Osteoarthritis", []]]],
+   "inv": [],
+   "tx": []
+  },
   {"id": "bur", "colour": "purple",
    "head": [[["h", "Olecranon bursitis", ["the most common superficial bursitis"]]]],
-   "pres": [[["t", "Single blow or repeated leaning", ["• develops over months", "• leaners: construction, plumbers, HVAC, office jobs", "• INFECTED: skin break (bite, scrape), redness, systemic signs"]]],
-            [["w", "Mimics: whole elbow swollen", ["gout or inflammatory arthritis: treat the cause"]]]],
-   "inv": [[["w", "Not scary: often nothing", ["X-ray if trauma · ultrasound or MRI if atypical"]]],
-           [["bad", "Infected → ASPIRATE", []]]],
-   "tx": [[["ok", "1 · Not scary: conservative", ["• benign, settles once the cause stops", "• ice · pad the elbow · stop leaning · anti-inflammatory", "• bursectomy if chronic"]]],
-          [["bad", "Septic → ANTIBIOTICS", ["± incision and drainage · bursectomy if infected or chronic"]]]]}
+   "pres": [[["t", "Single blow or repeated leaning", ["• develops over months", "• leaners: construction, plumbers, HVAC, office jobs", "• INFECTED: skin break (bite, scrape), redness, systemic signs"]]], [["w", "Mimics: whole elbow swollen", ["gout or inflammatory arthritis: treat the cause"]]]],
+   "inv": [[["w", "Not scary: often nothing", ["X-ray if trauma · ultrasound or MRI if atypical"]]], [["bad", "Infected → ASPIRATE", []]]],
+   "tx": [[["ok", "1 · Not scary: conservative", ["• benign, settles once the cause stops", "• ice · pad the elbow · stop leaning · anti-inflammatory", "• bursectomy if chronic"]]], [["bad", "Septic → ANTIBIOTICS", ["± incision and drainage · bursectomy if infected or chronic"]]]]
+  }
  ],
  "panels": [
-  {"title": "Elbow pain by location (a fracture can be anywhere)", "cols": 2, "items": [
-   "ANTERIOR: arthritis · distal biceps tendinopathy",
-   "MEDIAL: medial epicondylosis (golfer's elbow) · ulnar neuritis or neuropathy · ulnar collateral ligament",
-   "LATERAL: lateral epicondylosis (tennis elbow)",
-   "POSTERIOR: olecranon bursitis · arthritis · triceps tendinopathy"]}
+  {"title": "Elbow pain by location (a fracture can be anywhere)", "cols": 2, "items": ["ANTERIOR: arthritis · distal biceps tendinopathy", "MEDIAL: medial epicondylosis (golfer's elbow) · ulnar neuritis or neuropathy · ulnar collateral ligament", "LATERAL: lateral epicondylosis (tennis elbow)", "POSTERIOR: olecranon bursitis · arthritis · triceps tendinopathy"]}
  ]
 }

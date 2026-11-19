@@ -149,7 +149,7 @@
    "x": 1084,
    "y": 306,
    "w": 238,
-   "h": 1076,
+   "h": 628,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -309,7 +309,7 @@
    "kind": "as_h",
    "title": "Ankylosing spondylitis",
    "lines": [
-    "spine + sacroiliac joints"
+    "fused spine · sacroiliitis"
    ]
   },
   {
@@ -449,28 +449,10 @@
    "x": 1089,
    "y": 450,
    "w": 228,
-   "h": 218,
-   "kind": "as_t",
-   "title": "Spine",
-   "lines": [
-    "• ossified longitudinal ligaments",
-    "• bony bridging across discs",
-    "• fused facet joints"
-   ]
-  },
-  {
-   "id": "as_look_1_0",
-   "x": 1089,
-   "y": 690,
-   "w": 228,
-   "h": 236,
+   "h": 476,
    "kind": "as_w",
-   "title": "Sacroiliitis",
-   "lines": [
-    "• erosions both sides (pseudo-widening)",
-    "• sclerosis, mostly iliac side",
-    "• ankylosis is LATE"
-   ]
+   "title": "→ Polyarthritis",
+   "lines": []
   },
   {
    "id": "pvs_look_0_0",
@@ -634,30 +616,6 @@
    ]
   },
   {
-   "id": "as_next_0_0",
-   "x": 1089,
-   "y": 966,
-   "w": 228,
-   "h": 193,
-   "kind": "bad",
-   "title": "Rigid spine",
-   "lines": [
-    "fractures next to the more mobile segments"
-   ]
-  },
-  {
-   "id": "as_next_1_0",
-   "x": 1089,
-   "y": 1181,
-   "w": 228,
-   "h": 193,
-   "kind": "warn",
-   "title": "Active inflammation?",
-   "lines": [
-    "bone marrow edema → MRI (X-ray misses it)"
-   ]
-  },
-  {
    "id": "pvs_next_0_0",
    "x": 1357,
    "y": 966,
@@ -717,10 +675,6 @@
    "to": "sco_look_1_0"
   },
   {
-   "from": "as_look_0_0",
-   "to": "as_look_1_0"
-  },
-  {
    "from": "pvs_look_0_0",
    "to": "pvs_look_1_0"
   },
@@ -751,10 +705,6 @@
   {
    "from": "sco_next_1_0",
    "to": "sco_next_2_0"
-  },
-  {
-   "from": "as_next_0_0",
-   "to": "as_next_1_0"
   },
   {
    "from": "frx_head_0_0",
@@ -811,10 +761,6 @@
   {
    "from": "as_head_0_0",
    "to": "as_look_0_0"
-  },
-  {
-   "from": "as_look_1_0",
-   "to": "as_next_0_0"
   },
   {
    "from": "g_in",

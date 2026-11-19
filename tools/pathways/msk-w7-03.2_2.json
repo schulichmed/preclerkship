@@ -167,7 +167,7 @@
    "x": 992,
    "y": 288,
    "w": 222,
-   "h": 1270,
+   "h": 548,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -316,7 +316,7 @@
    "kind": "inf_h",
    "title": "Inflammatory",
    "lines": [
-    "seronegative spondyloarthropathy: ankylosing spondylitis, psoriatic, IBD, reactive"
+    "BETTER with movement · night pain"
    ]
   },
   {
@@ -442,13 +442,10 @@
    "y": 468,
    "w": 212,
    "h": 360,
-   "kind": "inf_t",
-   "title": "BETTER with movement",
+   "kind": "inf_w",
+   "title": "→ Polyarthritis",
    "lines": [
-    "• WORSE with rest, overnight",
-    "• significant morning stiffness",
-    "• night pain, 2nd half of the night",
-    "• often the sacroiliac joints"
+    "ankylosing spondylitis"
    ]
   },
   {
@@ -563,20 +560,6 @@
    ]
   },
   {
-   "id": "inf_inv_0_0",
-   "x": 997,
-   "y": 868,
-   "w": 212,
-   "h": 306,
-   "kind": "inf_w",
-   "title": "Ask the review of systems",
-   "lines": [
-    "• eye symptoms · rashes",
-    "• family history · enthesopathy",
-    "• other inflammatory joint pain"
-   ]
-  },
-  {
    "id": "frx_inv_0_0",
    "x": 1221,
    "y": 868,
@@ -671,18 +654,6 @@
    "title": "URGENT neurosurgery or spine consult",
    "lines": [
     "for decompression"
-   ]
-  },
-  {
-   "id": "inf_tx_0_0",
-   "x": 997,
-   "y": 1214,
-   "w": 212,
-   "h": 336,
-   "kind": "inf_w",
-   "title": "Rheumatology",
-   "lines": [
-    "treatment comes in the rheumatology lectures"
    ]
   },
   {
@@ -850,14 +821,6 @@
   {
    "from": "inf_head_0_0",
    "to": "inf_pres_0_0"
-  },
-  {
-   "from": "inf_pres_0_0",
-   "to": "inf_inv_0_0"
-  },
-  {
-   "from": "inf_inv_0_0",
-   "to": "inf_tx_0_0"
   },
   {
    "from": "g_else",

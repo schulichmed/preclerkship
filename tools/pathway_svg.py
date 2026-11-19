@@ -105,6 +105,7 @@ KIND = {  # kind -> (fill, stroke, title colour, body colour)
 TITLE_SIZE, BODY_SIZE = 14.5, 12.5
 TITLE_STEP, BODY_STEP = 20, 18
 PAD_X, PAD_Y = 10, 12          # inside a box, each side
+TUBE_W = 30                    # the room a node's "tube" takes beside its list lines
 WRAP = 0.95                    # fill to this share of the inner width, for wider substitute faces
 WIDTH = 920
 ANY_TOP = 175                  # the OR row's height, when there is one
@@ -125,8 +126,25 @@ def font(style: str, size: float) -> ImageFont.FreeTypeFont:
 LIST_ITEM = re.compile(r"^(• |\d+ · )")   # a box line drawn as a left-aligned list item
 
 
+EM = "**"   # **x** inside a box line: x drawn bold, in the node's "em" colour
+
+
 def measure(text: str, style: str, size: float) -> float:
-    return font(style, size).getlength(text)
+    if EM not in text:
+        return font(style, size).getlength(text)
+    return sum(font("bold" if i % 2 else style, size).getlength(seg)
+               for i, seg in enumerate(text.split(EM)))
+
+
+def balance_em(lines: list) -> list:
+    """Close a **span** a wrap split across lines, and reopen it on the next line."""
+    out, carry = [], False
+    for line in lines:
+        if carry:
+            line = EM + line
+        carry = line.count(EM) % 2 == 1
+        out.append(line + EM if carry else line)
+    return out
 
 
 def wrap(text: str, style: str, size: float, width: float) -> list:
@@ -161,10 +179,35 @@ class Chart(object):
         if halo:
             extra += (' stroke="%s" stroke-width="5" stroke-linejoin="round" paint-order="stroke"'
                       % P["bg"])
+        if EM in s:   # bold spans in the emphasis colour
+            em = getattr(self, "_em", None) or fill or P["ink"]
+            body = "".join('<tspan font-weight="700" fill="%s">%s</tspan>' % (em, escape(seg))
+                           if i % 2 else escape(seg)
+                           for i, seg in enumerate(s.split(EM)) if seg)
+        else:
+            body = escape(s)
         self.parts.append(
             '<text x="%.1f" y="%.1f" font-family="%s" font-size="%s" font-weight="%s" '
             'fill="%s" text-anchor="%s"%s>%s</text>'
-            % (x, y, family, size, weight, fill or P["ink"], anchor, extra, escape(s)))
+            % (x, y, family, size, weight, fill or P["ink"], anchor, extra, body))
+
+    def tube(self, x, y, h, t: dict):
+        """A test tube of synovial fluid, held in front of print (the ACR read-through test):
+        `liquid` is its colour, `opacity` how much of the print shows through it."""
+        w = TUBE_W - 12
+        r = w / 2
+        body = "M%.1f %.1fV%.1fa%.1f %.1f 0 0 0 %.1f 0V%.1f" % (x, y, y + h - r, r, r, w, y)
+        for k in range(4):   # the print behind the tube
+            ly = y + h * (0.3 + k * 0.16)
+            self.parts.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="%s" '
+                              'stroke-width="1.6"/>' % (x - 3, ly, x + w + 3, ly, P["ink"]))
+        top = y + h * 0.18
+        liquid = "M%.1f %.1fV%.1fa%.1f %.1f 0 0 0 %.1f 0V%.1fZ" % (x, top, y + h - r, r, r, w, top)
+        self.parts.append('<path d="%s" fill="%s" fill-opacity="%s"/>'
+                          % (liquid, t["liquid"], t.get("opacity", 0.5)))
+        self.parts.append('<path d="%s" fill="none" stroke="#7d8796" stroke-width="1.4"/>' % body)
+        self.parts.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="#7d8796" '
+                          'stroke-width="2" stroke-linecap="round"/>' % (x - 2.5, y, x + w + 2.5, y))
 
     def rect(self, x, y, w, h, fill, stroke, sw=1.5, rx=10):
         self.parts.append('<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" rx="%s" '
@@ -176,6 +219,7 @@ class Chart(object):
     def layout_text(self, node: dict, w: float) -> list:
         """[(text, style, size, step)] for a node, wrapped to its inner width."""
         inner = w - 2 * PAD_X
+        off = TUBE_W if node.get("tube") else 0   # list lines start right of the tube
         rows = []
         for line in wrap(node["title"], "bold", TITLE_SIZE, inner):
             rows.append((line, "bold", TITLE_SIZE, TITLE_STEP))
@@ -187,11 +231,12 @@ class Chart(object):
                 # a list item ("• x" or "2 · x"): left-aligned, wrapped lines hang under the first word
                 marker = m.group(0)
                 hang = measure(marker, style, BODY_SIZE)
-                for i, line in enumerate(wrap(text[len(marker):], style, BODY_SIZE, inner - hang)):
+                parts = balance_em(wrap(text[len(marker):], style, BODY_SIZE, inner - hang - off))
+                for i, line in enumerate(parts):
                     rows.append(((marker if i == 0 else "") + line, style, BODY_SIZE, BODY_STEP,
-                                 0 if i == 0 else hang))
+                                 off + (0 if i == 0 else hang)))
                 continue
-            for line in wrap(text, style, BODY_SIZE, inner):
+            for line in balance_em(wrap(text, style, BODY_SIZE, inner)):
                 rows.append((line, style, BODY_SIZE, BODY_STEP))
         for line, style, size, *rest in rows:
             if measure(line, style, size) + (rest[1] if len(rest) > 1 else 0) > inner:
@@ -215,16 +260,27 @@ class Chart(object):
                                % (node.get("id"), h, block + 2 * PAD_Y))
         self.rect(x, y, w, h, fill, stroke_override or stroke, stroke_width)
         cy = y + (h - block) / 2 + (TITLE_SIZE if rows[0][1] == "bold" else BODY_SIZE) * 0.8
+        shift = 0
+        if node.get("tube"):   # beside the list lines, from the first to the last
+            first = next(i for i, r in enumerate(rows) if len(r) > 4)
+            ty = cy + sum(r[3] for r in rows[:first]) - BODY_SIZE * 0.8
+            th = sum(r[3] for r in rows[first:]) - BODY_STEP + BODY_SIZE + 2
+            # tube + list as one block, centred in a box wider than it needs
+            used = max(measure(r[0], r[1], r[2]) + r[4] for r in rows if len(r) > 4)
+            shift = max(0, (w - 2 * PAD_X - used) / 2)
+            self.tube(x + PAD_X + shift + 2, ty, th, node["tube"])
+        self._em = node.get("em")
         for line, style, size, step, *indent in rows:
             muted = style == "ital"
             colour = P["muted"] if muted else (tcol if style == "bold" else bcol)
             if indent:   # a bullet line sits on the left edge, not the centre
-                self.text(x + PAD_X + indent[0], cy, line, size, 400, colour, anchor="start",
+                self.text(x + PAD_X + shift + indent[0], cy, line, size, 400, colour, anchor="start",
                           italic=muted)
             else:
                 self.text(x + w / 2, cy, line, size, 700 if style == "bold" else 400, colour,
                           italic=muted)
             cy += step
+        self._em = None
         if "id" in node:
             if node["id"] in self.boxes:
                 self.errors.append("duplicate node id %r" % node["id"])

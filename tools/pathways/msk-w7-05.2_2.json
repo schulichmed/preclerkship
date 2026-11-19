@@ -135,7 +135,7 @@
    "x": 40,
    "y": 288,
    "w": 216,
-   "h": 934,
+   "h": 782,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -143,7 +143,7 @@
    "x": 258,
    "y": 288,
    "w": 216,
-   "h": 934,
+   "h": 304,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
@@ -151,7 +151,7 @@
    "x": 504,
    "y": 288,
    "w": 216,
-   "h": 934,
+   "h": 304,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
@@ -159,7 +159,7 @@
    "x": 722,
    "y": 288,
    "w": 216,
-   "h": 934,
+   "h": 304,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -167,7 +167,7 @@
    "x": 968,
    "y": 288,
    "w": 216,
-   "h": 934,
+   "h": 782,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -175,7 +175,7 @@
    "x": 1186,
    "y": 288,
    "w": 216,
-   "h": 934,
+   "h": 782,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -183,7 +183,7 @@
    "x": 1432,
    "y": 288,
    "w": 216,
-   "h": 934,
+   "h": 782,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   }
@@ -204,7 +204,7 @@
   {
    "x": 23,
    "y": 762,
-   "h": 452,
+   "h": 300,
    "text": "TREATMENT"
   }
  ],
@@ -290,7 +290,7 @@
    "kind": "aco_h",
    "title": "AC osteoarthritis",
    "lines": [
-    "wear and tear"
+    "gradual · no injury"
    ]
   },
   {
@@ -302,7 +302,7 @@
    "kind": "oa_h",
    "title": "Noninflammatory",
    "lines": [
-    "osteoarthritis · post-traumatic"
+    "passive LOST · cuff intact"
    ]
   },
   {
@@ -314,7 +314,7 @@
    "kind": "inf_h",
    "title": "Inflammatory",
    "lines": [
-    "rheumatoid · psoriatic · crystal"
+    "passive kept · cuff WEAK"
    ]
   },
   {
@@ -373,11 +373,9 @@
    "y": 432,
    "w": 206,
    "h": 152,
-   "kind": "aco_t",
-   "title": "Gradual onset",
-   "lines": [
-    "no injury"
-   ]
+   "kind": "aco_w",
+   "title": "→ Osteoarthritis",
+   "lines": []
   },
   {
    "id": "oa_pres_0_0",
@@ -385,11 +383,9 @@
    "y": 432,
    "w": 206,
    "h": 152,
-   "kind": "oa_t",
-   "title": "Active AND passive ↓",
-   "lines": [
-    "rotator cuff strength INTACT"
-   ]
+   "kind": "oa_w",
+   "title": "→ Osteoarthritis",
+   "lines": []
   },
   {
    "id": "inf_pres_0_0",
@@ -397,11 +393,9 @@
    "y": 432,
    "w": 206,
    "h": 152,
-   "kind": "inf_t",
-   "title": "Active ↓, passive often GREATER",
-   "lines": [
-    "rotator cuff strength POOR"
-   ]
+   "kind": "inf_w",
+   "title": "→ Polyarthritis",
+   "lines": []
   },
   {
    "id": "tri_pres_0_0",
@@ -455,46 +449,6 @@
    ]
   },
   {
-   "id": "aco_inv_0_0",
-   "x": 263,
-   "y": 624,
-   "w": 206,
-   "h": 98,
-   "kind": "aco_w",
-   "title": "Onset decides it",
-   "lines": [
-    "acute = instability · gradual = arthritis"
-   ]
-  },
-  {
-   "id": "oa_inv_0_0",
-   "x": 509,
-   "y": 624,
-   "w": 206,
-   "h": 98,
-   "kind": "oa_w",
-   "title": "X-ray",
-   "lines": [
-    "• ASYMMETRIC joint space",
-    "• osteophytes · cysts",
-    "• subchondral sclerosis"
-   ]
-  },
-  {
-   "id": "inf_inv_0_0",
-   "x": 727,
-   "y": 624,
-   "w": 206,
-   "h": 98,
-   "kind": "inf_w",
-   "title": "X-ray",
-   "lines": [
-    "• SYMMETRIC joint space",
-    "• erosions · bone deformity",
-    "• osteopenia"
-   ]
-  },
-  {
    "id": "tri_inv_0_0",
    "x": 973,
    "y": 624,
@@ -536,7 +490,7 @@
    "x": 45,
    "y": 762,
    "w": 206,
-   "h": 224,
+   "h": 148,
    "kind": "ok",
    "title": "Types I–III",
    "lines": [
@@ -546,9 +500,9 @@
   {
    "id": "acs_tx_1_0",
    "x": 45,
-   "y": 1008,
+   "y": 932,
    "w": 206,
-   "h": 206,
+   "h": 130,
    "kind": "bad",
    "title": "Types IV–V",
    "lines": [
@@ -556,108 +510,11 @@
    ]
   },
   {
-   "id": "aco_tx_0_0",
-   "x": 263,
-   "y": 762,
-   "w": 206,
-   "h": 242,
-   "kind": "ok",
-   "title": "1 · Nonoperative",
-   "lines": [
-    "• education · activity modification",
-    "• ice, injections · analgesics"
-   ]
-  },
-  {
-   "id": "aco_tx_1_0",
-   "x": 263,
-   "y": 1026,
-   "w": 206,
-   "h": 188,
-   "kind": "warn",
-   "title": "2 · Surgery",
-   "lines": []
-  },
-  {
-   "id": "oa_tx_0_0",
-   "x": 509,
-   "y": 762,
-   "w": 206,
-   "h": 78,
-   "kind": "ok",
-   "title": "1 · Nonoperative",
-   "lines": [
-    "education · activity modification · medications · physiotherapy"
-   ]
-  },
-  {
-   "id": "oa_tx_1_0",
-   "x": 509,
-   "y": 862,
-   "w": 206,
-   "h": 78,
-   "kind": "warn",
-   "title": "2 · Debridement",
-   "lines": [
-    "young: eases 'catching', NOT curative"
-   ]
-  },
-  {
-   "id": "oa_tx_2_0",
-   "x": 509,
-   "y": 962,
-   "w": 206,
-   "h": 114,
-   "kind": "warn",
-   "title": "3 · Replacement",
-   "lines": [
-    "anatomic (reverse rarely needed) · 85% good or excellent",
-    "90% last 10 years"
-   ]
-  },
-  {
-   "id": "oa_tx_3_0",
-   "x": 509,
-   "y": 1098,
-   "w": 206,
-   "h": 116,
-   "kind": "bad",
-   "title": "Replacement complications",
-   "lines": [
-    "infection · loosening · instability · fracture · progressive cuff disease"
-   ]
-  },
-  {
-   "id": "inf_tx_0_0",
-   "x": 727,
-   "y": 762,
-   "w": 206,
-   "h": 197,
-   "kind": "ok",
-   "title": "1 · Nonoperative",
-   "lines": [
-    "education · activity modification · medications · physiotherapy"
-   ]
-  },
-  {
-   "id": "inf_tx_1_0",
-   "x": 727,
-   "y": 981,
-   "w": 206,
-   "h": 233,
-   "kind": "warn",
-   "title": "2 · Replacement",
-   "lines": [
-    "anatomic or REVERSE (inflammatory, cuff disease) · 85% good or excellent",
-    "90% last 10 years"
-   ]
-  },
-  {
    "id": "tri_tx_0_0",
    "x": 973,
    "y": 762,
    "w": 206,
-   "h": 223,
+   "h": 147,
    "kind": "ok",
    "title": "1 · REDUCE",
    "lines": [
@@ -668,9 +525,9 @@
   {
    "id": "tri_tx_1_0",
    "x": 973,
-   "y": 1007,
+   "y": 931,
    "w": 206,
-   "h": 207,
+   "h": 131,
    "kind": "warn",
    "title": "2 · Young or recurrent dislocator",
    "lines": [
@@ -682,7 +539,7 @@
    "x": 1191,
    "y": 762,
    "w": 206,
-   "h": 206,
+   "h": 130,
    "kind": "ok",
    "title": "1 · REHAB",
    "lines": [
@@ -692,9 +549,9 @@
   {
    "id": "atr_tx_1_0",
    "x": 1191,
-   "y": 990,
+   "y": 914,
    "w": 206,
-   "h": 224,
+   "h": 148,
    "kind": "warn",
    "title": "2 · Surgery uncommon",
    "lines": [
@@ -706,7 +563,7 @@
    "x": 1437,
    "y": 762,
    "w": 206,
-   "h": 149,
+   "h": 98,
    "kind": "ok",
    "title": "1 · Education · pain control",
    "lines": [
@@ -716,9 +573,9 @@
   {
    "id": "adh_tx_1_0",
    "x": 1437,
-   "y": 933,
+   "y": 882,
    "w": 206,
-   "h": 129,
+   "h": 78,
    "kind": "warn",
    "title": "2 · Intra-articular steroid",
    "lines": [
@@ -728,9 +585,9 @@
   {
    "id": "adh_tx_2_0",
    "x": 1437,
-   "y": 1084,
+   "y": 982,
    "w": 206,
-   "h": 131,
+   "h": 80,
    "kind": "warn",
    "title": "3 · Manipulation or capsulectomy",
    "lines": [
@@ -762,26 +619,6 @@
   {
    "from": "acs_tx_0_0",
    "to": "acs_tx_1_0"
-  },
-  {
-   "from": "aco_tx_0_0",
-   "to": "aco_tx_1_0"
-  },
-  {
-   "from": "oa_tx_0_0",
-   "to": "oa_tx_1_0"
-  },
-  {
-   "from": "oa_tx_1_0",
-   "to": "oa_tx_2_0"
-  },
-  {
-   "from": "oa_tx_2_0",
-   "to": "oa_tx_3_0"
-  },
-  {
-   "from": "inf_tx_0_0",
-   "to": "inf_tx_1_0"
   },
   {
    "from": "tri_tx_0_0",
@@ -826,14 +663,6 @@
    "to": "aco_pres_0_0"
   },
   {
-   "from": "aco_pres_0_0",
-   "to": "aco_inv_0_0"
-  },
-  {
-   "from": "aco_inv_0_0",
-   "to": "aco_tx_0_0"
-  },
-  {
    "from": "g_ac",
    "to": "aco_head_0_0",
    "from_dx": 109,
@@ -848,14 +677,6 @@
    "to": "oa_pres_0_0"
   },
   {
-   "from": "oa_pres_0_0",
-   "to": "oa_inv_0_0"
-  },
-  {
-   "from": "oa_inv_0_0",
-   "to": "oa_tx_0_0"
-  },
-  {
    "from": "g_ar",
    "to": "oa_head_0_0",
    "from_dx": -109,
@@ -868,14 +689,6 @@
   {
    "from": "inf_head_0_0",
    "to": "inf_pres_0_0"
-  },
-  {
-   "from": "inf_pres_0_0",
-   "to": "inf_inv_0_0"
-  },
-  {
-   "from": "inf_inv_0_0",
-   "to": "inf_tx_0_0"
   },
   {
    "from": "g_ar",
@@ -952,7 +765,7 @@
  "panels": [
   {
    "x": 45,
-   "y": 1248,
+   "y": 1096,
    "w": 792,
    "title": "Stiff shoulder: causes and stages",
    "items": [
@@ -963,7 +776,7 @@
   },
   {
    "x": 851,
-   "y": 1248,
+   "y": 1096,
    "w": 792,
    "title": "What keeps the head centred",
    "items": [

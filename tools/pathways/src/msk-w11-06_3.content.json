@@ -1,0 +1,49 @@
+{
+ "name": "lupus classification overview",
+ "title": "Lupus classification by the 2019 EULAR/ACR criteria: an ANA of at least 1:80 is required to enter; then score the highest item in each of seven clinical and three immunologic domains, and 10 or more points with at least one clinical item classifies the patient as having SLE",
+ "col_w": 206,
+ "root": {
+  "title": "SLE classification (2019 EULAR/ACR): ANA ≥ 1:80 to ENTER, then ≥ 10 POINTS",
+  "lines": [
+   "count only the HIGHEST item per domain · need ≥ 1 clinical item · classification, not diagnosis",
+   "lecture's case: malar 6 + joints 6 + platelets 4 + anti-Sm 6 + low C3 and C4 4 = 26 → SLE"
+  ]
+ },
+ "groups": [
+  {"id": "g_cl", "cols": [0, 4], "title": "CLINICAL domains: at least ONE needed", "lines": []},
+  {"id": "g_im", "cols": [5, 6], "title": "IMMUNOLOGIC domains", "lines": []}
+ ],
+ "sections": ["head", "pts"],
+ "row_names": {"pts": "POINTS"},
+ "dashed_sections": [],
+ "columns": [
+  {"id": "blood", "colour": "slate",
+   "head": [[["h", "Constitutional + blood", []]]],
+   "pts": [[["w", "Fever · 2", ["over 38.3 °C"]]], [["w", "Leukopenia · 3", ["white cells under 4.0"]]], [["t", "Platelets under 100 · 4", []]], [["t", "Autoimmune hemolysis · 4", ["Coombs positive"]]]]
+  },
+  {"id": "neuro", "colour": "purple",
+   "head": [[["h", "Neuropsychiatric", []]]],
+   "pts": [[["w", "Delirium · 2", []]], [["w", "Psychosis · 3", []]], [["t", "Seizure · 5", ["no drug or metabolic cause"]]]]
+  },
+  {"id": "skin", "colour": "magenta",
+   "head": [[["h", "Mucocutaneous", []]]],
+   "pts": [[["w", "Non-scarring hair loss · 2", []]], [["w", "Oral ulcers · 2", []]], [["w", "Subacute cutaneous or discoid · 4", ["discoid SCARS"]]], [["t", "Acute cutaneous (malar) · 6", ["spares the nasolabial folds"]]]]
+  },
+  {"id": "sero", "colour": "orange",
+   "head": [[["h", "Serosal + joints", []]]],
+   "pts": [[["w", "Pleural or pericardial effusion · 5", []]], [["t", "Acute pericarditis · 6", []]], [["t", "Joints · 6", ["synovitis in 2+ joints, or 2+ tender joints + 30 min of morning stiffness", "~ non-erosive"]]]]
+  },
+  {"id": "renal", "colour": "brown",
+   "head": [[["h", "Renal", []]]],
+   "pts": [[["w", "Proteinuria over 0.5 g/day · 4", []]], [["w", "Biopsy: class II or V nephritis · 8", ["mesangial · membranous"]]], [["t", "Biopsy: class III or IV · 10", ["focal or diffuse proliferative", "ALONE classifies (with ANA)"]]]]
+  },
+  {"id": "apl", "colour": "teal",
+   "head": [[["h", "Antiphospholipid + complement", []]]],
+   "pts": [[["w", "Antiphospholipid antibodies · 2", ["anticardiolipin · anti-β2-glycoprotein I · lupus anticoagulant"]]], [["w", "Low C3 OR low C4 · 3", []]], [["t", "Low C3 AND low C4 · 4", []]]]
+  },
+  {"id": "ab", "colour": "blue",
+   "head": [[["h", "SLE-specific antibodies", []]]],
+   "pts": [[["t", "Anti-dsDNA OR anti-Smith · 6", ["order only if the ANA is positive"]]]]
+  }
+ ]
+}

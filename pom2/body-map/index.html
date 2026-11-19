@@ -200,10 +200,10 @@ const CH = {
   poly: ["msk-w11-02_2", "Approach to Polyarthritis"],
   jia: ["msk-w11-03_2", "Juvenile Idiopathic Arthritis"],
   ctd: ["msk-w11-06_2", "Connective Tissue Disorders"],
-  sero: ["msk-w11-05_2", "Seronegative Arthritides"],
+  lupus: ["msk-w11-06_3", "Lupus Classification"],
   vasc: ["msk-w11-07_2", "Vasculitis"],
   rheumlab: ["msk-w12-01_2", "Rheumatology Investigations"],
-  bodypain: ["msk-w12-03_1", "Body Pain"],
+  bodypain: ["msk-w12-03_2", "Body Pain"],
   peds: ["msk-w10-08_2", "Pediatric Orthopedics"],
   fxrad: ["msk-w10-04_2", "Fracture Radiology"],
   onc: ["msk-w10-11_2", "MSK Oncology"],
@@ -215,11 +215,11 @@ const CH = {
 /* Each region: its own charts first, then the cross-cutting ones, as [chart, column to light, why] */
 const REGIONS = {
   neck: { name: "Neck", first: [["mech", null, "discs, facets, muscle, whiplash"], ["nonmech", "myl", "radiculopathy, cervical myelopathy, red flags"], ["spinerad", null, "C-spine films: fractures, facet dislocation, prevertebral swelling"]],
-    also: [["nerve", "rad", "pain or numbness down the arm: which root?"], ["sero", "as", "inflammatory: morning stiffness, better with movement"], ["fxmgmt", null, "after trauma"]] },
+    also: [["nerve", "rad", "pain or numbness down the arm: which root?"], ["poly", "as", "inflammatory: morning stiffness, better with movement"], ["fxmgmt", null, "after trauma"]] },
   back: { name: "Low back", first: [["mech", null, "discogenic pain, disc herniation, facet, muscle"], ["nonmech", null, "stenosis, cauda equina, inflammatory, fracture, infection or cancer"], ["spinerad", null, "vertebral fracture, spondylolysis, scoliosis, ankylosing spondylitis"]],
-    also: [["nerve", "rad", "pain down the leg: radiculopathy, or foot drop from L5"], ["sero", "as", "young, morning stiffness, night pain, sacroiliac joints"], ["inf", "om", "fever, injection drug use: vertebral osteomyelitis"], ["peds", "sco", "a teenager: scoliosis"]] },
+    also: [["nerve", "rad", "pain down the leg: radiculopathy, or foot drop from L5"], ["poly", "as", "young, morning stiffness, night pain, sacroiliac joints"], ["inf", "om", "fever, injection drug use: vertebral osteomyelitis"], ["peds", "sco", "a teenager: scoliosis"]] },
   shoulder: { name: "Shoulder", first: [["proxue", null, "AC joint, glenohumeral arthritis, instability, frozen shoulder"], ["shoulder", null, "rotator cuff impingement, stages I to III, cuff arthropathy"], ["arm", null, "biceps tendon, SLAP tear, bursitis"]],
-    also: [["mono", "sep", "one hot swollen joint: septic until proven otherwise"], ["poly", null, "both shoulders plus other joints"], ["vasc", "gca", "over 50, stiff shoulders and hips, headache: polymyalgia and giant cell arteritis"], ["bodypain", null, "over 50, both shoulders and hips stiff: polymyalgia rheumatica"], ["fxrad", null, "after a fall"], ["fxmgmt", null, "after a fall"]] },
+    also: [["mono", "sep", "one hot swollen joint: septic until proven otherwise"], ["poly", null, "both shoulders plus other joints"], ["vasc", "gca", "over 50, stiff shoulders and hips, headache: polymyalgia and giant cell arteritis"], ["bodypain", "pmr", "over 50, both shoulders and hips stiff: polymyalgia rheumatica"], ["fxrad", null, "after a fall"], ["fxmgmt", null, "after a fall"]] },
   arm: { name: "Upper arm", first: [["arm", null, "biceps and rotator cuff pain felt in the arm"]],
     also: [["shoulder", null, "rotator cuff pain refers to the lateral arm"], ["nerve", "mono", "wrist drop after a humeral shaft fracture"], ["fxmgmt", null, "fracture"], ["onc", null, "a lump or bone pain that doesn't fit"]] },
   elbow: { name: "Elbow", first: [["elbow", null, "dislocation, nursemaid's, UCL, arthritis, olecranon bursitis"], ["distue", null, "tennis and golfer's elbow, distal biceps"], ["nv", "une", "numb ring and little finger: ulnar nerve at the elbow"]],
@@ -227,17 +227,17 @@ const REGIONS = {
   forearm: { name: "Forearm", first: [["distue", null, "the muscles that start at the epicondyles"], ["nv", "pro", "pronator syndrome: median nerve in the forearm"]],
     also: [["fxmgmt", "cs", "pain out of proportion after a fracture"], ["peds", "frac", "a child: buckle or greenstick fracture"], ["nerve", "mono", "a single nerve"], ["fxrad", null, "reading the film"]] },
   hand: { name: "Wrist and hand", first: [["wh", "dr", "a fall: distal radius or scaphoid fracture"], ["wh", "cts", "a numb hand: carpal tunnel, ulnar nerve at the wrist"]],
-    also: [["poly", null, "many small joints: RA (knuckles) vs OA (DIPs, thumb base)"], ["inf", "deep", "hand infection: cellulitis or closed-space"], ["mono", "cppd", "older person, one hot wrist: pseudogout"], ["sero", "psa", "a sausage finger: dactylitis"], ["ctd", "ssc", "Raynaud's, tight skin"], ["jia", null, "a child with a swollen wrist"], ["peds", "sh", "a child: growth plate injury"]] },
+    also: [["poly", null, "many small joints: RA (knuckles) vs OA (DIPs, thumb base)"], ["inf", "deep", "hand infection: cellulitis or closed-space"], ["mono", "cppd", "older person, one hot wrist: pseudogout"], ["poly", "psa", "a sausage finger: dactylitis"], ["ctd", "ssc", "Raynaud's, tight skin"], ["jia", null, "a child with a swollen wrist"], ["peds", "sh", "a child: growth plate injury"]] },
   hip: { name: "Hip", first: [["hipj", null, "hip fractures in older adults"], ["hippain", null, "osteoarthritis, labral tear, trochanteric bursitis, piriformis"]],
-    also: [["limp", null, "a child: septic hip, transient synovitis, Perthes, SCFE"], ["peds", "ddh", "a baby: developmental dysplasia"], ["oa", "oa", "gradual, worse with use"], ["mono", "sep", "one hot joint"], ["fxmgmt", "avn", "after a femoral neck fracture: avascular necrosis"], ["sero", "as", "buttock pain, morning stiffness: sacroiliitis"], ["bodypain", null, "over 50, both hips and shoulders stiff: polymyalgia rheumatica"]] },
+    also: [["limp", null, "a child: septic hip, transient synovitis, Perthes, SCFE"], ["peds", "ddh", "a baby: developmental dysplasia"], ["oa", "oa", "gradual, worse with use"], ["mono", "sep", "one hot joint"], ["fxmgmt", "avn", "after a femoral neck fracture: avascular necrosis"], ["poly", "as", "buttock pain, morning stiffness: sacroiliitis"], ["bodypain", "pmr", "over 50, both hips and shoulders stiff: polymyalgia rheumatica"]] },
   knee: { name: "Knee", first: [["kneech", "acl", "ACL, PCL, MCL, LCL, meniscus"], ["kneech", "pfps", "patellofemoral pain, bursitis, IT band, Baker's cyst"]],
-    also: [["mono", null, "one hot swollen knee: septic, gout or pseudogout"], ["oa", "oa", "gradual, older, worse with use"], ["jia", "oli", "a child: oligoarticular JIA"], ["limp", null, "a child with knee pain: check the hip"], ["sero", "rea", "after an infection: reactive arthritis"], ["peds", "leg", "bow legs or knock knees"]] },
+    also: [["mono", null, "one hot swollen knee: septic, gout or pseudogout"], ["oa", "oa", "gradual, older, worse with use"], ["jia", "oli", "a child: oligoarticular JIA"], ["limp", null, "a child with knee pain: check the hip"], ["poly", "rea", "after an infection: reactive arthritis"], ["peds", "leg", "bow legs or knock knees"]] },
   leg: { name: "Shin and calf", first: [],
     also: [["fxmgmt", "cs", "pain out of proportion after a tibial fracture: compartment syndrome"], ["fxmgmt", "vte", "a swollen calf after injury: DVT"], ["nerve", "mono", "foot drop: common fibular nerve at the fibular head"], ["inf", "cel", "red, warm skin"], ["peds", "leg", "a child's leg shape"], ["fxrad", null, "reading the film"]] },
   foot: { name: "Ankle and foot", first: [["ankle", null, "sprain, Achilles, plantar fasciitis, tibialis posterior, bunion, Morton's, diabetic foot"]],
-    also: [["mono", "gout", "a hot big toe: gout"], ["inf", "dfi", "a diabetic foot ulcer or infection"], ["sero", "rea", "heel pain with enthesitis"], ["peds", "club", "a newborn: clubfoot"], ["fxrad", null, "after a twist: reading the film"]] },
+    also: [["mono", "gout", "a hot big toe: gout"], ["inf", "dfi", "a diabetic foot ulcer or infection"], ["poly", "rea", "heel pain with enthesitis"], ["peds", "club", "a newborn: clubfoot"], ["fxrad", null, "after a twist: reading the film"]] },
 };
-const WHOLE = [["bodypain", null, "aching everywhere, no swollen joints"], ["poly", null, "many joints"], ["ctd", null, "a woman with several organs involved"], ["vasc", null, ""], ["jia", null, "a child, any joint"], ["rheumlab", null, "ANA, anti-DNA, ENA, complement"], ["onc", null, "a lump anywhere"], ["fxrad", null, ""], ["fxmgmt", null, ""], ["pa", null, "prescribing exercise"]];
+const WHOLE = [["bodypain", "fm", "aching everywhere, no swollen joints"], ["poly", null, "many joints"], ["ctd", null, "a woman with several organs involved"], ["lupus", null, "is it lupus? ANA, then points"], ["vasc", null, ""], ["jia", null, "a child, any joint"], ["rheumlab", null, "ANA, anti-DNA, ENA, complement"], ["onc", null, "a lump anywhere"], ["fxrad", null, ""], ["fxmgmt", null, ""], ["pa", null, "prescribing exercise"]];
 
 /* Each tappable structure: [label, region, chart, column] */
 const ST = {

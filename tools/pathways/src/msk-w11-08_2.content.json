@@ -3,41 +3,35 @@
  "title": "Acute monoarthritis: one hot, red joint for under six weeks is infected until the aspirate says otherwise; the three C's (cell count, culture with Gram stain, crystals) separate septic arthritis from gout (needle-shaped, negatively birefringent urate) and pseudogout (rhomboid, positively birefringent calcium pyrophosphate), each with its own treatment",
  "col_w": 290,
  "root": {
-  "title": "ONE hot, red, swollen joint for under 6 weeks: INFECTION until proven otherwise",
+  "title": "ONE hot, swollen joint: INFECTION until the aspirate says otherwise",
   "lines": [
-   "IF THE JOINT IS RED, ASPIRATE IT → the 3 C's: cell count (hours) · culture + Gram stain (24–48 h) · crystals (hours)",
-   "differential: infection · infection · infection · gout · pseudogout (rarely reactive or psoriatic arthritis)"
+   "ASPIRATE: cell count · crystals · Gram stain + culture",
+   "cell counts overlap (lecture: septic 59, gout 15, pseudogout 18): Gram, culture, crystals decide"
   ]
  },
  "groups": [
-  {"id": "g_inf", "cols": [0, 0], "title": "NO crystals, organisms seen or grown", "lines": ["a MEDICAL EMERGENCY"]},
-  {"id": "g_cry", "cols": [1, 2], "title": "CRYSTALS under polarized light", "lines": ["both can look exactly like an infected joint, fever included"]}
+  {"id": "g0", "cols": [0, 0], "title": "Gram stain or culture **POSITIVE**", "lines": ["• WBC **> 50 000** · PMN > 75%", "• yellow-green · cloudy · viscosity LOW", "• **no** crystals"], "em": "#a3336b"},
+  {"id": "g1", "cols": [1, 1], "title": "**NEEDLES** · NEGATIVELY birefringent", "lines": ["• WBC > 2000 · PMN > 50%", "• Gram, culture **−**", "• uric acid may be **NORMAL**"], "em": "#b5600f"},
+  {"id": "g2", "cols": [2, 2], "title": "**RHOMBOIDS** · POSITIVELY birefringent", "lines": ["• WBC > 2000 · PMN > 50%", "• Gram, culture **−**", "• X-ray: **chondrocalcinosis**", "• screen: ferritin, calcium, TSH"], "em": "#1f6f8b"}
  ],
- "sections": ["head", "clue", "inv", "tx"],
- "row_names": {"clue": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
+ "sections": ["head", "clue", "tx"],
+ "row_names": {"clue": "PRESENTS AS", "tx": "TREATMENT"},
  "dashed_sections": ["clue"],
  "columns": [
-  {"id": "sep", "colour": "magenta", "drop_label": "Gram stain, culture",
-   "head": [[["h", "Septic arthritis", ["Staphylococcus 60%+ · streptococcus 20%", "gram-negatives 15% (immunocompromised, elderly, neonates, intravenous (IV) drug use) · anaerobes", "spread: blood (#1) · direct inoculation · nearby infected bone", "untreated: rapid joint destruction"]]]],
-   "clue": [[["t", "Fever, unwell, can't bear weight", ["red flags: fever · pain · range of motion ↓"]]], [["w", "HIGH risk", ["• prosthetic joint or recent joint surgery", "• immunosuppressed (diabetes, methotrexate, prednisone, biologics)", "• cancer · leflunomide · recent infection", "• IV drugs, alcohol, very young or old", "• damaged joint (arthritis) · penetrating trauma · skin infection"]]]],
-   "inv": [[["t", "1 · Aspirate: cells HIGH", ["• over 50 000 points to infection", "• Gram stain: e.g. Gram-positive cocci in clusters", "case: 62 M, diabetes, knee replacement, recent pedicure · 38.6 °C, red ankle, can't bear weight · cells 59, no crystals, cocci in clusters"]]], [["w", "2 · Bloods", ["• blood cultures", "• blood count, electrolytes, creatinine, C-reactive protein"]]]],
-   "tx": [[["bad", "1 · ADMIT + urgent incision and drainage (I&D)", ["• orthopedic surgery consulted", "• a closed space: drain it, repeat until clean"]]], [["ok", "2 · Empiric IV antibiotics", ["• cefazolin 2 g IV every 8 h", "• methicillin-resistant S. aureus (MRSA) risk: vancomycin + ceftriaxone", "• 4–6 weeks in all", "• analgesia, rest"]]]]
+  {"id": "sep", "colour": "magenta", "drop_label": "fever, can't bear weight",
+   "head": [[["h", "Septic arthritis", ["S. aureus · an EMERGENCY"]]]],
+   "clue": [[["t", "Fever, unwell, can't bear weight", ["• several joints → think endocarditis"]]], [["w", "HIGH risk", ["• prosthetic joint, recent surgery", "• immunosuppressed · diabetes", "• IV drugs · damaged joint · skin infection"]]], [["bad", "CHILD: Kocher criteria", ["• fever > 38.5 °C · can't walk", "• WBC > 12 · ESR > 40", "• NOT transient synovitis until excluded"]]]],
+   "tx": [[["bad", "1 · ADMIT + drain (I&D)", ["• orthopedics · repeat until clean"]]], [["ok", "2 · IV antibiotics", ["• blood cultures first", "• cefazolin · MRSA: vancomycin", "• 4-6 weeks in all"]]]]
   },
-  {"id": "gout", "colour": "orange", "drop_label": "NEEDLES",
-   "head": [[["h", "Gout", ["monosodium urate (uric acid) crystals"]]]],
-   "clue": [[["t", "Peaks in HOURS, exquisitely painful", ["• can't stand the bedsheet touching it", "• big toe (1st metatarsophalangeal joint) in 50% · usually one lower-limb joint", "• untreated: 7-10 days"]]], [["w", "Who and why", ["• men 35–50 · women after menopause", "• UNDER-excretion of uric acid: the commonest cause", "• diuretics (furosemide, hydrochlorothiazide), alcohol, kidney impairment, family history, male", "• 'disease of plenty': obesity, hypertension, diabetes, high lipids", "• SMARTS: surgery, mechanical injury, alcohol, recent illness, travel or dehydration, starting or stopping allopurinol", "case: 48 M brewery worker on hydrochlorothiazide, 2 days after cholecystectomy → red big toe · cells 15"]]]],
-   "inv": [[["t", "1 · NEEDLE-shaped, NEGATIVELY birefringent", ["culture: no growth"]]], [["w", "2 · Uric acid may be NORMAL in an attack", ["• high uric acid alone ≠ gout: don't treat it", "• blood count (white cells, platelets may ↑) · creatinine, fasting glucose, lipids"]]]],
-   "tx": [[["ok", "1 · Settle the attack", ["• steroid injected into the joint", "• indomethacin 50 mg three times daily", "• or colchicine 0.6 mg every 8 h", "• or prednisone 30 mg daily × 2 days, then down 5 mg every 2 days", "• rest, ice, elevate · hydrate"]]], [["warn", "2 · Allopurinol: NEVER during an attack", ["• recurrent attacks hurting life · risky attack drugs · tophi · accepts LIFELONG", "• xanthine oxidase inhibitor: target the LOWER limit of normal uric acid", "• cover with an anti-inflammatory (NSAID) or colchicine"]]]]
+  {"id": "gout", "colour": "orange", "drop_label": "big toe, hours",
+   "head": [[["h", "Gout", ["urate crystals"]]]],
+   "clue": [[["t", "Peaks in HOURS", ["• can't bear the bedsheet", "• big toe in 50%", "• years untreated → TOPHI"]]], [["w", "Who", ["• men 35-50 · women after menopause", "• UNDER-excretion of urate", "• diuretics, alcohol, kidney disease", "• triggers: surgery, illness, dehydration"]]]],
+   "tx": [[["ok", "1 · Settle the attack", ["• steroid into the joint", "• indomethacin, colchicine or prednisone", "• rest, ice, elevate"]]], [["warn", "2 · Allopurinol: NEVER mid-attack", ["• recurrent attacks or tophi · LIFELONG", "• cover with an NSAID or colchicine"]]], [["w", "Prevent", ["• recurs: 60% within a year", "• less meat, seafood, alcohol"]]]]
   },
-  {"id": "cppd", "colour": "teal", "drop_label": "RHOMBOIDS",
-   "head": [[["h", "Pseudogout", ["calcium pyrophosphate (CPP) crystals"]]]],
-   "clue": [[["t", "Less intense, SLOWER to peak, lasts longer", ["days to a few weeks untreated"]]], [["w", "Who", ["• older people, often with osteoarthritis", "• KNEE most common · one lower-limb joint", "case: 78 F, knee OA, after a brisk walk: right knee swollen, warm, flexes < 100° · cells 18"]]]],
-   "inv": [[["t", "1 · RHOMBOID, intracellular, POSITIVELY birefringent", ["culture: no growth"]]], [["w", "2 · Chondrocalcinosis on X-ray", ["CPP in cartilage: an X-ray finding, not the attack"]]]],
-   "tx": [[["ok", "Settle the attack", ["• steroid injected into the joint", "• indomethacin 50 mg three times daily", "• or the prednisone taper"]]], [["w", "Rest, ice, elevation, hydration", ["allopurinol is for gout only"]]]]
+  {"id": "cppd", "colour": "teal", "drop_label": "older, knee",
+   "head": [[["h", "Pseudogout", ["calcium pyrophosphate crystals"]]]],
+   "clue": [[["t", "SLOWER to peak, lasts longer", ["• days to weeks untreated"]]], [["w", "Who", ["• older · often with OA", "• KNEE most common"]]]],
+   "tx": [[["ok", "Settle the attack", ["• steroid into the joint", "• indomethacin or prednisone"]]], [["w", "No allopurinol", ["it is for gout only"]]]]
   }
- ],
- "panels": [
-  {"title": "The cell count does not decide", "items": ["the lecture's cases: septic 59 · gout 15 · pseudogout 18 (× 10⁹ cells/L), all inflammatory", "Gram stain and culture find the infection · crystals split gout from pseudogout"]},
-  {"title": "Gout: after the attack", "items": ["recurrence 60% in 1 year · 80% in 2 · 90% in 5", "less meat and seafood, less alcohol; vegetables and low-fat dairy are good · hydrate", "years of high uric acid → TOPHI in skin, bone: lower it"]}
  ]
 }

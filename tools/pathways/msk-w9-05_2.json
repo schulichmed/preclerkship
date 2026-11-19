@@ -99,7 +99,7 @@
    "x": 40,
    "y": 270,
    "w": 246,
-   "h": 1222,
+   "h": 380,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -107,7 +107,7 @@
    "x": 288,
    "y": 270,
    "w": 246,
-   "h": 1222,
+   "h": 1046,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -115,7 +115,7 @@
    "x": 564,
    "y": 270,
    "w": 246,
-   "h": 1222,
+   "h": 1046,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -123,7 +123,7 @@
    "x": 812,
    "y": 270,
    "w": 246,
-   "h": 1222,
+   "h": 1046,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -131,7 +131,7 @@
    "x": 1088,
    "y": 270,
    "w": 246,
-   "h": 1222,
+   "h": 1046,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   }
@@ -152,13 +152,13 @@
   {
    "x": 23,
    "y": 908,
-   "h": 204,
+   "h": 96,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 1152,
-   "h": 332,
+   "y": 1044,
+   "h": 264,
    "text": "TREATMENT"
   }
  ],
@@ -218,7 +218,7 @@
    "kind": "oa_h",
    "title": "Hip osteoarthritis (OA)",
    "lines": [
-    "primary: idiopathic, elderly · secondary: post-traumatic, younger"
+    "groin, 'C' sign · socks hard"
    ]
   },
   {
@@ -277,13 +277,9 @@
    "y": 452,
    "w": 236,
    "h": 190,
-   "kind": "oa_t",
-   "title": "Groin pain, the 'C' sign",
-   "lines": [
-    "• worse with prolonged activity · night pain",
-    "• morning stiffness < 30 min · stiff after long sitting",
-    "• crepitus, locking · TROUBLE PUTTING SOCKS ON"
-   ]
+   "kind": "oa_w",
+   "title": "→ Osteoarthritis",
+   "lines": []
   },
   {
    "id": "lab_clue_0_0",
@@ -340,19 +336,6 @@
    ]
   },
   {
-   "id": "oa_exam_0_0",
-   "x": 45,
-   "y": 682,
-   "w": 236,
-   "h": 186,
-   "kind": "oa_w",
-   "title": "INTERNAL ROTATION lost first",
-   "lines": [
-    "• FABER, FADIR, Stinchfield",
-    "• antalgic gait · leg length?"
-   ]
-  },
-  {
    "id": "lab_exam_0_0",
    "x": 293,
    "y": 682,
@@ -403,26 +386,11 @@
    ]
   },
   {
-   "id": "oa_inv_0_0",
-   "x": 45,
-   "y": 908,
-   "w": 236,
-   "h": 204,
-   "kind": "oa_t",
-   "title": "A CLINICAL diagnosis",
-   "lines": [
-    "• X-ray confirms it, and changes may not match symptoms",
-    "• NOT MRI (waitlist, adds nothing) · CT: more radiation · ultrasound poor for a deep joint",
-    "case: 65, 2 years of groin pain, asks for an MRI → X-ray",
-    "• CT or MRI not needed (secondary causes, surgical planning)"
-   ]
-  },
-  {
    "id": "lab_inv_0_0",
    "x": 293,
    "y": 908,
    "w": 236,
-   "h": 204,
+   "h": 96,
    "kind": "lab_t",
    "title": "MR ARTHROGRAM",
    "lines": [
@@ -435,7 +403,7 @@
    "x": 569,
    "y": 908,
    "w": 236,
-   "h": 204,
+   "h": 96,
    "kind": "bur_t",
    "title": "A CLINICAL diagnosis",
    "lines": [
@@ -448,7 +416,7 @@
    "x": 817,
    "y": 908,
    "w": 236,
-   "h": 204,
+   "h": 96,
    "kind": "gt_t",
    "title": "X-ray · ?ultrasound · ?MRI",
    "lines": []
@@ -458,7 +426,7 @@
    "x": 1093,
    "y": 908,
    "w": 236,
-   "h": 204,
+   "h": 96,
    "kind": "pir_t",
    "title": "Electromyography (EMG)",
    "lines": [
@@ -466,50 +434,11 @@
    ]
   },
   {
-   "id": "oa_tx_0_0",
-   "x": 45,
-   "y": 1152,
-   "w": 236,
-   "h": 96,
-   "kind": "ok",
-   "title": "1 · Non-drug",
-   "lines": [
-    "• education, exercise, physio",
-    "• weight management, work supports",
-    "• tai chi, a cane"
-   ]
-  },
-  {
-   "id": "oa_tx_1_0",
-   "x": 45,
-   "y": 1270,
-   "w": 236,
-   "h": 132,
-   "kind": "ok",
-   "title": "2 · Drugs + injection",
-   "lines": [
-    "• oral anti-inflammatories (NSAIDs), Tylenol, duloxetine",
-    "• image-guided injection: steroid, hyaluronic acid or platelet-rich plasma"
-   ]
-  },
-  {
-   "id": "oa_tx_2_0",
-   "x": 45,
-   "y": 1424,
-   "w": 236,
-   "h": 60,
-   "kind": "warn",
-   "title": "3 · Hip replacement",
-   "lines": [
-    "hemi, total or resurfacing"
-   ]
-  },
-  {
    "id": "lab_tx_0_0",
    "x": 293,
-   "y": 1152,
+   "y": 1044,
    "w": 236,
-   "h": 155,
+   "h": 121,
    "kind": "ok",
    "title": "1 · The general hip pain approach",
    "lines": []
@@ -517,9 +446,9 @@
   {
    "id": "lab_tx_1_0",
    "x": 293,
-   "y": 1329,
+   "y": 1187,
    "w": 236,
-   "h": 155,
+   "h": 121,
    "kind": "warn",
    "title": "2 · Arthroscopic labral debridement or repair",
    "lines": []
@@ -527,9 +456,9 @@
   {
    "id": "bur_tx_0_0",
    "x": 569,
-   "y": 1152,
+   "y": 1044,
    "w": 236,
-   "h": 163,
+   "h": 129,
    "kind": "ok",
    "title": "1 · Physio",
    "lines": [
@@ -539,9 +468,9 @@
   {
    "id": "bur_tx_1_0",
    "x": 569,
-   "y": 1337,
+   "y": 1195,
    "w": 236,
-   "h": 147,
+   "h": 113,
    "kind": "ok",
    "title": "2 · Rest + ice (PRICE), NSAIDs, steroid injection",
    "lines": []
@@ -549,9 +478,9 @@
   {
    "id": "gt_tx_0_0",
    "x": 817,
-   "y": 1152,
+   "y": 1044,
    "w": 236,
-   "h": 139,
+   "h": 116,
    "kind": "ok",
    "title": "1 · Physio + LOAD MANAGEMENT",
    "lines": [
@@ -562,9 +491,9 @@
   {
    "id": "gt_tx_1_0",
    "x": 817,
-   "y": 1313,
+   "y": 1182,
    "w": 236,
-   "h": 65,
+   "h": 42,
    "kind": "ok",
    "title": "2 · NSAIDs, steroid injection",
    "lines": []
@@ -572,9 +501,9 @@
   {
    "id": "gt_tx_2_0",
    "x": 817,
-   "y": 1400,
+   "y": 1246,
    "w": 236,
-   "h": 85,
+   "h": 62,
    "kind": "warn",
    "title": "3 · Shock-wave, ultrasound (weak evidence) · ?surgery",
    "lines": []
@@ -582,9 +511,9 @@
   {
    "id": "pir_tx_0_0",
    "x": 1093,
-   "y": 1152,
+   "y": 1044,
    "w": 236,
-   "h": 107,
+   "h": 84,
    "kind": "ok",
    "title": "1 · Physio",
    "lines": [
@@ -594,9 +523,9 @@
   {
    "id": "pir_tx_1_0",
    "x": 1093,
-   "y": 1281,
+   "y": 1150,
    "w": 236,
-   "h": 111,
+   "h": 88,
    "kind": "ok",
    "title": "2 · NSAIDs, ultrasound-guided steroid injection",
    "lines": []
@@ -604,9 +533,9 @@
   {
    "id": "pir_tx_2_0",
    "x": 1093,
-   "y": 1414,
+   "y": 1260,
    "w": 236,
-   "h": 71,
+   "h": 48,
    "kind": "warn",
    "title": "3 · ?surgery",
    "lines": []
@@ -627,14 +556,6 @@
    "from": "root",
    "to": "g_post",
    "path": "M687.0 88V113H1211.0V138"
-  },
-  {
-   "from": "oa_tx_0_0",
-   "to": "oa_tx_1_0"
-  },
-  {
-   "from": "oa_tx_1_0",
-   "to": "oa_tx_2_0"
   },
   {
    "from": "lab_tx_0_0",
@@ -663,18 +584,6 @@
   {
    "from": "oa_head_0_0",
    "to": "oa_clue_0_0"
-  },
-  {
-   "from": "oa_clue_0_0",
-   "to": "oa_exam_0_0"
-  },
-  {
-   "from": "oa_exam_0_0",
-   "to": "oa_inv_0_0"
-  },
-  {
-   "from": "oa_inv_0_0",
-   "to": "oa_tx_0_0"
   },
   {
    "from": "g_ant",
@@ -769,7 +678,7 @@
  "panels": [
   {
    "x": 45,
-   "y": 1518,
+   "y": 1342,
    "w": 635,
    "title": "Lateral pain: bursitis / GTPS or hip OA?",
    "items": [
@@ -782,7 +691,7 @@
   },
   {
    "x": 694,
-   "y": 1518,
+   "y": 1342,
    "w": 635,
    "title": "Tests and the rest",
    "items": [
