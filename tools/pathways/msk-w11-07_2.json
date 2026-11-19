@@ -79,33 +79,33 @@
  "bands": [
   {
    "x": 40,
-   "y": 360,
+   "y": 344,
    "w": 260,
-   "h": 1660,
+   "h": 1234,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 330,
-   "y": 360,
+   "y": 344,
    "w": 260,
-   "h": 1660,
+   "h": 1234,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 620,
-   "y": 360,
+   "y": 344,
    "w": 260,
-   "h": 1660,
+   "h": 1234,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 910,
-   "y": 360,
+   "y": 344,
    "w": 260,
-   "h": 1660,
+   "h": 1234,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -113,19 +113,13 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 576,
-   "h": 386,
+   "y": 472,
+   "h": 558,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 1002,
-   "h": 470,
-   "text": "INVESTIGATIONS"
-  },
-  {
-   "x": 23,
-   "y": 1512,
+   "y": 1070,
    "h": 500,
    "text": "TREATMENT"
   }
@@ -137,111 +131,126 @@
    "y": 10,
    "w": 760,
    "kind": "dark",
-   "title": "Suspect PRIMARY vasculitis: chronically unwell + several organs + NO infection or cancer found",
+   "title": "Suspect PRIMARY vasculitis: chronically unwell + several organs + NO infection or cancer",
    "lines": [
-    "when: chronically unwell (fevers, chills, weight loss) · several organ systems · purpura · very sick, multi-organ failure · lung hemorrhage + renal dysfunction",
-    "every patient: head-to-toe history and exam · blood count, creatinine, liver enzymes, sedimentation rate (ESR) and C-reactive protein (CRP), urinalysis · chest X-ray · cancer screening up to date · URGENT rheumatology",
-    "inflammation (non-specific): normocytic anemia (Hb ↓, MCV normal) · reactive thrombocytosis · ESR, CRP ↑ · albumin ↓ (chronic)",
-    "kidneys and lungs can be SILENT: creatinine, blood + protein in urine, chest X-ray · rule out INFECTION before immunosuppressing"
+    "everyone: CBC · creatinine · liver enzymes · ESR, CRP · urinalysis · chest X-ray",
+    "LARGE: giant cell · MEDIUM: PAN, Kawasaki · SMALL: ANCA, cryoglobulin, IgA, cutaneous"
    ]
   },
   {
-   "id": "g_gca",
+   "id": "g0",
    "x": 45,
-   "y": 246,
+   "y": 138,
    "w": 250,
-   "h": 42,
+   "h": 134,
    "kind": "plain",
-   "title": "Over 50 + NEW headache",
-   "lines": []
+   "title": "ESR + CRP **HIGH** · over 50",
+   "lines": [
+    "• both normal → GCA **< 2%**",
+    "• Hb ↓ · platelets ↑",
+    "• ANCA **−**",
+    "• confirm: **temporal artery biopsy**"
+   ],
+   "em": "#b5600f"
   },
   {
-   "id": "g_anca",
+   "id": "g1",
    "x": 335,
-   "y": 246,
+   "y": 138,
    "w": 250,
-   "h": 42,
+   "h": 134,
    "kind": "plain",
-   "title": "Sinus, lung, kidney, nerves",
-   "lines": []
+   "title": "**ANCA +** · c-ANCA (PR3) or p-ANCA (MPO)",
+   "lines": [
+    "• urine: **blood + protein**",
+    "• creatinine ↑",
+    "• false +: endocarditis, cocaine",
+    "• confirm: **biopsy the organ**"
+   ],
+   "em": "#6a4aa8"
   },
   {
-   "id": "g_lcv",
+   "id": "g2",
    "x": 625,
-   "y": 246,
+   "y": 138,
    "w": 250,
-   "h": 42,
+   "h": 134,
    "kind": "plain",
-   "title": "Painful purpura on the legs",
-   "lines": []
+   "title": "Platelets, INR, PTT **NORMAL**",
+   "lines": [
+    "• not a coagulopathy",
+    "• ANCA **−**",
+    "• confirm: **skin punch biopsy**"
+   ],
+   "em": "#1f6f8b"
   },
   {
-   "id": "g_sec",
+   "id": "g3",
    "x": 915,
-   "y": 246,
+   "y": 138,
    "w": 250,
-   "h": 42,
+   "h": 134,
    "kind": "plain",
-   "title": "A cause is found",
-   "lines": []
+   "title": "Cultures or serology **POSITIVE**",
+   "lines": [
+    "• hepatitis B, C · HIV · syphilis",
+    "• cryoglobulins ↑ · C3, C4 ↓",
+    "• SPEP (myeloma)"
+   ],
+   "em": "#46607a"
   },
   {
    "id": "gca_head_0_0",
    "x": 45,
-   "y": 368,
+   "y": 352,
    "w": 250,
-   "h": 168,
+   "h": 80,
    "kind": "gca_h",
    "title": "Giant cell arteritis (GCA)",
    "lines": [
-    "large vessel · the most common vasculitis",
-    "only over 50 (most over 70)",
-    "lifetime risk 1% women, 0.5% men · Northern European"
+    "over 50 · large vessel · the most common"
    ]
   },
   {
    "id": "anca_head_0_0",
    "x": 335,
-   "y": 368,
+   "y": 352,
    "w": 250,
-   "h": 168,
+   "h": 80,
    "kind": "anca_h",
    "title": "ANCA-associated vasculitis",
    "lines": [
-    "anti-neutrophil cytoplasmic antibody · small vessel",
-    "granulomatosis with polyangiitis (GPA)",
-    "microscopic (MPA) · eosinophilic (EGPA)",
-    "rare · FATAL untreated · relapses common"
+    "small vessel · GPA, MPA, EGPA · fatal untreated"
    ]
   },
   {
    "id": "lcv_head_0_0",
    "x": 625,
-   "y": 368,
+   "y": 352,
    "w": 250,
-   "h": 168,
+   "h": 80,
    "kind": "lcv_h",
    "title": "Cutaneous leukocytoclastic vasculitis",
    "lines": [
-    "small vessel · alone or part of another type"
+    "small vessel, skin"
    ]
   },
   {
    "id": "sec_head_0_0",
    "x": 915,
-   "y": 368,
+   "y": 352,
    "w": 250,
-   "h": 168,
+   "h": 80,
    "kind": "sec_h",
    "title": "Secondary vasculitis",
    "lines": [
-    "an identifiable underlying cause"
+    "infection, drugs, cancer, CTD"
    ]
   },
   {
    "id": "gca_pres_0_0",
    "x": 45,
-   "y": 576,
+   "y": 472,
    "w": 250,
    "h": 114,
    "kind": "gca_t",
@@ -256,7 +265,7 @@
   {
    "id": "gca_pres_1_0",
    "x": 45,
-   "y": 712,
+   "y": 608,
    "w": 250,
    "h": 96,
    "kind": "bad",
@@ -270,7 +279,7 @@
   {
    "id": "gca_pres_2_0",
    "x": 45,
-   "y": 830,
+   "y": 726,
    "w": 250,
    "h": 132,
    "kind": "gca_w",
@@ -282,11 +291,25 @@
    ]
   },
   {
+   "id": "gca_pres_3_0",
+   "x": 45,
+   "y": 880,
+   "w": 250,
+   "h": 150,
+   "kind": "gca_w",
+   "title": "Mimics",
+   "lines": [
+    "• sinusitis · dental infection · temporomandibular arthritis",
+    "• cranial neuropathy · intracranial tumour · glaucoma",
+    "• severe hypertension · migraine, cluster · meningitis"
+   ]
+  },
+  {
    "id": "anca_pres_0_0",
    "x": 335,
-   "y": 576,
+   "y": 472,
    "w": 250,
-   "h": 209,
+   "h": 295,
    "kind": "anca_t",
    "title": "Sinonasal · lung · kidney",
    "lines": [
@@ -299,9 +322,9 @@
   {
    "id": "anca_pres_1_0",
    "x": 335,
-   "y": 807,
+   "y": 789,
    "w": 250,
-   "h": 155,
+   "h": 241,
    "kind": "anca_w",
    "title": "Also",
    "lines": [
@@ -312,9 +335,9 @@
   {
    "id": "lcv_pres_0_0",
    "x": 625,
-   "y": 576,
+   "y": 472,
    "w": 250,
-   "h": 200,
+   "h": 286,
    "kind": "lcv_t",
    "title": "Painful NON-blanching purpura",
    "lines": [
@@ -326,9 +349,9 @@
   {
    "id": "lcv_pres_1_0",
    "x": 625,
-   "y": 798,
+   "y": 780,
    "w": 250,
-   "h": 164,
+   "h": 250,
    "kind": "lcv_w",
    "title": "Other cause of purpura?",
    "lines": [
@@ -338,9 +361,9 @@
   {
    "id": "sec_pres_0_0",
    "x": 915,
-   "y": 576,
+   "y": 472,
    "w": 250,
-   "h": 163,
+   "h": 249,
    "kind": "sec_t",
    "title": "Infection (most important)",
    "lines": [
@@ -352,9 +375,9 @@
   {
    "id": "sec_pres_1_0",
    "x": 915,
-   "y": 761,
+   "y": 743,
    "w": 250,
-   "h": 201,
+   "h": 287,
    "kind": "sec_w",
    "title": "Drugs · cancer · connective tissue",
    "lines": [
@@ -365,168 +388,9 @@
    ]
   },
   {
-   "id": "gca_inv_0_0",
-   "x": 45,
-   "y": 1002,
-   "w": 250,
-   "h": 135,
-   "kind": "gca_t",
-   "title": "Exam",
-   "lines": [
-    "• tender temples · rope-like temporal artery",
-    "• optic disc swelling",
-    "• pulselessness, bruits, blood pressure difference"
-   ]
-  },
-  {
-   "id": "gca_inv_1_0",
-   "x": 45,
-   "y": 1159,
-   "w": 250,
-   "h": 117,
-   "kind": "gca_t",
-   "title": "1 · ESR + CRP immediately",
-   "lines": [
-    "both normal → GCA highly unlikely (< 2%)",
-    "case: Hb 99 · ESR 70 · CRP 50 · WBC, platelets normal"
-   ]
-  },
-  {
-   "id": "gca_inv_2_0",
-   "x": 45,
-   "y": 1298,
-   "w": 250,
-   "h": 173,
-   "kind": "gca_w",
-   "title": "2 · Temporal artery biopsy in 1-2 weeks",
-   "lines": [
-    "• transmural inflammation + giant cells: 100% specific",
-    "• negative in 50-70% (skip lesions)",
-    "• or Doppler 'halo sign' (wall edema): specificity > 85%, absent in ~30%, specialty centres only"
-   ]
-  },
-  {
-   "id": "anca_inv_0_0",
-   "x": 335,
-   "y": 1002,
-   "w": 250,
-   "h": 60,
-   "kind": "anca_t",
-   "title": "1 · Rule out infection",
-   "lines": [
-    "cultures, hepatitis, HIV"
-   ]
-  },
-  {
-   "id": "anca_inv_1_0",
-   "x": 335,
-   "y": 1084,
-   "w": 250,
-   "h": 134,
-   "kind": "anca_w",
-   "title": "2 · ANCA ONLY if small vessel suspected",
-   "lines": [
-    "• cytoplasmic (anti-PR3) → GPA",
-    "• perinuclear (anti-MPO) → MPA, EGPA",
-    "• ELISA (PR3, MPO) more specific"
-   ]
-  },
-  {
-   "id": "anca_inv_2_0",
-   "x": 335,
-   "y": 1240,
-   "w": 250,
-   "h": 114,
-   "kind": "bad",
-   "title": "ANCA pitfalls",
-   "lines": [
-    "• false +: endocarditis, cancer, drugs, cocaine",
-    "• negative in 30% GPA, 50-60% MPA/EGPA"
-   ]
-  },
-  {
-   "id": "anca_inv_3_0",
-   "x": 335,
-   "y": 1376,
-   "w": 250,
-   "h": 96,
-   "kind": "anca_w",
-   "title": "3 · Biopsy the involved organ",
-   "lines": [
-    "• first-line in single-organ disease",
-    "• else: orbit, sinus, lung nodule, node, kidney, sural nerve"
-   ]
-  },
-  {
-   "id": "lcv_inv_0_0",
-   "x": 625,
-   "y": 1002,
-   "w": 250,
-   "h": 125,
-   "kind": "lcv_t",
-   "title": "1 · Platelets + clotting times (INR, PTT)",
-   "lines": [
-    "rule out a coagulopathy"
-   ]
-  },
-  {
-   "id": "lcv_inv_1_0",
-   "x": 625,
-   "y": 1149,
-   "w": 250,
-   "h": 159,
-   "kind": "lcv_w",
-   "title": "2 · Skin biopsy",
-   "lines": [
-    "• purpura: punch biopsy in primary care",
-    "• histopathology, immunofluorescence, cultures",
-    "• ulcer: deep excision by a surgeon"
-   ]
-  },
-  {
-   "id": "lcv_inv_2_0",
-   "x": 625,
-   "y": 1330,
-   "w": 250,
-   "h": 143,
-   "kind": "warn",
-   "title": "NOT for non-severe purpura < 4-6 weeks",
-   "lines": [
-    "usually resolves: viral or hypersensitivity"
-   ]
-  },
-  {
-   "id": "sec_inv_0_0",
-   "x": 915,
-   "y": 1002,
-   "w": 250,
-   "h": 251,
-   "kind": "sec_t",
-   "title": "Rule out infection",
-   "lines": [
-    "• white cells · liver enzymes",
-    "• blood, urine, sputum cultures (fungal, acid-fast)",
-    "• hepatitis B + C, HIV, syphilis (VDRL)",
-    "• cryoglobulins ↑, complement ↓ (hepatitis C)"
-   ]
-  },
-  {
-   "id": "sec_inv_1_0",
-   "x": 915,
-   "y": 1275,
-   "w": 250,
-   "h": 197,
-   "kind": "sec_w",
-   "title": "Rule out cancer",
-   "lines": [
-    "• age-appropriate screening",
-    "• serum protein electrophoresis (myeloma)"
-   ]
-  },
-  {
    "id": "gca_tx_0_0",
    "x": 45,
-   "y": 1512,
+   "y": 1070,
    "w": 250,
    "h": 159,
    "kind": "bad",
@@ -538,7 +402,7 @@
   {
    "id": "gca_tx_1_0",
    "x": 45,
-   "y": 1693,
+   "y": 1251,
    "w": 250,
    "h": 141,
    "kind": "bad",
@@ -550,7 +414,7 @@
   {
    "id": "gca_tx_2_0",
    "x": 45,
-   "y": 1856,
+   "y": 1414,
    "w": 250,
    "h": 157,
    "kind": "ok",
@@ -564,7 +428,7 @@
   {
    "id": "anca_tx_0_0",
    "x": 335,
-   "y": 1512,
+   "y": 1070,
    "w": 250,
    "h": 140,
    "kind": "bad",
@@ -574,7 +438,7 @@
   {
    "id": "anca_tx_1_0",
    "x": 335,
-   "y": 1674,
+   "y": 1232,
    "w": 250,
    "h": 176,
    "kind": "warn",
@@ -586,7 +450,7 @@
   {
    "id": "anca_tx_2_0",
    "x": 335,
-   "y": 1872,
+   "y": 1430,
    "w": 250,
    "h": 140,
    "kind": "ok",
@@ -596,7 +460,7 @@
   {
    "id": "lcv_tx_0_0",
    "x": 625,
-   "y": 1512,
+   "y": 1070,
    "w": 250,
    "h": 80,
    "kind": "bad",
@@ -608,7 +472,7 @@
   {
    "id": "lcv_tx_1_0",
    "x": 625,
-   "y": 1614,
+   "y": 1172,
    "w": 250,
    "h": 60,
    "kind": "ok",
@@ -620,7 +484,7 @@
   {
    "id": "lcv_tx_2_0",
    "x": 625,
-   "y": 1696,
+   "y": 1254,
    "w": 250,
    "h": 60,
    "kind": "ok",
@@ -632,7 +496,7 @@
   {
    "id": "lcv_tx_3_0",
    "x": 625,
-   "y": 1778,
+   "y": 1336,
    "w": 250,
    "h": 114,
    "kind": "warn",
@@ -645,7 +509,7 @@
   {
    "id": "lcv_tx_4_0",
    "x": 625,
-   "y": 1914,
+   "y": 1472,
    "w": 250,
    "h": 98,
    "kind": "warn",
@@ -657,7 +521,7 @@
   {
    "id": "sec_tx_0_0",
    "x": 915,
-   "y": 1512,
+   "y": 1070,
    "w": 250,
    "h": 238,
    "kind": "ok",
@@ -669,7 +533,7 @@
   {
    "id": "sec_tx_1_0",
    "x": 915,
-   "y": 1772,
+   "y": 1330,
    "w": 250,
    "h": 240,
    "kind": "bad",
@@ -680,23 +544,23 @@
  "edges": [
   {
    "from": "root",
-   "to": "g_gca",
-   "path": "M605.0 196V221H170.0V246"
+   "to": "g0",
+   "path": "M605.0 88V113H170.0V138"
   },
   {
    "from": "root",
-   "to": "g_anca",
-   "path": "M605.0 196V221H460.0V246"
+   "to": "g1",
+   "path": "M605.0 88V113H460.0V138"
   },
   {
    "from": "root",
-   "to": "g_lcv",
-   "path": "M605.0 196V221H750.0V246"
+   "to": "g2",
+   "path": "M605.0 88V113H750.0V138"
   },
   {
    "from": "root",
-   "to": "g_sec",
-   "path": "M605.0 196V221H1040.0V246"
+   "to": "g3",
+   "path": "M605.0 88V113H1040.0V138"
   },
   {
    "from": "gca_pres_0_0",
@@ -706,6 +570,11 @@
   {
    "from": "gca_pres_1_0",
    "to": "gca_pres_2_0",
+   "dashed": true
+  },
+  {
+   "from": "gca_pres_2_0",
+   "to": "gca_pres_3_0",
    "dashed": true
   },
   {
@@ -722,38 +591,6 @@
    "from": "sec_pres_0_0",
    "to": "sec_pres_1_0",
    "dashed": true
-  },
-  {
-   "from": "gca_inv_0_0",
-   "to": "gca_inv_1_0"
-  },
-  {
-   "from": "gca_inv_1_0",
-   "to": "gca_inv_2_0"
-  },
-  {
-   "from": "anca_inv_0_0",
-   "to": "anca_inv_1_0"
-  },
-  {
-   "from": "anca_inv_1_0",
-   "to": "anca_inv_2_0"
-  },
-  {
-   "from": "anca_inv_2_0",
-   "to": "anca_inv_3_0"
-  },
-  {
-   "from": "lcv_inv_0_0",
-   "to": "lcv_inv_1_0"
-  },
-  {
-   "from": "lcv_inv_1_0",
-   "to": "lcv_inv_2_0"
-  },
-  {
-   "from": "sec_inv_0_0",
-   "to": "sec_inv_1_0"
   },
   {
    "from": "gca_tx_0_0",
@@ -796,17 +633,18 @@
    "to": "gca_pres_0_0"
   },
   {
-   "from": "gca_pres_2_0",
-   "to": "gca_inv_0_0"
-  },
-  {
-   "from": "gca_inv_2_0",
+   "from": "gca_pres_3_0",
    "to": "gca_tx_0_0"
   },
   {
-   "from": "g_gca",
+   "from": "g0",
    "to": "gca_head_0_0",
-   "from_dx": 0
+   "from_dx": 0,
+   "label": "new headache",
+   "label_at": [
+    170.0,
+    312
+   ]
   },
   {
    "from": "anca_head_0_0",
@@ -814,16 +652,17 @@
   },
   {
    "from": "anca_pres_1_0",
-   "to": "anca_inv_0_0"
-  },
-  {
-   "from": "anca_inv_3_0",
    "to": "anca_tx_0_0"
   },
   {
-   "from": "g_anca",
+   "from": "g1",
    "to": "anca_head_0_0",
-   "from_dx": 0
+   "from_dx": 0,
+   "label": "sinus, lung, kidney",
+   "label_at": [
+    460.0,
+    312
+   ]
   },
   {
    "from": "lcv_head_0_0",
@@ -831,16 +670,17 @@
   },
   {
    "from": "lcv_pres_1_0",
-   "to": "lcv_inv_0_0"
-  },
-  {
-   "from": "lcv_inv_2_0",
    "to": "lcv_tx_0_0"
   },
   {
-   "from": "g_lcv",
+   "from": "g2",
    "to": "lcv_head_0_0",
-   "from_dx": 0
+   "from_dx": 0,
+   "label": "purpura on the legs",
+   "label_at": [
+    750.0,
+    312
+   ]
   },
   {
    "from": "sec_head_0_0",
@@ -848,44 +688,18 @@
   },
   {
    "from": "sec_pres_1_0",
-   "to": "sec_inv_0_0"
-  },
-  {
-   "from": "sec_inv_1_0",
    "to": "sec_tx_0_0"
   },
   {
-   "from": "g_sec",
+   "from": "g3",
    "to": "sec_head_0_0",
-   "from_dx": 0
+   "from_dx": 0,
+   "label": "a cause is found",
+   "label_at": [
+    1040.0,
+    312
+   ]
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 2046,
-   "w": 553,
-   "title": "Classify by vessel size",
-   "items": [
-    "large: giant cell, Takayasu",
-    "medium: polyarteritis nodosa, Kawasaki, Behçet's",
-    "small: ANCA trio, cryoglobulinemia, cutaneous leukocytoclastic, Henoch-Schönlein",
-    "children: Kawasaki, Henoch-Schönlein"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 612,
-   "y": 2046,
-   "w": 553,
-   "title": "Giant cell arteritis: differential",
-   "items": [
-    "sinusitis · dental infection · temporomandibular arthritis",
-    "cranial neuropathy · intracranial tumour",
-    "severe hypertension · acute angle-closure glaucoma",
-    "migraine, cluster · meningitis, encephalitis · neck pain"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

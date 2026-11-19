@@ -1,24 +1,60 @@
 {
  "name": "polyarthritis overview",
- "width": 1316,
- "title": "Polyarthritis (four or more joints): decide inflammatory or degenerative and acute or chronic; acute inflammatory polyarthritis is infection, crystals or early autoimmune disease, and chronic polyarthritis is sorted by its joint pattern into rheumatoid arthritis, psoriatic arthritis, axial spondyloarthropathy and osteoarthritis, each with its own extra-articular clues and targeted tests",
+ "width": 1796,
+ "title": "Arthritis sorted by its synovial fluid: non-inflammatory fluid (clear, viscous, under 2000 white cells) is osteoarthritis or trauma; infectious fluid (cloudy, low viscosity, over 75% neutrophils, positive Gram stain and culture) is septic arthritis; inflammatory fluid (cloudy, over 2000 cells, over 50% neutrophils) is then split by crystals (gout, pseudogout), RF and anti-CCP (rheumatoid arthritis), HLA-B27 with negative serology (ankylosing spondylitis, psoriatic and reactive arthritis), or a positive ANA (connective tissue disease)",
  "kinds": {
-  "acu_h": [
-   "#46607a",
-   "#46607a",
+  "oa_h": [
+   "#8a5a2b",
+   "#8a5a2b",
    "#ffffff",
    "#ffffff"
   ],
-  "acu_t": [
-   "#e2e8ee",
-   "#46607a",
-   "#46607a",
+  "oa_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
    "#18212e"
   ],
-  "acu_w": [
+  "oa_w": [
    "#ffffff",
-   "#46607a",
-   "#46607a",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "gout_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "gout_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "gout_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cppd_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cppd_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cppd_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
    "#18212e"
   ],
   "ra_h": [
@@ -39,534 +75,762 @@
    "#1f6f8b",
    "#18212e"
   ],
-  "psa_h": [
-   "#a3336b",
-   "#a3336b",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "psa_t": [
-   "#f8e0ec",
-   "#a3336b",
-   "#a3336b",
-   "#18212e"
-  ],
-  "psa_w": [
-   "#ffffff",
-   "#a3336b",
-   "#a3336b",
-   "#18212e"
-  ],
-  "axs_h": [
+  "as_h": [
    "#6a4aa8",
    "#6a4aa8",
    "#ffffff",
    "#ffffff"
   ],
-  "axs_t": [
+  "as_t": [
    "#ebe4f7",
    "#6a4aa8",
    "#6a4aa8",
    "#18212e"
   ],
-  "axs_w": [
+  "as_w": [
    "#ffffff",
    "#6a4aa8",
    "#6a4aa8",
    "#18212e"
   ],
-  "oa_h": [
-   "#b5600f",
-   "#b5600f",
+  "psa_h": [
+   "#6a4aa8",
+   "#6a4aa8",
    "#ffffff",
    "#ffffff"
   ],
-  "oa_t": [
-   "#fbe8d3",
-   "#b5600f",
-   "#b5600f",
+  "psa_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
    "#18212e"
   ],
-  "oa_w": [
+  "psa_w": [
    "#ffffff",
-   "#b5600f",
-   "#b5600f",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "rea_h": [
+   "#6a4aa8",
+   "#6a4aa8",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "rea_t": [
+   "#ebe4f7",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "rea_w": [
+   "#ffffff",
+   "#6a4aa8",
+   "#6a4aa8",
+   "#18212e"
+  ],
+  "ctd_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ctd_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "ctd_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "sep_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "sep_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "sep_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
    "#18212e"
   ]
  },
  "bands": [
   {
    "x": 40,
-   "y": 378,
-   "w": 246,
-   "h": 1018,
-   "fill": "#f2f5f8",
-   "stroke": "#46607a"
+   "y": 536,
+   "w": 186,
+   "h": 288,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
   },
   {
-   "x": 316,
-   "y": 378,
-   "w": 246,
-   "h": 1018,
+   "x": 256,
+   "y": 536,
+   "w": 186,
+   "h": 288,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 444,
+   "y": 536,
+   "w": 186,
+   "h": 288,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
+  },
+  {
+   "x": 632,
+   "y": 536,
+   "w": 186,
+   "h": 696,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
-   "x": 564,
-   "y": 378,
-   "w": 246,
-   "h": 1018,
-   "fill": "#fcf0f6",
-   "stroke": "#a3336b"
-  },
-  {
-   "x": 812,
-   "y": 378,
-   "w": 246,
-   "h": 1018,
+   "x": 820,
+   "y": 536,
+   "w": 186,
+   "h": 696,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
-   "x": 1060,
-   "y": 378,
-   "w": 246,
-   "h": 1018,
-   "fill": "#fdf4ea",
-   "stroke": "#b5600f"
+   "x": 1008,
+   "y": 536,
+   "w": 186,
+   "h": 696,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1196,
+   "y": 536,
+   "w": 186,
+   "h": 696,
+   "fill": "#f5f1fb",
+   "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1384,
+   "y": 536,
+   "w": 186,
+   "h": 288,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1600,
+   "y": 536,
+   "w": 186,
+   "h": 288,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
   }
  ],
  "row_labels": [
   {
    "x": 23,
-   "y": 504,
-   "h": 304,
+   "y": 664,
+   "h": 152,
    "text": "LOOK FOR"
   },
   {
    "x": 23,
-   "y": 848,
-   "h": 540,
-   "text": "INVESTIGATIONS"
+   "y": 856,
+   "h": 150,
+   "text": "CONFIRM"
+  },
+  {
+   "x": 23,
+   "y": 1046,
+   "h": 178,
+   "text": "TREATMENT"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 293,
+   "x": 533,
    "y": 10,
    "w": 760,
    "kind": "dark",
-   "title": "FOUR or more joints: inflammatory or degenerative, acute or chronic, and in what PATTERN?",
+   "title": "Swollen joints: ASPIRATE · the synovial fluid sorts it",
    "lines": [
-    "inflamed synovium (synovitis) = swelling, warmth, pain, stiffness · redness only with infection or crystals",
-    "every inflammatory arthritis is a CLINICAL diagnosis: history, extra-articular clues, then targeted tests",
-    "mono 1 · oligo 2-3 · POLY 4+ joints · inflammatory: autoimmune, infection, crystals · non-inflammatory: osteoarthritis, trauma, avascular necrosis, Charcot, recurrent hemarthrosis, hemochromatosis",
-    "history: onset + course · pattern (symmetry; small, large, axial) · risk: age, sex, ethnicity, family history, psoriasis, IBD, CKD · triggers: infection, drugs, injury, diet",
-    "look for: synovitis · tenosynovitis · dactylitis · enthesitis · bursitis · deformity (nodes, swan-neck, boutonnière, ulnar deviation)"
+    "normal fluid: clear · transparent · viscosity high · WBC < 200 · PMN < 25%",
+    "then blood tests for what the fluid and history point to: ESR, CRP · RF, anti-CCP · ANA → ENA, dsDNA, C3, C4"
    ]
   },
   {
-   "id": "g_ac",
+   "id": "g_non",
    "x": 45,
-   "y": 228,
-   "w": 236,
-   "h": 78,
+   "y": 138,
+   "w": 176,
+   "h": 188,
    "kind": "plain",
-   "title": "ACUTE: 6 weeks or less",
+   "title": "NON-INFLAMMATORY fluid",
    "lines": [
-    "onset in hours to days"
-   ]
+    "• yellow, **transparent**",
+    "• viscosity **HIGH**",
+    "• WBC **< 2000**",
+    "• PMN **< 25%**",
+    "• **no** crystals",
+    "• Gram **−**, culture **−**",
+    "• ESR, CRP **normal**"
+   ],
+   "tube": {
+    "liquid": "#f2d36b",
+    "opacity": 0.35
+   },
+   "em": "#2f7d5b"
   },
   {
-   "id": "g_ch",
-   "x": 321,
-   "y": 228,
-   "w": 980,
-   "h": 78,
+   "id": "g_inf",
+   "x": 261,
+   "y": 138,
+   "w": 1304,
+   "h": 188,
    "kind": "plain",
-   "title": "CHRONIC: over 6 weeks · the PATTERN decides",
+   "title": "INFLAMMATORY fluid",
    "lines": [
-    "insidious, weeks to months · progressive and additive",
-    "also: connective tissue disease, reactive, palindromic, vasculitis, polyarticular JIA, adult-onset Still's, sarcoidosis, drugs"
-   ]
+    "• yellow, **cloudy**",
+    "• viscosity **moderate**",
+    "• WBC **> 2000**",
+    "• PMN **> 50%**",
+    "• crystals **possible**",
+    "• Gram **−**, culture **−**",
+    "• ESR, CRP **↑**"
+   ],
+   "tube": {
+    "liquid": "#e6b33a",
+    "opacity": 0.8
+   },
+   "em": "#a45a12"
   },
   {
-   "id": "acu_head_0_0",
+   "id": "g_sep",
+   "x": 1605,
+   "y": 138,
+   "w": 176,
+   "h": 188,
+   "kind": "plain",
+   "title": "INFECTIOUS fluid",
+   "lines": [
+    "• **yellow-green**, **cloudy**",
+    "• viscosity **LOW**",
+    "• WBC **> 50 000**",
+    "• PMN **> 75%**",
+    "• **no** crystals",
+    "• Gram **+**, culture **+**",
+    "• ESR, CRP **HIGH**"
+   ],
+   "tube": {
+    "liquid": "#b9b84a",
+    "opacity": 1
+   },
+   "em": "#b3261e"
+  },
+  {
+   "id": "t_cr",
+   "x": 261,
+   "y": 366,
+   "w": 364,
+   "h": 98,
+   "kind": "plain",
+   "title": "**CRYSTALS** under polarized light",
+   "lines": [
+    "RF, anti-CCP −"
+   ],
+   "em": "#b5600f"
+  },
+  {
+   "id": "t_rf",
+   "x": 637,
+   "y": 366,
+   "w": 176,
+   "h": 98,
+   "kind": "plain",
+   "title": "No crystals · **RF + · anti-CCP +**",
+   "lines": [
+    "anti-CCP 95% specific",
+    "ANA may be +"
+   ],
+   "em": "#1f6f8b"
+  },
+  {
+   "id": "t_sn",
+   "x": 825,
+   "y": 366,
+   "w": 552,
+   "h": 98,
+   "kind": "plain",
+   "title": "No crystals · RF −, anti-CCP − · **HLA-B27**",
+   "lines": [
+    "spine · entheses · dactylitis · uveitis"
+   ],
+   "em": "#6a4aa8"
+  },
+  {
+   "id": "t_ctd",
+   "x": 1389,
+   "y": 366,
+   "w": 176,
+   "h": 98,
+   "kind": "plain",
+   "title": "No crystals · **ANA +**",
+   "lines": [
+    "ENA, dsDNA, C3, C4 name it",
+    "CBC: cytopenias"
+   ],
+   "em": "#a3336b"
+  },
+  {
+   "id": "oa_head_0_0",
    "x": 45,
-   "y": 386,
-   "w": 236,
-   "h": 78,
-   "kind": "acu_h",
-   "title": "Acute polyarthritis",
+   "y": 544,
+   "w": 176,
+   "h": 80,
+   "kind": "oa_h",
+   "title": "Osteoarthritis",
    "lines": [
-    "infection · crystals · early autoimmune"
+    "DIP, PIP · Heberden's"
+   ]
+  },
+  {
+   "id": "gout_head_0_0",
+   "x": 261,
+   "y": 544,
+   "w": 176,
+   "h": 80,
+   "kind": "gout_h",
+   "title": "Gout",
+   "lines": [
+    "big toe · peaks in hours"
+   ]
+  },
+  {
+   "id": "cppd_head_0_0",
+   "x": 449,
+   "y": 544,
+   "w": 176,
+   "h": 80,
+   "kind": "cppd_h",
+   "title": "Pseudogout",
+   "lines": [
+    "older · KNEE"
    ]
   },
   {
    "id": "ra_head_0_0",
-   "x": 321,
-   "y": 386,
-   "w": 236,
-   "h": 78,
+   "x": 637,
+   "y": 544,
+   "w": 176,
+   "h": 80,
    "kind": "ra_h",
    "title": "Rheumatoid arthritis",
    "lines": [
-    "also symmetric: lupus, connective tissue disease"
+    "seropositive"
+   ]
+  },
+  {
+   "id": "as_head_0_0",
+   "x": 825,
+   "y": 544,
+   "w": 176,
+   "h": 80,
+   "kind": "as_h",
+   "title": "Ankylosing spondylitis",
+   "lines": [
+    "HLA-B27 in > 90%"
    ]
   },
   {
    "id": "psa_head_0_0",
-   "x": 569,
-   "y": 386,
-   "w": 236,
-   "h": 78,
+   "x": 1013,
+   "y": 544,
+   "w": 176,
+   "h": 80,
    "kind": "psa_h",
    "title": "Psoriatic arthritis",
    "lines": [
-    "also asymmetric: gout, reactive"
+    "RF + in < 10%"
    ]
   },
   {
-   "id": "axs_head_0_0",
-   "x": 817,
-   "y": 386,
-   "w": 236,
-   "h": 78,
-   "kind": "axs_h",
-   "title": "Axial spondyloarthropathy",
+   "id": "rea_head_0_0",
+   "x": 1201,
+   "y": 544,
+   "w": 176,
+   "h": 80,
+   "kind": "rea_h",
+   "title": "Reactive arthritis",
    "lines": [
-    "e.g. ankylosing spondylitis"
+    "young men"
    ]
   },
   {
-   "id": "oa_head_0_0",
-   "x": 1065,
-   "y": 386,
-   "w": 236,
-   "h": 78,
-   "kind": "oa_h",
-   "title": "Osteoarthritis",
+   "id": "ctd_head_0_0",
+   "x": 1389,
+   "y": 544,
+   "w": 176,
+   "h": 80,
+   "kind": "ctd_h",
+   "title": "Connective tissue disease",
    "lines": [
-    "DEGENERATIVE, not inflammatory"
+    "NON-erosive · organs"
    ]
   },
   {
-   "id": "acu_clue_0_0",
-   "x": 45,
-   "y": 504,
-   "w": 236,
-   "h": 186,
-   "kind": "acu_t",
-   "title": "Causes",
+   "id": "sep_head_0_0",
+   "x": 1605,
+   "y": 544,
+   "w": 176,
+   "h": 80,
+   "kind": "sep_h",
+   "title": "Septic arthritis",
    "lines": [
-    "• viral or post-infectious (see the MSK INFECTIONS chart)",
-    "• polyarticular gout · rheumatic fever",
-    "• drug reaction (serum sickness)",
-    "• EARLY rheumatoid, connective tissue disease, vasculitis, seronegative: autoimmune ones turn CHRONIC"
-   ]
-  },
-  {
-   "id": "acu_clue_1_0",
-   "x": 45,
-   "y": 712,
-   "w": 236,
-   "h": 96,
-   "kind": "acu_w",
-   "title": "Course",
-   "lines": [
-    "• episodic: crystals",
-    "• migratory: palindromic, rheumatic fever, early gonococcal"
-   ]
-  },
-  {
-   "id": "ra_clue_0_0",
-   "x": 321,
-   "y": 504,
-   "w": 236,
-   "h": 196,
-   "kind": "ra_t",
-   "title": "Wrists, knuckles, finger joints, ankles, feet",
-   "lines": [
-    "• knuckles (MCPs) + middle finger joints (PIPs)",
-    "• distal finger joints (DIPs) SPARED",
-    "• also shoulders, elbows (MCPs, wrists also in pseudogout)",
-    "• ulnar deviation, knuckle subluxation · swan-neck, boutonnière"
-   ]
-  },
-  {
-   "id": "ra_clue_1_0",
-   "x": 321,
-   "y": 722,
-   "w": 236,
-   "h": 86,
-   "kind": "ra_w",
-   "title": "Extra-articular",
-   "lines": [
-    "• rheumatoid nodules, lung nodules",
-    "• episcleritis"
-   ]
-  },
-  {
-   "id": "psa_clue_0_0",
-   "x": 569,
-   "y": 504,
-   "w": 236,
-   "h": 132,
-   "kind": "psa_t",
-   "title": "DIPs involved · dactylitis",
-   "lines": [
-    "• sausage digit · enthesitis (Achilles)"
-   ]
-  },
-  {
-   "id": "psa_clue_1_0",
-   "x": 569,
-   "y": 658,
-   "w": 236,
-   "h": 150,
-   "kind": "psa_w",
-   "title": "Extra-articular",
-   "lines": [
-    "• skin psoriasis · nail pitting",
-    "• uveitis"
-   ]
-  },
-  {
-   "id": "axs_clue_0_0",
-   "x": 817,
-   "y": 504,
-   "w": 236,
-   "h": 132,
-   "kind": "axs_t",
-   "title": "Spine and sacroiliac joints",
-   "lines": [
-    "+ a few large peripheral joints"
-   ]
-  },
-  {
-   "id": "axs_clue_1_0",
-   "x": 817,
-   "y": 658,
-   "w": 236,
-   "h": 150,
-   "kind": "axs_w",
-   "title": "Ask",
-   "lines": [
-    "psoriasis · inflammatory bowel disease · recent infection"
+    "fever · can't bear weight"
    ]
   },
   {
    "id": "oa_clue_0_0",
-   "x": 1065,
-   "y": 504,
-   "w": 236,
-   "h": 132,
-   "kind": "oa_t",
-   "title": "Weight-bearing joints, spine",
-   "lines": [
-    "• DIPs, PIPs, thumb base, big toe"
-   ]
-  },
-  {
-   "id": "oa_clue_1_0",
-   "x": 1065,
-   "y": 658,
-   "w": 236,
-   "h": 150,
+   "x": 45,
+   "y": 664,
+   "w": 176,
+   "h": 152,
    "kind": "oa_w",
-   "title": "Hands",
-   "lines": [
-    "Heberden's (DIP) and Bouchard's (PIP) nodes"
-   ]
+   "title": "→ Osteoarthritis",
+   "lines": []
   },
   {
-   "id": "acu_inv_0_0",
-   "x": 45,
-   "y": 848,
-   "w": 236,
-   "h": 135,
-   "kind": "bad",
-   "title": "Red, hot joint → ASPIRATE",
-   "lines": [
-    "infection? crystals?",
-    "~gout: needles, negative · pseudogout: rhomboid, positive"
-   ]
+   "id": "gout_clue_0_0",
+   "x": 261,
+   "y": 664,
+   "w": 176,
+   "h": 152,
+   "kind": "gout_w",
+   "title": "→ Acute Monoarthritis",
+   "lines": []
   },
   {
-   "id": "acu_inv_1_0",
-   "x": 45,
-   "y": 1005,
-   "w": 236,
-   "h": 189,
-   "kind": "acu_w",
-   "title": "Viral: serologies",
-   "lines": [
-    "during or weeks after: hepatitis A, B, C · HIV, CMV, EBV · parvovirus · chikungunya · influenza · COVID-19",
-    "self-limited · supportive; anti-inflammatories or a short prednisone course if severe"
-   ]
+   "id": "cppd_clue_0_0",
+   "x": 449,
+   "y": 664,
+   "w": 176,
+   "h": 152,
+   "kind": "cppd_w",
+   "title": "→ Acute Monoarthritis",
+   "lines": []
   },
   {
-   "id": "acu_inv_2_0",
-   "x": 45,
-   "y": 1216,
-   "w": 236,
-   "h": 171,
-   "kind": "acu_w",
-   "title": "Special labs",
-   "lines": [
-    "• gout: uric acid",
-    "• pseudogout: look for hemochromatosis, hyperparathyroidism, hypothyroidism"
-   ]
-  },
-  {
-   "id": "ra_inv_0_0",
-   "x": 321,
-   "y": 848,
-   "w": 236,
-   "h": 332,
+   "id": "ra_clue_0_0",
+   "x": 637,
+   "y": 664,
+   "w": 176,
+   "h": 152,
    "kind": "ra_t",
-   "title": "Rheumatoid factor (RF) + anti-CCP: only if suspected",
+   "title": "SYMMETRIC MCP, PIP, wrist",
    "lines": [
-    "• RF (IgM against IgG Fc): 70-80% of RA, 5-20% of healthy (↑ with age)",
-    "• RF also: Sjögren's, lupus, myositis · hepatitis B, C, TB, syphilis, endocarditis · lung fibrosis, silicosis, sarcoid · lymphoma",
-    "• anti-cyclic citrullinated peptide: 95% specific · present YEARS before arthritis",
-    "• order with true swollen joints + raised markers",
-    "• seropositive = more joints, erosions, extra-articular · NEVER to monitor"
+    "DIPs spared · stiff > 60 min",
+    "nodules · ulnar deviation"
    ]
   },
   {
-   "id": "ra_inv_1_0",
-   "x": 321,
-   "y": 1202,
-   "w": 236,
-   "h": 186,
+   "id": "as_clue_0_0",
+   "x": 825,
+   "y": 664,
+   "w": 176,
+   "h": 152,
+   "kind": "as_t",
+   "title": "Inflammatory BACK pain",
+   "lines": [
+    "• under 40 · stiff > 60 min",
+    "• night pain, BETTER with activity",
+    "• eyes, skin, gut, family history"
+   ]
+  },
+  {
+   "id": "psa_clue_0_0",
+   "x": 1013,
+   "y": 664,
+   "w": 176,
+   "h": 152,
+   "kind": "psa_t",
+   "title": "ASYMMETRIC · DIPs",
+   "lines": [
+    "dactylitis · nail pitting · psoriasis"
+   ]
+  },
+  {
+   "id": "rea_clue_0_0",
+   "x": 1201,
+   "y": 664,
+   "w": 176,
+   "h": 152,
+   "kind": "rea_t",
+   "title": "Gut or GU infection 1-3 wk ago",
+   "lines": [
+    "eyes + urethra + large leg joints"
+   ]
+  },
+  {
+   "id": "ctd_clue_0_0",
+   "x": 1389,
+   "y": 664,
+   "w": 176,
+   "h": 152,
+   "kind": "ctd_w",
+   "title": "→ Connective Tissue",
+   "lines": []
+  },
+  {
+   "id": "sep_clue_0_0",
+   "x": 1605,
+   "y": 664,
+   "w": 176,
+   "h": 152,
+   "kind": "sep_w",
+   "title": "→ Acute Monoarthritis",
+   "lines": []
+  },
+  {
+   "id": "ra_conf_0_0",
+   "x": 637,
+   "y": 856,
+   "w": 176,
+   "h": 150,
    "kind": "ra_w",
    "title": "X-ray",
    "lines": [
-    "erosions, periarticular osteopenia, SYMMETRIC narrowing",
-    "• fusiform soft tissue swelling · periostitis · subluxation",
-    "• erosive: RA, psoriatic, SpA, gout, septic · NOT lupus, Sjögren's",
-    "~ little use early: damage takes years · baseline before treatment"
+    "periarticular osteopenia · erosions",
+    "normal early"
    ]
   },
   {
-   "id": "psa_inv_0_0",
-   "x": 569,
-   "y": 848,
-   "w": 236,
-   "h": 540,
+   "id": "as_conf_0_0",
+   "x": 825,
+   "y": 856,
+   "w": 176,
+   "h": 150,
+   "kind": "as_t",
+   "title": "Sacroiliac X-ray",
+   "lines": [
+    "• erosions, sclerosis (iliac side)",
+    "• spine: bony bridging, fused facets",
+    "• normal → MRI (marrow edema)"
+   ]
+  },
+  {
+   "id": "psa_conf_0_0",
+   "x": 1013,
+   "y": 856,
+   "w": 176,
+   "h": 150,
    "kind": "psa_w",
-   "title": "No specific antibody",
-   "lines": [
-    "clinical diagnosis · X-ray: erosions",
-    "detail: the SERONEGATIVE ARTHRITIDES chart"
-   ]
-  },
-  {
-   "id": "axs_inv_0_0",
-   "x": 817,
-   "y": 848,
-   "w": 236,
-   "h": 540,
-   "kind": "axs_w",
-   "title": "Human leukocyte antigen B27 (HLA-B27)",
-   "lines": [
-    "X-ray: erosions",
-    "detail: the SERONEGATIVE ARTHRITIDES chart"
-   ]
-  },
-  {
-   "id": "oa_inv_0_0",
-   "x": 1065,
-   "y": 848,
-   "w": 236,
-   "h": 540,
-   "kind": "oa_w",
    "title": "X-ray",
    "lines": [
-    "osteophytes, subchondral sclerosis and cysts, ASYMMETRIC narrowing",
-    "erosions only in erosive OA · deviation from extra bone"
+    "DIP erosions + periostitis"
+   ]
+  },
+  {
+   "id": "rea_conf_0_0",
+   "x": 1201,
+   "y": 856,
+   "w": 176,
+   "h": 150,
+   "kind": "rea_w",
+   "title": "Clinical",
+   "lines": [
+    "joint culture STERILE: not an infected joint"
+   ]
+  },
+  {
+   "id": "ra_tx_0_0",
+   "x": 637,
+   "y": 1046,
+   "w": 176,
+   "h": 178,
+   "kind": "ok",
+   "title": "Methotrexate early",
+   "lines": [
+    "bridge with prednisone"
+   ]
+  },
+  {
+   "id": "as_tx_0_0",
+   "x": 825,
+   "y": 1046,
+   "w": 176,
+   "h": 78,
+   "kind": "ok",
+   "title": "Physio + NSAIDs",
+   "lines": [
+    "→ TNF or IL-17 · DMARDs fail in the spine"
+   ]
+  },
+  {
+   "id": "as_tx_1_0",
+   "x": 825,
+   "y": 1146,
+   "w": 176,
+   "h": 78,
+   "kind": "bad",
+   "title": "Rigid spine",
+   "lines": [
+    "fractures with minor trauma"
+   ]
+  },
+  {
+   "id": "psa_tx_0_0",
+   "x": 1013,
+   "y": 1046,
+   "w": 176,
+   "h": 178,
+   "kind": "ok",
+   "title": "Methotrexate → TNF",
+   "lines": [
+    "AVOID hydroxychloroquine"
+   ]
+  },
+  {
+   "id": "rea_tx_0_0",
+   "x": 1201,
+   "y": 1046,
+   "w": 176,
+   "h": 178,
+   "kind": "ok",
+   "title": "Treat symptoms",
+   "lines": [
+    "chronic in 15-30%"
    ]
   }
  ],
  "edges": [
   {
    "from": "root",
-   "to": "g_ac",
-   "path": "M673.0 178V203H163.0V228"
+   "to": "g_non",
+   "path": "M913.0 88V113H133.0V138"
   },
   {
    "from": "root",
-   "to": "g_ch",
-   "path": "M673.0 178V203H811.0V228"
+   "to": "g_inf",
+   "path": "M913.0 88V113H913.0V138"
   },
   {
-   "from": "acu_clue_0_0",
-   "to": "acu_clue_1_0",
-   "dashed": true
+   "from": "root",
+   "to": "g_sep",
+   "path": "M913.0 88V113H1693.0V138"
   },
   {
-   "from": "ra_clue_0_0",
-   "to": "ra_clue_1_0",
-   "dashed": true
+   "from": "g_inf",
+   "to": "t_cr",
+   "from_dx": -470
   },
   {
-   "from": "psa_clue_0_0",
-   "to": "psa_clue_1_0",
-   "dashed": true
+   "from": "g_inf",
+   "to": "t_rf",
+   "from_dx": -188
   },
   {
-   "from": "axs_clue_0_0",
-   "to": "axs_clue_1_0",
-   "dashed": true
+   "from": "g_inf",
+   "to": "t_sn",
+   "from_dx": 188
   },
   {
-   "from": "oa_clue_0_0",
-   "to": "oa_clue_1_0",
-   "dashed": true
+   "from": "g_inf",
+   "to": "t_ctd",
+   "from_dx": 564
   },
   {
-   "from": "acu_inv_0_0",
-   "to": "acu_inv_1_0"
+   "from": "as_tx_0_0",
+   "to": "as_tx_1_0"
   },
   {
-   "from": "acu_inv_1_0",
-   "to": "acu_inv_2_0"
+   "from": "oa_head_0_0",
+   "to": "oa_clue_0_0"
   },
   {
-   "from": "ra_inv_0_0",
-   "to": "ra_inv_1_0"
-  },
-  {
-   "from": "acu_head_0_0",
-   "to": "acu_clue_0_0"
-  },
-  {
-   "from": "acu_clue_1_0",
-   "to": "acu_inv_0_0"
-  },
-  {
-   "from": "g_ac",
-   "to": "acu_head_0_0",
+   "from": "g_non",
+   "to": "oa_head_0_0",
    "from_dx": 0
+  },
+  {
+   "from": "gout_head_0_0",
+   "to": "gout_clue_0_0"
+  },
+  {
+   "from": "t_cr",
+   "to": "gout_head_0_0",
+   "from_dx": -94,
+   "label": "NEEDLES",
+   "label_at": [
+    349.0,
+    504
+   ]
+  },
+  {
+   "from": "cppd_head_0_0",
+   "to": "cppd_clue_0_0"
+  },
+  {
+   "from": "t_cr",
+   "to": "cppd_head_0_0",
+   "from_dx": 94,
+   "label": "RHOMBOIDS",
+   "label_at": [
+    537.0,
+    504
+   ]
   },
   {
    "from": "ra_head_0_0",
    "to": "ra_clue_0_0"
   },
   {
-   "from": "ra_clue_1_0",
-   "to": "ra_inv_0_0"
+   "from": "ra_clue_0_0",
+   "to": "ra_conf_0_0"
   },
   {
-   "from": "g_ch",
+   "from": "ra_conf_0_0",
+   "to": "ra_tx_0_0"
+  },
+  {
+   "from": "t_rf",
    "to": "ra_head_0_0",
-   "from_dx": -372,
-   "label": "symmetric, small + large",
+   "from_dx": 0
+  },
+  {
+   "from": "as_head_0_0",
+   "to": "as_clue_0_0"
+  },
+  {
+   "from": "as_clue_0_0",
+   "to": "as_conf_0_0"
+  },
+  {
+   "from": "as_conf_0_0",
+   "to": "as_tx_0_0"
+  },
+  {
+   "from": "t_sn",
+   "to": "as_head_0_0",
+   "from_dx": -188,
+   "label": "back pain",
    "label_at": [
-    439.0,
-    346
+    913.0,
+    504
    ]
   },
   {
@@ -574,97 +838,63 @@
    "to": "psa_clue_0_0"
   },
   {
-   "from": "psa_clue_1_0",
-   "to": "psa_inv_0_0"
+   "from": "psa_clue_0_0",
+   "to": "psa_conf_0_0"
   },
   {
-   "from": "g_ch",
+   "from": "psa_conf_0_0",
+   "to": "psa_tx_0_0"
+  },
+  {
+   "from": "t_sn",
    "to": "psa_head_0_0",
-   "from_dx": -124,
-   "label": "asymmetric, small + large",
+   "from_dx": 0,
+   "label": "psoriasis",
    "label_at": [
-    687.0,
-    346
+    1101.0,
+    504
    ]
   },
   {
-   "from": "axs_head_0_0",
-   "to": "axs_clue_0_0"
+   "from": "rea_head_0_0",
+   "to": "rea_clue_0_0"
   },
   {
-   "from": "axs_clue_1_0",
-   "to": "axs_inv_0_0"
+   "from": "rea_clue_0_0",
+   "to": "rea_conf_0_0"
   },
   {
-   "from": "g_ch",
-   "to": "axs_head_0_0",
-   "from_dx": 124,
-   "label": "axial + large",
+   "from": "rea_conf_0_0",
+   "to": "rea_tx_0_0"
+  },
+  {
+   "from": "t_sn",
+   "to": "rea_head_0_0",
+   "from_dx": 188,
+   "label": "recent infection",
    "label_at": [
-    935.0,
-    346
+    1289.0,
+    504
    ]
   },
   {
-   "from": "oa_head_0_0",
-   "to": "oa_clue_0_0"
+   "from": "ctd_head_0_0",
+   "to": "ctd_clue_0_0"
   },
   {
-   "from": "oa_clue_1_0",
-   "to": "oa_inv_0_0"
+   "from": "t_ctd",
+   "to": "ctd_head_0_0",
+   "from_dx": 0
   },
   {
-   "from": "g_ch",
-   "to": "oa_head_0_0",
-   "from_dx": 372,
-   "label": "symmetric, weight-bearing",
-   "label_at": [
-    1183.0,
-    346
-   ]
+   "from": "sep_head_0_0",
+   "to": "sep_clue_0_0"
+  },
+  {
+   "from": "g_sep",
+   "to": "sep_head_0_0",
+   "from_dx": 0
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1422,
-   "w": 409,
-   "title": "Tests",
-   "items": [
-    "everyone: blood count (anemia of chronic disease, platelets ↑, autoimmune cytopenias) · creatinine (glomerulonephritis, vasculitis, drug clearance) · liver enzymes (drug clearance, autoimmune hepatitis) · CRP (ESR not routine)",
-    "ANA: up to 30% of healthy people · positive does NOT rule in, NEGATIVE rules out connective tissue disease · don't order ANA and RF reflexively",
-    "ENA: dsDNA, Sm → lupus · Ro, La → Sjögren's · centromere, Scl-70, RNA pol III → scleroderma · Jo-1 → myositis · RNP → mixed · histone → drug-induced lupus",
-    "lupus flare: anti-dsDNA ↑, C3, C4 ↓ (seroconcordant)"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 468,
-   "y": 1422,
-   "w": 409,
-   "title": "Management (briefly)",
-   "items": [
-    "acetaminophen, NSAIDs · steroids: prednisone, IM methylprednisolone, joint injection",
-    "DMARDs: conventional (methotrexate) · targeted synthetic (tofacitinib) · biologic (adalimumab)",
-    "gout: colchicine, NSAIDs, steroids, allopurinol, febuxostat · pseudogout: colchicine, NSAIDs, steroids",
-    "gentle physio, strengthening · warm or cool compresses · rest"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 892,
-   "y": 1422,
-   "w": 409,
-   "title": "Extra-articular clues for the rest",
-   "items": [
-    "reactive arthritis: CONJUNCTIVITIS + URETHRITIS + arthritis (can't see, can't pee, can't climb a tree) · vesicopustular skin lesions",
-    "gout: TOPHI · podagra · olecranon bursitis",
-    "lupus: MALAR RASH · discoid lupus · oral ulcers · subacute lupus rash",
-    "dermatomyositis: heliotrope · GOTTRON'S sign and papules · shawl, V and holster signs · mechanic's hands",
-    "scleroderma: SCLERODACTYLY · Raynaud's · calcinosis · nail-fold capillary changes",
-    "organs: uveitis, scleritis, sicca · mouth ulcers · interstitial lung disease, effusions · pericarditis · glomerulonephritis · hemolysis, low platelets, lymphopenia · erythema nodosum, livedo"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

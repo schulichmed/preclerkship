@@ -1,6 +1,6 @@
 {
  "name": "connective tissue disease overview",
- "width": 1372,
+ "width": 1400,
  "title": "Connective tissue diseases: the signature feature sorts lupus and antiphospholipid syndrome, Sjogren's syndrome, inflammatory myositis and systemic sclerosis; each column gives presentation, the antibodies and tests in order, and treatment, with Raynaud's and lupus care below",
  "kinds": {
   "sle_h": [
@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 288,
+   "y": 362,
    "w": 246,
-   "h": 1558,
+   "h": 1190,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
-   "x": 288,
-   "y": 288,
+   "x": 316,
+   "y": 362,
    "w": 246,
-   "h": 1558,
+   "h": 1190,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
-   "x": 564,
-   "y": 288,
+   "x": 592,
+   "y": 362,
    "w": 246,
-   "h": 1558,
+   "h": 1190,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
-   "x": 840,
-   "y": 288,
+   "x": 868,
+   "y": 362,
    "w": 246,
-   "h": 1558,
+   "h": 1190,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
-   "x": 1116,
-   "y": 288,
+   "x": 1144,
+   "y": 362,
    "w": 246,
-   "h": 1558,
+   "h": 1190,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   }
@@ -139,163 +139,189 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 542,
-   "h": 396,
+   "y": 490,
+   "h": 414,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 978,
-   "h": 360,
-   "text": "INVESTIGATIONS"
-  },
-  {
-   "x": 23,
-   "y": 1378,
-   "h": 460,
+   "y": 944,
+   "h": 600,
    "text": "TREAT · WATCH"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 321,
+   "x": 335,
    "y": 10,
    "w": 760,
    "kind": "dark",
-   "title": "Woman, several organs, often Raynaud's: which connective tissue disease?",
+   "title": "Several organs, often Raynaud's: ANA first, then the antibody names it",
    "lines": [
-    "all more common in women · most are antinuclear antibody (ANA) positive",
-    "ANA negative → lupus highly unlikely · ANA positive alone proves nothing (the commonest cause: NO cause)",
-    "connective tissue (cells in a collagen, elastin matrix) is in every organ · also mixed connective tissue disease",
-    "any of them: interstitial lung disease, Raynaud's, positive ANA (not specific)"
+    "ANA NEGATIVE → CTD unlikely · POSITIVE alone proves nothing (up to 30% of healthy people)",
+    "everyone: CBC · ESR, CRP · creatinine · urinalysis"
    ]
   },
   {
-   "id": "g_sle",
+   "id": "g0",
    "x": 45,
-   "y": 174,
-   "w": 484,
-   "h": 42,
+   "y": 138,
+   "w": 236,
+   "h": 152,
    "kind": "plain",
-   "title": "Rash in the sun, mouth ulcers, organs, or CLOTS",
-   "lines": []
+   "title": "ANA + · **anti-dsDNA** or **anti-Sm**",
+   "lines": [
+    "• C3, C4 **↓** in a flare",
+    "• WBC, platelets **↓**",
+    "• hemolysis",
+    "• ESR **↑** · CRP often **normal**",
+    "• urine: **blood + protein**"
+   ],
+   "em": "#6a4aa8"
   },
   {
-   "id": "g_ss",
-   "x": 569,
-   "y": 174,
+   "id": "g1",
+   "x": 321,
+   "y": 138,
    "w": 236,
-   "h": 42,
+   "h": 152,
    "kind": "plain",
-   "title": "Dry eyes + dry mouth",
-   "lines": []
+   "title": "**Anticardiolipin · lupus anticoagulant**",
+   "lines": [
+    "• **PERSISTENT** on repeat",
+    "• platelets **↓**",
+    "• PTT **falsely ↑**",
+    "• **false-positive** VDRL"
+   ],
+   "em": "#46607a"
   },
   {
-   "id": "g_my",
-   "x": 845,
-   "y": 174,
+   "id": "g2",
+   "x": 597,
+   "y": 138,
    "w": 236,
-   "h": 42,
+   "h": 152,
    "kind": "plain",
-   "title": "Proximal muscle weakness",
-   "lines": []
+   "title": "ANA + · **anti-Ro, anti-La**",
+   "lines": [
+    "• RF **+** in 90%",
+    "• ESR **VERY high** (IgG ↑)",
+    "• anemia · WBC **↓**"
+   ],
+   "em": "#1f6f8b"
   },
   {
-   "id": "g_ssc",
-   "x": 1121,
-   "y": 174,
+   "id": "g3",
+   "x": 873,
+   "y": 138,
    "w": 236,
-   "h": 42,
+   "h": 152,
    "kind": "plain",
-   "title": "Tight skin + Raynaud's",
-   "lines": []
+   "title": "**CK HIGH** · **anti-Jo-1**",
+   "lines": [
+    "• ANA + in 80%",
+    "• ESR ↑ in half",
+    "• rule out **statins, steroids**",
+    "• and **thyroid, K, phosphate**"
+   ],
+   "em": "#b5600f"
+  },
+  {
+   "id": "g4",
+   "x": 1149,
+   "y": 138,
+   "w": 236,
+   "h": 152,
+   "kind": "plain",
+   "title": "ANA + (nucleolar) · **centromere** or **Scl-70**",
+   "lines": [
+    "• anticentromere → **LIMITED**",
+    "• Scl-70 → **diffuse**, lung fibrosis",
+    "• RNA pol III → **renal crisis**"
+   ],
+   "em": "#1f5f9e"
   },
   {
    "id": "sle_head_0_0",
    "x": 45,
-   "y": 296,
+   "y": 370,
    "w": 236,
-   "h": 206,
+   "h": 80,
    "kind": "sle_h",
    "title": "Systemic lupus erythematosus (SLE)",
    "lines": [
-    "1 in 1000 · women 9:1 · young",
-    "genes (HLA-DR2, DR3, complement) + smoking, infection, UV, silica, hormones, drugs",
-    "more cell death + SLOW clearance of nuclear debris → autoantibodies",
-    "drug-induced: milder · joints, skin, serositis"
+    "1 in 1000 · women 9:1 · young"
    ]
   },
   {
    "id": "aps_head_0_0",
-   "x": 293,
-   "y": 296,
+   "x": 321,
+   "y": 370,
    "w": 236,
-   "h": 206,
+   "h": 80,
    "kind": "aps_h",
    "title": "Antiphospholipid syndrome (APS)",
    "lines": [
-    "half with SLE · in 10-20% of SLE",
-    "primary (no other disease) or secondary"
+    "half with SLE · or primary"
    ]
   },
   {
    "id": "sjo_head_0_0",
-   "x": 569,
-   "y": 296,
+   "x": 597,
+   "y": 370,
    "w": 236,
-   "h": 206,
+   "h": 80,
    "kind": "sjo_h",
    "title": "Sjögren's syndrome",
    "lines": [
-    "2 in 10,000 · lymphocytes in exocrine glands"
+    "lymphocytes in exocrine glands"
    ]
   },
   {
    "id": "myo_head_0_0",
-   "x": 845,
-   "y": 296,
+   "x": 873,
+   "y": 370,
    "w": 236,
-   "h": 206,
+   "h": 80,
    "kind": "myo_h",
    "title": "Inflammatory myositis",
    "lines": [
-    "1 in 100,000 · shoulders, hips, neck",
-    "case: can't get out of bed, new Raynaud's, knuckle rash, CK ↑"
+    "proximal weakness, usually PAINLESS"
    ]
   },
   {
    "id": "ssc_head_0_0",
-   "x": 1121,
-   "y": 296,
+   "x": 1149,
+   "y": 370,
    "w": 236,
-   "h": 206,
+   "h": 80,
    "kind": "ssc_h",
    "title": "Systemic sclerosis (scleroderma)",
    "lines": [
-    "1 in 10,000 · highest mortality"
+    "highest mortality"
    ]
   },
   {
    "id": "sle_pres_0_0",
    "x": 45,
-   "y": 542,
+   "y": 490,
    "w": 236,
-   "h": 242,
+   "h": 260,
    "kind": "sle_t",
-   "title": "Classify: ≥ 4 of 11, over 6 weeks",
+   "title": "Rash in the sun, ulcers, organs",
    "lines": [
-    "• malar rash (spares the nasolabial folds), discoid, photosensitive",
+    "• malar rash (spares the nasolabial folds), discoid (SCARS), photosensitive",
     "• mouth or nose ulcers · non-erosive arthritis",
-    "~ Raynaud's, hair loss common but NOT criteria",
+    "~ Raynaud's, hair loss common",
     "• malar vs rosacea: rosacea does NOT spare the folds",
-    "• subacute cutaneous lupus: trunk, arms, face spared · anti-Ro"
+    "• classify: ANA ≥ 1:80, then ≥ 10 points (see the LUPUS CLASSIFICATION chart)"
    ]
   },
   {
    "id": "sle_pres_1_0",
    "x": 45,
-   "y": 806,
+   "y": 772,
    "w": 236,
    "h": 132,
    "kind": "sle_w",
@@ -308,10 +334,10 @@
   },
   {
    "id": "aps_pres_0_0",
-   "x": 293,
-   "y": 542,
+   "x": 321,
+   "y": 490,
    "w": 236,
-   "h": 396,
+   "h": 414,
    "kind": "aps_t",
    "title": "RECURRENT clots or pregnancy loss",
    "lines": [
@@ -322,10 +348,10 @@
   },
   {
    "id": "sjo_pres_0_0",
-   "x": 569,
-   "y": 542,
+   "x": 597,
+   "y": 490,
    "w": 236,
-   "h": 196,
+   "h": 205,
    "kind": "sjo_t",
    "title": "Dry eyes + dry mouth (sicca)",
    "lines": [
@@ -336,10 +362,10 @@
   },
   {
    "id": "sjo_pres_1_0",
-   "x": 569,
-   "y": 760,
+   "x": 597,
+   "y": 717,
    "w": 236,
-   "h": 178,
+   "h": 187,
    "kind": "sjo_w",
    "title": "Beyond the glands",
    "lines": [
@@ -349,10 +375,10 @@
   },
   {
    "id": "myo_pres_0_0",
-   "x": 845,
-   "y": 542,
+   "x": 873,
+   "y": 490,
    "w": 236,
-   "h": 241,
+   "h": 250,
    "kind": "myo_t",
    "title": "Dermatomyositis",
    "lines": [
@@ -364,10 +390,10 @@
   },
   {
    "id": "myo_pres_1_0",
-   "x": 845,
-   "y": 805,
+   "x": 873,
+   "y": 762,
    "w": 236,
-   "h": 133,
+   "h": 142,
    "kind": "myo_w",
    "title": "Polymyositis",
    "lines": [
@@ -376,10 +402,10 @@
   },
   {
    "id": "ssc_pres_0_0",
-   "x": 1121,
-   "y": 542,
+   "x": 1149,
+   "y": 490,
    "w": 236,
-   "h": 197,
+   "h": 206,
    "kind": "ssc_t",
    "title": "Fibrosis + vessels + autoimmunity",
    "lines": [
@@ -390,10 +416,10 @@
   },
   {
    "id": "ssc_pres_1_0",
-   "x": 1121,
-   "y": 761,
+   "x": 1149,
+   "y": 718,
    "w": 236,
-   "h": 177,
+   "h": 186,
    "kind": "ssc_w",
    "title": "Limited or diffuse",
    "lines": [
@@ -402,109 +428,11 @@
    ]
   },
   {
-   "id": "sle_inv_0_0",
-   "x": 45,
-   "y": 978,
-   "w": 236,
-   "h": 124,
-   "kind": "sle_t",
-   "title": "1 · ANA: positive in > 95%",
-   "lines": [
-    "+ blood count, ESR, creatinine, urinalysis · ± ENA"
-   ]
-  },
-  {
-   "id": "sle_inv_1_0",
-   "x": 45,
-   "y": 1124,
-   "w": 236,
-   "h": 214,
-   "kind": "sle_w",
-   "title": "2 · ONLY if ANA + → anti-DNA",
-   "lines": [
-    "• anti-Smith (extractable antigens)",
-    "• complement C3, C4 (CH50) low",
-    "case: 22 F, malar rash, sun rash, Raynaud's, hair loss, stiff hands · WBC 2.8, Hb 111, platelets 43 · ANA 1/320 speckled, anti-Sm +, anti-DNA −, C3, C4 low"
-   ]
-  },
-  {
-   "id": "aps_inv_0_0",
-   "x": 293,
-   "y": 978,
-   "w": 236,
-   "h": 360,
-   "kind": "aps_t",
-   "title": "Antibodies, PERSISTENT",
-   "lines": [
-    "• anticardiolipin",
-    "• lupus anticoagulant (clotting time falsely ↑)",
-    "• false-positive syphilis test (VDRL) · Russell viper venom time"
-   ]
-  },
-  {
-   "id": "sjo_inv_0_0",
-   "x": 569,
-   "y": 978,
-   "w": 236,
-   "h": 360,
-   "kind": "sjo_t",
-   "title": "ANA 80-90% · rheumatoid factor 90%",
-   "lines": [
-    "• anti-Ro, anti-La",
-    "• ESR very high: polyclonal immunoglobulins ↑",
-    "• anemia of chronic disease, white cells ↓"
-   ]
-  },
-  {
-   "id": "myo_inv_0_0",
-   "x": 845,
-   "y": 978,
-   "w": 236,
-   "h": 150,
-   "kind": "myo_t",
-   "title": "1 · Rule out mimics FIRST",
-   "lines": [
-    "• drugs: statins, steroids, colchicine, hydroxychloroquine, cyclosporine",
-    "• alcohol · thyroid, parathyroid, adrenal · K ↑↓, phosphate ↓, magnesium ↓",
-    "• sarcoid · infection · cancer"
-   ]
-  },
-  {
-   "id": "myo_inv_1_0",
-   "x": 845,
-   "y": 1150,
-   "w": 236,
-   "h": 188,
-   "kind": "myo_w",
-   "title": "2 · Creatine kinase ↑ · ANA 80%",
-   "lines": [
-    "ESR ↑ in half",
-    "anti-Jo-1 (very specific) → lung disease, bad prognosis",
-    "antisynthetase: myositis, arthralgia, Raynaud's, mechanic's hands, lung disease",
-    "PM/Scl → scleroderma overlap"
-   ]
-  },
-  {
-   "id": "ssc_inv_0_0",
-   "x": 1121,
-   "y": 978,
-   "w": 236,
-   "h": 360,
-   "kind": "ssc_t",
-   "title": "ANA > 95%",
-   "lines": [
-    "• Scl-70 → lung fibrosis",
-    "• RNA polymerase → renal crisis",
-    "• limited: pulmonary hypertension late, older",
-    "15% rule: lung disease, pulmonary hypertension, arthritis, Sjögren's, myositis, current digital ulcer, renal crisis (diffuse)"
-   ]
-  },
-  {
    "id": "sle_tx_0_0",
    "x": 45,
-   "y": 1378,
+   "y": 944,
    "w": 236,
-   "h": 115,
+   "h": 98,
    "kind": "ok",
    "title": "Hydroxychloroquine for EVERY patient",
    "lines": [
@@ -514,9 +442,23 @@
   {
    "id": "sle_tx_1_0",
    "x": 45,
-   "y": 1515,
+   "y": 1064,
    "w": 236,
-   "h": 113,
+   "h": 168,
+   "kind": "sle_w",
+   "title": "Every patient",
+   "lines": [
+    "• sun avoidance, SPF 30 · education, rest, physio, OT",
+    "• cardiovascular risk (50× events): smoking, blood pressure, lipids, diabetes",
+    "~ die of cardiovascular events, infection, SLE, drug harm"
+   ]
+  },
+  {
+   "id": "sle_tx_2_0",
+   "x": 45,
+   "y": 1254,
+   "w": 236,
+   "h": 96,
    "kind": "ok",
    "title": "Minor organ (skin, joints)",
    "lines": [
@@ -525,11 +467,11 @@
    ]
   },
   {
-   "id": "sle_tx_2_0",
+   "id": "sle_tx_3_0",
    "x": 45,
-   "y": 1650,
+   "y": 1372,
    "w": 236,
-   "h": 189,
+   "h": 172,
    "kind": "bad",
    "title": "Major organ → high-dose steroid + immune suppressant",
    "lines": [
@@ -539,10 +481,10 @@
   },
   {
    "id": "aps_tx_0_0",
-   "x": 293,
-   "y": 1378,
+   "x": 321,
+   "y": 944,
    "w": 236,
-   "h": 93,
+   "h": 128,
    "kind": "ok",
    "title": "Antibody, no event",
    "lines": [
@@ -551,30 +493,30 @@
   },
   {
    "id": "aps_tx_1_0",
-   "x": 293,
-   "y": 1493,
+   "x": 321,
+   "y": 1094,
    "w": 236,
-   "h": 95,
+   "h": 130,
    "kind": "ok",
    "title": "Thrombosis → long-term warfarin",
    "lines": []
   },
   {
    "id": "aps_tx_2_0",
-   "x": 293,
-   "y": 1610,
+   "x": 321,
+   "y": 1246,
    "w": 236,
-   "h": 75,
+   "h": 110,
    "kind": "ok",
    "title": "Fetal loss → ASA + heparin",
    "lines": []
   },
   {
    "id": "aps_tx_3_0",
-   "x": 293,
-   "y": 1707,
+   "x": 321,
+   "y": 1378,
    "w": 236,
-   "h": 131,
+   "h": 166,
    "kind": "bad",
    "title": "Catastrophic → IV heparin + IV steroids",
    "lines": [
@@ -583,10 +525,10 @@
   },
   {
    "id": "sjo_tx_0_0",
-   "x": 569,
-   "y": 1378,
+   "x": 597,
+   "y": 944,
    "w": 236,
-   "h": 460,
+   "h": 600,
    "kind": "bad",
    "title": "Watch: B-cell lymphoma (MALT)",
    "lines": [
@@ -595,10 +537,10 @@
   },
   {
    "id": "myo_tx_0_0",
-   "x": 845,
-   "y": 1378,
+   "x": 873,
+   "y": 944,
    "w": 236,
-   "h": 201,
+   "h": 271,
    "kind": "ok",
    "title": "High-dose steroids",
    "lines": [
@@ -608,10 +550,10 @@
   },
   {
    "id": "myo_tx_1_0",
-   "x": 845,
-   "y": 1601,
+   "x": 873,
+   "y": 1237,
    "w": 236,
-   "h": 237,
+   "h": 307,
    "kind": "bad",
    "title": "Danger",
    "lines": [
@@ -622,10 +564,10 @@
   },
   {
    "id": "ssc_tx_0_0",
-   "x": 1121,
-   "y": 1378,
+   "x": 1149,
+   "y": 944,
    "w": 236,
-   "h": 132,
+   "h": 179,
    "kind": "ok",
    "title": "Raynaud's",
    "lines": [
@@ -636,10 +578,10 @@
   },
   {
    "id": "ssc_tx_1_0",
-   "x": 1121,
-   "y": 1532,
+   "x": 1149,
+   "y": 1145,
    "w": 236,
-   "h": 134,
+   "h": 181,
    "kind": "bad",
    "title": "Renal crisis: blood pressure ↑, hemolysis, kidneys fail",
    "lines": [
@@ -649,10 +591,10 @@
   },
   {
    "id": "ssc_tx_2_0",
-   "x": 1121,
-   "y": 1688,
+   "x": 1149,
+   "y": 1348,
    "w": 236,
-   "h": 150,
+   "h": 197,
    "kind": "ok",
    "title": "Treat the organ involved",
    "lines": [
@@ -665,23 +607,28 @@
  "edges": [
   {
    "from": "root",
-   "to": "g_sle",
-   "path": "M701.0 124V149H287.0V174"
+   "to": "g0",
+   "path": "M715.0 88V113H163.0V138"
   },
   {
    "from": "root",
-   "to": "g_ss",
-   "path": "M701.0 124V149H687.0V174"
+   "to": "g1",
+   "path": "M715.0 88V113H439.0V138"
   },
   {
    "from": "root",
-   "to": "g_my",
-   "path": "M701.0 124V149H963.0V174"
+   "to": "g2",
+   "path": "M715.0 88V113H715.0V138"
   },
   {
    "from": "root",
-   "to": "g_ssc",
-   "path": "M701.0 124V149H1239.0V174"
+   "to": "g3",
+   "path": "M715.0 88V113H991.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g4",
+   "path": "M715.0 88V113H1267.0V138"
   },
   {
    "from": "sle_pres_0_0",
@@ -704,20 +651,16 @@
    "dashed": true
   },
   {
-   "from": "sle_inv_0_0",
-   "to": "sle_inv_1_0"
-  },
-  {
-   "from": "myo_inv_0_0",
-   "to": "myo_inv_1_0"
-  },
-  {
    "from": "sle_tx_0_0",
    "to": "sle_tx_1_0"
   },
   {
    "from": "sle_tx_1_0",
    "to": "sle_tx_2_0"
+  },
+  {
+   "from": "sle_tx_2_0",
+   "to": "sle_tx_3_0"
   },
   {
    "from": "aps_tx_0_0",
@@ -749,16 +692,17 @@
   },
   {
    "from": "sle_pres_1_0",
-   "to": "sle_inv_0_0"
-  },
-  {
-   "from": "sle_inv_1_0",
    "to": "sle_tx_0_0"
   },
   {
-   "from": "g_sle",
+   "from": "g0",
    "to": "sle_head_0_0",
-   "from_dx": -124
+   "from_dx": 0,
+   "label": "rash, ulcers, organs",
+   "label_at": [
+    163.0,
+    330
+   ]
   },
   {
    "from": "aps_head_0_0",
@@ -766,16 +710,17 @@
   },
   {
    "from": "aps_pres_0_0",
-   "to": "aps_inv_0_0"
-  },
-  {
-   "from": "aps_inv_0_0",
    "to": "aps_tx_0_0"
   },
   {
-   "from": "g_sle",
+   "from": "g1",
    "to": "aps_head_0_0",
-   "from_dx": 124
+   "from_dx": 0,
+   "label": "clots, pregnancy loss",
+   "label_at": [
+    439.0,
+    330
+   ]
   },
   {
    "from": "sjo_head_0_0",
@@ -783,16 +728,17 @@
   },
   {
    "from": "sjo_pres_1_0",
-   "to": "sjo_inv_0_0"
-  },
-  {
-   "from": "sjo_inv_0_0",
    "to": "sjo_tx_0_0"
   },
   {
-   "from": "g_ss",
+   "from": "g2",
    "to": "sjo_head_0_0",
-   "from_dx": 0
+   "from_dx": 0,
+   "label": "dry eyes + mouth",
+   "label_at": [
+    715.0,
+    330
+   ]
   },
   {
    "from": "myo_head_0_0",
@@ -800,16 +746,17 @@
   },
   {
    "from": "myo_pres_1_0",
-   "to": "myo_inv_0_0"
-  },
-  {
-   "from": "myo_inv_1_0",
    "to": "myo_tx_0_0"
   },
   {
-   "from": "g_my",
+   "from": "g3",
    "to": "myo_head_0_0",
-   "from_dx": 0
+   "from_dx": 0,
+   "label": "proximal weakness",
+   "label_at": [
+    991.0,
+    330
+   ]
   },
   {
    "from": "ssc_head_0_0",
@@ -817,55 +764,18 @@
   },
   {
    "from": "ssc_pres_1_0",
-   "to": "ssc_inv_0_0"
-  },
-  {
-   "from": "ssc_inv_0_0",
    "to": "ssc_tx_0_0"
   },
   {
-   "from": "g_ssc",
+   "from": "g4",
    "to": "ssc_head_0_0",
-   "from_dx": 0
+   "from_dx": 0,
+   "label": "tight skin + Raynaud's",
+   "label_at": [
+    1267.0,
+    330
+   ]
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1872,
-   "w": 428,
-   "title": "Raynaud's: primary or secondary?",
-   "items": [
-    "white, then red or blue, reversible · 3% of everyone · 25-98% of CTD, > 95% of scleroderma",
-    "primary: no disease, often no drug needed · secondary: SLE, scleroderma, RA, Sjögren's, myositis",
-    "Raynaud's + dilated nailfold capillaries + anticentromere → ⅓ get scleroderma in 5 years"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 487,
-   "y": 1872,
-   "w": 428,
-   "title": "Every lupus patient",
-   "items": [
-    "education, rest · sun avoidance, SPF 30 · physio, OT",
-    "cardiovascular risk (50× events): smoking, blood pressure, lipids, diabetes · clotting risk",
-    "die of cardiovascular events, infection, SLE, drug complications"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 929,
-   "y": 1872,
-   "w": 428,
-   "title": "Lupus classification (ACR 1982: ≥ 4 of 11)",
-   "items": [
-    "skin: malar · discoid (scaly, plugged, SCARS) · photosensitive · mouth or nose ulcers (witnessed)",
-    "arthritis (non-erosive) · serositis · kidney (glomerulonephritis, nephrotic) · seizure or psychosis (no drug, metabolic cause)",
-    "blood: hemolytic anemia (Coombs +) · WBC < 4.0 or lymphocytes < 1.5 twice · platelets < 100 · ANA · anti-DNA, anti-Sm or antiphospholipid",
-    "2019 EULAR/ACR: ANA ≥ 1/80 to enter, then ≥ 10 points"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

@@ -81,7 +81,7 @@
    "x": 40,
    "y": 252,
    "w": 246,
-   "h": 1032,
+   "h": 548,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -175,7 +175,7 @@
    "kind": "sep_h",
    "title": "Septic hip or osteomyelitis",
    "lines": [
-    "the one not to miss"
+    "fever · can't walk · Kocher"
    ]
   },
   {
@@ -222,13 +222,10 @@
    "y": 414,
    "w": 236,
    "h": 378,
-   "kind": "sep_t",
-   "title": "Kocher criteria",
+   "kind": "sep_w",
+   "title": "→ Acute Monoarthritis",
    "lines": [
-    "• temperature > 38.5 °C",
-    "• white count > 12 × 10⁹/L · ESR > 40 mm/h",
-    "• cannot walk on it",
-    "~ C-reactive protein added later"
+    "osteomyelitis: MSK Infections"
    ]
   },
   {
@@ -315,18 +312,6 @@
    ]
   },
   {
-   "id": "sep_inv_0_0",
-   "x": 45,
-   "y": 832,
-   "w": 236,
-   "h": 132,
-   "kind": "sep_w",
-   "title": "URGENT workup",
-   "lines": [
-    "see the MSK INFECTIONS chart"
-   ]
-  },
-  {
    "id": "ts_inv_0_0",
    "x": 321,
    "y": 832,
@@ -363,18 +348,6 @@
     "• earliest: WIDE, irregular physis",
     "• Klein's line along the neck MISSES the head (Trethowan sign)",
     "• 'melting ice cream cone' · MRI if unclear"
-   ]
-  },
-  {
-   "id": "sep_tx_0_0",
-   "x": 45,
-   "y": 1004,
-   "w": 236,
-   "h": 272,
-   "kind": "bad",
-   "title": "Never call it transient synovitis",
-   "lines": [
-    "until infection is excluded"
    ]
   },
   {
@@ -480,14 +453,6 @@
   {
    "from": "sep_head_0_0",
    "to": "sep_pres_0_0"
-  },
-  {
-   "from": "sep_pres_0_0",
-   "to": "sep_inv_0_0"
-  },
-  {
-   "from": "sep_inv_0_0",
-   "to": "sep_tx_0_0"
   },
   {
    "from": "g_sep",

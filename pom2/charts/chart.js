@@ -27,18 +27,34 @@ S.columns.forEach(function (c) { var g = groupOf(c.i); parent["c:" + c.id] = c.d
 function chain(k) { var out = [k]; while (parent[k]) { k = parent[k]; out.push(k); } return out; }
 
 function el(tag, cls, txt) { var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+function rich(e, txt) {  // **x** = x bold, in the node's --em colour
+  if (txt.indexOf("**") < 0) { e.textContent = txt; return e; }
+  txt.split("**").forEach(function (s, i) { if (s) e.appendChild(i % 2 ? el("b", "em", s) : document.createTextNode(s)); });
+  return e;
+}
 function lines(host, ls) {
   var ul = null;
   (ls || []).forEach(function (l) {
     var muted = l.charAt(0) === "~"; if (muted) l = l.slice(1);
     if (l.indexOf("• ") === 0) {
       if (!ul) { ul = el("ul"); host.appendChild(ul); }
-      ul.appendChild(el("li", muted ? "mut" : null, l.slice(2)));
-    } else { ul = null; host.appendChild(el("p", muted ? "mut" : null, l)); }
+      ul.appendChild(rich(el("li", muted ? "mut" : null), l.slice(2)));
+    } else { ul = null; host.appendChild(rich(el("p", muted ? "mut" : null), l)); }
   });
 }
+function tube(t) {  // a tube of synovial fluid held in front of print: opacity = how cloudy
+  var ns = "http://www.w3.org/2000/svg", s = document.createElementNS(ns, "svg");
+  s.setAttribute("viewBox", "0 0 24 100"); s.setAttribute("class", "tube"); s.setAttribute("aria-hidden", "true");
+  s.innerHTML = [30, 46, 62, 78].map(function (y) { return '<line x1="0" y1="' + y + '" x2="24" y2="' + y + '" stroke="currentColor" stroke-width="2"/>'; }).join("") +
+    '<path d="M3 18V91a9 9 0 0 0 18 0V18Z" fill="' + t.liquid + '" fill-opacity="' + (t.opacity == null ? 0.5 : t.opacity) + '"/>' +
+    '<path d="M3 2V91a9 9 0 0 0 18 0V2" fill="none" stroke="#7d8796" stroke-width="2"/><line x1="0.5" y1="2" x2="23.5" y2="2" stroke="#7d8796" stroke-width="3" stroke-linecap="round"/>';
+  return s;
+}
 function cell(b, c) {
-  var d = el("div", "cell " + b[0]); d.style.setProperty("--c", COL[c.colour]);
+  /* a pointer column ("home": the chart that holds this condition in full): its arrow box opens it */
+  var home = c.home && b[1].charAt(0) === "→";
+  var d = el(home ? "a" : "div", "cell " + b[0] + (home ? " homelink" : "")); d.style.setProperty("--c", COL[c.colour]);
+  if (home) d.href = "../" + c.home.chart + "/" + (c.home.col ? "#col=" + c.home.col : "");
   d.appendChild(el("div", "ct", b[1])); lines(d, b[2]); return d;
 }
 function stages(host, c, row, dashed) {
@@ -53,8 +69,13 @@ function head(c) {
   return d;
 }
 function node(o, cls) {
-  var d = el("div", "node " + (cls || "")); d.appendChild(el("div", "nt", o.title));
-  var ls = o.lines || []; if (ls.length) { var w = el("div", "nl"); lines(w, ls); d.appendChild(w); }
+  var d = el("div", "node " + (cls || "")); d.appendChild(rich(el("div", "nt"), o.title));
+  if (o.em) d.style.setProperty("--em", o.em);
+  var ls = o.lines || []; if (ls.length) {
+    var w = el("div", "nl"); lines(w, ls);
+    if (o.tube) { var f = el("div", "withtube"); f.appendChild(tube(o.tube)); f.appendChild(w); w = f; }
+    d.appendChild(w);
+  }
   return d;
 }
 function span(cols) { return (cols[0] + 1) + " / " + (cols[1] + 2); }

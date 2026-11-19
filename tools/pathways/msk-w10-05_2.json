@@ -201,7 +201,7 @@
    "x": 1464,
    "y": 272,
    "w": 226,
-   "h": 1264,
+   "h": 510,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
@@ -360,7 +360,7 @@
    "kind": "pta_h",
    "title": "Post-traumatic arthritis",
    "lines": [
-    "arthritis after a peri-articular fracture"
+    "after a joint fracture · ANKLE"
    ]
   },
   {
@@ -476,11 +476,9 @@
    "y": 416,
    "w": 216,
    "h": 358,
-   "kind": "pta_t",
-   "title": "Pain, worse weight-bearing",
-   "lines": [
-    "• less range of motion"
-   ]
+   "kind": "pta_w",
+   "title": "→ Osteoarthritis",
+   "lines": []
   },
   {
    "id": "ho_pres_0_0",
@@ -582,20 +580,6 @@
    "title": "Bone cell death",
    "lines": [
     "lack of blood supply after the fracture"
-   ]
-  },
-  {
-   "id": "pta_inv_0_0",
-   "x": 1469,
-   "y": 814,
-   "w": 216,
-   "h": 152,
-   "kind": "pta_w",
-   "title": "Where",
-   "lines": [
-    "• ANKLE: over 50% of ankle fractures",
-    "• the most common cause of ankle arthritis",
-    "• uncommon at hip, knee"
    ]
   },
   {
@@ -765,18 +749,6 @@
    "lines": []
   },
   {
-   "id": "pta_tx_0_0",
-   "x": 1469,
-   "y": 1006,
-   "w": 216,
-   "h": 522,
-   "kind": "ok",
-   "title": "As for osteoarthritis",
-   "lines": [
-    "pain control · physiotherapy · surgery last"
-   ]
-  },
-  {
    "id": "ho_tx_0_0",
    "x": 1697,
    "y": 1006,
@@ -942,14 +914,6 @@
   {
    "from": "pta_head_0_0",
    "to": "pta_pres_0_0"
-  },
-  {
-   "from": "pta_pres_0_0",
-   "to": "pta_inv_0_0"
-  },
-  {
-   "from": "pta_inv_0_0",
-   "to": "pta_tx_0_0"
   },
   {
    "from": "g_comp",

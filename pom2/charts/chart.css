@@ -112,6 +112,11 @@ button{font-family:inherit}
 .exit b{display:block}
 .node .nl ul{margin:2px 0 0;padding-left:15px}
 .node .nl p{margin:1px 0}
+.node b.em{font-weight:700;color:var(--em,inherit)}
+a.cell.homelink{display:block;text-decoration:none;color:inherit;cursor:pointer}
+a.cell.homelink:hover,a.cell.homelink:focus-visible{outline:2px solid var(--c);outline-offset:1px}
+.node .withtube{display:flex;gap:8px;align-items:stretch;justify-content:center;text-align:left}
+.node .withtube .tube{flex:none;width:16px;height:auto;align-self:stretch;color:var(--ink,#18212e);margin-top:4px}
 .node.pres{background:var(--tint)}
 .grid>.gap{height:22px}
 .col>.sp{height:10px;flex:none}

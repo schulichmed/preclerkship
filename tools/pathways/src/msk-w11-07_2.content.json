@@ -3,77 +3,41 @@
  "title": "Vasculitis: suspect it in a chronically unwell patient with several organs involved and no infection or cancer; a new headache over 50 points to giant cell arteritis, sinus, lung, kidney and nerve disease to ANCA-associated vasculitis, purpura on the legs to cutaneous leukocytoclastic vasculitis, and an identifiable cause to secondary vasculitis; each column gives presentation, numbered investigations and treatment in order",
  "col_w": 250,
  "root": {
-  "title": "Suspect PRIMARY vasculitis: chronically unwell + several organs + NO infection or cancer found",
+  "title": "Suspect PRIMARY vasculitis: chronically unwell + several organs + NO infection or cancer",
   "lines": [
-   "when: chronically unwell (fevers, chills, weight loss) · several organ systems · purpura · very sick, multi-organ failure · lung hemorrhage + renal dysfunction",
-   "every patient: head-to-toe history and exam · blood count, creatinine, liver enzymes, sedimentation rate (ESR) and C-reactive protein (CRP), urinalysis · chest X-ray · cancer screening up to date · URGENT rheumatology",
-   "inflammation (non-specific): normocytic anemia (Hb ↓, MCV normal) · reactive thrombocytosis · ESR, CRP ↑ · albumin ↓ (chronic)",
-   "kidneys and lungs can be SILENT: creatinine, blood + protein in urine, chest X-ray · rule out INFECTION before immunosuppressing"
+   "everyone: CBC · creatinine · liver enzymes · ESR, CRP · urinalysis · chest X-ray",
+   "LARGE: giant cell · MEDIUM: PAN, Kawasaki · SMALL: ANCA, cryoglobulin, IgA, cutaneous"
   ]
  },
  "groups": [
-  {"id": "g_gca", "cols": [0, 0], "title": "Over 50 + NEW headache", "lines": []},
-  {"id": "g_anca", "cols": [1, 1], "title": "Sinus, lung, kidney, nerves", "lines": []},
-  {"id": "g_lcv", "cols": [2, 2], "title": "Painful purpura on the legs", "lines": []},
-  {"id": "g_sec", "cols": [3, 3], "title": "A cause is found", "lines": []}
+  {"id": "g0", "cols": [0, 0], "title": "ESR + CRP **HIGH** · over 50", "lines": ["• both normal → GCA **< 2%**", "• Hb ↓ · platelets ↑", "• ANCA **−**", "• confirm: **temporal artery biopsy**"], "em": "#b5600f"},
+  {"id": "g1", "cols": [1, 1], "title": "**ANCA +** · c-ANCA (PR3) or p-ANCA (MPO)", "lines": ["• urine: **blood + protein**", "• creatinine ↑", "• false +: endocarditis, cocaine", "• confirm: **biopsy the organ**"], "em": "#6a4aa8"},
+  {"id": "g2", "cols": [2, 2], "title": "Platelets, INR, PTT **NORMAL**", "lines": ["• not a coagulopathy", "• ANCA **−**", "• confirm: **skin punch biopsy**"], "em": "#1f6f8b"},
+  {"id": "g3", "cols": [3, 3], "title": "Cultures or serology **POSITIVE**", "lines": ["• hepatitis B, C · HIV · syphilis", "• cryoglobulins ↑ · C3, C4 ↓", "• SPEP (myeloma)"], "em": "#46607a"}
  ],
- "sections": ["head", "pres", "inv", "tx"],
- "row_names": {"pres": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
+ "sections": ["head", "pres", "tx"],
+ "row_names": {"pres": "PRESENTS AS", "tx": "TREATMENT"},
  "dashed_sections": ["pres"],
  "columns": [
-  {"id": "gca", "colour": "orange",
-   "head": [[["h", "Giant cell arteritis (GCA)", ["large vessel · the most common vasculitis", "only over 50 (most over 70)", "lifetime risk 1% women, 0.5% men · Northern European"]]]],
-   "pres": [[["t", "Cranial (temporal artery)", ["• NEW temporal headache", "• scalp tender: hurts to brush the hair", "• jaw claudication · tongue claudication", "• diplopia · vision loss · stroke"]]],
-            [["bad", "Vision loss in 15-20%", ["• transient first: amaurosis fugax", "• untreated: both eyes, days to months", "• acute painless loss is PERMANENT"]]],
-            [["w", "Systemic", ["• polymyalgia symptoms: see BODY PAIN", "• fatigue, fever, weight loss", "• limb claudication · Raynaud's · chest pain · arthritis"]]]],
-   "inv": [[["t", "Exam", ["• tender temples · rope-like temporal artery", "• optic disc swelling", "• pulselessness, bruits, blood pressure difference"]]],
-           [["t", "1 · ESR + CRP immediately", ["both normal → GCA highly unlikely (< 2%)", "case: Hb 99 · ESR 70 · CRP 50 · WBC, platelets normal"]]],
-           [["w", "2 · Temporal artery biopsy in 1-2 weeks", ["• transmural inflammation + giant cells: 100% specific", "• negative in 50-70% (skip lesions)", "• or Doppler 'halo sign' (wall edema): specificity > 85%, absent in ~30%, specialty centres only"]]]],
-   "tx": [[["bad", "1 · Prednisone 1 mg/kg (max 60 mg) TODAY", ["after blood is drawn · NEVER wait for results"]]],
-          [["bad", "Vision loss or stroke → emergency", ["urgent ophthalmology or neurology"]]],
-          [["ok", "2 · Protect + refer", ["• proton pump inhibitor", "• calcium, vitamin D, bisphosphonate", "• rheumatology"]]]]},
-  {"id": "anca", "colour": "purple",
-   "head": [[["h", "ANCA-associated vasculitis", ["anti-neutrophil cytoplasmic antibody · small vessel", "granulomatosis with polyangiitis (GPA)", "microscopic (MPA) · eosinophilic (EGPA)", "rare · FATAL untreated · relapses common"]]]],
-   "pres": [[["t", "Sinonasal · lung · kidney", ["• bloody crusty nose, sinus pain · saddle nose (GPA)", "• dyspnea: nodules, severe adult-onset asthma, PE", "• lung hemorrhage (hemoptysis)", "• creatinine ↑, blood + protein in urine"]]],
-            [["w", "Also", ["• eye mass (diplopia) · arthritis", "• mononeuritis multiplex · purpura, urticarial vasculitis"]]]],
-   "inv": [[["t", "1 · Rule out infection", ["cultures, hepatitis, HIV"]]],
-           [["w", "2 · ANCA ONLY if small vessel suspected", ["• cytoplasmic (anti-PR3) → GPA", "• perinuclear (anti-MPO) → MPA, EGPA", "• ELISA (PR3, MPO) more specific"]]],
-           [["bad", "ANCA pitfalls", ["• false +: endocarditis, cancer, drugs, cocaine", "• negative in 30% GPA, 50-60% MPA/EGPA"]]],
-           [["w", "3 · Biopsy the involved organ", ["• first-line in single-organ disease", "• else: orbit, sinus, lung nodule, node, kidney, sural nerve"]]]],
-   "tx": [[["bad", "Unstable, lung bleed, renal failure → ADMIT", []]],
-          [["warn", "Active urine sediment, normal creatinine", ["→ urgent nephrology (rapidly progressive glomerulonephritis)"]]],
-          [["ok", "All others → urgent rheumatology", []]]]},
-  {"id": "lcv", "colour": "teal",
-   "head": [[["h", "Cutaneous leukocytoclastic vasculitis", ["small vessel · alone or part of another type"]]]],
-   "pres": [[["t", "Painful NON-blanching purpura", ["• legs · ankles painful, swollen", "• unwell, fatigued for weeks", "• ± urticarial vasculitis, ulcers"]]],
-            [["w", "Other cause of purpura?", ["coagulopathy"]]]],
-   "inv": [[["t", "1 · Platelets + clotting times (INR, PTT)", ["rule out a coagulopathy"]]],
-           [["w", "2 · Skin biopsy", ["• purpura: punch biopsy in primary care", "• histopathology, immunofluorescence, cultures", "• ulcer: deep excision by a surgeon"]]],
-           [["warn", "NOT for non-severe purpura < 4-6 weeks", ["usually resolves: viral or hypersensitivity"]]]],
-   "tx": [[["bad", "Acetaminophen does NOT treat it", ["no evidence for cannabinoids"]]],
-          [["ok", "1 · Topical corticosteroid", ["non-severe skin disease"]]],
-          [["ok", "2 · NSAID or colchicine", ["colchicine 0.6 mg twice daily · diarrhea"]]],
-          [["warn", "3 · Oral prednisone", ["only if severe, other agents failed, infection excluded", "30 mg for 1 week, then ↓ 5 mg every 5 days"]]],
-          [["warn", "Methotrexate: too SLOW for acute", ["non-resolving, scarring or severe disease"]]]]},
-  {"id": "sec", "colour": "slate",
-   "head": [[["h", "Secondary vasculitis", ["an identifiable underlying cause"]]]],
-   "pres": [[["t", "Infection (most important)", ["• viral: hepatitis B or C, HIV, COVID-19", "• bacterial: pneumococcus, mycobacteria, Staph aureus", "• fungal: causes or mimics"]]],
-            [["w", "Drugs · cancer · connective tissue", ["• antibiotics, antihypertensives, thionamides", "• allergy · cocaine (levamisole)", "• blood cancers, paraneoplastic", "• lupus, rheumatoid arthritis, Sjögren's"]]]],
-   "inv": [[["t", "Rule out infection", ["• white cells · liver enzymes", "• blood, urine, sputum cultures (fungal, acid-fast)", "• hepatitis B + C, HIV, syphilis (VDRL)", "• cryoglobulins ↑, complement ↓ (hepatitis C)"]]],
-           [["w", "Rule out cancer", ["• age-appropriate screening", "• serum protein electrophoresis (myeloma)"]]]],
-   "tx": [[["ok", "Treat the cause", ["hepatitis C → antivirals first"]]],
-          [["bad", "Steroids can WORSEN an infection", []]]]}
- ],
- "panels": [
-  {"title": "Classify by vessel size", "items": [
-   "large: giant cell, Takayasu",
-   "medium: polyarteritis nodosa, Kawasaki, Behçet's",
-   "small: ANCA trio, cryoglobulinemia, cutaneous leukocytoclastic, Henoch-Schönlein",
-   "children: Kawasaki, Henoch-Schönlein"]},
-  {"title": "Giant cell arteritis: differential", "items": [
-   "sinusitis · dental infection · temporomandibular arthritis",
-   "cranial neuropathy · intracranial tumour",
-   "severe hypertension · acute angle-closure glaucoma",
-   "migraine, cluster · meningitis, encephalitis · neck pain"]}
+  {"id": "gca", "colour": "orange", "drop_label": "new headache",
+   "head": [[["h", "Giant cell arteritis (GCA)", ["over 50 · large vessel · the most common"]]]],
+   "pres": [[["t", "Cranial (temporal artery)", ["• NEW temporal headache", "• scalp tender: hurts to brush the hair", "• jaw claudication · tongue claudication", "• diplopia · vision loss · stroke"]]], [["bad", "Vision loss in 15-20%", ["• transient first: amaurosis fugax", "• untreated: both eyes, days to months", "• acute painless loss is PERMANENT"]]], [["w", "Systemic", ["• polymyalgia symptoms: see BODY PAIN", "• fatigue, fever, weight loss", "• limb claudication · Raynaud's · chest pain · arthritis"]]], [["w", "Mimics", ["• sinusitis · dental infection · temporomandibular arthritis", "• cranial neuropathy · intracranial tumour · glaucoma", "• severe hypertension · migraine, cluster · meningitis"]]]],
+   "tx": [[["bad", "1 · Prednisone 1 mg/kg (max 60 mg) TODAY", ["after blood is drawn · NEVER wait for results"]]], [["bad", "Vision loss or stroke → emergency", ["urgent ophthalmology or neurology"]]], [["ok", "2 · Protect + refer", ["• proton pump inhibitor", "• calcium, vitamin D, bisphosphonate", "• rheumatology"]]]]
+  },
+  {"id": "anca", "colour": "purple", "drop_label": "sinus, lung, kidney",
+   "head": [[["h", "ANCA-associated vasculitis", ["small vessel · GPA, MPA, EGPA · fatal untreated"]]]],
+   "pres": [[["t", "Sinonasal · lung · kidney", ["• bloody crusty nose, sinus pain · saddle nose (GPA)", "• dyspnea: nodules, severe adult-onset asthma, PE", "• lung hemorrhage (hemoptysis)", "• creatinine ↑, blood + protein in urine"]]], [["w", "Also", ["• eye mass (diplopia) · arthritis", "• mononeuritis multiplex · purpura, urticarial vasculitis"]]]],
+   "tx": [[["bad", "Unstable, lung bleed, renal failure → ADMIT", []]], [["warn", "Active urine sediment, normal creatinine", ["→ urgent nephrology (rapidly progressive glomerulonephritis)"]]], [["ok", "All others → urgent rheumatology", []]]]
+  },
+  {"id": "lcv", "colour": "teal", "drop_label": "purpura on the legs",
+   "head": [[["h", "Cutaneous leukocytoclastic vasculitis", ["small vessel, skin"]]]],
+   "pres": [[["t", "Painful NON-blanching purpura", ["• legs · ankles painful, swollen", "• unwell, fatigued for weeks", "• ± urticarial vasculitis, ulcers"]]], [["w", "Other cause of purpura?", ["coagulopathy"]]]],
+   "tx": [[["bad", "Acetaminophen does NOT treat it", ["no evidence for cannabinoids"]]], [["ok", "1 · Topical corticosteroid", ["non-severe skin disease"]]], [["ok", "2 · NSAID or colchicine", ["colchicine 0.6 mg twice daily · diarrhea"]]], [["warn", "3 · Oral prednisone", ["only if severe, other agents failed, infection excluded", "30 mg for 1 week, then ↓ 5 mg every 5 days"]]], [["warn", "Methotrexate: too SLOW for acute", ["non-resolving, scarring or severe disease"]]]]
+  },
+  {"id": "sec", "colour": "slate", "drop_label": "a cause is found",
+   "head": [[["h", "Secondary vasculitis", ["infection, drugs, cancer, CTD"]]]],
+   "pres": [[["t", "Infection (most important)", ["• viral: hepatitis B or C, HIV, COVID-19", "• bacterial: pneumococcus, mycobacteria, Staph aureus", "• fungal: causes or mimics"]]], [["w", "Drugs · cancer · connective tissue", ["• antibiotics, antihypertensives, thionamides", "• allergy · cocaine (levamisole)", "• blood cancers, paraneoplastic", "• lupus, rheumatoid arthritis, Sjögren's"]]]],
+   "tx": [[["ok", "Treat the cause", ["hepatitis C → antivirals first"]]], [["bad", "Steroids can WORSEN an infection", []]]]
+  }
  ]
 }

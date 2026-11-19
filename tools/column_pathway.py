@@ -95,8 +95,8 @@ def build(c: dict) -> dict:
         ps.KIND[k] = tuple(v)
     chart = ps.Chart({"title": "", "nodes": [], "edges": [], "width": width})
 
-    def height(title, lines, w):
-        r = chart.layout_text({"title": title, "lines": lines, "id": title}, w)
+    def height(title, lines, w, tube=None):
+        r = chart.layout_text({"title": title, "lines": lines, "id": title, "tube": tube}, w)
         block = sum(t[3] for t in r) - r[-1][3] + (ps.TITLE_SIZE if r[-1][1] == "bold" else ps.BODY_SIZE)
         return round(block + 2 * ps.PAD_Y + 4)
 
@@ -110,6 +110,8 @@ def build(c: dict) -> dict:
         return max(height(t, ls, box_w(row, w)) for _, t, ls in row)
 
     def section_h(rows, w=col_w):
+        if not rows:   # a pointer column stops early: nothing in this section
+            return 0
         return sum(row_h(r, w) for r in rows) + SUB_GAP * (len(rows) - 1)
 
     def link(a, b, dashed=False, w=col_w):
@@ -136,11 +138,13 @@ def build(c: dict) -> dict:
     rb = 10 + height(root["title"], root.get("lines", []), rw)
 
     g_y = rb + 50
-    gh = max(height(g["title"], g.get("lines", []), span(*g["cols"])[1]) for g in c["groups"])
+    gh = max(height(g["title"], g.get("lines", []), span(*g["cols"])[1], g.get("tube"))
+             for g in c["groups"])
     for g in c["groups"]:
         gx, gw = span(*g["cols"])
         nodes.append({"id": g["id"], "x": gx, "y": g_y, "w": gw, "h": gh, "kind": "plain",
-                      "title": g["title"], "lines": g.get("lines", [])})
+                      "title": g["title"], "lines": g.get("lines", []),
+                      **{k: g[k] for k in ("tube", "em") if k in g}})
         geo[g["id"]] = (gx + gw / 2, g_y + gh)
         edges.append({"from": "root", "to": g["id"], "path": f"M{mid} {rb}V{rb + 25}H{gx + gw / 2}V{g_y}"})
     y = g_y + gh + 40
@@ -166,7 +170,8 @@ def build(c: dict) -> dict:
         for t in tiers:
             tx, tw = span(*t["cols"])
             nodes.append({"id": t["id"], "x": tx, "y": y, "w": tw, "h": th, "kind": "plain",
-                          "title": t["title"], "lines": t.get("lines", [])})
+                          "title": t["title"], "lines": t.get("lines", []),
+                          **({"em": t["em"]} if "em" in t else {})})
             par = parent_of_group[group_of[t["cols"][0]]]
             edges.append({"from": par, "to": t["id"], "from_dx": round(tx + tw / 2 - geo[par][0])})
             geo[t["id"]] = (tx + tw / 2, y + th)
@@ -182,12 +187,14 @@ def build(c: dict) -> dict:
             raise SystemExit("a span cannot replace the head section")
         for i in range(sp["cols"][0], sp["cols"][1] + 1):
             span_of[(i, sp["section"])] = s_i
-    first_last, sec_top = {}, {}
+    first_last, sec_top, col_bottom = {}, {}, {}
     y = top_y
 
     def lay(rows, x0, w, y, sec_h, prefix, kind_of, dashed):
         """Place a stack of rows in one column (or span) and link it top to bottom."""
         nonlocal edges
+        if not rows:
+            return None
         pad = (sec_h - section_h(rows, w)) / len(rows)
         yy, prev, first = y, None, None
         for r_i, row in enumerate(rows):
@@ -208,7 +215,7 @@ def build(c: dict) -> dict:
 
     for sec in sections:
         sec_top[sec] = y
-        own = [col[sec] for i, col in enumerate(cols) if (i, sec) not in span_of]
+        own = [col.get(sec, []) for i, col in enumerate(cols) if (i, sec) not in span_of]
         sec_h = max([section_h(r) for r in own]
                     + [section_h(sp["rows"], span(*sp["cols"])[1]) for sp in spans if sp["section"] == sec])
         if sec in c.get("row_names", {}):
@@ -217,9 +224,12 @@ def build(c: dict) -> dict:
         for i, col in enumerate(cols):
             if (i, sec) in span_of:
                 continue
-            first_last[(col["id"], sec)] = lay(
-                col[sec], xs[i], col_w, y, sec_h, f"{col['id']}_{sec}",
+            placed = lay(
+                col.get(sec, []), xs[i], col_w, y, sec_h, f"{col['id']}_{sec}",
                 lambda k, cid=col["id"]: f"{cid}_{k}" if k in ("h", "t", "w") else k, dashed)
+            if placed:
+                first_last[(col["id"], sec)] = placed
+                col_bottom[i] = y + sec_h
         for s_i, sp in enumerate(spans):
             if sp["section"] == sec:
                 sx, sw = span(*sp["cols"])
@@ -253,7 +263,8 @@ def build(c: dict) -> dict:
                                                                 else sx + sw - box_w(target, sw) / 2)
                     edges.append({"from": p_id, "to": t, "to_dx": round(cx - tx, 1)})
                 continue
-            edges += link(first_last[(col["id"], a)][1], first_last[(col["id"], b)][0])
+            if (col["id"], a) in first_last and (col["id"], b) in first_last:
+                edges += link(first_last[(col["id"], a)][1], first_last[(col["id"], b)][0])
         src = col.get("drop_from") or parent_of_group[group_of[cols.index(col)]]
         cx = xs[cols.index(col)] + col_w / 2
         e = {"from": src, "to": first_last[(col["id"], sections[0])][0][0], "from_dx": round(cx - geo[src][0])}
@@ -263,7 +274,7 @@ def build(c: dict) -> dict:
 
     def band_bottom(i):
         spanned = [sec_top[s] for s in sections if (i, s) in span_of]
-        return min(spanned) - ROW_GAP if spanned else bottom_y
+        return min(spanned) - ROW_GAP if spanned else col_bottom.get(i, bottom_y)
 
     bands = [{"x": xs[i] - 5, "y": top_y - 8, "w": col_w + 10, "h": band_bottom(i) - top_y + 16,
               "fill": PALETTE[col["colour"]][2], "stroke": PALETTE[col["colour"]][0]} for i, col in enumerate(cols)]

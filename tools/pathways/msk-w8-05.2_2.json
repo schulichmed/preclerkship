@@ -123,7 +123,7 @@
    "x": 810,
    "y": 308,
    "w": 236,
-   "h": 1010,
+   "h": 442,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -267,8 +267,7 @@
    "kind": "oa_h",
    "title": "Osteoarthritis of the elbow",
    "lines": [
-    "post-traumatic: earlier onset",
-    "inflammatory: rheumatology charts"
+    "locking · post-traumatic"
    ]
   },
   {
@@ -329,12 +328,9 @@
    "y": 470,
    "w": 226,
    "h": 272,
-   "kind": "oa_t",
-   "title": "Gradual, achy, with flares",
-   "lines": [
-    "• stiffness, loss of range of motion",
-    "• locking"
-   ]
+   "kind": "oa_w",
+   "title": "→ Osteoarthritis",
+   "lines": []
   },
   {
    "id": "bur_pres_0_0",
@@ -410,19 +406,6 @@
    "title": "2 · Sports medicine or orthopaedic exam",
    "lines": [
     "MRI may help"
-   ]
-  },
-  {
-   "id": "oa_inv_0_0",
-   "x": 815,
-   "y": 782,
-   "w": 226,
-   "h": 182,
-   "kind": "oa_w",
-   "title": "X-ray",
-   "lines": [
-    "• loss of joint space · osteophytes",
-    "• subchondral sclerosis or cysts"
    ]
   },
   {
@@ -513,32 +496,6 @@
    ]
   },
   {
-   "id": "oa_tx_0_0",
-   "x": 815,
-   "y": 1004,
-   "w": 226,
-   "h": 178,
-   "kind": "ok",
-   "title": "1 · Conservative",
-   "lines": [
-    "• no cure: a grumbling course",
-    "• ice · physiotherapy · occupational therapy",
-    "• anti-inflammatory, acetaminophen, steroid injection"
-   ]
-  },
-  {
-   "id": "oa_tx_1_0",
-   "x": 815,
-   "y": 1204,
-   "w": 226,
-   "h": 106,
-   "kind": "warn",
-   "title": "2 · Intolerable end stage",
-   "lines": [
-    "debridement or arthroplasty"
-   ]
-  },
-  {
    "id": "bur_tx_0_0",
    "x": 1081,
    "y": 1004,
@@ -607,10 +564,6 @@
    "to": "ucl_tx_1_0"
   },
   {
-   "from": "oa_tx_0_0",
-   "to": "oa_tx_1_0"
-  },
-  {
    "from": "bur_tx_0_0",
    "to": "bur_tx_1_0"
   },
@@ -668,14 +621,6 @@
   {
    "from": "oa_head_0_0",
    "to": "oa_pres_0_0"
-  },
-  {
-   "from": "oa_pres_0_0",
-   "to": "oa_inv_0_0"
-  },
-  {
-   "from": "oa_inv_0_0",
-   "to": "oa_tx_0_0"
   },
   {
    "from": "g_oa",

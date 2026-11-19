@@ -1,0 +1,69 @@
+{
+ "name": "rheumatology conditions overview",
+ "title": "Rheumatology conditions at a glance: one swollen joint is septic or crystal arthritis; two or more joints are sorted by the synovial fluid and serology into osteoarthritis, rheumatoid arthritis, spondyloarthritis, connective tissue disease and, in a child, juvenile idiopathic arthritis; with no swollen joints, several organs point to vasculitis and pain all over to polymyalgia rheumatica or fibromyalgia; each branch names the chart that covers it",
+ "col_w": 168,
+ "root": {
+  "title": "RHEUMATOLOGY: how many joints are swollen, and what does the fluid show?",
+  "lines": [
+   "every hot joint: ASPIRATE (cells, crystals, Gram stain, culture) · ESR, CRP",
+   "the tests and drugs for all of them: RHEUMATOLOGY INVESTIGATIONS · RHEUMATOLOGY TREATMENTS"
+  ]
+ },
+ "groups": [
+  {"id": "g_mono", "cols": [0, 1], "title": "MONOARTHRITIS · 1 joint", "lines": ["infection until proven otherwise"]},
+  {"id": "g_poly", "cols": [2, 6], "title": "OLIGO / POLYARTHRITIS · 2+ joints", "lines": ["synovial fluid, then RF, anti-CCP, HLA-B27, ANA"]},
+  {"id": "g_none", "cols": [7, 8], "title": "NO swollen joints", "lines": ["ESR, CRP · CK · ANCA"]}
+ ],
+ "tiers": [
+  {"id": "t_sep", "cols": [0, 0], "title": "**Gram stain or culture +**", "lines": [], "em": "#46607a"},
+  {"id": "t_cry", "cols": [1, 1], "title": "**Crystals**", "lines": [], "em": "#b5600f"},
+  {"id": "t_oa", "cols": [2, 2], "title": "**NON-inflammatory** fluid", "lines": [], "em": "#8a5a2b"},
+  {"id": "t_ra", "cols": [3, 3], "title": "SEROPOSITIVE · **RF, anti-CCP +**", "lines": [], "em": "#1f6f8b"},
+  {"id": "t_sn", "cols": [4, 4], "title": "SERONEGATIVE · **HLA-B27**", "lines": [], "em": "#6a4aa8"},
+  {"id": "t_ctd", "cols": [5, 5], "title": "**ANA +** · several organs", "lines": [], "em": "#a3336b"},
+  {"id": "t_jia", "cols": [6, 6], "title": "CHILD under 16 · over 6 weeks", "lines": []},
+  {"id": "t_vas", "cols": [7, 7], "title": "Several organs · **ANCA** or **ESR ↑**", "lines": [], "em": "#1f5f9e"},
+  {"id": "t_bp", "cols": [8, 8], "title": "Pain all over", "lines": []}
+ ],
+ "sections": ["head", "see"],
+ "row_names": {"see": "CHART"},
+ "dashed_sections": [],
+ "columns": [
+  {"id": "sep", "colour": "slate", "drop_from": "t_sep",
+   "head": [[["h", "Septic arthritis", ["S. aureus · gonococcus"]]]],
+   "see": [[["w", "MSK Infections", ["cellulitis · deep space", "gonococcal · Lyme · TB", "osteomyelitis", "diabetic foot"]]]]
+  },
+  {"id": "cry", "colour": "orange", "drop_from": "t_cry",
+   "head": [[["h", "Crystal arthritis", ["gout: needles", "pseudogout: rhomboids"]]]],
+   "see": [[["w", "Acute Monoarthritis", ["septic arthritis", "gout · pseudogout"]]]]
+  },
+  {"id": "oa", "colour": "brown", "drop_from": "t_oa",
+   "head": [[["h", "Osteoarthritis", ["degenerative · or trauma"]]]],
+   "see": [[["w", "Osteoarthritis", ["osteoarthritis", "red flags: NOT OA"]]]]
+  },
+  {"id": "ra", "colour": "teal", "drop_from": "t_ra",
+   "head": [[["h", "Rheumatoid arthritis", ["symmetric · DIPs spared"]]]],
+   "see": [[["w", "Approach to Polyarthritis", ["OA · gout · pseudogout", "RA · AS · psoriatic", "reactive · CTD · septic"]]]]
+  },
+  {"id": "spa", "colour": "purple", "drop_from": "t_sn",
+   "head": [[["h", "Spondyloarthritis", ["young · inflammatory back pain"]]]],
+   "see": [[["w", "Approach to Polyarthritis", ["ankylosing spondylitis", "psoriatic · reactive"]]]]
+  },
+  {"id": "ctd", "colour": "magenta", "drop_from": "t_ctd",
+   "head": [[["h", "Connective tissue disease", ["young women · many organs"]]]],
+   "see": [[["w", "Connective Tissue Disorders", ["SLE · APS · Sjögren's", "myositis · scleroderma", "+ Lupus classification"]]]]
+  },
+  {"id": "jia", "colour": "olive", "drop_from": "t_jia",
+   "head": [[["h", "Juvenile idiopathic arthritis", ["7 subtypes · oligoarticular most common"]]]],
+   "see": [[["w", "Juvenile Idiopathic Arthritis", ["systemic (Still's)", "oligo · polyarticular", "enthesitis · psoriatic"]]]]
+  },
+  {"id": "vas", "colour": "blue", "drop_from": "t_vas",
+   "head": [[["h", "Vasculitis", ["named by vessel size"]]]],
+   "see": [[["w", "Vasculitis", ["giant cell arteritis", "ANCA: GPA, MPA, EGPA", "cutaneous · secondary"]]]]
+  },
+  {"id": "bp", "colour": "teal", "drop_from": "t_bp",
+   "head": [[["h", "Body pain", ["strength NORMAL · no swelling"]]]],
+   "see": [[["w", "Body Pain", ["PMR · fibromyalgia", "vs myositis · arthritis", "cancer or infection"]]]]
+  }
+ ]
+}
