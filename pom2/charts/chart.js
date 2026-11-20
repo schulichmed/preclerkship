@@ -348,13 +348,13 @@ fetch("../figures.json").then(function (r) { return r.ok ? r.json() : {}; }).the
     var f = figs[c.id], col = f && map.querySelector('.col[data-k="c:' + c.id + '"]'); if (!col) return;
     var fig = el("figure", "colfig"), a = el("a"); a.href = "../img/" + CHART + "/" + f.file; a.target = "_blank"; a.rel = "noopener";
     a.addEventListener("click", function (e) { e.stopPropagation(); });
-    var img = el("img"); img.src = a.href; img.alt = f.caption; img.loading = "lazy"; a.appendChild(img); fig.appendChild(a);
+    var img = el("img"); img.src = a.href; img.alt = f.caption; img.loading = "lazy"; if (f.h) img.style.height = f.h + "px"; a.appendChild(img); fig.appendChild(a);
     fig.appendChild(el("figcaption", null, f.caption));
     col.querySelector(".colhead").after(fig); used.push(f);
   });
   if (!used.length) return;
   var cr = el("section", "credits"); cr.appendChild(el("h3", null, "Image credits"));
-  cr.appendChild(el("p", null, "Pictures reused under their open licences (Creative Commons or public domain); drawn ones were made for this page. Tap a picture to open it full size."));
+  cr.appendChild(el("p", null, "Pictures reused under their open licences (Creative Commons or public domain) or with permission, as credited below; drawn ones were made for this page. Tap a picture to open it full size."));
   var ul = el("ul"); cr.appendChild(ul);
   used.forEach(function (f) {
     var li = el("li", null, f.caption + ": " + f.author + ", " + f.licence + (f.source_page_url ? ", " : ""));
