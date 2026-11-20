@@ -24,6 +24,13 @@ WHAT AN ENTRY MAY SAY
       "correct":    ["A", "C"],   the key to score against
       "multi":      true,         answer it as select-all
       "convert":    "mcq",        make a self-marked question a scored one
+      "write_in":   true,         with convert: the source asked it as a write-in
+                                  and "options" were written for the bank. Strips
+                                  the "(fill in the blank)" prompt, opens the
+                                  answer with "The correct answer is X." and
+                                  flags it "Now multiple choice". No question is
+                                  left self-marked ("I had it / I missed it"):
+                                  write options, or make it a pairing.
       "unscorable": true,         no defensible key: show it, don't score it
                     false,        the lecture supplies the key the source left out
       "option":     {"B": "..."}, repair an option's text
@@ -52,16 +59,26 @@ why it changed, so nothing is silently rewritten. The flag is rebuilt on every
 run, so editing an entry's "why" updates what readers see.
 """
 
-import datetime, glob, html, io, json, os, sys
+import datetime, glob, html, io, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DONE = ("Key corrected", "Key repaired", "Not scored: no defensible key",
-        "Off-curriculum", "Re-filed")
+        "Off-curriculum", "Re-filed", "Now multiple choice")
+
+# the source's write-in prompts, stripped from a stem converted to options
+OPEN_PROMPTS = (r"\s*<p><em>\(fill in the blank\)</em></p>", r"\s*\(fill in the blank\)",
+                r"\s*Write your answer here:")
+KEY_LINE = re.compile(r"^<p><strong>The correct answers? (?:is|are) [A-Z, and]+\.</strong></p>")
 
 
 def letters(xs):
     return ", ".join(xs) if xs else "none"
+
+
+def spoken(xs):
+    """A, B and C - the way the bank's own answers name a key."""
+    return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " and " + xs[-1]
 
 
 def apply(q, fix):
@@ -74,6 +91,14 @@ def apply(q, fix):
     if fix.get("convert") == "mcq" and (q.get("kind") != "mcq" or q.get("free")):
         q["kind"], q["free"] = "mcq", False
         changed.append("now scored")
+    if fix.get("write_in"):
+        # the blank-filling prompts make no sense once there are options to click
+        s = q.get("stem") or ""
+        for pat in OPEN_PROMPTS:
+            s = re.sub(pat, "", s)
+        if s != q.get("stem"):
+            q["stem"] = s
+            changed.append("open prompt removed")
     if "correct" in fix and q.get("correct") != fix["correct"]:
         q["correct"] = list(fix["correct"])
         changed.append("key %s -> %s" % (letters(src), letters(q["correct"])))
@@ -105,7 +130,10 @@ def apply(q, fix):
         q["stem"] = stem
         changed.append("stem")
     answer = fix.get("answer")
-    if answer and q.get("answer") != answer:
+    current = q.get("answer") or ""
+    if fix.get("write_in"):
+        current = KEY_LINE.sub("", current)  # the key line below is added after this
+    if answer and current != answer:
         q["answer"] = answer
         changed.append("answer")
     lead = fix.get("lead")
@@ -116,6 +144,16 @@ def apply(q, fix):
         if first != lead:
             q["answer"] = lead + a[len(first):]
             changed.append("answer line")
+    if fix.get("write_in") and q.get("correct"):
+        # a converted question names its letter first, as every MCQ answer does
+        key = q["correct"]
+        line = "<p><strong>The correct answer%s %s.</strong></p>" % (
+            "s are" if len(key) > 1 else " is", spoken(key))
+        a = q.get("answer") or ""
+        want = line + KEY_LINE.sub("", a)
+        if a != want:
+            q["answer"] = want
+            changed.append("key line")
 
     refile = fix.get("refile")
     if refile:
@@ -152,6 +190,9 @@ def apply(q, fix):
         body = why
     elif refile:
         title = "Re-filed"
+        body = why
+    elif fix.get("write_in"):
+        title = "Now multiple choice"
         body = why
     else:
         title = "Key repaired"
