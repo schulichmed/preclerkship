@@ -387,23 +387,98 @@
   "skip": "single-best-answer MCQ ('matches the class ... with its mechanism')"
  },
  {
-  "qid": "b4-wb-ii-q16",
-  "bank": "fom/data/questions/b4.json",
-  "skip": "key gives several functions per class (IgG: opsonization and neonatal immunity) and naive B-cell receptor to both IgD and IgM; one dropdown per row cannot grade it"
- },
- {
   "qid": "b4-wb-ii-q64",
   "bank": "fom/data/questions/b4.json",
   "skip": "not a matching task: an a-e single-best-answer MCQ (key D) mis-kinded as 'matching' with options left in the stem"
  },
  {
-  "qid": "reviews-b4-Q15",
-  "bank": "fom/data/questions/b4.json",
-  "skip": "no key: the review deck gives no answer to this matching exercise"
- },
- {
   "qid": "b2-wb-fom-q87",
   "bank": "fom/data/questions/b2.json",
   "skip": "fill-in-the-blank series q87-q90 sharing options (no 'match' in stem); q87 needs two answers, so it cannot fold into one-dropdown rows"
+ },
+ {
+  "qid": "b4-wb-ii-q16",
+  "bank": "fom/data/questions/b4.json",
+  "stem": "<p>Match each immunoglobulin function to the class that carries it. A class may be used more than once.</p>",
+  "pairs": {
+   "leftLabel": "Function",
+   "rightLabel": "Immunoglobulin class",
+   "items": [
+    {
+     "left": "Mucosal immunity",
+     "right": "IgA"
+    },
+    {
+     "left": "Mast cell activation",
+     "right": "IgE"
+    },
+    {
+     "left": "Naive B-cell antigen receptor",
+     "right": "IgM and IgD"
+    },
+    {
+     "left": "Opsonization",
+     "right": "IgG"
+    },
+    {
+     "left": "Neonatal immunity (crosses the placenta)",
+     "right": "IgG"
+    }
+   ]
+  },
+  "answer": "<p>IgA: mucosal immunity. IgE: mast cell activation and defence against helminths. IgM and IgD: the naive B-cell antigen receptor (both are co-expressed on the mature naive B cell). IgG: opsonization, complement activation, antibody-dependent cell-mediated cytotoxicity, neonatal immunity (the only class that crosses the placenta) and feedback inhibition of B cells.</p>",
+  "flags": [
+   {
+    "type": "note",
+    "title": "Now a dropdown match",
+    "html": "<p>The workbook listed the classes on one side and the functions on the other; the bank asks it the other way round, function to class, so a function shared by two classes (the naive B-cell receptor) has one answer.</p>"
+   }
+  ]
+ },
+ {
+  "qid": "reviews-b4-Q15",
+  "bank": "fom/data/questions/b4.json",
+  "stem": "<p>Match the antibiotics to their target.</p>",
+  "pairs": {
+   "leftLabel": "Antibiotic",
+   "rightLabel": "Target",
+   "items": [
+    {
+     "left": "Ciprofloxacin",
+     "right": "Nucleic acid synthesis"
+    },
+    {
+     "left": "Meropenem",
+     "right": "Cell wall"
+    },
+    {
+     "left": "Trimethoprim",
+     "right": "Nucleic acid synthesis"
+    },
+    {
+     "left": "Azithromycin",
+     "right": "Protein synthesis"
+    },
+    {
+     "left": "Amoxicillin",
+     "right": "Cell wall"
+    },
+    {
+     "left": "Doxycycline",
+     "right": "Protein synthesis"
+    }
+   ]
+  },
+  "answer": "<p>The deck gives no answer to this matching exercise; this key follows the review's own groupings (slides 17 to 21) and the Choosing Antibiotics Wisely notes.</p><ul><li><strong>Cell wall:</strong> the beta-lactams, amoxicillin (a penicillin) and meropenem (a carbapenem).</li><li><strong>Protein synthesis:</strong> azithromycin (a macrolide, 50S) and doxycycline (a tetracycline, 30S).</li><li><strong>Nucleic acid synthesis:</strong> ciprofloxacin (a fluoroquinolone, DNA gyrase and topoisomerase IV) and trimethoprim (a folate inhibitor, so no nucleotides).</li></ul>",
+  "drop_flags": [
+   "Unkeyed matching exercise"
+  ],
+  "flags": [
+   {
+    "type": "note",
+    "title": "Key from the lecture notes",
+    "html": "<p>The deck left this matching exercise unkeyed; the key is taken from the review's own drug groupings and the Choosing Antibiotics Wisely notes.</p>"
+   }
+  ]
  }
 ]
