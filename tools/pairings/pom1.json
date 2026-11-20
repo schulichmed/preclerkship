@@ -207,5 +207,81 @@
   "qid": "gu-wb-gu0-q67",
   "bank": "pom1/data/questions/gu.json",
   "skip": "true/false question; mislabelled kind matching"
+ },
+ {
+  "qid": "cardio-w1-meds2024-q32-32",
+  "bank": "pom1/data/questions/cardio.json",
+  "stem": "<p>Match the state of the ion channels to the phase of the ventricular cardiac action potential.</p>",
+  "preamble": null,
+  "absorbs": [
+   "cardio-w1-meds2024-q33-33",
+   "cardio-w1-meds2024-q34-34"
+  ],
+  "pairs": {
+   "leftLabel": "Ion channels",
+   "rightLabel": "Phase",
+   "items": [
+    {
+     "left": "Voltage-gated Na+ open; voltage-gated K+ closed; Ca2+ closed",
+     "right": "Depolarization (phase 0)"
+    },
+    {
+     "left": "Voltage-gated Na+ closed; voltage-gated K+ open; Ca2+ open",
+     "right": "Plateau (phase 2)"
+    },
+    {
+     "left": "Voltage-gated Na+ closed; voltage-gated K+ open; Ca2+ closed",
+     "right": "Repolarization (phase 3)"
+    }
+   ]
+  },
+  "answer": "<p><strong>Depolarization (phase 0):</strong> voltage-gated sodium channels open and sodium flows into the cell. <strong>Plateau (phase 2):</strong> the membrane potential is held as potassium flows out and calcium flows in. <strong>Repolarization (phase 3):</strong> only the potassium channels are open, and potassium flowing out returns the cell to rest.</p>",
+  "flags": [
+   {
+    "type": "note",
+    "title": "Three questions merged",
+    "html": "<p>The source asked this as three questions matching each set of channels to a section (A, B, C) of an action potential figure the bank does not have. They are one dropdown match now, with the sections named by phase.</p>"
+   }
+  ]
+ },
+ {
+  "qid": "cardio-wb-cardio0-q119",
+  "bank": "pom1/data/questions/cardio.json",
+  "stem": "<p>Match each murmur to the valvular heart lesion that characteristically causes it.</p>",
+  "absorbs": [
+   "cardio-wb-cardio0-q120",
+   "cardio-wb-cardio0-q121",
+   "cardio-wb-cardio0-q122"
+  ],
+  "pairs": {
+   "leftLabel": "Murmur",
+   "rightLabel": "Valvular lesion",
+   "items": [
+    {
+     "left": "Crescendo-decrescendo systolic murmur",
+     "right": "Aortic stenosis"
+    },
+    {
+     "left": "Decrescendo diastolic murmur",
+     "right": "Aortic regurgitation"
+    },
+    {
+     "left": "Pansystolic murmur",
+     "right": "Mitral regurgitation"
+    },
+    {
+     "left": "Mid-diastolic rumbling murmur",
+     "right": "Mitral stenosis"
+    }
+   ]
+  },
+  "answer": "<p>AS = crescendo-decrescendo systolic murmur, AR = decrescendo diastolic murmur, MR = pansystolic murmur, MS = mid-diastolic rumbling murmur.</p>",
+  "flags": [
+   {
+    "type": "note",
+    "title": "Four questions merged",
+    "html": "<p>The workbook asked this as four one-line questions sharing the same four lesions, and the last one lost its options. They are one dropdown match now.</p>"
+   }
+  ]
  }
 ]
