@@ -27,13 +27,13 @@ NOTE = VAULT / "01 - Lectures/99 - Clinical Skills/Summary Notes - Neurological 
 
 # section number in the note -> region on the page
 REGIONS = {
-    2: ("mental", "Mental status", "PPES 2 · Weeks 8–9", "#3d6fb6"),
+    2: ("mental", "Mental status and language", "PPES 2 · Weeks 8–9", "#3d6fb6"),
     3: ("cranial", "Cranial nerves", "PPES 2 · Weeks 8–9", "#23798a"),
     4: ("motor", "Motor", "PPES 2 · Weeks 8–9", "#7a3fb0"),
-    5: ("sensory", "Sensory", "PPES 2 · Weeks 8–9", "#a8366f"),
-    6: ("reflexes", "Reflexes", "PPES 2 · Weeks 8–9", "#b4501f"),
+    5: ("reflexes", "Reflexes", "PPES 2 · Weeks 8–9", "#b4501f"),
+    6: ("sensory", "Sensory", "PPES 2 · Weeks 8–9", "#a8366f"),
     7: ("coordination", "Coordination", "PPES 2 · Weeks 8–9", "#7d6413"),
-    8: ("gait", "Gait and balance", "PPES 2 · Weeks 8–9", "#2f6b4f"),
+    8: ("gait", "Balance and gait", "PPES 2 · Weeks 8–9", "#2f6b4f"),
     9: ("lesion", "Where is the lesion?", "PoM 2 · Neurology block", "#4d5590"),
 }
 
@@ -65,13 +65,17 @@ TESTS = {
     "Elbow flexion": ("Arm power (C5–T1)", "elbow-flexion.jpg"),
     "Elbow extension": ("Arm power (C5–T1)", "elbow-extension.jpg"),
     "Wrist extension": ("Arm power (C5–T1)", "wrist-extension.jpg"),
+    "Finger extension": ("Arm power (C5–T1)", None),
     "Finger abduction": ("Arm power (C5–T1)", "finger-abduction.jpg"),
     "Grip strength": ("Arm power (C5–T1)", "grip-strength.jpg"),
-    "Hip flexion": ("Leg power (L2–S1)", "hip-flexion.jpg"),
-    "Knee extension": ("Leg power (L2–S1)", "knee-extension.jpg"),
-    "Knee flexion": ("Leg power (L2–S1)", "knee-flexion.jpg"),
-    "Ankle dorsiflexion": ("Leg power (L2–S1)", "ankle-dorsiflexion.jpg"),
-    "Ankle plantar flexion": ("Leg power (L2–S1)", "ankle-plantar-flexion.jpg"),
+    "Hip flexion": ("Leg power (L1–S1)", "hip-flexion.jpg"),
+    "Hip adduction": ("Leg power (L1–S1)", None),
+    "Hip abduction": ("Leg power (L1–S1)", None),
+    "Knee extension": ("Leg power (L1–S1)", "knee-extension.jpg"),
+    "Knee flexion": ("Leg power (L1–S1)", "knee-flexion.jpg"),
+    "Ankle dorsiflexion": ("Leg power (L1–S1)", "ankle-dorsiflexion.jpg"),
+    "Ankle plantar flexion": ("Leg power (L1–S1)", "ankle-plantar-flexion.jpg"),
+    "Big toe extension": ("Leg power (L1–S1)", None),
     "Pain (pinprick)": ("Pain and temperature (spinothalamic)", "pain-pinprick.jpg"),
     "Temperature": ("Pain and temperature (spinothalamic)", "temperature.jpg"),
     "Light touch": ("Light touch", "light-touch.jpg"),
@@ -121,9 +125,9 @@ OTHER_VIDEO = {
 EXAM = exam_page.Exam(
     key="neuro", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening={},
     h1="Neurological exam",
-    lead='Mental status, cranial nerves, motor, sensory, reflexes, coordination, then gait.',
+    lead='The Year 2 Neurology Handbook screening exam: mental status and language, cranial nerves, motor (with reflexes), sensory, coordination, balance, then gait.',
     find="Find a manoeuvre or a level (e.g. C7, cerebellum)",
-    root="Mental status → Cranial nerves → Motor → Sensory → Reflexes → Coordination → Gait",
+    root="Mental status → Cranial nerves → Motor → Reflexes → Sensory → Coordination → Balance → Gait",
     root_note="Compare left with right, and near the trunk with far. Every finding answers one question: where is "
               "the lesion, and is it an upper or a lower motor neuron problem?",
     video_credit='Videos from the <a href="https://rsc.lib.uwo.ca/s/healthedu/item-set">Health Education Media Library</a> '
