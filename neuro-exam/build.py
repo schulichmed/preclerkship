@@ -27,13 +27,13 @@ NOTE = VAULT / "01 - Lectures/99 - Clinical Skills/Summary Notes - Neurological 
 
 # section number in the note -> region on the page
 REGIONS = {
-    2: ("mental", "Mental status", "PPES 2 · Weeks 8–9", "#3d6fb6"),
+    2: ("mental", "Mental status and language", "PPES 2 · Weeks 8–9", "#3d6fb6"),
     3: ("cranial", "Cranial nerves", "PPES 2 · Weeks 8–9", "#23798a"),
     4: ("motor", "Motor", "PPES 2 · Weeks 8–9", "#7a3fb0"),
-    5: ("sensory", "Sensory", "PPES 2 · Weeks 8–9", "#a8366f"),
-    6: ("reflexes", "Reflexes", "PPES 2 · Weeks 8–9", "#b4501f"),
+    5: ("reflexes", "Reflexes", "PPES 2 · Weeks 8–9", "#b4501f"),
+    6: ("sensory", "Sensory", "PPES 2 · Weeks 8–9", "#a8366f"),
     7: ("coordination", "Coordination", "PPES 2 · Weeks 8–9", "#7d6413"),
-    8: ("gait", "Gait and balance", "PPES 2 · Weeks 8–9", "#2f6b4f"),
+    8: ("gait", "Balance and gait", "PPES 2 · Weeks 8–9", "#2f6b4f"),
     9: ("lesion", "Where is the lesion?", "PoM 2 · Neurology block", "#4d5590"),
 }
 
@@ -65,13 +65,17 @@ TESTS = {
     "Elbow flexion": ("Arm power (C5–T1)", "elbow-flexion.jpg"),
     "Elbow extension": ("Arm power (C5–T1)", "elbow-extension.jpg"),
     "Wrist extension": ("Arm power (C5–T1)", "wrist-extension.jpg"),
+    "Finger extension": ("Arm power (C5–T1)", None),
     "Finger abduction": ("Arm power (C5–T1)", "finger-abduction.jpg"),
     "Grip strength": ("Arm power (C5–T1)", "grip-strength.jpg"),
-    "Hip flexion": ("Leg power (L2–S1)", "hip-flexion.jpg"),
-    "Knee extension": ("Leg power (L2–S1)", "knee-extension.jpg"),
-    "Knee flexion": ("Leg power (L2–S1)", "knee-flexion.jpg"),
-    "Ankle dorsiflexion": ("Leg power (L2–S1)", "ankle-dorsiflexion.jpg"),
-    "Ankle plantar flexion": ("Leg power (L2–S1)", "ankle-plantar-flexion.jpg"),
+    "Hip flexion": ("Leg power (L1–S1)", "hip-flexion.jpg"),
+    "Hip adduction": ("Leg power (L1–S1)", None),
+    "Hip abduction": ("Leg power (L1–S1)", None),
+    "Knee extension": ("Leg power (L1–S1)", "knee-extension.jpg"),
+    "Knee flexion": ("Leg power (L1–S1)", "knee-flexion.jpg"),
+    "Ankle dorsiflexion": ("Leg power (L1–S1)", "ankle-dorsiflexion.jpg"),
+    "Ankle plantar flexion": ("Leg power (L1–S1)", "ankle-plantar-flexion.jpg"),
+    "Big toe extension": ("Leg power (L1–S1)", None),
     "Pain (pinprick)": ("Pain and temperature (spinothalamic)", "pain-pinprick.jpg"),
     "Temperature": ("Pain and temperature (spinothalamic)", "temperature.jpg"),
     "Light touch": ("Light touch", "light-touch.jpg"),
@@ -121,9 +125,9 @@ OTHER_VIDEO = {
 EXAM = exam_page.Exam(
     key="neuro", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening={},
     h1="Neurological exam",
-    lead='Mental status, cranial nerves, motor, sensory, reflexes, coordination, then gait.',
+    lead='The Year 2 Neurology Handbook screening exam: mental status and language, cranial nerves, motor (with reflexes), sensory, coordination, balance, then gait.',
     find="Find a manoeuvre or a level (e.g. C7, cerebellum)",
-    root="Mental status → Cranial nerves → Motor → Sensory → Reflexes → Coordination → Gait",
+    root="Mental status → Cranial nerves → Motor → Reflexes → Sensory → Coordination → Balance → Gait",
     root_note="Compare left with right, and near the trunk with far. Every finding answers one question: where is "
               "the lesion, and is it an upper or a lower motor neuron problem?",
     video_credit='Videos from the <a href="https://rsc.lib.uwo.ca/s/healthedu/item-set">Health Education Media Library</a> '
@@ -163,6 +167,25 @@ EXAM.walk = {
  ]
 }
 EXAM.video_credit += ' Demonstration videos by Hamzah Algodi ("*Unofficial* Schulich Clinical Skills"), used with his permission.'
+
+# the handbook's "Definitions and terms": each mention on the page is underlined with a pop-up definition
+EXAM.glossary = {
+    "Dizzy": (r"dizzy|dizziness", "A patient's word that can mean vertigo, unsteadiness, ataxia or nausea: ask what they felt."),
+    "Black out": (r"black(?:ing)?[ -]outs?", "A patient's word that can mean loss of consciousness, of memory or of vision: ask what happened."),
+    "Allodynia": (r"allodynia", "Light touch and other harmless stimuli are felt as painful."),
+    "Bell's palsy": (r"Bell(?:'|&#x27;|&#39;|’)s palsy", "Idiopathic inflammation of one facial nerve (CN VII), a lower motor neuron lesion, so the forehead is weak too."),
+    "Clonus": (r"clonus", "A sudden stretch of a high-tone muscle makes it contract by reflex; if you hold the stretch, it keeps contracting in rhythmic beats. An upper motor neuron sign."),
+    "Rigidity": (r"rigidity|rigid", "Increased tone that is the same at any speed and in every direction (velocity independent). A sign of extrapyramidal disease, e.g. Parkinson disease."),
+    "Dysarthria": (r"dysarthria", "Speech volume and content are normal, but individual words are articulated and pronounced unclearly. A speech problem, not a language one."),
+    "Extrapyramidal": (r"extrapyramidal", "The basal ganglia and their tracts: they suppress involuntary movements and start voluntary ones. Disease here often shows as rigid tone."),
+    "Fasciculation": (r"fasciculations?", "Irregular, non-rhythmic twitches of muscle fascicles from whole motor units firing at random; fine or coarse. Tapping or warming the muscle brings them out. A lower motor neuron sign."),
+    "Paresis": (r"\w*paresis", "Weakness (hemiparesis: one side; paraparesis: both legs; quadriparesis: all four limbs)."),
+    "Plegia": (r"\w*plegia", "Paralysis (hemiplegia: one side)."),
+    "Paresthesia": (r"paresthesias?|paraesthesias?", "Altered sensation, usually positive: pins and needles, tingling."),
+    "Pyramidal pattern": (r"pyramidal(?: pattern)?", "Upper motor neuron weakness of the arm extensors (deltoids, triceps, wrist and finger extensors) and the leg flexors (hip flexion, knee flexion, ankle dorsiflexion, big toe extension)."),
+    "Paratonia": (r"paratonia", "The patient cannot relax the muscles while you test tone."),
+    "Spasticity": (r"spasticity|spastic", "Resistance is greatest as the movement starts, then suddenly gives way: a velocity-dependent increase in tone. An upper motor neuron sign."),
+}
 
 # captions for the landmark diagrams taken from the upper-year student notes
 for _key, _cap in {'cranial': 'Eye movements and their nerves · tap to enlarge', 'motor': 'Wasting to look for · tap to enlarge', 'sensory': 'Dermatomes · tap to enlarge'}.items():
