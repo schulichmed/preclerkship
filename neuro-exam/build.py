@@ -187,6 +187,9 @@ EXAM.glossary = {
     "Spasticity": (r"spasticity|spastic", "Resistance is greatest as the movement starts, then suddenly gives way: a velocity-dependent increase in tone. An upper motor neuron sign."),
 }
 
+# the region clips are whole-section walkthroughs and a few clips with no card of their own, not movements
+EXAM.moves_label = "Walkthroughs and more videos"
+
 # captions for the landmark diagrams taken from the upper-year student notes
 for _key, _cap in {'cranial': 'Eye movements and their nerves · tap to enlarge', 'motor': 'Wasting to look for · tap to enlarge', 'sensory': 'Dermatomes · tap to enlarge'}.items():
     EXAM.region_text.setdefault(_key, {})['landmark_caption'] = _cap
