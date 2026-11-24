@@ -125,6 +125,8 @@ class Exam:
     # term -> (regex, definition): every mention in the page's prose is underlined and shows its
     # definition in a pop-up on hover, focus or tap (headings, buttons and links are left alone)
     glossary: dict = field(default_factory=dict)
+    # the label on the accordion of a region's library clips (range-of-motion clips on the MSK pages)
+    moves_label: str = "Movements"
     # region key -> {test name: (problem, picture)}, overriding tests for that region only
     region_tests: dict = field(default_factory=dict)
     # region_video from the course's own suggested list (MSK Medicine for MSK) plays before
@@ -606,7 +608,7 @@ def wide_card(exam: Exam, title: str, body: str, slugs: list[str] | None = None,
     region = "".join(video(exam, v, thumb=i == 0 and not (side or walk)) for i, v in enumerate(slugs or []))
     side += region + walk if exam.official_region_video else walk + region
     if moves:
-        side += (f'<details class="acc moves"><summary>Movements ({len(moves)})</summary>'
+        side += (f'<details class="acc moves"><summary>{html.escape(exam.moves_label)} ({len(moves)})</summary>'
                  f'<div>{clips(exam, clip_key)}</div></details>')
     side += rom_block(exam, clip_key) if clip_key else ""
     return (f'<article class="test wide" tabindex="0" data-words="{html.escape(words)}">'
