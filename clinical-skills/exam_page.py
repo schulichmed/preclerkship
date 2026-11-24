@@ -122,6 +122,9 @@ class Exam:
     clips: dict = field(default_factory=dict)
     extra_cards: dict = field(default_factory=dict)
     walk: dict = field(default_factory=dict)
+    # term -> (regex, definition): every mention in the page's prose is underlined and shows its
+    # definition in a pop-up on hover, focus or tap (headings, buttons and links are left alone)
+    glossary: dict = field(default_factory=dict)
     # region key -> {test name: (problem, picture)}, overriding tests for that region only
     region_tests: dict = field(default_factory=dict)
     # region_video from the course's own suggested list (MSK Medicine for MSK) plays before
@@ -637,6 +640,55 @@ def region_pictures(exam: Exam, key: str) -> str:
     return f'<details class="acc moves pic"><summary>{html.escape(label)} ({len(pics)})</summary><div>{figs}</div></details>'
 
 
+GLOSS_SKIP = {"h1", "h2", "h3", "h4", "a", "button", "summary", "script", "style", "textarea", "figcaption"}
+
+
+def gloss(page: str, glossary: dict) -> str:
+    """Wrap each glossary term in the page's text in an underlined span carrying its definition.
+
+    Parameters
+    ----------
+    page : str
+        Rendered HTML (the bands).
+    glossary : dict
+        Term -> (regex, definition).
+
+    Returns
+    -------
+    str
+        The HTML with every mention outside headings, links and buttons wrapped.
+    """
+    if not glossary:
+        return page
+    names = list(glossary)
+    # one alternation, longest terms first, so a term never matches inside another's wrapper
+    order = sorted(range(len(names)), key=lambda i: -len(glossary[names[i]][0]))
+    combined = re.compile("|".join(rf"(?P<g{i}>(?<![\w-])(?:{glossary[names[i]][0]})(?![\w-]))" for i in order), re.I)
+
+    def wrap(m: re.Match) -> str:
+        name = names[int(m.lastgroup[1:])]
+        return (f'<span class="term" tabindex="0" data-term="{html.escape(name)}" '
+                f'data-def="{html.escape(glossary[name][1])}">{m.group(0)}</span>')
+    out, skip = [], []
+    for part in re.split(r"(<[^>]+>)", page):
+        if part.startswith("<"):
+            m = re.match(r"<(/?)([a-zA-Z0-9]+)", part)
+            if m and m.group(2).lower() in GLOSS_SKIP:
+                if m.group(1):
+                    if skip and skip[-1] == m.group(2).lower():
+                        skip.pop()
+                elif not part.endswith("/>"):
+                    skip.append(m.group(2).lower())
+            out.append(part)
+            continue
+        if skip or not part.strip():
+            out.append(part)
+            continue
+        part = combined.sub(wrap, part)
+        out.append(part)
+    return "".join(out)
+
+
 def render(exam: Exam, regions: list[dict], credits: list[dict]) -> str:
     """Render the whole page."""
     def numbered(r: dict) -> int:
@@ -693,7 +745,7 @@ def render(exam: Exam, regions: list[dict], credits: list[dict]) -> str:
             "EYEBROW": eyebrow,
             "H1": exam.h1, "LEAD": exam.lead, "FIND": exam.find, "ROOT": exam.root, "ROOT_NOTE": exam.root_note,
             "VIDEO_CREDIT": exam.video_credit, "COLS": str(len(regions)), "EDGE": f"{50 / len(regions):.1f}",
-            "CHIPS": chips, "BANDS": "".join(bands), "CREDITS": cred}
+            "CHIPS": chips, "BANDS": gloss("".join(bands), exam.glossary), "CREDITS": cred}
     return re.sub(r"\{\{([A-Z0-9_]+)\}\}", lambda m: fill[m.group(1)], PAGE)
 
 
@@ -807,6 +859,11 @@ html{scroll-behavior:smooth}
 .dial figcaption b{display:block;font:700 15px ui-monospace,Consolas,monospace}
 .dial figcaption span{display:block;font-size:12px;color:var(--muted);line-height:1.25}
 :focus-visible{outline:3px solid var(--accent)}
+.term{text-decoration:underline dotted color-mix(in srgb,var(--accent) 70%,var(--ink));text-decoration-thickness:1.5px;text-underline-offset:3px;cursor:help;border-radius:3px}
+.term:hover,.term:focus{background:color-mix(in srgb,var(--accent) 12%,transparent);outline:none}
+.termtip{position:fixed;z-index:50;max-width:min(320px,calc(100vw - 24px));background:var(--card-bg);color:var(--text);border:1px solid var(--border);border-radius:10px;padding:8px 11px;font:13.5px/1.45 var(--sans);box-shadow:0 6px 20px rgb(0 0 0 / .18);pointer-events:none}
+.termtip b{display:block;margin-bottom:2px}
+.termtip[hidden]{display:none}
 </style>
 {{NAV}}
 
@@ -835,6 +892,19 @@ html{scroll-behavior:smooth}
 </main>
 <script>
 (function(){
+  // glossary pop-ups: one box, placed under (or above) the term and kept on screen
+  var tip=document.createElement('div'); tip.className='termtip'; tip.hidden=true; tip.setAttribute('role','tooltip'); tip.id='termtip';
+  document.body.appendChild(tip); var cur=null;
+  function show(t){cur=t; tip.innerHTML='<b></b><span></span>'; tip.firstChild.textContent=t.dataset.term; tip.lastChild.textContent=t.dataset.def;
+    tip.hidden=false; t.setAttribute('aria-describedby','termtip'); var r=t.getBoundingClientRect(), w=tip.offsetWidth, h=tip.offsetHeight;
+    var x=Math.max(12,Math.min(r.left+r.width/2-w/2,innerWidth-w-12)), y=r.bottom+8; if(y+h>innerHeight-8)y=r.top-h-8;
+    tip.style.left=x+'px'; tip.style.top=y+'px';}
+  function hide(){if(cur)cur.removeAttribute('aria-describedby'); cur=null; tip.hidden=true;}
+  document.addEventListener('mouseover',function(e){var t=e.target.closest&&e.target.closest('.term'); if(t)show(t); else if(cur&&document.activeElement!==cur)hide();});
+  document.addEventListener('focusin',function(e){var t=e.target.closest&&e.target.closest('.term'); if(t)show(t);});
+  document.addEventListener('focusout',function(e){if(e.target===cur)hide();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')hide();});
+  addEventListener('scroll',hide,{passive:true});
   document.addEventListener('click',function(e){
     var b=e.target.closest('.vid[data-yt],.vid[data-mp4]'); if(!b)return; e.stopPropagation();
     // a second tap on the button closes the player it opened

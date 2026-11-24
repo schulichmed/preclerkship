@@ -168,6 +168,25 @@ EXAM.walk = {
 }
 EXAM.video_credit += ' Demonstration videos by Hamzah Algodi ("*Unofficial* Schulich Clinical Skills"), used with his permission.'
 
+# the handbook's "Definitions and terms": each mention on the page is underlined with a pop-up definition
+EXAM.glossary = {
+    "Dizzy": (r"dizzy|dizziness", "A patient's word that can mean vertigo, unsteadiness, ataxia or nausea: ask what they felt."),
+    "Black out": (r"black(?:ing)?[ -]outs?", "A patient's word that can mean loss of consciousness, of memory or of vision: ask what happened."),
+    "Allodynia": (r"allodynia", "Light touch and other harmless stimuli are felt as painful."),
+    "Bell's palsy": (r"Bell(?:'|&#x27;|&#39;|’)s palsy", "Idiopathic inflammation of one facial nerve (CN VII), a lower motor neuron lesion, so the forehead is weak too."),
+    "Clonus": (r"clonus", "A sudden stretch of a high-tone muscle makes it contract by reflex; if you hold the stretch, it keeps contracting in rhythmic beats. An upper motor neuron sign."),
+    "Rigidity": (r"rigidity|rigid", "Increased tone that is the same at any speed and in every direction (velocity independent). A sign of extrapyramidal disease, e.g. Parkinson disease."),
+    "Dysarthria": (r"dysarthria", "Speech volume and content are normal, but individual words are articulated and pronounced unclearly. A speech problem, not a language one."),
+    "Extrapyramidal": (r"extrapyramidal", "The basal ganglia and their tracts: they suppress involuntary movements and start voluntary ones. Disease here often shows as rigid tone."),
+    "Fasciculation": (r"fasciculations?", "Irregular, non-rhythmic twitches of muscle fascicles from whole motor units firing at random; fine or coarse. Tapping or warming the muscle brings them out. A lower motor neuron sign."),
+    "Paresis": (r"\w*paresis", "Weakness (hemiparesis: one side; paraparesis: both legs; quadriparesis: all four limbs)."),
+    "Plegia": (r"\w*plegia", "Paralysis (hemiplegia: one side)."),
+    "Paresthesia": (r"paresthesias?|paraesthesias?", "Altered sensation, usually positive: pins and needles, tingling."),
+    "Pyramidal pattern": (r"pyramidal(?: pattern)?", "Upper motor neuron weakness of the arm extensors (deltoids, triceps, wrist and finger extensors) and the leg flexors (hip flexion, knee flexion, ankle dorsiflexion, big toe extension)."),
+    "Paratonia": (r"paratonia", "The patient cannot relax the muscles while you test tone."),
+    "Spasticity": (r"spasticity|spastic", "Resistance is greatest as the movement starts, then suddenly gives way: a velocity-dependent increase in tone. An upper motor neuron sign."),
+}
+
 # captions for the landmark diagrams taken from the upper-year student notes
 for _key, _cap in {'cranial': 'Eye movements and their nerves · tap to enlarge', 'motor': 'Wasting to look for · tap to enlarge', 'sensory': 'Dermatomes · tap to enlarge'}.items():
     EXAM.region_text.setdefault(_key, {})['landmark_caption'] = _cap
