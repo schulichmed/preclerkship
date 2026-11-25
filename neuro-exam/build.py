@@ -125,7 +125,7 @@ OTHER_VIDEO = {
 EXAM = exam_page.Exam(
     key="neuro", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening={},
     h1="Neurological exam",
-    lead='The Year 2 Neurology Handbook screening exam: mental status and language, cranial nerves, motor (with reflexes), sensory, coordination, balance, then gait.',
+    lead='The Year 2 Neurology Handbook screening exam: mental status and language, cranial nerves, motor (with reflexes), sensory, coordination, balance, then gait. <a href="neuro-one-pager.pdf">One-page summary (PDF)</a>',
     find="Find a manoeuvre or a level (e.g. C7, cerebellum)",
     root="Mental status → Cranial nerves → Motor → Reflexes → Sensory → Coordination → Balance → Gait",
     root_note="Compare left with right, and near the trunk with far. Every finding answers one question: where is "
