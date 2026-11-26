@@ -1,7 +1,7 @@
 {
  "name": "head injury overview",
  "width": 1384,
- "title": "A head injury is a trauma patient first: the primary survey and the Glasgow Coma Scale grade it; a severe injury is acted on for herniation and sent for a STAT CT, which tells epidural, acute subdural, contusion, intracerebral hemorrhage and diffuse axonal injury or traumatic subarachnoid hemorrhage apart, each with its own surgical rule; a concussion is a clinical diagnosis managed by removal, rest and a graded return",
+ "title": "A head injury is a trauma patient first: the primary survey and the Glasgow Coma Scale grade it; a severe injury is acted on for herniation and sent for a STAT CT, which tells epidural, acute subdural, contusion, intracerebral hemorrhage and diffuse axonal injury or traumatic subarachnoid hemorrhage apart, each with its own surgical rule; the herniation box names every type, the epidural column carries skull fractures (basilar signs, missed on CT, meningitis risk); a concussion is a clinical diagnosis managed by removal, rest and a graded return, and its column ends with what can follow (second impact, post-concussion syndrome, CTE) and prevention",
  "kinds": {
   "edh_h": [
    "#1f6f8b",
@@ -115,49 +115,49 @@
  "bands": [
   {
    "x": 40,
-   "y": 514,
+   "y": 614,
    "w": 216,
-   "h": 1130,
+   "h": 1334,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 258,
-   "y": 514,
+   "y": 614,
    "w": 216,
-   "h": 1130,
+   "h": 1334,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 476,
-   "y": 514,
+   "y": 614,
    "w": 216,
-   "h": 1130,
+   "h": 1334,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 694,
-   "y": 514,
+   "y": 614,
    "w": 216,
-   "h": 1130,
+   "h": 1334,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 912,
-   "y": 514,
+   "y": 614,
    "w": 216,
-   "h": 1130,
+   "h": 1334,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 1158,
-   "y": 514,
+   "y": 614,
    "w": 216,
-   "h": 1130,
+   "h": 1948,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   }
@@ -171,21 +171,27 @@
   },
   {
    "x": 23,
-   "y": 712,
-   "h": 242,
+   "y": 812,
+   "h": 434,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 994,
-   "h": 150,
+   "y": 1286,
+   "h": 162,
    "text": "CT"
   },
   {
    "x": 23,
-   "y": 1184,
+   "y": 1488,
    "h": 452,
    "text": "TREATMENT"
+  },
+  {
+   "x": 23,
+   "y": 1980,
+   "h": 574,
+   "text": "WHAT CAN FOLLOW"
   }
  ],
  "nodes": [
@@ -234,11 +240,12 @@
    "w": 1078,
    "h": 132,
    "kind": "info",
-   "title": "Herniating? Act, then a STAT CT",
+   "title": "Herniating? Which way?",
    "lines": [
-    "• UNCAL: same-side fixed dilated pupil (third nerve) + opposite-side weakness",
-    "• TONSILLAR: medulla compressed → Cushing's triad (hypertension, bradycardia, apnea) · fatal",
-    "• intubate · head of the bed up · IV mannitol or 3% saline"
+    "• UNCAL: same-side fixed dilated pupil (third nerve palsy) + opposite-side weakness",
+    "• TONSILLAR: medulla compressed → Cushing's triad (hypertension, bradycardia, apnea) → fatal cardiorespiratory failure",
+    "• subfalcine · CENTRAL: ↓ consciousness · transcalvarial",
+    "• descending: nerves III, IV, VI · PCA, ACA stroke · Duret hemorrhage"
    ]
   },
   {
@@ -256,9 +263,21 @@
    ]
   },
   {
+   "id": "t_act",
+   "x": 45,
+   "y": 482,
+   "w": 1078,
+   "h": 60,
+   "kind": "plain",
+   "title": "Act, then a STAT CT",
+   "lines": [
+    "• intubate · head of the bed up · IV mannitol or 3% saline"
+   ]
+  },
+  {
    "id": "edh_head_0_0",
    "x": 45,
-   "y": 522,
+   "y": 622,
    "w": 206,
    "h": 150,
    "kind": "edh_h",
@@ -271,7 +290,7 @@
   {
    "id": "sdh_head_0_0",
    "x": 263,
-   "y": 522,
+   "y": 622,
    "w": 206,
    "h": 150,
    "kind": "sdh_h",
@@ -284,7 +303,7 @@
   {
    "id": "cont_head_0_0",
    "x": 481,
-   "y": 522,
+   "y": 622,
    "w": 206,
    "h": 150,
    "kind": "cont_h",
@@ -297,7 +316,7 @@
   {
    "id": "ich_head_0_0",
    "x": 699,
-   "y": 522,
+   "y": 622,
    "w": 206,
    "h": 150,
    "kind": "ich_h",
@@ -310,7 +329,7 @@
   {
    "id": "dai_head_0_0",
    "x": 917,
-   "y": 522,
+   "y": 622,
    "w": 206,
    "h": 150,
    "kind": "dai_h",
@@ -323,7 +342,7 @@
   {
    "id": "conc_head_0_0",
    "x": 1163,
-   "y": 522,
+   "y": 622,
    "w": 206,
    "h": 150,
    "kind": "conc_h",
@@ -337,7 +356,7 @@
   {
    "id": "edh_clue_0_0",
    "x": 45,
-   "y": 712,
+   "y": 812,
    "w": 206,
    "h": 242,
    "kind": "edh_t",
@@ -350,11 +369,25 @@
    ]
   },
   {
+   "id": "edh_clue_1_0",
+   "x": 45,
+   "y": 1076,
+   "w": 206,
+   "h": 170,
+   "kind": "edh_w",
+   "title": "Skull fractures: CONTACT injury",
+   "lines": [
+    "• linear · depressed · open or closed",
+    "• BASILAR: raccoon eyes · Battle sign",
+    "• BASILAR: CSF from ear or nose · hemotympanum"
+   ]
+  },
+  {
    "id": "sdh_clue_0_0",
    "x": 263,
-   "y": 712,
+   "y": 812,
    "w": 206,
-   "h": 242,
+   "h": 434,
    "kind": "sdh_t",
    "title": "Acceleration-deceleration",
    "lines": [
@@ -367,9 +400,9 @@
   {
    "id": "cont_clue_0_0",
    "x": 481,
-   "y": 712,
+   "y": 812,
    "w": 206,
-   "h": 242,
+   "h": 434,
    "kind": "cont_t",
    "title": "Depends on size and site",
    "lines": [
@@ -382,9 +415,9 @@
   {
    "id": "ich_clue_0_0",
    "x": 699,
-   "y": 712,
+   "y": 812,
    "w": 206,
-   "h": 242,
+   "h": 434,
    "kind": "ich_t",
    "title": "A confluent bleed in the brain",
    "lines": [
@@ -396,9 +429,9 @@
   {
    "id": "dai_clue_0_0",
    "x": 917,
-   "y": 712,
+   "y": 812,
    "w": 206,
-   "h": 242,
+   "h": 434,
    "kind": "dai_t",
    "title": "LOC at the scene → PERSISTENT coma",
    "lines": [
@@ -411,9 +444,9 @@
   {
    "id": "conc_clue_0_0",
    "x": 1163,
-   "y": 712,
+   "y": 812,
    "w": 206,
-   "h": 242,
+   "h": 434,
    "kind": "conc_t",
    "title": "No focal deficit",
    "lines": [
@@ -427,9 +460,9 @@
   {
    "id": "edh_inv_0_0",
    "x": 45,
-   "y": 994,
+   "y": 1286,
    "w": 206,
-   "h": 150,
+   "h": 60,
    "kind": "edh_w",
    "title": "LENS-shaped",
    "lines": [
@@ -437,11 +470,23 @@
    ]
   },
   {
+   "id": "edh_inv_1_0",
+   "x": 45,
+   "y": 1368,
+   "w": 206,
+   "h": 80,
+   "kind": "bad",
+   "title": "Basilar fracture: may be MISSED on CT",
+   "lines": [
+    "risk of MENINGITIS"
+   ]
+  },
+  {
    "id": "sdh_inv_0_0",
    "x": 263,
-   "y": 994,
+   "y": 1286,
    "w": 206,
-   "h": 150,
+   "h": 162,
    "kind": "sdh_w",
    "title": "CRESCENT-shaped",
    "lines": [
@@ -451,9 +496,9 @@
   {
    "id": "cont_inv_0_0",
    "x": 481,
-   "y": 994,
+   "y": 1286,
    "w": 206,
-   "h": 150,
+   "h": 162,
    "kind": "cont_w",
    "title": "MIXED high + low density",
    "lines": [
@@ -463,9 +508,9 @@
   {
    "id": "ich_inv_0_0",
    "x": 699,
-   "y": 994,
+   "y": 1286,
    "w": 206,
-   "h": 150,
+   "h": 162,
    "kind": "ich_w",
    "title": "HOMOGENEOUS, well-defined",
    "lines": [
@@ -475,9 +520,9 @@
   {
    "id": "dai_inv_0_0",
    "x": 917,
-   "y": 994,
+   "y": 1286,
    "w": 206,
-   "h": 150,
+   "h": 162,
    "kind": "dai_w",
    "title": "Axonal: petechiae",
    "lines": [
@@ -492,9 +537,9 @@
   {
    "id": "conc_inv_0_0",
    "x": 1163,
-   "y": 994,
+   "y": 1286,
    "w": 206,
-   "h": 150,
+   "h": 162,
    "kind": "conc_w",
    "title": "CLINICAL diagnosis",
    "lines": [
@@ -504,7 +549,7 @@
   {
    "id": "edh_tx_0_0",
    "x": 45,
-   "y": 1184,
+   "y": 1488,
    "w": 206,
    "h": 233,
    "kind": "bad",
@@ -519,7 +564,7 @@
   {
    "id": "edh_tx_1_0",
    "x": 45,
-   "y": 1439,
+   "y": 1743,
    "w": 206,
    "h": 197,
    "kind": "warn",
@@ -531,7 +576,7 @@
   {
    "id": "sdh_tx_0_0",
    "x": 263,
-   "y": 1184,
+   "y": 1488,
    "w": 206,
    "h": 251,
    "kind": "bad",
@@ -546,7 +591,7 @@
   {
    "id": "sdh_tx_1_0",
    "x": 263,
-   "y": 1457,
+   "y": 1761,
    "w": 206,
    "h": 179,
    "kind": "warn",
@@ -558,7 +603,7 @@
   {
    "id": "cont_tx_0_0",
    "x": 481,
-   "y": 1184,
+   "y": 1488,
    "w": 206,
    "h": 452,
    "kind": "warn",
@@ -571,7 +616,7 @@
   {
    "id": "ich_tx_0_0",
    "x": 699,
-   "y": 1184,
+   "y": 1488,
    "w": 206,
    "h": 452,
    "kind": "bad",
@@ -584,7 +629,7 @@
   {
    "id": "dai_tx_0_0",
    "x": 917,
-   "y": 1184,
+   "y": 1488,
    "w": 206,
    "h": 452,
    "kind": "warn",
@@ -594,7 +639,7 @@
   {
    "id": "conc_tx_0_0",
    "x": 1163,
-   "y": 1184,
+   "y": 1488,
    "w": 206,
    "h": 224,
    "kind": "ok",
@@ -609,7 +654,7 @@
   {
    "id": "conc_tx_1_0",
    "x": 1163,
-   "y": 1430,
+   "y": 1734,
    "w": 206,
    "h": 206,
    "kind": "ok",
@@ -620,6 +665,70 @@
     "3 · non-contact, then harder drills",
     "4 · full contact after MEDICAL CLEARANCE",
     "5 · normal game play"
+   ]
+  },
+  {
+   "id": "conc_later_0_0",
+   "x": 1163,
+   "y": 1980,
+   "w": 206,
+   "h": 80,
+   "kind": "bad",
+   "title": "Second-impact syndrome",
+   "lines": [
+    "cerebral swelling"
+   ]
+  },
+  {
+   "id": "conc_later_1_0",
+   "x": 1163,
+   "y": 2082,
+   "w": 206,
+   "h": 116,
+   "kind": "bad",
+   "title": "Post-concussion syndrome",
+   "lines": [
+    "• over 2 weeks adults, 4 weeks youth",
+    "→ permanent removal"
+   ]
+  },
+  {
+   "id": "conc_later_2_0",
+   "x": 1163,
+   "y": 2220,
+   "w": 206,
+   "h": 78,
+   "kind": "bad",
+   "title": "Also",
+   "lines": [
+    "• post-traumatic epilepsy",
+    "• depression, anxiety, suicide"
+   ]
+  },
+  {
+   "id": "conc_later_3_0",
+   "x": 1163,
+   "y": 2320,
+   "w": 206,
+   "h": 116,
+   "kind": "bad",
+   "title": "CTE: repeated concussions",
+   "lines": [
+    "• tau tangles",
+    "• NEUROPATHOLOGICAL diagnosis"
+   ]
+  },
+  {
+   "id": "conc_later_4_0",
+   "x": 1163,
+   "y": 2458,
+   "w": 206,
+   "h": 96,
+   "kind": "ok",
+   "title": "Prevent",
+   "lines": [
+    "• no checks to the head, no headers",
+    "• return-to-play protocol"
    ]
   }
  ],
@@ -643,6 +752,19 @@
    "to": "p_mild"
   },
   {
+   "from": "p_sev",
+   "to": "t_act",
+   "from_dx": 0
+  },
+  {
+   "from": "edh_clue_0_0",
+   "to": "edh_clue_1_0"
+  },
+  {
+   "from": "edh_inv_0_0",
+   "to": "edh_inv_1_0"
+  },
+  {
    "from": "edh_tx_0_0",
    "to": "edh_tx_1_0"
   },
@@ -655,19 +777,35 @@
    "to": "conc_tx_1_0"
   },
   {
+   "from": "conc_later_0_0",
+   "to": "conc_later_1_0"
+  },
+  {
+   "from": "conc_later_1_0",
+   "to": "conc_later_2_0"
+  },
+  {
+   "from": "conc_later_2_0",
+   "to": "conc_later_3_0"
+  },
+  {
+   "from": "conc_later_3_0",
+   "to": "conc_later_4_0"
+  },
+  {
    "from": "edh_head_0_0",
    "to": "edh_clue_0_0"
   },
   {
-   "from": "edh_clue_0_0",
+   "from": "edh_clue_1_0",
    "to": "edh_inv_0_0"
   },
   {
-   "from": "edh_inv_0_0",
+   "from": "edh_inv_1_0",
    "to": "edh_tx_0_0"
   },
   {
-   "from": "p_sev",
+   "from": "t_act",
    "to": "edh_head_0_0",
    "from_dx": -436
   },
@@ -684,7 +822,7 @@
    "to": "sdh_tx_0_0"
   },
   {
-   "from": "p_sev",
+   "from": "t_act",
    "to": "sdh_head_0_0",
    "from_dx": -218
   },
@@ -701,7 +839,7 @@
    "to": "cont_tx_0_0"
   },
   {
-   "from": "p_sev",
+   "from": "t_act",
    "to": "cont_head_0_0",
    "from_dx": 0
   },
@@ -718,7 +856,7 @@
    "to": "ich_tx_0_0"
   },
   {
-   "from": "p_sev",
+   "from": "t_act",
    "to": "ich_head_0_0",
    "from_dx": 218
   },
@@ -735,7 +873,7 @@
    "to": "dai_tx_0_0"
   },
   {
-   "from": "p_sev",
+   "from": "t_act",
    "to": "dai_head_0_0",
    "from_dx": 436
   },
@@ -752,51 +890,14 @@
    "to": "conc_tx_0_0"
   },
   {
+   "from": "conc_tx_1_0",
+   "to": "conc_later_0_0"
+  },
+  {
    "from": "p_mild",
    "to": "conc_head_0_0",
    "from_dx": 0
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1670,
-   "w": 432,
-   "title": "Herniation",
-   "items": [
-    "subfalcine · central: ↓ consciousness · transcalvarial",
-    "UNCAL: same-side third nerve palsy, dilated pupil + opposite weakness",
-    "TONSILLAR: medulla compressed → fatal cardiorespiratory failure",
-    "descending: nerves III, IV, VI · PCA, ACA stroke · Duret hemorrhage",
-    "Cushing's triad: hypertension, bradycardia, apnea"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 491,
-   "y": 1670,
-   "w": 432,
-   "title": "Skull fractures",
-   "items": [
-    "linear · depressed · open or closed: CONTACT injury",
-    "BASILAR: raccoon eyes · Battle sign · CSF from ear or nose · hemotympanum",
-    "basilar: may be missed on CT · risk of MENINGITIS"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 937,
-   "y": 1670,
-   "w": 432,
-   "title": "Concussion: what can follow",
-   "items": [
-    "second-impact syndrome: cerebral swelling",
-    "post-concussion syndrome: over 2 weeks adults, 4 weeks youth → permanent removal",
-    "post-traumatic epilepsy · depression, anxiety, suicide",
-    "CTE: repeated concussions · tau tangles · NEUROPATHOLOGICAL diagnosis",
-    "prevent: no checks to the head, no headers · return-to-play protocol"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

@@ -1,96 +1,137 @@
 {
  "name": "aphasia syndromes overview",
- "title": "Cortical syndromes: test comprehension first, then fluency and repetition; the pattern names the aphasia and localizes it in the dominant hemisphere (Broca's inferior frontal, Wernicke's posterior temporal, global full MCA territory; conduction and the transcortical aphasias for keeners); neglect points to the non-dominant hemisphere, and apraxia, cortical sensory signs and extinction also localize to the cortex",
- "col_w": 150,
+ "title": "Cortical syndromes, split by hemisphere and lobe: in the DOMINANT hemisphere, comprehension then fluency and repetition name the aphasia and its lobe (Broca's inferior frontal, Wernicke's posterior temporal, global full MCA territory; conduction and transcortical aphasias for keeners); the NON-DOMINANT hemisphere gives neglect; apraxia (parietal or frontal), cortical sensory loss (parietal) and extinction (touch parietal, vision occipital) are other cortical signs; a last column tells a subcortical or brainstem lesion apart",
+ "col_w": 144,
  "root": {
-  "title": "Trouble with LANGUAGE (aphasia), not articulation (dysarthria)?",
+  "title": "A CORTICAL sign? Which hemisphere, which lobe?",
   "lines": [
-   "aphasia = DOMINANT hemisphere (left in right-handers) · dominant MCA stroke usually has some",
-   "left-handers: 60% left · 19% right · 20% bilateral",
-   "matters: an aphasic patient is NOT confused or delirious",
-   "test naming · comprehension · fluency · repetition · reading · writing",
-   "comprehension: MOTOR commands, 1 → 3 step · fluency: nonsense sounds still = fluent · repetition: \"no ifs, ands or buts\""
+   "cortex: aphasia, neglect, apraxia, cortical sensory · homonymous hemianopia",
+   "aphasia = LANGUAGE, not articulation (dysarthria)"
   ]
  },
  "groups": [
   {
-   "id": "g_int",
-   "cols": [0, 2],
-   "title": "COMPREHENSION INTACT",
-   "lines": ["follows motor commands"]
+   "id": "g_dom",
+   "cols": [0, 5],
+   "title": "DOMINANT hemisphere: APHASIA",
+   "lines": [
+    "• left in right-handers · left-handers: 60% left, 19% right, 20% bilateral",
+    "• dominant MCA stroke usually has some · NOT confused or delirious",
+    "• test naming, comprehension, fluency, repetition, reading, writing",
+    "• fluency: nonsense sounds still = fluent · repetition: \"no ifs, ands or buts\""
+   ]
   },
   {
-   "id": "g_low",
-   "cols": [3, 5],
-   "title": "COMPREHENSION ↓",
-   "lines": ["cannot follow commands"]
+   "id": "g_nd",
+   "cols": [6, 6],
+   "title": "NON-DOMINANT hemisphere",
+   "lines": ["• ignores one side"]
+  },
+  {
+   "id": "g_oth",
+   "cols": [7, 9],
+   "title": "OTHER CORTICAL SIGNS",
+   "lines": ["• the LESION row names the lobe"]
+  },
+  {
+   "id": "g_not",
+   "cols": [10, 10],
+   "title": "NOT CORTEX?",
+   "lines": ["• none of the cortical signs"]
   }
+ ],
+ "tiers": [
+  {"id": "t_int", "cols": [0, 2], "title": "COMPREHENSION INTACT",
+   "lines": ["• follows MOTOR commands, 1 → 3 step"]},
+  {"id": "t_low", "cols": [3, 5], "title": "COMPREHENSION ↓",
+   "lines": ["• cannot follow commands"]}
  ],
  "sections": ["head", "clue", "inv"],
  "row_names": {
-  "clue": "FLUENCY · REPETITION",
+  "clue": "WHAT YOU FIND",
   "inv": "LESION"
  },
  "columns": [
   {
-   "id": "broca",
+   "id": "broca", "drop_from": "t_int",
    "colour": "teal",
    "head": [[["h", "Broca's", ["expressive aphasia"]]]],
    "clue": [[["t", "Fluency ↓", ["• slow, halting", "• none if severe", "• paraphasic errors", "• speech AND writing", "• repetition ↓", "• naming ↓"]]]],
    "inv": [[["w", "Inferior frontal lobe", []]]]
   },
   {
-   "id": "tcm",
+   "id": "tcm", "drop_from": "t_int",
    "colour": "slate",
    "head": [[["h", "Transcortical motor", ["keeners only"]]]],
    "clue": [[["t", "Fluency ↓", ["• repetition NORMAL", "• naming ↓"]]]],
    "inv": [[["w", "Parasagittal mid frontal", []]]]
   },
   {
-   "id": "cond",
+   "id": "cond", "drop_from": "t_int",
    "colour": "olive",
    "head": [[["h", "Conduction", ["keeners only"]]]],
    "clue": [[["t", "Fluency normal", ["• repetition ↓", "• naming variable"]]]],
    "inv": [[["w", "Arcuate fasciculus", []]]]
   },
   {
-   "id": "wern",
+   "id": "wern", "drop_from": "t_low",
    "colour": "purple",
    "head": [[["h", "Wernicke's", ["receptive aphasia"]]]],
    "clue": [[["t", "Fluent nonsense", ["• like a foreign language if severe", "• mild: real words, not coherent", "• repetition ↓", "• naming ↓"]]]],
    "inv": [[["w", "Posterior temporal lobe", []]]]
   },
   {
-   "id": "glob",
+   "id": "glob", "drop_from": "t_low",
    "colour": "orange",
    "head": [[["h", "Global", ["cannot understand or express"]]]],
    "clue": [[["t", "No verbal output", ["• repetition ↓", "• naming ↓"]]]],
    "inv": [[["w", "Full middle cerebral artery (MCA) territory", []]]]
   },
   {
-   "id": "tcs",
+   "id": "tcs", "drop_from": "t_low",
    "colour": "blue",
    "head": [[["h", "Transcortical sensory", ["keeners only"]]]],
    "clue": [[["t", "Fluent", ["• repetition NORMAL", "• naming ↓"]]]],
    "inv": [[["w", "Parasagittal parietal", []]]]
+  },
+  {
+   "id": "negl",
+   "colour": "magenta",
+   "head": [[["h", "Neglect", ["NON-DOMINANT hemisphere"]]]],
+   "clue": [[["t", "Ignores one side", ["• visual: blink to threat may stay", "• sensory: ignores touch on that side"]]],
+            [["t", "Doesn't recognize", ["• asomatognosia: own body part", "• anosognosia: the deficit"]]],
+            [["t", "Dressing apraxia", ["can't put clothes on"]]]],
+   "inv": [[["w", "NON-DOMINANT hemisphere", []]]]
+  },
+  {
+   "id": "aprax",
+   "colour": "brown",
+   "head": [[["h", "Apraxia", ["can't do a motor task", "DESPITE power"]]]],
+   "clue": [[["t", "Ask them to", ["• pretend to hammer", "• hand postures", "• dress, whistle, draw"]]]],
+   "inv": [[["w", "PARIETAL or FRONTAL lobe", []]]]
+  },
+  {
+   "id": "csens",
+   "colour": "teal",
+   "head": [[["h", "Cortical sensory loss", ["PRIMARY sensation intact"]]]],
+   "clue": [[["t", "Lost", ["• graphesthesia", "• stereognosis", "• direction"]]],
+            [["warn", "PRIMARY sensory loss", ["can't localize to cortex"]]]],
+   "inv": [[["w", "PARIETAL lobe", ["• graphesthesia", "• stereognosis"]]]]
+  },
+  {
+   "id": "ext",
+   "colour": "olive",
+   "head": [[["h", "Extinction", ["misses one side", "only when BOTH stimulated"]]]],
+   "clue": [[["t", "Touch or vision", ["• one side alone: felt, seen", "• both sides: one is missed"]]]],
+   "inv": [[["w", "By modality", ["• touch → PARIETAL lobe", "• vision → OCCIPITAL lobe"]]]]
+  },
+  {
+   "id": "notc",
+   "colour": "slate",
+   "head": [[["h", "Subcortical or brainstem", ["not the cortex"]]]],
+   "clue": [[["t", "SUBCORTICAL", ["• PURE motor or PURE sensory", "• face + arm + leg", "• ataxic hemiparesis"]]],
+            [["t", "BRAINSTEM", ["• vertigo or diplopia", "• PLUS another symptom", "• crossed: face vs body sensory"]]]],
+   "inv": [[["w", "Subcortical · brainstem", []]]]
   }
- ],
- "panels": [
-  {"title": "Non-dominant hemisphere: neglect", "items": [
-   "visual neglect: ignores one side · blink to threat may stay",
-   "sensory neglect: ignores touch on one side",
-   "asomatognosia: own body part not recognized",
-   "anosognosia: deficit not recognized",
-   "dressing apraxia: can't put clothes on"]},
-  {"title": "Other cortical signs", "items": [
-   "apraxia: can't do a motor task DESPITE power · parietal or frontal",
-   "e.g. pretend hammer, hand postures, dressing, whistle, draw",
-   "cortical sensory (primary intact): graphesthesia, stereognosis, direction",
-   "primary sensory loss can't localize to cortex",
-   "extinction: misses one side only when BOTH stimulated · touch → parietal, vision → occipital"]},
-  {"title": "Localization pearls", "items": [
-   "CORTEX: aphasia, neglect, apraxia, cortical sensory · homonymous hemianopia",
-   "SUBCORTICAL: pure motor or pure sensory face + arm + leg · ataxic hemiparesis",
-   "BRAINSTEM: vertigo or diplopia PLUS another symptom · crossed face vs body sensory"]}
  ]
 }

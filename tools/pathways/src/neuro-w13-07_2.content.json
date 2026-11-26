@@ -1,12 +1,12 @@
 {
  "name": "neuro-ophthalmology overview",
- "title": "Visual symptoms not from the eyeball: double vision sorts by which nerve palsy (third, fourth or sixth), a gaze-evoked nystagmus points to the cerebellum or brainstem, unequal pupils sort by whether the difference is worse in light (parasympathetic) or dark (sympathetic, Horner), and a relative afferent pupillary defect points to one optic nerve; nystagmus is pendular or (mostly) jerk, and the panel below localizes each visual field defect along the visual pathway",
- "col_w": 140,
+ "title": "Visual symptoms not from the eyeball: double vision sorts by which nerve palsy (third, fourth or sixth), a gaze-evoked nystagmus points to the cerebellum or brainstem, unequal pupils sort by whether the difference is worse in light (parasympathetic) or dark (sympathetic, Horner), and a relative afferent pupillary defect points to one optic nerve; nystagmus is pendular or (mostly) jerk; a missing visual field localizes along the visual pathway, to the optic nerve or chiasm (one eye, bitemporal), the optic tract and radiations (homonymous), or the occipital lobe (macular sparing, quadrantanopia, central scotomas)",
+ "col_w": 146,
  "root": {
   "title": "A visual symptom NOT from the eyeball: which kind?",
   "lines": [
    "each one localizes to a nerve or a pathway",
-   "a missing part of the visual field: see the panel below"
+   "a missing part of the visual field: follow the pathway"
   ]
  },
  "groups": [
@@ -43,6 +43,16 @@
    "lines": [
     "parasympathetic constricts",
     "sympathetic dilates"
+   ]
+  },
+  {
+   "id": "g_vf",
+   "cols": [7, 9],
+   "title": "A MISSING FIELD: where is the lesion?",
+   "lines": [
+    "• NASAL fibres cross at the chiasm, temporal do not",
+    "• each side of the brain sees the opposite field",
+    "~ left-side lesion shown"
    ]
   }
  ],
@@ -342,25 +352,22 @@
      ]
     ]
    ]
-  }
- ],
- "panels": [
-  {
-   "title": "Visual field defects: where is the lesion? (left-side lesion shown)",
-   "cols": 3,
-   "items": [
-    "NASAL fibres cross at the chiasm, temporal do not · each side of the brain sees the opposite field",
-    "optic nerve: vision ↓ in THAT eye only",
-    "back of the optic nerve: that eye blind + junctional scotoma (upper temporal) in the other eye",
-    "chiasm: BITEMPORAL hemianopia (pituitary macroadenoma from below)",
-    "optic tract: right HOMONYMOUS hemianopia",
-    "lateral geniculate nucleus: right homonymous sectoranopias (wedges)",
-    "temporal lobe (lower radiation): right homonymous SUPERIOR defect",
-    "parietal lobe (upper radiation): right homonymous INFERIOR defect",
-    "occipital upper bank: inferior quadrantanopia · lower bank: superior quadrantanopia",
-    "occipital lobe: right homonymous hemianopia with MACULAR SPARING",
-    "tip of the occipital lobe: right homonymous central scotomas"
-   ]
-  }
+  },
+  {"id": "vf_pre", "colour": "slate",
+   "head": [[["h", "Optic nerve · chiasm", ["before the crossing", "or AT it"]]]],
+   "pres": [[["t", "Vision ↓ in THAT eye only", ["→ optic nerve"]]],
+            [["t", "That eye blind + junctional scotoma", ["• upper temporal, in the OTHER eye", "→ back of the optic nerve"]]],
+            [["t", "BITEMPORAL hemianopia", ["→ chiasm"]]]],
+   "cause": [[["bad", "Pituitary macroadenoma", ["presses the chiasm from below"]]]]},
+  {"id": "vf_mid", "colour": "olive",
+   "head": [[["h", "Optic tract → radiations", ["behind the chiasm", "HOMONYMOUS: same side, both eyes"]]]],
+   "pres": [[["t", "Right HOMONYMOUS hemianopia", ["→ optic tract"]]],
+            [["t", "Right homonymous sectoranopias", ["• wedges", "→ lateral geniculate nucleus"]]],
+            [["t", "Right homonymous defect", ["• SUPERIOR → temporal lobe (lower radiation)", "• INFERIOR → parietal lobe (upper radiation)"]]]]},
+  {"id": "vf_occ", "colour": "teal",
+   "head": [[["h", "Occipital lobe", ["HOMONYMOUS", "left lobe → RIGHT field"]]]],
+   "pres": [[["t", "Hemianopia + MACULAR SPARING", ["→ occipital lobe"]]],
+            [["t", "Quadrantanopia", ["• upper bank → INFERIOR", "• lower bank → SUPERIOR"]]],
+            [["t", "Central scotomas", ["• right homonymous", "→ tip of the occipital lobe"]]]]}
  ]
 }

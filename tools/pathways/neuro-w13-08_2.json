@@ -1,7 +1,7 @@
 {
  "name": "aphasia syndromes overview",
- "width": 1048,
- "title": "Cortical syndromes: test comprehension first, then fluency and repetition; the pattern names the aphasia and localizes it in the dominant hemisphere (Broca's inferior frontal, Wernicke's posterior temporal, global full MCA territory; conduction and the transcortical aphasias for keeners); neglect points to the non-dominant hemisphere, and apraxia, cortical sensory signs and extinction also localize to the cortex",
+ "width": 1848,
+ "title": "Cortical syndromes, split by hemisphere and lobe: in the DOMINANT hemisphere, comprehension then fluency and repetition name the aphasia and its lobe (Broca's inferior frontal, Wernicke's posterior temporal, global full MCA territory; conduction and transcortical aphasias for keeners); the NON-DOMINANT hemisphere gives neglect; apraxia (parietal or frontal), cortical sensory loss (parietal) and extinction (touch parietal, vision occipital) are other cortical signs; a last column tells a subcortical or brainstem lesion apart",
  "kinds": {
   "broca_h": [
    "#1f6f8b",
@@ -110,118 +110,296 @@
    "#1f5f9e",
    "#1f5f9e",
    "#18212e"
+  ],
+  "negl_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "negl_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "negl_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "aprax_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "aprax_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "aprax_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "csens_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "csens_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "csens_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "ext_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "ext_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "ext_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "notc_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "notc_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "notc_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
   ]
  },
  "bands": [
   {
    "x": 40,
-   "y": 324,
-   "w": 160,
-   "h": 408,
+   "y": 424,
+   "w": 154,
+   "h": 660,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
-   "x": 202,
-   "y": 324,
-   "w": 160,
-   "h": 408,
+   "x": 196,
+   "y": 424,
+   "w": 154,
+   "h": 660,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
-   "x": 364,
-   "y": 324,
-   "w": 160,
-   "h": 408,
+   "x": 352,
+   "y": 424,
+   "w": 154,
+   "h": 660,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
   {
-   "x": 554,
-   "y": 324,
-   "w": 160,
-   "h": 408,
+   "x": 508,
+   "y": 424,
+   "w": 154,
+   "h": 660,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
-   "x": 716,
-   "y": 324,
-   "w": 160,
-   "h": 408,
+   "x": 664,
+   "y": 424,
+   "w": 154,
+   "h": 660,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
-   "x": 878,
-   "y": 324,
-   "w": 160,
-   "h": 408,
+   "x": 820,
+   "y": 424,
+   "w": 154,
+   "h": 660,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1004,
+   "y": 424,
+   "w": 154,
+   "h": 660,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1188,
+   "y": 424,
+   "w": 154,
+   "h": 660,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1344,
+   "y": 424,
+   "w": 154,
+   "h": 660,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
+  },
+  {
+   "x": 1500,
+   "y": 424,
+   "w": 154,
+   "h": 660,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 1684,
+   "y": 424,
+   "w": 154,
+   "h": 660,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
   }
  ],
  "row_labels": [
   {
    "x": 23,
-   "y": 452,
-   "h": 150,
-   "text": "FLUENCY · REPETITION"
+   "y": 570,
+   "h": 352,
+   "text": "WHAT YOU FIND"
   },
   {
    "x": 23,
-   "y": 642,
-   "h": 82,
+   "y": 962,
+   "h": 114,
    "text": "LESION"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 159,
+   "x": 559,
    "y": 10,
    "w": 760,
    "kind": "dark",
-   "title": "Trouble with LANGUAGE (aphasia), not articulation (dysarthria)?",
+   "title": "A CORTICAL sign? Which hemisphere, which lobe?",
    "lines": [
-    "aphasia = DOMINANT hemisphere (left in right-handers) · dominant MCA stroke usually has some",
-    "left-handers: 60% left · 19% right · 20% bilateral",
-    "matters: an aphasic patient is NOT confused or delirious",
-    "test naming · comprehension · fluency · repetition · reading · writing",
-    "comprehension: MOTOR commands, 1 → 3 step · fluency: nonsense sounds still = fluent · repetition: \"no ifs, ands or buts\""
+    "cortex: aphasia, neglect, apraxia, cortical sensory · homonymous hemianopia",
+    "aphasia = LANGUAGE, not articulation (dysarthria)"
    ]
   },
   {
-   "id": "g_int",
+   "id": "g_dom",
    "x": 45,
-   "y": 192,
-   "w": 474,
+   "y": 138,
+   "w": 924,
+   "h": 114,
+   "kind": "plain",
+   "title": "DOMINANT hemisphere: APHASIA",
+   "lines": [
+    "• left in right-handers · left-handers: 60% left, 19% right, 20% bilateral",
+    "• dominant MCA stroke usually has some · NOT confused or delirious",
+    "• test naming, comprehension, fluency, repetition, reading, writing",
+    "• fluency: nonsense sounds still = fluent · repetition: \"no ifs, ands or buts\""
+   ]
+  },
+  {
+   "id": "g_nd",
+   "x": 1009,
+   "y": 138,
+   "w": 144,
+   "h": 114,
+   "kind": "plain",
+   "title": "NON-DOMINANT hemisphere",
+   "lines": [
+    "• ignores one side"
+   ]
+  },
+  {
+   "id": "g_oth",
+   "x": 1193,
+   "y": 138,
+   "w": 456,
+   "h": 114,
+   "kind": "plain",
+   "title": "OTHER CORTICAL SIGNS",
+   "lines": [
+    "• the LESION row names the lobe"
+   ]
+  },
+  {
+   "id": "g_not",
+   "x": 1689,
+   "y": 138,
+   "w": 144,
+   "h": 114,
+   "kind": "plain",
+   "title": "NOT CORTEX?",
+   "lines": [
+    "• none of the cortical signs"
+   ]
+  },
+  {
+   "id": "t_int",
+   "x": 45,
+   "y": 292,
+   "w": 456,
    "h": 60,
    "kind": "plain",
    "title": "COMPREHENSION INTACT",
    "lines": [
-    "follows motor commands"
+    "• follows MOTOR commands, 1 → 3 step"
    ]
   },
   {
-   "id": "g_low",
-   "x": 559,
-   "y": 192,
-   "w": 474,
+   "id": "t_low",
+   "x": 513,
+   "y": 292,
+   "w": 456,
    "h": 60,
    "kind": "plain",
    "title": "COMPREHENSION ↓",
    "lines": [
-    "cannot follow commands"
+    "• cannot follow commands"
    ]
   },
   {
    "id": "broca_head_0_0",
    "x": 45,
-   "y": 332,
-   "w": 150,
-   "h": 80,
+   "y": 432,
+   "w": 144,
+   "h": 98,
    "kind": "broca_h",
    "title": "Broca's",
    "lines": [
@@ -230,10 +408,10 @@
   },
   {
    "id": "tcm_head_0_0",
-   "x": 207,
-   "y": 332,
-   "w": 150,
-   "h": 80,
+   "x": 201,
+   "y": 432,
+   "w": 144,
+   "h": 98,
    "kind": "tcm_h",
    "title": "Transcortical motor",
    "lines": [
@@ -242,10 +420,10 @@
   },
   {
    "id": "cond_head_0_0",
-   "x": 369,
-   "y": 332,
-   "w": 150,
-   "h": 80,
+   "x": 357,
+   "y": 432,
+   "w": 144,
+   "h": 98,
    "kind": "cond_h",
    "title": "Conduction",
    "lines": [
@@ -254,10 +432,10 @@
   },
   {
    "id": "wern_head_0_0",
-   "x": 559,
-   "y": 332,
-   "w": 150,
-   "h": 80,
+   "x": 513,
+   "y": 432,
+   "w": 144,
+   "h": 98,
    "kind": "wern_h",
    "title": "Wernicke's",
    "lines": [
@@ -266,10 +444,10 @@
   },
   {
    "id": "glob_head_0_0",
-   "x": 721,
-   "y": 332,
-   "w": 150,
-   "h": 80,
+   "x": 669,
+   "y": 432,
+   "w": 144,
+   "h": 98,
    "kind": "glob_h",
    "title": "Global",
    "lines": [
@@ -278,10 +456,10 @@
   },
   {
    "id": "tcs_head_0_0",
-   "x": 883,
-   "y": 332,
-   "w": 150,
-   "h": 80,
+   "x": 825,
+   "y": 432,
+   "w": 144,
+   "h": 98,
    "kind": "tcs_h",
    "title": "Transcortical sensory",
    "lines": [
@@ -289,11 +467,73 @@
    ]
   },
   {
+   "id": "negl_head_0_0",
+   "x": 1009,
+   "y": 432,
+   "w": 144,
+   "h": 98,
+   "kind": "negl_h",
+   "title": "Neglect",
+   "lines": [
+    "NON-DOMINANT hemisphere"
+   ]
+  },
+  {
+   "id": "aprax_head_0_0",
+   "x": 1193,
+   "y": 432,
+   "w": 144,
+   "h": 98,
+   "kind": "aprax_h",
+   "title": "Apraxia",
+   "lines": [
+    "can't do a motor task",
+    "DESPITE power"
+   ]
+  },
+  {
+   "id": "csens_head_0_0",
+   "x": 1349,
+   "y": 432,
+   "w": 144,
+   "h": 98,
+   "kind": "csens_h",
+   "title": "Cortical sensory loss",
+   "lines": [
+    "PRIMARY sensation intact"
+   ]
+  },
+  {
+   "id": "ext_head_0_0",
+   "x": 1505,
+   "y": 432,
+   "w": 144,
+   "h": 98,
+   "kind": "ext_h",
+   "title": "Extinction",
+   "lines": [
+    "misses one side",
+    "only when BOTH stimulated"
+   ]
+  },
+  {
+   "id": "notc_head_0_0",
+   "x": 1689,
+   "y": 432,
+   "w": 144,
+   "h": 98,
+   "kind": "notc_h",
+   "title": "Subcortical or brainstem",
+   "lines": [
+    "not the cortex"
+   ]
+  },
+  {
    "id": "broca_clue_0_0",
    "x": 45,
-   "y": 452,
-   "w": 150,
-   "h": 150,
+   "y": 570,
+   "w": 144,
+   "h": 352,
    "kind": "broca_t",
    "title": "Fluency ↓",
    "lines": [
@@ -307,10 +547,10 @@
   },
   {
    "id": "tcm_clue_0_0",
-   "x": 207,
-   "y": 452,
-   "w": 150,
-   "h": 150,
+   "x": 201,
+   "y": 570,
+   "w": 144,
+   "h": 352,
    "kind": "tcm_t",
    "title": "Fluency ↓",
    "lines": [
@@ -320,10 +560,10 @@
   },
   {
    "id": "cond_clue_0_0",
-   "x": 369,
-   "y": 452,
-   "w": 150,
-   "h": 150,
+   "x": 357,
+   "y": 570,
+   "w": 144,
+   "h": 352,
    "kind": "cond_t",
    "title": "Fluency normal",
    "lines": [
@@ -333,10 +573,10 @@
   },
   {
    "id": "wern_clue_0_0",
-   "x": 559,
-   "y": 452,
-   "w": 150,
-   "h": 150,
+   "x": 513,
+   "y": 570,
+   "w": 144,
+   "h": 352,
    "kind": "wern_t",
    "title": "Fluent nonsense",
    "lines": [
@@ -348,10 +588,10 @@
   },
   {
    "id": "glob_clue_0_0",
-   "x": 721,
-   "y": 452,
-   "w": 150,
-   "h": 150,
+   "x": 669,
+   "y": 570,
+   "w": 144,
+   "h": 352,
    "kind": "glob_t",
    "title": "No verbal output",
    "lines": [
@@ -361,10 +601,10 @@
   },
   {
    "id": "tcs_clue_0_0",
-   "x": 883,
-   "y": 452,
-   "w": 150,
-   "h": 150,
+   "x": 825,
+   "y": 570,
+   "w": 144,
+   "h": 352,
    "kind": "tcs_t",
    "title": "Fluent",
    "lines": [
@@ -373,76 +613,287 @@
    ]
   },
   {
+   "id": "negl_clue_0_0",
+   "x": 1009,
+   "y": 570,
+   "w": 144,
+   "h": 114,
+   "kind": "negl_t",
+   "title": "Ignores one side",
+   "lines": [
+    "• visual: blink to threat may stay",
+    "• sensory: ignores touch on that side"
+   ]
+  },
+  {
+   "id": "negl_clue_1_0",
+   "x": 1009,
+   "y": 706,
+   "w": 144,
+   "h": 134,
+   "kind": "negl_t",
+   "title": "Doesn't recognize",
+   "lines": [
+    "• asomatognosia: own body part",
+    "• anosognosia: the deficit"
+   ]
+  },
+  {
+   "id": "negl_clue_2_0",
+   "x": 1009,
+   "y": 862,
+   "w": 144,
+   "h": 60,
+   "kind": "negl_t",
+   "title": "Dressing apraxia",
+   "lines": [
+    "can't put clothes on"
+   ]
+  },
+  {
+   "id": "aprax_clue_0_0",
+   "x": 1193,
+   "y": 570,
+   "w": 144,
+   "h": 352,
+   "kind": "aprax_t",
+   "title": "Ask them to",
+   "lines": [
+    "• pretend to hammer",
+    "• hand postures",
+    "• dress, whistle, draw"
+   ]
+  },
+  {
+   "id": "csens_clue_0_0",
+   "x": 1349,
+   "y": 570,
+   "w": 144,
+   "h": 164,
+   "kind": "csens_t",
+   "title": "Lost",
+   "lines": [
+    "• graphesthesia",
+    "• stereognosis",
+    "• direction"
+   ]
+  },
+  {
+   "id": "csens_clue_1_0",
+   "x": 1349,
+   "y": 756,
+   "w": 144,
+   "h": 166,
+   "kind": "warn",
+   "title": "PRIMARY sensory loss",
+   "lines": [
+    "can't localize to cortex"
+   ]
+  },
+  {
+   "id": "ext_clue_0_0",
+   "x": 1505,
+   "y": 570,
+   "w": 144,
+   "h": 352,
+   "kind": "ext_t",
+   "title": "Touch or vision",
+   "lines": [
+    "• one side alone: felt, seen",
+    "• both sides: one is missed"
+   ]
+  },
+  {
+   "id": "notc_clue_0_0",
+   "x": 1689,
+   "y": 570,
+   "w": 144,
+   "h": 156,
+   "kind": "notc_t",
+   "title": "SUBCORTICAL",
+   "lines": [
+    "• PURE motor or PURE sensory",
+    "• face + arm + leg",
+    "• ataxic hemiparesis"
+   ]
+  },
+  {
+   "id": "notc_clue_1_0",
+   "x": 1689,
+   "y": 748,
+   "w": 144,
+   "h": 174,
+   "kind": "notc_t",
+   "title": "BRAINSTEM",
+   "lines": [
+    "• vertigo or diplopia",
+    "• PLUS another symptom",
+    "• crossed: face vs body sensory"
+   ]
+  },
+  {
    "id": "broca_inv_0_0",
    "x": 45,
-   "y": 642,
-   "w": 150,
-   "h": 82,
+   "y": 962,
+   "w": 144,
+   "h": 114,
    "kind": "broca_w",
    "title": "Inferior frontal lobe",
    "lines": []
   },
   {
    "id": "tcm_inv_0_0",
-   "x": 207,
-   "y": 642,
-   "w": 150,
-   "h": 82,
+   "x": 201,
+   "y": 962,
+   "w": 144,
+   "h": 114,
    "kind": "tcm_w",
    "title": "Parasagittal mid frontal",
    "lines": []
   },
   {
    "id": "cond_inv_0_0",
-   "x": 369,
-   "y": 642,
-   "w": 150,
-   "h": 82,
+   "x": 357,
+   "y": 962,
+   "w": 144,
+   "h": 114,
    "kind": "cond_w",
    "title": "Arcuate fasciculus",
    "lines": []
   },
   {
    "id": "wern_inv_0_0",
-   "x": 559,
-   "y": 642,
-   "w": 150,
-   "h": 82,
+   "x": 513,
+   "y": 962,
+   "w": 144,
+   "h": 114,
    "kind": "wern_w",
    "title": "Posterior temporal lobe",
    "lines": []
   },
   {
    "id": "glob_inv_0_0",
-   "x": 721,
-   "y": 642,
-   "w": 150,
-   "h": 82,
+   "x": 669,
+   "y": 962,
+   "w": 144,
+   "h": 114,
    "kind": "glob_w",
    "title": "Full middle cerebral artery (MCA) territory",
    "lines": []
   },
   {
    "id": "tcs_inv_0_0",
-   "x": 883,
-   "y": 642,
-   "w": 150,
-   "h": 82,
+   "x": 825,
+   "y": 962,
+   "w": 144,
+   "h": 114,
    "kind": "tcs_w",
    "title": "Parasagittal parietal",
+   "lines": []
+  },
+  {
+   "id": "negl_inv_0_0",
+   "x": 1009,
+   "y": 962,
+   "w": 144,
+   "h": 114,
+   "kind": "negl_w",
+   "title": "NON-DOMINANT hemisphere",
+   "lines": []
+  },
+  {
+   "id": "aprax_inv_0_0",
+   "x": 1193,
+   "y": 962,
+   "w": 144,
+   "h": 114,
+   "kind": "aprax_w",
+   "title": "PARIETAL or FRONTAL lobe",
+   "lines": []
+  },
+  {
+   "id": "csens_inv_0_0",
+   "x": 1349,
+   "y": 962,
+   "w": 144,
+   "h": 114,
+   "kind": "csens_w",
+   "title": "PARIETAL lobe",
+   "lines": [
+    "• graphesthesia",
+    "• stereognosis"
+   ]
+  },
+  {
+   "id": "ext_inv_0_0",
+   "x": 1505,
+   "y": 962,
+   "w": 144,
+   "h": 114,
+   "kind": "ext_w",
+   "title": "By modality",
+   "lines": [
+    "• touch → PARIETAL lobe",
+    "• vision → OCCIPITAL lobe"
+   ]
+  },
+  {
+   "id": "notc_inv_0_0",
+   "x": 1689,
+   "y": 962,
+   "w": 144,
+   "h": 114,
+   "kind": "notc_w",
+   "title": "Subcortical · brainstem",
    "lines": []
   }
  ],
  "edges": [
   {
    "from": "root",
-   "to": "g_int",
-   "path": "M539.0 142V167H282.0V192"
+   "to": "g_dom",
+   "path": "M939.0 88V113H507.0V138"
   },
   {
    "from": "root",
-   "to": "g_low",
-   "path": "M539.0 142V167H796.0V192"
+   "to": "g_nd",
+   "path": "M939.0 88V113H1081.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_oth",
+   "path": "M939.0 88V113H1421.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_not",
+   "path": "M939.0 88V113H1761.0V138"
+  },
+  {
+   "from": "g_dom",
+   "to": "t_int",
+   "from_dx": -234
+  },
+  {
+   "from": "g_dom",
+   "to": "t_low",
+   "from_dx": 234
+  },
+  {
+   "from": "negl_clue_0_0",
+   "to": "negl_clue_1_0"
+  },
+  {
+   "from": "negl_clue_1_0",
+   "to": "negl_clue_2_0"
+  },
+  {
+   "from": "csens_clue_0_0",
+   "to": "csens_clue_1_0"
+  },
+  {
+   "from": "notc_clue_0_0",
+   "to": "notc_clue_1_0"
   },
   {
    "from": "broca_head_0_0",
@@ -453,9 +904,9 @@
    "to": "broca_inv_0_0"
   },
   {
-   "from": "g_int",
+   "from": "t_int",
    "to": "broca_head_0_0",
-   "from_dx": -162
+   "from_dx": -156
   },
   {
    "from": "tcm_head_0_0",
@@ -466,7 +917,7 @@
    "to": "tcm_inv_0_0"
   },
   {
-   "from": "g_int",
+   "from": "t_int",
    "to": "tcm_head_0_0",
    "from_dx": 0
   },
@@ -479,9 +930,9 @@
    "to": "cond_inv_0_0"
   },
   {
-   "from": "g_int",
+   "from": "t_int",
    "to": "cond_head_0_0",
-   "from_dx": 162
+   "from_dx": 156
   },
   {
    "from": "wern_head_0_0",
@@ -492,9 +943,9 @@
    "to": "wern_inv_0_0"
   },
   {
-   "from": "g_low",
+   "from": "t_low",
    "to": "wern_head_0_0",
-   "from_dx": -162
+   "from_dx": -156
   },
   {
    "from": "glob_head_0_0",
@@ -505,7 +956,7 @@
    "to": "glob_inv_0_0"
   },
   {
-   "from": "g_low",
+   "from": "t_low",
    "to": "glob_head_0_0",
    "from_dx": 0
   },
@@ -518,51 +969,75 @@
    "to": "tcs_inv_0_0"
   },
   {
-   "from": "g_low",
+   "from": "t_low",
    "to": "tcs_head_0_0",
-   "from_dx": 162
+   "from_dx": 156
+  },
+  {
+   "from": "negl_head_0_0",
+   "to": "negl_clue_0_0"
+  },
+  {
+   "from": "negl_clue_2_0",
+   "to": "negl_inv_0_0"
+  },
+  {
+   "from": "g_nd",
+   "to": "negl_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "aprax_head_0_0",
+   "to": "aprax_clue_0_0"
+  },
+  {
+   "from": "aprax_clue_0_0",
+   "to": "aprax_inv_0_0"
+  },
+  {
+   "from": "g_oth",
+   "to": "aprax_head_0_0",
+   "from_dx": -156
+  },
+  {
+   "from": "csens_head_0_0",
+   "to": "csens_clue_0_0"
+  },
+  {
+   "from": "csens_clue_1_0",
+   "to": "csens_inv_0_0"
+  },
+  {
+   "from": "g_oth",
+   "to": "csens_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "ext_head_0_0",
+   "to": "ext_clue_0_0"
+  },
+  {
+   "from": "ext_clue_0_0",
+   "to": "ext_inv_0_0"
+  },
+  {
+   "from": "g_oth",
+   "to": "ext_head_0_0",
+   "from_dx": 156
+  },
+  {
+   "from": "notc_head_0_0",
+   "to": "notc_clue_0_0"
+  },
+  {
+   "from": "notc_clue_1_0",
+   "to": "notc_inv_0_0"
+  },
+  {
+   "from": "g_not",
+   "to": "notc_head_0_0",
+   "from_dx": 0
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 758,
-   "w": 320,
-   "title": "Non-dominant hemisphere: neglect",
-   "items": [
-    "visual neglect: ignores one side · blink to threat may stay",
-    "sensory neglect: ignores touch on one side",
-    "asomatognosia: own body part not recognized",
-    "anosognosia: deficit not recognized",
-    "dressing apraxia: can't put clothes on"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 379,
-   "y": 758,
-   "w": 320,
-   "title": "Other cortical signs",
-   "items": [
-    "apraxia: can't do a motor task DESPITE power · parietal or frontal",
-    "e.g. pretend hammer, hand postures, dressing, whistle, draw",
-    "cortical sensory (primary intact): graphesthesia, stereognosis, direction",
-    "primary sensory loss can't localize to cortex",
-    "extinction: misses one side only when BOTH stimulated · touch → parietal, vision → occipital"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 713,
-   "y": 758,
-   "w": 320,
-   "title": "Localization pearls",
-   "items": [
-    "CORTEX: aphasia, neglect, apraxia, cortical sensory · homonymous hemianopia",
-    "SUBCORTICAL: pure motor or pure sensory face + arm + leg · ataxic hemiparesis",
-    "BRAINSTEM: vertigo or diplopia PLUS another symptom · crossed face vs body sensory"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

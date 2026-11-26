@@ -1,6 +1,6 @@
 {
  "name": "neuroinfections overview",
- "title": "Suspected meningitis or encephalitis: blood culture and empiric treatment first, CT before the lumbar puncture only with focal signs or a decreased level of consciousness, then the CSF separates bacterial meningitis, aseptic (viral) meningitis and herpes simplex encephalitis, each with its organisms and treatment",
+ "title": "Suspected meningitis or encephalitis: blood culture and empiric treatment first, CT before the lumbar puncture only with focal signs or a decreased level of consciousness, then the CSF, read against normal values, separates bacterial meningitis, aseptic (viral) meningitis and herpes simplex encephalitis, each with its organisms and treatment; bacterial meningitis ends with its complications",
  "col_w": 290,
  "root": {
   "title": "Fever · headache · stiff neck · altered mental status: think MENINGITIS",
@@ -34,17 +34,35 @@
    ]
   }
  ],
+ "tiers": [
+  {
+   "id": "t_csf",
+   "cols": [
+    0,
+    2
+   ],
+   "title": "Read the CSF against NORMAL",
+   "lines": [
+    "• opening pressure under 20-25 cm",
+    "• clear · white cells 0-5, lymphocytes",
+    "• protein 250-450 mg/L · glucose 2.2-4.4 mmol/L",
+    "• CSF:serum glucose over 0.6 · Gram stain empty"
+   ]
+  }
+ ],
  "row_names": {
   "pres": "WORKUP",
   "clue": "PRESENTS AS",
   "csf": "CSF",
-  "tx": "TREATMENT"
+  "tx": "TREATMENT",
+  "comp": "COMPLICATIONS"
  },
  "sections": [
   "head",
   "clue",
   "csf",
-  "tx"
+  "tx",
+  "comp"
  ],
  "dashed_sections": [],
  "columns": [
@@ -130,6 +148,31 @@
       ]
      ]
     ]
+   ],
+   "drop_from": "t_csf",
+   "comp": [
+    [
+     [
+      "bad",
+      "Complications",
+      [
+       "• sepsis · seizures",
+       "• hydrocephalus",
+       "• cranial nerve palsies",
+       "• coma · death"
+      ]
+     ],
+     [
+      "bad",
+      "In the brain",
+      [
+       "• vasculitis",
+       "• stroke",
+       "• cerebritis",
+       "• abscess"
+      ]
+     ]
+    ]
    ]
   },
   {
@@ -186,7 +229,8 @@
       ]
      ]
     ]
-   ]
+   ],
+   "drop_from": "t_csf"
   },
   {
    "id": "hsv",
@@ -244,18 +288,8 @@
       ]
      ]
     ]
-   ]
+   ],
+   "drop_from": "t_csf"
   }
- ],
- "panels": [
-  {"title": "CSF: normal values", "items": [
-   "opening pressure under 20-25 cm",
-   "clear · white cells 0-5, lymphocytes",
-   "protein 250-450 mg/L · glucose 2.2-4.4 mmol/L",
-   "CSF:serum glucose over 0.6 · Gram stain empty"]},
-  {"title": "Complications of meningitis", "items": [
-   "sepsis · hydrocephalus · cranial nerve palsies",
-   "vasculitis · stroke · cerebritis · abscess",
-   "seizures · coma · death"]}
  ]
 }

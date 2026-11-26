@@ -1,7 +1,7 @@
 {
  "name": "seizures overview",
- "title": "First seizure: history decides whether it was a seizure, then whether it was provoked; for an unprovoked seizure, MRI and EEG estimate the recurrence risk, which decides between discussing treatment for a single seizure and recommending it for epilepsy; drug-resistant epilepsy goes to an epilepsy centre; status epilepticus is an emergency",
- "col_w": 214,
+ "title": "First seizure: history decides whether it was a seizure, then whether it was provoked; for an unprovoked seizure, MRI and EEG estimate the recurrence risk, which decides between discussing treatment for a single seizure and recommending it for epilepsy; drug-resistant epilepsy goes to an epilepsy centre; status epilepticus is an emergency; the epilepsy column ends with seizure types by onset, causes and comorbidities",
+ "col_w": 290,
  "root": {
   "title": "A first seizure: HISTORY is the key",
   "lines": [
@@ -72,12 +72,18 @@
  "row_names": {
   "pres": "WORKUP",
   "clue": "WHAT DECIDES IT",
-  "tx": "TREATMENT"
+  "tx": "TREATMENT",
+  "type": "SEIZURE TYPE",
+  "cause": "CAUSES",
+  "comorb": "COMORBIDITIES"
  },
  "sections": [
   "head",
   "clue",
-  "tx"
+  "tx",
+  "type",
+  "cause",
+  "comorb"
  ],
  "dashed_sections": [],
  "columns": [
@@ -247,6 +253,122 @@
       ]
      ]
     ]
+   ],
+   "type": [
+    [
+     [
+      "w",
+      "Classify by ONSET",
+      [
+       "~ ILAE 2017"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "FOCAL",
+      [
+       "• aware or impaired awareness",
+       "• motor or non-motor",
+       "• focal → bilateral tonic-clonic"
+      ]
+     ],
+     [
+      "w",
+      "GENERALIZED",
+      [
+       "• motor: tonic-clonic, myoclonic",
+       "• non-motor = ABSENCE",
+       "• 3-Hz spike-and-wave"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "UNKNOWN onset",
+      [
+       "not seen (e.g. found already seizing)"
+      ]
+     ]
+    ]
+   ],
+   "cause": [
+    [
+     [
+      "w",
+      "STRUCTURAL",
+      [
+       "• stroke, trauma, tumour",
+       "• mesial temporal sclerosis"
+      ]
+     ],
+     [
+      "w",
+      "GENETIC",
+      [
+       "• inherited",
+       "• de novo",
+       "• polygenic"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "INFECTIOUS",
+      [
+       "• encephalitis, meningitis",
+       "• neurocysticercosis"
+      ]
+     ],
+     [
+      "w",
+      "IMMUNE",
+      [
+       "• anti-NMDA receptor, LGI-1",
+       "• Hu, Ri, Yo, GAD65"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "METABOLIC",
+      [
+       "inborn errors"
+      ]
+     ],
+     [
+      "w",
+      "UNKNOWN",
+      []
+     ]
+    ]
+   ],
+   "comorb": [
+    [
+     [
+      "warn",
+      "Comorbidities",
+      [
+       "• non-epileptic seizures",
+       "• depression, anxiety, ADHD",
+       "• migraine",
+       "• cognitive impairment"
+      ]
+     ]
+    ],
+    [
+     [
+      "bad",
+      "Mortality: SUDEP",
+      [
+       "sudden unexpected death in epilepsy"
+      ]
+     ]
+    ]
    ]
   },
   {
@@ -280,21 +402,5 @@
     ]
    ]
   }
- ],
- "panels": [
-  {"title": "Classify by ONSET (ILAE 2017)", "items": [
-   "FOCAL: aware or impaired awareness · motor or non-motor · can go focal to bilateral tonic-clonic",
-   "GENERALIZED: motor (tonic-clonic, myoclonic) · non-motor = ABSENCE (3-Hz spike-and-wave)",
-   "UNKNOWN onset: not seen (e.g. found already seizing)"]},
-  {"title": "Epilepsy causes", "items": [
-   "STRUCTURAL: stroke, trauma, tumour, mesial temporal sclerosis",
-   "GENETIC: inherited, de novo, polygenic",
-   "INFECTIOUS: encephalitis, meningitis, neurocysticercosis",
-   "METABOLIC: inborn errors · IMMUNE: anti-NMDA receptor, LGI-1, Hu, Ri, Yo, GAD65 · UNKNOWN"]},
-  {"title": "Epilepsy comorbidities", "items": [
-   "non-epileptic seizures",
-   "depression, anxiety, ADHD · migraine",
-   "cognitive impairment",
-   "mortality: SUDEP (sudden unexpected death in epilepsy)"]}
  ]
 }

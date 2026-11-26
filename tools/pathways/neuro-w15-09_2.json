@@ -1,7 +1,7 @@
 {
  "name": "hearing loss overview",
- "width": 1378,
- "title": "Hearing loss: the Weber and Rinne together split conductive (ear canal; otitis media; a fixed or broken middle ear) from sensorineural (sudden, an emergency; gradual and symmetric; one-sided and progressive, a vestibular schwannoma until proven otherwise); each column gives presentation, investigations and treatment, with otitis media complications, other sensorineural causes and hearing physiology below",
+ "width": 1595,
+ "title": "Hearing loss: the Weber and Rinne together split conductive (ear canal; otitis media; a fixed or broken middle ear) from sensorineural (sudden, an emergency; gradual and symmetric; one-sided and progressive, a vestibular schwannoma until proven otherwise; other causes: congenital, a transverse temporal bone fracture and more); a tier under each group traces the sound path it affects; each column gives presentation, investigations and treatment, and otitis media lists its complications",
  "kinds": {
   "eac_h": [
    "#1f6f8b",
@@ -110,82 +110,108 @@
    "#b5600f",
    "#b5600f",
    "#18212e"
+  ],
+  "oth_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "oth_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "oth_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
   ]
  },
  "bands": [
   {
    "x": 40,
-   "y": 414,
+   "y": 568,
    "w": 215,
-   "h": 1178,
+   "h": 1772,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 257,
-   "y": 414,
+   "y": 568,
    "w": 215,
-   "h": 1178,
+   "h": 1772,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 474,
-   "y": 414,
+   "y": 568,
    "w": 215,
-   "h": 1178,
+   "h": 1772,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 719,
-   "y": 414,
+   "y": 568,
    "w": 215,
-   "h": 1178,
+   "h": 1772,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 936,
-   "y": 414,
+   "y": 568,
    "w": 215,
-   "h": 1178,
+   "h": 1772,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
   {
    "x": 1153,
-   "y": 414,
+   "y": 568,
    "w": 215,
-   "h": 1178,
+   "h": 1772,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
+  },
+  {
+   "x": 1370,
+   "y": 568,
+   "w": 215,
+   "h": 768,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
   }
  ],
  "row_labels": [
   {
    "x": 23,
-   "y": 576,
-   "h": 288,
+   "y": 730,
+   "h": 598,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 904,
+   "y": 1368,
    "h": 180,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 1124,
-   "h": 460,
+   "y": 1588,
+   "h": 744,
    "text": "TREATMENT"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 324,
+   "x": 432,
    "y": 10,
    "w": 760,
    "kind": "dark",
@@ -216,7 +242,7 @@
    "id": "g_s",
    "x": 724,
    "y": 246,
-   "w": 639,
+   "w": 856,
    "h": 96,
    "kind": "plain",
    "title": "SENSORINEURAL",
@@ -227,9 +253,38 @@
    ]
   },
   {
+   "id": "t_c",
+   "x": 45,
+   "y": 382,
+   "w": 639,
+   "h": 114,
+   "kind": "plain",
+   "title": "Sound path: canal → drum → ossicles",
+   "lines": [
+    "• hears 20-20,000 Hz, best 2,000-4,000 Hz (speech)",
+    "• the 3 cm canal resonates there",
+    "• ossicles: air pressure → force on the oval window → moves fluid"
+   ]
+  },
+  {
+   "id": "t_s",
+   "x": 724,
+   "y": 382,
+   "w": 856,
+   "h": 114,
+   "kind": "plain",
+   "title": "Cochlea → nerve → cortex",
+   "lines": [
+    "• oval window → scala vestibuli → helicotrema → scala tympani → round window",
+    "• TONOTOPIC: stiff base = HIGH pitch · floppy apex = low",
+    "• inner hair cells transduce, outer amplify",
+    "• spiral ganglion → CN VIII → brainstem → medial geniculate → superior temporal gyrus"
+   ]
+  },
+  {
    "id": "eac_head_0_0",
    "x": 45,
-   "y": 422,
+   "y": 576,
    "w": 205,
    "h": 114,
    "kind": "eac_h",
@@ -241,7 +296,7 @@
   {
    "id": "om_head_0_0",
    "x": 262,
-   "y": 422,
+   "y": 576,
    "w": 205,
    "h": 114,
    "kind": "om_h",
@@ -254,7 +309,7 @@
   {
    "id": "fix_head_0_0",
    "x": 479,
-   "y": 422,
+   "y": 576,
    "w": 205,
    "h": 114,
    "kind": "fix_h",
@@ -267,7 +322,7 @@
   {
    "id": "ssnhl_head_0_0",
    "x": 724,
-   "y": 422,
+   "y": 576,
    "w": 205,
    "h": 114,
    "kind": "ssnhl_h",
@@ -279,7 +334,7 @@
   {
    "id": "grad_head_0_0",
    "x": 941,
-   "y": 422,
+   "y": 576,
    "w": 205,
    "h": 114,
    "kind": "grad_h",
@@ -291,7 +346,7 @@
   {
    "id": "vs_head_0_0",
    "x": 1158,
-   "y": 422,
+   "y": 576,
    "w": 205,
    "h": 114,
    "kind": "vs_h",
@@ -301,11 +356,23 @@
    ]
   },
   {
-   "id": "eac_pres_0_0",
-   "x": 45,
+   "id": "oth_head_0_0",
+   "x": 1375,
    "y": 576,
    "w": 205,
-   "h": 288,
+   "h": 114,
+   "kind": "oth_h",
+   "title": "Other sensorineural",
+   "lines": [
+    "congenital · trauma · systemic"
+   ]
+  },
+  {
+   "id": "eac_pres_0_0",
+   "x": 45,
+   "y": 730,
+   "w": 205,
+   "h": 598,
    "kind": "eac_t",
    "title": "Otitis externa",
    "lines": [
@@ -317,9 +384,9 @@
   {
    "id": "om_pres_0_0",
    "x": 262,
-   "y": 576,
+   "y": 730,
    "w": 205,
-   "h": 168,
+   "h": 323,
    "kind": "om_t",
    "title": "Acute: after a cold",
    "lines": [
@@ -331,9 +398,9 @@
   {
    "id": "om_pres_1_0",
    "x": 262,
-   "y": 766,
+   "y": 1075,
    "w": 205,
-   "h": 98,
+   "h": 253,
    "kind": "om_w",
    "title": "With effusion: no infection signs",
    "lines": [
@@ -344,9 +411,9 @@
   {
    "id": "fix_pres_0_0",
    "x": 479,
-   "y": 576,
+   "y": 730,
    "w": 205,
-   "h": 288,
+   "h": 598,
    "kind": "fix_t",
    "title": "Which one?",
    "lines": [
@@ -358,9 +425,9 @@
   {
    "id": "ssnhl_pres_0_0",
    "x": 724,
-   "y": 576,
+   "y": 730,
    "w": 205,
-   "h": 288,
+   "h": 598,
    "kind": "ssnhl_t",
    "title": "Hearing loss, tinnitus, fullness",
    "lines": [
@@ -371,9 +438,9 @@
   {
    "id": "grad_pres_0_0",
    "x": 941,
-   "y": 576,
+   "y": 730,
    "w": 205,
-   "h": 288,
+   "h": 598,
    "kind": "grad_t",
    "title": "Which one?",
    "lines": [
@@ -386,9 +453,9 @@
   {
    "id": "vs_pres_0_0",
    "x": 1158,
-   "y": 576,
+   "y": 730,
    "w": 205,
-   "h": 288,
+   "h": 598,
    "kind": "vs_t",
    "title": "Unilateral loss + tinnitus",
    "lines": [
@@ -398,9 +465,67 @@
    ]
   },
   {
+   "id": "oth_pres_0_0",
+   "x": 1375,
+   "y": 730,
+   "w": 205,
+   "h": 116,
+   "kind": "oth_t",
+   "title": "Congenital, non-syndromic (2/3)",
+   "lines": [
+    "• 70-80% recessive",
+    "• GJB2 (connexin 26): 20% of childhood deafness"
+   ]
+  },
+  {
+   "id": "oth_pres_1_0",
+   "x": 1375,
+   "y": 868,
+   "w": 205,
+   "h": 150,
+   "kind": "oth_w",
+   "title": "Syndromic (1/3)",
+   "lines": [
+    "• Usher: retinitis pigmentosa",
+    "• Waardenburg: pigment",
+    "• Pendred: thyroid · Alport: kidney",
+    "• Jervell and Lange-Nielsen: long QT"
+   ]
+  },
+  {
+   "id": "oth_pres_2_0",
+   "x": 1375,
+   "y": 1040,
+   "w": 205,
+   "h": 134,
+   "kind": "bad",
+   "title": "Transverse temporal bone fracture",
+   "lines": [
+    "• 20%, front-back blow",
+    "• through the otic capsule, rarely recovers",
+    "• facial nerve in 50%"
+   ]
+  },
+  {
+   "id": "oth_pres_3_0",
+   "x": 1375,
+   "y": 1196,
+   "w": 205,
+   "h": 132,
+   "kind": "oth_w",
+   "title": "Also",
+   "lines": [
+    "• meningioma · labyrinthitis",
+    "• migraine, MS",
+    "• cryoglobulinemia, sickle cell",
+    "• HIV, polyarteritis nodosa",
+    "• Paget's, otosclerosis"
+   ]
+  },
+  {
    "id": "eac_inv_0_0",
    "x": 45,
-   "y": 904,
+   "y": 1368,
    "w": 205,
    "h": 180,
    "kind": "eac_w",
@@ -413,7 +538,7 @@
   {
    "id": "om_inv_0_0",
    "x": 262,
-   "y": 904,
+   "y": 1368,
    "w": 205,
    "h": 60,
    "kind": "om_w",
@@ -425,7 +550,7 @@
   {
    "id": "om_inv_1_0",
    "x": 262,
-   "y": 986,
+   "y": 1450,
    "w": 205,
    "h": 98,
    "kind": "om_w",
@@ -437,7 +562,7 @@
   {
    "id": "fix_inv_0_0",
    "x": 479,
-   "y": 904,
+   "y": 1368,
    "w": 205,
    "h": 97,
    "kind": "fix_w",
@@ -449,7 +574,7 @@
   {
    "id": "fix_inv_1_0",
    "x": 479,
-   "y": 1023,
+   "y": 1487,
    "w": 205,
    "h": 61,
    "kind": "fix_w",
@@ -461,7 +586,7 @@
   {
    "id": "ssnhl_inv_0_0",
    "x": 724,
-   "y": 904,
+   "y": 1368,
    "w": 205,
    "h": 180,
    "kind": "ssnhl_w",
@@ -476,7 +601,7 @@
   {
    "id": "grad_inv_0_0",
    "x": 941,
-   "y": 904,
+   "y": 1368,
    "w": 205,
    "h": 180,
    "kind": "grad_w",
@@ -489,7 +614,7 @@
   {
    "id": "vs_inv_0_0",
    "x": 1158,
-   "y": 904,
+   "y": 1368,
    "w": 205,
    "h": 180,
    "kind": "vs_w",
@@ -501,9 +626,9 @@
   {
    "id": "eac_tx_0_0",
    "x": 45,
-   "y": 1124,
+   "y": 1588,
    "w": 205,
-   "h": 114,
+   "h": 209,
    "kind": "ok",
    "title": "Clean it",
    "lines": [
@@ -515,9 +640,9 @@
   {
    "id": "eac_tx_1_0",
    "x": 45,
-   "y": 1260,
+   "y": 1819,
    "w": 205,
-   "h": 206,
+   "h": 301,
    "kind": "bad",
    "title": "Perforation? NO ototoxic drops",
    "lines": [
@@ -529,9 +654,9 @@
   {
    "id": "eac_tx_2_0",
    "x": 45,
-   "y": 1488,
+   "y": 2142,
    "w": 205,
-   "h": 96,
+   "h": 191,
    "kind": "warn",
    "title": "Chronic otitis externa",
    "lines": [
@@ -541,9 +666,9 @@
   {
    "id": "om_tx_0_0",
    "x": 262,
-   "y": 1124,
+   "y": 1588,
    "w": 205,
-   "h": 157,
+   "h": 98,
    "kind": "ok",
    "title": "Acute: high-dose amoxicillin",
    "lines": [
@@ -553,9 +678,9 @@
   {
    "id": "om_tx_1_0",
    "x": 262,
-   "y": 1303,
+   "y": 1708,
    "w": 205,
-   "h": 281,
+   "h": 222,
    "kind": "warn",
    "title": "Tubes",
    "lines": [
@@ -567,11 +692,43 @@
    ]
   },
   {
+   "id": "om_tx_2_0",
+   "x": 262,
+   "y": 1952,
+   "w": 205,
+   "h": 188,
+   "kind": "bad",
+   "title": "Complications: temporal bone",
+   "lines": [
+    "• hearing loss · perforation · effusion",
+    "• retraction pocket, cholesteatoma",
+    "• mastoiditis · labyrinthitis",
+    "• ossicular erosion, fixation",
+    "• FACIAL paralysis"
+   ]
+  },
+  {
+   "id": "om_tx_3_0",
+   "x": 262,
+   "y": 2162,
+   "w": 205,
+   "h": 170,
+   "kind": "bad",
+   "title": "Complications: intracranial",
+   "lines": [
+    "• MENINGITIS",
+    "• extradural abscess · subdural empyema",
+    "• brain abscess",
+    "• lateral sinus thrombosis",
+    "• otitic hydrocephalus"
+   ]
+  },
+  {
    "id": "fix_tx_0_0",
    "x": 479,
-   "y": 1124,
+   "y": 1588,
    "w": 205,
-   "h": 460,
+   "h": 744,
    "kind": "ok",
    "title": "Fix or bypass",
    "lines": [
@@ -583,9 +740,9 @@
   {
    "id": "ssnhl_tx_0_0",
    "x": 724,
-   "y": 1124,
+   "y": 1588,
    "w": 205,
-   "h": 460,
+   "h": 744,
    "kind": "ok",
    "title": "Steroids by mouth or into the ear",
    "lines": [
@@ -596,9 +753,9 @@
   {
    "id": "grad_tx_0_0",
    "x": 941,
-   "y": 1124,
+   "y": 1588,
    "w": 205,
-   "h": 209,
+   "h": 351,
    "kind": "ok",
    "title": "Protect, then amplify",
    "lines": [
@@ -609,9 +766,9 @@
   {
    "id": "grad_tx_1_0",
    "x": 941,
-   "y": 1355,
+   "y": 1961,
    "w": 205,
-   "h": 229,
+   "h": 371,
    "kind": "ok",
    "title": "Severe to profound, aids failing",
    "lines": [
@@ -621,9 +778,9 @@
   {
    "id": "vs_tx_0_0",
    "x": 1158,
-   "y": 1124,
+   "y": 1588,
    "w": 205,
-   "h": 460,
+   "h": 744,
    "kind": "ok",
    "title": "Slow, benign",
    "lines": [
@@ -635,16 +792,38 @@
   {
    "from": "root",
    "to": "g_c",
-   "path": "M704.0 196V221H364.5V246"
+   "path": "M812.5 196V221H364.5V246"
   },
   {
    "from": "root",
    "to": "g_s",
-   "path": "M704.0 196V221H1043.5V246"
+   "path": "M812.5 196V221H1152.0V246"
+  },
+  {
+   "from": "g_c",
+   "to": "t_c",
+   "from_dx": 0
+  },
+  {
+   "from": "g_s",
+   "to": "t_s",
+   "from_dx": 0
   },
   {
    "from": "om_pres_0_0",
    "to": "om_pres_1_0"
+  },
+  {
+   "from": "oth_pres_0_0",
+   "to": "oth_pres_1_0"
+  },
+  {
+   "from": "oth_pres_1_0",
+   "to": "oth_pres_2_0"
+  },
+  {
+   "from": "oth_pres_2_0",
+   "to": "oth_pres_3_0"
   },
   {
    "from": "om_inv_0_0",
@@ -667,6 +846,14 @@
    "to": "om_tx_1_0"
   },
   {
+   "from": "om_tx_1_0",
+   "to": "om_tx_2_0"
+  },
+  {
+   "from": "om_tx_2_0",
+   "to": "om_tx_3_0"
+  },
+  {
    "from": "grad_tx_0_0",
    "to": "grad_tx_1_0"
   },
@@ -683,7 +870,7 @@
    "to": "eac_tx_0_0"
   },
   {
-   "from": "g_c",
+   "from": "t_c",
    "to": "eac_head_0_0",
    "from_dx": -217
   },
@@ -700,7 +887,7 @@
    "to": "om_tx_0_0"
   },
   {
-   "from": "g_c",
+   "from": "t_c",
    "to": "om_head_0_0",
    "from_dx": 0
   },
@@ -717,7 +904,7 @@
    "to": "fix_tx_0_0"
   },
   {
-   "from": "g_c",
+   "from": "t_c",
    "to": "fix_head_0_0",
    "from_dx": 217
   },
@@ -734,9 +921,9 @@
    "to": "ssnhl_tx_0_0"
   },
   {
-   "from": "g_s",
+   "from": "t_s",
    "to": "ssnhl_head_0_0",
-   "from_dx": -217
+   "from_dx": -326
   },
   {
    "from": "grad_head_0_0",
@@ -751,9 +938,9 @@
    "to": "grad_tx_0_0"
   },
   {
-   "from": "g_s",
+   "from": "t_s",
    "to": "grad_head_0_0",
-   "from_dx": 0
+   "from_dx": -108
   },
   {
    "from": "vs_head_0_0",
@@ -768,49 +955,19 @@
    "to": "vs_tx_0_0"
   },
   {
-   "from": "g_s",
+   "from": "t_s",
    "to": "vs_head_0_0",
-   "from_dx": 217
+   "from_dx": 108
+  },
+  {
+   "from": "oth_head_0_0",
+   "to": "oth_pres_0_0"
+  },
+  {
+   "from": "t_s",
+   "to": "oth_head_0_0",
+   "from_dx": 326
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1618,
-   "w": 430,
-   "title": "Otitis media complications",
-   "items": [
-    "in the temporal bone: hearing loss · perforation · effusion · retraction pocket, cholesteatoma · mastoiditis · labyrinthitis · ossicular erosion, fixation · FACIAL paralysis",
-    "intracranial: MENINGITIS · extradural abscess · subdural empyema · brain abscess · lateral sinus thrombosis · otitic hydrocephalus"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 489,
-   "y": 1618,
-   "w": 430,
-   "title": "Other sensorineural causes",
-   "items": [
-    "transverse temporal bone fracture (20%, front-back blow): through the otic capsule, rarely recovers · facial nerve in 50%",
-    "congenital, non-syndromic (2/3): 70-80% recessive · GJB2 (connexin 26) = 20% of childhood deafness",
-    "syndromic (1/3): Usher (retinitis pigmentosa) · Waardenburg (pigment) · Pendred (thyroid) · Alport (kidney) · Jervell and Lange-Nielsen (long QT)",
-    "also: meningioma · labyrinthitis · migraine, MS · cryoglobulinemia, sickle cell · HIV, polyarteritis nodosa · Paget's, otosclerosis"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 933,
-   "y": 1618,
-   "w": 430,
-   "title": "Hearing physiology",
-   "items": [
-    "range 20-20,000 Hz · most sensitive 2,000-4,000 Hz (speech): the 3 cm canal resonates there",
-    "ossicles turn air pressure into force on the oval window to move fluid",
-    "oval window → scala vestibuli → helicotrema → scala tympani → round window",
-    "TONOTOPIC: stiff base = HIGH pitch · floppy apex = low · inner hair cells transduce, outer amplify",
-    "spiral ganglion → CN VIII → brainstem → medial geniculate → superior temporal gyrus"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

@@ -1,7 +1,7 @@
 {
  "name": "neuroimaging modalities overview",
  "width": 1016,
- "title": "Choosing a neuroimaging modality: different objects need different kinds of resolution (spatial, contrast, temporal); radiography, fluoroscopy and CT use X-rays, ultrasound and MRI do not, and each trades its resolution against cost, availability, invasiveness, radiation and scan length; below, what each MRI sequence (T1, T2, FLAIR, DWI, SWI) shows and the order of imaging in a suspected stroke",
+ "title": "Choosing a neuroimaging modality: different objects need different kinds of resolution (spatial, contrast, temporal); radiography, fluoroscopy and CT use X-rays, ultrasound and MRI do not, and each trades its resolution against cost, availability, invasiveness, radiation and scan length; a stroke row orders the imaging in a suspected stroke (non-contrast CT, then CT angiography and perfusion, then catheter angiography with thrombectomy, then DWI), and the MRI column ends with what each sequence (T1, T2, FLAIR, DWI, SWI) shows",
  "kinds": {
   "xr_h": [
    "#46607a",
@@ -99,7 +99,7 @@
    "x": 40,
    "y": 252,
    "w": 186,
-   "h": 542,
+   "h": 598,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
@@ -107,7 +107,7 @@
    "x": 228,
    "y": 252,
    "w": 186,
-   "h": 542,
+   "h": 752,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -115,7 +115,7 @@
    "x": 416,
    "y": 252,
    "w": 186,
-   "h": 542,
+   "h": 752,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -123,7 +123,7 @@
    "x": 632,
    "y": 252,
    "w": 186,
-   "h": 542,
+   "h": 598,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -131,7 +131,7 @@
    "x": 820,
    "y": 252,
    "w": 186,
-   "h": 542,
+   "h": 1432,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   }
@@ -146,14 +146,26 @@
   {
    "x": 23,
    "y": 570,
-   "h": 96,
+   "h": 152,
    "text": "FOR"
   },
   {
    "x": 23,
-   "y": 706,
+   "y": 762,
    "h": 80,
    "text": "AGAINST"
+  },
+  {
+   "x": 23,
+   "y": 882,
+   "h": 114,
+   "text": "SUSPECTED STROKE"
+  },
+  {
+   "x": 23,
+   "y": 1036,
+   "h": 640,
+   "text": "MRI SEQUENCE"
   }
  ],
  "nodes": [
@@ -247,7 +259,8 @@
    "kind": "mri_h",
    "title": "MRI",
    "lines": [
-    "proton energy states · choose the sequence (panel below)"
+    "proton energy states",
+    "choose the SEQUENCE"
    ]
   },
   {
@@ -320,7 +333,7 @@
    "x": 45,
    "y": 570,
    "w": 176,
-   "h": 96,
+   "h": 152,
    "kind": "xr_w",
    "title": "Inexpensive · instant",
    "lines": [
@@ -332,7 +345,7 @@
    "x": 233,
    "y": 570,
    "w": 176,
-   "h": 96,
+   "h": 152,
    "kind": "fl_w",
    "title": "Real-time video",
    "lines": [
@@ -344,7 +357,7 @@
    "x": 421,
    "y": 570,
    "w": 176,
-   "h": 96,
+   "h": 152,
    "kind": "ct_w",
    "title": "Widespread availability",
    "lines": []
@@ -354,7 +367,7 @@
    "x": 637,
    "y": 570,
    "w": 176,
-   "h": 96,
+   "h": 152,
    "kind": "us_w",
    "title": "No radiation",
    "lines": [
@@ -366,15 +379,18 @@
    "x": 825,
    "y": 570,
    "w": 176,
-   "h": 96,
+   "h": 152,
    "kind": "mri_w",
    "title": "Best contrast resolution",
-   "lines": []
+   "lines": [
+    "• advanced: MR angiography, MR perfusion",
+    "• MR spectroscopy, functional MRI"
+   ]
   },
   {
    "id": "xr_con_0_0",
    "x": 45,
-   "y": 706,
+   "y": 762,
    "w": 176,
    "h": 80,
    "kind": "xr_w",
@@ -386,7 +402,7 @@
   {
    "id": "fl_con_0_0",
    "x": 233,
-   "y": 706,
+   "y": 762,
    "w": 176,
    "h": 80,
    "kind": "fl_w",
@@ -398,7 +414,7 @@
   {
    "id": "ct_con_0_0",
    "x": 421,
-   "y": 706,
+   "y": 762,
    "w": 176,
    "h": 80,
    "kind": "ct_w",
@@ -410,7 +426,7 @@
   {
    "id": "us_con_0_0",
    "x": 637,
-   "y": 706,
+   "y": 762,
    "w": 176,
    "h": 80,
    "kind": "us_w",
@@ -420,13 +436,121 @@
   {
    "id": "mri_con_0_0",
    "x": 825,
-   "y": 706,
+   "y": 762,
    "w": 176,
    "h": 80,
    "kind": "mri_w",
    "title": "Expensive · limited availability",
    "lines": [
     "• long scan"
+   ]
+  },
+  {
+   "id": "fl_stroke_0_0",
+   "x": 233,
+   "y": 882,
+   "w": 176,
+   "h": 114,
+   "kind": "ok",
+   "title": "Stroke step 3",
+   "lines": [
+    "• catheter angiography (digital subtraction)",
+    "• + thrombectomy to pull the clot"
+   ]
+  },
+  {
+   "id": "ct_stroke_0_0",
+   "x": 421,
+   "y": 882,
+   "w": 176,
+   "h": 114,
+   "kind": "ok",
+   "title": "Stroke steps 1 + 2",
+   "lines": [
+    "1 · non-contrast CT",
+    "2 · CT angiography (CTA) + CT perfusion (CTP)"
+   ]
+  },
+  {
+   "id": "mri_stroke_0_0",
+   "x": 825,
+   "y": 882,
+   "w": 176,
+   "h": 114,
+   "kind": "ok",
+   "title": "Stroke step 4",
+   "lines": [
+    "DWI afterwards"
+   ]
+  },
+  {
+   "id": "mri_seq_0_0",
+   "x": 825,
+   "y": 1036,
+   "w": 176,
+   "h": 114,
+   "kind": "mri_t",
+   "title": "T1: 'anatomic'",
+   "lines": [
+    "• fluid DARK",
+    "• structural abnormality",
+    "• enhancement with contrast"
+   ]
+  },
+  {
+   "id": "mri_seq_1_0",
+   "x": 825,
+   "y": 1172,
+   "w": 176,
+   "h": 96,
+   "kind": "mri_t",
+   "title": "T2: 'pathologic'",
+   "lines": [
+    "• fluid WHITE",
+    "• 'water is white on T2'",
+    "• edema"
+   ]
+  },
+  {
+   "id": "mri_seq_2_0",
+   "x": 825,
+   "y": 1290,
+   "w": 176,
+   "h": 114,
+   "kind": "mri_t",
+   "title": "FLAIR",
+   "lines": [
+    "• fluid white EXCEPT CSF",
+    "• inversion recovery suppresses CSF",
+    "• edema stands out"
+   ]
+  },
+  {
+   "id": "mri_seq_3_0",
+   "x": 825,
+   "y": 1426,
+   "w": 176,
+   "h": 114,
+   "kind": "mri_t",
+   "title": "DWI / ADC map",
+   "lines": [
+    "• RESTRICTED water diffusion",
+    "• a measure of cellularity",
+    "• T2-weighted"
+   ]
+  },
+  {
+   "id": "mri_seq_4_0",
+   "x": 825,
+   "y": 1562,
+   "w": 176,
+   "h": 114,
+   "kind": "mri_t",
+   "title": "SWI",
+   "lines": [
+    "• BLOOD products",
+    "• hemoglobin in its oxidation states",
+    "• hemosiderin"
    ]
   }
  ],
@@ -440,6 +564,22 @@
    "from": "root",
    "to": "g_other",
    "path": "M523.0 70V95H819.0V120"
+  },
+  {
+   "from": "mri_seq_0_0",
+   "to": "mri_seq_1_0"
+  },
+  {
+   "from": "mri_seq_1_0",
+   "to": "mri_seq_2_0"
+  },
+  {
+   "from": "mri_seq_2_0",
+   "to": "mri_seq_3_0"
+  },
+  {
+   "from": "mri_seq_3_0",
+   "to": "mri_seq_4_0"
   },
   {
    "from": "xr_head_0_0",
@@ -471,6 +611,10 @@
    "to": "fl_con_0_0"
   },
   {
+   "from": "fl_con_0_0",
+   "to": "fl_stroke_0_0"
+  },
+  {
    "from": "g_xray",
    "to": "fl_head_0_0",
    "from_dx": 0
@@ -486,6 +630,10 @@
   {
    "from": "ct_pro_0_0",
    "to": "ct_con_0_0"
+  },
+  {
+   "from": "ct_con_0_0",
+   "to": "ct_stroke_0_0"
   },
   {
    "from": "g_xray",
@@ -522,39 +670,18 @@
    "to": "mri_con_0_0"
   },
   {
+   "from": "mri_con_0_0",
+   "to": "mri_stroke_0_0"
+  },
+  {
+   "from": "mri_stroke_0_0",
+   "to": "mri_seq_0_0"
+  },
+  {
    "from": "g_other",
    "to": "mri_head_0_0",
    "from_dx": 94
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 820,
-   "w": 471,
-   "title": "MRI: choose the sequence",
-   "items": [
-    "T1, 'anatomic': fluid DARK · structural abnormality · enhancement with contrast",
-    "T2, 'pathologic': fluid WHITE ('water is white on T2') · edema",
-    "FLAIR: fluid white EXCEPT CSF (inversion recovery suppresses it) · edema stands out",
-    "DWI / ADC map: RESTRICTED water diffusion · a measure of cellularity · T2-weighted",
-    "SWI: BLOOD products (hemoglobin in its oxidation states, hemosiderin)",
-    "advanced: MR angiography · MR perfusion · MR spectroscopy · functional MRI"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 530,
-   "y": 820,
-   "w": 471,
-   "title": "Putting it to work: a suspected stroke, in order",
-   "items": [
-    "1 · non-contrast CT",
-    "2 · CT angiography (CTA) + CT perfusion (CTP)",
-    "3 · catheter angiography (fluoroscopy, digital subtraction) + thrombectomy to pull the clot",
-    "4 · DWI afterwards"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

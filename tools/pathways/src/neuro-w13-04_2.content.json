@@ -1,6 +1,6 @@
 {
  "name": "cerebellum and basal ganglia overview",
- "title": "Movement disorders with normal power: a cerebellar lesion lets movement start but makes it inaccurate, on the same side, with the subdivision deciding the signs; a basal ganglia imbalance either blocks starting (Parkinson disease, hypokinetic) or releases unwanted movement (chorea, hyperkinetic); each column gives the signs and the circuit that failed",
+ "title": "Movement disorders with normal power: a cerebellar lesion lets movement start but makes it inaccurate, on the same side, with the subdivision deciding the signs; a basal ganglia imbalance either blocks starting (Parkinson disease, hypokinetic) or releases unwanted movement (chorea, hyperkinetic); a shared row shows each loop's circuit (the cerebellar Purkinje circuit and motor learning; the basal ganglia direct and indirect pathways), and each column gives the signs and the circuit that failed",
  "col_w": 172,
  "root": {
   "title": "Abnormal movement, power NORMAL: cerebellum or basal ganglia?",
@@ -40,12 +40,35 @@
  "sections": [
   "head",
   "sign",
+  "loop",
   "circuit"
  ],
  "row_names": {
   "sign": "PRESENTS AS",
+  "loop": "THE LOOP",
   "circuit": "WHAT FAILED"
  },
+ "spans": [
+  {"section": "loop", "cols": [0, 2], "rows": [
+   [["plain", "Same circuit in every zone", [
+     "• half the brain's neurons",
+     "• mossy → parallel fibres → Purkinje",
+     "• parallel: weak, wide (~200,000 per cell)",
+     "• Purkinje INHIBITS deep nuclei: the ONLY output"]],
+    ["plain", "Motor learning", [
+     "• climbing fibre = error signal: TEACHER",
+     "• parallel fibre = student",
+     "• adjusts vestibulo-ocular reflex gain",
+     "~ aging, new glasses"]]],
+   [["bad", "Cerebellar patient + prisms", ["• NO adaptation", "• no after-effect"]]]]},
+  {"section": "loop", "cols": [3, 4], "rows": [
+   [["plain", "Cortex → striatum → pallidus → thalamus", [
+     "• striatum = caudate + putamen",
+     "• out: globus pallidus → thalamus → motor cortex",
+     "• pars reticulata → superior colliculus: eye movements"]]],
+   [["plain", "Direct", ["• striatum inhibits pallidus", "→ DISINHIBITS thalamus", "→ movement"]],
+    ["plain", "Indirect", ["• extra pallidal synapse", "• + subthalamic loop", "→ inhibits"]]]]}
+ ],
  "dashed_sections": [
   "sign"
  ],
@@ -259,21 +282,5 @@
     ]
    ]
   }
- ],
- "panels": [
-  {"title": "Cerebellar circuit + motor learning", "items": [
-   "same circuit in every zone · half the brain's neurons",
-   "mossy → parallel fibres → Purkinje: weak, wide (~200,000 per cell)",
-   "Purkinje cells INHIBIT deep nuclei: the ONLY output",
-   "climbing fibre = error signal: teacher · parallel fibre = student",
-   "adjusts vestibulo-ocular reflex gain (aging, new glasses)",
-   "cerebellar patient + prisms: NO adaptation, no after-effect"]},
-  {"title": "Basal ganglia circuit", "items": [
-   "in: cortex → striatum (caudate + putamen)",
-   "out: globus pallidus → thalamus → motor cortex",
-   "direct: striatum inhibits pallidus → DISINHIBITS thalamus → movement",
-
-   "indirect: extra pallidal synapse + subthalamic loop → inhibits",
-   "pars reticulata → superior colliculus: eye movements"]}
  ]
 }

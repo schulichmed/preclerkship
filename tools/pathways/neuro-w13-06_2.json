@@ -1,7 +1,7 @@
 {
  "name": "spinal cord syndromes overview",
  "width": 1096,
- "title": "Spinal cord or root: upper motor neuron signs below a sensory level mean the cord, and which modalities are lost sorts anterior, posterior, central and Brown-Sequard cord syndromes; a lower motor neuron pattern means the roots, either cauda equina (an emergency) or a single radiculopathy; each column gives the presentation and the causes",
+ "title": "Spinal cord or root: upper motor neuron signs below a sensory level mean the cord, and which modalities are lost sorts anterior, posterior, central and Brown-Sequard cord syndromes; a lower motor neuron pattern means the roots, either cauda equina (an emergency) or a single radiculopathy; each column gives the presentation and the causes, and a shared row lists every other kind of cord cause",
  "kinds": {
   "ant_h": [
    "#8a5a2b",
@@ -174,6 +174,12 @@
    "y": 956,
    "h": 206,
    "text": "CAUSES"
+  },
+  {
+   "x": 23,
+   "y": 1202,
+   "h": 214,
+   "text": "NOT JUST TRAUMA OR TUMOUR"
   }
  ],
  "nodes": [
@@ -474,6 +480,62 @@
     "• lumbar: hits the TRAVERSING root (L5-S1 → S1)",
     "→ discectomy"
    ]
+  },
+  {
+   "id": "span0_more_0_0",
+   "x": 45.0,
+   "y": 1202,
+   "w": 329.0,
+   "h": 96,
+   "kind": "plain",
+   "title": "Vascular · infectious",
+   "lines": [
+    "• vascular: stroke, AVM, fistula",
+    "• infectious: epidural abscess, viral",
+    "• infectious: syphilis (tabes dorsalis)"
+   ]
+  },
+  {
+   "id": "span0_more_0_1",
+   "x": 384.0,
+   "y": 1202,
+   "w": 329.0,
+   "h": 96,
+   "kind": "plain",
+   "title": "Trauma · autoimmune · metabolic",
+   "lines": [
+    "• trauma: fracture, stab, disc, radiation",
+    "• autoimmune: lupus",
+    "• metabolic: B12 (subacute combined degeneration)"
+   ]
+  },
+  {
+   "id": "span0_more_1_0",
+   "x": 45.0,
+   "y": 1320,
+   "w": 329.0,
+   "h": 96,
+   "kind": "plain",
+   "title": "Inflammatory · neoplastic",
+   "lines": [
+    "• inflammatory: multiple sclerosis",
+    "• also: transverse myelitis, syrinx",
+    "• neoplastic: metastatic, extradural, intrinsic"
+   ]
+  },
+  {
+   "id": "span0_more_1_1",
+   "x": 384.0,
+   "y": 1320,
+   "w": 329.0,
+   "h": 96,
+   "kind": "plain",
+   "title": "Congenital · degenerative",
+   "lines": [
+    "• congenital: achondroplasia",
+    "• degenerative: disc herniation, arthritis",
+    "• degenerative: motor neuron disease (ALS)"
+   ]
   }
  ],
  "edges": [
@@ -493,12 +555,25 @@
    "dashed": true
   },
   {
+   "from": "span0_more_0_0",
+   "to": "span0_more_1_0"
+  },
+  {
+   "from": "span0_more_0_1",
+   "to": "span0_more_1_1"
+  },
+  {
    "from": "ant_head_0_0",
    "to": "ant_pres_0_0"
   },
   {
    "from": "ant_pres_0_0",
    "to": "ant_cause_0_0"
+  },
+  {
+   "from": "ant_cause_0_0",
+   "to": "span0_more_0_0",
+   "to_dx": -85.5
   },
   {
    "from": "g_cord",
@@ -514,6 +589,11 @@
    "to": "post_cause_0_0"
   },
   {
+   "from": "post_cause_0_0",
+   "to": "span0_more_0_0",
+   "to_dx": 84.5
+  },
+  {
    "from": "g_cord",
    "to": "post_head_0_0",
    "from_dx": -85
@@ -527,6 +607,11 @@
    "to": "cent_cause_0_0"
   },
   {
+   "from": "cent_cause_0_0",
+   "to": "span0_more_0_1",
+   "to_dx": -84.5
+  },
+  {
    "from": "g_cord",
    "to": "cent_head_0_0",
    "from_dx": 85
@@ -538,6 +623,11 @@
   {
    "from": "bs_pres_0_0",
    "to": "bs_cause_0_0"
+  },
+  {
+   "from": "bs_cause_0_0",
+   "to": "span0_more_0_1",
+   "to_dx": 85.5
   },
   {
    "from": "g_cord",
@@ -571,19 +661,5 @@
    "from_dx": 85
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1196,
-   "w": 1036,
-   "title": "Cord causes: not just trauma or tumour",
-   "items": [
-    "vascular: stroke, AVM, fistula · infectious: epidural abscess, viral, syphilis (tabes dorsalis)",
-    "trauma: fracture, stab, disc, radiation · autoimmune: lupus · metabolic: B12 (subacute combined degeneration)",
-    "inflammatory: multiple sclerosis · also: transverse myelitis, syrinx · neoplastic: metastatic, extradural, intrinsic",
-    "congenital: achondroplasia · degenerative: disc herniation, arthritis, motor neuron disease (ALS)"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

@@ -1,7 +1,7 @@
 {
  "name": "multiple sclerosis overview",
  "width": 930,
- "title": "Multiple sclerosis: a relapse is new neurological dysfunction lasting 24 hours or more with no other cause; the typical relapses are myelitis, optic neuritis and brainstem or cerebellar syndromes; the diagnosis needs dissemination in space and time on MRI, with CSF oligoclonal bands able to stand in for time, once better explanations are ruled out; treatment is disease-modifying therapy by category plus symptomatic therapy",
+ "title": "Multiple sclerosis: a relapse is new neurological dysfunction lasting 24 hours or more with no other cause; the typical relapses are myelitis, optic neuritis and brainstem or cerebellar syndromes; the diagnosis needs dissemination in space and time on MRI, with CSF oligoclonal bands able to stand in for time, once better explanations are ruled out (the VITAMIN differential, led by NMOSD and MOGAD); treatment is disease-modifying therapy by category plus symptomatic therapy",
  "kinds": {
   "mye_h": [
    "#1f6f8b",
@@ -94,12 +94,12 @@
   {
    "x": 23,
    "y": 622,
-   "h": 260,
+   "h": 514,
    "text": "DIAGNOSIS"
   },
   {
    "x": 23,
-   "y": 922,
+   "y": 1176,
    "h": 288,
    "text": "TREATMENT"
   }
@@ -262,9 +262,52 @@
    ]
   },
   {
+   "id": "span0_inv_3_0",
+   "x": 45.0,
+   "y": 904,
+   "w": 430.0,
+   "h": 114,
+   "kind": "plain",
+   "title": "Differential: VITAMIN",
+   "lines": [
+    "• V vascular: migraine, stroke, CADASIL",
+    "• I infection: HIV, syphilis, Lyme, West Nile",
+    "• T toxins: cocaine, additives",
+    "• A autoimmune: NMO, MOG · Sjögren's, Behçet's"
+   ]
+  },
+  {
+   "id": "span0_inv_3_1",
+   "x": 485.0,
+   "y": 904,
+   "w": 430.0,
+   "h": 114,
+   "kind": "plain",
+   "title": "VITAMIN, continued",
+   "lines": [
+    "• M metabolic: B12",
+    "• I inflammatory: sarcoid",
+    "• N neoplastic: lymphoma"
+   ]
+  },
+  {
+   "id": "span0_inv_4_0",
+   "x": 45,
+   "y": 1040,
+   "w": 870,
+   "h": 96,
+   "kind": "info",
+   "title": "Top differential: how common",
+   "lines": [
+    "• MS 1500 · NMOSD 30 · MOGAD 30",
+    "• sarcoid 15 · lymphoma 6",
+    "• ADEM 3 · Sjögren's 2"
+   ]
+  },
+  {
    "id": "span1_tx_0_0",
    "x": 45,
-   "y": 922,
+   "y": 1176,
    "w": 870,
    "h": 98,
    "kind": "plain",
@@ -277,7 +320,7 @@
   {
    "id": "span1_tx_1_0",
    "x": 45.0,
-   "y": 1042,
+   "y": 1296,
    "w": 430.0,
    "h": 168,
    "kind": "ok",
@@ -292,7 +335,7 @@
   {
    "id": "span1_tx_1_1",
    "x": 485.0,
-   "y": 1042,
+   "y": 1296,
    "w": 430.0,
    "h": 168,
    "kind": "ok",
@@ -330,6 +373,26 @@
   {
    "from": "span0_inv_1_1",
    "to": "span0_inv_2_0",
+   "to_dx": 220.0
+  },
+  {
+   "from": "span0_inv_2_0",
+   "to": "span0_inv_3_0",
+   "from_dx": -220.0
+  },
+  {
+   "from": "span0_inv_2_0",
+   "to": "span0_inv_3_1",
+   "from_dx": 220.0
+  },
+  {
+   "from": "span0_inv_3_0",
+   "to": "span0_inv_4_0",
+   "to_dx": -220.0
+  },
+  {
+   "from": "span0_inv_3_1",
+   "to": "span0_inv_4_0",
    "to_dx": 220.0
   },
   {
@@ -385,19 +448,5 @@
    "from_dx": 294
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1244,
-   "w": 870,
-   "title": "Differential: VITAMIN",
-   "items": [
-    "V vascular: migraine, stroke, CADASIL · I infection: HIV, syphilis, Lyme, West Nile",
-    "T toxins: cocaine, additives · A autoimmune: NMO, MOG · Sjögren's, Behçet's",
-    "M metabolic: B12 · I inflammatory: sarcoid · N neoplastic: lymphoma",
-    "top differential, how common: MS 1500 · NMOSD 30 · MOGAD 30 · sarcoid 15 · lymphoma 6 · ADEM 3 · Sjögren's 2"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

@@ -1,7 +1,7 @@
 {
  "name": "altered level of consciousness overview",
  "width": 1376,
- "title": "Altered level of consciousness: treat the reversible causes first, then the exam (brainstem reflexes, breathing, motor response, eye opening and signs of awareness) places the patient as brain death, coma, vegetative state, minimally conscious state minus or plus, or a locked-in coma mimic",
+ "title": "Altered level of consciousness: treat the reversible causes first, then the exam (brainstem reflexes, each with its in and out pathway, breathing, motor response, eye opening and signs of awareness, scored in coma by the GCS or FOUR score) places the patient as brain death, coma, vegetative state, minimally conscious state minus or plus, or a locked-in coma mimic",
  "kinds": {
   "bd_h": [
    "#46607a",
@@ -115,49 +115,49 @@
  "bands": [
   {
    "x": 40,
-   "y": 344,
+   "y": 516,
    "w": 210,
-   "h": 900,
+   "h": 1270,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
    "x": 252,
-   "y": 344,
+   "y": 516,
    "w": 210,
-   "h": 900,
+   "h": 1270,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 464,
-   "y": 344,
+   "y": 516,
    "w": 210,
-   "h": 900,
+   "h": 1270,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 704,
-   "y": 344,
+   "y": 516,
    "w": 210,
-   "h": 900,
+   "h": 1270,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 916,
-   "y": 344,
+   "y": 516,
    "w": 210,
-   "h": 900,
+   "h": 1270,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 1156,
-   "y": 344,
+   "y": 516,
    "w": 210,
-   "h": 900,
+   "h": 1270,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   }
@@ -165,19 +165,25 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 488,
+   "y": 312,
+   "h": 132,
+   "text": "BRAINSTEM REFLEXES"
+  },
+  {
+   "x": 23,
+   "y": 660,
    "h": 294,
    "text": "AWAKE? AWARE?"
   },
   {
    "x": 23,
-   "y": 822,
-   "h": 260,
+   "y": 994,
+   "h": 630,
    "text": "EXAM SHOWS"
   },
   {
    "x": 23,
-   "y": 1122,
+   "y": 1664,
    "h": 114,
    "text": "EEG · OUTLOOK"
   }
@@ -235,9 +241,25 @@
    ]
   },
   {
+   "id": "p_bs",
+   "x": 45,
+   "y": 312,
+   "w": 624,
+   "h": 132,
+   "kind": "info",
+   "title": "Brainstem reflexes: in → out",
+   "lines": [
+    "• pupil: II → III (Edinger-Westphal) · blown pupil = uncal herniation",
+    "• Horner: ptosis, miosis ± anhidrosis · 3-neuron sympathetic path",
+    "• doll's eyes (no C-spine concern) + calorics: VIII → III, IV, VI",
+    "• calorics in COMA: only SLOW deviation toward cold · COWS is the awake fast phase",
+    "• corneal: V → VII · gag: IX → X · cough: often the LAST lost"
+   ]
+  },
+  {
    "id": "bd_head_0_0",
    "x": 45,
-   "y": 352,
+   "y": 524,
    "w": 200,
    "h": 96,
    "kind": "bd_h",
@@ -249,7 +271,7 @@
   {
    "id": "coma_head_0_0",
    "x": 257,
-   "y": 352,
+   "y": 524,
    "w": 200,
    "h": 96,
    "kind": "coma_h",
@@ -261,7 +283,7 @@
   {
    "id": "vs_head_0_0",
    "x": 469,
-   "y": 352,
+   "y": 524,
    "w": 200,
    "h": 96,
    "kind": "vs_h",
@@ -273,7 +295,7 @@
   {
    "id": "mcsm_head_0_0",
    "x": 709,
-   "y": 352,
+   "y": 524,
    "w": 200,
    "h": 96,
    "kind": "mcsm_h",
@@ -285,7 +307,7 @@
   {
    "id": "mcsp_head_0_0",
    "x": 921,
-   "y": 352,
+   "y": 524,
    "w": 200,
    "h": 96,
    "kind": "mcsp_h",
@@ -297,7 +319,7 @@
   {
    "id": "lis_head_0_0",
    "x": 1161,
-   "y": 352,
+   "y": 524,
    "w": 200,
    "h": 96,
    "kind": "lis_h",
@@ -309,7 +331,7 @@
   {
    "id": "bd_awake_0_0",
    "x": 45,
-   "y": 488,
+   "y": 660,
    "w": 200,
    "h": 294,
    "kind": "bd_t",
@@ -322,7 +344,7 @@
   {
    "id": "coma_awake_0_0",
    "x": 257,
-   "y": 488,
+   "y": 660,
    "w": 200,
    "h": 294,
    "kind": "coma_t",
@@ -340,7 +362,7 @@
   {
    "id": "vs_awake_0_0",
    "x": 469,
-   "y": 488,
+   "y": 660,
    "w": 200,
    "h": 294,
    "kind": "vs_t",
@@ -353,7 +375,7 @@
   {
    "id": "mcsm_awake_0_0",
    "x": 709,
-   "y": 488,
+   "y": 660,
    "w": 200,
    "h": 294,
    "kind": "mcsm_t",
@@ -363,7 +385,7 @@
   {
    "id": "mcsp_awake_0_0",
    "x": 921,
-   "y": 488,
+   "y": 660,
    "w": 200,
    "h": 294,
    "kind": "mcsp_t",
@@ -373,7 +395,7 @@
   {
    "id": "lis_awake_0_0",
    "x": 1161,
-   "y": 488,
+   "y": 660,
    "w": 200,
    "h": 294,
    "kind": "lis_t",
@@ -385,9 +407,9 @@
   {
    "id": "bd_exam_0_0",
    "x": 45,
-   "y": 822,
+   "y": 994,
    "w": 200,
-   "h": 260,
+   "h": 630,
    "kind": "bd_w",
    "title": "Nothing above the cord",
    "lines": [
@@ -399,9 +421,9 @@
   {
    "id": "coma_exam_0_0",
    "x": 257,
-   "y": 822,
+   "y": 994,
    "w": 200,
-   "h": 260,
+   "h": 222,
    "kind": "coma_w",
    "title": "Primitive reflexes only",
    "lines": [
@@ -412,11 +434,54 @@
    ]
   },
   {
+   "id": "coma_exam_1_0",
+   "x": 257,
+   "y": 1238,
+   "w": 200,
+   "h": 96,
+   "kind": "coma_w",
+   "title": "Apply pain",
+   "lines": [
+    "• central: sternum, trapezius",
+    "• central: supraorbital, jaw",
+    "• + nail bed"
+   ]
+  },
+  {
+   "id": "coma_exam_2_0",
+   "x": 257,
+   "y": 1356,
+   "w": 200,
+   "h": 132,
+   "kind": "coma_w",
+   "title": "GCS 3-15",
+   "lines": [
+    "• eye 4 · verbal 5 · motor 6",
+    "• E2V3M4 = 9 · intubated E2VTM4 = 6T",
+    "• shortcomings: intubation",
+    "• brainstem barely assessed"
+   ]
+  },
+  {
+   "id": "coma_exam_3_0",
+   "x": 257,
+   "y": 1510,
+   "w": 200,
+   "h": 114,
+   "kind": "coma_w",
+   "title": "FOUR score",
+   "lines": [
+    "• eye, motor, brainstem reflexes, respiration",
+    "• 0-4 each · NO verbal part",
+    "• works when intubated"
+   ]
+  },
+  {
    "id": "vs_exam_0_0",
    "x": 469,
-   "y": 822,
+   "y": 994,
    "w": 200,
-   "h": 260,
+   "h": 630,
    "kind": "vs_w",
    "title": "Reflexive, never purposeful",
    "lines": [
@@ -430,9 +495,9 @@
   {
    "id": "mcsm_exam_0_0",
    "x": 709,
-   "y": 822,
+   "y": 994,
    "w": 200,
-   "h": 260,
+   "h": 630,
    "kind": "mcsm_w",
    "title": "Responds, but NO commands",
    "lines": [
@@ -444,9 +509,9 @@
   {
    "id": "mcsp_exam_0_0",
    "x": 921,
-   "y": 822,
+   "y": 994,
    "w": 200,
-   "h": 260,
+   "h": 630,
    "kind": "mcsp_w",
    "title": "FOLLOWS COMMANDS",
    "lines": [
@@ -457,9 +522,9 @@
   {
    "id": "lis_exam_0_0",
    "x": 1161,
-   "y": 822,
+   "y": 994,
    "w": 200,
-   "h": 260,
+   "h": 630,
    "kind": "lis_w",
    "title": "Only UPWARD GAZE + eye opening",
    "lines": [
@@ -470,7 +535,7 @@
   {
    "id": "bd_eeg_0_0",
    "x": 45,
-   "y": 1122,
+   "y": 1664,
    "w": 200,
    "h": 114,
    "kind": "bad",
@@ -482,7 +547,7 @@
   {
    "id": "coma_eeg_0_0",
    "x": 257,
-   "y": 1122,
+   "y": 1664,
    "w": 200,
    "h": 114,
    "kind": "warn",
@@ -494,7 +559,7 @@
   {
    "id": "vs_eeg_0_0",
    "x": 469,
-   "y": 1122,
+   "y": 1664,
    "w": 200,
    "h": 114,
    "kind": "warn",
@@ -506,7 +571,7 @@
   {
    "id": "mcsm_eeg_0_0",
    "x": 709,
-   "y": 1122,
+   "y": 1664,
    "w": 200,
    "h": 114,
    "kind": "warn",
@@ -518,7 +583,7 @@
   {
    "id": "mcsp_eeg_0_0",
    "x": 921,
-   "y": 1122,
+   "y": 1664,
    "w": 200,
    "h": 114,
    "kind": "ok",
@@ -530,7 +595,7 @@
   {
    "id": "lis_eeg_0_0",
    "x": 1161,
-   "y": 1122,
+   "y": 1664,
    "w": 200,
    "h": 114,
    "kind": "ok",
@@ -557,6 +622,25 @@
    "path": "M703.0 142V167H1261.0V192"
   },
   {
+   "from": "g_none",
+   "to": "p_bs"
+  },
+  {
+   "from": "coma_exam_0_0",
+   "to": "coma_exam_1_0",
+   "dashed": true
+  },
+  {
+   "from": "coma_exam_1_0",
+   "to": "coma_exam_2_0",
+   "dashed": true
+  },
+  {
+   "from": "coma_exam_2_0",
+   "to": "coma_exam_3_0",
+   "dashed": true
+  },
+  {
    "from": "bd_head_0_0",
    "to": "bd_awake_0_0"
   },
@@ -569,13 +653,13 @@
    "to": "bd_eeg_0_0"
   },
   {
-   "from": "g_none",
+   "from": "p_bs",
    "to": "bd_head_0_0",
    "from_dx": -212,
    "label": "no reflexes",
    "label_at": [
     145.0,
-    312
+    484
    ]
   },
   {
@@ -587,17 +671,17 @@
    "to": "coma_exam_0_0"
   },
   {
-   "from": "coma_exam_0_0",
+   "from": "coma_exam_3_0",
    "to": "coma_eeg_0_0"
   },
   {
-   "from": "g_none",
+   "from": "p_bs",
    "to": "coma_head_0_0",
    "from_dx": 0,
    "label": "eyes closed",
    "label_at": [
     357.0,
-    312
+    484
    ]
   },
   {
@@ -613,13 +697,13 @@
    "to": "vs_eeg_0_0"
   },
   {
-   "from": "g_none",
+   "from": "p_bs",
    "to": "vs_head_0_0",
    "from_dx": 212,
    "label": "eyes open",
    "label_at": [
     569.0,
-    312
+    484
    ]
   },
   {
@@ -641,7 +725,7 @@
    "label": "no",
    "label_at": [
     809.0,
-    312
+    484
    ]
   },
   {
@@ -663,7 +747,7 @@
    "label": "yes",
    "label_at": [
     1021.0,
-    312
+    484
    ]
   },
   {
@@ -685,38 +769,9 @@
    "label": "can't move",
    "label_at": [
     1261.0,
-    312
+    484
    ]
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1270,
-   "w": 651,
-   "title": "Brainstem reflexes: in → out",
-   "items": [
-    "pupil: II → III (Edinger-Westphal) · blown pupil = uncal herniation",
-    "Horner: ptosis, miosis ± anhidrosis · 3-neuron sympathetic path",
-    "doll's eyes (no C-spine concern) + calorics: VIII → III, IV, VI",
-    "calorics in COMA: only SLOW deviation toward cold · COWS is the awake fast phase",
-    "corneal: V → VII · gag: IX → X · cough: often the LAST lost"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 710,
-   "y": 1270,
-   "w": 651,
-   "title": "Coma scales",
-   "items": [
-    "GCS 3-15: eye 4 · verbal 5 · motor 6 · e.g. E2V3M4 = 9 · intubated E2VTM4 = 6T",
-    "GCS shortcomings: intubation, brainstem barely assessed",
-    "FOUR score: eye, motor, brainstem reflexes, respiration, 0-4 each",
-    "FOUR: NO verbal part, works when intubated",
-    "pain: central (sternum, trapezius, supraorbital, jaw) + nail bed"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

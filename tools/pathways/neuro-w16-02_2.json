@@ -1,7 +1,7 @@
 {
  "name": "autopsy and cause of death overview",
  "width": 982,
- "title": "After a death: any coroner indication makes it a medicolegal case under the Coroner's Act; an expected natural death is certified by the doctor, who writes the cause of death in the WHO format, and a hospital autopsy needs informed authorization from the estate trustee or next of kin in order; the steps of an autopsy and what the death certificate is for are below",
+ "title": "After a death: any coroner indication makes it a medicolegal case under the Coroner's Act; an expected natural death is certified by the doctor, who writes the cause of death in the WHO format, and a hospital autopsy needs informed authorization from the estate trustee or next of kin in order; a last row runs the steps of an autopsy across both kinds of autopsy and says what the death certificate is for",
  "kinds": {
   "ml_h": [
    "#46607a",
@@ -21,24 +21,6 @@
    "#46607a",
    "#18212e"
   ],
-  "cert_h": [
-   "#b5600f",
-   "#b5600f",
-   "#ffffff",
-   "#ffffff"
-  ],
-  "cert_t": [
-   "#fbe8d3",
-   "#b5600f",
-   "#b5600f",
-   "#18212e"
-  ],
-  "cert_w": [
-   "#ffffff",
-   "#b5600f",
-   "#b5600f",
-   "#18212e"
-  ],
   "hosp_h": [
    "#1f6f8b",
    "#1f6f8b",
@@ -56,6 +38,24 @@
    "#1f6f8b",
    "#1f6f8b",
    "#18212e"
+  ],
+  "cert_h": [
+   "#b5600f",
+   "#b5600f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "cert_t": [
+   "#fbe8d3",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
+  ],
+  "cert_w": [
+   "#ffffff",
+   "#b5600f",
+   "#b5600f",
+   "#18212e"
   ]
  },
  "bands": [
@@ -72,16 +72,16 @@
    "y": 324,
    "w": 300,
    "h": 818,
-   "fill": "#fdf4ea",
-   "stroke": "#b5600f"
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
   },
   {
    "x": 672,
    "y": 324,
    "w": 300,
-   "h": 818,
-   "fill": "#eef7fa",
-   "stroke": "#1f6f8b"
+   "h": 1190,
+   "fill": "#fdf4ea",
+   "stroke": "#b5600f"
   }
  ],
  "row_labels": [
@@ -96,6 +96,12 @@
    "y": 848,
    "h": 286,
    "text": "KEY POINTS"
+  },
+  {
+   "x": 23,
+   "y": 1174,
+   "h": 332,
+   "text": "STEPS · USES"
   }
  ],
  "nodes": [
@@ -147,21 +153,8 @@
    ]
   },
   {
-   "id": "cert_head_0_0",
-   "x": 375,
-   "y": 332,
-   "w": 290,
-   "h": 114,
-   "kind": "cert_h",
-   "title": "Death certificate (Form 16)",
-   "lines": [
-    "doctor or certain nurses sign · NOT for stillbirths",
-    "identity · cause · MANNER · autopsy done?"
-   ]
-  },
-  {
    "id": "hosp_head_0_0",
-   "x": 677,
+   "x": 375,
    "y": 332,
    "w": 290,
    "h": 114,
@@ -170,6 +163,19 @@
    "lines": [
     "hospital pathologist · died in hospital, already investigated",
     "natural death: family request, genetics, teaching, research, quality assurance"
+   ]
+  },
+  {
+   "id": "cert_head_0_0",
+   "x": 677,
+   "y": 332,
+   "w": 290,
+   "h": 114,
+   "kind": "cert_h",
+   "title": "Death certificate (Form 16)",
+   "lines": [
+    "doctor or certain nurses sign · NOT for stillbirths",
+    "identity · cause · MANNER · autopsy done?"
    ]
   },
   {
@@ -185,36 +191,8 @@
    ]
   },
   {
-   "id": "cert_who_0_0",
-   "x": 375,
-   "y": 486,
-   "w": 290,
-   "h": 222,
-   "kind": "cert_t",
-   "title": "Part I: the causal chain, backwards",
-   "lines": [
-    "(a) immediate ← (b) intermediate ← (c) underlying",
-    "each line causes the one above it",
-    "~hemopericardium ← ruptured myocardial infarct ← coronary atherosclerosis + thrombosis · II: diabetes",
-    "~upper GI bleed ← ruptured esophageal varix ← alcoholic cirrhosis · II: hemophilia",
-    "~right lung squamous cell carcinoma · II: tobacco smoking"
-   ]
-  },
-  {
-   "id": "cert_who_1_0",
-   "x": 375,
-   "y": 730,
-   "w": 290,
-   "h": 78,
-   "kind": "cert_w",
-   "title": "Part II: contributed, outside the chain",
-   "lines": [
-    "often risk factors, e.g. diabetes, tobacco smoking"
-   ]
-  },
-  {
    "id": "hosp_who_0_0",
-   "x": 677,
+   "x": 375,
    "y": 486,
    "w": 290,
    "h": 205,
@@ -231,7 +209,7 @@
   },
   {
    "id": "hosp_who_1_0",
-   "x": 677,
+   "x": 375,
    "y": 713,
    "w": 290,
    "h": 95,
@@ -240,6 +218,34 @@
    "lines": [
     "• limited internal exam",
     "• no organ retention (brain, heart)"
+   ]
+  },
+  {
+   "id": "cert_who_0_0",
+   "x": 677,
+   "y": 486,
+   "w": 290,
+   "h": 222,
+   "kind": "cert_t",
+   "title": "Part I: the causal chain, backwards",
+   "lines": [
+    "(a) immediate ← (b) intermediate ← (c) underlying",
+    "each line causes the one above it",
+    "~hemopericardium ← ruptured myocardial infarct ← coronary atherosclerosis + thrombosis · II: diabetes",
+    "~upper GI bleed ← ruptured esophageal varix ← alcoholic cirrhosis · II: hemophilia",
+    "~right lung squamous cell carcinoma · II: tobacco smoking"
+   ]
+  },
+  {
+   "id": "cert_who_1_0",
+   "x": 677,
+   "y": 730,
+   "w": 290,
+   "h": 78,
+   "kind": "cert_w",
+   "title": "Part II: contributed, outside the chain",
+   "lines": [
+    "often risk factors, e.g. diabetes, tobacco smoking"
    ]
   },
   {
@@ -255,8 +261,23 @@
    ]
   },
   {
-   "id": "cert_do_0_0",
+   "id": "hosp_do_0_0",
    "x": 375,
+   "y": 848,
+   "w": 290,
+   "h": 286,
+   "kind": "ok",
+   "title": "Why do it",
+   "lines": [
+    "• diagnosis, extent, effect of treatment",
+    "• accuracy of clinical tests and imaging · unresolved questions",
+    "• SUSPECTED GENETIC disease: tell living relatives",
+    "• grief · teaching · research · the death certificate"
+   ]
+  },
+  {
+   "id": "cert_do_0_0",
+   "x": 677,
    "y": 848,
    "w": 290,
    "h": 132,
@@ -269,7 +290,7 @@
   },
   {
    "id": "cert_do_1_0",
-   "x": 375,
+   "x": 677,
    "y": 1002,
    "w": 290,
    "h": 132,
@@ -281,18 +302,124 @@
    ]
   },
   {
-   "id": "hosp_do_0_0",
+   "id": "cert_how_0_0",
    "x": 677,
-   "y": 848,
+   "y": 1174,
    "w": 290,
-   "h": 286,
-   "kind": "ok",
-   "title": "Why do it",
+   "h": 84,
+   "kind": "cert_w",
+   "title": "What the certificate is for",
    "lines": [
-    "• diagnosis, extent, effect of treatment",
-    "• accuracy of clinical tests and imaging · unresolved questions",
-    "• SUSPECTED GENETIC disease: tell living relatives",
-    "• grief · teaching · research · the death certificate"
+    "• permanent legal record",
+    "• proof of death: family, legal, insurance"
+   ]
+  },
+  {
+   "id": "cert_how_1_0",
+   "x": 677,
+   "y": 1280,
+   "w": 290,
+   "h": 102,
+   "kind": "cert_w",
+   "title": "Statistics (ICD)",
+   "lines": [
+    "• the UNDERLYING cause is what gets coded",
+    "• research · surveillance",
+    "• public health planning · research funding"
+   ]
+  },
+  {
+   "id": "cert_how_2_0",
+   "x": 677,
+   "y": 1404,
+   "w": 290,
+   "h": 102,
+   "kind": "info",
+   "title": "Causation (Hume)",
+   "lines": [
+    "• a time-ordered, linked chain A → B → C → death",
+    "• the initiating event sets the manner"
+   ]
+  },
+  {
+   "id": "span0_how_0_0",
+   "x": 45.0,
+   "y": 1174,
+   "w": 305.0,
+   "h": 114,
+   "kind": "plain",
+   "title": "1 · History",
+   "lines": [
+    "• records, ambulance call report",
+    "• clinician, consultation form"
+   ]
+  },
+  {
+   "id": "span0_how_0_1",
+   "x": 360.0,
+   "y": 1174,
+   "w": 305.0,
+   "h": 114,
+   "kind": "plain",
+   "title": "2 · External",
+   "lines": [
+    "• nutrition · identifying marks",
+    "• all surfaces",
+    "• disease, anomalies, injuries",
+    "• resuscitation"
+   ]
+  },
+  {
+   "id": "span0_how_1_0",
+   "x": 45.0,
+   "y": 1310,
+   "w": 305.0,
+   "h": 96,
+   "kind": "plain",
+   "title": "3 · Internal",
+   "lines": [
+    "• Y-shaped incision",
+    "• organ block, weighed",
+    "• brain removed · special dissections"
+   ]
+  },
+  {
+   "id": "span0_how_1_1",
+   "x": 360.0,
+   "y": 1310,
+   "w": 305.0,
+   "h": 96,
+   "kind": "info",
+   "title": "Not routine",
+   "lines": [
+    "• eyes, bowel lumen, limb bones, joints",
+    "• ears, spinal cord, back muscles",
+    "• parathyroids"
+   ]
+  },
+  {
+   "id": "span0_how_2_0",
+   "x": 45.0,
+   "y": 1428,
+   "w": 305.0,
+   "h": 78,
+   "kind": "plain",
+   "title": "4 · Ancillary tests, consults",
+   "lines": [
+    "→ provisional anatomical diagnosis"
+   ]
+  },
+  {
+   "id": "span0_how_2_1",
+   "x": 360.0,
+   "y": 1428,
+   "w": 305.0,
+   "h": 78,
+   "kind": "ok",
+   "title": "5 · OPINION",
+   "lines": [
+    "• an integration in context",
+    "• NOT 'all is revealed by dissection'"
    ]
   }
  ],
@@ -308,16 +435,40 @@
    "path": "M506.0 124V149H671.0V174"
   },
   {
-   "from": "cert_who_0_0",
-   "to": "cert_who_1_0"
-  },
-  {
    "from": "hosp_who_0_0",
    "to": "hosp_who_1_0"
   },
   {
+   "from": "cert_who_0_0",
+   "to": "cert_who_1_0"
+  },
+  {
    "from": "cert_do_0_0",
    "to": "cert_do_1_0"
+  },
+  {
+   "from": "cert_how_0_0",
+   "to": "cert_how_1_0"
+  },
+  {
+   "from": "cert_how_1_0",
+   "to": "cert_how_2_0"
+  },
+  {
+   "from": "span0_how_0_0",
+   "to": "span0_how_1_0"
+  },
+  {
+   "from": "span0_how_0_1",
+   "to": "span0_how_1_1"
+  },
+  {
+   "from": "span0_how_1_0",
+   "to": "span0_how_2_0"
+  },
+  {
+   "from": "span0_how_1_1",
+   "to": "span0_how_2_1"
   },
   {
    "from": "ml_head_0_0",
@@ -328,27 +479,14 @@
    "to": "ml_do_0_0"
   },
   {
+   "from": "ml_do_0_0",
+   "to": "span0_how_0_0",
+   "to_dx": -7.5
+  },
+  {
    "from": "g_yes",
    "to": "ml_head_0_0",
    "from_dx": 0
-  },
-  {
-   "from": "cert_head_0_0",
-   "to": "cert_who_0_0"
-  },
-  {
-   "from": "cert_who_1_0",
-   "to": "cert_do_0_0"
-  },
-  {
-   "from": "g_no",
-   "to": "cert_head_0_0",
-   "from_dx": -151,
-   "label": "always",
-   "label_at": [
-    520.0,
-    292
-   ]
   },
   {
    "from": "hosp_head_0_0",
@@ -359,44 +497,42 @@
    "to": "hosp_do_0_0"
   },
   {
+   "from": "hosp_do_0_0",
+   "to": "span0_how_0_1",
+   "to_dx": 7.5
+  },
+  {
    "from": "g_no",
    "to": "hosp_head_0_0",
-   "from_dx": 151,
+   "from_dx": -151,
    "label": "if wanted",
+   "label_at": [
+    520.0,
+    292
+   ]
+  },
+  {
+   "from": "cert_head_0_0",
+   "to": "cert_who_0_0"
+  },
+  {
+   "from": "cert_who_1_0",
+   "to": "cert_do_0_0"
+  },
+  {
+   "from": "cert_do_1_0",
+   "to": "cert_how_0_0"
+  },
+  {
+   "from": "g_no",
+   "to": "cert_head_0_0",
+   "from_dx": 151,
+   "label": "always",
    "label_at": [
     822.0,
     292
    ]
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1168,
-   "w": 454,
-   "title": "Steps of the autopsy",
-   "items": [
-    "1 · history: records, ambulance call report, clinician, consultation form",
-    "2 · external: nutrition, identifying marks, all surfaces, disease, anomalies, injuries, resuscitation",
-    "3 · internal: Y-shaped incision · organ block, weighed · brain removed · special dissections",
-    "not routine: eyes, bowel lumen, limb bones, joints, ears, spinal cord, back muscles, parathyroids",
-    "4 · ancillary tests, consults → provisional anatomical diagnosis",
-    "5 · OPINION: an integration in context · NOT 'all is revealed by dissection'"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 513,
-   "y": 1168,
-   "w": 454,
-   "title": "What the certificate is for",
-   "items": [
-    "permanent legal record: proof of death for family, legal, insurance",
-    "statistics (ICD): the UNDERLYING cause is what gets coded",
-    "research · surveillance · public health planning · research funding",
-    "causation (Hume): a time-ordered, linked chain A → B → C → death · the initiating event sets the manner"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

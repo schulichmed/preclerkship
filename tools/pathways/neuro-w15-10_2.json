@@ -1,7 +1,7 @@
 {
  "name": "vertigo overview",
  "width": 1324,
- "title": "Dizziness: first decide whether it is true vertigo; non-vestibular dizziness has organic and psychiatric causes, while peripheral vertigo is named by how long attacks last and whether hearing is affected: BPPV, Meniere's disease, vestibular neuronitis or labyrinthitis, superior canal dehiscence, and aminoglycoside toxicity; each column gives presentation, investigations and treatment, with nystagmus types and vestibular physiology below",
+ "title": "Dizziness: first decide whether it is true vertigo; non-vestibular dizziness has organic and psychiatric causes, while peripheral vertigo is named by how long attacks last and whether hearing is affected: BPPV, Meniere's disease, vestibular neuronitis or labyrinthitis, superior canal dehiscence, and aminoglycoside toxicity; the vestibular group box explains how the inner ear signals movement and a shared exam box reads the nystagmus; each column gives presentation, investigations and treatment",
  "kinds": {
   "diz_h": [
    "#46607a",
@@ -115,7 +115,7 @@
  "bands": [
   {
    "x": 40,
-   "y": 460,
+   "y": 722,
    "w": 206,
    "h": 1364,
    "fill": "#f2f5f8",
@@ -123,7 +123,7 @@
   },
   {
    "x": 276,
-   "y": 460,
+   "y": 722,
    "w": 206,
    "h": 1364,
    "fill": "#eef7fa",
@@ -131,7 +131,7 @@
   },
   {
    "x": 484,
-   "y": 460,
+   "y": 722,
    "w": 206,
    "h": 1364,
    "fill": "#fdf4ea",
@@ -139,7 +139,7 @@
   },
   {
    "x": 692,
-   "y": 460,
+   "y": 722,
    "w": 206,
    "h": 1364,
    "fill": "#eff5fc",
@@ -147,7 +147,7 @@
   },
   {
    "x": 900,
-   "y": 460,
+   "y": 722,
    "w": 206,
    "h": 1364,
    "fill": "#f5f1fb",
@@ -155,7 +155,7 @@
   },
   {
    "x": 1108,
-   "y": 460,
+   "y": 722,
    "w": 206,
    "h": 1364,
    "fill": "#f4f7ee",
@@ -165,19 +165,25 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 658,
+   "y": 400,
+   "h": 132,
+   "text": "EXAM"
+  },
+  {
+   "x": 23,
+   "y": 920,
    "h": 322,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 1020,
+   "y": 1282,
    "h": 214,
    "text": "INVESTIGATIONS"
   },
   {
    "x": 23,
-   "y": 1274,
+   "y": 1536,
    "h": 542,
    "text": "TREATMENT"
   }
@@ -202,7 +208,7 @@
    "x": 45,
    "y": 192,
    "w": 196,
-   "h": 78,
+   "h": 168,
    "kind": "plain",
    "title": "NO: dizziness",
    "lines": [
@@ -214,17 +220,39 @@
    "x": 281,
    "y": 192,
    "w": 1028,
-   "h": 78,
+   "h": 168,
    "kind": "plain",
    "title": "YES: vestibular",
    "lines": [
-    "episodic, limited duration · hearing symptoms · nausea, vomiting, sweating, bowels · worse with head movement"
+    "episodic, limited duration · hearing symptoms · nausea, vomiting, sweating, bowels · worse with head movement",
+    "• hair cells (CN VIII): bending toward the kinocilium opens K+ channels → depolarizes",
+    "• resting firing ~100/s, so each afferent signals BOTH directions",
+    "• otoliths (utricle, saccule): linear movement, tilt vs gravity · posture",
+    "• canals: rotation · endolymph lags, pushes the cupula · gaze stabilization",
+    "• canals work in PAIRS: the brain reads the difference, so one dead ear = false rotation",
+    "• VOR: 3 neurons, eyes compensate in 10-15 ms"
+   ]
+  },
+  {
+   "id": "p_nys",
+   "x": 281,
+   "y": 400,
+   "w": 1028,
+   "h": 132,
+   "kind": "info",
+   "title": "Exam: read the NYSTAGMUS",
+   "lines": [
+    "• slow phase = vestibulo-ocular reflex · fast phase = saccade that resets the eye",
+    "• PERIPHERAL (spontaneous vestibular): direction FIXED, mostly horizontal, SUPPRESSED by fixation",
+    "• physiologic: rotation · caloric · optokinetic · end-point",
+    "• caloric COWS: Cold → fast phase Opposite, Warm → Same · tests the brainstem in coma (needs the MLF for conjugate eyes)",
+    "• other pathologic: positional · gaze-paretic · rebound · fixation · congenital · dissociated"
    ]
   },
   {
    "id": "t1",
    "x": 281,
-   "y": 310,
+   "y": 572,
    "w": 1028,
    "h": 78,
    "kind": "plain",
@@ -236,7 +264,7 @@
   {
    "id": "diz_head_0_0",
    "x": 45,
-   "y": 468,
+   "y": 730,
    "w": 196,
    "h": 150,
    "kind": "diz_h",
@@ -246,7 +274,7 @@
   {
    "id": "bppv_head_0_0",
    "x": 281,
-   "y": 468,
+   "y": 730,
    "w": 196,
    "h": 150,
    "kind": "bppv_h",
@@ -258,7 +286,7 @@
   {
    "id": "scd_head_0_0",
    "x": 489,
-   "y": 468,
+   "y": 730,
    "w": 196,
    "h": 150,
    "kind": "scd_h",
@@ -270,7 +298,7 @@
   {
    "id": "men_head_0_0",
    "x": 697,
-   "y": 468,
+   "y": 730,
    "w": 196,
    "h": 150,
    "kind": "men_h",
@@ -284,7 +312,7 @@
   {
    "id": "neu_head_0_0",
    "x": 905,
-   "y": 468,
+   "y": 730,
    "w": 196,
    "h": 150,
    "kind": "neu_h",
@@ -296,7 +324,7 @@
   {
    "id": "ami_head_0_0",
    "x": 1113,
-   "y": 468,
+   "y": 730,
    "w": 196,
    "h": 150,
    "kind": "ami_h",
@@ -306,9 +334,9 @@
    ]
   },
   {
-   "id": "diz_pres_0_0",
+   "id": "diz_sx_0_0",
    "x": 45,
-   "y": 658,
+   "y": 920,
    "w": 196,
    "h": 177,
    "kind": "diz_t",
@@ -323,9 +351,9 @@
    ]
   },
   {
-   "id": "diz_pres_1_0",
+   "id": "diz_sx_1_0",
    "x": 45,
-   "y": 857,
+   "y": 1119,
    "w": 196,
    "h": 123,
    "kind": "diz_w",
@@ -337,9 +365,9 @@
    ]
   },
   {
-   "id": "bppv_pres_0_0",
+   "id": "bppv_sx_0_0",
    "x": 281,
-   "y": 658,
+   "y": 920,
    "w": 196,
    "h": 114,
    "kind": "bppv_t",
@@ -351,9 +379,9 @@
    ]
   },
   {
-   "id": "bppv_pres_1_0",
+   "id": "bppv_sx_1_0",
    "x": 281,
-   "y": 794,
+   "y": 1056,
    "w": 196,
    "h": 186,
    "kind": "bppv_w",
@@ -365,9 +393,9 @@
    ]
   },
   {
-   "id": "scd_pres_0_0",
+   "id": "scd_sx_0_0",
    "x": 489,
-   "y": 658,
+   "y": 920,
    "w": 196,
    "h": 322,
    "kind": "scd_t",
@@ -380,9 +408,9 @@
    ]
   },
   {
-   "id": "men_pres_0_0",
+   "id": "men_sx_0_0",
    "x": 697,
-   "y": 658,
+   "y": 920,
    "w": 196,
    "h": 196,
    "kind": "men_t",
@@ -394,9 +422,9 @@
    ]
   },
   {
-   "id": "men_pres_1_0",
+   "id": "men_sx_1_0",
    "x": 697,
-   "y": 876,
+   "y": 1138,
    "w": 196,
    "h": 104,
    "kind": "men_w",
@@ -406,9 +434,9 @@
    ]
   },
   {
-   "id": "neu_pres_0_0",
+   "id": "neu_sx_0_0",
    "x": 905,
-   "y": 658,
+   "y": 920,
    "w": 196,
    "h": 322,
    "kind": "neu_t",
@@ -419,9 +447,9 @@
    ]
   },
   {
-   "id": "ami_pres_0_0",
+   "id": "ami_sx_0_0",
    "x": 1113,
-   "y": 658,
+   "y": 920,
    "w": 196,
    "h": 150,
    "kind": "ami_t",
@@ -431,9 +459,9 @@
    ]
   },
   {
-   "id": "ami_pres_1_0",
+   "id": "ami_sx_1_0",
    "x": 1113,
-   "y": 830,
+   "y": 1092,
    "w": 196,
    "h": 150,
    "kind": "ami_w",
@@ -445,7 +473,7 @@
   {
    "id": "diz_inv_0_0",
    "x": 45,
-   "y": 1020,
+   "y": 1282,
    "w": 196,
    "h": 214,
    "kind": "diz_w",
@@ -457,7 +485,7 @@
   {
    "id": "bppv_inv_0_0",
    "x": 281,
-   "y": 1020,
+   "y": 1282,
    "w": 196,
    "h": 214,
    "kind": "bppv_w",
@@ -471,7 +499,7 @@
   {
    "id": "scd_inv_0_0",
    "x": 489,
-   "y": 1020,
+   "y": 1282,
    "w": 196,
    "h": 214,
    "kind": "scd_w",
@@ -481,7 +509,7 @@
   {
    "id": "men_inv_0_0",
    "x": 697,
-   "y": 1020,
+   "y": 1282,
    "w": 196,
    "h": 78,
    "kind": "men_w",
@@ -493,7 +521,7 @@
   {
    "id": "men_inv_1_0",
    "x": 697,
-   "y": 1120,
+   "y": 1382,
    "w": 196,
    "h": 114,
    "kind": "men_w",
@@ -505,7 +533,7 @@
   {
    "id": "neu_inv_0_0",
    "x": 905,
-   "y": 1020,
+   "y": 1282,
    "w": 196,
    "h": 96,
    "kind": "neu_w",
@@ -515,7 +543,7 @@
   {
    "id": "neu_inv_1_0",
    "x": 905,
-   "y": 1138,
+   "y": 1400,
    "w": 196,
    "h": 96,
    "kind": "neu_w",
@@ -525,7 +553,7 @@
   {
    "id": "ami_inv_0_0",
    "x": 1113,
-   "y": 1020,
+   "y": 1282,
    "w": 196,
    "h": 214,
    "kind": "ami_w",
@@ -535,7 +563,7 @@
   {
    "id": "diz_tx_0_0",
    "x": 45,
-   "y": 1274,
+   "y": 1536,
    "w": 196,
    "h": 542,
    "kind": "diz_w",
@@ -547,7 +575,7 @@
   {
    "id": "bppv_tx_0_0",
    "x": 281,
-   "y": 1274,
+   "y": 1536,
    "w": 196,
    "h": 542,
    "kind": "ok",
@@ -561,7 +589,7 @@
   {
    "id": "scd_tx_0_0",
    "x": 489,
-   "y": 1274,
+   "y": 1536,
    "w": 196,
    "h": 542,
    "kind": "ok",
@@ -571,7 +599,7 @@
   {
    "id": "men_tx_0_0",
    "x": 697,
-   "y": 1274,
+   "y": 1536,
    "w": 196,
    "h": 98,
    "kind": "ok",
@@ -583,7 +611,7 @@
   {
    "id": "men_tx_1_0",
    "x": 697,
-   "y": 1394,
+   "y": 1656,
    "w": 196,
    "h": 114,
    "kind": "ok",
@@ -596,7 +624,7 @@
   {
    "id": "men_tx_2_0",
    "x": 697,
-   "y": 1530,
+   "y": 1792,
    "w": 196,
    "h": 150,
    "kind": "warn",
@@ -610,7 +638,7 @@
   {
    "id": "men_tx_3_0",
    "x": 697,
-   "y": 1702,
+   "y": 1964,
    "w": 196,
    "h": 114,
    "kind": "bad",
@@ -623,7 +651,7 @@
   {
    "id": "neu_tx_0_0",
    "x": 905,
-   "y": 1274,
+   "y": 1536,
    "w": 196,
    "h": 542,
    "kind": "ok",
@@ -637,7 +665,7 @@
   {
    "id": "ami_tx_0_0",
    "x": 1113,
-   "y": 1274,
+   "y": 1536,
    "w": 196,
    "h": 542,
    "kind": "bad",
@@ -660,24 +688,28 @@
   },
   {
    "from": "g_v",
+   "to": "p_nys"
+  },
+  {
+   "from": "p_nys",
    "to": "t1",
    "from_dx": 0
   },
   {
-   "from": "diz_pres_0_0",
-   "to": "diz_pres_1_0"
+   "from": "diz_sx_0_0",
+   "to": "diz_sx_1_0"
   },
   {
-   "from": "bppv_pres_0_0",
-   "to": "bppv_pres_1_0"
+   "from": "bppv_sx_0_0",
+   "to": "bppv_sx_1_0"
   },
   {
-   "from": "men_pres_0_0",
-   "to": "men_pres_1_0"
+   "from": "men_sx_0_0",
+   "to": "men_sx_1_0"
   },
   {
-   "from": "ami_pres_0_0",
-   "to": "ami_pres_1_0"
+   "from": "ami_sx_0_0",
+   "to": "ami_sx_1_0"
   },
   {
    "from": "men_inv_0_0",
@@ -701,10 +733,10 @@
   },
   {
    "from": "diz_head_0_0",
-   "to": "diz_pres_0_0"
+   "to": "diz_sx_0_0"
   },
   {
-   "from": "diz_pres_1_0",
+   "from": "diz_sx_1_0",
    "to": "diz_inv_0_0"
   },
   {
@@ -718,10 +750,10 @@
   },
   {
    "from": "bppv_head_0_0",
-   "to": "bppv_pres_0_0"
+   "to": "bppv_sx_0_0"
   },
   {
-   "from": "bppv_pres_1_0",
+   "from": "bppv_sx_1_0",
    "to": "bppv_inv_0_0"
   },
   {
@@ -735,15 +767,15 @@
    "label": "seconds",
    "label_at": [
     379.0,
-    428
+    690
    ]
   },
   {
    "from": "scd_head_0_0",
-   "to": "scd_pres_0_0"
+   "to": "scd_sx_0_0"
   },
   {
-   "from": "scd_pres_0_0",
+   "from": "scd_sx_0_0",
    "to": "scd_inv_0_0"
   },
   {
@@ -757,15 +789,15 @@
    "label": "sound, pressure",
    "label_at": [
     587.0,
-    428
+    690
    ]
   },
   {
    "from": "men_head_0_0",
-   "to": "men_pres_0_0"
+   "to": "men_sx_0_0"
   },
   {
-   "from": "men_pres_1_0",
+   "from": "men_sx_1_0",
    "to": "men_inv_0_0"
   },
   {
@@ -779,15 +811,15 @@
    "label": "min-hours",
    "label_at": [
     795.0,
-    428
+    690
    ]
   },
   {
    "from": "neu_head_0_0",
-   "to": "neu_pres_0_0"
+   "to": "neu_sx_0_0"
   },
   {
-   "from": "neu_pres_0_0",
+   "from": "neu_sx_0_0",
    "to": "neu_inv_0_0"
   },
   {
@@ -801,15 +833,15 @@
    "label": "days",
    "label_at": [
     1003.0,
-    428
+    690
    ]
   },
   {
    "from": "ami_head_0_0",
-   "to": "ami_pres_0_0"
+   "to": "ami_sx_0_0"
   },
   {
-   "from": "ami_pres_1_0",
+   "from": "ami_sx_1_0",
    "to": "ami_inv_0_0"
   },
   {
@@ -823,39 +855,9 @@
    "label": "on gentamicin",
    "label_at": [
     1211.0,
-    428
+    690
    ]
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1850,
-   "w": 625,
-   "title": "Nystagmus",
-   "items": [
-    "slow phase = vestibulo-ocular reflex · fast phase = saccade that resets the eye",
-    "physiologic: rotation · caloric · optokinetic · end-point",
-    "caloric COWS: Cold → fast phase Opposite, Warm → Same · tests the brainstem in coma (needs the MLF for conjugate eyes)",
-    "peripheral (spontaneous vestibular): direction FIXED, mostly horizontal, SUPPRESSED by fixation",
-    "other pathologic: positional · gaze-paretic · rebound · fixation · congenital · dissociated"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 684,
-   "y": 1850,
-   "w": 625,
-   "title": "Vestibular physiology",
-   "items": [
-    "hair cells (CN VIII): bending toward the kinocilium opens K+ channels → depolarizes",
-    "resting firing ~100/s, so each afferent signals BOTH directions",
-    "otoliths (utricle, saccule): linear movement, tilt vs gravity · posture",
-    "canals: rotation · endolymph lags, pushes the cupula · gaze stabilization",
-    "canals work in PAIRS: the brain reads the difference, so one dead ear = false rotation",
-    "VOR: 3 neurons, eyes compensate in 10-15 ms"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

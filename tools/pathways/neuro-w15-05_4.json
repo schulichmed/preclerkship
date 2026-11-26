@@ -1,7 +1,7 @@
 {
  "name": "pediatric ataxia overview",
- "width": 1211,
- "title": "A child with ataxia: localize it (hemisphere for limb ataxia, vermis for truncal ataxia), then sort the three most common causes (intoxication, acute postinfectious cerebellar ataxia, brain tumour) from the can't-miss causes (stroke or hemorrhage, meningitis or encephalitis, brain tumour) by the history; each column says whether to image and what to do, with the exam of a young child and Friedreich ataxia below",
+ "width": 1466,
+ "title": "A child with ataxia: localize it (hemisphere for limb ataxia, vermis for truncal ataxia), then sort the three most common causes (intoxication, acute postinfectious cerebellar ataxia, brain tumour) from the can't-miss causes (stroke or hemorrhage, meningitis or encephalitis, brain tumour) by the history, then a shared exam step (how to examine a child under 5) leads to whether to image and what to do; hereditary Friedreich ataxia, slowly progressive with absent reflexes, has its own column",
  "kinds": {
   "tox_h": [
    "#1f6f8b",
@@ -92,6 +92,24 @@
    "#b5600f",
    "#b5600f",
    "#18212e"
+  ],
+  "fa_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "fa_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "fa_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
   ]
  },
  "bands": [
@@ -99,7 +117,7 @@
    "x": 40,
    "y": 360,
    "w": 225,
-   "h": 786,
+   "h": 460,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -107,7 +125,7 @@
    "x": 267,
    "y": 360,
    "w": 225,
-   "h": 786,
+   "h": 460,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -115,7 +133,7 @@
    "x": 494,
    "y": 360,
    "w": 225,
-   "h": 786,
+   "h": 460,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -123,7 +141,7 @@
    "x": 749,
    "y": 360,
    "w": 225,
-   "h": 786,
+   "h": 460,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -131,9 +149,17 @@
    "x": 976,
    "y": 360,
    "w": 225,
-   "h": 786,
+   "h": 460,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
+  },
+  {
+   "x": 1231,
+   "y": 360,
+   "w": 225,
+   "h": 842,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
   }
  ],
  "row_labels": [
@@ -146,12 +172,18 @@
   {
    "x": 23,
    "y": 852,
+   "h": 342,
+   "text": "EXAM"
+  },
+  {
+   "x": 23,
+   "y": 1234,
    "h": 150,
    "text": "IMAGING"
   },
   {
    "x": 23,
-   "y": 1042,
+   "y": 1424,
    "h": 96,
    "text": "MANAGEMENT"
   }
@@ -159,7 +191,7 @@
  "nodes": [
   {
    "id": "root",
-   "x": 240,
+   "x": 368,
    "y": 10,
    "w": 760,
    "kind": "dark",
@@ -195,6 +227,16 @@
    "lines": [
     "brain tumour is one too"
    ]
+  },
+  {
+   "id": "g_h",
+   "x": 1236,
+   "y": 228,
+   "w": 215,
+   "h": 60,
+   "kind": "plain",
+   "title": "HEREDITARY",
+   "lines": []
   },
   {
    "id": "tox_head_0_0",
@@ -254,6 +296,18 @@
    "title": "Meningitis · encephalitis",
    "lines": [
     "viral or bacterial"
+   ]
+  },
+  {
+   "id": "fa_head_0_0",
+   "x": 1236,
+   "y": 368,
+   "w": 215,
+   "h": 98,
+   "kind": "fa_h",
+   "title": "Friedreich ataxia",
+   "lines": [
+    "autosomal RECESSIVE"
    ]
   },
   {
@@ -362,9 +416,109 @@
    ]
   },
   {
-   "id": "tox_inv_0_0",
+   "id": "fa_pres_0_0",
+   "x": 1236,
+   "y": 506,
+   "w": 215,
+   "h": 306,
+   "kind": "fa_t",
+   "title": "Slowly PROGRESSIVE",
+   "lines": [
+    "• ataxia",
+    "• dysarthria"
+   ]
+  },
+  {
+   "id": "fa_exam_0_0",
+   "x": 1236,
+   "y": 852,
+   "w": 215,
+   "h": 342,
+   "kind": "fa_w",
+   "title": "Exam",
+   "lines": [
+    "• ABSENT tendon reflexes",
+    "• nystagmus"
+   ]
+  },
+  {
+   "id": "span0_exam_0_0",
    "x": 45,
    "y": 852,
+   "w": 1151,
+   "h": 60,
+   "kind": "info",
+   "title": "Examining a child under 5",
+   "lines": [
+    "~ over 5: full adult neurologic exam"
+   ]
+  },
+  {
+   "id": "span0_exam_1_0",
+   "x": 45.0,
+   "y": 934,
+   "w": 570.5,
+   "h": 78,
+   "kind": "plain",
+   "title": "Dysmetria",
+   "lines": [
+    "• reach for a favourite toy or food, each hand",
+    "• watch for tremor"
+   ]
+  },
+  {
+   "id": "span0_exam_1_1",
+   "x": 625.5,
+   "y": 934,
+   "w": 570.5,
+   "h": 78,
+   "kind": "plain",
+   "title": "Nystagmus",
+   "lines": [
+    "• follow a toy across the visual field"
+   ]
+  },
+  {
+   "id": "span0_exam_2_0",
+   "x": 45.0,
+   "y": 1034,
+   "w": 570.5,
+   "h": 78,
+   "kind": "plain",
+   "title": "Sensation",
+   "lines": [
+    "• poke a foot while distracted: does the child look?"
+   ]
+  },
+  {
+   "id": "span0_exam_2_1",
+   "x": 625.5,
+   "y": 1034,
+   "w": 570.5,
+   "h": 78,
+   "kind": "plain",
+   "title": "Gait",
+   "lines": [
+    "• caregiver steps away",
+    "• toddlers are wide-based anyway: ask if it is NEW"
+   ]
+  },
+  {
+   "id": "span0_exam_3_0",
+   "x": 45,
+   "y": 1134,
+   "w": 1151,
+   "h": 60,
+   "kind": "plain",
+   "title": "Speech",
+   "lines": [
+    "• slurred?"
+   ]
+  },
+  {
+   "id": "tox_inv_0_0",
+   "x": 45,
+   "y": 1234,
    "w": 215,
    "h": 150,
    "kind": "ok",
@@ -377,7 +531,7 @@
   {
    "id": "pi_inv_0_0",
    "x": 272,
-   "y": 852,
+   "y": 1234,
    "w": 215,
    "h": 150,
    "kind": "warn",
@@ -389,7 +543,7 @@
   {
    "id": "tum_inv_0_0",
    "x": 499,
-   "y": 852,
+   "y": 1234,
    "w": 215,
    "h": 150,
    "kind": "bad",
@@ -401,7 +555,7 @@
   {
    "id": "str_inv_0_0",
    "x": 754,
-   "y": 852,
+   "y": 1234,
    "w": 215,
    "h": 150,
    "kind": "bad",
@@ -413,7 +567,7 @@
   {
    "id": "men_inv_0_0",
    "x": 981,
-   "y": 852,
+   "y": 1234,
    "w": 215,
    "h": 150,
    "kind": "bad",
@@ -426,7 +580,7 @@
   {
    "id": "tox_tx_0_0",
    "x": 45,
-   "y": 1042,
+   "y": 1424,
    "w": 215,
    "h": 96,
    "kind": "warn",
@@ -438,7 +592,7 @@
   {
    "id": "pi_tx_0_0",
    "x": 272,
-   "y": 1042,
+   "y": 1424,
    "w": 215,
    "h": 96,
    "kind": "ok",
@@ -451,7 +605,7 @@
   {
    "id": "tum_tx_0_0",
    "x": 499,
-   "y": 1042,
+   "y": 1424,
    "w": 215,
    "h": 96,
    "kind": "bad",
@@ -463,7 +617,7 @@
   {
    "id": "str_tx_0_0",
    "x": 754,
-   "y": 1042,
+   "y": 1424,
    "w": 215,
    "h": 96,
    "kind": "bad",
@@ -475,7 +629,7 @@
   {
    "id": "men_tx_0_0",
    "x": 981,
-   "y": 1042,
+   "y": 1424,
    "w": 215,
    "h": 96,
    "kind": "bad",
@@ -487,12 +641,17 @@
   {
    "from": "root",
    "to": "g_c",
-   "path": "M620.5 178V203H379.5V228"
+   "path": "M748.0 178V203H379.5V228"
   },
   {
    "from": "root",
    "to": "g_m",
-   "path": "M620.5 178V203H975.0V228"
+   "path": "M748.0 178V203H975.0V228"
+  },
+  {
+   "from": "root",
+   "to": "g_h",
+   "path": "M748.0 178V203H1343.5V228"
   },
   {
    "from": "tox_pres_0_0",
@@ -510,12 +669,46 @@
    "dashed": true
   },
   {
+   "from": "span0_exam_0_0",
+   "to": "span0_exam_1_0",
+   "from_dx": -290.2
+  },
+  {
+   "from": "span0_exam_0_0",
+   "to": "span0_exam_1_1",
+   "from_dx": 290.2
+  },
+  {
+   "from": "span0_exam_1_0",
+   "to": "span0_exam_2_0"
+  },
+  {
+   "from": "span0_exam_1_1",
+   "to": "span0_exam_2_1"
+  },
+  {
+   "from": "span0_exam_2_0",
+   "to": "span0_exam_3_0",
+   "to_dx": -290.2
+  },
+  {
+   "from": "span0_exam_2_1",
+   "to": "span0_exam_3_0",
+   "to_dx": 290.2
+  },
+  {
    "from": "tox_head_0_0",
    "to": "tox_pres_0_0"
   },
   {
    "from": "tox_pres_1_0",
-   "to": "tox_inv_0_0"
+   "to": "span0_exam_0_0",
+   "to_dx": -468.0
+  },
+  {
+   "from": "span0_exam_3_0",
+   "to": "tox_inv_0_0",
+   "from_dx": -468.0
   },
   {
    "from": "tox_inv_0_0",
@@ -537,7 +730,13 @@
   },
   {
    "from": "pi_pres_1_0",
-   "to": "pi_inv_0_0"
+   "to": "span0_exam_0_0",
+   "to_dx": -241.0
+  },
+  {
+   "from": "span0_exam_3_0",
+   "to": "pi_inv_0_0",
+   "from_dx": -241.0
   },
   {
    "from": "pi_inv_0_0",
@@ -559,7 +758,13 @@
   },
   {
    "from": "tum_pres_1_0",
-   "to": "tum_inv_0_0"
+   "to": "span0_exam_0_0",
+   "to_dx": -14.0
+  },
+  {
+   "from": "span0_exam_3_0",
+   "to": "tum_inv_0_0",
+   "from_dx": -14.0
   },
   {
    "from": "tum_inv_0_0",
@@ -581,7 +786,13 @@
   },
   {
    "from": "str_pres_0_0",
-   "to": "str_inv_0_0"
+   "to": "span0_exam_0_0",
+   "to_dx": 241.0
+  },
+  {
+   "from": "span0_exam_3_0",
+   "to": "str_inv_0_0",
+   "from_dx": 241.0
   },
   {
    "from": "str_inv_0_0",
@@ -603,7 +814,13 @@
   },
   {
    "from": "men_pres_0_0",
-   "to": "men_inv_0_0"
+   "to": "span0_exam_0_0",
+   "to_dx": 468.0
+  },
+  {
+   "from": "span0_exam_3_0",
+   "to": "men_inv_0_0",
+   "from_dx": 468.0
   },
   {
    "from": "men_inv_0_0",
@@ -618,35 +835,25 @@
     1088.5,
     328
    ]
-  }
- ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1172,
-   "w": 568,
-   "title": "Examining a child under 5",
-   "items": [
-    "over 5: full adult neurologic exam",
-    "dysmetria: reach for a favourite toy or food with each hand · watch for tremor",
-    "nystagmus: follow a toy across the visual field",
-    "sensation: poke a foot while distracted, does the child look?",
-    "gait: caregiver steps away · toddlers are wide-based anyway, ask if it is NEW",
-    "speech: slurred?"
-   ],
-   "cols": 1
   },
   {
-   "x": 628,
-   "y": 1172,
-   "w": 568,
-   "title": "Hereditary: Friedreich ataxia",
-   "items": [
-    "autosomal RECESSIVE",
-    "slowly progressive ataxia · dysarthria",
-    "ABSENT tendon reflexes · nystagmus"
-   ],
-   "cols": 1
+   "from": "fa_head_0_0",
+   "to": "fa_pres_0_0"
+  },
+  {
+   "from": "fa_pres_0_0",
+   "to": "fa_exam_0_0"
+  },
+  {
+   "from": "g_h",
+   "to": "fa_head_0_0",
+   "from_dx": 0,
+   "label": "recessive",
+   "label_at": [
+    1343.5,
+    328
+   ]
   }
- ]
+ ],
+ "panels": []
 }

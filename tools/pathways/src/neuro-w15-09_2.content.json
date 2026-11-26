@@ -1,6 +1,6 @@
 {
  "name": "hearing loss overview",
- "title": "Hearing loss: the Weber and Rinne together split conductive (ear canal; otitis media; a fixed or broken middle ear) from sensorineural (sudden, an emergency; gradual and symmetric; one-sided and progressive, a vestibular schwannoma until proven otherwise); each column gives presentation, investigations and treatment, with otitis media complications, other sensorineural causes and hearing physiology below",
+ "title": "Hearing loss: the Weber and Rinne together split conductive (ear canal; otitis media; a fixed or broken middle ear) from sensorineural (sudden, an emergency; gradual and symmetric; one-sided and progressive, a vestibular schwannoma until proven otherwise; other causes: congenital, a transverse temporal bone fracture and more); a tier under each group traces the sound path it affects; each column gives presentation, investigations and treatment, and otitis media lists its complications",
  "col_w": 205,
  "root": {
   "title": "Hearing loss: is sound BLOCKED before the cochlea, or is the cochlea or nerve DAMAGED?",
@@ -14,13 +14,17 @@
  },
  "groups": [
   {"id": "g_c", "cols": [0, 2], "title": "CONDUCTIVE", "lines": ["Weber → the AFFECTED ear · Rinne there: bone > air", "audiogram: bone normal, air down (an air-bone gap)", "often fixable, medically or surgically"]},
-  {"id": "g_s", "cols": [3, 5], "title": "SENSORINEURAL", "lines": ["Weber → the NORMAL ear · Rinne: air > bone", "audiogram: bone down, air the same as bone", "damage to cochlea or nerve cannot be repaired"]}
+  {"id": "g_s", "cols": [3, 6], "title": "SENSORINEURAL", "lines": ["Weber → the NORMAL ear · Rinne: air > bone", "audiogram: bone down, air the same as bone", "damage to cochlea or nerve cannot be repaired"]}
+ ],
+ "tiers": [
+  {"id": "t_c", "cols": [0, 2], "title": "Sound path: canal → drum → ossicles", "lines": ["• hears 20-20,000 Hz, best 2,000-4,000 Hz (speech)", "• the 3 cm canal resonates there", "• ossicles: air pressure → force on the oval window → moves fluid"]},
+  {"id": "t_s", "cols": [3, 6], "title": "Cochlea → nerve → cortex", "lines": ["• oval window → scala vestibuli → helicotrema → scala tympani → round window", "• TONOTOPIC: stiff base = HIGH pitch · floppy apex = low", "• inner hair cells transduce, outer amplify", "• spiral ganglion → CN VIII → brainstem → medial geniculate → superior temporal gyrus"]}
  ],
  "sections": ["head", "pres", "inv", "tx"],
  "row_names": {"pres": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
  "columns": [
   {
-   "id": "eac", "colour": "teal",
+   "id": "eac", "drop_from": "t_c", "colour": "teal",
    "head": [[["h", "Ear canal", ["wax · foreign body · exostoses · otitis externa"]]]],
    "pres": [[["t", "Otitis externa", ["• bacterial: itchy, painful, swollen, sore on pulling the pinna", "• fungal: severe itch, less pain, after antibiotics", "~fungal and recurrent → think diabetes"]]]],
    "inv": [[["w", "Otoscopy", ["• bacterial: Pseudomonas, then Staph aureus, E. coli", "• fungal: black spores (Aspergillus), white (Candida)"]]]],
@@ -29,17 +33,19 @@
           [["warn", "Chronic otitis externa", ["dermatitis (local steroid), Q-tips, fibrosis traps wax · may need excision + graft"]]]]
   },
   {
-   "id": "om", "colour": "blue",
+   "id": "om", "drop_from": "t_c", "colour": "blue",
    "head": [[["h", "Otitis media", ["the commonest middle ear cause", "peak 6-11 months · 2/3 by age 1 · 1/2 have > 3 by age 3"]]]],
    "pres": [[["t", "Acute: after a cold", ["pain, fever, irritability · bulging drum · discharge", "• Strep pneumoniae 30-40% · H. influenzae 20-30% · Moraxella 10-15% · group A strep 2-4%", "~overdiagnosed"]]],
             [["w", "With effusion: no infection signs", ["hearing loss, speech delay", "~underdiagnosed"]]]],
    "inv": [[["w", "Pneumatic otoscopy", ["drum does not move = fluid"]]],
            [["w", "Fluid in BOTH ears for 3 months", ["→ hearing test (speech, development)"]]]],
    "tx": [[["ok", "Acute: high-dose amoxicillin", ["or watch 48-72 h in lower-risk children · treat pain"]]],
-          [["warn", "Tubes", ["• effusion both ears > 3 months + > 20 dB loss in the better ear", "• fluid with speech delay", "• symptoms despite > 6 weeks of antibiotics", "• suppurative complication", "• intermittent fluid with a hearing aid · chronic drum atrophy"]]]]
+          [["warn", "Tubes", ["• effusion both ears > 3 months + > 20 dB loss in the better ear", "• fluid with speech delay", "• symptoms despite > 6 weeks of antibiotics", "• suppurative complication", "• intermittent fluid with a hearing aid · chronic drum atrophy"]]],
+          [["bad", "Complications: temporal bone", ["• hearing loss · perforation · effusion", "• retraction pocket, cholesteatoma", "• mastoiditis · labyrinthitis", "• ossicular erosion, fixation", "• FACIAL paralysis"]]],
+          [["bad", "Complications: intracranial", ["• MENINGITIS", "• extradural abscess · subdural empyema", "• brain abscess", "• lateral sinus thrombosis", "• otitic hydrocephalus"]]]]
   },
   {
-   "id": "fix", "colour": "purple",
+   "id": "fix", "drop_from": "t_c", "colour": "purple",
    "head": [[["h", "Drum or ossicles", ["perforation · otosclerosis · longitudinal fracture", "also cholesteatoma, adhesive otitis media"]]]],
    "pres": [[["t", "Which one?", ["• perforation: infection, tubes, trauma, barotrauma", "• otosclerosis: NORMAL drum, no trauma or infection · bone fixes the STAPES footplate", "• longitudinal fracture (80%, side blow): unconscious, bleeding from or behind the drum, hearing loss · canal tear, ossicles disrupted"]]]],
    "inv": [[["w", "Audiogram", ["otosclerosis: conductive or mixed, rising curve, Carhart's notch"]]],
@@ -47,14 +53,14 @@
    "tx": [[["ok", "Fix or bypass", ["• perforation: keep dry, 80% heal; else tympanoplasty", "• ossiculoplasty · stapedectomy", "• aids: air (behind or in the ear), or bone-conduction (BAHA, Bonebridge)"]]]]
   },
   {
-   "id": "ssnhl", "colour": "magenta",
+   "id": "ssnhl", "drop_from": "t_s", "colour": "magenta",
    "head": [[["h", "SUDDEN sensorineural", ["onset < 3 days · EMERGENCY"]]]],
    "pres": [[["t", "Hearing loss, tinnitus, fullness", ["± vertigo", "~idiopathic: viral, vascular, membrane rupture?"]]]],
    "inv": [[["w", "Workup", ["1 · tuning forks", "2 · ENT referral", "3 · audiogram", "4 · MRI: 2% are an acoustic neuroma"]]]],
    "tx": [[["ok", "Steroids by mouth or into the ear", ["START WITHIN 10 DAYS", "~60-80% recover"]]]]
   },
   {
-   "id": "grad", "colour": "olive",
+   "id": "grad", "drop_from": "t_s", "colour": "olive",
    "head": [[["h", "Gradual, symmetric", ["presbycusis · noise · ototoxic drugs"]]]],
    "pres": [[["t", "Which one?", ["• presbycusis: commonest, HIGH pitches first (basal hair cells), 30% over 65, 50% over 75, men more", "• noise > 85 dB (max for an 8-hour shift): work, recreation, guns (asymmetric)", "• aminoglycosides, cisplatin, carboplatin, vincristine, loop diuretics", "~ASA and quinine: reversible · macrolides: temporary · gentamicin used on purpose"]]]],
    "inv": [[["w", "Audiogram", ["• presbycusis: high-frequency loss", "• noise: a 4,000 Hz NOTCH"]]]],
@@ -62,27 +68,21 @@
           [["ok", "Severe to profound, aids failing", ["cochlear implant: bypasses hair cells, stimulates CN VIII (needs a working nerve)"]]]]
   },
   {
-   "id": "vs", "colour": "orange",
+   "id": "vs", "drop_from": "t_s", "colour": "orange",
    "head": [[["h", "ONE-sided, progressive", ["vestibular schwannoma (acoustic neuroma)"]]]],
    "pres": [[["t", "Unilateral loss + tinnitus", ["• imbalance (rarely vertigo)", "• trigeminal or facial nerve symptoms", "~commonest cerebellopontine angle mass · both sides = NF2"]]]],
    "inv": [[["w", "MRI ± gadolinium", ["soft tissue, cerebellopontine angle tumours"]]]],
    "tx": [[["ok", "Slow, benign", ["observe · stereotactic radiation · microsurgery"]]]]
+  },
+  {
+   "id": "oth", "drop_from": "t_s", "colour": "slate",
+   "head": [[["h", "Other sensorineural", ["congenital · trauma · systemic"]]]],
+   "pres": [[["t", "Congenital, non-syndromic (2/3)", ["• 70-80% recessive", "• GJB2 (connexin 26): 20% of childhood deafness"]]],
+            [["w", "Syndromic (1/3)", ["• Usher: retinitis pigmentosa", "• Waardenburg: pigment", "• Pendred: thyroid · Alport: kidney", "• Jervell and Lange-Nielsen: long QT"]]],
+            [["bad", "Transverse temporal bone fracture", ["• 20%, front-back blow", "• through the otic capsule, rarely recovers", "• facial nerve in 50%"]]],
+            [["w", "Also", ["• meningioma · labyrinthitis", "• migraine, MS", "• cryoglobulinemia, sickle cell", "• HIV, polyarteritis nodosa", "• Paget's, otosclerosis"]]]],
+   "inv": [],
+   "tx": []
   }
- ],
- "panels": [
-  {"title": "Otitis media complications", "items": [
-   "in the temporal bone: hearing loss · perforation · effusion · retraction pocket, cholesteatoma · mastoiditis · labyrinthitis · ossicular erosion, fixation · FACIAL paralysis",
-   "intracranial: MENINGITIS · extradural abscess · subdural empyema · brain abscess · lateral sinus thrombosis · otitic hydrocephalus"]},
-  {"title": "Other sensorineural causes", "items": [
-   "transverse temporal bone fracture (20%, front-back blow): through the otic capsule, rarely recovers · facial nerve in 50%",
-   "congenital, non-syndromic (2/3): 70-80% recessive · GJB2 (connexin 26) = 20% of childhood deafness",
-   "syndromic (1/3): Usher (retinitis pigmentosa) · Waardenburg (pigment) · Pendred (thyroid) · Alport (kidney) · Jervell and Lange-Nielsen (long QT)",
-   "also: meningioma · labyrinthitis · migraine, MS · cryoglobulinemia, sickle cell · HIV, polyarteritis nodosa · Paget's, otosclerosis"]},
-  {"title": "Hearing physiology", "items": [
-   "range 20-20,000 Hz · most sensitive 2,000-4,000 Hz (speech): the 3 cm canal resonates there",
-   "ossicles turn air pressure into force on the oval window to move fluid",
-   "oval window → scala vestibuli → helicotrema → scala tympani → round window",
-   "TONOTOPIC: stiff base = HIGH pitch · floppy apex = low · inner hair cells transduce, outer amplify",
-   "spiral ganglion → CN VIII → brainstem → medial geniculate → superior temporal gyrus"]}
  ]
 }

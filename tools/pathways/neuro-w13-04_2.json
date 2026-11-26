@@ -1,7 +1,7 @@
 {
  "name": "cerebellum and basal ganglia overview",
  "width": 996,
- "title": "Movement disorders with normal power: a cerebellar lesion lets movement start but makes it inaccurate, on the same side, with the subdivision deciding the signs; a basal ganglia imbalance either blocks starting (Parkinson disease, hypokinetic) or releases unwanted movement (chorea, hyperkinetic); each column gives the signs and the circuit that failed",
+ "title": "Movement disorders with normal power: a cerebellar lesion lets movement start but makes it inaccurate, on the same side, with the subdivision deciding the signs; a basal ganglia imbalance either blocks starting (Parkinson disease, hypokinetic) or releases unwanted movement (chorea, hyperkinetic); a shared row shows each loop's circuit (the cerebellar Purkinje circuit and motor learning; the basal ganglia direct and indirect pathways), and each column gives the signs and the circuit that failed",
  "kinds": {
   "vest_h": [
    "#1f6f8b",
@@ -99,7 +99,7 @@
    "x": 40,
    "y": 324,
    "w": 182,
-   "h": 620,
+   "h": 374,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -107,7 +107,7 @@
    "x": 224,
    "y": 324,
    "w": 182,
-   "h": 620,
+   "h": 374,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -115,7 +115,7 @@
    "x": 408,
    "y": 324,
    "w": 182,
-   "h": 620,
+   "h": 374,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -123,7 +123,7 @@
    "x": 620,
    "y": 324,
    "w": 182,
-   "h": 620,
+   "h": 374,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -131,7 +131,7 @@
    "x": 804,
    "y": 324,
    "w": 182,
-   "h": 620,
+   "h": 374,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   }
@@ -146,6 +146,12 @@
   {
    "x": 23,
    "y": 730,
+   "h": 232,
+   "text": "THE LOOP"
+  },
+  {
+   "x": 23,
+   "y": 1002,
    "h": 206,
    "text": "WHAT FAILED"
   }
@@ -326,9 +332,94 @@
    ]
   },
   {
+   "id": "span0_loop_0_0",
+   "x": 45.0,
+   "y": 730,
+   "w": 265.0,
+   "h": 132,
+   "kind": "plain",
+   "title": "Same circuit in every zone",
+   "lines": [
+    "• half the brain's neurons",
+    "• mossy → parallel fibres → Purkinje",
+    "• parallel: weak, wide (~200,000 per cell)",
+    "• Purkinje INHIBITS deep nuclei: the ONLY output"
+   ]
+  },
+  {
+   "id": "span0_loop_0_1",
+   "x": 320.0,
+   "y": 730,
+   "w": 265.0,
+   "h": 132,
+   "kind": "plain",
+   "title": "Motor learning",
+   "lines": [
+    "• climbing fibre = error signal: TEACHER",
+    "• parallel fibre = student",
+    "• adjusts vestibulo-ocular reflex gain",
+    "~ aging, new glasses"
+   ]
+  },
+  {
+   "id": "span0_loop_1_0",
+   "x": 45,
+   "y": 884,
+   "w": 540,
+   "h": 78,
+   "kind": "bad",
+   "title": "Cerebellar patient + prisms",
+   "lines": [
+    "• NO adaptation",
+    "• no after-effect"
+   ]
+  },
+  {
+   "id": "span1_loop_0_0",
+   "x": 625,
+   "y": 730,
+   "w": 356,
+   "h": 105,
+   "kind": "plain",
+   "title": "Cortex → striatum → pallidus → thalamus",
+   "lines": [
+    "• striatum = caudate + putamen",
+    "• out: globus pallidus → thalamus → motor cortex",
+    "• pars reticulata → superior colliculus: eye movements"
+   ]
+  },
+  {
+   "id": "span1_loop_1_0",
+   "x": 625.0,
+   "y": 857,
+   "w": 173.0,
+   "h": 105,
+   "kind": "plain",
+   "title": "Direct",
+   "lines": [
+    "• striatum inhibits pallidus",
+    "→ DISINHIBITS thalamus",
+    "→ movement"
+   ]
+  },
+  {
+   "id": "span1_loop_1_1",
+   "x": 808.0,
+   "y": 857,
+   "w": 173.0,
+   "h": 105,
+   "kind": "plain",
+   "title": "Indirect",
+   "lines": [
+    "• extra pallidal synapse",
+    "• + subthalamic loop",
+    "→ inhibits"
+   ]
+  },
+  {
    "id": "vest_circuit_0_0",
    "x": 45,
-   "y": 730,
+   "y": 1002,
    "w": 172,
    "h": 206,
    "kind": "vest_w",
@@ -341,7 +432,7 @@
   {
    "id": "spin_circuit_0_0",
    "x": 229,
-   "y": 730,
+   "y": 1002,
    "w": 172,
    "h": 206,
    "kind": "spin_w",
@@ -354,7 +445,7 @@
   {
    "id": "cereb_circuit_0_0",
    "x": 413,
-   "y": 730,
+   "y": 1002,
    "w": 172,
    "h": 206,
    "kind": "cereb_w",
@@ -369,7 +460,7 @@
   {
    "id": "pd_circuit_0_0",
    "x": 625,
-   "y": 730,
+   "y": 1002,
    "w": 172,
    "h": 206,
    "kind": "pd_w",
@@ -384,7 +475,7 @@
   {
    "id": "chor_circuit_0_0",
    "x": 809,
-   "y": 730,
+   "y": 1002,
    "w": 172,
    "h": 206,
    "kind": "chor_w",
@@ -408,12 +499,38 @@
    "path": "M513.0 106V131H803.0V156"
   },
   {
+   "from": "span0_loop_0_0",
+   "to": "span0_loop_1_0",
+   "to_dx": -137.5
+  },
+  {
+   "from": "span0_loop_0_1",
+   "to": "span0_loop_1_0",
+   "to_dx": 137.5
+  },
+  {
+   "from": "span1_loop_0_0",
+   "to": "span1_loop_1_0",
+   "from_dx": -91.5
+  },
+  {
+   "from": "span1_loop_0_0",
+   "to": "span1_loop_1_1",
+   "from_dx": 91.5
+  },
+  {
    "from": "vest_head_0_0",
    "to": "vest_sign_0_0"
   },
   {
    "from": "vest_sign_0_0",
-   "to": "vest_circuit_0_0"
+   "to": "span0_loop_0_0",
+   "to_dx": -46.5
+  },
+  {
+   "from": "span0_loop_1_0",
+   "to": "vest_circuit_0_0",
+   "from_dx": -184.0
   },
   {
    "from": "g_cb",
@@ -426,7 +543,13 @@
   },
   {
    "from": "spin_sign_0_0",
-   "to": "spin_circuit_0_0"
+   "to": "span0_loop_0_1",
+   "to_dx": -137.5
+  },
+  {
+   "from": "span0_loop_1_0",
+   "to": "spin_circuit_0_0",
+   "from_dx": 0.0
   },
   {
    "from": "g_cb",
@@ -439,7 +562,13 @@
   },
   {
    "from": "cereb_sign_0_0",
-   "to": "cereb_circuit_0_0"
+   "to": "span0_loop_0_1",
+   "to_dx": 46.5
+  },
+  {
+   "from": "span0_loop_1_0",
+   "to": "cereb_circuit_0_0",
+   "from_dx": 184.0
   },
   {
    "from": "g_cb",
@@ -452,7 +581,13 @@
   },
   {
    "from": "pd_sign_0_0",
-   "to": "pd_circuit_0_0"
+   "to": "span1_loop_0_0",
+   "to_dx": -92.0
+  },
+  {
+   "from": "span1_loop_1_0",
+   "to": "pd_circuit_0_0",
+   "from_dx": -0.5
   },
   {
    "from": "g_bg",
@@ -465,7 +600,13 @@
   },
   {
    "from": "chor_sign_0_0",
-   "to": "chor_circuit_0_0"
+   "to": "span1_loop_0_0",
+   "to_dx": 92.0
+  },
+  {
+   "from": "span1_loop_1_1",
+   "to": "chor_circuit_0_0",
+   "from_dx": 0.5
   },
   {
    "from": "g_bg",
@@ -473,35 +614,5 @@
    "from_dx": 92
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 970,
-   "w": 461,
-   "title": "Cerebellar circuit + motor learning",
-   "items": [
-    "same circuit in every zone · half the brain's neurons",
-    "mossy → parallel fibres → Purkinje: weak, wide (~200,000 per cell)",
-    "Purkinje cells INHIBIT deep nuclei: the ONLY output",
-    "climbing fibre = error signal: teacher · parallel fibre = student",
-    "adjusts vestibulo-ocular reflex gain (aging, new glasses)",
-    "cerebellar patient + prisms: NO adaptation, no after-effect"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 520,
-   "y": 970,
-   "w": 461,
-   "title": "Basal ganglia circuit",
-   "items": [
-    "in: cortex → striatum (caudate + putamen)",
-    "out: globus pallidus → thalamus → motor cortex",
-    "direct: striatum inhibits pallidus → DISINHIBITS thalamus → movement",
-    "indirect: extra pallidal synapse + subthalamic loop → inhibits",
-    "pars reticulata → superior colliculus: eye movements"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

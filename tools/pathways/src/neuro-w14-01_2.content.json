@@ -1,6 +1,6 @@
 {
  "name": "head injury overview",
- "title": "A head injury is a trauma patient first: the primary survey and the Glasgow Coma Scale grade it; a severe injury is acted on for herniation and sent for a STAT CT, which tells epidural, acute subdural, contusion, intracerebral hemorrhage and diffuse axonal injury or traumatic subarachnoid hemorrhage apart, each with its own surgical rule; a concussion is a clinical diagnosis managed by removal, rest and a graded return",
+ "title": "A head injury is a trauma patient first: the primary survey and the Glasgow Coma Scale grade it; a severe injury is acted on for herniation and sent for a STAT CT, which tells epidural, acute subdural, contusion, intracerebral hemorrhage and diffuse axonal injury or traumatic subarachnoid hemorrhage apart, each with its own surgical rule; the herniation box names every type, the epidural column carries skull fractures (basilar signs, missed on CT, meningitis risk); a concussion is a clinical diagnosis managed by removal, rest and a graded return, and its column ends with what can follow (second impact, post-concussion syndrome, CTE) and prevention",
  "col_w": 206,
  "root": {"title": "Head injury: a TRAUMA patient first",
   "lines": ["A airway + C-spine precautions · B breathing · C circulation: large-bore IV, bloods for coagulopathy · D disability: neurological exam + Glasgow Coma Scale (GCS) · E expose other injuries",
@@ -14,38 +14,44 @@
    "lines": ["= mild traumatic brain injury"]}
  ],
  "pres": [
-  {"id": "p_sev", "group": "g_sev", "title": "Herniating? Act, then a STAT CT",
-   "lines": ["• UNCAL: same-side fixed dilated pupil (third nerve) + opposite-side weakness",
-             "• TONSILLAR: medulla compressed → Cushing's triad (hypertension, bradycardia, apnea) · fatal",
-             "• intubate · head of the bed up · IV mannitol or 3% saline"]},
+  {"id": "p_sev", "group": "g_sev", "title": "Herniating? Which way?",
+   "lines": ["• UNCAL: same-side fixed dilated pupil (third nerve palsy) + opposite-side weakness",
+             "• TONSILLAR: medulla compressed → Cushing's triad (hypertension, bradycardia, apnea) → fatal cardiorespiratory failure",
+             "• subfalcine · CENTRAL: ↓ consciousness · transcalvarial",
+             "• descending: nerves III, IV, VI · PCA, ACA stroke · Duret hemorrhage"]},
   {"id": "p_mild", "group": "g_mild", "title": "To the ER if ANY",
    "lines": ["• GCS under 15 · worsening mental status", "• possible spinal injury", "• worse symptoms, new neuro signs"]}
  ],
- "sections": ["head", "clue", "inv", "tx"],
- "row_names": {"pres": "ACT FIRST", "clue": "PRESENTS AS", "inv": "CT", "tx": "TREATMENT"},
+ "tiers": [
+  {"id": "t_act", "cols": [0, 4], "title": "Act, then a STAT CT",
+   "lines": ["• intubate · head of the bed up · IV mannitol or 3% saline"]}
+ ],
+ "sections": ["head", "clue", "inv", "tx", "later"],
+ "row_names": {"pres": "ACT FIRST", "clue": "PRESENTS AS", "inv": "CT", "tx": "TREATMENT", "later": "WHAT CAN FOLLOW"},
  "columns": [
-  {"id": "edh", "colour": "teal",
+  {"id": "edh", "drop_from": "t_act", "colour": "teal",
    "head": [[["h", "Epidural hematoma", ["skull ↔ dura", "middle meningeal ARTERY 50% · vein 33% · diploic vein, sinus 17%"]]]],
-   "clue": [[["t", "CONTACT injury + fracture", ["• LOC → LUCID interval → coma", "• skull fracture in 75-90%", "• NOT head acceleration · 33% another brain lesion", "case: 19 y ejected · lucid in the ambulance · 2 h later right pupil fixed 7 mm, left hemiplegia · BP 160/90, pulse 55, apneic → craniotomy, recovered"]]]],
-   "inv": [[["w", "LENS-shaped", ["frontal or temporal"]]]],
+   "clue": [[["t", "CONTACT injury + fracture", ["• LOC → LUCID interval → coma", "• skull fracture in 75-90%", "• NOT head acceleration · 33% another brain lesion", "case: 19 y ejected · lucid in the ambulance · 2 h later right pupil fixed 7 mm, left hemiplegia · BP 160/90, pulse 55, apneic → craniotomy, recovered"]]],
+            [["w", "Skull fractures: CONTACT injury", ["• linear · depressed · open or closed", "• BASILAR: raccoon eyes · Battle sign", "• BASILAR: CSF from ear or nose · hemotympanum"]]]],
+   "inv": [[["w", "LENS-shaped", ["frontal or temporal"]]], [["bad", "Basilar fracture: may be MISSED on CT", ["risk of MENINGITIS"]]]],
    "tx": [[["bad", "CRANIOTOMY if ANY", ["• symptomatic", "• asymptomatic over 1 cm", "• a child", "~ conservative only if very small"]]], [["warn", "Mortality 20-25%", ["children 5-10% · over 40: 35-50%"]]]]},
-  {"id": "sdh", "colour": "purple",
+  {"id": "sdh", "drop_from": "t_act", "colour": "purple",
    "head": [[["h", "Acute subdural hematoma", ["dura ↔ arachnoid", "torn BRIDGING VEINS"]]]],
    "clue": [[["t", "Acceleration-deceleration", ["• a fall, head strikes a broad surface", "• comatose from the scene", "• 10-15% of severe injuries · within 3 days · 30% of fatal ones", "case: 75 y slipped on ice · comatose · right pupil fixed · decerebrate"]]]],
    "inv": [[["w", "CRESCENT-shaped", ["often with diffuse axonal injury"]]]],
    "tx": [[["bad", "SURGERY within 4 HOURS", ["• within 4 h: 30% mortality", "• after 4 h: 90%", "• post-op pressure under 20: 40%", "• over 65: 82% mortality, 5% recover"]]], [["warn", "Death from the BRAIN injury beneath", ["GCS 3 → 90% · 4 → 76% · 5 → 62% · 6-7 → 51%"]]]]},
-  {"id": "cont", "colour": "orange",
+  {"id": "cont", "drop_from": "t_act", "colour": "orange",
    "head": [[["h", "Cerebral contusion", ["COUP under the impact: skull bends in, springs back", "CONTRECOUP opposite it: acceleration"]]]],
    "clue": [[["t", "Depends on size and site", ["• e.g. confusion, personality change, loss of smell", "• mass effect, ↑ pressure", "• turns necrotic + patchily hemorrhagic", "case: 43 y fell off a bike · confused, personality change, no smell · died of DVT at day 10"]]]],
    "inv": [[["w", "MIXED high + low density", ["usually several · repeat CT at 24-48 h: 20% bleed later"]]]],
    "tx": [[["warn", "Size decides", ["• small or deep → no surgery", "• large + mass effect → SURGERY"]]]]},
 
-  {"id": "ich", "colour": "blue",
+  {"id": "ich", "drop_from": "t_act", "colour": "blue",
    "head": [[["h", "Intracerebral hemorrhage", ["deceleration or contact · 1-3%", "frontal, temporal lobes 80-90%"]]]],
    "clue": [[["t", "A confluent bleed in the brain", ["• blood dissects the brain around it", "• the brain around it is normal", "• in 25% of closed head injuries"]]]],
    "inv": [[["w", "HOMOGENEOUS, well-defined", ["hyperdense"]]]],
    "tx": [[["bad", "SURGERY if large", ["with shift + ↓ consciousness + focal deficits", "mortality 25-72%"]]]]},
-  {"id": "dai", "colour": "magenta",
+  {"id": "dai", "drop_from": "t_act", "colour": "magenta",
    "head": [[["h", "Diffuse axonal injury · traumatic SAH", ["ACCELERATION injury", "often co-exist"]]]],
    "clue": [[["t", "LOC at the scene → PERSISTENT coma", ["• axonal injury is 50% of severe brain injury", "• shaken baby syndrome", "• co-exist with other injuries", "case: 43 y high-speed crash · GCS 4 at scene · persistent coma"]]]],
    "inv": [[["w", "Axonal: petechiae", ["• grey-white junction", "• corpus callosum", "• dorsolateral pons", "• cervicomedullary junction", "hard to see on CT", "SAH: pial vessels rupture"]]]],
@@ -55,24 +61,11 @@
    "head": [[["h", "Concussion", ["rotational acceleration · NO impact needed", "81-92% no LOC · helmets don't prevent it", "a chest blow can whiplash the brain"]]]],
    "clue": [[["t", "No focal deficit", ["• headache, dizziness, nausea", "• imbalance, 'seeing stars'", "• 85% of first ones recover in 1-4 weeks", "• risk: young brain, FEMALE, a previous concussion", "case: 17 y, soccer ball to the occiput · headache, neck pain · no LOC, GCS 15, no focal signs"]]]],
    "inv": [[["w", "CLINICAL diagnosis", ["no CT, MRI, blood test or EEG · SCAT5: 1 of 22 symptoms"]]]],
-   "tx": [[["ok", "RECOGNISE and REMOVE", ["when in doubt, remove from play, work, school", "1 · mental + physical rest 24-48 h, not longer", "2 · return to LEARN once symptom-free: part time, easiest classes, no phys ed", "3 · return to PLAY after full-time school + medical clearance"]]], [["ok", "Graduated return to play (~1 week)", ["1 · light aerobic: walk, swim, bike", "2 · sport drills, no head impact", "3 · non-contact, then harder drills", "4 · full contact after MEDICAL CLEARANCE", "5 · normal game play"]]]]}
- ],
- "panels": [
-  {"title": "Herniation", "items": [
-   "subfalcine · central: ↓ consciousness · transcalvarial",
-   "UNCAL: same-side third nerve palsy, dilated pupil + opposite weakness",
-   "TONSILLAR: medulla compressed → fatal cardiorespiratory failure",
-   "descending: nerves III, IV, VI · PCA, ACA stroke · Duret hemorrhage",
-   "Cushing's triad: hypertension, bradycardia, apnea"]},
-  {"title": "Skull fractures", "items": [
-   "linear · depressed · open or closed: CONTACT injury",
-   "BASILAR: raccoon eyes · Battle sign · CSF from ear or nose · hemotympanum",
-   "basilar: may be missed on CT · risk of MENINGITIS"]},
-  {"title": "Concussion: what can follow", "items": [
-   "second-impact syndrome: cerebral swelling",
-   "post-concussion syndrome: over 2 weeks adults, 4 weeks youth → permanent removal",
-   "post-traumatic epilepsy · depression, anxiety, suicide",
-   "CTE: repeated concussions · tau tangles · NEUROPATHOLOGICAL diagnosis",
-   "prevent: no checks to the head, no headers · return-to-play protocol"]}
+   "tx": [[["ok", "RECOGNISE and REMOVE", ["when in doubt, remove from play, work, school", "1 · mental + physical rest 24-48 h, not longer", "2 · return to LEARN once symptom-free: part time, easiest classes, no phys ed", "3 · return to PLAY after full-time school + medical clearance"]]], [["ok", "Graduated return to play (~1 week)", ["1 · light aerobic: walk, swim, bike", "2 · sport drills, no head impact", "3 · non-contact, then harder drills", "4 · full contact after MEDICAL CLEARANCE", "5 · normal game play"]]]],
+   "later": [[["bad", "Second-impact syndrome", ["cerebral swelling"]]],
+             [["bad", "Post-concussion syndrome", ["• over 2 weeks adults, 4 weeks youth", "→ permanent removal"]]],
+             [["bad", "Also", ["• post-traumatic epilepsy", "• depression, anxiety, suicide"]]],
+             [["bad", "CTE: repeated concussions", ["• tau tangles", "• NEUROPATHOLOGICAL diagnosis"]]],
+             [["ok", "Prevent", ["• no checks to the head, no headers", "• return-to-play protocol"]]]]}
  ]
 }
