@@ -65,6 +65,7 @@ TESTS = {
     "Elbow flexion": ("Arm power (C5–T1)", "elbow-flexion.jpg"),
     "Elbow extension": ("Arm power (C5–T1)", "elbow-extension.jpg"),
     "Wrist extension": ("Arm power (C5–T1)", "wrist-extension.jpg"),
+    "Wrist flexion": ("Arm power (C5–T1)", None),
     "Finger extension": ("Arm power (C5–T1)", None),
     "Finger abduction": ("Arm power (C5–T1)", "finger-abduction.jpg"),
     "Grip strength": ("Arm power (C5–T1)", "grip-strength.jpg"),
@@ -75,6 +76,8 @@ TESTS = {
     "Knee flexion": ("Leg power (L1–S1)", "knee-flexion.jpg"),
     "Ankle dorsiflexion": ("Leg power (L1–S1)", "ankle-dorsiflexion.jpg"),
     "Ankle plantar flexion": ("Leg power (L1–S1)", "ankle-plantar-flexion.jpg"),
+    "Ankle inversion": ("Leg power (L1–S1)", None),
+    "Ankle eversion": ("Leg power (L1–S1)", None),
     "Big toe extension": ("Leg power (L1–S1)", None),
     "Pain (pinprick)": ("Pain and temperature (spinothalamic)", "pain-pinprick.jpg"),
     "Temperature": ("Pain and temperature (spinothalamic)", "temperature.jpg"),
@@ -84,6 +87,7 @@ TESTS = {
     "Stereognosis": ("Cortical sensation", "stereognosis.jpg"),
     "Graphesthesia": ("Cortical sensation", "graphesthesia.jpg"),
     "Extinction (both sides at once)": ("Cortical sensation", "extinction-both-sides-at-once.jpg"),
+    "Point localization": ("Cortical sensation", None),
     "Two-point discrimination": ("Cortical sensation", "two-point-discrimination.jpg"),
     # section 9: levels of the nervous system: drawn concept schematics (lesion-<level>.jpg)
     "Cortex": ("Brain", "lesion-cortex.jpg"),
@@ -125,7 +129,7 @@ OTHER_VIDEO = {
 EXAM = exam_page.Exam(
     key="neuro", folder=HERE, note=NOTE, regions=REGIONS, general=GENERAL, tests=TESTS, opening={},
     h1="Neurological exam",
-    lead='The Year 2 Neurology Handbook screening exam: mental status and language, cranial nerves, motor (with reflexes), sensory, coordination, balance, then gait.',
+    lead='The Year 2 Neurology Handbook screening exam: mental status and language, cranial nerves, motor (with reflexes), sensory, coordination, balance, then gait. <a href="neuro-one-pager.pdf">One-page summary (PDF)</a>',
     find="Find a manoeuvre or a level (e.g. C7, cerebellum)",
     root="Mental status → Cranial nerves → Motor → Reflexes → Sensory → Coordination → Balance → Gait",
     root_note="Compare left with right, and near the trunk with far. Every finding answers one question: where is "
