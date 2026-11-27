@@ -153,7 +153,7 @@
    "x": 40,
    "y": 290,
    "w": 206,
-   "h": 740,
+   "h": 804,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
@@ -161,7 +161,7 @@
    "x": 276,
    "y": 290,
    "w": 206,
-   "h": 740,
+   "h": 804,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -169,7 +169,7 @@
    "x": 484,
    "y": 290,
    "w": 206,
-   "h": 740,
+   "h": 804,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -177,7 +177,7 @@
    "x": 720,
    "y": 290,
    "w": 206,
-   "h": 740,
+   "h": 804,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -185,7 +185,7 @@
    "x": 928,
    "y": 290,
    "w": 206,
-   "h": 740,
+   "h": 804,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -193,7 +193,7 @@
    "x": 1164,
    "y": 290,
    "w": 206,
-   "h": 740,
+   "h": 804,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -201,7 +201,7 @@
    "x": 1372,
    "y": 290,
    "w": 206,
-   "h": 740,
+   "h": 804,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
@@ -209,7 +209,7 @@
    "x": 1580,
    "y": 290,
    "w": 206,
-   "h": 740,
+   "h": 804,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   }
@@ -230,7 +230,7 @@
   {
    "x": 23,
    "y": 800,
-   "h": 222,
+   "h": 286,
    "text": "A LESION LOOKS LIKE"
   }
  ],
@@ -606,12 +606,13 @@
    "x": 45,
    "y": 800,
    "w": 196,
-   "h": 222,
+   "h": 286,
    "kind": "cn1_2_8_w",
    "title": "Sense lost",
    "lines": [
     "• I: anosmia · Kallmann, COVID",
     "• II: optic neuritis",
+    "• II: **papilledema** = raised ICP, check VI",
     "• VIII: hearing loss, vertigo"
    ]
   },
@@ -620,7 +621,7 @@
    "x": 281,
    "y": 800,
    "w": 196,
-   "h": 91,
+   "h": 123,
    "kind": "cn3_w",
    "title": "Eye down and out",
    "lines": [
@@ -631,9 +632,9 @@
   {
    "id": "cn3_lesion_1_0",
    "x": 281,
-   "y": 913,
+   "y": 945,
    "w": 196,
-   "h": 109,
+   "h": 141,
    "kind": "bad",
    "title": "Compressed?",
    "lines": [
@@ -646,13 +647,27 @@
    "x": 489,
    "y": 800,
    "w": 196,
-   "h": 222,
+   "h": 132,
    "kind": "cn4_6_w",
    "title": "Double vision",
    "lines": [
     "• IV: **trauma**",
     "• VI: eye cannot look out",
-    "~ III, IV, VI share the cavernous sinus"
+    "~ VI runs through the cavernous sinus, III + IV in its wall: VI goes first"
+   ]
+  },
+  {
+   "id": "cn4_6_lesion_1_0",
+   "x": 489,
+   "y": 954,
+   "w": 196,
+   "h": 132,
+   "kind": "bad",
+   "title": "Raised ICP?",
+   "lines": [
+    "• VI palsy + **papilledema**",
+    "• VI stretched over the petrous tip",
+    "~ false localizing: the lesion is not at VI"
    ]
   },
   {
@@ -660,7 +675,7 @@
    "x": 725,
    "y": 800,
    "w": 196,
-   "h": 222,
+   "h": 286,
    "kind": "cn5_w",
    "title": "Face numb",
    "lines": [
@@ -674,7 +689,7 @@
    "x": 933.0,
    "y": 800,
    "w": 93.0,
-   "h": 222,
+   "h": 286,
    "kind": "cn7_w",
    "title": "UMN",
    "lines": [
@@ -688,7 +703,7 @@
    "x": 1036.0,
    "y": 800,
    "w": 93.0,
-   "h": 222,
+   "h": 286,
    "kind": "cn7_w",
    "title": "LMN",
    "lines": [
@@ -703,7 +718,7 @@
    "x": 1169,
    "y": 800,
    "w": 196,
-   "h": 222,
+   "h": 286,
    "kind": "cn9_10_w",
    "title": "Bulbar symptoms",
    "lines": [
@@ -717,7 +732,7 @@
    "x": 1377,
    "y": 800,
    "w": 196,
-   "h": 222,
+   "h": 286,
    "kind": "cn11_w",
    "title": "Rarely needed",
    "lines": []
@@ -727,7 +742,7 @@
    "x": 1585,
    "y": 800,
    "w": 196,
-   "h": 222,
+   "h": 286,
    "kind": "cn12_w",
    "title": "Lisp, food hard to move",
    "lines": [
@@ -761,6 +776,10 @@
   {
    "from": "cn3_lesion_0_0",
    "to": "cn3_lesion_1_0"
+  },
+  {
+   "from": "cn4_6_lesion_0_0",
+   "to": "cn4_6_lesion_1_0"
   },
   {
    "from": "cn1_2_8_head_0_0",
