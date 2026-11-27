@@ -27,6 +27,9 @@ the deck on the site is whatever the collection said the last time this ran.
 
 import io, json, os, platform, subprocess, sys, tempfile, urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from strip_anki_pills import strip_apkg
+
 ANKICONNECT = "http://127.0.0.1:8765"
 EXPORT_NAME = "_anki_export.apkg"
 
@@ -76,10 +79,9 @@ def subdecks(root):
 
 
 def counts(deck):
-    """Notes, cards and #HighYield notes in one deck."""
+    """Notes and cards in one deck."""
     return (len(ac("findNotes", query='deck:"%s"' % deck)),
-            len(ac("findCards", query='deck:"%s"' % deck)),
-            len(ac("findNotes", query='deck:"%s" tag:*#HighYield*' % deck)))
+            len(ac("findCards", query='deck:"%s"' % deck)))
 
 
 def export(root, dest):
@@ -93,6 +95,9 @@ def export(root, dest):
     with open(local_path, "rb") as src, open(dest, "wb") as dst:
         dst.write(src.read())
     os.remove(local_path)
+    # The collection's own High-yield / Exam Q pills and #HighYield tags are
+    # personal study marks; the published copy goes out without them.
+    strip_apkg(dest)
     return os.path.getsize(dest)
 
 
@@ -107,19 +112,19 @@ def main():
 
     weeks, seen = [], {}
     for deck, week, lecture in subdecks(root):
-        n, c, hy = counts(deck)
+        n, c = counts(deck)
         if week not in seen:
             seen[week] = {"week": week, "lectures": []}
             weeks.append(seen[week])
         seen[week]["lectures"].append(
-            {"name": lecture, "notes": n, "cards": c, "highyield": hy})
+            {"name": lecture, "notes": n, "cards": c})
 
-    tn, tc, thy = counts(root)
+    tn, tc = counts(root)
     man = {
         "deck": root,
         "file": "anki/%s.apkg" % block,
         "bytes": size,
-        "notes": tn, "cards": tc, "highyield": thy,
+        "notes": tn, "cards": tc,
         "weeks": weeks,
     }
     if draft:
@@ -132,8 +137,8 @@ def main():
     io.open(out, "w", encoding="utf-8", newline="\n").write(
         json.dumps(man, ensure_ascii=False, indent=1, sort_keys=True) + u"\n")
 
-    print("%s/%s  %d notes  %d cards  %d high-yield  %.1f MB"
-          % (course, block, tn, tc, thy, size / 1048576.0))
+    print("%s/%s  %d notes  %d cards  %.1f MB"
+          % (course, block, tn, tc, size / 1048576.0))
 
 
 if __name__ == "__main__":

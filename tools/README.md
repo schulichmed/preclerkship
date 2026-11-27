@@ -319,6 +319,11 @@ that `build_pages.py` renders the Anki tab from. **Run `build_pages.py` after
 it**, the way you would after editing a stylesheet - the counts on the tab come
 from the manifest at build time.
 
+Every export goes through `tools/strip_anki_pills.py`, which takes the collection's
+own High-yield and Exam Q pills out of the card templates and drops the `#HighYield`
+tags. Those are one student's study marks and are not published. The cards
+themselves are unchanged. The script also runs on its own on any `.apkg`.
+
 A block with no manifest keeps the empty state on its Anki tab, which is what
 every block but endo still shows. That is the whole switch: no manifest, no
 deck, and the tab says so rather than offering a download that 404s.

@@ -300,9 +300,9 @@ def deck_section(course, m, weeks, first):
            '<div class="deck-what">',
            '<h2>%s, %s</h2>' % (course["short"], m.get("label", "weeks %s" % weeks)),
            '<p class="deck-sum"><b>%d</b> cards from <b>%d</b> notes, '
-           'across %d lectures. <b>%d</b> are marked high-yield.</p>'
+           'across %d lectures.</p>'
            % (m["cards"], m["notes"],
-              sum(len(w["lectures"]) for w in m["weeks"]), m["highyield"]),
+              sum(len(w["lectures"]) for w in m["weeks"])),
            deck_src(m),
            '</div>',
            '<a class="deck-dl" href="%s" download>Download the deck '
@@ -324,11 +324,9 @@ def deck_section(course, m, weeks, first):
                    % (w["week"], n))
         out.append('<ul class="deck-lecs">')
         for l in w["lectures"]:
-            hy = (' <span class="hy">&middot; %d high-yield</span>'
-                  % l["highyield"]) if l["highyield"] else ''
             out.append('<li><span class="lc-n">%s</span>'
-                       '<span class="lc-c"><b>%d</b>%s</span></li>'
-                       % (l["name"], l["cards"], hy))
+                       '<span class="lc-c"><b>%d</b></span></li>'
+                       % (l["name"], l["cards"]))
         out.append('</ul>')
         out.append('</section>')
     out.append('</div>')
