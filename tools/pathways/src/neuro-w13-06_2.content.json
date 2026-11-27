@@ -1,15 +1,13 @@
 {
  "name": "spinal cord syndromes overview",
- "title": "Spinal cord or root: upper motor neuron signs below a sensory level mean the cord, and which modalities are lost sorts anterior, posterior, central and Brown-Sequard cord syndromes; a lower motor neuron pattern means the roots, either cauda equina (an emergency) or a single radiculopathy; each column gives the presentation and the causes, and a shared row lists every other kind of cord cause",
+ "title": "Spinal cord or root: upper motor neuron signs below a sensory level mean the cord, and which tracts are lost (corticospinal, spinothalamic, dorsal columns) sorts anterior, posterior, central and Brown-Sequard cord syndromes; a lower motor neuron pattern means the roots, either cauda equina (an emergency) or a single radiculopathy; each column gives the tracts hit, the presentation and the causes, and a shared row lists every other kind of cord cause",
  "col_w": 158,
  "root": {
   "title": "Cord or root? Motor exam + the LOWEST sensory level",
   "lines": [
-   "upper motor neuron (UMN), brain or cord: subtle bulk loss, tone ↑, hyperreflexia, upgoing toe",
-   "lower motor neuron (LMN), root or nerve: wasting, tone ↓, reflexes ↓ or absent",
-   "NO motor or sensory function below the level, incl. rectal tone + perianal sensation = COMPLETE",
-   "corticospinal crosses at the medullary PYRAMIDS · light touch uses both sensory pathways",
-   "cord: UMN signs + a SYNDROME · root: LMN signs, more isolated · cord ends ~L1/L2, then cauda equina"
+   "UMN = CORD: tone ↑, reflexes ↑, upgoing toe",
+   "LMN = ROOT: wasting, tone ↓, reflexes ↓",
+   "COMPLETE = nothing below the level, incl. rectal tone"
   ]
  },
  "groups": [
@@ -40,6 +38,7 @@
  ],
  "sections": [
   "head",
+  "tract",
   "pres",
   "cause",
   "more"
@@ -47,26 +46,59 @@
  "row_names": {
   "pres": "PRESENTS AS",
   "cause": "CAUSES",
+  "tract": "TRACTS HIT",
   "more": "NOT JUST TRAUMA OR TUMOUR"
  },
  "spans": [
-  {"section": "more", "cols": [0, 3], "rows": [
-   [["plain", "Vascular · infectious", [
-     "• vascular: stroke, AVM, fistula",
-     "• infectious: epidural abscess, viral",
-     "• infectious: syphilis (tabes dorsalis)"]],
-    ["plain", "Trauma · autoimmune · metabolic", [
-     "• trauma: fracture, stab, disc, radiation",
-     "• autoimmune: lupus",
-     "• metabolic: B12 (subacute combined degeneration)"]]],
-   [["plain", "Inflammatory · neoplastic", [
-     "• inflammatory: multiple sclerosis",
-     "• also: transverse myelitis, syrinx",
-     "• neoplastic: metastatic, extradural, intrinsic"]],
-    ["plain", "Congenital · degenerative", [
-     "• congenital: achondroplasia",
-     "• degenerative: disc herniation, arthritis",
-     "• degenerative: motor neuron disease (ALS)"]]]]}
+  {
+   "section": "more",
+   "cols": [
+    0,
+    3
+   ],
+   "rows": [
+    [
+     [
+      "plain",
+      "Vascular · infectious",
+      [
+       "• vascular: stroke, AVM, fistula",
+       "• infectious: epidural abscess, viral",
+       "• infectious: syphilis (tabes dorsalis)"
+      ]
+     ],
+     [
+      "plain",
+      "Trauma · autoimmune · metabolic",
+      [
+       "• trauma: fracture, stab, disc, radiation",
+       "• autoimmune: lupus",
+       "• metabolic: B12 (subacute combined degeneration)"
+      ]
+     ]
+    ],
+    [
+     [
+      "plain",
+      "Inflammatory · neoplastic",
+      [
+       "• inflammatory: multiple sclerosis",
+       "• also: transverse myelitis, syrinx",
+       "• neoplastic: metastatic, extradural, intrinsic"
+      ]
+     ],
+     [
+      "plain",
+      "Congenital · degenerative",
+      [
+       "• congenital: achondroplasia",
+       "• degenerative: disc herniation, arthritis",
+       "• degenerative: motor neuron disease (ALS)"
+      ]
+     ]
+    ]
+   ]
+  }
  ],
  "dashed_sections": [
   "pres"
@@ -82,6 +114,20 @@
       "Anterior cord",
       [
        "anterior spinal artery territory"
+      ]
+     ]
+    ]
+   ],
+   "tract": [
+    [
+     [
+      "t",
+      "Anterior 2/3 LOST",
+      [
+       "• **corticospinal** → paralysis",
+       "• **spinothalamic** → pain, temp",
+       "• descending autonomic → BP, bladder, bowel",
+       "• dorsal columns SPARED → vibration, position"
       ]
      ]
     ]
@@ -130,6 +176,19 @@
      ]
     ]
    ],
+   "tract": [
+    [
+     [
+      "t",
+      "Dorsal columns LOST",
+      [
+       "• **gracilis + cuneatus** → vibration, position, 2-point",
+       "• corticospinal, spinothalamic SPARED",
+       "~ B12 also hits lateral corticospinal: subacute COMBINED"
+      ]
+     ]
+    ]
+   ],
    "pres": [
     [
      [
@@ -167,6 +226,19 @@
       "Central cord",
       [
        "commonest in ELDERLY trauma"
+      ]
+     ]
+    ]
+   ],
+   "tract": [
+    [
+     [
+      "t",
+      "Centre outward",
+      [
+       "• **crossing spinothalamic** fibres (anterior commissure) → cape pain, temp",
+       "• **medial corticospinal** (arm fibres) → hands > legs",
+       "• dorsal columns SPARED"
       ]
      ]
     ]
@@ -214,6 +286,19 @@
      ]
     ]
    ],
+   "tract": [
+    [
+     [
+      "t",
+      "Half the cord",
+      [
+       "• **corticospinal** → SAME side paralysis (crossed at pyramids)",
+       "• **dorsal columns** → SAME side vibration, position (cross in medulla)",
+       "• **spinothalamic** → OPPOSITE side pain, temp (crossed at entry)"
+      ]
+     ]
+    ]
+   ],
    "pres": [
     [
      [
@@ -254,6 +339,18 @@
      ]
     ]
    ],
+   "tract": [
+    [
+     [
+      "t",
+      "No tracts: roots",
+      [
+       "• lumbosacral roots → LMN legs",
+       "• **S2-S4** → saddle, bladder, bowel"
+      ]
+     ]
+    ]
+   ],
    "pres": [
     [
      [
@@ -290,6 +387,18 @@
       "Radiculopathy",
       [
        "one nerve root"
+      ]
+     ]
+    ]
+   ],
+   "tract": [
+    [
+     [
+      "t",
+      "No tracts: one root",
+      [
+       "• dorsal root → its dermatome",
+       "• ventral root → its myotome, reflex"
       ]
      ]
     ]
