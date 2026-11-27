@@ -1,6 +1,6 @@
 {
  "name": "pediatric ophthalmology overview",
- "title": "A child's eyes: the red reflex sorts a dim or different reflex (refractive error or media opacity), a brighter one (the turned eye in strabismus) and a white one (leukocoria, retinoblastoma first); misaligned eyes are concomitant or incomitant by whether the angle changes with gaze; reduced acuity in one eye without disease is amblyopia; each column gives what is seen, what to think of and what to do",
+ "title": "A child's eyes: the red reflex sorts a dim or different reflex (refractive error or media opacity), a brighter one (the turned eye in strabismus) and a white one (leukocoria, retinoblastoma first); misaligned eyes are concomitant or incomitant by whether the angle changes with gaze; reduced acuity in one eye without disease is amblyopia; each column gives what is seen, what to think of and what to do, with retinoblastoma (genetics, treatment, outcome) in the leukocoria column",
  "col_w": 236,
  "root": {
   "title": "A child's eyes: acuity in EACH eye, alignment, red reflex",
@@ -32,8 +32,13 @@
   {"id": "white", "colour": "magenta", "drop_label": "white",
    "head": [[["h", "Leukocoria", ["a WHITE pupillary reflex"]]]],
    "pres": [[["t", "White reflex", ["• may be the first sign of a life-threatening disease", "~physiologic white reflex ~15° off axis: still refer"]]]],
-   "inv": [[["w", "RETINOBLASTOMA first", ["• retinopathy of prematurity", "• congenital cataract", "• Coats' disease, persistent hyperplastic primary vitreous", "• toxocariasis, congenital CMV, endophthalmitis", "• coloboma, familial exudative vitreoretinopathy, retinal detachment, trauma"]]]],
-   "tx": [[["bad", "IMMEDIATE referral", ["• family history of eye disease", "• bring old photographs", "~without needless alarm"]]]]},
+   "inv": [[["bad", "RETINOBLASTOMA: rule it out FIRST", ["• 1 in 180,000 births", "• embryonic retina, so most under 4"]]],
+           [["w", "Retinoblastoma genetics", ["• 90% no family history: usually ONE eye", "• 15% of one-eye cases: germline RB1", "• BOTH eyes → family history ~100%"]]],
+           [["w", "Then the rest", ["• retinopathy of prematurity", "• congenital cataract", "• Coats' disease, persistent hyperplastic primary vitreous", "• toxocariasis, congenital CMV, endophthalmitis", "• coloboma, familial exudative vitreoretinopathy, retinal detachment, trauma"]]]],
+   "tx": [[["bad", "IMMEDIATE referral", ["• family history of eye disease", "• bring old photographs", "~without needless alarm"]]],
+          [["ok", "Retinoblastoma treatment", ["• enucleation · chemotherapy", "• radiotherapy · laser ± cryotherapy"]]],
+          [["ok", "Outcome", ["• 3-year survival ~96%", "• > 95% cured with optimal care", "• diagnosed late: up to 70% die worldwide"]]],
+          [["bad", "Germline RB1", ["more die of a SECOND cancer than of the tumour"]]]]},
   {"id": "con", "colour": "purple", "drop_label": "same angle",
    "head": [[["h", "Concomitant strabismus", ["non-paralytic"]]]],
    "pres": [[["t", "SAME angle in every gaze", ["• muscles work, eyes not aimed together", "• starts in childhood", "• adults: DIPLOPIA · children: suppression"]]]],
@@ -49,13 +54,5 @@
    "pres": [[["t", "Test EACH eye", ["• newborn: light reflexes, pupils, fundus", "• to age 2: fusses when the GOOD eye is covered", "• 2-5: HOTV, tumbling E charts"]]]],
    "inv": [[["w", "Three causes", ["• strabismic: turned eye suppressed", "• refractive: unequal refractive error, the blurrier eye", "• deprivation: cataract, corneal scar, ptosis"]]]],
    "tx": [[["bad", "IMMEDIATE referral", ["pediatric ophthalmologist"]]], [["ok", "Patch the GOOD eye", ["+ glasses (unequal error), or surgery for cataract or strabismus"]]]]}
- ],
- "panels": [
-  {"title": "Retinoblastoma: rule it out FIRST", "items": [
-   "1 in 180,000 births · embryonic retina, so most under 4",
-   "90% no family history (usually ONE eye) · 15% of one-eye cases carry a germline RB1 mutation · BOTH eyes → family history ~100%",
-   "enucleation · chemotherapy · radiotherapy · laser ± cryotherapy",
-   "3-year survival ~96% · > 95% cured with optimal care · up to 70% die when diagnosed late worldwide",
-   "germline RB1: more die of a SECOND cancer than of the tumour"]}
  ]
 }

@@ -1,6 +1,6 @@
 {
  "name": "vertigo overview",
- "title": "Dizziness: first decide whether it is true vertigo; non-vestibular dizziness has organic and psychiatric causes, while peripheral vertigo is named by how long attacks last and whether hearing is affected: BPPV, Meniere's disease, vestibular neuronitis or labyrinthitis, superior canal dehiscence, and aminoglycoside toxicity; each column gives presentation, investigations and treatment, with nystagmus types and vestibular physiology below",
+ "title": "Dizziness: first decide whether it is true vertigo; non-vestibular dizziness has organic and psychiatric causes, while peripheral vertigo is named by how long attacks last and whether hearing is affected: BPPV, Meniere's disease, vestibular neuronitis or labyrinthitis, superior canal dehiscence, and aminoglycoside toxicity; the vestibular group box explains how the inner ear signals movement and a shared exam box reads the nystagmus; each column gives presentation, investigations and treatment",
  "col_w": 196,
  "root": {
   "title": "\"Dizzy\": is it TRUE VERTIGO, an illusion of rotary movement?",
@@ -13,34 +13,48 @@
  },
  "groups": [
   {"id": "g_not", "cols": [0, 0], "title": "NO: dizziness", "lines": ["lightheaded, unsteady, disoriented · chronic"]},
-  {"id": "g_v", "cols": [1, 5], "title": "YES: vestibular", "lines": ["episodic, limited duration · hearing symptoms · nausea, vomiting, sweating, bowels · worse with head movement"]}
+  {"id": "g_v", "cols": [1, 5], "title": "YES: vestibular", "lines": ["episodic, limited duration · hearing symptoms · nausea, vomiting, sweating, bowels · worse with head movement",
+   "• hair cells (CN VIII): bending toward the kinocilium opens K+ channels → depolarizes",
+   "• resting firing ~100/s, so each afferent signals BOTH directions",
+   "• otoliths (utricle, saccule): linear movement, tilt vs gravity · posture",
+   "• canals: rotation · endolymph lags, pushes the cupula · gaze stabilization",
+   "• canals work in PAIRS: the brain reads the difference, so one dead ear = false rotation",
+   "• VOR: 3 neurons, eyes compensate in 10-15 ms"]}
+ ],
+ "pres": [
+  {"id": "p_nys", "group": "g_v", "title": "Exam: read the NYSTAGMUS", "lines": [
+   "• slow phase = vestibulo-ocular reflex · fast phase = saccade that resets the eye",
+   "• PERIPHERAL (spontaneous vestibular): direction FIXED, mostly horizontal, SUPPRESSED by fixation",
+   "• physiologic: rotation · caloric · optokinetic · end-point",
+   "• caloric COWS: Cold → fast phase Opposite, Warm → Same · tests the brainstem in coma (needs the MLF for conjugate eyes)",
+   "• other pathologic: positional · gaze-paretic · rebound · fixation · congenital · dissociated"]}
  ],
  "tiers": [
   {"id": "t1", "cols": [1, 5], "title": "How long does an attack last, and is hearing lost?", "lines": ["seconds: BPPV, dehiscence · minutes to hours: Ménière's (hearing lost) or migrainous (hearing kept) · days: labyrinthitis (hearing lost) or neuronitis (kept) · forever: uncompensated vestibular loss"]}
  ],
- "sections": ["head", "pres", "inv", "tx"],
- "row_names": {"pres": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
+ "sections": ["head", "sx", "inv", "tx"],
+ "row_names": {"pres": "EXAM", "sx": "PRESENTS AS", "inv": "INVESTIGATIONS", "tx": "TREATMENT"},
  "columns": [
   {"id": "diz", "colour": "slate",
    "head": [[["h", "Not vestibular", []]]],
-   "pres": [[["t", "Organic", ["• presyncope, vasodepressor syncope", "• arrhythmia", "• orthostatic hypotension", "• hyperventilation · anemia", "• neuropathy · poor vision", "• musculoskeletal · drugs"]]],
+   "sx": [[["t", "Organic", ["• presyncope, vasodepressor syncope", "• arrhythmia", "• orthostatic hypotension", "• hyperventilation · anemia", "• neuropathy · poor vision", "• musculoskeletal · drugs"]]],
             [["w", "Psychiatric", ["• depression · anxiety", "• panic disorder", "• phobic dizziness · somatization"]]]],
    "inv": [[["w", "Look for", ["cardiac or neurological symptoms, loss of consciousness"]]]],
    "tx": [[["w", "Not a vestibular problem", ["~chronic disequilibrium, lightheadedness"]]]]},
   {"id": "bppv", "colour": "teal", "drop_from": "t1", "drop_label": "seconds",
    "head": [[["h", "BPPV", ["benign paroxysmal positional vertigo · commonest end-organ disorder"]]]],
-   "pres": [[["t", "10-30 s of spinning", ["• set off by specific head movements", "• severe: motion sensitivity", "• hearing NORMAL"]]],
+   "sx": [[["t", "10-30 s of spinning", ["• set off by specific head movements", "• severe: motion sensitivity", "• hearing NORMAL"]]],
             [["w", "Cause", ["• otoconia loose from the utricle float in the POSTERIOR canal (canalithiasis)", "• idiopathic (degenerative) or head trauma (commonest cause of bilateral)", "~rare: lateral or superior canal"]]]],
    "inv": [[["w", "Dix-Hallpike", ["• torsional nystagmus after a LATENCY", "• left ear clockwise, right counterclockwise", "• brief, fades, reverses on sitting up"]]]],
    "tx": [[["ok", "Particle repositioning (Epley, Semont)", ["80% after 1 session · 95% after 3", "• cure: same-direction nystagmus 80% · reversed 10% · none 50%", "~intractable: posterior canal occlusion"]]]]},
   {"id": "scd", "colour": "orange", "drop_from": "t1", "drop_label": "sound, pressure",
    "head": [[["h", "Superior canal dehiscence", ["a third mobile window into the inner ear"]]]],
-   "pres": [[["t", "Vertigo with LOUD SOUND or PRESSURE", ["• oscillopsia too", "• hears own voice (autophony), footsteps, eye movements", "• conductive loss, acoustic reflexes PRESERVED", "• sound evokes vertical-torsional eye movements in the superior canal's plane"]]]],
+   "sx": [[["t", "Vertigo with LOUD SOUND or PRESSURE", ["• oscillopsia too", "• hears own voice (autophony), footsteps, eye movements", "• conductive loss, acoustic reflexes PRESERVED", "• sound evokes vertical-torsional eye movements in the superior canal's plane"]]]],
    "inv": [[["w", "Audiometry + temporal bone CT", []]]],
    "tx": [[["ok", "Avoid triggers, or surgery", []]]]},
   {"id": "men", "colour": "blue", "drop_from": "t1", "drop_label": "min-hours",
    "head": [[["h", "Ménière's disease", ["endolymphatic hydrops · 2nd commonest", "50-100 per 100,000 · 10% of dizzy clinic visits", "onset 40s, then 50s, 30s · familial < 10%"]]]],
-   "pres": [[["t", "Episodic vertigo, 24 min to 24 h", ["• FLUCTUATING LOW-frequency sensorineural loss", "• tinnitus · aural fullness", "~both ears in 25-30%, usually within 5 years"]]],
+   "sx": [[["t", "Episodic vertigo, 24 min to 24 h", ["• FLUCTUATING LOW-frequency sensorineural loss", "• tinnitus · aural fullness", "~both ears in 25-30%, usually within 5 years"]]],
             [["w", "Unpredictable", ["exacerbations, remissions · hard to judge treatment"]]]],
    "inv": [[["w", "Ménière's syndrome?", ["secondary: syphilis, trauma, labyrinthitis"]]],
            [["w", "Why", ["↓ endolymph resorption or ↑ production (stria vascularis, dark cells) · hydrops ≠ always Ménière's"]]]],
@@ -50,30 +64,15 @@
           [["bad", "4 · Last: surgery", ["vestibular neurectomy → labyrinthectomy", "~ablation does NOT cure the disease"]]]]},
   {"id": "neu", "colour": "purple", "drop_from": "t1", "drop_label": "days",
    "head": [[["h", "Vestibular neuronitis / labyrinthitis", ["viral, often after a cold"]]]],
-   "pres": [[["t", "Vertigo for DAYS", ["• nausea, vomiting", "• nystagmus beats AWAY from the bad ear"]]]],
+   "sx": [[["t", "Vertigo for DAYS", ["• nausea, vomiting", "• nystagmus beats AWAY from the bad ear"]]]],
    "inv": [[["w", "Hearing kept → NEURONITIS", []]],
            [["w", "Hearing loss + tinnitus → LABYRINTHITIS", []]]],
    "tx": [[["ok", "Symptoms, short-term", ["• antiemetics, vestibular sedatives", "• oral steroids if within 72 h", "~antivirals: no evidence"]]]]},
   {"id": "ami", "colour": "olive", "drop_from": "t1", "drop_label": "on gentamicin",
    "head": [[["h", "Aminoglycoside toxicity", ["ear drops or injections"]]]],
-   "pres": [[["t", "One ear (drops)", ["vertigo, nystagmus beating away from it"]]],
+   "sx": [[["t", "One ear (drops)", ["vertigo, nystagmus beating away from it"]]],
             [["w", "Systemic (both ears)", ["severe disequilibrium, motion sensitivity, oscillopsia"]]]],
    "inv": [[["w", "Usually diagnosed 'after the fact'", []]]],
    "tx": [[["bad", "STOP the aminoglycoside", ["~usually permanent, some partial recovery"]]]]}
- ],
- "panels": [
-  {"title": "Nystagmus", "items": [
-   "slow phase = vestibulo-ocular reflex · fast phase = saccade that resets the eye",
-   "physiologic: rotation · caloric · optokinetic · end-point",
-   "caloric COWS: Cold → fast phase Opposite, Warm → Same · tests the brainstem in coma (needs the MLF for conjugate eyes)",
-   "peripheral (spontaneous vestibular): direction FIXED, mostly horizontal, SUPPRESSED by fixation",
-   "other pathologic: positional · gaze-paretic · rebound · fixation · congenital · dissociated"]},
-  {"title": "Vestibular physiology", "items": [
-   "hair cells (CN VIII): bending toward the kinocilium opens K+ channels → depolarizes",
-   "resting firing ~100/s, so each afferent signals BOTH directions",
-   "otoliths (utricle, saccule): linear movement, tilt vs gravity · posture",
-   "canals: rotation · endolymph lags, pushes the cupula · gaze stabilization",
-   "canals work in PAIRS: the brain reads the difference, so one dead ear = false rotation",
-   "VOR: 3 neurons, eyes compensate in 10-15 ms"]}
  ]
 }

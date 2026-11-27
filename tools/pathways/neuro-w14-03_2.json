@@ -1,7 +1,7 @@
 {
  "name": "stroke overview",
- "width": 1172,
- "title": "A sudden focal deficit runs the stroke protocol: glucose, NIH Stroke Scale and localization, then a non-contrast CT; no blood means an ischemic stroke (CT angiogram and perfusion, tPA within 4.5 hours, thrombectomy for a proximal large-vessel occlusion with a mismatch) or a TIA (CT, ASA, TIA clinic), both followed by secondary prevention chosen by cause; blood means an intracerebral hemorrhage (cause by site, BP under 160/110, hold antithrombotics) or a subarachnoid hemorrhage (vessel imaging, neurosurgery)",
+ "width": 1474,
+ "title": "A sudden focal deficit runs the stroke protocol: glucose, NIH Stroke Scale and localization, then a non-contrast CT; no blood means an ischemic stroke (CT angiogram and perfusion, tPA within 4.5 hours, thrombectomy for a proximal large-vessel occlusion with a mismatch) or a TIA (CT, ASA, TIA clinic), both followed by a workup for the cause, secondary prevention chosen by cause, and the risk factors and primary prevention; a deficit that is not a stroke may be a mimic (migraine, Todd's paresis, hypoglycemia, psychogenic); blood means an intracerebral hemorrhage (cause by site, BP under 160/110, hold antithrombotics) or a subarachnoid hemorrhage (vessel imaging, neurosurgery)",
  "kinds": {
   "isch_h": [
    "#1f6f8b",
@@ -37,6 +37,24 @@
    "#ffffff",
    "#6a4aa8",
    "#6a4aa8",
+   "#18212e"
+  ],
+  "mim_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "mim_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "mim_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
    "#18212e"
   ],
   "ich_h": [
@@ -97,15 +115,23 @@
    "x": 616,
    "y": 324,
    "w": 272,
-   "h": 1868,
+   "h": 498,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 918,
+   "y": 324,
+   "w": 272,
+   "h": 2376,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
-   "x": 890,
+   "x": 1192,
    "y": 324,
    "w": 272,
-   "h": 1868,
+   "h": 2376,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   }
@@ -132,14 +158,14 @@
   {
    "x": 23,
    "y": 1880,
-   "h": 304,
+   "h": 812,
    "text": "THEN"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 221,
+   "x": 372,
    "y": 10,
    "w": 760,
    "kind": "dark",
@@ -164,8 +190,20 @@
    ]
   },
   {
-   "id": "g_hem",
+   "id": "g_mim",
    "x": 621,
+   "y": 192,
+   "w": 262,
+   "h": 60,
+   "kind": "plain",
+   "title": "NOT a stroke: a MIMIC?",
+   "lines": [
+    "acute weakness: stroke or mimic?"
+   ]
+  },
+  {
+   "id": "g_hem",
+   "x": 923,
    "y": 192,
    "w": 536,
    "h": 60,
@@ -200,8 +238,20 @@
    ]
   },
   {
-   "id": "ich_head_0_0",
+   "id": "mim_head_0_0",
    "x": 621,
+   "y": 332,
+   "w": 262,
+   "h": 78,
+   "kind": "mim_h",
+   "title": "Stroke mimic",
+   "lines": [
+    "acute weakness, not a stroke"
+   ]
+  },
+  {
+   "id": "ich_head_0_0",
+   "x": 923,
    "y": 332,
    "w": 262,
    "h": 78,
@@ -213,7 +263,7 @@
   },
   {
    "id": "sah_head_0_0",
-   "x": 895,
+   "x": 1197,
    "y": 332,
    "w": 262,
    "h": 78,
@@ -255,8 +305,60 @@
    ]
   },
   {
-   "id": "ich_clue_0_0",
+   "id": "mim_clue_0_0",
    "x": 621,
+   "y": 450,
+   "w": 262,
+   "h": 119,
+   "kind": "mim_w",
+   "title": "Migraine",
+   "lines": [
+    "• weakness MARCHES",
+    "• slow on and off, minutes",
+    "• young women"
+   ]
+  },
+  {
+   "id": "mim_clue_1_0",
+   "x": 621,
+   "y": 591,
+   "w": 262,
+   "h": 101,
+   "kind": "mim_w",
+   "title": "Todd's paresis",
+   "lines": [
+    "• unwitnessed seizure",
+    "• improves over hours"
+   ]
+  },
+  {
+   "id": "mim_clue_2_0",
+   "x": 621.0,
+   "y": 714,
+   "w": 126.0,
+   "h": 101,
+   "kind": "mim_w",
+   "title": "Hypoglycemia",
+   "lines": [
+    "• esp. old strokes"
+   ]
+  },
+  {
+   "id": "mim_clue_2_1",
+   "x": 757.0,
+   "y": 714,
+   "w": 126.0,
+   "h": 101,
+   "kind": "mim_w",
+   "title": "Psychogenic",
+   "lines": [
+    "• inconsistent",
+    "• better distracted"
+   ]
+  },
+  {
+   "id": "ich_clue_0_0",
+   "x": 923,
    "y": 450,
    "w": 262,
    "h": 168,
@@ -269,7 +371,7 @@
   },
   {
    "id": "ich_clue_1_0",
-   "x": 621.0,
+   "x": 923.0,
    "y": 640,
    "w": 126.0,
    "h": 174,
@@ -281,7 +383,7 @@
   },
   {
    "id": "ich_clue_1_1",
-   "x": 757.0,
+   "x": 1059.0,
    "y": 640,
    "w": 126.0,
    "h": 174,
@@ -293,7 +395,7 @@
   },
   {
    "id": "sah_clue_0_0",
-   "x": 895,
+   "x": 1197,
    "y": 450,
    "w": 262,
    "h": 364,
@@ -356,7 +458,7 @@
   },
   {
    "id": "ich_inv_0_0",
-   "x": 621,
+   "x": 923,
    "y": 854,
    "w": 262,
    "h": 270,
@@ -368,7 +470,7 @@
   },
   {
    "id": "sah_inv_0_0",
-   "x": 895,
+   "x": 1197,
    "y": 854,
    "w": 262,
    "h": 270,
@@ -438,7 +540,7 @@
   },
   {
    "id": "ich_tx_0_0",
-   "x": 621,
+   "x": 923,
    "y": 1164,
    "w": 262,
    "h": 676,
@@ -454,7 +556,7 @@
   },
   {
    "id": "sah_tx_0_0",
-   "x": 895,
+   "x": 1197,
    "y": 1164,
    "w": 262,
    "h": 676,
@@ -466,10 +568,10 @@
   },
   {
    "id": "ich_after_0_0",
-   "x": 621,
+   "x": 923,
    "y": 1880,
    "w": 262,
-   "h": 304,
+   "h": 812,
    "kind": "warn",
    "title": "At 24 hours",
    "lines": [
@@ -478,10 +580,10 @@
   },
   {
    "id": "sah_after_0_0",
-   "x": 895,
+   "x": 1197,
    "y": 1880,
    "w": 262,
-   "h": 304,
+   "h": 812,
    "kind": "bad",
    "title": "Watch for",
    "lines": [
@@ -508,6 +610,62 @@
    "x": 45.0,
    "y": 2016,
    "w": 263.0,
+   "h": 114,
+   "kind": "info",
+   "title": "Find the CAUSE: artery to artery",
+   "lines": [
+    "• carotid, intracranial, aorta",
+    "• anterior → carotid imaging",
+    "• posterior → vertebrobasilar imaging",
+    "• MRA, CTA, Doppler"
+   ]
+  },
+  {
+   "id": "span0_after_1_1",
+   "x": 318.0,
+   "y": 2016,
+   "w": 263.0,
+   "h": 114,
+   "kind": "info",
+   "title": "CARDIOEMBOLIC",
+   "lines": [
+    "• echo: TTE, TEE",
+    "• bubble study for PFO/ASD",
+    "• telemetry, Holter for atrial fibrillation"
+   ]
+  },
+  {
+   "id": "span0_after_2_0",
+   "x": 45.0,
+   "y": 2152,
+   "w": 263.0,
+   "h": 96,
+   "kind": "info",
+   "title": "Other causes",
+   "lines": [
+    "• lacunar (small vessel)",
+    "• dissection (vertebral, carotid)",
+    "• cryptogenic"
+   ]
+  },
+  {
+   "id": "span0_after_2_1",
+   "x": 318.0,
+   "y": 2152,
+   "w": 263.0,
+   "h": 96,
+   "kind": "info",
+   "title": "Hypoperfusion",
+   "lines": [
+    "• WATERSHED infarcts",
+    "• laminar necrosis of the cortical ribbon"
+   ]
+  },
+  {
+   "id": "span0_after_3_0",
+   "x": 45.0,
+   "y": 2270,
+   "w": 263.0,
    "h": 168,
    "kind": "ok",
    "title": "Antithrombotic",
@@ -517,9 +675,9 @@
    ]
   },
   {
-   "id": "span0_after_1_1",
+   "id": "span0_after_3_1",
    "x": 318.0,
-   "y": 2016,
+   "y": 2270,
    "w": 263.0,
    "h": 168,
    "kind": "ok",
@@ -529,18 +687,92 @@
     "• BP under 140/90 · high-dose statin · glucose · smoking · activity, diet, weight",
     "• ASA + clopidogrel for some high-risk patients"
    ]
+  },
+  {
+   "id": "span0_after_4_0",
+   "x": 45.0,
+   "y": 2460,
+   "w": 263.0,
+   "h": 96,
+   "kind": "warn",
+   "title": "Modifiable risk factors",
+   "lines": [
+    "• hypertension, diabetes, cholesterol",
+    "• smoking, atrial fibrillation",
+    "• heart disease"
+   ]
+  },
+  {
+   "id": "span0_after_4_1",
+   "x": 318.0,
+   "y": 2460,
+   "w": 263.0,
+   "h": 96,
+   "kind": "warn",
+   "title": "Also",
+   "lines": [
+    "• sedentary, obesity",
+    "• cocaine or amphetamines, postpartum",
+    "• bleeding disorders, anticoagulants"
+   ]
+  },
+  {
+   "id": "span0_after_5_0",
+   "x": 45.0,
+   "y": 2578,
+   "w": 263.0,
+   "h": 114,
+   "kind": "plain",
+   "title": "Fixed risk factors",
+   "lines": [
+    "• age, sex",
+    "• ethnicity, family history"
+   ]
+  },
+  {
+   "id": "span0_after_5_1",
+   "x": 318.0,
+   "y": 2578,
+   "w": 263.0,
+   "h": 114,
+   "kind": "ok",
+   "title": "PRIMARY prevention",
+   "lines": [
+    "• treat the risk factors",
+    "• low-dose ASA if several",
+    "• atrial fibrillation + high CHADS2 → anticoagulate"
+   ]
   }
  ],
  "edges": [
   {
    "from": "root",
    "to": "g_isch",
-   "path": "M601.0 142V167H313.0V192"
+   "path": "M752.0 142V167H313.0V192"
+  },
+  {
+   "from": "root",
+   "to": "g_mim",
+   "path": "M752.0 142V167H752.0V192"
   },
   {
    "from": "root",
    "to": "g_hem",
-   "path": "M601.0 142V167H889.0V192"
+   "path": "M752.0 142V167H1191.0V192"
+  },
+  {
+   "from": "mim_clue_0_0",
+   "to": "mim_clue_1_0"
+  },
+  {
+   "from": "mim_clue_1_0",
+   "to": "mim_clue_2_0",
+   "from_dx": -68.0
+  },
+  {
+   "from": "mim_clue_1_0",
+   "to": "mim_clue_2_1",
+   "from_dx": 68.0
   },
   {
    "from": "ich_clue_0_0",
@@ -577,6 +809,38 @@
    "from": "span0_after_0_0",
    "to": "span0_after_1_1",
    "from_dx": 136.5
+  },
+  {
+   "from": "span0_after_1_0",
+   "to": "span0_after_2_0"
+  },
+  {
+   "from": "span0_after_1_1",
+   "to": "span0_after_2_1"
+  },
+  {
+   "from": "span0_after_2_0",
+   "to": "span0_after_3_0"
+  },
+  {
+   "from": "span0_after_2_1",
+   "to": "span0_after_3_1"
+  },
+  {
+   "from": "span0_after_3_0",
+   "to": "span0_after_4_0"
+  },
+  {
+   "from": "span0_after_3_1",
+   "to": "span0_after_4_1"
+  },
+  {
+   "from": "span0_after_4_0",
+   "to": "span0_after_5_0"
+  },
+  {
+   "from": "span0_after_4_1",
+   "to": "span0_after_5_1"
   },
   {
    "from": "isch_head_0_0",
@@ -621,6 +885,15 @@
    "from": "g_isch",
    "to": "tia_head_0_0",
    "from_dx": 137
+  },
+  {
+   "from": "mim_head_0_0",
+   "to": "mim_clue_0_0"
+  },
+  {
+   "from": "g_mim",
+   "to": "mim_head_0_0",
+   "from_dx": 0
   },
   {
    "from": "ich_head_0_0",
@@ -671,46 +944,5 @@
    "from_dx": 137
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 2218,
-   "w": 361,
-   "title": "Ischemic causes → directed workup",
-   "items": [
-    "artery to artery: carotid, intracranial, aorta → carotid imaging (anterior) or vertebrobasilar (posterior): MRA, CTA, Doppler",
-    "CARDIOEMBOLIC → echo (TTE, TEE, bubble study for PFO/ASD) · telemetry, Holter for atrial fibrillation",
-    "lacunar (small vessel) · dissection (vertebral, carotid) · cryptogenic",
-    "hypoperfusion → WATERSHED infarcts · laminar necrosis of the cortical ribbon"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 420,
-   "y": 2218,
-   "w": 361,
-   "title": "Acute weakness: stroke or mimic?",
-   "items": [
-    "ischemic stroke: FOLLOWS a vascular territory",
-    "hemorrhage: may not follow one · more often headache",
-    "migraine: weakness MARCHES, slow on and off, minutes · young women",
-    "Todd's paresis: unwitnessed seizure · improves over hours",
-    "hypoglycemia (esp. old strokes) · psychogenic: inconsistent, better distracted"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 796,
-   "y": 2218,
-   "w": 361,
-   "title": "Risk factors + primary prevention",
-   "items": [
-    "modifiable: hypertension, diabetes, cholesterol, smoking, atrial fibrillation, heart disease",
-    "sedentary, obesity, cocaine or amphetamines, postpartum, bleeding disorders, anticoagulants",
-    "fixed: age, sex, ethnicity, family history",
-    "primary: treat risk factors · low-dose ASA if several · atrial fibrillation + high CHADS2 → anticoagulate"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

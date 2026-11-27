@@ -1,7 +1,7 @@
 {
  "name": "headache overview",
- "width": 1660,
- "title": "A headache is screened for SNOOP4 red flags to rule out a secondary cause (subarachnoid hemorrhage, bacterial meningitis, giant cell arteritis, brain tumour, idiopathic intracranial hypertension, each with its first test and treatment) while the primary headache is named by its ICHD-3 features (migraine, tension-type, cluster) and treated acutely and preventively",
+ "width": 1932,
+ "title": "A headache is screened for SNOOP4 red flags to rule out a secondary cause (subarachnoid hemorrhage, bacterial meningitis, giant cell arteritis, brain tumour, idiopathic intracranial hypertension, each with its first test and treatment) from a list of causes by category, while the primary headache is named by its ICHD-3 features (migraine, tension-type, cluster) and treated acutely (with the triptan and NSAID contraindications) and preventively, watching for medication overuse headache",
  "kinds": {
   "sah_h": [
    "#b5600f",
@@ -151,65 +151,65 @@
  "bands": [
   {
    "x": 40,
-   "y": 396,
-   "w": 196,
-   "h": 1202,
+   "y": 532,
+   "w": 230,
+   "h": 1514,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
-   "x": 238,
-   "y": 396,
-   "w": 196,
-   "h": 1202,
+   "x": 272,
+   "y": 532,
+   "w": 230,
+   "h": 1514,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
-   "x": 436,
-   "y": 396,
-   "w": 196,
-   "h": 1202,
+   "x": 504,
+   "y": 532,
+   "w": 230,
+   "h": 1514,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
   {
-   "x": 634,
-   "y": 396,
-   "w": 196,
-   "h": 1202,
+   "x": 736,
+   "y": 532,
+   "w": 230,
+   "h": 1514,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
-   "x": 832,
-   "y": 396,
-   "w": 196,
-   "h": 1202,
+   "x": 968,
+   "y": 532,
+   "w": 230,
+   "h": 1514,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
   {
-   "x": 1058,
-   "y": 396,
-   "w": 196,
-   "h": 1202,
+   "x": 1228,
+   "y": 532,
+   "w": 230,
+   "h": 1514,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
-   "x": 1256,
-   "y": 396,
-   "w": 196,
-   "h": 1202,
+   "x": 1460,
+   "y": 532,
+   "w": 230,
+   "h": 1514,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
-   "x": 1454,
-   "y": 396,
-   "w": 196,
-   "h": 1202,
+   "x": 1692,
+   "y": 532,
+   "w": 230,
+   "h": 1514,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   }
@@ -217,27 +217,33 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 630,
-   "h": 242,
+   "y": 328,
+   "h": 132,
+   "text": "EXCLUDE · BEWARE"
+  },
+  {
+   "x": 23,
+   "y": 730,
+   "h": 224,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 912,
-   "h": 188,
+   "y": 994,
+   "h": 152,
    "text": "DIAGNOSIS"
   },
   {
    "x": 23,
-   "y": 1140,
-   "h": 450,
+   "y": 1186,
+   "h": 852,
    "text": "TREATMENT"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 465,
+   "x": 601,
    "y": 10,
    "w": 760,
    "kind": "dark",
@@ -253,8 +259,8 @@
    "id": "g_sec",
    "x": 45,
    "y": 228,
-   "w": 978,
-   "h": 96,
+   "w": 1148,
+   "h": 60,
    "kind": "plain",
    "title": "SECONDARY: a red flag",
    "lines": [
@@ -263,23 +269,53 @@
   },
   {
    "id": "g_pri",
-   "x": 1063,
+   "x": 1233,
    "y": 228,
-   "w": 582,
-   "h": 96,
+   "w": 684,
+   "h": 60,
    "kind": "plain",
    "title": "PRIMARY: no red flag",
    "lines": [
-    "name it by its International Classification of Headache Disorders (ICHD-3) features",
-    "beware medication overuse: triptans 10+ days, simple analgesics 15+ days a month, for over 3 months"
+    "name it by its International Classification of Headache Disorders (ICHD-3) features"
+   ]
+  },
+  {
+   "id": "p_sec",
+   "x": 45,
+   "y": 328,
+   "w": 1148,
+   "h": 132,
+   "kind": "info",
+   "title": "Secondary causes to EXCLUDE",
+   "lines": [
+    "• vascular: stroke, ICH, SAH, venous thrombosis, PRES, RCVS, dissection, vasculitis",
+    "• inflammatory: giant cell arteritis, idiopathic intracranial hypertension",
+    "• trauma: after dural puncture, concussion · drugs: medication overuse",
+    "• tumour: meningioma, schwannoma, pituitary apoplexy, choriocarcinoma",
+    "• infection: meningitis, encephalitis, systemic"
+   ]
+  },
+  {
+   "id": "p_pri",
+   "x": 1233,
+   "y": 328,
+   "w": 684,
+   "h": 132,
+   "kind": "info",
+   "title": "Beware MEDICATION OVERUSE headache",
+   "lines": [
+    "• triptans 10+ days, simple analgesics 15+ days a month, for over 3 months",
+    "• → 15+ headache days a month in a primary headache",
+    "• usually resolves once stopped",
+    "• frequent acute use → start PREVENTION"
    ]
   },
   {
    "id": "sah_head_0_0",
    "x": 45,
-   "y": 404,
-   "w": 186,
-   "h": 186,
+   "y": 540,
+   "w": 220,
+   "h": 150,
    "kind": "sah_h",
    "title": "Subarachnoid hemorrhage",
    "lines": [
@@ -288,20 +324,20 @@
   },
   {
    "id": "men_head_0_0",
-   "x": 243,
-   "y": 404,
-   "w": 186,
-   "h": 186,
+   "x": 277,
+   "y": 540,
+   "w": 220,
+   "h": 150,
    "kind": "men_h",
    "title": "Bacterial meningitis",
    "lines": []
   },
   {
    "id": "gca_head_0_0",
-   "x": 441,
-   "y": 404,
-   "w": 186,
-   "h": 186,
+   "x": 509,
+   "y": 540,
+   "w": 220,
+   "h": 150,
    "kind": "gca_h",
    "title": "Giant cell arteritis",
    "lines": [
@@ -310,10 +346,10 @@
   },
   {
    "id": "tum_head_0_0",
-   "x": 639,
-   "y": 404,
-   "w": 186,
-   "h": 186,
+   "x": 741,
+   "y": 540,
+   "w": 220,
+   "h": 150,
    "kind": "tum_h",
    "title": "Brain tumour",
    "lines": [
@@ -322,10 +358,10 @@
   },
   {
    "id": "iih_head_0_0",
-   "x": 837,
-   "y": 404,
-   "w": 186,
-   "h": 186,
+   "x": 973,
+   "y": 540,
+   "w": 220,
+   "h": 150,
    "kind": "iih_h",
    "title": "Idiopathic intracranial hypertension",
    "lines": [
@@ -334,10 +370,10 @@
   },
   {
    "id": "mig_head_0_0",
-   "x": 1063,
-   "y": 404,
-   "w": 186,
-   "h": 186,
+   "x": 1233,
+   "y": 540,
+   "w": 220,
+   "h": 150,
    "kind": "mig_h",
    "title": "Migraine",
    "lines": [
@@ -348,10 +384,10 @@
   },
   {
    "id": "tth_head_0_0",
-   "x": 1261,
-   "y": 404,
-   "w": 186,
-   "h": 186,
+   "x": 1465,
+   "y": 540,
+   "w": 220,
+   "h": 150,
    "kind": "tth_h",
    "title": "Tension-type",
    "lines": [
@@ -360,10 +396,10 @@
   },
   {
    "id": "clu_head_0_0",
-   "x": 1459,
-   "y": 404,
-   "w": 186,
-   "h": 186,
+   "x": 1697,
+   "y": 540,
+   "w": 220,
+   "h": 150,
    "kind": "clu_h",
    "title": "Cluster",
    "lines": [
@@ -374,9 +410,9 @@
   {
    "id": "sah_clue_0_0",
    "x": 45,
-   "y": 630,
-   "w": 186,
-   "h": 242,
+   "y": 730,
+   "w": 220,
+   "h": 224,
    "kind": "sah_t",
    "title": "THUNDERCLAP",
    "lines": [
@@ -387,10 +423,10 @@
   },
   {
    "id": "men_clue_0_0",
-   "x": 243,
-   "y": 630,
-   "w": 186,
-   "h": 242,
+   "x": 277,
+   "y": 730,
+   "w": 220,
+   "h": 224,
    "kind": "men_t",
    "title": "Fever + stiff neck",
    "lines": [
@@ -403,10 +439,10 @@
   },
   {
    "id": "gca_clue_0_0",
-   "x": 441,
-   "y": 630,
-   "w": 186,
-   "h": 242,
+   "x": 509,
+   "y": 730,
+   "w": 220,
+   "h": 224,
    "kind": "gca_t",
    "title": "NEW temporal headache",
    "lines": [
@@ -418,10 +454,10 @@
   },
   {
    "id": "tum_clue_0_0",
-   "x": 639,
-   "y": 630,
-   "w": 186,
-   "h": 242,
+   "x": 741,
+   "y": 730,
+   "w": 220,
+   "h": 224,
    "kind": "tum_t",
    "title": "PROGRESSIVE, worse on waking",
    "lines": [
@@ -432,10 +468,10 @@
   },
   {
    "id": "iih_clue_0_0",
-   "x": 837,
-   "y": 630,
-   "w": 186,
-   "h": 242,
+   "x": 973,
+   "y": 730,
+   "w": 220,
+   "h": 224,
    "kind": "iih_t",
    "title": "Worse LYING flat, coughing",
    "lines": [
@@ -447,10 +483,10 @@
   },
   {
    "id": "mig_clue_0_0",
-   "x": 1063,
-   "y": 630,
-   "w": 186,
-   "h": 242,
+   "x": 1233,
+   "y": 730,
+   "w": 220,
+   "h": 224,
    "kind": "mig_t",
    "title": "ONE side, PULSATING",
    "lines": [
@@ -463,10 +499,10 @@
   },
   {
    "id": "tth_clue_0_0",
-   "x": 1261,
-   "y": 630,
-   "w": 186,
-   "h": 242,
+   "x": 1465,
+   "y": 730,
+   "w": 220,
+   "h": 224,
    "kind": "tth_t",
    "title": "BOTH sides, PRESSING",
    "lines": [
@@ -477,10 +513,10 @@
   },
   {
    "id": "clu_clue_0_0",
-   "x": 1459,
-   "y": 630,
-   "w": 186,
-   "h": 242,
+   "x": 1697,
+   "y": 730,
+   "w": 220,
+   "h": 224,
    "kind": "clu_t",
    "title": "STRICTLY one side, at the eye",
    "lines": [
@@ -493,9 +529,9 @@
   {
    "id": "sah_inv_0_0",
    "x": 45,
-   "y": 912,
-   "w": 186,
-   "h": 188,
+   "y": 994,
+   "w": 220,
+   "h": 152,
    "kind": "sah_w",
    "title": "Urgent NON-CONTRAST CT",
    "lines": [
@@ -505,10 +541,10 @@
   },
   {
    "id": "men_inv_0_0",
-   "x": 243,
-   "y": 912,
-   "w": 186,
-   "h": 188,
+   "x": 277,
+   "y": 994,
+   "w": 220,
+   "h": 152,
    "kind": "men_w",
    "title": "Blood cultures · LP if safe",
    "lines": [
@@ -517,10 +553,10 @@
   },
   {
    "id": "gca_inv_0_0",
-   "x": 441,
-   "y": 912,
-   "w": 186,
-   "h": 188,
+   "x": 509,
+   "y": 994,
+   "w": 220,
+   "h": 152,
    "kind": "gca_w",
    "title": "ESR + CRP",
    "lines": [
@@ -530,10 +566,10 @@
   },
   {
    "id": "tum_inv_0_0",
-   "x": 639,
-   "y": 912,
-   "w": 186,
-   "h": 188,
+   "x": 741,
+   "y": 994,
+   "w": 220,
+   "h": 152,
    "kind": "tum_w",
    "title": "Urgent MRI with contrast",
    "lines": [
@@ -543,10 +579,10 @@
   },
   {
    "id": "iih_inv_0_0",
-   "x": 837,
-   "y": 912,
-   "w": 186,
-   "h": 188,
+   "x": 973,
+   "y": 994,
+   "w": 220,
+   "h": 152,
    "kind": "iih_w",
    "title": "MRI + MR venogram FIRST",
    "lines": [
@@ -557,10 +593,10 @@
   },
   {
    "id": "mig_inv_0_0",
-   "x": 1063,
-   "y": 912,
-   "w": 186,
-   "h": 188,
+   "x": 1233,
+   "y": 994,
+   "w": 220,
+   "h": 152,
    "kind": "mig_w",
    "title": "5-4-3-2-1",
    "lines": [
@@ -569,10 +605,10 @@
   },
   {
    "id": "tth_inv_0_0",
-   "x": 1261,
-   "y": 912,
-   "w": 186,
-   "h": 188,
+   "x": 1465,
+   "y": 994,
+   "w": 220,
+   "h": 152,
    "kind": "tth_w",
    "title": "NO nausea or vomiting",
    "lines": [
@@ -581,10 +617,10 @@
   },
   {
    "id": "clu_inv_0_0",
-   "x": 1459,
-   "y": 912,
-   "w": 186,
-   "h": 188,
+   "x": 1697,
+   "y": 994,
+   "w": 220,
+   "h": 152,
    "kind": "clu_w",
    "title": "A trigeminal autonomic cephalalgia",
    "lines": [
@@ -594,9 +630,9 @@
   {
    "id": "sah_tx_0_0",
    "x": 45,
-   "y": 1140,
-   "w": 186,
-   "h": 450,
+   "y": 1186,
+   "w": 220,
+   "h": 852,
    "kind": "bad",
    "title": "Secure the aneurysm",
    "lines": [
@@ -606,10 +642,10 @@
   },
   {
    "id": "men_tx_0_0",
-   "x": 243,
-   "y": 1140,
-   "w": 186,
-   "h": 450,
+   "x": 277,
+   "y": 1186,
+   "w": 220,
+   "h": 852,
    "kind": "bad",
    "title": "IV antibiotics NOW",
    "lines": [
@@ -621,10 +657,10 @@
   },
   {
    "id": "gca_tx_0_0",
-   "x": 441,
-   "y": 1140,
-   "w": 186,
-   "h": 450,
+   "x": 509,
+   "y": 1186,
+   "w": 220,
+   "h": 852,
    "kind": "bad",
    "title": "HIGH-DOSE steroids TODAY",
    "lines": [
@@ -633,10 +669,10 @@
   },
   {
    "id": "tum_tx_0_0",
-   "x": 639,
-   "y": 1140,
-   "w": 186,
-   "h": 450,
+   "x": 741,
+   "y": 1186,
+   "w": 220,
+   "h": 852,
    "kind": "warn",
    "title": "Usual remedies fail",
    "lines": [
@@ -645,10 +681,10 @@
   },
   {
    "id": "iih_tx_0_0",
-   "x": 837,
-   "y": 1140,
-   "w": 186,
-   "h": 450,
+   "x": 973,
+   "y": 1186,
+   "w": 220,
+   "h": 852,
    "kind": "ok",
    "title": "Weight loss + acetazolamide",
    "lines": [
@@ -658,24 +694,77 @@
   },
   {
    "id": "mig_tx_0_0",
-   "x": 1063,
-   "y": 1140,
-   "w": 186,
-   "h": 132,
+   "x": 1233,
+   "y": 1186,
+   "w": 220,
+   "h": 78,
    "kind": "ok",
    "title": "ACUTE: treat EARLY",
    "lines": [
     "• NSAID ± triptan ± antiemetic",
-    "• no triptan with coronary or cerebrovascular disease",
     "• under 2-3 days a week"
    ]
   },
   {
    "id": "mig_tx_1_0",
-   "x": 1063,
-   "y": 1294,
-   "w": 186,
-   "h": 296,
+   "x": 1233,
+   "y": 1286,
+   "w": 220,
+   "h": 98,
+   "kind": "ok",
+   "title": "TRIPTAN: 5-HT1B/1D agonist",
+   "lines": [
+    "• at onset, repeat in 2-24 h",
+    "• chest, jaw tightness, flushing"
+   ]
+  },
+  {
+   "id": "mig_tx_2_0",
+   "x": 1233,
+   "y": 1406,
+   "w": 220,
+   "h": 114,
+   "kind": "bad",
+   "title": "NO triptan",
+   "lines": [
+    "• coronary or cerebrovascular disease",
+    "• uncontrolled BP, Raynaud's",
+    "• peripheral vascular disease"
+   ]
+  },
+  {
+   "id": "mig_tx_3_0",
+   "x": 1233,
+   "y": 1542,
+   "w": 220,
+   "h": 78,
+   "kind": "bad",
+   "title": "NO NSAID",
+   "lines": [
+    "• GI bleed, ulcer, bleeding risk",
+    "• renal impairment, pregnancy"
+   ]
+  },
+  {
+   "id": "mig_tx_4_0",
+   "x": 1233,
+   "y": 1642,
+   "w": 220,
+   "h": 114,
+   "kind": "ok",
+   "title": "Antiemetic",
+   "lines": [
+    "• metoclopramide, prochlorperazine",
+    "• promethazine",
+    "• ondansetron, antihistamines"
+   ]
+  },
+  {
+   "id": "mig_tx_5_0",
+   "x": 1233,
+   "y": 1778,
+   "w": 220,
+   "h": 260,
    "kind": "warn",
    "title": "PREVENT if over 4 a month or disabling",
    "lines": [
@@ -689,10 +778,10 @@
   },
   {
    "id": "tth_tx_0_0",
-   "x": 1261,
-   "y": 1140,
-   "w": 186,
-   "h": 214,
+   "x": 1465,
+   "y": 1186,
+   "w": 220,
+   "h": 415,
    "kind": "ok",
    "title": "ACUTE",
    "lines": [
@@ -701,10 +790,10 @@
   },
   {
    "id": "tth_tx_1_0",
-   "x": 1261,
-   "y": 1376,
-   "w": 186,
-   "h": 214,
+   "x": 1465,
+   "y": 1623,
+   "w": 220,
+   "h": 415,
    "kind": "warn",
    "title": "PREVENT",
    "lines": [
@@ -713,10 +802,10 @@
   },
   {
    "id": "clu_tx_0_0",
-   "x": 1459,
-   "y": 1140,
-   "w": 186,
-   "h": 196,
+   "x": 1697,
+   "y": 1186,
+   "w": 220,
+   "h": 406,
    "kind": "ok",
    "title": "ACUTE",
    "lines": [
@@ -726,10 +815,10 @@
   },
   {
    "id": "clu_tx_1_0",
-   "x": 1459,
-   "y": 1358,
-   "w": 186,
-   "h": 232,
+   "x": 1697,
+   "y": 1614,
+   "w": 220,
+   "h": 424,
    "kind": "warn",
    "title": "PREVENT",
    "lines": [
@@ -743,16 +832,40 @@
   {
    "from": "root",
    "to": "g_sec",
-   "path": "M845.0 178V203H534.0V228"
+   "path": "M981.0 178V203H619.0V228"
   },
   {
    "from": "root",
    "to": "g_pri",
-   "path": "M845.0 178V203H1354.0V228"
+   "path": "M981.0 178V203H1575.0V228"
+  },
+  {
+   "from": "g_sec",
+   "to": "p_sec"
+  },
+  {
+   "from": "g_pri",
+   "to": "p_pri"
   },
   {
    "from": "mig_tx_0_0",
    "to": "mig_tx_1_0"
+  },
+  {
+   "from": "mig_tx_1_0",
+   "to": "mig_tx_2_0"
+  },
+  {
+   "from": "mig_tx_2_0",
+   "to": "mig_tx_3_0"
+  },
+  {
+   "from": "mig_tx_3_0",
+   "to": "mig_tx_4_0"
+  },
+  {
+   "from": "mig_tx_4_0",
+   "to": "mig_tx_5_0"
   },
   {
    "from": "tth_tx_0_0",
@@ -775,9 +888,9 @@
    "to": "sah_tx_0_0"
   },
   {
-   "from": "g_sec",
+   "from": "p_sec",
    "to": "sah_head_0_0",
-   "from_dx": -396
+   "from_dx": -464
   },
   {
    "from": "men_head_0_0",
@@ -792,9 +905,9 @@
    "to": "men_tx_0_0"
   },
   {
-   "from": "g_sec",
+   "from": "p_sec",
    "to": "men_head_0_0",
-   "from_dx": -198
+   "from_dx": -232
   },
   {
    "from": "gca_head_0_0",
@@ -809,7 +922,7 @@
    "to": "gca_tx_0_0"
   },
   {
-   "from": "g_sec",
+   "from": "p_sec",
    "to": "gca_head_0_0",
    "from_dx": 0
   },
@@ -826,9 +939,9 @@
    "to": "tum_tx_0_0"
   },
   {
-   "from": "g_sec",
+   "from": "p_sec",
    "to": "tum_head_0_0",
-   "from_dx": 198
+   "from_dx": 232
   },
   {
    "from": "iih_head_0_0",
@@ -843,9 +956,9 @@
    "to": "iih_tx_0_0"
   },
   {
-   "from": "g_sec",
+   "from": "p_sec",
    "to": "iih_head_0_0",
-   "from_dx": 396
+   "from_dx": 464
   },
   {
    "from": "mig_head_0_0",
@@ -860,9 +973,9 @@
    "to": "mig_tx_0_0"
   },
   {
-   "from": "g_pri",
+   "from": "p_pri",
    "to": "mig_head_0_0",
-   "from_dx": -198
+   "from_dx": -232
   },
   {
    "from": "tth_head_0_0",
@@ -877,7 +990,7 @@
    "to": "tth_tx_0_0"
   },
   {
-   "from": "g_pri",
+   "from": "p_pri",
    "to": "tth_head_0_0",
    "from_dx": 0
   },
@@ -894,49 +1007,10 @@
    "to": "clu_tx_0_0"
   },
   {
-   "from": "g_pri",
+   "from": "p_pri",
    "to": "clu_head_0_0",
-   "from_dx": 198
+   "from_dx": 232
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1624,
-   "w": 524,
-   "title": "Secondary causes to exclude",
-   "items": [
-    "vascular: stroke, ICH, SAH, venous thrombosis, PRES, RCVS, dissection, vasculitis",
-    "inflammatory: giant cell arteritis, idiopathic intracranial hypertension",
-    "trauma: after dural puncture, concussion · drugs: medication overuse",
-    "tumour: meningioma, schwannoma, pituitary apoplexy, choriocarcinoma",
-    "infection: meningitis, encephalitis, systemic"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 583,
-   "y": 1624,
-   "w": 524,
-   "title": "Migraine: acute drugs",
-   "items": [
-    "TRIPTAN: 5-HT1B/1D agonist · at onset, repeat in 2-24 h · chest, jaw tightness, flushing",
-    "NO triptan: coronary or cerebrovascular disease, uncontrolled BP, Raynaud's, peripheral vascular disease",
-    "NO NSAID: GI bleed, ulcer, bleeding risk, renal impairment, pregnancy",
-    "antiemetic: metoclopramide, prochlorperazine, promethazine · ondansetron, antihistamines"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 1121,
-   "y": 1624,
-   "w": 524,
-   "title": "Medication overuse headache",
-   "items": [
-    "15+ headache days a month in a primary headache",
-    "usually resolves once stopped · frequent acute use → start PREVENTION"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

@@ -1,53 +1,18 @@
 {
  "name": "neuropathic pain overview",
- "title": "Neuropathic pain has a neurological cause and is recognized by its descriptors; after the cause is evaluated, one agent is chosen by the co-existing problem (amitriptyline for poor sleep or low cost, duloxetine for depression, carbamazepine for trigeminal neuralgia, gabapentinoids, topicals) with narcotics only as a last resort, and titrated by trial and error",
+ "title": "Neuropathic pain has a neurological cause and is recognized by its descriptors; after the cause is evaluated, one agent is chosen by the co-existing problem (amitriptyline for poor sleep or low cost, duloxetine for depression, carbamazepine for trigeminal neuralgia, gabapentinoids, topicals) with narcotics only as a last resort, and titrated by trial and error, early to avoid central sensitization; complex regional pain syndrome, pain beyond an injury, needs multidisciplinary pain management",
  "col_w": 214,
- "root": {"title": "NEUROPATHIC pain: a neurological cause, peripheral or central",
-  "lines": ["sounds like: electrical · shooting · burning, hot or cold · pins and needles",
-            "allodynia: a non-painful touch hurts · hyperpathia: a painful stimulus hurts far too much · dysesthesia: uncomfortable sensations (burning)",
-            "peripheral causes: length-dependent (diabetic, small fibre, chemotherapy) · radiculopathy · postherpetic neuralgia · trigeminal neuralgia · nerve injury",
-            "central causes: thalamus · brainstem · spinal cord · phantom limb pain partly central",
-            "EVALUATE THE CAUSE and examine: an important neurological diagnosis? some are reversible · nociceptive pain (tissue injury: somatic or visceral) takes acetaminophen, NSAIDs, opioids instead"]},
- "groups": [
-  {"id": "g_ad", "cols": [0, 1], "title": "ANTIDEPRESSANTS", "lines": ["↑ norepinephrine and serotonin → stronger descending pain inhibition"]},
-  {"id": "g_ac", "cols": [2, 3], "title": "ANTICONVULSANTS", "lines": ["in specific situations a sodium-channel drug"]},
-  {"id": "g_ot", "cols": [4, 4], "title": "OTHERS", "lines": []}
- ],
+ "root": {"title": "NEUROPATHIC pain: a neurological cause, peripheral or central", "lines": ["sounds like: electrical · shooting · burning, hot or cold · pins and needles", "allodynia: a non-painful touch hurts · hyperpathia: a painful stimulus hurts far too much · dysesthesia: uncomfortable sensations (burning)", "peripheral causes: length-dependent (diabetic, small fibre, chemotherapy) · radiculopathy · postherpetic neuralgia · trigeminal neuralgia · nerve injury", "central causes: thalamus · brainstem · spinal cord · phantom limb pain partly central", "EVALUATE THE CAUSE and examine: an important neurological diagnosis? some are reversible · nociceptive pain (tissue injury: somatic or visceral) takes acetaminophen, NSAIDs, opioids instead"]},
+ "groups": [{"id": "g_ad", "cols": [0, 1], "title": "ANTIDEPRESSANTS", "lines": ["↑ norepinephrine and serotonin → stronger descending pain inhibition"]}, {"id": "g_ac", "cols": [2, 3], "title": "ANTICONVULSANTS", "lines": ["in specific situations a sodium-channel drug", "• why: nerve damage → sodium channels ↑, potassium ↓", "• → ectopic firing: spontaneous + paroxysmal pain"]}, {"id": "g_ot", "cols": [4, 4], "title": "OTHERS", "lines": []}, {"id": "g_crps", "cols": [5, 5], "title": "PAIN beyond the injury?", "lines": ["think of CRPS"]}],
  "sections": ["head", "clue", "tx"],
  "row_names": {"clue": "CHOOSE IT FOR", "tx": "THEN"},
  "columns": [
-  {"id": "tca", "colour": "teal",
-   "head": [[["h", "Tricyclics (TCAs)", ["amitriptyline · nortriptyline"]]]],
-   "clue": [[["ok", "Poor SLEEP or COST", ["• sleep disorder → amitriptyline", "• amitriptyline is the cheapest"]]]]},
-  {"id": "snri", "colour": "purple",
-   "head": [[["h", "SNRIs", ["duloxetine · venlafaxine"]]]],
-   "clue": [[["ok", "DEPRESSION", ["• depression → duloxetine"]]]]},
-  {"id": "gab", "colour": "orange",
-   "head": [[["h", "Gabapentinoids", ["gabapentin · pregabalin"]]]],
-   "clue": [[["ok", "No deciding issue", ["• trial one agent"]]]]},
-  {"id": "carb", "colour": "blue",
-   "head": [[["h", "Sodium-channel anticonvulsant", ["carbamazepine"]]]],
-   "clue": [[["ok", "A classic SYNDROME", ["• TRIGEMINAL NEURALGIA → carbamazepine"]]]]},
-  {"id": "oth", "colour": "slate",
-   "head": [[["h", "Topicals · cannabinoids", ["capsaicin · lidocaine gel or patch"]]]],
-   "clue": [[["bad", "NARCOTICS", ["ONLY as a last resort"]]]]}
+  {"id": "tca", "colour": "teal", "head": [[["h", "Tricyclics (TCAs)", ["amitriptyline · nortriptyline"]]]], "clue": [[["ok", "Poor SLEEP or COST", ["• sleep disorder → amitriptyline", "• amitriptyline is the cheapest"]]]]},
+  {"id": "snri", "colour": "purple", "head": [[["h", "SNRIs", ["duloxetine · venlafaxine"]]]], "clue": [[["ok", "DEPRESSION", ["• depression → duloxetine"]]]]},
+  {"id": "gab", "colour": "orange", "head": [[["h", "Gabapentinoids", ["gabapentin · pregabalin"]]]], "clue": [[["ok", "No deciding issue", ["• trial one agent"]]]]},
+  {"id": "carb", "colour": "blue", "head": [[["h", "Sodium-channel anticonvulsant", ["carbamazepine"]]]], "clue": [[["ok", "A classic SYNDROME", ["• TRIGEMINAL NEURALGIA → carbamazepine"]]]]},
+  {"id": "oth", "colour": "slate", "head": [[["h", "Topicals · cannabinoids", ["capsaicin · lidocaine gel or patch"]]]], "clue": [[["bad", "NARCOTICS", ["ONLY as a last resort"]]]]},
+  {"id": "crps", "colour": "magenta", "head": [[["h", "Complex regional pain syndrome (CRPS)", ["after a focal tissue or nerve injury", "uncommon · inflammatory + autonomic"]]]], "clue": [[["t", "GREATER than the injury", ["• LONGER than healing", "• limb: severe pain, allodynia", "• swelling, temperature, colour", "• skin + hair change"]]]], "tx": [[["bad", "Treatment is HARD", ["multidisciplinary pain management"]]]]}
  ],
- "spans": [
-  {"section": "tx", "cols": [0, 4], "rows": [
-   [["plain", "TRIAL AND ERROR: one agent, titrated up SLOWLY to the maximum dose", ["if no co-existing issue or cost decides"]]],
-   [["warn", "Side effects before an effect?", ["→ change the drug"]], ["warn", "1 month at the highest dose, no effect?", ["→ change the drug"]]]
-  ]}
- ],
- "panels": [
-  {"title": "Complex regional pain syndrome (CRPS)", "items": [
-   "after a focal tissue or nerve injury · uncommon · inflammatory + autonomic",
-   "pain GREATER than the injury, LONGER than healing",
-   "limb: severe pain, allodynia, swelling, temperature, colour, skin + hair change",
-   "treatment hard: multidisciplinary pain management"]},
-  {"title": "Mechanism (nice to know)", "items": [
-   "nerve damage: sodium channels ↑, potassium ↓ → ectopic firing",
-   "spontaneous + paroxysmal pain",
-   "CENTRAL SENSITIZATION in the cord · early treatment avoids it",
-   "norepinephrine + serotonin drive descending inhibition"]}
- ]
+ "spans": [{"section": "tx", "cols": [0, 4], "rows": [[["plain", "TRIAL AND ERROR: one agent, titrated up SLOWLY to the maximum dose", ["if no co-existing issue or cost decides", "• treat EARLY: avoids CENTRAL SENSITIZATION in the cord"]]], [["warn", "Side effects before an effect?", ["→ change the drug"]], ["warn", "1 month at the highest dose, no effect?", ["→ change the drug"]]]]}]
 }

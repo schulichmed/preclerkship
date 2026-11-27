@@ -1,7 +1,7 @@
 {
  "name": "end of life decisions overview",
  "width": 1052,
- "title": "End of life: a patient who cannot decide gets a substitute decision maker in a fixed order; palliative care is reached by four routes and aims at comfort; a patient who asks for medical assistance in dying must meet every eligibility criterion, and the stream (natural death foreseeable or not) sets the safeguards; palliative pearls, MAiD in practice and conscientious objection are below",
+ "title": "End of life: a patient who cannot decide gets a substitute decision maker in a fixed order; palliative care is reached by four routes and aims at comfort; a patient who asks for medical assistance in dying must meet every eligibility criterion, and the stream (natural death foreseeable or not) sets the safeguards; a last IN PRACTICE row gives palliative pearls under palliative care, and how MAiD is delivered plus conscientious objection across both streams",
  "kinds": {
   "sdm_h": [
    "#1f6f8b",
@@ -89,7 +89,7 @@
    "x": 305,
    "y": 550,
    "w": 235,
-   "h": 1002,
+   "h": 1584,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -134,6 +134,12 @@
    "y": 1112,
    "h": 432,
    "text": "DO"
+  },
+  {
+   "x": 23,
+   "y": 1584,
+   "h": 542,
+   "text": "IN PRACTICE"
   }
  ],
  "nodes": [
@@ -423,6 +429,106 @@
    "lines": [
     "consent AGAIN at the time of MAiD"
    ]
+  },
+  {
+   "id": "pal_how_0_0",
+   "x": 310,
+   "y": 1584,
+   "w": 225,
+   "h": 96,
+   "kind": "warn",
+   "title": "UNCERTAINTY",
+   "lines": [
+    "• outcomes fall along a spectrum",
+    "• families may be angry when the patient does better"
+   ]
+  },
+  {
+   "id": "pal_how_1_0",
+   "x": 310,
+   "y": 1702,
+   "w": 225,
+   "h": 170,
+   "kind": "pal_w",
+   "title": "After stopping feeds or fluids",
+   "lines": [
+    "• TEMPORARY improvement, hours to days: reassure",
+    "• lasts days: re-evaluate",
+    "• NOT starving: organs shut down, no hunger or thirst",
+    "• sips for comfort"
+   ]
+  },
+  {
+   "id": "pal_how_2_0",
+   "x": 310,
+   "y": 1894,
+   "w": 225,
+   "h": 132,
+   "kind": "pal_w",
+   "title": "At the bedside",
+   "lines": [
+    "• turning every 4 hours = comfort + exam",
+    "• MOTTLING → call the family",
+    "• patients often die as they lived",
+    "• let family step away, rest"
+   ]
+  },
+  {
+   "id": "pal_how_3_0",
+   "x": 310,
+   "y": 2048,
+   "w": 225,
+   "h": 78,
+   "kind": "pal_w",
+   "title": "Moral distress",
+   "lines": [
+    "• 'it's not my journey'",
+    "• trust the SDM"
+   ]
+  },
+  {
+   "id": "span0_how_0_0",
+   "x": 575.0,
+   "y": 1584,
+   "w": 226.0,
+   "h": 305,
+   "kind": "ok",
+   "title": "Where",
+   "lines": [
+    "• regional coordination service",
+    "• home, long-term care or hospital",
+    "• organ donation possible (usually in hospital)"
+   ]
+  },
+  {
+   "id": "span0_how_0_1",
+   "x": 811.0,
+   "y": 1584,
+   "w": 226.0,
+   "h": 305,
+   "kind": "ok",
+   "title": "How",
+   "lines": [
+    "• IV: benzodiazepine → high-dose propofol → neuromuscular blocker",
+    "• 10 min infusion, death within 10 more",
+    "• oral lethal drug: an option, rarely used",
+    "• Ontario: reported to the CORONER"
+   ]
+  },
+  {
+   "id": "span0_how_1_0",
+   "x": 575,
+   "y": 1911,
+   "w": 462,
+   "h": 215,
+   "kind": "info",
+   "title": "Conscientious objection (CPSO)",
+   "lines": [
+    "• no physician has to provide MAiD",
+    "• respect dignity · do NOT impede access",
+    "• tell the patient directly: a personal, not clinical, reason",
+    "• never abandon · timely EFFECTIVE referral"
+   ]
   }
  ],
  "edges": [
@@ -448,6 +554,28 @@
   {
    "from": "sdm_do_0_0",
    "to": "sdm_do_1_0"
+  },
+  {
+   "from": "pal_how_0_0",
+   "to": "pal_how_1_0"
+  },
+  {
+   "from": "pal_how_1_0",
+   "to": "pal_how_2_0"
+  },
+  {
+   "from": "pal_how_2_0",
+   "to": "pal_how_3_0"
+  },
+  {
+   "from": "span0_how_0_0",
+   "to": "span0_how_1_0",
+   "to_dx": -118.0
+  },
+  {
+   "from": "span0_how_0_1",
+   "to": "span0_how_1_0",
+   "to_dx": 118.0
   },
   {
    "from": "sdm_head_0_0",
@@ -479,6 +607,10 @@
    "to": "pal_do_0_0"
   },
   {
+   "from": "pal_do_0_0",
+   "to": "pal_how_0_0"
+  },
+  {
    "from": "g_pal",
    "to": "pal_head_0_0",
    "from_dx": 0
@@ -494,6 +626,11 @@
   {
    "from": "s1_check_0_0",
    "to": "s1_do_0_0"
+  },
+  {
+   "from": "s1_do_0_0",
+   "to": "span0_how_0_0",
+   "to_dx": -0.5
   },
   {
    "from": "p_maid",
@@ -518,6 +655,11 @@
    "to": "s2_do_0_0"
   },
   {
+   "from": "s2_do_0_0",
+   "to": "span0_how_0_1",
+   "to_dx": 0.5
+  },
+  {
    "from": "p_maid",
    "to": "s2_head_0_0",
    "from_dx": 118,
@@ -528,48 +670,5 @@
    ]
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1578,
-   "w": 321,
-   "title": "Palliative pearls and myths",
-   "items": [
-    "UNCERTAINTY: outcomes fall along a spectrum · families may be angry when the patient does better",
-    "TEMPORARY improvement for hours to days after stopping feeds or fluids: reassure · re-evaluate if it lasts days",
-    "moral distress: 'it's not my journey' · trust the SDM",
-    "NOT starving: organs shut down, no hunger or thirst · sips for comfort",
-    "turning every 4 hours = comfort + exam · MOTTLING → call the family",
-    "patients often die as they lived · let family step away, rest"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 380,
-   "y": 1578,
-   "w": 321,
-   "title": "MAiD in practice",
-   "items": [
-    "regional coordination service · home, long-term care or hospital",
-    "organ donation possible (usually in hospital)",
-    "IV: benzodiazepine → high-dose propofol → neuromuscular blocker · 10 min infusion, death within 10 more",
-    "oral lethal drug: an option, rarely used",
-    "Ontario: reported to the CORONER"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 716,
-   "y": 1578,
-   "w": 321,
-   "title": "Conscientious objection (CPSO)",
-   "items": [
-    "no physician has to provide MAiD",
-    "respect dignity · do NOT impede access",
-    "tell the patient directly: a personal, not clinical, reason",
-    "never abandon · timely EFFECTIVE referral"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

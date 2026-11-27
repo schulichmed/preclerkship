@@ -1,7 +1,7 @@
 {
  "name": "seizures overview",
- "width": 1262,
- "title": "First seizure: history decides whether it was a seizure, then whether it was provoked; for an unprovoked seizure, MRI and EEG estimate the recurrence risk, which decides between discussing treatment for a single seizure and recommending it for epilepsy; drug-resistant epilepsy goes to an epilepsy centre; status epilepticus is an emergency",
+ "width": 1642,
+ "title": "First seizure: history decides whether it was a seizure, then whether it was provoked; for an unprovoked seizure, MRI and EEG estimate the recurrence risk, which decides between discussing treatment for a single seizure and recommending it for epilepsy; drug-resistant epilepsy goes to an epilepsy centre; status epilepticus is an emergency; the epilepsy column ends with seizure types by onset, causes and comorbidities",
  "kinds": {
   "ne_h": [
    "#46607a",
@@ -97,41 +97,41 @@
  "bands": [
   {
    "x": 40,
-   "y": 496,
-   "w": 224,
-   "h": 834,
+   "y": 460,
+   "w": 300,
+   "h": 666,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
-   "x": 294,
-   "y": 496,
-   "w": 224,
-   "h": 834,
+   "x": 370,
+   "y": 460,
+   "w": 300,
+   "h": 666,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
-   "x": 548,
-   "y": 496,
-   "w": 224,
-   "h": 834,
+   "x": 700,
+   "y": 460,
+   "w": 300,
+   "h": 666,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
-   "x": 774,
-   "y": 496,
-   "w": 224,
-   "h": 834,
+   "x": 1002,
+   "y": 460,
+   "w": 300,
+   "h": 1610,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
-   "x": 1028,
-   "y": 496,
-   "w": 224,
-   "h": 834,
+   "x": 1332,
+   "y": 460,
+   "w": 300,
+   "h": 666,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   }
@@ -140,26 +140,44 @@
   {
    "x": 23,
    "y": 292,
-   "h": 132,
+   "h": 96,
    "text": "WORKUP"
   },
   {
    "x": 23,
-   "y": 624,
-   "h": 204,
+   "y": 586,
+   "h": 168,
    "text": "WHAT DECIDES IT"
   },
   {
    "x": 23,
-   "y": 868,
-   "h": 454,
+   "y": 794,
+   "h": 324,
    "text": "TREATMENT"
+  },
+  {
+   "x": 23,
+   "y": 1158,
+   "h": 314,
+   "text": "SEIZURE TYPE"
+  },
+  {
+   "x": 23,
+   "y": 1512,
+   "h": 314,
+   "text": "CAUSES"
+  },
+  {
+   "x": 23,
+   "y": 1866,
+   "h": 196,
+   "text": "COMORBIDITIES"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 266,
+   "x": 456,
    "y": 10,
    "w": 760,
    "kind": "dark",
@@ -175,7 +193,7 @@
    "id": "g_ne",
    "x": 45,
    "y": 192,
-   "w": 214,
+   "w": 290,
    "h": 60,
    "kind": "plain",
    "title": "Was it a seizure?",
@@ -185,9 +203,9 @@
   },
   {
    "id": "g_prov",
-   "x": 299,
+   "x": 375,
    "y": 192,
-   "w": 214,
+   "w": 290,
    "h": 60,
    "kind": "plain",
    "title": "Was it PROVOKED?",
@@ -197,9 +215,9 @@
   },
   {
    "id": "g_unprov",
-   "x": 553,
+   "x": 705,
    "y": 192,
-   "w": 440,
+   "w": 592,
    "h": 60,
    "kind": "plain",
    "title": "UNPROVOKED: how likely is ANOTHER?",
@@ -209,9 +227,9 @@
   },
   {
    "id": "g_se",
-   "x": 1033,
+   "x": 1337,
    "y": 192,
-   "w": 214,
+   "w": 290,
    "h": 60,
    "kind": "plain",
    "title": "Still seizing?",
@@ -221,10 +239,10 @@
   },
   {
    "id": "p_unprov",
-   "x": 553,
+   "x": 705,
    "y": 292,
-   "w": 440,
-   "h": 132,
+   "w": 592,
+   "h": 96,
    "kind": "info",
    "title": "Work up to estimate the RECURRENCE RISK",
    "lines": [
@@ -236,9 +254,9 @@
   {
    "id": "ne_head_0_0",
    "x": 45,
-   "y": 504,
-   "w": 214,
-   "h": 80,
+   "y": 468,
+   "w": 290,
+   "h": 78,
    "kind": "ne_h",
    "title": "Non-epileptic event",
    "lines": [
@@ -247,10 +265,10 @@
   },
   {
    "id": "prov_head_0_0",
-   "x": 299,
-   "y": 504,
-   "w": 214,
-   "h": 80,
+   "x": 375,
+   "y": 468,
+   "w": 290,
+   "h": 78,
    "kind": "prov_h",
    "title": "Provoked seizure",
    "lines": [
@@ -259,10 +277,10 @@
   },
   {
    "id": "single_head_0_0",
-   "x": 553,
-   "y": 504,
-   "w": 214,
-   "h": 80,
+   "x": 705,
+   "y": 468,
+   "w": 290,
+   "h": 78,
    "kind": "single_h",
    "title": "Single unprovoked seizure",
    "lines": [
@@ -271,10 +289,10 @@
   },
   {
    "id": "epi_head_0_0",
-   "x": 779,
-   "y": 504,
-   "w": 214,
-   "h": 80,
+   "x": 1007,
+   "y": 468,
+   "w": 290,
+   "h": 78,
    "kind": "epi_h",
    "title": "Epilepsy",
    "lines": [
@@ -283,10 +301,10 @@
   },
   {
    "id": "se_head_0_0",
-   "x": 1033,
-   "y": 504,
-   "w": 214,
-   "h": 80,
+   "x": 1337,
+   "y": 468,
+   "w": 290,
+   "h": 78,
    "kind": "se_h",
    "title": "Status epilepticus",
    "lines": []
@@ -294,9 +312,9 @@
   {
    "id": "ne_clue_0_0",
    "x": 45,
-   "y": 624,
-   "w": 214,
-   "h": 204,
+   "y": 586,
+   "w": 290,
+   "h": 168,
    "kind": "ne_t",
    "title": "The history does not fit a seizure",
    "lines": [
@@ -305,10 +323,10 @@
   },
   {
    "id": "prov_clue_0_0",
-   "x": 299,
-   "y": 624,
-   "w": 214,
-   "h": 204,
+   "x": 375,
+   "y": 586,
+   "w": 290,
+   "h": 168,
    "kind": "prov_t",
    "title": "A trigger was present",
    "lines": [
@@ -320,10 +338,10 @@
   },
   {
    "id": "single_clue_0_0",
-   "x": 553,
-   "y": 624,
-   "w": 214,
-   "h": 204,
+   "x": 705,
+   "y": 586,
+   "w": 290,
+   "h": 168,
    "kind": "single_t",
    "title": "No lesion, no discharges",
    "lines": [
@@ -332,10 +350,10 @@
   },
   {
    "id": "epi_clue_0_0",
-   "x": 779,
-   "y": 624,
-   "w": 214,
-   "h": 204,
+   "x": 1007,
+   "y": 586,
+   "w": 290,
+   "h": 168,
    "kind": "epi_t",
    "title": "Defined by",
    "lines": [
@@ -347,10 +365,10 @@
   },
   {
    "id": "se_clue_0_0",
-   "x": 1033,
-   "y": 624,
-   "w": 214,
-   "h": 204,
+   "x": 1337,
+   "y": 586,
+   "w": 290,
+   "h": 168,
    "kind": "se_t",
    "title": "Seizure does not stop",
    "lines": []
@@ -358,9 +376,9 @@
   {
    "id": "ne_tx_0_0",
    "x": 45,
-   "y": 868,
-   "w": 214,
-   "h": 454,
+   "y": 794,
+   "w": 290,
+   "h": 324,
    "kind": "ok",
    "title": "Do NOT treat",
    "lines": [
@@ -369,10 +387,10 @@
   },
   {
    "id": "prov_tx_0_0",
-   "x": 299,
-   "y": 868,
-   "w": 214,
-   "h": 454,
+   "x": 375,
+   "y": 794,
+   "w": 290,
+   "h": 324,
    "kind": "ok",
    "title": "Do NOT treat",
    "lines": [
@@ -381,10 +399,10 @@
   },
   {
    "id": "single_tx_0_0",
-   "x": 553,
-   "y": 868,
-   "w": 214,
-   "h": 454,
+   "x": 705,
+   "y": 794,
+   "w": 290,
+   "h": 324,
    "kind": "warn",
    "title": "DISCUSS options with the patient",
    "lines": [
@@ -393,10 +411,10 @@
   },
   {
    "id": "epi_tx_0_0",
-   "x": 779,
-   "y": 868,
-   "w": 214,
-   "h": 224,
+   "x": 1007,
+   "y": 794,
+   "w": 290,
+   "h": 150,
    "kind": "ok",
    "title": "RECOMMEND an antiseizure drug",
    "lines": [
@@ -407,10 +425,10 @@
   },
   {
    "id": "epi_tx_1_0",
-   "x": 779,
-   "y": 1114,
-   "w": 214,
-   "h": 208,
+   "x": 1007,
+   "y": 966,
+   "w": 290,
+   "h": 152,
    "kind": "bad",
    "title": "2 tolerated, appropriate drugs FAILED = drug-resistant",
    "lines": [
@@ -420,35 +438,189 @@
   },
   {
    "id": "se_tx_0_0",
-   "x": 1033,
-   "y": 868,
-   "w": 214,
-   "h": 454,
+   "x": 1337,
+   "y": 794,
+   "w": 290,
+   "h": 324,
    "kind": "bad",
    "title": "Treat as a NEUROLOGIC EMERGENCY",
    "lines": []
+  },
+  {
+   "id": "epi_type_0_0",
+   "x": 1007,
+   "y": 1158,
+   "w": 290,
+   "h": 60,
+   "kind": "epi_w",
+   "title": "Classify by ONSET",
+   "lines": [
+    "~ ILAE 2017"
+   ]
+  },
+  {
+   "id": "epi_type_1_0",
+   "x": 1007.0,
+   "y": 1240,
+   "w": 140.0,
+   "h": 150,
+   "kind": "epi_w",
+   "title": "FOCAL",
+   "lines": [
+    "• aware or impaired awareness",
+    "• motor or non-motor",
+    "• focal → bilateral tonic-clonic"
+   ]
+  },
+  {
+   "id": "epi_type_1_1",
+   "x": 1157.0,
+   "y": 1240,
+   "w": 140.0,
+   "h": 150,
+   "kind": "epi_w",
+   "title": "GENERALIZED",
+   "lines": [
+    "• motor: tonic-clonic, myoclonic",
+    "• non-motor = ABSENCE",
+    "• 3-Hz spike-and-wave"
+   ]
+  },
+  {
+   "id": "epi_type_2_0",
+   "x": 1007,
+   "y": 1412,
+   "w": 290,
+   "h": 60,
+   "kind": "epi_w",
+   "title": "UNKNOWN onset",
+   "lines": [
+    "not seen (e.g. found already seizing)"
+   ]
+  },
+  {
+   "id": "epi_cause_0_0",
+   "x": 1007.0,
+   "y": 1512,
+   "w": 140.0,
+   "h": 114,
+   "kind": "epi_w",
+   "title": "STRUCTURAL",
+   "lines": [
+    "• stroke, trauma, tumour",
+    "• mesial temporal sclerosis"
+   ]
+  },
+  {
+   "id": "epi_cause_0_1",
+   "x": 1157.0,
+   "y": 1512,
+   "w": 140.0,
+   "h": 114,
+   "kind": "epi_w",
+   "title": "GENETIC",
+   "lines": [
+    "• inherited",
+    "• de novo",
+    "• polygenic"
+   ]
+  },
+  {
+   "id": "epi_cause_1_0",
+   "x": 1007.0,
+   "y": 1648,
+   "w": 140.0,
+   "h": 96,
+   "kind": "epi_w",
+   "title": "INFECTIOUS",
+   "lines": [
+    "• encephalitis, meningitis",
+    "• neurocysticercosis"
+   ]
+  },
+  {
+   "id": "epi_cause_1_1",
+   "x": 1157.0,
+   "y": 1648,
+   "w": 140.0,
+   "h": 96,
+   "kind": "epi_w",
+   "title": "IMMUNE",
+   "lines": [
+    "• anti-NMDA receptor, LGI-1",
+    "• Hu, Ri, Yo, GAD65"
+   ]
+  },
+  {
+   "id": "epi_cause_2_0",
+   "x": 1007.0,
+   "y": 1766,
+   "w": 140.0,
+   "h": 60,
+   "kind": "epi_w",
+   "title": "METABOLIC",
+   "lines": [
+    "inborn errors"
+   ]
+  },
+  {
+   "id": "epi_cause_2_1",
+   "x": 1157.0,
+   "y": 1766,
+   "w": 140.0,
+   "h": 60,
+   "kind": "epi_w",
+   "title": "UNKNOWN",
+   "lines": []
+  },
+  {
+   "id": "epi_comorb_0_0",
+   "x": 1007,
+   "y": 1866,
+   "w": 290,
+   "h": 114,
+   "kind": "warn",
+   "title": "Comorbidities",
+   "lines": [
+    "• non-epileptic seizures",
+    "• depression, anxiety, ADHD",
+    "• migraine",
+    "• cognitive impairment"
+   ]
+  },
+  {
+   "id": "epi_comorb_1_0",
+   "x": 1007,
+   "y": 2002,
+   "w": 290,
+   "h": 60,
+   "kind": "bad",
+   "title": "Mortality: SUDEP",
+   "lines": [
+    "sudden unexpected death in epilepsy"
+   ]
   }
  ],
  "edges": [
   {
    "from": "root",
    "to": "g_ne",
-   "path": "M646.0 142V167H152.0V192"
+   "path": "M836.0 142V167H190.0V192"
   },
   {
    "from": "root",
    "to": "g_prov",
-   "path": "M646.0 142V167H406.0V192"
+   "path": "M836.0 142V167H520.0V192"
   },
   {
    "from": "root",
    "to": "g_unprov",
-   "path": "M646.0 142V167H773.0V192"
+   "path": "M836.0 142V167H1001.0V192"
   },
   {
    "from": "root",
    "to": "g_se",
-   "path": "M646.0 142V167H1140.0V192"
+   "path": "M836.0 142V167H1482.0V192"
   },
   {
    "from": "g_unprov",
@@ -457,6 +629,46 @@
   {
    "from": "epi_tx_0_0",
    "to": "epi_tx_1_0"
+  },
+  {
+   "from": "epi_type_0_0",
+   "to": "epi_type_1_0",
+   "from_dx": -75.0
+  },
+  {
+   "from": "epi_type_0_0",
+   "to": "epi_type_1_1",
+   "from_dx": 75.0
+  },
+  {
+   "from": "epi_type_1_0",
+   "to": "epi_type_2_0",
+   "to_dx": -75.0
+  },
+  {
+   "from": "epi_type_1_1",
+   "to": "epi_type_2_0",
+   "to_dx": 75.0
+  },
+  {
+   "from": "epi_cause_0_0",
+   "to": "epi_cause_1_0"
+  },
+  {
+   "from": "epi_cause_0_1",
+   "to": "epi_cause_1_1"
+  },
+  {
+   "from": "epi_cause_1_0",
+   "to": "epi_cause_2_0"
+  },
+  {
+   "from": "epi_cause_1_1",
+   "to": "epi_cause_2_1"
+  },
+  {
+   "from": "epi_comorb_0_0",
+   "to": "epi_comorb_1_0"
   },
   {
    "from": "ne_head_0_0",
@@ -495,11 +707,11 @@
   {
    "from": "p_unprov",
    "to": "single_head_0_0",
-   "from_dx": -113,
+   "from_dx": -151,
    "label": "normal MRI + EEG",
    "label_at": [
-    660.0,
-    464
+    850.0,
+    428
    ]
   },
   {
@@ -511,13 +723,37 @@
    "to": "epi_tx_0_0"
   },
   {
+   "from": "epi_tx_1_0",
+   "to": "epi_type_0_0"
+  },
+  {
+   "from": "epi_type_2_0",
+   "to": "epi_cause_0_0",
+   "from_dx": -75.0
+  },
+  {
+   "from": "epi_type_2_0",
+   "to": "epi_cause_0_1",
+   "from_dx": 75.0
+  },
+  {
+   "from": "epi_cause_2_0",
+   "to": "epi_comorb_0_0",
+   "to_dx": -75.0
+  },
+  {
+   "from": "epi_cause_2_1",
+   "to": "epi_comorb_0_0",
+   "to_dx": 75.0
+  },
+  {
    "from": "p_unprov",
    "to": "epi_head_0_0",
-   "from_dx": 113,
+   "from_dx": 151,
    "label": "lesion or discharges",
    "label_at": [
-    886.0,
-    464
+    1152.0,
+    428
    ]
   },
   {
@@ -534,44 +770,5 @@
    "from_dx": 0
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1356,
-   "w": 391,
-   "title": "Classify by ONSET (ILAE 2017)",
-   "items": [
-    "FOCAL: aware or impaired awareness · motor or non-motor · can go focal to bilateral tonic-clonic",
-    "GENERALIZED: motor (tonic-clonic, myoclonic) · non-motor = ABSENCE (3-Hz spike-and-wave)",
-    "UNKNOWN onset: not seen (e.g. found already seizing)"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 450,
-   "y": 1356,
-   "w": 391,
-   "title": "Epilepsy causes",
-   "items": [
-    "STRUCTURAL: stroke, trauma, tumour, mesial temporal sclerosis",
-    "GENETIC: inherited, de novo, polygenic",
-    "INFECTIOUS: encephalitis, meningitis, neurocysticercosis",
-    "METABOLIC: inborn errors · IMMUNE: anti-NMDA receptor, LGI-1, Hu, Ri, Yo, GAD65 · UNKNOWN"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 856,
-   "y": 1356,
-   "w": 391,
-   "title": "Epilepsy comorbidities",
-   "items": [
-    "non-epileptic seizures",
-    "depression, anxiety, ADHD · migraine",
-    "cognitive impairment",
-    "mortality: SUDEP (sudden unexpected death in epilepsy)"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

@@ -1,69 +1,19 @@
 {
  "name": "altered level of consciousness overview",
- "title": "Altered level of consciousness: treat the reversible causes first, then the exam (brainstem reflexes, breathing, motor response, eye opening and signs of awareness) places the patient as brain death, coma, vegetative state, minimally conscious state minus or plus, or a locked-in coma mimic",
+ "title": "Altered level of consciousness: treat the reversible causes first, then the exam (brainstem reflexes, each with its in and out pathway, breathing, motor response, eye opening and signs of awareness, scored in coma by the GCS or FOUR score) places the patient as brain death, coma, vegetative state, minimally conscious state minus or plus, or a locked-in coma mimic",
  "col_w": 200,
- "root": {
-  "title": "Not responding: FIRST look for the TREATABLE causes",
-  "lines": [
-   "shock or low blood pressure · low glucose · diabetic ketoacidosis · hypertensive encephalopathy · drug intoxication",
-   "bacterial or fungal meningitis · herpes simplex encephalitis · brain abscess · epidural or subdural hematoma",
-   "also consider: syncope · seizure, post-ictal state · encephalopathy, delirium",
-   "then EXAMINE: is the patient AWAKE (alertness = VOLUME) and AWARE (awareness = TUNING, the cortex)?",
-   "alertness: ascending reticular activating system, upper pons + midbrain → thalamus, hypothalamus → cortex"
-  ]
- },
- "groups": [
-  {"id": "g_none", "cols": [0, 2], "title": "NOT aware", "lines": ["brainstem reflexes and eye opening decide"]},
-  {"id": "g_some", "cols": [3, 4], "title": "SOME awareness: minimally conscious", "lines": ["does the patient FOLLOW COMMANDS?"]},
-  {"id": "g_mimic", "cols": [5, 5], "title": "FULLY aware, cannot show it", "lines": ["a COMA MIMIC"]}
- ],
+ "root": {"title": "Not responding: FIRST look for the TREATABLE causes", "lines": ["shock or low blood pressure · low glucose · diabetic ketoacidosis · hypertensive encephalopathy · drug intoxication", "bacterial or fungal meningitis · herpes simplex encephalitis · brain abscess · epidural or subdural hematoma", "also consider: syncope · seizure, post-ictal state · encephalopathy, delirium", "then EXAMINE: is the patient AWAKE (alertness = VOLUME) and AWARE (awareness = TUNING, the cortex)?", "alertness: ascending reticular activating system, upper pons + midbrain → thalamus, hypothalamus → cortex"]},
+ "groups": [{"id": "g_none", "cols": [0, 2], "title": "NOT aware", "lines": ["brainstem reflexes and eye opening decide"]}, {"id": "g_some", "cols": [3, 4], "title": "SOME awareness: minimally conscious", "lines": ["does the patient FOLLOW COMMANDS?"]}, {"id": "g_mimic", "cols": [5, 5], "title": "FULLY aware, cannot show it", "lines": ["a COMA MIMIC"]}],
+ "pres": [{"id": "p_bs", "group": "g_none", "title": "Brainstem reflexes: in → out", "lines": ["• pupil: II → III (Edinger-Westphal) · blown pupil = uncal herniation", "• Horner: ptosis, miosis ± anhidrosis · 3-neuron sympathetic path", "• doll's eyes (no C-spine concern) + calorics: VIII → III, IV, VI", "• calorics in COMA: only SLOW deviation toward cold · COWS is the awake fast phase", "• corneal: V → VII · gag: IX → X · cough: often the LAST lost"]}],
  "sections": ["head", "awake", "exam", "eeg"],
- "row_names": {"awake": "AWAKE? AWARE?", "exam": "EXAM SHOWS", "eeg": "EEG · OUTLOOK"},
+ "row_names": {"awake": "AWAKE? AWARE?", "exam": "EXAM SHOWS", "eeg": "EEG · OUTLOOK", "pres": "BRAINSTEM REFLEXES"},
  "dashed_sections": ["exam"],
  "columns": [
-  {"id": "bd", "colour": "slate", "drop_label": "no reflexes",
-   "head": [[["h", "Brain death", ["Canadian criteria: ALL of"]]]],
-   "awake": [[["t", "Not awake, not aware", ["• known cause that can cause it", "• NO reversible mimic or confounder"]]]],
-   "exam": [[["w", "Nothing above the cord", ["• deep coma, no motor response (spinal reflexes allowed)", "• NO pupil (mid-size or larger), corneal, vestibulo-ocular, gag, cough", "• APNEA test: no breathing effort"]]]],
-   "eeg": [[["bad", "Electrocerebral silence", ["legally dead"]]]]},
-  {"id": "coma", "colour": "blue", "drop_label": "eyes closed",
-   "head": [[["h", "Coma", ["both hemispheres, both thalami, or brainstem above the mid-pons"]]]],
-   "awake": [[["t", "Not awake, not aware", ["• NO eye opening", "• NO sleep-wake cycles", "• cortex: metabolic, toxic, hypoxic-ischemic, trauma", "• thalami: tip-of-the-basilar stroke, bleed, tumour", "• brainstem: trauma, stroke, HERNIATION", "case: 79 y, 36 h headache, stiff neck, 39.5 °C · antibiotics · intubated within 12 h", "case: 67 y cardiac arrest, ~15 min to rhythm · day 2 extends right arm to pain"]]]],
-   "exam": [[["w", "Primitive reflexes only", ["• decorticate: arms FLEX, legs extend → above the red nucleus", "• decerebrate: all EXTEND → below the red nucleus", "• triple flexion (hip, knee, ankle): SPINAL, no brainstem needed", "• GCS ≤ 8 = severe brain injury"]]]],
-   "eeg": [[["warn", "Polymorphic delta, burst-suppression", ["prognosis variable"]]]]},
-  {"id": "vs", "colour": "teal", "drop_label": "eyes open",
-   "head": [[["h", "Vegetative state", ["aka UNRESPONSIVE WAKEFULNESS syndrome"]]]],
-   "awake": [[["t", "AWAKE, not aware", ["• eyes open, SLEEP-WAKE cycles", "• autonomic function kept"]]]],
-   "exam": [[["w", "Reflexive, never purposeful", ["• grimace, yawn, roving eyes, flexion withdrawal", "• brief, UNSUSTAINED pursuit only", "• sounds but no words, no commands", "• incontinent · cranial nerve reflexes variable", "case: 26 y, head injury, 2 years on · eyes open, yawns, sleep-wake cycles"]]]],
-   "eeg": [[["warn", "Delta, theta or silence", ["prognosis variable"]]]]},
-  {"id": "mcsm", "colour": "orange", "drop_label": "no",
-   "head": [[["h", "Minimally conscious MINUS", ["MCS-"]]]],
-   "awake": [[["t", "Awake, UNCOMMON periods of awareness", []]]],
-   "exam": [[["w", "Responds, but NO commands", ["• visual pursuit", "• localizes pain", "• smiles or cries to stimuli"]]]],
-   "eeg": [[["warn", "Non-specific slowing", ["prognosis variable"]]]]},
-  {"id": "mcsp", "colour": "purple", "drop_label": "yes",
-   "head": [[["h", "Minimally conscious PLUS", ["MCS+"]]]],
-   "awake": [[["t", "Awake, INTERMITTENT awareness", []]]],
-   "exam": [[["w", "FOLLOWS COMMANDS", ["• intelligible words", "• handles objects"]]]],
-   "eeg": [[["ok", "EMERGED when it communicates", ["functional communication + object use"]]]]},
-  {"id": "lis", "colour": "magenta", "drop_label": "can't move",
-   "head": [[["h", "Locked-in syndrome", ["NOT a disorder of consciousness"]]]],
-   "awake": [[["t", "Awake AND fully aware", ["cognition preserved"]]]],
-   "exam": [[["w", "Only UPWARD GAZE + eye opening", ["• quadriplegia, pseudobulbar palsy", "• breathing intact"]]]],
-   "eeg": [[["ok", "EEG usually normal", ["other mimics: Guillain-Barré, myasthenia, neuromuscular blockade, akinetic mutism, psychogenic"]]]]}
- ],
- "panels": [
-  {"title": "Brainstem reflexes: in → out", "items": [
-   "pupil: II → III (Edinger-Westphal) · blown pupil = uncal herniation",
-   "Horner: ptosis, miosis ± anhidrosis · 3-neuron sympathetic path",
-   "doll's eyes (no C-spine concern) + calorics: VIII → III, IV, VI",
-   "calorics in COMA: only SLOW deviation toward cold · COWS is the awake fast phase",
-   "corneal: V → VII · gag: IX → X · cough: often the LAST lost"]},
-  {"title": "Coma scales", "items": [
-   "GCS 3-15: eye 4 · verbal 5 · motor 6 · e.g. E2V3M4 = 9 · intubated E2VTM4 = 6T",
-   "GCS shortcomings: intubation, brainstem barely assessed",
-   "FOUR score: eye, motor, brainstem reflexes, respiration, 0-4 each",
-   "FOUR: NO verbal part, works when intubated",
-   "pain: central (sternum, trapezius, supraorbital, jaw) + nail bed"]}
+  {"id": "bd", "colour": "slate", "drop_label": "no reflexes", "head": [[["h", "Brain death", ["Canadian criteria: ALL of"]]]], "awake": [[["t", "Not awake, not aware", ["• known cause that can cause it", "• NO reversible mimic or confounder"]]]], "exam": [[["w", "Nothing above the cord", ["• deep coma, no motor response (spinal reflexes allowed)", "• NO pupil (mid-size or larger), corneal, vestibulo-ocular, gag, cough", "• APNEA test: no breathing effort"]]]], "eeg": [[["bad", "Electrocerebral silence", ["legally dead"]]]]},
+  {"id": "coma", "colour": "blue", "drop_label": "eyes closed", "head": [[["h", "Coma", ["both hemispheres, both thalami, or brainstem above the mid-pons"]]]], "awake": [[["t", "Not awake, not aware", ["• NO eye opening", "• NO sleep-wake cycles", "• cortex: metabolic, toxic, hypoxic-ischemic, trauma", "• thalami: tip-of-the-basilar stroke, bleed, tumour", "• brainstem: trauma, stroke, HERNIATION", "case: 79 y, 36 h headache, stiff neck, 39.5 °C · antibiotics · intubated within 12 h", "case: 67 y cardiac arrest, ~15 min to rhythm · day 2 extends right arm to pain"]]]], "exam": [[["w", "Primitive reflexes only", ["• decorticate: arms FLEX, legs extend → above the red nucleus", "• decerebrate: all EXTEND → below the red nucleus", "• triple flexion (hip, knee, ankle): SPINAL, no brainstem needed", "• GCS ≤ 8 = severe brain injury"]]], [["w", "Apply pain", ["• central: sternum, trapezius", "• central: supraorbital, jaw", "• + nail bed"]]], [["w", "GCS 3-15", ["• eye 4 · verbal 5 · motor 6", "• E2V3M4 = 9 · intubated E2VTM4 = 6T", "• shortcomings: intubation", "• brainstem barely assessed"]]], [["w", "FOUR score", ["• eye, motor, brainstem reflexes, respiration", "• 0-4 each · NO verbal part", "• works when intubated"]]]], "eeg": [[["warn", "Polymorphic delta, burst-suppression", ["prognosis variable"]]]]},
+  {"id": "vs", "colour": "teal", "drop_label": "eyes open", "head": [[["h", "Vegetative state", ["aka UNRESPONSIVE WAKEFULNESS syndrome"]]]], "awake": [[["t", "AWAKE, not aware", ["• eyes open, SLEEP-WAKE cycles", "• autonomic function kept"]]]], "exam": [[["w", "Reflexive, never purposeful", ["• grimace, yawn, roving eyes, flexion withdrawal", "• brief, UNSUSTAINED pursuit only", "• sounds but no words, no commands", "• incontinent · cranial nerve reflexes variable", "case: 26 y, head injury, 2 years on · eyes open, yawns, sleep-wake cycles"]]]], "eeg": [[["warn", "Delta, theta or silence", ["prognosis variable"]]]]},
+  {"id": "mcsm", "colour": "orange", "drop_label": "no", "head": [[["h", "Minimally conscious MINUS", ["MCS-"]]]], "awake": [[["t", "Awake, UNCOMMON periods of awareness", []]]], "exam": [[["w", "Responds, but NO commands", ["• visual pursuit", "• localizes pain", "• smiles or cries to stimuli"]]]], "eeg": [[["warn", "Non-specific slowing", ["prognosis variable"]]]]},
+  {"id": "mcsp", "colour": "purple", "drop_label": "yes", "head": [[["h", "Minimally conscious PLUS", ["MCS+"]]]], "awake": [[["t", "Awake, INTERMITTENT awareness", []]]], "exam": [[["w", "FOLLOWS COMMANDS", ["• intelligible words", "• handles objects"]]]], "eeg": [[["ok", "EMERGED when it communicates", ["functional communication + object use"]]]]},
+  {"id": "lis", "colour": "magenta", "drop_label": "can't move", "head": [[["h", "Locked-in syndrome", ["NOT a disorder of consciousness"]]]], "awake": [[["t", "Awake AND fully aware", ["cognition preserved"]]]], "exam": [[["w", "Only UPWARD GAZE + eye opening", ["• quadriplegia, pseudobulbar palsy", "• breathing intact"]]]], "eeg": [[["ok", "EEG usually normal", ["other mimics: Guillain-Barré, myasthenia, neuromuscular blockade, akinetic mutism, psychogenic"]]]]}
  ]
 }

@@ -1,6 +1,6 @@
 {
  "name": "stroke overview",
- "title": "A sudden focal deficit runs the stroke protocol: glucose, NIH Stroke Scale and localization, then a non-contrast CT; no blood means an ischemic stroke (CT angiogram and perfusion, tPA within 4.5 hours, thrombectomy for a proximal large-vessel occlusion with a mismatch) or a TIA (CT, ASA, TIA clinic), both followed by secondary prevention chosen by cause; blood means an intracerebral hemorrhage (cause by site, BP under 160/110, hold antithrombotics) or a subarachnoid hemorrhage (vessel imaging, neurosurgery)",
+ "title": "A sudden focal deficit runs the stroke protocol: glucose, NIH Stroke Scale and localization, then a non-contrast CT; no blood means an ischemic stroke (CT angiogram and perfusion, tPA within 4.5 hours, thrombectomy for a proximal large-vessel occlusion with a mismatch) or a TIA (CT, ASA, TIA clinic), both followed by a workup for the cause, secondary prevention chosen by cause, and the risk factors and primary prevention; a deficit that is not a stroke may be a mimic (migraine, Todd's paresis, hypoglycemia, psychogenic); blood means an intracerebral hemorrhage (cause by site, BP under 160/110, hold antithrombotics) or a subarachnoid hemorrhage (vessel imaging, neurosurgery)",
  "col_w": 262,
  "root": {
   "title": "Sudden focal neurological deficit: STROKE PROTOCOL · TIME IS BRAIN",
@@ -24,10 +24,21 @@
    ]
   },
   {
-   "id": "g_hem",
+   "id": "g_mim",
    "cols": [
     2,
-    3
+    2
+   ],
+   "title": "NOT a stroke: a MIMIC?",
+   "lines": [
+    "acute weakness: stroke or mimic?"
+   ]
+  },
+  {
+   "id": "g_hem",
+   "cols": [
+    3,
+    4
    ],
    "title": "BLOOD: HEMORRHAGIC",
    "lines": [
@@ -201,6 +212,61 @@
    ]
   },
   {
+   "id": "mim",
+   "colour": "slate",
+   "head": [
+    [
+     [
+      "h",
+      "Stroke mimic",
+      [
+       "acute weakness, not a stroke"
+      ]
+     ]
+    ]
+   ],
+   "clue": [
+    [
+     [
+      "w",
+      "Migraine",
+      [
+       "• weakness MARCHES",
+       "• slow on and off, minutes",
+       "• young women"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Todd's paresis",
+      [
+       "• unwitnessed seizure",
+       "• improves over hours"
+      ]
+     ]
+    ],
+    [
+     [
+      "w",
+      "Hypoglycemia",
+      [
+       "• esp. old strokes"
+      ]
+     ],
+     [
+      "w",
+      "Psychogenic",
+      [
+       "• inconsistent",
+       "• better distracted"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
    "id": "ich",
    "colour": "orange",
    "head": [
@@ -363,6 +429,46 @@
     ],
     [
      [
+      "info",
+      "Find the CAUSE: artery to artery",
+      [
+       "• carotid, intracranial, aorta",
+       "• anterior → carotid imaging",
+       "• posterior → vertebrobasilar imaging",
+       "• MRA, CTA, Doppler"
+      ]
+     ],
+     [
+      "info",
+      "CARDIOEMBOLIC",
+      [
+       "• echo: TTE, TEE",
+       "• bubble study for PFO/ASD",
+       "• telemetry, Holter for atrial fibrillation"
+      ]
+     ]
+    ],
+    [
+     [
+      "info",
+      "Other causes",
+      [
+       "• lacunar (small vessel)",
+       "• dissection (vertebral, carotid)",
+       "• cryptogenic"
+      ]
+     ],
+     [
+      "info",
+      "Hypoperfusion",
+      [
+       "• WATERSHED infarcts",
+       "• laminar necrosis of the cortical ribbon"
+      ]
+     ]
+    ],
+    [
+     [
       "ok",
       "Antithrombotic",
       [
@@ -379,26 +485,47 @@
        "• ASA + clopidogrel for some high-risk patients"
       ]
      ]
+    ],
+    [
+     [
+      "warn",
+      "Modifiable risk factors",
+      [
+       "• hypertension, diabetes, cholesterol",
+       "• smoking, atrial fibrillation",
+       "• heart disease"
+      ]
+     ],
+     [
+      "warn",
+      "Also",
+      [
+       "• sedentary, obesity",
+       "• cocaine or amphetamines, postpartum",
+       "• bleeding disorders, anticoagulants"
+      ]
+     ]
+    ],
+    [
+     [
+      "plain",
+      "Fixed risk factors",
+      [
+       "• age, sex",
+       "• ethnicity, family history"
+      ]
+     ],
+     [
+      "ok",
+      "PRIMARY prevention",
+      [
+       "• treat the risk factors",
+       "• low-dose ASA if several",
+       "• atrial fibrillation + high CHADS2 → anticoagulate"
+      ]
+     ]
     ]
    ]
   }
- ],
- "panels": [
-  {"title": "Ischemic causes → directed workup", "items": [
-   "artery to artery: carotid, intracranial, aorta → carotid imaging (anterior) or vertebrobasilar (posterior): MRA, CTA, Doppler",
-   "CARDIOEMBOLIC → echo (TTE, TEE, bubble study for PFO/ASD) · telemetry, Holter for atrial fibrillation",
-   "lacunar (small vessel) · dissection (vertebral, carotid) · cryptogenic",
-   "hypoperfusion → WATERSHED infarcts · laminar necrosis of the cortical ribbon"]},
-  {"title": "Acute weakness: stroke or mimic?", "items": [
-   "ischemic stroke: FOLLOWS a vascular territory",
-   "hemorrhage: may not follow one · more often headache",
-   "migraine: weakness MARCHES, slow on and off, minutes · young women",
-   "Todd's paresis: unwitnessed seizure · improves over hours",
-   "hypoglycemia (esp. old strokes) · psychogenic: inconsistent, better distracted"]},
-  {"title": "Risk factors + primary prevention", "items": [
-   "modifiable: hypertension, diabetes, cholesterol, smoking, atrial fibrillation, heart disease",
-   "sedentary, obesity, cocaine or amphetamines, postpartum, bleeding disorders, anticoagulants",
-   "fixed: age, sex, ethnicity, family history",
-   "primary: treat risk factors · low-dose ASA if several · atrial fibrillation + high CHADS2 → anticoagulate"]}
  ]
 }

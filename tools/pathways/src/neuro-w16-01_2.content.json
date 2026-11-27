@@ -1,6 +1,6 @@
 {
  "name": "end of life decisions overview",
- "title": "End of life: a patient who cannot decide gets a substitute decision maker in a fixed order; palliative care is reached by four routes and aims at comfort; a patient who asks for medical assistance in dying must meet every eligibility criterion, and the stream (natural death foreseeable or not) sets the safeguards; palliative pearls, MAiD in practice and conscientious objection are below",
+ "title": "End of life: a patient who cannot decide gets a substitute decision maker in a fixed order; palliative care is reached by four routes and aims at comfort; a patient who asks for medical assistance in dying must meet every eligibility criterion, and the stream (natural death foreseeable or not) sets the safeguards; a last IN PRACTICE row gives palliative pearls under palliative care, and how MAiD is delivered plus conscientious objection across both streams",
  "col_w": 225,
  "root": {
   "title": "End of life: who decides, and what can be offered?",
@@ -24,8 +24,8 @@
    "• voluntary, free of outside pressure",
    "• informed consent: diagnosis, treatments, ways to relieve suffering including palliative care"]}
  ],
- "sections": ["head", "when", "check", "do"],
- "row_names": {"pres": "ELIGIBLE?", "when": "WHEN", "check": "ASSESS", "do": "DO"},
+ "sections": ["head", "when", "check", "do", "how"],
+ "row_names": {"pres": "ELIGIBLE?", "when": "WHEN", "check": "ASSESS", "do": "DO", "how": "IN PRACTICE"},
  "columns": [
   {"id": "sdm", "colour": "teal",
    "head": [[["h", "Substitute decision maker (SDM)", ["gives or refuses consent for the patient", "hierarchy: Health Care Consent Act s. 20"]]]],
@@ -37,7 +37,11 @@
    "head": [[["h", "Palliative care", ["quality of life: physical, psychosocial, spiritual · patient AND family", "team · practical needs · bereavement"]]]],
    "when": [[["t", "Any ONE route in", ["• patient declines treatment", "• treatment futile or would cause suffering", "• hard symptoms DURING treatment", "• severe irreversible disability (e.g. major stroke)"]]]],
    "check": [[["w", "Two scales", ["• Palliative Performance Scale: disease burden, progress to end of life", "• Edmonton Symptom Assessment System: symptoms to manage"]]]],
-   "do": [[["ok", "Comfort, at home where possible", ["• control pain, breathlessness, delirium, agitation", "• stroke, disability unacceptable to them: no tube feeds or IV fluids", "• turning and symptom drugs do NOT hasten death"]]]]},
+   "do": [[["ok", "Comfort, at home where possible", ["• control pain, breathlessness, delirium, agitation", "• stroke, disability unacceptable to them: no tube feeds or IV fluids", "• turning and symptom drugs do NOT hasten death"]]]],
+   "how": [[["warn", "UNCERTAINTY", ["• outcomes fall along a spectrum", "• families may be angry when the patient does better"]]],
+           [["w", "After stopping feeds or fluids", ["• TEMPORARY improvement, hours to days: reassure", "• lasts days: re-evaluate", "• NOT starving: organs shut down, no hunger or thirst", "• sips for comfort"]]],
+           [["w", "At the bedside", ["• turning every 4 hours = comfort + exam", "• MOTTLING → call the family", "• patients often die as they lived", "• let family step away, rest"]]],
+           [["w", "Moral distress", ["• 'it's not my journey'", "• trust the SDM"]]]]},
   {"id": "s1", "colour": "orange", "drop_from": "p_maid", "drop_label": "death foreseeable",
    "head": [[["h", "Stream 1", ["natural death reasonably FORESEEABLE"]]]],
    "when": [[["t", "Written request", ["signed before an independent witness (another person may sign if the patient cannot)"]]]],
@@ -49,24 +53,10 @@
    "check": [[["w", "2 independent assessors", ["ONE has expertise in the condition and has discussed all treatment options"]]]],
    "do": [[["bad", "90-day wait · NO waiver", ["consent AGAIN at the time of MAiD"]]]]}
  ],
- "panels": [
-  {"title": "Palliative pearls and myths", "items": [
-   "UNCERTAINTY: outcomes fall along a spectrum · families may be angry when the patient does better",
-   "TEMPORARY improvement for hours to days after stopping feeds or fluids: reassure · re-evaluate if it lasts days",
-   "moral distress: 'it's not my journey' · trust the SDM",
-   "NOT starving: organs shut down, no hunger or thirst · sips for comfort",
-   "turning every 4 hours = comfort + exam · MOTTLING → call the family",
-   "patients often die as they lived · let family step away, rest"]},
-  {"title": "MAiD in practice", "items": [
-   "regional coordination service · home, long-term care or hospital",
-   "organ donation possible (usually in hospital)",
-   "IV: benzodiazepine → high-dose propofol → neuromuscular blocker · 10 min infusion, death within 10 more",
-   "oral lethal drug: an option, rarely used",
-   "Ontario: reported to the CORONER"]},
-  {"title": "Conscientious objection (CPSO)", "items": [
-   "no physician has to provide MAiD",
-   "respect dignity · do NOT impede access",
-   "tell the patient directly: a personal, not clinical, reason",
-   "never abandon · timely EFFECTIVE referral"]}
+ "spans": [
+  {"section": "how", "cols": [2, 3], "rows": [
+   [["ok", "Where", ["• regional coordination service", "• home, long-term care or hospital", "• organ donation possible (usually in hospital)"]],
+    ["ok", "How", ["• IV: benzodiazepine → high-dose propofol → neuromuscular blocker", "• 10 min infusion, death within 10 more", "• oral lethal drug: an option, rarely used", "• Ontario: reported to the CORONER"]]],
+   [["info", "Conscientious objection (CPSO)", ["• no physician has to provide MAiD", "• respect dignity · do NOT impede access", "• tell the patient directly: a personal, not clinical, reason", "• never abandon · timely EFFECTIVE referral"]]]]}
  ]
 }

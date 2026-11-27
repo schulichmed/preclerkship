@@ -1,6 +1,6 @@
 {
  "name": "neuroimaging modalities overview",
- "title": "Choosing a neuroimaging modality: different objects need different kinds of resolution (spatial, contrast, temporal); radiography, fluoroscopy and CT use X-rays, ultrasound and MRI do not, and each trades its resolution against cost, availability, invasiveness, radiation and scan length; below, what each MRI sequence (T1, T2, FLAIR, DWI, SWI) shows and the order of imaging in a suspected stroke",
+ "title": "Choosing a neuroimaging modality: different objects need different kinds of resolution (spatial, contrast, temporal); radiography, fluoroscopy and CT use X-rays, ultrasound and MRI do not, and each trades its resolution against cost, availability, invasiveness, radiation and scan length; a stroke row orders the imaging in a suspected stroke (non-contrast CT, then CT angiography and perfusion, then catheter angiography with thrombectomy, then DWI), and the MRI column ends with what each sequence (T1, T2, FLAIR, DWI, SWI) shows",
  "col_w": 176,
  "root": {
   "title": "Which modality best RESOLVES the object of interest?",
@@ -22,11 +22,13 @@
    "lines": ["sound · protons in a magnetic field"]
   }
  ],
- "sections": ["head", "res", "pro", "con"],
+ "sections": ["head", "res", "pro", "con", "stroke", "seq"],
  "row_names": {
   "res": "RESOLUTION",
   "pro": "FOR",
-  "con": "AGAINST"
+  "con": "AGAINST",
+  "stroke": "SUSPECTED STROKE",
+  "seq": "MRI SEQUENCE"
  },
  "columns": [
   {
@@ -43,7 +45,8 @@
    "head": [[["h", "Fluoroscopy", ["pulsed X-rays, real time"]]]],
    "res": [[["t", "TEMPORAL +++", ["• spatial ++", "• contrast +"]]]],
    "pro": [[["w", "Real-time video", ["• digital subtraction: only NEW things show (contrast, air)"]]]],
-   "con": [[["w", "Limited availability", ["• invasive (angiography)"]]]]
+   "con": [[["w", "Limited availability", ["• invasive (angiography)"]]]],
+   "stroke": [[["ok", "Stroke step 3", ["• catheter angiography (digital subtraction)", "• + thrombectomy to pull the clot"]]]]
   },
   {
    "id": "ct",
@@ -51,7 +54,8 @@
    "head": [[["h", "Computed tomography (CT)", []]]],
    "res": [[["t", "Spatial ++ · contrast ++", ["• temporal: none, or + with multi-phase scanning", "• contrast dye → better contrast resolution"]]]],
    "pro": [[["w", "Widespread availability", []]]],
-   "con": [[["w", "Radiation dose", ["• moderate expense"]]]]
+   "con": [[["w", "Radiation dose", ["• moderate expense"]]]],
+   "stroke": [[["ok", "Stroke steps 1 + 2", ["1 · non-contrast CT", "2 · CT angiography (CTA) + CT perfusion (CTP)"]]]]
   },
   {
    "id": "us",
@@ -64,24 +68,16 @@
   {
    "id": "mri",
    "colour": "purple",
-   "head": [[["h", "MRI", ["proton energy states · choose the sequence (panel below)"]]]],
+   "head": [[["h", "MRI", ["proton energy states", "choose the SEQUENCE"]]]],
    "res": [[["t", "CONTRAST +++", ["• spatial ++", "• temporal 0/+"]]]],
-   "pro": [[["w", "Best contrast resolution", []]]],
-   "con": [[["w", "Expensive · limited availability", ["• long scan"]]]]
+   "pro": [[["w", "Best contrast resolution", ["• advanced: MR angiography, MR perfusion", "• MR spectroscopy, functional MRI"]]]],
+   "con": [[["w", "Expensive · limited availability", ["• long scan"]]]],
+   "stroke": [[["ok", "Stroke step 4", ["DWI afterwards"]]]],
+   "seq": [[["t", "T1: 'anatomic'", ["• fluid DARK", "• structural abnormality", "• enhancement with contrast"]]],
+           [["t", "T2: 'pathologic'", ["• fluid WHITE", "• 'water is white on T2'", "• edema"]]],
+           [["t", "FLAIR", ["• fluid white EXCEPT CSF", "• inversion recovery suppresses CSF", "• edema stands out"]]],
+           [["t", "DWI / ADC map", ["• RESTRICTED water diffusion", "• a measure of cellularity", "• T2-weighted"]]],
+           [["t", "SWI", ["• BLOOD products", "• hemoglobin in its oxidation states", "• hemosiderin"]]]]
   }
- ],
- "panels": [
-  {"title": "MRI: choose the sequence", "items": [
-   "T1, 'anatomic': fluid DARK · structural abnormality · enhancement with contrast",
-   "T2, 'pathologic': fluid WHITE ('water is white on T2') · edema",
-   "FLAIR: fluid white EXCEPT CSF (inversion recovery suppresses it) · edema stands out",
-   "DWI / ADC map: RESTRICTED water diffusion · a measure of cellularity · T2-weighted",
-   "SWI: BLOOD products (hemoglobin in its oxidation states, hemosiderin)",
-   "advanced: MR angiography · MR perfusion · MR spectroscopy · functional MRI"]},
-  {"title": "Putting it to work: a suspected stroke, in order", "items": [
-   "1 · non-contrast CT",
-   "2 · CT angiography (CTA) + CT perfusion (CTP)",
-   "3 · catheter angiography (fluoroscopy, digital subtraction) + thrombectomy to pull the clot",
-   "4 · DWI afterwards"]}
  ]
 }

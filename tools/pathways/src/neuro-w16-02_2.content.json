@@ -1,6 +1,6 @@
 {
  "name": "autopsy and cause of death overview",
- "title": "After a death: any coroner indication makes it a medicolegal case under the Coroner's Act; an expected natural death is certified by the doctor, who writes the cause of death in the WHO format, and a hospital autopsy needs informed authorization from the estate trustee or next of kin in order; the steps of an autopsy and what the death certificate is for are below",
+ "title": "After a death: any coroner indication makes it a medicolegal case under the Coroner's Act; an expected natural death is certified by the doctor, who writes the cause of death in the WHO format, and a hospital autopsy needs informed authorization from the estate trustee or next of kin in order; a last row runs the steps of an autopsy across both kinds of autopsy and says what the death certificate is for",
  "col_w": 290,
  "root": {
   "title": "A patient has died: does the coroner need to know?",
@@ -13,37 +13,35 @@
   {"id": "g_yes", "cols": [0, 0], "title": "YES: coroner's case", "lines": ["sudden and unexpected, or any indication above"]},
   {"id": "g_no", "cols": [1, 2], "title": "NO: expected natural death", "lines": []}
  ],
- "sections": ["head", "who", "do"],
- "row_names": {"who": "AUTHORITY · FORMAT", "do": "KEY POINTS"},
+ "sections": ["head", "who", "do", "how"],
+ "row_names": {"who": "AUTHORITY · FORMAT", "do": "KEY POINTS", "how": "STEPS · USES"},
  "columns": [
   {"id": "ml", "colour": "slate",
    "head": [[["h", "Medicolegal autopsy", ["forensic pathologist · death investigation ± police", "most do NOT come from hospital"]]]],
    "who": [[["bad", "The CORONER'S ACT", ["the family does NOT authorize it"]]]],
    "do": [[["w", "Coroner or medical examiner", ["signs the death certificate"]]]]},
+  {"id": "hosp", "colour": "teal", "drop_label": "if wanted",
+   "head": [[["h", "Hospital autopsy", ["hospital pathologist · died in hospital, already investigated", "natural death: family request, genetics, teaching, research, quality assurance"]]]],
+   "who": [[["t", "INFORMED authorization, in this ORDER", ["1 · estate trustee", "2 · spouse and adult children", "3 · parents", "4 · siblings", "5 · any other capable next of kin", "~same duties as with a patient: consent, professionalism, confidentiality"]]],
+          [["w", "They may RESTRICT it", ["• limited internal exam", "• no organ retention (brain, heart)"]]]],
+   "do": [[["ok", "Why do it", ["• diagnosis, extent, effect of treatment", "• accuracy of clinical tests and imaging · unresolved questions", "• SUSPECTED GENETIC disease: tell living relatives", "• grief · teaching · research · the death certificate"]]]]},
   {"id": "cert", "colour": "orange", "drop_label": "always",
    "head": [[["h", "Death certificate (Form 16)", ["doctor or certain nurses sign · NOT for stillbirths", "identity · cause · MANNER · autopsy done?"]]]],
    "who": [[["t", "Part I: the causal chain, backwards", ["(a) immediate ← (b) intermediate ← (c) underlying", "each line causes the one above it", "~hemopericardium ← ruptured myocardial infarct ← coronary atherosclerosis + thrombosis · II: diabetes", "~upper GI bleed ← ruptured esophageal varix ← alcoholic cirrhosis · II: hemophilia", "~right lung squamous cell carcinoma · II: tobacco smoking"]]],
           [["w", "Part II: contributed, outside the chain", ["often risk factors, e.g. diabetes, tobacco smoking"]]]],
    "do": [[["ok", "Be SPECIFIC", ["• infection: disease or organism + site (COVID-19 pneumonia, H. influenzae meningoencephalitis)", "• cancer: origin + spread + type (pulmonary metastasis of colonic adenocarcinoma)"]]],
-          [["bad", "NEVER a mechanism", ["the physiological process of dying adds nothing:", "cardiac arrest · arrhythmia · exsanguination · respiratory arrest · multisystem organ failure · sepsis"]]]]},
-  {"id": "hosp", "colour": "teal", "drop_label": "if wanted",
-   "head": [[["h", "Hospital autopsy", ["hospital pathologist · died in hospital, already investigated", "natural death: family request, genetics, teaching, research, quality assurance"]]]],
-   "who": [[["t", "INFORMED authorization, in this ORDER", ["1 · estate trustee", "2 · spouse and adult children", "3 · parents", "4 · siblings", "5 · any other capable next of kin", "~same duties as with a patient: consent, professionalism, confidentiality"]]],
-          [["w", "They may RESTRICT it", ["• limited internal exam", "• no organ retention (brain, heart)"]]]],
-   "do": [[["ok", "Why do it", ["• diagnosis, extent, effect of treatment", "• accuracy of clinical tests and imaging · unresolved questions", "• SUSPECTED GENETIC disease: tell living relatives", "• grief · teaching · research · the death certificate"]]]]}
+          [["bad", "NEVER a mechanism", ["the physiological process of dying adds nothing:", "cardiac arrest · arrhythmia · exsanguination · respiratory arrest · multisystem organ failure · sepsis"]]]],
+   "how": [[["w", "What the certificate is for", ["• permanent legal record", "• proof of death: family, legal, insurance"]]],
+           [["w", "Statistics (ICD)", ["• the UNDERLYING cause is what gets coded", "• research · surveillance", "• public health planning · research funding"]]],
+           [["info", "Causation (Hume)", ["• a time-ordered, linked chain A → B → C → death", "• the initiating event sets the manner"]]]]}
  ],
- "panels": [
-  {"title": "Steps of the autopsy", "items": [
-   "1 · history: records, ambulance call report, clinician, consultation form",
-   "2 · external: nutrition, identifying marks, all surfaces, disease, anomalies, injuries, resuscitation",
-   "3 · internal: Y-shaped incision · organ block, weighed · brain removed · special dissections",
-   "not routine: eyes, bowel lumen, limb bones, joints, ears, spinal cord, back muscles, parathyroids",
-   "4 · ancillary tests, consults → provisional anatomical diagnosis",
-   "5 · OPINION: an integration in context · NOT 'all is revealed by dissection'"]},
-  {"title": "What the certificate is for", "items": [
-   "permanent legal record: proof of death for family, legal, insurance",
-   "statistics (ICD): the UNDERLYING cause is what gets coded",
-   "research · surveillance · public health planning · research funding",
-   "causation (Hume): a time-ordered, linked chain A → B → C → death · the initiating event sets the manner"]}
+ "spans": [
+  {"section": "how", "cols": [0, 1], "rows": [
+   [["plain", "1 · History", ["• records, ambulance call report", "• clinician, consultation form"]],
+    ["plain", "2 · External", ["• nutrition · identifying marks", "• all surfaces", "• disease, anomalies, injuries", "• resuscitation"]]],
+   [["plain", "3 · Internal", ["• Y-shaped incision", "• organ block, weighed", "• brain removed · special dissections"]],
+    ["info", "Not routine", ["• eyes, bowel lumen, limb bones, joints", "• ears, spinal cord, back muscles", "• parathyroids"]]],
+   [["plain", "4 · Ancillary tests, consults", ["→ provisional anatomical diagnosis"]],
+    ["ok", "5 · OPINION", ["• an integration in context", "• NOT 'all is revealed by dissection'"]]]]}
  ]
 }

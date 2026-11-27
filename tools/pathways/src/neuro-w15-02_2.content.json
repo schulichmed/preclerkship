@@ -1,7 +1,7 @@
 {
  "name": "brain tumours overview",
- "title": "Suspected brain tumour: progressive symptoms and raised intracranial pressure prompt a contrast MRI; metastasis is treated by resection and radiation, a glioma by its grade (an enhancing high-grade glioma is treated at once, a non-enhancing low-grade glioma can be watched), and primary CNS lymphoma is suspected in the immunosuppressed; raised pressure and herniation, tumour classification and paraneoplastic syndromes are compared below",
- "col_w": 236,
+ "title": "Suspected brain tumour: progressive symptoms and raised intracranial pressure prompt a contrast MRI; metastasis is treated by resection and radiation, a glioma by its grade (an enhancing high-grade glioma is treated at once, a non-enhancing low-grade glioma can be watched) and then its biomarkers set the prognosis, and primary CNS lymphoma is suspected in the immunosuppressed; further columns cover mass effect (raised pressure, then herniation) and paraneoplastic syndromes, the remote immune effects of cancer",
+ "col_w": 260,
  "root": {
   "title": "Could it be a brain TUMOUR? The red flag is PROGRESSIVE symptoms",
   "lines": [
@@ -15,13 +15,15 @@
  },
  "groups": [
   {"id": "g_sec", "cols": [0, 0], "title": "SECONDARY: metastasis", "lines": ["the MORE common kind"]},
-  {"id": "g_pri", "cols": [1, 3], "title": "PRIMARY", "lines": ["gliomas are the most common primary"]}
+  {"id": "g_pri", "cols": [1, 3], "title": "PRIMARY", "lines": ["gliomas are the most common primary", "• glioma: astrocytoma, oligodendroglioma, ependymoma", "• meningioma · lymphoma · schwannoma, neurofibroma", "• pituitary, craniopharyngioma · germ cell"]},
+  {"id": "g_mass", "cols": [4, 5], "title": "MASS EFFECT: any mass", "lines": ["raised pressure → herniation"]},
+  {"id": "g_para", "cols": [6, 6], "title": "REMOTE EFFECT of cancer", "lines": ["mostly IMMUNE"]}
  ],
  "tiers": [
   {"id": "t_enh", "cols": [1, 2], "title": "Glioma: does it ENHANCE with contrast?", "lines": ["enhancement = high grade (3 or 4)"]}
  ],
- "sections": ["head", "pres", "tx"],
- "row_names": {"pres": "CLUES", "tx": "TREATMENT"},
+ "sections": ["head", "pres", "tx", "prog"],
+ "row_names": {"pres": "CLUES", "tx": "TREATMENT · OUTCOME", "prog": "PROGNOSIS"},
  "columns": [
   {"id": "met", "colour": "teal", "drop_label": "known cancer, smoker",
    "head": [[["h", "Brain metastasis", ["most common CNS tumour", "15% of cancer deaths: brain mets at autopsy", "15-20% of cancers PRESENT as a brain met"]]]],
@@ -37,7 +39,7 @@
           [["w", "Glioblastoma survival", ["• radiation alone: 10-12 months · 2-year 10%", "• + temozolomide: 14-15 months · 2-year 26%", "• surgery + both: 18 months · 2-year 40%", "~ worse with age, poor performance status"]]],
           [["warn", "Radiation side effects", ["• early: neuro worsening, hair loss, dermatitis, otitis externa, fatigue", "• late: cognitive decline, focal necrosis, radiation vasculitis (stroke), second cancer"]]]]},
   {"id": "lgg", "colour": "blue", "drop_from": "t_enh", "drop_label": "does NOT enhance",
-   "head": [[["h", "Low-grade glioma", ["grade 2 · slow, but still MALIGNANT", "only grade 1 (pilocytic) is not"]]]],
+   "head": [[["h", "Low-grade glioma", ["grade 2 · slow, but still MALIGNANT", "only grade 1 (pilocytic astrocytoma) is not"]]]],
    "pres": [[["t", "LONG history", ["• months or longer", "• may be seizures only"]]],
             [["w", "case: 32, resident on call", ["first tonic-clonic seizure, no headache → non-enhancing glioma · seizure-free on anti-seizure drugs"]]]],
    "tx": [[["ok", "No symptoms or seizures controlled", ["serial MRI · biopsy deferred"]]],
@@ -47,28 +49,27 @@
   {"id": "pcl", "colour": "purple", "drop_label": "immunosuppressed",
    "head": [[["h", "Primary CNS lymphoma", ["non-neural tissue, confined to the CNS", "NOT spread from systemic lymphoma", "rising incidence"]]]],
    "pres": [[["t", "Who gets it?", ["• HIV, immunosuppressed", "• also immunocompetent people", "• B-cell non-Hodgkin in 90%"]]]],
-   "tx": [[["w", "Tissue diagnosis", ["biopsy, as for every brain tumour"]]]]}
+   "tx": [[["w", "Tissue diagnosis", ["biopsy, as for every brain tumour"]]]]},
+  {"id": "icp", "colour": "magenta",
+   "head": [[["h", "Raised intracranial pressure", ["Monro-Kellie: rigid skull", "brain + CSF + blood + mass"]]]],
+   "pres": [[["t", "Mass effect", ["• focal: tumour, bleed, abscess, infarct", "• generalized: hydrocephalus, meningitis", "• edema after trauma, hypoxia, CPR", "~ compensates only up to a point"]]],
+            [["w", "Normal pressure", ["• adults 7.5-20 cm water (5-15 mmHg)", "• children 3-7 · infants 1.5-6"]]]],
+   "tx": [[["bad", "Lumbar puncture: CAUTION", ["with a mass"]]],
+          [["ok", "Monitor or ventricular drain", ["drains CSF"]]]]},
+  {"id": "hern", "colour": "brown",
+   "head": [[["h", "Herniation", ["Cushing triad:", "hypertension, bradycardia, apnea"]]]],
+   "pres": [[["bad", "Uncal", ["• ipsilateral CN III palsy + dilated pupil", "• contralateral weakness"]]],
+            [["bad", "Central", ["↓ consciousness"]], ["bad", "Tonsillar", ["medulla compressed: FATAL"]]]],
+   "tx": [[["warn", "Descending: damage", ["• CN III (most common), IV, VI", "• PCA, ACA stroke", "• Duret hemorrhage"]]]]},
+  {"id": "para", "colour": "olive",
+   "head": [[["h", "Paraneoplastic syndromes", ["rare: 0.01% of cancers", "PRECEDES the cancer by weeks to months"]]]],
+   "pres": [[["w", "Lambert-Eaton", ["• 3% of small cell lung", "• antibody: voltage-gated calcium channel"]], ["w", "Myasthenia gravis", ["• 15% of thymoma"]]],
+            [["w", "Cerebellar degeneration", ["• ovarian, breast, lung", "• anti-Yo"]], ["w", "Neuropathy", ["• small cell lung", "• osteosclerotic myeloma"]]],
+            [["w", "Limbic encephalitis, encephalomyelitis", ["• small cell lung · anti-Hu"]]],
+            [["w", "Opsoclonus-myoclonus", ["• childhood neuroblastoma"]]]]}
  ],
- "panels": [
-  {"title": "Raised pressure and herniation", "items": [
-   "normal: adults 7.5-20 cm water (5-15 mmHg) · children 3-7 · infants 1.5-6",
-   "Monro-Kellie: rigid skull · brain + CSF + blood + mass · compensates only up to a point",
-   "mass effect: focal (tumour, bleed, abscess, infarct) · generalized (hydrocephalus, meningitis, edema after trauma, hypoxia, CPR)",
-   "lumbar puncture: CAUTION with a mass · monitor or ventricular drain (drains CSF)",
-   "uncal: ipsilateral CN III palsy + dilated pupil · contralateral weakness",
-   "central: ↓ consciousness · tonsillar: medulla compressed, FATAL",
-   "descending: CN III (most common), IV, VI · PCA, ACA stroke · Duret hemorrhage · Cushing triad: hypertension, bradycardia, apnea"]},
-  {"title": "Primary tumour classification", "items": [
-   "glioma (astrocytoma, oligodendroglioma, ependymoma) · meningioma · lymphoma · schwannoma, neurofibroma · pituitary, craniopharyngioma · germ cell",
-   "WHO grade: 1 pilocytic astrocytoma · 2 low grade · 3 anaplastic · 4 glioblastoma",
-   "IDH mutant + 1p/19q co-deleted → BETTER prognosis · IDH wild-type, 1p/19q intact → worse",
-   "integrated diagnosis = histology + grade + biomarkers · astrocytoma more aggressive than oligodendroglioma"]},
-  {"title": "Paraneoplastic neurologic syndromes", "items": [
-   "rare (0.01% of cancers) · mostly immune · neuro symptoms PRECEDE the cancer by weeks to months",
-   "Lambert-Eaton: 3% of small cell lung · anti-voltage-gated calcium channel",
-   "myasthenia gravis: 15% of thymoma",
-   "cerebellar degeneration: ovarian, breast, lung · anti-Yo",
-   "limbic encephalitis, encephalomyelitis: small cell lung · anti-Hu",
-   "neuropathy: small cell lung, osteosclerotic myeloma · opsoclonus-myoclonus: childhood neuroblastoma"]}
- ]
+ "spans": [{"section": "prog", "cols": [1, 2], "rows": [
+  [["info", "Integrated diagnosis", ["histology + grade + biomarkers"]]],
+  [["ok", "IDH mutant + 1p/19q co-deleted", ["→ BETTER prognosis"]], ["bad", "IDH wild-type, 1p/19q intact", ["→ worse"]]],
+  [["plain", "Astrocytoma", ["more aggressive than oligodendroglioma"]]]]}]
 }

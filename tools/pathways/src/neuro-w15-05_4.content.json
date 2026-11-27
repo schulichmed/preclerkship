@@ -1,6 +1,6 @@
 {
  "name": "pediatric ataxia overview",
- "title": "A child with ataxia: localize it (hemisphere for limb ataxia, vermis for truncal ataxia), then sort the three most common causes (intoxication, acute postinfectious cerebellar ataxia, brain tumour) from the can't-miss causes (stroke or hemorrhage, meningitis or encephalitis, brain tumour) by the history; each column says whether to image and what to do, with the exam of a young child and Friedreich ataxia below",
+ "title": "A child with ataxia: localize it (hemisphere for limb ataxia, vermis for truncal ataxia), then sort the three most common causes (intoxication, acute postinfectious cerebellar ataxia, brain tumour) from the can't-miss causes (stroke or hemorrhage, meningitis or encephalitis, brain tumour) by the history, then a shared exam step (how to examine a child under 5) leads to whether to image and what to do; hereditary Friedreich ataxia, slowly progressive with absent reflexes, has its own column",
  "col_w": 215,
  "root": {
   "title": "Child with ataxia: a SIGN, not a diagnosis",
@@ -14,10 +14,11 @@
  },
  "groups": [
   {"id": "g_c", "cols": [0, 2], "title": "3 MOST COMMON", "lines": ["the history sorts them"]},
-  {"id": "g_m", "cols": [3, 4], "title": "CAN'T MISS: rule in or out every time", "lines": ["brain tumour is one too"]}
+  {"id": "g_m", "cols": [3, 4], "title": "CAN'T MISS: rule in or out every time", "lines": ["brain tumour is one too"]},
+  {"id": "g_h", "cols": [5, 5], "title": "HEREDITARY", "lines": []}
  ],
- "sections": ["head", "pres", "inv", "tx"],
- "row_names": {"pres": "HISTORY", "inv": "IMAGING", "tx": "MANAGEMENT"},
+ "sections": ["head", "pres", "exam", "inv", "tx"],
+ "row_names": {"pres": "HISTORY", "exam": "EXAM", "inv": "IMAGING", "tx": "MANAGEMENT"},
  "dashed_sections": ["pres"],
  "columns": [
   {"id": "tox", "colour": "teal", "drop_label": "ingestion",
@@ -47,19 +48,15 @@
    "head": [[["h", "Meningitis · encephalitis", ["viral or bacterial"]]]],
    "pres": [[["t", "FEVER + meningismus", ["• headache, vomiting", "• altered consciousness, seizures"]]]],
    "inv": [[["bad", "IMAGE", ["then lumbar puncture", "case: 7, fever 4 days, vomiting, overshoots, stiff neck"]]]],
-   "tx": [[["bad", "Antibiotics", []]]]}
+   "tx": [[["bad", "Antibiotics", []]]]},
+  {"id": "fa", "colour": "olive", "drop_label": "recessive",
+   "head": [[["h", "Friedreich ataxia", ["autosomal RECESSIVE"]]]],
+   "pres": [[["t", "Slowly PROGRESSIVE", ["• ataxia", "• dysarthria"]]]],
+   "exam": [[["w", "Exam", ["• ABSENT tendon reflexes", "• nystagmus"]]]]}
  ],
- "panels": [
-  {"title": "Examining a child under 5", "items": [
-   "over 5: full adult neurologic exam",
-   "dysmetria: reach for a favourite toy or food with each hand · watch for tremor",
-   "nystagmus: follow a toy across the visual field",
-   "sensation: poke a foot while distracted, does the child look?",
-   "gait: caregiver steps away · toddlers are wide-based anyway, ask if it is NEW",
-   "speech: slurred?"]},
-  {"title": "Hereditary: Friedreich ataxia", "items": [
-   "autosomal RECESSIVE",
-   "slowly progressive ataxia · dysarthria",
-   "ABSENT tendon reflexes · nystagmus"]}
- ]
+ "spans": [{"section": "exam", "cols": [0, 4], "rows": [
+  [["info", "Examining a child under 5", ["~ over 5: full adult neurologic exam"]]],
+  [["plain", "Dysmetria", ["• reach for a favourite toy or food, each hand", "• watch for tremor"]], ["plain", "Nystagmus", ["• follow a toy across the visual field"]]],
+  [["plain", "Sensation", ["• poke a foot while distracted: does the child look?"]], ["plain", "Gait", ["• caregiver steps away", "• toddlers are wide-based anyway: ask if it is NEW"]]],
+  [["plain", "Speech", ["• slurred?"]]]]}]
 }

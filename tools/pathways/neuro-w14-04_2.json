@@ -1,7 +1,7 @@
 {
  "name": "sensory symptoms overview",
- "width": 1420,
- "title": "Numbness and tingling are localized first, central or peripheral: a thalamic lesion gives opposite-side clumsiness and burning pain, a spinal cord lesion a truncal sensory level with brisk reflexes, a root a dermatomal pattern with a lost reflex, a mononeuropathy one nerve's territory, a length-dependent polyneuropathy symmetric distal sensory loss, and Guillain-Barre syndrome weakness ascending over days with lost reflexes; each column gives what it looks like, the test that settles it and what to do",
+ "width": 1644,
+ "title": "Numbness and tingling are localized first, central or peripheral: a thalamic lesion gives opposite-side clumsiness and burning pain, a spinal cord lesion a truncal sensory level with brisk reflexes, a root a dermatomal pattern with a lost reflex, a mononeuropathy one nerve's territory, a length-dependent polyneuropathy symmetric distal sensory loss, and Guillain-Barre syndrome weakness ascending over days with lost reflexes; a neuronopathy hits the cell body; each column gives what it looks like, the test that settles it and what to do, then the nerve pathology behind it (functional block, Wallerian degeneration and the three grades of nerve injury after trauma, dying back, demyelination)",
  "kinds": {
   "thal_h": [
    "#46607a",
@@ -37,6 +37,24 @@
    "#ffffff",
    "#6a4aa8",
    "#6a4aa8",
+   "#18212e"
+  ],
+  "neu_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "neu_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "neu_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
    "#18212e"
   ],
   "root_h": [
@@ -133,12 +151,20 @@
    "x": 516,
    "y": 324,
    "w": 222,
+   "h": 392,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 740,
+   "y": 324,
+   "w": 222,
    "h": 810,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
-   "x": 740,
+   "x": 964,
    "y": 324,
    "w": 222,
    "h": 810,
@@ -146,18 +172,18 @@
    "stroke": "#1f6f8b"
   },
   {
-   "x": 964,
+   "x": 1188,
    "y": 324,
    "w": 222,
-   "h": 810,
+   "h": 1238,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
-   "x": 1188,
+   "x": 1412,
    "y": 324,
    "w": 222,
-   "h": 810,
+   "h": 1238,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   }
@@ -180,12 +206,18 @@
    "y": 994,
    "h": 132,
    "text": "NEXT STEP"
+  },
+  {
+   "x": 23,
+   "y": 1166,
+   "h": 388,
+   "text": "PATHOLOGY"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 345,
+   "x": 457,
    "y": 10,
    "w": 760,
    "kind": "dark",
@@ -213,7 +245,7 @@
    "id": "g_pns",
    "x": 521,
    "y": 192,
-   "w": 884,
+   "w": 1108,
    "h": 60,
    "kind": "plain",
    "title": "PERIPHERAL",
@@ -246,8 +278,20 @@
    ]
   },
   {
-   "id": "root_head_0_0",
+   "id": "neu_head_0_0",
    "x": 521,
+   "y": 332,
+   "w": 212,
+   "h": 150,
+   "kind": "neu_h",
+   "title": "Neuronopathy",
+   "lines": [
+    "the CELL BODY is hit"
+   ]
+  },
+  {
+   "id": "root_head_0_0",
+   "x": 745,
    "y": 332,
    "w": 212,
    "h": 150,
@@ -259,7 +303,7 @@
   },
   {
    "id": "mono_head_0_0",
-   "x": 745,
+   "x": 969,
    "y": 332,
    "w": 212,
    "h": 150,
@@ -271,7 +315,7 @@
   },
   {
    "id": "poly_head_0_0",
-   "x": 969,
+   "x": 1193,
    "y": 332,
    "w": 212,
    "h": 150,
@@ -283,7 +327,7 @@
   },
   {
    "id": "gbs_head_0_0",
-   "x": 1193,
+   "x": 1417,
    "y": 332,
    "w": 212,
    "h": 150,
@@ -323,8 +367,22 @@
    ]
   },
   {
-   "id": "root_clue_0_0",
+   "id": "neu_clue_0_0",
    "x": 521,
+   "y": 522,
+   "w": 212,
+   "h": 186,
+   "kind": "neu_t",
+   "title": "Which cell body?",
+   "lines": [
+    "• ALS, polio, West Nile",
+    "• sensory: paraneoplastic, Sjögren's",
+    "• sensory: B6, cisplatin"
+   ]
+  },
+  {
+   "id": "root_clue_0_0",
+   "x": 745,
    "y": 522,
    "w": 212,
    "h": 186,
@@ -338,7 +396,7 @@
   },
   {
    "id": "mono_clue_0_0",
-   "x": 745,
+   "x": 969,
    "y": 522,
    "w": 212,
    "h": 186,
@@ -352,7 +410,7 @@
   },
   {
    "id": "poly_clue_0_0",
-   "x": 969,
+   "x": 1193,
    "y": 522,
    "w": 212,
    "h": 186,
@@ -366,7 +424,7 @@
   },
   {
    "id": "gbs_clue_0_0",
-   "x": 1193,
+   "x": 1417,
    "y": 522,
    "w": 212,
    "h": 186,
@@ -407,7 +465,7 @@
   },
   {
    "id": "root_inv_0_0",
-   "x": 521,
+   "x": 745,
    "y": 748,
    "w": 212,
    "h": 206,
@@ -419,7 +477,7 @@
   },
   {
    "id": "mono_inv_0_0",
-   "x": 745,
+   "x": 969,
    "y": 748,
    "w": 212,
    "h": 206,
@@ -431,7 +489,7 @@
   },
   {
    "id": "poly_inv_0_0",
-   "x": 969,
+   "x": 1193,
    "y": 748,
    "w": 212,
    "h": 206,
@@ -444,7 +502,7 @@
   },
   {
    "id": "gbs_inv_0_0",
-   "x": 1193,
+   "x": 1417,
    "y": 748,
    "w": 212,
    "h": 206,
@@ -483,7 +541,7 @@
   },
   {
    "id": "root_tx_0_0",
-   "x": 521,
+   "x": 745,
    "y": 994,
    "w": 212,
    "h": 132,
@@ -495,7 +553,7 @@
   },
   {
    "id": "mono_tx_0_0",
-   "x": 745,
+   "x": 969,
    "y": 994,
    "w": 212,
    "h": 132,
@@ -507,7 +565,7 @@
   },
   {
    "id": "poly_tx_0_0",
-   "x": 969,
+   "x": 1193,
    "y": 994,
    "w": 212,
    "h": 132,
@@ -519,7 +577,7 @@
   },
   {
    "id": "gbs_tx_0_0",
-   "x": 1193,
+   "x": 1417,
    "y": 994,
    "w": 212,
    "h": 132,
@@ -529,18 +587,130 @@
     "• IVIG shortens the course · slow recovery, weeks to months",
     "• can reach the cranial nerves and breathing muscles → intubation"
    ]
+  },
+  {
+   "id": "poly_path_0_0",
+   "x": 1193,
+   "y": 1166,
+   "w": 212,
+   "h": 388,
+   "kind": "poly_w",
+   "title": "DYING BACK",
+   "lines": [
+    "• distal → proximal",
+    "• diabetes, renal failure",
+    "• vincristine, cisplatin, metronidazole",
+    "• lead, arsenic, mercury, acrylamide"
+   ]
+  },
+  {
+   "id": "gbs_path_0_0",
+   "x": 1417,
+   "y": 1166,
+   "w": 212,
+   "h": 388,
+   "kind": "gbs_w",
+   "title": "DEMYELINATION",
+   "lines": [
+    "• GBS, CIDP, diphtheria, hereditary",
+    "• remyelinates in up to 12 weeks"
+   ]
+  },
+  {
+   "id": "span0_path_0_0",
+   "x": 745.0,
+   "y": 1166,
+   "w": 213.0,
+   "h": 114,
+   "kind": "plain",
+   "title": "FUNCTIONAL BLOCK",
+   "lines": [
+    "• reversible channel failure",
+    "• lidocaine, cold, brief compression"
+   ]
+  },
+  {
+   "id": "span0_path_0_1",
+   "x": 968.0,
+   "y": 1166,
+   "w": 213.0,
+   "h": 114,
+   "kind": "plain",
+   "title": "WALLERIAN",
+   "lines": [
+    "• axon breaks down distal to an injury",
+    "• regrows 1-2 mm/day, months to years"
+   ]
+  },
+  {
+   "id": "span0_path_1_0",
+   "x": 745.0,
+   "y": 1302,
+   "w": 213.0,
+   "h": 134,
+   "kind": "warn",
+   "title": "After trauma: NEURAPRAXIA",
+   "lines": [
+    "• block + demyelination, axon intact",
+    "• full recovery, weeks to 3 months"
+   ]
+  },
+  {
+   "id": "span0_path_1_1",
+   "x": 968.0,
+   "y": 1302,
+   "w": 213.0,
+   "h": 134,
+   "kind": "warn",
+   "title": "AXONOTMESIS",
+   "lines": [
+    "• Wallerian; Schwann cells + endoneurium kept (crush)",
+    "• 3-12 months, may be incomplete"
+   ]
+  },
+  {
+   "id": "span0_path_2_0",
+   "x": 745,
+   "y": 1458,
+   "w": 436,
+   "h": 96,
+   "kind": "bad",
+   "title": "NEUROTMESIS",
+   "lines": [
+    "• axon + connective tissue cut",
+    "• limited regrowth",
+    "• SURGICAL repair"
+   ]
   }
  ],
  "edges": [
   {
    "from": "root",
    "to": "g_cns",
-   "path": "M725.0 142V167H263.0V192"
+   "path": "M837.0 142V167H263.0V192"
   },
   {
    "from": "root",
    "to": "g_pns",
-   "path": "M725.0 142V167H963.0V192"
+   "path": "M837.0 142V167H1075.0V192"
+  },
+  {
+   "from": "span0_path_0_0",
+   "to": "span0_path_1_0"
+  },
+  {
+   "from": "span0_path_0_1",
+   "to": "span0_path_1_1"
+  },
+  {
+   "from": "span0_path_1_0",
+   "to": "span0_path_2_0",
+   "to_dx": -111.5
+  },
+  {
+   "from": "span0_path_1_1",
+   "to": "span0_path_2_0",
+   "to_dx": 111.5
   },
   {
    "from": "thal_head_0_0",
@@ -577,6 +747,15 @@
    "from_dx": 112
   },
   {
+   "from": "neu_head_0_0",
+   "to": "neu_clue_0_0"
+  },
+  {
+   "from": "g_pns",
+   "to": "neu_head_0_0",
+   "from_dx": -448
+  },
+  {
    "from": "root_head_0_0",
    "to": "root_clue_0_0"
   },
@@ -589,9 +768,14 @@
    "to": "root_tx_0_0"
   },
   {
+   "from": "root_tx_0_0",
+   "to": "span0_path_0_0",
+   "to_dx": -0.5
+  },
+  {
    "from": "g_pns",
    "to": "root_head_0_0",
-   "from_dx": -336
+   "from_dx": -224
   },
   {
    "from": "mono_head_0_0",
@@ -606,9 +790,14 @@
    "to": "mono_tx_0_0"
   },
   {
+   "from": "mono_tx_0_0",
+   "to": "span0_path_0_1",
+   "to_dx": 0.5
+  },
+  {
    "from": "g_pns",
    "to": "mono_head_0_0",
-   "from_dx": -112
+   "from_dx": 0
   },
   {
    "from": "poly_head_0_0",
@@ -623,9 +812,13 @@
    "to": "poly_tx_0_0"
   },
   {
+   "from": "poly_tx_0_0",
+   "to": "poly_path_0_0"
+  },
+  {
    "from": "g_pns",
    "to": "poly_head_0_0",
-   "from_dx": 112
+   "from_dx": 224
   },
   {
    "from": "gbs_head_0_0",
@@ -640,37 +833,14 @@
    "to": "gbs_tx_0_0"
   },
   {
-   "from": "g_pns",
-   "to": "gbs_head_0_0",
-   "from_dx": 336
-  }
- ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1160,
-   "w": 673,
-   "title": "Nerve pathology",
-   "items": [
-    "FUNCTIONAL BLOCK: reversible channel failure · lidocaine, cold, brief compression",
-    "WALLERIAN: axon breaks down distal to an injury · regrows 1-2 mm/day, months to years",
-    "DYING BACK: distal → proximal · diabetes, renal failure · vincristine, cisplatin, metronidazole · lead, arsenic, mercury, acrylamide",
-    "DEMYELINATION: GBS, CIDP, diphtheria, hereditary · remyelinates in up to 12 weeks",
-    "NEURONOPATHY: cell body · ALS, polio, West Nile · sensory: paraneoplastic, Sjögren's, B6, cisplatin"
-   ],
-   "cols": 1
+   "from": "gbs_tx_0_0",
+   "to": "gbs_path_0_0"
   },
   {
-   "x": 732,
-   "y": 1160,
-   "w": 673,
-   "title": "Nerve injury after trauma",
-   "items": [
-    "NEURAPRAXIA: block + demyelination, axon intact · full recovery, weeks to 3 months",
-    "AXONOTMESIS: Wallerian, Schwann cells + endoneurium kept (crush) · 3-12 months, may be incomplete",
-    "NEUROTMESIS: axon + connective tissue cut · limited regrowth · SURGICAL repair"
-   ],
-   "cols": 1
+   "from": "g_pns",
+   "to": "gbs_head_0_0",
+   "from_dx": 448
   }
- ]
+ ],
+ "panels": []
 }

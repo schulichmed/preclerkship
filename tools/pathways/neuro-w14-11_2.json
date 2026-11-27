@@ -1,7 +1,7 @@
 {
  "name": "neuroinfections overview",
  "width": 954,
- "title": "Suspected meningitis or encephalitis: blood culture and empiric treatment first, CT before the lumbar puncture only with focal signs or a decreased level of consciousness, then the CSF separates bacterial meningitis, aseptic (viral) meningitis and herpes simplex encephalitis, each with its organisms and treatment",
+ "title": "Suspected meningitis or encephalitis: blood culture and empiric treatment first, CT before the lumbar puncture only with focal signs or a decreased level of consciousness, then the CSF, read against normal values, separates bacterial meningitis, aseptic (viral) meningitis and herpes simplex encephalitis, each with its organisms and treatment; bacterial meningitis ends with its complications",
  "kinds": {
   "bac_h": [
    "#a3336b",
@@ -61,15 +61,15 @@
  "bands": [
   {
    "x": 40,
-   "y": 460,
+   "y": 614,
    "w": 300,
-   "h": 1134,
+   "h": 1306,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 342,
-   "y": 460,
+   "y": 614,
    "w": 300,
    "h": 1134,
    "fill": "#eef7fa",
@@ -77,7 +77,7 @@
   },
   {
    "x": 644,
-   "y": 460,
+   "y": 614,
    "w": 300,
    "h": 1134,
    "fill": "#f5f1fb",
@@ -93,21 +93,27 @@
   },
   {
    "x": 23,
-   "y": 568,
+   "y": 722,
    "h": 186,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 794,
+   "y": 948,
    "h": 448,
    "text": "CSF"
   },
   {
    "x": 23,
-   "y": 1282,
+   "y": 1436,
    "h": 304,
    "text": "TREATMENT"
+  },
+  {
+   "x": 23,
+   "y": 1780,
+   "h": 132,
+   "text": "COMPLICATIONS"
   }
  ],
  "nodes": [
@@ -150,9 +156,24 @@
    ]
   },
   {
+   "id": "t_csf",
+   "x": 45,
+   "y": 428,
+   "w": 894,
+   "h": 114,
+   "kind": "plain",
+   "title": "Read the CSF against NORMAL",
+   "lines": [
+    "• opening pressure under 20-25 cm",
+    "• clear · white cells 0-5, lymphocytes",
+    "• protein 250-450 mg/L · glucose 2.2-4.4 mmol/L",
+    "• CSF:serum glucose over 0.6 · Gram stain empty"
+   ]
+  },
+  {
    "id": "bac_head_0_0",
    "x": 45,
-   "y": 468,
+   "y": 622,
    "w": 290,
    "h": 60,
    "kind": "bac_h",
@@ -164,7 +185,7 @@
   {
    "id": "asep_head_0_0",
    "x": 347,
-   "y": 468,
+   "y": 622,
    "w": 290,
    "h": 60,
    "kind": "asep_h",
@@ -176,7 +197,7 @@
   {
    "id": "hsv_head_0_0",
    "x": 649,
-   "y": 468,
+   "y": 622,
    "w": 290,
    "h": 60,
    "kind": "hsv_h",
@@ -188,7 +209,7 @@
   {
    "id": "bac_clue_0_0",
    "x": 45,
-   "y": 568,
+   "y": 722,
    "w": 290,
    "h": 186,
    "kind": "bac_t",
@@ -204,7 +225,7 @@
   {
    "id": "asep_clue_0_0",
    "x": 347,
-   "y": 568,
+   "y": 722,
    "w": 290,
    "h": 186,
    "kind": "asep_t",
@@ -219,7 +240,7 @@
   {
    "id": "hsv_clue_0_0",
    "x": 649,
-   "y": 568,
+   "y": 722,
    "w": 290,
    "h": 186,
    "kind": "hsv_t",
@@ -234,7 +255,7 @@
   {
    "id": "bac_csf_0_0",
    "x": 45,
-   "y": 794,
+   "y": 948,
    "w": 290,
    "h": 240,
    "kind": "bac_w",
@@ -251,7 +272,7 @@
   {
    "id": "bac_csf_1_0",
    "x": 45,
-   "y": 1056,
+   "y": 1210,
    "w": 290,
    "h": 186,
    "kind": "bac_w",
@@ -267,7 +288,7 @@
   {
    "id": "asep_csf_0_0",
    "x": 347,
-   "y": 794,
+   "y": 948,
    "w": 290,
    "h": 448,
    "kind": "asep_w",
@@ -283,7 +304,7 @@
   {
    "id": "hsv_csf_0_0",
    "x": 649,
-   "y": 794,
+   "y": 948,
    "w": 290,
    "h": 448,
    "kind": "hsv_w",
@@ -298,7 +319,7 @@
   {
    "id": "bac_tx_0_0",
    "x": 45,
-   "y": 1282,
+   "y": 1436,
    "w": 290,
    "h": 186,
    "kind": "ok",
@@ -313,7 +334,7 @@
   {
    "id": "bac_tx_1_0",
    "x": 45,
-   "y": 1490,
+   "y": 1644,
    "w": 290,
    "h": 96,
    "kind": "ok",
@@ -326,7 +347,7 @@
   {
    "id": "asep_tx_0_0",
    "x": 347,
-   "y": 1282,
+   "y": 1436,
    "w": 290,
    "h": 304,
    "kind": "ok",
@@ -338,7 +359,7 @@
   {
    "id": "hsv_tx_0_0",
    "x": 649,
-   "y": 1282,
+   "y": 1436,
    "w": 290,
    "h": 304,
    "kind": "ok",
@@ -348,6 +369,36 @@
     "started empirically, with the antibiotics",
     "e.g. 700 mg IV q8h",
     "meningoencephalitis (stiff neck + weakness + seizures) → antibiotics + acyclovir, then CT/MRI"
+   ]
+  },
+  {
+   "id": "bac_comp_0_0",
+   "x": 45.0,
+   "y": 1780,
+   "w": 140.0,
+   "h": 132,
+   "kind": "bad",
+   "title": "Complications",
+   "lines": [
+    "• sepsis · seizures",
+    "• hydrocephalus",
+    "• cranial nerve palsies",
+    "• coma · death"
+   ]
+  },
+  {
+   "id": "bac_comp_0_1",
+   "x": 195.0,
+   "y": 1780,
+   "w": 140.0,
+   "h": 132,
+   "kind": "bad",
+   "title": "In the brain",
+   "lines": [
+    "• vasculitis",
+    "• stroke",
+    "• cerebritis",
+    "• abscess"
    ]
   }
  ],
@@ -360,6 +411,11 @@
   {
    "from": "g",
    "to": "p"
+  },
+  {
+   "from": "p",
+   "to": "t_csf",
+   "from_dx": 0
   },
   {
    "from": "bac_csf_0_0",
@@ -382,13 +438,23 @@
    "to": "bac_tx_0_0"
   },
   {
-   "from": "p",
+   "from": "bac_tx_1_0",
+   "to": "bac_comp_0_0",
+   "from_dx": -75.0
+  },
+  {
+   "from": "bac_tx_1_0",
+   "to": "bac_comp_0_1",
+   "from_dx": 75.0
+  },
+  {
+   "from": "t_csf",
    "to": "bac_head_0_0",
    "from_dx": -302,
    "label": "neutrophils, low glucose",
    "label_at": [
     190.0,
-    428
+    582
    ]
   },
   {
@@ -404,13 +470,13 @@
    "to": "asep_tx_0_0"
   },
   {
-   "from": "p",
+   "from": "t_csf",
    "to": "asep_head_0_0",
    "from_dx": 0,
    "label": "lymphocytes, normal glucose",
    "label_at": [
     492.0,
-    428
+    582
    ]
   },
   {
@@ -426,41 +492,15 @@
    "to": "hsv_tx_0_0"
   },
   {
-   "from": "p",
+   "from": "t_csf",
    "to": "hsv_head_0_0",
    "from_dx": 302,
    "label": "lymphocytes + red cells",
    "label_at": [
     794.0,
-    428
+    582
    ]
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1620,
-   "w": 440,
-   "title": "CSF: normal values",
-   "items": [
-    "opening pressure under 20-25 cm",
-    "clear · white cells 0-5, lymphocytes",
-    "protein 250-450 mg/L · glucose 2.2-4.4 mmol/L",
-    "CSF:serum glucose over 0.6 · Gram stain empty"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 499,
-   "y": 1620,
-   "w": 440,
-   "title": "Complications of meningitis",
-   "items": [
-    "sepsis · hydrocephalus · cranial nerve palsies",
-    "vasculitis · stroke · cerebritis · abscess",
-    "seizures · coma · death"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

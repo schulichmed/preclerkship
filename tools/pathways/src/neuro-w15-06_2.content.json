@@ -1,6 +1,6 @@
 {
  "name": "monocular vision loss overview",
- "title": "Vision loss in one eye: sudden painless loss is sorted by the pupils and the fundus into central retinal artery occlusion, giant cell arteritis, optic neuritis, retinal detachment and vitreous hemorrhage; gradual loss is sorted by which part of vision goes into glaucoma, cataract and macular degeneration; each column gives the presentation, the exam finding that decides it and what to do, with glaucoma and cataract risk factors below",
+ "title": "Vision loss in one eye: sudden painless loss is sorted by the pupils and the fundus into central retinal artery occlusion, giant cell arteritis, optic neuritis, retinal detachment and vitreous hemorrhage; gradual loss is sorted by which part of vision goes into glaucoma, cataract and macular degeneration; each column gives the presentation, the exam finding that decides it and what to do, and the glaucoma and cataract columns end with their risk factors",
  "col_w": 196,
  "root": {
   "title": "Vision loss in ONE eye: the problem is in FRONT of the optic chiasm",
@@ -15,8 +15,8 @@
   {"id": "g_ac", "cols": [0, 4], "title": "SUDDEN + PAINLESS: what do the pupil and the fundus show?", "lines": ["emergency measures + ophthalmology for CRAO, ischemic optic neuropathy, GCA"]},
   {"id": "g_ch", "cols": [5, 7], "title": "GRADUAL: which part of vision goes?", "lines": ["refer, but not same-day unless pressure > 30"]}
  ],
- "sections": ["head", "pres", "inv", "tx"],
- "row_names": {"pres": "PRESENTS AS", "inv": "EXAM", "tx": "WHAT TO DO"},
+ "sections": ["head", "pres", "inv", "tx", "risk"],
+ "row_names": {"pres": "PRESENTS AS", "inv": "EXAM", "tx": "WHAT TO DO", "risk": "RISK FACTORS"},
  "columns": [
   {"id": "crao", "colour": "slate", "drop_label": "white retina",
    "head": [[["h", "Central retinal artery occlusion", ["EMERGENCY: ganglion cells die"]]]],
@@ -49,27 +49,22 @@
    "head": [[["h", "Primary open-angle glaucoma", ["progressive, irreversible optic neuropathy", "3.54% of the world"]]]],
    "pres": [[["t", "SILENT until very late", ["• peripheral field goes first", "• acuity falls LAST"]]]],
    "inv": [[["w", "Pressure + disc + field", ["• pressure > 21 (normal 10-21; can be normal: normal-tension glaucoma)", "• Goldmann applanation, Tono-Pen, air puff", "• cup-to-disc ≥ 0.5, or eyes differ > 0.2", "• arcuate defect, nasal step"]]]],
-   "tx": [[["ok", "Lower the pressure", ["• the ONLY treatment", "• drops → laser → surgery", "• refer: pressure > 21 or suspicious nerve", "• same-day referral only if > 30"]]]]},
+   "tx": [[["ok", "Lower the pressure", ["• the ONLY treatment", "• drops → laser → surgery", "• refer: pressure > 21 or suspicious nerve", "• same-day referral only if > 30"]]]],
+   "risk": [[["w", "Both types", ["• family history", "• older age"]]],
+            [["w", "Open angle", ["• Black · high pressure", "• MYOPIA · eye trauma", "• steroids", "• vasospasm (Raynaud's, migraine)"]]],
+            [["w", "Angle closure (RED EYE chart)", ["• Asian · female", "• HYPEROPIA"]]]]},
   {"id": "cat", "colour": "olive", "drop_label": "hazy, glare",
    "head": [[["h", "Cataract", ["lens opacity · leading cause of REVERSIBLE blindness"]]]],
-   "pres": [[["t", "Hazy vision, glare", ["• halos, starbursts, night driving", "• 'second sight': lenticular myopia, better near vision", "• varies with where the opacity is"]]]],
+   "pres": [[["t", "Hazy vision, glare", ["• halos, starbursts, night driving", "• 'second sight': lenticular myopia, better near vision", "• varies with where the opacity is", "• types: posterior subcapsular, cortical, nuclear sclerosis"]]]],
    "inv": [[["w", "Acuity ↓, hazy view", ["• dense: dull red reflex or white pupil", "• pressure normal"]]]],
-   "tx": [[["ok", "Non-urgent referral", ["visually significant or blocks the view of the retina → extraction + intraocular lens"]]]]},
+   "tx": [[["ok", "Non-urgent referral", ["visually significant or blocks the view of the retina → extraction + intraocular lens"]]]],
+   "risk": [[["w", "Risk factors", ["• age · genetics · trauma", "• steroids · eye inflammation", "• diabetes, metabolic"]]],
+            [["w", "Exposures", ["• radiation", "• prior eye surgery", "• excess UV"]]]]},
   {"id": "amd", "colour": "magenta", "drop_label": "central, distorted",
    "head": [[["h", "Age-related macular degeneration", ["leading IRREVERSIBLE cause over 50"]]]],
    "pres": [[["t", "Central loss + distortion", ["• metamorphopsia: Amsler grid", "• wet: choroidal new vessels bleed, leak into the macula → sudden severe drop", "• dry: retinal atrophy, drusen"]]]],
    "inv": [[["w", "Refer if ANY", ["• central acuity ↓", "• new distortion", "• drusen or blood at the macula"]]]],
    "tx": [[["ok", "WET ~20%", ["• anti-VEGF injected into the eye", "• bevacizumab, ranibizumab, aflibercept"]]],
           [["ok", "DRY ~80%", ["• AREDS2: vitamins C, E, lutein, zeaxanthin, zinc, copper", "• stop smoking, nutrition"]]]]}
- ],
- "panels": [
-  {"title": "Glaucoma risk factors", "items": [
-   "both: family history · older age",
-   "open angle: Black · high pressure · MYOPIA · eye trauma · steroids · vasospasm (Raynaud's, migraine)",
-   "angle closure: Asian · female · HYPEROPIA"]},
-  {"title": "Cataract risk factors and types", "items": [
-   "age · genetics · trauma · steroids · eye inflammation · diabetes, metabolic",
-   "radiation · prior eye surgery · excess UV",
-   "types: posterior subcapsular · cortical · nuclear sclerosis"]}
  ]
 }

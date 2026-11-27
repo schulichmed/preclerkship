@@ -1,7 +1,7 @@
 {
  "name": "pediatric ophthalmology overview",
  "width": 1592,
- "title": "A child's eyes: the red reflex sorts a dim or different reflex (refractive error or media opacity), a brighter one (the turned eye in strabismus) and a white one (leukocoria, retinoblastoma first); misaligned eyes are concomitant or incomitant by whether the angle changes with gaze; reduced acuity in one eye without disease is amblyopia; each column gives what is seen, what to think of and what to do",
+ "title": "A child's eyes: the red reflex sorts a dim or different reflex (refractive error or media opacity), a brighter one (the turned eye in strabismus) and a white one (leukocoria, retinoblastoma first); misaligned eyes are concomitant or incomitant by whether the angle changes with gaze; reduced acuity in one eye without disease is amblyopia; each column gives what is seen, what to think of and what to do, with retinoblastoma (genetics, treatment, outcome) in the leukocoria column",
  "kinds": {
   "dim_h": [
    "#1f5f9e",
@@ -117,7 +117,7 @@
    "x": 40,
    "y": 360,
    "w": 246,
-   "h": 746,
+   "h": 1292,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
@@ -125,7 +125,7 @@
    "x": 288,
    "y": 360,
    "w": 246,
-   "h": 746,
+   "h": 1292,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -133,7 +133,7 @@
    "x": 536,
    "y": 360,
    "w": 246,
-   "h": 746,
+   "h": 1292,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
@@ -141,7 +141,7 @@
    "x": 812,
    "y": 360,
    "w": 246,
-   "h": 746,
+   "h": 1292,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
@@ -149,7 +149,7 @@
    "x": 1060,
    "y": 360,
    "w": 246,
-   "h": 746,
+   "h": 1292,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
@@ -157,7 +157,7 @@
    "x": 1336,
    "y": 360,
    "w": 246,
-   "h": 746,
+   "h": 1292,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   }
@@ -172,13 +172,13 @@
   {
    "x": 23,
    "y": 676,
-   "h": 204,
+   "h": 496,
    "text": "THINK OF"
   },
   {
    "x": 23,
-   "y": 920,
-   "h": 178,
+   "y": 1212,
+   "h": 432,
    "text": "WHAT TO DO"
   }
  ],
@@ -388,7 +388,7 @@
    "x": 45,
    "y": 676,
    "w": 236,
-   "h": 204,
+   "h": 496,
    "kind": "dim_w",
    "title": "Refractive error or opacity",
    "lines": [
@@ -403,7 +403,7 @@
    "x": 293,
    "y": 676,
    "w": 236,
-   "h": 204,
+   "h": 496,
    "kind": "bright_w",
    "title": "Strabismus",
    "lines": [
@@ -415,9 +415,36 @@
    "x": 541,
    "y": 676,
    "w": 236,
+   "h": 98,
+   "kind": "bad",
+   "title": "RETINOBLASTOMA: rule it out FIRST",
+   "lines": [
+    "• 1 in 180,000 births",
+    "• embryonic retina, so most under 4"
+   ]
+  },
+  {
+   "id": "white_inv_1_0",
+   "x": 541,
+   "y": 796,
+   "w": 236,
+   "h": 150,
+   "kind": "white_w",
+   "title": "Retinoblastoma genetics",
+   "lines": [
+    "• 90% no family history: usually ONE eye",
+    "• 15% of one-eye cases: germline RB1",
+    "• BOTH eyes → family history ~100%"
+   ]
+  },
+  {
+   "id": "white_inv_2_0",
+   "x": 541,
+   "y": 968,
+   "w": 236,
    "h": 204,
    "kind": "white_w",
-   "title": "RETINOBLASTOMA first",
+   "title": "Then the rest",
    "lines": [
     "• retinopathy of prematurity",
     "• congenital cataract",
@@ -431,7 +458,7 @@
    "x": 817,
    "y": 676,
    "w": 236,
-   "h": 204,
+   "h": 496,
    "kind": "con_w",
    "title": "Name the direction",
    "lines": [
@@ -445,7 +472,7 @@
    "x": 1065,
    "y": 676,
    "w": 236,
-   "h": 204,
+   "h": 496,
    "kind": "inc_w",
    "title": "Look for",
    "lines": [
@@ -459,7 +486,7 @@
    "x": 1341,
    "y": 676,
    "w": 236,
-   "h": 204,
+   "h": 496,
    "kind": "amb_w",
    "title": "Three causes",
    "lines": [
@@ -471,9 +498,9 @@
   {
    "id": "dim_tx_0_0",
    "x": 45,
-   "y": 920,
+   "y": 1212,
    "w": 236,
-   "h": 178,
+   "h": 432,
    "kind": "warn",
    "title": "Timely referral",
    "lines": [
@@ -483,9 +510,9 @@
   {
    "id": "bright_tx_0_0",
    "x": 293,
-   "y": 920,
+   "y": 1212,
    "w": 236,
-   "h": 178,
+   "h": 432,
    "kind": "warn",
    "title": "Refer",
    "lines": [
@@ -495,9 +522,9 @@
   {
    "id": "white_tx_0_0",
    "x": 541,
-   "y": 920,
+   "y": 1212,
    "w": 236,
-   "h": 178,
+   "h": 96,
    "kind": "bad",
    "title": "IMMEDIATE referral",
    "lines": [
@@ -507,11 +534,50 @@
    ]
   },
   {
+   "id": "white_tx_1_0",
+   "x": 541,
+   "y": 1330,
+   "w": 236,
+   "h": 78,
+   "kind": "ok",
+   "title": "Retinoblastoma treatment",
+   "lines": [
+    "• enucleation · chemotherapy",
+    "• radiotherapy · laser ± cryotherapy"
+   ]
+  },
+  {
+   "id": "white_tx_2_0",
+   "x": 541,
+   "y": 1430,
+   "w": 236,
+   "h": 114,
+   "kind": "ok",
+   "title": "Outcome",
+   "lines": [
+    "• 3-year survival ~96%",
+    "• > 95% cured with optimal care",
+    "• diagnosed late: up to 70% die worldwide"
+   ]
+  },
+  {
+   "id": "white_tx_3_0",
+   "x": 541,
+   "y": 1566,
+   "w": 236,
+   "h": 78,
+   "kind": "bad",
+   "title": "Germline RB1",
+   "lines": [
+    "more die of a SECOND cancer than of the tumour"
+   ]
+  },
+  {
    "id": "con_tx_0_0",
    "x": 817,
-   "y": 920,
+   "y": 1212,
    "w": 236,
-   "h": 96,
+   "h": 223,
    "kind": "warn",
    "title": "Refer if",
    "lines": [
@@ -523,9 +589,9 @@
   {
    "id": "con_tx_1_0",
    "x": 817,
-   "y": 1038,
+   "y": 1457,
    "w": 236,
-   "h": 60,
+   "h": 187,
    "kind": "ok",
    "title": "Patching, glasses, surgery",
    "lines": [
@@ -535,9 +601,9 @@
   {
    "id": "inc_tx_0_0",
    "x": 1065,
-   "y": 920,
+   "y": 1212,
    "w": 236,
-   "h": 178,
+   "h": 432,
    "kind": "warn",
    "title": "Refer to ophthalmology",
    "lines": []
@@ -545,9 +611,9 @@
   {
    "id": "amb_tx_0_0",
    "x": 1341,
-   "y": 920,
+   "y": 1212,
    "w": 236,
-   "h": 69,
+   "h": 196,
    "kind": "bad",
    "title": "IMMEDIATE referral",
    "lines": [
@@ -557,9 +623,9 @@
   {
    "id": "amb_tx_1_0",
    "x": 1341,
-   "y": 1011,
+   "y": 1430,
    "w": 236,
-   "h": 87,
+   "h": 214,
    "kind": "ok",
    "title": "Patch the GOOD eye",
    "lines": [
@@ -582,6 +648,26 @@
    "from": "root",
    "to": "g_am",
    "path": "M811.0 142V167H1459.0V192"
+  },
+  {
+   "from": "white_inv_0_0",
+   "to": "white_inv_1_0"
+  },
+  {
+   "from": "white_inv_1_0",
+   "to": "white_inv_2_0"
+  },
+  {
+   "from": "white_tx_0_0",
+   "to": "white_tx_1_0"
+  },
+  {
+   "from": "white_tx_1_0",
+   "to": "white_tx_2_0"
+  },
+  {
+   "from": "white_tx_2_0",
+   "to": "white_tx_3_0"
   },
   {
    "from": "con_tx_0_0",
@@ -644,7 +730,7 @@
    "to": "white_inv_0_0"
   },
   {
-   "from": "white_inv_0_0",
+   "from": "white_inv_2_0",
    "to": "white_tx_0_0"
   },
   {
@@ -724,20 +810,5 @@
    ]
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1132,
-   "w": 1532,
-   "title": "Retinoblastoma: rule it out FIRST",
-   "items": [
-    "1 in 180,000 births · embryonic retina, so most under 4",
-    "90% no family history (usually ONE eye) · 15% of one-eye cases carry a germline RB1 mutation · BOTH eyes → family history ~100%",
-    "enucleation · chemotherapy · radiotherapy · laser ± cryotherapy",
-    "3-year survival ~96% · > 95% cured with optimal care · up to 70% die when diagnosed late worldwide",
-    "germline RB1: more die of a SECOND cancer than of the tumour"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

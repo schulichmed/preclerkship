@@ -1,7 +1,7 @@
 {
  "name": "brain tumours overview",
- "width": 1068,
- "title": "Suspected brain tumour: progressive symptoms and raised intracranial pressure prompt a contrast MRI; metastasis is treated by resection and radiation, a glioma by its grade (an enhancing high-grade glioma is treated at once, a non-enhancing low-grade glioma can be watched), and primary CNS lymphoma is suspected in the immunosuppressed; raised pressure and herniation, tumour classification and paraneoplastic syndromes are compared below",
+ "width": 2036,
+ "title": "Suspected brain tumour: progressive symptoms and raised intracranial pressure prompt a contrast MRI; metastasis is treated by resection and radiation, a glioma by its grade (an enhancing high-grade glioma is treated at once, a non-enhancing low-grade glioma can be watched) and then its biomarkers set the prognosis, and primary CNS lymphoma is suspected in the immunosuppressed; further columns cover mass effect (raised pressure, then herniation) and paraneoplastic syndromes, the remote immune effects of cancer",
  "kinds": {
   "met_h": [
    "#1f6f8b",
@@ -74,60 +74,144 @@
    "#6a4aa8",
    "#6a4aa8",
    "#18212e"
+  ],
+  "icp_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "icp_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "icp_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "hern_h": [
+   "#8a5a2b",
+   "#8a5a2b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "hern_t": [
+   "#f3e6d8",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "hern_w": [
+   "#ffffff",
+   "#8a5a2b",
+   "#8a5a2b",
+   "#18212e"
+  ],
+  "para_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "para_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "para_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
   ]
  },
  "bands": [
   {
    "x": 40,
-   "y": 514,
-   "w": 246,
-   "h": 1064,
+   "y": 568,
+   "w": 270,
+   "h": 1176,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
-   "x": 316,
-   "y": 514,
-   "w": 246,
-   "h": 1064,
+   "x": 340,
+   "y": 568,
+   "w": 270,
+   "h": 1176,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
-   "x": 564,
-   "y": 514,
-   "w": 246,
-   "h": 1064,
+   "x": 612,
+   "y": 568,
+   "w": 270,
+   "h": 1176,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
-   "x": 812,
-   "y": 514,
-   "w": 246,
-   "h": 1064,
+   "x": 884,
+   "y": 568,
+   "w": 270,
+   "h": 1176,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
+  },
+  {
+   "x": 1184,
+   "y": 568,
+   "w": 270,
+   "h": 1176,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
+  },
+  {
+   "x": 1456,
+   "y": 568,
+   "w": 270,
+   "h": 1176,
+   "fill": "#faf4ee",
+   "stroke": "#8a5a2b"
+  },
+  {
+   "x": 1756,
+   "y": 568,
+   "w": 270,
+   "h": 642,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
   }
  ],
  "row_labels": [
   {
    "x": 23,
-   "y": 694,
-   "h": 306,
+   "y": 748,
+   "h": 454,
    "text": "CLUES"
   },
   {
    "x": 23,
-   "y": 1040,
-   "h": 530,
-   "text": "TREATMENT"
+   "y": 1242,
+   "h": 494,
+   "text": "TREATMENT · OUTCOME"
+  },
+  {
+   "x": 23,
+   "y": 1776,
+   "h": 224,
+   "text": "PROGNOSIS"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 169,
+   "x": 653,
    "y": 10,
    "w": 760,
    "kind": "dark",
@@ -145,8 +229,8 @@
    "id": "g_sec",
    "x": 45,
    "y": 282,
-   "w": 236,
-   "h": 60,
+   "w": 260,
+   "h": 114,
    "kind": "plain",
    "title": "SECONDARY: metastasis",
    "lines": [
@@ -155,21 +239,48 @@
   },
   {
    "id": "g_pri",
-   "x": 321,
+   "x": 345,
    "y": 282,
-   "w": 732,
-   "h": 60,
+   "w": 804,
+   "h": 114,
    "kind": "plain",
    "title": "PRIMARY",
    "lines": [
-    "gliomas are the most common primary"
+    "gliomas are the most common primary",
+    "• glioma: astrocytoma, oligodendroglioma, ependymoma",
+    "• meningioma · lymphoma · schwannoma, neurofibroma",
+    "• pituitary, craniopharyngioma · germ cell"
+   ]
+  },
+  {
+   "id": "g_mass",
+   "x": 1189,
+   "y": 282,
+   "w": 532,
+   "h": 114,
+   "kind": "plain",
+   "title": "MASS EFFECT: any mass",
+   "lines": [
+    "raised pressure → herniation"
+   ]
+  },
+  {
+   "id": "g_para",
+   "x": 1761,
+   "y": 282,
+   "w": 260,
+   "h": 114,
+   "kind": "plain",
+   "title": "REMOTE EFFECT of cancer",
+   "lines": [
+    "mostly IMMUNE"
    ]
   },
   {
    "id": "t_enh",
-   "x": 321,
-   "y": 382,
-   "w": 484,
+   "x": 345,
+   "y": 436,
+   "w": 532,
    "h": 60,
    "kind": "plain",
    "title": "Glioma: does it ENHANCE with contrast?",
@@ -180,8 +291,8 @@
   {
    "id": "met_head_0_0",
    "x": 45,
-   "y": 522,
-   "w": 236,
+   "y": 576,
+   "w": 260,
    "h": 132,
    "kind": "met_h",
    "title": "Brain metastasis",
@@ -193,9 +304,9 @@
   },
   {
    "id": "hgg_head_0_0",
-   "x": 321,
-   "y": 522,
-   "w": 236,
+   "x": 345,
+   "y": 576,
+   "w": 260,
    "h": 132,
    "kind": "hgg_h",
    "title": "High-grade glioma",
@@ -205,22 +316,22 @@
   },
   {
    "id": "lgg_head_0_0",
-   "x": 569,
-   "y": 522,
-   "w": 236,
+   "x": 617,
+   "y": 576,
+   "w": 260,
    "h": 132,
    "kind": "lgg_h",
    "title": "Low-grade glioma",
    "lines": [
     "grade 2 · slow, but still MALIGNANT",
-    "only grade 1 (pilocytic) is not"
+    "only grade 1 (pilocytic astrocytoma) is not"
    ]
   },
   {
    "id": "pcl_head_0_0",
-   "x": 817,
-   "y": 522,
-   "w": 236,
+   "x": 889,
+   "y": 576,
+   "w": 260,
    "h": 132,
    "kind": "pcl_h",
    "title": "Primary CNS lymphoma",
@@ -231,11 +342,50 @@
    ]
   },
   {
+   "id": "icp_head_0_0",
+   "x": 1189,
+   "y": 576,
+   "w": 260,
+   "h": 132,
+   "kind": "icp_h",
+   "title": "Raised intracranial pressure",
+   "lines": [
+    "Monro-Kellie: rigid skull",
+    "brain + CSF + blood + mass"
+   ]
+  },
+  {
+   "id": "hern_head_0_0",
+   "x": 1461,
+   "y": 576,
+   "w": 260,
+   "h": 132,
+   "kind": "hern_h",
+   "title": "Herniation",
+   "lines": [
+    "Cushing triad:",
+    "hypertension, bradycardia, apnea"
+   ]
+  },
+  {
+   "id": "para_head_0_0",
+   "x": 1761,
+   "y": 576,
+   "w": 260,
+   "h": 132,
+   "kind": "para_h",
+   "title": "Paraneoplastic syndromes",
+   "lines": [
+    "rare: 0.01% of cancers",
+    "PRECEDES the cancer by weeks to months"
+   ]
+  },
+  {
    "id": "met_pres_0_0",
    "x": 45,
-   "y": 694,
-   "w": 236,
-   "h": 150,
+   "y": 748,
+   "w": 260,
+   "h": 225,
    "kind": "met_t",
    "title": "Where from?",
    "lines": [
@@ -248,9 +398,9 @@
   {
    "id": "met_pres_1_0",
    "x": 45,
-   "y": 866,
-   "w": 236,
-   "h": 134,
+   "y": 995,
+   "w": 260,
+   "h": 207,
    "kind": "met_w",
    "title": "case: 75, 60 pack-years, 3 weeks",
    "lines": [
@@ -259,10 +409,10 @@
   },
   {
    "id": "hgg_pres_0_0",
-   "x": 321,
-   "y": 694,
-   "w": 236,
-   "h": 106,
+   "x": 345,
+   "y": 748,
+   "w": 260,
+   "h": 189,
    "kind": "hgg_t",
    "title": "SHORT history",
    "lines": [
@@ -271,10 +421,10 @@
   },
   {
    "id": "hgg_pres_1_0",
-   "x": 321,
-   "y": 822,
-   "w": 236,
-   "h": 178,
+   "x": 345,
+   "y": 959,
+   "w": 260,
+   "h": 243,
    "kind": "hgg_w",
    "title": "case: 78, 2 months",
    "lines": [
@@ -283,10 +433,10 @@
   },
   {
    "id": "lgg_pres_0_0",
-   "x": 569,
-   "y": 694,
-   "w": 236,
-   "h": 133,
+   "x": 617,
+   "y": 748,
+   "w": 260,
+   "h": 207,
    "kind": "lgg_t",
    "title": "LONG history",
    "lines": [
@@ -296,10 +446,10 @@
   },
   {
    "id": "lgg_pres_1_0",
-   "x": 569,
-   "y": 849,
-   "w": 236,
-   "h": 151,
+   "x": 617,
+   "y": 977,
+   "w": 260,
+   "h": 225,
    "kind": "lgg_w",
    "title": "case: 32, resident on call",
    "lines": [
@@ -308,10 +458,10 @@
   },
   {
    "id": "pcl_pres_0_0",
-   "x": 817,
-   "y": 694,
-   "w": 236,
-   "h": 306,
+   "x": 889,
+   "y": 748,
+   "w": 260,
+   "h": 454,
    "kind": "pcl_t",
    "title": "Who gets it?",
    "lines": [
@@ -321,11 +471,151 @@
    ]
   },
   {
+   "id": "icp_pres_0_0",
+   "x": 1189,
+   "y": 748,
+   "w": 260,
+   "h": 234,
+   "kind": "icp_t",
+   "title": "Mass effect",
+   "lines": [
+    "• focal: tumour, bleed, abscess, infarct",
+    "• generalized: hydrocephalus, meningitis",
+    "• edema after trauma, hypoxia, CPR",
+    "~ compensates only up to a point"
+   ]
+  },
+  {
+   "id": "icp_pres_1_0",
+   "x": 1189,
+   "y": 1004,
+   "w": 260,
+   "h": 198,
+   "kind": "icp_w",
+   "title": "Normal pressure",
+   "lines": [
+    "• adults 7.5-20 cm water (5-15 mmHg)",
+    "• children 3-7 · infants 1.5-6"
+   ]
+  },
+  {
+   "id": "hern_pres_0_0",
+   "x": 1461,
+   "y": 748,
+   "w": 260,
+   "h": 207,
+   "kind": "bad",
+   "title": "Uncal",
+   "lines": [
+    "• ipsilateral CN III palsy + dilated pupil",
+    "• contralateral weakness"
+   ]
+  },
+  {
+   "id": "hern_pres_1_0",
+   "x": 1461.0,
+   "y": 977,
+   "w": 125.0,
+   "h": 225,
+   "kind": "bad",
+   "title": "Central",
+   "lines": [
+    "↓ consciousness"
+   ]
+  },
+  {
+   "id": "hern_pres_1_1",
+   "x": 1596.0,
+   "y": 977,
+   "w": 125.0,
+   "h": 225,
+   "kind": "bad",
+   "title": "Tonsillar",
+   "lines": [
+    "medulla compressed: FATAL"
+   ]
+  },
+  {
+   "id": "para_pres_0_0",
+   "x": 1761.0,
+   "y": 748,
+   "w": 125.0,
+   "h": 132,
+   "kind": "para_w",
+   "title": "Lambert-Eaton",
+   "lines": [
+    "• 3% of small cell lung",
+    "• antibody: voltage-gated calcium channel"
+   ]
+  },
+  {
+   "id": "para_pres_0_1",
+   "x": 1896.0,
+   "y": 748,
+   "w": 125.0,
+   "h": 132,
+   "kind": "para_w",
+   "title": "Myasthenia gravis",
+   "lines": [
+    "• 15% of thymoma"
+   ]
+  },
+  {
+   "id": "para_pres_1_0",
+   "x": 1761.0,
+   "y": 902,
+   "w": 125.0,
+   "h": 116,
+   "kind": "para_w",
+   "title": "Cerebellar degeneration",
+   "lines": [
+    "• ovarian, breast, lung",
+    "• anti-Yo"
+   ]
+  },
+  {
+   "id": "para_pres_1_1",
+   "x": 1896.0,
+   "y": 902,
+   "w": 125.0,
+   "h": 116,
+   "kind": "para_w",
+   "title": "Neuropathy",
+   "lines": [
+    "• small cell lung",
+    "• osteosclerotic myeloma"
+   ]
+  },
+  {
+   "id": "para_pres_2_0",
+   "x": 1761,
+   "y": 1040,
+   "w": 260,
+   "h": 80,
+   "kind": "para_w",
+   "title": "Limbic encephalitis, encephalomyelitis",
+   "lines": [
+    "• small cell lung · anti-Hu"
+   ]
+  },
+  {
+   "id": "para_pres_3_0",
+   "x": 1761,
+   "y": 1142,
+   "w": 260,
+   "h": 60,
+   "kind": "para_w",
+   "title": "Opsoclonus-myoclonus",
+   "lines": [
+    "• childhood neuroblastoma"
+   ]
+  },
+  {
    "id": "met_tx_0_0",
    "x": 45,
-   "y": 1040,
-   "w": 236,
-   "h": 282,
+   "y": 1242,
+   "w": 260,
+   "h": 254,
    "kind": "ok",
    "title": "Accessible + causing symptoms",
    "lines": [
@@ -338,9 +628,9 @@
   {
    "id": "met_tx_1_0",
    "x": 45,
-   "y": 1344,
-   "w": 236,
-   "h": 226,
+   "y": 1518,
+   "w": 260,
+   "h": 218,
    "kind": "met_w",
    "title": "case outcome",
    "lines": [
@@ -349,9 +639,9 @@
   },
   {
    "id": "hgg_tx_0_0",
-   "x": 321,
-   "y": 1040,
-   "w": 236,
+   "x": 345,
+   "y": 1242,
+   "w": 260,
    "h": 168,
    "kind": "bad",
    "title": "TREAT IMMEDIATELY",
@@ -364,10 +654,10 @@
   },
   {
    "id": "hgg_tx_1_0",
-   "x": 321,
-   "y": 1230,
-   "w": 236,
-   "h": 186,
+   "x": 345,
+   "y": 1432,
+   "w": 260,
+   "h": 150,
    "kind": "hgg_w",
    "title": "Glioblastoma survival",
    "lines": [
@@ -379,9 +669,9 @@
   },
   {
    "id": "hgg_tx_2_0",
-   "x": 321,
-   "y": 1438,
-   "w": 236,
+   "x": 345,
+   "y": 1604,
+   "w": 260,
    "h": 132,
    "kind": "warn",
    "title": "Radiation side effects",
@@ -392,10 +682,10 @@
   },
   {
    "id": "lgg_tx_0_0",
-   "x": 569,
-   "y": 1040,
-   "w": 236,
-   "h": 90,
+   "x": 617,
+   "y": 1242,
+   "w": 260,
+   "h": 86,
    "kind": "ok",
    "title": "No symptoms or seizures controlled",
    "lines": [
@@ -404,10 +694,10 @@
   },
   {
    "id": "lgg_tx_1_0",
-   "x": 569,
-   "y": 1152,
-   "w": 236,
-   "h": 142,
+   "x": 617,
+   "y": 1350,
+   "w": 260,
+   "h": 120,
    "kind": "warn",
    "title": "TREAT if ANY of these",
    "lines": [
@@ -418,10 +708,10 @@
   },
   {
    "id": "lgg_tx_2_0",
-   "x": 569,
-   "y": 1316,
-   "w": 236,
-   "h": 142,
+   "x": 617,
+   "y": 1492,
+   "w": 260,
+   "h": 138,
    "kind": "ok",
    "title": "Then",
    "lines": [
@@ -433,10 +723,10 @@
   },
   {
    "id": "lgg_tx_3_0",
-   "x": 569,
-   "y": 1480,
-   "w": 236,
-   "h": 88,
+   "x": 617,
+   "y": 1652,
+   "w": 260,
+   "h": 84,
    "kind": "lgg_w",
    "title": "Median survival 5-15 years",
    "lines": [
@@ -445,14 +735,100 @@
   },
   {
    "id": "pcl_tx_0_0",
-   "x": 817,
-   "y": 1040,
-   "w": 236,
-   "h": 530,
+   "x": 889,
+   "y": 1242,
+   "w": 260,
+   "h": 494,
    "kind": "pcl_w",
    "title": "Tissue diagnosis",
    "lines": [
     "biopsy, as for every brain tumour"
+   ]
+  },
+  {
+   "id": "icp_tx_0_0",
+   "x": 1189,
+   "y": 1242,
+   "w": 260,
+   "h": 236,
+   "kind": "bad",
+   "title": "Lumbar puncture: CAUTION",
+   "lines": [
+    "with a mass"
+   ]
+  },
+  {
+   "id": "icp_tx_1_0",
+   "x": 1189,
+   "y": 1500,
+   "w": 260,
+   "h": 236,
+   "kind": "ok",
+   "title": "Monitor or ventricular drain",
+   "lines": [
+    "drains CSF"
+   ]
+  },
+  {
+   "id": "hern_tx_0_0",
+   "x": 1461,
+   "y": 1242,
+   "w": 260,
+   "h": 494,
+   "kind": "warn",
+   "title": "Descending: damage",
+   "lines": [
+    "• CN III (most common), IV, VI",
+    "• PCA, ACA stroke",
+    "• Duret hemorrhage"
+   ]
+  },
+  {
+   "id": "span0_prog_0_0",
+   "x": 345,
+   "y": 1776,
+   "w": 532,
+   "h": 60,
+   "kind": "info",
+   "title": "Integrated diagnosis",
+   "lines": [
+    "histology + grade + biomarkers"
+   ]
+  },
+  {
+   "id": "span0_prog_1_0",
+   "x": 345.0,
+   "y": 1858,
+   "w": 261.0,
+   "h": 60,
+   "kind": "ok",
+   "title": "IDH mutant + 1p/19q co-deleted",
+   "lines": [
+    "→ BETTER prognosis"
+   ]
+  },
+  {
+   "id": "span0_prog_1_1",
+   "x": 616.0,
+   "y": 1858,
+   "w": 261.0,
+   "h": 60,
+   "kind": "bad",
+   "title": "IDH wild-type, 1p/19q intact",
+   "lines": [
+    "→ worse"
+   ]
+  },
+  {
+   "id": "span0_prog_2_0",
+   "x": 345,
+   "y": 1940,
+   "w": 532,
+   "h": 60,
+   "kind": "plain",
+   "title": "Astrocytoma",
+   "lines": [
+    "more aggressive than oligodendroglioma"
    ]
   }
  ],
@@ -460,17 +836,27 @@
   {
    "from": "root",
    "to": "g_sec",
-   "path": "M549.0 232V257H163.0V282"
+   "path": "M1033.0 232V257H175.0V282"
   },
   {
    "from": "root",
    "to": "g_pri",
-   "path": "M549.0 232V257H687.0V282"
+   "path": "M1033.0 232V257H747.0V282"
+  },
+  {
+   "from": "root",
+   "to": "g_mass",
+   "path": "M1033.0 232V257H1455.0V282"
+  },
+  {
+   "from": "root",
+   "to": "g_para",
+   "path": "M1033.0 232V257H1891.0V282"
   },
   {
    "from": "g_pri",
    "to": "t_enh",
-   "from_dx": -124
+   "from_dx": -136
   },
   {
    "from": "met_pres_0_0",
@@ -483,6 +869,42 @@
   {
    "from": "lgg_pres_0_0",
    "to": "lgg_pres_1_0"
+  },
+  {
+   "from": "icp_pres_0_0",
+   "to": "icp_pres_1_0"
+  },
+  {
+   "from": "hern_pres_0_0",
+   "to": "hern_pres_1_0",
+   "from_dx": -67.5
+  },
+  {
+   "from": "hern_pres_0_0",
+   "to": "hern_pres_1_1",
+   "from_dx": 67.5
+  },
+  {
+   "from": "para_pres_0_0",
+   "to": "para_pres_1_0"
+  },
+  {
+   "from": "para_pres_0_1",
+   "to": "para_pres_1_1"
+  },
+  {
+   "from": "para_pres_1_0",
+   "to": "para_pres_2_0",
+   "to_dx": -67.5
+  },
+  {
+   "from": "para_pres_1_1",
+   "to": "para_pres_2_0",
+   "to_dx": 67.5
+  },
+  {
+   "from": "para_pres_2_0",
+   "to": "para_pres_3_0"
   },
   {
    "from": "met_tx_0_0",
@@ -509,6 +931,30 @@
    "to": "lgg_tx_3_0"
   },
   {
+   "from": "icp_tx_0_0",
+   "to": "icp_tx_1_0"
+  },
+  {
+   "from": "span0_prog_0_0",
+   "to": "span0_prog_1_0",
+   "from_dx": -135.5
+  },
+  {
+   "from": "span0_prog_0_0",
+   "to": "span0_prog_1_1",
+   "from_dx": 135.5
+  },
+  {
+   "from": "span0_prog_1_0",
+   "to": "span0_prog_2_0",
+   "to_dx": -135.5
+  },
+  {
+   "from": "span0_prog_1_1",
+   "to": "span0_prog_2_0",
+   "to_dx": 135.5
+  },
+  {
    "from": "met_head_0_0",
    "to": "met_pres_0_0"
   },
@@ -522,8 +968,8 @@
    "from_dx": 0,
    "label": "known cancer, smoker",
    "label_at": [
-    163.0,
-    482
+    175.0,
+    536
    ]
   },
   {
@@ -535,13 +981,18 @@
    "to": "hgg_tx_0_0"
   },
   {
+   "from": "hgg_tx_2_0",
+   "to": "span0_prog_0_0",
+   "to_dx": -136.0
+  },
+  {
    "from": "t_enh",
    "to": "hgg_head_0_0",
-   "from_dx": -124,
+   "from_dx": -136,
    "label": "ENHANCES",
    "label_at": [
-    439.0,
-    482
+    475.0,
+    536
    ]
   },
   {
@@ -553,13 +1004,18 @@
    "to": "lgg_tx_0_0"
   },
   {
+   "from": "lgg_tx_3_0",
+   "to": "span0_prog_0_0",
+   "to_dx": 136.0
+  },
+  {
    "from": "t_enh",
    "to": "lgg_head_0_0",
-   "from_dx": 124,
+   "from_dx": 136,
    "label": "does NOT enhance",
    "label_at": [
-    687.0,
-    482
+    747.0,
+    536
    ]
   },
   {
@@ -573,58 +1029,60 @@
   {
    "from": "g_pri",
    "to": "pcl_head_0_0",
-   "from_dx": 248,
+   "from_dx": 272,
    "label": "immunosuppressed",
    "label_at": [
-    935.0,
-    482
+    1019.0,
+    536
    ]
+  },
+  {
+   "from": "icp_head_0_0",
+   "to": "icp_pres_0_0"
+  },
+  {
+   "from": "icp_pres_1_0",
+   "to": "icp_tx_0_0"
+  },
+  {
+   "from": "g_mass",
+   "to": "icp_head_0_0",
+   "from_dx": -136
+  },
+  {
+   "from": "hern_head_0_0",
+   "to": "hern_pres_0_0"
+  },
+  {
+   "from": "hern_pres_1_0",
+   "to": "hern_tx_0_0",
+   "to_dx": -67.5
+  },
+  {
+   "from": "hern_pres_1_1",
+   "to": "hern_tx_0_0",
+   "to_dx": 67.5
+  },
+  {
+   "from": "g_mass",
+   "to": "hern_head_0_0",
+   "from_dx": 136
+  },
+  {
+   "from": "para_head_0_0",
+   "to": "para_pres_0_0",
+   "from_dx": -67.5
+  },
+  {
+   "from": "para_head_0_0",
+   "to": "para_pres_0_1",
+   "from_dx": 67.5
+  },
+  {
+   "from": "g_para",
+   "to": "para_head_0_0",
+   "from_dx": 0
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1604,
-   "w": 327,
-   "title": "Raised pressure and herniation",
-   "items": [
-    "normal: adults 7.5-20 cm water (5-15 mmHg) · children 3-7 · infants 1.5-6",
-    "Monro-Kellie: rigid skull · brain + CSF + blood + mass · compensates only up to a point",
-    "mass effect: focal (tumour, bleed, abscess, infarct) · generalized (hydrocephalus, meningitis, edema after trauma, hypoxia, CPR)",
-    "lumbar puncture: CAUTION with a mass · monitor or ventricular drain (drains CSF)",
-    "uncal: ipsilateral CN III palsy + dilated pupil · contralateral weakness",
-    "central: ↓ consciousness · tonsillar: medulla compressed, FATAL",
-    "descending: CN III (most common), IV, VI · PCA, ACA stroke · Duret hemorrhage · Cushing triad: hypertension, bradycardia, apnea"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 386,
-   "y": 1604,
-   "w": 327,
-   "title": "Primary tumour classification",
-   "items": [
-    "glioma (astrocytoma, oligodendroglioma, ependymoma) · meningioma · lymphoma · schwannoma, neurofibroma · pituitary, craniopharyngioma · germ cell",
-    "WHO grade: 1 pilocytic astrocytoma · 2 low grade · 3 anaplastic · 4 glioblastoma",
-    "IDH mutant + 1p/19q co-deleted → BETTER prognosis · IDH wild-type, 1p/19q intact → worse",
-    "integrated diagnosis = histology + grade + biomarkers · astrocytoma more aggressive than oligodendroglioma"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 726,
-   "y": 1604,
-   "w": 327,
-   "title": "Paraneoplastic neurologic syndromes",
-   "items": [
-    "rare (0.01% of cancers) · mostly immune · neuro symptoms PRECEDE the cancer by weeks to months",
-    "Lambert-Eaton: 3% of small cell lung · anti-voltage-gated calcium channel",
-    "myasthenia gravis: 15% of thymoma",
-    "cerebellar degeneration: ovarian, breast, lung · anti-Yo",
-    "limbic encephalitis, encephalomyelitis: small cell lung · anti-Hu",
-    "neuropathy: small cell lung, osteosclerotic myeloma · opsoclonus-myoclonus: childhood neuroblastoma"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

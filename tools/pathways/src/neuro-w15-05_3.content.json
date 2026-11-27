@@ -1,7 +1,7 @@
 {
  "name": "pediatric seizures overview",
- "title": "A child with a seizure: ABCDE and a bedside glucose and blood gas for every child, then fever and the seizure's features sort a simple from a complex febrile seizure, and a seizure past 5 minutes is convulsive status epilepticus treated by the clock with benzodiazepines, then a second-line load, then the intensive care unit; causes by age and cause-specific treatment are below",
- "col_w": 270,
+ "title": "A child with a seizure: ABCDE and a bedside glucose and blood gas for every child, then fever and the seizure's features sort a simple from a complex febrile seizure, and a seizure past 5 minutes is convulsive status epilepticus treated by the clock with benzodiazepines, then a second-line load, then the intensive care unit, and then its causes by age and the treatment of each cause",
+ "col_w": 330,
  "root": {
   "title": "Child seizing: ABCDE + time it",
   "lines": [
@@ -17,8 +17,8 @@
   {"id": "g_feb", "cols": [0, 1], "title": "FEVER, age 6 months-5 years: FEBRILE seizure", "lines": ["only if NO CNS infection, NO acute electrolyte problem, NO past afebrile seizure", "WORRY: not back to baseline · meningeal signs or toxic look · delay or neurologic condition"]},
   {"id": "g_se", "cols": [2, 2], "title": "Still seizing at 5 MINUTES", "lines": ["or no return to baseline between seizures"]}
  ],
- "sections": ["head", "pres", "inv", "tx"],
- "row_names": {"pres": "PRESENTS AS", "inv": "WORKUP", "tx": "TREATMENT"},
+ "sections": ["head", "pres", "inv", "tx", "cause", "fix"],
+ "row_names": {"pres": "PRESENTS AS", "inv": "WORKUP", "tx": "TREATMENT", "cause": "CAUSES", "fix": "TREAT THE CAUSE"},
  "dashed_sections": ["pres"],
  "columns": [
   {"id": "sfs", "colour": "teal", "drop_label": "ALL of these",
@@ -40,24 +40,14 @@
    "inv": [[["w", "Stepwise, by the differential", ["• calcium, magnesium, drug levels", "• infection: blood count, CRP, cultures, CSF if stable", "• head CT: head injury, focal signs, raised pressure (pupils, high BP + slow pulse, vomiting, lethargy)", "• EEG: subtle or non-convulsive", "• MRI once stable: structure"]]]],
    "tx": [[["ok", "1 · BENZODIAZEPINE", ["• IV lorazepam or midazolam", "• no IV access: sublingual lorazepam or intranasal midazolam", "• repeat every 3-5 min, 2-3 doses", "• watch: breathing, airway, low BP"]]],
           [["warn", "2 · Second-line IV load", ["~given over 20-30 minutes", "• LEVETIRACETAM (most used)", "• PHENOBARBITAL if < 30 days old", "• or phenytoin / fosphenytoin"]]],
-          [["bad", "3 · Refractory → ICU", ["benzodiazepine infusion · ketamine"]]]]}
- ],
- "panels": [
-  {"title": "Treat the cause", "items": [
-   "low glucose → IV dextrose, rule of 50: D10 5 mL/kg (or D5 10 mL/kg) · D25, D50 NOT peripheral (thrombosis, phlebitis)",
-   "low sodium → 3% saline 3-5 mL/kg IV",
-   "meningitis → antibiotics",
-   "inborn error of metabolism → D10 (anabolic) + nothing by mouth",
-   "bleed → EMERGENCY neurosurgery"]},
-  {"title": "Causes of status (over 1 month)", "items": [
-   "acute: CNS infection · anoxia · glucose high or low, low sodium, low calcium · trauma · missed or stopped anti-seizure drug, overdose",
-   "prolonged febrile seizure",
-   "remote: brain malformation · perinatal hypoxic-ischemic encephalopathy · neurodegenerative · old stroke, trauma, meningitis",
-   "idiopathic epilepsy · triggers: fever, dehydration, missed drug, toxins"]},
-  {"title": "Newborn causes", "items": [
-   "inborn errors of metabolism · genetic epilepsy syndromes",
-   "low glucose, calcium, magnesium",
-   "intracranial bleed, stroke",
-   "infection in utero or at birth · hypoxic-ischemic encephalopathy"]}
+          [["bad", "3 · Refractory → ICU", ["benzodiazepine infusion · ketamine"]]]],
+   "cause": [[["w", "Acute (over 1 month)", ["• CNS infection · anoxia · trauma", "• glucose high or low", "• low sodium, low calcium", "• missed or stopped anti-seizure drug, overdose"]],
+              ["w", "Remote (over 1 month)", ["• brain malformation", "• perinatal hypoxic-ischemic encephalopathy", "• neurodegenerative", "• old stroke, trauma, meningitis"]]],
+             [["w", "Prolonged febrile seizure", []], ["w", "Idiopathic epilepsy", ["triggers: fever, dehydration, missed drug, toxins"]]],
+             [["w", "NEWBORN: metabolic, genetic", ["• inborn errors of metabolism", "• genetic epilepsy syndromes", "• low glucose, calcium, magnesium"]],
+              ["w", "NEWBORN: injury, infection", ["• intracranial bleed, stroke", "• infection in utero or at birth", "• hypoxic-ischemic encephalopathy"]]]],
+   "fix": [[["ok", "Low glucose → IV DEXTROSE", ["• rule of 50: D10 5 mL/kg (or D5 10 mL/kg)", "• D25, D50 NOT peripheral: thrombosis, phlebitis"]]],
+           [["ok", "Low sodium", ["3% saline 3-5 mL/kg IV"]], ["ok", "Meningitis", ["antibiotics"]]],
+           [["ok", "Inborn error of metabolism", ["D10 (anabolic) + nothing by mouth"]], ["bad", "Bleed", ["EMERGENCY neurosurgery"]]]]}
  ]
 }

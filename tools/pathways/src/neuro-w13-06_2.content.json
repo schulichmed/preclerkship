@@ -1,6 +1,6 @@
 {
  "name": "spinal cord syndromes overview",
- "title": "Spinal cord or root: upper motor neuron signs below a sensory level mean the cord, and which tracts are lost (corticospinal, spinothalamic, dorsal columns) sorts anterior, posterior, central and Brown-Sequard cord syndromes; a lower motor neuron pattern means the roots, either cauda equina (an emergency) or a single radiculopathy; each column gives the tracts hit, the presentation and the causes",
+ "title": "Spinal cord or root: upper motor neuron signs below a sensory level mean the cord, and which tracts are lost (corticospinal, spinothalamic, dorsal columns) sorts anterior, posterior, central and Brown-Sequard cord syndromes; a lower motor neuron pattern means the roots, either cauda equina (an emergency) or a single radiculopathy; each column gives the tracts hit, the presentation and the causes, and a shared row lists every other kind of cord cause",
  "col_w": 158,
  "root": {
   "title": "Cord or root? Motor exam + the LOWEST sensory level",
@@ -40,13 +40,66 @@
   "head",
   "tract",
   "pres",
-  "cause"
+  "cause",
+  "more"
  ],
  "row_names": {
   "pres": "PRESENTS AS",
   "cause": "CAUSES",
-  "tract": "TRACTS HIT"
+  "tract": "TRACTS HIT",
+  "more": "NOT JUST TRAUMA OR TUMOUR"
  },
+ "spans": [
+  {
+   "section": "more",
+   "cols": [
+    0,
+    3
+   ],
+   "rows": [
+    [
+     [
+      "plain",
+      "Vascular · infectious",
+      [
+       "• vascular: stroke, AVM, fistula",
+       "• infectious: epidural abscess, viral",
+       "• infectious: syphilis (tabes dorsalis)"
+      ]
+     ],
+     [
+      "plain",
+      "Trauma · autoimmune · metabolic",
+      [
+       "• trauma: fracture, stab, disc, radiation",
+       "• autoimmune: lupus",
+       "• metabolic: B12 (subacute combined degeneration)"
+      ]
+     ]
+    ],
+    [
+     [
+      "plain",
+      "Inflammatory · neoplastic",
+      [
+       "• inflammatory: multiple sclerosis",
+       "• also: transverse myelitis, syrinx",
+       "• neoplastic: metastatic, extradural, intrinsic"
+      ]
+     ],
+     [
+      "plain",
+      "Congenital · degenerative",
+      [
+       "• congenital: achondroplasia",
+       "• degenerative: disc herniation, arthritis",
+       "• degenerative: motor neuron disease (ALS)"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
  "dashed_sections": [
   "pres"
  ],
@@ -386,17 +439,6 @@
       ]
      ]
     ]
-   ]
-  }
- ],
- "panels": [
-  {
-   "title": "Cord causes: not just trauma or tumour",
-   "items": [
-    "vascular: stroke, AVM, fistula · infectious: epidural abscess, viral, syphilis (tabes dorsalis)",
-    "trauma: fracture, stab, disc, radiation · autoimmune: lupus · metabolic: B12 (subacute combined degeneration)",
-    "inflammatory: multiple sclerosis · also: transverse myelitis, syrinx · neoplastic: metastatic, extradural, intrinsic",
-    "congenital: achondroplasia · degenerative: disc herniation, arthritis, motor neuron disease (ALS)"
    ]
   }
  ]

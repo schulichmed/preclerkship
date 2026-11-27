@@ -1,7 +1,7 @@
 {
  "name": "red eye overview",
- "width": 1896,
- "title": "Red eye: red flags decide whether it is vision threatening. Without them it is the lids, a conjunctivitis told apart by its discharge and itch, a subconjunctival hemorrhage or a corneal abrasion; with them it is keratitis, anterior uveitis or acute angle closure glaucoma and needs urgent ophthalmology; each column gives the presentation, the exam finding that decides it and the treatment, with the differential by structure below",
+ "width": 2078,
+ "title": "Red eye: red flags decide whether it is vision threatening. Without them it is the lids, a conjunctivitis told apart by its discharge and itch, a subconjunctival hemorrhage or a corneal abrasion; with them it is keratitis, anterior uveitis or acute angle closure glaucoma and needs urgent ophthalmology; each column gives the presentation, the exam finding that decides it and the treatment, and a last column for the other vision threats (orbit, sclera, globe)",
  "kinds": {
   "lid_h": [
    "#8a5a2b",
@@ -182,106 +182,132 @@
    "#1f5f9e",
    "#1f5f9e",
    "#18212e"
+  ],
+  "oth_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "oth_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "oth_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
   ]
  },
  "bands": [
   {
    "x": 40,
-   "y": 396,
+   "y": 450,
    "w": 180,
-   "h": 966,
+   "h": 1094,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
   {
    "x": 222,
-   "y": 396,
+   "y": 450,
    "w": 180,
-   "h": 966,
+   "h": 1094,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 404,
-   "y": 396,
+   "y": 450,
    "w": 180,
-   "h": 966,
+   "h": 1094,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 586,
-   "y": 396,
+   "y": 450,
    "w": 180,
-   "h": 966,
+   "h": 1094,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 768,
-   "y": 396,
+   "y": 450,
    "w": 180,
-   "h": 966,
+   "h": 1094,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
   {
    "x": 950,
-   "y": 396,
+   "y": 450,
    "w": 180,
-   "h": 966,
+   "h": 1094,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   },
   {
    "x": 1132,
-   "y": 396,
+   "y": 450,
    "w": 180,
-   "h": 966,
+   "h": 1094,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 1342,
-   "y": 396,
+   "y": 450,
    "w": 180,
-   "h": 966,
+   "h": 1094,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 1524,
-   "y": 396,
+   "y": 450,
    "w": 180,
-   "h": 966,
+   "h": 1094,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 1706,
-   "y": 396,
+   "y": 450,
    "w": 180,
-   "h": 966,
+   "h": 1094,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
+  },
+  {
+   "x": 1888,
+   "y": 450,
+   "w": 180,
+   "h": 558,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
   }
  ],
  "row_labels": [
   {
    "x": 23,
-   "y": 578,
-   "h": 240,
+   "y": 632,
+   "h": 368,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 858,
+   "y": 1040,
    "h": 150,
    "text": "EXAM"
   },
   {
    "x": 23,
-   "y": 1048,
+   "y": 1230,
    "h": 306,
    "text": "TREATMENT"
   }
@@ -289,7 +315,7 @@
  "nodes": [
   {
    "id": "root",
-   "x": 583,
+   "x": 674,
    "y": 10,
    "w": 760,
    "kind": "dark",
@@ -307,51 +333,58 @@
    "x": 45,
    "y": 264,
    "w": 1262,
-   "h": 60,
+   "h": 114,
    "kind": "plain",
    "title": "NO red flags: lids, conjunctiva, surface",
    "lines": [
-    "acuity and pressure normal: treat or reassure"
+    "acuity and pressure normal: treat or reassure",
+    "• NOT threatening: blepharitis, stye, chalazion, conjunctivitis, dry eye, abrasion, subconjunctival hemorrhage"
    ]
   },
   {
    "id": "g_bad",
    "x": 1347,
    "y": 264,
-   "w": 534,
-   "h": 60,
+   "w": 716,
+   "h": 114,
    "kind": "plain",
    "title": "RED FLAGS: vision threatening",
    "lines": [
-    "URGENT referral to ophthalmology"
+    "URGENT referral to ophthalmology",
+    "• cornea: ulcer, keratitis",
+    "• anterior chamber: uveitis, acute angle closure",
+    "• scleritis · trauma · orbital cellulitis"
    ]
   },
   {
    "id": "lid_head_0_0",
    "x": 45,
-   "y": 404,
+   "y": 458,
    "w": 170,
    "h": 134,
    "kind": "lid_h",
    "title": "Stye · chalazion · entropion",
-   "lines": []
+   "lines": [
+    "LIDS · also blepharitis, ectropion"
+   ]
   },
   {
    "id": "vir_head_0_0",
    "x": 227,
-   "y": 404,
+   "y": 458,
    "w": 170,
    "h": 134,
    "kind": "vir_h",
    "title": "Viral conjunctivitis",
    "lines": [
-    "usually adenovirus · with sore throat, fever"
+    "CONJUNCTIVA · usually adenovirus",
+    "with sore throat, fever"
    ]
   },
   {
    "id": "bac_head_0_0",
    "x": 409,
-   "y": 404,
+   "y": 458,
    "w": 170,
    "h": 134,
    "kind": "bac_h",
@@ -363,17 +396,19 @@
   {
    "id": "gon_head_0_0",
    "x": 591,
-   "y": 404,
+   "y": 458,
    "w": 170,
    "h": 134,
    "kind": "gon_h",
    "title": "Gonococcal conjunctivitis",
-   "lines": []
+   "lines": [
+    "or chlamydial"
+   ]
   },
   {
    "id": "all_head_0_0",
    "x": 773,
-   "y": 404,
+   "y": 458,
    "w": 170,
    "h": 134,
    "kind": "all_h",
@@ -383,7 +418,7 @@
   {
    "id": "sch_head_0_0",
    "x": 955,
-   "y": 404,
+   "y": 458,
    "w": 170,
    "h": 134,
    "kind": "sch_h",
@@ -393,55 +428,72 @@
   {
    "id": "abr_head_0_0",
    "x": 1137,
-   "y": 404,
+   "y": 458,
    "w": 170,
    "h": 134,
    "kind": "abr_h",
    "title": "Corneal abrasion",
-   "lines": []
+   "lines": [
+    "CORNEA · foreign body"
+   ]
   },
   {
    "id": "ker_head_0_0",
    "x": 1347,
-   "y": 404,
+   "y": 458,
    "w": 170,
    "h": 134,
    "kind": "ker_h",
    "title": "Bacterial keratitis",
    "lines": [
-    "contact lens-related"
+    "CORNEA · ulcer · contact lens-related",
+    "also herpetic keratitis"
    ]
   },
   {
    "id": "uv_head_0_0",
    "x": 1529,
-   "y": 404,
+   "y": 458,
    "w": 170,
    "h": 134,
    "kind": "uv_h",
    "title": "Anterior uveitis (iritis)",
    "lines": [
+    "ANTERIOR CHAMBER",
     "HLA-B27; ~50% idiopathic"
    ]
   },
   {
    "id": "aac_head_0_0",
    "x": 1711,
-   "y": 404,
+   "y": 458,
    "w": 170,
    "h": 134,
    "kind": "aac_h",
    "title": "Acute angle closure glaucoma",
    "lines": [
+    "ANTERIOR CHAMBER",
     "aqueous cannot drain"
+   ]
+  },
+  {
+   "id": "oth_head_0_0",
+   "x": 1893,
+   "y": 458,
+   "w": 170,
+   "h": 134,
+   "kind": "oth_h",
+   "title": "Other vision threats",
+   "lines": [
+    "orbit · sclera · globe · skin"
    ]
   },
   {
    "id": "lid_pres_0_0",
    "x": 45,
-   "y": 578,
+   "y": 632,
    "w": 170,
-   "h": 240,
+   "h": 368,
    "kind": "lid_t",
    "title": "Eyelid problem",
    "lines": [
@@ -454,9 +506,9 @@
   {
    "id": "vir_pres_0_0",
    "x": 227,
-   "y": 578,
+   "y": 632,
    "w": 170,
-   "h": 240,
+   "h": 368,
    "kind": "vir_t",
    "title": "Watery, after a cold",
    "lines": [
@@ -468,9 +520,9 @@
   {
    "id": "bac_pres_0_0",
    "x": 409,
-   "y": 578,
+   "y": 632,
    "w": 170,
-   "h": 240,
+   "h": 368,
    "kind": "bac_t",
    "title": "Lids GLUED on waking",
    "lines": [
@@ -481,9 +533,9 @@
   {
    "id": "gon_pres_0_0",
    "x": 591,
-   "y": 578,
+   "y": 632,
    "w": 170,
-   "h": 240,
+   "h": 368,
    "kind": "gon_t",
    "title": "SEVERE pus",
    "lines": [
@@ -494,9 +546,9 @@
   {
    "id": "all_pres_0_0",
    "x": 773,
-   "y": 578,
+   "y": 632,
    "w": 170,
-   "h": 240,
+   "h": 368,
    "kind": "all_t",
    "title": "ITCH, both eyes",
    "lines": [
@@ -507,9 +559,9 @@
   {
    "id": "sch_pres_0_0",
    "x": 955,
-   "y": 578,
+   "y": 632,
    "w": 170,
-   "h": 240,
+   "h": 368,
    "kind": "sch_t",
    "title": "Painless red patch",
    "lines": [
@@ -521,9 +573,9 @@
   {
    "id": "abr_pres_0_0",
    "x": 1137,
-   "y": 578,
+   "y": 632,
    "w": 170,
-   "h": 240,
+   "h": 368,
    "kind": "abr_t",
    "title": "Sudden sharp pain",
    "lines": [
@@ -535,9 +587,9 @@
   {
    "id": "ker_pres_0_0",
    "x": 1347,
-   "y": 578,
+   "y": 632,
    "w": 170,
-   "h": 240,
+   "h": 368,
    "kind": "ker_t",
    "title": "Worsening pain",
    "lines": [
@@ -549,9 +601,9 @@
   {
    "id": "uv_pres_0_0",
    "x": 1529,
-   "y": 578,
+   "y": 632,
    "w": 170,
-   "h": 240,
+   "h": 368,
    "kind": "uv_t",
    "title": "PHOTOPHOBIA, pain",
    "lines": [
@@ -563,9 +615,9 @@
   {
    "id": "aac_pres_0_0",
    "x": 1711,
-   "y": 578,
+   "y": 632,
    "w": 170,
-   "h": 240,
+   "h": 368,
    "kind": "aac_t",
    "title": "Pain, brow ache, vomiting",
    "lines": [
@@ -574,9 +626,49 @@
    ]
   },
   {
+   "id": "oth_pres_0_0",
+   "x": 1893,
+   "y": 632,
+   "w": 170,
+   "h": 114,
+   "kind": "oth_t",
+   "title": "Orbit",
+   "lines": [
+    "• orbital vs preseptal cellulitis",
+    "• blunt trauma: orbital fracture"
+   ]
+  },
+  {
+   "id": "oth_pres_1_0",
+   "x": 1893,
+   "y": 768,
+   "w": 170,
+   "h": 96,
+   "kind": "oth_t",
+   "title": "Globe, sclera",
+   "lines": [
+    "• penetrating injury",
+    "• endophthalmitis",
+    "• scleritis"
+   ]
+  },
+  {
+   "id": "oth_pres_2_0",
+   "x": 1893,
+   "y": 886,
+   "w": 170,
+   "h": 114,
+   "kind": "oth_t",
+   "title": "Cornea, skin",
+   "lines": [
+    "• chemical burn: acid, alkali",
+    "• herpes zoster ophthalmicus"
+   ]
+  },
+  {
    "id": "lid_inv_0_0",
    "x": 45,
-   "y": 858,
+   "y": 1040,
    "w": 170,
    "h": 150,
    "kind": "lid_w",
@@ -590,7 +682,7 @@
   {
    "id": "vir_inv_0_0",
    "x": 227,
-   "y": 858,
+   "y": 1040,
    "w": 170,
    "h": 150,
    "kind": "vir_w",
@@ -604,7 +696,7 @@
   {
    "id": "bac_inv_0_0",
    "x": 409,
-   "y": 858,
+   "y": 1040,
    "w": 170,
    "h": 150,
    "kind": "bac_w",
@@ -617,7 +709,7 @@
   {
    "id": "gon_inv_0_0",
    "x": 591,
-   "y": 858,
+   "y": 1040,
    "w": 170,
    "h": 150,
    "kind": "gon_w",
@@ -629,7 +721,7 @@
   {
    "id": "all_inv_0_0",
    "x": 773,
-   "y": 858,
+   "y": 1040,
    "w": 170,
    "h": 150,
    "kind": "all_w",
@@ -641,7 +733,7 @@
   {
    "id": "sch_inv_0_0",
    "x": 955,
-   "y": 858,
+   "y": 1040,
    "w": 170,
    "h": 150,
    "kind": "sch_w",
@@ -654,7 +746,7 @@
   {
    "id": "abr_inv_0_0",
    "x": 1137,
-   "y": 858,
+   "y": 1040,
    "w": 170,
    "h": 150,
    "kind": "abr_w",
@@ -667,7 +759,7 @@
   {
    "id": "ker_inv_0_0",
    "x": 1347,
-   "y": 858,
+   "y": 1040,
    "w": 170,
    "h": 150,
    "kind": "ker_w",
@@ -681,7 +773,7 @@
   {
    "id": "uv_inv_0_0",
    "x": 1529,
-   "y": 858,
+   "y": 1040,
    "w": 170,
    "h": 150,
    "kind": "uv_w",
@@ -694,7 +786,7 @@
   {
    "id": "aac_inv_0_0",
    "x": 1711,
-   "y": 858,
+   "y": 1040,
    "w": 170,
    "h": 150,
    "kind": "aac_w",
@@ -708,7 +800,7 @@
   {
    "id": "lid_tx_0_0",
    "x": 45,
-   "y": 1048,
+   "y": 1230,
    "w": 170,
    "h": 188,
    "kind": "ok",
@@ -721,7 +813,7 @@
   {
    "id": "lid_tx_1_0",
    "x": 45,
-   "y": 1258,
+   "y": 1440,
    "w": 170,
    "h": 96,
    "kind": "warn",
@@ -733,7 +825,7 @@
   {
    "id": "vir_tx_0_0",
    "x": 227,
-   "y": 1048,
+   "y": 1230,
    "w": 170,
    "h": 306,
    "kind": "ok",
@@ -747,7 +839,7 @@
   {
    "id": "bac_tx_0_0",
    "x": 409,
-   "y": 1048,
+   "y": 1230,
    "w": 170,
    "h": 306,
    "kind": "ok",
@@ -759,7 +851,7 @@
   {
    "id": "gon_tx_0_0",
    "x": 591,
-   "y": 1048,
+   "y": 1230,
    "w": 170,
    "h": 306,
    "kind": "bad",
@@ -772,7 +864,7 @@
   {
    "id": "all_tx_0_0",
    "x": 773,
-   "y": 1048,
+   "y": 1230,
    "w": 170,
    "h": 306,
    "kind": "ok",
@@ -785,7 +877,7 @@
   {
    "id": "sch_tx_0_0",
    "x": 955,
-   "y": 1048,
+   "y": 1230,
    "w": 170,
    "h": 306,
    "kind": "ok",
@@ -797,7 +889,7 @@
   {
    "id": "abr_tx_0_0",
    "x": 1137,
-   "y": 1048,
+   "y": 1230,
    "w": 170,
    "h": 186,
    "kind": "ok",
@@ -811,7 +903,7 @@
   {
    "id": "abr_tx_1_0",
    "x": 1137,
-   "y": 1256,
+   "y": 1438,
    "w": 170,
    "h": 98,
    "kind": "bad",
@@ -821,7 +913,7 @@
   {
    "id": "ker_tx_0_0",
    "x": 1347,
-   "y": 1048,
+   "y": 1230,
    "w": 170,
    "h": 306,
    "kind": "bad",
@@ -834,7 +926,7 @@
   {
    "id": "uv_tx_0_0",
    "x": 1529,
-   "y": 1048,
+   "y": 1230,
    "w": 170,
    "h": 306,
    "kind": "bad",
@@ -847,7 +939,7 @@
   {
    "id": "aac_tx_0_0",
    "x": 1711,
-   "y": 1048,
+   "y": 1230,
    "w": 170,
    "h": 306,
    "kind": "bad",
@@ -861,12 +953,20 @@
   {
    "from": "root",
    "to": "g_ok",
-   "path": "M963.0 214V239H676.0V264"
+   "path": "M1054.0 214V239H676.0V264"
   },
   {
    "from": "root",
    "to": "g_bad",
-   "path": "M963.0 214V239H1614.0V264"
+   "path": "M1054.0 214V239H1705.0V264"
+  },
+  {
+   "from": "oth_pres_0_0",
+   "to": "oth_pres_1_0"
+  },
+  {
+   "from": "oth_pres_1_0",
+   "to": "oth_pres_2_0"
   },
   {
    "from": "lid_tx_0_0",
@@ -895,7 +995,7 @@
    "label": "lid",
    "label_at": [
     130.0,
-    364
+    418
    ]
   },
   {
@@ -917,7 +1017,7 @@
    "label": "watery",
    "label_at": [
     312.0,
-    364
+    418
    ]
   },
   {
@@ -939,7 +1039,7 @@
    "label": "mucopurulent",
    "label_at": [
     494.0,
-    364
+    418
    ]
   },
   {
@@ -961,7 +1061,7 @@
    "label": "hyperacute pus",
    "label_at": [
     676.0,
-    364
+    418
    ]
   },
   {
@@ -983,7 +1083,7 @@
    "label": "itch",
    "label_at": [
     858.0,
-    364
+    418
    ]
   },
   {
@@ -1005,7 +1105,7 @@
    "label": "solid patch",
    "label_at": [
     1040.0,
-    364
+    418
    ]
   },
   {
@@ -1027,7 +1127,7 @@
    "label": "trauma",
    "label_at": [
     1222.0,
-    364
+    418
    ]
   },
   {
@@ -1045,11 +1145,11 @@
   {
    "from": "g_bad",
    "to": "ker_head_0_0",
-   "from_dx": -182,
+   "from_dx": -273,
    "label": "contact lens",
    "label_at": [
     1432.0,
-    364
+    418
    ]
   },
   {
@@ -1067,11 +1167,11 @@
   {
    "from": "g_bad",
    "to": "uv_head_0_0",
-   "from_dx": 0,
+   "from_dx": -91,
    "label": "photophobia",
    "label_at": [
     1614.0,
-    364
+    418
    ]
   },
   {
@@ -1089,39 +1189,27 @@
   {
    "from": "g_bad",
    "to": "aac_head_0_0",
-   "from_dx": 182,
+   "from_dx": 91,
    "label": "halos, vomiting",
    "label_at": [
     1796.0,
-    364
+    418
+   ]
+  },
+  {
+   "from": "oth_head_0_0",
+   "to": "oth_pres_0_0"
+  },
+  {
+   "from": "g_bad",
+   "to": "oth_head_0_0",
+   "from_dx": 273,
+   "label": "orbit, sclera",
+   "label_at": [
+    1978.0,
+    418
    ]
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1388,
-   "w": 911,
-   "title": "Red eye by structure",
-   "items": [
-    "lids: blepharitis · stye · chalazion · ectropion · entropion",
-    "conjunctiva: bacterial, gonococcal, chlamydial, viral, allergic conjunctivitis · subconjunctival hemorrhage",
-    "cornea: bacterial or herpetic keratitis · abrasion (foreign body) · chemical burn (acid, alkali)",
-    "anterior chamber: anterior uveitis · acute angle closure",
-    "other: orbital vs preseptal cellulitis · endophthalmitis · blunt trauma (orbital fracture) · penetrating injury · scleritis · herpes zoster ophthalmicus"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 970,
-   "y": 1388,
-   "w": 911,
-   "title": "Vision threatening or not",
-   "items": [
-    "NOT: blepharitis · stye, chalazion · conjunctivitis · dry eye · abrasion · subconjunctival hemorrhage",
-    "THREATENING: scleritis · corneal ulcer, keratitis · uveitis · acute angle closure · trauma · orbital cellulitis"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

@@ -1,7 +1,7 @@
 {
  "name": "monocular vision loss overview",
  "width": 1740,
- "title": "Vision loss in one eye: sudden painless loss is sorted by the pupils and the fundus into central retinal artery occlusion, giant cell arteritis, optic neuritis, retinal detachment and vitreous hemorrhage; gradual loss is sorted by which part of vision goes into glaucoma, cataract and macular degeneration; each column gives the presentation, the exam finding that decides it and what to do, with glaucoma and cataract risk factors below",
+ "title": "Vision loss in one eye: sudden painless loss is sorted by the pupils and the fundus into central retinal artery occlusion, giant cell arteritis, optic neuritis, retinal detachment and vitreous hemorrhage; gradual loss is sorted by which part of vision goes into glaucoma, cataract and macular degeneration; each column gives the presentation, the exam finding that decides it and what to do, and the glaucoma and cataract columns end with their risk factors",
  "kinds": {
   "crao_h": [
    "#46607a",
@@ -193,7 +193,7 @@
    "x": 1108,
    "y": 342,
    "w": 206,
-   "h": 928,
+   "h": 1320,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
@@ -201,7 +201,7 @@
    "x": 1316,
    "y": 342,
    "w": 206,
-   "h": 928,
+   "h": 1320,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
@@ -232,6 +232,12 @@
    "y": 1012,
    "h": 250,
    "text": "WHAT TO DO"
+  },
+  {
+   "x": 23,
+   "y": 1302,
+   "h": 352,
+   "text": "RISK FACTORS"
   }
  ],
  "nodes": [
@@ -463,7 +469,8 @@
    "lines": [
     "• halos, starbursts, night driving",
     "• 'second sight': lenticular myopia, better near vision",
-    "• varies with where the opacity is"
+    "• varies with where the opacity is",
+    "• types: posterior subcapsular, cortical, nuclear sclerosis"
    ]
   },
   {
@@ -728,6 +735,75 @@
     "• AREDS2: vitamins C, E, lutein, zeaxanthin, zinc, copper",
     "• stop smoking, nutrition"
    ]
+  },
+  {
+   "id": "gl_risk_0_0",
+   "x": 1113,
+   "y": 1302,
+   "w": 196,
+   "h": 78,
+   "kind": "gl_w",
+   "title": "Both types",
+   "lines": [
+    "• family history",
+    "• older age"
+   ]
+  },
+  {
+   "id": "gl_risk_1_0",
+   "x": 1113,
+   "y": 1402,
+   "w": 196,
+   "h": 132,
+   "kind": "gl_w",
+   "title": "Open angle",
+   "lines": [
+    "• Black · high pressure",
+    "• MYOPIA · eye trauma",
+    "• steroids",
+    "• vasospasm (Raynaud's, migraine)"
+   ]
+  },
+  {
+   "id": "gl_risk_2_0",
+   "x": 1113,
+   "y": 1556,
+   "w": 196,
+   "h": 98,
+   "kind": "gl_w",
+   "title": "Angle closure (RED EYE chart)",
+   "lines": [
+    "• Asian · female",
+    "• HYPEROPIA"
+   ]
+  },
+  {
+   "id": "cat_risk_0_0",
+   "x": 1321,
+   "y": 1302,
+   "w": 196,
+   "h": 165,
+   "kind": "cat_w",
+   "title": "Risk factors",
+   "lines": [
+    "• age · genetics · trauma",
+    "• steroids · eye inflammation",
+    "• diabetes, metabolic"
+   ]
+  },
+  {
+   "id": "cat_risk_1_0",
+   "x": 1321,
+   "y": 1489,
+   "w": 196,
+   "h": 165,
+   "kind": "cat_w",
+   "title": "Exposures",
+   "lines": [
+    "• radiation",
+    "• prior eye surgery",
+    "• excess UV"
+   ]
   }
  ],
  "edges": [
@@ -752,6 +828,18 @@
   {
    "from": "amd_tx_0_0",
    "to": "amd_tx_1_0"
+  },
+  {
+   "from": "gl_risk_0_0",
+   "to": "gl_risk_1_0"
+  },
+  {
+   "from": "gl_risk_1_0",
+   "to": "gl_risk_2_0"
+  },
+  {
+   "from": "cat_risk_0_0",
+   "to": "cat_risk_1_0"
   },
   {
    "from": "crao_head_0_0",
@@ -876,6 +964,10 @@
    "to": "gl_tx_0_0"
   },
   {
+   "from": "gl_tx_0_0",
+   "to": "gl_risk_0_0"
+  },
+  {
    "from": "g_ch",
    "to": "gl_head_0_0",
    "from_dx": -208,
@@ -896,6 +988,10 @@
   {
    "from": "cat_inv_0_0",
    "to": "cat_tx_0_0"
+  },
+  {
+   "from": "cat_tx_0_0",
+   "to": "cat_risk_0_0"
   },
   {
    "from": "g_ch",
@@ -930,30 +1026,5 @@
    ]
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1296,
-   "w": 833,
-   "title": "Glaucoma risk factors",
-   "items": [
-    "both: family history · older age",
-    "open angle: Black · high pressure · MYOPIA · eye trauma · steroids · vasospasm (Raynaud's, migraine)",
-    "angle closure: Asian · female · HYPEROPIA"
-   ],
-   "cols": 1
-  },
-  {
-   "x": 892,
-   "y": 1296,
-   "w": 833,
-   "title": "Cataract risk factors and types",
-   "items": [
-    "age · genetics · trauma · steroids · eye inflammation · diabetes, metabolic",
-    "radiation · prior eye surgery · excess UV",
-    "types: posterior subcapsular · cortical · nuclear sclerosis"
-   ],
-   "cols": 1
-  }
- ]
+ "panels": []
 }

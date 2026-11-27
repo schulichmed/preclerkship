@@ -1,7 +1,7 @@
 {
  "name": "neuropathic pain overview",
- "width": 1234,
- "title": "Neuropathic pain has a neurological cause and is recognized by its descriptors; after the cause is evaluated, one agent is chosen by the co-existing problem (amitriptyline for poor sleep or low cost, duloxetine for depression, carbamazepine for trigeminal neuralgia, gabapentinoids, topicals) with narcotics only as a last resort, and titrated by trial and error",
+ "width": 1488,
+ "title": "Neuropathic pain has a neurological cause and is recognized by its descriptors; after the cause is evaluated, one agent is chosen by the co-existing problem (amitriptyline for poor sleep or low cost, duloxetine for depression, carbamazepine for trigeminal neuralgia, gabapentinoids, topicals) with narcotics only as a last resort, and titrated by trial and error, early to avoid central sensitization; complex regional pain syndrome, pain beyond an injury, needs multidisciplinary pain management",
  "kinds": {
   "tca_h": [
    "#1f6f8b",
@@ -92,68 +92,94 @@
    "#46607a",
    "#46607a",
    "#18212e"
+  ],
+  "crps_h": [
+   "#a3336b",
+   "#a3336b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "crps_t": [
+   "#f8e0ec",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
+  ],
+  "crps_w": [
+   "#ffffff",
+   "#a3336b",
+   "#a3336b",
+   "#18212e"
   ]
  },
  "bands": [
   {
    "x": 40,
-   "y": 378,
+   "y": 414,
    "w": 224,
-   "h": 214,
+   "h": 286,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 266,
-   "y": 378,
+   "y": 414,
    "w": 224,
-   "h": 214,
+   "h": 286,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 520,
-   "y": 378,
+   "y": 414,
    "w": 224,
-   "h": 214,
+   "h": 286,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 746,
-   "y": 378,
+   "y": 414,
    "w": 224,
-   "h": 214,
+   "h": 286,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
    "x": 1000,
-   "y": 378,
+   "y": 414,
    "w": 224,
-   "h": 214,
+   "h": 286,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
+  },
+  {
+   "x": 1254,
+   "y": 414,
+   "w": 224,
+   "h": 486,
+   "fill": "#fcf0f6",
+   "stroke": "#a3336b"
   }
  ],
  "row_labels": [
   {
    "x": 23,
-   "y": 506,
-   "h": 78,
+   "y": 578,
+   "h": 114,
    "text": "CHOOSE IT FOR"
   },
   {
    "x": 23,
-   "y": 624,
-   "h": 142,
+   "y": 732,
+   "h": 160,
    "text": "THEN"
   }
  ],
  "nodes": [
   {
    "id": "root",
-   "x": 252,
+   "x": 379,
    "y": 10,
    "w": 760,
    "kind": "dark",
@@ -171,7 +197,7 @@
    "x": 45,
    "y": 246,
    "w": 440,
-   "h": 60,
+   "h": 96,
    "kind": "plain",
    "title": "ANTIDEPRESSANTS",
    "lines": [
@@ -183,11 +209,13 @@
    "x": 525,
    "y": 246,
    "w": 440,
-   "h": 60,
+   "h": 96,
    "kind": "plain",
    "title": "ANTICONVULSANTS",
    "lines": [
-    "in specific situations a sodium-channel drug"
+    "in specific situations a sodium-channel drug",
+    "• why: nerve damage → sodium channels ↑, potassium ↓",
+    "• → ectopic firing: spontaneous + paroxysmal pain"
    ]
   },
   {
@@ -195,17 +223,29 @@
    "x": 1005,
    "y": 246,
    "w": 214,
-   "h": 60,
+   "h": 96,
    "kind": "plain",
    "title": "OTHERS",
    "lines": []
   },
   {
+   "id": "g_crps",
+   "x": 1259,
+   "y": 246,
+   "w": 214,
+   "h": 96,
+   "kind": "plain",
+   "title": "PAIN beyond the injury?",
+   "lines": [
+    "think of CRPS"
+   ]
+  },
+  {
    "id": "tca_head_0_0",
    "x": 45,
-   "y": 386,
+   "y": 422,
    "w": 214,
-   "h": 80,
+   "h": 116,
    "kind": "tca_h",
    "title": "Tricyclics (TCAs)",
    "lines": [
@@ -215,9 +255,9 @@
   {
    "id": "snri_head_0_0",
    "x": 271,
-   "y": 386,
+   "y": 422,
    "w": 214,
-   "h": 80,
+   "h": 116,
    "kind": "snri_h",
    "title": "SNRIs",
    "lines": [
@@ -227,9 +267,9 @@
   {
    "id": "gab_head_0_0",
    "x": 525,
-   "y": 386,
+   "y": 422,
    "w": 214,
-   "h": 80,
+   "h": 116,
    "kind": "gab_h",
    "title": "Gabapentinoids",
    "lines": [
@@ -239,9 +279,9 @@
   {
    "id": "carb_head_0_0",
    "x": 751,
-   "y": 386,
+   "y": 422,
    "w": 214,
-   "h": 80,
+   "h": 116,
    "kind": "carb_h",
    "title": "Sodium-channel anticonvulsant",
    "lines": [
@@ -251,9 +291,9 @@
   {
    "id": "oth_head_0_0",
    "x": 1005,
-   "y": 386,
+   "y": 422,
    "w": 214,
-   "h": 80,
+   "h": 116,
    "kind": "oth_h",
    "title": "Topicals · cannabinoids",
    "lines": [
@@ -261,11 +301,24 @@
    ]
   },
   {
+   "id": "crps_head_0_0",
+   "x": 1259,
+   "y": 422,
+   "w": 214,
+   "h": 116,
+   "kind": "crps_h",
+   "title": "Complex regional pain syndrome (CRPS)",
+   "lines": [
+    "after a focal tissue or nerve injury",
+    "uncommon · inflammatory + autonomic"
+   ]
+  },
+  {
    "id": "tca_clue_0_0",
    "x": 45,
-   "y": 506,
+   "y": 578,
    "w": 214,
-   "h": 78,
+   "h": 114,
    "kind": "ok",
    "title": "Poor SLEEP or COST",
    "lines": [
@@ -276,9 +329,9 @@
   {
    "id": "snri_clue_0_0",
    "x": 271,
-   "y": 506,
+   "y": 578,
    "w": 214,
-   "h": 78,
+   "h": 114,
    "kind": "ok",
    "title": "DEPRESSION",
    "lines": [
@@ -288,9 +341,9 @@
   {
    "id": "gab_clue_0_0",
    "x": 525,
-   "y": 506,
+   "y": 578,
    "w": 214,
-   "h": 78,
+   "h": 114,
    "kind": "ok",
    "title": "No deciding issue",
    "lines": [
@@ -300,9 +353,9 @@
   {
    "id": "carb_clue_0_0",
    "x": 751,
-   "y": 506,
+   "y": 578,
    "w": 214,
-   "h": 78,
+   "h": 114,
    "kind": "ok",
    "title": "A classic SYNDROME",
    "lines": [
@@ -312,9 +365,9 @@
   {
    "id": "oth_clue_0_0",
    "x": 1005,
-   "y": 506,
+   "y": 578,
    "w": 214,
-   "h": 78,
+   "h": 114,
    "kind": "bad",
    "title": "NARCOTICS",
    "lines": [
@@ -322,21 +375,49 @@
    ]
   },
   {
+   "id": "crps_clue_0_0",
+   "x": 1259,
+   "y": 578,
+   "w": 214,
+   "h": 114,
+   "kind": "crps_t",
+   "title": "GREATER than the injury",
+   "lines": [
+    "• LONGER than healing",
+    "• limb: severe pain, allodynia",
+    "• swelling, temperature, colour",
+    "• skin + hair change"
+   ]
+  },
+  {
+   "id": "crps_tx_0_0",
+   "x": 1259,
+   "y": 732,
+   "w": 214,
+   "h": 160,
+   "kind": "bad",
+   "title": "Treatment is HARD",
+   "lines": [
+    "multidisciplinary pain management"
+   ]
+  },
+  {
    "id": "span0_tx_0_0",
    "x": 45,
-   "y": 624,
+   "y": 732,
    "w": 1174,
-   "h": 60,
+   "h": 78,
    "kind": "plain",
    "title": "TRIAL AND ERROR: one agent, titrated up SLOWLY to the maximum dose",
    "lines": [
-    "if no co-existing issue or cost decides"
+    "if no co-existing issue or cost decides",
+    "• treat EARLY: avoids CENTRAL SENSITIZATION in the cord"
    ]
   },
   {
    "id": "span0_tx_1_0",
    "x": 45.0,
-   "y": 706,
+   "y": 832,
    "w": 582.0,
    "h": 60,
    "kind": "warn",
@@ -348,7 +429,7 @@
   {
    "id": "span0_tx_1_1",
    "x": 637.0,
-   "y": 706,
+   "y": 832,
    "w": 582.0,
    "h": 60,
    "kind": "warn",
@@ -362,17 +443,22 @@
   {
    "from": "root",
    "to": "g_ad",
-   "path": "M632.0 196V221H265.0V246"
+   "path": "M759.0 196V221H265.0V246"
   },
   {
    "from": "root",
    "to": "g_ac",
-   "path": "M632.0 196V221H745.0V246"
+   "path": "M759.0 196V221H745.0V246"
   },
   {
    "from": "root",
    "to": "g_ot",
-   "path": "M632.0 196V221H1112.0V246"
+   "path": "M759.0 196V221H1112.0V246"
+  },
+  {
+   "from": "root",
+   "to": "g_crps",
+   "path": "M759.0 196V221H1366.0V246"
   },
   {
    "from": "span0_tx_0_0",
@@ -453,34 +539,20 @@
    "from": "g_ot",
    "to": "oth_head_0_0",
    "from_dx": 0
-  }
- ],
- "panels": [
-  {
-   "x": 45,
-   "y": 800,
-   "w": 580,
-   "title": "Complex regional pain syndrome (CRPS)",
-   "items": [
-    "after a focal tissue or nerve injury · uncommon · inflammatory + autonomic",
-    "pain GREATER than the injury, LONGER than healing",
-    "limb: severe pain, allodynia, swelling, temperature, colour, skin + hair change",
-    "treatment hard: multidisciplinary pain management"
-   ],
-   "cols": 1
   },
   {
-   "x": 639,
-   "y": 800,
-   "w": 580,
-   "title": "Mechanism (nice to know)",
-   "items": [
-    "nerve damage: sodium channels ↑, potassium ↓ → ectopic firing",
-    "spontaneous + paroxysmal pain",
-    "CENTRAL SENSITIZATION in the cord · early treatment avoids it",
-    "norepinephrine + serotonin drive descending inhibition"
-   ],
-   "cols": 1
+   "from": "crps_head_0_0",
+   "to": "crps_clue_0_0"
+  },
+  {
+   "from": "crps_clue_0_0",
+   "to": "crps_tx_0_0"
+  },
+  {
+   "from": "g_crps",
+   "to": "crps_head_0_0",
+   "from_dx": 0
   }
- ]
+ ],
+ "panels": []
 }

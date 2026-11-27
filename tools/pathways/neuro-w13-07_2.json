@@ -1,7 +1,7 @@
 {
  "name": "neuro-ophthalmology overview",
- "width": 1168,
- "title": "Visual symptoms not from the eyeball: double vision sorts by which nerve palsy (third, fourth or sixth), a gaze-evoked nystagmus points to the cerebellum or brainstem, unequal pupils sort by whether the difference is worse in light (parasympathetic) or dark (sympathetic, Horner), and a relative afferent pupillary defect points to one optic nerve; nystagmus is pendular or (mostly) jerk, and the panel below localizes each visual field defect along the visual pathway",
+ "width": 1712,
+ "title": "Visual symptoms not from the eyeball: double vision sorts by which nerve palsy (third, fourth or sixth), a gaze-evoked nystagmus points to the cerebellum or brainstem, unequal pupils sort by whether the difference is worse in light (parasympathetic) or dark (sympathetic, Horner), and a relative afferent pupillary defect points to one optic nerve; nystagmus is pendular or (mostly) jerk; a missing visual field localizes along the visual pathway, to the optic nerve or chiasm (one eye, bitemporal), the optic tract and radiations (homonymous), or the occipital lobe (macular sparing, quadrantanopia, central scotomas)",
  "kinds": {
   "cn3_h": [
    "#8a5a2b",
@@ -128,76 +128,154 @@
    "#a3336b",
    "#a3336b",
    "#18212e"
+  ],
+  "vf_pre_h": [
+   "#46607a",
+   "#46607a",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vf_pre_t": [
+   "#e2e8ee",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "vf_pre_w": [
+   "#ffffff",
+   "#46607a",
+   "#46607a",
+   "#18212e"
+  ],
+  "vf_mid_h": [
+   "#4f6d1f",
+   "#4f6d1f",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vf_mid_t": [
+   "#e7eed9",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "vf_mid_w": [
+   "#ffffff",
+   "#4f6d1f",
+   "#4f6d1f",
+   "#18212e"
+  ],
+  "vf_occ_h": [
+   "#1f6f8b",
+   "#1f6f8b",
+   "#ffffff",
+   "#ffffff"
+  ],
+  "vf_occ_t": [
+   "#dceef4",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
+  ],
+  "vf_occ_w": [
+   "#ffffff",
+   "#1f6f8b",
+   "#1f6f8b",
+   "#18212e"
   ]
  },
  "bands": [
   {
    "x": 40,
    "y": 426,
-   "w": 150,
-   "h": 570,
+   "w": 156,
+   "h": 870,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
   {
-   "x": 192,
+   "x": 198,
    "y": 426,
-   "w": 150,
-   "h": 570,
+   "w": 156,
+   "h": 870,
    "fill": "#f4f7ee",
    "stroke": "#4f6d1f"
   },
   {
-   "x": 344,
+   "x": 356,
    "y": 426,
-   "w": 150,
-   "h": 570,
+   "w": 156,
+   "h": 870,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
-   "x": 524,
+   "x": 542,
    "y": 426,
-   "w": 150,
-   "h": 570,
+   "w": 156,
+   "h": 870,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
-   "x": 704,
+   "x": 728,
    "y": 426,
-   "w": 150,
-   "h": 570,
+   "w": 156,
+   "h": 870,
    "fill": "#eff5fc",
    "stroke": "#1f5f9e"
   },
   {
-   "x": 856,
+   "x": 886,
    "y": 426,
-   "w": 150,
-   "h": 570,
+   "w": 156,
+   "h": 870,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
-   "x": 1008,
+   "x": 1044,
    "y": 426,
-   "w": 150,
-   "h": 570,
+   "w": 156,
+   "h": 870,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
+  },
+  {
+   "x": 1230,
+   "y": 426,
+   "w": 156,
+   "h": 870,
+   "fill": "#f2f5f8",
+   "stroke": "#46607a"
+  },
+  {
+   "x": 1388,
+   "y": 426,
+   "w": 156,
+   "h": 642,
+   "fill": "#f4f7ee",
+   "stroke": "#4f6d1f"
+  },
+  {
+   "x": 1546,
+   "y": 426,
+   "w": 156,
+   "h": 642,
+   "fill": "#eef7fa",
+   "stroke": "#1f6f8b"
   }
  ],
  "row_labels": [
   {
    "x": 23,
    "y": 590,
-   "h": 170,
+   "h": 470,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 800,
+   "y": 1100,
    "h": 188,
    "text": "CAUSE · MEANING"
   }
@@ -205,21 +283,21 @@
  "nodes": [
   {
    "id": "root",
-   "x": 219,
+   "x": 491,
    "y": 10,
    "w": 760,
    "kind": "dark",
    "title": "A visual symptom NOT from the eyeball: which kind?",
    "lines": [
     "each one localizes to a nerve or a pathway",
-    "a missing part of the visual field: see the panel below"
+    "a missing part of the visual field: follow the pathway"
    ]
   },
   {
    "id": "g_dip",
    "x": 45,
    "y": 138,
-   "w": 444,
+   "w": 462,
    "h": 96,
    "kind": "plain",
    "title": "DOUBLE VISION (diplopia)",
@@ -230,9 +308,9 @@
   },
   {
    "id": "g_nys",
-   "x": 529,
+   "x": 547,
    "y": 138,
-   "w": 140,
+   "w": 146,
    "h": 96,
    "kind": "plain",
    "title": "EYES DRIFT",
@@ -242,9 +320,9 @@
   },
   {
    "id": "g_pup",
-   "x": 709,
+   "x": 733,
    "y": 138,
-   "w": 444,
+   "w": 462,
    "h": 96,
    "kind": "plain",
    "title": "THE PUPILS",
@@ -254,10 +332,24 @@
    ]
   },
   {
+   "id": "g_vf",
+   "x": 1235,
+   "y": 138,
+   "w": 462,
+   "h": 96,
+   "kind": "plain",
+   "title": "A MISSING FIELD: where is the lesion?",
+   "lines": [
+    "• NASAL fibres cross at the chiasm, temporal do not",
+    "• each side of the brain sees the opposite field",
+    "~ left-side lesion shown"
+   ]
+  },
+  {
    "id": "t_aniso",
-   "x": 709,
+   "x": 733,
    "y": 274,
-   "w": 292,
+   "w": 304,
    "h": 80,
    "kind": "plain",
    "title": "UNEQUAL pupils: worse in light or dark?",
@@ -269,7 +361,7 @@
    "id": "cn3_head_0_0",
    "x": 45,
    "y": 434,
-   "w": 140,
+   "w": 146,
    "h": 116,
    "kind": "cn3_h",
    "title": "Third nerve palsy",
@@ -279,9 +371,9 @@
   },
   {
    "id": "cn4_head_0_0",
-   "x": 197,
+   "x": 203,
    "y": 434,
-   "w": 140,
+   "w": 146,
    "h": 116,
    "kind": "cn4_h",
    "title": "Fourth nerve palsy",
@@ -291,9 +383,9 @@
   },
   {
    "id": "cn6_head_0_0",
-   "x": 349,
+   "x": 361,
    "y": 434,
-   "w": 140,
+   "w": 146,
    "h": 116,
    "kind": "cn6_h",
    "title": "Sixth nerve palsy",
@@ -303,9 +395,9 @@
   },
   {
    "id": "nys_head_0_0",
-   "x": 529,
+   "x": 547,
    "y": 434,
-   "w": 140,
+   "w": 146,
    "h": 116,
    "kind": "nys_h",
    "title": "Gaze-evoked nystagmus",
@@ -315,9 +407,9 @@
   },
   {
    "id": "para_head_0_0",
-   "x": 709,
+   "x": 733,
    "y": 434,
-   "w": 140,
+   "w": 146,
    "h": 116,
    "kind": "para_h",
    "title": "Parasympathetic paresis",
@@ -327,9 +419,9 @@
   },
   {
    "id": "symp_head_0_0",
-   "x": 861,
+   "x": 891,
    "y": 434,
-   "w": 140,
+   "w": 146,
    "h": 116,
    "kind": "symp_h",
    "title": "Horner syndrome",
@@ -340,9 +432,9 @@
   },
   {
    "id": "rapd_head_0_0",
-   "x": 1013,
+   "x": 1049,
    "y": 434,
-   "w": 140,
+   "w": 146,
    "h": 116,
    "kind": "rapd_h",
    "title": "Relative afferent pupillary defect",
@@ -351,11 +443,50 @@
    ]
   },
   {
+   "id": "vf_pre_head_0_0",
+   "x": 1235,
+   "y": 434,
+   "w": 146,
+   "h": 116,
+   "kind": "vf_pre_h",
+   "title": "Optic nerve · chiasm",
+   "lines": [
+    "before the crossing",
+    "or AT it"
+   ]
+  },
+  {
+   "id": "vf_mid_head_0_0",
+   "x": 1393,
+   "y": 434,
+   "w": 146,
+   "h": 116,
+   "kind": "vf_mid_h",
+   "title": "Optic tract → radiations",
+   "lines": [
+    "behind the chiasm",
+    "HOMONYMOUS: same side, both eyes"
+   ]
+  },
+  {
+   "id": "vf_occ_head_0_0",
+   "x": 1551,
+   "y": 434,
+   "w": 146,
+   "h": 116,
+   "kind": "vf_occ_h",
+   "title": "Occipital lobe",
+   "lines": [
+    "HOMONYMOUS",
+    "left lobe → RIGHT field"
+   ]
+  },
+  {
    "id": "cn3_pres_0_0",
    "x": 45,
    "y": 590,
-   "w": 140,
-   "h": 170,
+   "w": 146,
+   "h": 470,
    "kind": "cn3_t",
    "title": "Down and out",
    "lines": [
@@ -365,10 +496,10 @@
   },
   {
    "id": "cn4_pres_0_0",
-   "x": 197,
+   "x": 203,
    "y": 590,
-   "w": 140,
-   "h": 170,
+   "w": 146,
+   "h": 470,
    "kind": "cn4_t",
    "title": "HEAD TILT",
    "lines": [
@@ -377,10 +508,10 @@
   },
   {
    "id": "cn6_pres_0_0",
-   "x": 349,
+   "x": 361,
    "y": 590,
-   "w": 140,
-   "h": 170,
+   "w": 146,
+   "h": 470,
    "kind": "cn6_t",
    "title": "Can't ABDUCT",
    "lines": [
@@ -390,10 +521,10 @@
   },
   {
    "id": "nys_pres_0_0",
-   "x": 529,
+   "x": 547,
    "y": 590,
-   "w": 140,
-   "h": 170,
+   "w": 146,
+   "h": 470,
    "kind": "nys_t",
    "title": "Beats TOWARD gaze",
    "lines": [
@@ -404,10 +535,10 @@
   },
   {
    "id": "para_pres_0_0",
-   "x": 709,
+   "x": 733,
    "y": 590,
-   "w": 140,
-   "h": 170,
+   "w": 146,
+   "h": 470,
    "kind": "para_t",
    "title": "Won't CONSTRICT",
    "lines": [
@@ -416,10 +547,10 @@
   },
   {
    "id": "symp_pres_0_0",
-   "x": 861,
+   "x": 891,
    "y": 590,
-   "w": 140,
-   "h": 170,
+   "w": 146,
+   "h": 470,
    "kind": "symp_t",
    "title": "Won't DILATE",
    "lines": [
@@ -429,10 +560,10 @@
   },
   {
    "id": "rapd_pres_0_0",
-   "x": 1013,
+   "x": 1049,
    "y": 590,
-   "w": 140,
-   "h": 170,
+   "w": 146,
+   "h": 470,
    "kind": "rapd_t",
    "title": "Light to the BAD eye",
    "lines": [
@@ -441,10 +572,123 @@
    ]
   },
   {
+   "id": "vf_pre_pres_0_0",
+   "x": 1235,
+   "y": 590,
+   "w": 146,
+   "h": 117,
+   "kind": "vf_pre_t",
+   "title": "Vision ↓ in THAT eye only",
+   "lines": [
+    "→ optic nerve"
+   ]
+  },
+  {
+   "id": "vf_pre_pres_1_0",
+   "x": 1235,
+   "y": 729,
+   "w": 146,
+   "h": 191,
+   "kind": "vf_pre_t",
+   "title": "That eye blind + junctional scotoma",
+   "lines": [
+    "• upper temporal, in the OTHER eye",
+    "→ back of the optic nerve"
+   ]
+  },
+  {
+   "id": "vf_pre_pres_2_0",
+   "x": 1235,
+   "y": 942,
+   "w": 146,
+   "h": 117,
+   "kind": "vf_pre_t",
+   "title": "BITEMPORAL hemianopia",
+   "lines": [
+    "→ chiasm"
+   ]
+  },
+  {
+   "id": "vf_mid_pres_0_0",
+   "x": 1393,
+   "y": 590,
+   "w": 146,
+   "h": 100,
+   "kind": "vf_mid_t",
+   "title": "Right HOMONYMOUS hemianopia",
+   "lines": [
+    "→ optic tract"
+   ]
+  },
+  {
+   "id": "vf_mid_pres_1_0",
+   "x": 1393,
+   "y": 712,
+   "w": 146,
+   "h": 136,
+   "kind": "vf_mid_t",
+   "title": "Right homonymous sectoranopias",
+   "lines": [
+    "• wedges",
+    "→ lateral geniculate nucleus"
+   ]
+  },
+  {
+   "id": "vf_mid_pres_2_0",
+   "x": 1393,
+   "y": 870,
+   "w": 146,
+   "h": 190,
+   "kind": "vf_mid_t",
+   "title": "Right homonymous defect",
+   "lines": [
+    "• SUPERIOR → temporal lobe (lower radiation)",
+    "• INFERIOR → parietal lobe (upper radiation)"
+   ]
+  },
+  {
+   "id": "vf_occ_pres_0_0",
+   "x": 1551,
+   "y": 590,
+   "w": 146,
+   "h": 132,
+   "kind": "vf_occ_t",
+   "title": "Hemianopia + MACULAR SPARING",
+   "lines": [
+    "→ occipital lobe"
+   ]
+  },
+  {
+   "id": "vf_occ_pres_1_0",
+   "x": 1551,
+   "y": 744,
+   "w": 146,
+   "h": 146,
+   "kind": "vf_occ_t",
+   "title": "Quadrantanopia",
+   "lines": [
+    "• upper bank → INFERIOR",
+    "• lower bank → SUPERIOR"
+   ]
+  },
+  {
+   "id": "vf_occ_pres_2_0",
+   "x": 1551,
+   "y": 912,
+   "w": 146,
+   "h": 148,
+   "kind": "vf_occ_t",
+   "title": "Central scotomas",
+   "lines": [
+    "• right homonymous",
+    "→ tip of the occipital lobe"
+   ]
+  },
+  {
    "id": "cn3_cause_0_0",
    "x": 45,
-   "y": 800,
-   "w": 140,
+   "y": 1100,
+   "w": 146,
    "h": 188,
    "kind": "bad",
    "title": "Is the PUPIL involved?",
@@ -455,9 +699,9 @@
   },
   {
    "id": "cn4_cause_0_0",
-   "x": 197,
-   "y": 800,
-   "w": 140,
+   "x": 203,
+   "y": 1100,
+   "w": 146,
    "h": 188,
    "kind": "cn4_w",
    "title": "Often congenital",
@@ -465,9 +709,9 @@
   },
   {
    "id": "cn6_cause_0_0",
-   "x": 349,
-   "y": 800,
-   "w": 140,
+   "x": 361,
+   "y": 1100,
+   "w": 146,
    "h": 188,
    "kind": "bad",
    "title": "Raised intracranial pressure?",
@@ -477,9 +721,9 @@
   },
   {
    "id": "nys_cause_0_0",
-   "x": 529,
-   "y": 800,
-   "w": 140,
+   "x": 547,
+   "y": 1100,
+   "w": 146,
    "h": 188,
    "kind": "nys_w",
    "title": "Cerebellum or brainstem",
@@ -492,9 +736,9 @@
   },
   {
    "id": "para_cause_0_0",
-   "x": 709,
-   "y": 800,
-   "w": 140,
+   "x": 733,
+   "y": 1100,
+   "w": 146,
    "h": 188,
    "kind": "bad",
    "title": "e.g. compressive third nerve palsy",
@@ -504,9 +748,9 @@
   },
   {
    "id": "symp_cause_0_0",
-   "x": 861,
-   "y": 800,
-   "w": 140,
+   "x": 891,
+   "y": 1100,
+   "w": 146,
    "h": 188,
    "kind": "bad",
    "title": "Rule out internal carotid dissection",
@@ -514,9 +758,9 @@
   },
   {
    "id": "rapd_cause_0_0",
-   "x": 1013,
-   "y": 800,
-   "w": 140,
+   "x": 1049,
+   "y": 1100,
+   "w": 146,
    "h": 188,
    "kind": "rapd_w",
    "title": "That optic nerve",
@@ -524,28 +768,75 @@
     "the afferent arm of the light reflex",
     "• often optic neuritis (multiple sclerosis)"
    ]
+  },
+  {
+   "id": "vf_pre_cause_0_0",
+   "x": 1235,
+   "y": 1100,
+   "w": 146,
+   "h": 188,
+   "kind": "bad",
+   "title": "Pituitary macroadenoma",
+   "lines": [
+    "presses the chiasm from below"
+   ]
   }
  ],
  "edges": [
   {
    "from": "root",
    "to": "g_dip",
-   "path": "M599.0 88V113H267.0V138"
+   "path": "M871.0 88V113H276.0V138"
   },
   {
    "from": "root",
    "to": "g_nys",
-   "path": "M599.0 88V113H599.0V138"
+   "path": "M871.0 88V113H620.0V138"
   },
   {
    "from": "root",
    "to": "g_pup",
-   "path": "M599.0 88V113H931.0V138"
+   "path": "M871.0 88V113H964.0V138"
+  },
+  {
+   "from": "root",
+   "to": "g_vf",
+   "path": "M871.0 88V113H1466.0V138"
   },
   {
    "from": "g_pup",
    "to": "t_aniso",
-   "from_dx": -76
+   "from_dx": -79
+  },
+  {
+   "from": "vf_pre_pres_0_0",
+   "to": "vf_pre_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "vf_pre_pres_1_0",
+   "to": "vf_pre_pres_2_0",
+   "dashed": true
+  },
+  {
+   "from": "vf_mid_pres_0_0",
+   "to": "vf_mid_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "vf_mid_pres_1_0",
+   "to": "vf_mid_pres_2_0",
+   "dashed": true
+  },
+  {
+   "from": "vf_occ_pres_0_0",
+   "to": "vf_occ_pres_1_0",
+   "dashed": true
+  },
+  {
+   "from": "vf_occ_pres_1_0",
+   "to": "vf_occ_pres_2_0",
+   "dashed": true
   },
   {
    "from": "cn3_head_0_0",
@@ -558,7 +849,7 @@
   {
    "from": "g_dip",
    "to": "cn3_head_0_0",
-   "from_dx": -152
+   "from_dx": -158
   },
   {
    "from": "cn4_head_0_0",
@@ -584,7 +875,7 @@
   {
    "from": "g_dip",
    "to": "cn6_head_0_0",
-   "from_dx": 152
+   "from_dx": 158
   },
   {
    "from": "nys_head_0_0",
@@ -610,10 +901,10 @@
   {
    "from": "t_aniso",
    "to": "para_head_0_0",
-   "from_dx": -76,
+   "from_dx": -79,
    "label": "LIGHT",
    "label_at": [
-    779.0,
+    806.0,
     394
    ]
   },
@@ -628,10 +919,10 @@
   {
    "from": "t_aniso",
    "to": "symp_head_0_0",
-   "from_dx": 76,
+   "from_dx": 79,
    "label": "DARK",
    "label_at": [
-    931.0,
+    964.0,
     394
    ]
   },
@@ -646,29 +937,39 @@
   {
    "from": "g_pup",
    "to": "rapd_head_0_0",
-   "from_dx": 152
+   "from_dx": 158
+  },
+  {
+   "from": "vf_pre_head_0_0",
+   "to": "vf_pre_pres_0_0"
+  },
+  {
+   "from": "vf_pre_pres_2_0",
+   "to": "vf_pre_cause_0_0"
+  },
+  {
+   "from": "g_vf",
+   "to": "vf_pre_head_0_0",
+   "from_dx": -158
+  },
+  {
+   "from": "vf_mid_head_0_0",
+   "to": "vf_mid_pres_0_0"
+  },
+  {
+   "from": "g_vf",
+   "to": "vf_mid_head_0_0",
+   "from_dx": 0
+  },
+  {
+   "from": "vf_occ_head_0_0",
+   "to": "vf_occ_pres_0_0"
+  },
+  {
+   "from": "g_vf",
+   "to": "vf_occ_head_0_0",
+   "from_dx": 158
   }
  ],
- "panels": [
-  {
-   "x": 45,
-   "y": 1022,
-   "w": 1108,
-   "title": "Visual field defects: where is the lesion? (left-side lesion shown)",
-   "items": [
-    "NASAL fibres cross at the chiasm, temporal do not · each side of the brain sees the opposite field",
-    "optic nerve: vision ↓ in THAT eye only",
-    "back of the optic nerve: that eye blind + junctional scotoma (upper temporal) in the other eye",
-    "chiasm: BITEMPORAL hemianopia (pituitary macroadenoma from below)",
-    "optic tract: right HOMONYMOUS hemianopia",
-    "lateral geniculate nucleus: right homonymous sectoranopias (wedges)",
-    "temporal lobe (lower radiation): right homonymous SUPERIOR defect",
-    "parietal lobe (upper radiation): right homonymous INFERIOR defect",
-    "occipital upper bank: inferior quadrantanopia · lower bank: superior quadrantanopia",
-    "occipital lobe: right homonymous hemianopia with MACULAR SPARING",
-    "tip of the occipital lobe: right homonymous central scotomas"
-   ],
-   "cols": 3
-  }
- ]
+ "panels": []
 }
