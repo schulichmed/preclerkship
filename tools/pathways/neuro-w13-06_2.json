@@ -1,7 +1,7 @@
 {
  "name": "spinal cord syndromes overview",
  "width": 1096,
- "title": "Spinal cord or root: upper motor neuron signs below a sensory level mean the cord, and which modalities are lost sorts anterior, posterior, central and Brown-Sequard cord syndromes; a lower motor neuron pattern means the roots, either cauda equina (an emergency) or a single radiculopathy; each column gives the presentation and the causes",
+ "title": "Spinal cord or root: upper motor neuron signs below a sensory level mean the cord, and which tracts are lost (corticospinal, spinothalamic, dorsal columns) sorts anterior, posterior, central and Brown-Sequard cord syndromes; a lower motor neuron pattern means the roots, either cauda equina (an emergency) or a single radiculopathy; each column gives the tracts hit, the presentation and the causes",
  "kinds": {
   "ant_h": [
    "#8a5a2b",
@@ -115,49 +115,49 @@
  "bands": [
   {
    "x": 40,
-   "y": 342,
+   "y": 306,
    "w": 168,
-   "h": 828,
+   "h": 1108,
    "fill": "#faf4ee",
    "stroke": "#8a5a2b"
   },
   {
    "x": 210,
-   "y": 342,
+   "y": 306,
    "w": 168,
-   "h": 828,
+   "h": 1108,
    "fill": "#eef7fa",
    "stroke": "#1f6f8b"
   },
   {
    "x": 380,
-   "y": 342,
+   "y": 306,
    "w": 168,
-   "h": 828,
+   "h": 1108,
    "fill": "#f5f1fb",
    "stroke": "#6a4aa8"
   },
   {
    "x": 550,
-   "y": 342,
+   "y": 306,
    "w": 168,
-   "h": 828,
+   "h": 1108,
    "fill": "#fdf4ea",
    "stroke": "#b5600f"
   },
   {
    "x": 748,
-   "y": 342,
+   "y": 306,
    "w": 168,
-   "h": 828,
+   "h": 1108,
    "fill": "#fcf0f6",
    "stroke": "#a3336b"
   },
   {
    "x": 918,
-   "y": 342,
+   "y": 306,
    "w": 168,
-   "h": 828,
+   "h": 1108,
    "fill": "#f2f5f8",
    "stroke": "#46607a"
   }
@@ -165,13 +165,19 @@
  "row_labels": [
   {
    "x": 23,
-   "y": 468,
+   "y": 432,
+   "h": 240,
+   "text": "TRACTS HIT"
+  },
+  {
+   "x": 23,
+   "y": 712,
    "h": 448,
    "text": "PRESENTS AS"
   },
   {
    "x": 23,
-   "y": 956,
+   "y": 1200,
    "h": 206,
    "text": "CAUSES"
   }
@@ -185,17 +191,15 @@
    "kind": "dark",
    "title": "Cord or root? Motor exam + the LOWEST sensory level",
    "lines": [
-    "upper motor neuron (UMN), brain or cord: subtle bulk loss, tone ↑, hyperreflexia, upgoing toe",
-    "lower motor neuron (LMN), root or nerve: wasting, tone ↓, reflexes ↓ or absent",
-    "NO motor or sensory function below the level, incl. rectal tone + perianal sensation = COMPLETE",
-    "corticospinal crosses at the medullary PYRAMIDS · light touch uses both sensory pathways",
-    "cord: UMN signs + a SYNDROME · root: LMN signs, more isolated · cord ends ~L1/L2, then cauda equina"
+    "UMN = CORD: tone ↑, reflexes ↑, upgoing toe",
+    "LMN = ROOT: wasting, tone ↓, reflexes ↓",
+    "COMPLETE = nothing below the level, incl. rectal tone"
    ]
   },
   {
    "id": "g_cord",
    "x": 45,
-   "y": 192,
+   "y": 156,
    "w": 668,
    "h": 78,
    "kind": "plain",
@@ -208,7 +212,7 @@
   {
    "id": "g_root",
    "x": 753,
-   "y": 192,
+   "y": 156,
    "w": 328,
    "h": 78,
    "kind": "plain",
@@ -221,7 +225,7 @@
   {
    "id": "ant_head_0_0",
    "x": 45,
-   "y": 350,
+   "y": 314,
    "w": 158,
    "h": 78,
    "kind": "ant_h",
@@ -233,7 +237,7 @@
   {
    "id": "post_head_0_0",
    "x": 215,
-   "y": 350,
+   "y": 314,
    "w": 158,
    "h": 78,
    "kind": "post_h",
@@ -245,7 +249,7 @@
   {
    "id": "cent_head_0_0",
    "x": 385,
-   "y": 350,
+   "y": 314,
    "w": 158,
    "h": 78,
    "kind": "cent_h",
@@ -257,7 +261,7 @@
   {
    "id": "bs_head_0_0",
    "x": 555,
-   "y": 350,
+   "y": 314,
    "w": 158,
    "h": 78,
    "kind": "bs_h",
@@ -269,7 +273,7 @@
   {
    "id": "ce_head_0_0",
    "x": 753,
-   "y": 350,
+   "y": 314,
    "w": 158,
    "h": 78,
    "kind": "ce_h",
@@ -281,7 +285,7 @@
   {
    "id": "rad_head_0_0",
    "x": 923,
-   "y": 350,
+   "y": 314,
    "w": 158,
    "h": 78,
    "kind": "rad_h",
@@ -291,9 +295,92 @@
    ]
   },
   {
+   "id": "ant_tract_0_0",
+   "x": 45,
+   "y": 432,
+   "w": 158,
+   "h": 240,
+   "kind": "ant_t",
+   "title": "Anterior 2/3 LOST",
+   "lines": [
+    "• **corticospinal** → paralysis",
+    "• **spinothalamic** → pain, temp",
+    "• descending autonomic → BP, bladder, bowel",
+    "• dorsal columns SPARED → vibration, position"
+   ]
+  },
+  {
+   "id": "post_tract_0_0",
+   "x": 215,
+   "y": 432,
+   "w": 158,
+   "h": 240,
+   "kind": "post_t",
+   "title": "Dorsal columns LOST",
+   "lines": [
+    "• **gracilis + cuneatus** → vibration, position, 2-point",
+    "• corticospinal, spinothalamic SPARED",
+    "~ B12 also hits lateral corticospinal: subacute COMBINED"
+   ]
+  },
+  {
+   "id": "cent_tract_0_0",
+   "x": 385,
+   "y": 432,
+   "w": 158,
+   "h": 240,
+   "kind": "cent_t",
+   "title": "Centre outward",
+   "lines": [
+    "• **crossing spinothalamic** fibres (anterior commissure) → cape pain, temp",
+    "• **medial corticospinal** (arm fibres) → hands > legs",
+    "• dorsal columns SPARED"
+   ]
+  },
+  {
+   "id": "bs_tract_0_0",
+   "x": 555,
+   "y": 432,
+   "w": 158,
+   "h": 240,
+   "kind": "bs_t",
+   "title": "Half the cord",
+   "lines": [
+    "• **corticospinal** → SAME side paralysis (crossed at pyramids)",
+    "• **dorsal columns** → SAME side vibration, position (cross in medulla)",
+    "• **spinothalamic** → OPPOSITE side pain, temp (crossed at entry)"
+   ]
+  },
+  {
+   "id": "ce_tract_0_0",
+   "x": 753,
+   "y": 432,
+   "w": 158,
+   "h": 240,
+   "kind": "ce_t",
+   "title": "No tracts: roots",
+   "lines": [
+    "• lumbosacral roots → LMN legs",
+    "• **S2-S4** → saddle, bladder, bowel"
+   ]
+  },
+  {
+   "id": "rad_tract_0_0",
+   "x": 923,
+   "y": 432,
+   "w": 158,
+   "h": 240,
+   "kind": "rad_t",
+   "title": "No tracts: one root",
+   "lines": [
+    "• dorsal root → its dermatome",
+    "• ventral root → its myotome, reflex"
+   ]
+  },
+  {
    "id": "ant_pres_0_0",
    "x": 45,
-   "y": 468,
+   "y": 712,
    "w": 158,
    "h": 448,
    "kind": "ant_t",
@@ -309,7 +396,7 @@
   {
    "id": "post_pres_0_0",
    "x": 215,
-   "y": 468,
+   "y": 712,
    "w": 158,
    "h": 448,
    "kind": "post_t",
@@ -322,7 +409,7 @@
   {
    "id": "cent_pres_0_0",
    "x": 385,
-   "y": 468,
+   "y": 712,
    "w": 158,
    "h": 448,
    "kind": "cent_t",
@@ -337,7 +424,7 @@
   {
    "id": "bs_pres_0_0",
    "x": 555,
-   "y": 468,
+   "y": 712,
    "w": 158,
    "h": 448,
    "kind": "bs_t",
@@ -351,7 +438,7 @@
   {
    "id": "ce_pres_0_0",
    "x": 753,
-   "y": 468,
+   "y": 712,
    "w": 158,
    "h": 448,
    "kind": "ce_t",
@@ -366,7 +453,7 @@
   {
    "id": "rad_pres_0_0",
    "x": 923,
-   "y": 468,
+   "y": 712,
    "w": 158,
    "h": 150,
    "kind": "rad_t",
@@ -381,7 +468,7 @@
   {
    "id": "rad_pres_1_0",
    "x": 923,
-   "y": 640,
+   "y": 884,
    "w": 158,
    "h": 276,
    "kind": "rad_w",
@@ -394,7 +481,7 @@
   {
    "id": "ant_cause_0_0",
    "x": 45,
-   "y": 956,
+   "y": 1200,
    "w": 158,
    "h": 206,
    "kind": "ant_w",
@@ -409,7 +496,7 @@
   {
    "id": "post_cause_0_0",
    "x": 215,
-   "y": 956,
+   "y": 1200,
    "w": 158,
    "h": 206,
    "kind": "post_w",
@@ -424,7 +511,7 @@
   {
    "id": "cent_cause_0_0",
    "x": 385,
-   "y": 956,
+   "y": 1200,
    "w": 158,
    "h": 206,
    "kind": "cent_w",
@@ -439,7 +526,7 @@
   {
    "id": "bs_cause_0_0",
    "x": 555,
-   "y": 956,
+   "y": 1200,
    "w": 158,
    "h": 206,
    "kind": "bs_w",
@@ -452,7 +539,7 @@
   {
    "id": "ce_cause_0_0",
    "x": 753,
-   "y": 956,
+   "y": 1200,
    "w": 158,
    "h": 206,
    "kind": "ce_w",
@@ -464,7 +551,7 @@
   {
    "id": "rad_cause_0_0",
    "x": 923,
-   "y": 956,
+   "y": 1200,
    "w": 158,
    "h": 206,
    "kind": "rad_w",
@@ -480,12 +567,12 @@
   {
    "from": "root",
    "to": "g_cord",
-   "path": "M563.0 142V167H379.0V192"
+   "path": "M563.0 106V131H379.0V156"
   },
   {
    "from": "root",
    "to": "g_root",
-   "path": "M563.0 142V167H917.0V192"
+   "path": "M563.0 106V131H917.0V156"
   },
   {
    "from": "rad_pres_0_0",
@@ -494,6 +581,10 @@
   },
   {
    "from": "ant_head_0_0",
+   "to": "ant_tract_0_0"
+  },
+  {
+   "from": "ant_tract_0_0",
    "to": "ant_pres_0_0"
   },
   {
@@ -507,6 +598,10 @@
   },
   {
    "from": "post_head_0_0",
+   "to": "post_tract_0_0"
+  },
+  {
+   "from": "post_tract_0_0",
    "to": "post_pres_0_0"
   },
   {
@@ -520,6 +615,10 @@
   },
   {
    "from": "cent_head_0_0",
+   "to": "cent_tract_0_0"
+  },
+  {
+   "from": "cent_tract_0_0",
    "to": "cent_pres_0_0"
   },
   {
@@ -533,6 +632,10 @@
   },
   {
    "from": "bs_head_0_0",
+   "to": "bs_tract_0_0"
+  },
+  {
+   "from": "bs_tract_0_0",
    "to": "bs_pres_0_0"
   },
   {
@@ -546,6 +649,10 @@
   },
   {
    "from": "ce_head_0_0",
+   "to": "ce_tract_0_0"
+  },
+  {
+   "from": "ce_tract_0_0",
    "to": "ce_pres_0_0"
   },
   {
@@ -559,6 +666,10 @@
   },
   {
    "from": "rad_head_0_0",
+   "to": "rad_tract_0_0"
+  },
+  {
+   "from": "rad_tract_0_0",
    "to": "rad_pres_0_0"
   },
   {
@@ -574,7 +685,7 @@
  "panels": [
   {
    "x": 45,
-   "y": 1196,
+   "y": 1440,
    "w": 1036,
    "title": "Cord causes: not just trauma or tumour",
    "items": [
